@@ -1,0 +1,129 @@
+/* Colors used across the app. Light mode first, dark mode below. */
+:root {
+  --bg: #f4f1ea;
+  --card: #ffffff;
+  --text: #1f2328;
+  --muted: #5d6470;
+  --border: #e2ddd2;
+  --primary: #1d3a6e;
+  --primary-text: #ffffff;
+  --banner-bg: #fff3c4;
+  --banner-text: #6b4e00;
+  --got: #1f7a4d;
+  --partly: #b26a00;
+  --missed: #b3261e;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #15171b;
+    --card: #1f2228;
+    --text: #e8e6e1;
+    --muted: #a0a6b0;
+    --border: #2f333b;
+    --primary: #8fb0ea;
+    --primary-text: #10141b;
+    --banner-bg: #3a2f0b;
+    --banner-text: #f3d77a;
+    --got: #5cc48d;
+    --partly: #f0a84a;
+    --missed: #f08077;
+  }
+}
+
+* { box-sizing: border-box; }
+
+/* Anything marked "hidden" stays hidden, even if another style says otherwise. */
+[hidden] { display: none !important; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 17px;
+  line-height: 1.55;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* The main column: narrow and centered, with room for the iPhone notch and home bar. */
+.page {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: calc(16px + env(safe-area-inset-top)) 16px calc(32px + env(safe-area-inset-bottom));
+}
+
+.placeholder-banner {
+  margin: 0 0 16px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: var(--banner-bg);
+  color: var(--banner-text);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.question-header { margin-bottom: 12px; }
+.subject { margin: 0; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--primary); }
+.topic { margin: 2px 0 0; font-size: 15px; color: var(--muted); }
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px;
+  margin-bottom: 16px;
+}
+
+.label {
+  margin: 0 0 10px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+.prompt { margin: 0; }
+
+/* ALAC answer: each part gets a small heading. */
+.alac { margin: 0; }
+.alac dt { font-weight: 700; color: var(--primary); margin-top: 14px; }
+.alac dt:first-child { margin-top: 0; }
+.alac dd { margin: 2px 0 0; }
+
+/* Key points with large, easy-to-tap checkboxes. */
+.key-points { list-style: none; margin: 0; padding: 0; }
+.key-points li + li { border-top: 1px solid var(--border); }
+.key-points label { display: flex; gap: 12px; align-items: flex-start; padding: 10px 0; cursor: pointer; }
+.key-points input { width: 22px; height: 22px; margin-top: 2px; flex-shrink: 0; accent-color: var(--got); }
+
+/* Buttons: big enough to tap comfortably with a thumb. */
+.btn {
+  display: block;
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 16px;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.btn-primary { background: var(--primary); color: var(--primary-text); margin-bottom: 16px; }
+.btn:active { transform: scale(0.98); }
+
+.rating { margin-top: 8px; }
+.rating-buttons { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.btn-rate { background: var(--card); padding: 12px 6px; }
+.btn-rate.got { border-color: var(--got); color: var(--got); }
+.btn-rate.partly { border-color: var(--partly); color: var(--partly); }
+.btn-rate.missed { border-color: var(--missed); color: var(--missed); }
+.btn-rate.got.selected { background: var(--got); color: var(--card); }
+.btn-rate.partly.selected { background: var(--partly); color: var(--card); }
+.btn-rate.missed.selected { background: var(--missed); color: var(--card); }
+
+.rating-result { margin: 12px 0 0; text-align: center; color: var(--muted); }

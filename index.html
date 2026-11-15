@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Bar Reviewer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <p class="placeholder-banner">PLACEHOLDER CONTENT: not real legal material</p>
+
+    <header class="question-header">
+      <p class="subject" id="subject"></p>
+      <p class="topic" id="topic"></p>
+    </header>
+
+    <section class="card">
+      <h1 class="label">Question</h1>
+      <p class="prompt" id="prompt"></p>
+    </section>
+
+    <button class="btn btn-primary" id="show-answer">Show suggested answer</button>
+
+    <div id="answer-area" hidden>
+      <section class="card">
+        <h2 class="label">Suggested answer</h2>
+        <dl class="alac">
+          <dt>Answer</dt>
+          <dd id="alac-answer"></dd>
+          <dt>Legal basis</dt>
+          <dd id="alac-basis"></dd>
+          <dt>Application</dt>
+          <dd id="alac-application"></dd>
+          <dt>Conclusion</dt>
+          <dd id="alac-conclusion"></dd>
+        </dl>
+      </section>
+
+      <section class="card">
+        <h2 class="label">Key points: check the ones you got</h2>
+        <ul class="key-points" id="key-points"></ul>
+      </section>
+
+      <section class="rating">
+        <h2 class="label">How did you do?</h2>
+        <div class="rating-buttons">
+          <button class="btn btn-rate got" data-rating="Got it">Got it</button>
+          <button class="btn btn-rate partly" data-rating="Partly">Partly</button>
+          <button class="btn btn-rate missed" data-rating="Missed it">Missed it</button>
+        </div>
+        <p class="rating-result" id="rating-result" hidden></p>
+      </section>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
