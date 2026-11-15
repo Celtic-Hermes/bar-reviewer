@@ -1,0 +1,14 @@
+# Files Git should never save or upload.
+
+# Mac system files
+.DS_Store
+
+# Editor settings
+.vscode/
+
+# Anything secret, just in case one is ever created here
+.env
+.env.*
+*.pem
+*.key
+secrets*
