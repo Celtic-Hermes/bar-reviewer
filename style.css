@@ -181,11 +181,53 @@ body {
 }
 
 /* ---------- Subject screen ---------- */
-.count-card { text-align: center; margin-top: 14px; }
-.count-number { margin: 0; font-size: 44px; font-weight: 700; line-height: 1.1; color: var(--primary); }
 .count-label { margin: 4px 0 0; color: var(--muted); }
 .btn:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
-.empty-note { margin: -4px 0 0; text-align: center; color: var(--muted); }
+.empty-note { text-align: center; color: var(--muted); }
+.topic-count { flex-shrink: 0; font-size: 14px; color: var(--muted); }
+
+/* Shuffle on/off switch (looks like an iPhone toggle) */
+.switch-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+  margin-bottom: 22px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  cursor: pointer;
+}
+.switch-title { display: block; font-weight: 600; }
+.switch-note { display: block; font-size: 14px; color: var(--muted); }
+.switch {
+  -webkit-appearance: none;
+  appearance: none;
+  flex-shrink: 0;
+  position: relative;
+  width: 51px;
+  height: 31px;
+  margin: 0;
+  border-radius: 31px;
+  background: var(--border);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.switch::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s;
+}
+.switch:checked { background: var(--got); }
+.switch:checked::after { transform: translateX(20px); }
 
 /* ---------- Practice: top bar with Back and "Question 1 of 3" ---------- */
 .question-topbar { display: flex; align-items: center; justify-content: space-between; }

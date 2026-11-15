@@ -24,12 +24,22 @@
     <section id="screen-subject" hidden>
       <button class="back-btn" id="subject-back">‹ Subjects</button>
       <h1 class="screen-title" id="subject-title"></h1>
-      <section class="card count-card">
-        <p class="count-number" id="subject-count"></p>
-        <p class="count-label" id="subject-count-label"></p>
-      </section>
-      <button class="btn btn-primary" id="start-practice">Start practice</button>
-      <p class="empty-note" id="subject-empty" hidden>No questions for this subject yet.</p>
+      <p class="screen-subtitle" id="subject-count"></p>
+
+      <div id="topic-area">
+        <label class="switch-row">
+          <span>
+            <span class="switch-title">Shuffle questions</span>
+            <span class="switch-note">Off: questions come in order</span>
+          </span>
+          <input type="checkbox" class="switch" id="shuffle">
+        </label>
+
+        <h2 class="label">Pick a topic to start</h2>
+        <div class="subject-list" id="topic-list"></div>
+      </div>
+
+      <p class="card empty-note" id="subject-empty" hidden>No questions for this subject yet.</p>
     </section>
 
     <!-- SCREEN 3: Practice (one question) -->

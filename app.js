@@ -12,6 +12,7 @@ const SUBJECTS = [
 
 let allQuestions = [];      // filled in from data/questions.json
 let currentSubject = null;  // the subject she tapped
+let currentTopic = null;    // the topic she tapped (or "All topics")
 
 // The current practice round: which questions, where she is, and her results so far.
 let session = null;
@@ -50,17 +51,62 @@ function buildHome() {
   });
 }
 
-// ---------- Screen 2: One subject ----------
+// ---------- Screen 2: One subject (its topics) ----------
+const ALL_TOPICS = "All topics";
+
+function countLabel(n) {
+  return n + (n === 1 ? " question" : " questions");
+}
+
+// The questions for a subject + topic ("All topics" means every topic).
+function questionsForTopic(subject, topic) {
+  return questionsFor(subject).filter(function (q) {
+    return topic === ALL_TOPICS || q.topic === topic;
+  });
+}
+
+// List of topics in a subject, in the order they first appear in the file.
+function topicsFor(subject) {
+  const topics = [];
+  questionsFor(subject).forEach(function (q) {
+    if (!topics.includes(q.topic)) { topics.push(q.topic); }
+  });
+  return topics;
+}
+
 function openSubject(subject) {
   currentSubject = subject;
   const count = questionsFor(subject).length;
   document.getElementById("subject-title").textContent = subject;
-  document.getElementById("subject-count").textContent = count;
-  document.getElementById("subject-count-label").textContent =
-    count === 1 ? "question available" : "questions available";
-  // No questions? Turn off the Start button and say why.
-  document.getElementById("start-practice").disabled = (count === 0);
+  document.getElementById("subject-count").textContent = countLabel(count) + " available";
+
+  // No questions? Hide the topic list and say why.
+  document.getElementById("topic-area").hidden = (count === 0);
   document.getElementById("subject-empty").hidden = (count !== 0);
+
+  // Build one card per topic, with "All topics" first.
+  const list = document.getElementById("topic-list");
+  list.innerHTML = "";
+  [ALL_TOPICS].concat(topicsFor(subject)).forEach(function (topic) {
+    const card = document.createElement("button");
+    card.className = "subject-card";
+    const name = document.createElement("span");
+    name.className = "subject-name";
+    name.textContent = topic;
+    const howMany = document.createElement("span");
+    howMany.className = "topic-count";
+    howMany.textContent = countLabel(questionsForTopic(subject, topic).length);
+    const arrow = document.createElement("span");
+    arrow.className = "subject-arrow";
+    arrow.textContent = "›";
+    card.append(name, howMany, arrow);
+    card.addEventListener("click", function () {
+      currentTopic = topic;
+      startPractice();
+    });
+    list.appendChild(card);
+  });
+
   showScreen("screen-subject");
 }
 
@@ -68,9 +114,31 @@ document.getElementById("subject-back").addEventListener("click", function () {
   showScreen("screen-home");
 });
 
+// Update the little note under the shuffle switch when it's flipped.
+document.getElementById("shuffle").addEventListener("change", function () {
+  document.querySelector(".switch-note").textContent = this.checked
+    ? "On: questions come in random order"
+    : "Off: questions come in order";
+});
+
+// Mix up a list into random order (the standard "Fisher–Yates" shuffle).
+function shuffled(list) {
+  const copy = list.slice();
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    const temp = copy[i];
+    copy[i] = copy[j];
+    copy[j] = temp;
+  }
+  return copy;
+}
+
 function startPractice() {
-  const questions = questionsFor(currentSubject);
+  let questions = questionsForTopic(currentSubject, currentTopic);
   if (questions.length === 0) { return; }
+  if (document.getElementById("shuffle").checked) {
+    questions = shuffled(questions);
+  }
   session = {
     questions: questions,
     index: 0,
@@ -80,8 +148,6 @@ function startPractice() {
   };
   showQuestion();
 }
-
-document.getElementById("start-practice").addEventListener("click", startPractice);
 
 // ---------- Screen 3: Practice ----------
 function showQuestion() {
@@ -229,7 +295,7 @@ document.getElementById("question-back").addEventListener("click", function () {
 // ---------- Screen 4: Results ----------
 function showResults() {
   const essayCount = session.ratings["Got it"] + session.ratings["Partly"] + session.ratings["Missed it"];
-  document.getElementById("results-subject").textContent = currentSubject;
+  document.getElementById("results-subject").textContent = currentSubject + " · " + currentTopic;
 
   // Only show a section if this round had that kind of question.
   document.getElementById("results-mcq").hidden = (session.mcqTotal === 0);

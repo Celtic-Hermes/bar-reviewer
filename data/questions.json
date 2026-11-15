@@ -4,7 +4,7 @@
     "type": "essay",
     "status": "draft",
     "subject": "Civil Law",
-    "topic": "Placeholder Topic",
+    "topic": "Placeholder Topic A",
     "prompt": "[PLACEHOLDER] This is a sample fact situation. Alpha and Beta enter into a sample agreement. Later, a sample dispute arises between them. Is Alpha correct? Explain.",
     "suggestedAnswer": {
       "answer": "[PLACEHOLDER] A sample direct answer goes here.",
@@ -30,7 +30,7 @@
     "type": "mcq",
     "status": "draft",
     "subject": "Civil Law",
-    "topic": "Placeholder Topic",
+    "topic": "Placeholder Topic A",
     "prompt": "[PLACEHOLDER] Sample multiple-choice question #1. Which of the following sample statements is correct?",
     "choices": {
       "A": "[PLACEHOLDER] Sample choice A",
@@ -53,7 +53,7 @@
     "type": "mcq",
     "status": "draft",
     "subject": "Civil Law",
-    "topic": "Placeholder Topic",
+    "topic": "Placeholder Topic B",
     "prompt": "[PLACEHOLDER] Sample multiple-choice question #2. Under the sample rule, what happens to the sample agreement?",
     "choices": {
       "A": "[PLACEHOLDER] Sample choice A",
