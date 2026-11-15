@@ -31,7 +31,7 @@ The builder is not a lawyer and does not write questions. Claude writes them, so
 
 1. **Only from the actual decision text.** Every question and case summary must come from the real text of a Supreme Court decision. Never write legal content from memory.
 2. **If the text can't be found, stop and say so.** If Claude can't get the full decision for a G.R. number, it tells the builder, who will ask their girlfriend to paste the text. Never fill in the gaps by guessing.
-3. **Every question has a status:** `"draft"` or `"verified"`. **All new questions start as `"draft"`.** Claude never marks anything `"verified"`. Only a person (the girlfriend or a lawyer) checks a question and asks for the change.
+3. **Every question and case has a status:** `"draft"` or `"verified"`. **All new questions start as `"draft"`.** Claude never marks anything `"verified"`. Only a person (the girlfriend or a lawyer) checks a question and asks for the change.
 4. **Every question has a source:** case title, G.R. number, the part of the decision it came from (for example, "Ruling, discussion of the second issue"), and a short exact quote of that passage so a person can check it quickly.
 5. **Lawyer-provided questions are inspiration, not content.** When a lawyer gives sample questions, Claude writes **new, original** questions that test the same concepts, with different facts and wording, and still based on decision text (rules 1–4). Never copy or lightly reword them.
 6. **Plain words.** Case summaries and explanations should be clear and easy to read, while staying faithful to what the decision says.
@@ -49,6 +49,7 @@ Content lives in JSON files, separate from the app code:
 ```json
 {
   "id": "case-0001",
+  "status": "draft",
   "name": "Juan Dela Cruz v. People",
   "grNumber": "G.R. No. 123456",
   "year": 2020,
@@ -138,7 +139,7 @@ These rules matter more than speed.
 - **Plain HTML, CSS, and JavaScript.** No frameworks or build steps unless there's a clear reason, explained first. This keeps things simple to run and fix.
 - **Phone first**, especially iPhone Safari. It should still work on a computer.
 - **Works offline** after the first visit (using a "service worker", a small script that saves the app's files on the phone).
-  - **Cache version rule:** whenever any app file changes (`index.html`, `style.css`, `app.js`, `progress.js`, `manifest.webmanifest`, icons), or a file is added to or removed from the `APP_FILES` list, bump `CACHE_VERSION` in `sw.js` (v1 → v2 …) in the same commit, and tell the builder it was bumped. Editing only `data/questions.json` does not need a bump: questions are fetched fresh whenever she's online.
+  - **Cache version rule:** whenever any app file changes (`index.html`, `style.css`, `app.js`, `progress.js`, `manifest.webmanifest`, icons), or a file is added to or removed from the `APP_FILES` list, bump `CACHE_VERSION` in `sw.js` (v1 → v2 …) in the same commit, and tell the builder it was bumped. Editing only `data/questions.json` or `data/cases.json` does not need a bump: they are fetched fresh whenever she's online.
   - Every new app file must be added to `APP_FILES` in `sw.js`, or it won't work offline.
   - Use relative paths only (no leading `/`), so the app works at `username.github.io/bar-reviewer/`.
 - **Hosting:** GitHub Pages (free). It gives one web link to open on her iPhone and add to the home screen.

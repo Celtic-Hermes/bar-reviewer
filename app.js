@@ -11,6 +11,7 @@ const SUBJECTS = [
 ];
 
 let allQuestions = [];      // filled in from data/questions.json
+let allCases = [];          // filled in from data/cases.json
 let currentSubject = null;  // the subject she tapped
 let currentTopic = null;    // the topic she tapped (or "All topics")
 
@@ -20,7 +21,7 @@ let session = null;
 // ---------- Switching screens ----------
 // Only one screen is visible at a time.
 function showScreen(id) {
-  ["screen-home", "screen-subject", "screen-question", "screen-results"].forEach(function (screenId) {
+  ["screen-home", "screen-subject", "screen-question", "screen-results", "screen-case"].forEach(function (screenId) {
     document.getElementById(screenId).hidden = (screenId !== id);
   });
   window.scrollTo(0, 0);
@@ -214,6 +215,7 @@ function showQuestion() {
   // Anything not marked "verified" (including a missing status) shows the draft label.
   document.getElementById("draft-badge").hidden = (question.status === "verified");
   showBookmark(question);
+  showQuestionCases(question);
 
   const nextButton = document.getElementById("next-btn");
   nextButton.hidden = true;
@@ -363,6 +365,22 @@ document.getElementById("question-back").addEventListener("click", function () {
   openSubject(currentSubject);
 });
 
+// --- "Read the case" buttons: one for each case this question links to ---
+function showQuestionCases(question) {
+  const box = document.getElementById("question-cases");
+  box.innerHTML = "";
+  const ids = Array.isArray(question.caseIds) ? question.caseIds : [];
+  ids.forEach(function (caseId) {
+    const theCase = findCase(caseId);
+    if (!theCase) { return; }  // a link to a case that isn't in cases.json: just skip it
+    const button = document.createElement("button");
+    button.className = "btn btn-secondary";
+    button.textContent = ids.length === 1 ? "Read the case" : "Read the case: " + (theCase.name || "Untitled case");
+    button.addEventListener("click", function () { openCase(theCase, "question"); });
+    box.appendChild(button);
+  });
+}
+
 // ---------- Screen 4: Results ----------
 function showResults() {
   const essayCount = session.ratings["Got it"] + session.ratings["Partly"] + session.ratings["Missed it"];
@@ -383,6 +401,66 @@ function showResults() {
 document.getElementById("results-again").addEventListener("click", startPractice);
 document.getElementById("results-home").addEventListener("click", function () {
   showScreen("screen-home");
+});
+
+// ---------- Screen 5: One case ----------
+function findCase(caseId) {
+  return allCases.find(function (c) { return c && c.id === caseId; }) || null;
+}
+
+// Where to go when she taps "‹ Back" on the case screen.
+let caseCameFrom = null;       // "question" or "subject"
+let questionScrollSpot = 0;    // where she was on the question screen
+
+function caseText(value) {
+  return (typeof value === "string" && value.trim()) ? value : "Not available yet.";
+}
+
+function openCase(theCase, cameFrom) {
+  caseCameFrom = cameFrom;
+  if (cameFrom === "question") { questionScrollSpot = window.scrollY; }
+
+  document.getElementById("case-subject").textContent =
+    [theCase.subject, theCase.topic].filter(Boolean).join(" · ");
+  document.getElementById("case-name").textContent = theCase.name || "Untitled case";
+  document.getElementById("case-number").textContent =
+    [theCase.grNumber, theCase.year].filter(Boolean).join(" · ");
+  // Anything not marked "verified" (including a missing status) shows the draft label.
+  document.getElementById("case-draft-badge").hidden = (theCase.status === "verified");
+  document.getElementById("case-facts").textContent = caseText(theCase.facts);
+  document.getElementById("case-issue").textContent = caseText(theCase.issue);
+  document.getElementById("case-ruling").textContent = caseText(theCase.ruling);
+  document.getElementById("case-doctrine").textContent = caseText(theCase.keyDoctrine);
+
+  // Source: a tappable link if it's a web address, otherwise plain text.
+  const source = document.getElementById("case-source");
+  source.innerHTML = "";
+  const url = typeof theCase.sourceUrl === "string" ? theCase.sourceUrl.trim() : "";
+  if (/^https?:\/\//i.test(url)) {
+    const link = document.createElement("a");
+    link.className = "source-link";
+    link.href = url;
+    link.target = "_blank";
+    link.rel = "noopener";
+    link.textContent = "Read the full decision ›";
+    const note = document.createElement("span");
+    note.className = "source-note";
+    note.textContent = url + " (needs internet)";
+    source.append(link, note);
+  } else {
+    source.textContent = url || "Not available yet.";
+  }
+
+  showScreen("screen-case");
+}
+
+document.getElementById("case-back").addEventListener("click", function () {
+  if (caseCameFrom === "question") {
+    showScreen("screen-question");
+    window.scrollTo(0, questionScrollSpot);  // back to the same spot, answer still showing
+  } else {
+    openSubject(currentSubject);
+  }
 });
 
 // ---------- Home: back up and restore progress ----------
@@ -511,13 +589,31 @@ fetch("data/questions.json")
     allQuestions = data;
   })
   .catch(function () {
-    const error = document.getElementById("load-error");
-    error.textContent =
+    showLoadError(
       "Couldn't load the questions file (data/questions.json). " +
       "If you opened this by double-clicking, start the local server instead. " +
-      "Otherwise, the file may have a typo.";
-    error.hidden = false;
+      "Otherwise, the file may have a typo.");
   });
+
+fetch("data/cases.json")
+  .then(function (response) {
+    if (!response.ok) { throw new Error("status " + response.status); }
+    return response.json();
+  })
+  .then(function (data) {
+    if (!Array.isArray(data)) { throw new Error("not a list"); }
+    allCases = data.filter(function (c) { return c && typeof c === "object" && c.id; });
+  })
+  .catch(function () {
+    showLoadError("Couldn't load the cases file (data/cases.json), so cases can't be opened. The file may have a typo.");
+  });
+
+// Show a loading problem at the top of the app (several can show at once).
+function showLoadError(text) {
+  const error = document.getElementById("load-error");
+  error.textContent = error.hidden ? text : error.textContent + "\n\n" + text;
+  error.hidden = false;
+}
 
 // ---------- Offline support ----------
 // Register the service worker (sw.js), which saves the app's files on the phone.

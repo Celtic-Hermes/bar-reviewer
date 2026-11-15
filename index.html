@@ -147,6 +147,39 @@
 
       <!-- Appears once the question is answered (or rated) -->
       <button class="btn btn-primary next-btn" id="next-btn" hidden>Next</button>
+
+      <!-- "Read the case" buttons for the cases this question is based on -->
+      <div class="question-cases" id="question-cases"></div>
+    </section>
+
+    <!-- SCREEN 5: One case -->
+    <section id="screen-case" hidden>
+      <button class="back-btn" id="case-back">‹ Back</button>
+      <p class="subject" id="case-subject"></p>
+      <h1 class="screen-title" id="case-name"></h1>
+      <p class="case-number" id="case-number"></p>
+      <p class="draft-badge" id="case-draft-badge" hidden>Draft, not yet verified</p>
+
+      <section class="card case-part">
+        <h2 class="label">Facts</h2>
+        <p class="prompt" id="case-facts"></p>
+      </section>
+      <section class="card case-part">
+        <h2 class="label">Issue</h2>
+        <p class="prompt" id="case-issue"></p>
+      </section>
+      <section class="card case-part">
+        <h2 class="label">Ruling</h2>
+        <p class="prompt" id="case-ruling"></p>
+      </section>
+      <section class="card case-part">
+        <h2 class="label">Key doctrine</h2>
+        <p class="prompt" id="case-doctrine"></p>
+      </section>
+      <section class="card case-part">
+        <h2 class="label">Source</h2>
+        <p class="prompt" id="case-source"></p>
+      </section>
     </section>
 
     <!-- SCREEN 4: Results -->

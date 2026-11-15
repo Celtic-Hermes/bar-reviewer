@@ -5,10 +5,10 @@
 // Change CACHE_VERSION (v1 → v2 → v3 …) whenever you change any APP file:
 //   index.html, style.css, app.js, progress.js, manifest.webmanifest, or the icons,
 //   or when you add or remove a file in the APP_FILES list below.
-// You do NOT need to change it when you only edit data/questions.json.
-// Questions are always fetched fresh when she's online.
+// You do NOT need to change it when you only edit data/questions.json or data/cases.json.
+// Questions and cases are always fetched fresh when she's online.
 // =====================================================================
-const CACHE_VERSION = "v3";
+const CACHE_VERSION = "v4";
 const CACHE_NAME = "bar-reviewer-" + CACHE_VERSION;
 
 // Every file the app needs, written relative to this file so it works
@@ -23,10 +23,12 @@ const APP_FILES = [
   "icons/icon-192.png",
   "icons/icon-512.png",
   "icons/apple-touch-icon.png",
-  "data/questions.json"
+  "data/questions.json",
+  "data/cases.json"
 ];
 
-const QUESTIONS_FILE = "data/questions.json";
+// Content files: always try for the newest copy first.
+const DATA_FILES = ["data/questions.json", "data/cases.json"];
 
 // 1. Install: download a fresh copy of every file into the cache.
 self.addEventListener("install", function (event) {
@@ -63,9 +65,10 @@ self.addEventListener("fetch", function (event) {
   const url = new URL(request.url);
   if (url.origin !== self.location.origin) { return; }
 
-  // Questions: try the internet first (to get the newest questions),
+  // Questions and cases: try the internet first (to get the newest content),
   // and use the saved copy if she's offline.
-  if (url.pathname.endsWith("/" + QUESTIONS_FILE)) {
+  const isDataFile = DATA_FILES.some(function (file) { return url.pathname.endsWith("/" + file); });
+  if (isDataFile) {
     event.respondWith(
       fetch(request, { cache: "no-cache" }).then(function (response) {
         if (response.ok) {

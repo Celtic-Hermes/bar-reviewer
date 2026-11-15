@@ -318,6 +318,7 @@ body {
 
 /* ---------- Error message ---------- */
 .error {
+  white-space: pre-line;
   margin: 0 0 16px;
   padding: 12px;
   border-radius: 10px;
@@ -356,3 +357,14 @@ body {
   font-size: 13px;
   font-weight: 700;
 }
+
+/* ---------- Case screen ---------- */
+.case-number { margin: 0 0 4px; color: var(--muted); font-weight: 600; }
+#screen-case .draft-badge { margin-bottom: 16px; }
+#screen-case .case-number + .card { margin-top: 16px; }
+.source-link { color: var(--primary); font-weight: 600; overflow-wrap: anywhere; }
+.source-note { display: block; margin-top: 6px; font-size: 14px; color: var(--muted); overflow-wrap: anywhere; }
+
+/* "Read the case" buttons under a question */
+.question-cases { margin-top: 8px; }
+.question-cases .btn { margin-bottom: 10px; }
