@@ -185,6 +185,8 @@ body {
 .btn:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
 .empty-note { text-align: center; color: var(--muted); }
 .topic-count { flex-shrink: 0; font-size: 14px; color: var(--muted); }
+.list-empty { margin: 10px 0 0; font-size: 15px; }
+.topics-label { margin-top: 24px; }
 
 /* Shuffle on/off switch (looks like an iPhone toggle) */
 .switch-row {

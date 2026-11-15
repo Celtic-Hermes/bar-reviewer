@@ -53,15 +53,28 @@ function buildHome() {
 
 // ---------- Screen 2: One subject (its topics) ----------
 const ALL_TOPICS = "All topics";
+const REVIEW_MISSED = "Review missed";
+const BOOKMARKED = "Bookmarked";
+
+// Friendly messages for when one of her lists is empty.
+const EMPTY_LIST_MESSAGES = {};
+EMPTY_LIST_MESSAGES[REVIEW_MISSED] =
+  "Nothing to review yet. Questions you get wrong, or rate Partly or Missed it, will show up here.";
+EMPTY_LIST_MESSAGES[BOOKMARKED] =
+  "No bookmarks yet. Tap ☆ Bookmark on any question to save it here.";
 
 function countLabel(n) {
   return n + (n === 1 ? " question" : " questions");
 }
 
-// The questions for a subject + topic ("All topics" means every topic).
+// The questions for a subject + a choice from the subject screen:
+// a topic name, "All topics", "Review missed", or "Bookmarked".
 function questionsForTopic(subject, topic) {
   return questionsFor(subject).filter(function (q) {
-    return topic === ALL_TOPICS || q.topic === topic;
+    if (topic === ALL_TOPICS) { return true; }
+    if (topic === REVIEW_MISSED) { return Boolean(progress.review[q.id]); }
+    if (topic === BOOKMARKED) { return isBookmarked(q.id); }
+    return q.topic === topic;
   });
 }
 
@@ -74,11 +87,33 @@ function topicsFor(subject) {
   return topics;
 }
 
+// Make one tappable card showing a name and how many questions it has.
+function makeTopicCard(subject, topic) {
+  const card = document.createElement("button");
+  card.className = "subject-card";
+  const name = document.createElement("span");
+  name.className = "subject-name";
+  name.textContent = topic;
+  const howMany = document.createElement("span");
+  howMany.className = "topic-count";
+  howMany.textContent = countLabel(questionsForTopic(subject, topic).length);
+  const arrow = document.createElement("span");
+  arrow.className = "subject-arrow";
+  arrow.textContent = "›";
+  card.append(name, howMany, arrow);
+  card.addEventListener("click", function () {
+    currentTopic = topic;
+    startPractice();
+  });
+  return card;
+}
+
 function openSubject(subject) {
   currentSubject = subject;
   const count = questionsFor(subject).length;
   document.getElementById("subject-title").textContent = subject;
   document.getElementById("subject-count").textContent = countLabel(count) + " available";
+  document.getElementById("list-empty").hidden = true;
 
   showSubjectStats(subject);
 
@@ -86,30 +121,28 @@ function openSubject(subject) {
   document.getElementById("topic-area").hidden = (count === 0);
   document.getElementById("subject-empty").hidden = (count !== 0);
 
-  // Build one card per topic, with "All topics" first.
+  // Her two lists: "Review missed" and "Bookmarked".
+  const myLists = document.getElementById("my-lists");
+  myLists.innerHTML = "";
+  [REVIEW_MISSED, BOOKMARKED].forEach(function (name) {
+    myLists.appendChild(makeTopicCard(subject, name));
+  });
+
+  // One card per topic, with "All topics" first.
   const list = document.getElementById("topic-list");
   list.innerHTML = "";
   [ALL_TOPICS].concat(topicsFor(subject)).forEach(function (topic) {
-    const card = document.createElement("button");
-    card.className = "subject-card";
-    const name = document.createElement("span");
-    name.className = "subject-name";
-    name.textContent = topic;
-    const howMany = document.createElement("span");
-    howMany.className = "topic-count";
-    howMany.textContent = countLabel(questionsForTopic(subject, topic).length);
-    const arrow = document.createElement("span");
-    arrow.className = "subject-arrow";
-    arrow.textContent = "›";
-    card.append(name, howMany, arrow);
-    card.addEventListener("click", function () {
-      currentTopic = topic;
-      startPractice();
-    });
-    list.appendChild(card);
+    list.appendChild(makeTopicCard(subject, topic));
   });
 
   showScreen("screen-subject");
+}
+
+// Show the friendly "this list is empty" message on the subject screen.
+function showEmptyListMessage(topic) {
+  const note = document.getElementById("list-empty");
+  note.textContent = EMPTY_LIST_MESSAGES[topic] || "No questions here yet.";
+  note.hidden = false;
 }
 
 // Fill in the "Your progress" box from what's saved on the phone.
@@ -122,13 +155,6 @@ function showSubjectStats(subject) {
     (stats.got + stats.partly + stats.missed) === 0
       ? "Not tried yet"
       : "Got it " + stats.got + "\nPartly " + stats.partly + "\nMissed it " + stats.missed;
-
-  // Only count questions that still exist in this subject.
-  const ids = questionsFor(subject).map(function (q) { return q.id; });
-  const toReview = ids.filter(function (id) { return progress.review[id]; }).length;
-  const bookmarked = ids.filter(isBookmarked).length;
-  document.getElementById("stats-review").textContent = countLabel(toReview);
-  document.getElementById("stats-bookmarks").textContent = countLabel(bookmarked);
 }
 
 document.getElementById("subject-back").addEventListener("click", function () {
@@ -156,7 +182,12 @@ function shuffled(list) {
 
 function startPractice() {
   let questions = questionsForTopic(currentSubject, currentTopic);
-  if (questions.length === 0) { return; }
+  if (questions.length === 0) {
+    // Empty list: go to (or stay on) the subject screen and explain, instead of starting.
+    openSubject(currentSubject);
+    showEmptyListMessage(currentTopic);
+    return;
+  }
   if (document.getElementById("shuffle").checked) {
     questions = shuffled(questions);
   }
