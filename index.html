@@ -10,48 +10,75 @@
   <main class="page">
     <p class="placeholder-banner">PLACEHOLDER CONTENT: not real legal material</p>
 
-    <header class="question-header">
-      <p class="subject" id="subject"></p>
-      <p class="topic" id="topic"></p>
-    </header>
+    <!-- Shown if the questions file can't be loaded -->
+    <p class="error" id="load-error" hidden></p>
 
-    <section class="card">
-      <h1 class="label">Question</h1>
-      <p class="prompt" id="prompt"></p>
+    <!-- SCREEN 1: Home (list of subjects) -->
+    <section id="screen-home">
+      <h1 class="screen-title">Bar Reviewer</h1>
+      <p class="screen-subtitle">Pick a subject to review.</p>
+      <div class="subject-list" id="subject-list"></div>
     </section>
 
-    <button class="btn btn-primary" id="show-answer">Show suggested answer</button>
+    <!-- SCREEN 2: One subject -->
+    <section id="screen-subject" hidden>
+      <button class="back-btn" id="subject-back">‹ Subjects</button>
+      <h1 class="screen-title" id="subject-title"></h1>
+      <section class="card count-card">
+        <p class="count-number" id="subject-count"></p>
+        <p class="count-label" id="subject-count-label"></p>
+      </section>
+      <button class="btn btn-primary" id="start-practice">Start practice</button>
+      <p class="empty-note" id="subject-empty" hidden>No questions for this subject yet.</p>
+    </section>
 
-    <div id="answer-area" hidden>
+    <!-- SCREEN 3: Practice (one question) -->
+    <section id="screen-question" hidden>
+      <button class="back-btn" id="question-back">‹ Back</button>
+
+      <header class="question-header">
+        <p class="subject" id="subject"></p>
+        <p class="topic" id="topic"></p>
+      </header>
+
       <section class="card">
-        <h2 class="label">Suggested answer</h2>
-        <dl class="alac">
-          <dt>Answer</dt>
-          <dd id="alac-answer"></dd>
-          <dt>Legal basis</dt>
-          <dd id="alac-basis"></dd>
-          <dt>Application</dt>
-          <dd id="alac-application"></dd>
-          <dt>Conclusion</dt>
-          <dd id="alac-conclusion"></dd>
-        </dl>
+        <h2 class="label">Question</h2>
+        <p class="prompt" id="prompt"></p>
       </section>
 
-      <section class="card">
-        <h2 class="label">Key points: check the ones you got</h2>
-        <ul class="key-points" id="key-points"></ul>
-      </section>
+      <button class="btn btn-primary" id="show-answer">Show suggested answer</button>
 
-      <section class="rating">
-        <h2 class="label">How did you do?</h2>
-        <div class="rating-buttons">
-          <button class="btn btn-rate got" data-rating="Got it">Got it</button>
-          <button class="btn btn-rate partly" data-rating="Partly">Partly</button>
-          <button class="btn btn-rate missed" data-rating="Missed it">Missed it</button>
-        </div>
-        <p class="rating-result" id="rating-result" hidden></p>
-      </section>
-    </div>
+      <div id="answer-area" hidden>
+        <section class="card">
+          <h2 class="label">Suggested answer</h2>
+          <dl class="alac">
+            <dt>Answer</dt>
+            <dd id="alac-answer"></dd>
+            <dt>Legal basis</dt>
+            <dd id="alac-basis"></dd>
+            <dt>Application</dt>
+            <dd id="alac-application"></dd>
+            <dt>Conclusion</dt>
+            <dd id="alac-conclusion"></dd>
+          </dl>
+        </section>
+
+        <section class="card">
+          <h2 class="label">Key points: check the ones you got</h2>
+          <ul class="key-points" id="key-points"></ul>
+        </section>
+
+        <section class="rating">
+          <h2 class="label">How did you do?</h2>
+          <div class="rating-buttons">
+            <button class="btn btn-rate got" data-rating="Got it">Got it</button>
+            <button class="btn btn-rate partly" data-rating="Partly">Partly</button>
+            <button class="btn btn-rate missed" data-rating="Missed it">Missed it</button>
+          </div>
+          <p class="rating-result" id="rating-result" hidden></p>
+        </section>
+      </div>
+    </section>
   </main>
 
   <script src="app.js"></script>
