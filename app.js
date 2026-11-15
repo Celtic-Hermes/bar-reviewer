@@ -18,6 +18,11 @@ let currentTopic = null;    // the topic she tapped (or "All topics")
 // The current practice round: which questions, where she is, and her results so far.
 let session = null;
 
+// When she practices a question picked from a case screen (instead of a topic),
+// these hold that question and the case, so "Practice again" and "‹ Back" work.
+let fixedQuestions = null;
+let practiceCase = null;
+
 // ---------- Switching screens ----------
 // Only one screen is visible at a time.
 function showScreen(id) {
@@ -104,6 +109,8 @@ function makeTopicCard(subject, topic) {
   card.append(name, howMany, arrow);
   card.addEventListener("click", function () {
     currentTopic = topic;
+    fixedQuestions = null;
+    practiceCase = null;
     startPractice();
   });
   return card;
@@ -136,7 +143,34 @@ function openSubject(subject) {
     list.appendChild(makeTopicCard(subject, topic));
   });
 
+  showSubjectCases(subject);
   showScreen("screen-subject");
+}
+
+// The "Cases" list on the subject screen: one card per case in this subject.
+function showSubjectCases(subject) {
+  const list = document.getElementById("case-list");
+  list.innerHTML = "";
+  const cases = allCases.filter(function (c) { return c.subject === subject; });
+  cases.forEach(function (theCase) {
+    const card = document.createElement("button");
+    card.className = "subject-card";
+    const name = document.createElement("span");
+    name.className = "subject-name";
+    name.textContent = theCase.name || "Untitled case";
+    const detail = document.createElement("span");
+    detail.className = "card-detail";
+    detail.textContent = [theCase.grNumber, theCase.year, theCase.status === "verified" ? "" : "Draft"]
+      .filter(Boolean).join(" · ");
+    name.appendChild(detail);
+    const arrow = document.createElement("span");
+    arrow.className = "subject-arrow";
+    arrow.textContent = "›";
+    card.append(name, arrow);
+    card.addEventListener("click", function () { openCase(theCase, "subject"); });
+    list.appendChild(card);
+  });
+  document.getElementById("case-empty").hidden = (cases.length !== 0);
 }
 
 // Show the friendly "this list is empty" message on the subject screen.
@@ -182,7 +216,7 @@ function shuffled(list) {
 }
 
 function startPractice() {
-  let questions = questionsForTopic(currentSubject, currentTopic);
+  let questions = fixedQuestions ? fixedQuestions.slice() : questionsForTopic(currentSubject, currentTopic);
   if (questions.length === 0) {
     // Empty list: go to (or stay on) the subject screen and explain, instead of starting.
     openSubject(currentSubject);
@@ -362,7 +396,11 @@ document.getElementById("next-btn").addEventListener("click", function () {
 });
 
 document.getElementById("question-back").addEventListener("click", function () {
-  openSubject(currentSubject);
+  if (practiceCase) {
+    openCase(practiceCase, "subject");  // she came from a case: go back to it
+  } else {
+    openSubject(currentSubject);
+  }
 });
 
 // --- "Read the case" buttons: one for each case this question links to ---
@@ -451,7 +489,44 @@ function openCase(theCase, cameFrom) {
     source.textContent = url || "Not available yet.";
   }
 
+  showCaseQuestions(theCase);
   showScreen("screen-case");
+}
+
+// "Questions linked to this case": tap one to practice it.
+function showCaseQuestions(theCase) {
+  const list = document.getElementById("case-questions");
+  list.innerHTML = "";
+  const linked = allQuestions.filter(function (q) {
+    return q && Array.isArray(q.caseIds) && q.caseIds.includes(theCase.id);
+  });
+  linked.forEach(function (question) {
+    const card = document.createElement("button");
+    card.className = "subject-card";
+    const text = document.createElement("span");
+    text.className = "subject-name";
+    const prompt = String(question.prompt || "").replace(/\s+/g, " ").trim();
+    // A short preview, cut at the end of a whole word.
+    text.textContent = prompt.length > 110 ? prompt.slice(0, 110).replace(/\s+\S*$/, "") + "…" : prompt;
+    const detail = document.createElement("span");
+    detail.className = "card-detail";
+    detail.textContent = (question.type === "mcq" ? "Multiple choice" : "Essay") +
+      (question.status === "verified" ? "" : " · Draft");
+    text.appendChild(detail);
+    const arrow = document.createElement("span");
+    arrow.className = "subject-arrow";
+    arrow.textContent = "›";
+    card.append(text, arrow);
+    card.addEventListener("click", function () {
+      fixedQuestions = [question];
+      practiceCase = theCase;
+      currentSubject = question.subject;
+      currentTopic = question.topic;
+      startPractice();
+    });
+    list.appendChild(card);
+  });
+  document.getElementById("case-questions-empty").hidden = (linked.length !== 0);
 }
 
 document.getElementById("case-back").addEventListener("click", function () {

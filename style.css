@@ -368,3 +368,8 @@ body {
 /* "Read the case" buttons under a question */
 .question-cases { margin-top: 8px; }
 .question-cases .btn { margin-bottom: 10px; }
+
+/* Case cards (subject screen) and linked-question cards (case screen) */
+.card-detail { display: block; margin-top: 3px; font-size: 14px; font-weight: 400; color: var(--muted); }
+#screen-subject .topics-label + .subject-list, #screen-case .topics-label + .subject-list { margin-bottom: 8px; }
+#case-questions .subject-name { font-weight: 500; }
