@@ -403,3 +403,20 @@ fetch("data/questions.json")
       "Otherwise, the file may have a typo.";
     error.hidden = false;
   });
+
+// ---------- Offline support ----------
+// Register the service worker (sw.js), which saves the app's files on the phone.
+// When a new version is installed, reload once so she sees it right away.
+if ("serviceWorker" in navigator) {
+  const hadOldVersion = Boolean(navigator.serviceWorker.controller);
+  let reloaded = false;
+  navigator.serviceWorker.addEventListener("controllerchange", function () {
+    if (hadOldVersion && !reloaded) {
+      reloaded = true;
+      window.location.reload();
+    }
+  });
+  navigator.serviceWorker.register("sw.js", { updateViaCache: "none" }).catch(function () {
+    // If this fails (for example, when opened by double-click), the app still works online.
+  });
+}

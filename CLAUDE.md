@@ -136,6 +136,9 @@ These rules matter more than speed.
 - **Plain HTML, CSS, and JavaScript.** No frameworks or build steps unless there's a clear reason, explained first. This keeps things simple to run and fix.
 - **Phone first**, especially iPhone Safari. It should still work on a computer.
 - **Works offline** after the first visit (using a "service worker", a small script that saves the app's files on the phone).
+  - **Cache version rule:** whenever any app file changes (`index.html`, `style.css`, `app.js`, `progress.js`, `manifest.webmanifest`, icons), or a file is added to or removed from the `APP_FILES` list, bump `CACHE_VERSION` in `sw.js` (v1 → v2 …) in the same commit, and tell the builder it was bumped. Editing only `data/questions.json` does not need a bump: questions are fetched fresh whenever she's online.
+  - Every new app file must be added to `APP_FILES` in `sw.js`, or it won't work offline.
+  - Use relative paths only (no leading `/`), so the app works at `username.github.io/bar-reviewer/`.
 - **Hosting:** GitHub Pages (free). It gives one web link to open on her iPhone and add to the home screen.
 - **Running it on the Mac:** open the project folder in VS Code and use a simple local web server (instructions will be given when first needed).
 - Bad or missing content in the JSON files must not crash the app. Show a clear message instead.

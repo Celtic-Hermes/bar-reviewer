@@ -1,0 +1,14 @@
+{
+  "name": "Bar Reviewer",
+  "short_name": "Bar Reviewer",
+  "description": "Philippine Bar Exam review: questions, essays, and cases.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4f1ea",
+  "theme_color": "#1d3a6e",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
