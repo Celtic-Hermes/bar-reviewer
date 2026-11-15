@@ -229,6 +229,29 @@ body {
 .switch:checked { background: var(--got); }
 .switch:checked::after { transform: translateX(20px); }
 
+/* ---------- Subject screen: "Your progress" box ---------- */
+.stats { display: grid; grid-template-columns: auto 1fr; gap: 8px 16px; margin: 0; }
+.stats dt { color: var(--muted); }
+.stats dd { margin: 0; font-weight: 600; text-align: right; white-space: pre-line; }
+
+/* ---------- Bookmark button (top right of each question) ---------- */
+.question-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+.bookmark-btn {
+  flex-shrink: 0;
+  min-height: 40px;
+  padding: 8px 12px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  color: var(--muted);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.bookmark-btn.on { color: var(--partly); border-color: var(--partly); }
+
 /* ---------- Practice: top bar with Back and "Question 1 of 3" ---------- */
 .question-topbar { display: flex; align-items: center; justify-content: space-between; }
 .progress { margin: 0 0 8px; font-size: 14px; color: var(--muted); }

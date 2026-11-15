@@ -80,6 +80,8 @@ function openSubject(subject) {
   document.getElementById("subject-title").textContent = subject;
   document.getElementById("subject-count").textContent = countLabel(count) + " available";
 
+  showSubjectStats(subject);
+
   // No questions? Hide the topic list and say why.
   document.getElementById("topic-area").hidden = (count === 0);
   document.getElementById("subject-empty").hidden = (count !== 0);
@@ -108,6 +110,25 @@ function openSubject(subject) {
   });
 
   showScreen("screen-subject");
+}
+
+// Fill in the "Your progress" box from what's saved on the phone.
+function showSubjectStats(subject) {
+  const stats = subjectStats(subject);
+  document.getElementById("stats-mcq").textContent = stats.mcqAnswered === 0
+    ? "Not tried yet"
+    : stats.mcqCorrect + " of " + stats.mcqAnswered + " correct";
+  document.getElementById("stats-essay").textContent =
+    (stats.got + stats.partly + stats.missed) === 0
+      ? "Not tried yet"
+      : "Got it " + stats.got + "\nPartly " + stats.partly + "\nMissed it " + stats.missed;
+
+  // Only count questions that still exist in this subject.
+  const ids = questionsFor(subject).map(function (q) { return q.id; });
+  const toReview = ids.filter(function (id) { return progress.review[id]; }).length;
+  const bookmarked = ids.filter(isBookmarked).length;
+  document.getElementById("stats-review").textContent = countLabel(toReview);
+  document.getElementById("stats-bookmarks").textContent = countLabel(bookmarked);
 }
 
 document.getElementById("subject-back").addEventListener("click", function () {
@@ -159,6 +180,7 @@ function showQuestion() {
   document.getElementById("subject").textContent = question.subject;
   document.getElementById("topic").textContent = question.topic;
   document.getElementById("prompt").textContent = question.prompt;
+  showBookmark(question);
 
   const nextButton = document.getElementById("next-btn");
   nextButton.hidden = true;
@@ -177,6 +199,20 @@ function showQuestion() {
 
   showScreen("screen-question");
 }
+
+// --- Bookmark button ---
+function showBookmark(question) {
+  const button = document.getElementById("bookmark-btn");
+  const on = isBookmarked(question.id);
+  button.textContent = on ? "★ Bookmarked" : "☆ Bookmark";
+  button.classList.toggle("on", on);
+}
+
+document.getElementById("bookmark-btn").addEventListener("click", function () {
+  const question = session.questions[session.index];
+  toggleBookmark(question.id);
+  showBookmark(question);
+});
 
 // --- Multiple choice ---
 function showMcq(question) {
@@ -204,6 +240,7 @@ function pickChoice(question, picked) {
   const isRight = picked === question.correct;
   session.mcqTotal += 1;
   if (isRight) { session.mcqCorrect += 1; }
+  recordMcq(question, isRight);  // save on the phone
 
   // Lock the choices and color them: correct one green, her wrong pick red.
   document.querySelectorAll(".choice").forEach(function (button) {
@@ -270,6 +307,7 @@ document.querySelectorAll(".btn-rate").forEach(function (button) {
   button.addEventListener("click", function () {
     const rating = button.dataset.rating;
     session.ratings[rating] += 1;
+    recordEssay(session.questions[session.index], rating);  // save on the phone
     document.querySelectorAll(".btn-rate").forEach(function (b) { b.disabled = true; });
     button.classList.add("selected");
     const result = document.getElementById("rating-result");

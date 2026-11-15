@@ -27,6 +27,20 @@
       <p class="screen-subtitle" id="subject-count"></p>
 
       <div id="topic-area">
+        <section class="card">
+          <h2 class="label">Your progress</h2>
+          <dl class="stats">
+            <dt>Multiple choice</dt>
+            <dd id="stats-mcq"></dd>
+            <dt>Essays</dt>
+            <dd id="stats-essay"></dd>
+            <dt>To review</dt>
+            <dd id="stats-review"></dd>
+            <dt>Bookmarked</dt>
+            <dd id="stats-bookmarks"></dd>
+          </dl>
+        </section>
+
         <label class="switch-row">
           <span>
             <span class="switch-title">Shuffle questions</span>
@@ -50,8 +64,11 @@
       </div>
 
       <header class="question-header">
-        <p class="subject" id="subject"></p>
-        <p class="topic" id="topic"></p>
+        <div>
+          <p class="subject" id="subject"></p>
+          <p class="topic" id="topic"></p>
+        </div>
+        <button class="bookmark-btn" id="bookmark-btn"></button>
       </header>
 
       <section class="card">
@@ -134,6 +151,7 @@
     </section>
   </main>
 
+  <script src="progress.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
