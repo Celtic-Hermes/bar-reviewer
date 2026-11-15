@@ -38,6 +38,7 @@ The builder is not a lawyer and does not write questions. Claude writes them, so
 7. **Public-repo reminder.** The GitHub repository and app are public. For now they contain only placeholder content. **Before any real content is added, remind the builder** and talk about whether to keep the app public or make it private.
 
 ## Content format (JSON files)
+Administrative cases use their A.C. number in the `grNumber` field (e.g. `"A.C. No. 9514"`).
 Content lives in JSON files, separate from the app code:
 - `data/questions.json`: a list of questions
 - `data/cases.json`: a list of cases
@@ -81,6 +82,7 @@ Content lives in JSON files, separate from the app code:
   "source": {
     "caseTitle": "Juan Dela Cruz v. People",
     "grNumber": "G.R. No. 123456",
+    "url": "Where the decision text came from, or \"pasted by user\"",
     "part": "Ruling, discussion of the first issue",
     "excerpt": "Short exact quote from the decision."
   }

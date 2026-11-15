@@ -1,0 +1,15 @@
+[
+  {
+    "id": "case-0001",
+    "name": "Jandoquile v. Revilla, Jr.",
+    "grNumber": "A.C. No. 9514",
+    "year": 2013,
+    "subject": "Legal and Judicial Ethics",
+    "topic": "Notarial Practice",
+    "facts": "Atty. Quirino P. Revilla, Jr., a notary public, notarized a complaint-affidavit signed by three people: Heneraline L. Brosas (the sister of his wife), Herizalyn Brosas Pedrosa (his wife's sister-in-law), and Elmer L. Alvarado (the live-in houseboy of the Brosas family). He did not ask any of them to show valid ID cards. Bernard N. Jandoquile filed a complaint asking the Supreme Court to disbar him. Atty. Revilla, Jr. admitted the facts. He argued that this single act is not a ground for disbarment, that he acted more as the three signers' lawyer than as a notary public, and that he did not need their IDs because he knows them personally.",
+    "issue": "Should Atty. Revilla, Jr. be disbarred for (1) notarizing a complaint-affidavit signed by relatives of his wife, and (2) not asking the signers to show valid ID cards?",
+    "ruling": "No disbarment, but he was penalized. (1) He violated the disqualification rule in Section 3(c), Rule IV of the 2004 Rules on Notarial Practice, because two of the signers are his relatives within the fourth civil degree of affinity (relatives through marriage). He should have refused to notarize. The Court rejected his claim that he acted as their lawyer and not as a notary public: the notarial certificate at the bottom of the document bore his signature as a notary public. (2) He was not liable for skipping the IDs. A notary public who knows the signers personally need not ask for their IDs, as shown by the definition of a jurat. But he was at fault for not stating in the jurat that he knows them personally. (3) His violation was not deceit, malpractice, gross misconduct, gross immoral conduct, or any other serious ground for disbarment under Section 27, Rule 138 of the Rules of Court. Since disbarment should not be imposed when a lighter penalty will do, he was reprimanded and disqualified from being commissioned as a notary public, or from performing any notarial act, for three months. He was also told to inform the Court by affidavit once those three months are over.",
+    "keyDoctrine": "A notary public may not notarize a document if the principal (the person whose act is being notarized) is a relative by affinity or consanguinity within the fourth civil degree, even if the notary is also that person's lawyer. A notary who personally knows the signers need not ask for their IDs, but should say in the jurat that they are personally known. A single violation like this is not a ground for disbarment; a lighter penalty is enough.",
+    "sourceUrl": "https://lawphil.net/judjuris/juri2013/apr2013/ac_9514_2013.html"
+  }
+]

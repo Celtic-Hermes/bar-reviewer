@@ -8,7 +8,7 @@
 // You do NOT need to change it when you only edit data/questions.json.
 // Questions are always fetched fresh when she's online.
 // =====================================================================
-const CACHE_VERSION = "v2";
+const CACHE_VERSION = "v3";
 const CACHE_NAME = "bar-reviewer-" + CACHE_VERSION;
 
 // Every file the app needs, written relative to this file so it works

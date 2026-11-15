@@ -70,5 +70,93 @@
       "part": "[PLACEHOLDER] Ruling",
       "excerpt": "[PLACEHOLDER] No real decision text."
     }
+  },
+  {
+    "id": "q-0004",
+    "type": "essay",
+    "status": "draft",
+    "subject": "Legal and Judicial Ethics",
+    "topic": "Notarial Practice",
+    "prompt": "Atty. Lorenzo is a commissioned notary public. He is also the lawyer of Mila and Tessa, who are both sisters of his wife. He prepares their joint complaint-affidavit and notarizes it, signing the notarial certificate as notary public. When an administrative complaint is filed against him, he argues: (1) he acted more as Mila and Tessa's lawyer than as a notary public, so the disqualification rule does not apply to him; and (2) in any case, a single notarization like this is not a ground for disbarment.\n\n(a) Did Atty. Lorenzo violate the 2004 Rules on Notarial Practice?\n(b) Should he be disbarred? Explain.",
+    "suggestedAnswer": {
+      "answer": "(a) Yes. He was disqualified from notarizing the complaint-affidavit of his wife's sisters. (b) No. A single violation of the disqualification rule is not a sufficient ground for disbarment, but he may be given a lighter penalty.",
+      "legalBasis": "Section 3(c), Rule IV of the 2004 Rules on Notarial Practice disqualifies a notary public from performing a notarial act if he is a spouse, common-law partner, ancestor, descendant, or relative by affinity or consanguinity of the principal within the fourth civil degree. Under Section 27, Rule 138 of the Rules of Court, a lawyer may be disbarred for deceit, malpractice, gross misconduct, grossly immoral conduct, and other serious grounds. In Jandoquile v. Revilla, Jr., the Court held that removal from the Bar should not be decreed when a less severe punishment, such as reprimand, temporary suspension, or fine, would accomplish the end desired.",
+      "application": "(a) Mila and Tessa are the principals, and as his wife's sisters they are his relatives within the fourth civil degree of affinity, the same relationship as in Jandoquile, where the notary notarized for his wife's sister. Given the clear rule, he should have refused to notarize. His claim that he acted as their lawyer fails: he signed the notarial certificate as notary public, just as in Jandoquile, where the Court said the notary 'cannot therefore claim that he signed it as counsel.' (b) Notarizing for relatives, without more, is not deceit, malpractice, gross misconduct, or grossly immoral conduct. Like Atty. Revilla, Jr., who committed a single violation, he should get a penalty lighter than disbarment. In Jandoquile, that was a reprimand and disqualification from notarial practice for three months.",
+      "conclusion": "Atty. Lorenzo violated Section 3(c), Rule IV of the 2004 Rules on Notarial Practice, and being their lawyer is no excuse. But he should not be disbarred; a lighter penalty, such as a reprimand and temporary disqualification as a notary public, is enough."
+    },
+    "keyPoints": [
+      "Cites Section 3(c), Rule IV of the 2004 Rules on Notarial Practice (disqualification rule)",
+      "Wife's sisters are relatives within the fourth civil degree of affinity, so he was disqualified",
+      "Rejects the 'I acted as their lawyer' defense because he signed the notarial certificate as notary public",
+      "A single violation is not deceit, malpractice, gross misconduct, or grossly immoral conduct (Section 27, Rule 138)",
+      "Disbarment is not imposed when a less severe penalty (reprimand, temporary suspension, or fine) is enough"
+    ],
+    "caseIds": [
+      "case-0001"
+    ],
+    "source": {
+      "caseTitle": "Jandoquile v. Revilla, Jr.",
+      "grNumber": "A.C. No. 9514",
+      "url": "https://lawphil.net/judjuris/juri2013/apr2013/ac_9514_2013.html",
+      "part": "Resolution, discussion of the first charge (notarizing for relatives)",
+      "excerpt": "Given the clear provision of the disqualification rule, it behooved upon Atty. Revilla, Jr. to act with prudence and refuse notarizing the document."
+    }
+  },
+  {
+    "id": "q-0005",
+    "type": "essay",
+    "status": "draft",
+    "subject": "Legal and Judicial Ethics",
+    "topic": "Notarial Practice",
+    "prompt": "Rosa and Ben ask Atty. Ramos, a notary public, to notarize their joint affidavit. They are not related to him, but he personally knows both of them well. They appear before him, sign the affidavit in his presence, and take an oath. Because he knows them, Atty. Ramos does not ask for any ID. The jurat he signs does not say that he personally knows them.\n\n(a) Was Atty. Ramos required to ask Rosa and Ben for valid ID cards?\n(b) Was there anything wrong with how he notarized the affidavit? Explain.",
+    "suggestedAnswer": {
+      "answer": "(a) No. A notary public who personally knows the affiants need not require them to show valid ID cards. (b) Yes. He should have stated in the jurat that he personally knows Rosa and Ben.",
+      "legalBasis": "Under Section 6, Rule II of the 2004 Rules on Notarial Practice, a jurat is an act in which an individual, on a single occasion: (a) appears in person before the notary public and presents an instrument or document; (b) is personally known to the notary public or identified by the notary public through competent evidence of identity; (c) signs the instrument or document in the presence of the notary; and (d) takes an oath or affirmation before the notary public as to such instrument or document. In Jandoquile v. Revilla, Jr., the Court held that if the notary public knows the affiants personally, he need not require them to show valid ID cards, but faulted the notary for not indicating that fact in the jurat.",
+      "application": "(a) Being personally known to the notary and being identified through competent evidence of identity are alternatives under the definition of a jurat. Since Atty. Ramos personally knows Rosa and Ben, he did not need their IDs, just as the Court found that Atty. Revilla, Jr. 'was justified in no longer requiring them to show valid identification cards.' (b) Like Atty. Revilla, Jr., Atty. Ramos left out of the jurat any statement that he personally knows the affiants. The Court said Atty. Revilla, Jr. 'is not without fault for failing to indicate such fact in the \"jurat\"' of the document.",
+      "conclusion": "Atty. Ramos was not required to ask for IDs because he personally knows the affiants, but he was at fault for not stating in the jurat that he personally knows them."
+    },
+    "keyPoints": [
+      "States the definition of a jurat (Section 6, Rule II, 2004 Rules on Notarial Practice)",
+      "Personal knowledge OR competent evidence of identity: either one is enough",
+      "No need for IDs when the notary personally knows the affiants",
+      "The jurat should state that the affiants are personally known to the notary",
+      "Cites Jandoquile v. Revilla, Jr."
+    ],
+    "caseIds": [
+      "case-0001"
+    ],
+    "source": {
+      "caseTitle": "Jandoquile v. Revilla, Jr.",
+      "grNumber": "A.C. No. 9514",
+      "url": "https://lawphil.net/judjuris/juri2013/apr2013/ac_9514_2013.html",
+      "part": "Resolution, discussion of the second charge (no ID cards required)",
+      "excerpt": "If the notary public knows the affiants personally, he need not require them to show their valid identification cards."
+    }
+  },
+  {
+    "id": "q-0006",
+    "type": "mcq",
+    "status": "draft",
+    "subject": "Legal and Judicial Ethics",
+    "topic": "Notarial Practice",
+    "prompt": "Under the definition of a \"jurat\" in Section 6, Rule II of the 2004 Rules on Notarial Practice, as applied in Jandoquile v. Revilla, Jr., which of the following is NOT required?",
+    "choices": {
+      "A": "The individual appears in person before the notary public and presents the instrument or document.",
+      "B": "The individual signs the instrument or document in the presence of the notary.",
+      "C": "The individual takes an oath or affirmation before the notary public as to the instrument or document.",
+      "D": "The individual shows a valid identification card, even if personally known to the notary public."
+    },
+    "correct": "D",
+    "explanation": "D is not required. The definition of a jurat allows the individual to be either personally known to the notary public or identified through competent evidence of identity. In Jandoquile v. Revilla, Jr., the Court held that if the notary public knows the affiants personally, he need not require them to show valid identification cards. A, B, and C are wrong answers because each is part of the definition of a jurat: appearing in person and presenting the document, signing in the notary's presence, and taking an oath or affirmation before the notary.",
+    "caseIds": [
+      "case-0001"
+    ],
+    "source": {
+      "caseTitle": "Jandoquile v. Revilla, Jr.",
+      "grNumber": "A.C. No. 9514",
+      "url": "https://lawphil.net/judjuris/juri2013/apr2013/ac_9514_2013.html",
+      "part": "Resolution, discussion of the second charge (definition of jurat, Section 6, Rule II)",
+      "excerpt": "A \"jurat\" refers to an act in which an individual on a single occasion: (a) appears in person before the notary public and presents an instrument or document; (b) is personally known to the notary public or identified by the notary public through competent evidence of identity; (c) signs the instrument or document in the presence of the notary; and (d) takes an oath or affirmation before the notary public as to such instrument or document."
+    }
   }
 ]

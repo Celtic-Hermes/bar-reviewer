@@ -211,6 +211,8 @@ function showQuestion() {
   document.getElementById("subject").textContent = question.subject;
   document.getElementById("topic").textContent = question.topic;
   document.getElementById("prompt").textContent = question.prompt;
+  // Anything not marked "verified" (including a missing status) shows the draft label.
+  document.getElementById("draft-badge").hidden = (question.status === "verified");
   showBookmark(question);
 
   const nextButton = document.getElementById("next-btn");

@@ -86,7 +86,7 @@ body {
   color: var(--muted);
 }
 
-.prompt { margin: 0; }
+.prompt { margin: 0; white-space: pre-line; }  /* keep line breaks written in the question */
 
 /* ALAC answer: each part gets a small heading. */
 .alac { margin: 0; }
@@ -343,4 +343,16 @@ body {
   clip: rect(0 0 0 0);
   white-space: nowrap;
   opacity: 0;
+}
+
+/* "Draft, not yet verified" label on questions nobody has checked yet */
+.draft-badge {
+  display: inline-block;
+  margin: 6px 0 0;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--banner-bg);
+  color: var(--banner-text);
+  font-size: 13px;
+  font-weight: 700;
 }
