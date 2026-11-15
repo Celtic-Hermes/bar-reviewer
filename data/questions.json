@@ -24,5 +24,51 @@
       "part": "[PLACEHOLDER] Ruling",
       "excerpt": "[PLACEHOLDER] No real decision text."
     }
+  },
+  {
+    "id": "q-0002",
+    "type": "mcq",
+    "status": "draft",
+    "subject": "Civil Law",
+    "topic": "Placeholder Topic",
+    "prompt": "[PLACEHOLDER] Sample multiple-choice question #1. Which of the following sample statements is correct?",
+    "choices": {
+      "A": "[PLACEHOLDER] Sample choice A",
+      "B": "[PLACEHOLDER] Sample choice B (the correct one)",
+      "C": "[PLACEHOLDER] Sample choice C",
+      "D": "[PLACEHOLDER] Sample choice D"
+    },
+    "correct": "B",
+    "explanation": "[PLACEHOLDER] B is correct because of a sample reason. A, C, and D are wrong for sample reasons.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "[PLACEHOLDER] Sample v. Sample",
+      "grNumber": "[PLACEHOLDER] G.R. No. 000000",
+      "part": "[PLACEHOLDER] Ruling",
+      "excerpt": "[PLACEHOLDER] No real decision text."
+    }
+  },
+  {
+    "id": "q-0003",
+    "type": "mcq",
+    "status": "draft",
+    "subject": "Civil Law",
+    "topic": "Placeholder Topic",
+    "prompt": "[PLACEHOLDER] Sample multiple-choice question #2. Under the sample rule, what happens to the sample agreement?",
+    "choices": {
+      "A": "[PLACEHOLDER] Sample choice A",
+      "B": "[PLACEHOLDER] Sample choice B",
+      "C": "[PLACEHOLDER] Sample choice C",
+      "D": "[PLACEHOLDER] Sample choice D (the correct one)"
+    },
+    "correct": "D",
+    "explanation": "[PLACEHOLDER] D is correct because of a sample reason. A, B, and C are wrong for sample reasons.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "[PLACEHOLDER] Sample v. Sample",
+      "grNumber": "[PLACEHOLDER] G.R. No. 000000",
+      "part": "[PLACEHOLDER] Ruling",
+      "excerpt": "[PLACEHOLDER] No real decision text."
+    }
   }
 ]

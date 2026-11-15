@@ -187,6 +187,68 @@ body {
 .btn:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
 .empty-note { margin: -4px 0 0; text-align: center; color: var(--muted); }
 
+/* ---------- Practice: top bar with Back and "Question 1 of 3" ---------- */
+.question-topbar { display: flex; align-items: center; justify-content: space-between; }
+.progress { margin: 0 0 8px; font-size: 14px; color: var(--muted); }
+
+/* ---------- Multiple-choice answer buttons ---------- */
+.choices { display: grid; gap: 10px; margin-bottom: 16px; }
+.choice {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  width: 100%;
+  min-height: 56px;
+  padding: 14px;
+  background: var(--card);
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  color: var(--text);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.choice:active { transform: scale(0.98); }
+.choice:disabled { cursor: default; transform: none; }
+.choice-letter {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid var(--muted);
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+}
+.choice-text { padding-top: 1px; }
+.choice.right { border-color: var(--got); }
+.choice.right .choice-letter { background: var(--got); border-color: var(--got); color: var(--card); }
+.choice.wrong { border-color: var(--missed); }
+.choice.wrong .choice-letter { background: var(--missed); border-color: var(--missed); color: var(--card); }
+
+.feedback-title { margin: 0 0 14px; font-size: 19px; font-weight: 700; }
+.got-text { color: var(--got); }
+.partly-text { color: var(--partly); }
+.missed-text { color: var(--missed); }
+
+.btn-rate:disabled { cursor: default; transform: none; }
+.btn-rate:disabled:not(.selected) { opacity: 0.45; }
+.btn-rate.selected:disabled { opacity: 1; }
+
+.next-btn { margin-top: 20px; }
+
+/* ---------- Results ---------- */
+.big-score { margin: 0; font-size: 36px; font-weight: 700; line-height: 1.1; color: var(--primary); text-align: center; }
+#results-mcq .count-label, .rating-summary .count-label { text-align: center; }
+.rating-summary { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.rating-summary .big-score.got-text { color: var(--got); }
+.rating-summary .big-score.partly-text { color: var(--partly); }
+.rating-summary .big-score.missed-text { color: var(--missed); }
+.btn-secondary { background: var(--card); color: var(--primary); border-color: var(--primary); margin-bottom: 16px; }
+
 /* ---------- Error message ---------- */
 .error {
   margin: 0 0 16px;

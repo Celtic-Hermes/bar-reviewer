@@ -34,7 +34,10 @@
 
     <!-- SCREEN 3: Practice (one question) -->
     <section id="screen-question" hidden>
-      <button class="back-btn" id="question-back">‹ Back</button>
+      <div class="question-topbar">
+        <button class="back-btn" id="question-back">‹ Back</button>
+        <p class="progress" id="progress"></p>
+      </div>
 
       <header class="question-header">
         <p class="subject" id="subject"></p>
@@ -42,10 +45,22 @@
       </header>
 
       <section class="card">
-        <h2 class="label">Question</h2>
+        <h2 class="label" id="question-label">Question</h2>
         <p class="prompt" id="prompt"></p>
       </section>
 
+      <!-- Multiple-choice parts (hidden for essays) -->
+      <div id="mcq-area" hidden>
+        <div class="choices" id="choices"></div>
+        <section class="card feedback" id="mcq-feedback" hidden>
+          <p class="feedback-title" id="mcq-result"></p>
+          <h2 class="label">Explanation</h2>
+          <p class="prompt" id="mcq-explanation"></p>
+        </section>
+      </div>
+
+      <!-- Essay parts (hidden for multiple choice) -->
+      <div id="essay-area">
       <button class="btn btn-primary" id="show-answer">Show suggested answer</button>
 
       <div id="answer-area" hidden>
@@ -78,6 +93,34 @@
           <p class="rating-result" id="rating-result" hidden></p>
         </section>
       </div>
+      </div>
+
+      <!-- Appears once the question is answered (or rated) -->
+      <button class="btn btn-primary next-btn" id="next-btn" hidden>Next</button>
+    </section>
+
+    <!-- SCREEN 4: Results -->
+    <section id="screen-results" hidden>
+      <h1 class="screen-title">Results</h1>
+      <p class="screen-subtitle" id="results-subject"></p>
+
+      <section class="card" id="results-mcq">
+        <h2 class="label">Multiple choice</h2>
+        <p class="big-score" id="results-mcq-score"></p>
+        <p class="count-label">correct</p>
+      </section>
+
+      <section class="card" id="results-essay">
+        <h2 class="label">Essays: your ratings</h2>
+        <div class="rating-summary">
+          <div><p class="big-score got-text" id="results-got"></p><p class="count-label">Got it</p></div>
+          <div><p class="big-score partly-text" id="results-partly"></p><p class="count-label">Partly</p></div>
+          <div><p class="big-score missed-text" id="results-missed"></p><p class="count-label">Missed it</p></div>
+        </div>
+      </section>
+
+      <button class="btn btn-primary" id="results-again">Practice again</button>
+      <button class="btn btn-secondary" id="results-home">Back to subjects</button>
     </section>
   </main>
 

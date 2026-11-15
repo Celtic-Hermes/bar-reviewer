@@ -13,10 +13,13 @@ const SUBJECTS = [
 let allQuestions = [];      // filled in from data/questions.json
 let currentSubject = null;  // the subject she tapped
 
+// The current practice round: which questions, where she is, and her results so far.
+let session = null;
+
 // ---------- Switching screens ----------
 // Only one screen is visible at a time.
 function showScreen(id) {
-  ["screen-home", "screen-subject", "screen-question"].forEach(function (screenId) {
+  ["screen-home", "screen-subject", "screen-question", "screen-results"].forEach(function (screenId) {
     document.getElementById(screenId).hidden = (screenId !== id);
   });
   window.scrollTo(0, 0);
@@ -65,18 +68,102 @@ document.getElementById("subject-back").addEventListener("click", function () {
   showScreen("screen-home");
 });
 
-document.getElementById("start-practice").addEventListener("click", function () {
+function startPractice() {
   const questions = questionsFor(currentSubject);
-  if (questions.length > 0) {
-    showQuestion(questions[0]);
-  }
-});
+  if (questions.length === 0) { return; }
+  session = {
+    questions: questions,
+    index: 0,
+    mcqCorrect: 0,
+    mcqTotal: 0,
+    ratings: { "Got it": 0, "Partly": 0, "Missed it": 0 }
+  };
+  showQuestion();
+}
+
+document.getElementById("start-practice").addEventListener("click", startPractice);
 
 // ---------- Screen 3: Practice ----------
-function showQuestion(question) {
+function showQuestion() {
+  const question = session.questions[session.index];
+  const isLast = session.index === session.questions.length - 1;
+
+  document.getElementById("progress").textContent =
+    "Question " + (session.index + 1) + " of " + session.questions.length;
   document.getElementById("subject").textContent = question.subject;
   document.getElementById("topic").textContent = question.topic;
   document.getElementById("prompt").textContent = question.prompt;
+
+  const nextButton = document.getElementById("next-btn");
+  nextButton.hidden = true;
+  nextButton.textContent = isLast ? "See results" : "Next";
+
+  const isMcq = question.type === "mcq";
+  document.getElementById("question-label").textContent = isMcq ? "Multiple choice" : "Essay question";
+  document.getElementById("mcq-area").hidden = !isMcq;
+  document.getElementById("essay-area").hidden = isMcq;
+
+  if (isMcq) {
+    showMcq(question);
+  } else {
+    showEssay(question);
+  }
+
+  showScreen("screen-question");
+}
+
+// --- Multiple choice ---
+function showMcq(question) {
+  const container = document.getElementById("choices");
+  container.innerHTML = "";
+  document.getElementById("mcq-feedback").hidden = true;
+
+  ["A", "B", "C", "D"].forEach(function (letter) {
+    const button = document.createElement("button");
+    button.className = "choice";
+    button.dataset.letter = letter;
+    const badge = document.createElement("span");
+    badge.className = "choice-letter";
+    badge.textContent = letter;
+    const text = document.createElement("span");
+    text.className = "choice-text";
+    text.textContent = question.choices[letter];
+    button.append(badge, text);
+    button.addEventListener("click", function () { pickChoice(question, letter); });
+    container.appendChild(button);
+  });
+}
+
+function pickChoice(question, picked) {
+  const isRight = picked === question.correct;
+  session.mcqTotal += 1;
+  if (isRight) { session.mcqCorrect += 1; }
+
+  // Lock the choices and color them: correct one green, her wrong pick red.
+  document.querySelectorAll(".choice").forEach(function (button) {
+    button.disabled = true;
+    const letter = button.dataset.letter;
+    if (letter === question.correct) {
+      button.classList.add("right");
+      button.querySelector(".choice-letter").textContent = "✓";
+    } else if (letter === picked) {
+      button.classList.add("wrong");
+      button.querySelector(".choice-letter").textContent = "✗";
+    }
+  });
+
+  const result = document.getElementById("mcq-result");
+  result.textContent = isRight
+    ? "Correct!"
+    : "Not quite. The correct answer is " + question.correct + ".";
+  result.className = "feedback-title " + (isRight ? "got-text" : "missed-text");
+  document.getElementById("mcq-explanation").textContent = question.explanation;
+  document.getElementById("mcq-feedback").hidden = false;
+  document.getElementById("next-btn").hidden = false;
+}
+
+// --- Essay ---
+function showEssay(question) {
   document.getElementById("alac-answer").textContent = question.suggestedAnswer.answer;
   document.getElementById("alac-basis").textContent = question.suggestedAnswer.legalBasis;
   document.getElementById("alac-application").textContent = question.suggestedAnswer.application;
@@ -100,14 +187,11 @@ function showQuestion(question) {
   document.getElementById("answer-area").hidden = true;
   document.getElementById("show-answer").hidden = false;
   document.getElementById("rating-result").hidden = true;
-  document.querySelectorAll(".btn-rate").forEach(function (b) { b.classList.remove("selected"); });
-
-  showScreen("screen-question");
+  document.querySelectorAll(".btn-rate").forEach(function (b) {
+    b.classList.remove("selected");
+    b.disabled = false;
+  });
 }
-
-document.getElementById("question-back").addEventListener("click", function () {
-  openSubject(currentSubject);
-});
 
 // "Show suggested answer" reveals the hidden answer section.
 document.getElementById("show-answer").addEventListener("click", function () {
@@ -115,15 +199,53 @@ document.getElementById("show-answer").addEventListener("click", function () {
   document.getElementById("show-answer").hidden = true;
 });
 
-// Rating buttons: highlight the one she taps. (Not saved yet. That comes later.)
+// Rating buttons: she picks one, it's counted once, then "Next" appears.
 document.querySelectorAll(".btn-rate").forEach(function (button) {
   button.addEventListener("click", function () {
-    document.querySelectorAll(".btn-rate").forEach(function (b) { b.classList.remove("selected"); });
+    const rating = button.dataset.rating;
+    session.ratings[rating] += 1;
+    document.querySelectorAll(".btn-rate").forEach(function (b) { b.disabled = true; });
     button.classList.add("selected");
     const result = document.getElementById("rating-result");
-    result.textContent = "You rated this: " + button.dataset.rating;
+    result.textContent = "You rated this: " + rating;
     result.hidden = false;
+    document.getElementById("next-btn").hidden = false;
   });
+});
+
+document.getElementById("next-btn").addEventListener("click", function () {
+  session.index += 1;
+  if (session.index < session.questions.length) {
+    showQuestion();
+  } else {
+    showResults();
+  }
+});
+
+document.getElementById("question-back").addEventListener("click", function () {
+  openSubject(currentSubject);
+});
+
+// ---------- Screen 4: Results ----------
+function showResults() {
+  const essayCount = session.ratings["Got it"] + session.ratings["Partly"] + session.ratings["Missed it"];
+  document.getElementById("results-subject").textContent = currentSubject;
+
+  // Only show a section if this round had that kind of question.
+  document.getElementById("results-mcq").hidden = (session.mcqTotal === 0);
+  document.getElementById("results-mcq-score").textContent = session.mcqCorrect + " of " + session.mcqTotal;
+
+  document.getElementById("results-essay").hidden = (essayCount === 0);
+  document.getElementById("results-got").textContent = session.ratings["Got it"];
+  document.getElementById("results-partly").textContent = session.ratings["Partly"];
+  document.getElementById("results-missed").textContent = session.ratings["Missed it"];
+
+  showScreen("screen-results");
+}
+
+document.getElementById("results-again").addEventListener("click", startPractice);
+document.getElementById("results-home").addEventListener("click", function () {
+  showScreen("screen-home");
 });
 
 // ---------- Start the app ----------
