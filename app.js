@@ -383,6 +383,119 @@ document.getElementById("results-home").addEventListener("click", function () {
   showScreen("screen-home");
 });
 
+// ---------- Home: back up and restore progress ----------
+function showBackupMessage(text, isProblem) {
+  const message = document.getElementById("backup-message");
+  message.textContent = text;
+  message.className = "backup-message " + (isProblem ? "problem" : "ok");
+  message.hidden = false;
+}
+
+// A file name with today's date, like bar-reviewer-progress-2026-11-15.json
+function backupFileName() {
+  const d = new Date();
+  const pad = function (n) { return String(n).padStart(2, "0"); };
+  return "bar-reviewer-progress-" + d.getFullYear() + "-" + pad(d.getMonth() + 1) + "-" + pad(d.getDate()) + ".json";
+}
+
+// On a computer: save the file to the Downloads folder.
+function downloadFile(text, name) {
+  const url = URL.createObjectURL(new Blob([text], { type: "application/json" }));
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = name;
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+  setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+}
+
+// On iPhone (also inside the home-screen app), a normal download often doesn't work,
+// so we open the Share menu instead, where she can tap "Save to Files".
+function shareableFile(text, name) {
+  if (!navigator.canShare || navigator.maxTouchPoints === 0) { return null; }  // not a phone/tablet
+  const types = ["application/json", "text/plain"];
+  for (let i = 0; i < types.length; i++) {
+    try {
+      const file = new File([text], name, { type: types[i] });
+      if (navigator.canShare({ files: [file] })) { return file; }
+    } catch (e) {
+      // This phone can't make files this way; try the next type.
+    }
+  }
+  return null;
+}
+
+document.getElementById("backup-btn").addEventListener("click", function () {
+  document.getElementById("backup-message").hidden = true;
+  const text = progressBackupText();
+  const name = backupFileName();
+  const file = shareableFile(text, name);
+
+  if (file) {
+    navigator.share({ files: [file] })
+      .then(function () {
+        showBackupMessage("Backup shared. If you chose Save to Files, it's saved as " + name + ".");
+      })
+      .catch(function (error) {
+        if (error && error.name === "AbortError") { return; }  // she closed the Share menu
+        showBackupMessage("Couldn't make the backup. Please try again.", true);
+      });
+    return;
+  }
+
+  try {
+    downloadFile(text, name);
+    showBackupMessage("Backup saved to your Downloads folder as " + name + ".");
+  } catch (e) {
+    showBackupMessage("Couldn't make the backup on this device.", true);
+  }
+});
+
+function describeDate(date) {
+  if (!date) { return "an unknown date"; }
+  return date.toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" });
+}
+
+document.getElementById("restore-input").addEventListener("change", function (event) {
+  const input = event.target;
+  const file = input.files && input.files[0];
+  input.value = "";  // so the same file can be picked again later
+  if (!file) { return; }
+  document.getElementById("backup-message").hidden = true;
+
+  if (file.size > 5 * 1024 * 1024) {
+    showBackupMessage("That file is too big to be a Bar Reviewer backup. Nothing was changed.", true);
+    return;
+  }
+
+  const reader = new FileReader();
+  reader.onerror = function () {
+    showBackupMessage("Couldn't open that file. Nothing was changed.", true);
+  };
+  reader.onload = function () {
+    const backup = readBackup(String(reader.result));
+    if (backup.error) {
+      showBackupMessage(backup.error, true);
+      return;
+    }
+    const sure = window.confirm(
+      "Replace the progress on this phone with the backup from " + describeDate(backup.savedAt) + "?\n\n" +
+      "Your current scores, review list, and bookmarks will be replaced."
+    );
+    if (!sure) {
+      showBackupMessage("Restore cancelled. Nothing was changed.");
+      return;
+    }
+    if (restoreProgress(backup.progress)) {
+      showBackupMessage("Progress restored from the backup of " + describeDate(backup.savedAt) + ".");
+    } else {
+      showBackupMessage("Loaded the backup, but this phone wouldn't save it. Private browsing may be on.", true);
+    }
+  };
+  reader.readAsText(file);
+});
+
 // ---------- Start the app ----------
 buildHome();
 

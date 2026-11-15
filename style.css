@@ -325,3 +325,22 @@ body {
   color: var(--missed);
   background: var(--card);
 }
+
+/* ---------- Home: back up / restore progress ---------- */
+.backup-card { margin-top: 28px; }
+.backup-note { margin: 0 0 14px; font-size: 15px; color: var(--muted); }
+.backup-card .btn { text-align: center; margin-bottom: 10px; }
+.backup-card label.btn { line-height: 20px; }
+.backup-message { margin: 4px 0 0; text-align: center; font-weight: 600; }
+.backup-message.ok { color: var(--got); }
+.backup-message.problem { color: var(--missed); }
+/* Hides the plain file picker; the "Restore progress" button opens it instead. */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  opacity: 0;
+}

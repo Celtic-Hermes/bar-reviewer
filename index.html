@@ -30,6 +30,16 @@
       <h1 class="screen-title">Bar Reviewer</h1>
       <p class="screen-subtitle">Pick a subject to review.</p>
       <div class="subject-list" id="subject-list"></div>
+
+      <!-- Back up / restore her progress as a file -->
+      <section class="card backup-card">
+        <h2 class="label">Back up your progress</h2>
+        <p class="backup-note">Save a copy of your scores, review list, and bookmarks as a file. Keep it in Files or iCloud Drive, so you can load it back if this phone ever loses your progress.</p>
+        <button class="btn btn-primary" id="backup-btn">Back up my progress</button>
+        <label class="btn btn-secondary" for="restore-input">Restore progress</label>
+        <input type="file" id="restore-input" class="visually-hidden">
+        <p class="backup-message" id="backup-message" role="status" hidden></p>
+      </section>
     </section>
 
     <!-- SCREEN 2: One subject -->

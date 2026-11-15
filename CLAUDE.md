@@ -110,7 +110,7 @@ Exactly 4 choices (A–D) and exactly one correct answer. She gets instant feedb
 - Saved in the phone's browser storage (`localStorage`). Nothing is sent anywhere, and there are no accounts.
 - Remember: **score per subject**, **questions she missed**, and **bookmarked questions**.
 - Counting: a multiple-choice question is "missed" if answered wrong. An essay rated **Partly** or **Missed it** goes into her review list.
-- iPhone note: she should use Safari's **Add to Home Screen**. iPhones can clear saved data for websites that haven't been opened in a while, but apps added to the home screen are better protected. A "back up my progress" option may be added later.
+- iPhone note: she should use Safari's **Add to Home Screen**. iPhones can clear saved data for websites that haven't been opened in a while, but apps added to the home screen are better protected. The home screen has **Back up my progress** (saves a file via the Share menu → Save to Files) and **Restore progress** (loads that file back).
 
 ## Rules for working on this project
 These rules matter more than speed.
