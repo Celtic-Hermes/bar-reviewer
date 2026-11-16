@@ -1518,7 +1518,6 @@ function resetFullText() {
   delete box.dataset.hlKey;
   document.getElementById("full-text-credit").hidden = true;
   document.getElementById("hl-palette").hidden = true;
-  document.getElementById("hl-palette-hint").hidden = true;
 }
 
 function showFullTextNote(text) {
@@ -1553,7 +1552,6 @@ document.getElementById("full-text-btn").addEventListener("click", function () {
       box.hidden = false;
       document.getElementById("full-text-credit").hidden = false;
       document.getElementById("hl-palette").hidden = false;
-      document.getElementById("hl-palette-hint").hidden = false;
       fullTextShown = true;
       button.disabled = false;
       button.textContent = "Hide the full text";

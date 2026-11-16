@@ -711,7 +711,6 @@ body.sheet-open { overflow: hidden; }
 .hl-swatch[data-color="doctrine"] { --hl: var(--hl-doctrine); }
 /* The picked color: outlined, with its name in full color. */
 .hl-swatch[aria-pressed="true"] { border-color: var(--primary); color: var(--text); background: var(--bg); }
-.hl-palette-hint { margin: 8px 0 0; font-size: 14px; color: var(--muted); }
 
 /* ---------- Case names in bold ---------- */
 /* Wherever a case's name is shown as a label: case cards in a case list, the title of the
