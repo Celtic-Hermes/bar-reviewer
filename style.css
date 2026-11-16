@@ -121,6 +121,25 @@ body {
 .highlightable *::selection { background: transparent; }
 .hl-word.hl-preview:not(.hl-on) { background: var(--highlight-preview); }
 
+/* Removing a highlight fades the yellow out (0.35 seconds) so she can see which words just
+   lost it. A transition uses the timing of the state it's moving INTO, so:
+   - the normal (un-highlighted) state has the fade, so going yellow -> plain fades out;
+   - the highlighted state has none, so going plain -> yellow is instant.
+   The see-through shadows give the fade the same shape as the highlight to fade from. */
+.hl-word {
+  box-shadow: 0 0 0 2px transparent;
+  transition: background-color 0.35s ease-out, box-shadow 0.35s ease-out, color 0.35s ease-out;
+}
+.hl-gap {
+  box-shadow: 0 2px 0 transparent, 0 -2px 0 transparent;
+  transition: background-color 0.35s ease-out, box-shadow 0.35s ease-out;
+}
+.hl-word.hl-on, .hl-gap.hl-on, .hl-word.hl-preview { transition: none; }
+/* If she has asked her phone for less motion, skip the fade. */
+@media (prefers-reduced-motion: reduce) {
+  .hl-word, .hl-gap { transition: none; }
+}
+
 /* With a mouse, show the normal text cursor, since she can drag to select words. */
 @media (hover: hover) and (pointer: fine) {
   .hl-word { cursor: text; }
