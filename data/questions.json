@@ -380,5 +380,227 @@
       "part": "Ruling, discussion of Martin v. Felix, Jr.",
       "excerpt": "it was only because, at the time he used the documents and papers, enforcement of the order of the trial court was temporarily restrained by this Court."
     }
+  },
+  {
+    "id": "q-0015",
+    "type": "essay",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "Dr. Santos runs a small dental clinic on her lot. Only patients with appointments and her staff are allowed inside. Her neighbor, with whom she has a long-running boundary dispute, installs a rotating CCTV camera on his building that covers a large part of her clinic and lot. He says the camera is for security. Dr. Santos sues to have it removed, citing Article 26(1) of the Civil Code. The neighbor argues that Article 26(1) protects only the privacy of a 'residence,' and her property is a clinic. Decide.",
+    "suggestedAnswer": {
+      "answer": "Dr. Santos should win. Article 26(1) of the Civil Code is not limited to residences, and the camera violates her right to privacy.",
+      "legalBasis": "Article 26(1) of the Civil Code makes 'prying into the privacy of another's residence' and similar acts a cause of action for damages, prevention and other relief. In Spouses Hing v. Choachuy, Sr., the Court held that this protection should not be confined to a house or residence. It may extend to places where a person has the right to exclude the public or deny them access, such as a business office where the public is excluded and only allowed persons may enter. Courts use the 'reasonable expectation of privacy' test.",
+      "application": "Dr. Santos's clinic is a place where she excludes the public and admits only patients and staff, so it falls within the protection. She has a reasonable expectation of privacy there. In Hing, the Court said cameras should not cover places where there is a reasonable expectation of privacy unless the affected person consents. Using them to pry into another's residence or business office would be no different from eavesdropping. The neighbor's camera covers a large part of her property without her consent.",
+      "conclusion": "The camera violates Dr. Santos's right to privacy. The court may order it removed or redirected away from her property."
+    },
+    "keyPoints": [
+      "Article 26(1) of the Civil Code: prying into the privacy of another's residence, and similar acts",
+      "The protection extends beyond residences to places where one may exclude the public, like a business office",
+      "Reasonable expectation of privacy test",
+      "Cameras may not cover places with a reasonable expectation of privacy without consent",
+      "Conclusion: the camera violates her privacy and may be ordered removed"
+    ],
+    "caseIds": [
+      "case-0003"
+    ],
+    "source": {
+      "caseTitle": "Spouses Hing v. Choachuy, Sr.",
+      "grNumber": "G.R. No. 179736",
+      "url": "https://lawphil.net/judjuris/juri2013/jun2013/gr_179736_2013.html",
+      "part": "Our Ruling, discussion of Article 26(1) of the Civil Code",
+      "excerpt": "Thus, an individual's right to privacy under Article 26(1) of the Civil Code should not be confined to his house or residence as it may extend to places where he has the right to exclude the public or deny them access."
+    }
+  },
+  {
+    "id": "q-0016",
+    "type": "essay",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "What is the 'reasonable expectation of privacy' test, as explained in Spouses Hing v. Choachuy, Sr.? How is it applied?",
+    "suggestedAnswer": {
+      "answer": "It is the test courts use to determine whether a person has a reasonable expectation of privacy and whether that expectation has been violated.",
+      "legalBasis": "In Hing, citing Ople v. Torres, the Court said the reasonableness of a person's expectation of privacy depends on a two-part test: (1) whether, by his conduct, the individual has exhibited an expectation of privacy; and (2) whether this expectation is one that society recognizes as reasonable.",
+      "application": "Customs, community norms, and practices may limit or extend a person's reasonable expectation of privacy. So the test is applied case by case, depending on the facts. In Hing, the Court agreed with the trial court that the spouses had a reasonable expectation of privacy in their property, whether used as a business office or a residence. Cameras facing their property or covering a significant part of it, without their consent, clearly violated their privacy.",
+      "conclusion": "The test has two parts, one subjective (did the person show an expectation of privacy) and one about society (is it reasonable), and it is decided case by case."
+    },
+    "keyPoints": [
+      "First part: by their conduct, the person exhibited an expectation of privacy",
+      "Second part: society recognizes the expectation as reasonable",
+      "Customs, community norms and practices may limit or extend it",
+      "Determined case by case, depending on the facts"
+    ],
+    "caseIds": [
+      "case-0003"
+    ],
+    "source": {
+      "caseTitle": "Spouses Hing v. Choachuy, Sr.",
+      "grNumber": "G.R. No. 179736",
+      "url": "https://lawphil.net/judjuris/juri2013/jun2013/gr_179736_2013.html",
+      "part": "Our Ruling, discussion of the reasonable expectation of privacy test",
+      "excerpt": "\"the reasonableness of a person's expectation of privacy depends on a two-part test: (1) whether, by his conduct, the individual has exhibited an expectation of privacy; and (2) this expectation is one that society recognizes as reasonable.\""
+    }
+  },
+  {
+    "id": "q-0017",
+    "type": "essay",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "Spouses Reyes sue brothers Carlo and Paolo for installing surveillance cameras facing the Reyes property. The brothers answer that the cameras are on a building owned by their family corporation, not by them. They say they are mere stockholders and so are not the proper parties. The records show the corporation is family-owned and managed by the brothers' family, and the brothers let the court inspect the building and explained the camera set-up. Are the brothers proper parties? Explain, based on Spouses Hing v. Choachuy, Sr.",
+    "suggestedAnswer": {
+      "answer": "Yes, the brothers are proper parties to the suit.",
+      "legalBasis": "Under Section 2, Rule 3 of the Rules of Court, a real party in interest is the party who stands to be benefited or injured by the judgment. A real party defendant is one who has a correlative legal obligation to redress a wrong done to the plaintiff by reason of the defendant's act or omission. In Hing, the Court held that not being the registered owners of the building does not automatically mean the defendants did not cause the cameras to be installed.",
+      "application": "As in Hing, the corporation is family-owned and managed by the defendants' family. The defendants acted as if they were the owners: they allowed the court inside for an inspection and explained the camera set-up. In Hing, the Court found that in such circumstances the personalities of the defendants and the corporation 'seem to merge,' and that the defendants were merely using the corporate fiction as a shield.",
+      "conclusion": "The brothers cannot hide behind the corporation's separate personality. They are proper parties to the suit."
+    },
+    "keyPoints": [
+      "A real party defendant has a correlative legal obligation to redress the wrong done to the plaintiff",
+      "Not owning the building does not automatically mean they did not cause the cameras to be installed",
+      "Family-owned corporation managed by their family; they acted as owners (allowed inspection)",
+      "The corporate fiction cannot be used as a shield",
+      "Conclusion: they are proper parties"
+    ],
+    "caseIds": [
+      "case-0003"
+    ],
+    "source": {
+      "caseTitle": "Spouses Hing v. Choachuy, Sr.",
+      "grNumber": "G.R. No. 179736",
+      "url": "https://lawphil.net/judjuris/juri2013/jun2013/gr_179736_2013.html",
+      "part": "Our Ruling, discussion of whether respondents are the proper parties",
+      "excerpt": "The fact that respondents are not the registered owners of the building does not automatically mean that they did not cause the installation of the video surveillance cameras."
+    }
+  },
+  {
+    "id": "q-0018",
+    "type": "mcq",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "In Spouses Hing v. Choachuy, Sr., why did the Court of Appeals rule that the spouses' right to privacy under Article 26(1) of the Civil Code was not violated, and was this upheld by the Supreme Court?",
+    "choices": {
+      "A": "Because the cameras were installed for security; the Supreme Court agreed.",
+      "B": "Because the property was not used as a residence; the Supreme Court reversed this.",
+      "C": "Because the spouses did not own the property; the Supreme Court agreed.",
+      "D": "Because cameras do not record sound; the Supreme Court reversed this."
+    },
+    "correct": "B",
+    "explanation": "B is correct. The Court of Appeals said Article 26(1) was not violated because the property was not used as a residence. The Supreme Court held that the CA erred in limiting Article 26(1) to residences only. A is wrong: the security reason was the respondents' argument, and the Supreme Court did not accept it. C is wrong because the spouses were the registered owners of the lot. D is wrong because sound recording was not the CA's reason.",
+    "caseIds": [
+      "case-0003"
+    ],
+    "source": {
+      "caseTitle": "Spouses Hing v. Choachuy, Sr.",
+      "grNumber": "G.R. No. 179736",
+      "url": "https://lawphil.net/judjuris/juri2013/jun2013/gr_179736_2013.html",
+      "part": "Our Ruling, discussion of Article 26(1) of the Civil Code",
+      "excerpt": "The CA, therefore, erred in limiting the application of Article 26(1) of the Civil Code only to residences."
+    }
+  },
+  {
+    "id": "q-0019",
+    "type": "mcq",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "According to Spouses Hing v. Choachuy, Sr., when is a business office entitled to the same privacy as a residence?",
+    "choices": {
+      "A": "When it is located inside the owner's house.",
+      "B": "When it is registered with the city as a business.",
+      "C": "When the public is excluded and only such individuals as are allowed to enter may come in.",
+      "D": "Never; only residences are protected under Article 26(1)."
+    },
+    "correct": "C",
+    "explanation": "C is correct. Quoting Tolentino, the Court said a business office is entitled to the same privacy when the public is excluded and only allowed individuals may come in. A is wrong because the office need not be inside a house. B is wrong because business registration is not the test. D is wrong because the Court held Article 26(1) is not limited to residences; it also covers 'similar acts.'",
+    "caseIds": [
+      "case-0003"
+    ],
+    "source": {
+      "caseTitle": "Spouses Hing v. Choachuy, Sr.",
+      "grNumber": "G.R. No. 179736",
+      "url": "https://lawphil.net/judjuris/juri2013/jun2013/gr_179736_2013.html",
+      "part": "Our Ruling, discussion of Article 26(1), quoting Arturo M. Tolentino",
+      "excerpt": "A business office is entitled to the same privacy when the public is excluded therefrom and only such individuals as are allowed to enter may come in."
+    }
+  },
+  {
+    "id": "q-0020",
+    "type": "mcq",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "In Spouses Hing v. Choachuy, Sr., the Court compared using surveillance cameras to pry into another's residence or business office to what crime?",
+    "choices": {
+      "A": "Trespass to dwelling",
+      "B": "Unjust vexation",
+      "C": "Eavesdropping, a crime under R.A. No. 4200 (Anti-Wiretapping Law)",
+      "D": "Grave coercion"
+    },
+    "correct": "C",
+    "explanation": "C is correct. The Court said using cameras to pry into the privacy of another's residence or business office would be no different from eavesdropping, a crime under Republic Act No. 4200, the Anti-Wiretapping Law. A, B, and D are wrong because the Court did not compare the act to any of those crimes.",
+    "caseIds": [
+      "case-0003"
+    ],
+    "source": {
+      "caseTitle": "Spouses Hing v. Choachuy, Sr.",
+      "grNumber": "G.R. No. 179736",
+      "url": "https://lawphil.net/judjuris/juri2013/jun2013/gr_179736_2013.html",
+      "part": "Our Ruling, discussion of video surveillance cameras",
+      "excerpt": "Nor should these cameras be used to pry into the privacy of another's residence or business office as it would be no different from eavesdropping, which is a crime under Republic Act No. 4200 or the Anti-Wiretapping Law."
+    }
+  },
+  {
+    "id": "q-0021",
+    "type": "mcq",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "Under Spouses Hing v. Choachuy, Sr., surveillance cameras may cover places where there is a reasonable expectation of privacy only if:",
+    "choices": {
+      "A": "The owner of the camera has a business permit.",
+      "B": "The consent of the person whose right to privacy would be affected was obtained.",
+      "C": "The cameras are used only during business hours.",
+      "D": "The barangay approves the installation."
+    },
+    "correct": "B",
+    "explanation": "B is correct. The Court said the installation of cameras should not cover places where there is a reasonable expectation of privacy, unless the consent of the individual whose right to privacy would be affected was obtained. A, C, and D are wrong because the Court did not make a business permit, operating hours, or barangay approval a basis for allowing such cameras.",
+    "caseIds": [
+      "case-0003"
+    ],
+    "source": {
+      "caseTitle": "Spouses Hing v. Choachuy, Sr.",
+      "grNumber": "G.R. No. 179736",
+      "url": "https://lawphil.net/judjuris/juri2013/jun2013/gr_179736_2013.html",
+      "part": "Our Ruling, discussion of video surveillance cameras",
+      "excerpt": "The installation of these cameras, however, should not cover places where there is reasonable expectation of privacy, unless the consent of the individual, whose right to privacy would be affected, was obtained."
+    }
+  },
+  {
+    "id": "q-0022",
+    "type": "mcq",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "In Spouses Hing v. Choachuy, Sr., how did the Court define the right to privacy, 'simply put'?",
+    "choices": {
+      "A": "The right to own property without interference",
+      "B": "The right to be let alone",
+      "C": "The right to keep business records secret",
+      "D": "The right to install cameras on one's own property"
+    },
+    "correct": "B",
+    "explanation": "B is correct. The Court said that, simply put, the right to privacy is 'the right to be let alone.' A is wrong because privacy is not the same as property ownership; the Court even upheld the trial court's view that the owner of a thing cannot use it to injure the rights of a third person. C is wrong because it is too narrow and was not the Court's definition. D is wrong because it describes the respondents' claim, not the right to privacy.",
+    "caseIds": [
+      "case-0003"
+    ],
+    "source": {
+      "caseTitle": "Spouses Hing v. Choachuy, Sr.",
+      "grNumber": "G.R. No. 179736",
+      "url": "https://lawphil.net/judjuris/juri2013/jun2013/gr_179736_2013.html",
+      "part": "Our Ruling, opening discussion of the right to privacy",
+      "excerpt": "Simply put, the right to privacy is \"the right to be let alone.\""
+    }
   }
 ]
