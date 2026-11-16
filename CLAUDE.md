@@ -27,6 +27,7 @@ Use these exact names everywhere (data, menus, filters):
 Topics so far (use these exact names):
 - Mercantile Law → **Communication Law** (the privacy cases: Zulueta, Hing, Vivares, Cadajas, Regala, IBP v. Purisima)
 - Legal and Judicial Ethics → **Notarial Practice**
+- Remedial Law → **Special Proceedings** → sub-topic **Writ of Amparo** (fill-in-the-blank items, one per section of A.M. No. 07-9-12-SC, q-0056 to q-0082)
 
 ### Miscellaneous section
 Below the 8 subjects, the home screen has a **Miscellaneous** section for extra subjects that are not bar subjects (listed in `MISC_SUBJECTS` in `app.js`). It is **empty for now** and shows a "Nothing here yet" note; keep the section in place for future content.

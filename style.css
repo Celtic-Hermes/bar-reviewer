@@ -235,7 +235,8 @@ body {
 /* The blanks in the question (written as ____ in the content). */
 .fb-blank { color: var(--primary); font-weight: 700; }
 /* In the revealed full text, the words that were blanked out. */
-.fb-full strong { color: var(--primary); text-decoration: underline; text-underline-offset: 3px; }
+/* (Not the list numbers like "(a)", which are also bold but aren't answers.) */
+.fb-full strong:not(.list-num) { color: var(--primary); text-decoration: underline; text-underline-offset: 3px; }
 .btn-rate { background: var(--card); padding: 12px 6px; }
 .btn-rate.got { border-color: var(--got); color: var(--got); }
 .btn-rate.partly { border-color: var(--partly); color: var(--partly); }
