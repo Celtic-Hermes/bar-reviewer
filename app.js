@@ -878,14 +878,14 @@ function finishMouseDrag() {
 
   const picked = selectedWords(range);
   if (picked.length > 0) {
-    // If every selected word is already yellow, the drag removes the highlight.
-    // Otherwise it highlights them all.
-    const allOn = picked.every(function (p) {
-      return p.words.every(function (word) { return word.classList.contains("hl-on"); });
-    });
+    // The word where the drag STARTED decides what the drag does:
+    // started on a yellow word -> remove the highlight from every word dragged over (they fade out);
+    // started on a plain word  -> highlight every word dragged over.
+    // (So a drag that ends a little past the last yellow word still removes, instead of flipping.)
+    const turnOn = !dragStartWord(selection, picked).classList.contains("hl-on");
     picked.forEach(function (p) {
-      setHighlights(p.key, p.words.map(function (word) { return Number(word.dataset.word); }), !allOn);
-      p.words.forEach(function (word) { word.classList.toggle("hl-on", !allOn); });
+      setHighlights(p.key, p.words.map(function (word) { return Number(word.dataset.word); }), turnOn);
+      p.words.forEach(function (word) { word.classList.toggle("hl-on", turnOn); });
       joinHighlights(p.element);
     });
   }
@@ -896,6 +896,20 @@ function finishMouseDrag() {
 
 document.addEventListener("pointerup", finishMouseDrag);
 document.addEventListener("mouseup", finishMouseDrag);
+
+// The selected word where she started dragging. If she started in a space or a margin
+// (not on a word), use the selected word closest to where she started.
+function dragStartWord(selection, picked) {
+  const all = [];
+  picked.forEach(function (p) { p.words.forEach(function (word) { all.push(word); }); });  // reading order
+  const node = selection.anchorNode;  // where the drag started
+  const startElement = node && (node.nodeType === 1 ? node : node.parentElement);
+  const word = startElement && startElement.closest(".hl-word");
+  if (word && all.indexOf(word) !== -1) { return word; }
+  const range = selection.getRangeAt(0);
+  const draggedForward = (range.startContainer === selection.anchorNode && range.startOffset === selection.anchorOffset);
+  return draggedForward ? all[0] : all[all.length - 1];
+}
 
 // True if the selection covers at least one letter of this word
 // (just touching its edge doesn't count).
