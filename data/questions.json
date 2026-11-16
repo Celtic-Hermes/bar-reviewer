@@ -1048,5 +1048,229 @@
       "part": "Our Ruling, discussion of the proper penalty",
       "excerpt": "One degree higher than the penalty of reclusion temporal is the indivisible penalty of reclusion perpetua."
     }
+  },
+  {
+    "id": "q-0039",
+    "type": "essay",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "A government agency sues several lawyers, together with a businessman, to recover allegedly ill-gotten shares of stock. The lawyers had organized the companies for their clients and, as part of their legal services, held shares as nominees. The agency offers to drop the lawyers from the case if they name the clients for whom they held the shares and turn over the deeds of assignment they executed for those clients. The lawyers refuse, invoking the attorney-client privilege. The agency argues that a client's identity is never privileged. Who is correct? Explain, based on Regala v. Sandiganbayan.",
+    "suggestedAnswer": {
+      "answer": "The lawyers are correct. Under the facts, the clients' identities are privileged.",
+      "legalBasis": "In Regala, the Court said the general rule is that a lawyer may not invoke the privilege to refuse to name a client. But there are exceptions. Client identity is privileged: (1) where there is a strong probability that revealing the name would implicate the client in the very activity for which they sought the lawyer's advice; (2) where disclosure would open the client to civil liability; and (3) where the name would furnish the only link needed to form the chain of testimony to convict the client of a crime. In short, the identity is privileged when the client's name has an independent significance, such that disclosure would reveal client confidences.",
+      "application": "The agency's conditions themselves show that the clients consulted the lawyers, as lawyers, about the corporate set-up of the companies in question, and that the lawyers prepared the deeds of assignment as part of their legal service. Naming the clients would implicate them in the very activity for which they sought advice, and would give the agency the link it needs to build its case. As in Regala, the lawyers were sued only to pressure them into naming their clients. They were being prosecuted solely for services performed as lawyers.",
+      "conclusion": "The clients' identities are privileged, and the lawyers may refuse to disclose them. As in Regala, they should be excluded from the case."
+    },
+    "keyPoints": [
+      "General rule: a lawyer may not refuse to reveal a client's identity",
+      "Exception: a strong probability that disclosure would implicate the client in the very activity for which advice was sought",
+      "Exception: disclosure would open the client to civil liability",
+      "Exception: the name is the only link to form the chain of testimony to convict",
+      "Summary: privileged when the name has independent significance that would reveal confidences",
+      "Conclusion: the lawyers may refuse"
+    ],
+    "caseIds": [
+      "case-0006"
+    ],
+    "source": {
+      "caseTitle": "Regala v. Sandiganbayan",
+      "grNumber": "G.R. No. 105938",
+      "url": "https://lawphil.net/judjuris/juri1996/sep1996/gr_105938_1996.html",
+      "part": "Ruling, Part II, exceptions to the general rule on client identity",
+      "excerpt": "Summarizing these exceptions, information relating to the identity of a client may fall within the ambit of the privilege when the client's name itself has an independent significance, such that disclosure would then reveal client confidences."
+    }
+  },
+  {
+    "id": "q-0040",
+    "type": "essay",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "Distinguish, based on Regala v. Sandiganbayan, between (a) a client who hires a lawyer for advice on how to get around the law in order to commit an illegal act, and (b) a client who thinks he may have already done something illegal and consults a lawyer about it. Is the attorney-client privilege available in each case?",
+    "suggestedAnswer": {
+      "answer": "In case (a), the privilege is not available. In case (b), it is available, and the client's name cannot be disclosed if disclosure would lead to evidence not yet in the prosecution's hands.",
+      "legalBasis": "In Regala, the Court said the privilege cannot be invoked or used as a shield for an illegal act, because it is not within the professional character of a lawyer to give advice on the commission of a crime. But where a client thinks he may have previously committed something illegal and consults his lawyer, the privilege applies, for the same policy reasons behind the privilege in general.",
+      "application": "In case (a), the client seeks help to commit a future illegal act. This falls outside the privilege, since the privilege cannot be invoked for illegal purposes. In case (b), the client seeks advice about a past act. Whether or not the act turns out to be illegal, the prosecution cannot use the lawyer-client relationship to build its case against the client. It must gather its own evidence from other sources.",
+      "conclusion": "There is no privilege for advice on committing a future crime. There is privilege for a client consulting about a possible past wrongdoing."
+    },
+    "keyPoints": [
+      "The privilege cannot be used as a shield for an illegal act",
+      "Advising on the commission of a crime is not within a lawyer's professional character",
+      "A client consulting about a possible past illegal act is covered",
+      "The prosecution cannot use the lawyer-client relationship to build its case",
+      "Conclusion: (a) not privileged; (b) privileged"
+    ],
+    "caseIds": [
+      "case-0006"
+    ],
+    "source": {
+      "caseTitle": "Regala v. Sandiganbayan",
+      "grNumber": "G.R. No. 105938",
+      "url": "https://lawphil.net/judjuris/juri1996/sep1996/gr_105938_1996.html",
+      "part": "Ruling, Part II, distinction between seeking advice for illegal purposes and consulting about a past act",
+      "excerpt": "The first case clearly does not fall within the privilege because the same cannot be invoked for purposes illegal."
+    }
+  },
+  {
+    "id": "q-0041",
+    "type": "essay",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "Five law partners are sued together for the same acts done in the course of their legal work. The government drops one partner from the case because he supposedly promised to reveal his client's identity, but there is no proof he actually did. The other four ask for the same treatment and are refused. Was their right to equal protection violated? Explain, based on Regala v. Sandiganbayan.",
+    "suggestedAnswer": {
+      "answer": "Yes. Dropping one partner but not the others, without a real and substantial distinction between them, violates the equal protection clause.",
+      "legalBasis": "In Regala, the Court explained that the equal protection clause requires the uniform operation of legal norms, so that all persons under similar circumstances are treated the same, both in privileges conferred and liabilities imposed. To treat one person differently, there must be a classification based on substantial distinctions arising from real differences.",
+      "application": "The partners were similarly situated: all claimed their acts were done in legitimate lawyering. The only reason given for dropping one partner was his promise to name his client. As in Regala, if there is no proof that he actually revealed his client's identity, that promise cannot justify treating him differently. The Court said it is grossly unfair to exempt one similarly situated litigant from prosecution without giving the same exemption to the others.",
+      "conclusion": "The four partners' right to equal protection was violated."
+    },
+    "keyPoints": [
+      "Equal protection: persons in similar circumstances must be treated alike, in privileges and liabilities",
+      "A different treatment needs a substantial distinction based on real differences",
+      "The partners were similarly situated (same claim of legitimate lawyering)",
+      "No proof the dropped partner actually revealed his client",
+      "Conclusion: equal protection was violated"
+    ],
+    "caseIds": [
+      "case-0006"
+    ],
+    "source": {
+      "caseTitle": "Regala v. Sandiganbayan",
+      "grNumber": "G.R. No. 105938",
+      "url": "https://lawphil.net/judjuris/juri1996/sep1996/gr_105938_1996.html",
+      "part": "Ruling, Part III, equal protection",
+      "excerpt": "It is grossly unfair to exempt one similarly situated litigant from prosecution without allowing the same exemption to the others."
+    }
+  },
+  {
+    "id": "q-0042",
+    "type": "mcq",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "According to Regala v. Sandiganbayan, which of the following is one of the reasons for the general rule that a lawyer may NOT refuse to reveal a client's identity?",
+    "choices": {
+      "A": "The court has a right to know that the client whose privileged information is sought to be protected is flesh and blood.",
+      "B": "Lawyers are agents of the State and must cooperate with prosecutors.",
+      "C": "Clients waive confidentiality when they pay legal fees.",
+      "D": "The privilege covers only communications made in court."
+    },
+    "correct": "A",
+    "explanation": "A is correct. The Court listed it as the first reason for the general rule. The others are: the privilege exists only after a lawyer-client relationship is established; it generally pertains to the subject matter of the relationship; and due process requires that a party know who their opponent is. B is wrong because the Court described a lawyer as an officer of the court owing a fiduciary duty to the client, not an agent of the prosecution. C is wrong because paying fees does not waive confidentiality. D is wrong because the privilege covers communications made in the course of professional employment, not only in court.",
+    "caseIds": [
+      "case-0006"
+    ],
+    "source": {
+      "caseTitle": "Regala v. Sandiganbayan",
+      "grNumber": "G.R. No. 105938",
+      "url": "https://lawphil.net/judjuris/juri1996/sep1996/gr_105938_1996.html",
+      "part": "Ruling, Part II, reasons for the general rule on client identity",
+      "excerpt": "First, the court has a right to know that the client whose privileged information is sought to be protected is flesh and blood."
+    }
+  },
+  {
+    "id": "q-0043",
+    "type": "mcq",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "Under Regala v. Sandiganbayan, which of the following is an exception that makes a client's identity privileged?",
+    "choices": {
+      "A": "The client is a public official.",
+      "B": "Disclosure would open the client to civil liability.",
+      "C": "The client paid the lawyer in cash.",
+      "D": "The lawyer and client are related."
+    },
+    "correct": "B",
+    "explanation": "B is correct. The Court listed it as the second exception: where disclosure would open the client to civil liability, the client's identity is privileged (citing Neugass v. Terminal Cab Corporation). A, C, and D are wrong because none of them is one of the exceptions in the decision. The exceptions are about whether disclosure would implicate the client, expose the client to liability, or supply the missing link to convict.",
+    "caseIds": [
+      "case-0006"
+    ],
+    "source": {
+      "caseTitle": "Regala v. Sandiganbayan",
+      "grNumber": "G.R. No. 105938",
+      "url": "https://lawphil.net/judjuris/juri1996/sep1996/gr_105938_1996.html",
+      "part": "Ruling, Part II, second exception to the general rule",
+      "excerpt": "2) Where disclosure would open the client to civil liability; his identity is privileged."
+    }
+  },
+  {
+    "id": "q-0044",
+    "type": "mcq",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "In Regala v. Sandiganbayan, what was the first exception the Court described, under which a client's identity is privileged?",
+    "choices": {
+      "A": "Where the client has never been charged with any crime",
+      "B": "Where a strong probability exists that revealing the client's name would implicate that client in the very activity for which he sought the lawyer's advice",
+      "C": "Where the client is a corporation",
+      "D": "Where the lawyer has already been disbarred"
+    },
+    "correct": "B",
+    "explanation": "B is correct. This is the first exception stated by the Court, illustrated by Ex-Parte Enzor and U.S. v. Hodge and Zweig. The Court found that the ACCRA lawyers' case fell under it. A is wrong because never having been charged is not the test. C and D are wrong because they are not exceptions mentioned in the decision.",
+    "caseIds": [
+      "case-0006"
+    ],
+    "source": {
+      "caseTitle": "Regala v. Sandiganbayan",
+      "grNumber": "G.R. No. 105938",
+      "url": "https://lawphil.net/judjuris/juri1996/sep1996/gr_105938_1996.html",
+      "part": "Ruling, Part II, first exception to the general rule",
+      "excerpt": "1) Client identity is privileged where a strong probability exists that revealing the client's name would implicate that client in the very activity for which he sought the lawyer's advice."
+    }
+  },
+  {
+    "id": "q-0045",
+    "type": "mcq",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "According to Regala v. Sandiganbayan, how must a lawyer treat the attorney-client privilege in order to attain effective representation?",
+    "choices": {
+      "A": "As an option the lawyer may use when convenient",
+      "B": "As a matter of duty and professional responsibility",
+      "C": "As a right that belongs to the lawyer, not the client",
+      "D": "As applicable only in criminal cases"
+    },
+    "correct": "B",
+    "explanation": "B is correct. The Court said that to attain effective representation, the lawyer must invoke the privilege not as a matter of option but as a matter of duty and professional responsibility. A is the opposite of what the Court said. C is wrong because the privilege protects the client's confidences; the Court described the lawyer's fiduciary duty to the client. D is wrong because Regala itself was a civil case to recover ill-gotten wealth.",
+    "caseIds": [
+      "case-0006"
+    ],
+    "source": {
+      "caseTitle": "Regala v. Sandiganbayan",
+      "grNumber": "G.R. No. 105938",
+      "url": "https://lawphil.net/judjuris/juri1996/sep1996/gr_105938_1996.html",
+      "part": "Ruling, Part II, policy considerations behind the privilege",
+      "excerpt": "It necessarily follows that in order to attain effective representation, the lawyer must invoke the privilege not as a matter of option but as a matter of duty and professional responsibility."
+    }
+  },
+  {
+    "id": "q-0046",
+    "type": "mcq",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "According to Regala v. Sandiganbayan, how long does the protection of lawyer-client confidentiality last?",
+    "choices": {
+      "A": "Only while the case is pending",
+      "B": "Only during the lawyer-client relationship",
+      "C": "Not only during the relationship, but even after it ends",
+      "D": "Until the client pays the lawyer's fees in full"
+    },
+    "correct": "C",
+    "explanation": "C is correct. The Court said the protection exists not only during the relationship but extends even after it ends. A and B are wrong because they cut the protection short. D is wrong because payment of fees has nothing to do with how long the protection lasts.",
+    "caseIds": [
+      "case-0006"
+    ],
+    "source": {
+      "caseTitle": "Regala v. Sandiganbayan",
+      "grNumber": "G.R. No. 105938",
+      "url": "https://lawphil.net/judjuris/juri1996/sep1996/gr_105938_1996.html",
+      "part": "Ruling, Part II, duration of the protection",
+      "excerpt": "which exists not only during the relationship, but extends even after the termination of the relationship."
+    }
   }
 ]
