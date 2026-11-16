@@ -790,27 +790,24 @@ function makeHighlightable(elementId) {
 // the device, so a laptop with a touchscreen works right for whichever she uses.
 let lastPointerType = "";
 let skipNextClick = false;
+let mouseIsDown = false;   // true while she's holding the mouse button down
+let pressCount = 1;        // 1 for a normal press, 2 for the second press of a double-click
 
 document.addEventListener("pointerdown", function (event) {
   lastPointerType = event.pointerType;
   skipNextClick = false;
+  mouseIsDown = (event.pointerType === "mouse");
 });
 
-document.addEventListener("mouseup", function (event) {
-  if (lastPointerType !== "mouse") { return; }  // touch: leave it to the tap code
-  const selection = window.getSelection();
-  if (!selection || selection.rangeCount === 0 || selection.isCollapsed) { return; }  // a plain click
-  const range = selection.getRangeAt(0);
+// The press itself says whether it's part of a double-click (more reliable than the release).
+document.addEventListener("mousedown", function (event) {
+  pressCount = event.detail || 1;
+});
 
-  // A double-click selects a word by itself; the first click already highlighted it.
-  if (event.detail >= 2) {
-    selection.removeAllRanges();
-    skipNextClick = true;
-    return;
-  }
-
-  // Find the selected words in each highlightable text box on screen.
-  const picked = [];  // { element, key, words: [the selected word <span>s] }
+// The selected words in each highlightable text box on screen:
+// a list of { element, key, words: [the selected word <span>s] }.
+function selectedWords(range) {
+  const picked = [];
   document.querySelectorAll(".highlightable").forEach(function (element) {
     const key = element.dataset.hlKey;
     if (!key || !range.intersectsNode(element)) { return; }
@@ -819,22 +816,86 @@ document.addEventListener("mouseup", function (event) {
     });
     if (words.length > 0) { picked.push({ element: element, key: key, words: words }); }
   });
-  if (picked.length === 0) { return; }  // she selected something else, like a heading: leave it alone
+  return picked;
+}
 
-  // If every selected word is already yellow, the drag removes the highlight.
-  // Otherwise it highlights them all.
-  const allOn = picked.every(function (p) {
-    return p.words.every(function (word) { return word.classList.contains("hl-on"); });
+// Does the selection reach into question or case text at all?
+function selectionInHighlightable(range) {
+  return Array.prototype.some.call(document.querySelectorAll(".highlightable"), function (element) {
+    return range.intersectsNode(element);
   });
-  picked.forEach(function (p) {
-    setHighlights(p.key, p.words.map(function (word) { return Number(word.dataset.word); }), !allOn);
-    p.words.forEach(function (word) { word.classList.toggle("hl-on", !allOn); });
-    joinHighlights(p.element);
-  });
+}
 
-  selection.removeAllRanges();  // only our yellow highlight should show
-  skipNextClick = true;
+function clearDragPreview() {
+  document.querySelectorAll(".hl-preview").forEach(function (word) { word.classList.remove("hl-preview"); });
+}
+
+// While she drags, show a light yellow on just the words she's dragging over.
+// (The browser's own blue selection is made invisible in this text by style.css.)
+document.addEventListener("selectionchange", function () {
+  if (!mouseIsDown || lastPointerType !== "mouse") { return; }
+  clearDragPreview();
+  const selection = window.getSelection();
+  if (!selection || selection.rangeCount === 0 || selection.isCollapsed) { return; }
+  selectedWords(selection.getRangeAt(0)).forEach(function (p) {
+    p.words.forEach(function (word) { word.classList.add("hl-preview"); });
+  });
 });
+
+// Remove the browser's selection now, and once more just before the next screen redraw,
+// in case the browser puts it back after letting go of the mouse.
+function clearNativeSelection() {
+  const selection = window.getSelection();
+  if (selection) { selection.removeAllRanges(); }
+  window.requestAnimationFrame(function () {
+    const again = window.getSelection();
+    if (!mouseIsDown && again && again.rangeCount > 0 && !again.isCollapsed &&
+        selectionInHighlightable(again.getRangeAt(0))) {
+      again.removeAllRanges();
+    }
+  });
+}
+
+// She let go of the mouse. "pointerup" comes first and "mouseup" right after;
+// whichever arrives first does the work, the other is ignored.
+function finishMouseDrag() {
+  if (!mouseIsDown) { return; }
+  mouseIsDown = false;
+  clearDragPreview();
+  if (lastPointerType !== "mouse") { return; }  // touch: leave it to the tap code
+
+  const selection = window.getSelection();
+  if (!selection || selection.rangeCount === 0 || selection.isCollapsed) { return; }  // a plain click
+  const range = selection.getRangeAt(0);
+  if (!selectionInHighlightable(range)) { return; }  // she selected something else, like a heading: leave it alone
+
+  // A double-click selects a word by itself; the first click already highlighted it.
+  if (pressCount >= 2) {
+    clearNativeSelection();
+    skipNextClick = true;
+    return;
+  }
+
+  const picked = selectedWords(range);
+  if (picked.length > 0) {
+    // If every selected word is already yellow, the drag removes the highlight.
+    // Otherwise it highlights them all.
+    const allOn = picked.every(function (p) {
+      return p.words.every(function (word) { return word.classList.contains("hl-on"); });
+    });
+    picked.forEach(function (p) {
+      setHighlights(p.key, p.words.map(function (word) { return Number(word.dataset.word); }), !allOn);
+      p.words.forEach(function (word) { word.classList.toggle("hl-on", !allOn); });
+      joinHighlights(p.element);
+    });
+  }
+
+  clearNativeSelection();  // only our yellow highlight should show
+  skipNextClick = true;
+}
+
+document.addEventListener("pointerup", finishMouseDrag);
+document.addEventListener("mouseup", finishMouseDrag);
 
 // True if the selection covers at least one letter of this word
 // (just touching its edge doesn't count).
