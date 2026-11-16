@@ -2,7 +2,8 @@
 // Nothing here is ever sent anywhere.
 //
 // What's saved:
-//   subjects:  running totals per subject (multiple-choice right/answered, essay ratings)
+//   subjects:  running totals per subject (multiple-choice right/answered, essay ratings,
+//              fill-in-the-blank: how many rated and the sum of her % ratings)
 //   review:    questions to look at again, by ID (a wrong pick, or an essay rated Partly / Missed it)
 //   bookmarks: questions she bookmarked, by ID
 //   highlights: words she highlighted, as a list of word positions (0 = first word).
@@ -61,7 +62,7 @@ function followMovedSubjects(subjects) {
     subjectsWereMoved = true;
     const newName = MOVED_SUBJECTS[oldName];
     const into = subjects[newName] || {};
-    ["mcqCorrect", "mcqAnswered", "got", "partly", "missed"].forEach(function (field) {
+    ["mcqCorrect", "mcqAnswered", "got", "partly", "missed", "fbRated", "fbPercentTotal"].forEach(function (field) {
       into[field] = wholeNumberOrZero(into[field]) + wholeNumberOrZero(old[field]);
     });
     subjects[newName] = into;
@@ -87,7 +88,7 @@ function saveProgress() {
 // Totals for one subject, created the first time they're needed.
 function subjectStats(subject) {
   if (!progress.subjects[subject]) {
-    progress.subjects[subject] = { mcqCorrect: 0, mcqAnswered: 0, got: 0, partly: 0, missed: 0 };
+    progress.subjects[subject] = { mcqCorrect: 0, mcqAnswered: 0, got: 0, partly: 0, missed: 0, fbRated: 0, fbPercentTotal: 0 };
   }
   return progress.subjects[subject];
 }
@@ -106,6 +107,21 @@ function recordMcq(question, isRight) {
 }
 
 // An essay self-rating: count it, and add it to (or take it off) the review list.
+// A fill-in-the-blank self-rating: 0, 25, 50, 75 or 100 (% of the blanks she got).
+// Running totals per subject: how many she rated, and the sum of the percentages
+// (so the average is fbPercentTotal / fbRated). Below 100% goes into her review list.
+function recordFillBlank(question, percent) {
+  const stats = subjectStats(question.subject);
+  stats.fbRated = wholeNumberOrZero(stats.fbRated) + 1;
+  stats.fbPercentTotal = wholeNumberOrZero(stats.fbPercentTotal) + percent;
+  if (percent === 100) {
+    delete progress.review[question.id];
+  } else {
+    progress.review[question.id] = percent + "%";
+  }
+  saveProgress();
+}
+
 function recordEssay(question, rating) {
   const stats = subjectStats(question.subject);
   if (rating === "Got it") { stats.got += 1; }
@@ -322,7 +338,9 @@ function readBackup(text) {
       mcqAnswered: wholeNumberOrZero(s.mcqAnswered),
       got: wholeNumberOrZero(s.got),
       partly: wholeNumberOrZero(s.partly),
-      missed: wholeNumberOrZero(s.missed)
+      missed: wholeNumberOrZero(s.missed),
+      fbRated: wholeNumberOrZero(s.fbRated),            // older backups have none: 0
+      fbPercentTotal: wholeNumberOrZero(s.fbPercentTotal)
     };
   });
   Object.keys(p.review).forEach(function (id) {

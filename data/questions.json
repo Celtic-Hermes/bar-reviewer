@@ -1545,5 +1545,21 @@
       "part": "Decision, Part II, affidavits of fees and receipts for pro bono services",
       "excerpt": "In any case, respondents may validly require them to issue receipts for services rendered pro bono to monitor their tax compliance. … Requiring the issuance of receipts is a valid measure that the tax collector may employ to ascertain the correct amount of taxes payable by self-employed professionals."
     }
+  },
+  {
+    "id": "q-0055",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Civil Law",
+    "topic": "Placeholder Topic A",
+    "prompt": "[PLACEHOLDER] Section 1. Sample rule. – Alpha must file the ____ within ____ after receipt of the notice. Failure to file it on time shall result in ____.",
+    "fullText": "[PLACEHOLDER] Section 1. Sample rule. – Alpha must file the sample answer within ten (10) days after receipt of the notice. Failure to file it on time shall result in a sample penalty.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "[PLACEHOLDER] Sample Rule",
+      "grNumber": "[PLACEHOLDER] A.M. No. 00-0-00-SC",
+      "part": "[PLACEHOLDER] Section 1",
+      "excerpt": "[PLACEHOLDER] Alpha must file the sample answer within ten (10) days after receipt of the notice."
+    }
   }
 ]

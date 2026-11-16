@@ -119,6 +119,26 @@ After reading the suggested answer, she checks off the key points she got and ra
 ```
 Exactly 4 choices (A–D) and exactly one correct answer. She gets instant feedback and the explanation.
 
+### Fill-in-the-blank item (for memorizing exact rule text)
+```json
+{
+  "id": "q-0056",
+  "type": "fillblank",
+  "status": "draft",
+  "subject": "Remedial Law",
+  "topic": "Special Proceedings",
+  "subtopic": "Writ of Amparo",
+  "prompt": "Section 4. ... The petition may be filed on any day and at any ____ ...",
+  "fullText": "Section 4. ... The petition may be filed on any day and at any time ...",
+  "caseIds": [],
+  "source": { "caseTitle": "The Rule on the Writ of Amparo", "grNumber": "A.M. No. 07-9-12-SC", "url": "...", "part": "Section 4", "excerpt": "..." }
+}
+```
+- Blanks are written as **four or more underscores** (`____`). `fullText` is the exact same text with nothing blanked; everything outside the blanks must match it character for character, so the app can bold the missing words when she taps **Show answer**. Don't put two blanks right next to each other, and don't use `**` in either field.
+- Blank the legally significant words (required elements, periods/deadlines, standards, who may file, where), not random words.
+- She rates herself **0%, 25%, 50%, 75% or 100%** (how many blanks she got). Below 100% goes into Review missed; per subject, the app keeps the number rated (`fbRated`) and the sum of her percentages (`fbPercentTotal`), and shows the average.
+- The Question type picker on the subject screen has **Essay questions / Multiple choice / Fill in the blank / All**.
+
 ## Adding a new case (default procedure)
 Whenever the builder asks to add a new case, follow this checklist without being reminded. The content rules above still apply to every step.
 

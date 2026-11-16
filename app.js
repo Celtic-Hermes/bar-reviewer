@@ -75,6 +75,8 @@ function rememberSpot() {
       mcqCorrect: session.mcqCorrect,
       mcqTotal: session.mcqTotal,
       ratings: session.ratings,
+      fbCount: session.fbCount,      // fill-in-the-blank: how many rated this round
+      fbTotal: session.fbTotal,      // ...and the sum of her % ratings
       current: session.current,  // what she's done on this question: her pick, or answer shown, rating, checked key points
       practiceCaseId: practiceCase ? practiceCase.id : null
     };
@@ -175,7 +177,9 @@ function putBackRound(round) {
       "Got it": wholeNumberOrZero(ratings["Got it"]),
       "Partly": wholeNumberOrZero(ratings["Partly"]),
       "Missed it": wholeNumberOrZero(ratings["Missed it"])
-    }
+    },
+    fbCount: wholeNumberOrZero(round.fbCount),
+    fbTotal: wholeNumberOrZero(round.fbTotal)
   };
   showQuestion();
   putBackCurrent(round.current);
@@ -186,7 +190,16 @@ function putBackRound(round) {
 function putBackCurrent(saved) {
   if (!isPlainObject(saved)) { return; }
   const question = session.questions[session.index];
-  if (question.type === "mcq") {
+  if (question.type === "fillblank") {
+    if (saved.answerShown) {
+      session.current.answerShown = true;
+      revealFillBlank();
+    }
+    if (FB_PERCENTS.indexOf(saved.fbPercent) !== -1) {
+      session.current.fbPercent = saved.fbPercent;
+      showFbRated(saved.fbPercent);
+    }
+  } else if (question.type === "mcq") {
     if (["A", "B", "C", "D"].indexOf(saved.picked) !== -1) {
       // She had already submitted this answer.
       session.current.picked = saved.picked;
@@ -269,7 +282,7 @@ function countLabel(n) {
 // ---------- Question type: "essay", "mcq" or "both" ----------
 // Picked on the subject screen. Narrows every round started from a topic,
 // "All topics", "Review missed" or "Bookmarked" to just that type.
-const QUESTION_MODES = ["essay", "mcq", "both"];
+const QUESTION_MODES = ["essay", "mcq", "fillblank", "both"];  // "both" is shown as "All"
 
 function currentMode() {
   const picked = document.querySelector('input[name="question-mode"]:checked');
@@ -283,8 +296,16 @@ function setMode(mode) {
 
 function fitsMode(question, mode) {
   if (mode === "mcq") { return question.type === "mcq"; }
-  if (mode === "essay") { return question.type !== "mcq"; }
+  if (mode === "fillblank") { return question.type === "fillblank"; }
+  if (mode === "essay") { return question.type !== "mcq" && question.type !== "fillblank"; }
   return true;
+}
+
+// "No essay questions" / "No multiple choice questions" / "No fill-in-the-blank items".
+function noneOfMode(mode) {
+  if (mode === "mcq") { return "No multiple choice questions"; }
+  if (mode === "fillblank") { return "No fill-in-the-blank items"; }
+  return "No essay questions";
 }
 
 // The count shown on each card, worded for the picked type:
@@ -292,6 +313,7 @@ function fitsMode(question, mode) {
 function modeCountLabel(n, mode) {
   if (mode === "essay") { return n + (n === 1 ? " essay question" : " essay questions"); }
   if (mode === "mcq") { return n + " multiple choice"; }
+  if (mode === "fillblank") { return n + " fill-in-the-blank"; }
   return countLabel(n);
 }
 
@@ -558,8 +580,7 @@ function showEmptyListMessage(topic) {
   const hasOtherTypes = mode !== "both" && questionsForTopic(currentSubject, topic).length > 0;
   if (hasOtherTypes) {
     // There are questions here, just not of the type she picked.
-    note.textContent = (mode === "mcq" ? "No multiple choice questions" : "No essay questions") +
-      " here. Pick Both under Question type to see the others.";
+    note.textContent = noneOfMode(mode) + " here. Pick All under Question type to see the others.";
   } else {
     note.textContent = EMPTY_LIST_MESSAGES[topic] || "No questions here yet.";
   }
@@ -572,6 +593,10 @@ function showSubjectStats(subject) {
   document.getElementById("stats-mcq").textContent = stats.mcqAnswered === 0
     ? "Not tried yet"
     : stats.mcqCorrect + " of " + stats.mcqAnswered + " correct";
+  const fbRated = wholeNumberOrZero(stats.fbRated);
+  document.getElementById("stats-fb").textContent = fbRated === 0
+    ? "Not tried yet"
+    : "Average " + Math.round(wholeNumberOrZero(stats.fbPercentTotal) / fbRated) + "% over " + fbRated;
   document.getElementById("stats-essay").textContent =
     (stats.got + stats.partly + stats.missed) === 0
       ? "Not tried yet"
@@ -617,8 +642,8 @@ function startPractice() {
       const note = document.getElementById("subtopics-empty");
       const mode = currentMode();
       note.textContent = mode === "both" ? "No questions here yet."
-        : (mode === "mcq" ? "No multiple choice questions" : "No essay questions") +
-          " in " + subtopicLabel(picked, currentTopic) + ". Pick Both under Question type (on the subject screen) to see the others.";
+        : noneOfMode(mode) + " in " + subtopicLabel(picked, currentTopic) +
+          ". Pick All under Question type (on the subject screen) to see the others.";
       note.hidden = false;
       return;
     }
@@ -634,7 +659,9 @@ function startPractice() {
     index: 0,
     mcqCorrect: 0,
     mcqTotal: 0,
-    ratings: { "Got it": 0, "Partly": 0, "Missed it": 0 }
+    ratings: { "Got it": 0, "Partly": 0, "Missed it": 0 },
+    fbCount: 0,
+    fbTotal: 0
   };
   showQuestion();
 }
@@ -664,12 +691,17 @@ function showQuestion() {
   nextButton.textContent = isLast ? "See results" : "Next";
 
   const isMcq = question.type === "mcq";
-  document.getElementById("question-label").textContent = isMcq ? "Multiple choice" : "Essay question";
+  const isFill = question.type === "fillblank";
+  document.getElementById("question-label").textContent =
+    isMcq ? "Multiple choice" : (isFill ? "Fill in the blank" : "Essay question");
   document.getElementById("mcq-area").hidden = !isMcq;
-  document.getElementById("essay-area").hidden = isMcq;
+  document.getElementById("fill-area").hidden = !isFill;
+  document.getElementById("essay-area").hidden = isMcq || isFill;
 
   if (isMcq) {
     showMcq(question);
+  } else if (isFill) {
+    showFillBlank(question);
   } else {
     showEssay(question);
   }
@@ -777,6 +809,100 @@ function showPicked(question, picked) {
   document.getElementById("mcq-feedback").hidden = false;
   document.getElementById("next-btn").hidden = false;
   document.getElementById("find-btn").hidden = false;  // she has answered: "Find in case" is allowed now
+}
+
+// --- Fill in the blank ---
+// Content: "prompt" has blanks written as ____ (four or more underscores), and
+// "fullText" is the same text with nothing blanked out. She tries to recall the missing
+// words, taps "Show answer" to see the full text (the words that were blanked out are
+// bold and underlined), then rates how many blanks she got: 0, 25, 50, 75 or 100%.
+const FB_PERCENTS = [0, 25, 50, 75, 100];
+const BLANK = /_{4,}/;
+
+function showFillBlank(question) {
+  // Make the blanks in the question stand out (they're ordinary words for highlighting).
+  document.querySelectorAll("#prompt .hl-word").forEach(function (word) {
+    if (BLANK.test(word.textContent)) { word.classList.add("fb-blank"); }
+  });
+  const full = typeof question.fullText === "string" ? question.fullText : "";
+  setRichText(document.getElementById("fb-full"),
+    full ? withAnswersMarked(question.prompt, full) : "The full text for this item hasn't been added yet.");
+
+  // Start fresh: answer hidden, no rating chosen.
+  document.getElementById("fb-answer-area").hidden = true;
+  document.getElementById("fb-show").hidden = false;
+  document.getElementById("fb-result").hidden = true;
+  document.querySelectorAll(".btn-fb").forEach(function (b) {
+    b.classList.remove("selected");
+    b.disabled = false;
+  });
+}
+
+// The full text with the words that filled each blank wrapped in **…** (shown bold).
+// It lines up the text around each blank with the full text. If anything doesn't line
+// up (or the text already uses **), it just gives back the full text unmarked.
+function withAnswersMarked(prompt, full) {
+  if (typeof prompt !== "string" || full.indexOf("**") !== -1 || prompt.indexOf("**") !== -1) { return full; }
+  const pieces = prompt.split(/_{4,}/);
+  if (pieces.length < 2 || full.indexOf(pieces[0]) !== 0) { return full; }
+  let at = pieces[0].length;
+  let marked = pieces[0];
+  for (let i = 1; i < pieces.length; i++) {
+    const piece = pieces[i];
+    const isLast = i === pieces.length - 1;
+    let end;
+    if (isLast && piece === "") {
+      end = full.length;              // the text ends with a blank
+    } else if (piece === "") {
+      return full;                    // two blanks in a row: can't tell where one ends
+    } else {
+      end = isLast ? full.length - piece.length : full.indexOf(piece, at + 1);
+      if (end <= at || full.slice(end, end + piece.length) !== piece) { return full; }
+    }
+    const answer = full.slice(at, end);
+    if (!answer.trim()) { return full; }
+    marked += "**" + answer + "**" + piece;
+    at = end + piece.length;
+  }
+  return at === full.length ? marked : full;
+}
+
+// "Show answer" reveals the full text and the rating buttons.
+function revealFillBlank() {
+  document.getElementById("fb-answer-area").hidden = false;
+  document.getElementById("fb-show").hidden = true;
+  document.getElementById("find-btn").hidden = false;  // she has answered: "Find in case" is allowed now
+}
+
+document.getElementById("fb-show").addEventListener("click", function () {
+  revealFillBlank();
+  session.current.answerShown = true;
+  rememberSpot();
+});
+
+// Rating buttons: she picks one, it's counted once, then "Next" appears.
+document.querySelectorAll(".btn-fb").forEach(function (button) {
+  button.addEventListener("click", function () {
+    const percent = Number(button.dataset.percent);
+    session.fbCount += 1;
+    session.fbTotal += percent;
+    recordFillBlank(session.questions[session.index], percent);  // save on the phone
+    session.current.fbPercent = percent;
+    showFbRated(percent);
+    rememberSpot();
+  });
+});
+
+// Show a chosen rating (also used to put her rating back after a reload).
+function showFbRated(percent) {
+  document.querySelectorAll(".btn-fb").forEach(function (b) {
+    b.disabled = true;
+    b.classList.toggle("selected", Number(b.dataset.percent) === percent);
+  });
+  const result = document.getElementById("fb-result");
+  result.textContent = "You rated this: " + percent + "%" + (percent < 100 ? " (added to Review missed)" : "");
+  result.hidden = false;
+  document.getElementById("next-btn").hidden = false;
 }
 
 // --- Essay ---
@@ -905,6 +1031,13 @@ function showResults() {
   // Only show a section if this round had that kind of question.
   document.getElementById("results-mcq").hidden = (session.mcqTotal === 0);
   document.getElementById("results-mcq-score").textContent = session.mcqCorrect + " of " + session.mcqTotal;
+
+  document.getElementById("results-fb").hidden = (session.fbCount === 0);
+  if (session.fbCount > 0) {
+    document.getElementById("results-fb-score").textContent = Math.round(session.fbTotal / session.fbCount) + "%";
+    document.getElementById("results-fb-count").textContent =
+      "average of your ratings, " + session.fbCount + (session.fbCount === 1 ? " item" : " items");
+  }
 
   document.getElementById("results-essay").hidden = (essayCount === 0);
   document.getElementById("results-got").textContent = session.ratings["Got it"];

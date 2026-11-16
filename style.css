@@ -101,12 +101,12 @@ body {
 
 /* Book-style paragraphs: straight edges on both sides (justified) for question prompts,
    suggested answers, explanations, the case's facts, issue, ruling and key doctrine,
-   and the full decision text.
+   the full decision text, and the revealed text of a fill-in-the-blank item.
    Long words may be split with a hyphen at the end of a line (like a printed book),
    which avoids big gaps between words on a narrow phone screen.
    The last line of each paragraph (and each numbered point) stays normal. */
 #prompt, #mcq-explanation, .alac dd,
-#case-facts, #case-issue, #case-ruling, #case-doctrine, #full-text {
+#case-facts, #case-issue, #case-ruling, #case-doctrine, #full-text, #fb-full {
   text-align: justify;
   -webkit-hyphens: auto;
   hyphens: auto;
@@ -224,6 +224,18 @@ body {
 
 .rating { margin-top: 8px; }
 .rating-buttons { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+/* Fill in the blank: five % buttons in one row, in the app's main color. */
+.fb-ratings { grid-template-columns: repeat(5, 1fr); gap: 6px; }
+/* (Their own class, not .btn-rate: the essay rating buttons' code listens to .btn-rate.) */
+.btn-fb { background: var(--card); padding: 12px 2px; border-color: var(--primary); color: var(--primary); }
+.btn-fb.selected { background: var(--primary); color: var(--primary-text); }
+.btn-fb:disabled { cursor: default; }
+.btn-fb:disabled:not(.selected) { opacity: 0.45; }
+.btn-fb.selected:disabled { opacity: 1; }
+/* The blanks in the question (written as ____ in the content). */
+.fb-blank { color: var(--primary); font-weight: 700; }
+/* In the revealed full text, the words that were blanked out. */
+.fb-full strong { color: var(--primary); text-decoration: underline; text-underline-offset: 3px; }
 .btn-rate { background: var(--card); padding: 12px 6px; }
 .btn-rate.got { border-color: var(--got); color: var(--got); }
 .btn-rate.partly { border-color: var(--partly); color: var(--partly); }

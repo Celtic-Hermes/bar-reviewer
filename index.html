@@ -59,6 +59,8 @@
             <dd id="stats-mcq"></dd>
             <dt>Essays</dt>
             <dd id="stats-essay"></dd>
+            <dt>Fill in the blank</dt>
+            <dd id="stats-fb"></dd>
           </dl>
         </section>
 
@@ -67,7 +69,8 @@
           <div class="mode-options">
             <label><input type="radio" name="question-mode" value="essay"><span>Essay questions</span></label>
             <label><input type="radio" name="question-mode" value="mcq"><span>Multiple choice</span></label>
-            <label><input type="radio" name="question-mode" value="both" checked><span>Both</span></label>
+            <label><input type="radio" name="question-mode" value="fillblank"><span>Fill in the blank</span></label>
+            <label><input type="radio" name="question-mode" value="both" checked><span>All</span></label>
           </div>
         </fieldset>
 
@@ -139,7 +142,29 @@
         </section>
       </div>
 
-      <!-- Essay parts (hidden for multiple choice) -->
+      <!-- Fill-in-the-blank parts (only for fill-in-the-blank) -->
+      <div id="fill-area" hidden>
+        <button class="btn btn-primary" id="fb-show">Show answer</button>
+        <div id="fb-answer-area" hidden>
+          <section class="card">
+            <h2 class="label">Full text</h2>
+            <p class="prompt fb-full" id="fb-full"></p>
+          </section>
+          <section class="rating">
+            <h2 class="label">How many blanks did you get right?</h2>
+            <div class="rating-buttons fb-ratings">
+              <button class="btn btn-fb" data-percent="0">0%</button>
+              <button class="btn btn-fb" data-percent="25">25%</button>
+              <button class="btn btn-fb" data-percent="50">50%</button>
+              <button class="btn btn-fb" data-percent="75">75%</button>
+              <button class="btn btn-fb" data-percent="100">100%</button>
+            </div>
+            <p class="rating-result" id="fb-result" hidden></p>
+          </section>
+        </div>
+      </div>
+
+      <!-- Essay parts (only for essays) -->
       <div id="essay-area">
       <button class="btn btn-primary" id="show-answer">Show suggested answer</button>
 
@@ -239,6 +264,12 @@
         <h2 class="label">Multiple choice</h2>
         <p class="big-score" id="results-mcq-score"></p>
         <p class="count-label">correct</p>
+      </section>
+
+      <section class="card" id="results-fb">
+        <h2 class="label">Fill in the blank</h2>
+        <p class="big-score" id="results-fb-score"></p>
+        <p class="count-label" id="results-fb-count"></p>
       </section>
 
       <section class="card" id="results-essay">
