@@ -105,6 +105,15 @@ body {
   color: var(--highlight-text);
   box-shadow: 0 0 0 2px var(--highlight);    /* a little padding so it looks like a highlighter stroke */
 }
+/* Two or more highlighted words in a row look like one continuous stripe:
+   the space between them is yellow too (and just as tall as the words),
+   and the corners where they meet are square. Only the outer ends stay rounded. */
+.hl-gap.hl-on {
+  background: var(--highlight);
+  box-shadow: 0 2px 0 var(--highlight), 0 -2px 0 var(--highlight);
+}
+.hl-word.hl-join-left  { border-top-left-radius: 0;  border-bottom-left-radius: 0; }
+.hl-word.hl-join-right { border-top-right-radius: 0; border-bottom-right-radius: 0; }
 
 /* ALAC answer: each part gets a small heading. */
 .alac { margin: 0; }

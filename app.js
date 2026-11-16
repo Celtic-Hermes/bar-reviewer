@@ -488,7 +488,12 @@ function richText(value, highlighted) {
     piece.split(/(\s+)/).forEach(function (bit) {
       if (bit === "") { return; }
       if (/^\s+$/.test(bit)) {
-        parent.appendChild(document.createTextNode(bit));  // spaces and line breaks stay as they are
+        // The space between two words gets its own <span>, so it can turn yellow
+        // when the words on both sides are highlighted (one continuous stripe).
+        const gap = document.createElement("span");
+        gap.className = "hl-gap";
+        gap.textContent = bit;  // spaces and line breaks stay as they are
+        parent.appendChild(gap);
         return;
       }
       const word = document.createElement("span");
@@ -537,6 +542,37 @@ function setHighlightableText(element, value, key) {
   element.textContent = "";
   element.dataset.hlKey = key;
   element.appendChild(richText(value, highlightedWords(key)));
+  joinHighlights(element);
+}
+
+// Make next-door highlighted words look like one stripe: color the space between
+// them, and square off the corners where they touch. Only the outer ends stay rounded.
+// Words split by a line break in the text (a new paragraph) are not joined.
+function joinHighlights(element) {
+  const pieces = element.querySelectorAll(".hl-word, .hl-gap");  // in reading order
+  let previousWord = null;  // the last word seen
+  let gapsBetween = [];     // the spaces since that word
+  let canJoin = true;       // false if those spaces include a line break
+
+  pieces.forEach(function (piece) {
+    if (piece.classList.contains("hl-gap")) {
+      piece.classList.remove("hl-on");
+      gapsBetween.push(piece);
+      if (piece.textContent.indexOf("\n") !== -1) { canJoin = false; }
+      return;
+    }
+    piece.classList.remove("hl-join-left", "hl-join-right");
+    const joined = canJoin && previousWord &&
+      previousWord.classList.contains("hl-on") && piece.classList.contains("hl-on");
+    if (joined) {
+      previousWord.classList.add("hl-join-right");
+      piece.classList.add("hl-join-left");
+      gapsBetween.forEach(function (gap) { gap.classList.add("hl-on"); });
+    }
+    previousWord = piece;
+    gapsBetween = [];
+    canJoin = true;
+  });
 }
 
 // Listen for taps on the words inside one text box. Set up once per box when the app starts.
@@ -550,6 +586,7 @@ function makeHighlightable(elementId) {
     if (!word || !key || !element.contains(word)) { return; }
     toggleHighlight(key, Number(word.dataset.word));
     word.classList.toggle("hl-on");
+    joinHighlights(element);
   });
 }
 
