@@ -111,6 +111,18 @@ body {
 
 .prompt { margin: 0; white-space: pre-line; }  /* keep line breaks written in the question */
 
+/* Book-style paragraphs: straight edges on both sides (justified) for question prompts,
+   suggested answers, explanations, and the case's facts, issue, ruling and key doctrine.
+   Long words may be split with a hyphen at the end of a line (like a printed book),
+   which avoids big gaps between words on a narrow phone screen.
+   The last line of each paragraph (and each numbered point) stays normal. */
+#prompt, #mcq-explanation, .alac dd,
+#case-facts, #case-issue, #case-ruling, #case-doctrine {
+  text-align: justify;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
 /* ---------- Highlighter: tap a word to highlight it ---------- */
 /* Which color each highlighted word or space uses. Yellow everywhere, except in the
    full decision text, where each word can have its own color (data-hl-color), and the
