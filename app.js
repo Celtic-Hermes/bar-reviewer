@@ -29,6 +29,9 @@ let session = null;
 let fixedQuestions = null;
 let practiceCase = null;
 
+let shownScreen = "screen-home";  // which screen is showing right now
+let currentCase = null;           // the case on the case screen
+
 // ---------- Switching screens ----------
 // Only one screen is visible at a time.
 function showScreen(id) {
@@ -36,6 +39,151 @@ function showScreen(id) {
     document.getElementById(screenId).hidden = (screenId !== id);
   });
   window.scrollTo(0, 0);
+  shownScreen = id;
+  rememberSpot();
+}
+
+// ---------- Remember where she is (so a reload puts her back) ----------
+// Called whenever something changes: a new screen, an answer, a rating, a checkbox.
+// On the home screen or the results screen there's nothing to come back to,
+// so the saved spot is cleared and a reload simply opens the home screen.
+function rememberSpot() {
+  if (shownScreen === "screen-home" || shownScreen === "screen-results") {
+    clearSpot();
+    return;
+  }
+  const spot = {
+    screen: shownScreen.replace("screen-", ""),  // "subject", "question" or "case"
+    subject: currentSubject,
+    topic: currentTopic,
+    shuffle: document.getElementById("shuffle").checked
+  };
+  // In the middle of a round (or reading a case opened from a question): keep the round.
+  const inRound = session && (shownScreen === "screen-question" ||
+    (shownScreen === "screen-case" && caseCameFrom === "question"));
+  if (inRound) {
+    spot.round = {
+      questionIds: session.questions.map(function (q) { return q.id; }),  // the order she's going in
+      index: session.index,                                              // which question she's on
+      mcqCorrect: session.mcqCorrect,
+      mcqTotal: session.mcqTotal,
+      ratings: session.ratings,
+      current: session.current,  // what she's done on this question: her pick, or answer shown, rating, checked key points
+      practiceCaseId: practiceCase ? practiceCase.id : null
+    };
+  }
+  if (shownScreen === "screen-case" && currentCase) {
+    spot.caseId = currentCase.id;
+    spot.caseCameFrom = caseCameFrom;
+  }
+  saveSpot(spot);
+}
+
+// On startup: if she was somewhere, rebuild that screen (and round). Never crashes:
+// if anything in the saved spot doesn't make sense anymore, she just gets the home screen.
+function restoreSpot() {
+  const spot = loadSpot();
+  if (!spot) { return; }
+  let ok = false;
+  try {
+    ok = putBackSpot(spot);
+  } catch (e) {
+    ok = false;
+  }
+  if (!ok) {
+    clearSpot();
+    showScreen("screen-home");
+  }
+}
+
+function putBackSpot(spot) {
+  if (SUBJECTS.concat(MISC_SUBJECTS).indexOf(spot.subject) === -1) { return false; }
+  currentSubject = spot.subject;
+  currentTopic = (typeof spot.topic === "string") ? spot.topic : null;
+
+  const shuffleSwitch = document.getElementById("shuffle");
+  shuffleSwitch.checked = Boolean(spot.shuffle);
+  showShuffleNote();
+
+  if (spot.screen === "subject") {
+    openSubject(currentSubject);
+    return true;
+  }
+
+  // Rebuild the round, if there was one. If its questions have changed since, skip it.
+  const roundOk = spot.round ? putBackRound(spot.round) : false;
+
+  if (spot.screen === "question") {
+    if (!roundOk) { openSubject(currentSubject); }
+    return true;
+  }
+  if (spot.screen === "case") {
+    const theCase = findCase(spot.caseId);
+    if (!theCase) {
+      openSubject(currentSubject);
+    } else {
+      openCase(theCase, (spot.caseCameFrom === "question" && roundOk) ? "question" : "subject");
+    }
+    return true;
+  }
+  return false;
+}
+
+// Rebuild a practice round from its saved question IDs, and show the question she was on.
+function putBackRound(round) {
+  if (!isPlainObject(round) || !Array.isArray(round.questionIds) || round.questionIds.length === 0) { return false; }
+  const questions = round.questionIds.map(function (id) {
+    return allQuestions.find(function (q) { return q && q.id === id; });
+  });
+  // A question was removed from the file since: the round can't be rebuilt exactly.
+  if (questions.some(function (q) { return !q; })) { return false; }
+  const index = round.index;
+  if (typeof index !== "number" || Math.floor(index) !== index || index < 0 || index >= questions.length) { return false; }
+
+  practiceCase = round.practiceCaseId ? findCase(round.practiceCaseId) : null;
+  fixedQuestions = practiceCase ? questions.slice() : null;
+  const ratings = isPlainObject(round.ratings) ? round.ratings : {};
+  session = {
+    questions: questions,
+    index: index,
+    mcqCorrect: wholeNumberOrZero(round.mcqCorrect),
+    mcqTotal: wholeNumberOrZero(round.mcqTotal),
+    ratings: {
+      "Got it": wholeNumberOrZero(ratings["Got it"]),
+      "Partly": wholeNumberOrZero(ratings["Partly"]),
+      "Missed it": wholeNumberOrZero(ratings["Missed it"])
+    }
+  };
+  showQuestion();
+  putBackCurrent(round.current);
+  return true;
+}
+
+// Show what she'd already done on the current question, without counting it again.
+function putBackCurrent(saved) {
+  if (!isPlainObject(saved)) { return; }
+  const question = session.questions[session.index];
+  if (question.type === "mcq") {
+    if (["A", "B", "C", "D"].indexOf(saved.picked) !== -1) {
+      session.current.picked = saved.picked;
+      showPicked(question, saved.picked);
+    }
+  } else {
+    if (saved.answerShown) {
+      session.current.answerShown = true;
+      revealAnswer();
+    }
+    if (Array.isArray(saved.checked)) {
+      const boxes = document.querySelectorAll("#key-points input[type=checkbox]");
+      session.current.checked = saved.checked.filter(function (n) { return boxes[n] !== undefined; });
+      session.current.checked.forEach(function (n) { boxes[n].checked = true; });
+    }
+    if (["Got it", "Partly", "Missed it"].indexOf(saved.rating) !== -1) {
+      session.current.rating = saved.rating;
+      showRated(saved.rating);
+    }
+  }
+  rememberSpot();
 }
 
 function questionsFor(subject) {
@@ -212,10 +360,15 @@ document.getElementById("subject-back").addEventListener("click", function () {
 });
 
 // Update the little note under the shuffle switch when it's flipped.
-document.getElementById("shuffle").addEventListener("change", function () {
-  document.querySelector(".switch-note").textContent = this.checked
+function showShuffleNote() {
+  document.querySelector(".switch-note").textContent = document.getElementById("shuffle").checked
     ? "On: questions come in random order"
     : "Off: questions come in order";
+}
+
+document.getElementById("shuffle").addEventListener("change", function () {
+  showShuffleNote();
+  rememberSpot();
 });
 
 // Mix up a list into random order (the standard "Fisher–Yates" shuffle).
@@ -254,6 +407,7 @@ function startPractice() {
 // ---------- Screen 3: Practice ----------
 function showQuestion() {
   const question = session.questions[session.index];
+  session.current = {};  // nothing done on this question yet
   const isLast = session.index === session.questions.length - 1;
 
   document.getElementById("progress").textContent =
@@ -325,7 +479,14 @@ function pickChoice(question, picked) {
   session.mcqTotal += 1;
   if (isRight) { session.mcqCorrect += 1; }
   recordMcq(question, isRight);  // save on the phone
+  session.current.picked = picked;
+  showPicked(question, picked);
+  rememberSpot();
+}
 
+// Show a picked answer as right or wrong (also used to put her answer back after a reload).
+function showPicked(question, picked) {
+  const isRight = picked === question.correct;
   // Lock the choices and color them: correct one green, her wrong pick red.
   document.querySelectorAll(".choice").forEach(function (button) {
     button.disabled = true;
@@ -381,9 +542,25 @@ function showEssay(question) {
 }
 
 // "Show suggested answer" reveals the hidden answer section.
-document.getElementById("show-answer").addEventListener("click", function () {
+function revealAnswer() {
   document.getElementById("answer-area").hidden = false;
   document.getElementById("show-answer").hidden = true;
+}
+
+document.getElementById("show-answer").addEventListener("click", function () {
+  revealAnswer();
+  session.current.answerShown = true;
+  rememberSpot();
+});
+
+// Remember which key points she has checked on this question.
+document.getElementById("key-points").addEventListener("change", function () {
+  const checked = [];
+  document.querySelectorAll("#key-points input[type=checkbox]").forEach(function (box, n) {
+    if (box.checked) { checked.push(n); }
+  });
+  session.current.checked = checked;
+  rememberSpot();
 });
 
 // Rating buttons: she picks one, it's counted once, then "Next" appears.
@@ -392,14 +569,23 @@ document.querySelectorAll(".btn-rate").forEach(function (button) {
     const rating = button.dataset.rating;
     session.ratings[rating] += 1;
     recordEssay(session.questions[session.index], rating);  // save on the phone
-    document.querySelectorAll(".btn-rate").forEach(function (b) { b.disabled = true; });
-    button.classList.add("selected");
-    const result = document.getElementById("rating-result");
-    result.textContent = "You rated this: " + rating;
-    result.hidden = false;
-    document.getElementById("next-btn").hidden = false;
+    session.current.rating = rating;
+    showRated(rating);
+    rememberSpot();
   });
 });
+
+// Show a chosen rating (also used to put her rating back after a reload).
+function showRated(rating) {
+  document.querySelectorAll(".btn-rate").forEach(function (b) {
+    b.disabled = true;
+    b.classList.toggle("selected", b.dataset.rating === rating);
+  });
+  const result = document.getElementById("rating-result");
+  result.textContent = "You rated this: " + rating;
+  result.hidden = false;
+  document.getElementById("next-btn").hidden = false;
+}
 
 document.getElementById("next-btn").addEventListener("click", function () {
   session.index += 1;
@@ -671,6 +857,7 @@ function caseText(value) {
 
 function openCase(theCase, cameFrom) {
   caseCameFrom = cameFrom;
+  currentCase = theCase;
   if (cameFrom === "question") { questionScrollSpot = window.scrollY; }
 
   document.getElementById("case-subject").textContent =
@@ -869,7 +1056,11 @@ document.getElementById("restore-input").addEventListener("change", function (ev
 // ---------- Start the app ----------
 buildHome();
 
-fetch("data/questions.json")
+// If she was somewhere else when the app last closed, don't flash the home screen
+// while the files load; restoreSpot() below shows the right screen.
+if (loadSpot()) { document.getElementById("screen-home").hidden = true; }
+
+const questionsReady = fetch("data/questions.json")
   .then(function (response) {
     if (!response.ok) { throw new Error("status " + response.status); }
     return response.json();
@@ -885,7 +1076,7 @@ fetch("data/questions.json")
       "Otherwise, the file may have a typo.");
   });
 
-fetch("data/cases.json")
+const casesReady = fetch("data/cases.json")
   .then(function (response) {
     if (!response.ok) { throw new Error("status " + response.status); }
     return response.json();
@@ -899,6 +1090,9 @@ fetch("data/cases.json")
   });
 
 // Show a loading problem at the top of the app (several can show at once).
+// Once both files have loaded (or failed), put her back where she was.
+Promise.all([questionsReady, casesReady]).then(restoreSpot);
+
 function showLoadError(text) {
   const error = document.getElementById("load-error");
   error.textContent = error.hidden ? text : error.textContent + "\n\n" + text;

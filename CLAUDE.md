@@ -117,6 +117,7 @@ Exactly 4 choices (A–D) and exactly one correct answer. She gets instant feedb
 - Saved in the phone's browser storage (`localStorage`). Nothing is sent anywhere, and there are no accounts.
 - Remember: **score per subject**, **questions she missed**, and **bookmarked questions**.
 - Also remember her **highlighted words** (tap a word to highlight it): stored by question ID, or by case ID + part (e.g. `case-0002:facts`), as a list of word positions. If a question's prompt text is edited later, her saved highlights may land on different words.
+- **Where she is right now** (screen, subject/topic, and any practice round in progress: question order, position, answers and ratings so far) is saved in its own slot (`barReviewer.currentSpot.v1`), so a reload puts her back there. It is **not** part of backups. It is cleared when she returns to the home screen or finishes a round (results screen).
 - Counting: a multiple-choice question is "missed" if answered wrong. An essay rated **Partly** or **Missed it** goes into her review list.
 - iPhone note: she should use Safari's **Add to Home Screen**. iPhones can clear saved data for websites that haven't been opened in a while, but apps added to the home screen are better protected. The home screen has **Back up my progress** (saves a file via the Share menu → Save to Files) and **Restore progress** (loads that file back).
 

@@ -94,6 +94,42 @@ function toggleBookmark(questionId) {
   saveProgress();
 }
 
+// ---------- Where she is right now ----------
+// So a reload (or an app update) puts her back on the same screen, in the middle of
+// the same practice round. Kept in its own slot, separate from her progress above,
+// so it is NOT part of a backup file: restoring an old backup should never drop her
+// into an old, half-finished round.
+// It is cleared when she goes back to the home screen, or finishes a round.
+const SPOT_KEY = "barReviewer.currentSpot.v1";
+
+// Gives back the saved spot, or null if there's none (or it's damaged).
+function loadSpot() {
+  try {
+    const raw = localStorage.getItem(SPOT_KEY);
+    if (!raw) { return null; }
+    const spot = JSON.parse(raw);
+    return isPlainObject(spot) ? spot : null;
+  } catch (e) {
+    return null;
+  }
+}
+
+function saveSpot(spot) {
+  try {
+    localStorage.setItem(SPOT_KEY, JSON.stringify(spot));
+  } catch (e) {
+    // Couldn't save (for example, private browsing). The app keeps working anyway.
+  }
+}
+
+function clearSpot() {
+  try {
+    localStorage.removeItem(SPOT_KEY);
+  } catch (e) {
+    // Nothing to do.
+  }
+}
+
 // ---------- Highlights ----------
 // Keep only lists of whole word positions, so damaged saved data can't break anything.
 function cleanHighlights(value) {
