@@ -181,3 +181,4 @@ These rules matter more than speed.
 - **Hosting:** GitHub Pages (free). It gives one web link to open on her iPhone and add to the home screen.
 - **Running it on the Mac:** open the project folder in VS Code and use a simple local web server (instructions will be given when first needed).
 - Bad or missing content in the JSON files must not crash the app. Show a clear message instead.
+- **Case titles have one shared style.** Every case name shown as a label uses the `case-title` class, and its look lives only in the `.case-title` rule in `style.css`. In code, build case names with `caseTitle(name)` and case-list cards with `makeCaseCard(theCase, onTap)` (both in `app.js`); the case screen heading has `class="case-title"` in `index.html`; the parties' caption at the top of a full decision gets it automatically (`markCaption`). Any new screen that shows a case name must use these, never its own styling.

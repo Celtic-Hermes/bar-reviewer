@@ -1495,6 +1495,41 @@ function openCase(theCase, cameFrom) {
 }
 
 // ---------- Full text of the decision ----------
+// The decision's caption (the parties' names, e.g. "CECILIA ZULUETA, petitioner, vs.
+// COURT OF APPEALS and ALFREDO MARTIN, respondents.") gets the shared case-title style.
+// It's found in the opening lines: every paragraph after a "G.R. No." / "A.C. No." line
+// and before the "DECISION" or "RESOLUTION" heading (a decision covering two cases has
+// two captions, each after its own number line). The text itself isn't changed: the
+// caption's words just get the case-title class, so her highlights stay where they are.
+function captionWordRanges(text) {
+  const paragraphs = text.split(/\n\n/);
+  const heading = paragraphs.slice(0, 40).findIndex(function (p) {
+    return /^\s*(D ?E ?C ?I ?S ?I ?O ?N|R ?E ?S ?O ?L ?U ?T ?I ?O ?N)\s*$/.test(p);
+  });
+  if (heading === -1) { return []; }  // not the usual layout: leave it plain
+  const isNumberLine = function (p) { return /^\s*\[?\s*(G\.R\.|A\.C\.)\s+Nos?\./.test(p); };
+  const ranges = [];
+  let wordCount = 0;      // words before the current paragraph
+  let afterNumber = false;
+  for (let i = 0; i < heading; i++) {
+    const words = paragraphs[i].split(/\s+/).filter(Boolean).length;
+    if (isNumberLine(paragraphs[i])) {
+      afterNumber = true;
+    } else if (afterNumber && words > 0) {
+      ranges.push({ first: wordCount, last: wordCount + words - 1 });
+    }
+    wordCount += words;
+  }
+  return ranges;
+}
+
+function markCaption(box, text) {
+  const words = box.querySelectorAll(".hl-word");
+  captionWordRanges(text).forEach(function (r) {
+    for (let n = r.first; n <= r.last && n < words.length; n++) { words[n].classList.add("case-title"); }
+  });
+}
+
 // Download one case's full text (data/case-texts/case-0001.txt). Used by the
 // "Read the full text" button and by "Find in case". Gives back the text, or fails with
 // "missing" (no file for this case) or another error (for example, offline).
@@ -1562,6 +1597,7 @@ document.getElementById("full-text-btn").addEventListener("click", function () {
       // Tap or drag to highlight, like the summary. Saved as e.g. "case-0001:fulltext".
       // (Shown as plain text only: nothing in the file can run as code.)
       setHighlightableText(box, text, theCase.id + ":fulltext", true);
+      markCaption(box, text);  // the parties' names at the top: shared case-title style
       box.hidden = false;
       document.getElementById("full-text-credit").hidden = false;
       document.getElementById("hl-palette").hidden = false;
