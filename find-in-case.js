@@ -122,15 +122,16 @@ function footnotesStart(text, words) {
 
 // The stretch of the decision to show around words first…last (see the numbers at the top).
 // Never mixes the decision's body with its footnotes.
-function contextAround(text, words, first, last) {
+// "quoteWords": how long the whole quote is (all its pieces), if more than first…last.
+function contextAround(text, words, first, last, quoteWords) {
   const notes = footnotesStart(text, words);
   const lowest = first >= notes ? notes + 1 : 0;
   const highest = first >= notes ? words.length - 1 : notes - 1;
 
-  // A long passage already carries its own reasoning, so it needs less around it.
-  const passageWords = last - first + 1;
-  const wantBefore = BEFORE_MIN - passageWords;
-  const wantAfter = AFTER_MIN - passageWords;
+  // A long quote (100+ words) already carries its own reasoning: just its own paragraphs.
+  const passageWords = Math.max(last - first + 1, quoteWords || 0);
+  const wantBefore = passageWords >= 100 ? 0 : BEFORE_MIN - passageWords;
+  const wantAfter = passageWords >= 100 ? 0 : AFTER_MIN - passageWords;
 
   let from = paragraphStart(text, words, first);
   let added = 0;
@@ -154,35 +155,71 @@ function contextAround(text, words, first, last) {
   return { from: from, to: to };
 }
 
-// Where the question's source excerpt is in the decision, as word positions, or null.
-// Quotes sometimes leave words out ("x x x", "…") or add words in [brackets], so if the
-// whole quote isn't found word for word, look for its first and last few words.
+// Where the question's source excerpt is in the decision: a list of word ranges
+// [{ first, last }, …], one per piece (excerpts skip stretches with " … "), or null.
 function findExcerpt(words, excerpt) {
-  const keys = wordsOf(plainText(excerpt || "")).map(function (w) { return w.key; });
+  const pieces = plainText(excerpt || "").split("…")
+    .map(function (piece) { return wordsOf(piece).map(function (w) { return w.key; }); })
+    .filter(function (keys) { return keys.length > 0; });
+  if (pieces.length === 0) { return null; }
+  const ranges = [];
+  let from = 0;
+  for (let p = 0; p < pieces.length; p++) {
+    const spot = findPhrase(words, pieces[p]).find(function (s) { return s >= from; });
+    if (spot === undefined) { return looseExcerpt(words, pieces); }
+    ranges.push({ first: spot, last: spot + pieces[p].length - 1 });
+    from = spot + pieces[p].length;
+  }
+  return ranges;
+}
+
+// Fallback for a quote that adds words in [brackets] or isn't split with "…":
+// look for its first and last few words, close together.
+function looseExcerpt(words, pieces) {
+  const keys = [].concat.apply([], pieces);
   if (keys.length < 3) { return null; }
-  const whole = findPhrase(words, keys)[0];
-  if (whole !== undefined) { return { first: whole, last: whole + keys.length - 1 }; }
   const size = Math.min(6, keys.length);
   const head = findPhrase(words, keys.slice(0, size));
   const tail = findPhrase(words, keys.slice(keys.length - size));
   for (let h = 0; h < head.length; h++) {
     for (let t = 0; t < tail.length; t++) {
       const last = tail[t] + size - 1;
-      if (last > head[h] && last - head[h] < keys.length * 2) { return { first: head[h], last: last }; }
+      if (last > head[h] && last - head[h] < keys.length * 2) { return [{ first: head[h], last: last }]; }
     }
   }
   return null;
 }
 
-// Fill the panel's text area: the context, with words first…last in bold italics.
+// Fill the panel's text area: the quoted words (one or more ranges, in order) in bold
+// italics, each inside its surrounding paragraphs. Pieces far apart in the decision are
+// shown as separate stretches with a "· · ·" between them, instead of everything between.
 // Built from plain text pieces only (never innerHTML).
-function showInContext(text, words, first, last) {
-  const range = contextAround(text, words, first, last);
+function showInContext(text, words, ranges) {
+  const groups = [];
+  const quoteWords = ranges.reduce(function (sum, r) { return sum + r.last - r.first + 1; }, 0);
+  ranges.forEach(function (r) {
+    const win = contextAround(text, words, r.first, r.last, quoteWords);
+    const prev = groups[groups.length - 1];
+    if (prev && win.from <= prev.to + 120) {  // close together: show what's between, too
+      prev.to = Math.max(prev.to, win.to);
+      prev.ranges.push(r);
+    } else {
+      groups.push({ from: win.from, to: win.to, ranges: [r] });
+    }
+  });
   const box = document.getElementById("find-text");
   box.textContent = "";
-  box.appendChild(document.createTextNode(text.slice(words[range.from].start, words[first].start)));
-  addPiece(box, text.slice(words[first].start, words[last].end), "find-match");
-  box.appendChild(document.createTextNode(text.slice(words[last].end, words[range.to].end)));
+  groups.forEach(function (g, n) {
+    if (n > 0) { addPiece(box, "\n\n· · ·\n\n", "find-gap"); }
+    let at = g.from;
+    g.ranges.forEach(function (r) {
+      if (r.first > at) { box.appendChild(document.createTextNode(text.slice(words[at].start, words[r.first].start))); }
+      addPiece(box, text.slice(words[r.first].start, words[r.last].end), "find-match");
+      if (r.last < g.to) { box.appendChild(document.createTextNode(text.slice(words[r.last].end, words[r.last + 1].start))); }
+      at = r.last + 1;
+    });
+    if (at <= g.to) { box.appendChild(document.createTextNode(text.slice(words[at].start, words[g.to].end))); }
+  });
 }
 
 // ---------- Searching ----------
@@ -251,7 +288,7 @@ function showMatch(found) {
   note.textContent = "Appears " + found.count + " times. Showing the one nearest this question's source passage.";
   document.getElementById("find-part").hidden = true;
 
-  showInContext(found.text, found.words, found.first, found.last);
+  showInContext(found.text, found.words, [{ first: found.first, last: found.last }]);
 }
 
 function addPiece(parent, text, className) {
@@ -280,9 +317,9 @@ function showClosest(question, reason, sourceText) {
   const excerpt = typeof source.excerpt === "string" ? source.excerpt.trim() : "";
   if (excerpt && sourceText) {
     const words = wordsOf(sourceText);
-    const spot = findExcerpt(words, excerpt);
-    if (spot) {
-      showInContext(sourceText, words, spot.first, spot.last);
+    const ranges = findExcerpt(words, excerpt);
+    if (ranges) {
+      showInContext(sourceText, words, ranges);
       return;
     }
   }

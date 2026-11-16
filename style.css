@@ -612,6 +612,7 @@ body {
 .sheet-part { margin: 0 0 8px; color: var(--muted); font-size: 14px; font-weight: 600; }
 .sheet-text { white-space: pre-wrap; overflow-wrap: anywhere; line-height: 1.6; }
 .sheet-text .find-match { font-weight: 700; font-style: italic; }
+.sheet-text .find-gap { color: var(--muted); }
 body.sheet-open { overflow: hidden; }
 @media (prefers-reduced-motion: reduce) {
   .sheet, .sheet-backdrop { transition: none; }
