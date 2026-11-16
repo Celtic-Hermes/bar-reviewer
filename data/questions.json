@@ -825,5 +825,228 @@
       "part": "Our Ruling, STC did not violate petitioners' daughters' right to privacy",
       "excerpt": "for in such instances, the intention to limit access to the particular post, instead of being broadcasted to the public at large or all the user's friends en masse, becomes more manifest and palpable."
     }
+  },
+  {
+    "id": "q-0031",
+    "type": "essay",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "Jessa, a private individual, takes screenshots of chat messages from Mark's messaging account without his knowledge, and gives them to the prosecutor. Mark is charged with a crime based on the messages. At trial, he moves to exclude them, arguing that under Article III, Section 3 of the Constitution, evidence obtained in violation of the privacy of communication is inadmissible. He also cites Zulueta v. Court of Appeals. Should the motion be granted? Explain, based on Cadajas v. People.",
+    "suggestedAnswer": {
+      "answer": "No. The constitutional exclusionary rule does not apply, because the evidence was obtained by a private individual and not by the State.",
+      "legalBasis": "In Cadajas v. People, the Court held that the Bill of Rights is meant to protect private individuals against government intrusion, so its provisions do not apply between private individuals. The rule on admissibility under Article III must affect only evidence obtained by the State through its agents. The Court called the statement in Zulueta v. Court of Appeals a mere obiter dictum, not a binding precedent. Privacy violations between private individuals are governed by the Civil Code, the Data Privacy Act, and other laws. Admissibility is governed by the Rules on Evidence: relevance, materiality, authentication, and the exclusionary rules.",
+      "application": "Jessa is a private individual, not a police officer or other agent of the State. So Mark cannot invoke Article III, Section 3 to exclude the screenshots. His reliance on Zulueta fails because Cadajas explained that the pronouncement there was obiter: that petition was about the return of the documents, and the documents were excluded because of the trial court's injunction. Mark's remedy for any privacy violation by Jessa lies under the Civil Code, the Data Privacy Act, or other laws. The screenshots' admissibility will depend on the Rules on Evidence, such as proper authentication.",
+      "conclusion": "The motion should be denied on the constitutional ground. The evidence's admissibility is decided under the Rules on Evidence."
+    },
+    "keyPoints": [
+      "The Bill of Rights protects against the State, not against private individuals",
+      "The Article III exclusionary rule covers only evidence obtained by the State or its agents",
+      "Zulueta's statement on inadmissibility between spouses is obiter dictum",
+      "Privacy violations between private persons: Civil Code, Data Privacy Act, other laws",
+      "Admissibility: Rules on Evidence (relevance, materiality, authentication, exclusionary rules)"
+    ],
+    "caseIds": [
+      "case-0005"
+    ],
+    "source": {
+      "caseTitle": "Cadajas v. People",
+      "grNumber": "G.R. No. 247348",
+      "url": "https://lawphil.net/judjuris/juri2021/nov2021/gr_247348_2021.html",
+      "part": "Our Ruling, on petitioner's right to privacy",
+      "excerpt": "Indeed, the rule governing the admissibility of an evidence under Article III of the Constitution must affect only those pieces of evidence obtained by the State through its agents."
+    }
+  },
+  {
+    "id": "q-0032",
+    "type": "essay",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "Paolo gave his girlfriend the password to his messaging account. Later, she logs in and copies some of his messages, which are used as evidence against him. Paolo says his account is password-protected, so he had a reasonable expectation that no one else could access it, and his right to privacy was violated. Is he correct? Explain, applying Cadajas v. People.",
+    "suggestedAnswer": {
+      "answer": "No. By voluntarily giving his password to his girlfriend, Paolo limited his reasonable expectation of privacy as to her, so there was no violation.",
+      "legalBasis": "In Cadajas, the Court applied the reasonable expectation of privacy test from Spouses Hing v. Choachuy, Sr. It held that a person who voluntarily gives his password to another, in effect, authorizes that person to access the account. This limits his reasonable expectation of privacy as to that person.",
+      "application": "Paolo's expectation of privacy came from his account being password-protected. But he does not claim it was hacked or accessed by unauthorized means. He gave his girlfriend the password and took no steps to exclude her. As in Cadajas, his expectation of privacy as to her was limited. The Court also said that once he made the contents available to her, she had the latitude to show others what she could access. In Cadajas, this was true even though the girl was forced by her mother to open the account.",
+      "conclusion": "There was no violation of Paolo's right to privacy."
+    },
+    "keyPoints": [
+      "Reasonable expectation of privacy test (from Hing v. Choachuy)",
+      "A password-protected account gives an expectation of privacy",
+      "Voluntarily giving the password authorizes the other person's access",
+      "No hacking or unauthorized means were used",
+      "Conclusion: his expectation of privacy as to that person was limited; no violation"
+    ],
+    "caseIds": [
+      "case-0005"
+    ],
+    "source": {
+      "caseTitle": "Cadajas v. People",
+      "grNumber": "G.R. No. 247348",
+      "url": "https://lawphil.net/judjuris/juri2021/nov2021/gr_247348_2021.html",
+      "part": "Our Ruling, on petitioner's right to privacy (application of the reasonable expectation of privacy test)",
+      "excerpt": "Considering that he voluntarily gave his password to AAA, he, in effect, has authorized AAA to access the same."
+    }
+  },
+  {
+    "id": "q-0033",
+    "type": "essay",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "During trial, the prosecution formally offers photos taken from the accused's online account. The accused's lawyer makes no objection. After conviction, the accused argues for the first time on appeal that the photos were inadmissible because they violated his right to privacy. Can the appellate court consider the objection? Explain, based on Cadajas v. People.",
+    "suggestedAnswer": {
+      "answer": "No. The objection was waived because it was not made when the evidence was formally offered at trial.",
+      "legalBasis": "In Cadajas, the Court said that to exclude evidence, the objection must be made at the proper time and the grounds must be specified. For documentary evidence, the objection must be made when it is formally offered. A party who fails to object on time is considered to have waived the objection, even if the evidence would have been rejected had it been challenged properly. Also, no question will be considered on appeal unless it was raised in the proceedings below.",
+      "application": "The accused did not object when the photos were formally offered. Raising the issue for the first time on appeal is barred. In Cadajas, the accused was likewise deemed to have waived his objection, and the photos taken from his Facebook Messenger account were admissible.",
+      "conclusion": "The objection is waived, and the photos remain admissible."
+    },
+    "keyPoints": [
+      "An objection to evidence must be made at the proper time, with the grounds specified",
+      "For documentary evidence: object when it is formally offered",
+      "Failure to object on time means waiver, even if the evidence was inadmissible by nature",
+      "Issues cannot be raised for the first time on appeal",
+      "Conclusion: the objection is waived"
+    ],
+    "caseIds": [
+      "case-0005"
+    ],
+    "source": {
+      "caseTitle": "Cadajas v. People",
+      "grNumber": "G.R. No. 247348",
+      "url": "https://lawphil.net/judjuris/juri2021/nov2021/gr_247348_2021.html",
+      "part": "Our Ruling, on petitioner's right to privacy (failure to object at trial)",
+      "excerpt": "When a party failed to interpose a timely objection to evidence at the time they were offered in evidence, such objection shall be considered as waived."
+    }
+  },
+  {
+    "id": "q-0034",
+    "type": "mcq",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "In Cadajas v. People, how did the Court treat the statement in Zulueta v. Court of Appeals that evidence obtained by one spouse in violation of the other's privacy is inadmissible?",
+    "choices": {
+      "A": "As a binding precedent that applies to all private individuals",
+      "B": "As a mere obiter dictum that cannot be considered a binding precedent",
+      "C": "As overturned because it conflicts with the Data Privacy Act",
+      "D": "As applicable only to married couples"
+    },
+    "correct": "B",
+    "explanation": "B is correct. The Court said the pronouncement in Zulueta is a mere obiter dictum that cannot be considered a binding precedent. One reason is that the Zulueta petition only asked for the return of the documents. Another is that the documents were declared inadmissible because of the trial court's injunction, not because of Article III, Section 3. A is wrong because the Court said it is not binding. C is wrong because the Court did not base its treatment on any conflict with the Data Privacy Act. D is wrong because the Court did not keep it as a rule for spouses; it said the statement is not a binding precedent at all.",
+    "caseIds": [
+      "case-0005"
+    ],
+    "source": {
+      "caseTitle": "Cadajas v. People",
+      "grNumber": "G.R. No. 247348",
+      "url": "https://lawphil.net/judjuris/juri2021/nov2021/gr_247348_2021.html",
+      "part": "Our Ruling, on petitioner's right to privacy (discussion of Zulueta v. Court of Appeals)",
+      "excerpt": "such a pronouncement is a mere obiter dictum that cannot be considered as a binding precedent."
+    }
+  },
+  {
+    "id": "q-0035",
+    "type": "mcq",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "According to Cadajas v. People, the Data Privacy Act allows the processing of data and sensitive personal information when:",
+    "choices": {
+      "A": "It is requested by any private person for any reason.",
+      "B": "It relates to the determination of the criminal liability of a data subject, or is necessary to protect lawful rights and interests in court proceedings.",
+      "C": "The data subject is a minor.",
+      "D": "The data was posted on social media."
+    },
+    "correct": "B",
+    "explanation": "B is correct. The Court noted that the DPA allows processing of data and sensitive personal information where it relates to determining a data subject's criminal liability. It also allows it when necessary to protect lawful rights and interests in court proceedings, as in Cadajas, where the evidence was used to establish AAA's claims. A is wrong because there is no blanket permission for any reason. C is wrong because being a minor is not a ground for processing; minors' data deserves more protection, not less. D is wrong because the decision does not say social media posts may be processed freely.",
+    "caseIds": [
+      "case-0005"
+    ],
+    "source": {
+      "caseTitle": "Cadajas v. People",
+      "grNumber": "G.R. No. 247348",
+      "url": "https://lawphil.net/judjuris/juri2021/nov2021/gr_247348_2021.html",
+      "part": "Our Ruling, on petitioner's right to privacy (Data Privacy Act)",
+      "excerpt": "the DPA allows the processing of data and sensitive personal information where it relates to the determination of criminal liability of a data subject"
+    }
+  },
+  {
+    "id": "q-0036",
+    "type": "mcq",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "In Cadajas v. People, the Court quoted Justice Leonen's separate concurring opinion on the aspects of the right to informational privacy. Which of the following is NOT one of the three aspects listed there?",
+    "choices": {
+      "A": "To keep inalienable information to themselves",
+      "B": "To prevent first disclosure",
+      "C": "To prevent further dissemination in case the information has already been disclosed",
+      "D": "To demand payment for any use of one's personal information"
+    },
+    "correct": "D",
+    "explanation": "D is correct because it is not one of the aspects. The three listed are: (1) to keep inalienable information to themselves; (2) to prevent first disclosure; and (3) to prevent further dissemination if the information has already been disclosed. The opinion added a possible fourth from the European Union, the right to be forgotten, but not a right to demand payment. A, B, and C are wrong answers because each is one of the three aspects.",
+    "caseIds": [
+      "case-0005"
+    ],
+    "source": {
+      "caseTitle": "Cadajas v. People",
+      "grNumber": "G.R. No. 247348",
+      "url": "https://lawphil.net/judjuris/juri2021/nov2021/gr_247348_2021.html",
+      "part": "Our Ruling, on petitioner's right to privacy (quoting Justice Leonen's separate concurring opinion)",
+      "excerpt": "Thus, it has the following aspects: (1) to keep inalienable information to themselves; (2) to prevent first disclosure; and (3) to prevent further dissemination in case the information has already been disclosed."
+    }
+  },
+  {
+    "id": "q-0037",
+    "type": "mcq",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "In Cadajas v. People, which of the following is NOT one of the facts the Court said must be proven to convict for child pornography (R.A. No. 9775, in relation to R.A. No. 10175)?",
+    "choices": {
+      "A": "The victim is a child.",
+      "B": "The victim was induced or coerced to perform in the creation or production of any form of child pornography.",
+      "C": "The child pornography was performed through visual, audio or written combination thereof by electronic, mechanical, digital, optical, magnetic or any other means.",
+      "D": "The accused sold or distributed the material to third persons."
+    },
+    "correct": "D",
+    "explanation": "D is correct because selling or distributing is not one of the three facts the Court listed. The Court also explained that the law punishes even mere possession, separately from possession with intent to sell or distribute. A, B, and C are wrong answers because they are exactly the three facts the Court said must be proven.",
+    "caseIds": [
+      "case-0005"
+    ],
+    "source": {
+      "caseTitle": "Cadajas v. People",
+      "grNumber": "G.R. No. 247348",
+      "url": "https://lawphil.net/judjuris/juri2021/nov2021/gr_247348_2021.html",
+      "part": "Our Ruling, on petitioner's liability",
+      "excerpt": "(1) victim is a child; (2) victim was induced or coerced to perform in the creation or production of any form of child pornography; and (3) child pornography was performed through visual, audio or written combination thereof by electronic, mechanical, digital, optical, magnetic or any other means."
+    }
+  },
+  {
+    "id": "q-0038",
+    "type": "mcq",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "In Cadajas v. People, what penalty did the Supreme Court impose for child pornography committed through a computer system, and why?",
+    "choices": {
+      "A": "Reclusion temporal, because the sweetheart defense lowered the penalty",
+      "B": "Reclusion perpetua, because R.A. No. 10175 makes the penalty one degree higher than that under R.A. No. 9775",
+      "C": "A fine only, because the accused was a first-time offender",
+      "D": "Prision mayor, because the victim was over 12 years old"
+    },
+    "correct": "B",
+    "explanation": "B is correct. Sections 4 and 8 of R.A. No. 10175 provide a penalty one degree higher than R.A. No. 9775. One degree higher than reclusion temporal is reclusion perpetua, so the Court modified the CA's penalty to reclusion perpetua, plus a fine of P1,000,000. A is wrong because the Court rejected the sweetheart defense in child pornography, and the penalty was increased, not lowered. C is wrong because the Court imposed reclusion perpetua plus a fine, not a fine only. D is wrong because the decision did not impose prision mayor.",
+    "caseIds": [
+      "case-0005"
+    ],
+    "source": {
+      "caseTitle": "Cadajas v. People",
+      "grNumber": "G.R. No. 247348",
+      "url": "https://lawphil.net/judjuris/juri2021/nov2021/gr_247348_2021.html",
+      "part": "Our Ruling, discussion of the proper penalty",
+      "excerpt": "One degree higher than the penalty of reclusion temporal is the indivisible penalty of reclusion perpetua."
+    }
   }
 ]
