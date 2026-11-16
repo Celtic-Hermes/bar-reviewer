@@ -150,6 +150,9 @@ body {
 .highlightable::selection,
 .highlightable *::selection { background: transparent; }
 .hl-word.hl-preview:not(.hl-on) { background: var(--hl-preview); }
+/* Full decision text: dragging over a word in another color shows the picked color's
+   light preview over it (it will change to the picked color when she lets go). */
+.hl-colored .hl-word.hl-on.hl-preview { background: var(--hl-preview); box-shadow: 0 0 0 2px transparent; }
 
 /* Removing a highlight fades the yellow out (0.35 seconds) so she can see which words just
    lost it. A transition uses the timing of the state it's moving INTO, so:

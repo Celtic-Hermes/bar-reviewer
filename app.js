@@ -1258,6 +1258,19 @@ function clearDragPreview() {
   });
 }
 
+// Does a drag that starts on this word REMOVE highlights (true) or ADD them (false)?
+// Full decision text: removes only if the word is already in the picked color.
+// Everywhere else (one yellow): removes if the word is highlighted.
+function dragRemoves(startWord) {
+  return startWord.closest(".hl-colored") ? inActiveColor(startWord) : startWord.classList.contains("hl-on");
+}
+
+// In a removing drag, which words lose their highlight?
+// Full decision text: only those in the picked color. Elsewhere: every highlighted word.
+function removedByDrag(element, word) {
+  return element.classList.contains("hl-colored") ? inActiveColor(word) : word.classList.contains("hl-on");
+}
+
 // While she drags, show live which words the drag will change:
 // - a drag that STARTED on a plain word: the words she passes over get a light yellow
 //   preview of the highlight they're about to get ("hl-preview");
@@ -1272,12 +1285,17 @@ document.addEventListener("selectionchange", function () {
   if (!selection || selection.rangeCount === 0 || selection.isCollapsed) { return; }
   const picked = selectedWords(selection.getRangeAt(0));
   if (picked.length === 0) { return; }
-  const removing = dragStartWord(selection, picked).classList.contains("hl-on");
+  const removing = dragRemoves(dragStartWord(selection, picked));
   picked.forEach(function (p) {
     p.words.forEach(function (word) {
       if (!removing) {
-        word.classList.add("hl-preview");
-      } else if (word.classList.contains("hl-on")) {
+        // Light preview in the color they'll get (in the full text, also over words
+        // in another color, which will change to the picked color). Words already in
+        // the picked color stay as they are.
+        if (!(p.element.classList.contains("hl-colored") && inActiveColor(word))) {
+          word.classList.add("hl-preview");
+        }
+      } else if (removedByDrag(p.element, word)) {
         word.classList.add("hl-unpreview");
       }
     });
@@ -1348,15 +1366,28 @@ function applyMouseDrag() {
   const picked = selectedWords(range);
   if (picked.length > 0) {
     // The word where the drag STARTED decides what the drag does:
-    // started on a yellow word -> remove the highlight from every word dragged over (they fade out);
-    // started on a plain word  -> highlight every word dragged over.
-    // (So a drag that ends a little past the last yellow word still removes, instead of flipping.)
-    const turnOn = !dragStartWord(selection, picked).classList.contains("hl-on");
+    // started on a highlighted word (in the full text: one in the picked color)
+    //   -> remove the highlight from the words dragged over (they fade out);
+    // otherwise -> highlight every word dragged over (in the full text: in the picked color).
+    // (So a drag that ends a little past the last highlighted word still removes, instead of flipping.)
+    const removing = dragRemoves(dragStartWord(selection, picked));
+    const positionsOf = function (words) { return words.map(function (word) { return Number(word.dataset.word); }); };
     picked.forEach(function (p) {
-      setHighlights(p.key, p.words.map(function (word) { return Number(word.dataset.word); }), turnOn);
-      p.words.forEach(function (word) { word.classList.toggle("hl-on", turnOn); });
+      if (p.element.classList.contains("hl-colored")) {
+        if (removing) {
+          const losing = p.words.filter(inActiveColor);
+          setHighlights(p.key, positionsOf(losing), false);
+          losing.forEach(function (word) { word.classList.remove("hl-on"); delete word.dataset.hlColor; });
+        } else {
+          colorHighlights(p.key, positionsOf(p.words), activeHighlightColor);
+          p.words.forEach(function (word) { word.classList.add("hl-on"); word.dataset.hlColor = activeHighlightColor; });
+        }
+      } else {
+        setHighlights(p.key, positionsOf(p.words), !removing);
+        p.words.forEach(function (word) { word.classList.toggle("hl-on", !removing); });
+      }
       joinHighlights(p.element);
-      if (turnOn && p.element.id === "prompt") { lastPromptWord = Number(p.words[p.words.length - 1].dataset.word); }
+      if (!removing && p.element.id === "prompt") { lastPromptWord = Number(p.words[p.words.length - 1].dataset.word); }
     });
   }
 
