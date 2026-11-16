@@ -137,7 +137,8 @@ Exactly 4 choices (A–D) and exactly one correct answer. She gets instant feedb
 ```
 - Blanks are written as **four or more underscores** (`____`). `fullText` is the exact same text with nothing blanked; everything outside the blanks must match it character for character, so the app can bold the missing words when she taps **Show answer**. Don't put two blanks right next to each other, and don't use `**` in either field.
 - Blank the legally significant words (required elements, periods/deadlines, standards, who may file, where), not random words.
-- She rates herself **0%, 25%, 50%, 75% or 100%** (how many blanks she got). Below 100% goes into Review missed; per subject, the app keeps the number rated (`fbRated`) and the sum of her percentages (`fbPercentTotal`), and shows the average.
+- **How it's practiced:** she first picks how much is filled in for her: **0%, 25%, 50% or 75%** (difficulty, not a score). That share of the blanks (rounded down, picked at random, always leaving at least one empty) is shown filled in; the rest stay blank. **Show answer** reveals the full text with every blanked word bold and underlined. She then rates **Got it / Missed it**: Missed it goes into Review missed; per subject the app keeps `fbCorrect` of `fbAnswered` ("X of Y correct"). The level picked doesn't affect the score.
+- Each blank stays one "word" for highlighting whether it's shown filled in or not, so her highlights don't move between levels. Changing an item's `prompt` (which words are blanked) can still shift them.
 - The Question type picker on the subject screen has **Essay questions / Multiple choice / Fill in the blank / All**.
 
 ## Adding a new case (default procedure)

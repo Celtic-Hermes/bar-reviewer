@@ -75,8 +75,8 @@ function rememberSpot() {
       mcqCorrect: session.mcqCorrect,
       mcqTotal: session.mcqTotal,
       ratings: session.ratings,
-      fbCount: session.fbCount,      // fill-in-the-blank: how many rated this round
-      fbTotal: session.fbTotal,      // ...and the sum of her % ratings
+      fbAnswered: session.fbAnswered,  // fill-in-the-blank: how many rated this round
+      fbCorrect: session.fbCorrect,    // ...and how many of those were "Got it"
       current: session.current,  // what she's done on this question: her pick, or answer shown, rating, checked key points
       practiceCaseId: practiceCase ? practiceCase.id : null
     };
@@ -178,8 +178,8 @@ function putBackRound(round) {
       "Partly": wholeNumberOrZero(ratings["Partly"]),
       "Missed it": wholeNumberOrZero(ratings["Missed it"])
     },
-    fbCount: wholeNumberOrZero(round.fbCount),
-    fbTotal: wholeNumberOrZero(round.fbTotal)
+    fbAnswered: wholeNumberOrZero(round.fbAnswered),
+    fbCorrect: wholeNumberOrZero(round.fbCorrect)
   };
   showQuestion();
   putBackCurrent(round.current);
@@ -191,13 +191,17 @@ function putBackCurrent(saved) {
   if (!isPlainObject(saved)) { return; }
   const question = session.questions[session.index];
   if (question.type === "fillblank") {
-    if (saved.answerShown) {
-      session.current.answerShown = true;
-      revealFillBlank();
-    }
-    if (FB_PERCENTS.indexOf(saved.fbPercent) !== -1) {
-      session.current.fbPercent = saved.fbPercent;
-      showFbRated(saved.fbPercent);
+    if (FB_LEVELS.indexOf(saved.fbLevel) !== -1) {
+      // The same level, and the same blanks filled in for her, as before the reload.
+      applyFbLevel(question, saved.fbLevel, Array.isArray(saved.fbShown) ? saved.fbShown : []);
+      if (saved.answerShown) {
+        session.current.answerShown = true;
+        revealFillBlank();
+      }
+      if (FB_RATINGS.indexOf(saved.fbRating) !== -1) {
+        session.current.fbRating = saved.fbRating;
+        showFbRated(saved.fbRating);
+      }
     }
   } else if (question.type === "mcq") {
     if (["A", "B", "C", "D"].indexOf(saved.picked) !== -1) {
@@ -593,10 +597,10 @@ function showSubjectStats(subject) {
   document.getElementById("stats-mcq").textContent = stats.mcqAnswered === 0
     ? "Not tried yet"
     : stats.mcqCorrect + " of " + stats.mcqAnswered + " correct";
-  const fbRated = wholeNumberOrZero(stats.fbRated);
-  document.getElementById("stats-fb").textContent = fbRated === 0
+  const fbAnswered = wholeNumberOrZero(stats.fbAnswered);
+  document.getElementById("stats-fb").textContent = fbAnswered === 0
     ? "Not tried yet"
-    : "Average " + Math.round(wholeNumberOrZero(stats.fbPercentTotal) / fbRated) + "% over " + fbRated;
+    : wholeNumberOrZero(stats.fbCorrect) + " of " + fbAnswered + " correct";
   document.getElementById("stats-essay").textContent =
     (stats.got + stats.partly + stats.missed) === 0
       ? "Not tried yet"
@@ -660,8 +664,8 @@ function startPractice() {
     mcqCorrect: 0,
     mcqTotal: 0,
     ratings: { "Got it": 0, "Partly": 0, "Missed it": 0 },
-    fbCount: 0,
-    fbTotal: 0
+    fbAnswered: 0,
+    fbCorrect: 0
   };
   showQuestion();
 }
@@ -681,6 +685,9 @@ function showQuestion() {
   document.getElementById("subject").textContent = question.subject;
   document.getElementById("topic").textContent = [question.topic, subtopicOf(question)].filter(Boolean).join(" · ");
   setHighlightableText(document.getElementById("prompt"), question.prompt, question.id);
+  document.getElementById("prompt").hidden = false;
+  document.getElementById("fb-level").hidden = true;
+  document.getElementById("fb-level-note").hidden = true;
   // Anything not marked "verified" (including a missing status) shows the draft label.
   document.getElementById("draft-badge").hidden = (question.status === "verified");
   showBookmark(question);
@@ -813,14 +820,20 @@ function showPicked(question, picked) {
 
 // --- Fill in the blank ---
 // Content: "prompt" has blanks written as ____ (four or more underscores), and
-// "fullText" is the same text with nothing blanked out. She tries to recall the missing
-// words, taps "Show answer" to see the full text (the words that were blanked out are
-// bold and underlined), then rates how many blanks she got: 0, 25, 50, 75 or 100%.
-const FB_PERCENTS = [0, 25, 50, 75, 100];
+// "fullText" is the same text with nothing blanked out.
+// 1. She picks how much is filled in for her: 0% (every blank empty, hardest), 25%,
+//    50% or 75% (most blanks filled in, easiest). The text appears once she picks.
+//    That share of the blanks, picked at random, is shown filled in (lighter, dotted
+//    underline); at least one blank always stays empty.
+// 2. She recalls the rest, then taps "Show answer": the full text, with every word that
+//    was blanked out in bold and underlined.
+// 3. She rates herself Got it / Missed it. That decides Review missed and her score.
+const FB_LEVELS = [0, 25, 50, 75];
+const FB_RATINGS = ["Got it", "Missed it"];
 const BLANK = /_{4,}/;
 
 function showFillBlank(question) {
-  // Make the blanks in the question stand out (they're ordinary words for highlighting).
+  // Make the blanks in the question stand out (each blank is one word for highlighting).
   document.querySelectorAll("#prompt .hl-word").forEach(function (word) {
     if (BLANK.test(word.textContent)) { word.classList.add("fb-blank"); }
   });
@@ -828,25 +841,26 @@ function showFillBlank(question) {
   setRichText(document.getElementById("fb-full"),
     full ? withAnswersMarked(question.prompt, full) : "The full text for this item hasn't been added yet.");
 
-  // Start fresh: answer hidden, no rating chosen.
+  // Start: only the level choice. The text, "Show answer" and the answer stay hidden.
+  document.getElementById("prompt").hidden = true;
+  document.getElementById("fb-level").hidden = false;
+  document.getElementById("fb-show").hidden = true;
   document.getElementById("fb-answer-area").hidden = true;
-  document.getElementById("fb-show").hidden = false;
   document.getElementById("fb-result").hidden = true;
-  document.querySelectorAll(".btn-fb").forEach(function (b) {
+  document.querySelectorAll(".btn-fbrate").forEach(function (b) {
     b.classList.remove("selected");
     b.disabled = false;
   });
 }
 
-// The full text with the words that filled each blank wrapped in **…** (shown bold).
-// It lines up the text around each blank with the full text. If anything doesn't line
-// up (or the text already uses **), it just gives back the full text unmarked.
-function withAnswersMarked(prompt, full) {
-  if (typeof prompt !== "string" || full.indexOf("**") !== -1 || prompt.indexOf("**") !== -1) { return full; }
+// What each blank stands for, in order, from lining up the text around the blanks with
+// the full text. Gives back null if anything doesn't line up.
+function blankAnswers(prompt, full) {
+  if (typeof prompt !== "string" || typeof full !== "string") { return null; }
   const pieces = prompt.split(/_{4,}/);
-  if (pieces.length < 2 || full.indexOf(pieces[0]) !== 0) { return full; }
+  if (pieces.length < 2 || full.indexOf(pieces[0]) !== 0) { return null; }
+  const answers = [];
   let at = pieces[0].length;
-  let marked = pieces[0];
   for (let i = 1; i < pieces.length; i++) {
     const piece = pieces[i];
     const isLast = i === pieces.length - 1;
@@ -854,20 +868,78 @@ function withAnswersMarked(prompt, full) {
     if (isLast && piece === "") {
       end = full.length;              // the text ends with a blank
     } else if (piece === "") {
-      return full;                    // two blanks in a row: can't tell where one ends
+      return null;                    // two blanks in a row: can't tell where one ends
     } else {
       end = isLast ? full.length - piece.length : full.indexOf(piece, at + 1);
-      if (end <= at || full.slice(end, end + piece.length) !== piece) { return full; }
+      if (end <= at || full.slice(end, end + piece.length) !== piece) { return null; }
     }
     const answer = full.slice(at, end);
-    if (!answer.trim()) { return full; }
-    marked += "**" + answer + "**" + piece;
+    if (!answer.trim()) { return null; }
+    answers.push(answer);
     at = end + piece.length;
   }
-  return at === full.length ? marked : full;
+  return at === full.length ? answers : null;
 }
 
-// "Show answer" reveals the full text and the rating buttons.
+// The full text with the words that filled each blank wrapped in **…** (shown bold).
+// If anything doesn't line up (or the text already uses **), the full text unmarked.
+function withAnswersMarked(prompt, full) {
+  if (full.indexOf("**") !== -1 || (typeof prompt === "string" && prompt.indexOf("**") !== -1)) { return full; }
+  const answers = blankAnswers(prompt, full);
+  if (!answers) { return full; }
+  const pieces = prompt.split(/_{4,}/);
+  let marked = pieces[0];
+  answers.forEach(function (answer, i) { marked += "**" + answer + "**" + pieces[i + 1]; });
+  return marked;
+}
+
+// Which blanks to show filled in at a level: that share of them (rounded down), picked
+// at random, always leaving at least one empty. Gives back their numbers (0 = first).
+function pickShownBlanks(count, level) {
+  const howMany = Math.min(count - 1, Math.floor(count * level / 100));
+  const order = shuffled(Array.from({ length: count }, function (_, i) { return i; }));
+  return order.slice(0, Math.max(0, howMany)).sort(function (a, b) { return a - b; });
+}
+
+// Show the text at the picked level, with the blanks numbered in "shown" filled in.
+// Each blank stays one word (filled in or not), so her highlights stay on the same words.
+function applyFbLevel(question, level, shown) {
+  const answers = blankAnswers(question.prompt, question.fullText);
+  const blanks = document.querySelectorAll("#prompt .fb-blank");
+  const canFill = answers && answers.length === blanks.length;
+  const filled = [];
+  if (canFill) {
+    shown.forEach(function (n) {
+      if (typeof n !== "number" || !blanks[n] || filled.indexOf(n) !== -1) { return; }
+      blanks[n].textContent = blanks[n].textContent.replace(BLANK, answers[n]);
+      blanks[n].classList.remove("fb-blank");
+      blanks[n].classList.add("fb-given");
+      filled.push(n);
+    });
+  }
+  session.current.fbLevel = level;
+  session.current.fbShown = filled;
+  const total = blanks.length;
+  document.getElementById("prompt").hidden = false;
+  document.getElementById("fb-level").hidden = true;
+  const note = document.getElementById("fb-level-note");
+  note.textContent = level + "% filled in for you: " + (total - filled.length) + " of " + total +
+    (total === 1 ? " blank" : " blanks") + " to fill.";
+  note.hidden = false;
+  document.getElementById("fb-show").hidden = false;
+}
+
+document.querySelectorAll(".btn-fb-level").forEach(function (button) {
+  button.addEventListener("click", function () {
+    const question = session.questions[session.index];
+    const level = Number(button.dataset.level);
+    const count = document.querySelectorAll("#prompt .fb-blank").length;
+    applyFbLevel(question, level, pickShownBlanks(count, level));
+    rememberSpot();
+  });
+});
+
+// "Show answer" reveals the full text and the Got it / Missed it buttons.
 function revealFillBlank() {
   document.getElementById("fb-answer-area").hidden = false;
   document.getElementById("fb-show").hidden = true;
@@ -880,27 +952,27 @@ document.getElementById("fb-show").addEventListener("click", function () {
   rememberSpot();
 });
 
-// Rating buttons: she picks one, it's counted once, then "Next" appears.
-document.querySelectorAll(".btn-fb").forEach(function (button) {
+// Got it / Missed it: counted once, then "Next" appears.
+document.querySelectorAll(".btn-fbrate").forEach(function (button) {
   button.addEventListener("click", function () {
-    const percent = Number(button.dataset.percent);
-    session.fbCount += 1;
-    session.fbTotal += percent;
-    recordFillBlank(session.questions[session.index], percent);  // save on the phone
-    session.current.fbPercent = percent;
-    showFbRated(percent);
+    const rating = button.dataset.rating;
+    session.fbAnswered += 1;
+    if (rating === "Got it") { session.fbCorrect += 1; }
+    recordFillBlank(session.questions[session.index], rating);  // save on the phone
+    session.current.fbRating = rating;
+    showFbRated(rating);
     rememberSpot();
   });
 });
 
 // Show a chosen rating (also used to put her rating back after a reload).
-function showFbRated(percent) {
-  document.querySelectorAll(".btn-fb").forEach(function (b) {
+function showFbRated(rating) {
+  document.querySelectorAll(".btn-fbrate").forEach(function (b) {
     b.disabled = true;
-    b.classList.toggle("selected", Number(b.dataset.percent) === percent);
+    b.classList.toggle("selected", b.dataset.rating === rating);
   });
   const result = document.getElementById("fb-result");
-  result.textContent = "You rated this: " + percent + "%" + (percent < 100 ? " (added to Review missed)" : "");
+  result.textContent = "You rated this: " + rating + (rating === "Missed it" ? " (added to Review missed)" : "");
   result.hidden = false;
   document.getElementById("next-btn").hidden = false;
 }
@@ -1032,12 +1104,8 @@ function showResults() {
   document.getElementById("results-mcq").hidden = (session.mcqTotal === 0);
   document.getElementById("results-mcq-score").textContent = session.mcqCorrect + " of " + session.mcqTotal;
 
-  document.getElementById("results-fb").hidden = (session.fbCount === 0);
-  if (session.fbCount > 0) {
-    document.getElementById("results-fb-score").textContent = Math.round(session.fbTotal / session.fbCount) + "%";
-    document.getElementById("results-fb-count").textContent =
-      "average of your ratings, " + session.fbCount + (session.fbCount === 1 ? " item" : " items");
-  }
+  document.getElementById("results-fb").hidden = (session.fbAnswered === 0);
+  document.getElementById("results-fb-score").textContent = session.fbCorrect + " of " + session.fbAnswered;
 
   document.getElementById("results-essay").hidden = (essayCount === 0);
   document.getElementById("results-got").textContent = session.ratings["Got it"];

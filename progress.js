@@ -3,7 +3,7 @@
 //
 // What's saved:
 //   subjects:  running totals per subject (multiple-choice right/answered, essay ratings,
-//              fill-in-the-blank: how many rated and the sum of her % ratings)
+//              fill-in-the-blank: how many "Got it" out of how many rated)
 //   review:    questions to look at again, by ID (a wrong pick, or an essay rated Partly / Missed it)
 //   bookmarks: questions she bookmarked, by ID
 //   highlights: words she highlighted, as a list of word positions (0 = first word).
@@ -33,7 +33,7 @@ function loadProgress() {
     const data = JSON.parse(raw);
     if (!data || typeof data !== "object") { return emptyProgress(); }
     return {
-      subjects: followMovedSubjects(data.subjects || {}),
+      subjects: dropOldFillBlankTotals(followMovedSubjects(data.subjects || {})),
       review: data.review || {},
       bookmarks: data.bookmarks || {},
       highlights: cleanHighlights(data.highlights),
@@ -62,11 +62,25 @@ function followMovedSubjects(subjects) {
     subjectsWereMoved = true;
     const newName = MOVED_SUBJECTS[oldName];
     const into = subjects[newName] || {};
-    ["mcqCorrect", "mcqAnswered", "got", "partly", "missed", "fbRated", "fbPercentTotal"].forEach(function (field) {
+    ["mcqCorrect", "mcqAnswered", "got", "partly", "missed", "fbCorrect", "fbAnswered"].forEach(function (field) {
       into[field] = wholeNumberOrZero(into[field]) + wholeNumberOrZero(old[field]);
     });
     subjects[newName] = into;
     delete subjects[oldName];
+  });
+  return subjects;
+}
+
+// The first fill-in-the-blank design saved % self-ratings (fbRated, fbPercentTotal).
+// Those measured something else, so they're dropped; the score now counts Got it / Missed it.
+function dropOldFillBlankTotals(subjects) {
+  Object.keys(subjects).forEach(function (name) {
+    const s = subjects[name];
+    if (s && typeof s === "object" && ("fbRated" in s || "fbPercentTotal" in s)) {
+      delete s.fbRated;
+      delete s.fbPercentTotal;
+      subjectsWereMoved = true;  // (reuses the "save once after loading" flag)
+    }
   });
   return subjects;
 }
@@ -88,7 +102,7 @@ function saveProgress() {
 // Totals for one subject, created the first time they're needed.
 function subjectStats(subject) {
   if (!progress.subjects[subject]) {
-    progress.subjects[subject] = { mcqCorrect: 0, mcqAnswered: 0, got: 0, partly: 0, missed: 0, fbRated: 0, fbPercentTotal: 0 };
+    progress.subjects[subject] = { mcqCorrect: 0, mcqAnswered: 0, got: 0, partly: 0, missed: 0, fbCorrect: 0, fbAnswered: 0 };
   }
   return progress.subjects[subject];
 }
@@ -107,17 +121,18 @@ function recordMcq(question, isRight) {
 }
 
 // An essay self-rating: count it, and add it to (or take it off) the review list.
-// A fill-in-the-blank self-rating: 0, 25, 50, 75 or 100 (% of the blanks she got).
-// Running totals per subject: how many she rated, and the sum of the percentages
-// (so the average is fbPercentTotal / fbRated). Below 100% goes into her review list.
-function recordFillBlank(question, percent) {
+// A fill-in-the-blank rating: "Got it" or "Missed it" (after "Show answer").
+// Per subject: how many she rated (fbAnswered) and how many were "Got it" (fbCorrect).
+// "Missed it" puts the item in her review list; "Got it" takes it off.
+// (The level she picked, how much was filled in for her, isn't part of the score.)
+function recordFillBlank(question, rating) {
   const stats = subjectStats(question.subject);
-  stats.fbRated = wholeNumberOrZero(stats.fbRated) + 1;
-  stats.fbPercentTotal = wholeNumberOrZero(stats.fbPercentTotal) + percent;
-  if (percent === 100) {
+  stats.fbAnswered = wholeNumberOrZero(stats.fbAnswered) + 1;
+  if (rating === "Got it") {
+    stats.fbCorrect = wholeNumberOrZero(stats.fbCorrect) + 1;
     delete progress.review[question.id];
   } else {
-    progress.review[question.id] = percent + "%";
+    progress.review[question.id] = rating;
   }
   saveProgress();
 }
@@ -339,8 +354,8 @@ function readBackup(text) {
       got: wholeNumberOrZero(s.got),
       partly: wholeNumberOrZero(s.partly),
       missed: wholeNumberOrZero(s.missed),
-      fbRated: wholeNumberOrZero(s.fbRated),            // older backups have none: 0
-      fbPercentTotal: wholeNumberOrZero(s.fbPercentTotal)
+      fbCorrect: wholeNumberOrZero(s.fbCorrect),    // older backups have none: 0
+      fbAnswered: wholeNumberOrZero(s.fbAnswered)
     };
   });
   Object.keys(p.review).forEach(function (id) {

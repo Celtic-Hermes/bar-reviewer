@@ -224,14 +224,25 @@ body {
 
 .rating { margin-top: 8px; }
 .rating-buttons { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
-/* Fill in the blank: five % buttons in one row, in the app's main color. */
-.fb-ratings { grid-template-columns: repeat(5, 1fr); gap: 6px; }
-/* (Their own class, not .btn-rate: the essay rating buttons' code listens to .btn-rate.) */
-.btn-fb { background: var(--card); padding: 12px 2px; border-color: var(--primary); color: var(--primary); }
-.btn-fb.selected { background: var(--primary); color: var(--primary-text); }
-.btn-fb:disabled { cursor: default; }
-.btn-fb:disabled:not(.selected) { opacity: 0.45; }
-.btn-fb.selected:disabled { opacity: 1; }
+/* Fill in the blank: first, how much is filled in for her (4 buttons in a row). */
+.fb-level { margin-top: 4px; }
+.fb-level-title { margin: 0 0 10px; font-weight: 600; }
+.fb-level-buttons { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.btn-fb-level { background: var(--card); padding: 12px 4px; border-color: var(--primary); color: var(--primary); }
+.fb-level-note { margin: 12px 0 0; font-size: 14px; color: var(--muted); }
+/* Blanks already filled in for her: lighter, with a dotted underline. */
+.fb-given { color: var(--muted); text-decoration: underline dotted; text-underline-offset: 3px; }
+/* After "Show answer": Got it / Missed it, styled like the essay buttons.
+   (Their own class, not .btn-rate: the essay rating buttons' code listens to .btn-rate.) */
+.fb-ratings { grid-template-columns: repeat(2, 1fr); }
+.btn-fbrate { background: var(--card); padding: 12px 6px; }
+.btn-fbrate.got { border-color: var(--got); color: var(--got); }
+.btn-fbrate.missed { border-color: var(--missed); color: var(--missed); }
+.btn-fbrate.got.selected { background: var(--got); color: var(--card); }
+.btn-fbrate.missed.selected { background: var(--missed); color: var(--card); }
+.btn-fbrate:disabled { cursor: default; }
+.btn-fbrate:disabled:not(.selected) { opacity: 0.45; }
+.btn-fbrate.selected:disabled { opacity: 1; }
 /* The blanks in the question (written as ____ in the content). */
 .fb-blank { color: var(--primary); font-weight: 700; }
 /* In the revealed full text, the words that were blanked out. */
