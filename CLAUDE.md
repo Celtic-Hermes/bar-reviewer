@@ -45,7 +45,8 @@ The builder is not a lawyer and does not write questions. Claude writes them, so
 Administrative cases use their A.C. number in the `grNumber` field (e.g. `"A.C. No. 9514"`).
 Content lives in JSON files, separate from the app code:
 - `data/questions.json`: a list of questions
-- `data/cases.json`: a list of cases
+- `data/cases.json`: a list of cases (summaries only)
+- `data/case-texts/case-0001.txt` …: the full text of each decision, one plain-text file per case, named by case ID. Loaded only when she taps "Read the full text", then saved on her phone for offline use. Copied from the case's `sourceUrl` (LawPhil), with LawPhil's hidden watermarks (like "1awphi1") removed and nothing else changed. Separate opinions are not included.
 
 **IDs never change once created** (like `q-0001`, `case-0001`). The app saves her progress by ID, so changing an ID would lose her history for that question.
 
@@ -145,7 +146,7 @@ These rules matter more than speed.
 - **Plain HTML, CSS, and JavaScript.** No frameworks or build steps unless there's a clear reason, explained first. This keeps things simple to run and fix.
 - **Phone first**, especially iPhone Safari. It should still work on a computer.
 - **Works offline** after the first visit (using a "service worker", a small script that saves the app's files on the phone).
-  - **Cache version rule:** whenever any app file changes (`index.html`, `style.css`, `app.js`, `progress.js`, `manifest.webmanifest`, icons), or a file is added to or removed from the `APP_FILES` list, bump `CACHE_VERSION` in `sw.js` (v1 → v2 …) in the same commit, and tell the builder it was bumped. Editing only `data/questions.json` or `data/cases.json` does not need a bump: they are fetched fresh whenever she's online.
+  - **Cache version rule:** whenever any app file changes (`index.html`, `style.css`, `app.js`, `progress.js`, `manifest.webmanifest`, icons), or a file is added to or removed from the `APP_FILES` list, bump `CACHE_VERSION` in `sw.js` (v1 → v2 …) in the same commit, and tell the builder it was bumped. Editing only `data/questions.json`, `data/cases.json`, or files in `data/case-texts/` does not need a bump: they are fetched fresh whenever she's online.
   - Every new app file must be added to `APP_FILES` in `sw.js`, or it won't work offline.
   - Use relative paths only (no leading `/`), so the app works at `username.github.io/bar-reviewer/`.
 - **Hosting:** GitHub Pages (free). It gives one web link to open on her iPhone and add to the home screen.

@@ -511,6 +511,18 @@ body {
 .source-link { color: var(--primary); font-weight: 600; overflow-wrap: anywhere; }
 .source-note { display: block; margin-top: 6px; font-size: 14px; color: var(--muted); overflow-wrap: anywhere; }
 
+/* "Full text of the decision" (loaded only when she taps the button) */
+#full-text-btn { margin-bottom: 0; }
+.full-text-note { margin: 12px 0 0; font-size: 15px; color: var(--muted); white-space: pre-line; }
+.full-text {
+  margin-top: 16px;
+  white-space: pre-wrap;      /* keep the decision's paragraphs */
+  overflow-wrap: anywhere;    /* long web addresses wrap instead of widening the page */
+  font-size: 16px;
+  line-height: 1.6;
+}
+.full-text-credit { margin: 16px 0 0; font-size: 14px; color: var(--muted); }
+
 /* "Read the case" buttons under a question */
 .question-cases { margin-top: 8px; }
 .question-cases .btn { margin-bottom: 10px; }

@@ -1100,9 +1100,88 @@ function openCase(theCase, cameFrom) {
     source.textContent = url || "Not available yet.";
   }
 
+  resetFullText();
   showCaseQuestions(theCase);
   showScreen("screen-case");
 }
+
+// ---------- Full text of the decision ----------
+// Each case's full text is its own file: data/case-texts/case-0001.txt, and so on.
+// It's only downloaded when she taps "Read the full text", never when the case opens,
+// so cases she never reads take no space or loading time. Once read, the phone keeps
+// a copy (see sw.js), so that case's full text also works offline.
+let fullTextShown = false;
+
+function resetFullText() {
+  fullTextShown = false;
+  const button = document.getElementById("full-text-btn");
+  button.textContent = "Read the full text";
+  button.disabled = false;
+  document.getElementById("full-text-note").hidden = true;
+  const box = document.getElementById("full-text");
+  box.hidden = true;
+  box.textContent = "";
+}
+
+function showFullTextNote(text) {
+  const note = document.getElementById("full-text-note");
+  note.textContent = text;
+  note.hidden = false;
+}
+
+document.getElementById("full-text-btn").addEventListener("click", function () {
+  const button = document.getElementById("full-text-btn");
+  const box = document.getElementById("full-text");
+
+  // Already showing: this button hides it again.
+  if (fullTextShown) {
+    resetFullText();
+    return;
+  }
+
+  const theCase = currentCase;
+  // Only IDs like "case-0001" are used to build the file name (bad content can't point elsewhere).
+  if (!theCase || typeof theCase.id !== "string" || !/^case-\d+$/.test(theCase.id)) {
+    showFullTextNote("The full text for this case hasn't been added yet.");
+    return;
+  }
+
+  button.disabled = true;
+  button.textContent = "Loading…";
+  document.getElementById("full-text-note").hidden = true;
+
+  fetch("data/case-texts/" + theCase.id + ".txt")
+    .then(function (response) {
+      if (response.status === 404) { throw new Error("missing"); }
+      if (!response.ok) { throw new Error("status " + response.status); }
+      return response.text();
+    })
+    .then(function (text) {
+      if (currentCase !== theCase) { return; }  // she already opened a different case
+      if (!text.trim()) { throw new Error("missing"); }
+      box.textContent = text;  // plain text only: nothing in the file can run as code
+      const credit = document.createElement("p");
+      credit.className = "full-text-credit";
+      credit.textContent = "Text from The LawPhil Project, Arellano Law Foundation (see Source below).";
+      box.appendChild(credit);
+      box.hidden = false;
+      fullTextShown = true;
+      button.disabled = false;
+      button.textContent = "Hide the full text";
+    })
+    .catch(function (error) {
+      if (currentCase !== theCase) { return; }
+      button.disabled = false;
+      button.textContent = "Read the full text";
+      if (error.message === "missing") {
+        showFullTextNote("The full text for this case hasn't been added yet.");
+      } else if (navigator.onLine === false || error instanceof TypeError) {
+        showFullTextNote("Couldn't load the full text. You may be offline, and this case's full text hasn't been opened on this phone before.\nConnect to the internet and tap again. After that, it will work offline too.");
+      } else {
+        showFullTextNote("Couldn't load the full text right now. Please try again in a moment.");
+      }
+    });
+});
 
 // "Questions linked to this case": tap one to practice it.
 function showCaseQuestions(theCase) {

@@ -5,10 +5,11 @@
 // Change CACHE_VERSION (v1 → v2 → v3 …) whenever you change any APP file:
 //   index.html, style.css, app.js, progress.js, manifest.webmanifest, or the icons,
 //   or when you add or remove a file in the APP_FILES list below.
-// You do NOT need to change it when you only edit data/questions.json or data/cases.json.
-// Questions and cases are always fetched fresh when she's online.
+// You do NOT need to change it when you only edit data/questions.json or data/cases.json,
+// or add/edit files in data/case-texts/.
+// Questions, cases and case texts are always fetched fresh when she's online.
 // =====================================================================
-const CACHE_VERSION = "v18";
+const CACHE_VERSION = "v19";
 const CACHE_NAME = "bar-reviewer-" + CACHE_VERSION;
 
 // Every file the app needs, written relative to this file so it works
@@ -26,6 +27,11 @@ const APP_FILES = [
   "data/questions.json",
   "data/cases.json"
 ];
+
+// Full texts of decisions (data/case-texts/case-0001.txt …) are NOT in APP_FILES:
+// each one is saved on the phone only after she opens it. They live in their own
+// cache that is kept when CACHE_VERSION changes, so an app update doesn't erase them.
+const CASE_TEXT_CACHE = "bar-reviewer-case-texts";
 
 // Content files: always try for the newest copy first.
 const DATA_FILES = ["data/questions.json", "data/cases.json"];
@@ -48,7 +54,7 @@ self.addEventListener("activate", function (event) {
   event.waitUntil(
     caches.keys().then(function (names) {
       return Promise.all(names.map(function (name) {
-        if (name.startsWith("bar-reviewer-") && name !== CACHE_NAME) {
+        if (name.startsWith("bar-reviewer-") && name !== CACHE_NAME && name !== CASE_TEXT_CACHE) {
           return caches.delete(name);
         }
       }));
@@ -64,6 +70,27 @@ self.addEventListener("fetch", function (event) {
   if (request.method !== "GET") { return; }
   const url = new URL(request.url);
   if (url.origin !== self.location.origin) { return; }
+
+  // A case's full text: try the internet first (newest copy) and save it on the phone.
+  // Offline: use the saved copy if she has opened this case's full text before.
+  if (url.pathname.indexOf("/data/case-texts/") !== -1) {
+    event.respondWith(
+      fetch(request, { cache: "no-cache" }).then(function (response) {
+        if (response.ok) {
+          const copy = response.clone();
+          caches.open(CASE_TEXT_CACHE).then(function (cache) { cache.put(request, copy); });
+        }
+        return response;
+      }).catch(function () {
+        return caches.open(CASE_TEXT_CACHE).then(function (cache) {
+          return cache.match(request);
+        }).then(function (saved) {
+          return saved || Response.error();  // not saved: the app shows "you may be offline"
+        });
+      })
+    );
+    return;
+  }
 
   // Questions and cases: try the internet first (to get the newest content),
   // and use the saved copy if she's offline.
