@@ -273,16 +273,26 @@ function searchCases(caseIds, phraseText, excerpt) {
 }
 
 // ---------- The panel ----------
-function caseLabel(caseId, source) {
+// The case line at the top of the panel: the case name in bold, then its G.R. number.
+function showCaseLabel(caseId, source) {
   const theCase = caseId ? findCase(caseId) : null;
   const name = theCase ? theCase.name : (source && source.caseTitle);
   const number = theCase ? theCase.grNumber : (source && source.grNumber);
-  return [name, number].filter(Boolean).join(" · ");
+  const line = document.getElementById("find-case");
+  line.textContent = "";
+  if (!name && !number) { line.textContent = "Source not recorded"; return; }
+  if (name) {
+    const title = document.createElement("span");
+    title.className = "case-title";
+    title.textContent = name;
+    line.appendChild(title);
+  }
+  if (number) { line.append((name ? " · " : "") + number); }
 }
 
 function showMatch(found) {
   document.getElementById("find-title").textContent = "Found in the full text";
-  document.getElementById("find-case").textContent = caseLabel(found.caseId);
+  showCaseLabel(found.caseId);
   const note = document.getElementById("find-note");
   note.hidden = found.count < 2;
   note.textContent = "Appears " + found.count + " times. Showing the one nearest this question's source passage.";
@@ -305,7 +315,7 @@ function addPiece(parent, text, className) {
 function showClosest(question, reason, sourceText) {
   const source = question.source || {};
   document.getElementById("find-title").textContent = "Closest sourced passage";
-  document.getElementById("find-case").textContent = caseLabel(null, source) || "Source not recorded";
+  showCaseLabel(null, source);
   const note = document.getElementById("find-note");
   note.textContent = reason;
   note.hidden = false;

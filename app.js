@@ -500,6 +500,7 @@ function showSubjectCases(subject) {
     const name = document.createElement("span");
     name.className = "subject-name";
     name.textContent = theCase.name || "Untitled case";
+    card.classList.add("case-card");  // case name shown in bold (style.css)
     const detail = document.createElement("span");
     detail.className = "card-detail";
     detail.textContent = [theCase.grNumber, theCase.year, theCase.status === "verified" ? "" : "Draft"]
@@ -850,7 +851,15 @@ function showQuestionCases(question) {
     if (!theCase) { return; }  // a link to a case that isn't in cases.json: just skip it
     const button = document.createElement("button");
     button.className = "btn btn-secondary";
-    button.textContent = ids.length === 1 ? "Read the case" : "Read the case: " + (theCase.name || "Untitled case");
+    if (ids.length === 1) {
+      button.textContent = "Read the case";
+    } else {
+      // "Read the case: <name>", with the case name in bold.
+      const title = document.createElement("span");
+      title.className = "case-title";
+      title.textContent = theCase.name || "Untitled case";
+      button.append("Read the case: ", title);
+    }
     button.addEventListener("click", function () { openCase(theCase, "question"); });
     box.appendChild(button);
   });
