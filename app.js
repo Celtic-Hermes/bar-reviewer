@@ -260,7 +260,7 @@ function showQuestion() {
     "Question " + (session.index + 1) + " of " + session.questions.length;
   document.getElementById("subject").textContent = question.subject;
   document.getElementById("topic").textContent = question.topic;
-  document.getElementById("prompt").textContent = question.prompt;
+  setRichText(document.getElementById("prompt"), question.prompt);
   // Anything not marked "verified" (including a missing status) shows the draft label.
   document.getElementById("draft-badge").hidden = (question.status === "verified");
   showBookmark(question);
@@ -313,7 +313,7 @@ function showMcq(question) {
     badge.textContent = letter;
     const text = document.createElement("span");
     text.className = "choice-text";
-    text.textContent = question.choices[letter];
+    setRichText(text, question.choices[letter]);
     button.append(badge, text);
     button.addEventListener("click", function () { pickChoice(question, letter); });
     container.appendChild(button);
@@ -344,17 +344,17 @@ function pickChoice(question, picked) {
     ? "Correct!"
     : "Not quite. The correct answer is " + question.correct + ".";
   result.className = "feedback-title " + (isRight ? "got-text" : "missed-text");
-  document.getElementById("mcq-explanation").textContent = question.explanation;
+  setRichText(document.getElementById("mcq-explanation"), question.explanation);
   document.getElementById("mcq-feedback").hidden = false;
   document.getElementById("next-btn").hidden = false;
 }
 
 // --- Essay ---
 function showEssay(question) {
-  document.getElementById("alac-answer").textContent = question.suggestedAnswer.answer;
-  document.getElementById("alac-basis").textContent = question.suggestedAnswer.legalBasis;
-  document.getElementById("alac-application").textContent = question.suggestedAnswer.application;
-  document.getElementById("alac-conclusion").textContent = question.suggestedAnswer.conclusion;
+  setRichText(document.getElementById("alac-answer"), question.suggestedAnswer.answer);
+  setRichText(document.getElementById("alac-basis"), question.suggestedAnswer.legalBasis);
+  setRichText(document.getElementById("alac-application"), question.suggestedAnswer.application);
+  setRichText(document.getElementById("alac-conclusion"), question.suggestedAnswer.conclusion);
 
   // Make a checkbox for each key point (clearing any from last time).
   const list = document.getElementById("key-points");
@@ -365,7 +365,7 @@ function showEssay(question) {
     const box = document.createElement("input");
     box.type = "checkbox";
     label.appendChild(box);
-    label.appendChild(document.createTextNode(point));
+    label.appendChild(richText(point));
     item.appendChild(label);
     list.appendChild(item);
   });
@@ -465,6 +465,42 @@ function findCase(caseId) {
 let caseCameFrom = null;       // "question" or "subject"
 let questionScrollSpot = 0;    // where she was on the question screen
 
+// ---------- Bold text in content ----------
+// Lets content in the JSON files use **two stars** around words to make them bold.
+// SAFETY: this never uses innerHTML. Every piece of text is added as plain text,
+// and the only tag ever created is <strong>. So if the JSON contains something
+// like <script> or <b>, it shows up on screen as those characters and never runs.
+function richText(value) {
+  const text = (value === null || value === undefined) ? "" : String(value);
+  const fragment = document.createDocumentFragment();
+  const parts = text.split("**");
+  // A ** with no partner (an odd one out) is shown as-is, not treated as bold.
+  const lastPaired = (parts.length % 2 === 0) ? parts.length - 2 : parts.length - 1;
+  parts.forEach(function (part, i) {
+    if (i > lastPaired) {
+      fragment.appendChild(document.createTextNode("**" + part));
+    } else if (i % 2 === 1) {
+      const strong = document.createElement("strong");
+      strong.textContent = part;
+      fragment.appendChild(strong);
+    } else {
+      fragment.appendChild(document.createTextNode(part));
+    }
+  });
+  return fragment;
+}
+
+// Replace what's inside an element with text that may contain **bold** parts.
+function setRichText(element, value) {
+  element.textContent = "";
+  element.appendChild(richText(value));
+}
+
+// Remove the ** marks (used for short previews, where bold isn't shown).
+function plainText(value) {
+  return String(value || "").split("**").join("");
+}
+
 function caseText(value) {
   return (typeof value === "string" && value.trim()) ? value : "Not available yet.";
 }
@@ -480,10 +516,10 @@ function openCase(theCase, cameFrom) {
     [theCase.grNumber, theCase.year].filter(Boolean).join(" · ");
   // Anything not marked "verified" (including a missing status) shows the draft label.
   document.getElementById("case-draft-badge").hidden = (theCase.status === "verified");
-  document.getElementById("case-facts").textContent = caseText(theCase.facts);
-  document.getElementById("case-issue").textContent = caseText(theCase.issue);
-  document.getElementById("case-ruling").textContent = caseText(theCase.ruling);
-  document.getElementById("case-doctrine").textContent = caseText(theCase.keyDoctrine);
+  setRichText(document.getElementById("case-facts"), caseText(theCase.facts));
+  setRichText(document.getElementById("case-issue"), caseText(theCase.issue));
+  setRichText(document.getElementById("case-ruling"), caseText(theCase.ruling));
+  setRichText(document.getElementById("case-doctrine"), caseText(theCase.keyDoctrine));
 
   // Source: a tappable link if it's a web address, otherwise plain text.
   const source = document.getElementById("case-source");
@@ -520,7 +556,7 @@ function showCaseQuestions(theCase) {
     card.className = "subject-card";
     const text = document.createElement("span");
     text.className = "subject-name";
-    const prompt = String(question.prompt || "").replace(/\s+/g, " ").trim();
+    const prompt = plainText(question.prompt).replace(/\s+/g, " ").trim();
     // A short preview, cut at the end of a whole word.
     text.textContent = prompt.length > 110 ? prompt.slice(0, 110).replace(/\s+\S*$/, "") + "…" : prompt;
     const detail = document.createElement("span");
