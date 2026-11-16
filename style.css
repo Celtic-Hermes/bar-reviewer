@@ -394,6 +394,10 @@ body {
   place-items: center;
 }
 .choice-text { padding-top: 1px; }
+/* Her pick before she submits: thick blue border and a filled letter circle. */
+.choice.selected { border-color: var(--primary); }
+.choice.selected .choice-letter { background: var(--primary); border-color: var(--primary); color: var(--primary-text); }
+#submit-answer { margin-bottom: 16px; }
 .choice.right { border-color: var(--got); }
 .choice.right .choice-letter { background: var(--got); border-color: var(--got); color: var(--card); }
 .choice.wrong { border-color: var(--missed); }

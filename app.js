@@ -169,8 +169,12 @@ function putBackCurrent(saved) {
   const question = session.questions[session.index];
   if (question.type === "mcq") {
     if (["A", "B", "C", "D"].indexOf(saved.picked) !== -1) {
+      // She had already submitted this answer.
       session.current.picked = saved.picked;
       showPicked(question, saved.picked);
+    } else if (["A", "B", "C", "D"].indexOf(saved.selected) !== -1) {
+      // She had picked a choice but not submitted it yet.
+      selectChoice(saved.selected);
     }
   } else {
     if (saved.answerShown) {
@@ -461,6 +465,9 @@ function showMcq(question) {
   const container = document.getElementById("choices");
   container.innerHTML = "";
   document.getElementById("mcq-feedback").hidden = true;
+  const submit = document.getElementById("submit-answer");
+  submit.hidden = false;
+  submit.disabled = true;  // grayed out until she picks a choice
 
   ["A", "B", "C", "D"].forEach(function (letter) {
     const button = document.createElement("button");
@@ -473,12 +480,35 @@ function showMcq(question) {
     text.className = "choice-text";
     setRichText(text, question.choices[letter]);
     button.append(badge, text);
-    button.addEventListener("click", function () { pickChoice(question, letter); });
+    button.setAttribute("aria-pressed", "false");
+    button.addEventListener("click", function () {
+      selectChoice(letter);
+      rememberSpot();
+    });
     container.appendChild(button);
   });
 }
 
-function pickChoice(question, picked) {
+// Tapping a choice only selects it (she can still change her mind). Nothing is scored yet.
+function selectChoice(letter) {
+  session.current.selected = letter;
+  document.querySelectorAll(".choice").forEach(function (button) {
+    const on = button.dataset.letter === letter;
+    button.classList.toggle("selected", on);
+    button.setAttribute("aria-pressed", on ? "true" : "false");
+  });
+  document.getElementById("submit-answer").disabled = false;
+}
+
+// "Submit answer" locks in her selected choice, scores it, and shows the feedback.
+document.getElementById("submit-answer").addEventListener("click", function () {
+  const question = session.questions[session.index];
+  const picked = session.current.selected;
+  if (!picked || session.current.picked) { return; }  // nothing picked, or already submitted
+  submitChoice(question, picked);
+});
+
+function submitChoice(question, picked) {
   const isRight = picked === question.correct;
   session.mcqTotal += 1;
   if (isRight) { session.mcqCorrect += 1; }
@@ -492,8 +522,11 @@ function pickChoice(question, picked) {
 function showPicked(question, picked) {
   const isRight = picked === question.correct;
   // Lock the choices and color them: correct one green, her wrong pick red.
+  document.getElementById("submit-answer").hidden = true;
   document.querySelectorAll(".choice").forEach(function (button) {
     button.disabled = true;
+    button.classList.remove("selected");
+    button.removeAttribute("aria-pressed");
     const letter = button.dataset.letter;
     if (letter === question.correct) {
       button.classList.add("right");
