@@ -24,9 +24,14 @@ Use these exact names everywhere (data, menus, filters):
 7. Remedial Law
 8. Legal and Judicial Ethics
 
+Topics so far (use these exact names):
+- Mercantile Law → **Communication Law** (the privacy cases: Zulueta, Hing, Vivares, Cadajas, Regala, IBP v. Purisima)
+- Legal and Judicial Ethics → **Notarial Practice**
+
 ### Miscellaneous section
-Below the 8 subjects, the home screen has a **Miscellaneous** section for extra subjects that are not bar subjects. Use these exact names:
-- Communication Law (topic so far: Right to Privacy)
+Below the 8 subjects, the home screen has a **Miscellaneous** section for extra subjects that are not bar subjects (listed in `MISC_SUBJECTS` in `app.js`). It is **empty for now** and shows a "Nothing here yet" note; keep the section in place for future content.
+- Communication Law is **not** a Miscellaneous subject anymore: it is a topic under Mercantile Law.
+- If a subject is ever renamed or its content moved to another subject, add the old → new name to `MOVED_SUBJECTS` in `progress.js`, so her saved per-subject scores follow the move.
 
 Content is grouped by **subject → topic** (for example, Civil Law → Obligations and Contracts).
 
@@ -124,7 +129,7 @@ Whenever the builder asks to add a new case, follow this checklist without being
    - Keep the paragraphs (blank line between them), and write footnote numbers as `[1]`, `[2]`… both in the text and at the start of each footnote under a `Footnotes` heading.
    - Remove LawPhil's hidden watermarks (like `1awphi1`, `ℒαwρhi৷`, `1âwphi1`): search for odd tokens and report how many were removed. Change nothing else, typos included.
    - Check every footnote number in the text has a matching footnote, and tell the builder the file's size.
-4. **Add the case summary** to `data/cases.json`: `facts`, `issue`, `ruling`, `keyDoctrine` in plain words, faithful to the decision, `status: "draft"`, under the correct subject (exact names from the list above) and topic. `sourceUrl` is where the text came from.
+4. **Add the case summary** to `data/cases.json`: `facts`, `issue`, `ruling`, `keyDoctrine` in plain words, faithful to the decision, `status: "draft"`, under the correct subject (one of the 8 exact names above) and topic. Privacy and communication cases go under **Mercantile Law → Communication Law**; reuse an existing topic name when one fits, and say so when creating a new topic. `sourceUrl` is where the text came from.
 5. **Write exactly 3 essay questions and 5 multiple-choice questions**, all `status: "draft"`, all with `caseIds` linking the new case:
    - Essays use the ALAC suggested answer (`answer`, `legalBasis`, `application`, `conclusion`) plus `keyPoints`.
    - Multiple choice: exactly 4 choices (A–D), one correct, and an explanation of why it's right and the others wrong.
