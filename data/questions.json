@@ -602,5 +602,228 @@
       "part": "Our Ruling, opening discussion of the right to privacy",
       "excerpt": "Simply put, the right to privacy is \"the right to be let alone.\""
     }
+  },
+  {
+    "id": "q-0023",
+    "type": "essay",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "Bea, a 16-year-old student, posts photos of herself at a party on Facebook. She claims the post was set so that only a few close friends could see it, but she offers no proof other than her own testimony. One of her Facebook friends, using his own account, shows the photos to a school official, who then disciplines Bea. Bea's parents file a petition for a writ of habeas data, claiming the school violated her right to informational privacy. Will the petition prosper? Explain.",
+    "suggestedAnswer": {
+      "answer": "No. Under Vivares v. St. Theresa's College, the petition will not prosper because there was no proven violation of Bea's right to informational privacy.",
+      "legalBasis": "The writ of habeas data requires a showing, at least by substantial evidence, of an actual or threatened violation of the right to privacy in life, liberty or security. In Vivares, the Court held that before a user can have an expectation of privacy in social media activity, the user must show the intention to keep certain posts private by using measures to prevent or limit access, such as the platform's privacy tools.",
+      "application": "Bea's only proof that she limited the post is her own testimony. In Vivares, the Court gave little weight to similar self-serving statements without corroboration. Also, the photos were shown by a Facebook friend who had legitimate access to them, using his own account. In Vivares, the Court said the school officials were mere recipients who did not use unlawful means, since the information was voluntarily given to them by persons with legitimate access. Any fault would lie with the friend, not the school.",
+      "conclusion": "Without proof that Bea placed the photos within her protected zone of privacy, she cannot claim an expectation of privacy over them. The petition should be denied."
+    },
+    "keyPoints": [
+      "Habeas data needs substantial evidence of an actual or threatened violation of privacy in life, liberty or security",
+      "The user must show the intention to keep posts private by using privacy tools",
+      "Self-serving testimony without corroboration is not enough",
+      "The school officials were mere recipients from someone with legitimate access; no unlawful means were used",
+      "Conclusion: the petition is denied"
+    ],
+    "caseIds": [
+      "case-0004"
+    ],
+    "source": {
+      "caseTitle": "Vivares v. St. Theresa's College",
+      "grNumber": "G.R. No. 202666",
+      "url": "https://lawphil.net/judjuris/juri2014/sep2014/gr_202666_2014.html",
+      "part": "Our Ruling, STC did not violate petitioners' daughters' right to privacy",
+      "excerpt": "Without proof that they placed the photographs subject of this case within the ambit of their protected zone of privacy, they cannot now insist that they have an expectation of privacy with respect to the photographs in question."
+    }
+  },
+  {
+    "id": "q-0024",
+    "type": "essay",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "A private school is sued in a petition for a writ of habeas data over students' photos it collected. The school argues that: (a) the writ applies only to extralegal killings and enforced disappearances; and (b) the writ applies only to entities in the business of gathering, collecting or storing data, which a school is not. Rule on both arguments, based on Vivares v. St. Theresa's College.",
+    "suggestedAnswer": {
+      "answer": "Both arguments are wrong.",
+      "legalBasis": "Section 1 of the Rule on the Writ of Habeas Data makes it available against an unlawful act or omission of a public official or employee, or of a private individual or entity engaged in the gathering, collecting or storing of data or information about the aggrieved party. Section 2 allows any aggrieved party to file, and gives a separate list of who may file only for extralegal killings and enforced disappearances.",
+      "application": "(a) In Vivares, the Court said that if the writ were limited to extralegal killings and enforced disappearances, Section 2 would not have been worded that way. The Rule's annotations state that the writ can be availed of as an independent remedy to enforce the right to informational privacy. (b) To 'engage' in something means to do or take part in it. It does not require that the activity be done as a business. What matters is that the person or entity is gathering, collecting or storing data about the aggrieved party or their family.",
+      "conclusion": "The writ is not limited to extralegal killings and enforced disappearances, and it may be issued against a school even if the school is not in the business of collecting data. (In Vivares itself, the petition was still denied on the merits, because no privacy violation was proven.)"
+    },
+    "keyPoints": [
+      "Section 2: 'any aggrieved party' may file, so the writ is not limited to extralegal killings and enforced disappearances",
+      "Habeas data is an independent remedy to enforce the right to informational privacy",
+      "'Engaged' means to do or take part in something, not necessarily as a business",
+      "What matters is that the respondent gathers, collects or stores data about the aggrieved party",
+      "Conclusion: both arguments fail"
+    ],
+    "caseIds": [
+      "case-0004"
+    ],
+    "source": {
+      "caseTitle": "Vivares v. St. Theresa's College",
+      "grNumber": "G.R. No. 202666",
+      "url": "https://lawphil.net/judjuris/juri2014/sep2014/gr_202666_2014.html",
+      "part": "Our Ruling, procedural issues on the availability of the writ of habeas data",
+      "excerpt": "The writ of habeas data, however, can be availed of as an independent remedy to enforce one's right to privacy, more specifically the right to informational privacy."
+    }
+  },
+  {
+    "id": "q-0025",
+    "type": "essay",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "A Facebook user argues that because her post was set to 'Friends' only, it was 'very private,' so anyone who is not her Facebook friend has no right to see it. Based on Vivares v. St. Theresa's College, is a 'Friends Only' post automatically private? What setting might have produced a different result?",
+    "suggestedAnswer": {
+      "answer": "No. A post set to 'Friends' cannot easily, much less automatically, be said to be very private.",
+      "legalBasis": "In Vivares, the Court held that a user who uses a privacy tool to grant or deny access should not be denied the informational privacy right that goes with that choice. But it also held that setting a post to 'Friends' is no assurance that it cannot be viewed by people who are not the user's Facebook friends.",
+      "application": "The Court gave these reasons: Facebook is designed to make the world more open and connected; many users 'befriend' total strangers; users often have hundreds of friends; and a friend can 'share' the post or 'tag' others who are not the user's friends, which expands the audience. The Court said that if access had been limited to the uploader through the 'Only Me' setting, or to a select few through the 'Custom' setting, the result may have been different, because the intention to limit access would be clearer.",
+      "conclusion": "A 'Friends Only' post is not automatically private. Using 'Only Me' or a carefully chosen 'Custom' list more clearly shows an intention to keep a post private."
+    },
+    "keyPoints": [
+      "Using privacy tools is how a user claims informational privacy online",
+      "A 'Friends' setting is no assurance that non-friends cannot see the post",
+      "Friends can share or tag, which expands the audience; users often have hundreds of friends, including strangers",
+      "'Only Me' or 'Custom' settings may have changed the result",
+      "Conclusion: 'Friends Only' is not automatically private"
+    ],
+    "caseIds": [
+      "case-0004"
+    ],
+    "source": {
+      "caseTitle": "Vivares v. St. Theresa's College",
+      "grNumber": "G.R. No. 202666",
+      "url": "https://lawphil.net/judjuris/juri2014/sep2014/gr_202666_2014.html",
+      "part": "Our Ruling, STC did not violate petitioners' daughters' right to privacy",
+      "excerpt": "It is well to emphasize at this point that setting a post's or profile detail's privacy to \"Friends\" is no assurance that it can no longer be viewed by another user who is not Facebook friends with the source of the content."
+    }
+  },
+  {
+    "id": "q-0026",
+    "type": "mcq",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "In Vivares v. St. Theresa's College, how is the right to informational privacy usually defined?",
+    "choices": {
+      "A": "The right to be free from physical searches of one's home",
+      "B": "The right of individuals to control information about themselves",
+      "C": "The right to make fundamental personal choices",
+      "D": "The right to keep government records confidential"
+    },
+    "correct": "B",
+    "explanation": "B is correct. The Court said informational privacy is usually defined as the right of individuals to control information about themselves. A is wrong because it is closer to locational or situational privacy, a different strand. C is wrong because it describes decisional privacy, also a different strand. D is wrong because the right belongs to individuals over their own information, not to the government over its records.",
+    "caseIds": [
+      "case-0004"
+    ],
+    "source": {
+      "caseTitle": "Vivares v. St. Theresa's College",
+      "grNumber": "G.R. No. 202666",
+      "url": "https://lawphil.net/judjuris/juri2014/sep2014/gr_202666_2014.html",
+      "part": "Our Ruling, the right to informational privacy",
+      "excerpt": "usually defined as the right of individuals to control information about themselves."
+    }
+  },
+  {
+    "id": "q-0027",
+    "type": "mcq",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "According to Vivares v. St. Theresa's College, what does availing of the writ of habeas data require?",
+    "choices": {
+      "A": "Proof beyond reasonable doubt that the respondent is a public official",
+      "B": "A nexus between the right to privacy on one hand, and the right to life, liberty or security on the other",
+      "C": "A prior criminal conviction of the respondent",
+      "D": "Only an allegation of unauthorized access to information about a person"
+    },
+    "correct": "B",
+    "explanation": "B is correct. The Court said availing of the writ requires a nexus between the right to privacy and the right to life, liberty or security. A is wrong: the writ may also issue against private individuals and entities, and the standard is substantial evidence, not proof beyond reasonable doubt. C is wrong because no prior conviction is required. D is wrong because the Court said the writ will not issue merely on an alleged unauthorized access to information about a person.",
+    "caseIds": [
+      "case-0004"
+    ],
+    "source": {
+      "caseTitle": "Vivares v. St. Theresa's College",
+      "grNumber": "G.R. No. 202666",
+      "url": "https://lawphil.net/judjuris/juri2014/sep2014/gr_202666_2014.html",
+      "part": "Our Ruling, procedural issues on the availability of the writ of habeas data",
+      "excerpt": "Availment of the writ requires the existence of a nexus between the right to privacy on the one hand, and the right to life, liberty or security on the other."
+    }
+  },
+  {
+    "id": "q-0028",
+    "type": "mcq",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "Under Vivares v. St. Theresa's College, what does it mean for a private individual or entity to be 'engaged' in the gathering, collecting or storing of data, for the writ of habeas data to apply?",
+    "choices": {
+      "A": "It must be in the business of data gathering, for profit.",
+      "B": "It must be registered with the National Privacy Commission.",
+      "C": "It must do or take part in gathering, collecting or storing data about the aggrieved party, even if not as a business.",
+      "D": "It must have gathered data for at least one year."
+    },
+    "correct": "C",
+    "explanation": "C is correct. The Court said to 'engage' means 'to do or take part in something.' It does not require that the activity be done in pursuit of a business. A is wrong for that reason; the Court rejected limiting the writ to persons whose business is data gathering. B is wrong because the decision sets no registration requirement. D is wrong because the Court said whether the activity is regular or not is immaterial.",
+    "caseIds": [
+      "case-0004"
+    ],
+    "source": {
+      "caseTitle": "Vivares v. St. Theresa's College",
+      "grNumber": "G.R. No. 202666",
+      "url": "https://lawphil.net/judjuris/juri2014/sep2014/gr_202666_2014.html",
+      "part": "Our Ruling, meaning of \"engaged\" in the gathering, collecting or storing of data",
+      "excerpt": "To \"engage\" in something is different from undertaking a business endeavour. To \"engage\" means \"to do or take part in something.\""
+    }
+  },
+  {
+    "id": "q-0029",
+    "type": "mcq",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "In Vivares v. St. Theresa's College, why were the school (STC) and its officials found NOT to have violated the students' privacy?",
+    "choices": {
+      "A": "Because schools are exempt from privacy laws when enforcing discipline.",
+      "B": "Because the students were minors and had no privacy rights.",
+      "C": "Because the officials were mere recipients of photos voluntarily shown by persons with legitimate access, and used no unlawful means.",
+      "D": "Because the officials hacked the accounts only for a legitimate purpose."
+    },
+    "correct": "C",
+    "explanation": "C is correct. The Court said the respondents were mere recipients of what was posted. They did not use unlawful means, because the information was voluntarily given to them by persons with legitimate access. A is wrong because the Court did not say schools are exempt; STC was not faulted only because no violation was shown. B is wrong because minors have privacy rights; the Court even said the photos were personal in nature. D is wrong because no hacking happened. The students showed the photos using their own accounts.",
+    "caseIds": [
+      "case-0004"
+    ],
+    "source": {
+      "caseTitle": "Vivares v. St. Theresa's College",
+      "grNumber": "G.R. No. 202666",
+      "url": "https://lawphil.net/judjuris/juri2014/sep2014/gr_202666_2014.html",
+      "part": "Our Ruling, STC did not violate petitioners' daughters' right to privacy",
+      "excerpt": "Respondents were mere recipients of what were posted. They did not resort to any unlawful means of gathering the information as it was voluntarily given to them by persons who had legitimate access to the said posts."
+    }
+  },
+  {
+    "id": "q-0030",
+    "type": "mcq",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "In Vivares v. St. Theresa's College, which Facebook privacy settings did the Court say might have led to a different result, had their use been proved?",
+    "choices": {
+      "A": "'Public' or 'Friends of Friends'",
+      "B": "'Friends' or 'Public'",
+      "C": "'Only Me' (or 'Me Only') or 'Custom'",
+      "D": "'Friends of Friends' or 'Friends'"
+    },
+    "correct": "C",
+    "explanation": "C is correct. The Court said that if it had been proved that access was limited to the uploader through the 'Me Only' setting, or to a select few through the 'Custom' setting, the result may have been different, because the intention to limit access would be more manifest. A, B, and D are wrong because they all include 'Public,' 'Friends of Friends,' or 'Friends,' which the Court said do not clearly keep a post within a zone of privacy. 'Public' is Facebook's default, and even 'Friends' is no assurance that non-friends cannot see the post.",
+    "caseIds": [
+      "case-0004"
+    ],
+    "source": {
+      "caseTitle": "Vivares v. St. Theresa's College",
+      "grNumber": "G.R. No. 202666",
+      "url": "https://lawphil.net/judjuris/juri2014/sep2014/gr_202666_2014.html",
+      "part": "Our Ruling, STC did not violate petitioners' daughters' right to privacy",
+      "excerpt": "for in such instances, the intention to limit access to the particular post, instead of being broadcasted to the public at large or all the user's friends en masse, becomes more manifest and palpable."
+    }
   }
 ]
