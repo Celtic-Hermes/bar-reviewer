@@ -1272,5 +1272,230 @@
       "part": "Ruling, Part II, duration of the protection",
       "excerpt": "which exists not only during the relationship, but extends even after the termination of the relationship."
     }
+  },
+  {
+    "id": "q-0047",
+    "type": "essay",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "A new government regulation requires all self-employed psychologists, lawyers and doctors to register their appointment books with a tax agency. The books would list only each client's name and the date and time of each appointment, nothing about the consultation itself. The agency says the books will be examined only if a professional is suspected of underpaying taxes, so no one's privacy is harmed. Is the requirement valid? Explain, based on Integrated Bar of the Philippines v. Purisima.",
+    "suggestedAnswer": {
+      "answer": "No. The mandatory registration of appointment books is an unconstitutional intrusion into the right to privacy of the professionals and their clients and patients.",
+      "legalBasis": "In IBP v. Purisima, the Court held that in deciding a claim of privacy violation, a court must determine whether a person has exhibited a reasonable expectation of privacy and, if so, whether that expectation has been violated by unreasonable government intrusion. Clients and patients have a reasonable expectation of privacy when they set appointments with professionals.",
+      "application": "People may not want it known that they are consulting a professional. The Court's examples were a battered wife consulting a lawyer, and patients seeing doctors who specialize in particular conditions. Names and dates alone 'paint no picture,' but citing Disini v. Secretary of Justice, the Court said bundling together all of a person's consultations may reveal a pattern of behavior, and that pattern is protected. The agency's claim that the books would be examined only on suspicion does not save the rule. The Court said the mere chance that a person's information may be subject to the State's prying eyes is an unreasonable intrusion. The requirement also violates the confidentiality rules of these professions.",
+      "conclusion": "The requirement is void as an unconstitutional intrusion into the right to privacy."
+    },
+    "keyPoints": [
+      "Test: reasonable expectation of privacy, and whether it was violated by unreasonable government intrusion",
+      "Clients and patients reasonably expect privacy when setting appointments with professionals",
+      "Names and dates together can reveal a pattern of behavior (Disini)",
+      "The mere chance of the State's prying eyes is an unreasonable intrusion",
+      "It also violates professional confidentiality rules",
+      "Conclusion: the requirement is void"
+    ],
+    "caseIds": [
+      "case-0007"
+    ],
+    "source": {
+      "caseTitle": "Integrated Bar of the Philippines v. Purisima",
+      "grNumber": "G.R. Nos. 211772 & 212178",
+      "url": "https://lawphil.net/judjuris/juri2023/apr2023/gr_211772_2023.html",
+      "part": "Decision, Part IV, mandatory registration of appointment books",
+      "excerpt": "Nonetheless, the mere chance that a person's information may be subject to the State's prying eyes is an unreasonable intrusion."
+    }
+  },
+  {
+    "id": "q-0048",
+    "type": "essay",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "Revenue Regulations No. 4-2014 required self-employed professionals to: (a) submit an affidavit of their rates, manner of billing, and the factors they consider in setting fees; (b) register their books of account; (c) register their appointment books; and (d) issue a BIR-registered receipt showing a 100% discount for pro bono services. In Integrated Bar of the Philippines v. Purisima, which of these requirements were upheld, and which were struck down? Why?",
+    "suggestedAnswer": {
+      "answer": "Registration of books of account and the pro bono receipts were upheld. The affidavit of rates and the registration of appointment books were declared void.",
+      "legalBasis": "A valid regulation (subordinate legislation) must be germane to the purposes of the law it implements. The registration of books of account is supported by the Tax Code. The Court also held that requiring receipts is a valid measure to ascertain the correct taxes. The right to privacy under the Constitution limits government intrusion.",
+      "application": "(b) Registering books of account is germane to the Tax Code's purpose of monitoring fees and conducting tax audits, so it is valid. (d) Issuing receipts for pro bono services is a valid way to monitor tax compliance. (a) The affidavit of rates and billing serves no legitimate purpose and has no compelling need, so it goes beyond the Tax Code. The Court noted that it does not encroach on the Court's rule-making power or raise serious ethical concerns. (c) Mandatory registration of appointment books is an unconstitutional intrusion into the right to privacy and violates professional confidentiality.",
+      "conclusion": "Sections 2(1) and 2(2) of the regulation are void insofar as they require the affidavit and the registration of appointment books. The DOF and BIR were permanently enjoined from implementing those parts."
+    },
+    "keyPoints": [
+      "Books of account registration: valid (supported by the Tax Code)",
+      "Pro bono receipts: valid way to monitor tax compliance",
+      "Affidavit of rates: void, beyond the Tax Code, no legitimate purpose",
+      "Appointment books: void, unconstitutional intrusion into privacy",
+      "DOF and BIR permanently enjoined from implementing the void parts"
+    ],
+    "caseIds": [
+      "case-0007"
+    ],
+    "source": {
+      "caseTitle": "Integrated Bar of the Philippines v. Purisima",
+      "grNumber": "G.R. Nos. 211772 & 212178",
+      "url": "https://lawphil.net/judjuris/juri2023/apr2023/gr_211772_2023.html",
+      "part": "Decision, Part III, whether the affidavit and books of account requirements are within the Tax Code",
+      "excerpt": "Thus, there appears no compelling need for sworn statements of the rates and manner of billing among professionals."
+    }
+  },
+  {
+    "id": "q-0049",
+    "type": "essay",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "A government agency argues that a lawyer's list of client names is not privileged information, so lawyers may be required to give it to the State. Based on Integrated Bar of the Philippines v. Purisima, is the agency correct? In your answer, explain how the Data Privacy Act treats privileged information.",
+    "suggestedAnswer": {
+      "answer": "No. Citing Regala v. Sandiganbayan, the Court held that a client's identity falls within the privilege in proper cases.",
+      "legalBasis": "Attorney-client communication is privileged under Rule 130, Section 24(b) of the Rules on Evidence and Rule 138, Section 20(e) of the Rules of Court. The Code of Professional Responsibility requires lawyers to preserve client confidences. Under Regala, as a general rule a lawyer may not refuse to name a client, but the identity is privileged when the client's name itself has an independent significance, such that disclosure would reveal client confidences. The Data Privacy Act generally prohibits the processing of sensitive personal information and privileged information. Privileged information includes all forms of data that constitute privileged communication under the Rules of Court and other laws. Processing is allowed only in the cases listed in Section 13.",
+      "application": "The agency's blanket position that client names are never privileged is wrong. The Court said, 'respondents are incorrect in arguing that the client's name is not privileged information.' Requiring lawyers to give client names to the State may force them to violate their duty of confidentiality. Data that is privileged communication is also protected under the Data Privacy Act.",
+      "conclusion": "Client names can be privileged in proper cases, so the government cannot simply require lawyers to disclose them."
+    },
+    "keyPoints": [
+      "Attorney-client privilege: Rule 130, Sec. 24(b) and Rule 138, Sec. 20(e)",
+      "Regala: client identity is privileged when the name has independent significance",
+      "Data Privacy Act generally prohibits processing sensitive personal and privileged information",
+      "Privileged information includes data that is privileged communication under the Rules of Court",
+      "Conclusion: the agency is wrong; names can be privileged"
+    ],
+    "caseIds": [
+      "case-0007",
+      "case-0006"
+    ],
+    "source": {
+      "caseTitle": "Integrated Bar of the Philippines v. Purisima",
+      "grNumber": "G.R. Nos. 211772 & 212178",
+      "url": "https://lawphil.net/judjuris/juri2023/apr2023/gr_211772_2023.html",
+      "part": "Decision, Part V, attorney-client privilege and the Data Privacy Act",
+      "excerpt": "Thus, respondents are incorrect in arguing that the client's name is not privileged information."
+    }
+  },
+  {
+    "id": "q-0050",
+    "type": "mcq",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "In Integrated Bar of the Philippines v. Purisima, the Court cited retired Chief Justice Puno's three strands of the right to privacy. What are they?",
+    "choices": {
+      "A": "Locational, informational, and decisional privacy",
+      "B": "Residential, business, and online privacy",
+      "C": "Physical, emotional, and financial privacy",
+      "D": "Public, private, and privileged privacy"
+    },
+    "correct": "A",
+    "explanation": "A is correct. The Court listed (1) locational privacy, (2) informational privacy, and (3) decisional privacy. Locational privacy is felt in a physical space. Informational privacy is the right to control the processing of personal information. Decisional privacy is the right to make certain fundamental choices about personal and reproductive autonomy. B, C, and D are wrong because they are not the strands named in the decision.",
+    "caseIds": [
+      "case-0007"
+    ],
+    "source": {
+      "caseTitle": "Integrated Bar of the Philippines v. Purisima",
+      "grNumber": "G.R. Nos. 211772 & 212178",
+      "url": "https://lawphil.net/judjuris/juri2023/apr2023/gr_211772_2023.html",
+      "part": "Decision, Part IV, discussion of the right to privacy",
+      "excerpt": "(1) locational privacy; (2) informational privacy; and (3) decisional privacy."
+    }
+  },
+  {
+    "id": "q-0051",
+    "type": "mcq",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "According to Integrated Bar of the Philippines v. Purisima, what are the two aspects of informational privacy?",
+    "choices": {
+      "A": "The right to own data, and the right to sell data",
+      "B": "The right not to have private information disclosed, and the right to live freely without surveillance and intrusion",
+      "C": "The right to access government records, and the right to correct them",
+      "D": "The right to free speech online, and the right to anonymity"
+    },
+    "correct": "B",
+    "explanation": "B is correct. The decision says informational privacy has two aspects: the right not to have private information disclosed, and the right to live freely without surveillance and intrusion. A, C, and D are wrong because none of them is described in the decision as an aspect of informational privacy.",
+    "caseIds": [
+      "case-0007"
+    ],
+    "source": {
+      "caseTitle": "Integrated Bar of the Philippines v. Purisima",
+      "grNumber": "G.R. Nos. 211772 & 212178",
+      "url": "https://lawphil.net/judjuris/juri2023/apr2023/gr_211772_2023.html",
+      "part": "Decision, Part IV, discussion of informational privacy",
+      "excerpt": "Informational privacy has two aspects: the right not to have private information disclosed, and the right to live freely without surveillance and intrusion."
+    }
+  },
+  {
+    "id": "q-0052",
+    "type": "mcq",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "In Integrated Bar of the Philippines v. Purisima, the government argued that names and appointment dates alone reveal nothing. Why did the Court still find their mandatory registration a privacy violation?",
+    "choices": {
+      "A": "Because the names would be published in newspapers.",
+      "B": "Because, when bundled together, a person's consultations may reveal a pattern of behavior from which private information could be inferred.",
+      "C": "Because the books would also include the clients' medical diagnoses.",
+      "D": "Because only lawyers, not doctors, were covered."
+    },
+    "correct": "B",
+    "explanation": "B is correct. The Court granted that names and dates by themselves 'paint no picture.' But following Disini, it said bundling together all the times a person consults a professional may show a pattern of behavior, which a person reasonably expects to be private. A is wrong because publication was not required; the books only had to be registered with the BIR. C is wrong because the regulation said the books shall contain only the client's name and the date and time of the meeting. D is wrong because the regulation covered all self-employed professionals, including doctors, dentists and accountants.",
+    "caseIds": [
+      "case-0007"
+    ],
+    "source": {
+      "caseTitle": "Integrated Bar of the Philippines v. Purisima",
+      "grNumber": "G.R. Nos. 211772 & 212178",
+      "url": "https://lawphil.net/judjuris/juri2023/apr2023/gr_211772_2023.html",
+      "part": "Decision, Part IV, mandatory registration of appointment books",
+      "excerpt": "Granted, by themselves, names and appointment dates of patients and clients paint no picture."
+    }
+  },
+  {
+    "id": "q-0053",
+    "type": "mcq",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "In Integrated Bar of the Philippines v. Purisima, what must a court determine in evaluating a claim that the government violated the right to privacy?",
+    "choices": {
+      "A": "Whether the government acted in good faith",
+      "B": "Whether the person has exhibited a reasonable expectation of privacy and, if so, whether it was violated by unreasonable government intrusion",
+      "C": "Whether the person suffered actual financial loss",
+      "D": "Whether the information was already known to at least one other person"
+    },
+    "correct": "B",
+    "explanation": "B is correct. Quoting In re Sabio, the Court said a court must determine whether a person has exhibited a reasonable expectation of privacy and, if so, whether that expectation has been violated by unreasonable government intrusion. A is wrong because good faith is not the test. C is wrong because proof of financial loss is not required. D is wrong because the test does not ask whether someone else already knew; in the case, the professionals knew the clients' names, yet the clients still had a reasonable expectation of privacy against the State.",
+    "caseIds": [
+      "case-0007"
+    ],
+    "source": {
+      "caseTitle": "Integrated Bar of the Philippines v. Purisima",
+      "grNumber": "G.R. Nos. 211772 & 212178",
+      "url": "https://lawphil.net/judjuris/juri2023/apr2023/gr_211772_2023.html",
+      "part": "Decision, Part IV, standard for State intrusion into zones of privacy (quoting In re Sabio)",
+      "excerpt": "In evaluating a claim for violation of the right to privacy, a court must determine whether a person has exhibited a reasonable expectation of privacy and, if so, whether that expectation has been violated by unreasonable government intrusion."
+    }
+  },
+  {
+    "id": "q-0054",
+    "type": "mcq",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "In Integrated Bar of the Philippines v. Purisima, which requirement of Revenue Regulations No. 4-2014 did the Court uphold as valid?",
+    "choices": {
+      "A": "Submission of an affidavit of rates and manner of billing",
+      "B": "Registration of official appointment books",
+      "C": "Issuance of receipts, including for services rendered pro bono",
+      "D": "None; the entire regulation was declared void"
+    },
+    "correct": "C",
+    "explanation": "C is correct. The Court said the BIR may validly require professionals to issue receipts for pro bono services to monitor tax compliance, and that requiring receipts is a valid measure. A is wrong because the affidavit was declared void for going beyond the Tax Code. B is wrong because registering appointment books was declared an unconstitutional intrusion into privacy. D is wrong because the petitions were only partly granted; registration of books of account and receipts were upheld.",
+    "caseIds": [
+      "case-0007"
+    ],
+    "source": {
+      "caseTitle": "Integrated Bar of the Philippines v. Purisima",
+      "grNumber": "G.R. Nos. 211772 & 212178",
+      "url": "https://lawphil.net/judjuris/juri2023/apr2023/gr_211772_2023.html",
+      "part": "Decision, Part II, affidavits of fees and receipts for pro bono services",
+      "excerpt": "Requiring the issuance of receipts is a valid measure that the tax collector may employ to ascertain the correct amount of taxes payable by self-employed professionals."
+    }
   }
 ]
