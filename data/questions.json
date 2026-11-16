@@ -158,5 +158,227 @@
       "part": "Resolution, discussion of the second charge (definition of jurat, Section 6, Rule II)",
       "excerpt": "A \"jurat\" refers to an act in which an individual on a single occasion: (a) appears in person before the notary public and presents an instrument or document; (b) is personally known to the notary public or identified by the notary public through competent evidence of identity; (c) signs the instrument or document in the presence of the notary; and (d) takes an oath or affirmation before the notary public as to such instrument or document."
     }
+  },
+  {
+    "id": "q-0007",
+    "type": "essay",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "Marites suspects her husband Ramon of having an affair. While Ramon is away, she goes to his law office, forces open his locked desk drawers, and takes private letters between Ramon and another woman, along with his diaries. She plans to present them as evidence in her petition for legal separation. Ramon objects, invoking his right to privacy. Marites argues that, as his wife, she cannot be barred from discovering proof of his infidelity. Are the letters and diaries admissible? Explain.",
+    "suggestedAnswer": {
+      "answer": "No. Under Zulueta v. Court of Appeals, the letters and diaries are inadmissible.",
+      "legalBasis": "The Constitution declares the privacy of communication and correspondence inviolable. The only exception is a lawful order of the court, or when public safety or order requires otherwise, as prescribed by law. Evidence obtained in violation of this is inadmissible for any purpose in any proceeding. In Zulueta, the Court held that this applies even when the person who violated it is the spouse.",
+      "application": "Marites took Ramon's private correspondence and diaries by forcing open his drawers, without his knowledge or consent. There was no court order and no public safety or order reason. Being his wife does not change this. In Zulueta, the Court said the intimacies between husband and wife do not justify either one breaking the other's drawers and cabinets to look for evidence of infidelity, and a person does not give up their right to privacy by marrying.",
+      "conclusion": "The letters and diaries are inadmissible in the legal separation case. (Note: in Cadajas v. People, 2021, the Court later described this pronouncement in Zulueta as an obiter dictum, meaning a side remark that is not a binding precedent.)"
+    },
+    "keyPoints": [
+      "Privacy of communication and correspondence is inviolable (1987 Constitution, Art. III, Sec. 3)",
+      "Only exceptions: lawful court order, or public safety or order as prescribed by law",
+      "Evidence obtained in violation is inadmissible for any purpose in any proceeding",
+      "The protection applies even against one's spouse; marriage does not waive privacy",
+      "Conclusion: the evidence is inadmissible"
+    ],
+    "caseIds": [
+      "case-0002"
+    ],
+    "source": {
+      "caseTitle": "Zulueta v. Court of Appeals",
+      "grNumber": "G.R. No. 107383",
+      "url": "https://lawphil.net/judjuris/juri1996/feb1996/gr_107383_1996.html",
+      "part": "Ruling, discussion of the inadmissibility of the documents and papers",
+      "excerpt": "The intimacies between husband and wife do not justify any one of them in breaking the drawers and cabinets of the other and in ransacking them for any telltale evidence of marital infidelity."
+    }
+  },
+  {
+    "id": "q-0008",
+    "type": "essay",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "Lito argues that the law guarantees \"absolute freedom of communication between the spouses,\" so his wife has no right to keep her private papers from him, and he may use them as evidence against her. How did the Supreme Court in Zulueta v. Court of Appeals address the relationship between spousal privilege and the right to privacy?",
+    "suggestedAnswer": {
+      "answer": "The argument fails. The Court said the freedom of communication between spouses is different from forcing each spouse to share what they know with the other.",
+      "legalBasis": "In Zulueta, the Court explained that the law insures absolute freedom of communication between the spouses by making it privileged. Neither spouse may testify for or against the other without the other's consent while the marriage subsists. Neither may be examined, without the other's consent, about any communication received in confidence from the other during the marriage, save for specified exceptions.",
+      "application": "This privilege protects communications between the spouses from being disclosed. It does not give one spouse a right to take the other's private papers. The Court stressed that freedom of communication is one thing, but a compulsion for each one to share what one knows with the other is quite another. It added that this has nothing to do with the duty of fidelity each spouse owes the other.",
+      "conclusion": "Lito cannot rely on the spousal privilege to justify taking and using his wife's private papers. Each spouse keeps their constitutional right to privacy."
+    },
+    "keyPoints": [
+      "The law makes communication between spouses privileged to ensure freedom of communication",
+      "Spouses cannot testify for or against each other without consent while the marriage subsists (with exceptions)",
+      "Freedom of communication is different from forcing each spouse to share what they know",
+      "This has nothing to do with the duty of fidelity",
+      "Conclusion: spousal privilege does not allow one spouse to take the other's private papers"
+    ],
+    "caseIds": [
+      "case-0002"
+    ],
+    "source": {
+      "caseTitle": "Zulueta v. Court of Appeals",
+      "grNumber": "G.R. No. 107383",
+      "url": "https://lawphil.net/judjuris/juri1996/feb1996/gr_107383_1996.html",
+      "part": "Ruling, last paragraph before the dispositive portion",
+      "excerpt": "But one thing is freedom of communication; quite another is a compulsion for each one to share what one knows with the other. And this has nothing to do with the duty of fidelity that each owes to the other."
+    }
+  },
+  {
+    "id": "q-0009",
+    "type": "essay",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "A trial court ordered a wife not to use certain papers she took from her husband. Her lawyer later used the papers while a Supreme Court restraining order (TRO) temporarily suspended the trial court's order. In a disbarment case, the Court cleared the lawyer. The wife now argues that this disbarment ruling settled that the papers are admissible. Is she correct? Explain, based on Zulueta v. Court of Appeals.",
+    "suggestedAnswer": {
+      "answer": "No. Clearing the lawyer in the disbarment case did not establish that the papers were admissible.",
+      "legalBasis": "In Zulueta, the Court explained that the lawyer (Atty. Felix, Jr.) was acquitted of violating the trial court's injunction only because, when he used the papers, the trial court's order was temporarily restrained by the Supreme Court. Once the TRO was lifted, the prohibition on using the papers became effective again.",
+      "application": "The disbarment ruling decided only whether the lawyer violated the injunction while it was suspended. The Court said that by no means did that decision establish the admissibility of the documents and papers. It amounted to no more than a declaration that the lawyer's use of the papers to obtain the husband's admission did not violate the injunctive order.",
+      "conclusion": "The wife is wrong. The papers remain inadmissible, and the disbarment ruling does not help her."
+    },
+    "keyPoints": [
+      "The lawyer was cleared only because a Supreme Court TRO had suspended the trial court's order at the time",
+      "The disbarment ruling only meant he did not violate the injunction",
+      "It did not establish that the papers were admissible",
+      "Once the TRO was lifted, the ban on using the papers applied again"
+    ],
+    "caseIds": [
+      "case-0002"
+    ],
+    "source": {
+      "caseTitle": "Zulueta v. Court of Appeals",
+      "grNumber": "G.R. No. 107383",
+      "url": "https://lawphil.net/judjuris/juri1996/feb1996/gr_107383_1996.html",
+      "part": "Ruling, discussion of Martin v. Felix, Jr.",
+      "excerpt": "By no means does the decision in that case establish the admissibility of the documents and papers in question."
+    }
+  },
+  {
+    "id": "q-0010",
+    "type": "mcq",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "In Zulueta v. Court of Appeals, what did the wife do to obtain the documents and papers?",
+    "choices": {
+      "A": "She hacked into her husband's email account.",
+      "B": "She forcibly opened the drawers and cabinet in her husband's clinic and took the documents.",
+      "C": "She asked the court for a subpoena to get his records.",
+      "D": "She received them from her husband's secretary, who copied them."
+    },
+    "correct": "B",
+    "explanation": "B is correct. The decision states that she entered her husband's clinic and, in the presence of her mother, a driver and his secretary, forcibly opened the drawers and cabinet and took 157 documents. A is wrong because no email was involved. C is wrong because she did not go through the court; she took the papers herself. D is wrong because the secretary was only present; the wife took the documents herself.",
+    "caseIds": [
+      "case-0002"
+    ],
+    "source": {
+      "caseTitle": "Zulueta v. Court of Appeals",
+      "grNumber": "G.R. No. 107383",
+      "url": "https://lawphil.net/judjuris/juri1996/feb1996/gr_107383_1996.html",
+      "part": "Statement of facts",
+      "excerpt": "forcibly opened the drawers and cabinet in her husband's clinic and took 157 documents"
+    }
+  },
+  {
+    "id": "q-0011",
+    "type": "mcq",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "According to Zulueta v. Court of Appeals, what are the only exceptions to the constitutional rule that the privacy of communication and correspondence is inviolable?",
+    "choices": {
+      "A": "Consent of the spouse, or a pending case for legal separation.",
+      "B": "A lawful order of the court, or when public safety or order requires otherwise, as prescribed by law.",
+      "C": "A written request of the Solicitor General, or national security.",
+      "D": "Proof of marital infidelity, or a lawful order of the court."
+    },
+    "correct": "B",
+    "explanation": "B is correct. The Court said the only exception is a lawful order from a court, or when public safety or order requires otherwise, as prescribed by law. A is wrong: a pending legal separation case is not an exception. In fact, the wife in Zulueta was gathering evidence for such a case. C is wrong because neither is mentioned as an exception. D is wrong because proof of infidelity is not an exception. The Court said suspecting infidelity does not justify ransacking a spouse's drawers.",
+    "caseIds": [
+      "case-0002"
+    ],
+    "source": {
+      "caseTitle": "Zulueta v. Court of Appeals",
+      "grNumber": "G.R. No. 107383",
+      "url": "https://lawphil.net/judjuris/juri1996/feb1996/gr_107383_1996.html",
+      "part": "Ruling, discussion of the inadmissibility of the documents and papers",
+      "excerpt": "The only exception to the prohibition in the Constitution is if there is a \"lawful order [from a] court or when public safety or order requires otherwise, as prescribed by law.\""
+    }
+  },
+  {
+    "id": "q-0012",
+    "type": "mcq",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "In Zulueta v. Court of Appeals, what is the effect of evidence obtained in violation of the constitutional right to privacy of communication and correspondence?",
+    "choices": {
+      "A": "It is admissible, but its weight is reduced.",
+      "B": "It is admissible only in criminal cases.",
+      "C": "It is inadmissible for any purpose in any proceeding.",
+      "D": "It is inadmissible only if the owner files a separate case for damages."
+    },
+    "correct": "C",
+    "explanation": "C is correct. The Court said any violation of the provision renders the evidence obtained inadmissible \"for any purpose in any proceeding.\" A is wrong because the evidence is not admissible at all. B is wrong because the rule is not limited to one kind of case; it applies in any proceeding. D is wrong because inadmissibility does not depend on filing a damages case.",
+    "caseIds": [
+      "case-0002"
+    ],
+    "source": {
+      "caseTitle": "Zulueta v. Court of Appeals",
+      "grNumber": "G.R. No. 107383",
+      "url": "https://lawphil.net/judjuris/juri1996/feb1996/gr_107383_1996.html",
+      "part": "Ruling, discussion of the inadmissibility of the documents and papers",
+      "excerpt": "Any violation of this provision renders the evidence obtained inadmissible \"for any purpose in any proceeding.\""
+    }
+  },
+  {
+    "id": "q-0013",
+    "type": "mcq",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "Which statement best reflects the Court's view in Zulueta v. Court of Appeals on privacy within marriage?",
+    "choices": {
+      "A": "Spouses waive their right to privacy against each other upon marriage.",
+      "B": "A spouse may search the other's belongings if infidelity is suspected.",
+      "C": "A person, by contracting marriage, does not shed their integrity or right to privacy as an individual.",
+      "D": "The right to privacy between spouses applies only to letters, not to diaries or photographs."
+    },
+    "correct": "C",
+    "explanation": "C is correct. The Court said a person, by contracting marriage, does not shed his or her integrity or right to privacy as an individual, and the constitutional protection is ever available to him or to her. A is the opposite of the ruling. B is wrong because the Court said the intimacies of marriage do not justify ransacking the other's drawers for evidence of infidelity. D is wrong: the papers in Zulueta included letters, greeting cards, cancelled checks, diaries, a passport and photographs, and all were held protected.",
+    "caseIds": [
+      "case-0002"
+    ],
+    "source": {
+      "caseTitle": "Zulueta v. Court of Appeals",
+      "grNumber": "G.R. No. 107383",
+      "url": "https://lawphil.net/judjuris/juri1996/feb1996/gr_107383_1996.html",
+      "part": "Ruling, discussion of the inadmissibility of the documents and papers",
+      "excerpt": "A person, by contracting marriage, does not shed his/her integrity or his right to privacy as an individual and the constitutional protection is ever available to him or to her."
+    }
+  },
+  {
+    "id": "q-0014",
+    "type": "mcq",
+    "status": "draft",
+    "subject": "Communication Law",
+    "topic": "Right to Privacy",
+    "prompt": "In Zulueta v. Court of Appeals, why was the lawyer, Atty. Felix, Jr., cleared in the earlier disbarment case for using the documents?",
+    "choices": {
+      "A": "Because the Court found the documents admissible in evidence.",
+      "B": "Because, when he used them, a Supreme Court restraining order had temporarily suspended the trial court's order.",
+      "C": "Because the husband consented to their use.",
+      "D": "Because lawyers are exempt from injunctions issued against their clients."
+    },
+    "correct": "B",
+    "explanation": "B is correct. The Court said Atty. Felix, Jr. was acquitted only because, at the time he used the documents, enforcement of the trial court's order was temporarily restrained by the Supreme Court. A is wrong: the Court stressed that the disbarment decision by no means established that the documents were admissible. C is wrong because the husband never consented to the taking. He later admitted the documents were genuine, but that is different from consent. D is wrong because the trial court's injunction expressly covered the wife's attorneys and representatives.",
+    "caseIds": [
+      "case-0002"
+    ],
+    "source": {
+      "caseTitle": "Zulueta v. Court of Appeals",
+      "grNumber": "G.R. No. 107383",
+      "url": "https://lawphil.net/judjuris/juri1996/feb1996/gr_107383_1996.html",
+      "part": "Ruling, discussion of Martin v. Felix, Jr.",
+      "excerpt": "it was only because, at the time he used the documents and papers, enforcement of the order of the trial court was temporarily restrained by this Court."
+    }
   }
 ]
