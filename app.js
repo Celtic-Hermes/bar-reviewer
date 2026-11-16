@@ -581,6 +581,8 @@ function makeHighlightable(elementId) {
   const element = document.getElementById(elementId);
   element.classList.add("highlightable");
   element.addEventListener("click", function (event) {
+    // A mouse drag was just turned into a highlight: don't also toggle the word under the mouse.
+    if (skipNextClick) { skipNextClick = false; return; }
     const word = event.target.closest(".hl-word");
     const key = element.dataset.hlKey;
     if (!word || !key || !element.contains(word)) { return; }
@@ -591,6 +593,72 @@ function makeHighlightable(elementId) {
 }
 
 ["prompt", "case-facts", "case-issue", "case-ruling"].forEach(makeHighlightable);
+
+// ---------- Highlighter with a mouse: click and drag ----------
+// On a touchscreen she taps one word at a time (above). With a mouse or trackpad she
+// can also drag across words like normal text selection; when she lets go, those words
+// get the yellow highlight and the browser's own blue selection is cleared.
+// Both ways save the same thing: the list of highlighted word positions.
+//
+// We check what started each press ("mouse", "touch" or "pen") instead of guessing
+// the device, so a laptop with a touchscreen works right for whichever she uses.
+let lastPointerType = "";
+let skipNextClick = false;
+
+document.addEventListener("pointerdown", function (event) {
+  lastPointerType = event.pointerType;
+  skipNextClick = false;
+});
+
+document.addEventListener("mouseup", function (event) {
+  if (lastPointerType !== "mouse") { return; }  // touch: leave it to the tap code
+  const selection = window.getSelection();
+  if (!selection || selection.rangeCount === 0 || selection.isCollapsed) { return; }  // a plain click
+  const range = selection.getRangeAt(0);
+
+  // A double-click selects a word by itself; the first click already highlighted it.
+  if (event.detail >= 2) {
+    selection.removeAllRanges();
+    skipNextClick = true;
+    return;
+  }
+
+  // Find the selected words in each highlightable text box on screen.
+  const picked = [];  // { element, key, words: [the selected word <span>s] }
+  document.querySelectorAll(".highlightable").forEach(function (element) {
+    const key = element.dataset.hlKey;
+    if (!key || !range.intersectsNode(element)) { return; }
+    const words = Array.prototype.filter.call(element.querySelectorAll(".hl-word"), function (word) {
+      return rangeTouchesWord(range, word);
+    });
+    if (words.length > 0) { picked.push({ element: element, key: key, words: words }); }
+  });
+  if (picked.length === 0) { return; }  // she selected something else, like a heading: leave it alone
+
+  // If every selected word is already yellow, the drag removes the highlight.
+  // Otherwise it highlights them all.
+  const allOn = picked.every(function (p) {
+    return p.words.every(function (word) { return word.classList.contains("hl-on"); });
+  });
+  picked.forEach(function (p) {
+    setHighlights(p.key, p.words.map(function (word) { return Number(word.dataset.word); }), !allOn);
+    p.words.forEach(function (word) { word.classList.toggle("hl-on", !allOn); });
+    joinHighlights(p.element);
+  });
+
+  selection.removeAllRanges();  // only our yellow highlight should show
+  skipNextClick = true;
+});
+
+// True if the selection covers at least one letter of this word
+// (just touching its edge doesn't count).
+function rangeTouchesWord(range, word) {
+  const wordRange = document.createRange();
+  wordRange.selectNodeContents(word);
+  const startsBeforeWordEnds = range.compareBoundaryPoints(Range.END_TO_START, wordRange) < 0;
+  const endsAfterWordStarts = range.compareBoundaryPoints(Range.START_TO_END, wordRange) > 0;
+  return startsBeforeWordEnds && endsAfterWordStarts;
+}
 
 // Remove the ** marks (used for short previews, where bold isn't shown).
 function plainText(value) {

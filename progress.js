@@ -132,6 +132,24 @@ function toggleHighlight(key, position) {
   saveProgress();
 }
 
+// Highlight (turnOn = true) or un-highlight (false) several words at once,
+// e.g. a run of words selected by dragging with a mouse. Saves once at the end.
+function setHighlights(key, positions, turnOn) {
+  let list = highlightedWords(key).slice();
+  positions.forEach(function (position) {
+    const spot = list.indexOf(position);
+    if (turnOn && spot === -1) { list.push(position); }
+    if (!turnOn && spot !== -1) { list.splice(spot, 1); }
+  });
+  list.sort(function (a, b) { return a - b; });
+  if (list.length > 0) {
+    progress.highlights[key] = list;
+  } else {
+    delete progress.highlights[key];
+  }
+  saveProgress();
+}
+
 // ---------- Back up and restore ----------
 // A backup file is her progress (exactly as saved above), wrapped with a label
 // so the app can recognize its own files, plus the date it was made.

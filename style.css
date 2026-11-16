@@ -112,6 +112,10 @@ body {
   background: var(--highlight);
   box-shadow: 0 2px 0 var(--highlight), 0 -2px 0 var(--highlight);
 }
+/* With a mouse, show the normal text cursor, since she can drag to select words. */
+@media (hover: hover) and (pointer: fine) {
+  .hl-word { cursor: text; }
+}
 .hl-word.hl-join-left  { border-top-left-radius: 0;  border-bottom-left-radius: 0; }
 .hl-word.hl-join-right { border-top-right-radius: 0; border-bottom-right-radius: 0; }
 
