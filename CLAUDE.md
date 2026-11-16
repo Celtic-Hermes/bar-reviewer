@@ -114,6 +114,29 @@ After reading the suggested answer, she checks off the key points she got and ra
 ```
 Exactly 4 choices (A–D) and exactly one correct answer. She gets instant feedback and the explanation.
 
+## Adding a new case (default procedure)
+Whenever the builder asks to add a new case, follow this checklist without being reminded. The content rules above still apply to every step.
+
+1. **Announce the IDs first.** Before starting, tell the builder the next free case ID and the question IDs that will be used (the next 8 `q-` numbers). Look them up in the JSON files; never reuse or renumber an ID.
+2. **Get the real decision text.** Fetch it from a reliable source (LawPhil, the Supreme Court E-Library, etc.), never from memory. If it can't be fetched, stop and ask the builder to have the text pasted in (content rule 2).
+3. **Save the full text** as `data/case-texts/<case-id>.txt` (plain text, UTF-8):
+   - Only the main decision: from the court header through the signatures and footnotes. Leave out site menus and the list of separate opinions (those aren't included).
+   - Keep the paragraphs (blank line between them), and write footnote numbers as `[1]`, `[2]`… both in the text and at the start of each footnote under a `Footnotes` heading.
+   - Remove LawPhil's hidden watermarks (like `1awphi1`, `ℒαwρhi৷`, `1âwphi1`): search for odd tokens and report how many were removed. Change nothing else, typos included.
+   - Check every footnote number in the text has a matching footnote, and tell the builder the file's size.
+4. **Add the case summary** to `data/cases.json`: `facts`, `issue`, `ruling`, `keyDoctrine` in plain words, faithful to the decision, `status: "draft"`, under the correct subject (exact names from the list above) and topic. `sourceUrl` is where the text came from.
+5. **Write exactly 3 essay questions and 5 multiple-choice questions**, all `status: "draft"`, all with `caseIds` linking the new case:
+   - Essays use the ALAC suggested answer (`answer`, `legalBasis`, `application`, `conclusion`) plus `keyPoints`.
+   - Multiple choice: exactly 4 choices (A–D), one correct, and an explanation of why it's right and the others wrong.
+   - Lawyer-provided samples are inspiration only (content rule 5).
+6. **Source excerpts show the reasoning.** Each `source.excerpt` is an exact quote of the decision, long enough to show the Court's actual reasoning, not just a one-line conclusion (especially for "why" or "explain" questions). Skipped stretches are marked with ` … `; footnote numbers are left out. Before finishing, check that every piece of every excerpt appears word for word in the full-text file, and that `source.part` names where it came from.
+7. **Follow the text formatting conventions** in all content fields:
+   - `**word**` for bold.
+   - Numbered points as `(1) … (2) … (3)` (or `(a) (b)`), starting right after a sentence end, colon or semicolon. The app then shows each point on its own line with a bold number. Points written mid-sentence ("between (a) X and (b) Y") stay inline.
+8. **Test before committing:** the app loads without errors, the case opens with its summary and full text, all 8 questions show up under the right subject and topic, and "Find in case" finds each question's excerpt in the full text.
+9. **Cache version:** bump `CACHE_VERSION` in `sw.js` only if an app file changed (see Technical choices). Adding a case normally changes only data files, so no bump.
+10. **Commit and report:** one commit for the case (or one per step if it was split), then tell the builder what was added, the IDs used, the full-text file size, and anything that needs a person to check.
+
 ## Her progress (saved only on her phone)
 - Saved in the phone's browser storage (`localStorage`). Nothing is sent anywhere, and there are no accounts.
 - Remember: **score per subject**, **questions she missed**, and **bookmarked questions**.
