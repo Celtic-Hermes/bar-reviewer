@@ -622,7 +622,9 @@ function showEssay(question) {
     const box = document.createElement("input");
     box.type = "checkbox";
     label.appendChild(box);
-    label.appendChild(richText(point));
+    const pointText = document.createElement("span");  // one piece next to the checkbox
+    pointText.appendChild(richText(point));
+    label.appendChild(pointText);
     item.appendChild(label);
     list.appendChild(item);
   });
@@ -757,15 +759,30 @@ let questionScrollSpot = 0;    // where she was on the question screen
 // If "highlighted" is given (a list of word positions), every word is also put in
 // its own small tappable <span>, numbered 0, 1, 2… from the start, and the words in
 // the list get the yellow highlight. Still no innerHTML: words are added as plain text.
-function richText(value, highlighted) {
-  const text = (value === null || value === undefined) ? "" : String(value);
+// Unless "noLists" is true, numbered points like "(1) … (2) …" are put on their own
+// lines with the number in bold (see markLists below).
+function richText(value, highlighted, noLists) {
+  let text = (value === null || value === undefined) ? "" : String(value);
+  text = text.split(LIST_MARK).join("");  // the marker character is ours alone
+  if (!noLists) { text = markLists(text); }
   const fragment = document.createDocumentFragment();
   let wordNumber = 0;
 
   // Add a piece of text to "parent": as plain text, or word by word if highlighting.
   function addText(parent, piece) {
     if (!highlighted) {
-      parent.appendChild(document.createTextNode(piece));
+      // A list number (marked by markLists) is shown in bold; the rest as plain text.
+      piece.split(new RegExp("(" + LIST_MARK + "\\S+)")).forEach(function (bit) {
+        if (bit === "") { return; }
+        if (bit.charAt(0) === LIST_MARK) {
+          const number = document.createElement("strong");
+          number.className = "list-num";
+          number.textContent = bit.slice(1);
+          parent.appendChild(number);
+        } else {
+          parent.appendChild(document.createTextNode(bit));
+        }
+      });
       return;
     }
     piece.split(/(\s+)/).forEach(function (bit) {
@@ -783,6 +800,10 @@ function richText(value, highlighted) {
       word.className = "hl-word";
       word.dataset.word = wordNumber;
       if (highlighted.indexOf(wordNumber) !== -1) { word.classList.add("hl-on"); }
+      if (bit.charAt(0) === LIST_MARK) {  // a list number: bold
+        word.classList.add("list-num");
+        bit = bit.slice(1);
+      }
       word.textContent = bit;
       parent.appendChild(word);
       wordNumber += 1;
@@ -806,6 +827,83 @@ function richText(value, highlighted) {
   return fragment;
 }
 
+// ---------- Numbered points on their own lines ----------
+// Text like "No. The petition was denied. (1) The earlier case… (2) The papers…" is shown as:
+//   No. The petition was denied.
+//   (1) The earlier case…
+//   (2) The papers…
+// Recognized numbers: (1) (2)…, 1. 2.…, 1) 2)…, and (a) (b)…
+// To avoid splitting ordinary sentences ("Article 26(1)", "Section 13.", "between (a) X and (b) Y"):
+//  - a list must start at 1 (or a), right at the start of the text or after . ? ! : ; or a line break;
+//  - the next items must count up (2, 3… or b, c…) in the same style, at least two items in all.
+// Lettered points inside a numbered point (between its (1) and (2)…) are indented.
+// No words are added, removed or moved: only the spaces before each number change
+// (to a line break), so her saved highlights still land on the same words.
+const LIST_MARK = "\uE000";  // invisible marker put in front of each list number
+const LIST_NUMBER = /(^|\s)(\((\d{1,2})\)|(\d{1,2})\.|(\d{1,2})\)|\(([a-z])\))(?=\s)/g;
+
+function markLists(text) {
+  const found = [];
+  let m;
+  LIST_NUMBER.lastIndex = 0;
+  while ((m = LIST_NUMBER.exec(text)) !== null) {
+    const at = m.index + m[1].length;  // where the number itself starts
+    let style, value;
+    if (m[3]) { style = "(n)"; value = Number(m[3]); }
+    else if (m[4]) { style = "n."; value = Number(m[4]); }
+    else if (m[5]) { style = "n)"; value = Number(m[5]); }
+    else { style = "(a)"; value = m[6].charCodeAt(0) - 96; }
+    found.push({ at: at, style: style, value: value, text: m[2] });
+  }
+
+  // Can a list start here? Start of text, or after . ? ! : ; or a line break.
+  function startsPoint(at) {
+    const before = text.slice(0, at).replace(/[ \t]+$/, "");
+    return before === "" || /[.?!:;\n]["'”’)*]*$/.test(before);
+  }
+
+  // Pick out the real lists: 1, 2, 3… (or a, b, c…) in order, in one style.
+  const chosen = [];
+  const numberedRanges = [];  // where each numbered (not lettered) list runs
+  ["(n)", "n.", "n)", "(a)"].forEach(function (style) {
+    const ofStyle = found.filter(function (f) { return f.style === style; });
+    let i = 0;
+    while (i < ofStyle.length) {
+      if (ofStyle[i].value !== 1 || !startsPoint(ofStyle[i].at)) { i += 1; continue; }
+      const list = [ofStyle[i]];
+      for (let j = i + 1; j < ofStyle.length; j++) {
+        if (ofStyle[j].value === list[list.length - 1].value + 1) { list.push(ofStyle[j]); }
+      }
+      if (list.length >= 2) {
+        list.forEach(function (f) { chosen.push(f); });
+        if (style !== "(a)") { numberedRanges.push([list[0].at, list[list.length - 1].at]); }
+        i = ofStyle.indexOf(list[list.length - 1]) + 1;
+      } else {
+        i += 1;
+      }
+    }
+  });
+  if (chosen.length === 0) { return text; }
+  chosen.sort(function (a, b) { return a.at - b.at; });
+
+  // Rebuild the text: a line break before each list number (indented if it's a lettered
+  // point inside a numbered one), and the invisible marker in front of the number.
+  let result = "";
+  let from = 0;
+  chosen.forEach(function (f) {
+    let before = text.slice(from, f.at);
+    const spaces = before.match(/\s*$/)[0];
+    const nested = f.style === "(a)" && numberedRanges.some(function (r) { return f.at > r[0] && f.at < r[1]; });
+    const indent = nested ? "\u2003\u2003" : "";
+    if (f.at > 0) {
+      before = before.slice(0, before.length - spaces.length) + (spaces.indexOf("\n") !== -1 ? spaces : "\n") + indent;
+    }
+    result += before + LIST_MARK;
+    from = f.at;
+  });
+  return result + text.slice(from);
+}
+
 // Replace what's inside an element with text that may contain **bold** parts.
 function setRichText(element, value) {
   element.textContent = "";
@@ -815,16 +913,18 @@ function setRichText(element, value) {
 // ---------- Highlighter ----------
 // Like setRichText, but each word can be tapped to highlight it (tap again to remove).
 // "key" says where her highlights are saved: a question ID, or e.g. "case-0002:facts".
-function setHighlightableText(element, value, key) {
+// "noLists": true for the full decision text, which keeps the Court's own layout.
+function setHighlightableText(element, value, key, noLists) {
   // No ID to save under (bad content)? Show the text normally, without highlighting.
   if (typeof key !== "string" || key === "" || key.indexOf("undefined") === 0) {
     delete element.dataset.hlKey;
-    setRichText(element, value);
+    element.textContent = "";
+    element.appendChild(richText(value, null, noLists));
     return;
   }
   element.textContent = "";
   element.dataset.hlKey = key;
-  element.appendChild(richText(value, highlightedWords(key)));
+  element.appendChild(richText(value, highlightedWords(key), noLists));
   joinHighlights(element);
 }
 
@@ -1214,7 +1314,7 @@ document.getElementById("full-text-btn").addEventListener("click", function () {
       if (currentCase !== theCase) { return; }  // she already opened a different case
       // Tap or drag to highlight, like the summary. Saved as e.g. "case-0001:fulltext".
       // (Shown as plain text only: nothing in the file can run as code.)
-      setHighlightableText(box, text, theCase.id + ":fulltext");
+      setHighlightableText(box, text, theCase.id + ":fulltext", true);
       box.hidden = false;
       document.getElementById("full-text-credit").hidden = false;
       fullTextShown = true;

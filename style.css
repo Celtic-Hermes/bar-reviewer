@@ -617,3 +617,8 @@ body.sheet-open { overflow: hidden; }
 @media (prefers-reduced-motion: reduce) {
   .sheet, .sheet-backdrop { transition: none; }
 }
+
+/* ---------- Numbered points (1) (2)… shown on their own lines ---------- */
+/* Line breaks are kept in every place content text is shown. */
+.alac dd, .key-points label span, .choice-text { white-space: pre-line; }
+.list-num { font-weight: 700; }
