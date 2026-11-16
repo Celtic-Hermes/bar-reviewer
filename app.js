@@ -12,9 +12,9 @@ const SUBJECTS = [
 
 // Extra subjects that are not one of the 8 bar subjects.
 // They appear on the home screen under a "Miscellaneous" heading.
-const MISC_SUBJECTS = [
-  "Communication Law"
-];
+// Empty for now (Communication Law moved to a topic under Mercantile Law);
+// the home screen shows a short "nothing here yet" note instead.
+const MISC_SUBJECTS = [];
 
 let allQuestions = [];      // filled in from data/questions.json
 let allCases = [];          // filled in from data/cases.json
@@ -102,6 +102,12 @@ function restoreSpot() {
 }
 
 function putBackSpot(spot) {
+  // Saved before Communication Law moved under Mercantile Law: follow the move.
+  // (The round itself is saved by question IDs, which didn't change.)
+  if (spot.subject === "Communication Law") {
+    spot.subject = "Mercantile Law";
+    if (spot.topic === "Right to Privacy") { spot.topic = "Communication Law"; }
+  }
   if (SUBJECTS.concat(MISC_SUBJECTS).indexOf(spot.subject) === -1) { return false; }
   currentSubject = spot.subject;
   currentTopic = (typeof spot.topic === "string") ? spot.topic : null;
@@ -210,6 +216,9 @@ function buildHome() {
   MISC_SUBJECTS.forEach(function (subject) {
     miscList.appendChild(makeSubjectCard(subject, "•"));
   });
+  // No extra subjects yet: show the placeholder note instead of an empty gap.
+  miscList.hidden = (MISC_SUBJECTS.length === 0);
+  document.getElementById("misc-empty").hidden = (MISC_SUBJECTS.length !== 0);
 }
 
 // One tappable subject card on the home screen.

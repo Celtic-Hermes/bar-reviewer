@@ -23,7 +23,7 @@ function loadProgress() {
     const data = JSON.parse(raw);
     if (!data || typeof data !== "object") { return emptyProgress(); }
     return {
-      subjects: data.subjects || {},
+      subjects: followMovedSubjects(data.subjects || {}),
       review: data.review || {},
       bookmarks: data.bookmarks || {},
       highlights: cleanHighlights(data.highlights)
@@ -33,7 +33,35 @@ function loadProgress() {
   }
 }
 
+// Subjects whose content moved somewhere else: old name → new name.
+// Her running totals saved under the old name are added to the new one, so her
+// scores keep showing (on the new subject's screen). Her review list, bookmarks and
+// highlights are saved by question/case ID, so they need nothing.
+// (If a subject with an old name here is ever added again, remove it from this list first.)
+const MOVED_SUBJECTS = {
+  "Communication Law": "Mercantile Law"  // now a topic under Mercantile Law
+};
+
+let subjectsWereMoved = false;  // true if loading her progress just moved some totals
+
+function followMovedSubjects(subjects) {
+  Object.keys(MOVED_SUBJECTS).forEach(function (oldName) {
+    const old = subjects[oldName];
+    if (!old || typeof old !== "object") { return; }
+    subjectsWereMoved = true;
+    const newName = MOVED_SUBJECTS[oldName];
+    const into = subjects[newName] || {};
+    ["mcqCorrect", "mcqAnswered", "got", "partly", "missed"].forEach(function (field) {
+      into[field] = wholeNumberOrZero(into[field]) + wholeNumberOrZero(old[field]);
+    });
+    subjects[newName] = into;
+    delete subjects[oldName];
+  });
+  return subjects;
+}
+
 let progress = loadProgress();
+if (subjectsWereMoved) { saveProgress(); }  // keep the moved totals
 
 // Returns true if it saved, false if the phone refused.
 function saveProgress() {
@@ -244,6 +272,8 @@ function readBackup(text) {
   Object.keys(p.bookmarks).forEach(function (id) {
     if (p.bookmarks[id]) { clean.bookmarks[id] = true; }
   });
+  // Backups made before a subject moved: follow the move.
+  followMovedSubjects(clean.subjects);
   // Older backups have no highlights; that's fine, they just start empty.
   clean.highlights = cleanHighlights(p.highlights);
 

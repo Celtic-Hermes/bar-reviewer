@@ -622,3 +622,6 @@ body.sheet-open { overflow: hidden; }
 /* Line breaks are kept in every place content text is shown. */
 .alac dd, .key-points label span, .choice-text { white-space: pre-line; }
 .list-num { font-weight: 700; }
+
+/* Home screen: the placeholder note when Miscellaneous has no subjects yet */
+.misc-empty { margin: 0 0 16px; font-size: 15px; }
