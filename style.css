@@ -16,6 +16,11 @@
   --highlight-text: #1f2328;
   --highlight-preview: rgba(255, 233, 92, 0.5);
   --highlight-removing: #fff4ad;  /* solid lighter yellow: about to lose its highlight */
+  /* Highlighter colors for the full decision text (base / drag preview / about to be removed).
+     "Important ruling" is the original yellow above. */
+  --hl-facts: #b9ebc5;    --hl-facts-preview: rgba(185, 235, 197, 0.55);    --hl-facts-removing: #e0f6e6;
+  --hl-issue: #ffc8dc;    --hl-issue-preview: rgba(255, 200, 220, 0.55);    --hl-issue-removing: #ffe6ef;
+  --hl-doctrine: #d3ef7d; --hl-doctrine-preview: rgba(211, 239, 125, 0.55); --hl-doctrine-removing: #ecf8c6;
 
   /* Button press effect, shared by every button (see "Pressing a button" below).
      Change these three to adjust all buttons at once. */
@@ -42,6 +47,9 @@
     --highlight-text: #15171b;
     --highlight-preview: rgba(232, 201, 58, 0.35);
     --highlight-removing: #655c2e;
+    --hl-facts: #7fcf93;    --hl-facts-preview: rgba(127, 207, 147, 0.35);    --hl-facts-removing: #3d5a44;
+    --hl-issue: #e99cb7;    --hl-issue-preview: rgba(233, 156, 183, 0.35);    --hl-issue-removing: #5c3a48;
+    --hl-doctrine: #b7d85c; --hl-doctrine-preview: rgba(183, 216, 92, 0.35);  --hl-doctrine-removing: #4f5a2c;
     --press-shade: rgba(255, 255, 255, 0.10);  /* in dark mode, a light tint shows better */
   }
 }
@@ -104,6 +112,19 @@ body {
 .prompt { margin: 0; white-space: pre-line; }  /* keep line breaks written in the question */
 
 /* ---------- Highlighter: tap a word to highlight it ---------- */
+/* Which color each highlighted word or space uses. Yellow everywhere, except in the
+   full decision text, where each word can have its own color (data-hl-color), and the
+   drag preview uses the color she has picked (hl-active-… on the text box). */
+.hl-word, .hl-gap {
+  --hl: var(--highlight); --hl-removing: var(--highlight-removing); --hl-preview: var(--highlight-preview);
+}
+[data-hl-color="facts"]    { --hl: var(--hl-facts);    --hl-removing: var(--hl-facts-removing); }
+[data-hl-color="issue"]    { --hl: var(--hl-issue);    --hl-removing: var(--hl-issue-removing); }
+[data-hl-color="doctrine"] { --hl: var(--hl-doctrine); --hl-removing: var(--hl-doctrine-removing); }
+.hl-active-facts .hl-word    { --hl-preview: var(--hl-facts-preview); }
+.hl-active-issue .hl-word    { --hl-preview: var(--hl-issue-preview); }
+.hl-active-doctrine .hl-word { --hl-preview: var(--hl-doctrine-preview); }
+
 /* "manipulation" stops iPhone from zooming in when she taps two words quickly. */
 .highlightable { touch-action: manipulation; }
 .hl-word {
@@ -112,23 +133,23 @@ body {
   border-radius: 3px;
 }
 .hl-word.hl-on {
-  background: var(--highlight);
+  background: var(--hl);
   color: var(--highlight-text);
-  box-shadow: 0 0 0 2px var(--highlight);    /* a little padding so it looks like a highlighter stroke */
+  box-shadow: 0 0 0 2px var(--hl);    /* a little padding so it looks like a highlighter stroke */
 }
 /* Two or more highlighted words in a row look like one continuous stripe:
    the space between them is yellow too (and just as tall as the words),
    and the corners where they meet are square. Only the outer ends stay rounded. */
 .hl-gap.hl-on {
-  background: var(--highlight);
-  box-shadow: 0 2px 0 var(--highlight), 0 -2px 0 var(--highlight);
+  background: var(--hl);
+  box-shadow: 0 2px 0 var(--hl), 0 -2px 0 var(--hl);
 }
 /* Dragging with a mouse: the browser's own blue selection is invisible inside question
    and case text (it would paint full-width across the lines). Instead, the words she's
    dragging over get a light yellow preview, and the real yellow when she lets go. */
 .highlightable::selection,
 .highlightable *::selection { background: transparent; }
-.hl-word.hl-preview:not(.hl-on) { background: var(--highlight-preview); }
+.hl-word.hl-preview:not(.hl-on) { background: var(--hl-preview); }
 
 /* Removing a highlight fades the yellow out (0.35 seconds) so she can see which words just
    lost it. A transition uses the timing of the state it's moving INTO, so:
@@ -151,12 +172,12 @@ body {
    So each word goes: full yellow -> lighter yellow (dragging) -> faded out (released). */
 /* (A solid color, not see-through, so the words and spaces join without visible seams.) */
 .hl-word.hl-on.hl-unpreview {
-  background: var(--highlight-removing);
-  box-shadow: 0 0 0 2px var(--highlight-removing);
+  background: var(--hl-removing);
+  box-shadow: 0 0 0 2px var(--hl-removing);
 }
 .hl-gap.hl-on.hl-unpreview {
-  background: var(--highlight-removing);
-  box-shadow: 0 2px 0 var(--highlight-removing), 0 -2px 0 var(--highlight-removing);
+  background: var(--hl-removing);
+  box-shadow: 0 2px 0 var(--hl-removing), 0 -2px 0 var(--hl-removing);
 }
 /* If she has asked her phone for less motion, skip the fade. */
 @media (prefers-reduced-motion: reduce) {
@@ -220,20 +241,21 @@ body {
    then springs back. The tint is an "inner shadow" laid on top of the button's
    own background, so it works the same on every button color.
    To change the effect, edit --press-scale, --press-shade and --press-time at the top. */
-.btn, .subject-card, .choice, .back-btn, .bookmark-btn {
+.btn, .subject-card, .choice, .back-btn, .bookmark-btn, .hl-swatch {
   transition: transform var(--press-time) ease-out, box-shadow var(--press-time) ease-out;
 }
 .btn:active:not(:disabled),
 .subject-card:active,
 .choice:active:not(:disabled),
 .back-btn:active,
-.bookmark-btn:active {
+.bookmark-btn:active,
+.hl-swatch:active {
   transform: scale(var(--press-scale));
   box-shadow: inset 0 0 0 100vmax var(--press-shade);
 }
 /* If she has asked her phone for less motion: keep the tint, skip the shrinking. */
 @media (prefers-reduced-motion: reduce) {
-  .btn, .subject-card, .choice, .back-btn, .bookmark-btn { --press-scale: 1; }
+  .btn, .subject-card, .choice, .back-btn, .bookmark-btn, .hl-swatch { --press-scale: 1; }
 }
 
 /* ---------- Home: subject cards ---------- */
@@ -625,3 +647,52 @@ body.sheet-open { overflow: hidden; }
 
 /* Home screen: the placeholder note when Miscellaneous has no subjects yet */
 .misc-empty { margin: 0 0 16px; font-size: 15px; }
+
+/* ---------- Highlighter color row (full decision text) ---------- */
+/* Pinned to the top of the screen while she scrolls through the full text
+   (it scrolls away together with the full-text card once she's past it). */
+.hl-palette {
+  position: sticky;
+  top: env(safe-area-inset-top, 0px);
+  z-index: 5;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+  margin: 16px -10px 0;
+  padding: 8px 10px;
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+}
+.hl-swatch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  min-height: 48px;
+  padding: 6px 2px;
+  background: transparent;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  color: var(--muted);
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.15;
+  text-align: center;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.hl-dot {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--hl);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12);
+}
+.hl-swatch[data-color="facts"]    { --hl: var(--hl-facts); }
+.hl-swatch[data-color="issue"]    { --hl: var(--hl-issue); }
+.hl-swatch[data-color="ruling"]   { --hl: var(--highlight); }
+.hl-swatch[data-color="doctrine"] { --hl: var(--hl-doctrine); }
+/* The picked color: outlined, with its name in full color. */
+.hl-swatch[aria-pressed="true"] { border-color: var(--primary); color: var(--text); background: var(--bg); }
+.hl-palette-hint { margin: 8px 0 0; font-size: 14px; color: var(--muted); }

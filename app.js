@@ -1062,6 +1062,12 @@ function setHighlightableText(element, value, key, noLists) {
   element.textContent = "";
   element.dataset.hlKey = key;
   element.appendChild(richText(value, highlightedWords(key), noLists));
+  if (element.classList.contains("hl-colored")) {
+    // The full decision text: each highlighted word has its own color.
+    element.querySelectorAll(".hl-word.hl-on").forEach(function (word) {
+      word.dataset.hlColor = highlightColorOf(key, Number(word.dataset.word));
+    });
+  }
   joinHighlights(element);
 }
 
@@ -1077,22 +1083,68 @@ function joinHighlights(element) {
   pieces.forEach(function (piece) {
     if (piece.classList.contains("hl-gap")) {
       piece.classList.remove("hl-on");
+      delete piece.dataset.hlColor;
       gapsBetween.push(piece);
       if (piece.textContent.indexOf("\n") !== -1) { canJoin = false; }
       return;
     }
     piece.classList.remove("hl-join-left", "hl-join-right");
+    // Different colors are never joined: each color stays its own stripe.
     const joined = canJoin && previousWord &&
-      previousWord.classList.contains("hl-on") && piece.classList.contains("hl-on");
+      previousWord.classList.contains("hl-on") && piece.classList.contains("hl-on") &&
+      (previousWord.dataset.hlColor || "") === (piece.dataset.hlColor || "");
     if (joined) {
       previousWord.classList.add("hl-join-right");
       piece.classList.add("hl-join-left");
-      gapsBetween.forEach(function (gap) { gap.classList.add("hl-on"); });
+      gapsBetween.forEach(function (gap) {
+        gap.classList.add("hl-on");
+        if (piece.dataset.hlColor) { gap.dataset.hlColor = piece.dataset.hlColor; }
+      });
     }
     previousWord = piece;
     gapsBetween = [];
     canJoin = true;
   });
+}
+
+// ---------- Highlighter colors (full decision text only) ----------
+// She picks a color from the row of swatches, then taps (or drags over) words:
+// - a plain word, or a word in another color -> gets the picked color;
+// - a word already in the picked color -> loses its highlight (it fades out).
+let activeHighlightColor = DEFAULT_HIGHLIGHT_COLOR;
+
+function pickHighlightColor(color) {
+  if (HIGHLIGHT_COLORS.indexOf(color) === -1) { return; }
+  activeHighlightColor = color;
+  document.querySelectorAll(".hl-swatch").forEach(function (swatch) {
+    swatch.setAttribute("aria-pressed", swatch.dataset.color === color ? "true" : "false");
+  });
+  // The drag preview uses the picked color (see style.css).
+  const box = document.getElementById("full-text");
+  HIGHLIGHT_COLORS.forEach(function (c) { box.classList.toggle("hl-active-" + c, c === color); });
+}
+
+document.querySelectorAll(".hl-swatch").forEach(function (swatch) {
+  swatch.addEventListener("click", function () { pickHighlightColor(swatch.dataset.color); });
+});
+
+// Is this highlighted word in the picked color? (Then tapping or dragging removes it.)
+function inActiveColor(word) {
+  return word.classList.contains("hl-on") && (word.dataset.hlColor || DEFAULT_HIGHLIGHT_COLOR) === activeHighlightColor;
+}
+
+function tapColoredWord(element, key, word) {
+  const position = Number(word.dataset.word);
+  if (inActiveColor(word)) {
+    setHighlights(key, [position], false);
+    word.classList.remove("hl-on");
+    delete word.dataset.hlColor;
+  } else {
+    colorHighlights(key, [position], activeHighlightColor);
+    word.classList.add("hl-on");
+    word.dataset.hlColor = activeHighlightColor;
+  }
+  joinHighlights(element);
 }
 
 // The word she highlighted most recently in the question prompt (its number), so
@@ -1110,6 +1162,10 @@ function makeHighlightable(elementId) {
     const word = event.target.closest(".hl-word");
     const key = element.dataset.hlKey;
     if (!word || !key || !element.contains(word)) { return; }
+    if (element.classList.contains("hl-colored")) {
+      tapColoredWord(element, key, word);
+      return;
+    }
     toggleHighlight(key, Number(word.dataset.word));
     word.classList.toggle("hl-on");
     joinHighlights(element);
@@ -1421,6 +1477,8 @@ function resetFullText() {
   box.textContent = "";
   delete box.dataset.hlKey;
   document.getElementById("full-text-credit").hidden = true;
+  document.getElementById("hl-palette").hidden = true;
+  document.getElementById("hl-palette-hint").hidden = true;
 }
 
 function showFullTextNote(text) {
@@ -1454,6 +1512,8 @@ document.getElementById("full-text-btn").addEventListener("click", function () {
       setHighlightableText(box, text, theCase.id + ":fulltext", true);
       box.hidden = false;
       document.getElementById("full-text-credit").hidden = false;
+      document.getElementById("hl-palette").hidden = false;
+      document.getElementById("hl-palette-hint").hidden = false;
       fullTextShown = true;
       button.disabled = false;
       button.textContent = "Hide the full text";

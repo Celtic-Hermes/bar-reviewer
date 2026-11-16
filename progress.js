@@ -8,11 +8,20 @@
 //   highlights: words she highlighted, as a list of word positions (0 = first word).
 //               Stored by question ID (e.g. "q-0007") for the question text, and by
 //               case ID + part (e.g. "case-0002:facts") for a case's facts, issue and ruling.
+//   highlightColors: for the full decision text only ("case-0002:fulltext"), the color of
+//               each highlighted word: { "case-0002:fulltext": { "15": "facts", … } }.
+//               A highlighted word with no color saved is yellow ("ruling").
 
 const STORAGE_KEY = "barReviewer.progress.v1";
 
+// Highlighter colors for the full decision text (defined up here because loading her
+// progress, just below, already needs them).
+// facts = green, issue = pink, ruling = yellow (the original highlighter), doctrine = yellow-green.
+const HIGHLIGHT_COLORS = ["facts", "issue", "ruling", "doctrine"];
+const DEFAULT_HIGHLIGHT_COLOR = "ruling";
+
 function emptyProgress() {
-  return { subjects: {}, review: {}, bookmarks: {}, highlights: {} };
+  return { subjects: {}, review: {}, bookmarks: {}, highlights: {}, highlightColors: {} };
 }
 
 // Read saved progress. If there's none, or it's damaged, start fresh instead of crashing.
@@ -26,7 +35,8 @@ function loadProgress() {
       subjects: followMovedSubjects(data.subjects || {}),
       review: data.review || {},
       bookmarks: data.bookmarks || {},
-      highlights: cleanHighlights(data.highlights)
+      highlights: cleanHighlights(data.highlights),
+      highlightColors: cleanHighlightColors(data.highlightColors)
     };
   } catch (e) {
     return emptyProgress();
@@ -173,6 +183,53 @@ function cleanHighlights(value) {
   return clean;
 }
 
+// ---------- Highlighter colors (full decision text only) ----------
+
+// Keep only sensible color entries (a damaged value can't break anything).
+function cleanHighlightColors(value) {
+  const clean = {};
+  if (!isPlainObject(value)) { return clean; }
+  Object.keys(value).forEach(function (key) {
+    if (!isPlainObject(value[key])) { return; }
+    const colors = {};
+    Object.keys(value[key]).forEach(function (position) {
+      if (/^\d+$/.test(position) && HIGHLIGHT_COLORS.indexOf(value[key][position]) !== -1) {
+        colors[position] = value[key][position];
+      }
+    });
+    if (Object.keys(colors).length > 0) { clean[key] = colors; }
+  });
+  return clean;
+}
+
+// The color of one highlighted word (yellow if none was saved).
+function highlightColorOf(key, position) {
+  const colors = progress.highlightColors[key];
+  return (colors && colors[position]) || DEFAULT_HIGHLIGHT_COLOR;
+}
+
+// Highlight several words in one color (new words, or a different color). Saves once.
+function colorHighlights(key, positions, color) {
+  const list = highlightedWords(key).slice();
+  const colors = progress.highlightColors[key] || {};
+  positions.forEach(function (position) {
+    if (list.indexOf(position) === -1) { list.push(position); }
+    colors[position] = color;
+  });
+  list.sort(function (a, b) { return a - b; });
+  progress.highlights[key] = list;
+  progress.highlightColors[key] = colors;
+  saveProgress();
+}
+
+// Forget the colors of words that lost their highlight.
+function forgetColors(key, positions) {
+  const colors = progress.highlightColors[key];
+  if (!colors) { return; }
+  positions.forEach(function (position) { delete colors[position]; });
+  if (Object.keys(colors).length === 0) { delete progress.highlightColors[key]; }
+}
+
 // The highlighted word positions for one question (or one part of a case).
 function highlightedWords(key) {
   return progress.highlights[key] || [];
@@ -187,6 +244,7 @@ function toggleHighlight(key, position) {
     list.sort(function (a, b) { return a - b; });
   } else {
     list.splice(spot, 1);
+    forgetColors(key, [position]);
   }
   if (list.length > 0) {
     progress.highlights[key] = list;
@@ -205,6 +263,7 @@ function setHighlights(key, positions, turnOn) {
     if (turnOn && spot === -1) { list.push(position); }
     if (!turnOn && spot !== -1) { list.splice(spot, 1); }
   });
+  if (!turnOn) { forgetColors(key, positions); }
   list.sort(function (a, b) { return a - b; });
   if (list.length > 0) {
     progress.highlights[key] = list;
@@ -276,6 +335,8 @@ function readBackup(text) {
   followMovedSubjects(clean.subjects);
   // Older backups have no highlights; that's fine, they just start empty.
   clean.highlights = cleanHighlights(p.highlights);
+  // Older backups have no highlight colors; their highlights show yellow.
+  clean.highlightColors = cleanHighlightColors(p.highlightColors);
 
   const savedAt = new Date(data.savedAt);
   return { progress: clean, savedAt: isNaN(savedAt) ? null : savedAt };
