@@ -12,3 +12,7 @@
 *.pem
 *.key
 secrets*
+
+# Private scratch material that stays only on this Mac (raw case text, drafts, thinking).
+# Never committed, never uploaded to GitHub, never part of the app.
+notes/
