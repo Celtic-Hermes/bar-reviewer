@@ -602,7 +602,7 @@ body {
   padding: 8px 18px calc(24px + env(safe-area-inset-bottom));
 }
 .sheet-note {
-  margin: 4px 0 12px;
+  margin: 8px 0 4px;
   padding: 10px 12px;
   border-radius: 10px;
   background: var(--banner-bg);
@@ -612,7 +612,6 @@ body {
 .sheet-part { margin: 0 0 8px; color: var(--muted); font-size: 14px; font-weight: 600; }
 .sheet-text { white-space: pre-wrap; overflow-wrap: anywhere; line-height: 1.6; }
 .sheet-text .find-match { font-weight: 700; font-style: italic; }
-.sheet-text .find-cut { color: var(--muted); }
 body.sheet-open { overflow: hidden; }
 @media (prefers-reduced-motion: reduce) {
   .sheet, .sheet-backdrop { transition: none; }

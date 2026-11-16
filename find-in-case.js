@@ -11,8 +11,13 @@
 // The panel closes by swiping it down, tapping outside it, or tapping ✕.
 // Uses things from app.js: session, findCase, loadCaseText, highlightedWords, lastPromptWord.
 
-const CONTEXT_SENTENCES = 2;   // sentences shown before and after the match
-const CONTEXT_MAX_WORDS = 90;  // but never more than this many words on each side
+// How much of the decision to show around a match: the whole paragraph it's in, plus
+// neighbouring paragraphs, so the Court's reasoning is visible and not just one sentence.
+// Before the match (where the reasoning usually is): add earlier paragraphs until there
+// are about BEFORE_MIN words, but at most BEFORE_PARAGRAPHS paragraphs and BEFORE_MAX words,
+// and stop at a section heading (like "Our Ruling"). After the match: a little less.
+const BEFORE_MIN = 200, BEFORE_MAX = 450, BEFORE_PARAGRAPHS = 3;
+const AFTER_MIN = 60, AFTER_MAX = 250, AFTER_PARAGRAPHS = 2;
 
 const caseTextMemory = {};     // full texts already downloaded while the app is open
 
@@ -26,15 +31,20 @@ function comparable(word) {
 }
 
 // Every word of a text, with where it sits in the text (so we can show the original).
+// Dashes count as spaces ("privacy––usually" is two words), and so does a period run
+// straight into a capital letter ("person.Availment", a typo in one decision).
 function wordsOf(text) {
   const words = [];
-  const pattern = /\S+/g;
+  const pattern = /[^\s—–]+/g;
   let found;
   while ((found = pattern.exec(text)) !== null) {
-    const key = comparable(found[0]);
-    if (key) {
-      words.push({ key: key, raw: found[0], start: found.index, end: found.index + found[0].length });
-    }
+    found[0].replace(/([a-z]\.)(?=[A-Z])/g, "$1\u0000").split("\u0000").reduce(function (offset, piece) {
+      const key = comparable(piece);
+      if (key) {
+        words.push({ key: key, raw: piece, start: found.index + offset, end: found.index + offset + piece.length });
+      }
+      return offset + piece.length;
+    }, 0);
   }
   return words;
 }
@@ -87,25 +97,87 @@ function paragraphBreakBefore(text, words, i) {
   return i > 0 && text.slice(words[i - 1].end, words[i].start).indexOf("\n\n") !== -1;
 }
 
-// From the match, go back and forward a few sentences (stopping at paragraph edges).
-function contextAround(text, words, first, last) {
-  let from = first;
-  let ends = 0;
-  while (from > 0 && first - from < CONTEXT_MAX_WORDS && !paragraphBreakBefore(text, words, from)) {
-    if (endsSentence(words[from - 1])) {
-      ends += 1;
-      if (ends > CONTEXT_SENTENCES) { break; }
-    }
-    from -= 1;
+// The first and last word of the paragraph that word i is in.
+function paragraphStart(text, words, i) {
+  while (i > 0 && !paragraphBreakBefore(text, words, i)) { i -= 1; }
+  return i;
+}
+function paragraphEnd(text, words, i) {
+  while (i < words.length - 1 && !paragraphBreakBefore(text, words, i + 1)) { i += 1; }
+  return i;
+}
+
+// A short paragraph with no sentence in it, like "Our Ruling" or "The Antecedents".
+function isHeading(words, from, to) {
+  return to - from < 8 && !endsSentence(words[to]);
+}
+
+// Where the "Footnotes" list starts (or the end of the text if there is none).
+function footnotesStart(text, words) {
+  for (let i = words.length - 1; i > 0; i--) {
+    if (words[i].raw === "Footnotes" && paragraphBreakBefore(text, words, i)) { return i; }
   }
-  let to = last;
-  ends = endsSentence(words[last]) ? 1 : 0;
-  while (to < words.length - 1 && to - last < CONTEXT_MAX_WORDS && ends < CONTEXT_SENTENCES + 1 &&
-         !paragraphBreakBefore(text, words, to + 1)) {
-    to += 1;
-    if (endsSentence(words[to])) { ends += 1; }
+  return words.length;
+}
+
+// The stretch of the decision to show around words first…last (see the numbers at the top).
+// Never mixes the decision's body with its footnotes.
+function contextAround(text, words, first, last) {
+  const notes = footnotesStart(text, words);
+  const lowest = first >= notes ? notes + 1 : 0;
+  const highest = first >= notes ? words.length - 1 : notes - 1;
+
+  let from = paragraphStart(text, words, first);
+  let added = 0;
+  while (from > lowest && added < BEFORE_PARAGRAPHS && first - from < BEFORE_MIN) {
+    const start = Math.max(lowest, paragraphStart(text, words, from - 1));
+    if (first - start > BEFORE_MAX) { break; }
+    const heading = isHeading(words, start, from - 1);
+    from = start;
+    added += 1;
+    if (heading) { break; }  // the section starts here
+  }
+
+  let to = Math.min(highest, paragraphEnd(text, words, last));
+  added = 0;
+  while (to < highest && added < AFTER_PARAGRAPHS && to - last < AFTER_MIN) {
+    const end = Math.min(highest, paragraphEnd(text, words, to + 1));
+    if (isHeading(words, to + 1, end) || end - last > AFTER_MAX) { break; }  // next section, or too long
+    to = end;
+    added += 1;
   }
   return { from: from, to: to };
+}
+
+// Where the question's source excerpt is in the decision, as word positions, or null.
+// Quotes sometimes leave words out ("x x x", "…") or add words in [brackets], so if the
+// whole quote isn't found word for word, look for its first and last few words.
+function findExcerpt(words, excerpt) {
+  const keys = wordsOf(plainText(excerpt || "")).map(function (w) { return w.key; });
+  if (keys.length < 3) { return null; }
+  const whole = findPhrase(words, keys)[0];
+  if (whole !== undefined) { return { first: whole, last: whole + keys.length - 1 }; }
+  const size = Math.min(6, keys.length);
+  const head = findPhrase(words, keys.slice(0, size));
+  const tail = findPhrase(words, keys.slice(keys.length - size));
+  for (let h = 0; h < head.length; h++) {
+    for (let t = 0; t < tail.length; t++) {
+      const last = tail[t] + size - 1;
+      if (last > head[h] && last - head[h] < keys.length * 2) { return { first: head[h], last: last }; }
+    }
+  }
+  return null;
+}
+
+// Fill the panel's text area: the context, with words first…last in bold italics.
+// Built from plain text pieces only (never innerHTML).
+function showInContext(text, words, first, last) {
+  const range = contextAround(text, words, first, last);
+  const box = document.getElementById("find-text");
+  box.textContent = "";
+  box.appendChild(document.createTextNode(text.slice(words[range.from].start, words[first].start)));
+  addPiece(box, text.slice(words[first].start, words[last].end), "find-match");
+  box.appendChild(document.createTextNode(text.slice(words[last].end, words[range.to].end)));
 }
 
 // ---------- Searching ----------
@@ -171,22 +243,10 @@ function showMatch(found) {
   document.getElementById("find-case").textContent = caseLabel(found.caseId);
   const note = document.getElementById("find-note");
   note.hidden = found.count < 2;
-  note.textContent = "These words appear " + found.count + " times in the decision. Showing the one nearest this question's source passage.";
+  note.textContent = "Appears " + found.count + " times. Showing the one nearest this question's source passage.";
   document.getElementById("find-part").hidden = true;
 
-  const range = contextAround(found.text, found.words, found.first, found.last);
-  const w = found.words;
-  const box = document.getElementById("find-text");
-  box.textContent = "";
-  // Built from plain text pieces only (never innerHTML).
-  // "…" only where the passage is cut in the middle of a sentence.
-  const cutBefore = range.from > 0 && !paragraphBreakBefore(found.text, w, range.from) && !endsSentence(w[range.from - 1]);
-  const cutAfter = range.to < w.length - 1 && !paragraphBreakBefore(found.text, w, range.to + 1) && !endsSentence(w[range.to]);
-  if (cutBefore) { addPiece(box, "… ", "find-cut"); }
-  box.appendChild(document.createTextNode(found.text.slice(w[range.from].start, w[found.first].start)));
-  addPiece(box, found.text.slice(w[found.first].start, w[found.last].end), "find-match");
-  box.appendChild(document.createTextNode(found.text.slice(w[found.last].end, w[range.to].end)));
-  if (cutAfter) { addPiece(box, " …", "find-cut"); }
+  showInContext(found.text, found.words, found.first, found.last);
 }
 
 function addPiece(parent, text, className) {
@@ -198,7 +258,9 @@ function addPiece(parent, text, className) {
 }
 
 // No literal match (or nothing to search): show the question's own source passage.
-function showClosest(question, reason) {
+// If the case's full text is available, the passage is shown inside its paragraphs
+// (in bold italics), so the reasoning around it is visible too.
+function showClosest(question, reason, sourceText) {
   const source = question.source || {};
   document.getElementById("find-title").textContent = "Closest sourced passage";
   document.getElementById("find-case").textContent = caseLabel(null, source) || "Source not recorded";
@@ -211,6 +273,14 @@ function showClosest(question, reason) {
   const box = document.getElementById("find-text");
   box.textContent = "";
   const excerpt = typeof source.excerpt === "string" ? source.excerpt.trim() : "";
+  if (excerpt && sourceText) {
+    const words = wordsOf(sourceText);
+    const spot = findExcerpt(words, excerpt);
+    if (spot) {
+      showInContext(sourceText, words, spot.first, spot.last);
+      return;
+    }
+  }
   box.appendChild(document.createTextNode(excerpt ? "“" + plainText(excerpt) + "”" : "No source passage is recorded for this question yet."));
 }
 
@@ -251,7 +321,9 @@ function centerMatch() {
   if (!match) { return; }
   const bodyBox = body.getBoundingClientRect();
   const matchBox = match.getBoundingClientRect();
-  body.scrollTop = Math.max(0, matchBox.top - bodyBox.top - (body.clientHeight - matchBox.height) / 2);
+  // A long passage that won't fit: start it a little below the top so its beginning shows.
+  const room = Math.max(40, (body.clientHeight - matchBox.height) / 2);
+  body.scrollTop = Math.max(0, matchBox.top - bodyBox.top - room);
 }
 
 document.getElementById("find-btn").addEventListener("click", function () {
@@ -267,24 +339,37 @@ document.getElementById("find-btn").addEventListener("click", function () {
   document.getElementById("find-text").textContent = phrase ? "Looking for “" + phrase + "” in the decision…" : "";
   openSheet();
 
+  const caseIds = casesToSearch(question);
+  const stillHere = function () { return sheetOpen && session.questions[session.index] === question; };
+
+  // The fallback: the question's source passage, inside its paragraphs if the
+  // source case's full text can be loaded (as plain quote otherwise).
+  function closest(reason) {
+    const sourceId = caseIds[0];
+    const loaded = sourceId ? getCaseText(sourceId).catch(function () { return null; }) : Promise.resolve(null);
+    loaded.then(function (text) {
+      if (!stillHere()) { return; }
+      showClosest(question, reason, text);
+      centerMatch();
+    });
+  }
+
   if (!phrase) {
-    showClosest(question, "Tip: highlight words in the question first (tap them), then tap Find in case to look for them in the decision. Meanwhile, here is this question's source passage.");
-    centerMatch();
+    closest("Tip: highlight words in the question, then tap Find in case. For now: the passage this question is based on, in bold italics.");
     return;
   }
-  const caseIds = casesToSearch(question);
   searchCases(caseIds, phrase, (question.source || {}).excerpt).then(function (result) {
-    if (!sheetOpen || session.questions[session.index] !== question) { return; }
+    if (!stillHere()) { return; }
     if (result.found) {
       showMatch(result.found);
+      centerMatch();
     } else if (caseIds.length === 0) {
-      showClosest(question, "This question isn't linked to a case with full text, so here is its source passage.");
+      closest("This question isn't linked to a case with full text. Here is its source passage.");
     } else if (result.couldntLoad) {
-      showClosest(question, "Couldn't load the case's full text (you may be offline, and it hasn't been opened on this phone before). Here is this question's source passage instead.");
+      closest("Couldn't load the full text (offline, and not opened on this phone before). Here is the source passage.");
     } else {
-      showClosest(question, "“" + phrase + "” doesn't appear word for word in the decision (questions are usually reworded). Here is the passage this question was based on.");
+      closest("Not word for word in the decision (questions are reworded). Showing the passage this question is based on, in bold italics.");
     }
-    centerMatch();
   });
 });
 
