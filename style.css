@@ -76,18 +76,6 @@ body {
   padding: calc(16px + env(safe-area-inset-top)) 16px calc(32px + env(safe-area-inset-bottom));
 }
 
-.placeholder-banner {
-  margin: 0 0 16px;
-  padding: 8px 12px;
-  border-radius: 8px;
-  background: var(--banner-bg);
-  color: var(--banner-text);
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  text-align: center;
-}
-
 .question-header { margin-bottom: 12px; }
 .subject { margin: 0; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--primary); }
 .topic { margin: 2px 0 0; font-size: 15px; color: var(--muted); }
