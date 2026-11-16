@@ -5,11 +5,14 @@
 //   subjects:  running totals per subject (multiple-choice right/answered, essay ratings)
 //   review:    questions to look at again, by ID (a wrong pick, or an essay rated Partly / Missed it)
 //   bookmarks: questions she bookmarked, by ID
+//   highlights: words she highlighted, as a list of word positions (0 = first word).
+//               Stored by question ID (e.g. "q-0007") for the question text, and by
+//               case ID + part (e.g. "case-0002:facts") for a case's facts, issue and ruling.
 
 const STORAGE_KEY = "barReviewer.progress.v1";
 
 function emptyProgress() {
-  return { subjects: {}, review: {}, bookmarks: {} };
+  return { subjects: {}, review: {}, bookmarks: {}, highlights: {} };
 }
 
 // Read saved progress. If there's none, or it's damaged, start fresh instead of crashing.
@@ -22,7 +25,8 @@ function loadProgress() {
     return {
       subjects: data.subjects || {},
       review: data.review || {},
-      bookmarks: data.bookmarks || {}
+      bookmarks: data.bookmarks || {},
+      highlights: cleanHighlights(data.highlights)
     };
   } catch (e) {
     return emptyProgress();
@@ -90,6 +94,44 @@ function toggleBookmark(questionId) {
   saveProgress();
 }
 
+// ---------- Highlights ----------
+// Keep only lists of whole word positions, so damaged saved data can't break anything.
+function cleanHighlights(value) {
+  const clean = {};
+  if (!value || typeof value !== "object" || Array.isArray(value)) { return clean; }
+  Object.keys(value).forEach(function (key) {
+    if (!Array.isArray(value[key])) { return; }
+    const positions = value[key].filter(function (n) {
+      return typeof n === "number" && isFinite(n) && n >= 0 && Math.floor(n) === n;
+    });
+    if (positions.length > 0) { clean[key] = positions; }
+  });
+  return clean;
+}
+
+// The highlighted word positions for one question (or one part of a case).
+function highlightedWords(key) {
+  return progress.highlights[key] || [];
+}
+
+// Tap a word: highlight it, or remove its highlight if it already has one.
+function toggleHighlight(key, position) {
+  const list = highlightedWords(key).slice();
+  const spot = list.indexOf(position);
+  if (spot === -1) {
+    list.push(position);
+    list.sort(function (a, b) { return a - b; });
+  } else {
+    list.splice(spot, 1);
+  }
+  if (list.length > 0) {
+    progress.highlights[key] = list;
+  } else {
+    delete progress.highlights[key];
+  }
+  saveProgress();
+}
+
 // ---------- Back up and restore ----------
 // A backup file is her progress (exactly as saved above), wrapped with a label
 // so the app can recognize its own files, plus the date it was made.
@@ -148,6 +190,8 @@ function readBackup(text) {
   Object.keys(p.bookmarks).forEach(function (id) {
     if (p.bookmarks[id]) { clean.bookmarks[id] = true; }
   });
+  // Older backups have no highlights; that's fine, they just start empty.
+  clean.highlights = cleanHighlights(p.highlights);
 
   const savedAt = new Date(data.savedAt);
   return { progress: clean, savedAt: isNaN(savedAt) ? null : savedAt };

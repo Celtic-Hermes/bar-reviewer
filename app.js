@@ -260,7 +260,7 @@ function showQuestion() {
     "Question " + (session.index + 1) + " of " + session.questions.length;
   document.getElementById("subject").textContent = question.subject;
   document.getElementById("topic").textContent = question.topic;
-  setRichText(document.getElementById("prompt"), question.prompt);
+  setHighlightableText(document.getElementById("prompt"), question.prompt, question.id);
   // Anything not marked "verified" (including a missing status) shows the draft label.
   document.getElementById("draft-badge").hidden = (question.status === "verified");
   showBookmark(question);
@@ -470,21 +470,49 @@ let questionScrollSpot = 0;    // where she was on the question screen
 // SAFETY: this never uses innerHTML. Every piece of text is added as plain text,
 // and the only tag ever created is <strong>. So if the JSON contains something
 // like <script> or <b>, it shows up on screen as those characters and never runs.
-function richText(value) {
+//
+// If "highlighted" is given (a list of word positions), every word is also put in
+// its own small tappable <span>, numbered 0, 1, 2… from the start, and the words in
+// the list get the yellow highlight. Still no innerHTML: words are added as plain text.
+function richText(value, highlighted) {
   const text = (value === null || value === undefined) ? "" : String(value);
   const fragment = document.createDocumentFragment();
+  let wordNumber = 0;
+
+  // Add a piece of text to "parent": as plain text, or word by word if highlighting.
+  function addText(parent, piece) {
+    if (!highlighted) {
+      parent.appendChild(document.createTextNode(piece));
+      return;
+    }
+    piece.split(/(\s+)/).forEach(function (bit) {
+      if (bit === "") { return; }
+      if (/^\s+$/.test(bit)) {
+        parent.appendChild(document.createTextNode(bit));  // spaces and line breaks stay as they are
+        return;
+      }
+      const word = document.createElement("span");
+      word.className = "hl-word";
+      word.dataset.word = wordNumber;
+      if (highlighted.indexOf(wordNumber) !== -1) { word.classList.add("hl-on"); }
+      word.textContent = bit;
+      parent.appendChild(word);
+      wordNumber += 1;
+    });
+  }
+
   const parts = text.split("**");
   // A ** with no partner (an odd one out) is shown as-is, not treated as bold.
   const lastPaired = (parts.length % 2 === 0) ? parts.length - 2 : parts.length - 1;
   parts.forEach(function (part, i) {
     if (i > lastPaired) {
-      fragment.appendChild(document.createTextNode("**" + part));
+      addText(fragment, "**" + part);
     } else if (i % 2 === 1) {
       const strong = document.createElement("strong");
-      strong.textContent = part;
+      addText(strong, part);
       fragment.appendChild(strong);
     } else {
-      fragment.appendChild(document.createTextNode(part));
+      addText(fragment, part);
     }
   });
   return fragment;
@@ -495,6 +523,37 @@ function setRichText(element, value) {
   element.textContent = "";
   element.appendChild(richText(value));
 }
+
+// ---------- Highlighter ----------
+// Like setRichText, but each word can be tapped to highlight it (tap again to remove).
+// "key" says where her highlights are saved: a question ID, or e.g. "case-0002:facts".
+function setHighlightableText(element, value, key) {
+  // No ID to save under (bad content)? Show the text normally, without highlighting.
+  if (typeof key !== "string" || key === "" || key.indexOf("undefined") === 0) {
+    delete element.dataset.hlKey;
+    setRichText(element, value);
+    return;
+  }
+  element.textContent = "";
+  element.dataset.hlKey = key;
+  element.appendChild(richText(value, highlightedWords(key)));
+}
+
+// Listen for taps on the words inside one text box. Set up once per box when the app starts.
+// Only taps on a word in this box do anything, so buttons elsewhere are never affected.
+function makeHighlightable(elementId) {
+  const element = document.getElementById(elementId);
+  element.classList.add("highlightable");
+  element.addEventListener("click", function (event) {
+    const word = event.target.closest(".hl-word");
+    const key = element.dataset.hlKey;
+    if (!word || !key || !element.contains(word)) { return; }
+    toggleHighlight(key, Number(word.dataset.word));
+    word.classList.toggle("hl-on");
+  });
+}
+
+["prompt", "case-facts", "case-issue", "case-ruling"].forEach(makeHighlightable);
 
 // Remove the ** marks (used for short previews, where bold isn't shown).
 function plainText(value) {
@@ -516,9 +575,9 @@ function openCase(theCase, cameFrom) {
     [theCase.grNumber, theCase.year].filter(Boolean).join(" · ");
   // Anything not marked "verified" (including a missing status) shows the draft label.
   document.getElementById("case-draft-badge").hidden = (theCase.status === "verified");
-  setRichText(document.getElementById("case-facts"), caseText(theCase.facts));
-  setRichText(document.getElementById("case-issue"), caseText(theCase.issue));
-  setRichText(document.getElementById("case-ruling"), caseText(theCase.ruling));
+  setHighlightableText(document.getElementById("case-facts"), caseText(theCase.facts), theCase.id + ":facts");
+  setHighlightableText(document.getElementById("case-issue"), caseText(theCase.issue), theCase.id + ":issue");
+  setHighlightableText(document.getElementById("case-ruling"), caseText(theCase.ruling), theCase.id + ":ruling");
   setRichText(document.getElementById("case-doctrine"), caseText(theCase.keyDoctrine));
 
   // Source: a tappable link if it's a web address, otherwise plain text.

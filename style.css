@@ -12,6 +12,8 @@
   --got: #1f7a4d;
   --partly: #b26a00;
   --missed: #b3261e;
+  --highlight: #ffe95c;
+  --highlight-text: #1f2328;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -28,6 +30,8 @@
     --got: #5cc48d;
     --partly: #f0a84a;
     --missed: #f08077;
+    --highlight: #e8c93a;
+    --highlight-text: #15171b;
   }
 }
 
@@ -87,6 +91,20 @@ body {
 }
 
 .prompt { margin: 0; white-space: pre-line; }  /* keep line breaks written in the question */
+
+/* ---------- Highlighter: tap a word to highlight it ---------- */
+/* "manipulation" stops iPhone from zooming in when she taps two words quickly. */
+.highlightable { touch-action: manipulation; }
+.hl-word {
+  cursor: pointer;                           /* tells iPhone Safari these words can be tapped */
+  -webkit-tap-highlight-color: transparent;  /* no grey flash on tap */
+  border-radius: 3px;
+}
+.hl-word.hl-on {
+  background: var(--highlight);
+  color: var(--highlight-text);
+  box-shadow: 0 0 0 2px var(--highlight);    /* a little padding so it looks like a highlighter stroke */
+}
 
 /* ALAC answer: each part gets a small heading. */
 .alac { margin: 0; }

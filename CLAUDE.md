@@ -116,6 +116,7 @@ Exactly 4 choices (A–D) and exactly one correct answer. She gets instant feedb
 ## Her progress (saved only on her phone)
 - Saved in the phone's browser storage (`localStorage`). Nothing is sent anywhere, and there are no accounts.
 - Remember: **score per subject**, **questions she missed**, and **bookmarked questions**.
+- Also remember her **highlighted words** (tap a word to highlight it): stored by question ID, or by case ID + part (e.g. `case-0002:facts`), as a list of word positions. If a question's prompt text is edited later, her saved highlights may land on different words.
 - Counting: a multiple-choice question is "missed" if answered wrong. An essay rated **Partly** or **Missed it** goes into her review list.
 - iPhone note: she should use Safari's **Add to Home Screen**. iPhones can clear saved data for websites that haven't been opened in a while, but apps added to the home screen are better protected. The home screen has **Back up my progress** (saves a file via the Share menu → Save to Files) and **Restore progress** (loads that file back).
 
