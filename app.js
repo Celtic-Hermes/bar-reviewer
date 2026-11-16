@@ -869,7 +869,7 @@ function makeHighlightable(elementId) {
   });
 }
 
-["prompt", "case-facts", "case-issue", "case-ruling"].forEach(makeHighlightable);
+["prompt", "case-facts", "case-issue", "case-ruling", "full-text"].forEach(makeHighlightable);
 
 // ---------- Highlighter with a mouse: click and drag ----------
 // On a touchscreen she taps one word at a time (above). With a mouse or trackpad she
@@ -902,12 +902,43 @@ function selectedWords(range) {
   document.querySelectorAll(".highlightable").forEach(function (element) {
     const key = element.dataset.hlKey;
     if (!key || !range.intersectsNode(element)) { return; }
-    const words = Array.prototype.filter.call(element.querySelectorAll(".hl-word"), function (word) {
-      return rangeTouchesWord(range, word);
-    });
+    const words = wordsInRange(range, element, element.querySelectorAll(".hl-word"));
     if (words.length > 0) { picked.push({ element: element, key: key, words: words }); }
   });
   return picked;
+}
+
+// The words (in reading order) that the selection covers.
+// Fast way: every word carries its number (0, 1, 2…), so read the numbers of the words
+// where the selection starts and ends and take everything in between. (Comparing the
+// selection with each word one by one is very slow in a long decision.)
+// If the selection starts or ends somewhere unusual, fall back to checking each word.
+function wordsInRange(range, element, allWords) {
+  const first = element.contains(range.startContainer)
+    ? wordNumberAt(range.startContainer, range.startOffset, true) : 0;
+  const last = element.contains(range.endContainer)
+    ? wordNumberAt(range.endContainer, range.endOffset, false) : allWords.length - 1;
+  if (first === null || last === null) {
+    return Array.prototype.filter.call(allWords, function (word) { return rangeTouchesWord(range, word); });
+  }
+  return Array.prototype.slice.call(allWords, Math.max(0, first), Math.min(allWords.length - 1, last) + 1);
+}
+
+// The number of the first (isStart) or last word a selection edge covers, or null if unsure.
+function wordNumberAt(node, offset, isStart) {
+  if (node.nodeType !== 3) { return null; }  // not inside the letters of a word or space
+  const piece = node.parentElement && node.parentElement.closest(".hl-word, .hl-gap");
+  if (!piece) { return null; }
+  if (piece.classList.contains("hl-word")) {
+    const n = Number(piece.dataset.word);
+    if (isStart && offset >= node.length) { return n + 1; }  // starts right after this word
+    if (!isStart && offset === 0) { return n - 1; }          // ends right before this word
+    return n;
+  }
+  // In a space between words: use the word after it (start) or before it (end).
+  const neighbor = isStart ? piece.nextElementSibling : piece.previousElementSibling;
+  if (!neighbor || !neighbor.classList.contains("hl-word")) { return null; }
+  return Number(neighbor.dataset.word);
 }
 
 // Does the selection reach into question or case text at all?
@@ -1121,6 +1152,8 @@ function resetFullText() {
   const box = document.getElementById("full-text");
   box.hidden = true;
   box.textContent = "";
+  delete box.dataset.hlKey;
+  document.getElementById("full-text-credit").hidden = true;
 }
 
 function showFullTextNote(text) {
@@ -1159,12 +1192,11 @@ document.getElementById("full-text-btn").addEventListener("click", function () {
     .then(function (text) {
       if (currentCase !== theCase) { return; }  // she already opened a different case
       if (!text.trim()) { throw new Error("missing"); }
-      box.textContent = text;  // plain text only: nothing in the file can run as code
-      const credit = document.createElement("p");
-      credit.className = "full-text-credit";
-      credit.textContent = "Text from The LawPhil Project, Arellano Law Foundation (see Source below).";
-      box.appendChild(credit);
+      // Tap or drag to highlight, like the summary. Saved as e.g. "case-0001:fulltext".
+      // (Shown as plain text only: nothing in the file can run as code.)
+      setHighlightableText(box, text, theCase.id + ":fulltext");
       box.hidden = false;
+      document.getElementById("full-text-credit").hidden = false;
       fullTextShown = true;
       button.disabled = false;
       button.textContent = "Hide the full text";
