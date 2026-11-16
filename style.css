@@ -631,7 +631,7 @@ body {
   font-size: 16px;
   cursor: pointer;
 }
-.sheet-case { margin: 4px 0 0; font-weight: 600; font-size: 15px; }
+.sheet-case { margin: 4px 0 0; font-weight: 400; font-size: 15px; }  /* the case name inside is a .case-title */
 .sheet-body {
   flex: 1;
   overflow-y: auto;
@@ -712,9 +712,8 @@ body.sheet-open { overflow: hidden; }
 /* The picked color: outlined, with its name in full color. */
 .hl-swatch[aria-pressed="true"] { border-color: var(--primary); color: var(--text); background: var(--bg); }
 
-/* ---------- Case names in bold ---------- */
-/* Wherever a case's name is shown as a label: case cards in a case list, the title of the
-   case screen, the case line in the Find in case panel, and "Read the case: <name>" buttons.
-   (The G.R. number and year next to a name stay regular.) */
-.case-card .subject-name, #case-name, .case-title { font-weight: 700; }
-.sheet-case { font-weight: 400; }  /* only the name part of the panel's case line is bold */
+/* ---------- Case titles: ONE rule for every case name shown as a label ---------- */
+/* Used by case cards in any case list, the case screen's heading, the Find in case panel,
+   and "Read the case: <name>" buttons (all built with caseTitle() in app.js).
+   To change how case titles look anywhere in the app, change only this rule. */
+.case-title { font-weight: 700; }

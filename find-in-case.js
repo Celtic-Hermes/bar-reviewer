@@ -281,12 +281,7 @@ function showCaseLabel(caseId, source) {
   const line = document.getElementById("find-case");
   line.textContent = "";
   if (!name && !number) { line.textContent = "Source not recorded"; return; }
-  if (name) {
-    const title = document.createElement("span");
-    title.className = "case-title";
-    title.textContent = name;
-    line.appendChild(title);
-  }
+  if (name) { line.appendChild(caseTitle(name)); }  // shared case-title style (app.js)
   if (number) { line.append((name ? " · " : "") + number); }
 }
 

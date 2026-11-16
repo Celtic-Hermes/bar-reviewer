@@ -495,25 +495,41 @@ function showSubjectCases(subject) {
   list.innerHTML = "";
   const cases = allCases.filter(function (c) { return c.subject === subject; });
   cases.forEach(function (theCase) {
-    const card = document.createElement("button");
-    card.className = "subject-card";
-    const name = document.createElement("span");
-    name.className = "subject-name";
-    name.textContent = theCase.name || "Untitled case";
-    card.classList.add("case-card");  // case name shown in bold (style.css)
-    const detail = document.createElement("span");
-    detail.className = "card-detail";
-    detail.textContent = [theCase.grNumber, theCase.year, theCase.status === "verified" ? "" : "Draft"]
-      .filter(Boolean).join(" · ");
-    name.appendChild(detail);
-    const arrow = document.createElement("span");
-    arrow.className = "subject-arrow";
-    arrow.textContent = "›";
-    card.append(name, arrow);
-    card.addEventListener("click", function () { openCase(theCase, "subject"); });
-    list.appendChild(card);
+    list.appendChild(makeCaseCard(theCase, function () { openCase(theCase, "subject"); }));
   });
   document.getElementById("case-empty").hidden = (cases.length !== 0);
+}
+
+// ---------- Case titles: one shared look everywhere ----------
+// Every place that shows a case's name as a label builds it with caseTitle() (or, for the
+// case screen heading, has class="case-title" in index.html). Its look lives in ONE rule,
+// ".case-title" in style.css, so a style change there reaches every screen, including
+// screens added later, as long as they use caseTitle() / makeCaseCard().
+function caseTitle(name) {
+  const title = document.createElement("span");
+  title.className = "case-title";
+  title.textContent = name || "Untitled case";
+  return title;
+}
+
+// One tappable card for a case in any case list: its title, then "G.R. No. · year · Draft".
+function makeCaseCard(theCase, onTap) {
+  const card = document.createElement("button");
+  card.className = "subject-card";
+  const name = document.createElement("span");
+  name.className = "subject-name";
+  name.appendChild(caseTitle(theCase.name));
+  const detail = document.createElement("span");
+  detail.className = "card-detail";
+  detail.textContent = [theCase.grNumber, theCase.year, theCase.status === "verified" ? "" : "Draft"]
+    .filter(Boolean).join(" · ");
+  name.appendChild(detail);
+  const arrow = document.createElement("span");
+  arrow.className = "subject-arrow";
+  arrow.textContent = "›";
+  card.append(name, arrow);
+  card.addEventListener("click", onTap);
+  return card;
 }
 
 // Show the friendly "this list is empty" message on the subject screen.
@@ -854,11 +870,8 @@ function showQuestionCases(question) {
     if (ids.length === 1) {
       button.textContent = "Read the case";
     } else {
-      // "Read the case: <name>", with the case name in bold.
-      const title = document.createElement("span");
-      title.className = "case-title";
-      title.textContent = theCase.name || "Untitled case";
-      button.append("Read the case: ", title);
+      // "Read the case: <name>", with the name in the shared case-title style.
+      button.append("Read the case: ", caseTitle(theCase.name));
     }
     button.addEventListener("click", function () { openCase(theCase, "question"); });
     box.appendChild(button);

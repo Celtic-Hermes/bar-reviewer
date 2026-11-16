@@ -9,7 +9,7 @@
 // or add/edit files in data/case-texts/.
 // Questions, cases and case texts are always fetched fresh when she's online.
 // =====================================================================
-const CACHE_VERSION = "v34";
+const CACHE_VERSION = "v35";
 const CACHE_NAME = "bar-reviewer-" + CACHE_VERSION;
 
 // Every file the app needs, written relative to this file so it works
