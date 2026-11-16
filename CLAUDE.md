@@ -24,6 +24,10 @@ Use these exact names everywhere (data, menus, filters):
 7. Remedial Law
 8. Legal and Judicial Ethics
 
+### Miscellaneous section
+Below the 8 subjects, the home screen has a **Miscellaneous** section for extra subjects that are not bar subjects. Use these exact names:
+- Communication Law (topic so far: Data Privacy Act)
+
 Content is grouped by **subject → topic** (for example, Civil Law → Obligations and Contracts).
 
 ## Content rules (very important)

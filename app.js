@@ -10,6 +10,12 @@ const SUBJECTS = [
   "Legal and Judicial Ethics"
 ];
 
+// Extra subjects that are not one of the 8 bar subjects.
+// They appear on the home screen under a "Miscellaneous" heading.
+const MISC_SUBJECTS = [
+  "Communication Law"
+];
+
 let allQuestions = [];      // filled in from data/questions.json
 let allCases = [];          // filled in from data/cases.json
 let currentSubject = null;  // the subject she tapped
@@ -40,21 +46,30 @@ function questionsFor(subject) {
 function buildHome() {
   const list = document.getElementById("subject-list");
   SUBJECTS.forEach(function (subject, index) {
-    const card = document.createElement("button");
-    card.className = "subject-card";
-    const number = document.createElement("span");
-    number.className = "subject-number";
-    number.textContent = index + 1;
-    const name = document.createElement("span");
-    name.className = "subject-name";
-    name.textContent = subject;
-    const arrow = document.createElement("span");
-    arrow.className = "subject-arrow";
-    arrow.textContent = "›";
-    card.append(number, name, arrow);
-    card.addEventListener("click", function () { openSubject(subject); });
-    list.appendChild(card);
+    list.appendChild(makeSubjectCard(subject, index + 1));
   });
+  const miscList = document.getElementById("misc-list");
+  MISC_SUBJECTS.forEach(function (subject) {
+    miscList.appendChild(makeSubjectCard(subject, "•"));
+  });
+}
+
+// One tappable subject card on the home screen.
+function makeSubjectCard(subject, badge) {
+  const card = document.createElement("button");
+  card.className = "subject-card";
+  const number = document.createElement("span");
+  number.className = "subject-number";
+  number.textContent = badge;
+  const name = document.createElement("span");
+  name.className = "subject-name";
+  name.textContent = subject;
+  const arrow = document.createElement("span");
+  arrow.className = "subject-arrow";
+  arrow.textContent = "›";
+  card.append(number, name, arrow);
+  card.addEventListener("click", function () { openSubject(subject); });
+  return card;
 }
 
 // ---------- Screen 2: One subject (its topics) ----------
