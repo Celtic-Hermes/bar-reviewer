@@ -518,21 +518,29 @@ body {
   opacity: 0;
 }
 
-/* "Draft, not yet verified" label on questions nobody has checked yet */
-.draft-badge {
+/* ---------- "Unverified" label: ONE shared look ---------- */
+/* On every question and case nobody has checked yet (status not "verified"): the label on
+   the question and case screens, and the small one on case cards and linked-question cards.
+   All are built with unverifiedLabel() in app.js (or have this class in index.html).
+   To change how the label looks anywhere, change only this rule. */
+.status-unverified {
   display: inline-block;
-  margin: 6px 0 0;
   padding: 3px 10px;
   border-radius: 999px;
-  background: var(--banner-bg);
-  color: var(--banner-text);
+  background: var(--missed);
+  color: var(--card);   /* white on red (dark text on the lighter red in dark mode) */
   font-size: 13px;
   font-weight: 700;
+  line-height: 1.3;
 }
+/* Where it sits: under the topic on a question, under the G.R. number on a case. */
+.status-badge { margin: 6px 0 0; }
+/* Inside a card's small detail line: a bit smaller to fit the line. */
+.card-detail .status-unverified { padding: 1px 8px; font-size: 12px; }
 
 /* ---------- Case screen ---------- */
 .case-number { margin: 0 0 4px; color: var(--muted); font-weight: 600; }
-#screen-case .draft-badge { margin-bottom: 16px; }
+#screen-case .status-badge { margin-bottom: 16px; }
 #screen-case .case-number + .card { margin-top: 16px; }
 .source-link { color: var(--primary); font-weight: 600; overflow-wrap: anywhere; }
 .source-note { display: block; margin-top: 6px; font-size: 14px; color: var(--muted); overflow-wrap: anywhere; }

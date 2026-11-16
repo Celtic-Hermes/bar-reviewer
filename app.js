@@ -512,18 +512,37 @@ function caseTitle(name) {
   return title;
 }
 
-// One tappable card for a case in any case list: its title, then "G.R. No. · year · Draft".
+// The "Unverified" label for a question or case nobody has checked yet. Its look lives
+// only in the ".status-unverified" rule in style.css, so every place that uses this
+// (and the two labels with that class in index.html) always matches.
+function unverifiedLabel() {
+  const label = document.createElement("span");
+  label.className = "status-unverified";
+  label.textContent = "Unverified";
+  return label;
+}
+
+// The small detail line on a card: some text, then the "Unverified" label if not verified.
+function cardDetail(text, verified) {
+  const detail = document.createElement("span");
+  detail.className = "card-detail";
+  if (text) { detail.append(text); }
+  if (!verified) {
+    if (text) { detail.append(" "); }
+    detail.appendChild(unverifiedLabel());
+  }
+  return detail;
+}
+
+// One tappable card for a case in any case list: its title, then "G.R. No. · year" and
+// the "Unverified" label if the case isn't verified.
 function makeCaseCard(theCase, onTap) {
   const card = document.createElement("button");
   card.className = "subject-card";
   const name = document.createElement("span");
   name.className = "subject-name";
   name.appendChild(caseTitle(theCase.name));
-  const detail = document.createElement("span");
-  detail.className = "card-detail";
-  detail.textContent = [theCase.grNumber, theCase.year, theCase.status === "verified" ? "" : "Draft"]
-    .filter(Boolean).join(" · ");
-  name.appendChild(detail);
+  name.appendChild(cardDetail([theCase.grNumber, theCase.year].filter(Boolean).join(" · "), theCase.status === "verified"));
   const arrow = document.createElement("span");
   arrow.className = "subject-arrow";
   arrow.textContent = "›";
@@ -1634,11 +1653,7 @@ function showCaseQuestions(theCase) {
     const prompt = plainText(question.prompt).replace(/\s+/g, " ").trim();
     // A short preview, cut at the end of a whole word.
     text.textContent = prompt.length > 110 ? prompt.slice(0, 110).replace(/\s+\S*$/, "") + "…" : prompt;
-    const detail = document.createElement("span");
-    detail.className = "card-detail";
-    detail.textContent = (question.type === "mcq" ? "Multiple choice" : "Essay") +
-      (question.status === "verified" ? "" : " · Draft");
-    text.appendChild(detail);
+    text.appendChild(cardDetail(question.type === "mcq" ? "Multiple choice" : "Essay", question.status === "verified"));
     const arrow = document.createElement("span");
     arrow.className = "subject-arrow";
     arrow.textContent = "›";
