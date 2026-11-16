@@ -41,7 +41,7 @@ document.addEventListener("touchstart", function () {}, { passive: true });
 // ---------- Switching screens ----------
 // Only one screen is visible at a time.
 function showScreen(id) {
-  ["screen-home", "screen-subject", "screen-subtopics", "screen-question", "screen-results", "screen-case"].forEach(function (screenId) {
+  ["screen-home", "screen-subject", "screen-subtopics", "screen-topic", "screen-question", "screen-results", "screen-case"].forEach(function (screenId) {
     document.getElementById(screenId).hidden = (screenId !== id);
   });
   window.scrollTo(0, 0);
@@ -137,19 +137,27 @@ function putBackSpot(spot) {
     return true;
   }
 
+  if (spot.screen === "topic") {
+    openTopicOrSubject();
+    return true;
+  }
+
   // Rebuild the round, if there was one. If its questions have changed since, skip it.
   const roundOk = spot.round ? putBackRound(spot.round) : false;
 
   if (spot.screen === "question") {
-    if (!roundOk) { openSubtopicsOrSubject(); }
+    if (!roundOk) { openTopicOrSubject(); }
     return true;
   }
   if (spot.screen === "case") {
     const theCase = findCase(spot.caseId);
     if (!theCase) {
-      openSubject(currentSubject);
+      openTopicOrSubject();
+    } else if (spot.caseCameFrom === "question" && roundOk) {
+      openCase(theCase, "question");
     } else {
-      openCase(theCase, (spot.caseCameFrom === "question" && roundOk) ? "question" : "subject");
+      // Opened from a topic screen (or, before topic screens existed, the subject screen).
+      openCase(theCase, isRealTopic(currentTopic) ? "topic" : "subject");
     }
     return true;
   }
@@ -397,10 +405,9 @@ function openSubtopics(topic) {
   document.getElementById("subtopics-title").textContent = topic;
   document.getElementById("subtopics-count").textContent =
     countLabel(questionsForTopic(subject, topic).length) + " available";
-  document.getElementById("subtopics-empty").hidden = true;
 
   const choices = [ALL_SUBTOPICS].concat(subtopicsFor(subject, topic));
-  if (questionsFor(subject).some(function (q) { return q.topic === topic && subtopicOf(q) === null; })) {
+  if (questionsFor(subject).concat(casesFor(subject)).some(function (item) { return item.topic === topic && subtopicOf(item) === null; })) {
     choices.push(OTHER_SUBTOPIC);
   }
   const list = document.getElementById("subtopic-list");
@@ -418,23 +425,76 @@ function openSubtopics(topic) {
     arrow.className = "subject-arrow";
     arrow.textContent = "›";
     card.append(name, howMany, arrow);
-    card.addEventListener("click", function () {
-      currentSubtopic = subtopic;
-      fixedQuestions = null;
-      practiceCase = null;
-      startPractice();
-    });
+    card.addEventListener("click", function () { openTopic(topic, subtopic); });
     list.appendChild(card);
   });
   showScreen("screen-subtopics");
 }
 
-// Back to where a round came from: the sub-topic picker, or the subject screen.
-function openSubtopicsOrSubject() {
-  if (currentSubtopic !== null && isRealTopic(currentTopic) && subtopicsFor(currentSubject, currentTopic).length > 0) {
+// ---------- Topic screen (one topic, or one sub-topic of it) ----------
+// "Start practice" for just that topic / sub-topic, and the cases filed under it.
+// Cases only appear here (not on the subject screen).
+function casesFor(subject) {
+  return allCases.filter(function (c) { return c.subject === subject; });
+}
+
+function openTopic(topic, subtopic) {
+  currentTopic = topic;
+  currentSubtopic = (subtopic === undefined) ? null : subtopic;
+  fixedQuestions = null;
+  practiceCase = null;
+  const subject = currentSubject;
+  const inPicker = currentSubtopic !== null;  // she came through the sub-topic picker
+  document.getElementById("topic-back").textContent = "‹ " + (inPicker ? topic : subject);
+  document.getElementById("topic-subject").textContent = inPicker ? subject + " · " + topic : subject;
+  document.getElementById("topic-title").textContent = inPicker ? subtopicLabel(currentSubtopic, topic) : topic;
+
+  const total = questionsForTopic(subject, topic, null, currentSubtopic).length;
+  const mode = currentMode();
+  const count = questionsForTopic(subject, topic, mode, currentSubtopic).length;
+  document.getElementById("topic-count").textContent = countLabel(total);
+  const start = document.getElementById("topic-start");
+  start.textContent = "Start practice (" + modeCountLabel(count, mode) + ")";
+  start.disabled = (count === 0);
+  const note = document.getElementById("topic-empty");
+  note.hidden = (count !== 0);
+  note.textContent = total === 0 ? "No questions here yet."
+    : noneOfMode(mode) + " here. Pick All under Question type (on the subject screen) to see the others.";
+
+  const cases = casesFor(subject).filter(function (c) { return c.topic === topic && inSubtopic(c, currentSubtopic); });
+  const list = document.getElementById("topic-case-list");
+  list.innerHTML = "";
+  cases.forEach(function (theCase) {
+    list.appendChild(makeCaseCard(theCase, function () { openCase(theCase, "topic"); }));
+  });
+  document.getElementById("topic-case-empty").hidden = (cases.length !== 0);
+  showScreen("screen-topic");
+}
+
+document.getElementById("topic-start").addEventListener("click", function () {
+  fixedQuestions = null;
+  practiceCase = null;
+  startPractice();
+});
+
+document.getElementById("topic-back").addEventListener("click", function () {
+  if (currentSubtopic !== null && subtopicsFor(currentSubject, currentTopic).length > 0) {
     openSubtopics(currentTopic);
   } else {
     openSubject(currentSubject);
+  }
+});
+
+// Back to where a round (or a case) came from: the topic screen for a real topic
+// (or its sub-topic picker, if she hasn't picked a sub-topic), else the subject screen.
+function openTopicOrSubject() {
+  const topicExists = isRealTopic(currentTopic) && topicsFor(currentSubject).indexOf(currentTopic) !== -1;
+  if (!topicExists) {
+    openSubject(currentSubject);
+  } else if (currentSubtopic === null && subtopicsFor(currentSubject, currentTopic).length > 0) {
+    openSubtopics(currentTopic);
+  } else {
+    openTopic(currentTopic, currentSubtopic);
   }
 }
 
@@ -445,8 +505,8 @@ document.getElementById("subtopics-back").addEventListener("click", function () 
 // List of topics in a subject, in the order they first appear in the file.
 function topicsFor(subject) {
   const topics = [];
-  questionsFor(subject).forEach(function (q) {
-    if (!topics.includes(q.topic)) { topics.push(q.topic); }
+  questionsFor(subject).concat(casesFor(subject)).forEach(function (item) {
+    if (typeof item.topic === "string" && item.topic && !topics.includes(item.topic)) { topics.push(item.topic); }
   });
   return topics;
 }
@@ -471,9 +531,14 @@ function makeTopicCard(subject, topic) {
     currentSubtopic = null;
     fixedQuestions = null;
     practiceCase = null;
-    // A topic with sub-topics: pick one first.
+    // A topic with sub-topics: pick one first. Any other topic: its topic screen.
+    // ("All topics", "Review missed" and "Bookmarked" start practicing right away.)
     if (isRealTopic(topic) && subtopicsFor(subject, topic).length > 0) {
       openSubtopics(topic);
+      return;
+    }
+    if (isRealTopic(topic)) {
+      openTopic(topic, null);
       return;
     }
     startPractice();
@@ -496,7 +561,6 @@ function openSubject(subject) {
   document.getElementById("subject-empty").hidden = (count !== 0);
 
   showTopicCards(subject);
-  showSubjectCases(subject);
   showScreen("screen-subject");
 }
 
@@ -517,16 +581,6 @@ function showTopicCards(subject) {
   });
 }
 
-// The "Cases" list on the subject screen: one card per case in this subject.
-function showSubjectCases(subject) {
-  const list = document.getElementById("case-list");
-  list.innerHTML = "";
-  const cases = allCases.filter(function (c) { return c.subject === subject; });
-  cases.forEach(function (theCase) {
-    list.appendChild(makeCaseCard(theCase, function () { openCase(theCase, "subject"); }));
-  });
-  document.getElementById("case-empty").hidden = (cases.length !== 0);
-}
 
 // ---------- Case titles: one shared look everywhere ----------
 // Every place that shows a case's name as a label builds it with caseTitle() (or, for the
@@ -642,15 +696,8 @@ function startPractice() {
     : questionsForTopic(currentSubject, currentTopic, currentMode(), currentSubtopic);
   if (questions.length === 0) {
     // Empty list: go to (or stay on) the screen she started from and explain, instead of starting.
-    if (currentSubtopic !== null) {
-      const picked = currentSubtopic;
-      openSubtopics(currentTopic);
-      const note = document.getElementById("subtopics-empty");
-      const mode = currentMode();
-      note.textContent = mode === "both" ? "No questions here yet."
-        : noneOfMode(mode) + " in " + subtopicLabel(picked, currentTopic) +
-          ". Pick All under Question type (on the subject screen) to see the others.";
-      note.hidden = false;
+    if (!fixedQuestions && isRealTopic(currentTopic)) {
+      openTopic(currentTopic, currentSubtopic);  // its Start button is off, with a note saying why
       return;
     }
     openSubject(currentSubject);
@@ -1070,9 +1117,9 @@ document.getElementById("next-btn").addEventListener("click", function () {
 
 document.getElementById("question-back").addEventListener("click", function () {
   if (practiceCase) {
-    openCase(practiceCase, "subject");  // she came from a case: go back to it
+    openCase(practiceCase, caseHome);  // she came from a case: go back to it
   } else {
-    openSubtopicsOrSubject();  // back to the sub-topic picker, or the subject screen
+    openTopicOrSubject();  // back to the topic screen (or the subject screen)
   }
 });
 
@@ -1128,7 +1175,8 @@ function findCase(caseId) {
 }
 
 // Where to go when she taps "‹ Back" on the case screen.
-let caseCameFrom = null;       // "question" or "subject"
+let caseCameFrom = null;       // "question", "topic" or "subject"
+let caseHome = "topic";        // where the case screen's Back goes when not back to a question
 let questionScrollSpot = 0;    // where she was on the question screen
 
 // ---------- Bold text in content ----------
@@ -1677,6 +1725,7 @@ function caseText(value) {
 
 function openCase(theCase, cameFrom) {
   caseCameFrom = cameFrom;
+  if (cameFrom !== "question") { caseHome = cameFrom; }
   currentCase = theCase;
   if (cameFrom === "question") { questionScrollSpot = window.scrollY; }
 
@@ -1877,6 +1926,8 @@ document.getElementById("case-back").addEventListener("click", function () {
   if (caseCameFrom === "question") {
     showScreen("screen-question");
     window.scrollTo(0, questionScrollSpot);  // back to the same spot, answer still showing
+  } else if (caseCameFrom === "topic") {
+    openTopicOrSubject();  // back to the topic screen she opened it from
   } else {
     openSubject(currentSubject);
   }
