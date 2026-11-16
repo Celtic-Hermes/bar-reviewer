@@ -165,6 +165,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "Marites suspects her husband Ramon of having an affair. While Ramon is away, she goes to his law office, forces open his locked desk drawers, and takes private letters between Ramon and another woman, along with his diaries. She plans to present them as evidence in her petition for legal separation. Ramon objects, invoking his right to privacy. Marites argues that, as his wife, she cannot be barred from discovering proof of his infidelity. Are the letters and diaries admissible? Explain.",
     "suggestedAnswer": {
       "answer": "No. Under Zulueta v. Court of Appeals, the letters and diaries are inadmissible.",
@@ -196,6 +197,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "Lito argues that the law guarantees \"absolute freedom of communication between the spouses,\" so his wife has no right to keep her private papers from him, and he may use them as evidence against her. How did the Supreme Court in Zulueta v. Court of Appeals address the relationship between spousal privilege and the right to privacy?",
     "suggestedAnswer": {
       "answer": "The argument fails. The Court said the freedom of communication between spouses is different from forcing each spouse to share what they know with the other.",
@@ -227,6 +229,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "A trial court ordered a wife not to use certain papers she took from her husband. Her lawyer later used the papers while a Supreme Court restraining order (TRO) temporarily suspended the trial court's order. In a disbarment case, the Court cleared the lawyer. The wife now argues that this disbarment ruling settled that the papers are admissible. Is she correct? Explain, based on Zulueta v. Court of Appeals.",
     "suggestedAnswer": {
       "answer": "No. Clearing the lawyer in the disbarment case did not establish that the papers were admissible.",
@@ -257,6 +260,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "In Zulueta v. Court of Appeals, what did the wife do to obtain the documents and papers?",
     "choices": {
       "A": "She hacked into her husband's email account.",
@@ -283,6 +287,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "According to Zulueta v. Court of Appeals, what are the only exceptions to the constitutional rule that the privacy of communication and correspondence is inviolable?",
     "choices": {
       "A": "Consent of the spouse, or a pending case for legal separation.",
@@ -309,6 +314,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "In Zulueta v. Court of Appeals, what is the effect of evidence obtained in violation of the constitutional right to privacy of communication and correspondence?",
     "choices": {
       "A": "It is admissible, but its weight is reduced.",
@@ -335,6 +341,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "Which statement best reflects the Court's view in Zulueta v. Court of Appeals on privacy within marriage?",
     "choices": {
       "A": "Spouses waive their right to privacy against each other upon marriage.",
@@ -361,6 +368,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "In Zulueta v. Court of Appeals, why was the lawyer, Atty. Felix, Jr., cleared in the earlier disbarment case for using the documents?",
     "choices": {
       "A": "Because the Court found the documents admissible in evidence.",
@@ -387,6 +395,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "Dr. Santos runs a small dental clinic on her lot. Only patients with appointments and her staff are allowed inside. Her neighbor, with whom she has a long-running boundary dispute, installs a rotating CCTV camera on his building that covers a large part of her clinic and lot. He says the camera is for security. Dr. Santos sues to have it removed, citing Article 26(1) of the Civil Code. The neighbor argues that Article 26(1) protects only the privacy of a 'residence,' and her property is a clinic. Decide.",
     "suggestedAnswer": {
       "answer": "Dr. Santos should win. Article 26(1) of the Civil Code is not limited to residences, and the camera violates her right to privacy.",
@@ -418,6 +427,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "What is the 'reasonable expectation of privacy' test, as explained in Spouses Hing v. Choachuy, Sr.? How is it applied?",
     "suggestedAnswer": {
       "answer": "It is the test courts use to determine whether a person has a reasonable expectation of privacy and whether that expectation has been violated.",
@@ -448,6 +458,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "Spouses Reyes sue brothers Carlo and Paolo for installing surveillance cameras facing the Reyes property. The brothers answer that the cameras are on a building owned by their family corporation, not by them. They say they are mere stockholders and so are not the proper parties. The records show the corporation is family-owned and managed by the brothers' family, and the brothers let the court inspect the building and explained the camera set-up. Are the brothers proper parties? Explain, based on Spouses Hing v. Choachuy, Sr.",
     "suggestedAnswer": {
       "answer": "Yes, the brothers are proper parties to the suit.",
@@ -479,6 +490,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "In Spouses Hing v. Choachuy, Sr., why did the Court of Appeals rule that the spouses' right to privacy under Article 26(1) of the Civil Code was not violated, and was this upheld by the Supreme Court?",
     "choices": {
       "A": "Because the cameras were installed for security; the Supreme Court agreed.",
@@ -505,6 +517,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "According to Spouses Hing v. Choachuy, Sr., when is a business office entitled to the same privacy as a residence?",
     "choices": {
       "A": "When it is located inside the owner's house.",
@@ -531,6 +544,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "In Spouses Hing v. Choachuy, Sr., the Court compared using surveillance cameras to pry into another's residence or business office to what crime?",
     "choices": {
       "A": "Trespass to dwelling",
@@ -557,6 +571,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "Under Spouses Hing v. Choachuy, Sr., surveillance cameras may cover places where there is a reasonable expectation of privacy only if:",
     "choices": {
       "A": "The owner of the camera has a business permit.",
@@ -583,6 +598,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "In Spouses Hing v. Choachuy, Sr., how did the Court define the right to privacy, 'simply put'?",
     "choices": {
       "A": "The right to own property without interference",
@@ -609,6 +625,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "Bea, a 16-year-old student, posts photos of herself at a party on Facebook. She claims the post was set so that only a few close friends could see it, but she offers no proof other than her own testimony. One of her Facebook friends, using his own account, shows the photos to a school official, who then disciplines Bea. Bea's parents file a petition for a writ of habeas data, claiming the school violated her right to informational privacy. Will the petition prosper? Explain.",
     "suggestedAnswer": {
       "answer": "No. Under Vivares v. St. Theresa's College, the petition will not prosper because there was no proven violation of Bea's right to informational privacy.",
@@ -640,6 +657,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "A private school is sued in a petition for a writ of habeas data over students' photos it collected. The school argues that: (a) the writ applies only to extralegal killings and enforced disappearances; and (b) the writ applies only to entities in the business of gathering, collecting or storing data, which a school is not. Rule on both arguments, based on Vivares v. St. Theresa's College.",
     "suggestedAnswer": {
       "answer": "Both arguments are wrong.",
@@ -671,6 +689,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "A Facebook user argues that because her post was set to 'Friends' only, it was 'very private,' so anyone who is not her Facebook friend has no right to see it. Based on Vivares v. St. Theresa's College, is a 'Friends Only' post automatically private? What setting might have produced a different result?",
     "suggestedAnswer": {
       "answer": "No. A post set to 'Friends' cannot easily, much less automatically, be said to be very private.",
@@ -702,6 +721,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "In Vivares v. St. Theresa's College, how is the right to informational privacy usually defined?",
     "choices": {
       "A": "The right to be free from physical searches of one's home",
@@ -728,6 +748,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "According to Vivares v. St. Theresa's College, what does availing of the writ of habeas data require?",
     "choices": {
       "A": "Proof beyond reasonable doubt that the respondent is a public official",
@@ -754,6 +775,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "Under Vivares v. St. Theresa's College, what does it mean for a private individual or entity to be 'engaged' in the gathering, collecting or storing of data, for the writ of habeas data to apply?",
     "choices": {
       "A": "It must be in the business of data gathering, for profit.",
@@ -780,6 +802,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "In Vivares v. St. Theresa's College, why were the school (STC) and its officials found NOT to have violated the students' privacy?",
     "choices": {
       "A": "Because schools are exempt from privacy laws when enforcing discipline.",
@@ -806,6 +829,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "In Vivares v. St. Theresa's College, which Facebook privacy settings did the Court say might have led to a different result, had their use been proved?",
     "choices": {
       "A": "'Public' or 'Friends of Friends'",
@@ -832,6 +856,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "Jessa, a private individual, takes screenshots of chat messages from Mark's messaging account without his knowledge, and gives them to the prosecutor. Mark is charged with a crime based on the messages. At trial, he moves to exclude them, arguing that under Article III, Section 3 of the Constitution, evidence obtained in violation of the privacy of communication is inadmissible. He also cites Zulueta v. Court of Appeals. Should the motion be granted? Explain, based on Cadajas v. People.",
     "suggestedAnswer": {
       "answer": "No. The constitutional exclusionary rule does not apply, because the evidence was obtained by a private individual and not by the State.",
@@ -863,6 +888,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "Paolo gave his girlfriend the password to his messaging account. Later, she logs in and copies some of his messages, which are used as evidence against him. Paolo says his account is password-protected, so he had a reasonable expectation that no one else could access it, and his right to privacy was violated. Is he correct? Explain, applying Cadajas v. People.",
     "suggestedAnswer": {
       "answer": "No. By voluntarily giving his password to his girlfriend, Paolo limited his reasonable expectation of privacy as to her, so there was no violation.",
@@ -894,6 +920,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "During trial, the prosecution formally offers photos taken from the accused's online account. The accused's lawyer makes no objection. After conviction, the accused argues for the first time on appeal that the photos were inadmissible because they violated his right to privacy. Can the appellate court consider the objection? Explain, based on Cadajas v. People.",
     "suggestedAnswer": {
       "answer": "No. The objection was waived because it was not made when the evidence was formally offered at trial.",
@@ -925,6 +952,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "In Cadajas v. People, how did the Court treat the statement in Zulueta v. Court of Appeals that evidence obtained by one spouse in violation of the other's privacy is inadmissible?",
     "choices": {
       "A": "As a binding precedent that applies to all private individuals",
@@ -951,6 +979,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "According to Cadajas v. People, the Data Privacy Act allows the processing of data and sensitive personal information when:",
     "choices": {
       "A": "It is requested by any private person for any reason.",
@@ -977,6 +1006,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "In Cadajas v. People, the Court quoted Justice Leonen's separate concurring opinion on the aspects of the right to informational privacy. Which of the following is NOT one of the three aspects listed there?",
     "choices": {
       "A": "To keep inalienable information to themselves",
@@ -1003,6 +1033,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "In Cadajas v. People, which of the following is NOT one of the facts the Court said must be proven to convict for child pornography (R.A. No. 9775, in relation to R.A. No. 10175)?",
     "choices": {
       "A": "The victim is a child.",
@@ -1029,6 +1060,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "In Cadajas v. People, what penalty did the Supreme Court impose for child pornography committed through a computer system, and why?",
     "choices": {
       "A": "Reclusion temporal, because the sweetheart defense lowered the penalty",
@@ -1055,6 +1087,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "A government agency sues several lawyers, together with a businessman, to recover allegedly ill-gotten shares of stock. The lawyers had organized the companies for their clients and, as part of their legal services, held shares as nominees. The agency offers to drop the lawyers from the case if they name the clients for whom they held the shares and turn over the deeds of assignment they executed for those clients. The lawyers refuse, invoking the attorney-client privilege. The agency argues that a client's identity is never privileged. Who is correct? Explain, based on Regala v. Sandiganbayan.",
     "suggestedAnswer": {
       "answer": "The lawyers are correct. Under the facts, the clients' identities are privileged.",
@@ -1087,6 +1120,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "Distinguish, based on Regala v. Sandiganbayan, between (a) a client who hires a lawyer for advice on how to get around the law in order to commit an illegal act, and (b) a client who thinks he may have already done something illegal and consults a lawyer about it. Is the attorney-client privilege available in each case?",
     "suggestedAnswer": {
       "answer": "In case (a), the privilege is not available. In case (b), it is available, and the client's name cannot be disclosed if disclosure would lead to evidence not yet in the prosecution's hands.",
@@ -1118,6 +1152,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "Five law partners are sued together for the same acts done in the course of their legal work. The government drops one partner from the case because he supposedly promised to reveal his client's identity, but there is no proof he actually did. The other four ask for the same treatment and are refused. Was their right to equal protection violated? Explain, based on Regala v. Sandiganbayan.",
     "suggestedAnswer": {
       "answer": "Yes. Dropping one partner but not the others, without a real and substantial distinction between them, violates the equal protection clause.",
@@ -1149,6 +1184,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "According to Regala v. Sandiganbayan, which of the following is one of the reasons for the general rule that a lawyer may NOT refuse to reveal a client's identity?",
     "choices": {
       "A": "The court has a right to know that the client whose privileged information is sought to be protected is flesh and blood.",
@@ -1175,6 +1211,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "Under Regala v. Sandiganbayan, which of the following is an exception that makes a client's identity privileged?",
     "choices": {
       "A": "The client is a public official.",
@@ -1201,6 +1238,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "In Regala v. Sandiganbayan, what was the first exception the Court described, under which a client's identity is privileged?",
     "choices": {
       "A": "Where the client has never been charged with any crime",
@@ -1227,6 +1265,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "According to Regala v. Sandiganbayan, how must a lawyer treat the attorney-client privilege in order to attain effective representation?",
     "choices": {
       "A": "As an option the lawyer may use when convenient",
@@ -1253,6 +1292,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "According to Regala v. Sandiganbayan, how long does the protection of lawyer-client confidentiality last?",
     "choices": {
       "A": "Only while the case is pending",
@@ -1279,6 +1319,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "A new government regulation requires all self-employed psychologists, lawyers and doctors to register their appointment books with a tax agency. The books would list only each client's name and the date and time of each appointment, nothing about the consultation itself. The agency says the books will be examined only if a professional is suspected of underpaying taxes, so no one's privacy is harmed. Is the requirement valid? Explain, based on Integrated Bar of the Philippines v. Purisima.",
     "suggestedAnswer": {
       "answer": "No. The mandatory registration of appointment books is an unconstitutional intrusion into the right to privacy of the professionals and their clients and patients.",
@@ -1311,6 +1352,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "Revenue Regulations No. 4-2014 required self-employed professionals to: (a) submit an affidavit of their rates, manner of billing, and the factors they consider in setting fees; (b) register their books of account; (c) register their appointment books; and (d) issue a BIR-registered receipt showing a 100% discount for pro bono services. In Integrated Bar of the Philippines v. Purisima, which of these requirements were upheld, and which were struck down? Why?",
     "suggestedAnswer": {
       "answer": "Registration of books of account and the pro bono receipts were upheld. The affidavit of rates and the registration of appointment books were declared void.",
@@ -1342,6 +1384,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "A government agency argues that a lawyer's list of client names is not privileged information, so lawyers may be required to give it to the State. Based on Integrated Bar of the Philippines v. Purisima, is the agency correct? In your answer, explain how the Data Privacy Act treats privileged information.",
     "suggestedAnswer": {
       "answer": "No. Citing Regala v. Sandiganbayan, the Court held that a client's identity falls within the privilege in proper cases.",
@@ -1374,6 +1417,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "In Integrated Bar of the Philippines v. Purisima, the Court cited retired Chief Justice Puno's three strands of the right to privacy. What are they?",
     "choices": {
       "A": "Locational, informational, and decisional privacy",
@@ -1400,6 +1444,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "According to Integrated Bar of the Philippines v. Purisima, what are the two aspects of informational privacy?",
     "choices": {
       "A": "The right to own data, and the right to sell data",
@@ -1426,6 +1471,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "In Integrated Bar of the Philippines v. Purisima, the government argued that names and appointment dates alone reveal nothing. Why did the Court still find their mandatory registration a privacy violation?",
     "choices": {
       "A": "Because the names would be published in newspapers.",
@@ -1452,6 +1498,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "In Integrated Bar of the Philippines v. Purisima, what must a court determine in evaluating a claim that the government violated the right to privacy?",
     "choices": {
       "A": "Whether the government acted in good faith",
@@ -1478,6 +1525,7 @@
     "status": "draft",
     "subject": "Mercantile Law",
     "topic": "Communication Law",
+    "subtopic": "Data Privacy Act",
     "prompt": "In Integrated Bar of the Philippines v. Purisima, which requirement of Revenue Regulations No. 4-2014 did the Court uphold as valid?",
     "choices": {
       "A": "Submission of an affidavit of rates and manner of billing",

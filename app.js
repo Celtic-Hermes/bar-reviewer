@@ -20,6 +20,7 @@ let allQuestions = [];      // filled in from data/questions.json
 let allCases = [];          // filled in from data/cases.json
 let currentSubject = null;  // the subject she tapped
 let currentTopic = null;    // the topic she tapped (or "All topics")
+let currentSubtopic = null; // the sub-topic she picked, ALL_SUBTOPICS, OTHER_SUBTOPIC, or null (none)
 
 // The current practice round: which questions, where she is, and her results so far.
 let session = null;
@@ -39,7 +40,7 @@ document.addEventListener("touchstart", function () {}, { passive: true });
 // ---------- Switching screens ----------
 // Only one screen is visible at a time.
 function showScreen(id) {
-  ["screen-home", "screen-subject", "screen-question", "screen-results", "screen-case"].forEach(function (screenId) {
+  ["screen-home", "screen-subject", "screen-subtopics", "screen-question", "screen-results", "screen-case"].forEach(function (screenId) {
     document.getElementById(screenId).hidden = (screenId !== id);
   });
   window.scrollTo(0, 0);
@@ -60,6 +61,7 @@ function rememberSpot() {
     screen: shownScreen.replace("screen-", ""),  // "subject", "question" or "case"
     subject: currentSubject,
     topic: currentTopic,
+    subtopic: currentSubtopic,
     shuffle: document.getElementById("shuffle").checked,
     mode: currentMode()
   };
@@ -111,6 +113,7 @@ function putBackSpot(spot) {
   if (SUBJECTS.concat(MISC_SUBJECTS).indexOf(spot.subject) === -1) { return false; }
   currentSubject = spot.subject;
   currentTopic = (typeof spot.topic === "string") ? spot.topic : null;
+  currentSubtopic = (typeof spot.subtopic === "string") ? spot.subtopic : null;
 
   const shuffleSwitch = document.getElementById("shuffle");
   shuffleSwitch.checked = Boolean(spot.shuffle);
@@ -121,12 +124,20 @@ function putBackSpot(spot) {
     openSubject(currentSubject);
     return true;
   }
+  if (spot.screen === "subtopics") {
+    if (isRealTopic(currentTopic) && subtopicsFor(currentSubject, currentTopic).length > 0) {
+      openSubtopics(currentTopic);
+    } else {
+      openSubject(currentSubject);  // the topic has no sub-topics anymore
+    }
+    return true;
+  }
 
   // Rebuild the round, if there was one. If its questions have changed since, skip it.
   const roundOk = spot.round ? putBackRound(spot.round) : false;
 
   if (spot.screen === "question") {
-    if (!roundOk) { openSubject(currentSubject); }
+    if (!roundOk) { openSubtopicsOrSubject(); }
     return true;
   }
   if (spot.screen === "case") {
@@ -294,16 +305,114 @@ document.querySelectorAll('input[name="question-mode"]').forEach(function (radio
 
 // The questions for a subject + a choice from the subject screen:
 // a topic name, "All topics", "Review missed", or "Bookmarked",
-// keeping only the question type she picked (unless mode is left out).
-function questionsForTopic(subject, topic, mode) {
+// keeping only the question type she picked (unless mode is left out),
+// and, inside a topic, only the sub-topic she picked (if she picked one).
+function questionsForTopic(subject, topic, mode, subtopic) {
   return questionsFor(subject).filter(function (q) {
     if (mode && !fitsMode(q, mode)) { return false; }
     if (topic === ALL_TOPICS) { return true; }
     if (topic === REVIEW_MISSED) { return Boolean(progress.review[q.id]); }
     if (topic === BOOKMARKED) { return isBookmarked(q.id); }
-    return q.topic === topic;
+    return q.topic === topic && inSubtopic(q, subtopic);
   });
 }
+
+// ---------- Sub-topics (optional third level: subject → topic → sub-topic) ----------
+// Any question or case may have a "subtopic". A topic where none of its content has
+// one works as before. A topic where some does shows a sub-topic picker first.
+const ALL_SUBTOPICS = "*all*";      // "All of <topic>": the whole topic
+const OTHER_SUBTOPIC = "*other*";   // "Other": content in that topic with no sub-topic
+
+// The sub-topic of a question or case, or null if it has none (or a bad value).
+function subtopicOf(item) {
+  return (item && typeof item.subtopic === "string" && item.subtopic.trim()) ? item.subtopic.trim() : null;
+}
+
+// Does this question or case belong to the picked sub-topic? (No pick, or "All": yes.)
+function inSubtopic(item, subtopic) {
+  if (subtopic === null || subtopic === undefined || subtopic === ALL_SUBTOPICS) { return true; }
+  if (subtopic === OTHER_SUBTOPIC) { return subtopicOf(item) === null; }
+  return subtopicOf(item) === subtopic;
+}
+
+// The sub-topics inside a topic, from its questions and cases, in the order they first appear.
+function subtopicsFor(subject, topic) {
+  const names = [];
+  questionsFor(subject).concat(allCases.filter(function (c) { return c.subject === subject; }))
+    .forEach(function (item) {
+      const name = item.topic === topic ? subtopicOf(item) : null;
+      if (name && names.indexOf(name) === -1) { names.push(name); }
+    });
+  return names;
+}
+
+// Is this one of the real topics (not "All topics", "Review missed" or "Bookmarked")?
+function isRealTopic(topic) {
+  return [ALL_TOPICS, REVIEW_MISSED, BOOKMARKED].indexOf(topic) === -1;
+}
+
+function subtopicLabel(subtopic, topic) {
+  if (subtopic === ALL_SUBTOPICS) { return "All of " + topic; }
+  if (subtopic === OTHER_SUBTOPIC) { return "Other"; }
+  return subtopic;
+}
+
+// The sub-topic picker for one topic: "All of <topic>", then each sub-topic,
+// then "Other" if some of the topic's questions have no sub-topic.
+function openSubtopics(topic) {
+  currentTopic = topic;
+  currentSubtopic = null;
+  const subject = currentSubject;
+  const mode = currentMode();
+  document.getElementById("subtopics-back").textContent = "‹ " + subject;
+  document.getElementById("subtopics-subject").textContent = subject;
+  document.getElementById("subtopics-title").textContent = topic;
+  document.getElementById("subtopics-count").textContent =
+    countLabel(questionsForTopic(subject, topic).length) + " available";
+  document.getElementById("subtopics-empty").hidden = true;
+
+  const choices = [ALL_SUBTOPICS].concat(subtopicsFor(subject, topic));
+  if (questionsFor(subject).some(function (q) { return q.topic === topic && subtopicOf(q) === null; })) {
+    choices.push(OTHER_SUBTOPIC);
+  }
+  const list = document.getElementById("subtopic-list");
+  list.innerHTML = "";
+  choices.forEach(function (subtopic) {
+    const card = document.createElement("button");
+    card.className = "subject-card";
+    const name = document.createElement("span");
+    name.className = "subject-name";
+    name.textContent = subtopicLabel(subtopic, topic);
+    const howMany = document.createElement("span");
+    howMany.className = "topic-count";
+    howMany.textContent = modeCountLabel(questionsForTopic(subject, topic, mode, subtopic).length, mode);
+    const arrow = document.createElement("span");
+    arrow.className = "subject-arrow";
+    arrow.textContent = "›";
+    card.append(name, howMany, arrow);
+    card.addEventListener("click", function () {
+      currentSubtopic = subtopic;
+      fixedQuestions = null;
+      practiceCase = null;
+      startPractice();
+    });
+    list.appendChild(card);
+  });
+  showScreen("screen-subtopics");
+}
+
+// Back to where a round came from: the sub-topic picker, or the subject screen.
+function openSubtopicsOrSubject() {
+  if (currentSubtopic !== null && isRealTopic(currentTopic) && subtopicsFor(currentSubject, currentTopic).length > 0) {
+    openSubtopics(currentTopic);
+  } else {
+    openSubject(currentSubject);
+  }
+}
+
+document.getElementById("subtopics-back").addEventListener("click", function () {
+  openSubject(currentSubject);
+});
 
 // List of topics in a subject, in the order they first appear in the file.
 function topicsFor(subject) {
@@ -331,8 +440,14 @@ function makeTopicCard(subject, topic) {
   card.append(name, howMany, arrow);
   card.addEventListener("click", function () {
     currentTopic = topic;
+    currentSubtopic = null;
     fixedQuestions = null;
     practiceCase = null;
+    // A topic with sub-topics: pick one first.
+    if (isRealTopic(topic) && subtopicsFor(subject, topic).length > 0) {
+      openSubtopics(topic);
+      return;
+    }
     startPractice();
   });
   return card;
@@ -340,6 +455,7 @@ function makeTopicCard(subject, topic) {
 
 function openSubject(subject) {
   currentSubject = subject;
+  currentSubtopic = null;
   const count = questionsFor(subject).length;
   document.getElementById("subject-title").textContent = subject;
   document.getElementById("subject-count").textContent = countLabel(count) + " available";
@@ -455,9 +571,21 @@ function shuffled(list) {
 }
 
 function startPractice() {
-  let questions = fixedQuestions ? fixedQuestions.slice() : questionsForTopic(currentSubject, currentTopic, currentMode());
+  let questions = fixedQuestions ? fixedQuestions.slice()
+    : questionsForTopic(currentSubject, currentTopic, currentMode(), currentSubtopic);
   if (questions.length === 0) {
-    // Empty list: go to (or stay on) the subject screen and explain, instead of starting.
+    // Empty list: go to (or stay on) the screen she started from and explain, instead of starting.
+    if (currentSubtopic !== null) {
+      const picked = currentSubtopic;
+      openSubtopics(currentTopic);
+      const note = document.getElementById("subtopics-empty");
+      const mode = currentMode();
+      note.textContent = mode === "both" ? "No questions here yet."
+        : (mode === "mcq" ? "No multiple choice questions" : "No essay questions") +
+          " in " + subtopicLabel(picked, currentTopic) + ". Pick Both under Question type (on the subject screen) to see the others.";
+      note.hidden = false;
+      return;
+    }
     openSubject(currentSubject);
     showEmptyListMessage(currentTopic);
     return;
@@ -488,7 +616,7 @@ function showQuestion() {
   document.getElementById("progress").textContent =
     "Question " + (session.index + 1) + " of " + session.questions.length;
   document.getElementById("subject").textContent = question.subject;
-  document.getElementById("topic").textContent = question.topic;
+  document.getElementById("topic").textContent = [question.topic, subtopicOf(question)].filter(Boolean).join(" · ");
   setHighlightableText(document.getElementById("prompt"), question.prompt, question.id);
   // Anything not marked "verified" (including a missing status) shows the draft label.
   document.getElementById("draft-badge").hidden = (question.status === "verified");
@@ -708,7 +836,7 @@ document.getElementById("question-back").addEventListener("click", function () {
   if (practiceCase) {
     openCase(practiceCase, "subject");  // she came from a case: go back to it
   } else {
-    openSubject(currentSubject);
+    openSubtopicsOrSubject();  // back to the sub-topic picker, or the subject screen
   }
 });
 
@@ -1222,7 +1350,7 @@ function openCase(theCase, cameFrom) {
   if (cameFrom === "question") { questionScrollSpot = window.scrollY; }
 
   document.getElementById("case-subject").textContent =
-    [theCase.subject, theCase.topic].filter(Boolean).join(" · ");
+    [theCase.subject, theCase.topic, subtopicOf(theCase)].filter(Boolean).join(" · ");
   document.getElementById("case-name").textContent = theCase.name || "Untitled case";
   document.getElementById("case-number").textContent =
     [theCase.grNumber, theCase.year].filter(Boolean).join(" · ");
