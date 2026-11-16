@@ -127,9 +127,14 @@ function contextAround(text, words, first, last) {
   const lowest = first >= notes ? notes + 1 : 0;
   const highest = first >= notes ? words.length - 1 : notes - 1;
 
+  // A long passage already carries its own reasoning, so it needs less around it.
+  const passageWords = last - first + 1;
+  const wantBefore = BEFORE_MIN - passageWords;
+  const wantAfter = AFTER_MIN - passageWords;
+
   let from = paragraphStart(text, words, first);
   let added = 0;
-  while (from > lowest && added < BEFORE_PARAGRAPHS && first - from < BEFORE_MIN) {
+  while (from > lowest && added < BEFORE_PARAGRAPHS && first - from < wantBefore) {
     const start = Math.max(lowest, paragraphStart(text, words, from - 1));
     if (first - start > BEFORE_MAX) { break; }
     const heading = isHeading(words, start, from - 1);
@@ -140,7 +145,7 @@ function contextAround(text, words, first, last) {
 
   let to = Math.min(highest, paragraphEnd(text, words, last));
   added = 0;
-  while (to < highest && added < AFTER_PARAGRAPHS && to - last < AFTER_MIN) {
+  while (to < highest && added < AFTER_PARAGRAPHS && to - last < wantAfter) {
     const end = Math.min(highest, paragraphEnd(text, words, to + 1));
     if (isHeading(words, to + 1, end) || end - last > AFTER_MAX) { break; }  // next section, or too long
     to = end;
