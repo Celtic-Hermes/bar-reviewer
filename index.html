@@ -115,6 +115,7 @@
       <section class="card">
         <h2 class="label" id="question-label">Question</h2>
         <p class="prompt" id="prompt"></p>
+        <button class="find-btn" id="find-btn">🔍 Find in case</button>
       </section>
 
       <!-- Multiple-choice parts (hidden for essays) -->
@@ -237,7 +238,26 @@
     </section>
   </main>
 
+  <!-- "Find in case" panel: slides up over the bottom half of the screen -->
+  <div class="sheet-backdrop" id="find-backdrop" hidden></div>
+  <section class="sheet" id="find-sheet" role="dialog" aria-modal="true" aria-labelledby="find-title" hidden>
+    <div class="sheet-grab" id="find-grab">
+      <div class="sheet-handle"></div>
+      <div class="sheet-head">
+        <h2 class="label" id="find-title"></h2>
+        <button class="sheet-close" id="find-close" aria-label="Close">✕</button>
+      </div>
+      <p class="sheet-case" id="find-case"></p>
+    </div>
+    <div class="sheet-body" id="find-body">
+      <p class="sheet-note" id="find-note" hidden></p>
+      <p class="sheet-part" id="find-part" hidden></p>
+      <div class="sheet-text" id="find-text"></div>
+    </div>
+  </section>
+
   <script src="progress.js"></script>
   <script src="app.js"></script>
+  <script src="find-in-case.js"></script>
 </body>
 </html>

@@ -470,6 +470,7 @@ function startPractice() {
 function showQuestion() {
   const question = session.questions[session.index];
   session.current = {};  // nothing done on this question yet
+  lastPromptWord = null;
   const isLast = session.index === session.questions.length - 1;
 
   document.getElementById("progress").textContent =
@@ -852,6 +853,10 @@ function joinHighlights(element) {
   });
 }
 
+// The word she highlighted most recently in the question prompt (its number), so
+// "Find in case" knows which highlighted phrase she means. Not saved; reset per question.
+let lastPromptWord = null;
+
 // Listen for taps on the words inside one text box. Set up once per box when the app starts.
 // Only taps on a word in this box do anything, so buttons elsewhere are never affected.
 function makeHighlightable(elementId) {
@@ -866,6 +871,7 @@ function makeHighlightable(elementId) {
     toggleHighlight(key, Number(word.dataset.word));
     word.classList.toggle("hl-on");
     joinHighlights(element);
+    if (elementId === "prompt" && word.classList.contains("hl-on")) { lastPromptWord = Number(word.dataset.word); }
   });
 }
 
@@ -1052,6 +1058,7 @@ function applyMouseDrag() {
       setHighlights(p.key, p.words.map(function (word) { return Number(word.dataset.word); }), turnOn);
       p.words.forEach(function (word) { word.classList.toggle("hl-on", turnOn); });
       joinHighlights(p.element);
+      if (turnOn && p.element.id === "prompt") { lastPromptWord = Number(p.words[p.words.length - 1].dataset.word); }
     });
   }
 
@@ -1137,6 +1144,24 @@ function openCase(theCase, cameFrom) {
 }
 
 // ---------- Full text of the decision ----------
+// Download one case's full text (data/case-texts/case-0001.txt). Used by the
+// "Read the full text" button and by "Find in case". Gives back the text, or fails with
+// "missing" (no file for this case) or another error (for example, offline).
+function loadCaseText(caseId) {
+  // Only IDs like "case-0001" are used to build the file name (bad content can't point elsewhere).
+  if (typeof caseId !== "string" || !/^case-\d+$/.test(caseId)) {
+    return Promise.reject(new Error("missing"));
+  }
+  return fetch("data/case-texts/" + caseId + ".txt").then(function (response) {
+    if (response.status === 404) { throw new Error("missing"); }
+    if (!response.ok) { throw new Error("status " + response.status); }
+    return response.text();
+  }).then(function (text) {
+    if (!text.trim()) { throw new Error("missing"); }
+    return text;
+  });
+}
+
 // Each case's full text is its own file: data/case-texts/case-0001.txt, and so on.
 // It's only downloaded when she taps "Read the full text", never when the case opens,
 // so cases she never reads take no space or loading time. Once read, the phone keeps
@@ -1173,25 +1198,15 @@ document.getElementById("full-text-btn").addEventListener("click", function () {
   }
 
   const theCase = currentCase;
-  // Only IDs like "case-0001" are used to build the file name (bad content can't point elsewhere).
-  if (!theCase || typeof theCase.id !== "string" || !/^case-\d+$/.test(theCase.id)) {
-    showFullTextNote("The full text for this case hasn't been added yet.");
-    return;
-  }
+  if (!theCase) { return; }
 
   button.disabled = true;
   button.textContent = "Loading…";
   document.getElementById("full-text-note").hidden = true;
 
-  fetch("data/case-texts/" + theCase.id + ".txt")
-    .then(function (response) {
-      if (response.status === 404) { throw new Error("missing"); }
-      if (!response.ok) { throw new Error("status " + response.status); }
-      return response.text();
-    })
+  loadCaseText(theCase.id)
     .then(function (text) {
       if (currentCase !== theCase) { return; }  // she already opened a different case
-      if (!text.trim()) { throw new Error("missing"); }
       // Tap or drag to highlight, like the summary. Saved as e.g. "case-0001:fulltext".
       // (Shown as plain text only: nothing in the file can run as code.)
       setHighlightableText(box, text, theCase.id + ":fulltext");

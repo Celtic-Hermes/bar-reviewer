@@ -3,13 +3,13 @@
 //
 // ===================== WHEN TO CHANGE THE VERSION =====================
 // Change CACHE_VERSION (v1 → v2 → v3 …) whenever you change any APP file:
-//   index.html, style.css, app.js, progress.js, manifest.webmanifest, or the icons,
+//   index.html, style.css, app.js, progress.js, find-in-case.js, manifest.webmanifest, or the icons,
 //   or when you add or remove a file in the APP_FILES list below.
 // You do NOT need to change it when you only edit data/questions.json or data/cases.json,
 // or add/edit files in data/case-texts/.
 // Questions, cases and case texts are always fetched fresh when she's online.
 // =====================================================================
-const CACHE_VERSION = "v20";
+const CACHE_VERSION = "v21";
 const CACHE_NAME = "bar-reviewer-" + CACHE_VERSION;
 
 // Every file the app needs, written relative to this file so it works
@@ -19,6 +19,7 @@ const APP_FILES = [
   "index.html",
   "style.css",
   "app.js",
+  "find-in-case.js",
   "progress.js",
   "manifest.webmanifest",
   "icons/icon-192.png",

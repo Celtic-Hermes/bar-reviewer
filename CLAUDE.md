@@ -117,7 +117,7 @@ Exactly 4 choices (A–D) and exactly one correct answer. She gets instant feedb
 ## Her progress (saved only on her phone)
 - Saved in the phone's browser storage (`localStorage`). Nothing is sent anywhere, and there are no accounts.
 - Remember: **score per subject**, **questions she missed**, and **bookmarked questions**.
-- Also remember her **highlighted words** (tap a word to highlight it): stored by question ID, or by case ID + part (e.g. `case-0002:facts`), as a list of word positions. If a question's prompt text is edited later, her saved highlights may land on different words.
+- Also remember her **highlighted words** (tap a word to highlight it): stored by question ID, or by case ID + part (e.g. `case-0002:facts`, or `case-0002:fulltext` for the full decision text), as a list of word positions. If a question's prompt text is edited later, her saved highlights may land on different words.
 - **Where she is right now** (screen, subject/topic, and any practice round in progress: question order, position, answers and ratings so far) is saved in its own slot (`barReviewer.currentSpot.v1`), so a reload puts her back there. It is **not** part of backups. It is cleared when she returns to the home screen or finishes a round (results screen).
 - Counting: a multiple-choice question is "missed" if answered wrong. An essay rated **Partly** or **Missed it** goes into her review list.
 - iPhone note: she should use Safari's **Add to Home Screen**. iPhones can clear saved data for websites that haven't been opened in a while, but apps added to the home screen are better protected. The home screen has **Back up my progress** (saves a file via the Share menu → Save to Files) and **Restore progress** (loads that file back).
@@ -146,7 +146,7 @@ These rules matter more than speed.
 - **Plain HTML, CSS, and JavaScript.** No frameworks or build steps unless there's a clear reason, explained first. This keeps things simple to run and fix.
 - **Phone first**, especially iPhone Safari. It should still work on a computer.
 - **Works offline** after the first visit (using a "service worker", a small script that saves the app's files on the phone).
-  - **Cache version rule:** whenever any app file changes (`index.html`, `style.css`, `app.js`, `progress.js`, `manifest.webmanifest`, icons), or a file is added to or removed from the `APP_FILES` list, bump `CACHE_VERSION` in `sw.js` (v1 → v2 …) in the same commit, and tell the builder it was bumped. Editing only `data/questions.json`, `data/cases.json`, or files in `data/case-texts/` does not need a bump: they are fetched fresh whenever she's online.
+  - **Cache version rule:** whenever any app file changes (`index.html`, `style.css`, `app.js`, `progress.js`, `find-in-case.js`, `manifest.webmanifest`, icons), or a file is added to or removed from the `APP_FILES` list, bump `CACHE_VERSION` in `sw.js` (v1 → v2 …) in the same commit, and tell the builder it was bumped. Editing only `data/questions.json`, `data/cases.json`, or files in `data/case-texts/` does not need a bump: they are fetched fresh whenever she's online.
   - Every new app file must be added to `APP_FILES` in `sw.js`, or it won't work offline.
   - Use relative paths only (no leading `/`), so the app works at `username.github.io/bar-reviewer/`.
 - **Hosting:** GitHub Pages (free). It gives one web link to open on her iPhone and add to the home screen.
