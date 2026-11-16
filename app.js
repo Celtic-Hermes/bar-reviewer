@@ -32,6 +32,10 @@ let practiceCase = null;
 let shownScreen = "screen-home";  // which screen is showing right now
 let currentCase = null;           // the case on the case screen
 
+// iPhone Safari only shows a button's "pressed" look (the CSS :active style) if the page
+// listens for finger touches. This empty listener switches that on; it does nothing else.
+document.addEventListener("touchstart", function () {}, { passive: true });
+
 // ---------- Switching screens ----------
 // Only one screen is visible at a time.
 function showScreen(id) {
