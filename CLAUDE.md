@@ -26,7 +26,7 @@ Use these exact names everywhere (data, menus, filters):
 
 ### Miscellaneous section
 Below the 8 subjects, the home screen has a **Miscellaneous** section for extra subjects that are not bar subjects. Use these exact names:
-- Communication Law (topic so far: Data Privacy Act)
+- Communication Law (topic so far: Right to Privacy)
 
 Content is grouped by **subject → topic** (for example, Civil Law → Obligations and Contracts).
 
