@@ -31,6 +31,7 @@ let fixedQuestions = null;
 let practiceCase = null;
 
 let shownScreen = "screen-home";  // which screen is showing right now
+let updateWaiting = false;        // a new version of the app is ready (see "Offline support")
 let currentCase = null;           // the case on the case screen
 
 // iPhone Safari only shows a button's "pressed" look (the CSS :active style) if the page
@@ -46,6 +47,7 @@ function showScreen(id) {
   window.scrollTo(0, 0);
   shownScreen = id;
   rememberSpot();
+  reloadForUpdateIfSafe();  // a new version waiting? Moving between screens is a safe moment
 }
 
 // ---------- Remember where she is (so a reload puts her back) ----------
@@ -2041,17 +2043,55 @@ function showLoadError(text) {
 
 // ---------- Offline support ----------
 // Register the service worker (sw.js), which saves the app's files on the phone.
-// When a new version is installed, reload once so she sees it right away.
+// When a new version of the app has been installed, the page reloads once so she gets
+// it, but only at a safe moment, never in the middle of a question:
+//   - safe: the home, subject, sub-topic or results screen, or a question she hasn't
+//     touched yet (she just arrived with "Next");
+//   - wait: she's partway through a question (picked a level or a choice, revealed an
+//     answer, checked a key point, rated), she's reading a case, the Find in case panel
+//     is open, she's dragging to highlight, or she's typing in a text box.
+// Until then the update waits, and it's applied at the next safe moment (usually when she
+// taps "Next"). The reload puts her back on the same spot (rememberSpot / restoreSpot).
+let reloadingForUpdate = false;
+
+function safeToReload() {
+  if (typeof sheetOpen !== "undefined" && sheetOpen) { return false; }   // Find in case panel
+  if (mouseIsDown) { return false; }                                      // dragging to highlight
+  const focused = document.activeElement;
+  if (focused && (focused.tagName === "TEXTAREA" || focused.isContentEditable ||
+      (focused.tagName === "INPUT" && /^(text|search|email|number|password|url|tel)$/.test(focused.type)))) {
+    return false;                                                         // typing
+  }
+  if (shownScreen === "screen-question") {
+    return !session || !session.current || Object.keys(session.current).length === 0;
+  }
+  if (shownScreen === "screen-case") { return false; }  // reading a case: wait until she leaves it
+  return true;
+}
+
+function reloadForUpdateIfSafe() {
+  if (!updateWaiting || reloadingForUpdate || !safeToReload()) { return; }
+  reloadingForUpdate = true;
+  rememberSpot();            // save exactly where she is first
+  window.location.reload();
+}
+
 if ("serviceWorker" in navigator) {
   const hadOldVersion = Boolean(navigator.serviceWorker.controller);
-  let reloaded = false;
   navigator.serviceWorker.addEventListener("controllerchange", function () {
-    if (hadOldVersion && !reloaded) {
-      reloaded = true;
-      window.location.reload();
+    // (On the very first visit there's no old version, so nothing to reload.)
+    if (hadOldVersion) {
+      updateWaiting = true;
+      reloadForUpdateIfSafe();
     }
   });
-  navigator.serviceWorker.register("sw.js", { updateViaCache: "none" }).catch(function () {
+  navigator.serviceWorker.register("sw.js", { updateViaCache: "none" }).then(function (registration) {
+    // An app opened from the home screen often just comes back from the background,
+    // which doesn't check for a new version. So check each time she comes back to it.
+    document.addEventListener("visibilitychange", function () {
+      if (document.visibilityState === "visible") { registration.update().catch(function () {}); }
+    });
+  }).catch(function () {
     // If this fails (for example, when opened by double-click), the app still works online.
   });
 }
