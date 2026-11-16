@@ -827,20 +827,56 @@ function selectionInHighlightable(range) {
 }
 
 function clearDragPreview() {
-  document.querySelectorAll(".hl-preview").forEach(function (word) { word.classList.remove("hl-preview"); });
+  document.querySelectorAll(".hl-preview, .hl-unpreview").forEach(function (piece) {
+    piece.classList.remove("hl-preview", "hl-unpreview");
+  });
 }
 
-// While she drags, show a light yellow on just the words she's dragging over.
+// While she drags, show live which words the drag will change:
+// - a drag that STARTED on a plain word: the words she passes over get a light yellow
+//   preview of the highlight they're about to get ("hl-preview");
+// - a drag that STARTED on a yellow word: the yellow words she passes over turn a lighter
+//   yellow right away ("hl-unpreview"), showing they're about to lose their highlight.
+//   When she lets go they fade from that lighter yellow to nothing.
 // (The browser's own blue selection is made invisible in this text by style.css.)
 document.addEventListener("selectionchange", function () {
   if (!mouseIsDown || lastPointerType !== "mouse") { return; }
   clearDragPreview();
   const selection = window.getSelection();
   if (!selection || selection.rangeCount === 0 || selection.isCollapsed) { return; }
-  selectedWords(selection.getRangeAt(0)).forEach(function (p) {
-    p.words.forEach(function (word) { word.classList.add("hl-preview"); });
+  const picked = selectedWords(selection.getRangeAt(0));
+  if (picked.length === 0) { return; }
+  const removing = dragStartWord(selection, picked).classList.contains("hl-on");
+  picked.forEach(function (p) {
+    p.words.forEach(function (word) {
+      if (!removing) {
+        word.classList.add("hl-preview");
+      } else if (word.classList.contains("hl-on")) {
+        word.classList.add("hl-unpreview");
+      }
+    });
+    if (removing) { lightenGapsBeside(p.element); }
   });
 });
+
+// A yellow space next to a word that's about to lose its highlight will lose its yellow
+// too (the stripe breaks there), so it gets the same lighter preview.
+function lightenGapsBeside(element) {
+  const pieces = element.querySelectorAll(".hl-word, .hl-gap");  // in reading order
+  let previousWord = null;
+  let waiting = [];  // yellow spaces since the previous word
+  pieces.forEach(function (piece) {
+    if (piece.classList.contains("hl-gap")) {
+      if (piece.classList.contains("hl-on")) { waiting.push(piece); }
+      return;
+    }
+    const either = (previousWord && previousWord.classList.contains("hl-unpreview")) ||
+      piece.classList.contains("hl-unpreview");
+    if (either) { waiting.forEach(function (gap) { gap.classList.add("hl-unpreview"); }); }
+    previousWord = piece;
+    waiting = [];
+  });
+}
 
 // Remove the browser's selection now, and once more just before the next screen redraw,
 // in case the browser puts it back after letting go of the mouse.
@@ -861,7 +897,14 @@ function clearNativeSelection() {
 function finishMouseDrag() {
   if (!mouseIsDown) { return; }
   mouseIsDown = false;
+  applyMouseDrag();
+  // Remove the drag previews only AFTER the highlights have changed, in the same moment.
+  // (If the lighter preview were removed first, the browser could briefly see full yellow
+  // again, and the fade would start from full yellow instead of from the lighter preview.)
   clearDragPreview();
+}
+
+function applyMouseDrag() {
   if (lastPointerType !== "mouse") { return; }  // touch: leave it to the tap code
 
   const selection = window.getSelection();

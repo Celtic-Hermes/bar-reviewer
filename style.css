@@ -15,6 +15,7 @@
   --highlight: #ffe95c;
   --highlight-text: #1f2328;
   --highlight-preview: rgba(255, 233, 92, 0.5);
+  --highlight-removing: #fff4ad;  /* solid lighter yellow: about to lose its highlight */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -34,6 +35,7 @@
     --highlight: #e8c93a;
     --highlight-text: #15171b;
     --highlight-preview: rgba(232, 201, 58, 0.35);
+    --highlight-removing: #655c2e;
   }
 }
 
@@ -135,6 +137,20 @@ body {
   transition: background-color 0.35s ease-out, box-shadow 0.35s ease-out;
 }
 .hl-word.hl-on, .hl-gap.hl-on, .hl-word.hl-preview { transition: none; }
+
+/* Dragging over yellow words to remove them: while she's still dragging, those words
+   (and the yellow spaces beside them) turn lighter at once. When she lets go they fade
+   from this lighter yellow down to nothing, using the fade above.
+   So each word goes: full yellow -> lighter yellow (dragging) -> faded out (released). */
+/* (A solid color, not see-through, so the words and spaces join without visible seams.) */
+.hl-word.hl-on.hl-unpreview {
+  background: var(--highlight-removing);
+  box-shadow: 0 0 0 2px var(--highlight-removing);
+}
+.hl-gap.hl-on.hl-unpreview {
+  background: var(--highlight-removing);
+  box-shadow: 0 2px 0 var(--highlight-removing), 0 -2px 0 var(--highlight-removing);
+}
 /* If she has asked her phone for less motion, skip the fade. */
 @media (prefers-reduced-motion: reduce) {
   .hl-word, .hl-gap { transition: none; }
