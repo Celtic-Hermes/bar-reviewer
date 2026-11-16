@@ -292,6 +292,45 @@ body {
 .list-empty { margin: 10px 0 0; font-size: 15px; }
 .topics-label { margin-top: 24px; }
 
+/* Question type picker: three side-by-side buttons (Essay / Multiple choice / Both).
+   They're really radio buttons, so only one can be picked at a time. */
+.mode-picker {
+  margin: 0 0 12px;
+  padding: 14px 16px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+.mode-picker legend { float: left; width: 100%; margin-bottom: 10px; padding: 0; }
+.mode-options {
+  clear: both;
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+  background: var(--bg);
+  border-radius: 10px;
+}
+.mode-options label { flex: 1 1 0; min-width: 0; }
+.mode-options input { position: absolute; opacity: 0; pointer-events: none; }
+.mode-options span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 40px;
+  padding: 6px 4px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--muted);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.mode-options input:checked + span { background: var(--primary); color: var(--primary-text); }
+.mode-options input:focus-visible + span { outline: 2px solid var(--primary); outline-offset: 2px; }
+
 /* Shuffle on/off switch (looks like an iPhone toggle) */
 .switch-row {
   display: flex;

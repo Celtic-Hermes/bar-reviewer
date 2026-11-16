@@ -60,7 +60,8 @@ function rememberSpot() {
     screen: shownScreen.replace("screen-", ""),  // "subject", "question" or "case"
     subject: currentSubject,
     topic: currentTopic,
-    shuffle: document.getElementById("shuffle").checked
+    shuffle: document.getElementById("shuffle").checked,
+    mode: currentMode()
   };
   // In the middle of a round (or reading a case opened from a question): keep the round.
   const inRound = session && (shownScreen === "screen-question" ||
@@ -108,6 +109,7 @@ function putBackSpot(spot) {
   const shuffleSwitch = document.getElementById("shuffle");
   shuffleSwitch.checked = Boolean(spot.shuffle);
   showShuffleNote();
+  setMode(spot.mode);  // older saved spots have no mode: that means "both"
 
   if (spot.screen === "subject") {
     openSubject(currentSubject);
@@ -244,10 +246,49 @@ function countLabel(n) {
   return n + (n === 1 ? " question" : " questions");
 }
 
+// ---------- Question type: "essay", "mcq" or "both" ----------
+// Picked on the subject screen. Narrows every round started from a topic,
+// "All topics", "Review missed" or "Bookmarked" to just that type.
+const QUESTION_MODES = ["essay", "mcq", "both"];
+
+function currentMode() {
+  const picked = document.querySelector('input[name="question-mode"]:checked');
+  return picked ? picked.value : "both";
+}
+
+function setMode(mode) {
+  if (QUESTION_MODES.indexOf(mode) === -1) { mode = "both"; }
+  document.querySelector('input[name="question-mode"][value="' + mode + '"]').checked = true;
+}
+
+function fitsMode(question, mode) {
+  if (mode === "mcq") { return question.type === "mcq"; }
+  if (mode === "essay") { return question.type !== "mcq"; }
+  return true;
+}
+
+// The count shown on each card, worded for the picked type:
+// "6 essay questions", "4 multiple choice", or "10 questions".
+function modeCountLabel(n, mode) {
+  if (mode === "essay") { return n + (n === 1 ? " essay question" : " essay questions"); }
+  if (mode === "mcq") { return n + " multiple choice"; }
+  return countLabel(n);
+}
+
+document.querySelectorAll('input[name="question-mode"]').forEach(function (radio) {
+  radio.addEventListener("change", function () {
+    document.getElementById("list-empty").hidden = true;
+    showTopicCards(currentSubject);  // update the counts on every card
+    rememberSpot();
+  });
+});
+
 // The questions for a subject + a choice from the subject screen:
-// a topic name, "All topics", "Review missed", or "Bookmarked".
-function questionsForTopic(subject, topic) {
+// a topic name, "All topics", "Review missed", or "Bookmarked",
+// keeping only the question type she picked (unless mode is left out).
+function questionsForTopic(subject, topic, mode) {
   return questionsFor(subject).filter(function (q) {
+    if (mode && !fitsMode(q, mode)) { return false; }
     if (topic === ALL_TOPICS) { return true; }
     if (topic === REVIEW_MISSED) { return Boolean(progress.review[q.id]); }
     if (topic === BOOKMARKED) { return isBookmarked(q.id); }
@@ -273,7 +314,8 @@ function makeTopicCard(subject, topic) {
   name.textContent = topic;
   const howMany = document.createElement("span");
   howMany.className = "topic-count";
-  howMany.textContent = countLabel(questionsForTopic(subject, topic).length);
+  const mode = currentMode();
+  howMany.textContent = modeCountLabel(questionsForTopic(subject, topic, mode).length, mode);
   const arrow = document.createElement("span");
   arrow.className = "subject-arrow";
   arrow.textContent = "›";
@@ -300,6 +342,13 @@ function openSubject(subject) {
   document.getElementById("topic-area").hidden = (count === 0);
   document.getElementById("subject-empty").hidden = (count !== 0);
 
+  showTopicCards(subject);
+  showSubjectCases(subject);
+  showScreen("screen-subject");
+}
+
+// Her lists and the topic cards on the subject screen (rebuilt when the question type changes).
+function showTopicCards(subject) {
   // Her two lists: "Review missed" and "Bookmarked".
   const myLists = document.getElementById("my-lists");
   myLists.innerHTML = "";
@@ -313,9 +362,6 @@ function openSubject(subject) {
   [ALL_TOPICS].concat(topicsFor(subject)).forEach(function (topic) {
     list.appendChild(makeTopicCard(subject, topic));
   });
-
-  showSubjectCases(subject);
-  showScreen("screen-subject");
 }
 
 // The "Cases" list on the subject screen: one card per case in this subject.
@@ -347,7 +393,15 @@ function showSubjectCases(subject) {
 // Show the friendly "this list is empty" message on the subject screen.
 function showEmptyListMessage(topic) {
   const note = document.getElementById("list-empty");
-  note.textContent = EMPTY_LIST_MESSAGES[topic] || "No questions here yet.";
+  const mode = currentMode();
+  const hasOtherTypes = mode !== "both" && questionsForTopic(currentSubject, topic).length > 0;
+  if (hasOtherTypes) {
+    // There are questions here, just not of the type she picked.
+    note.textContent = (mode === "mcq" ? "No multiple choice questions" : "No essay questions") +
+      " here. Pick Both under Question type to see the others.";
+  } else {
+    note.textContent = EMPTY_LIST_MESSAGES[topic] || "No questions here yet.";
+  }
   note.hidden = false;
 }
 
@@ -392,7 +446,7 @@ function shuffled(list) {
 }
 
 function startPractice() {
-  let questions = fixedQuestions ? fixedQuestions.slice() : questionsForTopic(currentSubject, currentTopic);
+  let questions = fixedQuestions ? fixedQuestions.slice() : questionsForTopic(currentSubject, currentTopic, currentMode());
   if (questions.length === 0) {
     // Empty list: go to (or stay on) the subject screen and explain, instead of starting.
     openSubject(currentSubject);
