@@ -256,7 +256,7 @@ function centerMatch() {
 
 document.getElementById("find-btn").addEventListener("click", function () {
   const question = session && session.questions[session.index];
-  if (!question) { return; }
+  if (!question || this.hidden) { return; }  // only after she has answered
   const phrase = pickedPhrase(question);
 
   // Show the panel right away ("Searching…"), then fill it in.

@@ -471,6 +471,9 @@ function showQuestion() {
   const question = session.questions[session.index];
   session.current = {};  // nothing done on this question yet
   lastPromptWord = null;
+  // "Find in case" stays hidden until she answers (Submit, or Show suggested answer),
+  // so it can't be used as a shortcut to the answer.
+  document.getElementById("find-btn").hidden = true;
   const isLast = session.index === session.questions.length - 1;
 
   document.getElementById("progress").textContent =
@@ -600,6 +603,7 @@ function showPicked(question, picked) {
   setRichText(document.getElementById("mcq-explanation"), question.explanation);
   document.getElementById("mcq-feedback").hidden = false;
   document.getElementById("next-btn").hidden = false;
+  document.getElementById("find-btn").hidden = false;  // she has answered: "Find in case" is allowed now
 }
 
 // --- Essay ---
@@ -637,6 +641,7 @@ function showEssay(question) {
 function revealAnswer() {
   document.getElementById("answer-area").hidden = false;
   document.getElementById("show-answer").hidden = true;
+  document.getElementById("find-btn").hidden = false;  // she has answered: "Find in case" is allowed now
 }
 
 document.getElementById("show-answer").addEventListener("click", function () {
