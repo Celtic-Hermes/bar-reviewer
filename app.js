@@ -43,12 +43,12 @@ document.addEventListener("touchstart", function () {}, { passive: true });
 // Only one screen is visible at a time.
 function showScreen(id) {
   saveAllNotes();  // leaving a screen with a notes box: save what she typed first
-  ["screen-home", "screen-subject", "screen-subtopics", "screen-topic", "screen-tagged", "screen-question", "screen-results", "screen-case", "screen-rule"].forEach(function (screenId) {
+  ["screen-home", "screen-subject", "screen-subtopics", "screen-topic", "screen-tagged", "screen-question", "screen-results", "screen-case", "screen-rule", "screen-notes"].forEach(function (screenId) {
     document.getElementById(screenId).hidden = (screenId !== id);
   });
   window.scrollTo(0, 0);
   shownScreen = id;
-  if (id === "screen-home") { showTodayCard(); }  // up to date whenever she comes home
+  if (id === "screen-home") { showTodayCard(); showMyNotesButton(); }  // up to date whenever she comes home
   rememberSpot();
   reloadForUpdateIfSafe();  // a new version waiting? Moving between screens is a safe moment
 }
@@ -93,6 +93,7 @@ function rememberSpot() {
   }
   if (shownScreen === "screen-rule" && currentRule) {
     spot.ruleId = currentRule.id;
+    spot.ruleCameFrom = ruleCameFrom;
   }
   saveSpot(spot);
 }
@@ -120,6 +121,21 @@ function putBackSpot(spot) {
   if (spot.subject === "Communication Law") {
     spot.subject = "Mercantile Law";
     if (spot.topic === "Right to Privacy") { spot.topic = "Communication Law"; }
+  }
+  // The notes list, and a case or rule opened from it, don't belong to a subject.
+  if (spot.screen === "notes") {
+    openNotes();
+    return true;
+  }
+  if (spot.screen === "case" && spot.caseCameFrom === "notes") {
+    const noteCase = findCase(spot.caseId);
+    if (noteCase) { openCase(noteCase, "notes"); } else { openNotes(); }
+    return true;
+  }
+  if (spot.screen === "rule" && spot.ruleCameFrom === "notes") {
+    const noteRule = findRule(spot.ruleId);
+    if (noteRule) { openRule(noteRule, "notes"); } else { openNotes(); }
+    return true;
   }
   if (SUBJECTS.concat(MISC_SUBJECTS).indexOf(spot.subject) === -1) { return false; }
   currentSubject = spot.subject;
@@ -725,6 +741,7 @@ function makeQuestionCard(question, onTap) {
 // "rule-0001:fulltext", with the words numbered across the whole rule.
 let topicRule = null;    // the rule behind the topic screen being shown, if any
 let currentRule = null;  // the rule on the rule screen
+let ruleCameFrom = "topic";  // where the rule screen's Back goes: "topic" or "notes"
 
 function findRule(ruleId) {
   return allRules.find(function (r) { return r.id === ruleId; }) || null;
@@ -745,7 +762,7 @@ document.getElementById("topic-rule").addEventListener("click", function () {
 });
 
 document.getElementById("rule-back").addEventListener("click", function () {
-  openTopicOrSubject();
+  if (ruleCameFrom === "notes") { openNotes(); } else { openTopicOrSubject(); }
 });
 
 function loadRuleText(ruleId) {
@@ -763,11 +780,19 @@ function loadRuleText(ruleId) {
   });
 }
 
-function openRule(rule) {
+// "cameFrom": "notes" (her My notes list), otherwise a topic screen.
+function openRule(rule, cameFrom) {
   currentRule = rule;
-  document.getElementById("rule-subject").textContent =
-    [currentSubject, currentTopic, currentSubtopic && currentSubtopic.charAt(0) !== "*" ? currentSubtopic : null]
-      .filter(Boolean).join(" · ");
+  ruleCameFrom = cameFrom === "notes" ? "notes" : "topic";
+  let where;
+  if (ruleCameFrom === "notes") {
+    // Not opened from a topic: name the subject and topic its questions are filed under.
+    const q = allQuestions.find(function (x) { return x && x.source && x.source.grNumber === rule.number; });
+    where = q ? [q.subject, q.topic] : [];
+  } else {
+    where = [currentSubject, currentTopic, currentSubtopic && currentSubtopic.charAt(0) !== "*" ? currentSubtopic : null];
+  }
+  document.getElementById("rule-subject").textContent = where.filter(Boolean).join(" · ");
   document.getElementById("rule-title").textContent = rule.title || "Untitled rule";
   document.getElementById("rule-number").textContent = rule.number || "";
   document.getElementById("rule-draft-badge").hidden = (rule.status === "verified");
@@ -1012,6 +1037,71 @@ window.addEventListener("resize", function () {
     if (box.offsetParent !== null) { growNotesBox(box); }
   });
 });
+
+// ---------- My notes (home screen button, and the list of everything she's written on) ----------
+// Her notes, newest first, for cases and rules that still exist: [{ kind, item, note }].
+function myNotes() {
+  const list = [];
+  Object.keys(progress.notes).forEach(function (id) {
+    const note = progress.notes[id];
+    const item = id.indexOf("case-") === 0 ? findCase(id) : findRule(id);
+    if (!item) { return; }  // a case or rule no longer in the content: kept, just not listed
+    list.push({ kind: id.indexOf("case-") === 0 ? "case" : "rule", item: item, note: note });
+  });
+  list.sort(function (a, b) { return String(b.note.updated || "").localeCompare(String(a.note.updated || "")); });
+  return list;
+}
+
+function showMyNotesButton() {
+  const n = myNotes().length;
+  document.getElementById("my-notes-btn").textContent = "📝 My notes" + (n > 0 ? " (" + n + ")" : "");
+}
+
+function openNotes() {
+  const entries = myNotes();
+  const list = document.getElementById("notes-list");
+  list.innerHTML = "";
+  entries.forEach(function (entry) { list.appendChild(makeNoteCard(entry)); });
+  document.getElementById("notes-count").textContent = entries.length === 0 ? ""
+    : entries.length + (entries.length === 1 ? " case or rule" : " cases and rules") + " with your notes";
+  document.getElementById("notes-empty").hidden = entries.length !== 0;
+  showScreen("screen-notes");
+}
+
+// One card: the case or rule name, the start of her note, then "Case · Nov 18, 2026"
+// (and the Unverified label, like every case or rule card).
+function makeNoteCard(entry) {
+  const card = document.createElement("button");
+  card.className = "subject-card note-card";
+  const name = document.createElement("span");
+  name.className = "subject-name";
+  if (entry.kind === "case") {
+    name.appendChild(caseTitle(entry.item.name));
+  } else {
+    name.append(entry.item.title || "Untitled rule");
+  }
+  const preview = document.createElement("span");
+  preview.className = "note-preview";
+  const text = entry.note.text.replace(/\s+/g, " ").trim();
+  preview.textContent = text.length > 120 ? text.slice(0, 120).replace(/\s+\S*$/, "") + "…" : text;
+  name.appendChild(preview);
+  const updated = entry.note.updated ? new Date(entry.note.updated) : null;
+  const when = updated && !isNaN(updated)
+    ? updated.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" }) : "";
+  const label = (entry.kind === "case" ? "Case" : "Rule") + (when ? " · " + when : "");
+  name.appendChild(cardDetail(label, entry.item.status === "verified"));
+  const arrow = document.createElement("span");
+  arrow.className = "subject-arrow";
+  arrow.textContent = "›";
+  card.append(name, arrow);
+  card.addEventListener("click", function () {
+    if (entry.kind === "case") { openCase(entry.item, "notes"); } else { openRule(entry.item, "notes"); }
+  });
+  return card;
+}
+
+document.getElementById("my-notes-btn").addEventListener("click", openNotes);
+document.getElementById("notes-back").addEventListener("click", function () { showScreen("screen-home"); });
 
 // ---------- Case titles: one shared look everywhere ----------
 // Every place that shows a case's name as a label builds it with caseTitle() (or, for the
@@ -2746,6 +2836,8 @@ document.getElementById("case-back").addEventListener("click", function () {
     window.scrollTo(0, questionScrollSpot);  // back to the same spot, answer still showing
   } else if (caseCameFrom === "topic") {
     openTopicOrSubject();  // back to the topic screen she opened it from
+  } else if (caseCameFrom === "notes") {
+    openNotes();  // back to her notes list
   } else {
     openSubject(currentSubject);
   }
@@ -2857,6 +2949,7 @@ document.getElementById("restore-input").addEventListener("change", function (ev
     }
     if (restoreProgress(backup.progress)) {
       showTodayCard();  // the restored streak and today's count
+      showMyNotesButton();  // and the restored notes
       showBackupMessage("Progress restored from the backup of " + describeDate(backup.savedAt) + ".");
     } else {
       showBackupMessage("Loaded the backup, but this phone wouldn't save it. Private browsing may be on.", true);
@@ -2921,6 +3014,7 @@ const rulesReady = fetch("data/rules.json")
 
 Promise.all([questionsReady, casesReady, rulesReady]).then(function () {
   showTodayCard();  // now that the questions are in, the mastery count can be shown
+  showMyNotesButton();  // ...and her notes can be matched to their cases and rules
   restoreSpot();
 });
 

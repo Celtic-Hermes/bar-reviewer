@@ -727,6 +727,9 @@ body {
 .notes-box::placeholder { color: var(--muted); }
 .notes-status { margin: 8px 0 0; font-size: 13px; color: var(--muted); }
 .rule-notes-card { margin-top: 14px; }
+.my-notes-btn { margin: -6px 0 18px; }
+/* My notes list: the start of her note under the case or rule name */
+.note-preview { display: block; margin-top: 4px; font-size: 15px; font-weight: 400; color: var(--text); }
 
 /* "Read the case" buttons under a question */
 .question-cases { margin-top: 8px; }

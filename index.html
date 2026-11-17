@@ -56,6 +56,8 @@
         </label>
       </section>
 
+      <button class="btn btn-secondary my-notes-btn" id="my-notes-btn">📝 My notes</button>
+
       <div class="subject-list" id="subject-list"></div>
 
       <!-- Extra subjects that are not one of the 8 bar subjects -->
@@ -374,6 +376,15 @@
         <h2 class="label">Source</h2>
         <p class="prompt" id="rule-source"></p>
       </section>
+    </section>
+
+    <!-- SCREEN 6: My notes: every case and rule she has written a note on -->
+    <section id="screen-notes" hidden>
+      <button class="back-btn" id="notes-back">‹ Home</button>
+      <h1 class="screen-title">My notes</h1>
+      <p class="screen-subtitle" id="notes-count"></p>
+      <div class="subject-list" id="notes-list"></div>
+      <p class="card empty-note" id="notes-empty" hidden>No notes yet. Open a case, or a rule's full text, and write in "My notes". It will show up here.</p>
     </section>
 
     <!-- SCREEN 4: Results -->
