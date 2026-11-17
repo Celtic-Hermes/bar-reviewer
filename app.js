@@ -1974,6 +1974,7 @@ function applyFbLevel(question, level, hidden) {
   });
   fbInfo.words.forEach(function (w, n) {
     const hide = clean.indexOf(n) !== -1;
+    if (w.inHeading && !hide && !w.isBlank) { return; }  // the heading is never hidden: leave it as drawn
     w.span.classList.toggle("fb-blank", hide);
     w.span.textContent = "";
     if (hide) {
@@ -2417,9 +2418,24 @@ function richText(value, highlighted, noLists, startAt, headingEndsWord) {
   // its number) but never shown. Then the content, as usual.
   const section = splitSectionHeading(text);
   if (section) {
+    // The heading row: the label ("SEC. 4.") and the title ("No Docket Fees").
     const heading = document.createElement("span");
     heading.className = "section-heading";
-    addText(heading, section.heading);
+    const parts = SECTION_LABEL.exec(section.heading);
+    if (parts) {
+      const label = document.createElement("span");
+      label.className = "section-label";
+      addText(label, parts[1]);
+      addText(heading, parts[2]);  // the space between them
+      const title = document.createElement("span");
+      title.className = "section-title";
+      addText(title, parts[3]);
+      hideLastPeriod(title);
+      heading.prepend(label);
+      heading.appendChild(title);
+    } else {
+      addText(heading, section.heading);
+    }
     fragment.appendChild(heading);
     const sep = document.createElement("span");
     sep.className = "section-sep";
@@ -2464,6 +2480,27 @@ function splitSectionHeading(text) {
   const m = SECTION_HEADING.exec(String(text || ""));
   if (!m) { return null; }
   return { heading: m[1], sep: m[2], body: text.slice(m[0].length) };
+}
+
+// The heading's label ("SEC. 4.", shown in gold) and its title ("No Docket Fees.", bold).
+const SECTION_LABEL = /^((?:SECTION|Section|SEC\.|Sec\.|ARTICLE|Article|ART\.|Art\.)\s+\d+\s*\.)(\s+)(\S[\s\S]*)$/;
+
+// The title's final period isn't shown ("No Docket Fees", not "No Docket Fees."), but it
+// stays in the text inside its word, so the word and its number don't change.
+function hideLastPeriod(title) {
+  const words = title.querySelectorAll(".hl-word");
+  const last = words.length ? words[words.length - 1] : title.lastChild;
+  if (!last || !/\.$/.test(last.textContent)) { return; }
+  const dot = document.createElement("span");
+  dot.className = "section-sep";
+  dot.textContent = ".";
+  if (last.nodeType === Node.TEXT_NODE) {
+    last.textContent = last.textContent.slice(0, -1);
+    title.appendChild(dot);
+  } else {
+    last.textContent = last.textContent.slice(0, -1);
+    last.appendChild(dot);
+  }
 }
 
 // ---------- Numbered points on their own lines ----------
