@@ -2031,5 +2031,401 @@
       "part": "Section 27 (Effectivity)",
       "excerpt": "SEC. 27. Effectivity. – This Rule shall take effect on October 24, 2007, following its publication in three (3) newspapers of general circulation."
     }
+  },
+  {
+    "id": "q-0083",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Custody of Minors and Habeas Corpus",
+    "prompt": "SECTION 1. Applicability. - This rule shall apply to ____ and ____ in relation thereto.\n\nThe Rules of Court shall apply ____.",
+    "fullText": "SECTION 1. Applicability. - This rule shall apply to petitions for custody of minors and writs of habeas corpus in relation thereto.\n\nThe Rules of Court shall apply suppletorily.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rule on Custody of Minors and Writ of Habeas Corpus in Relation to Custody of Minors",
+      "grNumber": "A.M. No. 03-04-04-SC",
+      "url": "https://lawphil.net/courts/supreme/am/am_03_04_04_sc_2003.html",
+      "part": "Section 1 (Applicability)",
+      "excerpt": "SECTION 1. Applicability. - This rule shall apply to petitions for custody of minors and writs of habeas corpus in relation thereto.\n\nThe Rules of Court shall apply suppletorily."
+    }
+  },
+  {
+    "id": "q-0084",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Custody of Minors and Habeas Corpus",
+    "prompt": "Section 2. Petition for custody of minors; who may file.- A ____ for the rightful custody of a minor may be filed by ____. The party against whom it may be filed shall be designated as the ____.",
+    "fullText": "Section 2. Petition for custody of minors; who may file.- A verified petition for the rightful custody of a minor may be filed by any person claiming such right. The party against whom it may be filed shall be designated as the respondent.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rule on Custody of Minors and Writ of Habeas Corpus in Relation to Custody of Minors",
+      "grNumber": "A.M. No. 03-04-04-SC",
+      "url": "https://lawphil.net/courts/supreme/am/am_03_04_04_sc_2003.html",
+      "part": "Section 2 (Petition for custody of minors; who may file)",
+      "excerpt": "Section 2. Petition for custody of minors; who may file.- A verified petition for the rightful custody of a minor may be filed by any person claiming such right. The party against whom it may be filed shall be designated as the respondent."
+    }
+  },
+  {
+    "id": "q-0085",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Custody of Minors and Habeas Corpus",
+    "prompt": "Section 3. Where to file petition. - The petition for custody of minors shall be filed with the ____ of the province or city ____ or ____.",
+    "fullText": "Section 3. Where to file petition. - The petition for custody of minors shall be filed with the Family Court of the province or city where the petitioner resides or where the minor may be found.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rule on Custody of Minors and Writ of Habeas Corpus in Relation to Custody of Minors",
+      "grNumber": "A.M. No. 03-04-04-SC",
+      "url": "https://lawphil.net/courts/supreme/am/am_03_04_04_sc_2003.html",
+      "part": "Section 3 (Where to file petition)",
+      "excerpt": "Section 3. Where to file petition. - The petition for custody of minors shall be filed with the Family Court of the province or city where the petitioner resides or where the minor may be found."
+    }
+  },
+  {
+    "id": "q-0086",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Custody of Minors and Habeas Corpus",
+    "prompt": "Section 4. Contents of petition. - The verified petition shall allege the following:\n\n(a) The ____ of the petitioner and of the respondent;\n\n(b) The ____ of the minor and his or her relationship to the petitioner and the respondent;\n\n(c) The ____; and\n\n(d) Such other matters which are relevant to the custody of the minor.\n\nThe verified petition shall be accompanied by a ____, which the petitioner must ____.",
+    "fullText": "Section 4. Contents of petition. - The verified petition shall allege the following:\n\n(a) The personal circumstances of the petitioner and of the respondent;\n\n(b) The name, age and present whereabouts of the minor and his or her relationship to the petitioner and the respondent;\n\n(c) The material operative facts constituting deprivation of custody; and\n\n(d) Such other matters which are relevant to the custody of the minor.\n\nThe verified petition shall be accompanied by a certificate against forum shopping, which the petitioner must sign personally.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rule on Custody of Minors and Writ of Habeas Corpus in Relation to Custody of Minors",
+      "grNumber": "A.M. No. 03-04-04-SC",
+      "url": "https://lawphil.net/courts/supreme/am/am_03_04_04_sc_2003.html",
+      "part": "Section 4 (Contents of petition)",
+      "excerpt": "Section 4. Contents of petition. - The verified petition shall allege the following:\n\n(a) The personal circumstances of the petitioner and of the respondent;\n\n(b) The name, age and present whereabouts of the minor and his or her relationship to the petitioner and the respondent;\n\n(c) The material operative facts constituting deprivation of custody; and\n\n(d) Such other matters which are relevant to the custody of the minor.\n\nThe verified petition shall be accompanied by a certificate against forum shopping, which the petitioner must sign personally."
+    }
+  },
+  {
+    "id": "q-0087",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Custody of Minors and Habeas Corpus",
+    "prompt": "Section 5. Summons; personal service on respondent. - If the court is satisfied that the petition is ____, it shall direct the clerk of court to issue ____, which shall be served together with a copy of the petition ____ on the respondent.",
+    "fullText": "Section 5. Summons; personal service on respondent. - If the court is satisfied that the petition is sufficient in form and substance, it shall direct the clerk of court to issue summons, which shall be served together with a copy of the petition personally on the respondent.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rule on Custody of Minors and Writ of Habeas Corpus in Relation to Custody of Minors",
+      "grNumber": "A.M. No. 03-04-04-SC",
+      "url": "https://lawphil.net/courts/supreme/am/am_03_04_04_sc_2003.html",
+      "part": "Section 5 (Summons; personal service on respondent)",
+      "excerpt": "Section 5. Summons; personal service on respondent. - If the court is satisfied that the petition is sufficient in form and substance, it shall direct the clerk of court to issue summons, which shall be served together with a copy of the petition personally on the respondent."
+    }
+  },
+  {
+    "id": "q-0088",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Custody of Minors and Habeas Corpus",
+    "prompt": "Section 6. Motion to Dismiss. - A motion to dismiss the petition is ____ except on the ground of ____. Any other ground that might warrant the dismissal of the petition may be raised as an ____ in the answer.",
+    "fullText": "Section 6. Motion to Dismiss. - A motion to dismiss the petition is not allowed except on the ground of lack of jurisdiction over the subject matter or over the parties. Any other ground that might warrant the dismissal of the petition may be raised as an affirmative defense in the answer.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rule on Custody of Minors and Writ of Habeas Corpus in Relation to Custody of Minors",
+      "grNumber": "A.M. No. 03-04-04-SC",
+      "url": "https://lawphil.net/courts/supreme/am/am_03_04_04_sc_2003.html",
+      "part": "Section 6 (Motion to Dismiss)",
+      "excerpt": "Section 6. Motion to Dismiss. - A motion to dismiss the petition is not allowed except on the ground of lack of jurisdiction over the subject matter or over the parties. Any other ground that might warrant the dismissal of the petition may be raised as an affirmative defense in the answer."
+    }
+  },
+  {
+    "id": "q-0089",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Custody of Minors and Habeas Corpus",
+    "prompt": "Section 7. Verified Answer. - The respondent shall file an answer to the petition, ____, within ____ after service of summons and a copy of the petition.",
+    "fullText": "Section 7. Verified Answer. - The respondent shall file an answer to the petition, personally verified by him, within five days after service of summons and a copy of the petition.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rule on Custody of Minors and Writ of Habeas Corpus in Relation to Custody of Minors",
+      "grNumber": "A.M. No. 03-04-04-SC",
+      "url": "https://lawphil.net/courts/supreme/am/am_03_04_04_sc_2003.html",
+      "part": "Section 7 (Verified Answer)",
+      "excerpt": "Section 7. Verified Answer. - The respondent shall file an answer to the petition, personally verified by him, within five days after service of summons and a copy of the petition."
+    }
+  },
+  {
+    "id": "q-0090",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Custody of Minors and Habeas Corpus",
+    "prompt": "Section 8. Case study; duty of social worker. - Upon the filing of the verified answer or the expiration of the period to file it, the court may order a ____ to make a ____ of the minor and the parties and to submit a report and recommendation to the court at least ____ before the scheduled pre-trial.",
+    "fullText": "Section 8. Case study; duty of social worker. - Upon the filing of the verified answer or the expiration of the period to file it, the court may order a social worker to make a case study of the minor and the parties and to submit a report and recommendation to the court at least three days before the scheduled pre-trial.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rule on Custody of Minors and Writ of Habeas Corpus in Relation to Custody of Minors",
+      "grNumber": "A.M. No. 03-04-04-SC",
+      "url": "https://lawphil.net/courts/supreme/am/am_03_04_04_sc_2003.html",
+      "part": "Section 8 (Case study; duty of social worker)",
+      "excerpt": "Section 8. Case study; duty of social worker. - Upon the filing of the verified answer or the expiration of the period to file it, the court may order a social worker to make a case study of the minor and the parties and to submit a report and recommendation to the court at least three days before the scheduled pre-trial."
+    }
+  },
+  {
+    "id": "q-0091",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Custody of Minors and Habeas Corpus",
+    "prompt": "Section 9. Notice of mandatory pre-trial. - Within ____ after the filing of the answer or the expiration of the period to file answer, the court shall issue an order: (1) fixing a date for the ____; (2) directing the parties to file and serve their respective pre-trial briefs in such manner as shall ensure receipt thereof by the adverse party at least ____ before the date of pre-trial; and (3) requiring the respondent to ____ before the court.\n\nThe notice of its order shall be served ____ on both the parties and their respective counsels. The pre-trial is ____.",
+    "fullText": "Section 9. Notice of mandatory pre-trial. - Within fifteen days after the filing of the answer or the expiration of the period to file answer, the court shall issue an order: (1) fixing a date for the pre-trial conference; (2) directing the parties to file and serve their respective pre-trial briefs in such manner as shall ensure receipt thereof by the adverse party at least three days before the date of pre-trial; and (3) requiring the respondent to present the minor before the court.\n\nThe notice of its order shall be served separately on both the parties and their respective counsels. The pre-trial is mandatory.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rule on Custody of Minors and Writ of Habeas Corpus in Relation to Custody of Minors",
+      "grNumber": "A.M. No. 03-04-04-SC",
+      "url": "https://lawphil.net/courts/supreme/am/am_03_04_04_sc_2003.html",
+      "part": "Section 9 (Notice of mandatory pre-trial)",
+      "excerpt": "Section 9. Notice of mandatory pre-trial. - Within fifteen days after the filing of the answer or the expiration of the period to file answer, the court shall issue an order: (1) fixing a date for the pre-trial conference; (2) directing the parties to file and serve their respective pre-trial briefs in such manner as shall ensure receipt thereof by the adverse party at least three days before the date of pre-trial; and (3) requiring the respondent to present the minor before the court.\n\nThe notice of its order shall be served separately on both the parties and their respective counsels. The pre-trial is mandatory."
+    }
+  },
+  {
+    "id": "q-0092",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Custody of Minors and Habeas Corpus",
+    "prompt": "Section 10. Contents of pre-trial brief. - The pre-trial brief shall contain the following:\n\n(a) A statement of the ____ that may be allowed by law, indicating its terms;\n\n(b) A concise statement of their respective claims together with the applicable laws and authorities;\n\n(c) ____ and proposed stipulations of facts;\n\n(d) The ____;\n\n(e) All the evidence to be presented, briefly stating or describing its nature and purpose;\n\n(f) The number and names of the witnesses and their respective ____ which shall serve as the affiant's testimony on ____; and\n\n(g) Such other matters as the court may require to be included in the pre-trial brief.\n\nFailure to file the pre-trial brief or to comply with its required contents shall have the ____.",
+    "fullText": "Section 10. Contents of pre-trial brief. - The pre-trial brief shall contain the following:\n\n(a) A statement of the willingness of the parties to enter into agreements that may be allowed by law, indicating its terms;\n\n(b) A concise statement of their respective claims together with the applicable laws and authorities;\n\n(c) Admitted facts and proposed stipulations of facts;\n\n(d) The disputed factual and legal issues;\n\n(e) All the evidence to be presented, briefly stating or describing its nature and purpose;\n\n(f) The number and names of the witnesses and their respective affidavits which shall serve as the affiant's testimony on direct examination; and\n\n(g) Such other matters as the court may require to be included in the pre-trial brief.\n\nFailure to file the pre-trial brief or to comply with its required contents shall have the same effect as failure to appear at the pre-trial.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rule on Custody of Minors and Writ of Habeas Corpus in Relation to Custody of Minors",
+      "grNumber": "A.M. No. 03-04-04-SC",
+      "url": "https://lawphil.net/courts/supreme/am/am_03_04_04_sc_2003.html",
+      "part": "Section 10 (Contents of pre-trial brief)",
+      "excerpt": "Section 10. Contents of pre-trial brief. - The pre-trial brief shall contain the following:\n\n(a) A statement of the willingness of the parties to enter into agreements that may be allowed by law, indicating its terms;\n\n(b) A concise statement of their respective claims together with the applicable laws and authorities;\n\n(c) Admitted facts and proposed stipulations of facts;\n\n(d) The disputed factual and legal issues;\n\n(e) All the evidence to be presented, briefly stating or describing its nature and purpose;\n\n(f) The number and names of the witnesses and their respective affidavits which shall serve as the affiant's testimony on direct examination; and\n\n(g) Such other matters as the court may require to be included in the pre-trial brief.\n\nFailure to file the pre-trial brief or to comply with its required contents shall have the same effect as failure to appear at the pre-trial."
+    }
+  },
+  {
+    "id": "q-0093",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Custody of Minors and Habeas Corpus",
+    "prompt": "Section 11. Effect of failure to appear at the pre-trial.-(a) If the petitioner fails to appear personally at the pre-trial, the case shall be ____, unless his counsel or a duly authorized representative appears in court and proves a ____ for the non-appearance of the petitioner.\n\n(b) If the respondent has filed his answer but fails to appear at the pre-trial, the petitioner shall be allowed to present his evidence ____. The court shall then render judgment on the basis of the ____.",
+    "fullText": "Section 11. Effect of failure to appear at the pre-trial.-(a) If the petitioner fails to appear personally at the pre-trial, the case shall be dismissed, unless his counsel or a duly authorized representative appears in court and proves a valid excuse for the non-appearance of the petitioner.\n\n(b) If the respondent has filed his answer but fails to appear at the pre-trial, the petitioner shall be allowed to present his evidence ex parte. The court shall then render judgment on the basis of the pleadings and the evidence thus presented.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rule on Custody of Minors and Writ of Habeas Corpus in Relation to Custody of Minors",
+      "grNumber": "A.M. No. 03-04-04-SC",
+      "url": "https://lawphil.net/courts/supreme/am/am_03_04_04_sc_2003.html",
+      "part": "Section 11 (Effect of failure to appear at the pre-trial)",
+      "excerpt": "Section 11. Effect of failure to appear at the pre-trial.-(a) If the petitioner fails to appear personally at the pre-trial, the case shall be dismissed, unless his counsel or a duly authorized representative appears in court and proves a valid excuse for the non-appearance of the petitioner.\n\n(b) If the respondent has filed his answer but fails to appear at the pre-trial, the petitioner shall be allowed to present his evidence ex parte. The court shall then render judgment on the basis of the pleadings and the evidence thus presented."
+    }
+  },
+  {
+    "id": "q-0094",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Custody of Minors and Habeas Corpus",
+    "prompt": "Section 12. What may be done at pre-trial. - At the pre-trial, the parties may ____. If the parties fail to agree, the court may refer the matter to a ____ who shall have ____ to effect an agreement between the parties. If the issue is not settled through mediation, the court shall proceed with the ____, on which occasion it shall consider such other matters as may aid in the prompt disposition of the petition.",
+    "fullText": "Section 12. What may be done at pre-trial. - At the pre-trial, the parties may agree on the custody of the minor. If the parties fail to agree, the court may refer the matter to a mediator who shall have five days to effect an agreement between the parties. If the issue is not settled through mediation, the court shall proceed with the pre-trial conference, on which occasion it shall consider such other matters as may aid in the prompt disposition of the petition.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rule on Custody of Minors and Writ of Habeas Corpus in Relation to Custody of Minors",
+      "grNumber": "A.M. No. 03-04-04-SC",
+      "url": "https://lawphil.net/courts/supreme/am/am_03_04_04_sc_2003.html",
+      "part": "Section 12 (What may be done at pre-trial)",
+      "excerpt": "Section 12. What may be done at pre-trial. - At the pre-trial, the parties may agree on the custody of the minor. If the parties fail to agree, the court may refer the matter to a mediator who shall have five days to effect an agreement between the parties. If the issue is not settled through mediation, the court shall proceed with the pre-trial conference, on which occasion it shall consider such other matters as may aid in the prompt disposition of the petition."
+    }
+  },
+  {
+    "id": "q-0095",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Custody of Minors and Habeas Corpus",
+    "prompt": "Section 13. Provisional order awarding custody. - After an answer has been filed or after expiration of the period to file it, the court may issue a ____ awarding custody of the minor. As far as practicable, the following order of preference shall be observed in the award of custody:\n\n(a) ____;\n\n(b) ____, taking into account all relevant considerations, especially the choice of the minor over ____ and of ____, unless the parent chosen is unfit;\n\n(c) The ____, or if there are several grandparents, the grandparent chosen by the minor over seven years of age and of sufficient discernment, unless the grandparent chosen is unfit or disqualified;\n\n(d) The ____ over ____, unless he or she is unfit or disqualified;\n\n(e) The ____ of the minor over twenty-one years of age, unless the former is unfit or disqualified; or\n\n(f) ____ the court may deem suitable to provide proper care and guidance for the minor.",
+    "fullText": "Section 13. Provisional order awarding custody. - After an answer has been filed or after expiration of the period to file it, the court may issue a provisional order awarding custody of the minor. As far as practicable, the following order of preference shall be observed in the award of custody:\n\n(a) Both parents jointly;\n\n(b) Either parent, taking into account all relevant considerations, especially the choice of the minor over seven years of age and of sufficient discernment, unless the parent chosen is unfit;\n\n(c) The grandparent, or if there are several grandparents, the grandparent chosen by the minor over seven years of age and of sufficient discernment, unless the grandparent chosen is unfit or disqualified;\n\n(d) The eldest brother or sister over twenty-one years of age, unless he or she is unfit or disqualified;\n\n(e) The actual custodian of the minor over twenty-one years of age, unless the former is unfit or disqualified; or\n\n(f) Any other person or institution the court may deem suitable to provide proper care and guidance for the minor.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rule on Custody of Minors and Writ of Habeas Corpus in Relation to Custody of Minors",
+      "grNumber": "A.M. No. 03-04-04-SC",
+      "url": "https://lawphil.net/courts/supreme/am/am_03_04_04_sc_2003.html",
+      "part": "Section 13 (Provisional order awarding custody)",
+      "excerpt": "Section 13. Provisional order awarding custody. - After an answer has been filed or after expiration of the period to file it, the court may issue a provisional order awarding custody of the minor. As far as practicable, the following order of preference shall be observed in the award of custody:\n\n(a) Both parents jointly;\n\n(b) Either parent, taking into account all relevant considerations, especially the choice of the minor over seven years of age and of sufficient discernment, unless the parent chosen is unfit;\n\n(c) The grandparent, or if there are several grandparents, the grandparent chosen by the minor over seven years of age and of sufficient discernment, unless the grandparent chosen is unfit or disqualified;\n\n(d) The eldest brother or sister over twenty-one years of age, unless he or she is unfit or disqualified;\n\n(e) The actual custodian of the minor over twenty-one years of age, unless the former is unfit or disqualified; or\n\n(f) Any other person or institution the court may deem suitable to provide proper care and guidance for the minor."
+    }
+  },
+  {
+    "id": "q-0096",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Custody of Minors and Habeas Corpus",
+    "prompt": "Section 14. Factors to consider in determining custody. - In awarding custody, the court shall consider the ____ and shall give paramount consideration to his ____. The best interests of the minor refer to the ____ and conditions as are most congenial to the survival, protection, and feelings of security of the minor encouraging to his physical, psychological and emotional development. It also means the ____ for safeguarding the growth and development of the minor.\n\nThe court shall also consider the following:\n\n(a) Any ____ which the parties may have bound themselves to comply with respecting the rights of the minor to maintain direct contact with the non custodial parent on a regular basis, except when there is an existing threat or danger of physical, mental, sexual or emotional violence which endangers the safety and best interests of the minor;\n\n(b) The desire and ability of one parent to ____ between the minor and the other parent;\n\n(c) The health, safety and welfare of the minor;\n\n(d) Any history of ____ by the person seeking custody or who has had any filial relationship with the minor, including anyone courting the parent;\n\n(e) The nature and frequency of contact with both parents;\n\n(f) Habitual use of alcohol, dangerous drugs or regulated substances;\n\n(g) ____;\n\n(h) The most suitable physical, emotional, spiritual, psychological and educational environment for the holistic development and growth of the minor; and\n\n(i) The ____ over seven years of age and of sufficient discernment, unless the parent chosen is unfit.",
+    "fullText": "Section 14. Factors to consider in determining custody. - In awarding custody, the court shall consider the best interests of the minor and shall give paramount consideration to his material and moral welfare. The best interests of the minor refer to the totality of the circumstances and conditions as are most congenial to the survival, protection, and feelings of security of the minor encouraging to his physical, psychological and emotional development. It also means the least detrimental available alternative for safeguarding the growth and development of the minor.\n\nThe court shall also consider the following:\n\n(a) Any extrajudicial agreement which the parties may have bound themselves to comply with respecting the rights of the minor to maintain direct contact with the non custodial parent on a regular basis, except when there is an existing threat or danger of physical, mental, sexual or emotional violence which endangers the safety and best interests of the minor;\n\n(b) The desire and ability of one parent to foster an open and loving relationship between the minor and the other parent;\n\n(c) The health, safety and welfare of the minor;\n\n(d) Any history of child or spousal abuse by the person seeking custody or who has had any filial relationship with the minor, including anyone courting the parent;\n\n(e) The nature and frequency of contact with both parents;\n\n(f) Habitual use of alcohol, dangerous drugs or regulated substances;\n\n(g) Marital misconduct;\n\n(h) The most suitable physical, emotional, spiritual, psychological and educational environment for the holistic development and growth of the minor; and\n\n(i) The preference of the minor over seven years of age and of sufficient discernment, unless the parent chosen is unfit.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rule on Custody of Minors and Writ of Habeas Corpus in Relation to Custody of Minors",
+      "grNumber": "A.M. No. 03-04-04-SC",
+      "url": "https://lawphil.net/courts/supreme/am/am_03_04_04_sc_2003.html",
+      "part": "Section 14 (Factors to consider in determining custody)",
+      "excerpt": "Section 14. Factors to consider in determining custody. - In awarding custody, the court shall consider the best interests of the minor and shall give paramount consideration to his material and moral welfare. The best interests of the minor refer to the totality of the circumstances and conditions as are most congenial to the survival, protection, and feelings of security of the minor encouraging to his physical, psychological and emotional development. It also means the least detrimental available alternative for safeguarding the growth and development of the minor.\n\nThe court shall also consider the following:\n\n(a) Any extrajudicial agreement which the parties may have bound themselves to comply with respecting the rights of the minor to maintain direct contact with the non custodial parent on a regular basis, except when there is an existing threat or danger of physical, mental, sexual or emotional violence which endangers the safety and best interests of the minor;\n\n(b) The desire and ability of one parent to foster an open and loving relationship between the minor and the other parent;\n\n(c) The health, safety and welfare of the minor;\n\n(d) Any history of child or spousal abuse by the person seeking custody or who has had any filial relationship with the minor, including anyone courting the parent;\n\n(e) The nature and frequency of contact with both parents;\n\n(f) Habitual use of alcohol, dangerous drugs or regulated substances;\n\n(g) Marital misconduct;\n\n(h) The most suitable physical, emotional, spiritual, psychological and educational environment for the holistic development and growth of the minor; and\n\n(i) The preference of the minor over seven years of age and of sufficient discernment, unless the parent chosen is unfit."
+    }
+  },
+  {
+    "id": "q-0097",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Custody of Minors and Habeas Corpus",
+    "prompt": "Section 15. Temporary visitation rights. - The court shall provide in its order awarding provisional custody appropriate ____ to the non-custodial parent or parents, unless the court finds said parent or parents ____.\n\nThe temporary custodian shall give the court and non custodial parent or parents at least ____ of any plan to change the residence of the minor or take him out of his residence for more than ____ provided it does not prejudice the visitation rights of the non-custodial parent or parents.",
+    "fullText": "Section 15. Temporary visitation rights. - The court shall provide in its order awarding provisional custody appropriate visitation rights to the non-custodial parent or parents, unless the court finds said parent or parents unfit or disqualified.\n\nThe temporary custodian shall give the court and non custodial parent or parents at least five days' notice of any plan to change the residence of the minor or take him out of his residence for more than three days provided it does not prejudice the visitation rights of the non-custodial parent or parents.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rule on Custody of Minors and Writ of Habeas Corpus in Relation to Custody of Minors",
+      "grNumber": "A.M. No. 03-04-04-SC",
+      "url": "https://lawphil.net/courts/supreme/am/am_03_04_04_sc_2003.html",
+      "part": "Section 15 (Temporary visitation rights)",
+      "excerpt": "Section 15. Temporary visitation rights. - The court shall provide in its order awarding provisional custody appropriate visitation rights to the non-custodial parent or parents, unless the court finds said parent or parents unfit or disqualified.\n\nThe temporary custodian shall give the court and non custodial parent or parents at least five days' notice of any plan to change the residence of the minor or take him out of his residence for more than three days provided it does not prejudice the visitation rights of the non-custodial parent or parents."
+    }
+  },
+  {
+    "id": "q-0098",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Custody of Minors and Habeas Corpus",
+    "prompt": "Section 16. Hold Departure Order. - The minor child subject of the petition shall not be brought out of the country without ____ while the petition is pending.\n\nThe court, ____ or upon application under oath, may issue ____ a hold departure order, addressed to the ____, directing it not to allow the departure of the minor from the Philippines without the permission of the court.\n\nThe Family Court issuing the hold departure order shall furnish the ____ and the Bureau of Immigration and Deportation of the Department of Justice a copy of the hold departure order within ____ from its issuance and through the ____.\n\nThe hold departure order shall contain the following information:\n\n(a) The complete name (including the middle name), the date and place of birth, the nationality and the place of last residence of the person against whom a hold departure order has been issued or whose departure from the country has been enjoined;\n\n(b) The complete title and docket number of the case in which the hold departure order was issued;\n\n(c) The specific nature of the case;\n\n(d) The date of the hold departure order; and\n\n(e) A ____, if available, of the party against whom a hold departure order has been issued or whose departure from the country has been enjoined.\n\nThe court may recall the hold departure order motu proprio, or upon verified motion of any of the parties after ____, subject to such terms and conditions as may be necessary for the best interests of the minor.",
+    "fullText": "Section 16. Hold Departure Order. - The minor child subject of the petition shall not be brought out of the country without prior order from the court while the petition is pending.\n\nThe court, motu proprio or upon application under oath, may issue ex parte a hold departure order, addressed to the Bureau of Immigration and Deportation, directing it not to allow the departure of the minor from the Philippines without the permission of the court.\n\nThe Family Court issuing the hold departure order shall furnish the Department of Foreign Affairs and the Bureau of Immigration and Deportation of the Department of Justice a copy of the hold departure order within twenty-four hours from its issuance and through the fastest available means of transmittal.\n\nThe hold departure order shall contain the following information:\n\n(a) The complete name (including the middle name), the date and place of birth, the nationality and the place of last residence of the person against whom a hold departure order has been issued or whose departure from the country has been enjoined;\n\n(b) The complete title and docket number of the case in which the hold departure order was issued;\n\n(c) The specific nature of the case;\n\n(d) The date of the hold departure order; and\n\n(e) A recent photograph, if available, of the party against whom a hold departure order has been issued or whose departure from the country has been enjoined.\n\nThe court may recall the hold departure order motu proprio, or upon verified motion of any of the parties after summary hearing, subject to such terms and conditions as may be necessary for the best interests of the minor.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rule on Custody of Minors and Writ of Habeas Corpus in Relation to Custody of Minors",
+      "grNumber": "A.M. No. 03-04-04-SC",
+      "url": "https://lawphil.net/courts/supreme/am/am_03_04_04_sc_2003.html",
+      "part": "Section 16 (Hold Departure Order)",
+      "excerpt": "Section 16. Hold Departure Order. - The minor child subject of the petition shall not be brought out of the country without prior order from the court while the petition is pending.\n\nThe court, motu proprio or upon application under oath, may issue ex parte a hold departure order, addressed to the Bureau of Immigration and Deportation, directing it not to allow the departure of the minor from the Philippines without the permission of the court.\n\nThe Family Court issuing the hold departure order shall furnish the Department of Foreign Affairs and the Bureau of Immigration and Deportation of the Department of Justice a copy of the hold departure order within twenty-four hours from its issuance and through the fastest available means of transmittal.\n\nThe hold departure order shall contain the following information:\n\n(a) The complete name (including the middle name), the date and place of birth, the nationality and the place of last residence of the person against whom a hold departure order has been issued or whose departure from the country has been enjoined;\n\n(b) The complete title and docket number of the case in which the hold departure order was issued;\n\n(c) The specific nature of the case;\n\n(d) The date of the hold departure order; and\n\n(e) A recent photograph, if available, of the party against whom a hold departure order has been issued or whose departure from the country has been enjoined.\n\nThe court may recall the hold departure order motu proprio, or upon verified motion of any of the parties after summary hearing, subject to such terms and conditions as may be necessary for the best interests of the minor."
+    }
+  },
+  {
+    "id": "q-0099",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Custody of Minors and Habeas Corpus",
+    "prompt": "Section 17. Protection Order. - The court may issue a ____ requiring any person:\n\n(a) To ____ from the home, school, business, or place of employment of the minor, other parent or any other party, or from any other specific place designated by the court;\n\n(b) To ____ from harassing, intimidating, or threatening such minor or the other parent or any person to whom custody of the minor is awarded;\n\n(c) To refrain from acts of commission or omission that create an ____ to the health, safety, or welfare of the minor;\n\n(d) To permit a parent, or a party entitled to visitation by a court order or a separation agreement, to ____;\n\n(e) To permit a designated party to enter the residence during a specified period of time in order to take ____ in a proceeding pending with the Family Court; and\n\n(f) To comply with such other orders as are necessary for the protection of the minor.",
+    "fullText": "Section 17. Protection Order. - The court may issue a Protection Order requiring any person:\n\n(a) To stay away from the home, school, business, or place of employment of the minor, other parent or any other party, or from any other specific place designated by the court;\n\n(b) To cease and desist from harassing, intimidating, or threatening such minor or the other parent or any person to whom custody of the minor is awarded;\n\n(c) To refrain from acts of commission or omission that create an unreasonable risk to the health, safety, or welfare of the minor;\n\n(d) To permit a parent, or a party entitled to visitation by a court order or a separation agreement, to visit the minor at stated periods;\n\n(e) To permit a designated party to enter the residence during a specified period of time in order to take personal belongings not contested in a proceeding pending with the Family Court; and\n\n(f) To comply with such other orders as are necessary for the protection of the minor.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rule on Custody of Minors and Writ of Habeas Corpus in Relation to Custody of Minors",
+      "grNumber": "A.M. No. 03-04-04-SC",
+      "url": "https://lawphil.net/courts/supreme/am/am_03_04_04_sc_2003.html",
+      "part": "Section 17 (Protection Order)",
+      "excerpt": "Section 17. Protection Order. - The court may issue a Protection Order requiring any person:\n\n(a) To stay away from the home, school, business, or place of employment of the minor, other parent or any other party, or from any other specific place designated by the court;\n\n(b) To cease and desist from harassing, intimidating, or threatening such minor or the other parent or any person to whom custody of the minor is awarded;\n\n(c) To refrain from acts of commission or omission that create an unreasonable risk to the health, safety, or welfare of the minor;\n\n(d) To permit a parent, or a party entitled to visitation by a court order or a separation agreement, to visit the minor at stated periods;\n\n(e) To permit a designated party to enter the residence during a specified period of time in order to take personal belongings not contested in a proceeding pending with the Family Court; and\n\n(f) To comply with such other orders as are necessary for the protection of the minor."
+    }
+  },
+  {
+    "id": "q-0100",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Custody of Minors and Habeas Corpus",
+    "prompt": "Section 18. Judgment. - After trial, the court shall render judgment awarding the custody of the minor to the proper party considering the ____.\n\nIf it appears that ____ to have the care and custody of the minor, the court may designate either the ____ of the minor, or his ____, or any ____ to take charge of such minor, or commit him to any ____.\n\nIn its judgment, the court may order ____ to give an amount necessary for the support, maintenance and education of the minor, ____. In determining the amount of support, the court may consider the following factors: (1) the ____ of the custodial and non-custodial parent and those of the minor; (2) the physical and emotional health, special needs, and aptitude of the minor; (3) the ____ the minor has been accustomed to; and (4) the ____ that the parents would make toward the care and well-being of the minor.\n\nThe court may also issue any order that is just and reasonable permitting the parent who is deprived of the care and custody of the minor to visit or have temporary custody.",
+    "fullText": "Section 18. Judgment. - After trial, the court shall render judgment awarding the custody of the minor to the proper party considering the best interests of the minor.\n\nIf it appears that both parties are unfit to have the care and custody of the minor, the court may designate either the paternal or maternal grandparent of the minor, or his oldest brother or sister, or any reputable person to take charge of such minor, or commit him to any suitable home for children.\n\nIn its judgment, the court may order either or both parents to give an amount necessary for the support, maintenance and education of the minor, irrespective of who may be its custodian. In determining the amount of support, the court may consider the following factors: (1) the financial resources of the custodial and non-custodial parent and those of the minor; (2) the physical and emotional health, special needs, and aptitude of the minor; (3) the standard of living the minor has been accustomed to; and (4) the non-monetary contributions that the parents would make toward the care and well-being of the minor.\n\nThe court may also issue any order that is just and reasonable permitting the parent who is deprived of the care and custody of the minor to visit or have temporary custody.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rule on Custody of Minors and Writ of Habeas Corpus in Relation to Custody of Minors",
+      "grNumber": "A.M. No. 03-04-04-SC",
+      "url": "https://lawphil.net/courts/supreme/am/am_03_04_04_sc_2003.html",
+      "part": "Section 18 (Judgment)",
+      "excerpt": "Section 18. Judgment. - After trial, the court shall render judgment awarding the custody of the minor to the proper party considering the best interests of the minor.\n\nIf it appears that both parties are unfit to have the care and custody of the minor, the court may designate either the paternal or maternal grandparent of the minor, or his oldest brother or sister, or any reputable person to take charge of such minor, or commit him to any suitable home for children.\n\nIn its judgment, the court may order either or both parents to give an amount necessary for the support, maintenance and education of the minor, irrespective of who may be its custodian. In determining the amount of support, the court may consider the following factors: (1) the financial resources of the custodial and non-custodial parent and those of the minor; (2) the physical and emotional health, special needs, and aptitude of the minor; (3) the standard of living the minor has been accustomed to; and (4) the non-monetary contributions that the parents would make toward the care and well-being of the minor.\n\nThe court may also issue any order that is just and reasonable permitting the parent who is deprived of the care and custody of the minor to visit or have temporary custody."
+    }
+  },
+  {
+    "id": "q-0101",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Custody of Minors and Habeas Corpus",
+    "prompt": "Section 19. Appeal. - No appeal from the decision shall be allowed unless the appellant has filed a ____ within ____ from notice of judgment.\n\nAn aggrieved party may appeal from the decision by filing a ____ within ____ from notice of the denial of the motion for reconsideration or new trial and serving a copy thereof on the adverse parties.",
+    "fullText": "Section 19. Appeal. - No appeal from the decision shall be allowed unless the appellant has filed a motion for reconsideration or new trial within fifteen days from notice of judgment.\n\nAn aggrieved party may appeal from the decision by filing a Notice of Appeal within fifteen days from notice of the denial of the motion for reconsideration or new trial and serving a copy thereof on the adverse parties.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rule on Custody of Minors and Writ of Habeas Corpus in Relation to Custody of Minors",
+      "grNumber": "A.M. No. 03-04-04-SC",
+      "url": "https://lawphil.net/courts/supreme/am/am_03_04_04_sc_2003.html",
+      "part": "Section 19 (Appeal)",
+      "excerpt": "Section 19. Appeal. - No appeal from the decision shall be allowed unless the appellant has filed a motion for reconsideration or new trial within fifteen days from notice of judgment.\n\nAn aggrieved party may appeal from the decision by filing a Notice of Appeal within fifteen days from notice of the denial of the motion for reconsideration or new trial and serving a copy thereof on the adverse parties."
+    }
+  },
+  {
+    "id": "q-0102",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Custody of Minors and Habeas Corpus",
+    "prompt": "Section 20. Petition for writ of habeas corpus. - A ____ for a writ of habeas corpus involving custody of minors shall be filed with the ____. The writ shall be enforceable within its ____ to which the Family Court belongs.\n\nHowever, the petition may be filed with the ____ in the ____ of the Family Court, provided, however, that the regular court shall ____ as soon as its presiding judge returns to duty.\n\nThe petition may also be filed with the appropriate regular courts in places where there are ____.\n\nThe writ issued by the Family Court or the regular court shall be enforceable in the judicial region where they belong.\n\nThe petition may likewise be filed with the ____ and, if so granted, the writ shall be enforceable ____. The writ may be made ____ to a Family Court or to any regular court within the region where the petitioner resides or where the minor may be found for hearing and decision on the merits.\n\nUpon return of the writ, the court shall ____. The appellate court, or the member thereof, issuing the writ shall be furnished a copy of the decision.",
+    "fullText": "Section 20. Petition for writ of habeas corpus. - A verified petition for a writ of habeas corpus involving custody of minors shall be filed with the Family Court. The writ shall be enforceable within its judicial region to which the Family Court belongs.\n\nHowever, the petition may be filed with the regular court in the absence of the presiding judge of the Family Court, provided, however, that the regular court shall refer the case to the Family Court as soon as its presiding judge returns to duty.\n\nThe petition may also be filed with the appropriate regular courts in places where there are no Family Courts.\n\nThe writ issued by the Family Court or the regular court shall be enforceable in the judicial region where they belong.\n\nThe petition may likewise be filed with the Supreme Court, Court of Appeals, or with any of its members and, if so granted, the writ shall be enforceable anywhere in the Philippines. The writ may be made returnable to a Family Court or to any regular court within the region where the petitioner resides or where the minor may be found for hearing and decision on the merits.\n\nUpon return of the writ, the court shall decide the issue on custody of minors. The appellate court, or the member thereof, issuing the writ shall be furnished a copy of the decision.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rule on Custody of Minors and Writ of Habeas Corpus in Relation to Custody of Minors",
+      "grNumber": "A.M. No. 03-04-04-SC",
+      "url": "https://lawphil.net/courts/supreme/am/am_03_04_04_sc_2003.html",
+      "part": "Section 20 (Petition for writ of habeas corpus)",
+      "excerpt": "Section 20. Petition for writ of habeas corpus. - A verified petition for a writ of habeas corpus involving custody of minors shall be filed with the Family Court. The writ shall be enforceable within its judicial region to which the Family Court belongs.\n\nHowever, the petition may be filed with the regular court in the absence of the presiding judge of the Family Court, provided, however, that the regular court shall refer the case to the Family Court as soon as its presiding judge returns to duty.\n\nThe petition may also be filed with the appropriate regular courts in places where there are no Family Courts.\n\nThe writ issued by the Family Court or the regular court shall be enforceable in the judicial region where they belong.\n\nThe petition may likewise be filed with the Supreme Court, Court of Appeals, or with any of its members and, if so granted, the writ shall be enforceable anywhere in the Philippines. The writ may be made returnable to a Family Court or to any regular court within the region where the petitioner resides or where the minor may be found for hearing and decision on the merits.\n\nUpon return of the writ, the court shall decide the issue on custody of minors. The appellate court, or the member thereof, issuing the writ shall be furnished a copy of the decision."
+    }
+  },
+  {
+    "id": "q-0103",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Custody of Minors and Habeas Corpus",
+    "prompt": "Section 21. Confidentiality of proceedings. - The hearings on custody of minors may, at the ____, be ____ and the records of the case shall not be released to ____ without its approval.",
+    "fullText": "Section 21. Confidentiality of proceedings. - The hearings on custody of minors may, at the discretion of the court, be closed to the public and the records of the case shall not be released to non-parties without its approval.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rule on Custody of Minors and Writ of Habeas Corpus in Relation to Custody of Minors",
+      "grNumber": "A.M. No. 03-04-04-SC",
+      "url": "https://lawphil.net/courts/supreme/am/am_03_04_04_sc_2003.html",
+      "part": "Section 21 (Confidentiality of proceedings)",
+      "excerpt": "Section 21. Confidentiality of proceedings. - The hearings on custody of minors may, at the discretion of the court, be closed to the public and the records of the case shall not be released to non-parties without its approval."
+    }
+  },
+  {
+    "id": "q-0104",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Custody of Minors and Habeas Corpus",
+    "prompt": "Section 22. Effectivity. - This Rule shall take effect on ____ following its publication in a ____ not later than ____.",
+    "fullText": "Section 22. Effectivity. - This Rule shall take effect on May 15, 2003 following its publication in a newspaper of general circulation not later than April 30, 2003.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rule on Custody of Minors and Writ of Habeas Corpus in Relation to Custody of Minors",
+      "grNumber": "A.M. No. 03-04-04-SC",
+      "url": "https://lawphil.net/courts/supreme/am/am_03_04_04_sc_2003.html",
+      "part": "Section 22 (Effectivity)",
+      "excerpt": "Section 22. Effectivity. - This Rule shall take effect on May 15, 2003 following its publication in a newspaper of general circulation not later than April 30, 2003."
+    }
   }
 ]
