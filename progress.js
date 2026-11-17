@@ -147,8 +147,10 @@ function cleanNoteHtml(html) {
       // Which of the three styles this element gives its text (tags, or a pasted style).
       const style = (child.getAttribute && child.getAttribute("style")) || "";
       const marks = [];
-      if (tag === "B" || tag === "STRONG" || /font-weight\s*:\s*(bold|[6-9]00)/i.test(style)) { marks.push("b"); }
-      if (tag === "I" || tag === "EM" || /font-style\s*:\s*italic/i.test(style)) { marks.push("i"); }
+      // (Browsers write these in different ways: <b> or <strong>, font-weight bold / bolder /
+      // 600–900; <i> or <em>, italic / oblique; <u>, text-decoration(-line) underline.)
+      if (tag === "B" || tag === "STRONG" || /font-weight\s*:\s*(bold|bolder|[6-9]00)\b/i.test(style)) { marks.push("b"); }
+      if (tag === "I" || tag === "EM" || /font-style\s*:\s*(italic|oblique)/i.test(style)) { marks.push("i"); }
       if (tag === "U" || /text-decoration[^;]*underline/i.test(style)) { marks.push("u"); }
       const block = NOTE_BLOCKS.indexOf(tag) !== -1;
       if (block) { lineBreak(); }

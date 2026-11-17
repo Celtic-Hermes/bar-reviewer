@@ -1059,6 +1059,31 @@ function showFormatButtons(box) {
   });
 }
 
+// Bold / italic / underline on the selection (or on what she types next). Doing it again
+// removes it. Used by the B / I / U buttons and by the keyboard shortcuts alike, so both
+// give the same result and light up the buttons the same way.
+function applyNoteFormat(box, cmd) {
+  if (!NOTE_FORMATS[cmd]) { return; }
+  if (document.activeElement !== box) { box.focus(); }  // style what she types next
+  document.execCommand("styleWithCSS", false, false);  // <b>/<i>/<u>, not style="…"
+  document.execCommand(cmd, false, null);
+  noteChanged(box);
+  showFormatButtons(box);
+}
+
+// Keyboard shortcuts on a computer: Cmd+B / Cmd+I / Cmd+U on a Mac, Ctrl+B / Ctrl+I /
+// Ctrl+U on Windows and others. (On a Mac, Ctrl+B already means "cursor back one
+// letter", so only Cmd is used there.) The browser's own action for these keys
+// (e.g. bookmarks, or "view source" for Ctrl+U) is cancelled.
+const NOTE_SHORTCUT_KEYS = { b: "bold", i: "italic", u: "underline" };
+let isMacLike = /Mac|iPhone|iPad|iPod/.test(navigator.platform || navigator.userAgent || "");
+
+function noteShortcut(event) {
+  const modifier = isMacLike ? (event.metaKey && !event.ctrlKey) : (event.ctrlKey && !event.metaKey);
+  if (!modifier || event.altKey || event.shiftKey) { return null; }
+  return NOTE_SHORTCUT_KEYS[(event.key || "").toLowerCase()] || null;
+}
+
 document.querySelectorAll(".notes-toolbar").forEach(function (toolbar) {
   const box = document.getElementById(toolbar.dataset.for);
   toolbar.querySelectorAll(".notes-fmt").forEach(function (button) {
@@ -1068,15 +1093,7 @@ document.querySelectorAll(".notes-toolbar").forEach(function (toolbar) {
     });
     // touchstart is cancelled above (so iPhone keeps the selection), so act on touchend too.
     let handledByTouch = false;
-    const apply = function () {
-      const cmd = button.dataset.cmd;
-      if (!NOTE_FORMATS[cmd]) { return; }
-      if (document.activeElement !== box) { box.focus(); }  // style what she types next
-      document.execCommand("styleWithCSS", false, false);  // <b>/<i>/<u>, not style="…"
-      document.execCommand(cmd, false, null);              // tap again: removes it
-      noteChanged(box);
-      showFormatButtons(box);
-    };
+    const apply = function () { applyNoteFormat(box, button.dataset.cmd); };
     button.addEventListener("touchend", function (event) {
       event.preventDefault();
       handledByTouch = true;
@@ -1103,6 +1120,13 @@ document.querySelectorAll(".notes-box").forEach(function (box) {
     if (event.dataTransfer) { insertCleanNote(box, event.dataTransfer); }
   });
   box.addEventListener("keyup", function () { showFormatButtons(box); });
+  box.addEventListener("keydown", function (event) {
+    const cmd = noteShortcut(event);
+    if (!cmd) { return; }
+    event.preventDefault();   // not the browser's own Cmd+B / Cmd+U
+    event.stopPropagation();
+    applyNoteFormat(box, cmd);
+  });
 });
 // The cursor moved (tap, arrow keys, selecting): update the B / I / U buttons.
 document.addEventListener("selectionchange", function () {
