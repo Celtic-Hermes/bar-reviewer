@@ -317,9 +317,15 @@
       </section>
       <!-- Her own notes on this case (saved on this phone as she types) -->
       <section class="card case-part notes-card">
-        <h2 class="label"><label for="case-notes">My notes</label></h2>
-        <textarea class="notes-box" id="case-notes" rows="3" placeholder="Write your own notes on this case…"
-          autocapitalize="sentences" spellcheck="true"></textarea>
+        <h2 class="label" id="case-notes-label">My notes</h2>
+        <div class="notes-toolbar" role="toolbar" aria-label="Text style" data-for="case-notes">
+          <button type="button" class="notes-fmt" data-cmd="bold" aria-label="Bold" aria-pressed="false" tabindex="-1"><b>B</b></button>
+          <button type="button" class="notes-fmt" data-cmd="italic" aria-label="Italic" aria-pressed="false" tabindex="-1"><i>I</i></button>
+          <button type="button" class="notes-fmt" data-cmd="underline" aria-label="Underline" aria-pressed="false" tabindex="-1"><u>U</u></button>
+        </div>
+        <div class="notes-box is-empty" id="case-notes" contenteditable="true" role="textbox" aria-multiline="true"
+          aria-labelledby="case-notes-label" data-placeholder="Write your own notes on this case…"
+          autocapitalize="sentences" autocorrect="on" spellcheck="true"></div>
         <p class="notes-status" id="case-notes-status" aria-live="polite">Saved on this phone as you type.</p>
       </section>
       <section class="card case-part">
@@ -355,9 +361,15 @@
       <p class="status-unverified status-badge" id="rule-draft-badge" hidden>Unverified</p>
       <!-- Her own notes on this rule (saved on this phone as she types) -->
       <section class="card notes-card rule-notes-card">
-        <h2 class="label"><label for="rule-notes">My notes</label></h2>
-        <textarea class="notes-box" id="rule-notes" rows="3" placeholder="Write your own notes on this rule…"
-          autocapitalize="sentences" spellcheck="true"></textarea>
+        <h2 class="label" id="rule-notes-label">My notes</h2>
+        <div class="notes-toolbar" role="toolbar" aria-label="Text style" data-for="rule-notes">
+          <button type="button" class="notes-fmt" data-cmd="bold" aria-label="Bold" aria-pressed="false" tabindex="-1"><b>B</b></button>
+          <button type="button" class="notes-fmt" data-cmd="italic" aria-label="Italic" aria-pressed="false" tabindex="-1"><i>I</i></button>
+          <button type="button" class="notes-fmt" data-cmd="underline" aria-label="Underline" aria-pressed="false" tabindex="-1"><u>U</u></button>
+        </div>
+        <div class="notes-box is-empty" id="rule-notes" contenteditable="true" role="textbox" aria-multiline="true"
+          aria-labelledby="rule-notes-label" data-placeholder="Write your own notes on this rule…"
+          autocapitalize="sentences" autocorrect="on" spellcheck="true"></div>
         <p class="notes-status" id="rule-notes-status" aria-live="polite">Saved on this phone as you type.</p>
       </section>
       <p class="full-text-note" id="rule-note" hidden></p>

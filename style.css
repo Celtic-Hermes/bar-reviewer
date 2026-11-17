@@ -713,18 +713,38 @@ body {
 #rule-source-card { margin-top: 16px; }
 
 /* ---------- Her notes (case screen, rule screen) ---------- */
+/* An editable area that grows with her text (no scrolling inside it). */
 .notes-box {
+  position: relative;
   display: block; width: 100%; box-sizing: border-box;
   min-height: 92px;               /* about 3 lines to start */
   padding: 10px 12px;
   font: inherit; font-size: 17px;  /* 16px or more: the iPhone doesn't zoom in when she taps it */
   line-height: 1.5; color: var(--text);
-  background: var(--bg); border: 1px solid var(--border); border-radius: 10px;
-  resize: none; overflow: hidden;  /* it grows with her text instead of scrolling inside */
-  -webkit-appearance: none; appearance: none;
+  background: var(--bg); border: 1px solid var(--border); border-radius: 0 0 10px 10px;
+  white-space: normal; overflow-wrap: anywhere;
+  -webkit-user-select: text; user-select: text;
+  outline: none;
 }
-.notes-box:focus { outline: 2px solid var(--primary); outline-offset: 1px; border-color: transparent; }
-.notes-box::placeholder { color: var(--muted); }
+.notes-box:focus { box-shadow: 0 0 0 2px var(--primary); border-color: transparent; }
+.notes-box.is-empty::before {
+  content: attr(data-placeholder); color: var(--muted);
+  position: absolute; top: 10px; left: 12px; right: 12px; pointer-events: none;
+}
+/* B / I / U: a small bar joined to the top of the box */
+.notes-toolbar {
+  display: flex; gap: 6px; padding: 6px;
+  background: var(--card); border: 1px solid var(--border); border-bottom: none;
+  border-radius: 10px 10px 0 0;
+}
+.notes-fmt {
+  min-width: 44px; min-height: 36px; padding: 0 10px;   /* big enough to tap */
+  font: inherit; font-size: 17px; color: var(--text);
+  background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+  cursor: pointer; -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none; user-select: none; -webkit-touch-callout: none;
+}
+.notes-fmt[aria-pressed="true"] { background: var(--primary); color: var(--primary-text); border-color: var(--primary); }
 .notes-status { margin: 8px 0 0; font-size: 13px; color: var(--muted); }
 .rule-notes-card { margin-top: 14px; }
 .my-notes-btn { margin: -6px 0 18px; }

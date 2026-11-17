@@ -18,7 +18,10 @@
 //   streakBest: her longest streak of study days ever (kept here, since "daily" only
 //              keeps 400 days)
 //   notes:     her own notes on a case or a rule, by its ID:
-//              { "case-0002": { "text": "…", "updated": "2026-11-18T09:30:00.000Z" }, "rule-0004": … }
+//              { "case-0002": { "html": "…", "text": "…", "updated": "2026-11-18T09:30:00.000Z" }, … }
+//              html: her note with only <b>, <i>, <u> and <br> (see cleanNoteHtml);
+//              text: the same note as plain text (for the My notes list). Notes saved before
+//              formatting existed have only "text"; they're turned into html when loaded.
 //   tags:      her color tag on a question, by ID: "green", "yellow" or "red"
 //              (what each color means is up to her; no tag = not in the list)
 //   highlights: words she highlighted, as a list of word positions (0 = first word).
@@ -102,15 +105,100 @@ function cleanSettings(value) {
 const NOTE_ID = /^(case|rule)-\d+$/;
 const NOTE_MAX_LENGTH = 50000;
 
-// Keep only sensible notes: a case or rule ID → { text, updated }, text not blank.
+// ---------- Cleaning a note's formatting (safety) ----------
+// Her notes may only contain bold, italic, underline and line breaks. cleanNoteHtml takes
+// any HTML (what she typed, something she pasted, a note from a backup file) and builds a
+// brand-new copy that has ONLY <b>, <i>, <u>, <br> and plain text. Everything else is
+// dropped: other tags (their text is kept), every attribute (so no links, colors, styles
+// or event code), and scripts, styles, pictures and frames (dropped entirely).
+// The HTML is read with DOMParser, which never runs scripts or loads pictures.
+const NOTE_DROP_WHOLE = ["SCRIPT", "STYLE", "TEMPLATE", "IFRAME", "OBJECT", "EMBED", "NOSCRIPT",
+  "HEAD", "TITLE", "SVG", "MATH", "CANVAS", "VIDEO", "AUDIO", "IMG", "PICTURE", "SELECT",
+  "TEXTAREA", "INPUT", "BUTTON", "META", "LINK"];
+const NOTE_BLOCKS = ["DIV", "P", "LI", "UL", "OL", "H1", "H2", "H3", "H4", "H5", "H6", "TR",
+  "TABLE", "BLOCKQUOTE", "PRE", "SECTION", "ARTICLE", "HEADER", "FOOTER", "DL", "DT", "DD"];
+
+function escapeNoteText(text) {
+  return text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
+function cleanNoteHtml(html) {
+  if (typeof html !== "string" || !html) { return ""; }
+  let doc;
+  try {
+    doc = new DOMParser().parseFromString("<!doctype html><body>" + html, "text/html");
+  } catch (e) {
+    return "";
+  }
+  let out = "";
+  const lineBreak = function () {
+    if (out && !/<br>$/.test(out)) { out += "<br>"; }
+  };
+  function walk(node) {
+    node.childNodes.forEach(function (child) {
+      if (child.nodeType === 3) {  // text: spaces and line breaks in the HTML code become one space
+        out += escapeNoteText(child.nodeValue.replace(/[ \t\n\r\f]+/g, " "));
+        return;
+      }
+      if (child.nodeType !== 1) { return; }  // comments and the like
+      const tag = child.nodeName.toUpperCase();
+      if (NOTE_DROP_WHOLE.indexOf(tag) !== -1) { return; }
+      if (tag === "BR") { out += "<br>"; return; }
+      // Which of the three styles this element gives its text (tags, or a pasted style).
+      const style = (child.getAttribute && child.getAttribute("style")) || "";
+      const marks = [];
+      if (tag === "B" || tag === "STRONG" || /font-weight\s*:\s*(bold|[6-9]00)/i.test(style)) { marks.push("b"); }
+      if (tag === "I" || tag === "EM" || /font-style\s*:\s*italic/i.test(style)) { marks.push("i"); }
+      if (tag === "U" || /text-decoration[^;]*underline/i.test(style)) { marks.push("u"); }
+      const block = NOTE_BLOCKS.indexOf(tag) !== -1;
+      if (block) { lineBreak(); }
+      marks.forEach(function (m) { out += "<" + m + ">"; });
+      walk(child);
+      marks.slice().reverse().forEach(function (m) { out += "</" + m + ">"; });
+      if (block) { lineBreak(); }
+    });
+  }
+  walk(doc.body);
+  // Tidy: no empty style tags, no line breaks at the very start or end.
+  let previous;
+  do {
+    previous = out;
+    out = out.replace(/<(b|i|u)><\/\1>/g, "");
+  } while (out !== previous);
+  out = out.replace(/^(\s*<br>)+/, "").replace(/(<br>\s*)+$/, "");
+  return out;  // (no length cut: a long note must never be lost)
+}
+
+// A cleaned note as plain text (line breaks kept), e.g. for the My notes list.
+function noteHtmlToText(html) {
+  return html.replace(/<br>/g, "\n").replace(/<\/?(b|i|u)>/g, "")
+    .replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&").replace(/\u00a0/g, " ");
+}
+
+// A plain-text note (saved before formatting existed) as html.
+function noteTextToHtml(text) {
+  return escapeNoteText(text).replace(/\r?\n/g, "<br>");
+}
+
+// Keep only sensible notes: a case or rule ID → { html, text, updated }, not blank.
+// The html is always cleaned again here, so a damaged or edited backup can't add anything.
 function cleanNotes(value) {
   const clean = {};
   if (!isPlainObject(value)) { return clean; }
   Object.keys(value).forEach(function (id) {
     const n = value[id];
-    if (!NOTE_ID.test(id) || !isPlainObject(n) || typeof n.text !== "string" || !n.text.trim()) { return; }
+    if (!NOTE_ID.test(id) || !isPlainObject(n)) { return; }
+    let html = "";
+    if (typeof n.html === "string") {
+      html = cleanNoteHtml(n.html);
+    } else if (typeof n.text === "string") {
+      html = noteTextToHtml(n.text.slice(0, NOTE_MAX_LENGTH));  // an older plain-text note
+    }
+    const text = noteHtmlToText(html);
+    if (!text.trim()) { return; }
     clean[id] = {
-      text: n.text.slice(0, NOTE_MAX_LENGTH),
+      html: html,
+      text: text,
       updated: (typeof n.updated === "string" && !isNaN(Date.parse(n.updated))) ? n.updated : null
     };
   });
@@ -297,18 +385,23 @@ function noteResult(question, last, effect, level) {
 }
 
 // ---------- Her notes on cases and rules ----------
-function noteFor(id) {
+// Her note as cleaned html (only <b>, <i>, <u>, <br>), or "" if none.
+function noteHtmlFor(id) {
   const note = progress.notes[id];
-  return note ? note.text : "";
+  return note ? note.html : "";
 }
 
-// Save (or, if blank, remove) her note on a case or rule. Returns true if it saved.
-function setNote(id, text) {
+// Save (or, if blank, remove) her note on a case or rule, from the notes box's HTML.
+// It's cleaned first, so only bold, italic, underline and line breaks are ever saved.
+// Returns true if it saved.
+function setNote(id, html) {
   if (!NOTE_ID.test(id)) { return false; }
-  if (typeof text !== "string" || !text.trim()) {
+  const clean = cleanNoteHtml(html);
+  const text = noteHtmlToText(clean);
+  if (!text.trim()) {
     delete progress.notes[id];
   } else {
-    progress.notes[id] = { text: text.slice(0, NOTE_MAX_LENGTH), updated: new Date().toISOString() };
+    progress.notes[id] = { html: clean, text: text, updated: new Date().toISOString() };
   }
   return saveProgress();
 }

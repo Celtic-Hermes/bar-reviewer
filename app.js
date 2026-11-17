@@ -975,25 +975,31 @@ document.addEventListener("visibilitychange", function () {
 });
 
 // ---------- Her notes (on cases and rules) ----------
-// Every notes box is a <textarea class="notes-box"> with a status line right after it
+// Every notes box is an editable area (<div class="notes-box" contenteditable>) with a
+// B / I / U toolbar above it (data-for = the box's id) and a status line after it
 // (id + "-status"). showNotesBox(box, id) loads her note for that case or rule.
-// It saves by itself while she types (half a second after she pauses), and right away
-// when she leaves the box, the screen, or the app. The box grows with her text, so she
-// never scrolls inside a small box.
+// - It saves by itself while she types (half a second after she pauses), and right away
+//   when she leaves the box, the screen, or the app. What's saved is always cleaned
+//   first (cleanNoteHtml in progress.js): only bold, italic, underline and line breaks.
+// - Pasting or dropping text in: it's cleaned BEFORE it goes into the box.
+// - The box grows with her text, so she never scrolls inside a small box.
+// - The toolbar buttons never take the focus from the box, so on an iPhone the keyboard
+//   stays open and her selection stays put when she taps B, I or U.
 const NOTE_SAVE_DELAY = 500;
-
-function growNotesBox(box) {
-  box.style.height = "auto";
-  box.style.height = (box.scrollHeight + 2) + "px";  // + the top and bottom border
-}
 
 function showNotesBox(box, id) {
   saveNotesNow(box);  // anything typed for the previous case or rule is saved first
   box.dataset.noteId = id;
-  box.value = noteFor(id);
+  box.innerHTML = noteHtmlFor(id);  // already cleaned: only <b>, <i>, <u>, <br> and text
+  box.dataset.unsaved = "no";
+  showNotesEmpty(box);
   setNotesStatus(box, "Saved on this phone as you type.");
-  // Grow once it's on screen (its width is known then).
-  window.requestAnimationFrame(function () { growNotesBox(box); });
+  showFormatButtons(box);
+}
+
+// The placeholder ("Write your own notes…") shows only while the box is empty.
+function showNotesEmpty(box) {
+  box.classList.toggle("is-empty", !box.textContent.trim() && !box.querySelector("br + br, b, i, u"));
 }
 
 function setNotesStatus(box, text) {
@@ -1007,20 +1013,101 @@ function saveNotesNow(box) {
     box.saveTimer = null;
   }
   if (!box.dataset.noteId || box.dataset.unsaved !== "yes") { return; }
-  const ok = setNote(box.dataset.noteId, box.value);
+  const ok = setNote(box.dataset.noteId, box.innerHTML);
   box.dataset.unsaved = "no";
   setNotesStatus(box, ok ? "Saved on this phone." : "Couldn't save on this phone. Private browsing may be on.");
 }
 
-document.querySelectorAll(".notes-box").forEach(function (box) {
-  box.addEventListener("input", function () {
-    growNotesBox(box);
-    box.dataset.unsaved = "yes";
-    setNotesStatus(box, "Saving…");
-    if (box.saveTimer) { clearTimeout(box.saveTimer); }
-    box.saveTimer = setTimeout(function () { saveNotesNow(box); }, NOTE_SAVE_DELAY);
+function noteChanged(box) {
+  showNotesEmpty(box);
+  box.dataset.unsaved = "yes";
+  setNotesStatus(box, "Saving…");
+  if (box.saveTimer) { clearTimeout(box.saveTimer); }
+  box.saveTimer = setTimeout(function () { saveNotesNow(box); }, NOTE_SAVE_DELAY);
+}
+
+// Put pasted or dropped content in, cleaned first (bold / italic / underline / line breaks only).
+function insertCleanNote(box, data) {
+  const html = data.getData("text/html");
+  const clean = html ? cleanNoteHtml(html) : noteTextToHtml(data.getData("text/plain") || "");
+  if (!clean) { return; }
+  box.focus();
+  if (!document.execCommand("insertHTML", false, clean)) {
+    document.execCommand("insertText", false, noteHtmlToText(clean));
+  }
+  noteChanged(box);
+}
+
+// ---------- B / I / U ----------
+const NOTE_FORMATS = { bold: true, italic: true, underline: true };
+
+// Is the cursor (or selection) inside this box?
+function selectionIn(box) {
+  const sel = window.getSelection();
+  return Boolean(sel && sel.rangeCount > 0 && box.contains(sel.getRangeAt(0).commonAncestorContainer));
+}
+
+// Show each button as pressed when the cursor is in text that already has that style.
+function showFormatButtons(box) {
+  const inside = document.activeElement === box && selectionIn(box);
+  document.querySelectorAll('.notes-toolbar[data-for="' + box.id + '"] .notes-fmt').forEach(function (button) {
+    let on = false;
+    if (inside) {
+      try { on = document.queryCommandState(button.dataset.cmd); } catch (e) { on = false; }
+    }
+    button.setAttribute("aria-pressed", on ? "true" : "false");
   });
-  box.addEventListener("blur", function () { saveNotesNow(box); });
+}
+
+document.querySelectorAll(".notes-toolbar").forEach(function (toolbar) {
+  const box = document.getElementById(toolbar.dataset.for);
+  toolbar.querySelectorAll(".notes-fmt").forEach(function (button) {
+    // Don't let the button take the focus: the keyboard stays open and the selection stays.
+    ["mousedown", "pointerdown", "touchstart"].forEach(function (type) {
+      button.addEventListener(type, function (event) { event.preventDefault(); }, { passive: false });
+    });
+    // touchstart is cancelled above (so iPhone keeps the selection), so act on touchend too.
+    let handledByTouch = false;
+    const apply = function () {
+      const cmd = button.dataset.cmd;
+      if (!NOTE_FORMATS[cmd]) { return; }
+      if (document.activeElement !== box) { box.focus(); }  // style what she types next
+      document.execCommand("styleWithCSS", false, false);  // <b>/<i>/<u>, not style="…"
+      document.execCommand(cmd, false, null);              // tap again: removes it
+      noteChanged(box);
+      showFormatButtons(box);
+    };
+    button.addEventListener("touchend", function (event) {
+      event.preventDefault();
+      handledByTouch = true;
+      apply();
+    });
+    button.addEventListener("click", function () {
+      if (handledByTouch) { handledByTouch = false; return; }
+      apply();
+    });
+  });
+});
+
+document.querySelectorAll(".notes-box").forEach(function (box) {
+  box.addEventListener("input", function () { noteChanged(box); });
+  box.addEventListener("blur", function () { saveNotesNow(box); showFormatButtons(box); });
+  box.addEventListener("focus", function () { showFormatButtons(box); });
+  box.addEventListener("paste", function (event) {
+    if (!event.clipboardData) { return; }
+    event.preventDefault();
+    insertCleanNote(box, event.clipboardData);
+  });
+  box.addEventListener("drop", function (event) {
+    event.preventDefault();  // never let raw dropped content in
+    if (event.dataTransfer) { insertCleanNote(box, event.dataTransfer); }
+  });
+  box.addEventListener("keyup", function () { showFormatButtons(box); });
+});
+// The cursor moved (tap, arrow keys, selecting): update the B / I / U buttons.
+document.addEventListener("selectionchange", function () {
+  const box = document.activeElement;
+  if (box && box.classList && box.classList.contains("notes-box")) { showFormatButtons(box); }
 });
 
 // Leaving the app (switching apps, locking the phone, closing): save every open note now.
@@ -1030,12 +1117,6 @@ function saveAllNotes() {
 window.addEventListener("pagehide", saveAllNotes);
 document.addEventListener("visibilitychange", function () {
   if (document.visibilityState === "hidden") { saveAllNotes(); }
-});
-// The phone turned sideways (or the window changed width): re-fit the boxes.
-window.addEventListener("resize", function () {
-  document.querySelectorAll(".notes-box").forEach(function (box) {
-    if (box.offsetParent !== null) { growNotesBox(box); }
-  });
 });
 
 // ---------- My notes (home screen button, and the list of everything she's written on) ----------
@@ -2390,7 +2471,7 @@ document.addEventListener("pointerdown", function (event) {
   lastPointerType = event.pointerType;
   skipNextClick = false;
   // (A press in a fill-in-the-blank box is for typing, not for a highlight drag.)
-  mouseIsDown = (event.pointerType === "mouse") && !(event.target.closest && event.target.closest("input, textarea"));
+  mouseIsDown = (event.pointerType === "mouse") && !(event.target.closest && event.target.closest("input, textarea, [contenteditable]"));
 });
 
 // The press itself says whether it's part of a double-click (more reliable than the release).
