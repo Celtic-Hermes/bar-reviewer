@@ -907,3 +907,18 @@ body.sheet-open { overflow: hidden; }
    and "Read the case: <name>" buttons (all built with caseTitle() in app.js).
    To change how case titles look anywhere in the app, change only this rule. */
 .case-title { font-weight: 700; }
+
+/* ---------- Wide screens (laptop, desktop, tablet) ----------
+   Phones (narrower than 800px) never see any of this: their layout is unchanged.
+   The column she reads in stays at most 640px wide; only the extra space is used.
+   body[data-screen] says which screen is showing (set in showScreen in app.js). */
+
+/* Home: the subject cards in 2 columns, then 3 on wider screens. */
+@media (min-width: 800px) {
+  body[data-screen="screen-home"] .page { max-width: 900px; }
+  #screen-home .subject-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+}
+@media (min-width: 1100px) {
+  body[data-screen="screen-home"] .page { max-width: 1040px; }
+  #screen-home .subject-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}

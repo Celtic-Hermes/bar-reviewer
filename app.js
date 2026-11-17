@@ -48,6 +48,7 @@ function showScreen(id) {
   });
   window.scrollTo(0, 0);
   shownScreen = id;
+  document.body.dataset.screen = id;  // lets style.css lay out wide screens per screen
   if (id === "screen-home") { showTodayCard(); showMyNotesButton(); }  // up to date whenever she comes home
   rememberSpot();
   reloadForUpdateIfSafe();  // a new version waiting? Moving between screens is a safe moment
