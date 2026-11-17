@@ -274,6 +274,25 @@ function noteResult(question, last, effect, level) {
   progress.results[question.id] = result;
 }
 
+// ---------- Mastery ----------
+// A question is mastered once its right-in-a-row count reaches 2: right on two different
+// days in a row, with nothing wrong in between (see noteResult).
+const MASTERY_IN_A_ROW = 2;
+
+function isMastered(questionId) {
+  const r = progress.results[questionId];
+  return Boolean(r && r.inARow >= MASTERY_IN_A_ROW);
+}
+
+// How many of these questions are mastered: { mastered, total }.
+function masteryOf(questions) {
+  const valid = questions.filter(function (q) { return q && typeof q.id === "string"; });
+  return {
+    mastered: valid.filter(function (q) { return isMastered(q.id); }).length,
+    total: valid.length
+  };
+}
+
 // ---------- Daily goal and streak (the Today card) ----------
 function dailyGoal() {
   return DAILY_GOALS.indexOf(progress.settings.dailyGoal) !== -1 ? progress.settings.dailyGoal : DEFAULT_DAILY_GOAL;

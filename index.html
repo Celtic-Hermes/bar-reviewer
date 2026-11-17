@@ -39,6 +39,13 @@
           <span class="today-bar-fill" id="today-bar-fill"></span>
         </div>
         <p class="today-note" id="today-note"></p>
+        <div class="today-mastery" id="today-mastery" hidden>
+          <p class="today-mastery-count" id="today-mastery-count"></p>
+          <div class="today-bar mastery-bar" id="mastery-bar" role="progressbar" aria-label="Questions mastered" aria-valuemin="0">
+            <span class="today-bar-fill" id="mastery-bar-fill"></span>
+          </div>
+          <p class="today-note">Mastered = right on 2 different days in a row (fill in the blank: Moderate or harder).</p>
+        </div>
         <label class="today-goal">Daily goal
           <select id="today-goal">
             <option value="10">10 questions</option>
@@ -83,6 +90,8 @@
             <dd id="stats-essay"></dd>
             <dt>Fill in the blank</dt>
             <dd id="stats-fb"></dd>
+            <dt>Mastery</dt>
+            <dd id="stats-mastery"></dd>
           </dl>
         </section>
 

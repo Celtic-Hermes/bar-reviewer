@@ -667,6 +667,9 @@ body {
 .today-bar-fill { display: block; height: 100%; width: 0; border-radius: 5px; background: var(--primary); transition: width 0.3s ease-out; }
 .today-bar.done .today-bar-fill { background: var(--got); }
 .today-note { margin: 8px 0 0; font-size: 14px; color: var(--muted); }
+.today-mastery { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--border); }
+.today-mastery-count { margin: 0 0 6px; font-weight: 600; }
+.mastery-bar .today-bar-fill { background: var(--partly); }
 .today-goal { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border); font-size: 15px; color: var(--muted); }
 .today-goal select {
   font: inherit; font-size: 16px; /* 16px: iPhone won't zoom in */

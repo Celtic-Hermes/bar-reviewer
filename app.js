@@ -922,6 +922,19 @@ function showTodayCard() {
   }
   document.getElementById("today-note").textContent = note;
   document.getElementById("today-goal").value = String(goal);
+
+  // Mastery across everything in the app (shown once the questions have loaded).
+  const mastery = masteryOf(allQuestions);
+  document.getElementById("today-mastery").hidden = mastery.total === 0;
+  if (mastery.total > 0) {
+    document.getElementById("today-mastery-count").textContent = "⭐ Mastery " + mastery.mastered + " / " + mastery.total;
+    const mbar = document.getElementById("mastery-bar");
+    mbar.setAttribute("aria-valuemax", String(mastery.total));
+    mbar.setAttribute("aria-valuenow", String(mastery.mastered));
+    // At least a sliver once anything is mastered (1 of 254 would otherwise round to 0%).
+    const percent = 100 * mastery.mastered / mastery.total;
+    document.getElementById("mastery-bar-fill").style.width = (mastery.mastered > 0 ? Math.max(2, Math.round(percent)) : 0) + "%";
+  }
 }
 
 document.getElementById("today-goal").addEventListener("change", function (event) {
@@ -1013,6 +1026,8 @@ function showSubjectStats(subject) {
     (stats.got + stats.partly + stats.missed) === 0
       ? "Not tried yet"
       : "Got it " + stats.got + "\nPartly " + stats.partly + "\nMissed it " + stats.missed;
+  const mastery = masteryOf(questionsFor(subject));
+  document.getElementById("stats-mastery").textContent = mastery.mastered + " of " + mastery.total + " mastered";
 }
 
 document.getElementById("subject-back").addEventListener("click", function () {
@@ -2837,7 +2852,10 @@ const rulesReady = fetch("data/rules.json")
     showLoadError("Couldn't load the list of rules (data/rules.json), so \"Read the full rule\" won't show. The file may have a typo.");
   });
 
-Promise.all([questionsReady, casesReady, rulesReady]).then(restoreSpot);
+Promise.all([questionsReady, casesReady, rulesReady]).then(function () {
+  showTodayCard();  // now that the questions are in, the mastery count can be shown
+  restoreSpot();
+});
 
 function showLoadError(text) {
   const error = document.getElementById("load-error");
