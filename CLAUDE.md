@@ -172,6 +172,23 @@ Whenever the builder asks to add a new case, follow this checklist without being
 9. **Cache version:** bump `CACHE_VERSION` in `sw.js` only if an app file changed (see Technical choices). Adding a case normally changes only data files, so no bump.
 10. **Commit and report:** one commit for the case (or one per step if it was split), then tell the builder what was added, the IDs used, the full-text file size, and anything that needs a person to check.
 
+## Adding a new rule (fill-in-the-blank, default procedure)
+For a procedural rule or a Rules of Court rule (like the Rule on the Writ of Amparo), memorized as fill-in-the-blank items. Follow this checklist without being reminded; the content rules above still apply to every step.
+
+1. **Announce first.** Tell the builder which rule is being done (name, A.M. or Rule number), the source link, and the next free `q-` ID. Look the ID up in `data/questions.json`; never reuse or renumber an ID. Do **one rule at a time**: one rule = one commit = one save point.
+2. **Get the real text from the source.** Use the link the builder gave, or an official source (LawPhil, the Supreme Court website or E-Library). Never from memory. A third-party site (study sites, blogs) must be cross-checked against an official source; if they differ, use the official text and tell the builder what differed. If the text can't be fetched, stop and ask for it to be pasted (content rule 2).
+3. **Confirm the structure before writing anything.** Count the sections and tell the builder the count and the question IDs it will use (one item per section, consecutive). If the rule has several parts (for example, separate writs or remedies in one A.M.), describe how it's organized and ask whether it should be one sub-topic or several before writing.
+4. **Clean the text, change nothing else.** Decode the page with its own character set (LawPhil pages are often `windows-1252`) so dashes and quotes come out right. Remove LawPhil's hidden watermarks (like `1awphi1`) and report how many were removed. Keep everything else exactly as published: wording, typos, dashes, capitals. Paragraphs and list items are separated by a blank line. Only the rule's own sections go in, not the resolution that approves it.
+5. **One `fillblank` item per section**, in order, all `status: "draft"`:
+   - `subject` / `topic` / `subtopic`: where the builder asked (e.g. Remedial Law → Special Proceedings → the rule's own sub-topic). Add the new sub-topic to "Topics so far" above, with its ID range.
+   - `fullText`: the whole section exactly, starting with its heading ("Section 3. Where to file petition. - …").
+   - `prompt`: the same text with the legally significant words blanked (`____`), following the fill-in-the-blank rules above: required elements, periods/deadlines, standards, who may file, where, what is or isn't allowed. Never two blanks with only spaces between them.
+   - `caseIds: []`. `source`: `caseTitle` = the rule's official title, `grNumber` = the A.M. number or "Rules of Court, Rule 91", `url` = the source link, `part` = "Section N (Heading)", `excerpt` = the whole section text (same as `fullText`).
+6. **Check before committing:** every `fullText` appears word for word in the cleaned source text; every `prompt` lines up with its `fullText` (same text outside the blanks, so Show answer bolds the right words); the IDs are consecutive and unused; the JSON is valid.
+7. **Test in the app:** the sub-topic shows up under the right subject and topic with the right item count; Quiz, Read, the Blanks levels and Show answer work on a few items.
+8. **Cache version:** data-only changes need no bump (see Technical choices).
+9. **Commit and report:** one commit for the rule, then tell the builder the section count, the IDs used, the source, how many watermarks were removed, and anything a person should check (for example, odd wording in the source).
+
 ## Her progress (saved only on her phone)
 - Saved in the phone's browser storage (`localStorage`). Nothing is sent anywhere, and there are no accounts.
 - Remember: **score per subject**, **questions she missed**, and **bookmarked questions**.
