@@ -117,8 +117,11 @@ body {
   -webkit-hyphens: auto;
   hyphens: auto;
 }
-/* With typing boxes in the line (fill in the blank), no stretching: it leaves big gaps. */
+/* With typing boxes in the line (fill in the blank), no stretching: it leaves big gaps.
+   Lines are a little further apart, so boxes on lines above each other don't touch
+   (every line gets the same spacing, so it stays even). */
 .reading-text:has(input) {
+  line-height: 1.8;
   text-align: left;
   -webkit-hyphens: manual;
   hyphens: manual;
@@ -262,7 +265,9 @@ body {
 .fb-input {
   font: inherit; font-weight: 600; color: var(--text, inherit);
   /* Inherits the question's 17px: 16px or more stops the iPhone zooming in when she taps it. */
-  min-width: 3.5em; max-width: 100%; box-sizing: border-box; margin: 0 1px; padding: 0 3px;
+  min-width: 3.5em; max-width: 100%; box-sizing: border-box; padding: 0 3px;
+  /* Room on both sides, so two boxes side by side (or a box and the next word) are clearly apart. */
+  margin: 0 4px;
   border: none; border-bottom: 2px solid var(--primary); border-radius: 4px 4px 0 0;
   background: color-mix(in srgb, var(--primary) 8%, transparent);
   line-height: 1.3; vertical-align: baseline;
