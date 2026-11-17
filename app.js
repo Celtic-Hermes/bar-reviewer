@@ -998,16 +998,15 @@ function showRuleText(box, text, rule) {
       box.appendChild(heading);
       return;
     }
-    // A section's card. Its heading ("Section 3. Where to file.") is shown in bold.
-    let body = block.paras.join("\n\n");
-    if (body.indexOf("**") === -1) {
-      body = body.replace(/^([^\n]{1,200}?\.)(?=\s?[-–—])/, "**$1**");
-    }
+    // A section's card. Its heading ("Section 3. Where to file.") goes on its own bold
+    // line (richText → splitSectionHeading). "true": the heading's end always ended a
+    // word here (it used to be bolded with **), so her highlights keep their places.
+    const body = block.paras.join("\n\n");
     const card = document.createElement("div");
     card.className = "card rule-section hl-block";
     const p = document.createElement("p");
     p.className = "prompt reading-text";
-    p.appendChild(richText(body, highlighted, false, nextWord));
+    p.appendChild(richText(body, highlighted, false, nextWord, true));
     card.appendChild(p);
     box.appendChild(card);
     nextWord += card.querySelectorAll(".hl-word").length;
@@ -1693,6 +1692,17 @@ function canHideWord(text) {
   return true;
 }
 
+// A section's content without its heading (the whole text if there's no heading).
+function sectionContent(text) {
+  const section = splitSectionHeading(text);
+  return section ? section.body : String(text || "");
+}
+
+// Can this word be hidden as an extra word (not a key-term blank)? Never a heading word.
+function canHideExtra(w) {
+  return !w.isBlank && !w.inHeading && canHideWord(w.text);
+}
+
 // How many words a piece of text has (for working out the share hidden).
 function wordCount(text) {
   return text.split(/\s+/).filter(function (w) { return /[A-Za-zÀ-ÿ0-9]/.test(w); }).length;
@@ -1712,7 +1722,8 @@ function showFillBlank(question) {
     words: words.map(function (span) {
       const text = span.textContent;
       const isBlank = BLANK.test(text);
-      const info = { span: span, text: text, isBlank: isBlank };
+      // A word in the section's heading ("SECTION 1. Petition.") is never hidden: it's the clue.
+      const info = { span: span, text: text, isBlank: isBlank, inHeading: !!span.closest(".section-heading") };
       if (isBlank) {
         info.answer = canUse ? answers[b] : null;
         b += 1;
@@ -1720,7 +1731,7 @@ function showFillBlank(question) {
       return info;
     }),
     usable: !!canUse,
-    total: canUse ? Math.max(1, wordCount(question.fullText)) : 1
+    total: canUse ? Math.max(1, wordCount(sectionContent(question.fullText))) : 1  // the heading doesn't count
   };
 
   // Start: the dropdown and the text. The answer stays hidden.
@@ -1819,9 +1830,7 @@ function pickHiddenWords(level) {
   const target = Math.round(fbInfo.total * FB_LEVEL_SHARE[level]);
   let hidden = hiddenWordCount(blanks);
   const picked = blanks.slice();
-  const others = shuffled(all.filter(function (n) {
-    return !fbInfo.words[n].isBlank && canHideWord(fbInfo.words[n].text);
-  }));
+  const others = shuffled(all.filter(function (n) { return canHideExtra(fbInfo.words[n]); }));
   for (let i = 0; i < others.length && hidden < target; i++) {
     picked.push(others[i]);
     hidden += 1;
@@ -1837,7 +1846,7 @@ function canPickNewBlanks(level) {
   const blanks = fbInfo.words.filter(function (w) { return w.isBlank; }).length;
   if (level === "light") { return blanks > FB_LIGHT_MOST; }
   const extras = fbInfo.hidden.filter(function (n) { return !fbInfo.words[n].isBlank; }).length;
-  const candidates = fbInfo.words.filter(function (w) { return !w.isBlank && canHideWord(w.text); }).length;
+  const candidates = fbInfo.words.filter(canHideExtra).length;
   return extras > 0 && extras < candidates;
 }
 
@@ -1952,7 +1961,10 @@ function applyFbLevel(question, level, hidden) {
   endPeek();
   const clean = [];
   hidden.forEach(function (n) {
-    if (typeof n === "number" && fbInfo.words[n] && clean.indexOf(n) === -1) { clean.push(n); }
+    const w = typeof n === "number" ? fbInfo.words[n] : null;
+    if (!w || clean.indexOf(n) !== -1) { return; }
+    if (!w.isBlank && w.inHeading) { return; }  // a heading word (saved before headings were kept visible)
+    clean.push(n);
   });
   // What she has typed so far, kept for the words that are still hidden.
   const oldTyped = isPlainObject(session.current.fbTyped) ? session.current.fbTyped : {};
@@ -2335,15 +2347,32 @@ let questionScrollSpot = 0;    // where she was on the question screen
 // the list get the yellow highlight. Still no innerHTML: words are added as plain text.
 // Unless "noLists" is true, numbered points like "(1) … (2) …" are put on their own
 // lines with the number in bold (see markLists below).
-function richText(value, highlighted, noLists, startAt) {
+// A text that starts with a section heading ("SECTION 1. Petition. – The petition…") shows
+// the heading on its own bold line and the content from the next line (see splitSectionHeading).
+// "headingEndsWord": true on the rule screen, whose word numbers always counted the end of
+// the heading as the end of a word (see showRuleText); elsewhere a dash glued to the
+// heading ("file.-") stays part of that word, as it always was.
+function richText(value, highlighted, noLists, startAt, headingEndsWord) {
   let text = (value === null || value === undefined) ? "" : String(value);
   text = text.split(LIST_MARK).join("");  // the marker character is ours alone
   if (!noLists) { text = markLists(text); }
   const fragment = document.createDocumentFragment();
   let wordNumber = startAt || 0;  // a rule's later sections continue the count
+  // True when the next piece of text starts in the middle of a word that already got its
+  // number (a piece glued to the one before, like the "-" in "file.-"): that bit is shown
+  // as plain text with no number, so the words after it keep their numbers.
+  let continuesWord = false;
 
   // Add a piece of text to "parent": as plain text, or word by word if highlighting.
   function addText(parent, piece) {
+    const glued = continuesWord;
+    continuesWord = false;
+    if (highlighted && glued && /^\S/.test(piece)) {
+      const rest = piece.replace(/^\S+/, "");
+      parent.appendChild(document.createTextNode(piece.slice(0, piece.length - rest.length).split(LIST_MARK).join("")));
+      piece = rest;
+      if (piece === "") { return; }
+    }
     if (!highlighted) {
       // A list number (marked by markLists) is shown in bold; the rest as plain text.
       piece.split(new RegExp("(" + LIST_MARK + "\\S+)")).forEach(function (bit) {
@@ -2384,6 +2413,24 @@ function richText(value, highlighted, noLists, startAt) {
     });
   }
 
+  // A section heading: its own bold line; the dash after it is kept (so every word keeps
+  // its number) but never shown. Then the content, as usual.
+  const section = splitSectionHeading(text);
+  if (section) {
+    const heading = document.createElement("span");
+    heading.className = "section-heading";
+    addText(heading, section.heading);
+    fragment.appendChild(heading);
+    const sep = document.createElement("span");
+    sep.className = "section-sep";
+    sep.setAttribute("aria-hidden", "true");
+    continuesWord = !headingEndsWord && /^\S/.test(section.sep);
+    addText(sep, section.sep);
+    fragment.appendChild(sep);
+    continuesWord = /\S$/.test(section.sep) && /^\S/.test(section.body);
+    text = section.body;
+  }
+
   const parts = text.split("**");
   // A ** with no partner (an odd one out) is shown as-is, not treated as bold.
   const lastPaired = (parts.length % 2 === 0) ? parts.length - 2 : parts.length - 1;
@@ -2399,6 +2446,24 @@ function richText(value, highlighted, noLists, startAt) {
     }
   });
   return fragment;
+}
+
+// ---------- Section headings on their own line ----------
+// A section of a rule starts with its heading: "SECTION 1. Petition. – The petition…",
+// "SEC. 2. Who May File. – …", "Section 4. Prohibited pleadings. — …".
+// The rule: the text starts with SECTION / Section / SEC. / Sec. / ARTICLE / Article /
+// ART. / Art. and a number with a period; the heading then runs to the FIRST period
+// that is followed by a dash (-, – or —, with or without a space before it). The period
+// after "SEC" doesn't count (a number follows it, not a dash). The dash and the spaces or
+// blank lines after it are the separator; everything after is the content.
+// Returns { heading, sep, body }, or null if the text doesn't start that way (then it's
+// shown as before). Never splits at a ** (bold) mark.
+const SECTION_HEADING = /^((?:SECTION|Section|SEC\.|Sec\.|ARTICLE|Article|ART\.|Art\.)\s+\d+\s*\.[^\n*]{0,200}?\.)(\s?[-–—]+\s*)/;
+
+function splitSectionHeading(text) {
+  const m = SECTION_HEADING.exec(String(text || ""));
+  if (!m) { return null; }
+  return { heading: m[1], sep: m[2], body: text.slice(m[0].length) };
 }
 
 // ---------- Numbered points on their own lines ----------

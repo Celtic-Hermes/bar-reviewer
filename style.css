@@ -129,6 +129,13 @@ body {
 /* With typing boxes in the line (fill in the blank): still justified like all reading
    text (from the rule above). Lines are a little further apart, so boxes on lines above
    each other don't touch (every line gets the same spacing, so it stays even). */
+/* A section's heading ("SECTION 1. Petition.") on its own bold line, the content below it
+   (app.js: splitSectionHeading / richText). The dash after the heading is kept in the text,
+   so her highlights stay on the same words, but never shown. Applies to every section,
+   wherever it's shown: fill in the blank (Quiz, Show answer, Read) and a rule's full text. */
+.section-heading { display: block; font-weight: 700; margin-bottom: 4px; }
+.section-sep { display: none; }
+
 .reading-text:has(input) {
   line-height: 1.8;
 }

@@ -35,6 +35,10 @@ SUBJECTS = builder.SUBJECTS
 MISC_SUBJECTS = builder.MISC_SUBJECTS
 STATUSES = ["draft", "verified"]
 BLANK = re.compile(r"_{4,}")
+# A section's heading, same rule as splitSectionHeading in app.js: "SECTION 1. Petition. – …"
+# = SECTION/Section/SEC./Sec./ARTICLE/Article/ART./Art. + number + period, up to the first
+# period followed by a dash.
+SECTION_HEADING = re.compile(r"^((?:SECTION|Section|SEC\.|Sec\.|ARTICLE|Article|ART\.|Art\.)\s+\d+\s*\.[^\n*]{0,200}?\.)(\s?[-–—]+\s*)")
 # LawPhil's hidden watermarks, like "1awphi1", "ℒαwρhi৷", "1âwphi1".
 WATERMARK = re.compile(r"[1lℒ][aâα][wω][pρ]h[i1৷]", re.IGNORECASE)
 PLACEHOLDER = "[PLACEHOLDER]"
@@ -411,6 +415,14 @@ def check_fillblank(q_id, q):
         if between.strip() == "":
             problem(q_id, "two blanks are right next to each other (only spaces between them).")
             break
+    # The heading ("SECTION 1. Petition.") is shown on its own line and is never blanked.
+    heading = SECTION_HEADING.match(full)
+    if not heading:
+        check(q_id, "fullText doesn't start with a section heading the app can find (like "
+                    "\"SECTION 1. Title. – …\"), so it's shown without a separate heading line.")
+    elif not prompt.startswith(heading.group(1)):
+        problem(q_id, "has a blank inside the section heading (\"%s\"); the heading must stay visible."
+                % heading.group(1))
     # Everything outside the blanks must match fullText exactly, in order.
     pattern = "^" + "(.+?)".join(re.escape(p) for p in pieces) + "$"
     if not re.match(pattern, full, flags=re.DOTALL):
