@@ -2,7 +2,8 @@
 """
 Content checker for Bar Reviewer.
 
-Reads every content file in data/ and lists anything wrong, in plain words.
+Reads every content file in data/ (the catalog, every topic file it lists, rules.json,
+and the full texts) and lists anything wrong, in plain words.
 It only READS files: it never changes anything.
 
 How to run it (in VS Code's terminal, from the project folder):
@@ -55,9 +56,10 @@ def check(where, message):
 
 # ---------- Small helpers ----------
 
-def load_json(name):
-    """Load data/<name>; returns a list, or None if it can't be read."""
-    path = os.path.join(DATA, name)
+def load_json(name, shape=list):
+    """Load <name> (a path inside the project, like data/rules.json).
+    Returns its content, or None if it can't be read or isn't a list (or an object, if shape=dict)."""
+    path = os.path.join(ROOT, name)
     if not os.path.exists(path):
         problem(name, "file is missing.")
         return None
@@ -67,10 +69,67 @@ def load_json(name):
     except json.JSONDecodeError as e:
         problem(name, "isn't valid JSON (a typo near line %d, column %d: %s)." % (e.lineno, e.colno, e.msg))
         return None
-    if not isinstance(data, list):
-        problem(name, "should be a list (starting with [ ), but isn't.")
+    if not isinstance(data, shape):
+        problem(name, "should be a %s, but isn't." % ("list (starting with [ )" if shape is list else "{ … } object"))
         return None
     return data
+
+
+def load_content():
+    """Read data/catalog.json and every topic file it lists.
+    Returns (questions, cases) as lists of (file name, item), or (None, None) if the catalog can't be read."""
+    catalog = load_json("data/catalog.json", dict)
+    if catalog is None:
+        return None, None
+    topics = catalog.get("topics")
+    if not isinstance(topics, list):
+        problem("data/catalog.json", "needs a \"topics\" list.")
+        return None, None
+    questions, cases = [], []
+    files_seen, places_seen = set(), set()
+    for n, entry in enumerate(topics, start=1):
+        where = "data/catalog.json, topic %d" % n
+        if not isinstance(entry, dict) or not all(filled(entry.get(k)) for k in ["subject", "topic", "file"]):
+            problem(where, "needs a subject, a topic and a file.")
+            continue
+        file_name, place = entry["file"], (entry["subject"], entry["topic"])
+        if not file_name.startswith("data/content/") or not file_name.endswith(".json"):
+            problem(where, "file %r should be data/content/<subject>/<topic>.json." % file_name)
+            continue
+        if file_name in files_seen:
+            problem(where, "%s is listed twice." % file_name)
+            continue
+        if place in places_seen:
+            problem(where, "%s → %s is listed twice; one topic = one file." % place)
+        files_seen.add(file_name)
+        places_seen.add(place)
+        if entry["subject"] not in SUBJECTS + MISC_SUBJECTS:
+            problem(where, "subject %r isn't one of the 8 exact subject names." % entry["subject"])
+        data = load_json(file_name, dict)
+        if data is None:
+            continue
+        if (data.get("subject"), data.get("topic")) != place:
+            problem(file_name, "says it is %r → %r, but the catalog lists it as %s → %s."
+                    % (data.get("subject"), data.get("topic"), place[0], place[1]))
+        for key, bucket in [("questions", questions), ("cases", cases)]:
+            items = data.get(key, [])
+            if not isinstance(items, list):
+                problem(file_name, "'%s' should be a list (use [] if none)." % key)
+                continue
+            for item in items:
+                bucket.append((file_name, item))
+                if isinstance(item, dict) and (item.get("subject"), item.get("topic")) != place \
+                        and item.get("subject") in SUBJECTS + MISC_SUBJECTS:
+                    problem(str(item.get("id")), "is %r → %r, but it's in the file for %s → %s."
+                            % (item.get("subject"), item.get("topic"), place[0], place[1]))
+    # Topic files the catalog doesn't list (the app would never load them).
+    content_dir = os.path.join(DATA, "content")
+    for folder, _, names in os.walk(content_dir):
+        for name in sorted(names):
+            rel = os.path.relpath(os.path.join(folder, name), ROOT).replace(os.sep, "/")
+            if name.endswith(".json") and rel not in files_seen:
+                problem(rel, "isn't listed in data/catalog.json, so the app never loads it.")
+    return questions, cases
 
 
 def read_text(path):
@@ -107,23 +166,28 @@ def comparable(text):
     return re.sub(r"\s+", " ", text).strip()
 
 
-def check_ids(items, file_name, prefix):
-    """Every item has an ID like q-0001, and no ID is used twice. Returns {id: item}."""
+def check_ids(pairs, prefix):
+    """pairs = [(file name, item), …]. Every item has an ID like q-0001, and no ID is used
+    twice (in any file). Returns {id: item}."""
     pattern = re.compile("^" + prefix + r"-\d{4,}$")
-    by_id = {}
-    for n, item in enumerate(items, start=1):
+    by_id, file_of = {}, {}
+    counts = {}
+    for file_name, item in pairs:
+        counts[file_name] = counts.get(file_name, 0) + 1
+        where = "%s, %s item %d" % (file_name, prefix, counts[file_name])
         if not isinstance(item, dict):
-            problem("%s, item %d" % (file_name, n), "isn't an object ({ … }).")
+            problem(where, "isn't an object ({ … }).")
             continue
         item_id = item.get("id")
         if not isinstance(item_id, str) or not pattern.match(item_id):
-            problem("%s, item %d" % (file_name, n),
-                    "ID %r should look like %s-0001." % (item_id, prefix))
+            problem(where, "ID %r should look like %s-0001." % (item_id, prefix))
             continue
         if item_id in by_id:
-            problem(item_id, "this ID is used more than once in %s." % file_name)
+            same = "in %s" % file_name if file_of[item_id] == file_name else "in %s and %s" % (file_of[item_id], file_name)
+            problem(item_id, "this ID is used more than once (%s)." % same)
             continue
         by_id[item_id] = item
+        file_of[item_id] = file_name
     return by_id
 
 
@@ -145,7 +209,7 @@ def check_status(where, item):
 # ---------- Cases ----------
 
 def check_cases(cases):
-    by_id = check_ids(cases, "cases.json", "case")
+    by_id = check_ids(cases, "case")
     gr_seen = {}
     for case_id, c in by_id.items():
         check_status(case_id, c)
@@ -195,7 +259,7 @@ def check_full_text(where, text, footnotes):
 # ---------- Rules ----------
 
 def check_rules(rules):
-    by_id = check_ids(rules, "rules.json", "rule")
+    by_id = check_ids([("data/rules.json", r) for r in rules], "rule")
     by_number = {}
     for rule_id, r in by_id.items():
         check_status(rule_id, r)
@@ -237,7 +301,7 @@ def check_question(q_id, q, cases_by_id, case_texts, rules_by_number):
         case_ids = []
     for case_id in case_ids:
         if case_id not in cases_by_id:
-            problem(q_id, "links to %r, but there's no such case in cases.json." % case_id)
+            problem(q_id, "links to %r, but there's no such case in any topic file." % case_id)
 
     if q_type == "essay":
         answer = q.get("suggestedAnswer")
@@ -341,7 +405,7 @@ def check_fillblank(q_id, q):
 
 
 def check_questions(questions, cases_by_id, rules_by_number):
-    by_id = check_ids(questions, "questions.json", "q")
+    by_id = check_ids(questions, "q")
     case_texts = {}
     for case_id in cases_by_id:
         text = read_text(os.path.join(DATA, "case-texts", case_id + ".txt"))
@@ -378,9 +442,8 @@ def print_list(lines, show_all):
 
 
 def main():
-    cases = load_json("cases.json")
-    rules = load_json("rules.json")
-    questions = load_json("questions.json")
+    questions, cases = load_content()
+    rules = load_json("data/rules.json")
 
     cases_by_id = check_cases(cases) if cases is not None else {}
     rules_by_id, rules_by_number = check_rules(rules) if rules is not None else ({}, None)

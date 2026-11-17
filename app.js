@@ -16,8 +16,8 @@ const SUBJECTS = [
 // the home screen shows a short "nothing here yet" note instead.
 const MISC_SUBJECTS = [];
 
-let allQuestions = [];      // filled in from data/questions.json
-let allCases = [];          // filled in from data/cases.json
+let allQuestions = [];      // filled in from the topic files listed in data/catalog.json
+let allCases = [];          // filled in from the same topic files
 let allRules = [];          // filled in from data/rules.json (rules whose full text can be read)
 let currentSubject = null;  // the subject she tapped
 let currentTopic = null;    // the topic she tapped (or "All topics")
@@ -2170,7 +2170,7 @@ function showQuestionCases(question) {
   const ids = Array.isArray(question.caseIds) ? question.caseIds : [];
   ids.forEach(function (caseId) {
     const theCase = findCase(caseId);
-    if (!theCase) { return; }  // a link to a case that isn't in cases.json: just skip it
+    if (!theCase) { return; }  // a link to a case that isn't in any topic file: just skip it
     const button = document.createElement("button");
     button.className = "btn btn-secondary";
     if (ids.length === 1) {
@@ -3107,37 +3107,53 @@ showTodayCard();
 // while the files load; restoreSpot() below shows the right screen.
 if (loadSpot()) { document.getElementById("screen-home").hidden = true; }
 
-const questionsReady = fetch("data/questions.json")
-  .then(function (response) {
+// Questions and cases: data/catalog.json lists one file per topic
+// (data/content/<subject>/<topic>.json), each holding that topic's "questions" and "cases".
+// All of them are loaded now. A topic file that can't be loaded is reported by name,
+// and the other topics still work.
+function fetchJson(file) {
+  return fetch(file).then(function (response) {
     if (!response.ok) { throw new Error("status " + response.status); }
     return response.json();
-  })
-  .then(function (data) {
-    if (!Array.isArray(data)) { throw new Error("not a list"); }
-    allQuestions = data;
+  });
+}
+
+// "q-0012" → 12, so everything is kept in ID order whatever order the files load in.
+function idNumber(item) {
+  return parseInt(String(item.id).replace(/\D/g, ""), 10) || 0;
+}
+
+const contentReady = fetchJson("data/catalog.json")
+  .then(function (catalog) {
+    if (!catalog || !Array.isArray(catalog.topics)) { throw new Error("no list of topics"); }
+    const questions = [];
+    const cases = [];
+    return Promise.all(catalog.topics.map(function (entry) {
+      if (!entry || typeof entry.file !== "string") { return null; }
+      return fetchJson(entry.file).then(function (data) {
+        if (!data || typeof data !== "object") { throw new Error("not a topic file"); }
+        if (Array.isArray(data.questions)) { questions.push.apply(questions, data.questions); }
+        if (Array.isArray(data.cases)) { cases.push.apply(cases, data.cases); }
+      }).catch(function () {
+        showLoadError("Couldn't load " + entry.subject + " → " + entry.topic + " (" + entry.file + "), " +
+          "so its questions and cases won't show. The file may have a typo.");
+      });
+    })).then(function () {
+      allQuestions = questions.filter(function (q) { return q && typeof q === "object"; })
+        .sort(function (a, b) { return idNumber(a) - idNumber(b); });
+      allCases = cases.filter(function (c) { return c && typeof c === "object" && c.id; })
+        .sort(function (a, b) { return idNumber(a) - idNumber(b); });
+    });
   })
   .catch(function () {
     showLoadError(
-      "Couldn't load the questions file (data/questions.json). " +
+      "Couldn't load the list of topics (data/catalog.json), so no questions or cases can show. " +
       "If you opened this by double-clicking, start the local server instead. " +
       "Otherwise, the file may have a typo.");
   });
 
-const casesReady = fetch("data/cases.json")
-  .then(function (response) {
-    if (!response.ok) { throw new Error("status " + response.status); }
-    return response.json();
-  })
-  .then(function (data) {
-    if (!Array.isArray(data)) { throw new Error("not a list"); }
-    allCases = data.filter(function (c) { return c && typeof c === "object" && c.id; });
-  })
-  .catch(function () {
-    showLoadError("Couldn't load the cases file (data/cases.json), so cases can't be opened. The file may have a typo.");
-  });
-
 // Show a loading problem at the top of the app (several can show at once).
-// Once both files have loaded (or failed), put her back where she was.
+// Once everything has loaded (or failed), put her back where she was.
 const rulesReady = fetch("data/rules.json")
   .then(function (response) {
     if (!response.ok) { throw new Error("status " + response.status); }
@@ -3153,7 +3169,7 @@ const rulesReady = fetch("data/rules.json")
     showLoadError("Couldn't load the list of rules (data/rules.json), so \"Read the full rule\" won't show. The file may have a typo.");
   });
 
-Promise.all([questionsReady, casesReady, rulesReady]).then(function () {
+Promise.all([contentReady, rulesReady]).then(function () {
   showTodayCard();  // now that the questions are in, the mastery count can be shown
   showMyNotesButton();  // ...and her notes can be matched to their cases and rules
   restoreSpot();

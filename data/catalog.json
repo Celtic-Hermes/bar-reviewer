@@ -1,0 +1,19 @@
+{
+  "topics": [
+    {
+      "subject": "Mercantile Law",
+      "topic": "Communication Law",
+      "file": "data/content/mercantile-law/communication-law.json"
+    },
+    {
+      "subject": "Remedial Law",
+      "topic": "Special Proceedings",
+      "file": "data/content/remedial-law/special-proceedings.json"
+    },
+    {
+      "subject": "Legal and Judicial Ethics",
+      "topic": "Notarial Practice",
+      "file": "data/content/legal-and-judicial-ethics/notarial-practice.json"
+    }
+  ]
+}
