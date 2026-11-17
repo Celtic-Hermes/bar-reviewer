@@ -82,7 +82,7 @@
           <div class="today-bar mastery-bar" id="mastery-bar" role="progressbar" aria-label="Questions mastered" aria-valuemin="0">
             <span class="today-bar-fill" id="mastery-bar-fill"></span>
           </div>
-          <p class="today-note">Mastered = right on 2 different days in a row (fill in the blank: Moderate or harder).</p>
+          <p class="today-note" id="mastery-rule"></p>  <!-- filled in by app.js (showFbLabels) -->
         </div>
         <!-- The goal is changed in Settings: tapping this line opens it -->
         <button type="button" class="today-goal" id="today-goal-link">
@@ -282,18 +282,19 @@
         </div>
         <!-- Fill in the blank: how much of the text is hidden -->
         <div class="fb-level fb-quiz-only" id="fb-level" hidden>
-          <label class="fb-level-title" for="fb-level-select">Blanks</label>
+          <!-- The words for this label, the levels and the buttons below: FB_LEVEL_LABELS / FB_TEXT in app.js -->
+          <label class="fb-level-title" id="fb-level-title" for="fb-level-select"></label>
           <select class="fb-level-select" id="fb-level-select">
-            <option value="light">Light (2–3 blanks)</option>
-            <option value="key">Key Legal Terms (~20%)</option>
-            <option value="moderate">Moderate (~35%)</option>
-            <option value="intensive">Intensive (~55%)</option>
-            <option value="verbatim">Verbatim Bar Mode (~75%)</option>
+            <option value="light"></option>
+            <option value="key"></option>
+            <option value="moderate"></option>
+            <option value="intensive"></option>
+            <option value="verbatim"></option>
           </select>
         </div>
         <!-- Hide different words at the same level -->
         <div class="fb-new-row fb-quiz-only" id="fb-new-row" hidden>
-          <button class="fb-new-btn" id="fb-new">↻ New blanks</button>
+          <button class="fb-new-btn" id="fb-new"></button>
         </div>
         <p class="fb-new-note fb-quiz-only" id="fb-new-note" role="status" hidden></p>
         <p class="prompt reading-text fb-quiz-only" id="prompt"></p>
@@ -317,7 +318,7 @@
       <!-- Fill-in-the-blank parts (only for fill-in-the-blank) -->
       <div class="fb-quiz-only" id="fill-area" hidden>
         <!-- Peek: hold to see the answers for a moment; they hide again on release -->
-        <button class="btn btn-secondary fb-peek-btn" id="fb-peek" aria-pressed="false" hidden>👁 Hold to peek</button>
+        <button class="btn btn-secondary fb-peek-btn" id="fb-peek" aria-pressed="false" hidden></button>
         <button class="btn btn-primary" id="fb-show" hidden>Show answer</button>
         <div id="fb-answer-area" hidden>
           <section class="card">

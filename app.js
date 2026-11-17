@@ -1741,11 +1741,39 @@ function showPicked(question, picked) {
 // 3. She rates herself Got it / Missed it. That decides Review missed and her score.
 // Each word stays one "word" for highlighting whether it's hidden or not, so her
 // highlights stay on the same words at every level.
-const FB_LEVELS = ["light", "key", "moderate", "intensive", "verbatim"];
-const FB_LEVEL_NAMES = {
-  light: "Light", key: "Key Legal Terms", moderate: "Moderate",
-  intensive: "Intensive", verbatim: "Verbatim Bar Mode"
+const FB_LEVELS = ["light", "key", "moderate", "intensive", "verbatim"];  // internal IDs: never change
+
+// ===================== WORDS SHE SEES (edit only here) =====================
+// The names of the fill-in-the-blank controls and levels. Only the words on screen change
+// here: the internal IDs on the left (saved in her progress, and used by the mastery rule,
+// which counts "moderate" or harder) stay as they are.
+const FB_LEVEL_NAMES = {      // a level's name, in sentences ("Steady or harder")
+  light: "Warm-up", key: "Key Legal Terms", moderate: "Steady",
+  intensive: "Deep dive", verbatim: "Word for word"
 };
+const FB_LEVEL_LABELS = {     // the same, as shown in the dropdown
+  light: "Warm-up (2–3 blanks)", key: "Key Legal Terms (~20%)", moderate: "Steady (~35%)",
+  intensive: "Deep dive (~55%)", verbatim: "Word for word (~75%)"
+};
+const FB_TEXT = {
+  difficulty: "Difficulty",          // the dropdown's label
+  shuffle: "↻ Shuffle blanks",       // hides a different set of words at the same level
+  peek: "👁 Hold to peek"
+};
+// ===========================================================================
+
+// Put those words on the page (once, at startup): the dropdown, its label, the buttons,
+// and the Today card's mastery line ("… Steady or harder", from the mastery rule itself).
+function showFbLabels() {
+  document.querySelectorAll("#fb-level-select option").forEach(function (option) {
+    option.textContent = FB_LEVEL_LABELS[option.value] || option.value;
+  });
+  document.getElementById("fb-level-title").textContent = FB_TEXT.difficulty;
+  document.getElementById("fb-new").textContent = FB_TEXT.shuffle;
+  document.getElementById("fb-peek").textContent = FB_TEXT.peek;
+  document.getElementById("mastery-rule").textContent = "Mastered = right on 2 different days in a row (fill in the blank: " +
+    FB_LEVEL_NAMES[MASTERY_FB_LEVELS[0]] + " or harder).";
+}
 const FB_LEVEL_SHARE = { moderate: 0.35, intensive: 0.55, verbatim: 0.75 };  // share of words hidden
 const FB_LIGHT_MOST = 3;          // Light: at most this many key-term blanks
 const FB_DEFAULT_LEVEL = "key";
@@ -1944,10 +1972,10 @@ function canPickNewBlanks(level) {
 // Why "New blanks" can't change anything here (shown if she taps it anyway).
 function noNewBlanksReason(level) {
   if (level === "key") {
-    return "Key Legal Terms always hides the same key terms. Pick another level to get different blanks.";
+    return FB_LEVEL_NAMES.key + " always hides the same key terms. Pick another difficulty to get different blanks.";
   }
   if (level === "light") {
-    return "This section has only a few key terms, and Light already hides all of them.";
+    return "This section has only a few key terms, and " + FB_LEVEL_NAMES.light + " already hides all of them.";
   }
   return "There are no other words to hide at this level in this section.";
 }
@@ -3871,6 +3899,7 @@ document.getElementById("restore-input").addEventListener("change", function (ev
 
 // ---------- Start the app ----------
 buildHome();
+showFbLabels();
 buildSidebar();
 updateSidebar();
 showTodayCard();
