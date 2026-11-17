@@ -837,6 +837,7 @@ function startPractice() {
 
 // ---------- Screen 3: Practice ----------
 function showQuestion() {
+  endPeek();  // never carry a peek over to the next question
   const question = session.questions[session.index];
   session.current = {};  // nothing done on this question yet
   lastPromptWord = null;
@@ -1076,6 +1077,7 @@ function showFillBlank(question) {
   const select = document.getElementById("fb-level-select");
   select.disabled = false;
   document.getElementById("fb-show").hidden = false;
+  document.getElementById("fb-peek").hidden = false;
   document.getElementById("fb-answer-area").hidden = true;
   document.getElementById("fb-result").hidden = true;
   document.querySelectorAll(".btn-fbrate").forEach(function (b) {
@@ -1295,6 +1297,7 @@ function sizeBlankBox(box) {
 
 // Show the text at a level, with the words numbered in "hidden" blanked out.
 function applyFbLevel(question, level, hidden) {
+  endPeek();
   const clean = [];
   hidden.forEach(function (n) {
     if (typeof n === "number" && fbInfo.words[n] && clean.indexOf(n) === -1) { clean.push(n); }
@@ -1386,6 +1389,57 @@ document.getElementById("prompt").addEventListener("keydown", function (event) {
   if (next) { next.focus(); } else { box.blur(); }
 });
 
+// --- Peek: hold the button to see the answers; let go and they hide again ---
+// While held, each box is hidden and its answer is shown in its place (lighter, dotted
+// underline). What she typed stays in the box. Nothing is scored or saved: it's only
+// a quick look, separate from "Show answer".
+let peeking = false;
+
+function startPeek() {
+  if (peeking || session.current.answerShown) { return; }
+  peeking = true;
+  document.querySelectorAll("#prompt .fb-input").forEach(function (box) {
+    const answer = fbAnswerFor(Number(box.dataset.word));
+    const peek = document.createElement("span");
+    peek.className = "fb-peek";
+    peek.textContent = answer === null ? "?" : answer;
+    box.after(peek);
+  });
+  document.getElementById("prompt").classList.add("fb-peeking");
+  document.getElementById("fb-peek").setAttribute("aria-pressed", "true");
+}
+
+function endPeek() {
+  if (!peeking) { return; }
+  peeking = false;
+  document.querySelectorAll("#prompt .fb-peek").forEach(function (peek) { peek.remove(); });
+  document.getElementById("prompt").classList.remove("fb-peeking");
+  document.getElementById("fb-peek").setAttribute("aria-pressed", "false");
+}
+
+(function () {
+  const button = document.getElementById("fb-peek");
+  // Finger or mouse: peek while pressed; stop on release, on sliding off, or if the
+  // phone takes over the touch (for example, to scroll).
+  button.addEventListener("pointerdown", function (event) {
+    event.preventDefault();  // no text selection or long-press menu on the button
+    startPeek();
+  });
+  ["pointerup", "pointerleave", "pointercancel"].forEach(function (type) {
+    button.addEventListener(type, endPeek);
+  });
+  button.addEventListener("contextmenu", function (event) { event.preventDefault(); });
+  // Keyboard: hold Space or Enter.
+  button.addEventListener("keydown", function (event) {
+    if (event.key === " " || event.key === "Enter") { event.preventDefault(); startPeek(); }
+  });
+  button.addEventListener("keyup", function (event) {
+    if (event.key === " " || event.key === "Enter") { endPeek(); }
+  });
+  button.addEventListener("blur", endPeek);
+  window.addEventListener("blur", endPeek);  // switched apps mid-peek
+})();
+
 // "Show answer": mark each box green (right) or red (wrong or left empty), lock the
 // boxes, and say how many she got. Nothing here is saved to her score: Got it / Missed it does that.
 function checkBlankBoxes() {
@@ -1424,6 +1478,8 @@ function revealFillBlank() {
   checkBlankBoxes();
   document.getElementById("fb-answer-area").hidden = false;
   document.getElementById("fb-show").hidden = true;
+  endPeek();
+  document.getElementById("fb-peek").hidden = true;  // the full answer is showing now
   document.getElementById("fb-level-select").disabled = true;
   session.current.answerShown = true;
   showNewBlanksButton();  // grayed out once the answer is showing
