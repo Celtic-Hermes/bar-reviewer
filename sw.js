@@ -9,7 +9,7 @@
 // the topic files in data/content/, or files in data/case-texts/ and data/rule-texts/.
 // Content is always fetched fresh when she's online.
 // =====================================================================
-const CACHE_VERSION = "v78";
+const CACHE_VERSION = "v79";
 const CACHE_NAME = "bar-reviewer-" + CACHE_VERSION;
 
 // Every file the app needs, written relative to this file so it works

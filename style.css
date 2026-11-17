@@ -5,16 +5,19 @@
   --text: #1f2328;
   --muted: #5d6470;
   --border: #e2ddd2;
-  /* The app's accent color, in three shared variables (use these, never a color of your own):
-     --primary:      buttons (with --primary-text on them), the selected tab, links, small labels,
-                     and ANY colored text. Dark enough to read on white, and white on it.
+  /* The app's accent color, in shared variables (use these, never a color of your own):
+     --primary:      backgrounds of buttons and the selected tab, borders, focus rings, progress
+                     bars. NEVER as the color of small text (too light for that).
+     --on-primary:   the text ON a --primary background (white). Always bold (weight 700) or large.
+     --primary-text: any small colored text: Back, subject labels, links, "Find in case", captions.
      --primary-soft: ONLY as a background behind dark text (--text): answer words in Full text,
                      peeked answers, the inside of blank boxes. Never as a text color.
      --primary-edge: borders of cards, inputs and the blank boxes. */
-  --primary: #5B5BD6;
-  --primary-text: #ffffff;
+  --primary: #6666FF;
+  --on-primary: #ffffff;
+  --primary-text: #5555E0;
   --primary-soft: #CCCCFF;
-  --primary-edge: #A9A9F0;
+  --primary-edge: #A9A9FF;
   --banner-bg: #fff3c4;
   --banner-text: #6b4e00;
   --got: #1f7a4d;
@@ -55,10 +58,11 @@
     --text: #e8e6e1;
     --muted: #a0a6b0;
     --border: #2f333b;
-    --primary: #A9A9F0;
-    --primary-text: #12121f;
+    --primary: #A9A9FF;
+    --on-primary: #12121f;
+    --primary-text: #b8b8ff;
     --primary-soft: #34346a;
-    --primary-edge: #6c6cd9;
+    --primary-edge: #6c6ce0;
     --banner-bg: #3a2f0b;
     --banner-text: #f3d77a;
     --got: #5cc48d;
@@ -101,7 +105,7 @@ body {
 }
 
 .question-header { margin-bottom: 12px; }
-.subject { margin: 0; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--primary); }
+.subject { margin: 0; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--primary-text); }
 .topic { margin: 2px 0 0; font-size: 15px; color: var(--muted); }
 
 .card {
@@ -242,7 +246,7 @@ body {
 
 /* ALAC answer: each part gets a small heading. */
 .alac { margin: 0; }
-.alac dt { font-weight: 700; color: var(--primary); margin-top: 14px; }
+.alac dt { font-weight: 700; color: var(--primary-text); margin-top: 14px; }
 .alac dt:first-child { margin-top: 0; }
 .alac dd { margin: 2px 0 0; }
 
@@ -265,7 +269,7 @@ body {
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
 }
-.btn-primary { background: var(--primary); color: var(--primary-text); margin-bottom: 16px; }
+.btn-primary { background: var(--primary); color: var(--on-primary); font-weight: 700; margin-bottom: 16px; }
 
 .rating { margin-top: 8px; }
 .rating-buttons { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
@@ -275,7 +279,7 @@ body {
 .fb-level-select {
   flex: 1; min-width: 0; font: inherit; font-size: 16px; /* 16px: iPhone won't zoom in */
   padding: 10px 12px; border: 2px solid var(--primary); border-radius: 10px;
-  background: var(--card); color: var(--primary);
+  background: var(--card); color: var(--primary-text);
 }
 .fb-level-select:disabled { opacity: 0.6; }
 /* "↻ New": hide different words at the same level. Grayed out (but still tappable,
@@ -284,7 +288,7 @@ body {
 .fb-new-btn {
   min-height: 40px; padding: 6px 14px;
   border: 2px solid var(--primary); border-radius: 10px;
-  background: var(--card); color: var(--primary);
+  background: var(--card); color: var(--primary-text);
   font: inherit; font-size: 16px; font-weight: 600; cursor: pointer; -webkit-tap-highlight-color: transparent;
 }
 .fb-new-btn.off { opacity: 0.4; }
@@ -293,10 +297,10 @@ body {
 /* Fill in the blank: the Quiz / Read switch (two halves of one rounded bar). */
 .fb-view { display: grid; grid-template-columns: 1fr 1fr; margin: 0 0 14px; border: 2px solid var(--primary); border-radius: 10px; overflow: hidden; }
 .fb-view-btn {
-  padding: 9px 6px; border: none; background: var(--card); color: var(--primary);
+  padding: 9px 6px; border: none; background: var(--card); color: var(--primary-text);
   font: inherit; font-size: 16px; font-weight: 600; cursor: pointer; -webkit-tap-highlight-color: transparent;
 }
-.fb-view-btn[aria-pressed="true"] { background: var(--primary); color: var(--primary-text); }
+.fb-view-btn[aria-pressed="true"] { background: var(--primary); color: var(--on-primary); font-weight: 700; }
 /* Read view: hide every part of the quiz (marked fb-quiz-only in index.html). */
 .fb-reading .fb-quiz-only { display: none !important; }
 /* After "Show answer": Got it / Missed it, styled like the essay buttons.
@@ -311,7 +315,7 @@ body {
 .btn-fbrate:disabled:not(.selected) { opacity: 0.45; }
 .btn-fbrate.selected:disabled { opacity: 1; }
 /* A hidden word: a text box she types into, shown like an underlined gap in the line. */
-.fb-blank { color: var(--primary); font-weight: 700; }
+.fb-blank { color: var(--primary-text); font-weight: 700; }
 .fb-blank .fb-shown { color: var(--text); font-weight: 400; }  /* a filler word inside a hidden key term: plain text */
 .fb-input {
   font: inherit; font-weight: 600; color: var(--text, inherit);
@@ -338,7 +342,7 @@ body {
   -webkit-touch-callout: none;  /* iPhone: no "copy / look up" menu on a long press */
   touch-action: none;           /* holding it doesn't start a scroll */
 }
-.fb-peek-btn[aria-pressed="true"] { background: var(--primary); color: var(--primary-text); }
+.fb-peek-btn[aria-pressed="true"] { background: var(--primary); color: var(--on-primary); font-weight: 700; }
 .fb-input:focus { outline: 2px solid var(--primary); outline-offset: 1px; }
 .fb-input::selection { background: color-mix(in srgb, var(--primary) 30%, transparent); }
 /* After "Show answer": green if right, red if wrong or left empty. */
@@ -417,7 +421,7 @@ body {
   height: 34px;
   border-radius: 50%;
   background: var(--primary);
-  color: var(--primary-text);
+  color: var(--on-primary);
   font-size: 15px;
   font-weight: 700;
   display: grid;
@@ -433,7 +437,7 @@ body {
   min-height: 44px;
   background: none;
   border: 0;
-  color: var(--primary);
+  color: var(--primary-text);
   font: inherit;
   font-weight: 600;
   cursor: pointer;
@@ -485,7 +489,7 @@ body {
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
 }
-.mode-options input:checked + span { background: var(--primary); color: var(--primary-text); }
+.mode-options input:checked + span { background: var(--primary); color: var(--on-primary); font-weight: 700; }
 .mode-options input:focus-visible + span { outline: 2px solid var(--primary); outline-offset: 2px; }
 
 /* Shuffle on/off switch (looks like an iPhone toggle) */
@@ -617,7 +621,7 @@ body {
 .choice-text { padding-top: 1px; }
 /* Her pick before she submits: thick blue border and a filled letter circle. */
 .choice.selected { border-color: var(--primary); }
-.choice.selected .choice-letter { background: var(--primary); border-color: var(--primary); color: var(--primary-text); }
+.choice.selected .choice-letter { background: var(--primary); border-color: var(--primary); color: var(--on-primary); font-weight: 700; }
 #submit-answer { margin-bottom: 16px; }
 .choice.right { border-color: var(--got); }
 .choice.right .choice-letter { background: var(--got); border-color: var(--got); color: var(--card); }
@@ -636,13 +640,13 @@ body {
 .next-btn { margin-top: 20px; }
 
 /* ---------- Results ---------- */
-.big-score { margin: 0; font-size: 36px; font-weight: 700; line-height: 1.1; color: var(--primary); text-align: center; }
+.big-score { margin: 0; font-size: 36px; font-weight: 700; line-height: 1.1; color: var(--primary-text); text-align: center; }
 #results-mcq .count-label, .rating-summary .count-label { text-align: center; }
 .rating-summary { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
 .rating-summary .big-score.got-text { color: var(--got); }
 .rating-summary .big-score.partly-text { color: var(--partly); }
 .rating-summary .big-score.missed-text { color: var(--missed); }
-.btn-secondary { background: var(--card); color: var(--primary); border-color: var(--primary); margin-bottom: 16px; }
+.btn-secondary { background: var(--card); color: var(--primary-text); border-color: var(--primary); margin-bottom: 16px; }
 
 /* ---------- Error message ---------- */
 .error {
@@ -719,7 +723,7 @@ body {
 .case-number { margin: 0 0 4px; color: var(--muted); font-weight: 600; }
 #screen-case .status-badge { margin-bottom: 16px; }
 #screen-case .case-number + .card { margin-top: 16px; }
-.source-link { color: var(--primary); font-weight: 600; overflow-wrap: anywhere; }
+.source-link { color: var(--primary-text); font-weight: 600; overflow-wrap: anywhere; }
 .source-note { display: block; margin-top: 6px; font-size: 14px; color: var(--muted); overflow-wrap: anywhere; }
 
 /* Search on the home screen (app.js: showSearchResults). 17px text so the iPhone doesn't zoom in. */
@@ -767,11 +771,11 @@ a.btn { text-align: center; text-decoration: none; }
 .rule-text { font-size: 16px; line-height: 1.6; }
 .rule-section { margin-top: 12px; }
 .rule-section > .prompt { overflow-wrap: anywhere; }
-.rule-section > .prompt > strong:first-child { color: var(--primary); }   /* "Section 3. Where to file." */
+.rule-section > .prompt > strong:first-child { color: var(--primary-text); }   /* "Section 3. Where to file." */
 /* PART / RULE headings between the cards */
 .rule-heading {
   margin: 26px 0 2px; text-align: center; white-space: pre-line;
-  font-size: 15px; font-weight: 700; letter-spacing: 0.04em; color: var(--primary);
+  font-size: 15px; font-weight: 700; letter-spacing: 0.04em; color: var(--primary-text);
 }
 #screen-rule .status-badge { margin-bottom: 4px; }
 #rule-source-card { margin-top: 16px; }
@@ -808,7 +812,7 @@ a.btn { text-align: center; text-decoration: none; }
   cursor: pointer; -webkit-tap-highlight-color: transparent;
   -webkit-user-select: none; user-select: none; -webkit-touch-callout: none;
 }
-.notes-fmt[aria-pressed="true"] { background: var(--primary); color: var(--primary-text); border-color: var(--primary); }
+.notes-fmt[aria-pressed="true"] { background: var(--primary); color: var(--on-primary); border-color: var(--primary); font-weight: 700; }
 .notes-status { margin: 8px 0 0; font-size: 13px; color: var(--muted); }
 .rule-notes-card { margin-top: 14px; }
 .my-notes-btn { margin: -6px 0 18px; }
@@ -832,7 +836,7 @@ a.btn { text-align: center; text-decoration: none; }
   background: transparent;
   border: 1.5px solid var(--border);
   border-radius: 999px;
-  color: var(--primary);
+  color: var(--primary-text);
   font: inherit;
   font-size: 15px;
   font-weight: 600;
@@ -1070,7 +1074,7 @@ body.sheet-open { overflow: hidden; }
   .menu-btn {
     position: absolute; top: calc(16px + env(safe-area-inset-top)); right: 16px; z-index: 5;
     width: 44px; height: 44px; padding: 0; border: 1px solid var(--border); border-radius: 12px;
-    background: var(--card); color: var(--primary); font: inherit; font-size: 20px; line-height: 1;
+    background: var(--card); color: var(--primary-text); font: inherit; font-size: 20px; line-height: 1;
     cursor: pointer; -webkit-tap-highlight-color: transparent;
   }
   /* The question screen's "Question 1 of 48" moves left to make room for ☰. */
