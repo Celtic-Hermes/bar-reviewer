@@ -19,11 +19,15 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
 </head>
 <body data-screen="screen-home">
-  <!-- Sidebar: wide screens only (1024px and up: Mac, iPad in landscape). Hidden on phones.
+  <!-- Sidebar: always shown on wide screens (1024px and up: Mac, iPad in landscape).
+       On phones it's the ☰ menu: it slides in from the left when she taps ☰ (#menu-btn).
        The subject buttons are added by app.js (buildSidebar); the current section is marked
        with aria-current="page" (updateSidebar). -->
   <nav class="sidebar" id="sidebar" aria-label="Sections">
-    <p class="sidebar-title">Bar Reviewer</p>
+    <div class="sidebar-top">
+      <p class="sidebar-title">Bar Reviewer</p>
+      <button type="button" class="sidebar-close" id="sidebar-close" aria-label="Close menu">✕</button>
+    </div>
     <button type="button" class="sidebar-link" data-go="home"><span class="sidebar-icon" aria-hidden="true">🏠</span>Home</button>
     <button type="button" class="sidebar-link" data-go="search"><span class="sidebar-icon" aria-hidden="true">🔍</span>Search</button>
     <p class="sidebar-heading">Subjects</p>
@@ -32,7 +36,12 @@
     <button type="button" class="sidebar-link" data-go="notes"><span class="sidebar-icon" aria-hidden="true">📝</span>My notes</button>
   </nav>
 
+  <!-- Phones: the dimmed page behind the open ☰ menu (tap it to close the menu) -->
+  <div class="menu-backdrop" id="menu-backdrop" hidden></div>
+
   <main class="page">
+    <!-- Phones only: opens the sections menu (the sidebar) -->
+    <button type="button" class="menu-btn" id="menu-btn" aria-label="Menu" aria-controls="sidebar" aria-expanded="false">☰</button>
     <!-- Shown if the questions file can't be loaded -->
     <p class="error" id="load-error" hidden></p>
 

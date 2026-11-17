@@ -344,13 +344,14 @@ body {
    then springs back. The tint is an "inner shadow" laid on top of the button's
    own background, so it works the same on every button color.
    To change the effect, edit --press-scale, --press-shade and --press-time at the top. */
-.btn, .subject-card, .choice, .back-btn, .bookmark-btn, .hl-swatch, .tag-dot, .fb-view-btn, .fb-new-btn {
+.btn, .subject-card, .choice, .back-btn, .bookmark-btn, .hl-swatch, .tag-dot, .fb-view-btn, .fb-new-btn, .menu-btn {
   transition: transform var(--press-time) ease-out, box-shadow var(--press-time) ease-out;
 }
 .btn:active:not(:disabled),
 .subject-card:active,
 .choice:active:not(:disabled),
 .back-btn:active,
+.menu-btn:active,
 .bookmark-btn:active,
 .hl-swatch:active,
 .tag-dot:active,
@@ -361,7 +362,7 @@ body {
 }
 /* If she has asked her phone for less motion: keep the tint, skip the shrinking. */
 @media (prefers-reduced-motion: reduce) {
-  .btn, .subject-card, .choice, .back-btn, .bookmark-btn, .hl-swatch, .tag-dot, .fb-view-btn, .fb-new-btn { --press-scale: 1; }
+  .btn, .subject-card, .choice, .back-btn, .bookmark-btn, .hl-swatch, .tag-dot, .fb-view-btn, .fb-new-btn, .menu-btn { --press-scale: 1; }
 }
 
 /* ---------- Home: subject cards ---------- */
@@ -993,36 +994,78 @@ body.sheet-open { overflow: hidden; }
 }
 
 /* ---------- Sidebar (index.html #sidebar, app.js buildSidebar / updateSidebar) ----------
-   Hidden below 1024px (phones, iPads in portrait). From 1024px (iPad in landscape, Mac):
-   fixed on the left, dark, and the page fills the rest. Because it takes 240px, the
-   side-panel layouts above (case notes, Find in case, 3 home columns) start at 1280px. */
-.sidebar { display: none; }
+   From 1024px (iPad in landscape, Mac): always there, fixed on the left, and the page fills
+   the rest. Because it takes 240px, the side-panel layouts above (case notes, Find in case,
+   3 home columns) start at 1280px.
+   Below 1024px (phones, iPads in portrait): it's the ☰ menu. Hidden off the left edge until
+   she taps ☰ (#menu-btn, top-right of every screen); then it slides in over a dimmed page
+   (body.menu-open, app.js openMenu / closeMenu). */
+.sidebar {
+  display: flex; flex-direction: column; gap: 2px;
+  position: fixed; top: 0; bottom: 0; left: 0; z-index: 60;
+  width: var(--sidebar-width); overflow-y: auto; overscroll-behavior: contain;
+  padding: calc(16px + env(safe-area-inset-top)) 12px calc(20px + env(safe-area-inset-bottom)) calc(12px + env(safe-area-inset-left));
+  background: var(--sidebar-bg); color: var(--sidebar-text);
+}
+.sidebar-top { display: flex; align-items: center; justify-content: space-between; margin: 0 0 10px; min-height: 44px; flex-shrink: 0; }
+.sidebar-title { margin: 0 10px; font-size: 19px; font-weight: 800; letter-spacing: -0.01em; }
+.sidebar-close {
+  width: 44px; height: 44px; flex: 0 0 44px; border: 0; border-radius: 50%;
+  background: transparent; color: var(--sidebar-text); font: inherit; font-size: 20px; cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.sidebar-close:hover { background: var(--sidebar-hover); }
+.sidebar-heading {
+  margin: 18px 10px 6px; font-size: 12px; font-weight: 700; flex-shrink: 0;
+  text-transform: uppercase; letter-spacing: 0.08em; color: var(--sidebar-muted);
+}
+.sidebar-link {
+  display: flex; align-items: center; gap: 10px; width: 100%; min-height: 44px; flex-shrink: 0;
+  padding: 8px 10px; border: 0; border-radius: 8px; background: transparent;
+  color: inherit; font: inherit; font-size: 16px; line-height: 1.3; text-align: left; cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.sidebar-link:hover { background: var(--sidebar-hover); }
+.sidebar-link:active { background: var(--sidebar-current); }
+.sidebar-link:focus-visible, .sidebar-close:focus-visible { outline: 2px solid var(--sidebar-accent); outline-offset: -2px; }
+.sidebar-link[aria-current="page"] { background: var(--sidebar-current); font-weight: 700; box-shadow: inset 3px 0 0 var(--sidebar-accent); }
+.sidebar-icon { flex: 0 0 22px; text-align: center; font-size: 15px; }
+.sidebar-number {
+  height: 22px; border-radius: 50%; border: 1.5px solid var(--sidebar-muted);
+  font-size: 12px; font-weight: 700; line-height: 19px; color: var(--sidebar-muted);
+}
+.sidebar-link[aria-current="page"] .sidebar-number { border-color: var(--sidebar-accent); color: var(--sidebar-accent); }
+
+/* Phones and iPads in portrait: the ☰ menu. */
+@media (max-width: 1023.98px) {
+  .page { position: relative; }
+  .menu-btn {
+    position: absolute; top: calc(16px + env(safe-area-inset-top)); right: 16px; z-index: 5;
+    width: 44px; height: 44px; padding: 0; border: 1px solid var(--border); border-radius: 12px;
+    background: var(--card); color: var(--primary); font: inherit; font-size: 20px; line-height: 1;
+    cursor: pointer; -webkit-tap-highlight-color: transparent;
+  }
+  /* The question screen's "Question 1 of 48" moves left to make room for ☰. */
+  .question-topbar { padding-right: 56px; }
+  .sidebar {
+    width: min(300px, 85vw);
+    transform: translateX(-100%); visibility: hidden;
+    transition: transform 0.22s ease-out, visibility 0s linear 0.22s;
+    box-shadow: 4px 0 24px rgba(0, 0, 0, 0.25);
+  }
+  body.menu-open .sidebar { transform: none; visibility: visible; transition: transform 0.22s ease-out; }
+  body.menu-open { overflow: hidden; }
+  .menu-backdrop { position: fixed; inset: 0; z-index: 55; background: rgba(0, 0, 0, 0.4); }
+}
+@media (max-width: 1023.98px) and (prefers-reduced-motion: reduce) {
+  .sidebar, body.menu-open .sidebar { transition: none; }
+}
+
+/* Wide screens: the sidebar is always there; no ☰, no ✕, no dimmed page. */
 @media (min-width: 1024px) {
   body { padding-left: var(--sidebar-width); }
-  .sidebar {
-    display: flex; flex-direction: column; gap: 2px;
-    position: fixed; top: 0; bottom: 0; left: 0; z-index: 20;
-    width: var(--sidebar-width); overflow-y: auto; overscroll-behavior: contain;
-    padding: calc(20px + env(safe-area-inset-top)) 12px calc(20px + env(safe-area-inset-bottom)) calc(12px + env(safe-area-inset-left));
-    background: var(--sidebar-bg); color: var(--sidebar-text);
-  }
-  .sidebar-title { margin: 0 10px 14px; font-size: 19px; font-weight: 800; letter-spacing: -0.01em; }
-  .sidebar-heading {
-    margin: 18px 10px 6px; font-size: 12px; font-weight: 700;
-    text-transform: uppercase; letter-spacing: 0.08em; color: var(--sidebar-muted);
-  }
-  .sidebar-link {
-    display: flex; align-items: center; gap: 10px; width: 100%; min-height: 40px;
-    padding: 8px 10px; border: 0; border-radius: 8px; background: transparent;
-    color: inherit; font: inherit; font-size: 15px; line-height: 1.3; text-align: left; cursor: pointer;
-  }
-  .sidebar-link:hover { background: var(--sidebar-hover); }
-  .sidebar-link:focus-visible { outline: 2px solid var(--sidebar-accent); outline-offset: -2px; }
-  .sidebar-link[aria-current="page"] { background: var(--sidebar-current); font-weight: 700; box-shadow: inset 3px 0 0 var(--sidebar-accent); }
-  .sidebar-icon { flex: 0 0 22px; text-align: center; font-size: 15px; }
-  .sidebar-number {
-    height: 22px; border-radius: 50%; border: 1.5px solid var(--sidebar-muted);
-    font-size: 12px; font-weight: 700; line-height: 19px; color: var(--sidebar-muted);
-  }
-  .sidebar-link[aria-current="page"] .sidebar-number { border-color: var(--sidebar-accent); color: var(--sidebar-accent); }
+  .sidebar { z-index: 20; padding-top: calc(20px + env(safe-area-inset-top)); }
+  .sidebar-top { min-height: 0; margin-bottom: 14px; }
+  .sidebar-link { min-height: 40px; font-size: 15px; }
+  .menu-btn, .sidebar-close, .menu-backdrop { display: none !important; }
 }

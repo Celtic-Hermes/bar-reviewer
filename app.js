@@ -96,9 +96,39 @@ function updateSidebar() {
   });
 }
 
+// ---------- Phones: the ☰ menu (the same sidebar, sliding in from the left) ----------
+// Opens with ☰. Closes when she picks a section, taps ✕ or the dimmed page, or presses Esc.
+// On wide screens there's no ☰ (the sidebar is always there), so it's never "open".
+const SIDEBAR_ALWAYS = window.matchMedia("(min-width: 1024px)");
+
+function openMenu() {
+  if (SIDEBAR_ALWAYS.matches) { return; }
+  document.body.classList.add("menu-open");
+  document.getElementById("menu-backdrop").hidden = false;
+  document.getElementById("menu-btn").setAttribute("aria-expanded", "true");
+  document.getElementById("sidebar-close").focus();
+}
+
+function closeMenu(returnFocus) {
+  if (!document.body.classList.contains("menu-open")) { return; }
+  document.body.classList.remove("menu-open");
+  document.getElementById("menu-backdrop").hidden = true;
+  document.getElementById("menu-btn").setAttribute("aria-expanded", "false");
+  if (returnFocus) { document.getElementById("menu-btn").focus(); }
+}
+
+document.getElementById("menu-btn").addEventListener("click", openMenu);
+document.getElementById("sidebar-close").addEventListener("click", function () { closeMenu(true); });
+document.getElementById("menu-backdrop").addEventListener("click", function () { closeMenu(true); });
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") { closeMenu(true); }
+});
+SIDEBAR_ALWAYS.addEventListener("change", function () { closeMenu(false); });  // e.g. iPad turned sideways
+
 document.getElementById("sidebar").addEventListener("click", function (event) {
   const link = event.target.closest(".sidebar-link");
   if (!link) { return; }
+  closeMenu(false);
   const go = link.dataset.go;
   if (go === "home") {
     showScreen("screen-home");
