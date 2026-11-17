@@ -117,14 +117,11 @@ body {
   -webkit-hyphens: auto;
   hyphens: auto;
 }
-/* With typing boxes in the line (fill in the blank), no stretching: it leaves big gaps.
-   Lines are a little further apart, so boxes on lines above each other don't touch
-   (every line gets the same spacing, so it stays even). */
+/* With typing boxes in the line (fill in the blank): still justified like all reading
+   text (from the rule above). Lines are a little further apart, so boxes on lines above
+   each other don't touch (every line gets the same spacing, so it stays even). */
 .reading-text:has(input) {
   line-height: 1.8;
-  text-align: left;
-  -webkit-hyphens: manual;
-  hyphens: manual;
 }
 
 /* ---------- Highlighter: tap a word to highlight it ---------- */
