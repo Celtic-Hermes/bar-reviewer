@@ -48,7 +48,6 @@
   --sidebar-current: rgba(255, 255, 255, 0.14);
   --sidebar-accent: #8fb0ea;
   --sidebar-width: 240px;
-  --section-label: #9a6a00;  /* gold: a section's label ("SEC. 4.") */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -78,7 +77,6 @@
     --tag-green: #4cc285;  --tag-yellow: #f2c94c;  --tag-red: #f07167;  --tag-check: #15171b;
     --press-shade: rgba(255, 255, 255, 0.10);  /* in dark mode, a light tint shows better */
     --sidebar-bg: #0e1013;
-    --section-label: #e3b54a;
   }
 }
 
@@ -145,7 +143,7 @@ body {
 /* With typing boxes in the line (fill in the blank): still justified like all reading
    text (from the rule above). Lines are a little further apart, so boxes on lines above
    each other don't touch (every line gets the same spacing, so it stays even). */
-/* A section's heading row ("SECTION 1." in gold + "Petition" in bold), a thin divider, then the content
+/* A section's heading row ("SECTION 1." + "Petition", both bold, one color), a thin divider, then the content
    (app.js: splitSectionHeading / richText). The dash after the heading is kept in the text,
    so her highlights stay on the same words, but never shown. Applies to every section,
    wherever it's shown: fill in the blank (Quiz, Show answer, Read) and a rule's full text. */
@@ -153,7 +151,7 @@ body {
   display: block; margin-bottom: 10px; padding-bottom: 8px;
   border-bottom: 1px solid var(--border);  /* the thin divider between heading and content */
 }
-.section-label { font-weight: 700; color: var(--section-label); }  /* "SEC. 4." in gold */
+.section-label { font-weight: 700; color: var(--text); }  /* "SEC. 4.": bold, same color as the title */
 .section-title { font-weight: 700; }                                /* "No Docket Fees" in bold */
 .section-sep { display: none; }
 

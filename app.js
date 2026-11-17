@@ -2576,7 +2576,7 @@ function splitSectionHeading(text) {
   return { heading: m[1], sep: m[2], body: text.slice(m[0].length) };
 }
 
-// The heading's label ("SEC. 4.", shown in gold) and its title ("No Docket Fees.", bold).
+// The heading's label ("SEC. 4.") and its title ("No Docket Fees."), both bold, in the text color.
 const SECTION_LABEL = /^((?:SECTION|Section|SEC\.|Sec\.|ARTICLE|Article|ART\.|Art\.)\s+\d+\s*\.)(\s+)(\S[\s\S]*)$/;
 
 // The title's final period isn't shown ("No Docket Fees", not "No Docket Fees."), but it
