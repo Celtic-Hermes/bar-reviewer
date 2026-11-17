@@ -4641,5 +4641,113 @@
       "part": "Rule 19, Section 3 (Resolution)",
       "excerpt": "Section 3. Resolution. - The court shall grant the motion if the accused establishes in the summary hearing that the criminal case has been filed with intent to harass, vex, exert undue pressure or stifle any legal recourse that any person, institution or the government has taken or may take in the enforcement of environmental laws, protection of the environment or assertion of environmental rights.\n\nIf the court denies the motion, the court shall immediately proceed with the arraignment of the accused."
     }
+  },
+  {
+    "id": "q-0228",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 1. Applicability. - When there is a ____ in establishing a ____, the court shall apply the ____ in resolving the case before it.\n\nThe constitutional right of the people to a balanced and healthful ecology shall be given the ____.",
+    "fullText": "Section 1. Applicability. - When there is a lack of full scientific certainty in establishing a causal link between human activity and environmental effect, the court shall apply the precautionary principle in resolving the case before it.\n\nThe constitutional right of the people to a balanced and healthful ecology shall be given the benefit of the doubt.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 20, Section 1 (Applicability)",
+      "excerpt": "Section 1. Applicability. - When there is a lack of full scientific certainty in establishing a causal link between human activity and environmental effect, the court shall apply the precautionary principle in resolving the case before it.\n\nThe constitutional right of the people to a balanced and healthful ecology shall be given the benefit of the doubt."
+    }
+  },
+  {
+    "id": "q-0229",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 2. Standards for application. - In applying the precautionary principle, the following factors, among others, may be considered: (1) ____; (2) ____; or (3) ____ of the environmental rights of those affected.",
+    "fullText": "Section 2. Standards for application. - In applying the precautionary principle, the following factors, among others, may be considered: (1) threats to human life or health; (2) inequity to present or future generations; or (3) prejudice to the environment without legal consideration of the environmental rights of those affected.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 20, Section 2 (Standards for application)",
+      "excerpt": "Section 2. Standards for application. - In applying the precautionary principle, the following factors, among others, may be considered: (1) threats to human life or health; (2) inequity to present or future generations; or (3) prejudice to the environment without legal consideration of the environmental rights of those affected."
+    }
+  },
+  {
+    "id": "q-0230",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 1. Photographic, video and similar evidence. - Photographs, videos and similar evidence of events, acts, transactions of wildlife, wildlife by-products or derivatives, forest products or mineral resources subject of a case shall be ____ when authenticated by the ____, by ____, or by any other person ____.",
+    "fullText": "Section 1. Photographic, video and similar evidence. - Photographs, videos and similar evidence of events, acts, transactions of wildlife, wildlife by-products or derivatives, forest products or mineral resources subject of a case shall be admissible when authenticated by the person who took the same, by some other person present when said evidence was taken, or by any other person competent to testify on the accuracy thereof.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 21, Section 1 (Photographic, video and similar evidence)",
+      "excerpt": "Section 1. Photographic, video and similar evidence. - Photographs, videos and similar evidence of events, acts, transactions of wildlife, wildlife by-products or derivatives, forest products or mineral resources subject of a case shall be admissible when authenticated by the person who took the same, by some other person present when said evidence was taken, or by any other person competent to testify on the accuracy thereof."
+    }
+  },
+  {
+    "id": "q-0231",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 2. Entries in official records. - Entries in official records made in the performance of his duty by a ____, or by a person in performance of a ____, are ____ of the facts therein stated.",
+    "fullText": "Section 2. Entries in official records. - Entries in official records made in the performance of his duty by a public officer of the Philippines, or by a person in performance of a duty specially enjoined by law, are prima facie evidence of the facts therein stated.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 21, Section 2 (Entries in official records)",
+      "excerpt": "Section 2. Entries in official records. - Entries in official records made in the performance of his duty by a public officer of the Philippines, or by a person in performance of a duty specially enjoined by law, are prima facie evidence of the facts therein stated."
+    }
+  },
+  {
+    "id": "q-0232",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 1. Effectivity. - These Rules shall take effect within ____ following publication ____.",
+    "fullText": "Section 1. Effectivity. - These Rules shall take effect within fifteen (15) days following publication once in a newspaper of general circulation.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 22, Section 1 (Effectivity)",
+      "excerpt": "Section 1. Effectivity. - These Rules shall take effect within fifteen (15) days following publication once in a newspaper of general circulation."
+    }
+  },
+  {
+    "id": "q-0233",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 2. Application of the Rules of Court. - The Rules of Court shall apply in a ____, except as otherwise provided herein.",
+    "fullText": "Section 2. Application of the Rules of Court. - The Rules of Court shall apply in a suppletory manner, except as otherwise provided herein.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 22, Section 2 (Application of the Rules of Court)",
+      "excerpt": "Section 2. Application of the Rules of Court. - The Rules of Court shall apply in a suppletory manner, except as otherwise provided herein."
+    }
   }
 ]

@@ -30,11 +30,11 @@ Topics so far (use these exact names):
 - Remedial Law → **Special Proceedings** → sub-topic **Writ of Amparo** (fill-in-the-blank items, one per section of A.M. No. 07-9-12-SC, q-0056 to q-0082)
 - Remedial Law → **Special Proceedings** → sub-topic **Custody of Minors and Habeas Corpus** (fill-in-the-blank items, one per section of A.M. No. 03-04-04-SC, q-0083 to q-0104)
 - Remedial Law → **Special Proceedings** → sub-topic **Writ of Habeas Data** (fill-in-the-blank items, one per section of A.M. No. 08-1-16-SC, q-0105 to q-0129)
-- Remedial Law → **Special Proceedings** → the **Rules of Procedure for Environmental Cases** (A.M. No. 09-6-8-SC, 104 sections in 22 Rules, one fill-in-the-blank item per section, q-0130 onward in the rule's own order; section numbers restart in each Rule, so `source.part` says "Rule 7, Section 3 (…)"), split into four sub-topics:
-  - **Writ of Kalikasan** (Rule 7)
-  - **Writ of Continuing Mandamus** (Rule 8)
-  - **TEPO** (Rule 2 Sections 8–11, and Rule 13 Section 2)
-  - **Environmental Cases (General Rules)** (everything else)
+- Remedial Law → **Special Proceedings** → the **Rules of Procedure for Environmental Cases** (A.M. No. 09-6-8-SC, 104 sections in 22 Rules, one fill-in-the-blank item per section, q-0130 to q-0233 in the rule's own order; section numbers restart in each Rule, so `source.part` says "Rule 7, Section 3 (…)"), split into four sub-topics:
+  - **Writ of Kalikasan** (Rule 7, 17 items)
+  - **Writ of Continuing Mandamus** (Rule 8, 8 items)
+  - **TEPO** (Rule 2 Sections 8–11, and Rule 13 Section 2: 5 items)
+  - **Environmental Cases (General Rules)** (everything else: 74 items)
 
 ### Miscellaneous section
 Below the 8 subjects, the home screen has a **Miscellaneous** section for extra subjects that are not bar subjects (listed in `MISC_SUBJECTS` in `app.js`). It is **empty for now** and shows a "Nothing here yet" note; keep the section in place for future content.
