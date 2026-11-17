@@ -1175,6 +1175,58 @@ function pickHiddenWords(level) {
   return picked.sort(function (a, b) { return a - b; });
 }
 
+// Can "New blanks" hide different words at this level? Not at Key Legal Terms (always
+// all the key terms), not at Light when the item has 3 key terms or fewer (all of them
+// are always picked), and not at the higher levels when no other word could be picked.
+function canPickNewBlanks(level) {
+  if (!fbInfo.usable || level === "key") { return false; }
+  const blanks = fbInfo.words.filter(function (w) { return w.isBlank; }).length;
+  if (level === "light") { return blanks > FB_LIGHT_MOST; }
+  const extras = fbInfo.hidden.filter(function (n) { return !fbInfo.words[n].isBlank; }).length;
+  const candidates = fbInfo.words.filter(function (w) { return !w.isBlank && canHideWord(w.text); }).length;
+  return extras > 0 && extras < candidates;
+}
+
+// Why "New blanks" can't change anything here (shown if she taps it anyway).
+function noNewBlanksReason(level) {
+  if (level === "key") {
+    return "Key Legal Terms always hides the same key terms. Pick another level to get different blanks.";
+  }
+  if (level === "light") {
+    return "This section has only a few key terms, and Light already hides all of them.";
+  }
+  return "There are no other words to hide at this level in this section.";
+}
+
+// Show the "New blanks" button as available or grayed out.
+function showNewBlanksButton() {
+  const button = document.getElementById("fb-new");
+  const available = !session.current.answerShown && canPickNewBlanks(session.current.fbLevel);
+  button.classList.toggle("off", !available);
+  button.setAttribute("aria-disabled", available ? "false" : "true");
+}
+
+// "New blanks": the same level, but different words hidden (never the same set again
+// if there's any other choice). What she typed stays in boxes that are still hidden.
+document.getElementById("fb-new").addEventListener("click", function () {
+  const note = document.getElementById("fb-new-note");
+  const level = session.current.fbLevel;
+  if (session.current.answerShown) { return; }
+  if (!canPickNewBlanks(level)) {
+    note.textContent = noNewBlanksReason(level);
+    note.hidden = false;
+    return;
+  }
+  note.hidden = true;
+  const before = fbInfo.hidden.join(",");
+  let picked = pickHiddenWords(level);
+  for (let tries = 0; tries < 20 && picked.join(",") === before; tries++) {
+    picked = pickHiddenWords(level);
+  }
+  applyFbLevel(session.questions[session.index], level, picked);
+  rememberSpot();
+});
+
 // How many words of the full text are hidden (a key-term blank can stand for several words).
 function hiddenWordCount(hidden) {
   return hidden.reduce(function (sum, n) {
@@ -1274,6 +1326,8 @@ function applyFbLevel(question, level, hidden) {
   session.current.fbHidden = clean;
   session.current.fbTyped = typed;
   document.getElementById("fb-level-select").value = level;
+  document.getElementById("fb-new-note").hidden = true;
+  showNewBlanksButton();
 
   // The full text for "Show answer", with every hidden word in bold.
   const full = typeof question.fullText === "string" ? question.fullText : "";
@@ -1371,6 +1425,8 @@ function revealFillBlank() {
   document.getElementById("fb-answer-area").hidden = false;
   document.getElementById("fb-show").hidden = true;
   document.getElementById("fb-level-select").disabled = true;
+  session.current.answerShown = true;
+  showNewBlanksButton();  // grayed out once the answer is showing
   document.getElementById("find-btn").hidden = false;  // she has answered: "Find in case" is allowed now
 }
 
