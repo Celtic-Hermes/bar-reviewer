@@ -598,6 +598,10 @@
         <div class="setting-text"><label class="setting-label" for="task-minutes">Time</label><p class="setting-desc">Optional, in minutes.</p></div>
         <div class="setting-control"><input type="number" id="task-minutes" inputmode="numeric" min="1" max="999" step="1" placeholder="30"></div>
       </div>
+      <div class="setting-row">
+        <div class="setting-text"><label class="setting-label" for="task-link">Opens</label><p class="setting-desc">Optional. Tapping the task's title opens this subject or topic.</p></div>
+        <div class="setting-control setting-control-wide"><select id="task-link"></select></div>
+      </div>
       <p class="task-error" id="task-error" role="alert" hidden></p>
       <div class="dialog-buttons">
         <button type="button" class="btn btn-secondary" id="task-cancel">Cancel</button>

@@ -1320,6 +1320,12 @@ function makeTaskCard(key, task, index) {
   title.dataset.date = key;
   title.dataset.index = String(index);
   title.textContent = task.t;
+  const link = taskLinkTarget(task.l);
+  if (link) {
+    title.classList.add("is-link");
+    title.append(" ›");
+    title.setAttribute("aria-label", task.t + ". Opens " + link.label);
+  }
   if (task.s) {
     const subject = document.createElement("span");
     subject.className = "task-subject";
@@ -1354,7 +1360,10 @@ document.getElementById("schedule-days").addEventListener("click", function (eve
   const day = scheduleDay(key);
   if (target.dataset.action === "add") {
     openTaskDialog(key, null);
-  } else if (target.dataset.action === "edit" || target.dataset.action === "title") {
+  } else if (target.dataset.action === "title") {
+    const link = taskLinkTarget((day.tasks[index] || {}).l);
+    if (link) { link.open(); } else { openTaskDialog(key, index); }
+  } else if (target.dataset.action === "edit") {
     openTaskDialog(key, index);
   } else if (target.dataset.action === "off") {
     setScheduleDay(key, day.tasks, !day.off);
@@ -1375,6 +1384,62 @@ document.getElementById("schedule-days").addEventListener("change", function (ev
   setScheduleDay(key, tasks, day.off);
   showSchedule();
 });
+
+// --- Links: what a task's title can open ("subject:<name>" or "topic:<subject>|<topic>") ---
+// Returns { label, open } if it points to something in the app, or null (none, or no longer there).
+function taskLinkTarget(link) {
+  if (typeof link !== "string") { return null; }
+  if (link.indexOf("subject:") === 0) {
+    const subject = link.slice(8);
+    if (SUBJECTS.concat(MISC_SUBJECTS).indexOf(subject) === -1) { return null; }
+    return { label: subject, open: function () { openSubject(subject); } };
+  }
+  if (link.indexOf("topic:") === 0) {
+    const parts = link.slice(6).split("|");
+    const subject = parts[0];
+    const topic = parts.slice(1).join("|");
+    if (topicsFor(subject).indexOf(topic) === -1) { return null; }
+    return {
+      label: subject + " · " + topic,
+      open: function () {
+        currentSubject = subject;
+        if (subtopicsFor(subject, topic).length > 0) { openSubtopics(topic); } else { openTopic(topic); }
+      }
+    };
+  }
+  return null;
+}
+
+// The "Opens" choices: None, then each subject and its topics.
+function fillTaskLinkChoices(select, current) {
+  select.innerHTML = "";
+  const none = document.createElement("option");
+  none.value = "";
+  none.textContent = "None";
+  select.appendChild(none);
+  SUBJECTS.concat(MISC_SUBJECTS).forEach(function (subject) {
+    const group = document.createElement("optgroup");
+    group.label = subject;
+    const whole = document.createElement("option");
+    whole.value = "subject:" + subject;
+    whole.textContent = subject + " (whole subject)";
+    group.appendChild(whole);
+    topicsFor(subject).forEach(function (topic) {
+      const option = document.createElement("option");
+      option.value = "topic:" + subject + "|" + topic;
+      option.textContent = topic;
+      group.appendChild(option);
+    });
+    select.appendChild(group);
+  });
+  if (current && !taskLinkTarget(current)) {  // points to something no longer in the app: kept unless changed
+    const gone = document.createElement("option");
+    gone.value = current;
+    gone.textContent = current.replace(/^(subject|topic):/, "").replace("|", " · ") + " (no longer in the app)";
+    select.appendChild(gone);
+  }
+  select.value = current || "";
+}
 
 // --- The task dialog: add (index null) or edit (index = its place in the day) ---
 let taskEditing = null;  // { date, index }
@@ -1402,6 +1467,7 @@ function openTaskDialog(key, index) {
   document.getElementById("task-title").value = task ? task.t : "";
   subject.value = task && task.s ? task.s : "";
   document.getElementById("task-minutes").value = task && task.m ? String(task.m) : "";
+  fillTaskLinkChoices(document.getElementById("task-link"), task && task.l ? task.l : "");
   document.getElementById("task-error").hidden = true;
   document.getElementById("task-delete").hidden = !task;
   document.getElementById("task-backdrop").hidden = false;
@@ -1440,7 +1506,8 @@ document.getElementById("task-form").addEventListener("submit", function (event)
   if (before.d) { task.d = 1; }  // editing keeps it done
   const subject = document.getElementById("task-subject").value;
   if (subject) { task.s = subject; }
-  if (before.l) { task.l = before.l; }
+  const link = document.getElementById("task-link").value;
+  if (link) { task.l = link; }
   if (taskEditing.index === null) {
     if (tasks.length >= SCHEDULE_TASKS_MAX) { taskError("A day can have at most " + SCHEDULE_TASKS_MAX + " tasks."); return; }
     tasks.push(task);

@@ -1271,3 +1271,7 @@ body.dialog-open { overflow: hidden; }
 }
 .day-off-btn[aria-pressed="true"] { background: var(--primary); border-color: var(--primary); color: var(--on-primary); font-weight: 700; }
 .add-task-btn { margin: 8px 0 -4px; }
+.setting-control-wide select { width: 100%; }
+/* A task linked to a subject or topic: its title looks like a link (tap opens it). */
+.task-title-btn.is-link { color: var(--primary-text); font-weight: 600; }
+.task-card.done .task-title-btn.is-link { color: var(--muted); }
