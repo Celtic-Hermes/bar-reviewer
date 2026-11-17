@@ -684,6 +684,16 @@ body {
 .source-link { color: var(--primary); font-weight: 600; overflow-wrap: anywhere; }
 .source-note { display: block; margin-top: 6px; font-size: 14px; color: var(--muted); overflow-wrap: anywhere; }
 
+/* "Look it up online" (makeLookupOnline in app.js): a web search link, or an offline note.
+   a.btn: a link that looks like the shared buttons. .btn-small: the lighter version (still
+   44px tall, the smallest comfortable tap size on a phone). */
+a.btn { text-align: center; text-decoration: none; }
+.btn-small { min-height: 44px; padding: 10px 14px; font-size: 15px; margin-bottom: 0; }
+.online-lookup { margin-top: 16px; }
+.lookup-offline { margin: 0; padding: 12px 14px; border: 2px dashed var(--muted); border-radius: 12px;
+  font-size: 15px; font-weight: 600; color: var(--muted); text-align: center; }
+.lookup-note { margin: 8px 0 0; font-size: 13px; color: var(--muted); }
+
 /* "Full text of the decision" (loaded only when she taps the button) */
 #full-text-btn { margin-bottom: 0; }
 .full-text-note { margin: 12px 0 0; font-size: 15px; color: var(--muted); white-space: pre-line; }

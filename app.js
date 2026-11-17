@@ -2771,6 +2771,64 @@ function caseText(value) {
   return (typeof value === "string" && value.trim()) ? value : "Not available yet.";
 }
 
+// ---------- "Look it up online" ----------
+// A link to an ordinary web search for a case on LawPhil, e.g. "G.R. No. 202666" site:lawphil.net.
+// Only a link she taps herself: the app never downloads anything from those sites, and
+// never guesses a site's own page addresses (a search keeps working if a site reorganizes).
+// It opens in a new tab, so the app stays where it was.
+// Offline, the link is replaced by "You're offline. This needs internet." (and comes back
+// by itself when she's online again).
+// Used on the case screen ("Find the official text online"); search will use it too.
+const LOOKUP_SITE = "lawphil.net";
+
+function lookupSearchUrl(words) {
+  return "https://www.google.com/search?q=" +
+    encodeURIComponent("\"" + words.replace(/"/g, "") + "\" site:" + LOOKUP_SITE);
+}
+
+// words: the G.R. number (best) or the case title. small: the lighter, smaller version.
+// Returns the block to add to the page, or null if there's nothing to look up.
+function makeLookupOnline(words, label, small) {
+  words = typeof words === "string" ? words.trim() : "";
+  if (!words) { return null; }
+  const block = document.createElement("div");
+  block.className = "online-lookup";
+  const link = document.createElement("a");
+  link.className = "btn btn-secondary" + (small ? " btn-small" : "");
+  link.href = lookupSearchUrl(words);
+  link.target = "_blank";
+  link.rel = "noopener";
+  link.textContent = label;
+  const offline = document.createElement("p");
+  offline.className = "lookup-offline";
+  offline.textContent = "You're offline. This needs internet.";
+  const note = document.createElement("p");
+  note.className = "lookup-note";
+  note.textContent = "Always check the official text. The app may not have every decision.";
+  // If the connection dropped since the screen was drawn, show the message instead of opening.
+  link.addEventListener("click", function (event) {
+    if (navigator.onLine === false) {
+      event.preventDefault();
+      showLookupState();
+    }
+  });
+  block.append(link, offline, note);
+  showLookupState(block);
+  return block;
+}
+
+// Show the link or the offline message, in one block or in every block on the page.
+function showLookupState(oneBlock) {
+  const offline = navigator.onLine === false;
+  const blocks = oneBlock ? [oneBlock] : document.querySelectorAll(".online-lookup");
+  blocks.forEach(function (block) {
+    block.querySelector("a").hidden = offline;
+    block.querySelector(".lookup-offline").hidden = !offline;
+  });
+}
+window.addEventListener("online", function () { showLookupState(); });
+window.addEventListener("offline", function () { showLookupState(); });
+
 function openCase(theCase, cameFrom) {
   caseCameFrom = cameFrom;
   if (cameFrom !== "question") { caseHome = cameFrom; }
@@ -2808,6 +2866,10 @@ function openCase(theCase, cameFrom) {
   } else {
     source.textContent = url || "Not available yet.";
   }
+  const lookup = document.getElementById("case-lookup");
+  lookup.innerHTML = "";
+  const lookupLink = makeLookupOnline(theCase.grNumber || theCase.name, "Find the official text online", true);
+  if (lookupLink) { lookup.appendChild(lookupLink); }
 
   resetFullText();
   showCaseQuestions(theCase);

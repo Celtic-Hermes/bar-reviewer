@@ -42,6 +42,11 @@ Topics so far (use these exact names):
 ### Read the full rule
 On a topic or sub-topic screen, **📖 Read the full rule** (under Start practice) appears automatically when **all** of that (sub-)topic's questions share one `source.grNumber` and `data/rules.json` lists a rule with that `number`. (So "All of Special Proceedings", which mixes rules, has no button, and all four Environmental Rules sub-topics open the whole Environmental Rules.) It opens the rule screen: title, number, Unverified label, the pinned highlighter colors, then each section in its own card with its heading in bold, and PART / RULE headings between the cards; then the source. The text is downloaded only then, and kept on the phone for offline use.
 
+### Look it up online
+`makeLookupOnline(words, label, small)` in `app.js` makes a link to an ordinary Google search restricted to LawPhil (`"G.R. No. 202666" site:lawphil.net`; the G.R./A.C. number, or the case name if there's none), opening in a new tab (`target="_blank" rel="noopener"`), with the note "Always check the official text. The app may not have every decision." Offline, the link is replaced by "You're offline. This needs internet." (it switches back by itself when she's online). The app never fetches anything from those sites and never guesses their page addresses. Styles: the shared `btn btn-secondary` (+ `btn-small` for the lighter version, still 44px tall), `.online-lookup`, `.lookup-offline`, `.lookup-note`.
+- **Case screen:** "Find the official text online" (small version) in the Source card.
+- **Search (not built yet):** when nothing matches, "Not in the app yet" with a "Look it up online" button (full size) for what she typed.
+
 ### Miscellaneous section
 Below the 8 subjects, the home screen has a **Miscellaneous** section for extra subjects that are not bar subjects (listed in `MISC_SUBJECTS` in `app.js`). It is **empty for now** and shows a "Nothing here yet" note; keep the section in place for future content.
 - Communication Law is **not** a Miscellaneous subject anymore: it is a topic under Mercantile Law.
