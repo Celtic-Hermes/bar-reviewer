@@ -431,6 +431,12 @@ def check_leftover_files(folder, known_ids):
 SHOW_AT_MOST = 50
 
 
+def next_id(by_id, prefix):
+    """The ID after the highest one in use, like q-0256 (IDs are never reused)."""
+    highest = max([int(i.split("-")[1]) for i in by_id] or [0])
+    return "%s-%04d" % (prefix, highest + 1)
+
+
 def print_list(lines, show_all):
     """Print the list; if it's very long, only the first 50 (run with --all to see every line)."""
     shown = lines if show_all else lines[:SHOW_AT_MOST]
@@ -453,6 +459,8 @@ def main():
         check_leftover_files("rule-texts", rules_by_id)
 
     print("Checked %d questions, %d cases, %d rules." % (len(questions_by_id), len(cases_by_id), len(rules_by_id)))
+    print("Next free IDs: %s, %s, %s" % (next_id(questions_by_id, "q"), next_id(cases_by_id, "case"),
+                                         next_id(rules_by_id, "rule")))
     print()
     show_all = "--all" in sys.argv
     if checks:
