@@ -35,6 +35,7 @@ Topics so far (use these exact names):
   - **Writ of Continuing Mandamus** (Rule 8, 8 items)
   - **TEPO** (Rule 2 Sections 8–11, and Rule 13 Section 2: 5 items)
   - **Environmental Cases (General Rules)** (everything else: 74 items)
+- Remedial Law → **Special Proceedings** → sub-topic **Escheats (Rule 91)** (fill-in-the-blank items, one per section of Rule 91 of the Rules of Court, q-0234 to q-0238)
 
 ### Miscellaneous section
 Below the 8 subjects, the home screen has a **Miscellaneous** section for extra subjects that are not bar subjects (listed in `MISC_SUBJECTS` in `app.js`). It is **empty for now** and shows a "Nothing here yet" note; keep the section in place for future content.
