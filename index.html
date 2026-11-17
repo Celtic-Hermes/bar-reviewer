@@ -153,8 +153,13 @@
 
       <section class="card">
         <h2 class="label" id="question-label">Question</h2>
+        <!-- Fill in the blank: Quiz (blanks to type in) or Read (the whole section, plain) -->
+        <div class="fb-view" id="fb-view" role="group" aria-label="View" hidden>
+          <button class="fb-view-btn" data-view="quiz" aria-pressed="true">Quiz</button>
+          <button class="fb-view-btn" data-view="read" aria-pressed="false">Read</button>
+        </div>
         <!-- Fill in the blank: how much of the text is hidden -->
-        <div class="fb-level" id="fb-level" hidden>
+        <div class="fb-level fb-quiz-only" id="fb-level" hidden>
           <label class="fb-level-title" for="fb-level-select">Blanks</label>
           <select class="fb-level-select" id="fb-level-select">
             <option value="light">Light (2–3 blanks)</option>
@@ -164,9 +169,11 @@
             <option value="verbatim">Verbatim Bar Mode (~75%)</option>
           </select>
         </div>
-        <p class="prompt reading-text" id="prompt"></p>
-        <p class="fb-level-note" id="fb-level-note" hidden></p>
-        <button class="find-btn" id="find-btn" hidden>🔍 Find in case</button>
+        <p class="prompt reading-text fb-quiz-only" id="prompt"></p>
+        <!-- Read view: this section's full text, no blanks, nothing graded -->
+        <p class="prompt reading-text" id="fb-read" hidden></p>
+        <p class="fb-level-note fb-quiz-only" id="fb-level-note" hidden></p>
+        <button class="find-btn fb-quiz-only" id="find-btn" hidden>🔍 Find in case</button>
       </section>
 
       <!-- Multiple-choice parts (hidden for essays) -->
@@ -181,7 +188,7 @@
       </div>
 
       <!-- Fill-in-the-blank parts (only for fill-in-the-blank) -->
-      <div id="fill-area" hidden>
+      <div class="fb-quiz-only" id="fill-area" hidden>
         <button class="btn btn-primary" id="fb-show" hidden>Show answer</button>
         <div id="fb-answer-area" hidden>
           <section class="card">
@@ -294,6 +301,8 @@
     <section id="screen-results" hidden>
       <h1 class="screen-title">Results</h1>
       <p class="screen-subtitle" id="results-subject"></p>
+
+      <p class="card empty-note" id="results-none" hidden>Nothing was scored in this round. (Sections read in Read mode aren't scored.)</p>
 
       <section class="card" id="results-mcq">
         <h2 class="label">Multiple choice</h2>

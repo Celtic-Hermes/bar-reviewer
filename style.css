@@ -246,6 +246,15 @@ body {
 }
 .fb-level-select:disabled { opacity: 0.6; }
 .fb-level-note { margin: 12px 0 0; font-size: 14px; color: var(--muted); }
+/* Fill in the blank: the Quiz / Read switch (two halves of one rounded bar). */
+.fb-view { display: grid; grid-template-columns: 1fr 1fr; margin: 0 0 14px; border: 2px solid var(--primary); border-radius: 10px; overflow: hidden; }
+.fb-view-btn {
+  padding: 9px 6px; border: none; background: var(--card); color: var(--primary);
+  font: inherit; font-size: 16px; font-weight: 600; cursor: pointer; -webkit-tap-highlight-color: transparent;
+}
+.fb-view-btn[aria-pressed="true"] { background: var(--primary); color: var(--primary-text); }
+/* Read view: hide every part of the quiz (marked fb-quiz-only in index.html). */
+.fb-reading .fb-quiz-only { display: none !important; }
 /* After "Show answer": Got it / Missed it, styled like the essay buttons.
    (Their own class, not .btn-rate: the essay rating buttons' code listens to .btn-rate.) */
 .fb-ratings { grid-template-columns: repeat(2, 1fr); }
@@ -300,7 +309,7 @@ body {
    then springs back. The tint is an "inner shadow" laid on top of the button's
    own background, so it works the same on every button color.
    To change the effect, edit --press-scale, --press-shade and --press-time at the top. */
-.btn, .subject-card, .choice, .back-btn, .bookmark-btn, .hl-swatch, .tag-dot {
+.btn, .subject-card, .choice, .back-btn, .bookmark-btn, .hl-swatch, .tag-dot, .fb-view-btn {
   transition: transform var(--press-time) ease-out, box-shadow var(--press-time) ease-out;
 }
 .btn:active:not(:disabled),
@@ -309,13 +318,14 @@ body {
 .back-btn:active,
 .bookmark-btn:active,
 .hl-swatch:active,
-.tag-dot:active {
+.tag-dot:active,
+.fb-view-btn:active {
   transform: scale(var(--press-scale));
   box-shadow: inset 0 0 0 100vmax var(--press-shade);
 }
 /* If she has asked her phone for less motion: keep the tint, skip the shrinking. */
 @media (prefers-reduced-motion: reduce) {
-  .btn, .subject-card, .choice, .back-btn, .bookmark-btn, .hl-swatch, .tag-dot { --press-scale: 1; }
+  .btn, .subject-card, .choice, .back-btn, .bookmark-btn, .hl-swatch, .tag-dot, .fb-view-btn { --press-scale: 1; }
 }
 
 /* ---------- Home: subject cards ---------- */

@@ -79,6 +79,7 @@ function rememberSpot() {
       ratings: session.ratings,
       fbAnswered: session.fbAnswered,  // fill-in-the-blank: how many rated this round
       fbCorrect: session.fbCorrect,    // ...and how many of those were "Got it"
+      fbView: session.fbView,          // fill in the blank: "quiz" or "read"
       current: session.current,  // what she's done on this question: her pick, or answer shown, rating, checked key points
       practiceCaseId: practiceCase ? practiceCase.id : null
     };
@@ -189,7 +190,8 @@ function putBackRound(round) {
       "Missed it": wholeNumberOrZero(ratings["Missed it"])
     },
     fbAnswered: wholeNumberOrZero(round.fbAnswered),
-    fbCorrect: wholeNumberOrZero(round.fbCorrect)
+    fbCorrect: wholeNumberOrZero(round.fbCorrect),
+    fbView: round.fbView === "read" ? "read" : "quiz"
   };
   showQuestion();
   putBackCurrent(round.current);
@@ -827,7 +829,8 @@ function startPractice() {
     mcqTotal: 0,
     ratings: { "Got it": 0, "Partly": 0, "Missed it": 0 },
     fbAnswered: 0,
-    fbCorrect: 0
+    fbCorrect: 0,
+    fbView: "quiz"  // a new round starts in Quiz; Read stays on for the round once picked
   };
   showQuestion();
 }
@@ -875,6 +878,7 @@ function showQuestion() {
   } else {
     showEssay(question);
   }
+  applyFbView();
 
   showScreen("screen-question");
 }
@@ -1079,10 +1083,45 @@ function showFillBlank(question) {
     b.disabled = false;
   });
 
+  // The Read view: the section's full text, exactly as stored.
+  setRichText(document.getElementById("fb-read"),
+    typeof question.fullText === "string" && question.fullText.trim()
+      ? question.fullText : "The full text for this item hasn't been added yet.");
+
   let level = loadFbLevel();
   if (FB_LEVELS.indexOf(level) === -1) { level = FB_DEFAULT_LEVEL; }
   applyFbLevel(question, level, pickHiddenWords(level));
 }
+
+// --- Fill in the blank: Quiz or Read ---
+// Read shows this item's section (its fullText) as plain reading text: no blanks, no
+// boxes, nothing graded, and "Next" is there right away. Each item is one section, so
+// sections are never merged. The choice stays for the rest of the round (Next keeps
+// her in Read), and switching back to Quiz finds the quiz just as she left it.
+// In Read, everything marked fb-quiz-only in index.html is hidden by style.css.
+function applyFbView() {
+  const question = session.questions[session.index];
+  const isFill = question.type === "fillblank";
+  const reading = isFill && session.fbView === "read";
+  document.getElementById("screen-question").classList.toggle("fb-reading", reading);
+  document.getElementById("fb-view").hidden = !isFill;
+  document.getElementById("fb-read").hidden = !reading;
+  document.querySelectorAll(".fb-view-btn").forEach(function (button) {
+    button.setAttribute("aria-pressed", button.dataset.view === (reading ? "read" : "quiz") ? "true" : "false");
+  });
+  if (isFill) {
+    // Quiz: Next only after she rates. Read: Next right away.
+    document.getElementById("next-btn").hidden = !reading && !session.current.fbRating;
+  }
+}
+
+document.querySelectorAll(".fb-view-btn").forEach(function (button) {
+  button.addEventListener("click", function () {
+    session.fbView = button.dataset.view === "read" ? "read" : "quiz";
+    applyFbView();
+    rememberSpot();
+  });
+});
 
 // What each blank stands for, in order, from lining up the text around the blanks with
 // the full text. Gives back null if anything doesn't line up.
@@ -1497,6 +1536,8 @@ function showResults() {
   document.getElementById("results-fb-score").textContent = session.fbCorrect + " of " + session.fbAnswered;
 
   document.getElementById("results-essay").hidden = (essayCount === 0);
+  // Only read (or skipped) everything: say so, instead of an empty screen.
+  document.getElementById("results-none").hidden = (session.mcqTotal + session.fbAnswered + essayCount) > 0;
   document.getElementById("results-got").textContent = session.ratings["Got it"];
   document.getElementById("results-partly").textContent = session.ratings["Partly"];
   document.getElementById("results-missed").textContent = session.ratings["Missed it"];
