@@ -400,6 +400,47 @@ function noteResult(question, last, effect, level) {
   progress.results[question.id] = result;
 }
 
+// ---------- Reset: redo some questions from scratch ----------
+// Clears her answers for these questions only: their latest result and "right in a row" count
+// (so they're no longer mastered) and their place in Review missed. Notes, highlights, tags,
+// bookmarks, today's count, the daily history, the streaks and the per-subject running totals
+// are NOT touched. Returns exactly what was removed, so undoReset can put it all back.
+function resetQuestions(ids) {
+  // The order things were saved in, so Undo puts them back exactly as they were.
+  const removed = { results: {}, review: {}, resultsOrder: Object.keys(progress.results), reviewOrder: Object.keys(progress.review) };
+  ids.forEach(function (id) {
+    if (Object.prototype.hasOwnProperty.call(progress.results, id)) {
+      removed.results[id] = progress.results[id];
+      delete progress.results[id];
+    }
+    if (Object.prototype.hasOwnProperty.call(progress.review, id)) {
+      removed.review[id] = progress.review[id];
+      delete progress.review[id];
+    }
+  });
+  saveProgress();
+  return removed;
+}
+
+// Undo a reset: put back exactly what resetQuestions removed.
+function undoReset(removed) {
+  progress.results = putBackInOrder(progress.results, removed.results, removed.resultsOrder);
+  progress.review = putBackInOrder(progress.review, removed.review, removed.reviewOrder);
+  saveProgress();
+}
+
+// "now" with the "removed" entries put back, everything in its original order ("order"),
+// then anything added since (kept as it is).
+function putBackInOrder(now, removed, order) {
+  const result = {};
+  order.forEach(function (id) {
+    if (Object.prototype.hasOwnProperty.call(removed, id)) { result[id] = removed[id]; }
+    else if (Object.prototype.hasOwnProperty.call(now, id)) { result[id] = now[id]; }
+  });
+  Object.keys(now).forEach(function (id) { if (!Object.prototype.hasOwnProperty.call(result, id)) { result[id] = now[id]; } });
+  return result;
+}
+
 // ---------- Her notes on cases and rules ----------
 // Her note as cleaned html (only <b>, <i>, <u>, <br>), or "" if none.
 function noteHtmlFor(id) {

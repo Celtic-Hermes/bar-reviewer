@@ -244,6 +244,14 @@ Every question type has **‹ Previous** and **Next ›** side by side under the
 - `states` is saved with the round in the saved spot, so a reload puts her back on the same question, and earlier questions still show what she did.
 - Mac / iPad keyboard: ← / → = Previous / Next on the question screen, except while she's typing (a blank, a note, any text box or dropdown) or a menu or panel is open; → never finishes the round (only a tap on Finish does).
 
+## Reset (redo a topic, case or rule from scratch)
+A small, quiet **Reset** text button (`.reset-btn`, in a `.reset-row`) at the very bottom of: a topic or sub-topic screen (**Reset this topic**: every question in it, all types; not on Review missed / Bookmarked / Tagged), a case screen (**Reset this case**: the questions whose `caseIds` include it; hidden on a case opened from the middle of a question, so an open round is never changed), and the Read the full rule screen (**Reset this rule**: its fill-in-the-blank items, matched by `source.grNumber`). Hidden when there's nothing in scope. One function does all three (`resetScope` in `app.js`).
+- **Always asks first** with the shared in-app dialog (`askConfirm(title, text, action)`, `#confirm-backdrop`; Cancel is focused first; Esc or tapping outside cancels): "Reset 'Name'? This clears your answers for N questions. Your notes and highlights stay."
+- **Clears**, for those questions only (`resetQuestions` in progress.js): `results` (latest answer and "right in a row", so they're no longer mastered) and `review` (Review missed). The Today card's Mastery updates at once.
+- **Keeps**: notes, highlights, tags, bookmarks, `daily` (Today and history), the streaks, and the per-subject running totals in `subjects` (those count every attempt and aren't stored per question, so they can't be split by topic). Typed blanks are only ever kept inside an open round, so there's nothing more to clear.
+- **Undo** for about 10 seconds with the shared message bar (`showUndo(text, onUndo)`, `#toast`): `undoReset` puts back exactly what was removed, in its original order (`putBackInOrder`).
+- Resets live in her normal progress, so backups and restores include them; nothing new is stored.
+
 ## Settings
 A **Settings** screen (`#screen-settings`), reached from the ⚙️ button on the home screen (phones, next to ☰), the **Settings** entry in the sidebar / ☰ menu, or the Today card's "Daily goal" line. **‹ Back** returns to exactly where she was (`settingsCameFrom`; the screen she left is only hidden meanwhile, so a question keeps its state). Settings is never saved as her spot, so a reload there puts her back where she was before it (an open practice round is never lost).
 - **Study:** **Daily goal** (10 / 20 / 30 / 50, default 20, `settings.dailyGoal`) and **Exam date** (optional, empty until she picks one, `settings.examDate` as "YYYY-MM-DD", with a Clear button; "Used later for the study schedule").

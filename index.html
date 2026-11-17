@@ -235,6 +235,8 @@
       <h2 class="label topics-label">Cases</h2>
       <div class="subject-list" id="topic-case-list"></div>
       <p class="card empty-note list-empty" id="topic-case-empty" hidden>No cases for this topic yet.</p>
+      <!-- Redo this topic from scratch (asks first; Undo for 10 seconds). Quiet, at the bottom. -->
+      <div class="reset-row"><button type="button" class="reset-btn" id="topic-reset" hidden>Reset this topic</button></div>
     </section>
 
     <!-- SCREEN 2d: Her "Tagged" list: every question she color-tagged in this subject -->
@@ -443,6 +445,7 @@
         <div class="subject-list" id="case-questions"></div>
         <p class="card empty-note list-empty" id="case-questions-empty" hidden>No questions linked to this case yet.</p>
       </div>
+      <div class="reset-row"><button type="button" class="reset-btn" id="case-reset" hidden>Reset this case</button></div>
       <!-- Wide screens only: her notes and the linked questions move here (see app.js) -->
       <aside class="case-side" id="case-side" hidden><div class="case-side-inner" id="case-side-inner"></div></aside>
     </section>
@@ -483,6 +486,7 @@
         <h2 class="label">Source</h2>
         <p class="prompt" id="rule-source"></p>
       </section>
+      <div class="reset-row"><button type="button" class="reset-btn" id="rule-reset" hidden>Reset this rule</button></div>
     </section>
 
     <!-- SCREEN 6: My notes: every case and rule she has written a note on -->
@@ -526,6 +530,24 @@
       <button class="btn btn-secondary" id="results-home">Back to subjects</button>
     </section>
   </main>
+
+  <!-- Shared confirmation dialog (app.js askConfirm): a question, Cancel and one action button -->
+  <div class="dialog-backdrop" id="confirm-backdrop" hidden>
+    <div class="dialog" role="alertdialog" aria-modal="true" aria-labelledby="confirm-title" aria-describedby="confirm-text">
+      <h2 class="dialog-title" id="confirm-title"></h2>
+      <p class="dialog-text" id="confirm-text"></p>
+      <div class="dialog-buttons">
+        <button type="button" class="btn btn-secondary" id="confirm-cancel">Cancel</button>
+        <button type="button" class="btn btn-primary" id="confirm-ok">OK</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shared message bar with an Undo button (app.js showUndo), for about 10 seconds -->
+  <div class="toast" id="toast" role="status" hidden>
+    <span class="toast-text" id="toast-text"></span>
+    <button type="button" class="toast-btn" id="toast-undo">Undo</button>
+  </div>
 
   <!-- "Find in case" panel: slides up over the bottom half of the screen -->
   <div class="sheet-backdrop" id="find-backdrop" hidden></div>

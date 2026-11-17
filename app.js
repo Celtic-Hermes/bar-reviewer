@@ -617,6 +617,7 @@ function openTopic(topic, subtopic) {
   // Built from one rule (all its questions come from the same source document)?
   // Then she can read that whole rule.
   topicRule = ruleForQuestions(questionsForTopic(subject, topic, null, currentSubtopic));
+  document.getElementById("topic-reset").hidden = !isRealTopic(topic) || topicResetQuestions().length === 0;
   document.getElementById("topic-rule").hidden = !topicRule;
   showScreen("screen-topic");
 }
@@ -907,6 +908,7 @@ function openRule(rule, cameFrom) {
   document.getElementById("rule-title").textContent = rule.title || "Untitled rule";
   document.getElementById("rule-number").textContent = rule.number || "";
   document.getElementById("rule-draft-badge").hidden = !showsUnverified(rule);
+  document.getElementById("rule-reset").hidden = ruleResetQuestions(rule).length === 0;
   showNotesBox(document.getElementById("rule-notes"), rule.id);
 
   // Source: a tappable link if it's a web address.
@@ -2490,6 +2492,119 @@ function showRated(rating) {
   result.hidden = false;
 }
 
+// ---------- Shared confirmation dialog ----------
+// askConfirm(title, text, action) shows an in-app dialog with Cancel and one action button,
+// and resolves true only if she taps the action. Cancel is focused first, so a stray tap or
+// Return does nothing; Esc or tapping outside also cancels.
+let confirmDone = null;
+
+function askConfirm(title, text, action) {
+  document.getElementById("confirm-title").textContent = title;
+  document.getElementById("confirm-text").textContent = text;
+  document.getElementById("confirm-ok").textContent = action;
+  document.getElementById("confirm-backdrop").hidden = false;
+  document.body.classList.add("dialog-open");
+  document.getElementById("confirm-cancel").focus();
+  return new Promise(function (resolve) { confirmDone = resolve; });
+}
+
+function closeConfirm(answer) {
+  if (!confirmDone) { return; }
+  document.getElementById("confirm-backdrop").hidden = true;
+  document.body.classList.remove("dialog-open");
+  const done = confirmDone;
+  confirmDone = null;
+  done(answer);
+}
+
+document.getElementById("confirm-ok").addEventListener("click", function () { closeConfirm(true); });
+document.getElementById("confirm-cancel").addEventListener("click", function () { closeConfirm(false); });
+document.getElementById("confirm-backdrop").addEventListener("click", function (event) {
+  if (event.target === event.currentTarget) { closeConfirm(false); }  // tapped outside the box
+});
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape" && confirmDone) { closeConfirm(false); }
+});
+
+// ---------- Shared "Undo" message bar ----------
+// showUndo(text, onUndo): a bar at the bottom of the screen for about 10 seconds; tapping
+// Undo calls onUndo once and closes the bar.
+const UNDO_SECONDS = 10;
+let undoAction = null;
+let undoTimer = null;
+
+function showUndo(text, onUndo) {
+  document.getElementById("toast-text").textContent = text;
+  document.getElementById("toast").hidden = false;
+  undoAction = onUndo;
+  clearTimeout(undoTimer);
+  undoTimer = setTimeout(hideUndo, UNDO_SECONDS * 1000);
+}
+
+function hideUndo() {
+  clearTimeout(undoTimer);
+  undoAction = null;
+  document.getElementById("toast").hidden = true;
+}
+
+document.getElementById("toast-undo").addEventListener("click", function () {
+  const action = undoAction;
+  hideUndo();
+  if (action) { action(); }
+});
+
+// ---------- Reset (a topic or sub-topic, a case, or a rule) ----------
+// Redo some questions from scratch: their answers, results, "right in a row" count and
+// Review missed place are cleared (resetQuestions in progress.js); notes, highlights, tags,
+// bookmarks, today's count and the streaks stay. Always asks first; Undo for 10 seconds.
+// The three buttons share one look (.reset-btn) and this one function.
+
+// The questions each Reset button covers (all question types).
+function topicResetQuestions() {
+  if (!isRealTopic(currentTopic)) { return []; }
+  return questionsForTopic(currentSubject, currentTopic, null, currentSubtopic);
+}
+
+function caseResetQuestions(theCase) {
+  return allQuestions.filter(function (q) { return q && Array.isArray(q.caseIds) && q.caseIds.indexOf(theCase.id) !== -1; });
+}
+
+function ruleResetQuestions(rule) {
+  return allQuestions.filter(function (q) {
+    return q && q.type === "fillblank" && q.source && q.source.grNumber === rule.number;
+  });
+}
+
+function resetScope(name, questions) {
+  if (questions.length === 0) { return; }
+  const count = questions.length === 1 ? "1 question" : questions.length + " questions";
+  askConfirm("Reset \u2018" + name + "\u2019?",
+    "This clears your answers for " + count + ". Your notes and highlights stay.", "Reset")
+    .then(function (yes) {
+      if (!yes) { return; }
+      const removed = resetQuestions(questions.map(function (q) { return q.id; }));
+      showTodayCard();  // the mastery count goes down by the ones that were mastered
+      showUndo("Reset \u2018" + name + "\u2019.", function () {
+        undoReset(removed);
+        showTodayCard();
+      });
+    });
+}
+
+document.getElementById("topic-reset").addEventListener("click", function () {
+  const name = currentSubtopic === OTHER_SUBTOPIC ? currentTopic + " (Other)"
+    : (currentSubtopic && currentSubtopic !== ALL_SUBTOPICS ? currentSubtopic : currentTopic);
+  resetScope(name, topicResetQuestions());
+});
+
+document.getElementById("case-reset").addEventListener("click", function () {
+  if (currentCase) { resetScope(currentCase.name || "this case", caseResetQuestions(currentCase)); }
+});
+
+document.getElementById("rule-reset").addEventListener("click", function () {
+  if (currentRule) { resetScope(currentRule.title || "this rule", ruleResetQuestions(currentRule)); }
+});
+
 // ---------- Previous / Next ----------
 // She can move around the round freely, answered or not. Each question she visits keeps
 // what she did on it (session.states, by position in the round): going back shows it
@@ -3430,6 +3545,8 @@ function openCase(theCase, cameFrom) {
     [theCase.grNumber, theCase.year].filter(Boolean).join(" · ");
   // Anything not marked "verified" (including a missing status) shows the draft label.
   document.getElementById("case-draft-badge").hidden = !showsUnverified(theCase);
+  // Not on a case opened from the middle of a question: the round in progress stays as it is.
+  document.getElementById("case-reset").hidden = cameFrom === "question" || caseResetQuestions(theCase).length === 0;
   setHighlightableText(document.getElementById("case-facts"), caseText(theCase.facts), theCase.id + ":facts");
   setHighlightableText(document.getElementById("case-issue"), caseText(theCase.issue), theCase.id + ":issue");
   setHighlightableText(document.getElementById("case-ruling"), caseText(theCase.ruling), theCase.id + ":ruling");
