@@ -1828,7 +1828,7 @@ function pickHiddenWords(level) {
 
   // Moderate / Intensive / Verbatim: the key terms, then random words up to the share.
   const target = Math.round(fbInfo.total * FB_LEVEL_SHARE[level]);
-  let hidden = hiddenWordCount(blanks);
+  let hidden = hiddenWordCount(blanks, level);
   const picked = blanks.slice();
   const others = shuffled(all.filter(function (n) { return canHideExtra(fbInfo.words[n]); }));
   for (let i = 0; i < others.length && hidden < target; i++) {
@@ -1890,12 +1890,34 @@ document.getElementById("fb-new").addEventListener("click", function () {
   rememberSpot();
 });
 
-// How many words of the full text are hidden (a key-term blank can stand for several words).
-function hiddenWordCount(hidden) {
+// How many words of the full text are hidden. A key-term blank can stand for several
+// words; each of its hidden words is one box, and counts as one.
+function hiddenWordCount(hidden, level) {
   return hidden.reduce(function (sum, n) {
     const w = fbInfo.words[n];
-    return sum + (w.isBlank ? (w.answer ? wordCount(w.answer) : 1) : 1);
+    if (!w.isBlank) { return sum + 1; }
+    if (!w.answer) { return sum + 1; }
+    return sum + blankParts(w, level).filter(function (p) { return p.box; }).length;
   }, 0);
+}
+
+// One box per word: the words of a key-term blank's answer ("life, liberty and security"),
+// each with "box": true if it's hidden (gets its own box) at this level. The spaces
+// between them are kept as they are. Pieces with no letter or number are never boxes.
+function blankParts(w, level) {
+  const parts = [];
+  String(w.answer || "").split(/(\s+)/).forEach(function (bit) {
+    if (bit === "") { return; }
+    if (/^\s+$/.test(bit)) { parts.push({ space: bit }); return; }
+    parts.push({ text: bit, box: /[A-Za-zÀ-ÿ0-9]/.test(bit) });
+  });
+  return parts;
+}
+
+// The box key for word n ("12"), or for part k of key-term blank n ("12.3").
+function boxWord(key) {
+  const bits = String(key).split(".");
+  return { n: Number(bits[0]), k: bits.length > 1 ? Number(bits[1]) : null };
 }
 
 // A word split into its punctuation before, the word itself, and its punctuation after
@@ -1912,10 +1934,18 @@ function splitBlank(text) {
   return { before: text.slice(0, at), after: text.slice(end) };
 }
 
-// The right answer for hidden word number n (null if the content doesn't line up).
-function fbAnswerFor(n) {
-  const w = fbInfo.words[n];
-  if (w.isBlank) { return w.answer || null; }
+// The right answer for one box: "12" (word 12) or "12.3" (part 3 of key-term blank 12).
+// null if the content doesn't line up.
+function fbAnswerFor(key) {
+  const at = boxWord(key);
+  const w = fbInfo.words[at.n];
+  if (!w) { return null; }
+  if (w.isBlank) {
+    if (!w.answer) { return null; }
+    if (at.k === null) { return w.answer; }
+    const part = blankParts(w, null)[at.k];
+    return part && part.text ? splitWord(part.text).middle : null;
+  }
   return splitWord(w.text).middle;
 }
 
@@ -1969,15 +1999,29 @@ function applyFbLevel(question, level, hidden) {
   // What she has typed so far, kept for the words that are still hidden.
   const oldTyped = isPlainObject(session.current.fbTyped) ? session.current.fbTyped : {};
   const typed = {};
-  clean.forEach(function (n) {
-    if (typeof oldTyped[n] === "string" && oldTyped[n] !== "") { typed[n] = oldTyped[n]; }
+  Object.keys(oldTyped).forEach(function (key) {
+    if (clean.indexOf(boxWord(key).n) !== -1 && typeof oldTyped[key] === "string" && oldTyped[key] !== "") {
+      typed[key] = oldTyped[key];
+    }
   });
   fbInfo.words.forEach(function (w, n) {
     const hide = clean.indexOf(n) !== -1;
     if (w.inHeading && !hide && !w.isBlank) { return; }  // the heading is never hidden: leave it as drawn
     w.span.classList.toggle("fb-blank", hide);
     w.span.textContent = "";
-    if (hide) {
+    if (hide && w.isBlank && w.answer) {
+      // A hidden key term: one box per word ("indigent petitioner" → two boxes),
+      // each word's punctuation outside its box. Words not hidden at this level stay as text.
+      const outer = splitBlank(w.text);
+      w.span.append(outer.before);
+      blankParts(w, level).forEach(function (part, k) {
+        if (part.space) { w.span.append(part.space); return; }
+        if (!part.box) { w.span.append(part.text); return; }
+        const bits = splitWord(part.text);
+        w.span.append(bits.before, makeBlankBox(n + "." + k, typed[n + "." + k]), bits.after);
+      });
+      w.span.append(outer.after);
+    } else if (hide) {
       // Hidden: a text box in place of the word, its punctuation stays around it.
       const parts = w.isBlank ? splitBlank(w.text) : splitWord(w.text);
       w.span.append(parts.before, makeBlankBox(n, typed[n]), parts.after);
@@ -2000,11 +2044,11 @@ function applyFbLevel(question, level, hidden) {
   // The full text for "Show answer", with every hidden word in bold.
   const full = typeof question.fullText === "string" ? question.fullText : "";
   setRichText(document.getElementById("fb-full"),
-    full ? answerText(question, clean) : "The full text for this item hasn't been added yet.");
+    full ? answerText(question, clean, level) : "The full text for this item hasn't been added yet.");
 
   const note = document.getElementById("fb-level-note");
   if (fbInfo.usable) {
-    const count = hiddenWordCount(clean);
+    const count = hiddenWordCount(clean, level);
     note.textContent = count + " of " + fbInfo.total + " words hidden (" +
       Math.round(100 * count / fbInfo.total) + "%).";
   } else {
@@ -2017,7 +2061,7 @@ function applyFbLevel(question, level, hidden) {
 // other key-term blanks filled in. Built word by word from the prompt, so the lines and
 // numbered points look just like the question. If the content doesn't line up (or
 // already uses **), the full text unmarked.
-function answerText(question, hidden) {
+function answerText(question, hidden, level) {
   const full = question.fullText;
   if (!fbInfo.usable || full.indexOf("**") !== -1 || question.prompt.indexOf("**") !== -1) { return full; }
   let n = 0;
@@ -2027,10 +2071,21 @@ function answerText(question, hidden) {
     const hide = hidden.indexOf(n) !== -1;
     n += 1;
     if (!w) { return bit; }
-    if (w.isBlank) { return bit.replace(BLANK, hide ? "**" + w.answer + "**" : w.answer); }
+    if (w.isBlank) { return bit.replace(BLANK, hide ? markedAnswer(w, level) : w.answer); }
     if (!hide) { return bit; }
     const m = bit.match(/^([^A-Za-zÀ-ÿ0-9]*)(.*?)([^A-Za-zÀ-ÿ0-9]*)$/);
     return m[1] + "**" + m[2] + "**" + m[3];
+  }).join("");
+}
+
+// A key term's answer with each hidden word marked bold on its own:
+// "**life**, **liberty** **and** **security**" (punctuation stays outside the marks).
+function markedAnswer(w, level) {
+  return blankParts(w, level).map(function (part) {
+    if (part.space) { return part.space; }
+    if (!part.box) { return part.text; }
+    const bits = splitWord(part.text);
+    return bits.before + "**" + bits.middle + "**" + bits.after;
   }).join("");
 }
 
@@ -2064,7 +2119,7 @@ function startPeek() {
   if (peeking || session.current.answerShown) { return; }
   peeking = true;
   document.querySelectorAll("#prompt .fb-input").forEach(function (box) {
-    const answer = fbAnswerFor(Number(box.dataset.word));
+    const answer = fbAnswerFor(box.dataset.word);
     const peek = document.createElement("span");
     peek.className = "fb-peek";
     peek.textContent = answer === null ? "?" : answer;
@@ -2114,7 +2169,7 @@ function checkBlankBoxes() {
   boxes.forEach(function (box) {
     box.readOnly = true;
     box.classList.remove("fb-right", "fb-wrong");
-    const answer = fbAnswerFor(Number(box.dataset.word));
+    const answer = fbAnswerFor(box.dataset.word);
     if (answer === null) { return; }  // can't check (content doesn't line up)
     checked += 1;
     const ok = sameAnswer(box.value, answer);
