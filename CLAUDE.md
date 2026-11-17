@@ -185,7 +185,7 @@ Whenever the builder asks to add a new case, follow this checklist without being
 7. **Follow the text formatting conventions** in all content fields:
    - `**word**` for bold.
    - Numbered points as `(1) … (2) … (3)` (or `(a) (b)`), starting right after a sentence end, colon or semicolon. The app then shows each point on its own line with a bold number. Points written mid-sentence ("between (a) X and (b) Y") stay inline.
-8. **Test before committing:** the app loads without errors, the case opens with its summary and full text, all 8 questions show up under the right subject and topic, and "Find in case" finds each question's excerpt in the full text.
+8. **Test before committing:** `python3 tools/check-content.py` says "All content OK"; the app loads without errors, the case opens with its summary and full text, all 8 questions show up under the right subject and topic, and "Find in case" finds each question's excerpt in the full text.
 9. **Cache version:** bump `CACHE_VERSION` in `sw.js` only if an app file changed (see Technical choices). Adding a case normally changes only data files, so no bump.
 10. **Commit and report:** one commit for the case (or one per step if it was split), then tell the builder what was added, the IDs used, the full-text file size, and anything that needs a person to check.
 
@@ -202,10 +202,17 @@ For a procedural rule or a Rules of Court rule (like the Rule on the Writ of Amp
    - `prompt`: the same text with the legally significant words blanked (`____`), following the fill-in-the-blank rules above: required elements, periods/deadlines, standards, who may file, where, what is or isn't allowed. Never two blanks with only spaces between them.
    - `caseIds: []`. `source`: `caseTitle` = the rule's official title, `grNumber` = the A.M. number or "Rules of Court, Rule 91", `url` = the source link, `part` = "Section N (Heading)", `excerpt` = the whole section text (same as `fullText`).
 6. **Save the whole rule for "Read the full rule".** Add an entry to `data/rules.json` (next free `rule-` ID; `number` exactly equal to the items' `source.grNumber`) and save the cleaned text as `data/rule-texts/<rule-id>.txt` in the format described under Content format. Tell the builder the file's size. Any sub-topic whose items all come from this one rule then shows the button automatically; nothing else needs setting up.
-7. **Check before committing:** every `fullText` appears word for word in the cleaned source text and in the rule's text file; every `prompt` lines up with its `fullText` (same text outside the blanks, so Show answer bolds the right words); the IDs are consecutive and unused; the JSON is valid.
+7. **Check before committing:** `python3 tools/check-content.py` says "All content OK" (it checks most of what follows); every `fullText` appears word for word in the cleaned source text and in the rule's text file; every `prompt` lines up with its `fullText` (same text outside the blanks, so Show answer bolds the right words); the IDs are consecutive and unused; the JSON is valid.
 8. **Test in the app:** the sub-topic shows up under the right subject and topic with the right item count; Quiz, Read, the Blanks levels and Show answer work on a few items; **📖 Read the full rule** opens the whole rule, one card per section.
 9. **Cache version:** data-only changes need no bump (see Technical choices).
 10. **Commit and report:** one commit for the rule, then tell the builder the section count, the IDs used, the source, how many watermarks were removed, and anything a person should check (for example, odd wording in the source).
+
+## Content checker (run before every commit that touches data/)
+`python3 tools/check-content.py` (from the project folder) reads every content file and lists anything wrong. It never changes a file, and it isn't part of the app (no cache bump, not in `APP_FILES`).
+- **PROBLEM** = must be fixed before committing; the script then ends with "Found N problem(s)" (exit code 1). **CHECK** = worth a look, not an error (e.g. placeholder content). "All content OK" = nothing to fix.
+- It checks: valid JSON; IDs in the right form and never used twice; `status` is `draft`/`verified`; subject is one of the exact names (`SUBJECTS` / `MISC_SUBJECTS` at the top of the script must match `app.js`); topic present; each question type's required parts (essay ALAC + key points; MCQ exactly A–D, one correct letter, explanation; fill in the blank: blanks present, none side by side, no `**`, prompt lines up with `fullText`); every source has caseTitle, grNumber, part, excerpt; `caseIds` point to real cases whose G.R. number matches the source; every piece of an excerpt (split at " … ") appears word for word in the case's full text, and a fill-in-the-blank `fullText` and excerpt in its rule's text (ignoring `**`, footnote numbers like [3], spacing, and straight vs curly quotes); every case and rule has its text file; no LawPhil watermarks left; every footnote number has its footnote.
+- Long lists show the first 50 lines; `--all` shows every line.
+- When a new content field or rule is added to this guide, add a check for it here too.
 
 ## Her progress (saved only on her phone)
 - Saved in the phone's browser storage (`localStorage`). Nothing is sent anywhere, and there are no accounts.
