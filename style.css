@@ -726,6 +726,7 @@ body {
 .notes-box:focus { outline: 2px solid var(--primary); outline-offset: 1px; border-color: transparent; }
 .notes-box::placeholder { color: var(--muted); }
 .notes-status { margin: 8px 0 0; font-size: 13px; color: var(--muted); }
+.rule-notes-card { margin-top: 14px; }
 
 /* "Read the case" buttons under a question */
 .question-cases { margin-top: 8px; }

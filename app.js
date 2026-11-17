@@ -771,6 +771,7 @@ function openRule(rule) {
   document.getElementById("rule-title").textContent = rule.title || "Untitled rule";
   document.getElementById("rule-number").textContent = rule.number || "";
   document.getElementById("rule-draft-badge").hidden = (rule.status === "verified");
+  showNotesBox(document.getElementById("rule-notes"), rule.id);
 
   // Source: a tappable link if it's a web address.
   const source = document.getElementById("rule-source");

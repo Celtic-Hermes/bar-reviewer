@@ -351,6 +351,13 @@
       <h1 class="screen-title" id="rule-title"></h1>
       <p class="case-number" id="rule-number"></p>
       <p class="status-unverified status-badge" id="rule-draft-badge" hidden>Unverified</p>
+      <!-- Her own notes on this rule (saved on this phone as she types) -->
+      <section class="card notes-card rule-notes-card">
+        <h2 class="label"><label for="rule-notes">My notes</label></h2>
+        <textarea class="notes-box" id="rule-notes" rows="3" placeholder="Write your own notes on this rule…"
+          autocapitalize="sentences" spellcheck="true"></textarea>
+        <p class="notes-status" id="rule-notes-status" aria-live="polite">Saved on this phone as you type.</p>
+      </section>
       <p class="full-text-note" id="rule-note" hidden></p>
       <div class="rule-reader">
         <!-- Highlighter colors: stays pinned at the top while she reads -->
