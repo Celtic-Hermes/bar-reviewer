@@ -680,7 +680,7 @@ body {
 .setting-control-wide { flex: 1 1 100%; }
 .setting-control-wide .btn { margin: 0; text-align: center; }
 .setting-control-wide label.btn { line-height: 20px; }
-.setting-control select, .setting-control input[type="date"] {
+.setting-control select, .setting-control input[type="date"], .setting-control input[type="text"], .setting-control input[type="number"] {
   font: inherit; font-size: 16px;  /* 16px or more: the iPhone doesn't zoom in */
   min-height: 44px; padding: 6px 10px; border: 1px solid var(--primary-edge); border-radius: 8px;
   background: var(--card); color: var(--text);
@@ -1246,3 +1246,28 @@ body.dialog-open { overflow: hidden; }
 @media (min-width: 800px) {
   body[data-screen="screen-schedule"] .page { max-width: 1000px; }
 }
+
+/* Study Schedule, step 2: adding, editing and ticking tasks; Day off. */
+.setting-control-wide input[type="text"] { width: 100%; }
+.setting-control input[type="number"] { width: 6.5em; }
+.task-dialog { max-height: calc(100vh - 32px); overflow-y: auto; }
+.task-dialog .setting-row:first-of-type { border-top: 0; }
+.task-dialog .dialog-text { margin-bottom: 4px; }
+.task-error { margin: 4px 0 10px; font-weight: 600; color: var(--missed); }
+.task-delete-row { margin: 12px 0 0; }
+.task-title-btn {
+  flex: 1; min-width: 0; min-height: 44px; padding: 0; border: 0; background: none;
+  font: inherit; color: var(--text); text-align: left; overflow-wrap: anywhere; cursor: pointer;
+}
+.task-card.done .task-title-btn { text-decoration: line-through; color: var(--muted); }
+.task-edit {
+  flex: 0 0 44px; width: 44px; height: 44px; border: 0; border-radius: 8px; background: none;
+  font: inherit; font-size: 18px; color: var(--primary-text); cursor: pointer;
+}
+.task-subject { display: block; font-size: 13px; color: var(--muted); }
+.day-off-btn {
+  margin-left: auto; min-height: 36px; padding: 4px 12px; border: 1px solid var(--primary-edge); border-radius: 999px;
+  background: var(--card); color: var(--primary-text); font: inherit; font-size: 14px; font-weight: 600; cursor: pointer;
+}
+.day-off-btn[aria-pressed="true"] { background: var(--primary); border-color: var(--primary); color: var(--on-primary); font-weight: 700; }
+.add-task-btn { margin: 8px 0 -4px; }

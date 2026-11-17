@@ -579,6 +579,34 @@
     </div>
   </div>
 
+  <!-- Study Schedule: add / edit a task (app.js openTaskDialog). Shared dialog look + setting rows. -->
+  <div class="dialog-backdrop" id="task-backdrop" hidden>
+    <form class="dialog task-dialog" id="task-form" role="dialog" aria-modal="true" aria-labelledby="task-dialog-title" novalidate>
+      <h2 class="dialog-title" id="task-dialog-title">Add a task</h2>
+      <p class="dialog-text" id="task-dialog-date"></p>
+      <div class="setting-row">
+        <div class="setting-text"><label class="setting-label" for="task-title">Title</label></div>
+        <div class="setting-control setting-control-wide">
+          <input type="text" id="task-title" maxlength="120" autocomplete="off" enterkeyhint="done" placeholder="e.g. Read Rule 91">
+        </div>
+      </div>
+      <div class="setting-row">
+        <div class="setting-text"><label class="setting-label" for="task-subject">Subject</label><p class="setting-desc">Optional.</p></div>
+        <div class="setting-control"><select id="task-subject"></select></div>
+      </div>
+      <div class="setting-row">
+        <div class="setting-text"><label class="setting-label" for="task-minutes">Time</label><p class="setting-desc">Optional, in minutes.</p></div>
+        <div class="setting-control"><input type="number" id="task-minutes" inputmode="numeric" min="1" max="999" step="1" placeholder="30"></div>
+      </div>
+      <p class="task-error" id="task-error" role="alert" hidden></p>
+      <div class="dialog-buttons">
+        <button type="button" class="btn btn-secondary" id="task-cancel">Cancel</button>
+        <button type="submit" class="btn btn-primary" id="task-save">Save</button>
+      </div>
+      <div class="reset-row task-delete-row"><button type="button" class="reset-btn" id="task-delete" hidden>Delete this task</button></div>
+    </form>
+  </div>
+
   <!-- Shared message bar with an Undo button (app.js showUndo), for about 10 seconds -->
   <div class="toast" id="toast" role="status" hidden>
     <span class="toast-text" id="toast-text"></span>

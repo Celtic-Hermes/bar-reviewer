@@ -1271,12 +1271,14 @@ function makeScheduleDay(key, today) {
     badge.textContent = "Today";
     head.appendChild(badge);
   }
-  if (day.off) {
-    const badge = document.createElement("span");
-    badge.className = "day-badge";
-    badge.textContent = "Day off";
-    head.appendChild(badge);
-  }
+  const offButton = document.createElement("button");  // Day off: pressed (filled) when it's on; tap to switch
+  offButton.type = "button";
+  offButton.className = "day-off-btn";
+  offButton.dataset.action = "off";
+  offButton.dataset.date = key;
+  offButton.setAttribute("aria-pressed", day.off ? "true" : "false");
+  offButton.textContent = "Day off";
+  head.appendChild(offButton);
   box.appendChild(head);
   if (day.tasks.length === 0) {
     const empty = document.createElement("p");
@@ -1289,6 +1291,13 @@ function makeScheduleDay(key, today) {
     day.tasks.forEach(function (task, i) { list.appendChild(makeTaskCard(key, task, i)); });
     box.appendChild(list);
   }
+  const add = document.createElement("button");
+  add.type = "button";
+  add.className = "link-btn add-task-btn";
+  add.dataset.action = "add";
+  add.dataset.date = key;
+  add.textContent = "+ Add task";
+  box.appendChild(add);
   return box;
 }
 
@@ -1300,11 +1309,23 @@ function makeTaskCard(key, task, index) {
   box.type = "checkbox";
   box.checked = !!task.d;
   box.setAttribute("aria-label", "Done: " + task.t);
+  box.dataset.action = "done";
   box.dataset.date = key;
   box.dataset.index = String(index);
-  const title = document.createElement("span");
-  title.className = "task-title";
+  // The title: tapping it edits the task (in step 3, a linked task opens its link instead).
+  const title = document.createElement("button");
+  title.type = "button";
+  title.className = "task-title-btn";
+  title.dataset.action = "title";
+  title.dataset.date = key;
+  title.dataset.index = String(index);
   title.textContent = task.t;
+  if (task.s) {
+    const subject = document.createElement("span");
+    subject.className = "task-subject";
+    subject.textContent = task.s;
+    title.appendChild(subject);
+  }
   item.append(box, title);
   if (task.m) {
     const time = document.createElement("span");
@@ -1312,8 +1333,151 @@ function makeTaskCard(key, task, index) {
     time.textContent = task.m >= 60 ? Math.floor(task.m / 60) + "h" + (task.m % 60 ? " " + task.m % 60 + "m" : "") : task.m + "m";
     item.appendChild(time);
   }
+  const edit = document.createElement("button");
+  edit.type = "button";
+  edit.className = "task-edit";
+  edit.dataset.action = "edit";
+  edit.dataset.date = key;
+  edit.dataset.index = String(index);
+  edit.setAttribute("aria-label", "Edit task: " + task.t);
+  edit.textContent = "✎";
+  item.appendChild(edit);
   return item;
 }
+
+// --- Study Schedule: what she can do (one listener for all the days shown) ---
+document.getElementById("schedule-days").addEventListener("click", function (event) {
+  const target = event.target.closest("[data-action]");
+  if (!target || target.dataset.action === "done") { return; }  // ticking: see "change" below
+  const key = target.dataset.date;
+  const index = Number(target.dataset.index);
+  const day = scheduleDay(key);
+  if (target.dataset.action === "add") {
+    openTaskDialog(key, null);
+  } else if (target.dataset.action === "edit" || target.dataset.action === "title") {
+    openTaskDialog(key, index);
+  } else if (target.dataset.action === "off") {
+    setScheduleDay(key, day.tasks, !day.off);
+    showSchedule();
+  }
+});
+
+// Ticking a task done (or not done).
+document.getElementById("schedule-days").addEventListener("change", function (event) {
+  const box = event.target;
+  if (box.dataset.action !== "done") { return; }
+  const key = box.dataset.date;
+  const day = scheduleDay(key);
+  const tasks = day.tasks.map(function (t) { return Object.assign({}, t); });
+  const task = tasks[Number(box.dataset.index)];
+  if (!task) { return; }
+  if (box.checked) { task.d = 1; } else { delete task.d; }
+  setScheduleDay(key, tasks, day.off);
+  showSchedule();
+});
+
+// --- The task dialog: add (index null) or edit (index = its place in the day) ---
+let taskEditing = null;  // { date, index }
+
+function openTaskDialog(key, index) {
+  const task = index === null ? null : scheduleDay(key).tasks[index];
+  if (index !== null && !task) { return; }
+  taskEditing = { date: key, index: index };
+  document.getElementById("task-dialog-title").textContent = task ? "Edit task" : "Add a task";
+  document.getElementById("task-dialog-date").textContent = DAY_NAMES[dateOfKey(key).getDay()] + ", " + shortDate(key) + ", " + key.slice(0, 4);
+  const subject = document.getElementById("task-subject");
+  subject.innerHTML = "";
+  [""].concat(SUBJECTS, MISC_SUBJECTS).forEach(function (name) {
+    const option = document.createElement("option");
+    option.value = name;
+    option.textContent = name || "None";
+    subject.appendChild(option);
+  });
+  if (task && task.s && SUBJECTS.concat(MISC_SUBJECTS).indexOf(task.s) === -1) {  // an old subject name: keep it
+    const option = document.createElement("option");
+    option.value = task.s;
+    option.textContent = task.s;
+    subject.appendChild(option);
+  }
+  document.getElementById("task-title").value = task ? task.t : "";
+  subject.value = task && task.s ? task.s : "";
+  document.getElementById("task-minutes").value = task && task.m ? String(task.m) : "";
+  document.getElementById("task-error").hidden = true;
+  document.getElementById("task-delete").hidden = !task;
+  document.getElementById("task-backdrop").hidden = false;
+  document.body.classList.add("dialog-open");
+  document.getElementById("task-title").focus();
+}
+
+function closeTaskDialog() {
+  taskEditing = null;
+  document.getElementById("task-backdrop").hidden = true;
+  document.body.classList.remove("dialog-open");
+}
+
+function taskError(text) {
+  const error = document.getElementById("task-error");
+  error.textContent = text;
+  error.hidden = false;
+}
+
+document.getElementById("task-form").addEventListener("submit", function (event) {
+  event.preventDefault();
+  if (!taskEditing) { return; }
+  const title = document.getElementById("task-title").value.trim();
+  const minutesText = document.getElementById("task-minutes").value.trim();
+  const minutes = minutesText === "" ? null : Number(minutesText);
+  if (!title) { taskError("Give the task a short title."); return; }
+  if (minutes !== null && !(Number.isInteger(minutes) && minutes >= 1 && minutes <= 999)) {
+    taskError("Time: a whole number of minutes, from 1 to 999 (or leave it empty).");
+    return;
+  }
+  const day = scheduleDay(taskEditing.date);
+  const tasks = day.tasks.map(function (t) { return Object.assign({}, t); });
+  const before = taskEditing.index === null ? {} : tasks[taskEditing.index];
+  const task = { t: title };
+  if (minutes) { task.m = minutes; }
+  if (before.d) { task.d = 1; }  // editing keeps it done
+  const subject = document.getElementById("task-subject").value;
+  if (subject) { task.s = subject; }
+  if (before.l) { task.l = before.l; }
+  if (taskEditing.index === null) {
+    if (tasks.length >= SCHEDULE_TASKS_MAX) { taskError("A day can have at most " + SCHEDULE_TASKS_MAX + " tasks."); return; }
+    tasks.push(task);
+  } else {
+    tasks[taskEditing.index] = task;
+  }
+  setScheduleDay(taskEditing.date, tasks, day.off);
+  closeTaskDialog();
+  showSchedule();
+});
+
+document.getElementById("task-cancel").addEventListener("click", closeTaskDialog);
+document.getElementById("task-backdrop").addEventListener("click", function (event) {
+  if (event.target === event.currentTarget) { closeTaskDialog(); }
+});
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape" && taskEditing) { closeTaskDialog(); }
+});
+
+// Delete: right away, with Undo for 10 seconds (the shared Undo bar).
+document.getElementById("task-delete").addEventListener("click", function () {
+  if (!taskEditing || taskEditing.index === null) { return; }
+  const key = taskEditing.date;
+  const day = scheduleDay(key);
+  const before = day.tasks.map(function (t) { return Object.assign({}, t); });
+  const at = taskEditing.index;
+  const removed = before[at];
+  setScheduleDay(key, before.filter(function (_, i) { return i !== at; }), day.off);
+  closeTaskDialog();
+  showSchedule();
+  showUndo("Deleted \u2018" + removed.t + "\u2019.", function () {
+    const now = scheduleDay(key).tasks.map(function (t) { return Object.assign({}, t); });
+    now.splice(Math.min(at, now.length), 0, removed);  // back in its place, keeping anything added since
+    setScheduleDay(key, now, scheduleDay(key).off);
+    if (shownScreen === "screen-schedule") { showSchedule(); }
+  });
+});
 
 document.querySelectorAll("#screen-schedule .seg-btn").forEach(function (b) {
   b.addEventListener("click", function () {
