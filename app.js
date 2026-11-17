@@ -1115,12 +1115,34 @@ function shortDate(key) {  // "Nov 18"
   return MONTH_NAMES[d.getMonth()].slice(0, 3) + " " + d.getDate();
 }
 
+// Task types, each with its own soft color (style.css: [data-type]). "o" (Other) is the default.
+const TASK_TYPES = [
+  { id: "q", label: "Questions" }, { id: "c", label: "Case reading" }, { id: "f", label: "Fill-in-the-blank" },
+  { id: "r", label: "Review" }, { id: "e", label: "Exam" }, { id: "o", label: "Other" }
+];
+function taskTypeId(task) {
+  return SCHEDULE_TYPE_IDS.indexOf(task.y) !== -1 ? task.y : "o";
+}
+function taskTypeLabel(task) {
+  const id = taskTypeId(task);
+  return TASK_TYPES.find(function (t) { return t.id === id; }).label;
+}
+function timeLabel(minutes) {  // 30 → "30m", 90 → "1h 30m"
+  return minutes >= 60 ? Math.floor(minutes / 60) + "h" + (minutes % 60 ? " " + minutes % 60 + "m" : "") : minutes + "m";
+}
+
+// Narrow screens (phones): Month is a list of the month's days instead of a tiny grid.
+const SCHEDULE_NARROW = window.matchMedia("(max-width: 699px)");
+SCHEDULE_NARROW.addEventListener("change", function () {
+  if (shownScreen === "screen-schedule") { showSchedule(); }
+});
+
 function loadScheduleView() {
   try {
     const saved = localStorage.getItem(SCHEDULE_VIEW_KEY);
     if (saved === "month" || saved === "week") { return saved; }
   } catch (e) { /* no storage: use the default */ }
-  return window.matchMedia("(max-width: 699px)").matches ? "week" : "month";
+  return "month";
 }
 
 function openSchedule() {
@@ -1144,13 +1166,25 @@ function scheduleRange() {
   return days;
 }
 
+// The tasks that count for some days: a Day off's tasks are hidden, so they don't count.
+function countTasks(keys) {
+  let done = 0;
+  let total = 0;
+  keys.forEach(function (key) {
+    const day = scheduleDay(key);
+    if (day.off) { return; }
+    day.tasks.forEach(function (t) { total += 1; if (t.d) { done += 1; } });
+  });
+  return { done: done, total: total };
+}
+
 function showSchedule() {
   const today = todayKey();
   document.querySelectorAll("#screen-schedule .seg-btn").forEach(function (b) {
     b.setAttribute("aria-pressed", b.dataset.view === scheduleView ? "true" : "false");
   });
 
-  // Exam countdown, from Settings.
+  // Exam countdown, from Settings (never a made-up date).
   const exam = examDate();
   const examLine = document.getElementById("schedule-exam");
   const examLink = document.getElementById("schedule-exam-link");
@@ -1165,7 +1199,7 @@ function showSchedule() {
       : "Your exam date (" + when + ") has passed. You can change it in Settings.";
   }
 
-  // The period shown, and its tasks done.
+  // The period shown, and how many of its tasks are completed.
   const range = scheduleRange();
   const focus = dateOfKey(scheduleFocus);
   document.getElementById("schedule-period").textContent = scheduleView === "week"
@@ -1173,28 +1207,52 @@ function showSchedule() {
       ? shortDate(range[0]) + " – " + dateOfKey(range[6]).getDate() : shortDate(range[0]) + " – " + shortDate(range[6])) +
       ", " + dateOfKey(range[6]).getFullYear()
     : MONTH_NAMES[focus.getMonth()] + " " + focus.getFullYear();
-  let done = 0;
-  let total = 0;
-  range.forEach(function (key) {
-    scheduleDay(key).tasks.forEach(function (t) { total += 1; if (t.d) { done += 1; } });
-  });
-  document.getElementById("schedule-done").textContent = done + " / " + total + " tasks done " +
+  const count = countTasks(range);
+  document.getElementById("schedule-done").textContent = count.done + " / " + count.total + " tasks completed " +
     (scheduleView === "week" ? "this week" : "in " + MONTH_NAMES[focus.getMonth()]);
   const bar = document.getElementById("schedule-bar");
-  bar.setAttribute("aria-valuemax", String(total));
-  bar.setAttribute("aria-valuenow", String(done));
-  document.getElementById("schedule-bar-fill").style.width = (total ? Math.round(100 * done / total) : 0) + "%";
+  bar.setAttribute("aria-valuemax", String(count.total));
+  bar.setAttribute("aria-valuenow", String(count.done));
+  document.getElementById("schedule-bar-fill").style.width = (count.total ? Math.round(100 * count.done / count.total) : 0) + "%";
 
-  // Month: the calendar, then the day she picked. Week: the 7 days.
-  const month = document.getElementById("schedule-month");
-  month.hidden = scheduleView !== "month";
-  if (scheduleView === "month") { showMonthGrid(month, range, today); }
+  // Month on a wide screen: the calendar, then the day she picked below it.
+  // Month on a phone: every day of the month as a list, with a total line for each week.
+  // Week: the 7 days as a list.
+  const grid = document.getElementById("schedule-month");
   const list = document.getElementById("schedule-days");
+  const monthGrid = scheduleView === "month" && !SCHEDULE_NARROW.matches;
+  grid.hidden = !monthGrid;
   list.innerHTML = "";
-  (scheduleView === "week" ? range : [scheduleFocus]).forEach(function (key) {
-    list.appendChild(makeScheduleDay(key, today));
-  });
+  if (monthGrid) {
+    showMonthGrid(grid, range, today);
+    list.appendChild(makeScheduleDay(scheduleFocus, today));
+  } else if (scheduleView === "month") {
+    range.forEach(function (key) {
+      if (key === range[0] || dateOfKey(key).getDay() === WEEK_STARTS_ON) { list.appendChild(makeWeekTotal(key)); }
+      list.appendChild(makeScheduleDay(key, today));
+    });
+  } else {
+    range.forEach(function (key) { list.appendChild(makeScheduleDay(key, today)); });
+  }
 }
+
+// "Week of Nov 15 · 4 tasks, 1 done" (the whole Sunday–Saturday week).
+function makeWeekTotal(key) {
+  const start = weekStartOf(key);
+  const count = countTasks(Array.from({ length: 7 }, function (_, i) { return addDays(start, i); }));
+  const line = document.createElement("p");
+  line.className = "week-total";
+  line.textContent = "Week of " + shortDate(start) + " · " + weekTotalText(count);
+  return line;
+}
+function weekTotalText(count) {
+  if (count.total === 0) { return "no tasks"; }
+  return count.total + (count.total === 1 ? " task" : " tasks") + ", " + count.done + " done";
+}
+
+// The calendar (wide screens): Sunday to Saturday, then each week's total. Each day: its number
+// (tap to see the day below), "+" to add a task, a 🌴 for a day off, and its task chips.
+const MONTH_CHIPS_SHOWN = 4;
 
 function showMonthGrid(box, range, today) {
   box.innerHTML = "";
@@ -1204,61 +1262,87 @@ function showMonthGrid(box, range, today) {
     name.textContent = DAY_NAMES[(i + WEEK_STARTS_ON) % 7].slice(0, 3);
     box.appendChild(name);
   }
+  const totalHead = document.createElement("div");
+  totalHead.className = "month-weekday";
+  totalHead.textContent = "Week";
+  box.appendChild(totalHead);
   // Fill the first row with the end of the month before, and the last row with the next.
   const first = weekStartOf(range[0]);
   const lastShown = addDays(weekStartOf(range[range.length - 1]), 6);
   for (let key = first; key <= lastShown; key = addDays(key, 1)) {
-    const day = scheduleDay(key);
-    const cell = document.createElement("button");
-    cell.type = "button";
-    cell.className = "month-day" + (range.indexOf(key) === -1 ? " other-month" : "") +
-      (key === today ? " is-today" : "") + (day.off ? " is-off" : "");
-    cell.setAttribute("aria-pressed", key === scheduleFocus ? "true" : "false");
-    const done = day.tasks.filter(function (t) { return t.d; }).length;
-    cell.setAttribute("aria-label", DAY_NAMES[dateOfKey(key).getDay()] + ", " + shortDate(key) +
-      (day.off ? ", day off" : "") + (day.tasks.length ? ", " + day.tasks.length + " tasks, " + done + " done" : ""));
-    const num = document.createElement("span");
-    num.className = "month-num";
-    num.textContent = String(dateOfKey(key).getDate());
-    cell.appendChild(num);
-    if (day.off) {
-      const off = document.createElement("span");
-      off.className = "month-off";
-      off.textContent = "Day off";
-      cell.appendChild(off);
+    box.appendChild(makeMonthCell(key, range.indexOf(key) === -1, today));
+    if (dateOfKey(key).getDay() === (WEEK_STARTS_ON + 6) % 7) {  // end of the row: the week's total
+      const total = document.createElement("div");
+      total.className = "month-week-total";
+      total.textContent = weekTotalText(countTasks(Array.from({ length: 7 }, function (_, i) { return addDays(key, i - 6); })));
+      box.appendChild(total);
     }
-    if (day.tasks.length) {
-      const dots = document.createElement("span");  // narrow screens: a count
-      dots.className = "month-dots";
-      dots.textContent = done + "/" + day.tasks.length;
-      cell.appendChild(dots);
-      day.tasks.slice(0, 3).forEach(function (t) {  // wider screens: the titles
-        const line = document.createElement("span");
-        line.className = "month-task" + (t.d ? " done" : "");
-        line.textContent = t.t;
-        cell.appendChild(line);
-      });
-      if (day.tasks.length > 3) {
-        const more = document.createElement("span");
-        more.className = "month-task";
-        more.textContent = "+" + (day.tasks.length - 3) + " more";
-        cell.appendChild(more);
-      }
-    }
-    cell.addEventListener("click", function () {
-      scheduleFocus = key;
-      showSchedule();
-    });
-    box.appendChild(cell);
   }
 }
 
-// One day: its date, Today / Day off labels, and its tasks as small cards.
+function makeMonthCell(key, otherMonth, today) {
+  const day = scheduleDay(key);
+  const cell = document.createElement("div");
+  cell.className = "month-day" + (otherMonth ? " other-month" : "") + (key === today ? " is-today" : "") +
+    (day.off ? " is-off" : "") + (key === scheduleFocus ? " is-picked" : "");
+  const head = document.createElement("div");
+  head.className = "month-day-head";
+  const num = document.createElement("button");
+  num.type = "button";
+  num.className = "month-num";
+  num.dataset.action = "pick";
+  num.dataset.date = key;
+  num.setAttribute("aria-pressed", key === scheduleFocus ? "true" : "false");
+  num.setAttribute("aria-label", DAY_NAMES[dateOfKey(key).getDay()] + ", " + shortDate(key) + (day.off ? ", day off" : "") +
+    (key === today ? ", today" : ""));
+  num.textContent = String(dateOfKey(key).getDate());
+  head.appendChild(num);
+  if (day.off) {
+    const off = document.createElement("span");
+    off.className = "month-off";
+    off.title = "Day off";
+    off.textContent = "🌴";
+    head.appendChild(off);
+  } else {
+    head.appendChild(makeAddButton(key, "+", "month-add"));
+  }
+  cell.appendChild(head);
+  if (!day.off && day.tasks.length) {
+    const chips = document.createElement("ul");
+    chips.className = "month-chips";
+    day.tasks.slice(0, MONTH_CHIPS_SHOWN).forEach(function (task, i) { chips.appendChild(makeTaskCard(key, task, i, true)); });
+    cell.appendChild(chips);
+    if (day.tasks.length > MONTH_CHIPS_SHOWN) {
+      const more = document.createElement("button");
+      more.type = "button";
+      more.className = "month-more";
+      more.dataset.action = "pick";
+      more.dataset.date = key;
+      more.textContent = "+" + (day.tasks.length - MONTH_CHIPS_SHOWN) + " more";
+      cell.appendChild(more);
+    }
+  }
+  return cell;
+}
+
+function makeAddButton(key, text, className) {
+  const add = document.createElement("button");
+  add.type = "button";
+  add.className = className;
+  add.dataset.action = "add";
+  add.dataset.date = key;
+  add.setAttribute("aria-label", "Add a task on " + DAY_NAMES[dateOfKey(key).getDay()] + ", " + shortDate(key));
+  add.textContent = text;
+  return add;
+}
+
+// One day (in the lists): its date, Today, the Day off switch, and its tasks with "+ Add task".
+// A day off shows 🌴 and no tasks (any it had are only hidden, and come back when it's switched off).
 function makeScheduleDay(key, today) {
   const day = scheduleDay(key);
   const box = document.createElement("section");
-  box.className = "card schedule-day" + (day.off ? " is-off" : "");
-  box.dataset.date = key;
+  box.className = "card schedule-day" + (day.off ? " is-off" : "") + (key === today ? " is-today" : "");
+  box.dataset.day = key;
   const head = document.createElement("div");
   head.className = "schedule-day-head";
   const title = document.createElement("h3");
@@ -1271,48 +1355,54 @@ function makeScheduleDay(key, today) {
     badge.textContent = "Today";
     head.appendChild(badge);
   }
-  const offButton = document.createElement("button");  // Day off: pressed (filled) when it's on; tap to switch
+  const offButton = document.createElement("button");  // Day off: filled when it's on; tap to switch
   offButton.type = "button";
   offButton.className = "day-off-btn";
   offButton.dataset.action = "off";
   offButton.dataset.date = key;
   offButton.setAttribute("aria-pressed", day.off ? "true" : "false");
-  offButton.textContent = "Day off";
+  offButton.textContent = "🌴 Day off";
   head.appendChild(offButton);
   box.appendChild(head);
+  if (day.off) {
+    const rest = document.createElement("p");
+    rest.className = "schedule-empty";
+    rest.textContent = "Day off. Rest well." + (day.tasks.length
+      ? " (" + day.tasks.length + (day.tasks.length === 1 ? " task is" : " tasks are") + " hidden until you switch Day off off.)" : "");
+    box.appendChild(rest);
+    return box;
+  }
   if (day.tasks.length === 0) {
     const empty = document.createElement("p");
     empty.className = "schedule-empty";
-    empty.textContent = day.off ? "Rest day." : "Nothing planned.";
+    empty.textContent = "Nothing planned.";
     box.appendChild(empty);
   } else {
     const list = document.createElement("ul");
     list.className = "schedule-tasks";
-    day.tasks.forEach(function (task, i) { list.appendChild(makeTaskCard(key, task, i)); });
+    day.tasks.forEach(function (task, i) { list.appendChild(makeTaskCard(key, task, i, false)); });
     box.appendChild(list);
   }
-  const add = document.createElement("button");
-  add.type = "button";
-  add.className = "link-btn add-task-btn";
-  add.dataset.action = "add";
-  add.dataset.date = key;
-  add.textContent = "+ Add task";
-  box.appendChild(add);
+  box.appendChild(makeAddButton(key, "+ Add task", "link-btn add-task-btn"));
   return box;
 }
 
-// A task: checkbox, short title, optional time ("30m").
-function makeTaskCard(key, task, index) {
+// A task chip: checkbox, short title, optional time, in its type's soft color. Tapping it edits it;
+// tapping a linked title opens the link. "compact": the small chip in a calendar day.
+function makeTaskCard(key, task, index, compact) {
   const item = document.createElement("li");
-  item.className = "task-card" + (task.d ? " done" : "");
+  item.className = (compact ? "task-chip" : "task-card") + (task.d ? " done" : "");
+  item.dataset.type = taskTypeId(task);
+  item.dataset.action = "edit";
+  item.dataset.date = key;
+  item.dataset.index = String(index);
   const box = document.createElement("input");
   box.type = "checkbox";
   box.checked = !!task.d;
-  box.setAttribute("aria-label", "Done: " + task.t);
+  box.setAttribute("aria-label", "Completed: " + task.t);
   box.dataset.action = "done";
   box.dataset.date = key;
   box.dataset.index = String(index);
-  // The title: tapping it edits the task (in step 3, a linked task opens its link instead).
   const title = document.createElement("button");
   title.type = "button";
   title.className = "task-title-btn";
@@ -1325,54 +1415,69 @@ function makeTaskCard(key, task, index) {
     title.classList.add("is-link");
     title.append(" ›");
     title.setAttribute("aria-label", task.t + ". Opens " + link.label);
+  } else {
+    title.setAttribute("aria-label", "Edit task: " + task.t);
   }
-  if (task.s) {
-    const subject = document.createElement("span");
-    subject.className = "task-subject";
-    subject.textContent = task.s;
-    title.appendChild(subject);
+  if (!compact) {  // the type (and subject) in words too, not only by color
+    const meta = document.createElement("span");
+    meta.className = "task-subject";
+    meta.textContent = [taskTypeLabel(task), task.s].filter(Boolean).join(" · ");
+    title.appendChild(meta);
   }
   item.append(box, title);
   if (task.m) {
     const time = document.createElement("span");
     time.className = "task-time";
-    time.textContent = task.m >= 60 ? Math.floor(task.m / 60) + "h" + (task.m % 60 ? " " + task.m % 60 + "m" : "") : task.m + "m";
+    time.textContent = timeLabel(task.m);
     item.appendChild(time);
   }
-  const edit = document.createElement("button");
-  edit.type = "button";
-  edit.className = "task-edit";
-  edit.dataset.action = "edit";
-  edit.dataset.date = key;
-  edit.dataset.index = String(index);
-  edit.setAttribute("aria-label", "Edit task: " + task.t);
-  edit.textContent = "✎";
-  item.appendChild(edit);
   return item;
 }
 
-// --- Study Schedule: what she can do (one listener for all the days shown) ---
-document.getElementById("schedule-days").addEventListener("click", function (event) {
+// --- Study Schedule: what she can do (one listener for the whole screen) ---
+document.getElementById("screen-schedule").addEventListener("click", function (event) {
   const target = event.target.closest("[data-action]");
-  if (!target || target.dataset.action === "done") { return; }  // ticking: see "change" below
+  if (!target || !target.dataset.date || target.dataset.action === "done") { return; }  // ticking: see "change"
   const key = target.dataset.date;
   const index = Number(target.dataset.index);
   const day = scheduleDay(key);
-  if (target.dataset.action === "add") {
+  const action = target.dataset.action;
+  if (action === "add") {
     openTaskDialog(key, null);
-  } else if (target.dataset.action === "title") {
+  } else if (action === "title") {
     const link = taskLinkTarget((day.tasks[index] || {}).l);
     if (link) { link.open(); } else { openTaskDialog(key, index); }
-  } else if (target.dataset.action === "edit") {
+  } else if (action === "edit") {
     openTaskDialog(key, index);
-  } else if (target.dataset.action === "off") {
-    setScheduleDay(key, day.tasks, !day.off);
+  } else if (action === "off") {
+    toggleDayOff(key);
+  } else if (action === "pick") {
+    scheduleFocus = key;
     showSchedule();
   }
 });
 
-// Ticking a task done (or not done).
-document.getElementById("schedule-days").addEventListener("change", function (event) {
+// Day off on: if the day has tasks, ask first (they're only hidden, never deleted).
+function toggleDayOff(key) {
+  const day = scheduleDay(key);
+  if (day.off || day.tasks.length === 0) {
+    setScheduleDay(key, day.tasks, !day.off);
+    showSchedule();
+    return;
+  }
+  const n = day.tasks.length;
+  askConfirm("Make " + DAY_NAMES[dateOfKey(key).getDay()] + ", " + shortDate(key) + " a day off?",
+    "Its " + (n === 1 ? "task" : n + " tasks") + " will be hidden while it's a day off. Switch Day off off to see " +
+    (n === 1 ? "it" : "them") + " again.", "Day off")
+    .then(function (yes) {
+      if (!yes) { return; }
+      setScheduleDay(key, scheduleDay(key).tasks, true);
+      showSchedule();
+    });
+}
+
+// Ticking a task completed (or not).
+document.getElementById("screen-schedule").addEventListener("change", function (event) {
   const box = event.target;
   if (box.dataset.action !== "done") { return; }
   const key = box.dataset.date;
@@ -1464,6 +1569,15 @@ function openTaskDialog(key, index) {
     option.textContent = task.s;
     subject.appendChild(option);
   }
+  const type = document.getElementById("task-type");
+  type.innerHTML = "";
+  TASK_TYPES.forEach(function (t) {
+    const option = document.createElement("option");
+    option.value = t.id;
+    option.textContent = t.label;
+    type.appendChild(option);
+  });
+  type.value = task ? taskTypeId(task) : "o";
   document.getElementById("task-title").value = task ? task.t : "";
   subject.value = task && task.s ? task.s : "";
   document.getElementById("task-minutes").value = task && task.m ? String(task.m) : "";
@@ -1504,6 +1618,8 @@ document.getElementById("task-form").addEventListener("submit", function (event)
   const task = { t: title };
   if (minutes) { task.m = minutes; }
   if (before.d) { task.d = 1; }  // editing keeps it done
+  const typeId = document.getElementById("task-type").value;
+  if (SCHEDULE_TYPE_IDS.indexOf(typeId) !== -1) { task.y = typeId; }
   const subject = document.getElementById("task-subject").value;
   if (subject) { task.s = subject; }
   const link = document.getElementById("task-link").value;

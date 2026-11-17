@@ -23,6 +23,8 @@
 //                                         "s": "Remedial Law", "l": "topic:Remedial Law|Special Proceedings" } ],
 //                                "off": 1 } }
 //              k: the day's tasks, in order; t: title; m: minutes (optional); d: 1 if done;
+//              y: type (q Questions, c Case reading, f Fill-in-the-blank, r Review, e Exam;
+//                 missing = Other);
 //              s: subject (optional); l: what the title opens (optional: "subject:<name>" or
 //              "topic:<subject>|<topic>"); off: 1 if it's a Day off. See cleanSchedule.
 //   streakBest: her longest streak of study days ever (kept here, since "daily" only
@@ -129,6 +131,7 @@ function isCalendarDate(text) {
 const SCHEDULE_TITLE_MAX = 120;
 const SCHEDULE_TASKS_MAX = 50;      // per day
 const SCHEDULE_MINUTES_MAX = 999;
+const SCHEDULE_TYPE_IDS = ["q", "c", "f", "r", "e"];  // + "o" (Other), the default, never stored
 
 function cleanScheduleTask(task) {
   if (!isPlainObject(task) || typeof task.t !== "string" || !task.t.trim()) { return null; }
@@ -136,8 +139,9 @@ function cleanScheduleTask(task) {
   const m = Number(task.m);
   if (Number.isInteger(m) && m > 0 && m <= SCHEDULE_MINUTES_MAX) { clean.m = m; }
   if (task.d) { clean.d = 1; }
+  if (SCHEDULE_TYPE_IDS.indexOf(task.y) !== -1) { clean.y = task.y; }
   if (typeof task.s === "string" && task.s.trim()) { clean.s = task.s.trim().slice(0, 60); }
-  if (typeof task.l === "string" && /^(subject|topic):./.test(task.l) && task.l.length <= 200) { clean.l = task.l; }
+  if (typeof task.l === "string" && /^(subject|topic|case|rule):./.test(task.l) && task.l.length <= 200) { clean.l = task.l; }
   return clean;
 }
 

@@ -18,6 +18,13 @@
   --primary-text: #5555E0;
   --primary-soft: #CCCCFF;
   --primary-edge: #A9A9FF;
+  /* Study Schedule task types: soft backgrounds, always with dark text on them. */
+  --type-q: #e1e1ff;  /* Questions */
+  --type-c: #dbeafd;  /* Case reading */
+  --type-f: #d9f2e3;  /* Fill-in-the-blank */
+  --type-r: #fff1c2;  /* Review */
+  --type-e: #ffdcdc;  /* Exam */
+  --type-o: #ebe8e1;  /* Other */
   --banner-bg: #fff3c4;
   --banner-text: #6b4e00;
   --got: #1f7a4d;
@@ -62,6 +69,7 @@
     --primary-text: #b8b8ff;
     --primary-soft: #34346a;
     --primary-edge: #6c6ce0;
+    --type-q: #303063; --type-c: #1f3550; --type-f: #1d3f2c; --type-r: #4a3e17; --type-e: #552626; --type-o: #33363d;
     --banner-bg: #3a2f0b;
     --banner-text: #f3d77a;
     --got: #5cc48d;
@@ -1195,30 +1203,6 @@ body.dialog-open { overflow: hidden; }
 }
 .schedule-today-btn { width: auto; min-height: 44px; margin: 0 0 0 6px; padding: 8px 14px; }
 
-/* Month: a calendar. Each day is a button; tapping it shows that day below the calendar. */
-.schedule-month { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 4px; margin-bottom: 14px; }
-.month-weekday { padding: 2px 0; font-size: 12px; font-weight: 700; color: var(--muted); text-align: center; text-transform: uppercase; }
-.month-day {
-  min-height: 52px; padding: 4px; border: 1px solid var(--primary-edge); border-radius: 8px;
-  background: var(--card); color: var(--text); font: inherit; text-align: left; cursor: pointer;
-  display: flex; flex-direction: column; gap: 2px; overflow: hidden; -webkit-tap-highlight-color: transparent;
-}
-.month-day.other-month { opacity: 0.55; }
-.month-day.is-off { background: var(--primary-soft); }
-.month-day.is-today .month-num { background: var(--primary); color: var(--on-primary); }
-.month-day[aria-pressed="true"] { border: 2px solid var(--primary); }
-.month-num { align-self: flex-start; min-width: 24px; padding: 0 4px; border-radius: 12px; font-size: 13px; font-weight: 700; text-align: center; }
-.month-off { font-size: 11px; font-weight: 700; color: var(--text); }
-.month-dots { font-size: 11px; color: var(--primary-text); font-weight: 700; }
-.month-day.is-off .month-dots { color: var(--text); }  /* on the lavender of a Day off: dark text */
-.month-task { display: none; font-size: 12px; line-height: 1.3; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.month-task.done { text-decoration: line-through; color: var(--muted); }
-@media (min-width: 700px) {
-  .month-day { min-height: 92px; }
-  .month-task { display: block; }   /* wide enough: the tasks' titles instead of a count */
-  .month-dots { display: none; }
-}
-
 /* A day (Week view lists the week's days; Month view shows the day tapped). */
 .schedule-day { margin-bottom: 12px; }
 .schedule-day.is-off { background: color-mix(in srgb, var(--primary-soft) 45%, var(--card)); }
@@ -1275,3 +1259,65 @@ body.dialog-open { overflow: hidden; }
 /* A task linked to a subject or topic: its title looks like a link (tap opens it). */
 .task-title-btn.is-link { color: var(--primary-text); font-weight: 600; }
 .task-card.done .task-title-btn.is-link { color: var(--muted); }
+/* On a task's colored background, a link is dark text with a purple underline (purple text
+   wouldn't be readable enough on every type color). */
+.task-card .task-title-btn.is-link, .task-chip .task-title-btn.is-link {
+  color: var(--text); text-decoration: underline; text-decoration-color: var(--primary);
+  text-decoration-thickness: 2px; text-underline-offset: 3px;
+}
+.task-card.done .task-title-btn.is-link, .task-chip.done .task-title-btn.is-link { color: var(--muted); text-decoration: line-through; }
+
+/* ---------- Study Schedule: calendar, task chips and types (app.js showMonthGrid / makeTaskCard) ---------- */
+/* The calendar (wide screens): Sunday–Saturday, then each week's total. */
+.schedule-month { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)) 72px; gap: 4px; margin-bottom: 14px; }
+.month-weekday { padding: 2px 0; font-size: 12px; font-weight: 700; color: var(--muted); text-align: center; text-transform: uppercase; }
+.month-day {
+  min-height: 104px; padding: 4px; border: 1px solid var(--primary-edge); border-radius: 8px;
+  background: var(--card); display: flex; flex-direction: column; gap: 3px; min-width: 0;
+}
+.month-day.other-month { opacity: 0.55; }
+.month-day.is-off { background: var(--primary-soft); }
+.month-day.is-picked { border: 2px solid var(--primary); }
+.month-day-head { display: flex; align-items: center; justify-content: space-between; gap: 2px; }
+.month-num {
+  min-width: 28px; height: 28px; padding: 0 4px; border: 0; border-radius: 14px; background: none;
+  font: inherit; font-size: 13px; font-weight: 700; color: var(--text); cursor: pointer;
+}
+.month-day.is-today .month-num { background: var(--primary); color: var(--on-primary); }
+.month-add {
+  width: 28px; height: 28px; border: 1px solid var(--primary-edge); border-radius: 8px; background: var(--card);
+  font: inherit; font-size: 16px; font-weight: 700; line-height: 1; color: var(--primary-text); cursor: pointer;
+}
+.month-off { font-size: 16px; line-height: 1; }
+.month-chips { list-style: none; margin: 0; padding: 0; display: grid; gap: 3px; }
+.month-more { padding: 0 2px; border: 0; background: none; font: inherit; font-size: 12px; font-weight: 600; color: var(--primary-text); text-align: left; cursor: pointer; }
+.month-week-total {
+  display: flex; align-items: center; justify-content: center; padding: 4px; border-radius: 8px;
+  font-size: 12px; line-height: 1.3; color: var(--muted); text-align: center; background: color-mix(in srgb, var(--primary-soft) 30%, transparent);
+}
+
+/* A small task chip in a calendar day. */
+.task-chip {
+  display: flex; align-items: center; gap: 4px; min-width: 0; padding: 2px 4px; border-radius: 6px;
+  font-size: 12px; line-height: 1.3; cursor: pointer;
+}
+.task-chip input[type="checkbox"] { width: 14px; height: 14px; flex: 0 0 14px; margin: 0; accent-color: var(--primary); }
+.task-chip .task-title-btn { min-height: 0; font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.task-chip .task-time { padding: 0 4px; font-size: 11px; background: none; }
+.task-chip.done .task-title-btn { text-decoration: line-through; color: var(--muted); }
+
+/* Each type's soft color, behind dark text (cards and chips alike). */
+.task-card[data-type], .task-chip[data-type] { color: var(--text); }
+.task-card[data-type="q"], .task-chip[data-type="q"] { background: var(--type-q); }
+.task-card[data-type="c"], .task-chip[data-type="c"] { background: var(--type-c); }
+.task-card[data-type="f"], .task-chip[data-type="f"] { background: var(--type-f); }
+.task-card[data-type="r"], .task-chip[data-type="r"] { background: var(--type-r); }
+.task-card[data-type="e"], .task-chip[data-type="e"] { background: var(--type-e); }
+.task-card[data-type="o"], .task-chip[data-type="o"] { background: var(--type-o); }
+.task-card { cursor: pointer; }
+.task-card .task-time { background: var(--card); }
+.task-card.done, .task-chip.done { opacity: 0.85; }
+
+/* Phones (Month as a list): a total line for each week. */
+.week-total { margin: 18px 4px 8px; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); }
+.schedule-day.is-today { border: 2px solid var(--primary); }
