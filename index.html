@@ -319,8 +319,12 @@
       </div>
       </div>
 
-      <!-- Appears once the question is answered (or rated) -->
-      <button class="btn btn-primary next-btn" id="next-btn" hidden>Next</button>
+      <!-- Previous / Next: always there, so she can move around without answering.
+           Skipping counts as nothing. On the last question, Next says "Finish". -->
+      <div class="question-nav">
+        <button class="btn btn-secondary" id="prev-btn">‹ Previous</button>
+        <button class="btn btn-primary next-btn" id="next-btn">Next ›</button>
+      </div>
 
       <!-- "Read the case" buttons for the cases this question is based on -->
       <div class="question-cases" id="question-cases"></div>

@@ -644,6 +644,9 @@ body {
 .rating-summary .big-score.got-text { color: var(--got); }
 .rating-summary .big-score.partly-text { color: var(--partly); }
 .rating-summary .big-score.missed-text { color: var(--missed); }
+/* Previous / Next on the question screen: side by side, the shared button look. */
+.question-nav { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 20px 0 16px; }
+.question-nav .btn { margin: 0; }  /* the row has the spacing; both buttons the same size */
 .btn-secondary { background: var(--card); color: var(--primary-text); border-color: var(--primary); margin-bottom: 16px; }
 
 /* ---------- Error message ---------- */

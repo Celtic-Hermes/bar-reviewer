@@ -175,6 +175,7 @@ function rememberSpot() {
       fbCorrect: session.fbCorrect,    // ...and how many of those were "Got it"
       fbView: session.fbView,          // fill in the blank: "quiz" or "read"
       current: session.current,  // what she's done on this question: her pick, or answer shown, rating, checked key points
+      states: isPlainObject(session.states) ? session.states : {},  // the same, for every question she visited (Previous / Next)
       practiceCaseId: practiceCase ? practiceCase.id : null
     };
   }
@@ -321,7 +322,8 @@ function putBackRound(round) {
     },
     fbAnswered: wholeNumberOrZero(round.fbAnswered),
     fbCorrect: wholeNumberOrZero(round.fbCorrect),
-    fbView: round.fbView === "read" ? "read" : "quiz"
+    fbView: round.fbView === "read" ? "read" : "quiz",
+    states: isPlainObject(round.states) ? round.states : {}
   };
   showQuestion();
   putBackCurrent(round.current);
@@ -1524,9 +1526,10 @@ function showQuestion() {
   showTag(question);
   showQuestionCases(question);
 
-  const nextButton = document.getElementById("next-btn");
-  nextButton.hidden = true;
-  nextButton.textContent = isLast ? "See results" : "Next";
+  // Previous / Next are always there (she can skip). Previous is greyed out on the first
+  // question; on the last one Next says "Finish" and goes to the results.
+  document.getElementById("next-btn").textContent = isLast ? "Finish" : "Next ›";
+  document.getElementById("prev-btn").disabled = session.index === 0;
 
   const isMcq = question.type === "mcq";
   const isFill = question.type === "fillblank";
@@ -1664,7 +1667,6 @@ function showPicked(question, picked) {
   result.className = "feedback-title " + (isRight ? "got-text" : "missed-text");
   setRichText(document.getElementById("mcq-explanation"), question.explanation);
   document.getElementById("mcq-feedback").hidden = false;
-  document.getElementById("next-btn").hidden = false;
   document.getElementById("find-btn").hidden = false;  // she has answered: "Find in case" is allowed now
 }
 
@@ -1812,10 +1814,6 @@ function applyFbView() {
   document.querySelectorAll(".fb-view-btn").forEach(function (button) {
     button.setAttribute("aria-pressed", button.dataset.view === (reading ? "read" : "quiz") ? "true" : "false");
   });
-  if (isFill) {
-    // Quiz: Next only after she rates. Read: Next right away.
-    document.getElementById("next-btn").hidden = !reading && !session.current.fbRating;
-  }
 }
 
 document.querySelectorAll(".fb-view-btn").forEach(function (button) {
@@ -2359,7 +2357,6 @@ function showFbRated(rating) {
   const result = document.getElementById("fb-result");
   result.textContent = "You rated this: " + rating + (rating === "Missed it" ? " (added to Review missed)" : "");
   result.hidden = false;
-  document.getElementById("next-btn").hidden = false;
 }
 
 // --- Essay ---
@@ -2439,15 +2436,49 @@ function showRated(rating) {
   const result = document.getElementById("rating-result");
   result.textContent = "You rated this: " + rating;
   result.hidden = false;
-  document.getElementById("next-btn").hidden = false;
+}
+
+// ---------- Previous / Next ----------
+// She can move around the round freely, answered or not. Each question she visits keeps
+// what she did on it (session.states, by position in the round): going back shows it
+// exactly as she left it (her pick and its result, her rating, her typed blanks), using
+// putBackCurrent, which never counts anything again. A question she never touched opens
+// fresh. Skipping counts as nothing: only an actual answer or rating is ever recorded.
+function goToQuestion(index) {
+  if (index < 0 || index >= session.questions.length) { return; }
+  if (!isPlainObject(session.states)) { session.states = {}; }
+  session.states[session.index] = JSON.parse(JSON.stringify(session.current || {}));
+  session.index = index;
+  showQuestion();
+  const saved = session.states[index];
+  if (isPlainObject(saved)) { putBackCurrent(saved); }
 }
 
 document.getElementById("next-btn").addEventListener("click", function () {
-  session.index += 1;
-  if (session.index < session.questions.length) {
-    showQuestion();
+  if (session.index < session.questions.length - 1) {
+    goToQuestion(session.index + 1);
   } else {
-    showResults();
+    showResults();  // "Finish"
+  }
+});
+
+document.getElementById("prev-btn").addEventListener("click", function () {
+  if (session.index > 0) { goToQuestion(session.index - 1); }
+});
+
+// Mac / iPad keyboard: ← and → work like Previous and Next on the question screen, except
+// while she's typing (a blank, a note, any text box or dropdown) or a panel or menu is open.
+document.addEventListener("keydown", function (event) {
+  if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") { return; }
+  if (shownScreen !== "screen-question" || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) { return; }
+  const focused = document.activeElement;
+  if (focused && (/^(INPUT|TEXTAREA|SELECT)$/.test(focused.tagName) || focused.isContentEditable)) { return; }
+  if (document.body.classList.contains("menu-open") || document.body.classList.contains("sheet-open")) { return; }
+  event.preventDefault();
+  if (event.key === "ArrowLeft") {
+    document.getElementById("prev-btn").click();
+  } else if (session.index < session.questions.length - 1) {
+    document.getElementById("next-btn").click();  // never "Finish" by an arrow key
   }
 });
 
