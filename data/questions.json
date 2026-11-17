@@ -5001,5 +5001,149 @@
       "part": "Section 9 (Proceedings for sale or encumbrance of trust estate)",
       "excerpt": "Section 9. Proceedings for sale or encumbrance of trust estate. — When the sale or encumbrance of any real or personal estate held in trust is necessary or expedient, the court having jurisdiction of the trust may, on petition and after due notice and hearing, order such sale or encumbrance to be made, and the re-investment and application of the proceeds thereof in such manner as will best effect the objects of the trust. The petition, notice, hearing, order of sale or encumbrance, and record of proceedings, shall conform as nearly as may be to the provisions concerning the sale or imcumbrance by guardians of the property of minors or other wards."
     }
+  },
+  {
+    "id": "q-0248",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Absentees (Rule 107)",
+    "prompt": "Section 1. Appointment of representative. — When a person ____, his whereabouts being unknown, and ____ to administer his property, or the ____, ____ may petition the Court of First Instance of the place where the absentee resided before his disappearance, for the appointment of a person to ____ in all that may be necessary. In the City of Manila, the petition shall be filed in the ____.",
+    "fullText": "Section 1. Appointment of representative. — When a person disappears from his domicile, his whereabouts being unknown, and without having left an agent to administer his property, or the power conferred upon the agent has expired, any interested party, relative or friend may petition the Court of First Instance of the place where the absentee resided before his disappearance, for the appointment of a person to represent him provisionally in all that may be necessary. In the City of Manila, the petition shall be filed in the Juvenile and Domestic Relations Court.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Court, Rule 107 (Absentees)",
+      "grNumber": "Rules of Court, Rule 107",
+      "url": "https://lawphil.net/courts/supreme/rc/rc_72-109_proceedings.html",
+      "part": "Section 1 (Appointment of representative)",
+      "excerpt": "Section 1. Appointment of representative. — When a person disappears from his domicile, his whereabouts being unknown, and without having left an agent to administer his property, or the power conferred upon the agent has expired, any interested party, relative or friend may petition the Court of First Instance of the place where the absentee resided before his disappearance, for the appointment of a person to represent him provisionally in all that may be necessary. In the City of Manila, the petition shall be filed in the Juvenile and Domestic Relations Court."
+    }
+  },
+  {
+    "id": "q-0249",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Absentees (Rule 107)",
+    "prompt": "Section 2. Declaration of absence; who may petition. — After the lapse of ____ from his disapperance and ____ or since the receipt of the last news, or of ____ in case the absentee has left a person in charge of the ____, the declaration of his absence and appointment of a trustee or administrative may be applied for by any of the following:\n\n(a) The ____;\n\n(b) The ____, who may present an authentic copy of the same.\n\n(c) The ____; and\n\n(d) Those who have over the property of the absentee some right subordinated to the ____.",
+    "fullText": "Section 2. Declaration of absence; who may petition. — After the lapse of two (2) years from his disapperance and without any news about the absentee or since the receipt of the last news, or of five (5) years in case the absentee has left a person in charge of the administration of his property, the declaration of his absence and appointment of a trustee or administrative may be applied for by any of the following:\n\n(a) The spouse present;\n\n(b) The heirs instituted in a will, who may present an authentic copy of the same.\n\n(c) The relatives who would succeed by the law of intestacy; and\n\n(d) Those who have over the property of the absentee some right subordinated to the condition of his death.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Court, Rule 107 (Absentees)",
+      "grNumber": "Rules of Court, Rule 107",
+      "url": "https://lawphil.net/courts/supreme/rc/rc_72-109_proceedings.html",
+      "part": "Section 2 (Declaration of absence; who may petition)",
+      "excerpt": "Section 2. Declaration of absence; who may petition. — After the lapse of two (2) years from his disapperance and without any news about the absentee or since the receipt of the last news, or of five (5) years in case the absentee has left a person in charge of the administration of his property, the declaration of his absence and appointment of a trustee or administrative may be applied for by any of the following:\n\n(a) The spouse present;\n\n(b) The heirs instituted in a will, who may present an authentic copy of the same.\n\n(c) The relatives who would succeed by the law of intestacy; and\n\n(d) Those who have over the property of the absentee some right subordinated to the condition of his death."
+    }
+  },
+  {
+    "id": "q-0250",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Absentees (Rule 107)",
+    "prompt": "Section 3. Contents of petition. — The petition for the appointment of a representative, or for the declaration of absence and the appointment of a trustee or an administrator, must show the following:\n\n(a) The ____;\n\n(b) The names, ages, and residences of the ____, copy of which shall be presented, and of the ____;\n\n(c) The names and residences of ____ and others who may have any ____ over the property of the absentee;\n\n(d) The ____ of the property belonging to the absentee.",
+    "fullText": "Section 3. Contents of petition. — The petition for the appointment of a representative, or for the declaration of absence and the appointment of a trustee or an administrator, must show the following:\n\n(a) The jurisdictional facts;\n\n(b) The names, ages, and residences of the heirs instituted in the will, copy of which shall be presented, and of the relatives who would succeed by the law of intestacy;\n\n(c) The names and residences of creditors and others who may have any adverse interest over the property of the absentee;\n\n(d) The probable value, location and character of the property belonging to the absentee.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Court, Rule 107 (Absentees)",
+      "grNumber": "Rules of Court, Rule 107",
+      "url": "https://lawphil.net/courts/supreme/rc/rc_72-109_proceedings.html",
+      "part": "Section 3 (Contents of petition)",
+      "excerpt": "Section 3. Contents of petition. — The petition for the appointment of a representative, or for the declaration of absence and the appointment of a trustee or an administrator, must show the following:\n\n(a) The jurisdictional facts;\n\n(b) The names, ages, and residences of the heirs instituted in the will, copy of which shall be presented, and of the relatives who would succeed by the law of intestacy;\n\n(c) The names and residences of creditors and others who may have any adverse interest over the property of the absentee;\n\n(d) The probable value, location and character of the property belonging to the absentee."
+    }
+  },
+  {
+    "id": "q-0251",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Absentees (Rule 107)",
+    "prompt": "Section 4. Time of hearing; notice and publication thereof. — When a petition for the appointment of a representative, or for the declaration of absence and the appointment of a trustee or administrator, is filed, the court shall fix a date and place for the hearing thereof where all concerned may appear to ____.\n\nCopies of the notice of the time and place fixed for the hearing shall be served upon the ____, at least ____ before the day of the hearing, and shall be published ____ prior to the time designated for the hearing, in a ____ in the province or city where the absentee resides, as the court shall deem best.",
+    "fullText": "Section 4. Time of hearing; notice and publication thereof. — When a petition for the appointment of a representative, or for the declaration of absence and the appointment of a trustee or administrator, is filed, the court shall fix a date and place for the hearing thereof where all concerned may appear to contest the petition.\n\nCopies of the notice of the time and place fixed for the hearing shall be served upon the known heirs, legatees, devisees, creditors and other interested persons, at least ten (10) days before the day of the hearing, and shall be published once a week for three (3) consecutive weeks prior to the time designated for the hearing, in a newspaper of general circulation in the province or city where the absentee resides, as the court shall deem best.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Court, Rule 107 (Absentees)",
+      "grNumber": "Rules of Court, Rule 107",
+      "url": "https://lawphil.net/courts/supreme/rc/rc_72-109_proceedings.html",
+      "part": "Section 4 (Time of hearing; notice and publication thereof)",
+      "excerpt": "Section 4. Time of hearing; notice and publication thereof. — When a petition for the appointment of a representative, or for the declaration of absence and the appointment of a trustee or administrator, is filed, the court shall fix a date and place for the hearing thereof where all concerned may appear to contest the petition.\n\nCopies of the notice of the time and place fixed for the hearing shall be served upon the known heirs, legatees, devisees, creditors and other interested persons, at least ten (10) days before the day of the hearing, and shall be published once a week for three (3) consecutive weeks prior to the time designated for the hearing, in a newspaper of general circulation in the province or city where the absentee resides, as the court shall deem best."
+    }
+  },
+  {
+    "id": "q-0252",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Absentees (Rule 107)",
+    "prompt": "Section 5. Opposition. — Anyone appearing to contest the petition shall state ____ his grounds therefor, and serve a copy thereof on the petitioner and other interested parties ____.",
+    "fullText": "Section 5. Opposition. — Anyone appearing to contest the petition shall state in writing his grounds therefor, and serve a copy thereof on the petitioner and other interested parties on or before the date designated for the hearing.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Court, Rule 107 (Absentees)",
+      "grNumber": "Rules of Court, Rule 107",
+      "url": "https://lawphil.net/courts/supreme/rc/rc_72-109_proceedings.html",
+      "part": "Section 5 (Opposition)",
+      "excerpt": "Section 5. Opposition. — Anyone appearing to contest the petition shall state in writing his grounds therefor, and serve a copy thereof on the petitioner and other interested parties on or before the date designated for the hearing."
+    }
+  },
+  {
+    "id": "q-0253",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Absentees (Rule 107)",
+    "prompt": "Section 6. Proof at hearing; order. — At the hearing, ____ of this rule must first be shown. Upon ____ of the allegations in the petition, the court shall issue an order granting the same and appointing the representative, trustee or administrator for the absentee. The judge shall take the necessary measures to ____ and shall specify the powers, obligations and remuneration of his representative, trustee or administrator, regulating them by the ____.\n\nIn case of declaration of absence, the same shall not take effect until ____ after its publication in a newspaper of general circulation designated by the court and in the ____.",
+    "fullText": "Section 6. Proof at hearing; order. — At the hearing, compliance with the provisions of section 4 of this rule must first be shown. Upon satisfactory proof of the allegations in the petition, the court shall issue an order granting the same and appointing the representative, trustee or administrator for the absentee. The judge shall take the necessary measures to safeguard the rights and interests of the absentee and shall specify the powers, obligations and remuneration of his representative, trustee or administrator, regulating them by the rules concerning guardians.\n\nIn case of declaration of absence, the same shall not take effect until six (6) months after its publication in a newspaper of general circulation designated by the court and in the Official Gazette.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Court, Rule 107 (Absentees)",
+      "grNumber": "Rules of Court, Rule 107",
+      "url": "https://lawphil.net/courts/supreme/rc/rc_72-109_proceedings.html",
+      "part": "Section 6 (Proof at hearing; order)",
+      "excerpt": "Section 6. Proof at hearing; order. — At the hearing, compliance with the provisions of section 4 of this rule must first be shown. Upon satisfactory proof of the allegations in the petition, the court shall issue an order granting the same and appointing the representative, trustee or administrator for the absentee. The judge shall take the necessary measures to safeguard the rights and interests of the absentee and shall specify the powers, obligations and remuneration of his representative, trustee or administrator, regulating them by the rules concerning guardians.\n\nIn case of declaration of absence, the same shall not take effect until six (6) months after its publication in a newspaper of general circulation designated by the court and in the Official Gazette."
+    }
+  },
+  {
+    "id": "q-0254",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Absentees (Rule 107)",
+    "prompt": "Section 7. Who may be appointed. — In the appointment of a representative, the ____ when there is ____. If the absentee left no spouse, or if the spouse present is a ____, ____ may be appointed by the court.\n\nIn case of declaration of absence, the trustee or administrator of the absentee's property shall be appointed in accordance with the ____.",
+    "fullText": "Section 7. Who may be appointed. — In the appointment of a representative, the spouse present shall be preferred when there is no legal separation. If the absentee left no spouse, or if the spouse present is a minor or otherwise incompetent, any competent person may be appointed by the court.\n\nIn case of declaration of absence, the trustee or administrator of the absentee's property shall be appointed in accordance with the preceding paragraph.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Court, Rule 107 (Absentees)",
+      "grNumber": "Rules of Court, Rule 107",
+      "url": "https://lawphil.net/courts/supreme/rc/rc_72-109_proceedings.html",
+      "part": "Section 7 (Who may be appointed)",
+      "excerpt": "Section 7. Who may be appointed. — In the appointment of a representative, the spouse present shall be preferred when there is no legal separation. If the absentee left no spouse, or if the spouse present is a minor or otherwise incompetent, any competent person may be appointed by the court.\n\nIn case of declaration of absence, the trustee or administrator of the absentee's property shall be appointed in accordance with the preceding paragraph."
+    }
+  },
+  {
+    "id": "q-0255",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Absentees (Rule 107)",
+    "prompt": "Section 8. Termination of administration. — The trusteeship or administration of the property of the absentee shall cease upon ____ in any of the following cases:\n\n(a) When the absentee ____;\n\n(b) When the ____ and his ____;\n\n(c) When a ____ appears, showing by a ____ that he has acquired the absentee's property by ____.\n\nIn these cases the trustee or administrator shall cease in the performance of his office, and the property shall be placed at the ____ of whose may have a right thereto.",
+    "fullText": "Section 8. Termination of administration. — The trusteeship or administration of the property of the absentee shall cease upon order of the court in any of the following cases:\n\n(a) When the absentee appears personally or by means of an agent;\n\n(b) When the death of the absentee is proved and his testate or intestate heirs appear;\n\n(c) When a third person appears, showing by a proper document that he has acquired the absentee's property by purchase or other title.\n\nIn these cases the trustee or administrator shall cease in the performance of his office, and the property shall be placed at the disposal of whose may have a right thereto.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Court, Rule 107 (Absentees)",
+      "grNumber": "Rules of Court, Rule 107",
+      "url": "https://lawphil.net/courts/supreme/rc/rc_72-109_proceedings.html",
+      "part": "Section 8 (Termination of administration)",
+      "excerpt": "Section 8. Termination of administration. — The trusteeship or administration of the property of the absentee shall cease upon order of the court in any of the following cases:\n\n(a) When the absentee appears personally or by means of an agent;\n\n(b) When the death of the absentee is proved and his testate or intestate heirs appear;\n\n(c) When a third person appears, showing by a proper document that he has acquired the absentee's property by purchase or other title.\n\nIn these cases the trustee or administrator shall cease in the performance of his office, and the property shall be placed at the disposal of whose may have a right thereto."
+    }
   }
 ]
