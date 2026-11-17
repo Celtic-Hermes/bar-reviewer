@@ -87,6 +87,7 @@ function sidebarSection() {
   const from = shownScreen === "screen-case" ? caseCameFrom : (shownScreen === "screen-rule" ? ruleCameFrom : null);
   if (from === "notes") { return "notes"; }
   if (from === "search") { return "search"; }
+  if (from === "schedule") { return "schedule"; }
   return currentSubject ? "subject:" + currentSubject : "home";
 }
 
@@ -243,6 +244,15 @@ function putBackSpot(spot) {
   if (spot.screen === "rule" && spot.ruleCameFrom === "notes") {
     const noteRule = findRule(spot.ruleId);
     if (noteRule) { openRule(noteRule, "notes"); } else { openNotes(); }
+    return true;
+  }
+  // A case or rule opened from the Study Schedule: reopen it, with Back to the schedule.
+  if ((spot.screen === "case" && spot.caseCameFrom === "schedule") || (spot.screen === "rule" && spot.ruleCameFrom === "schedule")) {
+    const item = spot.screen === "case" ? findCase(spot.caseId) : findRule(spot.ruleId);
+    if (!scheduleView) { scheduleView = loadScheduleView(); }
+    if (!scheduleFocus) { scheduleFocus = todayKey(); }
+    if (!item) { openSchedule(); return true; }
+    if (spot.screen === "case") { openCase(item, "schedule"); } else { openRule(item, "schedule"); }
     return true;
   }
   // A case or rule opened from the search: put the search back too, for Back.
@@ -860,7 +870,7 @@ function makeQuestionCard(question, onTap) {
 // "rule-0001:fulltext", with the words numbered across the whole rule.
 let topicRule = null;    // the rule behind the topic screen being shown, if any
 let currentRule = null;  // the rule on the rule screen
-let ruleCameFrom = "topic";  // where the rule screen's Back goes: "topic", "notes" or "search" (home)
+let ruleCameFrom = "topic";  // where the rule screen's Back goes: "topic", "notes", "search" (home) or "schedule"
 
 function findRule(ruleId) {
   return allRules.find(function (r) { return r.id === ruleId; }) || null;
@@ -881,7 +891,10 @@ document.getElementById("topic-rule").addEventListener("click", function () {
 });
 
 document.getElementById("rule-back").addEventListener("click", function () {
-  if (ruleCameFrom === "notes") { openNotes(); } else if (ruleCameFrom === "search") { backToSearch(); } else { openTopicOrSubject(); }
+  if (ruleCameFrom === "notes") { openNotes(); }
+  else if (ruleCameFrom === "search") { backToSearch(); }
+  else if (ruleCameFrom === "schedule") { showSchedule(); showScreen("screen-schedule"); }
+  else { openTopicOrSubject(); }
 });
 
 function loadRuleText(ruleId) {
@@ -902,7 +915,7 @@ function loadRuleText(ruleId) {
 // "cameFrom": "notes" (her My notes list), "search" (the home screen's search), otherwise a topic screen.
 function openRule(rule, cameFrom) {
   currentRule = rule;
-  ruleCameFrom = (cameFrom === "notes" || cameFrom === "search") ? cameFrom : "topic";
+  ruleCameFrom = (cameFrom === "notes" || cameFrom === "search" || cameFrom === "schedule") ? cameFrom : "topic";
   let where;
   if (ruleCameFrom !== "topic") {
     // Not opened from a topic: name the subject and topic its questions are filed under.
@@ -1500,17 +1513,31 @@ function taskLinkTarget(link) {
     return { label: subject, open: function () { openSubject(subject); } };
   }
   if (link.indexOf("topic:") === 0) {
-    const parts = link.slice(6).split("|");
+    const parts = link.slice(6).split("|");  // subject | topic, or subject | topic | sub-topic
     const subject = parts[0];
-    const topic = parts.slice(1).join("|");
+    const topic = parts[1] || "";
+    const subtopic = parts[2] || "";
     if (topicsFor(subject).indexOf(topic) === -1) { return null; }
+    if (subtopic && subtopicsFor(subject, topic).indexOf(subtopic) === -1) { return null; }
     return {
-      label: subject + " · " + topic,
+      label: [subject, topic, subtopic].filter(Boolean).join(" · "),
       open: function () {
         currentSubject = subject;
-        if (subtopicsFor(subject, topic).length > 0) { openSubtopics(topic); } else { openTopic(topic); }
+        if (subtopic) { openTopic(topic, subtopic); }
+        else if (subtopicsFor(subject, topic).length > 0) { openSubtopics(topic); }
+        else { openTopic(topic); }
       }
     };
+  }
+  if (link.indexOf("case:") === 0) {
+    const theCase = findCase(link.slice(5));
+    if (!theCase) { return null; }
+    return { label: theCase.name || "this case", open: function () { openCase(theCase, "schedule"); } };
+  }
+  if (link.indexOf("rule:") === 0) {
+    const rule = findRule(link.slice(5));
+    if (!rule) { return null; }
+    return { label: rule.title || "this rule", open: function () { openRule(rule, "schedule"); } };
   }
   return null;
 }
@@ -1534,13 +1561,33 @@ function fillTaskLinkChoices(select, current) {
       option.value = "topic:" + subject + "|" + topic;
       option.textContent = topic;
       group.appendChild(option);
+      subtopicsFor(subject, topic).forEach(function (subtopic) {
+        const sub = document.createElement("option");
+        sub.value = "topic:" + subject + "|" + topic + "|" + subtopic;
+        sub.textContent = topic + " › " + subtopic;
+        group.appendChild(sub);
+      });
+    });
+    select.appendChild(group);
+  });
+  // Cases and rules (each opens its own screen; Back comes back to the schedule).
+  [["Cases", allCases, "case:", function (c) { return (c.name || c.id) + (c.grNumber ? " (" + c.grNumber + ")" : ""); }],
+   ["Rules", allRules, "rule:", function (r) { return r.title || r.number || r.id; }]].forEach(function (kind) {
+    if (!kind[1].length) { return; }
+    const group = document.createElement("optgroup");
+    group.label = kind[0];
+    kind[1].forEach(function (item) {
+      const option = document.createElement("option");
+      option.value = kind[2] + item.id;
+      option.textContent = kind[3](item);
+      group.appendChild(option);
     });
     select.appendChild(group);
   });
   if (current && !taskLinkTarget(current)) {  // points to something no longer in the app: kept unless changed
     const gone = document.createElement("option");
     gone.value = current;
-    gone.textContent = current.replace(/^(subject|topic):/, "").replace("|", " · ") + " (no longer in the app)";
+    gone.textContent = current.replace(/^(subject|topic|case|rule):/, "").split("|").join(" · ") + " (no longer in the app)";
     select.appendChild(gone);
   }
   select.value = current || "";
@@ -3357,7 +3404,7 @@ function findCase(caseId) {
 }
 
 // Where to go when she taps "‹ Back" on the case screen.
-let caseCameFrom = null;       // "question", "topic", "subject", "notes" or "search"
+let caseCameFrom = null;       // "question", "topic", "subject", "notes", "search" or "schedule"
 let caseHome = "topic";        // where the case screen's Back goes when not back to a question
 let questionScrollSpot = 0;    // where she was on the question screen
 
@@ -4394,6 +4441,9 @@ document.getElementById("case-back").addEventListener("click", function () {
     openNotes();  // back to her notes list
   } else if (caseCameFrom === "search") {
     backToSearch();  // back to the home screen, search results still showing
+  } else if (caseCameFrom === "schedule") {
+    showSchedule();  // back to the Study Schedule (a task linked to this case)
+    showScreen("screen-schedule");
   } else {
     openSubject(currentSubject);
   }
