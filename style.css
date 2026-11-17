@@ -495,6 +495,12 @@ body {
 /* The picked color: filled in, with a check mark (so it's clear without relying on color). */
 .tag-dot[aria-pressed="true"] { background: var(--tag-color); }
 .tag-dot[aria-pressed="true"]::after { content: "✓"; }
+/* A small dot in her tag color, at the start of a question card in a list. */
+.tag-mark {
+  flex-shrink: 0; width: 16px; height: 16px; border-radius: 50%;
+  background: var(--tag-color); border: 2px solid color-mix(in srgb, var(--tag-color) 60%, var(--text));
+}
+.question-card .subject-name { font-weight: 500; }
 
 /* ---------- Practice: top bar with Back and "Question 1 of 3" ---------- */
 .question-topbar { display: flex; align-items: center; justify-content: space-between; }

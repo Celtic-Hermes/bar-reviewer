@@ -41,7 +41,7 @@ document.addEventListener("touchstart", function () {}, { passive: true });
 // ---------- Switching screens ----------
 // Only one screen is visible at a time.
 function showScreen(id) {
-  ["screen-home", "screen-subject", "screen-subtopics", "screen-topic", "screen-question", "screen-results", "screen-case"].forEach(function (screenId) {
+  ["screen-home", "screen-subject", "screen-subtopics", "screen-topic", "screen-tagged", "screen-question", "screen-results", "screen-case"].forEach(function (screenId) {
     document.getElementById(screenId).hidden = (screenId !== id);
   });
   window.scrollTo(0, 0);
@@ -137,7 +137,7 @@ function putBackSpot(spot) {
     return true;
   }
 
-  if (spot.screen === "topic") {
+  if (spot.screen === "topic" || spot.screen === "tagged") {
     openTopicOrSubject();
     return true;
   }
@@ -282,6 +282,7 @@ function makeSubjectCard(subject, badge) {
 const ALL_TOPICS = "All topics";
 const REVIEW_MISSED = "Review missed";
 const BOOKMARKED = "Bookmarked";
+const TAGGED = "Tagged";
 
 // Friendly messages for when one of her lists is empty.
 const EMPTY_LIST_MESSAGES = {};
@@ -289,6 +290,8 @@ EMPTY_LIST_MESSAGES[REVIEW_MISSED] =
   "Nothing to review yet. Questions you get wrong, or rate Partly or Missed it, will show up here.";
 EMPTY_LIST_MESSAGES[BOOKMARKED] =
   "No bookmarks yet. Tap ☆ Bookmark on any question to save it here.";
+EMPTY_LIST_MESSAGES[TAGGED] =
+  "No tagged questions yet. Tap a color (green, yellow or red) on any question to tag it.";
 
 function countLabel(n) {
   return n + (n === 1 ? " question" : " questions");
@@ -350,6 +353,7 @@ function questionsForTopic(subject, topic, mode, subtopic) {
     if (topic === ALL_TOPICS) { return true; }
     if (topic === REVIEW_MISSED) { return Boolean(progress.review[q.id]); }
     if (topic === BOOKMARKED) { return isBookmarked(q.id); }
+    if (topic === TAGGED) { return tagOf(q.id) !== null; }
     return q.topic === topic && inSubtopic(q, subtopic);
   });
 }
@@ -385,7 +389,7 @@ function subtopicsFor(subject, topic) {
 
 // Is this one of the real topics (not "All topics", "Review missed" or "Bookmarked")?
 function isRealTopic(topic) {
-  return [ALL_TOPICS, REVIEW_MISSED, BOOKMARKED].indexOf(topic) === -1;
+  return [ALL_TOPICS, REVIEW_MISSED, BOOKMARKED, TAGGED].indexOf(topic) === -1;
 }
 
 function subtopicLabel(subtopic, topic) {
@@ -487,8 +491,13 @@ document.getElementById("topic-back").addEventListener("click", function () {
 });
 
 // Back to where a round (or a case) came from: the topic screen for a real topic
-// (or its sub-topic picker, if she hasn't picked a sub-topic), else the subject screen.
+// (or its sub-topic picker, if she hasn't picked a sub-topic), her Tagged list,
+// else the subject screen.
 function openTopicOrSubject() {
+  if (currentTopic === TAGGED) {
+    openTagged();
+    return;
+  }
   const topicExists = isRealTopic(currentTopic) && topicsFor(currentSubject).indexOf(currentTopic) !== -1;
   if (!topicExists) {
     openSubject(currentSubject);
@@ -542,6 +551,11 @@ function makeTopicCard(subject, topic) {
       openTopic(topic, null);
       return;
     }
+    // "Tagged" opens its list (or, if it's empty, says so like the other lists).
+    if (topic === TAGGED && questionsForTopic(subject, TAGGED, currentMode()).length > 0) {
+      openTagged();
+      return;
+    }
     startPractice();
   });
   return card;
@@ -567,10 +581,10 @@ function openSubject(subject) {
 
 // Her lists and the topic cards on the subject screen (rebuilt when the question type changes).
 function showTopicCards(subject) {
-  // Her two lists: "Review missed" and "Bookmarked".
+  // Her lists: "Review missed", "Bookmarked" and "Tagged".
   const myLists = document.getElementById("my-lists");
   myLists.innerHTML = "";
-  [REVIEW_MISSED, BOOKMARKED].forEach(function (name) {
+  [REVIEW_MISSED, BOOKMARKED, TAGGED].forEach(function (name) {
     myLists.appendChild(makeTopicCard(subject, name));
   });
 
@@ -582,6 +596,104 @@ function showTopicCards(subject) {
   });
 }
 
+
+// ---------- Her "Tagged" list ----------
+// Every question she color-tagged in this subject (of the question type picked on the
+// subject screen), grouped by color: green, then yellow, then red. Each card shows its
+// color. Tap one to practice just it, or "Start practice" for all of them.
+function openTagged() {
+  currentTopic = TAGGED;
+  currentSubtopic = null;
+  fixedQuestions = null;
+  practiceCase = null;
+  const subject = currentSubject;
+  const mode = currentMode();
+  const questions = questionsForTopic(subject, TAGGED, mode);
+  if (questions.length === 0) {
+    // Nothing tagged anymore (for example, she just removed the last tag).
+    openSubject(subject);
+    showEmptyListMessage(TAGGED);
+    return;
+  }
+  document.getElementById("tagged-back").textContent = "‹ " + subject;
+  document.getElementById("tagged-subject").textContent = subject;
+
+  // "5 questions: 2 green, 2 yellow, 1 red"
+  const counts = TAG_COLORS.map(function (color) {
+    const n = questions.filter(function (q) { return tagOf(q.id) === color; }).length;
+    return n > 0 ? n + " " + color : null;
+  }).filter(Boolean);
+  document.getElementById("tagged-count").textContent =
+    modeCountLabel(questions.length, mode) + ": " + counts.join(", ");
+  document.getElementById("tagged-start").textContent = "Start practice (" + modeCountLabel(questions.length, mode) + ")";
+
+  const list = document.getElementById("tagged-list");
+  list.innerHTML = "";
+  TAG_COLORS.forEach(function (color) {
+    questions.filter(function (q) { return tagOf(q.id) === color; }).forEach(function (question) {
+      list.appendChild(makeQuestionCard(question, function () {
+        fixedQuestions = [question];  // practice just this one; Back returns to this list
+        practiceCase = null;
+        currentTopic = TAGGED;
+        startPractice();
+      }));
+    });
+  });
+  showScreen("screen-tagged");
+}
+
+document.getElementById("tagged-start").addEventListener("click", function () {
+  fixedQuestions = null;
+  practiceCase = null;
+  currentTopic = TAGGED;
+  startPractice();
+});
+
+document.getElementById("tagged-back").addEventListener("click", function () {
+  openSubject(currentSubject);
+});
+
+// "Essay", "Multiple choice" or "Fill in the blank".
+function questionTypeLabel(question) {
+  if (question.type === "mcq") { return "Multiple choice"; }
+  if (question.type === "fillblank") { return "Fill in the blank"; }
+  return "Essay";
+}
+
+// A small dot in her tag color (or nothing, if the question has no tag).
+// Its look lives in the ".tag-mark" rule in style.css.
+function tagMark(question) {
+  const tag = tagOf(question.id);
+  if (!tag) { return null; }
+  const mark = document.createElement("span");
+  mark.className = "tag-mark";
+  mark.dataset.tag = tag;
+  mark.setAttribute("role", "img");
+  mark.setAttribute("aria-label", tag.charAt(0).toUpperCase() + tag.slice(1) + " tag");
+  return mark;
+}
+
+// One tappable card for a question in a list: her tag color (if any), the start of the
+// question, then its type and topic, and "Unverified" if nobody has checked it yet.
+function makeQuestionCard(question, onTap) {
+  const card = document.createElement("button");
+  card.className = "subject-card question-card";
+  const mark = tagMark(question);
+  if (mark) { card.appendChild(mark); }
+  const text = document.createElement("span");
+  text.className = "subject-name";
+  const prompt = plainText(question.prompt).replace(/\s+/g, " ").trim();
+  // A short preview, cut at the end of a whole word.
+  text.textContent = prompt.length > 110 ? prompt.slice(0, 110).replace(/\s+\S*$/, "") + "…" : prompt;
+  const where = [questionTypeLabel(question), question.topic].filter(Boolean).join(" · ");
+  text.appendChild(cardDetail(where, question.status === "verified"));
+  const arrow = document.createElement("span");
+  arrow.className = "subject-arrow";
+  arrow.textContent = "›";
+  card.append(text, arrow);
+  card.addEventListener("click", onTap);
+  return card;
+}
 
 // ---------- Case titles: one shared look everywhere ----------
 // Every place that shows a case's name as a label builds it with caseTitle() (or, for the
