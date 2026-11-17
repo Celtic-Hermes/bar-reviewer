@@ -47,6 +47,7 @@ function showScreen(id) {
   });
   window.scrollTo(0, 0);
   shownScreen = id;
+  if (id === "screen-home") { showTodayCard(); }  // up to date whenever she comes home
   rememberSpot();
   reloadForUpdateIfSafe();  // a new version waiting? Moving between screens is a safe moment
 }
@@ -886,6 +887,52 @@ function showRuleText(box, text, rule) {
   });
   joinHighlights(box);
 }
+
+// ---------- Today card (home screen): streak and daily goal ----------
+function showTodayCard() {
+  const streak = streakInfo();
+  const count = todayCount();
+  const goal = dailyGoal();
+
+  document.getElementById("today-streak").textContent = streak.current > 0
+    ? "🔥 " + streak.current + "-day streak"
+    : "🔥 No streak yet";
+  document.getElementById("today-streak").classList.toggle("none", streak.current === 0);
+  const best = document.getElementById("today-best");
+  best.textContent = "Best: " + streak.best + (streak.best === 1 ? " day" : " days");
+  best.hidden = streak.best === 0;
+
+  document.getElementById("today-count").textContent = "Today " + count + " / " + goal;
+  const bar = document.getElementById("today-bar");
+  bar.setAttribute("aria-valuemax", String(goal));
+  bar.setAttribute("aria-valuenow", String(Math.min(count, goal)));
+  document.getElementById("today-bar-fill").style.width = Math.min(100, Math.round(100 * count / goal)) + "%";
+  bar.classList.toggle("done", count >= goal);
+
+  let note;
+  if (count >= goal) {
+    note = "Daily goal reached! 🎉";
+  } else if (!streak.studiedToday && streak.current > 0) {
+    note = "Answer a question today to keep your " + streak.current + "-day streak.";
+  } else if (!streak.studiedToday) {
+    note = streak.everStudied ? "Answer a question today to start a new streak." : "Answer a question today to start a streak.";
+  } else {
+    const left = goal - count;
+    note = left + (left === 1 ? " more question" : " more questions") + " to reach today's goal.";
+  }
+  document.getElementById("today-note").textContent = note;
+  document.getElementById("today-goal").value = String(goal);
+}
+
+document.getElementById("today-goal").addEventListener("change", function (event) {
+  setDailyGoal(Number(event.target.value));
+  showTodayCard();
+});
+
+// Back in the app on a new day (or after a while): bring the home screen's card up to date.
+document.addEventListener("visibilitychange", function () {
+  if (document.visibilityState === "visible" && shownScreen === "screen-home") { showTodayCard(); }
+});
 
 // ---------- Case titles: one shared look everywhere ----------
 // Every place that shows a case's name as a label builds it with caseTitle() (or, for the
@@ -2720,13 +2767,14 @@ document.getElementById("restore-input").addEventListener("change", function (ev
     }
     const sure = window.confirm(
       "Replace the progress on this phone with the backup from " + describeDate(backup.savedAt) + "?\n\n" +
-      "Your current scores, review list, bookmarks, and color tags will be replaced."
+      "Your current scores, review list, bookmarks, color tags, and study streak will be replaced."
     );
     if (!sure) {
       showBackupMessage("Restore cancelled. Nothing was changed.");
       return;
     }
     if (restoreProgress(backup.progress)) {
+      showTodayCard();  // the restored streak and today's count
       showBackupMessage("Progress restored from the backup of " + describeDate(backup.savedAt) + ".");
     } else {
       showBackupMessage("Loaded the backup, but this phone wouldn't save it. Private browsing may be on.", true);
@@ -2737,6 +2785,7 @@ document.getElementById("restore-input").addEventListener("change", function (ev
 
 // ---------- Start the app ----------
 buildHome();
+showTodayCard();
 
 // If she was somewhere else when the app last closed, don't flash the home screen
 // while the files load; restoreSpot() below shows the right screen.

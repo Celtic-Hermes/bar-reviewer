@@ -14,6 +14,9 @@
 //                      fill in the blank); on: the date; level: the Blanks level (fill in the blank);
 //              inARow: right answers in a row that count toward mastery (2 or more = mastered),
 //                      at most one per day; countedOn: the day it last went up.
+//   settings:  her choices: { "dailyGoal": 20 } (10, 20, 30 or 50)
+//   streakBest: her longest streak of study days ever (kept here, since "daily" only
+//              keeps 400 days)
 //   tags:      her color tag on a question, by ID: "green", "yellow" or "red"
 //              (what each color means is up to her; no tag = not in the list)
 //   highlights: words she highlighted, as a list of word positions (0 = first word).
@@ -83,8 +86,18 @@ function cleanResults(value) {
   return clean;
 }
 
+// Her settings (defined up here because loading her progress, just below, needs them).
+const DAILY_GOALS = [10, 20, 30, 50];
+const DEFAULT_DAILY_GOAL = 20;
+
+function cleanSettings(value) {
+  const clean = {};
+  if (isPlainObject(value) && DAILY_GOALS.indexOf(value.dailyGoal) !== -1) { clean.dailyGoal = value.dailyGoal; }
+  return clean;
+}
+
 function emptyProgress() {
-  return { subjects: {}, review: {}, bookmarks: {}, tags: {}, highlights: {}, highlightColors: {}, daily: {}, results: {} };
+  return { subjects: {}, review: {}, bookmarks: {}, tags: {}, highlights: {}, highlightColors: {}, daily: {}, results: {}, settings: {}, streakBest: 0 };
 }
 
 // Read saved progress. If there's none, or it's damaged, start fresh instead of crashing.
@@ -101,6 +114,8 @@ function loadProgress() {
       tags: cleanTags(data.tags),
       daily: cleanDaily(data.daily),
       results: cleanResults(data.results),
+      settings: cleanSettings(data.settings),
+      streakBest: wholeNumberOrZero(data.streakBest),
       highlights: cleanHighlights(data.highlights),
       highlightColors: cleanHighlightColors(data.highlightColors)
     };
@@ -257,6 +272,62 @@ function noteResult(question, last, effect, level) {
   if (countedOn && newCount > 0) { result.countedOn = countedOn; }
   if (FB_LEVEL_IDS.indexOf(level) !== -1) { result.level = level; }
   progress.results[question.id] = result;
+}
+
+// ---------- Daily goal and streak (the Today card) ----------
+function dailyGoal() {
+  return DAILY_GOALS.indexOf(progress.settings.dailyGoal) !== -1 ? progress.settings.dailyGoal : DEFAULT_DAILY_GOAL;
+}
+
+function setDailyGoal(goal) {
+  if (DAILY_GOALS.indexOf(goal) === -1) { return; }
+  progress.settings.dailyGoal = goal;
+  saveProgress();
+}
+
+function todayCount() {
+  return progress.daily[todayKey()] || 0;
+}
+
+// "2026-11-17" for a date, and the day before a date (at noon, so clock changes can't skip a day).
+function dayKeyOf(date) {
+  return date.getFullYear() + "-" + String(date.getMonth() + 1).padStart(2, "0") + "-" + String(date.getDate()).padStart(2, "0");
+}
+function dayBefore(date) {
+  return new Date(date.getFullYear(), date.getMonth(), date.getDate() - 1, 12);
+}
+
+// Her streak: consecutive days with at least one finished question.
+// current: the streak up to today, or up to yesterday if she hasn't studied yet today
+//          (it's still alive until today ends); studiedToday: whether today counts yet;
+// best: her longest streak ever (saved, since only 400 days of counts are kept).
+function streakInfo() {
+  const daily = progress.daily;
+  const now = new Date();
+  let day = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 12);
+  const studiedToday = (daily[dayKeyOf(day)] || 0) > 0;
+  if (!studiedToday) { day = dayBefore(day); }
+  let current = 0;
+  while ((daily[dayKeyOf(day)] || 0) > 0) {
+    current += 1;
+    day = dayBefore(day);
+  }
+  // Longest run among the days kept.
+  let longest = 0;
+  let run = 0;
+  let previous = null;
+  Object.keys(daily).sort().forEach(function (key) {
+    const parts = key.split("-").map(Number);
+    const date = new Date(parts[0], parts[1] - 1, parts[2], 12);
+    run = (previous && dayKeyOf(dayBefore(date)) === previous) ? run + 1 : 1;
+    longest = Math.max(longest, run);
+    previous = key;
+  });
+  if (longest > progress.streakBest) {
+    progress.streakBest = longest;
+    saveProgress();
+  }
+  return { current: current, studiedToday: studiedToday, best: progress.streakBest, everStudied: Object.keys(daily).length > 0 };
 }
 
 function isBookmarked(questionId) {
@@ -494,6 +565,8 @@ function readBackup(text) {
   // Older backups have no daily counts or results either: they start empty.
   clean.daily = cleanDaily(p.daily);
   clean.results = cleanResults(p.results);
+  clean.settings = cleanSettings(p.settings);
+  clean.streakBest = wholeNumberOrZero(p.streakBest);
   // Backups made before a subject moved: follow the move.
   followMovedSubjects(clean.subjects);
   // Older backups have no highlights; that's fine, they just start empty.

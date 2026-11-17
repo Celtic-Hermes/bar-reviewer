@@ -27,6 +27,28 @@
     <section id="screen-home">
       <h1 class="screen-title">Bar Reviewer</h1>
       <p class="screen-subtitle">Pick a subject to review.</p>
+
+      <!-- Today: her streak and daily goal -->
+      <section class="card today-card" id="today-card" aria-label="Today">
+        <div class="today-top">
+          <p class="today-streak" id="today-streak"></p>
+          <p class="today-best" id="today-best"></p>
+        </div>
+        <p class="today-count" id="today-count"></p>
+        <div class="today-bar" id="today-bar" role="progressbar" aria-label="Today's goal" aria-valuemin="0">
+          <span class="today-bar-fill" id="today-bar-fill"></span>
+        </div>
+        <p class="today-note" id="today-note"></p>
+        <label class="today-goal">Daily goal
+          <select id="today-goal">
+            <option value="10">10 questions</option>
+            <option value="20">20 questions</option>
+            <option value="30">30 questions</option>
+            <option value="50">50 questions</option>
+          </select>
+        </label>
+      </section>
+
       <div class="subject-list" id="subject-list"></div>
 
       <!-- Extra subjects that are not one of the 8 bar subjects -->
@@ -37,7 +59,7 @@
       <!-- Back up / restore her progress as a file -->
       <section class="card backup-card">
         <h2 class="label">Back up your progress</h2>
-        <p class="backup-note">Save a copy of your scores, review list, bookmarks, and color tags as a file. Keep it in Files or iCloud Drive, so you can load it back if this phone ever loses your progress.</p>
+        <p class="backup-note">Save a copy of your scores, review list, bookmarks, color tags, and study streak as a file. Keep it in Files or iCloud Drive, so you can load it back if this phone ever loses your progress.</p>
         <button class="btn btn-primary" id="backup-btn">Back up my progress</button>
         <label class="btn btn-secondary" for="restore-input">Restore progress</label>
         <input type="file" id="restore-input" class="visually-hidden">

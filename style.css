@@ -656,6 +656,24 @@ body {
 /* Inside a card's small detail line: a bit smaller to fit the line. */
 .card-detail .status-unverified { padding: 1px 8px; font-size: 12px; }
 
+/* ---------- Today card (home screen): streak and daily goal ---------- */
+.today-card { margin: 4px 0 18px; }
+.today-top { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+.today-streak { margin: 0; font-size: 19px; font-weight: 700; }
+.today-streak.none { color: var(--muted); font-weight: 600; }
+.today-best { margin: 0; font-size: 14px; color: var(--muted); }
+.today-count { margin: 12px 0 6px; font-weight: 600; }
+.today-bar { height: 10px; border-radius: 5px; background: var(--border); overflow: hidden; }
+.today-bar-fill { display: block; height: 100%; width: 0; border-radius: 5px; background: var(--primary); transition: width 0.3s ease-out; }
+.today-bar.done .today-bar-fill { background: var(--got); }
+.today-note { margin: 8px 0 0; font-size: 14px; color: var(--muted); }
+.today-goal { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border); font-size: 15px; color: var(--muted); }
+.today-goal select {
+  font: inherit; font-size: 16px; /* 16px: iPhone won't zoom in */
+  padding: 6px 10px; border: 1px solid var(--border); border-radius: 8px;
+  background: var(--card); color: var(--text);
+}
+
 /* ---------- Case screen ---------- */
 .case-number { margin: 0 0 4px; color: var(--muted); font-weight: 600; }
 #screen-case .status-badge { margin-bottom: 16px; }
