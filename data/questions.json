@@ -3651,5 +3651,455 @@
       "part": "Rule 6, Section 4 (Resolution of the defense of a SLAPP)",
       "excerpt": "Section 4. Resolution of the defense of a SLAPP. - The affirmative defense of a SLAPP shall be resolved within thirty (30) days after the summary hearing. If the court dismisses the action, the court may award damages, attorney’s fees and costs of suit under a counterclaim if such has been filed. The dismissal shall be with prejudice.\n\nIf the court rejects the defense of a SLAPP, the evidence adduced during the summary hearing shall be treated as evidence of the parties on the merits of the case. The action shall proceed in accordance with the Rules of Court."
     }
+  },
+  {
+    "id": "q-0173",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Writ of Kalikasan",
+    "prompt": "Section 1. Nature of the writ. - The writ is a remedy available to a ____, entity authorized by law, ____, non-governmental organization, or any public interest group ____, on behalf of persons whose constitutional right to a ____ is violated, or threatened with violation by an ____ of a public official or employee, or private individual or entity, involving ____ as to prejudice the life, health or property of inhabitants in ____.",
+    "fullText": "Section 1. Nature of the writ. - The writ is a remedy available to a natural or juridical person, entity authorized by law, people’s organization, non-governmental organization, or any public interest group accredited by or registered with any government agency, on behalf of persons whose constitutional right to a balanced and healthful ecology is violated, or threatened with violation by an unlawful act or omission of a public official or employee, or private individual or entity, involving environmental damage of such magnitude as to prejudice the life, health or property of inhabitants in two or more cities or provinces.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 7, Section 1 (Nature of the writ)",
+      "excerpt": "Section 1. Nature of the writ. - The writ is a remedy available to a natural or juridical person, entity authorized by law, people’s organization, non-governmental organization, or any public interest group accredited by or registered with any government agency, on behalf of persons whose constitutional right to a balanced and healthful ecology is violated, or threatened with violation by an unlawful act or omission of a public official or employee, or private individual or entity, involving environmental damage of such magnitude as to prejudice the life, health or property of inhabitants in two or more cities or provinces."
+    }
+  },
+  {
+    "id": "q-0174",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Writ of Kalikasan",
+    "prompt": "Section 2. Contents of the petition. - The verified petition shall contain the following:\n\n(a) The ____;\n\n(b) The name and personal circumstances of the respondent or if the name and personal circumstances are unknown and uncertain, the respondent may be described by an ____;\n\n(c) The environmental law, rule or regulation violated or threatened to be violated, the act or omission complained of, and the ____ as to prejudice the life, health or property of inhabitants in ____.\n\n(d) All relevant and material evidence consisting of the affidavits of witnesses, documentary evidence, ____, and if possible, ____;\n\n(e) The ____ that: (1) petitioner has not commenced any action or filed any claim involving the same issues in any court, tribunal or quasi-judicial agency, and no such other action or claim is pending therein; (2) if there is such other pending action or claim, a complete statement of its present status; (3) if petitioner should learn that the same or similar action or claim has been filed or is pending, petitioner shall report to the court that fact within ____ therefrom; and\n\n(f) The reliefs prayed for which may include a prayer for the issuance of a ____.",
+    "fullText": "Section 2. Contents of the petition. - The verified petition shall contain the following:\n\n(a) The personal circumstances of the petitioner;\n\n(b) The name and personal circumstances of the respondent or if the name and personal circumstances are unknown and uncertain, the respondent may be described by an assumed appellation;\n\n(c) The environmental law, rule or regulation violated or threatened to be violated, the act or omission complained of, and the environmental damage of such magnitude as to prejudice the life, health or property of inhabitants in two or more cities or provinces.\n\n(d) All relevant and material evidence consisting of the affidavits of witnesses, documentary evidence, scientific or other expert studies, and if possible, object evidence;\n\n(e) The certification of petitioner under oath that: (1) petitioner has not commenced any action or filed any claim involving the same issues in any court, tribunal or quasi-judicial agency, and no such other action or claim is pending therein; (2) if there is such other pending action or claim, a complete statement of its present status; (3) if petitioner should learn that the same or similar action or claim has been filed or is pending, petitioner shall report to the court that fact within five (5) days therefrom; and\n\n(f) The reliefs prayed for which may include a prayer for the issuance of a TEPO.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 7, Section 2 (Contents of the petition)",
+      "excerpt": "Section 2. Contents of the petition. - The verified petition shall contain the following:\n\n(a) The personal circumstances of the petitioner;\n\n(b) The name and personal circumstances of the respondent or if the name and personal circumstances are unknown and uncertain, the respondent may be described by an assumed appellation;\n\n(c) The environmental law, rule or regulation violated or threatened to be violated, the act or omission complained of, and the environmental damage of such magnitude as to prejudice the life, health or property of inhabitants in two or more cities or provinces.\n\n(d) All relevant and material evidence consisting of the affidavits of witnesses, documentary evidence, scientific or other expert studies, and if possible, object evidence;\n\n(e) The certification of petitioner under oath that: (1) petitioner has not commenced any action or filed any claim involving the same issues in any court, tribunal or quasi-judicial agency, and no such other action or claim is pending therein; (2) if there is such other pending action or claim, a complete statement of its present status; (3) if petitioner should learn that the same or similar action or claim has been filed or is pending, petitioner shall report to the court that fact within five (5) days therefrom; and\n\n(f) The reliefs prayed for which may include a prayer for the issuance of a TEPO."
+    }
+  },
+  {
+    "id": "q-0175",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Writ of Kalikasan",
+    "prompt": "Section 3. Where to file. - The petition shall be filed with the ____ or with ____.",
+    "fullText": "Section 3. Where to file. - The petition shall be filed with the Supreme Court or with any of the stations of the Court of Appeals.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 7, Section 3 (Where to file)",
+      "excerpt": "Section 3. Where to file. - The petition shall be filed with the Supreme Court or with any of the stations of the Court of Appeals."
+    }
+  },
+  {
+    "id": "q-0176",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Writ of Kalikasan",
+    "prompt": "Section 4. No docket fees. - The petitioner shall be ____ from the payment of ____.",
+    "fullText": "Section 4. No docket fees. - The petitioner shall be exempt from the payment of docket fees.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 7, Section 4 (No docket fees)",
+      "excerpt": "Section 4. No docket fees. - The petitioner shall be exempt from the payment of docket fees."
+    }
+  },
+  {
+    "id": "q-0177",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Writ of Kalikasan",
+    "prompt": "Section 5. Issuance of the writ. - Within ____ from the date of filing of the petition, if the petition is ____, the court shall give an order: (a) ____; and (b) requiring the respondent to file a ____ as provided in Section 8 of this Rule. The clerk of court shall forthwith issue the writ under the seal of the court including the issuance of a ____ and other ____ effective until further order.",
+    "fullText": "Section 5. Issuance of the writ. - Within three (3) days from the date of filing of the petition, if the petition is sufficient in form and substance, the court shall give an order: (a) issuing the writ; and (b) requiring the respondent to file a verified return as provided in Section 8 of this Rule. The clerk of court shall forthwith issue the writ under the seal of the court including the issuance of a cease and desist order and other temporary reliefs effective until further order.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 7, Section 5 (Issuance of the writ)",
+      "excerpt": "Section 5. Issuance of the writ. - Within three (3) days from the date of filing of the petition, if the petition is sufficient in form and substance, the court shall give an order: (a) issuing the writ; and (b) requiring the respondent to file a verified return as provided in Section 8 of this Rule. The clerk of court shall forthwith issue the writ under the seal of the court including the issuance of a cease and desist order and other temporary reliefs effective until further order."
+    }
+  },
+  {
+    "id": "q-0178",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Writ of Kalikasan",
+    "prompt": "Section 6. How the writ is served. - The writ shall be served upon the respondent by a ____, who shall retain a copy on which to make a ____. In case the writ cannot be served personally, the rule on ____ shall apply.",
+    "fullText": "Section 6. How the writ is served. - The writ shall be served upon the respondent by a court officer or any person deputized by the court, who shall retain a copy on which to make a return of service. In case the writ cannot be served personally, the rule on substituted service shall apply.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 7, Section 6 (How the writ is served)",
+      "excerpt": "Section 6. How the writ is served. - The writ shall be served upon the respondent by a court officer or any person deputized by the court, who shall retain a copy on which to make a return of service. In case the writ cannot be served personally, the rule on substituted service shall apply."
+    }
+  },
+  {
+    "id": "q-0179",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Writ of Kalikasan",
+    "prompt": "Section 7. Penalty for refusing to issue or serve the writ. - A clerk of court who ____ after its allowance or a court officer or deputized person who unduly delays or refuses to serve the same shall be punished by the court for ____ without prejudice to ____.",
+    "fullText": "Section 7. Penalty for refusing to issue or serve the writ. - A clerk of court who unduly delays or refuses to issue the writ after its allowance or a court officer or deputized person who unduly delays or refuses to serve the same shall be punished by the court for contempt without prejudice to other civil, criminal or administrative actions.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 7, Section 7 (Penalty for refusing to issue or serve the writ)",
+      "excerpt": "Section 7. Penalty for refusing to issue or serve the writ. - A clerk of court who unduly delays or refuses to issue the writ after its allowance or a court officer or deputized person who unduly delays or refuses to serve the same shall be punished by the court for contempt without prejudice to other civil, criminal or administrative actions."
+    }
+  },
+  {
+    "id": "q-0180",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Writ of Kalikasan",
+    "prompt": "Section 8. Return of respondent; contents. - Within a ____ after service of the writ, the respondent shall file a ____ which shall contain all defenses to show that respondent did not violate or threaten to violate, or allow the violation of any environmental law, rule or regulation or commit any act resulting to environmental damage of such magnitude as to prejudice the life, health or property of inhabitants in two or more cities or provinces.\n\nAll defenses not raised in the return shall be ____.\n\nThe return shall include affidavits of witnesses, documentary evidence, scientific or other expert studies, and if possible, object evidence, in support of the defense of the respondent.\n\nA ____ of allegations in the petition shall be considered as an ____ thereof.",
+    "fullText": "Section 8. Return of respondent; contents. - Within a non-extendible period of ten (10) days after service of the writ, the respondent shall file a verified return which shall contain all defenses to show that respondent did not violate or threaten to violate, or allow the violation of any environmental law, rule or regulation or commit any act resulting to environmental damage of such magnitude as to prejudice the life, health or property of inhabitants in two or more cities or provinces.\n\nAll defenses not raised in the return shall be deemed waived.\n\nThe return shall include affidavits of witnesses, documentary evidence, scientific or other expert studies, and if possible, object evidence, in support of the defense of the respondent.\n\nA general denial of allegations in the petition shall be considered as an admission thereof.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 7, Section 8 (Return of respondent; contents)",
+      "excerpt": "Section 8. Return of respondent; contents. - Within a non-extendible period of ten (10) days after service of the writ, the respondent shall file a verified return which shall contain all defenses to show that respondent did not violate or threaten to violate, or allow the violation of any environmental law, rule or regulation or commit any act resulting to environmental damage of such magnitude as to prejudice the life, health or property of inhabitants in two or more cities or provinces.\n\nAll defenses not raised in the return shall be deemed waived.\n\nThe return shall include affidavits of witnesses, documentary evidence, scientific or other expert studies, and if possible, object evidence, in support of the defense of the respondent.\n\nA general denial of allegations in the petition shall be considered as an admission thereof."
+    }
+  },
+  {
+    "id": "q-0181",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Writ of Kalikasan",
+    "prompt": "Section 9. Prohibited pleadings and motions. - The following pleadings and motions are prohibited:\n\n(a) ____;\n\n(b) Motion for ____;\n\n(c) Motion for ____;\n\n(d) Motion for a ____;\n\n(e) ____;\n\n(f) ____;\n\n(g) ____; and\n\n(h) Motion to declare respondent in ____.",
+    "fullText": "Section 9. Prohibited pleadings and motions. - The following pleadings and motions are prohibited:\n\n(a) Motion to dismiss;\n\n(b) Motion for extension of time to file return;\n\n(c) Motion for postponement;\n\n(d) Motion for a bill of particulars;\n\n(e) Counterclaim or cross-claim;\n\n(f) Third-party complaint;\n\n(g) Reply; and\n\n(h) Motion to declare respondent in default.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 7, Section 9 (Prohibited pleadings and motions)",
+      "excerpt": "Section 9. Prohibited pleadings and motions. - The following pleadings and motions are prohibited:\n\n(a) Motion to dismiss;\n\n(b) Motion for extension of time to file return;\n\n(c) Motion for postponement;\n\n(d) Motion for a bill of particulars;\n\n(e) Counterclaim or cross-claim;\n\n(f) Third-party complaint;\n\n(g) Reply; and\n\n(h) Motion to declare respondent in default."
+    }
+  },
+  {
+    "id": "q-0182",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Writ of Kalikasan",
+    "prompt": "Section 10. Effect of failure to file return. - In case the respondent ____, the court shall proceed to hear the petition ____.",
+    "fullText": "Section 10. Effect of failure to file return. - In case the respondent fails to file a return, the court shall proceed to hear the petition ex parte.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 7, Section 10 (Effect of failure to file return)",
+      "excerpt": "Section 10. Effect of failure to file return. - In case the respondent fails to file a return, the court shall proceed to hear the petition ex parte."
+    }
+  },
+  {
+    "id": "q-0183",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Writ of Kalikasan",
+    "prompt": "Section 11. Hearing. - Upon receipt of the return of the respondent, the court may call a ____ to simplify the issues, determine the possibility of obtaining stipulations or admissions from the parties, and set the petition for hearing.\n\nThe hearing including the preliminary conference shall not extend beyond ____ and shall be given the same priority as petitions for the writs of ____.",
+    "fullText": "Section 11. Hearing. - Upon receipt of the return of the respondent, the court may call a preliminary conference to simplify the issues, determine the possibility of obtaining stipulations or admissions from the parties, and set the petition for hearing.\n\nThe hearing including the preliminary conference shall not extend beyond sixty (60) days and shall be given the same priority as petitions for the writs of habeas corpus, amparo and habeas data.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 7, Section 11 (Hearing)",
+      "excerpt": "Section 11. Hearing. - Upon receipt of the return of the respondent, the court may call a preliminary conference to simplify the issues, determine the possibility of obtaining stipulations or admissions from the parties, and set the petition for hearing.\n\nThe hearing including the preliminary conference shall not extend beyond sixty (60) days and shall be given the same priority as petitions for the writs of habeas corpus, amparo and habeas data."
+    }
+  },
+  {
+    "id": "q-0184",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Writ of Kalikasan",
+    "prompt": "Section 12. Discovery Measures. - A party may file a ____ for the following reliefs:\n\n(a) ____; order — The motion must show that an ocular inspection order is necessary to establish the ____ as to prejudice the life, health or property of inhabitants in two or more cities or provinces. It shall state in detail the place or places to be inspected. It shall be supported by affidavits of witnesses having ____ of the violation or threatened violation of environmental law.\n\nAfter hearing, the court may order any person in possession or control of a designated land or other property to ____ for the purpose of inspecting or photographing the property or any relevant object or operation thereon.\n\nThe order shall specify the person or persons authorized to make the inspection and the date, time, place and manner of making the inspection and may prescribe other conditions to protect the ____.\n\n(b) ____; order – The motion must show that a ____ is necessary to establish the magnitude of the violation or the threat as to prejudice the life, health or property of inhabitants in two or more cities or provinces.\n\nAfter hearing, the court may order any person in possession, custody or control of any designated documents, papers, books, accounts, letters, photographs, objects or tangible things, or objects in digitized or electronic form, which constitute or contain evidence relevant to the petition or the return, to ____ by or on behalf of the movant.\n\nThe production order shall specify the person or persons authorized to make the production and the date, time, place and manner of making the inspection or production and may prescribe other conditions to protect the constitutional rights of all parties.",
+    "fullText": "Section 12. Discovery Measures. - A party may file a verified motion for the following reliefs:\n\n(a) Ocular Inspection; order — The motion must show that an ocular inspection order is necessary to establish the magnitude of the violation or the threat as to prejudice the life, health or property of inhabitants in two or more cities or provinces. It shall state in detail the place or places to be inspected. It shall be supported by affidavits of witnesses having personal knowledge of the violation or threatened violation of environmental law.\n\nAfter hearing, the court may order any person in possession or control of a designated land or other property to permit entry for the purpose of inspecting or photographing the property or any relevant object or operation thereon.\n\nThe order shall specify the person or persons authorized to make the inspection and the date, time, place and manner of making the inspection and may prescribe other conditions to protect the constitutional rights of all parties.\n\n(b) Production or inspection of documents or things; order – The motion must show that a production order is necessary to establish the magnitude of the violation or the threat as to prejudice the life, health or property of inhabitants in two or more cities or provinces.\n\nAfter hearing, the court may order any person in possession, custody or control of any designated documents, papers, books, accounts, letters, photographs, objects or tangible things, or objects in digitized or electronic form, which constitute or contain evidence relevant to the petition or the return, to produce and permit their inspection, copying or photographing by or on behalf of the movant.\n\nThe production order shall specify the person or persons authorized to make the production and the date, time, place and manner of making the inspection or production and may prescribe other conditions to protect the constitutional rights of all parties.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 7, Section 12 (Discovery Measures)",
+      "excerpt": "Section 12. Discovery Measures. - A party may file a verified motion for the following reliefs:\n\n(a) Ocular Inspection; order — The motion must show that an ocular inspection order is necessary to establish the magnitude of the violation or the threat as to prejudice the life, health or property of inhabitants in two or more cities or provinces. It shall state in detail the place or places to be inspected. It shall be supported by affidavits of witnesses having personal knowledge of the violation or threatened violation of environmental law.\n\nAfter hearing, the court may order any person in possession or control of a designated land or other property to permit entry for the purpose of inspecting or photographing the property or any relevant object or operation thereon.\n\nThe order shall specify the person or persons authorized to make the inspection and the date, time, place and manner of making the inspection and may prescribe other conditions to protect the constitutional rights of all parties.\n\n(b) Production or inspection of documents or things; order – The motion must show that a production order is necessary to establish the magnitude of the violation or the threat as to prejudice the life, health or property of inhabitants in two or more cities or provinces.\n\nAfter hearing, the court may order any person in possession, custody or control of any designated documents, papers, books, accounts, letters, photographs, objects or tangible things, or objects in digitized or electronic form, which constitute or contain evidence relevant to the petition or the return, to produce and permit their inspection, copying or photographing by or on behalf of the movant.\n\nThe production order shall specify the person or persons authorized to make the production and the date, time, place and manner of making the inspection or production and may prescribe other conditions to protect the constitutional rights of all parties."
+    }
+  },
+  {
+    "id": "q-0185",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Writ of Kalikasan",
+    "prompt": "Section 13. Contempt. - The court may after hearing punish the respondent who ____, or who makes a ____, or any person who ____ a lawful process or order of the court for ____ under ____ of the Rules of Court.",
+    "fullText": "Section 13. Contempt. - The court may after hearing punish the respondent who refuses or unduly delays the filing of a return, or who makes a false return, or any person who disobeys or resists a lawful process or order of the court for indirect contempt under Rule 71 of the Rules of Court.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 7, Section 13 (Contempt)",
+      "excerpt": "Section 13. Contempt. - The court may after hearing punish the respondent who refuses or unduly delays the filing of a return, or who makes a false return, or any person who disobeys or resists a lawful process or order of the court for indirect contempt under Rule 71 of the Rules of Court."
+    }
+  },
+  {
+    "id": "q-0186",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Writ of Kalikasan",
+    "prompt": "Section 14. Submission of case for decision; filing of memoranda. - After hearing, the court shall issue an order ____. The court may require the filing of ____ and if possible, in its electronic form, within a ____ from the date the petition is submitted for decision.",
+    "fullText": "Section 14. Submission of case for decision; filing of memoranda. - After hearing, the court shall issue an order submitting the case for decision. The court may require the filing of memoranda and if possible, in its electronic form, within a non-extendible period of thirty (30) days from the date the petition is submitted for decision.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 7, Section 14 (Submission of case for decision; filing of memoranda)",
+      "excerpt": "Section 14. Submission of case for decision; filing of memoranda. - After hearing, the court shall issue an order submitting the case for decision. The court may require the filing of memoranda and if possible, in its electronic form, within a non-extendible period of thirty (30) days from the date the petition is submitted for decision."
+    }
+  },
+  {
+    "id": "q-0187",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Writ of Kalikasan",
+    "prompt": "Section 15. Judgment. - Within ____ from the time the petition is submitted for decision, the court shall render judgment ____.\n\nThe reliefs that may be granted under the writ are the following:\n\n(a) Directing respondent to ____ from committing acts or neglecting the performance of a duty in violation of environmental laws resulting in environmental destruction or damage;\n\n(b) Directing the respondent public official, government agency, private person or entity to ____;\n\n(c) Directing the respondent public official, government agency, private person or entity to ____ with the decision and orders of the court;\n\n(d) Directing the respondent public official, government agency, or private person or entity to make ____ on the execution of the final judgment; and\n\n(e) Such other reliefs which relate to the right of the people to a balanced and healthful ecology or to the protection, preservation, rehabilitation or restoration of the environment, ____.",
+    "fullText": "Section 15. Judgment. - Within sixty (60) days from the time the petition is submitted for decision, the court shall render judgment granting or denying the privilege of the writ of kalikasan.\n\nThe reliefs that may be granted under the writ are the following:\n\n(a) Directing respondent to permanently cease and desist from committing acts or neglecting the performance of a duty in violation of environmental laws resulting in environmental destruction or damage;\n\n(b) Directing the respondent public official, government agency, private person or entity to protect, preserve, rehabilitate or restore the environment;\n\n(c) Directing the respondent public official, government agency, private person or entity to monitor strict compliance with the decision and orders of the court;\n\n(d) Directing the respondent public official, government agency, or private person or entity to make periodic reports on the execution of the final judgment; and\n\n(e) Such other reliefs which relate to the right of the people to a balanced and healthful ecology or to the protection, preservation, rehabilitation or restoration of the environment, except the award of damages to individual petitioners.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 7, Section 15 (Judgment)",
+      "excerpt": "Section 15. Judgment. - Within sixty (60) days from the time the petition is submitted for decision, the court shall render judgment granting or denying the privilege of the writ of kalikasan.\n\nThe reliefs that may be granted under the writ are the following:\n\n(a) Directing respondent to permanently cease and desist from committing acts or neglecting the performance of a duty in violation of environmental laws resulting in environmental destruction or damage;\n\n(b) Directing the respondent public official, government agency, private person or entity to protect, preserve, rehabilitate or restore the environment;\n\n(c) Directing the respondent public official, government agency, private person or entity to monitor strict compliance with the decision and orders of the court;\n\n(d) Directing the respondent public official, government agency, or private person or entity to make periodic reports on the execution of the final judgment; and\n\n(e) Such other reliefs which relate to the right of the people to a balanced and healthful ecology or to the protection, preservation, rehabilitation or restoration of the environment, except the award of damages to individual petitioners."
+    }
+  },
+  {
+    "id": "q-0188",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Writ of Kalikasan",
+    "prompt": "Section 16. Appeal. - Within ____ from the date of notice of the adverse judgment or denial of motion for reconsideration, any party may appeal to the ____ of the Rules of Court. The appeal may raise ____.",
+    "fullText": "Section 16. Appeal. - Within fifteen (15) days from the date of notice of the adverse judgment or denial of motion for reconsideration, any party may appeal to the Supreme Court under Rule 45 of the Rules of Court. The appeal may raise questions of fact.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 7, Section 16 (Appeal)",
+      "excerpt": "Section 16. Appeal. - Within fifteen (15) days from the date of notice of the adverse judgment or denial of motion for reconsideration, any party may appeal to the Supreme Court under Rule 45 of the Rules of Court. The appeal may raise questions of fact."
+    }
+  },
+  {
+    "id": "q-0189",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Writ of Kalikasan",
+    "prompt": "Section 17. Institution of separate actions. - The filing of a petition for the issuance of the writ of kalikasan ____ the filing of ____.",
+    "fullText": "Section 17. Institution of separate actions. - The filing of a petition for the issuance of the writ of kalikasan shall not preclude the filing of separate civil, criminal or administrative actions.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 7, Section 17 (Institution of separate actions)",
+      "excerpt": "Section 17. Institution of separate actions. - The filing of a petition for the issuance of the writ of kalikasan shall not preclude the filing of separate civil, criminal or administrative actions."
+    }
+  },
+  {
+    "id": "q-0190",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Writ of Continuing Mandamus",
+    "prompt": "Section 1. Petition for continuing mandamus. - When any agency or instrumentality of the government or officer thereof ____ which the law specifically enjoins as a ____ in connection with the enforcement or violation of an environmental law rule or regulation or a right therein, or ____ from the use or enjoyment of such right and there is ____, the person aggrieved thereby may file a ____ in the proper court, alleging the facts with certainty, attaching thereto supporting evidence, specifying that the petition concerns an environmental law, rule or regulation, and praying that judgment be rendered commanding the respondent to do an act or ____, and to pay damages sustained by the petitioner by reason of the ____ to perform the duties of the respondent, under the law, rules or regulations. The petition shall also contain a ____.",
+    "fullText": "Section 1. Petition for continuing mandamus. - When any agency or instrumentality of the government or officer thereof unlawfully neglects the performance of an act which the law specifically enjoins as a duty resulting from an office, trust or station in connection with the enforcement or violation of an environmental law rule or regulation or a right therein, or unlawfully excludes another from the use or enjoyment of such right and there is no other plain, speedy and adequate remedy in the ordinary course of law, the person aggrieved thereby may file a verified petition in the proper court, alleging the facts with certainty, attaching thereto supporting evidence, specifying that the petition concerns an environmental law, rule or regulation, and praying that judgment be rendered commanding the respondent to do an act or series of acts until the judgment is fully satisfied, and to pay damages sustained by the petitioner by reason of the malicious neglect to perform the duties of the respondent, under the law, rules or regulations. The petition shall also contain a sworn certification of non-forum shopping.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 8, Section 1 (Petition for continuing mandamus)",
+      "excerpt": "Section 1. Petition for continuing mandamus. - When any agency or instrumentality of the government or officer thereof unlawfully neglects the performance of an act which the law specifically enjoins as a duty resulting from an office, trust or station in connection with the enforcement or violation of an environmental law rule or regulation or a right therein, or unlawfully excludes another from the use or enjoyment of such right and there is no other plain, speedy and adequate remedy in the ordinary course of law, the person aggrieved thereby may file a verified petition in the proper court, alleging the facts with certainty, attaching thereto supporting evidence, specifying that the petition concerns an environmental law, rule or regulation, and praying that judgment be rendered commanding the respondent to do an act or series of acts until the judgment is fully satisfied, and to pay damages sustained by the petitioner by reason of the malicious neglect to perform the duties of the respondent, under the law, rules or regulations. The petition shall also contain a sworn certification of non-forum shopping."
+    }
+  },
+  {
+    "id": "q-0191",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Writ of Continuing Mandamus",
+    "prompt": "Section 2. Where to file the petition. - The petition shall be filed with the ____ exercising jurisdiction over the territory where the ____ occurred or with the ____.",
+    "fullText": "Section 2. Where to file the petition. - The petition shall be filed with the Regional Trial Court exercising jurisdiction over the territory where the actionable neglect or omission occurred or with the Court of Appeals or the Supreme Court.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 8, Section 2 (Where to file the petition)",
+      "excerpt": "Section 2. Where to file the petition. - The petition shall be filed with the Regional Trial Court exercising jurisdiction over the territory where the actionable neglect or omission occurred or with the Court of Appeals or the Supreme Court."
+    }
+  },
+  {
+    "id": "q-0192",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Writ of Continuing Mandamus",
+    "prompt": "Section 3. No docket fees. - The petitioner shall be ____ from the payment of ____.",
+    "fullText": "Section 3. No docket fees. - The petitioner shall be exempt from the payment of docket fees.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 8, Section 3 (No docket fees)",
+      "excerpt": "Section 3. No docket fees. - The petitioner shall be exempt from the payment of docket fees."
+    }
+  },
+  {
+    "id": "q-0193",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Writ of Continuing Mandamus",
+    "prompt": "Section 4. Order to comment. - If the petition is ____, the court shall ____ and require the respondent to ____ on the petition within ____ from receipt of a copy thereof. Such order shall be served on the respondents in such manner as the court may direct, together with a copy of the petition and any annexes thereto.",
+    "fullText": "Section 4. Order to comment. - If the petition is sufficient in form and substance, the court shall issue the writ and require the respondent to comment on the petition within ten (10) days from receipt of a copy thereof. Such order shall be served on the respondents in such manner as the court may direct, together with a copy of the petition and any annexes thereto.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 8, Section 4 (Order to comment)",
+      "excerpt": "Section 4. Order to comment. - If the petition is sufficient in form and substance, the court shall issue the writ and require the respondent to comment on the petition within ten (10) days from receipt of a copy thereof. Such order shall be served on the respondents in such manner as the court may direct, together with a copy of the petition and any annexes thereto."
+    }
+  },
+  {
+    "id": "q-0194",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Writ of Continuing Mandamus",
+    "prompt": "Section 5. Expediting proceedings; TEPO. - The court in which the petition is filed may issue such orders to ____, and it may also grant a ____ for the ____ pending such proceedings.",
+    "fullText": "Section 5. Expediting proceedings; TEPO. - The court in which the petition is filed may issue such orders to expedite the proceedings, and it may also grant a TEPO for the preservation of the rights of the parties pending such proceedings.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 8, Section 5 (Expediting proceedings; TEPO)",
+      "excerpt": "Section 5. Expediting proceedings; TEPO. - The court in which the petition is filed may issue such orders to expedite the proceedings, and it may also grant a TEPO for the preservation of the rights of the parties pending such proceedings."
+    }
+  },
+  {
+    "id": "q-0195",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Writ of Continuing Mandamus",
+    "prompt": "Section 6. Proceedings after comment is filed. - After the comment is filed or the time for the filing thereof has expired, the court may hear the case which shall be ____ or require the parties to submit ____. The petition shall be resolved ____ within ____ from the date of the submission of the petition for resolution.",
+    "fullText": "Section 6. Proceedings after comment is filed. - After the comment is filed or the time for the filing thereof has expired, the court may hear the case which shall be summary in nature or require the parties to submit memoranda. The petition shall be resolved without delay within sixty (60) days from the date of the submission of the petition for resolution.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 8, Section 6 (Proceedings after comment is filed)",
+      "excerpt": "Section 6. Proceedings after comment is filed. - After the comment is filed or the time for the filing thereof has expired, the court may hear the case which shall be summary in nature or require the parties to submit memoranda. The petition shall be resolved without delay within sixty (60) days from the date of the submission of the petition for resolution."
+    }
+  },
+  {
+    "id": "q-0196",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Writ of Continuing Mandamus",
+    "prompt": "Section 7. Judgment. - If warranted, the court shall grant the ____ requiring respondent to perform an act or ____ and to grant such other reliefs as may be warranted resulting from the wrongful or illegal acts of the respondent. The court shall require the respondent to submit ____ detailing the progress and execution of the judgment, and the court may, by itself or through a ____, ____. The petitioner may submit its comments or observations on the execution of the judgment.",
+    "fullText": "Section 7. Judgment. - If warranted, the court shall grant the privilege of the writ of continuing mandamus requiring respondent to perform an act or series of acts until the judgment is fully satisfied and to grant such other reliefs as may be warranted resulting from the wrongful or illegal acts of the respondent. The court shall require the respondent to submit periodic reports detailing the progress and execution of the judgment, and the court may, by itself or through a commissioner or the appropriate government agency, evaluate and monitor compliance. The petitioner may submit its comments or observations on the execution of the judgment.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 8, Section 7 (Judgment)",
+      "excerpt": "Section 7. Judgment. - If warranted, the court shall grant the privilege of the writ of continuing mandamus requiring respondent to perform an act or series of acts until the judgment is fully satisfied and to grant such other reliefs as may be warranted resulting from the wrongful or illegal acts of the respondent. The court shall require the respondent to submit periodic reports detailing the progress and execution of the judgment, and the court may, by itself or through a commissioner or the appropriate government agency, evaluate and monitor compliance. The petitioner may submit its comments or observations on the execution of the judgment."
+    }
+  },
+  {
+    "id": "q-0197",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Writ of Continuing Mandamus",
+    "prompt": "Section 8. Return of the writ. - The periodic reports submitted by the respondent detailing compliance with the judgment shall be contained in ____.\n\nUpon full satisfaction of the judgment, a ____ shall be made to the court by the respondent. If the court finds that the judgment has been ____, the satisfaction of judgment shall be ____.",
+    "fullText": "Section 8. Return of the writ. - The periodic reports submitted by the respondent detailing compliance with the judgment shall be contained in partial returns of the writ.\n\nUpon full satisfaction of the judgment, a final return of the writ shall be made to the court by the respondent. If the court finds that the judgment has been fully implemented, the satisfaction of judgment shall be entered in the court docket.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 8, Section 8 (Return of the writ)",
+      "excerpt": "Section 8. Return of the writ. - The periodic reports submitted by the respondent detailing compliance with the judgment shall be contained in partial returns of the writ.\n\nUpon full satisfaction of the judgment, a final return of the writ shall be made to the court by the respondent. If the court finds that the judgment has been fully implemented, the satisfaction of judgment shall be entered in the court docket."
+    }
   }
 ]
