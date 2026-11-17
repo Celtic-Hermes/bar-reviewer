@@ -34,6 +34,7 @@
     <div id="sidebar-subjects"></div>
     <p class="sidebar-heading">My study</p>
     <button type="button" class="sidebar-link" data-go="notes"><span class="sidebar-icon" aria-hidden="true">📝</span>My notes</button>
+    <button type="button" class="sidebar-link" data-go="schedule"><span class="sidebar-icon" aria-hidden="true">📅</span>Study Schedule</button>
     <button type="button" class="sidebar-link" data-go="settings"><span class="sidebar-icon" aria-hidden="true">⚙️</span>Settings</button>
   </nav>
 
@@ -91,6 +92,7 @@
       </section>
 
       <button class="btn btn-secondary my-notes-btn" id="my-notes-btn">📝 My notes</button>
+      <button class="btn btn-secondary my-notes-btn" id="schedule-btn">📅 Study Schedule</button>
 
       <div class="subject-list" id="subject-list"></div>
 
@@ -99,6 +101,39 @@
       <div class="subject-list" id="misc-list"></div>
       <p class="card empty-note misc-empty" id="misc-empty" hidden>Nothing here yet. Extra subjects that aren't part of the bar exam will appear here.</p>
 
+    </section>
+
+    <!-- STUDY SCHEDULE: her own plan, day by day (app.js openSchedule; saved in progress.schedule).
+         Month view (a calendar; tap a day to see it below) or Week view (a list of the week's
+         days, the default on phones). Nothing is planned automatically. -->
+    <section id="screen-schedule" hidden>
+      <button class="back-btn" id="schedule-back">‹ Home</button>
+      <h1 class="screen-title">Study Schedule</h1>
+      <p class="screen-subtitle schedule-exam" id="schedule-exam"></p>
+      <button type="button" class="link-btn" id="schedule-exam-link" hidden>Set your exam date in Settings ›</button>
+
+      <section class="card schedule-progress">
+        <p class="schedule-done" id="schedule-done"></p>
+        <div class="today-bar" id="schedule-bar" role="progressbar" aria-label="Tasks done" aria-valuemin="0">
+          <span class="today-bar-fill" id="schedule-bar-fill"></span>
+        </div>
+      </section>
+
+      <div class="schedule-toolbar">
+        <div class="seg-switch" role="group" aria-label="View">
+          <button type="button" class="seg-btn" data-view="month" aria-pressed="false">Month</button>
+          <button type="button" class="seg-btn" data-view="week" aria-pressed="false">Week</button>
+        </div>
+        <div class="schedule-nav">
+          <button type="button" class="schedule-arrow" id="schedule-prev" aria-label="Previous">‹</button>
+          <h2 class="schedule-period" id="schedule-period" aria-live="polite"></h2>
+          <button type="button" class="schedule-arrow" id="schedule-next" aria-label="Next">›</button>
+          <button type="button" class="btn btn-secondary schedule-today-btn" id="schedule-today">Today</button>
+        </div>
+      </div>
+
+      <div class="schedule-month" id="schedule-month" hidden></div>
+      <div class="schedule-days" id="schedule-days"></div>
     </section>
 
     <!-- SETTINGS: one shared "setting row" per setting (label, short description, control),

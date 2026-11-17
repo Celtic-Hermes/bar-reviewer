@@ -17,6 +17,14 @@
 //   settings:  her choices (Settings screen): { "dailyGoal": 20 (10, 20, 30 or 50),
 //              "examDate": "2027-09-12" (optional, YYYY-MM-DD) }. Anything missing or odd
 //              is left out, and the default is used (see cleanSettings).
+//   schedule:  her Study Schedule, by day ("YYYY-MM-DD"); a day is stored only if it has
+//              something, with short keys to keep it small:
+//              { "2026-11-18": { "k": [ { "t": "Read Rule 91", "m": 30, "d": 1,
+//                                         "s": "Remedial Law", "l": "topic:Remedial Law|Special Proceedings" } ],
+//                                "off": 1 } }
+//              k: the day's tasks, in order; t: title; m: minutes (optional); d: 1 if done;
+//              s: subject (optional); l: what the title opens (optional: "subject:<name>" or
+//              "topic:<subject>|<topic>"); off: 1 if it's a Day off. See cleanSchedule.
 //   streakBest: her longest streak of study days ever (kept here, since "daily" only
 //              keeps 400 days)
 //   notes:     her own notes on a case or a rule, by its ID:
@@ -113,6 +121,39 @@ function isCalendarDate(text) {
   const d = new Date(text + "T00:00:00");
   return !isNaN(d) && d.getFullYear() === Number(text.slice(0, 4)) &&
     d.getMonth() + 1 === Number(text.slice(5, 7)) && d.getDate() === Number(text.slice(8, 10));
+}
+
+// Her Study Schedule (defined up here because loading her progress, just below, needs it).
+// Keeps only what it understands: real dates, tasks with a title, sensible minutes, a link
+// in a known form. Anything else is dropped, so old or damaged data never breaks anything.
+const SCHEDULE_TITLE_MAX = 120;
+const SCHEDULE_TASKS_MAX = 50;      // per day
+const SCHEDULE_MINUTES_MAX = 999;
+
+function cleanScheduleTask(task) {
+  if (!isPlainObject(task) || typeof task.t !== "string" || !task.t.trim()) { return null; }
+  const clean = { t: task.t.trim().slice(0, SCHEDULE_TITLE_MAX) };
+  const m = Number(task.m);
+  if (Number.isInteger(m) && m > 0 && m <= SCHEDULE_MINUTES_MAX) { clean.m = m; }
+  if (task.d) { clean.d = 1; }
+  if (typeof task.s === "string" && task.s.trim()) { clean.s = task.s.trim().slice(0, 60); }
+  if (typeof task.l === "string" && /^(subject|topic):./.test(task.l) && task.l.length <= 200) { clean.l = task.l; }
+  return clean;
+}
+
+function cleanSchedule(value) {
+  const clean = {};
+  if (!isPlainObject(value)) { return clean; }
+  Object.keys(value).forEach(function (date) {
+    const day = value[date];
+    if (!isCalendarDate(date) || !isPlainObject(day)) { return; }
+    const tasks = (Array.isArray(day.k) ? day.k : []).map(cleanScheduleTask).filter(Boolean).slice(0, SCHEDULE_TASKS_MAX);
+    const keep = {};
+    if (tasks.length) { keep.k = tasks; }
+    if (day.off) { keep.off = 1; }
+    if (keep.k || keep.off) { clean[date] = keep; }
+  });
+  return clean;
 }
 
 // Her notes (defined up here because loading her progress, just below, needs them).
@@ -222,7 +263,7 @@ function cleanNotes(value) {
 }
 
 function emptyProgress() {
-  return { subjects: {}, review: {}, bookmarks: {}, tags: {}, notes: {}, highlights: {}, highlightColors: {}, daily: {}, results: {}, settings: {}, streakBest: 0 };
+  return { subjects: {}, review: {}, bookmarks: {}, tags: {}, notes: {}, highlights: {}, highlightColors: {}, daily: {}, results: {}, settings: {}, schedule: {}, streakBest: 0 };
 }
 
 // Read saved progress. If there's none, or it's damaged, start fresh instead of crashing.
@@ -241,6 +282,7 @@ function loadProgress() {
       daily: cleanDaily(data.daily),
       results: cleanResults(data.results),
       settings: cleanSettings(data.settings),
+      schedule: cleanSchedule(data.schedule),
       streakBest: wholeNumberOrZero(data.streakBest),
       highlights: cleanHighlights(data.highlights),
       highlightColors: cleanHighlightColors(data.highlightColors)
@@ -491,6 +533,26 @@ function dailyGoal() {
 function setDailyGoal(goal) {
   if (DAILY_GOALS.indexOf(goal) === -1) { return; }
   settingsObject().dailyGoal = goal;
+  saveProgress();
+}
+
+// ---------- Study Schedule ----------
+function scheduleObject() {
+  if (!isPlainObject(progress.schedule)) { progress.schedule = {}; }
+  return progress.schedule;
+}
+
+// One day: { tasks: [ … ], off: true/false } (a copy-free view of what's saved; empty if nothing).
+function scheduleDay(date) {
+  const day = scheduleObject()[date];
+  return { tasks: day && Array.isArray(day.k) ? day.k : [], off: !!(day && day.off) };
+}
+
+// Save one day (tasks list and Day off); a day with nothing in it is removed.
+function setScheduleDay(date, tasks, off) {
+  if (!isCalendarDate(date)) { return; }
+  const clean = cleanSchedule({ [date]: { k: tasks, off: off } })[date];
+  if (clean) { scheduleObject()[date] = clean; } else { delete scheduleObject()[date]; }
   saveProgress();
 }
 
@@ -793,6 +855,7 @@ function readBackup(text) {
   clean.daily = cleanDaily(p.daily);
   clean.results = cleanResults(p.results);
   clean.settings = cleanSettings(p.settings);
+  clean.schedule = cleanSchedule(p.schedule);  // older backups have none: it starts empty
   clean.streakBest = wholeNumberOrZero(p.streakBest);
   // Backups made before a subject moved: follow the move.
   followMovedSubjects(clean.subjects);
@@ -809,6 +872,7 @@ function readBackup(text) {
 function restoreProgress(newProgress) {
   progress = newProgress;
   progress.settings = cleanSettings(progress.settings);  // never trust settings as they come
+  progress.schedule = cleanSchedule(progress.schedule);  // nor the schedule
   return saveProgress();
 }
 

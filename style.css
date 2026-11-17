@@ -293,12 +293,12 @@ body {
 .fb-new-note { margin: -4px 0 12px; text-align: right; font-size: 14px; color: var(--muted); }
 .fb-level-note { margin: 12px 0 0; font-size: 14px; color: var(--muted); }
 /* Fill in the blank: the Quiz / Read switch (two halves of one rounded bar). */
-.fb-view { display: grid; grid-template-columns: 1fr 1fr; margin: 0 0 14px; border: 2px solid var(--primary); border-radius: 10px; overflow: hidden; }
-.fb-view-btn {
+.fb-view, .seg-switch { display: grid; grid-template-columns: 1fr 1fr; margin: 0 0 14px; border: 2px solid var(--primary); border-radius: 10px; overflow: hidden; }
+.fb-view-btn, .seg-btn {
   padding: 9px 6px; border: none; background: var(--card); color: var(--primary-text);
   font: inherit; font-size: 16px; font-weight: 600; cursor: pointer; -webkit-tap-highlight-color: transparent;
 }
-.fb-view-btn[aria-pressed="true"] { background: var(--primary); color: var(--on-primary); font-weight: 700; }
+.fb-view-btn[aria-pressed="true"], .seg-btn[aria-pressed="true"] { background: var(--primary); color: var(--on-primary); font-weight: 700; }
 /* Read view: hide every part of the quiz (marked fb-quiz-only in index.html). */
 .fb-reading .fb-quiz-only { display: none !important; }
 /* After "Show answer": Got it / Missed it, styled like the essay buttons.
@@ -386,6 +386,7 @@ body {
 .hl-swatch:active,
 .tag-dot:active,
 .fb-view-btn:active,
+.seg-btn:active,
 .fb-new-btn:active:not(.off) {
   transform: scale(var(--press-scale));
   box-shadow: inset 0 0 0 100vmax var(--press-shade);
@@ -1174,4 +1175,74 @@ body.dialog-open { overflow: hidden; }
 }
 @media (min-width: 1024px) {
   .toast { left: calc(var(--sidebar-width) + 16px); }  /* centered in the page, beside the sidebar */
+}
+
+/* ---------- Study Schedule (index.html #screen-schedule, app.js openSchedule) ---------- */
+.link-btn {
+  display: inline-block; min-height: 44px; margin: -8px 0 12px; padding: 8px 0; border: 0; background: none;
+  font: inherit; font-weight: 600; color: var(--primary-text); cursor: pointer; text-align: left;
+}
+.schedule-exam { margin-bottom: 12px; }
+.schedule-progress { margin-bottom: 14px; }
+.schedule-done { margin: 0 0 8px; font-weight: 700; }
+.schedule-toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; margin-bottom: 12px; }
+.schedule-toolbar .seg-switch { margin: 0; flex: 0 0 180px; }
+.schedule-nav { display: flex; align-items: center; gap: 4px; flex: 1 1 260px; }
+.schedule-period { flex: 1; margin: 0; font-size: 17px; text-align: center; }
+.schedule-arrow {
+  width: 44px; height: 44px; flex: 0 0 44px; border: 1px solid var(--primary-edge); border-radius: 10px;
+  background: var(--card); color: var(--primary-text); font: inherit; font-size: 22px; line-height: 1; cursor: pointer;
+}
+.schedule-today-btn { width: auto; min-height: 44px; margin: 0 0 0 6px; padding: 8px 14px; }
+
+/* Month: a calendar. Each day is a button; tapping it shows that day below the calendar. */
+.schedule-month { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 4px; margin-bottom: 14px; }
+.month-weekday { padding: 2px 0; font-size: 12px; font-weight: 700; color: var(--muted); text-align: center; text-transform: uppercase; }
+.month-day {
+  min-height: 52px; padding: 4px; border: 1px solid var(--primary-edge); border-radius: 8px;
+  background: var(--card); color: var(--text); font: inherit; text-align: left; cursor: pointer;
+  display: flex; flex-direction: column; gap: 2px; overflow: hidden; -webkit-tap-highlight-color: transparent;
+}
+.month-day.other-month { opacity: 0.55; }
+.month-day.is-off { background: var(--primary-soft); }
+.month-day.is-today .month-num { background: var(--primary); color: var(--on-primary); }
+.month-day[aria-pressed="true"] { border: 2px solid var(--primary); }
+.month-num { align-self: flex-start; min-width: 24px; padding: 0 4px; border-radius: 12px; font-size: 13px; font-weight: 700; text-align: center; }
+.month-off { font-size: 11px; font-weight: 700; color: var(--text); }
+.month-dots { font-size: 11px; color: var(--primary-text); font-weight: 700; }
+.month-day.is-off .month-dots { color: var(--text); }  /* on the lavender of a Day off: dark text */
+.month-task { display: none; font-size: 12px; line-height: 1.3; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.month-task.done { text-decoration: line-through; color: var(--muted); }
+@media (min-width: 700px) {
+  .month-day { min-height: 92px; }
+  .month-task { display: block; }   /* wide enough: the tasks' titles instead of a count */
+  .month-dots { display: none; }
+}
+
+/* A day (Week view lists the week's days; Month view shows the day tapped). */
+.schedule-day { margin-bottom: 12px; }
+.schedule-day.is-off { background: color-mix(in srgb, var(--primary-soft) 45%, var(--card)); }
+.schedule-day-head { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; margin-bottom: 8px; }
+.schedule-day-title { margin: 0; font-size: 17px; }
+.day-badge {
+  padding: 2px 8px; border-radius: 999px; font-size: 12px; font-weight: 700;
+  background: var(--primary-soft); color: var(--text);
+}
+.day-badge.today { background: var(--primary); color: var(--on-primary); }
+.schedule-tasks { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.schedule-empty { margin: 0; font-size: 15px; color: var(--muted); }
+
+/* A task: a small card with a checkbox, a short title, and an optional time. */
+.task-card {
+  display: flex; align-items: center; gap: 10px; min-height: 48px; padding: 8px 12px;
+  border: 1px solid var(--primary-edge); border-radius: 10px; background: var(--card);
+}
+.task-card input[type="checkbox"] { width: 22px; height: 22px; flex: 0 0 22px; margin: 0; accent-color: var(--primary); }
+.task-title { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.task-time { flex: 0 0 auto; padding: 2px 8px; border-radius: 999px; font-size: 13px; font-weight: 700; background: var(--primary-soft); color: var(--text); }
+.task-card.done .task-title { text-decoration: line-through; color: var(--muted); }
+.task-card.done .task-time { opacity: 0.7; }
+
+@media (min-width: 800px) {
+  body[data-screen="screen-schedule"] .page { max-width: 1000px; }
 }

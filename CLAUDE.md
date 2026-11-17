@@ -253,6 +253,13 @@ A small, quiet **Reset** text button (`.reset-btn`, in a `.reset-row`) at the ve
 - **Undo** for about 10 seconds with the shared message bar (`showUndo(text, onUndo)`, `#toast`): `undoReset` puts back exactly what was removed, in its original order (`putBackInOrder`).
 - Resets live in her normal progress, so backups and restores include them; nothing new is stored.
 
+## Study Schedule
+Her own plan, day by day: **📅 Study Schedule** on the home screen and in the sidebar / ☰ menu (`#screen-schedule`, `openSchedule` in `app.js`; Back goes home; a reload reopens it).
+- **Views:** a **Month / Week** switch (the shared `.seg-switch` / `.seg-btn` look, the same as the Quiz/Read switch). Month = a calendar (each day a button: number, Day off, and on screens 700px+ up to 3 task titles, on narrower ones "done/total"); tapping a day shows it below. Week = the 7 days of the week as a list (the default on phones; her last choice is remembered on this device in `barReviewer.scheduleView.v1`, not backed up). ‹ / › move a month or a week; **Today** comes back. Weeks start on Sunday (`WEEK_STARTS_ON`).
+- **Top:** "N days until exam (date)" from Settings' exam date, or a **Set your exam date in Settings ›** link if there's none; a bar with "X / Y tasks done this week / in <month>".
+- **Saved** in `progress.schedule` (so it's in backups), a day only if it has something, with short keys (`k` tasks, `t` title, `m` minutes, `d` done, `s` subject, `l` link, `off` Day off); `cleanSchedule` (progress.js) drops anything it doesn't understand, on load, in backups and on restore. Read and write only through `scheduleDay(date)` / `setScheduleDay(date, tasks, off)`.
+- Nothing is ever planned automatically, and there's no drag and drop.
+
 ## Settings
 A **Settings** screen (`#screen-settings`), reached from the ⚙️ button on the home screen (phones, next to ☰), the **Settings** entry in the sidebar / ☰ menu, or the Today card's "Daily goal" line. **‹ Back** returns to exactly where she was (`settingsCameFrom`; the screen she left is only hidden meanwhile, so a question keeps its state). Settings is never saved as her spot, so a reload there puts her back where she was before it (an open practice round is never lost).
 - **Study:** **Daily goal** (10 / 20 / 30 / 50, default 20, `settings.dailyGoal`) and **Exam date** (optional, empty until she picks one, `settings.examDate` as "YYYY-MM-DD", with a Clear button; "Used later for the study schedule").

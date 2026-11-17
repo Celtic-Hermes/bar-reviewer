@@ -45,7 +45,7 @@ document.addEventListener("touchstart", function () {}, { passive: true });
 // Only one screen is visible at a time.
 function showScreen(id) {
   saveAllNotes();  // leaving a screen with a notes box: save what she typed first
-  ["screen-home", "screen-subject", "screen-subtopics", "screen-topic", "screen-tagged", "screen-question", "screen-results", "screen-case", "screen-rule", "screen-notes", "screen-settings"].forEach(function (screenId) {
+  ["screen-home", "screen-subject", "screen-subtopics", "screen-topic", "screen-tagged", "screen-question", "screen-results", "screen-case", "screen-rule", "screen-notes", "screen-settings", "screen-schedule"].forEach(function (screenId) {
     document.getElementById(screenId).hidden = (screenId !== id);
   });
   window.scrollTo(0, 0);
@@ -83,6 +83,7 @@ function sidebarSection() {
   if (shownScreen === "screen-home") { return "home"; }
   if (shownScreen === "screen-notes") { return "notes"; }
   if (shownScreen === "screen-settings") { return "settings"; }
+  if (shownScreen === "screen-schedule") { return "schedule"; }
   const from = shownScreen === "screen-case" ? caseCameFrom : (shownScreen === "screen-rule" ? ruleCameFrom : null);
   if (from === "notes") { return "notes"; }
   if (from === "search") { return "search"; }
@@ -142,6 +143,8 @@ document.getElementById("sidebar").addEventListener("click", function (event) {
     openNotes();
   } else if (go === "settings") {
     openSettings();
+  } else if (go === "schedule") {
+    openSchedule();
   } else if (go === "subject") {
     openSubject(link.dataset.subject);
   }
@@ -222,6 +225,10 @@ function putBackSpot(spot) {
   if (spot.subject === "Communication Law") {
     spot.subject = "Mercantile Law";
     if (spot.topic === "Right to Privacy") { spot.topic = "Communication Law"; }
+  }
+  if (spot.screen === "schedule") {
+    openSchedule();
+    return true;
   }
   // The notes list, and a case or rule opened from it, don't belong to a subject.
   if (spot.screen === "notes") {
@@ -1076,6 +1083,269 @@ function showTodayCard() {
   }
 }
 
+// ---------- Study Schedule ----------
+// Her own plan, day by day (saved in progress.schedule; see progress.js). Two views:
+//   Month: a calendar; tapping a day shows that day (its tasks) below the calendar.
+//   Week:  the 7 days of the week, one under the other (the default on phones).
+// ‹ / › move by a month or a week; Today comes back to today. Nothing is planned for her.
+const SCHEDULE_VIEW_KEY = "barReviewer.scheduleView.v1";  // her last view, on this device only (not backed up)
+const WEEK_STARTS_ON = 0;  // 0 = Sunday (as on Philippine calendars); 1 = Monday
+const MONTH_NAMES = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const DAY_NAMES = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+let scheduleView = null;      // "month" or "week"
+let scheduleFocus = null;     // the day she's looking at ("YYYY-MM-DD"): its month or week is shown
+
+function dateKeyOf(d) {
+  return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+}
+function dateOfKey(key) {
+  return new Date(Number(key.slice(0, 4)), Number(key.slice(5, 7)) - 1, Number(key.slice(8, 10)));
+}
+function addDays(key, n) {
+  const d = dateOfKey(key);
+  d.setDate(d.getDate() + n);
+  return dateKeyOf(d);
+}
+function weekStartOf(key) {
+  const d = dateOfKey(key);
+  return addDays(key, -((d.getDay() - WEEK_STARTS_ON + 7) % 7));
+}
+function shortDate(key) {  // "Nov 18"
+  const d = dateOfKey(key);
+  return MONTH_NAMES[d.getMonth()].slice(0, 3) + " " + d.getDate();
+}
+
+function loadScheduleView() {
+  try {
+    const saved = localStorage.getItem(SCHEDULE_VIEW_KEY);
+    if (saved === "month" || saved === "week") { return saved; }
+  } catch (e) { /* no storage: use the default */ }
+  return window.matchMedia("(max-width: 699px)").matches ? "week" : "month";
+}
+
+function openSchedule() {
+  if (!scheduleView) { scheduleView = loadScheduleView(); }
+  scheduleFocus = todayKey();
+  showSchedule();
+  showScreen("screen-schedule");
+}
+
+// The days shown: the whole month (Month) or the 7 days of the week (Week).
+function scheduleRange() {
+  if (scheduleView === "week") {
+    const start = weekStartOf(scheduleFocus);
+    return Array.from({ length: 7 }, function (_, i) { return addDays(start, i); });
+  }
+  const d = dateOfKey(scheduleFocus);
+  const days = [];
+  for (let day = new Date(d.getFullYear(), d.getMonth(), 1); day.getMonth() === d.getMonth(); day.setDate(day.getDate() + 1)) {
+    days.push(dateKeyOf(day));
+  }
+  return days;
+}
+
+function showSchedule() {
+  const today = todayKey();
+  document.querySelectorAll("#screen-schedule .seg-btn").forEach(function (b) {
+    b.setAttribute("aria-pressed", b.dataset.view === scheduleView ? "true" : "false");
+  });
+
+  // Exam countdown, from Settings.
+  const exam = examDate();
+  const examLine = document.getElementById("schedule-exam");
+  const examLink = document.getElementById("schedule-exam-link");
+  examLink.hidden = !!exam;
+  examLine.hidden = !exam;
+  if (exam) {
+    const days = Math.round((dateOfKey(exam) - dateOfKey(today)) / 86400000);
+    const when = shortDate(exam) + ", " + exam.slice(0, 4);
+    examLine.textContent = days > 1 ? days + " days until exam (" + when + ")"
+      : days === 1 ? "1 day until exam (" + when + ")"
+      : days === 0 ? "Exam day is today. Good luck!"
+      : "Your exam date (" + when + ") has passed. You can change it in Settings.";
+  }
+
+  // The period shown, and its tasks done.
+  const range = scheduleRange();
+  const focus = dateOfKey(scheduleFocus);
+  document.getElementById("schedule-period").textContent = scheduleView === "week"
+    ? (range[0].slice(0, 7) === range[6].slice(0, 7)   // "Nov 15 – 21, 2026", or "Nov 29 – Dec 5, 2026"
+      ? shortDate(range[0]) + " – " + dateOfKey(range[6]).getDate() : shortDate(range[0]) + " – " + shortDate(range[6])) +
+      ", " + dateOfKey(range[6]).getFullYear()
+    : MONTH_NAMES[focus.getMonth()] + " " + focus.getFullYear();
+  let done = 0;
+  let total = 0;
+  range.forEach(function (key) {
+    scheduleDay(key).tasks.forEach(function (t) { total += 1; if (t.d) { done += 1; } });
+  });
+  document.getElementById("schedule-done").textContent = done + " / " + total + " tasks done " +
+    (scheduleView === "week" ? "this week" : "in " + MONTH_NAMES[focus.getMonth()]);
+  const bar = document.getElementById("schedule-bar");
+  bar.setAttribute("aria-valuemax", String(total));
+  bar.setAttribute("aria-valuenow", String(done));
+  document.getElementById("schedule-bar-fill").style.width = (total ? Math.round(100 * done / total) : 0) + "%";
+
+  // Month: the calendar, then the day she picked. Week: the 7 days.
+  const month = document.getElementById("schedule-month");
+  month.hidden = scheduleView !== "month";
+  if (scheduleView === "month") { showMonthGrid(month, range, today); }
+  const list = document.getElementById("schedule-days");
+  list.innerHTML = "";
+  (scheduleView === "week" ? range : [scheduleFocus]).forEach(function (key) {
+    list.appendChild(makeScheduleDay(key, today));
+  });
+}
+
+function showMonthGrid(box, range, today) {
+  box.innerHTML = "";
+  for (let i = 0; i < 7; i++) {
+    const name = document.createElement("div");
+    name.className = "month-weekday";
+    name.textContent = DAY_NAMES[(i + WEEK_STARTS_ON) % 7].slice(0, 3);
+    box.appendChild(name);
+  }
+  // Fill the first row with the end of the month before, and the last row with the next.
+  const first = weekStartOf(range[0]);
+  const lastShown = addDays(weekStartOf(range[range.length - 1]), 6);
+  for (let key = first; key <= lastShown; key = addDays(key, 1)) {
+    const day = scheduleDay(key);
+    const cell = document.createElement("button");
+    cell.type = "button";
+    cell.className = "month-day" + (range.indexOf(key) === -1 ? " other-month" : "") +
+      (key === today ? " is-today" : "") + (day.off ? " is-off" : "");
+    cell.setAttribute("aria-pressed", key === scheduleFocus ? "true" : "false");
+    const done = day.tasks.filter(function (t) { return t.d; }).length;
+    cell.setAttribute("aria-label", DAY_NAMES[dateOfKey(key).getDay()] + ", " + shortDate(key) +
+      (day.off ? ", day off" : "") + (day.tasks.length ? ", " + day.tasks.length + " tasks, " + done + " done" : ""));
+    const num = document.createElement("span");
+    num.className = "month-num";
+    num.textContent = String(dateOfKey(key).getDate());
+    cell.appendChild(num);
+    if (day.off) {
+      const off = document.createElement("span");
+      off.className = "month-off";
+      off.textContent = "Day off";
+      cell.appendChild(off);
+    }
+    if (day.tasks.length) {
+      const dots = document.createElement("span");  // narrow screens: a count
+      dots.className = "month-dots";
+      dots.textContent = done + "/" + day.tasks.length;
+      cell.appendChild(dots);
+      day.tasks.slice(0, 3).forEach(function (t) {  // wider screens: the titles
+        const line = document.createElement("span");
+        line.className = "month-task" + (t.d ? " done" : "");
+        line.textContent = t.t;
+        cell.appendChild(line);
+      });
+      if (day.tasks.length > 3) {
+        const more = document.createElement("span");
+        more.className = "month-task";
+        more.textContent = "+" + (day.tasks.length - 3) + " more";
+        cell.appendChild(more);
+      }
+    }
+    cell.addEventListener("click", function () {
+      scheduleFocus = key;
+      showSchedule();
+    });
+    box.appendChild(cell);
+  }
+}
+
+// One day: its date, Today / Day off labels, and its tasks as small cards.
+function makeScheduleDay(key, today) {
+  const day = scheduleDay(key);
+  const box = document.createElement("section");
+  box.className = "card schedule-day" + (day.off ? " is-off" : "");
+  box.dataset.date = key;
+  const head = document.createElement("div");
+  head.className = "schedule-day-head";
+  const title = document.createElement("h3");
+  title.className = "schedule-day-title";
+  title.textContent = DAY_NAMES[dateOfKey(key).getDay()] + ", " + shortDate(key);
+  head.appendChild(title);
+  if (key === today) {
+    const badge = document.createElement("span");
+    badge.className = "day-badge today";
+    badge.textContent = "Today";
+    head.appendChild(badge);
+  }
+  if (day.off) {
+    const badge = document.createElement("span");
+    badge.className = "day-badge";
+    badge.textContent = "Day off";
+    head.appendChild(badge);
+  }
+  box.appendChild(head);
+  if (day.tasks.length === 0) {
+    const empty = document.createElement("p");
+    empty.className = "schedule-empty";
+    empty.textContent = day.off ? "Rest day." : "Nothing planned.";
+    box.appendChild(empty);
+  } else {
+    const list = document.createElement("ul");
+    list.className = "schedule-tasks";
+    day.tasks.forEach(function (task, i) { list.appendChild(makeTaskCard(key, task, i)); });
+    box.appendChild(list);
+  }
+  return box;
+}
+
+// A task: checkbox, short title, optional time ("30m").
+function makeTaskCard(key, task, index) {
+  const item = document.createElement("li");
+  item.className = "task-card" + (task.d ? " done" : "");
+  const box = document.createElement("input");
+  box.type = "checkbox";
+  box.checked = !!task.d;
+  box.setAttribute("aria-label", "Done: " + task.t);
+  box.dataset.date = key;
+  box.dataset.index = String(index);
+  const title = document.createElement("span");
+  title.className = "task-title";
+  title.textContent = task.t;
+  item.append(box, title);
+  if (task.m) {
+    const time = document.createElement("span");
+    time.className = "task-time";
+    time.textContent = task.m >= 60 ? Math.floor(task.m / 60) + "h" + (task.m % 60 ? " " + task.m % 60 + "m" : "") : task.m + "m";
+    item.appendChild(time);
+  }
+  return item;
+}
+
+document.querySelectorAll("#screen-schedule .seg-btn").forEach(function (b) {
+  b.addEventListener("click", function () {
+    scheduleView = b.dataset.view;
+    try { localStorage.setItem(SCHEDULE_VIEW_KEY, scheduleView); } catch (e) { /* fine */ }
+    showSchedule();
+  });
+});
+document.getElementById("schedule-prev").addEventListener("click", function () { moveSchedule(-1); });
+document.getElementById("schedule-next").addEventListener("click", function () { moveSchedule(1); });
+document.getElementById("schedule-today").addEventListener("click", function () {
+  scheduleFocus = todayKey();
+  showSchedule();
+});
+document.getElementById("schedule-back").addEventListener("click", function () { showScreen("screen-home"); });
+document.getElementById("schedule-exam-link").addEventListener("click", function () { openSettings(); });
+document.getElementById("schedule-btn").addEventListener("click", openSchedule);
+
+// ‹ / ›: a month (keeping the same day number where it exists) or a week.
+function moveSchedule(step) {
+  if (scheduleView === "week") {
+    scheduleFocus = addDays(scheduleFocus, 7 * step);
+  } else {
+    const d = dateOfKey(scheduleFocus);
+    const target = new Date(d.getFullYear(), d.getMonth() + step, 1);
+    const lastDay = new Date(target.getFullYear(), target.getMonth() + 1, 0).getDate();
+    target.setDate(Math.min(d.getDate(), lastDay));
+    scheduleFocus = dateKeyOf(target);
+  }
+  showSchedule();
+}
+
 // The goal is changed in Settings: the Today card's goal line opens it.
 document.getElementById("today-goal-link").addEventListener("click", function () { openSettings(); });
 
@@ -1106,6 +1376,7 @@ function fillSettings() {
 }
 
 document.getElementById("settings-back").addEventListener("click", function () {
+  if (settingsCameFrom === "screen-schedule") { showSchedule(); }  // e.g. the exam date just changed
   showScreen(settingsCameFrom);
   window.scrollTo(0, settingsScroll);
 });
