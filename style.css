@@ -938,3 +938,21 @@ body.sheet-open { overflow: hidden; }
   .case-side-inner .notes-card { margin-top: 0; }
   .case-side-inner .topics-label:first-child { margin-top: 18px; }
 }
+
+/* Question screen: "Find in case" opens as a panel on the right, next to the question,
+   instead of sliding up. The question moves left to make room (it keeps its 640px
+   column), nothing is dimmed, and the page still scrolls. Close with ✕ or Esc. */
+@media (min-width: 1100px) {
+  .sheet {
+    top: 0; bottom: 0; left: auto; right: 0;
+    width: 400px; max-width: none; height: 100vh; height: 100dvh; margin: 0;
+    border-radius: 0; border-left: 1px solid var(--border);
+    box-shadow: -4px 0 24px rgba(0, 0, 0, 0.10);
+    transform: translateX(100%);
+  }
+  .sheet.open { transform: translateX(0); }
+  .sheet-grab { padding-top: 18px; cursor: default; touch-action: auto; }
+  .sheet-handle { display: none; }
+  .sheet-backdrop { display: none !important; }
+  body.sheet-open { overflow: visible; padding-right: 400px; }
+}

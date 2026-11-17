@@ -334,12 +334,17 @@ function showClosest(question, reason, sourceText) {
 const sheet = document.getElementById("find-sheet");
 const backdrop = document.getElementById("find-backdrop");
 let sheetOpen = false;
+// Wide screens (1100px and up): the panel opens on the right, next to the question,
+// instead of sliding up (see style.css). No dimming, the page still scrolls, and the
+// swipe-down-to-close gesture is off. Phones keep the slide-up panel.
+const FIND_WIDE = window.matchMedia("(min-width: 1100px)");
 
 function openSheet() {
   sheetOpen = true;
   sheet.hidden = false;
   backdrop.hidden = false;
   document.body.classList.add("sheet-open");
+  sheet.setAttribute("aria-modal", FIND_WIDE.matches ? "false" : "true");  // side panel: the page stays usable
   sheet.style.transform = "";
   void sheet.offsetHeight;  // let the browser place it below the screen first, so it slides up
   sheet.classList.add("open");
@@ -451,7 +456,7 @@ function endSheetDrag() {
 
 const grab = document.getElementById("find-grab");
 grab.addEventListener("pointerdown", function (event) {
-  if (event.target.closest(".sheet-close")) { return; }
+  if (event.target.closest(".sheet-close") || FIND_WIDE.matches) { return; }  // no swipe on wide screens
   grab.setPointerCapture(event.pointerId);
   startSheetDrag(event.clientY);
 });
@@ -469,7 +474,7 @@ sheetBody.addEventListener("touchstart", function (event) {
   bodyTouchY = event.touches[0].clientY;
 }, { passive: true });
 sheetBody.addEventListener("touchmove", function (event) {
-  if (bodyTouchY === null) { return; }
+  if (bodyTouchY === null || FIND_WIDE.matches) { return; }
   const y = event.touches[0].clientY;
   if (dragStartY === null) {
     if (sheetBody.scrollTop <= 0 && y > bodyTouchY + 8) {
