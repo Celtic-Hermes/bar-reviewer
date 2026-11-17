@@ -9,7 +9,7 @@
 // or add/edit files in data/case-texts/.
 // Questions, cases and case texts are always fetched fresh when she's online.
 // =====================================================================
-const CACHE_VERSION = "v53";
+const CACHE_VERSION = "v54";
 const CACHE_NAME = "bar-reviewer-" + CACHE_VERSION;
 
 // Every file the app needs, written relative to this file so it works
@@ -26,7 +26,8 @@ const APP_FILES = [
   "icons/icon-512.png",
   "icons/apple-touch-icon.png",
   "data/questions.json",
-  "data/cases.json"
+  "data/cases.json",
+  "data/rules.json"
 ];
 
 // Full texts of decisions (data/case-texts/case-0001.txt …) are NOT in APP_FILES:
@@ -35,7 +36,7 @@ const APP_FILES = [
 const CASE_TEXT_CACHE = "bar-reviewer-case-texts";
 
 // Content files: always try for the newest copy first.
-const DATA_FILES = ["data/questions.json", "data/cases.json"];
+const DATA_FILES = ["data/questions.json", "data/cases.json", "data/rules.json"];
 
 // 1. Install: download a fresh copy of every file into the cache.
 self.addEventListener("install", function (event) {
@@ -74,7 +75,8 @@ self.addEventListener("fetch", function (event) {
 
   // A case's full text: try the internet first (newest copy) and save it on the phone.
   // Offline: use the saved copy if she has opened this case's full text before.
-  if (url.pathname.indexOf("/data/case-texts/") !== -1) {
+  // (A rule's full text, data/rule-texts/…, works the same way and is kept in the same cache.)
+  if (url.pathname.indexOf("/data/case-texts/") !== -1 || url.pathname.indexOf("/data/rule-texts/") !== -1) {
     event.respondWith(
       fetch(request, { cache: "no-cache" }).then(function (response) {
         if (response.ok) {

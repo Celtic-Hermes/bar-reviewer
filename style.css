@@ -675,6 +675,22 @@ body {
 }
 .full-text-credit { margin: 16px 0 0; font-size: 14px; color: var(--muted); }
 
+/* ---------- A rule's full text: each section in its own card ---------- */
+#topic-rule { margin-top: -6px; }
+.rule-reader { margin-top: 12px; }          /* the palette stays pinned while she reads all of it */
+.hl-palette.rule-palette { margin: 0 0 4px; border: 1px solid var(--border); border-radius: 12px; }
+.rule-text { font-size: 16px; line-height: 1.6; }
+.rule-section { margin-top: 12px; }
+.rule-section > .prompt { overflow-wrap: anywhere; }
+.rule-section > .prompt > strong:first-child { color: var(--primary); }   /* "Section 3. Where to file." */
+/* PART / RULE headings between the cards */
+.rule-heading {
+  margin: 26px 0 2px; text-align: center; white-space: pre-line;
+  font-size: 15px; font-weight: 700; letter-spacing: 0.04em; color: var(--primary);
+}
+#screen-rule .status-badge { margin-bottom: 4px; }
+#rule-source-card { margin-top: 16px; }
+
 /* "Read the case" buttons under a question */
 .question-cases { margin-top: 8px; }
 .question-cases .btn { margin-bottom: 10px; }

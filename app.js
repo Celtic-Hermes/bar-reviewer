@@ -18,6 +18,7 @@ const MISC_SUBJECTS = [];
 
 let allQuestions = [];      // filled in from data/questions.json
 let allCases = [];          // filled in from data/cases.json
+let allRules = [];          // filled in from data/rules.json (rules whose full text can be read)
 let currentSubject = null;  // the subject she tapped
 let currentTopic = null;    // the topic she tapped (or "All topics")
 let currentSubtopic = null; // the sub-topic she picked, ALL_SUBTOPICS, OTHER_SUBTOPIC, or null (none)
@@ -41,7 +42,7 @@ document.addEventListener("touchstart", function () {}, { passive: true });
 // ---------- Switching screens ----------
 // Only one screen is visible at a time.
 function showScreen(id) {
-  ["screen-home", "screen-subject", "screen-subtopics", "screen-topic", "screen-tagged", "screen-question", "screen-results", "screen-case"].forEach(function (screenId) {
+  ["screen-home", "screen-subject", "screen-subtopics", "screen-topic", "screen-tagged", "screen-question", "screen-results", "screen-case", "screen-rule"].forEach(function (screenId) {
     document.getElementById(screenId).hidden = (screenId !== id);
   });
   window.scrollTo(0, 0);
@@ -87,6 +88,9 @@ function rememberSpot() {
   if (shownScreen === "screen-case" && currentCase) {
     spot.caseId = currentCase.id;
     spot.caseCameFrom = caseCameFrom;
+  }
+  if (shownScreen === "screen-rule" && currentRule) {
+    spot.ruleId = currentRule.id;
   }
   saveSpot(spot);
 }
@@ -138,6 +142,11 @@ function putBackSpot(spot) {
     return true;
   }
 
+  if (spot.screen === "rule") {
+    const rule = findRule(spot.ruleId);
+    if (rule) { openRule(rule); } else { openTopicOrSubject(); }
+    return true;
+  }
   if (spot.screen === "topic" || spot.screen === "tagged") {
     openTopicOrSubject();
     return true;
@@ -475,6 +484,11 @@ function openTopic(topic, subtopic) {
     list.appendChild(makeCaseCard(theCase, function () { openCase(theCase, "topic"); }));
   });
   document.getElementById("topic-case-empty").hidden = (cases.length !== 0);
+
+  // Built from one rule (all its questions come from the same source document)?
+  // Then she can read that whole rule.
+  topicRule = ruleForQuestions(questionsForTopic(subject, topic, null, currentSubtopic));
+  document.getElementById("topic-rule").hidden = !topicRule;
   showScreen("screen-topic");
 }
 
@@ -695,6 +709,182 @@ function makeQuestionCard(question, onTap) {
   card.append(text, arrow);
   card.addEventListener("click", onTap);
   return card;
+}
+
+// ---------- A rule's full text ("📖 Read the full rule") ----------
+// Any sub-topic (or topic) whose questions ALL come from one source document — the same
+// "source.grNumber", like "A.M. No. 07-9-12-SC" or "Rules of Court, Rule 91" — gets the
+// button, as long as data/rules.json lists that document. Nothing else needs setting up,
+// so rules added later get it too. Each rule's text is its own file,
+// data/rule-texts/rule-0001.txt …, downloaded only when she taps the button and then
+// kept on the phone for offline use (see sw.js), like a decision's full text.
+// Each Section (or Article) is shown in its own card; PART / RULE headings sit between
+// the cards. Her highlights use the colored highlighter and are saved as e.g.
+// "rule-0001:fulltext", with the words numbered across the whole rule.
+let topicRule = null;    // the rule behind the topic screen being shown, if any
+let currentRule = null;  // the rule on the rule screen
+
+function findRule(ruleId) {
+  return allRules.find(function (r) { return r.id === ruleId; }) || null;
+}
+
+// The rule all these questions come from, or null (none, or more than one source).
+function ruleForQuestions(questions) {
+  if (questions.length === 0) { return null; }
+  const number = questions[0] && questions[0].source && questions[0].source.grNumber;
+  if (typeof number !== "string" || !number) { return null; }
+  const allSame = questions.every(function (q) { return q && q.source && q.source.grNumber === number; });
+  if (!allSame) { return null; }
+  return allRules.find(function (r) { return r.number === number; }) || null;
+}
+
+document.getElementById("topic-rule").addEventListener("click", function () {
+  if (topicRule) { openRule(topicRule); }
+});
+
+document.getElementById("rule-back").addEventListener("click", function () {
+  openTopicOrSubject();
+});
+
+function loadRuleText(ruleId) {
+  // Only IDs like "rule-0001" are used to build the file name (bad content can't point elsewhere).
+  if (typeof ruleId !== "string" || !/^rule-\d+$/.test(ruleId)) {
+    return Promise.reject(new Error("missing"));
+  }
+  return fetch("data/rule-texts/" + ruleId + ".txt").then(function (response) {
+    if (response.status === 404) { throw new Error("missing"); }
+    if (!response.ok) { throw new Error("status " + response.status); }
+    return response.text();
+  }).then(function (text) {
+    if (!text.trim()) { throw new Error("missing"); }
+    return text;
+  });
+}
+
+function openRule(rule) {
+  currentRule = rule;
+  document.getElementById("rule-subject").textContent =
+    [currentSubject, currentTopic, currentSubtopic && currentSubtopic.charAt(0) !== "*" ? currentSubtopic : null]
+      .filter(Boolean).join(" · ");
+  document.getElementById("rule-title").textContent = rule.title || "Untitled rule";
+  document.getElementById("rule-number").textContent = rule.number || "";
+  document.getElementById("rule-draft-badge").hidden = (rule.status === "verified");
+
+  // Source: a tappable link if it's a web address.
+  const source = document.getElementById("rule-source");
+  source.innerHTML = "";
+  const url = typeof rule.sourceUrl === "string" ? rule.sourceUrl.trim() : "";
+  if (/^https?:\/\//i.test(url)) {
+    const link = document.createElement("a");
+    link.className = "source-link";
+    link.href = url;
+    link.target = "_blank";
+    link.rel = "noopener";
+    link.textContent = "Open the source ›";
+    const note = document.createElement("span");
+    note.className = "source-note";
+    note.textContent = url;
+    source.append(link, note);
+  } else {
+    source.textContent = url || "Not given.";
+  }
+  document.getElementById("rule-source-card").hidden = false;
+  const credit = document.getElementById("rule-credit");
+  credit.textContent = /lawphil\.net/i.test(url)
+    ? "Text from The LawPhil Project, Arellano Law Foundation (see Source below)." : "";
+  credit.hidden = true;
+
+  // Clear the old text, then load this rule's text.
+  const box = document.getElementById("rule-text");
+  box.hidden = true;
+  box.textContent = "";
+  delete box.dataset.hlKey;
+  document.getElementById("rule-palette").hidden = true;
+  const note = document.getElementById("rule-note");
+  note.textContent = "Loading…";
+  note.hidden = false;
+  showScreen("screen-rule");
+
+  loadRuleText(rule.id)
+    .then(function (text) {
+      if (currentRule !== rule || shownScreen !== "screen-rule") { return; }
+      showRuleText(box, text, rule);
+      note.hidden = true;
+      box.hidden = false;
+      document.getElementById("rule-palette").hidden = false;
+      credit.hidden = !credit.textContent;
+    })
+    .catch(function (error) {
+      if (currentRule !== rule) { return; }
+      if (error.message === "missing") {
+        note.textContent = "The full text of this rule hasn't been added yet.";
+      } else if (navigator.onLine === false || error instanceof TypeError) {
+        note.textContent = "Couldn't load the full text. You may be offline, and this rule hasn't been opened on this phone before.\nConnect to the internet and try again. After that, it will work offline too.";
+      } else {
+        note.textContent = "Couldn't load the full text right now. Please try again in a moment.";
+      }
+    });
+}
+
+// Where a Section (or Article) starts: "SECTION 1.", "Sec. 5.", "Article 3." …
+const RULE_SECTION_START = /^(?:SECTION|Section|SEC\.|Sec\.|ARTICLE|Article|ART\.|Art\.)\s+\d+\s*\./;
+// A heading between sections: "PART II", "RULE 7" (with its title on the next line) …
+const RULE_GROUP_HEADING = /^(?:PART|RULE|TITLE|CHAPTER|BOOK)\s+[0-9IVXLC]+\b/;
+
+// Split the text (paragraphs separated by a blank line) into headings and sections.
+function ruleBlocks(text) {
+  const blocks = [];
+  let section = null;
+  text.replace(/\r/g, "").split(/\n\s*\n/).forEach(function (para) {
+    const p = para.trim();
+    if (!p) { return; }
+    if (RULE_SECTION_START.test(p)) {
+      section = { kind: "section", paras: [p] };
+      blocks.push(section);
+    } else if (RULE_GROUP_HEADING.test(p) || !section) {
+      blocks.push({ kind: "heading", text: p });
+      section = null;
+    } else {
+      section.paras.push(p);
+    }
+  });
+  return blocks;
+}
+
+function showRuleText(box, text, rule) {
+  const key = rule.id + ":fulltext";
+  const highlighted = highlightedWords(key);
+  const same = function (a, b) { return a.replace(/\s+/g, " ").trim().toLowerCase() === b.replace(/\s+/g, " ").trim().toLowerCase(); };
+  box.textContent = "";
+  box.dataset.hlKey = key;
+  let nextWord = 0;
+  ruleBlocks(text).forEach(function (block, i) {
+    if (block.kind === "heading") {
+      if (i === 0 && same(block.text, rule.title || "")) { return; }  // already the screen's title
+      const heading = document.createElement("p");
+      heading.className = "rule-heading";
+      heading.textContent = block.text;
+      box.appendChild(heading);
+      return;
+    }
+    // A section's card. Its heading ("Section 3. Where to file.") is shown in bold.
+    let body = block.paras.join("\n\n");
+    if (body.indexOf("**") === -1) {
+      body = body.replace(/^([^\n]{1,200}?\.)(?=\s?[-–—])/, "**$1**");
+    }
+    const card = document.createElement("div");
+    card.className = "card rule-section hl-block";
+    const p = document.createElement("p");
+    p.className = "prompt reading-text";
+    p.appendChild(richText(body, highlighted, false, nextWord));
+    card.appendChild(p);
+    box.appendChild(card);
+    nextWord += card.querySelectorAll(".hl-word").length;
+  });
+  box.querySelectorAll(".hl-word.hl-on").forEach(function (word) {
+    word.dataset.hlColor = highlightColorOf(key, Number(word.dataset.word));
+  });
+  joinHighlights(box);
 }
 
 // ---------- Case titles: one shared look everywhere ----------
@@ -1683,12 +1873,12 @@ let questionScrollSpot = 0;    // where she was on the question screen
 // the list get the yellow highlight. Still no innerHTML: words are added as plain text.
 // Unless "noLists" is true, numbered points like "(1) … (2) …" are put on their own
 // lines with the number in bold (see markLists below).
-function richText(value, highlighted, noLists) {
+function richText(value, highlighted, noLists, startAt) {
   let text = (value === null || value === undefined) ? "" : String(value);
   text = text.split(LIST_MARK).join("");  // the marker character is ours alone
   if (!noLists) { text = markLists(text); }
   const fragment = document.createDocumentFragment();
-  let wordNumber = 0;
+  let wordNumber = startAt || 0;  // a rule's later sections continue the count
 
   // Add a piece of text to "parent": as plain text, or word by word if highlighting.
   function addText(parent, piece) {
@@ -1874,6 +2064,8 @@ function joinHighlights(element) {
       return;
     }
     piece.classList.remove("hl-join-left", "hl-join-right");
+    // Words in two different cards (a rule's sections) are never joined.
+    if (previousWord && previousWord.closest(".hl-block") !== piece.closest(".hl-block")) { canJoin = false; }
     // Different colors are never joined: each color stays its own stripe.
     const joined = canJoin && previousWord &&
       previousWord.classList.contains("hl-on") && piece.classList.contains("hl-on") &&
@@ -1904,9 +2096,11 @@ function pickHighlightColor(color) {
   document.querySelectorAll(".hl-swatch").forEach(function (swatch) {
     swatch.setAttribute("aria-pressed", swatch.dataset.color === color ? "true" : "false");
   });
-  // The drag preview uses the picked color (see style.css).
-  const box = document.getElementById("full-text");
-  HIGHLIGHT_COLORS.forEach(function (c) { box.classList.toggle("hl-active-" + c, c === color); });
+  // The drag preview uses the picked color (see style.css): in every colored-highlighter
+  // text (a decision's full text, a rule's full text).
+  document.querySelectorAll(".hl-colored").forEach(function (box) {
+    HIGHLIGHT_COLORS.forEach(function (c) { box.classList.toggle("hl-active-" + c, c === color); });
+  });
 }
 
 document.querySelectorAll(".hl-swatch").forEach(function (swatch) {
@@ -1959,7 +2153,7 @@ function makeHighlightable(elementId) {
   });
 }
 
-["prompt", "case-facts", "case-issue", "case-ruling", "full-text"].forEach(makeHighlightable);
+["prompt", "case-facts", "case-issue", "case-ruling", "full-text", "rule-text"].forEach(makeHighlightable);
 
 // ---------- Highlighter with a mouse: click and drag ----------
 // On a touchscreen she taps one word at a time (above). With a mouse or trackpad she
@@ -2579,7 +2773,22 @@ const casesReady = fetch("data/cases.json")
 
 // Show a loading problem at the top of the app (several can show at once).
 // Once both files have loaded (or failed), put her back where she was.
-Promise.all([questionsReady, casesReady]).then(restoreSpot);
+const rulesReady = fetch("data/rules.json")
+  .then(function (response) {
+    if (!response.ok) { throw new Error("status " + response.status); }
+    return response.json();
+  })
+  .then(function (data) {
+    if (!Array.isArray(data)) { throw new Error("not a list"); }
+    allRules = data.filter(function (r) {
+      return r && typeof r === "object" && typeof r.id === "string" && typeof r.number === "string";
+    });
+  })
+  .catch(function () {
+    showLoadError("Couldn't load the list of rules (data/rules.json), so \"Read the full rule\" won't show. The file may have a typo.");
+  });
+
+Promise.all([questionsReady, casesReady, rulesReady]).then(restoreSpot);
 
 function showLoadError(text) {
   const error = document.getElementById("load-error");
@@ -2611,7 +2820,7 @@ function safeToReload() {
   if (shownScreen === "screen-question") {
     return !session || !session.current || Object.keys(session.current).length === 0;
   }
-  if (shownScreen === "screen-case") { return false; }  // reading a case: wait until she leaves it
+  if (shownScreen === "screen-case" || shownScreen === "screen-rule") { return false; }  // reading: wait until she leaves
   return true;
 }
 

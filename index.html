@@ -111,6 +111,8 @@
       <h1 class="screen-title" id="topic-title"></h1>
       <p class="screen-subtitle" id="topic-count"></p>
       <button class="btn btn-primary" id="topic-start">Start practice</button>
+      <!-- Only for a sub-topic built from one rule: read the whole rule (loaded on tap) -->
+      <button class="btn btn-secondary" id="topic-rule" hidden>📖 Read the full rule</button>
       <p class="card empty-note list-empty" id="topic-empty" hidden></p>
       <h2 class="label topics-label">Cases</h2>
       <div class="subject-list" id="topic-case-list"></div>
@@ -302,6 +304,31 @@
       <h2 class="label topics-label">Questions linked to this case</h2>
       <div class="subject-list" id="case-questions"></div>
       <p class="card empty-note list-empty" id="case-questions-empty" hidden>No questions linked to this case yet.</p>
+    </section>
+
+    <!-- SCREEN 5b: One rule's full text, each section in its own card (loaded on demand) -->
+    <section id="screen-rule" hidden>
+      <button class="back-btn" id="rule-back">‹ Back</button>
+      <p class="subject" id="rule-subject"></p>
+      <h1 class="screen-title" id="rule-title"></h1>
+      <p class="case-number" id="rule-number"></p>
+      <p class="status-unverified status-badge" id="rule-draft-badge" hidden>Unverified</p>
+      <p class="full-text-note" id="rule-note" hidden></p>
+      <div class="rule-reader">
+        <!-- Highlighter colors: stays pinned at the top while she reads -->
+        <div class="hl-palette rule-palette" id="rule-palette" role="group" aria-label="Highlighter color" hidden>
+          <button class="hl-swatch" data-color="facts" aria-pressed="false"><span class="hl-dot"></span><span class="hl-swatch-name">Facts</span></button>
+          <button class="hl-swatch" data-color="issue" aria-pressed="false"><span class="hl-dot"></span><span class="hl-swatch-name">Issue</span></button>
+          <button class="hl-swatch" data-color="ruling" aria-pressed="true"><span class="hl-dot"></span><span class="hl-swatch-name">Important ruling</span></button>
+          <button class="hl-swatch" data-color="doctrine" aria-pressed="false"><span class="hl-dot"></span><span class="hl-swatch-name">Doctrine</span></button>
+        </div>
+        <div class="rule-text hl-colored hl-active-ruling" id="rule-text" hidden></div>
+      </div>
+      <p class="full-text-credit" id="rule-credit" hidden></p>
+      <section class="card case-part" id="rule-source-card" hidden>
+        <h2 class="label">Source</h2>
+        <p class="prompt" id="rule-source"></p>
+      </section>
     </section>
 
     <!-- SCREEN 4: Results -->
