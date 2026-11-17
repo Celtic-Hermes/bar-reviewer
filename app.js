@@ -1680,6 +1680,30 @@ const FB_LEVEL_SHARE = { moderate: 0.35, intensive: 0.55, verbatim: 0.75 };  // 
 const FB_LIGHT_MOST = 3;          // Light: at most this many key-term blanks
 const FB_DEFAULT_LEVEL = "key";
 const FB_RATINGS = ["Got it", "Missed it"];
+
+// ===================== FILLER WORDS (edit this list) =====================
+// In Key Legal Terms (and Light, which uses the same key terms), these words inside a key
+// term are never blanked: they stay as plain text, and only the meaningful words get boxes.
+// "docket and other lawful fees" → boxes for docket, lawful, fees.
+// Moderate, Intensive and Verbatim Bar Mode ignore this list and may blank any word.
+// One word per entry, lower case. Capital letters don't matter ("The" = "the").
+const FB_FILLER_WORDS = [
+  // articles
+  "the", "a", "an",
+  // conjunctions
+  "and", "or", "nor", "but",
+  // prepositions
+  "of", "to", "in", "on", "at", "for", "by", "with", "from", "into", "upon", "as",
+  // other filler
+  "any", "shall", "other", "such", "its", "his", "her", "their",
+  "this", "that", "these", "those", "which", "be", "is", "are"
+];
+// ==========================================================================
+const FB_FILLER_LEVELS = ["light", "key"];  // the levels where filler words stay visible
+
+function isFillerWord(text) {
+  return FB_FILLER_WORDS.indexOf(splitWord(text).middle.toLowerCase()) !== -1;
+}
 const BLANK = /_{4,}/;
 const HAS_LETTER = /[A-Za-zÀ-ÿ]/;
 
@@ -1822,7 +1846,8 @@ function pickHiddenWords(level) {
   const blanks = all.filter(function (n) { return fbInfo.words[n].isBlank; });
   if (!fbInfo.usable) { return blanks; }  // content doesn't line up: just the written blanks
   if (level === "light") {
-    return shuffled(blanks).slice(0, FB_LIGHT_MOST).sort(function (a, b) { return a - b; });
+    const usable = blanks.filter(function (n) { return blankHasBox(fbInfo.words[n], level); });
+    return shuffled(usable).slice(0, FB_LIGHT_MOST).sort(function (a, b) { return a - b; });
   }
   if (level === "key") { return blanks; }
 
@@ -1843,7 +1868,7 @@ function pickHiddenWords(level) {
 // are always picked), and not at the higher levels when no other word could be picked.
 function canPickNewBlanks(level) {
   if (!fbInfo.usable || level === "key") { return false; }
-  const blanks = fbInfo.words.filter(function (w) { return w.isBlank; }).length;
+  const blanks = fbInfo.words.filter(function (w) { return w.isBlank && blankHasBox(w, level); }).length;
   if (level === "light") { return blanks > FB_LIGHT_MOST; }
   const extras = fbInfo.hidden.filter(function (n) { return !fbInfo.words[n].isBlank; }).length;
   const candidates = fbInfo.words.filter(canHideExtra).length;
@@ -1903,15 +1928,22 @@ function hiddenWordCount(hidden, level) {
 
 // One box per word: the words of a key-term blank's answer ("life, liberty and security"),
 // each with "box": true if it's hidden (gets its own box) at this level. The spaces
-// between them are kept as they are. Pieces with no letter or number are never boxes.
+// between them are kept as they are. Pieces with no letter or number are never boxes,
+// and at Light / Key Legal Terms neither are filler words (FB_FILLER_WORDS).
 function blankParts(w, level) {
+  const skipFiller = FB_FILLER_LEVELS.indexOf(level) !== -1;
   const parts = [];
   String(w.answer || "").split(/(\s+)/).forEach(function (bit) {
     if (bit === "") { return; }
     if (/^\s+$/.test(bit)) { parts.push({ space: bit }); return; }
-    parts.push({ text: bit, box: /[A-Za-zÀ-ÿ0-9]/.test(bit) });
+    parts.push({ text: bit, box: /[A-Za-zÀ-ÿ0-9]/.test(bit) && !(skipFiller && isFillerWord(bit)) });
   });
   return parts;
+}
+
+// Does this key-term blank get at least one box at this level?
+function blankHasBox(w, level) {
+  return !w.answer || blankParts(w, level).some(function (p) { return p.box; });
 }
 
 // The box key for word n ("12"), or for part k of key-term blank n ("12.3").
@@ -2016,7 +2048,14 @@ function applyFbLevel(question, level, hidden) {
       w.span.append(outer.before);
       blankParts(w, level).forEach(function (part, k) {
         if (part.space) { w.span.append(part.space); return; }
-        if (!part.box) { w.span.append(part.text); return; }
+        if (!part.box) {
+          // A filler word (Light / Key Legal Terms): plain text, looking like the words around it.
+          const shown = document.createElement("span");
+          shown.className = "fb-shown";
+          shown.textContent = part.text;
+          w.span.append(shown);
+          return;
+        }
         const bits = splitWord(part.text);
         w.span.append(bits.before, makeBlankBox(n + "." + k, typed[n + "." + k]), bits.after);
       });

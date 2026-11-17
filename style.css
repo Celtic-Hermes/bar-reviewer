@@ -302,6 +302,7 @@ body {
 .btn-fbrate.selected:disabled { opacity: 1; }
 /* A hidden word: a text box she types into, shown like an underlined gap in the line. */
 .fb-blank { color: var(--primary); font-weight: 700; }
+.fb-blank .fb-shown { color: var(--text); font-weight: 400; }  /* a filler word inside a hidden key term: plain text */
 .fb-input {
   font: inherit; font-weight: 600; color: var(--text, inherit);
   /* Inherits the question's 17px: 16px or more stops the iPhone zooming in when she taps it. */
