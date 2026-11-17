@@ -17,6 +17,8 @@
 //   settings:  her choices: { "dailyGoal": 20 } (10, 20, 30 or 50)
 //   streakBest: her longest streak of study days ever (kept here, since "daily" only
 //              keeps 400 days)
+//   notes:     her own notes on a case or a rule, by its ID:
+//              { "case-0002": { "text": "…", "updated": "2026-11-18T09:30:00.000Z" }, "rule-0004": … }
 //   tags:      her color tag on a question, by ID: "green", "yellow" or "red"
 //              (what each color means is up to her; no tag = not in the list)
 //   highlights: words she highlighted, as a list of word positions (0 = first word).
@@ -96,8 +98,27 @@ function cleanSettings(value) {
   return clean;
 }
 
+// Her notes (defined up here because loading her progress, just below, needs them).
+const NOTE_ID = /^(case|rule)-\d+$/;
+const NOTE_MAX_LENGTH = 50000;
+
+// Keep only sensible notes: a case or rule ID → { text, updated }, text not blank.
+function cleanNotes(value) {
+  const clean = {};
+  if (!isPlainObject(value)) { return clean; }
+  Object.keys(value).forEach(function (id) {
+    const n = value[id];
+    if (!NOTE_ID.test(id) || !isPlainObject(n) || typeof n.text !== "string" || !n.text.trim()) { return; }
+    clean[id] = {
+      text: n.text.slice(0, NOTE_MAX_LENGTH),
+      updated: (typeof n.updated === "string" && !isNaN(Date.parse(n.updated))) ? n.updated : null
+    };
+  });
+  return clean;
+}
+
 function emptyProgress() {
-  return { subjects: {}, review: {}, bookmarks: {}, tags: {}, highlights: {}, highlightColors: {}, daily: {}, results: {}, settings: {}, streakBest: 0 };
+  return { subjects: {}, review: {}, bookmarks: {}, tags: {}, notes: {}, highlights: {}, highlightColors: {}, daily: {}, results: {}, settings: {}, streakBest: 0 };
 }
 
 // Read saved progress. If there's none, or it's damaged, start fresh instead of crashing.
@@ -112,6 +133,7 @@ function loadProgress() {
       review: data.review || {},
       bookmarks: data.bookmarks || {},
       tags: cleanTags(data.tags),
+      notes: cleanNotes(data.notes),
       daily: cleanDaily(data.daily),
       results: cleanResults(data.results),
       settings: cleanSettings(data.settings),
@@ -272,6 +294,23 @@ function noteResult(question, last, effect, level) {
   if (countedOn && newCount > 0) { result.countedOn = countedOn; }
   if (FB_LEVEL_IDS.indexOf(level) !== -1) { result.level = level; }
   progress.results[question.id] = result;
+}
+
+// ---------- Her notes on cases and rules ----------
+function noteFor(id) {
+  const note = progress.notes[id];
+  return note ? note.text : "";
+}
+
+// Save (or, if blank, remove) her note on a case or rule. Returns true if it saved.
+function setNote(id, text) {
+  if (!NOTE_ID.test(id)) { return false; }
+  if (typeof text !== "string" || !text.trim()) {
+    delete progress.notes[id];
+  } else {
+    progress.notes[id] = { text: text.slice(0, NOTE_MAX_LENGTH), updated: new Date().toISOString() };
+  }
+  return saveProgress();
 }
 
 // ---------- Mastery ----------
@@ -581,6 +620,8 @@ function readBackup(text) {
   });
   // Older backups have no tags; that's fine, they just start empty.
   clean.tags = cleanTags(p.tags);
+  // Older backups have no notes: they start empty.
+  clean.notes = cleanNotes(p.notes);
   // Older backups have no daily counts or results either: they start empty.
   clean.daily = cleanDaily(p.daily);
   clean.results = cleanResults(p.results);

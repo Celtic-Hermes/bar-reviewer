@@ -712,6 +712,21 @@ body {
 #screen-rule .status-badge { margin-bottom: 4px; }
 #rule-source-card { margin-top: 16px; }
 
+/* ---------- Her notes (case screen, rule screen) ---------- */
+.notes-box {
+  display: block; width: 100%; box-sizing: border-box;
+  min-height: 92px;               /* about 3 lines to start */
+  padding: 10px 12px;
+  font: inherit; font-size: 17px;  /* 16px or more: the iPhone doesn't zoom in when she taps it */
+  line-height: 1.5; color: var(--text);
+  background: var(--bg); border: 1px solid var(--border); border-radius: 10px;
+  resize: none; overflow: hidden;  /* it grows with her text instead of scrolling inside */
+  -webkit-appearance: none; appearance: none;
+}
+.notes-box:focus { outline: 2px solid var(--primary); outline-offset: 1px; border-color: transparent; }
+.notes-box::placeholder { color: var(--muted); }
+.notes-status { margin: 8px 0 0; font-size: 13px; color: var(--muted); }
+
 /* "Read the case" buttons under a question */
 .question-cases { margin-top: 8px; }
 .question-cases .btn { margin-bottom: 10px; }

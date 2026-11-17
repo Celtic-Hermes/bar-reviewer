@@ -66,7 +66,7 @@
       <!-- Back up / restore her progress as a file -->
       <section class="card backup-card">
         <h2 class="label">Back up your progress</h2>
-        <p class="backup-note">Save a copy of your scores, review list, bookmarks, color tags, and study streak as a file. Keep it in Files or iCloud Drive, so you can load it back if this phone ever loses your progress.</p>
+        <p class="backup-note">Save a copy of your scores, review list, bookmarks, color tags, study streak, and notes as a file. Keep it in Files or iCloud Drive, so you can load it back if this phone ever loses your progress.</p>
         <button class="btn btn-primary" id="backup-btn">Back up my progress</button>
         <label class="btn btn-secondary" for="restore-input">Restore progress</label>
         <input type="file" id="restore-input" class="visually-hidden">
@@ -312,6 +312,13 @@
       <section class="card case-part">
         <h2 class="label">Key doctrine</h2>
         <p class="prompt reading-text" id="case-doctrine"></p>
+      </section>
+      <!-- Her own notes on this case (saved on this phone as she types) -->
+      <section class="card case-part notes-card">
+        <h2 class="label"><label for="case-notes">My notes</label></h2>
+        <textarea class="notes-box" id="case-notes" rows="3" placeholder="Write your own notes on this case…"
+          autocapitalize="sentences" spellcheck="true"></textarea>
+        <p class="notes-status" id="case-notes-status" aria-live="polite">Saved on this phone as you type.</p>
       </section>
       <section class="card case-part">
         <h2 class="label">Full text of the decision</h2>

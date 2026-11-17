@@ -42,6 +42,7 @@ document.addEventListener("touchstart", function () {}, { passive: true });
 // ---------- Switching screens ----------
 // Only one screen is visible at a time.
 function showScreen(id) {
+  saveAllNotes();  // leaving a screen with a notes box: save what she typed first
   ["screen-home", "screen-subject", "screen-subtopics", "screen-topic", "screen-tagged", "screen-question", "screen-results", "screen-case", "screen-rule"].forEach(function (screenId) {
     document.getElementById(screenId).hidden = (screenId !== id);
   });
@@ -945,6 +946,70 @@ document.getElementById("today-goal").addEventListener("change", function (event
 // Back in the app on a new day (or after a while): bring the home screen's card up to date.
 document.addEventListener("visibilitychange", function () {
   if (document.visibilityState === "visible" && shownScreen === "screen-home") { showTodayCard(); }
+});
+
+// ---------- Her notes (on cases and rules) ----------
+// Every notes box is a <textarea class="notes-box"> with a status line right after it
+// (id + "-status"). showNotesBox(box, id) loads her note for that case or rule.
+// It saves by itself while she types (half a second after she pauses), and right away
+// when she leaves the box, the screen, or the app. The box grows with her text, so she
+// never scrolls inside a small box.
+const NOTE_SAVE_DELAY = 500;
+
+function growNotesBox(box) {
+  box.style.height = "auto";
+  box.style.height = (box.scrollHeight + 2) + "px";  // + the top and bottom border
+}
+
+function showNotesBox(box, id) {
+  saveNotesNow(box);  // anything typed for the previous case or rule is saved first
+  box.dataset.noteId = id;
+  box.value = noteFor(id);
+  setNotesStatus(box, "Saved on this phone as you type.");
+  // Grow once it's on screen (its width is known then).
+  window.requestAnimationFrame(function () { growNotesBox(box); });
+}
+
+function setNotesStatus(box, text) {
+  const status = document.getElementById(box.id + "-status");
+  if (status) { status.textContent = text; }
+}
+
+function saveNotesNow(box) {
+  if (box.saveTimer) {
+    clearTimeout(box.saveTimer);
+    box.saveTimer = null;
+  }
+  if (!box.dataset.noteId || box.dataset.unsaved !== "yes") { return; }
+  const ok = setNote(box.dataset.noteId, box.value);
+  box.dataset.unsaved = "no";
+  setNotesStatus(box, ok ? "Saved on this phone." : "Couldn't save on this phone. Private browsing may be on.");
+}
+
+document.querySelectorAll(".notes-box").forEach(function (box) {
+  box.addEventListener("input", function () {
+    growNotesBox(box);
+    box.dataset.unsaved = "yes";
+    setNotesStatus(box, "Saving…");
+    if (box.saveTimer) { clearTimeout(box.saveTimer); }
+    box.saveTimer = setTimeout(function () { saveNotesNow(box); }, NOTE_SAVE_DELAY);
+  });
+  box.addEventListener("blur", function () { saveNotesNow(box); });
+});
+
+// Leaving the app (switching apps, locking the phone, closing): save every open note now.
+function saveAllNotes() {
+  document.querySelectorAll(".notes-box").forEach(saveNotesNow);
+}
+window.addEventListener("pagehide", saveAllNotes);
+document.addEventListener("visibilitychange", function () {
+  if (document.visibilityState === "hidden") { saveAllNotes(); }
+});
+// The phone turned sideways (or the window changed width): re-fit the boxes.
+window.addEventListener("resize", function () {
+  document.querySelectorAll(".notes-box").forEach(function (box) {
+    if (box.offsetParent !== null) { growNotesBox(box); }
+  });
 });
 
 // ---------- Case titles: one shared look everywhere ----------
@@ -2234,7 +2299,7 @@ document.addEventListener("pointerdown", function (event) {
   lastPointerType = event.pointerType;
   skipNextClick = false;
   // (A press in a fill-in-the-blank box is for typing, not for a highlight drag.)
-  mouseIsDown = (event.pointerType === "mouse") && !(event.target.closest && event.target.closest("input"));
+  mouseIsDown = (event.pointerType === "mouse") && !(event.target.closest && event.target.closest("input, textarea"));
 });
 
 // The press itself says whether it's part of a double-click (more reliable than the release).
@@ -2491,6 +2556,7 @@ function openCase(theCase, cameFrom) {
   setHighlightableText(document.getElementById("case-issue"), caseText(theCase.issue), theCase.id + ":issue");
   setHighlightableText(document.getElementById("case-ruling"), caseText(theCase.ruling), theCase.id + ":ruling");
   setRichText(document.getElementById("case-doctrine"), caseText(theCase.keyDoctrine));
+  showNotesBox(document.getElementById("case-notes"), theCase.id);
 
   // Source: a tappable link if it's a web address, otherwise plain text.
   const source = document.getElementById("case-source");
@@ -2782,7 +2848,7 @@ document.getElementById("restore-input").addEventListener("change", function (ev
     }
     const sure = window.confirm(
       "Replace the progress on this phone with the backup from " + describeDate(backup.savedAt) + "?\n\n" +
-      "Your current scores, review list, bookmarks, color tags, and study streak will be replaced."
+      "Your current scores, review list, bookmarks, color tags, study streak, and notes will be replaced."
     );
     if (!sure) {
       showBackupMessage("Restore cancelled. Nothing was changed.");
