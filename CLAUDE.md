@@ -252,6 +252,12 @@ These rules matter more than speed.
 ## Technical choices
 - **Plain HTML, CSS, and JavaScript.** No frameworks or build steps unless there's a clear reason, explained first. This keeps things simple to run and fix.
 - **Phone first**, especially iPhone Safari. It should still work on a computer.
+- **Wide screens** (rules at the end of `style.css`; phones under 800px never see them, and the reading column stays at most 640px):
+  - **800px and up:** home screen subject cards in 2 columns; **1100px and up:** 3 columns.
+  - **1100px and up, case screen:** her notes and "Questions linked to this case" move into a side panel on the right that stays in view while she scrolls (`placeCaseSide` in `app.js` moves the two blocks there and back, using markers, when the width changes).
+  - **1100px and up, Find in case:** opens as a panel on the right next to the question (the question shifts left, nothing is dimmed, swipe-to-close is off); phones keep the slide-up panel.
+  - `body[data-screen]` (set in `showScreen`) tells the CSS which screen is showing.
+  - When changing layout, check phones didn't change: full-page screenshots at 390px before and after should be pixel-identical.
 - **Works offline** after the first visit (using a "service worker", a small script that saves the app's files on the phone).
   - **Cache version rule:** whenever any app file changes (`index.html`, `style.css`, `app.js`, `progress.js`, `find-in-case.js`, `manifest.webmanifest`, icons), or a file is added to or removed from the `APP_FILES` list, bump `CACHE_VERSION` in `sw.js` (v1 → v2 …) in the same commit, and tell the builder it was bumped. Editing only `data/questions.json`, `data/cases.json`, or files in `data/case-texts/` does not need a bump: they are fetched fresh whenever she's online.
   - Every new app file must be added to `APP_FILES` in `sw.js`, or it won't work offline.
