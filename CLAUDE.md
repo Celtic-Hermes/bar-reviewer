@@ -137,8 +137,13 @@ Exactly 4 choices (A–D) and exactly one correct answer. She gets instant feedb
 ```
 - Blanks are written as **four or more underscores** (`____`). `fullText` is the exact same text with nothing blanked; everything outside the blanks must match it character for character, so the app can bold the missing words when she taps **Show answer**. Don't put two blanks right next to each other, and don't use `**` in either field.
 - Blank the legally significant words (required elements, periods/deadlines, standards, who may file, where), not random words.
-- **How it's practiced:** she first picks how much is filled in for her: **0%, 25%, 50% or 75%** (difficulty, not a score). That share of the blanks (rounded down, picked at random, always leaving at least one empty) is shown filled in; the rest stay blank. **Show answer** reveals the full text with every blanked word bold and underlined. She then rates **Got it / Missed it**: Missed it goes into Review missed; per subject the app keeps `fbCorrect` of `fbAnswered` ("X of Y correct"). The level picked doesn't affect the score.
-- Each blank stays one "word" for highlighting whether it's shown filled in or not, so her highlights don't move between levels. Changing an item's `prompt` (which words are blanked) can still shift them.
+- **How it's practiced:** a **Blanks** dropdown above the text picks how much is hidden (more hidden = harder). The blanks written in the content are the "key legal terms":
+  - **Light**: 2–3 of the key legal terms (up to 3, picked at random; all of them if the item has fewer).
+  - **Key Legal Terms** (~20%): all the key legal terms, nothing else.
+  - **Moderate** (~35%), **Intensive** (~55%), **Verbatim Bar Mode** (~75%): all the key legal terms, plus other words picked at random until about that share of the words is hidden. "SEC."/"Section", list numbers like "(a)", and words without letters are never picked.
+  - The dropdown starts at the level she used last (saved in `barReviewer.fbLevel.v1`, not part of backups) and can be changed until **Show answer**. A note under the text says "X of Y words hidden (Z%)".
+  - **Show answer** reveals the full text with every hidden word bold and underlined. She then rates **Got it / Missed it**: Missed it goes into Review missed; per subject the app keeps `fbCorrect` of `fbAnswered` ("X of Y correct"). The level picked doesn't affect the score.
+- Each word stays one "word" for highlighting whether it's hidden or not, so her highlights don't move between levels. Changing an item's `prompt` (which words are blanked) can still shift them.
 - The Question type picker on the subject screen has **Essay questions / Multiple choice / Fill in the blank / All**.
 
 ## Adding a new case (default procedure)

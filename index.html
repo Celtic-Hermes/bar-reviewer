@@ -135,17 +135,18 @@
 
       <section class="card">
         <h2 class="label" id="question-label">Question</h2>
-        <p class="prompt" id="prompt"></p>
-        <!-- Fill in the blank: she first picks how much is filled in for her -->
+        <!-- Fill in the blank: how much of the text is hidden -->
         <div class="fb-level" id="fb-level" hidden>
-          <p class="fb-level-title">How much should be filled in for you?</p>
-          <div class="fb-level-buttons">
-            <button class="btn btn-fb-level" data-level="0">0%</button>
-            <button class="btn btn-fb-level" data-level="25">25%</button>
-            <button class="btn btn-fb-level" data-level="50">50%</button>
-            <button class="btn btn-fb-level" data-level="75">75%</button>
-          </div>
+          <label class="fb-level-title" for="fb-level-select">Blanks</label>
+          <select class="fb-level-select" id="fb-level-select">
+            <option value="light">Light (2–3 blanks)</option>
+            <option value="key">Key Legal Terms (~20%)</option>
+            <option value="moderate">Moderate (~35%)</option>
+            <option value="intensive">Intensive (~55%)</option>
+            <option value="verbatim">Verbatim Bar Mode (~75%)</option>
+          </select>
         </div>
+        <p class="prompt" id="prompt"></p>
         <p class="fb-level-note" id="fb-level-note" hidden></p>
         <button class="find-btn" id="find-btn" hidden>🔍 Find in case</button>
       </section>

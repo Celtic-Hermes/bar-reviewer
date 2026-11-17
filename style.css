@@ -224,14 +224,16 @@ body {
 
 .rating { margin-top: 8px; }
 .rating-buttons { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
-/* Fill in the blank: first, how much is filled in for her (4 buttons in a row). */
-.fb-level { margin-top: 4px; }
-.fb-level-title { margin: 0 0 10px; font-weight: 600; }
-.fb-level-buttons { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
-.btn-fb-level { background: var(--card); padding: 12px 4px; border-color: var(--primary); color: var(--primary); }
+/* Fill in the blank: the "Blanks" dropdown (how much is hidden), above the text. */
+.fb-level { display: flex; align-items: center; gap: 10px; margin: 0 0 12px; }
+.fb-level-title { font-weight: 600; }
+.fb-level-select {
+  flex: 1; min-width: 0; font: inherit; font-size: 16px; /* 16px: iPhone won't zoom in */
+  padding: 10px 12px; border: 2px solid var(--primary); border-radius: 10px;
+  background: var(--card); color: var(--primary);
+}
+.fb-level-select:disabled { opacity: 0.6; }
 .fb-level-note { margin: 12px 0 0; font-size: 14px; color: var(--muted); }
-/* Blanks already filled in for her: lighter, with a dotted underline. */
-.fb-given { color: var(--muted); text-decoration: underline dotted; text-underline-offset: 3px; }
 /* After "Show answer": Got it / Missed it, styled like the essay buttons.
    (Their own class, not .btn-rate: the essay rating buttons' code listens to .btn-rate.) */
 .fb-ratings { grid-template-columns: repeat(2, 1fr); }

@@ -201,9 +201,9 @@ function putBackCurrent(saved) {
   if (!isPlainObject(saved)) { return; }
   const question = session.questions[session.index];
   if (question.type === "fillblank") {
-    if (FB_LEVELS.indexOf(saved.fbLevel) !== -1) {
-      // The same level, and the same blanks filled in for her, as before the reload.
-      applyFbLevel(question, saved.fbLevel, Array.isArray(saved.fbShown) ? saved.fbShown : []);
+    if (FB_LEVELS.indexOf(saved.fbLevel) !== -1 && Array.isArray(saved.fbHidden)) {
+      // The same level, and the same words hidden, as before the reload.
+      applyFbLevel(question, saved.fbLevel, saved.fbHidden);
       if (saved.answerShown) {
         session.current.answerShown = true;
         revealFillBlank();
@@ -869,37 +869,86 @@ function showPicked(question, picked) {
 
 // --- Fill in the blank ---
 // Content: "prompt" has blanks written as ____ (four or more underscores), and
-// "fullText" is the same text with nothing blanked out.
-// 1. She picks how much is filled in for her: 0% (every blank empty, hardest), 25%,
-//    50% or 75% (most blanks filled in, easiest). The text appears once she picks.
-//    That share of the blanks, picked at random, is shown filled in (lighter, dotted
-//    underline); at least one blank always stays empty.
-// 2. She recalls the rest, then taps "Show answer": the full text, with every word that
-//    was blanked out in bold and underlined.
+// "fullText" is the same text with nothing blanked out. The blanks written in the
+// content are the key legal terms.
+// 1. The "Blanks" dropdown picks how much of the text is hidden (more hidden = harder):
+//    - Light: only 2–3 of the key legal terms (all of them if the item has 3 or fewer);
+//    - Key Legal Terms: all the key legal terms, nothing else;
+//    - Moderate / Intensive / Verbatim Bar Mode: all the key legal terms, plus other
+//      words picked at random, until about 35% / 55% / 75% of the words are hidden.
+//    The text shows right away at the level she used last. She can change the level
+//    until she taps "Show answer".
+// 2. She recalls the hidden words, then taps "Show answer": the full text, with every
+//    word that was hidden in bold and underlined.
 // 3. She rates herself Got it / Missed it. That decides Review missed and her score.
-const FB_LEVELS = [0, 25, 50, 75];
+// Each word stays one "word" for highlighting whether it's hidden or not, so her
+// highlights stay on the same words at every level.
+const FB_LEVELS = ["light", "key", "moderate", "intensive", "verbatim"];
+const FB_LEVEL_NAMES = {
+  light: "Light", key: "Key Legal Terms", moderate: "Moderate",
+  intensive: "Intensive", verbatim: "Verbatim Bar Mode"
+};
+const FB_LEVEL_SHARE = { moderate: 0.35, intensive: 0.55, verbatim: 0.75 };  // share of words hidden
+const FB_LIGHT_MOST = 3;          // Light: at most this many key-term blanks
+const FB_DEFAULT_LEVEL = "key";
 const FB_RATINGS = ["Got it", "Missed it"];
 const BLANK = /_{4,}/;
+const HAS_LETTER = /[A-Za-zÀ-ÿ]/;
+
+// Words that are never hidden as extra words: "SEC." / "Section", list numbers like
+// "(a)" or "(1)", and anything without a letter (numbers, dashes).
+function canHideWord(text) {
+  if (!HAS_LETTER.test(text)) { return false; }
+  if (/^(SEC\.|SECTION|Section)$/.test(text)) { return false; }
+  if (/^\(([a-z]|\d{1,2})\)$/.test(text)) { return false; }
+  return true;
+}
+
+// How many words a piece of text has (for working out the share hidden).
+function wordCount(text) {
+  return text.split(/\s+/).filter(function (w) { return /[A-Za-zÀ-ÿ0-9]/.test(w); }).length;
+}
+
+// Everything about this item's words, worked out once when it's shown:
+// for each word in the question, its text, and whether it's a key-term blank (and its answer).
+let fbInfo = null;
 
 function showFillBlank(question) {
-  // Make the blanks in the question stand out (each blank is one word for highlighting).
-  document.querySelectorAll("#prompt .hl-word").forEach(function (word) {
-    if (BLANK.test(word.textContent)) { word.classList.add("fb-blank"); }
-  });
-  const full = typeof question.fullText === "string" ? question.fullText : "";
-  setRichText(document.getElementById("fb-full"),
-    full ? withAnswersMarked(question.prompt, full) : "The full text for this item hasn't been added yet.");
+  const words = Array.from(document.querySelectorAll("#prompt .hl-word"));
+  const answers = blankAnswers(question.prompt, question.fullText);
+  const blankCount = words.filter(function (w) { return BLANK.test(w.textContent); }).length;
+  const canUse = answers && answers.length === blankCount;
+  let b = 0;
+  fbInfo = {
+    words: words.map(function (span) {
+      const text = span.textContent;
+      const isBlank = BLANK.test(text);
+      const info = { span: span, text: text, isBlank: isBlank };
+      if (isBlank) {
+        info.answer = canUse ? answers[b] : null;
+        b += 1;
+      }
+      return info;
+    }),
+    usable: !!canUse,
+    total: canUse ? Math.max(1, wordCount(question.fullText)) : 1
+  };
 
-  // Start: only the level choice. The text, "Show answer" and the answer stay hidden.
-  document.getElementById("prompt").hidden = true;
+  // Start: the dropdown and the text. The answer stays hidden.
   document.getElementById("fb-level").hidden = false;
-  document.getElementById("fb-show").hidden = true;
+  const select = document.getElementById("fb-level-select");
+  select.disabled = false;
+  document.getElementById("fb-show").hidden = false;
   document.getElementById("fb-answer-area").hidden = true;
   document.getElementById("fb-result").hidden = true;
   document.querySelectorAll(".btn-fbrate").forEach(function (b) {
     b.classList.remove("selected");
     b.disabled = false;
   });
+
+  let level = loadFbLevel();
+  if (FB_LEVELS.indexOf(level) === -1) { level = FB_DEFAULT_LEVEL; }
+  applyFbLevel(question, level, pickHiddenWords(level));
 }
 
 // What each blank stands for, in order, from lining up the text around the blanks with
@@ -930,68 +979,117 @@ function blankAnswers(prompt, full) {
   return at === full.length ? answers : null;
 }
 
-// The full text with the words that filled each blank wrapped in **…** (shown bold).
-// If anything doesn't line up (or the text already uses **), the full text unmarked.
-function withAnswersMarked(prompt, full) {
-  if (full.indexOf("**") !== -1 || (typeof prompt === "string" && prompt.indexOf("**") !== -1)) { return full; }
-  const answers = blankAnswers(prompt, full);
-  if (!answers) { return full; }
-  const pieces = prompt.split(/_{4,}/);
-  let marked = pieces[0];
-  answers.forEach(function (answer, i) { marked += "**" + answer + "**" + pieces[i + 1]; });
-  return marked;
-}
-
-// Which blanks to show filled in at a level: that share of them (rounded down), picked
-// at random, always leaving at least one empty. Gives back their numbers (0 = first).
-function pickShownBlanks(count, level) {
-  const howMany = Math.min(count - 1, Math.floor(count * level / 100));
-  const order = shuffled(Array.from({ length: count }, function (_, i) { return i; }));
-  return order.slice(0, Math.max(0, howMany)).sort(function (a, b) { return a - b; });
-}
-
-// Show the text at the picked level, with the blanks numbered in "shown" filled in.
-// Each blank stays one word (filled in or not), so her highlights stay on the same words.
-function applyFbLevel(question, level, shown) {
-  const answers = blankAnswers(question.prompt, question.fullText);
-  const blanks = document.querySelectorAll("#prompt .fb-blank");
-  const canFill = answers && answers.length === blanks.length;
-  const filled = [];
-  if (canFill) {
-    shown.forEach(function (n) {
-      if (typeof n !== "number" || !blanks[n] || filled.indexOf(n) !== -1) { return; }
-      blanks[n].textContent = blanks[n].textContent.replace(BLANK, answers[n]);
-      blanks[n].classList.remove("fb-blank");
-      blanks[n].classList.add("fb-given");
-      filled.push(n);
-    });
+// Which words to hide at a level. Gives back their word numbers (0 = first word).
+function pickHiddenWords(level) {
+  const all = fbInfo.words.map(function (w, n) { return n; });
+  const blanks = all.filter(function (n) { return fbInfo.words[n].isBlank; });
+  if (!fbInfo.usable) { return blanks; }  // content doesn't line up: just the written blanks
+  if (level === "light") {
+    return shuffled(blanks).slice(0, FB_LIGHT_MOST).sort(function (a, b) { return a - b; });
   }
-  session.current.fbLevel = level;
-  session.current.fbShown = filled;
-  const total = blanks.length;
-  document.getElementById("prompt").hidden = false;
-  document.getElementById("fb-level").hidden = true;
-  const note = document.getElementById("fb-level-note");
-  note.textContent = level + "% filled in for you: " + (total - filled.length) + " of " + total +
-    (total === 1 ? " blank" : " blanks") + " to fill.";
-  note.hidden = false;
-  document.getElementById("fb-show").hidden = false;
+  if (level === "key") { return blanks; }
+
+  // Moderate / Intensive / Verbatim: the key terms, then random words up to the share.
+  const target = Math.round(fbInfo.total * FB_LEVEL_SHARE[level]);
+  let hidden = hiddenWordCount(blanks);
+  const picked = blanks.slice();
+  const others = shuffled(all.filter(function (n) {
+    return !fbInfo.words[n].isBlank && canHideWord(fbInfo.words[n].text);
+  }));
+  for (let i = 0; i < others.length && hidden < target; i++) {
+    picked.push(others[i]);
+    hidden += 1;
+  }
+  return picked.sort(function (a, b) { return a - b; });
 }
 
-document.querySelectorAll(".btn-fb-level").forEach(function (button) {
-  button.addEventListener("click", function () {
-    const question = session.questions[session.index];
-    const level = Number(button.dataset.level);
-    const count = document.querySelectorAll("#prompt .fb-blank").length;
-    applyFbLevel(question, level, pickShownBlanks(count, level));
-    rememberSpot();
+// How many words of the full text are hidden (a key-term blank can stand for several words).
+function hiddenWordCount(hidden) {
+  return hidden.reduce(function (sum, n) {
+    const w = fbInfo.words[n];
+    return sum + (w.isBlank ? (w.answer ? wordCount(w.answer) : 1) : 1);
+  }, 0);
+}
+
+// A word hidden: its letters become ____, its punctuation stays ("petition." → "____.").
+function hideWord(text) {
+  const m = text.match(/^([^A-Za-zÀ-ÿ0-9]*)(.*?)([^A-Za-zÀ-ÿ0-9]*)$/);
+  return m[1] + "____" + m[3];
+}
+
+// Show the text at a level, with the words numbered in "hidden" blanked out.
+function applyFbLevel(question, level, hidden) {
+  const clean = [];
+  hidden.forEach(function (n) {
+    if (typeof n === "number" && fbInfo.words[n] && clean.indexOf(n) === -1) { clean.push(n); }
   });
+  fbInfo.words.forEach(function (w, n) {
+    const hide = clean.indexOf(n) !== -1;
+    w.span.classList.toggle("fb-blank", hide);
+    if (w.isBlank) {
+      // A key-term blank not hidden at this level shows its words as normal text.
+      w.span.textContent = (hide || !w.answer) ? w.text : w.text.replace(BLANK, w.answer);
+    } else {
+      w.span.textContent = hide ? hideWord(w.text) : w.text;
+    }
+  });
+  fbInfo.hidden = clean;
+  session.current.fbLevel = level;
+  session.current.fbHidden = clean;
+  document.getElementById("fb-level-select").value = level;
+
+  // The full text for "Show answer", with every hidden word in bold.
+  const full = typeof question.fullText === "string" ? question.fullText : "";
+  setRichText(document.getElementById("fb-full"),
+    full ? answerText(question, clean) : "The full text for this item hasn't been added yet.");
+
+  const note = document.getElementById("fb-level-note");
+  if (fbInfo.usable) {
+    const count = hiddenWordCount(clean);
+    note.textContent = count + " of " + fbInfo.total + " words hidden (" +
+      Math.round(100 * count / fbInfo.total) + "%).";
+  } else {
+    note.textContent = clean.length + (clean.length === 1 ? " blank" : " blanks") + " to fill.";
+  }
+  note.hidden = false;
+}
+
+// The question's text with the hidden words put back in **…** (shown bold) and the
+// other key-term blanks filled in. Built word by word from the prompt, so the lines and
+// numbered points look just like the question. If the content doesn't line up (or
+// already uses **), the full text unmarked.
+function answerText(question, hidden) {
+  const full = question.fullText;
+  if (!fbInfo.usable || full.indexOf("**") !== -1 || question.prompt.indexOf("**") !== -1) { return full; }
+  let n = 0;
+  return question.prompt.split(/(\s+)/).map(function (bit) {
+    if (bit === "" || /^\s+$/.test(bit)) { return bit; }
+    const w = fbInfo.words[n];
+    const hide = hidden.indexOf(n) !== -1;
+    n += 1;
+    if (!w) { return bit; }
+    if (w.isBlank) { return bit.replace(BLANK, hide ? "**" + w.answer + "**" : w.answer); }
+    if (!hide) { return bit; }
+    const m = bit.match(/^([^A-Za-zÀ-ÿ0-9]*)(.*?)([^A-Za-zÀ-ÿ0-9]*)$/);
+    return m[1] + "**" + m[2] + "**" + m[3];
+  }).join("");
+}
+
+// Picking a level in the "Blanks" dropdown: new blanks at that level, remembered for next time.
+document.getElementById("fb-level-select").addEventListener("change", function (event) {
+  const level = event.target.value;
+  if (FB_LEVELS.indexOf(level) === -1 || session.current.answerShown) { return; }
+  saveFbLevel(level);
+  applyFbLevel(session.questions[session.index], level, pickHiddenWords(level));
+  rememberSpot();
 });
 
 // "Show answer" reveals the full text and the Got it / Missed it buttons.
+// The level can't be changed after that.
 function revealFillBlank() {
   document.getElementById("fb-answer-area").hidden = false;
   document.getElementById("fb-show").hidden = true;
+  document.getElementById("fb-level-select").disabled = true;
   document.getElementById("find-btn").hidden = false;  // she has answered: "Find in case" is allowed now
 }
 

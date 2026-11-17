@@ -380,3 +380,23 @@ function restoreProgress(newProgress) {
   progress = newProgress;
   return saveProgress();
 }
+
+// ---------- Fill in the blank: the "Blanks" level she last picked ----------
+// Just a convenience (so the dropdown starts where she left it). Not part of backups.
+const FB_LEVEL_KEY = "barReviewer.fbLevel.v1";
+
+function loadFbLevel() {
+  try {
+    return localStorage.getItem(FB_LEVEL_KEY);
+  } catch (e) {
+    return null;
+  }
+}
+
+function saveFbLevel(level) {
+  try {
+    localStorage.setItem(FB_LEVEL_KEY, level);
+  } catch (e) {
+    // Couldn't save. The dropdown just starts at the default next time.
+  }
+}
