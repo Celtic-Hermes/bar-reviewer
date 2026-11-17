@@ -21,6 +21,8 @@
   --hl-facts: #b9ebc5;    --hl-facts-preview: rgba(185, 235, 197, 0.55);    --hl-facts-removing: #e0f6e6;
   --hl-issue: #ffc8dc;    --hl-issue-preview: rgba(255, 200, 220, 0.55);    --hl-issue-removing: #ffe6ef;
   --hl-doctrine: #d3ef7d; --hl-doctrine-preview: rgba(211, 239, 125, 0.55); --hl-doctrine-removing: #ecf8c6;
+  /* Her color tags on questions (and the check mark shown on the picked color). */
+  --tag-green: #1f9d5c;  --tag-yellow: #e6b400;  --tag-red: #d93025;  --tag-check: #ffffff;
 
   /* Button press effect, shared by every button (see "Pressing a button" below).
      Change these three to adjust all buttons at once. */
@@ -50,6 +52,7 @@
     --hl-facts: #7fcf93;    --hl-facts-preview: rgba(127, 207, 147, 0.35);    --hl-facts-removing: #3d5a44;
     --hl-issue: #e99cb7;    --hl-issue-preview: rgba(233, 156, 183, 0.35);    --hl-issue-removing: #5c3a48;
     --hl-doctrine: #b7d85c; --hl-doctrine-preview: rgba(183, 216, 92, 0.35);  --hl-doctrine-removing: #4f5a2c;
+    --tag-green: #4cc285;  --tag-yellow: #f2c94c;  --tag-red: #f07167;  --tag-check: #15171b;
     --press-shade: rgba(255, 255, 255, 0.10);  /* in dark mode, a light tint shows better */
   }
 }
@@ -290,12 +293,12 @@ body {
 
 /* ---------- Pressing a button (one rule for every button in the app) ---------- */
 /* Every tappable button: subject/topic/case cards, answer choices, rating buttons,
-   Next, Back, Bookmark, Show suggested answer, Back up / Restore, Practice again.
+   Next, Back, Bookmark, color tags, Show suggested answer, Back up / Restore, Practice again.
    While pressed it shrinks a little and gets a light tint over its own color,
    then springs back. The tint is an "inner shadow" laid on top of the button's
    own background, so it works the same on every button color.
    To change the effect, edit --press-scale, --press-shade and --press-time at the top. */
-.btn, .subject-card, .choice, .back-btn, .bookmark-btn, .hl-swatch {
+.btn, .subject-card, .choice, .back-btn, .bookmark-btn, .hl-swatch, .tag-dot {
   transition: transform var(--press-time) ease-out, box-shadow var(--press-time) ease-out;
 }
 .btn:active:not(:disabled),
@@ -303,13 +306,14 @@ body {
 .choice:active:not(:disabled),
 .back-btn:active,
 .bookmark-btn:active,
-.hl-swatch:active {
+.hl-swatch:active,
+.tag-dot:active {
   transform: scale(var(--press-scale));
   box-shadow: inset 0 0 0 100vmax var(--press-shade);
 }
 /* If she has asked her phone for less motion: keep the tint, skip the shrinking. */
 @media (prefers-reduced-motion: reduce) {
-  .btn, .subject-card, .choice, .back-btn, .bookmark-btn, .hl-swatch { --press-scale: 1; }
+  .btn, .subject-card, .choice, .back-btn, .bookmark-btn, .hl-swatch, .tag-dot { --press-scale: 1; }
 }
 
 /* ---------- Home: subject cards ---------- */
@@ -472,6 +476,25 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 .bookmark-btn.on { color: var(--partly); border-color: var(--partly); }
+
+/* ---------- Color tag: three dots under the Bookmark button ---------- */
+/* The look of a tag color lives here: anything showing a tag uses .tag-dot (the
+   buttons) or .tag-mark (a small dot in a list), with data-tag="green" / "yellow" / "red". */
+.question-actions { flex-shrink: 0; display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
+.tag-picker { display: flex; gap: 8px; }
+[data-tag="green"]  { --tag-color: var(--tag-green); }
+[data-tag="yellow"] { --tag-color: var(--tag-yellow); }
+[data-tag="red"]    { --tag-color: var(--tag-red); }
+.tag-dot {
+  width: 34px; height: 34px; padding: 0;
+  border: 2px solid var(--tag-color); border-radius: 50%;
+  background: color-mix(in srgb, var(--tag-color) 18%, var(--card));
+  cursor: pointer; -webkit-tap-highlight-color: transparent;
+  color: var(--tag-check); font: inherit; font-size: 17px; font-weight: 700; line-height: 1;
+}
+/* The picked color: filled in, with a check mark (so it's clear without relying on color). */
+.tag-dot[aria-pressed="true"] { background: var(--tag-color); }
+.tag-dot[aria-pressed="true"]::after { content: "✓"; }
 
 /* ---------- Practice: top bar with Back and "Question 1 of 3" ---------- */
 .question-topbar { display: flex; align-items: center; justify-content: space-between; }

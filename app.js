@@ -741,6 +741,7 @@ function showQuestion() {
   // Anything not marked "verified" (including a missing status) shows the draft label.
   document.getElementById("draft-badge").hidden = (question.status === "verified");
   showBookmark(question);
+  showTag(question);
   showQuestionCases(question);
 
   const nextButton = document.getElementById("next-btn");
@@ -778,6 +779,24 @@ document.getElementById("bookmark-btn").addEventListener("click", function () {
   const question = session.questions[session.index];
   toggleBookmark(question.id);
   showBookmark(question);
+});
+
+// --- Color tag (green / yellow / red, or none) ---
+// Tapping a color tags the question with it (replacing any other color); tapping the
+// color it already has removes the tag. Saved right away, by question ID.
+function showTag(question) {
+  const tag = tagOf(question.id);
+  document.querySelectorAll(".tag-dot").forEach(function (dot) {
+    dot.setAttribute("aria-pressed", dot.dataset.tag === tag ? "true" : "false");
+  });
+}
+
+document.querySelectorAll(".tag-dot").forEach(function (dot) {
+  dot.addEventListener("click", function () {
+    const question = session.questions[session.index];
+    setTag(question.id, tagOf(question.id) === dot.dataset.tag ? null : dot.dataset.tag);
+    showTag(question);
+  });
 });
 
 // --- Multiple choice ---
@@ -2242,7 +2261,7 @@ document.getElementById("restore-input").addEventListener("change", function (ev
     }
     const sure = window.confirm(
       "Replace the progress on this phone with the backup from " + describeDate(backup.savedAt) + "?\n\n" +
-      "Your current scores, review list, and bookmarks will be replaced."
+      "Your current scores, review list, bookmarks, and color tags will be replaced."
     );
     if (!sure) {
       showBackupMessage("Restore cancelled. Nothing was changed.");

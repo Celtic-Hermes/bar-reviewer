@@ -6,6 +6,8 @@
 //              fill-in-the-blank: how many "Got it" out of how many rated)
 //   review:    questions to look at again, by ID (a wrong pick, or an essay rated Partly / Missed it)
 //   bookmarks: questions she bookmarked, by ID
+//   tags:      her color tag on a question, by ID: "green", "yellow" or "red"
+//              (what each color means is up to her; no tag = not in the list)
 //   highlights: words she highlighted, as a list of word positions (0 = first word).
 //               Stored by question ID (e.g. "q-0007") for the question text, and by
 //               case ID + part (e.g. "case-0002:facts") for a case's facts, issue and ruling.
@@ -21,8 +23,21 @@ const STORAGE_KEY = "barReviewer.progress.v1";
 const HIGHLIGHT_COLORS = ["facts", "issue", "ruling", "doctrine"];
 const DEFAULT_HIGHLIGHT_COLOR = "ruling";
 
+// Color tags (defined up here because loading her progress, just below, already needs them).
+const TAG_COLORS = ["green", "yellow", "red"];
+
+// Keep only tags the app understands (a question ID → one of the three colors).
+function cleanTags(value) {
+  const clean = {};
+  if (!isPlainObject(value)) { return clean; }
+  Object.keys(value).forEach(function (id) {
+    if (TAG_COLORS.indexOf(value[id]) !== -1) { clean[id] = value[id]; }
+  });
+  return clean;
+}
+
 function emptyProgress() {
-  return { subjects: {}, review: {}, bookmarks: {}, highlights: {}, highlightColors: {} };
+  return { subjects: {}, review: {}, bookmarks: {}, tags: {}, highlights: {}, highlightColors: {} };
 }
 
 // Read saved progress. If there's none, or it's damaged, start fresh instead of crashing.
@@ -36,6 +51,7 @@ function loadProgress() {
       subjects: dropOldFillBlankTotals(followMovedSubjects(data.subjects || {})),
       review: data.review || {},
       bookmarks: data.bookmarks || {},
+      tags: cleanTags(data.tags),
       highlights: cleanHighlights(data.highlights),
       highlightColors: cleanHighlightColors(data.highlightColors)
     };
@@ -159,6 +175,22 @@ function toggleBookmark(questionId) {
     delete progress.bookmarks[questionId];
   } else {
     progress.bookmarks[questionId] = true;
+  }
+  saveProgress();
+}
+
+// ---------- Color tags (green / yellow / red, or none) ----------
+// Her tag on a question: "green", "yellow", "red", or null for none.
+function tagOf(questionId) {
+  return TAG_COLORS.indexOf(progress.tags[questionId]) !== -1 ? progress.tags[questionId] : null;
+}
+
+// Set a question's tag (null removes it).
+function setTag(questionId, color) {
+  if (TAG_COLORS.indexOf(color) !== -1) {
+    progress.tags[questionId] = color;
+  } else {
+    delete progress.tags[questionId];
   }
   saveProgress();
 }
@@ -364,6 +396,8 @@ function readBackup(text) {
   Object.keys(p.bookmarks).forEach(function (id) {
     if (p.bookmarks[id]) { clean.bookmarks[id] = true; }
   });
+  // Older backups have no tags; that's fine, they just start empty.
+  clean.tags = cleanTags(p.tags);
   // Backups made before a subject moved: follow the move.
   followMovedSubjects(clean.subjects);
   // Older backups have no highlights; that's fine, they just start empty.
