@@ -922,3 +922,19 @@ body.sheet-open { overflow: hidden; }
   body[data-screen="screen-home"] .page { max-width: 1040px; }
   #screen-home .subject-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
+
+/* Case screen: her notes and the linked questions in a side panel on the right
+   (moved there by placeCaseSide in app.js). The case text keeps its 640px column. */
+@media (min-width: 1100px) {
+  body[data-screen="screen-case"] .page { max-width: 1040px; }
+  #screen-case { position: relative; padding-right: 368px; }   /* 1008 - 368 = 640px for the case */
+  #screen-case > .case-side { position: absolute; top: 0; right: 0; bottom: 0; width: 344px; }
+  /* Stays in view while she scrolls; scrolls by itself if it's taller than the window. */
+  .case-side-inner {
+    position: sticky; top: 16px;
+    max-height: calc(100vh - 32px); overflow-y: auto; overscroll-behavior: contain;
+    padding: 0 2px 8px;
+  }
+  .case-side-inner .notes-card { margin-top: 0; }
+  .case-side-inner .topics-label:first-child { margin-top: 18px; }
+}

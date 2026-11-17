@@ -347,9 +347,13 @@
         <p class="prompt" id="case-source"></p>
       </section>
 
-      <h2 class="label topics-label">Questions linked to this case</h2>
-      <div class="subject-list" id="case-questions"></div>
-      <p class="card empty-note list-empty" id="case-questions-empty" hidden>No questions linked to this case yet.</p>
+      <div id="case-questions-block">
+        <h2 class="label topics-label">Questions linked to this case</h2>
+        <div class="subject-list" id="case-questions"></div>
+        <p class="card empty-note list-empty" id="case-questions-empty" hidden>No questions linked to this case yet.</p>
+      </div>
+      <!-- Wide screens only: her notes and the linked questions move here (see app.js) -->
+      <aside class="case-side" id="case-side" hidden><div class="case-side-inner" id="case-side-inner"></div></aside>
     </section>
 
     <!-- SCREEN 5b: One rule's full text, each section in its own card (loaded on demand) -->

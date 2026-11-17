@@ -1209,6 +1209,39 @@ function makeNoteCard(entry) {
 document.getElementById("my-notes-btn").addEventListener("click", openNotes);
 document.getElementById("notes-back").addEventListener("click", function () { showScreen("screen-home"); });
 
+// ---------- Wide screens: the case screen's side panel ----------
+// At 1100px and wider, her notes and "Questions linked to this case" move into a side
+// panel to the right of the case text (it stays in view while she scrolls; see style.css).
+// Narrower (phones), they stay exactly where they are in index.html. They are moved, not
+// copied, so typing, saving and tapping work the same either way. A marker remembers each
+// one's place, so they go back when the window gets narrower again.
+const WIDE_LAYOUT = window.matchMedia("(min-width: 1100px)");
+const caseSideParts = [
+  document.querySelector("#screen-case .notes-card"),
+  document.getElementById("case-questions-block")
+].map(function (element) {
+  const marker = document.createComment("place of " + (element.id || "notes"));
+  element.before(marker);
+  return { element: element, marker: marker };
+});
+
+function placeCaseSide() {
+  const side = document.getElementById("case-side");
+  const inner = document.getElementById("case-side-inner");
+  if (WIDE_LAYOUT.matches) {
+    caseSideParts.forEach(function (part) { inner.appendChild(part.element); });
+    side.hidden = false;
+  } else {
+    caseSideParts.forEach(function (part) { part.marker.after(part.element); });
+    side.hidden = true;
+  }
+}
+placeCaseSide();
+WIDE_LAYOUT.addEventListener("change", function () {
+  saveAllNotes();  // (moving a box can end typing in it: save first)
+  placeCaseSide();
+});
+
 // ---------- Case titles: one shared look everywhere ----------
 // Every place that shows a case's name as a label builds it with caseTitle() (or, for the
 // case screen heading, has class="case-title" in index.html). Its look lives in ONE rule,
