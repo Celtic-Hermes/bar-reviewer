@@ -19,6 +19,10 @@ What's in the catalog:
     source.grNumber all its questions share (for "Read the full rule"), or null.
   "cases": one line per case: id, name, grNumber, year, subject, topic, subtopic (if any),
     status, and "questions": the IDs of the questions linked to it (their caseIds).
+  "rules": one line per rule in data/rules.json: id, title, number (its citation), status,
+    and the subject and topic its questions are filed under (null if no question uses it).
+    Rules have no year in their data, so none is listed.
+The search on the home screen looks through "cases" and "rules".
 """
 
 import json
@@ -29,6 +33,7 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CONTENT = os.path.join(ROOT, "data", "content")
 CATALOG = os.path.join(ROOT, "data", "catalog.json")
+RULES = os.path.join(ROOT, "data", "rules.json")
 
 # The 8 bar subjects in the app's order (must match SUBJECTS in app.js), then MISC_SUBJECTS.
 SUBJECTS = [
@@ -96,6 +101,7 @@ def build_catalog():
     files, errors = read_topic_files()
     order = SUBJECTS + MISC_SUBJECTS
     topics, all_cases, links = [], [], {}
+    rule_place = {}  # rule number → (question ID number, subject, topic) of its first question
 
     for rel, data in files:
         questions, cases = items(data, "questions"), items(data, "cases")
@@ -107,6 +113,11 @@ def build_catalog():
                 groups[name] = {"name": name, "questions": []}
         for q in questions:
             groups[subtopic_of(q)]["questions"].append(q)
+            number = (q.get("source") or {}).get("grNumber")
+            if isinstance(number, str):
+                place = (id_number(q["id"]), data["subject"], data["topic"])
+                if number not in rule_place or place < rule_place[number]:
+                    rule_place[number] = place
             for case_id in q.get("caseIds") or []:
                 links.setdefault(case_id, []).append(q["id"])
         subtopics = []
@@ -138,7 +149,31 @@ def build_catalog():
         c["questions"] = sorted(set(links.get(c["id"], [])), key=id_number)
     all_cases.sort(key=lambda c: id_number(c["id"]))
     topics.sort(key=lambda pair: pair[0])
-    return {"topics": [t for _, t in topics], "cases": all_cases}, errors
+
+    all_rules = []
+    rules, rule_error = read_rules()
+    if rule_error:
+        errors.append(rule_error)
+    for r in rules:
+        place = rule_place.get(r.get("number"))
+        all_rules.append({"id": r["id"], "title": r.get("title"), "number": r.get("number"), "status": r.get("status"),
+                          "subject": place[1] if place else None, "topic": place[2] if place else None})
+    all_rules.sort(key=lambda r: id_number(r["id"]))
+    return {"topics": [t for _, t in topics], "cases": all_cases, "rules": all_rules}, errors
+
+
+def read_rules():
+    """data/rules.json as a list of rules (each with an id). Returns (list, error or None)."""
+    try:
+        with open(RULES, encoding="utf-8") as f:
+            data = json.load(f)
+    except FileNotFoundError:
+        return [], None
+    except json.JSONDecodeError as e:
+        return [], "data/rules.json isn't valid JSON (near line %d, column %d: %s)." % (e.lineno, e.colno, e.msg)
+    if not isinstance(data, list):
+        return [], "data/rules.json should be a list."
+    return [r for r in data if isinstance(r, dict) and isinstance(r.get("id"), str)], None
 
 
 def catalog_text(catalog):
@@ -157,10 +192,11 @@ def catalog_text(catalog):
         lines.append("      ]")
         lines.append("    }" + ("," if n < len(catalog["topics"]) - 1 else ""))
     lines.append("  ],")
-    lines.append('  "cases": [')
-    for n, c in enumerate(catalog["cases"]):
-        lines.append("    " + one_line(c) + ("," if n < len(catalog["cases"]) - 1 else ""))
-    lines.append("  ]")
+    for key in ["cases", "rules"]:
+        lines.append('  "%s": [' % key)
+        for n, c in enumerate(catalog[key]):
+            lines.append("    " + one_line(c) + ("," if n < len(catalog[key]) - 1 else ""))
+        lines.append("  ]" + ("," if key == "cases" else ""))
     lines.append("}")
     return "\n".join(lines) + "\n"
 
@@ -179,8 +215,8 @@ def main():
         with open(CATALOG, encoding="utf-8") as f:
             old = f.read()
     questions = sum(len(s[t]) for topic in catalog["topics"] for s in topic["subtopics"] for t in TYPES)
-    summary = "%d topics, %d questions, %d cases (%.1f KB)" % (
-        len(catalog["topics"]), questions, len(catalog["cases"]), len(text.encode("utf-8")) / 1024)
+    summary = "%d topics, %d questions, %d cases, %d rules (%.1f KB)" % (
+        len(catalog["topics"]), questions, len(catalog["cases"]), len(catalog["rules"]), len(text.encode("utf-8")) / 1024)
     if old == text:
         print("Catalog already up to date: " + summary + ".")
         return 0

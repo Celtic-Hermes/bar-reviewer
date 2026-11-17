@@ -42,5 +42,14 @@
     {"id": "case-0005", "name": "Cadajas v. People", "grNumber": "G.R. No. 247348", "year": 2021, "subject": "Mercantile Law", "topic": "Communication Law", "subtopic": "Data Privacy Act", "status": "draft", "questions": ["q-0031", "q-0032", "q-0033", "q-0034", "q-0035", "q-0036", "q-0037", "q-0038"]},
     {"id": "case-0006", "name": "Regala v. Sandiganbayan", "grNumber": "G.R. No. 105938", "year": 1996, "subject": "Mercantile Law", "topic": "Communication Law", "subtopic": "Data Privacy Act", "status": "draft", "questions": ["q-0039", "q-0040", "q-0041", "q-0042", "q-0043", "q-0044", "q-0045", "q-0046", "q-0049"]},
     {"id": "case-0007", "name": "Integrated Bar of the Philippines v. Purisima", "grNumber": "G.R. Nos. 211772 & 212178", "year": 2023, "subject": "Mercantile Law", "topic": "Communication Law", "subtopic": "Data Privacy Act", "status": "draft", "questions": ["q-0047", "q-0048", "q-0049", "q-0050", "q-0051", "q-0052", "q-0053", "q-0054"]}
+  ],
+  "rules": [
+    {"id": "rule-0001", "title": "The Rule on the Writ of Amparo", "number": "A.M. No. 07-9-12-SC", "status": "draft", "subject": "Remedial Law", "topic": "Special Proceedings"},
+    {"id": "rule-0002", "title": "Rule on Custody of Minors and Writ of Habeas Corpus in Relation to Custody of Minors", "number": "A.M. No. 03-04-04-SC", "status": "draft", "subject": "Remedial Law", "topic": "Special Proceedings"},
+    {"id": "rule-0003", "title": "The Rule on the Writ of Habeas Data", "number": "A.M. No. 08-1-16-SC", "status": "draft", "subject": "Remedial Law", "topic": "Special Proceedings"},
+    {"id": "rule-0004", "title": "Rules of Procedure for Environmental Cases", "number": "A.M. No. 09-6-8-SC", "status": "draft", "subject": "Remedial Law", "topic": "Special Proceedings"},
+    {"id": "rule-0005", "title": "Rules of Court, Rule 91 (Escheats)", "number": "Rules of Court, Rule 91", "status": "draft", "subject": "Remedial Law", "topic": "Special Proceedings"},
+    {"id": "rule-0006", "title": "Rules of Court, Rule 98 (Trustees)", "number": "Rules of Court, Rule 98", "status": "draft", "subject": "Remedial Law", "topic": "Special Proceedings"},
+    {"id": "rule-0007", "title": "Rules of Court, Rule 107 (Absentees)", "number": "Rules of Court, Rule 107", "status": "draft", "subject": "Remedial Law", "topic": "Special Proceedings"}
   ]
 }

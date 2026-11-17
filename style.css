@@ -684,6 +684,22 @@ body {
 .source-link { color: var(--primary); font-weight: 600; overflow-wrap: anywhere; }
 .source-note { display: block; margin-top: 6px; font-size: 14px; color: var(--muted); overflow-wrap: anywhere; }
 
+/* Search on the home screen (app.js: showSearchResults). 17px text so the iPhone doesn't zoom in. */
+.home-search { margin: 0 0 20px; }
+.search-label { display: block; margin-bottom: 8px; }
+.search-input {
+  display: block; width: 100%; min-height: 48px; padding: 12px 14px;
+  border: 2px solid var(--border); border-radius: 12px;
+  background: var(--card); color: var(--text); font: inherit; font-size: 17px;
+  -webkit-appearance: none; appearance: none;
+}
+.search-input:focus { outline: none; border-color: var(--primary); }
+.search-input::placeholder { color: var(--muted); }
+.search-count { margin: 10px 0 8px; font-size: 14px; color: var(--muted); }
+#search-results:not(:empty) { margin-top: 4px; }
+.search-empty { margin-top: 12px; }
+.search-empty-title { margin: 0; font-size: 17px; font-weight: 700; }
+
 /* "Look it up online" (makeLookupOnline in app.js): a web search link, or an offline note.
    a.btn: a link that looks like the shared buttons. .btn-small: the lighter version (still
    44px tall, the smallest comfortable tap size on a phone). */

@@ -28,6 +28,19 @@
       <h1 class="screen-title">Bar Reviewer</h1>
       <p class="screen-subtitle">Pick a subject to review.</p>
 
+      <!-- Search: cases and rules by name or G.R. number, from data/catalog.json (see app.js) -->
+      <section class="home-search" aria-label="Search cases and rules">
+        <label class="label search-label" for="search-input">Search cases and rules</label>
+        <input type="search" class="search-input" id="search-input" placeholder="Name or G.R. No."
+          autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" enterkeyhint="search">
+        <p class="search-count" id="search-count" aria-live="polite" hidden></p>
+        <div class="subject-list" id="search-results"></div>
+        <section class="card search-empty" id="search-empty" hidden>
+          <p class="search-empty-title">Not in the app yet</p>
+          <div id="search-lookup"></div>
+        </section>
+      </section>
+
       <!-- Today: her streak and daily goal -->
       <section class="card today-card" id="today-card" aria-label="Today">
         <div class="today-top">

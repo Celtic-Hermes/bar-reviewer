@@ -18,6 +18,8 @@ const MISC_SUBJECTS = [];
 
 let allQuestions = [];      // filled in from the topic files listed in data/catalog.json
 let allCases = [];          // filled in from the same topic files
+let catalogCases = [];      // from data/catalog.json: every case's id, name, grNumber, year, subject, topic, status
+let catalogRules = [];      // from data/catalog.json: every rule's id, title, number, subject, topic, status
 let allRules = [];          // filled in from data/rules.json (rules whose full text can be read)
 let currentSubject = null;  // the subject she tapped
 let currentTopic = null;    // the topic she tapped (or "All topics")
@@ -96,6 +98,9 @@ function rememberSpot() {
     spot.ruleId = currentRule.id;
     spot.ruleCameFrom = ruleCameFrom;
   }
+  if (spot.caseCameFrom === "search" || spot.ruleCameFrom === "search") {
+    spot.search = document.getElementById("search-input").value;  // to show the same results on Back
+  }
   saveSpot(spot);
 }
 
@@ -136,6 +141,15 @@ function putBackSpot(spot) {
   if (spot.screen === "rule" && spot.ruleCameFrom === "notes") {
     const noteRule = findRule(spot.ruleId);
     if (noteRule) { openRule(noteRule, "notes"); } else { openNotes(); }
+    return true;
+  }
+  // A case or rule opened from the search: put the search back too, for Back.
+  if ((spot.screen === "case" && spot.caseCameFrom === "search") || (spot.screen === "rule" && spot.ruleCameFrom === "search")) {
+    document.getElementById("search-input").value = typeof spot.search === "string" ? spot.search : "";
+    showSearchResults();
+    const found = spot.screen === "case" ? findCase(spot.caseId) : findRule(spot.ruleId);
+    if (!found) { return false; }
+    if (spot.screen === "case") { openCase(found, "search"); } else { openRule(found, "search"); }
     return true;
   }
   if (SUBJECTS.concat(MISC_SUBJECTS).indexOf(spot.subject) === -1) { return false; }
@@ -742,7 +756,7 @@ function makeQuestionCard(question, onTap) {
 // "rule-0001:fulltext", with the words numbered across the whole rule.
 let topicRule = null;    // the rule behind the topic screen being shown, if any
 let currentRule = null;  // the rule on the rule screen
-let ruleCameFrom = "topic";  // where the rule screen's Back goes: "topic" or "notes"
+let ruleCameFrom = "topic";  // where the rule screen's Back goes: "topic", "notes" or "search" (home)
 
 function findRule(ruleId) {
   return allRules.find(function (r) { return r.id === ruleId; }) || null;
@@ -763,7 +777,7 @@ document.getElementById("topic-rule").addEventListener("click", function () {
 });
 
 document.getElementById("rule-back").addEventListener("click", function () {
-  if (ruleCameFrom === "notes") { openNotes(); } else { openTopicOrSubject(); }
+  if (ruleCameFrom === "notes") { openNotes(); } else if (ruleCameFrom === "search") { backToSearch(); } else { openTopicOrSubject(); }
 });
 
 function loadRuleText(ruleId) {
@@ -781,12 +795,12 @@ function loadRuleText(ruleId) {
   });
 }
 
-// "cameFrom": "notes" (her My notes list), otherwise a topic screen.
+// "cameFrom": "notes" (her My notes list), "search" (the home screen's search), otherwise a topic screen.
 function openRule(rule, cameFrom) {
   currentRule = rule;
-  ruleCameFrom = cameFrom === "notes" ? "notes" : "topic";
+  ruleCameFrom = (cameFrom === "notes" || cameFrom === "search") ? cameFrom : "topic";
   let where;
-  if (ruleCameFrom === "notes") {
+  if (ruleCameFrom !== "topic") {
     // Not opened from a topic: name the subject and topic its questions are filed under.
     const q = allQuestions.find(function (x) { return x && x.source && x.source.grNumber === rule.number; });
     where = q ? [q.subject, q.topic] : [];
@@ -1278,13 +1292,14 @@ function cardDetail(text, verified) {
 
 // One tappable card for a case in any case list: its title, then "G.R. No. · year" and
 // the "Unverified" label if the case isn't verified.
-function makeCaseCard(theCase, onTap) {
+// "extra" (optional): more text for the detail line, e.g. the subject in search results.
+function makeCaseCard(theCase, onTap, extra) {
   const card = document.createElement("button");
   card.className = "subject-card";
   const name = document.createElement("span");
   name.className = "subject-name";
   name.appendChild(caseTitle(theCase.name));
-  name.appendChild(cardDetail([theCase.grNumber, theCase.year].filter(Boolean).join(" · "), theCase.status === "verified"));
+  name.appendChild(cardDetail([theCase.grNumber, theCase.year, extra].filter(Boolean).join(" · "), theCase.status === "verified"));
   const arrow = document.createElement("span");
   arrow.className = "subject-arrow";
   arrow.textContent = "›";
@@ -2217,7 +2232,7 @@ function findCase(caseId) {
 }
 
 // Where to go when she taps "‹ Back" on the case screen.
-let caseCameFrom = null;       // "question", "topic" or "subject"
+let caseCameFrom = null;       // "question", "topic", "subject", "notes" or "search"
 let caseHome = "topic";        // where the case screen's Back goes when not back to a question
 let questionScrollSpot = 0;    // where she was on the question screen
 
@@ -2771,6 +2786,126 @@ function caseText(value) {
   return (typeof value === "string" && value.trim()) ? value : "Not available yet.";
 }
 
+// ---------- Search (home screen) ----------
+// Looks through every case and rule in data/catalog.json (never the full texts) by name /
+// title and G.R. number / citation, as she types.
+//   - Capital letters, accents and punctuation don't matter: "g.r. no. 202666", "GR 202666"
+//     and "202666" all find G.R. No. 202666.
+//   - Partial words count: "viva" finds Vivares. Every word she types must be found.
+//   - Best matches first (every word starts a word in the name), then in ID order.
+//   - Nothing found: "Not in the app yet" and a "Look it up online" button.
+const SEARCH_SHOW_AT_MOST = 20;
+
+// "G.R. No. 202,666" → "g r no 202 666" (lower case, no accents, punctuation → spaces),
+// and letters split from numbers ("GR202666" → "gr 202666").
+function searchKey(text) {
+  return String(text || "").normalize("NFD").replace(/[̀-ͯ]/g, "")
+    .toLowerCase().replace(/[^a-z0-9]+/g, " ")
+    .replace(/([a-z])([0-9])/g, "$1 $2").replace(/([0-9])([a-z])/g, "$1 $2").trim();
+}
+
+// Every case and rule in the catalog, ready for searching (made once, after the catalog loads).
+let searchEntries = null;
+function getSearchEntries() {
+  if (searchEntries) { return searchEntries; }
+  const entries = [];
+  catalogCases.forEach(function (c) { entries.push({ kind: "case", item: c, text: [c.name, c.grNumber] }); });
+  catalogRules.forEach(function (r) { entries.push({ kind: "rule", item: r, text: [r.title, r.number] }); });
+  entries.forEach(function (e) {
+    e.key = " " + searchKey(e.text.join(" ")) + " ";
+    e.joined = e.key.replace(/ /g, "");  // "grno202666": so "GR" or "GR202666" also match
+  });
+  searchEntries = entries;
+  return entries;
+}
+
+// The matching cases and rules for what she typed, best first.
+function searchCatalog(query) {
+  const words = searchKey(query).split(" ").filter(Boolean);
+  if (words.length === 0) { return []; }
+  const found = [];
+  getSearchEntries().forEach(function (e, order) {
+    // Words: anywhere, also across punctuation ("gr" in "G.R."). Numbers: only inside a number,
+    // so "91" doesn't match "07-9-12".
+    const all = words.every(function (w) {
+      return e.key.indexOf(w) !== -1 || (/[a-z]/.test(w) && e.joined.indexOf(w) !== -1);
+    });
+    if (!all) { return; }
+    const starts = words.every(function (w) { return e.key.indexOf(" " + w) !== -1; });
+    found.push({ entry: e, rank: starts ? 0 : 1, order: order });
+  });
+  found.sort(function (a, b) { return a.rank - b.rank || a.order - b.order; });
+  return found.map(function (f) { return f.entry; });
+}
+
+// A result card for a rule (cases use makeCaseCard): title, citation · subject, Unverified label.
+function makeRuleCard(rule, onTap) {
+  const card = document.createElement("button");
+  card.className = "subject-card";
+  const name = document.createElement("span");
+  name.className = "subject-name";
+  name.append(rule.title || "Untitled rule");
+  name.appendChild(cardDetail(["Rule", rule.number, rule.subject].filter(Boolean).join(" · "), rule.status === "verified"));
+  const arrow = document.createElement("span");
+  arrow.className = "subject-arrow";
+  arrow.textContent = "›";
+  card.append(name, arrow);
+  card.addEventListener("click", onTap);
+  return card;
+}
+
+let contentLoaded = false;  // the catalog has been read (until then, don't say "Not in the app yet")
+
+function showSearchResults() {
+  const query = document.getElementById("search-input").value;
+  const list = document.getElementById("search-results");
+  const count = document.getElementById("search-count");
+  const empty = document.getElementById("search-empty");
+  list.innerHTML = "";
+  count.hidden = true;
+  empty.hidden = true;
+  if (!searchKey(query) || !contentLoaded) { return; }
+  const results = searchCatalog(query);
+  if (results.length === 0) {
+    const lookup = document.getElementById("search-lookup");
+    lookup.innerHTML = "";
+    const link = makeLookupOnline(query, "Look it up online", false);
+    if (link) { lookup.appendChild(link); }
+    empty.hidden = false;
+    return;
+  }
+  results.slice(0, SEARCH_SHOW_AT_MOST).forEach(function (e) {
+    if (e.kind === "case") {
+      list.appendChild(makeCaseCard(e.item, function () { openSearchResult(e); }, e.item.subject));
+    } else {
+      list.appendChild(makeRuleCard(e.item, function () { openSearchResult(e); }));
+    }
+  });
+  count.textContent = results.length > SEARCH_SHOW_AT_MOST
+    ? "Showing " + SEARCH_SHOW_AT_MOST + " of " + results.length + ". Type more to narrow it down."
+    : (results.length === 1 ? "1 match" : results.length + " matches");
+  count.hidden = false;
+}
+
+function openSearchResult(e) {
+  const found = e.kind === "case" ? findCase(e.item.id) : findRule(e.item.id);
+  if (!found) { return; }  // listed in the catalog but its file didn't load (the app shows why at the top)
+  if (e.kind === "case") { openCase(found, "search"); } else { openRule(found, "search"); }
+}
+
+// Back from a case or rule opened from the search: the home screen, results still showing.
+function backToSearch() {
+  showScreen("screen-home");
+  showSearchResults();
+  document.querySelector(".home-search").scrollIntoView({ block: "start" });
+}
+
+document.getElementById("search-input").addEventListener("input", showSearchResults);
+// Return / Search on the keyboard: close the keyboard so the results can be seen.
+document.getElementById("search-input").addEventListener("keydown", function (event) {
+  if (event.key === "Enter") { event.preventDefault(); event.target.blur(); }
+});
+
 // ---------- "Look it up online" ----------
 // A link to an ordinary web search for a case on LawPhil, e.g. "G.R. No. 202666" site:lawphil.net.
 // Only a link she taps herself: the app never downloads anything from those sites, and
@@ -3041,6 +3176,8 @@ document.getElementById("case-back").addEventListener("click", function () {
     openTopicOrSubject();  // back to the topic screen she opened it from
   } else if (caseCameFrom === "notes") {
     openNotes();  // back to her notes list
+  } else if (caseCameFrom === "search") {
+    backToSearch();  // back to the home screen, search results still showing
   } else {
     openSubject(currentSubject);
   }
@@ -3188,6 +3325,9 @@ function idNumber(item) {
 const contentReady = fetchJson("data/catalog.json")
   .then(function (catalog) {
     if (!catalog || !Array.isArray(catalog.topics)) { throw new Error("no list of topics"); }
+    const isEntry = function (x) { return x && typeof x === "object" && typeof x.id === "string"; };
+    catalogCases = Array.isArray(catalog.cases) ? catalog.cases.filter(isEntry) : [];
+    catalogRules = Array.isArray(catalog.rules) ? catalog.rules.filter(isEntry) : [];
     const questions = [];
     const cases = [];
     return Promise.all(catalog.topics.map(function (entry) {
@@ -3232,6 +3372,8 @@ const rulesReady = fetch("data/rules.json")
   });
 
 Promise.all([contentReady, rulesReady]).then(function () {
+  contentLoaded = true;
+  showSearchResults();  // she may have typed in the search while the files were loading
   showTodayCard();  // now that the questions are in, the mastery count can be shown
   showMyNotesButton();  // ...and her notes can be matched to their cases and rules
   restoreSpot();
