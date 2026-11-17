@@ -6,6 +6,13 @@
 //              fill-in-the-blank: how many "Got it" out of how many rated)
 //   review:    questions to look at again, by ID (a wrong pick, or an essay rated Partly / Missed it)
 //   bookmarks: questions she bookmarked, by ID
+//   daily:     how many questions she finished on each day, by her phone's date:
+//              { "2026-11-17": 12, … } (the last 400 days). For her streak and daily goal.
+//   results:   each question's latest result, by ID:
+//              { "q-0007": { "last": "got", "on": "2026-11-17", "inARow": 2, "level": "moderate" } }
+//              last:   "right" / "wrong" (multiple choice), "got" / "partly" / "missed" (essay,
+//                      fill in the blank); on: the date; level: the Blanks level (fill in the blank);
+//              inARow: right answers in a row that count toward mastery (2 or more = mastered).
 //   tags:      her color tag on a question, by ID: "green", "yellow" or "red"
 //              (what each color means is up to her; no tag = not in the list)
 //   highlights: words she highlighted, as a list of word positions (0 = first word).
@@ -36,8 +43,46 @@ function cleanTags(value) {
   return clean;
 }
 
+// Daily counts and per-question results (defined up here because loading her progress,
+// just below, already needs them).
+const RESULT_KINDS = ["right", "wrong", "got", "partly", "missed"];
+const FB_LEVEL_IDS = ["light", "key", "moderate", "intensive", "verbatim"];
+// A fill-in-the-blank "Got it" counts toward mastery only at these levels.
+const MASTERY_FB_LEVELS = ["moderate", "intensive", "verbatim"];
+const DAILY_DAYS_KEPT = 400;
+const DATE_KEY = /^\d{4}-\d{2}-\d{2}$/;
+
+// Keep only sensible day counts: { "2026-11-17": 12 } (whole numbers above 0).
+function cleanDaily(value) {
+  const clean = {};
+  if (!isPlainObject(value)) { return clean; }
+  Object.keys(value).forEach(function (day) {
+    const n = value[day];
+    if (DATE_KEY.test(day) && typeof n === "number" && isFinite(n) && n > 0 && Math.floor(n) === n) { clean[day] = n; }
+  });
+  return clean;
+}
+
+// Keep only sensible results (a damaged value can't break anything).
+function cleanResults(value) {
+  const clean = {};
+  if (!isPlainObject(value)) { return clean; }
+  Object.keys(value).forEach(function (id) {
+    const r = value[id];
+    if (!isPlainObject(r) || RESULT_KINDS.indexOf(r.last) === -1) { return; }
+    const result = {
+      last: r.last,
+      on: (typeof r.on === "string" && DATE_KEY.test(r.on)) ? r.on : null,
+      inARow: (typeof r.inARow === "number" && isFinite(r.inARow) && r.inARow > 0) ? Math.floor(r.inARow) : 0
+    };
+    if (FB_LEVEL_IDS.indexOf(r.level) !== -1) { result.level = r.level; }
+    clean[id] = result;
+  });
+  return clean;
+}
+
 function emptyProgress() {
-  return { subjects: {}, review: {}, bookmarks: {}, tags: {}, highlights: {}, highlightColors: {} };
+  return { subjects: {}, review: {}, bookmarks: {}, tags: {}, highlights: {}, highlightColors: {}, daily: {}, results: {} };
 }
 
 // Read saved progress. If there's none, or it's damaged, start fresh instead of crashing.
@@ -52,6 +97,8 @@ function loadProgress() {
       review: data.review || {},
       bookmarks: data.bookmarks || {},
       tags: cleanTags(data.tags),
+      daily: cleanDaily(data.daily),
+      results: cleanResults(data.results),
       highlights: cleanHighlights(data.highlights),
       highlightColors: cleanHighlightColors(data.highlightColors)
     };
@@ -127,6 +174,7 @@ function subjectStats(subject) {
 function recordMcq(question, isRight) {
   const stats = subjectStats(question.subject);
   stats.mcqAnswered += 1;
+  noteResult(question, isRight ? "right" : "wrong", isRight ? "add" : "reset");
   if (isRight) {
     stats.mcqCorrect += 1;
     delete progress.review[question.id];
@@ -141,8 +189,12 @@ function recordMcq(question, isRight) {
 // Per subject: how many she rated (fbAnswered) and how many were "Got it" (fbCorrect).
 // "Missed it" puts the item in her review list; "Got it" takes it off.
 // (The level she picked, how much was filled in for her, isn't part of the score.)
-function recordFillBlank(question, rating) {
+function recordFillBlank(question, rating, level) {
   const stats = subjectStats(question.subject);
+  // Got it: counts toward mastery only at Moderate or harder; at Light or Key Legal
+  // Terms it leaves the count as it was. Missed it (any level) starts it over.
+  const effect = rating !== "Got it" ? "reset" : (MASTERY_FB_LEVELS.indexOf(level) !== -1 ? "add" : "keep");
+  noteResult(question, rating === "Got it" ? "got" : "missed", effect, level);
   stats.fbAnswered = wholeNumberOrZero(stats.fbAnswered) + 1;
   if (rating === "Got it") {
     stats.fbCorrect = wholeNumberOrZero(stats.fbCorrect) + 1;
@@ -155,6 +207,8 @@ function recordFillBlank(question, rating) {
 
 function recordEssay(question, rating) {
   const stats = subjectStats(question.subject);
+  noteResult(question, rating === "Got it" ? "got" : (rating === "Partly" ? "partly" : "missed"),
+    rating === "Got it" ? "add" : "reset");
   if (rating === "Got it") { stats.got += 1; }
   if (rating === "Partly") { stats.partly += 1; }
   if (rating === "Missed it") { stats.missed += 1; }
@@ -164,6 +218,34 @@ function recordEssay(question, rating) {
     progress.review[question.id] = rating;
   }
   saveProgress();
+}
+
+// ---------- Today's count and each question's latest result ----------
+// Today's date on her phone, like "2026-11-17" (her own time zone, not world time).
+function todayKey() {
+  const d = new Date();
+  return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+}
+
+// One finished question: +1 for today, and its latest result. "effect" is what it does to
+// the right-in-a-row count: "add" (+1), "reset" (back to 0) or "keep" (unchanged).
+// (The caller saves.)
+function noteResult(question, last, effect, level) {
+  const today = todayKey();
+  progress.daily[today] = (progress.daily[today] || 0) + 1;
+  // Keep only the most recent days.
+  const days = Object.keys(progress.daily).sort();
+  days.slice(0, Math.max(0, days.length - DAILY_DAYS_KEPT)).forEach(function (day) { delete progress.daily[day]; });
+
+  const before = progress.results[question.id];
+  const inARow = before ? before.inARow : 0;
+  const result = {
+    last: last,
+    on: today,
+    inARow: effect === "add" ? inARow + 1 : (effect === "reset" ? 0 : inARow)
+  };
+  if (FB_LEVEL_IDS.indexOf(level) !== -1) { result.level = level; }
+  progress.results[question.id] = result;
 }
 
 function isBookmarked(questionId) {
@@ -398,6 +480,9 @@ function readBackup(text) {
   });
   // Older backups have no tags; that's fine, they just start empty.
   clean.tags = cleanTags(p.tags);
+  // Older backups have no daily counts or results either: they start empty.
+  clean.daily = cleanDaily(p.daily);
+  clean.results = cleanResults(p.results);
   // Backups made before a subject moved: follow the move.
   followMovedSubjects(clean.subjects);
   // Older backups have no highlights; that's fine, they just start empty.

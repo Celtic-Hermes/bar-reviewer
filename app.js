@@ -1688,7 +1688,7 @@ document.querySelectorAll(".btn-fbrate").forEach(function (button) {
     const rating = button.dataset.rating;
     session.fbAnswered += 1;
     if (rating === "Got it") { session.fbCorrect += 1; }
-    recordFillBlank(session.questions[session.index], rating);  // save on the phone
+    recordFillBlank(session.questions[session.index], rating, session.current.fbLevel);  // save on the phone
     session.current.fbRating = rating;
     showFbRated(rating);
     rememberSpot();
