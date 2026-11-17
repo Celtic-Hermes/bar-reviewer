@@ -2107,7 +2107,11 @@ function applyFbLevel(question, level, hidden) {
   } else {
     note.textContent = clean.length + (clean.length === 1 ? " blank" : " blanks") + " to fill.";
   }
+  note.dataset.base = note.textContent;  // "You typed X of Y…" is added after this (updateTypedCount)
   note.hidden = false;
+  // Boxes that already hold the right word (kept from before a level change or a reload) start green.
+  document.querySelectorAll("#prompt .fb-input").forEach(function (box) { liveCheckBox(box, false); });
+  updateTypedCount();
 }
 
 // The question's text with the hidden words put back in **…** (shown bold) and the
@@ -2146,11 +2150,86 @@ function markedAnswer(w, level) {
 document.getElementById("prompt").addEventListener("input", function (event) {
   const box = event.target;
   if (!box.classList || !box.classList.contains("fb-input")) { return; }
+  // Just jumped here from a right word: punctuation or a space she typed after that word
+  // ("Before." or "Before ") belongs to it, not to this box, so it's dropped.
+  if (box.dataset.justArrived) {
+    if (/[A-Za-zÀ-ÿ0-9]/.test(box.value)) {
+      delete box.dataset.justArrived;
+    } else {
+      box.value = "";
+    }
+  }
   sizeBlankBox(box);
   if (!isPlainObject(session.current.fbTyped)) { session.current.fbTyped = {}; }
   session.current.fbTyped[box.dataset.word] = box.value;
   rememberSpot();
+  // Live checking: typing clears the red; the right word turns the box green and moves on.
+  if (session.current.answerShown) { return; }
+  const right = liveCheckBox(box, false);
+  updateTypedCount();
+  if (right) { focusNextOpenBox(box); }
 });
+
+// Leaving a box (Return / Next, Tab, or tapping elsewhere): a wrong word turns it red
+// (the right word isn't shown: she can fix it). An empty box stays as it is.
+document.getElementById("prompt").addEventListener("focusout", function (event) {
+  const box = event.target;
+  if (!box.classList || !box.classList.contains("fb-input")) { return; }
+  delete box.dataset.justArrived;
+  if (session.current.answerShown) { return; }
+  liveCheckBox(box, true);
+  updateTypedCount();
+});
+
+// --- Live checking (Quiz) ---
+// Green (.fb-right) as soon as the box holds the right word, compared like Show answer does
+// (capital letters, punctuation, spaces and accents don't matter). Red (.fb-wrong) only when
+// she LEAVES a box with a wrong word ("leaving"), never while she's typing; an empty box
+// stays neutral. The same two styles as Show answer, so every fill-in-the-blank screen gets
+// them. Nothing here is saved to her score: Got it / Missed it still does that.
+function liveCheckBox(box, leaving) {
+  const answer = fbAnswerFor(box.dataset.word);
+  if (answer === null) { return false; }  // can't check (content doesn't line up)
+  const right = sameAnswer(box.value, answer);
+  const wrong = leaving && !right && box.value.trim() !== "";
+  box.classList.toggle("fb-right", right);
+  box.classList.toggle("fb-wrong", wrong);
+  box.setAttribute("aria-label", right ? "Blank: right" : (wrong ? "Blank: not right yet" : "Blank"));
+  return right;
+}
+
+// After a right word: the cursor goes to the next box that isn't green yet (after this one,
+// then from the top). None left: the keyboard closes.
+function focusNextOpenBox(box) {
+  const boxes = Array.from(document.querySelectorAll("#prompt .fb-input"));
+  const at = boxes.indexOf(box);
+  const open = boxes.slice(at + 1).concat(boxes.slice(0, at)).filter(function (b) {
+    return !b.classList.contains("fb-right");
+  });
+  if (open.length) {
+    open[0].dataset.justArrived = "1";  // see the "input" listener: stray punctuation is dropped
+    open[0].focus();
+  } else {
+    box.blur();
+  }
+}
+
+// "You typed X of Y blanks correctly", per word, kept up to date as she types.
+function updateTypedCount() {
+  const note = document.getElementById("fb-level-note");
+  let right = 0;
+  let checked = 0;
+  document.querySelectorAll("#prompt .fb-input").forEach(function (box) {
+    const answer = fbAnswerFor(box.dataset.word);
+    if (answer === null) { return; }
+    checked += 1;
+    if (sameAnswer(box.value, answer)) { right += 1; }
+  });
+  const base = note.dataset.base || "";
+  note.textContent = checked > 0
+    ? base + " You typed " + right + " of " + checked + (checked === 1 ? " blank" : " blanks") + " correctly."
+    : base;
+}
 
 // Return key in a box: go to the next box (or close the keyboard after the last one).
 document.getElementById("prompt").addEventListener("keydown", function (event) {
@@ -2217,23 +2296,16 @@ function endPeek() {
 // boxes, and say how many she got. Nothing here is saved to her score: Got it / Missed it does that.
 function checkBlankBoxes() {
   const boxes = document.querySelectorAll("#prompt .fb-input");
-  let right = 0;
-  let checked = 0;
   boxes.forEach(function (box) {
     box.readOnly = true;
     box.classList.remove("fb-right", "fb-wrong");
     const answer = fbAnswerFor(box.dataset.word);
     if (answer === null) { return; }  // can't check (content doesn't line up)
-    checked += 1;
     const ok = sameAnswer(box.value, answer);
-    if (ok) { right += 1; }
     box.classList.add(ok ? "fb-right" : "fb-wrong");
     box.setAttribute("aria-label", ok ? "Right" : "Wrong. The answer is: " + answer);
   });
-  if (checked > 0) {
-    const note = document.getElementById("fb-level-note");
-    note.textContent += " You typed " + right + " of " + checked + (checked === 1 ? " blank" : " blanks") + " correctly.";
-  }
+  updateTypedCount();  // "You typed X of Y blanks correctly."
 }
 
 // Picking a level in the "Blanks" dropdown: new blanks at that level, remembered for next time.
