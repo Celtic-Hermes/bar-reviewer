@@ -1,0 +1,51 @@
+[
+  {
+    "id": "rule-0001",
+    "status": "draft",
+    "title": "The Rule on the Writ of Amparo",
+    "number": "A.M. No. 07-9-12-SC",
+    "sourceUrl": "https://lawphil.net/judjuris/juri2007/sep2007/am_07-9-12-sc_2007.html"
+  },
+  {
+    "id": "rule-0002",
+    "status": "draft",
+    "title": "Rule on Custody of Minors and Writ of Habeas Corpus in Relation to Custody of Minors",
+    "number": "A.M. No. 03-04-04-SC",
+    "sourceUrl": "https://lawphil.net/courts/supreme/am/am_03_04_04_sc_2003.html"
+  },
+  {
+    "id": "rule-0003",
+    "status": "draft",
+    "title": "The Rule on the Writ of Habeas Data",
+    "number": "A.M. No. 08-1-16-SC",
+    "sourceUrl": "https://lawphil.net/judjuris/juri2008/jan2008/am_08_1_16_sc_2008.html"
+  },
+  {
+    "id": "rule-0004",
+    "status": "draft",
+    "title": "Rules of Procedure for Environmental Cases",
+    "number": "A.M. No. 09-6-8-SC",
+    "sourceUrl": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html"
+  },
+  {
+    "id": "rule-0005",
+    "status": "draft",
+    "title": "Rules of Court, Rule 91 (Escheats)",
+    "number": "Rules of Court, Rule 91",
+    "sourceUrl": "https://lawphil.net/courts/supreme/rc/rc_72-109_proceedings.html"
+  },
+  {
+    "id": "rule-0006",
+    "status": "draft",
+    "title": "Rules of Court, Rule 98 (Trustees)",
+    "number": "Rules of Court, Rule 98",
+    "sourceUrl": "https://lawphil.net/courts/supreme/rc/rc_72-109_proceedings.html"
+  },
+  {
+    "id": "rule-0007",
+    "status": "draft",
+    "title": "Rules of Court, Rule 107 (Absentees)",
+    "number": "Rules of Court, Rule 107",
+    "sourceUrl": "https://lawphil.net/courts/supreme/rc/rc_72-109_proceedings.html"
+  }
+]
