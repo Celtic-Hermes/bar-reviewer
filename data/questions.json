@@ -4101,5 +4101,545 @@
       "part": "Rule 8, Section 8 (Return of the writ)",
       "excerpt": "Section 8. Return of the writ. - The periodic reports submitted by the respondent detailing compliance with the judgment shall be contained in partial returns of the writ.\n\nUpon full satisfaction of the judgment, a final return of the writ shall be made to the court by the respondent. If the court finds that the judgment has been fully implemented, the satisfaction of judgment shall be entered in the court docket."
     }
+  },
+  {
+    "id": "q-0198",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 1. Who may file. - Any ____, ____ or any ____ may file a ____ before the proper officer in accordance with the Rules of Court.",
+    "fullText": "Section 1. Who may file. - Any offended party, peace officer or any public officer charged with the enforcement of an environmental law may file a complaint before the proper officer in accordance with the Rules of Court.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 9, Section 1 (Who may file)",
+      "excerpt": "Section 1. Who may file. - Any offended party, peace officer or any public officer charged with the enforcement of an environmental law may file a complaint before the proper officer in accordance with the Rules of Court."
+    }
+  },
+  {
+    "id": "q-0199",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 2. Filing of the information. - An ____, charging a person with a violation of an environmental law and ____, shall be filed with the court.",
+    "fullText": "Section 2. Filing of the information. - An information, charging a person with a violation of an environmental law and subscribed by the prosecutor, shall be filed with the court.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 9, Section 2 (Filing of the information)",
+      "excerpt": "Section 2. Filing of the information. - An information, charging a person with a violation of an environmental law and subscribed by the prosecutor, shall be filed with the court."
+    }
+  },
+  {
+    "id": "q-0200",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 3. Special prosecutor. - In criminal cases, where there is ____, a counsel whose services are offered by any person or organization may be allowed by the court as ____, with the consent of and subject to the ____.",
+    "fullText": "Section 3. Special prosecutor. - In criminal cases, where there is no private offended party, a counsel whose services are offered by any person or organization may be allowed by the court as special prosecutor, with the consent of and subject to the control and supervision of the public prosecutor.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 9, Section 3 (Special prosecutor)",
+      "excerpt": "Section 3. Special prosecutor. - In criminal cases, where there is no private offended party, a counsel whose services are offered by any person or organization may be allowed by the court as special prosecutor, with the consent of and subject to the control and supervision of the public prosecutor."
+    }
+  },
+  {
+    "id": "q-0201",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 1. Institution of criminal and civil actions. - When a criminal action is instituted, the civil action for the recovery of civil liability arising from the offense charged, shall be ____ unless the complainant ____, ____ or ____.\n\nUnless the civil action has been instituted prior to the criminal action, the reservation of the right to institute separately the civil action shall be made ____.\n\nIn case civil liability is imposed or damages are awarded, the filing and other legal fees shall be imposed on said award in accordance with ____ of the Rules of Court, and the fees shall constitute a ____. The damages awarded in cases where there is no private offended party, less the filing fees, shall accrue to the ____. The award shall be used for the ____ of the environment adversely affected.",
+    "fullText": "Section 1. Institution of criminal and civil actions. - When a criminal action is instituted, the civil action for the recovery of civil liability arising from the offense charged, shall be deemed instituted with the criminal action unless the complainant waives the civil action, reserves the right to institute it separately or institutes the civil action prior to the criminal action.\n\nUnless the civil action has been instituted prior to the criminal action, the reservation of the right to institute separately the civil action shall be made during arraignment.\n\nIn case civil liability is imposed or damages are awarded, the filing and other legal fees shall be imposed on said award in accordance with Rule 141 of the Rules of Court, and the fees shall constitute a first lien on the judgment award. The damages awarded in cases where there is no private offended party, less the filing fees, shall accrue to the funds of the agency charged with the implementation of the environmental law violated. The award shall be used for the restoration and rehabilitation of the environment adversely affected.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 10, Section 1 (Institution of criminal and civil actions)",
+      "excerpt": "Section 1. Institution of criminal and civil actions. - When a criminal action is instituted, the civil action for the recovery of civil liability arising from the offense charged, shall be deemed instituted with the criminal action unless the complainant waives the civil action, reserves the right to institute it separately or institutes the civil action prior to the criminal action.\n\nUnless the civil action has been instituted prior to the criminal action, the reservation of the right to institute separately the civil action shall be made during arraignment.\n\nIn case civil liability is imposed or damages are awarded, the filing and other legal fees shall be imposed on said award in accordance with Rule 141 of the Rules of Court, and the fees shall constitute a first lien on the judgment award. The damages awarded in cases where there is no private offended party, less the filing fees, shall accrue to the funds of the agency charged with the implementation of the environmental law violated. The award shall be used for the restoration and rehabilitation of the environment adversely affected."
+    }
+  },
+  {
+    "id": "q-0202",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 1. Arrest without warrant; when lawful. - A ____ or an ____ may, ____, arrest a person:\n\n(a) When, ____, the person to be arrested has committed, is actually committing or is attempting to commit an offense; or\n\n(b) When an offense has ____, and he has ____ to believe based on ____ that the person to be arrested has committed it. Individuals deputized by the proper government agency who are enforcing environmental laws shall enjoy the ____ under Section 3(m), Rule 131 of the Rules of Court when effecting arrests for violations of environmental laws.",
+    "fullText": "Section 1. Arrest without warrant; when lawful. - A peace officer or an individual deputized by the proper government agency may, without a warrant, arrest a person:\n\n(a) When, in his presence, the person to be arrested has committed, is actually committing or is attempting to commit an offense; or\n\n(b) When an offense has just been committed, and he has probable cause to believe based on personal knowledge of facts or circumstances that the person to be arrested has committed it. Individuals deputized by the proper government agency who are enforcing environmental laws shall enjoy the presumption of regularity under Section 3(m), Rule 131 of the Rules of Court when effecting arrests for violations of environmental laws.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 11, Section 1 (Arrest without warrant; when lawful)",
+      "excerpt": "Section 1. Arrest without warrant; when lawful. - A peace officer or an individual deputized by the proper government agency may, without a warrant, arrest a person:\n\n(a) When, in his presence, the person to be arrested has committed, is actually committing or is attempting to commit an offense; or\n\n(b) When an offense has just been committed, and he has probable cause to believe based on personal knowledge of facts or circumstances that the person to be arrested has committed it. Individuals deputized by the proper government agency who are enforcing environmental laws shall enjoy the presumption of regularity under Section 3(m), Rule 131 of the Rules of Court when effecting arrests for violations of environmental laws."
+    }
+  },
+  {
+    "id": "q-0203",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 2. Warrant of arrest. - All warrants of arrest issued by the court shall be accompanied by a ____ filed with the issuing court.",
+    "fullText": "Section 2. Warrant of arrest. - All warrants of arrest issued by the court shall be accompanied by a certified true copy of the information filed with the issuing court.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 11, Section 2 (Warrant of arrest)",
+      "excerpt": "Section 2. Warrant of arrest. - All warrants of arrest issued by the court shall be accompanied by a certified true copy of the information filed with the issuing court."
+    }
+  },
+  {
+    "id": "q-0204",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 1. Custody and disposition of seized items. - The custody and disposition of seized items shall be in accordance with the ____.",
+    "fullText": "Section 1. Custody and disposition of seized items. - The custody and disposition of seized items shall be in accordance with the applicable laws or rules promulgated by the concerned government agency.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 12, Section 1 (Custody and disposition of seized items)",
+      "excerpt": "Section 1. Custody and disposition of seized items. - The custody and disposition of seized items shall be in accordance with the applicable laws or rules promulgated by the concerned government agency."
+    }
+  },
+  {
+    "id": "q-0205",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 2. Procedure. - In the absence of applicable laws or rules promulgated by the concerned government agency, the following procedure shall be observed:\n\n(a) The apprehending officer having initial custody and control of the seized items, equipment, paraphernalia, conveyances and instruments shall ____ and whenever practicable, ____ the same in the ____.\n\n(b) Thereafter, the apprehending officer shall submit to the issuing court the return of the search warrant within ____ from date of seizure or in case of warrantless arrest, submit within ____ from date of seizure, the inventory report, compliance report, photographs, representative samples and other pertinent documents to the public prosecutor for appropriate action.\n\n(c) Upon motion by any interested party, the court may direct the ____ of seized items, equipment, paraphernalia, tools or instruments of the crime. The court shall, after hearing, fix the ____ based on the recommendation of the concerned government agency. The ____ shall conduct the auction.\n\n(d) The auction sale shall be with notice to the accused, the person from whom the items were seized, or the owner thereof and the concerned government agency.\n\n(e) The notice of auction shall be posted in ____ in the city or municipality where the items, equipment, paraphernalia, tools or instruments of the crime were seized.\n\n(f) The proceeds shall be ____ and deposited with the ____ for disposition according to the judgment.",
+    "fullText": "Section 2. Procedure. - In the absence of applicable laws or rules promulgated by the concerned government agency, the following procedure shall be observed:\n\n(a) The apprehending officer having initial custody and control of the seized items, equipment, paraphernalia, conveyances and instruments shall physically inventory and whenever practicable, photograph the same in the presence of the person from whom such items were seized.\n\n(b) Thereafter, the apprehending officer shall submit to the issuing court the return of the search warrant within five (5) days from date of seizure or in case of warrantless arrest, submit within five (5) days from date of seizure, the inventory report, compliance report, photographs, representative samples and other pertinent documents to the public prosecutor for appropriate action.\n\n(c) Upon motion by any interested party, the court may direct the auction sale of seized items, equipment, paraphernalia, tools or instruments of the crime. The court shall, after hearing, fix the minimum bid price based on the recommendation of the concerned government agency. The sheriff shall conduct the auction.\n\n(d) The auction sale shall be with notice to the accused, the person from whom the items were seized, or the owner thereof and the concerned government agency.\n\n(e) The notice of auction shall be posted in three conspicuous places in the city or municipality where the items, equipment, paraphernalia, tools or instruments of the crime were seized.\n\n(f) The proceeds shall be held in trust and deposited with the government depository bank for disposition according to the judgment.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 12, Section 2 (Procedure)",
+      "excerpt": "Section 2. Procedure. - In the absence of applicable laws or rules promulgated by the concerned government agency, the following procedure shall be observed:\n\n(a) The apprehending officer having initial custody and control of the seized items, equipment, paraphernalia, conveyances and instruments shall physically inventory and whenever practicable, photograph the same in the presence of the person from whom such items were seized.\n\n(b) Thereafter, the apprehending officer shall submit to the issuing court the return of the search warrant within five (5) days from date of seizure or in case of warrantless arrest, submit within five (5) days from date of seizure, the inventory report, compliance report, photographs, representative samples and other pertinent documents to the public prosecutor for appropriate action.\n\n(c) Upon motion by any interested party, the court may direct the auction sale of seized items, equipment, paraphernalia, tools or instruments of the crime. The court shall, after hearing, fix the minimum bid price based on the recommendation of the concerned government agency. The sheriff shall conduct the auction.\n\n(d) The auction sale shall be with notice to the accused, the person from whom the items were seized, or the owner thereof and the concerned government agency.\n\n(e) The notice of auction shall be posted in three conspicuous places in the city or municipality where the items, equipment, paraphernalia, tools or instruments of the crime were seized.\n\n(f) The proceeds shall be held in trust and deposited with the government depository bank for disposition according to the judgment."
+    }
+  },
+  {
+    "id": "q-0206",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 1. Attachment in environmental cases. - The provisional remedy of ____ under ____ of the Rules of Court may be availed of in environmental cases.",
+    "fullText": "Section 1. Attachment in environmental cases. - The provisional remedy of attachment under Rule 127 of the Rules of Court may be availed of in environmental cases.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 13, Section 1 (Attachment in environmental cases)",
+      "excerpt": "Section 1. Attachment in environmental cases. - The provisional remedy of attachment under Rule 127 of the Rules of Court may be availed of in environmental cases."
+    }
+  },
+  {
+    "id": "q-0207",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "TEPO",
+    "prompt": "Section 2. Environmental Protection Order (EPO); Temporary Environmental Protection Order (TEPO) in criminal cases. - The procedure for and issuance of ____ shall be governed by ____ of these Rules.",
+    "fullText": "Section 2. Environmental Protection Order (EPO); Temporary Environmental Protection Order (TEPO) in criminal cases. - The procedure for and issuance of EPO and TEPO shall be governed by Rule 2 of these Rules.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 13, Section 2 (Environmental Protection Order (EPO); Temporary Environmental Protection Order (TEPO) in criminal cases)",
+      "excerpt": "Section 2. Environmental Protection Order (EPO); Temporary Environmental Protection Order (TEPO) in criminal cases. - The procedure for and issuance of EPO and TEPO shall be governed by Rule 2 of these Rules."
+    }
+  },
+  {
+    "id": "q-0208",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 1. Bail, where filed. - Bail in the amount fixed may be filed with the ____, or in the ____ thereof, with any regional trial judge, metropolitan trial judge, municipal trial judge or municipal circuit trial judge in the province, city or municipality. If the accused is arrested in a province, city or municipality other than where the case is pending, bail may also be filed with any ____, or if no judge thereof is available, with any metropolitan trial judge, municipal trial judge or municipal circuit trial judge therein. If the court grants bail, the court may issue a ____ in appropriate cases.",
+    "fullText": "Section 1. Bail, where filed. - Bail in the amount fixed may be filed with the court where the case is pending, or in the absence or unavailability of the judge thereof, with any regional trial judge, metropolitan trial judge, municipal trial judge or municipal circuit trial judge in the province, city or municipality. If the accused is arrested in a province, city or municipality other than where the case is pending, bail may also be filed with any Regional Trial Court of said place, or if no judge thereof is available, with any metropolitan trial judge, municipal trial judge or municipal circuit trial judge therein. If the court grants bail, the court may issue a hold-departure order in appropriate cases.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 14, Section 1 (Bail, where filed)",
+      "excerpt": "Section 1. Bail, where filed. - Bail in the amount fixed may be filed with the court where the case is pending, or in the absence or unavailability of the judge thereof, with any regional trial judge, metropolitan trial judge, municipal trial judge or municipal circuit trial judge in the province, city or municipality. If the accused is arrested in a province, city or municipality other than where the case is pending, bail may also be filed with any Regional Trial Court of said place, or if no judge thereof is available, with any metropolitan trial judge, municipal trial judge or municipal circuit trial judge therein. If the court grants bail, the court may issue a hold-departure order in appropriate cases."
+    }
+  },
+  {
+    "id": "q-0209",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 2. Duties of the court. - Before granting the application for bail, the judge must read the information in a ____ and require the accused to sign a ____, as follows:\n\n(a) To appear before the court that issued the warrant of arrest for ____ on the date scheduled, and if the accused fails to appear without justification on the date of arraignment, accused waives the reading of the information and authorizes the court to enter a ____ on behalf of the accused and to set the case for trial;\n\n(b) To appear ____ where the case is pending; and\n\n(c) To waive the right of the accused to be present at the trial, and upon failure of the accused to appear without justification and despite due notice, the trial may proceed ____.",
+    "fullText": "Section 2. Duties of the court. - Before granting the application for bail, the judge must read the information in a language known to and understood by the accused and require the accused to sign a written undertaking, as follows:\n\n(a) To appear before the court that issued the warrant of arrest for arraignment purposes on the date scheduled, and if the accused fails to appear without justification on the date of arraignment, accused waives the reading of the information and authorizes the court to enter a plea of not guilty on behalf of the accused and to set the case for trial;\n\n(b) To appear whenever required by the court where the case is pending; and\n\n(c) To waive the right of the accused to be present at the trial, and upon failure of the accused to appear without justification and despite due notice, the trial may proceed in absentia.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 14, Section 2 (Duties of the court)",
+      "excerpt": "Section 2. Duties of the court. - Before granting the application for bail, the judge must read the information in a language known to and understood by the accused and require the accused to sign a written undertaking, as follows:\n\n(a) To appear before the court that issued the warrant of arrest for arraignment purposes on the date scheduled, and if the accused fails to appear without justification on the date of arraignment, accused waives the reading of the information and authorizes the court to enter a plea of not guilty on behalf of the accused and to set the case for trial;\n\n(b) To appear whenever required by the court where the case is pending; and\n\n(c) To waive the right of the accused to be present at the trial, and upon failure of the accused to appear without justification and despite due notice, the trial may proceed in absentia."
+    }
+  },
+  {
+    "id": "q-0210",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 1. Arraignment. - The court shall set the arraignment of the accused within ____ from the time it ____, with notice to the public prosecutor and offended party or concerned government agency that it will entertain ____ on the date of the arraignment.",
+    "fullText": "Section 1. Arraignment. - The court shall set the arraignment of the accused within fifteen (15) days from the time it acquires jurisdiction over the accused, with notice to the public prosecutor and offended party or concerned government agency that it will entertain plea-bargaining on the date of the arraignment.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 15, Section 1 (Arraignment)",
+      "excerpt": "Section 1. Arraignment. - The court shall set the arraignment of the accused within fifteen (15) days from the time it acquires jurisdiction over the accused, with notice to the public prosecutor and offended party or concerned government agency that it will entertain plea-bargaining on the date of the arraignment."
+    }
+  },
+  {
+    "id": "q-0211",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 2. Plea-bargaining. - On the scheduled date of arraignment, the court shall consider ____. Where the ____ agree to the plea offered by the accused, the court shall:\n\n(a) Issue an order which contains the plea-bargaining arrived at;\n\n(b) Proceed to receive evidence on the ____ of the case, if any; and\n\n(c) Render and promulgate ____, including the civil liability for damages.",
+    "fullText": "Section 2. Plea-bargaining. - On the scheduled date of arraignment, the court shall consider plea-bargaining arrangements. Where the prosecution and offended party or concerned government agency agree to the plea offered by the accused, the court shall:\n\n(a) Issue an order which contains the plea-bargaining arrived at;\n\n(b) Proceed to receive evidence on the civil aspect of the case, if any; and\n\n(c) Render and promulgate judgment of conviction, including the civil liability for damages.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 15, Section 2 (Plea-bargaining)",
+      "excerpt": "Section 2. Plea-bargaining. - On the scheduled date of arraignment, the court shall consider plea-bargaining arrangements. Where the prosecution and offended party or concerned government agency agree to the plea offered by the accused, the court shall:\n\n(a) Issue an order which contains the plea-bargaining arrived at;\n\n(b) Proceed to receive evidence on the civil aspect of the case, if any; and\n\n(c) Render and promulgate judgment of conviction, including the civil liability for damages."
+    }
+  },
+  {
+    "id": "q-0212",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 1. Setting of pre-trial conference. - After the arraignment, the court shall set the pre-trial conference within ____. It may refer the case to the ____, if warranted, for a preliminary conference to be set at least ____ prior to the pre-trial.",
+    "fullText": "Section 1. Setting of pre-trial conference. - After the arraignment, the court shall set the pre-trial conference within thirty (30) days. It may refer the case to the branch clerk of court, if warranted, for a preliminary conference to be set at least three (3) days prior to the pre-trial.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 16, Section 1 (Setting of pre-trial conference)",
+      "excerpt": "Section 1. Setting of pre-trial conference. - After the arraignment, the court shall set the pre-trial conference within thirty (30) days. It may refer the case to the branch clerk of court, if warranted, for a preliminary conference to be set at least three (3) days prior to the pre-trial."
+    }
+  },
+  {
+    "id": "q-0213",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 2. Preliminary conference. - The preliminary conference shall be for the following purposes:\n\n(a) To assist the parties in reaching a ____ of the case;\n\n(b) To mark the documents to be presented as exhibits;\n\n(c) To attach copies thereof to the records after comparison with the originals;\n\n(d) To ascertain from the parties the ____ and admissions on the ____ of documents marked as exhibits;\n\n(e) To consider such other matters as may aid in the prompt disposition of the case;\n\n(f) To record the proceedings during the preliminary conference in the ____ to be signed by the parties and counsel;\n\n(g) To mark the affidavits of witnesses which shall be in ____ and shall constitute the ____ of the witnesses; and\n\n(h) To attach the Minutes and marked exhibits to the case record before the pre-trial proper. The parties or their counsel must submit to the branch clerk of court the names, addresses and contact numbers of the affiants.",
+    "fullText": "Section 2. Preliminary conference. - The preliminary conference shall be for the following purposes:\n\n(a) To assist the parties in reaching a settlement of the civil aspect of the case;\n\n(b) To mark the documents to be presented as exhibits;\n\n(c) To attach copies thereof to the records after comparison with the originals;\n\n(d) To ascertain from the parties the undisputed facts and admissions on the genuineness and due execution of documents marked as exhibits;\n\n(e) To consider such other matters as may aid in the prompt disposition of the case;\n\n(f) To record the proceedings during the preliminary conference in the Minutes of Preliminary Conference to be signed by the parties and counsel;\n\n(g) To mark the affidavits of witnesses which shall be in question and answer form and shall constitute the direct examination of the witnesses; and\n\n(h) To attach the Minutes and marked exhibits to the case record before the pre-trial proper. The parties or their counsel must submit to the branch clerk of court the names, addresses and contact numbers of the affiants.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 16, Section 2 (Preliminary conference)",
+      "excerpt": "Section 2. Preliminary conference. - The preliminary conference shall be for the following purposes:\n\n(a) To assist the parties in reaching a settlement of the civil aspect of the case;\n\n(b) To mark the documents to be presented as exhibits;\n\n(c) To attach copies thereof to the records after comparison with the originals;\n\n(d) To ascertain from the parties the undisputed facts and admissions on the genuineness and due execution of documents marked as exhibits;\n\n(e) To consider such other matters as may aid in the prompt disposition of the case;\n\n(f) To record the proceedings during the preliminary conference in the Minutes of Preliminary Conference to be signed by the parties and counsel;\n\n(g) To mark the affidavits of witnesses which shall be in question and answer form and shall constitute the direct examination of the witnesses; and\n\n(h) To attach the Minutes and marked exhibits to the case record before the pre-trial proper. The parties or their counsel must submit to the branch clerk of court the names, addresses and contact numbers of the affiants."
+    }
+  },
+  {
+    "id": "q-0214",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 3. Pre-trial duty of the judge. - During the pre-trial, the court shall:\n\n(a) Place the parties and their counsels ____;\n\n(b) Adopt the minutes of the preliminary conference as part of the pre-trial proceedings, confirm markings of exhibits or substituted photocopies and admissions on the genuineness and due execution of documents, and list object and testimonial evidence;\n\n(c) Scrutinize the information and the statements in the affidavits and other documents which form part of the record of the preliminary investigation together with other documents identified and marked as exhibits to determine further admissions of facts as to:\n\ni. The court’s ____ relative to the offense(s) charged;\n\nii. ____; and\n\niii. ____;\n\n(d) Define factual and legal issues;\n\n(e) Ask parties to agree on the specific trial dates and adhere to the ____ determined by the court which shall contain the time frames for the different stages of the proceeding up to promulgation of decision;\n\n(f) Require the parties to submit to the branch clerk of court the names, addresses and contact numbers of witnesses that need to be summoned by ____; and\n\n(g) Consider modification of order of trial if the accused ____.",
+    "fullText": "Section 3. Pre-trial duty of the judge. - During the pre-trial, the court shall:\n\n(a) Place the parties and their counsels under oath;\n\n(b) Adopt the minutes of the preliminary conference as part of the pre-trial proceedings, confirm markings of exhibits or substituted photocopies and admissions on the genuineness and due execution of documents, and list object and testimonial evidence;\n\n(c) Scrutinize the information and the statements in the affidavits and other documents which form part of the record of the preliminary investigation together with other documents identified and marked as exhibits to determine further admissions of facts as to:\n\ni. The court’s territorial jurisdiction relative to the offense(s) charged;\n\nii. Qualification of expert witnesses; and\n\niii. Amount of damages;\n\n(d) Define factual and legal issues;\n\n(e) Ask parties to agree on the specific trial dates and adhere to the flow chart determined by the court which shall contain the time frames for the different stages of the proceeding up to promulgation of decision;\n\n(f) Require the parties to submit to the branch clerk of court the names, addresses and contact numbers of witnesses that need to be summoned by subpoena; and\n\n(g) Consider modification of order of trial if the accused admits the charge but interposes a lawful defense.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 16, Section 3 (Pre-trial duty of the judge)",
+      "excerpt": "Section 3. Pre-trial duty of the judge. - During the pre-trial, the court shall:\n\n(a) Place the parties and their counsels under oath;\n\n(b) Adopt the minutes of the preliminary conference as part of the pre-trial proceedings, confirm markings of exhibits or substituted photocopies and admissions on the genuineness and due execution of documents, and list object and testimonial evidence;\n\n(c) Scrutinize the information and the statements in the affidavits and other documents which form part of the record of the preliminary investigation together with other documents identified and marked as exhibits to determine further admissions of facts as to:\n\ni. The court’s territorial jurisdiction relative to the offense(s) charged;\n\nii. Qualification of expert witnesses; and\n\niii. Amount of damages;\n\n(d) Define factual and legal issues;\n\n(e) Ask parties to agree on the specific trial dates and adhere to the flow chart determined by the court which shall contain the time frames for the different stages of the proceeding up to promulgation of decision;\n\n(f) Require the parties to submit to the branch clerk of court the names, addresses and contact numbers of witnesses that need to be summoned by subpoena; and\n\n(g) Consider modification of order of trial if the accused admits the charge but interposes a lawful defense."
+    }
+  },
+  {
+    "id": "q-0215",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 4. Manner of questioning. - All questions or statements must be ____.",
+    "fullText": "Section 4. Manner of questioning. - All questions or statements must be directed to the court.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 16, Section 4 (Manner of questioning)",
+      "excerpt": "Section 4. Manner of questioning. - All questions or statements must be directed to the court."
+    }
+  },
+  {
+    "id": "q-0216",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 5. Agreements or admissions. - All agreements or admissions made or entered during the pre-trial conference shall be ____ and ____; otherwise, they ____. The agreements covering the matters referred to in ____ of the Rules of Court shall be approved by the court.",
+    "fullText": "Section 5. Agreements or admissions. - All agreements or admissions made or entered during the pre-trial conference shall be reduced in writing and signed by the accused and counsel; otherwise, they cannot be used against the accused. The agreements covering the matters referred to in Section 1, Rule 118 of the Rules of Court shall be approved by the court.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 16, Section 5 (Agreements or admissions)",
+      "excerpt": "Section 5. Agreements or admissions. - All agreements or admissions made or entered during the pre-trial conference shall be reduced in writing and signed by the accused and counsel; otherwise, they cannot be used against the accused. The agreements covering the matters referred to in Section 1, Rule 118 of the Rules of Court shall be approved by the court."
+    }
+  },
+  {
+    "id": "q-0217",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 6. Record of proceedings. - All proceedings during the pre-trial shall be ____, the ____ and the ____ by the parties or their counsels.",
+    "fullText": "Section 6. Record of proceedings. - All proceedings during the pre-trial shall be recorded, the transcripts prepared and the minutes signed by the parties or their counsels.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 16, Section 6 (Record of proceedings)",
+      "excerpt": "Section 6. Record of proceedings. - All proceedings during the pre-trial shall be recorded, the transcripts prepared and the minutes signed by the parties or their counsels."
+    }
+  },
+  {
+    "id": "q-0218",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 7. Pre-trial order. - The court shall issue a pre-trial order within ____ after the termination of the pre-trial, setting forth the actions taken during the pre-trial conference, the facts stipulated, the admissions made, evidence marked, the number of witnesses to be presented and the schedule of trial. The order shall ____ and control the course of action during the trial.",
+    "fullText": "Section 7. Pre-trial order. - The court shall issue a pre-trial order within ten (10) days after the termination of the pre-trial, setting forth the actions taken during the pre-trial conference, the facts stipulated, the admissions made, evidence marked, the number of witnesses to be presented and the schedule of trial. The order shall bind the parties and control the course of action during the trial.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 16, Section 7 (Pre-trial order)",
+      "excerpt": "Section 7. Pre-trial order. - The court shall issue a pre-trial order within ten (10) days after the termination of the pre-trial, setting forth the actions taken during the pre-trial conference, the facts stipulated, the admissions made, evidence marked, the number of witnesses to be presented and the schedule of trial. The order shall bind the parties and control the course of action during the trial."
+    }
+  },
+  {
+    "id": "q-0219",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 1. Continuous trial. - The court shall endeavor to conduct ____ which shall not exceed ____ from the date of the issuance of the pre-trial order.",
+    "fullText": "Section 1. Continuous trial. - The court shall endeavor to conduct continuous trial which shall not exceed three (3) months from the date of the issuance of the pre-trial order.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 17, Section 1 (Continuous trial)",
+      "excerpt": "Section 1. Continuous trial. - The court shall endeavor to conduct continuous trial which shall not exceed three (3) months from the date of the issuance of the pre-trial order."
+    }
+  },
+  {
+    "id": "q-0220",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 2. Affidavit in lieu of direct examination. - Affidavit in lieu of direct examination shall be used, subject to ____ and the right to object to ____ of the affidavit.",
+    "fullText": "Section 2. Affidavit in lieu of direct examination. - Affidavit in lieu of direct examination shall be used, subject to cross-examination and the right to object to inadmissible portions of the affidavit.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 17, Section 2 (Affidavit in lieu of direct examination)",
+      "excerpt": "Section 2. Affidavit in lieu of direct examination. - Affidavit in lieu of direct examination shall be used, subject to cross-examination and the right to object to inadmissible portions of the affidavit."
+    }
+  },
+  {
+    "id": "q-0221",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 3. Submission of memoranda. - The court may require the parties to submit their respective memoranda and if possible, in electronic form, within a ____ from the date the case is submitted for decision.\n\nWith or without any memoranda filed, the court shall have a period of ____ to decide the case counted from the last day of the ____ to file the memoranda.",
+    "fullText": "Section 3. Submission of memoranda. - The court may require the parties to submit their respective memoranda and if possible, in electronic form, within a non-extendible period of thirty (30) days from the date the case is submitted for decision.\n\nWith or without any memoranda filed, the court shall have a period of sixty (60) days to decide the case counted from the last day of the 30-day period to file the memoranda.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 17, Section 3 (Submission of memoranda)",
+      "excerpt": "Section 3. Submission of memoranda. - The court may require the parties to submit their respective memoranda and if possible, in electronic form, within a non-extendible period of thirty (30) days from the date the case is submitted for decision.\n\nWith or without any memoranda filed, the court shall have a period of sixty (60) days to decide the case counted from the last day of the 30-day period to file the memoranda."
+    }
+  },
+  {
+    "id": "q-0222",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 4. Disposition period. - The court shall dispose the case within a period of ____ from the ____.",
+    "fullText": "Section 4. Disposition period. - The court shall dispose the case within a period of ten (10) months from the date of arraignment.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 17, Section 4 (Disposition period)",
+      "excerpt": "Section 4. Disposition period. - The court shall dispose the case within a period of ten (10) months from the date of arraignment."
+    }
+  },
+  {
+    "id": "q-0223",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 5. Pro bono lawyers. - If the accused cannot afford the services of counsel or there is ____, the court shall require the ____ to provide ____ for the accused.",
+    "fullText": "Section 5. Pro bono lawyers. - If the accused cannot afford the services of counsel or there is no available public attorney, the court shall require the Integrated Bar of the Philippines to provide pro bono lawyers for the accused.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 17, Section 5 (Pro bono lawyers)",
+      "excerpt": "Section 5. Pro bono lawyers. - If the accused cannot afford the services of counsel or there is no available public attorney, the court shall require the Integrated Bar of the Philippines to provide pro bono lawyers for the accused."
+    }
+  },
+  {
+    "id": "q-0224",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 1. Subsidiary liability. - In case of conviction of the accused and ____, the court may, by ____ under judgment, enforce such subsidiary liability against a person or corporation subsidiary liable under ____ of the Revised Penal Code.",
+    "fullText": "Section 1. Subsidiary liability. - In case of conviction of the accused and subsidiary liability is allowed by law, the court may, by motion of the person entitled to recover under judgment, enforce such subsidiary liability against a person or corporation subsidiary liable under Article 102 and Article 103 of the Revised Penal Code.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 18, Section 1 (Subsidiary liability)",
+      "excerpt": "Section 1. Subsidiary liability. - In case of conviction of the accused and subsidiary liability is allowed by law, the court may, by motion of the person entitled to recover under judgment, enforce such subsidiary liability against a person or corporation subsidiary liable under Article 102 and Article 103 of the Revised Penal Code."
+    }
+  },
+  {
+    "id": "q-0225",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 1. Motion to dismiss. - Upon the filing of an information in court and ____, the accused may file a ____ on the ground that the criminal action is a ____.",
+    "fullText": "Section 1. Motion to dismiss. - Upon the filing of an information in court and before arraignment, the accused may file a motion to dismiss on the ground that the criminal action is a SLAPP.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 19, Section 1 (Motion to dismiss)",
+      "excerpt": "Section 1. Motion to dismiss. - Upon the filing of an information in court and before arraignment, the accused may file a motion to dismiss on the ground that the criminal action is a SLAPP."
+    }
+  },
+  {
+    "id": "q-0226",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 2. Summary hearing. - The hearing on the defense of a SLAPP shall be ____ in nature. The parties must submit all the available evidence in support of their respective positions. The party seeking the dismissal of the case must prove by ____ that his acts for the enforcement of environmental law is a legitimate action for the protection, preservation and rehabilitation of the environment. The party filing the action assailed as a SLAPP shall prove by ____ that the action is not a SLAPP.",
+    "fullText": "Section 2. Summary hearing. - The hearing on the defense of a SLAPP shall be summary in nature. The parties must submit all the available evidence in support of their respective positions. The party seeking the dismissal of the case must prove by substantial evidence that his acts for the enforcement of environmental law is a legitimate action for the protection, preservation and rehabilitation of the environment. The party filing the action assailed as a SLAPP shall prove by preponderance of evidence that the action is not a SLAPP.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 19, Section 2 (Summary hearing)",
+      "excerpt": "Section 2. Summary hearing. - The hearing on the defense of a SLAPP shall be summary in nature. The parties must submit all the available evidence in support of their respective positions. The party seeking the dismissal of the case must prove by substantial evidence that his acts for the enforcement of environmental law is a legitimate action for the protection, preservation and rehabilitation of the environment. The party filing the action assailed as a SLAPP shall prove by preponderance of evidence that the action is not a SLAPP."
+    }
+  },
+  {
+    "id": "q-0227",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 3. Resolution. - The court shall grant the motion if the accused establishes in the summary hearing that the criminal case has been filed with ____ that any person, institution or the government has taken or may take in the enforcement of environmental laws, protection of the environment or assertion of environmental rights.\n\nIf the court denies the motion, the court shall ____ of the accused.",
+    "fullText": "Section 3. Resolution. - The court shall grant the motion if the accused establishes in the summary hearing that the criminal case has been filed with intent to harass, vex, exert undue pressure or stifle any legal recourse that any person, institution or the government has taken or may take in the enforcement of environmental laws, protection of the environment or assertion of environmental rights.\n\nIf the court denies the motion, the court shall immediately proceed with the arraignment of the accused.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 19, Section 3 (Resolution)",
+      "excerpt": "Section 3. Resolution. - The court shall grant the motion if the accused establishes in the summary hearing that the criminal case has been filed with intent to harass, vex, exert undue pressure or stifle any legal recourse that any person, institution or the government has taken or may take in the enforcement of environmental laws, protection of the environment or assertion of environmental rights.\n\nIf the court denies the motion, the court shall immediately proceed with the arraignment of the accused."
+    }
   }
 ]
