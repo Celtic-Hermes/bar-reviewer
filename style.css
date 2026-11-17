@@ -99,17 +99,26 @@ body {
 
 .prompt { margin: 0; white-space: pre-line; }  /* keep line breaks written in the question */
 
-/* Book-style paragraphs: straight edges on both sides (justified) for question prompts,
-   suggested answers, explanations, the case's facts, issue, ruling and key doctrine,
-   the full decision text, and the revealed text of a fill-in-the-blank item.
-   Long words may be split with a hyphen at the end of a line (like a printed book),
-   which avoids big gaps between words on a narrow phone screen.
-   The last line of each paragraph (and each numbered point) stays normal. */
-#prompt, #mcq-explanation, .alac dd,
-#case-facts, #case-issue, #case-ruling, #case-doctrine, #full-text, #fb-full {
+/* ---------- Reading text: one shared style ----------
+   Every block of question or case text she reads has the class "reading-text":
+   question prompts, explanations, suggested answers, the case's facts, issue, ruling
+   and key doctrine, the full decision text, and the revealed text of a fill-in-the-blank
+   item. Any new screen or question type just adds the class; this is the ONLY place
+   its look is set (never style a screen's text by its id).
+   Book-style paragraphs: straight edges on both sides (justified). Long words may be
+   split with a hyphen at the end of a line (like a printed book), which avoids big gaps
+   between words on a narrow phone screen. The last line of each paragraph (and each
+   numbered point) stays normal. */
+.reading-text {
   text-align: justify;
   -webkit-hyphens: auto;
   hyphens: auto;
+}
+/* With typing boxes in the line (fill in the blank), no stretching: it leaves big gaps. */
+.reading-text:has(input) {
+  text-align: left;
+  -webkit-hyphens: manual;
+  hyphens: manual;
 }
 
 /* ---------- Highlighter: tap a word to highlight it ---------- */
@@ -256,8 +265,6 @@ body {
   line-height: 1.3; vertical-align: baseline;
   -webkit-appearance: none; appearance: none;
 }
-/* With text boxes in the line, the question isn't stretched edge to edge (big gaps otherwise). */
-#prompt:has(.fb-input) { text-align: left; hyphens: manual; }
 .fb-input:focus { outline: 2px solid var(--primary); outline-offset: 1px; }
 .fb-input::selection { background: color-mix(in srgb, var(--primary) 30%, transparent); }
 /* After "Show answer": green if right, red if wrong or left empty. */

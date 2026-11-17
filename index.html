@@ -146,7 +146,7 @@
             <option value="verbatim">Verbatim Bar Mode (~75%)</option>
           </select>
         </div>
-        <p class="prompt" id="prompt"></p>
+        <p class="prompt reading-text" id="prompt"></p>
         <p class="fb-level-note" id="fb-level-note" hidden></p>
         <button class="find-btn" id="find-btn" hidden>🔍 Find in case</button>
       </section>
@@ -158,7 +158,7 @@
         <section class="card feedback" id="mcq-feedback" hidden>
           <p class="feedback-title" id="mcq-result"></p>
           <h2 class="label">Explanation</h2>
-          <p class="prompt" id="mcq-explanation"></p>
+          <p class="prompt reading-text" id="mcq-explanation"></p>
         </section>
       </div>
 
@@ -168,7 +168,7 @@
         <div id="fb-answer-area" hidden>
           <section class="card">
             <h2 class="label">Full text</h2>
-            <p class="prompt fb-full" id="fb-full"></p>
+            <p class="prompt fb-full reading-text" id="fb-full"></p>
           </section>
           <section class="rating">
             <h2 class="label">How did you do?</h2>
@@ -190,13 +190,13 @@
           <h2 class="label">Suggested answer</h2>
           <dl class="alac">
             <dt>Answer</dt>
-            <dd id="alac-answer"></dd>
+            <dd class="reading-text" id="alac-answer"></dd>
             <dt>Legal basis</dt>
-            <dd id="alac-basis"></dd>
+            <dd class="reading-text" id="alac-basis"></dd>
             <dt>Application</dt>
-            <dd id="alac-application"></dd>
+            <dd class="reading-text" id="alac-application"></dd>
             <dt>Conclusion</dt>
-            <dd id="alac-conclusion"></dd>
+            <dd class="reading-text" id="alac-conclusion"></dd>
           </dl>
         </section>
 
@@ -234,19 +234,19 @@
 
       <section class="card case-part">
         <h2 class="label">Facts</h2>
-        <p class="prompt" id="case-facts"></p>
+        <p class="prompt reading-text" id="case-facts"></p>
       </section>
       <section class="card case-part">
         <h2 class="label">Issue</h2>
-        <p class="prompt" id="case-issue"></p>
+        <p class="prompt reading-text" id="case-issue"></p>
       </section>
       <section class="card case-part">
         <h2 class="label">Ruling</h2>
-        <p class="prompt" id="case-ruling"></p>
+        <p class="prompt reading-text" id="case-ruling"></p>
       </section>
       <section class="card case-part">
         <h2 class="label">Key doctrine</h2>
-        <p class="prompt" id="case-doctrine"></p>
+        <p class="prompt reading-text" id="case-doctrine"></p>
       </section>
       <section class="card case-part">
         <h2 class="label">Full text of the decision</h2>
@@ -259,7 +259,7 @@
           <button class="hl-swatch" data-color="ruling" aria-pressed="true"><span class="hl-dot"></span><span class="hl-swatch-name">Important ruling</span></button>
           <button class="hl-swatch" data-color="doctrine" aria-pressed="false"><span class="hl-dot"></span><span class="hl-swatch-name">Doctrine</span></button>
         </div>
-        <div class="full-text hl-colored hl-active-ruling" id="full-text" hidden></div>
+        <div class="full-text reading-text hl-colored hl-active-ruling" id="full-text" hidden></div>
         <p class="full-text-credit" id="full-text-credit" hidden>Text from The LawPhil Project, Arellano Law Foundation (see Source below).</p>
       </section>
       <section class="card case-part">
