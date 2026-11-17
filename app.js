@@ -1400,6 +1400,7 @@ function showQuestion() {
   setHighlightableText(document.getElementById("prompt"), question.prompt, question.id);
   document.getElementById("prompt").hidden = false;
   document.getElementById("fb-level").hidden = true;
+  document.getElementById("fb-new-row").hidden = true;  // "New blanks": fill in the blank only
   document.getElementById("fb-level-note").hidden = true;
   // Anything not marked "verified" (including a missing status) shows the draft label.
   document.getElementById("draft-badge").hidden = (question.status === "verified");
@@ -1621,6 +1622,7 @@ function showFillBlank(question) {
 
   // Start: the dropdown and the text. The answer stays hidden.
   document.getElementById("fb-level").hidden = false;
+  document.getElementById("fb-new-row").hidden = false;
   const select = document.getElementById("fb-level-select");
   select.disabled = false;
   document.getElementById("fb-show").hidden = false;
