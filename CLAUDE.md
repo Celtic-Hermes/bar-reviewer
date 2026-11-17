@@ -29,6 +29,7 @@ Topics so far (use these exact names):
 - Legal and Judicial Ethics → **Notarial Practice**
 - Remedial Law → **Special Proceedings** → sub-topic **Writ of Amparo** (fill-in-the-blank items, one per section of A.M. No. 07-9-12-SC, q-0056 to q-0082)
 - Remedial Law → **Special Proceedings** → sub-topic **Custody of Minors and Habeas Corpus** (fill-in-the-blank items, one per section of A.M. No. 03-04-04-SC, q-0083 to q-0104)
+- Remedial Law → **Special Proceedings** → sub-topic **Writ of Habeas Data** (fill-in-the-blank items, one per section of A.M. No. 08-1-16-SC, q-0105 to q-0129)
 
 ### Miscellaneous section
 Below the 8 subjects, the home screen has a **Miscellaneous** section for extra subjects that are not bar subjects (listed in `MISC_SUBJECTS` in `app.js`). It is **empty for now** and shows a "Nothing here yet" note; keep the section in place for future content.
