@@ -12,7 +12,8 @@
 //              { "q-0007": { "last": "got", "on": "2026-11-17", "inARow": 2, "level": "moderate" } }
 //              last:   "right" / "wrong" (multiple choice), "got" / "partly" / "missed" (essay,
 //                      fill in the blank); on: the date; level: the Blanks level (fill in the blank);
-//              inARow: right answers in a row that count toward mastery (2 or more = mastered).
+//              inARow: right answers in a row that count toward mastery (2 or more = mastered),
+//                      at most one per day; countedOn: the day it last went up.
 //   tags:      her color tag on a question, by ID: "green", "yellow" or "red"
 //              (what each color means is up to her; no tag = not in the list)
 //   highlights: words she highlighted, as a list of word positions (0 = first word).
@@ -76,6 +77,7 @@ function cleanResults(value) {
       inARow: (typeof r.inARow === "number" && isFinite(r.inARow) && r.inARow > 0) ? Math.floor(r.inARow) : 0
     };
     if (FB_LEVEL_IDS.indexOf(r.level) !== -1) { result.level = r.level; }
+    if (typeof r.countedOn === "string" && DATE_KEY.test(r.countedOn)) { result.countedOn = r.countedOn; }
     clean[id] = result;
   });
   return clean;
@@ -229,6 +231,8 @@ function todayKey() {
 
 // One finished question: +1 for today, and its latest result. "effect" is what it does to
 // the right-in-a-row count: "add" (+1), "reset" (back to 0) or "keep" (unchanged).
+// The count goes up at most once a day: a second right answer on the day it already went
+// up leaves it as it is (after a reset, the first right answer starts it again at 1).
 // (The caller saves.)
 function noteResult(question, last, effect, level) {
   const today = todayKey();
@@ -239,11 +243,18 @@ function noteResult(question, last, effect, level) {
 
   const before = progress.results[question.id];
   const inARow = before ? before.inARow : 0;
-  const result = {
-    last: last,
-    on: today,
-    inARow: effect === "add" ? inARow + 1 : (effect === "reset" ? 0 : inARow)
-  };
+  // The day the count last went up (results saved before this was added: their date).
+  let countedOn = before ? (before.countedOn || (inARow > 0 ? before.on : null)) : null;
+  let newCount = inARow;
+  if (effect === "reset") {
+    newCount = 0;
+    countedOn = null;
+  } else if (effect === "add" && (inARow === 0 || countedOn !== today)) {
+    newCount = inARow + 1;
+    countedOn = today;
+  }
+  const result = { last: last, on: today, inARow: newCount };
+  if (countedOn && newCount > 0) { result.countedOn = countedOn; }
   if (FB_LEVEL_IDS.indexOf(level) !== -1) { result.level = level; }
   progress.results[question.id] = result;
 }
