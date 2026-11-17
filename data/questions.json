@@ -2877,5 +2877,779 @@
       "part": "Section 25 (Effectivity)",
       "excerpt": "SEC. 25. Effectivity. - This Rule shall take effect on February 2, 2008, following its publication in three (3) newspapers of general circulation."
     }
+  },
+  {
+    "id": "q-0130",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 1. Title. — These Rules shall be known as \"____.\"",
+    "fullText": "Section 1. Title. — These Rules shall be known as \"The Rules of Procedure for Environmental Cases.\"",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 1, Section 1 (Title)",
+      "excerpt": "Section 1. Title. — These Rules shall be known as \"The Rules of Procedure for Environmental Cases.\""
+    }
+  },
+  {
+    "id": "q-0131",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 2. Scope. — These Rules shall govern the procedure in ____ before the ____ involving ____ such as but not limited to the following:\n\n(a) Act No. 3572, Prohibition Against Cutting of Tindalo, Akli, and Molave Trees;\n\n(b) P.D. No. 705, ____;\n\n(c) P.D. No. 856, Sanitation Code;\n\n(d) P.D. No. 979, Marine Pollution Decree;\n\n(e) P.D. No. 1067, ____;\n\n(f) P.D. No. 1151, Philippine Environmental Policy of 1977;\n\n(g) P.D. No. 1433, Plant Quarantine Law of 1978;\n\n(h) P.D. No. 1586, Establishing an Environmental Impact Statement System Including Other Environmental Management Related Measures and for Other Purposes;\n\n(i) R.A. No. 3571, Prohibition Against the Cutting, Destroying or Injuring of Planted or Growing Trees, Flowering Plants and Shrubs or Plants of Scenic Value along Public Roads, in Plazas, Parks, School Premises or in any Other Public Ground;\n\n(j) R.A. No. 4850, Laguna Lake Development Authority Act;\n\n(k) R.A. No. 6969, Toxic Substances and Hazardous Waste Act;\n\n(l) R.A. No. 7076, People’s Small-Scale Mining Act;\n\n(m) R.A. No. 7586, National Integrated Protected Areas System Act including all laws, decrees, orders, proclamations and issuances establishing protected areas;\n\n(n) R.A. No. 7611, Strategic Environmental Plan for Palawan Act;\n\n(o) R.A. No. 7942, ____;\n\n(p) R.A. No. 8371, Indigenous Peoples Rights Act;\n\n(q) R.A. No. 8550, ____;\n\n(r) R.A. No. 8749, ____;\n\n(s) R.A. No. 9003, ____;\n\n(t) R.A. No. 9072, National Caves and Cave Resource Management Act;\n\n(u) R.A. No. 9147, ____;\n\n(v) R.A. No. 9175, Chainsaw Act;\n\n(w) R.A. No. 9275, ____;\n\n(x) R.A. No. 9483, Oil Spill Compensation Act of 2007; and\n\n(y) Provisions in C.A. No. 141, The Public Land Act; R.A. No. 6657, Comprehensive Agrarian Reform Law of 1988; R.A. No. 7160, Local Government Code of 1991; R.A. No. 7161, Tax Laws Incorporated in the Revised Forestry Code and Other Environmental Laws (Amending the NIRC); R.A. No. 7308, Seed Industry Development Act of 1992; R.A. No. 7900, High-Value Crops Development Act; R.A. No. 8048, Coconut Preservation Act; R.A. No. 8435, Agriculture and Fisheries Modernization Act of 1997; R.A. No. 9522, The Philippine Archipelagic Baselines Law; R.A. No. 9593, Renewable Energy Act of 2008; R.A. No. 9637, Philippine Biofuels Act; and other existing laws that relate to the ____ of the environment and natural resources.",
+    "fullText": "Section 2. Scope. — These Rules shall govern the procedure in civil, criminal and special civil actions before the Regional Trial Courts, Metropolitan Trial Courts, Municipal Trial Courts in Cities, Municipal Trial Courts and Municipal Circuit Trial Courts involving enforcement or violations of environmental and other related laws, rules and regulations such as but not limited to the following:\n\n(a) Act No. 3572, Prohibition Against Cutting of Tindalo, Akli, and Molave Trees;\n\n(b) P.D. No. 705, Revised Forestry Code;\n\n(c) P.D. No. 856, Sanitation Code;\n\n(d) P.D. No. 979, Marine Pollution Decree;\n\n(e) P.D. No. 1067, Water Code;\n\n(f) P.D. No. 1151, Philippine Environmental Policy of 1977;\n\n(g) P.D. No. 1433, Plant Quarantine Law of 1978;\n\n(h) P.D. No. 1586, Establishing an Environmental Impact Statement System Including Other Environmental Management Related Measures and for Other Purposes;\n\n(i) R.A. No. 3571, Prohibition Against the Cutting, Destroying or Injuring of Planted or Growing Trees, Flowering Plants and Shrubs or Plants of Scenic Value along Public Roads, in Plazas, Parks, School Premises or in any Other Public Ground;\n\n(j) R.A. No. 4850, Laguna Lake Development Authority Act;\n\n(k) R.A. No. 6969, Toxic Substances and Hazardous Waste Act;\n\n(l) R.A. No. 7076, People’s Small-Scale Mining Act;\n\n(m) R.A. No. 7586, National Integrated Protected Areas System Act including all laws, decrees, orders, proclamations and issuances establishing protected areas;\n\n(n) R.A. No. 7611, Strategic Environmental Plan for Palawan Act;\n\n(o) R.A. No. 7942, Philippine Mining Act;\n\n(p) R.A. No. 8371, Indigenous Peoples Rights Act;\n\n(q) R.A. No. 8550, Philippine Fisheries Code;\n\n(r) R.A. No. 8749, Clean Air Act;\n\n(s) R.A. No. 9003, Ecological Solid Waste Management Act;\n\n(t) R.A. No. 9072, National Caves and Cave Resource Management Act;\n\n(u) R.A. No. 9147, Wildlife Conservation and Protection Act;\n\n(v) R.A. No. 9175, Chainsaw Act;\n\n(w) R.A. No. 9275, Clean Water Act;\n\n(x) R.A. No. 9483, Oil Spill Compensation Act of 2007; and\n\n(y) Provisions in C.A. No. 141, The Public Land Act; R.A. No. 6657, Comprehensive Agrarian Reform Law of 1988; R.A. No. 7160, Local Government Code of 1991; R.A. No. 7161, Tax Laws Incorporated in the Revised Forestry Code and Other Environmental Laws (Amending the NIRC); R.A. No. 7308, Seed Industry Development Act of 1992; R.A. No. 7900, High-Value Crops Development Act; R.A. No. 8048, Coconut Preservation Act; R.A. No. 8435, Agriculture and Fisheries Modernization Act of 1997; R.A. No. 9522, The Philippine Archipelagic Baselines Law; R.A. No. 9593, Renewable Energy Act of 2008; R.A. No. 9637, Philippine Biofuels Act; and other existing laws that relate to the conservation, development, preservation, protection and utilization of the environment and natural resources.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 1, Section 2 (Scope)",
+      "excerpt": "Section 2. Scope. — These Rules shall govern the procedure in civil, criminal and special civil actions before the Regional Trial Courts, Metropolitan Trial Courts, Municipal Trial Courts in Cities, Municipal Trial Courts and Municipal Circuit Trial Courts involving enforcement or violations of environmental and other related laws, rules and regulations such as but not limited to the following:\n\n(a) Act No. 3572, Prohibition Against Cutting of Tindalo, Akli, and Molave Trees;\n\n(b) P.D. No. 705, Revised Forestry Code;\n\n(c) P.D. No. 856, Sanitation Code;\n\n(d) P.D. No. 979, Marine Pollution Decree;\n\n(e) P.D. No. 1067, Water Code;\n\n(f) P.D. No. 1151, Philippine Environmental Policy of 1977;\n\n(g) P.D. No. 1433, Plant Quarantine Law of 1978;\n\n(h) P.D. No. 1586, Establishing an Environmental Impact Statement System Including Other Environmental Management Related Measures and for Other Purposes;\n\n(i) R.A. No. 3571, Prohibition Against the Cutting, Destroying or Injuring of Planted or Growing Trees, Flowering Plants and Shrubs or Plants of Scenic Value along Public Roads, in Plazas, Parks, School Premises or in any Other Public Ground;\n\n(j) R.A. No. 4850, Laguna Lake Development Authority Act;\n\n(k) R.A. No. 6969, Toxic Substances and Hazardous Waste Act;\n\n(l) R.A. No. 7076, People’s Small-Scale Mining Act;\n\n(m) R.A. No. 7586, National Integrated Protected Areas System Act including all laws, decrees, orders, proclamations and issuances establishing protected areas;\n\n(n) R.A. No. 7611, Strategic Environmental Plan for Palawan Act;\n\n(o) R.A. No. 7942, Philippine Mining Act;\n\n(p) R.A. No. 8371, Indigenous Peoples Rights Act;\n\n(q) R.A. No. 8550, Philippine Fisheries Code;\n\n(r) R.A. No. 8749, Clean Air Act;\n\n(s) R.A. No. 9003, Ecological Solid Waste Management Act;\n\n(t) R.A. No. 9072, National Caves and Cave Resource Management Act;\n\n(u) R.A. No. 9147, Wildlife Conservation and Protection Act;\n\n(v) R.A. No. 9175, Chainsaw Act;\n\n(w) R.A. No. 9275, Clean Water Act;\n\n(x) R.A. No. 9483, Oil Spill Compensation Act of 2007; and\n\n(y) Provisions in C.A. No. 141, The Public Land Act; R.A. No. 6657, Comprehensive Agrarian Reform Law of 1988; R.A. No. 7160, Local Government Code of 1991; R.A. No. 7161, Tax Laws Incorporated in the Revised Forestry Code and Other Environmental Laws (Amending the NIRC); R.A. No. 7308, Seed Industry Development Act of 1992; R.A. No. 7900, High-Value Crops Development Act; R.A. No. 8048, Coconut Preservation Act; R.A. No. 8435, Agriculture and Fisheries Modernization Act of 1997; R.A. No. 9522, The Philippine Archipelagic Baselines Law; R.A. No. 9593, Renewable Energy Act of 2008; R.A. No. 9637, Philippine Biofuels Act; and other existing laws that relate to the conservation, development, preservation, protection and utilization of the environment and natural resources."
+    }
+  },
+  {
+    "id": "q-0132",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 3. Objectives. - The objectives of these Rules are:\n\n(a) To protect and advance the constitutional right of the people to a ____;\n\n(b) To provide a ____ for the enforcement of environmental rights and duties recognized under the Constitution, existing laws, rules and regulations, and international agreements;\n\n(c) To introduce and adopt ____ ensuring the effective enforcement of remedies and redress for violation of environmental laws; and\n\n(d) To enable the courts to ____ with orders and judgments in environmental cases.",
+    "fullText": "Section 3. Objectives. - The objectives of these Rules are:\n\n(a) To protect and advance the constitutional right of the people to a balanced and healthful ecology;\n\n(b) To provide a simplified, speedy and inexpensive procedure for the enforcement of environmental rights and duties recognized under the Constitution, existing laws, rules and regulations, and international agreements;\n\n(c) To introduce and adopt innovations and best practices ensuring the effective enforcement of remedies and redress for violation of environmental laws; and\n\n(d) To enable the courts to monitor and exact compliance with orders and judgments in environmental cases.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 1, Section 3 (Objectives)",
+      "excerpt": "Section 3. Objectives. - The objectives of these Rules are:\n\n(a) To protect and advance the constitutional right of the people to a balanced and healthful ecology;\n\n(b) To provide a simplified, speedy and inexpensive procedure for the enforcement of environmental rights and duties recognized under the Constitution, existing laws, rules and regulations, and international agreements;\n\n(c) To introduce and adopt innovations and best practices ensuring the effective enforcement of remedies and redress for violation of environmental laws; and\n\n(d) To enable the courts to monitor and exact compliance with orders and judgments in environmental cases."
+    }
+  },
+  {
+    "id": "q-0133",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 4. Definition of Terms. -\n\n(a) By-product or derivatives means any part taken or substance extracted from wildlife, in raw or in processed form including stuffed animals and herbarium specimens.\n\n(b) ____ refers to a ____ between concerned parties based on public interest and public policy to protect and preserve the environment.\n\n(c) ____ is a writ issued by a court in an environmental case directing any agency or instrumentality of the government or officer thereof to perform an act or series of acts decreed by final judgment which shall ____.\n\n(d) ____ refers to an order issued by the court directing or enjoining any person or government agency to ____ in order to protect, preserve or rehabilitate the environment.\n\n(e) Mineral refers to all naturally occurring inorganic substance in solid, gas, liquid, or any intermediate state excluding energy materials such as coal, petroleum, natural gas, radioactive materials and geothermal energy.\n\n(f) ____ states that when human activities may lead to threats of ____ to the environment that is ____, actions shall be taken to avoid or diminish that threat.\n\n(g) Strategic lawsuit against public participation (SLAPP) refers to an action whether civil, criminal or administrative, brought against any person, institution or any government agency or local government unit or its officials and employees, with the intent to ____ that such person, institution or government agency has taken or may take in the enforcement of environmental laws, protection of the environment or assertion of environmental rights.\n\n(h) Wildlife means wild forms and varieties of flora and fauna, in all developmental stages including those which are in captivity or are being bred or propagated.",
+    "fullText": "Section 4. Definition of Terms. -\n\n(a) By-product or derivatives means any part taken or substance extracted from wildlife, in raw or in processed form including stuffed animals and herbarium specimens.\n\n(b) Consent decree refers to a judicially-approved settlement between concerned parties based on public interest and public policy to protect and preserve the environment.\n\n(c) Continuing mandamus is a writ issued by a court in an environmental case directing any agency or instrumentality of the government or officer thereof to perform an act or series of acts decreed by final judgment which shall remain effective until judgment is fully satisfied.\n\n(d) Environmental protection order (EPO) refers to an order issued by the court directing or enjoining any person or government agency to perform or desist from performing an act in order to protect, preserve or rehabilitate the environment.\n\n(e) Mineral refers to all naturally occurring inorganic substance in solid, gas, liquid, or any intermediate state excluding energy materials such as coal, petroleum, natural gas, radioactive materials and geothermal energy.\n\n(f) Precautionary principle states that when human activities may lead to threats of serious and irreversible damage to the environment that is scientifically plausible but uncertain, actions shall be taken to avoid or diminish that threat.\n\n(g) Strategic lawsuit against public participation (SLAPP) refers to an action whether civil, criminal or administrative, brought against any person, institution or any government agency or local government unit or its officials and employees, with the intent to harass, vex, exert undue pressure or stifle any legal recourse that such person, institution or government agency has taken or may take in the enforcement of environmental laws, protection of the environment or assertion of environmental rights.\n\n(h) Wildlife means wild forms and varieties of flora and fauna, in all developmental stages including those which are in captivity or are being bred or propagated.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 1, Section 4 (Definition of Terms)",
+      "excerpt": "Section 4. Definition of Terms. -\n\n(a) By-product or derivatives means any part taken or substance extracted from wildlife, in raw or in processed form including stuffed animals and herbarium specimens.\n\n(b) Consent decree refers to a judicially-approved settlement between concerned parties based on public interest and public policy to protect and preserve the environment.\n\n(c) Continuing mandamus is a writ issued by a court in an environmental case directing any agency or instrumentality of the government or officer thereof to perform an act or series of acts decreed by final judgment which shall remain effective until judgment is fully satisfied.\n\n(d) Environmental protection order (EPO) refers to an order issued by the court directing or enjoining any person or government agency to perform or desist from performing an act in order to protect, preserve or rehabilitate the environment.\n\n(e) Mineral refers to all naturally occurring inorganic substance in solid, gas, liquid, or any intermediate state excluding energy materials such as coal, petroleum, natural gas, radioactive materials and geothermal energy.\n\n(f) Precautionary principle states that when human activities may lead to threats of serious and irreversible damage to the environment that is scientifically plausible but uncertain, actions shall be taken to avoid or diminish that threat.\n\n(g) Strategic lawsuit against public participation (SLAPP) refers to an action whether civil, criminal or administrative, brought against any person, institution or any government agency or local government unit or its officials and employees, with the intent to harass, vex, exert undue pressure or stifle any legal recourse that such person, institution or government agency has taken or may take in the enforcement of environmental laws, protection of the environment or assertion of environmental rights.\n\n(h) Wildlife means wild forms and varieties of flora and fauna, in all developmental stages including those which are in captivity or are being bred or propagated."
+    }
+  },
+  {
+    "id": "q-0134",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 1. Pleadings and motions allowed. — The pleadings and motions that may be filed are complaint, answer which may include ____, ____, ____ and ____.\n\nMotion for postponement, motion for new trial and petition for relief from judgment shall be allowed in ____ or to prevent a ____.",
+    "fullText": "Section 1. Pleadings and motions allowed. — The pleadings and motions that may be filed are complaint, answer which may include compulsory counterclaim and cross-claim, motion for intervention, motion for discovery and motion for reconsideration of the judgment.\n\nMotion for postponement, motion for new trial and petition for relief from judgment shall be allowed in highly meritorious cases or to prevent a manifest miscarriage of justice.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 2, Section 1 (Pleadings and motions allowed)",
+      "excerpt": "Section 1. Pleadings and motions allowed. — The pleadings and motions that may be filed are complaint, answer which may include compulsory counterclaim and cross-claim, motion for intervention, motion for discovery and motion for reconsideration of the judgment.\n\nMotion for postponement, motion for new trial and petition for relief from judgment shall be allowed in highly meritorious cases or to prevent a manifest miscarriage of justice."
+    }
+  },
+  {
+    "id": "q-0135",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 2. Prohibited pleadings or motions. — The following pleadings or motions shall not be allowed:\n\n(a) ____;\n\n(b) Motion for a ____;\n\n(c) Motion for ____, ____, the extension not to exceed ____;\n\n(d) Motion to declare the defendant in ____;\n\n(e) ____; and\n\n(f) ____.",
+    "fullText": "Section 2. Prohibited pleadings or motions. — The following pleadings or motions shall not be allowed:\n\n(a) Motion to dismiss the complaint;\n\n(b) Motion for a bill of particulars;\n\n(c) Motion for extension of time to file pleadings, except to file answer, the extension not to exceed fifteen (15) days;\n\n(d) Motion to declare the defendant in default;\n\n(e) Reply and rejoinder; and\n\n(f) Third party complaint.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 2, Section 2 (Prohibited pleadings or motions)",
+      "excerpt": "Section 2. Prohibited pleadings or motions. — The following pleadings or motions shall not be allowed:\n\n(a) Motion to dismiss the complaint;\n\n(b) Motion for a bill of particulars;\n\n(c) Motion for extension of time to file pleadings, except to file answer, the extension not to exceed fifteen (15) days;\n\n(d) Motion to declare the defendant in default;\n\n(e) Reply and rejoinder; and\n\n(f) Third party complaint."
+    }
+  },
+  {
+    "id": "q-0136",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 3. Verified complaint. — The verified complaint shall contain the names of the parties, their addresses, the cause of action and the reliefs prayed for.\n\nThe plaintiff shall attach to the verified complaint ____ consisting of the affidavits of witnesses, documentary evidence and if possible, object evidence. The affidavits shall be in ____ and shall comply with the rules of admissibility of evidence.\n\nThe complaint shall state that it is an ____. The complaint shall also include a ____. If the complaint is not an environmental complaint, the presiding judge shall refer it to the ____.",
+    "fullText": "Section 3. Verified complaint. — The verified complaint shall contain the names of the parties, their addresses, the cause of action and the reliefs prayed for.\n\nThe plaintiff shall attach to the verified complaint all evidence proving or supporting the cause of action consisting of the affidavits of witnesses, documentary evidence and if possible, object evidence. The affidavits shall be in question and answer form and shall comply with the rules of admissibility of evidence.\n\nThe complaint shall state that it is an environmental case and the law involved. The complaint shall also include a certification against forum shopping. If the complaint is not an environmental complaint, the presiding judge shall refer it to the executive judge for re-raffle.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 2, Section 3 (Verified complaint)",
+      "excerpt": "Section 3. Verified complaint. — The verified complaint shall contain the names of the parties, their addresses, the cause of action and the reliefs prayed for.\n\nThe plaintiff shall attach to the verified complaint all evidence proving or supporting the cause of action consisting of the affidavits of witnesses, documentary evidence and if possible, object evidence. The affidavits shall be in question and answer form and shall comply with the rules of admissibility of evidence.\n\nThe complaint shall state that it is an environmental case and the law involved. The complaint shall also include a certification against forum shopping. If the complaint is not an environmental complaint, the presiding judge shall refer it to the executive judge for re-raffle."
+    }
+  },
+  {
+    "id": "q-0137",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 4. Who may file. — ____, including the ____, may file a civil action involving the enforcement or violation of any environmental law.",
+    "fullText": "Section 4. Who may file. — Any real party in interest, including the government and juridical entities authorized by law, may file a civil action involving the enforcement or violation of any environmental law.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 2, Section 4 (Who may file)",
+      "excerpt": "Section 4. Who may file. — Any real party in interest, including the government and juridical entities authorized by law, may file a civil action involving the enforcement or violation of any environmental law."
+    }
+  },
+  {
+    "id": "q-0138",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 5. Citizen suit. — ____ in representation of others, including ____, may file an action to enforce rights or obligations under environmental laws. Upon the filing of a citizen suit, the court shall issue an order which shall contain a brief description of the cause of action and the reliefs prayed for, requiring all interested parties to ____ in the case within ____ from notice thereof. The plaintiff may publish the order ____ in the Philippines or furnish all ____ copies of said order.\n\nCitizen suits filed under ____ shall be governed by their respective provisions.",
+    "fullText": "Section 5. Citizen suit. — Any Filipino citizen in representation of others, including minors or generations yet unborn, may file an action to enforce rights or obligations under environmental laws. Upon the filing of a citizen suit, the court shall issue an order which shall contain a brief description of the cause of action and the reliefs prayed for, requiring all interested parties to manifest their interest to intervene in the case within fifteen (15) days from notice thereof. The plaintiff may publish the order once in a newspaper of a general circulation in the Philippines or furnish all affected barangays copies of said order.\n\nCitizen suits filed under R.A. No. 8749 and R.A. No. 9003 shall be governed by their respective provisions.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 2, Section 5 (Citizen suit)",
+      "excerpt": "Section 5. Citizen suit. — Any Filipino citizen in representation of others, including minors or generations yet unborn, may file an action to enforce rights or obligations under environmental laws. Upon the filing of a citizen suit, the court shall issue an order which shall contain a brief description of the cause of action and the reliefs prayed for, requiring all interested parties to manifest their interest to intervene in the case within fifteen (15) days from notice thereof. The plaintiff may publish the order once in a newspaper of a general circulation in the Philippines or furnish all affected barangays copies of said order.\n\nCitizen suits filed under R.A. No. 8749 and R.A. No. 9003 shall be governed by their respective provisions."
+    }
+  },
+  {
+    "id": "q-0139",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 6. Service of the complaint on the government or its agencies. - Upon the filing of the complaint, the plaintiff is required to furnish the ____, ____, a copy of the complaint. ____ upon the government or the appropriate agency shall be attached to the complaint.",
+    "fullText": "Section 6. Service of the complaint on the government or its agencies. - Upon the filing of the complaint, the plaintiff is required to furnish the government or the appropriate agency, although not a party, a copy of the complaint. Proof of service upon the government or the appropriate agency shall be attached to the complaint.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 2, Section 6 (Service of the complaint on the government or its agencies)",
+      "excerpt": "Section 6. Service of the complaint on the government or its agencies. - Upon the filing of the complaint, the plaintiff is required to furnish the government or the appropriate agency, although not a party, a copy of the complaint. Proof of service upon the government or the appropriate agency shall be attached to the complaint."
+    }
+  },
+  {
+    "id": "q-0140",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 7. Assignment by raffle. - If there is only one (1) designated branch in a multiple-sala court, the executive judge shall ____. If there are two (2) or more designated branches, the executive judge shall conduct a ____.",
+    "fullText": "Section 7. Assignment by raffle. - If there is only one (1) designated branch in a multiple-sala court, the executive judge shall immediately refer the case to said branch. If there are two (2) or more designated branches, the executive judge shall conduct a special raffle on the day the complaint is filed.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 2, Section 7 (Assignment by raffle)",
+      "excerpt": "Section 7. Assignment by raffle. - If there is only one (1) designated branch in a multiple-sala court, the executive judge shall immediately refer the case to said branch. If there are two (2) or more designated branches, the executive judge shall conduct a special raffle on the day the complaint is filed."
+    }
+  },
+  {
+    "id": "q-0141",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "TEPO",
+    "prompt": "Section 8. Issuance of Temporary Environmental Protection Order (TEPO). - If it appears from the verified complaint with a prayer for the issuance of an Environmental Protection Order (EPO) that the matter is of ____ and the applicant will suffer ____, the ____ or the ____ as the case may be, may issue ____ a TEPO effective for only ____ from date of the receipt of the TEPO by the party or person enjoined. Within said period, the court where the case is assigned, shall conduct a ____ to determine whether the TEPO may be extended until the termination of the case.\n\nThe court where the case is assigned, shall ____ the existence of acts that are the subject matter of the TEPO even if issued by the executive judge, and may lift the same at any time as circumstances may warrant.\n\nThe applicant shall be ____ for the issuance of a TEPO.",
+    "fullText": "Section 8. Issuance of Temporary Environmental Protection Order (TEPO). - If it appears from the verified complaint with a prayer for the issuance of an Environmental Protection Order (EPO) that the matter is of extreme urgency and the applicant will suffer grave injustice and irreparable injury, the executive judge of the multiple-sala court before raffle or the presiding judge of a single-sala court as the case may be, may issue ex parte a TEPO effective for only seventy-two (72) hours from date of the receipt of the TEPO by the party or person enjoined. Within said period, the court where the case is assigned, shall conduct a summary hearing to determine whether the TEPO may be extended until the termination of the case.\n\nThe court where the case is assigned, shall periodically monitor the existence of acts that are the subject matter of the TEPO even if issued by the executive judge, and may lift the same at any time as circumstances may warrant.\n\nThe applicant shall be exempted from the posting of a bond for the issuance of a TEPO.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 2, Section 8 (Issuance of Temporary Environmental Protection Order (TEPO))",
+      "excerpt": "Section 8. Issuance of Temporary Environmental Protection Order (TEPO). - If it appears from the verified complaint with a prayer for the issuance of an Environmental Protection Order (EPO) that the matter is of extreme urgency and the applicant will suffer grave injustice and irreparable injury, the executive judge of the multiple-sala court before raffle or the presiding judge of a single-sala court as the case may be, may issue ex parte a TEPO effective for only seventy-two (72) hours from date of the receipt of the TEPO by the party or person enjoined. Within said period, the court where the case is assigned, shall conduct a summary hearing to determine whether the TEPO may be extended until the termination of the case.\n\nThe court where the case is assigned, shall periodically monitor the existence of acts that are the subject matter of the TEPO even if issued by the executive judge, and may lift the same at any time as circumstances may warrant.\n\nThe applicant shall be exempted from the posting of a bond for the issuance of a TEPO."
+    }
+  },
+  {
+    "id": "q-0142",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "TEPO",
+    "prompt": "Section 9. Action on motion for dissolution of TEPO. - The grounds for motion to dissolve a TEPO shall be supported by ____ of the party or person enjoined which the applicant may oppose, also by affidavits.\n\nThe TEPO may be dissolved if it appears after hearing that its issuance or continuance would cause ____ to the party or person enjoined while the applicant may be ____ for such damages as he may suffer and subject to the posting of a ____ by the party or person enjoined.",
+    "fullText": "Section 9. Action on motion for dissolution of TEPO. - The grounds for motion to dissolve a TEPO shall be supported by affidavits of the party or person enjoined which the applicant may oppose, also by affidavits.\n\nThe TEPO may be dissolved if it appears after hearing that its issuance or continuance would cause irreparable damage to the party or person enjoined while the applicant may be fully compensated for such damages as he may suffer and subject to the posting of a sufficient bond by the party or person enjoined.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 2, Section 9 (Action on motion for dissolution of TEPO)",
+      "excerpt": "Section 9. Action on motion for dissolution of TEPO. - The grounds for motion to dissolve a TEPO shall be supported by affidavits of the party or person enjoined which the applicant may oppose, also by affidavits.\n\nThe TEPO may be dissolved if it appears after hearing that its issuance or continuance would cause irreparable damage to the party or person enjoined while the applicant may be fully compensated for such damages as he may suffer and subject to the posting of a sufficient bond by the party or person enjoined."
+    }
+  },
+  {
+    "id": "q-0143",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "TEPO",
+    "prompt": "Section 10. Prohibition against temporary restraining order (TRO) and preliminary injunction. - ____, no court can issue a ____ against ____ that enforce environmental laws or prevent violations thereof.",
+    "fullText": "Section 10. Prohibition against temporary restraining order (TRO) and preliminary injunction. - Except the Supreme Court, no court can issue a TRO or writ of preliminary injunction against lawful actions of government agencies that enforce environmental laws or prevent violations thereof.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 2, Section 10 (Prohibition against temporary restraining order (TRO) and preliminary injunction)",
+      "excerpt": "Section 10. Prohibition against temporary restraining order (TRO) and preliminary injunction. - Except the Supreme Court, no court can issue a TRO or writ of preliminary injunction against lawful actions of government agencies that enforce environmental laws or prevent violations thereof."
+    }
+  },
+  {
+    "id": "q-0144",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "TEPO",
+    "prompt": "Section 11. Report on TEPO, EPO, TRO or preliminary injunction. - The judge shall report any action taken on a TEPO, EPO, TRO or a preliminary injunction, including its modification and dissolution, to the ____, within ____ from the action taken.",
+    "fullText": "Section 11. Report on TEPO, EPO, TRO or preliminary injunction. - The judge shall report any action taken on a TEPO, EPO, TRO or a preliminary injunction, including its modification and dissolution, to the Supreme Court, through the Office of the Court Administrator, within ten (10) days from the action taken.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 2, Section 11 (Report on TEPO, EPO, TRO or preliminary injunction)",
+      "excerpt": "Section 11. Report on TEPO, EPO, TRO or preliminary injunction. - The judge shall report any action taken on a TEPO, EPO, TRO or a preliminary injunction, including its modification and dissolution, to the Supreme Court, through the Office of the Court Administrator, within ten (10) days from the action taken."
+    }
+  },
+  {
+    "id": "q-0145",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 12. Payment of filing and other legal fees. - The payment of filing and other legal fees by the plaintiff shall be ____ unless the plaintiff is allowed to ____. It shall constitute a ____.\n\nFor a ____, the court shall ____ the payment of filing and other legal fees that shall serve as first lien on the judgment award.",
+    "fullText": "Section 12. Payment of filing and other legal fees. - The payment of filing and other legal fees by the plaintiff shall be deferred until after judgment unless the plaintiff is allowed to litigate as an indigent. It shall constitute a first lien on the judgment award.\n\nFor a citizen suit, the court shall defer the payment of filing and other legal fees that shall serve as first lien on the judgment award.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 2, Section 12 (Payment of filing and other legal fees)",
+      "excerpt": "Section 12. Payment of filing and other legal fees. - The payment of filing and other legal fees by the plaintiff shall be deferred until after judgment unless the plaintiff is allowed to litigate as an indigent. It shall constitute a first lien on the judgment award.\n\nFor a citizen suit, the court shall defer the payment of filing and other legal fees that shall serve as first lien on the judgment award."
+    }
+  },
+  {
+    "id": "q-0146",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 13. Service of summons, orders and other court processes. - The summons, orders and other court processes may be served by the ____ or for justifiable reasons, by the ____ or any suitable person authorized or deputized by the court issuing the summons.\n\nAny private person who is authorized or deputized by the court to serve summons, orders and other court processes shall for that purpose be considered an ____.\n\nThe summons shall be served on the defendant, together with a copy of an order informing all parties that they have ____ from the filing of an answer, within which to avail of interrogatories to parties under Rule 25 of the Rules of Court and request for admission by adverse party under Rule 26, or at their discretion, make use of depositions under Rule 23 or other measures under Rules 27 and 28.\n\nShould ____ fail, ____ shall be allowed. In the case of juridical entities, summons by publication shall be done by indicating the names of the officers or their duly authorized representatives.",
+    "fullText": "Section 13. Service of summons, orders and other court processes. - The summons, orders and other court processes may be served by the sheriff, his deputy or other proper court officer or for justifiable reasons, by the counsel or representative of the plaintiff or any suitable person authorized or deputized by the court issuing the summons.\n\nAny private person who is authorized or deputized by the court to serve summons, orders and other court processes shall for that purpose be considered an officer of the court.\n\nThe summons shall be served on the defendant, together with a copy of an order informing all parties that they have fifteen (15) days from the filing of an answer, within which to avail of interrogatories to parties under Rule 25 of the Rules of Court and request for admission by adverse party under Rule 26, or at their discretion, make use of depositions under Rule 23 or other measures under Rules 27 and 28.\n\nShould personal and substituted service fail, summons by publication shall be allowed. In the case of juridical entities, summons by publication shall be done by indicating the names of the officers or their duly authorized representatives.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 2, Section 13 (Service of summons, orders and other court processes)",
+      "excerpt": "Section 13. Service of summons, orders and other court processes. - The summons, orders and other court processes may be served by the sheriff, his deputy or other proper court officer or for justifiable reasons, by the counsel or representative of the plaintiff or any suitable person authorized or deputized by the court issuing the summons.\n\nAny private person who is authorized or deputized by the court to serve summons, orders and other court processes shall for that purpose be considered an officer of the court.\n\nThe summons shall be served on the defendant, together with a copy of an order informing all parties that they have fifteen (15) days from the filing of an answer, within which to avail of interrogatories to parties under Rule 25 of the Rules of Court and request for admission by adverse party under Rule 26, or at their discretion, make use of depositions under Rule 23 or other measures under Rules 27 and 28.\n\nShould personal and substituted service fail, summons by publication shall be allowed. In the case of juridical entities, summons by publication shall be done by indicating the names of the officers or their duly authorized representatives."
+    }
+  },
+  {
+    "id": "q-0147",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 14. Verified answer. - Within ____ from receipt of summons, the defendant shall file a ____ to the complaint and serve a copy thereof on the plaintiff. The defendant shall attach affidavits of witnesses, reports, studies of experts and all evidence in support of the defense.\n\nAffirmative and special defenses not pleaded shall be ____, except ____.\n\nCross-claims and compulsory counterclaims not asserted shall be considered ____. The answer to counterclaims or cross-claims shall be filed and served within ____ from service of the answer in which they are pleaded.",
+    "fullText": "Section 14. Verified answer. - Within fifteen (15) days from receipt of summons, the defendant shall file a verified answer to the complaint and serve a copy thereof on the plaintiff. The defendant shall attach affidavits of witnesses, reports, studies of experts and all evidence in support of the defense.\n\nAffirmative and special defenses not pleaded shall be deemed waived, except lack of jurisdiction.\n\nCross-claims and compulsory counterclaims not asserted shall be considered barred. The answer to counterclaims or cross-claims shall be filed and served within ten (10) days from service of the answer in which they are pleaded.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 2, Section 14 (Verified answer)",
+      "excerpt": "Section 14. Verified answer. - Within fifteen (15) days from receipt of summons, the defendant shall file a verified answer to the complaint and serve a copy thereof on the plaintiff. The defendant shall attach affidavits of witnesses, reports, studies of experts and all evidence in support of the defense.\n\nAffirmative and special defenses not pleaded shall be deemed waived, except lack of jurisdiction.\n\nCross-claims and compulsory counterclaims not asserted shall be considered barred. The answer to counterclaims or cross-claims shall be filed and served within ten (10) days from service of the answer in which they are pleaded."
+    }
+  },
+  {
+    "id": "q-0148",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 15. Effect of failure to answer. - Should the defendant fail to answer the complaint within the period provided, the court shall ____ and ____, shall receive evidence ____ and render judgment based thereon and the reliefs prayed for.",
+    "fullText": "Section 15. Effect of failure to answer. - Should the defendant fail to answer the complaint within the period provided, the court shall declare defendant in default and upon motion of the plaintiff, shall receive evidence ex parte and render judgment based thereon and the reliefs prayed for.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 2, Section 15 (Effect of failure to answer)",
+      "excerpt": "Section 15. Effect of failure to answer. - Should the defendant fail to answer the complaint within the period provided, the court shall declare defendant in default and upon motion of the plaintiff, shall receive evidence ex parte and render judgment based thereon and the reliefs prayed for."
+    }
+  },
+  {
+    "id": "q-0149",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 1. Notice of pre-trial. - Within ____ from the filing of the answer to the counterclaim or cross-claim, if any, the ____ shall issue a notice of the pre-trial to be held not later than ____ from the filing of the last pleading.\n\nThe court shall schedule the pre-trial and set as many pre-trial conferences as may be necessary within a period of ____ counted from the date of the first pre-trial conference.",
+    "fullText": "Section 1. Notice of pre-trial. - Within two (2) days from the filing of the answer to the counterclaim or cross-claim, if any, the branch clerk of court shall issue a notice of the pre-trial to be held not later than one (1) month from the filing of the last pleading.\n\nThe court shall schedule the pre-trial and set as many pre-trial conferences as may be necessary within a period of two (2) months counted from the date of the first pre-trial conference.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 3, Section 1 (Notice of pre-trial)",
+      "excerpt": "Section 1. Notice of pre-trial. - Within two (2) days from the filing of the answer to the counterclaim or cross-claim, if any, the branch clerk of court shall issue a notice of the pre-trial to be held not later than one (1) month from the filing of the last pleading.\n\nThe court shall schedule the pre-trial and set as many pre-trial conferences as may be necessary within a period of two (2) months counted from the date of the first pre-trial conference."
+    }
+  },
+  {
+    "id": "q-0150",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 2. Pre-trial brief. - At least ____ before the pretrial, the parties shall submit pre-trial briefs containing the following:\n\n(a) A statement of their willingness to enter into an ____ indicating the desired terms thereof or to submit the case to any of the ____;\n\n(b) A summary of admitted facts and proposed stipulation of facts;\n\n(c) The legal and factual issues to be tried or resolved. For each factual issue, the parties shall state all evidence to support their positions thereon. For each legal issue, parties shall state the applicable law and jurisprudence supporting their respective positions thereon;\n\n(d) The documents or exhibits to be presented, including depositions, answers to interrogatories and answers to written request for admission by adverse party, stating the purpose thereof;\n\n(e) A manifestation of their having availed of discovery procedures or their intention to avail themselves of referral to a ____;\n\n(f) The number and names of the witnesses and the substance of their affidavits;\n\n(g) Clarificatory questions from the parties; and\n\n(h) List of cases arising out of the same facts pending before other courts or administrative agencies. Failure to comply with the required contents of a pre-trial brief may be a ground for ____.\n\nFailure to file the pre-trial brief shall have the ____.",
+    "fullText": "Section 2. Pre-trial brief. - At least three (3) days before the pretrial, the parties shall submit pre-trial briefs containing the following:\n\n(a) A statement of their willingness to enter into an amicable settlement indicating the desired terms thereof or to submit the case to any of the alternative modes of dispute resolution;\n\n(b) A summary of admitted facts and proposed stipulation of facts;\n\n(c) The legal and factual issues to be tried or resolved. For each factual issue, the parties shall state all evidence to support their positions thereon. For each legal issue, parties shall state the applicable law and jurisprudence supporting their respective positions thereon;\n\n(d) The documents or exhibits to be presented, including depositions, answers to interrogatories and answers to written request for admission by adverse party, stating the purpose thereof;\n\n(e) A manifestation of their having availed of discovery procedures or their intention to avail themselves of referral to a commissioner or panel of experts;\n\n(f) The number and names of the witnesses and the substance of their affidavits;\n\n(g) Clarificatory questions from the parties; and\n\n(h) List of cases arising out of the same facts pending before other courts or administrative agencies. Failure to comply with the required contents of a pre-trial brief may be a ground for contempt.\n\nFailure to file the pre-trial brief shall have the same effect as failure to appear at the pre-trial.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 3, Section 2 (Pre-trial brief)",
+      "excerpt": "Section 2. Pre-trial brief. - At least three (3) days before the pretrial, the parties shall submit pre-trial briefs containing the following:\n\n(a) A statement of their willingness to enter into an amicable settlement indicating the desired terms thereof or to submit the case to any of the alternative modes of dispute resolution;\n\n(b) A summary of admitted facts and proposed stipulation of facts;\n\n(c) The legal and factual issues to be tried or resolved. For each factual issue, the parties shall state all evidence to support their positions thereon. For each legal issue, parties shall state the applicable law and jurisprudence supporting their respective positions thereon;\n\n(d) The documents or exhibits to be presented, including depositions, answers to interrogatories and answers to written request for admission by adverse party, stating the purpose thereof;\n\n(e) A manifestation of their having availed of discovery procedures or their intention to avail themselves of referral to a commissioner or panel of experts;\n\n(f) The number and names of the witnesses and the substance of their affidavits;\n\n(g) Clarificatory questions from the parties; and\n\n(h) List of cases arising out of the same facts pending before other courts or administrative agencies. Failure to comply with the required contents of a pre-trial brief may be a ground for contempt.\n\nFailure to file the pre-trial brief shall have the same effect as failure to appear at the pre-trial."
+    }
+  },
+  {
+    "id": "q-0151",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 3. Referral to mediation. - At the start of the pre-trial conference, the court shall inquire from the parties if they have settled the dispute; otherwise, the court shall immediately refer the parties or their counsel, if authorized by their clients, to the ____ unit for purposes of mediation. If not available, the court shall refer the case to the ____ for mediation.\n\nMediation must be conducted within a ____ period of ____ from receipt of notice of referral to mediation.\n\nThe mediation report must be submitted within ____ from the expiration of the 30-day period.",
+    "fullText": "Section 3. Referral to mediation. - At the start of the pre-trial conference, the court shall inquire from the parties if they have settled the dispute; otherwise, the court shall immediately refer the parties or their counsel, if authorized by their clients, to the Philippine Mediation Center (PMC) unit for purposes of mediation. If not available, the court shall refer the case to the clerk of court or legal researcher for mediation.\n\nMediation must be conducted within a non-extendible period of thirty (30) days from receipt of notice of referral to mediation.\n\nThe mediation report must be submitted within ten (10) days from the expiration of the 30-day period.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 3, Section 3 (Referral to mediation)",
+      "excerpt": "Section 3. Referral to mediation. - At the start of the pre-trial conference, the court shall inquire from the parties if they have settled the dispute; otherwise, the court shall immediately refer the parties or their counsel, if authorized by their clients, to the Philippine Mediation Center (PMC) unit for purposes of mediation. If not available, the court shall refer the case to the clerk of court or legal researcher for mediation.\n\nMediation must be conducted within a non-extendible period of thirty (30) days from receipt of notice of referral to mediation.\n\nThe mediation report must be submitted within ten (10) days from the expiration of the 30-day period."
+    }
+  },
+  {
+    "id": "q-0152",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 4. Preliminary conference. - If mediation fails, the court will schedule the continuance of the pre-trial. Before the scheduled date of continuance, the court may refer the case to the ____ for a preliminary conference for the following purposes:\n\n(a) To ____;\n\n(b) To mark the documents or exhibits to be presented by the parties and copies thereof to be attached to the records after comparison with the originals;\n\n(c) To ascertain from the parties the undisputed facts and admissions on the genuineness and due execution of the documents marked as exhibits;\n\n(d) To require the parties to submit the depositions taken under Rule 23 of the Rules of Court, the answers to written interrogatories under Rule 25, and the answers to request for admissions by the adverse party under Rule 26;\n\n(e) To require the production of documents or things requested by a party under Rule 27 and the results of the physical and mental examination of persons under Rule 28;\n\n(f) To consider such other matters as may aid in its prompt disposition;\n\n(g) To record the proceedings in the \"____\" to be signed by both parties or their counsels;\n\n(h) To mark the affidavits of witnesses which shall be in ____ and shall constitute the ____ of the witnesses; and\n\n(i) To attach the minutes together with the marked exhibits before the pre-trial proper.\n\nThe parties or their counsel must submit to the branch clerk of court the names, addresses and contact numbers of the affiants.\n\nDuring the preliminary conference, the branch clerk of court shall also require the parties to submit the depositions taken under Rule 23 of the Rules of Court, the answers to written interrogatories under Rule 25 and the answers to request for admissions by the adverse party under Rule 26. The branch clerk of court may also require the production of documents or things requested by a party under Rule 27 and the results of the physical and mental examination of persons under Rule 28.",
+    "fullText": "Section 4. Preliminary conference. - If mediation fails, the court will schedule the continuance of the pre-trial. Before the scheduled date of continuance, the court may refer the case to the branch clerk of court for a preliminary conference for the following purposes:\n\n(a) To assist the parties in reaching a settlement;\n\n(b) To mark the documents or exhibits to be presented by the parties and copies thereof to be attached to the records after comparison with the originals;\n\n(c) To ascertain from the parties the undisputed facts and admissions on the genuineness and due execution of the documents marked as exhibits;\n\n(d) To require the parties to submit the depositions taken under Rule 23 of the Rules of Court, the answers to written interrogatories under Rule 25, and the answers to request for admissions by the adverse party under Rule 26;\n\n(e) To require the production of documents or things requested by a party under Rule 27 and the results of the physical and mental examination of persons under Rule 28;\n\n(f) To consider such other matters as may aid in its prompt disposition;\n\n(g) To record the proceedings in the \"Minutes of Preliminary Conference\" to be signed by both parties or their counsels;\n\n(h) To mark the affidavits of witnesses which shall be in question and answer form and shall constitute the direct examination of the witnesses; and\n\n(i) To attach the minutes together with the marked exhibits before the pre-trial proper.\n\nThe parties or their counsel must submit to the branch clerk of court the names, addresses and contact numbers of the affiants.\n\nDuring the preliminary conference, the branch clerk of court shall also require the parties to submit the depositions taken under Rule 23 of the Rules of Court, the answers to written interrogatories under Rule 25 and the answers to request for admissions by the adverse party under Rule 26. The branch clerk of court may also require the production of documents or things requested by a party under Rule 27 and the results of the physical and mental examination of persons under Rule 28.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 3, Section 4 (Preliminary conference)",
+      "excerpt": "Section 4. Preliminary conference. - If mediation fails, the court will schedule the continuance of the pre-trial. Before the scheduled date of continuance, the court may refer the case to the branch clerk of court for a preliminary conference for the following purposes:\n\n(a) To assist the parties in reaching a settlement;\n\n(b) To mark the documents or exhibits to be presented by the parties and copies thereof to be attached to the records after comparison with the originals;\n\n(c) To ascertain from the parties the undisputed facts and admissions on the genuineness and due execution of the documents marked as exhibits;\n\n(d) To require the parties to submit the depositions taken under Rule 23 of the Rules of Court, the answers to written interrogatories under Rule 25, and the answers to request for admissions by the adverse party under Rule 26;\n\n(e) To require the production of documents or things requested by a party under Rule 27 and the results of the physical and mental examination of persons under Rule 28;\n\n(f) To consider such other matters as may aid in its prompt disposition;\n\n(g) To record the proceedings in the \"Minutes of Preliminary Conference\" to be signed by both parties or their counsels;\n\n(h) To mark the affidavits of witnesses which shall be in question and answer form and shall constitute the direct examination of the witnesses; and\n\n(i) To attach the minutes together with the marked exhibits before the pre-trial proper.\n\nThe parties or their counsel must submit to the branch clerk of court the names, addresses and contact numbers of the affiants.\n\nDuring the preliminary conference, the branch clerk of court shall also require the parties to submit the depositions taken under Rule 23 of the Rules of Court, the answers to written interrogatories under Rule 25 and the answers to request for admissions by the adverse party under Rule 26. The branch clerk of court may also require the production of documents or things requested by a party under Rule 27 and the results of the physical and mental examination of persons under Rule 28."
+    }
+  },
+  {
+    "id": "q-0153",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 5. Pre-trial conference; consent decree. - The judge shall put the parties and their counsels ____, and they shall remain under oath in all pre-trial conferences.\n\nThe judge shall exert best efforts to persuade the parties to arrive at a settlement of the dispute. The judge may issue a ____ approving the agreement between the parties in accordance with ____ to protect the right of the people to a balanced and healthful ecology.\n\nEvidence not presented during the pre-trial, except ____, shall be ____.",
+    "fullText": "Section 5. Pre-trial conference; consent decree. - The judge shall put the parties and their counsels under oath, and they shall remain under oath in all pre-trial conferences.\n\nThe judge shall exert best efforts to persuade the parties to arrive at a settlement of the dispute. The judge may issue a consent decree approving the agreement between the parties in accordance with law, morals, public order and public policy to protect the right of the people to a balanced and healthful ecology.\n\nEvidence not presented during the pre-trial, except newly-discovered evidence, shall be deemed waived.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 3, Section 5 (Pre-trial conference; consent decree)",
+      "excerpt": "Section 5. Pre-trial conference; consent decree. - The judge shall put the parties and their counsels under oath, and they shall remain under oath in all pre-trial conferences.\n\nThe judge shall exert best efforts to persuade the parties to arrive at a settlement of the dispute. The judge may issue a consent decree approving the agreement between the parties in accordance with law, morals, public order and public policy to protect the right of the people to a balanced and healthful ecology.\n\nEvidence not presented during the pre-trial, except newly-discovered evidence, shall be deemed waived."
+    }
+  },
+  {
+    "id": "q-0154",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 6. Failure to settle. - If there is no full settlement, the judge shall:\n\n(a) Adopt the minutes of the preliminary conference as part of the pre-trial proceedings and confirm the markings of exhibits or substituted photocopies and admissions on the genuineness and due execution of documents;\n\n(b) Determine if there are cases arising out of the same facts pending before other courts and order its ____ if warranted;\n\n(c) Determine if the pleadings are in order and if not, order the amendments if necessary;\n\n(d) Determine if ____ are involved and resolve the same;\n\n(e) Consider the ____;\n\n(f) Scrutinize every single allegation of the complaint, answer and other pleadings and attachments thereto, and the contents of documents and all other evidence identified and pre-marked during pre-trial in determining further admissions;\n\n(g) Obtain admissions based on the affidavits of witnesses and evidence attached to the pleadings or submitted during pre-trial;\n\n(h) Define and simplify the factual and legal issues arising from the pleadings and evidence. Uncontroverted issues and frivolous claims or defenses should be eliminated;\n\n(i) Discuss the propriety of rendering a ____ or a judgment based on the pleadings, evidence and admissions made during pre-trial;\n\n(j) Observe the ____ in limiting the number of witnesses, determining the facts to be proved by each witness and fixing the approximate number of hours per witness;\n\n(k) Encourage referral of the case to a ____ under Rule 32 of the Rules of Court or to a mediator or arbitrator under any of the alternative modes of dispute resolution governed by the Special Rules of Court on Alternative Dispute Resolution;\n\n(l) Determine the necessity of engaging the services of a qualified expert as a friend of the court (____); and\n\n(m) Ask parties to agree on the specific trial dates for continuous trial, comply with the ____, adhere to the case flow chart determined by the court which shall contain the different stages of the proceedings up to the promulgation of the decision and use the time frame for each stage in setting the trial dates.",
+    "fullText": "Section 6. Failure to settle. - If there is no full settlement, the judge shall:\n\n(a) Adopt the minutes of the preliminary conference as part of the pre-trial proceedings and confirm the markings of exhibits or substituted photocopies and admissions on the genuineness and due execution of documents;\n\n(b) Determine if there are cases arising out of the same facts pending before other courts and order its consolidation if warranted;\n\n(c) Determine if the pleadings are in order and if not, order the amendments if necessary;\n\n(d) Determine if interlocutory issues are involved and resolve the same;\n\n(e) Consider the adding or dropping of parties;\n\n(f) Scrutinize every single allegation of the complaint, answer and other pleadings and attachments thereto, and the contents of documents and all other evidence identified and pre-marked during pre-trial in determining further admissions;\n\n(g) Obtain admissions based on the affidavits of witnesses and evidence attached to the pleadings or submitted during pre-trial;\n\n(h) Define and simplify the factual and legal issues arising from the pleadings and evidence. Uncontroverted issues and frivolous claims or defenses should be eliminated;\n\n(i) Discuss the propriety of rendering a summary judgment or a judgment based on the pleadings, evidence and admissions made during pre-trial;\n\n(j) Observe the Most Important Witness Rule in limiting the number of witnesses, determining the facts to be proved by each witness and fixing the approximate number of hours per witness;\n\n(k) Encourage referral of the case to a trial by commissioner under Rule 32 of the Rules of Court or to a mediator or arbitrator under any of the alternative modes of dispute resolution governed by the Special Rules of Court on Alternative Dispute Resolution;\n\n(l) Determine the necessity of engaging the services of a qualified expert as a friend of the court (amicus curiae); and\n\n(m) Ask parties to agree on the specific trial dates for continuous trial, comply with the one-day examination of witness rule, adhere to the case flow chart determined by the court which shall contain the different stages of the proceedings up to the promulgation of the decision and use the time frame for each stage in setting the trial dates.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 3, Section 6 (Failure to settle)",
+      "excerpt": "Section 6. Failure to settle. - If there is no full settlement, the judge shall:\n\n(a) Adopt the minutes of the preliminary conference as part of the pre-trial proceedings and confirm the markings of exhibits or substituted photocopies and admissions on the genuineness and due execution of documents;\n\n(b) Determine if there are cases arising out of the same facts pending before other courts and order its consolidation if warranted;\n\n(c) Determine if the pleadings are in order and if not, order the amendments if necessary;\n\n(d) Determine if interlocutory issues are involved and resolve the same;\n\n(e) Consider the adding or dropping of parties;\n\n(f) Scrutinize every single allegation of the complaint, answer and other pleadings and attachments thereto, and the contents of documents and all other evidence identified and pre-marked during pre-trial in determining further admissions;\n\n(g) Obtain admissions based on the affidavits of witnesses and evidence attached to the pleadings or submitted during pre-trial;\n\n(h) Define and simplify the factual and legal issues arising from the pleadings and evidence. Uncontroverted issues and frivolous claims or defenses should be eliminated;\n\n(i) Discuss the propriety of rendering a summary judgment or a judgment based on the pleadings, evidence and admissions made during pre-trial;\n\n(j) Observe the Most Important Witness Rule in limiting the number of witnesses, determining the facts to be proved by each witness and fixing the approximate number of hours per witness;\n\n(k) Encourage referral of the case to a trial by commissioner under Rule 32 of the Rules of Court or to a mediator or arbitrator under any of the alternative modes of dispute resolution governed by the Special Rules of Court on Alternative Dispute Resolution;\n\n(l) Determine the necessity of engaging the services of a qualified expert as a friend of the court (amicus curiae); and\n\n(m) Ask parties to agree on the specific trial dates for continuous trial, comply with the one-day examination of witness rule, adhere to the case flow chart determined by the court which shall contain the different stages of the proceedings up to the promulgation of the decision and use the time frame for each stage in setting the trial dates."
+    }
+  },
+  {
+    "id": "q-0155",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 7. Effect of failure to appear at pre-trial. - The court ____, except upon ____. The dismissal shall be ____, and the court may proceed with the ____.\n\nIf the defendant fails to appear at the pre-trial, the court shall receive evidence ____.",
+    "fullText": "Section 7. Effect of failure to appear at pre-trial. - The court shall not dismiss the complaint, except upon repeated and unjustified failure of the plaintiff to appear. The dismissal shall be without prejudice, and the court may proceed with the counterclaim.\n\nIf the defendant fails to appear at the pre-trial, the court shall receive evidence ex parte.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 3, Section 7 (Effect of failure to appear at pre-trial)",
+      "excerpt": "Section 7. Effect of failure to appear at pre-trial. - The court shall not dismiss the complaint, except upon repeated and unjustified failure of the plaintiff to appear. The dismissal shall be without prejudice, and the court may proceed with the counterclaim.\n\nIf the defendant fails to appear at the pre-trial, the court shall receive evidence ex parte."
+    }
+  },
+  {
+    "id": "q-0156",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 8. Minutes of pre-trial. - The minutes of each pre-trial conference shall contain matters taken up therein, more particularly ____, and shall be ____.",
+    "fullText": "Section 8. Minutes of pre-trial. - The minutes of each pre-trial conference shall contain matters taken up therein, more particularly admissions of facts and exhibits, and shall be signed by the parties and their counsel.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 3, Section 8 (Minutes of pre-trial)",
+      "excerpt": "Section 8. Minutes of pre-trial. - The minutes of each pre-trial conference shall contain matters taken up therein, more particularly admissions of facts and exhibits, and shall be signed by the parties and their counsel."
+    }
+  },
+  {
+    "id": "q-0157",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 9. Pre-trial order. - Within ____ after the termination of the pre-trial, the court shall issue a ____ setting forth the actions taken during the pre-trial conference, the facts stipulated, the admissions made, the evidence marked, the number of witnesses to be presented and the schedule of trial. Said order shall ____, limit the trial to matters not disposed of and control the course of action during the trial.",
+    "fullText": "Section 9. Pre-trial order. - Within ten (10) days after the termination of the pre-trial, the court shall issue a pre-trial order setting forth the actions taken during the pre-trial conference, the facts stipulated, the admissions made, the evidence marked, the number of witnesses to be presented and the schedule of trial. Said order shall bind the parties, limit the trial to matters not disposed of and control the course of action during the trial.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 3, Section 9 (Pre-trial order)",
+      "excerpt": "Section 9. Pre-trial order. - Within ten (10) days after the termination of the pre-trial, the court shall issue a pre-trial order setting forth the actions taken during the pre-trial conference, the facts stipulated, the admissions made, the evidence marked, the number of witnesses to be presented and the schedule of trial. Said order shall bind the parties, limit the trial to matters not disposed of and control the course of action during the trial."
+    }
+  },
+  {
+    "id": "q-0158",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 10. Efforts to settle. - The court shall endeavor to make the parties agree to ____ in accordance with law at ____.",
+    "fullText": "Section 10. Efforts to settle. - The court shall endeavor to make the parties agree to compromise or settle in accordance with law at any stage of the proceedings before rendition of judgment.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 3, Section 10 (Efforts to settle)",
+      "excerpt": "Section 10. Efforts to settle. - The court shall endeavor to make the parties agree to compromise or settle in accordance with law at any stage of the proceedings before rendition of judgment."
+    }
+  },
+  {
+    "id": "q-0159",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 1. Continuous trial. - The judge shall conduct ____ which shall not exceed ____ from the date of the issuance of the pre-trial order.\n\nBefore the expiration of the two-month period, the judge may ask the ____ for the extension of the trial period for justifiable cause.",
+    "fullText": "Section 1. Continuous trial. - The judge shall conduct continuous trial which shall not exceed two (2) months from the date of the issuance of the pre-trial order.\n\nBefore the expiration of the two-month period, the judge may ask the Supreme Court for the extension of the trial period for justifiable cause.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 4, Section 1 (Continuous trial)",
+      "excerpt": "Section 1. Continuous trial. - The judge shall conduct continuous trial which shall not exceed two (2) months from the date of the issuance of the pre-trial order.\n\nBefore the expiration of the two-month period, the judge may ask the Supreme Court for the extension of the trial period for justifiable cause."
+    }
+  },
+  {
+    "id": "q-0160",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 2. Affidavits in lieu of direct examination. - In lieu of direct examination, ____ shall be presented as direct examination of affiants subject to ____ by the adverse party.",
+    "fullText": "Section 2. Affidavits in lieu of direct examination. - In lieu of direct examination, affidavits marked during the pre-trial shall be presented as direct examination of affiants subject to cross-examination by the adverse party.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 4, Section 2 (Affidavits in lieu of direct examination)",
+      "excerpt": "Section 2. Affidavits in lieu of direct examination. - In lieu of direct examination, affidavits marked during the pre-trial shall be presented as direct examination of affiants subject to cross-examination by the adverse party."
+    }
+  },
+  {
+    "id": "q-0161",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 3. One-day examination of witness rule. - The court shall strictly adhere to the rule that a witness has to be fully examined in ____, subject to the court’s discretion of extending the examination for justifiable reason. After the presentation of the last witness, only ____ shall be allowed, and the opposing party shall ____. The judge shall forthwith rule on the offer of evidence ____.",
+    "fullText": "Section 3. One-day examination of witness rule. - The court shall strictly adhere to the rule that a witness has to be fully examined in one (1) day, subject to the court’s discretion of extending the examination for justifiable reason. After the presentation of the last witness, only oral offer of evidence shall be allowed, and the opposing party shall immediately interpose his objections. The judge shall forthwith rule on the offer of evidence in open court.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 4, Section 3 (One-day examination of witness rule)",
+      "excerpt": "Section 3. One-day examination of witness rule. - The court shall strictly adhere to the rule that a witness has to be fully examined in one (1) day, subject to the court’s discretion of extending the examination for justifiable reason. After the presentation of the last witness, only oral offer of evidence shall be allowed, and the opposing party shall immediately interpose his objections. The judge shall forthwith rule on the offer of evidence in open court."
+    }
+  },
+  {
+    "id": "q-0162",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 4. Submission of case for decision; filing of memoranda. - After the last party has rested its case, the court shall issue an order ____.\n\nThe court may require the parties to submit their respective memoranda, if possible in electronic form, within a non-extendible period of ____ from the date the case is submitted for decision.\n\nThe court shall have a period of ____ to decide the case from the date the case is submitted for decision.",
+    "fullText": "Section 4. Submission of case for decision; filing of memoranda. - After the last party has rested its case, the court shall issue an order submitting the case for decision.\n\nThe court may require the parties to submit their respective memoranda, if possible in electronic form, within a non-extendible period of thirty (30) days from the date the case is submitted for decision.\n\nThe court shall have a period of sixty (60) days to decide the case from the date the case is submitted for decision.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 4, Section 4 (Submission of case for decision; filing of memoranda)",
+      "excerpt": "Section 4. Submission of case for decision; filing of memoranda. - After the last party has rested its case, the court shall issue an order submitting the case for decision.\n\nThe court may require the parties to submit their respective memoranda, if possible in electronic form, within a non-extendible period of thirty (30) days from the date the case is submitted for decision.\n\nThe court shall have a period of sixty (60) days to decide the case from the date the case is submitted for decision."
+    }
+  },
+  {
+    "id": "q-0163",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 5. Period to try and decide. - The court shall have a period of ____ from the filing of the complaint to try and decide the case. Before the expiration of the one-year period, the court may petition the ____ for the extension of the period for justifiable cause.\n\nThe court shall ____ the adjudication of environmental cases.",
+    "fullText": "Section 5. Period to try and decide. - The court shall have a period of one (1) year from the filing of the complaint to try and decide the case. Before the expiration of the one-year period, the court may petition the Supreme Court for the extension of the period for justifiable cause.\n\nThe court shall prioritize the adjudication of environmental cases.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 4, Section 5 (Period to try and decide)",
+      "excerpt": "Section 5. Period to try and decide. - The court shall have a period of one (1) year from the filing of the complaint to try and decide the case. Before the expiration of the one-year period, the court may petition the Supreme Court for the extension of the period for justifiable cause.\n\nThe court shall prioritize the adjudication of environmental cases."
+    }
+  },
+  {
+    "id": "q-0164",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 1. Reliefs in a citizen suit. - If warranted, the court may grant to the plaintiff proper reliefs which shall include the ____ and the payment of ____. It may also require the violator to submit a ____ of the environment, the costs of which shall be ____, or to contribute to a ____ for that purpose subject to the control of the court.",
+    "fullText": "Section 1. Reliefs in a citizen suit. - If warranted, the court may grant to the plaintiff proper reliefs which shall include the protection, preservation or rehabilitation of the environment and the payment of attorney’s fees, costs of suit and other litigation expenses. It may also require the violator to submit a program of rehabilitation or restoration of the environment, the costs of which shall be borne by the violator, or to contribute to a special trust fund for that purpose subject to the control of the court.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 5, Section 1 (Reliefs in a citizen suit)",
+      "excerpt": "Section 1. Reliefs in a citizen suit. - If warranted, the court may grant to the plaintiff proper reliefs which shall include the protection, preservation or rehabilitation of the environment and the payment of attorney’s fees, costs of suit and other litigation expenses. It may also require the violator to submit a program of rehabilitation or restoration of the environment, the costs of which shall be borne by the violator, or to contribute to a special trust fund for that purpose subject to the control of the court."
+    }
+  },
+  {
+    "id": "q-0165",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 2. Judgment not stayed by appeal. - Any judgment directing the performance of acts for the protection, preservation or rehabilitation of the environment shall be ____ unless ____.",
+    "fullText": "Section 2. Judgment not stayed by appeal. - Any judgment directing the performance of acts for the protection, preservation or rehabilitation of the environment shall be executory pending appeal unless restrained by the appellate court.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 5, Section 2 (Judgment not stayed by appeal)",
+      "excerpt": "Section 2. Judgment not stayed by appeal. - Any judgment directing the performance of acts for the protection, preservation or rehabilitation of the environment shall be executory pending appeal unless restrained by the appellate court."
+    }
+  },
+  {
+    "id": "q-0166",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 3. Permanent EPO; writ of continuing mandamus. - In the judgment, the court may convert the TEPO to a ____ or issue a ____ directing the performance of acts which shall be effective until the judgment is ____.\n\nThe court may, by itself or through the appropriate government agency, monitor the execution of the judgment and require the party concerned to submit written reports on a ____ or sooner as may be necessary, detailing the progress of the execution and satisfaction of the judgment. The other party may, at its option, submit its comments or observations on the execution of the judgment.",
+    "fullText": "Section 3. Permanent EPO; writ of continuing mandamus. - In the judgment, the court may convert the TEPO to a permanent EPO or issue a writ of continuing mandamus directing the performance of acts which shall be effective until the judgment is fully satisfied.\n\nThe court may, by itself or through the appropriate government agency, monitor the execution of the judgment and require the party concerned to submit written reports on a quarterly basis or sooner as may be necessary, detailing the progress of the execution and satisfaction of the judgment. The other party may, at its option, submit its comments or observations on the execution of the judgment.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 5, Section 3 (Permanent EPO; writ of continuing mandamus)",
+      "excerpt": "Section 3. Permanent EPO; writ of continuing mandamus. - In the judgment, the court may convert the TEPO to a permanent EPO or issue a writ of continuing mandamus directing the performance of acts which shall be effective until the judgment is fully satisfied.\n\nThe court may, by itself or through the appropriate government agency, monitor the execution of the judgment and require the party concerned to submit written reports on a quarterly basis or sooner as may be necessary, detailing the progress of the execution and satisfaction of the judgment. The other party may, at its option, submit its comments or observations on the execution of the judgment."
+    }
+  },
+  {
+    "id": "q-0167",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 4. Monitoring of compliance with judgment and orders of the court by a commissioner. - The court may ____, or upon motion of the ____, order that the enforcement of the judgment or order be referred to a ____ to be appointed by the court. The commissioner shall file with the court written progress reports on a ____ or more frequently when necessary.",
+    "fullText": "Section 4. Monitoring of compliance with judgment and orders of the court by a commissioner. - The court may motu proprio, or upon motion of the prevailing party, order that the enforcement of the judgment or order be referred to a commissioner to be appointed by the court. The commissioner shall file with the court written progress reports on a quarterly basis or more frequently when necessary.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 5, Section 4 (Monitoring of compliance with judgment and orders of the court by a commissioner)",
+      "excerpt": "Section 4. Monitoring of compliance with judgment and orders of the court by a commissioner. - The court may motu proprio, or upon motion of the prevailing party, order that the enforcement of the judgment or order be referred to a commissioner to be appointed by the court. The commissioner shall file with the court written progress reports on a quarterly basis or more frequently when necessary."
+    }
+  },
+  {
+    "id": "q-0168",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 5. Return of writ of execution. - The process of execution shall terminate upon a sufficient showing that the decision or order has been implemented to the ____ in accordance with ____ of the Rules of Court.",
+    "fullText": "Section 5. Return of writ of execution. - The process of execution shall terminate upon a sufficient showing that the decision or order has been implemented to the satisfaction of the court in accordance with Section 14, Rule 39 of the Rules of Court.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 5, Section 5 (Return of writ of execution)",
+      "excerpt": "Section 5. Return of writ of execution. - The process of execution shall terminate upon a sufficient showing that the decision or order has been implemented to the satisfaction of the court in accordance with Section 14, Rule 39 of the Rules of Court."
+    }
+  },
+  {
+    "id": "q-0169",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 1. Strategic lawsuit against public participation (SLAPP). - A legal action filed to ____ that any person, institution or the government has taken or may take in the enforcement of environmental laws, protection of the environment or assertion of environmental rights shall be treated as a ____ and shall be governed by these Rules.",
+    "fullText": "Section 1. Strategic lawsuit against public participation (SLAPP). - A legal action filed to harass, vex, exert undue pressure or stifle any legal recourse that any person, institution or the government has taken or may take in the enforcement of environmental laws, protection of the environment or assertion of environmental rights shall be treated as a SLAPP and shall be governed by these Rules.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 6, Section 1 (Strategic lawsuit against public participation (SLAPP))",
+      "excerpt": "Section 1. Strategic lawsuit against public participation (SLAPP). - A legal action filed to harass, vex, exert undue pressure or stifle any legal recourse that any person, institution or the government has taken or may take in the enforcement of environmental laws, protection of the environment or assertion of environmental rights shall be treated as a SLAPP and shall be governed by these Rules."
+    }
+  },
+  {
+    "id": "q-0170",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 2. SLAPP as a defense; how alleged. - In a SLAPP filed against a person involved in the enforcement of environmental laws, protection of the environment, or assertion of environmental rights, the defendant may file an ____ interposing as a defense that the case is a SLAPP and shall be supported by documents, affidavits, papers and other evidence; and, by way of ____, pray for damages, attorney’s fees and costs of suit.\n\nThe court shall direct the plaintiff or adverse party to file an ____ showing the suit is not a SLAPP, attaching evidence in support thereof, within a non-extendible period of ____ from receipt of notice that an answer has been filed.\n\nThe defense of a SLAPP shall be set for hearing by the court after issuance of the order to file an opposition within ____ from filing of the comment or the lapse of the period.",
+    "fullText": "Section 2. SLAPP as a defense; how alleged. - In a SLAPP filed against a person involved in the enforcement of environmental laws, protection of the environment, or assertion of environmental rights, the defendant may file an answer interposing as a defense that the case is a SLAPP and shall be supported by documents, affidavits, papers and other evidence; and, by way of counterclaim, pray for damages, attorney’s fees and costs of suit.\n\nThe court shall direct the plaintiff or adverse party to file an opposition showing the suit is not a SLAPP, attaching evidence in support thereof, within a non-extendible period of five (5) days from receipt of notice that an answer has been filed.\n\nThe defense of a SLAPP shall be set for hearing by the court after issuance of the order to file an opposition within fifteen (15) days from filing of the comment or the lapse of the period.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 6, Section 2 (SLAPP as a defense; how alleged)",
+      "excerpt": "Section 2. SLAPP as a defense; how alleged. - In a SLAPP filed against a person involved in the enforcement of environmental laws, protection of the environment, or assertion of environmental rights, the defendant may file an answer interposing as a defense that the case is a SLAPP and shall be supported by documents, affidavits, papers and other evidence; and, by way of counterclaim, pray for damages, attorney’s fees and costs of suit.\n\nThe court shall direct the plaintiff or adverse party to file an opposition showing the suit is not a SLAPP, attaching evidence in support thereof, within a non-extendible period of five (5) days from receipt of notice that an answer has been filed.\n\nThe defense of a SLAPP shall be set for hearing by the court after issuance of the order to file an opposition within fifteen (15) days from filing of the comment or the lapse of the period."
+    }
+  },
+  {
+    "id": "q-0171",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 3. Summary hearing. - The hearing on the defense of a SLAPP shall be ____ in nature. The parties must submit all available evidence in support of their respective positions. The party seeking the dismissal of the case must prove by ____ that his act for the enforcement of environmental law is a legitimate action for the protection, preservation and rehabilitation of the environment. The party filing the action assailed as a SLAPP shall prove by ____ that the action is not a SLAPP and is a valid claim.",
+    "fullText": "Section 3. Summary hearing. - The hearing on the defense of a SLAPP shall be summary in nature. The parties must submit all available evidence in support of their respective positions. The party seeking the dismissal of the case must prove by substantial evidence that his act for the enforcement of environmental law is a legitimate action for the protection, preservation and rehabilitation of the environment. The party filing the action assailed as a SLAPP shall prove by preponderance of evidence that the action is not a SLAPP and is a valid claim.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 6, Section 3 (Summary hearing)",
+      "excerpt": "Section 3. Summary hearing. - The hearing on the defense of a SLAPP shall be summary in nature. The parties must submit all available evidence in support of their respective positions. The party seeking the dismissal of the case must prove by substantial evidence that his act for the enforcement of environmental law is a legitimate action for the protection, preservation and rehabilitation of the environment. The party filing the action assailed as a SLAPP shall prove by preponderance of evidence that the action is not a SLAPP and is a valid claim."
+    }
+  },
+  {
+    "id": "q-0172",
+    "type": "fillblank",
+    "status": "draft",
+    "subject": "Remedial Law",
+    "topic": "Special Proceedings",
+    "subtopic": "Environmental Cases (General Rules)",
+    "prompt": "Section 4. Resolution of the defense of a SLAPP. - The affirmative defense of a SLAPP shall be resolved within ____ after the summary hearing. If the court dismisses the action, the court may award damages, attorney’s fees and costs of suit under a counterclaim if such has been filed. The dismissal shall be ____.\n\nIf the court rejects the defense of a SLAPP, the evidence adduced during the summary hearing shall be treated as ____ of the case. The action shall proceed in accordance with the Rules of Court.",
+    "fullText": "Section 4. Resolution of the defense of a SLAPP. - The affirmative defense of a SLAPP shall be resolved within thirty (30) days after the summary hearing. If the court dismisses the action, the court may award damages, attorney’s fees and costs of suit under a counterclaim if such has been filed. The dismissal shall be with prejudice.\n\nIf the court rejects the defense of a SLAPP, the evidence adduced during the summary hearing shall be treated as evidence of the parties on the merits of the case. The action shall proceed in accordance with the Rules of Court.",
+    "caseIds": [],
+    "source": {
+      "caseTitle": "Rules of Procedure for Environmental Cases",
+      "grNumber": "A.M. No. 09-6-8-SC",
+      "url": "https://www.lawphil.net/courts/supreme/am/am_09-6-8-sc_2010.html",
+      "part": "Rule 6, Section 4 (Resolution of the defense of a SLAPP)",
+      "excerpt": "Section 4. Resolution of the defense of a SLAPP. - The affirmative defense of a SLAPP shall be resolved within thirty (30) days after the summary hearing. If the court dismisses the action, the court may award damages, attorney’s fees and costs of suit under a counterclaim if such has been filed. The dismissal shall be with prejudice.\n\nIf the court rejects the defense of a SLAPP, the evidence adduced during the summary hearing shall be treated as evidence of the parties on the merits of the case. The action shall proceed in accordance with the Rules of Court."
+    }
   }
 ]

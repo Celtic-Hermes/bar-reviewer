@@ -30,6 +30,11 @@ Topics so far (use these exact names):
 - Remedial Law → **Special Proceedings** → sub-topic **Writ of Amparo** (fill-in-the-blank items, one per section of A.M. No. 07-9-12-SC, q-0056 to q-0082)
 - Remedial Law → **Special Proceedings** → sub-topic **Custody of Minors and Habeas Corpus** (fill-in-the-blank items, one per section of A.M. No. 03-04-04-SC, q-0083 to q-0104)
 - Remedial Law → **Special Proceedings** → sub-topic **Writ of Habeas Data** (fill-in-the-blank items, one per section of A.M. No. 08-1-16-SC, q-0105 to q-0129)
+- Remedial Law → **Special Proceedings** → the **Rules of Procedure for Environmental Cases** (A.M. No. 09-6-8-SC, 104 sections in 22 Rules, one fill-in-the-blank item per section, q-0130 onward in the rule's own order; section numbers restart in each Rule, so `source.part` says "Rule 7, Section 3 (…)"), split into four sub-topics:
+  - **Writ of Kalikasan** (Rule 7)
+  - **Writ of Continuing Mandamus** (Rule 8)
+  - **TEPO** (Rule 2 Sections 8–11, and Rule 13 Section 2)
+  - **Environmental Cases (General Rules)** (everything else)
 
 ### Miscellaneous section
 Below the 8 subjects, the home screen has a **Miscellaneous** section for extra subjects that are not bar subjects (listed in `MISC_SUBJECTS` in `app.js`). It is **empty for now** and shows a "Nothing here yet" note; keep the section in place for future content.
@@ -180,7 +185,7 @@ For a procedural rule or a Rules of Court rule (like the Rule on the Writ of Amp
 1. **Announce first.** Tell the builder which rule is being done (name, A.M. or Rule number), the source link, and the next free `q-` ID. Look the ID up in `data/questions.json`; never reuse or renumber an ID. Do **one rule at a time**: one rule = one commit = one save point.
 2. **Get the real text from the source.** Use the link the builder gave, or an official source (LawPhil, the Supreme Court website or E-Library). Never from memory. A third-party site (study sites, blogs) must be cross-checked against an official source; if they differ, use the official text and tell the builder what differed. If the text can't be fetched, stop and ask for it to be pasted (content rule 2).
 3. **Confirm the structure before writing anything.** Count the sections and tell the builder the count and the question IDs it will use (one item per section, consecutive). If the rule has several parts (for example, separate writs or remedies in one A.M.), describe how it's organized and ask whether it should be one sub-topic or several before writing.
-4. **Clean the text, change nothing else.** Decode the page with its own character set (LawPhil pages are often `windows-1252`) so dashes and quotes come out right. Remove LawPhil's hidden watermarks (like `1awphi1`) and report how many were removed. Keep everything else exactly as published: wording, typos, dashes, capitals. Paragraphs and list items are separated by a blank line. Only the rule's own sections go in, not the resolution that approves it.
+4. **Clean the text, change nothing else.** Decode the page with its own character set (LawPhil pages are often `windows-1252`) so dashes and quotes come out right. Remove LawPhil's hidden watermarks (like `1awphi1`) and report how many were removed. Keep everything else exactly as published: wording, typos, dashes, capitals. Paragraphs and list items are separated by a blank line. Only the rule's own sections go in, not the resolution that approves it. **Page-break leftovers** from LawPhil's conversion of a PDF (a sentence or word split by a paragraph break, or a printed page header like "Rules of Procedure for Environmental Cases" pasted mid-sentence) are repaired by rejoining the sentence with a single space; report each one to the builder, item by item.
 5. **One `fillblank` item per section**, in order, all `status: "draft"`:
    - `subject` / `topic` / `subtopic`: where the builder asked (e.g. Remedial Law → Special Proceedings → the rule's own sub-topic). Add the new sub-topic to "Topics so far" above, with its ID range.
    - `fullText`: the whole section exactly, starting with its heading ("Section 3. Where to file petition. - …").
