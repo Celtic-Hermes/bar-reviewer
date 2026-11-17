@@ -1285,12 +1285,12 @@ const FB_RATINGS = ["Got it", "Missed it"];
 const BLANK = /_{4,}/;
 const HAS_LETTER = /[A-Za-zÀ-ÿ]/;
 
-// Words that are never hidden as extra words: "SEC." / "Section", list numbers like
-// "(a)" or "(1)", and anything without a letter (numbers, dashes).
+// Words that are never hidden as extra words: "SEC." / "Section", list labels like
+// "(a)", "(iv)" or "(1)", and anything without a letter (numbers, dashes).
 function canHideWord(text) {
   if (!HAS_LETTER.test(text)) { return false; }
   if (/^(SEC\.|SECTION|Section)$/.test(text)) { return false; }
-  if (/^\(([a-z]|\d{1,2})\)$/.test(text)) { return false; }
+  if (/^\(([a-z]|[ivx]+|\d{1,2})\)$/.test(text)) { return false; }  // list labels: (a), (iv), (1)
   return true;
 }
 
