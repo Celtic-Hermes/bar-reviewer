@@ -661,10 +661,34 @@ body {
 }
 
 /* ---------- Home: back up / restore progress ---------- */
-.backup-card { margin-top: 28px; }
-.backup-note { margin: 0 0 14px; font-size: 15px; color: var(--muted); }
-.backup-card .btn { text-align: center; margin-bottom: 10px; }
-.backup-card label.btn { line-height: 20px; }
+/* ---------- Settings (index.html #screen-settings, app.js openSettings) ----------
+   Every setting is one shared "setting row": the label and a short description on the left,
+   the control on the right (below them on a narrow phone, or for a full-width button:
+   .setting-control-wide). Rows are grouped in a card under a heading (.settings-group). */
+.settings-group { margin: 22px 0 8px; }
+.settings-card { padding-top: 4px; padding-bottom: 4px; }
+.setting-row {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px;
+  padding: 14px 0; border-top: 1px solid var(--border);
+}
+.setting-row:first-child { border-top: 0; }
+.setting-text { flex: 1 1 220px; min-width: 0; }
+.setting-label { display: block; margin: 0; font-weight: 700; }
+.setting-desc { margin: 2px 0 0; font-size: 15px; color: var(--muted); }
+.setting-control { display: flex; align-items: center; gap: 8px; flex: 0 0 auto; }
+.setting-control-wide { flex: 1 1 100%; }
+.setting-control-wide .btn { margin: 0; text-align: center; }
+.setting-control-wide label.btn { line-height: 20px; }
+.setting-control select, .setting-control input[type="date"] {
+  font: inherit; font-size: 16px;  /* 16px or more: the iPhone doesn't zoom in */
+  min-height: 44px; padding: 6px 10px; border: 1px solid var(--primary-edge); border-radius: 8px;
+  background: var(--card); color: var(--text);
+}
+.setting-clear {
+  min-height: 44px; padding: 0 12px; border: 0; background: none;
+  font: inherit; font-size: 15px; font-weight: 600; color: var(--primary-text); cursor: pointer;
+}
+.settings-card .backup-message { margin: 0 0 12px; }
 .backup-message { margin: 4px 0 0; text-align: center; font-weight: 600; }
 .backup-message.ok { color: var(--got); }
 .backup-message.problem { color: var(--missed); }
@@ -714,11 +738,14 @@ body {
 .today-mastery-count { margin: 0 0 6px; font-weight: 600; }
 .mastery-bar .today-bar-fill { background: var(--partly); }
 .today-goal { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border); font-size: 15px; color: var(--muted); }
-.today-goal select {
-  font: inherit; font-size: 16px; /* 16px: iPhone won't zoom in */
-  padding: 6px 10px; border: 1px solid var(--primary-edge); border-radius: 8px;
-  background: var(--card); color: var(--text);
+/* The goal line is a button that opens Settings (where the goal is changed). */
+button.today-goal {
+  width: 100%; min-height: 44px; border-left: 0; border-right: 0; border-bottom: 0;
+  padding-left: 0; padding-right: 0; padding-bottom: 0;
+  background: none; font: inherit; font-size: 15px; text-align: left; cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
+.today-goal-value { color: var(--primary-text); font-weight: 600; }
 
 /* ---------- Case screen ---------- */
 .case-number { margin: 0 0 4px; color: var(--muted); font-weight: 600; }
@@ -1078,6 +1105,9 @@ body.sheet-open { overflow: hidden; }
     background: var(--card); color: var(--primary-text); font: inherit; font-size: 20px; line-height: 1;
     cursor: pointer; -webkit-tap-highlight-color: transparent;
   }
+  /* ⚙️ Settings: on the home screen only, just left of ☰. */
+  .settings-btn { display: none; right: 68px; }
+  body[data-screen="screen-home"] .settings-btn { display: block; }
   /* The question screen's "Question 1 of 48" moves left to make room for ☰. */
   .question-topbar { padding-right: 56px; }
   .sidebar {

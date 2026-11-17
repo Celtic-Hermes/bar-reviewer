@@ -34,6 +34,7 @@
     <div id="sidebar-subjects"></div>
     <p class="sidebar-heading">My study</p>
     <button type="button" class="sidebar-link" data-go="notes"><span class="sidebar-icon" aria-hidden="true">📝</span>My notes</button>
+    <button type="button" class="sidebar-link" data-go="settings"><span class="sidebar-icon" aria-hidden="true">⚙️</span>Settings</button>
   </nav>
 
   <!-- Phones: the dimmed page behind the open ☰ menu (tap it to close the menu) -->
@@ -42,6 +43,8 @@
   <main class="page">
     <!-- Phones only: opens the sections menu (the sidebar) -->
     <button type="button" class="menu-btn" id="menu-btn" aria-label="Menu" aria-controls="sidebar" aria-expanded="false">☰</button>
+    <!-- Phones: Settings, on the home screen only (wide screens use the sidebar) -->
+    <button type="button" class="menu-btn settings-btn" id="settings-btn" aria-label="Settings">⚙️</button>
     <!-- Shown if the questions file can't be loaded -->
     <p class="error" id="load-error" hidden></p>
 
@@ -81,14 +84,10 @@
           </div>
           <p class="today-note">Mastered = right on 2 different days in a row (fill in the blank: Moderate or harder).</p>
         </div>
-        <label class="today-goal">Daily goal
-          <select id="today-goal">
-            <option value="10">10 questions</option>
-            <option value="20">20 questions</option>
-            <option value="30">30 questions</option>
-            <option value="50">50 questions</option>
-          </select>
-        </label>
+        <!-- The goal is changed in Settings: tapping this line opens it -->
+        <button type="button" class="today-goal" id="today-goal-link">
+          <span>Daily goal</span><span class="today-goal-value"><span id="today-goal-text"></span> ›</span>
+        </button>
       </section>
 
       <button class="btn btn-secondary my-notes-btn" id="my-notes-btn">📝 My notes</button>
@@ -100,13 +99,64 @@
       <div class="subject-list" id="misc-list"></div>
       <p class="card empty-note misc-empty" id="misc-empty" hidden>Nothing here yet. Extra subjects that aren't part of the bar exam will appear here.</p>
 
-      <!-- Back up / restore her progress as a file -->
-      <section class="card backup-card">
-        <h2 class="label">Back up your progress</h2>
-        <p class="backup-note">Save a copy of your scores, review list, bookmarks, color tags, study streak, and notes as a file. Keep it in Files or iCloud Drive, so you can load it back if this phone ever loses your progress.</p>
-        <button class="btn btn-primary" id="backup-btn">Back up my progress</button>
-        <label class="btn btn-secondary" for="restore-input">Restore progress</label>
-        <input type="file" id="restore-input" class="visually-hidden">
+    </section>
+
+    <!-- SETTINGS: one shared "setting row" per setting (label, short description, control),
+         grouped under headings. A new setting = one more row (see CLAUDE.md, Adding a new setting). -->
+    <section id="screen-settings" hidden>
+      <button class="back-btn" id="settings-back">‹ Back</button>
+      <h1 class="screen-title">Settings</h1>
+      <p class="screen-subtitle">Saved on this device, and included in your backups.</p>
+
+      <h2 class="label settings-group">Study</h2>
+      <section class="card settings-card">
+        <div class="setting-row">
+          <div class="setting-text">
+            <label class="setting-label" for="setting-daily-goal">Daily goal</label>
+            <p class="setting-desc">How many questions you aim to finish each day. The Today card on the home screen shows your progress toward it.</p>
+          </div>
+          <div class="setting-control">
+            <select id="setting-daily-goal">
+              <option value="10">10 questions</option>
+              <option value="20">20 questions</option>
+              <option value="30">30 questions</option>
+              <option value="50">50 questions</option>
+            </select>
+          </div>
+        </div>
+        <div class="setting-row">
+          <div class="setting-text">
+            <label class="setting-label" for="setting-exam-date">Exam date</label>
+            <p class="setting-desc">Optional. Used later for the study schedule.</p>
+          </div>
+          <div class="setting-control">
+            <input type="date" id="setting-exam-date">
+            <button type="button" class="setting-clear" id="setting-exam-clear" hidden>Clear</button>
+          </div>
+        </div>
+      </section>
+
+      <h2 class="label settings-group">Data</h2>
+      <section class="card settings-card">
+        <div class="setting-row">
+          <div class="setting-text">
+            <p class="setting-label">Back up my progress</p>
+            <p class="setting-desc">Saves a copy of your scores, review list, bookmarks, color tags, study streak, notes and settings as a file. Keep it in Files or iCloud Drive, so you can load it back if this device ever loses your progress.</p>
+          </div>
+          <div class="setting-control setting-control-wide">
+            <button class="btn btn-primary" id="backup-btn">Back up my progress</button>
+          </div>
+        </div>
+        <div class="setting-row">
+          <div class="setting-text">
+            <p class="setting-label">Restore progress</p>
+            <p class="setting-desc">Loads a backup file you saved earlier. It replaces the progress on this device (you'll be asked first).</p>
+          </div>
+          <div class="setting-control setting-control-wide">
+            <label class="btn btn-secondary" for="restore-input">Restore progress</label>
+            <input type="file" id="restore-input" class="visually-hidden">
+          </div>
+        </div>
         <p class="backup-message" id="backup-message" role="status" hidden></p>
       </section>
     </section>

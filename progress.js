@@ -14,7 +14,9 @@
 //                      fill in the blank); on: the date; level: the Blanks level (fill in the blank);
 //              inARow: right answers in a row that count toward mastery (2 or more = mastered),
 //                      at most one per day; countedOn: the day it last went up.
-//   settings:  her choices: { "dailyGoal": 20 } (10, 20, 30 or 50)
+//   settings:  her choices (Settings screen): { "dailyGoal": 20 (10, 20, 30 or 50),
+//              "examDate": "2027-09-12" (optional, YYYY-MM-DD) }. Anything missing or odd
+//              is left out, and the default is used (see cleanSettings).
 //   streakBest: her longest streak of study days ever (kept here, since "daily" only
 //              keeps 400 days)
 //   notes:     her own notes on a case or a rule, by its ID:
@@ -95,10 +97,22 @@ function cleanResults(value) {
 const DAILY_GOALS = [10, 20, 30, 50];
 const DEFAULT_DAILY_GOAL = 20;
 
+// Keeps only settings it knows, with valid values. Missing, old or odd values are left out,
+// so the default is used instead and nothing ever crashes. (A new setting: add a line here.)
 function cleanSettings(value) {
   const clean = {};
-  if (isPlainObject(value) && DAILY_GOALS.indexOf(value.dailyGoal) !== -1) { clean.dailyGoal = value.dailyGoal; }
+  if (!isPlainObject(value)) { return clean; }
+  if (DAILY_GOALS.indexOf(value.dailyGoal) !== -1) { clean.dailyGoal = value.dailyGoal; }
+  if (isCalendarDate(value.examDate)) { clean.examDate = value.examDate; }
   return clean;
+}
+
+// "2027-09-12": a real date written YYYY-MM-DD (not "2027-02-31").
+function isCalendarDate(text) {
+  if (typeof text !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(text)) { return false; }
+  const d = new Date(text + "T00:00:00");
+  return !isNaN(d) && d.getFullYear() === Number(text.slice(0, 4)) &&
+    d.getMonth() + 1 === Number(text.slice(5, 7)) && d.getDate() === Number(text.slice(8, 10));
 }
 
 // Her notes (defined up here because loading her progress, just below, needs them).
@@ -429,12 +443,29 @@ function masteryOf(questions) {
 
 // ---------- Daily goal and streak (the Today card) ----------
 function dailyGoal() {
-  return DAILY_GOALS.indexOf(progress.settings.dailyGoal) !== -1 ? progress.settings.dailyGoal : DEFAULT_DAILY_GOAL;
+  const goal = settingsObject().dailyGoal;
+  return DAILY_GOALS.indexOf(goal) !== -1 ? goal : DEFAULT_DAILY_GOAL;
 }
 
 function setDailyGoal(goal) {
   if (DAILY_GOALS.indexOf(goal) === -1) { return; }
-  progress.settings.dailyGoal = goal;
+  settingsObject().dailyGoal = goal;
+  saveProgress();
+}
+
+// Her exam date ("YYYY-MM-DD"), or "" if she hasn't set one. Never filled in for her.
+function examDate() {
+  const date = settingsObject().examDate;
+  return isCalendarDate(date) ? date : "";
+}
+
+// Save it ("" removes it).
+function setExamDate(value) {
+  if (isCalendarDate(value)) {
+    settingsObject().examDate = value;
+  } else {
+    delete settingsObject().examDate;
+  }
   saveProgress();
 }
 
@@ -736,7 +767,14 @@ function readBackup(text) {
 // Replace the progress on this phone with a checked backup. Returns true if it saved.
 function restoreProgress(newProgress) {
   progress = newProgress;
+  progress.settings = cleanSettings(progress.settings);  // never trust settings as they come
   return saveProgress();
+}
+
+// Her settings object, always usable (an empty one if it's missing for any reason).
+function settingsObject() {
+  if (!isPlainObject(progress.settings)) { progress.settings = {}; }
+  return progress.settings;
 }
 
 // ---------- Fill in the blank: the "Blanks" level she last picked ----------

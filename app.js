@@ -45,7 +45,7 @@ document.addEventListener("touchstart", function () {}, { passive: true });
 // Only one screen is visible at a time.
 function showScreen(id) {
   saveAllNotes();  // leaving a screen with a notes box: save what she typed first
-  ["screen-home", "screen-subject", "screen-subtopics", "screen-topic", "screen-tagged", "screen-question", "screen-results", "screen-case", "screen-rule", "screen-notes"].forEach(function (screenId) {
+  ["screen-home", "screen-subject", "screen-subtopics", "screen-topic", "screen-tagged", "screen-question", "screen-results", "screen-case", "screen-rule", "screen-notes", "screen-settings"].forEach(function (screenId) {
     document.getElementById(screenId).hidden = (screenId !== id);
   });
   window.scrollTo(0, 0);
@@ -82,6 +82,7 @@ function buildSidebar() {
 function sidebarSection() {
   if (shownScreen === "screen-home") { return "home"; }
   if (shownScreen === "screen-notes") { return "notes"; }
+  if (shownScreen === "screen-settings") { return "settings"; }
   const from = shownScreen === "screen-case" ? caseCameFrom : (shownScreen === "screen-rule" ? ruleCameFrom : null);
   if (from === "notes") { return "notes"; }
   if (from === "search") { return "search"; }
@@ -139,6 +140,8 @@ document.getElementById("sidebar").addEventListener("click", function (event) {
     input.select();
   } else if (go === "notes") {
     openNotes();
+  } else if (go === "settings") {
+    openSettings();
   } else if (go === "subject") {
     openSubject(link.dataset.subject);
   }
@@ -149,6 +152,9 @@ document.getElementById("sidebar").addEventListener("click", function (event) {
 // On the home screen or the results screen there's nothing to come back to,
 // so the saved spot is cleared and a reload simply opens the home screen.
 function rememberSpot() {
+  // Settings isn't saved as a spot: a reload there puts her back where she was before it
+  // (so a practice round she left open is never lost).
+  if (shownScreen === "screen-settings") { return; }
   if (shownScreen === "screen-home" || shownScreen === "screen-results") {
     clearSpot();
     return;
@@ -1052,7 +1058,7 @@ function showTodayCard() {
     note = left + (left === 1 ? " more question" : " more questions") + " to reach today's goal.";
   }
   document.getElementById("today-note").textContent = note;
-  document.getElementById("today-goal").value = String(goal);
+  document.getElementById("today-goal-text").textContent = goal + " questions";
 
   // Mastery across everything in the app (shown once the questions have loaded).
   const mastery = masteryOf(allQuestions);
@@ -1068,9 +1074,55 @@ function showTodayCard() {
   }
 }
 
-document.getElementById("today-goal").addEventListener("change", function (event) {
+// The goal is changed in Settings: the Today card's goal line opens it.
+document.getElementById("today-goal-link").addEventListener("click", function () { openSettings(); });
+
+// ---------- Settings ----------
+// One screen, with one shared "setting row" per setting (index.html: .setting-row, under
+// headings like Study and Data). Values live in progress.settings (progress.js), so they're
+// in backups, and missing or odd values fall back to defaults (cleanSettings).
+// Back returns to exactly where she was (the screen is just hidden meanwhile, as it was).
+let settingsCameFrom = "screen-home";
+let settingsScroll = 0;
+
+function openSettings() {
+  if (shownScreen !== "screen-settings") {
+    settingsCameFrom = shownScreen || "screen-home";
+    settingsScroll = window.scrollY;
+  }
+  fillSettings();
+  document.getElementById("backup-message").hidden = true;
+  showScreen("screen-settings");
+}
+
+// Show the saved values in the controls.
+function fillSettings() {
+  document.getElementById("setting-daily-goal").value = String(dailyGoal());
+  const date = examDate();
+  document.getElementById("setting-exam-date").value = date;
+  document.getElementById("setting-exam-clear").hidden = !date;
+}
+
+document.getElementById("settings-back").addEventListener("click", function () {
+  showScreen(settingsCameFrom);
+  window.scrollTo(0, settingsScroll);
+});
+
+document.getElementById("settings-btn").addEventListener("click", openSettings);
+
+document.getElementById("setting-daily-goal").addEventListener("change", function (event) {
   setDailyGoal(Number(event.target.value));
   showTodayCard();
+});
+
+document.getElementById("setting-exam-date").addEventListener("change", function (event) {
+  setExamDate(event.target.value);
+  fillSettings();
+});
+
+document.getElementById("setting-exam-clear").addEventListener("click", function () {
+  setExamDate("");
+  fillSettings();
 });
 
 // Back in the app on a new day (or after a while): bring the home screen's card up to date.
@@ -3691,6 +3743,7 @@ document.getElementById("restore-input").addEventListener("change", function (ev
     if (restoreProgress(backup.progress)) {
       showTodayCard();  // the restored streak and today's count
       showMyNotesButton();  // and the restored notes
+      fillSettings();  // and the restored settings
       showBackupMessage("Progress restored from the backup of " + describeDate(backup.savedAt) + ".");
     } else {
       showBackupMessage("Loaded the backup, but this phone wouldn't save it. Private browsing may be on.", true);
