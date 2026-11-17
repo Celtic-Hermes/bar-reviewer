@@ -245,8 +245,25 @@ body {
 .btn-fbrate:disabled { cursor: default; }
 .btn-fbrate:disabled:not(.selected) { opacity: 0.45; }
 .btn-fbrate.selected:disabled { opacity: 1; }
-/* The blanks in the question (written as ____ in the content). */
+/* A hidden word: a text box she types into, shown like an underlined gap in the line. */
 .fb-blank { color: var(--primary); font-weight: 700; }
+.fb-input {
+  font: inherit; font-weight: 600; color: var(--text, inherit);
+  /* Inherits the question's 17px: 16px or more stops the iPhone zooming in when she taps it. */
+  min-width: 3.5em; max-width: 100%; box-sizing: border-box; margin: 0 1px; padding: 0 3px;
+  border: none; border-bottom: 2px solid var(--primary); border-radius: 4px 4px 0 0;
+  background: color-mix(in srgb, var(--primary) 8%, transparent);
+  line-height: 1.3; vertical-align: baseline;
+  -webkit-appearance: none; appearance: none;
+}
+/* With text boxes in the line, the question isn't stretched edge to edge (big gaps otherwise). */
+#prompt:has(.fb-input) { text-align: left; hyphens: manual; }
+.fb-input:focus { outline: 2px solid var(--primary); outline-offset: 1px; }
+.fb-input::selection { background: color-mix(in srgb, var(--primary) 30%, transparent); }
+/* After "Show answer": green if right, red if wrong or left empty. */
+.fb-input.fb-right { border-bottom-color: var(--got); background: color-mix(in srgb, var(--got) 18%, transparent); color: var(--got); }
+.fb-input.fb-wrong { border-bottom-color: var(--missed); background: color-mix(in srgb, var(--missed) 15%, transparent); color: var(--missed); text-decoration: line-through; }
+.fb-input:read-only:focus { outline: none; }
 /* In the revealed full text, the words that were blanked out. */
 /* (Not the list numbers like "(a)", which are also bold but aren't answers.) */
 .fb-full strong:not(.list-num) { color: var(--primary); text-decoration: underline; text-underline-offset: 3px; }

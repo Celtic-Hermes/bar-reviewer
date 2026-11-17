@@ -202,7 +202,8 @@ function putBackCurrent(saved) {
   const question = session.questions[session.index];
   if (question.type === "fillblank") {
     if (FB_LEVELS.indexOf(saved.fbLevel) !== -1 && Array.isArray(saved.fbHidden)) {
-      // The same level, and the same words hidden, as before the reload.
+      // The same level, the same words hidden, and what she typed, as before the reload.
+      session.current.fbTyped = isPlainObject(saved.fbTyped) ? saved.fbTyped : {};
       applyFbLevel(question, saved.fbLevel, saved.fbHidden);
       if (saved.answerShown) {
         session.current.answerShown = true;
@@ -878,8 +879,9 @@ function showPicked(question, picked) {
 //      words picked at random, until about 35% / 55% / 75% of the words are hidden.
 //    The text shows right away at the level she used last. She can change the level
 //    until she taps "Show answer".
-// 2. She recalls the hidden words, then taps "Show answer": the full text, with every
-//    word that was hidden in bold and underlined.
+// 2. Each hidden word is a text box she types into. "Show answer" marks each box green
+//    (right) or red (wrong or empty), ignoring capitals, punctuation, spaces and accents,
+//    and shows the full text, with every word that was hidden in bold and underlined.
 // 3. She rates herself Got it / Missed it. That decides Review missed and her score.
 // Each word stays one "word" for highlighting whether it's hidden or not, so her
 // highlights stay on the same words at every level.
@@ -1011,10 +1013,62 @@ function hiddenWordCount(hidden) {
   }, 0);
 }
 
-// A word hidden: its letters become ____, its punctuation stays ("petition." → "____.").
-function hideWord(text) {
+// A word split into its punctuation before, the word itself, and its punctuation after
+// ("(petition)." → "(", "petition", ")."). When hidden, only the middle part is hidden.
+function splitWord(text) {
   const m = text.match(/^([^A-Za-zÀ-ÿ0-9]*)(.*?)([^A-Za-zÀ-ÿ0-9]*)$/);
-  return m[1] + "____" + m[3];
+  return { before: m[1], middle: m[2], after: m[3] };
+}
+
+// For a key-term blank, the text before and after the ____ ("____," → "", ",").
+function splitBlank(text) {
+  const at = text.search(BLANK);
+  const end = at + text.match(BLANK)[0].length;
+  return { before: text.slice(0, at), after: text.slice(end) };
+}
+
+// The right answer for hidden word number n (null if the content doesn't line up).
+function fbAnswerFor(n) {
+  const w = fbInfo.words[n];
+  if (w.isBlank) { return w.answer || null; }
+  return splitWord(w.text).middle;
+}
+
+// Compare what she typed with the right answer, ignoring capital letters, punctuation,
+// spaces and accents: "Seventy two (72) hours" matches "seventy-two (72) hours".
+function sameAnswer(typed, answer) {
+  function plain(text) {
+    return text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]/g, "");
+  }
+  return plain(typed) !== "" && plain(typed) === plain(answer);
+}
+
+// A text box for one hidden word. It grows as she types.
+function makeBlankBox(n, typed) {
+  const box = document.createElement("input");
+  box.type = "text";
+  box.className = "fb-input";
+  box.dataset.word = n;
+  box.setAttribute("autocomplete", "off");
+  box.setAttribute("autocorrect", "off");      // iPhone: don't "fix" legal words
+  box.setAttribute("autocapitalize", "off");
+  box.setAttribute("spellcheck", "false");
+  box.setAttribute("enterkeyhint", "next");    // the keyboard's Return key says "next"
+  box.setAttribute("aria-label", "Blank");
+  box.value = typed || "";
+  return box;
+}
+
+// Make the box just wide enough for what she typed (measured in the box's own font),
+// never narrower than an empty blank. An empty box doesn't hint at the answer's length.
+let measureCanvas = null;
+function sizeBlankBox(box) {
+  if (!measureCanvas) { measureCanvas = document.createElement("canvas"); }
+  const ctx = measureCanvas.getContext("2d");
+  const style = window.getComputedStyle(box);
+  ctx.font = style.fontWeight + " " + style.fontSize + " " + style.fontFamily;
+  const textWidth = box.value ? ctx.measureText(box.value).width : 0;
+  box.style.width = "calc(" + Math.ceil(textWidth) + "px + 14px)";
 }
 
 // Show the text at a level, with the words numbered in "hidden" blanked out.
@@ -1023,19 +1077,32 @@ function applyFbLevel(question, level, hidden) {
   hidden.forEach(function (n) {
     if (typeof n === "number" && fbInfo.words[n] && clean.indexOf(n) === -1) { clean.push(n); }
   });
+  // What she has typed so far, kept for the words that are still hidden.
+  const oldTyped = isPlainObject(session.current.fbTyped) ? session.current.fbTyped : {};
+  const typed = {};
+  clean.forEach(function (n) {
+    if (typeof oldTyped[n] === "string" && oldTyped[n] !== "") { typed[n] = oldTyped[n]; }
+  });
   fbInfo.words.forEach(function (w, n) {
     const hide = clean.indexOf(n) !== -1;
     w.span.classList.toggle("fb-blank", hide);
-    if (w.isBlank) {
+    w.span.textContent = "";
+    if (hide) {
+      // Hidden: a text box in place of the word, its punctuation stays around it.
+      const parts = w.isBlank ? splitBlank(w.text) : splitWord(w.text);
+      w.span.append(parts.before, makeBlankBox(n, typed[n]), parts.after);
+    } else if (w.isBlank) {
       // A key-term blank not hidden at this level shows its words as normal text.
-      w.span.textContent = (hide || !w.answer) ? w.text : w.text.replace(BLANK, w.answer);
+      w.span.textContent = w.answer ? w.text.replace(BLANK, w.answer) : w.text;
     } else {
-      w.span.textContent = hide ? hideWord(w.text) : w.text;
+      w.span.textContent = w.text;
     }
   });
+  document.querySelectorAll("#prompt .fb-input").forEach(sizeBlankBox);  // now that they're on the page
   fbInfo.hidden = clean;
   session.current.fbLevel = level;
   session.current.fbHidden = clean;
+  session.current.fbTyped = typed;
   document.getElementById("fb-level-select").value = level;
 
   // The full text for "Show answer", with every hidden word in bold.
@@ -1075,6 +1142,49 @@ function answerText(question, hidden) {
   }).join("");
 }
 
+// Typing in a box: keep what she typed (so a reload puts it back), and grow the box.
+document.getElementById("prompt").addEventListener("input", function (event) {
+  const box = event.target;
+  if (!box.classList || !box.classList.contains("fb-input")) { return; }
+  sizeBlankBox(box);
+  if (!isPlainObject(session.current.fbTyped)) { session.current.fbTyped = {}; }
+  session.current.fbTyped[box.dataset.word] = box.value;
+  rememberSpot();
+});
+
+// Return key in a box: go to the next box (or close the keyboard after the last one).
+document.getElementById("prompt").addEventListener("keydown", function (event) {
+  const box = event.target;
+  if (event.key !== "Enter" || !box.classList || !box.classList.contains("fb-input")) { return; }
+  event.preventDefault();
+  const boxes = Array.from(document.querySelectorAll("#prompt .fb-input"));
+  const next = boxes[boxes.indexOf(box) + 1];
+  if (next) { next.focus(); } else { box.blur(); }
+});
+
+// "Show answer": mark each box green (right) or red (wrong or left empty), lock the
+// boxes, and say how many she got. Nothing here is saved to her score: Got it / Missed it does that.
+function checkBlankBoxes() {
+  const boxes = document.querySelectorAll("#prompt .fb-input");
+  let right = 0;
+  let checked = 0;
+  boxes.forEach(function (box) {
+    box.readOnly = true;
+    box.classList.remove("fb-right", "fb-wrong");
+    const answer = fbAnswerFor(Number(box.dataset.word));
+    if (answer === null) { return; }  // can't check (content doesn't line up)
+    checked += 1;
+    const ok = sameAnswer(box.value, answer);
+    if (ok) { right += 1; }
+    box.classList.add(ok ? "fb-right" : "fb-wrong");
+    box.setAttribute("aria-label", ok ? "Right" : "Wrong. The answer is: " + answer);
+  });
+  if (checked > 0) {
+    const note = document.getElementById("fb-level-note");
+    note.textContent += " You typed " + right + " of " + checked + (checked === 1 ? " blank" : " blanks") + " correctly.";
+  }
+}
+
 // Picking a level in the "Blanks" dropdown: new blanks at that level, remembered for next time.
 document.getElementById("fb-level-select").addEventListener("change", function (event) {
   const level = event.target.value;
@@ -1087,6 +1197,7 @@ document.getElementById("fb-level-select").addEventListener("change", function (
 // "Show answer" reveals the full text and the Got it / Missed it buttons.
 // The level can't be changed after that.
 function revealFillBlank() {
+  checkBlankBoxes();
   document.getElementById("fb-answer-area").hidden = false;
   document.getElementById("fb-show").hidden = true;
   document.getElementById("fb-level-select").disabled = true;
@@ -1549,6 +1660,7 @@ function makeHighlightable(elementId) {
   element.addEventListener("click", function (event) {
     // A mouse drag was just turned into a highlight: don't also toggle the word under the mouse.
     if (skipNextClick) { skipNextClick = false; return; }
+    if (event.target.closest("input")) { return; }  // typing in a fill-in-the-blank box, not highlighting
     const word = event.target.closest(".hl-word");
     const key = element.dataset.hlKey;
     if (!word || !key || !element.contains(word)) { return; }
@@ -1581,7 +1693,8 @@ let pressCount = 1;        // 1 for a normal press, 2 for the second press of a 
 document.addEventListener("pointerdown", function (event) {
   lastPointerType = event.pointerType;
   skipNextClick = false;
-  mouseIsDown = (event.pointerType === "mouse");
+  // (A press in a fill-in-the-blank box is for typing, not for a highlight drag.)
+  mouseIsDown = (event.pointerType === "mouse") && !(event.target.closest && event.target.closest("input"));
 });
 
 // The press itself says whether it's part of a double-click (more reliable than the release).
