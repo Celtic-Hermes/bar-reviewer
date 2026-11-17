@@ -16,6 +16,7 @@ Long lists show the first 50 lines; add --all to see every line.
   - CHECK    = not necessarily wrong, but a person should look at it.
 """
 
+import importlib.util
 import json
 import os
 import re
@@ -24,18 +25,14 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
 
-# The 8 bar subjects (must match SUBJECTS in app.js), plus MISC_SUBJECTS (empty for now).
-SUBJECTS = [
-    "Political Law",
-    "Labor Law and Social Legislation",
-    "Civil Law",
-    "Taxation Law",
-    "Mercantile Law",
-    "Criminal Law",
-    "Remedial Law",
-    "Legal and Judicial Ethics",
-]
-MISC_SUBJECTS = []
+# The catalog builder (tools/build-catalog.py): used to check the catalog is up to date.
+_spec = importlib.util.spec_from_file_location("build_catalog", os.path.join(ROOT, "tools", "build-catalog.py"))
+builder = importlib.util.module_from_spec(_spec)
+_spec.loader.exec_module(builder)
+
+# The 8 bar subjects and MISC_SUBJECTS: one list, in build-catalog.py (must match app.js).
+SUBJECTS = builder.SUBJECTS
+MISC_SUBJECTS = builder.MISC_SUBJECTS
 STATUSES = ["draft", "verified"]
 BLANK = re.compile(r"_{4,}")
 # LawPhil's hidden watermarks, like "1awphi1", "ℒαwρhi৷", "1âwphi1".
@@ -128,8 +125,25 @@ def load_content():
         for name in sorted(names):
             rel = os.path.relpath(os.path.join(folder, name), ROOT).replace(os.sep, "/")
             if name.endswith(".json") and rel not in files_seen:
-                problem(rel, "isn't listed in data/catalog.json, so the app never loads it.")
+                problem(rel, "isn't listed in data/catalog.json, so the app never loads it "
+                             "(run: python3 tools/build-catalog.py).")
+    # The catalog must be exactly what build-catalog.py makes from the topic files now.
+    expected, errors = builder.build_catalog()
+    if not errors:
+        with open(os.path.join(DATA, "catalog.json"), encoding="utf-8") as f:
+            if f.read() != builder.catalog_text(expected):
+                problem("data/catalog.json", "is out of date (a topic file changed since it was built). "
+                                             "Run: python3 tools/build-catalog.py")
+        for rel, data in builder.read_topic_files()[0]:
+            wanted = "data/content/%s/%s.json" % (slug(data["subject"]), slug(data["topic"]))
+            if rel != wanted:
+                check(rel, "for %s → %s, the usual file name is %s." % (data["subject"], data["topic"], wanted))
     return questions, cases
+
+
+def slug(name):
+    """'Legal and Judicial Ethics' → 'legal-and-judicial-ethics'."""
+    return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
 
 
 def read_text(path):
