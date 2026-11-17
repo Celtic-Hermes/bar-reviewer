@@ -52,9 +52,67 @@ function showScreen(id) {
   shownScreen = id;
   document.body.dataset.screen = id;  // lets style.css lay out wide screens per screen
   if (id === "screen-home") { showTodayCard(); showMyNotesButton(); }  // up to date whenever she comes home
+  updateSidebar();
   rememberSpot();
   reloadForUpdateIfSafe();  // a new version waiting? Moving between screens is a safe moment
 }
+
+// ---------- Sidebar (wide screens only: 1024px and up; style.css hides it on phones) ----------
+// Home, Search, the subjects, and My notes. The section she's in is highlighted.
+// Leaving a round from here works like the question screen's Back button.
+function buildSidebar() {
+  const box = document.getElementById("sidebar-subjects");
+  box.innerHTML = "";
+  SUBJECTS.concat(MISC_SUBJECTS).forEach(function (subject, i) {
+    const link = document.createElement("button");
+    link.type = "button";
+    link.className = "sidebar-link";
+    link.dataset.go = "subject";
+    link.dataset.subject = subject;
+    const number = document.createElement("span");
+    number.className = "sidebar-icon sidebar-number";
+    number.setAttribute("aria-hidden", "true");
+    number.textContent = i < SUBJECTS.length ? String(i + 1) : "•";
+    link.append(number, subject);
+    box.appendChild(link);
+  });
+}
+
+// Which sidebar section the screen she's on belongs to.
+function sidebarSection() {
+  if (shownScreen === "screen-home") { return "home"; }
+  if (shownScreen === "screen-notes") { return "notes"; }
+  const from = shownScreen === "screen-case" ? caseCameFrom : (shownScreen === "screen-rule" ? ruleCameFrom : null);
+  if (from === "notes") { return "notes"; }
+  if (from === "search") { return "search"; }
+  return currentSubject ? "subject:" + currentSubject : "home";
+}
+
+function updateSidebar() {
+  const section = sidebarSection();
+  document.querySelectorAll("#sidebar .sidebar-link").forEach(function (link) {
+    const name = link.dataset.go === "subject" ? "subject:" + link.dataset.subject : link.dataset.go;
+    if (name === section) { link.setAttribute("aria-current", "page"); } else { link.removeAttribute("aria-current"); }
+  });
+}
+
+document.getElementById("sidebar").addEventListener("click", function (event) {
+  const link = event.target.closest(".sidebar-link");
+  if (!link) { return; }
+  const go = link.dataset.go;
+  if (go === "home") {
+    showScreen("screen-home");
+  } else if (go === "search") {
+    showScreen("screen-home");
+    const input = document.getElementById("search-input");
+    input.focus();
+    input.select();
+  } else if (go === "notes") {
+    openNotes();
+  } else if (go === "subject") {
+    openSubject(link.dataset.subject);
+  }
+});
 
 // ---------- Remember where she is (so a reload puts her back) ----------
 // Called whenever something changes: a new screen, an answer, a rating, a checkbox.
@@ -1224,12 +1282,12 @@ document.getElementById("my-notes-btn").addEventListener("click", openNotes);
 document.getElementById("notes-back").addEventListener("click", function () { showScreen("screen-home"); });
 
 // ---------- Wide screens: the case screen's side panel ----------
-// At 1100px and wider, her notes and "Questions linked to this case" move into a side
+// At 1280px and wider (the sidebar takes 240px from 1024px up), her notes and "Questions linked to this case" move into a side
 // panel to the right of the case text (it stays in view while she scrolls; see style.css).
 // Narrower (phones), they stay exactly where they are in index.html. They are moved, not
 // copied, so typing, saving and tapping work the same either way. A marker remembers each
 // one's place, so they go back when the window gets narrower again.
-const WIDE_LAYOUT = window.matchMedia("(min-width: 1100px)");
+const WIDE_LAYOUT = window.matchMedia("(min-width: 1280px)");
 const caseSideParts = [
   document.querySelector("#screen-case .notes-card"),
   document.getElementById("case-questions-block")
@@ -3300,6 +3358,8 @@ document.getElementById("restore-input").addEventListener("change", function (ev
 
 // ---------- Start the app ----------
 buildHome();
+buildSidebar();
+updateSidebar();
 showTodayCard();
 
 // If she was somewhere else when the app last closed, don't flash the home screen

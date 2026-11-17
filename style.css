@@ -29,6 +29,14 @@
   --press-scale: 0.97;                /* how much a button shrinks while pressed */
   --press-shade: rgba(0, 0, 0, 0.07); /* the darker tint laid over it while pressed */
   --press-time: 120ms;                /* how quickly it shrinks and springs back */
+  /* Sidebar (wide screens): dark in both light and dark mode. */
+  --sidebar-bg: #16243f;
+  --sidebar-text: #e6ebf4;
+  --sidebar-muted: #9ba8c0;
+  --sidebar-hover: rgba(255, 255, 255, 0.07);
+  --sidebar-current: rgba(255, 255, 255, 0.14);
+  --sidebar-accent: #8fb0ea;
+  --sidebar-width: 240px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -54,6 +62,7 @@
     --hl-doctrine: #b7d85c; --hl-doctrine-preview: rgba(183, 216, 92, 0.35);  --hl-doctrine-removing: #4f5a2c;
     --tag-green: #4cc285;  --tag-yellow: #f2c94c;  --tag-red: #f07167;  --tag-check: #15171b;
     --press-shade: rgba(255, 255, 255, 0.10);  /* in dark mode, a light tint shows better */
+    --sidebar-bg: #0e1013;
   }
 }
 
@@ -944,14 +953,14 @@ body.sheet-open { overflow: hidden; }
   body[data-screen="screen-home"] .page { max-width: 900px; }
   #screen-home .subject-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
 }
-@media (min-width: 1100px) {
+@media (min-width: 1280px) {
   body[data-screen="screen-home"] .page { max-width: 1040px; }
   #screen-home .subject-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 
 /* Case screen: her notes and the linked questions in a side panel on the right
    (moved there by placeCaseSide in app.js). The case text keeps its 640px column. */
-@media (min-width: 1100px) {
+@media (min-width: 1280px) {
   body[data-screen="screen-case"] .page { max-width: 1040px; }
   #screen-case { position: relative; padding-right: 368px; }   /* 1008 - 368 = 640px for the case */
   #screen-case > .case-side { position: absolute; top: 0; right: 0; bottom: 0; width: 344px; }
@@ -968,7 +977,7 @@ body.sheet-open { overflow: hidden; }
 /* Question screen: "Find in case" opens as a panel on the right, next to the question,
    instead of sliding up. The question moves left to make room (it keeps its 640px
    column), nothing is dimmed, and the page still scrolls. Close with ✕ or Esc. */
-@media (min-width: 1100px) {
+@media (min-width: 1280px) {
   .sheet {
     top: 0; bottom: 0; left: auto; right: 0;
     width: 400px; max-width: none; height: 100vh; height: 100dvh; margin: 0;
@@ -981,4 +990,39 @@ body.sheet-open { overflow: hidden; }
   .sheet-handle { display: none; }
   .sheet-backdrop { display: none !important; }
   body.sheet-open { overflow: visible; padding-right: 400px; }
+}
+
+/* ---------- Sidebar (index.html #sidebar, app.js buildSidebar / updateSidebar) ----------
+   Hidden below 1024px (phones, iPads in portrait). From 1024px (iPad in landscape, Mac):
+   fixed on the left, dark, and the page fills the rest. Because it takes 240px, the
+   side-panel layouts above (case notes, Find in case, 3 home columns) start at 1280px. */
+.sidebar { display: none; }
+@media (min-width: 1024px) {
+  body { padding-left: var(--sidebar-width); }
+  .sidebar {
+    display: flex; flex-direction: column; gap: 2px;
+    position: fixed; top: 0; bottom: 0; left: 0; z-index: 20;
+    width: var(--sidebar-width); overflow-y: auto; overscroll-behavior: contain;
+    padding: calc(20px + env(safe-area-inset-top)) 12px calc(20px + env(safe-area-inset-bottom)) calc(12px + env(safe-area-inset-left));
+    background: var(--sidebar-bg); color: var(--sidebar-text);
+  }
+  .sidebar-title { margin: 0 10px 14px; font-size: 19px; font-weight: 800; letter-spacing: -0.01em; }
+  .sidebar-heading {
+    margin: 18px 10px 6px; font-size: 12px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.08em; color: var(--sidebar-muted);
+  }
+  .sidebar-link {
+    display: flex; align-items: center; gap: 10px; width: 100%; min-height: 40px;
+    padding: 8px 10px; border: 0; border-radius: 8px; background: transparent;
+    color: inherit; font: inherit; font-size: 15px; line-height: 1.3; text-align: left; cursor: pointer;
+  }
+  .sidebar-link:hover { background: var(--sidebar-hover); }
+  .sidebar-link:focus-visible { outline: 2px solid var(--sidebar-accent); outline-offset: -2px; }
+  .sidebar-link[aria-current="page"] { background: var(--sidebar-current); font-weight: 700; box-shadow: inset 3px 0 0 var(--sidebar-accent); }
+  .sidebar-icon { flex: 0 0 22px; text-align: center; font-size: 15px; }
+  .sidebar-number {
+    height: 22px; border-radius: 50%; border: 1.5px solid var(--sidebar-muted);
+    font-size: 12px; font-weight: 700; line-height: 19px; color: var(--sidebar-muted);
+  }
+  .sidebar-link[aria-current="page"] .sidebar-number { border-color: var(--sidebar-accent); color: var(--sidebar-accent); }
 }

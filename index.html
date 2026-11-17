@@ -19,6 +19,19 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
 </head>
 <body data-screen="screen-home">
+  <!-- Sidebar: wide screens only (1024px and up: Mac, iPad in landscape). Hidden on phones.
+       The subject buttons are added by app.js (buildSidebar); the current section is marked
+       with aria-current="page" (updateSidebar). -->
+  <nav class="sidebar" id="sidebar" aria-label="Sections">
+    <p class="sidebar-title">Bar Reviewer</p>
+    <button type="button" class="sidebar-link" data-go="home"><span class="sidebar-icon" aria-hidden="true">🏠</span>Home</button>
+    <button type="button" class="sidebar-link" data-go="search"><span class="sidebar-icon" aria-hidden="true">🔍</span>Search</button>
+    <p class="sidebar-heading">Subjects</p>
+    <div id="sidebar-subjects"></div>
+    <p class="sidebar-heading">My study</p>
+    <button type="button" class="sidebar-link" data-go="notes"><span class="sidebar-icon" aria-hidden="true">📝</span>My notes</button>
+  </nav>
+
   <main class="page">
     <!-- Shown if the questions file can't be loaded -->
     <p class="error" id="load-error" hidden></p>

@@ -334,10 +334,10 @@ function showClosest(question, reason, sourceText) {
 const sheet = document.getElementById("find-sheet");
 const backdrop = document.getElementById("find-backdrop");
 let sheetOpen = false;
-// Wide screens (1100px and up): the panel opens on the right, next to the question,
+// Wide screens (1280px and up, next to the sidebar): the panel opens on the right, next to the question,
 // instead of sliding up (see style.css). No dimming, the page still scrolls, and the
 // swipe-down-to-close gesture is off. Phones keep the slide-up panel.
-const FIND_WIDE = window.matchMedia("(min-width: 1100px)");
+const FIND_WIDE = window.matchMedia("(min-width: 1280px)");
 
 function openSheet() {
   sheetOpen = true;
