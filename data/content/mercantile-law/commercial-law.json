@@ -136,6 +136,21 @@
       "ruling": "The petition was dismissed. (1) The petitioner's arguments are \"inextricably intertwined with underlying questions of fact\" that require the reception of evidence, and the Court is not a trier of fact. (2) Monopolies: the Constitution does not prohibit monopolies per se, and granting a concession to a winning bidder to develop, operate and maintain airports does not by itself create a monopoly that violates the Constitution, because exclusivity is inherent in a concession to deliver a public service. The Philippine Competition Act (RA No. 10667) does not penalize merely having a dominant position, but abusing it; showing that would take evidence on the relevant market, dominance and abusive conduct. The same is true of the claim that bundling is an anti-competitive agreement. (3) The anti-dummy and Section 11, Article XII claims failed because the petitioner did not allege facts showing that any corporation falsely simulated Filipino ownership, or that any law reserves such projects for Filipino-owned corporations (Executive Order No. 65 even exempts BOT infrastructure contracts from the 40% foreign ownership limit); the \"shady companies\" and \"grave abuse of discretion\" claims also raised factual questions or were bare conclusions of law. (4) Direct recourse to the Court is proper only for questions of law. The doctrine of hierarchy of courts is a constitutional filtering mechanism and a \"bright-line rule\" that cannot be set aside by invoking transcendental importance. The Court reviewed its history: the Angara model of direct recourse, the transcendental importance doctrine, the Diocese of Bacolod exceptions, and why hierarchy of courts is a constitutional imperative (the structure of the judicial system and due process). The only case in which the Court may take up factual questions at the first instance is the review of the factual basis of a martial law proclamation under Section 18, Article VII.",
       "keyDoctrine": "The Supreme Court is **not a trier of facts**. Direct recourse to it is proper only for **pure questions of law**; when a factual issue is indispensable, the Court refuses to rule even if the case is said to be of **transcendental importance**, and the petition must first go to the proper trial court or the Court of Appeals. Granting an exclusive concession to a winning bidder is not by itself a prohibited monopoly.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2019/mar2019/gr_217158_2019.html"
+    },
+    {
+      "id": "case-0011",
+      "status": "draft",
+      "name": "Narra Nickel Mining and Development Corp. v. Redmont Consolidated Mines Corp.",
+      "grNumber": "G.R. No. 195580",
+      "year": 2014,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "facts": "Redmont Consolidated Mines Corp. (Redmont), a domestic corporation, wanted to explore and mine areas in Palawan, but learned that the areas were already covered by Mineral Production Sharing Agreement (MPSA) applications of Narra Nickel Mining and Development Corp. (Narra), Tesoro Mining and Development, Inc. (Tesoro) and McArthur Mining, Inc. (McArthur). In January 2007 Redmont filed three petitions before the Panel of Arbitrators (POA) of the Department of Environment and Natural Resources (DENR) to deny those applications. It alleged that at least 60% of the capital stock of McArthur, Tesoro and Narra was owned and controlled by MBMI Resources, Inc. (MBMI), a 100% Canadian corporation, so that they were not Filipino and could not hold MPSAs, which are reserved to Filipino citizens and corporations at least 60% Filipino-owned. The three companies answered that they were qualified persons under the Philippine Mining Act, and argued that the \"control test\" under the Foreign Investments Act (FIA) applied, not the grandfather rule. In December 2007 the POA disqualified them as foreign corporations and declared their MPSAs null and void. The Mines Adjudication Board reversed the POA, but the Court of Appeals reversed the Board and upheld the POA's finding that the three are foreign corporations, with the rejection of their MPSA applications to be recommended to the DENR Secretary. The companies went to the Supreme Court under Rule 45. They argued, among other things, that the case was moot because they had converted their MPSA applications to Financial or Technical Assistance Agreement (FTAA) applications and, later, because MBMI's shares had been sold to DMCI, a Philippine corporation; that the grandfather rule did not apply; that the Court of Appeals wrongly applied the exceptions to the res inter alios acta rule; and that the POA had no jurisdiction.",
+      "issue": "Are Narra, Tesoro and McArthur Filipino or foreign corporations, which means: which test (the control test or the grandfather rule) determines a corporation's nationality for purposes of Section 2, Article XII of the Constitution, and when is each applied? Also: was the case moot, did the POA have jurisdiction, and was the Court of Appeals right to use the exceptions to the res inter alios acta rule?",
+      "ruling": "The petition was denied and the Court of Appeals' decision was affirmed. (1) The case is not moot: the conversion of the MPSA applications into FTAA applications after the case was filed was a suspicious strategy, and the case falls under the exceptions to mootness (a grave violation of the Constitution, paramount public interest, the need for controlling principles, and a situation capable of repetition yet evading review). (2) Nationality of a corporation is determined by two tests: the control test (the liberal rule) and the grandfather rule (the stricter rule). The control test is still the prevailing mode of determining whether a corporation is Filipino, but when there is doubt, based on the facts and circumstances, in the 60-40 Filipino equity ownership, the grandfather rule may be applied. The FIA's definition of a \"Philippine national\" cannot override the Constitution, and \"corporate layering\" used to circumvent the Constitution is illegal. Here the doubt arose because MBMI, a 100% Canadian corporation, funded the companies through layered corporations with little or no paid-in Filipino capital; when grandfathered, MBMI owns 60% or more of the equity of Narra, Tesoro and McArthur, so they are foreign and not qualified for MPSAs. (3) The joint ventures between the petitioners and MBMI were akin to partnerships, so the admission-by-co-partner rule applied. (4) The POA has jurisdiction to resolve disputes over MPSA applications (adverse claims, protests or oppositions), though it cannot approve or reject the applications, which belongs to the DENR Secretary. (5) The later sale of MBMI's shares to DMCI was disregarded in this case, because that matter was pending in another case (G.R. No. 202877).",
+      "keyDoctrine": "The **control test** is the prevailing way to decide whether a corporation is Filipino, but where there is **doubt** about the 60-40 Filipino equity (for example, layered corporations funded by a foreign investor), the **grandfather rule** applies and the ownership is traced up to the real owners. Corporate layering used to get around the Constitution's nationality requirement is illegal.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2014/apr2014/gr_195580_2014.html"
     }
   ],
   "questions": [
@@ -2225,6 +2240,239 @@
         "url": "https://lawphil.net/judjuris/juri2019/mar2019/gr_217158_2019.html",
         "part": "Decision, Part II-I (requisites of judicial review)",
         "excerpt": "As stated previously, parallel guidelines have been adopted by this Court in the exercise of judicial review: 1. actual case or controversy calling for the exercise of judicial power; 2. the person challenging the act must have \"standing\" to challenge; he must have a personal and substantial interest in the case such that he has sustained, or will sustain, direct injury as a result of its enforcement; 3. the question of constitutionality must be raised at the earliest possible opportunity; 4. the issue of constitutionality must be the very lis mota of the case. (Citations omitted.) Thus, the exercise of our power of judicial review is subject to these four requisites and the further requirement that we can only resolve pure questions of law."
+      }
+    },
+    {
+      "id": "q-0280",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "prompt": "A mining company applies for a mineral production sharing agreement. On the face of its articles, 60% of its capital is owned by two Philippine corporations, which in turn were funded by a 100% foreign corporation, and the Filipino shareholders paid in little or no money. The company argues that under the control test in the Foreign Investments Act it is a Philippine national, and that the grandfather rule is not in the FIA and has been abandoned. Based on Narra Nickel v. Redmont, which test applies and is the company Filipino?",
+      "suggestedAnswer": {
+        "answer": "The grandfather rule applies, because there is doubt as to the 60-40 Filipino equity ownership. Once the layered ownership is traced up to the real owners, the foreign corporation owns 60% or more, so the company is not Filipino and may not hold the agreement.",
+        "legalBasis": "Section 2, Article XII of the Constitution allows production-sharing and similar agreements only with Filipino citizens or corporations or associations at least 60% of whose capital is owned by such citizens. There are two acknowledged tests of a corporation's nationality: the control test (the liberal rule), under which shares of a corporation at least 60% Filipino-owned are counted as Filipino, and the grandfather rule (the stricter rule), under which only the shares corresponding to the Filipino percentage are counted as Filipino and the ownership must be traced. The control test is still the prevailing mode of determining whether a corporation is Filipino, but when there is doubt, based on the attendant facts and circumstances, in the 60-40 Filipino equity ownership, the grandfather rule may be applied. \"Corporate layering\" is allowed by the FIA, but if it is used to circumvent the Constitution and pertinent laws, it becomes illegal. Where a statute conflicts with the Constitution, the Constitution prevails.",
+        "application": "In Narra Nickel, the Court found doubt in the 60-40 equity ownership because the common investor, MBMI, a 100% Canadian corporation, funded the companies through layered corporations. The Court rejected the argument that \"doubt\" exists only when Filipino holdings are less than 60%, since corporations wanting to circumvent the law would show \"60% Filipino ownership\" at face value, and various schemes and layerings are used to get around the Constitution. It saw a scheme to circumvent the law that created a \"cloud of doubt\", so the grandfather rule had to be used to find the real participation of MBMI. Grandfathered, MBMI owned 60% or more of the equity of each of the companies.",
+        "conclusion": "The companies are foreign, not Filipino, and not qualified to hold the MPSAs."
+      },
+      "keyPoints": [
+        "Two tests of corporate nationality: the control test (liberal) and the grandfather rule (strict)",
+        "The control test is the prevailing mode",
+        "The grandfather rule may be applied when there is doubt in the 60-40 Filipino equity ownership",
+        "\"Doubt\" is not limited to cases where Filipino holdings are below 60%",
+        "Corporate layering is allowed, but it is illegal if used to circumvent the Constitution",
+        "The Constitution prevails over the FIA's definition of a Philippine national",
+        "Traced to the real owners, the foreign corporation owned 60% or more, so the companies are foreign"
+      ],
+      "caseIds": [
+        "case-0011"
+      ],
+      "source": {
+        "caseTitle": "Narra Nickel Mining and Development Corp. v. Redmont Consolidated Mines Corp.",
+        "grNumber": "G.R. No. 195580",
+        "url": "https://lawphil.net/judjuris/juri2014/apr2014/gr_195580_2014.html",
+        "part": "Decision, discussion of the grandfather test and of the doubt in the 60-40 equity ownership",
+        "excerpt": "Basically, there are two acknowledged tests in determining the nationality of a corporation: the control test and the grandfather rule. Paragraph 7 of DOJ Opinion No. 020, Series of 2005, adopting the 1967 SEC Rules which implemented the requirement of the Constitution and other laws pertaining to the controlling interests in enterprises engaged in the exploitation of natural resources owned by Filipino citizens, provides: … The first part of paragraph 7, DOJ Opinion No. 020, stating \"shares belonging to corporations or partnerships at least 60% of the capital of which is owned by Filipino citizens shall be considered as of Philippine nationality,\" pertains to the control test or the liberal rule. On the other hand, the second part of the DOJ Opinion which provides, \"if the percentage of the Filipino ownership in the corporation or partnership is less than 60%, only the number of shares corresponding to such percentage shall be counted as Philippine nationality,\" pertains to the stricter, more stringent grandfather rule. … We disagree. \"Corporate layering\" is admittedly allowed by the FIA; but if it is used to circumvent the Constitution and pertinent laws, then it becomes illegal. Further, the pronouncement of petitioners that the grandfather rule has already been abandoned must be discredited for lack of basis. … Elementary in statutory construction is when there is conflict between the Constitution and a statute, the Constitution will prevail. In this instance, specifically pertaining to the provisions under Art. XII of the Constitution on National Economy and Patrimony, Sec. 3 of the FIA will have no place of application. As decreed by the honorable framers of our Constitution, the grandfather rule prevails and must be applied. … After a scrutiny of the evidence extant on record, the Court finds that this case calls for the application of the grandfather rule since, as ruled by the POA and affirmed by the OP, doubt prevails and persists in the corporate ownership of petitioners. Also, as found by the CA, doubt is present in the 60-40 Filipino equity ownership of petitioners Narra, McArthur and Tesoro, since their common investor, the 100% Canadian corporation––MBMI, funded them. However, petitioners also claim that there is \"doubt\" only when the stockholdings of Filipinos are less than 60%. … The assertion of petitioners that \"doubt\" only exists when the stockholdings are less than 60% fails to convince this Court. DOJ Opinion No. 20, which petitioners quoted in their petition, only made an example of an instance where \"doubt\" as to the ownership of the corporation exists. It would be ludicrous to limit the application of the said word only to the instances where the stockholdings of non-Filipino stockholders are more than 40% of the total stockholdings in a corporation. The corporations interested in circumventing our laws would clearly strive to have \"60% Filipino Ownership\" at face value. It would be senseless for these applying corporations to state in their respective articles of incorporation that they have less than 60% Filipino stockholders since the applications will be denied instantly. Thus, various corporate schemes and layerings are utilized to circumvent the application of the Constitution. … Obviously, the instant case presents a situation which exhibits a scheme employed by stockholders to circumvent the law, creating a cloud of doubt in the Court’s mind. To determine, therefore, the actual participation, direct or indirect, of MBMI, the grandfather rule must be used. … In ending, the \"control test\" is still the prevailing mode of determining whether or not a corporation is a Filipino corporation, within the ambit of Sec. 2, Art. II of the 1987 Constitution, entitled to undertake the exploration, development and utilization of the natural resources of the Philippines. When in the mind of the Court there is doubt, based on the attendant facts and circumstances of the case, in the 60-40 Filipino-equity ownership in the corporation, then it may apply the \"grandfather rule.\""
+      }
+    },
+    {
+      "id": "q-0281",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "prompt": "After a complaint is filed challenging the nationality of several mining companies, they convert their mining applications into a different kind of agreement and then ask the Court to dismiss the case as moot. Based on Narra Nickel v. Redmont, is the case moot, and may the Court still decide it?",
+      "suggestedAnswer": {
+        "answer": "The case is not moot, and the Court may decide it. The conversion of the applications was a suspicious move to have the case dismissed as moot, and the case falls within the recognized exceptions to the mootness rule.",
+        "legalBasis": "A case is moot or academic when it \"ceases to present a justiciable controversy by virtue of supervening events, so that a declaration thereon would be of no practical use or value,\" and courts generally decline jurisdiction over it. However, the mootness principle accepts exceptions. Under David v. Macapagal-Arroyo, courts can decide an otherwise moot case: (1) when there is a grave violation of the Constitution; (2) when the exceptional character of the situation and paramount public interest are involved; (3) when the constitutional issue raised requires the formulation of controlling principles to guide the bench, the bar and the public; and (4) when the case is capable of repetition yet evading review.",
+        "application": "In Narra Nickel, the Court said the changing of applications from one type to another just because a case was filed would \"raise not a few sceptics' eyebrows\" and was \"quite obvious\" strategy to have the case dismissed as moot. All four exceptions were present: a grave violation of Section 2, Article XII was being committed by a foreign corporation through corporate layering under allegedly Filipino corporations; the intricate layering involved paramount public interest because it affects the exploitation of the country's natural resources; the petitioners' actions raised the question of what principle applies to similar cases, on which no definite ruling had been made; and the issues would serve as a guide to the bench, the bar and the public.",
+        "conclusion": "The case is not moot, and the Court may resolve it."
+      },
+      "keyPoints": [
+        "A case is moot when supervening events leave no justiciable controversy",
+        "Courts may still decide a moot case under the David v. Macapagal-Arroyo exceptions",
+        "(1) Grave violation of the Constitution; (2) exceptional character and paramount public interest; (3) need for controlling principles; (4) capable of repetition yet evading review",
+        "The conversion of applications after the case was filed was suspicious",
+        "All the exceptions were present in the case"
+      ],
+      "caseIds": [
+        "case-0011"
+      ],
+      "source": {
+        "caseTitle": "Narra Nickel Mining and Development Corp. v. Redmont Consolidated Mines Corp.",
+        "grNumber": "G.R. No. 195580",
+        "url": "https://lawphil.net/judjuris/juri2014/apr2014/gr_195580_2014.html",
+        "part": "Decision, \"This case not moot and academic\" and \"Conversion of MPSA applications to FTAA applications\"",
+        "excerpt": "Basically, a case is said to be moot and/or academic when it \"ceases to present a justiciable controversy by virtue of supervening events, so that a declaration thereon would be of no practical use or value.\" Thus, the courts \"generally decline jurisdiction over the case or dismiss it on the ground of mootness.\" The \"mootness\" principle, however, does accept certain exceptions and the mere raising of an issue of \"mootness\" will not deter the courts from trying a case when there is a valid reason to do so. In David v. Macapagal-Arroyo (David), the Court provided four instances where courts can decide an otherwise moot case, thus: 1.) There is a grave violation of the Constitution; 2.) The exceptional character of the situation and paramount public interest is involved; 3.) When constitutional issue raised requires formulation of controlling principles to guide the bench, the bar, and the public; and 4.) The case is capable of repetition yet evading review. … All of the exceptions stated above are present in the instant case. We of this Court note that a grave violation of the Constitution, specifically Section 2 of Article XII, is being committed by a foreign corporation right under our country’s nose through a myriad of corporate layering under different, allegedly, Filipino corporations. The intricate corporate layering utilized by the Canadian company, MBMI, is of exceptional character and involves paramount public interest since it undeniably affects the exploitation of our Country’s natural resources. The corresponding actions of petitioners during the lifetime and existence of the instant case raise questions as what principle is to be applied to cases with similar issues. No definite ruling on such principle has been pronounced by the Court; hence, the disposition of the issues or errors in the instant case will serve as a guide \"to the bench, the bar and the public.\" Finally, the instant case is capable of repetition yet evading review, since the Canadian company, MBMI, can keep on utilizing dummy Filipino corporations through various schemes of corporate layering and conversion of applications to skirt the constitutional prohibition against foreign mining in Philippine soil. … The CA’s analysis of the actions of petitioners after the case was filed against them by respondent is on point. The changing of applications by petitioners from one type to another just because a case was filed against them, in truth, would raise not a few sceptics’ eyebrows. What is the reason for such conversion? Did the said conversion not stem from the case challenging their citizenship and to have the case dismissed against them for being \"moot\"? It is quite obvious that it is petitioners’ strategy to have the case dismissed against them for being \"moot.\""
+      }
+    },
+    {
+      "id": "q-0282",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "prompt": "Several Philippine corporations entered into what they call \"joint venture\" agreements with a foreign corporation. In a case about their nationality, the Court of Appeals used statements of the foreign corporation against them under the rule on admissions by a co-partner. The corporations object: the foreign corporation is not a party to the case, and no partnership exists because nothing was put in writing. Based on Narra Nickel v. Redmont, may the statements be used?",
+      "suggestedAnswer": {
+        "answer": "Yes. The relationships among the corporations and the foreign corporation are treated as partnerships, so the rule on admission by a co-partner (Section 29, Rule 130) applies.",
+        "legalBasis": "A partnership is two or more persons who bind themselves to contribute money, property or industry to a common fund with the intention of dividing the profits among themselves. Joint ventures are deemed \"akin\" to partnerships, so the rules and legal incidents governing partnerships are applied to them. Corporations are, as a rule, prohibited from entering into partnerships, so they enter into joint venture agreements to form \"pseudo partnerships.\" Where an intricate web of ventures was executed to circumvent the legal prohibition against corporations entering into partnerships, the relationship should be deemed a partnership and the laws on partnership applied.",
+        "application": "In Narra Nickel, the Court said the relationships between the petitioners and MBMI were \"no simple joint venture agreements\"; the intricate web of ventures was executed to circumvent the legal prohibition on corporations entering into partnerships. The elements of partnership being present, the relationship was deemed a partnership, so the Court of Appeals was justified in applying Section 29, Rule 130, finding that \"by entering into a joint venture, MBMI have a joint interest\" with the petitioners.",
+        "conclusion": "The statements may be used against the petitioners as admissions under the co-partner rule."
+      },
+      "keyPoints": [
+        "A partnership: persons contribute to a common fund to divide profits",
+        "Joint ventures are akin to partnerships, and partnership rules apply to them",
+        "Corporations are generally barred from partnerships, hence \"pseudo partnerships\" through joint ventures",
+        "An intricate web of ventures to evade the prohibition is deemed a partnership",
+        "So Section 29, Rule 130 (admission by co-partner) could be applied"
+      ],
+      "caseIds": [
+        "case-0011"
+      ],
+      "source": {
+        "caseTitle": "Narra Nickel Mining and Development Corp. v. Redmont Consolidated Mines Corp.",
+        "grNumber": "G.R. No. 195580",
+        "url": "https://lawphil.net/judjuris/juri2014/apr2014/gr_195580_2014.html",
+        "part": "Decision, discussion of the res inter alios acta rule (partnership and joint venture)",
+        "excerpt": "A partnership is defined as two or more persons who bind themselves to contribute money, property, or industry to a common fund with the intention of dividing the profits among themselves. On the other hand, joint ventures have been deemed to be \"akin\" to partnerships since it is difficult to distinguish between joint ventures and partnerships. Thus: … Though some claim that partnerships and joint ventures are totally different animals, there are very few rules that differentiate one from the other; thus, joint ventures are deemed \"akin\" or similar to a partnership. In fact, in joint venture agreements, rules and legal incidents governing partnerships are applied. … Accordingly, culled from the incidents and records of this case, it can be assumed that the relationships entered between and among petitioners and MBMI are no simple \"joint venture agreements.\" As a rule, corporations are prohibited from entering into partnership agreements; consequently, corporations enter into joint venture agreements with other corporations or partnerships for certain transactions in order to form \"pseudo partnerships.\" … Obviously, as the intricate web of \"ventures\" entered into by and among petitioners and MBMI was executed to circumvent the legal prohibition against corporations entering into partnerships, then the relationship created should be deemed as \"partnerships,\" and the laws on partnership should be applied. Thus, a joint venture agreement between and among corporations may be seen as similar to partnerships since the elements of partnership are present. … Considering that the relationships found between petitioners and MBMI are considered to be partnerships, then the CA is justified in applying Sec. 29, Rule 130 of the Rules by stating that \"by entering into a joint venture, MBMI have a joint interest\" with Narra, Tesoro and McArthur."
+      }
+    },
+    {
+      "id": "q-0283",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "prompt": "According to Narra Nickel v. Redmont, which two acknowledged tests determine the nationality of a corporation, and which is the stricter?",
+      "choices": {
+        "A": "The control test, which is the stricter, and the grandfather rule, which is the liberal one",
+        "B": "The control test, which is the liberal rule, and the grandfather rule, which is the stricter rule",
+        "C": "The capital test and the voting test, both equally strict",
+        "D": "The place-of-incorporation test and the control test, the former being stricter"
+      },
+      "correct": "B",
+      "explanation": "B is correct. The Court said there are two acknowledged tests: the control test and the grandfather rule. The first part of paragraph 7 of DOJ Opinion No. 020 (shares of corporations at least 60% Filipino-owned are considered Filipino) pertains to the control test or the liberal rule, while the second part (only the number of shares corresponding to the Filipino percentage is counted as Filipino when it is below 60%) pertains to the stricter, more stringent grandfather rule. A reverses the two. C and D name tests the Court did not identify.",
+      "caseIds": [
+        "case-0011"
+      ],
+      "source": {
+        "caseTitle": "Narra Nickel Mining and Development Corp. v. Redmont Consolidated Mines Corp.",
+        "grNumber": "G.R. No. 195580",
+        "url": "https://lawphil.net/judjuris/juri2014/apr2014/gr_195580_2014.html",
+        "part": "Decision, discussion of the grandfather test",
+        "excerpt": "Basically, there are two acknowledged tests in determining the nationality of a corporation: the control test and the grandfather rule. Paragraph 7 of DOJ Opinion No. 020, Series of 2005, adopting the 1967 SEC Rules which implemented the requirement of the Constitution and other laws pertaining to the controlling interests in enterprises engaged in the exploitation of natural resources owned by Filipino citizens, provides: … The first part of paragraph 7, DOJ Opinion No. 020, stating \"shares belonging to corporations or partnerships at least 60% of the capital of which is owned by Filipino citizens shall be considered as of Philippine nationality,\" pertains to the control test or the liberal rule. On the other hand, the second part of the DOJ Opinion which provides, \"if the percentage of the Filipino ownership in the corporation or partnership is less than 60%, only the number of shares corresponding to such percentage shall be counted as Philippine nationality,\" pertains to the stricter, more stringent grandfather rule."
+      }
+    },
+    {
+      "id": "q-0284",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "prompt": "In Narra Nickel v. Redmont, when did the Court say the grandfather rule may be applied instead of the control test?",
+      "choices": {
+        "A": "Always, because the control test has been abandoned",
+        "B": "Only when the foreign stockholders own more than 40% of the shares on paper",
+        "C": "When there is doubt, based on the facts and circumstances, in the 60-40 Filipino equity ownership of the corporation",
+        "D": "Only when the corporation is engaged in mining"
+      },
+      "correct": "C",
+      "explanation": "C is correct. The Court said: \"the 'control test' is still the prevailing mode of determining whether or not a corporation is a Filipino corporation ... When in the mind of the Court there is doubt, based on the attendant facts and circumstances of the case, in the 60-40 Filipino-equity ownership in the corporation, then it may apply the 'grandfather rule.'\" A is wrong because the Court said the control test is still prevailing and rejected the claim that the grandfather rule had been abandoned. B is wrong because the Court said it would be ludicrous to limit \"doubt\" to cases where non-Filipino holdings on paper exceed 40%, since companies wanting to circumvent the law show 60% Filipino ownership at face value. D is wrong because the doubt, not the industry, decides.",
+      "caseIds": [
+        "case-0011"
+      ],
+      "source": {
+        "caseTitle": "Narra Nickel Mining and Development Corp. v. Redmont Consolidated Mines Corp.",
+        "grNumber": "G.R. No. 195580",
+        "url": "https://lawphil.net/judjuris/juri2014/apr2014/gr_195580_2014.html",
+        "part": "Decision, discussion of the grandfather test, and the closing paragraph",
+        "excerpt": "After a scrutiny of the evidence extant on record, the Court finds that this case calls for the application of the grandfather rule since, as ruled by the POA and affirmed by the OP, doubt prevails and persists in the corporate ownership of petitioners. Also, as found by the CA, doubt is present in the 60-40 Filipino equity ownership of petitioners Narra, McArthur and Tesoro, since their common investor, the 100% Canadian corporation––MBMI, funded them. However, petitioners also claim that there is \"doubt\" only when the stockholdings of Filipinos are less than 60%. … The assertion of petitioners that \"doubt\" only exists when the stockholdings are less than 60% fails to convince this Court. DOJ Opinion No. 20, which petitioners quoted in their petition, only made an example of an instance where \"doubt\" as to the ownership of the corporation exists. It would be ludicrous to limit the application of the said word only to the instances where the stockholdings of non-Filipino stockholders are more than 40% of the total stockholdings in a corporation. The corporations interested in circumventing our laws would clearly strive to have \"60% Filipino Ownership\" at face value. It would be senseless for these applying corporations to state in their respective articles of incorporation that they have less than 60% Filipino stockholders since the applications will be denied instantly. Thus, various corporate schemes and layerings are utilized to circumvent the application of the Constitution. … In ending, the \"control test\" is still the prevailing mode of determining whether or not a corporation is a Filipino corporation, within the ambit of Sec. 2, Art. II of the 1987 Constitution, entitled to undertake the exploration, development and utilization of the natural resources of the Philippines. When in the mind of the Court there is doubt, based on the attendant facts and circumstances of the case, in the 60-40 Filipino-equity ownership in the corporation, then it may apply the \"grandfather rule.\""
+      }
+    },
+    {
+      "id": "q-0285",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "prompt": "Under Section 2, Article XII of the 1987 Constitution as quoted in Narra Nickel v. Redmont, with whom may the State enter into co-production, joint venture or production-sharing agreements for the use of natural resources?",
+      "choices": {
+        "A": "Any corporation, whatever its ownership, if the Philippine Mining Act allows it",
+        "B": "Only foreign-owned corporations that offer technical and financial assistance",
+        "C": "Filipino citizens, or corporations or associations at least sixty per centum of whose capital is owned by such citizens",
+        "D": "Only Filipino citizens, never corporations"
+      },
+      "correct": "C",
+      "explanation": "C is correct. Section 2 provides that the State may enter into co-production, joint venture or production-sharing agreements \"with Filipino citizens, or corporations or associations at least sixty per centum of whose capital is owned by such citizens,\" for a period not exceeding twenty-five years, renewable for not more than twenty-five years. A is wrong because the constitutional ownership requirement controls. B is wrong because foreign-owned corporations may only be engaged by the President for technical or financial assistance in large-scale exploration, development and utilization of minerals under the separate paragraph of Section 2. D is wrong because corporations at least 60% Filipino-owned also qualify.",
+      "caseIds": [
+        "case-0011"
+      ],
+      "source": {
+        "caseTitle": "Narra Nickel Mining and Development Corp. v. Redmont Consolidated Mines Corp.",
+        "grNumber": "G.R. No. 195580",
+        "url": "https://lawphil.net/judjuris/juri2014/apr2014/gr_195580_2014.html",
+        "part": "Decision, discussion of the grandfather test (Section 2, Article XII of the Constitution)",
+        "excerpt": "Sec. 2. All lands of the public domain, waters, minerals, coal, petroleum and other mineral oils, all forces of potential energy, fisheries, forests or timber, wildlife, flora and fauna, and other natural resources are owned by the State. With the exception of agricultural lands, all other natural resources shall not be alienated. The exploration, development, and utilization of natural resources shall be under the full control and supervision of the State. The State may directly undertake such activities, or it may enter into co-production, joint venture or production-sharing agreements with Filipino citizens, or corporations or associations at least sixty per centum of whose capital is owned by such citizens. Such agreements may be for a period not exceeding twenty-five years, renewable for not more than twenty-five years, and under such terms and conditions as may be provided by law. … The emphasized portion of Sec. 2 which focuses on the State entering into different types of agreements for the exploration, development, and utilization of natural resources with entities who are deemed Filipino due to 60 percent ownership of capital is pertinent to this case, since the issues are centered on the utilization of our country’s natural resources or specifically, mining. Thus, there is a need to ascertain the nationality of petitioners since, as the Constitution so provides, such agreements are only allowed corporations or associations \"at least 60 percent of such capital is owned by such citizens.\" The deliberations in the Records of the 1986 Constitutional Commission shed light on how a citizenship of a corporation will be determined:"
+      }
+    },
+    {
+      "id": "q-0286",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "prompt": "In Narra Nickel v. Redmont, what did the Court say about the jurisdiction of the Panel of Arbitrators (POA) over disputes about mining applications?",
+      "choices": {
+        "A": "The POA can resolve adverse claims and oppositions to MPSA applications, but cannot approve or reject the applications, which is for the DENR Secretary",
+        "B": "The POA can approve or reject MPSA applications directly",
+        "C": "Only the regular courts can hear disputes over MPSA applications",
+        "D": "The POA can cancel existing mineral agreements"
+      },
+      "correct": "A",
+      "explanation": "A is correct. The Court said the POA's power to resolve adverse claims, oppositions or protests under Section 77(a) of RA 7942 is confined to those relating to applications for the grant of mineral rights; it has no authority to approve or reject the applications, a power vested in the DENR Secretary, so its finding that the petitioners were foreign corporations was valid. B is wrong because approval and rejection belong to the DENR Secretary. C is wrong because the Court affirmed the POA's jurisdiction, also under the doctrine of primary jurisdiction. D is wrong because the POA's jurisdiction over \"disputes involving rights to mining areas\" has nothing to do with cancellation of existing mineral agreements.",
+      "caseIds": [
+        "case-0011"
+      ],
+      "source": {
+        "caseTitle": "Narra Nickel Mining and Development Corp. v. Redmont Consolidated Mines Corp.",
+        "grNumber": "G.R. No. 195580",
+        "url": "https://lawphil.net/judjuris/juri2014/apr2014/gr_195580_2014.html",
+        "part": "Decision, discussion of the jurisdiction of the POA",
+        "excerpt": "These provisions lead us to conclude that the power of the POA to resolve any adverse claim, opposition, or protest relative to mining rights under Sec. 77(a) of RA 7942 is confined only to adverse claims, conflicts and oppositions relating to applications for the grant of mineral rights. … Accordingly, as we enunciated in Celestial, the POA unquestionably has jurisdiction to resolve disputes over MPSA applications subject of Redmont’s petitions. However, said jurisdiction does not include either the approval or rejection of the MPSA applications, which is vested only upon the Secretary of the DENR. Thus, the finding of the POA, with respect to the rejection of petitioners’ MPSA applications being that they are foreign corporation, is valid."
+      }
+    },
+    {
+      "id": "q-0287",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "prompt": "In Narra Nickel v. Redmont, how did the Court treat the petitioners' Manifestation that MBMI's shareholdings had been sold to DMCI, a Philippine corporation at least 60% Philippine-owned?",
+      "choices": {
+        "A": "It declared the case moot because the sale cured the defect in their nationality",
+        "B": "It disregarded the sale for purposes of this case, since the question was being tackled in another pending case (G.R. No. 202877)",
+        "C": "It ordered the DENR to re-evaluate their applications based on the sale",
+        "D": "It treated the sale as proof that the petitioners had been Filipino all along"
+      },
+      "correct": "B",
+      "explanation": "B is correct. The Court said the sale of the MBMI shareholdings to DMCI \"does not have any bearing in the instant case and said fact should be disregarded,\" and that the question was being tackled in G.R. No. 202877, so it is a non-issue in this case. A is wrong because the petitioners asked for a mootness declaration, which the Court did not grant. C and D are wrong because the Court made no such ruling; it simply did not consider the manifestation.",
+      "caseIds": [
+        "case-0011"
+      ],
+      "source": {
+        "caseTitle": "Narra Nickel Mining and Development Corp. v. Redmont Consolidated Mines Corp.",
+        "grNumber": "G.R. No. 195580",
+        "url": "https://lawphil.net/judjuris/juri2014/apr2014/gr_195580_2014.html",
+        "part": "Decision, discussion of the petitioners' Manifestation and Submission dated 19 October 2012",
+        "excerpt": "As stated before, petitioners’ Manifestation and Submission dated October 19, 2012 would want us to declare the instant petition moot and academic due to the transfer and conveyance of all the shareholdings and interests of MBMI to DMCI, a corporation duly organized and existing under Philippine laws and is at least 60% Philippine-owned. Petitioners reasoned that they now cannot be considered as foreign-owned; the transfer of their shares supposedly cured the \"defect\" of their previous nationality. They claimed that their current FTAA contract with the State should stand since \"even wholly-owned foreign corporations can enter into an FTAA with the State.\" Petitioners stress that there should no longer be any issue left as regards their qualification to enter into FTAA contracts since they are qualified to engage in mining activities in the Philippines. Thus, whether the \"grandfather rule\" or the \"control test\" is used, the nationalities of petitioners cannot be doubted since it would pass both tests. … The sale of the MBMI shareholdings to DMCI does not have any bearing in the instant case and said fact should be disregarded. The manifestation can no longer be considered by us since it is being tackled in G.R. No. 202877 pending before this Court. Thus, the question of whether petitioners, allegedly a Philippine-owned corporation due to the sale of MBMI's shareholdings to DMCI, are allowed to enter into FTAAs with the State is a non-issue in this case."
       }
     }
   ]
