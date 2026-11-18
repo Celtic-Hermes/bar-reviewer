@@ -305,6 +305,18 @@ const MOVED_SUBJECTS = {
   "Communication Law": "Mercantile Law"  // now a topic under Mercantile Law
 };
 
+// Topics that were renamed: "Subject|Old topic" → new topic name. Saved places on this device
+// (last practiced, the round she's in, the saved spot) and Study Schedule links saved with the old
+// name follow the rename. Her scores, notes and highlights are saved by ID and need nothing.
+const RENAMED_TOPICS = {
+  "Mercantile Law|Communication Law": "Commercial Law"
+};
+
+function currentTopicName(subject, topic) {
+  const key = subject + "|" + topic;
+  return Object.prototype.hasOwnProperty.call(RENAMED_TOPICS, key) ? RENAMED_TOPICS[key] : topic;
+}
+
 let subjectsWereMoved = false;  // true if loading her progress just moved some totals
 
 function followMovedSubjects(subjects) {
@@ -681,7 +693,7 @@ function loadLastPractice() {
   try {
     const raw = JSON.parse(localStorage.getItem(LAST_PRACTICE_KEY));
     if (!isPlainObject(raw) || typeof raw.subject !== "string" || typeof raw.topic !== "string" || !Number(raw.at)) { return null; }
-    return { subject: raw.subject, topic: raw.topic, subtopic: typeof raw.subtopic === "string" ? raw.subtopic : null, at: Number(raw.at) };
+    return { subject: raw.subject, topic: currentTopicName(raw.subject, raw.topic), subtopic: typeof raw.subtopic === "string" ? raw.subtopic : null, at: Number(raw.at) };
   } catch (e) {
     return null;
   }
@@ -707,7 +719,7 @@ function loadLastRound() {
     if (!isPlainObject(raw) || typeof raw.subject !== "string" || typeof raw.topic !== "string" || !isPlainObject(raw.round)) { return null; }
     const r = raw.round;
     if (!Array.isArray(r.questionIds) || r.questionIds.length === 0 || !Number.isInteger(r.index) || r.index < 0 || r.index >= r.questionIds.length) { return null; }
-    return { subject: raw.subject, topic: raw.topic, subtopic: typeof raw.subtopic === "string" ? raw.subtopic : null, at: Number(raw.at) || 0, round: r };
+    return { subject: raw.subject, topic: currentTopicName(raw.subject, raw.topic), subtopic: typeof raw.subtopic === "string" ? raw.subtopic : null, at: Number(raw.at) || 0, round: r };
   } catch (e) {
     return null;
   }

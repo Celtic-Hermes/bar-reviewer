@@ -237,6 +237,9 @@ function putBackSpot(spot) {
     spot.subject = "Mercantile Law";
     if (spot.topic === "Right to Privacy") { spot.topic = "Communication Law"; }
   }
+  if (typeof spot.subject === "string" && typeof spot.topic === "string") {
+    spot.topic = currentTopicName(spot.subject, spot.topic);  // a topic renamed since it was saved
+  }
   if (spot.screen === "schedule") {
     openSchedule();
     return true;
@@ -1599,7 +1602,7 @@ function taskLinkTarget(link) {
   if (link.indexOf("topic:") === 0) {
     const parts = link.slice(6).split("|");  // subject | topic, or subject | topic | sub-topic
     const subject = parts[0];
-    const topic = parts[1] || "";
+    const topic = currentTopicName(subject, parts[1] || "");
     const subtopic = parts[2] || "";
     if (topicsFor(subject).indexOf(topic) === -1) { return null; }
     if (subtopic && subtopicsFor(subject, topic).indexOf(subtopic) === -1) { return null; }

@@ -25,7 +25,7 @@ Use these exact names everywhere (data, menus, filters):
 8. Legal and Judicial Ethics
 
 Topics so far (use these exact names):
-- Mercantile Law → **Communication Law** (the privacy cases: Zulueta, Hing, Vivares, Cadajas, Regala, IBP v. Purisima)
+- Mercantile Law → **Commercial Law** (renamed from Communication Law; so far the privacy cases: Zulueta, Hing, Vivares, Cadajas, Regala, IBP v. Purisima)
 - Legal and Judicial Ethics → **Notarial Practice**
 - Remedial Law → **Special Proceedings** → sub-topic **Writ of Amparo** (fill-in-the-blank items, one per section of A.M. No. 07-9-12-SC, q-0056 to q-0082)
 - Remedial Law → **Special Proceedings** → sub-topic **Custody of Minors and Habeas Corpus** (fill-in-the-blank items, one per section of A.M. No. 03-04-04-SC, q-0083 to q-0104)
@@ -70,7 +70,7 @@ Search has its **own screen** (`#screen-search`, not on the home screen), opened
 
 ### Miscellaneous section
 Below the 8 subjects, the home screen has a **Miscellaneous** section for extra subjects that are not bar subjects (listed in `MISC_SUBJECTS` in `app.js`). It is **empty for now** and shows a "Nothing here yet" note; keep the section in place for future content.
-- Communication Law is **not** a Miscellaneous subject anymore: it is a topic under Mercantile Law.
+- Communication Law is **not** a Miscellaneous subject anymore; its cases are in the topic **Commercial Law** under Mercantile Law (the topic was renamed from "Communication Law"; `RENAMED_TOPICS` in `progress.js` makes saved places and schedule links with the old name follow it; add to it for any future topic rename).
 - If a subject is ever renamed or its content moved to another subject, add the old → new name to `MOVED_SUBJECTS` in `progress.js`, so her saved per-subject scores follow the move.
 
 Content is grouped by **subject → topic** (for example, Civil Law → Obligations and Contracts).
@@ -89,7 +89,7 @@ The builder is not a lawyer and does not write questions. Claude writes them, so
 ## Content format (JSON files)
 Administrative cases use their A.C. number in the `grNumber` field (e.g. `"A.C. No. 9514"`).
 Content lives in JSON files, separate from the app code:
-- **Questions and case summaries live in one file per topic:** `data/content/<subject>/<topic>.json`, e.g. `data/content/mercantile-law/communication-law.json` (folder and file names: the exact subject and topic names in lower case, with every run of spaces or punctuation turned into `-`). Each file is `{"subject": "…", "topic": "…", "cases": [ … ], "questions": [ … ]}`; every item in it has that same subject and topic, and sub-topics stay inside their topic's file (all of Special Proceedings is one file). Items are kept in ID order.
+- **Questions and case summaries live in one file per topic:** `data/content/<subject>/<topic>.json`, e.g. `data/content/mercantile-law/commercial-law.json` (folder and file names: the exact subject and topic names in lower case, with every run of spaces or punctuation turned into `-`). Each file is `{"subject": "…", "topic": "…", "cases": [ … ], "questions": [ … ]}`; every item in it has that same subject and topic, and sub-topics stay inside their topic's file (all of Special Proceedings is one file). Items are kept in ID order.
 - `data/catalog.json`: a small summary of all the content, **built by `python3 tools/build-catalog.py`; never edit it by hand.** Run the builder after any change to a topic file (a new topic just needs its new file; the builder lists it). It holds:
   - `topics`: one per topic file (`subject`, `topic`, `file`), in the order the app shows them (subject order, then by each topic's first question ID), each with `subtopics` in the app's order: `{"name": … or null (no sub-topic), "rule": the source.grNumber all its questions share, or null, "essay": [IDs], "mcq": [IDs], "fillblank": [IDs]}`.
   - `cases`: one line per case: `id`, `name`, `grNumber`, `year`, `subject`, `topic`, `subtopic` (if any), `status`, and `questions` (IDs of the questions whose `caseIds` include it).
