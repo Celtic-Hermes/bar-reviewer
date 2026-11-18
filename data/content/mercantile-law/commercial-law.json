@@ -121,6 +121,21 @@
       "ruling": "The motions for reconsideration were denied with finality. (1) The issue has far-reaching implications for the national economy, so treating the petition as one for mandamus was justified. (2) There was no change of any long-standing rule: for more than 75 years the Court had never interpreted or defined \"capital\" in the 1935, 1973 and 1987 Constitutions, and the SEC and DOJ opinions were conflicting. Opinions of SEC legal officers are not SEC rules (only the SEC en banc can issue opinions with the force of rules), and agency interpretations never bind the Court. (3) \"Capital\" in Section 11 refers to shares with voting rights, as well as with full beneficial ownership. Both the Voting Control Test and the Beneficial Ownership Test must be applied, and the 60-40 requirement applies separately to each class of shares (common, preferred non-voting, preferred voting or any other). The Foreign Investments Act of 1991 and its predecessor laws defined a \"Philippine national\" in the same way, and the framers of the Constitution intended Filipino control. (4) PLDT is an indispensable party only on the factual issues, which the Court left to the SEC; due process will be given to PLDT before the SEC. (5) The SEC may impose sanctions only if it finds, after due hearing, an existing violation at the start of its administrative case; public utilities can cure deficiencies before then. The Court stressed that it has no power to amend the Constitution, and that a different reading would let foreigners take effective control of the national economy, as under the Parity Amendment.",
       "keyDoctrine": "\"Capital\" in Section 11, Article XII of the Constitution means **shares with voting rights and full beneficial ownership**. To own and operate a public utility, a corporation must have at least **60% Filipino ownership of each class of its shares**, so that Filipinos have effective control.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2012/oct2012/gr_176579_2012.html"
+    },
+    {
+      "id": "case-0010",
+      "status": "draft",
+      "name": "GIOS-Samar, Inc. v. DOTC",
+      "grNumber": "G.R. No. 217158",
+      "year": 2019,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "facts": "In December 2014 the Department of Transportation and Communications (DOTC) and the Civil Aviation Authority of the Philippines (CAAP) invited bids for the development, operations and maintenance of six airports (Bacolod-Silay, Davao, Iloilo, Laguindingan, New Bohol (Panglao) and Puerto Princesa), worth P116.23 billion, through concession agreements with the private sector under the BOT Law (RA No. 6957, as amended by RA No. 7718). The concession period was 30 years. In March 2015 the DOTC and CAAP \"bundled\" five of the projects into two: Bundle 1 (Bacolod-Silay and Iloilo) and Bundle 2 (Davao, Laguindingan and New Bohol). GIOS-SAMAR, Inc., a non-governmental organization of subsistence farmers and fisherfolk from Samar, sued as a taxpayer, invoked \"transcendental importance\", and filed a petition for prohibition directly with the Supreme Court to stop the bidding. It argued that bundling: (1) violates the anti-dummy and public-utility provisions (Section 11, Article XII of the Constitution) and shuts out qualified Filipino companies; (2) creates a monopoly prohibited by Section 19, Article XII; (3) is an undue restraint of trade; (4) was done with grave abuse of discretion and without legal authority; and (5) makes a mockery of public bidding. The DOTC answered that the petition was premature and speculative, and the CAAP argued that the petition violated the doctrine of hierarchy of courts.",
+      "issue": "Is the bundling of the airport projects constitutional? And may the petitioner bring this petition directly to the Supreme Court, given the doctrine of hierarchy of courts, when its arguments depend on questions of fact?",
+      "ruling": "The petition was dismissed. (1) The petitioner's arguments are \"inextricably intertwined with underlying questions of fact\" that require the reception of evidence, and the Court is not a trier of fact. (2) Monopolies: the Constitution does not prohibit monopolies per se, and granting a concession to a winning bidder to develop, operate and maintain airports does not by itself create a monopoly that violates the Constitution, because exclusivity is inherent in a concession to deliver a public service. The Philippine Competition Act (RA No. 10667) does not penalize merely having a dominant position, but abusing it; showing that would take evidence on the relevant market, dominance and abusive conduct. The same is true of the claim that bundling is an anti-competitive agreement. (3) The anti-dummy and Section 11, Article XII claims failed because the petitioner did not allege facts showing that any corporation falsely simulated Filipino ownership, or that any law reserves such projects for Filipino-owned corporations (Executive Order No. 65 even exempts BOT infrastructure contracts from the 40% foreign ownership limit); the \"shady companies\" and \"grave abuse of discretion\" claims also raised factual questions or were bare conclusions of law. (4) Direct recourse to the Court is proper only for questions of law. The doctrine of hierarchy of courts is a constitutional filtering mechanism and a \"bright-line rule\" that cannot be set aside by invoking transcendental importance. The Court reviewed its history: the Angara model of direct recourse, the transcendental importance doctrine, the Diocese of Bacolod exceptions, and why hierarchy of courts is a constitutional imperative (the structure of the judicial system and due process). The only case in which the Court may take up factual questions at the first instance is the review of the factual basis of a martial law proclamation under Section 18, Article VII.",
+      "keyDoctrine": "The Supreme Court is **not a trier of facts**. Direct recourse to it is proper only for **pure questions of law**; when a factual issue is indispensable, the Court refuses to rule even if the case is said to be of **transcendental importance**, and the petition must first go to the proper trial court or the Court of Appeals. Granting an exclusive concession to a winning bidder is not by itself a prohibited monopoly.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2019/mar2019/gr_217158_2019.html"
     }
   ],
   "questions": [
@@ -1976,6 +1991,240 @@
         "url": "https://lawphil.net/judjuris/juri2012/oct2012/gr_176579_2012.html",
         "part": "Resolution, Part XII (Final Word)",
         "excerpt": "Movants’ interpretation of the term \"capital\" would bring us back to the same evils spawned by the Parity Amendment, effectively giving foreigners parity rights with Filipinos, but this time even without any amendment to the present Constitution. Worse, movants’ interpretation opens up our national economy to effective control not only by Americans but also by all foreigners, be they Indonesians, Malaysians or Chinese, even in the absence of reciprocal treaty arrangements. At least the Parity Amendment, as implemented by the Laurel-Langley Agreement, gave the capital-starved Filipinos theoretical parity – the same rights as Americans to exploit natural resources, and to own and control public utilities, in the United States of America. Here, movants’ interpretation would effectively mean a unilateral opening up of our national economy to all foreigners, without any reciprocal arrangements. That would mean that Indonesians, Malaysians and Chinese nationals could effectively control our mining companies and public utilities while Filipinos, even if they have the capital, could not control similar corporations in these countries. … The 1935, 1973 and 1987 Constitutions have the same 60 percent Filipino ownership and control requirement for public utilities like PLOT. Any deviation from this requirement necessitates an amendment to the Constitution as exemplified by the Parity Amendment. This Court has no power to amend the Constitution for its power and duty is only to faithfully apply and interpret the Constitution."
+      }
+    },
+    {
+      "id": "q-0272",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "prompt": "A farmers' organization files a petition for prohibition directly with the Supreme Court to stop the government from bidding out several highway projects as one large package. It argues that the package creates a monopoly and shuts out smaller Filipino companies, that the bidders are \"shady\" companies without enough money, and that the matter is of transcendental importance. Proving these claims would require evidence about the bidders and the market. Based on GIOS-Samar v. DOTC, should the Court take the case?",
+      "suggestedAnswer": {
+        "answer": "No. The petition should be dismissed. The Court will not resolve a question that depends on factual issues, even if the case is said to be of transcendental importance. The petitioner should have gone first to the proper trial court or the Court of Appeals.",
+        "legalBasis": "The Supreme Court has original and concurrent jurisdiction with the RTC and the Court of Appeals over certiorari, prohibition, mandamus, quo warranto and habeas corpus. But under the doctrine of hierarchy of courts, direct recourse to the Court is proper only to seek the resolution of questions of law. The Court is not a trier of fact; it is not equipped, by structure or rule, to receive and evaluate evidence in the first instance. The doctrine is a constitutional filtering mechanism and a \"bright-line rule which cannot be brushed aside by an invocation of the transcendental importance or constitutional dimension of the issue.\" The only case in which the Court may take up factual questions at the first instance is its constitutional task of reviewing the factual basis of a martial law proclamation (Section 18, Article VII).",
+        "application": "In GIOS-Samar, the petitioner's claims (monopoly, restraint of trade, shady bidders with shaky finances) were \"inextricably intertwined with underlying questions of fact\" needing evidence, for example about the relevant market, who is dominant, and the bidders' financial ability. The petitioner invoked transcendental importance, but the Court explained that the so-called special and important reasons are not what decides the matter; the nature of the question is. Because a factual issue was indispensable to the legal issue, the Court refused to resolve it.",
+        "conclusion": "The petition is dismissed; such a challenge must first be brought before the proper trial court or the Court of Appeals, which can try the facts."
+      },
+      "keyPoints": [
+        "Direct recourse to the Supreme Court is proper only for pure questions of law",
+        "The Court is not a trier of fact and cannot receive evidence in the first instance",
+        "Hierarchy of courts is a constitutional filtering mechanism and a bright-line rule",
+        "Transcendental importance cannot override the rule when a factual issue is indispensable",
+        "The only exception for factual questions: review of a martial law proclamation (Section 18, Article VII)",
+        "The case must first go to the proper trial court or the Court of Appeals"
+      ],
+      "caseIds": [
+        "case-0010"
+      ],
+      "source": {
+        "caseTitle": "GIOS-Samar, Inc. v. DOTC",
+        "grNumber": "G.R. No. 217158",
+        "url": "https://lawphil.net/judjuris/juri2019/mar2019/gr_217158_2019.html",
+        "part": "Decision, Part I (opening) and Part I-B (closing paragraph); Part II-G; Part II-I (final paragraphs)",
+        "excerpt": "While petitioner asserts that the foregoing arguments involve legal (as opposed to factual) issues, our examination of the petition shows otherwise. As will be demonstrated shortly, petitioner's arguments against the constitutionality of the bundling of the Projects are inextricably intertwined with underlying questions of fact, the determination of which require the reception of evidence. This Court, however, is not a trier of fact. We cannot resolve these factual issues at the first instance. For this reason, we DISMISS the petition. … In fine, while this Court has original and concurrent jurisdiction with the RTC and the CA in the issuance of writs of certiorari, prohibition, mandamus, quo warranto, and habeas corpus (extraordinary writs), direct recourse to this Court is proper only to seek resolution of questions of law. Save for the single specific instance provided by the Constitution under Section 18, Article VII, cases the resolution of which depends on the determination of questions of fact cannot be brought directly before the Court because we are not a trier of facts. We are not equipped, either by structure or rule, to receive and evaluate evidence in the first instance; these are the primary functions of the lower courts or regulatory agencies. This is the raison d'etre behind the doctrine of hierarchy of courts. It operates as a constitutional filtering mechanism designed to enable this Court to focus on the more fundamental tasks assigned to it by the Constitution. It is a bright-line rule which cannot be brushed aside by an invocation of the transcendental importance or constitutional dimension of the issue or cause raised. … We take this opportunity to clarify that the presence of one or more of the so-called \"special and important reasons\" is not the decisive factor considered by the Court in deciding whether to permit the invocation, at the first instance, of its original jurisdiction over the issuance of extraordinary writs. Rather, it is the nature of the question raised by the parties in those \"exceptions\" that enabled us to allow the direct action before us. … To be clear, the transcendental importance doctrine does not clothe us with the power to tackle factual questions and play the role of a trial court. The only circumstance when we may take cognizance of a case in the first instance, despite the presence of factual issues, is in the exercise of our constitutionally-expressed task to review the sufficiency of the factual basis of the President's proclamation of martial law under Section 18, Article VII of the 1987 Constitution. The case before us does not fall under this exception. … Accordingly, for the guidance of the bench and the bar, we reiterate that when a question before the Court involves determination of a factual issue indispensable to the resolution of the legal issue, the Court will refuse to resolve the question regardless of the allegation or invocation of compelling reasons, such as the transcendental or paramount importance of the case. Such question must first be brought before the proper trial courts or the CA, both of which are specially equipped to try and resolve factual questions."
+      }
+    },
+    {
+      "id": "q-0273",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "prompt": "The government awards an exclusive 30-year concession to build, operate and maintain several airports to the winning bidder in a public bidding. A critic says this creates a monopoly prohibited by Section 19, Article XII of the Constitution. Based on GIOS-Samar v. DOTC, is the critic correct? What does the Philippine Competition Act prohibit, and what would the critic have to prove?",
+      "suggestedAnswer": {
+        "answer": "No. A concession to a winning bidder does not by itself create a monopoly that violates the Constitution. A challenger would have to prove, with evidence, an abuse of a dominant position (or an anti-competitive agreement) under the Philippine Competition Act.",
+        "legalBasis": "The Constitution does not prohibit the operation of monopolies per se (Tatad v. Secretary of the Department of Energy). Certain public utilities or services must be given exclusive franchises if the public interest is to be served, and such exclusive franchises do not violate the law against monopolies (Anglo-Fil Trading Corporation v. Lazaro). The Constitution says the State may, by law, prohibit or regulate monopolies when the public interest so requires. The Philippine Competition Act (RA No. 10667) does not define a \"monopoly\"; it prohibits an entity that has achieved a \"dominant position\" in a \"relevant market\" from abusing it. An entity is not punished for simply securing a dominant position. The law also has built-in protections such as public bidding.",
+        "application": "In GIOS-Samar, the Court found that granting a concession for the exclusive development, operation and maintenance of the airports does not by itself create a monopoly violative of the Constitution, because exclusivity is inherent in a concession to deliver a public service. Whether a prohibited situation exists would need evidence that (1) the relevant market is airport development, maintenance and operation; (2) the entity has achieved a dominant position in it; and (3) the entity commits acts constituting abuse of that position. The petitioner also pointed to no law that prohibits the bundling of bids. The Court is not a trier of facts, so such a challenge should be brought before a tribunal equipped to resolve the factual and legal issues.",
+        "conclusion": "The critic is not correct that the concession alone is a prohibited monopoly; only an abuse of dominance proven by evidence would be punishable."
+      },
+      "keyPoints": [
+        "The Constitution does not prohibit monopolies per se",
+        "Exclusive franchises for public services are not violative of the law against monopolies",
+        "The State may prohibit or regulate monopolies by law when the public interest requires",
+        "The Competition Act (RA No. 10667) penalizes abuse of a dominant position, not merely having one",
+        "A challenger must prove the relevant market, dominance, and abusive conduct",
+        "Public bidding is a built-in protection"
+      ],
+      "caseIds": [
+        "case-0010"
+      ],
+      "source": {
+        "caseTitle": "GIOS-Samar, Inc. v. DOTC",
+        "grNumber": "G.R. No. 217158",
+        "url": "https://lawphil.net/judjuris/juri2019/mar2019/gr_217158_2019.html",
+        "part": "Decision, Part I-A (monopolies and combinations in restraint of trade)",
+        "excerpt": "In Tatad v. Secretary of the Department of Energy, we clarified that the Constitution does not prohibit the operation of monopolies per se. With particular respect to the operation of public utilities or services, this Court, in Anglo-Fil Trading Corporation v. Lazaro, further clarified that \"[b]y their very nature, certain public services or public utilities such as those which supply water, electricity, transportation, telephone, telegraph, etc. must be given exclusive franchises if public interest is to be served. Such exclusive franchises are not violative of the law against monopolies.\" … In short, we find that the grant of a concession agreement to an entity, as a winning bidder, for the exclusive development, operation, and maintenance of any or all of the Projects, does not by itself create a monopoly violative of the provisions of the Constitution. Anglo-Fil Trading Corporation teaches that exclusivity is inherent in the grant of a concession to a private entity to deliver a public service, where Government chooses not to undertake such service. Otherwise stated, while the grant may result in a monopoly, it is a type of monopoly not violative of law. This is the essence of the policy decision of the Government to enter into concessions with the private sector to build, maintain and operate what would have otherwise been government-operated services, such as airports. In any case, the law itself provides for built-in protections to safeguard the public interest, foremost of which is to require public bidding. Under the BOT Law, for example, a private-public pat1nership (PPP) agreement may be undertaken through public bidding, in cases of solicited proposals, or through \"Swiss challenge\" (also known as comparative bidding), in cases of unsolicited proposals. … RA No. 10667 does not define what constitutes a \"monopoly.\" Instead, it prohibits one or more entities which has/have acquired or achieved a \"dominant position\" in a \"relevant market\" from \"abusing\" its dominant position. In other words, an entity is not prohibited from, or held liable for prosecution and punishment for, simply securing a dominant position in the relevant market in which it operates. It is only when that entity engages in conduct in abuse of its dominant position that it will be exposed to prosecution and possible punishment. … To illustrate, applying the facts and claims relative to the violation of the proscription against monopolies, what RA No. 10667, in fact, prohibits and punishes is the situation where: (1) an entity, having been granted an exclusive franchise to maintain and operate one or more airports, attains a dominant position in that market; and (2) abuses such dominant position by engaging in prohibited conduct, i.e., acts that substantially prevent, restrict or lessen competition in market of airport development, operations and maintenance. Thus, for petitioner to succeed in asserting that such a prohibited situation legally obtains, it must first establish, by evidence, that indeed: (1) the relevant market is that of airport development, maintenance, and operation (under the facts-based criteria enumerated in Section 24 of RA No. 10667); (2) the entity has achieved a dominant position (under the facts-based criteria enumerated in Section 27 of RA No. 10667) in that relevant market; and (3) the entity commits acts constituting abuse of dominant position (under the facts based criteria enumerated in Section 27 of RA No. 10667)."
+      }
+    },
+    {
+      "id": "q-0274",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "prompt": "A group says that the bidding for a government infrastructure project violates the Anti-Dummy Law and the 60% Filipino ownership rule for public utilities in Section 11, Article XII of the Constitution. It does not name any corporation that falsely pretended to have Filipino ownership, and it cites no law reserving the project to Filipino-owned corporations. Based on GIOS-Samar v. DOTC, how should these claims be decided?",
+      "suggestedAnswer": {
+        "answer": "The claims should be rejected. The petitioner failed to allege ultimate facts showing a violation of the Anti-Dummy Law, and, for the same reasons, the Section 11, Article XII claim fails too.",
+        "legalBasis": "For liability under Section 2 of the Anti-Dummy Law to attach, it must first be established that there is a law limiting or reserving the enjoyment of a right, franchise, privilege or business to Filipino citizens, or to corporations at least a certain percentage owned by them. It must also be shown by evidence that a corporation or association falsely simulated the existence of the minimum required Filipino stock or capital ownership. Executive Order No. 65 exempts contracts for infrastructure and development projects covered by the BOT Law from the 40% foreign ownership limitation.",
+        "application": "In GIOS-Samar, the petitioner did not identify any corporation or association that falsely simulated its stock ownership. It also did not allege any law limiting or requiring that infrastructure or development projects be awarded only to corporations a certain percentage of whose capital is owned by Filipinos. Since EO No. 65 even exempts BOT projects from the 40% foreign ownership limit, the Section 11, Article XII claim (a 60% Filipino ownership requirement for franchises and public utility operation) was rejected for the same reasons.",
+        "conclusion": "The anti-dummy and Section 11 claims fail for not alleging ultimate facts or a law reserving the project to Filipino-owned corporations."
+      },
+      "keyPoints": [
+        "Anti-Dummy Law: a law must limit the activity to Filipinos or Filipino-owned corporations",
+        "There must be evidence of falsely simulated Filipino ownership",
+        "The petitioner named no corporation that simulated ownership",
+        "EO No. 65 exempts BOT infrastructure contracts from the 40% foreign ownership limit",
+        "The Section 11, Article XII claim was rejected for the same reasons",
+        "The claims fail for not pleading ultimate facts (no cause of action)"
+      ],
+      "caseIds": [
+        "case-0010"
+      ],
+      "source": {
+        "caseTitle": "GIOS-Samar, Inc. v. DOTC",
+        "grNumber": "G.R. No. 217158",
+        "url": "https://lawphil.net/judjuris/juri2019/mar2019/gr_217158_2019.html",
+        "part": "Decision, Part I-B (anti-dummy law and Section 11, Article XII)",
+        "excerpt": "For liability for violation of Section 2 to attach, it must first be established that there is a law limiting or reserving the enjoyment or exercise of a right, franchise, privilege, or business to citizens of the Philippines, or to corporations or associations at least a certain percentage of which is owned by such citizens. Moreover, it must be shown by evidence that a corporation or association falsely simulated the existence of the minimum required Filipino stock or capital ownership to enjoy or exercise the right, franchise, privilege, or business. … In this case, petitioner failed to allege ultimate facts showing how the bundling of the Projects violated the Anti-Dummy Law. It did not identify what corporation or association falsely simulated the composition of its stock ownership. Moreover, it did not allege that there is a law limiting, reserving, or requiring that infrastructure or development projects must be awarded only to corporations, a certain percentage of the capital of which is exclusively owned by Filipinos. Executive Order (EO) No. 65, even exempts contracts for infrastructure/development projects covered by the BOT Law from the 40% foreign ownership limitation. … For the same reasons above, petitioner's allegation that bundling violated Section 11, Article XII of the Constitution - which prescribes a 60% Filipino ownership requirement for franchises, certificate, or for the operation of public utilities - must be rejected."
+      }
+    },
+    {
+      "id": "q-0275",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "prompt": "According to GIOS-Samar v. DOTC, what is the effect of invoking the \"transcendental importance\" of a case on the doctrine of hierarchy of courts?",
+      "choices": {
+        "A": "It lets the Court decide factual questions directly, whenever the issue is important enough",
+        "B": "It cannot override the doctrine, which is a bright-line rule, when a factual issue is indispensable to the resolution of the case",
+        "C": "It makes the doctrine optional for all constitutional issues",
+        "D": "It applies only to petitions filed by taxpayers"
+      },
+      "correct": "B",
+      "explanation": "B is correct. The Court said the doctrine of hierarchy of courts \"is a bright-line rule which cannot be brushed aside by an invocation of the transcendental importance or constitutional dimension of the issue or cause raised,\" and that when a factual issue is indispensable to resolving the legal issue, the Court will refuse to resolve the question regardless of such invocation. A is wrong because the Court said transcendental importance \"does not clothe us with the power to tackle factual questions and play the role of a trial court.\" C is wrong because the Court said the doctrine is a constitutional imperative, not a matter of mere policy. D is wrong because the rule applies to any litigant seeking direct recourse.",
+      "caseIds": [
+        "case-0010"
+      ],
+      "source": {
+        "caseTitle": "GIOS-Samar, Inc. v. DOTC",
+        "grNumber": "G.R. No. 217158",
+        "url": "https://lawphil.net/judjuris/juri2019/mar2019/gr_217158_2019.html",
+        "part": "Decision, Part I-B (closing paragraph) and Part II-I (final paragraph)",
+        "excerpt": "This is the raison d'etre behind the doctrine of hierarchy of courts. It operates as a constitutional filtering mechanism designed to enable this Court to focus on the more fundamental tasks assigned to it by the Constitution. It is a bright-line rule which cannot be brushed aside by an invocation of the transcendental importance or constitutional dimension of the issue or cause raised. … Accordingly, for the guidance of the bench and the bar, we reiterate that when a question before the Court involves determination of a factual issue indispensable to the resolution of the legal issue, the Court will refuse to resolve the question regardless of the allegation or invocation of compelling reasons, such as the transcendental or paramount importance of the case. Such question must first be brought before the proper trial courts or the CA, both of which are specially equipped to try and resolve factual questions."
+      }
+    },
+    {
+      "id": "q-0276",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "prompt": "In GIOS-Samar v. DOTC, what is the only circumstance in which the Court may take up a case in the first instance despite the presence of factual issues?",
+      "choices": {
+        "A": "When the petitioner invokes transcendental importance",
+        "B": "When the petition is filed by a taxpayer",
+        "C": "When the Court reviews the sufficiency of the factual basis of the President's proclamation of martial law under Section 18, Article VII of the Constitution",
+        "D": "When the Solicitor General agrees to have the facts determined by the Court"
+      },
+      "correct": "C",
+      "explanation": "C is correct. The Court said: \"The only circumstance when we may take cognizance of a case in the first instance, despite the presence of factual issues, is in the exercise of our constitutionally-expressed task to review the sufficiency of the factual basis of the President's proclamation of martial law under Section 18, Article VII of the 1987 Constitution.\" A is wrong because transcendental importance does not give the Court power to tackle factual questions. B is wrong because standing as a taxpayer does not change the rule. D is wrong because the parties' agreement is not an exception the Court recognized; the case before it did not fall under the exception.",
+      "caseIds": [
+        "case-0010"
+      ],
+      "source": {
+        "caseTitle": "GIOS-Samar, Inc. v. DOTC",
+        "grNumber": "G.R. No. 217158",
+        "url": "https://lawphil.net/judjuris/juri2019/mar2019/gr_217158_2019.html",
+        "part": "Decision, Part II-G (exceptions to the doctrine of hierarchy of courts)",
+        "excerpt": "To be clear, the transcendental importance doctrine does not clothe us with the power to tackle factual questions and play the role of a trial court. The only circumstance when we may take cognizance of a case in the first instance, despite the presence of factual issues, is in the exercise of our constitutionally-expressed task to review the sufficiency of the factual basis of the President's proclamation of martial law under Section 18, Article VII of the 1987 Constitution. The case before us does not fall under this exception."
+      }
+    },
+    {
+      "id": "q-0277",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "prompt": "According to GIOS-Samar v. DOTC, strict observance of the doctrine of hierarchy of courts is a constitutional imperative because of which two considerations?",
+      "choices": {
+        "A": "The structure of the judicial system and the requirements of due process",
+        "B": "The size of the Court's budget and the number of its justices",
+        "C": "The separation of powers and the political question doctrine",
+        "D": "The need for speedy trial and the rule against forum shopping"
+      },
+      "correct": "A",
+      "explanation": "A is correct. The Court said strict observance of the doctrine \"is a constitutional imperative given (1) the structure of our judicial system and (2) the requirements of due process.\" On structure, the doctrine recognizes the levels of courts and their roles: trial courts and the Court of Appeals can rule on facts, while the Supreme Court generally decides only questions of law. On due process, by going directly to the Court, litigants deprive themselves of the opportunity to completely pursue or defend their causes of action, because the Court cannot accept evidence in the first instance. B, C and D are not the reasons the Court gave.",
+      "caseIds": [
+        "case-0010"
+      ],
+      "source": {
+        "caseTitle": "GIOS-Samar, Inc. v. DOTC",
+        "grNumber": "G.R. No. 217158",
+        "url": "https://lawphil.net/judjuris/juri2019/mar2019/gr_217158_2019.html",
+        "part": "Decision, Part II-H (hierarchy of courts is a constitutional imperative)",
+        "excerpt": "Strict observance of the doctrine of hierarchy of courts should not be a matter of mere policy. It is a constitutional imperative given (1) the structure of our judicial system and (2) the requirements of due process. … Second. Strict adherence to the doctrine of hierarchy of courts also proceeds from considerations of due process. While the term \"due process of law\" evades exact and concrete definition, this Court, in one of its earliest decisions, referred to it as a law which hears before it condemns which proceeds upon inquiry and renders judgment only after trial. It means that every citizen shall hold his life, liberty, property, and immunities under the protection of the general rules which govern society. Under the present Rules of Court, which governs our judicial proceedings, warring factual allegations of parties are settled through presentation of evidence. Evidence is the means of ascertaining, in a judicial proceeding, the truth respecting a matter of fact: As earlier demonstrated, the Court cannot accept evidence in the first instance. By directly filing a case before the Court, litigants necessarily deprive themselves of the oportunity to completely pursue or defend their causes of actions. Their right to due process is effectively undermined by their own doing."
+      }
+    },
+    {
+      "id": "q-0278",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "prompt": "In GIOS-Samar v. DOTC, which of the following is NOT one of the things the doctrine of hierarchy of courts operates to prevent?",
+      "choices": {
+        "A": "Inordinate demands upon the Court's time and attention which are better devoted to matters within its exclusive jurisdiction",
+        "B": "Further overcrowding of the Court's docket",
+        "C": "Delay in the adjudication of cases that must be remanded or referred to the lower court as the proper forum",
+        "D": "Any challenge to the constitutionality of a law, whatever the nature of the question"
+      },
+      "correct": "D",
+      "explanation": "D is correct because it is not one of the three things the Court listed, and the doctrine does not bar every constitutional challenge: direct recourse is allowed where the issue is one of law. The Court said the doctrine operates to (1) prevent inordinate demands upon the Court's time and attention which are better devoted to matters within its exclusive jurisdiction; (2) prevent further overcrowding of the Court's docket; and (3) prevent the resultant delay in the adjudication of cases which often have to be remanded or referred to the lower court as the proper forum under the rules of procedure, or as the court better equipped to resolve factual questions. A, B and C are the three listed purposes.",
+      "caseIds": [
+        "case-0010"
+      ],
+      "source": {
+        "caseTitle": "GIOS-Samar, Inc. v. DOTC",
+        "grNumber": "G.R. No. 217158",
+        "url": "https://lawphil.net/judjuris/juri2019/mar2019/gr_217158_2019.html",
+        "part": "Decision, Part II-I (the doctrine of hierarchy of courts as a filtering mechanism)",
+        "excerpt": "The doctrine of hierarchy of courts operates to: (1) prevent inordinate demands upon the Court's time and attention which are better devoted to those matters within its exclusive jurisdiction; (2) prevent further overcrowding of the Court's docket; and (3) prevent the inevitable and resultant delay, intended or otherwise, in the adjudication of cases which often have to be remanded or referred to the lower court as the proper forum under the rules of procedure, or as the court better equipped to resolve factual questions."
+      }
+    },
+    {
+      "id": "q-0279",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "prompt": "Which of the following is one of the four requisites for the exercise of the Court's power of judicial review mentioned in GIOS-Samar v. DOTC?",
+      "choices": {
+        "A": "The issue of constitutionality must be the very lis mota of the case",
+        "B": "The petitioner must be a member of Congress",
+        "C": "The law challenged must have been enacted within the past year",
+        "D": "The challenge must be filed with the Court of Appeals first, even if the question is purely legal"
+      },
+      "correct": "A",
+      "explanation": "A is correct. The four requisites are: (1) an actual case or controversy calling for the exercise of judicial power; (2) the person challenging the act must have standing, meaning a personal and substantial interest such that he has sustained, or will sustain, direct injury as a result of its enforcement; (3) the question of constitutionality must be raised at the earliest possible opportunity; and (4) the issue of constitutionality must be the very lis mota of the case. The Court added the further requirement that it can only resolve pure questions of law. B and C are not requirements. D is wrong because direct recourse to the Court is allowed when the question is purely one of law.",
+      "caseIds": [
+        "case-0010"
+      ],
+      "source": {
+        "caseTitle": "GIOS-Samar, Inc. v. DOTC",
+        "grNumber": "G.R. No. 217158",
+        "url": "https://lawphil.net/judjuris/juri2019/mar2019/gr_217158_2019.html",
+        "part": "Decision, Part II-I (requisites of judicial review)",
+        "excerpt": "As stated previously, parallel guidelines have been adopted by this Court in the exercise of judicial review: 1. actual case or controversy calling for the exercise of judicial power; 2. the person challenging the act must have \"standing\" to challenge; he must have a personal and substantial interest in the case such that he has sustained, or will sustain, direct injury as a result of its enforcement; 3. the question of constitutionality must be raised at the earliest possible opportunity; 4. the issue of constitutionality must be the very lis mota of the case. (Citations omitted.) Thus, the exercise of our power of judicial review is subject to these four requisites and the further requirement that we can only resolve pure questions of law."
       }
     }
   ]
