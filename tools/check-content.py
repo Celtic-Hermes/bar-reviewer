@@ -456,16 +456,31 @@ def check_questions(questions, cases_by_id, rules_by_number):
 
 
 def check_quotes(quotes):
-    """data/quotes.json (the home screen's Quote of the day): each quote has an ID like
-    quote-0001 (used once), text, an author, a source a person can check, and a status."""
+    """data/quotes.json (the home screen's Quote of the day). Each entry has an ID like quote-0001
+    (used once), a "kind", text and a status. A "quote" needs an author and a source a person can
+    check (plus a short source line, "sourceShort", without a web address, for the screen). A
+    "reminder" (a line written for the app) needs text and nothing else: no author, role or source."""
     by_id = check_ids([("data/quotes.json", q) for q in quotes], "quote")
     for q_id, q in by_id.items():
+        kind = q.get("kind")
         need_text(q_id, q, "text")
-        need_text(q_id, q, "author")
-        need_text(q_id, q, "source")
         check_status(q_id, q)
+        if kind == "quote":
+            need_text(q_id, q, "author")
+            need_text(q_id, q, "source")
+            short = q.get("sourceShort")
+            if not filled(short):
+                check(q_id, "has no 'sourceShort' (the short source line shown on the screen: the case name or the work's title).")
+            elif re.search(r"https?:|www\.|\b[\w-]+\.(?:net|com|org|gov|ph|edu)\b|/", short):
+                problem(q_id, "'sourceShort' should be just the case name or the work's title, with no web address.")
+        elif kind == "reminder":
+            for field in ["author", "role", "source", "sourceShort"]:
+                if filled(q.get(field)):
+                    problem(q_id, "a reminder has no '%s' (it is a line written for the app, with no attribution)." % field)
+        else:
+            problem(q_id, "'kind' is %r; it must be \"quote\" or \"reminder\"." % kind)
         if isinstance(q.get("text"), str) and q["text"].strip().upper().startswith("TEST DATA"):
-            check(q_id, "is test data (a placeholder). Replace it with a real, sourced quote before real use.")
+            check(q_id, "is test data (a placeholder). Replace it with a real entry before real use.")
     return by_id
 
 

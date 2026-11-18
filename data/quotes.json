@@ -1,50 +1,62 @@
 [
   {
     "id": "quote-0004",
+    "kind": "quote",
     "text": "If we would guide by the light of reason, we must let our minds be bold.",
     "author": "Louis D. Brandeis",
     "role": "Justice, Supreme Court of the United States",
     "source": "Dissenting opinion, New State Ice Co. v. Liebmann, 285 U.S. 262 (1932). law.cornell.edu/supremecourt/text/285/262",
+    "sourceShort": "New State Ice Co. v. Liebmann (1932)",
     "status": "draft"
   },
   {
     "id": "quote-0005",
+    "kind": "quote",
     "text": "Fear of serious injury cannot alone justify suppression of free speech and assembly. Men feared witches and burnt women. It is the function of speech to free men from the bondage of irrational fears.",
     "author": "Louis D. Brandeis",
     "role": "Justice, Supreme Court of the United States",
     "source": "Concurring opinion, Whitney v. California, 274 U.S. 357 (1927). law.cornell.edu/supremecourt/text/274/357",
+    "sourceShort": "Whitney v. California (1927)",
     "status": "draft"
   },
   {
     "id": "quote-0006",
+    "kind": "quote",
     "text": "A word is not a crystal, transparent and unchanged, it is the skin of a living thought and may vary greatly in color and content according to the circumstances and the time in which it is used.",
     "author": "Oliver Wendell Holmes Jr.",
     "role": "Justice, Supreme Court of the United States",
     "source": "Opinion of the Court, Towne v. Eisner, 245 U.S. 418 (1918). law.cornell.edu/supremecourt/text/245/418",
+    "sourceShort": "Towne v. Eisner (1918)",
     "status": "draft"
   },
   {
     "id": "quote-0007",
+    "kind": "quote",
     "text": "Narrowed as its function is in this manner, the judiciary does not pass upon questions of wisdom, justice or expediency of legislation.",
     "author": "Jose P. Laurel",
     "role": "Justice, Supreme Court of the Philippines",
     "source": "Angara v. Electoral Commission, G.R. No. 45081, July 15, 1936 (63 Phil. 139). lawphil.net/judjuris/juri1936/jul1936/gr_45081_1936.html",
+    "sourceShort": "Angara v. Electoral Commission (1936)",
     "status": "draft"
   },
   {
     "id": "quote-0008",
+    "kind": "quote",
     "text": "The policy of the courts is to avoid ruling on constitutional questions and to presume that the acts of the political departments are valid in the absence of a clear and unmistakable showing to the contrary. To doubt is to sustain.",
-    "author": "Justice Cruz",
+    "author": "Cruz, J.",
     "role": "Supreme Court of the Philippines",
     "source": "Garcia v. Executive Secretary, G.R. No. 100883, December 2, 1991. lawphil.net/judjuris/juri1991/dec1991/gr_100883_1991.html",
+    "sourceShort": "Garcia v. Executive Secretary (1991)",
     "status": "draft"
   },
   {
     "id": "quote-0009",
+    "kind": "quote",
     "text": "What is at stake here is whether Filipinos or foreigners will have effective control of the Philippine national economy.",
     "author": "Antonio T. Carpio",
     "role": "Justice, Supreme Court of the Philippines",
     "source": "Resolution, Gamboa v. Teves, G.R. No. 176579, October 9, 2012. lawphil.net/judjuris/juri2012/oct2012/gr_176579_2012.html",
+    "sourceShort": "Gamboa v. Teves (2012)",
     "status": "draft"
   }
 ]

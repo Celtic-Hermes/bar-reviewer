@@ -1075,7 +1075,13 @@ function showRuleText(box, text, rule) {
 }
 
 // ---------- Quote of the day (home screen) ----------
-// data/quotes.json: a list of { id, text, author, role, source, status }. Which one shows is
+// data/quotes.json: a list of entries of two kinds (see "Quote of the day" in CLAUDE.md):
+//   kind "quote":    { id, kind, text, author, role, source, sourceShort, status }: shown with the
+//                    author below and a short source line (sourceShort; the full source and its
+//                    web address stay in the data);
+//   kind "reminder": { id, kind, text, status }: an encouraging line written for the app, shown
+//                    as the italic text alone (no author, no source).
+// An entry with no "kind" is a quote. Which one shows is
 // worked out from the date alone (never random), so it stays the same all day, changes at
 // midnight Asia/Manila time, works offline, and goes through every quote before repeating:
 //   1. the quotes are put in a fixed "shuffled" order (sorted by a number made from each ID,
@@ -1095,9 +1101,23 @@ function cleanQuotes(data) {
     if (typeof q.text !== "string" || q.text.trim() === "") { return; }
     seen[q.id] = true;
     const text = function (v) { return typeof v === "string" ? v.trim() : ""; };
-    list.push({ id: q.id, text: q.text.trim(), author: text(q.author), role: text(q.role), source: text(q.source), status: text(q.status) });
+    if (q.kind === "reminder") {
+      list.push({ id: q.id, kind: "reminder", text: q.text.trim(), author: "", role: "", source: "", sourceShort: "", status: text(q.status) });
+    } else {
+      list.push({ id: q.id, kind: "quote", text: q.text.trim(), author: text(q.author), role: text(q.role), source: text(q.source),
+                  sourceShort: quoteSourceLine(q), status: text(q.status) });
+    }
   });
   return list;
+}
+
+// The small source line under a quote: its "sourceShort" (just the case name or the work's title),
+// or, if that's missing, the full source with any web address taken out.
+function quoteSourceLine(q) {
+  const short = typeof q.sourceShort === "string" ? q.sourceShort.trim() : "";
+  if (short) { return short; }
+  const full = typeof q.source === "string" ? q.source : "";
+  return full.replace(/\b(?:https?:\/\/)?(?:[\w-]+\.)+[a-z]{2,}\/\S*/gi, "").replace(/\s+/g, " ").trim();
 }
 
 // A fixed number made from an ID (FNV-1a), used to put the quotes in a fixed order.
@@ -1151,7 +1171,7 @@ function showQuoteOfTheDay() {
   if (!quote) { return false; }
   document.getElementById("quote-text").textContent = "\u201C" + quote.text + "\u201D";
   document.getElementById("quote-author").textContent = quote.author + (quote.author && quote.role ? ", " + quote.role : "");
-  document.getElementById("quote-source").textContent = quote.source;
+  document.getElementById("quote-source").textContent = quote.sourceShort;
   return true;
 }
 
