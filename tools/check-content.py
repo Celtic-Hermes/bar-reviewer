@@ -30,6 +30,11 @@ _spec = importlib.util.spec_from_file_location("build_catalog", os.path.join(ROO
 builder = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(builder)
 
+# The progress builder (tools/build-progress.py): used to check data/content-progress.json.
+_pspec = importlib.util.spec_from_file_location("build_progress", os.path.join(ROOT, "tools", "build-progress.py"))
+progress_builder = importlib.util.module_from_spec(_pspec)
+_pspec.loader.exec_module(progress_builder)
+
 # The 8 bar subjects and MISC_SUBJECTS: one list, in build-catalog.py (must match app.js).
 SUBJECTS = builder.SUBJECTS
 MISC_SUBJECTS = builder.MISC_SUBJECTS
@@ -249,6 +254,9 @@ def check_cases(cases):
             problem(case_id, "has no full-text file (data/case-texts/%s.txt)." % case_id)
         else:
             check_full_text("data/case-texts/%s.txt" % case_id, text, footnotes=True)
+            if "syllabusIds" in c:
+                check_not_cut_off("data/case-texts/%s.txt" % case_id, text.split("\nFootnotes\n")[0])
+        check_reference(case_id, c, "case")
     return by_id
 
 
@@ -276,6 +284,112 @@ def check_full_text(where, text, footnotes):
             check(where, "has footnote numbers but no 'Footnotes' heading.")
 
 
+# ---------- Reference content (rules and cases linked to the 2027 syllabus) ----------
+# Every rule or case that lists "syllabusIds" is reference content and must record where it
+# came from: sourceUrl, "retrieved" (the date), and "crossCheck" = the second source it was
+# compared with ({"url", "retrieved", "result"}). Rules also need "currency": how it was
+# confirmed to be the version in force as of the syllabus cutoff (June 30, 2026).
+DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+SECTION_START = re.compile(r"^(?:SECTION|Section|SEC\.|Sec\.|ARTICLE|Article|ART\.|Art\.)\s+(\d+)(-?[A-Z])?\s*\.")
+DIVISION_START = re.compile(r"^(?:PART|RULE|TITLE|CHAPTER|BOOK)\s+[\dIVXLC]+\b")
+older_without_second_source = []
+
+
+def syllabus_ids():
+    try:
+        with open(os.path.join(DATA, "syllabus-2027.json"), encoding="utf-8") as f:
+            data = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return None
+    ids = set()
+
+    def walk(nodes):
+        for n in nodes or []:
+            if isinstance(n, dict) and isinstance(n.get("id"), str):
+                ids.add(n["id"])
+                walk(n.get("children"))
+    for subj in data.get("subjects", []):
+        walk(subj.get("topics"))
+    return ids
+
+
+SYLLABUS_IDS = syllabus_ids()
+
+
+def good_date(value):
+    return isinstance(value, str) and bool(DATE.match(value)) and value <= __import__("datetime").date.today().isoformat()
+
+
+def check_reference(where, item, kind):
+    """Sources and syllabus links of a rule or case. Older items without syllabusIds are only counted."""
+    if "syllabusIds" not in item:
+        if not isinstance(item.get("crossCheck"), dict):
+            older_without_second_source.append(where)
+        return
+    ids = item.get("syllabusIds")
+    if not isinstance(ids, list) or not ids:
+        problem(where, "'syllabusIds' should be a list of syllabus topic IDs (at least one).")
+    elif SYLLABUS_IDS is not None:
+        unknown = [i for i in ids if i not in SYLLABUS_IDS]
+        if unknown:
+            problem(where, "links to syllabus topic(s) that don't exist: %s." % ", ".join(map(str, unknown[:5])))
+    url = item.get("sourceUrl")
+    if not (isinstance(url, str) and url.startswith("https://")):
+        problem(where, "needs 'sourceUrl' (the web address of the official text).")
+    if not good_date(item.get("retrieved")):
+        problem(where, "needs 'retrieved': the date the text was copied (YYYY-MM-DD, not in the future).")
+    cross = item.get("crossCheck")
+    if not isinstance(cross, dict):
+        problem(where, "needs 'crossCheck': the second source it was compared with ({url, retrieved, result}).")
+    else:
+        if not (isinstance(cross.get("url"), str) and cross["url"].startswith("https://")):
+            problem(where, "'crossCheck.url' should be the second source's web address.")
+        elif cross["url"] == url:
+            problem(where, "'crossCheck.url' must be a different source from 'sourceUrl'.")
+        if not good_date(cross.get("retrieved")):
+            problem(where, "'crossCheck.retrieved' should be a date (YYYY-MM-DD).")
+        need_text(where, cross, "result", "crossCheck.result")
+    if kind == "rule":
+        need_text(where, item, "currency")
+
+
+def check_sections(where, text, gaps):
+    """Section numbers run 1, 2, 3 … with no gap or repeat, starting again after each RULE/PART/…
+    heading. A gap is allowed only if 'sectionGaps' explains it: {"RULE 41": {"4": "why"}}
+    ("" for text without such headings)."""
+    gaps = gaps if isinstance(gaps, dict) else {}
+    division, expected = "", 1
+    for block in re.split(r"\n\s*\n", text):
+        block = block.strip()
+        if not block:
+            continue
+        if DIVISION_START.match(block):
+            division = block.split("\n")[0].strip()
+            expected = 1
+            continue
+        m = SECTION_START.match(block)
+        if not m or m.group(2):
+            continue
+        number = int(m.group(1))
+        explained = gaps.get(division, {}) if isinstance(gaps.get(division, {}), dict) else {}
+        while number > expected and str(expected) in explained:
+            expected += 1
+        if number != expected:
+            label = (division + ", " if division else "") + "Section %d" % number
+            problem(where, "section numbers jump or repeat at %s (expected Section %d); explain a real gap in 'sectionGaps'." % (label, expected))
+            expected = number
+        expected += 1
+
+
+def check_not_cut_off(where, text):
+    body = text.strip()
+    if not body:
+        problem(where, "is empty.")
+        return
+    if body[-1] not in ".)\"'”’:;]":
+        problem(where, "looks cut off: it ends with %r instead of the end of a sentence." % body[-30:])
+
+
 # ---------- Rules ----------
 
 def check_rules(rules):
@@ -296,6 +410,10 @@ def check_rules(rules):
             text = ""
         else:
             check_full_text("data/rule-texts/%s.txt" % rule_id, text, footnotes=False)
+            if "syllabusIds" in r:
+                check_not_cut_off("data/rule-texts/%s.txt" % rule_id, text)
+                check_sections("data/rule-texts/%s.txt" % rule_id, text, r.get("sectionGaps"))
+        check_reference(rule_id, r, "rule")
         if filled(number) and number not in by_number:
             by_number[number] = (rule_id, comparable(text))
     return by_id, by_number
@@ -499,6 +617,53 @@ def check_leftover_files(folder, known_ids):
 SHOW_AT_MOST = 50
 
 
+def check_ids_unchanged(questions_by_id, cases_by_id, rules_by_id):
+    """No ID that was in the last save point (git HEAD's catalog) has disappeared or been renamed."""
+    import subprocess
+    try:
+        old = subprocess.run(["git", "show", "HEAD:data/catalog.json"], cwd=ROOT, capture_output=True, text=True, timeout=20)
+    except (OSError, subprocess.SubprocessError):
+        check("IDs", "couldn't compare with the last save point (git not available).")
+        return
+    if old.returncode != 0:
+        return
+    try:
+        cat = json.loads(old.stdout)
+    except json.JSONDecodeError:
+        return
+    before = set()
+    for t in cat.get("topics", []):
+        for s in t.get("subtopics", []):
+            for kind in ("essay", "mcq", "fillblank"):
+                before.update(s.get(kind, []))
+    before.update(c.get("id") for c in cat.get("cases", []))
+    before.update(r.get("id") for r in cat.get("rules", []))
+    now = set(questions_by_id) | set(cases_by_id) | set(rules_by_id)
+    gone = sorted(i for i in before - now if isinstance(i, str))
+    if gone:
+        problem("IDs", "these IDs were in the last save point but are gone now (IDs never change or disappear): %s." % ", ".join(gone[:10]))
+
+
+def check_progress():
+    """data/content-progress.json is valid and exactly what tools/build-progress.py builds now."""
+    path = os.path.join(DATA, "content-progress.json")
+    if not os.path.exists(path):
+        return
+    try:
+        with open(path, encoding="utf-8") as f:
+            current = json.load(f)
+    except json.JSONDecodeError as e:
+        problem("data/content-progress.json", "isn't valid JSON (line %d)." % e.lineno)
+        return
+    for nid, e in (current.get("topics") or {}).items():
+        if e.get("status") not in ("todo", "done", "skipped"):
+            problem("data/content-progress.json", "%s has status %r." % (nid, e.get("status")))
+        if e.get("status") == "skipped" and not filled(e.get("reason")):
+            problem("data/content-progress.json", "%s is skipped without a reason." % nid)
+    if progress_builder.text_of(progress_builder.build(current)) != open(path, encoding="utf-8").read():
+        problem("data/content-progress.json", "is out of date: run python3 tools/build-progress.py.")
+
+
 # IDs that were used and then removed: they are never used again.
 RETIRED_IDS = {"quote": [4, 5, 6, 10, 11, 12, 13, 14, 15, 16, 17]}
 
@@ -529,6 +694,12 @@ def main():
     check_leftover_files("case-texts", cases_by_id)
     if rules is not None:
         check_leftover_files("rule-texts", rules_by_id)
+
+    check_ids_unchanged(questions_by_id, cases_by_id, rules_by_id)
+    check_progress()
+    if older_without_second_source:
+        check("older content", "%d item(s) made before the syllabus work have no second source recorded "
+              "(%s…); add one when they are linked to the syllabus." % (len(older_without_second_source), ", ".join(older_without_second_source[:4])))
 
     quotes = load_json("data/quotes.json")
     quotes_by_id = check_quotes(quotes) if quotes is not None else {}

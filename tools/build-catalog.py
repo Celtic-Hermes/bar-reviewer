@@ -156,8 +156,11 @@ def build_catalog():
         errors.append(rule_error)
     for r in rules:
         place = rule_place.get(r.get("number"))
+        # A rule with no questions yet (reference content) uses its own subject and topic.
+        subject = place[1] if place else (r.get("subject") if isinstance(r.get("subject"), str) else None)
+        topic = place[2] if place else (r.get("topic") if isinstance(r.get("topic"), str) else None)
         all_rules.append({"id": r["id"], "title": r.get("title"), "number": r.get("number"), "status": r.get("status"),
-                          "subject": place[1] if place else None, "topic": place[2] if place else None})
+                          "subject": subject, "topic": topic})
     all_rules.sort(key=lambda r: id_number(r["id"]))
     return {"topics": [t for _, t in topics], "cases": all_cases, "rules": all_rules}, errors
 
