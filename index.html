@@ -51,14 +51,58 @@
 
     <!-- SCREEN 1: Home (list of subjects) -->
     <section id="screen-home">
-      <h1 class="screen-title">Bar Reviewer</h1>
-      <p class="screen-subtitle">Pick a subject to review.</p>
+      <!-- The top: a greeting, three small tiles for today, and where she stopped (app.js showTodayCard) -->
+      <header class="home-hero">
+        <div class="home-hello">
+          <p class="home-date" id="home-date"></p>
+          <h1 class="home-greeting" id="home-greeting">Hello</h1>
+          <p class="home-line" id="home-line"></p>
+        </div>
+        <div class="home-side">
+          <div class="home-tiles">
+            <div class="stat-tile" id="tile-streak">
+              <span class="stat-visual"><span data-icon="flame"></span></span>
+              <p class="stat-value" id="streak-value">0</p>
+              <p class="stat-label" id="streak-label">day streak</p>
+              <p class="stat-sub" id="streak-best" hidden></p>
+            </div>
+            <!-- The daily goal is changed in Settings: tapping this tile opens it -->
+            <button type="button" class="stat-tile stat-tile-button" id="today-goal-link">
+              <span class="stat-ring" id="today-ring" style="--p: 0"></span>
+              <p class="stat-value"><span id="today-value">0</span><span class="stat-of" id="today-of"></span></p>
+              <p class="stat-label">done today</p>
+            </button>
+            <div class="stat-tile" id="tile-mastery" hidden>
+              <span class="stat-visual"><span data-icon="chart"></span></span>
+              <div class="stat-bar-slot">
+                <div class="today-bar mastery-bar" id="mastery-bar" role="progressbar" aria-label="Questions mastered" aria-valuemin="0">
+                  <span class="today-bar-fill" id="mastery-bar-fill"></span>
+                </div>
+              </div>
+              <p class="stat-label">Mastery</p>
+            </div>
+          </div>
+          <!-- The last topic she practiced: one tap to go back to it -->
+          <section class="resume-card" id="home-resume" aria-label="Pick up where you stopped" hidden>
+            <p class="resume-kicker">Pick up where you stopped</p>
+            <p class="resume-title" id="resume-title"></p>
+            <p class="resume-sub" id="resume-sub"></p>
+            <div class="resume-foot">
+              <span class="resume-when" id="resume-when"></span>
+              <button type="button" class="btn btn-primary resume-btn" id="resume-btn">Resume</button>
+            </div>
+          </section>
+        </div>
+      </header>
 
       <!-- Search: cases and rules by name or G.R. number, from data/catalog.json (see app.js) -->
       <section class="home-search" aria-label="Search cases and rules">
-        <label class="label search-label" for="search-input">Search cases and rules</label>
-        <input type="search" class="search-input" id="search-input" placeholder="Name or G.R. No."
-          autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" enterkeyhint="search">
+        <label class="visually-hidden" for="search-input">Search cases and rules</label>
+        <div class="search-box">
+          <span class="search-icon" data-icon="magnifier" aria-hidden="true"></span>
+          <input type="search" class="search-input" id="search-input" placeholder="Search by name or G.R. No."
+            autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" enterkeyhint="search">
+        </div>
         <p class="search-count" id="search-count" aria-live="polite" hidden></p>
         <div class="subject-list" id="search-results"></div>
         <section class="card search-empty" id="search-empty" hidden>
@@ -67,32 +111,12 @@
         </section>
       </section>
 
-      <!-- Today: her streak and daily goal -->
-      <section class="card today-card" id="today-card" aria-label="Today">
-        <div class="today-top">
-          <p class="today-streak" id="today-streak"></p>
-          <p class="today-best" id="today-best"></p>
-        </div>
-        <p class="today-count" id="today-count"></p>
-        <div class="today-bar" id="today-bar" role="progressbar" aria-label="Today's goal" aria-valuemin="0">
-          <span class="today-bar-fill" id="today-bar-fill"></span>
-        </div>
-        <p class="today-note" id="today-note"></p>
-        <div class="today-mastery" id="today-mastery" hidden>
-          <p class="today-mastery-count" id="today-mastery-count"></p>
-          <div class="today-bar mastery-bar" id="mastery-bar" role="progressbar" aria-label="Questions mastered" aria-valuemin="0">
-            <span class="today-bar-fill" id="mastery-bar-fill"></span>
-          </div>
-        </div>
-        <!-- The goal is changed in Settings: tapping this line opens it -->
-        <button type="button" class="today-goal" id="today-goal-link">
-          <span>Daily goal</span><span class="today-goal-value"><span id="today-goal-text"></span> ›</span>
-        </button>
-      </section>
+      <div class="quick-links">
+        <button type="button" class="quick-link" id="my-notes-btn"><span data-icon="pen"></span> My notes</button>
+        <button type="button" class="quick-link" id="schedule-btn"><span data-icon="calendar"></span> Study Schedule</button>
+      </div>
 
-      <button class="btn btn-secondary my-notes-btn" id="my-notes-btn"><span data-icon="pen"></span> My notes</button>
-      <button class="btn btn-secondary my-notes-btn" id="schedule-btn"><span data-icon="calendar"></span> Study Schedule</button>
-
+      <h2 class="label topics-label home-heading">Subjects</h2>
       <div class="subject-list" id="subject-list"></div>
 
       <!-- Extra subjects that are not one of the 8 bar subjects -->

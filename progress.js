@@ -666,6 +666,27 @@ const SPOT_KEY = "barReviewer.currentSpot.v1";
 const AWAY_HOME_MINUTES = 30;
 const LAST_SEEN_KEY = "barReviewer.lastSeen.v1";  // when she last used the app (this device only, not in backups)
 
+// ---------- The last topic she practiced (for the home screen's "Pick up where you stopped") ----------
+// Kept on this device only (not in backups): which subject, topic and sub-topic, and when.
+const LAST_PRACTICE_KEY = "barReviewer.lastPractice.v1";
+
+function saveLastPractice(subject, topic, subtopic) {
+  try {
+    localStorage.setItem(LAST_PRACTICE_KEY, JSON.stringify({ subject: subject, topic: topic, subtopic: subtopic || null, at: Date.now() }));
+  } catch (e) { /* fine */ }
+}
+
+// { subject, topic, subtopic (or null), at } or null (nothing saved, or it doesn't look right).
+function loadLastPractice() {
+  try {
+    const raw = JSON.parse(localStorage.getItem(LAST_PRACTICE_KEY));
+    if (!isPlainObject(raw) || typeof raw.subject !== "string" || typeof raw.topic !== "string" || !Number(raw.at)) { return null; }
+    return { subject: raw.subject, topic: raw.topic, subtopic: typeof raw.subtopic === "string" ? raw.subtopic : null, at: Number(raw.at) };
+  } catch (e) {
+    return null;
+  }
+}
+
 // Note "she's here / was here just now" (called when the app is hidden or closed, and with each saved spot).
 function markSeen() {
   try { localStorage.setItem(LAST_SEEN_KEY, String(Date.now())); } catch (e) { /* fine */ }

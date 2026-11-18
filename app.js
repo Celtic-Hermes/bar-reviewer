@@ -435,10 +435,14 @@ function makeSubjectCard(subject, badge) {
   if (subjectIcon) { number.appendChild(subjectIcon); } else { number.textContent = badge; }
   const name = document.createElement("span");
   name.className = "subject-name";
-  name.textContent = subject;
+  name.append(subject);
+  const meta = document.createElement("span");  // "48 questions · 1 topic" (filled in by showSubjectCounts)
+  meta.className = "subject-meta";
+  name.appendChild(meta);
   const arrow = document.createElement("span");
   arrow.className = "subject-arrow";
   arrow.textContent = "›";
+  card.dataset.subject = subject;
   card.append(number, name, arrow);
   card.addEventListener("click", function () { openSubject(subject); });
   return card;
@@ -1057,44 +1061,55 @@ function showRuleText(box, text, rule) {
 }
 
 // ---------- Today card (home screen): streak and daily goal ----------
+// Everything on the home screen that changes: the greeting and date, the three tiles (streak,
+// done today, mastery), "Pick up where you stopped", and each subject's counts. Called whenever
+// she comes to the home screen, comes back to the app, and after a restore.
 function showTodayCard() {
   const streak = streakInfo();
   const count = todayCount();
   const goal = dailyGoal();
+  const now = new Date();
 
-  setIconLabel(document.getElementById("today-streak"), "flame",
-    streak.current > 0 ? streak.current + "-day streak" : "No streak yet");
-  document.getElementById("today-streak").classList.toggle("none", streak.current === 0);
-  const best = document.getElementById("today-best");
+  // Greeting (by her phone's clock) and today's date.
+  const hour = now.getHours();
+  document.getElementById("home-greeting").textContent = hour < 12 ? "Good morning" : hour < 18 ? "Good afternoon" : "Good evening";
+  document.getElementById("home-date").textContent = DAY_NAMES[now.getDay()] + ", " + MONTH_NAMES[now.getMonth()] + " " + now.getDate();
+
+  // Tile 1: the streak (and her best, once she has one).
+  document.getElementById("streak-value").textContent = String(streak.current);
+  document.getElementById("tile-streak").classList.toggle("none", streak.current === 0);
+  const best = document.getElementById("streak-best");
   best.textContent = "Best: " + streak.best + (streak.best === 1 ? " day" : " days");
   best.hidden = streak.best === 0;
 
-  document.getElementById("today-count").textContent = "Today " + count + " / " + goal;
-  const bar = document.getElementById("today-bar");
-  bar.setAttribute("aria-valuemax", String(goal));
-  bar.setAttribute("aria-valuenow", String(Math.min(count, goal)));
-  document.getElementById("today-bar-fill").style.width = Math.min(100, Math.round(100 * count / goal)) + "%";
-  bar.classList.toggle("done", count >= goal);
+  // Tile 2: done today, as a ring (tapping the tile opens Settings, where the goal is changed).
+  const done = count >= goal;
+  document.getElementById("today-value").textContent = String(count);
+  document.getElementById("today-of").textContent = " / " + goal;
+  const ring = document.getElementById("today-ring");
+  ring.style.setProperty("--p", String(Math.min(100, Math.round(100 * count / goal))));
+  ring.classList.toggle("done", done);
+  document.getElementById("today-goal-link").setAttribute("aria-label",
+    "Done today: " + count + " of " + goal + ". Change the daily goal in Settings.");
 
+  // The one calm line under the greeting.
   let note;
-  if (count >= goal) {
-    note = "Daily goal reached! 🎉";
+  if (done) {
+    note = "Daily goal reached. Nice work!";
   } else if (!streak.studiedToday && streak.current > 0) {
     note = "Answer a question today to keep your " + streak.current + "-day streak.";
   } else if (!streak.studiedToday) {
-    note = streak.everStudied ? "Answer a question today to start a new streak." : "Answer a question today to start a streak.";
+    note = streak.everStudied ? "Answer a question today to start a new streak." : "Pick a subject below to start.";
   } else {
     const left = goal - count;
     note = left + (left === 1 ? " more question" : " more questions") + " to reach today's goal.";
   }
-  document.getElementById("today-note").textContent = note;
-  document.getElementById("today-goal-text").textContent = goal + " questions";
+  document.getElementById("home-line").textContent = note;
 
-  // Mastery across everything in the app (shown once the questions have loaded).
+  // Tile 3: mastery, as a bar only (no numbers), once the questions have loaded.
   const mastery = masteryOf(allQuestions);
-  document.getElementById("today-mastery").hidden = mastery.total === 0;
+  document.getElementById("tile-mastery").hidden = mastery.total === 0;
   if (mastery.total > 0) {
-    document.getElementById("today-mastery-count").textContent = "Mastery";  // just the word and the bar (no star, no count)
     const mbar = document.getElementById("mastery-bar");
     mbar.setAttribute("aria-valuemax", String(mastery.total));
     mbar.setAttribute("aria-valuenow", String(mastery.mastered));
@@ -1102,6 +1117,56 @@ function showTodayCard() {
     const percent = 100 * mastery.mastered / mastery.total;
     document.getElementById("mastery-bar-fill").style.width = (mastery.mastered > 0 ? Math.max(2, Math.round(percent)) : 0) + "%";
   }
+
+  showResumeCard();
+  showSubjectCounts();
+}
+
+// "Pick up where you stopped": the last topic she practiced, if it's still in the app.
+function timeAgo(then) {
+  const minutes = Math.floor((Date.now() - then) / 60000);
+  if (minutes < 1) { return "just now"; }
+  if (minutes < 60) { return minutes + (minutes === 1 ? " minute ago" : " minutes ago"); }
+  const hours = Math.floor(minutes / 60);
+  if (hours < 24) { return hours + (hours === 1 ? " hour ago" : " hours ago"); }
+  const days = Math.floor(hours / 24);
+  return days === 1 ? "yesterday" : days + " days ago";
+}
+
+// The link (see taskLinkTarget) that opens her last practiced topic or sub-topic, or null.
+function lastPracticeTarget(last) {
+  const normal = last.subtopic && last.subtopic !== ALL_SUBTOPICS && last.subtopic !== OTHER_SUBTOPIC;
+  return taskLinkTarget("topic:" + last.subject + "|" + last.topic + (normal ? "|" + last.subtopic : ""));
+}
+
+function showResumeCard() {
+  const card = document.getElementById("home-resume");
+  const last = loadLastPractice();
+  const target = (last && contentLoaded) ? lastPracticeTarget(last) : null;
+  card.hidden = !target;
+  if (!target) { return; }
+  const normal = last.subtopic && last.subtopic !== ALL_SUBTOPICS && last.subtopic !== OTHER_SUBTOPIC;
+  document.getElementById("resume-title").textContent = normal ? last.subtopic : last.topic;
+  document.getElementById("resume-sub").textContent = normal ? last.subject + " · " + last.topic : last.subject;
+  document.getElementById("resume-when").textContent = "Practiced " + timeAgo(last.at);
+}
+
+document.getElementById("resume-btn").addEventListener("click", function () {
+  const last = loadLastPractice();
+  const target = last ? lastPracticeTarget(last) : null;
+  if (target) { target.open(); }
+});
+
+// Each subject card's second line: how many questions and topics it has.
+function showSubjectCounts() {
+  document.querySelectorAll(".subject-card[data-subject]").forEach(function (card) {
+    const meta = card.querySelector(".subject-meta");
+    if (!meta || !contentLoaded) { return; }
+    const questions = questionsFor(card.dataset.subject).length;
+    const topics = topicsFor(card.dataset.subject).length;
+    meta.textContent = questions === 0 ? "No questions yet"
+      : questions + (questions === 1 ? " question" : " questions") + " · " + topics + (topics === 1 ? " topic" : " topics");
+  });
 }
 
 // ---------- Study Schedule ----------
@@ -2230,6 +2295,8 @@ function startPractice() {
   if (document.getElementById("shuffle").checked) {
     questions = shuffled(questions);
   }
+  // Remember the topic (not a case's questions, or a Review missed list) for the home screen's "Pick up where you stopped".
+  if (!fixedQuestions && isRealTopic(currentTopic)) { saveLastPractice(currentSubject, currentTopic, currentSubtopic); }
   session = {
     questions: questions,
     index: 0,
