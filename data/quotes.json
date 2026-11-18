@@ -58,5 +58,85 @@
     "source": "Resolution, Gamboa v. Teves, G.R. No. 176579, October 9, 2012. lawphil.net/judjuris/juri2012/oct2012/gr_176579_2012.html",
     "sourceShort": "Gamboa v. Teves (2012)",
     "status": "draft"
+  },
+  {
+    "id": "quote-0010",
+    "kind": "quote",
+    "text": "Let us have faith that right makes might, and in that faith, let us, to the end, dare to do our duty as we understand it.",
+    "author": "Abraham Lincoln",
+    "role": "Lawyer and statesman",
+    "source": "Address at Cooper Union, New York, 27 February 1860, as printed in The Collected Works of Abraham Lincoln, ed. Roy P. Basler (closing sentence; the printed text sets it in capitals for emphasis). Text read at Abraham Lincoln Online: abrahamlincolnonline.org/lincoln/speeches/cooper.htm",
+    "sourceShort": "Cooper Union Address (1860)",
+    "status": "draft"
+  },
+  {
+    "id": "quote-0011",
+    "kind": "quote",
+    "text": "I have cherished the ideal of a democratic and free society in which all persons live together in harmony and with equal opportunities. It is an ideal which I hope to live for and to achieve.",
+    "author": "Nelson Mandela",
+    "role": "Lawyer and anti-apartheid leader",
+    "source": "Statement from the dock, Rivonia Trial, Pretoria, 20 April 1964 (two consecutive sentences, no cut). Wording as quoted from the typescript by the Nelson Mandela Foundation: nelsonmandela.org/news/entry/i-am-prepared-to-die . Another transcription (Wikisource) reads \"to see realised\" instead of \"to achieve\".",
+    "sourceShort": "Statement from the dock, Rivonia Trial (1964)",
+    "status": "draft"
+  },
+  {
+    "id": "quote-0012",
+    "kind": "quote",
+    "text": "I had learnt the true practice of law. I had learnt to find out the better side of human nature and to enter men's hearts. I realized that the true function of a lawyer was to unite parties riven asunder.",
+    "author": "Mahatma Gandhi",
+    "role": "Lawyer and leader of India's independence movement",
+    "source": "An Autobiography (The Story of My Experiments with Truth), Part II, Chapter XIV, \"Preparation for the Case\" (three consecutive sentences, no cut). Checked in two editions: mkgandhi-sarvodaya.org/autobio/chap39.htm and standardebooks.org/ebooks/mahatma-gandhi/the-story-of-my-experiments-with-truth/mahadev-desai/text/chapter-2-14",
+    "sourceShort": "An Autobiography, \"Preparation for the Case\"",
+    "status": "draft"
+  },
+  {
+    "id": "quote-0013",
+    "kind": "quote",
+    "text": "Effective participation by members of all racial and ethnic groups in the civic life of our Nation is essential if the dream of one Nation, indivisible, is to be realized.",
+    "author": "O'Connor, J.",
+    "role": "Justice, Supreme Court of the United States",
+    "source": "Opinion of the Court, Grutter v. Bollinger, 539 U.S. 306 (decided 23 June 2003); one sentence, footnote number left out. law.cornell.edu/supremecourt/text/539/306",
+    "sourceShort": "Grutter v. Bollinger (2003)",
+    "status": "draft"
+  },
+  {
+    "id": "quote-0014",
+    "kind": "quote",
+    "text": "Our whole constitutional heritage rebels at the thought of giving government the power to control men's minds.",
+    "author": "Marshall, J.",
+    "role": "Justice, Supreme Court of the United States",
+    "source": "Opinion of the Court, Stanley v. Georgia, 394 U.S. 557 (decided 7 April 1969); one sentence, footnote number left out. law.cornell.edu/supremecourt/text/394/557",
+    "sourceShort": "Stanley v. Georgia (1969)",
+    "status": "draft"
+  },
+  {
+    "id": "quote-0015",
+    "kind": "quote",
+    "text": "The government of the United States has been emphatically termed a government of laws, and not of men. It will certainly cease to deserve this high appellation, if the laws furnish no remedy for the violation of a vested legal right.",
+    "author": "Marshall, C.J.",
+    "role": "Chief Justice, Supreme Court of the United States",
+    "source": "Opinion of the Court, Marbury v. Madison, 5 U.S. (1 Cranch) 137 (1803); two consecutive sentences, footnote number left out. law.cornell.edu/supremecourt/text/5/137",
+    "sourceShort": "Marbury v. Madison (1803)",
+    "status": "draft"
+  },
+  {
+    "id": "quote-0016",
+    "kind": "quote",
+    "text": "... in our adversary system of criminal justice, any person haled into court, who is too poor to hire a lawyer, cannot be assured a fair trial unless counsel is provided for him. This seems to us to be an obvious truth.",
+    "author": "Black, J.",
+    "role": "Justice, Supreme Court of the United States",
+    "source": "Opinion of the Court, Gideon v. Wainwright, 372 U.S. 335 (decided 18 March 1963). The \"...\" only leaves out the opening words of the sentence (\"Not only these precedents but also reason and reflection require us to recognize that\"); the rest is two consecutive sentences. law.cornell.edu/supremecourt/text/372/335",
+    "sourceShort": "Gideon v. Wainwright (1963)",
+    "status": "draft"
+  },
+  {
+    "id": "quote-0017",
+    "kind": "quote",
+    "text": "No official, no matter how high, is above the law. The courts are the forum which functionate to safeguard individual liberty and to punish official transgressors.",
+    "author": "Malcolm, J.",
+    "role": "Justice, Supreme Court of the Philippines",
+    "source": "Villavicencio v. Lukban, G.R. No. L-14639, 25 March 1919 (two consecutive sentences; \"functionate\" is as printed). lawphil.net/judjuris/juri1919/mar1919/gr_l-14639_1919.html",
+    "sourceShort": "Villavicencio v. Lukban (1919)",
+    "status": "draft"
   }
 ]
