@@ -115,7 +115,7 @@
       "year": 2012,
       "subject": "Mercantile Law",
       "topic": "Commercial Law",
-      "subtopic": "Nationality of Corporations (60-40 Rule)",
+      "subtopic": "Foreign Investments Act",
       "facts": "Wilson P. Gamboa (later substituted by his heirs) asked the Supreme Court to compel the Securities and Exchange Commission (SEC) to look into whether the Philippine Long Distance Telephone Company (PLDT), a public utility, complied with the constitutional rule that only Filipinos, or corporations at least 60% of whose \"capital\" is owned by Filipinos, may operate a public utility (Section 11, Article XII of the 1987 Constitution). The petition was one for declaratory relief, which the Court treated as one for mandamus. In its 28 June 2011 Decision, the Court defined \"capital\" in that provision as shares with voting rights, as well as with full beneficial ownership, and directed the SEC to apply that definition to PLDT. This is the Court's 9 October 2012 Resolution on the motions for reconsideration of that Decision, filed by the Philippine Stock Exchange's President, Manuel V. Pangilinan, Napoleon L. Nazareno and the SEC. The movants argued, among other things, that: (1) the petition should have been dismissed as a procedurally defective petition for declaratory relief; (2) the Court changed a long-standing definition of \"capital\" (the total outstanding shares, voting or non-voting) that the SEC had always used; (3) PLDT was an indispensable party that was never heard; and (4) the ruling would drive away foreign investments. The undisputed facts on PLDT were that foreigners own 64.27% of its common shares (the only shares that vote for directors), Filipinos own 35.73% of the common shares, and the preferred shares (99.44% owned by Filipinos) have no voting rights. The Office of the Solicitor General agreed with the Court's definition of \"capital\".",
       "issue": "Should the motions for reconsideration be granted? In particular: (1) was it proper to treat the petition for declaratory relief as one for mandamus; (2) did the Court change a long-standing rule or redefine \"capital\"; (3) what does \"capital\" in Section 11, Article XII of the Constitution mean, and does the 60-40 rule apply to each class of shares; (4) is PLDT an indispensable party; and (5) from when may sanctions be imposed?",
       "ruling": "The motions for reconsideration were denied with finality. (1) The issue has far-reaching implications for the national economy, so treating the petition as one for mandamus was justified. (2) There was no change of any long-standing rule: for more than 75 years the Court had never interpreted or defined \"capital\" in the 1935, 1973 and 1987 Constitutions, and the SEC and DOJ opinions were conflicting. Opinions of SEC legal officers are not SEC rules (only the SEC en banc can issue opinions with the force of rules), and agency interpretations never bind the Court. (3) \"Capital\" in Section 11 refers to shares with voting rights, as well as with full beneficial ownership. Both the Voting Control Test and the Beneficial Ownership Test must be applied, and the 60-40 requirement applies separately to each class of shares (common, preferred non-voting, preferred voting or any other). The Foreign Investments Act of 1991 and its predecessor laws defined a \"Philippine national\" in the same way, and the framers of the Constitution intended Filipino control. (4) PLDT is an indispensable party only on the factual issues, which the Court left to the SEC; due process will be given to PLDT before the SEC. (5) The SEC may impose sanctions only if it finds, after due hearing, an existing violation at the start of its administrative case; public utilities can cure deficiencies before then. The Court stressed that it has no power to amend the Constitution, and that a different reading would let foreigners take effective control of the national economy, as under the Parity Amendment.",
@@ -1750,7 +1750,7 @@
       "status": "draft",
       "subject": "Mercantile Law",
       "topic": "Commercial Law",
-      "subtopic": "Nationality of Corporations (60-40 Rule)",
+      "subtopic": "Foreign Investments Act",
       "prompt": "A telephone company holds a franchise to operate a public utility. It has two classes of shares: common shares, which alone can vote in the election of directors, and preferred shares, which cannot. Foreigners own 60% of the common shares, while Filipinos own almost all the preferred shares, so that Filipinos hold more than 60% of all the shares combined. The company says it complies with the 60-40 ownership rule for public utilities because Filipinos own over 60% of its total shares. Based on the Resolution in Gamboa v. Teves, is the company correct?",
       "suggestedAnswer": {
         "answer": "No. The company does not meet the constitutional requirement, because \"capital\" in Section 11, Article XII refers to shares with voting rights as well as full beneficial ownership, and the 60-40 rule applies to each class of shares, not just to the total of all shares.",
@@ -1783,7 +1783,7 @@
       "status": "draft",
       "subject": "Mercantile Law",
       "topic": "Commercial Law",
-      "subtopic": "Nationality of Corporations (60-40 Rule)",
+      "subtopic": "Foreign Investments Act",
       "prompt": "Companies that relied on opinions of the SEC's legal officers and of the Department of Justice, which counted both voting and non-voting shares when measuring foreign ownership, argue that the Court changed a long-standing definition of \"capital\" midstream. Are they correct? Do those opinions bind the Court? Answer based on the Resolution in Gamboa v. Teves.",
       "suggestedAnswer": {
         "answer": "No. The Court did not change any long-standing rule or redefine \"capital\", and the SEC and DOJ opinions do not bind the Court.",
@@ -1816,7 +1816,7 @@
       "status": "draft",
       "subject": "Mercantile Law",
       "topic": "Commercial Law",
-      "subtopic": "Nationality of Corporations (60-40 Rule)",
+      "subtopic": "Foreign Investments Act",
       "prompt": "A citizen asks the Court to define a term in the Constitution and to compel the SEC to investigate whether a public utility corporation complies with the nationality requirement. The Court defines the term and directs the SEC to apply the definition. The corporation complains that it was not made a party and that its property was taken without due process. The SEC also asks from when sanctions may be imposed. Based on the Resolution in Gamboa v. Teves, how should these be answered?",
       "suggestedAnswer": {
         "answer": "The Court limited itself to the purely legal question of what the constitutional term means. It did not decide whether the corporation violated the Constitution, so the corporation was not deprived of due process; due process is given before the SEC. Sanctions may be imposed only if the SEC finds, after due hearing, an existing violation at the start of its administrative case.",
@@ -1849,7 +1849,7 @@
       "status": "draft",
       "subject": "Mercantile Law",
       "topic": "Commercial Law",
-      "subtopic": "Nationality of Corporations (60-40 Rule)",
+      "subtopic": "Foreign Investments Act",
       "prompt": "In Gamboa v. Teves, the Court treated a petition for declaratory relief as one for mandamus. What was its reason?",
       "choices": {
         "A": "The far-reaching implications of the issue on the national economy justified it",
@@ -1876,7 +1876,7 @@
       "status": "draft",
       "subject": "Mercantile Law",
       "topic": "Commercial Law",
-      "subtopic": "Nationality of Corporations (60-40 Rule)",
+      "subtopic": "Foreign Investments Act",
       "prompt": "According to the Resolution in Gamboa v. Teves, who can issue SEC opinions that have the force and effect of SEC rules and regulations?",
       "choices": {
         "A": "Any SEC legal officer",
@@ -1903,7 +1903,7 @@
       "status": "draft",
       "subject": "Mercantile Law",
       "topic": "Commercial Law",
-      "subtopic": "Nationality of Corporations (60-40 Rule)",
+      "subtopic": "Foreign Investments Act",
       "prompt": "Under the Foreign Investments Act of 1991, as discussed in Gamboa v. Teves, a domestic corporation is a \"Philippine national\" only if:",
       "choices": {
         "A": "At least 60% of its capital stock outstanding and entitled to vote is owned by Filipino citizens",
@@ -1930,7 +1930,7 @@
       "status": "draft",
       "subject": "Mercantile Law",
       "topic": "Commercial Law",
-      "subtopic": "Nationality of Corporations (60-40 Rule)",
+      "subtopic": "Foreign Investments Act",
       "prompt": "Which statement correctly describes the last sentence of Section 11, Article XII of the 1987 Constitution, as quoted in Gamboa v. Teves?",
       "choices": {
         "A": "Foreign investors may take any seat on the board of a public utility if they own 40% of its capital",
@@ -1957,7 +1957,7 @@
       "status": "draft",
       "subject": "Mercantile Law",
       "topic": "Commercial Law",
-      "subtopic": "Nationality of Corporations (60-40 Rule)",
+      "subtopic": "Foreign Investments Act",
       "prompt": "In the Final Word of Gamboa v. Teves, how did the Court compare the movants' interpretation of \"capital\" with the Parity Amendment?",
       "choices": {
         "A": "It would bring back the same evils of the Parity Amendment, giving foreigners parity rights with Filipinos even without any constitutional amendment",
