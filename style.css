@@ -394,7 +394,7 @@ body {
    then springs back. The tint is an "inner shadow" laid on top of the button's
    own background, so it works the same on every button color.
    To change the effect, edit --press-scale, --press-shade and --press-time at the top. */
-.btn, .subject-card, .choice, .back-btn, .bookmark-btn, .hl-swatch, .tag-dot, .fb-view-btn, .fb-new-btn, .menu-btn, .quick-link, .stat-tile-button {
+.btn, .subject-card, .choice, .back-btn, .bookmark-btn, .hl-swatch, .tag-dot, .fb-view-btn, .fb-new-btn, .menu-btn, .quick-link, .stat-tile-button, .start-card {
   transition: transform var(--press-time) ease-out, box-shadow var(--press-time) ease-out;
 }
 .btn:active:not(:disabled),
@@ -403,6 +403,7 @@ body {
 .back-btn:active,
 .quick-link:active,
 .stat-tile-button:active,
+.start-card:active:not(:disabled),
 .menu-btn:active,
 .bookmark-btn:active,
 .hl-swatch:active,
@@ -415,7 +416,7 @@ body {
 }
 /* If she has asked her phone for less motion: keep the tint, skip the shrinking. */
 @media (prefers-reduced-motion: reduce) {
-  .btn, .subject-card, .choice, .back-btn, .bookmark-btn, .hl-swatch, .tag-dot, .fb-view-btn, .fb-new-btn, .menu-btn, .quick-link, .stat-tile-button { --press-scale: 1; }
+  .btn, .subject-card, .choice, .back-btn, .bookmark-btn, .hl-swatch, .tag-dot, .fb-view-btn, .fb-new-btn, .menu-btn, .quick-link, .stat-tile-button, .start-card { --press-scale: 1; }
 }
 
 /* ---------- Home: the top (greeting, tiles, where she stopped) ---------- */
@@ -623,9 +624,53 @@ button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
 .switch:checked::after { transform: translateX(20px); }
 
 /* ---------- Subject screen: "Your progress" box ---------- */
-.stats { display: grid; grid-template-columns: auto 1fr; gap: 8px 16px; margin: 0; }
-.stats dt { color: var(--muted); }
-.stats dd { margin: 0; font-weight: 600; text-align: right; white-space: pre-line; }
+/* ---------- Subject screen (index.html #screen-subject, app.js openSubject) ----------
+   One clear action (the Start card), quieter things around it, few borders, room to breathe. */
+.subject-head { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 14px; margin: 6px 0 20px; }
+.subject-head-icon {
+  display: grid; place-items: center; width: 52px; height: 52px; border-radius: 16px; color: var(--primary-text);
+  background: color-mix(in srgb, var(--primary-soft) 55%, var(--card));
+}
+.subject-head-icon .icon { width: 28px; height: 28px; margin: 0; vertical-align: 0; }
+.subject-head .screen-title { margin: 0; font-size: 26px; }
+.subject-head .screen-subtitle { margin: 2px 0 0; }
+
+/* A small ring with a percent in the middle (the middle is the page color, so it needs no mask). */
+.mastery-ring {
+  display: grid; place-items: center; width: 58px; height: 58px; border-radius: 50%;
+  background: conic-gradient(var(--primary) calc(var(--p, 0) * 1%), var(--border) 0);
+}
+.mastery-ring-text {
+  display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%;
+  background: var(--bg); font-size: 13px; font-weight: 700; line-height: 1;
+}
+
+/* The Start card: the biggest thing on the screen. White text on --primary is always bold or large. */
+.start-card {
+  display: flex; align-items: center; gap: 16px; width: 100%; margin: 0 0 14px; padding: 20px;
+  border: 0; border-radius: 20px; background: var(--primary); color: var(--on-primary);
+  font: inherit; text-align: left; cursor: pointer; -webkit-tap-highlight-color: transparent;
+  box-shadow: 0 10px 24px -12px color-mix(in srgb, var(--primary) 80%, transparent);
+}
+.start-card:disabled { opacity: 0.5; cursor: default; box-shadow: none; }
+.start-card-text { display: grid; flex: 1; gap: 4px; min-width: 0; }
+.start-card-title { font-size: 22px; font-weight: 700; line-height: 1.2; overflow-wrap: anywhere; }
+.start-card-sub { font-size: 15px; font-weight: 700; line-height: 1.3; }
+.start-card-go {
+  display: grid; place-items: center; flex: 0 0 48px; width: 48px; height: 48px; border-radius: 50%;
+  background: var(--on-primary); color: var(--primary-text);
+}
+.start-card-go .icon { width: 24px; height: 24px; margin: 0; vertical-align: 0; }
+
+/* Three numbers in one soft strip (no box borders). */
+.stat-strip {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 0 0 22px; padding: 14px 0; border-radius: 18px;
+  background: color-mix(in srgb, var(--primary-soft) 32%, var(--bg));
+}
+.stat-cell { padding: 0 8px; text-align: center; }
+.stat-cell + .stat-cell { border-left: 1px solid color-mix(in srgb, var(--primary-edge) 60%, transparent); }
+.stat-cell-value { margin: 0; font-size: 24px; font-weight: 700; line-height: 1.15; }
+.stat-cell-label { margin: 2px 0 0; font-size: 13px; color: var(--muted); }
 
 /* ---------- Bookmark button (top right of each question) ---------- */
 .question-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }

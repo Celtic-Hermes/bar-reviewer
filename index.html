@@ -222,23 +222,35 @@
     <!-- SCREEN 2: One subject -->
     <section id="screen-subject" hidden>
       <button class="back-btn" id="subject-back"><span data-icon="chevron-left"></span> Subjects</button>
-      <h1 class="screen-title" id="subject-title"></h1>
-      <p class="screen-subtitle" id="subject-count"></p>
+      <!-- The header: the subject's icon, its name, and a small ring with her mastery percent (app.js openSubject) -->
+      <header class="subject-head">
+        <span class="subject-head-icon" id="subject-head-icon" aria-hidden="true"></span>
+        <div class="subject-head-text">
+          <h1 class="screen-title" id="subject-title"></h1>
+          <p class="screen-subtitle" id="subject-count"></p>
+        </div>
+        <div class="mastery-ring" id="subject-ring" style="--p: 0" role="img" aria-label="Mastery">
+          <span class="mastery-ring-text" id="subject-ring-text">0%</span>
+        </div>
+      </header>
 
       <div id="topic-area">
-        <section class="card">
-          <h2 class="label">Your progress</h2>
-          <dl class="stats">
-            <dt>Multiple choice</dt>
-            <dd id="stats-mcq"></dd>
-            <dt>Essays</dt>
-            <dd id="stats-essay"></dd>
-            <dt>Fill in the blank</dt>
-            <dd id="stats-fb"></dd>
-            <dt>Mastery</dt>
-            <dd id="stats-mastery"></dd>
-          </dl>
-        </section>
+        <!-- The one big action: Continue the round she's in the middle of, or start practicing (app.js showStartCard) -->
+        <button type="button" class="start-card" id="start-card">
+          <span class="start-card-text">
+            <span class="start-card-title" id="start-title">Start practicing</span>
+            <span class="start-card-sub" id="start-sub"></span>
+          </span>
+          <span class="start-card-go" aria-hidden="true"><span data-icon="chevron-right"></span></span>
+        </button>
+
+        <!-- Three numbers about this subject (app.js showSubjectStats) -->
+        <div class="stat-strip" aria-label="Your progress in this subject">
+          <div class="stat-cell"><p class="stat-cell-value" id="sstat-answered">0</p><p class="stat-cell-label">Answered</p></div>
+          <div class="stat-cell"><p class="stat-cell-value" id="sstat-accuracy">–</p><p class="stat-cell-label">Accuracy</p></div>
+          <div class="stat-cell"><p class="stat-cell-value" id="sstat-mastered">0</p><p class="stat-cell-label">Mastered</p></div>
+        </div>
+
 
         <fieldset class="mode-picker">
           <legend class="switch-title">Question type</legend>

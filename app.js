@@ -208,6 +208,11 @@ function rememberSpot() {
     spot.search = document.getElementById("search-input").value;  // to show the same results on Back
   }
   saveSpot(spot);
+  // The round she's in the middle of is also kept for the subject screen's "Continue" (it survives
+  // the home-screen timeout). Not for a case's questions or Review missed / Bookmarked / Tagged lists.
+  if (spot.round && !practiceCase && (isRealTopic(currentTopic) || currentTopic === ALL_TOPICS)) {
+    saveLastRound(currentSubject, currentTopic, currentSubtopic, spot.round);
+  }
 }
 
 // On startup: if she was somewhere, rebuild that screen (and round). Never crashes:
@@ -745,6 +750,13 @@ function openSubject(subject) {
   document.getElementById("subject-count").textContent = countLabel(count) + " available";
   document.getElementById("list-empty").hidden = true;
 
+  // The header's icon (the subject's own; none for a subject without one yet).
+  const headIcon = document.getElementById("subject-head-icon");
+  headIcon.textContent = "";
+  const subjectIcon = SUBJECT_ICONS[subject] ? icon(SUBJECT_ICONS[subject]) : null;
+  if (subjectIcon) { headIcon.appendChild(subjectIcon); }
+  headIcon.hidden = !subjectIcon;
+
   showSubjectStats(subject);
 
   // No questions? Hide the topic list and say why.
@@ -757,6 +769,7 @@ function openSubject(subject) {
 
 // Her lists and the topic cards on the subject screen (rebuilt when the question type changes).
 function showTopicCards(subject) {
+  showStartCard(subject);
   // Her lists: "Review missed", "Bookmarked" and "Tagged".
   const myLists = document.getElementById("my-lists");
   myLists.innerHTML = "";
@@ -2234,22 +2247,87 @@ function showEmptyListMessage(topic) {
 }
 
 // Fill in the "Your progress" box from what's saved on the phone.
+// The header's mastery ring and the three numbers under the Start card, for this subject.
+//   Answered: how many of its questions she has answered at least once (Reset takes them back off).
+//   Accuracy: of those, how many were right (or "Got it") the last time. Partly and Missed it count as not right.
+//   Mastered: how many are mastered (right on two different days in a row).
 function showSubjectStats(subject) {
-  const stats = subjectStats(subject);
-  document.getElementById("stats-mcq").textContent = stats.mcqAnswered === 0
-    ? "Not tried yet"
-    : stats.mcqCorrect + " of " + stats.mcqAnswered + " correct";
-  const fbAnswered = wholeNumberOrZero(stats.fbAnswered);
-  document.getElementById("stats-fb").textContent = fbAnswered === 0
-    ? "Not tried yet"
-    : wholeNumberOrZero(stats.fbCorrect) + " of " + fbAnswered + " correct";
-  document.getElementById("stats-essay").textContent =
-    (stats.got + stats.partly + stats.missed) === 0
-      ? "Not tried yet"
-      : "Got it " + stats.got + "\nPartly " + stats.partly + "\nMissed it " + stats.missed;
-  const mastery = masteryOf(questionsFor(subject));
-  document.getElementById("stats-mastery").textContent = mastery.mastered + " of " + mastery.total + " mastered";
+  const questions = questionsFor(subject);
+  const answered = questions.filter(function (q) { return progress.results[q.id]; });
+  const right = answered.filter(function (q) {
+    const last = progress.results[q.id].last;
+    return last === "right" || last === "got";
+  }).length;
+  const mastery = masteryOf(questions);
+  document.getElementById("sstat-answered").textContent = String(answered.length);
+  document.getElementById("sstat-accuracy").textContent = answered.length ? Math.round(100 * right / answered.length) + "%" : "–";
+  document.getElementById("sstat-mastered").textContent = String(mastery.mastered);
+
+  // The ring: mastery as a percent (at least 1% once anything is mastered).
+  const percent = mastery.total ? Math.round(100 * mastery.mastered / mastery.total) : 0;
+  const shown = mastery.mastered > 0 ? Math.max(1, percent) : 0;
+  document.getElementById("subject-ring").style.setProperty("--p", String(shown));
+  document.getElementById("subject-ring").setAttribute("aria-label", "Mastery: " + shown + " percent");
+  document.getElementById("subject-ring-text").textContent = shown + "%";
 }
+
+// ---------- The Start card: Continue, or Start practicing ----------
+// If she's in the middle of a round in THIS subject (saved by rememberSpot), the card says
+// "Continue: <topic>" and "Question N of M", and takes her back to that exact question.
+// Otherwise it says "Start practicing" and how many questions, and starts all of the subject's
+// topics using the Question type and Shuffle options below.
+function lastRoundHere(subject) {
+  const last = loadLastRound();
+  if (!last || last.subject !== subject) { return null; }
+  const known = {};
+  allQuestions.forEach(function (q) { if (q && q.id) { known[q.id] = true; } });
+  return last.round.questionIds.every(function (id) { return known[id]; }) ? last : null;
+}
+
+function roundLabel(last) {
+  const normal = last.subtopic && last.subtopic !== ALL_SUBTOPICS && last.subtopic !== OTHER_SUBTOPIC;
+  return normal ? last.subtopic : (last.topic === ALL_TOPICS ? "All topics" : last.topic);
+}
+
+function showStartCard(subject) {
+  const card = document.getElementById("start-card");
+  const last = lastRoundHere(subject);
+  if (last) {
+    document.getElementById("start-title").textContent = "Continue: " + roundLabel(last);
+    document.getElementById("start-sub").textContent = "Question " + (last.round.index + 1) + " of " + last.round.questionIds.length;
+    card.disabled = false;
+    card.dataset.action = "continue";
+    return;
+  }
+  const mode = currentMode();
+  const n = questionsForTopic(subject, ALL_TOPICS, mode).length;
+  document.getElementById("start-title").textContent = "Start practicing";
+  document.getElementById("start-sub").textContent = n === 0
+    ? noneOfMode(mode) + " here. Pick All under Question type."
+    : modeCountLabel(n, mode);
+  card.disabled = (n === 0);
+  card.dataset.action = "start";
+}
+
+document.getElementById("start-card").addEventListener("click", function (event) {
+  const subject = currentSubject;
+  if (event.currentTarget.dataset.action === "continue") {
+    const last = lastRoundHere(subject);
+    if (last) {
+      currentTopic = last.topic;
+      currentSubtopic = last.subtopic;
+      if (putBackRound(last.round)) { return; }
+    }
+    clearLastRound();  // it couldn't be put back (the content changed): start fresh instead
+    showStartCard(subject);
+    return;
+  }
+  currentTopic = ALL_TOPICS;
+  currentSubtopic = null;
+  fixedQuestions = null;
+  practiceCase = null;
+  startPractice();
+});
 
 document.getElementById("subject-back").addEventListener("click", function () {
   showScreen("screen-home");
@@ -3464,6 +3542,7 @@ function showQuestionCases(question) {
 
 // ---------- Screen 4: Results ----------
 function showResults() {
+  clearLastRound();  // finished: there's nothing to continue
   const essayCount = session.ratings["Got it"] + session.ratings["Partly"] + session.ratings["Missed it"];
   document.getElementById("results-subject").textContent = currentSubject + " · " + currentTopic;
 

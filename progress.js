@@ -687,6 +687,36 @@ function loadLastPractice() {
   }
 }
 
+// ---------- The practice round she's in the middle of (for the subject screen's "Continue") ----------
+// Kept on this device only (not in backups), separate from her progress: { subject, topic, subtopic,
+// at, round }, where "round" is the same round object the saved spot keeps (the order of the
+// questions, which one she's on, her answers so far). Unlike the saved spot it survives the
+// home-screen timeout and leaving the app; it's removed when the round is finished.
+const LAST_ROUND_KEY = "barReviewer.lastRound.v1";
+
+function saveLastRound(subject, topic, subtopic, round) {
+  try {
+    localStorage.setItem(LAST_ROUND_KEY, JSON.stringify({ subject: subject, topic: topic, subtopic: subtopic || null, at: Date.now(), round: round }));
+  } catch (e) { /* fine */ }
+}
+
+// The saved round, or null (none, or it doesn't look right).
+function loadLastRound() {
+  try {
+    const raw = JSON.parse(localStorage.getItem(LAST_ROUND_KEY));
+    if (!isPlainObject(raw) || typeof raw.subject !== "string" || typeof raw.topic !== "string" || !isPlainObject(raw.round)) { return null; }
+    const r = raw.round;
+    if (!Array.isArray(r.questionIds) || r.questionIds.length === 0 || !Number.isInteger(r.index) || r.index < 0 || r.index >= r.questionIds.length) { return null; }
+    return { subject: raw.subject, topic: raw.topic, subtopic: typeof raw.subtopic === "string" ? raw.subtopic : null, at: Number(raw.at) || 0, round: r };
+  } catch (e) {
+    return null;
+  }
+}
+
+function clearLastRound() {
+  try { localStorage.removeItem(LAST_ROUND_KEY); } catch (e) { /* fine */ }
+}
+
 // Note "she's here / was here just now" (called when the app is hidden or closed, and with each saved spot).
 function markSeen() {
   try { localStorage.setItem(LAST_SEEN_KEY, String(Date.now())); } catch (e) { /* fine */ }
