@@ -264,7 +264,9 @@ def check_full_text(where, text, footnotes):
         parts = re.split(r"\n\s*Footnotes\s*\n", text, maxsplit=1)
         if len(parts) == 2:
             body, notes = parts
-            used = set(re.findall(r"\[(\d+)\]", body))
+            # A footnote number is glued to the word before it ("Certiorari[1]"); a bracketed number after a
+            # space (like "one hundred eighty [180] days" in Steelcase) is the decision's own wording.
+            used = set(re.findall(r"(?<=\S)\[(\d+)\]", body))
             have = set(re.findall(r"^\s*\[(\d+)\]", notes, flags=re.MULTILINE))
             missing = sorted(used - have, key=int)
             if missing:

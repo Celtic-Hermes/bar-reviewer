@@ -151,6 +151,21 @@
       "ruling": "The petition was denied and the Court of Appeals' decision was affirmed. (1) The case is not moot: the conversion of the MPSA applications into FTAA applications after the case was filed was a suspicious strategy, and the case falls under the exceptions to mootness (a grave violation of the Constitution, paramount public interest, the need for controlling principles, and a situation capable of repetition yet evading review). (2) Nationality of a corporation is determined by two tests: the control test (the liberal rule) and the grandfather rule (the stricter rule). The control test is still the prevailing mode of determining whether a corporation is Filipino, but when there is doubt, based on the facts and circumstances, in the 60-40 Filipino equity ownership, the grandfather rule may be applied. The FIA's definition of a \"Philippine national\" cannot override the Constitution, and \"corporate layering\" used to circumvent the Constitution is illegal. Here the doubt arose because MBMI, a 100% Canadian corporation, funded the companies through layered corporations with little or no paid-in Filipino capital; when grandfathered, MBMI owns 60% or more of the equity of Narra, Tesoro and McArthur, so they are foreign and not qualified for MPSAs. (3) The joint ventures between the petitioners and MBMI were akin to partnerships, so the admission-by-co-partner rule applied. (4) The POA has jurisdiction to resolve disputes over MPSA applications (adverse claims, protests or oppositions), though it cannot approve or reject the applications, which belongs to the DENR Secretary. (5) The later sale of MBMI's shares to DMCI was disregarded in this case, because that matter was pending in another case (G.R. No. 202877).",
       "keyDoctrine": "The **control test** is the prevailing way to decide whether a corporation is Filipino, but where there is **doubt** about the 60-40 Filipino equity (for example, layered corporations funded by a foreign investor), the **grandfather rule** applies and the ownership is traced up to the real owners. Corporate layering used to get around the Constitution's nationality requirement is illegal.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2014/apr2014/gr_195580_2014.html"
+    },
+    {
+      "id": "case-0012",
+      "status": "draft",
+      "name": "Steelcase, Inc. v. Design International Selections, Inc.",
+      "grNumber": "G.R. No. 171995",
+      "year": 2012,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "facts": "Steelcase, Inc. (Steelcase) is a foreign corporation organized under the laws of Michigan, U.S.A., which manufactures office furniture. Design International Selections, Inc. (DISI) is a Philippine corporation in the furniture business. Around 1986 or 1987 they orally agreed on a dealership: Steelcase gave DISI the right to market, sell, distribute, install and service its products to end-user customers in the Philippines. The relationship ended in January 1999 after the agreement was breached. In January 1999, Steelcase sued DISI for a sum of money, alleging an unpaid account of US$600,000. In its answer, DISI argued, among other things, that Steelcase had no capacity to sue in the Philippines because it was doing business here without a license. The Regional Trial Court dismissed the complaint (Order of 15 November 1999), reasoning that Steelcase's requirements on DISI's performance (the \"Dealer Performance Expectation\") showed that it participated in DISI's operations and was therefore \"doing business\" in the Philippines without a license. The Court of Appeals affirmed, pointing to a letter to Phinma, the cancellation of orders from DISI's customers (such as Visteon), continued shipment of products to the Philippines through Modernform, and impositions on DISI's management and operations. Steelcase went to the Supreme Court on a petition for review under Rule 45.",
+      "issue": "(1) Is Steelcase doing business in the Philippines without a license? (2) Is DISI estopped from challenging Steelcase's legal capacity to sue?",
+      "ruling": "The Court ruled for Steelcase. It reversed the Court of Appeals, set aside the dismissal of the complaint, ordered the Amended Complaint reinstated, and remanded the case to the RTC. (1) Steelcase is an unlicensed foreign corporation NOT doing business in the Philippines. Under Section 133 of the Corporation Code, an unlicensed foreign corporation doing business here cannot maintain a suit in Philippine courts, but it may be sued. \"Doing business\" is defined in Section 3(d) of the Foreign Investments Act (RA No. 7042) and its implementing rules; the appointment of a distributor is not doing business unless the distributor is under the full control of the foreign corporation, and appointing a distributor domiciled in the Philippines which transacts business in its own name and for its own account is expressly not doing business. DISI was independently owned and managed, distributed other companies' products too, and bought and resold Steelcase products at its own profit margin: it was an independent contractor acting in its own name and for its own account. The acts the Court of Appeals relied on were misinterpreted: no sale resulted from the Phinma letter, and cancelling orders showed Steelcase's refusal to sell without a local distributor; owning 25% of Modernform, a separate corporation, was insufficient to pierce the corporate veil; and reasonable performance standards on dealers are sound business practice that does not impinge on a distributor's independence. (2) Even if Steelcase had been doing business without a license, DISI would be estopped from challenging its capacity to sue, because DISI dealt with Steelcase and benefited from the dealership for about 12 years, and raised the lack of license only after it was told it owed US$600,000. The Court noted that invoking the lack of capacity to sue is a common ploy of defaulting local companies, and that the license requirement was not meant to favor domestic corporations that renege on obligations to foreign firms.",
+      "keyDoctrine": "A foreign corporation does **not** do business in the Philippines just by appointing an **independent distributor** that transacts in its own name and for its own account; it does so if the distributor is under its **full control**. And a Philippine party that contracted with and benefited from a foreign corporation is **estopped** from challenging that corporation's lack of license or capacity to sue.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2012/apr2012/gr_171995_2012.html"
     }
   ],
   "questions": [
@@ -2473,6 +2488,238 @@
         "url": "https://lawphil.net/judjuris/juri2014/apr2014/gr_195580_2014.html",
         "part": "Decision, discussion of the petitioners' Manifestation and Submission dated 19 October 2012",
         "excerpt": "As stated before, petitioners’ Manifestation and Submission dated October 19, 2012 would want us to declare the instant petition moot and academic due to the transfer and conveyance of all the shareholdings and interests of MBMI to DMCI, a corporation duly organized and existing under Philippine laws and is at least 60% Philippine-owned. Petitioners reasoned that they now cannot be considered as foreign-owned; the transfer of their shares supposedly cured the \"defect\" of their previous nationality. They claimed that their current FTAA contract with the State should stand since \"even wholly-owned foreign corporations can enter into an FTAA with the State.\" Petitioners stress that there should no longer be any issue left as regards their qualification to enter into FTAA contracts since they are qualified to engage in mining activities in the Philippines. Thus, whether the \"grandfather rule\" or the \"control test\" is used, the nationalities of petitioners cannot be doubted since it would pass both tests. … The sale of the MBMI shareholdings to DMCI does not have any bearing in the instant case and said fact should be disregarded. The manifestation can no longer be considered by us since it is being tackled in G.R. No. 202877 pending before this Court. Thus, the question of whether petitioners, allegedly a Philippine-owned corporation due to the sale of MBMI's shareholdings to DMCI, are allowed to enter into FTAAs with the State is a non-issue in this case."
+      }
+    },
+    {
+      "id": "q-0288",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "prompt": "A foreign manufacturer without a Philippine license appoints a local company as its non-exclusive distributor. The distributor buys the goods at a discount, adds its own profit margin, pays the freight and taxes, sells to customers in its own name, and also sells other brands. The manufacturer sets reasonable sales, finance and operations standards for its dealers. The distributor later argues that the manufacturer is doing business in the Philippines without a license and so cannot sue for an unpaid account. Based on Steelcase v. Design International, is the distributor right?",
+      "suggestedAnswer": {
+        "answer": "No. By appointing an independent distributor that acts in its own name and for its own account, the foreign manufacturer is not doing business in the Philippines, so it is not barred from suing.",
+        "legalBasis": "Under Section 133 of the Corporation Code, an unlicensed foreign corporation transacting business in the Philippines cannot maintain a suit in Philippine courts (though it may be sued). Section 3(d) of the Foreign Investments Act defines \"doing business\" to include soliciting orders, opening offices, appointing representatives or distributors domiciled in the Philippines, participating in the management, supervision or control of a domestic business, and other acts implying a continuity of commercial dealings. But it is expressly not deemed to include appointing a representative or distributor domiciled in the Philippines which transacts business in its own name and for its own account. Under the implementing rules, the appointment of a distributor is not sufficient to constitute doing business unless the distributor is under the full control of the foreign corporation. Whether a foreign corporation is doing business must be judged in light of the attendant circumstances.",
+        "application": "In Steelcase, the dealer (DISI) was independently owned and managed, distributed other companies' products, and its dealership was basically a buy-and-sell arrangement: it added its profit margin to Steelcase's prices and paid for the goods, with freight and taxes for its own account. This showed it was an independent contractor acting in its own name and for its own account, not a mere conduit. The Dealer Performance Expectation, which set conditions on business planning, operations and finance, was merely sound business practice; for as long as such requirements do not impinge on a distributor's independence, there is nothing wrong with reasonable expectations on distributors.",
+        "conclusion": "The manufacturer is not doing business in the Philippines by appointing the distributor, so it may sue."
+      },
+      "keyPoints": [
+        "Section 133, Corporation Code: an unlicensed foreign corporation doing business cannot sue (but can be sued)",
+        "FIA Section 3(d) defines \"doing business\"",
+        "Appointing a distributor that transacts in its own name and for its own account is NOT doing business",
+        "A distributor must be under the full control of the foreign corporation for its appointment to count as doing business",
+        "The distributor here was independent: it bought and resold at its own margin and carried other brands",
+        "Reasonable performance standards for dealers do not destroy independence"
+      ],
+      "caseIds": [
+        "case-0012"
+      ],
+      "source": {
+        "caseTitle": "Steelcase, Inc. v. Design International Selections, Inc.",
+        "grNumber": "G.R. No. 171995",
+        "url": "https://lawphil.net/judjuris/juri2012/apr2012/gr_171995_2012.html",
+        "part": "Decision, \"Steelcase is an unlicensed foreign corporation NOT doing business in the Philippines\"",
+        "excerpt": "The phrase \"doing business\" is clearly defined in Section 3(d) of R.A. No. 7042 (Foreign Investments Act of 1991), to wit: … d) The phrase \"doing business\" shall include soliciting orders, service contracts, opening offices, whether called \"liaison\" offices or branches; appointing representatives or distributors domiciled in the Philippines or who in any calendar year stay in the country for a period or periods totalling one hundred eighty (180) days or more; participating in the management, supervision or control of any domestic business, firm, entity or corporation in the Philippines; and any other act or acts that imply a continuity of commercial dealings or arrangements, and contemplate to that extent the performance of acts or works, or the exercise of some of the functions normally incident to, and in progressive prosecution of, commercial gain or of the purpose and object of the business organization: Provided, however, That the phrase \"doing business\" shall not be deemed to include mere investment as a shareholder by a foreign entity in domestic corporations duly registered to do business, and/or the exercise of rights as such investor; nor having a nominee director or officer to represent its interests in such corporation; nor appointing a representative or distributor domiciled in the Philippines which transacts business in its own name and for its own account; (Emphases supplied) … From the preceding citations, the appointment of a distributor in the Philippines is not sufficient to constitute \"doing business\" unless it is under the full control of the foreign corporation. On the other hand, if the distributor is an independent entity which buys and distributes products, other than those of the foreign corporation, for its own name and its own account, the latter cannot be considered to be doing business in the Philippines. It should be kept in mind that the determination of whether a foreign corporation is doing business in the Philippines must be judged in light of the attendant circumstances. … In the case at bench, it is undisputed that DISI was founded in 1979 and is independently owned and managed by the spouses Leandro and Josephine Bantug. In addition to Steelcase products, DISI also distributed products of other companies including carpet tiles, relocatable walls and theater settings. The dealership agreement between Steelcase and DISI had been described by the owner himself as: … This clearly belies DISI’s assertion that it was a mere conduit through which Steelcase conducted its business in the country. From the preceding facts, the only reasonable conclusion that can be reached is that DISI was an independent contractor, distributing various products of Steelcase and of other companies, acting in its own name and for its own account. … Finally, both the CA and DISI rely heavily on the Dealer Performance Expectation required by Steelcase of its distributors to prove that DISI was not functioning independently from Steelcase because the same imposed certain conditions pertaining to business planning, organizational structure, operational effectiveness and efficiency, and financial stability. It is actually logical to expect that Steelcase, being one of the major manufacturers of office systems furniture, would require its dealers to meet several conditions for the grant and continuation of a distributorship agreement. The imposition of minimum standards concerning sales, marketing, finance and operations is nothing more than an exercise of sound business practice to increase sales and maximize profits for the benefit of both Steelcase and its distributors. For as long as these requirements do not impinge on a distributor’s independence, then there is nothing wrong with placing reasonable expectations on them. … All things considered, it has been sufficiently demonstrated that DISI was an independent contractor which sold Steelcase products in its own name and for its own account. As a result, Steelcase cannot be considered to be doing business in the Philippines by its act of appointing a distributor as it falls under one of the exceptions under R.A. No. 7042."
+      }
+    },
+    {
+      "id": "q-0289",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "prompt": "A local company profited for twelve years from a dealership with a foreign corporation without a Philippine license. Only after it was told that it owed the foreign corporation a large unpaid account did it point out that the foreign corporation had no license, and it then asked for the foreign corporation's lawsuit to be dismissed for lack of capacity to sue. Assuming the foreign corporation was doing business without a license, may the local company use that defense? Answer based on Steelcase v. Design International.",
+      "suggestedAnswer": {
+        "answer": "No. The local company is estopped from challenging the foreign corporation's legal capacity to sue, because it entered into the dealership agreement and benefited from it.",
+        "legalBasis": "A foreign corporation doing business in the Philippines may sue in Philippine courts, although not authorized to do business here, against a Philippine citizen or entity that had contracted with and benefited by that corporation. A party is estopped to challenge the personality of a corporation after having acknowledged it by entering into a contract with it, and the doctrine of estoppel to deny corporate existence applies to foreign as well as domestic corporations. The principle prevents a person contracting with a foreign corporation from later taking advantage of its noncompliance with the statutes, chiefly where that person has received the benefits of the contract. It rests on the axiom that no person ought to derive any advantage of his own wrong.",
+        "application": "In Steelcase, DISI entered into the dealership agreement and profited from it for 12 years (1987 to 1999), establishing goodwill and a market for Steelcase products and even receiving a performance award. By entering into the agreement, DISI was charged with knowledge that Steelcase was not licensed to do business in the Philippines. It never raised the issue until late 1998, and only after it was informed that it owed Steelcase US$600,000. The Court observed that invoking the incapacity of an unlicensed foreign corporation to sue is a common ploy of defaulting local companies.",
+        "conclusion": "The local company is estopped and cannot use the lack of license to avoid the suit."
+      },
+      "keyPoints": [
+        "A foreign corporation doing business without a license may still sue one who contracted with and benefited from it",
+        "Estoppel: one who acknowledged the corporation by contracting with it cannot challenge its personality or capacity",
+        "Entering the agreement charges the local party with knowledge of the lack of license",
+        "The local party benefited for 12 years and raised the issue only after being told of the debt",
+        "Invoking lack of capacity to sue is a common ploy of defaulting local companies"
+      ],
+      "caseIds": [
+        "case-0012"
+      ],
+      "source": {
+        "caseTitle": "Steelcase, Inc. v. Design International Selections, Inc.",
+        "grNumber": "G.R. No. 171995",
+        "url": "https://lawphil.net/judjuris/juri2012/apr2012/gr_171995_2012.html",
+        "part": "Decision, \"DISI is estopped from challenging Steelcase's legal capacity to sue\"",
+        "excerpt": "It cannot be denied that DISI entered into a dealership agreement with Steelcase and profited from it for 12 years from 1987 until 1999. DISI admits that it complied with its obligations under the dealership agreement by exerting more effort and making substantial investments in the promotion of Steelcase products. It also claims that it was able to establish a very good reputation and goodwill for Steelcase and its products, resulting in the establishment and development of a strong market for Steelcase products in the Philippines. Because of this, DISI was very proud to be awarded the \"Steelcase International Performance Award\" for meeting sales objectives, satisfying customer needs, managing an effective company and making a profit. … Unquestionably, entering into a dealership agreement with Steelcase charged DISI with the knowledge that Steelcase was not licensed to engage in business activities in the Philippines. This Court has carefully combed the records and found no proof that, from the inception of the dealership agreement in 1986 until September 1998, DISI even brought to Steelcase’s attention that it was improperly doing business in the Philippines without a license. It was only towards the latter part of 1998 that DISI deemed it necessary to inform Steelcase of the impropriety of the conduct of its business without the requisite Philippine license. It should, however, be noted that DISI only raised the issue of the absence of a license with Steelcase after it was informed that it owed the latter US$600,000.00 for the sale and delivery of its products under their special credit arrangement. … By acknowledging the corporate entity of Steelcase and entering into a dealership agreement with it and even benefiting from it, DISI is estopped from questioning Steelcase’s existence and capacity to sue. This is consistent with the Court’s ruling in Communication Materials and Design, Inc. v. Court of Appeals where it was written: … A foreign corporation doing business in the Philippines may sue in Philippine Courts although not authorized to do business here against a Philippine citizen or entity who had contracted with and benefited by said corporation. To put it in another way, a party is estopped to challenge the personality of a corporation after having acknowledged the same by entering into a contract with it. And the doctrine of estoppel to deny corporate existence applies to a foreign as well as to domestic corporations. One who has dealt with a corporation of foreign origin as a corporate entity is estopped to deny its corporate existence and capacity: The principle will be applied to prevent a person contracting with a foreign corporation from later taking advantage of its noncompliance with the statutes chiefly in cases where such person has received the benefits of the contract. … As shown in the previously cited cases, this Court has time and again upheld the principle that a foreign corporation doing business in the Philippines without a license may still sue before the Philippine courts a Filipino or a Philippine entity that had derived some benefit from their contractual arrangement because the latter is considered to be estopped from challenging the personality of a corporation after it had acknowledged the said corporation by entering into a contract with it. … In Antam Consolidated, Inc. v. Court of Appeals, this Court had the occasion to draw attention to the common ploy of invoking the incapacity to sue of an unlicensed foreign corporation utilized by defaulting domestic companies which seek to avoid the suit by the former. The Court cannot allow this to continue by always ruling in favor of local companies, despite the injustice to the overseas corporation which is left with no available remedy."
+      }
+    },
+    {
+      "id": "q-0290",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "prompt": "To show that a foreign corporation does business in the Philippines without a license, a local company points to these facts: the foreign corporation sent a letter saying distribution rights would soon be established and cancelled orders placed by local customers when it had no local distributor; its 25%-owned affiliate abroad sold goods to a Philippine client; and it required its distributors to meet minimum performance standards. Based on Steelcase v. Design International, do these facts show that it is doing business in the Philippines?",
+      "suggestedAnswer": {
+        "answer": "No. None of these acts shows that the foreign corporation is doing business in the Philippines.",
+        "legalBasis": "A corporation has a separate and distinct personality from its stockholders and from other corporations with which it may be connected, so owning part of another corporation is not enough to pierce the veil of corporate fiction and treat that corporation as an alter ego. Requiring distributors to meet minimum standards is sound business practice, as long as the requirements do not impinge on the distributor's independence.",
+        "application": "In Steelcase, the Court of Appeals misinterpreted the letter to Phinma and the cancellation of orders: no sale was concluded as a result, and had Steelcase really been doing business here it would have accepted and serviced the orders, but its decision to stop selling in the absence of a local distributor shows its refusal to engage in activities that might be construed as doing business. Steelcase's 25% ownership of Modernform (the rest owned by Thai stockholders) was \"grossly insufficient\" to pierce the veil and treat Modernform as its alter ego, and there was no evidence for the claim. As for the Dealer Performance Expectation, it was a logical, reasonable condition for the grant and continuation of a distributorship that did not impinge on the distributor's independence.",
+        "conclusion": "These acts do not amount to doing business in the Philippines."
+      },
+      "keyPoints": [
+        "The letter and cancelled orders led to no sale; stopping sales without a local distributor shows refusal to do business here",
+        "A corporation has a separate personality from its stockholders and from other corporations",
+        "A 25% stake in another corporation is insufficient to pierce the corporate veil",
+        "The affiliate's sale could not be attributed to the foreign corporation without evidence of alter ego",
+        "Reasonable minimum standards for dealers are sound business practice if they do not impinge on independence"
+      ],
+      "caseIds": [
+        "case-0012"
+      ],
+      "source": {
+        "caseTitle": "Steelcase, Inc. v. Design International Selections, Inc.",
+        "grNumber": "G.R. No. 171995",
+        "url": "https://lawphil.net/judjuris/juri2012/apr2012/gr_171995_2012.html",
+        "part": "Decision, \"Steelcase is an unlicensed foreign corporation NOT doing business in the Philippines\" (the acts relied on by the Court of Appeals and DISI)",
+        "excerpt": "The CA, in finding Steelcase to be unlawfully engaged in business in the Philippines, took into consideration the delivery by Steelcase of a letter to Phinma informing the latter that the distribution rights for its products would be established in the near future, and also its cancellation of orders placed by Visteon. The foregoing acts were apparently misinterpreted by the CA. Instead of supporting the claim that Steelcase was doing business in the country, the said acts prove otherwise. It should be pointed out that no sale was concluded as a result of these communications. Had Steelcase indeed been doing business in the Philippines, it would have readily accepted and serviced the orders from the abovementioned Philippine companies. Its decision to voluntarily cease to sell its products in the absence of a local distributor indicates its refusal to engage in activities which might be construed as \"doing business.\" … Another point being raised by DISI is the delivery and sale of Steelcase products to a Philippine client by Modernform allegedly an agent of Steelcase. Basic is the rule in corporation law that a corporation has a separate and distinct personality from its stockholders and from other corporations with which it may be connected. Thus, despite the admission by Steelcase that it owns 25% of Modernform, with the remaining 75% being owned and controlled by Thai stockholders, it is grossly insufficient to justify piercing the veil of corporate fiction and declare that Modernform acted as the alter ego of Steelcase to enable it to improperly conduct business in the Philippines. The records are bereft of any evidence which might lend even a hint of credence to DISI’s assertions. As such, Steelcase cannot be deemed to have been doing business in the Philippines through Modernform. … Finally, both the CA and DISI rely heavily on the Dealer Performance Expectation required by Steelcase of its distributors to prove that DISI was not functioning independently from Steelcase because the same imposed certain conditions pertaining to business planning, organizational structure, operational effectiveness and efficiency, and financial stability. It is actually logical to expect that Steelcase, being one of the major manufacturers of office systems furniture, would require its dealers to meet several conditions for the grant and continuation of a distributorship agreement. The imposition of minimum standards concerning sales, marketing, finance and operations is nothing more than an exercise of sound business practice to increase sales and maximize profits for the benefit of both Steelcase and its distributors. For as long as these requirements do not impinge on a distributor’s independence, then there is nothing wrong with placing reasonable expectations on them."
+      }
+    },
+    {
+      "id": "q-0291",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "prompt": "Under Section 133 of the Corporation Code, as quoted in Steelcase v. Design International, what is the effect on a foreign corporation of transacting business in the Philippines without a license?",
+      "choices": {
+        "A": "It cannot be sued in Philippine courts",
+        "B": "It cannot maintain or intervene in any action, suit or proceeding in Philippine courts or administrative agencies, but it may be sued on any valid cause of action",
+        "C": "Its contracts are void and it must pay a fine before it may sue",
+        "D": "It may sue only in the court of its home country"
+      },
+      "correct": "B",
+      "explanation": "B is correct. Section 133 provides that no foreign corporation transacting business in the Philippines without a license shall be permitted to maintain or intervene in any action, suit or proceeding in any Philippine court or administrative agency, but such a corporation may be sued or proceeded against before Philippine courts or administrative tribunals on any valid cause of action recognized under Philippine laws. A is wrong because the corporation can be sued. C is wrong because Section 133 does not make its contracts void or require a fine. D is wrong because the provision bars access to Philippine courts only; it does not say where else the corporation may sue.",
+      "caseIds": [
+        "case-0012"
+      ],
+      "source": {
+        "caseTitle": "Steelcase, Inc. v. Design International Selections, Inc.",
+        "grNumber": "G.R. No. 171995",
+        "url": "https://lawphil.net/judjuris/juri2012/apr2012/gr_171995_2012.html",
+        "part": "Decision, discussion of whether Steelcase is doing business (Section 133, Corporation Code)",
+        "excerpt": "The rule that an unlicensed foreign corporations doing business in the Philippine do not have the capacity to sue before the local courts is well-established. Section 133 of the Corporation Code of the Philippines explicitly states: … Sec. 133. Doing business without a license. - No foreign corporation transacting business in the Philippines without a license, or its successors or assigns, shall be permitted to maintain or intervene in any action, suit or proceeding in any court or administrative agency of the Philippines; but such corporation may be sued or proceeded against before Philippine courts or administrative tribunals on any valid cause of action recognized under Philippine laws."
+      }
+    },
+    {
+      "id": "q-0292",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "prompt": "Under the implementing rules of the Foreign Investments Act quoted in Steelcase v. Design International, which of the following is NOT deemed \"doing business\" in the Philippines?",
+      "choices": {
+        "A": "Soliciting orders and service contracts in the Philippines",
+        "B": "Opening a liaison office or branch in the Philippines",
+        "C": "Participating in the management, supervision or control of a domestic corporation",
+        "D": "Appointing a representative or distributor domiciled in the Philippines which transacts business in its own name and account"
+      },
+      "correct": "D",
+      "explanation": "D is correct. The rules list as acts that shall not be deemed \"doing business\": mere investment as a shareholder in domestic corporations; having a nominee director or officer; appointing a representative or distributor domiciled in the Philippines which transacts business in the representative's or distributor's own name and account; publishing a general advertisement; maintaining a stock of goods solely for processing by another entity; consignment of equipment for use in processing products for export; collecting information; and performing auxiliary services to an existing isolated contract of sale. A, B and C are acts included in \"doing business\": soliciting orders and service contracts, opening liaison offices or branches, and participating in the management, supervision or control of a domestic business.",
+      "caseIds": [
+        "case-0012"
+      ],
+      "source": {
+        "caseTitle": "Steelcase, Inc. v. Design International Selections, Inc.",
+        "grNumber": "G.R. No. 171995",
+        "url": "https://lawphil.net/judjuris/juri2012/apr2012/gr_171995_2012.html",
+        "part": "Decision, discussion of whether Steelcase is doing business (the implementing rules)",
+        "excerpt": "f. \"Doing business\" shall include soliciting orders, service contracts, opening offices, whether liaison offices or branches; appointing representatives or distributors, operating under full control of the foreign corporation, domiciled in the Philippines or who in any calendar year stay in the country for a period totalling one hundred eighty days or more; participating in the management, supervision or control of any domestic business, firm, entity or corporation in the Philippines; and any other act or acts that imply a continuity of commercial dealings or arrangements, and contemplate to that extent the performance of acts or works, or the exercise of some of the functions normally incident to and in progressive prosecution of commercial gain or of the purpose and object of the business organization. … The following acts shall not be deemed \"doing business\" in the Philippines: 1. Mere investment as a shareholder by a foreign entity in domestic corporations duly registered to do business, and/or the exercise of rights as such investor; 2. Having a nominee director or officer to represent its interest in such corporation; 3. Appointing a representative or distributor domiciled in the Philippines which transacts business in the representative's or distributor's own name and account; 4. The publication of a general advertisement through any print or broadcast media; 5. Maintaining a stock of goods in the Philippines solely for the purpose of having the same processed by another entity in the Philippines; 6. Consignment by a foreign entity of equipment with a local company to be used in the processing of products for export; 7. Collecting information in the Philippines; and 8. Performing services auxiliary to an existing isolated contract of sale which are not on a continuing basis, such as installing in the Philippines machinery it has manufactured or exported to the Philippines, servicing the same, training domestic workers to operate it, and similar incidental services."
+      }
+    },
+    {
+      "id": "q-0293",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "prompt": "According to Steelcase v. Design International, when does the appointment of a distributor in the Philippines amount to a foreign corporation \"doing business\" here?",
+      "choices": {
+        "A": "Always, because the distributor sells the foreign corporation's products",
+        "B": "Only when the distributor is under the full control of the foreign corporation",
+        "C": "Only when the distributor is a foreign corporation too",
+        "D": "Never, whatever the circumstances"
+      },
+      "correct": "B",
+      "explanation": "B is correct. The Court said that \"the appointment of a distributor in the Philippines is not sufficient to constitute 'doing business' unless it is under the full control of the foreign corporation.\" If the distributor is an independent entity which buys and distributes products, other than those of the foreign corporation, for its own name and its own account, the foreign corporation cannot be considered to be doing business here. A is wrong because appointment alone is not enough. C is not a condition the Court stated. D is wrong because a distributor under full control would make the foreign corporation one that is doing business, and the determination depends on the attendant circumstances.",
+      "caseIds": [
+        "case-0012"
+      ],
+      "source": {
+        "caseTitle": "Steelcase, Inc. v. Design International Selections, Inc.",
+        "grNumber": "G.R. No. 171995",
+        "url": "https://lawphil.net/judjuris/juri2012/apr2012/gr_171995_2012.html",
+        "part": "Decision, discussion of whether Steelcase is doing business",
+        "excerpt": "From the preceding citations, the appointment of a distributor in the Philippines is not sufficient to constitute \"doing business\" unless it is under the full control of the foreign corporation. On the other hand, if the distributor is an independent entity which buys and distributes products, other than those of the foreign corporation, for its own name and its own account, the latter cannot be considered to be doing business in the Philippines. It should be kept in mind that the determination of whether a foreign corporation is doing business in the Philippines must be judged in light of the attendant circumstances."
+      }
+    },
+    {
+      "id": "q-0294",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "prompt": "In Steelcase v. Design International, the Court held that Steelcase's ownership of 25% of Modernform, which delivered products to a Philippine client, was insufficient to show that Steelcase was doing business in the Philippines through Modernform. Why?",
+      "choices": {
+        "A": "Because a corporation has a separate and distinct personality from its stockholders and from other corporations, and the ownership was grossly insufficient to pierce the veil of corporate fiction",
+        "B": "Because only 100% owned affiliates can be treated as alter egos",
+        "C": "Because Modernform was a Philippine corporation",
+        "D": "Because Steelcase admitted that Modernform acted as its agent, but only in Thailand"
+      },
+      "correct": "A",
+      "explanation": "A is correct. The Court said it is basic in corporation law that a corporation has a separate and distinct personality from its stockholders and from other corporations with which it may be connected. Steelcase's 25% ownership, with the remaining 75% owned and controlled by Thai stockholders, was \"grossly insufficient to justify piercing the veil of corporate fiction\" and declaring Modernform Steelcase's alter ego; the records had no evidence for DISI's assertions. B states a rule the Court did not announce. C is wrong because Modernform was a Thai corporation. D is wrong because there was no such admission.",
+      "caseIds": [
+        "case-0012"
+      ],
+      "source": {
+        "caseTitle": "Steelcase, Inc. v. Design International Selections, Inc.",
+        "grNumber": "G.R. No. 171995",
+        "url": "https://lawphil.net/judjuris/juri2012/apr2012/gr_171995_2012.html",
+        "part": "Decision, discussion of whether Steelcase is doing business (Modernform)",
+        "excerpt": "Another point being raised by DISI is the delivery and sale of Steelcase products to a Philippine client by Modernform allegedly an agent of Steelcase. Basic is the rule in corporation law that a corporation has a separate and distinct personality from its stockholders and from other corporations with which it may be connected. Thus, despite the admission by Steelcase that it owns 25% of Modernform, with the remaining 75% being owned and controlled by Thai stockholders, it is grossly insufficient to justify piercing the veil of corporate fiction and declare that Modernform acted as the alter ego of Steelcase to enable it to improperly conduct business in the Philippines. The records are bereft of any evidence which might lend even a hint of credence to DISI’s assertions. As such, Steelcase cannot be deemed to have been doing business in the Philippines through Modernform."
+      }
+    },
+    {
+      "id": "q-0295",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "prompt": "According to the Court in Steelcase v. Design International (quoting Antam Consolidated), what was the license requirement for foreign corporations intended to do?",
+      "choices": {
+        "A": "Prevent foreign corporations from performing single or isolated acts in the Philippines",
+        "B": "Favor domestic corporations that renege on their obligations to foreign firms",
+        "C": "Bar foreign corporations from acquiring a domicile for the purpose of business without first taking the steps necessary to make them amenable to suits in local courts",
+        "D": "Raise revenue from foreign corporations"
+      },
+      "correct": "C",
+      "explanation": "C is correct. The Court said the law \"was intended to bar foreign corporations from acquiring a domicile for the purpose of business without first taking the steps necessary to render them amenable to suits in the local courts. It was to prevent the foreign companies from enjoying the good while disregarding the bad.\" A and B are wrong because the law never intended to prevent foreign corporations from performing single or isolated acts here, or to favor domestic corporations who renege on their obligations. D is not a purpose the Court mentioned.",
+      "caseIds": [
+        "case-0012"
+      ],
+      "source": {
+        "caseTitle": "Steelcase, Inc. v. Design International Selections, Inc.",
+        "grNumber": "G.R. No. 171995",
+        "url": "https://lawphil.net/judjuris/juri2012/apr2012/gr_171995_2012.html",
+        "part": "Decision, \"DISI is estopped from challenging Steelcase's legal capacity to sue\" (quoting Antam Consolidated)",
+        "excerpt": "In the case of Antam Consolidated, Inc. v. CA, this Court noted that it is a common ploy of defaulting local companies which are sued by unlicensed foreign corporations not engaged in business in the Philippines to invoke the latter’s lack of capacity to sue. This practice of domestic corporations is particularly reprehensible considering that in requiring a license, the law never intended to prevent foreign corporations from performing single or isolated acts in this country, or to favor domestic corporations who renege on their obligations to foreign firms unwary enough to engage in solitary transactions with them. Rather, the law was intended to bar foreign corporations from acquiring a domicile for the purpose of business without first taking the steps necessary to render them amenable to suits in the local courts. It was to prevent the foreign companies from enjoying the good while disregarding the bad. … As a matter of principle, this Court will not step in to shield defaulting local companies from the repercussions of their business dealings. While the doctrine of lack of capacity to sue based on failure to first acquire a local license may be resorted to in meritorious cases, it is not a magic incantation. It cannot be called upon when no evidence exists to support its invocation or the facts do not warrant its application. In this case, that the respondent is estopped from challenging the petitioners’ capacity to sue has been conclusively established, and the forthcoming trial before the lower court should weigh instead on the other defenses raised by the respondent. (Emphases supplied)"
       }
     }
   ]
