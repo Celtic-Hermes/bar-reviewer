@@ -1,0 +1,26 @@
+[
+  {
+    "id": "quote-0001",
+    "text": "TEST DATA: this is placeholder quote number one. It is not a real quote and must be replaced before real use.",
+    "author": "Test Author One",
+    "role": "Placeholder",
+    "source": "Test data, not a real source",
+    "status": "draft"
+  },
+  {
+    "id": "quote-0002",
+    "text": "TEST DATA: this is placeholder quote number two. It is not a real quote and must be replaced before real use.",
+    "author": "Test Author Two",
+    "role": "Placeholder",
+    "source": "Test data, not a real source",
+    "status": "draft"
+  },
+  {
+    "id": "quote-0003",
+    "text": "TEST DATA: this is placeholder quote number three. It is not a real quote and must be replaced before real use.",
+    "author": "Test Author Three",
+    "role": "Placeholder",
+    "source": "Test data, not a real source",
+    "status": "draft"
+  }
+]

@@ -61,6 +61,14 @@
         <div class="home-hello">
           <p class="home-date" id="home-date"></p>
           <h1 class="home-greeting" id="home-greeting">Hello</h1>
+          <!-- Today's quote (app.js showQuoteOfTheDay); the old calm line is the fallback -->
+          <figure class="home-quote" id="home-quote" hidden>
+            <blockquote class="quote-text" id="quote-text"></blockquote>
+            <figcaption class="quote-by">
+              <span class="quote-author" id="quote-author"></span>
+              <span class="quote-source" id="quote-source"></span>
+            </figcaption>
+          </figure>
           <p class="home-line" id="home-line"></p>
         </div>
         <div class="home-side">
@@ -70,6 +78,7 @@
               <p class="stat-value" id="streak-value">0</p>
               <p class="stat-label" id="streak-label">day streak</p>
               <p class="stat-sub" id="streak-best" hidden></p>
+              <p class="stat-nudge" id="streak-nudge" hidden></p>
             </div>
             <!-- The daily goal is changed in Settings: tapping this tile opens it -->
             <button type="button" class="stat-tile stat-tile-button" id="today-goal-link">

@@ -392,12 +392,23 @@ def check_question(q_id, q, cases_by_id, case_texts, rules_by_number):
     text = case_texts.get(matches[0])
     if not text:
         return  # missing text file is already reported under the case
+    where_now = 0
     for piece in excerpt.split("…"):
         piece = comparable(piece)
-        if piece and piece not in text:
+        if not piece:
+            continue
+        if piece not in text:
             shown = piece if len(piece) <= 70 else piece[:67] + "..."
             problem(q_id, "this part of the excerpt isn't found word for word in %s's full text: \"%s\""
                     % (matches[0], shown))
+            continue
+        found = text.find(piece, where_now)
+        if found < 0:
+            shown = piece if len(piece) <= 70 else piece[:67] + "..."
+            problem(q_id, "the excerpt's pieces aren't in the same order as in %s's full text (Find in case would not highlight it); "
+                    "this one comes earlier in the decision: \"%s\"" % (matches[0], shown))
+        else:
+            where_now = found + len(piece)
 
 
 def check_fillblank(q_id, q):
@@ -439,6 +450,20 @@ def check_questions(questions, cases_by_id, rules_by_number):
             case_texts[case_id] = comparable(text)
     for q_id, q in by_id.items():
         check_question(q_id, q, cases_by_id, case_texts, rules_by_number)
+    return by_id
+
+
+def check_quotes(quotes):
+    """data/quotes.json (the home screen's Quote of the day): each quote has an ID like
+    quote-0001 (used once), text, an author, a source a person can check, and a status."""
+    by_id = check_ids([("data/quotes.json", q) for q in quotes], "quote")
+    for q_id, q in by_id.items():
+        need_text(q_id, q, "text")
+        need_text(q_id, q, "author")
+        need_text(q_id, q, "source")
+        check_status(q_id, q)
+        if isinstance(q.get("text"), str) and q["text"].strip().upper().startswith("TEST DATA"):
+            check(q_id, "is test data (a placeholder). Replace it with a real, sourced quote before real use.")
     return by_id
 
 
@@ -484,9 +509,11 @@ def main():
     if rules is not None:
         check_leftover_files("rule-texts", rules_by_id)
 
-    print("Checked %d questions, %d cases, %d rules." % (len(questions_by_id), len(cases_by_id), len(rules_by_id)))
-    print("Next free IDs: %s, %s, %s" % (next_id(questions_by_id, "q"), next_id(cases_by_id, "case"),
-                                         next_id(rules_by_id, "rule")))
+    quotes = load_json("data/quotes.json")
+    quotes_by_id = check_quotes(quotes) if quotes is not None else {}
+    print("Checked %d questions, %d cases, %d rules, %d quotes." % (len(questions_by_id), len(cases_by_id), len(rules_by_id), len(quotes_by_id)))
+    print("Next free IDs: %s, %s, %s, %s" % (next_id(questions_by_id, "q"), next_id(cases_by_id, "case"),
+                                             next_id(rules_by_id, "rule"), next_id(quotes_by_id, "quote")))
     print()
     show_all = "--all" in sys.argv
     if checks:

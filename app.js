@@ -1074,6 +1074,87 @@ function showRuleText(box, text, rule) {
   joinHighlights(box);
 }
 
+// ---------- Quote of the day (home screen) ----------
+// data/quotes.json: a list of { id, text, author, role, source, status }. Which one shows is
+// worked out from the date alone (never random), so it stays the same all day, changes at
+// midnight Asia/Manila time, works offline, and goes through every quote before repeating:
+//   1. the quotes are put in a fixed "shuffled" order (sorted by a number made from each ID,
+//      so the same list always gives the same order, and adding a quote moves no other quote);
+//   2. the number of days since QUOTE_START_DATE picks the position in that order.
+// Missing or damaged data is never an error: the old streak line is shown instead.
+const QUOTE_START_DATE = "2026-01-01";
+let quotes = null;  // null = still loading; [] = none (or the file couldn't be used)
+
+// Only the entries that make sense (an ID and some text); anything else is dropped.
+function cleanQuotes(data) {
+  if (!Array.isArray(data)) { return []; }
+  const seen = {};
+  const list = [];
+  data.forEach(function (q) {
+    if (!q || typeof q !== "object" || typeof q.id !== "string" || q.id === "" || seen[q.id]) { return; }
+    if (typeof q.text !== "string" || q.text.trim() === "") { return; }
+    seen[q.id] = true;
+    const text = function (v) { return typeof v === "string" ? v.trim() : ""; };
+    list.push({ id: q.id, text: q.text.trim(), author: text(q.author), role: text(q.role), source: text(q.source), status: text(q.status) });
+  });
+  return list;
+}
+
+// A fixed number made from an ID (FNV-1a), used to put the quotes in a fixed order.
+function quoteSortKey(id) {
+  let h = 2166136261;
+  for (let i = 0; i < id.length; i++) {
+    h ^= id.charCodeAt(i);
+    h = Math.imul(h, 16777619) >>> 0;
+  }
+  return h;
+}
+
+function quoteOrder(list) {
+  return list.slice().sort(function (a, b) {
+    return quoteSortKey(a.id) - quoteSortKey(b.id) || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0);
+  });
+}
+
+// Today's date in Manila as [year, month, day] (so it changes at Manila's midnight); if the
+// browser can't do that, her phone's own date.
+function manilaDateParts(now) {
+  try {
+    const parts = new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Manila", year: "numeric", month: "2-digit", day: "2-digit" }).formatToParts(now);
+    const get = function (type) { return Number(parts.find(function (p) { return p.type === type; }).value); };
+    const result = [get("year"), get("month"), get("day")];
+    if (result.every(function (n) { return n > 0; })) { return result; }
+  } catch (e) { /* fall back below */ }
+  return [now.getFullYear(), now.getMonth() + 1, now.getDate()];
+}
+
+// Whole days from QUOTE_START_DATE to that date (calendar days, so daylight saving can't matter).
+function daysSinceQuoteStart(parts) {
+  const start = QUOTE_START_DATE.split("-").map(Number);
+  return Math.round((Date.UTC(parts[0], parts[1] - 1, parts[2]) - Date.UTC(start[0], start[1] - 1, start[2])) / 86400000);
+}
+
+// The quote for a day (or null if there are none).
+function quoteForDate(list, now) {
+  if (!list || list.length === 0) { return null; }
+  const order = quoteOrder(list);
+  const n = daysSinceQuoteStart(manilaDateParts(now));
+  return order[((n % order.length) + order.length) % order.length];
+}
+
+// Fills the quote under the greeting. Returns false (and shows nothing) if there's no quote
+// to show, so the caller can show the old line instead.
+function showQuoteOfTheDay() {
+  const box = document.getElementById("home-quote");
+  const quote = quoteForDate(quotes, new Date());
+  box.hidden = !quote;
+  if (!quote) { return false; }
+  document.getElementById("quote-text").textContent = "\u201C" + quote.text + "\u201D";
+  document.getElementById("quote-author").textContent = quote.author + (quote.author && quote.role ? ", " + quote.role : "");
+  document.getElementById("quote-source").textContent = quote.source;
+  return true;
+}
+
 // ---------- Today card (home screen): streak and daily goal ----------
 // Everything on the home screen that changes: the greeting and date, the three tiles (streak,
 // done today, mastery), "Pick up where you stopped", and each subject's counts. Called whenever
@@ -1095,6 +1176,10 @@ function showTodayCard() {
   const best = document.getElementById("streak-best");
   best.textContent = "Best: " + streak.best + (streak.best === 1 ? " day" : " days");
   best.hidden = streak.best === 0;
+  // A tiny reminder under the streak number, only until she has answered today.
+  const nudge = document.getElementById("streak-nudge");
+  nudge.textContent = streak.current > 0 ? "Answer a question to keep it going" : "Answer a question to start a streak";
+  nudge.hidden = streak.studiedToday;
 
   // Tile 2: done today, as a ring (tapping the tile opens Settings, where the goal is changed).
   const done = count >= goal;
@@ -1118,7 +1203,16 @@ function showTodayCard() {
     const left = goal - count;
     note = left + (left === 1 ? " more question" : " more questions") + " to reach today's goal.";
   }
-  document.getElementById("home-line").textContent = note;
+  // Today's quote goes here. If there's none (or it can't load), the old line stays so the
+  // space is never empty. While the quotes are still loading, nothing shows (no flicker).
+  const lineBox = document.getElementById("home-line");
+  lineBox.textContent = note;
+  if (quotes === null) {
+    document.getElementById("home-quote").hidden = true;
+    lineBox.hidden = true;
+  } else {
+    lineBox.hidden = showQuoteOfTheDay();
+  }
 
   // Tile 3: mastery, as a bar only (no numbers), once the questions have loaded.
   const mastery = masteryOf(allQuestions);
@@ -4868,6 +4962,16 @@ const rulesReady = fetch("data/rules.json")
   .catch(function () {
     showLoadError("Couldn't load the list of rules (data/rules.json), so \"Read the full rule\" won't show. The file may have a typo.");
   });
+
+// The quotes are never essential: if the file is missing or damaged, the old line shows instead.
+const quotesReady = fetch("data/quotes.json")
+  .then(function (response) {
+    if (!response.ok) { throw new Error("status " + response.status); }
+    return response.json();
+  })
+  .then(function (data) { quotes = cleanQuotes(data); })
+  .catch(function () { quotes = []; });
+quotesReady.then(function () { showTodayCard(); });
 
 Promise.all([contentReady, rulesReady]).then(function () {
   contentLoaded = true;
