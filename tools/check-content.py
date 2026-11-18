@@ -499,9 +499,13 @@ def check_leftover_files(folder, known_ids):
 SHOW_AT_MOST = 50
 
 
+# IDs that were used and then removed: they are never used again.
+RETIRED_IDS = {"quote": [4, 5, 6, 10, 11, 12, 13, 14, 15, 16, 17]}
+
+
 def next_id(by_id, prefix):
-    """The ID after the highest one in use, like q-0256 (IDs are never reused)."""
-    highest = max([int(i.split("-")[1]) for i in by_id] or [0])
+    """The ID after the highest one in use, like q-0256 (IDs are never reused, even removed ones)."""
+    highest = max([int(i.split("-")[1]) for i in by_id] + RETIRED_IDS.get(prefix, []) or [0])
     return "%s-%04d" % (prefix, highest + 1)
 
 

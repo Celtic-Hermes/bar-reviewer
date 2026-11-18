@@ -68,10 +68,13 @@ Under the greeting (`#home-quote`, `showQuoteOfTheDay` in `app.js`): quiet text 
 - **Checker:** `python3 tools/check-content.py` requires a valid `kind`; a `"quote"` must have `text`, `author` and `source` (and should have a `sourceShort` with no web address); a `"reminder"` must have `text` and no author, role, source or sourceShort. Placeholders starting "TEST DATA" are a CHECK.
 - **To test the day change:** change the Mac's (or phone's) date and reload; change it back afterwards.
 
+**Removed quote IDs (never reused):** quote-0004 to quote-0006 and quote-0010 to quote-0017 were removed (the home-screen quotes are limited to Filipino lawyers and jurists with a primary source); they are listed in `RETIRED_IDS` in `tools/check-content.py`, so the "Next free IDs" line skips them. Add any future removed ID there.
+
 #### Adding a new quote or reminder (checklist)
 First decide the kind: **a quote** (someone's real words) or **a reminder** (a line written for the app).
 
 **For a quote (`"kind": "quote"`)**
+0. **Only Filipino lawyers or jurists** (for example Justices of the Supreme Court of the Philippines, or Filipino lawyers in speeches and writings), as the builder decided.
 1. **Never from memory.** Every quote must come from a source a person can check (a court decision, book, speech, official site). Claude looks at the real text and copies the words exactly; if it can't find the exact words in a real source (ideally the primary text, not only a quotes site), it stops and tells the builder. It never writes or "recalls" a quote.
 2. **`author`** as the source shows it (for a decision, "Cruz, J." if that is all it says; don't add a first name or title from memory); **`role`** optional, only if the source shows it.
 3. **`source`**: the full source in plain words, with its web address (title, date, G.R. number or page, link). **`sourceShort`**: only the case name or the work's title (with the year if helpful), no web address.
