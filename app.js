@@ -45,7 +45,7 @@ document.addEventListener("touchstart", function () {}, { passive: true });
 // Only one screen is visible at a time.
 function showScreen(id) {
   saveAllNotes();  // leaving a screen with a notes box: save what she typed first
-  ["screen-home", "screen-subject", "screen-subtopics", "screen-topic", "screen-tagged", "screen-question", "screen-results", "screen-case", "screen-rule", "screen-notes", "screen-settings", "screen-schedule"].forEach(function (screenId) {
+  ["screen-home", "screen-subject", "screen-subtopics", "screen-topic", "screen-tagged", "screen-question", "screen-results", "screen-case", "screen-rule", "screen-notes", "screen-settings", "screen-schedule", "screen-search"].forEach(function (screenId) {
     document.getElementById(screenId).hidden = (screenId !== id);
   });
   window.scrollTo(0, 0);
@@ -91,6 +91,7 @@ function sidebarSection() {
   if (shownScreen === "screen-notes") { return "notes"; }
   if (shownScreen === "screen-settings") { return "settings"; }
   if (shownScreen === "screen-schedule") { return "schedule"; }
+  if (shownScreen === "screen-search") { return "search"; }
   const from = shownScreen === "screen-case" ? caseCameFrom : (shownScreen === "screen-rule" ? ruleCameFrom : null);
   if (from === "notes") { return "notes"; }
   if (from === "search") { return "search"; }
@@ -143,10 +144,7 @@ document.getElementById("sidebar").addEventListener("click", function (event) {
   if (go === "home") {
     showScreen("screen-home");
   } else if (go === "search") {
-    showScreen("screen-home");
-    const input = document.getElementById("search-input");
-    input.focus();
-    input.select();
+    openSearch(true);
   } else if (go === "notes") {
     openNotes();
   } else if (go === "settings") {
@@ -165,7 +163,7 @@ document.getElementById("sidebar").addEventListener("click", function (event) {
 function rememberSpot() {
   // Settings isn't saved as a spot: a reload there puts her back where she was before it
   // (so a practice round she left open is never lost).
-  if (shownScreen === "screen-settings") { return; }
+  if (shownScreen === "screen-settings" || shownScreen === "screen-search") { return; }
   if (shownScreen === "screen-home" || shownScreen === "screen-results") {
     clearSpot();
     return;
@@ -896,7 +894,7 @@ function makeQuestionCard(question, onTap) {
 // "rule-0001:fulltext", with the words numbered across the whole rule.
 let topicRule = null;    // the rule behind the topic screen being shown, if any
 let currentRule = null;  // the rule on the rule screen
-let ruleCameFrom = "topic";  // where the rule screen's Back goes: "topic", "notes", "search" (home) or "schedule"
+let ruleCameFrom = "topic";  // where the rule screen's Back goes: "topic", "notes", "search" or "schedule"
 
 function findRule(ruleId) {
   return allRules.find(function (r) { return r.id === ruleId; }) || null;
@@ -938,7 +936,7 @@ function loadRuleText(ruleId) {
   });
 }
 
-// "cameFrom": "notes" (her My notes list), "search" (the home screen's search), otherwise a topic screen.
+// "cameFrom": "notes" (her My notes list), "search" (the Search screen), otherwise a topic screen.
 function openRule(rule, cameFrom) {
   currentRule = rule;
   ruleCameFrom = (cameFrom === "notes" || cameFrom === "search" || cameFrom === "schedule") ? cameFrom : "topic";
@@ -4340,14 +4338,47 @@ function showSearchResults() {
 function openSearchResult(e) {
   const found = e.kind === "case" ? findCase(e.item.id) : findRule(e.item.id);
   if (!found) { return; }  // listed in the catalog but its file didn't load (the app shows why at the top)
+  searchResultsScroll = window.scrollY;
   if (e.kind === "case") { openCase(found, "search"); } else { openRule(found, "search"); }
 }
 
-// Back from a case or rule opened from the search: the home screen, results still showing.
-function backToSearch() {
-  showScreen("screen-home");
+// ---------- The Search screen ----------
+// Its own screen (not on the home screen): "Search" in the sidebar / ☰ menu, and the magnifier in the
+// phone top bar, open it with an empty box and the cursor in it. Back returns to wherever she was.
+// A result (a case or rule) opens with Back coming back here with the same results, same scroll place.
+// Like Settings it isn't saved as her spot (a reload there puts her back where she was before it).
+let searchCameFrom = "screen-home";
+let searchScroll = 0;         // where the screen she came from was scrolled to
+let searchResultsScroll = 0;  // where the results were scrolled to, when she opened one
+
+function inSearchFlow() {  // is she in a case or rule that was opened from a search result?
+  return (shownScreen === "screen-case" && caseCameFrom === "search") || (shownScreen === "screen-rule" && ruleCameFrom === "search");
+}
+
+// "fresh": start with an empty box (from the sidebar or the phone button).
+function openSearch(fresh) {
+  if (shownScreen !== "screen-search" && !inSearchFlow()) {
+    searchCameFrom = shownScreen || "screen-home";
+    searchScroll = window.scrollY;
+  }
+  showScreen("screen-search");
+  const input = document.getElementById("search-input");
+  if (fresh) { input.value = ""; }
   showSearchResults();
-  document.querySelector(".home-search").scrollIntoView({ block: "start" });
+  input.focus();
+}
+
+document.getElementById("search-back").addEventListener("click", function () {
+  showScreen(searchCameFrom === "screen-search" ? "screen-home" : searchCameFrom);
+  window.scrollTo(0, searchScroll);
+});
+document.getElementById("search-btn").addEventListener("click", function () { openSearch(true); });
+
+// Back from a case or rule opened from the search: the Search screen, results still showing.
+function backToSearch() {
+  showScreen("screen-search");
+  showSearchResults();
+  window.scrollTo(0, searchResultsScroll);
 }
 
 document.getElementById("search-input").addEventListener("input", showSearchResults);
@@ -4629,7 +4660,7 @@ document.getElementById("case-back").addEventListener("click", function () {
   } else if (caseCameFrom === "notes") {
     openNotes();  // back to her notes list
   } else if (caseCameFrom === "search") {
-    backToSearch();  // back to the home screen, search results still showing
+    backToSearch();  // back to the Search screen, results still showing
   } else if (caseCameFrom === "schedule") {
     showSchedule();  // back to the Study Schedule (a task linked to this case)
     showScreen("screen-schedule");

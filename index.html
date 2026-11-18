@@ -46,13 +46,16 @@
   <main class="page">
     <!-- Phones only: opens the sections menu (the sidebar) -->
     <button type="button" class="menu-btn" id="menu-btn" aria-label="Menu" aria-controls="sidebar" aria-expanded="false">☰</button>
-    <!-- Phones: Settings, on the home screen only (wide screens use the sidebar) -->
+    <!-- Phones: Search and Settings, on the home screen only (wide screens use the sidebar) -->
+    <button type="button" class="menu-btn settings-btn search-btn" id="search-btn" aria-label="Search"><span data-icon="magnifier"></span></button>
     <button type="button" class="menu-btn settings-btn" id="settings-btn" aria-label="Settings"><span data-icon="gear"></span></button>
     <!-- Shown if the questions file can't be loaded -->
     <p class="error" id="load-error" hidden></p>
 
     <!-- SCREEN 1: Home (list of subjects) -->
     <section id="screen-home">
+      <!-- Phones: the top bar's left side (the buttons on its right are above); hidden on wide screens -->
+      <p class="home-topbar"><span class="home-brand">Bar Reviewer</span></p>
       <!-- The top: a greeting, three small tiles for today, and where she stopped (app.js showTodayCard) -->
       <header class="home-hero">
         <div class="home-hello">
@@ -97,8 +100,29 @@
         </div>
       </header>
 
-      <!-- Search: cases and rules by name or G.R. number, from data/catalog.json (see app.js) -->
-      <section class="home-search" aria-label="Search cases and rules">
+      <div class="quick-links">
+        <button type="button" class="quick-link" id="my-notes-btn"><span data-icon="pen"></span> My notes</button>
+        <button type="button" class="quick-link" id="schedule-btn"><span data-icon="calendar"></span> Study Schedule</button>
+      </div>
+
+      <h2 class="label topics-label home-heading">Subjects</h2>
+      <div class="subject-list" id="subject-list"></div>
+
+      <!-- Extra subjects that are not one of the 8 bar subjects -->
+      <h2 class="label topics-label">Miscellaneous</h2>
+      <div class="subject-list" id="misc-list"></div>
+      <p class="card empty-note misc-empty" id="misc-empty" hidden>Nothing here yet. Extra subjects that aren't part of the bar exam will appear here.</p>
+
+    </section>
+
+    <!-- SEARCH: cases and rules by name or G.R. number, from data/catalog.json (app.js showSearchResults).
+         Reached from "Search" in the sidebar / ☰ menu, and the magnifier in the phone top bar. -->
+    <section id="screen-search" hidden>
+      <button class="back-btn" id="search-back"><span data-icon="chevron-left"></span> Back</button>
+      <h1 class="screen-title">Search</h1>
+      <p class="screen-subtitle">Cases and rules, by name or G.R. number.</p>
+
+      <section class="search-panel" aria-label="Search cases and rules">
         <label class="visually-hidden" for="search-input">Search cases and rules</label>
         <div class="search-box">
           <span class="search-icon" data-icon="magnifier" aria-hidden="true"></span>
@@ -112,19 +136,6 @@
           <div id="search-lookup"></div>
         </section>
       </section>
-
-      <div class="quick-links">
-        <button type="button" class="quick-link" id="my-notes-btn"><span data-icon="pen"></span> My notes</button>
-        <button type="button" class="quick-link" id="schedule-btn"><span data-icon="calendar"></span> Study Schedule</button>
-      </div>
-
-      <h2 class="label topics-label home-heading">Subjects</h2>
-      <div class="subject-list" id="subject-list"></div>
-
-      <!-- Extra subjects that are not one of the 8 bar subjects -->
-      <h2 class="label topics-label">Miscellaneous</h2>
-      <div class="subject-list" id="misc-list"></div>
-      <p class="card empty-note misc-empty" id="misc-empty" hidden>Nothing here yet. Extra subjects that aren't part of the bar exam will appear here.</p>
 
     </section>
 

@@ -445,7 +445,9 @@ body {
 
 /* ---------- Home: the top (greeting, tiles, where she stopped) ---------- */
 .home-hero { display: grid; gap: 18px; margin: 4px 0 20px; }
-.home-hello { padding-right: 112px; }  /* room for the ⚙ and ☰ buttons on a phone */
+/* Phones: a top bar (the app name on the left; the search, ⚙ and ☰ buttons are on its right). */
+.home-topbar { display: flex; align-items: center; height: 44px; margin: 0 0 14px; }
+.home-brand { font-size: 18px; font-weight: 700; letter-spacing: -0.01em; color: var(--heading); }
 .home-date { margin: 0 0 4px; font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
 .home-greeting { margin: 0; font-size: 34px; line-height: 1.15; letter-spacing: -0.01em; color: var(--heading); }
 .home-line { margin: 8px 0 0; color: var(--muted); }
@@ -897,7 +899,7 @@ button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
 .source-note { display: block; margin-top: 6px; font-size: 14px; color: var(--muted); overflow-wrap: anywhere; }
 
 /* Search on the home screen (app.js: showSearchResults). 17px text so the iPhone doesn't zoom in. */
-.home-search { margin: 0 0 16px; }
+.search-panel { margin: 0 0 16px; }
 .search-box { position: relative; }
 .search-icon { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: var(--muted); pointer-events: none; }
 .search-icon .icon { width: 20px; height: 20px; }
@@ -1162,7 +1164,6 @@ body.sheet-open { overflow: hidden; }
   #screen-home .subject-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   /* The widest: the greeting on the left, the tiles and "Pick up where you stopped" on the right. */
   .home-hero { grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); align-items: center; gap: 32px; }
-  .home-hello { padding-right: 0; }
   .home-greeting { font-size: 44px; }
 }
 
@@ -1255,6 +1256,7 @@ body.sheet-open { overflow: hidden; }
   }
   /* ⚙️ Settings: on the home screen only, just left of ☰. */
   .settings-btn { display: none; right: calc(68px + var(--safe-right)); }
+  .search-btn { right: calc(120px + var(--safe-right)); }
   body[data-screen="screen-home"] .settings-btn { display: block; }
   /* The question screen's "Question 1 of 48" moves left to make room for ☰. */
   .question-topbar { padding-right: 56px; }
@@ -1293,6 +1295,7 @@ body.sheet-open { overflow: hidden; }
   .sidebar-top { min-height: 0; margin-bottom: 14px; }
   .sidebar-link { min-height: 40px; font-size: 15px; }
   .menu-btn, .sidebar-close, .menu-backdrop { display: none !important; }
+  .home-topbar { display: none; }  /* the sidebar has the app name */
 }
 
 /* ---------- Reset button, confirmation dialog, Undo bar (shared; app.js) ---------- */
