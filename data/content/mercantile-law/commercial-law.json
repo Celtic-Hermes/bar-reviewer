@@ -106,6 +106,21 @@
       "ruling": "The petition was dismissed. (1) The Court agreed that there was no actual case or controversy yet, mainly because the Act's implementing rules were still missing. A controversy must be \"ripe\" for determination, not conjectural or anticipatory. (2) Even so, Congressman Garcia, as a citizen, taxpayer and member of the House of Representatives, was a proper party, because he is someone who has sustained or is in danger of sustaining an injury from the act complained of. (3) The constitutional question was not raised too late; it was raised too early (prematurely). (4) On the merits, the challenge failed because the petitioner did not show an indubitable ground for it, or even a necessity to resolve it. Courts avoid ruling on constitutional questions and presume that acts of the political departments are valid unless there is a clear and unmistakable showing to the contrary (\"To doubt is to sustain\"). This rests on the separation of powers, and on the idea that a law, as the joint act of Congress and the President, was carefully studied and found consistent with the Constitution before it was enacted. (5) In light of the explanations of the Solicitor General and the intervenor, the petitioner had not proved unconstitutionality, and the Court was satisfied that the Act does not violate the constitutional provisions he mentioned. (6) What the petitioner raised was a debate on the wisdom or efficacy of the Act, which the Court is not competent to rule on. Debatable questions are for the legislature, and the Court may not annul an act of the political departments just because it is unwise or impractical. The Court found no grave abuse of discretion. The petitioner's objections were \"expressed in the wrong forum\"; Congress, which has the power to rewrite the law, is the place to hear them.",
       "keyDoctrine": "A court will not strike down a law as unconstitutional unless there is an actual, **ripe** controversy and a clear and unmistakable showing that the law violates the Constitution: **\"To doubt is to sustain.\"** Whether a law is wise, just or expedient is for the legislature to decide, not the courts.",
       "sourceUrl": "https://lawphil.net/judjuris/juri1991/dec1991/gr_100883_1991.html"
+    },
+    {
+      "id": "case-0009",
+      "status": "draft",
+      "name": "Gamboa v. Teves",
+      "grNumber": "G.R. No. 176579",
+      "year": 2012,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Nationality of Corporations (60-40 Rule)",
+      "facts": "Wilson P. Gamboa (later substituted by his heirs) asked the Supreme Court to compel the Securities and Exchange Commission (SEC) to look into whether the Philippine Long Distance Telephone Company (PLDT), a public utility, complied with the constitutional rule that only Filipinos, or corporations at least 60% of whose \"capital\" is owned by Filipinos, may operate a public utility (Section 11, Article XII of the 1987 Constitution). The petition was one for declaratory relief, which the Court treated as one for mandamus. In its 28 June 2011 Decision, the Court defined \"capital\" in that provision as shares with voting rights, as well as with full beneficial ownership, and directed the SEC to apply that definition to PLDT. This is the Court's 9 October 2012 Resolution on the motions for reconsideration of that Decision, filed by the Philippine Stock Exchange's President, Manuel V. Pangilinan, Napoleon L. Nazareno and the SEC. The movants argued, among other things, that: (1) the petition should have been dismissed as a procedurally defective petition for declaratory relief; (2) the Court changed a long-standing definition of \"capital\" (the total outstanding shares, voting or non-voting) that the SEC had always used; (3) PLDT was an indispensable party that was never heard; and (4) the ruling would drive away foreign investments. The undisputed facts on PLDT were that foreigners own 64.27% of its common shares (the only shares that vote for directors), Filipinos own 35.73% of the common shares, and the preferred shares (99.44% owned by Filipinos) have no voting rights. The Office of the Solicitor General agreed with the Court's definition of \"capital\".",
+      "issue": "Should the motions for reconsideration be granted? In particular: (1) was it proper to treat the petition for declaratory relief as one for mandamus; (2) did the Court change a long-standing rule or redefine \"capital\"; (3) what does \"capital\" in Section 11, Article XII of the Constitution mean, and does the 60-40 rule apply to each class of shares; (4) is PLDT an indispensable party; and (5) from when may sanctions be imposed?",
+      "ruling": "The motions for reconsideration were denied with finality. (1) The issue has far-reaching implications for the national economy, so treating the petition as one for mandamus was justified. (2) There was no change of any long-standing rule: for more than 75 years the Court had never interpreted or defined \"capital\" in the 1935, 1973 and 1987 Constitutions, and the SEC and DOJ opinions were conflicting. Opinions of SEC legal officers are not SEC rules (only the SEC en banc can issue opinions with the force of rules), and agency interpretations never bind the Court. (3) \"Capital\" in Section 11 refers to shares with voting rights, as well as with full beneficial ownership. Both the Voting Control Test and the Beneficial Ownership Test must be applied, and the 60-40 requirement applies separately to each class of shares (common, preferred non-voting, preferred voting or any other). The Foreign Investments Act of 1991 and its predecessor laws defined a \"Philippine national\" in the same way, and the framers of the Constitution intended Filipino control. (4) PLDT is an indispensable party only on the factual issues, which the Court left to the SEC; due process will be given to PLDT before the SEC. (5) The SEC may impose sanctions only if it finds, after due hearing, an existing violation at the start of its administrative case; public utilities can cure deficiencies before then. The Court stressed that it has no power to amend the Constitution, and that a different reading would let foreigners take effective control of the national economy, as under the Parity Amendment.",
+      "keyDoctrine": "\"Capital\" in Section 11, Article XII of the Constitution means **shares with voting rights and full beneficial ownership**. To own and operate a public utility, a corporation must have at least **60% Filipino ownership of each class of its shares**, so that Filipinos have effective control.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2012/oct2012/gr_176579_2012.html"
     }
   ],
   "questions": [
@@ -1727,6 +1742,240 @@
         "url": "https://lawphil.net/judjuris/juri1991/dec1991/gr_100883_1991.html",
         "part": "Decision, discussion of the merits (wisdom of the law; grave abuse of discretion)",
         "excerpt": "It is true that, under the expanded concept of the political question, we may now also \"determine whether or not there has been a grave abuse of discretion amounting to lack or excess of jurisdiction on the part of any branch or instrumentality of the Government.\" We find, however, that irregularity does not exist in the case at bar."
+      }
+    },
+    {
+      "id": "q-0264",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Nationality of Corporations (60-40 Rule)",
+      "prompt": "A telephone company holds a franchise to operate a public utility. It has two classes of shares: common shares, which alone can vote in the election of directors, and preferred shares, which cannot. Foreigners own 60% of the common shares, while Filipinos own almost all the preferred shares, so that Filipinos hold more than 60% of all the shares combined. The company says it complies with the 60-40 ownership rule for public utilities because Filipinos own over 60% of its total shares. Based on the Resolution in Gamboa v. Teves, is the company correct?",
+      "suggestedAnswer": {
+        "answer": "No. The company does not meet the constitutional requirement, because \"capital\" in Section 11, Article XII refers to shares with voting rights as well as full beneficial ownership, and the 60-40 rule applies to each class of shares, not just to the total of all shares.",
+        "legalBasis": "Under Section 11, Article XII of the 1987 Constitution, a public utility may be operated only by Filipino citizens or by corporations at least 60% of whose \"capital\" is owned by Filipinos. The Court held that mere legal title is insufficient: full beneficial ownership of 60% of the outstanding capital stock, coupled with 60% of the voting rights, is required. Both the Voting Control Test and the Beneficial Ownership Test must be applied. The requirement applies uniformly to all classes of shares. If a corporation issues common and preferred non-voting shares, at least 60% of the common shares and at least 60% of the preferred non-voting shares must be owned by Filipinos. The Foreign Investments Act defines a \"Philippine national\" corporation as one at least 60% of whose capital stock outstanding and entitled to vote is owned by Filipinos.",
+        "application": "Here, foreigners own 60% of the common shares, the only shares that vote for directors, so they control the election of the board and Filipinos do not have voting control. It does not help that Filipinos own most of the preferred shares: the 60-40 rule must be met separately in each class, and adding up all the shares would let foreigners keep effective control.",
+        "conclusion": "The company fails the 60-40 requirement, so it may not operate the public utility."
+      },
+      "keyPoints": [
+        "\"Capital\" in Section 11 means shares with voting rights and full beneficial ownership",
+        "Mere legal title is not enough",
+        "Both the Voting Control Test and the Beneficial Ownership Test must be applied",
+        "The 60-40 rule applies separately to each class of shares (common, preferred, etc.)",
+        "A Philippine national corporation has at least 60% of its capital stock entitled to vote owned by Filipinos",
+        "Foreigners holding 60% of the voting common shares means Filipinos lack effective control"
+      ],
+      "caseIds": [
+        "case-0009"
+      ],
+      "source": {
+        "caseTitle": "Gamboa v. Teves",
+        "grNumber": "G.R. No. 176579",
+        "url": "https://lawphil.net/judjuris/juri2012/oct2012/gr_176579_2012.html",
+        "part": "Resolution, Part V (right to elect directors, coupled with beneficial ownership, translates to effective control)",
+        "excerpt": "Since the constitutional requirement of at least 60 percent Filipino ownership applies not only to voting control of the corporation but also to the beneficial ownership of the corporation, it is therefore imperative that such requirement apply uniformly and across the board to all classes of shares, regardless of nomenclature and category, comprising the capital of a corporation. Under the Corporation Code, capital stock consists of all classes of shares issued to stockholders, that is, common shares as well as preferred shares, which may have different rights, privileges or restrictions as stated in the articles of incorporation. … Since a specific class of shares may have rights and privileges or restrictions different from the rest of the shares in a corporation, the 60-40 ownership requirement in favor of Filipino citizens in Section 11, Article XII of the Constitution must apply not only to shares with voting rights but also to shares without voting rights. Preferred shares, denied the right to vote in the election of directors, are anyway still entitled to vote on the eight specific corporate matters mentioned above. Thus, if a corporation, engaged in a partially nationalized industry, issues a mixture of common and preferred non-voting shares, at least 60 percent of the common shares and at least 60 percent of the preferred non-voting shares must be owned by Filipinos. Of course, if a corporation issues only a single class of shares, at least 60 percent of such shares must necessarily be owned by Filipinos. In short, the 60-40 ownership requirement in favor of Filipino citizens must apply separately to each class of shares, whether common, preferred non-voting, preferred voting or any other class of shares. This uniform application of the 60-40 ownership requirement in favor of Filipino citizens clearly breathes life to the constitutional command that the ownership and operation of public utilities shall be reserved exclusively to corporations at least 60 percent of whose capital is Filipino-owned. Applying uniformly the 60-40 ownership requirement in favor of Filipino citizens to each class of shares, regardless of differences in voting rights, privileges and restrictions, guarantees effective Filipino control of public utilities, as mandated by the Constitution. … Both the Voting Control Test and the Beneficial Ownership Test must be applied to determine whether a corporation is a \"Philippine national.\""
+      }
+    },
+    {
+      "id": "q-0265",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Nationality of Corporations (60-40 Rule)",
+      "prompt": "Companies that relied on opinions of the SEC's legal officers and of the Department of Justice, which counted both voting and non-voting shares when measuring foreign ownership, argue that the Court changed a long-standing definition of \"capital\" midstream. Are they correct? Do those opinions bind the Court? Answer based on the Resolution in Gamboa v. Teves.",
+      "suggestedAnswer": {
+        "answer": "No. The Court did not change any long-standing rule or redefine \"capital\", and the SEC and DOJ opinions do not bind the Court.",
+        "legalBasis": "For more than 75 years since the 1935 Constitution, the Court had never interpreted or defined the term \"capital\" in the 1935, 1973 and 1987 Constitutions, so there was no judicial precedent to overturn. The SEC and DOJ opinions on the meaning of \"capital\" were conflicting and inconsistent. Opinions of individual Commissioners or SEC legal officers are not SEC rules or regulations: under Sections 4.6 and 5.1(g) of the Securities Regulation Code, only the SEC en banc can issue opinions that have the force and effect of rules, and it cannot delegate the power to adopt rules. Even the opinions of the SEC en banc and the DOJ are neither conclusive nor controlling on the Court, because an agency's interpretation of the law is only preliminary, and the power to make the final interpretation of the law lies with the Court.",
+        "application": "The movants' claim that the 28 June 2011 Decision introduced a \"new\" definition is, in the Court's words, \"patently wrong and utterly baseless\", because there was never a Court ruling defining \"capital\" before. The SEC and DOJ had not consistently used the movants' definition: a 1985 DOJ opinion, for example, found a structure like PLDT's unconstitutional, and the SEC en banc itself adopted the Grandfather Rule. In any case, the opinions of SEC legal officers have no force of a rule, and the Court decides the final meaning of the constitutional term.",
+        "conclusion": "There was no midstream redefinition, and the agency opinions cannot control the Court's interpretation of \"capital\"."
+      },
+      "keyPoints": [
+        "No court had ever defined \"capital\" in the 1935, 1973 and 1987 Constitutions",
+        "SEC and DOJ opinions were conflicting and inconsistent",
+        "Opinions of SEC legal officers are not SEC rules or regulations",
+        "Only the SEC en banc can issue opinions with the force of rules, and it cannot delegate rule-making",
+        "Agency interpretations are only preliminary and never conclusive on the Court",
+        "The final interpretation of the Constitution lies with the Court"
+      ],
+      "caseIds": [
+        "case-0009"
+      ],
+      "source": {
+        "caseTitle": "Gamboa v. Teves",
+        "grNumber": "G.R. No. 176579",
+        "url": "https://lawphil.net/judjuris/juri2012/oct2012/gr_176579_2012.html",
+        "part": "Resolution, Part II (no change of any long-standing rule) and the discussion of the SEC and DOJ opinions",
+        "excerpt": "For more than 75 years since the 1935 Constitution, the Court has not interpreted or defined the term \"capital\" found in various economic provisions of the 1935, 1973 and 1987 Constitutions. There has never been a judicial precedent interpreting the term \"capital\" in the 1935, 1973 and 1987 Constitutions, until now. Hence, it is patently wrong and utterly baseless to claim that the Court in defining the term \"capital\" in its 28 June 2011 Decision modified, reversed, or set aside the purported long-standing definition of the term \"capital,\" which supposedly refers to the total outstanding shares of stock, whether voting or non-voting. To repeat, until the present case there has never been a Court ruling categorically defining the term \"capital\" found in the various economic provisions of the 1935, 1973 and 1987 Philippine Constitutions. … The opinions of the SEC, as well as of the Department of Justice (DOJ), on the definition of the term \"capital\" as referring to both voting and non-voting shares (combined total of common and preferred shares) are, in the first place, conflicting and inconsistent. There is no basis whatsoever to the claim that the SEC and the DOJ have consistently and uniformly adopted a definition of the term \"capital\" contrary to the definition that this Court adopted in its 28 June 2011 Decision. … Thus, the act of the individual Commissioners or legal officers of the SEC in issuing opinions that have the effect of SEC rules or regulations is ultra vires. Under Sections 4.6 and 5.1(g) of the Code, only the SEC en banc can \"issue opinions\" that have the force and effect of rules or regulations. Section 4.6 of the Code bars the SEC en banc from delegating to any individual Commissioner or staff the power to adopt rules or regulations. In short, any opinion of individual Commissioners or SEC legal officers does not constitute a rule or regulation of the SEC. … Likewise, the opinions of the SEC en banc, as well as of the DOJ, interpreting the law are neither conclusive nor controlling and thus, do not bind the Court. It is hornbook doctrine that any interpretation of the law that administrative or quasi-judicial agencies make is only preliminary, never conclusive on the Court. The power to make a final interpretation of the law, in this case the term \"capital\" in Section 11, Article XII of the 1987 Constitution, lies with this Court, not with any other government entity."
+      }
+    },
+    {
+      "id": "q-0266",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Nationality of Corporations (60-40 Rule)",
+      "prompt": "A citizen asks the Court to define a term in the Constitution and to compel the SEC to investigate whether a public utility corporation complies with the nationality requirement. The Court defines the term and directs the SEC to apply the definition. The corporation complains that it was not made a party and that its property was taken without due process. The SEC also asks from when sanctions may be imposed. Based on the Resolution in Gamboa v. Teves, how should these be answered?",
+      "suggestedAnswer": {
+        "answer": "The Court limited itself to the purely legal question of what the constitutional term means. It did not decide whether the corporation violated the Constitution, so the corporation was not deprived of due process; due process is given before the SEC. Sanctions may be imposed only if the SEC finds, after due hearing, an existing violation at the start of its administrative case.",
+        "legalBasis": "A question that requires presenting and determining evidence at a hearing is generally outside the Court's jurisdiction but within the SEC's statutory powers. The corporation is an indispensable party only for the factual issues (for example, whether the foreign share of its common shares exceeds the 40% limit), which are for the SEC to decide. The Court's directive is addressed solely to the SEC, the agency that enforces the 60-40 rule. Under prevailing jurisprudence, public utilities that fail the nationality requirement can cure their deficiencies before the start of the administrative case or investigation.",
+        "application": "In Gamboa, the Court refrained from ruling on whether PLDT violated the 60-40 requirement and confined itself to the legal issue of defining \"capital\", leaving the factual questions to the SEC. PLDT therefore had no property taken and no denial of due process, because it can present proof to the SEC that it complies. The SEC may impose statutory sanctions only if, after due hearing, it finds a violation existing when its administrative case begins; a utility that cures its deficiency before then avoids sanctions.",
+        "conclusion": "No denial of due process; factual questions go to the SEC with PLDT heard; sanctions only for a violation still existing at the start of the SEC's case."
+      },
+      "keyPoints": [
+        "The Court decided only the purely legal issue (the meaning of \"capital\")",
+        "Whether PLDT violated the rule is a factual question for the SEC after a hearing",
+        "The directive is addressed solely to the SEC, not to PLDT",
+        "Due process is given to PLDT when it presents proof to the SEC",
+        "Sanctions only if the SEC finds, after due hearing, an existing violation at the start of the case",
+        "Deficiencies can be cured before the start of the administrative case"
+      ],
+      "caseIds": [
+        "case-0009"
+      ],
+      "source": {
+        "caseTitle": "Gamboa v. Teves",
+        "grNumber": "G.R. No. 176579",
+        "url": "https://lawphil.net/judjuris/juri2012/oct2012/gr_176579_2012.html",
+        "part": "Resolution, Parts VIII, IX and XI (the undisputed facts; PLDT not an indispensable party; prospective application of sanctions)",
+        "excerpt": "Despite the foregoing facts, the Court did not decide, and in fact refrained from ruling on the question of whether PLDT violated the 60-40 ownership requirement in favor of Filipino citizens in Section 11, Article XII of the 1987 Constitution. Such question indisputably calls for a presentation and determination of evidence through a hearing, which is generally outside the province of the Court’s jurisdiction, but well within the SEC’s statutory powers. Thus, for obvious reasons, the Court limited its decision on the purely legal and threshold issue on the definition of the term \"capital\" in Section 11, Article XII of the Constitution and directed the SEC to apply such definition in determining the exact percentage of foreign ownership in PLDT. … Since the Court limited its resolution on the purely legal issue on the definition of the term \"capital\" in Section 11, Article XII of the 1987 Constitution, and directed the SEC to investigate any violation by PLDT of the 60-40 ownership requirement in favor of Filipino citizens under the Constitution, there is no deprivation of PLDT’s property or denial of PLDT’s right to due process, contrary to Pangilinan and Nazareno’s misimpression. Due process will be afforded to PLDT when it presents proof to the SEC that it complies, as it claims here, with Section 11, Article XII of the Constitution. … As discussed, the Court has directed the SEC to investigate and determine whether PLDT violated Section 11, Article XII of the Constitution. Thus, there is no dispute that it is only after the SEC has determined PLDT’s violation, if any exists at the time of the commencement of the administrative case or investigation, that the SEC may impose the statutory sanctions against PLDT. In other words, once the 28 June 2011 Decision becomes final, the SEC shall impose the appropriate sanctions only if it finds after due hearing that, at the start of the administrative case or investigation, there is an existing violation of Section 11, Article XII of the Constitution. Under prevailing jurisprudence, public utilities that fail to comply with the nationality requirement under Section 11, Article XII and the FIA can cure their deficiencies prior to the start of the administrative case or investigation."
+      }
+    },
+    {
+      "id": "q-0267",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Nationality of Corporations (60-40 Rule)",
+      "prompt": "In Gamboa v. Teves, the Court treated a petition for declaratory relief as one for mandamus. What was its reason?",
+      "choices": {
+        "A": "The far-reaching implications of the issue on the national economy justified it",
+        "B": "The petition had no procedural defect at all",
+        "C": "The SEC asked the Court to treat it as mandamus",
+        "D": "The petition was filed by the Solicitor General"
+      },
+      "correct": "A",
+      "explanation": "A is correct. The Court said the interpretation of \"capital\" in Section 11, Article XII has far-reaching implications for the national economy, so \"the far-reaching implications of this issue justify the treatment of the petition as one for mandamus.\" B is wrong because the Court acknowledged a \"supposed procedural defect\" in the petition and resolved the case anyway, as in Luzon Stevedoring. C is wrong because the Court gave its own reason, in the interest of substantial justice. D is wrong because the petitioner was Gamboa (later his heirs), not the Solicitor General.",
+      "caseIds": [
+        "case-0009"
+      ],
+      "source": {
+        "caseTitle": "Gamboa v. Teves",
+        "grNumber": "G.R. No. 176579",
+        "url": "https://lawphil.net/judjuris/juri2012/oct2012/gr_176579_2012.html",
+        "part": "Resolution, Part I (far-reaching implications justify treating the petition as one for mandamus)",
+        "excerpt": "As we emphatically stated in the 28 June 2011 Decision, the interpretation of the term \"capital\" in Section 11, Article XII of the Constitution has far-reaching implications to the national economy. In fact, a resolution of this issue will determine whether Filipinos are masters, or second-class citizens, in their own country. What is at stake here is whether Filipinos or foreigners will have effective control of the Philippine national economy. Indeed, if ever there is a legal issue that has far-reaching implications to the entire nation, and to future generations of Filipinos, it is the threshold legal issue presented in this case. … Contrary to Pangilinan’s narrow view, the serious economic consequences resulting in the interpretation of the term \"capital\" in Section 11, Article XII of the Constitution undoubtedly demand an immediate adjudication of this issue. Simply put, the far-reaching implications of this issue justify the treatment of the petition as one for mandamus. … The circumstances surrounding the present case, such as the supposed procedural defect of the petition and the pivotal legal issue involved, resemble those in Luzon Stevedoring. Consequently, in the interest of substantial justice and faithful adherence to the Constitution, we opted to resolve this case for the guidance of the public and all concerned parties."
+      }
+    },
+    {
+      "id": "q-0268",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Nationality of Corporations (60-40 Rule)",
+      "prompt": "According to the Resolution in Gamboa v. Teves, who can issue SEC opinions that have the force and effect of SEC rules and regulations?",
+      "choices": {
+        "A": "Any SEC legal officer",
+        "B": "Any individual Commissioner",
+        "C": "The SEC en banc only",
+        "D": "The SEC General Counsel, if the SEC en banc delegates the power"
+      },
+      "correct": "C",
+      "explanation": "C is correct. The Court said that only the SEC en banc can \"issue opinions\" that have the force and effect of rules or regulations, under Sections 4.6 and 5.1(g) of the Securities Regulation Code. A and B are wrong because any opinion of an individual Commissioner or SEC legal officer does not constitute a rule or regulation of the SEC; acts of such officers in issuing opinions that have the effect of rules are ultra vires. D is wrong because Section 4.6 bars the SEC en banc from delegating to any individual Commissioner or staff the power to adopt rules or regulations.",
+      "caseIds": [
+        "case-0009"
+      ],
+      "source": {
+        "caseTitle": "Gamboa v. Teves",
+        "grNumber": "G.R. No. 176579",
+        "url": "https://lawphil.net/judjuris/juri2012/oct2012/gr_176579_2012.html",
+        "part": "Resolution, Part II (the SEC opinions)",
+        "excerpt": "The opinions issued by SEC legal officers do not have the force and effect of SEC rules and regulations because only the SEC en banc can adopt rules and regulations. As expressly provided in Section 4.6 of the Securities Regulation Code, the SEC cannot delegate to any of its individual Commissioner or staff the power to adopt any rule or regulation. Further, under Section 5.1 of the same Code, it is the SEC as a collegial body, and not any of its legal officers, that is empowered to issue opinions and approve rules and regulations. Thus: … Thus, the act of the individual Commissioners or legal officers of the SEC in issuing opinions that have the effect of SEC rules or regulations is ultra vires. Under Sections 4.6 and 5.1(g) of the Code, only the SEC en banc can \"issue opinions\" that have the force and effect of rules or regulations. Section 4.6 of the Code bars the SEC en banc from delegating to any individual Commissioner or staff the power to adopt rules or regulations. In short, any opinion of individual Commissioners or SEC legal officers does not constitute a rule or regulation of the SEC."
+      }
+    },
+    {
+      "id": "q-0269",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Nationality of Corporations (60-40 Rule)",
+      "prompt": "Under the Foreign Investments Act of 1991, as discussed in Gamboa v. Teves, a domestic corporation is a \"Philippine national\" only if:",
+      "choices": {
+        "A": "At least 60% of its capital stock outstanding and entitled to vote is owned by Filipino citizens",
+        "B": "At least 60% of its total assets are owned by Filipino citizens",
+        "C": "A majority of its authorized capital stock is held by Filipino citizens, whether voting or non-voting",
+        "D": "All its executive officers are Filipino citizens, whatever its ownership"
+      },
+      "correct": "A",
+      "explanation": "A is correct. The Court said the FIA defines a \"Philippine national\" as a Philippine citizen, or a domestic corporation at least \"60% of the capital stock outstanding and entitled to vote\" is owned by Philippine citizens; a domestic corporation is a Philippine national \"only if at least 60% of its voting stock is owned by Filipino citizens.\" B is wrong because the test is about capital stock entitled to vote, not total assets. C is wrong because it counts non-voting shares and only a bare majority. D is wrong because officers' citizenship is not the test for being a Philippine national.",
+      "caseIds": [
+        "case-0009"
+      ],
+      "source": {
+        "caseTitle": "Gamboa v. Teves",
+        "grNumber": "G.R. No. 176579",
+        "url": "https://lawphil.net/judjuris/juri2012/oct2012/gr_176579_2012.html",
+        "part": "Resolution, Part IV (definition of \"Philippine national\")",
+        "excerpt": "Thus, the FIA clearly and unequivocally defines a \"Philippine national\" as a Philippine citizen, or a domestic corporation at least \"60% of the capital stock outstanding and entitled to vote\" is owned by Philippine citizens. … The FIA, like all its predecessor statutes, clearly defines a \"Philippine national\" as a Filipino citizen, or a domestic corporation \"at least sixty percent (60%) of the capital stock outstanding and entitled to vote\" is owned by Filipino citizens. A domestic corporation is a \"Philippine national\" only if at least 60% of its voting stock is owned by Filipino citizens. This definition of a \"Philippine national\" is crucial in the present case because the FIA reiterates and clarifies Section 11, Article XII of the 1987 Constitution, which limits the ownership and operation of public utilities to Filipino citizens or to corporations or associations at least 60% Filipino-owned."
+      }
+    },
+    {
+      "id": "q-0270",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Nationality of Corporations (60-40 Rule)",
+      "prompt": "Which statement correctly describes the last sentence of Section 11, Article XII of the 1987 Constitution, as quoted in Gamboa v. Teves?",
+      "choices": {
+        "A": "Foreign investors may take any seat on the board of a public utility if they own 40% of its capital",
+        "B": "Foreign investors' participation in the governing body is limited to their proportionate share in the capital, and all executive and managing officers must be Filipino citizens",
+        "C": "All directors and stockholders of a public utility must be Filipino citizens",
+        "D": "Foreign investors may serve as executive officers so long as Filipinos hold the majority of the board"
+      },
+      "correct": "B",
+      "explanation": "B is correct. The sentence reads: \"The participation of foreign investors in the governing body of any public utility enterprise shall be limited to their proportionate share in its capital, and all the executive and managing officers of such corporation or association must be citizens of the Philippines.\" A is wrong because board participation is limited to the foreign investors' proportionate share in capital, not any seat. C is wrong because the Constitution does not bar foreign stockholders or directors altogether; it limits them proportionately. D is wrong because all executive and managing officers must be Filipino citizens.",
+      "caseIds": [
+        "case-0009"
+      ],
+      "source": {
+        "caseTitle": "Gamboa v. Teves",
+        "grNumber": "G.R. No. 176579",
+        "url": "https://lawphil.net/judjuris/juri2012/oct2012/gr_176579_2012.html",
+        "part": "Resolution, Part VII (last sentence of Section 11, Article XII)",
+        "excerpt": "The last sentence of Section 11, Article XII of the 1987 Constitution reads: The participation of foreign investors in the governing body of any public utility enterprise shall be limited to their proportionate share in its capital, and all the executive and managing officers of such corporation or association must be citizens of the Philippines."
+      }
+    },
+    {
+      "id": "q-0271",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Nationality of Corporations (60-40 Rule)",
+      "prompt": "In the Final Word of Gamboa v. Teves, how did the Court compare the movants' interpretation of \"capital\" with the Parity Amendment?",
+      "choices": {
+        "A": "It would bring back the same evils of the Parity Amendment, giving foreigners parity rights with Filipinos even without any constitutional amendment",
+        "B": "It would be a welcome improvement over the Parity Amendment",
+        "C": "It is unrelated to the Parity Amendment, which concerned only mining",
+        "D": "It would be valid because the Court can amend the Constitution if the economy requires it"
+      },
+      "correct": "A",
+      "explanation": "A is correct. The Court said the movants' interpretation \"would bring us back to the same evils spawned by the Parity Amendment, effectively giving foreigners parity rights with Filipinos, but this time even without any amendment to the present Constitution.\" B and C are wrong because the Court treated the comparison as a warning, and the Parity Amendment covered natural resources and public utilities. D is wrong because the Court said any deviation from the 60% Filipino requirement needs an amendment of the Constitution, and the Court \"has no power to amend the Constitution for its power and duty is only to faithfully apply and interpret the Constitution.\"",
+      "caseIds": [
+        "case-0009"
+      ],
+      "source": {
+        "caseTitle": "Gamboa v. Teves",
+        "grNumber": "G.R. No. 176579",
+        "url": "https://lawphil.net/judjuris/juri2012/oct2012/gr_176579_2012.html",
+        "part": "Resolution, Part XII (Final Word)",
+        "excerpt": "Movants’ interpretation of the term \"capital\" would bring us back to the same evils spawned by the Parity Amendment, effectively giving foreigners parity rights with Filipinos, but this time even without any amendment to the present Constitution. Worse, movants’ interpretation opens up our national economy to effective control not only by Americans but also by all foreigners, be they Indonesians, Malaysians or Chinese, even in the absence of reciprocal treaty arrangements. At least the Parity Amendment, as implemented by the Laurel-Langley Agreement, gave the capital-starved Filipinos theoretical parity – the same rights as Americans to exploit natural resources, and to own and control public utilities, in the United States of America. Here, movants’ interpretation would effectively mean a unilateral opening up of our national economy to all foreigners, without any reciprocal arrangements. That would mean that Indonesians, Malaysians and Chinese nationals could effectively control our mining companies and public utilities while Filipinos, even if they have the capital, could not control similar corporations in these countries. … The 1935, 1973 and 1987 Constitutions have the same 60 percent Filipino ownership and control requirement for public utilities like PLOT. Any deviation from this requirement necessitates an amendment to the Constitution as exemplified by the Parity Amendment. This Court has no power to amend the Constitution for its power and duty is only to faithfully apply and interpret the Constitution."
       }
     }
   ]
