@@ -54,7 +54,8 @@
   --sidebar-hover: rgba(255, 255, 255, 0.07);
   --sidebar-current: rgba(255, 255, 255, 0.14);
   --sidebar-accent: #8fb0ea;
-  --sidebar-width: 240px;
+  --sidebar-width: 240px;  /* the column the sidebar takes (the page starts after it) */
+  --sidebar-gap: 12px;     /* wide screens: the sidebar floats this far from the top, bottom and left edges */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -1205,7 +1206,21 @@ body.sheet-open { overflow: hidden; }
 /* Wide screens: the sidebar is always there; no ☰, no ✕, no dimmed page. */
 @media (min-width: 1024px) {
   body { padding-left: var(--sidebar-width); }
-  .sidebar { z-index: 20; padding-top: calc(20px + env(safe-area-inset-top)); }
+  /* A floating panel, never touching the top edge of the screen. iPadOS tints and blurs the status bar
+     with the color of any fixed element that touches the top edge; a navy sidebar there made a fuzzy
+     grey fade above "Bar Reviewer". So it starts below the status bar (the safe area) plus a gap, with a
+     thin border and rounded corners instead. The column it takes is still --sidebar-width. */
+  .sidebar {
+    z-index: 20;
+    top: calc(env(safe-area-inset-top) + var(--sidebar-gap));
+    bottom: var(--sidebar-gap);
+    left: var(--sidebar-gap);
+    width: calc(var(--sidebar-width) - 2 * var(--sidebar-gap));
+    padding: 20px 12px 16px 12px;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    scrollbar-width: thin; scrollbar-color: rgba(255, 255, 255, 0.28) transparent;  /* if it has to scroll (a short window) */
+  }
   .sidebar-top { min-height: 0; margin-bottom: 14px; }
   .sidebar-link { min-height: 40px; font-size: 15px; }
   .menu-btn, .sidebar-close, .menu-backdrop { display: none !important; }
