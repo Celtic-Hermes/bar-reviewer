@@ -253,6 +253,21 @@ A small, quiet **Reset** text button (`.reset-btn`, in a `.reset-row`) at the ve
 - **Undo** for about 10 seconds with the shared message bar (`showUndo(text, onUndo)`, `#toast`): `undoReset` puts back exactly what was removed, in its original order (`putBackInOrder`).
 - Resets live in her normal progress, so backups and restores include them; nothing new is stored.
 
+## Icons
+Every icon in the app is a simple **outline line icon**, drawn by hand in one file, **`icons.js`** (24 × 24 grid, 1.75 line, round ends, no fill, `currentColor`, so it follows the text color in light and dark). No outside icon set, no files at runtime (so offline works, and no credit screen is needed); `icons.js` is in `APP_FILES` in `sw.js` and loads before `app.js`.
+- **Use them only through the helper, never a raw emoji in markup or text:** in `index.html` a slot, `<span data-icon="home"></span> My notes` (filled when the page loads; text after it gets the gap automatically); in `app.js`, `icon("gavel")` (an `<svg>`) or `setIconLabel(element, "pen", "My notes")` (icon + text). Subject icons: `SUBJECT_ICONS` in `icons.js`, by exact subject name (a subject with no icon yet falls back to its number or "•").
+- **Shared look:** the `.icon` / `.icon-lead` rules (and the `[data-icon]` slot rule) at the top of `style.css` set size (1.2em, on the text line) and spacing; a few places override the size (subject circles and sidebar 20px, ☰ / ⚙ buttons 22px, tag-dot check 18px). Never size an icon anywhere else.
+- **Decoration, with words:** icons are `aria-hidden`; the text next to an icon says what it means, and an icon-only button (the ⚙ Settings button, the tag dots) has an `aria-label`.
+- **Mapping:** Political Law = government (columns), Labor Law and Social Legislation = briefcase, Civil Law = document, Taxation Law = percent in a circle, Mercantile Law = storefront, Criminal Law = shield, Remedial Law = gavel, Legal and Judicial Ethics = scales; Home = home, Search / Find in case = magnifier, My notes = pen, Study Schedule = calendar, Settings = gear, Bookmark = bookmark, Hold to peek = eye, Streak = flame, Read the full rule / Library = book, Back = chevron-left, Done / right answer / tag picked = check. Drawn but not on a screen yet: tag (Tagged questions), refresh (Review missed), chart (Performance), chevron-right.
+- **Kept as text on purpose:** the › and ‹ arrows that are part of the layout (list rows, Previous / Next, the schedule's ‹ ›), "+", "→" in messages, the green / yellow / red tag circles, the red Unverified label.
+- **Still emoji / symbols until an icon is chosen** (no icon assigned yet; ask the builder before choosing): ☰ (menu), ✕ (close), ⭐ (Mastery), 🌴 (Day off), 🎉 (daily goal reached), ✗ (wrong answer marker), ↻ (Shuffle blanks).
+
+### Adding a new icon
+1. **Draw it** on the 24 × 24 grid in `ICON_PATHS` in `icons.js`: one entry, `"name": '<path d="…"/>'` (add `<circle>` / `<rect>` if easier). Outline only: no fill, no stroke or color attributes (they're set for every icon), keep to the 1.75 line and about 2 px of margin inside the grid, round corners. Look at it next to the others (render the whole set on one page) before using it.
+2. **Use it** with a slot (`<span data-icon="name"></span> Text`) or `icon("name")` / `setIconLabel(...)`. A subject: add it to `SUBJECT_ICONS` by exact subject name.
+3. **Give it words:** visible text next to it, or an `aria-label` on an icon-only button.
+4. **Check** light and dark mode and a phone-width screenshot; then bump `CACHE_VERSION` (app files changed). Never put a raw emoji or an icon's shape in `index.html`, `app.js` or `style.css`.
+
 ## Study Schedule
 Her own plan, day by day: **📅 Study Schedule** on the home screen and in the sidebar / ☰ menu (`#screen-schedule`, `openSchedule` in `app.js`; Back goes home; a reload reopens it). Dates are local (her phone's calendar day, `dateKeyOf` / `todayKey`), never UTC.
 - **Views:** a **Month / Week** switch (the shared `.seg-switch` / `.seg-btn` look, the same as the Quiz/Read switch); Month is the default, and her last choice is remembered on this device (`barReviewer.scheduleView.v1`, not backed up). ‹ / › move a month or a week; **Today** comes back. Weeks run Sunday to Saturday (`WEEK_STARTS_ON`).

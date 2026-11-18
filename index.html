@@ -28,14 +28,14 @@
       <p class="sidebar-title">Bar Reviewer</p>
       <button type="button" class="sidebar-close" id="sidebar-close" aria-label="Close menu">✕</button>
     </div>
-    <button type="button" class="sidebar-link" data-go="home"><span class="sidebar-icon" aria-hidden="true">🏠</span>Home</button>
-    <button type="button" class="sidebar-link" data-go="search"><span class="sidebar-icon" aria-hidden="true">🔍</span>Search</button>
+    <button type="button" class="sidebar-link" data-go="home"><span class="sidebar-icon" data-icon="home" aria-hidden="true"></span>Home</button>
+    <button type="button" class="sidebar-link" data-go="search"><span class="sidebar-icon" data-icon="magnifier" aria-hidden="true"></span>Search</button>
     <p class="sidebar-heading">Subjects</p>
     <div id="sidebar-subjects"></div>
     <p class="sidebar-heading">My study</p>
-    <button type="button" class="sidebar-link" data-go="notes"><span class="sidebar-icon" aria-hidden="true">📝</span>My notes</button>
-    <button type="button" class="sidebar-link" data-go="schedule"><span class="sidebar-icon" aria-hidden="true">📅</span>Study Schedule</button>
-    <button type="button" class="sidebar-link" data-go="settings"><span class="sidebar-icon" aria-hidden="true">⚙️</span>Settings</button>
+    <button type="button" class="sidebar-link" data-go="notes"><span class="sidebar-icon" data-icon="pen" aria-hidden="true"></span>My notes</button>
+    <button type="button" class="sidebar-link" data-go="schedule"><span class="sidebar-icon" data-icon="calendar" aria-hidden="true"></span>Study Schedule</button>
+    <button type="button" class="sidebar-link" data-go="settings"><span class="sidebar-icon" data-icon="gear" aria-hidden="true"></span>Settings</button>
   </nav>
 
   <!-- Phones: the dimmed page behind the open ☰ menu (tap it to close the menu) -->
@@ -45,7 +45,7 @@
     <!-- Phones only: opens the sections menu (the sidebar) -->
     <button type="button" class="menu-btn" id="menu-btn" aria-label="Menu" aria-controls="sidebar" aria-expanded="false">☰</button>
     <!-- Phones: Settings, on the home screen only (wide screens use the sidebar) -->
-    <button type="button" class="menu-btn settings-btn" id="settings-btn" aria-label="Settings">⚙️</button>
+    <button type="button" class="menu-btn settings-btn" id="settings-btn" aria-label="Settings"><span data-icon="gear"></span></button>
     <!-- Shown if the questions file can't be loaded -->
     <p class="error" id="load-error" hidden></p>
 
@@ -91,8 +91,8 @@
         </button>
       </section>
 
-      <button class="btn btn-secondary my-notes-btn" id="my-notes-btn">📝 My notes</button>
-      <button class="btn btn-secondary my-notes-btn" id="schedule-btn">📅 Study Schedule</button>
+      <button class="btn btn-secondary my-notes-btn" id="my-notes-btn"><span data-icon="pen"></span> My notes</button>
+      <button class="btn btn-secondary my-notes-btn" id="schedule-btn"><span data-icon="calendar"></span> Study Schedule</button>
 
       <div class="subject-list" id="subject-list"></div>
 
@@ -107,7 +107,7 @@
          Month view (a calendar; tap a day to see it below) or Week view (a list of the week's
          days, the default on phones). Nothing is planned automatically. -->
     <section id="screen-schedule" hidden>
-      <button class="back-btn" id="schedule-back">‹ Home</button>
+      <button class="back-btn" id="schedule-back"><span data-icon="chevron-left"></span> Home</button>
       <h1 class="screen-title">Study Schedule</h1>
       <p class="screen-subtitle schedule-exam" id="schedule-exam"></p>
       <button type="button" class="link-btn" id="schedule-exam-link" hidden>Set your exam date in Settings ›</button>
@@ -139,7 +139,7 @@
     <!-- SETTINGS: one shared "setting row" per setting (label, short description, control),
          grouped under headings. A new setting = one more row (see CLAUDE.md, Adding a new setting). -->
     <section id="screen-settings" hidden>
-      <button class="back-btn" id="settings-back">‹ Back</button>
+      <button class="back-btn" id="settings-back"><span data-icon="chevron-left"></span> Back</button>
       <h1 class="screen-title">Settings</h1>
       <p class="screen-subtitle">Saved on this device, and included in your backups.</p>
 
@@ -198,7 +198,7 @@
 
     <!-- SCREEN 2: One subject -->
     <section id="screen-subject" hidden>
-      <button class="back-btn" id="subject-back">‹ Subjects</button>
+      <button class="back-btn" id="subject-back"><span data-icon="chevron-left"></span> Subjects</button>
       <h1 class="screen-title" id="subject-title"></h1>
       <p class="screen-subtitle" id="subject-count"></p>
 
@@ -249,7 +249,7 @@
 
     <!-- SCREEN 2b: Sub-topics of one topic (only for topics that have sub-topics) -->
     <section id="screen-subtopics" hidden>
-      <button class="back-btn" id="subtopics-back">‹ Back</button>
+      <button class="back-btn" id="subtopics-back"><span data-icon="chevron-left"></span> Back</button>
       <p class="subject" id="subtopics-subject"></p>
       <h1 class="screen-title" id="subtopics-title"></h1>
       <p class="screen-subtitle" id="subtopics-count"></p>
@@ -259,13 +259,13 @@
 
     <!-- SCREEN 2c: One topic (or sub-topic): start practicing it, and its cases -->
     <section id="screen-topic" hidden>
-      <button class="back-btn" id="topic-back">‹ Back</button>
+      <button class="back-btn" id="topic-back"><span data-icon="chevron-left"></span> Back</button>
       <p class="subject" id="topic-subject"></p>
       <h1 class="screen-title" id="topic-title"></h1>
       <p class="screen-subtitle" id="topic-count"></p>
       <button class="btn btn-primary" id="topic-start">Start practice</button>
       <!-- Only for a sub-topic built from one rule: read the whole rule (loaded on tap) -->
-      <button class="btn btn-secondary" id="topic-rule" hidden>📖 Read the full rule</button>
+      <button class="btn btn-secondary" id="topic-rule" hidden><span data-icon="book"></span> Read the full rule</button>
       <p class="card empty-note list-empty" id="topic-empty" hidden></p>
       <h2 class="label topics-label">Cases</h2>
       <div class="subject-list" id="topic-case-list"></div>
@@ -276,7 +276,7 @@
 
     <!-- SCREEN 2d: Her "Tagged" list: every question she color-tagged in this subject -->
     <section id="screen-tagged" hidden>
-      <button class="back-btn" id="tagged-back">‹ Back</button>
+      <button class="back-btn" id="tagged-back"><span data-icon="chevron-left"></span> Back</button>
       <p class="subject" id="tagged-subject"></p>
       <h1 class="screen-title">Tagged</h1>
       <p class="screen-subtitle" id="tagged-count"></p>
@@ -287,7 +287,7 @@
     <!-- SCREEN 3: Practice (one question) -->
     <section id="screen-question" hidden>
       <div class="question-topbar">
-        <button class="back-btn" id="question-back">‹ Back</button>
+        <button class="back-btn" id="question-back"><span data-icon="chevron-left"></span> Back</button>
         <p class="progress" id="progress"></p>
       </div>
 
@@ -301,9 +301,9 @@
           <button class="bookmark-btn" id="bookmark-btn"></button>
           <!-- Her color tag: tap a color to tag the question, tap it again to remove the tag -->
           <div class="tag-picker" role="group" aria-label="Color tag">
-            <button class="tag-dot" data-tag="green" aria-label="Green tag" aria-pressed="false"></button>
-            <button class="tag-dot" data-tag="yellow" aria-label="Yellow tag" aria-pressed="false"></button>
-            <button class="tag-dot" data-tag="red" aria-label="Red tag" aria-pressed="false"></button>
+            <button class="tag-dot" data-tag="green" aria-label="Green tag" aria-pressed="false"><span data-icon="check"></span></button>
+            <button class="tag-dot" data-tag="yellow" aria-label="Yellow tag" aria-pressed="false"><span data-icon="check"></span></button>
+            <button class="tag-dot" data-tag="red" aria-label="Red tag" aria-pressed="false"><span data-icon="check"></span></button>
           </div>
         </div>
       </header>
@@ -336,7 +336,7 @@
         <!-- Read view: this section's full text, no blanks, nothing graded -->
         <p class="prompt reading-text" id="fb-read" hidden></p>
         <p class="fb-level-note fb-quiz-only" id="fb-level-note" hidden></p>
-        <button class="find-btn fb-quiz-only" id="find-btn" hidden>🔍 Find in case</button>
+        <button class="find-btn fb-quiz-only" id="find-btn" hidden><span data-icon="magnifier"></span> Find in case</button>
       </section>
 
       <!-- Multiple-choice parts (hidden for essays) -->
@@ -420,7 +420,7 @@
 
     <!-- SCREEN 5: One case -->
     <section id="screen-case" hidden>
-      <button class="back-btn" id="case-back">‹ Back</button>
+      <button class="back-btn" id="case-back"><span data-icon="chevron-left"></span> Back</button>
       <p class="subject" id="case-subject"></p>
       <h1 class="screen-title case-title" id="case-name"></h1>
       <p class="case-number" id="case-number"></p>
@@ -488,7 +488,7 @@
 
     <!-- SCREEN 5b: One rule's full text, each section in its own card (loaded on demand) -->
     <section id="screen-rule" hidden>
-      <button class="back-btn" id="rule-back">‹ Back</button>
+      <button class="back-btn" id="rule-back"><span data-icon="chevron-left"></span> Back</button>
       <p class="subject" id="rule-subject"></p>
       <h1 class="screen-title" id="rule-title"></h1>
       <p class="case-number" id="rule-number"></p>
@@ -527,7 +527,7 @@
 
     <!-- SCREEN 6: My notes: every case and rule she has written a note on -->
     <section id="screen-notes" hidden>
-      <button class="back-btn" id="notes-back">‹ Home</button>
+      <button class="back-btn" id="notes-back"><span data-icon="chevron-left"></span> Home</button>
       <h1 class="screen-title">My notes</h1>
       <p class="screen-subtitle" id="notes-count"></p>
       <div class="subject-list" id="notes-list"></div>
@@ -639,6 +639,7 @@
     </div>
   </section>
 
+  <script src="icons.js"></script>
   <script src="progress.js"></script>
   <script src="app.js"></script>
   <script src="find-in-case.js"></script>

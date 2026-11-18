@@ -69,11 +69,18 @@ function buildSidebar() {
     link.className = "sidebar-link";
     link.dataset.go = "subject";
     link.dataset.subject = subject;
-    const number = document.createElement("span");
-    number.className = "sidebar-icon sidebar-number";
-    number.setAttribute("aria-hidden", "true");
-    number.textContent = i < SUBJECTS.length ? String(i + 1) : "•";
-    link.append(number, subject);
+    // The subject's icon (SUBJECT_ICONS in icons.js); a subject with no icon yet shows its number.
+    const mark = document.createElement("span");
+    mark.setAttribute("aria-hidden", "true");
+    const subjectIcon = SUBJECT_ICONS[subject] ? icon(SUBJECT_ICONS[subject]) : null;
+    if (subjectIcon) {
+      mark.className = "sidebar-icon";
+      mark.appendChild(subjectIcon);
+    } else {
+      mark.className = "sidebar-icon sidebar-number";
+      mark.textContent = i < SUBJECTS.length ? String(i + 1) : "•";
+    }
+    link.append(mark, subject);
     box.appendChild(link);
   });
 }
@@ -421,9 +428,11 @@ function buildHome() {
 function makeSubjectCard(subject, badge) {
   const card = document.createElement("button");
   card.className = "subject-card";
+  // A circle with the subject's icon (SUBJECT_ICONS in icons.js); a subject with no icon yet shows "badge".
   const number = document.createElement("span");
   number.className = "subject-number";
-  number.textContent = badge;
+  const subjectIcon = SUBJECT_ICONS[subject] ? icon(SUBJECT_ICONS[subject]) : null;
+  if (subjectIcon) { number.appendChild(subjectIcon); } else { number.textContent = badge; }
   const name = document.createElement("span");
   name.className = "subject-name";
   name.textContent = subject;
@@ -446,7 +455,7 @@ const EMPTY_LIST_MESSAGES = {};
 EMPTY_LIST_MESSAGES[REVIEW_MISSED] =
   "Nothing to review yet. Questions you get wrong, or rate Partly or Missed it, will show up here.";
 EMPTY_LIST_MESSAGES[BOOKMARKED] =
-  "No bookmarks yet. Tap ☆ Bookmark on any question to save it here.";
+  "No bookmarks yet. Tap Bookmark on any question to save it here.";
 EMPTY_LIST_MESSAGES[TAGGED] =
   "No tagged questions yet. Tap a color (green, yellow or red) on any question to tag it.";
 
@@ -562,7 +571,7 @@ function openSubtopics(topic) {
   currentSubtopic = null;
   const subject = currentSubject;
   const mode = currentMode();
-  document.getElementById("subtopics-back").textContent = "‹ " + subject;
+  setIconLabel(document.getElementById("subtopics-back"), "chevron-left", subject);
   document.getElementById("subtopics-subject").textContent = subject;
   document.getElementById("subtopics-title").textContent = topic;
   document.getElementById("subtopics-count").textContent =
@@ -607,7 +616,7 @@ function openTopic(topic, subtopic) {
   practiceCase = null;
   const subject = currentSubject;
   const inPicker = currentSubtopic !== null;  // she came through the sub-topic picker
-  document.getElementById("topic-back").textContent = "‹ " + (inPicker ? topic : subject);
+  setIconLabel(document.getElementById("topic-back"), "chevron-left", inPicker ? topic : subject);
   document.getElementById("topic-subject").textContent = inPicker ? subject + " · " + topic : subject;
   document.getElementById("topic-title").textContent = inPicker ? subtopicLabel(currentSubtopic, topic) : topic;
 
@@ -778,7 +787,7 @@ function openTagged() {
     showEmptyListMessage(TAGGED);
     return;
   }
-  document.getElementById("tagged-back").textContent = "‹ " + subject;
+  setIconLabel(document.getElementById("tagged-back"), "chevron-left", subject);
   document.getElementById("tagged-subject").textContent = subject;
 
   // "5 questions: 2 green, 2 yellow, 1 red"
@@ -1053,9 +1062,8 @@ function showTodayCard() {
   const count = todayCount();
   const goal = dailyGoal();
 
-  document.getElementById("today-streak").textContent = streak.current > 0
-    ? "🔥 " + streak.current + "-day streak"
-    : "🔥 No streak yet";
+  setIconLabel(document.getElementById("today-streak"), "flame",
+    streak.current > 0 ? streak.current + "-day streak" : "No streak yet");
   document.getElementById("today-streak").classList.toggle("none", streak.current === 0);
   const best = document.getElementById("today-best");
   best.textContent = "Best: " + streak.best + (streak.best === 1 ? " day" : " days");
@@ -1982,7 +1990,7 @@ function myNotes() {
 
 function showMyNotesButton() {
   const n = myNotes().length;
-  document.getElementById("my-notes-btn").textContent = "📝 My notes" + (n > 0 ? " (" + n + ")" : "");
+  setIconLabel(document.getElementById("my-notes-btn"), "pen", "My notes" + (n > 0 ? " (" + n + ")" : ""));
 }
 
 function openNotes() {
@@ -2274,7 +2282,7 @@ function showQuestion() {
 function showBookmark(question) {
   const button = document.getElementById("bookmark-btn");
   const on = isBookmarked(question.id);
-  button.textContent = on ? "★ Bookmarked" : "☆ Bookmark";
+  setIconLabel(button, "bookmark", on ? "Bookmarked" : "Bookmark");
   button.classList.toggle("on", on);
 }
 
@@ -2372,7 +2380,9 @@ function showPicked(question, picked) {
     const letter = button.dataset.letter;
     if (letter === question.correct) {
       button.classList.add("right");
-      button.querySelector(".choice-letter").textContent = "✓";
+      const mark = button.querySelector(".choice-letter");
+      mark.textContent = "";
+      mark.appendChild(icon("check"));
     } else if (letter === picked) {
       button.classList.add("wrong");
       button.querySelector(".choice-letter").textContent = "✗";
@@ -2423,7 +2433,7 @@ const FB_LEVEL_LABELS = {     // the same, as shown in the dropdown
 const FB_TEXT = {
   difficulty: "Difficulty",          // the dropdown's label
   shuffle: "↻ Shuffle blanks",       // hides a different set of words at the same level
-  peek: "👁 Hold to peek"
+  peek: "Hold to peek"               // (its icon, the eye, is set in showFbLabels)
 };
 // ===========================================================================
 
@@ -2435,7 +2445,7 @@ function showFbLabels() {
   });
   document.getElementById("fb-level-title").textContent = FB_TEXT.difficulty;
   document.getElementById("fb-new").textContent = FB_TEXT.shuffle;
-  document.getElementById("fb-peek").textContent = FB_TEXT.peek;
+  setIconLabel(document.getElementById("fb-peek"), "eye", FB_TEXT.peek);
   document.getElementById("mastery-rule").textContent = "Mastered = right on 2 different days in a row (fill in the blank: " +
     FB_LEVEL_NAMES[MASTERY_FB_LEVELS[0]] + " or harder).";
 }

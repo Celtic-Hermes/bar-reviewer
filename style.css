@@ -90,6 +90,17 @@
 
 * { box-sizing: border-box; }
 
+/* ---------- Icons (icons.js): simple outline icons in the current text color ----------
+   One shared size and spacing, so every screen matches. .icon: next to text it sits on the text's
+   line, a little larger than a letter; .icon-lead: the gap between an icon and the text after it
+   (added automatically). Icons are decoration (aria-hidden); an icon-only button needs an aria-label. */
+.icon { width: 1.2em; height: 1.2em; flex: 0 0 auto; vertical-align: -0.24em; }
+.icon-lead { margin-right: 0.4em; }
+[data-icon] { display: inline-flex; align-items: center; vertical-align: -0.24em; }  /* the slot sits on the text line like .icon */
+.menu-btn [data-icon], .tag-dot [data-icon] { vertical-align: middle; }
+.menu-btn .icon { width: 22px; height: 22px; margin: 0; vertical-align: 0; }
+.back-btn .icon-lead { margin-right: 0.15em; }  /* a chevron needs less room than other icons */
+
 /* Anything marked "hidden" stays hidden, even if another style says otherwise. */
 [hidden] { display: none !important; }
 
@@ -422,6 +433,7 @@ body {
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
 }
+.subject-number .icon { width: 20px; height: 20px; margin: 0; vertical-align: 0; }
 .subject-number {
   flex-shrink: 0;
   width: 34px;
@@ -582,7 +594,9 @@ body {
 }
 /* The picked color: filled in, with a check mark (so it's clear without relying on color). */
 .tag-dot[aria-pressed="true"] { background: var(--tag-color); }
-.tag-dot[aria-pressed="true"]::after { content: "✓"; }
+.tag-dot [data-icon] { display: none; }
+.tag-dot[aria-pressed="true"] [data-icon] { display: inline-flex; }
+.tag-dot .icon { width: 18px; height: 18px; vertical-align: middle; }
 /* A small dot in her tag color, at the start of a question card in a list. */
 .tag-mark {
   flex-shrink: 0; width: 16px; height: 16px; border-radius: 50%;
@@ -1098,7 +1112,8 @@ body.sheet-open { overflow: hidden; }
 .sidebar-link:active { background: var(--sidebar-current); }
 .sidebar-link:focus-visible, .sidebar-close:focus-visible { outline: 2px solid var(--sidebar-accent); outline-offset: -2px; }
 .sidebar-link[aria-current="page"] { background: var(--sidebar-current); font-weight: 700; box-shadow: inset 3px 0 0 var(--sidebar-accent); }
-.sidebar-icon { flex: 0 0 22px; text-align: center; font-size: 15px; }
+.sidebar-icon { flex: 0 0 22px; display: inline-flex; align-items: center; justify-content: center; font-size: 15px; }
+.sidebar-icon .icon { width: 20px; height: 20px; margin: 0; vertical-align: 0; }
 .sidebar-number {
   height: 22px; border-radius: 50%; border: 1.5px solid var(--sidebar-muted);
   font-size: 12px; font-weight: 700; line-height: 19px; color: var(--sidebar-muted);
