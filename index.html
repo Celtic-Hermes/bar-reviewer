@@ -37,6 +37,7 @@
     <p class="sidebar-heading">My study</p>
     <button type="button" class="sidebar-link" data-go="notes"><span class="sidebar-icon" data-icon="pen" aria-hidden="true"></span>My notes</button>
     <button type="button" class="sidebar-link" data-go="schedule"><span class="sidebar-icon" data-icon="calendar" aria-hidden="true"></span>Study Schedule</button>
+    <button type="button" class="sidebar-link" data-go="syllabus"><span class="sidebar-icon" data-icon="book" aria-hidden="true"></span>2027 Bar Syllabus</button>
     <button type="button" class="sidebar-link" data-go="settings"><span class="sidebar-icon" data-icon="gear" aria-hidden="true"></span>Settings</button>
   </nav>
 
@@ -112,6 +113,7 @@
       <div class="quick-links">
         <button type="button" class="quick-link" id="my-notes-btn"><span data-icon="pen"></span> My notes</button>
         <button type="button" class="quick-link" id="schedule-btn"><span data-icon="calendar"></span> Study Schedule</button>
+        <button type="button" class="quick-link quick-link-wide" id="syllabus-btn"><span data-icon="book"></span> 2027 Bar Syllabus</button>
       </div>
 
       <h2 class="label topics-label home-heading">Subjects</h2>
@@ -146,6 +148,18 @@
         </section>
       </section>
 
+    </section>
+
+    <!-- 2027 BAR SYLLABUS (app.js openSyllabus): the official syllabus from data/syllabus-2027.json,
+         loaded only when this screen opens. Three views in one screen: the six exam subjects, a
+         subject's topics, a topic's sub-topics (a collapsible list). The file is data only. -->
+    <section id="screen-syllabus" hidden>
+      <button class="back-btn" id="syllabus-back"><span data-icon="chevron-left"></span> Home</button>
+      <p class="syllabus-kicker" id="syllabus-kicker" hidden></p>
+      <h1 class="screen-title" id="syllabus-title">2027 Bar Syllabus</h1>
+      <div id="syllabus-body"></div>
+      <p class="syllabus-source">Source: Bar Bulletin No. 1-2027. If this differs from the official microsite, the microsite controls.
+        <a id="syllabus-link" href="https://sc.judiciary.gov.ph/bar-2027" target="_blank" rel="noopener">Official 2027 Bar microsite</a></p>
     </section>
 
     <!-- STUDY SCHEDULE: her own plan, day by day (app.js openSchedule; saved in progress.schedule).

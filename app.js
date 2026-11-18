@@ -45,7 +45,7 @@ document.addEventListener("touchstart", function () {}, { passive: true });
 // Only one screen is visible at a time.
 function showScreen(id) {
   saveAllNotes();  // leaving a screen with a notes box: save what she typed first
-  ["screen-home", "screen-subject", "screen-subtopics", "screen-topic", "screen-tagged", "screen-question", "screen-results", "screen-case", "screen-rule", "screen-notes", "screen-settings", "screen-schedule", "screen-search"].forEach(function (screenId) {
+  ["screen-home", "screen-subject", "screen-subtopics", "screen-topic", "screen-tagged", "screen-question", "screen-results", "screen-case", "screen-rule", "screen-notes", "screen-settings", "screen-schedule", "screen-search", "screen-syllabus"].forEach(function (screenId) {
     document.getElementById(screenId).hidden = (screenId !== id);
   });
   window.scrollTo(0, 0);
@@ -91,6 +91,7 @@ function sidebarSection() {
   if (shownScreen === "screen-notes") { return "notes"; }
   if (shownScreen === "screen-settings") { return "settings"; }
   if (shownScreen === "screen-schedule") { return "schedule"; }
+  if (shownScreen === "screen-syllabus") { return "syllabus"; }
   if (shownScreen === "screen-search") { return "search"; }
   const from = shownScreen === "screen-case" ? caseCameFrom : (shownScreen === "screen-rule" ? ruleCameFrom : null);
   if (from === "notes") { return "notes"; }
@@ -151,6 +152,8 @@ document.getElementById("sidebar").addEventListener("click", function (event) {
     openSettings();
   } else if (go === "schedule") {
     openSchedule();
+  } else if (go === "syllabus") {
+    openSyllabus();
   } else if (go === "subject") {
     openSubject(link.dataset.subject);
   }
@@ -202,6 +205,9 @@ function rememberSpot() {
     spot.ruleId = currentRule.id;
     spot.ruleCameFrom = ruleCameFrom;
   }
+  if (shownScreen === "screen-syllabus") {
+    spot.syllabus = { subject: syllabusView.subject, topic: syllabusView.topic };  // which of its three views she's on
+  }
   if (spot.caseCameFrom === "search" || spot.ruleCameFrom === "search") {
     spot.search = document.getElementById("search-input").value;  // to show the same results on Back
   }
@@ -242,6 +248,10 @@ function putBackSpot(spot) {
   }
   if (spot.screen === "schedule") {
     openSchedule();
+    return true;
+  }
+  if (spot.screen === "syllabus") {
+    openSyllabus(isPlainObject(spot.syllabus) ? spot.syllabus : null);
     return true;
   }
   // The notes list, and a case or rule opened from it, don't belong to a subject.
@@ -1073,6 +1083,281 @@ function showRuleText(box, text, rule) {
   });
   joinHighlights(box);
 }
+
+// ---------- 2027 Bar Syllabus ----------
+// data/syllabus-2027.json is the official syllabus (Bar Bulletin No. 1-2027), generated from the
+// official PDF: data only, never edited by hand (a new year's syllabus is a new file). It is
+// loaded only when this screen opens, kept in memory, and saved on the phone for offline use
+// (APP_FILES / DATA_FILES in sw.js). One screen, three views (syllabusView):
+//   { subject: null }                 the six exam subjects (weight, exam day, days to go)
+//   { subject: "s1" }                 that subject's top-level topics
+//   { subject: "s1", topic: "s1.I" }  that topic's sub-topics, a collapsible nested list
+// If the file can't be loaded or doesn't look right, a clear message shows instead.
+const SYLLABUS_FILE = "data/syllabus-2027.json";
+const SYLLABUS_MAX_DEPTH = 12;
+let syllabus = null;            // the cleaned data, once loaded
+let syllabusState = "idle";     // "idle", "loading" or "failed"
+let syllabusView = { subject: null, topic: null };
+
+function syllabusText(value) { return typeof value === "string" ? value.trim() : ""; }
+
+// Keeps only the topics that have a title (top-level ones are shown with their readable displayTitle).
+function cleanSyllabusNodes(list, depth) {
+  if (!Array.isArray(list) || depth > SYLLABUS_MAX_DEPTH) { return []; }
+  const nodes = [];
+  list.forEach(function (n) {
+    if (!isPlainObject(n)) { return; }
+    const title = syllabusText(n.displayTitle) || syllabusText(n.title);
+    if (!title) { return; }
+    nodes.push({ id: syllabusText(n.id), marker: syllabusText(n.marker), title: title, note: syllabusText(n.note),
+                 children: cleanSyllabusNodes(n.children, depth + 1) });
+  });
+  return nodes;
+}
+
+// The parts the screen needs, or null if there are no usable subjects.
+function cleanSyllabus(data) {
+  if (!isPlainObject(data) || !Array.isArray(data.subjects)) { return null; }
+  const exam = isPlainObject(data.exam) ? data.exam : {};
+  const subjects = [];
+  data.subjects.forEach(function (s) {
+    if (!isPlainObject(s) || !syllabusText(s.id) || !syllabusText(s.name)) { return; }
+    subjects.push({
+      id: syllabusText(s.id), name: syllabusText(s.name),
+      weight: typeof s.weight === "number" ? s.weight : null,
+      day: typeof s.day === "number" ? s.day : null,
+      date: isCalendarDate(s.date) ? s.date : "",
+      session: syllabusText(s.session), note: syllabusText(s.note),
+      topics: cleanSyllabusNodes(s.topics, 0)
+    });
+  });
+  if (subjects.length === 0) { return null; }
+  const site = syllabusText(exam.officialMicrosite);
+  return { title: syllabusText(exam.title), format: syllabusText(exam.format),
+           site: /^https:\/\//.test(site) ? site : "", subjects: subjects };
+}
+
+function loadSyllabus() {
+  syllabusState = "loading";
+  fetch(SYLLABUS_FILE)
+    .then(function (response) {
+      if (!response.ok) { throw new Error("status " + response.status); }
+      return response.json();
+    })
+    .then(function (data) {
+      const clean = cleanSyllabus(data);
+      if (!clean) { throw new Error("no usable subjects"); }
+      syllabus = clean;
+      syllabusState = "idle";
+      if (clean.site) { document.getElementById("syllabus-link").href = clean.site; }
+    })
+    .catch(function () { syllabus = null; syllabusState = "failed"; })
+    .then(function () { if (shownScreen === "screen-syllabus") { showSyllabus(); } });
+}
+
+function openSyllabus(view) {
+  syllabusView = { subject: view && typeof view.subject === "string" ? view.subject : null,
+                   topic: view && typeof view.topic === "string" ? view.topic : null };
+  showSyllabus();
+  showScreen("screen-syllabus");
+  if (!syllabus && syllabusState !== "loading") { loadSyllabus(); showSyllabus(); }
+}
+
+// "291 days to go" for an exam date (calendar days on her phone's clock).
+function daysToGoText(dateKey) {
+  const days = Math.round((dateOfKey(dateKey) - dateOfKey(todayKey())) / 86400000);
+  if (days > 1) { return days + " days to go"; }
+  if (days === 1) { return "1 day to go"; }
+  if (days === 0) { return "Exam day is today"; }
+  return "This exam date has passed";
+}
+
+function syllabusDateText(dateKey) {
+  const d = dateOfKey(dateKey);
+  return DAY_NAMES[d.getDay()] + ", " + MONTH_NAMES[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+}
+
+function syllabusSubjectMeta(s) {
+  const parts = [];
+  if (s.date) { parts.push(syllabusDateText(s.date)); }
+  if (s.session) { parts.push(s.session + " session"); }
+  return parts.join(" · ");
+}
+
+function syllabusEl(tag, className, text) {
+  const el = document.createElement(tag);
+  if (className) { el.className = className; }
+  if (text !== undefined) { el.textContent = text; }
+  return el;
+}
+
+function syllabusArrow() {
+  const arrow = syllabusEl("span", "syllabus-arrow");
+  arrow.setAttribute("aria-hidden", "true");
+  const svg = icon("chevron-right");
+  if (svg) { arrow.appendChild(svg); }
+  return arrow;
+}
+
+// A nested, collapsible list: a topic with sub-topics is a <details> (tap to open or close).
+function makeSyllabusNode(node, depth) {
+  const row = function (tag) {
+    const el = syllabusEl(tag, tag === "summary" ? "" : "syl-leaf");
+    const chevron = syllabusEl("span", "syl-chevron");
+    chevron.setAttribute("aria-hidden", "true");
+    const svg = icon("chevron-right");
+    if (svg) { chevron.appendChild(svg); }
+    el.append(chevron, syllabusEl("span", "syl-marker", node.marker), syllabusEl("span", "syl-title", node.title));
+    el.style.setProperty("--depth", String(depth));
+    return el;
+  };
+  if (node.children.length === 0) { return row("div"); }
+  const details = syllabusEl("details", "syl-node");
+  details.appendChild(row("summary"));
+  node.children.forEach(function (child) { details.appendChild(makeSyllabusNode(child, depth + 1)); });
+  return details;
+}
+
+function showSyllabus() {
+  const body = document.getElementById("syllabus-body");
+  const title = document.getElementById("syllabus-title");
+  const kicker = document.getElementById("syllabus-kicker");
+  const back = document.getElementById("syllabus-back");
+  body.textContent = "";
+  kicker.hidden = true;
+  title.textContent = "2027 Bar Syllabus";
+  setIconLabel(back, "chevron-left", "Home");
+
+  if (!syllabus) {
+    const box = syllabusEl("div", "syllabus-message");
+    if (syllabusState === "failed") {
+      box.appendChild(syllabusEl("p", "", "The syllabus couldn't load. If you're offline, connect to the internet once and try again."));
+      const retry = syllabusEl("button", "btn btn-secondary", "Try again");
+      retry.type = "button";
+      retry.dataset.action = "retry";
+      box.appendChild(retry);
+    } else {
+      box.appendChild(syllabusEl("p", "", "Loading the syllabus…"));
+    }
+    body.appendChild(box);
+    return;
+  }
+
+  const subject = syllabus.subjects.find(function (s) { return s.id === syllabusView.subject; }) || null;
+  const topic = subject ? subject.topics.find(function (t) { return t.id === syllabusView.topic; }) || null : null;
+  syllabusView = { subject: subject ? subject.id : null, topic: topic ? topic.id : null };  // an unknown ID falls back to the list above it
+
+  if (!subject) {
+    // The six exam subjects.
+    if (syllabus.format) { body.appendChild(syllabusEl("p", "syllabus-lead", syllabus.format)); }
+    const list = syllabusEl("div", "syllabus-list");
+    syllabus.subjects.forEach(function (s) {
+      const card = syllabusEl("button", "syllabus-card");
+      card.type = "button";
+      card.dataset.action = "subject";
+      card.dataset.id = s.id;
+      const main = syllabusEl("span", "syllabus-card-main");
+      main.appendChild(syllabusEl("span", "syllabus-name", s.name));
+      const meta = syllabusSubjectMeta(s);
+      if (meta) { main.appendChild(syllabusEl("span", "syllabus-meta", meta)); }
+      if (s.date) { main.appendChild(syllabusEl("span", "syllabus-count", daysToGoText(s.date))); }
+      card.appendChild(main);
+      if (s.weight !== null) { card.appendChild(syllabusEl("span", "syllabus-weight", s.weight + "%")); }
+      card.appendChild(syllabusArrow());
+      list.appendChild(card);
+    });
+    body.appendChild(list);
+    return;
+  }
+
+  if (!topic) {
+    // One subject's top-level topics.
+    setIconLabel(back, "chevron-left", "Syllabus");
+    title.textContent = subject.name;
+    const bits = [];
+    if (subject.weight !== null) { bits.push(subject.weight + "% of the exam"); }
+    if (subject.day !== null) { bits.push("Day " + subject.day); }
+    const meta = [bits.join(" · "), syllabusSubjectMeta(subject)].filter(Boolean).join(" · ");
+    if (meta) { body.appendChild(syllabusEl("p", "syllabus-lead", meta)); }
+    if (subject.date) { body.appendChild(syllabusEl("p", "syllabus-lead", daysToGoText(subject.date))); }
+    if (subject.note) { body.appendChild(syllabusEl("p", "syllabus-note", subject.note)); }
+    const list = syllabusEl("div", "syllabus-list");
+    subject.topics.forEach(function (t) {
+      const card = syllabusEl("button", "syllabus-card");
+      card.type = "button";
+      card.dataset.action = "topic";
+      card.dataset.id = t.id;
+      if (t.marker) { card.appendChild(syllabusEl("span", "syllabus-marker", t.marker)); }
+      card.appendChild(syllabusEl("span", "syllabus-card-main", t.title));
+      card.appendChild(syllabusArrow());
+      list.appendChild(card);
+    });
+    if (subject.topics.length === 0) { body.appendChild(syllabusEl("p", "syllabus-note", "No topics are listed for this subject.")); }
+    body.appendChild(list);
+    return;
+  }
+
+  // One topic's sub-topics.
+  setIconLabel(back, "chevron-left", "Topics");
+  kicker.textContent = subject.name;
+  kicker.hidden = false;
+  title.textContent = (topic.marker ? topic.marker + ". " : "") + topic.title;
+  if (topic.note) { body.appendChild(syllabusEl("p", "syllabus-note", topic.note)); }
+  if (topic.children.length === 0) {
+    body.appendChild(syllabusEl("p", "syllabus-note", "No sub-topics are listed for this topic."));
+    return;
+  }
+  const tools = syllabusEl("div", "syllabus-tools");
+  const toggle = syllabusEl("button", "link-btn", "Expand all");
+  toggle.type = "button";
+  toggle.dataset.action = "toggle-all";
+  tools.appendChild(toggle);
+  body.appendChild(tools);
+  const tree = syllabusEl("div", "syllabus-tree");
+  topic.children.forEach(function (child) { tree.appendChild(makeSyllabusNode(child, 0)); });
+  body.appendChild(tree);
+}
+
+document.getElementById("syllabus-body").addEventListener("click", function (event) {
+  const el = event.target.closest("[data-action]");
+  if (!el) { return; }
+  const action = el.dataset.action;
+  if (action === "subject") {
+    syllabusView = { subject: el.dataset.id, topic: null };
+    showSyllabus();
+    window.scrollTo(0, 0);
+    rememberSpot();
+  } else if (action === "topic") {
+    syllabusView = { subject: syllabusView.subject, topic: el.dataset.id };
+    showSyllabus();
+    window.scrollTo(0, 0);
+    rememberSpot();
+  } else if (action === "toggle-all") {
+    const nodes = document.querySelectorAll("#syllabus-body details.syl-node");
+    const open = el.textContent === "Expand all";
+    nodes.forEach(function (d) { d.open = open; });
+    el.textContent = open ? "Collapse all" : "Expand all";
+  } else if (action === "retry") {
+    loadSyllabus();
+    showSyllabus();
+  }
+});
+
+document.getElementById("syllabus-back").addEventListener("click", function () {
+  if (syllabusView.topic) { syllabusView.topic = null; }
+  else if (syllabusView.subject) { syllabusView.subject = null; }
+  else { showScreen("screen-home"); return; }
+  showSyllabus();
+  window.scrollTo(0, 0);
+  rememberSpot();
+});
+
+document.getElementById("syllabus-btn").addEventListener("click", function () { openSyllabus(); });
+
+// Back in the app on a new day: the "days to go" lines are looked up again.
+document.addEventListener("visibilitychange", function () {
+  if (document.visibilityState === "visible" && shownScreen === "screen-syllabus") { showSyllabus(); }
+});
 
 // ---------- Quote of the day (home screen) ----------
 // data/quotes.json: a list of entries of two kinds (see "Quote of the day" in CLAUDE.md):
