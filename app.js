@@ -1094,7 +1094,7 @@ function showTodayCard() {
   const mastery = masteryOf(allQuestions);
   document.getElementById("today-mastery").hidden = mastery.total === 0;
   if (mastery.total > 0) {
-    document.getElementById("today-mastery-count").textContent = "⭐ Mastery " + mastery.mastered + " / " + mastery.total;
+    document.getElementById("today-mastery-count").textContent = "Mastery";  // just the word and the bar (no star, no count)
     const mbar = document.getElementById("mastery-bar");
     mbar.setAttribute("aria-valuemax", String(mastery.total));
     mbar.setAttribute("aria-valuenow", String(mastery.mastered));
@@ -2438,7 +2438,7 @@ const FB_TEXT = {
 // ===========================================================================
 
 // Put those words on the page (once, at startup): the dropdown, its label, the buttons,
-// and the Today card's mastery line ("… Steady or harder", from the mastery rule itself).
+// (the Today card no longer shows a mastery description).
 function showFbLabels() {
   document.querySelectorAll("#fb-level-select option").forEach(function (option) {
     option.textContent = FB_LEVEL_LABELS[option.value] || option.value;
@@ -2446,8 +2446,6 @@ function showFbLabels() {
   document.getElementById("fb-level-title").textContent = FB_TEXT.difficulty;
   document.getElementById("fb-new").textContent = FB_TEXT.shuffle;
   setIconLabel(document.getElementById("fb-peek"), "eye", FB_TEXT.peek);
-  document.getElementById("mastery-rule").textContent = "Mastered = right on 2 different days in a row (fill in the blank: " +
-    FB_LEVEL_NAMES[MASTERY_FB_LEVELS[0]] + " or harder).";
 }
 const FB_LEVEL_SHARE = { moderate: 0.35, intensive: 0.55, verbatim: 0.75 };  // share of words hidden
 const FB_LIGHT_MOST = 3;          // Light: at most this many key-term blanks
