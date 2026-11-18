@@ -658,6 +658,32 @@ function setTag(questionId, color) {
 // It is cleared when she goes back to the home screen, or finishes a round.
 const SPOT_KEY = "barReviewer.currentSpot.v1";
 
+// ---------- Away for a while → back to the home screen ----------
+// A short break (switching apps, locking the phone): she's exactly where she left off.
+// A long break (this many minutes or more): she starts at the home screen instead, and the
+// saved spot (and any practice round in it) is dropped. Her progress is never touched.
+// (To change how long "a while" is, change this one number.)
+const AWAY_HOME_MINUTES = 30;
+const LAST_SEEN_KEY = "barReviewer.lastSeen.v1";  // when she last used the app (this device only, not in backups)
+
+// Note "she's here / was here just now" (called when the app is hidden or closed, and with each saved spot).
+function markSeen() {
+  try { localStorage.setItem(LAST_SEEN_KEY, String(Date.now())); } catch (e) { /* fine */ }
+}
+
+// True if she's been away from the app for AWAY_HOME_MINUTES or more. (Never seen before, or a
+// clock that makes no sense: no.)
+function awayTooLong() {
+  try {
+    const then = Number(localStorage.getItem(LAST_SEEN_KEY));
+    if (!then) { return false; }
+    const minutes = (Date.now() - then) / 60000;
+    return minutes >= AWAY_HOME_MINUTES;
+  } catch (e) {
+    return false;
+  }
+}
+
 // Gives back the saved spot, or null if there's none (or it's damaged).
 function loadSpot() {
   try {
@@ -671,6 +697,7 @@ function loadSpot() {
 }
 
 function saveSpot(spot) {
+  markSeen();
   try {
     localStorage.setItem(SPOT_KEY, JSON.stringify(spot));
   } catch (e) {

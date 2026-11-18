@@ -1805,6 +1805,22 @@ document.addEventListener("visibilitychange", function () {
   if (document.visibilityState === "visible" && shownScreen === "screen-home") { showTodayCard(); }
 });
 
+// Leaving the app (switching apps, locking the phone, closing it): note the time. Coming back:
+// after a short break nothing changes (no reload, same screen); after a long one (AWAY_HOME_MINUTES)
+// she goes to the home screen, with any open menu, dialog or panel closed and the round dropped.
+window.addEventListener("pagehide", markSeen);
+document.addEventListener("visibilitychange", function () {
+  if (document.visibilityState === "hidden") { markSeen(); return; }
+  if (!awayTooLong()) { markSeen(); return; }
+  closeMenu(false);
+  if (confirmDone) { closeConfirm(false); }
+  if (taskEditing) { closeTaskDialog(); }
+  if (typeof closeSheet === "function") { closeSheet(); }
+  hideUndo();
+  showScreen("screen-home");  // also forgets the saved spot
+  markSeen();
+});
+
 // ---------- Her notes (on cases and rules) ----------
 // Every notes box is an editable area (<div class="notes-box" contenteditable>) with a
 // B / I / U toolbar above it (data-for = the box's id) and a status line after it
@@ -4580,9 +4596,14 @@ buildSidebar();
 updateSidebar();
 showTodayCard();
 
+// Away for a long while (AWAY_HOME_MINUTES in progress.js)? Start at the home screen: forget the
+// saved spot. Only a short break puts her back exactly where she was.
+if (awayTooLong()) { clearSpot(); }
+
 // If she was somewhere else when the app last closed, don't flash the home screen
 // while the files load; restoreSpot() below shows the right screen.
 if (loadSpot()) { document.getElementById("screen-home").hidden = true; }
+markSeen();
 
 // Questions and cases: data/catalog.json lists one file per topic
 // (data/content/<subject>/<topic>.json), each holding that topic's "questions" and "cases".
