@@ -5,21 +5,27 @@
   --text: #1f2328;
   --muted: #5d6470;
   --border: #e2ddd2;
-  /* The app's accent color, in shared variables (use these, never a color of your own):
-     --primary:      backgrounds of buttons and the selected tab, borders, focus rings, progress
-                     bars. NEVER as the color of small text (too light for that).
-     --on-primary:   the text ON a --primary background (white). Always bold (weight 700) or large.
-     --primary-text: any small colored text: Back, subject labels, links, "Find in case", captions.
-     --primary-soft: ONLY as a background behind dark text (--text): answer words in Full text,
-                     peeked answers, the inside of blank boxes. Never as a text color.
-     --primary-edge: borders of cards, inputs and the blank boxes. */
-  --primary: #6666FF;
+  /* The app's accent palette, in shared variables (use these, never a color of your own). A LIGHT touch:
+     most of every screen stays neutral (cream page, white cards, dark neutral text).
+     --primary:      the ONE main action on a screen (Start, Show answer, Submit), the selected tab or chip,
+                     links, progress bars and rings, focus rings. White text on it is fine (6.4:1).
+     --on-primary:   the text ON a --primary background (white).
+     --primary-text: colored text that is a link or action (Back, "Find in case", + Add task). Same color as --primary.
+                     Plain labels and captions are NOT colored (use --text / --muted).
+     --primary-soft: small highlights only, ALWAYS with dark text (--text) on top: the answer words in Full text,
+                     peeked answers, the inside of typed blank boxes, badges, a Day off, "Pick up where you stopped".
+     --primary-edge: thin borders of inputs, outlined secondary buttons and the typed blank boxes, and muted icons.
+                     Ordinary card borders use the neutral --border instead.
+     --primary-deep: the sidebar (light mode) and main headings (via --heading) only. Body text stays --text. */
+  --primary: #585994;
   --on-primary: #ffffff;
-  --primary-text: #5555E0;
-  --primary-soft: #CCCCFF;
-  --primary-edge: #A9A9FF;
+  --primary-text: #585994;
+  --primary-soft: #C4C4F5;
+  --primary-edge: #9E9EC5;
+  --primary-deep: #272762;
+  --heading: var(--primary-deep);  /* main headings: screen titles and the home greeting */
   /* Study Schedule task types: soft backgrounds, always with dark text on them. */
-  --type-q: #e1e1ff;  /* Questions */
+  --type-q: #e3e3f8;  /* Questions */
   --type-c: #dbeafd;  /* Case reading */
   --type-f: #d9f2e3;  /* Fill-in-the-blank */
   --type-r: #fff1c2;  /* Review */
@@ -48,12 +54,12 @@
   --press-shade: rgba(0, 0, 0, 0.07); /* the darker tint laid over it while pressed */
   --press-time: 120ms;                /* how quickly it shrinks and springs back */
   /* Sidebar (wide screens): dark in both light and dark mode. */
-  --sidebar-bg: #16243f;
+  --sidebar-bg: var(--primary-deep);
   --sidebar-text: #e6ebf4;
   --sidebar-muted: #9ba8c0;
   --sidebar-hover: rgba(255, 255, 255, 0.07);
   --sidebar-current: rgba(255, 255, 255, 0.14);
-  --sidebar-accent: #8fb0ea;
+  --sidebar-accent: #C4C4F5;
   --sidebar-width: 240px;  /* the column the sidebar takes (the page starts after it) */
   --sidebar-gap: 12px;     /* wide screens: the sidebar floats this far from the top, bottom and left edges */
 }
@@ -65,12 +71,13 @@
     --text: #e8e6e1;
     --muted: #a0a6b0;
     --border: #2f333b;
-    --primary: #A9A9FF;
+    --primary: #A6A7DD;
     --on-primary: #12121f;
-    --primary-text: #b8b8ff;
-    --primary-soft: #34346a;
-    --primary-edge: #6c6ce0;
-    --type-q: #303063; --type-c: #1f3550; --type-f: #1d3f2c; --type-r: #4a3e17; --type-e: #552626; --type-o: #33363d;
+    --primary-text: #B8B9EA;
+    --primary-soft: #36375F;
+    --primary-edge: #5E5F8E;
+    --heading: var(--text);  /* in dark mode the headings are the normal light text */
+    --type-q: #34355f; --type-c: #1f3550; --type-f: #1d3f2c; --type-r: #4a3e17; --type-e: #552626; --type-o: #33363d;
     --banner-bg: #3a2f0b;
     --banner-text: #f3d77a;
     --got: #5cc48d;
@@ -123,12 +130,12 @@ body {
 }
 
 .question-header { margin-bottom: 12px; }
-.subject { margin: 0; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--primary-text); }
+.subject { margin: 0; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
 .topic { margin: 2px 0 0; font-size: 15px; color: var(--muted); }
 
 .card {
   background: var(--card);
-  border: 1px solid var(--primary-edge);
+  border: 1px solid var(--border);
   border-radius: 14px;
   padding: 18px;
   margin-bottom: 16px;
@@ -264,7 +271,7 @@ body {
 
 /* ALAC answer: each part gets a small heading. */
 .alac { margin: 0; }
-.alac dt { font-weight: 700; color: var(--primary-text); margin-top: 14px; }
+.alac dt { font-weight: 700; margin-top: 14px; }
 .alac dt:first-child { margin-top: 0; }
 .alac dd { margin: 2px 0 0; }
 
@@ -296,7 +303,7 @@ body {
 .fb-level-title { font-weight: 600; }
 .fb-level-select {
   flex: 1; min-width: 0; font: inherit; font-size: 16px; /* 16px: iPhone won't zoom in */
-  padding: 10px 12px; border: 2px solid var(--primary); border-radius: 10px;
+  padding: 10px 12px; border: 2px solid var(--primary-edge); border-radius: 10px;
   background: var(--card); color: var(--primary-text);
 }
 .fb-level-select:disabled { opacity: 0.6; }
@@ -305,7 +312,7 @@ body {
 .fb-new-row { display: flex; justify-content: flex-end; margin: -2px 0 12px; }
 .fb-new-btn {
   min-height: 40px; padding: 6px 14px;
-  border: 2px solid var(--primary); border-radius: 10px;
+  border: 2px solid var(--primary-edge); border-radius: 10px;
   background: var(--card); color: var(--primary-text);
   font: inherit; font-size: 16px; font-weight: 600; cursor: pointer; -webkit-tap-highlight-color: transparent;
 }
@@ -313,7 +320,7 @@ body {
 .fb-new-note { margin: -4px 0 12px; text-align: right; font-size: 14px; color: var(--muted); }
 .fb-level-note { margin: 12px 0 0; font-size: 14px; color: var(--muted); }
 /* Fill in the blank: the Quiz / Read switch (two halves of one rounded bar). */
-.fb-view, .seg-switch { display: grid; grid-template-columns: 1fr 1fr; margin: 0 0 14px; border: 2px solid var(--primary); border-radius: 10px; overflow: hidden; }
+.fb-view, .seg-switch { display: grid; grid-template-columns: 1fr 1fr; margin: 0 0 14px; border: 2px solid var(--primary-edge); border-radius: 10px; overflow: hidden; }
 .fb-view-btn, .seg-btn {
   padding: 9px 6px; border: none; background: var(--card); color: var(--primary-text);
   font: inherit; font-size: 16px; font-weight: 600; cursor: pointer; -webkit-tap-highlight-color: transparent;
@@ -384,7 +391,7 @@ body {
 .rating-result { margin: 12px 0 0; text-align: center; color: var(--muted); }
 
 /* ---------- Screen titles ---------- */
-.screen-title { margin: 4px 0 4px; font-size: 28px; line-height: 1.2; }
+.screen-title { margin: 4px 0 4px; font-size: 28px; line-height: 1.2; color: var(--heading); }
 .screen-subtitle { margin: 0 0 18px; color: var(--muted); }
 
 /* ---------- Pressing a button (one rule for every button in the app) ---------- */
@@ -422,8 +429,8 @@ body {
 /* ---------- Home: the top (greeting, tiles, where she stopped) ---------- */
 .home-hero { display: grid; gap: 18px; margin: 4px 0 20px; }
 .home-hello { padding-right: 112px; }  /* room for the ⚙ and ☰ buttons on a phone */
-.home-date { margin: 0 0 4px; font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--primary-text); }
-.home-greeting { margin: 0; font-size: 34px; line-height: 1.15; letter-spacing: -0.01em; }
+.home-date { margin: 0 0 4px; font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.home-greeting { margin: 0; font-size: 34px; line-height: 1.15; letter-spacing: -0.01em; color: var(--heading); }
 .home-line { margin: 8px 0 0; color: var(--muted); }
 .home-side { display: grid; gap: 12px; min-width: 0; }
 .home-tiles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
@@ -431,14 +438,14 @@ body {
 /* A tile: a small picture on top (an icon or a ring), a big number, a label. */
 .stat-tile {
   display: flex; flex-direction: column; align-items: flex-start; min-width: 0; padding: 14px;
-  background: var(--card); border: 1px solid var(--primary-edge); border-radius: 16px;
+  background: var(--card); border: 1px solid var(--border); border-radius: 16px;
   color: var(--text); font: inherit; text-align: left;
 }
 button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
 .stat-visual, .stat-ring { width: 38px; height: 38px; flex: none; margin-bottom: 10px; }
 .stat-visual {
-  display: grid; place-items: center; border-radius: 12px; color: var(--primary-text);
-  background: color-mix(in srgb, var(--primary-soft) 55%, var(--card));
+  display: grid; place-items: center; border-radius: 12px; color: var(--muted);
+  background: color-mix(in srgb, var(--border) 55%, var(--card));
 }
 .stat-visual .icon { width: 22px; height: 22px; margin: 0; vertical-align: 0; }
 .stat-tile.none .stat-visual { color: var(--muted); }
@@ -487,7 +494,7 @@ button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
   min-height: 68px;
   padding: 14px 16px;
   background: var(--card);
-  border: 1px solid var(--primary-edge);
+  border: 1px solid var(--border);
   border-radius: 14px;
   color: var(--text);
   font: inherit;
@@ -512,8 +519,8 @@ button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
 .subject-meta { display: block; margin-top: 2px; font-size: 14px; font-weight: 400; color: var(--muted); }
 #screen-home .subject-card { min-height: 78px; padding: 14px 16px; border-radius: 16px; }
 #screen-home .subject-number {
-  width: 46px; height: 46px; border-radius: 14px; color: var(--primary-text);
-  background: color-mix(in srgb, var(--primary-soft) 55%, var(--card));
+  width: 46px; height: 46px; border-radius: 14px; color: var(--muted);
+  background: color-mix(in srgb, var(--border) 55%, var(--card));
 }
 #screen-home .subject-number .icon { width: 24px; height: 24px; }
 .subject-arrow { color: var(--muted); font-size: 24px; line-height: 1; }
@@ -628,8 +635,8 @@ button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
    One clear action (the Start card), quieter things around it, few borders, room to breathe. */
 .subject-head { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 14px; margin: 6px 0 20px; }
 .subject-head-icon {
-  display: grid; place-items: center; width: 52px; height: 52px; border-radius: 16px; color: var(--primary-text);
-  background: color-mix(in srgb, var(--primary-soft) 55%, var(--card));
+  display: grid; place-items: center; width: 52px; height: 52px; border-radius: 16px; color: var(--muted);
+  background: color-mix(in srgb, var(--border) 55%, var(--card));
 }
 .subject-head-icon .icon { width: 28px; height: 28px; margin: 0; vertical-align: 0; }
 .subject-head .screen-title { margin: 0; font-size: 26px; }
@@ -665,10 +672,10 @@ button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
 /* Three numbers in one soft strip (no box borders). */
 .stat-strip {
   display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 0 0 22px; padding: 14px 0; border-radius: 18px;
-  background: color-mix(in srgb, var(--primary-soft) 32%, var(--bg));
+  background: color-mix(in srgb, var(--border) 45%, var(--bg));
 }
 .stat-cell { padding: 0 8px; text-align: center; }
-.stat-cell + .stat-cell { border-left: 1px solid color-mix(in srgb, var(--primary-edge) 60%, transparent); }
+.stat-cell + .stat-cell { border-left: 1px solid var(--border); }
 .stat-cell-value { margin: 0; font-size: 24px; font-weight: 700; line-height: 1.15; }
 .stat-cell-label { margin: 2px 0 0; font-size: 13px; color: var(--muted); }
 
@@ -774,7 +781,7 @@ button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
 .next-btn { margin-top: 20px; }
 
 /* ---------- Results ---------- */
-.big-score { margin: 0; font-size: 36px; font-weight: 700; line-height: 1.1; color: var(--primary-text); text-align: center; }
+.big-score { margin: 0; font-size: 36px; font-weight: 700; line-height: 1.1; color: var(--heading); text-align: center; }
 #results-mcq .count-label, .rating-summary .count-label { text-align: center; }
 .rating-summary { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
 .rating-summary .big-score.got-text { color: var(--got); }
@@ -783,7 +790,7 @@ button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
 /* Previous / Next on the question screen: side by side, the shared button look. */
 .question-nav { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 20px 0 16px; }
 .question-nav .btn { margin: 0; }  /* the row has the spacing; both buttons the same size */
-.btn-secondary { background: var(--card); color: var(--primary-text); border-color: var(--primary); margin-bottom: 16px; }
+.btn-secondary { background: var(--card); color: var(--primary-text); border-color: var(--primary-edge); margin-bottom: 16px; }
 
 /* ---------- Error message ---------- */
 .error {
@@ -919,11 +926,11 @@ a.btn { text-align: center; text-decoration: none; }
 .rule-text { font-size: 16px; line-height: 1.6; }
 .rule-section { margin-top: 12px; }
 .rule-section > .prompt { overflow-wrap: anywhere; }
-.rule-section > .prompt > strong:first-child { color: var(--primary-text); }   /* "Section 3. Where to file." */
+.rule-section > .prompt > strong:first-child { color: var(--text); }   /* "Section 3. Where to file." */
 /* PART / RULE headings between the cards */
 .rule-heading {
   margin: 26px 0 2px; text-align: center; white-space: pre-line;
-  font-size: 15px; font-weight: 700; letter-spacing: 0.04em; color: var(--primary-text);
+  font-size: 15px; font-weight: 700; letter-spacing: 0.04em; color: var(--text);
 }
 #screen-rule .status-badge { margin-bottom: 4px; }
 #rule-source-card { margin-top: 16px; }
@@ -1226,7 +1233,7 @@ body.sheet-open { overflow: hidden; }
   .menu-btn {
     position: absolute; top: calc(16px + env(safe-area-inset-top)); right: 16px; z-index: 5;
     width: 44px; height: 44px; padding: 0; border: 1px solid var(--border); border-radius: 12px;
-    background: var(--card); color: var(--primary-text); font: inherit; font-size: 20px; line-height: 1;
+    background: var(--card); color: var(--text); font: inherit; font-size: 20px; line-height: 1;
     cursor: pointer; -webkit-tap-highlight-color: transparent;
   }
   /* ⚙️ Settings: on the home screen only, just left of ☰. */
@@ -1328,7 +1335,7 @@ body.dialog-open { overflow: hidden; }
 .schedule-period { flex: 1; margin: 0; font-size: 17px; text-align: center; }
 .schedule-arrow {
   width: 44px; height: 44px; flex: 0 0 44px; border: 1px solid var(--primary-edge); border-radius: 10px;
-  background: var(--card); color: var(--primary-text); font: inherit; font-size: 22px; line-height: 1; cursor: pointer;
+  background: var(--card); color: var(--text); font: inherit; font-size: 22px; line-height: 1; cursor: pointer;
 }
 .schedule-today-btn { width: auto; min-height: 44px; margin: 0 0 0 6px; padding: 8px 14px; }
 
@@ -1348,7 +1355,7 @@ body.dialog-open { overflow: hidden; }
 /* A task: a small card with a checkbox, a short title, and an optional time. */
 .task-card {
   display: flex; align-items: center; gap: 10px; min-height: 48px; padding: 8px 12px;
-  border: 1px solid var(--primary-edge); border-radius: 10px; background: var(--card);
+  border: 1px solid var(--border); border-radius: 10px; background: var(--card);
 }
 .task-card input[type="checkbox"] { width: 22px; height: 22px; flex: 0 0 22px; margin: 0; accent-color: var(--primary); }
 .task-title { flex: 1; min-width: 0; overflow-wrap: anywhere; }
@@ -1401,7 +1408,7 @@ body.dialog-open { overflow: hidden; }
 .schedule-month { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)) 72px; gap: 4px; margin-bottom: 14px; }
 .month-weekday { padding: 2px 0; font-size: 12px; font-weight: 700; color: var(--muted); text-align: center; text-transform: uppercase; }
 .month-day {
-  min-height: 104px; padding: 4px; border: 1px solid var(--primary-edge); border-radius: 8px;
+  min-height: 104px; padding: 4px; border: 1px solid var(--border); border-radius: 8px;
   background: var(--card); display: flex; flex-direction: column; gap: 3px; min-width: 0;
 }
 .month-day.other-month { opacity: 0.55; }
@@ -1422,7 +1429,7 @@ body.dialog-open { overflow: hidden; }
 .month-more { padding: 0 2px; border: 0; background: none; font: inherit; font-size: 12px; font-weight: 600; color: var(--primary-text); text-align: left; cursor: pointer; }
 .month-week-total {
   display: flex; align-items: center; justify-content: center; padding: 4px; border-radius: 8px;
-  font-size: 12px; line-height: 1.3; color: var(--muted); text-align: center; background: color-mix(in srgb, var(--primary-soft) 30%, transparent);
+  font-size: 12px; line-height: 1.3; color: var(--muted); text-align: center; background: color-mix(in srgb, var(--border) 40%, transparent);
 }
 
 /* A small task chip in a calendar day. */

@@ -2435,6 +2435,7 @@ function showQuestion() {
     showEssay(question);
   }
   applyFbView();
+  showNextEmphasis();
 
   showScreen("screen-question");
 }
@@ -2531,6 +2532,7 @@ function submitChoice(question, picked) {
 
 // Show a picked answer as right or wrong (also used to put her answer back after a reload).
 function showPicked(question, picked) {
+  showNextEmphasis();
   const isRight = picked === question.correct;
   // Lock the choices and color them: correct one green, her wrong pick red.
   document.getElementById("submit-answer").hidden = true;
@@ -2730,6 +2732,7 @@ function applyFbView() {
   document.querySelectorAll(".fb-view-btn").forEach(function (button) {
     button.setAttribute("aria-pressed", button.dataset.view === (reading ? "read" : "quiz") ? "true" : "false");
   });
+  showNextEmphasis();
 }
 
 document.querySelectorAll(".fb-view-btn").forEach(function (button) {
@@ -3266,6 +3269,7 @@ document.querySelectorAll(".btn-fbrate").forEach(function (button) {
 
 // Show a chosen rating (also used to put her rating back after a reload).
 function showFbRated(rating) {
+  showNextEmphasis();
   document.querySelectorAll(".btn-fbrate").forEach(function (b) {
     b.disabled = true;
     b.classList.toggle("selected", b.dataset.rating === rating);
@@ -3345,6 +3349,7 @@ document.querySelectorAll(".btn-rate").forEach(function (button) {
 
 // Show a chosen rating (also used to put her rating back after a reload).
 function showRated(rating) {
+  showNextEmphasis();
   document.querySelectorAll(".btn-rate").forEach(function (b) {
     b.disabled = true;
     b.classList.toggle("selected", b.dataset.rating === rating);
@@ -3466,6 +3471,20 @@ document.getElementById("case-reset").addEventListener("click", function () {
 document.getElementById("rule-reset").addEventListener("click", function () {
   if (currentRule) { resetScope(currentRule.title || "this rule", ruleResetQuestions(currentRule)); }
 });
+
+// ---------- Which button is the main action: Next is quiet until the question is answered ----------
+// Before she answers, the main action is Submit / Show answer (filled); Next stays outlined. Once
+// she has answered, picked a rating, or is reading a fill-in-the-blank section, Next is the filled one.
+function showNextEmphasis() {
+  const question = session && session.questions && session.questions[session.index];
+  if (!question) { return; }
+  const current = session.current || {};
+  const reading = question.type === "fillblank" && session.fbView === "read";
+  const done = !!(current.picked || current.rating || current.fbRating) || reading;
+  const next = document.getElementById("next-btn");
+  next.classList.toggle("btn-primary", done);
+  next.classList.toggle("btn-secondary", !done);
+}
 
 // ---------- Previous / Next ----------
 // She can move around the round freely, answered or not. Each question she visits keeps
