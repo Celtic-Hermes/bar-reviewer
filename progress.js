@@ -15,7 +15,8 @@
 //              inARow: right answers in a row that count toward mastery (2 or more = mastered),
 //                      at most one per day; countedOn: the day it last went up.
 //   settings:  her choices (Settings screen): { "dailyGoal": 20 (10, 20, 30 or 50),
-//              "examDate": "2027-09-12" (optional, YYYY-MM-DD) }. Anything missing or odd
+//              "examDate": "2027-09-12" (optional, YYYY-MM-DD),
+//              "showQuote": true / false (the home screen's quote of the day; missing = on) }. Anything missing or odd
 //              is left out, and the default is used (see cleanSettings).
 //   schedule:  her Study Schedule, by day ("YYYY-MM-DD"); a day is stored only if it has
 //              something, with short keys to keep it small:
@@ -114,6 +115,7 @@ function cleanSettings(value) {
   if (!isPlainObject(value)) { return clean; }
   if (DAILY_GOALS.indexOf(value.dailyGoal) !== -1) { clean.dailyGoal = value.dailyGoal; }
   if (isCalendarDate(value.examDate)) { clean.examDate = value.examDate; }
+  if (typeof value.showQuote === "boolean") { clean.showQuote = value.showQuote; }
   return clean;
 }
 
@@ -549,6 +551,16 @@ function dailyGoal() {
 function setDailyGoal(goal) {
   if (DAILY_GOALS.indexOf(goal) === -1) { return; }
   settingsObject().dailyGoal = goal;
+  saveProgress();
+}
+
+// "Show quote of the day" (Settings → Display): on unless she has switched it off.
+function showQuote() {
+  return settingsObject().showQuote !== false;
+}
+
+function setShowQuote(on) {
+  settingsObject().showQuote = !!on;
   saveProgress();
 }
 

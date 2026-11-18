@@ -1146,7 +1146,7 @@ function quoteForDate(list, now) {
 // to show, so the caller can show the old line instead.
 function showQuoteOfTheDay() {
   const box = document.getElementById("home-quote");
-  const quote = quoteForDate(quotes, new Date());
+  const quote = showQuote() ? quoteForDate(quotes, new Date()) : null;  // off in Settings: no quote, the old line shows
   box.hidden = !quote;
   if (!quote) { return false; }
   document.getElementById("quote-text").textContent = "\u201C" + quote.text + "\u201D";
@@ -1948,6 +1948,7 @@ function fillSettings() {
   const date = examDate();
   document.getElementById("setting-exam-date").value = date;
   document.getElementById("setting-exam-clear").hidden = !date;
+  document.getElementById("setting-show-quote").checked = showQuote();
 }
 
 document.getElementById("settings-back").addEventListener("click", function () {
@@ -1960,6 +1961,11 @@ document.getElementById("settings-btn").addEventListener("click", openSettings);
 
 document.getElementById("setting-daily-goal").addEventListener("change", function (event) {
   setDailyGoal(Number(event.target.value));
+  showTodayCard();
+});
+
+document.getElementById("setting-show-quote").addEventListener("change", function (event) {
+  setShowQuote(event.target.checked);
   showTodayCard();
 });
 
