@@ -91,6 +91,21 @@
       "ruling": "The petitions were partly granted. (1) Registering books of account and issuing receipts for pro bono services are valid. (2) The affidavit of rates, billing, and fee factors is void because it goes beyond the Tax Code. It serves no legitimate purpose, although it does not encroach on the Court's rule-making power or violate ethical norms. (3) The mandatory registration of appointment books is void because it is an unconstitutional intrusion into the right to privacy. The Court explained that privacy covers 'zones of privacy' and three strands: locational, informational, and decisional privacy. Informational privacy is the right to control the processing (acquisition, disclosure, and use) of personal information. To decide whether a government intrusion is impermissible, the court asks whether the person showed a reasonable expectation of privacy and, if so, whether it was violated by unreasonable government intrusion. Clients and patients reasonably expect privacy when they set appointments with professionals. Examples: a battered wife who does not want it known she is seeing a lawyer, or a patient seeing a specialist. Names and dates alone 'paint no picture,' but as Disini v. Secretary of Justice teaches, gathered together they can reveal a pattern of behavior, and that pattern is protected. The mere chance that the State may look into this information is already an unreasonable intrusion. (4) The requirement also violates professional confidentiality. Citing Regala v. Sandiganbayan, a client's identity may be privileged in proper cases, so the government was wrong to say names are never privileged. The Data Privacy Act generally prohibits processing sensitive personal information and privileged information, which includes privileged communications under the Rules of Court, except in the cases listed in Section 13. Physician-patient communications are also privileged, and accountants' working papers are confidential under the Philippine Accountancy Act. The DOF and BIR were permanently stopped from implementing the void parts.",
       "keyDoctrine": "Requiring self-employed professionals to register appointment books containing their clients' or patients' names and meeting times is an unconstitutional intrusion into the right to privacy. Clients and patients have a reasonable expectation of privacy in their consultations. Even if names and dates alone reveal little, put together they can show a protected pattern of behavior, and the mere chance that the State may look at them is an unreasonable intrusion. Under the Data Privacy Act, processing privileged information, including privileged communications under the Rules of Court, is generally prohibited except in the cases listed in Section 13.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2023/apr2023/gr_211772_2023.html"
+    },
+    {
+      "id": "case-0008",
+      "status": "draft",
+      "name": "Garcia v. Executive Secretary",
+      "grNumber": "G.R. No. 100883",
+      "year": 1991,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "facts": "Congressman Enrique T. Garcia (Second District of Bataan) asked the Supreme Court to strike down Republic Act No. 7042, the Foreign Investments Act of 1991. He said it defeats the constitutional policy of building a self-reliant and independent national economy effectively controlled by Filipinos, and of protecting Filipino enterprises against unfair foreign competition. He pointed to these parts of the law: (1) Section 5 lets a foreign investor do business in the Philippines or invest in a domestic enterprise up to 100% of its capital without need of prior approval; the investor only has to register with the Securities and Exchange Commission (SEC) or, for a single proprietorship, the Bureau of Trade Regulation and Consumer Protection (BTRCP). (2) Section 7 allows non-Philippine nationals to own up to 100% of domestic market enterprises unless foreign ownership is prohibited or limited by existing law or the Foreign Investment Negative List in Section 8. (3) The Negative List (Lists A, B and C) is not a true regulation, he argued, because List A only repeats what the Constitution and other laws already reserve to Filipinos. (4) Section 9 puts on a Filipino the burden of showing that an area should be included in List C. (5) The law repeals Articles 44 to 56 of the Omnibus Investments Code, and its transitory provisions allow practically unlimited foreign entry for three years. The Solicitor General answered that \"without need of prior approval\" applies only to equity restrictions. He said the law removed the case-to-case authorization of the Board of Investments, and that registration with the SEC or BTRCP is itself regulation of foreign investments. Senator Vicente T. Paterno intervened to defend the Act, and the Philippine Association of Battery Manufacturers intervened to support the petitioner.",
+      "issue": "Does RA 7042 violate the constitutional policy of a self-reliant and independent national economy effectively controlled by Filipinos, and the protection of Filipino enterprises against unfair foreign competition? And was the petition properly before the Court (an actual case, a proper party, raised at the right time)?",
+      "ruling": "The petition was dismissed. (1) The Court agreed that there was no actual case or controversy yet, mainly because the Act's implementing rules were still missing. A controversy must be \"ripe\" for determination, not conjectural or anticipatory. (2) Even so, Congressman Garcia, as a citizen, taxpayer and member of the House of Representatives, was a proper party, because he is someone who has sustained or is in danger of sustaining an injury from the act complained of. (3) The constitutional question was not raised too late; it was raised too early (prematurely). (4) On the merits, the challenge failed because the petitioner did not show an indubitable ground for it, or even a necessity to resolve it. Courts avoid ruling on constitutional questions and presume that acts of the political departments are valid unless there is a clear and unmistakable showing to the contrary (\"To doubt is to sustain\"). This rests on the separation of powers, and on the idea that a law, as the joint act of Congress and the President, was carefully studied and found consistent with the Constitution before it was enacted. (5) In light of the explanations of the Solicitor General and the intervenor, the petitioner had not proved unconstitutionality, and the Court was satisfied that the Act does not violate the constitutional provisions he mentioned. (6) What the petitioner raised was a debate on the wisdom or efficacy of the Act, which the Court is not competent to rule on. Debatable questions are for the legislature, and the Court may not annul an act of the political departments just because it is unwise or impractical. The Court found no grave abuse of discretion. The petitioner's objections were \"expressed in the wrong forum\"; Congress, which has the power to rewrite the law, is the place to hear them.",
+      "keyDoctrine": "A court will not strike down a law as unconstitutional unless there is an actual, **ripe** controversy and a clear and unmistakable showing that the law violates the Constitution: **\"To doubt is to sustain.\"** Whether a law is wise, just or expedient is for the legislature to decide, not the courts.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri1991/dec1991/gr_100883_1991.html"
     }
   ],
   "questions": [
@@ -1479,6 +1494,239 @@
         "url": "https://lawphil.net/judjuris/juri2023/apr2023/gr_211772_2023.html",
         "part": "Decision, Part II, affidavits of fees and receipts for pro bono services",
         "excerpt": "In any case, respondents may validly require them to issue receipts for services rendered pro bono to monitor their tax compliance. … Requiring the issuance of receipts is a valid measure that the tax collector may employ to ascertain the correct amount of taxes payable by self-employed professionals."
+      }
+    },
+    {
+      "id": "q-0256",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "prompt": "A member of the House of Representatives asks the Supreme Court to declare a new law on foreign investments unconstitutional because it will supposedly hurt Filipino enterprises. The law's implementing rules have not yet been issued. Based on Garcia v. Executive Secretary, answer these: Is there an actual case or controversy? Is the congressman a proper party? Was the constitutional question raised on time?",
+      "suggestedAnswer": {
+        "answer": "There is no actual case or controversy yet, because the implementing rules are absent. The congressman is nevertheless a proper party, and the constitutional question was not raised tardily; it was raised prematurely.",
+        "legalBasis": "The decision lists the requisites of a judicial inquiry into a constitutional question: (1) there must be an actual case or controversy; (2) the constitutional question must be raised by a proper party; (3) the constitutional question must be raised at the earliest opportunity; and (4) the resolution of the constitutional question must be necessary to the decision of the case. A controversy must be one that is appropriate or \"ripe\" for determination, not conjectural or anticipatory. A proper party is one who has sustained or is in danger of sustaining an injury as a result of the act complained of.",
+        "application": "In Garcia, the Court agreed that there was no actual case or controversy at that point, \"particularly because of the absence of the implementing rules that are supposed to carry the Act into effect.\" Still, the petitioner, as a citizen and taxpayer, and particularly as a member of the House of Representatives, came under the definition of a proper party. The question was not raised tardily but, as the Court said, \"prematurely.\"",
+        "conclusion": "No ripe controversy yet; proper party; not late but premature."
+      },
+      "keyPoints": [
+        "No actual case or controversy: implementing rules still absent",
+        "A controversy must be \"ripe\", not conjectural or anticipatory",
+        "A proper party is one who has sustained or is in danger of sustaining an injury",
+        "The petitioner qualified as a citizen, taxpayer and member of the House",
+        "The question was raised prematurely, not tardily"
+      ],
+      "caseIds": [
+        "case-0008"
+      ],
+      "source": {
+        "caseTitle": "Garcia v. Executive Secretary",
+        "grNumber": "G.R. No. 100883",
+        "url": "https://lawphil.net/judjuris/juri1991/dec1991/gr_100883_1991.html",
+        "part": "Decision, discussion of the procedural objections (actual case, proper party, timing)",
+        "excerpt": "He also suggests that the constitutional challenge should be rejected outright for noncompliance with the requisites of a judicial inquiry into a constitutional question, to wit: (1) there must be an actual case or controversy; (2) the constitutional question must be raised by a proper party; (3) the constitutional question must be raised at the earliest opportunity; and (4) the resolution of the constitutional question must be necessary to the decision of the case. … Coming first to the procedural objections to the petition, we agree that there is at this point no actual case or controversy, particularly because of the absence of the implementing rules that are supposed to carry the Act into effect. A controversy must be one that is appropriate or \"ripe\" for determination, not conjectural or anticipatory. We hold, however, that the petitioner, as a citizen and taxpayer, and particularly as a member of the House of Representatives, comes under the definition that a proper party is one who has sustained or is in danger of sustaining an injury as a result of the act complained of. We will also hold that the constitutional question has not been raised tardily but in fact, as just remarked, prematurely."
+      }
+    },
+    {
+      "id": "q-0257",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "prompt": "A law is attacked on broad constitutional grounds: due process, the provisions on nationalism, and economic dependency. The challenger offers strong arguments but no clear and unmistakable showing that the law violates the Constitution. How should the Court rule, and why? Answer based on Garcia v. Executive Secretary.",
+      "suggestedAnswer": {
+        "answer": "The Court should reject the challenge and let the law stand, because the challenger failed to show an indubitable ground for declaring it unconstitutional.",
+        "legalBasis": "The policy of the courts is to avoid ruling on constitutional questions and to presume that the acts of the political departments are valid in the absence of a clear and unmistakable showing to the contrary. \"To doubt is to sustain.\" The presumption is based on the doctrine of separation of powers, which enjoins upon each department a becoming respect for the acts of the other departments. The theory is that, as the joint act of Congress and the President, a law has been carefully studied and determined to be in accordance with the fundamental law before it was finally enacted.",
+        "application": "In Garcia, the law was challenged on broad constitutional principles: due process was invoked, the provisions on nationalism were cited, and economic dependency was deplored. In light of the explanations of the Solicitor General and the intervenor, the Court held that the cause of unconstitutionality had not been proved. It was satisfied that the Act does not violate any of the constitutional provisions the petitioner mentioned.",
+        "conclusion": "The challenge fails; acts of the political departments are presumed valid, and the petitioner did not overcome the presumption."
+      },
+      "keyPoints": [
+        "Courts avoid ruling on constitutional questions",
+        "Acts of the political departments are presumed valid absent a clear and unmistakable showing",
+        "\"To doubt is to sustain\"",
+        "Basis: separation of powers (a becoming respect for the other departments)",
+        "A law is the joint act of Congress and the President, studied before enactment",
+        "The petitioner's broad claims (due process, nationalism, dependency) were not proved"
+      ],
+      "caseIds": [
+        "case-0008"
+      ],
+      "source": {
+        "caseTitle": "Garcia v. Executive Secretary",
+        "grNumber": "G.R. No. 100883",
+        "url": "https://lawphil.net/judjuris/juri1991/dec1991/gr_100883_1991.html",
+        "part": "Decision, discussion of the merits (presumption of validity)",
+        "excerpt": "On the merits, we find that the constitutional challenge must be rejected for failure to show that there is an indubitable ground for it, not to say even a necessity to resolve it. The policy of the courts is to avoid ruling on constitutional questions and to presume that the acts of the political departments are valid in the absence of a clear and unmistakable showing to the contrary. To doubt is to sustain. This presumption is based on the doctrine of separation of powers which enjoins upon each department a becoming respect for the acts of the other departments. The theory is that as the joint act of Congress and the President of the Philippines, a law has been carefully studied and determined to be in accordance with the fundamental law before it was finally enacted. … In the case at bar, the law is challenged on broad constitutional principles and the proposition that the Filipino investor is unduly discriminated against in his own land. Due process is invoked. The provisions on nationalism are cited. Economic dependency is deplored. In the light, however, of the explanation given by the Solicitor General and of the Intervenor in their respective Comments, we hold that the cause of unconstitutionality has not been proved by the petitioner. On the contrary, we are satisfied that the Act does not violate any of the constitutional provisions the petitioner has mentioned."
+      }
+    },
+    {
+      "id": "q-0258",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "prompt": "A legislator argues that a foreign investments law is unwise because it leaves Filipino enterprises at a disadvantage in their own country, and asks the Court to strike it down for that reason. May the Court do so? Where should his objections be heard? Answer based on Garcia v. Executive Secretary.",
+      "suggestedAnswer": {
+        "answer": "No. The Court cannot annul a law simply because it may be unwise or impractical. The objections are better addressed to Congress.",
+        "legalBasis": "Debatable questions are for the legislature to decide; \"the judiciary does not pass upon questions of wisdom, justice or expediency of legislation.\" In the exercise of judicial power, courts are allowed only \"to settle actual controversies involving rights which are legally demandable and enforceable.\" Under the expanded concept of the political question, the Court may also determine whether there has been a grave abuse of discretion amounting to lack or excess of jurisdiction on the part of any branch or instrumentality of the Government.",
+        "application": "In Garcia, the Court saw \"a debate on the wisdom or the efficacy of the Act, but this is a matter on which we are not competent to rule.\" It found no grave abuse of discretion. It praised the petitioner's civic spirit and zeal but said his views were \"expressed in the wrong forum,\" because \"the Court is not a political arena.\"",
+        "conclusion": "The Court may not strike the law down for being unwise; the petitioner's objections are better heard by Congress, which has the power to rewrite the law."
+      },
+      "keyPoints": [
+        "A debate on the wisdom or efficacy of a law is not for the Court to rule on",
+        "Debatable questions are for the legislature to decide",
+        "The judiciary does not pass upon the wisdom, justice or expediency of legislation",
+        "Courts settle only actual controversies involving legally demandable and enforceable rights",
+        "The Court may check only grave abuse of discretion, and none existed here",
+        "The remedy is in Congress, which can rewrite the law"
+      ],
+      "caseIds": [
+        "case-0008"
+      ],
+      "source": {
+        "caseTitle": "Garcia v. Executive Secretary",
+        "grNumber": "G.R. No. 100883",
+        "url": "https://lawphil.net/judjuris/juri1991/dec1991/gr_100883_1991.html",
+        "part": "Decision, discussion of the merits (wisdom of the law) and closing paragraph",
+        "excerpt": "What we see here is a debate on the wisdom or the efficacy of the Act, but this is a matter on which we are not competent to rule. As Cooley observed: \"Debatable questions are for the legislature to decide. The courts do not sit to resolve the merits of conflicting issues.\" In Angara v. Electoral Commission, Justice Laurel made it clear that \"the judiciary does not pass upon questions of wisdom, justice or expediency of legislation.\" And fittingly so for in the exercise of judicial power, we are allowed only \"to settle actual controversies involving rights which are legally demandable and enforceable,\" and may not annul an act of the political departments simply because we feel it is unwise or impractical. It is true that, under the expanded concept of the political question, we may now also \"determine whether or not there has been a grave abuse of discretion amounting to lack or excess of jurisdiction on the part of any branch or instrumentality of the Government.\" We find, however, that irregularity does not exist in the case at bar. … But his views are expressed in the wrong forum. The Court is not a political arena. His objections to the law are better heard by his colleagues in the Congress of the Philippines, who have the power to rewrite it, if they so please, in the fashion he suggests."
+      }
+    },
+    {
+      "id": "q-0259",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "prompt": "In Garcia v. Executive Secretary, why did the Court rule that Congressman Garcia was a proper party to challenge RA 7042?",
+      "choices": {
+        "A": "Because he authored the law and so had a right to defend it",
+        "B": "Because as a citizen, taxpayer and member of the House of Representatives, he comes under the definition of one who has sustained or is in danger of sustaining an injury from the act complained of",
+        "C": "Because any Filipino may challenge any law, whether or not he is in danger of any injury",
+        "D": "Because the Solicitor General agreed that he had standing"
+      },
+      "correct": "B",
+      "explanation": "B is correct. The Court held that the petitioner, \"as a citizen and taxpayer, and particularly as a member of the House of Representatives,\" comes under the definition that a proper party is one who has sustained or is in danger of sustaining an injury as a result of the act complained of. A is wrong because nothing in the decision says he authored the law. C is wrong because the Court used an injury-based definition of a proper party, not an \"anyone may sue\" rule. D is wrong because the Court reached its conclusion by applying that definition, not because the Solicitor General conceded it.",
+      "caseIds": [
+        "case-0008"
+      ],
+      "source": {
+        "caseTitle": "Garcia v. Executive Secretary",
+        "grNumber": "G.R. No. 100883",
+        "url": "https://lawphil.net/judjuris/juri1991/dec1991/gr_100883_1991.html",
+        "part": "Decision, discussion of the procedural objections (proper party)",
+        "excerpt": "We hold, however, that the petitioner, as a citizen and taxpayer, and particularly as a member of the House of Representatives, comes under the definition that a proper party is one who has sustained or is in danger of sustaining an injury as a result of the act complained of."
+      }
+    },
+    {
+      "id": "q-0260",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "prompt": "The Court in Garcia v. Executive Secretary found that there was no actual case or controversy at that point. What reason did it give, and how did it describe the timing of the constitutional question?",
+      "choices": {
+        "A": "The implementing rules of the Act were absent; the question was raised prematurely",
+        "B": "The Act had already been repealed; the question was raised tardily",
+        "C": "The petitioner had no interest in the Act; the question was raised at the earliest opportunity",
+        "D": "The Act had already been fully implemented; the question had become moot"
+      },
+      "correct": "A",
+      "explanation": "A is correct. The Court agreed there was \"at this point no actual case or controversy, particularly because of the absence of the implementing rules,\" and held that the question \"has not been raised tardily but in fact, as just remarked, prematurely.\" B is wrong because nothing says the Act was repealed, and the Court said the question was not tardy. C is wrong because the Court found the petitioner to be a proper party and said the question was not raised at the earliest opportunity but prematurely. D is wrong because the Act's implementing rules were still absent, so it was not yet fully implemented.",
+      "caseIds": [
+        "case-0008"
+      ],
+      "source": {
+        "caseTitle": "Garcia v. Executive Secretary",
+        "grNumber": "G.R. No. 100883",
+        "url": "https://lawphil.net/judjuris/juri1991/dec1991/gr_100883_1991.html",
+        "part": "Decision, discussion of the procedural objections (no actual case; timing)",
+        "excerpt": "Coming first to the procedural objections to the petition, we agree that there is at this point no actual case or controversy, particularly because of the absence of the implementing rules that are supposed to carry the Act into effect. A controversy must be one that is appropriate or \"ripe\" for determination, not conjectural or anticipatory. … We will also hold that the constitutional question has not been raised tardily but in fact, as just remarked, prematurely."
+      }
+    },
+    {
+      "id": "q-0261",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "prompt": "According to Garcia v. Executive Secretary, on what doctrine is the presumption that the acts of the political departments are valid based?",
+      "choices": {
+        "A": "The doctrine of separation of powers",
+        "B": "The doctrine of res judicata",
+        "C": "The doctrine of stare decisis",
+        "D": "The doctrine of exhaustion of administrative remedies"
+      },
+      "correct": "A",
+      "explanation": "A is correct. The Court said the presumption \"is based on the doctrine of separation of powers which enjoins upon each department a becoming respect for the acts of the other departments.\" It added that, as the joint act of Congress and the President, a law has been carefully studied and determined to be in accordance with the fundamental law before it was enacted. B, C and D are doctrines the Court did not rely on for this presumption.",
+      "caseIds": [
+        "case-0008"
+      ],
+      "source": {
+        "caseTitle": "Garcia v. Executive Secretary",
+        "grNumber": "G.R. No. 100883",
+        "url": "https://lawphil.net/judjuris/juri1991/dec1991/gr_100883_1991.html",
+        "part": "Decision, discussion of the merits (presumption of validity)",
+        "excerpt": "The policy of the courts is to avoid ruling on constitutional questions and to presume that the acts of the political departments are valid in the absence of a clear and unmistakable showing to the contrary. To doubt is to sustain. This presumption is based on the doctrine of separation of powers which enjoins upon each department a becoming respect for the acts of the other departments. The theory is that as the joint act of Congress and the President of the Philippines, a law has been carefully studied and determined to be in accordance with the fundamental law before it was finally enacted."
+      }
+    },
+    {
+      "id": "q-0262",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "prompt": "In Garcia v. Executive Secretary, according to the Solicitor General's explanation (in light of which the Court held that unconstitutionality had not been proved), what layer of bureaucracy did RA 7042 remove?",
+      "choices": {
+        "A": "Registration of foreign investors with the SEC or the BTRCP",
+        "B": "The case-to-case authorization by the Board of Investments (BOI)",
+        "C": "The requirement that foreign corporations comply with SEC requirements before being issued a license to do business",
+        "D": "The preparation of a list of areas closed to foreign investors"
+      },
+      "correct": "B",
+      "explanation": "B is correct. The Solicitor General explained that \"a certain layer of bureaucracy has been removed, specifically, the case-to-case authorization by BOI.\" A is wrong because registration with the SEC or BTRCP became the initial step for foreign investors, and it constitutes regulation. C is wrong because the Solicitor General said that foreign investors must still comply with certain requirements before they can be issued a license to do business in the Philippines. D is wrong because the Act introduced the Negative List, which determines and outlines the areas of investment not open to foreign investors.",
+      "caseIds": [
+        "case-0008"
+      ],
+      "source": {
+        "caseTitle": "Garcia v. Executive Secretary",
+        "grNumber": "G.R. No. 100883",
+        "url": "https://lawphil.net/judjuris/juri1991/dec1991/gr_100883_1991.html",
+        "part": "Summary of the Solicitor General's comment, and the Court's discussion of the merits",
+        "excerpt": "With the effectivity of RA 7042, a certain layer of bureaucracy has been removed, specifically, the case-to-case authorization by BOI. Furthermore, with the introduction of the Negative List under Sections 8 & 15, the areas of investments not open to foreign investors are already determined and outlined; hence, registration with the SEC or BTRCP, as the case may be, is now the initial step to be taken by foreign investors. … In the light, however, of the explanation given by the Solicitor General and of the Intervenor in their respective Comments, we hold that the cause of unconstitutionality has not been proved by the petitioner."
+      }
+    },
+    {
+      "id": "q-0263",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "prompt": "In Garcia v. Executive Secretary, what did the Court say it may determine under the expanded concept of the political question, and what did it find in that case?",
+      "choices": {
+        "A": "Whether a law is wise or practical; it found the Act unwise but valid",
+        "B": "Whether there has been a grave abuse of discretion amounting to lack or excess of jurisdiction by any branch or instrumentality of the Government; it found that no such irregularity existed",
+        "C": "Whether a law is efficient; it found the Act inefficient and annulled it",
+        "D": "Whether the President should have vetoed the law; it found that he should have"
+      },
+      "correct": "B",
+      "explanation": "B is correct. The Court said that under the expanded concept of the political question it may \"determine whether or not there has been a grave abuse of discretion amounting to lack or excess of jurisdiction on the part of any branch or instrumentality of the Government,\" and added: \"We find, however, that irregularity does not exist in the case at bar.\" A and C are wrong because the Court said it is not competent to rule on the wisdom or efficacy of the Act and may not annul an act of the political departments simply because it is unwise or impractical. D is wrong because the Court said nothing of the kind about a veto.",
+      "caseIds": [
+        "case-0008"
+      ],
+      "source": {
+        "caseTitle": "Garcia v. Executive Secretary",
+        "grNumber": "G.R. No. 100883",
+        "url": "https://lawphil.net/judjuris/juri1991/dec1991/gr_100883_1991.html",
+        "part": "Decision, discussion of the merits (wisdom of the law; grave abuse of discretion)",
+        "excerpt": "It is true that, under the expanded concept of the political question, we may now also \"determine whether or not there has been a grave abuse of discretion amounting to lack or excess of jurisdiction on the part of any branch or instrumentality of the Government.\" We find, however, that irregularity does not exist in the case at bar."
       }
     }
   ]
