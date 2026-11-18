@@ -1175,6 +1175,7 @@ function showSubjectCounts() {
     if (!meta || !contentLoaded) { return; }
     const questions = questionsFor(card.dataset.subject).length;
     const topics = topicsFor(card.dataset.subject).length;
+    card.classList.toggle("is-empty", questions === 0);  // lighter card, so the ones with questions stand out
     meta.textContent = questions === 0 ? "No questions yet"
       : questions + (questions === 1 ? " question" : " questions") + " · " + topics + (topics === 1 ? " topic" : " topics");
   });

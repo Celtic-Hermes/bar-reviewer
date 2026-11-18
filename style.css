@@ -24,6 +24,18 @@
   --primary-edge: #9E9EC5;
   --primary-deep: #272762;
   --heading: var(--primary-deep);  /* main headings: screen titles and the home greeting */
+  /* The periwinkle LIST CARDS (everything with class .subject-card: the home subjects, topic, question, case,
+     rule and search-result cards). Reuse these for any new list. A tint is --primary-soft mixed into the page color. */
+  --card-tint: color-mix(in srgb, var(--primary-soft) 35%, var(--bg));         /* the normal card */
+  --card-tint-quiet: color-mix(in srgb, var(--primary-soft) 18%, var(--bg));   /* a card with nothing in it yet */
+  --card-tint-hover: color-mix(in srgb, var(--primary-soft) 45%, var(--bg));   /* pointer over it */
+  --card-tint-pressed: color-mix(in srgb, var(--primary-soft) 55%, var(--bg)); /* while pressed */
+  --card-chip: #C4C4F5;              /* the icon chip: the full palette soft, in light AND dark mode */
+  --card-chip-icon: var(--primary-deep);
+  --card-title: var(--primary-deep);
+  --card-count: var(--primary);      /* "48 questions · 1 topic", counts, the chevron */
+  --card-title-quiet: color-mix(in srgb, var(--primary-deep) 75%, var(--muted));
+  --card-count-quiet: color-mix(in srgb, var(--primary) 80%, var(--muted));
   /* Study Schedule task types: soft backgrounds, always with dark text on them. */
   --type-q: #e3e3f8;  /* Questions */
   --type-c: #dbeafd;  /* Case reading */
@@ -84,6 +96,14 @@
     --primary-soft: #36375F;
     --primary-edge: #5E5F8E;
     --heading: var(--text);  /* in dark mode the headings are the normal light text */
+    /* List cards in dark mode: a deep indigo tint (from --primary-deep); the chip stays light with a deep icon. */
+    --card-tint: color-mix(in srgb, var(--primary-deep) 60%, var(--bg));
+    --card-tint-quiet: color-mix(in srgb, var(--primary-deep) 32%, var(--bg));
+    --card-tint-hover: color-mix(in srgb, var(--primary-deep) 74%, var(--bg));
+    --card-tint-pressed: color-mix(in srgb, var(--primary-deep) 88%, var(--bg));
+    --card-title: var(--text);
+    --card-title-quiet: color-mix(in srgb, var(--text) 82%, var(--bg));
+    --card-count-quiet: color-mix(in srgb, var(--primary) 88%, var(--bg));
     --type-q: #34355f; --type-c: #1f3550; --type-f: #1d3f2c; --type-r: #4a3e17; --type-e: #552626; --type-o: #33363d;
     --banner-bg: #3a2f0b;
     --banner-text: #f3d77a;
@@ -512,15 +532,21 @@ button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
   width: 100%;
   min-height: 68px;
   padding: 14px 16px;
-  background: var(--card);
-  border: 1px solid var(--border);
+  background: var(--card-tint);
+  border: 1px solid transparent;  /* no visible border, but the same size as before */
   border-radius: 14px;
   color: var(--text);
   font: inherit;
   text-align: left;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
+  transition: transform var(--press-time) ease-out, box-shadow var(--press-time) ease-out, background-color 0.18s ease-out;
 }
+.subject-card.is-empty { background: var(--card-tint-quiet); }  /* "No questions yet": lighter, so the active ones stand out */
+@media (hover: hover) and (pointer: fine) {
+  .subject-card:hover, .subject-card.is-empty:hover { background: var(--card-tint-hover); }
+}
+.subject-card:active, .subject-card.is-empty:active { background: var(--card-tint-pressed); box-shadow: none; }
 .subject-number .icon { width: 20px; height: 20px; margin: 0; vertical-align: 0; }
 .subject-number {
   flex-shrink: 0;
@@ -534,15 +560,18 @@ button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
   display: grid;
   place-items: center;
 }
-.subject-name { flex: 1; font-weight: 600; line-height: 1.3; }
-.subject-meta { display: block; margin-top: 2px; font-size: 14px; font-weight: 400; color: var(--muted); }
+.subject-name { flex: 1; font-weight: 600; line-height: 1.3; color: var(--card-title); }
+.subject-meta { display: block; margin-top: 2px; font-size: 14px; font-weight: 400; color: var(--card-count); }
+.subject-card.is-empty .subject-name { color: var(--card-title-quiet); }
+.subject-card.is-empty .subject-meta { color: var(--card-count-quiet); }
 #screen-home .subject-card { min-height: 78px; padding: 14px 16px; border-radius: 16px; }
 #screen-home .subject-number {
-  width: 46px; height: 46px; border-radius: 14px; color: var(--muted);
-  background: color-mix(in srgb, var(--border) 55%, var(--card));
+  width: 46px; height: 46px; border-radius: 14px; color: var(--card-chip-icon);
+  background: var(--card-chip);
 }
 #screen-home .subject-number .icon { width: 24px; height: 24px; }
-.subject-arrow { color: var(--muted); font-size: 24px; line-height: 1; }
+.subject-arrow { color: var(--card-count); font-size: 24px; line-height: 1; }
+.subject-card.is-empty .subject-arrow { color: var(--card-count-quiet); }
 
 /* ---------- Back button ---------- */
 .back-btn {
@@ -563,7 +592,7 @@ button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
 .count-label { margin: 4px 0 0; color: var(--muted); }
 .btn:disabled { opacity: 0.4; cursor: not-allowed; }
 .empty-note { text-align: center; color: var(--muted); }
-.topic-count { flex-shrink: 0; font-size: 14px; color: var(--muted); }
+.topic-count { flex-shrink: 0; font-size: 14px; color: var(--card-count); }
 .list-empty { margin: 10px 0 0; font-size: 15px; }
 .topics-label { margin-top: 24px; }
 
@@ -998,6 +1027,7 @@ a.btn { text-align: center; text-decoration: none; }
 
 /* Case cards (subject screen) and linked-question cards (case screen) */
 .card-detail { display: block; margin-top: 3px; font-size: 14px; font-weight: 400; color: var(--muted); }
+.subject-card .card-detail { color: var(--card-count); }  /* on the tint, the muted gray would be too faint */
 #screen-subject .topics-label + .subject-list, #screen-case .topics-label + .subject-list { margin-bottom: 8px; }
 #case-questions .subject-name { font-weight: 500; }
 
