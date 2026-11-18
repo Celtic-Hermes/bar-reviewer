@@ -166,6 +166,21 @@
       "ruling": "The Court ruled for Steelcase. It reversed the Court of Appeals, set aside the dismissal of the complaint, ordered the Amended Complaint reinstated, and remanded the case to the RTC. (1) Steelcase is an unlicensed foreign corporation NOT doing business in the Philippines. Under Section 133 of the Corporation Code, an unlicensed foreign corporation doing business here cannot maintain a suit in Philippine courts, but it may be sued. \"Doing business\" is defined in Section 3(d) of the Foreign Investments Act (RA No. 7042) and its implementing rules; the appointment of a distributor is not doing business unless the distributor is under the full control of the foreign corporation, and appointing a distributor domiciled in the Philippines which transacts business in its own name and for its own account is expressly not doing business. DISI was independently owned and managed, distributed other companies' products too, and bought and resold Steelcase products at its own profit margin: it was an independent contractor acting in its own name and for its own account. The acts the Court of Appeals relied on were misinterpreted: no sale resulted from the Phinma letter, and cancelling orders showed Steelcase's refusal to sell without a local distributor; owning 25% of Modernform, a separate corporation, was insufficient to pierce the corporate veil; and reasonable performance standards on dealers are sound business practice that does not impinge on a distributor's independence. (2) Even if Steelcase had been doing business without a license, DISI would be estopped from challenging its capacity to sue, because DISI dealt with Steelcase and benefited from the dealership for about 12 years, and raised the lack of license only after it was told it owed US$600,000. The Court noted that invoking the lack of capacity to sue is a common ploy of defaulting local companies, and that the license requirement was not meant to favor domestic corporations that renege on obligations to foreign firms.",
       "keyDoctrine": "A foreign corporation does **not** do business in the Philippines just by appointing an **independent distributor** that transacts in its own name and for its own account; it does so if the distributor is under its **full control**. And a Philippine party that contracted with and benefited from a foreign corporation is **estopped** from challenging that corporation's lack of license or capacity to sue.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2012/apr2012/gr_171995_2012.html"
+    },
+    {
+      "id": "case-0013",
+      "status": "draft",
+      "name": "Magna Ready Mix Concrete Corp. v. Andersen Bjornstad Kane Jacobs, Inc.",
+      "grNumber": "G.R. No. 196158",
+      "year": 2021,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "facts": "Magna Ready Mix Concrete Corporation (MAGNA) is a Philippine corporation. Andersen Bjornstad Kane Jacobs, Inc. (ANDERSEN) is a corporation organized under the laws of the State of Washington, U.S.A. In 1996, MAGNA ordered from ANDERSEN the form design and drawing development for its project to develop a precast plant and a PIC double tee design, and later a preliminary design for its Ecocentrum Garage Project. MAGNA issued a purchase order, and the parties executed an Agreement for Professional Services dated 29 November 1996, under which MAGNA would pay for the services. MAGNA made partial payments but left an unpaid balance of US$60,786.59. In April 2004, ANDERSEN sued MAGNA for collection of a sum of money and damages, alleging that it was neither doing business in the Philippines nor licensed to do business here, and was suing on an isolated transaction. MAGNA denied owing the amounts (it said the services were for a planned venture, Structural Pre-cast Inc., that was never incorporated). During trial, MAGNA moved to dismiss, saying that it had discovered that ANDERSEN had earlier sued another Philippine corporation, so ANDERSEN was doing business here without a license and had no legal capacity to sue. The RTC denied the motion (MAGNA was already estopped, having contracted with ANDERSEN) and awarded ANDERSEN US$35,694.03. The Court of Appeals awarded the full US$60,786.59 with 12% interest from the extrajudicial demand on 26 June 1998, plus exemplary damages and attorney's fees, and found that ANDERSEN was suing on an isolated transaction and that MAGNA had waived its objection. MAGNA appealed to the Supreme Court.",
+      "issue": "The sole issue the Court resolved: does ANDERSEN, a foreign corporation without a Philippine license, have legal capacity to sue in the Philippines?",
+      "ruling": "The petition was denied, and the Court of Appeals' decision was affirmed with modification of the interest. (1) Only questions of law may be raised in a Rule 45 petition, and the Court is not a trier of facts; except for ANDERSEN's capacity to sue, the petition raised questions of fact already decided by the RTC and the CA. (2) Under Section 133 of the Corporation Code, a foreign corporation transacting business in the Philippines without a license cannot maintain or intervene in any suit. There are two tests of whether a foreign corporation is doing business: the substance test and the continuity test. The number of transactions is not determinative; the intention to continue the body of the business prevails, and even a single act can be doing business. An \"isolated transaction\" is one set apart from the common business of the foreign enterprise, with no intention to engage in a progressive pursuit of the purpose and object of its business. (3) The Court disagreed with the CA: ANDERSEN's contract with MAGNA, to render professional services (plant layout and design, operation procedures, staff training, start-up services and consultation) for a fee, was not an isolated transaction but was related to its specific business purpose. So ANDERSEN was doing business without a license and had no legal capacity to sue. (4) However, MAGNA is estopped from challenging ANDERSEN's legal capacity, because it entered into a contract with ANDERSEN, acknowledged its personality, and benefited from the services. Its claim that it discovered the lack of license only during the trial was irrelevant. (5) The Court modified the legal interest: 12% per annum from 26 June 1998 (the extrajudicial demand) until 30 June 2013, and 6% per annum from 1 July 2013 until full payment (BSP Monetary Board Resolution No. 796, applied in Nacar v. Gallery Frames).",
+      "keyDoctrine": "A foreign corporation doing business in the Philippines without a license cannot sue, and **even a single transaction can be \"doing business\"** if it is related to the corporation's business purpose rather than an isolated act. But a local party that **contracted with and benefited from** the foreign corporation is **estopped** from challenging its legal capacity to sue.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2021/jan2021/gr_196158_2021.html"
     }
   ],
   "questions": [
@@ -2720,6 +2735,238 @@
         "url": "https://lawphil.net/judjuris/juri2012/apr2012/gr_171995_2012.html",
         "part": "Decision, \"DISI is estopped from challenging Steelcase's legal capacity to sue\" (quoting Antam Consolidated)",
         "excerpt": "In the case of Antam Consolidated, Inc. v. CA, this Court noted that it is a common ploy of defaulting local companies which are sued by unlicensed foreign corporations not engaged in business in the Philippines to invoke the latter’s lack of capacity to sue. This practice of domestic corporations is particularly reprehensible considering that in requiring a license, the law never intended to prevent foreign corporations from performing single or isolated acts in this country, or to favor domestic corporations who renege on their obligations to foreign firms unwary enough to engage in solitary transactions with them. Rather, the law was intended to bar foreign corporations from acquiring a domicile for the purpose of business without first taking the steps necessary to render them amenable to suits in the local courts. It was to prevent the foreign companies from enjoying the good while disregarding the bad. … As a matter of principle, this Court will not step in to shield defaulting local companies from the repercussions of their business dealings. While the doctrine of lack of capacity to sue based on failure to first acquire a local license may be resorted to in meritorious cases, it is not a magic incantation. It cannot be called upon when no evidence exists to support its invocation or the facts do not warrant its application. In this case, that the respondent is estopped from challenging the petitioners’ capacity to sue has been conclusively established, and the forthcoming trial before the lower court should weigh instead on the other defenses raised by the respondent. (Emphases supplied)"
+      }
+    },
+    {
+      "id": "q-0296",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "prompt": "A foreign engineering design firm without a Philippine license signs one contract with a Philippine company to provide, for a fee, plant layout and design, operating procedures, staff training, start-up services and consultation. When the company does not pay, the foreign firm sues, arguing that it is not doing business in the Philippines because this was a single, isolated transaction. Based on Magna Ready Mix v. Andersen Bjornstad Kane Jacobs, is the foreign firm right?",
+      "suggestedAnswer": {
+        "answer": "No. Although there was only one contract, it was not an isolated transaction but doing business in the Philippines, because it was related to the firm's specific business purpose. Without a license, the foreign firm has no legal capacity to sue (subject to estoppel).",
+        "legalBasis": "Under Section 133 of the Corporation Code, a foreign corporation transacting business in the Philippines without a license cannot maintain or intervene in any action, suit or proceeding in Philippine courts or agencies, though it may be sued. Two tests determine whether a foreign corporation is \"doing business\": the substance test (whether it is continuing the body of the business for which it was organized) and the continuity test (a continuity of commercial dealings, performing acts incident to the progressive prosecution of its purpose). The number of transactions is not determinative; the intention to continue the body of its business prevails, and a single act may be doing business if the corporation performs acts for which it was created. An \"isolated transaction\" is a transaction or series of transactions set apart from the common business of a foreign enterprise, with no intention to engage in a progressive pursuit of the purpose and object of the business organization. A foreign corporation may sue without a license only on an isolated transaction.",
+        "application": "In Magna, ANDERSEN's contract was to render professional services for a fee: plant site layout and design, operation procedures, training, start-up services and consultation for a precast plant. In entering into that contract, ANDERSEN was performing acts in progressive pursuit of its business purpose (consultation and design services). So, though it was a single transaction, it was doing business and not an isolated transaction, and had no legal capacity to sue without a license.",
+        "conclusion": "The firm was doing business without a license and cannot claim the isolated-transaction exception."
+      },
+      "keyPoints": [
+        "Section 133, Corporation Code: no suit by an unlicensed foreign corporation doing business",
+        "Two tests of doing business: the substance test and the continuity test",
+        "The number of transactions is not determinative; intention to continue the body of the business prevails",
+        "A single act can be doing business if related to the corporation's business purpose",
+        "An isolated transaction is set apart from the common business, with no intent to pursue the business progressively",
+        "A license is not required if suing on an isolated transaction"
+      ],
+      "caseIds": [
+        "case-0013"
+      ],
+      "source": {
+        "caseTitle": "Magna Ready Mix Concrete Corp. v. Andersen Bjornstad Kane Jacobs, Inc.",
+        "grNumber": "G.R. No. 196158",
+        "url": "https://lawphil.net/judjuris/juri2021/jan2021/gr_196158_2021.html",
+        "part": "Decision, Our Ruling (the tests for doing business and the isolated transaction exception)",
+        "excerpt": "In Mentholatum, this Court discoursed on the two general tests to determine whether or not a foreign corporation can be considered as \"doing business\" in the Philippines. The first of these is the substance test, thus: … The number of the transactions entered into is not determinative whether a foreign corporation is doing business in the Philippines; the intention to continue the body of its business prevails. The number or quantity is merely an evidence of such intention. A single act or transaction may then be considered as doing business when a corporation performs acts for which it was created or exercises some of the functions for which it was organized. … As an exception, a foreign corporation may sue without a license on the basis of an isolated transaction. Eriks Pte. Ltd. v. Court of Appeals describes the concept of isolated transaction, to wit: … The phrase \"isolated transaction\" has a definite and fixed meaning, i.e. a transaction or series of transactions set apart from the common business of a foreign enterprise in the sense that there is no intention to engage in a progressive pursuit of the purpose and object of the business organization. Whether a foreign corporation is \"doing business\" does not necessarily depend upon the frequency of its transactions, but more upon the nature and character of the transactions. … Based on the foregoing, a single act may be considered as either doing business or an isolated transaction depending on its nature. It may be considered as doing business if it implies a continuity of commercial dealings and contemplates the performance of acts or the exercise of functions normally incidental to and in the progressive pursuit of its purpose. Contrarily, it may be considered as an isolated transaction if it is different from or not related to the common business of the foreign corporation in the sense that there is no objective to increasingly pursue its purpose or object. And as stated, a license is not required if the foreign corporation is suing on an isolated transaction. … ANDERSEN's act of entering into a contract with MAGNA does not fall into the category of isolated transactions. The contract clearly shows that ANDERSEN was to render professional services to MAGNA for a fee. These professional services included the following: (1) providing master plant site layout and plant design; (2) providing plant operation procedures and organization matrix; (3) providing plant management and production staff training; (4) providing plant construction and operation start-up services; and (5) providing consultation services for developing a precast plant program. It is clear then that ANDERSEN, in entering into that contract with MAGNA, was performing acts that were in progressive pursuit of its business purpose, which, as found by the RTC, involved consultation and design services. … Though it was a single transaction, ANDERSEN's act of entering into a contract with MAGNA constitutes doing business in the Philippines. It cannot be considered as an isolated transaction because the act is related to ANDERSEN's specific business purpose. Thus, in doing business without a license, ANDERSEN had no legal capacity to sue in the Philippines."
+      }
+    },
+    {
+      "id": "q-0297",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "prompt": "A Philippine company contracted with a foreign firm, received its services, and later refused to pay. Only during trial did the company \"discover\" that the foreign firm had no Philippine license, and it moved to dismiss for lack of legal capacity to sue. Assume the foreign firm was in fact doing business without a license. Based on Magna Ready Mix v. Andersen Bjornstad Kane Jacobs, should the case be dismissed?",
+      "suggestedAnswer": {
+        "answer": "No. The Philippine company is estopped from challenging the foreign firm's legal capacity to sue, because it entered into a contract with the firm and benefited from it. That it discovered the lack of license only during trial is irrelevant.",
+        "legalBasis": "A foreign corporation doing business in the Philippines may sue in Philippine courts, although not authorized to do business here, against a Philippine citizen or entity that had contracted with and benefited by said corporation. A party is estopped to challenge the personality of a corporation after having acknowledged it by entering into a contract with it, and the doctrine applies to foreign as well as domestic corporations. The principle prevents a person contracting with a foreign corporation from later taking advantage of its noncompliance with the statutes, chiefly where that person has received the benefits of the contract. By virtue of estoppel, a party cannot take undue advantage by challenging the foreign corporation's personality or capacity to sue when it already acknowledged it by contracting and derived benefits.",
+        "application": "In Magna, MAGNA entered into a perfected and binding contract with ANDERSEN, by which it effectively acknowledged ANDERSEN's personality. It had already benefited from the contract because ANDERSEN rendered services to MAGNA under the contract and even before it. MAGNA's claim that it only discovered during the trial that ANDERSEN was doing business without a license was therefore irrelevant.",
+        "conclusion": "The Philippine company is estopped; the foreign firm may proceed with its suit."
+      },
+      "keyPoints": [
+        "Estoppel: a party that contracted with a foreign corporation cannot later deny its personality",
+        "A foreign corporation doing business without a license may sue one who contracted with and benefited from it",
+        "The principle prevents taking advantage of the foreign corporation's noncompliance, chiefly where benefits were received",
+        "MAGNA entered a perfected contract and benefited from the services",
+        "Discovering the lack of license only during the trial is irrelevant"
+      ],
+      "caseIds": [
+        "case-0013"
+      ],
+      "source": {
+        "caseTitle": "Magna Ready Mix Concrete Corp. v. Andersen Bjornstad Kane Jacobs, Inc.",
+        "grNumber": "G.R. No. 196158",
+        "url": "https://lawphil.net/judjuris/juri2021/jan2021/gr_196158_2021.html",
+        "part": "Decision, Our Ruling (estoppel from challenging the foreign corporation's legal capacity to sue)",
+        "excerpt": "However, the Court agrees that MAGNA is already estopped from challenging ANDERSEN's legal capacity to sue. The doctrine of estoppel states that the other contracting party may no longer challenge the foreign corporation's personality after acknowledging the same by entering into a contract with it. This principle is applied in order to \"prevent a person (or another corporation) contracting with a foreign corporation from later taking advantage of its noncompliance with the statutes, chiefly in cases where such person has received the benefits of the contract.\" The case of Communications Materials and Design, Inc. v. Court of Appeals elaborates on the doctrine: … A foreign corporation doing business in the Philippines may sue in Philippine Courts although not authorized to do business here against a Philippine citizen or entity who had contracted with and benefited by said corporation. To put it in another way, a party is estopped to challenge the personality of a corporation after having acknowledged the same by entering into a contract with it. And the doctrine of estoppel to deny corporate existence applies to a foreign as well as to domestic corporations. One who has dealt with a corporation of foreign origin as a corporate entity is estopped to deny its corporate existence and capacity. The principle will be applied to prevent a person contracting with a foreign corporation from later taking advantage of its noncompliance with the statutes chiefly in cases where such person has received the benefits of the contract. … By virtue of the doctrine of estoppel, a party cannot take undue advantage by challenging the foreign corporation's personality or legal capacity to sue when the former already acknowledged the same by entering into a contract with the latter and derived benefits therefrom. … In this case, MAGNA is already estopped from challenging ANDERSEN's legal capacity to sue due to its prior dealing with the latter, that is, entering into a contract with it. As ruled by the courts below, there was a perfected and binding contract between the parties. By such contract, MAGNA effectively acknowledged ANDERSEN's personality. MAGNA's allegation that it only discovered during the trial that ANDERSEN was doing business in the Philippines without a license, is therefore irrelevant. Moreover, MAGNA had already benefited from the contract because as found by the lower and appellate courts, ANDERSEN indeed rendered services to MAGNA pursuant to their contract and even prior thereto."
+      }
+    },
+    {
+      "id": "q-0298",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "prompt": "In a petition for review on certiorari under Rule 45, a losing party raises many arguments that depend on who is telling the truth about what services were rendered and under what contract, along with one pure legal issue. Based on Magna Ready Mix v. Andersen Bjornstad Kane Jacobs, what may the Supreme Court resolve, and why?",
+      "suggestedAnswer": {
+        "answer": "The Supreme Court resolves only the pure question of law. The factual questions are left as already decided by the lower courts, because the Court is generally not a trier of facts.",
+        "legalBasis": "Only questions of law should be raised in a petition for review on certiorari under Rule 45, and the Court is generally not a trier of facts, although the rule admits of exceptions. A question of law exists when the doubt centers on what the law is on a certain set of facts; a question of fact exists when the issue revolves around the truth or falsity of the alleged facts. For a question to be one of law, it must not involve an examination of the probative value of the evidence presented, and its resolution must depend solely on what the law provides on the given circumstances. Once the issue invites a review of the evidence, it is a question of fact.",
+        "application": "In Magna, the Court said that, except for the issue of ANDERSEN's legal capacity to sue, the petition raised questions of fact already ruled upon by the RTC and affirmed by the Court of Appeals, such as whether there was a contract and what services were rendered, and no recognized exception applied. The sole issue it resolved was the legal question of whether ANDERSEN had legal capacity to sue in the Philippines.",
+        "conclusion": "The Court rules only on the legal question; the facts found below stand."
+      },
+      "keyPoints": [
+        "Rule 45 petitions may raise only questions of law",
+        "The Supreme Court is generally not a trier of facts",
+        "A question of law concerns what the law is on a given set of facts",
+        "A question of fact concerns the truth or falsity of alleged facts and invites review of evidence",
+        "Only ANDERSEN's capacity to sue was a question of law here"
+      ],
+      "caseIds": [
+        "case-0013"
+      ],
+      "source": {
+        "caseTitle": "Magna Ready Mix Concrete Corp. v. Andersen Bjornstad Kane Jacobs, Inc.",
+        "grNumber": "G.R. No. 196158",
+        "url": "https://lawphil.net/judjuris/juri2021/jan2021/gr_196158_2021.html",
+        "part": "Decision, Our Ruling (Rule 45: questions of law and of fact)",
+        "excerpt": "Well-established is the rule that only questions of law should be raised in a petition for review on certiorari under Rule 45 of the Rules of Court. This Court is generally not a trier of facts. This rule admits of exceptions but the instant case does not fall under any of these. This Court has repeatedly stated that: … A question of law exists when the doubt centers on what the law is on a certain set of facts while a question of fact results when the issue revolves around the truth or falsity of the alleged facts. For a question to be one of law, the question must not involve an examination of the probative value of the evidence presented by any of the litigants. The resolution of the issue must solely depend on what the law provides on the given set of circumstances. Once it is obvious that the issue invites a review of the evidence presented, the question posed is one offact. … Except for the issue concerning ANDERSEN's legal capacity to sue, the Petition raises questions of facts already ruled upon by the RTC and affirmed by the CA."
+      }
+    },
+    {
+      "id": "q-0299",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "prompt": "According to Magna Ready Mix v. Andersen Bjornstad Kane Jacobs (citing Mentholatum), what are the two general tests to determine whether a foreign corporation is \"doing business\" in the Philippines?",
+      "choices": {
+        "A": "The substance test and the continuity test",
+        "B": "The control test and the grandfather rule",
+        "C": "The capital test and the licensing test",
+        "D": "The nationality test and the residence test"
+      },
+      "correct": "A",
+      "explanation": "A is correct. The first is the substance test: whether the foreign corporation is continuing the body of the business or enterprise for which it was organized or has substantially retired from it and turned it over to another. The second is the continuity test: the term implies a continuity of commercial dealings and arrangements, and the performance of acts or functions normally incident to, and in the progressive prosecution of, the purpose and object of its organization. B names the tests of corporate nationality used in other cases. C and D are not tests the Court mentioned.",
+      "caseIds": [
+        "case-0013"
+      ],
+      "source": {
+        "caseTitle": "Magna Ready Mix Concrete Corp. v. Andersen Bjornstad Kane Jacobs, Inc.",
+        "grNumber": "G.R. No. 196158",
+        "url": "https://lawphil.net/judjuris/juri2021/jan2021/gr_196158_2021.html",
+        "part": "Decision, Our Ruling (the two tests of doing business)",
+        "excerpt": "In Mentholatum, this Court discoursed on the two general tests to determine whether or not a foreign corporation can be considered as \"doing business\" in the Philippines. The first of these is the substance test, thus: … The true test [for doing business], however, seems to be whether the foreign corporation is continuing the body of the business or enterprise for which it was organized or whether it has substantially retired from it and turned it over to another. … The second test is the continuity test, expressed thus: … The term [doing business] implies a continuity of commercial dealings and arrangements, and contemplates, to that extent, the performance of acts or works or the exercise of some of the functions normally incident to, and in the progressive prosecution of, the purpose and object of its organization."
+      }
+    },
+    {
+      "id": "q-0300",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "prompt": "In Magna Ready Mix v. Andersen Bjornstad Kane Jacobs, what is an \"isolated transaction\" for which a foreign corporation may sue without a license?",
+      "choices": {
+        "A": "Any transaction involving a single contract, whatever its nature",
+        "B": "A transaction or series of transactions set apart from the common business of the foreign enterprise, with no intention to engage in a progressive pursuit of the purpose and object of its business",
+        "C": "A transaction below a certain peso value",
+        "D": "A transaction entered into with a government agency"
+      },
+      "correct": "B",
+      "explanation": "B is correct. The Court, quoting Eriks Pte. Ltd. v. Court of Appeals, said the phrase has a definite and fixed meaning: a transaction or series of transactions set apart from the common business of a foreign enterprise in the sense that there is no intention to engage in a progressive pursuit of the purpose and object of the business organization. Whether a foreign corporation is doing business depends more on the nature and character of the transactions than on their frequency. A is wrong because a single act may be doing business or an isolated transaction depending on its nature; in this case a single contract was doing business. C and D are not criteria the Court gave.",
+      "caseIds": [
+        "case-0013"
+      ],
+      "source": {
+        "caseTitle": "Magna Ready Mix Concrete Corp. v. Andersen Bjornstad Kane Jacobs, Inc.",
+        "grNumber": "G.R. No. 196158",
+        "url": "https://lawphil.net/judjuris/juri2021/jan2021/gr_196158_2021.html",
+        "part": "Decision, Our Ruling (the isolated transaction exception)",
+        "excerpt": "As an exception, a foreign corporation may sue without a license on the basis of an isolated transaction. Eriks Pte. Ltd. v. Court of Appeals describes the concept of isolated transaction, to wit: … The phrase \"isolated transaction\" has a definite and fixed meaning, i.e. a transaction or series of transactions set apart from the common business of a foreign enterprise in the sense that there is no intention to engage in a progressive pursuit of the purpose and object of the business organization. Whether a foreign corporation is \"doing business\" does not necessarily depend upon the frequency of its transactions, but more upon the nature and character of the transactions."
+      }
+    },
+    {
+      "id": "q-0301",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "prompt": "Which statement about the number of transactions entered into by a foreign corporation is consistent with Magna Ready Mix v. Andersen Bjornstad Kane Jacobs?",
+      "choices": {
+        "A": "Doing business requires at least two transactions",
+        "B": "The number of transactions is not determinative; the intention to continue the body of the business prevails, and the number is merely evidence of that intention",
+        "C": "A single transaction can never be doing business",
+        "D": "Only transactions above ten in a calendar year count"
+      },
+      "correct": "B",
+      "explanation": "B is correct. The Court said the number of transactions is not determinative of whether a foreign corporation is doing business; the intention to continue the body of its business prevails, the number or quantity being merely evidence of such intention. A single act or transaction may be considered doing business when a corporation performs acts for which it was created or exercises some of the functions for which it was organized. A and C are wrong for that reason, and in Magna a single contract was held to be doing business. D describes a rule the Court did not state.",
+      "caseIds": [
+        "case-0013"
+      ],
+      "source": {
+        "caseTitle": "Magna Ready Mix Concrete Corp. v. Andersen Bjornstad Kane Jacobs, Inc.",
+        "grNumber": "G.R. No. 196158",
+        "url": "https://lawphil.net/judjuris/juri2021/jan2021/gr_196158_2021.html",
+        "part": "Decision, Our Ruling (number of transactions and doing business)",
+        "excerpt": "The number of the transactions entered into is not determinative whether a foreign corporation is doing business in the Philippines; the intention to continue the body of its business prevails. The number or quantity is merely an evidence of such intention. A single act or transaction may then be considered as doing business when a corporation performs acts for which it was created or exercises some of the functions for which it was organized."
+      }
+    },
+    {
+      "id": "q-0302",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "prompt": "In Magna Ready Mix v. Andersen Bjornstad Kane Jacobs, how did the Court modify the legal interest on the amount due, which the Court of Appeals had set at 12% per annum from the extrajudicial demand until full payment?",
+      "choices": {
+        "A": "12% per annum from 26 June 1998 until 30 June 2013, and 6% per annum from 1 July 2013 until full payment",
+        "B": "6% per annum from 26 June 1998 until full payment",
+        "C": "12% per annum from the filing of the complaint until full payment",
+        "D": "No interest, because the foreign corporation had no license"
+      },
+      "correct": "A",
+      "explanation": "A is correct. The Court said that, following Nacar v. Gallery Frames, BSP Monetary Board Resolution No. 796, effective 1 July 2013, lowered the interest rate from 12% to 6% per annum for loans or forbearance of money, goods and credit, in the absence of an express stipulation. So the interest is bifurcated: 12% per annum from 26 June 1998 (the date of extrajudicial demand) until 30 June 2013, then 6% per annum from 1 July 2013 until full payment. B and C do not match what the Court ordered. D is wrong because MAGNA was estopped from raising the lack of license and the CA's decision was affirmed with modification only as to the interest.",
+      "caseIds": [
+        "case-0013"
+      ],
+      "source": {
+        "caseTitle": "Magna Ready Mix Concrete Corp. v. Andersen Bjornstad Kane Jacobs, Inc.",
+        "grNumber": "G.R. No. 196158",
+        "url": "https://lawphil.net/judjuris/juri2021/jan2021/gr_196158_2021.html",
+        "part": "Decision, Our Ruling (legal interest)",
+        "excerpt": "Finally, the Court modifies the legal interest imposed by the CA. The appellate court applied the earlier case of Eastern Shipping Lines v. Court of Appeals in imposing 12% legal interest per annum reckoned from the date of extrajudicial demand on June 26, 1998 until full payment. Subsequently, as the Court discussed and applied in Nacar v. Gallery Frames, Resolution No. 796 issued by the Monetary Board of the Bangko Sentral ng Pilipinas which took effect on July 1, 2013, lowered the interest rate from 12% to 6% per annum for loans or forbearance of money, goods, and credit, in the absence of an express stipulation. Therefore, the interest on the amount due must be bifurcated, and is to be imposed as follows: (a) interest at the rate of 12% per annum is to be computed on the amount due from June 26, 1998, the date of extrajudicial demand, until June 30, 2013; and subsequently, (b) interest at the rate of 6% per annum is to be computed on the amount due from July 1, 2013 until full payment thereof."
+      }
+    },
+    {
+      "id": "q-0303",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Foreign Investments Act",
+      "prompt": "Magna Ready Mix v. Andersen Bjornstad Kane Jacobs: although the Court held that the foreign corporation was doing business without a license and so had no capacity to sue, why did it still rule that the suit could proceed?",
+      "choices": {
+        "A": "Because the amount involved was small",
+        "B": "Because the Philippine company was estopped from challenging the foreign corporation's legal capacity, having entered into a contract with it and benefited from it",
+        "C": "Because the foreign corporation obtained a license after filing the case",
+        "D": "Because the Solicitor General allowed the suit"
+      },
+      "correct": "B",
+      "explanation": "B is correct. The Court said MAGNA was already estopped from challenging ANDERSEN's legal capacity to sue due to its prior dealing with it, that is, entering into a contract with it. By that contract MAGNA effectively acknowledged ANDERSEN's personality, and it had benefited from the services. A, C and D are not reasons the Court gave; the amount, a later license and the Solicitor General played no part in the ruling.",
+      "caseIds": [
+        "case-0013"
+      ],
+      "source": {
+        "caseTitle": "Magna Ready Mix Concrete Corp. v. Andersen Bjornstad Kane Jacobs, Inc.",
+        "grNumber": "G.R. No. 196158",
+        "url": "https://lawphil.net/judjuris/juri2021/jan2021/gr_196158_2021.html",
+        "part": "Decision, Our Ruling (estoppel)",
+        "excerpt": "However, the Court agrees that MAGNA is already estopped from challenging ANDERSEN's legal capacity to sue. The doctrine of estoppel states that the other contracting party may no longer challenge the foreign corporation's personality after acknowledging the same by entering into a contract with it. This principle is applied in order to \"prevent a person (or another corporation) contracting with a foreign corporation from later taking advantage of its noncompliance with the statutes, chiefly in cases where such person has received the benefits of the contract.\" The case of Communications Materials and Design, Inc. v. Court of Appeals elaborates on the doctrine: … In this case, MAGNA is already estopped from challenging ANDERSEN's legal capacity to sue due to its prior dealing with the latter, that is, entering into a contract with it. As ruled by the courts below, there was a perfected and binding contract between the parties. By such contract, MAGNA effectively acknowledged ANDERSEN's personality. MAGNA's allegation that it only discovered during the trial that ANDERSEN was doing business in the Philippines without a license, is therefore irrelevant. Moreover, MAGNA had already benefited from the contract because as found by the lower and appellate courts, ANDERSEN indeed rendered services to MAGNA pursuant to their contract and even prior thereto."
       }
     }
   ]
