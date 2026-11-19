@@ -694,7 +694,7 @@ const LAST_SEEN_KEY = "barReviewer.lastSeen.v1";  // when she last used the app 
 // Kept on this device only (not in backups): which subject, topic and sub-topic, and when.
 const LAST_PRACTICE_KEY = "barReviewer.lastPractice.v1";
 
-// "notes" is true when it was her private class notes (only on the builder's Mac), not the official content.
+// "notes" is true when it was the class notes (data/class-notes.json), not the official content.
 function saveLastPractice(subject, topic, subtopic, notes) {
   try {
     localStorage.setItem(LAST_PRACTICE_KEY, JSON.stringify({ subject: subject, topic: topic, subtopic: subtopic || null, notes: Boolean(notes), at: Date.now() }));

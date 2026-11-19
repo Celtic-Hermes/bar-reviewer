@@ -696,11 +696,13 @@ def print_list(lines, show_all):
 #   - .gitignore no longer ignores notes/ or notes/private-content/;
 #   - sw.js mentions notes/ (the offline lists must never include private files);
 #   - the lines being committed (or a commit message) contain 12 or more words in a row
-#     that also appear in the private content (a quote from the notes).
+#     that also appear in the private content (a quote from the notes), except in
+#     data/class-notes.json, the published class-notes questions (QUOTE_ALLOWED).
 # It never prints the private text itself, only where the match is.
 PRIVATE_DIRS = ["notes/"]
 PRIVATE_CONTENT = os.path.join(ROOT, "notes", "private-content")
 QUOTE_WORDS = 12
+QUOTE_ALLOWED = {"data/class-notes.json"}  # the only committed file allowed to quote the notes
 
 
 def _git(*args):
@@ -788,6 +790,8 @@ def check_privacy(message_file=None):
         elif line.startswith("+") and current:
             added.setdefault(current, []).append(line[1:])
     for path, lines in sorted(added.items()):
+        if path in QUOTE_ALLOWED:
+            continue  # the published class-notes questions quote the notes on purpose
         if _windows(_words(" ".join(lines))) & prints:
             problem(where, "%s (staged) contains %d+ words in a row from your private notes. Remove them, "
                     "or, if that text is really from an official source, check it carefully before committing." % (path, QUOTE_WORDS))
@@ -797,16 +801,20 @@ def check_privacy(message_file=None):
             problem(where, "the commit message contains %d+ words in a row from your private notes." % QUOTE_WORDS)
 
 
-def check_private_questions(official_ids):
-    """notes/private-content/questions.json (her private class-notes questions, this Mac only).
-    Skipped quietly if the file isn't there. Checks the same parts as official questions, plus:
-    IDs are pq-0001 …, used once, never removed (ids-issued.txt lists every ID ever given out),
-    the source names the class notes, and every excerpt piece and fullText appears word for word
-    in notes-text.txt (the cleaned text of the notes). Returns the IDs, or None if there's no file."""
-    path = os.path.join(PRIVATE_CONTENT, "questions.json")
+CLASS_NOTES = os.path.join(DATA, "class-notes.json")
+
+
+def check_class_notes(official_ids):
+    """data/class-notes.json (questions made from class notes; public, labeled "From class notes").
+    Checks the same parts as official questions, plus: IDs are pq-0001 …, used once, never removed
+    (compared with the last save point, and with notes/private-content/ids-issued.txt when it's on
+    this computer), the source names the class notes, and, when the private cleaned notes text
+    (notes/private-content/notes-text.txt) is on this computer, every excerpt piece and fullText
+    appears in it word for word. Returns the IDs, or None if there's no file."""
+    path = CLASS_NOTES
     if not os.path.exists(path):
         return None
-    where = "notes/private-content/questions.json"
+    where = "data/class-notes.json"
     try:
         with open(path, encoding="utf-8") as f:
             data = json.load(f)
@@ -819,6 +827,8 @@ def check_private_questions(official_ids):
         return {}
     notes_text = read_text(os.path.join(PRIVATE_CONTENT, "notes-text.txt")) or ""
     notes_text = comparable(re.sub(r"\[Page \d+\]", " ", notes_text))
+    if not notes_text:
+        check(where, "the private notes text isn't on this computer, so the quotes weren't compared with the notes.")
     by_id = {}
     for q in questions:
         q_id = q.get("id") if isinstance(q, dict) else None
@@ -864,9 +874,15 @@ def check_private_questions(official_ids):
     clash = sorted(set(by_id) & set(official_ids))
     if clash:
         problem(where, "IDs also used by official content: %s." % ", ".join(clash))
-    ledger = read_text(os.path.join(PRIVATE_CONTENT, "ids-issued.txt"))
-    if ledger is not None:
-        gone = sorted(set(ledger.split()) - set(by_id))
+    issued = set((read_text(os.path.join(PRIVATE_CONTENT, "ids-issued.txt")) or "").split())
+    old = _git("show", "HEAD:data/class-notes.json")
+    if old is not None and old.returncode == 0:
+        try:
+            issued |= {q.get("id") for q in json.loads(old.stdout).get("questions", []) if isinstance(q, dict)}
+        except (json.JSONDecodeError, AttributeError):
+            pass
+    if issued:
+        gone = sorted(i for i in issued - set(by_id) if isinstance(i, str))
         if gone:
             problem(where, "these IDs were given out before but are gone now (IDs never change or disappear): %s."
                     % ", ".join(gone[:10]))
@@ -907,13 +923,13 @@ def main():
 
     quotes = load_json("data/quotes.json")
     quotes_by_id = check_quotes(quotes) if quotes is not None else {}
-    private_by_id = check_private_questions(questions_by_id)
+    private_by_id = check_class_notes(questions_by_id)
     print("Checked %d questions, %d cases, %d rules, %d quotes." % (len(questions_by_id), len(cases_by_id), len(rules_by_id), len(quotes_by_id)))
     print("Next free IDs: %s, %s, %s, %s" % (next_id(questions_by_id, "q"), next_id(cases_by_id, "case"),
                                              next_id(rules_by_id, "rule"), next_id(quotes_by_id, "quote")))
     if private_by_id is not None:
         ledger = (read_text(os.path.join(PRIVATE_CONTENT, "ids-issued.txt")) or "").split()
-        print("Private class notes (this Mac only): %d questions; next free ID %s"
+        print("Class notes (data/class-notes.json): %d questions; next free ID %s"
               % (len(private_by_id), next_id({i: 1 for i in set(private_by_id) | set(ledger)}, "pq")))
     print()
     show_all = "--all" in sys.argv

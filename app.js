@@ -25,23 +25,16 @@ let currentSubject = null;  // the subject she tapped
 let currentTopic = null;    // the topic she tapped (or "All topics")
 let currentSubtopic = null; // the sub-topic she picked, ALL_SUBTOPICS, OTHER_SUBTOPIC, or null (none)
 
-// ---------- Private class notes (only on the builder's Mac) ----------
-// Questions made from the builder's private class notes live in notes/private-content/questions.json,
-// which is git-ignored: it is never committed, never on the public website, never in the offline
-// lists in sw.js. The app asks for it only when it runs on this computer's local server
-// (localhost), and silently does without it if it isn't there. Those questions are marked
-// classNotes, labeled "From class notes", and kept apart from the official content: they show
-// only when "My class notes" is picked on a subject screen, and never in the official counts.
-const CLASS_NOTES_FILE = "notes/private-content/questions.json";
+// ---------- Class notes ----------
+// Questions made from class notes (not an official source) live in data/class-notes.json.
+// They are marked classNotes, labeled "From class notes", and kept apart from the official
+// content: they show only when "My class notes" is picked on a subject screen, and never in
+// the official counts. If the file is missing or damaged, the app simply does without them.
+const CLASS_NOTES_FILE = "data/class-notes.json";
 let sourceView = "official"; // which questions the subject screens show: "official" or "notes"
 
 function isClassNote(question) {
   return Boolean(question && question.classNotes === true);
-}
-
-// Is the app running on this computer's own local server (python3 -m http.server)?
-function onLocalServer() {
-  return ["localhost", "127.0.0.1", "[::1]", "::1"].indexOf(location.hostname) !== -1;
 }
 
 // Run fn with the subject screens' view set to "official" or "notes", then put it back.
@@ -205,7 +198,7 @@ function rememberSpot() {
     subtopic: currentSubtopic,
     shuffle: document.getElementById("shuffle").checked,
     mode: currentMode(),
-    notes: sourceView === "notes"  // looking at her private class notes (see CLASS_NOTES_FILE)
+    notes: sourceView === "notes"  // looking at the class notes (see CLASS_NOTES_FILE)
   };
   // In the middle of a round (or reading a case opened from a question): keep the round.
   const inRound = session && (shownScreen === "screen-question" ||
@@ -316,7 +309,7 @@ function putBackSpot(spot) {
     return true;
   }
   if (SUBJECTS.concat(MISC_SUBJECTS).indexOf(spot.subject) === -1) { return false; }
-  // Class notes: only if they loaded (on the builder's Mac); otherwise the official view.
+  // Class notes: only if they loaded; otherwise the official view.
   sourceView = (spot.notes === true && hasClassNotes(spot.subject)) ? "notes" : "official";
   currentSubject = spot.subject;
   currentTopic = (typeof spot.topic === "string") ? spot.topic : null;
@@ -452,7 +445,7 @@ function putBackCurrent(saved) {
 }
 
 // A subject's questions in the current view: the official ones, or (with "My class notes"
-// picked) only those from her private class notes.
+// picked) only those from the class notes.
 function questionsFor(subject) {
   const notes = sourceView === "notes";
   return allQuestions.filter(function (q) { return q.subject === subject && isClassNote(q) === notes; });
@@ -463,7 +456,7 @@ function officialQuestions() {
   return allQuestions.filter(function (q) { return !isClassNote(q); });
 }
 
-// Does this subject have any class-notes questions (loaded only on the builder's Mac)?
+// Does this subject have any class-notes questions?
 function hasClassNotes(subject) {
   return allQuestions.some(function (q) { return q.subject === subject && isClassNote(q); });
 }
@@ -826,8 +819,7 @@ function openSubject(subject) {
   showScreen("screen-subject");
 }
 
-// "Official / My class notes": shown only when this subject has class-notes questions
-// (that is, only on the builder's Mac). Switching redraws the subject screen in that view.
+// "Official / My class notes": shown only when this subject has class-notes questions. Switching redraws the subject screen in that view.
 function showSourceSwitch(subject) {
   const box = document.getElementById("source-switch");
   box.hidden = !hasClassNotes(subject);
@@ -2924,7 +2916,7 @@ function showQuestion() {
   showScreen("screen-question");
 }
 
-// --- "From class notes" (questions from her private class notes, never official) ---
+// --- "From class notes" (questions from class notes, never official) ---
 // The label, and the source line: "Class notes · <file> · <heading>".
 function showClassNotesLabel(question) {
   const fromNotes = isClassNote(question);
@@ -5348,13 +5340,11 @@ const contentReady = fetchJson("data/catalog.json")
       "Otherwise, the file may have a typo.");
   });
 
-// Her private class-notes questions (see CLASS_NOTES_FILE): asked for only on the local server,
-// never saved in the offline cache (no-store), and skipped without a word if the file isn't
+// The class-notes questions (see CLASS_NOTES_FILE), skipped without a word if the file isn't
 // there or isn't usable. Only items with a "pq-" ID are kept (official IDs are "q-", so they
 // can never clash), and each is marked classNotes here, whatever the file says.
 function loadClassNotes() {
-  if (!onLocalServer()) { return null; }
-  return fetch(CLASS_NOTES_FILE, { cache: "no-store" })
+  return fetch(CLASS_NOTES_FILE)
     .then(function (response) { return response.ok ? response.json() : null; })
     .then(function (data) {
       const list = data && Array.isArray(data.questions) ? data.questions : [];

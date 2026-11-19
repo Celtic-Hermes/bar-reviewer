@@ -1,0 +1,2028 @@
+{
+  "note": "Questions made from class notes (not an official source). All draft. IDs never change once created. Built by a private script; do not hand-edit.",
+  "questions": [
+    {
+      "id": "pq-0001",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), which statement best describes what the law sets out to do?",
+      "choices": {
+        "A": "Require every government office to replace all its paper records with electronic files",
+        "B": "Give electronic dealings legal effect and trust, in government and private life alike",
+        "C": "Fix the prices that online sellers may charge Filipino consumers on the internet",
+        "D": "Punish every misuse of computers, from spam messages to identity theft and fraud"
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Act's declared aims (Sec. 3) are to make dealings, contracts and the storage of information possible through electronic and similar means, to recognize electronic documents as authentic and reliable, and to promote electronic transactions in government and among the public. Its point is enabling: it removes legal doubt about doing things electronically, so that people and offices can rely on electronic records the way they rely on paper. Everything else in the Act, from the rules on writing and signatures to the rules on e-government, serves that aim. So the best description is that the law gives electronic dealings legal effect and trust.\n\n**A is wrong:** the Act asks government to be able to accept and issue electronic documents, but it never abolishes paper; enabling a choice is different from forcing a switch.\n\n**C is wrong:** price regulation is not part of the Act at all; it deals with the legal recognition of electronic records and transactions, not with what sellers charge.\n\n**D is wrong:** the Act penalizes a few specific acts, such as hacking and piracy, but it is not a general cybercrime code; treating it as one confuses it with later, broader laws.\n\n**Watch for:** If a question asks which law makes an electronic contract valid, the answer is this Act; if it asks which law punishes a wide range of online crimes, look beyond it.\n\n**Basis:** RA 8792, Sec. 3. Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html."
+    },
+    {
+      "id": "pq-0002",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), a lawmaker proposes that the State itself fund and run most of the country's ICT businesses. How does this proposal fit the policy the law declares?",
+      "choices": {
+        "A": "Well, because the policy makes the State the main investor in and owner of ICT businesses",
+        "B": "Poorly, because the policy expects private firms to lead ICT investment, with the State supporting",
+        "C": "Well, because the policy keeps private firms out of building national ICT networks",
+        "D": "It does not matter, because the law says nothing at all about who should invest in ICT"
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Act's declaration of policy treats information and communications technology as essential to nation-building, and it assigns roles: private enterprise is expected to be the main source of investment, while the State supports it. The State's part is to build an ICT-skilled workforce, encourage technology transfer, keep networks secure and neutral, and develop national information infrastructure linked to global networks. A plan for the State to fund and run most ICT businesses reverses those roles. It therefore sits poorly with the declared policy.\n\n**A is wrong:** this flips the policy; the State is cast as an enabler and regulator, not as the main investor or owner.\n\n**C is wrong:** nothing in the policy excludes private firms; on the contrary, it relies on them to drive investment.\n\n**D is wrong:** the declaration of policy expressly speaks to investment and to the State's supporting role, so the law is not silent.\n\n**Basis:** RA 8792, Sec. 2. Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html."
+    },
+    {
+      "id": "pq-0003",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), Rosa lent money to her cousin and wants to use their personal text messages about the loan in court. The cousin argues that the law covers only business dealings. Is he right?",
+      "choices": {
+        "A": "Yes, because messages between relatives fall outside the law when no business is involved",
+        "B": "Yes, because the law applies only when at least one party is a registered business entity",
+        "C": "No, because the law reaches data messages in personal as well as commercial dealings",
+        "D": "No, but only because the loan is large enough to count as a commercial transaction"
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Act's scope (Sec. 4) covers any kind of data message or electronic document used in commercial or non-commercial activities, whether domestic or international. Personal communications are expressly among the non-commercial uses, alongside government forms and information storage. The word “commerce” in the title describes the law's main motivation, not a limit on its reach. Rosa's text messages are data messages about a private loan, so they fall within the Act and the cousin's argument fails.\n\n**A is wrong:** this reads the law's title as its scope; the scope clause includes non-commercial activities such as personal communications.\n\n**B is wrong:** no such registration requirement exists in the scope clause; it looks at the kind of record, not at who the parties are.\n\n**D is wrong:** the amount is irrelevant; even a small personal loan is covered because personal communications are within the scope.\n\n**Watch for:** The same messages would also be covered if the cousin lived abroad, because the scope includes international as well as domestic dealings.\n\n**Basis:** RA 8792, Sec. 4. Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html."
+    },
+    {
+      "id": "pq-0004",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), a company signs a supply contract through an e-signing platform instead of on paper. If the law's requirements are met, how is the electronic contract treated?",
+      "choices": {
+        "A": "As a weaker contract a court may enforce only if no paper copy exists",
+        "B": "As having the same legal effect as a paper contract signed by hand",
+        "C": "As a draft that binds only after both sides print it and sign it by hand",
+        "D": "As valid between the parties but never usable as evidence in a court case"
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** Functional equivalence means that once the Act's requirements are satisfied, an electronic document or signature does the same legal job as its paper counterpart. The principle exists so that the medium, by itself, never decides whether a transaction counts. It is conditional: the electronic record must meet the requirements, for example on integrity and on signatures. Here the requirements are assumed to be met, so the e-signed contract has the same effect as one signed by hand on paper.\n\n**A is wrong:** the principle gives equal, not second-class, effect; there is no rule that paper must be looked for first.\n\n**C is wrong:** requiring a printed, hand-signed copy would defeat the whole point of functional equivalence.\n\n**D is wrong:** the Act recognizes electronic documents for evidentiary purposes too; equivalence is precisely what lets them be used in court.\n\n**Watch for:** If the facts said the requirements were not met (for example, the file was later altered), equivalence would not attach, and the answer would change.\n\n**Basis:** RA 8792, Sec. 7. Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html."
+    },
+    {
+      "id": "pq-0005",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), a buyer refuses to honor an order sent through a messaging app, arguing that only orders sent through one specific business email service are legally recognized. Which principle defeats this argument?",
+      "choices": {
+        "A": "Functional equivalence, since electronic orders must first be printed to have effect",
+        "B": "Non-discrimination, since only courts may decide which platforms are acceptable",
+        "C": "Confidentiality, since messages sent through apps are private and protected",
+        "D": "Technological neutrality, since the law does not prefer any particular platform"
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** Technological neutrality means the law does not favor any brand, product or technology. What matters is whether the record qualifies as a data message or electronic document, not which app, operating system or service produced it. The principle keeps the law from becoming outdated or from picking commercial winners. A messaging-app order qualifies as a data message, so the buyer cannot insist on one email service.\n\n**A is wrong:** functional equivalence concerns electronic records standing in for paper; it does not require printing, and it does not address which platform is used.\n\n**B is wrong:** non-discrimination bars denying effect to a record just because it is electronic; it does not hand courts the power to approve platforms.\n\n**C is wrong:** confidentiality governs who may access and share electronic records, not whether an order sent through an app is legally recognized.\n\n**Watch for:** If the parties had expressly agreed beforehand to use only one channel for orders, their agreement, not neutrality, would decide the issue.\n\n**Basis:** RA 8792, Sec. 2 (neutrality of technology). Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html."
+    },
+    {
+      "id": "pq-0007",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), a judge refuses to consider a lease agreement solely because the parties never had it on paper and kept it only as a computer file. Which principle does the judge violate?",
+      "choices": {
+        "A": "Technological neutrality, since the judge must accept files from every software brand",
+        "B": "Non-discrimination, since a record cannot be denied effect only for being electronic",
+        "C": "The best evidence rule, since the judge must always demand the paper original first",
+        "D": "Party autonomy, since the parties alone decide what evidence the court may consider"
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** Non-discrimination (Sec. 6) bars denying information legal effect, validity or enforceability on the sole ground that it is in electronic form. It exists so that courts and agencies give electronic records the same weight as paper ones, instead of treating the medium as a defect. The judge's only reason for refusing the lease is that it exists only as a file. That is exactly the ground the principle forbids.\n\n**A is wrong:** neutrality is about not favoring a brand or technology; the judge here rejected the record because it was electronic at all, not because of its brand.\n\n**C is wrong:** the Act adjusts the best evidence rule for electronic documents; it does not make paper the required first choice.\n\n**D is wrong:** parties do not control what a court may receive; and party autonomy is not the principle that addresses this refusal.\n\n**Watch for:** If the judge had refused the file because its integrity was doubtful, that would be a question of reliability, not discrimination, and could be proper.\n\n**Basis:** RA 8792, Sec. 6. Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html."
+    },
+    {
+      "id": "pq-0008",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1",
+        "s6.VIII.E.2.e"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 review questions"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), why is it a mistake to assume that an electronic document admitted in evidence also proves a valid transaction?",
+      "choices": {
+        "A": "Admission only lets the court receive it; validity depends on the deal's own requisites and form",
+        "B": "Admitted documents are always valid, so there is no mistake in the assumption",
+        "C": "Validity is first decided by the DTI, and courts may only rule on admissibility",
+        "D": "Electronic documents can be valid but are never admissible, so the issue cannot arise"
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** Validity and admissibility are separate questions. Admissibility asks whether the court may receive the electronic document as evidence; validity asks whether the transaction itself meets its essential requisites and any form the law requires. The Act mainly helps with proof: an electronic record can be received and weighed like paper. But receiving a record in evidence cannot cure a missing requirement of the transaction, so admission never settles validity by itself.\n\n**B is wrong:** this merges the two questions; a perfectly admissible email can still show a transaction that lacks a required form.\n\n**C is wrong:** the DTI does not decide the validity of private transactions; courts decide both questions.\n\n**D is wrong:** electronic documents are admissible under the Act and the Rules on Electronic Evidence; the problem is the opposite assumption.\n\n**Watch for:** In any problem, first ask which issue is being tested: if the question is whether a contract exists, think validity; if it is whether a court can look at the email, think admissibility.\n\n**Basis:** RA 8792, Secs. 7 (proviso) and 12. Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html."
+    },
+    {
+      "id": "pq-0009",
+      "type": "fillblank",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1.a"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), a courier company that receives and forwards electronic documents for its clients acts, as to those documents, as an ____.",
+      "fullText": "Under the Electronic Commerce Act (RA 8792), a courier company that receives and forwards electronic documents for its clients acts, as to those documents, as an intermediary.",
+      "explanation": "**Answer:** intermediary.\n\n**Why:** The Act distinguishes the people involved in an electronic document by their role. The originator is the person who creates or sends the document on its own account; the addressee is the person it is meant for; and an intermediary handles the document for someone else, by sending, receiving or storing it on that person's behalf. The courier company forwards its clients' documents, so it acts for others. That makes it an intermediary.\n\n**Not to be confused with:** “originator.” A student may pick it because the courier physically sends the documents, but the Act excludes intermediaries from the definition of originator: sending on behalf of another does not make the courier the author.\n\n**Watch for:** If the courier sent its own invoice to a client, it would be the originator of that document.\n\n**Basis:** RA 8792, Sec. 5(h)–(i). Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html."
+    },
+    {
+      "id": "pq-0010",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1.a"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), Atty. Reyes drafts a demand letter and has his secretary email it from the firm's account to Mr. Cruz. Who is the originator of the electronic document?",
+      "choices": {
+        "A": "The secretary, because she was the one who pressed send",
+        "B": "Mr. Cruz, because the letter was written for him to read",
+        "C": "Atty. Reyes, who wrote the letter and had it sent for him",
+        "D": "The email provider, because it carried the message across"
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The originator is the person who creates or sends the electronic document, but the Act expressly excludes an intermediary from that role. An intermediary is someone who sends, receives or stores an electronic document on behalf of another. The secretary pressed send, but she did so for Atty. Reyes, which makes her an intermediary. The letter is Atty. Reyes's document, so he is the originator.\n\n**A is wrong:** pressing send for someone else is the classic intermediary role, which the definition of originator excludes.\n\n**B is wrong:** Mr. Cruz is the addressee, the person the document is intended for, not its originator.\n\n**D is wrong:** the provider is a service provider that transmits the message; it neither authors nor sends it on its own account.\n\n**Watch for:** If the secretary had written and sent her own letter from her account, she would be the originator of that letter.\n\n**Basis:** RA 8792, Sec. 5(a), (h) and (i). Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html."
+    },
+    {
+      "id": "pq-0011",
+      "type": "fillblank",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1.a"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), a cloud company that only stores clients' contracts on its servers, with no right to change their contents unless authorized, is acting as a ____.",
+      "fullText": "Under the Electronic Commerce Act (RA 8792), a cloud company that only stores clients' contracts on its servers, with no right to change their contents unless authorized, is acting as a service provider.",
+      "explanation": "**Answer:** service provider.\n\n**Why:** A service provider is an entity that offers online services, network access or the technical means to store or transmit electronic documents. Because it is only the channel or the storage, it has no authority to change the content of what it carries unless it is authorized to do so. The cloud company stores contracts for clients and may not edit them, which fits that role exactly. So the correct term is service provider.\n\n**Not to be confused with:** “intermediary.” Both handle documents for others, but an intermediary sends, receives or stores a particular document on someone's behalf, while a service provider offers the general service or infrastructure (network access, storage, transmission) that many users rely on.\n\n**Watch for:** Whether a service provider can be held liable for what passes through it is a separate question with its own conditions (Sec. 30); verify the current rule.\n\n**Basis:** RA 8792, Secs. 5(j) and 30. Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html."
+    },
+    {
+      "id": "pq-0012",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1.a"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), Mia gets two things from a furniture store: a chat notice that her order went through, and an emailed PDF of the signed sales agreement. How should each be classified?",
+      "choices": {
+        "A": "The chat notice is a data message; the emailed agreement is an electronic document",
+        "B": "Both are electronic documents, since anything sent by phone or email is a document",
+        "C": "The chat notice is an electronic document; the emailed agreement is a data message",
+        "D": "Neither is covered, since only notarized electronic files are recognized by law"
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** A data message is any information generated, sent, received or stored by electronic or similar means (Sec. 5(c)). An electronic document is narrower: it is information that creates a right, ends an obligation or serves to prove a fact (Sec. 5(f)). A notice that an order went through is simply information sent electronically, the typical data message. The signed sales agreement establishes rights and obligations, so it is an electronic document; and both can still evidence an electronic contract.\n\n**B is wrong:** this ignores the narrower definition of electronic document; not every message establishes rights or proves facts in the legal sense.\n\n**C is wrong:** this reverses the categories; the signed agreement is the one that creates rights and obligations.\n\n**D is wrong:** notarization is not a condition for coverage; the Act covers ordinary data messages and electronic documents.\n\n**Watch for:** In evidence the distinction matters little, because the Rules on Electronic Evidence treat the two interchangeably.\n\n**Basis:** RA 8792, Sec. 5(c) and (f). Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html."
+    },
+    {
+      "id": "pq-0013",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1.a"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), Ben keeps a digital receipt of a purchase on his phone and never prints it. Is it an electronic document?",
+      "choices": {
+        "A": "No, because a record becomes a document only once it is printed on paper",
+        "B": "No, because a receipt does not create any right or prove any fact by itself",
+        "C": "Yes, because what counts is the information it holds, not whether it is on paper",
+        "D": "Yes, but only if the store attached a digital signature to the receipt file"
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** An electronic document is information, kept or handled electronically, that creates a right, ends an obligation or serves to prove a fact (Sec. 5(f)). The definition looks at the content and its legal use, not at paper or format. A receipt records that a sale took place and what was paid, so it can prove a fact. Kept on Ben's phone, it is therefore an electronic document even though it was never printed.\n\n**A is wrong:** printing is irrelevant; the definition is built around electronic production and storage, not paper.\n\n**B is wrong:** a receipt is evidence of payment and of the purchase, which is precisely proving a fact.\n\n**D is wrong:** a digital signature affects how strongly the document can be authenticated, not whether it is an electronic document at all.\n\n**Watch for:** A printout of the receipt is a separate question: in evidence, a printout that accurately reflects the data is treated as an original.\n\n**Basis:** RA 8792, Sec. 5(f). Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html."
+    },
+    {
+      "id": "pq-0014",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1.a",
+        "s6.VIII.E.2.e"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 review questions"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792) and the Rules on Electronic Evidence, a party offers a text message in court, and the other side objects that it is only a “data message,” not an “electronic document.” Should the objection succeed?",
+      "choices": {
+        "A": "Yes; only electronic documents, never data messages, may be offered in evidence",
+        "B": "No; in evidence the two kinds of electronic record are treated as interchangeable",
+        "C": "Yes; a text message must first be printed and notarized before it is offered",
+        "D": "No; a text message becomes a paper document once it is displayed on a phone"
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Act defines a data message broadly, as any information sent or stored electronically, and an electronic document more narrowly, as information that establishes a right, extinguishes an obligation or proves a fact (Sec. 5). Outside the courtroom the distinction can matter, but the Rules on Electronic Evidence (Rule 2) treat the two terms interchangeably for purposes of evidence. The objection rests entirely on the label. Since the label makes no difference in evidence, the objection should be overruled.\n\n**A is wrong:** the Rules on Electronic Evidence make the two interchangeable, so a data message is not excluded for being a data message.\n\n**C is wrong:** neither printing nor notarization is a condition for offering a text message; authentication is what is needed.\n\n**D is wrong:** the right result, but for the wrong reason: a message shown on a screen is still electronic, not paper.\n\n**Watch for:** If the objection were instead that the message was never authenticated, it would raise a real issue, because electronic evidence must still be authenticated.\n\n**Basis:** RA 8792, Sec. 5; Rules on Electronic Evidence, Rule 2, Sec. 1(h). Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html, https://lawphil.net/courts/supreme/am/am_01-7-01_2001.html."
+    },
+    {
+      "id": "pq-0015",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1.a"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), Carlo types his full name at the end of an email agreeing to a deal. Dana signs a government e-filing with a signature that relies on encryption keys. Which statement is correct?",
+      "choices": {
+        "A": "Both used digital signatures, because both were made using a computer or a phone",
+        "B": "Carlo's typed name is not a signature at all, so only Dana's signing has effect",
+        "C": "Carlo used an electronic signature; Dana used a digital signature, a more secure type",
+        "D": "Dana's is not an electronic signature, because encryption takes it outside the law"
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** An electronic signature is any mark, sound or method in electronic form that identifies a person and is attached to a record with the intention of signing or approving it (Sec. 5(e)); a typed name can qualify. A digital signature is a particular kind of electronic signature that uses a pair of encryption keys, which lets others check both who signed and whether the record was changed. Every digital signature is an electronic signature, but not the other way around. So Carlo's typed name is an electronic signature, and Dana's key-based signature is a digital signature.\n\n**A is wrong:** using a device does not make a signature digital; a digital signature specifically relies on encryption keys.\n\n**B is wrong:** a typed name can be an electronic signature; whether it equals a handwritten one depends on the Sec. 8 requirements.\n\n**D is wrong:** encryption does not remove a signature from the law; a digital signature is a subset of electronic signatures.\n\n**Watch for:** Whether Carlo's typed name has the full effect of a handwritten signature is a different question, decided by the Sec. 8 requirements, not by the label.\n\n**Basis:** RA 8792, Sec. 5(e); Rules on Electronic Evidence, Rule 2, Sec. 1(a) and (j). Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html, https://lawphil.net/courts/supreme/am/am_01-7-01_2001.html."
+    },
+    {
+      "id": "pq-0016",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1.a"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), an emailed contract is offered to satisfy a legal requirement that the agreement be in writing. Which of these events would most likely defeat that?",
+      "choices": {
+        "A": "One party quietly changed the price in the file after both sides had agreed to it",
+        "B": "The email system stamped the date and time on the message when it was delivered",
+        "C": "Both parties later added an agreed remark confirming that the contract was received",
+        "D": "The file was moved to a new folder when the company upgraded its email servers"
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** An electronic document satisfies a requirement of writing if it keeps its integrity and reliability and can be authenticated for later reference (Sec. 7(a)). Integrity means the document has stayed complete and unaltered, with some changes allowed: endorsements, authorized changes, and changes that happen naturally when a record is sent, stored or displayed. The test protects what the parties actually agreed on, while tolerating harmless technical changes. A secret change to the price alters the agreed terms, so the file no longer has the integrity the writing requirement needs.\n\n**B is wrong:** a delivery time-stamp is a change that arises in the ordinary course of communication, which the rule expressly tolerates.\n\n**C is wrong:** an endorsement or authorized change does not break integrity; only unauthorized alteration does.\n\n**D is wrong:** moving a file during storage changes where it is kept, not what it says; that is a normal storage change.\n\n**Watch for:** If the price change had been agreed by both parties and recorded, it would be an authorized change and the writing requirement could still be met.\n\n**Basis:** RA 8792, Sec. 7(a). Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html."
+    },
+    {
+      "id": "pq-0017",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1.a"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), a regulation requires a company to present its invoices in their original form during an audit, but the company kept them only as electronic files. What must it show for the files to satisfy the requirement?",
+      "choices": {
+        "A": "Reliable assurance of their integrity since final form, and that they can be displayed",
+        "B": "That they were printed the day they were made and signed by a company officer",
+        "C": "That the auditor agreed beforehand to accept electronic files instead of paper",
+        "D": "Nothing more, since electronic files always count as originals in any audit"
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** Where a law requires a document to be presented or kept in its original form, an electronic document satisfies it on two conditions. First, there must be reliable assurance that the document's integrity has been kept from the time it was first generated in its final form. Second, the person who must see it has to be able to view it on a screen or in some other form. The company must therefore show both: that the invoice files have not been altered since they were finalized, and that the auditor can view them.\n\n**B is wrong:** printing and signing are not conditions; the rule is built around integrity and the ability to display.\n\n**C is wrong:** the rule does not depend on the other side's consent; it sets objective conditions the files must meet.\n\n**D is wrong:** equivalence is conditional; a file whose integrity cannot be assured does not satisfy an original-form requirement.\n\n**Watch for:** Verify the current section number: one set of materials places this rule in Sec. 7(c), another in Sec. 10.\n\n**Also note:** Both Sec. 7(c) (for electronic documents) and Sec. 10 (for data messages and electronic documents) state this original-form rule.\n\n**Basis:** RA 8792, Secs. 7(c) and 10. Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html."
+    },
+    {
+      "id": "pq-0018",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1.a"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), another law requires a particular formality for a certain kind of contract to be valid. If the parties make that contract electronically, what is the effect of RA 8792 on the formality?",
+      "choices": {
+        "A": "It removes the formality, since electronic contracts are exempt from such rules",
+        "B": "It replaces the formality with an e-signature, which is always enough by itself",
+        "C": "It suspends the formality until the DTI issues rules for that kind of contract",
+        "D": "None; the Act leaves formalities that other laws require for validity untouched"
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The Act recognizes electronic documents and signatures, but it contains an express limit: none of its provisions changes what existing laws require as formalities for a document's validity. The limit preserves rules that exist for protection, such as public instruments and notarization. An electronic version of the contract can therefore help prove it, but it cannot excuse a formality the other law makes essential. The formality still has to be complied with.\n\n**A is wrong:** the Act's proviso says the opposite: existing formality requirements are not varied.\n\n**B is wrong:** an e-signature can stand for a signature, but it cannot supply a different formality such as a public instrument.\n\n**C is wrong:** there is no such suspension and no DTI power to waive formalities required by other laws.\n\n**Watch for:** Which documents still need a physically signed paper version (for example, checks, promissory notes or powers of attorney) is a separate question; verify the current rule.\n\n**Basis:** RA 8792, Sec. 7 (proviso). Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html."
+    },
+    {
+      "id": "pq-0019",
+      "type": "essay",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1.a"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), Tomas, who works abroad, sends his sister an email saying she may sell his house and lot in Laguna on his behalf. She finds a buyer. The buyer's lawyer questions whether the sister has valid authority. Advise the buyer.",
+      "suggestedAnswer": {
+        "answer": "The buyer should not rely on the email alone. An agent's authority to sell land is subject to a special form requirement, and the e-commerce law does not relax such requirements.",
+        "legalBasis": "Under the Civil Code, when a sale of land is made through an agent, the agent's authority must be in writing (Art. 1874); otherwise the sale is void. RA 8792 lets an electronic document satisfy a requirement of writing (Sec. 7), but it also states that it does not vary formalities that other laws require for validity. Authority to sell land is commonly listed among the documents that must still be physically written and signed; verify the current rule on whether an electronic document can satisfy it.",
+        "application": "The sister's only authority is an email from Tomas. Because the sale involves land, her authority is subject to the special form rule, and a defect in that authority would make the sale vulnerable. The safer course is for the buyer to require a written, signed (and, in practice, properly executed) authority from Tomas before paying or signing.",
+        "conclusion": "Advise the buyer to require a properly executed written authority from Tomas; the email by itself is not a safe basis for the sale.\n\n**Common mistake:** treating the case as a pure e-commerce question (an email is writing, so it is fine) and forgetting the special form rule for an agent's authority to sell land.\n\n**Watch for:** If the property were a car instead of land, the special rule on an agent's authority to sell land would not apply, and the analysis would change.\n\n**Also note:** Whether an email can satisfy the Art. 1874 writing requirement is not settled in the statute itself; check the current rule and any decisions before relying on it.\n\n**Basis:** Civil Code, Art. 1874; RA 8792, Sec. 7. Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html, https://lawphil.net/statutes/repacts/ra1949/ra_386_1949.html."
+      },
+      "keyPoints": [
+        "Sale of land through an agent: authority must be in writing (Art. 1874)",
+        "RA 8792 lets electronic documents satisfy writing, but does not vary other laws' formalities for validity",
+        "Authority to sell land is commonly treated as needing a physically written, signed document (verify)",
+        "Practical advice: require a properly executed written authority before proceeding"
+      ]
+    },
+    {
+      "id": "pq-0021",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1.a"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 review questions"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), a deed that the law requires to be in a public instrument is signed by both parties with electronic signatures and is never notarized. Do the electronic signatures make it a public instrument?",
+      "choices": {
+        "A": "Yes; an e-signature has the same effect as notarization under the e-commerce law",
+        "B": "Yes, but only if both parties used digital signatures backed by public-key certificates",
+        "C": "No; e-signatures are never valid, so the deed has no effect of any kind at all",
+        "D": "No; where a public instrument is required, an e-signature alone cannot supply it"
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** An electronic signature can stand in for a handwritten signature if the Sec. 8 requirements are met. But a public instrument is more than a signed document: it requires the formalities of notarization or official execution. The e-commerce law does not supply notarization, and notarized documents are governed by the Supreme Court's notarial rules. Two e-signatures on an un-notarized deed therefore do not make it a public instrument.\n\n**A is wrong:** this confuses signature with notarization; the Act makes an e-signature equal to a signature, not to a notarial act.\n\n**B is wrong:** even the strongest digital signature proves who signed; it still is not a notarization.\n\n**C is wrong:** the right result for the wrong reason; e-signatures are valid, they simply cannot create a public instrument.\n\n**Watch for:** Verify the current Supreme Court rules on remote and electronic notarization, which may offer a way to notarize electronically.\n\n**Also note:** The Rules on Electronic Evidence treat a document electronically notarized under Supreme Court rules as a public document, and the Supreme Court has since issued rules on electronic notarization (A.M. No. 24-10-14-SC, listed in the 2027 syllabus); this area has changed, so check the current text.\n\n**Basis:** RA 8792, Sec. 7 (proviso); Rules on Electronic Evidence, Rule 5, Sec. 3. Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html, https://lawphil.net/courts/supreme/am/am_01-7-01_2001.html."
+    },
+    {
+      "id": "pq-0023",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s6.VIII.E.2.e",
+        "s2.VI.C.1.a"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), a lawyer argues that because the opposing party's evidence is an email, ordinary rules of evidence such as the hearsay rule no longer apply to it. Is the argument sound?",
+      "choices": {
+        "A": "Yes; the Act sets aside every rule of evidence for data messages and documents",
+        "B": "No; the Act changes admissibility rules only on authentication and best evidence",
+        "C": "Yes; emails are always treated as admissions, so other evidence rules never apply",
+        "D": "No; emails can never be offered in evidence, so the question does not even arise"
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Act deliberately limits its effect on the law of evidence. It changes only the rules on authentication and best evidence, so that electronic records can be proved and treated as originals; it leaves every other statutory rule on admissibility as it was. The purpose is to remove obstacles that arise because a record is electronic, not to create a special zone free of evidence rules. The lawyer's argument would exempt emails from rules the Act never touched, so it fails.\n\n**A is wrong:** the Act's change is narrow, limited to authentication and best evidence; the other rules still apply.\n\n**C is wrong:** nothing in the Act treats every email as an admission; this invents a rule.\n\n**D is wrong:** emails are admissible electronic evidence; the problem is not admissibility in general.\n\n**Watch for:** A question about whether an emailed record is an “original” is testing the best evidence change; one about who wrote it is testing authentication.\n\n**Basis:** RA 8792, Sec. 7; Rules on Electronic Evidence, Rule 1, Sec. 3. Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html, https://lawphil.net/courts/supreme/am/am_01-7-01_2001.html."
+    },
+    {
+      "id": "pq-0024",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1.a",
+        "s6.VIII.D.5"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 review questions"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), an email is admitted in evidence, and the court must now decide how much weight to give it. What does the law tell the court to look at?",
+      "choices": {
+        "A": "Whether it was printed on official letterhead before being offered",
+        "B": "Whether the sender is a corporation or a private individual",
+        "C": "How reliably it was generated, stored or sent, and how its originator was identified",
+        "D": "Nothing more, since an admitted electronic record always has full weight"
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** Admission and weight are separate steps: once an electronic record is admitted, the court still decides how much it proves. RA 8792 (Sec. 12) tells the court to look at the reliability of the way the record was generated, stored or communicated, the reliability of the way its originator was identified, and other relevant factors. The Rules on Electronic Evidence (Rule 7, Sec. 1) spell these out further and add the integrity of the system in which the record was kept. These factors target the real risks of electronic records, which can be altered or falsely attributed. So the court looks first at how the email was made and kept and how its sender was identified.\n\n**A is wrong:** letterhead is a paper-world signal; the statute's factors concern how the electronic record was made, kept and attributed.\n\n**B is wrong:** the kind of sender is not a factor; what matters is how reliably the sender was identified.\n\n**D is wrong:** admission does not fix weight; the court must still assess reliability.\n\n**Watch for:** If the email sat in a shared account that anyone could edit, its weight would drop even though it remains admissible.\n\n**Basis:** RA 8792, Sec. 12; Rules on Electronic Evidence, Rule 7, Sec. 1. Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html, https://lawphil.net/courts/supreme/am/am_01-7-01_2001.html."
+    },
+    {
+      "id": "pq-0025",
+      "type": "essay",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1.a",
+        "s6.VIII.E.2.e"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 review questions"
+      },
+      "prompt": "Under the Rules on Electronic Evidence and the Electronic Commerce Act (RA 8792), a supplier sues a buyer for breach of a contract made by email and offers printouts of the emails. The buyer objects that the printouts are mere copies and inadmissible. The supplier's IT manager testifies on how the company's email system creates and stores messages. Rule on the objection.",
+      "suggestedAnswer": {
+        "answer": "The objection fails. The printouts are treated as originals, and the IT manager's testimony authenticates them.",
+        "legalBasis": "Under the Rules on Electronic Evidence, a printout or other output that accurately reflects the electronic data is treated as an original (Rule 4, Sec. 1). An electronic document must be authenticated, which can be done through evidence showing its integrity and reliability (Rule 5, Sec. 2). Once it is admitted, the other party may still argue about its weight.",
+        "application": "First, the printouts reflect the emails stored in the supplier's system, so they are not “mere copies” in the sense of the best evidence rule; they count as originals. Second, the IT manager explains how the system generates and stores emails, which supports their integrity and reliability and so authenticates them. Third, the buyer's remaining remedy is to attack how much the printouts should prove.",
+        "conclusion": "The printouts are admissible; the buyer may only contest their weight.\n\n**Common mistake:** applying the paper-based rule that a copy is inadmissible when the original exists, without recognizing that an accurate printout of electronic data is itself an original.\n\n**Watch for:** If the supplier had offered faxed copies instead of printouts of the emails, the answer would change: a fax is treated as a paper copy, not as electronic evidence.\n\n**Basis:** Rules on Electronic Evidence, Rule 4, Sec. 1 and Rule 5, Sec. 2(c). Checked against the official text: https://lawphil.net/courts/supreme/am/am_01-7-01_2001.html."
+      },
+      "keyPoints": [
+        "An accurate printout of the electronic data counts as an original (REE Rule 4, Sec. 1)",
+        "Authentication by proof that the records are intact and reliable (REE Rule 5, Sec. 2(c))",
+        "The IT manager's testimony supplies that evidence",
+        "The opposing party may contest weight, not admissibility as a copy"
+      ]
+    },
+    {
+      "id": "pq-0026",
+      "type": "essay",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1.a"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), Faye, a purchasing officer, approves a purchase order by signing in to her company's procurement portal with her personal account and clicking “Approve.” The supplier later doubts whether this counts as her signature. When does an electronic approval like Faye's equal a handwritten signature?",
+      "suggestedAnswer": {
+        "answer": "When it is shown that the approval was made under a set procedure, which the interested parties cannot change, that identifies Faye, is reliable for the purpose, is required before the order can proceed, and lets the supplier check it.",
+        "legalBasis": "An electronic signature equals a handwritten one only if it is proved that a prescribed procedure, not alterable by the interested parties, existed under which (Sec. 8): (a) a method identifies the person to be bound and shows her access to the document for giving consent; (b) the method is reliable and appropriate for the purpose, considering all the circumstances and any agreement; (c) signing is necessary for the transaction to go forward; and (d) the other party is authorized and able to verify the signature and decide whether to proceed. All four must be met.",
+        "application": "First, Faye's personal account identifies her and shows she had access to the order; at the very least, an individual log-in is needed. Second, if the portal is the company's standard, secure procurement system, it is reliable and appropriate for approving orders. Third, the order cannot go through without her approval. Fourth, if the supplier receives the approval and can confirm it came from Faye's account, the verification requirement is met.",
+        "conclusion": "If all four requirements are shown, Faye's click is equivalent to her handwritten signature on the purchase order.\n\n**Common mistake:** listing the four requirements without applying each one to the facts, or treating any electronic click as automatically equal to a signature.\n\n**Watch for:** If Faye's team shared one generic account, the identification requirement would fail and the answer would change.\n\n**Basis:** RA 8792, Sec. 8. Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html."
+      },
+      "keyPoints": [
+        "A prescribed procedure the interested parties cannot alter",
+        "(a) Identification and access for consent (at least an individual log-in)",
+        "(b) Reliable and appropriate for the purpose",
+        "(c) Signing is necessary to proceed",
+        "(d) The other party can verify and decide to proceed",
+        "All four requirements must be met"
+      ]
+    },
+    {
+      "id": "pq-0027",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1.a"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 review questions"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), a company's signing system identifies the signer, is reliable, and must be used before a deal can proceed, but the other party has no way to verify the signature. Does the signature equal a handwritten one?",
+      "choices": {
+        "A": "Yes; meeting most of the requirements is enough for the signature to count",
+        "B": "Yes; reliability is the only requirement that really matters in the end",
+        "C": "No; every requirement must be met, including that the other side can verify it",
+        "D": "No; an electronic signature can never be equal to one written by hand"
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** An electronic signature equals a handwritten signature only when every requirement of Sec. 8 is satisfied: identification, reliability, necessity and verifiability. The requirements work together; each one guards a different risk, and the verification requirement protects the party who relies on the signature. Here three are met, but the other party cannot verify the signature at all. Because one requirement is missing, the signature does not reach equivalence.\n\n**A is wrong:** the requirements are cumulative, not a scorecard; missing any one defeats equivalence.\n\n**B is wrong:** reliability is only one of four; the law separately requires that the other party can verify.\n\n**D is wrong:** the right result for the wrong reason; e-signatures can be equivalent when all requirements are met.\n\n**Watch for:** If the system later gave the other party a way to confirm signatures, the missing requirement would be cured for future transactions.\n\n**Basis:** RA 8792, Sec. 8. Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html."
+    },
+    {
+      "id": "pq-0028",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1.a"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), five employees share one generic account to approve payments in a company system, so any of them can click “Approve.” Which requirement for treating an approval as a person's signature is most clearly in trouble?",
+      "choices": {
+        "A": "Identifying which person actually made the approval",
+        "B": "Showing that the system came from a well-known software company",
+        "C": "Proving that the payment was large enough to need a signature",
+        "D": "Showing that each approval was printed and kept in the files"
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** One requirement for an electronic signature to equal a handwritten one is a method that identifies the person to be bound and shows her access to the document for consenting (Sec. 8(a)). At the very least, this calls for an individual log-in, so that each approval can be tied to one person. A shared generic account cannot tell which of five employees clicked. The identification requirement is therefore the one most clearly in trouble.\n\n**B is wrong:** the law is technology-neutral; the vendor's reputation is not a requirement.\n\n**C is wrong:** the size of the payment is not one of the requirements for equivalence.\n\n**D is wrong:** printing is not required; the problem is attribution to a person, not paper records.\n\n**Watch for:** If each employee had a personal account with a password, identification would be satisfied and the analysis would move on to the other requirements.\n\n**Basis:** RA 8792, Sec. 8(a). Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html."
+    },
+    {
+      "id": "pq-0029",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1.a"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 review questions"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), a bank relies on a client's electronic signature to release funds, and the client later denies signing. What does the law presume about the signature?",
+      "choices": {
+        "A": "It is presumed forged until the client personally proves that the signature is his",
+        "B": "It is the client's, made to approve, unless the bank knew of defects or relied unreasonably",
+        "C": "It is valid in every case, even when the bank already knew it was defective",
+        "D": "It carries no presumption, so the bank must prove every signature from scratch"
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Act (Sec. 9) presumes that an electronic signature belongs to the person it is linked to and that it was affixed to sign or approve the record. The presumption protects people who rely on electronic signatures in good faith, which keeps electronic dealings practical. It does not protect a relying party who knew the signature was defective or whose reliance was unreasonable. So the bank starts with the presumption in its favor, but loses it if it knew of a defect or acted unreasonably.\n\n**A is wrong:** this reverses the presumption; the law presumes the signature is genuine, not forged.\n\n**C is wrong:** the presumption fails when the relying party knew of defects; it is not absolute.\n\n**D is wrong:** the Act does create a presumption in favor of the relying party.\n\n**Watch for:** If the facts showed the bank ignored obvious warning signs, the presumption would fail because its reliance was unreasonable.\n\n**Basis:** RA 8792, Sec. 9. Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html."
+    },
+    {
+      "id": "pq-0030",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1.a"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 review questions"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), Liza pastes a scanned image of her handwritten signature into a PDF contract and emails it. What is the status of that scanned signature?",
+      "choices": {
+        "A": "It is automatically equal to her handwritten signature because it is an exact image",
+        "B": "It is an electronic signature, but whether it equals a handwritten one depends on the process",
+        "C": "It is not a signature at all and can never have legal effect in any situation",
+        "D": "It is a digital signature, because a computer was used to scan and paste the image"
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** A scanned image of a signature is a mark in electronic form attached to a document, so it is an electronic signature (Sec. 5(e)). Whether it has the full effect of a handwritten signature depends on the Sec. 8 requirements. A pasted image is usually weak on two of them: it does not reliably show who pasted it, and the other party usually cannot verify it. So it is a signature, but its equivalence is doubtful unless the surrounding process supplies identification and verification.\n\n**A is wrong:** an exact image is easy to copy and paste by anyone, which is why equivalence turns on the process, not the picture.\n\n**C is wrong:** saying it is never recognized is overbroad; it is an electronic signature whose effect depends on Sec. 8.\n\n**D is wrong:** a digital signature uses encryption keys; scanning an image does not make it digital in that sense.\n\n**Watch for:** Verify the current rule: some materials say a scanned signature is simply not recognized, which is broader than the statute supports.\n\n**Basis:** RA 8792, Secs. 5(e) and 8. Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html."
+    },
+    {
+      "id": "pq-0031",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1.a"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 review questions"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), a customer signs up for an online service by clicking “I accept” under its terms. Is the click an electronic signature, and what decides whether it equals a handwritten one?",
+      "choices": {
+        "A": "It is not a signature, because the customer did not write or type any name",
+        "B": "It always equals a handwritten signature, whatever process was used to capture it",
+        "C": "It is an electronic signature, and its effect depends on the process used to capture it",
+        "D": "It counts only if the customer later prints the terms and signs them by hand"
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** An electronic signature includes a method or procedure a person adopts with the intention of approving a record. Clicking “I accept” is such a method, so it is a valid electronic signature. Whether it has the full effect of a handwritten signature depends on the process behind the click: whether it identifies the customer, is reliable, is required to proceed, and can be verified (Sec. 8). The answer therefore lies in the process, not in the click itself.\n\n**A is wrong:** an electronic signature need not be a name; a procedure adopted to approve a record can qualify.\n\n**B is wrong:** equivalence is conditional on the Sec. 8 requirements; a weak process may not meet them.\n\n**D is wrong:** requiring a hand-signed printout would defeat the point of recognizing electronic signatures.\n\n**Watch for:** If the click were made from a logged-in account with a confirmation step, the Sec. 8 requirements would be easier to prove.\n\n**Basis:** RA 8792, Secs. 5(e) and 8. Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html."
+    },
+    {
+      "id": "pq-0032",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1.a"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 review questions"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), Paolo electronically signs a one-sided written acknowledgment of a debt, and no other party takes part in the signing. What decides whether his electronic signature can equal a handwritten one?",
+      "choices": {
+        "A": "Whether the document is later printed out on paper",
+        "B": "Whether some other party is able to verify the signature",
+        "C": "Whether he signed using a government-issued computer",
+        "D": "Nothing, since one-sided documents always qualify"
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** One of the requirements for an electronic signature to equal a handwritten one is that the other party is authorized and enabled to verify it (Sec. 8(d)). A one-sided document has no built-in counterparty, which makes this requirement the sticking point. It can still be satisfied if some party is able to check the signature. So the deciding question is whether anyone is enabled to verify Paolo's signature.\n\n**A is wrong:** printing does not supply verification and is not a requirement.\n\n**C is wrong:** the device used is irrelevant; the law is technology-neutral.\n\n**D is wrong:** one-sided documents face a real hurdle because the verification requirement still applies.\n\n**Watch for:** If Paolo's creditor received the acknowledgment through a system that let it confirm Paolo's identity, verification would be satisfied.\n\n**Basis:** RA 8792, Sec. 8(d). Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html."
+    },
+    {
+      "id": "pq-0033",
+      "type": "essay",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1.a"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 review questions"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), a lending company wants its loan agreements signed online in the way most likely to hold up if a borrower later denies signing. It is choosing among: (1) a typed name below the email message, (2) a signing platform with an audit trail and identity checks, and (3) a digital signature using public-key infrastructure (PKI). Advise the company.",
+      "suggestedAnswer": {
+        "answer": "All three are electronic signatures, but a PKI digital signature gives the strongest proof of who signed and that nothing was changed, and a platform with an audit trail is the next best choice.",
+        "legalBasis": "An electronic signature equals a handwritten one only if the Sec. 8 requirements (identification, reliability, necessity, verifiability) are proved. A typed name can be an electronic signature (Sec. 5(e)) but does not automatically meet them. Signing platforms help prove the requirements through audit trails and identity checks. A digital signature uses an asymmetric (public-key) system that shows who signed and whether the document was altered afterward; Capalla v. COMELEC recognized such signatures.",
+        "application": "If a borrower denies signing, the company must prove the Sec. 8 requirements. A typed name gives little evidence of who typed it. A platform's audit trail records identity checks and each signing step, which supports identification and verification. A PKI digital signature goes further by also proving that the agreement was not altered after signing.",
+        "conclusion": "The company should use PKI digital signatures where it can, or else a platform with audit trails and identity checks; a typed name alone is the weakest choice.\n\n**Common mistake:** saying that only digital signatures are valid; all three are valid electronic signatures, and the difference lies in how easily the Sec. 8 requirements can be proved.\n\n**Watch for:** If the documents were ones the law requires to be notarized, none of the three would be enough by itself.\n\n**Basis:** RA 8792, Secs. 5(e) and 8; Rules on Electronic Evidence, Rule 2, Sec. 1(a); Capalla v. COMELEC, G.R. No. 201112, June 13, 2012. Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html, https://lawphil.net/courts/supreme/am/am_01-7-01_2001.html, https://lawphil.net/judjuris/juri2012/jun2012/gr_201112_2012.html."
+      },
+      "keyPoints": [
+        "All three are electronic signatures; equivalence depends on proving the Sec. 8 requirements",
+        "A typed name does not automatically meet Sec. 8",
+        "Audit trails and identity checks help prove identification and verification",
+        "A PKI digital signature proves both identity and integrity (Capalla v. COMELEC)",
+        "A clear recommendation ranked by strength of proof"
+      ]
+    },
+    {
+      "id": "pq-0034",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "E-Commerce Act Cases",
+      "syllabusIds": [
+        "s2.VI.C.1.a"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), a document is signed with a digital signature. Someone holding the original unsigned document and the signer's public key wants to check it. What can that person find out?",
+      "choices": {
+        "A": "The signer's home address and the place where the document was drafted",
+        "B": "Whether the document was notarized and recorded with a government office",
+        "C": "The signer's private key itself, so the person can sign documents for the signer",
+        "D": "Whether the signer's private key was used, and whether the document was later altered"
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** As explained in Capalla v. COMELEC, a digital signature is an electronic signature created by transforming a document with an asymmetric (public-key) system. The signer uses a private key; others use the matching public key to check the result. Someone with the original document and the public key can therefore tell whether the transformation was made with the signer's private key and whether the document was changed after it was signed. That is why digital signatures prove both identity and integrity.\n\n**A is wrong:** a digital signature proves the key used and the document's integrity, not personal details like an address.\n\n**B is wrong:** notarization and registration are separate formalities that a digital signature does not show.\n\n**C is wrong:** the private key is never revealed by the public key; that secrecy is the whole basis of the system.\n\n**Watch for:** If the document had been changed after signing, the check would show the mismatch, which is why digital signatures are strong evidence of integrity.\n\n**Basis:** Capalla v. COMELEC, G.R. No. 201112, June 13, 2012. Checked against the official text: https://lawphil.net/judjuris/juri2012/jun2012/gr_201112_2012.html."
+    },
+    {
+      "id": "pq-0035",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "E-Commerce Act Cases",
+      "syllabusIds": [
+        "s2.VI.C.1.a"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), election returns are signed electronically when the board chairperson uses a device holding a digital certificate and the board members enter PINs issued by the election body, before the returns are transmitted. A losing candidate claims the returns were never validly signed. Following Capalla v. COMELEC, how should this be resolved?",
+      "choices": {
+        "A": "The returns were validly signed, because the certificate-and-PIN procedure meets the law",
+        "B": "The returns are void, because election returns must always be signed by hand",
+        "C": "The returns are valid only if each member also signs a printed copy of them",
+        "D": "The returns are void, because a PIN cannot serve as a signature under any law"
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** An electronic signature may take the form of a distinctive mark or sound in electronic form, or of a method or procedure a person adopts with the intention of approving or authenticating a record. In Capalla v. COMELEC, the Court held that the digital certificates in the devices, the PINs, and the procedure used to turn each election return into a digitally signed document before transmission complied with the law. The candidate's claim assumes a signature must be a handwritten mark. Under the Court's reasoning, the procedure itself is the signature, so the returns were validly signed.\n\n**B is wrong:** this ignores that a method or procedure adopted to authenticate a record can be an electronic signature.\n\n**C is wrong:** the Court found the electronic procedure sufficient on its own; no printed copy was required.\n\n**D is wrong:** a PIN used as part of an authentication procedure can form part of an electronic signature.\n\n**Watch for:** If the board had skipped the PIN step, the procedure would be incomplete and the claim would deserve a closer look.\n\n**Basis:** Capalla v. COMELEC, G.R. No. 201112, June 13, 2012. Checked against the official text: https://lawphil.net/judjuris/juri2012/jun2012/gr_201112_2012.html."
+    },
+    {
+      "id": "pq-0036",
+      "type": "essay",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1.a"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), Dina orders a phone on a shopping app by tapping the purchase button and paying online. The seller later refuses to deliver, claiming there is no contract because nobody signed anything. Is the seller right?",
+      "suggestedAnswer": {
+        "answer": "No. A contract made through electronic means is not invalid simply because it is electronic or unsigned, as long as its essential elements are present.",
+        "legalBasis": "Under RA 8792 (Sec. 16(1)), unless the parties agree otherwise, every element of a contract, offer and acceptance included, may be shown through electronic records, and being electronic is never by itself a reason to treat a contract as invalid. A consensual contract such as a sale does not need a signature unless the law requires a particular form. The essential elements of a contract must still be present.",
+        "application": "The seller's app offered the phone at a price, and Dina's tap on the purchase button and her payment expressed her acceptance. Consent, a definite object and a price are all present. Nothing in the law requires a signature for this sale, and the electronic form of the exchange is not a ground to deny it effect.",
+        "conclusion": "A valid contract of sale was formed; the seller must deliver the phone.\n\n**Common mistake:** stopping at “electronic contracts are valid” without checking that the essential elements of the contract are actually present.\n\n**Watch for:** If the app had only displayed the phone with “price on request,” there would be no definite offer to accept, and the analysis would change.\n\n**Basis:** RA 8792, Sec. 16(1); Civil Code, Arts. 1318 and 1356. Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html, https://lawphil.net/statutes/repacts/ra1949/ra_386_1949.html."
+      },
+      "keyPoints": [
+        "Sec. 16(1): contract elements may be expressed and proved electronically",
+        "No contract is denied validity just because it is electronic",
+        "A consensual contract needs no signature unless the law requires a form",
+        "The essential elements must still be present, and are present here"
+      ]
+    },
+    {
+      "id": "pq-0037",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1.a"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 review questions"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792) and the Civil Code, a seller emails an offer to sell a machine on Monday; the buyer emails an unqualified acceptance on Tuesday, which the seller reads that afternoon; on Wednesday the seller emails that it is withdrawing. When was the contract perfected?",
+      "choices": {
+        "A": "On Monday, as soon as the seller sent its offer to the buyer by email",
+        "B": "On Wednesday, because the seller could still withdraw until it confirmed",
+        "C": "On Tuesday, once the acceptance created consent on the machine and its price",
+        "D": "Never, because email contracts need a signed paper copy to be perfected"
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** RA 8792 lets offer and acceptance be made through emails (Sec. 16(1)), but it does not change when a contract is perfected; that is still governed by the Civil Code. A consensual contract is perfected by the meeting of the minds on its object and cause (Arts. 1305, 1315, 1319). The buyer's unqualified acceptance, read by the seller on Tuesday, completed that meeting of minds. A withdrawal on Wednesday comes after perfection and cannot undo the contract.\n\n**A is wrong:** an offer alone is not a contract; perfection needs an acceptance.\n\n**B is wrong:** after an unqualified acceptance, no further confirmation is needed; the withdrawal is too late.\n\n**D is wrong:** email contracts are perfected like any consensual contract; no paper copy is required.\n\n**Watch for:** If the buyer's Tuesday reply had changed the price, it would be a counter-offer, not an acceptance, and the seller's Wednesday withdrawal could prevent any contract.\n\n**Basis:** RA 8792, Sec. 16(1); Civil Code, Arts. 1305, 1315 and 1319. Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html, https://lawphil.net/statutes/repacts/ra1949/ra_386_1949.html."
+    },
+    {
+      "id": "pq-0038",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1.a"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 review questions"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), two businesses agree by email on a service contract, and neither signs anything, not even electronically. No law requires a special form for this kind of contract. Is it valid?",
+      "choices": {
+        "A": "Yes; a consensual contract needs no signature when no special form is required",
+        "B": "No; every contract must be signed by both parties before it can take effect",
+        "C": "No; email contracts take effect only once notarized under the Act",
+        "D": "Yes; the e-commerce law treats every email contract as already notarized"
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** A consensual contract is perfected by consent and is valid without a signature, unless a law requires a particular form for it. RA 8792 recognizes contracts formed through data messages (Sec. 16(1)), so the email exchange can show the parties' consent. Here no special form is required. The contract is therefore valid even though no one signed it.\n\n**B is wrong:** signatures are needed only where the law requires a particular form; consensual contracts do not.\n\n**C is wrong:** the e-commerce law does not require or supply notarization for ordinary contracts.\n\n**D is wrong:** the right result for the wrong reason; the Act never turns an email into a notarized document.\n\n**Watch for:** If the law required this contract to be in a public instrument, the email exchange would not be enough for that form.\n\n**Basis:** RA 8792, Sec. 16(1); Civil Code, Art. 1356. Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html, https://lawphil.net/statutes/repacts/ra1949/ra_386_1949.html."
+    },
+    {
+      "id": "pq-0039",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1.a"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), two companies' framework agreement says any future order binds them only if signed on paper. One company later accepts an order only by email. Is the order binding?",
+      "choices": {
+        "A": "Yes, because the law forbids parties from refusing to contract electronically",
+        "B": "Yes, because an email acceptance always overrides any earlier agreement on form",
+        "C": "No, because electronic acceptances are never valid between private companies",
+        "D": "Not under their agreement, since parties may agree to exclude electronic means"
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The rule that offers and acceptances may be made electronically (Sec. 16(1)) applies “unless otherwise agreed.” The law makes electronic contracting available, but it respects the parties' freedom to choose another method for their own dealings. These companies agreed that orders bind only when signed on paper. An email acceptance does not meet the method they chose, so under their own agreement the order is not binding.\n\n**A is wrong:** the law permits electronic contracting; it does not force it on parties who agreed otherwise.\n\n**B is wrong:** the statutory default yields to the parties' agreement, not the other way around.\n\n**C is wrong:** the right result for the wrong reason; electronic acceptances are generally valid, but not here because of the agreement.\n\n**Watch for:** If the framework agreement were silent on form, the email acceptance would be effective.\n\n**Basis:** RA 8792, Secs. 16(1) and 38. Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html."
+    },
+    {
+      "id": "pq-0040",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1.a"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), a buyer chats a seller, “Nice bag, I might get it next month,” and the seller replies, “Sure, just tell me.” The seller later claims a sale was made through the chat. Is there an electronic contract?",
+      "choices": {
+        "A": "No; being electronic does not remove the need for a real offer and acceptance",
+        "B": "Yes; any chat exchange about a product creates a binding electronic sale",
+        "C": "Yes; the seller's reply is an acceptance, so the sale was perfected at once",
+        "D": "No; a sale can never be made through a chat app, only through a website"
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** RA 8792 lets contracts be formed and proved electronically, but it does not create contracts where the essential elements are missing. A sale still needs consent, shown by a definite offer and an unqualified acceptance, on a definite object and price. “I might get it next month” is an expression of interest, and the seller's reply only invites a later order. With no real offer and acceptance, no contract was formed, whatever the medium.\n\n**B is wrong:** the medium does not supply consent; the messages must still amount to offer and acceptance.\n\n**C is wrong:** there was no definite offer to accept; the buyer only expressed possible future interest.\n\n**D is wrong:** the law is technology-neutral; a sale can be made through chat if the elements are present.\n\n**Watch for:** If the buyer had written “I'll take it for ₱3,000” and the seller replied “Deal,” a sale would be perfected through the chat.\n\n**Basis:** RA 8792, Sec. 16(1); Civil Code, Arts. 1318–1319. Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html, https://lawphil.net/statutes/repacts/ra1949/ra_386_1949.html."
+    },
+    {
+      "id": "pq-0042",
+      "type": "fillblank",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), once a cash withdrawal through an inter-bank ATM network is consummated, what one bank owes the other because of it is absolute and cannot be put through ____ of credits.",
+      "fullText": "Under the Electronic Commerce Act (RA 8792), once a cash withdrawal through an inter-bank ATM network is consummated, what one bank owes the other because of it is absolute and cannot be put through preference of credits.",
+      "explanation": "**Answer:** preference.\n\n**Why:** Transactions through bank networks are consummated when cash is actually dispensed, or when one account is debited and another credited (Sec. 16(2)). The Act then makes the resulting obligation between the banks absolute and exempts it from preference of credits, the process of ranking creditors' claims. This keeps the network reliable: a bank that paid out cash for another bank's depositor can count on being reimbursed in full. The term that completes the phrase is therefore “preference.”\n\n**Not to be confused with:** “concurrence.” Concurrence and preference of credits are usually discussed together, but the Act specifically shields these obligations from the preference process, so “preference” is the only term that fits.\n\n**Watch for:** If the question asked when the transaction is consummated rather than how the obligation is treated, the answer would be the moment cash is dispensed or the accounts are debited and credited.\n\n**Basis:** RA 8792, Sec. 16(2); Civil Code, Book IV, Title XIX (concurrence and preference of credits). Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html, https://lawphil.net/statutes/repacts/ra1949/ra_386_1949.html."
+    },
+    {
+      "id": "pq-0043",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), a depositor withdraws cash from another bank's ATM through a shared network. At what point is the transaction considered done?",
+      "choices": {
+        "A": "When cash is actually dispensed, or one account is debited and another credited",
+        "B": "When the depositor enters the correct PIN and selects the amount",
+        "C": "When the bank lists the withdrawal on the monthly account statement",
+        "D": "When the depositor signs a printed receipt and returns a copy to the bank"
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** For transactions made through networks linking banks, the Act fixes the moment of consummation (Sec. 16(2)): the actual dispensing of cash, or the debit of one account with the corresponding credit to another. A clear rule matters because several institutions are involved and each needs to know when its obligation became final. In a cash withdrawal, the deciding moment is when the machine releases the cash. Once that happens, the transaction is consummated.\n\n**B is wrong:** entering a PIN only starts the transaction; consummation comes with dispensing or debit and credit.\n\n**C is wrong:** the statement only reports a transaction that was already consummated earlier.\n\n**D is wrong:** ATM transactions involve no signed receipt; the Act ties consummation to the movement of money.\n\n**Watch for:** If the machine failed to release the cash and no account was debited, the transaction would not be consummated.\n\n**Basis:** RA 8792, Sec. 16(2). Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html."
+    },
+    {
+      "id": "pq-0044",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), two companies are setting up an electronic ordering system between them. Who decides what type and level of security (passwords, encryption, consent prompts) their transactions will use?",
+      "choices": {
+        "A": "The DTI, which sets one required security standard for everyone",
+        "B": "The courts, which must approve the method before any transaction",
+        "C": "No one, since every deal must use a public-key digital signature",
+        "D": "The two companies themselves, choosing whatever suits their needs"
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The Act leaves it to the parties to decide how much security their electronic dealings need and which technical methods to use (Sec. 24). This fits the law's technology-neutral approach: different transactions carry different risks, so the law does not impose one method on everyone. The companies may agree, for example, on consent prompts or on limiting what information is collected. The choice is theirs to make.\n\n**A is wrong:** the Act does not impose a single government standard; it leaves the choice to the parties.\n\n**B is wrong:** there is no requirement of prior court approval for security methods.\n\n**C is wrong:** a digital signature is one strong option, not a requirement for every transaction.\n\n**Watch for:** If a dispute later arises, the chosen method still matters, because it affects whether signatures and records can be shown to be reliable.\n\n**Also note:** The freedom is not unlimited: it is subject to applicable laws and to rules and guidelines the DTI issues with other agencies.\n\n**Basis:** RA 8792, Sec. 24. Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html."
+    },
+    {
+      "id": "pq-0045",
+      "type": "essay",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), a shipper and a carrier handle a shipment entirely electronically: the carrier confirms loading by email, and the shipper later transfers its right to claim the goods through the carrier's online system. The consignee refuses to deal with the electronic records, insisting that these steps must be done on paper. Is the consignee right?",
+      "suggestedAnswer": {
+        "answer": "No. The Act lets actions connected with a contract of carriage of goods be done through data messages or electronic documents, even where a law requires writing or paper.",
+        "legalBasis": "RA 8792 applies to actions connected with a contract of carriage of goods, such as confirming that goods have been loaded, claiming delivery, and transferring rights in the goods (Sec. 25). Where the law requires such an action to be done in writing or with a paper document, using data messages or electronic documents satisfies the requirement (Sec. 26(1)). Where a right must pass to one person only, the electronic method must make the data message unique (Sec. 26(3)).",
+        "application": "Confirming loading and transferring the right to claim the goods are both actions listed in Sec. 25. Even if a law required them to be in writing or on paper, Sec. 26(1) treats the electronic records as satisfying that requirement. Because the right to claim the goods must belong to one person, the carrier's system must make the transfer unique, so that the right cannot be duplicated.",
+        "conclusion": "The consignee's objection fails, provided the system keeps the transferred right unique.\n\n**Common mistake:** assuming that documents of title must always be on paper, without applying Secs. 25–26.\n\n**Watch for:** If the parties had switched back to paper documents midway, Sec. 26(5) would require the electronic records to be terminated and the paper to state that termination.\n\n**Basis:** RA 8792, Secs. 25–26. Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html."
+      },
+      "keyPoints": [
+        "Sec. 25: the Act covers actions connected with carriage of goods (loading, delivery claims, transfer of rights)",
+        "Sec. 26(1): writing or paper requirements are met by data messages or electronic documents",
+        "Sec. 26(3): a right that must pass to one person requires a unique data message",
+        "Application to each step in the facts"
+      ]
+    },
+    {
+      "id": "pq-0046",
+      "type": "fillblank",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 review questions"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), where only one person may hold the right to claim shipped goods, the electronic method used for the transport document must make the data message ____.",
+      "fullText": "Under the Electronic Commerce Act (RA 8792), where only one person may hold the right to claim shipped goods, the electronic method used for the transport document must make the data message unique.",
+      "explanation": "**Answer:** unique.\n\n**Why:** Some rights in the carriage of goods, such as the right to demand delivery, can belong to only one person at a time. On paper, that is guaranteed by there being a single original document. Electronic records can be copied endlessly, so the Act requires the electronic method to make the data message unique, ensuring that only one person can exercise the right. “Unique” is therefore the required quality.\n\n**Not to be confused with:** “authentic.” Authenticity shows a message is genuine and from the stated sender, but a genuine message can still be copied; uniqueness is what prevents two people from holding the same right.\n\n**Basis:** RA 8792, Sec. 26(3). Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html."
+    },
+    {
+      "id": "pq-0047",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 review questions"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), a citizen files a permit application by email, and the government office refuses, saying it deals only in paper. What did the law require of government offices like this one?",
+      "choices": {
+        "A": "To stop using paper documents entirely once the law took effect",
+        "B": "To accept only filings signed with public-key digital signatures",
+        "C": "To be able to accept and issue electronic documents within a set period",
+        "D": "Nothing, since the law covers private transactions and not government"
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Act does not stop at private transactions. Its e-government provision (Sec. 27) required government offices to be able to accept and issue electronic documents within two years, that is, by 2002. It also set up a government-wide network, RPWeb, to connect government offices online (Sec. 28). An office that refuses all electronic filings is not acting in line with that mandate.\n\n**A is wrong:** the Act required the capability to deal electronically; it did not abolish paper.\n\n**B is wrong:** the mandate was to accept and issue electronic documents generally, not only digitally signed ones.\n\n**D is wrong:** the Act expressly addresses government through its e-government and RPWeb provisions.\n\n**Watch for:** If a specific law required a particular filing to be made in person, that special rule would still need to be considered.\n\n**Basis:** RA 8792, Secs. 27–28. Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html."
+    },
+    {
+      "id": "pq-0048",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Internet Transactions Act (RA 11967)",
+      "syllabusIds": [
+        "s2.VI.C.1",
+        "s2.VI.C.2"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "An online store breaks the rules on electronic transactions. How does the DTI's power to fine it under the Electronic Commerce Act (RA 8792) compare with its power under the Internet Transactions Act (RA 11967)?",
+      "choices": {
+        "A": "Under RA 8792 it could not impose penalties; under RA 11967 it can impose fines",
+        "B": "It could impose fines under both laws; RA 11967 only raised the amounts",
+        "C": "Neither law lets it impose fines; only the regular courts may do that",
+        "D": "RA 8792 let it impose fines, but RA 11967 moved that power to the SEC"
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** Under RA 8792, the DTI directs and supervises the promotion and development of e-commerce (Sec. 29), but that law gives it no mandate to impose penalties. The Internet Transactions Act changed this by giving the DTI, acting through its E-Commerce Bureau, the power to impose fines and penalties for violations involving electronic transactions. The change reflects a shift from promoting e-commerce to policing it. So the DTI can fine the store under RA 11967, though it could not under RA 8792.\n\n**B is wrong:** RA 8792 gave the DTI no penalty power at all, so there was nothing to raise.\n\n**C is wrong:** RA 11967 expressly gives the DTI the power to impose fines.\n\n**D is wrong:** this reverses the history; the power came with RA 11967 and stayed with the DTI.\n\n**Watch for:** Criminal penalties for hacking and piracy under RA 8792 are imposed by courts after prosecution; do not confuse them with the DTI's administrative fines.\n\n**Basis:** RA 8792, Sec. 29; RA 11967, Sec. 29. Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html, https://lawphil.net/statutes/repacts/ra2023/ra_11967_2023.html."
+    },
+    {
+      "id": "pq-0049",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 review questions"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), a web hosting company provides access for a site that sells pirated movies, and it knowingly takes a share of each sale. Can it claim the protection the law gives service providers who merely provide access?",
+      "choices": {
+        "A": "Yes; a provider that only gives access can never be held liable",
+        "B": "No; knowingly profiting from the unlawful activity removes that protection",
+        "C": "Yes; it is protected as long as it did not upload the movies itself",
+        "D": "No; service providers are always liable for what their users post"
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** A service provider is not liable for merely providing access only if three conditions hold (Sec. 30): it has no actual knowledge of the unlawful activity and is not aware of facts that make it obvious; it does not knowingly receive a financial benefit directly attributable to that activity; and it does not directly commit any infringement. The protection exists for neutral carriers, not for partners in the wrongdoing. Knowingly taking a share of each pirated sale fails the financial-benefit condition. So the company cannot claim the protection.\n\n**A is wrong:** the protection is conditional; a provider that meets none of the conditions is not shielded.\n\n**C is wrong:** not committing the infringement directly is only one condition; profiting knowingly defeats the protection.\n\n**D is wrong:** the right result for the wrong reason; providers are protected when all the conditions are met.\n\n**Watch for:** Verify the current rule on these conditions. If the company earned only a flat hosting fee and knew nothing of the piracy, it could qualify for the protection.\n\n**Basis:** RA 8792, Sec. 30. Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html."
+    },
+    {
+      "id": "pq-0050",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1.b"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 review questions"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), a government examiner, exercising powers given under the law, obtains access to a company's electronic records during an investigation. He later sends copies of some records to a friend. Did he violate the Act?",
+      "choices": {
+        "A": "Yes; access obtained under the Act's powers may not be shared with anyone else",
+        "B": "No; once access is lawfully obtained, he may use the records freely",
+        "C": "No; electronic records are not covered by any confidentiality rule",
+        "D": "Yes, but only if he received money in exchange for the copies"
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Act imposes a duty of confidentiality (Sec. 32): except for purposes the Act authorizes, a person who obtains access to electronic keys, data messages, electronic documents or other material under powers conferred by the Act must not convey or share them with any other person. The rule keeps investigative access from becoming a channel for leaks. The examiner obtained access through powers given under the law. Sending copies to a friend serves no authorized purpose, so it violates the duty.\n\n**B is wrong:** lawful access is limited to authorized purposes; the Act separately forbids sharing.\n\n**C is wrong:** Sec. 32 expressly covers electronic data messages and documents.\n\n**D is wrong:** the prohibition covers any sharing, paid or not.\n\n**Watch for:** Note the scope: Sec. 32 speaks of access obtained under powers conferred by the Act; a private contractor's duties to a client would come mainly from contract and other laws, such as the Data Privacy Act.\n\n**Basis:** RA 8792, Sec. 32. Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html. **Beyond notes.**"
+    },
+    {
+      "id": "pq-0051",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1.b"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), a company's IT head hands an employee's private signing key to the employee's manager, without the employee's consent, so the manager can sign documents in the employee's name. Does the Act allow this?",
+      "choices": {
+        "A": "Yes; the company owns its systems, so it may share any key it holds",
+        "B": "Yes; a manager may always sign on behalf of the employees under him",
+        "C": "No, but only because the manager has not registered with the DTI",
+        "D": "No; a signing key may not be given to anyone without the lawful holder's consent"
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The Act limits access to electronic files and signatures to those with a legal right to them, or to authorized purposes (Sec. 31). It adds a specific rule for keys: an electronic key used for identity or integrity must not be made available to any person without the consent of the one in lawful possession of it. The rule protects the link between a signature and the person it identifies. Giving the manager the employee's key without consent breaks that rule.\n\n**A is wrong:** the rule turns on the consent of the person lawfully holding the key, not on who owns the system.\n\n**B is wrong:** authority to act for someone does not include taking their signing key without consent.\n\n**C is wrong:** registration has nothing to do with it; the problem is the lack of the key holder's consent.\n\n**Watch for:** If the employee had consented to delegating the key, the analysis would turn to whether signatures made with it still identify the right person.\n\n**Basis:** RA 8792, Sec. 31. Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html. **Beyond notes.**"
+    },
+    {
+      "id": "pq-0052",
+      "type": "essay",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 review questions"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), Ramon resigns as the IT administrator of an online furniture shop. A week later, he logs in to the shop's admin panel using his old password, copies the customer list and deletes 300 product listings, causing a ₱500,000 loss. Is Ramon liable under RA 8792? What penalty may be imposed, and may other laws also apply?",
+      "suggestedAnswer": {
+        "answer": "Yes. Ramon is liable for hacking or cracking under RA 8792.",
+        "legalBasis": "Hacking or cracking (Sec. 33(a)) is getting into or tampering with someone's computer or information system without the owner's knowledge and consent, including entering it to damage, change, steal or erase data, where this results in electronic records being lost or corrupted. The penalty is a fine starting at ₱100,000 and rising to match the damage caused, together with imprisonment of six months to three years that the court must impose. Other laws, such as RA 10175 and RA 8484, may also apply to the same acts.",
+        "application": "Ramon's authority to access the system ended when he resigned. Using his old password without the owner's consent was unauthorized access. Copying the customer list and deleting listings altered and destroyed data, causing a ₱500,000 loss. All the elements are present.",
+        "conclusion": "Ramon is liable for hacking or cracking: a fine starting at ₱100,000 that may rise to match the ₱500,000 loss, plus six months to three years in prison, and other laws may also apply.\n\n**Common mistake:** arguing that knowing the password made the access authorized; authority comes from the owner's consent, which ended with his resignation.\n\n**Watch for:** If Ramon had logged in with the shop's permission to help with a handover, the access would be authorized and the hacking charge would fail.\n\n**Basis:** RA 8792, Sec. 33(a). Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html."
+      },
+      "keyPoints": [
+        "Authority ended on resignation",
+        "Old password used without the owner's consent: unauthorized access",
+        "Copying and deleting data caused loss (Sec. 33(a))",
+        "Fine from ₱100,000 rising with the damage, plus required imprisonment of 6 months to 3 years",
+        "Possible overlapping liability under other laws (RA 10175, RA 8484)"
+      ]
+    },
+    {
+      "id": "pq-0053",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 review questions"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), which of the following acts is hacking or cracking?",
+      "choices": {
+        "A": "Reading a company's public website and copying its posted office hours",
+        "B": "Receiving a forwarded email from a friend who lawfully had access to it",
+        "C": "Using a former co-worker's password, without the owner's consent, to delete company files",
+        "D": "Logging in with your own account to update records you may change"
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** Hacking or cracking (Sec. 33(a)) is unauthorized access to or interference in a computer or information system, or access in order to corrupt, alter, steal or destroy data, without the knowledge and consent of the owner. The key elements are lack of authority and lack of the owner's consent. Using someone else's password to get into a company system and delete files has both. The other acts involve public information, lawful receipt or authorized use.\n\n**A is wrong:** looking at information the owner has made public involves no unauthorized access.\n\n**B is wrong:** receiving a message does not involve entering anyone's system; any issue would concern the friend's sharing, not hacking.\n\n**D is wrong:** access within one's own authority is the opposite of unauthorized access.\n\n**Watch for:** If the owner had given permission to use the password for that task, the same act would not be hacking.\n\n**Basis:** RA 8792, Sec. 33(a). Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html."
+    },
+    {
+      "id": "pq-0054",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 review questions"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), what penalty does the law impose for hacking or cracking?",
+      "choices": {
+        "A": "No penalty, since the law only declares hacking to be an unlawful act",
+        "B": "A fine from ₱100,000 rising with the damage, plus 6 months to 3 years in prison",
+        "C": "A fixed fine of ₱20,000, without any imprisonment, whatever the damage",
+        "D": "Imprisonment only, at the court's discretion, without any fine at all"
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** Sec. 33 sets the same penalty for hacking or cracking and for piracy: a fine of no less than ₱100,000, which can go as high as the damage caused. It adds mandatory imprisonment of six months to three years. Because the imprisonment is mandatory, a court cannot impose only a fine. The penalty is therefore both a fine within that range and imprisonment.\n\n**A is wrong:** Sec. 33 does impose penalties; the Act is not merely declaratory on this point.\n\n**C is wrong:** the fine starts at ₱100,000 and rises with the damage, and imprisonment is mandatory.\n\n**D is wrong:** the law requires a fine as well, and the imprisonment is mandatory rather than discretionary.\n\n**Watch for:** Violations of the Consumer Act in e-commerce transactions are punished under that law's own penalties, not under this section.\n\n**Basis:** RA 8792, Sec. 33(a)–(b). Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html."
+    },
+    {
+      "id": "pq-0055",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 review questions"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), Gio uploads full copies of newly released films to a file-sharing site for anyone to download, without the copyright owners' permission. Which offense under the Act does this most likely involve?",
+      "choices": {
+        "A": "Hacking, since uploading files always means entering another's system",
+        "B": "No offense, since the site itself, not Gio, makes the films available",
+        "C": "Piracy, since protected works are shared over a network without authority",
+        "D": "A data-privacy breach, since the films contain the actors' personal data"
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** Piracy under the Act (Sec. 33(b)) covers copying, sharing, uploading or otherwise offering copyrighted or protected works over a network like the internet without authority, in a way that violates intellectual property rights. Gio made copyrighted films available to the public online without the owners' permission. That is exactly the conduct the provision describes. The offense is piracy.\n\n**A is wrong:** uploading to a site one may use is not unauthorized access; hacking requires breaking into a system.\n\n**B is wrong:** uploading the films is itself making them available; the site's role does not excuse Gio.\n\n**D is wrong:** the wrong here is infringement of copyright through a network, not misuse of personal information.\n\n**Watch for:** If Gio had uploaded his own home videos, no one's intellectual property would be infringed and there would be no piracy.\n\n**Basis:** RA 8792, Sec. 33(b). Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html."
+    },
+    {
+      "id": "pq-0056",
+      "type": "essay",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "syllabusIds": [
+        "s2.VI.C.1"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), Ana orders a bag online that the seller advertises as “brand-new and original.” It has no proper label and turns out to be fake. Ana kept the online order confirmation and the seller's chat messages promising it was original. Can Ana invoke the Consumer Act of the Philippines against the online seller, and how can she prove the violation?",
+      "suggestedAnswer": {
+        "answer": "Yes. Existing consumer laws, including the Consumer Act, apply to e-commerce transactions, and Ana may prove the violation with her order confirmation and chat messages.",
+        "legalBasis": "RA 8792 makes existing laws, such as the Consumer Act of the Philippines, apply to e-commerce transactions; buying online does not take a sale outside consumer protection. A product that lacks proper labeling, or that is fake although the buyer was led to believe it was original, may violate those laws. Data messages such as order confirmations and chats are recognized by the Act and cannot be denied legal effect only because they are electronic, so they can serve as proof.",
+        "application": "Ana's purchase is an e-commerce transaction, so the Consumer Act applies. The bag lacked proper labeling and was fake although the seller represented it as original. Her order confirmation shows the purchase, and the seller's chats show the promise of authenticity. Both are data messages she can present.",
+        "conclusion": "Ana may proceed under the Consumer Act and use her order confirmation and chat messages as evidence of the violation.\n\n**Common mistake:** treating the e-commerce law as a separate world with its own remedies and forgetting that ordinary consumer laws apply to online sales.\n\n**Watch for:** If Ana had bought the bag from another private individual in a one-time sale, consumer-protection laws aimed at sellers in business might not apply, and the Civil Code on sales would govern.\n\n**Basis:** RA 8792, Secs. 12 and 33(c). Checked against the official text: https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html."
+      },
+      "keyPoints": [
+        "Existing laws such as the Consumer Act apply to e-commerce transactions",
+        "Improper labeling or a fake sold as original may violate consumer law",
+        "Order confirmations and chats are data messages usable as proof",
+        "Electronic evidence is not denied effect just because it is electronic"
+      ]
+    },
+    {
+      "id": "pq-0057",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "E-Commerce Act Cases",
+      "syllabusIds": [
+        "s2.VI.C.1.a",
+        "s1.IV.C.3"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), a legislative body posts its rules of procedure for inquiries only on its website and argues that this counts as valid publication. Following Garcillano v. House of Representatives Committees, is it right?",
+      "choices": {
+        "A": "Yes; electronic documents equal written ones for every purpose, including publication",
+        "B": "Yes; posting online reaches more people than printing the rules in a newspaper",
+        "C": "No; the rules were invalid because they had never been written down",
+        "D": "No; the law treats electronic documents as writings for evidence, not publication"
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** In Garcillano, the Court held that RA 8792 treats electronic data messages and documents as the functional equivalent of written documents only for evidentiary purposes. In other words, the Act lets them be received as originals in court; it does not turn posting online into a valid way of publishing laws, rules or regulations. Rules of procedure for legislative inquiries must be duly published. Posting them only online does not satisfy that requirement, so the body is wrong.\n\n**A is wrong:** functional equivalence under the Act is for evidentiary purposes; it does not extend to publication.\n\n**B is wrong:** how many people a medium reaches is not the legal test for valid publication.\n\n**C is wrong:** the problem was publication, not whether the rules existed in written form.\n\n**Watch for:** If the question asked whether an email can prove a contract in court, functional equivalence would apply; Garcillano limits only the publication use.\n\n**Basis:** Garcillano v. House of Representatives Committees, G.R. Nos. 170338 & 179275, December 23, 2008. Checked against the official text: https://lawphil.net/judjuris/juri2008/dec2008/gr_170338_2008.html."
+    },
+    {
+      "id": "pq-0058",
+      "type": "essay",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "E-Commerce Act Cases",
+      "syllabusIds": [
+        "s2.VI.C.1.a",
+        "s1.XII.F"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the automated election law (RA 9369) and the Electronic Commerce Act (RA 8792), in an election protest before the HRET, the paper ballots of several precincts are found wet and damaged. The protestant asks that printouts of the ballot images stored in the vote-counting machines' memory cards be used to recount the votes. The protestee argues that only the paper ballots are official ballots. Resolve the issue.",
+      "suggestedAnswer": {
+        "answer": "The printouts may be used. The ballot images are also official ballots, and their printouts are the functional equivalent of the paper ballots.",
+        "legalBasis": "RA 9369 (Sec. 2(3)) treats as an official ballot, where an automated election system is used, a ballot printed or generated by the technology that faithfully captures or represents the votes in electronic form. In Vinzons-Chato v. HRET, the Court held that the ballot images captured by the counting machines are themselves official ballots, so printing them out gives the equivalent of the paper ballots, usable when votes are revised. The images were stored in encrypted form, which protects their integrity.",
+        "application": "The counting machines scanned each ballot and stored its image in encrypted form on the memory cards. Those images faithfully capture the votes, so they are official ballots in their own right. Their printouts can therefore take the place of the damaged paper ballots in the recount.",
+        "conclusion": "The protestee's objection fails; the printouts may be used for the revision of votes.\n\n**Common mistake:** treating the printouts as mere secondary copies that can be used only after proving the paper ballots are lost, instead of recognizing them as official ballots in their own right.\n\n**Watch for:** If there were evidence that the memory cards had been tampered with, the reliability of the images, not their status, would become the issue.\n\n**Basis:** Vinzons-Chato v. HRET, G.R. No. 199149, January 22, 2013; RA 9369, Sec. 2(3). Checked against the official text: https://lawphil.net/statutes/repacts/ra2007/ra_9369_2007.html, https://lawphil.net/judjuris/juri2013/jan2013/gr_199149_2013.html."
+      },
+      "keyPoints": [
+        "RA 9369, Sec. 2(3): an official ballot includes one that faithfully captures votes in electronic form",
+        "Ballot images scanned and recorded by the machines are official ballots too",
+        "Their printouts are the functional equivalent of paper ballots",
+        "They may be used to revise votes; encryption supports integrity"
+      ]
+    },
+    {
+      "id": "pq-0059",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "E-Commerce Act Cases",
+      "syllabusIds": [
+        "s2.VI.C.1.a",
+        "s1.XII.F"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the automated election law (RA 9369) and the Electronic Commerce Act (RA 8792), why may printouts of ballot images captured by vote-counting machines be used to recount votes in an election protest?",
+      "choices": {
+        "A": "The printouts are signed by every voter, so they beat the paper ballots",
+        "B": "The images faithfully capture the votes, so their printouts stand in for paper ballots",
+        "C": "Paper ballots are never allowed in a protest once machines were used",
+        "D": "The images are public documents, so no question about them may be raised"
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** Under RA 9369, an official ballot in an automated election includes a ballot generated by the technology that faithfully captures the votes in electronic form. In Vinzons-Chato v. HRET, the Court applied this to the images scanned and recorded by the counting machines: they are official ballots too. As a result, their printouts are the functional equivalent of the paper ballots and may be used in a revision of votes. The key is faithful capture of the votes, not the paper medium.\n\n**A is wrong:** voters do not sign the printouts; their value comes from faithfully capturing the votes.\n\n**C is wrong:** paper ballots remain official ballots; the images are additional official ballots, not replacements by law.\n\n**D is wrong:** their integrity can still be questioned; the ruling is about their status, not immunity from challenge.\n\n**Watch for:** If the issue were whether a fax of a ballot could be used, the answer would differ, because a fax is a paper copy, not an electronically captured original.\n\n**Basis:** Vinzons-Chato v. HRET, G.R. No. 199149, January 22, 2013; RA 9369, Sec. 2(3). Checked against the official text: https://lawphil.net/statutes/repacts/ra2007/ra_9369_2007.html, https://lawphil.net/judjuris/juri2013/jan2013/gr_199149_2013.html."
+    },
+    {
+      "id": "pq-0060",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "E-Commerce Act Cases",
+      "syllabusIds": [
+        "s2.VI.C.1.a",
+        "s6.VIII.E.2.e"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 review questions"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), why is an emailed PDF contract treated as an electronic document while a faxed copy of the same contract is not?",
+      "choices": {
+        "A": "A fax travels over telephone lines, which the law does not recognize as a medium",
+        "B": "A PDF is always notarized when sent by email, while a fax is never notarized",
+        "C": "A fax begins and ends as paper, so it is only a paper copy; the PDF exists electronically",
+        "D": "A fax counts as an electronic document only when it is sent and received in color"
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** A fax starts with a paper document, which the machine scans and sends, and it ends as paper printed at the other end. Whatever happens in between, the result is a copy of a paper original, which is why MCC Industrial Sales v. Ssangyong held that a fax is neither a data message nor an electronic document. An emailed PDF, by contrast, is created, sent and stored electronically. That is the difference that makes the PDF an electronic document and the fax a paper copy.\n\n**A is wrong:** the reason is not the telephone line; it is that a fax is a copy of a paper original.\n\n**B is wrong:** emailing a PDF does not notarize it; notarization plays no part in the distinction.\n\n**D is wrong:** color has nothing to do with it; a color fax is still a paper copy.\n\n**Watch for:** If the contract had been signed on paper, scanned and then emailed as a PDF, the PDF would still be an electronic document, but questions about the paper original could arise.\n\n**Basis:** MCC Industrial Sales v. Ssangyong, G.R. No. 170633, October 17, 2007. Checked against the official text: https://lawphil.net/judjuris/juri2007/oct2007/gr_170633_2007.html."
+    },
+    {
+      "id": "pq-0061",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "E-Commerce Act Cases",
+      "syllabusIds": [
+        "s2.VI.C.1.a",
+        "s6.VIII.E.2.e"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the Electronic Commerce Act (RA 8792), in a collection suit, a supplier offers a faxed copy of the buyer's purchase order as electronic evidence. Following MCC Industrial Sales v. Ssangyong, what is the correct ruling?",
+      "choices": {
+        "A": "Yes; a fax is a data message because it is transmitted over telephone lines",
+        "B": "Yes; a fax is the functional equivalent of the original under the best evidence rule",
+        "C": "Not as electronic evidence, since a fax falls outside both electronic categories",
+        "D": "Yes, but only if the sending machine printed a transmission confirmation report"
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** In MCC Industrial Sales v. Ssangyong, the Court held that the terms “electronic data message” and “electronic document” under RA 8792 do not include a facsimile transmission. So a fax cannot be offered as electronic evidence, and it cannot stand in for an original document under the best evidence rule. The Court applied the same rule in Torres v. PAGCOR. The faxed purchase order cannot come in as electronic evidence.\n\n**A is wrong:** the Court rejected this; transmission by wire does not make a fax a data message.\n\n**B is wrong:** the Court said the opposite: a fax is not the functional equivalent of an original.\n\n**D is wrong:** a transmission report proves sending, not that a fax is electronic evidence.\n\n**Watch for:** If the buyer had sent the purchase order by email instead, it could be offered as an electronic document.\n\n**Basis:** MCC Industrial Sales v. Ssangyong, G.R. No. 170633, October 17, 2007; Torres v. PAGCOR, G.R. No. 193531, December 14, 2011. Checked against the official text: https://lawphil.net/judjuris/juri2007/oct2007/gr_170633_2007.html, https://lawphil.net/judjuris/juri2011/dec2011/gr_193531_2011.html."
+    },
+    {
+      "id": "pq-0062",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "E-Commerce Act Cases",
+      "syllabusIds": [
+        "s5.IV.A"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the Access Devices Regulation Act of 1998 (RA 8484), which of the following would NOT be an access device?",
+      "choices": {
+        "A": "A personal identification number used to withdraw money from an ATM",
+        "B": "A paper check used to transfer funds from one account to another",
+        "C": "A credit card account number used to pay for goods bought online",
+        "D": "An electronic serial number used to obtain telecommunication services"
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** RA 8484 defines an access device broadly (Sec. 3(a)): cards, codes, account numbers, electronic serial numbers, PINs and similar means of reaching an account, as long as they can be used to get money, goods, services or other things of value, or to begin a funds transfer. It expressly leaves out a transfer originated solely by paper instrument. The law targets coded and electronic means of reaching an account. A paper check falls within that exclusion, so it is not an access device.\n\n**A is wrong:** a personal identification number is expressly listed as an access device.\n\n**C is wrong:** an account number that can be used to obtain goods is within the definition.\n\n**D is wrong:** electronic serial numbers are expressly listed as access devices.\n\n**Watch for:** If the check were deposited through a mobile app using an account number and PIN, those electronic means would be access devices even though the check is not.\n\n**Basis:** RA 8484, Sec. 3(a). Checked against the official text: https://lawphil.net/statutes/repacts/ra1998/ra_8484_1998.html."
+    },
+    {
+      "id": "pq-0065",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Internet Transactions Act (RA 11967)",
+      "syllabusIds": [
+        "s2.VI.C.2",
+        "s2.VI.C.2.b"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the Internet Transactions Act (RA 11967), a Philippine online shop sells handmade bags through its website to a customer living in Singapore. Is the transaction within the Act's scope?",
+      "choices": {
+        "A": "No; the Act covers only sales where the buyer is located in the Philippines",
+        "B": "No; the Act covers only transactions between two registered businesses",
+        "C": "Yes, but only if the Singapore customer pays in Philippine pesos online",
+        "D": "Yes; it is a business-to-consumer online sale with one party in the Philippines"
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The Act covers business-to-business and business-to-consumer online transactions involving at least one party in the Philippines. It does not require that both parties, or the buyer in particular, be in the country. The seller here is a Philippine business selling online to a consumer, which is a business-to-consumer transaction with one party in the Philippines. The sale is therefore within the Act's scope.\n\n**A is wrong:** the Act requires at least one party in the Philippines, which can be the seller.\n\n**B is wrong:** business-to-consumer transactions are covered too, not just business-to-business ones.\n\n**C is wrong:** the currency used is not a condition of coverage when one party is in the Philippines.\n\n**Watch for:** If both the seller and the buyer were private individuals, the sale would be consumer-to-consumer and outside the Act.\n\n**Basis:** RA 11967, Sec. 3. Checked against the official text: https://lawphil.net/statutes/repacts/ra2023/ra_11967_2023.html."
+    },
+    {
+      "id": "pq-0066",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Internet Transactions Act (RA 11967)",
+      "syllabusIds": [
+        "s2.VI.C.2"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the Internet Transactions Act (RA 11967), Lea sells her used car to a stranger through Facebook Marketplace in a one-time sale. The buyer later finds a defect and wants to complain to the DTI under the Act. Is the sale covered?",
+      "choices": {
+        "A": "Yes; any sale made through an online platform is covered by the Act",
+        "B": "Yes; Facebook counts as an e-marketplace, so every sale on it is covered",
+        "C": "No; cars may be sold only through licensed dealers under the Act",
+        "D": "No; a one-time sale between two private persons is excluded from the Act"
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The Act covers business-to-business and business-to-consumer online transactions, and it expressly excludes consumer-to-consumer transactions. A one-time sale of a personal item between two private individuals is a typical consumer-to-consumer transaction, even when it is arranged online. Lea is not selling as a business. The buyer must therefore rely on the Civil Code rules on sales, not on the Act.\n\n**A is wrong:** being online is not enough; consumer-to-consumer sales are excluded.\n\n**B is wrong:** the platform used does not change the nature of a sale between two private persons.\n\n**C is wrong:** the right result for the wrong reason; the Act contains no such rule on cars.\n\n**Watch for:** If Lea ran a used-car business and sold through Facebook regularly, the sale could be business-to-consumer and covered.\n\n**Basis:** RA 11967, Sec. 3. Checked against the official text: https://lawphil.net/statutes/repacts/ra2023/ra_11967_2023.html."
+    },
+    {
+      "id": "pq-0067",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Internet Transactions Act (RA 11967)",
+      "syllabusIds": [
+        "s2.VI.C.2.b"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 review questions"
+      },
+      "prompt": "Under the Internet Transactions Act (RA 11967), a foreign e-marketplace has no office in the Philippines but sells to Filipino buyers with peso prices and local delivery. Is it covered?",
+      "choices": {
+        "A": "No; without a Philippine office, the business is beyond the DTI's reach",
+        "B": "No; the Act covers only businesses registered in the Philippines",
+        "C": "Yes, but only if it keeps an account in a Philippine bank",
+        "D": "Yes; targeting Filipino buyers this way is a minimum contact with the market"
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The Act reaches internet transactions where one party is in the Philippines or where a business avails of the Philippine market through minimum contacts (Sec. 3). Peso pricing and local delivery show that the platform deliberately serves Filipino buyers. Those are minimum contacts, so the lack of a local office does not matter. The platform is covered, and the DTI may act against it, including through takedown orders and fines.\n\n**A is wrong:** a physical office is not required; minimum contacts with the Philippine market are enough.\n\n**B is wrong:** coverage depends on the transaction and contacts, not on local registration.\n\n**C is wrong:** a local bank account is not a condition of coverage.\n\n**Watch for:** If the platform did not sell or deliver to the Philippines at all, there would be no minimum contacts and no coverage.\n\n**Basis:** RA 11967, Secs. 3 and 5. Checked against the official text: https://lawphil.net/statutes/repacts/ra2023/ra_11967_2023.html."
+    },
+    {
+      "id": "pq-0068",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Internet Transactions Act (RA 11967)",
+      "syllabusIds": [
+        "s2.VI.C.2.b",
+        "s2.VI.C.2.a"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the Internet Transactions Act (RA 11967), a buyer in Davao orders shoes from an overseas online seller that sells to Filipinos but has no legal presence in the country, and receives a pair that does not match the listing. The seller argues that Philippine law cannot reach it. Is it right?",
+      "choices": {
+        "A": "Yes; a seller abroad is entirely outside the Act's coverage",
+        "B": "Yes; the buyer must sue in the seller's own country instead",
+        "C": "No, but only if the seller also has a Philippine bank account",
+        "D": "No; a seller with minimum contacts here cannot escape liability for lack of presence"
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The Act covers business-to-consumer internet transactions where one party is in the Philippines, or where the seller avails of the Philippine market with minimum contacts (Sec. 3). It adds that a person who engages in e-commerce with minimum contacts here is subject to Philippine law and cannot evade liability despite having no legal presence (Sec. 5). The buyer is in Davao, and the seller deliberately sells to Filipinos. The seller is therefore covered, and the DTI's tools, such as compliance and takedown orders and blacklisting, are available.\n\n**A is wrong:** coverage needs only one party in the Philippines or minimum contacts, both present here.\n\n**B is wrong:** Sec. 5 subjects such sellers to Philippine law despite their lack of presence.\n\n**C is wrong:** a local bank account is not a condition; minimum contacts are enough.\n\n**Watch for:** If the buyer had bought through an e-marketplace, the platform's own duties and possible liability under Secs. 26–27 would also come into play.\n\n**Basis:** RA 11967, Secs. 3 and 5. Checked against the official text: https://lawphil.net/statutes/repacts/ra2023/ra_11967_2023.html."
+    },
+    {
+      "id": "pq-0069",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Internet Transactions Act (RA 11967)",
+      "syllabusIds": [
+        "s2.VI.C.2.a"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 review questions"
+      },
+      "prompt": "Under the Internet Transactions Act (RA 11967), a consumer reports an unsafe product listed on an e-marketplace and sends proof. The e-marketplace gets the notice but leaves the listing up. What liability may it incur?",
+      "choices": {
+        "A": "Only subsidiary liability, and only if the merchant has no assets",
+        "B": "No liability, because only the merchant sold the product",
+        "C": "Solidary liability with the merchant, for leaving unsafe goods up after notice",
+        "D": "Primary liability in place of the merchant, who is released"
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Act sets three levels of liability. The merchant or e-retailer is primarily liable to indemnify the consumer (Sec. 25). The e-marketplace answers subsidiarily when its failure to use ordinary care in carrying out its duties led to the consumer's loss (Sec. 26). But an e-marketplace that fails to remove prohibited, unsafe or dangerous goods after notice becomes solidarily liable (Sec. 27). Having received notice and proof, this platform falls under the solidary rule.\n\n**A is wrong:** subsidiary liability is for lack of ordinary diligence; failing to act after notice triggers solidary liability.\n\n**B is wrong:** the Act imposes liability on platforms in defined cases, including this one.\n\n**D is wrong:** the merchant remains primarily liable; the platform's solidary liability is in addition, not a substitute.\n\n**Watch for:** If the platform had removed the listing promptly after notice, it would avoid solidary liability, though subsidiary liability could still be examined.\n\n**Basis:** RA 11967, Secs. 25–27. Checked against the official text: https://lawphil.net/statutes/repacts/ra2023/ra_11967_2023.html."
+    },
+    {
+      "id": "pq-0070",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Internet Transactions Act (RA 11967)",
+      "syllabusIds": [
+        "s2.VI.C.2.a"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 review questions"
+      },
+      "prompt": "Under the Internet Transactions Act (RA 11967), an e-marketplace accepted a seller without checking its registration, and a consumer lost money when the seller vanished. No notice of any problem was ever given to the platform. What liability may it have?",
+      "choices": {
+        "A": "Solidary liability, in every case where a seller disappears with money",
+        "B": "Primary liability, because the platform is always treated as the seller",
+        "C": "No liability, because only merchants answer to consumers under the Act",
+        "D": "Subsidiary liability, if its lack of ordinary diligence caused the loss"
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The merchant is primarily liable to the consumer (Sec. 25). The e-marketplace is subsidiarily liable when its lack of ordinary diligence in performing its duties, such as verifying sellers, caused the consumer's loss (Sec. 26). Solidary liability (Sec. 27) is reserved for a platform that fails to remove prohibited, unsafe or dangerous goods after notice. Here the platform skipped verification and received no notice, so subsidiary liability is the fitting level.\n\n**A is wrong:** solidary liability depends on failing to act after notice about prohibited or unsafe goods.\n\n**B is wrong:** the merchant, not the platform, is primarily liable.\n\n**C is wrong:** platforms have their own duties and can be liable when they neglect them.\n\n**Watch for:** If the consumer had warned the platform about the seller and it did nothing, the analysis could move toward solidary liability.\n\n**Basis:** RA 11967, Secs. 21 and 26(a). Checked against the official text: https://lawphil.net/statutes/repacts/ra2023/ra_11967_2023.html."
+    },
+    {
+      "id": "pq-0071",
+      "type": "essay",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Internet Transactions Act (RA 11967)",
+      "syllabusIds": [
+        "s2.VI.C.2.a",
+        "s2.VI.C.2.b"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 review questions"
+      },
+      "prompt": "Under the Internet Transactions Act (RA 11967), ShopLane, a foreign e-marketplace with no Philippine office, sells to Filipinos with peso prices and local delivery. Through ShopLane, Nina buys a hair dryer from a merchant that listed a fake address. The dryer overheats and burns her hand. She reports it to ShopLane with photos and the receipt, but the listing stays up for a month. The merchant cannot be found. May Nina hold ShopLane liable, and can ShopLane escape the DTI because it has no Philippine office?",
+      "suggestedAnswer": {
+        "answer": "Yes, Nina may hold ShopLane solidarily liable, and its lack of a Philippine office does not put it beyond Philippine law.",
+        "legalBasis": "The online merchant is primarily liable to the consumer (Sec. 25). An e-marketplace is solidarily liable if, after notice, it fails to act quickly to remove goods that are unsafe or dangerous (Sec. 27). It may also be subsidiarily liable if, among others, it failed to exercise ordinary diligence in its obligations, such as collecting merchants' details before listing (Secs. 21 and 26(a)); but it is not liable for relying in good faith on a merchant's documents if it shows reasonable effort to check them (Sec. 26). The Act covers platforms that avail of the Philippine market with minimum contacts, and they cannot evade liability for lack of legal presence (Secs. 3 and 5).",
+        "application": "The merchant is primarily liable but cannot be found. ShopLane received notice with proof that the dryer was unsafe and left it up for a month, which is the failure that makes it solidarily liable. The fake address may also show that ShopLane did not exercise ordinary diligence in collecting the merchant's details, unless it can show good-faith reliance and reasonable effort. Peso pricing and local delivery are minimum contacts, so ShopLane is covered despite having no local office.",
+        "conclusion": "ShopLane is solidarily liable to Nina for keeping the unsafe product up after notice, and possibly subsidiarily liable as well; it cannot escape the DTI or Philippine law.\n\n**Common mistake:** ignoring the good-faith defense when arguing subsidiary liability based on the fake address.\n\n**Watch for:** If ShopLane had removed the listing promptly after Nina's report, solidary liability under Sec. 27 would not attach.\n\n**Basis:** RA 11967, Secs. 3, 5, 21 and 25–27. Checked against the official text: https://lawphil.net/statutes/repacts/ra2023/ra_11967_2023.html."
+      },
+      "keyPoints": [
+        "Merchant primarily liable (Sec. 25)",
+        "Solidary liability for failing, after notice, to remove unsafe goods (Sec. 27)",
+        "Possible subsidiary liability for lack of ordinary diligence, subject to the good-faith defense (Secs. 21, 26)",
+        "Minimum contacts: covered and cannot evade liability despite no legal presence (Secs. 3, 5)"
+      ]
+    },
+    {
+      "id": "pq-0072",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Internet Transactions Act (RA 11967)",
+      "syllabusIds": [
+        "s2.VI.C.2.a"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the Internet Transactions Act (RA 11967), a consumer wants to report an online merchant that keeps selling items that never arrive. Which government body was set up to regulate and monitor online transactions like this?",
+      "choices": {
+        "A": "The online business unit of the Securities and Exchange Commission",
+        "B": "The E-Commerce Bureau under the Department of Trade and Industry",
+        "C": "The consumer complaints office of the National Privacy Commission",
+        "D": "The Department of Information and Communications Technology"
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Act created the E-Commerce Bureau, placed under the DTI, to regulate and monitor online transactions so that they comply with the law and digital commerce stays secure. A merchant that repeatedly fails to deliver is exactly the kind of problem it oversees. The other bodies named have different mandates. The consumer's report belongs with the E-Commerce Bureau.\n\n**A is wrong:** the SEC regulates corporations and securities; it is not the body the Act created for online transactions.\n\n**C is wrong:** the NPC deals with personal data; non-delivery of goods is not a data-privacy matter.\n\n**D is wrong:** the DICT handles ICT policy and infrastructure, not the regulation of online sellers under this Act.\n\n**Watch for:** If the complaint were about the merchant misusing her personal data, the National Privacy Commission could also become relevant.\n\n**Basis:** RA 11967, Sec. 7. Checked against the official text: https://lawphil.net/statutes/repacts/ra2023/ra_11967_2023.html."
+    },
+    {
+      "id": "pq-0073",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Internet Transactions Act (RA 11967)",
+      "syllabusIds": [
+        "s2.VI.C.2.a"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the Internet Transactions Act (RA 11967), a consumer wants to find the contact details of an online shop that keeps ignoring her messages. Which tool set up under the Act gives the government and consumers access to online businesses' contact information?",
+      "choices": {
+        "A": "The public blacklist of non-compliant online businesses",
+        "B": "The Online Business Database kept by the E-Commerce Bureau",
+        "C": "The online dispute resolution platform run by the DTI",
+        "D": "The Securities and Exchange Commission's corporate registry"
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Act requires the E-Commerce Bureau to set up an Online Business Database of digital platforms, e-marketplaces, e-retailers and online merchants operating in the Philippines, giving the government and consumers access to their contact information (Sec. 10). It exists so that online businesses cannot hide behind anonymity. Takedowns and blacklisting are separate powers of the DTI Secretary (Secs. 15–16). For finding an online shop's contact details, the right tool is the Online Business Database.\n\n**A is wrong:** the blacklist lists businesses that ignored compliance or takedown orders; it is not a contact directory.\n\n**C is wrong:** that platform is for resolving disputes, not for publishing businesses' contact information.\n\n**D is wrong:** the SEC registry covers corporations generally; the Act created its own database of online businesses.\n\n**Watch for:** If the shop later ignored a DTI compliance order, it could end up on the public blacklist under Sec. 16, a separate tool.\n\n**Basis:** RA 11967, Secs. 10 and 15–16. Checked against the official text: https://lawphil.net/statutes/repacts/ra2023/ra_11967_2023.html. **Beyond notes.**"
+    },
+    {
+      "id": "pq-0074",
+      "type": "essay",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Internet Transactions Act (RA 11967)",
+      "syllabusIds": [
+        "s2.VI.C.2.a"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the Internet Transactions Act (RA 11967), Olivia buys a blender from a merchant on a large shopping platform. It arrives defective and does not match the product description, and the merchant ignores her messages. What are Olivia's rights, and what can she do?",
+      "suggestedAnswer": {
+        "answer": "Olivia may demand repair, replacement or a refund, and she may use the DTI's online dispute resolution platform or other remedies.",
+        "legalBasis": "An online merchant must make sure goods are received in the same condition, type, quantity and quality as described (Sec. 23(b)). In case of defect or failure to conform, the online consumer may pursue repair, replacement, refund or other remedies under the Consumer Act or other laws (Sec. 20); if she takes a replacement or refund, the merchant may get the goods back at no cost to her. The DTI was directed to develop an online dispute resolution platform as an alternative way to settle disputes with online merchants and platforms (Sec. 17). A consumer may also claim damages before the courts or the DTI within two years (Sec. 28).",
+        "application": "The blender is defective and does not match its description, so the merchant breached its duty under Sec. 23(b), and Olivia may choose repair, replacement or a refund. The merchant ignores her, so she may bring the dispute to the DTI's online dispute resolution platform, or file a complaint or claim for damages within two years.",
+        "conclusion": "Olivia is entitled to repair, replacement or a refund, and she may pursue it through the online dispute resolution platform or a complaint.\n\n**Common mistake:** naming only a refund and forgetting repair and replacement, or omitting the time limit for damages.\n\n**Watch for:** If Olivia had bought from another private individual in a one-time sale, the Act would not apply and she would rely on the Civil Code.\n\n**Basis:** RA 11967, Secs. 17, 20, 23(b) and 28. Checked against the official text: https://lawphil.net/statutes/repacts/ra2023/ra_11967_2023.html."
+      },
+      "keyPoints": [
+        "Goods must match their description (Sec. 23(b))",
+        "Remedies: repair, replacement, refund or others (Sec. 20)",
+        "Online dispute resolution platform as an alternative (Sec. 17)",
+        "Damages claim before the court or the DTI within two years (Sec. 28)"
+      ]
+    },
+    {
+      "id": "pq-0075",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Internet Transactions Act (RA 11967)",
+      "syllabusIds": [
+        "s2.VI.C.2.a"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the Internet Transactions Act (RA 11967), a merchant wants to list a food supplement that may be sold only with a government permit on an e-marketplace, but it has no permit or license information to show. What must the e-marketplace do?",
+      "choices": {
+        "A": "Refuse the listing unless the merchant provides the needed permits and license information",
+        "B": "Allow the listing, since only the merchant answers for permits",
+        "C": "Allow it for thirty days while the merchant applies for a permit",
+        "D": "Report it to the SEC, which alone decides on product permits"
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** An e-marketplace must prohibit the sale of regulated goods unless the merchant provides the necessary permits and license information, and must contractually bind merchants to follow the rules on such sales (Sec. 21(e)). The rule makes the platform a first line of defense against unsafe or unlicensed products. Here the supplement is regulated and the merchant has no permit or license information. The e-marketplace must therefore not allow the listing.\n\n**B is wrong:** the Act places its own duty on the e-marketplace to block regulated goods without permits.\n\n**C is wrong:** there is no grace period; the permits must be provided before the sale is allowed.\n\n**D is wrong:** the SEC does not issue product permits, and the platform's own duty is to prohibit the sale.\n\n**Watch for:** In performing these obligations, the platform must observe ordinary diligence; failing to do so can expose it to penalties and to subsidiary liability.\n\n**Basis:** RA 11967, Sec. 21(e). Checked against the official text: https://lawphil.net/statutes/repacts/ra2023/ra_11967_2023.html. **Beyond notes.**"
+    },
+    {
+      "id": "pq-0076",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Internet Transactions Act (RA 11967)",
+      "syllabusIds": [
+        "s2.VI.C.2.a"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the Internet Transactions Act (RA 11967), an e-marketplace wants to let a new merchant start listing products today. What should it require the merchant to submit first?",
+      "choices": {
+        "A": "Proof that the merchant has done business for at least five years",
+        "B": "Proof that the merchant keeps a physical store in the Philippines",
+        "C": "A cash bond to cover any future complaints from consumers",
+        "D": "Its name with an ID or business registration papers, address and contact details"
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** Before a merchant lists on its platform, an e-marketplace must, as far as practicable, require the merchant's name with at least one valid government ID (for individuals) or business registration documents (for juridical entities), its geographic address, and contact details including a phone number and a valid email address (Sec. 21(b)). It must also keep a regularly updated and verified list of its merchants (Sec. 21(c)). These requirements let consumers and authorities trace sellers. So the platform should collect identity or registration documents, address and contact details first.\n\n**A is wrong:** the Act sets no minimum business age for merchants.\n\n**B is wrong:** the Act asks for an address, not a physical store, and covers foreign merchants too.\n\n**C is wrong:** no cash bond is required by the Act as a condition of listing.\n\n**Watch for:** If the platform relied in good faith on documents that later turned out to be false, it can avoid subsidiary liability by showing reasonable effort to check them (Sec. 26).\n\n**Basis:** RA 11967, Sec. 21(b)–(c). Checked against the official text: https://lawphil.net/statutes/repacts/ra2023/ra_11967_2023.html. **Beyond notes.**"
+    },
+    {
+      "id": "pq-0077",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Internet Transactions Act (RA 11967)",
+      "syllabusIds": [
+        "s2.VI.C.2"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the Internet Transactions Act (RA 11967), an online seller is found, for the first time, to have advertised a fake “90% off” sale to lure buyers. What range of administrative fine may the DTI impose for this first offense?",
+      "choices": {
+        "A": "₱100,000 to ₱500,000",
+        "B": "₱20,000 to ₱100,000",
+        "C": "₱500,000 to ₱1,000,000",
+        "D": "₱20,000 to ₱1,000,000"
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Act grades the DTI's fines for deceptive, unfair or unconscionable online sales practices by offense (Sec. 29(b)): ₱20,000 to ₱100,000 for the first offense, ₱100,000 to ₱500,000 for the second, and ₱500,000 to ₱1,000,000 for the third and later offenses. These fines are in addition to penalties under the Consumer Act. A fake discount meant to lure buyers is a deceptive sales practice, and this is the seller's first offense. The applicable range is therefore ₱20,000 to ₱100,000.\n\n**A is wrong:** this is the range for a second offense, not a first.\n\n**C is wrong:** this is the range for a third or later offense.\n\n**D is wrong:** this is only the overall span across all offenses; the law sets a narrower range for each.\n\n**Watch for:** Check the current text: some printed versions of Sec. 29 contain typographical errors in the amounts.\n\n**Basis:** RA 11967, Sec. 29(b). Checked against the official text: https://lawphil.net/statutes/repacts/ra2023/ra_11967_2023.html. **Beyond notes.**"
+    },
+    {
+      "id": "pq-0078",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Internet Transactions Act (RA 11967)",
+      "syllabusIds": [
+        "s2.VI.C.2",
+        "s2.VI.C.2.a"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the Internet Transactions Act (RA 11967), the DTI issues a takedown order against an online merchant selling counterfeit goods, and the merchant willfully refuses to comply. What can follow?",
+      "choices": {
+        "A": "Nothing, since takedown orders are only recommendations to sellers",
+        "B": "Only a warning, since fines apply to warranty violations alone",
+        "C": "Graded fines like those for deceptive practices, and public blacklisting",
+        "D": "Automatic cancellation of the merchant's business name by the SEC"
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** Willfully or unreasonably refusing to comply with certain takedown orders, including those against counterfeit goods, is fined on the same graded scale as deceptive practices, from ₱20,000 to ₱100,000 for a first offense up to ₱1,000,000 for later ones (Sec. 29(c)). Separately, the DTI Secretary may place on a public blacklist the platforms and accounts subject of a takedown order or that fail to comply with a compliance order (Sec. 16). The two tools make takedown orders enforceable rather than advisory. So the merchant faces fines and blacklisting.\n\n**A is wrong:** the Act backs takedown orders with fines and blacklisting.\n\n**B is wrong:** fines apply to several violations, including refusing takedown orders.\n\n**D is wrong:** the Act's consequences are fines and blacklisting, not automatic cancellation.\n\n**Watch for:** If the refusal were neither willful nor unreasonable, for example because the order never reached the merchant, the fine under Sec. 29(c) would not apply.\n\n**Basis:** RA 11967, Secs. 16 and 29(c). Checked against the official text: https://lawphil.net/statutes/repacts/ra2023/ra_11967_2023.html."
+    },
+    {
+      "id": "pq-0079",
+      "type": "essay",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Internet Transactions Act (RA 11967)",
+      "syllabusIds": [
+        "s2.VI.C.2.a",
+        "s2.VI.C.2.b"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "prompt": "Under the Internet Transactions Act (RA 11967), an e-marketplace lets a seller based abroad list counterfeit branded shoes. The brand owner notifies the platform, but the listing stays up for weeks. A buyer in Manila receives a fake pair and complains to the DTI. The e-marketplace argues that only the seller is answerable and that the DTI has no power over a seller outside the Philippines. Discuss.",
+      "suggestedAnswer": {
+        "answer": "The e-marketplace's argument fails. The DTI may order the listing taken down against both the seller and the platform, and the platform may be liable to the buyer.",
+        "legalBasis": "The DTI Secretary may issue an ex parte takedown order against listings of counterfeit goods, directed against the online merchant and the owner or operator of the e-marketplace (Sec. 15(a)). An e-marketplace is subsidiarily liable to the consumer if, after notice, it fails to act quickly to remove goods that infringe another's intellectual property (Sec. 26(b)). A seller that avails of the Philippine market with minimum contacts cannot evade liability for lack of legal presence (Sec. 5).",
+        "application": "The shoes are counterfeit, so the DTI can order the listing removed, and the order runs against the platform as well as the seller. The platform was notified by the brand owner and still left the listing up for weeks, which supports its subsidiary liability to the buyer. The foreign seller, selling to buyers in Manila, is also within reach of Philippine law.",
+        "conclusion": "The e-marketplace may be ordered to take down the listing and may be subsidiarily liable to the buyer; the DTI is not powerless.\n\n**Common mistake:** focusing only on the foreign seller and concluding that the DTI is powerless, without discussing the order against the platform and its own liability.\n\n**Watch for:** If the goods were also unsafe or dangerous, the platform's failure to remove them after notice would make it solidarily liable under Sec. 27.\n\n**Basis:** RA 11967, Secs. 5, 15(a) and 26(b). Checked against the official text: https://lawphil.net/statutes/repacts/ra2023/ra_11967_2023.html."
+      },
+      "keyPoints": [
+        "Takedown orders against counterfeit listings reach the merchant and the platform (Sec. 15(a))",
+        "Subsidiary liability for failing, after notice, to remove infringing goods (Sec. 26(b))",
+        "A foreign seller with minimum contacts cannot evade liability (Sec. 5)",
+        "Application to the notice and the delay in the facts"
+      ]
+    },
+    {
+      "id": "pq-0080",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Public Services Act (RA 11659)",
+      "syllabusIds": [
+        "s2.VI.E.1",
+        "s1.IX.E"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 review questions"
+      },
+      "prompt": "Under the Public Service Act as amended by RA 11659, what happened to the list of public services treated as public utilities?",
+      "choices": {
+        "A": "It was narrowed down to only six sectors",
+        "B": "It was expanded to cover all public services",
+        "C": "It was left unchanged from the old law's list",
+        "D": "It was abolished, so no public utilities remain"
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** RA 11659 narrowed the meaning of public utility, so that only six sectors remain public utilities. The change matters because the Constitution's nationality limits on owning and operating a public utility apply only to public utilities. Other public services, outside those six sectors, are freed from those limits. So the list was narrowed to six.\n\n**B is wrong:** the amendment did the opposite; it narrowed the category.\n\n**C is wrong:** the point of the amendment was to change which services are public utilities.\n\n**D is wrong:** six sectors remain public utilities; the category was narrowed, not abolished.\n\n**Watch for:** Verify the current list of the six sectors against the text of RA 11659.\n\n**Basis:** Commonwealth Act No. 146, Sec. 13(d), as amended by RA 11659. Checked against the official text: https://lawphil.net/statutes/repacts/ra2022/ra_11659_2022.html."
+    },
+    {
+      "id": "pq-0081",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Public Services Act (RA 11659)",
+      "syllabusIds": [
+        "s2.VI.E.1",
+        "s2.VI.E.2"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 review questions"
+      },
+      "prompt": "Under the Public Service Act as amended by RA 11659, is a mobile telecommunications company a public utility?",
+      "choices": {
+        "A": "Yes; every telecom company is still a public utility",
+        "B": "Yes, if it serves more than a million subscribers",
+        "C": "No; it is treated as critical infrastructure instead",
+        "D": "No; telecommunications is not a public service at all"
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** After RA 11659, only six sectors remain public utilities, and mobile telecommunications is not among them. It is instead classified as critical infrastructure, a separate category of public service. The distinction matters because the nationality limits for public utilities do not apply to it in the same way. So a mobile telecommunications company is not a public utility.\n\n**A is wrong:** the amendment took telecommunications out of the public-utility category.\n\n**B is wrong:** the classification does not depend on the number of subscribers.\n\n**D is wrong:** it is still a public service, just not a public utility.\n\n**Watch for:** Verify the current rules on critical infrastructure, which carry their own conditions.\n\n**Basis:** RA 11659, Sec. 2(e). Checked against the official text: https://lawphil.net/statutes/repacts/ra2022/ra_11659_2022.html."
+    },
+    {
+      "id": "pq-0082",
+      "type": "mcq",
+      "status": "draft",
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Public Services Act (RA 11659)",
+      "syllabusIds": [
+        "s2.VI.E.1",
+        "s2.VI.E.4"
+      ],
+      "caseIds": [],
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 review questions"
+      },
+      "prompt": "Under the Public Service Act as amended by RA 11659, a company owned by a foreign government wants to buy shares in a power distribution utility. May it do so?",
+      "choices": {
+        "A": "Yes, up to 40% of the capital, like any foreign investor",
+        "B": "No; power distribution is a public utility closed to such investors",
+        "C": "Yes, without limit, since RA 11659 removed all ownership limits",
+        "D": "Yes, as long as the President approves the purchase in writing"
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** Power distribution remains one of the public utilities after RA 11659. The Act separately restricts investments by foreign governments and foreign state-owned enterprises (Sec. 24). Because the target is a public utility, a foreign state-owned company may not hold such an interest. The purchase is therefore not allowed.\n\n**A is wrong:** the separate rule on foreign state-owned enterprises bars them, whatever the share.\n\n**C is wrong:** RA 11659 narrowed the public-utility list; it did not remove limits for the remaining utilities.\n\n**D is wrong:** there is no presidential approval that overrides this restriction.\n\n**Watch for:** If the target were a public service that is not a public utility, the analysis of foreign state-owned investment would be different; verify the current text of Sec. 24.\n\n**Also note:** Two qualifications: the prohibition applies only to investments made after RA 11659 took effect, and sovereign wealth funds and independent pension funds may collectively own up to 30% of such public services.\n\n**Basis:** RA 11659, Sec. 24. Checked against the official text: https://lawphil.net/statutes/repacts/ra2022/ra_11659_2022.html."
+    }
+  ]
+}
