@@ -16,3 +16,6 @@ secrets*
 # Private scratch material that stays only on this Mac (raw case text, drafts, thinking).
 # Never committed, never uploaded to GitHub, never part of the app.
 notes/
+
+# Source documents (official PDFs downloaded for checking wording). Kept on this Mac only.
+sources/

@@ -684,7 +684,128 @@ def print_list(lines, show_all):
     print()
 
 
+# ---------- Privacy: private class notes never go into git ----------
+# notes/ (her private class notes, and notes/private-content/ = everything generated from them)
+# is git-ignored and must never be committed or published. This check fails if:
+#   - any file under notes/ is staged for commit or already tracked by git;
+#   - .gitignore no longer ignores notes/ or notes/private-content/;
+#   - sw.js mentions notes/ (the offline lists must never include private files);
+#   - the lines being committed (or a commit message) contain 12 or more words in a row
+#     that also appear in the private content (a quote from the notes).
+# It never prints the private text itself, only where the match is.
+PRIVATE_DIRS = ["notes/"]
+PRIVATE_CONTENT = os.path.join(ROOT, "notes", "private-content")
+QUOTE_WORDS = 12
+
+
+def _git(*args):
+    import subprocess
+    try:
+        r = subprocess.run(["git"] + list(args), cwd=ROOT, capture_output=True, text=True, timeout=30)
+    except (OSError, subprocess.SubprocessError):
+        return None
+    return r
+
+
+def _words(text):
+    return re.findall(r"[a-z0-9]+", text.lower())
+
+
+def _windows(words):
+    return {" ".join(words[i:i + QUOTE_WORDS]) for i in range(len(words) - QUOTE_WORDS + 1)}
+
+
+def private_fingerprints():
+    """Every run of 12 words from the private content (kept in memory only, never printed)."""
+    found = set()
+    if not os.path.isdir(PRIVATE_CONTENT):
+        return found
+
+    def strings(value):
+        if isinstance(value, str):
+            yield value
+        elif isinstance(value, dict):
+            for v in value.values():
+                yield from strings(v)
+        elif isinstance(value, list):
+            for v in value:
+                yield from strings(v)
+
+    for folder, _, files in os.walk(PRIVATE_CONTENT):
+        for name in files:
+            path = os.path.join(folder, name)
+            try:
+                with open(path, encoding="utf-8") as f:
+                    raw = f.read()
+            except (OSError, UnicodeDecodeError):
+                continue
+            texts = [raw]
+            if name.endswith(".json"):
+                try:
+                    texts = list(strings(json.loads(raw)))
+                except json.JSONDecodeError:
+                    pass
+            for t in texts:
+                found |= _windows(_words(t))
+    return found
+
+
+def check_privacy(message_file=None):
+    where = "PRIVACY"
+    git_ok = _git("rev-parse", "--git-dir")
+    if git_ok is None or git_ok.returncode != 0:
+        check(where, "couldn't run git, so the private-notes check was skipped.")
+        return
+    # 1. Nothing under notes/ is staged or tracked.
+    staged = (_git("diff", "--cached", "--name-only", "-z").stdout or "").split("\0")
+    tracked = (_git("ls-files", "-z", "--", *PRIVATE_DIRS).stdout or "").split("\0")
+    for path in sorted({p for p in staged + tracked if p and any(p.startswith(d) for d in PRIVATE_DIRS)}):
+        problem(where, "%s is private (notes/) and must never be committed. Unstage it with: git rm --cached \"%s\"" % (path, path))
+    # 2. .gitignore still hides the private folders.
+    for probe in ("notes/x.pdf", "notes/private-content/x.json"):
+        if _git("check-ignore", "-q", probe).returncode != 0:
+            problem(where, ".gitignore no longer ignores %s/; put the line notes/ back." % probe.rsplit("/", 1)[0])
+    # 3. The offline lists never include private files.
+    sw = read_text(os.path.join(ROOT, "sw.js")) or ""
+    if "notes/" in sw:
+        problem(where, "sw.js mentions notes/: private files must never be in APP_FILES or DATA_FILES.")
+    # 4. No quote from the private content in what's being committed (or in the commit message).
+    prints = private_fingerprints()
+    if not prints:
+        return
+    diff = _git("diff", "--cached", "-U0", "--no-color", "--no-ext-diff").stdout or ""
+    added, current = {}, None
+    for line in diff.splitlines():
+        if line.startswith("+++ "):
+            current = line[6:] if line.startswith("+++ b/") else None
+        elif line.startswith("+") and current:
+            added.setdefault(current, []).append(line[1:])
+    for path, lines in sorted(added.items()):
+        if _windows(_words(" ".join(lines))) & prints:
+            problem(where, "%s (staged) contains %d+ words in a row from your private notes. Remove them, "
+                    "or, if that text is really from an official source, check it carefully before committing." % (path, QUOTE_WORDS))
+    if message_file:
+        text = read_text(message_file) or ""
+        if _windows(_words(text)) & prints:
+            problem(where, "the commit message contains %d+ words in a row from your private notes." % QUOTE_WORDS)
+
+
+def privacy_only():
+    """python3 tools/check-content.py --privacy [--message FILE]: only the private-notes check (used by the git hooks)."""
+    msg = sys.argv[sys.argv.index("--message") + 1] if "--message" in sys.argv[:-1] else None
+    check_privacy(msg)
+    if problems:
+        print("Private-notes check FAILED — nothing was committed:")
+        print_list(problems, True)
+        return 1
+    print("Private-notes check OK.")
+    return 0
+
+
 def main():
+    if "--privacy" in sys.argv:
+        return privacy_only()
+    check_privacy()
     questions, cases = load_content()
     rules = load_json("data/rules.json")
 
