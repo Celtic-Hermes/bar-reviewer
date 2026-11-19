@@ -19,3 +19,6 @@ notes/
 
 # Source documents (official PDFs downloaded for checking wording). Kept on this Mac only.
 sources/
+
+# Claude Code helper settings and agents. Kept on this Mac only.
+.claude/
