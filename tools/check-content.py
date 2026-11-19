@@ -702,7 +702,7 @@ def print_list(lines, show_all):
 PRIVATE_DIRS = ["notes/"]
 PRIVATE_CONTENT = os.path.join(ROOT, "notes", "private-content")
 QUOTE_WORDS = 12
-QUOTE_ALLOWED = {"data/class-notes.json"}  # the only committed file allowed to quote the notes
+QUOTE_ALLOWED = set()  # no committed file may quote the notes (the class-notes questions are written in original wording)
 
 
 def _git(*args):
@@ -740,8 +740,8 @@ def private_fingerprints():
 
     for folder, _, files in os.walk(PRIVATE_CONTENT):
         for name in files:
-            if not name.endswith((".json", ".txt", ".md")):
-                continue
+            if name not in ("notes-text.txt", "review-questions.md"):
+                continue  # only the notes themselves (not files generated from them) are fingerprinted
             path = os.path.join(folder, name)
             try:
                 with open(path, encoding="utf-8") as f:
@@ -805,18 +805,20 @@ CLASS_NOTES = os.path.join(DATA, "class-notes.json")
 
 
 def check_class_notes(official_ids):
-    """data/class-notes.json (questions made from class notes; public, labeled "From class notes").
-    Checks the same parts as official questions, plus: IDs are pq-0001 …, used once, never removed
-    (compared with the last save point, and with notes/private-content/ids-issued.txt when it's on
-    this computer), the source names the class notes, and, when the private cleaned notes text
-    (notes/private-content/notes-text.txt) is on this computer, every excerpt piece and fullText
-    appears in it word for word. Returns the IDs, or None if there's no file."""
-    path = CLASS_NOTES
-    if not os.path.exists(path):
+    """data/class-notes.json: questions made from class notes, labeled "From class notes".
+    Public checks: the same parts as official questions; IDs pq-0001 … used once and never
+    removed (except IDs retired or held for verification); the source shows only "Class notes"
+    and a file name (no heading, section or quote, so nothing is given away); one blank per
+    fill in the blank; every answer ends with a Basis line.
+    Private checks (only when notes/private-content/ is on this computer): every question has a
+    private source record; its quote appears word for word in the notes or review questions;
+    its official-text phrases appear in sources/official/; and no question or answer choice
+    repeats 8+ words in a row from the notes. Returns the IDs, or None if there's no file."""
+    if not os.path.exists(CLASS_NOTES):
         return None
     where = "data/class-notes.json"
     try:
-        with open(path, encoding="utf-8") as f:
+        with open(CLASS_NOTES, encoding="utf-8") as f:
             data = json.load(f)
     except (json.JSONDecodeError, UnicodeDecodeError) as e:
         problem(where, "isn't valid JSON (%s)." % e)
@@ -825,10 +827,37 @@ def check_class_notes(official_ids):
     if not isinstance(questions, list):
         problem(where, "has no \"questions\" list.")
         return {}
-    notes_text = read_text(os.path.join(PRIVATE_CONTENT, "notes-text.txt")) or ""
-    notes_text = comparable(re.sub(r"\[Page \d+\]", " ", notes_text))
-    if not notes_text:
-        check(where, "the private notes text isn't on this computer, so the quotes weren't compared with the notes.")
+
+    def private_file(name):
+        return read_text(os.path.join(PRIVATE_CONTENT, name))
+
+    refs = {}
+    raw_refs = private_file("sources.json")
+    if raw_refs:
+        try:
+            refs = json.loads(raw_refs)
+        except json.JSONDecodeError:
+            problem("notes/private-content/sources.json", "isn't valid JSON.")
+    notes = comparable(re.sub(r"\[Page \d+\]", " ", private_file("notes-text.txt") or ""))
+    review = comparable((private_file("review-questions.md") or "").replace("*", ""))
+    official_dir = os.path.join(ROOT, "sources", "official")
+    official = {}
+
+    def official_text(url):
+        name = {"ra_8792": "ra8792", "ra_11967": "ra11967", "ra_11659": "ra11659", "am_01-7-01": "ree",
+                "ra_8484": "ra8484", "ra_9369": "ra9369", "ra_386": "civilcode", "gr_170633": "mcc",
+                "gr_193531": "torres", "gr_170338": "garcillano", "gr_201112": "capalla",
+                "gr_199149": "vinzons", "gr_155076": "laurel2009"}
+        key = next((v for k, v in name.items() if k in url), None)
+        if key and key not in official:
+            official[key] = comparable(read_text(os.path.join(official_dir, key + ".txt")) or "")
+        return official.get(key, "")
+
+    def eight(t):
+        w = re.findall(r"[a-z0-9₱]+", t.lower())
+        return {" ".join(w[i:i + 8]) for i in range(len(w) - 7)}
+    source_grams = eight(notes) | eight(review) if notes else set()
+
     by_id = {}
     for q in questions:
         q_id = q.get("id") if isinstance(q, dict) else None
@@ -850,43 +879,104 @@ def check_class_notes(official_ids):
         need_text(q_id, q, "prompt")
         before = len(checks)
         check_type_parts(q_id, q, q_type)
-        # Notes sections have no "SECTION 1. Title. –" heading; that CHECK isn't useful here.
         checks[before:] = [c for c in checks[before:] if "section heading the app can find" not in c]
+        if q_type == "fillblank" and len(BLANK.findall(str(q.get("prompt", "")))) != 1:
+            problem(q_id, "a class-notes fill in the blank should have exactly one blank.")
         if q.get("caseIds") not in ([], None):
             problem(q_id, "class-notes questions link to no case ('caseIds' should be []).")
         source = q.get("source")
-        if not isinstance(source, dict):
-            problem(q_id, "'source' is missing.")
+        if not isinstance(source, dict) or source.get("caseTitle") != "Class notes" or not filled(source.get("file")):
+            problem(q_id, "the source should be just {\"caseTitle\": \"Class notes\", \"file\": …}.")
+        elif set(source) - {"caseTitle", "file"}:
+            problem(q_id, "the source must show only the file name (no heading, section or quote): remove %s." % ", ".join(sorted(set(source) - {"caseTitle", "file"})))
+        rationale = q.get("explanation") if q_type != "essay" else (q.get("suggestedAnswer") or {}).get("conclusion")
+        if not filled(rationale) or "**Basis:**" not in rationale:
+            problem(q_id, "the answer must end with a **Basis:** line.")
+        # Private checks (this Mac only).
+        if not refs:
             continue
-        for field in ["caseTitle", "file", "part", "excerpt"]:
-            need_text(q_id, source, field, "source." + field)
-        if source.get("caseTitle") != "Class notes":
-            problem(q_id, "source.caseTitle should be \"Class notes\".")
-        if not notes_text:
+        ref = refs.get(q_id)
+        if not isinstance(ref, dict):
+            problem(q_id, "has no private source record in notes/private-content/sources.json.")
             continue
-        pieces = [p for p in str(source.get("excerpt", "")).split("…") if comparable(p)]
-        if q_type == "fillblank" and filled(q.get("fullText")):
-            pieces.append(q["fullText"])
-        for piece in pieces:
-            if comparable(piece) not in notes_text:
-                shown = comparable(piece)[:60]
-                problem(q_id, "this isn't found word for word in notes-text.txt: \"%s…\"" % shown)
+        if notes:
+            for piece in str(ref.get("excerpt", "")).split("…"):
+                if comparable(piece) and comparable(piece) not in notes and comparable(piece) not in review:
+                    problem(q_id, "its private source quote isn't found in the notes or review questions: \"%s…\"" % comparable(piece)[:60])
+            shown = [q.get("prompt", ""), q.get("fullText", "")] + list((q.get("choices") or {}).values())
+            if any(eight(t) & source_grams for t in shown):
+                problem(q_id, "the question or a choice repeats 8+ words in a row from the notes (rewrite it in your own words).")
+        for chk in ref.get("officialChecks", []):
+            text = official_text(chk.get("source", ""))
+            if text and comparable(chk.get("phrase", "")) not in text:
+                problem(q_id, "its Basis phrase isn't found in the official text: \"%s…\"" % chk.get("phrase", "")[:60])
+        if not ref.get("officialChecks"):
+            problem(q_id, "has no official-text check recorded (Basis not verified).")
     clash = sorted(set(by_id) & set(official_ids))
     if clash:
         problem(where, "IDs also used by official content: %s." % ", ".join(clash))
-    issued = set((read_text(os.path.join(PRIVATE_CONTENT, "ids-issued.txt")) or "").split())
+    issued = set((private_file("ids-issued.txt") or "").split())
+    excused = set((private_file("ids-retired.txt") or "").split()) | set((private_file("ids-held.txt") or "").split())
     old = _git("show", "HEAD:data/class-notes.json")
     if old is not None and old.returncode == 0:
         try:
             issued |= {q.get("id") for q in json.loads(old.stdout).get("questions", []) if isinstance(q, dict)}
         except (json.JSONDecodeError, AttributeError):
             pass
-    if issued:
-        gone = sorted(i for i in issued - set(by_id) if isinstance(i, str))
-        if gone:
-            problem(where, "these IDs were given out before but are gone now (IDs never change or disappear): %s."
-                    % ", ".join(gone[:10]))
+    gone = sorted(i for i in issued - set(by_id) - excused if isinstance(i, str))
+    if gone:
+        problem(where, "these IDs were given out before but are gone now, and aren't listed as retired or held: %s." % ", ".join(gone[:10]))
+    held = sorted(x for x in (private_file("ids-held.txt") or "").split() if x)
+    if held:
+        pass  # held items are shown on the For clarification screen (data/for-clarification.json)
     return by_id
+
+
+def check_for_clarification(class_ids):
+    """data/for-clarification.json: class-notes items under review, shown only on their own screen.
+    Each needs a pq- ID not used in the main class-notes set, the tag "for-clarification", a prompt,
+    the class materials' answer, and a clarification with its Basis and an https link. When the
+    private notes are on this computer, the prompt and answer must not repeat 8+ words from them."""
+    path = os.path.join(DATA, "for-clarification.json")
+    if not os.path.exists(path):
+        return None
+    where = "data/for-clarification.json"
+    try:
+        items = json.load(open(path, encoding="utf-8")).get("questions")
+    except (json.JSONDecodeError, AttributeError) as e:
+        problem(where, "isn't valid JSON or has no questions (%s)." % e)
+        return {}
+    notes = read_text(os.path.join(PRIVATE_CONTENT, "notes-text.txt"))
+    review = read_text(os.path.join(PRIVATE_CONTENT, "review-questions.md")) or ""
+
+    def eight(t):
+        w = re.findall(r"[a-z0-9₱]+", t.lower())
+        return {" ".join(w[i:i + 8]) for i in range(len(w) - 7)}
+    source = eight(re.sub(r"\[Page \d+\]", " ", notes) + " " + review.replace("*", "")) if notes else set()
+    seen = {}
+    for q in items if isinstance(items, list) else []:
+        q_id = q.get("id") if isinstance(q, dict) else None
+        if not isinstance(q_id, str) or not re.fullmatch(r"pq-\d{4}", q_id) or q_id in seen:
+            problem(where, "bad or repeated ID %r." % (q_id,))
+            continue
+        seen[q_id] = q
+        if q_id in class_ids:
+            problem(q_id, "is in the main class-notes set too; items for clarification must be kept out of it.")
+        check_status(q_id, q)
+        if "for-clarification" not in (q.get("tags") or []):
+            problem(q_id, "needs the tag \"for-clarification\".")
+        for field in ("prompt", "answer"):
+            need_text(q_id, q, field)
+            if source and eight(str(q.get(field, ""))) & source:
+                problem(q_id, "its %s repeats 8+ words in a row from the notes." % field)
+        c = q.get("clarification")
+        if not isinstance(c, dict) or not filled(c.get("text")) or not filled(c.get("basis")) or \
+                not any(isinstance(u, str) and u.startswith("https://") for u in c.get("urls", [])):
+            problem(q_id, "needs a clarification with its text, Basis and at least one https link.")
+    held = set((read_text(os.path.join(PRIVATE_CONTENT, "ids-held.txt")) or "").split())
+    if held and held != set(seen):
+        check(where, "the items here (%s) differ from the held IDs (%s)." % (", ".join(sorted(seen)), ", ".join(sorted(held))))
+    return seen
 
 
 def privacy_only():
@@ -924,11 +1014,14 @@ def main():
     quotes = load_json("data/quotes.json")
     quotes_by_id = check_quotes(quotes) if quotes is not None else {}
     private_by_id = check_class_notes(questions_by_id)
+    clarify_by_id = check_for_clarification(private_by_id or {})
     print("Checked %d questions, %d cases, %d rules, %d quotes." % (len(questions_by_id), len(cases_by_id), len(rules_by_id), len(quotes_by_id)))
     print("Next free IDs: %s, %s, %s, %s" % (next_id(questions_by_id, "q"), next_id(cases_by_id, "case"),
                                              next_id(rules_by_id, "rule"), next_id(quotes_by_id, "quote")))
     if private_by_id is not None:
         ledger = (read_text(os.path.join(PRIVATE_CONTENT, "ids-issued.txt")) or "").split()
+        if clarify_by_id is not None:
+            print("For clarification (data/for-clarification.json): %d items, kept out of the main set" % len(clarify_by_id))
         print("Class notes (data/class-notes.json): %d questions; next free ID %s"
               % (len(private_by_id), next_id({i: 1 for i in set(private_by_id) | set(ledger)}, "pq")))
     print()

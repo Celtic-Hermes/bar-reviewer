@@ -38,6 +38,7 @@
     <button type="button" class="sidebar-link" data-go="notes"><span class="sidebar-icon" data-icon="pen" aria-hidden="true"></span>My notes</button>
     <button type="button" class="sidebar-link" data-go="schedule"><span class="sidebar-icon" data-icon="calendar" aria-hidden="true"></span>Study Schedule</button>
     <button type="button" class="sidebar-link" data-go="syllabus"><span class="sidebar-icon" data-icon="book" aria-hidden="true"></span>2027 Bar Syllabus</button>
+    <button type="button" class="sidebar-link" data-go="clarify"><span class="sidebar-icon" data-icon="document" aria-hidden="true"></span>For clarification</button>
     <button type="button" class="sidebar-link" data-go="settings"><span class="sidebar-icon" data-icon="gear" aria-hidden="true"></span>Settings</button>
   </nav>
 
@@ -160,6 +161,15 @@
       <div id="syllabus-body"></div>
       <p class="syllabus-source">Source: Bar Bulletin No. 1-2027. If this differs from the official microsite, the microsite controls.
         <a id="syllabus-link" href="https://sc.judiciary.gov.ph/bar-2027" target="_blank" rel="noopener">Official 2027 Bar microsite</a></p>
+    </section>
+
+    <!-- FOR CLARIFICATION: class-notes items under review (app.js openClarify; data/for-clarification.json,
+         loaded only when this screen opens). Never part of the main questions, scores, practice, search or counts. -->
+    <section id="screen-clarify" hidden>
+      <button class="back-btn" id="clarify-back"><span data-icon="chevron-left"></span> Home</button>
+      <h1 class="screen-title">For clarification</h1>
+      <p class="clarify-intro">These items are under review. Where the official text differs from the class materials, both are shown.</p>
+      <div id="clarify-list"></div>
     </section>
 
     <!-- STUDY SCHEDULE: her own plan, day by day (app.js openSchedule; saved in progress.schedule).
@@ -452,6 +462,11 @@
           <section class="card">
             <h2 class="label">Full text</h2>
             <p class="prompt fb-full reading-text" id="fb-full"></p>
+          </section>
+          <!-- The item's discussion, if it has one (app.js showFillBlank) -->
+          <section class="card" id="fb-discussion-card" hidden>
+            <h2 class="label">Discussion</h2>
+            <p class="prompt reading-text" id="fb-discussion"></p>
           </section>
           <section class="rating">
             <h2 class="label">How did you do?</h2>

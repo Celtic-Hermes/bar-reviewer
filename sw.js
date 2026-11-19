@@ -9,7 +9,7 @@
 // data/class-notes.json, the topic files in data/content/, or files in data/case-texts/ and data/rule-texts/.
 // Content is always fetched fresh when she's online.
 // =====================================================================
-const CACHE_VERSION = "v110";
+const CACHE_VERSION = "v113";
 const CACHE_NAME = "bar-reviewer-" + CACHE_VERSION;
 
 // Every file the app needs, written relative to this file so it works
@@ -30,7 +30,8 @@ const APP_FILES = [
   "data/rules.json",
   "data/quotes.json",
   "data/syllabus-2027.json",
-  "data/class-notes.json"
+  "data/class-notes.json",
+  "data/for-clarification.json"
 ];
 
 // Full texts of decisions (data/case-texts/case-0001.txt …) are NOT in APP_FILES:
@@ -43,7 +44,7 @@ const CASE_TEXT_CACHE = "bar-reviewer-case-texts";
 const CONTENT_CACHE = "bar-reviewer-content";
 
 // Content files: always try for the newest copy first.
-const DATA_FILES = ["data/catalog.json", "data/rules.json", "data/quotes.json", "data/syllabus-2027.json", "data/class-notes.json"];
+const DATA_FILES = ["data/catalog.json", "data/rules.json", "data/quotes.json", "data/syllabus-2027.json", "data/class-notes.json", "data/for-clarification.json"];
 
 // 1. Install: download a fresh copy of every file into the cache.
 self.addEventListener("install", function (event) {

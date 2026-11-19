@@ -183,6 +183,7 @@ body {
   text-align: justify;
   -webkit-hyphens: auto;
   hyphens: auto;
+  overflow-wrap: anywhere;  /* a long web address (e.g. a Basis link) wraps instead of running off the screen */
 }
 /* With typing boxes in the line (fill in the blank): still justified like all reading
    text (from the rule above). Lines are a little further apart, so boxes on lines above
@@ -1535,3 +1536,18 @@ body.dialog-open { overflow: hidden; }
 .syllabus-source { margin: 8px 0 0; font-size: 13px; line-height: 1.5; color: var(--muted); }
 .syllabus-source a { color: var(--primary-text); font-weight: 600; }
 @media (prefers-reduced-motion: reduce) { .syl-chevron { transition: none; } }
+
+/* ---------- For clarification (index.html #screen-clarify, app.js openClarify) ----------
+   Items under review: the class materials' answer, then a box with what the official text says.
+   Shared palette only; the box uses the soft accent tint with dark text, like other highlights. */
+.clarify-intro { margin: 0 0 16px; font-size: 15px; line-height: 1.5; color: var(--muted); }
+.clarify-empty { color: var(--muted); }
+.clarify-card { margin: 0 0 14px; }
+.clarify-where { margin: 0; font-size: 13px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); }
+.clarify-card .notes-badge { margin: 6px 0 10px; }
+.clarify-more { margin-top: 12px; }
+.clarify-more > summary { min-height: 44px; display: flex; align-items: center; font-weight: 600; color: var(--primary-text); cursor: pointer; }
+.clarify-box { margin-top: 12px; padding: 12px 14px; border-radius: 12px; background: var(--primary-soft); color: var(--text); }
+.clarify-box .label { margin-top: 0; }
+.clarify-basis { margin: 8px 0 0; font-size: 14px; }
+.clarify-basis a { color: var(--text); text-decoration: underline; }

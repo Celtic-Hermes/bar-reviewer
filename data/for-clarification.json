@@ -1,0 +1,151 @@
+{
+  "note": "Items under review. Where the official text differs from the class materials, both are shown. Not part of the main question set. Built by a private script; do not hand-edit.",
+  "questions": [
+    {
+      "id": "pq-0006",
+      "status": "draft",
+      "tags": [
+        "for-clarification"
+      ],
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "prompt": "Under the Electronic Commerce Act (RA 8792), what does the principle of media neutrality mean?",
+      "answer": "Paper and electronic dealings get equal treatment, and no medium of electronic communication is favored over another; email, text messages, chat and fax are all given as examples.",
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "clarification": {
+        "text": "RA 8792 itself does not use the term “media neutrality.” Its declaration of policy speaks only of “neutrality of technology” (Sec. 2), and its rules on legal recognition say information is not denied effect solely because it is electronic (Secs. 6–7). Also, listing fax among the qualifying media conflicts with MCC Industrial Sales v. Ssangyong, which held that a facsimile transmission is neither an electronic data message nor an electronic document.",
+        "basis": "RA 8792, Secs. 2 and 6–7; MCC Industrial Sales v. Ssangyong, G.R. No. 170633, October 17, 2007",
+        "urls": [
+          "https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html",
+          "https://lawphil.net/judjuris/juri2007/oct2007/gr_170633_2007.html"
+        ]
+      }
+    },
+    {
+      "id": "pq-0020",
+      "status": "draft",
+      "tags": [
+        "for-clarification"
+      ],
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "prompt": "Under the Electronic Commerce Act (RA 8792), Joy and Mark agree by email on the sale of a residential lot, including the price and the title number. Mark says the emails are enough to make the sale complete. What role do the emails play?",
+      "answer": "The emails can be received in evidence to show what was agreed, but they do not satisfy the form required for selling land: that sale has to be made in a public instrument.",
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "clarification": {
+        "text": "The Civil Code does list acts and contracts over real rights in immovable property among those that must appear in a public document (Art. 1358(1)), but it states that sales of real property are governed by Arts. 1403(2) and 1405 (the Statute of Frauds). And once a contract is perfected, the parties may compel each other to put it in the required form (Art. 1357). The public instrument is therefore not shown by these articles to be a requisite of validity between the parties; questions of registration and of third parties are a separate matter. Check the current rule before relying on either view.",
+        "basis": "Civil Code, Arts. 1357 and 1358",
+        "urls": [
+          "https://lawphil.net/statutes/repacts/ra1949/ra_386_1949.html"
+        ]
+      }
+    },
+    {
+      "id": "pq-0022",
+      "status": "draft",
+      "tags": [
+        "for-clarification"
+      ],
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "prompt": "Under the Electronic Commerce Act (RA 8792), electronic signatures are widely recognized. Why do some laws still insist on a handwritten signature for certain documents?",
+      "answer": "To keep sensitive transactions carefully checked, legally secure and harder to fake.",
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "clarification": {
+        "text": "No provision of RA 8792 or decision checked states this reason. What the Act does say is that none of its provisions varies the formalities that existing laws require for a document's validity (Sec. 7, proviso). Which documents still need a handwritten signature (for example checks, promissory notes or powers of attorney) should be checked against the current law.",
+        "basis": "RA 8792, Sec. 7 (proviso)",
+        "urls": [
+          "https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html"
+        ]
+      }
+    },
+    {
+      "id": "pq-0041",
+      "status": "draft",
+      "tags": [
+        "for-clarification"
+      ],
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "Electronic Commerce Act (RA 8792)",
+      "prompt": "Under the Electronic Commerce Act (RA 8792), before collecting any data, a website shows a pop-up asking whether the visitor allows cookies, and waits for a click. What kind of electronic agreement is this?",
+      "answer": "A clickthrough agreement: the site asks for consent before collecting anything. In a browsewrap agreement, simply using the site is treated as consent.",
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "clarification": {
+        "text": "RA 8792 recognizes contracts formed electronically and does not deny them validity for being electronic (Sec. 16(1)), but it does not define or distinguish clickthrough and browsewrap agreements, and no Supreme Court decision on them was found. Whether a browsewrap agreement binds a user is generally said to turn on notice of the terms; treat the classification as a study label, not a statutory rule, and check for newer decisions.",
+        "basis": "RA 8792, Sec. 16(1)",
+        "urls": [
+          "https://lawphil.net/statutes/repacts/ra2000/ra_8792_2000.html"
+        ]
+      }
+    },
+    {
+      "id": "pq-0063",
+      "status": "draft",
+      "tags": [
+        "for-clarification"
+      ],
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "E-Commerce Act Cases",
+      "prompt": "Under the Revised Penal Code and the Access Devices Regulation Act (RA 8484), G steals H's credit card and uses it to pay for services. Following Laurel v. Abrogar, for what is G liable?",
+      "answer": "Three offenses: theft for taking the card (Art. 308), a violation of RA 8484 for using it, and estafa against the service provider, who is the offended party (Art. 315(2)(a)).",
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "clarification": {
+        "text": "This explanation comes from the First Division decision of February 27, 2006. On January 13, 2009, the Court En Banc granted reconsideration, set that decision aside, affirmed the denial of the motion to quash the theft charge, and directed that the information be amended to show that the property stolen was the services and business of the offended party. The 2006 discussion should not be relied on as the Court's final ruling.",
+        "basis": "Laurel v. Abrogar, G.R. No. 155076, Resolution, January 13, 2009",
+        "urls": [
+          "https://lawphil.net/judjuris/juri2009/jan2009/gr_155076_2009.html"
+        ]
+      }
+    },
+    {
+      "id": "pq-0064",
+      "status": "draft",
+      "tags": [
+        "for-clarification"
+      ],
+      "classNotes": true,
+      "subject": "Mercantile Law",
+      "topic": "Commercial Law",
+      "subtopic": "E-Commerce Act Cases",
+      "prompt": "Under the Access Devices Regulation Act (RA 8484) and the Revised Penal Code, K finds a lost credit card, keeps it, and uses it to pay for online services. He is charged under RA 8484 and argues that he can no longer be charged under the Revised Penal Code for the same acts. Is he right?",
+      "answer": "No. A prosecution under RA 8484 does not bar liability under the Revised Penal Code, as explained in Laurel v. Abrogar.",
+      "source": {
+        "caseTitle": "Class notes",
+        "file": "Comm Law 2 notes"
+      },
+      "clarification": {
+        "text": "The rule itself is in the statute: RA 8484 provides that prosecution under it is without prejudice to liability under the Revised Penal Code or any other law (Sec. 17). But the case cited for it, the Laurel v. Abrogar decision of February 27, 2006, was reconsidered and set aside by the Court En Banc on January 13, 2009; cite the statute rather than that decision.",
+        "basis": "RA 8484, Sec. 17; Laurel v. Abrogar, G.R. No. 155076, Resolution, January 13, 2009",
+        "urls": [
+          "https://lawphil.net/statutes/repacts/ra1998/ra_8484_1998.html",
+          "https://lawphil.net/judjuris/juri2009/jan2009/gr_155076_2009.html"
+        ]
+      }
+    }
+  ]
+}

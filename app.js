@@ -64,7 +64,7 @@ document.addEventListener("touchstart", function () {}, { passive: true });
 // Only one screen is visible at a time.
 function showScreen(id) {
   saveAllNotes();  // leaving a screen with a notes box: save what she typed first
-  ["screen-home", "screen-subject", "screen-subtopics", "screen-topic", "screen-tagged", "screen-question", "screen-results", "screen-case", "screen-rule", "screen-notes", "screen-settings", "screen-schedule", "screen-search", "screen-syllabus"].forEach(function (screenId) {
+  ["screen-home", "screen-subject", "screen-subtopics", "screen-topic", "screen-tagged", "screen-question", "screen-results", "screen-case", "screen-rule", "screen-notes", "screen-settings", "screen-schedule", "screen-search", "screen-syllabus", "screen-clarify"].forEach(function (screenId) {
     document.getElementById(screenId).hidden = (screenId !== id);
   });
   window.scrollTo(0, 0);
@@ -111,6 +111,7 @@ function sidebarSection() {
   if (shownScreen === "screen-settings") { return "settings"; }
   if (shownScreen === "screen-schedule") { return "schedule"; }
   if (shownScreen === "screen-syllabus") { return "syllabus"; }
+  if (shownScreen === "screen-clarify") { return "clarify"; }
   if (shownScreen === "screen-search") { return "search"; }
   const from = shownScreen === "screen-case" ? caseCameFrom : (shownScreen === "screen-rule" ? ruleCameFrom : null);
   if (from === "notes") { return "notes"; }
@@ -173,6 +174,8 @@ document.getElementById("sidebar").addEventListener("click", function (event) {
     openSchedule();
   } else if (go === "syllabus") {
     openSyllabus();
+  } else if (go === "clarify") {
+    openClarify();
   } else if (go === "subject") {
     sourceView = "official";
     openSubject(link.dataset.subject);
@@ -273,6 +276,10 @@ function putBackSpot(spot) {
   }
   if (spot.screen === "syllabus") {
     openSyllabus(isPlainObject(spot.syllabus) ? spot.syllabus : null);
+    return true;
+  }
+  if (spot.screen === "clarify") {
+    openClarify();
     return true;
   }
   // The notes list, and a case or rule opened from it, don't belong to a subject.
@@ -1212,6 +1219,116 @@ function loadSyllabus() {
     .catch(function () { syllabus = null; syllabusState = "failed"; })
     .then(function () { if (shownScreen === "screen-syllabus") { showSyllabus(); } });
 }
+
+// ---------- For clarification (data/for-clarification.json) ----------
+// Class-notes items under review: the question, the answer as the class materials give it, and a
+// "For clarification" box saying what the official text says where it differs (with its link).
+// Loaded only when this screen opens and never added to allQuestions, so they never appear in
+// subjects, practice rounds, scores, Review missed, search or any count. Nothing here is graded.
+const CLARIFY_FILE = "data/for-clarification.json";
+let clarifyItems = null;      // the cleaned list once loaded
+let clarifyState = "idle";    // "loading" or "failed"
+
+function cleanClarify(data) {
+  const list = data && Array.isArray(data.questions) ? data.questions : [];
+  return list.filter(function (q) {
+    return isPlainObject(q) && typeof q.id === "string" && typeof q.prompt === "string" && typeof q.answer === "string" &&
+      Array.isArray(q.tags) && q.tags.indexOf("for-clarification") !== -1 && isPlainObject(q.clarification) &&
+      typeof q.clarification.text === "string";
+  });
+}
+
+function loadClarify() {
+  clarifyState = "loading";
+  fetch(CLARIFY_FILE)
+    .then(function (response) { if (!response.ok) { throw new Error("status " + response.status); } return response.json(); })
+    .then(function (data) { clarifyItems = cleanClarify(data); clarifyState = "idle"; })
+    .catch(function () { clarifyItems = null; clarifyState = "failed"; })
+    .then(function () { if (shownScreen === "screen-clarify") { showClarify(); } });
+}
+
+function openClarify() {
+  showClarify();
+  showScreen("screen-clarify");
+  if (!clarifyItems && clarifyState !== "loading") { loadClarify(); showClarify(); }
+}
+
+function showClarify() {
+  const box = document.getElementById("clarify-list");
+  box.innerHTML = "";
+  if (!clarifyItems) {
+    const note = document.createElement("p");
+    note.className = "clarify-empty";
+    note.textContent = clarifyState === "failed" ? "Couldn't load these items. Check your connection and try again." : "Loading…";
+    box.appendChild(note);
+    return;
+  }
+  if (clarifyItems.length === 0) {
+    const none = document.createElement("p");
+    none.className = "clarify-empty";
+    none.textContent = "Nothing is under review right now.";
+    box.appendChild(none);
+    return;
+  }
+  clarifyItems.forEach(function (item) { box.appendChild(makeClarifyCard(item)); });
+}
+
+function makeClarifyCard(item) {
+  const card = document.createElement("article");
+  card.className = "card clarify-card";
+  const where = document.createElement("p");
+  where.className = "clarify-where";
+  where.textContent = [item.subject, item.topic, item.subtopic].filter(function (x) { return typeof x === "string" && x; }).join(" · ");
+  const badge = document.createElement("p");
+  badge.className = "notes-badge";
+  badge.textContent = "From class notes";
+  const prompt = document.createElement("p");
+  prompt.className = "prompt reading-text";
+  prompt.appendChild(richText(item.prompt));
+  // The answer and the clarification stay folded until she asks, so the question stays clean.
+  const more = document.createElement("details");
+  more.className = "clarify-more";
+  const summary = document.createElement("summary");
+  summary.textContent = "Show answer";
+  const answerLabel = document.createElement("h2");
+  answerLabel.className = "label";
+  answerLabel.textContent = "Answer (class materials)";
+  const answer = document.createElement("p");
+  answer.className = "reading-text";
+  answer.appendChild(richText(item.answer));
+  const clar = document.createElement("section");
+  clar.className = "clarify-box";
+  const clarLabel = document.createElement("h2");
+  clarLabel.className = "label";
+  clarLabel.textContent = "For clarification";
+  const clarText = document.createElement("p");
+  clarText.className = "reading-text";
+  clarText.appendChild(richText(item.clarification.text));
+  clar.append(clarLabel, clarText);
+  if (typeof item.clarification.basis === "string") {
+    const basis = document.createElement("p");
+    basis.className = "clarify-basis reading-text";
+    const strong = document.createElement("strong");
+    strong.textContent = "Basis: ";
+    basis.append(strong, item.clarification.basis + ". Checked against: ");
+    (Array.isArray(item.clarification.urls) ? item.clarification.urls : []).forEach(function (url, i) {
+      if (typeof url !== "string" || !/^https:\/\//.test(url)) { return; }
+      if (i > 0) { basis.append(", "); }
+      const a = document.createElement("a");
+      a.href = url;
+      a.target = "_blank";
+      a.rel = "noopener";
+      a.textContent = url.replace(/^https:\/\//, "");
+      basis.appendChild(a);
+    });
+    clar.appendChild(basis);
+  }
+  more.append(summary, answerLabel, answer, clar);
+  card.append(where, badge, prompt, more);
+  return card;
+}
+
+document.getElementById("clarify-back").addEventListener("click", function () { showScreen("screen-home"); });
 
 function openSyllabus(view) {
   syllabusView = { subject: view && typeof view.subject === "string" ? view.subject : null,
@@ -3047,7 +3164,7 @@ function showPicked(question, picked) {
   result.className = "feedback-title " + (isRight ? "got-text" : "missed-text");
   setRichText(document.getElementById("mcq-explanation"), question.explanation);
   document.getElementById("mcq-feedback").hidden = false;
-  document.getElementById("find-btn").hidden = false;  // she has answered: "Find in case" is allowed now
+  document.getElementById("find-btn").hidden = isClassNote(session.questions[session.index]);  // she has answered: "Find in case" is allowed now (never for class notes: no case to search)
 }
 
 // --- Fill in the blank ---
@@ -3503,6 +3620,10 @@ function applyFbLevel(question, level, hidden) {
   const full = typeof question.fullText === "string" ? question.fullText : "";
   setRichText(document.getElementById("fb-full"),
     full ? answerText(question, clean, level) : "The full text for this item hasn't been added yet.");
+  // An optional "explanation" (the class-notes items have one): shown under the full text after Show answer.
+  const discussion = typeof question.explanation === "string" ? question.explanation.trim() : "";
+  document.getElementById("fb-discussion-card").hidden = !discussion;
+  setRichText(document.getElementById("fb-discussion"), discussion);
 
   const note = document.getElementById("fb-level-note");
   if (fbInfo.usable) {
@@ -3733,7 +3854,7 @@ function revealFillBlank() {
   document.getElementById("fb-level-select").disabled = true;
   session.current.answerShown = true;
   showNewBlanksButton();  // grayed out once the answer is showing
-  document.getElementById("find-btn").hidden = false;  // she has answered: "Find in case" is allowed now
+  document.getElementById("find-btn").hidden = isClassNote(session.questions[session.index]);  // she has answered: "Find in case" is allowed now (never for class notes: no case to search)
 }
 
 document.getElementById("fb-show").addEventListener("click", function () {
@@ -3804,7 +3925,7 @@ function showEssay(question) {
 function revealAnswer() {
   document.getElementById("answer-area").hidden = false;
   document.getElementById("show-answer").hidden = true;
-  document.getElementById("find-btn").hidden = false;  // she has answered: "Find in case" is allowed now
+  document.getElementById("find-btn").hidden = isClassNote(session.questions[session.index]);  // she has answered: "Find in case" is allowed now (never for class notes: no case to search)
 }
 
 document.getElementById("show-answer").addEventListener("click", function () {
