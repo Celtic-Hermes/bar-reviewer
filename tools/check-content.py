@@ -441,35 +441,7 @@ def check_question(q_id, q, cases_by_id, case_texts, rules_by_number):
         if case_id not in cases_by_id:
             problem(q_id, "links to %r, but there's no such case in any topic file." % case_id)
 
-    if q_type == "essay":
-        answer = q.get("suggestedAnswer")
-        if not isinstance(answer, dict):
-            problem(q_id, "'suggestedAnswer' is missing.")
-        else:
-            for part in ["answer", "legalBasis", "application", "conclusion"]:
-                if not filled(answer.get(part)):
-                    problem(q_id, "suggested answer is missing its '%s' part." % part)
-        points = q.get("keyPoints")
-        if not isinstance(points, list) or not points or not all(filled(p) for p in points):
-            problem(q_id, "'keyPoints' should be a list of at least one point, none empty.")
-
-    elif q_type == "mcq":
-        choices = q.get("choices")
-        if not isinstance(choices, dict) or sorted(choices.keys()) != ["A", "B", "C", "D"]:
-            problem(q_id, "needs exactly 4 choices, A, B, C and D.")
-        else:
-            for letter, text in choices.items():
-                if not filled(text):
-                    problem(q_id, "choice %s is empty." % letter)
-            texts = [comparable(t) for t in choices.values() if filled(t)]
-            if len(set(texts)) != len(texts):
-                problem(q_id, "two choices have the same text.")
-        if q.get("correct") not in ["A", "B", "C", "D"]:
-            problem(q_id, "'correct' is %r; it must be one letter, A–D." % q.get("correct"))
-        need_text(q_id, q, "explanation")
-
-    elif q_type == "fillblank":
-        check_fillblank(q_id, q)
+    check_type_parts(q_id, q, q_type)
 
     # Source.
     source = q.get("source")
@@ -529,6 +501,39 @@ def check_question(q_id, q, cases_by_id, case_texts, rules_by_number):
                     "this one comes earlier in the decision: \"%s\"" % (matches[0], shown))
         else:
             where_now = found + len(piece)
+
+
+def check_type_parts(q_id, q, q_type):
+    """The parts each question type needs (essay ALAC + key points; MCQ A-D; fill in the blank)."""
+    if q_type == "essay":
+        answer = q.get("suggestedAnswer")
+        if not isinstance(answer, dict):
+            problem(q_id, "'suggestedAnswer' is missing.")
+        else:
+            for part in ["answer", "legalBasis", "application", "conclusion"]:
+                if not filled(answer.get(part)):
+                    problem(q_id, "suggested answer is missing its '%s' part." % part)
+        points = q.get("keyPoints")
+        if not isinstance(points, list) or not points or not all(filled(p) for p in points):
+            problem(q_id, "'keyPoints' should be a list of at least one point, none empty.")
+
+    elif q_type == "mcq":
+        choices = q.get("choices")
+        if not isinstance(choices, dict) or sorted(choices.keys()) != ["A", "B", "C", "D"]:
+            problem(q_id, "needs exactly 4 choices, A, B, C and D.")
+        else:
+            for letter, text in choices.items():
+                if not filled(text):
+                    problem(q_id, "choice %s is empty." % letter)
+            texts = [comparable(t) for t in choices.values() if filled(t)]
+            if len(set(texts)) != len(texts):
+                problem(q_id, "two choices have the same text.")
+        if q.get("correct") not in ["A", "B", "C", "D"]:
+            problem(q_id, "'correct' is %r; it must be one letter, A–D." % q.get("correct"))
+        need_text(q_id, q, "explanation")
+
+    elif q_type == "fillblank":
+        check_fillblank(q_id, q)
 
 
 def check_fillblank(q_id, q):
@@ -733,6 +738,8 @@ def private_fingerprints():
 
     for folder, _, files in os.walk(PRIVATE_CONTENT):
         for name in files:
+            if not name.endswith((".json", ".txt", ".md")):
+                continue
             path = os.path.join(folder, name)
             try:
                 with open(path, encoding="utf-8") as f:
@@ -790,6 +797,82 @@ def check_privacy(message_file=None):
             problem(where, "the commit message contains %d+ words in a row from your private notes." % QUOTE_WORDS)
 
 
+def check_private_questions(official_ids):
+    """notes/private-content/questions.json (her private class-notes questions, this Mac only).
+    Skipped quietly if the file isn't there. Checks the same parts as official questions, plus:
+    IDs are pq-0001 …, used once, never removed (ids-issued.txt lists every ID ever given out),
+    the source names the class notes, and every excerpt piece and fullText appears word for word
+    in notes-text.txt (the cleaned text of the notes). Returns the IDs, or None if there's no file."""
+    path = os.path.join(PRIVATE_CONTENT, "questions.json")
+    if not os.path.exists(path):
+        return None
+    where = "notes/private-content/questions.json"
+    try:
+        with open(path, encoding="utf-8") as f:
+            data = json.load(f)
+    except (json.JSONDecodeError, UnicodeDecodeError) as e:
+        problem(where, "isn't valid JSON (%s)." % e)
+        return {}
+    questions = data.get("questions") if isinstance(data, dict) else None
+    if not isinstance(questions, list):
+        problem(where, "has no \"questions\" list.")
+        return {}
+    notes_text = read_text(os.path.join(PRIVATE_CONTENT, "notes-text.txt")) or ""
+    notes_text = comparable(re.sub(r"\[Page \d+\]", " ", notes_text))
+    by_id = {}
+    for q in questions:
+        q_id = q.get("id") if isinstance(q, dict) else None
+        if not isinstance(q_id, str) or not re.fullmatch(r"pq-\d{4}", q_id):
+            problem(where, "an item has the ID %r; class-notes IDs look like pq-0001." % (q_id,))
+            continue
+        if q_id in by_id:
+            problem(q_id, "this ID is used twice.")
+            continue
+        by_id[q_id] = q
+        check_status(q_id, q)
+        if q.get("status") == "verified":
+            check(q_id, "is marked verified: only a person sets that.")
+        check_place(q_id, q)
+        q_type = q.get("type")
+        if q_type not in ["essay", "mcq", "fillblank"]:
+            problem(q_id, "type is %r." % q_type)
+            continue
+        need_text(q_id, q, "prompt")
+        before = len(checks)
+        check_type_parts(q_id, q, q_type)
+        # Notes sections have no "SECTION 1. Title. –" heading; that CHECK isn't useful here.
+        checks[before:] = [c for c in checks[before:] if "section heading the app can find" not in c]
+        if q.get("caseIds") not in ([], None):
+            problem(q_id, "class-notes questions link to no case ('caseIds' should be []).")
+        source = q.get("source")
+        if not isinstance(source, dict):
+            problem(q_id, "'source' is missing.")
+            continue
+        for field in ["caseTitle", "file", "part", "excerpt"]:
+            need_text(q_id, source, field, "source." + field)
+        if source.get("caseTitle") != "Class notes":
+            problem(q_id, "source.caseTitle should be \"Class notes\".")
+        if not notes_text:
+            continue
+        pieces = [p for p in str(source.get("excerpt", "")).split("…") if comparable(p)]
+        if q_type == "fillblank" and filled(q.get("fullText")):
+            pieces.append(q["fullText"])
+        for piece in pieces:
+            if comparable(piece) not in notes_text:
+                shown = comparable(piece)[:60]
+                problem(q_id, "this isn't found word for word in notes-text.txt: \"%s…\"" % shown)
+    clash = sorted(set(by_id) & set(official_ids))
+    if clash:
+        problem(where, "IDs also used by official content: %s." % ", ".join(clash))
+    ledger = read_text(os.path.join(PRIVATE_CONTENT, "ids-issued.txt"))
+    if ledger is not None:
+        gone = sorted(set(ledger.split()) - set(by_id))
+        if gone:
+            problem(where, "these IDs were given out before but are gone now (IDs never change or disappear): %s."
+                    % ", ".join(gone[:10]))
+    return by_id
+
+
 def privacy_only():
     """python3 tools/check-content.py --privacy [--message FILE]: only the private-notes check (used by the git hooks)."""
     msg = sys.argv[sys.argv.index("--message") + 1] if "--message" in sys.argv[:-1] else None
@@ -824,9 +907,14 @@ def main():
 
     quotes = load_json("data/quotes.json")
     quotes_by_id = check_quotes(quotes) if quotes is not None else {}
+    private_by_id = check_private_questions(questions_by_id)
     print("Checked %d questions, %d cases, %d rules, %d quotes." % (len(questions_by_id), len(cases_by_id), len(rules_by_id), len(quotes_by_id)))
     print("Next free IDs: %s, %s, %s, %s" % (next_id(questions_by_id, "q"), next_id(cases_by_id, "case"),
                                              next_id(rules_by_id, "rule"), next_id(quotes_by_id, "quote")))
+    if private_by_id is not None:
+        ledger = (read_text(os.path.join(PRIVATE_CONTENT, "ids-issued.txt")) or "").split()
+        print("Private class notes (this Mac only): %d questions; next free ID %s"
+              % (len(private_by_id), next_id({i: 1 for i in set(private_by_id) | set(ledger)}, "pq")))
     print()
     show_all = "--all" in sys.argv
     if checks:

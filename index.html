@@ -283,6 +283,12 @@
         </div>
       </header>
 
+      <!-- Official / My class notes: shown only when private class notes are loaded (the builder's Mac; app.js showSourceSwitch) -->
+      <div class="seg-switch source-switch" id="source-switch" role="group" aria-label="Which questions" hidden>
+        <button type="button" class="seg-btn" data-source="official" aria-pressed="true">Official</button>
+        <button type="button" class="seg-btn" data-source="notes" aria-pressed="false">My class notes</button>
+      </div>
+
       <div id="topic-area">
         <!-- The one big action: Continue the round she's in the middle of, or start practicing (app.js showStartCard) -->
         <button type="button" class="start-card" id="start-card">
@@ -380,6 +386,9 @@
           <p class="subject" id="subject"></p>
           <p class="topic" id="topic"></p>
           <p class="status-unverified status-badge" id="draft-badge" hidden>Unverified</p>
+          <!-- Questions from her private class notes (app.js showClassNotesLabel) -->
+          <p class="notes-badge" id="notes-badge" hidden>From class notes</p>
+          <p class="notes-source" id="notes-source" hidden></p>
         </div>
         <div class="question-actions">
           <button class="bookmark-btn" id="bookmark-btn"></button>
