@@ -284,59 +284,79 @@
         </div>
       </header>
 
-      <!-- Cases / Notes / NotebookLM (internal views official / notes / notebooklm): shown only when the subject has class-notes or NotebookLM questions (app.js showSourceSwitch) -->
-      <div class="seg-switch source-switch" id="source-switch" role="group" aria-label="Which questions" hidden>
-        <button type="button" class="seg-btn" data-source="official" aria-pressed="true">Cases</button>
-        <button type="button" class="seg-btn" data-source="notes" aria-pressed="false">Notes</button>
-        <button type="button" class="seg-btn" data-source="notebooklm" aria-pressed="false" hidden>NotebookLM</button>
+      <!-- The tabs: Cases · Questions · Study (app.js showSubjectTab; the last one used is remembered, barReviewer.subjectTab.v1) -->
+      <div class="subject-tabs" id="subject-tabs" role="tablist" aria-label="Sections of this subject">
+        <button type="button" class="subject-tab" role="tab" id="subject-tab-cases" data-tab="cases" aria-controls="subject-panel-cases" aria-selected="false" tabindex="-1">Cases</button>
+        <button type="button" class="subject-tab" role="tab" id="subject-tab-questions" data-tab="questions" aria-controls="subject-panel-questions" aria-selected="true">Questions</button>
+        <button type="button" class="subject-tab" role="tab" id="subject-tab-study" data-tab="study" aria-controls="subject-panel-study" aria-selected="false" tabindex="-1">Study</button>
       </div>
 
-      <div id="topic-area">
-        <!-- The one big action: Create a test, or Continue test when one is unfinished here (tests.js showSubjectTestCard) -->
-        <button type="button" class="start-card" id="start-card">
-          <span class="start-card-text">
-            <span class="start-card-title" id="start-title">Create a test</span>
-            <span class="start-card-sub" id="start-sub"></span>
-          </span>
-          <span class="start-card-go" aria-hidden="true"><span data-icon="chevron-right"></span></span>
-        </button>
-        <!-- Only when the big card says Continue test -->
-        <button type="button" class="start-card-link" id="start-new-test" hidden>Create a new test</button>
-
-        <!-- My tests: a slim row, this subject's unfinished and finished tests (tests.js openTests; counts by showSubjectTestCard) -->
-        <button type="button" class="subject-card tests-card" id="tests-card">
-          <span class="subject-name">My tests</span>
-          <span class="topic-count" id="tests-card-meta">No tests yet</span>
-          <span class="subject-arrow" aria-hidden="true">›</span>
-        </button>
-
-        <h2 class="label practice-heading">Practice</h2>
-        <!-- Only when a practice round in this subject is half done: back to the same question (app.js showPracticeContinue) -->
-        <button type="button" class="subject-card practice-continue" id="practice-continue" hidden>
-          <span class="subject-name"><span id="practice-continue-title"></span><span class="subject-meta" id="practice-continue-sub"></span></span>
-          <span class="subject-arrow" aria-hidden="true">›</span>
-        </button>
-
-        <!-- Question type: a bare switch (its title is for screen readers only) -->
-        <fieldset class="mode-picker">
-          <legend class="visually-hidden">Question type</legend>
-          <div class="mode-options">
-            <label><input type="radio" name="question-mode" value="essay"><span>Essay questions</span></label>
-            <label><input type="radio" name="question-mode" value="mcq"><span>Multiple choice</span></label>
-            <label><input type="radio" name="question-mode" value="fillblank"><span>Fill in the blank</span></label>
-            <label><input type="radio" name="question-mode" value="both" checked><span>All</span></label>
-          </div>
-        </fieldset>
-
-        <!-- The topic cards ("All topics" first, only when there are two or more topics) -->
-        <div class="subject-list" id="topic-list"></div>
-
-        <!-- Her three lists as small chips: Review missed / Bookmarked / Tagged, each with its count (app.js showTopicCards) -->
-        <div class="list-chips" id="my-lists" role="group" aria-label="Your lists"></div>
-        <p class="card empty-note list-empty" id="list-empty" hidden></p>
+      <!-- Cases tab (filled in a later step) -->
+      <div class="subject-panel" id="subject-panel-cases" role="tabpanel" aria-labelledby="subject-tab-cases" hidden>
+        <p class="card empty-note">Coming next.</p>
       </div>
 
-      <p class="card empty-note" id="subject-empty" hidden>No questions for this subject yet.</p>
+      <!-- Questions tab: the view switch, tests and practice -->
+      <div class="subject-panel" id="subject-panel-questions" role="tabpanel" aria-labelledby="subject-tab-questions">
+        <!-- Official / Notes / NotebookLM (internal views official / notes / notebooklm): shown only when the subject has class-notes or NotebookLM questions (app.js showSourceSwitch) -->
+        <div class="seg-switch source-switch" id="source-switch" role="group" aria-label="Which questions" hidden>
+          <button type="button" class="seg-btn" data-source="official" aria-pressed="true">Official</button>
+          <button type="button" class="seg-btn" data-source="notes" aria-pressed="false">Notes</button>
+          <button type="button" class="seg-btn" data-source="notebooklm" aria-pressed="false" hidden>NotebookLM</button>
+        </div>
+
+        <div id="topic-area">
+          <!-- The one big action: Create a test, or Continue test when one is unfinished here (tests.js showSubjectTestCard) -->
+          <button type="button" class="start-card" id="start-card">
+            <span class="start-card-text">
+              <span class="start-card-title" id="start-title">Create a test</span>
+              <span class="start-card-sub" id="start-sub"></span>
+            </span>
+            <span class="start-card-go" aria-hidden="true"><span data-icon="chevron-right"></span></span>
+          </button>
+          <!-- Only when the big card says Continue test -->
+          <button type="button" class="start-card-link" id="start-new-test" hidden>Create a new test</button>
+
+          <!-- My tests: a slim row, this subject's unfinished and finished tests (tests.js openTests; counts by showSubjectTestCard) -->
+          <button type="button" class="subject-card tests-card" id="tests-card">
+            <span class="subject-name">My tests</span>
+            <span class="topic-count" id="tests-card-meta">No tests yet</span>
+            <span class="subject-arrow" aria-hidden="true">›</span>
+          </button>
+
+          <h2 class="label practice-heading">Practice</h2>
+          <!-- Only when a practice round in this subject is half done: back to the same question (app.js showPracticeContinue) -->
+          <button type="button" class="subject-card practice-continue" id="practice-continue" hidden>
+            <span class="subject-name"><span id="practice-continue-title"></span><span class="subject-meta" id="practice-continue-sub"></span></span>
+            <span class="subject-arrow" aria-hidden="true">›</span>
+          </button>
+
+          <!-- Question type: a bare switch (its title is for screen readers only) -->
+          <fieldset class="mode-picker">
+            <legend class="visually-hidden">Question type</legend>
+            <div class="mode-options">
+              <label><input type="radio" name="question-mode" value="essay"><span>Essay questions</span></label>
+              <label><input type="radio" name="question-mode" value="mcq"><span>Multiple choice</span></label>
+              <label><input type="radio" name="question-mode" value="fillblank"><span>Fill in the blank</span></label>
+              <label><input type="radio" name="question-mode" value="both" checked><span>All</span></label>
+            </div>
+          </fieldset>
+
+          <!-- The topic cards ("All topics" first, only when there are two or more topics) -->
+          <div class="subject-list" id="topic-list"></div>
+
+          <!-- Her three lists as small chips: Review missed / Bookmarked / Tagged, each with its count (app.js showTopicCards) -->
+          <div class="list-chips" id="my-lists" role="group" aria-label="Your lists"></div>
+          <p class="card empty-note list-empty" id="list-empty" hidden></p>
+        </div>
+
+        <p class="card empty-note" id="subject-empty" hidden>No questions for this subject yet.</p>
+      </div>
+
+      <!-- Study tab (filled in a later step) -->
+      <div class="subject-panel" id="subject-panel-study" role="tabpanel" aria-labelledby="subject-tab-study" hidden>
+        <p class="card empty-note">Coming next.</p>
+      </div>
 
     </section>
 

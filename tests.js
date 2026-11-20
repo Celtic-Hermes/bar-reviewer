@@ -1427,7 +1427,7 @@ window.addEventListener("pagehide", function () { stopTestTimer(); });
 
 // ---------- The subject screen's big card, and the My tests card ----------
 // The big card: "Continue test" (that test's name, "Question N of M", time left) when this subject
-// has an unfinished test in the current view (Cases / Notes / NotebookLM): the one she used most
+// has an unfinished test in the current view (Official / Notes / NotebookLM): the one she used most
 // recently (lastUsed; older tests: when they were made). Otherwise "Create a test", greyed out
 // with the reason when there's nothing here a test can use. Under it, only with Continue test,
 // a small "Create a new test" link. The My tests card counts this subject's tests (all views).

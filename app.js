@@ -231,6 +231,9 @@ function rememberSpot() {
     notes: sourceView === "notes",  // looking at the class notes (see CLASS_NOTES_FILE)
     view: sourceView                // "official", "notes" or "notebooklm"
   };
+  if (shownScreen === "screen-subject") {
+    spot.tab = subjectTab;  // the subject screen's tab: "cases", "questions" or "study"
+  }
   // In the middle of a round (or reading a case opened from a question): keep the round.
   const inRound = session && (shownScreen === "screen-question" ||
     (shownScreen === "screen-case" && caseCameFrom === "question"));
@@ -368,6 +371,7 @@ function putBackSpot(spot) {
   setMode(spot.mode);  // older saved spots have no mode: that means "both"
 
   if (spot.screen === "subject") {
+    if (SUBJECT_TABS.indexOf(spot.tab) !== -1) { subjectTab = spot.tab; }  // older spots have no tab: the remembered one
     openSubject(currentSubject);
     return true;
   }
@@ -900,10 +904,61 @@ function openSubject(subject) {
   document.getElementById("subject-empty").hidden = (count !== 0);
 
   showTopicCards(subject);
+  showSubjectTab(subjectTab);
   showScreen("screen-subject");
 }
 
-// "Official / My class notes / NotebookLM": shown only when this subject has class-notes or
+// ---------- The subject screen's tabs: Cases · Questions · Study ----------
+// The tab she last used is remembered on this device only (not backed up) and in the saved spot.
+const SUBJECT_TAB_KEY = "barReviewer.subjectTab.v1";
+const SUBJECT_TABS = ["cases", "questions", "study"];
+let subjectTab = loadSubjectTab();
+
+function cleanSubjectTab(tab) {
+  return SUBJECT_TABS.indexOf(tab) !== -1 ? tab : "questions";
+}
+function loadSubjectTab() {
+  try { return cleanSubjectTab(localStorage.getItem(SUBJECT_TAB_KEY)); } catch (e) { return "questions"; }
+}
+function saveSubjectTab(tab) {
+  try { localStorage.setItem(SUBJECT_TAB_KEY, tab); } catch (e) { /* no storage: just not remembered */ }
+}
+
+// Shows one tab's panel and marks its tab as picked (only the picked tab is in the Tab key order).
+function showSubjectTab(tab) {
+  subjectTab = cleanSubjectTab(tab);
+  document.querySelectorAll("#subject-tabs .subject-tab").forEach(function (btn) {
+    const on = btn.dataset.tab === subjectTab;
+    btn.setAttribute("aria-selected", String(on));
+    btn.tabIndex = on ? 0 : -1;
+    document.getElementById(btn.getAttribute("aria-controls")).hidden = !on;
+  });
+}
+
+function pickSubjectTab(tab) {
+  showSubjectTab(tab);
+  saveSubjectTab(subjectTab);
+  rememberSpot();
+}
+
+document.querySelectorAll("#subject-tabs .subject-tab").forEach(function (btn) {
+  btn.addEventListener("click", function () { pickSubjectTab(btn.dataset.tab); });
+  // Left / Right (and Home / End) move between the tabs, as tabs usually do.
+  btn.addEventListener("keydown", function (event) {
+    const i = SUBJECT_TABS.indexOf(btn.dataset.tab);
+    let next = null;
+    if (event.key === "ArrowRight") { next = SUBJECT_TABS[(i + 1) % SUBJECT_TABS.length]; }
+    else if (event.key === "ArrowLeft") { next = SUBJECT_TABS[(i - 1 + SUBJECT_TABS.length) % SUBJECT_TABS.length]; }
+    else if (event.key === "Home") { next = SUBJECT_TABS[0]; }
+    else if (event.key === "End") { next = SUBJECT_TABS[SUBJECT_TABS.length - 1]; }
+    if (!next) { return; }
+    event.preventDefault();
+    pickSubjectTab(next);
+    document.getElementById("subject-tab-" + next).focus();
+  });
+});
+
+// "Official / Notes / NotebookLM": shown only when this subject has class-notes or
 // NotebookLM questions, each button only if it has questions here. Switching redraws the subject screen.
 function showSourceSwitch(subject) {
   const box = document.getElementById("source-switch");
