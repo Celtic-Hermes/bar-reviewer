@@ -257,6 +257,9 @@ function rememberSpot() {
     spot.ruleId = currentRule.id;
     spot.ruleCameFrom = ruleCameFrom;
   }
+  if (shownScreen === "screen-test-create" && typeof testCreateFrom === "function") {
+    spot.from = testCreateFrom();  // where its Back goes: "subject" or "tests"
+  }
   if (shownScreen === "screen-test" && typeof testSpotId === "function") {
     spot.testId = testSpotId();  // the test she's taking (tests.js); its answers live in progress.tests
   }
@@ -398,7 +401,7 @@ function putBackSpot(spot) {
     return true;
   }
   if (spot.screen === "test-create") {
-    if (typeof openTestCreate === "function") { openTestCreate(); } else { openSubject(currentSubject); }  // tests.js (her choices start from the defaults)
+    if (typeof openTestCreate === "function") { openTestCreate(spot.from); } else { openSubject(currentSubject); }  // tests.js (her choices start from the defaults)
     return true;
   }
   if (spot.screen === "subtopics") {
@@ -2934,11 +2937,12 @@ function showSubjectStats(subject) {
   document.getElementById("subject-ring-text").textContent = shown + "%";
 }
 
-// ---------- The Start card: Continue, or Start practicing ----------
-// If she's in the middle of a round in THIS subject (saved by rememberSpot), the card says
-// "Continue: <topic>" and "Question N of M", and takes her back to that exact question.
-// Otherwise it says "Start practicing" and how many questions, and starts all of the subject's
-// topics using the Question type option below (every round is shuffled).
+// ---------- The subject screen's top: the test card, and Continue practicing ----------
+// The big card (#start-card) is the tests' card: "Create a test", or "Continue test" when this
+// subject has an unfinished test in this view (tests.js showSubjectTestCard). A practice round
+// she's in the middle of in THIS subject (saved by rememberSpot) shows as a smaller row under
+// the Practice heading: "Continue practicing: <topic>" and "Question N of M", which takes her
+// back to that exact question (putBackRound). Practicing a whole subject = the "All topics" card.
 function lastRoundHere(subject) {
   const last = loadLastRound();
   if (!last || last.subject !== subject || last.view !== sourceView) { return null; }
@@ -2953,43 +2957,29 @@ function roundLabel(last) {
 }
 
 function showStartCard(subject) {
-  const card = document.getElementById("start-card");
-  const last = lastRoundHere(subject);
-  if (last) {
-    document.getElementById("start-title").textContent = "Continue: " + roundLabel(last);
-    document.getElementById("start-sub").textContent = "Question " + (last.round.index + 1) + " of " + last.round.questionIds.length;
-    card.disabled = false;
-    card.dataset.action = "continue";
-    return;
-  }
-  const mode = currentMode();
-  const n = questionsForTopic(subject, ALL_TOPICS, mode).length;
-  document.getElementById("start-title").textContent = "Start practicing";
-  document.getElementById("start-sub").textContent = n === 0
-    ? noneOfMode(mode) + " here. Pick All under Question type."
-    : modeCountLabel(n, mode);
-  card.disabled = (n === 0);
-  card.dataset.action = "start";
+  showPracticeContinue(subject);
+  if (typeof showSubjectTestCard === "function") { showSubjectTestCard(subject); }  // tests.js
 }
 
-document.getElementById("start-card").addEventListener("click", function (event) {
+function showPracticeContinue(subject) {
+  const row = document.getElementById("practice-continue");
+  const last = lastRoundHere(subject);
+  row.hidden = !last;
+  if (!last) { return; }
+  document.getElementById("practice-continue-title").textContent = "Continue practicing: " + roundLabel(last);
+  document.getElementById("practice-continue-sub").textContent = "Question " + (last.round.index + 1) + " of " + last.round.questionIds.length;
+}
+
+document.getElementById("practice-continue").addEventListener("click", function () {
   const subject = currentSubject;
-  if (event.currentTarget.dataset.action === "continue") {
-    const last = lastRoundHere(subject);
-    if (last) {
-      currentTopic = last.topic;
-      currentSubtopic = last.subtopic;
-      if (putBackRound(last.round)) { return; }
-    }
-    clearLastRound();  // it couldn't be put back (the content changed): start fresh instead
-    showStartCard(subject);
-    return;
+  const last = lastRoundHere(subject);
+  if (last) {
+    currentTopic = last.topic;
+    currentSubtopic = last.subtopic;
+    if (putBackRound(last.round)) { return; }
   }
-  currentTopic = ALL_TOPICS;
-  currentSubtopic = null;
-  fixedQuestions = null;
-  practiceCase = null;
-  startPractice();
+  clearLastRound();  // it couldn't be put back (the content changed): the row goes away
+  showPracticeContinue(subject);
 });
 
 document.getElementById("subject-back").addEventListener("click", function () {

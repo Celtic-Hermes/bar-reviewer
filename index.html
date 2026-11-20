@@ -301,13 +301,21 @@
       </div>
 
       <div id="topic-area">
-        <!-- The one big action: Continue the round she's in the middle of, or start practicing (app.js showStartCard) -->
+        <!-- The one big action: Create a test, or Continue test when one is unfinished here (tests.js showSubjectTestCard) -->
         <button type="button" class="start-card" id="start-card">
           <span class="start-card-text">
-            <span class="start-card-title" id="start-title">Start practicing</span>
+            <span class="start-card-title" id="start-title">Create a test</span>
             <span class="start-card-sub" id="start-sub"></span>
           </span>
           <span class="start-card-go" aria-hidden="true"><span data-icon="chevron-right"></span></span>
+        </button>
+        <!-- Only when the big card says Continue test -->
+        <button type="button" class="start-card-link" id="start-new-test" hidden>Create a new test</button>
+
+        <!-- My tests: this subject's unfinished and finished tests (tests.js openTests) -->
+        <button type="button" class="subject-card tests-card" id="tests-card">
+          <span class="subject-name">My tests<span class="subject-meta" id="tests-card-meta">No tests yet</span></span>
+          <span class="subject-arrow" aria-hidden="true">›</span>
         </button>
 
         <!-- Three numbers about this subject (app.js showSubjectStats) -->
@@ -317,12 +325,12 @@
           <div class="stat-cell"><p class="stat-cell-value" id="sstat-mastered">0</p><p class="stat-cell-label">Mastered</p></div>
         </div>
 
-        <!-- Tests: opens this subject's Tests screen (tests.js openTests) -->
-        <button type="button" class="subject-card tests-card" id="tests-card">
-          <span class="subject-name">Tests<span class="subject-meta">Create a test, or see your past tests</span></span>
+        <h2 class="label practice-heading">Practice</h2>
+        <!-- Only when a practice round in this subject is half done: back to the same question (app.js showPracticeContinue) -->
+        <button type="button" class="subject-card practice-continue" id="practice-continue" hidden>
+          <span class="subject-name"><span id="practice-continue-title"></span><span class="subject-meta" id="practice-continue-sub"></span></span>
           <span class="subject-arrow" aria-hidden="true">›</span>
         </button>
-
 
         <fieldset class="mode-picker">
           <legend class="switch-title">Question type</legend>
@@ -387,9 +395,9 @@
     <section id="screen-tests" hidden>
       <button class="back-btn" id="tests-back"><span data-icon="chevron-left"></span> Back</button>
       <p class="subject" id="tests-subject"></p>
-      <h1 class="screen-title">Tests</h1>
+      <h1 class="screen-title">My tests</h1>
       <p class="screen-subtitle">Answers stay hidden until you finish. Then review every question.</p>
-      <button type="button" class="btn btn-primary" id="tests-create">Create a test</button>
+      <button type="button" class="btn btn-secondary" id="tests-create">Create a test</button>
 
       <h2 class="label tests-heading">Unfinished</h2>
       <div class="subject-list" id="tests-unfinished"></div>
@@ -403,7 +411,7 @@
 
     <!-- SCREEN 2e: Create a test (tests.js openTestCreate): what's in it, type, how many, timer -->
     <section id="screen-test-create" hidden>
-      <button class="back-btn" id="test-create-back"><span data-icon="chevron-left"></span> Tests</button>
+      <button class="back-btn" id="test-create-back"><span data-icon="chevron-left"></span> My tests</button>
       <p class="subject" id="test-create-subject"></p>
       <h1 class="screen-title">Create a test</h1>
       <p class="screen-subtitle">Pick what goes in. The questions come in random order.</p>
@@ -466,7 +474,7 @@
     <!-- SCREEN 2f: Taking a test (tests.js openTest): one question at a time, answers never shown -->
     <section id="screen-test" hidden>
       <div class="question-topbar">
-        <button class="back-btn" id="test-back"><span data-icon="chevron-left"></span> Tests</button>
+        <button class="back-btn" id="test-back"><span data-icon="chevron-left"></span> My tests</button>
         <div class="test-topbar-right">
           <p class="progress" id="test-progress"></p>
           <!-- Time left on a timed test (tests.js showTestTimer); nothing on an untimed one -->
@@ -512,7 +520,7 @@
 
     <!-- SCREEN 2g: A finished test's results (tests.js openTestResults) -->
     <section id="screen-test-results" hidden>
-      <button class="back-btn" id="test-results-back"><span data-icon="chevron-left"></span> Tests</button>
+      <button class="back-btn" id="test-results-back"><span data-icon="chevron-left"></span> My tests</button>
       <p class="subject" id="test-results-subject"></p>
       <h1 class="screen-title">Test results</h1>
       <p class="screen-subtitle" id="test-results-sub"></p>
@@ -533,7 +541,7 @@
       <section class="card test-breakdown" id="test-breakdown"></section>
 
       <button type="button" class="btn btn-primary" id="test-review">Review answers</button>
-      <button type="button" class="btn btn-secondary" id="test-results-done">Back to Tests</button>
+      <button type="button" class="btn btn-secondary" id="test-results-done">Back to My tests</button>
     </section>
 
     <!-- SCREEN 2h: Review a finished test's answers (tests.js openTestReview): read-only -->

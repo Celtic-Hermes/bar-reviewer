@@ -35,6 +35,7 @@
 //              "index" (the question she's on), "answers" ({ id: "B" } multiple choice, or
 //              { id: { "12": "typed", "14.0": "…" } } fill in the blank: box key -> what she typed),
 //              "flags", "hidden" ({ id: [word numbers hidden] }, fill in the blank), "used" (seconds),
+//              "lastUsed" (optional ISO date: when she last opened, answered or moved in it),
 //              "state" ("open" / "done"), "counted" (true once her answers went into her progress),
 //              "results" (done only: { id: { "r": "right" / "wrong" / "none", "g": "Topic · Sub-topic" } }),
 //              "finished" (done only) } ]. At most 5 open and 30 done (the newest). See cleanTests.
@@ -364,6 +365,7 @@ function cleanTest(t) {
     used: wholeNumberOrZero(t.used),   // seconds of test time used so far
     state: t.state === "done" ? "done" : "open"
   };
+  if (isIsoDate(t.lastUsed)) { test.lastUsed = t.lastUsed; }  // when she last opened or answered in it (optional)
   if (test.state === "done") {
     test.finished = isIsoDate(t.finished) ? t.finished : t.made;
     // Each question's result, fixed when she ended the test (so the score never changes later):

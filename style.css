@@ -697,7 +697,15 @@ button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
 .stat-cell-label { margin: 2px 0 0; font-size: 13px; color: var(--muted); }
 
 /* ---------- Tests (tests.js) ---------- */
-.tests-card { margin: 0 0 22px; }  /* the subject screen's Tests card: a normal list card */
+.tests-card { margin: 0 0 22px; }  /* the subject screen's My tests card: a normal list card */
+/* "Create a new test": a small text link under the big card, only when it says Continue test */
+.start-card-link {
+  display: block; min-height: 44px; margin: -8px 0 10px; padding: 0 4px; border: 0; background: none;
+  font: inherit; font-size: 15px; font-weight: 600; color: var(--primary-text); cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.practice-heading { margin-top: 4px; }
+.practice-continue { margin: 0 0 14px; }
 .tests-note { margin: 10px 0 0; font-size: 15px; color: var(--muted); }
 /* Taking a test (#screen-test): the practice question's look (.choice, .prompt, .fb-input, .question-nav) */
 .test-dropped { margin: 0 0 12px; }
@@ -777,7 +785,7 @@ button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
 .test-cell-sample .test-cell-flag .icon { width: 10px; height: 10px; }
 .tests-heading { margin-top: 24px; }
 #screen-tests .empty-note { margin: 0; }
-#screen-tests .btn-primary { margin-bottom: 0; }
+#screen-tests #tests-create { margin-bottom: 0; }
 /* Create a test (#screen-test-create) */
 #screen-test-create .mode-options { margin: 14px 0; }
 #screen-test-create .mode-options input:disabled + span { opacity: 0.4; cursor: not-allowed; }

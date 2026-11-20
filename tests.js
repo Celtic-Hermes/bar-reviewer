@@ -8,6 +8,8 @@
 // Step 4: Flag and the question map.
 // Step 5: End test (askEndTest / endTest): grade, count her answers once, show the results.
 // Step 6: Review answers (openTestReview): every question with her answer and the right one; read-only.
+// Then: the subject screen's big card is the tests' card ("Create a test" / "Continue test",
+// showSubjectTestCard) and the Tests card became "My tests" with counts.
 // Step 7: the timer (startTestTimer / stopTestTimer): counts only while the test is on screen and the
 // app is in view; time's up submits the test like End test.
 // Uses things from app.js: currentSubject, sourceView, questionsFor, topicsFor, subtopicsFor,
@@ -112,7 +114,7 @@ document.getElementById("tests-back").addEventListener("click", function () {
   openSubject(currentSubject);
 });
 
-document.getElementById("tests-create").addEventListener("click", openTestCreate);
+document.getElementById("tests-create").addEventListener("click", function () { openTestCreate("tests"); });
 
 // ---------- The Create a test screen ----------
 // Her choices while she's on the screen (not saved: a reload starts from the defaults).
@@ -168,9 +170,14 @@ function pickCount(pick) {
   return testPool(currentSubject, testChoices.type).filter(function (q) { return inPick(q, pick); }).length;
 }
 
-function openTestCreate() {
+// Where Back goes from Create a test: "subject" (opened from the big card) or "tests" (My tests).
+let testCreateCameFrom = "tests";
+function testCreateFrom() { return testCreateCameFrom; }
+
+function openTestCreate(from) {
+  testCreateCameFrom = from === "subject" ? "subject" : "tests";
   const subject = currentSubject;
-  setIconLabel(document.getElementById("test-create-back"), "chevron-left", "Tests");
+  setIconLabel(document.getElementById("test-create-back"), "chevron-left", testCreateCameFrom === "subject" ? subject : "My tests");
   document.getElementById("test-create-subject").textContent = subject + viewSuffix();
   const hasMcq = testPool(subject, "mcq").length > 0;
   const groups = testPickRows(subject);
@@ -379,7 +386,9 @@ document.getElementById("test-limit").addEventListener("input", function () {
   showTestChoices();
 });
 
-document.getElementById("test-create-back").addEventListener("click", function () { openTests(); });
+document.getElementById("test-create-back").addEventListener("click", function () {
+  if (testCreateCameFrom === "subject") { openSubject(currentSubject); } else { openTests(); }
+});
 
 function newTestId() {
   return "t-" + Date.now().toString(36) + Math.floor(Math.random() * 1296).toString(36);
@@ -497,6 +506,7 @@ function openTest(id) {
     " no longer in the app and " + (dropped === 1 ? "was" : "were") + " taken out of this test.";
   note.hidden = dropped === 0;
   currentTestId = test.id;
+  touchTest(test);
   setTestMapOpen(false);
   showTestQuestion();
   return true;
@@ -557,6 +567,7 @@ function showTestMcq(test, question) {
     button.append(mark, text);
     button.addEventListener("click", function () {
       test.answers[question.id] = letter;
+      touchTest(test);
       saveProgress();
       showTestPick(letter);
       showTestTools(test);  // an open map shows it as answered
@@ -688,6 +699,7 @@ document.getElementById("test-prompt").addEventListener("input", function (event
   const typed = isPlainObject(test.answers[id]) ? test.answers[id] : {};
   if (box.value === "") { delete typed[box.dataset.word]; } else { typed[box.dataset.word] = box.value.slice(0, 200); }
   if (Object.keys(typed).length === 0) { delete test.answers[id]; } else { test.answers[id] = typed; }
+  touchTest(test);
   saveProgress();
   const wasOpen = !document.getElementById("test-map").hidden;
   if (wasOpen) { showTestMap(test); }
@@ -707,6 +719,7 @@ function goToTestQuestion(index) {
   const test = currentTest();
   if (!test || index < 0 || index >= test.qIds.length) { return; }
   test.index = index;
+  touchTest(test);
   saveProgress();
   document.getElementById("test-dropped").hidden = true;
   showTestQuestion();
@@ -915,7 +928,7 @@ function openTestResults(id, note) {
   if (!test || test.state !== "done") { openTests(); return false; }
   currentSubject = test.subject;
   resultsTestId = test.id;
-  setIconLabel(document.getElementById("test-results-back"), "chevron-left", "Tests");
+  setIconLabel(document.getElementById("test-results-back"), "chevron-left", "My tests");
   document.getElementById("test-results-subject").textContent = test.subject + testViewLabel(test.view);
   document.getElementById("test-results-sub").textContent = testTitle(test) + " · Finished " + testDate(test.finished);
   const noteBox = document.getElementById("test-results-note");
@@ -1411,3 +1424,64 @@ document.addEventListener("visibilitychange", function () {
   if (shownScreen === "screen-test") { startTestTimer(); }
 });
 window.addEventListener("pagehide", function () { stopTestTimer(); });
+
+// ---------- The subject screen's big card, and the My tests card ----------
+// The big card: "Continue test" (that test's name, "Question N of M", time left) when this subject
+// has an unfinished test in the current view (Cases / Notes / NotebookLM): the one she used most
+// recently (lastUsed; older tests: when they were made). Otherwise "Create a test", greyed out
+// with the reason when there's nothing here a test can use. Under it, only with Continue test,
+// a small "Create a new test" link. The My tests card counts this subject's tests (all views).
+
+// She opened, answered or moved in a test: remember when (for "the most recently used").
+function touchTest(test) {
+  test.lastUsed = new Date().toISOString();
+}
+
+function lastUsedOf(test) {
+  return new Date(test.lastUsed || test.made).getTime() || 0;
+}
+
+function continueTestHere(subject) {
+  return testsOf(subject, "open").filter(function (t) { return t.view === sourceView; })
+    .sort(function (a, b) { return lastUsedOf(b) - lastUsedOf(a); })[0] || null;
+}
+
+function showSubjectTestCard(subject) {
+  const card = document.getElementById("start-card");
+  const title = document.getElementById("start-title");
+  const sub = document.getElementById("start-sub");
+  const link = document.getElementById("start-new-test");
+  const open = continueTestHere(subject);
+  const canMake = testPool(subject, "both").length > 0;
+  if (open) {
+    title.textContent = "Continue test: " + testTitle(open);
+    sub.textContent = "Question " + (open.index + 1) + " of " + open.qIds.length +
+      (open.limit > 0 ? " · " + Math.max(1, Math.ceil(testSecondsLeft(open) / 60)) + " min left" : "");
+    card.disabled = false;
+    card.dataset.action = "continue-test";
+    card.dataset.testId = open.id;
+    link.hidden = !canMake;
+  } else {
+    title.textContent = "Create a test";
+    sub.textContent = canMake ? "Pick topics, how many questions, and a timer"
+      : "No multiple choice or fill-in-the-blank questions here.";
+    card.disabled = !canMake;
+    card.dataset.action = "create-test";
+    delete card.dataset.testId;
+    link.hidden = true;
+  }
+  const unfinished = testsOf(subject, "open").length;
+  const finished = testsOf(subject, "done").length;
+  document.getElementById("tests-card-meta").textContent = (unfinished + finished === 0) ? "No tests yet"
+    : unfinished + " unfinished · " + finished + " finished";
+}
+
+document.getElementById("start-card").addEventListener("click", function (event) {
+  const card = event.currentTarget;
+  if (card.dataset.action === "continue-test" && card.dataset.testId) {
+    if (!openTest(card.dataset.testId)) { showSubjectTestCard(currentSubject); }
+    return;
+  }
+  openTestCreate("subject");
+});
+document.getElementById("start-new-test").addEventListener("click", function () { openTestCreate("subject"); });
