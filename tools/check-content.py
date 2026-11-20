@@ -189,6 +189,124 @@ def comparable(text):
     return re.sub(r"\s+", " ", text).strip()
 
 
+# ---------- basisExcerpt: a short exact quote from the official text (the Basis box) ----------
+# Optional on any question. It must be a non-empty string under BASIS_EXCERPT_MAX_WORDS words,
+# with no ** and no web address. Pieces are joined with " … " (a piece may start with "… " or end
+# with " …" where it was cut out of a longer sentence) and must appear word for word, in order,
+# in the official text the question's Basis cites, when a copy of it is on this Mac
+# (sources/official/, git-ignored): PROBLEM if the copy is here and the quote isn't in it,
+# CHECK if no copy is here. Official questions may also quote their linked case or rule text.
+BASIS_EXCERPT_MAX_WORDS = 120
+OFFICIAL_DIR = os.path.join(ROOT, "sources", "official")
+OFFICIAL_URL_KEYS = {"ra_8792": "ra8792", "ra_11967": "ra11967", "ra_11659": "ra11659", "am_01-7-01": "ree",
+                     "ra_8484": "ra8484", "ra_9369": "ra9369", "ra_386": "civilcode", "gr_170633": "mcc",
+                     "gr_193531": "torres", "gr_170338": "garcillano", "gr_201112": "capalla",
+                     "gr_199149": "vinzons", "gr_155076": "laurel2009"}
+_official_copies = None
+
+
+def official_copies():
+    """Every official copy on this Mac (sources/official/**/*.txt), by file name without .txt,
+    ready for comparing. Empty if the folder isn't here. Never raises."""
+    global _official_copies
+    if _official_copies is None:
+        _official_copies = {}
+        if os.path.isdir(OFFICIAL_DIR):
+            for folder, _, files in os.walk(OFFICIAL_DIR):
+                for name in sorted(files):
+                    if name.endswith(".txt"):
+                        text = read_text(os.path.join(folder, name))
+                        if text:
+                            _official_copies.setdefault(name[:-4], comparable(text))
+    return _official_copies
+
+
+def official_key_for(url):
+    """The local copy's name for an official URL (known table, else e.g. ra_8792_2000.html -> ra8792)."""
+    key = next((v for k, v in OFFICIAL_URL_KEYS.items() if k in url), None)
+    if key:
+        return key
+    stem = re.sub(r"\.html?$", "", url.rstrip("./").rsplit("/", 1)[-1].lower())
+    parts = stem.split("_")
+    return re.sub(r"[^a-z0-9]", "", "".join(parts[:2])) if len(parts) >= 2 else None
+
+
+def excerpt_pieces(excerpt):
+    pieces = []
+    for piece in str(excerpt).split(" … "):
+        piece = comparable(re.sub(r"^\s*…\s*|\s*…\s*$", "", piece))
+        if piece:
+            pieces.append(piece)
+    return pieces
+
+
+def pieces_in_order(text, pieces):
+    at = 0
+    for piece in pieces:
+        k = text.find(piece, at)
+        if k < 0:
+            return False
+        at = k + len(piece)
+    return bool(pieces)
+
+
+def excerpt_is_official(excerpt):
+    """True if the excerpt is official text: every piece, in order, in one copy in sources/official/."""
+    pieces = excerpt_pieces(excerpt)
+    return bool(pieces) and any(pieces_in_order(t, pieces) for t in official_copies().values())
+
+
+def strip_official_excerpts(text):
+    """The privacy checks' exemption: remove "basisExcerpt" values that are verified official text
+    (public-domain law text that the notes may also quote), so they aren't mistaken for quotes from
+    the notes. An excerpt not found in the official copies stays and is checked like everything else."""
+    def drop(m):
+        try:
+            value = json.loads('"' + m.group(1) + '"')
+        except (ValueError, TypeError):
+            return m.group(0)
+        return '"basisExcerpt": ""' if excerpt_is_official(value) else m.group(0)
+    try:
+        return re.sub(r'"basisExcerpt":\s*"((?:[^"\\]|\\.)*)"', drop, text)
+    except re.error:
+        return text
+
+
+def check_basis_excerpt(q_id, q, extra_texts=()):
+    """Checks the optional basisExcerpt. Returns True if it was found in an official text."""
+    if "basisExcerpt" not in q:
+        return False
+    ex = q.get("basisExcerpt")
+    if not filled(ex):
+        problem(q_id, "'basisExcerpt' is empty or not text (leave it out if there's no quote).")
+        return False
+    bad = False
+    if len(ex.split()) > BASIS_EXCERPT_MAX_WORDS:
+        problem(q_id, "'basisExcerpt' has %d words; keep it short (under %d)." % (len(ex.split()), BASIS_EXCERPT_MAX_WORDS))
+        bad = True
+    if "**" in ex:
+        problem(q_id, "'basisExcerpt' has ** in it; it is a plain quote.")
+        bad = True
+    if re.search(r"https?://|www\.", ex):
+        problem(q_id, "'basisExcerpt' has a web address in it; links belong in the Basis line.")
+        bad = True
+    pieces = excerpt_pieces(ex)
+    rationale = q.get("explanation") if q.get("type") != "essay" else (q.get("suggestedAnswer") or {}).get("conclusion")
+    basis = rationale.split("**Basis:**")[-1] if filled(rationale) and "**Basis:**" in rationale else ""
+    copies = official_copies()
+    cited = [copies[k] for k in (official_key_for(u) for u in re.findall(r"https?://[^\s,;)]+", basis)) if k in copies]
+    cited += [t for t in extra_texts if t]
+    if cited:
+        if any(pieces_in_order(t, pieces) for t in cited):
+            return not bad
+        problem(q_id, "its 'basisExcerpt' isn't found word for word (in order) in the official text its Basis cites.")
+        return False
+    if any(pieces_in_order(t, pieces) for t in copies.values()):
+        return not bad
+    check(q_id, "its 'basisExcerpt' couldn't be checked: no copy of the official text it cites is in sources/official/ on this Mac.")
+    return False
+
+
 def check_ids(pairs, prefix):
     """pairs = [(file name, item), …]. Every item has an ID like q-0001, and no ID is used
     twice (in any file). Returns {id: item}."""
@@ -442,6 +560,11 @@ def check_question(q_id, q, cases_by_id, case_texts, rules_by_number):
             problem(q_id, "links to %r, but there's no such case in any topic file." % case_id)
 
     check_type_parts(q_id, q, q_type)
+    if "basisExcerpt" in q:
+        own = [case_texts.get(cid) for cid in case_ids]
+        if rules_by_number and isinstance(q.get("source"), dict) and q["source"].get("grNumber") in rules_by_number:
+            own.append(rules_by_number[q["source"]["grNumber"]][1])
+        check_basis_excerpt(q_id, q, [t for t in own if t])
 
     # Source.
     source = q.get("source")
@@ -793,7 +916,7 @@ def check_privacy(message_file=None):
     for path, lines in sorted(added.items()):
         if path in QUOTE_ALLOWED:
             continue  # the published class-notes questions quote the notes on purpose
-        if _windows(_words(" ".join(lines))) & prints:
+        if _windows(_words(strip_official_excerpts(" ".join(lines)))) & prints:
             problem(where, "%s (staged) contains %d+ words in a row from your private notes. Remove them, "
                     "or, if that text is really from an official source, check it carefully before committing." % (path, QUOTE_WORDS))
     if message_file:
@@ -845,11 +968,7 @@ def check_class_notes(official_ids):
     official = {}
 
     def official_text(url):
-        name = {"ra_8792": "ra8792", "ra_11967": "ra11967", "ra_11659": "ra11659", "am_01-7-01": "ree",
-                "ra_8484": "ra8484", "ra_9369": "ra9369", "ra_386": "civilcode", "gr_170633": "mcc",
-                "gr_193531": "torres", "gr_170338": "garcillano", "gr_201112": "capalla",
-                "gr_199149": "vinzons", "gr_155076": "laurel2009"}
-        key = next((v for k, v in name.items() if k in url), None)
+        key = next((v for k, v in OFFICIAL_URL_KEYS.items() if k in url), None)
         if key and key not in official:
             official[key] = comparable(read_text(os.path.join(official_dir, key + ".txt")) or "")
         return official.get(key, "")
@@ -893,6 +1012,7 @@ def check_class_notes(official_ids):
         rationale = q.get("explanation") if q_type != "essay" else (q.get("suggestedAnswer") or {}).get("conclusion")
         if not filled(rationale) or "**Basis:**" not in rationale:
             problem(q_id, "the answer must end with a **Basis:** line.")
+        check_basis_excerpt(q_id, q)
         # Private checks (this Mac only).
         if not refs:
             continue
@@ -905,6 +1025,8 @@ def check_class_notes(official_ids):
                 if comparable(piece) and comparable(piece) not in notes and comparable(piece) not in review:
                     problem(q_id, "its private source quote isn't found in the notes or review questions: \"%s…\"" % comparable(piece)[:60])
             shown = [q.get("prompt", ""), q.get("fullText", "")] + list((q.get("choices") or {}).values())
+            if filled(q.get("basisExcerpt")) and not excerpt_is_official(q["basisExcerpt"]):
+                shown.append(q["basisExcerpt"])  # exempt only when it is verified official text
             if any(eight(t) & source_grams for t in shown):
                 problem(q_id, "the question or a choice repeats 8+ words in a row from the notes (rewrite it in your own words).")
         for chk in ref.get("officialChecks", []):
@@ -1049,11 +1171,14 @@ def check_notebooklm(other_ids):
         basis = rationale.split("**Basis:**")[-1] if filled(rationale) and "**Basis:**" in rationale else ""
         if "https://" not in basis:
             problem(q_id, "the answer must end with a **Basis:** line with an https link to the official text.")
+        check_basis_excerpt(q_id, q)
         if source_grams:
             shown = [q.get("explanation", "")] + list((q.get("choices") or {}).values()) + \
                 list((q.get("suggestedAnswer") or {}).values()) + list(q.get("keyPoints") or [])
             if q_type != "fillblank":
                 shown.append(q.get("prompt", ""))
+            if filled(q.get("basisExcerpt")) and not excerpt_is_official(q["basisExcerpt"]):
+                shown.append(q["basisExcerpt"])  # exempt only when it is verified official text
             if any(isinstance(t, str) and eight(t) & source_grams for t in shown):
                 problem(q_id, "repeats 8+ words in a row from the private notes or a reviewer (rewrite it in your own words).")
     clash = sorted(set(by_id) & set(other_ids))

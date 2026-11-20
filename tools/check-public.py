@@ -78,7 +78,9 @@ def is_private(path):
 
 
 def quotes_notes(text, prints):
-    return bool(cc._windows(cc._words(text)) & prints)
+    # "basisExcerpt" values that are verified official law text (sources/official/) are exempt:
+    # the notes may quote the same statute (see strip_official_excerpts in check-content.py).
+    return bool(cc._windows(cc._words(cc.strip_official_excerpts(text))) & prints)
 
 
 # 1. Ignore rules ---------------------------------------------------------------------------
