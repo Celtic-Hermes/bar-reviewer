@@ -312,18 +312,12 @@
         <!-- Only when the big card says Continue test -->
         <button type="button" class="start-card-link" id="start-new-test" hidden>Create a new test</button>
 
-        <!-- My tests: this subject's unfinished and finished tests (tests.js openTests) -->
+        <!-- My tests: a slim row, this subject's unfinished and finished tests (tests.js openTests; counts by showSubjectTestCard) -->
         <button type="button" class="subject-card tests-card" id="tests-card">
-          <span class="subject-name">My tests<span class="subject-meta" id="tests-card-meta">No tests yet</span></span>
+          <span class="subject-name">My tests</span>
+          <span class="topic-count" id="tests-card-meta">No tests yet</span>
           <span class="subject-arrow" aria-hidden="true">›</span>
         </button>
-
-        <!-- Three numbers about this subject (app.js showSubjectStats) -->
-        <div class="stat-strip" aria-label="Your progress in this subject">
-          <div class="stat-cell"><p class="stat-cell-value" id="sstat-answered">0</p><p class="stat-cell-label">Answered</p></div>
-          <div class="stat-cell"><p class="stat-cell-value" id="sstat-accuracy">–</p><p class="stat-cell-label">Accuracy</p></div>
-          <div class="stat-cell"><p class="stat-cell-value" id="sstat-mastered">0</p><p class="stat-cell-label">Mastered</p></div>
-        </div>
 
         <h2 class="label practice-heading">Practice</h2>
         <!-- Only when a practice round in this subject is half done: back to the same question (app.js showPracticeContinue) -->
@@ -332,8 +326,9 @@
           <span class="subject-arrow" aria-hidden="true">›</span>
         </button>
 
+        <!-- Question type: a bare switch (its title is for screen readers only) -->
         <fieldset class="mode-picker">
-          <legend class="switch-title">Question type</legend>
+          <legend class="visually-hidden">Question type</legend>
           <div class="mode-options">
             <label><input type="radio" name="question-mode" value="essay"><span>Essay questions</span></label>
             <label><input type="radio" name="question-mode" value="mcq"><span>Multiple choice</span></label>
@@ -342,12 +337,12 @@
           </div>
         </fieldset>
 
-        <h2 class="label">Your lists</h2>
-        <div class="subject-list" id="my-lists"></div>
-        <p class="card empty-note list-empty" id="list-empty" hidden></p>
-
-        <h2 class="label topics-label">Pick a topic to start</h2>
+        <!-- The topic cards ("All topics" first, only when there are two or more topics) -->
         <div class="subject-list" id="topic-list"></div>
+
+        <!-- Her three lists as small chips: Review missed / Bookmarked / Tagged, each with its count (app.js showTopicCards) -->
+        <div class="list-chips" id="my-lists" role="group" aria-label="Your lists"></div>
+        <p class="card empty-note list-empty" id="list-empty" hidden></p>
       </div>
 
       <p class="card empty-note" id="subject-empty" hidden>No questions for this subject yet.</p>

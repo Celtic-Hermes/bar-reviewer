@@ -876,8 +876,6 @@ function openSubject(subject) {
   if (!hasView(subject, sourceView)) { sourceView = "official"; }
   const count = questionsFor(subject).length;
   document.getElementById("subject-title").textContent = subject;
-  document.getElementById("subject-count").textContent = countLabel(count) +
-    (sourceView === "notes" ? " from class notes" : (sourceView === "notebooklm" ? " from NotebookLM" : " available"));
   showSourceSwitch(subject);
   document.getElementById("list-empty").hidden = true;
 
@@ -917,22 +915,57 @@ document.querySelectorAll("#source-switch .seg-btn").forEach(function (btn) {
   });
 });
 
-// Her lists and the topic cards on the subject screen (rebuilt when the question type changes).
+// The topic cards and her lists on the subject screen (rebuilt when the question type changes).
 function showTopicCards(subject) {
   showStartCard(subject);
-  // Her lists: "Review missed", "Bookmarked" and "Tagged".
+  // One card per topic, with "All topics" first, but only when it adds something: with just
+  // one topic that has questions of the picked type, All topics would be the same questions.
+  const mode = currentMode();
+  const topics = topicsFor(subject);
+  const withQuestions = topics.filter(function (topic) {
+    return questionsForTopic(subject, topic, mode).length > 0;
+  });
+  const list = document.getElementById("topic-list");
+  list.innerHTML = "";
+  (withQuestions.length > 1 ? [ALL_TOPICS] : []).concat(topics).forEach(function (topic) {
+    list.appendChild(makeTopicCard(subject, topic));
+  });
+
+  // Her lists, below the topics: "Review missed", "Bookmarked" and "Tagged" as small chips.
   const myLists = document.getElementById("my-lists");
   myLists.innerHTML = "";
   [REVIEW_MISSED, BOOKMARKED, TAGGED].forEach(function (name) {
-    myLists.appendChild(makeTopicCard(subject, name));
+    myLists.appendChild(makeListChip(subject, name));
   });
+}
 
-  // One card per topic, with "All topics" first.
-  const list = document.getElementById("topic-list");
-  list.innerHTML = "";
-  [ALL_TOPICS].concat(topicsFor(subject)).forEach(function (topic) {
-    list.appendChild(makeTopicCard(subject, topic));
+// One small chip for one of her lists: its name and how many questions it has (of the picked
+// type). An empty list looks greyed out but can still be tapped: it says why it's empty.
+function makeListChip(subject, name) {
+  const chip = document.createElement("button");
+  chip.type = "button";
+  chip.className = "list-chip";
+  const n = questionsForTopic(subject, name, currentMode()).length;
+  const label = document.createElement("span");
+  label.textContent = name;
+  const count = document.createElement("span");
+  count.className = "list-chip-count";
+  count.textContent = String(n);
+  chip.append(label, count);
+  if (n === 0) { chip.classList.add("is-empty"); }
+  chip.setAttribute("aria-label", name + ", " + (n === 1 ? "1 question" : n + " questions"));
+  chip.addEventListener("click", function () {
+    currentTopic = name;
+    currentSubtopic = null;
+    fixedQuestions = null;
+    practiceCase = null;
+    if (name === TAGGED && n > 0) {
+      openTagged();
+      return;
+    }
+    startPractice();  // an empty list: back on the subject screen with its message
   });
+  return chip;
 }
 
 
@@ -2905,18 +2938,20 @@ function showEmptyListMessage(topic) {
   const hasOtherTypes = mode !== "both" && questionsForTopic(currentSubject, topic).length > 0;
   if (hasOtherTypes) {
     // There are questions here, just not of the type she picked.
-    note.textContent = noneOfMode(mode) + " here. Pick All under Question type to see the others.";
+    note.textContent = noneOfMode(mode) + " here. Pick All in the question type switch above to see the others.";
   } else {
     note.textContent = EMPTY_LIST_MESSAGES[topic] || "No questions here yet.";
   }
   note.hidden = false;
+  // The note sits under her lists, near the bottom: bring it into view (the screen starts at the top).
+  if (typeof note.scrollIntoView === "function") { note.scrollIntoView({ block: "nearest" }); }
 }
 
-// Fill in the "Your progress" box from what's saved on the phone.
-// The header's mastery ring and the three numbers under the Start card, for this subject.
+// The header's line and mastery ring, for this subject (in the current view):
+//   "96 questions · 2 answered · 50% right" ("96 questions available" until she has answered one).
 //   Answered: how many of its questions she has answered at least once (Reset takes them back off).
-//   Accuracy: of those, how many were right (or "Got it") the last time. Partly and Missed it count as not right.
-//   Mastered: how many are mastered (right on two different days in a row).
+//   Right: of those, how many were right (or "Got it") the last time. Partly and Missed it count as not right.
+//   The ring: how many are mastered (right on two different days in a row), as a percent.
 function showSubjectStats(subject) {
   const questions = questionsFor(subject);
   const answered = questions.filter(function (q) { return progress.results[q.id]; });
@@ -2925,9 +2960,11 @@ function showSubjectStats(subject) {
     return last === "right" || last === "got";
   }).length;
   const mastery = masteryOf(questions);
-  document.getElementById("sstat-answered").textContent = String(answered.length);
-  document.getElementById("sstat-accuracy").textContent = answered.length ? Math.round(100 * right / answered.length) + "%" : "–";
-  document.getElementById("sstat-mastered").textContent = String(mastery.mastered);
+  const viewWords = sourceView === "notes" ? " from class notes" : (sourceView === "notebooklm" ? " from NotebookLM" : "");
+  document.getElementById("subject-count").textContent = answered.length === 0
+    ? countLabel(questions.length) + (viewWords || " available")
+    : [countLabel(questions.length) + viewWords, answered.length + " answered",
+       Math.round(100 * right / answered.length) + "% right"].join(" · ");
 
   // The ring: mastery as a percent (at least 1% once anything is mastered).
   const percent = mastery.total ? Math.round(100 * mastery.mastered / mastery.total) : 0;

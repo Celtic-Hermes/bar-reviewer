@@ -419,12 +419,13 @@ body {
    then springs back. The tint is an "inner shadow" laid on top of the button's
    own background, so it works the same on every button color.
    To change the effect, edit --press-scale, --press-shade and --press-time at the top. */
-.btn, .subject-card, .choice, .back-btn, .bookmark-btn, .hl-swatch, .tag-dot, .fb-view-btn, .fb-new-btn, .menu-btn, .quick-link, .stat-tile-button, .start-card, .syllabus-card {
+.btn, .subject-card, .choice, .back-btn, .bookmark-btn, .hl-swatch, .tag-dot, .fb-view-btn, .fb-new-btn, .menu-btn, .quick-link, .stat-tile-button, .start-card, .syllabus-card, .list-chip {
   transition: transform var(--press-time) ease-out, box-shadow var(--press-time) ease-out;
 }
 .btn:active:not(:disabled),
 .subject-card:active,
 .syllabus-card:active,
+.list-chip:active,
 .choice:active:not(:disabled),
 .back-btn:active,
 .quick-link:active,
@@ -442,7 +443,7 @@ body {
 }
 /* If she has asked her phone for less motion: keep the tint, skip the shrinking. */
 @media (prefers-reduced-motion: reduce) {
-  .btn, .subject-card, .choice, .back-btn, .bookmark-btn, .hl-swatch, .tag-dot, .fb-view-btn, .fb-new-btn, .menu-btn, .quick-link, .stat-tile-button, .start-card, .syllabus-card { --press-scale: 1; }
+  .btn, .subject-card, .choice, .back-btn, .bookmark-btn, .hl-swatch, .tag-dot, .fb-view-btn, .fb-new-btn, .menu-btn, .quick-link, .stat-tile-button, .start-card, .syllabus-card, .list-chip { --press-scale: 1; }
 }
 
 /* ---------- Home: the top (greeting, tiles, where she stopped) ---------- */
@@ -578,16 +579,11 @@ button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
 .list-empty { margin: 10px 0 0; font-size: 15px; }
 .topics-label { margin-top: 24px; }
 
-/* Question type picker: three side-by-side buttons (Essay / Multiple choice / Both).
-   They're really radio buttons, so only one can be picked at a time. */
-.mode-picker {
-  margin: 0 0 22px;  /* the same gap before "Your lists" the old Shuffle box had */
-  padding: 14px 16px;
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-}
-.mode-picker legend { float: left; width: 100%; margin-bottom: 10px; padding: 0; }
+/* Question type picker (subject screen): a bare switch of four buttons, no card around it
+   (its "Question type" title is for screen readers only). They're really radio buttons. */
+.mode-picker { margin: 0 0 14px; padding: 0; border: 0; min-width: 0; }
+.mode-picker .mode-options { background: color-mix(in srgb, var(--border) 55%, var(--card)); }
+.mode-picker .mode-options span { min-height: 44px; }
 .mode-options {
   clear: both;
   display: flex;
@@ -647,7 +643,6 @@ button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
 .switch:checked { background: var(--got); }
 .switch:checked::after { transform: translateX(20px); }
 
-/* ---------- Subject screen: "Your progress" box ---------- */
 /* ---------- Subject screen (index.html #screen-subject, app.js openSubject) ----------
    One clear action (the Start card), quieter things around it, few borders, room to breathe. */
 .subject-head { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 14px; margin: 6px 0 20px; }
@@ -686,7 +681,7 @@ button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
 }
 .start-card-go .icon { width: 24px; height: 24px; margin: 0; vertical-align: 0; }
 
-/* Three numbers in one soft strip (no box borders). */
+/* Three numbers in one soft strip (no box borders): Right / Wrong / Unanswered on test results. */
 .stat-strip {
   display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 0 0 22px; padding: 14px 0; border-radius: 18px;
   background: color-mix(in srgb, var(--border) 45%, var(--bg));
@@ -697,7 +692,7 @@ button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
 .stat-cell-label { margin: 2px 0 0; font-size: 13px; color: var(--muted); }
 
 /* ---------- Tests (tests.js) ---------- */
-.tests-card { margin: 0 0 22px; }  /* the subject screen's My tests card: a normal list card */
+.tests-card { min-height: 52px; margin: 0 0 22px; padding: 10px 16px; }  /* the subject screen's My tests row: one slim line */
 /* "Create a new test": a small text link under the big card, only when it says Continue test */
 .start-card-link {
   display: block; min-height: 44px; margin: -8px 0 10px; padding: 0 4px; border: 0; background: none;
@@ -706,6 +701,20 @@ button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
 }
 .practice-heading { margin-top: 4px; }
 .practice-continue { margin: 0 0 14px; }
+/* Her three lists under the topics: small chips with a count (an empty one is greyed, still tappable) */
+.list-chips { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin: 16px 0 0; }
+.list-chip {
+  display: grid; place-content: center; justify-items: center; gap: 1px; min-width: 0;
+  min-height: 52px; padding: 6px 4px; border: 1px solid var(--border); border-radius: 14px;
+  background: var(--card); color: var(--text); font: inherit; font-size: 14px; font-weight: 600;
+  line-height: 1.2; text-align: center; overflow-wrap: anywhere;
+  cursor: pointer; -webkit-tap-highlight-color: transparent;
+}
+.list-chip-count { font-size: 16px; font-weight: 700; color: var(--primary-text); }
+/* An empty list: no card or border, just a soft neutral tile with muted words (still tappable) */
+.list-chip.is-empty { border-color: transparent; background: color-mix(in srgb, var(--border) 45%, var(--bg)); }
+.list-chip.is-empty, .list-chip.is-empty .list-chip-count { color: var(--muted); font-weight: 500; }
+.list-chip:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
 .tests-note { margin: 10px 0 0; font-size: 15px; color: var(--muted); }
 /* Taking a test (#screen-test): the practice question's look (.choice, .prompt, .fb-input, .question-nav) */
 .test-dropped { margin: 0 0 12px; }
@@ -1109,7 +1118,7 @@ a.btn { text-align: center; text-decoration: none; }
 
 /* Case cards (subject screen) and linked-question cards (case screen) */
 .card-detail { display: block; margin-top: 3px; font-size: 14px; font-weight: 400; color: var(--muted); }
-#screen-subject .topics-label + .subject-list, #screen-case .topics-label + .subject-list { margin-bottom: 8px; }
+#screen-case .topics-label + .subject-list { margin-bottom: 8px; }
 #case-questions .subject-name { font-weight: 500; }
 
 /* ---------- "Find in case" (question screen) ---------- */

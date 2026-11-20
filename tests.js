@@ -1472,8 +1472,11 @@ function showSubjectTestCard(subject) {
   }
   const unfinished = testsOf(subject, "open").length;
   const finished = testsOf(subject, "done").length;
-  document.getElementById("tests-card-meta").textContent = (unfinished + finished === 0) ? "No tests yet"
-    : unfinished + " unfinished · " + finished + " finished";
+  // "2 unfinished · 5 finished", "1 finished", "1 unfinished" (zeros left out) or "No tests yet".
+  const parts = [];
+  if (unfinished > 0) { parts.push(unfinished + " unfinished"); }
+  if (finished > 0) { parts.push(finished + " finished"); }
+  document.getElementById("tests-card-meta").textContent = parts.length ? parts.join(" · ") : "No tests yet";
 }
 
 document.getElementById("start-card").addEventListener("click", function (event) {
