@@ -681,12 +681,6 @@ function modeCountLabel(n, mode) {
   return countLabel(n);
 }
 
-// A topic or sub-topic card shows only the number ("36"); the words stay in the card's
-// spoken label for screen readers ("Writ of Amparo, 36 essay questions").
-function showCardCount(card, howMany, name, n, mode) {
-  howMany.textContent = String(n);
-  card.setAttribute("aria-label", name + ", " + modeCountLabel(n, mode));
-}
 
 // The questions for a subject + a choice from the subject screen:
 // a topic name, "All topics", "Review missed", or "Bookmarked",
@@ -749,13 +743,18 @@ function openSubtopics(topic) {
   currentTopic = topic;
   currentSubtopic = null;
   const subject = currentSubject;
-  const mode = currentMode();
   setIconLabel(document.getElementById("subtopics-back"), "chevron-left", subject);
   document.getElementById("subtopics-subject").textContent = subject + viewSuffix();
   document.getElementById("subtopics-title").textContent = topic;
   document.getElementById("subtopics-count").textContent =
     countLabel(questionsForTopic(subject, topic).length) + " available";
 
+  showSubtopicRows(subject, topic);
+  showScreen("screen-subtopics");
+}
+
+// The sub-topic rows (each with its progress bar and Reset); redrawn after a Reset or Undo.
+function showSubtopicRows(subject, topic) {
   const choices = [ALL_SUBTOPICS].concat(subtopicsFor(subject, topic));
   if (questionsFor(subject).concat(casesFor(subject)).some(function (item) { return item.topic === topic && subtopicOf(item) === null; })) {
     choices.push(OTHER_SUBTOPIC);
@@ -763,22 +762,13 @@ function openSubtopics(topic) {
   const list = document.getElementById("subtopic-list");
   list.innerHTML = "";
   choices.forEach(function (subtopic) {
-    const card = document.createElement("button");
-    card.className = "subject-card";
-    const name = document.createElement("span");
-    name.className = "subject-name";
-    name.textContent = subtopicLabel(subtopic, topic);
-    const howMany = document.createElement("span");
-    howMany.className = "topic-count";
-    showCardCount(card, howMany, name.textContent, questionsForTopic(subject, topic, mode, subtopic).length, mode);
-    const arrow = document.createElement("span");
-    arrow.className = "subject-arrow";
-    arrow.textContent = "›";
-    card.append(name, howMany, arrow);
-    card.addEventListener("click", function () { openTopic(topic, subtopic); });
-    list.appendChild(card);
+    list.appendChild(makeTopicRow(subtopicLabel(subtopic, topic), questionsForTopic(subject, topic, null, subtopic),
+      function () { openTopic(topic, subtopic); },
+      function () {
+        if (shownScreen === "screen-subtopics" && currentSubject === subject && currentTopic === topic) { showSubtopicRows(subject, topic); }
+        refreshSubjectAfterReset(subject);
+      }));
   });
-  showScreen("screen-subtopics");
 }
 
 // ---------- Topic screen (one topic, or one sub-topic of it) ----------
@@ -873,22 +863,50 @@ function topicsFor(subject) {
   return topics;
 }
 
-// Make one tappable card showing a name and how many questions it has.
-function makeTopicCard(subject, topic) {
-  const card = document.createElement("button");
-  card.className = "subject-card";
-  const name = document.createElement("span");
-  name.className = "subject-name";
-  name.textContent = topic;
-  const howMany = document.createElement("span");
-  howMany.className = "topic-count";
-  const mode = currentMode();
-  showCardCount(card, howMany, topic, questionsForTopic(subject, topic, mode).length, mode);
+// One topic or sub-topic row (Questions tab, sub-topics screen), like a case row: the name, the
+// progress bar of its questions (all sources and types: what she practices) with "N of M questions
+// answered", a small ↻ Reset (only when there's something to reset) and ›. The whole row opens it
+// (onOpen); the name is the row's real button, so keyboards and screen readers reach it.
+function makeTopicRow(name, questions, onOpen, afterReset) {
+  const tally = resultTally(questions);
+  const row = document.createElement("div");
+  row.className = "card case-row topic-row";
+  const top = document.createElement("div");
+  top.className = "case-row-top";
+  const open = document.createElement("button");
+  open.type = "button";
+  open.className = "case-row-open";
+  open.textContent = name;
+  open.setAttribute("aria-label", name + ", " + (questions.length ? answeredText(tally, questions.length) : "no questions yet"));
+  top.appendChild(open);
+  if (hasSomethingToReset(questions)) { top.appendChild(makeRowReset(name, questions, afterReset)); }
   const arrow = document.createElement("span");
   arrow.className = "subject-arrow";
+  arrow.setAttribute("aria-hidden", "true");
   arrow.textContent = "›";
-  card.append(name, howMany, arrow);
-  card.addEventListener("click", function () {
+  top.appendChild(arrow);
+  row.appendChild(top);
+  const count = document.createElement("p");
+  count.className = "case-row-count";
+  if (questions.length === 0) {  // e.g. a topic with only cases: no bar, just the line
+    count.textContent = "No questions yet.";
+    row.appendChild(count);
+  } else {
+    count.textContent = answeredText(tally, questions.length);
+    row.appendChild(makeProgressBar(tally));
+    const foot = document.createElement("div");
+    foot.className = "case-row-foot";
+    foot.appendChild(count);
+    row.appendChild(foot);
+  }
+  row.addEventListener("click", onOpen);  // a tap anywhere on the row (the name button's click bubbles here)
+  return row;
+}
+
+// One topic row on the Questions tab (All topics first, then each topic).
+function makeTopicCard(subject, topic) {
+  const label = topic;
+  return makeTopicRow(label, questionsForTopic(subject, topic, null), function () {
     currentTopic = topic;
     currentSubtopic = null;
     fixedQuestions = null;
@@ -909,8 +927,7 @@ function makeTopicCard(subject, topic) {
       return;
     }
     startPractice();
-  });
-  return card;
+  }, function () { refreshSubjectAfterReset(subject); });
 }
 
 function openSubject(subject) {
@@ -1025,6 +1042,49 @@ function resultTally(questions) {
   return tally;
 }
 
+// The thin progress bar for a group of questions (a case's, a topic's, a sub-topic's): one piece per
+// result, as wide as its count; the words are in its aria-label and in the "N of M" line beside it.
+function makeProgressBar(tally) {
+  const bar = document.createElement("div");
+  bar.className = "case-bar";
+  bar.setAttribute("role", "img");
+  bar.setAttribute("aria-label", [tally.right + " right", tally.partly + " partly", tally.wrong + " wrong", tally.notYet + " not yet"].join(", "));
+  [["right", tally.right], ["partly", tally.partly], ["wrong", tally.wrong], ["rest", tally.notYet]].forEach(function (part) {
+    if (part[1] === 0) { return; }
+    const piece = document.createElement("span");
+    piece.className = "case-bar-" + part[0];
+    piece.style.flexGrow = String(part[1]);
+    bar.appendChild(piece);
+  });
+  return bar;
+}
+
+// "6 of 8 questions answered".
+function answeredText(tally, total) {
+  return (total - tally.notYet) + " of " + total + (total === 1 ? " question answered" : " questions answered");
+}
+
+// Is there anything a Reset would clear for these questions (a latest result or a Review missed place)?
+function hasSomethingToReset(questions) {
+  return questions.some(function (q) {
+    return Object.prototype.hasOwnProperty.call(progress.results, q.id) || Object.prototype.hasOwnProperty.call(progress.review, q.id);
+  });
+}
+
+// The small ↻ Reset icon button of a case row or a topic row (the shared resetScope: asks first, Undo).
+function makeRowReset(name, questions, after) {
+  const reset = document.createElement("button");
+  reset.type = "button";
+  reset.className = "case-row-reset";
+  reset.setAttribute("aria-label", "Reset " + name);
+  reset.appendChild(icon("refresh"));
+  reset.addEventListener("click", function (event) {
+    event.stopPropagation();  // a topic row opens when tapped: Reset must not also open it
+    resetScope(name, questions, after);
+  });
+  return reset;
+}
+
 // Her open practice round for this case (saved by rememberSpot), if its questions all still exist.
 function lastRoundForCase(theCase) {
   const last = loadLastRound();
@@ -1071,7 +1131,6 @@ function makeCaseRow(theCase, number) {
   const name = theCase.name || "Untitled case";
   const questions = caseResetQuestions(theCase);
   const tally = resultTally(questions);
-  const answered = questions.length - tally.notYet;
   const row = document.createElement("li");
   row.className = "card case-row";
 
@@ -1089,19 +1148,8 @@ function makeCaseRow(theCase, number) {
   open.appendChild(cardDetail([theCase.grNumber, theCase.year].filter(Boolean).join(" · ")));
   open.addEventListener("click", function () { openCase(theCase, "subject"); });
   top.append(num, open);
-  const hasSomethingToReset = questions.some(function (q) {
-    return Object.prototype.hasOwnProperty.call(progress.results, q.id) || Object.prototype.hasOwnProperty.call(progress.review, q.id);
-  });
-  if (hasSomethingToReset) {
-    const reset = document.createElement("button");
-    reset.type = "button";
-    reset.className = "case-row-reset";
-    reset.setAttribute("aria-label", "Reset " + name);
-    reset.appendChild(icon("refresh"));
-    reset.addEventListener("click", function () {
-      resetScope(name, questions, function () { refreshSubjectAfterReset(subject); });
-    });
-    top.appendChild(reset);
+  if (hasSomethingToReset(questions)) {
+    top.appendChild(makeRowReset(name, questions, function () { refreshSubjectAfterReset(subject); }));
   }
   row.appendChild(top);
 
@@ -1113,32 +1161,14 @@ function makeCaseRow(theCase, number) {
     return row;
   }
 
-  // The bar: one piece per result, as wide as its count (the words are in its label and the line below).
-  const bar = document.createElement("div");
-  bar.className = "case-bar";
-  bar.setAttribute("role", "img");
-  bar.setAttribute("aria-label", [tally.right + " right", tally.partly + " partly", tally.wrong + " wrong", tally.notYet + " not yet"].join(", "));
-  [["right", tally.right], ["partly", tally.partly], ["wrong", tally.wrong]].forEach(function (part) {
-    if (part[1] === 0) { return; }
-    const piece = document.createElement("span");
-    piece.className = "case-bar-" + part[0];
-    piece.style.flexGrow = String(part[1]);
-    bar.appendChild(piece);
-  });
-  if (tally.notYet > 0) {
-    const rest = document.createElement("span");
-    rest.className = "case-bar-rest";
-    rest.style.flexGrow = String(tally.notYet);
-    bar.appendChild(rest);
-  }
-  row.appendChild(bar);
+  row.appendChild(makeProgressBar(tally));
 
   // Bottom: "6 of 8 questions answered" and Practice / Continue.
   const foot = document.createElement("div");
   foot.className = "case-row-foot";
   const count = document.createElement("p");
   count.className = "case-row-count";
-  count.textContent = answered + " of " + questions.length + (questions.length === 1 ? " question answered" : " questions answered");
+  count.textContent = answeredText(tally, questions.length);
   const last = lastRoundForCase(theCase);
   const go = document.createElement("button");
   go.type = "button";

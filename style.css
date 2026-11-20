@@ -729,6 +729,12 @@ button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
 .case-row-count { margin: 0; font-size: 14px; color: var(--muted); }
 .case-row > .case-row-count { margin-top: var(--space-2); }
 .case-row-foot .btn { width: auto; flex: 0 0 auto; margin: 0; }
+/* Topic and sub-topic rows (Questions tab, sub-topics screen; app.js makeTopicRow): the case-row look
+   (both classes), with the name in place of the case title and › in place of Practice. The whole row
+   opens the topic. */
+.topic-row { cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.topic-row .case-row-top { align-items: center; }
+.topic-row .case-row-open { font-weight: 600; }
 
 /* A small ring with a percent in the middle (the middle is the page color, so it needs no mask). */
 .mastery-ring {
@@ -1355,25 +1361,32 @@ body.sheet-open { overflow: hidden; }
    case and note cards (Study tab) sit side by side by a minimum width of 320px: 1 per row on a phone,
    2 on an iPad or a 1024px window, 3 at the full list width. auto-fit: one or two cards stretch to
    fill the row instead of leaving a lone narrow card. The list chips stay one row of 3. */
-#topic-list, #study-rules, #study-cases, #study-notes { grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); }
+#study-rules, #study-cases, #study-notes { grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); }
+/* (Topic rows, #topic-list and #subtopic-list, are one per row, like the case rows, so their bars have room.) */
 #study-rules-block, #study-cases-block { margin-bottom: var(--space-5); }
 @media (min-width: 1024px) {
-  /* Cases tab: each case is one wide line. Left: number, title, G.R. · year; middle: the long bar
-     with "N of M questions answered" under it; right: Reset, then Practice / Continue.
-     The two inner wrappers step aside (display: contents) so their parts sit in the row's grid;
+  /* Case rows (Cases tab) and topic rows (Questions tab, sub-topics screen): each one wide line.
+     Left: (number,) the name or title; middle: the long bar with "N of M questions answered" under
+     it; right: Reset, then Practice / Continue (a case) or › (a topic). The two inner wrappers step
+     aside (display: contents) so their parts sit in the row's grid, placed by named areas;
      fixed side columns keep every row's bar lined up. */
   .case-row {
     display: grid; grid-template-columns: 2em minmax(0, 1.3fr) minmax(0, 1fr) 44px 7.5rem;
+    grid-template-areas: "num open bar reset go" "num open count reset go";
     grid-template-rows: auto auto; column-gap: var(--space-4); align-items: center; padding: var(--space-3) var(--space-4);
   }
+  .topic-row {
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr) 44px 1.5em;
+    grid-template-areas: "open bar reset go" "open count reset go";
+  }
   .case-row-top, .case-row-foot { display: contents; }
-  .case-row-num { grid-column: 1; grid-row: 1 / span 2; padding-top: 0; }
-  .case-row-open { grid-column: 2; grid-row: 1 / span 2; }
-  .case-bar { grid-column: 3; grid-row: 1; align-self: end; margin: 0; }
-  .case-row-foot .case-row-count { grid-column: 3; grid-row: 2; align-self: start; margin-top: var(--space-2); }
-  .case-row > .case-row-count { grid-column: 3; grid-row: 1 / span 2; margin: 0; }  /* a case with no questions */
-  .case-row-reset { grid-column: 4; grid-row: 1 / span 2; margin: 0; }
-  .case-row-go { grid-column: 5; grid-row: 1 / span 2; justify-self: end; }
+  .case-row-num { grid-area: num; padding-top: 0; }
+  .case-row-open { grid-area: open; }
+  .case-bar { grid-area: bar; align-self: end; margin: 0; }
+  .case-row-foot .case-row-count { grid-area: count; align-self: start; margin-top: var(--space-2); }
+  .case-row > .case-row-count { grid-column: bar; grid-row: 1 / span 2; margin: 0; }  /* no questions: just the line */
+  .case-row-reset { grid-area: reset; margin: 0; }
+  .case-row-go, .topic-row .subject-arrow { grid-area: go; justify-self: end; }
 }
 
 /* Case screen: her notes and the linked questions in a side panel on the right
