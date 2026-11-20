@@ -33,7 +33,7 @@ let currentSubtopic = null; // the sub-topic she picked, ALL_SUBTOPICS, OTHER_SU
 // If the file is missing or damaged, the app simply does without them.
 const CLASS_NOTES_FILE = "data/class-notes.json";
 // Questions imported from NotebookLM (data/notebooklm.json, IDs nq-0001 …) work the same way:
-// marked notebooklm, always labeled "From NotebookLM", never counted as official.
+// marked notebooklm, always labeled "NotebookLM", never counted as official.
 const NOTEBOOKLM_FILE = "data/notebooklm.json";
 // Which questions the subject screens show: "all" (official + class notes + NotebookLM together,
 // what she sees now: there is no switch anymore), or, only inside withView(), just "official",
@@ -57,8 +57,8 @@ function viewOf(question) {
 }
 
 // The small source label every question shows: "Cases" (official content), "From class notes"
-// or "From NotebookLM" (content rules 7 and 9: never presented as official).
-const SOURCE_LABELS = { official: "Cases", notes: "From class notes", notebooklm: "From NotebookLM" };
+// or "NotebookLM" (content rules 7 and 9: never presented as official).
+const SOURCE_LABELS = { official: "Cases", notes: "Notes", notebooklm: "NotebookLM" };
 function sourceLabelOf(question) {
   return SOURCE_LABELS[viewOf(question)];
 }
@@ -1385,7 +1385,7 @@ function makeQuestionCard(question, onTap) {
   const prompt = plainText(question.prompt).replace(/\s+/g, " ").trim();
   // A short preview, cut at the end of a whole word.
   text.textContent = prompt.length > 110 ? prompt.slice(0, 110).replace(/\s+\S*$/, "") + "…" : prompt;
-  const where = [isClassNote(question) ? "From class notes" : (isNotebookLM(question) ? "From NotebookLM" : null), questionTypeLabel(question), question.topic].filter(Boolean).join(" · ");
+  const where = [isClassNote(question) ? "Notes" : (isNotebookLM(question) ? "NotebookLM" : null), questionTypeLabel(question), question.topic].filter(Boolean).join(" · ");
   text.appendChild(cardDetail(where));
   const arrow = document.createElement("span");
   arrow.className = "subject-arrow";
@@ -1716,7 +1716,7 @@ function makeClarifyCard(item) {
   where.textContent = [item.subject, item.topic, item.subtopic].filter(function (x) { return typeof x === "string" && x; }).join(" · ");
   const badge = document.createElement("p");
   badge.className = "notes-badge";
-  badge.textContent = "From class notes";
+  badge.textContent = "Notes";
   const prompt = document.createElement("p");
   prompt.className = "prompt reading-text";
   prompt.appendChild(richText(item.prompt));
@@ -3445,20 +3445,17 @@ function showQuestion() {
   showScreen("screen-question");
 }
 
-// --- "From class notes" / "From NotebookLM" (never official) ---
-// The label, and the source line: "Class notes · <file> · <heading>", or "NotebookLM · checked against the official text".
+// --- The source label: "Cases", "Notes" or "NotebookLM" ---
+// Class-notes questions show only the "Notes" label (the builder found "Class notes · <file>" redundant).
+// NotebookLM questions keep one short line: "Answer checked against the official text (see Basis)".
 function showClassNotesLabel(question) {
-  const fromNotes = isClassNote(question);
   const fromNotebook = isNotebookLM(question);
   const badge = document.getElementById("notes-badge");
   badge.hidden = false;
-  badge.textContent = sourceLabelOf(question);  // "Cases", "From class notes" or "From NotebookLM"
+  badge.textContent = sourceLabelOf(question);  // "Cases", "Notes" or "NotebookLM"
   const line = document.getElementById("notes-source");
-  line.hidden = !fromNotes && !fromNotebook;
-  if (fromNotebook) { line.textContent = "NotebookLM · answer checked against the official text (see Basis)"; return; }
-  if (!fromNotes) { return; }
-  const source = isPlainObject(question.source) ? question.source : {};
-  line.textContent = ["Class notes", source.file, source.part].filter(function (x) { return typeof x === "string" && x; }).join(" · ");
+  line.hidden = !fromNotebook;
+  if (fromNotebook) { line.textContent = "Answer checked against the official text (see Basis)"; }
 }
 
 // --- Bookmark button ---

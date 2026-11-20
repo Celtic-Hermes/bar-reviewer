@@ -588,7 +588,7 @@ function showTestQuestion() {
   document.getElementById("test-subject").textContent = question.subject;
   document.getElementById("test-topic").textContent = [question.topic, subtopicOf(question)].filter(Boolean).join(" · ");
   const badge = document.getElementById("test-notes-badge");
-  badge.textContent = sourceLabelOf(question);  // "Cases", "From class notes" or "From NotebookLM"
+  badge.textContent = sourceLabelOf(question);  // "Cases", "Notes" or "NotebookLM"
   badge.hidden = false;
 
   const isMcq = question.type === "mcq";
@@ -1183,11 +1183,13 @@ function showReviewParts(test, question, one) {
   setRichText(document.getElementById("review-explain"), discussion);
 }
 
-// The source, in one short line: "Class notes · file · part", NotebookLM's note, or the case / rule.
+// The source, in one short line: NotebookLM's note, or the case / rule. Class-notes questions show
+// only their "Notes" label (no line), as on the question screen.
 function reviewSourceLine(question, view) {
   const source = isPlainObject(question.source) ? question.source : {};
-  if (view === "notebooklm") { return "NotebookLM · answer checked against the official text (see Basis)"; }
-  const bits = view === "notes" ? ["Class notes", source.file, source.part] : [source.caseTitle, source.grNumber, source.part];
+  if (view === "notebooklm") { return "Answer checked against the official text (see Basis)"; }
+  if (view === "notes") { return ""; }
+  const bits = [source.caseTitle, source.grNumber, source.part];
   return bits.filter(function (x) { return typeof x === "string" && x; }).join(" · ");
 }
 
