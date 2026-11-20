@@ -1,4 +1,673 @@
 {
   "note": "Questions imported from NotebookLM (not an official source), labeled \"From NotebookLM\". Each answer was checked against the official text named in its Basis line. Built by tools/import-notebooklm.py; don't edit by hand.",
-  "questions": []
+  "questions": [
+    {
+      "id": "nq-0001",
+      "type": "essay",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Foreign Investments",
+      "subtopic": "Foreign Investments Act",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Svea Tech AB, a Swedish software company without an SEC license in the Philippines, appointed Manila Data Solutions Inc. as its exclusive Philippine reseller. Under their agreement, Manila Data purchases software licenses from Svea Tech, resells them to local clients under its own corporate name, determines its own retail prices, and assumes all credit risks. Separately, Svea Tech entered into a direct agreement with Luzon Logistics Corp. to design and install an automated warehouse tracking platform in Laguna. Svea Tech engineers spent eight months working on site in Laguna to complete the project. Luzon Logistics accepted the completed platform and paid forty percent of the contract price, but subsequently refused to settle the remaining balance, claiming Svea Tech lacks legal capacity to sue due to its unlicensed status. Svea Tech filed a collection lawsuit against Luzon Logistics in the Regional Trial Court. Decide whether Svea Tech was doing business through (a) the reseller agreement and (b) the direct project contract, and whether its lawsuit against Luzon Logistics should be dismissed.",
+      "suggestedAnswer": {
+        "answer": "Svea Tech was not doing business through the reseller agreement, but it was doing business through the direct project contract. However, its collection lawsuit against Luzon Logistics should not be dismissed.",
+        "legalBasis": "Under the Foreign Investments Act, appointing an independent distributor in the Philippines that trades in its own name and for its own account is explicitly excluded from the definition of doing business. Conversely, executing a service contract that directly fulfills the principal commercial object of a foreign entity within the country constitutes doing business. Although an unlicensed foreign entity engaged in business cannot maintain court actions, a domestic contracting party that accepted performance and reaped benefits is legally barred under the doctrine of estoppel from challenging the foreign entity's capacity to sue.",
+        "application": "Regarding the reseller, Manila Data bought licenses, set its own prices, and bore all credit risk for its own account, placing the arrangement squarely under the statutory exclusion. Regarding the project contract, Svea Tech performed its core technical operations in Laguna for eight months, showing continuous prosecution of its commercial purpose. Nonetheless, because Luzon Logistics contracted directly with Svea Tech, accepted the operational system, paid partial consideration, and continues to utilize the platform, it cannot invoke Svea Tech's lack of license to evade its financial obligation.",
+        "conclusion": "Svea Tech engaged in business solely via the direct project contract. Nevertheless, Luzon Logistics is estopped from asserting Svea Tech's lack of license, allowing the collection lawsuit to proceed.\n\n**Basis:** R.A. No. 7042, Sec. 3(d); Steelcase, Inc. v. Design International Selections, Inc., G.R. No. 171995, April 18, 2012; Magna Ready Mix Concrete Corp. v. Andersen Bjornstad Kane Jacobs, Inc., G.R. No. 196158, January 20, 2021. Checked against the official text: https://www.officialgazette.gov.ph/1991/06/13/republic-act-no-7042/, https://lawphil.net/judjuris/juri2012/apr2012/gr_171995_2012.html, https://lawphil.net/judjuris/juri2021/jan2021/gr_196158_2021.html."
+      },
+      "keyPoints": [
+        "Distributor trading in its own name and account is excluded from doing business",
+        "Direct execution of core business operations over eight months constitutes doing business",
+        "Estoppel prevents a party who derived benefits from invoking lack of corporate license"
+      ]
+    },
+    {
+      "id": "nq-0002",
+      "type": "essay",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Foreign Investments",
+      "subtopic": "Foreign Investments Act",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Global Data Solutions Inc., a newly formed domestic corporation whose equity is one hundred percent owned by American venture capitalists, renders business process outsourcing services exclusively to European corporate clients. To expand its operational base, the company's board of directors approved a resolution to purchase a two-hectare commercial lot in Taguig City where it plans to construct its corporate headquarters. As corporate counsel, advise the board on the legal feasibility of the intended land purchase.",
+      "suggestedAnswer": {
+        "answer": "The intended land acquisition is legally impermissible unless Global Data Solutions Inc. restructures its equity ownership to comply with constitutional restrictions.",
+        "legalBasis": "Under the 1987 Philippine Constitution, ownership of private lands is strictly limited to Philippine citizens or corporations at least sixty percent of whose capital stock is owned by Filipinos. Although a business process outsourcing firm may be one hundred percent foreign-owned because it operates as an export market enterprise, acquiring land triggers the mandatory constitutional cap.",
+        "application": "Because Global Data Solutions Inc. is wholly owned by foreign nationals, it fails to meet the required sixty percent Filipino equity threshold for private land ownership. If the company insists on owning land directly, its foreign shareholders must divest at least sixty percent of their equity holdings to qualified Philippine nationals.",
+        "conclusion": "The company cannot validly purchase the commercial lot while remaining one hundred percent foreign-owned. It must either lease the land or divest equity to achieve sixty percent Filipino ownership.\n\n**Basis:** Constitution, Art. XII, Sec. 7; R.A. No. 7042, Sec. 6; E.O. No. 113 (April 13, 2026), 13th Regular Foreign Investment Negative List, List A, Item 16. Checked against the official text: https://lawphil.net/consti/cons1987.html, https://lawphil.net/executive/execord/eo2026/pdf/eo_113_2026.pdf, https://www.officialgazette.gov.ph/1991/06/13/republic-act-no-7042/."
+      },
+      "keyPoints": [
+        "Export enterprises may be 100% foreign-owned for operational purposes",
+        "Private land acquisition strictly requires 60% Filipino equity ownership",
+        "100% foreign-owned BPOs must lease land or divest equity to purchase real property"
+      ]
+    },
+    {
+      "id": "nq-0003",
+      "type": "essay",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Foreign Investments",
+      "subtopic": "Foreign Investments Act",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "An Austrian inventor intends to organize a domestic market enterprise in Cebu City that will assemble specialized medical sensor equipment. The proposed entity will serve local hospitals and clinics. The foreign investor plans to hold an eighty percent equity stake and contribute an initial paid-in capital equivalent to US$120,000. The enterprise will employ eighteen full-time direct workers, all of them Filipinos. Will the proposed enterprise satisfy Philippine capitalization rules for domestic market enterprises?",
+      "suggestedAnswer": {
+        "answer": "Yes, the proposed domestic market enterprise satisfies the legal capitalization requirements.",
+        "legalBasis": "Under Section 8 of the Foreign Investments Act, as amended by Republic Act No. 11647, small and micro domestic market enterprises with foreign equity exceeding forty percent generally require a minimum paid-in capital of US$200,000. However, the capital floor is reduced to US$100,000 if the enterprise employs a majority of Filipino direct workers, provided the number of Filipino employees is not less than fifteen.",
+        "application": "The Austrian investor seeks an eighty percent foreign equity position in a domestic market enterprise, triggering the capitalization floor. Because all eighteen of its direct workers will be Filipinos (a majority, and not fewer than fifteen), it qualifies for the reduced US$100,000 threshold. The planned capitalization of US$120,000 exceeds this reduced statutory floor.",
+        "conclusion": "The proposed enterprise complies with the Foreign Investments Act capitalization rules and may be registered with eighty percent foreign ownership.\n\n**Basis:** R.A. No. 7042, Sec. 8, as amended by R.A. No. 11647, Sec. 8; E.O. No. 113 (April 13, 2026), 13th Regular Foreign Investment Negative List, List B, Items 6 and 7. Checked against the official text: https://lawphil.net/statutes/repacts/ra2022/ra_11647_2022.html, https://lawphil.net/executive/execord/eo2026/pdf/eo_113_2026.pdf."
+      },
+      "keyPoints": [
+        "Standard capitalization floor for foreign-dominated DMEs is US$200,000",
+        "Capital floor reduces to US$100,000 if employing at least 15 direct Filipino workers",
+        "Paid-in capital of US$120,000 with 18 Filipino employees meets the statutory exception"
+      ]
+    },
+    {
+      "id": "nq-0004",
+      "type": "essay",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Foreign Investments",
+      "subtopic": "Anti-Dummy Law",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Orient Retail Corp. is a domestic corporation operating a chain of small retail stores with a paid-up capital of ₱15,000,000. Foreign investors hold a forty percent equity stake, while Filipino citizens own the remaining sixty percent. The board of directors appointed a Japanese national, who is one of the minority investors, as the corporation's Chief Executive Officer and General Manager. Is the appointment of the foreign national as CEO legally permissible?",
+      "suggestedAnswer": {
+        "answer": "No, the appointment of the foreign national as Chief Executive Officer and General Manager is illegal under the Anti-Dummy Law.",
+        "legalBasis": "Under Section 2-A of Commonwealth Act No. 108 (Anti-Dummy Law), aliens are strictly prohibited from intervening in the management, operation, administration, or control of any corporation engaged in a partially or fully nationalized activity, whether as an officer or employee. The only statutory exceptions are technical personnel authorized by the Secretary of Justice and alien representation on the board of directors in proportion to allowable foreign equity.",
+        "application": "Retail trade enterprises with paid-up capital under ₱25,000,000 are reserved activities where foreign equity is limited to forty percent. Consequently, Orient Retail Corp. is engaged in a partially nationalized activity. Appointing a Japanese citizen as CEO and General Manager constitutes direct foreign intervention in corporate executive management, which violates the statutory prohibition.",
+        "conclusion": "The appointment violates the Anti-Dummy Law. Under Section 2-A, the president, managers or persons in charge of the corporation are criminally liable, and the right, franchise or business enjoyed in violation of the law may be forfeited.\n\n**Basis:** C.A. No. 108, Sec. 2-A; R.A. No. 11595, Sec. 2; E.O. No. 113 (April 13, 2026), 13th Regular Foreign Investment Negative List, List A, Item 14. Checked against the official text: https://lawphil.net/statutes/comacts/ca_108_1936.html, https://lawphil.net/statutes/repacts/ra2021/ra_11595_2021.html, https://lawphil.net/executive/execord/eo2026/pdf/eo_113_2026.pdf."
+      },
+      "keyPoints": [
+        "Retail below ₱25M paid-up capital is a partially nationalized activity",
+        "Anti-Dummy Law prohibits aliens from acting as executive officers in nationalized sectors",
+        "Foreigners may only sit on the board in proportion to equity or serve as DOJ-approved technical staff"
+      ]
+    },
+    {
+      "id": "nq-0005",
+      "type": "essay",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Foreign Investments",
+      "subtopic": "Foreign Investments Act",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Pacific Garments Inc. registered with the SEC as a wholly foreign-owned export market enterprise manufacturing athletic apparel. During its first two years of operations, it exported eighty percent of its total production. However, in its third year, due to shifting international orders, its export sales dropped to forty-five percent of output, while fifty-five percent was sold to domestic retailers. What regulatory actions may the government take against Pacific Garments Inc.?",
+      "suggestedAnswer": {
+        "answer": "The Board of Investments will notify the SEC or DTI, which will order Pacific Garments Inc. to reduce its domestic sales to not more than forty percent of total output, under pain of registration cancellation.",
+        "legalBasis": "Under Section 6 of the Foreign Investments Act, an export enterprise must export at least sixty percent of its total production. If a non-Philippine national export enterprise fails to maintain this ratio, the Board of Investments shall advise the SEC or DTI, which will issue a directive ordering the entity to cap its domestic market sales at forty percent. Unjustified failure to comply with the directive results in registration cancellation.",
+        "application": "Pacific Garments Inc. exported only forty-five percent of its output in its third year, failing to meet the statutory sixty percent threshold. Because it is a non-Philippine national export enterprise that failed the export ratio, the Board of Investments must report it, and the SEC or DTI will order it to bring its domestic sales down to not more than forty percent of its total production.",
+        "conclusion": "The SEC or DTI will order the company to restrict domestic sales to forty percent or less. Continued non-compliance will lead to cancellation of its corporate registration.\n\n**Basis:** R.A. No. 7042, Secs. 3(e) and 6, as amended by R.A. No. 11647, Sec. 7. Checked against the official text: https://www.officialgazette.gov.ph/1991/06/13/republic-act-no-7042/, https://lawphil.net/statutes/repacts/ra2022/ra_11647_2022.html."
+      },
+      "keyPoints": [
+        "Export market enterprises must export at least 60% of total output",
+        "Failure to meet export ratio requires capping domestic sales at 40%",
+        "Non-compliance with the domestic sales restriction leads to registration cancellation"
+      ]
+    },
+    {
+      "id": "nq-0006",
+      "type": "essay",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Foreign Investments",
+      "subtopic": "Foreign Investments Act",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Atlas Holdings LLC, a Delaware corporation not licensed in the Philippines, purchased thirty percent of the outstanding voting shares of Manila Mining Corp., an SEC-registered domestic company. Atlas Holdings exercised its voting rights during the annual stockholders' meeting and designated a nominee director to represent its investment on the board. Local shareholders filed a petition before the SEC seeking to annul the share acquisition, alleging that Atlas Holdings is doing business in the Philippines without a license. Rule on the petition.",
+      "suggestedAnswer": {
+        "answer": "The petition should be dismissed because Atlas Holdings LLC is not doing business in the Philippines.",
+        "legalBasis": "Section 3(d) of the Foreign Investments Act explicitly provides that mere investment as a shareholder in a domestic corporation duly registered to do business, the exercise of investor rights, and having a nominee director to represent investment interests do not constitute doing business.",
+        "application": "Atlas Holdings LLC merely acquired minority equity, voted its shares at a corporate meeting, and placed a nominee director on the board. These acts fall squarely under the statutory exclusions of Section 3(d) and do not manifest continuous commercial dealings or pursuit of core business operations locally.",
+        "conclusion": "The acquisition of shares and exercise of shareholder rights are legally valid. Atlas Holdings LLC was not required to obtain an SEC license.\n\n**Basis:** R.A. No. 7042, Sec. 3(d). Checked against the official text: https://www.officialgazette.gov.ph/1991/06/13/republic-act-no-7042/."
+      },
+      "keyPoints": [
+        "Passive stock investment in a domestic firm is excluded from doing business",
+        "Exercising shareholder voting rights does not require an SEC license",
+        "Designating a nominee director is an excluded activity under Section 3(d)"
+      ]
+    },
+    {
+      "id": "nq-0007",
+      "type": "essay",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Foreign Investments",
+      "subtopic": "Nationality of Corporations",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Apex Mining Corp. applied for a mineral production sharing agreement covering a gold concession in Surigao. Apex's capital stock is owned sixty percent by HoldCo Inc. and forty percent by Canadian Metals Inc. HoldCo Inc.'s capital stock is owned sixty percent by Filipino citizens and forty percent by Canadian nationals. A competing claimant asserted that Apex fails to meet the sixty percent Filipino equity rule under the Grandfather Rule because actual Filipino equity is only thirty-six percent (60% of 60%). How should corporate nationality be determined in this case?",
+      "suggestedAnswer": {
+        "answer": "Under the Control Test, Apex Mining Corp. is deemed a Philippine national. However, if doubt exists regarding the genuine ownership due to corporate layering or foreign financing, the Grandfather Rule applies as a secondary test.",
+        "legalBasis": "Under the Foreign Investments Act and Supreme Court doctrine in Narra Nickel, the Control Test is the primary rule for determining corporate nationality: if a corporate shareholder is at least sixty percent Filipino-owned, its entire shareholding is counted as Filipino. However, when doubt arises as to the true percentage of Filipino equity, the Grandfather Rule applies to trace actual indirect beneficial ownership.",
+        "application": "Applying the Control Test, HoldCo Inc. is sixty percent Filipino-owned, making it a Philippine national whose entire sixty percent interest in Apex counts as Filipino. Thus, Apex satisfies the sixty percent requirement on paper. Nevertheless, because corporate layering is present, if evidence shows that Canadian capital funded the Filipino holdings, the Grandfather Rule will be applied, yielding only thirty-six percent actual Filipino equity (60% x 60%), disqualifying Apex.",
+        "conclusion": "The Control Test applies initially to establish Filipino nationality, but if corporate layering or foreign control is shown to create doubt, the Grandfather Rule applies to disqualify the entity.\n\n**Basis:** R.A. No. 7042, Sec. 3(a); Narra Nickel Mining and Development Corp. v. Redmont Consolidated Mines Corp., G.R. No. 195580, April 21, 2014. Checked against the official text: https://lawphil.net/judjuris/juri2014/apr2014/gr_195580_2014.html, https://www.officialgazette.gov.ph/1991/06/13/republic-act-no-7042/."
+      },
+      "keyPoints": [
+        "Control Test treats a 60% Filipino-owned corporate shareholder as 100% Filipino",
+        "Grandfather Rule mathematically traces actual equity across corporate tiers",
+        "Grandfather Rule applies as a backstop when 60-40 ownership is in doubt due to layering"
+      ]
+    },
+    {
+      "id": "nq-0008",
+      "type": "essay",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Foreign Investments",
+      "subtopic": "Foreign Investments Act",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Vanguard Engineering LLC, an unlicensed foreign corporation organized in California, entered into a single contract with Davao Power Corp. to design a specialized biomass turbine facility in Davao City. Vanguard performed the engineering design and oversaw installation over four months. Davao Power accepted the plant but defaulted on the final installment of US$200,000. When Vanguard filed a collection action, Davao Power moved to dismiss on the ground that Vanguard was doing business without a license and thus lacked legal capacity to sue. Vanguard argued that a single contract constitutes an isolated transaction. How should the court resolve the motion?",
+      "suggestedAnswer": {
+        "answer": "The court should deny the motion to dismiss because Davao Power Corp. is estopped from challenging Vanguard's capacity to sue.",
+        "legalBasis": "A foreign entity that enters into a single contract directly performing the primary commercial purpose for which it was organized is doing business, rather than engaging in an isolated transaction. Although an unlicensed foreign entity doing business lacks capacity to sue, a domestic entity that contracted with it and enjoyed the benefit of performance is legally estopped from invoking that defense.",
+        "application": "Vanguard's single engineering engagement constituted doing business because designing biomass facilities is its core commercial purpose executed locally over four months. Consequently, Vanguard did business without a license. However, because Davao Power received full performance of the turbine design and utilized the facility, it cannot invoke Vanguard's unlicensed status to escape payment.",
+        "conclusion": "The motion to dismiss must be denied under the doctrine of estoppel, allowing Vanguard's collection action to proceed.\n\n**Basis:** Magna Ready Mix Concrete Corp. v. Andersen Bjornstad Kane Jacobs, Inc., G.R. No. 196158, January 20, 2021; R.A. No. 11232 (Revised Corporation Code), Sec. 150. Checked against the official text: https://lawphil.net/judjuris/juri2021/jan2021/gr_196158_2021.html, https://lawphil.net/statutes/repacts/ra2019/ra_11232_2019.html."
+      },
+      "keyPoints": [
+        "A single contract fulfilling core business purpose constitutes doing business",
+        "Number of transactions is mere evidence; nature of the act governs",
+        "A party who benefited from a contract is estopped from denying the foreign firm's capacity to sue"
+      ]
+    },
+    {
+      "id": "nq-0009",
+      "type": "essay",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Foreign Investments",
+      "subtopic": "Foreign Investment Negative List",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "In June 2026, two months after the promulgation of the 13th Regular Foreign Investment Negative List under Executive Order No. 113, Congress passed a statute opening private security agencies to forty percent foreign equity. Simultaneously, the Department of Economy, Planning, and Development recommended adding new commercial activities to List B to protect local small businesses. When may the President legally amend List A and List B to reflect these changes?",
+      "suggestedAnswer": {
+        "answer": "The President may amend List A immediately, but must wait at least two years from the last issuance before amending List B.",
+        "legalBasis": "Under Section 8 of the Foreign Investments Act and Section 2 of Executive Order No. 113 (series of 2026), amendments to Negative List A may be made at any time to reflect legislative changes in specific laws. Conversely, amendments to Negative List B cannot be made more frequently than once every two years.",
+        "application": "The change regarding private security agencies stems from an act of Congress modifying a specific law, allowing an immediate amendment to List A. In contrast, the proposal to add activities to List B is an administrative policy recommendation, which is bound by the strict two-year statutory interval following the promulgation of the 13th RFINL in April 2026.",
+        "conclusion": "List A can be amended right away to reflect the new statute, while List B cannot be amended until two years after the 13th RFINL (that is, not before about April 2028).\n\n**Basis:** E.O. No. 113 (April 13, 2026), 13th Regular Foreign Investment Negative List, Sec. 2; R.A. No. 7042, Sec. 8, as amended by R.A. No. 11647. Checked against the official text: https://lawphil.net/executive/execord/eo2026/pdf/eo_113_2026.pdf, https://lawphil.net/statutes/repacts/ra2022/ra_11647_2022.html."
+      },
+      "keyPoints": [
+        "List A reflects constitutional and statutory limits and may be amended at any time",
+        "List B protects national security, health, and SMEs and is capped at biennial amendments",
+        "Administrative policy changes to List B must respect the mandatory two-year interval"
+      ]
+    },
+    {
+      "id": "nq-0010",
+      "type": "essay",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Foreign Investments",
+      "subtopic": "Foreign Investment Negative List",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Solaris Energy GmbH, a German corporation, filed an application with the Department of Energy to construct and operate a 100-megawatt solar power farm in Tarlac with one hundred percent foreign equity. An association of domestic energy producers opposed the application, arguing that solar power generation involves the utilization of natural resources, which is constitutionally restricted to sixty percent Filipino-owned entities. Is the opposition legally tenable?",
+      "suggestedAnswer": {
+        "answer": "No, the opposition is legally untenable because renewable energy generation is open to one hundred percent foreign equity.",
+        "legalBasis": "List A, Item 15 of the 13th Regular Foreign Investment Negative List limits the exploration, development and utilization of natural resources to forty percent foreign equity, but expressly excepts renewable energy such as solar, wind, hydro and ocean or tidal energy, where full foreign participation is allowed (citing DOJ Opinion No. 21, s. 2022, and DOE Department Circular No. DC2022-11-0034).",
+        "application": "As summarized in the 13th RFINL, DOJ Opinion No. 21 considers solar, wind, hydro and ocean or tidal energy sources to be beyond the term \"natural resources\" in Section 2, Article XII of the Constitution, and reads \"all forces of potential energy\" in its technical sense, which excludes kinetic energy. Solar power generation therefore falls outside the forty percent cap. Note that this rests on an executive opinion and a DOE circular, not on a statute or a Supreme Court ruling, so check whether it has been challenged or changed.",
+        "conclusion": "Solaris Energy GmbH may legally construct and operate the solar power farm with one hundred percent foreign equity.\n\n**Basis:** E.O. No. 113 (April 13, 2026), 13th Regular Foreign Investment Negative List, List A, Item 15 and footnote 9 (DOJ Opinion No. 21, s. 2022; DOE Department Circular No. DC2022-11-0034). Checked against the official text: https://lawphil.net/executive/execord/eo2026/pdf/eo_113_2026.pdf."
+      },
+      "keyPoints": [
+        "Renewable energy generation (solar, wind, hydro) is exempt from the 40% foreign equity cap",
+        "DOJ Opinion No. 21 (s. 2022) and DOE Circular DC2022-11-0034 permit 100% foreign equity",
+        "Reflected under List A, Item 15 of the 13th Regular Foreign Investment Negative List"
+      ]
+    },
+    {
+      "id": "nq-0011",
+      "type": "essay",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Foreign Investments",
+      "subtopic": "Public Service Act and FINL",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Global Telco Pte. Ltd., a Singaporean corporation, intends to acquire seventy percent of the capital stock of a licensed telecommunications operator in Manila. The National Telecommunications Commission requested legal guidance on whether the transaction complies with foreign equity limitations, noting that Singapore law permits Philippine nationals to hold up to one hundred percent equity in Singaporean telecommunications firms. Advise the NTC.",
+      "suggestedAnswer": {
+        "answer": "The acquisition of seventy percent foreign equity is legally permissible because Singapore accords reciprocity to Philippine nationals.",
+        "legalBasis": "Under Section 25 of Republic Act No. 11659 and Item 25 of List A of the 13th Regular Foreign Investment Negative List, foreign nationals may hold up to one hundred percent equity in telecommunications entities if their home country accords reciprocity to Philippine nationals. In the absence of reciprocity, foreign equity is capped at fifty percent.",
+        "application": "Telecommunications is no longer classified as a public utility under R.A. No. 11659, removing the constitutional sixty percent Filipino ownership requirement. It is, however, critical infrastructure under Section 3(e) of R.A. No. 11659, so the reciprocity clause of Section 25 applies. Because Singapore law allows Philippine citizens to hold one hundred percent equity in its telecommunications sector, the statutory reciprocity condition is satisfied, permitting Global Telco Pte. Ltd. to acquire seventy percent equity.",
+        "conclusion": "The NTC should approve the acquisition as it complies with the statutory reciprocity rule under R.A. No. 11659.\n\n**Basis:** R.A. No. 11659, Secs. 3(e) and 25; E.O. No. 113 (April 13, 2026), 13th Regular Foreign Investment Negative List, List A, Item 25. Checked against the official text: https://lawphil.net/statutes/repacts/ra2022/ra_11659_2022.html, https://lawphil.net/executive/execord/eo2026/pdf/eo_113_2026.pdf."
+      },
+      "keyPoints": [
+        "Telecommunications is excluded from the definition of public utility under R.A. 11659",
+        "Foreign equity in telecommunications can reach 100% if reciprocity is granted",
+        "Without reciprocity, foreign equity in telecommunications is capped at 50%"
+      ]
+    },
+    {
+      "id": "nq-0012",
+      "type": "essay",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Foreign Investments",
+      "subtopic": "Anti-Dummy Law",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Pacific Coast Mining Inc. is a domestic corporation engaged in large-scale mineral exploration with a 60-40 Filipino-foreign equity structure. Its board of directors consists of ten seats. During the annual stockholders' meeting, the foreign minority shareholders voted collectively and elected four foreign nationals to the board. A Filipino shareholder challenged the election, claiming that allowing four foreigners on the board violates the Anti-Dummy Law. Is the election valid?",
+      "suggestedAnswer": {
+        "answer": "Yes, the election of four foreign directors is valid and legal.",
+        "legalBasis": "Section 2-A of Commonwealth Act No. 108 (Anti-Dummy Law) explicitly allows the election of aliens as members of the board of directors of corporations engaged in partially nationalized activities, provided their representation is in proportion to their allowable share in the capital.",
+        "application": "In a 60-40 corporate structure, foreign shareholders hold forty percent of the equity. Allocating four out of ten board seats (forty percent) to foreign directors reflects exact mathematical proportionality to their equity stake.",
+        "conclusion": "The election of four foreign directors complies with the Anti-Dummy Law and is completely valid.\n\n**Basis:** C.A. No. 108, Sec. 2-A (last proviso). Checked against the official text: https://lawphil.net/statutes/comacts/ca_108_1936.html."
+      },
+      "keyPoints": [
+        "Aliens may sit on corporate boards of partially nationalized firms",
+        "Board representation must strictly mirror allowable foreign equity proportion",
+        "Four out of ten board seats corresponds exactly to a 40% foreign equity stake"
+      ]
+    },
+    {
+      "id": "nq-0013",
+      "type": "essay",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Foreign Investments",
+      "subtopic": "Foreign Investments Act",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "To assist a Filipino entrepreneur in establishing a agricultural processing facility, a Japanese investor provided a US$500,000 long-term loan secured by a chattel mortgage over the machinery. The agreement contained no option to convert the debt into corporate shares. A competing business filed a complaint with the DTI alleging that the loan constitutes an illegal foreign equity investment in a domestic enterprise. Evaluate the complaint.",
+      "suggestedAnswer": {
+        "answer": "The complaint should be dismissed because a loan agreement constitutes a debt instrument, not a foreign equity investment.",
+        "legalBasis": "Under Section 3(c) of the Foreign Investments Act, a foreign investment is defined specifically as an equity investment made by a non-Philippine national. A loan or bond represents a creditor-debtor relationship and does not confer equity ownership or voting rights.",
+        "application": "The US$500,000 extended by the Japanese investor is a debt obligation secured by a chattel mortgage. Because it confers no equity stake or corporate control, it does not count against foreign ownership limits.",
+        "conclusion": "Extending a loan does not constitute a foreign equity investment under R.A. No. 7042, and the complaint lacks legal merit.\n\n**Basis:** R.A. No. 7042, Sec. 3(b) and (c), as amended by R.A. No. 11647, Sec. 2. Checked against the official text: https://www.officialgazette.gov.ph/1991/06/13/republic-act-no-7042/, https://lawphil.net/statutes/repacts/ra2022/ra_11647_2022.html."
+      },
+      "keyPoints": [
+        "Foreign investment under R.A. 7042 is strictly defined as an equity investment",
+        "Loans and bonds create debt obligations rather than equity ownership",
+        "Providing loan capital does not violate foreign equity caps"
+      ]
+    },
+    {
+      "id": "nq-0014",
+      "type": "essay",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Foreign Investments",
+      "subtopic": "Foreign Investments Act",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "A foreign investor was informed by a consultant that before starting operations for a software development business in Makati that will sell only to local clients, it must first obtain approval and registration from the Board of Investments (BOI). Is the consultant's advice legally accurate?",
+      "suggestedAnswer": {
+        "answer": "No, the consultant's advice is legally inaccurate.",
+        "legalBasis": "Under Section 5 of the Foreign Investments Act, as amended, a non-Philippine national may do business upon registration with the SEC (or the DTI for a single proprietorship), without need of prior approval. Registration with the Board of Investments is required of an enterprise seeking incentives under the Omnibus Investment Code, and, under Section 6, of an export enterprise that is a non-Philippine national.",
+        "application": "Because the business will sell only to local clients, it is a domestic market enterprise, not an export enterprise, so Section 6 does not apply to it. It needs SEC registration to operate; BOI registration would matter only if it wants investment incentives.",
+        "conclusion": "The advice is wrong for this business: BOI registration is not a prerequisite to doing business here. (It would be required if the business were a foreign-owned export enterprise.)\n\n**Basis:** R.A. No. 7042, Secs. 5 and 6, as amended by R.A. No. 11647, Secs. 6 and 7. Checked against the official text: https://www.officialgazette.gov.ph/1991/06/13/republic-act-no-7042/, https://lawphil.net/statutes/repacts/ra2022/ra_11647_2022.html."
+      },
+      "keyPoints": [
+        "SEC/DTI registration grants authority to operate a business",
+        "BOI/PEZA registration grants fiscal incentives, not authority to operate",
+        "Foreign investors do not need BOI approval merely to establish a business"
+      ]
+    },
+    {
+      "id": "nq-0015",
+      "type": "mcq",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Foreign Investments",
+      "subtopic": "Foreign Investments Act",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Under the Foreign Investments Act of 1991, what minimum percentage of total output must a manufacturing enterprise export to be classified as an Export Market Enterprise?",
+      "choices": {
+        "A": "Fifty percent (50%)",
+        "B": "Sixty percent (60%)",
+        "C": "Seventy percent (70%)",
+        "D": "Eighty percent (80%)"
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** Section 3(e) of R.A. No. 7042 defines an export enterprise as one that exports sixty percent (60%) or more of its output. **A is wrong:** Fifty percent is below the statutory threshold. **C is wrong:** The Foreign Investments Act sets the line at sixty percent, not seventy. **D is wrong:** Eighty percent exceeds the minimum statutory requirement.\n\n**Basis:** R.A. No. 7042, Sec. 3(e). Checked against the official text: https://www.officialgazette.gov.ph/1991/06/13/republic-act-no-7042/."
+    },
+    {
+      "id": "nq-0016",
+      "type": "mcq",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Foreign Investments",
+      "subtopic": "Foreign Investments Act",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "What is the general minimum paid-in equity capital required for a foreign national to hold more than forty percent equity in a small domestic market enterprise?",
+      "choices": {
+        "A": "US$100,000",
+        "B": "US$150,000",
+        "C": "US$200,000",
+        "D": "US$250,000"
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** Under Section 8 of R.A. No. 7042, as amended, micro and small domestic market enterprises with paid-in equity capital of less than US$200,000 are reserved to Philippine nationals, so a foreigner may hold more than forty percent only if the paid-in capital is at least US$200,000. **A is wrong:** US$100,000 is the reduced capital floor for qualified entities meeting specific statutory conditions. **B is wrong:** US$150,000 is not a statutory threshold under the FIA. **D is wrong:** US$250,000 exceeds the statutory baseline.\n\n**Basis:** R.A. No. 7042, Sec. 8, as amended by R.A. No. 11647, Sec. 8. Checked against the official text: https://lawphil.net/statutes/repacts/ra2022/ra_11647_2022.html."
+    },
+    {
+      "id": "nq-0017",
+      "type": "mcq",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Foreign Investments",
+      "subtopic": "Foreign Investment Negative List",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "How frequently may Negative List B of the Regular Foreign Investment Negative List be amended under the law?",
+      "choices": {
+        "A": "At any time upon Presidential decree",
+        "B": "Not more than once every two (2) years",
+        "C": "Annually upon DTI recommendation",
+        "D": "Every three (3) years coinciding with congressional elections"
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** Section 8 of R.A. No. 7042 and Section 2 of E.O. No. 113 provide that amendments to Negative List B shall not be made more often than once every two (2) years. **A is wrong:** List A may be amended at any time to reflect legislative changes, but List B is capped at biennial updates. **C is wrong:** Annual updates are not permitted for List B. **D is wrong:** Three years is not the statutory interval.\n\n**Basis:** E.O. No. 113 (April 13, 2026), 13th Regular Foreign Investment Negative List, Sec. 2; R.A. No. 7042, Sec. 8, as amended. Checked against the official text: https://lawphil.net/executive/execord/eo2026/pdf/eo_113_2026.pdf, https://lawphil.net/statutes/repacts/ra2022/ra_11647_2022.html."
+    },
+    {
+      "id": "nq-0018",
+      "type": "mcq",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Foreign Investments",
+      "subtopic": "Foreign Investment Negative List",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Under List A of the 13th Regular Foreign Investment Negative List, what is the maximum allowable foreign equity in mass media enterprises, excluding recording?",
+      "choices": {
+        "A": "Zero percent (0%)",
+        "B": "Twenty-five percent (25%)",
+        "C": "Thirty percent (30%)",
+        "D": "Forty percent (40%)"
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** Article XVI, Section 11(1) of the Constitution and List A (Item 1) of E.O. No. 113 limit the ownership and management of mass media to Filipino citizens or to entities wholly owned and managed by them, so no foreign equity is allowed (recording and internet business are excepted in the list). **B is wrong:** 25% applies to private recruitment and defense construction contracts. **C is wrong:** 30% applies to advertising. **D is wrong:** 40% applies to private lands, public utilities, and educational institutions.\n\n**Basis:** Constitution, Art. XVI, Sec. 11; E.O. No. 113 (April 13, 2026), 13th Regular Foreign Investment Negative List, List A, Items 1, 11–13 and 16–18. Checked against the official text: https://lawphil.net/consti/cons1987.html, https://lawphil.net/executive/execord/eo2026/pdf/eo_113_2026.pdf."
+    },
+    {
+      "id": "nq-0019",
+      "type": "mcq",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Foreign Investments",
+      "subtopic": "Foreign Investment Negative List",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "What is the maximum foreign equity participation permitted in an advertising agency operating in the Philippines?",
+      "choices": {
+        "A": "Zero percent (0%)",
+        "B": "Twenty-five percent (25%)",
+        "C": "Thirty percent (30%)",
+        "D": "Forty percent (40%)"
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** Under Article XVI, Section 11(2) of the Constitution and List A (Item 13) of E.O. No. 113, foreign equity in advertising is capped at thirty percent (30%). **A is wrong:** 0% applies to mass media and cooperatives. **B is wrong:** 25% applies to recruitment agencies. **D is wrong:** 40% applies to natural resource exploration and public utilities.\n\n**Basis:** Constitution, Art. XVI, Sec. 11 (second paragraph); E.O. No. 113 (April 13, 2026), 13th Regular Foreign Investment Negative List, List A, Item 13. Checked against the official text: https://lawphil.net/consti/cons1987.html, https://lawphil.net/executive/execord/eo2026/pdf/eo_113_2026.pdf."
+    },
+    {
+      "id": "nq-0020",
+      "type": "mcq",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Foreign Investments",
+      "subtopic": "Retail Trade Liberalization",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Under Republic Act No. 11595, as reflected in the 13th RFINL, what is the minimum paid-up capital required for a foreign-owned retail trade enterprise?",
+      "choices": {
+        "A": "₱10,000,000.00",
+        "B": "₱15,000,000.00",
+        "C": "₱25,000,000.00",
+        "D": "₱50,000,000.00"
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** Section 2 of R.A. No. 11595 set the minimum paid-up capital for foreign-owned retail enterprises at ₱25,000,000.00. Retail below this threshold is restricted to 40% foreign equity under List A (Item 14). **A is wrong:** ₱10 Million is the minimum investment required per physical store, not the corporate paid-up capital floor. **B is wrong:** ₱15 Million is incorrect. **D is wrong:** ₱50 million is not a threshold in the law as amended.\n\n**Basis:** R.A. No. 11595, Sec. 2 (amending R.A. No. 8762, Sec. 5); E.O. No. 113 (April 13, 2026), 13th Regular Foreign Investment Negative List, List A, Item 14. Checked against the official text: https://lawphil.net/statutes/repacts/ra2021/ra_11595_2021.html, https://lawphil.net/executive/execord/eo2026/pdf/eo_113_2026.pdf."
+    },
+    {
+      "id": "nq-0021",
+      "type": "mcq",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Foreign Investments",
+      "subtopic": "Anti-Dummy Law",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Which foreign position is legally exempt from the general prohibition against aliens working in nationalized industries under the Anti-Dummy Law?",
+      "choices": {
+        "A": "Corporate Secretary",
+        "B": "Chief Financial Officer",
+        "C": "Technical personnel authorized by the Secretary of Justice",
+        "D": "Human Resources Director"
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** Section 2-A of Commonwealth Act No. 108 explicitly exempts technical personnel whose employment is specifically authorized by the Secretary of Justice. **A, B, and D are wrong:** Aliens cannot hold executive or managerial offices in nationalized or partially nationalized corporations.\n\n**Basis:** C.A. No. 108, Sec. 2-A. Checked against the official text: https://lawphil.net/statutes/comacts/ca_108_1936.html."
+    },
+    {
+      "id": "nq-0022",
+      "type": "mcq",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Foreign Investments",
+      "subtopic": "Nationality of Corporations",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "What minimum percentage of voting stock in a domestic corporation must be owned by Filipino citizens for the corporation to be classified as a Philippine National under the Foreign Investments Act?",
+      "choices": {
+        "A": "Fifty percent (50%)",
+        "B": "Fifty-one percent (51%)",
+        "C": "Sixty percent (60%)",
+        "D": "Seventy-five percent (75%)"
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** Section 3(a) of R.A. No. 7042 defines a Philippine National as a corporation organized under Philippine law of which at least sixty percent (60%) of the capital stock outstanding and entitled to vote is held by Filipino citizens. **A and B are wrong:** 50% or 51% does not satisfy the statutory majority threshold. **D is wrong:** the law requires at least 60%, not 75%.\n\n**Basis:** R.A. No. 7042, Sec. 3(a), as amended by R.A. No. 8179. Checked against the official text: https://www.officialgazette.gov.ph/1991/06/13/republic-act-no-7042/."
+    },
+    {
+      "id": "nq-0023",
+      "type": "mcq",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Foreign Investments",
+      "subtopic": "Foreign Investments Act",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "A foreign entity appoints a representative who stays in the Philippines during a calendar year. What cumulative duration of stay causes the representative to be deemed doing business under R.A. 7042?",
+      "choices": {
+        "A": "Ninety (90) days or more",
+        "B": "One hundred twenty (120) days or more",
+        "C": "One hundred eighty (180) days or more",
+        "D": "Three hundred sixty-five (365) days"
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** Section 3(d) of R.A. No. 7042 provides that appointing representatives who stay in the country for periods totaling 180 days or more in any calendar year constitutes doing business. **A and B are wrong:** 90 and 120 days fall below the statutory 180-day threshold. **D is wrong:** Continuous stay for a full year is not required; the test is cumulative days within a calendar year.\n\n**Basis:** R.A. No. 7042, Sec. 3(d). Checked against the official text: https://www.officialgazette.gov.ph/1991/06/13/republic-act-no-7042/."
+    },
+    {
+      "id": "nq-0024",
+      "type": "mcq",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Foreign Investments",
+      "subtopic": "Foreign Investments Act",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Which of the following activities is EXCLUDED from the statutory definition of doing business under the Foreign Investments Act?",
+      "choices": {
+        "A": "Soliciting orders and service contracts locally",
+        "B": "Appointing a local distributor that transacts business in its own name and for its own account",
+        "C": "Opening a branch office or liaison office in Manila",
+        "D": "Participating in the management and control of a domestic firm"
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** Section 3(d) explicitly excludes appointing a representative or distributor domiciled in the Philippines that transacts business in its own name and for its own account. **A, C, and D are wrong:** These activities are explicitly included in the statutory definition of doing business.\n\n**Basis:** R.A. No. 7042, Sec. 3(d); Steelcase, Inc. v. Design International Selections, Inc., G.R. No. 171995, April 18, 2012. Checked against the official text: https://www.officialgazette.gov.ph/1991/06/13/republic-act-no-7042/, https://lawphil.net/judjuris/juri2012/apr2012/gr_171995_2012.html."
+    },
+    {
+      "id": "nq-0025",
+      "type": "mcq",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Foreign Investments",
+      "subtopic": "Foreign Investment Negative List",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "What is the maximum allowable foreign equity participation in private security agencies under List A of the 13th RFINL?",
+      "choices": {
+        "A": "Zero percent (0%)",
+        "B": "Twenty-five percent (25%)",
+        "C": "Forty percent (40%)",
+        "D": "One hundred percent (100%)"
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** Section 4 of R.A. No. 11917 and List A (Item 4) of E.O. No. 113 allow only Filipino citizens or entities wholly owned and controlled by Filipino citizens to organize a private security agency, so no foreign equity is allowed. **B is wrong:** 25% applies to recruitment agencies. **C is wrong:** 40% applies to public utilities and land. **D is wrong:** Full foreign ownership is prohibited.\n\n**Basis:** R.A. No. 11917, Sec. 4; E.O. No. 113 (April 13, 2026), 13th Regular Foreign Investment Negative List, List A, Item 4. Checked against the official text: https://lawphil.net/statutes/repacts/ra2022/ra_11917_2022.html, https://lawphil.net/executive/execord/eo2026/pdf/eo_113_2026.pdf."
+    },
+    {
+      "id": "nq-0026",
+      "type": "mcq",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Foreign Investments",
+      "subtopic": "Foreign Investments Act",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Under R.A. 11647, which condition allows a small domestic market enterprise with over 40% foreign equity to operate with a reduced paid-in capital of US$100,000?",
+      "choices": {
+        "A": "Exporting at least thirty percent of its total production",
+        "B": "Employing a majority of Filipino direct workers, provided they number at least fifteen (15)",
+        "C": "Establishing physical retail branches in at least three major cities",
+        "D": "Investing exclusively in real estate acquisition"
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** Section 8 of R.A. No. 7042, as amended by R.A. No. 11647, lowers the US$200,000 capital floor to US$100,000 if the enterprise employs a majority of Filipino direct employees, with a minimum of 15 workers. **A, C, and D are wrong:** These are not statutory grounds for the reduced US$100,000 threshold.\n\n**Basis:** R.A. No. 7042, Sec. 8, as amended by R.A. No. 11647, Sec. 8. Checked against the official text: https://lawphil.net/statutes/repacts/ra2022/ra_11647_2022.html."
+    },
+    {
+      "id": "nq-0028",
+      "type": "mcq",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Foreign Investments",
+      "subtopic": "Public Service Act and FINL",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "What is the maximum allowable foreign equity in a telecommunications entity under R.A. 11659 if the investor's home country does NOT grant reciprocity to Filipinos?",
+      "choices": {
+        "A": "Zero percent (0%)",
+        "B": "Forty percent (40%)",
+        "C": "Fifty percent (50%)",
+        "D": "One hundred percent (100%)"
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** Section 25 of R.A. No. 11659 and List A (Item 25) of E.O. No. 113 state that foreign equity in telecommunications is capped at fifty percent (50%) in the absence of reciprocity. **A and B are wrong:** 0% and 40% are incorrect limits under the amended Public Service Act. **D is wrong:** 100% foreign equity requires proof of reciprocity.\n\n**Basis:** R.A. No. 11659, Sec. 25; E.O. No. 113 (April 13, 2026), 13th Regular Foreign Investment Negative List, List A, Item 25. Checked against the official text: https://lawphil.net/statutes/repacts/ra2022/ra_11659_2022.html, https://lawphil.net/executive/execord/eo2026/pdf/eo_113_2026.pdf."
+    },
+    {
+      "id": "nq-0029",
+      "type": "fillblank",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Foreign Investments",
+      "subtopic": "Foreign Investments Act",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "e) The term “export enterprise” shall mean an enterprise wherein a manufacturer, processor or service (including tourism) enterprise exports ____ or more of its output, or wherein a trader purchases products domestically and exports ____ or more of such purchases;",
+      "fullText": "e) The term “export enterprise” shall mean an enterprise wherein a manufacturer, processor or service (including tourism) enterprise exports sixty percent (60%) or more of its output, or wherein a trader purchases products domestically and exports sixty percent (60%) or more of such purchases;",
+      "explanation": "Both blanks are \"sixty percent (60%)\": the same export ratio applies to a manufacturer, processor or service enterprise (measured against its output) and to a trader (measured against its domestic purchases). An enterprise below that line is a domestic market enterprise under Sec. 3(f).\n\n**Basis:** R.A. No. 7042, Sec. 3(e). Checked against the official text: https://www.officialgazette.gov.ph/1991/06/13/republic-act-no-7042/."
+    },
+    {
+      "id": "nq-0030",
+      "type": "fillblank",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Foreign Investments",
+      "subtopic": "Foreign Investment Negative List",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Section 2. Amendments. Amendments to Negative List A may be made at any time to reflect changes instituted in specific laws, while amendments to Negative List B shall not be made more often than ____, pursuant to Section 8 of RA No. 7042, as amended, and its Implementing Rules and Regulations.",
+      "fullText": "Section 2. Amendments. Amendments to Negative List A may be made at any time to reflect changes instituted in specific laws, while amendments to Negative List B shall not be made more often than once every two (2) years, pursuant to Section 8 of RA No. 7042, as amended, and its Implementing Rules and Regulations.",
+      "explanation": "List A follows changes in the Constitution and specific laws, so it may be amended whenever such a law changes; List B may be amended only once every two (2) years.\n\n**Basis:** E.O. No. 113 (April 13, 2026), 13th Regular Foreign Investment Negative List, Sec. 2. Checked against the official text: https://lawphil.net/executive/execord/eo2026/pdf/eo_113_2026.pdf."
+    }
+  ]
 }
