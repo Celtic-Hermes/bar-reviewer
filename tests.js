@@ -5,6 +5,7 @@
 // (progress.tests, see cleanTests in progress.js); it shows in Unfinished.
 // Step 3: tapping an unfinished test opens it (openTest): one question at a time, answers never
 // shown, every answer and her place saved in the test at once. Nothing counts yet (that's at submit).
+// Step 4: Flag and the question map.
 // Uses things from app.js: currentSubject, sourceView, questionsFor, topicsFor, subtopicsFor,
 // inSubtopic, subtopicLabel, OTHER_SUBTOPIC, FB_LEVELS, FB_LEVEL_LABELS, countLabel,
 // modeCountLabel, viewSuffix, shuffled, askConfirm, showScreen, openSubject, setIconLabel;
@@ -488,6 +489,7 @@ function openTest(id) {
     " no longer in the app and " + (dropped === 1 ? "was" : "were") + " taken out of this test.";
   note.hidden = dropped === 0;
   currentTestId = test.id;
+  setTestMapOpen(false);
   showTestQuestion();
   return true;
 }
@@ -518,6 +520,7 @@ function showTestQuestion() {
   document.getElementById("test-fb-note").hidden = true;
   if (isMcq) { showTestMcq(test, question); } else { showTestFillBlank(test, question); }
 
+  showTestTools(test);
   document.getElementById("test-prev").disabled = test.index === 0;
   document.getElementById("test-next").disabled = isLast;   // End test comes in a later step
   document.getElementById("test-last-note").hidden = !isLast;
@@ -549,6 +552,7 @@ function showTestMcq(test, question) {
       test.answers[question.id] = letter;
       saveProgress();
       showTestPick(letter);
+      showTestTools(test);  // an open map shows it as answered
     });
     box.appendChild(button);
   });
@@ -669,6 +673,8 @@ document.getElementById("test-prompt").addEventListener("input", function (event
   if (box.value === "") { delete typed[box.dataset.word]; } else { typed[box.dataset.word] = box.value.slice(0, 200); }
   if (Object.keys(typed).length === 0) { delete test.answers[id]; } else { test.answers[id] = typed; }
   saveProgress();
+  const wasOpen = !document.getElementById("test-map").hidden;
+  if (wasOpen) { showTestMap(test); }
 });
 
 // Return key: the next box (or close the keyboard after the last one).
@@ -689,6 +695,79 @@ function goToTestQuestion(index) {
   document.getElementById("test-dropped").hidden = true;
   showTestQuestion();
 }
+
+// ---------- Flag and question map ----------
+// Flag: marks the question on screen to come back to (test.flags). Nothing else changes.
+// The map: one numbered square per question, answered (filled) or not (dashed outline), a
+// small flag on flagged ones, a thick ring on the current one. Tap a number to go there.
+// A fill-in-the-blank item counts as answered once any of its boxes has text.
+function testAnswered(test, id) {
+  return Object.prototype.hasOwnProperty.call(test.answers, id);
+}
+
+function showTestTools(test) {
+  const id = test.qIds[test.index];
+  const flagged = test.flags.indexOf(id) !== -1;
+  const flag = document.getElementById("test-flag");
+  setIconLabel(flag, "flag", flagged ? "Flagged" : "Flag");
+  flag.setAttribute("aria-pressed", flagged ? "true" : "false");
+  flag.classList.toggle("on", flagged);
+  if (!document.getElementById("test-map").hidden) { showTestMap(test); }
+}
+
+function showTestMap(test) {
+  const answered = test.qIds.filter(function (id) { return testAnswered(test, id); }).length;
+  document.getElementById("test-map-count").textContent = answered + " of " + test.qIds.length + " answered · " +
+    test.flags.length + " flagged";
+  const grid = document.getElementById("test-map-grid");
+  grid.innerHTML = "";
+  test.qIds.forEach(function (id, i) {
+    const cell = document.createElement("button");
+    cell.type = "button";
+    cell.className = "test-cell";
+    const isAnswered = testAnswered(test, id);
+    const isFlagged = test.flags.indexOf(id) !== -1;
+    cell.classList.toggle("is-answered", isAnswered);
+    cell.classList.toggle("is-flagged", isFlagged);
+    cell.classList.toggle("is-current", i === test.index);
+    cell.textContent = String(i + 1);
+    if (isFlagged) {
+      const mark = document.createElement("span");
+      mark.className = "test-cell-flag";
+      mark.appendChild(icon("flag"));
+      cell.appendChild(mark);
+    }
+    cell.setAttribute("aria-label", "Question " + (i + 1) + ", " + (isAnswered ? "answered" : "not answered") +
+      (isFlagged ? ", flagged" : "") + (i === test.index ? ", you are here" : ""));
+    if (i === test.index) { cell.setAttribute("aria-current", "true"); }
+    cell.addEventListener("click", function () {
+      setTestMapOpen(false);
+      goToTestQuestion(i);
+    });
+    grid.appendChild(cell);
+  });
+}
+
+function setTestMapOpen(open) {
+  const test = currentTest();
+  document.getElementById("test-map").hidden = !open;
+  document.getElementById("test-map-btn").setAttribute("aria-expanded", open ? "true" : "false");
+  if (open && test) { showTestMap(test); }
+}
+
+document.getElementById("test-flag").addEventListener("click", function () {
+  const test = currentTest();
+  if (!test) { return; }
+  const id = test.qIds[test.index];
+  const at = test.flags.indexOf(id);
+  if (at === -1) { test.flags.push(id); } else { test.flags.splice(at, 1); }
+  saveProgress();
+  showTestTools(test);
+});
+
+document.getElementById("test-map-btn").addEventListener("click", function () {
+  setTestMapOpen(document.getElementById("test-map").hidden);
+});
 
 document.getElementById("test-prev").addEventListener("click", function () {
   const test = currentTest();

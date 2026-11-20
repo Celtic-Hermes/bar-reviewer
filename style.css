@@ -705,6 +705,32 @@ button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
 #screen-test .status-badge, #screen-test .notes-badge { margin: 0 6px 14px 0; }
 .test-question-card .fb-level-note { margin: 10px 0 0; }
 .test-last-note { margin: -4px 0 16px; text-align: center; }
+/* Flag and Question map buttons (one row under the top bar) */
+.test-tools { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 12px; }
+.test-tool-btn {
+  min-height: 44px; padding: 8px 14px; border: 1px solid var(--primary-edge); border-radius: 22px;
+  background: var(--card); color: var(--primary-text); font: inherit; font-size: 15px; font-weight: 600;
+  cursor: pointer; -webkit-tap-highlight-color: transparent;
+}
+.test-tool-btn.on { background: var(--primary-soft); color: var(--text); border-color: var(--primary); }
+.test-tool-btn[aria-expanded="true"] { border-color: var(--primary); }
+/* The map: answered = filled, not answered = dashed outline, flagged = a small flag, current = a thick ring */
+.test-map-count { margin: 0 0 12px; font-weight: 600; }
+.test-map-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(44px, 1fr)); gap: 8px; }
+.test-cell {
+  position: relative; display: grid; place-items: center; min-width: 44px; min-height: 44px; padding: 0;
+  border: 1.5px dashed var(--primary-edge); border-radius: 10px; background: var(--card); color: var(--text);
+  font: inherit; font-size: 15px; font-weight: 600; cursor: pointer; -webkit-tap-highlight-color: transparent;
+}
+.test-cell.is-answered { border-style: solid; border-color: var(--primary-edge); background: var(--primary-soft); }
+.test-cell.is-current { outline: 3px solid var(--primary); outline-offset: 1px; font-weight: 800; }
+.test-cell-flag { position: absolute; top: 2px; right: 3px; line-height: 0; color: var(--primary-text); }
+.test-cell-flag .icon { width: 13px; height: 13px; margin: 0; vertical-align: 0; }  /* the small flag on a map square */
+.test-map-legend { display: flex; flex-wrap: wrap; gap: 10px 18px; margin: 16px 0 0; padding: 0; list-style: none; font-size: 14px; color: var(--muted); }
+.test-map-legend li { display: flex; align-items: center; gap: 8px; }
+.test-cell-sample { min-width: 30px; min-height: 30px; font-size: 13px; cursor: default; }
+.test-cell-sample.is-current { outline-width: 2px; }
+.test-cell-sample .test-cell-flag .icon { width: 10px; height: 10px; }
 .tests-heading { margin-top: 24px; }
 #screen-tests .empty-note { margin: 0; }
 #screen-tests .btn-primary { margin-bottom: 0; }

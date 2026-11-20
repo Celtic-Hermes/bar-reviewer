@@ -469,6 +469,21 @@
         <button class="back-btn" id="test-back"><span data-icon="chevron-left"></span> Tests</button>
         <p class="progress" id="test-progress"></p>
       </div>
+      <!-- Flag this question, and the question map (tests.js showTestTools / showTestMap) -->
+      <div class="test-tools">
+        <button type="button" class="test-tool-btn" id="test-flag" aria-pressed="false"></button>
+        <button type="button" class="test-tool-btn" id="test-map-btn" aria-expanded="false" aria-controls="test-map">Question map</button>
+      </div>
+      <section class="card test-map" id="test-map" aria-label="Question map" hidden>
+        <p class="test-map-count" id="test-map-count"></p>
+        <div class="test-map-grid" id="test-map-grid"></div>
+        <ul class="test-map-legend" aria-label="What the squares mean">
+          <li><span class="test-cell test-cell-sample is-answered" aria-hidden="true">1</span> Answered</li>
+          <li><span class="test-cell test-cell-sample" aria-hidden="true">2</span> Not answered</li>
+          <li><span class="test-cell test-cell-sample is-flagged" aria-hidden="true">3<span class="test-cell-flag" data-icon="flag"></span></span> Flagged</li>
+          <li><span class="test-cell test-cell-sample is-current" aria-hidden="true">4</span> You are here</li>
+        </ul>
+      </section>
       <p class="tests-note test-dropped" id="test-dropped" role="status" hidden></p>
       <p class="subject" id="test-subject"></p>
       <p class="topic" id="test-topic"></p>

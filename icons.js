@@ -40,7 +40,8 @@ const ICON_PATHS = {
   flame: '<path d="M12 3c1 3.5 5.5 6 5.5 10.5a5.5 5.5 0 0 1-11 0c0-2 1-3.5 2-4.5.3 1.5 1 2.3 2 2.5C10.3 8.5 10.8 5.5 12 3z"/>',
   "chevron-left": '<path d="M14.5 5.5 8 12l6.5 6.5"/>',
   "chevron-right": '<path d="M9.5 5.5 16 12l-6.5 6.5"/>',
-  check: '<path d="M5 12.5l4.5 4.5L19 7.5"/>'
+  check: '<path d="M5 12.5l4.5 4.5L19 7.5"/>',
+  flag: '<path d="M6 20.5v-16"/><path d="M6 4.5h11.5l-2.75 4.25 2.75 4.25H6"/>'
 };
 
 // Which icon goes with each subject (exact subject names, as in SUBJECTS in app.js).
