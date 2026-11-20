@@ -1750,8 +1750,8 @@ function showQuoteOfTheDay() {
 }
 
 // ---------- Today card (home screen): streak and daily goal ----------
-// Everything on the home screen that changes: the greeting and date, the three tiles (streak,
-// done today, mastery), "Pick up where you stopped", and each subject's counts. Called whenever
+// Everything on the home screen that changes: the greeting and date, the two tiles (streak,
+// done today), "Pick up where you stopped", and each subject's counts. Called whenever
 // she comes to the home screen, comes back to the app, and after a restore.
 function showTodayCard() {
   const streak = streakInfo();
@@ -1806,18 +1806,6 @@ function showTodayCard() {
     lineBox.hidden = true;
   } else {
     lineBox.hidden = showQuoteOfTheDay();
-  }
-
-  // Tile 3: mastery, as a bar only (no numbers), once the questions have loaded.
-  const mastery = masteryOf(officialQuestions());  // her class notes never count here
-  document.getElementById("tile-mastery").hidden = mastery.total === 0;
-  if (mastery.total > 0) {
-    const mbar = document.getElementById("mastery-bar");
-    mbar.setAttribute("aria-valuemax", String(mastery.total));
-    mbar.setAttribute("aria-valuenow", String(mastery.mastered));
-    // At least a sliver once anything is mastered (1 of 254 would otherwise round to 0%).
-    const percent = 100 * mastery.mastered / mastery.total;
-    document.getElementById("mastery-bar-fill").style.width = (mastery.mastered > 0 ? Math.max(2, Math.round(percent)) : 0) + "%";
   }
 
   showResumeCard();
@@ -4156,7 +4144,7 @@ function resetScope(name, questions) {
     .then(function (yes) {
       if (!yes) { return; }
       const removed = resetQuestions(questions.map(function (q) { return q.id; }));
-      showTodayCard();  // the mastery count goes down by the ones that were mastered
+      showTodayCard();  // refresh the home screen (e.g. "done today")
       showUndo("Reset \u2018" + name + "\u2019.", function () {
         undoReset(removed);
         showTodayCard();
@@ -5625,7 +5613,7 @@ quotesReady.then(function () { showTodayCard(); });
 Promise.all([contentReady, rulesReady]).then(function () {
   contentLoaded = true;
   showSearchResults();  // she may have typed in the search while the files were loading
-  showTodayCard();  // now that the questions are in, the mastery count can be shown
+  showTodayCard();  // now that the questions are in, the subject counts can be shown
   showMyNotesButton();  // ...and her notes can be matched to their cases and rules
   restoreSpot();
 });

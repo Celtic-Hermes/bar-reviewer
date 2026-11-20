@@ -58,7 +58,7 @@
     <section id="screen-home">
       <!-- Phones: the top bar's left side (the buttons on its right are above); hidden on wide screens -->
       <p class="home-topbar"><span class="home-brand">Bar Reviewer</span></p>
-      <!-- The top: a greeting, three small tiles for today, and where she stopped (app.js showTodayCard) -->
+      <!-- The top: a greeting, two small tiles for today, and where she stopped (app.js showTodayCard) -->
       <header class="home-hero">
         <div class="home-hello">
           <p class="home-date" id="home-date"></p>
@@ -88,15 +88,6 @@
               <p class="stat-value"><span id="today-value">0</span><span class="stat-of" id="today-of"></span></p>
               <p class="stat-label">done today</p>
             </button>
-            <div class="stat-tile" id="tile-mastery" hidden>
-              <span class="stat-visual"><span data-icon="chart"></span></span>
-              <div class="stat-bar-slot">
-                <div class="today-bar mastery-bar" id="mastery-bar" role="progressbar" aria-label="Questions mastered" aria-valuemin="0">
-                  <span class="today-bar-fill" id="mastery-bar-fill"></span>
-                </div>
-              </div>
-              <p class="stat-label">Mastery</p>
-            </div>
           </div>
           <!-- The last topic she practiced: one tap to go back to it -->
           <section class="resume-card" id="home-resume" aria-label="Pick up where you stopped" hidden>
