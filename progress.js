@@ -32,7 +32,10 @@
 //              "notebooklm"), "made" (ISO date), "all" (true if every topic was picked), "picks": [ { "t": topic, "s": sub-topic or null } ],
 //              "type" ("mcq" / "fillblank" / "both"), "level" (fill in the blank difficulty ID),
 //              "limit" (minutes, 0 = untimed), "qIds" (question IDs, in the test's shuffled order),
-//              "index", "answers", "flags", "used" (seconds), "state" ("open" / "done"),
+//              "index" (the question she's on), "answers" ({ id: "B" } multiple choice, or
+//              { id: { "12": "typed", "14.0": "…" } } fill in the blank: box key -> what she typed),
+//              "flags", "hidden" ({ id: [word numbers hidden] }, fill in the blank), "used" (seconds),
+//              "state" ("open" / "done"),
 //              "finished" (done only) } ]. At most 5 open and 30 done (the newest). See cleanTests.
 //   streakBest: her longest streak of study days ever (kept here, since "daily" only
 //              keeps 400 days)
@@ -276,7 +279,7 @@ function cleanNotes(value) {
 
 // ---------- Her tests (tests.js) ----------
 // progress.tests: a list of tests, each { id, subject, view, made, all, picks, type, level, limit,
-// qIds, index, answers, flags, used, state, finished }. Only question IDs are stored, never
+// qIds, index, answers, flags, hidden, used, state, finished }. Only question IDs are stored, never
 // question text. At most TESTS_OPEN_MAX unfinished ("open") and TESTS_DONE_MAX finished
 // ("done") tests are kept: the newest ones. Anything unusable is dropped; never throws.
 const TESTS_OPEN_MAX = 5;
@@ -327,6 +330,18 @@ function cleanTest(t) {
   (Array.isArray(t.flags) ? t.flags : []).forEach(function (id) {
     if (qIds.indexOf(id) !== -1 && flags.indexOf(id) === -1) { flags.push(id); }
   });
+  // Fill in the blank: which words of each item are hidden (word numbers), fixed when she first opens it.
+  const hidden = {};
+  if (t.hidden && typeof t.hidden === "object" && !Array.isArray(t.hidden)) {
+    Object.keys(t.hidden).forEach(function (id) {
+      if (qIds.indexOf(id) === -1 || !Array.isArray(t.hidden[id])) { return; }
+      const words = [];
+      t.hidden[id].forEach(function (n) {
+        if (typeof n === "number" && Math.floor(n) === n && n >= 0 && n < 100000 && words.indexOf(n) === -1 && words.length < 5000) { words.push(n); }
+      });
+      hidden[id] = words;
+    });
+  }
   const limit = wholeNumberOrZero(t.limit);
   const index = wholeNumberOrZero(t.index);
   const test = {
@@ -343,6 +358,7 @@ function cleanTest(t) {
     index: index < qIds.length ? index : 0,
     answers: answers,
     flags: flags,
+    hidden: hidden,
     used: wholeNumberOrZero(t.used),   // seconds of test time used so far
     state: t.state === "done" ? "done" : "open"
   };

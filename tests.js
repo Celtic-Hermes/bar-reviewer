@@ -2,7 +2,9 @@
 // Being built in steps (see "Tests" in CLAUDE.md).
 // Step 1: the Tests card on the subject screen opens this subject's Tests screen.
 // Step 2: "Create a test" (what's in it, type, how many, timer) saves a test in her progress
-// (progress.tests, see cleanTests in progress.js); it shows in Unfinished. Taking it comes next.
+// (progress.tests, see cleanTests in progress.js); it shows in Unfinished.
+// Step 3: tapping an unfinished test opens it (openTest): one question at a time, answers never
+// shown, every answer and her place saved in the test at once. Nothing counts yet (that's at submit).
 // Uses things from app.js: currentSubject, sourceView, questionsFor, topicsFor, subtopicsFor,
 // inSubtopic, subtopicLabel, OTHER_SUBTOPIC, FB_LEVELS, FB_LEVEL_LABELS, countLabel,
 // modeCountLabel, viewSuffix, shuffled, askConfirm, showScreen, openSubject, setIconLabel;
@@ -64,8 +66,9 @@ function makeTestCard(test) {
     meta2.textContent = "Finished " + testDate(test.finished);
   } else {
     const answered = Object.keys(test.answers).length;
-    meta2.textContent = "Created " + testDate(test.made) + " · " +
-      (answered === 0 ? "Not started" : answered + " of " + test.qIds.length + " answered");
+    meta2.textContent = (answered === 0 && test.index === 0)
+      ? "Created " + testDate(test.made) + " · Not started"
+      : "Question " + (test.index + 1) + " of " + test.qIds.length + " · " + answered + " answered";
   }
   name.append(meta, meta2);
   const arrow = document.createElement("span");
@@ -74,16 +77,16 @@ function makeTestCard(test) {
   arrow.textContent = "›";
   card.append(name, arrow);
   card.addEventListener("click", function () {
-    document.getElementById("tests-soon").hidden = false;  // step 3 will open the test here
+    if (test.state === "open") { openTest(test.id); }
   });
   return card;
 }
 
-function openTests() {
+function openTests(note) {
   const subject = currentSubject;
   setIconLabel(document.getElementById("tests-back"), "chevron-left", subject);
   document.getElementById("tests-subject").textContent = subject;
-  document.getElementById("tests-soon").hidden = true;
+  showTestsNote(note);
   [["open", "tests-unfinished"], ["done", "tests-finished"]].forEach(function (pair) {
     const box = document.getElementById(pair[1]);
     box.innerHTML = "";
@@ -94,7 +97,7 @@ function openTests() {
   showScreen("screen-tests");
 }
 
-document.getElementById("tests-card").addEventListener("click", openTests);
+document.getElementById("tests-card").addEventListener("click", function () { openTests(); });
 
 document.getElementById("tests-back").addEventListener("click", function () {
   openSubject(currentSubject);
@@ -367,7 +370,7 @@ document.getElementById("test-limit").addEventListener("input", function () {
   showTestChoices();
 });
 
-document.getElementById("test-create-back").addEventListener("click", openTests);
+document.getElementById("test-create-back").addEventListener("click", function () { openTests(); });
 
 function newTestId() {
   return "t-" + Date.now().toString(36) + Math.floor(Math.random() * 1296).toString(36);
@@ -419,4 +422,283 @@ document.getElementById("test-make").addEventListener("click", function () {
     progress.tests = progress.tests.filter(function (t) { return t.id !== oldest.id; });
     save();
   });
+});
+
+// A short note under "Create a test" (e.g. a test whose questions are all gone), or none.
+function showTestsNote(text) {
+  const note = document.getElementById("tests-note");
+  note.textContent = text || "";
+  note.hidden = !text;
+}
+
+// ---------- Taking a test ----------
+// One question at a time. Multiple choice: tapping a choice picks it (highlighted, nothing more).
+// Fill in the blank: the item's boxes at the test's difficulty; no live checking, no peek, no
+// Show answer. Every pick, every letter typed and the question she's on are saved in the test
+// right away (progress.tests), so a reload or the home-screen timeout loses nothing.
+// Nothing counts toward her streak, daily goal, mastery or Review missed here (only at submit).
+let currentTestId = null;
+let testFb = null;   // the fill-in-the-blank item on screen: its words, like fbInfo in app.js
+
+function findTest(id) {
+  const list = Array.isArray(progress.tests) ? progress.tests : [];
+  return list.find(function (t) { return t.id === id; }) || null;
+}
+
+// For the saved spot (app.js rememberSpot): the test on screen.
+function testSpotId() { return currentTestId; }
+
+function questionById(id) {
+  return allQuestions.find(function (q) { return q && q.id === id; }) || null;
+}
+
+// Questions taken out of the app since the test was made: drop them (and her answers to them).
+// Gives back how many were dropped.
+function dropMissingQuestions(test) {
+  const keep = test.qIds.filter(function (id) {
+    const q = questionById(id);
+    return q && (q.type === "mcq" || q.type === "fillblank");
+  });
+  const dropped = test.qIds.length - keep.length;
+  if (dropped === 0) { return 0; }
+  const current = test.qIds[test.index];
+  test.qIds = keep;
+  Object.keys(test.answers).forEach(function (id) { if (keep.indexOf(id) === -1) { delete test.answers[id]; } });
+  if (test.hidden) { Object.keys(test.hidden).forEach(function (id) { if (keep.indexOf(id) === -1) { delete test.hidden[id]; } }); }
+  test.flags = test.flags.filter(function (id) { return keep.indexOf(id) !== -1; });
+  const at = keep.indexOf(current);
+  test.index = at !== -1 ? at : Math.min(test.index, Math.max(0, keep.length - 1));
+  return dropped;
+}
+
+function openTest(id) {
+  const test = findTest(id);
+  if (!test || test.state !== "open") { openTests(); return false; }
+  currentSubject = test.subject;
+  const dropped = dropMissingQuestions(test);
+  if (test.qIds.length === 0) {
+    progress.tests = progress.tests.filter(function (t) { return t.id !== test.id; });
+    saveProgress();
+    openTests("That test's questions are no longer in the app, so the test was removed.");
+    return false;
+  }
+  if (dropped > 0) { saveProgress(); }
+  const note = document.getElementById("test-dropped");
+  note.textContent = dropped === 0 ? "" : (dropped === 1 ? "1 question is" : dropped + " questions are") +
+    " no longer in the app and " + (dropped === 1 ? "was" : "were") + " taken out of this test.";
+  note.hidden = dropped === 0;
+  currentTestId = test.id;
+  showTestQuestion();
+  return true;
+}
+
+function currentTest() {
+  return currentTestId ? findTest(currentTestId) : null;
+}
+
+function showTestQuestion() {
+  const test = currentTest();
+  if (!test) { openTests(); return; }
+  if (test.index >= test.qIds.length) { test.index = 0; }
+  const question = questionById(test.qIds[test.index]);
+  if (!question) { openTest(test.id); return; }  // gone while the app was open: drop it and redraw
+  const isLast = test.index === test.qIds.length - 1;
+  document.getElementById("test-progress").textContent = "Question " + (test.index + 1) + " of " + test.qIds.length;
+  document.getElementById("test-subject").textContent = question.subject;
+  document.getElementById("test-topic").textContent = [question.topic, subtopicOf(question)].filter(Boolean).join(" · ");
+  document.getElementById("test-draft-badge").hidden = !showsUnverified(question);
+  const view = viewOf(question);
+  const badge = document.getElementById("test-notes-badge");
+  badge.textContent = view === "notes" ? "From class notes" : (view === "notebooklm" ? "From NotebookLM" : "");
+  badge.hidden = view === "official";
+
+  const isMcq = question.type === "mcq";
+  document.getElementById("test-question-label").textContent = isMcq ? "Multiple choice" : "Fill in the blank";
+  document.getElementById("test-choices").hidden = !isMcq;
+  document.getElementById("test-fb-note").hidden = true;
+  if (isMcq) { showTestMcq(test, question); } else { showTestFillBlank(test, question); }
+
+  document.getElementById("test-prev").disabled = test.index === 0;
+  document.getElementById("test-next").disabled = isLast;   // End test comes in a later step
+  document.getElementById("test-last-note").hidden = !isLast;
+  showScreen("screen-test");
+}
+
+// Multiple choice: the four choices; her pick (if any) is highlighted. Never right or wrong.
+function showTestMcq(test, question) {
+  testFb = null;
+  const prompt = document.getElementById("test-prompt");
+  prompt.textContent = "";
+  prompt.appendChild(richText(question.prompt));
+  const box = document.getElementById("test-choices");
+  box.innerHTML = "";
+  const choices = isPlainObject(question.choices) ? question.choices : {};
+  ["A", "B", "C", "D"].forEach(function (letter) {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "choice";
+    button.dataset.letter = letter;
+    const mark = document.createElement("span");
+    mark.className = "choice-letter";
+    mark.textContent = letter;
+    const text = document.createElement("span");
+    text.className = "choice-text";
+    setRichText(text, choices[letter]);
+    button.append(mark, text);
+    button.addEventListener("click", function () {
+      test.answers[question.id] = letter;
+      saveProgress();
+      showTestPick(letter);
+    });
+    box.appendChild(button);
+  });
+  showTestPick(test.answers[question.id]);
+}
+
+function showTestPick(letter) {
+  document.querySelectorAll("#test-choices .choice").forEach(function (button) {
+    const on = button.dataset.letter === letter;
+    button.classList.toggle("selected", on);
+    button.setAttribute("aria-pressed", on ? "true" : "false");
+  });
+}
+
+// Fill in the blank: the words hidden for this item are picked once (at the test's level) and
+// kept in the test, so the same boxes come back after a reload.
+function showTestFillBlank(test, question) {
+  const prompt = document.getElementById("test-prompt");
+  prompt.textContent = "";
+  prompt.appendChild(richText(question.prompt, []));  // [] = every word in its own numbered span
+  const words = Array.from(prompt.querySelectorAll(".hl-word"));
+  const answers = blankAnswers(question.prompt, question.fullText);
+  const blankCount = words.filter(function (w) { return BLANK.test(w.textContent); }).length;
+  const usable = Boolean(answers) && answers.length === blankCount;
+  let b = 0;
+  testFb = {
+    words: words.map(function (span) {
+      const text = span.textContent;
+      const isBlank = BLANK.test(text);
+      const info = { span: span, text: text, isBlank: isBlank, inHeading: !!span.closest(".section-heading") };
+      if (isBlank) { info.answer = usable ? answers[b] : null; b += 1; }
+      return info;
+    }),
+    usable: usable,
+    total: usable ? Math.max(1, wordCount(sectionContent(question.fullText))) : 1
+  };
+  if (!test.hidden) { test.hidden = {}; }
+  let hidden = test.hidden[question.id];
+  if (!Array.isArray(hidden)) {
+    hidden = pickTestHidden(test.level);
+    test.hidden[question.id] = hidden;
+    saveProgress();
+  }
+  const typed = isPlainObject(test.answers[question.id]) ? test.answers[question.id] : {};
+  drawTestBlanks(hidden, test.level, typed);
+  const note = document.getElementById("test-fb-note");
+  const count = prompt.querySelectorAll(".fb-input").length;
+  note.textContent = count + (count === 1 ? " blank" : " blanks") + " to fill · " + (FB_LEVEL_NAMES[test.level] || "");
+  note.hidden = false;
+}
+
+// The words to hide at a level (word numbers), as in practice (pickHiddenWords in app.js).
+function pickTestHidden(level) {
+  const words = testFb.words;
+  const all = words.map(function (w, n) { return n; });
+  const blanks = all.filter(function (n) { return words[n].isBlank; });
+  if (!testFb.usable) { return blanks; }
+  if (level === "light") {
+    const usable = blanks.filter(function (n) { return blankHasBox(words[n], level); });
+    return shuffled(usable).slice(0, FB_LIGHT_MOST).sort(function (x, y) { return x - y; });
+  }
+  if (level === "key" || !FB_LEVEL_SHARE[level]) { return blanks; }
+  const target = Math.round(testFb.total * FB_LEVEL_SHARE[level]);
+  let count = blanks.reduce(function (sum, n) {
+    const w = words[n];
+    return sum + (w.answer ? blankParts(w, level).filter(function (p) { return p.box; }).length : 1);
+  }, 0);
+  const picked = blanks.slice();
+  const others = shuffled(all.filter(function (n) { return canHideExtra(words[n]); }));
+  for (let i = 0; i < others.length && count < target; i++) {
+    picked.push(others[i]);
+    count += 1;
+  }
+  return picked.sort(function (x, y) { return x - y; });
+}
+
+// Put the boxes in, like applyFbLevel in app.js (one box per word, punctuation outside it).
+function drawTestBlanks(hidden, level, typed) {
+  testFb.words.forEach(function (w, n) {
+    const hide = hidden.indexOf(n) !== -1 && !(w.inHeading && !w.isBlank);
+    if (!hide && !w.isBlank) { return; }   // a word that stays: leave it as drawn
+    w.span.classList.toggle("fb-blank", hide);
+    w.span.textContent = "";
+    if (hide && w.isBlank && w.answer) {
+      const outer = splitBlank(w.text);
+      w.span.append(outer.before);
+      blankParts(w, level).forEach(function (part, k) {
+        if (part.space) { w.span.append(part.space); return; }
+        if (!part.box) {
+          const shown = document.createElement("span");
+          shown.className = "fb-shown";
+          shown.textContent = part.text;
+          w.span.append(shown);
+          return;
+        }
+        const bits = splitWord(part.text);
+        w.span.append(bits.before, makeBlankBox(n + "." + k, typed[n + "." + k]), bits.after);
+      });
+      w.span.append(outer.after);
+    } else if (hide) {
+      const parts = w.isBlank ? splitBlank(w.text) : splitWord(w.text);
+      w.span.append(parts.before, makeBlankBox(n, typed[n]), parts.after);
+    } else {
+      w.span.textContent = w.answer ? w.text.replace(BLANK, w.answer) : w.text;  // a key term shown at this level
+    }
+  });
+  document.querySelectorAll("#test-prompt .fb-input").forEach(sizeBlankBox);
+}
+
+// Typing in a box: grow it and save what she typed in the test (nothing is checked).
+document.getElementById("test-prompt").addEventListener("input", function (event) {
+  const box = event.target;
+  const test = currentTest();
+  if (!test || !box.classList || !box.classList.contains("fb-input")) { return; }
+  sizeBlankBox(box);
+  const id = test.qIds[test.index];
+  const typed = isPlainObject(test.answers[id]) ? test.answers[id] : {};
+  if (box.value === "") { delete typed[box.dataset.word]; } else { typed[box.dataset.word] = box.value.slice(0, 200); }
+  if (Object.keys(typed).length === 0) { delete test.answers[id]; } else { test.answers[id] = typed; }
+  saveProgress();
+});
+
+// Return key: the next box (or close the keyboard after the last one).
+document.getElementById("test-prompt").addEventListener("keydown", function (event) {
+  const box = event.target;
+  if (event.key !== "Enter" || !box.classList || !box.classList.contains("fb-input")) { return; }
+  event.preventDefault();
+  const boxes = Array.from(document.querySelectorAll("#test-prompt .fb-input"));
+  const next = boxes[boxes.indexOf(box) + 1];
+  if (next) { next.focus(); } else { box.blur(); }
+});
+
+function goToTestQuestion(index) {
+  const test = currentTest();
+  if (!test || index < 0 || index >= test.qIds.length) { return; }
+  test.index = index;
+  saveProgress();
+  document.getElementById("test-dropped").hidden = true;
+  showTestQuestion();
+}
+
+document.getElementById("test-prev").addEventListener("click", function () {
+  const test = currentTest();
+  if (test) { goToTestQuestion(test.index - 1); }
+});
+document.getElementById("test-next").addEventListener("click", function () {
+  const test = currentTest();
+  if (test) { goToTestQuestion(test.index + 1); }
+});
+document.getElementById("test-back").addEventListener("click", function () {
+  currentTestId = null;
+  openTests();
 });

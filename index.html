@@ -393,7 +393,7 @@
 
       <h2 class="label tests-heading">Unfinished</h2>
       <div class="subject-list" id="tests-unfinished"></div>
-      <p class="tests-soon" id="tests-soon" role="status" hidden>Taking a test is the next step being built.</p>
+      <p class="tests-note" id="tests-note" role="status" hidden></p>
       <p class="card empty-note" id="tests-unfinished-empty">No unfinished tests.</p>
 
       <h2 class="label tests-heading">Finished</h2>
@@ -461,6 +461,32 @@
 
       <p class="test-summary" id="test-summary" role="status"></p>
       <button type="button" class="btn btn-primary" id="test-make">Create test</button>
+    </section>
+
+    <!-- SCREEN 2f: Taking a test (tests.js openTest): one question at a time, answers never shown -->
+    <section id="screen-test" hidden>
+      <div class="question-topbar">
+        <button class="back-btn" id="test-back"><span data-icon="chevron-left"></span> Tests</button>
+        <p class="progress" id="test-progress"></p>
+      </div>
+      <p class="tests-note test-dropped" id="test-dropped" role="status" hidden></p>
+      <p class="subject" id="test-subject"></p>
+      <p class="topic" id="test-topic"></p>
+      <p class="status-unverified status-badge" id="test-draft-badge" hidden>Unverified</p>
+      <p class="notes-badge" id="test-notes-badge" hidden></p>
+
+      <section class="card test-question-card">
+        <h2 class="label" id="test-question-label">Question</h2>
+        <p class="prompt reading-text" id="test-prompt"></p>
+        <p class="fb-level-note" id="test-fb-note" hidden></p>
+      </section>
+      <div class="choices" id="test-choices" role="group" aria-label="Choices" hidden></div>
+
+      <div class="question-nav">
+        <button class="btn btn-secondary" id="test-prev">‹ Previous</button>
+        <button class="btn btn-primary" id="test-next">Next ›</button>
+      </div>
+      <p class="tests-note test-last-note" id="test-last-note" hidden>This is the last question. Ending the test comes in the next step.</p>
     </section>
 
     <!-- SCREEN 3: Practice (one question) -->

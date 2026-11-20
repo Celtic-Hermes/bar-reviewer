@@ -698,7 +698,13 @@ button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
 
 /* ---------- Tests (tests.js) ---------- */
 .tests-card { margin: 0 0 22px; }  /* the subject screen's Tests card: a normal list card */
-.tests-soon { margin: 10px 0 0; font-size: 15px; color: var(--muted); }
+.tests-note { margin: 10px 0 0; font-size: 15px; color: var(--muted); }
+/* Taking a test (#screen-test): the practice question's look (.choice, .prompt, .fb-input, .question-nav) */
+.test-dropped { margin: 0 0 12px; }
+#screen-test .topic { margin-bottom: 14px; }
+#screen-test .status-badge, #screen-test .notes-badge { margin: 0 6px 14px 0; }
+.test-question-card .fb-level-note { margin: 10px 0 0; }
+.test-last-note { margin: -4px 0 16px; text-align: center; }
 .tests-heading { margin-top: 24px; }
 #screen-tests .empty-note { margin: 0; }
 #screen-tests .btn-primary { margin-bottom: 0; }

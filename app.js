@@ -91,7 +91,7 @@ document.addEventListener("touchstart", function () {}, { passive: true });
 // Only one screen is visible at a time.
 function showScreen(id) {
   saveAllNotes();  // leaving a screen with a notes box: save what she typed first
-  ["screen-home", "screen-subject", "screen-subtopics", "screen-topic", "screen-tagged", "screen-tests", "screen-test-create", "screen-question", "screen-results", "screen-case", "screen-rule", "screen-notes", "screen-settings", "screen-schedule", "screen-search", "screen-syllabus", "screen-clarify"].forEach(function (screenId) {
+  ["screen-home", "screen-subject", "screen-subtopics", "screen-topic", "screen-tagged", "screen-tests", "screen-test-create", "screen-test", "screen-question", "screen-results", "screen-case", "screen-rule", "screen-notes", "screen-settings", "screen-schedule", "screen-search", "screen-syllabus", "screen-clarify"].forEach(function (screenId) {
     document.getElementById(screenId).hidden = (screenId !== id);
   });
   window.scrollTo(0, 0);
@@ -256,6 +256,9 @@ function rememberSpot() {
     spot.ruleId = currentRule.id;
     spot.ruleCameFrom = ruleCameFrom;
   }
+  if (shownScreen === "screen-test" && typeof testSpotId === "function") {
+    spot.testId = testSpotId();  // the test she's taking (tests.js); its answers live in progress.tests
+  }
   if (shownScreen === "screen-syllabus") {
     spot.syllabus = { subject: syllabusView.subject, topic: syllabusView.topic };  // which of its three views she's on
   }
@@ -358,6 +361,14 @@ function putBackSpot(spot) {
   }
   if (spot.screen === "tests") {
     if (typeof openTests === "function") { openTests(); } else { openSubject(currentSubject); }  // tests.js
+    return true;
+  }
+  if (spot.screen === "test") {
+    if (typeof openTest === "function" && typeof spot.testId === "string") {
+      openTest(spot.testId);  // the same question, her answers (all saved in the test); gone: the Tests screen
+    } else {
+      openSubject(currentSubject);
+    }
     return true;
   }
   if (spot.screen === "test-create") {
@@ -3135,7 +3146,7 @@ function showMcq(question) {
 // Tapping a choice only selects it (she can still change her mind). Nothing is scored yet.
 function selectChoice(letter) {
   session.current.selected = letter;
-  document.querySelectorAll(".choice").forEach(function (button) {
+  document.querySelectorAll("#choices .choice").forEach(function (button) {
     const on = button.dataset.letter === letter;
     button.classList.toggle("selected", on);
     button.setAttribute("aria-pressed", on ? "true" : "false");
@@ -3167,7 +3178,7 @@ function showPicked(question, picked) {
   const isRight = picked === question.correct;
   // Lock the choices and color them: correct one green, her wrong pick red.
   document.getElementById("submit-answer").hidden = true;
-  document.querySelectorAll(".choice").forEach(function (button) {
+  document.querySelectorAll("#choices .choice").forEach(function (button) {
     button.disabled = true;
     button.classList.remove("selected");
     button.removeAttribute("aria-pressed");
