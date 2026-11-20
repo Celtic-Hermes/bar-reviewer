@@ -78,6 +78,7 @@ let session = null;
 // these hold that question and the case, so "Practice again" and "‹ Back" work.
 let fixedQuestions = null;
 let practiceCase = null;
+let casePracticeFromTab = false;  // that case round was started from the subject screen's Cases tab (Back goes there)
 
 let shownScreen = "screen-home";  // which screen is showing right now
 let updateWaiting = false;        // a new version of the app is ready (see "Offline support")
@@ -232,7 +233,7 @@ function rememberSpot() {
     view: sourceView                // "official", "notes" or "notebooklm"
   };
   if (shownScreen === "screen-subject") {
-    spot.tab = subjectTab;  // the subject screen's tab: "cases", "questions" or "study"
+    spot.tab = shownSubjectTab;  // the subject screen's tab: "cases", "questions" or "study"
   }
   // In the middle of a round (or reading a case opened from a question): keep the round.
   const inRound = session && (shownScreen === "screen-question" ||
@@ -249,7 +250,8 @@ function rememberSpot() {
       fbView: session.fbView,          // fill in the blank: "quiz" or "read"
       current: session.current,  // what she's done on this question: her pick, or answer shown, rating, checked key points
       states: isPlainObject(session.states) ? session.states : {},  // the same, for every question she visited (Previous / Next)
-      practiceCaseId: practiceCase ? practiceCase.id : null
+      practiceCaseId: practiceCase ? practiceCase.id : null,
+      fromCases: !!(practiceCase && casePracticeFromTab)  // started from the Cases tab: Back goes there
     };
   }
   if (shownScreen === "screen-case" && currentCase) {
@@ -282,8 +284,11 @@ function rememberSpot() {
   }
   saveSpot(spot);
   // The round she's in the middle of is also kept for the subject screen's "Continue" (it survives
-  // the home-screen timeout). Not for a case's questions or Review missed / Bookmarked / Tagged lists.
-  if (spot.round && !practiceCase && (isRealTopic(currentTopic) || currentTopic === ALL_TOPICS)) {
+  // the home-screen timeout): a topic round (Questions tab), or a case's questions (Cases tab, marked
+  // with the case's ID). Not for Review missed / Bookmarked / Tagged lists.
+  if (spot.round && practiceCase) {
+    saveLastRound(currentSubject, currentTopic, currentSubtopic, spot.round, sourceView, practiceCase.id);
+  } else if (spot.round && (isRealTopic(currentTopic) || currentTopic === ALL_TOPICS)) {
     saveLastRound(currentSubject, currentTopic, currentSubtopic, spot.round, sourceView);
   }
 }
@@ -441,8 +446,8 @@ function putBackSpot(spot) {
     } else if (spot.caseCameFrom === "question" && roundOk) {
       openCase(theCase, "question");
     } else {
-      // Opened from a topic screen (or, before topic screens existed, the subject screen).
-      openCase(theCase, isRealTopic(currentTopic) ? "topic" : "subject");
+      // Opened from the subject screen's Cases tab, or from a topic screen.
+      openCase(theCase, spot.caseCameFrom === "subject" || !isRealTopic(currentTopic) ? "subject" : "topic");
     }
     return true;
   }
@@ -462,6 +467,7 @@ function putBackRound(round) {
 
   practiceCase = round.practiceCaseId ? findCase(round.practiceCaseId) : null;
   fixedQuestions = practiceCase ? questions.slice() : null;
+  casePracticeFromTab = !!practiceCase && round.fromCases === true;
   const ratings = isPlainObject(round.ratings) ? round.ratings : {};
   session = {
     questions: questions,
@@ -904,7 +910,9 @@ function openSubject(subject) {
   document.getElementById("subject-empty").hidden = (count !== 0);
 
   showTopicCards(subject);
-  showSubjectTab(subjectTab);
+  showCaseRows(subject);
+  // The remembered tab, unless it has nothing here (e.g. Cases in a subject with no cases): then Questions.
+  showSubjectTab(subjectTabHasContent(subjectTab, subject) ? subjectTab : "questions");
   showScreen("screen-subject");
 }
 
@@ -912,7 +920,8 @@ function openSubject(subject) {
 // The tab she last used is remembered on this device only (not backed up) and in the saved spot.
 const SUBJECT_TAB_KEY = "barReviewer.subjectTab.v1";
 const SUBJECT_TABS = ["cases", "questions", "study"];
-let subjectTab = loadSubjectTab();
+let subjectTab = loadSubjectTab();  // the tab she prefers (the last one she picked)
+let shownSubjectTab = "questions";   // the tab showing now (may differ when hers is empty here)
 
 function cleanSubjectTab(tab) {
   return SUBJECT_TABS.indexOf(tab) !== -1 ? tab : "questions";
@@ -926,9 +935,9 @@ function saveSubjectTab(tab) {
 
 // Shows one tab's panel and marks its tab as picked (only the picked tab is in the Tab key order).
 function showSubjectTab(tab) {
-  subjectTab = cleanSubjectTab(tab);
+  shownSubjectTab = cleanSubjectTab(tab);
   document.querySelectorAll("#subject-tabs .subject-tab").forEach(function (btn) {
-    const on = btn.dataset.tab === subjectTab;
+    const on = btn.dataset.tab === shownSubjectTab;
     btn.setAttribute("aria-selected", String(on));
     btn.tabIndex = on ? 0 : -1;
     document.getElementById(btn.getAttribute("aria-controls")).hidden = !on;
@@ -937,8 +946,15 @@ function showSubjectTab(tab) {
 
 function pickSubjectTab(tab) {
   showSubjectTab(tab);
+  subjectTab = shownSubjectTab;
   saveSubjectTab(subjectTab);
   rememberSpot();
+}
+
+// Does this tab have anything in this subject? (Study is filled in a later step: always yes for now.)
+function subjectTabHasContent(tab, subject) {
+  if (tab === "cases") { return subjectCases(subject).length > 0; }
+  return true;
 }
 
 document.querySelectorAll("#subject-tabs .subject-tab").forEach(function (btn) {
@@ -957,6 +973,172 @@ document.querySelectorAll("#subject-tabs .subject-tab").forEach(function (btn) {
     document.getElementById("subject-tab-" + next).focus();
   });
 });
+
+// ---------- The Cases tab: one row per case of this subject ----------
+// Each row: its number, the case title (opens the case; Back returns here), a bar of its linked
+// questions' latest results (right / partly / wrong / not yet, with the counts in words too),
+// "6 of 8 questions answered", a small Reset, and Practice (or Continue when her open round is
+// this case's). Always the official cases, whatever the Questions tab's view.
+function subjectCases(subject) {
+  return allCases.filter(function (c) { return c && c.subject === subject && typeof c.id === "string"; })
+    .sort(function (a, b) { return a.id < b.id ? -1 : (a.id > b.id ? 1 : 0); });
+}
+
+// How her latest results on these questions add up: { right, partly, wrong, notYet }.
+function resultTally(questions) {
+  const tally = { right: 0, partly: 0, wrong: 0, notYet: 0 };
+  questions.forEach(function (q) {
+    const r = progress.results[q.id];
+    const last = r ? r.last : null;
+    if (last === "right" || last === "got") { tally.right++; }
+    else if (last === "partly") { tally.partly++; }
+    else if (last === "wrong" || last === "missed") { tally.wrong++; }
+    else { tally.notYet++; }
+  });
+  return tally;
+}
+
+// Her open practice round for this case (saved by rememberSpot), if its questions all still exist.
+function lastRoundForCase(theCase) {
+  const last = loadLastRound();
+  if (!last || last.caseId !== theCase.id) { return null; }
+  const known = {};
+  allQuestions.forEach(function (q) { if (q && q.id) { known[q.id] = true; } });
+  return last.round.questionIds.every(function (id) { return known[id]; }) ? last : null;
+}
+
+function startCasePractice(theCase) {
+  const questions = caseResetQuestions(theCase);
+  if (questions.length === 0) { return; }
+  fixedQuestions = questions;
+  practiceCase = theCase;
+  casePracticeFromTab = true;
+  currentSubject = theCase.subject;
+  currentTopic = typeof theCase.topic === "string" ? theCase.topic : (questions[0].topic || "");
+  currentSubtopic = null;
+  startPractice();  // shuffled, like every new round
+}
+
+function continueCasePractice(theCase) {
+  const last = lastRoundForCase(theCase);
+  if (last) {
+    currentSubject = last.subject;
+    currentTopic = last.topic;
+    currentSubtopic = last.subtopic;
+    last.round.fromCases = true;  // Back from it returns to the Cases tab
+    if (putBackRound(last.round)) { return; }
+  }
+  clearLastRound();  // it couldn't be put back (the content changed): the row says Practice again
+  showCaseRows(currentSubject);
+}
+
+function refreshSubjectAfterReset(subject) {
+  if (currentSubject !== subject) { return; }
+  showSubjectStats(subject);
+  showTopicCards(subject);
+  showCaseRows(subject);
+}
+
+function makeCaseRow(theCase, number) {
+  const subject = theCase.subject;
+  const name = theCase.name || "Untitled case";
+  const questions = caseResetQuestions(theCase);
+  const tally = resultTally(questions);
+  const answered = questions.length - tally.notYet;
+  const row = document.createElement("li");
+  row.className = "card case-row";
+
+  // Top: number, title (opens the case), Reset.
+  const top = document.createElement("div");
+  top.className = "case-row-top";
+  const num = document.createElement("span");
+  num.className = "case-row-num";
+  num.setAttribute("aria-hidden", "true");  // the list itself is numbered for screen readers
+  num.textContent = String(number);
+  const open = document.createElement("button");
+  open.type = "button";
+  open.className = "case-row-open";
+  open.appendChild(caseTitle(theCase.name));
+  open.appendChild(cardDetail([theCase.grNumber, theCase.year].filter(Boolean).join(" · "), !showsUnverified(theCase)));
+  open.addEventListener("click", function () { openCase(theCase, "subject"); });
+  top.append(num, open);
+  const hasSomethingToReset = questions.some(function (q) {
+    return Object.prototype.hasOwnProperty.call(progress.results, q.id) || Object.prototype.hasOwnProperty.call(progress.review, q.id);
+  });
+  if (hasSomethingToReset) {
+    const reset = document.createElement("button");
+    reset.type = "button";
+    reset.className = "case-row-reset";
+    reset.setAttribute("aria-label", "Reset " + name);
+    reset.appendChild(icon("refresh"));
+    reset.addEventListener("click", function () {
+      resetScope(name, questions, function () { refreshSubjectAfterReset(subject); });
+    });
+    top.appendChild(reset);
+  }
+  row.appendChild(top);
+
+  if (questions.length === 0) {
+    const none = document.createElement("p");
+    none.className = "case-row-count";
+    none.textContent = "No questions for this case yet.";
+    row.appendChild(none);
+    return row;
+  }
+
+  // The bar: one piece per result, as wide as its count (the words are in its label and the line below).
+  const bar = document.createElement("div");
+  bar.className = "case-bar";
+  bar.setAttribute("role", "img");
+  bar.setAttribute("aria-label", [tally.right + " right", tally.partly + " partly", tally.wrong + " wrong", tally.notYet + " not yet"].join(", "));
+  [["right", tally.right], ["partly", tally.partly], ["wrong", tally.wrong]].forEach(function (part) {
+    if (part[1] === 0) { return; }
+    const piece = document.createElement("span");
+    piece.className = "case-bar-" + part[0];
+    piece.style.flexGrow = String(part[1]);
+    bar.appendChild(piece);
+  });
+  if (tally.notYet > 0) {
+    const rest = document.createElement("span");
+    rest.className = "case-bar-rest";
+    rest.style.flexGrow = String(tally.notYet);
+    bar.appendChild(rest);
+  }
+  row.appendChild(bar);
+
+  // Bottom: "6 of 8 questions answered" and Practice / Continue.
+  const foot = document.createElement("div");
+  foot.className = "case-row-foot";
+  const count = document.createElement("p");
+  count.className = "case-row-count";
+  count.textContent = answered + " of " + questions.length + (questions.length === 1 ? " question answered" : " questions answered");
+  const last = lastRoundForCase(theCase);
+  const go = document.createElement("button");
+  go.type = "button";
+  go.className = "btn btn-secondary btn-small case-row-go";
+  if (last) {
+    go.textContent = "Continue";
+    go.setAttribute("aria-label", "Continue practicing " + name + ", question " + (last.round.index + 1) + " of " + last.round.questionIds.length);
+    go.addEventListener("click", function () { continueCasePractice(theCase); });
+  } else {
+    go.textContent = "Practice";
+    go.setAttribute("aria-label", "Practice the questions from " + name);
+    go.addEventListener("click", function () { startCasePractice(theCase); });
+  }
+  foot.append(count, go);
+  row.appendChild(foot);
+  return row;
+}
+
+function showCaseRows(subject) {
+  const list = document.getElementById("case-rows");
+  list.innerHTML = "";
+  const cases = subjectCases(subject);
+  cases.forEach(function (c, i) { list.appendChild(makeCaseRow(c, i + 1)); });
+  list.hidden = cases.length === 0;
+  document.getElementById("case-rows-intro").hidden = cases.length === 0;
+  document.getElementById("case-rows-empty").hidden = cases.length !== 0;
+}
 
 // "Official / Notes / NotebookLM": shown only when this subject has class-notes or
 // NotebookLM questions, each button only if it has questions here. Switching redraws the subject screen.
@@ -3032,7 +3214,7 @@ function showSubjectStats(subject) {
 // back to that exact question (putBackRound). Practicing a whole subject = the "All topics" card.
 function lastRoundHere(subject) {
   const last = loadLastRound();
-  if (!last || last.subject !== subject || last.view !== sourceView) { return null; }
+  if (!last || last.caseId || last.subject !== subject || last.view !== sourceView) { return null; }  // a case's round: the Cases tab
   const known = {};
   allQuestions.forEach(function (q) { if (q && q.id) { known[q.id] = true; } });
   return last.round.questionIds.every(function (id) { return known[id]; }) ? last : null;
@@ -4191,7 +4373,7 @@ function ruleResetQuestions(rule) {
   });
 }
 
-function resetScope(name, questions) {
+function resetScope(name, questions, after) {
   if (questions.length === 0) { return; }
   const count = questions.length === 1 ? "1 question" : questions.length + " questions";
   askConfirm("Reset \u2018" + name + "\u2019?",
@@ -4200,9 +4382,11 @@ function resetScope(name, questions) {
       if (!yes) { return; }
       const removed = resetQuestions(questions.map(function (q) { return q.id; }));
       showTodayCard();  // refresh the home screen (e.g. "done today")
+      if (after) { after(); }  // e.g. redraw the Cases tab's rows
       showUndo("Reset \u2018" + name + "\u2019.", function () {
         undoReset(removed);
         showTodayCard();
+        if (after) { after(); }
       });
     });
 }
@@ -4280,7 +4464,10 @@ document.addEventListener("keydown", function (event) {
 });
 
 document.getElementById("question-back").addEventListener("click", function () {
-  if (practiceCase) {
+  if (practiceCase && casePracticeFromTab) {
+    subjectTab = "cases";
+    openSubject(currentSubject);  // started from the subject screen's Cases tab: back to it
+  } else if (practiceCase) {
     openCase(practiceCase, caseHome);  // she came from a case: go back to it
   } else {
     openTopicOrSubject();  // back to the topic screen (or the subject screen)
@@ -5393,6 +5580,7 @@ function showCaseQuestions(theCase) {
     card.addEventListener("click", function () {
       fixedQuestions = [question];
       practiceCase = theCase;
+      casePracticeFromTab = false;
       currentSubject = question.subject;
       currentTopic = question.topic;
       startPractice();
@@ -5416,6 +5604,7 @@ document.getElementById("case-back").addEventListener("click", function () {
     showSchedule();  // back to the Study Schedule (a task linked to this case)
     showScreen("screen-schedule");
   } else {
+    subjectTab = "cases";  // opened from the subject screen's Cases tab: back to it
     openSubject(currentSubject);
   }
 });

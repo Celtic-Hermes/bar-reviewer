@@ -291,9 +291,11 @@
         <button type="button" class="subject-tab" role="tab" id="subject-tab-study" data-tab="study" aria-controls="subject-panel-study" aria-selected="false" tabindex="-1">Study</button>
       </div>
 
-      <!-- Cases tab (filled in a later step) -->
+      <!-- Cases tab: one numbered row per case of this subject, with its progress, Practice / Continue and Reset (app.js showCaseRows) -->
       <div class="subject-panel" id="subject-panel-cases" role="tabpanel" aria-labelledby="subject-tab-cases" hidden>
-        <p class="card empty-note">Coming next.</p>
+        <p class="case-rows-intro" id="case-rows-intro">Practice the questions from each decision, or open it to read.</p>
+        <ol class="case-rows" id="case-rows"></ol>
+        <p class="card empty-note" id="case-rows-empty" hidden>No cases in this subject yet.</p>
       </div>
 
       <!-- Questions tab: the view switch, tests and practice -->

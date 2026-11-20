@@ -854,14 +854,14 @@ function loadLastPractice() {
 
 // ---------- The practice round she's in the middle of (for the subject screen's "Continue") ----------
 // Kept on this device only (not in backups), separate from her progress: { subject, topic, subtopic,
-// at, round }, where "round" is the same round object the saved spot keeps (the order of the
+// view, caseId (a case's questions, for the Cases tab's Continue; null for a topic round), at, round }, where "round" is the same round object the saved spot keeps (the order of the
 // questions, which one she's on, her answers so far). Unlike the saved spot it survives the
 // home-screen timeout and leaving the app; it's removed when the round is finished.
 const LAST_ROUND_KEY = "barReviewer.lastRound.v1";
 
-function saveLastRound(subject, topic, subtopic, round, view) {
+function saveLastRound(subject, topic, subtopic, round, view, caseId) {
   try {
-    localStorage.setItem(LAST_ROUND_KEY, JSON.stringify({ subject: subject, topic: topic, subtopic: subtopic || null, notes: view === "notes", view: view, at: Date.now(), round: round }));
+    localStorage.setItem(LAST_ROUND_KEY, JSON.stringify({ subject: subject, topic: topic, subtopic: subtopic || null, notes: view === "notes", view: view, caseId: caseId || null, at: Date.now(), round: round }));
   } catch (e) { /* fine */ }
 }
 
@@ -872,7 +872,7 @@ function loadLastRound() {
     if (!isPlainObject(raw) || typeof raw.subject !== "string" || typeof raw.topic !== "string" || !isPlainObject(raw.round)) { return null; }
     const r = raw.round;
     if (!Array.isArray(r.questionIds) || r.questionIds.length === 0 || !Number.isInteger(r.index) || r.index < 0 || r.index >= r.questionIds.length) { return null; }
-    return { subject: raw.subject, topic: currentTopicName(raw.subject, raw.topic), subtopic: typeof raw.subtopic === "string" ? raw.subtopic : null, notes: savedViewOf(raw) === "notes", view: savedViewOf(raw), at: Number(raw.at) || 0, round: r };
+    return { subject: raw.subject, topic: currentTopicName(raw.subject, raw.topic), subtopic: typeof raw.subtopic === "string" ? raw.subtopic : null, notes: savedViewOf(raw) === "notes", view: savedViewOf(raw), caseId: typeof raw.caseId === "string" ? raw.caseId : null, at: Number(raw.at) || 0, round: r };
   } catch (e) {
     return null;
   }
