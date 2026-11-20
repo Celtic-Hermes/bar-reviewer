@@ -85,9 +85,10 @@
   --w-list: 1200px;  /* list screens (Home, a subject, tests, Search, Schedule, Syllabus…) */
   --space-section: var(--space-6);  /* the one gap between sections of a screen (wider from 1024px) */
   --space-grid: var(--space-3);     /* the gap inside a grid or list of cards (wider from 1024px) */
+  --space-block: var(--space-4);    /* the one gap between the blocks of a question screen (prompt, choices, buttons…) */
 }
 @media (min-width: 1024px) {
-  :root { --space-section: var(--space-7); --space-grid: var(--space-4); }
+  :root { --space-section: var(--space-7); --space-grid: var(--space-4); --space-block: var(--space-5); }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -168,9 +169,8 @@ body {
 .page-read { max-width: var(--w-read); }
 .page-list { max-width: var(--w-list); }
 
-.question-header { margin-bottom: 12px; }
 .subject { margin: 0; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
-.topic { margin: 2px 0 0; font-size: 15px; color: var(--muted); }
+.topic { margin: var(--space-1) 0 0; font-size: 15px; color: var(--muted); }
 
 .card {
   background: var(--card);
@@ -190,6 +190,22 @@ body {
 }
 
 .prompt { margin: 0; white-space: pre-line; }  /* keep line breaks written in the question */
+
+/* Practice screens (sub-topics, topic, Tagged, a question, practice results): cards on the shared sizes,
+   one gap between blocks (--space-block), roomier cards from 600px. */
+#screen-subtopics .card, #screen-topic .card, #screen-tagged .card, #screen-question .card, #screen-results .card {
+  padding: var(--space-4); border-radius: var(--radius-lg); margin-bottom: var(--space-block);
+}
+@media (min-width: 600px) {
+  #screen-subtopics .card, #screen-topic .card, #screen-tagged .card, #screen-question .card, #screen-results .card { padding: var(--space-5); }
+}
+#screen-subtopics .screen-subtitle, #screen-topic .screen-subtitle, #screen-tagged .screen-subtitle, #screen-results .screen-subtitle { margin-bottom: var(--space-5); }
+#screen-subtopics .subject-list, #screen-topic .subject-list, #screen-tagged .subject-list { gap: var(--space-grid); }
+#screen-subtopics .subject-card, #screen-topic .subject-card, #screen-tagged .subject-card {
+  min-height: 64px; gap: var(--space-3); padding: var(--space-4); border-radius: var(--radius-lg);
+}
+#screen-topic .topics-label { margin-top: var(--space-section); }
+#topic-start, #topic-rule, #tagged-start, #results-again, #results-home { margin-bottom: var(--space-block); }
 
 /* ---------- Reading text: one shared style ----------
    Every block of question or case text she reads has the class "reading-text":
@@ -215,7 +231,7 @@ body {
    so her highlights stay on the same words, but never shown. Applies to every section,
    wherever it's shown: fill in the blank (Quiz, Show answer, Read) and a rule's full text. */
 .section-heading {
-  display: block; margin-bottom: 10px; padding-bottom: 8px;
+  display: block; margin-bottom: var(--space-3); padding-bottom: var(--space-2);
   border-bottom: 1px solid var(--border);  /* the thin divider between heading and content */
 }
 .section-label { font-weight: 700; color: var(--text); }  /* "SEC. 4.": bold, same color as the title */
@@ -311,14 +327,14 @@ body {
 
 /* ALAC answer: each part gets a small heading. */
 .alac { margin: 0; }
-.alac dt { font-weight: 700; margin-top: 14px; }
+.alac dt { font-weight: 700; margin-top: var(--space-4); }
 .alac dt:first-child { margin-top: 0; }
-.alac dd { margin: 2px 0 0; }
+.alac dd { margin: var(--space-1) 0 0; }
 
 /* Key points with large, easy-to-tap checkboxes. */
 .key-points { list-style: none; margin: 0; padding: 0; }
 .key-points li + li { border-top: 1px solid var(--border); }
-.key-points label { display: flex; gap: 12px; align-items: flex-start; padding: 10px 0; cursor: pointer; }
+.key-points label { display: flex; gap: var(--space-3); align-items: flex-start; min-height: 44px; padding: var(--space-3) 0; cursor: pointer; }
 .key-points input { width: 22px; height: 22px; margin-top: 2px; flex-shrink: 0; accent-color: var(--got); }
 
 /* Buttons: big enough to tap comfortably with a thumb. */
@@ -326,43 +342,43 @@ body {
   display: block;
   width: 100%;
   min-height: 48px;
-  padding: 12px 16px;
+  padding: var(--space-3) var(--space-4);
   border: 2px solid transparent;
-  border-radius: 12px;
+  border-radius: var(--radius-md);
   font: inherit;
   font-weight: 600;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
 }
-.btn-primary { background: var(--primary); color: var(--on-primary); font-weight: 700; margin-bottom: 16px; }
+.btn-primary { background: var(--primary); color: var(--on-primary); font-weight: 700; margin-bottom: var(--space-4); }
 
-.rating { margin-top: 8px; }
-.rating-buttons { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.rating { margin-top: var(--space-2); }
+.rating-buttons { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-3); }
 /* Fill in the blank: the "Blanks" dropdown (how much is hidden), above the text. */
-.fb-level { display: flex; align-items: center; gap: 10px; margin: 0 0 12px; }
+.fb-level { display: flex; align-items: center; gap: var(--space-3); margin: 0 0 var(--space-3); }
 .fb-level-title { font-weight: 600; }
 .fb-level-select {
   flex: 1; min-width: 0; font: inherit; font-size: 16px; /* 16px: iPhone won't zoom in */
-  padding: 10px 12px; border: 2px solid var(--primary-edge); border-radius: 10px;
+  min-height: 44px; padding: var(--space-2) var(--space-3); border: 2px solid var(--primary-edge); border-radius: var(--radius-md);
   background: var(--card); color: var(--primary-text);
 }
 .fb-level-select:disabled { opacity: 0.6; }
 /* "↻ New": hide different words at the same level. Grayed out (but still tappable,
    to say why) when it can't change anything. */
-.fb-new-row { display: flex; justify-content: flex-end; margin: -2px 0 12px; }
+.fb-new-row { display: flex; justify-content: flex-end; margin: 0 0 var(--space-3); }
 .fb-new-btn {
-  min-height: 40px; padding: 6px 14px;
-  border: 2px solid var(--primary-edge); border-radius: 10px;
+  min-height: 44px; padding: var(--space-1) var(--space-4);
+  border: 2px solid var(--primary-edge); border-radius: var(--radius-md);
   background: var(--card); color: var(--primary-text);
   font: inherit; font-size: 16px; font-weight: 600; cursor: pointer; -webkit-tap-highlight-color: transparent;
 }
 .fb-new-btn.off { opacity: 0.4; }
-.fb-new-note { margin: -4px 0 12px; text-align: right; font-size: 14px; color: var(--muted); }
-.fb-level-note { margin: 12px 0 0; font-size: 14px; color: var(--muted); }
+.fb-new-note { margin: calc(-1 * var(--space-1)) 0 var(--space-3); text-align: right; font-size: 14px; color: var(--muted); }
+.fb-level-note { margin: var(--space-3) 0 0; font-size: 14px; color: var(--muted); }
 /* Fill in the blank: the Quiz / Read switch (two halves of one rounded bar). */
-.fb-view, .seg-switch { display: grid; grid-template-columns: 1fr 1fr; margin: 0 0 14px; border: 2px solid var(--primary-edge); border-radius: 10px; overflow: hidden; }
+.fb-view, .seg-switch { display: grid; grid-template-columns: 1fr 1fr; margin: 0 0 var(--space-4); border: 2px solid var(--primary-edge); border-radius: var(--radius-md); overflow: hidden; }
 .fb-view-btn, .seg-btn {
-  padding: 9px 6px; border: none; background: var(--card); color: var(--primary-text);
+  min-height: 44px; padding: var(--space-2); border: none; background: var(--card); color: var(--primary-text);
   font: inherit; font-size: 16px; font-weight: 600; cursor: pointer; -webkit-tap-highlight-color: transparent;
 }
 .fb-view-btn[aria-pressed="true"], .seg-btn[aria-pressed="true"] { background: var(--primary); color: var(--on-primary); font-weight: 700; }
@@ -371,7 +387,7 @@ body {
 /* After "Show answer": Got it / Missed it, styled like the essay buttons.
    (Their own class, not .btn-rate: the essay rating buttons' code listens to .btn-rate.) */
 .fb-ratings { grid-template-columns: repeat(2, 1fr); }
-.btn-fbrate { background: var(--card); padding: 12px 6px; }
+.btn-fbrate { background: var(--card); padding: var(--space-3) var(--space-2); }
 .btn-fbrate.got { border-color: var(--got); color: var(--got); }
 .btn-fbrate.missed { border-color: var(--missed); color: var(--missed); }
 .btn-fbrate.got.selected { background: var(--got); color: var(--card); }
@@ -420,7 +436,7 @@ body {
   color: var(--text); background: var(--primary-soft); border-radius: 3px;
   text-decoration: underline var(--primary); text-underline-offset: 3px;
 }
-.btn-rate { background: var(--card); padding: 12px 6px; }
+.btn-rate { background: var(--card); padding: var(--space-3) var(--space-2); }
 .btn-rate.got { border-color: var(--got); color: var(--got); }
 .btn-rate.partly { border-color: var(--partly); color: var(--partly); }
 .btn-rate.missed { border-color: var(--missed); color: var(--missed); }
@@ -428,7 +444,7 @@ body {
 .btn-rate.partly.selected { background: var(--partly); color: var(--card); }
 .btn-rate.missed.selected { background: var(--missed); color: var(--card); }
 
-.rating-result { margin: 12px 0 0; text-align: center; color: var(--muted); }
+.rating-result { margin: var(--space-3) 0 0; text-align: center; color: var(--muted); }
 
 /* ---------- Screen titles ---------- */
 .screen-title { margin: 4px 0 4px; font-size: clamp(26px, 22px + 1.5vw, 32px); line-height: 1.2; color: var(--heading); }
@@ -888,14 +904,14 @@ button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
 .test-summary.is-problem { color: var(--missed); }
 
 /* ---------- Bookmark button (top right of each question) ---------- */
-.question-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+.question-header { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--space-3); margin-bottom: var(--space-block); }
 .bookmark-btn {
   flex-shrink: 0;
-  min-height: 40px;
-  padding: 8px 12px;
+  min-height: 44px;
+  padding: var(--space-2) var(--space-3);
   background: var(--card);
   border: 1px solid var(--border);
-  border-radius: 20px;
+  border-radius: var(--radius-pill);
   color: var(--muted);
   font: inherit;
   font-size: 14px;
@@ -908,12 +924,13 @@ button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
 /* ---------- Color tag: three dots under the Bookmark button ---------- */
 /* The look of a tag color lives here: anything showing a tag uses .tag-dot (the
    buttons) or .tag-mark (a small dot in a list), with data-tag="green" / "yellow" / "red". */
-.question-actions { flex-shrink: 0; display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
-.tag-picker { display: flex; gap: 8px; }
+.question-actions { flex-shrink: 0; display: flex; flex-direction: column; align-items: flex-end; gap: var(--space-2); }
+.tag-picker { display: flex; gap: var(--space-3); }
 [data-tag="green"]  { --tag-color: var(--tag-green); }
 [data-tag="yellow"] { --tag-color: var(--tag-yellow); }
 [data-tag="red"]    { --tag-color: var(--tag-red); }
 .tag-dot {
+  position: relative;  /* its tap area (::after) is 44px around the 34px dot */
   width: 34px; height: 34px; padding: 0;
   border: 2px solid var(--tag-color); border-radius: 50%;
   background: color-mix(in srgb, var(--tag-color) 18%, var(--card));
@@ -925,6 +942,7 @@ button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
 .tag-dot [data-icon] { display: none; }
 .tag-dot[aria-pressed="true"] [data-icon] { display: inline-flex; }
 .tag-dot .icon { width: 18px; height: 18px; vertical-align: middle; }
+.tag-dot::after { content: ""; position: absolute; inset: -5px; border-radius: 50%; }
 /* A small dot in her tag color, at the start of a question card in a list. */
 .tag-mark {
   flex-shrink: 0; width: 16px; height: 16px; border-radius: 50%;
@@ -934,20 +952,20 @@ button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
 
 /* ---------- Practice: top bar with Back and "Question 1 of 3" ---------- */
 .question-topbar { display: flex; align-items: center; justify-content: space-between; }
-.progress { margin: 0 0 8px; font-size: 14px; color: var(--muted); }
+.progress { margin: 0 0 var(--space-2); font-size: 14px; color: var(--muted); }
 
 /* ---------- Multiple-choice answer buttons ---------- */
-.choices { display: grid; gap: 10px; margin-bottom: 16px; }
+.choices { display: grid; gap: var(--space-3); margin-bottom: var(--space-block); }
 .choice {
   display: flex;
   align-items: flex-start;
-  gap: 12px;
+  gap: var(--space-3);
   width: 100%;
   min-height: 56px;
-  padding: 14px;
+  padding: var(--space-4);
   background: var(--card);
   border: 2px solid var(--primary-edge);
-  border-radius: 12px;
+  border-radius: var(--radius-md);
   color: var(--text);
   font: inherit;
   text-align: left;
@@ -971,13 +989,13 @@ button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
 /* Her pick before she submits: thick blue border and a filled letter circle. */
 .choice.selected { border-color: var(--primary); }
 .choice.selected .choice-letter { background: var(--primary); border-color: var(--primary); color: var(--on-primary); font-weight: 700; }
-#submit-answer { margin-bottom: 16px; }
+#submit-answer, #show-answer, #fb-show, #fb-peek { margin-bottom: var(--space-block); }
 .choice.right { border-color: var(--got); }
 .choice.right .choice-letter { background: var(--got); border-color: var(--got); color: var(--card); }
 .choice.wrong { border-color: var(--missed); }
 .choice.wrong .choice-letter { background: var(--missed); border-color: var(--missed); color: var(--card); }
 
-.feedback-title { margin: 0 0 14px; font-size: 19px; font-weight: 700; }
+.feedback-title { margin: 0 0 var(--space-3); font-size: 19px; font-weight: 700; }
 .got-text { color: var(--got); }
 .partly-text { color: var(--partly); }
 .missed-text { color: var(--missed); }
@@ -986,19 +1004,17 @@ button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
 .btn-rate:disabled:not(.selected) { opacity: 0.45; }
 .btn-rate.selected:disabled { opacity: 1; }
 
-.next-btn { margin-top: 20px; }
-
 /* ---------- Results ---------- */
 .big-score { margin: 0; font-size: 36px; font-weight: 700; line-height: 1.1; color: var(--heading); text-align: center; }
 #results-mcq .count-label, .rating-summary .count-label { text-align: center; }
-.rating-summary { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.rating-summary { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-3); }
 .rating-summary .big-score.got-text { color: var(--got); }
 .rating-summary .big-score.partly-text { color: var(--partly); }
 .rating-summary .big-score.missed-text { color: var(--missed); }
 /* Previous / Next on the question screen: side by side, the shared button look. */
-.question-nav { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 20px 0 16px; }
+.question-nav { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3); margin: var(--space-block) 0; }
 .question-nav .btn { margin: 0; }  /* the row has the spacing; both buttons the same size */
-.btn-secondary { background: var(--card); color: var(--primary-text); border-color: var(--primary-edge); margin-bottom: 16px; }
+.btn-secondary { background: var(--card); color: var(--primary-text); border-color: var(--primary-edge); margin-bottom: var(--space-4); }
 
 /* ---------- Error message ---------- */
 .error {
@@ -1185,8 +1201,8 @@ a.btn { text-align: center; text-decoration: none; }
 .note-preview { display: block; margin-top: 4px; font-size: 15px; font-weight: 400; color: var(--text); }
 
 /* "Read the case" buttons under a question */
-.question-cases { margin-top: 8px; }
-.question-cases .btn { margin-bottom: 10px; }
+.question-cases { margin-top: var(--space-2); }
+.question-cases .btn { margin-bottom: var(--space-3); }
 
 /* Case cards (subject screen) and linked-question cards (case screen) */
 .card-detail { display: block; margin-top: 3px; font-size: 14px; font-weight: 400; color: var(--muted); }
@@ -1196,11 +1212,12 @@ a.btn { text-align: center; text-decoration: none; }
 /* ---------- "Find in case" (question screen) ---------- */
 .find-btn {
   display: inline-block;
-  margin-top: 14px;
-  padding: 8px 14px;
+  min-height: 44px;
+  margin-top: var(--space-4);
+  padding: var(--space-2) var(--space-4);
   background: transparent;
   border: 1.5px solid var(--border);
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   color: var(--primary-text);
   font: inherit;
   font-size: 15px;
@@ -1229,24 +1246,24 @@ a.btn { text-align: center; text-decoration: none; }
   flex-direction: column;
   height: 55vh;
   height: 55dvh;
-  max-width: 640px;
+  max-width: var(--w-read);
   margin: 0 auto;
   background: var(--card);
-  border-radius: 18px 18px 0 0;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
   box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.18);
   transform: translateY(100%);
   transition: transform 0.28s ease;
 }
 .sheet.open { transform: translateY(0); }
 .sheet.dragging { transition: none; }
-.sheet-grab { padding: 8px 18px 4px; touch-action: none; cursor: grab; }
-.sheet-handle { width: 40px; height: 5px; margin: 0 auto 10px; border-radius: 3px; background: var(--border); }
-.sheet-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.sheet-grab { padding: var(--space-2) var(--space-4) var(--space-1); touch-action: none; cursor: grab; }
+.sheet-handle { width: 40px; height: 5px; margin: 0 auto var(--space-3); border-radius: var(--radius-pill); background: var(--border); }
+.sheet-head { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); }
 .sheet-head .label { margin: 0; }
 .sheet-close {
   flex-shrink: 0;
-  width: 36px;
-  height: 36px;
+  width: 44px;
+  height: 44px;
   border: none;
   border-radius: 50%;
   background: var(--bg);
@@ -1254,23 +1271,23 @@ a.btn { text-align: center; text-decoration: none; }
   font-size: 16px;
   cursor: pointer;
 }
-.sheet-case { margin: 4px 0 0; font-weight: 400; font-size: 15px; }  /* the case name inside is a .case-title */
+.sheet-case { margin: var(--space-1) 0 0; font-weight: 400; font-size: 15px; }  /* the case name inside is a .case-title */
 .sheet-body {
   flex: 1;
   overflow-y: auto;
   overscroll-behavior: contain;   /* scrolling here doesn't scroll the page behind */
   -webkit-overflow-scrolling: touch;
-  padding: 8px calc(18px + var(--safe-right)) calc(24px + var(--safe-bottom)) calc(18px + var(--safe-left));
+  padding: var(--space-2) calc(var(--space-4) + var(--safe-right)) calc(var(--space-5) + var(--safe-bottom)) calc(var(--space-4) + var(--safe-left));
 }
 .sheet-note {
-  margin: 8px 0 4px;
-  padding: 10px 12px;
-  border-radius: 10px;
+  margin: var(--space-2) 0 var(--space-1);
+  padding: var(--space-3);
+  border-radius: var(--radius-md);
   background: var(--banner-bg);
   color: var(--banner-text);
   font-size: 14px;
 }
-.sheet-part { margin: 0 0 8px; color: var(--muted); font-size: 14px; font-weight: 600; }
+.sheet-part { margin: 0 0 var(--space-2); color: var(--muted); font-size: 14px; font-weight: 600; }
 .sheet-text { white-space: pre-wrap; overflow-wrap: anywhere; line-height: 1.6; }
 .sheet-text .find-match { font-weight: 700; font-style: italic; }
 .sheet-text .find-gap { color: var(--muted); }
@@ -1402,7 +1419,7 @@ body.sheet-open { overflow: hidden; }
     transform: translateX(100%);
   }
   .sheet.open { transform: translateX(0); }
-  .sheet-grab { padding-top: 18px; cursor: default; touch-action: auto; }
+  .sheet-grab { padding-top: var(--space-4); cursor: default; touch-action: auto; }
   .sheet-handle { display: none; }
   .sheet-backdrop { display: none !important; }
   body.sheet-open { overflow: visible; padding-right: 400px; }
@@ -1462,11 +1479,11 @@ body.sheet-open { overflow: hidden; }
     cursor: pointer; -webkit-tap-highlight-color: transparent;
   }
   /* ⚙️ Settings: on the home screen only, just left of ☰. */
-  .settings-btn { display: none; right: calc(68px + var(--safe-right)); }
-  .search-btn { right: calc(120px + var(--safe-right)); }
+  .settings-btn { display: none; right: calc(var(--gutter) + 44px + var(--space-2) + var(--safe-right)); }
+  .search-btn { right: calc(var(--gutter) + 2 * (44px + var(--space-2)) + var(--safe-right)); }
   body[data-screen="screen-home"] .settings-btn { display: block; }
   /* The question screen's "Question 1 of 48" moves left to make room for ☰. */
-  .question-topbar { padding-right: 56px; }
+  .question-topbar { padding-right: calc(44px + var(--space-3)); }
   .sidebar {
     width: min(300px, 85vw);
     transform: translateX(-100%); visibility: hidden;
