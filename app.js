@@ -637,6 +637,13 @@ function modeCountLabel(n, mode) {
   return countLabel(n);
 }
 
+// A topic or sub-topic card shows only the number ("36"); the words stay in the card's
+// spoken label for screen readers ("Writ of Amparo, 36 essay questions").
+function showCardCount(card, howMany, name, n, mode) {
+  howMany.textContent = String(n);
+  card.setAttribute("aria-label", name + ", " + modeCountLabel(n, mode));
+}
+
 document.querySelectorAll('input[name="question-mode"]').forEach(function (radio) {
   radio.addEventListener("change", function () {
     document.getElementById("list-empty").hidden = true;
@@ -727,7 +734,7 @@ function openSubtopics(topic) {
     name.textContent = subtopicLabel(subtopic, topic);
     const howMany = document.createElement("span");
     howMany.className = "topic-count";
-    howMany.textContent = modeCountLabel(questionsForTopic(subject, topic, mode, subtopic).length, mode);
+    showCardCount(card, howMany, name.textContent, questionsForTopic(subject, topic, mode, subtopic).length, mode);
     const arrow = document.createElement("span");
     arrow.className = "subject-arrow";
     arrow.textContent = "›";
@@ -840,7 +847,7 @@ function makeTopicCard(subject, topic) {
   const howMany = document.createElement("span");
   howMany.className = "topic-count";
   const mode = currentMode();
-  howMany.textContent = modeCountLabel(questionsForTopic(subject, topic, mode).length, mode);
+  showCardCount(card, howMany, topic, questionsForTopic(subject, topic, mode).length, mode);
   const arrow = document.createElement("span");
   arrow.className = "subject-arrow";
   arrow.textContent = "›";
