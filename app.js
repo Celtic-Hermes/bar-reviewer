@@ -91,7 +91,7 @@ document.addEventListener("touchstart", function () {}, { passive: true });
 // Only one screen is visible at a time.
 function showScreen(id) {
   saveAllNotes();  // leaving a screen with a notes box: save what she typed first
-  ["screen-home", "screen-subject", "screen-subtopics", "screen-topic", "screen-tagged", "screen-tests", "screen-test-create", "screen-test", "screen-test-results", "screen-question", "screen-results", "screen-case", "screen-rule", "screen-notes", "screen-settings", "screen-schedule", "screen-search", "screen-syllabus", "screen-clarify"].forEach(function (screenId) {
+  ["screen-home", "screen-subject", "screen-subtopics", "screen-topic", "screen-tagged", "screen-tests", "screen-test-create", "screen-test", "screen-test-results", "screen-test-review", "screen-question", "screen-results", "screen-case", "screen-rule", "screen-notes", "screen-settings", "screen-schedule", "screen-search", "screen-syllabus", "screen-clarify"].forEach(function (screenId) {
     document.getElementById(screenId).hidden = (screenId !== id);
   });
   window.scrollTo(0, 0);
@@ -259,6 +259,11 @@ function rememberSpot() {
   if (shownScreen === "screen-test" && typeof testSpotId === "function") {
     spot.testId = testSpotId();  // the test she's taking (tests.js); its answers live in progress.tests
   }
+  if (shownScreen === "screen-test-review" && typeof reviewSpot === "function" && reviewSpot()) {
+    const r = reviewSpot();  // a finished test's review: which test, which filter, which question
+    spot.testId = r.id;
+    spot.review = { filter: r.filter, pos: r.pos };
+  }
   if (shownScreen === "screen-test-results" && typeof testResultsSpotId === "function") {
     spot.testId = testResultsSpotId();  // the finished test whose results she's looking at
   }
@@ -369,6 +374,15 @@ function putBackSpot(spot) {
   if (spot.screen === "test") {
     if (typeof openTest === "function" && typeof spot.testId === "string") {
       openTest(spot.testId);  // the same question, her answers (all saved in the test); gone: the Tests screen
+    } else {
+      openSubject(currentSubject);
+    }
+    return true;
+  }
+  if (spot.screen === "test-review") {
+    const r = isPlainObject(spot.review) ? spot.review : {};
+    if (typeof openTestReview === "function" && typeof spot.testId === "string") {
+      openTestReview(spot.testId, r.filter, r.pos);  // a bad filter or position: All, the first question
     } else {
       openSubject(currentSubject);
     }

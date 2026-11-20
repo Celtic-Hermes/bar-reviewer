@@ -525,9 +525,64 @@
       <h2 class="label">By topic</h2>
       <section class="card test-breakdown" id="test-breakdown"></section>
 
-      <button type="button" class="btn btn-primary" id="test-review" disabled>Review answers</button>
-      <p class="tests-note test-review-note">Reviewing each answer comes in the next step.</p>
+      <button type="button" class="btn btn-primary" id="test-review">Review answers</button>
       <button type="button" class="btn btn-secondary" id="test-results-done">Back to Tests</button>
+    </section>
+
+    <!-- SCREEN 2h: Review a finished test's answers (tests.js openTestReview): read-only -->
+    <section id="screen-test-review" hidden>
+      <div class="question-topbar">
+        <button class="back-btn" id="test-review-back"><span data-icon="chevron-left"></span> Results</button>
+        <p class="progress" id="test-review-progress"></p>
+      </div>
+      <div class="seg-switch review-filter" id="review-filter" role="group" aria-label="Show">
+        <button type="button" class="seg-btn" data-filter="all" aria-pressed="true"></button>
+        <button type="button" class="seg-btn" data-filter="wrong" aria-pressed="false"></button>
+        <button type="button" class="seg-btn" data-filter="flagged" aria-pressed="false"></button>
+        <button type="button" class="seg-btn" data-filter="none" aria-pressed="false"></button>
+      </div>
+      <div class="test-tools">
+        <button type="button" class="test-tool-btn" id="review-list-btn" aria-expanded="false" aria-controls="review-list">Question list</button>
+      </div>
+      <section class="card test-map" id="review-list" aria-label="Question list" hidden>
+        <div class="test-map-grid" id="review-list-grid"></div>
+        <ul class="test-map-legend" aria-label="What the squares mean">
+          <li><span class="test-cell test-cell-sample is-right" aria-hidden="true">1<span class="review-cell-mark"><span data-icon="check"></span></span></span> Right</li>
+          <li><span class="test-cell test-cell-sample is-wrong" aria-hidden="true">2<span class="review-cell-mark">✗</span></span> Wrong</li>
+          <li><span class="test-cell test-cell-sample" aria-hidden="true">3</span> Unanswered</li>
+          <li><span class="test-cell test-cell-sample is-current" aria-hidden="true">4</span> You are here</li>
+        </ul>
+      </section>
+      <p class="card empty-note" id="review-empty" hidden></p>
+
+      <div id="review-body">
+        <p class="feedback-title review-result" id="review-result"></p>
+        <p class="subject" id="review-subject"></p>
+        <p class="topic" id="review-topic"></p>
+        <p class="status-unverified status-badge" id="review-draft-badge" hidden>Unverified</p>
+        <p class="notes-badge" id="review-notes-badge" hidden></p>
+        <p class="notes-source review-source" id="review-source" hidden></p>
+
+        <section class="card">
+          <h2 class="label" id="review-label">Question</h2>
+          <p class="prompt reading-text" id="review-prompt"></p>
+          <p class="fb-level-note" id="review-fb-note" hidden></p>
+        </section>
+        <div class="choices" id="review-choices" hidden></div>
+        <section class="card" id="review-full-card" hidden>
+          <h2 class="label">Full text</h2>
+          <p class="prompt fb-full reading-text" id="review-full"></p>
+        </section>
+        <section class="card" id="review-explain-card" hidden>
+          <h2 class="label" id="review-explain-label">Explanation</h2>
+          <p class="prompt reading-text" id="review-explain"></p>
+        </section>
+      </div>
+
+      <div class="question-nav">
+        <button class="btn btn-secondary" id="review-prev">‹ Previous</button>
+        <button class="btn btn-primary" id="review-next">Next ›</button>
+      </div>
     </section>
 
     <!-- SCREEN 3: Practice (one question) -->

@@ -7,6 +7,7 @@
 // shown, every answer and her place saved in the test at once. Nothing counts yet (that's at submit).
 // Step 4: Flag and the question map.
 // Step 5: End test (askEndTest / endTest): grade, count her answers once, show the results.
+// Step 6: Review answers (openTestReview): every question with her answer and the right one; read-only.
 // Uses things from app.js: currentSubject, sourceView, questionsFor, topicsFor, subtopicsFor,
 // inSubtopic, subtopicLabel, OTHER_SUBTOPIC, FB_LEVELS, FB_LEVEL_LABELS, countLabel,
 // modeCountLabel, viewSuffix, shuffled, askConfirm, showScreen, openSubject, setIconLabel;
@@ -637,8 +638,11 @@ function pickTestHidden(level) {
 }
 
 // Put the boxes in, like applyFbLevel in app.js (one box per word, punctuation outside it).
-function drawTestBlanks(hidden, level, typed) {
-  testFb.words.forEach(function (w, n) {
+// "info" and "container": another item's words and box (the review screen); default: the test screen.
+function drawTestBlanks(hidden, level, typed, info, container) {
+  info = info || testFb;
+  container = container || document.getElementById("test-prompt");
+  info.words.forEach(function (w, n) {
     const hide = hidden.indexOf(n) !== -1 && !(w.inHeading && !w.isBlank);
     if (!hide && !w.isBlank) { return; }   // a word that stays: leave it as drawn
     w.span.classList.toggle("fb-blank", hide);
@@ -666,7 +670,7 @@ function drawTestBlanks(hidden, level, typed) {
       w.span.textContent = w.answer ? w.text.replace(BLANK, w.answer) : w.text;  // a key term shown at this level
     }
   });
-  document.querySelectorAll("#test-prompt .fb-input").forEach(sizeBlankBox);
+  container.querySelectorAll(".fb-input").forEach(sizeBlankBox);
 }
 
 // Typing in a box: grow it and save what she typed in the test (nothing is checked).
@@ -956,4 +960,312 @@ document.getElementById("test-results-back").addEventListener("click", function 
 document.getElementById("test-results-done").addEventListener("click", function () {
   resultsTestId = null;
   openTests();
+});
+
+document.getElementById("test-review").addEventListener("click", function () {
+  if (resultsTestId) { openTestReview(resultsTestId, "all", 0); }
+});
+
+// ---------- Review answers (a finished test, read-only) ----------
+// One question at a time, filtered by All / Wrong / Flagged / Unanswered, with Previous / Next
+// and a Question list to jump. Shows her answer next to the right one, the explanation and
+// source (multiple choice), or her typed words marked right / wrong per box and the full text
+// with the hidden words in bold (fill in the blank). Nothing here is recorded or changed.
+const REVIEW_FILTERS = ["all", "wrong", "flagged", "none"];
+const REVIEW_FILTER_NAMES = { all: "All", wrong: "Wrong", flagged: "Flagged", none: "Unanswered" };
+let review = null;   // { id, filter, pos }
+
+function reviewSpot() { return review ? { id: review.id, filter: review.filter, pos: review.pos } : null; }
+
+function resultOf(test, id) {
+  return test.results && test.results[id] ? test.results[id] : { r: "none", g: "" };
+}
+
+// The test's question numbers (0, 1, 2…) that the filter shows.
+function reviewList(test, filter) {
+  const list = [];
+  test.qIds.forEach(function (id, i) {
+    const r = resultOf(test, id).r;
+    if (filter === "all" || (filter === "flagged" ? test.flags.indexOf(id) !== -1 : r === filter)) { list.push(i); }
+  });
+  return list;
+}
+
+function openTestReview(id, filter, pos) {
+  const test = findTest(id);
+  if (!test || test.state !== "done") { openTests(); return false; }
+  currentSubject = test.subject;
+  resultsTestId = test.id;   // Back goes to these results
+  if (REVIEW_FILTERS.indexOf(filter) === -1 || reviewList(test, filter).length === 0) { filter = "all"; }
+  const count = reviewList(test, filter).length;
+  pos = (typeof pos === "number" && Math.floor(pos) === pos && pos >= 0 && pos < count) ? pos : 0;
+  review = { id: test.id, filter: filter, pos: pos };
+  setReviewListOpen(false);
+  setIconLabel(document.getElementById("test-review-back"), "chevron-left", "Results");
+  showReviewQuestion();
+  return true;
+}
+
+function showReviewQuestion() {
+  const test = review ? findTest(review.id) : null;
+  if (!test) { openTests(); return; }
+  const list = reviewList(test, review.filter);
+  // The filter buttons, with their counts (an empty one can't be picked).
+  document.querySelectorAll("#review-filter .seg-btn").forEach(function (btn) {
+    const f = btn.dataset.filter;
+    const n = reviewList(test, f).length;
+    btn.textContent = "";
+    const name = document.createElement("span");
+    name.className = "review-filter-name";
+    name.textContent = REVIEW_FILTER_NAMES[f];
+    const num = document.createElement("span");
+    num.className = "review-filter-count";
+    num.textContent = String(n);
+    btn.append(name, num);
+    btn.disabled = n === 0 && f !== "all";
+    btn.setAttribute("aria-pressed", f === review.filter ? "true" : "false");
+    btn.setAttribute("aria-label", REVIEW_FILTER_NAMES[f] + ", " + n);
+  });
+  const empty = list.length === 0;
+  document.getElementById("review-empty").hidden = !empty;
+  document.getElementById("review-empty").textContent = "Nothing to show here.";
+  document.getElementById("review-body").hidden = empty;
+  if (empty) { showScreen("screen-test-review"); return; }
+  if (review.pos >= list.length) { review.pos = list.length - 1; }
+  const i = list[review.pos];
+  const id = test.qIds[i];
+  const one = resultOf(test, id);
+  document.getElementById("test-review-progress").textContent = "Question " + (review.pos + 1) + " of " + list.length +
+    (review.filter === "all" ? "" : " · test question " + (i + 1));
+  document.getElementById("review-prev").disabled = review.pos === 0;
+  document.getElementById("review-next").disabled = review.pos >= list.length - 1;
+
+  // The result, in words (and a mark), never by color alone.
+  const result = document.getElementById("review-result");
+  result.textContent = "";
+  result.className = "feedback-title review-result " + (one.r === "right" ? "got-text" : (one.r === "wrong" ? "missed-text" : "review-none"));
+  if (one.r === "right") {
+    const svg = icon("check");
+    if (svg instanceof Node) { svg.classList.add("icon-lead"); result.appendChild(svg); }
+    result.append("Right");
+  } else {
+    result.append(one.r === "wrong" ? "✗ Wrong" : "Unanswered");
+  }
+  if (test.flags.indexOf(id) !== -1) {
+    const flag = document.createElement("span");
+    flag.className = "review-flagged";
+    const svg = icon("flag");
+    if (svg instanceof Node) { svg.classList.add("icon-lead"); flag.appendChild(svg); }
+    flag.append("Flagged");
+    result.append(" ", flag);
+  }
+
+  const question = questionById(id);
+  showReviewParts(test, question, one);
+  if (!document.getElementById("review-list").hidden) { showReviewList(test, list); }
+  showScreen("screen-test-review");
+}
+
+function showReviewParts(test, question, one) {
+  const prompt = document.getElementById("review-prompt");
+  const choices = document.getElementById("review-choices");
+  const fullCard = document.getElementById("review-full-card");
+  const explainCard = document.getElementById("review-explain-card");
+  const note = document.getElementById("review-fb-note");
+  choices.hidden = true;
+  choices.innerHTML = "";
+  fullCard.hidden = true;
+  explainCard.hidden = true;
+  note.hidden = true;
+  const ok = question && (question.type === "mcq" || question.type === "fillblank");
+  document.getElementById("review-subject").textContent = ok ? question.subject : test.subject;
+  document.getElementById("review-topic").textContent = ok ? [question.topic, subtopicOf(question)].filter(Boolean).join(" · ") : one.g;
+  document.getElementById("review-draft-badge").hidden = !ok || !showsUnverified(question);
+  const view = ok ? viewOf(question) : "official";
+  const badge = document.getElementById("review-notes-badge");
+  badge.textContent = view === "notes" ? "From class notes" : (view === "notebooklm" ? "From NotebookLM" : "");
+  badge.hidden = view === "official";
+  const sourceLine = document.getElementById("review-source");
+  sourceLine.textContent = ok ? reviewSourceLine(question, view) : "";
+  sourceLine.hidden = sourceLine.textContent === "";
+  if (!ok) {
+    document.getElementById("review-label").textContent = "Question";
+    prompt.textContent = "No longer in the app.";
+    return;
+  }
+  document.getElementById("review-label").textContent = question.type === "mcq" ? "Multiple choice" : "Fill in the blank";
+  if (question.type === "mcq") { showReviewMcq(test, question, prompt, choices); } else { showReviewFillBlank(test, question, prompt, note); }
+  const discussion = typeof question.explanation === "string" ? question.explanation.trim() : "";
+  explainCard.hidden = !discussion;
+  document.getElementById("review-explain-label").textContent = question.type === "mcq" ? "Explanation" : "Discussion";
+  setRichText(document.getElementById("review-explain"), discussion);
+}
+
+// The source, in one short line: "Class notes · file · part", NotebookLM's note, or the case / rule.
+function reviewSourceLine(question, view) {
+  const source = isPlainObject(question.source) ? question.source : {};
+  if (view === "notebooklm") { return "NotebookLM · answer checked against the official text (see Basis)"; }
+  const bits = view === "notes" ? ["Class notes", source.file, source.part] : [source.caseTitle, source.grNumber, source.part];
+  return bits.filter(function (x) { return typeof x === "string" && x; }).join(" · ");
+}
+
+function showReviewMcq(test, question, prompt, choices) {
+  prompt.textContent = "";
+  prompt.appendChild(richText(question.prompt));
+  const picked = test.answers[question.id];
+  const all = isPlainObject(question.choices) ? question.choices : {};
+  ["A", "B", "C", "D"].forEach(function (letter) {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "choice";
+    button.disabled = true;
+    const mark = document.createElement("span");
+    mark.className = "choice-letter";
+    mark.textContent = letter;
+    const text = document.createElement("span");
+    text.className = "choice-text";
+    setRichText(text, all[letter]);
+    const tags = [];
+    if (letter === question.correct) {
+      button.classList.add("right");
+      const svg = icon("check");
+      if (svg instanceof Node) { mark.textContent = ""; mark.appendChild(svg); }
+      tags.push("Correct answer");
+    }
+    if (letter === picked) {
+      tags.push("Your answer");
+      if (letter !== question.correct) {
+        button.classList.add("wrong");
+        mark.textContent = "✗";
+      }
+    }
+    if (tags.length) {
+      const tag = document.createElement("span");
+      tag.className = "choice-tag";
+      tag.textContent = tags.join(" · ");
+      text.prepend(tag);
+    }
+    button.setAttribute("aria-label", letter + ". " + (tags.length ? tags.join(", ") + ". " : "") + text.textContent.replace(tags.join(" · "), ""));
+    button.append(mark, text);
+    choices.appendChild(button);
+  });
+  choices.hidden = false;
+}
+
+function showReviewFillBlank(test, question, prompt, note) {
+  const info = fbWordsIn(prompt, question);
+  const hidden = test.hidden && Array.isArray(test.hidden[question.id]) ? test.hidden[question.id] : null;
+  if (!hidden) {
+    // She never opened this item, so no boxes were ever made: just the full text.
+    note.textContent = "You didn't open this item during the test.";
+    note.hidden = false;
+    prompt.textContent = "";
+    prompt.appendChild(richText(question.fullText || question.prompt));
+    return;
+  }
+  const typed = isPlainObject(test.answers[question.id]) ? test.answers[question.id] : {};
+  drawTestBlanks(hidden, test.level, typed, info, prompt);
+  const answers = {};
+  (testBoxAnswers(question, hidden, test.level) || []).forEach(function (b) { answers[b.key] = b.answer; });
+  let right = 0;
+  let total = 0;
+  prompt.querySelectorAll(".fb-input").forEach(function (box) {
+    box.readOnly = true;
+    box.tabIndex = -1;
+    const answer = answers[box.dataset.word];
+    if (answer === undefined) { return; }
+    total += 1;
+    const good = sameAnswer(box.value, answer);
+    if (good) { right += 1; }
+    box.classList.add(good ? "fb-right" : "fb-wrong");
+    box.setAttribute("aria-label", good ? "Right" : "Wrong. The answer is: " + answer);
+  });
+  note.textContent = "You typed " + right + " of " + total + (total === 1 ? " blank" : " blanks") + " correctly · " +
+    (FB_LEVEL_NAMES[test.level] || "");
+  note.hidden = false;
+  const full = typeof question.fullText === "string" ? question.fullText : "";
+  setRichText(document.getElementById("review-full"), full ? reviewAnswerText(question, info, hidden, test.level)
+    : "The full text for this item hasn't been added yet.");
+  document.getElementById("review-full-card").hidden = false;
+}
+
+// The item's text with the hidden words in **bold** (like answerText in app.js, for these words).
+function reviewAnswerText(question, info, hidden, level) {
+  const full = question.fullText;
+  if (!info.usable || full.indexOf("**") !== -1 || question.prompt.indexOf("**") !== -1) { return full; }
+  let n = 0;
+  return question.prompt.split(/(\s+)/).map(function (bit) {
+    if (bit === "" || /^\s+$/.test(bit)) { return bit; }
+    const w = info.words[n];
+    const hide = hidden.indexOf(n) !== -1;
+    n += 1;
+    if (!w) { return bit; }
+    if (w.isBlank) { return bit.replace(BLANK, hide ? markedAnswer(w, level) : w.answer); }
+    if (!hide) { return bit; }
+    const m = bit.match(/^([^A-Za-zÀ-ÿ0-9]*)(.*?)([^A-Za-zÀ-ÿ0-9]*)$/);
+    return m[1] + "**" + m[2] + "**" + m[3];
+  }).join("");
+}
+
+// The Question list: one square per question in the filter, marked right (check) / wrong (✗) / unanswered.
+function showReviewList(test, list) {
+  const grid = document.getElementById("review-list-grid");
+  grid.innerHTML = "";
+  list.forEach(function (i, pos) {
+    const id = test.qIds[i];
+    const r = resultOf(test, id).r;
+    const cell = document.createElement("button");
+    cell.type = "button";
+    cell.className = "test-cell" + (r === "right" ? " is-right" : (r === "wrong" ? " is-wrong" : "")) + (pos === review.pos ? " is-current" : "");
+    cell.textContent = String(i + 1);
+    const mark = document.createElement("span");
+    mark.className = "review-cell-mark";
+    if (r === "right") {
+      const svg = icon("check");
+      if (svg instanceof Node) { mark.appendChild(svg); cell.appendChild(mark); }
+    } else if (r === "wrong") {
+      mark.textContent = "✗";
+      cell.appendChild(mark);
+    }
+    cell.setAttribute("aria-label", "Question " + (i + 1) + ", " + (r === "right" ? "right" : (r === "wrong" ? "wrong" : "unanswered")) +
+      (test.flags.indexOf(id) !== -1 ? ", flagged" : "") + (pos === review.pos ? ", you are here" : ""));
+    if (pos === review.pos) { cell.setAttribute("aria-current", "true"); }
+    cell.addEventListener("click", function () {
+      setReviewListOpen(false);
+      review.pos = pos;
+      showReviewQuestion();
+    });
+    grid.appendChild(cell);
+  });
+}
+
+function setReviewListOpen(open) {
+  document.getElementById("review-list").hidden = !open;
+  document.getElementById("review-list-btn").setAttribute("aria-expanded", open ? "true" : "false");
+  const test = review ? findTest(review.id) : null;
+  if (open && test) { showReviewList(test, reviewList(test, review.filter)); }
+}
+
+document.getElementById("review-list-btn").addEventListener("click", function () {
+  setReviewListOpen(document.getElementById("review-list").hidden);
+});
+document.querySelectorAll("#review-filter .seg-btn").forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    if (!review || btn.disabled || review.filter === btn.dataset.filter) { return; }
+    review.filter = btn.dataset.filter;
+    review.pos = 0;
+    showReviewQuestion();
+  });
+});
+document.getElementById("review-prev").addEventListener("click", function () {
+  if (review && review.pos > 0) { review.pos -= 1; showReviewQuestion(); }
+});
+document.getElementById("review-next").addEventListener("click", function () {
+  if (review) { review.pos += 1; showReviewQuestion(); }
+});
+document.getElementById("test-review-back").addEventListener("click", function () {
+  const id = review ? review.id : resultsTestId;
+  review = null;
+  setReviewListOpen(false);
+  if (!id || !openTestResults(id)) { openTests(); }
 });
