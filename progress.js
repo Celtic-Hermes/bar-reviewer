@@ -28,6 +28,12 @@
 //                 missing = Other);
 //              s: subject (optional); l: what the title opens (optional: "subject:<name>" or
 //              "topic:<subject>|<topic>"); off: 1 if it's a Day off. See cleanSchedule.
+//   tests:     her tests (tests.js), a list: [ { "id": "t-…", "subject", "view" ("official" / "notes" /
+//              "notebooklm"), "made" (ISO date), "all" (true if every topic was picked), "picks": [ { "t": topic, "s": sub-topic or null } ],
+//              "type" ("mcq" / "fillblank" / "both"), "level" (fill in the blank difficulty ID),
+//              "limit" (minutes, 0 = untimed), "qIds" (question IDs, in the test's shuffled order),
+//              "index", "answers", "flags", "used" (seconds), "state" ("open" / "done"),
+//              "finished" (done only) } ]. At most 5 open and 30 done (the newest). See cleanTests.
 //   streakBest: her longest streak of study days ever (kept here, since "daily" only
 //              keeps 400 days)
 //   notes:     her own notes on a case or a rule, by its ID:
@@ -268,8 +274,101 @@ function cleanNotes(value) {
   return clean;
 }
 
+// ---------- Her tests (tests.js) ----------
+// progress.tests: a list of tests, each { id, subject, view, made, all, picks, type, level, limit,
+// qIds, index, answers, flags, used, state, finished }. Only question IDs are stored, never
+// question text. At most TESTS_OPEN_MAX unfinished ("open") and TESTS_DONE_MAX finished
+// ("done") tests are kept: the newest ones. Anything unusable is dropped; never throws.
+const TESTS_OPEN_MAX = 5;
+const TESTS_DONE_MAX = 30;
+const TEST_TYPES = ["mcq", "fillblank", "both"];      // "both" = multiple choice + fill in the blank
+const TEST_VIEWS = ["official", "notes", "notebooklm"];
+const TEST_LIMIT_MAX = 600;                         // minutes (0 = untimed)
+const TEST_QUESTIONS_MAX = 500;
+const TEST_ID = /^t-[a-z0-9]{1,20}$/;
+const TEST_QUESTION_ID = /^(q|pq|nq)-\d+$/;
+
+function isIsoDate(text) {
+  return typeof text === "string" && text.length <= 40 && !isNaN(new Date(text).getTime());
+}
+
+function cleanTest(t) {
+  if (!t || typeof t !== "object" || Array.isArray(t)) { return null; }
+  if (typeof t.id !== "string" || !TEST_ID.test(t.id)) { return null; }
+  if (typeof t.subject !== "string" || !t.subject || t.subject.length > 100) { return null; }
+  if (!isIsoDate(t.made)) { return null; }
+  const qIds = [];
+  (Array.isArray(t.qIds) ? t.qIds : []).forEach(function (id) {
+    if (typeof id === "string" && TEST_QUESTION_ID.test(id) && qIds.indexOf(id) === -1 && qIds.length < TEST_QUESTIONS_MAX) { qIds.push(id); }
+  });
+  if (qIds.length === 0) { return null; }
+  const picks = [];
+  (Array.isArray(t.picks) ? t.picks : []).forEach(function (pick) {
+    if (!pick || typeof pick.t !== "string" || !pick.t || pick.t.length > 200) { return; }
+    picks.push({ t: pick.t, s: (typeof pick.s === "string" && pick.s.length <= 200) ? pick.s : null });
+  });
+  const answers = {};
+  if (t.answers && typeof t.answers === "object" && !Array.isArray(t.answers)) {
+    Object.keys(t.answers).forEach(function (id) {
+      if (qIds.indexOf(id) === -1) { return; }
+      const a = t.answers[id];
+      if (["A", "B", "C", "D"].indexOf(a) !== -1) {
+        answers[id] = a;  // a multiple-choice pick
+      } else if (a && typeof a === "object" && !Array.isArray(a)) {
+        const typed = {};  // fill in the blank: box key -> what she typed
+        Object.keys(a).forEach(function (key) {
+          if (/^\d+(\.\d+)?$/.test(key) && typeof a[key] === "string") { typed[key] = a[key].slice(0, 200); }
+        });
+        answers[id] = typed;
+      }
+    });
+  }
+  const flags = [];
+  (Array.isArray(t.flags) ? t.flags : []).forEach(function (id) {
+    if (qIds.indexOf(id) !== -1 && flags.indexOf(id) === -1) { flags.push(id); }
+  });
+  const limit = wholeNumberOrZero(t.limit);
+  const index = wholeNumberOrZero(t.index);
+  const test = {
+    id: t.id,
+    subject: t.subject,
+    view: TEST_VIEWS.indexOf(t.view) !== -1 ? t.view : "official",
+    made: t.made,
+    all: t.all === true,   // she picked every topic ("All topics")
+    picks: picks,
+    type: TEST_TYPES.indexOf(t.type) !== -1 ? t.type : "both",
+    level: FB_LEVEL_IDS.indexOf(t.level) !== -1 ? t.level : "key",
+    limit: Math.min(limit, TEST_LIMIT_MAX),
+    qIds: qIds,
+    index: index < qIds.length ? index : 0,
+    answers: answers,
+    flags: flags,
+    used: wholeNumberOrZero(t.used),   // seconds of test time used so far
+    state: t.state === "done" ? "done" : "open"
+  };
+  if (test.state === "done") { test.finished = isIsoDate(t.finished) ? t.finished : t.made; }
+  return test;
+}
+
+function cleanTests(value) {
+  if (!Array.isArray(value)) { return []; }
+  const seen = {};
+  const tests = [];
+  value.forEach(function (t) {
+    let test = null;
+    try { test = cleanTest(t); } catch (e) { test = null; }
+    if (test && !seen[test.id]) { seen[test.id] = true; tests.push(test); }
+  });
+  function newest(list, field, max) {
+    return list.sort(function (a, b) { return new Date(b[field]) - new Date(a[field]); }).slice(0, max);
+  }
+  const open = newest(tests.filter(function (t) { return t.state === "open"; }), "made", TESTS_OPEN_MAX);
+  const done = newest(tests.filter(function (t) { return t.state === "done"; }), "finished", TESTS_DONE_MAX);
+  return open.concat(done);
+}
+
 function emptyProgress() {
-  return { subjects: {}, review: {}, bookmarks: {}, tags: {}, notes: {}, highlights: {}, highlightColors: {}, daily: {}, results: {}, settings: {}, schedule: {}, streakBest: 0 };
+  return { subjects: {}, review: {}, bookmarks: {}, tags: {}, notes: {}, highlights: {}, highlightColors: {}, daily: {}, results: {}, settings: {}, schedule: {}, tests: [], streakBest: 0 };
 }
 
 // Read saved progress. If there's none, or it's damaged, start fresh instead of crashing.
@@ -289,6 +388,7 @@ function loadProgress() {
       results: cleanResults(data.results),
       settings: cleanSettings(data.settings),
       schedule: cleanSchedule(data.schedule),
+      tests: cleanTests(data.tests),
       streakBest: wholeNumberOrZero(data.streakBest),
       highlights: cleanHighlights(data.highlights),
       highlightColors: cleanHighlightColors(data.highlightColors)
@@ -969,6 +1069,7 @@ function readBackup(text) {
   clean.results = cleanResults(p.results);
   clean.settings = cleanSettings(p.settings);
   clean.schedule = cleanSchedule(p.schedule);  // older backups have none: it starts empty
+  clean.tests = cleanTests(p.tests);  // older backups have no tests: none
   clean.streakBest = wholeNumberOrZero(p.streakBest);
   // Backups made before a subject moved: follow the move.
   followMovedSubjects(clean.subjects);
@@ -986,6 +1087,7 @@ function restoreProgress(newProgress) {
   progress = newProgress;
   progress.settings = cleanSettings(progress.settings);  // never trust settings as they come
   progress.schedule = cleanSchedule(progress.schedule);  // nor the schedule
+  progress.tests = cleanTests(progress.tests);  // nor her tests
   return saveProgress();
 }
 

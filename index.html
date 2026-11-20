@@ -389,16 +389,78 @@
       <p class="subject" id="tests-subject"></p>
       <h1 class="screen-title">Tests</h1>
       <p class="screen-subtitle">Answers stay hidden until you finish. Then review every question.</p>
-      <button type="button" class="btn btn-primary" id="tests-create" disabled>Create a test</button>
-      <p class="tests-soon" id="tests-soon">Making a test is the next step being built.</p>
+      <button type="button" class="btn btn-primary" id="tests-create">Create a test</button>
 
       <h2 class="label tests-heading">Unfinished</h2>
       <div class="subject-list" id="tests-unfinished"></div>
+      <p class="tests-soon" id="tests-soon" role="status" hidden>Taking a test is the next step being built.</p>
       <p class="card empty-note" id="tests-unfinished-empty">No unfinished tests.</p>
 
       <h2 class="label tests-heading">Finished</h2>
       <div class="subject-list" id="tests-finished"></div>
       <p class="card empty-note" id="tests-finished-empty">No finished tests yet.</p>
+    </section>
+
+    <!-- SCREEN 2e: Create a test (tests.js openTestCreate): what's in it, type, how many, timer -->
+    <section id="screen-test-create" hidden>
+      <button class="back-btn" id="test-create-back"><span data-icon="chevron-left"></span> Tests</button>
+      <p class="subject" id="test-create-subject"></p>
+      <h1 class="screen-title">Create a test</h1>
+      <p class="screen-subtitle">Pick what goes in. The questions come in random order.</p>
+
+      <h2 class="label settings-group">Question type</h2>
+      <section class="card settings-card">
+        <div class="mode-options test-type-options" id="test-type" role="radiogroup" aria-label="Question type">
+          <label><input type="radio" name="test-type" value="mcq"><span>Multiple choice</span></label>
+          <label><input type="radio" name="test-type" value="fillblank"><span>Fill in the blank</span></label>
+          <label><input type="radio" name="test-type" value="both"><span>Both</span></label>
+        </div>
+        <div class="setting-row" id="test-level-row">
+          <div class="setting-text">
+            <label class="setting-label" for="test-level">Difficulty</label>
+            <p class="setting-desc">How much of each fill-in-the-blank item is hidden.</p>
+          </div>
+          <div class="setting-control"><select id="test-level"></select></div>
+        </div>
+      </section>
+
+      <h2 class="label settings-group">Topics</h2>
+      <section class="card settings-card test-picks">
+        <label class="test-pick test-pick-all"><input type="checkbox" id="test-all"><span class="test-pick-name">Select all</span><span class="test-pick-count" id="test-all-count"></span></label>
+        <div id="test-pick-list"></div>
+      </section>
+
+      <h2 class="label settings-group">Number of questions</h2>
+      <section class="card settings-card">
+        <div class="mode-options" id="test-count" role="radiogroup" aria-label="Number of questions">
+          <label><input type="radio" name="test-count" value="10"><span>10</span></label>
+          <label><input type="radio" name="test-count" value="20"><span>20</span></label>
+          <label><input type="radio" name="test-count" value="30"><span>30</span></label>
+          <label><input type="radio" name="test-count" value="50"><span>50</span></label>
+          <label><input type="radio" name="test-count" value="all"><span id="test-count-all">All</span></label>
+        </div>
+      </section>
+
+      <h2 class="label settings-group">Timer</h2>
+      <section class="card settings-card">
+        <div class="setting-row">
+          <div class="setting-text">
+            <label class="setting-label" for="test-timed">Timed</label>
+            <p class="setting-desc">The timer pauses whenever you leave the test.</p>
+          </div>
+          <div class="setting-control"><input type="checkbox" class="switch" id="test-timed" checked></div>
+        </div>
+        <div class="setting-row" id="test-limit-row">
+          <div class="setting-text">
+            <label class="setting-label" for="test-limit">Time limit (minutes)</label>
+            <p class="setting-desc" id="test-limit-desc"></p>
+          </div>
+          <div class="setting-control"><input type="number" id="test-limit" inputmode="numeric" min="1" max="600" step="1"></div>
+        </div>
+      </section>
+
+      <p class="test-summary" id="test-summary" role="status"></p>
+      <button type="button" class="btn btn-primary" id="test-make">Create test</button>
     </section>
 
     <!-- SCREEN 3: Practice (one question) -->
