@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Brings questions from NotebookLM into the app, in two steps, with a check against the
-official text in between (done by the notebooklm-importer agent, or by hand).
+official text in between (done by the notebooklm-agent agent, or by hand).
 
     python3 tools/import-notebooklm.py            # 1. stage: read the inbox, check the shape, give IDs
     python3 tools/import-notebooklm.py --status   #    show what is waiting
@@ -216,7 +216,7 @@ def stage():
     warned = [e["item"]["id"] for e in staged if e["review"].get("copyWarning")]
     if warned:
         print("Copies a source too closely (rewrite before publishing): " + ", ".join(warned))
-    print("Next: check each one against the official text (the notebooklm-importer agent does this), then run --publish.")
+    print("Next: check each one against the official text (the notebooklm-agent agent does this), then run --publish.")
     return 0
 
 
