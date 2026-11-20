@@ -325,6 +325,14 @@ Whenever the builder asks to add a new case, follow this checklist without being
 9. **Cache version:** bump `CACHE_VERSION` in `sw.js` only if an app file changed (see Technical choices). Adding a case normally changes only data files, so no bump.
 10. **Commit and report:** one commit for the case (or one per step if it was split), then tell the builder what was added, the IDs used, the full-text file size, and anything that needs a person to check.
 
+### When the builder sends a list of cases
+Treat it as several "Adding a new case" jobs and follow the checklist above for **every** case, without being reminded:
+1. **Read the list back first:** each case's name and G.R. / A.C. number, in the list's order. Say which ones are **already in the app** (same number in `data/catalog.json`'s `cases`) and skip them. A case given only by name is looked up on LawPhil; if more than one decision could match, or the number and name don't agree, ask before doing that one. Never guess a G.R. number.
+2. **Announce all the IDs up front:** for each case, its case ID and its 8 question IDs, consecutive, from the "Next free IDs" line of `python3 tools/check-content.py`.
+3. **One case at a time, in order:** the full checklist (steps 2–9), then **one commit per case**, so each case is its own save point.
+4. **If a case's text can't be fetched** (or anything else stops it), don't guess: skip it, note why, and carry on with the rest. Its IDs aren't used, so the next case takes the next free ones (tell the builder the IDs changed).
+5. **Report at the end:** a short table: case, case ID, question IDs, full-text file size, and added / skipped (with the reason); then everything a person should check, and which cases need the text pasted in.
+
 ## Adding a new rule (fill-in-the-blank, default procedure)
 For a procedural rule or a Rules of Court rule (like the Rule on the Writ of Amparo), memorized as fill-in-the-blank items. Follow this checklist without being reminded; the content rules above still apply to every step.
 
