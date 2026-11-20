@@ -90,6 +90,28 @@ document.addEventListener("touchstart", function () {}, { passive: true });
 
 // ---------- Switching screens ----------
 // Only one screen is visible at a time.
+
+// The page width for each screen (Layout system in CLAUDE.md): "list" screens use --w-list (1200px),
+// "read" screens --w-read (720px), so text keeps a comfortable line length. Not listed = "read".
+const PAGE_KIND = {
+  // "list" only for screens with a real grid of cards (they use the extra width well);
+  // single-column screens stay at the reading width, so nothing is stretched just to fill space.
+  "screen-home": "list", "screen-subject": "list", "screen-schedule": "list",
+  "screen-subtopics": "read", "screen-topic": "read", "screen-tagged": "read", "screen-tests": "read",
+  "screen-test-create": "read", "screen-test-results": "read", "screen-test-review": "read",
+  "screen-search": "read", "screen-syllabus": "read",
+  "screen-question": "read", "screen-results": "read", "screen-test": "read", "screen-case": "read",
+  "screen-rule": "read", "screen-notes": "read", "screen-settings": "read", "screen-clarify": "read"
+};
+
+function showPageKind(id) {
+  const page = document.querySelector(".page");
+  if (!page) { return; }
+  const list = PAGE_KIND[id] === "list";
+  page.classList.toggle("page-list", list);
+  page.classList.toggle("page-read", !list);
+}
+
 function showScreen(id) {
   saveAllNotes();  // leaving a screen with a notes box: save what she typed first
   ["screen-home", "screen-subject", "screen-subtopics", "screen-topic", "screen-tagged", "screen-tests", "screen-test-create", "screen-test", "screen-test-results", "screen-test-review", "screen-question", "screen-results", "screen-case", "screen-rule", "screen-notes", "screen-settings", "screen-schedule", "screen-search", "screen-syllabus", "screen-clarify"].forEach(function (screenId) {
@@ -98,6 +120,7 @@ function showScreen(id) {
   window.scrollTo(0, 0);
   shownScreen = id;
   document.body.dataset.screen = id;  // lets style.css lay out wide screens per screen
+  showPageKind(id);                   // the page width: reading or list (PAGE_KIND)
   if (id === "screen-home") { showTodayCard(); showMyNotesButton(); }  // up to date whenever she comes home
   updateSidebar();
   if (typeof testScreenChanged === "function") { testScreenChanged(id); }  // tests.js: the timer runs only on the test screen

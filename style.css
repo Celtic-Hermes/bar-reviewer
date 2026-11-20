@@ -1,3 +1,11 @@
+/* ---------- Layout system (see "Layout system" in CLAUDE.md) ----------
+   Sizes: the spacing scale --space-1 … --space-7, the corners --radius-sm / -md / -lg / -pill, the page
+   edge --gutter (grows with the screen), and two page widths: --w-read (reading screens) and --w-list
+   (list screens). Each screen gets .page-read or .page-list from showScreen (PAGE_KIND in app.js).
+   Breakpoints, the same everywhere: 600px (large phone / small tablet), 1024px (the sidebar appears),
+   1440px (big screen). New CSS never writes a raw px size for spacing, radius or page width.
+   (Older rules still use their own sizes and breakpoints; the next steps move them onto these.) */
+
 /* Colors used across the app. Light mode first, dark mode below. */
 :root {
   --bg: #f4f1ea;
@@ -69,6 +77,12 @@
   --safe-bottom: env(safe-area-inset-bottom, 0px);
   --safe-left: env(safe-area-inset-left, 0px);
   --sidebar-gap: 12px;     /* wide screens: the sidebar floats this far from the top, bottom and left edges */
+  /* Layout system: spacing, corners, page edges and page widths (see the comment at the top). */
+  --space-1: 4px;  --space-2: 8px;  --space-3: 12px;  --space-4: 16px;  --space-5: 24px;  --space-6: 32px;  --space-7: 48px;
+  --radius-sm: 8px;  --radius-md: 12px;  --radius-lg: 16px;  --radius-pill: 999px;
+  --gutter: clamp(16px, 4vw, 40px);  /* the page's left and right edge: 16px on phones, up to 40px on wide screens */
+  --w-read: 720px;   /* reading screens (a question, a case, a rule, notes, Settings…): a comfortable line length */
+  --w-list: 1200px;  /* list screens (Home, a subject, tests, Search, Schedule, Syllabus…) */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -139,12 +153,15 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-/* The main column: narrow and centered, with room for the iPhone notch and home bar. */
+/* The main column: centered, with room for the iPhone notch and home bar. Its width comes from the
+   kind of screen (.page-read / .page-list, set by showScreen in app.js); the sides use --gutter. */
 .page {
-  max-width: 640px;
+  max-width: var(--w-read);
   margin: 0 auto;
-  padding: calc(16px + var(--safe-top)) calc(16px + var(--safe-right)) calc(32px + var(--safe-bottom)) calc(16px + var(--safe-left));
+  padding: calc(var(--space-4) + var(--safe-top)) calc(var(--gutter) + var(--safe-right)) calc(var(--space-6) + var(--safe-bottom)) calc(var(--gutter) + var(--safe-left));
 }
+.page-read { max-width: var(--w-read); }
+.page-list { max-width: var(--w-list); }
 
 .question-header { margin-bottom: 12px; }
 .subject { margin: 0; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
@@ -1304,34 +1321,61 @@ body.sheet-open { overflow: hidden; }
 .case-title { font-weight: 700; }
 
 /* ---------- Wide screens (laptop, desktop, tablet) ----------
-   Phones (narrower than 800px) never see any of this: their layout is unchanged.
-   The column she reads in stays at most 640px wide; only the extra space is used.
+   Page widths come from .page-read / .page-list (Layout system, top of this file).
    body[data-screen] says which screen is showing (set in showScreen in app.js). */
 
 /* Home: the subject cards in 2 columns, then 3 on wider screens (and the top in two columns). */
 @media (min-width: 800px) {
-  body[data-screen="screen-home"] .page { max-width: 900px; }
   #screen-home .subject-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
 }
 @media (min-width: 1280px) {
-  body[data-screen="screen-home"] .page { max-width: 1040px; }
   #screen-home .subject-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   /* The widest: the greeting on the left, the tiles and "Pick up where you stopped" on the right. */
   .home-hero { grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); align-items: center; gap: 32px; }
   .home-greeting { font-size: 44px; }
 }
-/* Big screens: the home stretches into the space next to the sidebar (up to 1600px),
-   and the 8 subjects sit in two full rows of 4. */
+/* Big screens: the 8 subjects sit in two full rows of 4 (the page is --w-list wide). */
 @media (min-width: 1440px) {
-  body[data-screen="screen-home"] .page { max-width: 1600px; }
   #screen-home .subject-list { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
 
+/* Subject screen (Cases · Questions · Study): lists, not reading text, so it stretches into the
+   space next to the sidebar. Phones and iPads in portrait (under 1024px) are unchanged. */
+@media (min-width: 1024px) {
+  /* Questions tab: topic cards side by side, about 2 per row (the list chips stay one row of 3).
+     Study tab: rule, case and note cards the same way (the headings stay full width above).
+     auto-fit: when there are only one or two cards, they stretch to fill the row instead of
+     leaving a lone narrow card. */
+  #topic-list, #study-rules, #study-cases, #study-notes { grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); }
+  #study-rules, #study-cases { margin-bottom: 16px; }
+  /* Cases tab: each case is one wide line. Left: number, title, G.R. · year; middle: the long bar
+     with "N of M questions answered" under it; right: Reset, then Practice / Continue.
+     The two inner wrappers step aside (display: contents) so their parts sit in the row's grid;
+     fixed side columns keep every row's bar lined up. */
+  .case-row {
+    display: grid; grid-template-columns: 2em minmax(0, 1.3fr) minmax(0, 1fr) 44px 7.5rem;
+    grid-template-rows: auto auto; column-gap: 16px; align-items: center; padding: 10px 16px;
+  }
+  .case-row-top, .case-row-foot { display: contents; }
+  .case-row-num { grid-column: 1; grid-row: 1 / span 2; padding-top: 0; }
+  .case-row-open { grid-column: 2; grid-row: 1 / span 2; }
+  .case-bar { grid-column: 3; grid-row: 1; align-self: end; margin: 0; }
+  .case-row-foot .case-row-count { grid-column: 3; grid-row: 2; align-self: start; margin-top: 6px; }
+  .case-row > .case-row-count { grid-column: 3; grid-row: 1 / span 2; margin: 0; }  /* a case with no questions */
+  .case-row-reset { grid-column: 4; grid-row: 1 / span 2; margin: 0; }
+  .case-row-go { grid-column: 5; grid-row: 1 / span 2; justify-self: end; }
+}
+@media (min-width: 1440px) {
+  #topic-list, #study-rules, #study-cases, #study-notes { grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); }  /* about 3 per row */
+}
+
 /* Case screen: her notes and the linked questions in a side panel on the right
-   (moved there by placeCaseSide in app.js). The case text keeps its 640px column. */
+   (moved there by placeCaseSide in app.js). The one documented exception to the two page widths:
+   a reading page plus the panel's 368px, so the case text keeps a reading column (720px minus the
+   gutters = 640px on a wide screen). */
 @media (min-width: 1280px) {
-  body[data-screen="screen-case"] .page { max-width: 1040px; }
-  #screen-case { position: relative; padding-right: 368px; }   /* 1008 - 368 = 640px for the case */
+  body[data-screen="screen-case"] .page-read { max-width: calc(var(--w-read) + 368px); }
+  #screen-case { position: relative; padding-right: 368px; }
   #screen-case > .case-side { position: absolute; top: 0; right: 0; bottom: 0; width: 344px; }
   /* Stays in view while she scrolls; scrolls by itself if it's taller than the window. */
   .case-side-inner {
@@ -1409,7 +1453,7 @@ body.sheet-open { overflow: hidden; }
 @media (max-width: 1023.98px) {
   .page { position: relative; }
   .menu-btn {
-    position: absolute; top: calc(16px + var(--safe-top)); right: calc(16px + var(--safe-right)); z-index: 5;
+    position: absolute; top: calc(var(--space-4) + var(--safe-top)); right: calc(var(--gutter) + var(--safe-right)); z-index: 5;
     width: 44px; height: 44px; padding: 0; border: 1px solid var(--border); border-radius: 12px;
     background: var(--card); color: var(--text); font: inherit; font-size: 20px; line-height: 1;
     cursor: pointer; -webkit-tap-highlight-color: transparent;
@@ -1542,10 +1586,6 @@ body.dialog-open { overflow: hidden; }
 .task-time { flex: 0 0 auto; padding: 2px 8px; border-radius: 999px; font-size: 13px; font-weight: 700; background: var(--primary-soft); color: var(--text); }
 .task-card.done .task-title { text-decoration: line-through; color: var(--muted); }
 .task-card.done .task-time { opacity: 0.7; }
-
-@media (min-width: 800px) {
-  body[data-screen="screen-schedule"] .page { max-width: 1000px; }
-}
 
 /* Study Schedule, step 2: adding, editing and ticking tasks; Day off. */
 .setting-control-wide input[type="text"] { width: 100%; }
