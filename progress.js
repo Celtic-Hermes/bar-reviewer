@@ -29,7 +29,8 @@
 //              s: subject (optional); l: what the title opens (optional: "subject:<name>" or
 //              "topic:<subject>|<topic>"); off: 1 if it's a Day off. See cleanSchedule.
 //   tests:     her tests (tests.js), a list: [ { "id": "t-…", "subject", "view" ("official" / "notes" /
-//              "notebooklm"), "made" (ISO date), "all" (true if every topic was picked), "picks": [ { "t": topic, "s": sub-topic or null } ],
+//              "notebooklm"; the first of "sources" in newer tests), "sources" (where its questions come from:
+//              one or more of "official" / "notes" / "notebooklm"; missing in older tests = [view]), "made" (ISO date), "all" (true if every topic was picked), "picks": [ { "t": topic, "s": sub-topic or null } ],
 //              "type" ("mcq" / "fillblank" / "both"), "level" (fill in the blank difficulty ID),
 //              "limit" (minutes, 0 = untimed), "qIds" (question IDs, in the test's shuffled order),
 //              "index" (the question she's on), "answers" ({ id: "B" } multiple choice, or
@@ -280,7 +281,7 @@ function cleanNotes(value) {
 }
 
 // ---------- Her tests (tests.js) ----------
-// progress.tests: a list of tests, each { id, subject, view, made, all, picks, type, level, limit,
+// progress.tests: a list of tests, each { id, subject, view, sources, made, all, picks, type, level, limit,
 // qIds, index, answers, flags, hidden, used, state, finished, results, counted }. Only question IDs are stored, never
 // question text. At most TESTS_OPEN_MAX unfinished ("open") and TESTS_DONE_MAX finished
 // ("done") tests are kept: the newest ones. Anything unusable is dropped; never throws.
@@ -293,6 +294,12 @@ const TEST_LIMIT_MAX = 600;                         // minutes (0 = untimed)
 const TEST_QUESTIONS_MAX = 500;
 const TEST_ID = /^t-[a-z0-9]{1,20}$/;
 const TEST_QUESTION_ID = /^(q|pq|nq)-\d+$/;
+
+// A test's sources: the known ones, each once, in the usual order; none usable = [its old view].
+function cleanTestSources(value, view) {
+  const list = Array.isArray(value) ? TEST_VIEWS.filter(function (v) { return value.indexOf(v) !== -1; }) : [];
+  return list.length ? list : [view];
+}
 
 function isIsoDate(text) {
   return typeof text === "string" && text.length <= 40 && !isNaN(new Date(text).getTime());
@@ -351,6 +358,8 @@ function cleanTest(t) {
     id: t.id,
     subject: t.subject,
     view: TEST_VIEWS.indexOf(t.view) !== -1 ? t.view : "official",
+    // Where its questions come from (newer tests: one or more sources; older tests: just their view).
+    sources: cleanTestSources(t.sources, TEST_VIEWS.indexOf(t.view) !== -1 ? t.view : "official"),
     made: t.made,
     all: t.all === true,   // she picked every topic ("All topics")
     picks: picks,
@@ -828,10 +837,11 @@ const LAST_SEEN_KEY = "barReviewer.lastSeen.v1";  // when she last used the app 
 // Kept on this device only (not in backups): which subject, topic and sub-topic, and when.
 const LAST_PRACTICE_KEY = "barReviewer.lastPractice.v1";
 
-// "view" is "official", "notes" (the class notes, data/class-notes.json) or "notebooklm" (data/notebooklm.json).
+// "view" is "all" (what the subject screen practices now), or from older saves "official", "notes"
+// (the class notes, data/class-notes.json) or "notebooklm" (data/notebooklm.json).
 // "notes" (true for the class notes) is also kept, as older versions saved only that.
 function savedViewOf(raw) {
-  if (raw.view === "notes" || raw.view === "notebooklm" || raw.view === "official") { return raw.view; }
+  if (raw.view === "all" || raw.view === "notes" || raw.view === "notebooklm" || raw.view === "official") { return raw.view; }
   return raw.notes === true ? "notes" : "official";
 }
 

@@ -27,14 +27,18 @@ let currentSubtopic = null; // the sub-topic she picked, ALL_SUBTOPICS, OTHER_SU
 
 // ---------- Class notes ----------
 // Questions made from class notes (not an official source) live in data/class-notes.json.
-// They are marked classNotes, labeled "From class notes", and kept apart from the official
-// content: they show only when "My class notes" is picked on a subject screen, and never in
-// the official counts. If the file is missing or damaged, the app simply does without them.
+// They are marked classNotes, always labeled "From class notes", and never counted as official
+// content (home counts, mastery, search, schedule links use only the official questions).
+// On a subject's Questions tab they are practiced together with the official questions.
+// If the file is missing or damaged, the app simply does without them.
 const CLASS_NOTES_FILE = "data/class-notes.json";
 // Questions imported from NotebookLM (data/notebooklm.json, IDs nq-0001 …) work the same way:
-// marked notebooklm, labeled "From NotebookLM", shown only when "NotebookLM" is picked.
+// marked notebooklm, always labeled "From NotebookLM", never counted as official.
 const NOTEBOOKLM_FILE = "data/notebooklm.json";
-let sourceView = "official"; // which questions the subject screens show: "official", "notes" or "notebooklm"
+// Which questions the subject screens show: "all" (official + class notes + NotebookLM together,
+// what she sees now: there is no switch anymore), or, only inside withView(), just "official",
+// "notes" or "notebooklm" (e.g. every official-only count). Saved views from older versions are ignored.
+let sourceView = "all";
 const SOURCE_VIEWS = ["official", "notes", "notebooklm"];
 
 function isClassNote(question) {
@@ -52,19 +56,27 @@ function viewOf(question) {
   return "official";
 }
 
-// A saved view name, made safe: anything unknown is "official".
+// The small source label every question shows: "Cases" (official content), "From class notes"
+// or "From NotebookLM" (content rules 7 and 9: never presented as official).
+const SOURCE_LABELS = { official: "Cases", notes: "From class notes", notebooklm: "From NotebookLM" };
+function sourceLabelOf(question) {
+  return SOURCE_LABELS[viewOf(question)];
+}
+
+// A saved view name, made safe: "all" or one source; anything unknown is "official".
 function cleanView(view) {
+  if (view === "all") { return "all"; }
   return SOURCE_VIEWS.indexOf(view) === -1 ? "official" : view;
 }
 
-// " · Notes" / " · NotebookLM" after a screen's subject line (nothing in the official view).
+// " · Notes" / " · NotebookLM" after a screen's subject line (nothing for "all" or "official").
 function viewSuffix() {
   if (sourceView === "notes") { return " · Notes"; }
   if (sourceView === "notebooklm") { return " · NotebookLM"; }
   return "";
 }
 
-// Run fn with the subject screens' view set to "official" or "notes", then put it back.
+// Run fn with the subject screens' view set to one source ("official", "notes", "notebooklm"), then put it back.
 function withView(view, fn) {
   const before = sourceView;
   sourceView = view;
@@ -229,7 +241,7 @@ document.getElementById("sidebar").addEventListener("click", function (event) {
   } else if (go === "clarify") {
     openClarify();
   } else if (go === "subject") {
-    sourceView = "official";
+    sourceView = "all";
     openSubject(link.dataset.subject);
   }
 });
@@ -253,7 +265,7 @@ function rememberSpot() {
     subtopic: currentSubtopic,
     mode: currentMode(),
     notes: sourceView === "notes",  // looking at the class notes (see CLASS_NOTES_FILE)
-    view: sourceView                // "official", "notes" or "notebooklm"
+    view: sourceView                // "all" now (older spots: "official", "notes" or "notebooklm"; ignored)
   };
   if (shownScreen === "screen-subject") {
     spot.tab = shownSubjectTab;  // the subject screen's tab: "cases", "questions" or "study"
@@ -389,14 +401,13 @@ function putBackSpot(spot) {
     return true;
   }
   if (SUBJECTS.concat(MISC_SUBJECTS).indexOf(spot.subject) === -1) { return false; }
-  // Class notes or NotebookLM: only if they loaded; otherwise the official view.
-  const savedView = spot.view !== undefined ? cleanView(spot.view) : (spot.notes === true ? "notes" : "official");
-  sourceView = hasView(spot.subject, savedView) ? savedView : "official";
+  // Older spots saved a view (official / notes / NotebookLM): the subject screens now show all of them.
+  sourceView = "all";
   currentSubject = spot.subject;
   currentTopic = (typeof spot.topic === "string") ? spot.topic : null;
   currentSubtopic = (typeof spot.subtopic === "string") ? spot.subtopic : null;
 
-  setMode(spot.mode);  // older saved spots have no mode: that means "both"
+  setMode(spot.mode);  // there is no question-type switch anymore: always "both" (all types)
 
   if (spot.screen === "subject") {
     if (SUBJECT_TABS.indexOf(spot.tab) !== -1) { subjectTab = spot.tab; }  // older spots have no tab: the remembered one
@@ -562,10 +573,11 @@ function putBackCurrent(saved) {
   rememberSpot();
 }
 
-// A subject's questions in the current view: the official ones, or (with "My class notes" or
-// "NotebookLM" picked) only those.
+// A subject's questions in the current view: all of them ("all"), or only one source inside withView().
 function questionsFor(subject) {
-  return allQuestions.filter(function (q) { return q.subject === subject && viewOf(q) === sourceView; });
+  return allQuestions.filter(function (q) {
+    return q.subject === subject && (sourceView === "all" || viewOf(q) === sourceView);
+  });
 }
 
 // Only the official questions (never the class notes or NotebookLM): for every official count.
@@ -573,11 +585,6 @@ function officialQuestions() {
   return allQuestions.filter(function (q) { return viewOf(q) === "official"; });
 }
 
-// Does this subject have any questions in that view? (The official view always counts as there.)
-function hasView(subject, view) {
-  if (view === "official") { return true; }
-  return allQuestions.some(function (q) { return q.subject === subject && viewOf(q) === view; });
-}
 
 // ---------- Screen 1: Home ----------
 function buildHome() {
@@ -614,7 +621,7 @@ function makeSubjectCard(subject, badge) {
   arrow.textContent = "›";
   card.dataset.subject = subject;
   card.append(number, name, arrow);
-  card.addEventListener("click", function () { sourceView = "official"; openSubject(subject); });
+  card.addEventListener("click", function () { sourceView = "all"; openSubject(subject); });
   return card;
 }
 
@@ -637,19 +644,18 @@ function countLabel(n) {
   return n + (n === 1 ? " question" : " questions");
 }
 
-// ---------- Question type: "essay", "mcq" or "both" ----------
-// Picked on the subject screen. Narrows every round started from a topic,
-// "All topics", "Review missed" or "Bookmarked" to just that type.
+// ---------- Question type: "essay", "mcq", "fillblank" or "both" ----------
+// Practice always uses every type ("both"): the subject screen's old Question type switch was
+// removed. The helpers below still take a mode (Create a test has its own type choice), and an
+// older saved spot's "mode" is simply ignored.
 const QUESTION_MODES = ["essay", "mcq", "fillblank", "both"];  // "both" is shown as "All"
 
 function currentMode() {
-  const picked = document.querySelector('input[name="question-mode"]:checked');
-  return picked ? picked.value : "both";
+  return "both";
 }
 
 function setMode(mode) {
-  if (QUESTION_MODES.indexOf(mode) === -1) { mode = "both"; }
-  document.querySelector('input[name="question-mode"][value="' + mode + '"]').checked = true;
+  // Nothing to set: practice always uses all types.
 }
 
 function fitsMode(question, mode) {
@@ -681,14 +687,6 @@ function showCardCount(card, howMany, name, n, mode) {
   howMany.textContent = String(n);
   card.setAttribute("aria-label", name + ", " + modeCountLabel(n, mode));
 }
-
-document.querySelectorAll('input[name="question-mode"]').forEach(function (radio) {
-  radio.addEventListener("change", function () {
-    document.getElementById("list-empty").hidden = true;
-    showTopicCards(currentSubject);  // update the counts on every card
-    rememberSpot();
-  });
-});
 
 // The questions for a subject + a choice from the subject screen:
 // a topic name, "All topics", "Review missed", or "Bookmarked",
@@ -787,7 +785,7 @@ function openSubtopics(topic) {
 // "Start practice" for just that topic / sub-topic, and the cases filed under it.
 // Cases only appear here (not on the subject screen).
 function casesFor(subject) {
-  if (sourceView !== "official") { return []; }  // class notes and NotebookLM have questions only, no cases
+  if (sourceView === "notes" || sourceView === "notebooklm") { return []; }  // class notes and NotebookLM have no cases
   return allCases.filter(function (c) { return c.subject === subject; });
 }
 
@@ -918,10 +916,9 @@ function makeTopicCard(subject, topic) {
 function openSubject(subject) {
   currentSubject = subject;
   currentSubtopic = null;
-  if (!hasView(subject, sourceView)) { sourceView = "official"; }
+  sourceView = "all";  // the Questions tab practices every source together
   const count = questionsFor(subject).length;
   document.getElementById("subject-title").textContent = subject;
-  showSourceSwitch(subject);
   document.getElementById("list-empty").hidden = true;
 
   // The header's icon (the subject's own; none for a subject without one yet).
@@ -1215,25 +1212,6 @@ function showStudyTab(subject) {
   document.getElementById("study-notes-block").hidden = notes.length === 0;
   document.getElementById("study-empty").hidden = rules.length + cases.length + notes.length > 0;
 }
-
-// "Official / Notes / NotebookLM": shown only when this subject has class-notes or
-// NotebookLM questions, each button only if it has questions here. Switching redraws the subject screen.
-function showSourceSwitch(subject) {
-  const box = document.getElementById("source-switch");
-  box.hidden = !hasView(subject, "notes") && !hasView(subject, "notebooklm");
-  box.querySelectorAll(".seg-btn").forEach(function (btn) {
-    btn.hidden = !hasView(subject, btn.dataset.source);
-    btn.setAttribute("aria-pressed", String(btn.dataset.source === sourceView));
-  });
-}
-
-document.querySelectorAll("#source-switch .seg-btn").forEach(function (btn) {
-  btn.addEventListener("click", function () {
-    if (sourceView === btn.dataset.source) { return; }
-    sourceView = btn.dataset.source;
-    openSubject(currentSubject);
-  });
-});
 
 // The topic cards and her lists on the subject screen (rebuilt when the question type changes).
 function showTopicCards(subject) {
@@ -2593,7 +2571,7 @@ function linkTargetIn(link, view) {
   if (link.indexOf("subject:") === 0) {
     const subject = link.slice(8);
     if (SUBJECTS.concat(MISC_SUBJECTS).indexOf(subject) === -1) { return null; }
-    return { label: subject, open: function () { sourceView = view; openSubject(subject); } };
+    return { label: subject, open: function () { sourceView = "all"; openSubject(subject); } };
   }
   if (link.indexOf("topic:") === 0) {
     const parts = link.slice(6).split("|");  // subject | topic, or subject | topic | sub-topic
@@ -2605,7 +2583,7 @@ function linkTargetIn(link, view) {
     return {
       label: [subject, topic, subtopic].filter(Boolean).join(" · "),
       open: function () {
-        sourceView = view;
+        sourceView = "all";
         currentSubject = subject;
         if (subtopic) { openTopic(topic, subtopic); }
         else if (subtopicsFor(subject, topic).length > 0) { openSubtopics(topic); }
@@ -3258,11 +3236,14 @@ function showEmptyListMessage(topic) {
   if (typeof note.scrollIntoView === "function") { note.scrollIntoView({ block: "nearest" }); }
 }
 
-// The header's line and mastery ring, for this subject (in the current view):
-//   "96 questions · 2 answered · 50% right" ("96 questions available" until she has answered one).
+// The header's line and mastery ring, for this subject:
+//   "201 questions · 2 answered · 50% right" ("201 questions available" until she has answered one).
+//   The line covers every question she practices here (official, class notes and NotebookLM), so
+//   it moves with what she does on the Questions tab.
 //   Answered: how many of its questions she has answered at least once (Reset takes them back off).
 //   Right: of those, how many were right (or "Got it") the last time. Partly and Missed it count as not right.
-//   The ring: how many are mastered (right on two different days in a row), as a percent.
+//   The ring: official questions only (like the home screen's mastery): how many are mastered
+//   (right on two different days in a row), as a percent.
 function showSubjectStats(subject) {
   const questions = questionsFor(subject);
   const answered = questions.filter(function (q) { return progress.results[q.id]; });
@@ -3270,11 +3251,10 @@ function showSubjectStats(subject) {
     const last = progress.results[q.id].last;
     return last === "right" || last === "got";
   }).length;
-  const mastery = masteryOf(questions);
-  const viewWords = sourceView === "notes" ? " from class notes" : (sourceView === "notebooklm" ? " from NotebookLM" : "");
+  const mastery = masteryOf(withView("official", function () { return questionsFor(subject); }));
   document.getElementById("subject-count").textContent = answered.length === 0
-    ? countLabel(questions.length) + (viewWords || " available")
-    : [countLabel(questions.length) + viewWords, answered.length + " answered",
+    ? countLabel(questions.length) + " available"
+    : [countLabel(questions.length), answered.length + " answered",
        Math.round(100 * right / answered.length) + "% right"].join(" · ");
 
   // The ring: mastery as a percent (at least 1% once anything is mastered).
@@ -3293,7 +3273,7 @@ function showSubjectStats(subject) {
 // back to that exact question (putBackRound). Practicing a whole subject = the "All topics" card.
 function lastRoundHere(subject) {
   const last = loadLastRound();
-  if (!last || last.caseId || last.subject !== subject || last.view !== sourceView) { return null; }  // a case's round: the Cases tab
+  if (!last || last.caseId || last.subject !== subject) { return null; }  // a case's round: the Cases tab (any saved view counts: there's no switch now)
   const known = {};
   allQuestions.forEach(function (q) { if (q && q.id) { known[q.id] = true; } });
   return last.round.questionIds.every(function (id) { return known[id]; }) ? last : null;
@@ -3436,8 +3416,8 @@ function showClassNotesLabel(question) {
   const fromNotes = isClassNote(question);
   const fromNotebook = isNotebookLM(question);
   const badge = document.getElementById("notes-badge");
-  badge.hidden = !fromNotes && !fromNotebook;
-  badge.textContent = fromNotebook ? "From NotebookLM" : "From class notes";
+  badge.hidden = false;
+  badge.textContent = sourceLabelOf(question);  // "Cases", "From class notes" or "From NotebookLM"
   const line = document.getElementById("notes-source");
   line.hidden = !fromNotes && !fromNotebook;
   if (fromNotebook) { line.textContent = "NotebookLM · answer checked against the official text (see Basis)"; return; }

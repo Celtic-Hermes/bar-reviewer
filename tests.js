@@ -12,9 +12,9 @@
 // showSubjectTestCard) and the Tests card became "My tests" with counts.
 // Step 7: the timer (startTestTimer / stopTestTimer): counts only while the test is on screen and the
 // app is in view; time's up submits the test like End test.
-// Uses things from app.js: currentSubject, sourceView, questionsFor, topicsFor, subtopicsFor,
+// Uses things from app.js: currentSubject, questionsFor, viewOf, sourceLabelOf, topicsFor, subtopicsFor,
 // inSubtopic, subtopicLabel, OTHER_SUBTOPIC, FB_LEVELS, FB_LEVEL_LABELS, countLabel,
-// modeCountLabel, viewSuffix, shuffled, askConfirm, showScreen, openSubject, setIconLabel;
+// modeCountLabel, shuffled, askConfirm, showScreen, openSubject, setIconLabel;
 // and from progress.js: progress, saveProgress, TESTS_OPEN_MAX, TEST_LIMIT_MAX.
 
 const TEST_DEFAULT_COUNT = 20;
@@ -50,10 +50,17 @@ function testTypeLabel(n, type) {
   return type === "both" ? countLabel(n) : modeCountLabel(n, type);
 }
 
-function testViewLabel(view) {
-  if (view === "notes") { return " · Notes"; }
-  if (view === "notebooklm") { return " · NotebookLM"; }
-  return "";
+// Where a test's questions come from (progress.js cleanTests gives every test "sources"; older
+// tests had one "view"). Nothing for official only; otherwise " · Cases + Notes" and so on.
+const TEST_SOURCE_NAMES = { official: "Cases", notes: "Notes", notebooklm: "NotebookLM" };
+const TEST_SOURCES = ["official", "notes", "notebooklm"];
+function testSourcesOf(test) {
+  return Array.isArray(test.sources) && test.sources.length ? test.sources : [test.view || "official"];
+}
+function testViewLabel(test) {
+  const sources = testSourcesOf(test);
+  if (sources.length === 1 && sources[0] === "official") { return ""; }
+  return " · " + sources.map(function (v) { return TEST_SOURCE_NAMES[v] || v; }).join(" + ");
 }
 
 function makeTestCard(test) {
@@ -69,7 +76,7 @@ function makeTestCard(test) {
   if (test.state === "open" && test.limit > 0 && test.used > 0) {
     timeText = " · " + Math.max(1, Math.ceil(testSecondsLeft(test) / 60)) + " min left";
   }
-  meta.textContent = testTypeLabel(test.qIds.length, test.type) + timeText + testViewLabel(test.view);
+  meta.textContent = testTypeLabel(test.qIds.length, test.type) + timeText + testViewLabel(test);
   const meta2 = document.createElement("span");
   meta2.className = "subject-meta";
   if (test.state === "done") {
@@ -126,9 +133,20 @@ function fitsTestType(question, type) {
   return question.type === "mcq" || question.type === "fillblank";
 }
 
-// The subject's questions a test can use (current view), of a type.
+// The subject's questions a test can use (every source), of a type.
 function testPool(subject, type) {
   return questionsFor(subject).filter(function (q) { return fitsTestType(q, type); });
+}
+
+// The same, only from the sources ticked under "Where from" on Create a test.
+function pickedPool(type) {
+  return testPool(currentSubject, type).filter(function (q) { return testChoices.sources[viewOf(q)] === true; });
+}
+
+// The sources this subject has test questions from (in the order Cases, Notes, NotebookLM).
+function testSourcesHere(subject) {
+  const pool = testPool(subject, "both");
+  return TEST_SOURCES.filter(function (v) { return pool.some(function (q) { return viewOf(q) === v; }); });
 }
 
 function pickKey(pick) { return pick.t + "\u0001" + (pick.s === null ? "" : pick.s); }
@@ -167,7 +185,7 @@ function allPickRows() {
 }
 
 function pickCount(pick) {
-  return testPool(currentSubject, testChoices.type).filter(function (q) { return inPick(q, pick); }).length;
+  return pickedPool(testChoices.type).filter(function (q) { return inPick(q, pick); }).length;
 }
 
 // Where Back goes from Create a test: "subject" (opened from the big card) or "tests" (My tests).
@@ -178,10 +196,13 @@ function openTestCreate(from) {
   testCreateCameFrom = from === "subject" ? "subject" : "tests";
   const subject = currentSubject;
   setIconLabel(document.getElementById("test-create-back"), "chevron-left", testCreateCameFrom === "subject" ? subject : "My tests");
-  document.getElementById("test-create-subject").textContent = subject + viewSuffix();
+  document.getElementById("test-create-subject").textContent = subject;
   const hasMcq = testPool(subject, "mcq").length > 0;
   const groups = testPickRows(subject);
+  const sources = {};
+  testSourcesHere(subject).forEach(function (v) { sources[v] = true; });  // all ticked at first
   testChoices = {
+    sources: sources,
     type: hasMcq ? "mcq" : "fillblank",
     level: TEST_DEFAULT_LEVEL,
     groups: groups,
@@ -208,9 +229,37 @@ function openTestCreate(from) {
   });
   level.value = testChoices.level;
   document.getElementById("test-timed").checked = true;
+  buildTestSources(subject);
   buildTestPickList();
   showTestChoices();
   showScreen("screen-test-create");
+}
+
+// "Where from": one checkbox per source this subject has (Cases / Notes / NotebookLM), all ticked
+// at first; hidden when there's only one. At least one must stay ticked (the summary says so).
+function buildTestSources(subject) {
+  const here = testSourcesHere(subject);
+  const box = document.getElementById("test-sources");
+  box.innerHTML = "";
+  document.getElementById("test-sources-block").hidden = here.length < 2;
+  here.forEach(function (v) {
+    const row = document.createElement("label");
+    row.className = "test-pick";
+    const check = document.createElement("input");
+    check.type = "checkbox";
+    check.dataset.source = v;
+    const name = document.createElement("span");
+    name.className = "test-pick-name";
+    name.textContent = TEST_SOURCE_NAMES[v];
+    const count = document.createElement("span");
+    count.className = "test-pick-count";
+    row.append(check, name, count);
+    check.addEventListener("change", function () {
+      testChoices.sources[v] = check.checked;
+      showTestChoices();
+    });
+    box.appendChild(row);
+  });
 }
 
 function makePickRow(pick, label, extraClass) {
@@ -266,7 +315,7 @@ function buildTestPickList() {
 // The questions her current choices cover (before picking how many).
 function testCovered() {
   const picks = allPickRows().filter(function (r) { return testChoices.picked[pickKey(r)]; });
-  return testPool(currentSubject, testChoices.type).filter(function (q) {
+  return pickedPool(testChoices.type).filter(function (q) {
     return picks.some(function (p) { return inPick(q, p); });
   });
 }
@@ -286,6 +335,15 @@ function suggestedMinutes(questions, n) {
 function showTestChoices() {
   const c = testChoices;
   document.getElementById("test-level-row").hidden = (c.type === "mcq");
+
+  // Where from: each source's box and its count (for the picked type).
+  document.querySelectorAll("#test-sources input[data-source]").forEach(function (box) {
+    const v = box.dataset.source;
+    box.checked = c.sources[v] === true;
+    const n = testPool(currentSubject, c.type).filter(function (q) { return viewOf(q) === v; }).length;
+    box.parentNode.querySelector(".test-pick-count").textContent = String(n);
+  });
+  const anySource = TEST_SOURCES.some(function (v) { return c.sources[v] === true; });
 
   // Each row's count (for the picked type); a row with none can't be ticked.
   document.querySelectorAll("#test-pick-list input[data-key]").forEach(function (box) {
@@ -316,7 +374,7 @@ function showTestChoices() {
   all.disabled = usableRows.length === 0;
   all.checked = usableRows.length > 0 && onRows.length === usableRows.length;
   all.indeterminate = onRows.length > 0 && onRows.length < usableRows.length;
-  document.getElementById("test-all-count").textContent = String(testPool(currentSubject, c.type).length);
+  document.getElementById("test-all-count").textContent = String(pickedPool(c.type).length);
 
   // How many: a choice bigger than what's there can't be picked (then: All).
   const covered = testCovered();
@@ -342,7 +400,8 @@ function showTestChoices() {
   const summary = document.getElementById("test-summary");
   const limit = testLimitValue();
   let problem = "";
-  if (onRows.length === 0) { problem = "Pick at least one topic."; }
+  if (!anySource) { problem = "Pick at least one place the questions come from."; }
+  else if (onRows.length === 0) { problem = "Pick at least one topic."; }
   else if (available === 0) { problem = "There are no questions of this type in what you picked."; }
   else if (c.timed && limit === null) { problem = "Type a time limit from 1 to " + TEST_LIMIT_MAX + " minutes, or switch Timed off."; }
   summary.classList.toggle("is-problem", problem !== "");
@@ -402,10 +461,12 @@ document.getElementById("test-make").addEventListener("click", function () {
   if (n === 0 || limit === null) { showTestChoices(); return; }
   const usableRows = allPickRows().filter(function (r) { return pickCount(r) > 0; });
   const picks = usableRows.filter(function (r) { return c.picked[pickKey(r)]; });
+  const sources = TEST_SOURCES.filter(function (v) { return c.sources[v] === true; });
   const test = {
     id: newTestId(),
     subject: currentSubject,
-    view: sourceView,
+    sources: sources,     // where the questions come from: "official" (Cases), "notes", "notebooklm"
+    view: sources[0],     // kept for older versions of the app (one view per test)
     made: new Date().toISOString(),
     all: picks.length === usableRows.length,
     picks: picks.map(function (r) { return { t: r.t, s: r.s }; }),
@@ -527,10 +588,9 @@ function showTestQuestion() {
   document.getElementById("test-subject").textContent = question.subject;
   document.getElementById("test-topic").textContent = [question.topic, subtopicOf(question)].filter(Boolean).join(" · ");
   document.getElementById("test-draft-badge").hidden = !showsUnverified(question);
-  const view = viewOf(question);
   const badge = document.getElementById("test-notes-badge");
-  badge.textContent = view === "notes" ? "From class notes" : (view === "notebooklm" ? "From NotebookLM" : "");
-  badge.hidden = view === "official";
+  badge.textContent = sourceLabelOf(question);  // "Cases", "From class notes" or "From NotebookLM"
+  badge.hidden = false;
 
   const isMcq = question.type === "mcq";
   document.getElementById("test-question-label").textContent = isMcq ? "Multiple choice" : "Fill in the blank";
@@ -929,7 +989,7 @@ function openTestResults(id, note) {
   currentSubject = test.subject;
   resultsTestId = test.id;
   setIconLabel(document.getElementById("test-results-back"), "chevron-left", "My tests");
-  document.getElementById("test-results-subject").textContent = test.subject + testViewLabel(test.view);
+  document.getElementById("test-results-subject").textContent = test.subject + testViewLabel(test);
   document.getElementById("test-results-sub").textContent = testTitle(test) + " · Finished " + testDate(test.finished);
   const noteBox = document.getElementById("test-results-note");
   noteBox.textContent = note || "";
@@ -1107,8 +1167,8 @@ function showReviewParts(test, question, one) {
   document.getElementById("review-draft-badge").hidden = !ok || !showsUnverified(question);
   const view = ok ? viewOf(question) : "official";
   const badge = document.getElementById("review-notes-badge");
-  badge.textContent = view === "notes" ? "From class notes" : (view === "notebooklm" ? "From NotebookLM" : "");
-  badge.hidden = view === "official";
+  badge.textContent = ok ? sourceLabelOf(question) : "";
+  badge.hidden = !ok;
   const sourceLine = document.getElementById("review-source");
   sourceLine.textContent = ok ? reviewSourceLine(question, view) : "";
   sourceLine.hidden = sourceLine.textContent === "";
@@ -1427,7 +1487,7 @@ window.addEventListener("pagehide", function () { stopTestTimer(); });
 
 // ---------- The subject screen's big card, and the My tests card ----------
 // The big card: "Continue test" (that test's name, "Question N of M", time left) when this subject
-// has an unfinished test in the current view (Official / Notes / NotebookLM): the one she used most
+// has an unfinished test (any sources): the one she used most
 // recently (lastUsed; older tests: when they were made). Otherwise "Create a test", greyed out
 // with the reason when there's nothing here a test can use. Under it, only with Continue test,
 // a small "Create a new test" link. The My tests card counts this subject's tests (all views).
@@ -1442,7 +1502,7 @@ function lastUsedOf(test) {
 }
 
 function continueTestHere(subject) {
-  return testsOf(subject, "open").filter(function (t) { return t.view === sourceView; })
+  return testsOf(subject, "open")
     .sort(function (a, b) { return lastUsedOf(b) - lastUsedOf(a); })[0] || null;
 }
 

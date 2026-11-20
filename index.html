@@ -300,13 +300,6 @@
 
       <!-- Questions tab: the view switch, tests and practice -->
       <div class="subject-panel" id="subject-panel-questions" role="tabpanel" aria-labelledby="subject-tab-questions">
-        <!-- Official / Notes / NotebookLM (internal views official / notes / notebooklm): shown only when the subject has class-notes or NotebookLM questions (app.js showSourceSwitch) -->
-        <div class="seg-switch source-switch" id="source-switch" role="group" aria-label="Which questions" hidden>
-          <button type="button" class="seg-btn" data-source="official" aria-pressed="true">Official</button>
-          <button type="button" class="seg-btn" data-source="notes" aria-pressed="false">Notes</button>
-          <button type="button" class="seg-btn" data-source="notebooklm" aria-pressed="false" hidden>NotebookLM</button>
-        </div>
-
         <div id="topic-area">
           <!-- The one big action: Create a test, or Continue test when one is unfinished here (tests.js showSubjectTestCard) -->
           <button type="button" class="start-card" id="start-card">
@@ -332,17 +325,6 @@
             <span class="subject-name"><span id="practice-continue-title"></span><span class="subject-meta" id="practice-continue-sub"></span></span>
             <span class="subject-arrow" aria-hidden="true">›</span>
           </button>
-
-          <!-- Question type: a bare switch (its title is for screen readers only) -->
-          <fieldset class="mode-picker">
-            <legend class="visually-hidden">Question type</legend>
-            <div class="mode-options">
-              <label><input type="radio" name="question-mode" value="essay"><span>Essay questions</span></label>
-              <label><input type="radio" name="question-mode" value="mcq"><span>Multiple choice</span></label>
-              <label><input type="radio" name="question-mode" value="fillblank"><span>Fill in the blank</span></label>
-              <label><input type="radio" name="question-mode" value="both" checked><span>All</span></label>
-            </div>
-          </fieldset>
 
           <!-- The topic cards ("All topics" first, only when there are two or more topics) -->
           <div class="subject-list" id="topic-list"></div>
@@ -452,6 +434,12 @@
         </div>
       </section>
 
+      <!-- Where the questions come from: Cases (official) / Notes / NotebookLM, only those this subject has
+           (tests.js showTestSources); hidden when it has only one -->
+      <div id="test-sources-block" hidden>
+        <h2 class="label settings-group">Where from</h2>
+        <section class="card settings-card test-picks" id="test-sources" role="group" aria-label="Where from"></section>
+      </div>
       <h2 class="label settings-group">Topics</h2>
       <section class="card settings-card test-picks">
         <label class="test-pick test-pick-all"><input type="checkbox" id="test-all"><span class="test-pick-name">Select all</span><span class="test-pick-count" id="test-all-count"></span></label>
