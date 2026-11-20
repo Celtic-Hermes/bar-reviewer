@@ -896,7 +896,7 @@ button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
 /* Questions from class notes (data/class-notes.json): a soft label, never "Official". */
 .notes-badge { display: inline-block; margin: 6px 0 0; padding: 2px 10px; border-radius: 999px; background: var(--primary-soft); color: var(--text); font-size: 13px; font-weight: 700; }
 .notes-source { margin: 4px 0 0; font-size: 13px; line-height: 1.4; color: var(--muted); }
-.source-switch { margin: 0 0 16px; }
+.source-switch { margin: 0 0 16px; grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 1fr; }  /* two or three buttons, as many as are shown */
 /* Inside a card's small detail line: a bit smaller to fit the line. */
 .card-detail .status-unverified { padding: 1px 8px; font-size: 12px; }
 

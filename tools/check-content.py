@@ -699,7 +699,7 @@ def print_list(lines, show_all):
 #     that also appear in the private content (a quote from the notes), except in
 #     data/class-notes.json, the published class-notes questions (QUOTE_ALLOWED).
 # It never prints the private text itself, only where the match is.
-PRIVATE_DIRS = ["notes/"]
+PRIVATE_DIRS = ["notes/", "imports/"]  # imports/ = raw NotebookLM answers (may quote the notes or reviewers)
 PRIVATE_CONTENT = os.path.join(ROOT, "notes", "private-content")
 QUOTE_WORDS = 12
 QUOTE_ALLOWED = set()  # no committed file may quote the notes (the class-notes questions are written in original wording)
@@ -769,15 +769,16 @@ def check_privacy(message_file=None):
     staged = (_git("diff", "--cached", "--name-only", "-z").stdout or "").split("\0")
     tracked = (_git("ls-files", "-z", "--", *PRIVATE_DIRS).stdout or "").split("\0")
     for path in sorted({p for p in staged + tracked if p and any(p.startswith(d) for d in PRIVATE_DIRS)}):
-        problem(where, "%s is private (notes/) and must never be committed. Unstage it with: git rm --cached \"%s\"" % (path, path))
+        problem(where, "%s is private (notes/ or imports/) and must never be committed. Unstage it with: git rm --cached \"%s\"" % (path, path))
     # 2. .gitignore still hides the private folders.
-    for probe in ("notes/x.pdf", "notes/private-content/x.json"):
+    for probe in ("notes/x.pdf", "notes/private-content/x.json", "imports/notebooklm/x.json"):
         if _git("check-ignore", "-q", probe).returncode != 0:
-            problem(where, ".gitignore no longer ignores %s/; put the line notes/ back." % probe.rsplit("/", 1)[0])
+            problem(where, ".gitignore no longer ignores %s/; put the line %s/ back." % (probe.rsplit("/", 1)[0], probe.split("/", 1)[0]))
     # 3. The offline lists never include private files.
     sw = read_text(os.path.join(ROOT, "sw.js")) or ""
-    if "notes/" in sw:
-        problem(where, "sw.js mentions notes/: private files must never be in APP_FILES or DATA_FILES.")
+    for folder in PRIVATE_DIRS:
+        if folder in sw:
+            problem(where, "sw.js mentions %s: private files must never be in APP_FILES or DATA_FILES." % folder)
     # 4. No quote from the private content in what's being committed (or in the commit message).
     prints = private_fingerprints()
     if not prints:
@@ -979,6 +980,97 @@ def check_for_clarification(class_ids):
     return seen
 
 
+NOTEBOOKLM = os.path.join(DATA, "notebooklm.json")
+NOTEBOOKLM_ISSUED = os.path.join(ROOT, "imports", "notebooklm", "ids-issued.txt")
+
+
+def check_notebooklm(other_ids):
+    """data/notebooklm.json: questions imported from NotebookLM (tools/import-notebooklm.py),
+    labeled "From NotebookLM". The same parts as official questions; IDs nq-0001 … used once
+    and never removed since the last save point; always "draft"; source {"caseTitle": "NotebookLM"};
+    no case links; every answer ends with a **Basis:** line with an https link to the official
+    text; and (when the private notes are on this computer) nothing she reads repeats 8+ words
+    in a row from them. Returns the IDs, or None if there's no file."""
+    if not os.path.exists(NOTEBOOKLM):
+        return None
+    where = "data/notebooklm.json"
+    try:
+        with open(NOTEBOOKLM, encoding="utf-8") as f:
+            data = json.load(f)
+    except (json.JSONDecodeError, UnicodeDecodeError) as e:
+        problem(where, "isn't valid JSON (%s)." % e)
+        return {}
+    questions = data.get("questions") if isinstance(data, dict) else None
+    if not isinstance(questions, list):
+        problem(where, "has no \"questions\" list.")
+        return {}
+
+    def eight(t):
+        w = re.findall(r"[a-z0-9]+", t.lower())
+        return {" ".join(w[i:i + 8]) for i in range(len(w) - 7)}
+    private = ""
+    for name in ("notes-text.txt", "review-questions.md"):
+        private += " " + (read_text(os.path.join(PRIVATE_CONTENT, name)) or "")
+    reviewers = os.path.join(ROOT, "notes", "reviewers")
+    if os.path.isdir(reviewers):
+        for name in sorted(os.listdir(reviewers)):
+            if name.endswith((".txt", ".md")):
+                private += " " + (read_text(os.path.join(reviewers, name)) or "")
+    source_grams = eight(private) if private.strip() else set()
+
+    by_id = {}
+    for q in questions:
+        q_id = q.get("id") if isinstance(q, dict) else None
+        if not isinstance(q_id, str) or not re.fullmatch(r"nq-\d{4}", q_id):
+            problem(where, "an item has the ID %r; NotebookLM IDs look like nq-0001." % (q_id,))
+            continue
+        if q_id in by_id:
+            problem(q_id, "this ID is used twice.")
+            continue
+        by_id[q_id] = q
+        if q.get("status") != "draft":
+            problem(q_id, "status is %r; NotebookLM questions are always \"draft\" (only a person verifies)." % q.get("status"))
+        if q.get("notebooklm") is not True:
+            problem(q_id, "should have \"notebooklm\": true.")
+        check_place(q_id, q)
+        q_type = q.get("type")
+        if q_type not in ["essay", "mcq", "fillblank"]:
+            problem(q_id, "type is %r." % q_type)
+            continue
+        need_text(q_id, q, "prompt")
+        before = len(checks)
+        check_type_parts(q_id, q, q_type)
+        checks[before:] = [c for c in checks[before:] if "section heading the app can find" not in c]
+        if q.get("caseIds") not in ([], None):
+            problem(q_id, "NotebookLM questions link to no case ('caseIds' should be []).")
+        if q.get("source") != {"caseTitle": "NotebookLM"}:
+            problem(q_id, "the source should be just {\"caseTitle\": \"NotebookLM\"}.")
+        rationale = q.get("explanation") if q_type != "essay" else (q.get("suggestedAnswer") or {}).get("conclusion")
+        basis = rationale.split("**Basis:**")[-1] if filled(rationale) and "**Basis:**" in rationale else ""
+        if "https://" not in basis:
+            problem(q_id, "the answer must end with a **Basis:** line with an https link to the official text.")
+        if source_grams:
+            shown = [q.get("explanation", "")] + list((q.get("choices") or {}).values()) + \
+                list((q.get("suggestedAnswer") or {}).values()) + list(q.get("keyPoints") or [])
+            if q_type != "fillblank":
+                shown.append(q.get("prompt", ""))
+            if any(isinstance(t, str) and eight(t) & source_grams for t in shown):
+                problem(q_id, "repeats 8+ words in a row from the private notes or a reviewer (rewrite it in your own words).")
+    clash = sorted(set(by_id) & set(other_ids))
+    if clash:
+        problem(where, "IDs also used elsewhere: %s." % ", ".join(clash))
+    old = _git("show", "HEAD:data/notebooklm.json")
+    if old is not None and old.returncode == 0:
+        try:
+            before_ids = {q.get("id") for q in json.loads(old.stdout).get("questions", []) if isinstance(q, dict)}
+        except (json.JSONDecodeError, AttributeError):
+            before_ids = set()
+        gone = sorted(i for i in before_ids - set(by_id) if isinstance(i, str))
+        if gone:
+            problem(where, "these IDs were in the last save point but are gone now (IDs are never removed): %s." % ", ".join(gone[:10]))
+    return by_id
+
+
 def privacy_only():
     """python3 tools/check-content.py --privacy [--message FILE]: only the private-notes check (used by the git hooks)."""
     msg = sys.argv[sys.argv.index("--message") + 1] if "--message" in sys.argv[:-1] else None
@@ -1015,6 +1107,7 @@ def main():
     quotes_by_id = check_quotes(quotes) if quotes is not None else {}
     private_by_id = check_class_notes(questions_by_id)
     clarify_by_id = check_for_clarification(private_by_id or {})
+    notebook_by_id = check_notebooklm(set(questions_by_id) | set(private_by_id or {}))
     print("Checked %d questions, %d cases, %d rules, %d quotes." % (len(questions_by_id), len(cases_by_id), len(rules_by_id), len(quotes_by_id)))
     print("Next free IDs: %s, %s, %s, %s" % (next_id(questions_by_id, "q"), next_id(cases_by_id, "case"),
                                              next_id(rules_by_id, "rule"), next_id(quotes_by_id, "quote")))
@@ -1024,6 +1117,10 @@ def main():
             print("For clarification (data/for-clarification.json): %d items, kept out of the main set" % len(clarify_by_id))
         print("Class notes (data/class-notes.json): %d questions; next free ID %s"
               % (len(private_by_id), next_id({i: 1 for i in set(private_by_id) | set(ledger)}, "pq")))
+    if notebook_by_id is not None:
+        ledger = (read_text(NOTEBOOKLM_ISSUED) or "").split()
+        print("NotebookLM (data/notebooklm.json): %d questions; next free ID %s"
+              % (len(notebook_by_id), next_id({i: 1 for i in set(notebook_by_id) | set(ledger)}, "nq")))
     print()
     show_all = "--all" in sys.argv
     if checks:

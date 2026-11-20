@@ -694,10 +694,16 @@ const LAST_SEEN_KEY = "barReviewer.lastSeen.v1";  // when she last used the app 
 // Kept on this device only (not in backups): which subject, topic and sub-topic, and when.
 const LAST_PRACTICE_KEY = "barReviewer.lastPractice.v1";
 
-// "notes" is true when it was the class notes (data/class-notes.json), not the official content.
-function saveLastPractice(subject, topic, subtopic, notes) {
+// "view" is "official", "notes" (the class notes, data/class-notes.json) or "notebooklm" (data/notebooklm.json).
+// "notes" (true for the class notes) is also kept, as older versions saved only that.
+function savedViewOf(raw) {
+  if (raw.view === "notes" || raw.view === "notebooklm" || raw.view === "official") { return raw.view; }
+  return raw.notes === true ? "notes" : "official";
+}
+
+function saveLastPractice(subject, topic, subtopic, view) {
   try {
-    localStorage.setItem(LAST_PRACTICE_KEY, JSON.stringify({ subject: subject, topic: topic, subtopic: subtopic || null, notes: Boolean(notes), at: Date.now() }));
+    localStorage.setItem(LAST_PRACTICE_KEY, JSON.stringify({ subject: subject, topic: topic, subtopic: subtopic || null, notes: view === "notes", view: view, at: Date.now() }));
   } catch (e) { /* fine */ }
 }
 
@@ -706,7 +712,7 @@ function loadLastPractice() {
   try {
     const raw = JSON.parse(localStorage.getItem(LAST_PRACTICE_KEY));
     if (!isPlainObject(raw) || typeof raw.subject !== "string" || typeof raw.topic !== "string" || !Number(raw.at)) { return null; }
-    return { subject: raw.subject, topic: currentTopicName(raw.subject, raw.topic), subtopic: typeof raw.subtopic === "string" ? raw.subtopic : null, notes: raw.notes === true, at: Number(raw.at) };
+    return { subject: raw.subject, topic: currentTopicName(raw.subject, raw.topic), subtopic: typeof raw.subtopic === "string" ? raw.subtopic : null, notes: savedViewOf(raw) === "notes", view: savedViewOf(raw), at: Number(raw.at) };
   } catch (e) {
     return null;
   }
@@ -719,9 +725,9 @@ function loadLastPractice() {
 // home-screen timeout and leaving the app; it's removed when the round is finished.
 const LAST_ROUND_KEY = "barReviewer.lastRound.v1";
 
-function saveLastRound(subject, topic, subtopic, round, notes) {
+function saveLastRound(subject, topic, subtopic, round, view) {
   try {
-    localStorage.setItem(LAST_ROUND_KEY, JSON.stringify({ subject: subject, topic: topic, subtopic: subtopic || null, notes: Boolean(notes), at: Date.now(), round: round }));
+    localStorage.setItem(LAST_ROUND_KEY, JSON.stringify({ subject: subject, topic: topic, subtopic: subtopic || null, notes: view === "notes", view: view, at: Date.now(), round: round }));
   } catch (e) { /* fine */ }
 }
 
@@ -732,7 +738,7 @@ function loadLastRound() {
     if (!isPlainObject(raw) || typeof raw.subject !== "string" || typeof raw.topic !== "string" || !isPlainObject(raw.round)) { return null; }
     const r = raw.round;
     if (!Array.isArray(r.questionIds) || r.questionIds.length === 0 || !Number.isInteger(r.index) || r.index < 0 || r.index >= r.questionIds.length) { return null; }
-    return { subject: raw.subject, topic: currentTopicName(raw.subject, raw.topic), subtopic: typeof raw.subtopic === "string" ? raw.subtopic : null, notes: raw.notes === true, at: Number(raw.at) || 0, round: r };
+    return { subject: raw.subject, topic: currentTopicName(raw.subject, raw.topic), subtopic: typeof raw.subtopic === "string" ? raw.subtopic : null, notes: savedViewOf(raw) === "notes", view: savedViewOf(raw), at: Number(raw.at) || 0, round: r };
   } catch (e) {
     return null;
   }

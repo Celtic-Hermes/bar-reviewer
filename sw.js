@@ -6,10 +6,10 @@
 //   index.html, style.css, app.js, progress.js, find-in-case.js, manifest.webmanifest, or the icons,
 //   or when you add or remove a file in the APP_FILES list below.
 // You do NOT need to change it when you only edit content: data/catalog.json, data/rules.json,
-// data/class-notes.json, the topic files in data/content/, or files in data/case-texts/ and data/rule-texts/.
+// data/class-notes.json, data/notebooklm.json, the topic files in data/content/, or files in data/case-texts/ and data/rule-texts/.
 // Content is always fetched fresh when she's online.
 // =====================================================================
-const CACHE_VERSION = "v113";
+const CACHE_VERSION = "v114";
 const CACHE_NAME = "bar-reviewer-" + CACHE_VERSION;
 
 // Every file the app needs, written relative to this file so it works
@@ -31,6 +31,7 @@ const APP_FILES = [
   "data/quotes.json",
   "data/syllabus-2027.json",
   "data/class-notes.json",
+  "data/notebooklm.json",
   "data/for-clarification.json"
 ];
 
@@ -44,7 +45,7 @@ const CASE_TEXT_CACHE = "bar-reviewer-case-texts";
 const CONTENT_CACHE = "bar-reviewer-content";
 
 // Content files: always try for the newest copy first.
-const DATA_FILES = ["data/catalog.json", "data/rules.json", "data/quotes.json", "data/syllabus-2027.json", "data/class-notes.json", "data/for-clarification.json"];
+const DATA_FILES = ["data/catalog.json", "data/rules.json", "data/quotes.json", "data/syllabus-2027.json", "data/class-notes.json", "data/notebooklm.json", "data/for-clarification.json"];
 
 // 1. Install: download a fresh copy of every file into the cache.
 self.addEventListener("install", function (event) {

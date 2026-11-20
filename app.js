@@ -31,10 +31,37 @@ let currentSubtopic = null; // the sub-topic she picked, ALL_SUBTOPICS, OTHER_SU
 // content: they show only when "My class notes" is picked on a subject screen, and never in
 // the official counts. If the file is missing or damaged, the app simply does without them.
 const CLASS_NOTES_FILE = "data/class-notes.json";
-let sourceView = "official"; // which questions the subject screens show: "official" or "notes"
+// Questions imported from NotebookLM (data/notebooklm.json, IDs nq-0001 …) work the same way:
+// marked notebooklm, labeled "From NotebookLM", shown only when "NotebookLM" is picked.
+const NOTEBOOKLM_FILE = "data/notebooklm.json";
+let sourceView = "official"; // which questions the subject screens show: "official", "notes" or "notebooklm"
+const SOURCE_VIEWS = ["official", "notes", "notebooklm"];
 
 function isClassNote(question) {
   return Boolean(question && question.classNotes === true);
+}
+
+function isNotebookLM(question) {
+  return Boolean(question && question.notebooklm === true);
+}
+
+// Which view a question belongs to: "notes", "notebooklm" or "official".
+function viewOf(question) {
+  if (isClassNote(question)) { return "notes"; }
+  if (isNotebookLM(question)) { return "notebooklm"; }
+  return "official";
+}
+
+// A saved view name, made safe: anything unknown is "official".
+function cleanView(view) {
+  return SOURCE_VIEWS.indexOf(view) === -1 ? "official" : view;
+}
+
+// " · My class notes" / " · NotebookLM" after a screen's subject line (nothing in the official view).
+function viewSuffix() {
+  if (sourceView === "notes") { return " · My class notes"; }
+  if (sourceView === "notebooklm") { return " · NotebookLM"; }
+  return "";
 }
 
 // Run fn with the subject screens' view set to "official" or "notes", then put it back.
@@ -201,7 +228,8 @@ function rememberSpot() {
     subtopic: currentSubtopic,
     shuffle: document.getElementById("shuffle").checked,
     mode: currentMode(),
-    notes: sourceView === "notes"  // looking at the class notes (see CLASS_NOTES_FILE)
+    notes: sourceView === "notes",  // looking at the class notes (see CLASS_NOTES_FILE)
+    view: sourceView                // "official", "notes" or "notebooklm"
   };
   // In the middle of a round (or reading a case opened from a question): keep the round.
   const inRound = session && (shownScreen === "screen-question" ||
@@ -239,7 +267,7 @@ function rememberSpot() {
   // The round she's in the middle of is also kept for the subject screen's "Continue" (it survives
   // the home-screen timeout). Not for a case's questions or Review missed / Bookmarked / Tagged lists.
   if (spot.round && !practiceCase && (isRealTopic(currentTopic) || currentTopic === ALL_TOPICS)) {
-    saveLastRound(currentSubject, currentTopic, currentSubtopic, spot.round, sourceView === "notes");
+    saveLastRound(currentSubject, currentTopic, currentSubtopic, spot.round, sourceView);
   }
 }
 
@@ -316,8 +344,9 @@ function putBackSpot(spot) {
     return true;
   }
   if (SUBJECTS.concat(MISC_SUBJECTS).indexOf(spot.subject) === -1) { return false; }
-  // Class notes: only if they loaded; otherwise the official view.
-  sourceView = (spot.notes === true && hasClassNotes(spot.subject)) ? "notes" : "official";
+  // Class notes or NotebookLM: only if they loaded; otherwise the official view.
+  const savedView = spot.view !== undefined ? cleanView(spot.view) : (spot.notes === true ? "notes" : "official");
+  sourceView = hasView(spot.subject, savedView) ? savedView : "official";
   currentSubject = spot.subject;
   currentTopic = (typeof spot.topic === "string") ? spot.topic : null;
   currentSubtopic = (typeof spot.subtopic === "string") ? spot.subtopic : null;
@@ -451,21 +480,21 @@ function putBackCurrent(saved) {
   rememberSpot();
 }
 
-// A subject's questions in the current view: the official ones, or (with "My class notes"
-// picked) only those from the class notes.
+// A subject's questions in the current view: the official ones, or (with "My class notes" or
+// "NotebookLM" picked) only those.
 function questionsFor(subject) {
-  const notes = sourceView === "notes";
-  return allQuestions.filter(function (q) { return q.subject === subject && isClassNote(q) === notes; });
+  return allQuestions.filter(function (q) { return q.subject === subject && viewOf(q) === sourceView; });
 }
 
-// Only the official questions (never the class notes): for every official count.
+// Only the official questions (never the class notes or NotebookLM): for every official count.
 function officialQuestions() {
-  return allQuestions.filter(function (q) { return !isClassNote(q); });
+  return allQuestions.filter(function (q) { return viewOf(q) === "official"; });
 }
 
-// Does this subject have any class-notes questions?
-function hasClassNotes(subject) {
-  return allQuestions.some(function (q) { return q.subject === subject && isClassNote(q); });
+// Does this subject have any questions in that view? (The official view always counts as there.)
+function hasView(subject, view) {
+  if (view === "official") { return true; }
+  return allQuestions.some(function (q) { return q.subject === subject && viewOf(q) === view; });
 }
 
 // ---------- Screen 1: Home ----------
@@ -635,7 +664,7 @@ function openSubtopics(topic) {
   const subject = currentSubject;
   const mode = currentMode();
   setIconLabel(document.getElementById("subtopics-back"), "chevron-left", subject);
-  document.getElementById("subtopics-subject").textContent = subject + (sourceView === "notes" ? " · My class notes" : "");
+  document.getElementById("subtopics-subject").textContent = subject + viewSuffix();
   document.getElementById("subtopics-title").textContent = topic;
   document.getElementById("subtopics-count").textContent =
     countLabel(questionsForTopic(subject, topic).length) + " available";
@@ -669,7 +698,7 @@ function openSubtopics(topic) {
 // "Start practice" for just that topic / sub-topic, and the cases filed under it.
 // Cases only appear here (not on the subject screen).
 function casesFor(subject) {
-  if (sourceView === "notes") { return []; }  // her class notes have questions only, no cases
+  if (sourceView !== "official") { return []; }  // class notes and NotebookLM have questions only, no cases
   return allCases.filter(function (c) { return c.subject === subject; });
 }
 
@@ -681,8 +710,7 @@ function openTopic(topic, subtopic) {
   const subject = currentSubject;
   const inPicker = currentSubtopic !== null;  // she came through the sub-topic picker
   setIconLabel(document.getElementById("topic-back"), "chevron-left", inPicker ? topic : subject);
-  document.getElementById("topic-subject").textContent = (inPicker ? subject + " · " + topic : subject) +
-    (sourceView === "notes" ? " · My class notes" : "");
+  document.getElementById("topic-subject").textContent = (inPicker ? subject + " · " + topic : subject) + viewSuffix();
   document.getElementById("topic-title").textContent = inPicker ? subtopicLabel(currentSubtopic, topic) : topic;
 
   const total = questionsForTopic(subject, topic, null, currentSubtopic).length;
@@ -801,11 +829,11 @@ function makeTopicCard(subject, topic) {
 function openSubject(subject) {
   currentSubject = subject;
   currentSubtopic = null;
-  if (sourceView === "notes" && !hasClassNotes(subject)) { sourceView = "official"; }
+  if (!hasView(subject, sourceView)) { sourceView = "official"; }
   const count = questionsFor(subject).length;
   document.getElementById("subject-title").textContent = subject;
   document.getElementById("subject-count").textContent = countLabel(count) +
-    (sourceView === "notes" ? " from class notes" : " available");
+    (sourceView === "notes" ? " from class notes" : (sourceView === "notebooklm" ? " from NotebookLM" : " available"));
   showSourceSwitch(subject);
   document.getElementById("list-empty").hidden = true;
 
@@ -826,11 +854,13 @@ function openSubject(subject) {
   showScreen("screen-subject");
 }
 
-// "Official / My class notes": shown only when this subject has class-notes questions. Switching redraws the subject screen in that view.
+// "Official / My class notes / NotebookLM": shown only when this subject has class-notes or
+// NotebookLM questions, each button only if it has questions here. Switching redraws the subject screen.
 function showSourceSwitch(subject) {
   const box = document.getElementById("source-switch");
-  box.hidden = !hasClassNotes(subject);
+  box.hidden = !hasView(subject, "notes") && !hasView(subject, "notebooklm");
   box.querySelectorAll(".seg-btn").forEach(function (btn) {
+    btn.hidden = !hasView(subject, btn.dataset.source);
     btn.setAttribute("aria-pressed", String(btn.dataset.source === sourceView));
   });
 }
@@ -950,7 +980,7 @@ function makeQuestionCard(question, onTap) {
   const prompt = plainText(question.prompt).replace(/\s+/g, " ").trim();
   // A short preview, cut at the end of a whole word.
   text.textContent = prompt.length > 110 ? prompt.slice(0, 110).replace(/\s+\S*$/, "") + "…" : prompt;
-  const where = [isClassNote(question) ? "From class notes" : null, questionTypeLabel(question), question.topic].filter(Boolean).join(" · ");
+  const where = [isClassNote(question) ? "From class notes" : (isNotebookLM(question) ? "From NotebookLM" : null), questionTypeLabel(question), question.topic].filter(Boolean).join(" · ");
   text.appendChild(cardDetail(where, !showsUnverified(question)));
   const arrow = document.createElement("span");
   arrow.className = "subject-arrow";
@@ -1724,7 +1754,7 @@ function timeAgo(then) {
 // The link (see taskLinkTarget) that opens her last practiced topic or sub-topic, or null.
 function lastPracticeTarget(last) {
   const normal = last.subtopic && last.subtopic !== ALL_SUBTOPICS && last.subtopic !== OTHER_SUBTOPIC;
-  return taskLinkTarget("topic:" + last.subject + "|" + last.topic + (normal ? "|" + last.subtopic : ""), last.notes ? "notes" : "official");
+  return taskLinkTarget("topic:" + last.subject + "|" + last.topic + (normal ? "|" + last.subtopic : ""), last.view);
 }
 
 function showResumeCard() {
@@ -2166,10 +2196,10 @@ document.getElementById("screen-schedule").addEventListener("change", function (
 
 // --- Links: what a task's title can open ("subject:<name>" or "topic:<subject>|<topic>") ---
 // Returns { label, open } if it points to something in the app, or null (none, or no longer there).
-// "view" is "official" (the default, used by the schedule) or "notes" (her last class-notes topic).
+// "view" is "official" (the default, used by the schedule), "notes" or "notebooklm" (her last practiced topic's view).
 function taskLinkTarget(link, view) {
   if (typeof link !== "string") { return null; }
-  view = view === "notes" ? "notes" : "official";
+  view = cleanView(view);
   return withView(view, function () { return linkTargetIn(link, view); });
 }
 
@@ -2870,7 +2900,7 @@ function showSubjectStats(subject) {
 // topics using the Question type and Shuffle options below.
 function lastRoundHere(subject) {
   const last = loadLastRound();
-  if (!last || last.subject !== subject || last.notes !== (sourceView === "notes")) { return null; }
+  if (!last || last.subject !== subject || last.view !== sourceView) { return null; }
   const known = {};
   allQuestions.forEach(function (q) { if (q && q.id) { known[q.id] = true; } });
   return last.round.questionIds.every(function (id) { return known[id]; }) ? last : null;
@@ -2966,7 +2996,7 @@ function startPractice() {
     questions = shuffled(questions);
   }
   // Remember the topic (not a case's questions, or a Review missed list) for the home screen's "Pick up where you stopped".
-  if (!fixedQuestions && isRealTopic(currentTopic)) { saveLastPractice(currentSubject, currentTopic, currentSubtopic, sourceView === "notes"); }
+  if (!fixedQuestions && isRealTopic(currentTopic)) { saveLastPractice(currentSubject, currentTopic, currentSubtopic, sourceView); }
   session = {
     questions: questions,
     index: 0,
@@ -3033,13 +3063,17 @@ function showQuestion() {
   showScreen("screen-question");
 }
 
-// --- "From class notes" (questions from class notes, never official) ---
-// The label, and the source line: "Class notes · <file> · <heading>".
+// --- "From class notes" / "From NotebookLM" (never official) ---
+// The label, and the source line: "Class notes · <file> · <heading>", or "NotebookLM · checked against the official text".
 function showClassNotesLabel(question) {
   const fromNotes = isClassNote(question);
-  document.getElementById("notes-badge").hidden = !fromNotes;
+  const fromNotebook = isNotebookLM(question);
+  const badge = document.getElementById("notes-badge");
+  badge.hidden = !fromNotes && !fromNotebook;
+  badge.textContent = fromNotebook ? "From NotebookLM" : "From class notes";
   const line = document.getElementById("notes-source");
-  line.hidden = !fromNotes;
+  line.hidden = !fromNotes && !fromNotebook;
+  if (fromNotebook) { line.textContent = "NotebookLM · answer checked against the official text (see Basis)"; return; }
   if (!fromNotes) { return; }
   const source = isPlainObject(question.source) ? question.source : {};
   line.textContent = ["Class notes", source.file, source.part].filter(function (x) { return typeof x === "string" && x; }).join(" · ");
@@ -3164,7 +3198,7 @@ function showPicked(question, picked) {
   result.className = "feedback-title " + (isRight ? "got-text" : "missed-text");
   setRichText(document.getElementById("mcq-explanation"), question.explanation);
   document.getElementById("mcq-feedback").hidden = false;
-  document.getElementById("find-btn").hidden = isClassNote(session.questions[session.index]);  // she has answered: "Find in case" is allowed now (never for class notes: no case to search)
+  document.getElementById("find-btn").hidden = viewOf(session.questions[session.index]) !== "official";  // she has answered: "Find in case" is allowed now (never for class notes: no case to search)
 }
 
 // --- Fill in the blank ---
@@ -3854,7 +3888,7 @@ function revealFillBlank() {
   document.getElementById("fb-level-select").disabled = true;
   session.current.answerShown = true;
   showNewBlanksButton();  // grayed out once the answer is showing
-  document.getElementById("find-btn").hidden = isClassNote(session.questions[session.index]);  // she has answered: "Find in case" is allowed now (never for class notes: no case to search)
+  document.getElementById("find-btn").hidden = viewOf(session.questions[session.index]) !== "official";  // she has answered: "Find in case" is allowed now (never for class notes: no case to search)
 }
 
 document.getElementById("fb-show").addEventListener("click", function () {
@@ -3925,7 +3959,7 @@ function showEssay(question) {
 function revealAnswer() {
   document.getElementById("answer-area").hidden = false;
   document.getElementById("show-answer").hidden = true;
-  document.getElementById("find-btn").hidden = isClassNote(session.questions[session.index]);  // she has answered: "Find in case" is allowed now (never for class notes: no case to search)
+  document.getElementById("find-btn").hidden = viewOf(session.questions[session.index]) !== "official";  // she has answered: "Find in case" is allowed now (never for class notes: no case to search)
 }
 
 document.getElementById("show-answer").addEventListener("click", function () {
@@ -5451,7 +5485,7 @@ const contentReady = fetchJson("data/catalog.json")
         .sort(function (a, b) { return idNumber(a) - idNumber(b); });
       allCases = cases.filter(function (c) { return c && typeof c === "object" && c.id; })
         .sort(function (a, b) { return idNumber(a) - idNumber(b); });
-      return loadClassNotes();
+      return loadClassNotes().then(loadNotebookLM);
     });
   })
   .catch(function () {
@@ -5465,25 +5499,37 @@ const contentReady = fetchJson("data/catalog.json")
 // there or isn't usable. Only items with a "pq-" ID are kept (official IDs are "q-", so they
 // can never clash), and each is marked classNotes here, whatever the file says.
 function loadClassNotes() {
-  return fetch(CLASS_NOTES_FILE)
+  return loadExtraQuestions(CLASS_NOTES_FILE, /^pq-\d{4}$/, "classNotes");
+}
+
+// The NotebookLM questions (see NOTEBOOKLM_FILE): the same, with "nq-" IDs, marked notebooklm.
+function loadNotebookLM() {
+  return loadExtraQuestions(NOTEBOOKLM_FILE, /^nq-\d{4}$/, "notebooklm");
+}
+
+// Adds the questions of a non-official file (IDs matching idPattern), each marked with "flag".
+function loadExtraQuestions(file, idPattern, flag) {
+  return fetch(file)
     .then(function (response) { return response.ok ? response.json() : null; })
     .then(function (data) {
       const list = data && Array.isArray(data.questions) ? data.questions : [];
       const taken = {};
       allQuestions.forEach(function (q) { if (q && q.id) { taken[q.id] = true; } });
       const notes = list.filter(function (q) {
-        const ok = isPlainObject(q) && typeof q.id === "string" && /^pq-\d{4}$/.test(q.id) && !taken[q.id] &&
+        const ok = isPlainObject(q) && typeof q.id === "string" && idPattern.test(q.id) && !taken[q.id] &&
           typeof q.subject === "string" && typeof q.topic === "string" && typeof q.prompt === "string";
         if (ok) { taken[q.id] = true; }
         return ok;
       }).map(function (q) {
         const copy = Object.assign({}, q);
-        copy.classNotes = true;
+        copy.classNotes = false;
+        copy.notebooklm = false;
+        copy[flag] = true;
         return copy;
       });
       allQuestions = allQuestions.concat(notes);
     })
-    .catch(function () { /* no class notes here: nothing to show, nothing to say */ });
+    .catch(function () { /* no such file here: nothing to show, nothing to say */ });
 }
 
 // Show a loading problem at the top of the app (several can show at once).

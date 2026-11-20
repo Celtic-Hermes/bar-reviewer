@@ -22,3 +22,6 @@ sources/
 
 # Claude Code helper settings and agents. Kept on this Mac only.
 .claude/
+
+# NotebookLM imports (raw answers may quote private notes or reviewers). Kept on this Mac only.
+imports/
