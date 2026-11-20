@@ -696,6 +696,12 @@ button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
 .stat-cell-value { margin: 0; font-size: 24px; font-weight: 700; line-height: 1.15; }
 .stat-cell-label { margin: 2px 0 0; font-size: 13px; color: var(--muted); }
 
+/* ---------- Tests (tests.js) ---------- */
+.tests-card { margin: 0 0 22px; }  /* the subject screen's Tests card: a normal list card */
+.tests-soon { margin: 8px 0 0; font-size: 14px; color: var(--muted); }
+.tests-heading { margin-top: 24px; }
+#screen-tests .empty-note { margin: 0; }
+
 /* ---------- Bookmark button (top right of each question) ---------- */
 .question-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
 .bookmark-btn {

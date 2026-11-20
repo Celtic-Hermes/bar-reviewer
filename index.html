@@ -317,6 +317,12 @@
           <div class="stat-cell"><p class="stat-cell-value" id="sstat-mastered">0</p><p class="stat-cell-label">Mastered</p></div>
         </div>
 
+        <!-- Tests: opens this subject's Tests screen (tests.js openTests) -->
+        <button type="button" class="subject-card tests-card" id="tests-card">
+          <span class="subject-name">Tests<span class="subject-meta">Create a test, or see your past tests</span></span>
+          <span class="subject-arrow" aria-hidden="true">›</span>
+        </button>
+
 
         <fieldset class="mode-picker">
           <legend class="switch-title">Question type</legend>
@@ -375,6 +381,24 @@
       <p class="screen-subtitle" id="tagged-count"></p>
       <button class="btn btn-primary" id="tagged-start">Start practice</button>
       <div class="subject-list" id="tagged-list"></div>
+    </section>
+
+    <!-- SCREEN 2d: One subject's tests (tests.js openTests): Create a test, then Unfinished and Finished -->
+    <section id="screen-tests" hidden>
+      <button class="back-btn" id="tests-back"><span data-icon="chevron-left"></span> Back</button>
+      <p class="subject" id="tests-subject"></p>
+      <h1 class="screen-title">Tests</h1>
+      <p class="screen-subtitle">Answers stay hidden until you finish. Then review every question.</p>
+      <button type="button" class="btn btn-primary" id="tests-create" disabled>Create a test</button>
+      <p class="tests-soon" id="tests-soon">Making a test is the next step being built.</p>
+
+      <h2 class="label tests-heading">Unfinished</h2>
+      <div class="subject-list" id="tests-unfinished"></div>
+      <p class="card empty-note" id="tests-unfinished-empty">No unfinished tests.</p>
+
+      <h2 class="label tests-heading">Finished</h2>
+      <div class="subject-list" id="tests-finished"></div>
+      <p class="card empty-note" id="tests-finished-empty">No finished tests yet.</p>
     </section>
 
     <!-- SCREEN 3: Practice (one question) -->
@@ -743,6 +767,7 @@
   <script src="icons.js"></script>
   <script src="progress.js"></script>
   <script src="app.js"></script>
+  <script src="tests.js"></script>
   <script src="find-in-case.js"></script>
 </body>
 </html>

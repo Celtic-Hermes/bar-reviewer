@@ -91,7 +91,7 @@ document.addEventListener("touchstart", function () {}, { passive: true });
 // Only one screen is visible at a time.
 function showScreen(id) {
   saveAllNotes();  // leaving a screen with a notes box: save what she typed first
-  ["screen-home", "screen-subject", "screen-subtopics", "screen-topic", "screen-tagged", "screen-question", "screen-results", "screen-case", "screen-rule", "screen-notes", "screen-settings", "screen-schedule", "screen-search", "screen-syllabus", "screen-clarify"].forEach(function (screenId) {
+  ["screen-home", "screen-subject", "screen-subtopics", "screen-topic", "screen-tagged", "screen-tests", "screen-question", "screen-results", "screen-case", "screen-rule", "screen-notes", "screen-settings", "screen-schedule", "screen-search", "screen-syllabus", "screen-clarify"].forEach(function (screenId) {
     document.getElementById(screenId).hidden = (screenId !== id);
   });
   window.scrollTo(0, 0);
@@ -354,6 +354,10 @@ function putBackSpot(spot) {
 
   if (spot.screen === "subject") {
     openSubject(currentSubject);
+    return true;
+  }
+  if (spot.screen === "tests") {
+    if (typeof openTests === "function") { openTests(); } else { openSubject(currentSubject); }  // tests.js
     return true;
   }
   if (spot.screen === "subtopics") {

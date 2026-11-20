@@ -9,7 +9,7 @@
 // data/class-notes.json, data/notebooklm.json, the topic files in data/content/, or files in data/case-texts/ and data/rule-texts/.
 // Content is always fetched fresh when she's online.
 // =====================================================================
-const CACHE_VERSION = "v115";
+const CACHE_VERSION = "v116";
 const CACHE_NAME = "bar-reviewer-" + CACHE_VERSION;
 
 // Every file the app needs, written relative to this file so it works
@@ -22,6 +22,7 @@ const APP_FILES = [
   "find-in-case.js",
   "icons.js",
   "progress.js",
+  "tests.js",
   "manifest.webmanifest",
   "icons/icon-192.png",
   "icons/icon-512.png",
