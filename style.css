@@ -1320,6 +1320,12 @@ body.sheet-open { overflow: hidden; }
   .home-hero { grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); align-items: center; gap: 32px; }
   .home-greeting { font-size: 44px; }
 }
+/* Big screens: the home stretches into the space next to the sidebar (up to 1600px),
+   and the 8 subjects sit in two full rows of 4. */
+@media (min-width: 1440px) {
+  body[data-screen="screen-home"] .page { max-width: 1600px; }
+  #screen-home .subject-list { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
 
 /* Case screen: her notes and the linked questions in a side panel on the right
    (moved there by placeCaseSide in app.js). The case text keeps its 640px column. */
