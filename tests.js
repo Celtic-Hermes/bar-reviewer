@@ -1180,7 +1180,7 @@ function showReviewParts(test, question, one) {
   const discussion = typeof question.explanation === "string" ? question.explanation.trim() : "";
   explainCard.hidden = !discussion;
   document.getElementById("review-explain-label").textContent = question.type === "mcq" ? "Explanation" : "Discussion";
-  setRichText(document.getElementById("review-explain"), discussion);
+  setTextWithBasis(document.getElementById("review-explain"), discussion, question);  // app.js: the Basis box
 }
 
 // The source, in one short line: NotebookLM's note, or the case / rule. Class-notes questions show

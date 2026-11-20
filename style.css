@@ -1127,6 +1127,22 @@ a.btn { text-align: center; text-decoration: none; }
 .lookup-offline { margin: 0; padding: var(--space-3) var(--space-4); border: 2px dashed var(--muted); border-radius: var(--radius-md);
   font-size: 15px; font-weight: 600; color: var(--muted); text-align: center; }
 .lookup-note { margin: var(--space-2) 0 0; font-size: 13px; color: var(--muted); }
+/* The Basis box (app.js makeBasisBox): at the end of an explanation or an essay's conclusion. A quiet
+   panel on the shared colors: "Basis", the citation, an optional supporting quote, and a
+   "Read the basis" button per official link (or "You're offline" instead). */
+.basis-box {
+  margin: var(--space-4) 0 0; padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--border); border-radius: var(--radius-md);
+  background: color-mix(in srgb, var(--border) 25%, var(--card));
+}
+.basis-title { margin: 0 0 var(--space-1); font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+.basis-citation { margin: 0; font-weight: 600; color: var(--text); overflow-wrap: anywhere; }
+.basis-excerpt { margin: var(--space-3) 0 0; padding: 0 0 0 var(--space-3); border-left: 3px solid var(--primary-edge); color: var(--muted); }
+/* One button per source, stacked and all the same width, so several of them look even. */
+.basis-links { display: flex; flex-direction: column; gap: var(--space-2); margin-top: var(--space-3); }
+.basis-links .btn { width: 100%; margin: 0; }
+.basis-links .lookup-offline { flex: 1 1 100%; }
+.basis-after { margin: var(--space-3) 0 0; font-size: 14px; color: var(--muted); }
 
 /* "Full text of the decision" (loaded only when she taps the button) */
 #full-text-btn { margin-bottom: 0; }

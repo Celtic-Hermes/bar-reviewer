@@ -3575,7 +3575,7 @@ function showPicked(question, picked) {
     ? "Correct!"
     : "Not quite. The correct answer is " + question.correct + ".";
   result.className = "feedback-title " + (isRight ? "got-text" : "missed-text");
-  setRichText(document.getElementById("mcq-explanation"), question.explanation);
+  setTextWithBasis(document.getElementById("mcq-explanation"), question.explanation, question);
   document.getElementById("mcq-feedback").hidden = false;
   document.getElementById("find-btn").hidden = viewOf(session.questions[session.index]) !== "official";  // she has answered: "Find in case" is allowed now (never for class notes: no case to search)
 }
@@ -4036,7 +4036,7 @@ function applyFbLevel(question, level, hidden) {
   // An optional "explanation" (the class-notes items have one): shown under the full text after Show answer.
   const discussion = typeof question.explanation === "string" ? question.explanation.trim() : "";
   document.getElementById("fb-discussion-card").hidden = !discussion;
-  setRichText(document.getElementById("fb-discussion"), discussion);
+  setTextWithBasis(document.getElementById("fb-discussion"), discussion, question);
 
   const note = document.getElementById("fb-level-note");
   if (fbInfo.usable) {
@@ -4306,7 +4306,7 @@ function showEssay(question) {
   setRichText(document.getElementById("alac-answer"), question.suggestedAnswer.answer);
   setRichText(document.getElementById("alac-basis"), question.suggestedAnswer.legalBasis);
   setRichText(document.getElementById("alac-application"), question.suggestedAnswer.application);
-  setRichText(document.getElementById("alac-conclusion"), question.suggestedAnswer.conclusion);
+  setTextWithBasis(document.getElementById("alac-conclusion"), question.suggestedAnswer.conclusion, question);
 
   // Make a checkbox for each key point (clearing any from last time).
   const list = document.getElementById("key-points");
@@ -4871,6 +4871,125 @@ function markLists(text) {
 function setRichText(element, value) {
   element.textContent = "";
   element.appendChild(richText(value));
+}
+
+// ---------- The Basis box ----------
+// Class-notes and NotebookLM answers end with a line like
+//   "**Basis:** R.A. No. 8293, Sec. 109.3. Checked against the official text: https://…, https://…."
+// (sometimes followed by " **Beyond notes.**"). The app shows that line as a small Basis box instead:
+// the citation in plain words, an optional supporting quote (the question's "basisExcerpt", when it
+// has one) and a "Read the basis" button per link. The data is never changed; text without a Basis
+// line shows exactly as before.
+
+// { before, citation, urls, after } or null when there's no Basis line to take out.
+function parseBasis(text) {
+  if (typeof text !== "string") { return null; }
+  const at = text.lastIndexOf("**Basis:**");
+  if (at === -1) { return null; }
+  const before = text.slice(0, at).replace(/\s+$/, "");
+  let rest = text.slice(at + "**Basis:**".length);
+  const checked = rest.search(/Checked against the official text:/i);
+  let citation = checked === -1 ? rest : rest.slice(0, checked);
+  const urls = [];
+  let after = "";
+  if (checked !== -1) {
+    rest = rest.slice(checked).replace(/^Checked against the official text:/i, "");
+    const found = /https?:\/\/[^\s,;]+/g;
+    let m;
+    let end = 0;
+    while ((m = found.exec(rest)) !== null) {
+      const url = m[0].replace(/[.)\]]+$/, "");  // the sentence's own period isn't part of the address
+      if (urls.indexOf(url) === -1) { urls.push(url); }
+      end = m.index + m[0].length;
+    }
+    if (urls.length === 0) { return null; }  // not the usual shape: leave the text as it is
+    after = rest.slice(end).replace(/^[\s.,;]+/, "").trim();
+  } else {
+    // No links: everything up to the next paragraph is the citation, the rest stays after the box.
+    const para = citation.indexOf("\n\n");
+    if (para !== -1) { after = citation.slice(para).trim(); citation = citation.slice(0, para); }
+  }
+  citation = citation.replace(/\*\*/g, "").trim().replace(/[.\s]+$/, "");
+  if (!citation && urls.length === 0) { return null; }
+  return { before: before, citation: citation, urls: urls, after: after };
+}
+
+// A short name for an official link, for the buttons when there are several ("R.A. 7042").
+function basisLinkName(url) {
+  let m;
+  if ((m = /\/ra_(\d+)_/.exec(url)) || (m = /republic-act-no-(\d+)/.exec(url))) { return "R.A. " + m[1]; }
+  if ((m = /\/ca_(\d+)_/.exec(url))) { return "C.A. " + m[1]; }
+  if ((m = /\/eo_(\d+)_/.exec(url))) { return "E.O. " + m[1]; }
+  if ((m = /\/am_([\d-]+)_/.exec(url))) { return "A.M. No. " + m[1]; }
+  if ((m = /\/gr_([\d-]+)_/.exec(url))) { return "G.R. No. " + m[1]; }
+  if (/\/consti\/cons1987/.test(url)) { return "1987 Constitution"; }
+  return "";
+}
+
+function makeBasisBox(parsed, question) {
+  const box = document.createElement("section");
+  box.className = "basis-box";
+  const heading = document.createElement("h3");
+  heading.className = "basis-title";
+  heading.textContent = "Basis";
+  box.appendChild(heading);
+  if (parsed.citation) {
+    const cite = document.createElement("p");
+    cite.className = "basis-citation";
+    cite.textContent = parsed.citation;
+    box.appendChild(cite);
+  }
+  const excerpt = question && typeof question.basisExcerpt === "string" ? question.basisExcerpt.trim() : "";
+  if (excerpt) {
+    const quote = document.createElement("blockquote");
+    quote.className = "basis-excerpt reading-text";
+    quote.appendChild(richText(excerpt));
+    box.appendChild(quote);
+  }
+  if (parsed.urls.length) {
+    // The same block as "Look it up online": the buttons, or "You're offline" (showLookupState).
+    const links = document.createElement("div");
+    links.className = "online-lookup basis-links";
+    parsed.urls.forEach(function (url, i) {
+      const link = document.createElement("a");
+      link.className = "btn btn-secondary btn-small";
+      link.href = url;
+      link.target = "_blank";
+      link.rel = "noopener";
+      const name = basisLinkName(url);
+      link.textContent = parsed.urls.length === 1 ? "Read the basis"
+        : "Read the basis" + (name ? ": " + name : " (" + (i + 1) + ")");
+      link.addEventListener("click", function (event) {
+        if (navigator.onLine === false) { event.preventDefault(); showLookupState(); }
+      });
+      links.appendChild(link);
+    });
+    const offline = document.createElement("p");
+    offline.className = "lookup-offline";
+    offline.textContent = "You're offline. This needs internet.";
+    links.appendChild(offline);
+    box.appendChild(links);
+    showLookupState(links);
+  }
+  if (parsed.after) {
+    const note = document.createElement("p");
+    note.className = "basis-after";
+    note.appendChild(richText(parsed.after));
+    box.appendChild(note);
+  }
+  return box;
+}
+
+// Show an explanation (or an essay's conclusion) with its Basis line as a box right after it.
+// "element" gets the text; the box goes after it (after its list, for an essay's conclusion).
+function setTextWithBasis(element, value, question) {
+  const anchor = element.closest("dl") || element;
+  const old = anchor.nextElementSibling;
+  if (old && old.classList.contains("basis-box")) { old.remove(); }
+  const parsed = parseBasis(value);
+  if (!parsed) { setRichText(element, value); return; }
+  setRichText(element, parsed.before);
+  anchor.after(makeBasisBox(parsed, question));
 }
 
 // ---------- Highlighter ----------
@@ -5467,7 +5586,7 @@ function showLookupState(oneBlock) {
   const offline = navigator.onLine === false;
   const blocks = oneBlock ? [oneBlock] : document.querySelectorAll(".online-lookup");
   blocks.forEach(function (block) {
-    block.querySelector("a").hidden = offline;
+    block.querySelectorAll("a").forEach(function (a) { a.hidden = offline; });  // one link, or several (the Basis box)
     block.querySelector(".lookup-offline").hidden = !offline;
   });
 }
