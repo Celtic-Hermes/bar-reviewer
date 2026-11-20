@@ -224,6 +224,20 @@ def check_place(where, item):
         problem(where, "'subtopic' is there but empty (leave it out instead).")
 
 
+def check_correction(where, item):
+    """The optional "correction" note (what Claude changed from the source and what to check):
+    plain text, not empty, no HTML, at most 1,000 characters."""
+    if "correction" not in item:
+        return
+    note = item.get("correction")
+    if not filled(note):
+        problem(where, "'correction' is there but empty (leave it out instead).")
+    elif re.search(r"<[a-zA-Z/]", note):
+        problem(where, "'correction' must be plain text (no HTML).")
+    elif len(note) > 1000:
+        problem(where, "'correction' is too long (over 1,000 characters).")
+
+
 def check_status(where, item):
     if item.get("status") not in STATUSES:
         problem(where, "status is %r; it must be \"draft\" or \"verified\"." % item.get("status"))
@@ -885,6 +899,7 @@ def check_class_notes(official_ids):
             problem(q_id, "a class-notes fill in the blank should have exactly one blank.")
         if q.get("caseIds") not in ([], None):
             problem(q_id, "class-notes questions link to no case ('caseIds' should be []).")
+        check_correction(q_id, q)
         source = q.get("source")
         if not isinstance(source, dict) or source.get("caseTitle") != "Class notes" or not filled(source.get("file")):
             problem(q_id, "the source should be just {\"caseTitle\": \"Class notes\", \"file\": …}.")
@@ -904,7 +919,7 @@ def check_class_notes(official_ids):
             for piece in str(ref.get("excerpt", "")).split("…"):
                 if comparable(piece) and comparable(piece) not in notes and comparable(piece) not in review:
                     problem(q_id, "its private source quote isn't found in the notes or review questions: \"%s…\"" % comparable(piece)[:60])
-            shown = [q.get("prompt", ""), q.get("fullText", "")] + list((q.get("choices") or {}).values())
+            shown = [q.get("prompt", ""), q.get("fullText", ""), q.get("correction", "")] + list((q.get("choices") or {}).values())
             if any(eight(t) & source_grams for t in shown):
                 problem(q_id, "the question or a choice repeats 8+ words in a row from the notes (rewrite it in your own words).")
         for chk in ref.get("officialChecks", []):
@@ -1043,6 +1058,7 @@ def check_notebooklm(other_ids):
         checks[before:] = [c for c in checks[before:] if "section heading the app can find" not in c]
         if q.get("caseIds") not in ([], None):
             problem(q_id, "NotebookLM questions link to no case ('caseIds' should be []).")
+        check_correction(q_id, q)
         if q.get("source") != {"caseTitle": "NotebookLM"}:
             problem(q_id, "the source should be just {\"caseTitle\": \"NotebookLM\"}.")
         rationale = q.get("explanation") if q_type != "essay" else (q.get("suggestedAnswer") or {}).get("conclusion")
@@ -1050,7 +1066,7 @@ def check_notebooklm(other_ids):
         if "https://" not in basis:
             problem(q_id, "the answer must end with a **Basis:** line with an https link to the official text.")
         if source_grams:
-            shown = [q.get("explanation", "")] + list((q.get("choices") or {}).values()) + \
+            shown = [q.get("explanation", ""), q.get("correction", "")] + list((q.get("choices") or {}).values()) + \
                 list((q.get("suggestedAnswer") or {}).values()) + list(q.get("keyPoints") or [])
             if q_type != "fillblank":
                 shown.append(q.get("prompt", ""))

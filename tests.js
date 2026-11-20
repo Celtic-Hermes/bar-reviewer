@@ -1160,6 +1160,7 @@ function showReviewParts(test, question, one) {
   fullCard.hidden = true;
   explainCard.hidden = true;
   note.hidden = true;
+  showCorrection(document.getElementById("review-correction"), null);
   const ok = question && (question.type === "mcq" || question.type === "fillblank");
   document.getElementById("review-subject").textContent = ok ? question.subject : test.subject;
   document.getElementById("review-topic").textContent = ok ? [question.topic, subtopicOf(question)].filter(Boolean).join(" · ") : one.g;
@@ -1181,6 +1182,7 @@ function showReviewParts(test, question, one) {
   explainCard.hidden = !discussion;
   document.getElementById("review-explain-label").textContent = question.type === "mcq" ? "Explanation" : "Discussion";
   setRichText(document.getElementById("review-explain"), discussion);
+  showCorrection(document.getElementById("review-correction"), question);
 }
 
 // The source, in one short line: NotebookLM's note, or the case / rule. Class-notes questions show

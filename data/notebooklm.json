@@ -24,7 +24,8 @@
         "Distributor trading in its own name and account is excluded from doing business",
         "Direct execution of core business operations over eight months constitutes doing business",
         "Estoppel prevents a party who derived benefits from invoking lack of corporate license"
-      ]
+      ],
+      "correction": "Correction: Basis citation completed: the two cases are now cited by their full titles (Steelcase, Inc. v. Design International Selections, Inc.; Magna Ready Mix Concrete Corp. v. Andersen Bjornstad Kane Jacobs, Inc.). Nothing in the answer was changed."
     },
     {
       "id": "nq-0002",
@@ -49,7 +50,8 @@
         "Export enterprises may be 100% foreign-owned for operational purposes",
         "Private land acquisition strictly requires 60% Filipino equity ownership",
         "100% foreign-owned BPOs must lease land or divest equity to purchase real property"
-      ]
+      ],
+      "correction": "Correction: NotebookLM cited R.A. No. 7042, Sec. 8 in the Basis; the rule that export enterprises may be up to 100% foreign-owned is Sec. 6, so the citation was changed to Sec. 6. The E.O. No. 113 citation was also completed. Check R.A. No. 7042, Sec. 6, and List A, Item 16 of the 13th Negative List."
     },
     {
       "id": "nq-0003",
@@ -74,7 +76,8 @@
         "Standard capitalization floor for foreign-dominated DMEs is US$200,000",
         "Capital floor reduces to US$100,000 if employing at least 15 direct Filipino workers",
         "Paid-in capital of US$120,000 with 18 Filipino employees meets the statutory exception"
-      ]
+      ],
+      "correction": "Correction: The facts were changed: NotebookLM said the enterprise would employ eighteen Filipino workers but not that they were the majority of its direct employees, which the law requires (\"a majority of their direct employees are Filipinos\", at least fifteen). The facts now say all eighteen workers are Filipinos, and a hint (\"To meet statutory requirements\") was removed. Check R.A. No. 7042, Sec. 8, as amended by R.A. No. 11647."
     },
     {
       "id": "nq-0004",
@@ -99,7 +102,8 @@
         "Retail below ₱25M paid-up capital is a partially nationalized activity",
         "Anti-Dummy Law prohibits aliens from acting as executive officers in nationalized sectors",
         "Foreigners may only sit on the board in proportion to equity or serve as DOJ-approved technical staff"
-      ]
+      ],
+      "correction": "Correction: NotebookLM's conclusion said the foreign national is criminally liable. Sec. 2-A of the Anti-Dummy Law makes the president, managers or persons in charge of the corporation criminally liable, and provides for forfeiture; the conclusion was rewritten to say that. Check C.A. No. 108, Sec. 2-A."
     },
     {
       "id": "nq-0005",
@@ -124,7 +128,8 @@
         "Export market enterprises must export at least 60% of total output",
         "Failure to meet export ratio requires capping domestic sales at 40%",
         "Non-compliance with the domestic sales restriction leads to registration cancellation"
-      ]
+      ],
+      "correction": "Correction: NotebookLM's application said a foreign-owned company can't sell more than 40% locally \"without violating foreign equity limits for domestic market enterprises\". That isn't the reason: the 40% cap comes from the SEC or DTI order under Sec. 6 after the Board of Investments reports the failed export ratio. The application was rewritten. Check R.A. No. 7042, Sec. 6, as amended by R.A. No. 11647, Sec. 7."
     },
     {
       "id": "nq-0006",
@@ -174,7 +179,8 @@
         "Control Test treats a 60% Filipino-owned corporate shareholder as 100% Filipino",
         "Grandfather Rule mathematically traces actual equity across corporate tiers",
         "Grandfather Rule applies as a backstop when 60-40 ownership is in doubt due to layering"
-      ]
+      ],
+      "correction": "Correction: Basis citation tidied only: the case title is spelled out (Narra Nickel Mining and Development Corp.). Nothing in the answer was changed."
     },
     {
       "id": "nq-0008",
@@ -199,7 +205,8 @@
         "A single contract fulfilling core business purpose constitutes doing business",
         "Number of transactions is mere evidence; nature of the act governs",
         "A party who benefited from a contract is estopped from denying the foreign firm's capacity to sue"
-      ]
+      ],
+      "correction": "Correction: Basis citation tidied only: R.A. No. 11232 is identified as the Revised Corporation Code. Nothing in the answer was changed."
     },
     {
       "id": "nq-0009",
@@ -224,7 +231,8 @@
         "List A reflects constitutional and statutory limits and may be amended at any time",
         "List B protects national security, health, and SMEs and is capped at biennial amendments",
         "Administrative policy changes to List B must respect the mandatory two-year interval"
-      ]
+      ],
+      "correction": "Correction: Two changes: NotebookLM's facts had the Department of Trade and Industry recommending List B changes; the agency that recommends under E.O. No. 113 is the Department of Economy, Planning, and Development, so the facts now name it. The conclusion's date was softened from \"April 2028\" to \"not before about April 2028\" (two years after the 13th Negative List). Check E.O. No. 113, Sec. 2, and R.A. No. 7042, Sec. 8, as amended."
     },
     {
       "id": "nq-0010",
@@ -249,7 +257,8 @@
         "Renewable energy generation (solar, wind, hydro) is exempt from the 40% foreign equity cap",
         "DOJ Opinion No. 21 (s. 2022) and DOE Circular DC2022-11-0034 permit 100% foreign equity",
         "Reflected under List A, Item 15 of the 13th Regular Foreign Investment Negative List"
-      ]
+      ],
+      "correction": "Correction: NotebookLM's legal basis described solar energy as \"kinetic energy\", and its application said the constitutional limit covers only \"exhaustible finite resources\"; neither is what the source says. Both parts were rewritten to follow footnote 9 of the 13th Negative List, which summarizes DOJ Opinion No. 21 (s. 2022), and a warning was added that this rests on an executive opinion and a DOE circular, not on a statute or a Supreme Court ruling. Check List A, Item 15 and footnote 9 of E.O. No. 113."
     },
     {
       "id": "nq-0011",
@@ -274,7 +283,8 @@
         "Telecommunications is excluded from the definition of public utility under R.A. 11659",
         "Foreign equity in telecommunications can reach 100% if reciprocity is granted",
         "Without reciprocity, foreign equity in telecommunications is capped at 50%"
-      ]
+      ],
+      "correction": "Correction: Added to the application: telecommunications is \"critical infrastructure\" under Sec. 3(e) of R.A. No. 11659, which is why the reciprocity rule of Sec. 25 applies. Check R.A. No. 11659, Secs. 3(e) and 25."
     },
     {
       "id": "nq-0012",
@@ -299,7 +309,8 @@
         "Aliens may sit on corporate boards of partially nationalized firms",
         "Board representation must strictly mirror allowable foreign equity proportion",
         "Four out of ten board seats corresponds exactly to a 40% foreign equity stake"
-      ]
+      ],
+      "correction": "Correction: NotebookLM's Basis cited Constitution Art. XII, Sec. 11, which is about public utilities, not mining; that citation was removed. The rule on foreign directors is the last proviso of Sec. 2-A of the Anti-Dummy Law. Check C.A. No. 108, Sec. 2-A."
     },
     {
       "id": "nq-0013",
@@ -324,7 +335,8 @@
         "Foreign investment under R.A. 7042 is strictly defined as an equity investment",
         "Loans and bonds create debt obligations rather than equity ownership",
         "Providing loan capital does not violate foreign equity caps"
-      ]
+      ],
+      "correction": "Correction: Basis citation completed: the definition of \"investment\" (Sec. 3(b)) was added next to \"foreign investment\" (Sec. 3(c)), and the 2022 amendment (R.A. No. 11647, Sec. 2) is now cited. Nothing in the answer was changed."
     },
     {
       "id": "nq-0014",
@@ -349,7 +361,8 @@
         "SEC/DTI registration grants authority to operate a business",
         "BOI/PEZA registration grants fiscal incentives, not authority to operate",
         "Foreign investors do not need BOI approval merely to establish a business"
-      ]
+      ],
+      "correction": "Correction: NotebookLM said Board of Investments registration is only needed for tax incentives. Under Sec. 6, a foreign-owned export enterprise must also register with the BOI. The facts now say the business sells only to local clients, and the answer explains when BOI registration is required. Check R.A. No. 7042, Secs. 5 and 6, as amended by R.A. No. 11647."
     },
     {
       "id": "nq-0015",
@@ -371,7 +384,8 @@
         "D": "Eighty percent (80%)"
       },
       "correct": "B",
-      "explanation": "**B is correct.** Section 3(e) of R.A. No. 7042 defines an export enterprise as one that exports sixty percent (60%) or more of its output. **A is wrong:** Fifty percent is below the statutory threshold. **C is wrong:** The Foreign Investments Act sets the line at sixty percent, not seventy. **D is wrong:** Eighty percent exceeds the minimum statutory requirement.\n\n**Basis:** R.A. No. 7042, Sec. 3(e). Checked against the official text: https://www.officialgazette.gov.ph/1991/06/13/republic-act-no-7042/."
+      "explanation": "**B is correct.** Section 3(e) of R.A. No. 7042 defines an export enterprise as one that exports sixty percent (60%) or more of its output. **A is wrong:** Fifty percent is below the statutory threshold. **C is wrong:** The Foreign Investments Act sets the line at sixty percent, not seventy. **D is wrong:** Eighty percent exceeds the minimum statutory requirement.\n\n**Basis:** R.A. No. 7042, Sec. 3(e). Checked against the official text: https://www.officialgazette.gov.ph/1991/06/13/republic-act-no-7042/.",
+      "correction": "Correction: NotebookLM's explanation for choice C said seventy percent is \"the threshold under the CREATE MORE Act\"; that wasn't checked, so it was replaced with: the Foreign Investments Act sets the line at sixty percent. The correct answer (B) was not changed. Check R.A. No. 7042, Sec. 3(e) (Official Gazette copy; LawPhil's copy is missing this item)."
     },
     {
       "id": "nq-0016",
@@ -393,7 +407,8 @@
         "D": "US$250,000"
       },
       "correct": "C",
-      "explanation": "**C is correct.** Under Section 8 of R.A. No. 7042, as amended, micro and small domestic market enterprises with paid-in equity capital of less than US$200,000 are reserved to Philippine nationals, so a foreigner may hold more than forty percent only if the paid-in capital is at least US$200,000. **A is wrong:** US$100,000 is the reduced capital floor for qualified entities meeting specific statutory conditions. **B is wrong:** US$150,000 is not a statutory threshold under the FIA. **D is wrong:** US$250,000 exceeds the statutory baseline.\n\n**Basis:** R.A. No. 7042, Sec. 8, as amended by R.A. No. 11647, Sec. 8. Checked against the official text: https://lawphil.net/statutes/repacts/ra2022/ra_11647_2022.html."
+      "explanation": "**C is correct.** Under Section 8 of R.A. No. 7042, as amended, micro and small domestic market enterprises with paid-in equity capital of less than US$200,000 are reserved to Philippine nationals, so a foreigner may hold more than forty percent only if the paid-in capital is at least US$200,000. **A is wrong:** US$100,000 is the reduced capital floor for qualified entities meeting specific statutory conditions. **B is wrong:** US$150,000 is not a statutory threshold under the FIA. **D is wrong:** US$250,000 exceeds the statutory baseline.\n\n**Basis:** R.A. No. 7042, Sec. 8, as amended by R.A. No. 11647, Sec. 8. Checked against the official text: https://lawphil.net/statutes/repacts/ra2022/ra_11647_2022.html.",
+      "correction": "Correction: The explanation of the correct answer was reworded to follow the law: micro and small domestic market enterprises with paid-in capital below US$200,000 are reserved to Philippine nationals, so a foreigner may hold more than 40% only at US$200,000 or more. Basis citation completed. The correct answer (C) was not changed. Check R.A. No. 7042, Sec. 8, as amended by R.A. No. 11647, Sec. 8."
     },
     {
       "id": "nq-0017",
@@ -415,7 +430,8 @@
         "D": "Every three (3) years coinciding with congressional elections"
       },
       "correct": "B",
-      "explanation": "**B is correct.** Section 8 of R.A. No. 7042 and Section 2 of E.O. No. 113 provide that amendments to Negative List B shall not be made more often than once every two (2) years. **A is wrong:** List A may be amended at any time to reflect legislative changes, but List B is capped at biennial updates. **C is wrong:** Annual updates are not permitted for List B. **D is wrong:** Three years is not the statutory interval.\n\n**Basis:** E.O. No. 113 (April 13, 2026), 13th Regular Foreign Investment Negative List, Sec. 2; R.A. No. 7042, Sec. 8, as amended. Checked against the official text: https://lawphil.net/executive/execord/eo2026/pdf/eo_113_2026.pdf, https://lawphil.net/statutes/repacts/ra2022/ra_11647_2022.html."
+      "explanation": "**B is correct.** Section 8 of R.A. No. 7042 and Section 2 of E.O. No. 113 provide that amendments to Negative List B shall not be made more often than once every two (2) years. **A is wrong:** List A may be amended at any time to reflect legislative changes, but List B is capped at biennial updates. **C is wrong:** Annual updates are not permitted for List B. **D is wrong:** Three years is not the statutory interval.\n\n**Basis:** E.O. No. 113 (April 13, 2026), 13th Regular Foreign Investment Negative List, Sec. 2; R.A. No. 7042, Sec. 8, as amended. Checked against the official text: https://lawphil.net/executive/execord/eo2026/pdf/eo_113_2026.pdf, https://lawphil.net/statutes/repacts/ra2022/ra_11647_2022.html.",
+      "correction": "Correction: Basis citation completed: E.O. No. 113 is identified by its date and title, and R.A. No. 7042, Sec. 8 is cited \"as amended\". Nothing in the answer was changed."
     },
     {
       "id": "nq-0018",
@@ -437,7 +453,8 @@
         "D": "Forty percent (40%)"
       },
       "correct": "A",
-      "explanation": "**A is correct.** Article XVI, Section 11(1) of the Constitution and List A (Item 1) of E.O. No. 113 limit the ownership and management of mass media to Filipino citizens or to entities wholly owned and managed by them, so no foreign equity is allowed (recording and internet business are excepted in the list). **B is wrong:** 25% applies to private recruitment and defense construction contracts. **C is wrong:** 30% applies to advertising. **D is wrong:** 40% applies to private lands, public utilities, and educational institutions.\n\n**Basis:** Constitution, Art. XVI, Sec. 11; E.O. No. 113 (April 13, 2026), 13th Regular Foreign Investment Negative List, List A, Items 1, 11–13 and 16–18. Checked against the official text: https://lawphil.net/consti/cons1987.html, https://lawphil.net/executive/execord/eo2026/pdf/eo_113_2026.pdf."
+      "explanation": "**A is correct.** Article XVI, Section 11(1) of the Constitution and List A (Item 1) of E.O. No. 113 limit the ownership and management of mass media to Filipino citizens or to entities wholly owned and managed by them, so no foreign equity is allowed (recording and internet business are excepted in the list). **B is wrong:** 25% applies to private recruitment and defense construction contracts. **C is wrong:** 30% applies to advertising. **D is wrong:** 40% applies to private lands, public utilities, and educational institutions.\n\n**Basis:** Constitution, Art. XVI, Sec. 11; E.O. No. 113 (April 13, 2026), 13th Regular Foreign Investment Negative List, List A, Items 1, 11–13 and 16–18. Checked against the official text: https://lawphil.net/consti/cons1987.html, https://lawphil.net/executive/execord/eo2026/pdf/eo_113_2026.pdf.",
+      "correction": "Correction: The explanation was made more exact: the Constitution limits mass media to Filipino citizens or entities wholly owned and managed by them (recording and internet business are excepted in the Negative List). Basis citation completed. The correct answer (A) was not changed. Check Constitution, Art. XVI, Sec. 11, and List A, Item 1 of E.O. No. 113."
     },
     {
       "id": "nq-0019",
@@ -459,7 +476,8 @@
         "D": "Forty percent (40%)"
       },
       "correct": "C",
-      "explanation": "**C is correct.** Under Article XVI, Section 11(2) of the Constitution and List A (Item 13) of E.O. No. 113, foreign equity in advertising is capped at thirty percent (30%). **A is wrong:** 0% applies to mass media and cooperatives. **B is wrong:** 25% applies to recruitment agencies. **D is wrong:** 40% applies to natural resource exploration and public utilities.\n\n**Basis:** Constitution, Art. XVI, Sec. 11 (second paragraph); E.O. No. 113 (April 13, 2026), 13th Regular Foreign Investment Negative List, List A, Item 13. Checked against the official text: https://lawphil.net/consti/cons1987.html, https://lawphil.net/executive/execord/eo2026/pdf/eo_113_2026.pdf."
+      "explanation": "**C is correct.** Under Article XVI, Section 11(2) of the Constitution and List A (Item 13) of E.O. No. 113, foreign equity in advertising is capped at thirty percent (30%). **A is wrong:** 0% applies to mass media and cooperatives. **B is wrong:** 25% applies to recruitment agencies. **D is wrong:** 40% applies to natural resource exploration and public utilities.\n\n**Basis:** Constitution, Art. XVI, Sec. 11 (second paragraph); E.O. No. 113 (April 13, 2026), 13th Regular Foreign Investment Negative List, List A, Item 13. Checked against the official text: https://lawphil.net/consti/cons1987.html, https://lawphil.net/executive/execord/eo2026/pdf/eo_113_2026.pdf.",
+      "correction": "Correction: Basis citation adjusted: the Constitution doesn't number the paragraphs of Art. XVI, Sec. 11, so \"Sec. 11(2)\" is now \"Sec. 11 (second paragraph)\"; E.O. No. 113 is cited in full. Nothing in the answer was changed."
     },
     {
       "id": "nq-0020",
@@ -481,7 +499,8 @@
         "D": "₱50,000,000.00"
       },
       "correct": "C",
-      "explanation": "**C is correct.** Section 2 of R.A. No. 11595 set the minimum paid-up capital for foreign-owned retail enterprises at ₱25,000,000.00. Retail below this threshold is restricted to 40% foreign equity under List A (Item 14). **A is wrong:** ₱10 Million is the minimum investment required per physical store, not the corporate paid-up capital floor. **B is wrong:** ₱15 Million is incorrect. **D is wrong:** ₱50 million is not a threshold in the law as amended.\n\n**Basis:** R.A. No. 11595, Sec. 2 (amending R.A. No. 8762, Sec. 5); E.O. No. 113 (April 13, 2026), 13th Regular Foreign Investment Negative List, List A, Item 14. Checked against the official text: https://lawphil.net/statutes/repacts/ra2021/ra_11595_2021.html, https://lawphil.net/executive/execord/eo2026/pdf/eo_113_2026.pdf."
+      "explanation": "**C is correct.** Section 2 of R.A. No. 11595 set the minimum paid-up capital for foreign-owned retail enterprises at ₱25,000,000.00. Retail below this threshold is restricted to 40% foreign equity under List A (Item 14). **A is wrong:** ₱10 Million is the minimum investment required per physical store, not the corporate paid-up capital floor. **B is wrong:** ₱15 Million is incorrect. **D is wrong:** ₱50 million is not a threshold in the law as amended.\n\n**Basis:** R.A. No. 11595, Sec. 2 (amending R.A. No. 8762, Sec. 5); E.O. No. 113 (April 13, 2026), 13th Regular Foreign Investment Negative List, List A, Item 14. Checked against the official text: https://lawphil.net/statutes/repacts/ra2021/ra_11595_2021.html, https://lawphil.net/executive/execord/eo2026/pdf/eo_113_2026.pdf.",
+      "correction": "Correction: NotebookLM's explanation for choice D said ₱50 million \"was the old requirement prior to amendment\"; that couldn't be confirmed, so it now says ₱50 million is not a threshold in the law as amended. The correct answer (C) was not changed. Check R.A. No. 11595, Sec. 2."
     },
     {
       "id": "nq-0021",
@@ -525,7 +544,8 @@
         "D": "Seventy-five percent (75%)"
       },
       "correct": "C",
-      "explanation": "**C is correct.** Section 3(a) of R.A. No. 7042 defines a Philippine National as a corporation organized under Philippine law of which at least sixty percent (60%) of the capital stock outstanding and entitled to vote is held by Filipino citizens. **A and B are wrong:** 50% or 51% does not satisfy the statutory majority threshold. **D is wrong:** the law requires at least 60%, not 75%.\n\n**Basis:** R.A. No. 7042, Sec. 3(a), as amended by R.A. No. 8179. Checked against the official text: https://www.officialgazette.gov.ph/1991/06/13/republic-act-no-7042/."
+      "explanation": "**C is correct.** Section 3(a) of R.A. No. 7042 defines a Philippine National as a corporation organized under Philippine law of which at least sixty percent (60%) of the capital stock outstanding and entitled to vote is held by Filipino citizens. **A and B are wrong:** 50% or 51% does not satisfy the statutory majority threshold. **D is wrong:** the law requires at least 60%, not 75%.\n\n**Basis:** R.A. No. 7042, Sec. 3(a), as amended by R.A. No. 8179. Checked against the official text: https://www.officialgazette.gov.ph/1991/06/13/republic-act-no-7042/.",
+      "correction": "Correction: NotebookLM's explanation for choice D said 75% \"applies to government infrastructure procurement\"; in the Negative List that figure is a foreign-ownership ceiling, not a Filipino-ownership requirement, so it was replaced with: the law requires at least 60%, not 75%. The correct answer (C) was not changed. Check R.A. No. 7042, Sec. 3(a), as amended by R.A. No. 8179."
     },
     {
       "id": "nq-0023",
@@ -569,7 +589,8 @@
         "D": "Participating in the management and control of a domestic firm"
       },
       "correct": "B",
-      "explanation": "**B is correct.** Section 3(d) explicitly excludes appointing a representative or distributor domiciled in the Philippines that transacts business in its own name and for its own account. **A, C, and D are wrong:** These activities are explicitly included in the statutory definition of doing business.\n\n**Basis:** R.A. No. 7042, Sec. 3(d); Steelcase, Inc. v. Design International Selections, Inc., G.R. No. 171995, April 18, 2012. Checked against the official text: https://www.officialgazette.gov.ph/1991/06/13/republic-act-no-7042/, https://lawphil.net/judjuris/juri2012/apr2012/gr_171995_2012.html."
+      "explanation": "**B is correct.** Section 3(d) explicitly excludes appointing a representative or distributor domiciled in the Philippines that transacts business in its own name and for its own account. **A, C, and D are wrong:** These activities are explicitly included in the statutory definition of doing business.\n\n**Basis:** R.A. No. 7042, Sec. 3(d); Steelcase, Inc. v. Design International Selections, Inc., G.R. No. 171995, April 18, 2012. Checked against the official text: https://www.officialgazette.gov.ph/1991/06/13/republic-act-no-7042/, https://lawphil.net/judjuris/juri2012/apr2012/gr_171995_2012.html.",
+      "correction": "Correction: Basis citation completed: the full case title and date of Steelcase, Inc. v. Design International Selections, Inc. were added. Nothing in the answer was changed."
     },
     {
       "id": "nq-0025",
@@ -591,7 +612,8 @@
         "D": "One hundred percent (100%)"
       },
       "correct": "A",
-      "explanation": "**A is correct.** Section 4 of R.A. No. 11917 and List A (Item 4) of E.O. No. 113 allow only Filipino citizens or entities wholly owned and controlled by Filipino citizens to organize a private security agency, so no foreign equity is allowed. **B is wrong:** 25% applies to recruitment agencies. **C is wrong:** 40% applies to public utilities and land. **D is wrong:** Full foreign ownership is prohibited.\n\n**Basis:** R.A. No. 11917, Sec. 4; E.O. No. 113 (April 13, 2026), 13th Regular Foreign Investment Negative List, List A, Item 4. Checked against the official text: https://lawphil.net/statutes/repacts/ra2022/ra_11917_2022.html, https://lawphil.net/executive/execord/eo2026/pdf/eo_113_2026.pdf."
+      "explanation": "**A is correct.** Section 4 of R.A. No. 11917 and List A (Item 4) of E.O. No. 113 allow only Filipino citizens or entities wholly owned and controlled by Filipino citizens to organize a private security agency, so no foreign equity is allowed. **B is wrong:** 25% applies to recruitment agencies. **C is wrong:** 40% applies to public utilities and land. **D is wrong:** Full foreign ownership is prohibited.\n\n**Basis:** R.A. No. 11917, Sec. 4; E.O. No. 113 (April 13, 2026), 13th Regular Foreign Investment Negative List, List A, Item 4. Checked against the official text: https://lawphil.net/statutes/repacts/ra2022/ra_11917_2022.html, https://lawphil.net/executive/execord/eo2026/pdf/eo_113_2026.pdf.",
+      "correction": "Correction: The explanation now quotes the rule exactly: only Filipino citizens or entities wholly owned and controlled by Filipino citizens may organize a private security agency. Basis citation completed. The correct answer (A) was not changed. Check R.A. No. 11917, Sec. 4."
     },
     {
       "id": "nq-0026",
@@ -635,7 +657,8 @@
         "D": "One hundred percent (100%)"
       },
       "correct": "C",
-      "explanation": "**C is correct.** Section 25 of R.A. No. 11659 and List A (Item 25) of E.O. No. 113 state that foreign equity in telecommunications is capped at fifty percent (50%) in the absence of reciprocity. **A and B are wrong:** 0% and 40% are incorrect limits under the amended Public Service Act. **D is wrong:** 100% foreign equity requires proof of reciprocity.\n\n**Basis:** R.A. No. 11659, Sec. 25; E.O. No. 113 (April 13, 2026), 13th Regular Foreign Investment Negative List, List A, Item 25. Checked against the official text: https://lawphil.net/statutes/repacts/ra2022/ra_11659_2022.html, https://lawphil.net/executive/execord/eo2026/pdf/eo_113_2026.pdf."
+      "explanation": "**C is correct.** Section 25 of R.A. No. 11659 and List A (Item 25) of E.O. No. 113 state that foreign equity in telecommunications is capped at fifty percent (50%) in the absence of reciprocity. **A and B are wrong:** 0% and 40% are incorrect limits under the amended Public Service Act. **D is wrong:** 100% foreign equity requires proof of reciprocity.\n\n**Basis:** R.A. No. 11659, Sec. 25; E.O. No. 113 (April 13, 2026), 13th Regular Foreign Investment Negative List, List A, Item 25. Checked against the official text: https://lawphil.net/statutes/repacts/ra2022/ra_11659_2022.html, https://lawphil.net/executive/execord/eo2026/pdf/eo_113_2026.pdf.",
+      "correction": "Correction: Basis citation completed: E.O. No. 113 is identified by its date and title. Nothing in the answer was changed."
     },
     {
       "id": "nq-0029",
@@ -651,7 +674,8 @@
       },
       "prompt": "e) The term “export enterprise” shall mean an enterprise wherein a manufacturer, processor or service (including tourism) enterprise exports ____ or more of its output, or wherein a trader purchases products domestically and exports ____ or more of such purchases;",
       "fullText": "e) The term “export enterprise” shall mean an enterprise wherein a manufacturer, processor or service (including tourism) enterprise exports sixty percent (60%) or more of its output, or wherein a trader purchases products domestically and exports sixty percent (60%) or more of such purchases;",
-      "explanation": "Both blanks are \"sixty percent (60%)\": the same export ratio applies to a manufacturer, processor or service enterprise (measured against its output) and to a trader (measured against its domestic purchases). An enterprise below that line is a domestic market enterprise under Sec. 3(f).\n\n**Basis:** R.A. No. 7042, Sec. 3(e). Checked against the official text: https://www.officialgazette.gov.ph/1991/06/13/republic-act-no-7042/."
+      "explanation": "Both blanks are \"sixty percent (60%)\": the same export ratio applies to a manufacturer, processor or service enterprise (measured against its output) and to a trader (measured against its domestic purchases). An enterprise below that line is a domestic market enterprise under Sec. 3(f).\n\n**Basis:** R.A. No. 7042, Sec. 3(e). Checked against the official text: https://www.officialgazette.gov.ph/1991/06/13/republic-act-no-7042/.",
+      "correction": "Correction: NotebookLM's text of Sec. 3(e) dropped the quotation marks around \"export enterprise\", the item letter \"e)\" and the closing semicolon; the full text now matches the official wording exactly, and the discussion was rewritten. The blanks are unchanged. Check R.A. No. 7042, Sec. 3(e) on the Official Gazette (LawPhil's copy is missing this item)."
     },
     {
       "id": "nq-0030",
@@ -667,7 +691,8 @@
       },
       "prompt": "Section 2. Amendments. Amendments to Negative List A may be made at any time to reflect changes instituted in specific laws, while amendments to Negative List B shall not be made more often than ____, pursuant to Section 8 of RA No. 7042, as amended, and its Implementing Rules and Regulations.",
       "fullText": "Section 2. Amendments. Amendments to Negative List A may be made at any time to reflect changes instituted in specific laws, while amendments to Negative List B shall not be made more often than once every two (2) years, pursuant to Section 8 of RA No. 7042, as amended, and its Implementing Rules and Regulations.",
-      "explanation": "List A follows changes in the Constitution and specific laws, so it may be amended whenever such a law changes; List B may be amended only once every two (2) years.\n\n**Basis:** E.O. No. 113 (April 13, 2026), 13th Regular Foreign Investment Negative List, Sec. 2. Checked against the official text: https://lawphil.net/executive/execord/eo2026/pdf/eo_113_2026.pdf."
+      "explanation": "List A follows changes in the Constitution and specific laws, so it may be amended whenever such a law changes; List B may be amended only once every two (2) years.\n\n**Basis:** E.O. No. 113 (April 13, 2026), 13th Regular Foreign Investment Negative List, Sec. 2. Checked against the official text: https://lawphil.net/executive/execord/eo2026/pdf/eo_113_2026.pdf.",
+      "correction": "Correction: The section heading \"Section 2. Amendments.\" was added, and the discussion was rewritten (NotebookLM's reason, \"to preserve regulatory stability for investors\", isn't in the text). The wording follows the certified copy of E.O. No. 113 (\"Section 8 of RA No. 7042, as amended\"); note that LawPhil's web page leaves out \"as amended\". Check the certified copy (PDF) of E.O. No. 113, Sec. 2."
     },
     {
       "id": "nq-0031",
@@ -692,7 +717,8 @@
         "Surgical methods for treating the human body are non-patentable under Section 22.3 of R.A. 8293.",
         "The statutory exclusion from patentability does not extend to products or devices used in surgical methods.",
         "The specialized titanium implant is a patentable product, whereas the surgical procedure itself is excluded."
-      ]
+      ],
+      "correction": "Correction: NotebookLM cited Sec. 22.4 for surgical and therapeutic methods; Sec. 22.4 is about plant varieties and animal breeds. The rule is Sec. 22.3 (left unchanged when R.A. No. 9502 amended Sec. 22). Corrected in the legal basis, the first key point and the Basis. Check R.A. No. 8293, Sec. 22.3."
     },
     {
       "id": "nq-0032",
@@ -717,7 +743,8 @@
         "Inventions outside regular duties belong to the employee under Section 30.2(a) of R.A. 8293.",
         "Employee's use of employer's time, facilities, and materials does not shift patent ownership to the employer if inventive activity is not part of regular duties.",
         "Employer owns inventions under Section 30.2(b) only when the invention results from the performance of regularly-assigned duties."
-      ]
+      ],
+      "correction": "Correction: Basis citation adjusted: \"Sec. 30.2(a)\" became \"Sec. 30.2\", since the key points also rely on 30.2(b). Nothing in the answer was changed."
     },
     {
       "id": "nq-0033",
@@ -742,7 +769,8 @@
         "Right of priority under Section 31 of R.A. 8293 accords the effective filing date of the earliest foreign application.",
         "Requisites: express claim of priority, local filing within 12 months, and certified translation within 6 months.",
         "Timely compliance retroacts the priority date, defeating subsequent local filings under the first-to-file system."
-      ]
+      ],
+      "correction": "Correction: The legal basis now follows Sec. 31's exact requirements: the earlier application must be in a country that gives Filipinos similar privileges, and what must be filed within six months is a certified copy of the foreign application together with an English translation (NotebookLM said \"a certified copy ... in English\"). A line from E.I. Dupont De Nemours v. Director Francisco (priority matters only when applications conflict) was added, and its title corrected. Check R.A. No. 8293, Sec. 31, and G.R. No. 174379."
     },
     {
       "id": "nq-0034",
@@ -767,7 +795,8 @@
         "Good-faith prior user before filing/priority date is protected from infringement actions under Section 73 of R.A. 8293.",
         "Prior user rights cannot be licensed or transferred independently of the underlying enterprise.",
         "Transfer of the entire business validly carries with it the prior user right to the transferee."
-      ]
+      ],
+      "correction": "Correction: Basis citation tidied only (\"R.A. 8293\" written as \"R.A. No. 8293\"); nothing in the question or answer was changed."
     },
     {
       "id": "nq-0035",
@@ -792,7 +821,8 @@
         "Doctrine of Equivalents requires satisfaction of all three prongs: function, means, and result.",
         "Identity of function and result is insufficient if the accused device operates through a substantially different means.",
         "Failure to prove substantial identity of means defeats a claim under the doctrine of equivalents."
-      ]
+      ],
+      "correction": "Correction: Basis citation tidied only (\"R.A. 8293\" written as \"R.A. No. 8293\"); nothing in the question or answer was changed."
     },
     {
       "id": "nq-0036",
@@ -817,7 +847,8 @@
         "Trademark rights under R.A. 8293, Section 122 are acquired solely through registration, not prior use.",
         "Zuneca Pharmaceutical v. Natrapharm reaffirmed that the Philippines strictly adheres to the first-to-file rule.",
         "Unregistered prior users do not acquire trademark ownership over a later good-faith registrant."
-      ]
+      ],
+      "correction": "Correction: Basis citation completed: Sec. 159.1 (the prior user in good faith), which the application relies on, was added. Nothing in the answer was changed."
     },
     {
       "id": "nq-0037",
@@ -842,7 +873,8 @@
         "DAU must be filed within 3 years from filing date under Section 124.2 of R.A. 8293.",
         "Failure to file DAU causes removal of the registered mark from the Register.",
         "Under Section 152.1, lack of funds is explicitly excluded as an excuse for non-use of a mark."
-      ]
+      ],
+      "correction": "Correction: NotebookLM cited Secs. 124.2 and 145 together for the 3-year Declaration of Actual Use. Sec. 145 is a different declaration, due within one year from the fifth anniversary of registration; the legal basis now cites only Sec. 124.2 for the 3-year rule and explains Sec. 145 separately. Check R.A. No. 8293, Secs. 124.2, 145 and 152.1."
     },
     {
       "id": "nq-0038",
@@ -867,7 +899,8 @@
         "Descriptive and geographical terms are generally non-registrable under Section 123.1(j).",
         "Doctrine of Secondary Meaning under Section 123.2 permits registration when a descriptive term acquires distinctiveness through long, exclusive use.",
         "Five years of substantially exclusive and continuous commercial use in the Philippines creates a prima facie presumption of distinctiveness."
-      ]
+      ],
+      "correction": "Correction: NotebookLM cited \"Ginebra San Miguel, Inc. v. Director of IPO\" with no number or date; the case is Ginebra San Miguel, Inc. v. Director of the Bureau of Trademarks, G.R. No. 196372, August 9, 2022. Nothing in the answer was changed. Check that decision on LawPhil."
     },
     {
       "id": "nq-0039",
@@ -892,7 +925,8 @@
         "Unfair competition under Section 168 focuses on the overall general appearance (get-up) of goods, not registration or word marks.",
         "Liability for unfair competition can exist even if trademark infringement is absent.",
         "Intent to deceive the public may be inferred from copying the overall packaging and layout design."
-      ]
+      ],
+      "correction": "Correction: NotebookLM gave San Miguel Pure Foods v. Foodsphere as G.R. Nos. 217788 & 217792; the correct numbers are G.R. Nos. 217781 & 217788 (June 20, 2018). Corrected in the legal basis and the Basis. Check the decision on LawPhil."
     },
     {
       "id": "nq-0040",
@@ -917,7 +951,8 @@
         "Registered well-known marks are protected against use on dissimilar or non-competing goods under Sections 123.1(f) & 147.2.",
         "Requisites: well-known status, indication of connection between goods, and likelihood of damage to owner's interest.",
         "Different product classification does not bar protection for a registered well-known mark."
-      ]
+      ],
+      "correction": "Correction: NotebookLM cited Fredco v. Harvard for this point; that case is about trade names, not well-known marks on unrelated goods, so it was removed. The conclusion, which only restated the rule, was rewritten as a ruling. Check R.A. No. 8293, Secs. 123.1(f) and 147.2."
     },
     {
       "id": "nq-0041",
@@ -942,7 +977,8 @@
         "Copyright protects expression, not functional articles or utility methods under Section 175 of R.A. 8293.",
         "Ching v. Salinas holds that functional vehicle parts are not works of applied art and cannot be copyrighted.",
         "Pearl & Dean establishes that copyright in technical drawings does not extend to the manufacture of the physical article depicted."
-      ]
+      ],
+      "correction": "Correction: Basis citation note added: Pearl & Dean v. Shoemart was decided under the old copyright law (P.D. No. 49), not R.A. No. 8293. Nothing in the answer was changed."
     },
     {
       "id": "nq-0042",
@@ -967,7 +1003,8 @@
         "Under Section 178.4 of R.A. 8293, ownership of a commissioned work is dual: physical object vs copyright.",
         "The commissioning party owns the physical work, while the creator retains the copyright.",
         "Transfer of copyright in a commissioned work requires an express written agreement."
-      ]
+      ],
+      "correction": "Correction: Basis citation completed: Sec. 181 is cited as amended by R.A. No. 10372. Nothing in the answer was changed."
     },
     {
       "id": "nq-0043",
@@ -992,7 +1029,8 @@
         "Fair use is decided by weighing the four factors of Section 185 of R.A. 8293.",
         "ABS-CBN v. Gozon: news footage is copyrightable, and a news-reporting purpose does not by itself make the use fair.",
         "Commercial rebroadcasting of substantial raw video footage impairs market value and negates fair use."
-      ]
+      ],
+      "correction": "Correction: NotebookLM called the fair-use factors \"P-A-N-E\", a memory aid that isn't in the law, and said ABS-CBN v. Gozon \"holds\" that news reporting gives no immunity. The legal basis and two key points now list the four factors of Sec. 185 and say what Gozon did hold: news footage is copyrightable, commercial use weighs against fair use, and raising fair use doesn't automatically mean no infringement. Check R.A. No. 8293, Sec. 185, and G.R. No. 195956."
     },
     {
       "id": "nq-0044",
@@ -1017,7 +1055,8 @@
         "Section 200 of R.A. 8293 grants authors an inalienable 5% resale right in gross proceeds of subsequent sales of original paintings, sculptures, or manuscripts.",
         "The resale right persists during the author's lifetime plus 50 years posthumously.",
         "Transfer of physical ownership of the artwork does not extinguish the statutory droit de suite."
-      ]
+      ],
+      "correction": "Correction: Basis citation tidied only (\"R.A. 8293\" written as \"R.A. No. 8293\"); nothing in the question or answer was changed."
     },
     {
       "id": "nq-0045",
@@ -1042,7 +1081,8 @@
         "Vicarious copyright infringement under Section 216(b) requires notice, right and ability to control, and direct financial benefit.",
         "Failure of an online platform to remove infringing items after formal notice renders it liable.",
         "Earning commissions from infringing sales satisfies the direct financial benefit element."
-      ]
+      ],
+      "correction": "Correction: NotebookLM cited \"Section 216.2\" for vicarious liability; the rule is Sec. 216(b) of R.A. No. 8293 as amended by R.A. No. 10372 (216.1 is the remedies). Corrected in the legal basis, conclusion, first key point and Basis. Check R.A. No. 10372, Sec. 22."
     },
     {
       "id": "nq-0046",
@@ -1064,7 +1104,8 @@
         "D": "50 years after the death of the inventor"
       },
       "correct": "B",
-      "explanation": "B is correct under Section 54 of R.A. 8293, which provides that the term of a patent shall be twenty (20) years from the filing date of the application. A is wrong because the IP Code counts twenty years, from filing, not seventeen years from grant. C is wrong because the 20-year period runs from the filing date, not the grant date. D is wrong because 50 years after death applies to copyright economic rights, not patents.\n\n**Basis:** R.A. No. 8293, Sec. 54. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+      "explanation": "B is correct under Section 54 of R.A. 8293, which provides that the term of a patent shall be twenty (20) years from the filing date of the application. A is wrong because the IP Code counts twenty years, from filing, not seventeen years from grant. C is wrong because the 20-year period runs from the filing date, not the grant date. D is wrong because 50 years after death applies to copyright economic rights, not patents.\n\n**Basis:** R.A. No. 8293, Sec. 54. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html.",
+      "correction": "Correction: NotebookLM's explanation for choice A said 17 years from grant \"was the old rule under R.A. 165\"; that wasn't checked, so it now says only that the IP Code counts twenty years from filing. The correct answer (B) was not changed. Check R.A. No. 8293, Sec. 54."
     },
     {
       "id": "nq-0047",
@@ -1086,7 +1127,8 @@
         "D": "An improved formulation that demonstrates significantly enhanced therapeutic efficacy"
       },
       "correct": "C",
-      "explanation": "C is correct because Section 26.2 of R.A. 8293 (as amended by R.A. 9502) explicitly excludes from inventive step the mere discovery of a new form or new property of a known substance which does not result in the enhancement of the known efficacy. A is wrong because a process employing at least one new reactant that results in a new product is an explicit statutory exception that IS patentable. B and D are wrong because novel compounds and improved formulations showing enhanced efficacy possess inventive step and are patentable.\n\n**Basis:** R.A. No. 8293, Sec. 26.2, as amended by R.A. No. 9502. Checked against the official text: https://lawphil.net/statutes/repacts/ra2008/ra_9502_2008.html."
+      "explanation": "C is correct because Section 26.2 of R.A. 8293 (as amended by R.A. 9502) explicitly excludes from inventive step the mere discovery of a new form or new property of a known substance which does not result in the enhancement of the known efficacy. A is wrong because a process employing at least one new reactant that results in a new product is an explicit statutory exception that IS patentable. B and D are wrong because novel compounds and improved formulations showing enhanced efficacy possess inventive step and are patentable.\n\n**Basis:** R.A. No. 8293, Sec. 26.2, as amended by R.A. No. 9502. Checked against the official text: https://lawphil.net/statutes/repacts/ra2008/ra_9502_2008.html.",
+      "correction": "Correction: Basis citation tidied only (\"R.A. 8293\" written as \"R.A. No. 8293\"); nothing in the question or answer was changed."
     },
     {
       "id": "nq-0048",
@@ -1108,7 +1150,8 @@
         "D": "Technical assistance agreements between a foreign parent and local subsidiary"
       },
       "correct": "C",
-      "explanation": "C is correct because Section 4.2 of R.A. 8293 explicitly excludes computer software developed for the mass market from the definition of Technology Transfer Arrangements. A, B, and D are wrong because franchise agreements, customized software licenses, and technical assistance agreements fall squarely within the statutory definition of TTAs.\n\n**Basis:** R.A. No. 8293, Sec. 4.2. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+      "explanation": "C is correct because Section 4.2 of R.A. 8293 explicitly excludes computer software developed for the mass market from the definition of Technology Transfer Arrangements. A, B, and D are wrong because franchise agreements, customized software licenses, and technical assistance agreements fall squarely within the statutory definition of TTAs.\n\n**Basis:** R.A. No. 8293, Sec. 4.2. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html.",
+      "correction": "Correction: Basis citation tidied only (\"R.A. 8293\" written as \"R.A. No. 8293\"); nothing in the question or answer was changed."
     },
     {
       "id": "nq-0049",
@@ -1130,7 +1173,8 @@
         "D": "Convert the injunction into an automatic criminal conviction"
       },
       "correct": "B",
-      "explanation": "B is correct pursuant to Philippine Pharmawealth, Inc. v. Pfizer, Inc. (G.R. No. 167715), which ruled that upon expiration of the patent term, the exclusive right to monopolize the invention ceases, and there is no longer any legal basis to issue or maintain an injunction. A and C are wrong because injunctions protect existing rights and cannot extend beyond statutory term limits. D is wrong because civil courts cannot convert injunctions into criminal convictions.\n\n**Basis:** Philippine Pharmawealth, Inc. v. Pfizer, Inc., G.R. No. 167715, November 17, 2010; R.A. No. 8293, Sec. 54. Checked against the official text: https://lawphil.net/judjuris/juri2010/nov2010/gr_167715_2010.html, https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+      "explanation": "B is correct pursuant to Philippine Pharmawealth, Inc. v. Pfizer, Inc. (G.R. No. 167715), which ruled that upon expiration of the patent term, the exclusive right to monopolize the invention ceases, and there is no longer any legal basis to issue or maintain an injunction. A and C are wrong because injunctions protect existing rights and cannot extend beyond statutory term limits. D is wrong because civil courts cannot convert injunctions into criminal convictions.\n\n**Basis:** Philippine Pharmawealth, Inc. v. Pfizer, Inc., G.R. No. 167715, November 17, 2010; R.A. No. 8293, Sec. 54. Checked against the official text: https://lawphil.net/judjuris/juri2010/nov2010/gr_167715_2010.html, https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html.",
+      "correction": "Correction: Basis citation completed: Sec. 54 (the 20-year patent term) was added next to the case. Nothing in the answer was changed."
     },
     {
       "id": "nq-0050",
@@ -1152,7 +1196,8 @@
         "D": "The Genericide Test"
       },
       "correct": "B",
-      "explanation": "B is correct because Philippine jurisprudence explicitly favors the Dominancy Test as the primary and controlling test in determining trademark confusing similarity. A is wrong because the Supreme Court has declared the Holistic Test abandoned for determining the resemblance of marks (as restated in Ginebra San Miguel, Inc. v. Director of the Bureau of Trademarks). C is wrong because Idem Sonans focuses only on aural similarity. D is wrong because genericide is a ground for cancellation, not a test for similarity.\n\n**Basis:** R.A. No. 8293, Sec. 155.1; Ginebra San Miguel, Inc. v. Director of the Bureau of Trademarks, G.R. No. 196372, August 9, 2022. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html, https://lawphil.net/judjuris/juri2022/aug2022/gr_196372_2022.html."
+      "explanation": "B is correct because Philippine jurisprudence explicitly favors the Dominancy Test as the primary and controlling test in determining trademark confusing similarity. A is wrong because the Supreme Court has declared the Holistic Test abandoned for determining the resemblance of marks (as restated in Ginebra San Miguel, Inc. v. Director of the Bureau of Trademarks). C is wrong because Idem Sonans focuses only on aural similarity. D is wrong because genericide is a ground for cancellation, not a test for similarity.\n\n**Basis:** R.A. No. 8293, Sec. 155.1; Ginebra San Miguel, Inc. v. Director of the Bureau of Trademarks, G.R. No. 196372, August 9, 2022. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html, https://lawphil.net/judjuris/juri2022/aug2022/gr_196372_2022.html.",
+      "correction": "Correction: NotebookLM's explanation for choice A said the Holistic Test is still used \"as a supplementary analysis or in unfair competition\". The Supreme Court has declared the Holistic Test abandoned for comparing marks (restated in Ginebra San Miguel v. Director of the Bureau of Trademarks, 2022), and the Basis now cites that case instead of Kensonic, which doesn't discuss these tests. The correct answer (B) was not changed. Check G.R. No. 196372 and R.A. No. 8293, Sec. 155.1."
     },
     {
       "id": "nq-0051",
@@ -1174,7 +1219,8 @@
         "D": "No, unless both products are registered under the exact same owner"
       },
       "correct": "B",
-      "explanation": "B is correct because Kensonic v. Uni-Line and Taiwan Kolin Corp. v. Kolin Electronics held that the classification of goods under the Nice Agreement is primarily for administrative convenience and does not automatically make goods related. Factors like nature, purpose, cost, and channels of trade must be evaluated. A is wrong because classification alone is not decisive. C and D are wrong because geographic sale or owner identity does not define product relatedness.\n\n**Basis:** Kensonic, Inc. v. Uni-Line Multi-Resources, Inc. (Phil.), G.R. Nos. 211820-21 & 211834-35, June 6, 2018; Taiwan Kolin Corp., Ltd. v. Kolin Electronics Co., Inc., G.R. No. 209843, March 25, 2015. Checked against the official text: https://lawphil.net/judjuris/juri2018/jun2018/gr_211820-21_2018.html, https://lawphil.net/judjuris/juri2015/mar2015/gr_209843_2015.html."
+      "explanation": "B is correct because Kensonic v. Uni-Line and Taiwan Kolin Corp. v. Kolin Electronics held that the classification of goods under the Nice Agreement is primarily for administrative convenience and does not automatically make goods related. Factors like nature, purpose, cost, and channels of trade must be evaluated. A is wrong because classification alone is not decisive. C and D are wrong because geographic sale or owner identity does not define product relatedness.\n\n**Basis:** Kensonic, Inc. v. Uni-Line Multi-Resources, Inc. (Phil.), G.R. Nos. 211820-21 & 211834-35, June 6, 2018; Taiwan Kolin Corp., Ltd. v. Kolin Electronics Co., Inc., G.R. No. 209843, March 25, 2015. Checked against the official text: https://lawphil.net/judjuris/juri2018/jun2018/gr_211820-21_2018.html, https://lawphil.net/judjuris/juri2015/mar2015/gr_209843_2015.html.",
+      "correction": "Correction: NotebookLM gave Kensonic v. Uni-Line as G.R. Nos. 213220 & 213221; the correct numbers are G.R. Nos. 211820-21 & 211834-35 (June 6, 2018). Taiwan Kolin v. Kolin Electronics (G.R. No. 209843), named in the explanation, was added to the Basis. Nothing in the answer was changed."
     },
     {
       "id": "nq-0052",
@@ -1196,7 +1242,8 @@
         "D": "By filing a Declaration of Actual Use within 3 years from adoption"
       },
       "correct": "B",
-      "explanation": "B is correct because Section 165.2(a) of R.A. 8293 explicitly provides that trade names are protected prior to or without registration against any unlawful act. Fredco v. Harvard also confirms trade names of foreign nationals under the Paris Convention are protected without registration. A is wrong because registration is required for trademarks, not trade names. C is wrong because DTI registration does not govern IP Code trade name protection. D is wrong because DAU applies to trademarks.\n\n**Basis:** R.A. No. 8293, Sec. 165.2(a); Fredco Manufacturing Corp. v. President and Fellows of Harvard College, G.R. No. 185917, June 1, 2011. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html, https://lawphil.net/judjuris/juri2011/jun2011/gr_185917_2011.html."
+      "explanation": "B is correct because Section 165.2(a) of R.A. 8293 explicitly provides that trade names are protected prior to or without registration against any unlawful act. Fredco v. Harvard also confirms trade names of foreign nationals under the Paris Convention are protected without registration. A is wrong because registration is required for trademarks, not trade names. C is wrong because DTI registration does not govern IP Code trade name protection. D is wrong because DAU applies to trademarks.\n\n**Basis:** R.A. No. 8293, Sec. 165.2(a); Fredco Manufacturing Corp. v. President and Fellows of Harvard College, G.R. No. 185917, June 1, 2011. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html, https://lawphil.net/judjuris/juri2011/jun2011/gr_185917_2011.html.",
+      "correction": "Correction: Basis citation corrected: the case is Fredco Manufacturing Corp. v. President and Fellows of Harvard College (NotebookLM wrote \"Harvard University\"). Nothing in the answer was changed."
     },
     {
       "id": "nq-0053",
@@ -1218,7 +1265,8 @@
         "D": "Exemplary damages require a prior criminal conviction of the defendant"
       },
       "correct": "B",
-      "explanation": "B is correct because under Article 2234 of the Civil Code and San Miguel Pure Foods v. Foodsphere, exemplary damages cannot be recovered as a matter of right and require the plaintiff to first prove entitlement to moral, temperate, or compensatory damages. The Court also noted that where the dispositive portion (fallo) and the body of a decision conflict, the fallo prevails, and the Court of Appeals' fallo awarded no exemplary damages; and since actual damages were unproven, there was no basis for them. A, C, and D are incorrect statements of law.\n\n**Basis:** Civil Code, Arts. 2233 and 2234; San Miguel Pure Foods Co., Inc. v. Foodsphere, Inc., G.R. Nos. 217781 & 217788, June 20, 2018. Checked against the official text: https://lawphil.net/judjuris/juri2018/jun2018/gr_217781_2018.html, https://lawphil.net/statutes/repacts/ra1949/ra_386_1949.html."
+      "explanation": "B is correct because under Article 2234 of the Civil Code and San Miguel Pure Foods v. Foodsphere, exemplary damages cannot be recovered as a matter of right and require the plaintiff to first prove entitlement to moral, temperate, or compensatory damages. The Court also noted that where the dispositive portion (fallo) and the body of a decision conflict, the fallo prevails, and the Court of Appeals' fallo awarded no exemplary damages; and since actual damages were unproven, there was no basis for them. A, C, and D are incorrect statements of law.\n\n**Basis:** Civil Code, Arts. 2233 and 2234; San Miguel Pure Foods Co., Inc. v. Foodsphere, Inc., G.R. Nos. 217781 & 217788, June 20, 2018. Checked against the official text: https://lawphil.net/judjuris/juri2018/jun2018/gr_217781_2018.html, https://lawphil.net/statutes/repacts/ra1949/ra_386_1949.html.",
+      "correction": "Correction: The explanation now adds the Court's other reason: where the dispositive portion (fallo) and the body of a decision conflict, the fallo prevails, and the Court of Appeals' fallo awarded no exemplary damages. The Basis now also cites Civil Code Art. 2233 and the correct G.R. Nos. 217781 & 217788. The correct answer (B) was not changed. Check the decision on LawPhil."
     },
     {
       "id": "nq-0054",
@@ -1240,7 +1288,8 @@
         "D": "Dating shows are contrary to public order and moral standards"
       },
       "correct": "B",
-      "explanation": "B is correct because under Section 175 of R.A. 8293 and Joaquin v. Drilon, copyright does not extend to any idea, procedure, system, method or operation, concept, principle or discovery; and Joaquin held that the format or mechanics of a television show is not among the works the law protects. A is wrong because copyright exists from the moment of creation without registration. C and D are legally incorrect.\n\n**Basis:** R.A. No. 8293, Secs. 172 and 175; Joaquin v. Drilon, G.R. No. 108946, January 28, 1999. Checked against the official text: https://lawphil.net/judjuris/juri1999/jan1999/gr_108946_1999.html, https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+      "explanation": "B is correct because under Section 175 of R.A. 8293 and Joaquin v. Drilon, copyright does not extend to any idea, procedure, system, method or operation, concept, principle or discovery; and Joaquin held that the format or mechanics of a television show is not among the works the law protects. A is wrong because copyright exists from the moment of creation without registration. C and D are legally incorrect.\n\n**Basis:** R.A. No. 8293, Secs. 172 and 175; Joaquin v. Drilon, G.R. No. 108946, January 28, 1999. Checked against the official text: https://lawphil.net/judjuris/juri1999/jan1999/gr_108946_1999.html, https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html.",
+      "correction": "Correction: NotebookLM's explanation said Sec. 175 excludes any \"format\"; the word \"format\" isn't in Sec. 175. The explanation now lists what Sec. 175 actually excludes and says Joaquin v. Drilon held that a show's format is not among the protected works (it was decided under P.D. No. 49). The correct answer (B) was not changed. Check R.A. No. 8293, Secs. 172 and 175, and G.R. No. 108946."
     },
     {
       "id": "nq-0055",
@@ -1262,7 +1311,8 @@
         "D": "Jointly owned by the employer and employee in equal shares"
       },
       "correct": "B",
-      "explanation": "B is correct because Section 178.3(b) of R.A. 8293 provides that copyright belongs to the employer if the work is the result of the performance of regularly-assigned duties, unless agreed otherwise. If the work is NOT part of regular duties, it belongs to the employee under Section 178.3(a) even if created during office hours. A, C, and D are inaccurate statements of the rule.\n\n**Basis:** R.A. No. 8293, Sec. 178.3. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+      "explanation": "B is correct because Section 178.3(b) of R.A. 8293 provides that copyright belongs to the employer if the work is the result of the performance of regularly-assigned duties, unless agreed otherwise. If the work is NOT part of regular duties, it belongs to the employee under Section 178.3(a) even if created during office hours. A, C, and D are inaccurate statements of the rule.\n\n**Basis:** R.A. No. 8293, Sec. 178.3. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html.",
+      "correction": "Correction: Basis citation tidied only (\"R.A. 8293\" written as \"R.A. No. 8293\"); nothing in the question or answer was changed."
     },
     {
       "id": "nq-0056",
@@ -1284,7 +1334,8 @@
         "D": "It extinguishes all moral and economic rights of the author"
       },
       "correct": "C",
-      "explanation": "C is correct because Section 181 of R.A. 8293 (Distinct Object Rule) explicitly states that the copyright is distinct from the physical material object. Transfer of the physical copy does not of itself transfer copyright or any rights in the work. A, B, and D misstate the statutory rule.\n\n**Basis:** R.A. No. 8293, Sec. 181, as amended by R.A. No. 10372. Checked against the official text: https://lawphil.net/statutes/repacts/ra2013/ra_10372_2013.html."
+      "explanation": "C is correct because Section 181 of R.A. 8293 (Distinct Object Rule) explicitly states that the copyright is distinct from the physical material object. Transfer of the physical copy does not of itself transfer copyright or any rights in the work. A, B, and D misstate the statutory rule.\n\n**Basis:** R.A. No. 8293, Sec. 181, as amended by R.A. No. 10372. Checked against the official text: https://lawphil.net/statutes/repacts/ra2013/ra_10372_2013.html.",
+      "correction": "Correction: Basis citation completed: Sec. 181 is cited as amended by R.A. No. 10372. Nothing in the answer was changed."
     },
     {
       "id": "nq-0057",
@@ -1306,7 +1357,8 @@
         "D": "10 years from registration, renewable once"
       },
       "correct": "C",
-      "explanation": "C is correct because Section 213.4 of R.A. 8293 explicitly mandates that in the case of works of applied art, the protection shall be for a period of twenty-five (25) years from the date of making. A applies to general literary/artistic works (Section 213.1). B is the rule for photographic and audiovisual works (Sections 213.5 and 213.6). D is not a copyright term at all.\n\n**Basis:** R.A. No. 8293, Sec. 213.4. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+      "explanation": "C is correct because Section 213.4 of R.A. 8293 explicitly mandates that in the case of works of applied art, the protection shall be for a period of twenty-five (25) years from the date of making. A applies to general literary/artistic works (Section 213.1). B is the rule for photographic and audiovisual works (Sections 213.5 and 213.6). D is not a copyright term at all.\n\n**Basis:** R.A. No. 8293, Sec. 213.4. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html.",
+      "correction": "Correction: NotebookLM's explanation said choice D \"describes trademark renewal terms\"; trademarks are renewable for repeated 10-year periods, so it now says D is not a copyright term at all. The correct answer (C) was not changed. Check R.A. No. 8293, Sec. 213.4."
     },
     {
       "id": "nq-0058",
@@ -1328,7 +1380,8 @@
         "D": "At any time during the lifetime of the copyright author"
       },
       "correct": "B",
-      "explanation": "B is correct because Section 226 of R.A. 8293 explicitly provides that no damages may be recovered under the Act after four (4) years from the time the cause of action arose. A, C, and D state incorrect prescriptive periods.\n\n**Basis:** R.A. No. 8293, Sec. 226, as amended by R.A. No. 10372. Checked against the official text: https://lawphil.net/statutes/repacts/ra2013/ra_10372_2013.html."
+      "explanation": "B is correct because Section 226 of R.A. 8293 explicitly provides that no damages may be recovered under the Act after four (4) years from the time the cause of action arose. A, C, and D state incorrect prescriptive periods.\n\n**Basis:** R.A. No. 8293, Sec. 226, as amended by R.A. No. 10372. Checked against the official text: https://lawphil.net/statutes/repacts/ra2013/ra_10372_2013.html.",
+      "correction": "Correction: Basis citation completed: Sec. 226 is cited as amended by R.A. No. 10372. Nothing in the answer was changed."
     },
     {
       "id": "nq-0059",
@@ -1344,7 +1397,8 @@
       },
       "prompt": "Section 21. Patentable Inventions. - Any technical solution of a problem in any field of human activity which is ____, involves an ____ and is industrially applicable shall be Patentable.",
       "fullText": "Section 21. Patentable Inventions. - Any technical solution of a problem in any field of human activity which is new, involves an inventive step and is industrially applicable shall be Patentable.",
-      "explanation": "Section 21 names the three requisites of patentability: the invention must be new (novelty), involve an inventive step, and be industrially applicable.\n\n**Basis:** R.A. No. 8293, Sec. 21. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+      "explanation": "Section 21 names the three requisites of patentability: the invention must be new (novelty), involve an inventive step, and be industrially applicable.\n\n**Basis:** R.A. No. 8293, Sec. 21. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html.",
+      "correction": "Correction: The section heading \"Section 21. Patentable Inventions.\" was added, the explanation reworded, and the last word follows LawPhil's text exactly: \"shall be Patentable\" with a capital P (NotebookLM wrote \"patentable\"). The Official Gazette copy couldn't be checked. Check R.A. No. 8293, Sec. 21."
     },
     {
       "id": "nq-0060",
@@ -1360,7 +1414,8 @@
       },
       "prompt": "Section 122. How Marks are Acquired. - The rights in a mark shall be acquired through ____ made validly in accordance with the provisions of this law.",
       "fullText": "Section 122. How Marks are Acquired. - The rights in a mark shall be acquired through registration made validly in accordance with the provisions of this law.",
-      "explanation": "Under Section 122, rights in a mark are acquired through valid registration, not through prior use (Zuneca Pharmaceutical v. Natrapharm, Inc., G.R. No. 211850, September 8, 2020). A prior user in good faith may still continue using the mark under Section 159.1.\n\n**Basis:** R.A. No. 8293, Sec. 122; Zuneca Pharmaceutical v. Natrapharm, Inc., G.R. No. 211850, September 8, 2020. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html, https://lawphil.net/judjuris/juri2020/sep2020/gr_211850_2020.html."
+      "explanation": "Under Section 122, rights in a mark are acquired through valid registration, not through prior use (Zuneca Pharmaceutical v. Natrapharm, Inc., G.R. No. 211850, September 8, 2020). A prior user in good faith may still continue using the mark under Section 159.1.\n\n**Basis:** R.A. No. 8293, Sec. 122; Zuneca Pharmaceutical v. Natrapharm, Inc., G.R. No. 211850, September 8, 2020. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html, https://lawphil.net/judjuris/juri2020/sep2020/gr_211850_2020.html.",
+      "correction": "Correction: The section heading \"Section 122. How Marks are Acquired.\" was added and the explanation rewritten to cite Zuneca v. Natrapharm and the prior-user rule of Sec. 159.1. The blank is unchanged. Check R.A. No. 8293, Sec. 122."
     },
     {
       "id": "nq-0061",
@@ -1385,7 +1440,8 @@
         "Utility models require only novelty and industrial applicability under Section 109.1 of R.A. 8293.",
         "An inventive step is NOT a statutory requirement for utility model registration.",
         "Rejection based on lack of an inventive step is legally erroneous."
-      ]
+      ],
+      "correction": "Correction: The legal basis now follows Sec. 109.1(a) and (b) exactly (Sec. 21 applies to utility models except the inventive-step requirement). NotebookLM's conclusion said the application \"should be granted\"; it now says only that rejecting it for lack of an inventive step was wrong, since other requirements still apply. Check R.A. No. 8293, Sec. 109.1."
     },
     {
       "id": "nq-0062",
@@ -1410,7 +1466,8 @@
         "Section 72.1 of R.A. 8293 (as amended by R.A. 9502) adopts the doctrine of international exhaustion for drugs and medicines.",
         "For drugs and medicines, patent rights are limited once the drug has been introduced anywhere in the world by the patent owner or by a party authorized to use the invention.",
         "Parallel importation of genuine patented medicines from foreign markets is legal and non-infringing."
-      ]
+      ],
+      "correction": "Correction: NotebookLM said patent rights end once the drug is sold abroad by the patent owner \"or with its express consent\". Sec. 72.1 as amended says: introduced anywhere in the world by the patent owner or by any party authorized to use the invention, and the right to import is open to any government agency or private third party. The legal basis and a key point were corrected. Check R.A. No. 9502, Sec. 7 (amending Sec. 72.1)."
     },
     {
       "id": "nq-0063",
@@ -1435,7 +1492,8 @@
         "Section 25 of R.A. 8293 provides a 12-month grace period for non-prejudicial public disclosures.",
         "Disclosures made by the inventor within 12 months prior to filing date do not destroy novelty.",
         "Academic publication by the inventor 8.5 months before application filing is protected."
-      ]
+      ],
+      "correction": "Correction: The legal basis now quotes Sec. 25.1 exactly: the 12 months run back from the filing date or the priority date (NotebookLM mentioned only the filing date). Nothing else changed. Check R.A. No. 8293, Sec. 25."
     },
     {
       "id": "nq-0064",
@@ -1460,7 +1518,8 @@
         "Compulsory licensing under Section 93 of R.A. 8293 does not require patent owner consent.",
         "National emergency, public health necessity, and extreme urgency are statutory grounds for compulsory licensing.",
         "R.A. 9502 strengthened compulsory licensing powers for public health needs."
-      ]
+      ],
+      "correction": "Correction: NotebookLM's list of grounds (\"public health necessity, non-commercial public use\") didn't match the law. The legal basis now gives the grounds in Sec. 93 as amended that fit the facts (93.1 extreme urgency, 93.2 public interest including health, 93.6 unmet demand for medicines as determined by the Secretary of Health), and the conclusion now says the license goes to someone who has shown the capability to exploit the invention. Check R.A. No. 9502, Sec. 10 (amending Sec. 93)."
     },
     {
       "id": "nq-0065",
@@ -1485,7 +1544,8 @@
         "Section 151.1(b) permits trademark cancellation when a registered mark becomes generic (genericide).",
         "A mark loses trademark protection when it becomes the common descriptive name for a product category.",
         "Failure to police a mark leads to loss of distinctiveness and cancellation."
-      ]
+      ],
+      "correction": "Correction: Added to the legal basis: the test for genericide is the primary significance of the mark to the relevant public, rather than purchaser motivation. Check R.A. No. 8293, Sec. 151.1(b)."
     },
     {
       "id": "nq-0066",
@@ -1510,7 +1570,8 @@
         "Dominancy Test and Idem Sonans rule assess phonetic/aural similarity under Section 123.1(d).",
         "Incorporating an established mark as the dominant prefix creates confusing similarity.",
         "Societe des Produits Nestle v. Dy held 'NANNY' confusingly similar to 'NAN' under the Dominancy Test."
-      ]
+      ],
+      "correction": "Correction: NotebookLM's legal basis described Nestle v. Dy as an \"Idem Sonans rule\" case. The Court applied the Dominancy Test (taking the sound of the words into account) and held NANNY confusingly similar to NAN. The legal basis and a key point were rewritten to say that, and the Basis gives the respondent's full name (Dy, Jr.). Check G.R. No. 172276."
     },
     {
       "id": "nq-0067",
@@ -1535,7 +1596,8 @@
         "Trademarks may be assigned with or without the business enterprise under Section 149.1 of R.A. 8293.",
         "A written assignment has effect against third parties once recorded with the IPO (Section 149.5).",
         "Contrast with trade names, which cannot be assigned independently of the business enterprise."
-      ]
+      ],
+      "correction": "Correction: NotebookLM said the assignment was valid against third parties \"pursuant to Section 149.2\"; Sec. 149.2 is the rule that an assignment is void if it would mislead the public. Recording makes it effective against third parties under Sec. 149.5. The legal basis, application and a key point were corrected, and Sec. 165.4 (trade names transfer only with the enterprise) was added. Check R.A. No. 8293, Secs. 149 and 165.4."
     },
     {
       "id": "nq-0068",
@@ -1560,7 +1622,8 @@
         "Co-authors own the copyright in a joint work, governed by co-ownership rules absent agreement (Section 178.2).",
         "Where parts can be used separately and each author is identified, each author owns the copyright in his own part.",
         "Using or licensing one's own separable part is not infringement of the co-author's part."
-      ]
+      ],
+      "correction": "Correction: NotebookLM's answer said Lina \"must account to Carlos for his share of royalties\" and may exploit her part \"provided it does not prejudice the joint work\"; neither is in Sec. 178.2. The answer now says only what the law says: where the parts can be used separately and each author is known, each author owns the copyright in his own part. The answer, all four parts and the key points were rewritten. Check R.A. No. 8293, Sec. 178.2."
     },
     {
       "id": "nq-0070",
@@ -1585,7 +1648,8 @@
         "Moral rights under Section 193 of R.A. 8293 are independent of economic rights and survive assignment.",
         "Right of attribution prohibits removing or altering the author's name on the work.",
         "Right of integrity allows the author to object to prejudicial distortion or mutilation."
-      ]
+      ],
+      "correction": "Correction: NotebookLM said moral rights last for the author's life and 50 years and called the right to object to changes Sec. 193.2. Under Sec. 198 as amended in 2013, the right to be named as author lasts forever, the other moral rights last as long as the economic rights, and none can be assigned; the right to object to prejudicial changes is Sec. 193.3 (193.2 is the right to alter or withhold before publication). Check R.A. No. 8293, Sec. 193, and R.A. No. 10372, Sec. 17."
     },
     {
       "id": "nq-0071",
@@ -1610,7 +1674,8 @@
         "Section 177.4 of R.A. 8293 grants exclusive commercial rental rights over computer programs and audiovisual works.",
         "Commercial rental rights survive the first sale of genuine software copies.",
         "Unauthorized commercial rental of software constitutes copyright infringement."
-      ]
+      ],
+      "correction": "Correction: NotebookLM's legal basis said Sec. 177.4 applies \"where the program itself is the essential object of the rental\"; that phrase isn't in the law. It now quotes what Sec. 177.4 says (rental of computer programs and other works \"irrespective of the ownership\" of the copy) and contrasts it with Sec. 177.3. Check R.A. No. 8293, Secs. 177.3 and 177.4."
     },
     {
       "id": "nq-0072",
@@ -1635,7 +1700,8 @@
         "Performers enjoy independent neighboring rights under Section 203 of R.A. 8293.",
         "Broadcasting or fixating live performances without performer consent is prohibited.",
         "Performers' rights exist independently of underlying song copyright ownership."
-      ]
+      ],
+      "correction": "Correction: Basis citation narrowed: \"Sec. 203\" became \"Sec. 203.1\", the subsection on broadcasting and fixing live performances. Nothing in the answer was changed."
     },
     {
       "id": "nq-0073",
@@ -1660,7 +1726,8 @@
         "Section 87 of R.A. 8293 lists clauses deemed prima facie adverse to competition and trade.",
         "Requiring purchases from a specific source (87.1) and unjustified export bans (87.8) are prohibited clauses.",
         "Under Section 92, such clauses render the arrangement unenforceable unless approved under Section 91."
-      ]
+      ],
+      "correction": "Correction: NotebookLM cited Secs. 88.3 and 88.5 for the prohibited clauses and Sec. 89 for unenforceability. In the IP Code, prohibited clauses are Sec. 87 (87.1 buying from a specific source, 87.8 export bans), Sec. 88 lists mandatory clauses, Sec. 89 is about the licensor's rights, and unenforceability is Sec. 92. The legal basis, application, conclusion and key points were rewritten. Check R.A. No. 8293, Secs. 87, 91 and 92."
     },
     {
       "id": "nq-0074",
@@ -1685,7 +1752,8 @@
         "Unfair competition protects goodwill whether or not a registered mark is employed (Section 168.1).",
         "Section 169.1(b) gives a civil action against false designations or misrepresentations of geographic origin.",
         "Copying a registered trademark is not required for either."
-      ]
+      ],
+      "correction": "Correction: NotebookLM cited Sec. 168.3(c) for false designation of geographic origin; Sec. 168.3(c) is about false statements that discredit another's goods. False designation of origin is Sec. 169.1(b), and Sec. 168.1 protects goodwill \"whether or not a registered mark is employed\". The legal basis, application, conclusion and key points were rewritten. Check R.A. No. 8293, Secs. 168 and 169.1."
     },
     {
       "id": "nq-0075",
@@ -1710,7 +1778,8 @@
         "Non-profit libraries and archives may make limited reprographic copies without the owner's authorization (Section 188.1).",
         "Allowed for fragile or rare works that can't be lent, and to preserve or replace a copy unavailable from the publisher.",
         "The library exception is Section 188; Section 189 is about back-up copies of computer programs."
-      ]
+      ],
+      "correction": "Correction: NotebookLM cited Secs. 184.1(e) and 189: 184.1(e) is about teaching illustrations and Sec. 189 is about back-up copies of computer programs. The library rule is Sec. 188.1 as amended in 2013. The facts were also simplified to one photocopy (the law speaks of reprographic reproduction; whether a digital copy counts wasn't checked), and the answer and key points were rewritten. Check R.A. No. 10372, Sec. 13 (amending Sec. 188.1)."
     },
     {
       "id": "nq-0076",
@@ -1732,7 +1801,8 @@
         "D": "25 years from date of creation, non-renewable"
       },
       "correct": "B",
-      "explanation": "B is correct under Section 118 of R.A. 8293, which provides that an industrial design registration is valid for 5 years from filing date and may be renewed for two consecutive 5-year terms (maximum 15 years total). A describes Utility Models (Sec. 109.3). C resembles a trademark registration, which lasts ten years and may be renewed for periods of ten years (Secs. 145 and 146). D describes Works of Applied Art under Copyright (Sec. 213.4).\n\n**Basis:** R.A. No. 8293, Secs. 118.1 and 118.2. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+      "explanation": "B is correct under Section 118 of R.A. 8293, which provides that an industrial design registration is valid for 5 years from filing date and may be renewed for two consecutive 5-year terms (maximum 15 years total). A describes Utility Models (Sec. 109.3). C resembles a trademark registration, which lasts ten years and may be renewed for periods of ten years (Secs. 145 and 146). D describes Works of Applied Art under Copyright (Sec. 213.4).\n\n**Basis:** R.A. No. 8293, Secs. 118.1 and 118.2. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html.",
+      "correction": "Correction: NotebookLM's explanation said choice C \"describes Trademarks (Sec. 145)\"; it was reworded: a trademark registration lasts ten years and is renewable for ten-year periods (Secs. 145 and 146). The correct answer (B) was not changed. Check R.A. No. 8293, Sec. 118."
     },
     {
       "id": "nq-0077",
@@ -1754,7 +1824,8 @@
         "D": "10 years from the date of registration, renewable indefinitely"
       },
       "correct": "A",
-      "explanation": "A is correct because Section 109.3 of R.A. 8293 explicitly mandates that a utility model registration shall expire, without any possibility of renewal, at the end of the seventh year after the date of the filing of the application, without any possibility of renewal. B applies to industrial designs. C applies to invention patents. D applies to trademarks.\n\n**Basis:** R.A. No. 8293, Sec. 109.3. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+      "explanation": "A is correct because Section 109.3 of R.A. 8293 explicitly mandates that a utility model registration shall expire, without any possibility of renewal, at the end of the seventh year after the date of the filing of the application, without any possibility of renewal. B applies to industrial designs. C applies to invention patents. D applies to trademarks.\n\n**Basis:** R.A. No. 8293, Sec. 109.3. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html.",
+      "correction": "Correction: The explanation now quotes Sec. 109.3 exactly: the registration expires, without any possibility of renewal, at the end of the seventh year after filing. The correct answer (A) was not changed. Check R.A. No. 8293, Sec. 109.3."
     },
     {
       "id": "nq-0078",
@@ -1776,7 +1847,8 @@
         "D": "50 years after the death of the trademark owner"
       },
       "correct": "B",
-      "explanation": "**B is correct.** Under Section 145 of R.A. 8293, a certificate of registration remains in force for ten (10) years, provided the registrant files a declaration of actual use (or shows valid reasons for non-use) within one year from the fifth anniversary of the registration; under Section 146, it may be renewed for periods of ten (10) years. **A is wrong:** marks have no 20-year term (that is a patent's term, which is not renewable). **C and D are wrong:** they state terms the law does not provide.\n\n**Basis:** R.A. No. 8293, Secs. 145 and 146. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+      "explanation": "**B is correct.** Under Section 145 of R.A. 8293, a certificate of registration remains in force for ten (10) years, provided the registrant files a declaration of actual use (or shows valid reasons for non-use) within one year from the fifth anniversary of the registration; under Section 146, it may be renewed for periods of ten (10) years. **A is wrong:** marks have no 20-year term (that is a patent's term, which is not renewable). **C and D are wrong:** they state terms the law does not provide.\n\n**Basis:** R.A. No. 8293, Secs. 145 and 146. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html.",
+      "correction": "Correction: The explanation was rewritten: NotebookLM said renewal depends on Declarations of Actual Use and that choice A \"applies to patents\". Under Sec. 145, the declaration is due within one year from the fifth anniversary of registration, and Sec. 146 allows renewal for 10-year periods; a patent's 20-year term isn't renewable. The correct answer (B) was not changed. Check R.A. No. 8293, Secs. 145 and 146."
     },
     {
       "id": "nq-0079",
@@ -1798,7 +1870,8 @@
         "D": "The mark becomes generic immediately"
       },
       "correct": "B",
-      "explanation": "**B is correct.** Under Section 158 of R.A. 8293, the owner of a registered mark cannot recover profits or damages in an infringement suit unless the acts were committed with knowledge that the imitation is likely to cause confusion, mistake or deception. That knowledge is presumed if the registrant displays \"Registered Mark\" or the letter R within a circle with the mark, or if the defendant had actual notice of the registration. **A is wrong:** the registration stays valid. **C is wrong:** Section 158 limits only the recovery of profits and damages. **D is wrong:** a mark becomes generic only through how the public uses it (Section 151.1(b)), not through a missing notice.\n\n**Basis:** R.A. No. 8293, Sec. 158. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+      "explanation": "**B is correct.** Under Section 158 of R.A. 8293, the owner of a registered mark cannot recover profits or damages in an infringement suit unless the acts were committed with knowledge that the imitation is likely to cause confusion, mistake or deception. That knowledge is presumed if the registrant displays \"Registered Mark\" or the letter R within a circle with the mark, or if the defendant had actual notice of the registration. **A is wrong:** the registration stays valid. **C is wrong:** Section 158 limits only the recovery of profits and damages. **D is wrong:** a mark becomes generic only through how the public uses it (Section 151.1(b)), not through a missing notice.\n\n**Basis:** R.A. No. 8293, Sec. 158. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html.",
+      "correction": "Correction: NotebookLM's question used the words \"Registered in PH IPO\", and its answer said damages need the infringer's actual notice. Sec. 158 is about knowledge that the imitation is likely to confuse; that knowledge is presumed if \"Registered Mark\" or the letter R in a circle is displayed, or if the infringer had actual notice. The question, choice B and the explanation were rewritten. Check R.A. No. 8293, Sec. 158."
     },
     {
       "id": "nq-0080",
@@ -1820,7 +1893,8 @@
         "D": "10 years from first public broadcast"
       },
       "correct": "B",
-      "explanation": "B is correct because Section 213.3 of R.A. 8293 provides that for anonymous or pseudonymous works, copyright lasts for 50 years from the date on which the work was lawfully published (or from making if unpublished). A applies to named authors (Sec. 213.1). C applies to applied art (Sec. 213.4). D is incorrect.\n\n**Basis:** R.A. No. 8293, Sec. 213.3. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+      "explanation": "B is correct because Section 213.3 of R.A. 8293 provides that for anonymous or pseudonymous works, copyright lasts for 50 years from the date on which the work was lawfully published (or from making if unpublished). A applies to named authors (Sec. 213.1). C applies to applied art (Sec. 213.4). D is incorrect.\n\n**Basis:** R.A. No. 8293, Sec. 213.3. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html.",
+      "correction": "Correction: Basis citation tidied only (\"R.A. 8293\" written as \"R.A. No. 8293\"); nothing in the question or answer was changed."
     },
     {
       "id": "nq-0081",
@@ -1842,7 +1916,8 @@
         "D": "10 years from registration"
       },
       "correct": "B",
-      "explanation": "B is correct under Section 213.5 of R.A. 8293, which specifies that protection for photographic works shall be 50 years from publication (or 50 years from making if unpublished). A applies to general literary/artistic works. C applies to works of applied art. D is not a term the law provides.\n\n**Basis:** R.A. No. 8293, Sec. 213.5. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+      "explanation": "B is correct under Section 213.5 of R.A. 8293, which specifies that protection for photographic works shall be 50 years from publication (or 50 years from making if unpublished). A applies to general literary/artistic works. C applies to works of applied art. D is not a term the law provides.\n\n**Basis:** R.A. No. 8293, Sec. 213.5. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html.",
+      "correction": "Correction: NotebookLM's explanation said choice D \"describes trademark terms\"; it now says D is not a term the law provides. The correct answer (B) was not changed. Check R.A. No. 8293, Sec. 213.5."
     },
     {
       "id": "nq-0082",
@@ -1864,7 +1939,8 @@
         "D": "That the licensee must assign all improvements to the franchisor without compensation"
       },
       "correct": "C",
-      "explanation": "**C is correct.** Section 88.1 of R.A. 8293 requires voluntary license contracts to provide that Philippine law governs their interpretation and that, in case of litigation, the venue is the proper court in the place where the licensee has its principal office. **A is wrong:** it contradicts Section 88.1. **B is wrong:** if the arrangement provides for arbitration, the venue must be the Philippines or a neutral country (Section 88.3). **D is wrong:** obliging the licensee to transfer improvements to the licensor for free is a prohibited clause (Section 87.6).\n\n**Basis:** R.A. No. 8293, Secs. 87.6 and 88. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+      "explanation": "**C is correct.** Section 88.1 of R.A. 8293 requires voluntary license contracts to provide that Philippine law governs their interpretation and that, in case of litigation, the venue is the proper court in the place where the licensee has its principal office. **A is wrong:** it contradicts Section 88.1. **B is wrong:** if the arrangement provides for arbitration, the venue must be the Philippines or a neutral country (Section 88.3). **D is wrong:** obliging the licensee to transfer improvements to the licensor for free is a prohibited clause (Section 87.6).\n\n**Basis:** R.A. No. 8293, Secs. 87.6 and 88. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html.",
+      "correction": "Correction: NotebookLM cited Sec. 87.2 for the mandatory governing-law clause and Sec. 88.4 for the free transfer of improvements. It's the reverse: Sec. 88.1 is the mandatory clause (Philippine law; venue where the licensee has its principal office), and free transfer of improvements is a prohibited clause under Sec. 87.6. The explanation was rewritten. The correct answer (C) was not changed. Check R.A. No. 8293, Secs. 87 and 88."
     },
     {
       "id": "nq-0083",
@@ -1886,7 +1962,8 @@
         "D": "Office of the Director General directly"
       },
       "correct": "B",
-      "explanation": "**B is correct.** Under Section 10.1 of R.A. 8293, the Bureau of Legal Affairs hears and decides oppositions to the registration of marks, cancellation of trademarks, and (subject to Section 64) cancellation of patents, utility models and industrial designs, as well as petitions for compulsory licensing. **A, C and D are wrong:** the law gives these cancellation cases to the Bureau of Legal Affairs, not to the Bureau of Patents, the Documentation, Information and Technology Transfer Bureau, or the Director General in the first instance.\n\n**Basis:** R.A. No. 8293, Sec. 10.1. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+      "explanation": "**B is correct.** Under Section 10.1 of R.A. 8293, the Bureau of Legal Affairs hears and decides oppositions to the registration of marks, cancellation of trademarks, and (subject to Section 64) cancellation of patents, utility models and industrial designs, as well as petitions for compulsory licensing. **A, C and D are wrong:** the law gives these cancellation cases to the Bureau of Legal Affairs, not to the Bureau of Patents, the Documentation, Information and Technology Transfer Bureau, or the Director General in the first instance.\n\n**Basis:** R.A. No. 8293, Sec. 10.1. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html.",
+      "correction": "Correction: The explanation now follows Sec. 10.1's wording (the Bureau of Legal Affairs hears oppositions, cancellations of marks and, subject to Sec. 64, of patents, utility models and industrial designs, and compulsory licensing petitions). The correct answer (B) was not changed. Check R.A. No. 8293, Sec. 10.1."
     },
     {
       "id": "nq-0084",
@@ -1908,7 +1985,8 @@
         "D": "Right to create derivative works"
       },
       "correct": "B",
-      "explanation": "**B is correct.** Section 177.3 of R.A. 8293 gives the copyright owner the exclusive right over the first public distribution of the original and each copy of the work by sale or other transfer of ownership; once a copy has been lawfully sold, that right over that copy has been used up. **A and D are wrong:** public performance (177.6) and transformation of the work (177.2) are separate rights that a sale of a copy does not affect. **C is wrong:** the rental right over computer programs applies irrespective of the ownership of the copy rented (177.4).\n\n**Basis:** R.A. No. 8293, Secs. 177.2, 177.3, 177.4 and 177.6. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+      "explanation": "**B is correct.** Section 177.3 of R.A. 8293 gives the copyright owner the exclusive right over the first public distribution of the original and each copy of the work by sale or other transfer of ownership; once a copy has been lawfully sold, that right over that copy has been used up. **A and D are wrong:** public performance (177.6) and transformation of the work (177.2) are separate rights that a sale of a copy does not affect. **C is wrong:** the rental right over computer programs applies irrespective of the ownership of the copy rented (177.4).\n\n**Basis:** R.A. No. 8293, Secs. 177.2, 177.3, 177.4 and 177.6. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html.",
+      "correction": "Correction: The explanation was rewritten to follow the law: Sec. 177.3 covers the first public distribution of each copy; public performance (177.6) and transformation (177.2) are separate rights, and the rental right (177.4) applies whoever owns the copy. (\"First sale doctrine\" is not a term used in the IP Code.) The correct answer (B) was not changed. Check R.A. No. 8293, Sec. 177."
     },
     {
       "id": "nq-0086",
@@ -1930,7 +2008,8 @@
         "D": "25 years from first public broadcast"
       },
       "correct": "A",
-      "explanation": "**A is correct.** Under Section 204.2 of R.A. 8293, the rights granted to a performer are maintained and exercised for fifty (50) years after his death, by his heirs (and in default of heirs, the government). **B is wrong:** fifty years from the end of the year of the performance is the term of a performer's economic rights over an unrecorded performance (Section 215.1). **C and D are wrong:** the law ties these rights to the performer, not to the song's copyright or to a broadcast.\n\n**Basis:** R.A. No. 8293, Secs. 204 and 215.1 (Sec. 204.1 as amended by R.A. No. 10372). Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html, https://lawphil.net/statutes/repacts/ra2013/ra_10372_2013.html."
+      "explanation": "**A is correct.** Under Section 204.2 of R.A. 8293, the rights granted to a performer are maintained and exercised for fifty (50) years after his death, by his heirs (and in default of heirs, the government). **B is wrong:** fifty years from the end of the year of the performance is the term of a performer's economic rights over an unrecorded performance (Section 215.1). **C and D are wrong:** the law ties these rights to the performer, not to the song's copyright or to a broadcast.\n\n**Basis:** R.A. No. 8293, Secs. 204 and 215.1 (Sec. 204.1 as amended by R.A. No. 10372). Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html, https://lawphil.net/statutes/repacts/ra2013/ra_10372_2013.html.",
+      "correction": "Correction: NotebookLM's explanation tied the 50 years to Sec. 215.1; Sec. 215.1 counts from the end of the year of the performance and is about economic rights. The 50 years after death come from Sec. 204.2 (exercised by the heirs). The explanation was rewritten. The correct answer (A) was not changed. Check R.A. No. 8293, Secs. 204 and 215."
     },
     {
       "id": "nq-0088",
@@ -1952,7 +2031,8 @@
         "D": "Ten (10) years, renewable"
       },
       "correct": "A",
-      "explanation": "**A is correct.** Under Section 215.2 of R.A. 8293, in case of broadcasts the term is twenty (20) years from the date the broadcast took place. **B is wrong:** fifty years applies to performers and producers of sound recordings (Section 215.1). **C is wrong:** twenty-five years from making is the term for works of applied art (Section 213.4). **D is wrong:** related rights are not renewable.\n\n**Basis:** R.A. No. 8293, Sec. 215.2. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+      "explanation": "**A is correct.** Under Section 215.2 of R.A. 8293, in case of broadcasts the term is twenty (20) years from the date the broadcast took place. **B is wrong:** fifty years applies to performers and producers of sound recordings (Section 215.1). **C is wrong:** twenty-five years from making is the term for works of applied art (Section 213.4). **D is wrong:** related rights are not renewable.\n\n**Basis:** R.A. No. 8293, Sec. 215.2. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html.",
+      "correction": "Correction: NotebookLM marked \"50 years from the date the broadcast took place\" as correct. Sec. 215.2 says twenty (20) years from the date the broadcast took place. The choices were rewritten so the correct answer (A) is 20 years, and the explanation was replaced. Check R.A. No. 8293, Sec. 215.2."
     },
     {
       "id": "nq-0089",
@@ -1968,7 +2048,8 @@
       },
       "prompt": "Section 172. Literary and Artistic Works. - 172.1. Literary and artistic works, hereinafter referred to as \"works\", are ____ intellectual creations in the literary and artistic domain protected from the moment of their ____ and shall include in particular:",
       "fullText": "Section 172. Literary and Artistic Works. - 172.1. Literary and artistic works, hereinafter referred to as \"works\", are original intellectual creations in the literary and artistic domain protected from the moment of their creation and shall include in particular:",
-      "explanation": "The two blanks are \"original\" and \"creation\": a work must be an original intellectual creation, and it is protected from the moment it is created. Section 172.2 adds that works are protected by the sole fact of their creation, whatever their mode or form of expression, content, quality or purpose.\n\n**Basis:** R.A. No. 8293, Sec. 172. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+      "explanation": "The two blanks are \"original\" and \"creation\": a work must be an original intellectual creation, and it is protected from the moment it is created. Section 172.2 adds that works are protected by the sole fact of their creation, whatever their mode or form of expression, content, quality or purpose.\n\n**Basis:** R.A. No. 8293, Sec. 172. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html.",
+      "correction": "Correction: NotebookLM's text of Sec. 172.1 left out the word \"intellectual\" (\"original intellectual creations\") and the quotation marks around \"works\". The full text now matches the official wording, with the section heading, and the explanation was reworded. The blanks are unchanged. Check R.A. No. 8293, Sec. 172."
     },
     {
       "id": "nq-0090",
@@ -1984,7 +2065,8 @@
       },
       "prompt": "121.1. \"Mark\" means any ____ sign capable of distinguishing the goods (trademark) or services (service mark) of an enterprise and shall include a stamped or marked container of goods;",
       "fullText": "121.1. \"Mark\" means any visible sign capable of distinguishing the goods (trademark) or services (service mark) of an enterprise and shall include a stamped or marked container of goods;",
-      "explanation": "The blank is \"visible\": the IP Code defines a mark as a visible sign that can distinguish one enterprise's goods (a trademark) or services (a service mark) from others', including a stamped or marked container of goods.\n\n**Basis:** R.A. No. 8293, Sec. 121.1. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+      "explanation": "The blank is \"visible\": the IP Code defines a mark as a visible sign that can distinguish one enterprise's goods (a trademark) or services (a service mark) from others', including a stamped or marked container of goods.\n\n**Basis:** R.A. No. 8293, Sec. 121.1. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html.",
+      "correction": "Correction: NotebookLM's definition left out \"(trademark)\" and \"(service mark)\" and the quotation marks around \"Mark\". The full text now matches Sec. 121.1 exactly. Its explanation said sound and smell marks are excluded; that goes beyond the text and was replaced. The blank is unchanged. Check R.A. No. 8293, Sec. 121.1."
     }
   ]
 }
