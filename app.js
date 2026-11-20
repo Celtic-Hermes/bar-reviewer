@@ -226,7 +226,6 @@ function rememberSpot() {
     subject: currentSubject,
     topic: currentTopic,
     subtopic: currentSubtopic,
-    shuffle: document.getElementById("shuffle").checked,
     mode: currentMode(),
     notes: sourceView === "notes",  // looking at the class notes (see CLASS_NOTES_FILE)
     view: sourceView                // "official", "notes" or "notebooklm"
@@ -351,9 +350,6 @@ function putBackSpot(spot) {
   currentTopic = (typeof spot.topic === "string") ? spot.topic : null;
   currentSubtopic = (typeof spot.subtopic === "string") ? spot.subtopic : null;
 
-  const shuffleSwitch = document.getElementById("shuffle");
-  shuffleSwitch.checked = Boolean(spot.shuffle);
-  showShuffleNote();
   setMode(spot.mode);  // older saved spots have no mode: that means "both"
 
   if (spot.screen === "subject") {
@@ -2897,7 +2893,7 @@ function showSubjectStats(subject) {
 // If she's in the middle of a round in THIS subject (saved by rememberSpot), the card says
 // "Continue: <topic>" and "Question N of M", and takes her back to that exact question.
 // Otherwise it says "Start practicing" and how many questions, and starts all of the subject's
-// topics using the Question type and Shuffle options below.
+// topics using the Question type option below (every round is shuffled).
 function lastRoundHere(subject) {
   const last = loadLastRound();
   if (!last || last.subject !== subject || last.view !== sourceView) { return null; }
@@ -2955,18 +2951,6 @@ document.getElementById("subject-back").addEventListener("click", function () {
   showScreen("screen-home");
 });
 
-// Update the little note under the shuffle switch when it's flipped.
-function showShuffleNote() {
-  document.querySelector(".switch-note").textContent = document.getElementById("shuffle").checked
-    ? "On: questions come in random order"
-    : "Off: questions come in order";
-}
-
-document.getElementById("shuffle").addEventListener("change", function () {
-  showShuffleNote();
-  rememberSpot();
-});
-
 // Mix up a list into random order (the standard "Fisher–Yates" shuffle).
 function shuffled(list) {
   const copy = list.slice();
@@ -2992,9 +2976,9 @@ function startPractice() {
     showEmptyListMessage(currentTopic);
     return;
   }
-  if (document.getElementById("shuffle").checked) {
-    questions = shuffled(questions);
-  }
+  // Every new round comes in random order (the builder's choice; there's no in-order option).
+  // A round put back by Continue or a reload keeps its saved order (putBackRound).
+  questions = shuffled(questions);
   // Remember the topic (not a case's questions, or a Review missed list) for the home screen's "Pick up where you stopped".
   if (!fixedQuestions && isRealTopic(currentTopic)) { saveLastPractice(currentSubject, currentTopic, currentSubtopic, sourceView); }
   session = {

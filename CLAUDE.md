@@ -7,7 +7,7 @@ It is being built by a complete beginner (no coding experience, not a lawyer) fo
 
 ## How the app should feel
 Like a bar prep app:
-- She **picks a subject, then a topic**, and can choose **in order or shuffled**.
+- She **picks a subject, then a topic**; every round comes **shuffled** (random order, always: there is no in-order option, `startPractice`). A round put back by Continue or a reload keeps its saved order.
 - **One question at a time**, full-screen and easy to read on a phone.
 - **Mostly essay questions**, plus some multiple choice.
 - Questions can link to **related cases** she can open and read.
@@ -44,10 +44,10 @@ On a topic or sub-topic screen, **📖 Read the full rule** (under Start practic
 
 ### Subject screen (`#screen-subject`, `openSubject` in `app.js`; being redesigned in four steps: header + Start card + stats (done), options and lists, topics, extras)
 - **Header** (`.subject-head`): the subject's line icon in a soft tile, its name, "N questions available", and a small **mastery ring** (`.mastery-ring`: mastered ÷ questions, as a percent, at least 1% once anything is mastered).
-- **The Start card** (`#start-card`, `.start-card`, `showStartCard`): the one big action, on `--primary` (white text always bold or large). If she's in the middle of a round in **this** subject: "**Continue: <topic or sub-topic>**" and "Question N of M", which puts her back on that exact question (her picked answer or typed blanks too) with `putBackRound`. Otherwise "**Start practicing**" with the question count (of the picked Question type), which starts all the subject's topics ("All topics") using the Question type and Shuffle options below. Disabled, with a reason, if the picked type has no questions here.
+- **The Start card** (`#start-card`, `.start-card`, `showStartCard`): the one big action, on `--primary` (white text always bold or large). If she's in the middle of a round in **this** subject: "**Continue: <topic or sub-topic>**" and "Question N of M", which puts her back on that exact question (her picked answer or typed blanks too) with `putBackRound`. Otherwise "**Start practicing**" with the question count (of the picked Question type), which starts all the subject's topics ("All topics") using the Question type option below, shuffled like every round. Disabled, with a reason, if the picked type has no questions here.
   - The round is saved by `rememberSpot` → `saveLastRound` (progress.js, `barReviewer.lastRound.v1`: this device only, not in backups). Unlike the saved spot it **survives the home-screen timeout** and leaving the app, and it's removed when the round finishes (`showResults` → `clearLastRound`). Not saved for a case's questions or for Review missed / Bookmarked / Tagged. If its questions no longer exist, or the saved data is damaged, the card quietly says "Start practicing".
 - **Stat strip** (`.stat-strip`, `showSubjectStats`): **Answered** (how many of the subject's questions she has answered at least once; a Reset takes them back off), **Accuracy** (of those, the share that were right or "Got it" the last time; Partly and Missed it count as not right; "–" until she has answered one), **Mastered** (how many). All three come from each question's latest result (`progress.results`), so they follow a Reset.
-- Below them, for now: Question type, Shuffle, her three lists and the topic cards, as before.
+- Below them, for now: Question type, her three lists and the topic cards, as before. (The old Shuffle switch was removed: every round is shuffled. Older saved spots may still hold a `shuffle` field; it is ignored.)
 
 ### Home screen
 Top to bottom (`#screen-home`, styles under "Home" in `style.css`; calm, our own periwinkle look, on the shared colors):
