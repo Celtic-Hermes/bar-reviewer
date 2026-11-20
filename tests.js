@@ -8,6 +8,8 @@
 // Step 4: Flag and the question map.
 // Step 5: End test (askEndTest / endTest): grade, count her answers once, show the results.
 // Step 6: Review answers (openTestReview): every question with her answer and the right one; read-only.
+// Step 7: the timer (startTestTimer / stopTestTimer): counts only while the test is on screen and the
+// app is in view; time's up submits the test like End test.
 // Uses things from app.js: currentSubject, sourceView, questionsFor, topicsFor, subtopicsFor,
 // inSubtopic, subtopicLabel, OTHER_SUBTOPIC, FB_LEVELS, FB_LEVEL_LABELS, countLabel,
 // modeCountLabel, viewSuffix, shuffled, askConfirm, showScreen, openSubject, setIconLabel;
@@ -61,8 +63,11 @@ function makeTestCard(test) {
   name.append(testTitle(test));
   const meta = document.createElement("span");
   meta.className = "subject-meta";
-  meta.textContent = testTypeLabel(test.qIds.length, test.type) +
-    (test.limit > 0 ? " · " + test.limit + " min" : " · Untimed") + testViewLabel(test.view);
+  let timeText = test.limit > 0 ? " · " + test.limit + " min" : " · Untimed";
+  if (test.state === "open" && test.limit > 0 && test.used > 0) {
+    timeText = " · " + Math.max(1, Math.ceil(testSecondsLeft(test) / 60)) + " min left";
+  }
+  meta.textContent = testTypeLabel(test.qIds.length, test.type) + timeText + testViewLabel(test.view);
   const meta2 = document.createElement("span");
   meta2.className = "subject-meta";
   if (test.state === "done") {
@@ -790,6 +795,7 @@ document.getElementById("test-next").addEventListener("click", function () {
   if (test.index >= test.qIds.length - 1) { askEndTest(); } else { goToTestQuestion(test.index + 1); }
 });
 document.getElementById("test-back").addEventListener("click", function () {
+  stopTestTimer();
   currentTestId = null;
   openTests();
 });
@@ -852,7 +858,8 @@ document.getElementById("test-end").addEventListener("click", askEndTest);
 // as practice: today's count, streak, latest result and mastery, Review missed, subject
 // totals), and show the results. "counted" is set before anything is recorded, and all of it
 // happens in one go, so a test can never be counted twice.
-function endTest(id) {
+function endTest(id, firstNote) {
+  stopTestTimer();  // the time used so far goes into the test first
   const test = findTest(id);
   if (!test || test.state !== "open") { openTests(); return; }
   dropMissingQuestions(test);
@@ -884,8 +891,10 @@ function endTest(id) {
   const doneAfter = progress.tests.filter(function (t) { return t.state === "done"; }).length;
   saveProgress();
   currentTestId = null;
-  openTestResults(id, doneAfter < doneBefore
-    ? "Only the " + TESTS_DONE_MAX + " newest finished tests are kept, so your oldest one was removed." : "");
+  const notes = [];
+  if (firstNote) { notes.push(firstNote); }
+  if (doneAfter < doneBefore) { notes.push("Only the " + TESTS_DONE_MAX + " newest finished tests are kept, so your oldest one was removed."); }
+  openTestResults(id, notes.join(" "));
 }
 
 function testScore(test) {
@@ -915,6 +924,8 @@ function openTestResults(id, note) {
   const score = testScore(test);
   document.getElementById("test-score").textContent = score.percent + "%";
   document.getElementById("test-score-line").textContent = score.right + " of " + score.total + " right";
+  document.getElementById("test-time-used").textContent = "Time used " + clockText(test.used) +
+    (test.limit > 0 ? " of " + clockText(test.limit * 60) : "");
   document.getElementById("test-right").textContent = String(score.right);
   document.getElementById("test-wrong").textContent = String(score.wrong);
   document.getElementById("test-none").textContent = String(score.none);
@@ -1269,3 +1280,134 @@ document.getElementById("test-review-back").addEventListener("click", function (
   setReviewListOpen(false);
   if (!id || !openTestResults(id)) { openTests(); }
 });
+
+// ---------- The timer ----------
+// It counts only while the test screen is showing AND the app is in view: leaving the screen
+// (Back, the menu, Settings…), switching apps, locking the phone or closing the app stops it
+// (testScreenChanged is called by showScreen in app.js; visibilitychange / pagehide below).
+// Time is measured with the clock between ticks (Date.now), not by counting ticks, so a slowed
+// tab doesn't drift; one gap is never counted as more than TIMER_MAX_GAP seconds (a phone that
+// slept without telling us). "used" (whole seconds) is saved every TIMER_SAVE_EVERY seconds and
+// whenever the timer stops. An untimed test counts its time too (shown on the results only).
+// Time's up: the test is submitted exactly like End test (endTest), then its results show.
+const TIMER_SAVE_EVERY = 5;   // seconds
+const TIMER_MAX_GAP = 10;     // seconds
+const TIMER_NOTICES = [300, 60];  // a gentle notice at 5 minutes and 1 minute left
+let testTimer = null;         // { id, last (ms), carry (ms not yet whole seconds), unsaved, interval }
+
+function testSecondsLeft(test) {
+  return Math.max(0, test.limit * 60 - test.used);
+}
+
+// 754 -> "12:34"; 3725 -> "1:02:05"
+function clockText(seconds) {
+  const s = Math.max(0, Math.floor(seconds));
+  const h = Math.floor(s / 3600);
+  const m = Math.floor((s % 3600) / 60);
+  const sec = String(s % 60).padStart(2, "0");
+  return h > 0 ? h + ":" + String(m).padStart(2, "0") + ":" + sec : m + ":" + sec;
+}
+
+function showTestTimer(test) {
+  const box = document.getElementById("test-timer");
+  box.hidden = !(test && test.limit > 0);
+  if (box.hidden) { return; }
+  const left = testSecondsLeft(test);
+  box.textContent = clockText(left) + " left";
+  box.classList.toggle("is-low", left <= 60);
+  box.setAttribute("aria-label", "Time left: " + clockText(left));
+}
+
+let timeNoteTimer = null;
+function showTimeNote(text) {
+  const note = document.getElementById("test-time-note");
+  note.textContent = text;
+  clearTimeout(timeNoteTimer);
+  timeNoteTimer = setTimeout(function () { note.textContent = ""; }, 10000);
+}
+
+function startTestTimer() {
+  stopTestTimer();
+  const test = currentTest();
+  if (!test || test.state !== "open" || shownScreen !== "screen-test" || document.visibilityState === "hidden") { return; }
+  testTimer = { id: test.id, last: Date.now(), carry: 0, unsaved: 0, interval: null };
+  testTimer.interval = setInterval(tickTestTimer, 1000);
+  showTestTimer(test);
+  if (test.limit > 0 && testSecondsLeft(test) <= 0) {
+    setTimeout(function () { timeUp(test.id); }, 0);  // opened with no time left (after the screen is shown)
+  }
+}
+
+// Add the time since the last tick to the test. Returns the test (or null).
+function addTimerTime() {
+  if (!testTimer) { return null; }
+  const test = findTest(testTimer.id);
+  const now = Date.now();
+  const gap = Math.min(Math.max(0, now - testTimer.last), TIMER_MAX_GAP * 1000);
+  testTimer.last = now;
+  if (!test || test.state !== "open") { return null; }
+  testTimer.carry += gap;
+  const whole = Math.floor(testTimer.carry / 1000);
+  if (whole > 0) {
+    testTimer.carry -= whole * 1000;
+    const before = test.limit > 0 ? testSecondsLeft(test) : 0;
+    test.used += whole;
+    testTimer.unsaved += whole;
+    if (test.limit > 0) {
+      const left = testSecondsLeft(test);
+      TIMER_NOTICES.forEach(function (at) {
+        if (before > at && left <= at && left > 0) {
+          showTimeNote(at >= 120 ? Math.round(at / 60) + " minutes left." : "1 minute left.");
+        }
+      });
+    }
+  }
+  return test;
+}
+
+function tickTestTimer() {
+  if (!testTimer) { return; }
+  // Not on the test screen anymore, or the app is hidden: stop without counting.
+  if (shownScreen !== "screen-test" || document.visibilityState === "hidden" || currentTestId !== testTimer.id) {
+    stopTestTimer(true);
+    return;
+  }
+  const test = addTimerTime();
+  if (!test) { stopTestTimer(true); return; }
+  if (testTimer.unsaved >= TIMER_SAVE_EVERY) {
+    testTimer.unsaved = 0;
+    saveProgress();
+  }
+  showTestTimer(test);
+  if (test.limit > 0 && testSecondsLeft(test) <= 0) { timeUp(test.id); }
+}
+
+// Stop the timer and save the time used. "noCount": don't add the time since the last tick.
+function stopTestTimer(noCount) {
+  if (!testTimer) { return; }
+  clearInterval(testTimer.interval);
+  if (!noCount) { addTimerTime(); }
+  const counted = testTimer.unsaved > 0;
+  testTimer = null;
+  if (counted || !noCount) { saveProgress(); }
+}
+
+function timeUp(id) {
+  stopTestTimer();
+  const test = findTest(id);
+  if (!test || test.state !== "open") { return; }
+  test.used = Math.max(test.used, test.limit * 60);
+  if (typeof confirmDone !== "undefined" && confirmDone) { closeConfirm(false); }  // an open "End this test?" question
+  endTest(id, "Time's up. Your test was submitted with the answers you gave.");
+}
+
+// Called by showScreen (app.js) on every screen change: the timer runs only on the test screen.
+function testScreenChanged(id) {
+  if (id === "screen-test") { startTestTimer(); } else { stopTestTimer(); }
+}
+
+document.addEventListener("visibilitychange", function () {
+  if (document.visibilityState === "hidden") { stopTestTimer(); return; }
+  if (shownScreen === "screen-test") { startTestTimer(); }
+});
+window.addEventListener("pagehide", function () { stopTestTimer(); });

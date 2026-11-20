@@ -99,6 +99,7 @@ function showScreen(id) {
   document.body.dataset.screen = id;  // lets style.css lay out wide screens per screen
   if (id === "screen-home") { showTodayCard(); showMyNotesButton(); }  // up to date whenever she comes home
   updateSidebar();
+  if (typeof testScreenChanged === "function") { testScreenChanged(id); }  // tests.js: the timer runs only on the test screen
   rememberSpot();
   reloadForUpdateIfSafe();  // a new version waiting? Moving between screens is a safe moment
 }

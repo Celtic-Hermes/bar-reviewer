@@ -467,8 +467,14 @@
     <section id="screen-test" hidden>
       <div class="question-topbar">
         <button class="back-btn" id="test-back"><span data-icon="chevron-left"></span> Tests</button>
-        <p class="progress" id="test-progress"></p>
+        <div class="test-topbar-right">
+          <p class="progress" id="test-progress"></p>
+          <!-- Time left on a timed test (tests.js showTestTimer); nothing on an untimed one -->
+          <p class="test-timer" id="test-timer" hidden></p>
+        </div>
       </div>
+      <!-- "5 minutes left" / "1 minute left": shown for a while, and read out by screen readers -->
+      <p class="test-time-note" id="test-time-note" role="status" aria-live="polite"></p>
       <!-- Flag this question, and the question map (tests.js showTestTools / showTestMap) -->
       <div class="test-tools">
         <button type="button" class="test-tool-btn" id="test-flag" aria-pressed="false"></button>
@@ -515,6 +521,7 @@
       <section class="card test-score-card">
         <p class="big-score" id="test-score"></p>
         <p class="count-label test-score-line" id="test-score-line"></p>
+        <p class="count-label test-time-used" id="test-time-used"></p>
       </section>
       <div class="stat-strip" aria-label="Your answers">
         <div class="stat-cell"><p class="stat-cell-value" id="test-right">0</p><p class="stat-cell-label">Right</p></div>

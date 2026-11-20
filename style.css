@@ -713,7 +713,15 @@ button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
 }
 .test-tool-btn.on { background: var(--primary-soft); color: var(--text); border-color: var(--primary); }
 .test-tool-btn[aria-expanded="true"] { border-color: var(--primary); }
-.test-end-btn { margin-left: auto; }  /* End test: on the right of the row */
+.test-end-btn { margin-left: auto; }
+/* The timer: under "Question N of M", on the right of the top bar */
+.test-topbar-right { display: grid; justify-items: end; gap: 2px; margin: 0 0 8px; }
+.test-topbar-right .progress { margin: 0; }
+.test-timer { margin: 0; font-size: 15px; font-weight: 700; color: var(--text); font-variant-numeric: tabular-nums; }
+.test-timer.is-low { color: var(--missed); }
+.test-time-note { margin: 0 0 12px; padding: 10px 14px; border-radius: 12px; background: var(--primary-soft); color: var(--text); font-weight: 600; }
+.test-time-note:empty { margin: 0; padding: 0; }  /* nothing to say: takes no room (still there for screen readers) */
+.test-time-used { margin: 4px 0 0; text-align: center; }  /* End test: on the right of the row */
 /* A finished test's results (#screen-test-results) */
 .test-score-card { text-align: center; }
 .test-score-line { margin: 6px 0 0; text-align: center; }
