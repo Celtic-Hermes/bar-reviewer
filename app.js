@@ -3495,7 +3495,6 @@ function showMcq(question) {
   const container = document.getElementById("choices");
   container.innerHTML = "";
   document.getElementById("mcq-feedback").hidden = true;
-  showCorrection(document.getElementById("mcq-correction"), null);  // hidden until she answers
   const submit = document.getElementById("submit-answer");
   submit.hidden = false;
   submit.disabled = true;  // grayed out until she picks a choice
@@ -3577,7 +3576,6 @@ function showPicked(question, picked) {
     : "Not quite. The correct answer is " + question.correct + ".";
   result.className = "feedback-title " + (isRight ? "got-text" : "missed-text");
   setRichText(document.getElementById("mcq-explanation"), question.explanation);
-  showCorrection(document.getElementById("mcq-correction"), question);
   document.getElementById("mcq-feedback").hidden = false;
   document.getElementById("find-btn").hidden = viewOf(session.questions[session.index]) !== "official";  // she has answered: "Find in case" is allowed now (never for class notes: no case to search)
 }
@@ -4039,7 +4037,6 @@ function applyFbLevel(question, level, hidden) {
   const discussion = typeof question.explanation === "string" ? question.explanation.trim() : "";
   document.getElementById("fb-discussion-card").hidden = !discussion;
   setRichText(document.getElementById("fb-discussion"), discussion);
-  showCorrection(document.getElementById("fb-correction"), question);  // inside the answer area: seen only after Show answer
 
   const note = document.getElementById("fb-level-note");
   if (fbInfo.usable) {
@@ -4310,7 +4307,6 @@ function showEssay(question) {
   setRichText(document.getElementById("alac-basis"), question.suggestedAnswer.legalBasis);
   setRichText(document.getElementById("alac-application"), question.suggestedAnswer.application);
   setRichText(document.getElementById("alac-conclusion"), question.suggestedAnswer.conclusion);
-  showCorrection(document.getElementById("essay-correction"), question);  // inside the answer area: seen only with the suggested answer
 
   // Make a checkbox for each key point (clearing any from last time).
   const list = document.getElementById("key-points");
@@ -4872,16 +4868,6 @@ function markLists(text) {
 }
 
 // Replace what's inside an element with text that may contain **bold** parts.
-// An optional "correction" on a question (plain text: what was changed from the source and what to
-// check). Shown in red italics (.correction-note) only where the answer is already revealed.
-// Always plain text (textContent), never HTML. No correction, or no question: emptied and hidden.
-function showCorrection(element, question) {
-  if (!element) { return; }
-  const text = question && typeof question.correction === "string" ? question.correction.trim() : "";
-  element.textContent = text;
-  element.hidden = !text;
-}
-
 function setRichText(element, value) {
   element.textContent = "";
   element.appendChild(richText(value));

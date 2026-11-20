@@ -322,10 +322,6 @@ body {
 .alac dt { font-weight: 700; margin-top: var(--space-4); }
 .alac dt:first-child { margin-top: 0; }
 .alac dd { margin: var(--space-1) 0 0; }
-/* An optional correction on a question (showCorrection in app.js): red italics, shown only after she answers.
-   Inside a card it sits under the text; between cards (fill in the blank, test review) it keeps the block gap below. */
-.correction-note { color: var(--missed); font-style: italic; margin: var(--space-3) 0 0; }
-.card + .correction-note { margin: 0 0 var(--space-block); }
 
 /* Key points with large, easy-to-tap checkboxes. */
 .key-points { list-style: none; margin: 0; padding: 0; }

@@ -6,7 +6,6 @@ official text in between (done by the notebooklm-agent agent, or by hand).
     python3 tools/import-notebooklm.py            # 1. stage: read the inbox, check the shape, give IDs
     python3 tools/import-notebooklm.py --status   #    show what is waiting
     python3 tools/import-notebooklm.py --publish  # 2. publish the confirmed ones, hold back the rest
-    python3 tools/import-notebooklm.py --correct nq-0003 "Correction: …"   # set a published question's note ("" removes it)
 
 Folders (all under imports/notebooklm/, git-ignored, this Mac only):
     inbox/          paste NotebookLM's JSON answers here (any name ending in .json)
@@ -20,10 +19,7 @@ labeled "From NotebookLM", each answer ending with a **Basis:** line and the off
 
 How a staged question is marked (in staged.json, its "review" part):
     "state": "pending"    not looked at yet (the default)
-    "state": "confirmed"  checked against the official text; also needs "urls": ["https://…"], and,
-                          if anything was changed from NotebookLM's version, "correction": "what
-                          NotebookLM had, what it became, what to check" (shown in red italics after
-                          she answers; publish refuses a changed question without one)
+    "state": "confirmed"  checked against the official text; also needs "urls": ["https://…"]
     "state": "held"       not confirmed; also needs "reason": "why"
 """
 
@@ -204,8 +200,7 @@ def stage():
             if copies_source(item, prints):
                 review["copyWarning"] = "repeats %d+ words in a row from the notes or a reviewer: rewrite it before publishing." % COPY_WORDS
             staged.append({"item": item, "basis": raw["basis"].strip(), "sourceNote": str(raw.get("sourceNote", "")).strip(),
-                           "fromFile": name, "review": review,
-                           "original": json.loads(json.dumps(item))})  # NotebookLM's version, to spot changes at publish
+                           "fromFile": name, "review": review})
             new_ids.append(qid)
         os.makedirs(DONE, exist_ok=True)
         shutil.move(path, os.path.join(DONE, name))
@@ -253,28 +248,6 @@ def with_basis(item, basis, urls):
     return q
 
 
-def changed_parts(e):
-    """What was changed from NotebookLM's version (the question's own parts and its basis citation).
-    Placement (subject / topic / sub-topic) and the added Basis line don't count. [] if nothing,
-    or if the entry was staged before the original was kept."""
-    original = e.get("original")
-    if not isinstance(original, dict):
-        return []
-    item = e["item"]
-    parts = [f for f in KEEP.get(item.get("type"), []) if item.get(f) != original.get(f)]
-    if checker.filled(e.get("basisLine")) and e["basisLine"].strip() != e["basis"].strip():
-        parts.append("basis")
-    return parts
-
-
-def clean_correction(text):
-    """A correction note: plain text, one paragraph, starting with "Correction:"."""
-    text = re.sub(r"\s+", " ", str(text or "")).strip()
-    if text and not text.lower().startswith("correction:"):
-        text = "Correction: " + text
-    return text
-
-
 def publish():
     staged = read_json(STAGED, [])
     public = read_json(PUBLIC, {"note": NOTE, "questions": []})
@@ -304,15 +277,9 @@ def publish():
             refused.append("%s: %s" % (qid, " ".join(found)))
         elif copies_source(e["item"], prints):
             refused.append("%s: still repeats %d+ words in a row from the notes or a reviewer." % (qid, COPY_WORDS))
-        elif changed_parts(e) and not clean_correction(r.get("correction")):
-            refused.append("%s: changed from NotebookLM's version (%s) but has no 'correction' note saying what changed."
-                           % (qid, ", ".join(changed_parts(e))))
         else:
             q = with_basis(e["item"], e.get("basisLine") or e["basis"], urls)
             q["status"] = "draft"  # always: only a person marks anything verified
-            note = clean_correction(r.get("correction"))
-            if note:
-                q["correction"] = note  # shown in red italics after she answers
             public["questions"].append(q)
             added.append(qid)
             continue
@@ -331,32 +298,7 @@ def publish():
     return 1 if refused else 0
 
 
-# ---------- --correct ----------
-
-def correct(qid, text):
-    """Set (or, with empty text, remove) the correction note on a published question."""
-    public = read_json(PUBLIC, {"note": NOTE, "questions": []})
-    q = next((x for x in public.get("questions", []) if x.get("id") == qid), None)
-    if q is None:
-        print("%s isn't in data/notebooklm.json." % qid)
-        return 1
-    note = clean_correction(text)
-    if note:
-        q["correction"] = note
-    else:
-        q.pop("correction", None)
-    write_json(PUBLIC, public)
-    print("%s: %s" % (qid, "correction note set" if note else "correction note removed"))
-    return 0
-
-
 if __name__ == "__main__":
-    if "--correct" in sys.argv:
-        i = sys.argv.index("--correct")
-        if len(sys.argv) < i + 3:
-            print('Use: python3 tools/import-notebooklm.py --correct nq-0003 "Correction: …"   ("" removes it)')
-            sys.exit(1)
-        sys.exit(correct(sys.argv[i + 1], sys.argv[i + 2]))
     if "--publish" in sys.argv:
         sys.exit(publish())
     if "--status" in sys.argv:
