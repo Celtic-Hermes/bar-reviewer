@@ -424,7 +424,10 @@ function putBackSpot(spot) {
 
   if (spot.screen === "rule") {
     const rule = findRule(spot.ruleId);
-    if (rule) { openRule(rule); } else { openTopicOrSubject(); }
+    const fromStudy = spot.ruleCameFrom === "study";
+    if (rule) { openRule(rule, fromStudy ? "study" : undefined); }
+    else if (fromStudy) { subjectTab = "study"; openSubject(currentSubject); }
+    else { openTopicOrSubject(); }
     return true;
   }
   if (spot.screen === "topic" || spot.screen === "tagged") {
@@ -445,6 +448,8 @@ function putBackSpot(spot) {
       openTopicOrSubject();
     } else if (spot.caseCameFrom === "question" && roundOk) {
       openCase(theCase, "question");
+    } else if (spot.caseCameFrom === "study") {
+      openCase(theCase, "study");  // Back: the subject's Study tab
     } else {
       // Opened from the subject screen's Cases tab, or from a topic screen.
       openCase(theCase, spot.caseCameFrom === "subject" || !isRealTopic(currentTopic) ? "subject" : "topic");
@@ -911,6 +916,7 @@ function openSubject(subject) {
 
   showTopicCards(subject);
   showCaseRows(subject);
+  showStudyTab(subject);
   // The remembered tab, unless it has nothing here (e.g. Cases in a subject with no cases): then Questions.
   showSubjectTab(subjectTabHasContent(subjectTab, subject) ? subjectTab : "questions");
   showScreen("screen-subject");
@@ -951,9 +957,10 @@ function pickSubjectTab(tab) {
   rememberSpot();
 }
 
-// Does this tab have anything in this subject? (Study is filled in a later step: always yes for now.)
+// Does this tab have anything in this subject? (Questions always shows, with its own empty note.)
 function subjectTabHasContent(tab, subject) {
   if (tab === "cases") { return subjectCases(subject).length > 0; }
+  if (tab === "study") { return subjectRules(subject).length + subjectCases(subject).length + subjectNotes(subject).length > 0; }
   return true;
 }
 
@@ -1140,6 +1147,52 @@ function showCaseRows(subject) {
   document.getElementById("case-rows-empty").hidden = cases.length !== 0;
 }
 
+// ---------- The Study tab: things to read in this subject ----------
+// Rules and statutes (the catalog files each rule under the subject of its first question), the
+// subject's official cases, and her notes on those cases and rules (newest first, as on My notes).
+// Everything opened from here comes back to the Study tab ("study" in caseCameFrom / ruleCameFrom).
+// An empty section is hidden; with nothing at all: "Nothing to read here yet."
+function subjectRules(subject) {
+  const rules = [];
+  catalogRules.forEach(function (entry) {
+    if (!entry || entry.subject !== subject) { return; }
+    const rule = findRule(entry.id);  // only rules whose text can be read
+    if (rule && rules.indexOf(rule) === -1) { rules.push(rule); }
+  });
+  return rules.sort(function (a, b) { return a.id < b.id ? -1 : (a.id > b.id ? 1 : 0); });
+}
+
+function subjectNotes(subject) {
+  const ruleIds = {};
+  subjectRules(subject).forEach(function (r) { ruleIds[r.id] = true; });
+  return myNotes().filter(function (entry) {
+    return entry.kind === "case" ? entry.item.subject === subject : ruleIds[entry.item.id] === true;
+  });
+}
+
+function showStudyTab(subject) {
+  const rules = subjectRules(subject);
+  const cases = subjectCases(subject);
+  const notes = subjectNotes(subject);
+  const ruleList = document.getElementById("study-rules");
+  ruleList.innerHTML = "";
+  rules.forEach(function (rule) {
+    ruleList.appendChild(makeRuleCard(rule, function () { openRule(rule, "study"); }));
+  });
+  const caseList = document.getElementById("study-cases");
+  caseList.innerHTML = "";
+  cases.forEach(function (c) {
+    caseList.appendChild(makeCaseCard(c, function () { openCase(c, "study"); }));
+  });
+  const noteList = document.getElementById("study-notes");
+  noteList.innerHTML = "";
+  notes.forEach(function (entry) { noteList.appendChild(makeNoteCard(entry, "study")); });
+  document.getElementById("study-rules-block").hidden = rules.length === 0;
+  document.getElementById("study-cases-block").hidden = cases.length === 0;
+  document.getElementById("study-notes-block").hidden = notes.length === 0;
+  document.getElementById("study-empty").hidden = rules.length + cases.length + notes.length > 0;
+}
+
 // "Official / Notes / NotebookLM": shown only when this subject has class-notes or
 // NotebookLM questions, each button only if it has questions here. Switching redraws the subject screen.
 function showSourceSwitch(subject) {
@@ -1323,7 +1376,7 @@ function makeQuestionCard(question, onTap) {
 // "rule-0001:fulltext", with the words numbered across the whole rule.
 let topicRule = null;    // the rule behind the topic screen being shown, if any
 let currentRule = null;  // the rule on the rule screen
-let ruleCameFrom = "topic";  // where the rule screen's Back goes: "topic", "notes", "search" or "schedule"
+let ruleCameFrom = "topic";  // where the rule screen's Back goes: "topic", "notes", "search", "schedule" or "study" (the subject's Study tab)
 
 function findRule(ruleId) {
   return allRules.find(function (r) { return r.id === ruleId; }) || null;
@@ -1347,6 +1400,7 @@ document.getElementById("rule-back").addEventListener("click", function () {
   if (ruleCameFrom === "notes") { openNotes(); }
   else if (ruleCameFrom === "search") { backToSearch(); }
   else if (ruleCameFrom === "schedule") { showSchedule(); showScreen("screen-schedule"); }
+  else if (ruleCameFrom === "study") { subjectTab = "study"; openSubject(currentSubject); }  // the subject's Study tab
   else { openTopicOrSubject(); }
 });
 
@@ -1368,7 +1422,7 @@ function loadRuleText(ruleId) {
 // "cameFrom": "notes" (her My notes list), "search" (the Search screen), otherwise a topic screen.
 function openRule(rule, cameFrom) {
   currentRule = rule;
-  ruleCameFrom = (cameFrom === "notes" || cameFrom === "search" || cameFrom === "schedule") ? cameFrom : "topic";
+  ruleCameFrom = (cameFrom === "notes" || cameFrom === "search" || cameFrom === "schedule" || cameFrom === "study") ? cameFrom : "topic";
   let where;
   if (ruleCameFrom !== "topic") {
     // Not opened from a topic: name the subject and topic its questions are filed under.
@@ -3031,7 +3085,9 @@ function openNotes() {
 
 // One card: the case or rule name, the start of her note, then "Case · Nov 18, 2026"
 // (and the Unverified label, like every case or rule card).
-function makeNoteCard(entry) {
+// "from" (optional): where the opened case or rule's Back goes ("notes" = My notes, "study" = the Study tab).
+function makeNoteCard(entry, from) {
+  const cameFrom = from || "notes";
   const card = document.createElement("button");
   card.className = "subject-card note-card";
   const name = document.createElement("span");
@@ -3056,7 +3112,7 @@ function makeNoteCard(entry) {
   arrow.textContent = "›";
   card.append(name, arrow);
   card.addEventListener("click", function () {
-    if (entry.kind === "case") { openCase(entry.item, "notes"); } else { openRule(entry.item, "notes"); }
+    if (entry.kind === "case") { openCase(entry.item, cameFrom); } else { openRule(entry.item, cameFrom); }
   });
   return card;
 }
@@ -4529,7 +4585,7 @@ function findCase(caseId) {
 }
 
 // Where to go when she taps "‹ Back" on the case screen.
-let caseCameFrom = null;       // "question", "topic", "subject", "notes", "search" or "schedule"
+let caseCameFrom = null;       // "question", "topic", "subject" (Cases tab), "study" (Study tab), "notes", "search" or "schedule"
 let caseHome = "topic";        // where the case screen's Back goes when not back to a question
 let questionScrollSpot = 0;    // where she was on the question screen
 
@@ -5603,6 +5659,9 @@ document.getElementById("case-back").addEventListener("click", function () {
   } else if (caseCameFrom === "schedule") {
     showSchedule();  // back to the Study Schedule (a task linked to this case)
     showScreen("screen-schedule");
+  } else if (caseCameFrom === "study") {
+    subjectTab = "study";  // opened from the subject screen's Study tab: back to it
+    openSubject(currentSubject);
   } else {
     subjectTab = "cases";  // opened from the subject screen's Cases tab: back to it
     openSubject(currentSubject);

@@ -355,9 +355,21 @@
         <p class="card empty-note" id="subject-empty" hidden>No questions for this subject yet.</p>
       </div>
 
-      <!-- Study tab (filled in a later step) -->
+      <!-- Study tab: things to read: its rules and statutes, its cases, her notes on them (app.js showStudyTab) -->
       <div class="subject-panel" id="subject-panel-study" role="tabpanel" aria-labelledby="subject-tab-study" hidden>
-        <p class="card empty-note">Coming next.</p>
+        <div id="study-rules-block" hidden>
+          <h2 class="label">Rules and statutes</h2>
+          <div class="subject-list" id="study-rules"></div>
+        </div>
+        <div id="study-cases-block" hidden>
+          <h2 class="label">Cases to read</h2>
+          <div class="subject-list" id="study-cases"></div>
+        </div>
+        <div id="study-notes-block" hidden>
+          <h2 class="label">My notes</h2>
+          <div class="subject-list" id="study-notes"></div>
+        </div>
+        <p class="card empty-note" id="study-empty" hidden>Nothing to read here yet.</p>
       </div>
 
     </section>
