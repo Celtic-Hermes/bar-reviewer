@@ -415,6 +415,8 @@ A **Settings** screen (`#screen-settings`), reached from the ⚙️ button on th
 - iPhone note: she should use Safari's **Add to Home Screen**. iPhones can clear saved data for websites that haven't been opened in a while, but apps added to the home screen are better protected. **Settings → Data** has **Back up my progress** (saves a file via the Share menu → Save to Files) and **Restore progress** (loads that file back).
 
 ## Rules for working on this project
+**Changes to the app itself** (removing, redesigning or restyling screens and sections, and the code behind them) go to the **app-agent** (`.claude/agents/app-agent.md`, this Mac only): it proposes the steps first, builds only after the builder's OK, keeps her saved data safe, updates this guide and bumps the cache version, and never touches content in `data/` or commits.
+
 These rules matter more than speed.
 
 1. **Explain every change in simple terms.**
