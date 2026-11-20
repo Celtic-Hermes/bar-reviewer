@@ -668,6 +668,699 @@
       "prompt": "Section 2. Amendments. Amendments to Negative List A may be made at any time to reflect changes instituted in specific laws, while amendments to Negative List B shall not be made more often than ____, pursuant to Section 8 of RA No. 7042, as amended, and its Implementing Rules and Regulations.",
       "fullText": "Section 2. Amendments. Amendments to Negative List A may be made at any time to reflect changes instituted in specific laws, while amendments to Negative List B shall not be made more often than once every two (2) years, pursuant to Section 8 of RA No. 7042, as amended, and its Implementing Rules and Regulations.",
       "explanation": "List A follows changes in the Constitution and specific laws, so it may be amended whenever such a law changes; List B may be amended only once every two (2) years.\n\n**Basis:** E.O. No. 113 (April 13, 2026), 13th Regular Foreign Investment Negative List, Sec. 2. Checked against the official text: https://lawphil.net/executive/execord/eo2026/pdf/eo_113_2026.pdf."
+    },
+    {
+      "id": "nq-0031",
+      "type": "essay",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Dr. Aris developed a surgical method for spinal fusion that reduces recovery time by half. Alongside this procedure, he designed a specialized titanium spinal implant specifically engineered to execute the fusion. Dr. Aris filed patent applications for both the surgical procedure and the titanium implant. The Intellectual Property Office denied the application for the surgical method but admitted the application for the implant. Is the IPO's action legally sound?",
+      "suggestedAnswer": {
+        "answer": "Yes, the action of the Intellectual Property Office is legally sound.",
+        "legalBasis": "Under Section 22.3 of Republic Act No. 8293 (Intellectual Property Code), methods for treatment of the human or animal body by surgery or therapy, and diagnostic methods practiced on the human or animal body, are non-patentable. However, the law explicitly provides that this prohibition does not apply to products and compositions for use in any of these methods.",
+        "application": "Here, Dr. Aris' surgical method for spinal fusion constitutes a method of surgical treatment of the human body, placing it squarely within non-patentable subject matter. Conversely, the specialized titanium spinal implant is a physical product designed for use in surgical treatment, which falls outside the exclusion.",
+        "conclusion": "Therefore, the IPO correctly rejected the surgical method application while admitting the application for the titanium implant.\n\n**Basis:** R.A. No. 8293, Sec. 22.3 (Sec. 22 as amended by R.A. No. 9502 leaves 22.3 unchanged). Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html, https://lawphil.net/statutes/repacts/ra2008/ra_9502_2008.html."
+      },
+      "keyPoints": [
+        "Surgical methods for treating the human body are non-patentable under Section 22.3 of R.A. 8293.",
+        "The statutory exclusion from patentability does not extend to products or devices used in surgical methods.",
+        "The specialized titanium implant is a patentable product, whereas the surgical procedure itself is excluded."
+      ]
+    },
+    {
+      "id": "nq-0032",
+      "type": "essay",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Vince, a senior software developer at TechCorp, was assigned as part of his regular duties to create an inventory tracking application. While working on the software during office hours, Vince independently conceived and designed a novel cryptographic algorithm for secure file transfer—a project completely outside his assigned work duties. Vince used TechCorp's computers and servers to test his cryptographic algorithm. Who owns the right to the patent over the cryptographic algorithm?",
+      "suggestedAnswer": {
+        "answer": "The right to the patent belongs to Vince, the employee.",
+        "legalBasis": "Under Section 30.2(a) of R.A. 8293, an invention made by an employee in the course of his employment contract belongs to the employee if the inventive activity is not part of his regular duties, even if the employee uses the time, facilities, and materials of the employer.",
+        "application": "In this case, Vince's regular duties involved building inventory tracking applications. The conception of the cryptographic algorithm was entirely outside his assigned regular duties. The mere fact that he utilized TechCorp's office hours, computers, and servers does not vest ownership of the patent in TechCorp.",
+        "conclusion": "Thus, Vince owns the right to the patent over the cryptographic algorithm.\n\n**Basis:** R.A. No. 8293, Sec. 30.2. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+      },
+      "keyPoints": [
+        "Inventions outside regular duties belong to the employee under Section 30.2(a) of R.A. 8293.",
+        "Employee's use of employer's time, facilities, and materials does not shift patent ownership to the employer if inventive activity is not part of regular duties.",
+        "Employer owns inventions under Section 30.2(b) only when the invention results from the performance of regularly-assigned duties."
+      ]
+    },
+    {
+      "id": "nq-0033",
+      "type": "essay",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Global Pharma filed a patent application in Japan for a new anti-inflammatory compound on February 10, 2024. On November 15, 2024, Global Pharma filed a patent application for the exact same compound with the Philippine IPO, expressly claiming priority based on the Japanese filing, and submitted certified copies in English on January 10, 2025. Meanwhile, Local Labs filed a Philippine patent application for the identical compound on June 1, 2024. Local Labs contends it has the prior right under the first-to-file rule because its Philippine filing preceded Global Pharma's actual Philippine submission. Resolve the dispute.",
+      "suggestedAnswer": {
+        "answer": "Global Pharma has the prior right to the patent over the compound.",
+        "legalBasis": "Under Section 31 of R.A. 8293, an application for a patent filed by a person who has previously applied for the same invention in another country which by treaty, convention, or law affords similar privileges to Filipino citizens shall be considered as filed as of the date of filing the foreign application, provided that: (a) priority is expressly claimed; (b) the local application is filed within 12 months from the earliest foreign filing date; and (c) a certified copy of the foreign application together with an English translation is filed within 6 months from the Philippine filing. A right of priority matters only when there are two or more conflicting applications for the same invention (E.I. Dupont De Nemours and Co. v. Director Emma C. Francisco).",
+        "application": "Global Pharma satisfied all three requisites: it expressly claimed priority, filed in the Philippines within 9 months (well within the 12-month window), and submitted the certified copy with its English translation within 2 months of local filing (well within 6 months). Consequently, Global Pharma's filing date retroacts to February 10, 2024, preceding Local Labs' June 1, 2024 filing.",
+        "conclusion": "Global Pharma's right of priority prevails over Local Labs' local application.\n\n**Basis:** R.A. No. 8293, Secs. 29 and 31; E.I. Dupont De Nemours and Co. v. Director Emma C. Francisco, G.R. No. 174379, August 31, 2016. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html, https://lawphil.net/judjuris/juri2016/aug2016/gr_174379_2016.html."
+      },
+      "keyPoints": [
+        "Right of priority under Section 31 of R.A. 8293 accords the effective filing date of the earliest foreign application.",
+        "Requisites: express claim of priority, local filing within 12 months, and certified translation within 6 months.",
+        "Timely compliance retroacts the priority date, defeating subsequent local filings under the first-to-file system."
+      ]
+    },
+    {
+      "id": "nq-0034",
+      "type": "essay",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Since 2021, Craft Brewery has been commercially manufacturing and selling an organic filtration system in Cebu in good faith without obtaining a patent. In 2023, Mega Tech independently invented the exact same filtration system and secured a Philippine patent under the first-to-file rule. In 2024, Mega Tech sued Craft Brewery for patent infringement. Craft Brewery invokes the prior user rule as a defense. Furthermore, Craft Brewery wants to sell its entire brewery business, including the right to use the filtration system, to North Drinks. Can Craft Brewery raise the prior user defense, and can the right be assigned to North Drinks?",
+      "suggestedAnswer": {
+        "answer": "Yes, Craft Brewery can validly invoke the prior user defense, and it can assign the right to North Drinks provided the transfer includes its entire business enterprise.",
+        "legalBasis": "Under Section 73 of R.A. 8293, any prior user who in good faith was using the invention in the Philippines before the filing or priority date of the patent application has the right to continue such use. Section 73 further dictates that this right of a prior user may only be transferred or assigned together with his enterprise or business, or with that part of his business in which the use or preparation was made.",
+        "application": "Craft Brewery used the filtration system in good faith prior to Mega Tech's patent application, insulating it from infringement liability. Moreover, because Craft Brewery is selling its entire brewery business to North Drinks, the prior user right validly transfers to North Drinks along with the enterprise.",
+        "conclusion": "Craft Brewery is not liable for patent infringement, and the prior user right can be validly transferred to North Drinks as part of the sale of the business.\n\n**Basis:** R.A. No. 8293, Sec. 73. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+      },
+      "keyPoints": [
+        "Good-faith prior user before filing/priority date is protected from infringement actions under Section 73 of R.A. 8293.",
+        "Prior user rights cannot be licensed or transferred independently of the underlying enterprise.",
+        "Transfer of the entire business validly carries with it the prior user right to the transferee."
+      ]
+    },
+    {
+      "id": "nq-0035",
+      "type": "essay",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "AgriCorp owns a patent for a motorized grain thresher. The patent claim explicitly specifies a three-stage mechanical rotary blade assembly driven by a belt system. BioTech produced a competing grain thresher that replaces the belt drive with a high-torque hydraulic drive mechanism. While the hydraulic drive performs the same function of rotating the blades to separate grain and yields identical output, it operates through a fundamentally distinct fluid-pressure mechanism rather than mechanical belt tension. AgriCorp sued BioTech for patent infringement under the doctrine of equivalents. Will the suit prosper?",
+      "suggestedAnswer": {
+        "answer": "No, AgriCorp's patent infringement suit will not prosper.",
+        "legalBasis": "Under the Doctrine of Equivalents, patent infringement occurs when an accused device performs substantially the same function, in substantially the same way, to achieve substantially the same result (the Function-Means-Result test). As held in Smith Kline Beckman Corp. v. Court of Appeals (G.R. No. 126627), identity of result alone does not constitute infringement unless the accused product operates by substantially the same means or mode of operation.",
+        "application": "While BioTech's thresher achieves the same result and performs the same function of separating grain, it does so using a hydraulic drive mechanism, which is a fundamentally different means compared to AgriCorp's mechanical belt-driven system. Thus, the 'means' element of the function-means-result test is unsatisfied.",
+        "conclusion": "Consequently, AgriCorp failed to establish infringement under the doctrine of equivalents.\n\n**Basis:** R.A. No. 8293, Sec. 75.2; Smith Kline Beckman Corp. v. Court of Appeals, G.R. No. 126627, August 14, 2003. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html, https://lawphil.net/judjuris/juri2003/aug2003/gr_126627_2003.html."
+      },
+      "keyPoints": [
+        "Doctrine of Equivalents requires satisfaction of all three prongs: function, means, and result.",
+        "Identity of function and result is insufficient if the accused device operates through a substantially different means.",
+        "Failure to prove substantial identity of means defeats a claim under the doctrine of equivalents."
+      ]
+    },
+    {
+      "id": "nq-0036",
+      "type": "essay",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Starting in 2015, Apex Bakery sold artisanal breads under the mark 'SUNRISE' in Davao without registering the mark with the IPO. In 2020, Zenith Foods filed an application with the IPO for the registration of 'SUNRISE' for packaged baked goods. Zenith acted in good faith, and the IPO issued a certificate of registration in 2021. In 2023, Zenith demanded that Apex cease using 'SUNRISE'. Apex refused, arguing it was the first user and true owner of the mark. Who has the superior right to the trademark 'SUNRISE'?",
+      "suggestedAnswer": {
+        "answer": "Zenith Foods has the superior right to the trademark 'SUNRISE'.",
+        "legalBasis": "Under Section 122 of R.A. 8293, rights in a mark are acquired solely through registration validly made in accordance with the law. In Zuneca Pharmaceutical v. Natrapharm, Inc. (G.R. No. 211850), the Supreme Court clarified that prior use is no longer a condition for acquiring trademark ownership, and the first-to-file/register system governs.",
+        "application": "Zenith validly registered the mark 'SUNRISE' with the IPO in good faith. Apex's prior commercial use since 2015 without registration does not grant it ownership of the trademark. Although Apex may continue as a prior user in good faith under Section 159.1, ownership and exclusive rights to the mark belong to Zenith.",
+        "conclusion": "Zenith Foods holds superior rights as the registered trademark owner.\n\n**Basis:** R.A. No. 8293, Secs. 122 and 159.1; Zuneca Pharmaceutical v. Natrapharm, Inc., G.R. No. 211850, September 8, 2020. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html, https://lawphil.net/judjuris/juri2020/sep2020/gr_211850_2020.html."
+      },
+      "keyPoints": [
+        "Trademark rights under R.A. 8293, Section 122 are acquired solely through registration, not prior use.",
+        "Zuneca Pharmaceutical v. Natrapharm reaffirmed that the Philippines strictly adheres to the first-to-file rule.",
+        "Unregistered prior users do not acquire trademark ownership over a later good-faith registrant."
+      ]
+    },
+    {
+      "id": "nq-0037",
+      "type": "essay",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "FreshBites Inc. filed a trademark application for 'CRISP' on March 1, 2020, and the registration was granted on August 15, 2021. Due to severe cash flow shortages and lack of operating funds, FreshBites failed to file its Declaration of Actual Use (DAU) within three years from the filing date. In April 2023, the IPO Director of Trademarks issued an order removing 'CRISP' from the register. FreshBites appealed, claiming that financial constraints constitute a valid excuse for non-use. Is FreshBites' position correct?",
+      "suggestedAnswer": {
+        "answer": "No, FreshBites' position is incorrect.",
+        "legalBasis": "Under Section 124.2 of R.A. 8293, failure to file a Declaration of Actual Use (DAU) within 3 years from the filing date results in the refusal of the application or the removal of the mark from the Register by the Director. (A separate declaration is due within one year from the fifth anniversary of the registration under Section 145.) Furthermore, Section 152.1 explicitly provides that while non-use may be excused if caused by circumstances arising independently of the will of the owner, lack of funds shall not excuse non-use of a mark.",
+        "application": "FreshBites failed to submit its 3-year DAU within the statutory window. Its sole defense of cash flow shortage and financial hardship is explicitly rejected by law as a ground to excuse non-use.",
+        "conclusion": "The IPO Director correctly ordered the removal of the mark 'CRISP' from the Register.\n\n**Basis:** R.A. No. 8293, Secs. 124.2 and 152.1. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+      },
+      "keyPoints": [
+        "DAU must be filed within 3 years from filing date under Section 124.2 of R.A. 8293.",
+        "Failure to file DAU causes removal of the registered mark from the Register.",
+        "Under Section 152.1, lack of funds is explicitly excluded as an excuse for non-use of a mark."
+      ]
+    },
+    {
+      "id": "nq-0038",
+      "type": "essay",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Mountain Springs Co. sought to register the word 'ALPINO' for its bottled mineral water. The IPO examiner refused registration on the ground that 'ALPINO' is a descriptive geographical term indicating origin from the Alps. Mountain Springs proved that it had exclusively and continuously used 'ALPINO' in Philippine commerce for over 25 years, spending millions in nationwide promotion, such that the drinking public exclusively associates 'ALPINO' bottled water with Mountain Springs. Can 'ALPINO' be registered as a trademark?",
+      "suggestedAnswer": {
+        "answer": "Yes, 'ALPINO' can be registered as a trademark under the Doctrine of Secondary Meaning.",
+        "legalBasis": "Under Section 123.1(j) of R.A. 8293, descriptive or geographical terms are generally non-registrable. However, Section 123.2 provides an exception: descriptive signs may be registered if they have become distinctive in relation to the applicant's goods as a result of long and exclusive commercial use in the Philippines (Doctrine of Secondary Meaning). Proof of substantially exclusive and continuous use for 5 years is prima facie evidence of distinctiveness.",
+        "application": "Although 'ALPINO' is geographically descriptive, Mountain Springs demonstrated continuous, exclusive commercial use in the Philippines for 25 years. This extensive use transformed the descriptive word into an identifier of Mountain Springs' specific bottled water product, satisfying the Doctrine of Secondary Meaning.",
+        "conclusion": "Mountain Springs is entitled to register 'ALPINO' as a trademark.\n\n**Basis:** R.A. No. 8293, Sec. 123.1(j) and 123.2; Ginebra San Miguel, Inc. v. Director of the Bureau of Trademarks, G.R. No. 196372, August 9, 2022. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html, https://lawphil.net/judjuris/juri2022/aug2022/gr_196372_2022.html."
+      },
+      "keyPoints": [
+        "Descriptive and geographical terms are generally non-registrable under Section 123.1(j).",
+        "Doctrine of Secondary Meaning under Section 123.2 permits registration when a descriptive term acquires distinctiveness through long, exclusive use.",
+        "Five years of substantially exclusive and continuous commercial use in the Philippines creates a prima facie presumption of distinctiveness."
+      ]
+    },
+    {
+      "id": "nq-0039",
+      "type": "essay",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Prima Meats produces processed ham in distinctive red cloth-like pouches featuring a sliced ham illustration. Competitor Delta Meats, which previously sold ham in plain rectangular cardboard boxes, suddenly changed its packaging to identical red cloth-like pouches displaying a substantially similar layout design, while keeping its registered trademark 'DELTA'. Prima Meats sued Delta Meats for trademark infringement and unfair competition. The court found no trademark infringement because the word marks 'PRIMA' and 'DELTA' were visually distinct. Can Delta Meats nonetheless be held liable for unfair competition?",
+      "suggestedAnswer": {
+        "answer": "Yes, Delta Meats can be held liable for unfair competition despite the absence of trademark infringement.",
+        "legalBasis": "Under Section 168 of R.A. 8293 and San Miguel Pure Foods Co., Inc. v. Foodsphere, Inc. (G.R. Nos. 217781 & 217788), trademark infringement and unfair competition are distinct causes of action. Unfair competition does not require a registered mark or identical word marks; its essential elements are: (1) confusing similarity in the general appearance or get-up of the goods, and (2) intent to deceive the public or defraud a competitor.",
+        "application": "Delta Meats deliberately switched from plain cardboard boxes to red cloth-like pouches mimicking Prima's overall packaging and visual layout. This creates confusing similarity in general appearance. Intent to deceive is properly inferred from Delta's abrupt adoption of packaging nearly identical to its competitor's established get-up.",
+        "conclusion": "Delta Meats is liable for unfair competition.\n\n**Basis:** R.A. No. 8293, Sec. 168; San Miguel Pure Foods Co., Inc. v. Foodsphere, Inc., G.R. Nos. 217781 & 217788, June 20, 2018. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html, https://lawphil.net/judjuris/juri2018/jun2018/gr_217781_2018.html."
+      },
+      "keyPoints": [
+        "Unfair competition under Section 168 focuses on the overall general appearance (get-up) of goods, not registration or word marks.",
+        "Liability for unfair competition can exist even if trademark infringement is absent.",
+        "Intent to deceive the public may be inferred from copying the overall packaging and layout design."
+      ]
+    },
+    {
+      "id": "nq-0040",
+      "type": "essay",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Titanium Inc. owns the trademark 'TITAN', which is registered in the Philippines for luxury sports cars and internationally recognized as a well-known mark. Heavy Duty Corp. filed an application to register 'TITAN' for industrial cement mixers. Titanium Inc. opposed the registration, claiming protection as a well-known mark. Heavy Duty Corp. countered that sports cars and industrial cement mixers belong to completely different classes and are non-competing. Rule on the opposition.",
+      "suggestedAnswer": {
+        "answer": "The opposition of Titanium Inc. should be sustained, and Heavy Duty Corp.'s application denied.",
+        "legalBasis": "Under Sections 123.1(f) and 147.2 of R.A. 8293, protection for a mark registered in the Philippines that is established as well-known extends even to goods and services that are NOT similar or related to those covered by the registration, provided: (1) the mark is well-known; (2) use of the mark on the dissimilar goods indicates a connection with the registered owner; and (3) the registered owner's interests are likely to be damaged.",
+        "application": "Here, 'TITAN' is a registered well-known mark. Using 'TITAN' on heavy machinery creates an impression of sponsorship or commercial connection with the famed luxury vehicle maker, diluting its prestige and causing damage to Titanium Inc.'s brand goodwill.",
+        "conclusion": "The opposition should be sustained: the protection of a well-known mark registered in the Philippines extends to goods that are not similar, since the use would indicate a connection with Titanium Inc. and is likely to damage its interests.\n\n**Basis:** R.A. No. 8293, Secs. 123.1(f) and 147.2. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+      },
+      "keyPoints": [
+        "Registered well-known marks are protected against use on dissimilar or non-competing goods under Sections 123.1(f) & 147.2.",
+        "Requisites: well-known status, indication of connection between goods, and likelihood of damage to owner's interest.",
+        "Different product classification does not bar protection for a registered well-known mark."
+      ]
+    },
+    {
+      "id": "nq-0041",
+      "type": "essay",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Engineer Santos designed an innovative automotive engine valve gasket that improves fuel efficiency. He secured copyright registration certificates from the National Library for his technical engineering drawings of the gasket. Six months later, Santos discovered AutoParts Co. manufacturing and selling physical engine valve gaskets identical to his drawings. Santos sued AutoParts Co. for copyright infringement. AutoParts Co. moved to dismiss, contending that functional mechanical parts cannot be protected by copyright. Decide the case.",
+      "suggestedAnswer": {
+        "answer": "The copyright infringement suit must be dismissed.",
+        "legalBasis": "Under Section 175 of R.A. 8293 and established jurisprudence (Ching v. Salinas, G.R. No. 161295; Pearl & Dean v. Shoemart, G.R. No. 148222), copyright protection extends only to original literary and artistic expressions, not to functional or utilitarian objects, methods, or industrial designs. Copyright in a technical drawing protects the drawing itself against reproduction as a drawing, but does not grant exclusive rights to manufacture the functional object depicted.",
+        "application": "Santos' engine valve gasket is a functional automotive component whose aesthetic design cannot be conceptually separated from its utilitarian function. Manufacturing the physical gasket does not infringe the copyright of the technical drawing.",
+        "conclusion": "Santos cannot claim copyright infringement over the physical engine valve gaskets.\n\n**Basis:** R.A. No. 8293, Sec. 175; Ching v. Salinas, G.R. No. 161295, June 29, 2005; Pearl & Dean (Phil.), Inc. v. Shoemart, Inc., G.R. No. 148222, August 15, 2003 (decided under P.D. No. 49). Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html, https://lawphil.net/judjuris/juri2005/jun2005/gr_161295_2005.html, https://lawphil.net/judjuris/juri2003/aug2003/gr_148222_2003.html."
+      },
+      "keyPoints": [
+        "Copyright protects expression, not functional articles or utility methods under Section 175 of R.A. 8293.",
+        "Ching v. Salinas holds that functional vehicle parts are not works of applied art and cannot be copyrighted.",
+        "Pearl & Dean establishes that copyright in technical drawings does not extend to the manufacture of the physical article depicted."
+      ]
+    },
+    {
+      "id": "nq-0042",
+      "type": "essay",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Mayor Ramos commissioned Maria, an independent professional sculptor, to create a bronze statue of a local hero for the city plaza for P500,000. The written contract was silent regarding copyright ownership. After Maria completed and delivered the statue, the City Government printed and sold souvenir T-shirts displaying photos of the statue. Maria sued the City Government for copyright infringement. The City Government argues that because it commissioned and paid for the work, it owns all rights to the statue. Who owns the copyright?",
+      "suggestedAnswer": {
+        "answer": "Maria owns the copyright to the bronze statue.",
+        "legalBasis": "Under Section 178.4 of R.A. 8293, in case of work commissioned by a person other than an employer, the person who commissioned the work owns the physical work itself, but the copyright remains with the creator/author, unless there is a written stipulation to the contrary.",
+        "application": "Here, Mayor Ramos commissioned Maria to sculpt the statue. Because their contract contained no written stipulation assigning the copyright to the City Government, ownership of the physical statue transferred to the city, but the copyright stayed with Maria.",
+        "conclusion": "Maria owns the copyright, and the City Government's unauthorized reproduction of the statue on commercial T-shirts constitutes copyright infringement.\n\n**Basis:** R.A. No. 8293, Sec. 178.4; Sec. 181, as amended by R.A. No. 10372. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html, https://lawphil.net/statutes/repacts/ra2013/ra_10372_2013.html."
+      },
+      "keyPoints": [
+        "Under Section 178.4 of R.A. 8293, ownership of a commissioned work is dual: physical object vs copyright.",
+        "The commissioning party owns the physical work, while the creator retains the copyright.",
+        "Transfer of copyright in a commissioned work requires an express written agreement."
+      ]
+    },
+    {
+      "id": "nq-0043",
+      "type": "essay",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "News Network A obtained exclusive live broadcast footage of an ongoing hostage crisis. News Network B intercepted Network A's live feed and rebroadcast a 15-minute segment of the raw video footage on its own commercial news program without permission or attribution, placing its own station logo over Network A's feed. Network A sued Network B for copyright infringement. Network B raised the defense of fair use for news reporting. Is Network B's fair use defense valid?",
+      "suggestedAnswer": {
+        "answer": "No, Network B's fair use defense is invalid.",
+        "legalBasis": "Under Section 185 of R.A. 8293, fair use for news reporting is decided by weighing four factors: (1) the purpose and character of the use, including whether it is commercial; (2) the nature of the copyrighted work; (3) the amount and substantiality of the portion used; and (4) the effect of the use on the potential market for or value of the work. In ABS-CBN Corp. v. Gozon (G.R. No. 195956), the Court held that news footage is protected by copyright, that commercial use weighs against fair use, and that raising fair use does not automatically mean no infringement was committed.",
+        "application": "Network B used Network A's broadcast for direct commercial news rivalry without attribution. Rebroadcasting a substantial 15-minute chunk of raw exclusive footage directly harms Network A's market value and commercial exclusivity.",
+        "conclusion": "Network B committed copyright infringement, and its fair use defense fails.\n\n**Basis:** R.A. No. 8293, Sec. 185, as amended by R.A. No. 10372; ABS-CBN Corporation v. Gozon, G.R. No. 195956, March 11, 2015. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html, https://lawphil.net/statutes/repacts/ra2013/ra_10372_2013.html, https://lawphil.net/judjuris/juri2015/mar2015/gr_195956_2015.html."
+      },
+      "keyPoints": [
+        "Fair use is decided by weighing the four factors of Section 185 of R.A. 8293.",
+        "ABS-CBN v. Gozon: news footage is copyrightable, and a news-reporting purpose does not by itself make the use fair.",
+        "Commercial rebroadcasting of substantial raw video footage impairs market value and negates fair use."
+      ]
+    },
+    {
+      "id": "nq-0044",
+      "type": "essay",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "In 2018, renowned painter Fernando sold an original oil painting directly to Art Gallery for P100,000. In 2024, Art Gallery resold the original painting at a public auction to a collector for P2,000,000. Fernando learned of the resale and demanded a 5% share of the gross proceeds (P100,000) based on his statutory resale right. Art Gallery refused, claiming that once Fernando sold the painting, all his rights over the physical artwork were exhausted. Is Fernando entitled to the 5% share?",
+      "suggestedAnswer": {
+        "answer": "Yes, Fernando is entitled to the 5% share of the gross resale proceeds.",
+        "legalBasis": "Under Section 200 of R.A. 8293 (Droit de Suite / Resale Right), in every sale or lease of an original work of painting or sculpture or of the original manuscript of a writer or composer, subsequent to the first disposition thereof by the author, the author or his heirs shall have an inalienable right to participate in the gross proceeds of the sale or lease to the extent of five percent (5%). This right exists during the author's lifetime and for 50 years after death.",
+        "application": "The transaction between Art Gallery and the collector was a subsequent sale of an original oil painting following Fernando's first disposition. Fernando's statutory resale right is inalienable and operates notwithstanding the transfer of physical ownership.",
+        "conclusion": "Art Gallery is legally obligated to pay Fernando 5% of the gross resale proceeds (P100,000).\n\n**Basis:** R.A. No. 8293, Sec. 200. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+      },
+      "keyPoints": [
+        "Section 200 of R.A. 8293 grants authors an inalienable 5% resale right in gross proceeds of subsequent sales of original paintings, sculptures, or manuscripts.",
+        "The resale right persists during the author's lifetime plus 50 years posthumously.",
+        "Transfer of physical ownership of the artwork does not extinguish the statutory droit de suite."
+      ]
+    },
+    {
+      "id": "nq-0045",
+      "type": "essay",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "E-Shop, an online e-commerce platform, hosts independent merchants. Merchant X continuously uploads and sells pirated digital PDF copies of copyrighted law textbooks on E-Shop. The copyright owner sent formal written notices to E-Shop specifying the infringing listings. E-Shop ignored the notices, retained the listings, and continued collecting a 10% commission on every sale made by Merchant X. Is E-Shop liable for copyright infringement?",
+      "suggestedAnswer": {
+        "answer": "Yes, E-Shop is liable for vicarious copyright infringement.",
+        "legalBasis": "Under Section 216(b) of R.A. 8293 (as amended by R.A. 10372), a person is liable for vicarious copyright infringement if he benefits from the infringing activity of another who commits an infringement, provided the person benefiting has been given notice of the infringing activity and has the right and ability to control the activities of the other person.",
+        "application": "E-Shop met all three statutory requisites: (1) it received formal written notice of the infringement; (2) it had the right and ability to control its platform listings by taking down merchant listings; and (3) it directly derived financial benefit by earning a 10% commission on every pirated PDF sale.",
+        "conclusion": "E-Shop is vicariously liable for copyright infringement under Section 216(b).\n\n**Basis:** R.A. No. 8293, Sec. 216(b), as amended by R.A. No. 10372. Checked against the official text: https://lawphil.net/statutes/repacts/ra2013/ra_10372_2013.html."
+      },
+      "keyPoints": [
+        "Vicarious copyright infringement under Section 216(b) requires notice, right and ability to control, and direct financial benefit.",
+        "Failure of an online platform to remove infringing items after formal notice renders it liable.",
+        "Earning commissions from infringing sales satisfies the direct financial benefit element."
+      ]
+    },
+    {
+      "id": "nq-0046",
+      "type": "mcq",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "What is the statutory term of protection for a patent in the Philippines, and from when is it measured?",
+      "choices": {
+        "A": "17 years from the date of grant of the patent",
+        "B": "20 years from the filing date of the application",
+        "C": "20 years from the date of grant of the patent",
+        "D": "50 years after the death of the inventor"
+      },
+      "correct": "B",
+      "explanation": "B is correct under Section 54 of R.A. 8293, which provides that the term of a patent shall be twenty (20) years from the filing date of the application. A is wrong because the IP Code counts twenty years, from filing, not seventeen years from grant. C is wrong because the 20-year period runs from the filing date, not the grant date. D is wrong because 50 years after death applies to copyright economic rights, not patents.\n\n**Basis:** R.A. No. 8293, Sec. 54. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+    },
+    {
+      "id": "nq-0047",
+      "type": "mcq",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Which of the following regarding drugs and medicines lacks an inventive step and is non-patentable under Philippine intellectual property law?",
+      "choices": {
+        "A": "A new process that employs at least one new reactant resulting in a new product",
+        "B": "A novel chemical compound that provides a technical solution to a disease",
+        "C": "The mere discovery of a new form of a known substance that does not enhance efficacy",
+        "D": "An improved formulation that demonstrates significantly enhanced therapeutic efficacy"
+      },
+      "correct": "C",
+      "explanation": "C is correct because Section 26.2 of R.A. 8293 (as amended by R.A. 9502) explicitly excludes from inventive step the mere discovery of a new form or new property of a known substance which does not result in the enhancement of the known efficacy. A is wrong because a process employing at least one new reactant that results in a new product is an explicit statutory exception that IS patentable. B and D are wrong because novel compounds and improved formulations showing enhanced efficacy possess inventive step and are patentable.\n\n**Basis:** R.A. No. 8293, Sec. 26.2, as amended by R.A. No. 9502. Checked against the official text: https://lawphil.net/statutes/repacts/ra2008/ra_9502_2008.html."
+    },
+    {
+      "id": "nq-0048",
+      "type": "mcq",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Technology Transfer Arrangements (TTAs) include contracts involving the transfer of systematic knowledge or licensing of intellectual property, EXCEPT:",
+      "choices": {
+        "A": "Franchise agreements involving patented food preparation machinery",
+        "B": "Licensing agreements for customized enterprise resource planning software",
+        "C": "Licensing of computer software developed for the mass market",
+        "D": "Technical assistance agreements between a foreign parent and local subsidiary"
+      },
+      "correct": "C",
+      "explanation": "C is correct because Section 4.2 of R.A. 8293 explicitly excludes computer software developed for the mass market from the definition of Technology Transfer Arrangements. A, B, and D are wrong because franchise agreements, customized software licenses, and technical assistance agreements fall squarely within the statutory definition of TTAs.\n\n**Basis:** R.A. No. 8293, Sec. 4.2. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+    },
+    {
+      "id": "nq-0049",
+      "type": "mcq",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "A patent holder filed an infringement suit and requested an injunction against a competitor. While the case was pending, the 20-year term of the patent expired. How should the court rule on the prayer for injunction?",
+      "choices": {
+        "A": "Grant the injunction to punish the competitor for past infringement",
+        "B": "Deny or dissolve the injunction because patent exclusive rights cease upon term expiration",
+        "C": "Extend the injunction for an additional five years as equitable relief",
+        "D": "Convert the injunction into an automatic criminal conviction"
+      },
+      "correct": "B",
+      "explanation": "B is correct pursuant to Philippine Pharmawealth, Inc. v. Pfizer, Inc. (G.R. No. 167715), which ruled that upon expiration of the patent term, the exclusive right to monopolize the invention ceases, and there is no longer any legal basis to issue or maintain an injunction. A and C are wrong because injunctions protect existing rights and cannot extend beyond statutory term limits. D is wrong because civil courts cannot convert injunctions into criminal convictions.\n\n**Basis:** Philippine Pharmawealth, Inc. v. Pfizer, Inc., G.R. No. 167715, November 17, 2010; R.A. No. 8293, Sec. 54. Checked against the official text: https://lawphil.net/judjuris/juri2010/nov2010/gr_167715_2010.html, https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+    },
+    {
+      "id": "nq-0050",
+      "type": "mcq",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Which test is currently favored in Philippine jurisprudence as the primary and controlling test to resolve trademark confusing similarity disputes in infringement cases?",
+      "choices": {
+        "A": "The Holistic Test",
+        "B": "The Dominancy Test",
+        "C": "The Idem Sonans Test exclusively",
+        "D": "The Genericide Test"
+      },
+      "correct": "B",
+      "explanation": "B is correct because Philippine jurisprudence explicitly favors the Dominancy Test as the primary and controlling test in determining trademark confusing similarity. A is wrong because the Supreme Court has declared the Holistic Test abandoned for determining the resemblance of marks (as restated in Ginebra San Miguel, Inc. v. Director of the Bureau of Trademarks). C is wrong because Idem Sonans focuses only on aural similarity. D is wrong because genericide is a ground for cancellation, not a test for similarity.\n\n**Basis:** R.A. No. 8293, Sec. 155.1; Ginebra San Miguel, Inc. v. Director of the Bureau of Trademarks, G.R. No. 196372, August 9, 2022. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html, https://lawphil.net/judjuris/juri2022/aug2022/gr_196372_2022.html."
+    },
+    {
+      "id": "nq-0051",
+      "type": "mcq",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Under the multi-factor analysis established in jurisprudence, does the mere fact that two products belong to the same Nice Classification make them automatically related goods?",
+      "choices": {
+        "A": "Yes, products in the same Nice Class are automatically related by operation of law",
+        "B": "No, classification is for administration; goods in the same class are not automatically related",
+        "C": "Yes, provided both products are sold within the Philippines",
+        "D": "No, unless both products are registered under the exact same owner"
+      },
+      "correct": "B",
+      "explanation": "B is correct because Kensonic v. Uni-Line and Taiwan Kolin Corp. v. Kolin Electronics held that the classification of goods under the Nice Agreement is primarily for administrative convenience and does not automatically make goods related. Factors like nature, purpose, cost, and channels of trade must be evaluated. A is wrong because classification alone is not decisive. C and D are wrong because geographic sale or owner identity does not define product relatedness.\n\n**Basis:** Kensonic, Inc. v. Uni-Line Multi-Resources, Inc. (Phil.), G.R. Nos. 211820-21 & 211834-35, June 6, 2018; Taiwan Kolin Corp., Ltd. v. Kolin Electronics Co., Inc., G.R. No. 209843, March 25, 2015. Checked against the official text: https://lawphil.net/judjuris/juri2018/jun2018/gr_211820-21_2018.html, https://lawphil.net/judjuris/juri2015/mar2015/gr_209843_2015.html."
+    },
+    {
+      "id": "nq-0052",
+      "type": "mcq",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "How are trade names acquired and protected under Philippine intellectual property law and the Paris Convention?",
+      "choices": {
+        "A": "Solely through registration with the Intellectual Property Office",
+        "B": "By adoption and use, and protected prior to or without registration",
+        "C": "Through mandatory registration with the Department of Trade and Industry only",
+        "D": "By filing a Declaration of Actual Use within 3 years from adoption"
+      },
+      "correct": "B",
+      "explanation": "B is correct because Section 165.2(a) of R.A. 8293 explicitly provides that trade names are protected prior to or without registration against any unlawful act. Fredco v. Harvard also confirms trade names of foreign nationals under the Paris Convention are protected without registration. A is wrong because registration is required for trademarks, not trade names. C is wrong because DTI registration does not govern IP Code trade name protection. D is wrong because DAU applies to trademarks.\n\n**Basis:** R.A. No. 8293, Sec. 165.2(a); Fredco Manufacturing Corp. v. President and Fellows of Harvard College, G.R. No. 185917, June 1, 2011. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html, https://lawphil.net/judjuris/juri2011/jun2011/gr_185917_2011.html."
+    },
+    {
+      "id": "nq-0053",
+      "type": "mcq",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Why did the Supreme Court delete the award of exemplary damages in San Miguel Pure Foods v. Foodsphere despite holding the defendant liable for unfair competition?",
+      "choices": {
+        "A": "Exemplary damages are prohibited by statutory text in all intellectual property suits",
+        "B": "The plaintiff failed to first establish entitlement to actual, moral, or temperate damages",
+        "C": "Unfair competition cases carry exclusively administrative fines before the IPO",
+        "D": "Exemplary damages require a prior criminal conviction of the defendant"
+      },
+      "correct": "B",
+      "explanation": "B is correct because under Article 2234 of the Civil Code and San Miguel Pure Foods v. Foodsphere, exemplary damages cannot be recovered as a matter of right and require the plaintiff to first prove entitlement to moral, temperate, or compensatory damages. The Court also noted that where the dispositive portion (fallo) and the body of a decision conflict, the fallo prevails, and the Court of Appeals' fallo awarded no exemplary damages; and since actual damages were unproven, there was no basis for them. A, C, and D are incorrect statements of law.\n\n**Basis:** Civil Code, Arts. 2233 and 2234; San Miguel Pure Foods Co., Inc. v. Foodsphere, Inc., G.R. Nos. 217781 & 217788, June 20, 2018. Checked against the official text: https://lawphil.net/judjuris/juri2018/jun2018/gr_217781_2018.html, https://lawphil.net/statutes/repacts/ra1949/ra_386_1949.html."
+    },
+    {
+      "id": "nq-0054",
+      "type": "mcq",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Why did the Supreme Court hold in Joaquin v. Drilon that a television dating game show format is NOT protected by copyright?",
+      "choices": {
+        "A": "The format was not registered with the National Library",
+        "B": "A game show format is an idea, concept, or system, which is non-copyrightable",
+        "C": "Television broadcasts are subject strictly to patent law protection",
+        "D": "Dating shows are contrary to public order and moral standards"
+      },
+      "correct": "B",
+      "explanation": "B is correct because under Section 175 of R.A. 8293 and Joaquin v. Drilon, copyright does not extend to any idea, procedure, system, method or operation, concept, principle or discovery; and Joaquin held that the format or mechanics of a television show is not among the works the law protects. A is wrong because copyright exists from the moment of creation without registration. C and D are legally incorrect.\n\n**Basis:** R.A. No. 8293, Secs. 172 and 175; Joaquin v. Drilon, G.R. No. 108946, January 28, 1999. Checked against the official text: https://lawphil.net/judjuris/juri1999/jan1999/gr_108946_1999.html, https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+    },
+    {
+      "id": "nq-0055",
+      "type": "mcq",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Who owns the copyright over a literary work created by an employee during office hours?",
+      "choices": {
+        "A": "Always the employer, because the work was created during company hours",
+        "B": "The employer, if the creation is the result of performance of regularly-assigned duties",
+        "C": "Always the employee, because copyright inherently vests in the human author",
+        "D": "Jointly owned by the employer and employee in equal shares"
+      },
+      "correct": "B",
+      "explanation": "B is correct because Section 178.3(b) of R.A. 8293 provides that copyright belongs to the employer if the work is the result of the performance of regularly-assigned duties, unless agreed otherwise. If the work is NOT part of regular duties, it belongs to the employee under Section 178.3(a) even if created during office hours. A, C, and D are inaccurate statements of the rule.\n\n**Basis:** R.A. No. 8293, Sec. 178.3. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+    },
+    {
+      "id": "nq-0056",
+      "type": "mcq",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "What is the legal effect of selling or transferring the physical material object in which a copyrighted work is embodied?",
+      "choices": {
+        "A": "It automatically transfers the underlying copyright to the buyer",
+        "B": "It creates a joint copyright ownership between seller and buyer",
+        "C": "The copyright remains distinct from the physical object and does not transfer",
+        "D": "It extinguishes all moral and economic rights of the author"
+      },
+      "correct": "C",
+      "explanation": "C is correct because Section 181 of R.A. 8293 (Distinct Object Rule) explicitly states that the copyright is distinct from the physical material object. Transfer of the physical copy does not of itself transfer copyright or any rights in the work. A, B, and D misstate the statutory rule.\n\n**Basis:** R.A. No. 8293, Sec. 181, as amended by R.A. No. 10372. Checked against the official text: https://lawphil.net/statutes/repacts/ra2013/ra_10372_2013.html."
+    },
+    {
+      "id": "nq-0057",
+      "type": "mcq",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "What is the statutory period of copyright protection for a work of applied art?",
+      "choices": {
+        "A": "Life of the author plus 50 years after death",
+        "B": "50 years from the date of publication",
+        "C": "25 years from the date of making",
+        "D": "10 years from registration, renewable once"
+      },
+      "correct": "C",
+      "explanation": "C is correct because Section 213.4 of R.A. 8293 explicitly mandates that in the case of works of applied art, the protection shall be for a period of twenty-five (25) years from the date of making. A applies to general literary/artistic works (Section 213.1). B is the rule for photographic and audiovisual works (Sections 213.5 and 213.6). D is not a copyright term at all.\n\n**Basis:** R.A. No. 8293, Sec. 213.4. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+    },
+    {
+      "id": "nq-0058",
+      "type": "mcq",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Within what period must a civil action for damages arising from copyright infringement be filed?",
+      "choices": {
+        "A": "Within 1 year from discovery of the infringement",
+        "B": "Within 4 years from the time the cause of action arose",
+        "C": "Within 10 years based on a statutory obligation",
+        "D": "At any time during the lifetime of the copyright author"
+      },
+      "correct": "B",
+      "explanation": "B is correct because Section 226 of R.A. 8293 explicitly provides that no damages may be recovered under the Act after four (4) years from the time the cause of action arose. A, C, and D state incorrect prescriptive periods.\n\n**Basis:** R.A. No. 8293, Sec. 226, as amended by R.A. No. 10372. Checked against the official text: https://lawphil.net/statutes/repacts/ra2013/ra_10372_2013.html."
+    },
+    {
+      "id": "nq-0059",
+      "type": "fillblank",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Section 21. Patentable Inventions. - Any technical solution of a problem in any field of human activity which is ____, involves an ____ and is industrially applicable shall be Patentable.",
+      "fullText": "Section 21. Patentable Inventions. - Any technical solution of a problem in any field of human activity which is new, involves an inventive step and is industrially applicable shall be Patentable.",
+      "explanation": "Section 21 names the three requisites of patentability: the invention must be new (novelty), involve an inventive step, and be industrially applicable.\n\n**Basis:** R.A. No. 8293, Sec. 21. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+    },
+    {
+      "id": "nq-0060",
+      "type": "fillblank",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Section 122. How Marks are Acquired. - The rights in a mark shall be acquired through ____ made validly in accordance with the provisions of this law.",
+      "fullText": "Section 122. How Marks are Acquired. - The rights in a mark shall be acquired through registration made validly in accordance with the provisions of this law.",
+      "explanation": "Under Section 122, rights in a mark are acquired through valid registration, not through prior use (Zuneca Pharmaceutical v. Natrapharm, Inc., G.R. No. 211850, September 8, 2020). A prior user in good faith may still continue using the mark under Section 159.1.\n\n**Basis:** R.A. No. 8293, Sec. 122; Zuneca Pharmaceutical v. Natrapharm, Inc., G.R. No. 211850, September 8, 2020. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html, https://lawphil.net/judjuris/juri2020/sep2020/gr_211850_2020.html."
     }
   ]
 }
