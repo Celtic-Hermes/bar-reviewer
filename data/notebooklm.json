@@ -1361,6 +1361,630 @@
       "prompt": "Section 122. How Marks are Acquired. - The rights in a mark shall be acquired through ____ made validly in accordance with the provisions of this law.",
       "fullText": "Section 122. How Marks are Acquired. - The rights in a mark shall be acquired through registration made validly in accordance with the provisions of this law.",
       "explanation": "Under Section 122, rights in a mark are acquired through valid registration, not through prior use (Zuneca Pharmaceutical v. Natrapharm, Inc., G.R. No. 211850, September 8, 2020). A prior user in good faith may still continue using the mark under Section 159.1.\n\n**Basis:** R.A. No. 8293, Sec. 122; Zuneca Pharmaceutical v. Natrapharm, Inc., G.R. No. 211850, September 8, 2020. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html, https://lawphil.net/judjuris/juri2020/sep2020/gr_211850_2020.html."
+    },
+    {
+      "id": "nq-0061",
+      "type": "essay",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Engr. Castro devised a modified bamboo scaffold connector that dramatically simplifies assembly on construction sites. He applied for a utility model registration with the Intellectual Property Office. The IPO examiner rejected the application on the sole ground that the connector lacked an inventive step because any experienced construction worker could easily deduce the modification. Engr. Castro appealed, arguing that utility models do not require an inventive step to be registrable. Is Engr. Castro's contention legally correct?",
+      "suggestedAnswer": {
+        "answer": "Yes, Engr. Castro's contention is legally correct.",
+        "legalBasis": "Under Section 109.1 of R.A. 8293, an invention qualifies for registration as a utility model if it is new and industrially applicable; Section 21 applies to utility models except for its reference to inventive step as a condition of protection.",
+        "application": "Here, Engr. Castro's modified bamboo connector was rejected solely for lacking an inventive step. Because the statute only mandates novelty and industrial applicability for utility models, the examiner improperly imposed an inventive step requirement that applies exclusively to invention patents.",
+        "conclusion": "Therefore, the IPO examiner erred in rejecting the application for lack of an inventive step; that is not a requirement for a utility model.\n\n**Basis:** R.A. No. 8293, Sec. 109.1. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+      },
+      "keyPoints": [
+        "Utility models require only novelty and industrial applicability under Section 109.1 of R.A. 8293.",
+        "An inventive step is NOT a statutory requirement for utility model registration.",
+        "Rejection based on lack of an inventive step is legally erroneous."
+      ]
+    },
+    {
+      "id": "nq-0062",
+      "type": "essay",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "PharmaGlobal holds a Philippine patent for a life-saving cardiovascular medication, which it sells locally at P500 per tablet. A local medical foundation purchased authentic packages of the exact same patented medication directly from an authorized distributor in India—where PharmaGlobal lawfully sells it at P50 per tablet—and imported them into the Philippines for affordable distribution to public hospitals. PharmaGlobal sued the foundation for patent infringement, claiming its Philippine patent gives it exclusive distribution rights within the country. Will the infringement suit prosper?",
+      "suggestedAnswer": {
+        "answer": "No, PharmaGlobal's patent infringement suit will not prosper.",
+        "legalBasis": "Under Section 72.1 of R.A. 8293, as amended by R.A. 9502 (the Cheaper Medicines Act), the owner of a patent cannot prevent the use of a patented product put on the market by the owner or with his express consent; and with regard to drugs and medicines, this limitation applies once the drug or medicine has been introduced in the Philippines or anywhere else in the world by the patent owner, or by any party authorized to use the invention. The right to import such drugs and medicines is available to any government agency or any private third party.",
+        "application": "PharmaGlobal lawfully manufactured and placed the cardiovascular drug on the Indian market through its authorized distributor. By virtue of international exhaustion, PharmaGlobal's patent rights over those specific imported medicine units were exhausted upon their initial lawful sale abroad, allowing parallel importation into the Philippines.",
+        "conclusion": "Consequently, the foundation's parallel importation of authentic patented drugs does not constitute patent infringement.\n\n**Basis:** R.A. No. 8293, Sec. 72.1, as amended by R.A. No. 9502. Checked against the official text: https://lawphil.net/statutes/repacts/ra2008/ra_9502_2008.html."
+      },
+      "keyPoints": [
+        "Section 72.1 of R.A. 8293 (as amended by R.A. 9502) adopts the doctrine of international exhaustion for drugs and medicines.",
+        "For drugs and medicines, patent rights are limited once the drug has been introduced anywhere in the world by the patent owner or by a party authorized to use the invention.",
+        "Parallel importation of genuine patented medicines from foreign markets is legal and non-infringing."
+      ]
+    },
+    {
+      "id": "nq-0063",
+      "type": "essay",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Inventor Mateo published a detailed scientific paper describing his newly invented solar cell efficiency controller in an international academic journal on March 1, 2024. Encouraged by positive peer reviews, Mateo filed a patent application for the solar controller with the Philippine IPO on November 15, 2024. The patent examiner cited Mateo's own March 2024 journal article as prior art that destroyed the novelty of his invention. Mateo contends his application is timely under the statutory grace period. Is Mateo's invention patentable?",
+      "suggestedAnswer": {
+        "answer": "Yes, Mateo's invention remains novel and patentable.",
+        "legalBasis": "Under Section 25 of R.A. 8293, disclosure of information contained in a patent application shall not prejudice the applicant on the ground of lack of novelty if the disclosure was made during the twelve (12) months preceding the filing date or the priority date of the application, provided the disclosure was made by the inventor himself or by a third party who obtained the information directly or indirectly from the inventor.",
+        "application": "Mateo published his journal article on March 1, 2024, and filed his Philippine patent application on November 15, 2024—within 8 and a half months. Because the public disclosure was made by the inventor himself within the 12-month grace period, it is non-prejudicial and does not destroy the novelty of his invention.",
+        "conclusion": "The examiner erred, and Mateo's invention retains its novelty under Section 25.\n\n**Basis:** R.A. No. 8293, Sec. 25. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+      },
+      "keyPoints": [
+        "Section 25 of R.A. 8293 provides a 12-month grace period for non-prejudicial public disclosures.",
+        "Disclosures made by the inventor within 12 months prior to filing date do not destroy novelty.",
+        "Academic publication by the inventor 8.5 months before application filing is protected."
+      ]
+    },
+    {
+      "id": "nq-0064",
+      "type": "essay",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "A major public health crisis broke out in the Philippines due to a sudden outbreak of a viral respiratory disease. Global Meds owns the sole Philippine patent for the only effective antiviral treatment but refused to grant local licenses or scale up local supply, resulting in severe drug shortages and exorbitant prices. The Secretary of Health requested the Director General of the IPO to issue a compulsory license to a qualified local pharmaceutical manufacturer. Global Meds opposed, claiming compulsory licenses cannot be issued without the patentee's consent. Can the IPO issue a compulsory license over Global Meds' patent?",
+      "suggestedAnswer": {
+        "answer": "Yes, the IPO can issue a compulsory license over Global Meds' patent even without its consent.",
+        "legalBasis": "Under Section 93 of R.A. 8293, as amended by R.A. 9502, the Director General of the IPO may grant a license to exploit a patented invention, even without the agreement of the patent owner, in favor of any person who has shown his capability to exploit the invention, on grounds that include: national emergency or other circumstances of extreme urgency (93.1); where the public interest, in particular health, so requires (93.2); and where the demand for patented drugs and medicines is not being met to an adequate extent and on reasonable terms, as determined by the Secretary of Health (93.6).",
+        "application": "The viral respiratory outbreak constitutes a national health emergency and public urgency. Global Meds' refusal to license or supply the market at reasonable volume and price directly justifies government intervention via compulsory licensing under R.A. 9502.",
+        "conclusion": "The IPO Director General may grant the compulsory license, in favor of a manufacturer that has shown its capability to exploit the invention.\n\n**Basis:** R.A. No. 8293, Sec. 93.1, 93.2 and 93.6, as amended by R.A. No. 9502. Checked against the official text: https://lawphil.net/statutes/repacts/ra2008/ra_9502_2008.html."
+      },
+      "keyPoints": [
+        "Compulsory licensing under Section 93 of R.A. 8293 does not require patent owner consent.",
+        "National emergency, public health necessity, and extreme urgency are statutory grounds for compulsory licensing.",
+        "R.A. 9502 strengthened compulsory licensing powers for public health needs."
+      ]
+    },
+    {
+      "id": "nq-0065",
+      "type": "essay",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "In 2000, SoftCo registered the mark 'FLUFFY' for synthetic cotton batting. Over the next two decades, the term 'fluffy' became universally used by the general public, trade publications, and competitors as the common generic name for all synthetic batting materials, regardless of manufacturer. SoftCo took no action to police or preserve the distinctiveness of its mark. In 2024, a competitor filed a petition with the IPO to cancel the registration of 'FLUFFY'. SoftCo opposed, arguing that a validly registered trademark can never be canceled once it becomes well-known. Rule on the petition for cancellation.",
+      "suggestedAnswer": {
+        "answer": "The petition for cancellation should be granted, and the mark 'FLUFFY' canceled.",
+        "legalBasis": "Under Section 151.1(b) of R.A. 8293, a registered mark may be canceled at any time if it becomes the generic name for the goods or services, or a portion thereof, for which it was registered (Doctrine of Genericide). The test is the primary significance of the registered mark to the relevant public, rather than purchaser motivation.",
+        "application": "SoftCo allowed 'FLUFFY' to lose its trademark significance through widespread, unpoliced generic usage, causing it to become the common descriptive name for synthetic cotton batting in the trade and public mind. Once a mark undergoes genericide, registration can no longer be maintained.",
+        "conclusion": "The IPO must cancel the trademark registration for 'FLUFFY'.\n\n**Basis:** R.A. No. 8293, Sec. 151.1(b). Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+      },
+      "keyPoints": [
+        "Section 151.1(b) permits trademark cancellation when a registered mark becomes generic (genericide).",
+        "A mark loses trademark protection when it becomes the common descriptive name for a product category.",
+        "Failure to police a mark leads to loss of distinctiveness and cancellation."
+      ]
+    },
+    {
+      "id": "nq-0066",
+      "type": "essay",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Nestle owns the registered trademark 'NAN' for infant milk formula. A local manufacturer filed an application to register the trademark 'NANNY' for its own line of powdered infant milk. Nestle filed an opposition, alleging confusing similarity. The local manufacturer argued that 'NANNY' contains two syllables and extra letters, making it visually distinct from 'NAN'. Is there confusing similarity between the two marks?",
+      "suggestedAnswer": {
+        "answer": "Yes, there is confusing similarity between the marks 'NAN' and 'NANNY'.",
+        "legalBasis": "Under Section 123.1(d) of R.A. 8293, a mark cannot be registered if it nearly resembles a registered mark for the same or closely related goods as to be likely to deceive or cause confusion. In Societe des Produits Nestle, S.A. v. Dy (G.R. No. 172276), the Court applied the Dominancy Test, which focuses on the main, prevalent or essential features of the marks, and took into account the aural effects of the words, in holding that 'NANNY' is confusingly similar to 'NAN'.",
+        "application": "Applying the Dominancy Test and the doctrine of Idem Sonans, 'NANNY' incorporates the entirety of Nestle's dominant mark 'NAN' as its prefix. When spoken in commercial transactions for infant milk, the two marks produce nearly identical sound impressions, creating a high likelihood of consumer confusion.",
+        "conclusion": "The opposition must be sustained and the registration of 'NANNY' denied.\n\n**Basis:** R.A. No. 8293, Sec. 123.1(d); Societe des Produits Nestle, S.A. v. Dy, Jr., G.R. No. 172276, August 8, 2010. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html, https://lawphil.net/judjuris/juri2010/aug2010/gr_172276_2010.html."
+      },
+      "keyPoints": [
+        "Dominancy Test and Idem Sonans rule assess phonetic/aural similarity under Section 123.1(d).",
+        "Incorporating an established mark as the dominant prefix creates confusing similarity.",
+        "Societe des Produits Nestle v. Dy held 'NANNY' confusingly similar to 'NAN' under the Dominancy Test."
+      ]
+    },
+    {
+      "id": "nq-0067",
+      "type": "essay",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "BrandCo owns the registered trademark 'VELOX' for sports footwear. Wanting to raise capital, BrandCo assigned the trademark 'VELOX' to Footwear Inc. under a written contract without transferring its shoe manufacturing factory, machinery, or business goodwill. The assignment was duly recorded with the IPO. Later, a creditor challenged the assignment, claiming that under Philippine law, a trademark assignment is void unless accompanied by the transfer of the entire business enterprise. Is the assignment of the trademark valid?",
+      "suggestedAnswer": {
+        "answer": "Yes, the assignment of the trademark 'VELOX' is valid.",
+        "legalBasis": "Under Section 149.1 of R.A. 8293, an application for registration of a mark, or its registration, may be assigned or transferred with or without the transfer of the business using the mark. The assignment must be in writing and signed by the parties (149.3), and it has no effect against third parties until recorded at the IPO (149.5). It is void only if it is liable to mislead the public as to the nature, source, manufacturing process, characteristics or suitability of the goods (149.2).",
+        "application": "Unlike a trade name, which can change ownership only with the transfer of the enterprise (Section 165.4), a mark may be assigned without the business using it. BrandCo's assignment was in writing and recorded with the IPO, and nothing in the facts shows it would mislead the public, so it is valid and effective against third parties such as the creditor.",
+        "conclusion": "The creditor's challenge fails, and the trademark assignment to Footwear Inc. is legally sound.\n\n**Basis:** R.A. No. 8293, Secs. 149 and 165.4. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+      },
+      "keyPoints": [
+        "Trademarks may be assigned with or without the business enterprise under Section 149.1 of R.A. 8293.",
+        "A written assignment has effect against third parties once recorded with the IPO (Section 149.5).",
+        "Contrast with trade names, which cannot be assigned independently of the business enterprise."
+      ]
+    },
+    {
+      "id": "nq-0068",
+      "type": "essay",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Composer Carlos wrote the musical score, and Lyricist Lina wrote the lyrics, for an original musical play entitled 'Himig'. They worked together with the joint intention of combining their contributions into a single unified work. Three years after the play's premiere, Lina individually licensed her lyrics to a textbook publisher to be printed as poetry in a high school literature book, without obtaining Carlos' consent or sharing royalties. Carlos sued Lina for copyright infringement. Is Lina liable for copyright infringement?",
+      "suggestedAnswer": {
+        "answer": "No, Lina is not liable for copyright infringement.",
+        "legalBasis": "Under Section 178.2 of R.A. 8293, co-authors of a work of joint authorship are the original owners of the copyright, and in the absence of agreement their rights are governed by the rules on co-ownership. If, however, the work consists of parts that can be used separately and the author of each part can be identified, the author of each part is the original owner of the copyright in the part that he has created.",
+        "application": "The lyrics and the musical score of 'Himig' can be used separately, and each author is identified: Carlos wrote the music and Lina the lyrics. Lina is therefore the owner of the copyright in her lyrics, and licensing her own lyrics to a publisher is an exercise of her own right, not an infringement of Carlos' copyright in the music.",
+        "conclusion": "Lina did not infringe Carlos' copyright by licensing her own lyrics.\n\n**Basis:** R.A. No. 8293, Sec. 178.2. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+      },
+      "keyPoints": [
+        "Co-authors own the copyright in a joint work, governed by co-ownership rules absent agreement (Section 178.2).",
+        "Where parts can be used separately and each author is identified, each author owns the copyright in his own part.",
+        "Using or licensing one's own separable part is not infringement of the co-author's part."
+      ]
+    },
+    {
+      "id": "nq-0070",
+      "type": "essay",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Sculptor Mario created a marble statue and sold all his economic copyright rights to Art Museum Inc. under a formal contract. Two years later, Art Museum Inc. publicly displayed the statue but replaced Mario's engraved signature on the base with the name of a famous donor, and painted bright pink polka dots over the marble surface without Mario's knowledge. Mario filed an action for violation of his moral rights. Art Museum Inc. moved to dismiss, claiming Mario surrendered all rights when he assigned his economic copyright. Decide.",
+      "suggestedAnswer": {
+        "answer": "Art Museum Inc.'s motion to dismiss must be denied; Mario's action for moral rights violation will prosper.",
+        "legalBasis": "Under Section 193 of R.A. 8293, the author of a work has moral rights independently of the economic rights or of any assignment or license of them, including the right to require that the authorship of the work be attributed to him (193.1) and the right to object to any distortion, mutilation or other modification of, or other derogatory action in relation to, his work which would be prejudicial to his honor or reputation (193.3). Under Section 198, as amended by R.A. 10372, the right of attribution lasts during the author's lifetime and in perpetuity after his death, the other moral rights are coterminous with the economic rights, and moral rights are not assignable or subject to license.",
+        "application": "Removing Mario's name violates his statutory right of attribution (Section 193.1), and painting polka dots over the marble sculpture distorts his artistic creation, infringing his right to object to prejudicial modification (Section 193.3). Selling economic rights does not strip Mario of these moral protections.",
+        "conclusion": "Art Museum Inc. is liable for violating Mario's moral rights under Section 193.\n\n**Basis:** R.A. No. 8293, Sec. 193; Sec. 198, as amended by R.A. No. 10372. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html, https://lawphil.net/statutes/repacts/ra2013/ra_10372_2013.html."
+      },
+      "keyPoints": [
+        "Moral rights under Section 193 of R.A. 8293 are independent of economic rights and survive assignment.",
+        "Right of attribution prohibits removing or altering the author's name on the work.",
+        "Right of integrity allows the author to object to prejudicial distortion or mutilation."
+      ]
+    },
+    {
+      "id": "nq-0071",
+      "type": "essay",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "SoftWare Store purchased 100 legitimate boxed retail copies of an OS operating system software. SoftWare Store set up a commercial rental business renting out these physical software installation discs to computer repair shops for P200 per day. SoftWare Store contends that under the first sale doctrine, purchasing authentic physical copies exhausted the copyright owner's distribution rights, allowing unrestricted rental. The software developer sued SoftWare Store for copyright infringement. Who is correct?",
+      "suggestedAnswer": {
+        "answer": "The software developer is correct; SoftWare Store is liable for copyright infringement.",
+        "legalBasis": "Under Section 177.4 of R.A. 8293, the copyright owner has the exclusive right to carry out, authorize or prevent the rental of the original or a copy of, among others, an audiovisual or cinematographic work, a work embodied in a sound recording, or a computer program, irrespective of the ownership of the original or the copy which is the subject of the rental. By contrast, the distribution right in Section 177.3 covers only the first public distribution of each copy.",
+        "application": "While the first sale doctrine exhausts general resale rights for physical goods, Section 177.4 creates an explicit statutory exception for computer software and audiovisual works. Commercial rental of standalone software without the copyright owner's consent violates exclusive rental rights.",
+        "conclusion": "SoftWare Store committed copyright infringement by engaging in unauthorized commercial rental.\n\n**Basis:** R.A. No. 8293, Secs. 177.3 and 177.4. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+      },
+      "keyPoints": [
+        "Section 177.4 of R.A. 8293 grants exclusive commercial rental rights over computer programs and audiovisual works.",
+        "Commercial rental rights survive the first sale of genuine software copies.",
+        "Unauthorized commercial rental of software constitutes copyright infringement."
+      ]
+    },
+    {
+      "id": "nq-0072",
+      "type": "essay",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Singer Clara performed a live acoustic concert at a private auditorium. Radio Station XYZ set up directional microphones outside the venue without Clara's knowledge, recorded the live acoustic performance, and broadcast it over commercial radio stations nationwide. Radio Station XYZ argued that Clara had no copyright in the songs because she was merely a performer, not the songwriter. Clara sued Radio Station XYZ for damages. Does Clara have a cause of action?",
+      "suggestedAnswer": {
+        "answer": "Yes, Clara has a direct cause of action for violation of her Performers' Rights.",
+        "legalBasis": "Under Section 203 of R.A. 8293, performers enjoy exclusive rights (neighboring rights) independent of songwriter copyrights. Specifically, Section 203.1 grants performers the exclusive right to authorize the broadcasting, communication to the public, and fixation of their live performances.",
+        "application": "Radio Station XYZ recorded and broadcast Clara's live acoustic performance without her authorization. Although Clara did not compose the underlying songs, her live performance is independently protected under Section 203.",
+        "conclusion": "Radio Station XYZ violated Clara's performers' rights, making it liable for damages.\n\n**Basis:** R.A. No. 8293, Sec. 203.1. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+      },
+      "keyPoints": [
+        "Performers enjoy independent neighboring rights under Section 203 of R.A. 8293.",
+        "Broadcasting or fixating live performances without performer consent is prohibited.",
+        "Performers' rights exist independently of underlying song copyright ownership."
+      ]
+    },
+    {
+      "id": "nq-0073",
+      "type": "essay",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "TechCorp (a foreign franchisor) entered into a licensing agreement with LocalCo (a Philippine licensee) for patented food processing technology. Clause A of the contract prohibited LocalCo from exporting the processed food products outside the Philippines, while Clause B required LocalCo to purchase all raw packaging materials exclusively from TechCorp's designated overseas supplier at fixed prices. LocalCo challenged these clauses before the IPO Documentation, Information and Technology Transfer Bureau (DITTB). Are Clauses A and B enforceable?",
+      "suggestedAnswer": {
+        "answer": "No, Clauses A and B are prohibited technology transfer terms and are unenforceable.",
+        "legalBasis": "Under Section 87 of R.A. 8293, except in the exceptional cases under Section 91, certain clauses in technology transfer arrangements are deemed prima facie to have an adverse effect on competition and trade, including those that oblige the licensee to acquire raw materials and other goods from a specific source (87.1), and those that prohibit the licensee from exporting the licensed product unless justified to protect the licensor's legitimate interest, such as exports to countries where exclusive licenses have already been granted (87.8). Under Section 92, non-conformance with Sections 87 and 88 automatically renders the technology transfer arrangement unenforceable, unless it is approved and registered with the Documentation, Information and Technology Transfer Bureau under Section 91.",
+        "application": "Clause A bars LocalCo from exporting, with nothing in the facts showing a legitimate interest such as exclusive licenses already granted abroad. Clause B forces LocalCo to buy its raw packaging materials from a specific source. Both are prohibited clauses under Section 87, and the arrangement has not been approved as an exceptional case under Section 91.",
+        "conclusion": "Clauses A and B are prohibited, and their inclusion renders the technology transfer arrangement unenforceable under Section 92 unless it is approved and registered with the DITTB under Section 91.\n\n**Basis:** R.A. No. 8293, Secs. 87.1, 87.8, 91 and 92. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+      },
+      "keyPoints": [
+        "Section 87 of R.A. 8293 lists clauses deemed prima facie adverse to competition and trade.",
+        "Requiring purchases from a specific source (87.1) and unjustified export bans (87.8) are prohibited clauses.",
+        "Under Section 92, such clauses render the arrangement unenforceable unless approved under Section 91."
+      ]
+    },
+    {
+      "id": "nq-0074",
+      "type": "essay",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Luzon Weavers manufactures handwoven shawls in Laguna using synthetic thread. To boost sales, Luzon Weavers attached labels stating 'Authentic Handwoven Yakan Tapestry - Made in Basilan, Mindanao' onto every shawl, capitalizing on the high reputation of indigenous Yakan weavers. Luzon Weavers did not copy any registered trademark. Indigenous Yakan weaving cooperatives sued Luzon Weavers for unfair competition under the IP Code. Luzon Weavers defended that unfair competition requires copying a registered trademark. Rule on the defense.",
+      "suggestedAnswer": {
+        "answer": "Luzon Weavers' defense is invalid; it is liable for unfair competition.",
+        "legalBasis": "Under Section 168.1 of R.A. 8293, a person who has identified his goods in the mind of the public has a property right in that goodwill whether or not a registered mark is employed, and passing off one's goods as those of the one who established that goodwill is unfair competition (168.2). Separately, Section 169.1(b) makes liable to a civil action for damages and injunction any person who, in commercial advertising or promotion, uses a false designation of origin or misrepresents the geographic origin of his goods.",
+        "application": "Luzon Weavers labeled synthetic shawls made in Laguna as authentic Yakan tapestries made in Basilan, riding on the goodwill of Yakan weavers. Neither unfair competition nor a false designation of origin requires copying a registered trademark: the label itself misrepresents the goods' geographic origin and source.",
+        "conclusion": "The defense fails: no registered mark is needed, and the false label makes Luzon Weavers liable under the IP Code's rules on unfair competition and false designation of origin (Sections 168 and 169.1).\n\n**Basis:** R.A. No. 8293, Secs. 168.1, 168.2 and 169.1(b). Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+      },
+      "keyPoints": [
+        "Unfair competition protects goodwill whether or not a registered mark is employed (Section 168.1).",
+        "Section 169.1(b) gives a civil action against false designations or misrepresentations of geographic origin.",
+        "Copying a registered trademark is not required for either."
+      ]
+    },
+    {
+      "id": "nq-0075",
+      "type": "essay",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "University Library owned a single fragile copy of a rare out-of-print 1920 historical monograph. To prevent complete physical loss, the library, which is not run for profit, made one photocopy of it to keep in its collection for reference, since copies are no longer available from the publisher. The publisher's heir sued the library for copyright infringement, demanding statutory damages. Is University Library liable for copyright infringement?",
+      "suggestedAnswer": {
+        "answer": "No, University Library is not liable for copyright infringement.",
+        "legalBasis": "Under Section 188.1 of R.A. 8293, as amended by R.A. 10372, a library or archive whose activities are not for profit may, without the authorization of the author or copyright owner, make a limited number of copies of a work by reprographic reproduction, as may be necessary to fulfill its mandate, where (a) the work by reason of its fragile character or rarity cannot be lent to users in its original form, or (c) the copy is made to preserve and, if necessary, replace a copy, and copies are not available with the publisher.",
+        "application": "University Library is not run for profit; the monograph is rare and fragile, and copies are no longer available from the publisher. Making a photocopy to preserve it and keep it available for reference falls within Section 188.1.",
+        "conclusion": "The reproduction is permitted under Section 188.1, so the library is not liable.\n\n**Basis:** R.A. No. 8293, Sec. 188.1, as amended by R.A. No. 10372. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html, https://lawphil.net/statutes/repacts/ra2013/ra_10372_2013.html."
+      },
+      "keyPoints": [
+        "Non-profit libraries and archives may make limited reprographic copies without the owner's authorization (Section 188.1).",
+        "Allowed for fragile or rare works that can't be lent, and to preserve or replace a copy unavailable from the publisher.",
+        "The library exception is Section 188; Section 189 is about back-up copies of computer programs."
+      ]
+    },
+    {
+      "id": "nq-0076",
+      "type": "mcq",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "What is the statutory term of protection for an Industrial Design registration in the Philippines, including all permissible renewals?",
+      "choices": {
+        "A": "7 years from filing date, non-renewable",
+        "B": "5 years from filing date, renewable for two consecutive 5-year periods (total 15 years)",
+        "C": "10 years from filing date, renewable indefinitely every 10 years",
+        "D": "25 years from date of creation, non-renewable"
+      },
+      "correct": "B",
+      "explanation": "B is correct under Section 118 of R.A. 8293, which provides that an industrial design registration is valid for 5 years from filing date and may be renewed for two consecutive 5-year terms (maximum 15 years total). A describes Utility Models (Sec. 109.3). C resembles a trademark registration, which lasts ten years and may be renewed for periods of ten years (Secs. 145 and 146). D describes Works of Applied Art under Copyright (Sec. 213.4).\n\n**Basis:** R.A. No. 8293, Secs. 118.1 and 118.2. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+    },
+    {
+      "id": "nq-0077",
+      "type": "mcq",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "What is the duration of protection for a Utility Model registration under Philippine intellectual property law?",
+      "choices": {
+        "A": "7 years from the filing date of the application, without renewal",
+        "B": "5 years from filing date, renewable once for 5 years",
+        "C": "20 years from the filing date, subject to annual maintenance fees",
+        "D": "10 years from the date of registration, renewable indefinitely"
+      },
+      "correct": "A",
+      "explanation": "A is correct because Section 109.3 of R.A. 8293 explicitly mandates that a utility model registration shall expire, without any possibility of renewal, at the end of the seventh year after the date of the filing of the application, without any possibility of renewal. B applies to industrial designs. C applies to invention patents. D applies to trademarks.\n\n**Basis:** R.A. No. 8293, Sec. 109.3. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+    },
+    {
+      "id": "nq-0078",
+      "type": "mcq",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "A trademark registration issued under R.A. 8293 remains effective for what duration, and what is required to maintain its validity?",
+      "choices": {
+        "A": "20 years from filing date, renewable upon paying annual dues",
+        "B": "10 years from registration date, renewable for 10-year periods provided Declarations of Actual Use are filed",
+        "C": "5 years from registration date, non-renewable",
+        "D": "50 years after the death of the trademark owner"
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** Under Section 145 of R.A. 8293, a certificate of registration remains in force for ten (10) years, provided the registrant files a declaration of actual use (or shows valid reasons for non-use) within one year from the fifth anniversary of the registration; under Section 146, it may be renewed for periods of ten (10) years. **A is wrong:** marks have no 20-year term (that is a patent's term, which is not renewable). **C and D are wrong:** they state terms the law does not provide.\n\n**Basis:** R.A. No. 8293, Secs. 145 and 146. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+    },
+    {
+      "id": "nq-0079",
+      "type": "mcq",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "What is the legal effect if a trademark registrant does not display a notice of registration, such as the words \"Registered Mark\" or the letter R in a circle, with the mark?",
+      "choices": {
+        "A": "The trademark registration becomes automatically void ab initio",
+        "B": "The owner cannot recover profits or damages unless the infringer acted knowing the imitation was likely to confuse, and that knowledge is not presumed without notice or actual knowledge of the registration",
+        "C": "The owner is barred from filing any criminal action for unfair competition",
+        "D": "The mark becomes generic immediately"
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** Under Section 158 of R.A. 8293, the owner of a registered mark cannot recover profits or damages in an infringement suit unless the acts were committed with knowledge that the imitation is likely to cause confusion, mistake or deception. That knowledge is presumed if the registrant displays \"Registered Mark\" or the letter R within a circle with the mark, or if the defendant had actual notice of the registration. **A is wrong:** the registration stays valid. **C is wrong:** Section 158 limits only the recovery of profits and damages. **D is wrong:** a mark becomes generic only through how the public uses it (Section 151.1(b)), not through a missing notice.\n\n**Basis:** R.A. No. 8293, Sec. 158. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+    },
+    {
+      "id": "nq-0080",
+      "type": "mcq",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "What is the term of copyright protection for anonymous or pseudonymous works under Philippine intellectual property law?",
+      "choices": {
+        "A": "Life of the author plus 50 years",
+        "B": "50 years from the date the work was lawfully published",
+        "C": "25 years from the date of creation",
+        "D": "10 years from first public broadcast"
+      },
+      "correct": "B",
+      "explanation": "B is correct because Section 213.3 of R.A. 8293 provides that for anonymous or pseudonymous works, copyright lasts for 50 years from the date on which the work was lawfully published (or from making if unpublished). A applies to named authors (Sec. 213.1). C applies to applied art (Sec. 213.4). D is incorrect.\n\n**Basis:** R.A. No. 8293, Sec. 213.3. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+    },
+    {
+      "id": "nq-0081",
+      "type": "mcq",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Under Section 213.5 of R.A. 8293, how long does copyright protection last for photographic works?",
+      "choices": {
+        "A": "Life of the photographer plus 50 years",
+        "B": "50 years from publication, or 50 years from making if unpublished",
+        "C": "25 years from the date of making",
+        "D": "10 years from registration"
+      },
+      "correct": "B",
+      "explanation": "B is correct under Section 213.5 of R.A. 8293, which specifies that protection for photographic works shall be 50 years from publication (or 50 years from making if unpublished). A applies to general literary/artistic works. C applies to works of applied art. D is not a term the law provides.\n\n**Basis:** R.A. No. 8293, Sec. 213.5. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+    },
+    {
+      "id": "nq-0082",
+      "type": "mcq",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Which of the following is a MANDATORY provision required in all Technology Transfer Arrangements under Philippine IP law?",
+      "choices": {
+        "A": "That foreign law shall govern contract interpretation",
+        "B": "That venue for all arbitration shall be strictly in the franchisor's home country",
+        "C": "That Philippine law shall govern interpretation and venue shall be proper courts in the Philippines",
+        "D": "That the licensee must assign all improvements to the franchisor without compensation"
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** Section 88.1 of R.A. 8293 requires voluntary license contracts to provide that Philippine law governs their interpretation and that, in case of litigation, the venue is the proper court in the place where the licensee has its principal office. **A is wrong:** it contradicts Section 88.1. **B is wrong:** if the arrangement provides for arbitration, the venue must be the Philippines or a neutral country (Section 88.3). **D is wrong:** obliging the licensee to transfer improvements to the licensor for free is a prohibited clause (Section 87.6).\n\n**Basis:** R.A. No. 8293, Secs. 87.6 and 88. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+    },
+    {
+      "id": "nq-0083",
+      "type": "mcq",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Which administrative body within the Intellectual Property Office has original jurisdiction over petitions for the cancellation of a patent or trademark?",
+      "choices": {
+        "A": "Bureau of Patents",
+        "B": "Bureau of Legal Affairs",
+        "C": "Documentation, Information and Technology Transfer Bureau",
+        "D": "Office of the Director General directly"
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** Under Section 10.1 of R.A. 8293, the Bureau of Legal Affairs hears and decides oppositions to the registration of marks, cancellation of trademarks, and (subject to Section 64) cancellation of patents, utility models and industrial designs, as well as petitions for compulsory licensing. **A, C and D are wrong:** the law gives these cancellation cases to the Bureau of Legal Affairs, not to the Bureau of Patents, the Documentation, Information and Technology Transfer Bureau, or the Director General in the first instance.\n\n**Basis:** R.A. No. 8293, Sec. 10.1. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+    },
+    {
+      "id": "nq-0084",
+      "type": "mcq",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Under the First Sale Doctrine in copyright law, what right of the copyright owner is exhausted with respect to a specific physical copy after its first lawful sale?",
+      "choices": {
+        "A": "Right of public performance",
+        "B": "Right of first distribution to the public",
+        "C": "Right of commercial rental for computer software",
+        "D": "Right to create derivative works"
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** Section 177.3 of R.A. 8293 gives the copyright owner the exclusive right over the first public distribution of the original and each copy of the work by sale or other transfer of ownership; once a copy has been lawfully sold, that right over that copy has been used up. **A and D are wrong:** public performance (177.6) and transformation of the work (177.2) are separate rights that a sale of a copy does not affect. **C is wrong:** the rental right over computer programs applies irrespective of the ownership of the copy rented (177.4).\n\n**Basis:** R.A. No. 8293, Secs. 177.2, 177.3, 177.4 and 177.6. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+    },
+    {
+      "id": "nq-0086",
+      "type": "mcq",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Independently of economic rights, how long do a performer's moral rights (attribution and integrity) persist under Philippine law?",
+      "choices": {
+        "A": "During the lifetime of the performer and 50 years after death",
+        "B": "50 years from the date of performance",
+        "C": "Until the expiration of the underlying musical composition copyright",
+        "D": "25 years from first public broadcast"
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** Under Section 204.2 of R.A. 8293, the rights granted to a performer are maintained and exercised for fifty (50) years after his death, by his heirs (and in default of heirs, the government). **B is wrong:** fifty years from the end of the year of the performance is the term of a performer's economic rights over an unrecorded performance (Section 215.1). **C and D are wrong:** the law ties these rights to the performer, not to the song's copyright or to a broadcast.\n\n**Basis:** R.A. No. 8293, Secs. 204 and 215.1 (Sec. 204.1 as amended by R.A. No. 10372). Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html, https://lawphil.net/statutes/repacts/ra2013/ra_10372_2013.html."
+    },
+    {
+      "id": "nq-0088",
+      "type": "mcq",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "What is the term of protection for rights of broadcasting organizations under Philippine copyright law?",
+      "choices": {
+        "A": "Twenty (20) years from the date the broadcast took place",
+        "B": "Fifty (50) years from the date the broadcast took place",
+        "C": "Twenty-five (25) years from the date of making",
+        "D": "Ten (10) years, renewable"
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** Under Section 215.2 of R.A. 8293, in case of broadcasts the term is twenty (20) years from the date the broadcast took place. **B is wrong:** fifty years applies to performers and producers of sound recordings (Section 215.1). **C is wrong:** twenty-five years from making is the term for works of applied art (Section 213.4). **D is wrong:** related rights are not renewable.\n\n**Basis:** R.A. No. 8293, Sec. 215.2. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+    },
+    {
+      "id": "nq-0089",
+      "type": "fillblank",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "Section 172. Literary and Artistic Works. - 172.1. Literary and artistic works, hereinafter referred to as \"works\", are ____ intellectual creations in the literary and artistic domain protected from the moment of their ____ and shall include in particular:",
+      "fullText": "Section 172. Literary and Artistic Works. - 172.1. Literary and artistic works, hereinafter referred to as \"works\", are original intellectual creations in the literary and artistic domain protected from the moment of their creation and shall include in particular:",
+      "explanation": "The two blanks are \"original\" and \"creation\": a work must be an original intellectual creation, and it is protected from the moment it is created. Section 172.2 adds that works are protected by the sole fact of their creation, whatever their mode or form of expression, content, quality or purpose.\n\n**Basis:** R.A. No. 8293, Sec. 172. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
+    },
+    {
+      "id": "nq-0090",
+      "type": "fillblank",
+      "status": "draft",
+      "notebooklm": true,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "caseIds": [],
+      "source": {
+        "caseTitle": "NotebookLM"
+      },
+      "prompt": "121.1. \"Mark\" means any ____ sign capable of distinguishing the goods (trademark) or services (service mark) of an enterprise and shall include a stamped or marked container of goods;",
+      "fullText": "121.1. \"Mark\" means any visible sign capable of distinguishing the goods (trademark) or services (service mark) of an enterprise and shall include a stamped or marked container of goods;",
+      "explanation": "The blank is \"visible\": the IP Code defines a mark as a visible sign that can distinguish one enterprise's goods (a trademark) or services (a service mark) from others', including a stamped or marked container of goods.\n\n**Basis:** R.A. No. 8293, Sec. 121.1. Checked against the official text: https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html."
     }
   ]
 }
