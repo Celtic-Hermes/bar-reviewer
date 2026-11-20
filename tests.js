@@ -49,7 +49,7 @@ function testTypeLabel(n, type) {
 }
 
 function testViewLabel(view) {
-  if (view === "notes") { return " · My class notes"; }
+  if (view === "notes") { return " · Notes"; }
   if (view === "notebooklm") { return " · NotebookLM"; }
   return "";
 }

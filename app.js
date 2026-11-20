@@ -57,9 +57,9 @@ function cleanView(view) {
   return SOURCE_VIEWS.indexOf(view) === -1 ? "official" : view;
 }
 
-// " · My class notes" / " · NotebookLM" after a screen's subject line (nothing in the official view).
+// " · Notes" / " · NotebookLM" after a screen's subject line (nothing in the official view).
 function viewSuffix() {
-  if (sourceView === "notes") { return " · My class notes"; }
+  if (sourceView === "notes") { return " · Notes"; }
   if (sourceView === "notebooklm") { return " · NotebookLM"; }
   return "";
 }
