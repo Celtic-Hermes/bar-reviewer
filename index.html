@@ -102,6 +102,13 @@
         </div>
       </header>
 
+      <!-- About these questions: shown until she taps Got it (app.js showAiNotice; barReviewer.aiNotice.v1, this device only).
+           The same text stays in Settings → About. -->
+      <section class="card ai-notice" id="ai-notice" aria-labelledby="ai-notice-title" hidden>
+        <h2 class="ai-notice-title" id="ai-notice-title">About these questions</h2>
+        <p class="ai-notice-text">The questions, answers and case summaries in this app were written with the help of AI. They are study drafts: they may contain mistakes, have not been checked by a lawyer, and are not legal advice. Always check the official text (the decision, the rule or the law) before relying on an answer.</p>
+        <button type="button" class="btn btn-secondary btn-small ai-notice-btn" id="ai-notice-ok">Got it</button>
+      </section>
       <div class="quick-links">
         <button type="button" class="quick-link" id="my-notes-btn"><span data-icon="pen"></span> My notes</button>
         <button type="button" class="quick-link" id="schedule-btn"><span data-icon="calendar"></span> Study Schedule</button>
@@ -266,6 +273,12 @@
           </div>
         </div>
         <p class="backup-message" id="backup-message" role="status" hidden></p>
+      </section>
+      <h2 class="label settings-group">About</h2>
+      <section class="card about-card">
+        <p class="setting-label">About these questions</p>
+        <p class="ai-notice-text">The questions, answers and case summaries in this app were written with the help of AI. They are study drafts: they may contain mistakes, have not been checked by a lawyer, and are not legal advice. Always check the official text (the decision, the rule or the law) before relying on an answer.</p>
+        <p class="ai-notice-text">Fill-in-the-blank items and the full rules are the rule's own text as published; check the official source for later amendments.</p>
       </section>
     </section>
 
@@ -510,7 +523,6 @@
       <p class="tests-note test-dropped" id="test-dropped" role="status" hidden></p>
       <p class="subject" id="test-subject"></p>
       <p class="topic" id="test-topic"></p>
-      <p class="status-unverified status-badge" id="test-draft-badge" hidden>Unverified</p>
       <p class="notes-badge" id="test-notes-badge" hidden></p>
 
       <section class="card test-question-card">
@@ -582,7 +594,6 @@
         <p class="feedback-title review-result" id="review-result"></p>
         <p class="subject" id="review-subject"></p>
         <p class="topic" id="review-topic"></p>
-        <p class="status-unverified status-badge" id="review-draft-badge" hidden>Unverified</p>
         <p class="notes-badge" id="review-notes-badge" hidden></p>
         <p class="notes-source review-source" id="review-source" hidden></p>
 
@@ -619,7 +630,6 @@
         <div>
           <p class="subject" id="subject"></p>
           <p class="topic" id="topic"></p>
-          <p class="status-unverified status-badge" id="draft-badge" hidden>Unverified</p>
           <!-- Questions from class notes, not official (app.js showClassNotesLabel) -->
           <p class="notes-badge" id="notes-badge" hidden>From class notes</p>
           <p class="notes-source" id="notes-source" hidden></p>
@@ -748,6 +758,8 @@
 
       <!-- "Read the case" buttons for the cases this question is based on -->
       <div class="question-cases" id="question-cases"></div>
+      <!-- A quiet reminder (app.js showQuestion sets it: AI-assisted draft, or rule text as published) -->
+      <p class="ai-footnote" id="question-ai-note"></p>
     </section>
 
     <!-- SCREEN 5: One case -->
@@ -756,7 +768,6 @@
       <p class="subject" id="case-subject"></p>
       <h1 class="screen-title case-title" id="case-name"></h1>
       <p class="case-number" id="case-number"></p>
-      <p class="status-unverified status-badge" id="case-draft-badge" hidden>Unverified</p>
 
       <section class="card case-part">
         <h2 class="label">Facts</h2>
@@ -813,6 +824,7 @@
         <div class="subject-list" id="case-questions"></div>
         <p class="card empty-note list-empty" id="case-questions-empty" hidden>No questions linked to this case yet.</p>
       </div>
+      <p class="ai-footnote">AI-assisted study draft. Check the official text.</p>
       <div class="reset-row"><button type="button" class="reset-btn" id="case-reset" hidden>Reset this case</button></div>
       <!-- Wide screens only: her notes and the linked questions move here (see app.js) -->
       <aside class="case-side" id="case-side" hidden><div class="case-side-inner" id="case-side-inner"></div></aside>
@@ -824,7 +836,6 @@
       <p class="subject" id="rule-subject"></p>
       <h1 class="screen-title" id="rule-title"></h1>
       <p class="case-number" id="rule-number"></p>
-      <p class="status-unverified status-badge" id="rule-draft-badge" hidden>Unverified</p>
       <!-- Her own notes on this rule (saved on this phone as she types) -->
       <section class="card notes-card rule-notes-card">
         <h2 class="label" id="rule-notes-label">My notes</h2>

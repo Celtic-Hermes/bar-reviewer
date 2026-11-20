@@ -1086,7 +1086,7 @@ function makeCaseRow(theCase, number) {
   open.type = "button";
   open.className = "case-row-open";
   open.appendChild(caseTitle(theCase.name));
-  open.appendChild(cardDetail([theCase.grNumber, theCase.year].filter(Boolean).join(" · "), !showsUnverified(theCase)));
+  open.appendChild(cardDetail([theCase.grNumber, theCase.year].filter(Boolean).join(" · ")));
   open.addEventListener("click", function () { openCase(theCase, "subject"); });
   top.append(num, open);
   const hasSomethingToReset = questions.some(function (q) {
@@ -1344,7 +1344,7 @@ function tagMark(question) {
 }
 
 // One tappable card for a question in a list: her tag color (if any), the start of the
-// question, then its type and topic, and "Unverified" if nobody has checked it yet.
+// question, then its type and topic.
 function makeQuestionCard(question, onTap) {
   const card = document.createElement("button");
   card.className = "subject-card question-card";
@@ -1356,7 +1356,7 @@ function makeQuestionCard(question, onTap) {
   // A short preview, cut at the end of a whole word.
   text.textContent = prompt.length > 110 ? prompt.slice(0, 110).replace(/\s+\S*$/, "") + "…" : prompt;
   const where = [isClassNote(question) ? "From class notes" : (isNotebookLM(question) ? "From NotebookLM" : null), questionTypeLabel(question), question.topic].filter(Boolean).join(" · ");
-  text.appendChild(cardDetail(where, !showsUnverified(question)));
+  text.appendChild(cardDetail(where));
   const arrow = document.createElement("span");
   arrow.className = "subject-arrow";
   arrow.textContent = "›";
@@ -1435,7 +1435,6 @@ function openRule(rule, cameFrom) {
   document.getElementById("rule-subject").textContent = where.filter(Boolean).join(" · ");
   document.getElementById("rule-title").textContent = rule.title || "Untitled rule";
   document.getElementById("rule-number").textContent = rule.number || "";
-  document.getElementById("rule-draft-badge").hidden = !showsUnverified(rule);
   document.getElementById("rule-reset").hidden = ruleResetQuestions(rule).length === 0;
   showNotesBox(document.getElementById("rule-notes"), rule.id);
 
@@ -3084,8 +3083,7 @@ function openNotes() {
   showScreen("screen-notes");
 }
 
-// One card: the case or rule name, the start of her note, then "Case · Nov 18, 2026"
-// (and the Unverified label, like every case or rule card).
+// One card: the case or rule name, the start of her note, then "Case · Nov 18, 2026".
 // "from" (optional): where the opened case or rule's Back goes ("notes" = My notes, "study" = the Study tab).
 function makeNoteCard(entry, from) {
   const cameFrom = from || "notes";
@@ -3107,7 +3105,7 @@ function makeNoteCard(entry, from) {
   const when = updated && !isNaN(updated)
     ? updated.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" }) : "";
   const label = (entry.kind === "case" ? "Case" : "Rule") + (when ? " · " + when : "");
-  name.appendChild(cardDetail(label, !showsUnverified(entry.item)));
+  name.appendChild(cardDetail(label));
   const arrow = document.createElement("span");
   arrow.className = "subject-arrow";
   arrow.textContent = "›";
@@ -3166,44 +3164,50 @@ function caseTitle(name) {
   return title;
 }
 
-// The "Unverified" label for a question or case nobody has checked yet. Its look lives
-// only in the ".status-unverified" rule in style.css, so every place that uses this
-// (and the two labels with that class in index.html) always matches.
-function unverifiedLabel() {
-  const label = document.createElement("span");
-  label.className = "status-unverified";
-  label.textContent = "Unverified";
-  return label;
-}
-
-// ONE shared rule for the "Unverified" label: rule text (a fill-in-the-blank item, or a rule
-// with an ID like "rule-0001") is the section's own wording, copied from the rule itself, so it
-// never shows the label. Its "status" in the data files stays as it is; only the label is hidden.
-// Essays, multiple-choice questions and case digests (written for the app) still show it.
+// There is no per-item "Unverified" label anymore (the builder found the red pill unpleasant).
+// Instead: the "About these questions" notice on Home (until dismissed) and in Settings → About,
+// and a quiet line at the bottom of the question and case screens (aiNoteFor). Every item's
+// "status" stays in the data ("draft" until a person checks it). These two helpers still say
+// which items are rule text (the rule's own wording) and which are unchecked drafts.
 function isRuleText(item) {
   return !!item && (item.type === "fillblank" || (typeof item.id === "string" && item.id.indexOf("rule-") === 0));
 }
 
-// Should this question, case or rule show the red "Unverified" label?
 function showsUnverified(item) {
   return !!item && item.status !== "verified" && !isRuleText(item);
 }
 
-// The small detail line on a card: some text, then the "Unverified" label if "verified" is false
-// (callers pass !showsUnverified(item)).
-function cardDetail(text, verified) {
+// The quiet line at the bottom of the question screen.
+function aiNoteFor(question) {
+  if (question && question.type === "fillblank" && viewOf(question) === "official") {
+    return "Rule text as published. Check the official source for amendments.";
+  }
+  return "AI-assisted study draft. Check the official text.";
+}
+
+// The small detail line on a card ("G.R. No. 123 · 2020", "Rule · number", "Case · date").
+function cardDetail(text) {
   const detail = document.createElement("span");
   detail.className = "card-detail";
   if (text) { detail.append(text); }
-  if (!verified) {
-    if (text) { detail.append(" "); }
-    detail.appendChild(unverifiedLabel());
-  }
   return detail;
 }
 
-// One tappable card for a case in any case list: its title, then "G.R. No. · year" and
-// the "Unverified" label if the case isn't verified.
+// ---------- "About these questions" (Home, until she taps Got it) ----------
+const AI_NOTICE_KEY = "barReviewer.aiNotice.v1";  // dismissed on this device (not in backups)
+function aiNoticeDismissed() {
+  try { return localStorage.getItem(AI_NOTICE_KEY) === "dismissed"; } catch (e) { return false; }
+}
+function showAiNotice() {
+  document.getElementById("ai-notice").hidden = aiNoticeDismissed();
+}
+document.getElementById("ai-notice-ok").addEventListener("click", function () {
+  try { localStorage.setItem(AI_NOTICE_KEY, "dismissed"); } catch (e) { /* not remembered: it comes back next time */ }
+  document.getElementById("ai-notice").hidden = true;
+});
+showAiNotice();
+
+// One tappable card for a case in any case list: its title, then "G.R. No. · year".
 // "extra" (optional): more text for the detail line, e.g. the subject in search results.
 function makeCaseCard(theCase, onTap, extra) {
   const card = document.createElement("button");
@@ -3211,7 +3215,7 @@ function makeCaseCard(theCase, onTap, extra) {
   const name = document.createElement("span");
   name.className = "subject-name";
   name.appendChild(caseTitle(theCase.name));
-  name.appendChild(cardDetail([theCase.grNumber, theCase.year, extra].filter(Boolean).join(" · "), !showsUnverified(theCase)));
+  name.appendChild(cardDetail([theCase.grNumber, theCase.year, extra].filter(Boolean).join(" · ")));
   const arrow = document.createElement("span");
   arrow.className = "subject-arrow";
   arrow.textContent = "›";
@@ -3377,8 +3381,9 @@ function showQuestion() {
   document.getElementById("fb-level").hidden = true;
   document.getElementById("fb-new-row").hidden = true;  // "New blanks": fill in the blank only
   document.getElementById("fb-level-note").hidden = true;
-  // Anything not marked "verified" (including a missing status) shows the draft label.
-  document.getElementById("draft-badge").hidden = !showsUnverified(question);
+  // The quiet line at the bottom: an official fill-in-the-blank item is the rule's own published
+  // wording; everything else (essays, multiple choice, class notes, NotebookLM) is an AI-assisted draft.
+  document.getElementById("question-ai-note").textContent = aiNoteFor(question);
   showClassNotesLabel(question);
   showBookmark(question);
   showTag(question);
@@ -5283,14 +5288,14 @@ function searchCatalog(query) {
   return found.map(function (f) { return f.entry; });
 }
 
-// A result card for a rule (cases use makeCaseCard): title, citation · subject, Unverified label.
+// A result card for a rule (cases use makeCaseCard): title, then "Rule · citation · subject".
 function makeRuleCard(rule, onTap) {
   const card = document.createElement("button");
   card.className = "subject-card";
   const name = document.createElement("span");
   name.className = "subject-name";
   name.append(rule.title || "Untitled rule");
-  name.appendChild(cardDetail(["Rule", rule.number, rule.subject].filter(Boolean).join(" · "), !showsUnverified(rule)));
+  name.appendChild(cardDetail(["Rule", rule.number, rule.subject].filter(Boolean).join(" · ")));
   const arrow = document.createElement("span");
   arrow.className = "subject-arrow";
   arrow.textContent = "›";
@@ -5453,8 +5458,6 @@ function openCase(theCase, cameFrom) {
   document.getElementById("case-name").textContent = theCase.name || "Untitled case";
   document.getElementById("case-number").textContent =
     [theCase.grNumber, theCase.year].filter(Boolean).join(" · ");
-  // Anything not marked "verified" (including a missing status) shows the draft label.
-  document.getElementById("case-draft-badge").hidden = !showsUnverified(theCase);
   // Not on a case opened from the middle of a question: the round in progress stays as it is.
   document.getElementById("case-reset").hidden = cameFrom === "question" || caseResetQuestions(theCase).length === 0;
   setHighlightableText(document.getElementById("case-facts"), caseText(theCase.facts), theCase.id + ":facts");
@@ -5631,7 +5634,7 @@ function showCaseQuestions(theCase) {
     const prompt = plainText(question.prompt).replace(/\s+/g, " ").trim();
     // A short preview, cut at the end of a whole word.
     text.textContent = prompt.length > 110 ? prompt.slice(0, 110).replace(/\s+\S*$/, "") + "…" : prompt;
-    text.appendChild(cardDetail(question.type === "mcq" ? "Multiple choice" : "Essay", !showsUnverified(question)));
+    text.appendChild(cardDetail(question.type === "mcq" ? "Multiple choice" : "Essay"));
     const arrow = document.createElement("span");
     arrow.className = "subject-arrow";
     arrow.textContent = "›";

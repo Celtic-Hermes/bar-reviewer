@@ -795,7 +795,7 @@ button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
 /* Taking a test (#screen-test): the practice question's look (.choice, .prompt, .fb-input, .question-nav) */
 .test-dropped { margin: 0 0 var(--space-3); }
 #screen-test .topic { margin-bottom: var(--space-3); }
-#screen-test .status-badge, #screen-test .notes-badge { margin: 0 var(--space-2) var(--space-3) 0; }
+#screen-test .notes-badge { margin: 0 var(--space-2) var(--space-3) 0; }
 .test-question-card .fb-level-note { margin: var(--space-3) 0 0; }
 /* Flag and Question map buttons (one row under the top bar) */
 .test-tools { display: flex; flex-wrap: wrap; gap: var(--space-2); margin: 0 0 var(--space-3); }
@@ -845,7 +845,7 @@ button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
 .review-flagged { font-size: 15px; font-weight: 600; color: var(--primary-text); }
 .review-source { margin: var(--space-1) 0 var(--space-3); }
 #screen-test-review .topic { margin-bottom: var(--space-3); }
-#screen-test-review .status-badge, #screen-test-review .notes-badge { margin: 0 var(--space-2) var(--space-3) 0; }
+#screen-test-review .notes-badge { margin: 0 var(--space-2) var(--space-3) 0; }
 .choice-tag { display: block; margin: 0 0 var(--space-1); font-size: 13px; font-weight: 700; color: var(--text); }
 .choice.right .choice-tag { color: var(--got); }
 .choice.wrong .choice-tag { color: var(--missed); }
@@ -1069,28 +1069,19 @@ button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
   opacity: 0;
 }
 
-/* ---------- "Unverified" label: ONE shared look ---------- */
-/* On every question and case nobody has checked yet (status not "verified"): the label on
-   the question and case screens, and the small one on case cards and linked-question cards.
-   All are built with unverifiedLabel() in app.js (or have this class in index.html).
-   To change how the label looks anywhere, change only this rule. */
-.status-unverified {
-  display: inline-block;
-  padding: var(--space-1) var(--space-3);
-  border-radius: var(--radius-pill);
-  background: var(--missed);
-  color: var(--card);   /* white on red (dark text on the lighter red in dark mode) */
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 1.3;
-}
-/* Where it sits: under the topic on a question, under the G.R. number on a case. */
-.status-badge { margin: var(--space-2) 0 0; }
 /* Questions from class notes (data/class-notes.json): a soft label, never "Official". */
 .notes-badge { display: inline-block; margin: var(--space-2) 0 0; padding: var(--space-1) var(--space-3); border-radius: var(--radius-pill); background: var(--primary-soft); color: var(--text); font-size: 13px; font-weight: 700; }
 .notes-source { margin: var(--space-1) 0 0; font-size: 13px; line-height: 1.4; color: var(--muted); }
-/* Inside a card's small detail line: a bit smaller to fit the line. */
-.card-detail .status-unverified { padding: 1px var(--space-2); font-size: 12px; }
+
+/* ---------- "About these questions" (Home until dismissed, Settings → About) and the quiet footer line ----------
+   No per-item label: one calm notice, on the shared colors (a soft tint, never red). */
+.ai-notice { background: color-mix(in srgb, var(--primary-soft) 30%, var(--card)); border-color: var(--primary-edge); margin-bottom: var(--space-section); }
+.ai-notice-title { margin: 0 0 var(--space-2); font-size: 17px; font-weight: 700; color: var(--heading); }
+.ai-notice-text { margin: 0 0 var(--space-3); font-size: 15px; line-height: 1.5; color: var(--text); }
+.about-card .ai-notice-text:last-child { margin-bottom: 0; }
+.about-card .setting-label { margin-bottom: var(--space-2); }
+.ai-notice-btn { width: auto; margin: 0; padding-left: var(--space-5); padding-right: var(--space-5); }
+.ai-footnote { margin: var(--space-5) 0 0; font-size: 13px; line-height: 1.4; text-align: center; color: var(--muted); }
 
 /* ---------- Progress bars (the Study Schedule) ---------- */
 .today-bar { height: 10px; border-radius: var(--radius-pill); background: var(--border); overflow: hidden; }
@@ -1099,7 +1090,6 @@ button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
 
 /* ---------- Case screen ---------- */
 .case-number { margin: 0 0 var(--space-1); color: var(--muted); font-weight: 600; }
-#screen-case .status-badge { margin-bottom: var(--space-4); }
 #screen-case .case-number + .card { margin-top: var(--space-4); }
 .source-link { color: var(--primary-text); font-weight: 600; overflow-wrap: anywhere; }
 .source-note { display: block; margin-top: var(--space-2); font-size: 14px; color: var(--muted); overflow-wrap: anywhere; }
@@ -1157,7 +1147,6 @@ a.btn { text-align: center; text-decoration: none; }
   margin: var(--space-5) 0 var(--space-1); text-align: center; white-space: pre-line;
   font-size: 15px; font-weight: 700; letter-spacing: 0.04em; color: var(--text);
 }
-#screen-rule .status-badge { margin-bottom: var(--space-1); }
 #rule-source-card { margin-top: var(--space-4); }
 
 /* ---------- Her notes (case screen, rule screen) ---------- */

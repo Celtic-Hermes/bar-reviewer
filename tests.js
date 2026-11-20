@@ -587,7 +587,6 @@ function showTestQuestion() {
   document.getElementById("test-progress").textContent = "Question " + (test.index + 1) + " of " + test.qIds.length;
   document.getElementById("test-subject").textContent = question.subject;
   document.getElementById("test-topic").textContent = [question.topic, subtopicOf(question)].filter(Boolean).join(" · ");
-  document.getElementById("test-draft-badge").hidden = !showsUnverified(question);
   const badge = document.getElementById("test-notes-badge");
   badge.textContent = sourceLabelOf(question);  // "Cases", "From class notes" or "From NotebookLM"
   badge.hidden = false;
@@ -1164,7 +1163,6 @@ function showReviewParts(test, question, one) {
   const ok = question && (question.type === "mcq" || question.type === "fillblank");
   document.getElementById("review-subject").textContent = ok ? question.subject : test.subject;
   document.getElementById("review-topic").textContent = ok ? [question.topic, subtopicOf(question)].filter(Boolean).join(" · ") : one.g;
-  document.getElementById("review-draft-badge").hidden = !ok || !showsUnverified(question);
   const view = ok ? viewOf(question) : "official";
   const badge = document.getElementById("review-notes-badge");
   badge.textContent = ok ? sourceLabelOf(question) : "";
