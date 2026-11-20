@@ -704,7 +704,6 @@ button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
 #screen-test .topic { margin-bottom: 14px; }
 #screen-test .status-badge, #screen-test .notes-badge { margin: 0 6px 14px 0; }
 .test-question-card .fb-level-note { margin: 10px 0 0; }
-.test-last-note { margin: -4px 0 16px; text-align: center; }
 /* Flag and Question map buttons (one row under the top bar) */
 .test-tools { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 12px; }
 .test-tool-btn {
@@ -714,6 +713,22 @@ button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
 }
 .test-tool-btn.on { background: var(--primary-soft); color: var(--text); border-color: var(--primary); }
 .test-tool-btn[aria-expanded="true"] { border-color: var(--primary); }
+.test-end-btn { margin-left: auto; }  /* End test: on the right of the row */
+/* A finished test's results (#screen-test-results) */
+.test-score-card { text-align: center; }
+.test-score-line { margin: 6px 0 0; text-align: center; }
+.test-breakdown { padding-top: 6px; padding-bottom: 6px; }
+.test-break-row {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 12px; align-items: baseline;
+  padding: 12px 0; border-top: 1px solid var(--border);
+}
+.test-break-row:first-child { border-top: 0; }
+.test-break-name { font-weight: 600; color: var(--heading); overflow-wrap: anywhere; }
+.test-break-value { font-size: 14px; color: var(--muted); white-space: nowrap; }
+.test-break-bar { grid-column: 1 / -1; height: 6px; border-radius: 3px; overflow: hidden; background: color-mix(in srgb, var(--border) 70%, var(--card)); }
+.test-break-bar span { display: block; height: 100%; background: var(--primary); }
+#screen-test-results .btn-primary { margin-bottom: 0; }
+.test-review-note { margin: 8px 0 16px; text-align: center; }
 /* The map: answered = filled, not answered = dashed outline, flagged = a small flag, current = a thick ring */
 .test-map-count { margin: 0 0 12px; font-weight: 600; }
 .test-map-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(44px, 1fr)); gap: 8px; }

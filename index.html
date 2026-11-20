@@ -473,6 +473,7 @@
       <div class="test-tools">
         <button type="button" class="test-tool-btn" id="test-flag" aria-pressed="false"></button>
         <button type="button" class="test-tool-btn" id="test-map-btn" aria-expanded="false" aria-controls="test-map">Question map</button>
+        <button type="button" class="test-tool-btn test-end-btn" id="test-end">End test</button>
       </div>
       <section class="card test-map" id="test-map" aria-label="Question map" hidden>
         <p class="test-map-count" id="test-map-count"></p>
@@ -501,7 +502,32 @@
         <button class="btn btn-secondary" id="test-prev">‹ Previous</button>
         <button class="btn btn-primary" id="test-next">Next ›</button>
       </div>
-      <p class="tests-note test-last-note" id="test-last-note" hidden>This is the last question. Ending the test comes in the next step.</p>
+    </section>
+
+    <!-- SCREEN 2g: A finished test's results (tests.js openTestResults) -->
+    <section id="screen-test-results" hidden>
+      <button class="back-btn" id="test-results-back"><span data-icon="chevron-left"></span> Tests</button>
+      <p class="subject" id="test-results-subject"></p>
+      <h1 class="screen-title">Test results</h1>
+      <p class="screen-subtitle" id="test-results-sub"></p>
+      <p class="tests-note test-dropped" id="test-results-note" role="status" hidden></p>
+
+      <section class="card test-score-card">
+        <p class="big-score" id="test-score"></p>
+        <p class="count-label test-score-line" id="test-score-line"></p>
+      </section>
+      <div class="stat-strip" aria-label="Your answers">
+        <div class="stat-cell"><p class="stat-cell-value" id="test-right">0</p><p class="stat-cell-label">Right</p></div>
+        <div class="stat-cell"><p class="stat-cell-value" id="test-wrong">0</p><p class="stat-cell-label">Wrong</p></div>
+        <div class="stat-cell"><p class="stat-cell-value" id="test-none">0</p><p class="stat-cell-label">Unanswered</p></div>
+      </div>
+
+      <h2 class="label">By topic</h2>
+      <section class="card test-breakdown" id="test-breakdown"></section>
+
+      <button type="button" class="btn btn-primary" id="test-review" disabled>Review answers</button>
+      <p class="tests-note test-review-note">Reviewing each answer comes in the next step.</p>
+      <button type="button" class="btn btn-secondary" id="test-results-done">Back to Tests</button>
     </section>
 
     <!-- SCREEN 3: Practice (one question) -->

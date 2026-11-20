@@ -35,7 +35,8 @@
 //              "index" (the question she's on), "answers" ({ id: "B" } multiple choice, or
 //              { id: { "12": "typed", "14.0": "…" } } fill in the blank: box key -> what she typed),
 //              "flags", "hidden" ({ id: [word numbers hidden] }, fill in the blank), "used" (seconds),
-//              "state" ("open" / "done"),
+//              "state" ("open" / "done"), "counted" (true once her answers went into her progress),
+//              "results" (done only: { id: { "r": "right" / "wrong" / "none", "g": "Topic · Sub-topic" } }),
 //              "finished" (done only) } ]. At most 5 open and 30 done (the newest). See cleanTests.
 //   streakBest: her longest streak of study days ever (kept here, since "daily" only
 //              keeps 400 days)
@@ -279,13 +280,14 @@ function cleanNotes(value) {
 
 // ---------- Her tests (tests.js) ----------
 // progress.tests: a list of tests, each { id, subject, view, made, all, picks, type, level, limit,
-// qIds, index, answers, flags, hidden, used, state, finished }. Only question IDs are stored, never
+// qIds, index, answers, flags, hidden, used, state, finished, results, counted }. Only question IDs are stored, never
 // question text. At most TESTS_OPEN_MAX unfinished ("open") and TESTS_DONE_MAX finished
 // ("done") tests are kept: the newest ones. Anything unusable is dropped; never throws.
 const TESTS_OPEN_MAX = 5;
 const TESTS_DONE_MAX = 30;
 const TEST_TYPES = ["mcq", "fillblank", "both"];      // "both" = multiple choice + fill in the blank
 const TEST_VIEWS = ["official", "notes", "notebooklm"];
+const TEST_RESULTS = ["right", "wrong", "none"];
 const TEST_LIMIT_MAX = 600;                         // minutes (0 = untimed)
 const TEST_QUESTIONS_MAX = 500;
 const TEST_ID = /^t-[a-z0-9]{1,20}$/;
@@ -362,7 +364,21 @@ function cleanTest(t) {
     used: wholeNumberOrZero(t.used),   // seconds of test time used so far
     state: t.state === "done" ? "done" : "open"
   };
-  if (test.state === "done") { test.finished = isIsoDate(t.finished) ? t.finished : t.made; }
+  if (test.state === "done") {
+    test.finished = isIsoDate(t.finished) ? t.finished : t.made;
+    // Each question's result, fixed when she ended the test (so the score never changes later):
+    // r = "right" / "wrong" / "none" (unanswered), g = its topic (and sub-topic) at the time.
+    test.results = {};
+    const saved = (t.results && typeof t.results === "object" && !Array.isArray(t.results)) ? t.results : {};
+    qIds.forEach(function (id) {
+      const one = saved[id];
+      const r = one && TEST_RESULTS.indexOf(one.r) !== -1 ? one.r : "none";
+      test.results[id] = { r: r, g: (one && typeof one.g === "string") ? one.g.slice(0, 300) : "" };
+    });
+  }
+  // True once her answers were added to her progress (streak, daily count, mastery, Review missed):
+  // it can never happen twice.
+  if (t.counted === true) { test.counted = true; }
   return test;
 }
 

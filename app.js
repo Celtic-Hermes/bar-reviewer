@@ -91,7 +91,7 @@ document.addEventListener("touchstart", function () {}, { passive: true });
 // Only one screen is visible at a time.
 function showScreen(id) {
   saveAllNotes();  // leaving a screen with a notes box: save what she typed first
-  ["screen-home", "screen-subject", "screen-subtopics", "screen-topic", "screen-tagged", "screen-tests", "screen-test-create", "screen-test", "screen-question", "screen-results", "screen-case", "screen-rule", "screen-notes", "screen-settings", "screen-schedule", "screen-search", "screen-syllabus", "screen-clarify"].forEach(function (screenId) {
+  ["screen-home", "screen-subject", "screen-subtopics", "screen-topic", "screen-tagged", "screen-tests", "screen-test-create", "screen-test", "screen-test-results", "screen-question", "screen-results", "screen-case", "screen-rule", "screen-notes", "screen-settings", "screen-schedule", "screen-search", "screen-syllabus", "screen-clarify"].forEach(function (screenId) {
     document.getElementById(screenId).hidden = (screenId !== id);
   });
   window.scrollTo(0, 0);
@@ -259,6 +259,9 @@ function rememberSpot() {
   if (shownScreen === "screen-test" && typeof testSpotId === "function") {
     spot.testId = testSpotId();  // the test she's taking (tests.js); its answers live in progress.tests
   }
+  if (shownScreen === "screen-test-results" && typeof testResultsSpotId === "function") {
+    spot.testId = testResultsSpotId();  // the finished test whose results she's looking at
+  }
   if (shownScreen === "screen-syllabus") {
     spot.syllabus = { subject: syllabusView.subject, topic: syllabusView.topic };  // which of its three views she's on
   }
@@ -366,6 +369,14 @@ function putBackSpot(spot) {
   if (spot.screen === "test") {
     if (typeof openTest === "function" && typeof spot.testId === "string") {
       openTest(spot.testId);  // the same question, her answers (all saved in the test); gone: the Tests screen
+    } else {
+      openSubject(currentSubject);
+    }
+    return true;
+  }
+  if (spot.screen === "test-results") {
+    if (typeof openTestResults === "function" && typeof spot.testId === "string") {
+      openTestResults(spot.testId);  // gone (e.g. no longer among the 30 kept): the Tests screen
     } else {
       openSubject(currentSubject);
     }

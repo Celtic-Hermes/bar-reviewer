@@ -6,6 +6,7 @@
 // Step 3: tapping an unfinished test opens it (openTest): one question at a time, answers never
 // shown, every answer and her place saved in the test at once. Nothing counts yet (that's at submit).
 // Step 4: Flag and the question map.
+// Step 5: End test (askEndTest / endTest): grade, count her answers once, show the results.
 // Uses things from app.js: currentSubject, sourceView, questionsFor, topicsFor, subtopicsFor,
 // inSubtopic, subtopicLabel, OTHER_SUBTOPIC, FB_LEVELS, FB_LEVEL_LABELS, countLabel,
 // modeCountLabel, viewSuffix, shuffled, askConfirm, showScreen, openSubject, setIconLabel;
@@ -64,7 +65,8 @@ function makeTestCard(test) {
   const meta2 = document.createElement("span");
   meta2.className = "subject-meta";
   if (test.state === "done") {
-    meta2.textContent = "Finished " + testDate(test.finished);
+    const score = testScore(test);
+    meta2.textContent = "Finished " + testDate(test.finished) + " · " + score.percent + "% (" + score.right + " of " + score.total + ")";
   } else {
     const answered = Object.keys(test.answers).length;
     meta2.textContent = (answered === 0 && test.index === 0)
@@ -78,7 +80,7 @@ function makeTestCard(test) {
   arrow.textContent = "›";
   card.append(name, arrow);
   card.addEventListener("click", function () {
-    if (test.state === "open") { openTest(test.id); }
+    if (test.state === "open") { openTest(test.id); } else { openTestResults(test.id); }
   });
   return card;
 }
@@ -522,8 +524,7 @@ function showTestQuestion() {
 
   showTestTools(test);
   document.getElementById("test-prev").disabled = test.index === 0;
-  document.getElementById("test-next").disabled = isLast;   // End test comes in a later step
-  document.getElementById("test-last-note").hidden = !isLast;
+  document.getElementById("test-next").textContent = isLast ? "End test" : "Next ›";  // the last question: Next ends the test
   showScreen("screen-test");
 }
 
@@ -571,24 +572,7 @@ function showTestPick(letter) {
 // kept in the test, so the same boxes come back after a reload.
 function showTestFillBlank(test, question) {
   const prompt = document.getElementById("test-prompt");
-  prompt.textContent = "";
-  prompt.appendChild(richText(question.prompt, []));  // [] = every word in its own numbered span
-  const words = Array.from(prompt.querySelectorAll(".hl-word"));
-  const answers = blankAnswers(question.prompt, question.fullText);
-  const blankCount = words.filter(function (w) { return BLANK.test(w.textContent); }).length;
-  const usable = Boolean(answers) && answers.length === blankCount;
-  let b = 0;
-  testFb = {
-    words: words.map(function (span) {
-      const text = span.textContent;
-      const isBlank = BLANK.test(text);
-      const info = { span: span, text: text, isBlank: isBlank, inHeading: !!span.closest(".section-heading") };
-      if (isBlank) { info.answer = usable ? answers[b] : null; b += 1; }
-      return info;
-    }),
-    usable: usable,
-    total: usable ? Math.max(1, wordCount(sectionContent(question.fullText))) : 1
-  };
+  testFb = fbWordsIn(prompt, question);
   if (!test.hidden) { test.hidden = {}; }
   let hidden = test.hidden[question.id];
   if (!Array.isArray(hidden)) {
@@ -602,6 +586,29 @@ function showTestFillBlank(test, question) {
   const count = prompt.querySelectorAll(".fb-input").length;
   note.textContent = count + (count === 1 ? " blank" : " blanks") + " to fill · " + (FB_LEVEL_NAMES[test.level] || "");
   note.hidden = false;
+}
+
+// A fill-in-the-blank item's words, drawn into "container" (each word in its own numbered
+// span, as in practice): for each, its text, whether it's a key-term blank and its answer.
+function fbWordsIn(container, question) {
+  container.textContent = "";
+  container.appendChild(richText(question.prompt, []));  // [] = every word in its own numbered span
+  const words = Array.from(container.querySelectorAll(".hl-word"));
+  const answers = blankAnswers(question.prompt, question.fullText);
+  const blankCount = words.filter(function (w) { return BLANK.test(w.textContent); }).length;
+  const usable = Boolean(answers) && answers.length === blankCount;
+  let b = 0;
+  return {
+    words: words.map(function (span) {
+      const text = span.textContent;
+      const isBlank = BLANK.test(text);
+      const info = { span: span, text: text, isBlank: isBlank, inHeading: !!span.closest(".section-heading") };
+      if (isBlank) { info.answer = usable ? answers[b] : null; b += 1; }
+      return info;
+    }),
+    usable: usable,
+    total: usable ? Math.max(1, wordCount(sectionContent(question.fullText))) : 1
+  };
 }
 
 // The words to hide at a level (word numbers), as in practice (pickHiddenWords in app.js).
@@ -734,8 +741,8 @@ function showTestMap(test) {
     if (isFlagged) {
       const mark = document.createElement("span");
       mark.className = "test-cell-flag";
-      mark.appendChild(icon("flag"));
-      cell.appendChild(mark);
+      const svg = icon("flag");
+      if (svg instanceof Node) { mark.appendChild(svg); cell.appendChild(mark); }  // no icon (an old icons.js): the label still says it
     }
     cell.setAttribute("aria-label", "Question " + (i + 1) + ", " + (isAnswered ? "answered" : "not answered") +
       (isFlagged ? ", flagged" : "") + (i === test.index ? ", you are here" : ""));
@@ -775,9 +782,178 @@ document.getElementById("test-prev").addEventListener("click", function () {
 });
 document.getElementById("test-next").addEventListener("click", function () {
   const test = currentTest();
-  if (test) { goToTestQuestion(test.index + 1); }
+  if (!test) { return; }
+  if (test.index >= test.qIds.length - 1) { askEndTest(); } else { goToTestQuestion(test.index + 1); }
 });
 document.getElementById("test-back").addEventListener("click", function () {
   currentTestId = null;
+  openTests();
+});
+
+// ---------- End test, grading and results ----------
+// Grading: multiple choice is right if her pick is the correct letter. Fill in the blank is
+// right only if EVERY box holds the right word (compared like Show answer: sameAnswer).
+// Unanswered = not right. The results are fixed in the test when she ends it, so the score
+// never changes if the content changes later.
+
+// The boxes of a fill-in-the-blank item at the words hidden for it: [{ key, answer }].
+// null if the item can't be checked (its content doesn't line up).
+function testBoxAnswers(question, hidden, level) {
+  const info = fbWordsIn(document.createElement("div"), question);
+  if (!info.usable) { return null; }
+  const boxes = [];
+  hidden.forEach(function (n) {
+    const w = info.words[n];
+    if (!w || (w.inHeading && !w.isBlank)) { return; }
+    if (w.isBlank) {
+      const parts = blankParts(w, level);
+      parts.forEach(function (part, k) {
+        if (part.box) { boxes.push({ key: n + "." + k, answer: splitWord(part.text).middle }); }
+      });
+    } else {
+      boxes.push({ key: String(n), answer: splitWord(w.text).middle });
+    }
+  });
+  return boxes;
+}
+
+function gradeTestQuestion(test, question) {
+  const answer = test.answers[question.id];
+  if (answer === undefined) { return "none"; }
+  if (question.type === "mcq") { return answer === question.correct ? "right" : "wrong"; }
+  const hidden = test.hidden && Array.isArray(test.hidden[question.id]) ? test.hidden[question.id] : null;
+  if (!hidden || !isPlainObject(answer)) { return "wrong"; }
+  const boxes = testBoxAnswers(question, hidden, test.level);
+  if (!boxes || boxes.length === 0) { return "wrong"; }
+  return boxes.every(function (b) { return typeof answer[b.key] === "string" && sameAnswer(answer[b.key], b.answer); })
+    ? "right" : "wrong";
+}
+
+function askEndTest() {
+  const test = currentTest();
+  if (!test) { return; }
+  const unanswered = test.qIds.filter(function (id) { return !testAnswered(test, id); }).length;
+  const parts = [];
+  if (unanswered > 0) { parts.push(unanswered + " unanswered"); }
+  if (test.flags.length > 0) { parts.push(test.flags.length + " flagged"); }
+  const status = parts.length ? parts.join(", ") + "." : "All " + test.qIds.length + " answered.";
+  askConfirm("End this test?", status + " You can't change your answers after this.", "End test").then(function (ok) {
+    if (ok) { endTest(test.id); }
+  });
+}
+
+document.getElementById("test-end").addEventListener("click", askEndTest);
+
+// Grade the test, add each ANSWERED question to her progress once (the same record functions
+// as practice: today's count, streak, latest result and mastery, Review missed, subject
+// totals), and show the results. "counted" is set before anything is recorded, and all of it
+// happens in one go, so a test can never be counted twice.
+function endTest(id) {
+  const test = findTest(id);
+  if (!test || test.state !== "open") { openTests(); return; }
+  dropMissingQuestions(test);
+  const graded = [];
+  test.results = {};
+  test.qIds.forEach(function (qid) {
+    const question = questionById(qid);
+    const r = question ? gradeTestQuestion(test, question) : "none";
+    const g = question ? [question.topic, subtopicOf(question)].filter(Boolean).join(" · ") : "";
+    test.results[qid] = { r: r, g: g };
+    if (question && r !== "none") { graded.push({ question: question, right: r === "right" }); }
+  });
+  test.state = "done";
+  test.finished = new Date().toISOString();
+  const countIt = !test.counted;
+  test.counted = true;
+  if (countIt) {
+    graded.forEach(function (one) {
+      if (one.question.type === "mcq") {
+        recordMcq(one.question, one.right);
+      } else {
+        recordFillBlank(one.question, one.right ? "Got it" : "Missed it", test.level);  // mastery: Steady or harder only
+      }
+    });
+  }
+  // Keep the 30 newest finished tests (cleanTests): say so if an old one had to go.
+  const doneBefore = progress.tests.filter(function (t) { return t.state === "done"; }).length;
+  progress.tests = cleanTests(progress.tests);
+  const doneAfter = progress.tests.filter(function (t) { return t.state === "done"; }).length;
+  saveProgress();
+  currentTestId = null;
+  openTestResults(id, doneAfter < doneBefore
+    ? "Only the " + TESTS_DONE_MAX + " newest finished tests are kept, so your oldest one was removed." : "");
+}
+
+function testScore(test) {
+  const score = { right: 0, wrong: 0, none: 0, total: test.qIds.length };
+  test.qIds.forEach(function (id) {
+    const r = test.results && test.results[id] ? test.results[id].r : "none";
+    score[r] = (score[r] || 0) + 1;
+  });
+  score.percent = score.total ? Math.round(100 * score.right / score.total) : 0;
+  return score;
+}
+
+let resultsTestId = null;
+function testResultsSpotId() { return resultsTestId; }
+
+function openTestResults(id, note) {
+  const test = findTest(id);
+  if (!test || test.state !== "done") { openTests(); return false; }
+  currentSubject = test.subject;
+  resultsTestId = test.id;
+  setIconLabel(document.getElementById("test-results-back"), "chevron-left", "Tests");
+  document.getElementById("test-results-subject").textContent = test.subject + testViewLabel(test.view);
+  document.getElementById("test-results-sub").textContent = testTitle(test) + " · Finished " + testDate(test.finished);
+  const noteBox = document.getElementById("test-results-note");
+  noteBox.textContent = note || "";
+  noteBox.hidden = !note;
+  const score = testScore(test);
+  document.getElementById("test-score").textContent = score.percent + "%";
+  document.getElementById("test-score-line").textContent = score.right + " of " + score.total + " right";
+  document.getElementById("test-right").textContent = String(score.right);
+  document.getElementById("test-wrong").textContent = String(score.wrong);
+  document.getElementById("test-none").textContent = String(score.none);
+
+  // By topic (and sub-topic), in the order they first come in the test.
+  const groups = [];
+  const byName = {};
+  test.qIds.forEach(function (qid) {
+    const one = test.results[qid] || { r: "none", g: "" };
+    const name = one.g || "Other";
+    if (!byName[name]) { byName[name] = { name: name, right: 0, total: 0 }; groups.push(byName[name]); }
+    byName[name].total += 1;
+    if (one.r === "right") { byName[name].right += 1; }
+  });
+  const box = document.getElementById("test-breakdown");
+  box.innerHTML = "";
+  groups.forEach(function (g) {
+    const row = document.createElement("div");
+    row.className = "test-break-row";
+    const name = document.createElement("span");
+    name.className = "test-break-name";
+    name.textContent = g.name;
+    const value = document.createElement("span");
+    value.className = "test-break-value";
+    value.textContent = g.right + " of " + g.total + " · " + Math.round(100 * g.right / g.total) + "%";
+    const bar = document.createElement("span");
+    bar.className = "test-break-bar";
+    bar.setAttribute("aria-hidden", "true");
+    const fill = document.createElement("span");
+    fill.style.width = Math.round(100 * g.right / g.total) + "%";
+    bar.appendChild(fill);
+    row.append(name, value, bar);
+    box.appendChild(row);
+  });
+  showScreen("screen-test-results");
+  return true;
+}
+
+document.getElementById("test-results-back").addEventListener("click", function () {
+  resultsTestId = null;
+  openTests();
+});
+document.getElementById("test-results-done").addEventListener("click", function () {
+  resultsTestId = null;
   openTests();
 });
