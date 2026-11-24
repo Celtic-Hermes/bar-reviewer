@@ -46,6 +46,21 @@
       "ruling": "The Court denied the petition and affirmed the Court of Appeals. (1) Whether Godines manufactured and sold the tillers is a question of fact. In a petition under Rule 45 the Court reviews only errors of law, and the findings of fact of the Court of Appeals are conclusive. The lower courts had good reasons to reject his claim that he built tillers only on his customers' specifications: he admitted making and selling tillers before SV-Agro started selling its own, which showed that he made them on his own design; no job orders were ever presented; and building a tiller from verbal instructions alone would be contrary to usual business practice. (2) There are two tests of infringement: literal infringement and the doctrine of equivalents. In literal infringement the court resorts first to the words of the claim and, if the accused matter clearly falls within the claim, infringement is made out. The trial court inspected the tillers and found them virtually the same in form, configuration, design, appearance and parts, operating on the same principles, so the claims and features of the patented model had been copied. (3) The doctrine of equivalents also answered his argument that his tillers were different. Minor modifications do not take a copy outside the patent, since otherwise an unscrupulous copyist could make unimportant and insubstantial changes. Similarities and differences are judged not by names but by what the elements do, so devices that do the same work in substantially the same way and reach substantially the same result are the same even if they differ in name, form or shape. (4) Godines was therefore liable for infringement under Section 37 of Republic Act No. 165, and the Court upheld the finding of unfair competition, quoting Section 29(a) of Republic Act No. 166.",
       "keyDoctrine": "Infringement is tested by literal infringement and by the doctrine of equivalents. A patentee has the exclusive right to make, use and sell the patented article, and making, using or selling it without authorization is infringement (Section 37, R.A. No. 165). If two devices do the same work in substantially the same way and accomplish substantially the same result, they are the same even if they differ in name, form or shape, so minor changes do not take a copy outside the patent.",
       "sourceUrl": "https://lawphil.net/judjuris/juri1993/sep1993/gr_97343_1993.html"
+    },
+    {
+      "id": "case-0017",
+      "status": "draft",
+      "name": "Philippine Pharmawealth, Inc. v. Pfizer, Inc. and Pfizer (Phil.) Inc.",
+      "grNumber": "G.R. No. 167715",
+      "year": 2010,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "facts": "Pfizer, Inc. and Pfizer (Phil.) Inc. owned Philippine Letters Patent No. 21116, issued on July 16, 1987 and, as they themselves alleged, valid until July 16, 2004. Its claims are directed to a method of increasing the effectiveness of a beta-lactam antibiotic by co-administering a compound, which Pfizer said covers the combination of ampicillin sodium and sulbactam sodium (sold by Pfizer as Unasyn). In 2003 Pfizer learned that Phil Pharmawealth, Inc. had bid to supply sulbactam ampicillin to several hospitals. Pfizer filed a complaint for patent infringement against Pharmawealth with the Bureau of Legal Affairs of the Intellectual Property Office (BLA-IPO), which issued a preliminary injunction for ninety days but later refused to extend it. Pfizer went to the Court of Appeals by certiorari. While that case was pending, Pfizer also sued Pharmawealth for infringement and unfair competition in the Regional Trial Court of Makati City, on the basis of a different patent, and asked for the same kind of injunction. In January 2005 the Court of Appeals issued a temporary restraining order against Pharmawealth. It later refused to dismiss the case, even though Pharmawealth pointed out that the patent had expired on July 16, 2004 and that Pfizer was forum shopping. Pharmawealth went to the Supreme Court.",
+      "issue": "(1) Can an injunction be issued in a patent infringement action when the patent has already expired? (2) Which tribunal has jurisdiction to review an interlocutory order of the BLA-IPO? (3) Is there forum shopping when a party files two actions based on different patents but asks for the same relief?",
+      "ruling": "The Court partly granted the petition. It reversed the Court of Appeals' resolutions and dismissed the petition for certiorari as moot and academic, and it dismissed the Makati civil case on the ground of litis pendentia. (1) The exclusive right of a patentee to make, use and sell the patented article exists only during the term of the patent (Section 37, R.A. No. 165; the term was seventeen years from issuance under Section 21). Pfizer itself admitted that its patent expired on July 16, 2004, and an admission in the same case needs no proof unless it was made through palpable mistake. After that date Pfizer had no clear and unmistakable right to protect, so the restraining order was improper and the question of extending the BLA-IPO's injunction had become moot. (2) The Court of Appeals, not the IPO Director General, had jurisdiction. The Director General reviews decisions of the BLA, but what Pfizer challenged was an interlocutory order. The Intellectual Property Code is silent on a remedy against such orders and the IPO's rules say they are not appealable, so the Rules of Court apply suppletorily and a special civil action for certiorari in the Court of Appeals was proper. Filing the infringement complaint first with the BLA-IPO was in keeping with the doctrine of primary jurisdiction, but the question of extending an injunction was purely legal and was for the courts. (3) Pfizer was guilty of forum shopping. A cause of action is the act or omission by which a party violates another's right, and in both complaints the rights violated and the acts violative of them were identical, even though the patents differed; the reliefs asked were substantially the same, so a decision in one case would be res judicata in the other. Because the forum shopping was not willful and deliberate, only the later case was dismissed, without prejudice.",
+      "keyDoctrine": "A patentee's exclusive right to make, use and sell exists only during the term of the patent, and no injunction can protect a right that has expired. Filing two actions with different patents but the same cause of action and the same objective is forum shopping; if it is not willful, the later case is dismissed without prejudice on the ground of litis pendentia or res judicata, and if it is willful and deliberate, all the cases are dismissed with prejudice.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2010/nov2010/gr_167715_2010.html"
     }
   ],
   "questions": [
@@ -735,6 +750,237 @@
         "url": "https://lawphil.net/judjuris/juri1993/sep1993/gr_97343_1993.html",
         "part": "Discussion of whether petitioner manufactured and sold the tillers (the scope of review)",
         "excerpt": "The question of whether petitioner was manufacturing and selling power tillers is a question of fact better addressed to the lower courts. … Of general acceptance is the rule imbedded in our jurisprudence that \". . . the jurisdiction of the Supreme Court in cases brought to it from the Court of Appeals in a petition for certiorari under Rule 45 of the Rules of Court is limited to the review of errors of law, and that said appellate court's findings of fact are conclusive upon this Court.\""
+      }
+    },
+    {
+      "id": "q-0328",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "prompt": "A patent owner sues a competitor for infringement and obtains a restraining order. In its own complaint, the patent owner admits that its patent is valid only until a certain date. By the time an appellate court approves the bond and issues a restraining order against the competitor, that date has passed. Was the restraining order proper? Explain, based on Philippine Pharmawealth, Inc. v. Pfizer, Inc.",
+      "suggestedAnswer": {
+        "answer": "No. The patent owner's exclusive right exists only during the term of the patent. After the patent expired, there was no right left to protect, so no restraining order or injunction could properly issue.",
+        "legalBasis": "Under Section 37 of Republic Act No. 165, the exclusive right of the patentee to make, use and sell the patented article exists throughout the Philippines for the term of the patent, and the term was seventeen years from the date of issuance (Section 21). Under Section 4, Rule 129 of the Rules of Court, an admission made by a party in the same case does not require proof and may be contradicted only by showing palpable mistake or that no such admission was made. Two requisites must exist for injunctive relief: (1) a clear and unmistakable right that must be protected; and (2) an urgent and paramount necessity for the writ to prevent serious damage.",
+        "application": "The patent owner admitted in its complaint the dates of issuance and of expiry, so the expiry needs no further evidence, and there is no showing of palpable mistake. After that date it no longer had the exclusive right to make, use and sell the patented articles. When the appellate court issued the restraining order, the first requisite, a clear right to be protected, was missing. Since the patent that was the basis of the injunction was no longer valid, the question of extending an injunction became moot and academic, and the case should have been dismissed.",
+        "conclusion": "The restraining order was improper, and the petition that sought to extend the injunction should have been dismissed as moot and academic."
+      },
+      "keyPoints": [
+        "The patentee's exclusive right to make, use and sell exists only during the term of the patent (Section 37, R.A. No. 165; seventeen years under Section 21)",
+        "An admission in the same case needs no proof unless made through palpable mistake or never made (Section 4, Rule 129)",
+        "Injunctive relief needs a clear and unmistakable right to be protected and an urgent and paramount necessity to prevent serious damage",
+        "After the patent expired there was no right to protect, so the restraining order was improper",
+        "The issue of extending the injunction was moot and academic once the patent was no longer valid"
+      ],
+      "caseIds": [
+        "case-0017"
+      ],
+      "source": {
+        "caseTitle": "Philippine Pharmawealth, Inc. v. Pfizer, Inc. and Pfizer (Phil.) Inc.",
+        "grNumber": "G.R. No. 167715",
+        "url": "https://lawphil.net/judjuris/juri2010/nov2010/gr_167715_2010.html",
+        "part": "Discussion of the first issue (injunction after the patent has lapsed)",
+        "excerpt": "It is clear from the above-quoted provision of law that the exclusive right of a patentee to make, use and sell a patented product, article or process exists only during the term of the patent. … On the basis of the foregoing, the Court agrees with petitioner that after July 16, 2004, respondents no longer possess the exclusive right to make, use and sell the articles or products covered by Philippine Letters Patent No. 21116. … From the foregoing, it can be inferred that two requisites must exist to warrant the issuance of an injunctive relief, namely: (1) the existence of a clear and unmistakable right that must be protected; and (2) an urgent and paramount necessity for the writ to prevent serious damage. In the instant case, it is clear that when the CA issued its January 18, 2005 Resolution approving the bond filed by respondents, the latter no longer had a right that must be protected, considering that Philippine Letters Patent No. 21116 which was issued to them already expired on July 16, 2004. Hence, the issuance by the CA of a temporary restraining order in favor of the respondents is not proper."
+      }
+    },
+    {
+      "id": "q-0329",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "prompt": "A company sues a competitor for patent infringement before an intellectual property agency, asking for damages and a permanent injunction. While that case is pending, the company files a second action against the same competitor in a regional trial court on the basis of a different patent for the same product, asking for the same kind of injunction and damages. The company argues that there can be no forum shopping because the two complaints rely on different patents. Is it right? What should happen to the second case? Explain, based on Philippine Pharmawealth, Inc. v. Pfizer, Inc.",
+      "suggestedAnswer": {
+        "answer": "No. The company is guilty of forum shopping. A difference in the patents does not change the cause of action, because the rights violated, the acts complained of and the reliefs sought are the same. The second case should be dismissed.",
+        "legalBasis": "A cause of action is the act or omission by which a party violates a right of another (Section 2, Rule 2). Forum shopping exists where there is identity of parties, identity of the rights asserted and reliefs prayed for, founded on the same facts, and identity such that a judgment in one action would amount to res judicata in the other. What matters is the vexation caused to courts and litigants by a party who asks different courts or agencies to rule on the same or related causes or to grant substantially the same reliefs, creating a possibility of conflicting decisions. If forum shopping is not willful and deliberate, the subsequent case is dismissed without prejudice on the ground of litis pendentia or res judicata; if it is willful and deliberate, all the actions are dismissed with prejudice.",
+        "application": "In both complaints the company claimed an exclusive right to make, use and sell the same product and said the competitor violated it by importing, distributing and selling it. It asked for substantially the same restraining order, injunction, damages and forfeiture. That the patents were different is immaterial. A decision in one case would necessarily amount to res judicata in the other. If the company did not act willfully and deliberately, for example because it could believe that different patents allowed separate actions and it candidly told the second court of the pending case, then only the later case is dismissed, without prejudice, on the ground of litis pendentia.",
+        "conclusion": "The company committed forum shopping, and the second case should be dismissed on the ground of litis pendentia, without prejudice, unless the forum shopping was willful and deliberate, in which case both would be dismissed with prejudice."
+      },
+      "keyPoints": [
+        "A cause of action is the act or omission by which a party violates a right of another",
+        "The patents being different is immaterial if the rights violated, the acts and the reliefs are identical",
+        "Filing two apparently different actions with the same objective is forum shopping",
+        "A decision in one case would be res judicata in the other",
+        "If not willful and deliberate, the later case is dismissed without prejudice on litis pendentia or res judicata; if willful and deliberate, all actions are dismissed with prejudice"
+      ],
+      "caseIds": [
+        "case-0017"
+      ],
+      "source": {
+        "caseTitle": "Philippine Pharmawealth, Inc. v. Pfizer, Inc. and Pfizer (Phil.) Inc.",
+        "grNumber": "G.R. No. 167715",
+        "url": "https://lawphil.net/judjuris/juri2010/nov2010/gr_167715_2010.html",
+        "part": "Discussion of the third issue (forum shopping)",
+        "excerpt": "Section 2, Rule 2 of the Rules of Court defines a cause of action as the act or omission by which a party violates a right of another. … Thus, it does not matter that the patents upon which the complaints were based are different. The fact remains that in both complaints the rights violated and the acts violative of such rights are identical. … Owing to the substantial identity of parties, reliefs and issues in the IPO and RTC cases, a decision in one case will necessarily amount to res judicata in the other action. It bears to reiterate that what is truly important to consider in determining whether forum shopping exists or not is the vexation caused the courts and parties-litigant by a party who asks different courts and/or administrative agencies to rule on the same or related causes and/or to grant the same or substantially the same reliefs, in the process creating the possibility of conflicting decisions being rendered by the different fora upon the same issue."
+      }
+    },
+    {
+      "id": "q-0330",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "prompt": "The Bureau of Legal Affairs of the Intellectual Property Office issues a preliminary injunction in a patent infringement complaint but refuses to extend it. The patent owner challenges the refusal by a special civil action for certiorari in the Court of Appeals. The adverse party says that, under the Intellectual Property Code, only the Director General of the Intellectual Property Office can review the Bureau's rulings. Which tribunal has jurisdiction? Explain, based on Philippine Pharmawealth, Inc. v. Pfizer, Inc.",
+      "suggestedAnswer": {
+        "answer": "The Court of Appeals has jurisdiction. The Director General reviews decisions of the Bureau, but the patent owner is challenging an interlocutory order, and for that there is no remedy within the agency, so certiorari under the Rules of Court in the Court of Appeals is proper.",
+        "legalBasis": "Under Section 7(b) of Republic Act No. 8293, the Director General exercises exclusive appellate jurisdiction over decisions of the Director of the Bureau of Legal Affairs. But the Code is silent about any remedy against interlocutory orders of the Bureau, and the rules on administrative complaints for violations of intellectual property laws provide that interlocutory orders are not appealable. Where no remedy is prescribed within the administrative machinery, the Rules of Court apply suppletorily, so a special civil action for certiorari under Rule 65 is available when a party cannot appeal and has no other plain, speedy and adequate remedy. The doctrine of primary jurisdiction does not apply when the question is purely legal and will ultimately have to be decided by the courts.",
+        "application": "What the patent owner questions is not a decision but an interlocutory order denying the extension of a preliminary injunction. It cannot appeal that order and has no other plain, speedy and adequate remedy. Whether to extend the injunction is a purely legal question that does not need the agency's special knowledge of technical matters, and courts have the duty to determine whether there was grave abuse of discretion on the part of any branch or instrumentality of the government. The patent owner therefore correctly went to the Court of Appeals.",
+        "conclusion": "The Court of Appeals, not the Director General, has jurisdiction to review the Bureau's interlocutory order by certiorari."
+      },
+      "keyPoints": [
+        "Section 7(b) of R.A. No. 8293: the Director General has exclusive appellate jurisdiction over decisions of the Director of the Bureau of Legal Affairs",
+        "The Code is silent on remedies against interlocutory orders, and the IPO's rules say interlocutory orders are not appealable",
+        "In the absence of an agency remedy, the Rules of Court apply suppletorily, so certiorari under Rule 65 in the Court of Appeals is proper",
+        "An exception to primary jurisdiction is a purely legal question that will ultimately be decided by the courts",
+        "Courts decide whether any branch or instrumentality of government committed grave abuse of discretion"
+      ],
+      "caseIds": [
+        "case-0017"
+      ],
+      "source": {
+        "caseTitle": "Philippine Pharmawealth, Inc. v. Pfizer, Inc. and Pfizer (Phil.) Inc.",
+        "grNumber": "G.R. No. 167715",
+        "url": "https://lawphil.net/judjuris/juri2010/nov2010/gr_167715_2010.html",
+        "part": "Discussion of the second issue (which tribunal reviews interlocutory orders of the BLA-IPO)",
+        "excerpt": "It is true that under Section 7(b) of RA 8293, otherwise known as the Intellectual Property Code of the Philippines, which is the presently prevailing law, the Director General of the IPO exercises exclusive appellate jurisdiction over all decisions rendered by the Director of the BLA-IPO. However, what is being questioned before the CA is not a decision, but an interlocutory order of the BLA-IPO denying respondents' motion to extend the life of the preliminary injunction issued in their favor. RA 8293 is silent with respect to any remedy available to litigants who intend to question an interlocutory order issued by the BLA-IPO. Moreover, Section 1(c), Rule 14 of the Rules and Regulations on Administrative Complaints for Violation of Laws Involving Intellectual Property Rights simply provides that interlocutory orders shall not be appealable. … Hence, in the absence of such a remedy, the provisions of the Rules of Court shall apply in a suppletory manner, as provided under Section 3, Rule 1 of the same Rules and Regulations. Hence, in the present case, respondents correctly resorted to the filing of a special civil action for certiorari with the CA to question the assailed Orders of the BLA-IPO, as they cannot appeal therefrom and they have no other plain, speedy and adequate remedy in the ordinary course of law."
+      }
+    },
+    {
+      "id": "q-0331",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "prompt": "In its complaint, a patent owner states the date its patent was issued and the date until which the patent is valid. Later, in the same case, the other party asks the court to require proof that the patent has expired on that date. According to Philippine Pharmawealth, Inc. v. Pfizer, Inc., how should the court treat the patent owner's statement?",
+      "choices": {
+        "A": "It is an admission that needs no proof and may be contradicted only by showing palpable mistake or that no such admission was made.",
+        "B": "It is only a claim and must be proved by evidence like any other fact.",
+        "C": "It binds only the patent owner in a different case, not in the same case.",
+        "D": "It can be freely withdrawn at any time before judgment."
+      },
+      "correct": "A",
+      "explanation": "A is correct. The Court noted that the patent owners themselves admitted in their complaint the date of issuance and that the patent was valid until July 16, 2004, which accords with Section 21 of Republic Act No. 165 (a term of seventeen years from issuance). Under Section 4, Rule 129 of the Rules of Court, an admission made by a party in the course of the proceedings in the same case does not require proof, and it may be contradicted only by showing that it was made through palpable mistake or that no such admission was made. There was no such showing, so there was no need to present evidence of the expiry. B is wrong because admissions in the same case need no proof. C is wrong because the rule covers admissions in the same case. D is wrong because an admission can be contradicted only on the grounds stated.",
+      "caseIds": [
+        "case-0017"
+      ],
+      "source": {
+        "caseTitle": "Philippine Pharmawealth, Inc. v. Pfizer, Inc. and Pfizer (Phil.) Inc.",
+        "grNumber": "G.R. No. 167715",
+        "url": "https://lawphil.net/judjuris/juri2010/nov2010/gr_167715_2010.html",
+        "part": "Discussion of the first issue (the term of the patent and the admission)",
+        "excerpt": "They also admitted that the validity of the said patent is until July 16, 2004, which is in conformity with Section 21 of RA 165, providing that the term of a patent shall be seventeen (17) years from the date of issuance thereof. Section 4, Rule 129 of the Rules of Court provides that an admission, verbal or written, made by a party in the course of the proceedings in the same case, does not require proof and that the admission may be contradicted only by showing that it was made through palpable mistake or that no such admission was made."
+      }
+    },
+    {
+      "id": "q-0332",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "prompt": "According to Philippine Pharmawealth, Inc. v. Pfizer, Inc., which of the following correctly states the elements of forum shopping?",
+      "choices": {
+        "A": "Only that the same party filed two cases in the same year.",
+        "B": "Only that both cases involve the same patent.",
+        "C": "(a) Identity of parties, or of parties representing the same interests; (b) identity of the rights asserted and reliefs prayed for, founded on the same facts; and (c) identity of the two preceding particulars such that a judgment in one action would amount to res judicata in the other.",
+        "D": "Only that a party lost in one forum and then filed an appeal in a higher court."
+      },
+      "correct": "C",
+      "explanation": "C is correct. The decision lists these three elements. A and B state only one fact and are not the test; in this very case the two complaints relied on different patents, and the Court still found forum shopping because the rights violated, the acts and the reliefs were identical. D is wrong because forum shopping excludes seeking review by appeal or by the special civil action of certiorari; it is the seeking of another opinion in another forum, or the filing of two or more actions grounded on the same cause on the supposition that one or the other court would make a favorable disposition.",
+      "caseIds": [
+        "case-0017"
+      ],
+      "source": {
+        "caseTitle": "Philippine Pharmawealth, Inc. v. Pfizer, Inc. and Pfizer (Phil.) Inc.",
+        "grNumber": "G.R. No. 167715",
+        "url": "https://lawphil.net/judjuris/juri2010/nov2010/gr_167715_2010.html",
+        "part": "Discussion of the third issue (the elements of forum shopping)",
+        "excerpt": "The elements of forum shopping are: (a) identity of parties, or at least such parties that represent the same interests in both actions; (b) identity of rights asserted and reliefs prayed for, the reliefs being founded on the same facts; (c) identity of the two preceding particulars, such that any judgment rendered in the other action will, regardless of which party is successful, amount to res judicata in the action under consideration."
+      }
+    },
+    {
+      "id": "q-0333",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "prompt": "A court of appeals is asked to review a refusal to extend a preliminary injunction that was issued to protect a patent. While the appeal is pending, the patent lapses. According to Philippine Pharmawealth, Inc. v. Pfizer, Inc., what should the court do with the petition?",
+      "choices": {
+        "A": "Extend the injunction until the patent owner's damages claim is resolved.",
+        "B": "Remand the case to the intellectual property office for a fresh hearing.",
+        "C": "Convert the petition into an action for damages.",
+        "D": "Dismiss it, because with the patent no longer valid, the question of extending the injunction is moot and academic."
+      },
+      "correct": "D",
+      "explanation": "D is correct. The Court said that the Court of Appeals should have granted the motion to dismiss the petition for certiorari, since the only issue raised was the propriety of extending the writ of preliminary injunction issued by the BLA-IPO. Because the patent that was the basis of the injunction was no longer valid, any issue about extending the life of the injunction was already rendered moot and academic. A is wrong because once the patent had lapsed, there was no right left to protect. B and C are not what the Court ordered; it dismissed the petition for certiorari for being moot and academic.",
+      "caseIds": [
+        "case-0017"
+      ],
+      "source": {
+        "caseTitle": "Philippine Pharmawealth, Inc. v. Pfizer, Inc. and Pfizer (Phil.) Inc.",
+        "grNumber": "G.R. No. 167715",
+        "url": "https://lawphil.net/judjuris/juri2010/nov2010/gr_167715_2010.html",
+        "part": "Discussion of the first issue (mootness of the extension of the injunction)",
+        "excerpt": "In fact, the CA should have granted petitioner's motion to dismiss the petition for certiorari filed before it as the only issue raised therein is the propriety of extending the writ of preliminary injunction issued by the BLA-IPO. Since the patent which was the basis for issuing the injunction, was no longer valid, any issue as to the propriety of extending the life of the injunction was already rendered moot and academic."
+      }
+    },
+    {
+      "id": "q-0334",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "prompt": "A party files two actions that amount to forum shopping, but the forum shopping is not willful and deliberate, and the party told the second court about the pending first case. According to Philippine Pharmawealth, Inc. v. Pfizer, Inc., what is the consequence?",
+      "choices": {
+        "A": "Both cases are dismissed with prejudice.",
+        "B": "The subsequent case is dismissed without prejudice, on the ground of litis pendentia or res judicata.",
+        "C": "The first case is dismissed, and the subsequent case continues.",
+        "D": "Neither case is dismissed, and the party only pays a fine."
+      },
+      "correct": "B",
+      "explanation": "B is correct. The Court said that if forum shopping is not willful and deliberate, the subsequent case is dismissed without prejudice on the ground of either litis pendentia or res judicata, while if it is willful and deliberate, both (or all) actions are dismissed with prejudice. It found that Pfizer did not deliberately violate the rule, because it could erroneously believe that it could file separate actions on the basis of different patents, and because it candidly told the trial court of the pending complaint and petition. So only the Makati civil case was dismissed, on the ground of litis pendentia. A describes the consequence of willful and deliberate forum shopping. C and D are not what the Court held.",
+      "caseIds": [
+        "case-0017"
+      ],
+      "source": {
+        "caseTitle": "Philippine Pharmawealth, Inc. v. Pfizer, Inc. and Pfizer (Phil.) Inc.",
+        "grNumber": "G.R. No. 167715",
+        "url": "https://lawphil.net/judjuris/juri2010/nov2010/gr_167715_2010.html",
+        "part": "Discussion of the third issue (consequence of forum shopping)",
+        "excerpt": "Jurisprudence holds that if the forum shopping is not considered willful and deliberate, the subsequent case shall be dismissed without prejudice, on the ground of either litis pendentia or res judicata. However, if the forum shopping is willful and deliberate, both (or all, if there are more than two) actions shall be dismissed with prejudice. In the present case, the Court finds that respondents did not deliberately violate the rule on non-forum shopping. Respondents may not be totally blamed for erroneously believing that they can file separate actions simply on the basis of different patents. Moreover, in the suit filed with the RTC of Makati City, respondents were candid enough to inform the trial court of the pendency of the complaint filed with the BLA-IPO as well as the petition for certiorari filed with the CA. On these bases, only Civil Case No. 04-754 should be dismissed on the ground of litis pendentia."
+      }
+    },
+    {
+      "id": "q-0335",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "prompt": "A patent owner files its infringement complaint with the intellectual property office instead of a regular court. The defendant argues that this was wrong. According to Philippine Pharmawealth, Inc. v. Pfizer, Inc., why was filing the complaint with the intellectual property office first proper?",
+      "choices": {
+        "A": "Because the doctrine of primary jurisdiction applies: deciding whether the defendant violated the patent rights requires the agency's sound administrative discretion, based on its special competence, knowledge and experience.",
+        "B": "Because regular courts have no jurisdiction over patent matters of any kind.",
+        "C": "Because the defendant had agreed in advance to file there.",
+        "D": "Because the agency's decisions are never subject to review by any court."
+      },
+      "correct": "A",
+      "explanation": "A is correct. The Court said that in specialized disputes the practice is to refer them to an administrative agency of special competence under the doctrine of primary jurisdiction, and it found that the initial filing with the BLA-IPO was in keeping with that doctrine because determining whether the petitioner violated the respondents' patent rights requires the exercise by the IPO of sound administrative discretion based on the agency's special competence, knowledge and experience. B is wrong because the doctrine applies where the claim is originally cognizable in the courts but its enforcement requires resolving issues placed within the special competence of an administrative body, in which case the court suspends its process and refers those issues to the agency. C has no basis in the decision. D is wrong because the Court itself reviewed the matter, and the Court of Appeals could review the interlocutory order by certiorari.",
+      "caseIds": [
+        "case-0017"
+      ],
+      "source": {
+        "caseTitle": "Philippine Pharmawealth, Inc. v. Pfizer, Inc. and Pfizer (Phil.) Inc.",
+        "grNumber": "G.R. No. 167715",
+        "url": "https://lawphil.net/judjuris/juri2010/nov2010/gr_167715_2010.html",
+        "part": "Discussion of the second issue (the doctrine of primary jurisdiction)",
+        "excerpt": "Based on the foregoing, the Court finds that respondents' initial filing of their complaint with the BLA-IPO, instead of the regular courts, is in keeping with the doctrine of primary jurisdiction owing to the fact that the determination of the basic issue of whether petitioner violated respondents' patent rights requires the exercise by the IPO of sound administrative discretion which is based on the agency's special competence, knowledge and experience."
       }
     }
   ]
