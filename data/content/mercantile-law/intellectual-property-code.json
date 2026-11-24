@@ -76,6 +76,21 @@
       "ruling": "The Court partly granted the petition. (1) Under Section 122 of the Intellectual Property Code, rights in a mark are acquired through registration. The language of the Code, the removal from Section 123.1(d) of the phrase \"previously used in the Philippines by another and not abandoned\", and Senator Roco's sponsorship speech all show that the old rule that ownership comes from use (under the Trademark Law, as amended) was abandoned. The use-based rule applied in Berris and E.Y. Industrial Sales belongs to marks used or registered under the old law, and the statement in Berris that ownership is acquired by registration and actual use was rectified. So Natrapharm, the first-to-file registrant in good faith, owns \"ZYNAPSE\". (2) Bad faith means knowledge by the applicant of prior creation, use or registration of an identical or similar mark by another; a registration obtained in bad faith is void. Good faith is presumed, and Zuneca had to prove bad faith. It showed only a possibility that someone at Natrapharm might have known of \"ZYNAPS\", while Natrapharm explained how it coined its name and showed that it checked the IMS-PPI, BFAD and IPO databases. So the registration stands and Zuneca's counterclaims were rightly dismissed. (3) However, Section 159.1 provides that a registered mark has no effect against a person who in good faith, before the filing or priority date, was using the mark. This lets the prior user in good faith keep using its mark even after the other's registration (it may transfer the mark only together with its business), and the lower courts' reading, which limited the exemption to acts before registration, would make the provision useless. Zuneca is therefore not liable for infringement, and the damages, injunction and destruction of goods were set aside. (4) Because confusingly similar names for medicines can endanger patients, the Court ordered both companies to state on their packaging, in plain language, the conditions their drugs treat and a warning of what each drug is not for, and it directed the Food and Drug Administration to monitor compliance.",
       "keyDoctrine": "Under the Intellectual Property Code, ownership of a mark is acquired through registration (first-to-file), not through use. A registration obtained in bad faith, meaning with knowledge of another's prior creation, use or registration, is void, but good faith is presumed. A prior user in good faith is protected by Section 159.1: the registered mark has no effect against it, so it may keep using its mark, and no damages, injunction or destruction of goods can be ordered against it for infringement.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2020/sep2020/gr_211850_2020.html"
+    },
+    {
+      "id": "case-0019",
+      "status": "draft",
+      "name": "Dermaline, Inc. v. Myra Pharmaceuticals, Inc.",
+      "grNumber": "G.R. No. 190065",
+      "year": 2010,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "facts": "On October 21, 2006, Dermaline, Inc. applied to the Intellectual Property Office (IPO) to register the mark \"DERMALINE DERMALINE, INC.\" for skin treatment services under Class 44. Myra Pharmaceuticals, Inc. opposed. It owned \"DERMALIN\", registered in 1986 for pharmaceutical products (Class 5), renewed in 2006, and in commercial use since 1977. Myra argued that the dominant feature of Dermaline's mark was practically identical with its own: the first eight letters were the same, both had three syllables identical in sound, and the added letter \"E\" was silent. Dermaline had also earlier applied for \"DERMALINE\" and been refused. Dermaline replied that the marks looked entirely different when each was taken as a whole, and that its beauty and health services were unrelated to Myra's medicines for skin disorders. The IPO Bureau of Legal Affairs sustained the opposition and rejected the application under Section 123.1(d) of the Intellectual Property Code. Dermaline appealed to the IPO Director General, but the appeal was dismissed for being filed out of time. The Court of Appeals affirmed, and Dermaline went to the Supreme Court.",
+      "issue": "Did the Court of Appeals err in upholding the IPO's rejection of Dermaline's application, that is, was \"DERMALINE DERMALINE, INC.\" confusingly similar to the registered mark \"DERMALIN\"?",
+      "ruling": "The Court denied the petition and affirmed the rejection. A registered trademark owner has the right under Section 147 to prevent others from using an identical or similar mark where the use would likely cause confusion. In deciding whether there is likelihood of confusion, two tests have developed: the Dominancy Test, which looks at the similarity of the prevalent features of the marks, and the Holistic Test, which considers the marks in their entirety, including labels and packaging. The IPO applied the Dominancy Test, which is written into Section 155.1, and the Court agreed with its findings. The marks are spelled almost the same and pronounced practically the same way in three syllables, with the final \"E\" silent, so an ordinary buyer who hears a radio advertisement of \"Dermaline\" would likely associate it with \"DERMALIN\", even though the marks are presented differently. Dermaline's argument that its services belong to another classification does not remove the possibility of mistake, especially since both classes concern skin treatments. The registered owner is protected in areas that are the normal potential expansion of its business, so the public could think that Myra had expanded from skin medicines to health and beauty services through Dermaline. An application for a mark nearly the same as an already registered one should be rejected even without opposition. The IPO's findings on this factual issue, upheld by the Court of Appeals, are given great weight, and the IPO decision had in any case become final when Dermaline failed to appeal on time.",
+      "keyDoctrine": "Likelihood of confusion between marks is tested by the Dominancy Test (the prevalent features, and the aural and visual impressions on the ordinary purchaser) and the Holistic Test (the entirety of the marks). A different classification of goods or services does not remove the likelihood of confusion, and the registered owner is protected in the normal potential expansion of its business.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2010/aug2010/gr_190065_2010.html"
     }
   ],
   "questions": [
@@ -1227,6 +1242,238 @@
         "url": "https://lawphil.net/judjuris/juri2020/sep2020/gr_211850_2020.html",
         "part": "Part III (the resolution of the controversy, medical switching)",
         "excerpt": "To further reduce therefore, if not totally eliminate, the likelihood of switching in this case, the Court hereby orders the parties to prominently state on the packaging of their respective products, in plain language understandable by people with no medical background or training, the medical conditions that their respective drugs are supposed to treat or alleviate and a warning indicating what \"ZYNAPS\" is not supposed to treat and what \"ZYNAPSE\" is not supposed to treat, given the likelihood of confusion between the two."
+      }
+    },
+    {
+      "id": "q-0344",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "A company owns the registered mark GLOWRIN for skin creams. A beauty clinic applies to register GLOWRINE, written in a fancy script with a flower design, for facial treatment services. The clinic argues that its mark looks completely different when its whole design is compared with the plain GLOWRIN, and that services and creams are in different classes. Should the application be rejected? Explain, based on Dermaline, Inc. v. Myra Pharmaceuticals, Inc.",
+      "suggestedAnswer": {
+        "answer": "Yes. The two marks are confusingly similar under the Dominancy Test. A different presentation and a different classification do not remove the likelihood of confusion, especially since both concern skin care.",
+        "legalBasis": "A registered trademark owner may prevent others from using an identical or similar mark where such use would result in a likelihood of confusion (Section 147). Likelihood of confusion is determined by the Dominancy Test, which focuses on the similarity of the prevalent features of the marks and which asks whether the ordinary purchaser would likely be confused, giving greater weight to the aural and visual impressions created by the marks and little weight to factors like price, quality, sales outlets and market segments. It is written into Section 155.1. The Holistic Test, which looks at the entirety of the marks, is the alternative. Classification of goods or services does not eradicate the possibility of mistake in associating one mark with the other.",
+        "application": "GLOWRINE is spelled almost the same as GLOWRIN, differing only by a final letter that is silent, and the two are pronounced in practically the same way. The fancy script and flower design only differ in presentation, and an ordinary buyer who hears the clinic advertised on the radio would likely associate it with the registered brand. The different classes do not help, because both the creams and the treatments concern the skin, and the public may think that the cream maker has expanded its business into skin services. Such an expansion is the normal potential expansion of its business, which the registered owner is entitled to protect.",
+        "conclusion": "The application should be rejected, because the marks are confusingly similar and the registered owner's rights are protected."
+      },
+      "keyPoints": [
+        "The registered owner may prevent the use of identical or similar marks that would likely cause confusion (Section 147)",
+        "Dominancy Test: similarity of the prevalent features; greater weight to the aural and visual impressions on the ordinary purchaser; written into Section 155.1",
+        "Holistic Test: the entirety of the marks, including labels and packaging",
+        "Almost identical spelling and practically identical pronunciation point to likely confusion",
+        "A different classification does not eradicate the possibility of mistake, especially where both concern the same kind of treatment",
+        "The registered owner is protected in the normal potential expansion of its business"
+      ],
+      "caseIds": [
+        "case-0019"
+      ],
+      "source": {
+        "caseTitle": "Dermaline, Inc. v. Myra Pharmaceuticals, Inc.",
+        "grNumber": "G.R. No. 190065",
+        "url": "https://lawphil.net/judjuris/juri2010/aug2010/gr_190065_2010.html",
+        "part": "Discussion of the dominancy test and the comparison of the marks",
+        "excerpt": "In determining likelihood of confusion, case law has developed two (2) tests, the Dominancy Test and the Holistic or Totality Test. The Dominancy Test focuses on the similarity of the prevalent features of the competing trademarks that might cause confusion or deception. … Given greater consideration are the aural and visual impressions created by the marks in the public mind, giving little weight to factors like prices, quality, sales outlets, and market segments. … While it is true that the two marks are presented differently … the likelihood of confusion is still apparent. This is because they are almost spelled in the same way, except for Dermaline’s mark which ends with the letter \"E,\" and they are pronounced practically in the same manner in three (3) syllables, with the ending letter \"E\" in Dermaline’s mark pronounced silently. Thus, when an ordinary purchaser, for example, hears an advertisement of Dermaline’s applied trademark over the radio, chances are he will associate it with Myra’s registered mark."
+      }
+    },
+    {
+      "id": "q-0345",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "A trademark owner makes medicated creams under a registered mark. A new company seeks to register a nearly identical mark for health and beauty services, which belong to a different class. It argues that no one could think that a cream maker also runs beauty salons. Is the argument correct? Explain the two kinds of confusion in trademark cases and the scope of the registered owner's protection, based on Dermaline, Inc. v. Myra Pharmaceuticals, Inc.",
+      "suggestedAnswer": {
+        "answer": "No. A trademark owner's protection is not limited to identical goods in actual competition. It extends to cases where buyers would be misled into thinking that the owner has expanded its business or is connected with the other party, which is the normal potential expansion of its business.",
+        "legalBasis": "Jurisprudence recognizes two types of confusion: (1) confusion of goods (product confusion), where the ordinarily prudent purchaser would buy one product thinking that it was the other; and (2) confusion of business (source or origin confusion), where the goods of the parties are different but the product is such as might reasonably be assumed to originate with the registrant of an earlier product, or the public would be deceived into believing that there is some connection between the two parties, though none exists. The registered owner may use its mark on the same or similar products, in different segments of the market and at different price levels, and it enjoys protection in the product and market areas that are the normal potential expansion of its business. Protection extends to all cases in which use by a junior appropriator is likely to lead to a confusion of source, as where buyers would be misled into thinking that the complaining party has extended its business into the field or is in any way connected with the infringer's activities.",
+        "application": "Even if the services are in a different class from the creams, the public may mistakenly think that the new company is connected with the cream maker, especially with the current proliferation of health and beauty products in the market. They may believe that the owner has already expanded from medicated skin products to health and beauty services. That is confusion of business, and the expansion is a normal potential one, so the argument that no one would link the two businesses fails. The difference in classification does not eradicate the possibility of mistake.",
+        "conclusion": "The argument is not correct. The registered owner is protected against confusion of business, and the application should not be allowed."
+      },
+      "keyPoints": [
+        "Two types of confusion: confusion of goods (product confusion) and confusion of business (source or origin confusion)",
+        "Confusion of business can exist even if the goods of the parties are different",
+        "The registered owner's protection is not limited to actual competition with identical or similar products",
+        "It extends to the normal potential expansion of its business",
+        "A different classification of goods or services does not remove the possibility of mistake"
+      ],
+      "caseIds": [
+        "case-0019"
+      ],
+      "source": {
+        "caseTitle": "Dermaline, Inc. v. Myra Pharmaceuticals, Inc.",
+        "grNumber": "G.R. No. 190065",
+        "url": "https://lawphil.net/judjuris/juri2010/aug2010/gr_190065_2010.html",
+        "part": "Discussion of the types of confusion and the owner's protection",
+        "excerpt": "Relative to the question on confusion of marks and trade names, jurisprudence has noted two (2) types of confusion, viz: (1) confusion of goods (product confusion), where the ordinarily prudent purchaser would be induced to purchase one product in the belief that he was purchasing the other; and (2) confusion of business (source or origin confusion), where, although the goods of the parties are different, the product, the mark of which registration is applied for by one party, is such as might reasonably be assumed to originate with the registrant of an earlier product, and the public would then be deceived either into that belief or into the belief that there is some connection between the two parties, though inexistent. … The Court is cognizant that the registered trademark owner enjoys protection in product and market areas that are the normal potential expansion of his business. … Thus, the public may mistakenly think that Dermaline is connected to or associated with Myra, such that, considering the current proliferation of health and beauty products in the market, the purchasers would likely be misled that Myra has already expanded its business through Dermaline from merely carrying pharmaceutical topical applications for the skin to health and beauty services."
+      }
+    },
+    {
+      "id": "q-0346",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "An applicant seeks to register a mark that closely resembles an already registered mark. The owner of the registered mark does not file any opposition. Must the application nevertheless be rejected? Also, on appeal, the applicant asks the Supreme Court to re-evaluate the facts about whether the marks are confusingly similar. How should the Court treat the findings of the intellectual property office? Explain, based on Dermaline, Inc. v. Myra Pharmaceuticals, Inc.",
+      "suggestedAnswer": {
+        "answer": "Yes to the first, and the findings are respected on the second. An application for a mark that is almost the same as or closely resembles a mark already used and registered should be rejected outright, even without opposition, and the intellectual property office's factual findings, upheld by the Court of Appeals, carry great weight.",
+        "legalBasis": "When one applies for the registration of a trademark or label that is almost the same as or that very closely resembles one already used and registered by another, the application should be rejected and dismissed outright, even without any opposition on the part of the owner and user of the previously registered mark. This is intended not only to avoid confusion on the part of the public but also to protect an already used and registered trademark and an established goodwill. The protection of intellectual property such as trademarks is a factual issue, so the findings of the IPO, upheld on appeal by the same office and sustained by the Court of Appeals, bear great weight and deserve respect from the Court.",
+        "application": "Because the applied mark closely resembles the registered one, the office could properly reject it even if the owner had not opposed. On review, the applicant's argument that the marks are different is a factual challenge, and the office, whose findings were upheld by the Court of Appeals, found likelihood of confusion. The Court gives those findings great weight and respect. In the case itself, the IPO decision had also become final because the applicant did not appeal to the Director General on time.",
+        "conclusion": "The application must be rejected even without an opposition, and the Court will defer to the office's affirmed factual findings of confusing similarity."
+      },
+      "keyPoints": [
+        "An application for a mark almost the same as or closely resembling a registered mark should be rejected outright even without opposition",
+        "The purpose is to avoid confusion of the public and to protect a registered mark and its established goodwill",
+        "The protection of trademarks is a factual issue",
+        "The IPO's findings, upheld by the Court of Appeals, bear great weight and deserve respect",
+        "A decision of the IPO becomes final if the appeal to the Director General is not filed on time"
+      ],
+      "caseIds": [
+        "case-0019"
+      ],
+      "source": {
+        "caseTitle": "Dermaline, Inc. v. Myra Pharmaceuticals, Inc.",
+        "grNumber": "G.R. No. 190065",
+        "url": "https://lawphil.net/judjuris/juri2010/aug2010/gr_190065_2010.html",
+        "part": "Discussion of rejection without opposition and the weight of the IPO's findings",
+        "excerpt": "Verily, when one applies for the registration of a trademark or label which is almost the same or that very closely resembles one already used and registered by another, the application should be rejected and dismissed outright, even without any opposition on the part of the owner and user of a previously registered label or trademark. This is intended not only to avoid confusion on the part of the public, but also to protect an already used and registered trademark and an established goodwill. Besides, the issue on protection of intellectual property, such as trademarks, is factual in nature. The findings of the IPO, upheld on appeal by the same office, and further sustained by the CA, bear great weight and deserves respect from this Court. Moreover, the decision of the IPO had already attained finality when Dermaline failed to timely file its appeal with the IPO Office of the Director General."
+      }
+    },
+    {
+      "id": "q-0347",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "In Dermaline, Inc. v. Myra Pharmaceuticals, Inc., the Court described the Dominancy Test. Which statement correctly describes it?",
+      "choices": {
+        "A": "It requires that the applied mark be an exact duplicate of the registered mark.",
+        "B": "It focuses on the similarity of the prevalent features of the competing marks, and it is applied when the applied mark contains the main, essential and dominant features of the earlier mark and confusion is likely to result.",
+        "C": "It looks mainly at prices, quality and sales outlets to decide whether buyers would be confused.",
+        "D": "It compares the whole labels and packaging of the two products, and gives no weight to the sound of the marks."
+      },
+      "correct": "B",
+      "explanation": "B is correct. The Dominancy Test focuses on the similarity of the prevalent features of the competing trademarks that might cause confusion or deception, and it applies when the mark sought to be registered contains the main, essential and dominant features of the earlier registered mark and confusion is likely. Duplication or imitation is not even required. The important issue is whether use of the marks would likely cause confusion or mistake in the mind of the ordinary purchaser, with greater consideration given to the aural and visual impressions the marks create. A is wrong because duplication or imitation is not required. C is wrong because the test gives little weight to prices, quality, sales outlets and market segments. D describes the Holistic Test, which looks at the entirety of the marks including labels and packaging.",
+      "caseIds": [
+        "case-0019"
+      ],
+      "source": {
+        "caseTitle": "Dermaline, Inc. v. Myra Pharmaceuticals, Inc.",
+        "grNumber": "G.R. No. 190065",
+        "url": "https://lawphil.net/judjuris/juri2010/aug2010/gr_190065_2010.html",
+        "part": "Discussion of the dominancy test",
+        "excerpt": "The Dominancy Test focuses on the similarity of the prevalent features of the competing trademarks that might cause confusion or deception. It is applied when the trademark sought to be registered contains the main, essential and dominant features of the earlier registered trademark, and confusion or deception is likely to result. Duplication or imitation is not even required; neither is it necessary that the label of the applied mark for registration should suggest an effort to imitate."
+      }
+    },
+    {
+      "id": "q-0348",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "According to Dermaline, Inc. v. Myra Pharmaceuticals, Inc., which provision of the Intellectual Property Code explicitly incorporates the dominancy test into law?",
+      "choices": {
+        "A": "Section 122, on how marks are acquired.",
+        "B": "Section 138, on the certificate of registration as prima facie evidence.",
+        "C": "Section 155.1, which prohibits the use in commerce of any reproduction, counterfeit, copy or colorable imitation of a registered mark or the same container or a dominant feature thereof, where such use is likely to cause confusion, mistake or deception.",
+        "D": "Section 147, on the rights conferred by registration."
+      },
+      "correct": "C",
+      "explanation": "C is correct. The Court said that the test of dominancy is now explicitly incorporated into law in Section 155.1, which covers use in commerce of any reproduction, counterfeit, copy or colorable imitation of a registered mark or the same container or a dominant feature thereof in connection with the sale, offering for sale, distribution or advertising of goods or services, where such use is likely to cause confusion, or to cause mistake, or to deceive. The reference to a dominant feature is what writes the dominancy test into law. A, B and D are real provisions that the decision mentions for other purposes: Section 147 gives the registered owner the right to prevent others from using identical or similar marks that would likely cause confusion, and Section 138 makes the certificate of registration prima facie evidence of validity, ownership and exclusive right to use; neither is the provision that incorporates the dominancy test.",
+      "caseIds": [
+        "case-0019"
+      ],
+      "source": {
+        "caseTitle": "Dermaline, Inc. v. Myra Pharmaceuticals, Inc.",
+        "grNumber": "G.R. No. 190065",
+        "url": "https://lawphil.net/judjuris/juri2010/aug2010/gr_190065_2010.html",
+        "part": "Discussion of the dominancy test (Section 155.1)",
+        "excerpt": "The test of dominancy is now explicitly incorporated into law in Section 155.1 of R.A. No. 8293 which provides— 155.1. Use in commerce any reproduction, counterfeit, copy, or colorable imitation of a registered mark or the same container or a dominant feature thereof in connection with the sale, offering for sale, distribution, advertising of any goods or services including other preparatory steps necessary to carry out the sale of any goods or services on or in connection with which such use is likely to cause confusion, or to cause mistake, or to deceive;"
+      }
+    },
+    {
+      "id": "q-0349",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "In Dermaline, Inc. v. Myra Pharmaceuticals, Inc., the applied mark was spelled almost like the registered mark, except for a final letter \"E\" that was pronounced silently, and the two marks were written in different fonts. Why did the Court find a likelihood of confusion despite the different presentation?",
+      "choices": {
+        "A": "Because the two marks were written in the same font.",
+        "B": "Because the marks are almost spelled the same way and pronounced practically the same way in three syllables, so an ordinary buyer who hears the applied mark advertised on the radio would likely associate it with the registered mark.",
+        "C": "Because the applicant had never used any mark before.",
+        "D": "Because the applicant was a foreign company."
+      },
+      "correct": "B",
+      "explanation": "B is correct. The Court acknowledged that the two marks were presented differently, with Dermaline's in script and Myra's in an upright font, but found the likelihood of confusion still apparent because the marks are almost spelled the same except for the final letter \"E\", and are pronounced practically the same way in three syllables, the \"E\" being silent. It gave the example of an ordinary purchaser hearing an advertisement of Dermaline's mark over the radio, who would likely associate it with Myra's registered mark. A is wrong because the fonts were different. C and D are not reasons the Court gave.",
+      "caseIds": [
+        "case-0019"
+      ],
+      "source": {
+        "caseTitle": "Dermaline, Inc. v. Myra Pharmaceuticals, Inc.",
+        "grNumber": "G.R. No. 190065",
+        "url": "https://lawphil.net/judjuris/juri2010/aug2010/gr_190065_2010.html",
+        "part": "Discussion of the comparison of the marks",
+        "excerpt": "This is because they are almost spelled in the same way, except for Dermaline’s mark which ends with the letter \"E,\" and they are pronounced practically in the same manner in three (3) syllables, with the ending letter \"E\" in Dermaline’s mark pronounced silently. Thus, when an ordinary purchaser, for example, hears an advertisement of Dermaline’s applied trademark over the radio, chances are he will associate it with Myra’s registered mark."
+      }
+    },
+    {
+      "id": "q-0350",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "An applicant argues that its mark cannot be confused with a registered mark because its services fall under a different classification from the goods covered by the registered mark. According to Dermaline, Inc. v. Myra Pharmaceuticals, Inc., how should the argument be treated?",
+      "choices": {
+        "A": "It is decisive: marks in different classes can never be confusingly similar.",
+        "B": "It is decisive only if the applicant's services are cheaper.",
+        "C": "It does not eradicate the possibility of mistake on the part of the purchasing public in associating one with the other, especially where both classifications pertain to treatments for the skin.",
+        "D": "It is irrelevant only if the registered mark is more than ten years old."
+      },
+      "correct": "C",
+      "explanation": "C is correct. The Court said that Dermaline's stance that its product belongs to a separate and different classification from Myra's products does not eradicate the possibility that the purchasing public may associate the one with the other, especially considering that both classifications pertain to treatments for the skin. It added that the registered owner enjoys protection in the product and market areas that are the normal potential expansion of its business. A is wrong because the Court did not treat classification as decisive. B is wrong because price carries little weight in the Dominancy Test. D is wrong because the age of the registration is not the test.",
+      "caseIds": [
+        "case-0019"
+      ],
+      "source": {
+        "caseTitle": "Dermaline, Inc. v. Myra Pharmaceuticals, Inc.",
+        "grNumber": "G.R. No. 190065",
+        "url": "https://lawphil.net/judjuris/juri2010/aug2010/gr_190065_2010.html",
+        "part": "Discussion of the classification of the goods and services",
+        "excerpt": "Further, Dermaline’s stance that its product belongs to a separate and different classification from Myra’s products with the registered trademark does not eradicate the possibility of mistake on the part of the purchasing public to associate the former with the latter, especially considering that both classifications pertain to treatments for the skin."
+      }
+    },
+    {
+      "id": "q-0351",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "Under Section 138 of the Intellectual Property Code, as discussed in Dermaline, Inc. v. Myra Pharmaceuticals, Inc., what does a certificate of registration of a mark serve as?",
+      "choices": {
+        "A": "Conclusive proof that no one else may ever use any similar mark for any goods.",
+        "B": "Proof only that the mark was applied for, with no effect on ownership.",
+        "C": "Evidence that is valid only for goods in the same classification as the one registered.",
+        "D": "Prima facie evidence of the validity of the registration, of the registrant's ownership of the mark, and of the registrant's exclusive right to use it in connection with the goods and those related to them specified in the certificate."
+      },
+      "correct": "D",
+      "explanation": "D is correct. The Court noted that the IPO upheld Myra's right under Section 138, which provides that a certificate of registration of a mark is prima facie evidence of the validity of the registration, the registrant's ownership of the mark, and the registrant's exclusive right to use the mark in connection with the goods and those that are related thereto specified in the certificate. A is wrong because the evidence is prima facie, not conclusive. B is wrong because the certificate is evidence of ownership. C is wrong because the exclusive right extends to goods that are related to those specified, not only to the same classification.",
+      "caseIds": [
+        "case-0019"
+      ],
+      "source": {
+        "caseTitle": "Dermaline, Inc. v. Myra Pharmaceuticals, Inc.",
+        "grNumber": "G.R. No. 190065",
+        "url": "https://lawphil.net/judjuris/juri2010/aug2010/gr_190065_2010.html",
+        "part": "Discussion of the IPO's ruling (Section 138)",
+        "excerpt": "The IPO also upheld Myra’s right under Section 138 of R.A. No. 8293, which provides that a certification of registration of a mark is prima facie evidence of the validity of the registration, the registrant’s ownership of the mark, and of the registrant’s exclusive right to use the same in connection with the goods and those that are related thereto specified in the certificate."
       }
     }
   ]
