@@ -2173,8 +2173,10 @@ function showSubjectCounts() {
   document.querySelectorAll(".subject-card[data-subject]").forEach(function (card) {
     const meta = card.querySelector(".subject-meta");
     if (!meta || !contentLoaded) { return; }
-    const questions = withView("official", function () { return questionsFor(card.dataset.subject).length; });
-    const topics = withView("official", function () { return topicsFor(card.dataset.subject).length; });
+    // The same count as the subject screen: every question she can practice there (Cases, Notes
+    // and NotebookLM together) and every topic they're in.
+    const questions = withView("all", function () { return questionsFor(card.dataset.subject).length; });
+    const topics = withView("all", function () { return topicsFor(card.dataset.subject).length; });
     meta.textContent = questions === 0 ? "No questions yet"
       : questions + (questions === 1 ? " question" : " questions") + " · " + topics + (topics === 1 ? " topic" : " topics");
   });
