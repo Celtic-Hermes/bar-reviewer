@@ -14,7 +14,7 @@
       "topic": "Intellectual Property Code",
       "file": "data/content/mercantile-law/intellectual-property-code.json",
       "subtopics": [
-        {"name": "Patents", "rule": null, "essay": ["q-0304", "q-0305", "q-0306", "q-0312", "q-0313", "q-0314"], "mcq": ["q-0307", "q-0308", "q-0309", "q-0310", "q-0311", "q-0315", "q-0316", "q-0317", "q-0318", "q-0319"], "fillblank": []}
+        {"name": "Patents", "rule": null, "essay": ["q-0304", "q-0305", "q-0306", "q-0312", "q-0313", "q-0314", "q-0320", "q-0321", "q-0322"], "mcq": ["q-0307", "q-0308", "q-0309", "q-0310", "q-0311", "q-0315", "q-0316", "q-0317", "q-0318", "q-0319", "q-0323", "q-0324", "q-0325", "q-0326", "q-0327"], "fillblank": []}
       ]
     },
     {
@@ -58,7 +58,8 @@
     {"id": "case-0012", "name": "Steelcase, Inc. v. Design International Selections, Inc.", "grNumber": "G.R. No. 171995", "year": 2012, "subject": "Mercantile Law", "topic": "Commercial Law", "subtopic": "Foreign Investments Act", "status": "draft", "questions": ["q-0288", "q-0289", "q-0290", "q-0291", "q-0292", "q-0293", "q-0294", "q-0295"]},
     {"id": "case-0013", "name": "Magna Ready Mix Concrete Corp. v. Andersen Bjornstad Kane Jacobs, Inc.", "grNumber": "G.R. No. 196158", "year": 2021, "subject": "Mercantile Law", "topic": "Commercial Law", "subtopic": "Foreign Investments Act", "status": "draft", "questions": ["q-0296", "q-0297", "q-0298", "q-0299", "q-0300", "q-0301", "q-0302", "q-0303"]},
     {"id": "case-0014", "name": "E.I. Dupont de Nemours and Co. v. Director Emma C. Francisco, et al.", "grNumber": "G.R. No. 174379", "year": 2016, "subject": "Mercantile Law", "topic": "Intellectual Property Code", "subtopic": "Patents", "status": "draft", "questions": ["q-0304", "q-0305", "q-0306", "q-0307", "q-0308", "q-0309", "q-0310", "q-0311"]},
-    {"id": "case-0015", "name": "Smith Kline Beckman Corp. v. Court of Appeals and Tryco Pharma Corp.", "grNumber": "G.R. No. 126627", "year": 2003, "subject": "Mercantile Law", "topic": "Intellectual Property Code", "subtopic": "Patents", "status": "draft", "questions": ["q-0312", "q-0313", "q-0314", "q-0315", "q-0316", "q-0317", "q-0318", "q-0319"]}
+    {"id": "case-0015", "name": "Smith Kline Beckman Corp. v. Court of Appeals and Tryco Pharma Corp.", "grNumber": "G.R. No. 126627", "year": 2003, "subject": "Mercantile Law", "topic": "Intellectual Property Code", "subtopic": "Patents", "status": "draft", "questions": ["q-0312", "q-0313", "q-0314", "q-0315", "q-0316", "q-0317", "q-0318", "q-0319"]},
+    {"id": "case-0016", "name": "Godines v. Court of Appeals and SV-Agro Enterprises, Inc.", "grNumber": "G.R. No. 97343", "year": 1993, "subject": "Mercantile Law", "topic": "Intellectual Property Code", "subtopic": "Patents", "status": "draft", "questions": ["q-0320", "q-0321", "q-0322", "q-0323", "q-0324", "q-0325", "q-0326", "q-0327"]}
   ],
   "rules": [
     {"id": "rule-0001", "title": "The Rule on the Writ of Amparo", "number": "A.M. No. 07-9-12-SC", "status": "draft", "subject": "Remedial Law", "topic": "Special Proceedings"},

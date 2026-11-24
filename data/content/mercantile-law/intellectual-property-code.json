@@ -31,6 +31,21 @@
       "ruling": "The Court affirmed the Court of Appeals with modification. (1) Only questions of law may be raised in a petition for review on certiorari, and the Court found nothing wrong with the appellate court's conclusions on infringement. (2) The burden of proving infringement is on the plaintiff. The nine claims of the patent never mention Albendazole; when the language of the claims is clear, the patentee is bound by it, and neither the patentee nor the courts may enlarge it. The absence of the word Albendazole is not decisive by itself, but Smith Kline presented no extrinsic evidence that its patent embraces Albendazole. (3) The doctrine of equivalents was not satisfied. It requires the function-means-and-result test, and the patentee must prove all three parts. Both compounds kill parasites, but identity of result is not enough unless the other compound works in substantially the same way, and Smith Kline showed nothing about how Albendazole works; its witness was not qualified as an expert. (4) A divisional application only means that the patented compound is an invention distinct from the other inventions in the original application, and Albendazole was one of those others. (5) The awards of actual damages (lost profits proved only by testimony of Tryco's officers, without documents) and of attorney's fees (no bad faith or malice shown) were deleted. Tryco received P20,000 in temperate damages instead, because it suffered some pecuniary loss that could not be proved with certainty.",
       "keyDoctrine": "The plaintiff in a patent infringement case has the burden of proving infringement. A patentee is bound by the clear language of its claims, and courts cannot enlarge them. Under the doctrine of equivalents, a different substance or device infringes only if it performs substantially the same function in substantially the same way to achieve substantially the same result, and the patentee must prove all three.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2003/aug2003/gr_126627_2003.html"
+    },
+    {
+      "id": "case-0016",
+      "status": "draft",
+      "name": "Godines v. Court of Appeals and SV-Agro Enterprises, Inc.",
+      "grNumber": "G.R. No. 97343",
+      "year": 1993,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "facts": "Letters Patent No. UM-2236, issued in 1976 to Magdalena Villaruz, covers a utility model for a hand tractor or power tiller: a floating (\"turtle\") tiller with a vacuumatic housing float, a harrow, paddy wheels, a protective water covering, a transmission case, an engine foundation, a V-belt drive and an operating handle. SV-Agro Enterprises, Inc. acquired the patent by assignment and published it in 1979, and it made and sold the tillers with the patent imprinted on them. In 1979 its sales at its Molave, Zamboanga del Sur branch fell by more than 50%. It found that Pascual Godines was making and selling similar floating power tillers. SV-Agro told him about the patent and demanded that he stop, and when he did not, it sued him for patent infringement and unfair competition. Godines said that he made tillers only on special order, to his customers' own specifications, and that his tillers were different from SV-Agro's. The trial court held him liable. It made the injunction permanent and awarded P50,000 for damage to SV-Agro's reputation and goodwill, P80,000 for unrealized profits and P8,000 for attorney's fees and expenses. The Court of Appeals affirmed but eliminated the attorney's fees. Godines went to the Supreme Court.",
+      "issue": "Was Godines liable for infringement of the patent and for unfair competition? In particular, did he manufacture and sell the tillers himself, and did his tillers infringe the patented utility model, either literally or under the doctrine of equivalents?",
+      "ruling": "The Court denied the petition and affirmed the Court of Appeals. (1) Whether Godines manufactured and sold the tillers is a question of fact. In a petition under Rule 45 the Court reviews only errors of law, and the findings of fact of the Court of Appeals are conclusive. The lower courts had good reasons to reject his claim that he built tillers only on his customers' specifications: he admitted making and selling tillers before SV-Agro started selling its own, which showed that he made them on his own design; no job orders were ever presented; and building a tiller from verbal instructions alone would be contrary to usual business practice. (2) There are two tests of infringement: literal infringement and the doctrine of equivalents. In literal infringement the court resorts first to the words of the claim and, if the accused matter clearly falls within the claim, infringement is made out. The trial court inspected the tillers and found them virtually the same in form, configuration, design, appearance and parts, operating on the same principles, so the claims and features of the patented model had been copied. (3) The doctrine of equivalents also answered his argument that his tillers were different. Minor modifications do not take a copy outside the patent, since otherwise an unscrupulous copyist could make unimportant and insubstantial changes. Similarities and differences are judged not by names but by what the elements do, so devices that do the same work in substantially the same way and reach substantially the same result are the same even if they differ in name, form or shape. (4) Godines was therefore liable for infringement under Section 37 of Republic Act No. 165, and the Court upheld the finding of unfair competition, quoting Section 29(a) of Republic Act No. 166.",
+      "keyDoctrine": "Infringement is tested by literal infringement and by the doctrine of equivalents. A patentee has the exclusive right to make, use and sell the patented article, and making, using or selling it without authorization is infringement (Section 37, R.A. No. 165). If two devices do the same work in substantially the same way and accomplish substantially the same result, they are the same even if they differ in name, form or shape, so minor changes do not take a copy outside the patent.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri1993/sep1993/gr_97343_1993.html"
     }
   ],
   "questions": [
@@ -491,6 +506,235 @@
         "url": "https://lawphil.net/judjuris/juri2003/aug2003/gr_126627_2003.html",
         "part": "Discussion of the award of attorney's fees",
         "excerpt": "Even if a claimant is compelled to litigate with third persons or to incur expenses to protect its rights, still attorney’s fees may not be awarded where no sufficient showing of bad faith could be reflected in a party’s persistence in a case other than an erroneous conviction of the righteousness of his cause. There exists no evidence on record indicating that petitioner was moved by malice in suing private respondent."
+      }
+    },
+    {
+      "id": "q-0320",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "prompt": "A patent claims a hand tractor with a list of specific parts: a circular floating housing, a front wheel, a protective water covering, a transmission box, a V-shaped inclined handle and an engine base on top of the housing. The patent holder sues a shop owner whose hand tractors, when placed side by side with the patented one and photographed from every angle, have the same parts in the same arrangement and, as the shop owner admits, operate on the same principles. How should a court decide whether there is infringement under the first test of infringement, and what is the likely result? Explain, based on Godines v. Court of Appeals.",
+      "suggestedAnswer": {
+        "answer": "The court applies the test of literal infringement. It looks first to the words of the claims and compares them with the accused product. Because the shop owner's tractors have all the material elements of the claims, the likely result is a finding of infringement.",
+        "legalBasis": "The tests of infringement are (a) literal infringement and (b) the doctrine of equivalents. In literal infringement, resort must be had, in the first instance, to the words of the claim, and if the accused matter clearly falls within the claim, infringement is made out and that is the end of it. To decide this, the court must juxtapose the claims of the patent and the accused product within the overall context of the claims and specifications to see whether there is exact identity of all material elements.",
+        "application": "The court compares the listed parts of the claim with the shop owner's tractors, element by element, and may inspect samples placed alongside the patented one. Here the form, configuration, design and appearance are the same, the parts are virtually the same, and the shop owner himself admits that the two operate on the same principles. The claims and the features of the patented model were evidently copied, so the accused product falls within the claims.",
+        "conclusion": "There is literal infringement, and the shop owner is liable to the patent holder."
+      },
+      "keyPoints": [
+        "Two tests of infringement: literal infringement and the doctrine of equivalents",
+        "In literal infringement, resort first to the words of the claim; if the accused matter clearly falls within the claim, infringement is made out",
+        "The court juxtaposes the claims and the accused product, within the context of the claims and specifications, to see whether there is exact identity of all material elements",
+        "Inspection of samples, similarity of parts and admission that they operate on the same principles support a finding of copying"
+      ],
+      "caseIds": [
+        "case-0016"
+      ],
+      "source": {
+        "caseTitle": "Godines v. Court of Appeals and SV-Agro Enterprises, Inc.",
+        "grNumber": "G.R. No. 97343",
+        "url": "https://lawphil.net/judjuris/juri1993/sep1993/gr_97343_1993.html",
+        "part": "Discussion of the tests of infringement and the trial court's comparison of the tillers",
+        "excerpt": "Tests have been established to determine infringement. These are (a) literal infringement; and (b) the doctrine of equivalents. In using literal infringement as a test, \". . . resort must be had, in the first instance, to the words of the claim. If accused matter clearly falls within the claim, infringement is made out and that is the end of it.\" To determine whether the particular item falls within the literal meaning of the patent claims, the court must juxtapose the claims of the patent and the accused product within the overall context of the claims and specifications, to determine whether there is exact identity of all material elements. … Viewed from any perspective or angle, the power tiller of the defendant is identical and similar to that of the turtle power tiller of plaintiff in form, configuration, design and appearance. The parts or components thereof are virtually the same. … It appears from the foregoing observation of the trial court that these claims of the patent and the features of the patented utility model were copied by petitioner. We are compelled to arrive at no other conclusion but that there was infringement."
+      }
+    },
+    {
+      "id": "q-0321",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "prompt": "A shop owner copies a patented machine but changes its name, makes the housing a little rounder and moves a handle a few centimeters. When sued for infringement, he argues that his machine is different from the patented one, so there is no literal infringement. Is the argument a good defense? Explain, based on Godines v. Court of Appeals.",
+      "suggestedAnswer": {
+        "answer": "No. Under the doctrine of equivalents, minor modifications do not put a copy beyond the reach of the patent. A device that does substantially the same work in substantially the same way to achieve substantially the same result infringes, even if it differs in name, form or shape.",
+        "legalBasis": "Courts adopted the doctrine of equivalents because the logical fallback of a defendant is to say that his product is different. Under it, an infringement also occurs when a device appropriates a prior invention by incorporating its innovative concept and, albeit with some modification and change, performs substantially the same function in substantially the same way to achieve substantially the same result. The reason for the doctrine is that allowing the imitation of a patented invention that copies no literal detail would turn the protection of the patent into a hollow and useless thing and would encourage the unscrupulous copyist to make unimportant and insubstantial changes that take the copy outside the claim.",
+        "application": "The shop owner changed only the name, the roundness of the housing and the position of a handle. Those are unimportant and insubstantial changes. What matters is what the elements do, so the court asks whether the machine performs the same function in substantially the same way and reaches substantially the same result. If so, then differences in name, form or shape are immaterial.",
+        "conclusion": "The defense fails. The shop owner infringes the patent under the doctrine of equivalents even though there is no literal copy."
+      },
+      "keyPoints": [
+        "Doctrine of equivalents: infringement occurs when a device, with some modification, performs substantially the same function in substantially the same way to achieve substantially the same result",
+        "Minor modifications do not take a copy outside the patent",
+        "Reason: otherwise the patent's protection would be hollow, and unscrupulous copyists would make insubstantial changes",
+        "Similarities and differences are judged by what the elements do, not by names; differences of form or name are immaterial"
+      ],
+      "caseIds": [
+        "case-0016"
+      ],
+      "source": {
+        "caseTitle": "Godines v. Court of Appeals and SV-Agro Enterprises, Inc.",
+        "grNumber": "G.R. No. 97343",
+        "url": "https://lawphil.net/judjuris/juri1993/sep1993/gr_97343_1993.html",
+        "part": "Discussion of the doctrine of equivalents",
+        "excerpt": "Recognizing that the logical fallback position of one in the place of defendant is to aver that his product is different from the patented one, courts have adopted the doctrine of equivalents which recognizes that minor modifications in a patented invention are sufficient to put the item beyond the scope of literal infringement. Thus, according to this doctrine, \"(a)n infringement also occurs when a device appropriates a prior invention by incorporating its innovative concept and, albeit with some modification and change, performs substantially the same function in substantially the same way to achieve substantially the same result.\" The reason for the doctrine of equivalents is that to permit the imitation of a patented invention which does not copy any literal detail would be to convert the protection of the patent grant into a hollow and useless thing. Such imitation would leave room for — indeed encourage — the unscrupulous copyist to make unimportant and insubstantial changes and substitutions in the patent which, though adding nothing, would be enough to take the copied matter outside the claim, and hence outside the reach of the law."
+      }
+    },
+    {
+      "id": "q-0322",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "prompt": "A machine shop owner is sued for making and selling copies of a patented machine. He says that he never made machines on his own design, but only on special order, following his customers' own specifications. The courts find that he had been making and selling similar machines long before the patent holder sold its own, that he has no job orders to show, and that it would be unusual for buyers to order such machines on verbal instructions alone. May he re-argue the point before the Supreme Court on a petition for review, and does his defense succeed? Explain, based on Godines v. Court of Appeals.",
+      "suggestedAnswer": {
+        "answer": "No to both. Whether he made and sold the machines is a question of fact that the Supreme Court does not re-examine on a petition for review, and the courts' reasons for rejecting his defense are sound.",
+        "legalBasis": "The jurisdiction of the Supreme Court in a petition for review on certiorari under Rule 45 is limited to errors of law, and the findings of fact of the Court of Appeals are conclusive upon it. Whether the petitioner was manufacturing and selling the items is a question of fact better addressed to the lower courts.",
+        "application": "The trial court found the defense untenable because (1) the shop owner admitted in his Answer that he had been making and selling such machines long before the patent holder started selling its own, which showed that he was principally a manufacturer working on his own specifications and designs; (2) he showed no job orders, although it would be unbelievable for him to make copies without them, especially since he is an engineer and owns the shop; and (3) it is contrary to usual business practice, and costly and time-consuming, for buyers to order machines on verbal instructions alone. The courts therefore established that he made and sold the machines without the patentee's authority.",
+        "conclusion": "He cannot re-argue the fact, and his defense fails. He made and sold the machines without authority."
+      },
+      "keyPoints": [
+        "A petition for review under Rule 45 is limited to errors of law; the findings of fact of the Court of Appeals are conclusive",
+        "Whether the accused manufactured and sold the items is a question of fact for the lower courts",
+        "No job orders were presented, and it would be unusual to make copies without specifications or to order them on verbal instructions",
+        "His admission of long-time manufacturing and selling showed that he made the machines on his own design",
+        "Making and selling without the patentee's authority was established"
+      ],
+      "caseIds": [
+        "case-0016"
+      ],
+      "source": {
+        "caseTitle": "Godines v. Court of Appeals and SV-Agro Enterprises, Inc.",
+        "grNumber": "G.R. No. 97343",
+        "url": "https://lawphil.net/judjuris/juri1993/sep1993/gr_97343_1993.html",
+        "part": "Discussion of whether petitioner manufactured and sold the tillers",
+        "excerpt": "The question of whether petitioner was manufacturing and selling power tillers is a question of fact better addressed to the lower courts. … However, this contention appears untenable in the light of the following circumstances: 1) he admits in his Answer that he has been manufacturing power tillers or hand tractors, selling and distributing them long before plaintiff started selling its turtle power tiller in Zamboanga del Sur and Misamis Occidental, meaning that defendant is principally a manufacturer of power tillers, not upon specification and design of buyers, but upon his own specification and design; 2) it would be unbelievable that defendant would fabricate power tillers similar to the turtle power tillers of plaintiff upon specifications of buyers without requiring a job order where the specification and designs of those ordered are specified. No document was (sic) ever been presented showing such job orders, and it is rather unusual for defendant to manufacture something without the specification and designs, considering that he is an engineer by profession and proprietor of the Ozamis Engineering shop. … Of general acceptance is the rule imbedded in our jurisprudence that \". . . the jurisdiction of the Supreme Court in cases brought to it from the Court of Appeals in a petition for certiorari under Rule 45 of the Rules of Court is limited to the review of errors of law, and that said appellate court's findings of fact are conclusive upon this Court.\" … The fact that petitioner herein manufactured and sold power tillers without patentee's authority has been established by the courts despite petitioner's claims to the contrary."
+      }
+    },
+    {
+      "id": "q-0323",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "prompt": "Under Section 37 of Republic Act No. 165, as applied in Godines v. Court of Appeals, which act is an infringement of a patent?",
+      "choices": {
+        "A": "Selling an unpatented product that is similar in function to the patented one.",
+        "B": "Studying the patented machine in a classroom without selling anything.",
+        "C": "Making, using or selling the patented machine without the patentee's authorization.",
+        "D": "Publishing the patent in a newspaper of general circulation."
+      },
+      "correct": "C",
+      "explanation": "C is correct. Section 37, as quoted in the decision, gives the patentee the exclusive right to make, use and sell the patented machine, article or product, and to use the patented process for the purpose of industry or commerce, throughout the Philippines for the term of the patent, and says that such making, using or selling by any person without the patentee's authorization constitutes infringement. A is wrong because a product that does not fall within the claims, literally or by equivalents, does not infringe; similarity of function alone is not the test. B is wrong because the section speaks of making, using or selling for the purpose of industry or commerce, not of studying. D is wrong because publication of the patent was something SV-Agro did, not an act of infringement. Watch for: this is the provision of the old Patent Law (Republic Act No. 165) applied in the decision; patents are now governed by the Intellectual Property Code, so check its current text.",
+      "caseIds": [
+        "case-0016"
+      ],
+      "source": {
+        "caseTitle": "Godines v. Court of Appeals and SV-Agro Enterprises, Inc.",
+        "grNumber": "G.R. No. 97343",
+        "url": "https://lawphil.net/judjuris/juri1993/sep1993/gr_97343_1993.html",
+        "part": "Discussion of liability (Section 37 of R.A. No. 165)",
+        "excerpt": "Sec. 37. Right of Patentees. — A patentee shall have the exclusive right to make, use and sell the patented machine, article or product, and to use the patented process for the purpose of industry or commerce, throughout the territory of the Philippines for the terms of the patent; and such making, using, or selling by any person without the authorization of the Patentee constitutes infringement of the patent."
+      }
+    },
+    {
+      "id": "q-0324",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "prompt": "In a patent infringement case, the defendant stresses that his machine has a different name from the patented one. According to Godines v. Court of Appeals, how are the similarities or differences between the devices determined?",
+      "choices": {
+        "A": "By the names the parties give to the devices, since the name identifies the invention.",
+        "B": "By the price and appearance of the devices as they are sold to buyers.",
+        "C": "By the date on which each device was first sold in the market.",
+        "D": "In the light of what the elements do, with substantial rather than technical identity as the test; mere differences of form or name are immaterial if the same function is performed in substantially the same way."
+      },
+      "correct": "D",
+      "explanation": "D is correct. The decision adopts the trial court's statement that, in infringement of patent, similarities or differences are determined not by the names of things but in the light of what the elements do, and that substantial rather than technical identity is the test. It is necessary and sufficient for equivalency that the same function can be performed in substantially the same way or manner, or by the same or substantially the same principle or mode of operation, and where these tests are satisfied, mere differences of form or name are immaterial. A is the opposite of the rule. B and C are not part of the test.",
+      "caseIds": [
+        "case-0016"
+      ],
+      "source": {
+        "caseTitle": "Godines v. Court of Appeals and SV-Agro Enterprises, Inc.",
+        "grNumber": "G.R. No. 97343",
+        "url": "https://lawphil.net/judjuris/juri1993/sep1993/gr_97343_1993.html",
+        "part": "Discussion of the doctrine of equivalents (the trial court's observation)",
+        "excerpt": "in infringement of patent, similarities or differences are to be determined, not by the names of things, but in the light of what elements do, and substantial, rather than technical, identity in the test. More specifically, it is necessary and sufficient to constitute equivalency that the same function can be performed in substantially the same way or manner, or by the same or substantially the same, principle or mode of operation; but where these tests are satisfied, mere differences of form or name are immaterial."
+      }
+    },
+    {
+      "id": "q-0325",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "prompt": "A patent holder sues a competitor for infringement but cannot show that the competitor copied its device in every particular. According to Godines v. Court of Appeals, what must the patent holder show to establish infringement?",
+      "choices": {
+        "A": "That the defendant copied the device in every particular.",
+        "B": "Proof that the defendant adopted the substance of the thing is sufficient; it is not essential to show adoption in every particular.",
+        "C": "That the defendant's device has exactly the same mechanism described in the patent, with no difference at all.",
+        "D": "That the defendant acted with malice, because infringement requires bad faith."
+      },
+      "correct": "B",
+      "explanation": "B is correct. The decision quotes the rule that to establish an infringement it is not essential to show that the defendant adopted the device or process in every particular; proof of an adoption of the substance of the thing is sufficient. A construction that limited infringement to the exact mechanism described in the patent would be so obviously unjust that no court could be expected to adopt it. A and C describe exactly that rejected approach. D is wrong because the decision does not require malice for infringement; it says that making, using or selling the patented article without authorization is infringement.",
+      "caseIds": [
+        "case-0016"
+      ],
+      "source": {
+        "caseTitle": "Godines v. Court of Appeals and SV-Agro Enterprises, Inc.",
+        "grNumber": "G.R. No. 97343",
+        "url": "https://lawphil.net/judjuris/juri1993/sep1993/gr_97343_1993.html",
+        "part": "Discussion of the doctrine of equivalents (the trial court's quotation on substantial correspondence)",
+        "excerpt": "To establish an infringement, it is not essential to show that the defendant adopted the device or process in every particular; Proof of an adoption of the substance of the thing will be sufficient. … The law will protect a patentee against imitation of his patent by other forms and proportions. If two devices do the same work in substantially the same way, and accomplish substantially the same result, they are the same, even though they differ in name, form, or shape."
+      }
+    },
+    {
+      "id": "q-0326",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "prompt": "Under Section 29(a) of Republic Act No. 166, as quoted in Godines v. Court of Appeals, which person is deemed guilty of unfair competition?",
+      "choices": {
+        "A": "A person who sells his goods in a way that gives them the general appearance of another manufacturer's or dealer's goods, likely to influence purchasers that the goods are those of someone else, or who clothes the goods with an appearance that deceives the public and defrauds another of legitimate trade.",
+        "B": "A person who sells goods at a lower price than a competitor.",
+        "C": "A person who manufactures goods of the same kind as a competitor's without copying anything.",
+        "D": "A person who advertises his own goods truthfully in a newspaper."
+      },
+      "correct": "A",
+      "explanation": "A is correct. The decision quotes Section 29(a), which says that any person who, in selling his goods, gives them the general appearance of the goods of another manufacturer or dealer, either as to the goods themselves, the wrapping, the devices or words on them, or any other feature of their appearance, which would be likely to influence purchasers that the goods are those of a different manufacturer or dealer, or who otherwise clothes the goods with an appearance that deceives the public and defrauds another of his legitimate trade, is guilty of unfair competition. B, C and D describe lawful competition and do not involve passing off. Watch for: the provision quoted is from the old Trademark Law (Republic Act No. 166), and the decision only quotes it before affirming the finding of unfair competition, so check the current law for the rule that now applies.",
+      "caseIds": [
+        "case-0016"
+      ],
+      "source": {
+        "caseTitle": "Godines v. Court of Appeals and SV-Agro Enterprises, Inc.",
+        "grNumber": "G.R. No. 97343",
+        "url": "https://lawphil.net/judjuris/juri1993/sep1993/gr_97343_1993.html",
+        "part": "Discussion of unfair competition (Section 29 of R.A. No. 166)",
+        "excerpt": "In particular, and without in any way limiting the scope of unfair competition, the following shall be deemed guilty of unfair competition: (a) Any person, who in selling his goods shall give them the general appearance of goods of another manufacturer or dealer, either as to the goods themselves or in the wrapping of the packages in which they are contained, or the devices or words thereon, or in any other feature of their appearance, which would be likely to influence purchasers that the goods offered are those of a manufacturer or dealer other than the actual manufacturer or dealer, or who otherwise clothes the goods with such appearance as shall deceive the public and defraud another of his legitimate trade."
+      }
+    },
+    {
+      "id": "q-0327",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "prompt": "A defendant found liable for patent infringement asks the Supreme Court, by petition for review under Rule 45, to review the lower courts' finding that he made and sold the patented machines. According to Godines v. Court of Appeals, what is the Supreme Court's approach?",
+      "choices": {
+        "A": "It re-weighs all the evidence, because patent cases are technical.",
+        "B": "It reviews only the trial court's findings and ignores the Court of Appeals.",
+        "C": "Whether he made and sold them is a question of fact; its review is limited to errors of law, and the Court of Appeals' findings of fact are conclusive upon it.",
+        "D": "It automatically remands the case for a new trial."
+      },
+      "correct": "C",
+      "explanation": "C is correct. The Court said that whether the petitioner was manufacturing and selling the machines is a question of fact better addressed to the lower courts, and recalled the rule that in a Rule 45 petition its jurisdiction is limited to the review of errors of law, and the appellate court's findings of fact are conclusive upon it. A is wrong because the Court is not a trier of facts. B is wrong because the findings of the Court of Appeals are the ones treated as conclusive. D is wrong because nothing in the decision calls for a new trial; the petition was denied.",
+      "caseIds": [
+        "case-0016"
+      ],
+      "source": {
+        "caseTitle": "Godines v. Court of Appeals and SV-Agro Enterprises, Inc.",
+        "grNumber": "G.R. No. 97343",
+        "url": "https://lawphil.net/judjuris/juri1993/sep1993/gr_97343_1993.html",
+        "part": "Discussion of whether petitioner manufactured and sold the tillers (the scope of review)",
+        "excerpt": "The question of whether petitioner was manufacturing and selling power tillers is a question of fact better addressed to the lower courts. … Of general acceptance is the rule imbedded in our jurisprudence that \". . . the jurisdiction of the Supreme Court in cases brought to it from the Court of Appeals in a petition for certiorari under Rule 45 of the Rules of Court is limited to the review of errors of law, and that said appellate court's findings of fact are conclusive upon this Court.\""
       }
     }
   ]
