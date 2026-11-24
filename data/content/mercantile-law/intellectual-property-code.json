@@ -1,0 +1,253 @@
+{
+  "subject": "Mercantile Law",
+  "topic": "Intellectual Property Code",
+  "cases": [
+    {
+      "id": "case-0014",
+      "status": "draft",
+      "name": "E.I. Dupont de Nemours and Co. v. Director Emma C. Francisco, et al.",
+      "grNumber": "G.R. No. 174379",
+      "year": 2016,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "facts": "E.I. Dupont de Nemours and Company, an American corporation, filed Philippine Patent Application No. 35526 on July 10, 1987 for losartan, a medicine for hypertension and congestive heart failure (sold by its licensee Merck as Cozaar and Hyzaar). Its local resident agent, Atty. Nicanor Mapili, handled the application. An office action was mailed to him on July 19, 1988; he did not respond, and the application was deemed abandoned on September 20, 1988. Nothing more happened until December 2000, when Dupont's new lawyers asked the Intellectual Property Office (IPO) for an office action. Dupont said Atty. Mapili never told it about the abandonment, and that it only learned of his death in 1996. In May 2002 it petitioned to revive the application. The Director of Patents denied the petition as filed out of time, and the IPO Director General affirmed. The Court of Appeals first granted Dupont's petition. But Therapharma, Inc., a local competitor that had registered its own losartan product (Lifezar) with the Bureau of Food and Drugs, was allowed to intervene, and the Court of Appeals then reversed itself and denied the revival. Dupont went to the Supreme Court.",
+      "issue": "(1) Could the Court of Appeals allow Therapharma to intervene in the appeal, and was a petition under Rule 45 the proper remedy? (2) Could the abandoned patent application be revived about 13 years after it was abandoned, when it was Dupont's own agent who had failed to act and Dupont waited years to ask for its status? (3) Does a right of priority under the Paris Convention keep an invention out of the public domain? (4) Would reviving the application prejudice the public interest?",
+      "ruling": "The Court denied the petition and affirmed the Court of Appeals' Resolution allowing the intervention and its Amended Decision denying revival. (1) Because the Court of Appeals had already decided both the intervention and the merits, a Rule 45 petition was the proper remedy. The IPO's own rules against intervention bind only proceedings inside the agency; in the Court of Appeals the Rules of Court (Rule 19) apply, and Therapharma had a legal interest because Merck had threatened it with legal action. (2) The application could not be revived. The rules allow revival only within four months from abandonment (the Intellectual Property Code even provides three months) and give no exception, so a petition filed 13 years later was out of time even if the delay had been excusable. (3) Even if the period could be extended, Dupont was inexcusably negligent. Its agent's negligence bound it, and a foreign client has a duty to keep itself updated on its local application: it asked for a status update only eight years after filing, and then waited four more years after learning of its agent's death. The period runs from the mailing of the notice, not from actual notice, so Schuartz v. Court of Appeals applies. (4) A right of priority is not a patent. It matters only when two applications conflict, gives no property right without a patent, and does not take an invention out of the public domain. (5) Public interest would also be prejudiced, because a patent on losartan could end the competition that had lowered prices.",
+      "keyDoctrine": "An abandoned patent application can be revived only within the short period fixed by the rules (four months under the old rules and the implementing rules; three months under Section 133.4 of the Intellectual Property Code), and no exception extends it. Counsel's negligence binds the applicant, and a foreign applicant must itself keep informed about its local application. A right of priority is not a patent: no patent, no protection.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2016/aug2016/gr_174379_2016.html"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q-0304",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "prompt": "A foreign company's Philippine patent application was declared abandoned after its local agent failed to answer an office action from the patent office. Eight months after the date of abandonment, the company petitions to revive the application. It proves that its agent hid the office action from it, and it attaches a complete proposed response and pays every required fee. May the application be revived? Explain, based on E.I. Dupont de Nemours v. Director Francisco.",
+      "suggestedAnswer": {
+        "answer": "No. The application cannot be revived. The rules allow revival only within a short fixed period from the date of abandonment, and a petition filed after that period is out of time whatever the reason for the delay.",
+        "legalBasis": "Under Section 113 of the 1962 Revised Rules of Practice, an abandoned application may be revived within four months from the date of abandonment, and an application not revived within the specified period is deemed forfeited. The later rules keep the four-month period (Rules 929 and 930 of the implementing rules), and Section 133.4 of the Intellectual Property Code provides a shorter period of three months. None of them gives an exception that could extend the period.",
+        "application": "The company filed its petition eight months after abandonment, which is later than four months and also later than three. The Court held that even if the delay was unavoidable, or the failure to prosecute was due to fraud, accident, mistake or excusable negligence, or the petition came with a complete proposed response and full payment of fees, the petition would still be denied because the regulations provide only a fixed period. So the agent's concealment, the proposed response and the fees do not help the company.",
+        "conclusion": "The application stays forfeited. Revival is not available after the period fixed by the rules, even for good cause."
+      },
+      "keyPoints": [
+        "An abandoned patent application may be revived only within a short fixed period from abandonment (four months under the old rules and the implementing rules; three months under Section 133.4 of the Intellectual Property Code)",
+        "No exception extends the period, even if the delay was unavoidable or due to fraud, accident, mistake or excusable negligence",
+        "A complete proposed response and payment of the fees do not cure a late petition",
+        "An application not revived in time is deemed forfeited"
+      ],
+      "caseIds": [
+        "case-0014"
+      ],
+      "source": {
+        "caseTitle": "E.I. Dupont de Nemours and Co. v. Director Emma C. Francisco, et al.",
+        "grNumber": "G.R. No. 174379",
+        "url": "https://lawphil.net/judjuris/juri2016/aug2016/gr_174379_2016.html",
+        "part": "Part IV (the period for reviving an abandoned application)",
+        "excerpt": "An abandoned patent application may only be revived within four (4) months from the date of abandonment. No extension of this period is provided by the 1962 Revised Rules of Practice. … Even if the delay was unavoidable, or the failure to prosecute was due to fraud, accident, mistake, or excusable negligence, or the Petition was accompanied by a complete proposed response, or all fees were paid, the Petition would still be denied since these regulations only provide a four (4 )- month period within which to file for the revival of the application. The rules do not provide any exception that could extend this four (4)-month period to 13 years."
+      }
+    },
+    {
+      "id": "q-0305",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "prompt": "A foreign inventor leaves all of its Philippine patent matters to one local lawyer. The lawyer dies. Years later the inventor learns of the death and appoints a new local agent, but it waits several more years before asking the patent office about its pending application, which turns out to have been declared abandoned long before. The inventor argues that it should not suffer for its deceased lawyer's failure to act. Is the inventor right? Explain, based on E.I. Dupont de Nemours v. Director Francisco.",
+      "suggestedAnswer": {
+        "answer": "No. The inventor is bound by its lawyer's negligence, and it was itself negligent, because a foreign client has a duty to keep itself informed about the progress of its local patent application.",
+        "legalBasis": "Negligence is inexcusable if it could have been avoided through ordinary diligence and prudence, and the negligence of counsel binds the client. A foreign client may put its trust and confidence in its local resident agent, but it has a correlative duty to be diligent in keeping itself updated on its applications. As Bernardo v. Court of Appeals is quoted, no prudent party leaves the fate of its case entirely to its lawyer. In Schuartz v. Court of Appeals, applicants lost their patent applications because their counsel did not notice the notices of abandonment or revive within the period.",
+        "application": "The inventor asked for a status update only many years after filing. Even after it learned of its lawyer's death and replaced him, it waited years more before asking the patent office. Appointing a new agent did not revive the application: the power of attorney only told the office where to send notices on pending applications, and an application already abandoned and archived is not brought up again until a specific status update is requested. The inventor's own lack of prudence, together with its agent's negligence, caused the loss.",
+        "conclusion": "The inventor cannot disown its lawyer's conduct. Its negligence was inexcusable, so it cannot be relieved of the abandonment."
+      },
+      "keyPoints": [
+        "Negligence is inexcusable if ordinary diligence and prudence could have avoided it",
+        "The negligence of counsel binds the client",
+        "A foreign client has a correlative duty to keep itself updated on the progress of its local patent application",
+        "Appointing a new agent does not revive an application already abandoned and archived; the office acts only when a status update is requested",
+        "Schuartz v. Court of Appeals applies: applicants lose their rights when their counsel fails to notice abandonment and to revive in time"
+      ],
+      "caseIds": [
+        "case-0014"
+      ],
+      "source": {
+        "caseTitle": "E.I. Dupont de Nemours and Co. v. Director Emma C. Francisco, et al.",
+        "grNumber": "G.R. No. 174379",
+        "url": "https://lawphil.net/judjuris/juri2016/aug2016/gr_174379_2016.html",
+        "part": "Part V (inexcusable negligence)",
+        "excerpt": "Negligence is inexcusable if its commission could have been avoided through ordinary diligence and prudence. It is also settled that negligence of counsel binds the client … Although it was in petitioner's discretion as a foreign client to put its complete trust and confidence on its local resident agent, there was a correlative duty on its part to be diligent in keeping itself updated on the progress of its patent applications. Its failure to be informed of the abandonment of its patent application was caused by its own lack of prudence."
+      }
+    },
+    {
+      "id": "q-0306",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "prompt": "A foreign drug company applied for a patent in its home country, then applied in the Philippines within twelve months, claiming priority. The Philippine application was later declared abandoned and was never revived. A Philippine company now sells the same medicine locally. The foreign company argues that, because of its right of priority under the Paris Convention, the invention never became part of the public domain in the Philippines, and the local company must stop. Is it right? Explain, based on E.I. Dupont de Nemours v. Director Francisco.",
+      "suggestedAnswer": {
+        "answer": "No. A right of priority is not a patent. It gives no property right in the invention without an actual patent, and it has no bearing on the revival of an abandoned application.",
+        "legalBasis": "Under Section 31 of the Intellectual Property Code, an applicant who earlier applied for the same invention in another country that gives Filipinos similar privileges is treated as having filed on the foreign filing date, if the Philippine application claims priority, is filed within twelve months and the required certified copy is filed in time. Under Section 29 (first to file), where two or more applications are filed for the same invention, the right to the patent belongs to the applicant with the earliest filing or priority date. So priority matters only when there are conflicting applications for the same invention. A right of priority does not automatically give a patent, and without a patent there is no protection.",
+        "application": "The local company has no conflicting patent application with the foreign company, so the priority date is irrelevant. The foreign company's application was abandoned and never revived, so there is no patent and no property right that can be enforced against the local company. If a right of priority were enough, a patent holder in any Paris Convention country would never need to apply for patents elsewhere.",
+        "conclusion": "The foreign company cannot stop the local company. Priority gives a preference between competing applicants; it does not replace a patent."
+      },
+      "keyPoints": [
+        "Section 31: a foreign filing date can be claimed if the Philippine application claims priority, is filed within twelve months and the certified copy is filed in time",
+        "Section 29 (first to file): between conflicting applications for the same invention, the earliest filing or priority date prevails",
+        "A right of priority is relevant only when two or more applications conflict",
+        "A right of priority is not equivalent to a patent and gives no property rights in the absence of an actual patent",
+        "Priority has no bearing on the revival of an abandoned application"
+      ],
+      "caseIds": [
+        "case-0014"
+      ],
+      "source": {
+        "caseTitle": "E.I. Dupont de Nemours and Co. v. Director Emma C. Francisco, et al.",
+        "grNumber": "G.R. No. 174379",
+        "url": "https://lawphil.net/judjuris/juri2016/aug2016/gr_174379_2016.html",
+        "part": "Part VI (right of priority)",
+        "excerpt": "The right of priority given to a patent applicant is only relevant when there are two or more conflicting patent applications on the same invention. Because a right of priority does not automatically grant letters patent to an applicant, possession of a right of priority does not confer any property rights on the applicant in the absence of an actual patent. … However, this right of priority does not immediately entitle a patent applicant the grant of a patent. A right of priority is not equivalent to a patent. Otherwise, a patent holder of any member-state of the Paris Convention need not apply for patents in other countries where it wishes to exercise its patent."
+      }
+    },
+    {
+      "id": "q-0307",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "prompt": "The procedural rules of an intellectual property office say that proceedings to revive a patent application are strictly between the examiner and the applicant, and they do not allow third parties to intervene. On appeal to the Court of Appeals, a competitor asks to intervene. Under E.I. Dupont de Nemours v. Director Francisco, which statement is correct?",
+      "choices": {
+        "A": "The prohibition binds the Court of Appeals too, because the appeal is a continuation of the same proceeding.",
+        "B": "The Court of Appeals may never allow intervention in an appeal from an administrative agency.",
+        "C": "The prohibition applies only to proceedings before the agency; in the Court of Appeals, the Rules of Court decide whether the competitor may intervene.",
+        "D": "The competitor may intervene as a matter of right once the appeal is filed, and the Court of Appeals has no discretion."
+      },
+      "correct": "C",
+      "explanation": "C is correct. The Court held that an agency's procedural rules govern only proceedings within the agency. Once the matter is before the Court of Appeals, the Rules of Court apply, and Rule 19 gives the court discretion to decide whether to give due course to an intervention. The court asks whether the intervenor has a legal interest, whether the intervention will unduly delay or prejudice the rights of the original parties, and whether its rights can be protected in a separate proceeding. A is wrong because any earlier prohibition on intervention does not apply in the Court of Appeals. B is wrong because the Court of Appeals has discretion under Rule 19 and may allow intervention. D is wrong because intervention is a matter of the court's sound discretion, not a matter of right.",
+      "caseIds": [
+        "case-0014"
+      ],
+      "source": {
+        "caseTitle": "E.I. Dupont de Nemours and Co. v. Director Emma C. Francisco, et al.",
+        "grNumber": "G.R. No. 174379",
+        "url": "https://lawphil.net/judjuris/juri2016/aug2016/gr_174379_2016.html",
+        "part": "Part III (intervention before the Court of Appeals)",
+        "excerpt": "Rule 19 of the Rules of Court provides that a court has the discretion to determine whether to give due course to an intervention. … If an administrative agency's procedural rules expressly prohibit an intervention by third parties, the prohibition is limited only to the proceedings before the administrative agency. Once the matter is brought before the Court of Appeals in a petition for review, any prior prohibition on intervention does not apply since the only question to be determined is whether the intervenor has established a right to intervene under the Rules of Court."
+      }
+    },
+    {
+      "id": "q-0308",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "prompt": "In an appeal from an intellectual property office, the Court of Appeals allows a competitor to intervene and then decides the case on the merits against the applicant. The applicant wants to challenge both rulings before the Supreme Court. According to E.I. Dupont de Nemours v. Director Francisco, what is the proper remedy?",
+      "choices": {
+        "A": "A petition for review on certiorari under Rule 45, because the Court of Appeals has already resolved both the intervention and the merits.",
+        "B": "A special civil action of certiorari under Rule 65, because the grant of intervention is an interlocutory order.",
+        "C": "A special civil action of certiorari under Rule 65 first, and only after it is decided, a petition under Rule 45.",
+        "D": "A motion for reconsideration before the Director General of the intellectual property office."
+      },
+      "correct": "A",
+      "explanation": "A is correct. Intervention results in an interlocutory order, which is generally reviewable only by certiorari under Rule 65 on a clear showing of grave abuse of discretion. But when the Court of Appeals has already resolved the intervention and the merits of the case, an appeal by petition for review on certiorari under Rule 45 is the proper remedy. Rule 65 corrects errors of jurisdiction, while Rule 45 is a mode of appeal that corrects errors of judgment, and whether intervention is proper is a question of law. B describes the usual route when only the interlocutory order is challenged, which is not this situation. C is wrong because the Court did not require two petitions in sequence. D is wrong because the case had already gone past the intellectual property office to the Court of Appeals.",
+      "caseIds": [
+        "case-0014"
+      ],
+      "source": {
+        "caseTitle": "E.I. Dupont de Nemours and Co. v. Director Emma C. Francisco, et al.",
+        "grNumber": "G.R. No. 174379",
+        "url": "https://lawphil.net/judjuris/juri2016/aug2016/gr_174379_2016.html",
+        "part": "Part I (the proper mode of appeal)",
+        "excerpt": "However, when the Court of Appeals has already resolved the question of intervention and the merits of the case, an appeal through a petition for review on certiorari under Rule 45 of the Rules of Court is the proper remedy. … The special civil action of certiorari under Rule 65 is intended to correct errors of jurisdiction. … A petition for review under Rule 45, on the other hand, is a mode of appeal intended to correct errors of judgment."
+      }
+    },
+    {
+      "id": "q-0309",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "prompt": "In E.I. Dupont de Nemours v. Director Francisco, the Court stressed that a patent holder of an invention relating to food or medicine does not enjoy an absolute monopoly. Under Republic Act No. 165, as the decision discusses it, when may a compulsory license be granted to an applicant for such an invention if it is necessary for public health or safety?",
+      "choices": {
+        "A": "At any time after the patent application is filed.",
+        "B": "One year after the patent is granted.",
+        "C": "Ten years after the patent is granted.",
+        "D": "Three years after the grant of the patent."
+      },
+      "correct": "D",
+      "explanation": "D is correct. The decision states that under Republic Act No. 165 a compulsory license may be granted to any applicant three years after the grant of a patent if the invention relates to food or medicine necessary for public health or safety. Quoting Smith Kline & French Laboratories v. Court of Appeals, it explains that the aim was not only to let others supply the public with the patented product but also to prevent the growth of monopolies, and the patentee is not deprived of all rights because he enjoys three years of complete monopoly and then a licensing agreement with a reasonable royalty. A, B and C do not match the period stated in the decision. Watch for: this is the rule of Republic Act No. 165 as quoted in the decision; compulsory licensing is now governed by the Intellectual Property Code, so check its current text.",
+      "caseIds": [
+        "case-0014"
+      ],
+      "source": {
+        "caseTitle": "E.I. Dupont de Nemours and Co. v. Director Emma C. Francisco, et al.",
+        "grNumber": "G.R. No. 174379",
+        "url": "https://lawphil.net/judjuris/juri2016/aug2016/gr_174379_2016.html",
+        "part": "Part VII (limits on a patent holder's monopoly, compulsory licensing)",
+        "excerpt": "Under Republic Act No. 165, a compulsory license may be granted to any applicant three (3) years after the grant of a patent if the invention relates to food or medicine necessary for public health or safety. … In the explanatory note of Bill No. 1156 which eventually became R.A. No. 165, the legislative intent in the grant of a compulsory license was not only to afford others an opportunity to provide the public with the quantity of the patented product, but also to prevent the growth of monopolies."
+      }
+    },
+    {
+      "id": "q-0310",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "prompt": "Company X files its Philippine patent application for a process on March 1. Company Y, which independently made the same invention, had filed for it in Japan on January 10 of the same year, and then filed in the Philippines on May 20, expressly claiming priority and filing the required certified copy in time. Japan gives Filipinos similar privileges. Under the first-to-file and priority provisions quoted in E.I. Dupont de Nemours v. Director Francisco, who has the better right to the patent?",
+      "choices": {
+        "A": "Company X, because it filed first in the Philippines.",
+        "B": "Company Y, because its application is considered filed on January 10, the earliest priority date.",
+        "C": "Whichever company first started using the process in the Philippines.",
+        "D": "Both equally, because each filed an application for the same invention."
+      },
+      "correct": "B",
+      "explanation": "B is correct. Section 31 of the Intellectual Property Code treats an application by a person who has previously applied for the same invention in another country that gives Filipinos similar privileges as filed on the date of the foreign application, provided the local application expressly claims priority, is filed within twelve months of the earliest foreign filing, and the certified copy and English translation are filed within six months. Company Y met those conditions, so its application counts as filed on January 10. Under Section 29, where two or more applications are filed for the same invention, the right belongs to the applicant with the earliest filing date or the earliest priority date, which is Company Y. A is wrong because the Philippine filing date is not the only date that counts. C is wrong because the test is the filing or priority date, not first use. D is wrong because the right to the patent belongs to one applicant. Watch for: a right of priority only decides between conflicting applications; it is not itself a patent.",
+      "caseIds": [
+        "case-0014"
+      ],
+      "source": {
+        "caseTitle": "E.I. Dupont de Nemours and Co. v. Director Emma C. Francisco, et al.",
+        "grNumber": "G.R. No. 174379",
+        "url": "https://lawphil.net/judjuris/juri2016/aug2016/gr_174379_2016.html",
+        "part": "Part VI (Sections 31 and 29 of the Intellectual Property Code)",
+        "excerpt": "SECTION 31. Right of Priority. - An application for patent filed by any person who has previously applied for the same invention in another country which by treaty, convention, or law affords similar privileges to Filipino citizens, shall be considered as filed as of the date of filing the foreign application: … SECTION 29. First to File Rule. - If two (2) or more persons have made the invention separately and independently of each other, the right to the patent shall belong to the person who filed an application for such invention, or where two or more applications are filed for the same invention, to the applicant who has the earliest filing date or, the earliest priority date."
+      }
+    },
+    {
+      "id": "q-0311",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "prompt": "In E.I. Dupont de Nemours v. Director Francisco, the Court described the three-fold purpose of patent law. Which of the following is one of those purposes?",
+      "choices": {
+        "A": "To let an inventor keep an invention secret and still enjoy protection indefinitely.",
+        "B": "To make patents easy to obtain so that as many ideas as possible are protected.",
+        "C": "To promote the disclosure of inventions, so that the public may practice them once the patent expires.",
+        "D": "To keep ideas that are already in the public domain out of the public's reach."
+      },
+      "correct": "C",
+      "explanation": "C is correct. The Court quoted the three purposes: first, to foster and reward invention; second, to promote disclosure of inventions to stimulate further innovation and to permit the public to practice the invention once the patent expires; third, the stringent requirements for patent protection ensure that ideas in the public domain remain there for the free use of the public. A is wrong because the bargain is exclusive rights for a limited period in return for disclosure, and an inventor who keeps the invention secret is not protected by a patent. B is wrong because the requirements are strict, not easy. D is the opposite of the third purpose, which keeps public domain ideas free for everyone to use.",
+      "caseIds": [
+        "case-0014"
+      ],
+      "source": {
+        "caseTitle": "E.I. Dupont de Nemours and Co. v. Director Emma C. Francisco, et al.",
+        "grNumber": "G.R. No. 174379",
+        "url": "https://lawphil.net/judjuris/juri2016/aug2016/gr_174379_2016.html",
+        "part": "Part VII (the purpose of the patent system)",
+        "excerpt": "The patent law has a three-fold purpose: \"first, patent law seeks to foster and reward invention; second, it promotes disclosures of inventions to stimulate further innovation and to permit the public to practice the invention once the patent expires; third, the stringent requirements for patent protection. seek to ensure that ideas in the public domain remain there for the free use of the public.\""
+      }
+    }
+  ]
+}

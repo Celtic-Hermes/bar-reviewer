@@ -27,6 +27,7 @@ Use these exact names everywhere (data, menus, filters):
 Topics so far (use these exact names):
 - Mercantile Law → **Commercial Law** (renamed from Communication Law; so far the privacy cases: Zulueta, Hing, Vivares, Cadajas, Regala, IBP v. Purisima)
 - Legal and Judicial Ethics → **Notarial Practice**
+- Mercantile Law → **Intellectual Property Code** (cases from the builder's list of 16 IP decisions, case-0014 to case-0029, each with 3 essay and 5 multiple-choice questions; sub-topics **Patents**, **Trademarks and Unfair Competition**, **Copyright**, the same names the NotebookLM questions use)
 - Remedial Law → **Special Proceedings** → sub-topic **Writ of Amparo** (fill-in-the-blank items, one per section of A.M. No. 07-9-12-SC, q-0056 to q-0082)
 - Remedial Law → **Special Proceedings** → sub-topic **Custody of Minors and Habeas Corpus** (fill-in-the-blank items, one per section of A.M. No. 03-04-04-SC, q-0083 to q-0104)
 - Remedial Law → **Special Proceedings** → sub-topic **Writ of Habeas Data** (fill-in-the-blank items, one per section of A.M. No. 08-1-16-SC, q-0105 to q-0129)

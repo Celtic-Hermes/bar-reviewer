@@ -10,6 +10,14 @@
       ]
     },
     {
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "file": "data/content/mercantile-law/intellectual-property-code.json",
+      "subtopics": [
+        {"name": "Patents", "rule": "G.R. No. 174379", "essay": ["q-0304", "q-0305", "q-0306"], "mcq": ["q-0307", "q-0308", "q-0309", "q-0310", "q-0311"], "fillblank": []}
+      ]
+    },
+    {
       "subject": "Remedial Law",
       "topic": "Special Proceedings",
       "file": "data/content/remedial-law/special-proceedings.json",
@@ -48,7 +56,8 @@
     {"id": "case-0010", "name": "GIOS-Samar, Inc. v. DOTC", "grNumber": "G.R. No. 217158", "year": 2019, "subject": "Mercantile Law", "topic": "Commercial Law", "subtopic": "Foreign Investments Act", "status": "draft", "questions": ["q-0272", "q-0273", "q-0274", "q-0275", "q-0276", "q-0277", "q-0278", "q-0279"]},
     {"id": "case-0011", "name": "Narra Nickel Mining and Development Corp. v. Redmont Consolidated Mines Corp.", "grNumber": "G.R. No. 195580", "year": 2014, "subject": "Mercantile Law", "topic": "Commercial Law", "subtopic": "Foreign Investments Act", "status": "draft", "questions": ["q-0280", "q-0281", "q-0282", "q-0283", "q-0284", "q-0285", "q-0286", "q-0287"]},
     {"id": "case-0012", "name": "Steelcase, Inc. v. Design International Selections, Inc.", "grNumber": "G.R. No. 171995", "year": 2012, "subject": "Mercantile Law", "topic": "Commercial Law", "subtopic": "Foreign Investments Act", "status": "draft", "questions": ["q-0288", "q-0289", "q-0290", "q-0291", "q-0292", "q-0293", "q-0294", "q-0295"]},
-    {"id": "case-0013", "name": "Magna Ready Mix Concrete Corp. v. Andersen Bjornstad Kane Jacobs, Inc.", "grNumber": "G.R. No. 196158", "year": 2021, "subject": "Mercantile Law", "topic": "Commercial Law", "subtopic": "Foreign Investments Act", "status": "draft", "questions": ["q-0296", "q-0297", "q-0298", "q-0299", "q-0300", "q-0301", "q-0302", "q-0303"]}
+    {"id": "case-0013", "name": "Magna Ready Mix Concrete Corp. v. Andersen Bjornstad Kane Jacobs, Inc.", "grNumber": "G.R. No. 196158", "year": 2021, "subject": "Mercantile Law", "topic": "Commercial Law", "subtopic": "Foreign Investments Act", "status": "draft", "questions": ["q-0296", "q-0297", "q-0298", "q-0299", "q-0300", "q-0301", "q-0302", "q-0303"]},
+    {"id": "case-0014", "name": "E.I. Dupont de Nemours and Co. v. Director Emma C. Francisco, et al.", "grNumber": "G.R. No. 174379", "year": 2016, "subject": "Mercantile Law", "topic": "Intellectual Property Code", "subtopic": "Patents", "status": "draft", "questions": ["q-0304", "q-0305", "q-0306", "q-0307", "q-0308", "q-0309", "q-0310", "q-0311"]}
   ],
   "rules": [
     {"id": "rule-0001", "title": "The Rule on the Writ of Amparo", "number": "A.M. No. 07-9-12-SC", "status": "draft", "subject": "Remedial Law", "topic": "Special Proceedings"},
