@@ -166,6 +166,21 @@
       "ruling": "The Court denied both petitions and affirmed the Court of Appeals. (1) On exemplary damages (G.R. No. 217781): when the dispositive portion (fallo) conflicts with the body of a decision, the fallo prevails, because it is the final order and the body is merely a statement ordering nothing. The exception, when the body so clearly shows a mistake in the dispositive portion, did not apply, because the mistake was in the body: the Court of Appeals only meant to adopt the Director General's award, which had been nominal damages and attorney's fees. In any event, SMPFCI did not prove its right to exemplary damages. They require that the claimant first establish its right to moral, temperate, liquidated or compensatory damages, and SMPFCI failed to prove its claimed foregone income. (2) On unfair competition (G.R. No. 217788): under Section 168 of the Intellectual Property Code, unfair competition is passing off one's goods as those of another, and the essential elements are (a) confusing similarity in the general appearance of the goods and (b) intent to deceive the public and defraud a competitor. The two packages used paper ham bags, both predominantly red, with the same layout, so Foodsphere's packaging in its entirety (not merely the PISTA mark) was confusingly similar. Foodsphere's intent to deceive was shown by its switch from its old box to the same kind of bag with the same layout, and it can be inferred from the similarity of the appearance of the goods. Unfair competition is a question of fact, and the Director General's findings, supported by substantial evidence and affirmed by the Court of Appeals, are respected.",
       "keyDoctrine": "Unfair competition is passing off one's goods as those of another, and its elements are confusing similarity in the general appearance of the goods and intent to deceive the public and defraud a competitor; the confusing similarity may come from packaging and not only from the marks, and the intent may be inferred from the similarity of the appearance of the goods. When the fallo and the body of a decision conflict, the fallo prevails. Exemplary damages need an established right to moral, temperate, liquidated or compensatory damages.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2018/jun2018/gr_217781_2018.html"
+    },
+    {
+      "id": "case-0025",
+      "status": "draft",
+      "name": "Joaquin, Jr. and BJ Productions, Inc. v. Drilon, et al.",
+      "grNumber": "G.R. No. 108946",
+      "year": 1999,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "facts": "BJ Productions, Inc. (BJPI) held Certificate of Copyright No. M922, dated January 28, 1971, for Rhoda and Me, a dating game show aired from 1970 to 1977. In 1973 it filed with the National Library an addendum describing the show's format and style of presentation. In July 1991 Francisco Joaquin, Jr., BJPI's president, saw an episode of It's a Date, produced by IXL Productions, Inc. and aired on RPN Channel 9. He demanded in two letters that IXL stop airing it. IXL's president, Gabriel Zosa, apologized and asked for a meeting, but IXL kept airing the show, and it registered its own copyright for the first episode of It's a Date in August 1991. BJPI filed a complaint, and an information for violation of P.D. No. 49 (the copyright law then in force) was filed in the Regional Trial Court against Zosa and certain RPN officers. Zosa asked the Department of Justice to review the prosecutor's finding of probable cause. On August 12, 1992, Secretary of Justice Franklin Drilon reversed the prosecutor and directed him to move for the dismissal of the case, ruling that the format of a dating game show is not copyrightable and that BJPI had not presented the master tape. BJPI's motion for reconsideration was denied, and Joaquin and BJPI went to the Supreme Court by petition for certiorari. They argued that the Secretary of Justice gravely abused his discretion by relying on the non-presentation of the master tape, which the respondents had not raised, and by deciding what is copyrightable, which, they said, only the regional trial court may decide.",
+      "issue": "(1) May the Secretary of Justice reverse a finding of probable cause on a ground, the master tape, that was not raised during the preliminary investigation, and may he make a preliminary determination of what is copyrightable? (2) Is the format or mechanics of a television show protected by copyright? (3) Was the presentation of the master videotape necessary to determine probable cause?",
+      "ruling": "The Court dismissed the petition. (1) In reviewing a prosecutor's resolution, the Secretary of Justice is not precluded from considering errors, although unassigned, to determine whether there is probable cause; he must make his own finding and is not confined to the issues the parties raised, and his findings are not reviewable unless he committed grave abuse. Whether the format of a show is protected by copyright is a legal question for the court, but this does not prevent the Secretary from making a preliminary determination of it in deciding whether there is probable cause. (2) The format of a show is not copyrightable. Copyright is purely a statutory right, obtainable only for subjects that the statute enumerates, and Section 2 of P.D. No. 49, which is substantially the same as Section 172 of the Intellectual Property Code, does not list the format or mechanics of a television show. It refers to finished works, not concepts, and copyright does not extend to an idea, procedure, process, system, method of operation, concept or principle (Section 175 of the Code). (3) BJPI's copyright covers the audio-visual recordings of each episode of Rhoda and Me, as cinematographic works under Section 2(M), not the general concept or format. For that reason the investigating prosecutor needed to compare the videotapes, and a mere written description of the formats was insufficient: the master videotape was indispensable to determining probable cause, because a television show includes more than words can describe.",
+      "keyDoctrine": "Copyright is purely statutory and protects only the classes of works the statute lists. It does not protect ideas, concepts, formats or mechanics, so the format of a television show is not copyrightable, and what is protected is the expression, such as the audio-visual recording of each episode. Because infringement is a matter of similarity between the works, the copyrighted work itself must usually be presented to determine probable cause.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri1999/jan1999/gr_108946_1999.html"
     }
   ],
   "questions": [
@@ -2705,6 +2720,237 @@
         "url": "https://lawphil.net/judjuris/juri2018/jun2018/gr_217781_2018.html",
         "part": "G.R. No. 217781 (the body of the Court of Appeals' decision, nominal damages)",
         "excerpt": "Having been found guilty of unfair competition, Foodsphere was correctly ordered to pay nominal damages of ₱100,000.00. Under Article 2221 of the Civil Code, nominal damages are recoverable in order to vindicate or recognize the rights of the plaintiff which have been violated or invaded by the defendant."
+      }
+    },
+    {
+      "id": "q-0392",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "prompt": "A producer holds a copyright certificate for a television game show. Another network airs a show with the same arrangement: contestants of one gender who cannot see the other group ask questions, and a match is made from the answers. The producer files a complaint for copyright infringement, arguing that its show's format and mechanics are copyrightable and were copied. Is the format of the show protected by copyright? Explain, based on Joaquin, Jr. v. Drilon.",
+      "suggestedAnswer": {
+        "answer": "No. The format or mechanics of a television show is not among the works that the copyright law protects. Copyright is purely statutory and extends only to the classes of works that the statute lists, and it does not cover ideas, concepts or methods.",
+        "legalBasis": "Copyright in the strict sense is purely a statutory right: a new or independent right granted by statute, not a pre-existing right regulated by it, so the rights are only those the statute confers, and may be obtained only for the subjects, by the persons and on the terms the statute specifies. A copyright may be obtained only for a work falling within the statutory enumeration. Section 2 of P.D. No. 49 enumerates the classes of protected works (such as books, musical compositions, works of art, cinematographic works and computer programs), substantially the same as Section 172 of the Intellectual Property Code. It refers to finished works and not to concepts. The copyright does not extend to an idea, procedure, process, system, method of operation, concept or principle, however described or embodied in a work (see Section 175 of the Code).",
+        "application": "The format of a show, such as its arrangement and the mechanics of how matches are made, is not included in the list of protected works. The producer's copyright covers the show as a work, such as the audio-visual recordings of its episodes, but not the general concept or format that others may use. A point-by-point comparison showing that the two formats are the same therefore does not show infringement of a copyrightable work, since the format itself is not protected.",
+        "conclusion": "The format of the show is not copyrightable, and copying it is not copyright infringement."
+      },
+      "keyPoints": [
+        "Copyright is purely a statutory right, obtainable only for works within the statutory enumeration",
+        "The format or mechanics of a television show is not in the list of protected works in Section 2 of P.D. No. 49 (substantially the same as Section 172 of the IP Code)",
+        "The enumeration refers to finished works and not to concepts",
+        "Copyright does not extend to an idea, procedure, system, method of operation, concept or principle (Section 175 of the IP Code)",
+        "What is protected is the work itself, such as the audio-visual recording of each episode"
+      ],
+      "caseIds": [
+        "case-0025"
+      ],
+      "source": {
+        "caseTitle": "Joaquin, Jr. and BJ Productions, Inc. v. Drilon, et al.",
+        "grNumber": "G.R. No. 108946",
+        "url": "https://lawphil.net/judjuris/juri1999/jan1999/gr_108946_1999.html",
+        "part": "Discussion of whether the format of a show is copyrightable",
+        "excerpt": "To begin with the format of a show is not copyrightable. Section 2 of P.D. No. 49, otherwise known as the DECREE ON INTELLECTUAL PROPERTY, enumerates the classes of work entitled to copyright protection, to wit: … This provision is substantially the same as §172 of the INTELLECTUAL PROPERTY CODE OF PHILIPPINES (R.A. No. 8293). The format or mechanics of a television show is not included in the list of protected works in §2 of P.D. No. 49. For this reason, the protection afforded by the law cannot be extended to cover them. … The copyright does not extend to the general concept or format of its dating game show."
+      }
+    },
+    {
+      "id": "q-0393",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "prompt": "A producer complains that another company copied its television show. During the preliminary investigation, it submits only written descriptions of the formats of the two shows and a point-by-point comparison, without the master videotape of its copyrighted show. The prosecutor finds probable cause, but the Secretary of Justice reverses, saying the master tape was needed. The producer says that the tape had never been raised as an issue, and that the description is enough. Who is right? Explain, based on Joaquin, Jr. v. Drilon.",
+      "suggestedAnswer": {
+        "answer": "The Secretary of Justice is right. A written description of the format is insufficient, and the master videotape was indispensable to determining probable cause, because a television show includes more than words can describe. The Secretary may also consider an error that the parties did not raise.",
+        "legalBasis": "In reviewing prosecutors' resolutions, the Secretary of Justice is not precluded from considering errors, although unassigned, to determine whether there is probable cause; he must make his own finding and is not confined to the issues raised during the preliminary investigation. The essence of copyright infringement is the similarity or at least substantial similarity of the purported pirated work to the copyrighted work, so the copyrighted work must be presented for comparison, although the requirement of the master tape is only a guidepost, not a sweeping and inflexible requirement in all copyright infringement cases (Columbia Pictures v. Court of Appeals, qualifying 20th Century Fox v. Court of Appeals).",
+        "application": "The producer's copyright covers the audio-visual recordings of its episodes and not the general concept or format of its show. By the very nature of what is protected, the investigating prosecutor needed to compare the videotapes of the two shows. A television show involves a whole spectrum of visuals and effects, video and audio, so that no similarity or dissimilarity can be found by merely describing the general format of both shows. Since the producer presented only descriptions of formats, which are not protected, probable cause was not shown, and the Secretary was entitled to consider this point even if the respondents never raised it.",
+        "conclusion": "The master videotape was needed, and the Secretary of Justice did not gravely abuse his discretion in reversing the finding of probable cause."
+      },
+      "keyPoints": [
+        "The Secretary of Justice may consider unassigned errors and must make his own finding of probable cause",
+        "The essence of copyright infringement is similarity or substantial similarity to the copyrighted work",
+        "The copyright covers the audio-visual recordings of each episode, not the general concept or format",
+        "A television show includes more than words can describe, so a mere description of the format is insufficient",
+        "The master tape requirement is a guidepost where there is doubt about the nexus, not an inflexible rule (Columbia Pictures)"
+      ],
+      "caseIds": [
+        "case-0025"
+      ],
+      "source": {
+        "caseTitle": "Joaquin, Jr. and BJ Productions, Inc. v. Drilon, et al.",
+        "grNumber": "G.R. No. 108946",
+        "url": "https://lawphil.net/judjuris/juri1999/jan1999/gr_108946_1999.html",
+        "part": "Discussion of the presentation of the master tape",
+        "excerpt": "In reviewing resolutions of prosecutors, the Secretary of Justice is not precluded from considering errors, although unassigned, for the purpose of determining whether there is probable cause for filing cases in court. He must make his own finding, of probable cause and is not confined to the issues raised by the parties during preliminary investigation. … The copyright does not extend to the general concept or format of its dating game show. Accordingly, by the very nature of the subject of petitioner BJPI's copyright, the investigating prosecutor should have the opportunity to compare the videotapes of the two shows. Mere description by words of the general format of the two dating game shows is insufficient; the presentation of the master videotape in evidence was indispensable to the determination of the existence of probable cause. As aptly observed by respondent Secretary of Justice: A television show includes more than mere words can describe because it involves a whole spectrum of visuals and effects, video and audio, such that no similarity or dissimilarity may be found by merely describing the general copyright/format of both dating game shows."
+      }
+    },
+    {
+      "id": "q-0394",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "prompt": "In deciding whether there was probable cause for a criminal complaint for copyright infringement, the Secretary of Justice ruled that the format of a dating game show is not copyrightable. The complainant argues that only a regional trial court may decide what is copyrightable, so the Secretary exceeded his jurisdiction. Is the complainant correct? Explain, based on Joaquin, Jr. v. Drilon.",
+      "suggestedAnswer": {
+        "answer": "No. Whether the format of a show is entitled to copyright protection is a legal question for the court to decide, but this does not stop the Secretary of Justice from making a preliminary determination of it in deciding whether there is probable cause.",
+        "legalBasis": "A preliminary investigation falls under the authority of the state prosecutor, who has the power to direct and control criminal actions, subject to the control of the Secretary of Justice. In reviewing prosecutors' resolutions, the Secretary is not precluded from considering errors, although unassigned, to determine whether there is probable cause, and he must make his own finding. His findings are not subject to review unless shown to have been made with grave abuse. The question of whether a format is entitled to copyright protection is a legal question for the court, but the Secretary may make a preliminary determination of it when resolving whether there is probable cause to file the case in court.",
+        "application": "The Secretary did not decide the copyright question with finality; he made a preliminary determination, as part of resolving whether probable cause existed. In doing so he did not commit any grave error: the format of a show is not within the statutory list of works protected by copyright. Since his finding was not made with grave abuse, it is not subject to review by certiorari.",
+        "conclusion": "The complainant is not correct. The Secretary of Justice acted within his authority in preliminarily determining that the format was not copyrightable."
+      },
+      "keyPoints": [
+        "Preliminary investigation falls under the prosecutor's authority, subject to the control of the Secretary of Justice",
+        "The question whether a format is copyrightable is a legal question for the court",
+        "This does not preclude the Secretary from making a preliminary determination of it in resolving whether there is probable cause",
+        "His findings are not subject to review unless there is grave abuse",
+        "No grave error was committed in finding that the format is not copyrightable"
+      ],
+      "caseIds": [
+        "case-0025"
+      ],
+      "source": {
+        "caseTitle": "Joaquin, Jr. and BJ Productions, Inc. v. Drilon, et al.",
+        "grNumber": "G.R. No. 108946",
+        "url": "https://lawphil.net/judjuris/juri1999/jan1999/gr_108946_1999.html",
+        "part": "Discussion of the opinion of the Secretary of Justice",
+        "excerpt": "It is indeed true that the question whether the format or mechanics of petitioners television show is entitled to copyright protection is a legal question for the court to make. This does not, however, preclude respondent Secretary of Justice from making a preliminary determination of this question in resolving whether there is probable cause for filing the case in court. In doing so in this case, he did not commit any grave error."
+      }
+    },
+    {
+      "id": "q-0395",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "prompt": "According to Joaquin, Jr. v. Drilon, what is the nature of copyright in the strict sense, and how does that affect which works are protected?",
+      "choices": {
+        "A": "It is a natural right that exists for any creative idea, regulated by statute.",
+        "B": "It is purely a statutory right, so it may be obtained and enjoyed only for the subjects, by the persons and on the terms the statute specifies, and only for works within the statutory enumeration.",
+        "C": "It is a right that arises only from a court judgment.",
+        "D": "It is a right that exists only for foreign works."
+      },
+      "correct": "B",
+      "explanation": "B is correct. The Court said that copyright, in the strict sense, is purely a statutory right: a new or independent right granted by the statute, not simply a pre-existing right regulated by it. Being a statutory grant, the rights are only such as the statute confers, and may be obtained and enjoyed only with respect to the subjects and by the persons and on terms and conditions specified in the statute, so a copyright in published works may be obtained only for a work falling within the statutory enumeration or description. A is the opposite of the Court's statement. C and D have no basis in the decision.",
+      "caseIds": [
+        "case-0025"
+      ],
+      "source": {
+        "caseTitle": "Joaquin, Jr. and BJ Productions, Inc. v. Drilon, et al.",
+        "grNumber": "G.R. No. 108946",
+        "url": "https://lawphil.net/judjuris/juri1999/jan1999/gr_108946_1999.html",
+        "part": "Discussion of whether the format of a show is copyrightable (the statutory nature of copyright)",
+        "excerpt": "Copyright, in the strict sense of the term, is purely a statutory right. It is a new or independent right granted by the statute, and not simply a pre-existing right regulated by the statute. Being a statutory grant, the rights are only such as the statute confers, and may be obtained and enjoyed only with respect to the subjects and by the persons and on terms and conditions specified in the statute."
+      }
+    },
+    {
+      "id": "q-0396",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "prompt": "According to Joaquin, Jr. v. Drilon (citing Section 175 of the Intellectual Property Code), which of the following is outside copyright protection?",
+      "choices": {
+        "A": "A novel written by the author.",
+        "B": "A song with its lyrics.",
+        "C": "A procedure, system, method or concept, even if it is expressed, explained, illustrated or embodied in a work.",
+        "D": "A painting."
+      },
+      "correct": "C",
+      "explanation": "C is correct. The Court observed that P.D. No. 49, in enumerating what is subject to copyright, refers to finished works and not to concepts, and that copyright does not extend to an idea, procedure, process, system, method of operation, concept, principle or discovery, regardless of the form in which it is described, explained, illustrated or embodied in a work. It cited Section 175 of the Intellectual Property Code, which says that no protection shall extend to any idea, procedure, system, method or operation, concept, principle, discovery or mere data as such, even if expressed or embodied in a work, to news of the day and other miscellaneous facts that are mere items of press information, or to any official text of a legislative, administrative or legal nature and its official translation. A, B and D are works of the classes that the statute protects (books, musical compositions and works of art).",
+      "caseIds": [
+        "case-0025"
+      ],
+      "source": {
+        "caseTitle": "Joaquin, Jr. and BJ Productions, Inc. v. Drilon, et al.",
+        "grNumber": "G.R. No. 108946",
+        "url": "https://lawphil.net/judjuris/juri1999/jan1999/gr_108946_1999.html",
+        "part": "Discussion of whether the format of a show is copyrightable (unprotected subject matter)",
+        "excerpt": "P.D. No. 49, §2, in enumerating what are subject to copyright, refers to finished works and not to concepts. The copyright does not extend to an idea, procedure, process, system, method of operation, concept, principle, or discovery, regardless of the form in which it is described, explained, illustrated, or embodied in such work. Thus, the new INTELLECTUAL PROPERTY CODE OF THE PHILIPPINES provides: Sec. 175. Unprotected Subject Matter. — Notwithstanding the provisions of Sections 172 and 173, no protection shall extend, under this law, to any idea, procedure, system, method or operation, concept, principle, discovery or mere data as such, even if they are expressed, explained, illustrated or embodied in a work; news of the day and other miscellaneous facts having the character of mere items of press information; or any official text of a legislative, administrative or legal nature, as well as any official translation thereof."
+      }
+    },
+    {
+      "id": "q-0397",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "prompt": "According to Joaquin, Jr. v. Drilon (quoting 20th Century Fox Film Corporation v. Court of Appeals), what is the essence of copyright infringement?",
+      "choices": {
+        "A": "The similarity or at least substantial similarity of the purported pirated work to the copyrighted work.",
+        "B": "The fact that the defendant earns profit from its work.",
+        "C": "The fact that the defendant's work has the same title as the copyrighted work.",
+        "D": "The fact that the defendant's work is broadcast on a different channel."
+      },
+      "correct": "A",
+      "explanation": "A is correct. In the passage the Court cited, the essence of copyright infringement is the similarity, or at least the substantial similarity, of the purported pirated works to the copyrighted work. Hence the applicant must present to the court the copyrighted work to compare it with the work allegedly pirated, to determine whether the latter is an unauthorized reproduction of the former. B, C and D are not the essence of infringement.",
+      "caseIds": [
+        "case-0025"
+      ],
+      "source": {
+        "caseTitle": "Joaquin, Jr. and BJ Productions, Inc. v. Drilon, et al.",
+        "grNumber": "G.R. No. 108946",
+        "url": "https://lawphil.net/judjuris/juri1999/jan1999/gr_108946_1999.html",
+        "part": "Discussion of the presentation of the master tape (20th Century Fox)",
+        "excerpt": "The essence of a copyright infringement is the similarity or at least substantial similarity of the purported pirated works to the copyrighted work. Hence, the applicant must present to the court the copyrighted films to compare them with the purchased evidence of the video tapes allegedly pirated to determine whether the latter is an unauthorized reproduction of the former."
+      }
+    },
+    {
+      "id": "q-0398",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "prompt": "In Joaquin, Jr. v. Drilon, the Court recalled that the later case Columbia Pictures, Inc. v. Court of Appeals qualified the ruling in 20th Century Fox about master tapes. How did it qualify it?",
+      "choices": {
+        "A": "It abolished the need to present any copyrighted work in any case.",
+        "B": "It made the presentation of master tapes mandatory in every case.",
+        "C": "It limited the rule to cases involving foreign films.",
+        "D": "The need for the master tapes should at most be understood as a guidepost in determining probable cause where there is doubt as to the true nexus between the master tape and the printed copies, not a sweeping and inflexible requirement in all or similar copyright infringement cases."
+      },
+      "correct": "D",
+      "explanation": "D is correct. The Court quoted Columbia Pictures to the effect that the pronouncement in 20th Century Fox on the need to present the master tapes should at most be understood as a guidepost in determining probable cause in copyright infringement cases where there is doubt as to the true nexus between the master tape and the printed copies, and was hardly intended to be a sweeping and inflexible requirement in all or similar copyright infringement cases. In the case before it, the Court nevertheless found that, because the copyright covers the audio-visual recordings and not the format, the master videotape was indispensable. A and B are the two extremes that the quoted passage rejects. C has no basis in the decision.",
+      "caseIds": [
+        "case-0025"
+      ],
+      "source": {
+        "caseTitle": "Joaquin, Jr. and BJ Productions, Inc. v. Drilon, et al.",
+        "grNumber": "G.R. No. 108946",
+        "url": "https://lawphil.net/judjuris/juri1999/jan1999/gr_108946_1999.html",
+        "part": "Discussion of the presentation of the master tape (Columbia Pictures)",
+        "excerpt": "In fine, the supposed pronunciamento in said case regarding the necessity for the presentation of the master tapes of the copyrighted films for the validity of search warrants should at most be understood to merely serve as a guidepost in determining the existence of probable cause in copyright infringement cases where there is doubt as to the true nexus between the master tape and the printed copies. An objective and careful reading of the decision in said case could lead to no other conclusion than that said directive was hardly intended to be a sweeping and inflexible requirement in all or similar copyright infringement cases."
+      }
+    },
+    {
+      "id": "q-0399",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "prompt": "According to Joaquin, Jr. v. Drilon, what is the subject matter of the copyright that BJ Productions held for its television game show?",
+      "choices": {
+        "A": "The general concept and format of dating game shows.",
+        "B": "The audio-visual recordings of each episode of the show, as cinematographic works or works produced by any process for making audio-visual recordings.",
+        "C": "Every television show that features a dating game.",
+        "D": "The name of the host of the show."
+      },
+      "correct": "B",
+      "explanation": "B is correct. The Court held that BJPI's copyright covers audio-visual recordings of each episode of Rhoda and Me, as falling within the class of works mentioned in Section 2(M) of P.D. No. 49: cinematographic works and works produced by a process analogous to cinematography or any process for making audio-visual recordings. The copyright does not extend to the general concept or format of its dating game show. A and C are what the Court said the copyright does not cover. D is not what the decision says is protected.",
+      "caseIds": [
+        "case-0025"
+      ],
+      "source": {
+        "caseTitle": "Joaquin, Jr. and BJ Productions, Inc. v. Drilon, et al.",
+        "grNumber": "G.R. No. 108946",
+        "url": "https://lawphil.net/judjuris/juri1999/jan1999/gr_108946_1999.html",
+        "part": "Discussion of the subject matter of the copyright (Section 2(M) of P.D. No. 49)",
+        "excerpt": "What then is the subject matter of petitioners' copyright? This Court is of the opinion that petitioner BJPI's copyright covers audio-visual recordings of each episode of Rhoda and Me, as falling within the class of works mentioned in P.D. 49, §2(M), to wit: Cinematographic works and works produced by a process analogous to cinematography or any process for making audio-visual recordings;"
       }
     }
   ]
