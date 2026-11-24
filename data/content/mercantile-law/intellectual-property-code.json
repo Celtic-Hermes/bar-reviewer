@@ -91,6 +91,21 @@
       "ruling": "The Court denied the petition and affirmed the rejection. A registered trademark owner has the right under Section 147 to prevent others from using an identical or similar mark where the use would likely cause confusion. In deciding whether there is likelihood of confusion, two tests have developed: the Dominancy Test, which looks at the similarity of the prevalent features of the marks, and the Holistic Test, which considers the marks in their entirety, including labels and packaging. The IPO applied the Dominancy Test, which is written into Section 155.1, and the Court agreed with its findings. The marks are spelled almost the same and pronounced practically the same way in three syllables, with the final \"E\" silent, so an ordinary buyer who hears a radio advertisement of \"Dermaline\" would likely associate it with \"DERMALIN\", even though the marks are presented differently. Dermaline's argument that its services belong to another classification does not remove the possibility of mistake, especially since both classes concern skin treatments. The registered owner is protected in areas that are the normal potential expansion of its business, so the public could think that Myra had expanded from skin medicines to health and beauty services through Dermaline. An application for a mark nearly the same as an already registered one should be rejected even without opposition. The IPO's findings on this factual issue, upheld by the Court of Appeals, are given great weight, and the IPO decision had in any case become final when Dermaline failed to appeal on time.",
       "keyDoctrine": "Likelihood of confusion between marks is tested by the Dominancy Test (the prevalent features, and the aural and visual impressions on the ordinary purchaser) and the Holistic Test (the entirety of the marks). A different classification of goods or services does not remove the likelihood of confusion, and the registered owner is protected in the normal potential expansion of its business.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2010/aug2010/gr_190065_2010.html"
+    },
+    {
+      "id": "case-0020",
+      "status": "draft",
+      "name": "Fredco Manufacturing Corp. v. President and Fellows of Harvard College (Harvard University)",
+      "grNumber": "G.R. No. 185917",
+      "year": 2011,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "facts": "In 2005 Fredco Manufacturing Corporation, a Philippine company, petitioned the Bureau of Legal Affairs of the Intellectual Property Office (IPO) to cancel Registration No. 56561, issued in 1993 to Harvard University for the \"Harvard Veritas Shield Symbol\" for goods in several classes, including Class 25 (clothing). Fredco said that its predecessor, New York Garments, had first used \"Harvard\" for clothing in the Philippines in 1982 and had registered it in 1988. That registration had been cancelled in 1998 because the required affidavit of use was not filed on the fifth anniversary. Harvard University answered that it owned the name and mark \"Harvard\" worldwide: the name was adopted in 1639, used in commerce since 1872, and registered in at least 50 countries, and it had never licensed anyone in the Philippines. It had found Fredco's website advertising \"Harvard Jeans USA\", with a logo reading \"Established 1936\" and \"Cambridge, Massachusetts\", and it had filed an infringement and unfair competition complaint against Fredco. The Bureau of Legal Affairs cancelled Harvard's registration for Class 25 goods. The IPO Director General reversed this, and the Court of Appeals affirmed the Director General. Fredco went to the Supreme Court.",
+      "issue": "Did the Court of Appeals commit a reversible error in affirming the IPO Director General, that is, may Harvard University's registration of the mark \"Harvard\" for Class 25 goods stand against Fredco, which claimed prior use of \"Harvard\" in the Philippines?",
+      "ruling": "The Court denied the petition and affirmed the Court of Appeals. (1) Actual prior use in the Philippines was not required of Harvard University: its registration was based on home registration, which Section 37 of R.A. No. 166 allows, and under Section 239.2 of R.A. No. 8293 marks registered under the old law are deemed granted under the new one, which does not require actual prior use here, so any such defect was cured. Fredco's own registration had been cancelled in 1998 for failure to file the affidavit of use, so Fredco was no longer the registrant or presumptive owner. (2) There were two compelling reasons why the petition failed. First, Fredco's use of \"Harvard\" together with \"Cambridge, Massachusetts\", \"Established 1936\" and \"USA\" on its logo falsely suggested a connection with Harvard University. Section 4(a) of R.A. No. 166 prohibits registering a mark that falsely suggests a connection with persons or institutions, and under Section 17(c) such a violation is a ground for cancellation. Second, the Philippines and the United States are both parties to the Paris Convention. Under Article 8 and Section 37 of R.A. No. 166, a trade name of a national of a Paris Convention country is protected without the obligation of filing or registration, and under Article 6bis, as implemented by the Ministry of Trade directives and Section 123.1(e) of R.A. No. 8293, an internationally well-known mark is protected whether or not it is registered or used in the Philippines. \"Harvard\" is a well-known name and mark internationally, including in the Philippines, so it was protected even before Harvard University applied to register it here.",
+      "keyDoctrine": "An internationally well-known mark is protected in the Philippines under Article 6bis of the Paris Convention and Section 123.1(e) of the Intellectual Property Code even if it is neither registered nor used here; this is the exception to the territoriality principle. The trade name of a national of a Paris Convention country is protected without filing or registration (Article 8). A mark that falsely suggests a connection with a person or institution cannot be registered (Section 4(a), R.A. No. 166).",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2011/jun2011/gr_185917_2011.html"
     }
   ],
   "questions": [
@@ -1474,6 +1489,238 @@
         "url": "https://lawphil.net/judjuris/juri2010/aug2010/gr_190065_2010.html",
         "part": "Discussion of the IPO's ruling (Section 138)",
         "excerpt": "The IPO also upheld Myra’s right under Section 138 of R.A. No. 8293, which provides that a certification of registration of a mark is prima facie evidence of the validity of the registration, the registrant’s ownership of the mark, and of the registrant’s exclusive right to use the same in connection with the goods and those that are related thereto specified in the certificate."
+      }
+    },
+    {
+      "id": "q-0352",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "A famous foreign restaurant chain has never registered its name in the Philippines and has never operated here, although the name is well known internationally and among Filipinos. A local company applies to register the same name for restaurants and argues that, because the chain has not used or registered the mark in the Philippines, the chain has no rights here and the local company, as first to file, should win. Is the local company right? Explain, based on Fredco Manufacturing Corp. v. President and Fellows of Harvard College.",
+      "suggestedAnswer": {
+        "answer": "No. An internationally well-known mark is protected in the Philippines even if it is neither registered nor used here. The territoriality principle, which requires use in the Philippines, has an exception for such marks.",
+        "legalBasis": "The Philippines is a party to the Paris Convention and is obliged to assure nationals of other member countries effective protection against violations of their intellectual property rights here. Article 6bis requires the refusal or cancellation of the registration, and the prohibition of the use, of a mark that is a reproduction or imitation of a mark considered by the competent authority to be already the mark of a person entitled to the Convention's benefits and used for identical or similar goods. Under the directives of the Ministry of Trade, an internationally well-known mark need not be registered or used in the Philippines; it is enough that the mark is well-known internationally and in the Philippines for identical or similar goods. Section 123.1(e) of the Intellectual Property Code likewise bars the registration of a mark considered by the competent authority to be well-known internationally and in the Philippines, whether or not it is registered here. Under Rule 102 of the implementing rules, a mark is shown to be well-known by any combination of criteria, such as the duration and geographical area of its use and promotion, the extent to which it has been registered and used in the world, and its reputation and commercial value, so use in the Philippines is not necessary.",
+        "application": "The chain's name is well known internationally and among Filipinos, as shown by criteria such as worldwide use, registration and reputation. The mark was therefore already protected in the Philippines even before the chain applied here, as the Court found for the Harvard mark. The local company, which copied the name, cannot rely on being first to file and on the chain's lack of use or registration in the Philippines.",
+        "conclusion": "The local company is wrong. The famous chain's mark is protected, and the local application should not be allowed."
+      },
+      "keyPoints": [
+        "The Philippines must assure nationals of Paris Convention countries effective protection of their intellectual property rights",
+        "Article 6bis of the Paris Convention protects well-known marks",
+        "An internationally well-known mark need not be registered or used in the Philippines; it must be well-known internationally and in the Philippines for identical or similar goods",
+        "Section 123.1(e) of the IP Code bars registration of a mark considered well-known internationally and in the Philippines, whether or not registered here",
+        "Rule 102 criteria (any combination) show that a mark is well-known; use in the Philippines is not required",
+        "Exception to the territoriality principle"
+      ],
+      "caseIds": [
+        "case-0020"
+      ],
+      "source": {
+        "caseTitle": "Fredco Manufacturing Corp. v. President and Fellows of Harvard College (Harvard University)",
+        "grNumber": "G.R. No. 185917",
+        "url": "https://lawphil.net/judjuris/juri2011/jun2011/gr_185917_2011.html",
+        "part": "The Ruling of this Court (the second reason: the Paris Convention and well-known marks)",
+        "excerpt": "Thus, this Court has ruled that the Philippines is obligated to assure nationals of countries of the Paris Convention that they are afforded an effective protection against violation of their intellectual property rights in the Philippines in the same way that their own countries are obligated to accord similar protection to Philippine nationals. … To be protected under the two directives of the Ministry of Trade, an internationally well-known mark need not be registered or used in the Philippines. All that is required is that the mark is well-known internationally and in the Philippines for identical or similar goods, whether or not the mark is registered or used in the Philippines. … Rule 102. Criteria for determining whether a mark is well-known. In determining whether a mark is well-known, the following criteria or any combination thereof may be taken into account: … (e) the extent to which the mark has been registered in the world; … As such, even before Harvard University applied for registration of the mark \"Harvard\" in the Philippines, the mark was already protected under Article 6bis and Article 8 of the Paris Convention."
+      }
+    },
+    {
+      "id": "q-0353",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "A local clothing company registers the name of a famous foreign university as its brand. Its logo also carries the words \"Established 1936\", \"USA\" and the university's city, although the company has no connection with the university, the city or the United States. The company later says that it used these words only \"to evoke a lifestyle\". May the registration stand? Explain, based on Fredco Manufacturing Corp. v. President and Fellows of Harvard College.",
+      "suggestedAnswer": {
+        "answer": "No. The registration should not have been allowed, because the mark falsely suggests a connection with the university. Section 4(a) of the Trademark Law prohibits the registration of such a mark, and the violation is a ground for cancellation.",
+        "legalBasis": "Section 4(a) of R.A. No. 166 prohibits the registration of a mark that consists of or comprises matter that may disparage or falsely suggest a connection with persons, living or dead, institutions, beliefs or national symbols. The provision is identical to Section 2(a) of the Lanham Act of the United States and is intended to protect the right of publicity of famous individuals and institutions from the commercial exploitation of their goodwill by others. Under Section 17(c) of R.A. No. 166, a registration obtained in violation of Section 4 may be cancelled.",
+        "application": "The company has no affiliation with the university or its city, and it was not established in 1936 or in the United States, yet its logo combines the university's name with these words. That obviously suggests a false connection with the university. The company's belated explanation that it wished to evoke a lifestyle or a desirable aura only confirms that it sought to connect its products with the university and to ride on its prestige and popularity, appropriating part of its goodwill without its consent. That is exactly the commercial exploitation of goodwill that Section 4(a) forbids.",
+        "conclusion": "The registration should have been disallowed, and the violation of Section 4(a) is a ground for cancelling it under Section 17(c)."
+      },
+      "keyPoints": [
+        "Section 4(a) of R.A. No. 166 prohibits registering a mark that may falsely suggest a connection with persons, institutions, beliefs or national symbols",
+        "Use of the famous name together with a claimed origin in the university's city and \"Established 1936\" and \"USA\" suggests a false connection",
+        "The provision protects the right of publicity of famous individuals and institutions against exploitation of their goodwill",
+        "A belated justification of evoking a desirable aura confirms the intent to connect the products with the university",
+        "Under Section 17(c), a registration obtained in violation of Section 4 is a ground for cancellation"
+      ],
+      "caseIds": [
+        "case-0020"
+      ],
+      "source": {
+        "caseTitle": "Fredco Manufacturing Corp. v. President and Fellows of Harvard College (Harvard University)",
+        "grNumber": "G.R. No. 185917",
+        "url": "https://lawphil.net/judjuris/juri2011/jun2011/gr_185917_2011.html",
+        "part": "The Ruling of this Court (the first reason: Section 4(a) of R.A. No. 166)",
+        "excerpt": "Fredco’s registration of the mark \"Harvard\" should not have been allowed because Section 4(a) of R.A. No. 166 prohibits the registration of a mark \"which may disparage or falsely suggest a connection with persons, living or dead, institutions, beliefs x x x.\" … Fredco’s use of the mark \"Harvard,\" coupled with its claimed origin in Cambridge, Massachusetts, obviously suggests a false connection with Harvard University. On this ground alone, Fredco’s registration of the mark \"Harvard\" should have been disallowed. … Section 4(a) of R.A. No. 166 is identical to Section 2(a) of the Lanham Act, the trademark law of the United States. These provisions are intended to protect the right of publicity of famous individuals and institutions from commercial exploitation of their goodwill by others. … Under Section 17(c) of R.A. No. 166, such violation is a ground for cancellation of Fredco’s registration of the mark \"Harvard\" because the registration was obtained in violation of Section 4 of R.A. No. 166."
+      }
+    },
+    {
+      "id": "q-0354",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "A foreign company registered its mark at home and then obtained a Philippine registration based on that home registration, without ever having used the mark in the Philippines. A local company that began using a similar mark in the Philippines earlier argues that its earlier actual use in the Philippines should prevail. Is the argument correct? Explain, based on Fredco Manufacturing Corp. v. President and Fellows of Harvard College.",
+      "suggestedAnswer": {
+        "answer": "No. A registration based on a home registration in a Paris Convention country does not require actual prior use of the mark in the Philippines, and any such defect was in any case cured by the Intellectual Property Code.",
+        "legalBasis": "Section 2 of R.A. No. 166 requires, for the registration of a trademark, proof that it has actually been used in commerce in the Philippines for not less than two months before the application, but where the mark is already registered in a foreign country that is a member of the Paris Convention, that proof is not necessary, because Section 37 allows registration on the basis of a home registration. An applicant on a home registration need not even have used the mark in the country. Under Section 239.2 of R.A. No. 8293, marks registered under R.A. No. 166 remain in force but are deemed to have been granted under the new Code, which does not require actual prior use in the Philippines.",
+        "application": "The foreign company's registration rested on home registration, so its lack of prior use in the Philippines does not defeat it. Its registration is now deemed granted under the Intellectual Property Code, which does not require prior use here, so any defect arising from the absence of actual use in the Philippines has been cured. The local company's earlier use does not prevail. In the decision itself, the local claimant's own registration had been cancelled for failure to file the affidavit of use on the fifth anniversary, so it was no longer the registrant or presumptive owner.",
+        "conclusion": "The local company's argument fails, and the foreign company's registration is not defeated by the lack of actual use in the Philippines."
+      },
+      "keyPoints": [
+        "Section 2 of R.A. No. 166 required two months of actual use in the Philippines before registration",
+        "That proof is not necessary when the mark is registered in a foreign country that is a member of the Paris Convention (home registration, Section 37)",
+        "Under Section 239.2 of R.A. No. 8293, marks registered under R.A. No. 166 are deemed granted under the Code, which does not require actual prior use in the Philippines",
+        "Any defect from lack of prior use in the Philippines was cured by Section 239.2",
+        "A registration cancelled for failure to file the affidavit of use no longer makes the former registrant the presumptive owner"
+      ],
+      "caseIds": [
+        "case-0020"
+      ],
+      "source": {
+        "caseTitle": "Fredco Manufacturing Corp. v. President and Fellows of Harvard College (Harvard University)",
+        "grNumber": "G.R. No. 185917",
+        "url": "https://lawphil.net/judjuris/juri2011/jun2011/gr_185917_2011.html",
+        "part": "The Ruling of this Court (home registration and Section 239.2)",
+        "excerpt": "However, Harvard University’s registration of the name \"Harvard\" is based on home registration which is allowed under Section 37 of R.A. No. 166. … where the trademark sought to be registered has already been registered in a foreign country that is a member of the Paris Convention, the requirement of proof of use in the commerce in the Philippines for the said period is not necessary. An applicant for registration based on home certificate of registration need not even have used the mark or trade name in this country. … In any event, under Section 239.2 of Republic Act No. 8293 (R.A. No. 8293), \"[m]arks registered under Republic Act No. 166 shall remain in force but shall be deemed to have been granted under this Act x x x,\" which does not require actual prior use of the mark in the Philippines. Since the mark \"Harvard Veritas Shield Symbol\" is now deemed granted under R.A. No. 8293, any alleged defect arising from the absence of actual prior use in the Philippines has been cured by Section 239.2."
+      }
+    },
+    {
+      "id": "q-0355",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "Under Section 123.1(e) of the Intellectual Property Code, as quoted in Fredco Manufacturing Corp. v. President and Fellows of Harvard College, which mark cannot be registered by another in the Philippines?",
+      "choices": {
+        "A": "A mark that is well-known only in the country where it was first used.",
+        "B": "Any mark that has been used abroad for more than one year.",
+        "C": "A mark considered by the competent authority of the Philippines to be well-known internationally and in the Philippines, whether or not it is registered here.",
+        "D": "A mark that has been registered in at least one foreign country."
+      },
+      "correct": "C",
+      "explanation": "C is correct. The Court said that Section 123.1(e) categorically provides that \"a mark which is considered by the competent authority of the Philippines to be well-known internationally and in the Philippines, whether or not it is registered here,\" cannot be registered by another in the Philippines. It does not require that the well-known mark be used in commerce in the Philippines, only that it be well-known in the Philippines. A is wrong because the mark must be well-known internationally and in the Philippines. B and D are wrong because use or registration abroad for a given time or in a single country is not the test; they are only some of the criteria that may be considered under Rule 102 in determining whether a mark is well-known.",
+      "caseIds": [
+        "case-0020"
+      ],
+      "source": {
+        "caseTitle": "Fredco Manufacturing Corp. v. President and Fellows of Harvard College (Harvard University)",
+        "grNumber": "G.R. No. 185917",
+        "url": "https://lawphil.net/judjuris/juri2011/jun2011/gr_185917_2011.html",
+        "part": "The Ruling of this Court (Section 123.1(e) of R.A. No. 8293)",
+        "excerpt": "Indeed, Section 123.1(e) of R.A. No. 8293 now categorically states that \"a mark which is considered by the competent authority of the Philippines to be well-known internationally and in the Philippines, whether or not it is registered here,\" cannot be registered by another in the Philippines. Section 123.1(e) does not require that the well-known mark be used in commerce in the Philippines but only that it be well-known in the Philippines."
+      }
+    },
+    {
+      "id": "q-0356",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "Under the territoriality principle, a mark must be used in commerce in the Philippines to be entitled to protection here. According to Fredco Manufacturing Corp. v. President and Fellows of Harvard College, what is the exception to this principle?",
+      "choices": {
+        "A": "Internationally well-known marks, which are protected even if they are not used in commerce in the Philippines.",
+        "B": "Marks of Philippine nationals living abroad.",
+        "C": "Marks that have been registered for more than twenty years.",
+        "D": "There is no exception to the territoriality principle."
+      },
+      "correct": "A",
+      "explanation": "A is correct. The Court said that since any combination of the Rule 102 criteria is sufficient to determine that a mark is well-known, it is clearly not necessary that the mark be used in commerce in the Philippines. Thus, while under the territoriality principle a mark must be used in commerce in the Philippines to be entitled to protection, internationally well-known marks are the exceptions to this rule. B and C are not exceptions stated in the decision. D is wrong because the Court expressly recognized the exception.",
+      "caseIds": [
+        "case-0020"
+      ],
+      "source": {
+        "caseTitle": "Fredco Manufacturing Corp. v. President and Fellows of Harvard College (Harvard University)",
+        "grNumber": "G.R. No. 185917",
+        "url": "https://lawphil.net/judjuris/juri2011/jun2011/gr_185917_2011.html",
+        "part": "The Ruling of this Court (the territoriality principle and its exception)",
+        "excerpt": "Since \"any combination\" of the foregoing criteria is sufficient to determine that a mark is well-known, it is clearly not necessary that the mark be used in commerce in the Philippines. Thus, while under the territoriality principle a mark must be used in commerce in the Philippines to be entitled to protection, internationally well-known marks are the exceptions to this rule."
+      }
+    },
+    {
+      "id": "q-0357",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "According to Fredco Manufacturing Corp. v. President and Fellows of Harvard College (citing Mirpuri), who has the power to determine whether a trademark is well-known for purposes of Article 6bis of the Paris Convention?",
+      "choices": {
+        "A": "Only the foreign trademark owner, by declaration.",
+        "B": "The competent authority of the country of registration or use: either the registering authority if it has the power to decide this, or the courts of the country if the issue comes before them.",
+        "C": "Only the World Intellectual Property Organization.",
+        "D": "Only the consumers who buy the products, by survey."
+      },
+      "correct": "B",
+      "explanation": "B is correct. The Court recalled that in Mirpuri it ruled that the essential requirement under Article 6bis is that the mark to be protected be well-known in the country where protection is sought, and that the power to determine whether a mark is well-known lies in the competent authority of the country of registration or use. That authority is either the registering authority, if it has the power to decide this, or the courts of the country in question if the issue comes before the courts. A, C and D are not what the Court said.",
+      "caseIds": [
+        "case-0020"
+      ],
+      "source": {
+        "caseTitle": "Fredco Manufacturing Corp. v. President and Fellows of Harvard College (Harvard University)",
+        "grNumber": "G.R. No. 185917",
+        "url": "https://lawphil.net/judjuris/juri2011/jun2011/gr_185917_2011.html",
+        "part": "The Ruling of this Court (who determines whether a mark is well-known)",
+        "excerpt": "In Mirpuri, the Court ruled that the essential requirement under Article 6bis of the Paris Convention is that the trademark to be protected must be \"well-known\" in the country where protection is sought. The Court declared that the power to determine whether a trademark is well-known lies in the competent authority of the country of registration or use. The Court then stated that the competent authority would either be the registering authority if it has the power to decide this, or the courts of the country in question if the issue comes before the courts."
+      }
+    },
+    {
+      "id": "q-0358",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "A foreign university has never registered its name as a trade name in the Philippines. According to Fredco Manufacturing Corp. v. President and Fellows of Harvard College, what protection does its trade name have here, given that its country and the Philippines are both parties to the Paris Convention?",
+      "choices": {
+        "A": "None, because only registered trade names are protected.",
+        "B": "Protection only after it has operated a campus in the Philippines.",
+        "C": "Protection only if the name is also registered as a trademark in the Philippines.",
+        "D": "Protection without the obligation of filing or registration, so that no one in the Philippines may use the name without its consent."
+      },
+      "correct": "D",
+      "explanation": "D is correct. Article 8 of the Paris Convention provides that a trade name shall be protected in all the countries of the Union without the obligation of filing or registration, whether or not it forms part of a trademark. Section 37 of R.A. No. 166 incorporates this. So under Philippine law the trade name of a national of a Paris Convention state is protected without filing or registration, and no educational entity in the Philippines can use the trade name \"Harvard\" without the university's consent. A and C are wrong because registration in the Philippines is not required. B is wrong because operating locally is not required.",
+      "caseIds": [
+        "case-0020"
+      ],
+      "source": {
+        "caseTitle": "Fredco Manufacturing Corp. v. President and Fellows of Harvard College (Harvard University)",
+        "grNumber": "G.R. No. 185917",
+        "url": "https://lawphil.net/judjuris/juri2011/jun2011/gr_185917_2011.html",
+        "part": "The Ruling of this Court (Article 8 of the Paris Convention and Section 37 of R.A. No. 166)",
+        "excerpt": "Thus, under Philippine law, a trade name of a national of a State that is a party to the Paris Convention, whether or not the trade name forms part of a trademark, is protected \"without the obligation of filing or registration.\" … Under Article 8 of the Paris Convention, as well as Section 37 of R.A. No. 166, Harvard University is entitled to protection in the Philippines of its trade name \"Harvard\" even without registration of such trade name in the Philippines. This means that no educational entity in the Philippines can use the trade name \"Harvard\" without the consent of Harvard University."
+      }
+    },
+    {
+      "id": "q-0359",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "A local company relies on its own earlier registration of a mark to claim ownership against a foreign owner. But that registration had been cancelled years earlier because the company failed to file the required affidavit of use on the fifth anniversary of the registration. According to Fredco Manufacturing Corp. v. President and Fellows of Harvard College, what is the effect on the company's position?",
+      "choices": {
+        "A": "The company remains the registrant and presumptive owner, because cancellation is only temporary.",
+        "B": "The company becomes the owner of every similar mark in the same class.",
+        "C": "At the time it brought its petition, the company was no longer the registrant or presumptive owner of the mark.",
+        "D": "The company's earlier registration is revived automatically when it brings a case."
+      },
+      "correct": "C",
+      "explanation": "C is correct. The Court noted that Fredco's registration was already cancelled on 30 July 1998 when it failed to file the required affidavit of use/non-use for the fifth anniversary of the registration. Hence, when Fredco filed its petition for cancellation before the Bureau of Legal Affairs, it was no longer the registrant or presumptive owner of the mark \"Harvard\". A and D are wrong because the decision treats the cancellation as removing that status. B has no basis in the decision.",
+      "caseIds": [
+        "case-0020"
+      ],
+      "source": {
+        "caseTitle": "Fredco Manufacturing Corp. v. President and Fellows of Harvard College (Harvard University)",
+        "grNumber": "G.R. No. 185917",
+        "url": "https://lawphil.net/judjuris/juri2011/jun2011/gr_185917_2011.html",
+        "part": "The Ruling of this Court (the cancellation of Fredco's registration)",
+        "excerpt": "In addition, Fredco’s registration was already cancelled on 30 July 1998 when it failed to file the required affidavit of use/non-use for the fifth anniversary of the mark’s registration. Hence, at the time of Fredco’s filing of the Petition for Cancellation before the Bureau of Legal Affairs of the IPO, Fredco was no longer the registrant or presumptive owner of the mark \"Harvard.\""
       }
     }
   ]
