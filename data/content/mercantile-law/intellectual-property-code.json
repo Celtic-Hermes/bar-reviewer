@@ -136,6 +136,21 @@
       "ruling": "The Court granted the petition, set aside the decisions of the trial court and the Court of Appeals, and dismissed the complaint. It reviewed the facts because they were intertwined with questions of law and the lower courts had veered from the law and jurisprudence. (1) The Intellectual Property Code, which took effect on January 1, 1998, was wrongly applied retroactively to a complaint filed in 1993; the Trademark Law and the Paris Convention govern, and where they conflict, the municipal Trademark Law prevails. (2) Under the Trademark Law, infringement requires a mark actually used in commerce in the Philippines and registered; actual commercial use is essential. Gallo Winery's wine was first sold here in 1974 and 1979, after Tobacco Industries began using GALLO for cigarettes in 1973, so Gallo Winery never enjoyed an exclusive right against the cigarette makers. Its registration also covered wines only (Section 20). (3) There is no likelihood of confusion. The dominant feature of the cigarette mark is the rooster device and the label names the manufacturer, while the wine labels are different. Wines and cigarettes are not identical, similar, competing or related goods. The lower courts' reasons (both are forms of vice, and both are sold in the same supermarket section) were arbitrary, and the products differ in descriptive properties, price, buyers and channels of trade. Tobacco and alcohol are related only in special circumstances, namely when a famous mark is involved and there is a demonstrated intent to capitalize on it. (4) GALLO wine is not a well-known mark under the Paris Convention in this case because wines and cigarettes are not identical or similar goods. (5) Gallo Winery's delay of almost twenty years, with implied consent and acquiescence, and the absence of bad faith, tipped equity in favor of Mighty. There was no attempt to pass off, so there was no unfair competition.",
       "keyDoctrine": "Goods are \"related\" only if the public may be deceived into believing that they come from the same maker, and no single factor decides this; classification, price, properties, purposes, buyers and channels of trade are all weighed. Under the old Trademark Law, the registrant's exclusive right was limited to the goods in its certificate and required actual use in the Philippines. Trademark infringement requires prior registration and no fraudulent intent, while unfair competition requires fraudulent intent (passing off) but not registration. A law is not applied retroactively.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2004/jul2004/gr_154342_2004.html"
+    },
+    {
+      "id": "case-0023",
+      "status": "draft",
+      "name": "Taiwan Kolin Corporation, Ltd. v. Kolin Electronics Co., Inc.",
+      "grNumber": "G.R. No. 209843",
+      "year": 2015,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "facts": "In 1996 Taiwan Kolin Corporation, Ltd. applied to the Intellectual Property Office (IPO) to register \"KOLIN\" for a group of goods, including colored televisions, refrigerators, air conditioners, electric fans and water dispensers. After the application was considered abandoned for failure to elect one class, it was revived in 2002, with Taiwan Kolin electing Class 9 of the Nice Classification for goods such as television sets, cassette recorders, VCD amplifiers, camcorders and other audio/video electronic equipment. Kolin Electronics Co., Inc. opposed in 2006. It had registered its own \"KOLIN\" mark on November 23, 2003, for Class 9 goods: automatic voltage regulator, converter, recharger, stereo booster, AC-DC regulated power supply, step-down transformer and PA amplified AC-DC. In an earlier dispute between the two, the IPO had not given priority to Taiwan Kolin's 1988 Taiwan registration, because there was no proof that it used the mark in the Philippines. The IPO Bureau of Legal Affairs sustained the opposition and rejected Taiwan Kolin's application, because the marks were identical and the goods were in the same class, and it noted evidence of actual confusion. The IPO Director General reversed and gave due course to the application, restricted to \"television and DVD player\". The Court of Appeals reinstated the Bureau's decision, on the ground that the marks were confusingly similar, that televisions could be considered within the normal expansion of Kolin Electronics' business, and that the goods were used together. Taiwan Kolin went to the Supreme Court.",
+      "issue": "Is Taiwan Kolin entitled to register \"KOLIN\" for its television sets and DVD players, that is, are its goods related to the goods covered by Kolin Electronics' earlier registration of the identical mark, so that confusion is likely?",
+      "ruling": "The Court granted the petition, reversed the Court of Appeals and reinstated the Director General's decision. (1) Identical marks may be registered for products in the same class. Uniformity in categorization under the Nice Classification does not by itself bar registration of an identical mark; emphasis should be on the similarity of the products and not on an arbitrary classification, and the fact that one person has used a mark on his goods does not, without more, prevent others from using it on unrelated articles of a different kind. (2) Applying the Mighty Corporation factors, the goods are unrelated. Classification is only one of many considerations. Class 9 can be sub-classified into five groups: Taiwan Kolin's televisions and DVD players are audiovisual equipment, while Kolin Electronics' regulators, converters and similar goods are devices for controlling the distribution and use of electricity. Taiwan Kolin's goods are home appliances with a distinct function and purpose, sold wholesale to accredited dealers, while Kolin Electronics' goods are sold in electrical and hardware stores. The Court rejected the idea that all electronic products, or all devices that are plugged into sockets, are necessarily related. (3) The ordinarily intelligent buyer is not likely to be confused. The goods are relatively expensive and rarely replaced, so the buyer is more cautious and discriminating, and the two marks, though both read \"KOLIN\", differ visually and aurally (italic black lettering against white lettering on a red background). (4) The usual respect for the factual findings of lower courts does not apply where they overlooked, misapprehended or misapplied a fact or circumstance of weight; here the nature of the products materially affects the outcome.",
+      "keyDoctrine": "Registration of an identical mark is not barred merely because both sets of goods fall in the same class of the Nice Classification. Whether goods are related is decided by the Mighty Corporation factors, with classification only one of them, and the test of likely confusion looks at the ordinarily intelligent buyer, who is more careful when buying relatively expensive goods.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2015/mar2015/gr_209843_2015.html"
     }
   ],
   "questions": [
@@ -2211,6 +2226,238 @@
         "url": "https://lawphil.net/judjuris/juri2004/jul2004/gr_154342_2004.html",
         "part": "The GALLO wine trademark is not a well-known mark in the context of the Paris Convention in this case",
         "excerpt": "Third and most important, pursuant to our ruling in Canon Kabushiki Kaisha vs. Court of Appeals and NSR Rubber Corporation, \"GALLO\" cannot be considered a \"well-known\" mark within the contemplation and protection of the Paris Convention in this case since wines and cigarettes are not identical or similar goods: … c) the mark must be for use in the same or similar kinds of goods;"
+      }
+    },
+    {
+      "id": "q-0376",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "An intellectual property office rejects an application to register a mark, saying: \"The mark is identical to a registered mark, and both are used on goods in the same class of the Nice Classification. On this point alone, the application should be denied.\" Is this reasoning correct? Explain, based on Taiwan Kolin Corporation, Ltd. v. Kolin Electronics Co., Inc.",
+      "suggestedAnswer": {
+        "answer": "No. Identity of the marks and uniformity of classification do not, by themselves, decide the matter. What matters is whether the goods themselves are similar or related, not the classification in which they were placed.",
+        "legalBasis": "Mere uniformity in categorization does not automatically preclude the registration of what appears to be an identical mark, and in a long line of cases the Court has held that this circumstance does not necessarily result in trademark infringement. Whether the goods fall under the same categories of the Nice Classification is not the sole and decisive factor. Emphasis should be on the similarity of the products involved and not on the arbitrary classification or general description of their properties or characteristics. The mere fact that one person has adopted and used a trademark on his goods does not, without more, prevent the adoption and use of the same trademark by others on unrelated articles of a different kind. Examples in the cases cited include LOTUS for soy sauce despite a prior LOTUS for edible oil in the same class, CAMIA for ham despite a prior CAMIA for lard, butter and soap, and HICKOK for shoes despite a prior HICKOK for handkerchiefs, briefs, belts and wallets.",
+        "application": "The office decided the case on only two points, identity of the marks and the same class, and so it ignored the question that matters: whether the applicant's goods and the registered goods are similar or related. Without an examination of the goods themselves, the rejection cannot stand on that reasoning alone. The identical-mark-and-same-class argument was called specious by the Court.",
+        "conclusion": "The reasoning is not correct. The application cannot be denied on the sole ground of an identical mark in the same class; the court must examine whether the goods are actually related."
+      },
+      "keyPoints": [
+        "Uniformity in categorization does not automatically preclude the registration of an identical mark",
+        "The Nice Classification of goods is not the sole and decisive factor",
+        "Emphasis should be on the similarity of the products and not on an arbitrary classification",
+        "The prior use of a mark on one kind of goods does not, without more, prevent others from using it on unrelated articles",
+        "Examples: LOTUS, CAMIA and HICKOK"
+      ],
+      "caseIds": [
+        "case-0023"
+      ],
+      "source": {
+        "caseTitle": "Taiwan Kolin Corporation, Ltd. v. Kolin Electronics Co., Inc.",
+        "grNumber": "G.R. No. 209843",
+        "url": "https://lawphil.net/judjuris/juri2015/mar2015/gr_209843_2015.html",
+        "part": "Identical marks may be registered for products from the same classification",
+        "excerpt": "On this point alone, Respondent-Applicant’s application should already be denied. The argument is specious. … But mere uniformity in categorization, by itself, does not automatically preclude the registration of what appears to be an identical mark, if that be the case. In fact, this Court, in a long line of cases, has held that such circumstance does not necessarily result in any trademark infringement. … Verily, whether or not the products covered by the trademark sought to be registered by Taiwan Kolin, on the one hand, and those covered by the prior issued certificate of registration in favor of Kolin Electronics, on the other, fall under the same categories in the NCL is not the sole and decisive factor in determining a possible violation of Kolin Electronics’ intellectual property right should petitioner’s application be granted. It is hornbook doctrine, as held in the above-cited cases, that emphasis should be on the similarity of the products involved and not on the arbitrary classification or general description of their properties or characteristics. The mere fact that one person has adopted and used a trademark on his goods would not, without more, prevent the adoption and use of the same trademark by others on unrelated articles of a different kind."
+      }
+    },
+    {
+      "id": "q-0377",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "A company that makes televisions and DVD players applies to register a mark that is identical to a mark registered by another company for voltage regulators, converters and stereo boosters. The opponent argues that all of these are electronic products that plug into sockets, so they are related goods. The applicant answers that its goods are home appliances that are sold wholesale to accredited dealers, while the opponent's goods are sold in electrical and hardware stores. Are the goods related? Explain, based on Taiwan Kolin Corporation, Ltd. v. Kolin Electronics Co., Inc.",
+      "suggestedAnswer": {
+        "answer": "No. It is not enough that all of the goods are electronic products in the same class. The goods must be tested against several factors, and on those factors the applicant's home appliances and the opponent's power and audio accessories are not related.",
+        "legalBasis": "A certificate of registration gives the owner the exclusive right to sue those who adopt a similar mark for the goods or services in the certificate and also for those that are related to them. Under Mighty Corporation v. E. & J. Gallo Winery, relatedness is tested against several factors, including the business to which the goods belong, the class of product, the nature and cost of the articles, their descriptive properties, their purpose, the fields of manufacture, the conditions under which they are purchased, and the channels of trade through which they flow. Classification under the Nice Classification is only part of the factors, and stating that the goods are electronic products in Class 9 accounts for only one of many considerations. Class 9 can be sub-categorized into five classifications, among them information technology and audiovisual equipment, and apparatus and devices for controlling the distribution and use of electricity.",
+        "application": "The applicant's televisions and DVD players are audiovisual equipment sold as home appliances, with a function and purpose different from the opponent's voltage regulators, converters and boosters, which are devices for controlling the distribution and use of electricity. They are also sold through different channels: wholesale to accredited dealers, as against electrical and hardware stores. In this digital age, when electronic products have diversified greatly, it is difficult to say that all devices that plug into sockets are necessarily related goods. So it is wrong to conclude that all electronic products are related, or that the registration of one electronic product precludes the registration of a similar mark for another.",
+        "conclusion": "The goods are unrelated, and the opposition based on relatedness fails."
+      },
+      "keyPoints": [
+        "The registration protects against similar marks on the goods specified and on related goods",
+        "Relatedness is tested against the Mighty Corporation factors, not only classification",
+        "Stating that the goods are electronic products in Class 9 is only one consideration",
+        "Class 9 has sub-classifications, such as audiovisual equipment and devices for controlling the distribution and use of electricity",
+        "Different function and purpose and different channels of trade point to unrelated goods",
+        "Not all devices that plug into sockets are necessarily related goods"
+      ],
+      "caseIds": [
+        "case-0023"
+      ],
+      "source": {
+        "caseTitle": "Taiwan Kolin Corporation, Ltd. v. Kolin Electronics Co., Inc.",
+        "grNumber": "G.R. No. 209843",
+        "url": "https://lawphil.net/judjuris/juri2015/mar2015/gr_209843_2015.html",
+        "part": "The products covered by petitioner's application and respondent's registration are unrelated",
+        "excerpt": "A certificate of trademark registration confers upon the trademark owner the exclusive right to sue those who have adopted a similar mark not only in connection with the goods or services specified in the certificate, but also with those that are related thereto. … As mentioned, the classification of the products under the NCL is merely part and parcel of the factors to be considered in ascertaining whether the goods are related. It is not sufficient to state that the goods involved herein are electronic products under Class 9 in order to establish relatedness between the goods, for this only accounts for one of many considerations enumerated in Mighty Corporation. In this case, credence is accorded to petitioner’s assertions that: a. Taiwan Kolin’s goods are classified as home appliances as opposed to Kolin Electronics’ goods which are power supply and audio equipment accessories; b. Taiwan Kolin’s television sets and DVD players perform distinct function and purpose from Kolin Electronics’ power supply and audio equipment; and c. Taiwan Kolin sells and distributes its various home appliance products on wholesale and to accredited dealers, whereas Kolin Electronics’ goods are sold and flow through electrical and hardware stores. … Clearly then, it was erroneous for respondent to assume over the CA to conclude that all electronic products are related and that the coverage of one electronic product necessarily precludes the registration of a similar mark over another."
+      }
+    },
+    {
+      "id": "q-0378",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "Two marks use the same word in capital letters. One is black, italicized lettering, and the other is white lettering on a red background. They are used for relatively expensive electronic goods that are bought rarely and last for years. Is an ordinary buyer likely to be confused? Explain how the character of the buyer and the cost of the goods affect the test, based on Taiwan Kolin Corporation, Ltd. v. Kolin Electronics Co., Inc.",
+      "suggestedAnswer": {
+        "answer": "No. The differences between the marks, even if subtle, are enough, and for relatively expensive, rarely bought goods the ordinary buyer is an ordinarily intelligent buyer who is more discerning, so confusion is less likely.",
+        "legalBasis": "In trademark cases no rigid rules can be formulated; each case is decided on its merits with due regard to the goods involved and the usual purchaser's character and attitude, and precedents are to be applied only if specifically in point. The cost of the goods essentially determines the attitude of the purchaser: an ordinary buyer does not exercise as much prudence in buying an article for which he pays a few centavos as in buying a more valuable thing, and expensive and valuable items are normally bought after deliberate, comparative and analytical investigation. The \"ordinary purchaser\" is not the completely unwary consumer but the ordinarily intelligent buyer considering the type of product involved, one who is familiar with the article he seeks to buy.",
+        "application": "The marks are both the same word in upper case bold letters, but there are distinct visual and aural differences: one is italic and black, the other is white on a red background, and these differences, though they may appear minimal, are enough to distinguish one brand from the other. The goods are relatively luxury items, not ordinary consumable household items of minimal cost, and they have long useful lives so replacement purchases are infrequent and the price can exceed a month's minimum wage. The casual buyer will be cautious and discriminating and will mull over the purchase, so he is expected to be more discerning in choosing among electronic products.",
+        "conclusion": "An ordinarily intelligent buyer is not likely to be confused, and the application is not likely to cause confusion or deception."
+      },
+      "keyPoints": [
+        "No rigid rules; each case is decided on its merits, and precedents apply only if specifically in point",
+        "The cost of the goods essentially determines how careful the purchaser is",
+        "Expensive and valuable items are bought after deliberate, comparative and analytical investigation",
+        "The ordinary purchaser is the ordinarily intelligent buyer for the type of product, not the completely unwary consumer",
+        "Subtle visual and aural differences (italic black v. white on red) can be enough to distinguish brands"
+      ],
+      "caseIds": [
+        "case-0023"
+      ],
+      "source": {
+        "caseTitle": "Taiwan Kolin Corporation, Ltd. v. Kolin Electronics Co., Inc.",
+        "grNumber": "G.R. No. 209843",
+        "url": "https://lawphil.net/judjuris/juri2015/mar2015/gr_209843_2015.html",
+        "part": "The ordinarily intelligent buyer is not likely to be confused",
+        "excerpt": "While both competing marks refer to the word \"KOLIN\" written in upper case letters and in bold font, the Court at once notes the distinct visual and aural differences between them: Kolin Electronics’ mark is italicized and colored black while that of Taiwan Kolin is white in pantone red color background. The differing features between the two, though they may appear minimal, are sufficient to distinguish one brand from the other. … These are not ordinary consumable household items, like catsup, soy sauce or soap which are of minimal cost. The products of the contending parties are relatively luxury items not easily considered affordable. Accordingly, the casual buyer is predisposed to be more cautious and discriminating in and would prefer to mull over his purchase. Confusion and deception, then, is less likely. … In light of these circumstances, it is then expected that the ordinary intelligent buyer would be more discerning when it comes to deciding which electronic product they are going to purchase, and it is this standard which this Court applies herein in determining the likelihood of confusion should petitioner’s application be granted."
+      }
+    },
+    {
+      "id": "q-0379",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "According to Taiwan Kolin Corporation, Ltd. v. Kolin Electronics Co., Inc., a certificate of trademark registration confers on the owner the exclusive right to sue those who have adopted a similar mark in connection with which goods?",
+      "choices": {
+        "A": "Only the goods or services exactly as listed in the certificate.",
+        "B": "The goods or services specified in the certificate and those that are related to them.",
+        "C": "Any goods whatsoever, because the mark is registered.",
+        "D": "Only goods in competition with the registered goods in the same stores."
+      },
+      "correct": "B",
+      "explanation": "B is correct. The Court stated that a certificate of trademark registration confers upon the trademark owner the exclusive right to sue those who have adopted a similar mark not only in connection with the goods or services specified in the certificate but also with those that are related thereto. A is wrong because protection extends to related goods. C is wrong because unrelated goods are not covered. D is wrong because related goods need not be in actual competition: non-competing goods may be so related that they are assumed to come from one manufacturer.",
+      "caseIds": [
+        "case-0023"
+      ],
+      "source": {
+        "caseTitle": "Taiwan Kolin Corporation, Ltd. v. Kolin Electronics Co., Inc.",
+        "grNumber": "G.R. No. 209843",
+        "url": "https://lawphil.net/judjuris/juri2015/mar2015/gr_209843_2015.html",
+        "part": "The products covered by petitioner's application and respondent's registration are unrelated",
+        "excerpt": "A certificate of trademark registration confers upon the trademark owner the exclusive right to sue those who have adopted a similar mark not only in connection with the goods or services specified in the certificate, but also with those that are related thereto."
+      }
+    },
+    {
+      "id": "q-0380",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "A party in a trademark case cites many earlier decisions to show that the goods in its case are related. According to Taiwan Kolin Corporation, Ltd. v. Kolin Electronics Co., Inc., how should precedents on confusing similarity be used?",
+      "choices": {
+        "A": "They bind the court in every trademark case, whatever the facts.",
+        "B": "They should be disregarded, because trademark cases have no precedents.",
+        "C": "They are used only to decide the amount of damages.",
+        "D": "No rigid rules can be formulated; each case is decided on its merits, and precedents should be applied only if they are specifically in point."
+      },
+      "correct": "D",
+      "explanation": "D is correct. The Court said that in ascertaining whether one trademark is confusingly similar to another, no rigid set of rules can plausibly be formulated, and each case must be decided on its merits with due regard to the goods or services involved and the usual purchaser's character and attitude. Precedent must be studied in the light of the facts of the particular case, so jurisprudential precedents should be applied only if they are specifically in point. The Court then distinguished the cases cited by the respondent (which involved common household items such as biscuits and milk, cosmetics, clothes and toilet articles) from the present case, which involved relatively expensive electronic goods. A and B are wrong because precedents are studied but applied only where in point. C has no basis in the decision.",
+      "caseIds": [
+        "case-0023"
+      ],
+      "source": {
+        "caseTitle": "Taiwan Kolin Corporation, Ltd. v. Kolin Electronics Co., Inc.",
+        "grNumber": "G.R. No. 209843",
+        "url": "https://lawphil.net/judjuris/juri2015/mar2015/gr_209843_2015.html",
+        "part": "The ordinarily intelligent buyer is not likely to be confused",
+        "excerpt": "In trademark cases, particularly in ascertaining whether one trademark is confusingly similar to another, no rigid set rules can plausible be formulated. Each case must be decided on its merits, with due regard to the goods or services involved, the usual purchaser’s character and attitude, among others. In such cases, even more than in any other litigation, precedent must be studied in the light of the facts of a particular case. That is the reason why in trademark cases, jurisprudential precedents should be applied only to a case if they are specifically in point."
+      }
+    },
+    {
+      "id": "q-0381",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "In deciding whether an application to register a mark would cause confusion, the Court in Taiwan Kolin Corporation, Ltd. v. Kolin Electronics Co., Inc. (quoting Emerald Garment) described the \"ordinary purchaser\". Who is the ordinary purchaser?",
+      "choices": {
+        "A": "The completely unwary consumer who knows nothing about the product.",
+        "B": "An expert who studies every label under a microscope.",
+        "C": "The ordinarily intelligent buyer, considering the type of product involved, who is accustomed to buy, and therefore somewhat familiar with, the goods in question.",
+        "D": "The manufacturer's own sales agent."
+      },
+      "correct": "C",
+      "explanation": "C is correct. The Court quoted the rule that more credit should be given to the ordinary purchaser, who is not the completely unwary consumer but the ordinarily intelligent buyer considering the type of product involved, as defined in Dy Buncio v. Tan Tiao Bok: one accustomed to buy, and therefore to some extent familiar with, the goods in question. The test of fraudulent simulation is the likelihood of deception of persons somewhat acquainted with an established design and desirous of purchasing the commodity, not of a person who knows nothing about the design. A is the opposite of the test. B and D are not what the Court said.",
+      "caseIds": [
+        "case-0023"
+      ],
+      "source": {
+        "caseTitle": "Taiwan Kolin Corporation, Ltd. v. Kolin Electronics Co., Inc.",
+        "grNumber": "G.R. No. 209843",
+        "url": "https://lawphil.net/judjuris/juri2015/mar2015/gr_209843_2015.html",
+        "part": "The ordinarily intelligent buyer is not likely to be confused",
+        "excerpt": "Finally, in line with the foregoing discussions, more credit should be given to the \"ordinary purchaser.\" Cast in this particular controversy, the ordinary purchaser is not the \"completely unwary consumer\" but is the \"ordinarily intelligent buyer\" considering the type of product involved."
+      }
+    },
+    {
+      "id": "q-0382",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "The Court of Appeals' factual findings in Taiwan Kolin Corporation, Ltd. v. Kolin Electronics Co., Inc. are normally given great respect. Why did the Supreme Court nevertheless reverse the Court of Appeals on the question of whether the goods are related?",
+      "choices": {
+        "A": "Because the Supreme Court never defers to the Court of Appeals.",
+        "B": "Because the Court of Appeals had no jurisdiction over the case.",
+        "C": "Because the parties agreed to waive the Court of Appeals' findings.",
+        "D": "Because the policy of respecting factual findings does not bind where the lower courts overlooked, misapprehended or misapplied any fact or circumstance of weight and substance, and the nature of the products materially affects the outcome."
+      },
+      "correct": "D",
+      "explanation": "D is correct. The Court noted on a final point that the policy of according great respect, if not finality, to the factual findings of the courts below is not binding where they have overlooked, misapprehended or misapplied any fact or circumstance of weight and substance, and that here the nature of the products involved materially affects the outcome. A is wrong because the Court did recognize the general policy. B and C are not reasons the Court gave. The Court then reversed the Court of Appeals' decision and resolution and reinstated the Decision of the IPO Director General.",
+      "caseIds": [
+        "case-0023"
+      ],
+      "source": {
+        "caseTitle": "Taiwan Kolin Corporation, Ltd. v. Kolin Electronics Co., Inc.",
+        "grNumber": "G.R. No. 209843",
+        "url": "https://lawphil.net/judjuris/juri2015/mar2015/gr_209843_2015.html",
+        "part": "Questions of fact may still be entertained",
+        "excerpt": "On a final note, the policy according factual findings of courts a quo great respect, if not finality, is not binding where they have overlooked, misapprehended, or misapplied any fact or circumstance of weight and substances. So it must be here; the nature of the products involved materially affects the outcome of the instant case."
+      }
+    },
+    {
+      "id": "q-0383",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "In Taiwan Kolin Corporation, Ltd. v. Kolin Electronics Co., Inc., what was the final outcome for Taiwan Kolin's application to register the mark for its goods?",
+      "choices": {
+        "A": "The Court of Appeals' decision was reversed, and the Director General's decision, which gave due course to the application subject to a use limitation to \"television and DVD player\", was reinstated.",
+        "B": "The Court of Appeals' decision was affirmed, and the application was rejected for all goods.",
+        "C": "The application was granted for all the goods first listed, including refrigerators and air conditioners.",
+        "D": "The case was sent back to the Bureau of Legal Affairs for a new trial."
+      },
+      "correct": "A",
+      "explanation": "A is correct. The Court granted the petition, reversed and set aside the Court of Appeals' decision and resolution, and reinstated the decision of the IPO Director General of November 23, 2011, which had given due course to Taiwan Kolin's application subject to the use limitation or restriction for the goods \"television and DVD player\". B is the opposite of the result. C is wrong because the registration was limited to televisions and DVD players. D is wrong because the Court itself resolved the issue and reinstated a decision.",
+      "caseIds": [
+        "case-0023"
+      ],
+      "source": {
+        "caseTitle": "Taiwan Kolin Corporation, Ltd. v. Kolin Electronics Co., Inc.",
+        "grNumber": "G.R. No. 209843",
+        "url": "https://lawphil.net/judjuris/juri2015/mar2015/gr_209843_2015.html",
+        "part": "Dispositive portion; ruling of the IPO Director General",
+        "excerpt": "The Appellant’s Trademark Application No. 4-1996-106310 is hereby GIVEN DUE COURSE subject to the use limitation or restriction for the goods \"television and DVD player\". … WHEREFORE, in view of the foregoing, the petition is hereby GRANTED. The Decision and the Resolution of the Court of Appeals in CA-G.R. SP No. 122565, dated April 30, 2013 and November 6, 2013, respectively, are hereby REVERSED and SET ASIDE. Accordingly, the Decision of the Intellectual Property Office Director General in Inter Partes Case No. 14-2006-00096, dated November 23, 2011, is hereby REINSTATED."
       }
     }
   ]
