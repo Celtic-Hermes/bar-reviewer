@@ -16,6 +16,21 @@
       "ruling": "The Court denied the petition and affirmed the Court of Appeals' Resolution allowing the intervention and its Amended Decision denying revival. (1) Because the Court of Appeals had already decided both the intervention and the merits, a Rule 45 petition was the proper remedy. The IPO's own rules against intervention bind only proceedings inside the agency; in the Court of Appeals the Rules of Court (Rule 19) apply, and Therapharma had a legal interest because Merck had threatened it with legal action. (2) The application could not be revived. The rules allow revival only within four months from abandonment (the Intellectual Property Code even provides three months) and give no exception, so a petition filed 13 years later was out of time even if the delay had been excusable. (3) Even if the period could be extended, Dupont was inexcusably negligent. Its agent's negligence bound it, and a foreign client has a duty to keep itself updated on its local application: it asked for a status update only eight years after filing, and then waited four more years after learning of its agent's death. The period runs from the mailing of the notice, not from actual notice, so Schuartz v. Court of Appeals applies. (4) A right of priority is not a patent. It matters only when two applications conflict, gives no property right without a patent, and does not take an invention out of the public domain. (5) Public interest would also be prejudiced, because a patent on losartan could end the competition that had lowered prices.",
       "keyDoctrine": "An abandoned patent application can be revived only within the short period fixed by the rules (four months under the old rules and the implementing rules; three months under Section 133.4 of the Intellectual Property Code), and no exception extends it. Counsel's negligence binds the applicant, and a foreign applicant must itself keep informed about its local application. A right of priority is not a patent: no patent, no protection.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2016/aug2016/gr_174379_2016.html"
+    },
+    {
+      "id": "case-0015",
+      "status": "draft",
+      "name": "Smith Kline Beckman Corp. v. Court of Appeals and Tryco Pharma Corp.",
+      "grNumber": "G.R. No. 126627",
+      "year": 2003,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "facts": "Smith Kline Beckman Corporation, a Pennsylvania corporation licensed to do business in the Philippines, was granted Letters Patent No. 14561 in 1981 for a term of seventeen years. Its claims cover a new compound, methyl 5 propylthio-2-benzimidazole carbamate, and the methods and compositions that use it against gastrointestinal parasites and lungworms in animals. Tryco Pharma Corporation makes and sells Impregon, a veterinary drug whose active ingredient is Albendazole. Smith Kline sued Tryco in the Caloocan Regional Trial Court for patent infringement and unfair competition, claiming that its patent covers Albendazole. The trial court dismissed the complaint, declared the patent void, and awarded Tryco P330,000 actual damages and P100,000 attorney's fees. The Court of Appeals agreed that there was no infringement and no unfair competition (it noted that the United States had issued a separate patent for Albendazole to Smith Kline under its former corporate name, which suggested that Albendazole differs from the patented compound), but it held that the patent itself was valid and deleted the order nullifying and cancelling it. Smith Kline appealed to the Supreme Court.",
+      "issue": "Did Tryco infringe Smith Kline's patent by selling a drug containing Albendazole, either literally or under the doctrine of equivalents? Were the awards of actual damages and attorney's fees to Tryco proper?",
+      "ruling": "The Court affirmed the Court of Appeals with modification. (1) Only questions of law may be raised in a petition for review on certiorari, and the Court found nothing wrong with the appellate court's conclusions on infringement. (2) The burden of proving infringement is on the plaintiff. The nine claims of the patent never mention Albendazole; when the language of the claims is clear, the patentee is bound by it, and neither the patentee nor the courts may enlarge it. The absence of the word Albendazole is not decisive by itself, but Smith Kline presented no extrinsic evidence that its patent embraces Albendazole. (3) The doctrine of equivalents was not satisfied. It requires the function-means-and-result test, and the patentee must prove all three parts. Both compounds kill parasites, but identity of result is not enough unless the other compound works in substantially the same way, and Smith Kline showed nothing about how Albendazole works; its witness was not qualified as an expert. (4) A divisional application only means that the patented compound is an invention distinct from the other inventions in the original application, and Albendazole was one of those others. (5) The awards of actual damages (lost profits proved only by testimony of Tryco's officers, without documents) and of attorney's fees (no bad faith or malice shown) were deleted. Tryco received P20,000 in temperate damages instead, because it suffered some pecuniary loss that could not be proved with certainty.",
+      "keyDoctrine": "The plaintiff in a patent infringement case has the burden of proving infringement. A patentee is bound by the clear language of its claims, and courts cannot enlarge them. Under the doctrine of equivalents, a different substance or device infringes only if it performs substantially the same function in substantially the same way to achieve substantially the same result, and the patentee must prove all three.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2003/aug2003/gr_126627_2003.html"
     }
   ],
   "questions": [
@@ -247,6 +262,235 @@
         "url": "https://lawphil.net/judjuris/juri2016/aug2016/gr_174379_2016.html",
         "part": "Part VII (the purpose of the patent system)",
         "excerpt": "The patent law has a three-fold purpose: \"first, patent law seeks to foster and reward invention; second, it promotes disclosures of inventions to stimulate further innovation and to permit the public to practice the invention once the patent expires; third, the stringent requirements for patent protection. seek to ensure that ideas in the public domain remain there for the free use of the public.\""
+      }
+    },
+    {
+      "id": "q-0312",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "prompt": "A company holds a patent whose claims describe only a chemical compound called Compound A and ways of using it. A competitor sells a product whose active ingredient is Compound B, a differently named compound that appears nowhere in the patent. The patent holder sues for infringement, arguing that Compound B is covered, but its only evidence is the patent itself and the testimony of its own sales manager. Will the suit prosper? Explain, based on Smith Kline Beckman Corp. v. Court of Appeals.",
+      "suggestedAnswer": {
+        "answer": "No. The patent holder has the burden of proving infringement, and a patent covers only what its claims say. Nothing in the claims mentions Compound B, and the patent holder offered no competent evidence that its patent embraces it.",
+        "legalBasis": "The burden of proof to substantiate a charge of patent infringement rests on the plaintiff. When the language of the claims is clear and distinct, the patentee is bound by it and may not claim anything beyond it; courts may not add to or detract from the claims matters not expressed or necessarily implied, nor enlarge the patent beyond what the inventor claimed and the patent office allowed. The mere absence of a compound's name from the patent is not determinative of its non-inclusion, but then extrinsic evidence is needed to show that the compound inheres in the patent or that the meaning of the claims embraces it.",
+        "application": "The claims describe Compound A and its uses and say nothing about Compound B. The patent holder's evidence consists of the patent and its own sales manager's testimony. The manager was not qualified as an expert with knowledge of chemical compounds, so the testimony does not prove that Compound B is within the claims. Without extrinsic proof that Compound B inheres in the patent, the claims, being clear, cannot be stretched to cover it.",
+        "conclusion": "The infringement suit fails because the patent holder did not carry its burden of proof."
+      },
+      "keyPoints": [
+        "The burden of proving patent infringement rests on the plaintiff",
+        "A patentee is bound by the clear language of its claims and may not claim anything beyond them",
+        "Courts may not enlarge the patent beyond what the inventor claimed and the patent office allowed",
+        "The absence of a compound's name is not by itself determinative, but extrinsic evidence is then needed to show the claims embrace it",
+        "A witness who is not qualified as an expert cannot prove that two chemical compounds are the same"
+      ],
+      "caseIds": [
+        "case-0015"
+      ],
+      "source": {
+        "caseTitle": "Smith Kline Beckman Corp. v. Court of Appeals and Tryco Pharma Corp.",
+        "grNumber": "G.R. No. 126627",
+        "url": "https://lawphil.net/judjuris/juri2003/aug2003/gr_126627_2003.html",
+        "part": "Discussion of the principal issue (patent infringement)",
+        "excerpt": "The burden of proof to substantiate a charge for patent infringement rests on the plaintiff. … When the language of its claims is clear and distinct, the patentee is bound thereby and may not claim anything beyond them. And so are the courts bound which may not add to or detract from the claims matters not expressed or necessarily implied, nor may they enlarge the patent beyond the scope of that which the inventor claimed and the patent office allowed, even if the patentee may have been entitled to something more than the words it had chosen would include. … The testimony of Dr. Orinion lends no support to petitioner’s cause, he not having been presented or qualified as an expert witness who has the knowledge or expertise on the matter of chemical compounds."
+      }
+    },
+    {
+      "id": "q-0313",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "prompt": "A patent covers a water filter that removes impurities through a three-stage mechanical process. A competitor sells a filter that also removes impurities and works just as well, but it does so chemically, by a different means. The patent holder invokes the doctrine of equivalents. Will the doctrine apply? Explain, based on Smith Kline Beckman Corp. v. Court of Appeals.",
+      "suggestedAnswer": {
+        "answer": "No. Reaching the same result is not enough. Under the doctrine of equivalents the competing device must perform substantially the same function in substantially the same way to achieve substantially the same result, and the patent holder must prove all three. Here the means are different.",
+        "legalBasis": "The doctrine of equivalents provides that infringement also takes place when a device appropriates a prior invention by incorporating its innovative concept and, although with some modification and change, performs substantially the same function in substantially the same way to achieve substantially the same result. It requires satisfaction of the function-means-and-result test, and the patentee has the burden to show that all three components are met. Identity of result does not amount to infringement unless the other device operates in substantially the same way or by substantially the same means; the principle or mode of operation must be the same or substantially the same.",
+        "application": "Both filters remove impurities, so the function and the result are similar. But the competitor's filter removes them chemically, while the patented filter does so through a three-stage mechanical process. The means or mode of operation is therefore not substantially the same, and the patent holder cannot satisfy the middle part of the test. It also has the burden of showing, with competent evidence, how the competing filter works.",
+        "conclusion": "The doctrine of equivalents does not apply, and the competitor does not infringe on that theory."
+      },
+      "keyPoints": [
+        "Doctrine of equivalents: substantially the same function, in substantially the same way, to achieve substantially the same result",
+        "The function-means-and-result test has three parts, and the patentee must prove all three",
+        "Identity of result alone is not infringement; the principle or mode of operation must be the same or substantially the same",
+        "The patentee has the burden of proof, and unqualified testimony does not prove equivalence"
+      ],
+      "caseIds": [
+        "case-0015"
+      ],
+      "source": {
+        "caseTitle": "Smith Kline Beckman Corp. v. Court of Appeals and Tryco Pharma Corp.",
+        "grNumber": "G.R. No. 126627",
+        "url": "https://lawphil.net/judjuris/juri2003/aug2003/gr_126627_2003.html",
+        "part": "Discussion of the doctrine of equivalents",
+        "excerpt": "The doctrine of equivalents provides that an infringement also takes place when a device appropriates a prior invention by incorporating its innovative concept and, although with some modification and change, performs substantially the same function in substantially the same way to achieve substantially the same result. … While both compounds have the effect of neutralizing parasites in animals, identity of result does not amount to infringement of patent unless Albendazole operates in substantially the same way or by substantially the same means as the patented compound, even though it performs the same function and achieves the same result. In other words, the principle or mode of operation must be the same or substantially the same. The doctrine of equivalents thus requires satisfaction of the function-means-and-result test, the patentee having the burden to show that all three components of such equivalency test are met."
+      }
+    },
+    {
+      "id": "q-0314",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "prompt": "A company's patent was granted on a divisional application split off from an earlier application that claimed two inventions, Invention One and Invention Two. The patent claims only Invention Two. The company sues a competitor that sells a product made with Invention One, arguing that because both inventions started in the same original application, Invention One is also covered by its patent. Is the company right? Explain, based on Smith Kline Beckman Corp. v. Court of Appeals.",
+      "suggestedAnswer": {
+        "answer": "No. A divisional application shows that the claimed invention is distinct from the other inventions in the original application. It does not extend the resulting patent to those other inventions.",
+        "legalBasis": "A divisional application comes into play when two or more inventions are claimed in a single application but are of such a nature that a single patent may not be issued for them. The applicant is required to divide, that is, to limit the claims to whichever invention he elects, and the inventions not elected may be made the subject of separate applications, called divisional applications.",
+        "application": "The company's patent came from a divisional application. If a single patent could have covered both Invention One and Invention Two, there would have been no need for a divisional application. So the very fact that the patent was issued on a divisional application means that Invention Two is an invention distinct from Invention One. The patent covers Invention Two only, and the claims are what bind the patentee.",
+        "conclusion": "The company cannot claim Invention One under this patent, and the argument based on the divisional application fails."
+      },
+      "keyPoints": [
+        "A divisional application is used when two or more inventions are claimed in one application and a single patent cannot be issued for them",
+        "The applicant limits the claims to the invention elected; the others may be the subject of separate applications",
+        "An invention issued on a divisional application is distinct from the other inventions in the original application",
+        "Sharing an original application does not make the other inventions part of the resulting patent"
+      ],
+      "caseIds": [
+        "case-0015"
+      ],
+      "source": {
+        "caseTitle": "Smith Kline Beckman Corp. v. Court of Appeals and Tryco Pharma Corp.",
+        "grNumber": "G.R. No. 126627",
+        "url": "https://lawphil.net/judjuris/juri2003/aug2003/gr_126627_2003.html",
+        "part": "Discussion of divisional applications",
+        "excerpt": "As for the concept of divisional applications proffered by petitioner, it comes into play when two or more inventions are claimed in a single application but are of such a nature that a single patent may not be issued for them. The applicant thus is required \"to divide,\" that is, to limit the claims to whichever invention he may elect, whereas those inventions not elected may be made the subject of separate applications which are called \"divisional applications.\" What this only means is that petitioner’s methyl 5 propylthio-2-benzimidazole carbamate is an invention distinct from the other inventions claimed in the original application divided out, Albendazole being one of those other inventions."
+      }
+    },
+    {
+      "id": "q-0315",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "prompt": "A patent holder appeals to the Supreme Court by petition for review on certiorari from a Court of Appeals decision that found no infringement. In its petition it asks the Court to re-weigh the evidence on whether the two products are the same. According to Smith Kline Beckman Corp. v. Court of Appeals, what is the general rule?",
+      "choices": {
+        "A": "The Supreme Court re-weighs the evidence in every petition for review on certiorari.",
+        "B": "Only questions of law may be raised, and the Court does not review the appellate court's factual findings unless, for example, they are mistaken, absurd, speculative, conjectural or contrary to the findings of the court of origin.",
+        "C": "Only questions of fact may be raised, because patent cases are technical.",
+        "D": "The Court must adopt the findings of the trial court even if the Court of Appeals reached a different conclusion."
+      },
+      "correct": "B",
+      "explanation": "B is correct. The Court repeated that only questions of law may be raised in a petition for review on certiorari, and that it does not review the appellate court's factual findings unless they are mistaken, absurd, speculative, conjectural, conflicting, tainted with grave abuse of discretion, or contrary to the findings culled by the court of origin. After examining the record, it found nothing wrong in the appellate court's conclusions on infringement. A is wrong because the Court is not a trier of facts. C is the opposite of the rule. D is wrong because the stated exceptions concern the appellate court's findings being, among other things, contrary to those of the court of origin; the rule does not bind the Court to the trial court in every case.",
+      "caseIds": [
+        "case-0015"
+      ],
+      "source": {
+        "caseTitle": "Smith Kline Beckman Corp. v. Court of Appeals and Tryco Pharma Corp.",
+        "grNumber": "G.R. No. 126627",
+        "url": "https://lawphil.net/judjuris/juri2003/aug2003/gr_126627_2003.html",
+        "part": "Discussion of the principal issue (the Court's power of review)",
+        "excerpt": "As has repeatedly been held, only questions of law may be raised in a petition for review on certiorari before this Court. Unless the factual findings of the appellate court are mistaken, absurd, speculative, conjectural, conflicting, tainted with grave abuse of discretion, or contrary to the findings culled by the court of origin, this Court does not review them."
+      }
+    },
+    {
+      "id": "q-0316",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "prompt": "A patent's claims describe only one chemical compound by name. The patent holder sues a competitor whose drug contains a different, differently named compound, arguing that the patent covers it too. According to Smith Kline Beckman Corp. v. Court of Appeals, what is the effect of the second compound's name not appearing anywhere in the patent?",
+      "choices": {
+        "A": "It is conclusive that the compound is outside the patent, and no further evidence may be received.",
+        "B": "It is conclusive that the compound is inside the patent, because every patent includes all related compounds.",
+        "C": "It makes the patent void for failing to describe the invention.",
+        "D": "It is not determinative by itself, but the patent holder must then present extrinsic evidence that the compound inheres in the patent or that the meaning of the claims embraces it."
+      },
+      "correct": "D",
+      "explanation": "D is correct. The Court stressed that the mere absence of the word Albendazole from the patent is not determinative of Albendazole's non-inclusion in the claims. But the language of the patent yielded nothing about Albendazole, and no extrinsic evidence was adduced to prove that it inheres in the patent despite its omission or that the meaning of the claims embraces it. So the patent holder lost. A is wrong because the Court did not treat the omission as conclusive. B is wrong because a patent does not automatically include related compounds; the patentee is bound by its claims. C is wrong because nothing in the decision links the omission to the validity of the patent.",
+      "caseIds": [
+        "case-0015"
+      ],
+      "source": {
+        "caseTitle": "Smith Kline Beckman Corp. v. Court of Appeals and Tryco Pharma Corp.",
+        "grNumber": "G.R. No. 126627",
+        "url": "https://lawphil.net/judjuris/juri2003/aug2003/gr_126627_2003.html",
+        "part": "Discussion of the principal issue (the claims of the patent)",
+        "excerpt": "It bears stressing that the mere absence of the word Albendazole in Letters Patent No. 14561 is not determinative of Albendazole’s non-inclusion in the claims of the patent. While Albendazole is admittedly a chemical compound that exists by a name different from that covered in petitioner’s letters patent, the language of Letter Patent No. 14561 fails to yield anything at all regarding Albendazole. And no extrinsic evidence had been adduced to prove that Albendazole inheres in petitioner’s patent in spite of its omission therefrom or that the meaning of the claims of the patent embraces the same."
+      }
+    },
+    {
+      "id": "q-0317",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "prompt": "A patent holder shows that a competitor's substance kills the same parasites as its patented substance, so that both perform the same function and achieve the same result. According to Smith Kline Beckman Corp. v. Court of Appeals, what more must the patent holder prove to establish infringement under the doctrine of equivalents?",
+      "choices": {
+        "A": "That the competing substance operates in substantially the same way or by substantially the same means as the patented substance.",
+        "B": "That the competing substance is cheaper than the patented substance.",
+        "C": "That the competing substance was sold only after the patent was granted.",
+        "D": "Nothing more, because identity of function and result is enough."
+      },
+      "correct": "A",
+      "explanation": "A is correct. The doctrine of equivalents requires the function-means-and-result test, and the patentee has the burden of showing that all three components are met. The Court said that identity of result does not amount to infringement unless the other substance operates in substantially the same way or by substantially the same means, even though it performs the same function and achieves the same result: the principle or mode of operation must be the same or substantially the same. B and C have nothing to do with the test. D is wrong because the Court rejected the idea that equal function and result alone are enough.",
+      "caseIds": [
+        "case-0015"
+      ],
+      "source": {
+        "caseTitle": "Smith Kline Beckman Corp. v. Court of Appeals and Tryco Pharma Corp.",
+        "grNumber": "G.R. No. 126627",
+        "url": "https://lawphil.net/judjuris/juri2003/aug2003/gr_126627_2003.html",
+        "part": "Discussion of the doctrine of equivalents",
+        "excerpt": "While both compounds have the effect of neutralizing parasites in animals, identity of result does not amount to infringement of patent unless Albendazole operates in substantially the same way or by substantially the same means as the patented compound, even though it performs the same function and achieves the same result. In other words, the principle or mode of operation must be the same or substantially the same."
+      }
+    },
+    {
+      "id": "q-0318",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "prompt": "After a court's injunction stopped its sales, a company claims lost profits as actual damages. It proves the amount only through its President and Executive Vice-President, who testify that monthly sales had been P100,000 and fell to zero. According to Smith Kline Beckman Corp. v. Court of Appeals, how should the claim be treated?",
+      "choices": {
+        "A": "It should be granted in full, because lost profits are always presumed after an injunction.",
+        "B": "It should be granted, because officers of a company are the best witnesses of its sales.",
+        "C": "It should be denied as actual damages, because the officers' testimony is not competent proof or the best evidence obtainable; documentary evidence is also required, though temperate damages may be awarded for a pecuniary loss that cannot be proved with certainty.",
+        "D": "It should be denied, and no damages of any kind may be awarded."
+      },
+      "correct": "C",
+      "explanation": "C is correct. Actual or compensatory damages cover not only the loss suffered but also profits the injured party failed to obtain, but the actual amount must be proved with a reasonable degree of certainty, based on competent proof and the best evidence obtainable. The officers' testimonies were not the competent proof or best evidence, because such damages also require documentary evidence. The Court therefore deleted the P330,000 actual damages. It instead awarded P20,000 as temperate or moderate damages, because the company had suffered some pecuniary loss the amount of which could not, from the nature of the case, be established with certainty. A and B are wrong because the amount of damages is not presumed or established by officers' say-so alone. D is wrong because the Court did award temperate damages.",
+      "caseIds": [
+        "case-0015"
+      ],
+      "source": {
+        "caseTitle": "Smith Kline Beckman Corp. v. Court of Appeals and Tryco Pharma Corp.",
+        "grNumber": "G.R. No. 126627",
+        "url": "https://lawphil.net/judjuris/juri2003/aug2003/gr_126627_2003.html",
+        "part": "Discussion of the awards of actual and temperate damages",
+        "excerpt": "While indemnification for actual or compensatory damages covers not only the loss suffered (damnum emergens) but also profits which the obligee failed to obtain (lucrum cessans or ganacias frustradas), it is necessary to prove the actual amount of damages with a reasonable degree of certainty based on competent proof and on the best evidence obtainable by the injured party. The testimonies of private respondent’s officers are not the competent proof or best evidence obtainable to establish its right to actual or compensatory damages for such damages also require presentation of documentary evidence to substantiate a claim therefor. … This Court, however, grants private respondent temperate or moderate damages in the amount of ₱20,000.00 which it finds reasonable under the circumstances, it having suffered some pecuniary loss the amount of which cannot, from the nature of the case, be established with certainty."
+      }
+    },
+    {
+      "id": "q-0319",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Patents",
+      "prompt": "A company is sued for patent infringement and wins. It asks for attorney's fees, arguing that it was forced to litigate to protect its rights, but there is no evidence that the patent holder acted with malice. According to Smith Kline Beckman Corp. v. Court of Appeals, should attorney's fees be awarded?",
+      "choices": {
+        "A": "Yes, because being forced to litigate always entitles a winning party to attorney's fees.",
+        "B": "No, because even if a party is compelled to litigate to protect its rights, attorney's fees may not be awarded without sufficient showing of bad faith, and persistence in a case out of an erroneous conviction of the righteousness of one's cause is not bad faith.",
+        "C": "Yes, because the patent holder lost the case.",
+        "D": "Yes, because attorney's fees are automatically awarded in every patent case."
+      },
+      "correct": "B",
+      "explanation": "B is correct. The Court deleted the attorney's fees that the Court of Appeals had granted under Article 2208 (2) of the Civil Code. Even if a claimant is compelled to litigate with third persons or to incur expenses to protect its rights, attorney's fees may not be awarded where no sufficient showing of bad faith is reflected in a party's persistence in a case other than an erroneous conviction of the righteousness of his cause, and there was no evidence that the patent holder was moved by malice. A is wrong because being forced to litigate is not enough by itself. C is wrong because losing a case is not bad faith. D is wrong because nothing in the decision makes attorney's fees automatic.",
+      "caseIds": [
+        "case-0015"
+      ],
+      "source": {
+        "caseTitle": "Smith Kline Beckman Corp. v. Court of Appeals and Tryco Pharma Corp.",
+        "grNumber": "G.R. No. 126627",
+        "url": "https://lawphil.net/judjuris/juri2003/aug2003/gr_126627_2003.html",
+        "part": "Discussion of the award of attorney's fees",
+        "excerpt": "Even if a claimant is compelled to litigate with third persons or to incur expenses to protect its rights, still attorney’s fees may not be awarded where no sufficient showing of bad faith could be reflected in a party’s persistence in a case other than an erroneous conviction of the righteousness of his cause. There exists no evidence on record indicating that petitioner was moved by malice in suing private respondent."
       }
     }
   ]
