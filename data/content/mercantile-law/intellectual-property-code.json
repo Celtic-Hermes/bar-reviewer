@@ -106,6 +106,21 @@
       "ruling": "The Court denied the petition and affirmed the Court of Appeals. (1) Actual prior use in the Philippines was not required of Harvard University: its registration was based on home registration, which Section 37 of R.A. No. 166 allows, and under Section 239.2 of R.A. No. 8293 marks registered under the old law are deemed granted under the new one, which does not require actual prior use here, so any such defect was cured. Fredco's own registration had been cancelled in 1998 for failure to file the affidavit of use, so Fredco was no longer the registrant or presumptive owner. (2) There were two compelling reasons why the petition failed. First, Fredco's use of \"Harvard\" together with \"Cambridge, Massachusetts\", \"Established 1936\" and \"USA\" on its logo falsely suggested a connection with Harvard University. Section 4(a) of R.A. No. 166 prohibits registering a mark that falsely suggests a connection with persons or institutions, and under Section 17(c) such a violation is a ground for cancellation. Second, the Philippines and the United States are both parties to the Paris Convention. Under Article 8 and Section 37 of R.A. No. 166, a trade name of a national of a Paris Convention country is protected without the obligation of filing or registration, and under Article 6bis, as implemented by the Ministry of Trade directives and Section 123.1(e) of R.A. No. 8293, an internationally well-known mark is protected whether or not it is registered or used in the Philippines. \"Harvard\" is a well-known name and mark internationally, including in the Philippines, so it was protected even before Harvard University applied to register it here.",
       "keyDoctrine": "An internationally well-known mark is protected in the Philippines under Article 6bis of the Paris Convention and Section 123.1(e) of the Intellectual Property Code even if it is neither registered nor used here; this is the exception to the territoriality principle. The trade name of a national of a Paris Convention country is protected without filing or registration (Article 8). A mark that falsely suggests a connection with a person or institution cannot be registered (Section 4(a), R.A. No. 166).",
       "sourceUrl": "https://lawphil.net/judjuris/juri2011/jun2011/gr_185917_2011.html"
+    },
+    {
+      "id": "case-0021",
+      "status": "draft",
+      "name": "Kensonic, Inc. v. Uni-Line Multi-Resources, Inc. (Phil.)",
+      "grNumber": "G.R. Nos. 211820-21 and 211834-35",
+      "year": 2018,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "facts": "Kensonic, Inc. introduced SAKURA products in the Philippines in October 1994 and used the mark for Class 9 audio-video goods (amplifiers, speakers, car stereos, televisions, DVD players and similar items). In an earlier case, Kensonic opposed Uni-Line Multi-Resources, Inc.'s 1999 application to register SAKURA for similar Class 9 goods and won, and that decision became final. On June 6, 2002, Uni-Line applied to register SAKURA for goods in three classes: Class 7 (washing machines, vacuum cleaners, blenders and similar items), Class 9 (television sets, stereo components, DVD/VCD players, voltage regulators, portable generators, switch breakers and fuses) and Class 11 (refrigerators, air conditioners, rice cookers and similar appliances). There was no opposition, and a certificate of registration took effect on March 18, 2006. In September 2006, Kensonic petitioned to cancel it. The Bureau of Legal Affairs cancelled the whole registration. On appeal, the IPO Director General cancelled only the Class 9 goods and kept the Class 7 and Class 11 goods. The Court of Appeals first allowed the registration of voltage regulators, portable generators, switch breakers and fuses (cancelling the television sets, stereo components and DVD/VCD players), but on Kensonic's motion for partial reconsideration it restored the Director General's ruling that all Class 9 goods were cancelled. Both parties appealed to the Supreme Court. Uni-Line argued that SAKURA is a generic word (Japanese for cherry blossom) that no one can appropriate, and that its voltage regulators and similar goods were unrelated to Kensonic's audio-video products. Kensonic argued that Uni-Line's Class 7 and Class 11 goods were also related to its goods.",
+      "issue": "(1) Is the SAKURA mark capable of appropriation? (2) Are Uni-Line's goods under Class 7 and Class 11 related to Kensonic's goods under Class 9? (3) Are Uni-Line's Class 9 goods (voltage regulators, portable generators, switch breakers and fuses) related to Kensonic's Class 9 goods?",
+      "ruling": "The Court dismissed Kensonic's appeal and partly granted Uni-Line's. (1) The SAKURA mark can be appropriated. A mark is a sign that distinguishes goods or services, while a copyright is a right over literary or artistic works, and this case concerns a mark. Section 123 prohibits registering a mark that consists exclusively of signs generic for the goods it identifies, so what is prohibited is a generic mark that identifies the goods. SAKURA, the Japanese flowering cherry, is generic in nature but does not identify DVD or VCD players and the like, unlike \"pale pilsen\" for beer in Asia Brewery. Kensonic's prior use since 1994 made it the owner, and that factual finding cannot be reviewed in a petition under Rule 45, which is limited to questions of law. (2) Uni-Line's Class 7 and Class 11 goods are home appliances that are not related to Kensonic's goods. The prohibition in Section 123 extends to goods related to the registered goods, not to goods that the registrant may produce in the future, since a right to a trademark should not depend on mere possibilities. Applying the Mighty Corporation factors (such as class, descriptive attributes, purposes and conditions of sale), the goods are unrelated. (3) Goods are not related merely because they belong to the same class. Following Taiwan Kolin, the Court noted that Class 9 can be sub-classified, that Kensonic's goods are audiovisual equipment while Uni-Line's voltage regulators, portable generators, switch breakers and fuses are devices for controlling the distribution and use of electricity, and that Kensonic's goods are final products while Uni-Line's are spare parts. These goods are unrelated, so Uni-Line may register SAKURA for them.",
+      "keyDoctrine": "A generic word may be appropriated as a mark when it does not identify the goods it covers. The prohibition on registering a confusingly similar mark extends to related goods, not to goods the registrant may produce in the future. Goods are not related merely because they belong to the same class; relatedness is decided by the Mighty Corporation factors.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2018/jun2018/gr_211820_2018.html"
     }
   ],
   "questions": [
@@ -1721,6 +1736,236 @@
         "url": "https://lawphil.net/judjuris/juri2011/jun2011/gr_185917_2011.html",
         "part": "The Ruling of this Court (the cancellation of Fredco's registration)",
         "excerpt": "In addition, Fredco’s registration was already cancelled on 30 July 1998 when it failed to file the required affidavit of use/non-use for the fifth anniversary of the mark’s registration. Hence, at the time of Fredco’s filing of the Petition for Cancellation before the Bureau of Legal Affairs of the IPO, Fredco was no longer the registrant or presumptive owner of the mark \"Harvard.\""
+      }
+    },
+    {
+      "id": "q-0360",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "A company registers the word LOTUS, the name of a flower, as its brand for tire repair kits. A rival argues that the word is a common word of generic nature, so no one may appropriate it as a mark. Is the rival right? Explain, based on Kensonic, Inc. v. Uni-Line Multi-Resources, Inc.",
+      "suggestedAnswer": {
+        "answer": "No. What the law prohibits is not a mark with a generic meaning, but a mark that consists exclusively of signs that are generic for the goods or services it identifies. A flower name that does not identify tire repair kits can be appropriated as a mark.",
+        "legalBasis": "Section 123 of the Intellectual Property Code prohibits the registration of a trademark that consists exclusively of signs that are generic for the goods or services that they seek to identify. So what is prohibited is not having a generic mark but having such a generic mark be identifiable to the good or service. Words that are generic or merely descriptive of an article, like \"pale pilsen\" for beer, cannot be appropriated by any one manufacturer because they belong to the public domain (Asia Brewery, Inc. v. Court of Appeals).",
+        "application": "LOTUS has a generic meaning as the name of a flower, but it does not identify or describe tire repair kits, and the kits cannot be identified with the flower. This is like SAKURA, the Japanese flowering cherry, for DVD and VCD players, in Kensonic: unlike \"pale pilsen\" in Asia Brewery, which described the beer itself, the word did not identify the goods. The word is therefore not generic for the goods and can be appropriated.",
+        "conclusion": "The rival is wrong. LOTUS can be appropriated as a mark for tire repair kits."
+      },
+      "keyPoints": [
+        "Section 123 bars a mark consisting exclusively of signs generic for the goods or services it identifies",
+        "What is prohibited is a generic mark that is identifiable to the good or service, not any mark with a generic meaning",
+        "In Asia Brewery, \"pale pilsen\" describes the beer itself, so it cannot be appropriated; generic or descriptive words belong to the public domain",
+        "SAKURA (Japanese flowering cherry) did not identify Kensonic's DVD or VCD players, so it could be appropriated"
+      ],
+      "caseIds": [
+        "case-0021"
+      ],
+      "source": {
+        "caseTitle": "Kensonic, Inc. v. Uni-Line Multi-Resources, Inc. (Phil.)",
+        "grNumber": "G.R. Nos. 211820-21 and 211834-35",
+        "url": "https://lawphil.net/judjuris/juri2018/jun2018/gr_211820_2018.html",
+        "part": "Part I (The SAKURA mark can be appropriated)",
+        "excerpt": "Section 123(h) of the Intellectual Property Code prohibits the registration of a trademark that consists exclusively of signs that are generic for the goods or services that they seek to identify. It is clear from the law itself, therefore, that what is prohibited is not having a generic mark but having such generic mark being identifiable to the good or service. … No one may appropriate generic or descriptive words. They belong to the public domain … This, however, is not the situation herein. Although SAKURA refers to the Japanese flowering cherry and is, therefore, of a generic nature, such mark did not identify Kensonic's goods unlike the mark in Asia Brewery, Inc., v. Court of Appeals. Kensonic's DVD or VCD players and other products could not be identified with cherry blossoms. Hence, the mark can be appropriated."
+      }
+    },
+    {
+      "id": "q-0361",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "A maker of televisions and DVD players owns a registered mark. A different company later applies to register the same mark for washing machines and refrigerators. The first company opposes, arguing that it may one day make home appliances and that the mark should be protected for its normal potential expansion. Should the opposition succeed? Explain how a court decides whether goods are related, based on Kensonic, Inc. v. Uni-Line Multi-Resources, Inc.",
+      "suggestedAnswer": {
+        "answer": "No. The prohibition against registering a confusingly similar mark extends only to goods that are related to the registered goods, not to goods that the owner might produce in the future. Whether goods are related is decided by looking at several factors, and on those factors home appliances are not related to audio-video goods.",
+        "legalBasis": "The prohibition under Section 123 of the Intellectual Property Code extends to goods that are related to the registered goods, not to goods that the registrant may produce in the future; otherwise the right to a mark would depend on mere possibilities and conjectures. Non-competing goods are related if they are so related that it can reasonably be assumed that they originate from one manufacturer, so that confusion of business can arise from similar marks. If the goods are entirely unrelated, no common source can be assumed and there is no confusion of business. In Mighty Corporation v. E. & J. Gallo Winery, the factors include the business to which the goods belong, the class of product, the nature and cost of the articles, their descriptive properties and essential characteristics, their purpose, whether they are bought for immediate consumption, the fields of manufacture, the conditions under which they are usually purchased, and the channels of trade.",
+        "application": "The first company's argument rests on what it may produce in the future, which is only a possibility and is not a basis for blocking registration. On the factors, washing machines and refrigerators differ from televisions and DVD players in class, descriptive attributes, purpose and conditions of sale, so it cannot reasonably be assumed that they originate from the same manufacturer. In Kensonic, the Court reached the same result for Uni-Line's Class 7 and 11 goods (home appliances) against Kensonic's audio-video goods.",
+        "conclusion": "The opposition should fail, because the goods are not related and the possibility of future expansion cannot be the basis of the prohibition."
+      },
+      "keyPoints": [
+        "The prohibition extends to related goods, not to goods the registrant may produce in the future",
+        "A right to a trademark should not depend on mere possibilities and conjectures",
+        "Non-competing goods are related if it can reasonably be assumed that they come from one manufacturer, so that confusion of business may arise",
+        "Mighty Corporation factors: business, class, nature and cost, descriptive properties, purpose, fields of manufacture, conditions of purchase, channels of trade",
+        "Home appliances (Class 7 and Class 11) were unrelated to audio-video goods (Class 9) because of their differences in class, descriptive attributes, purposes and conditions"
+      ],
+      "caseIds": [
+        "case-0021"
+      ],
+      "source": {
+        "caseTitle": "Kensonic, Inc. v. Uni-Line Multi-Resources, Inc. (Phil.)",
+        "grNumber": "G.R. Nos. 211820-21 and 211834-35",
+        "url": "https://lawphil.net/judjuris/juri2018/jun2018/gr_211820_2018.html",
+        "part": "Part II (Uni-Line's goods under Class 07 and Class 11 were not related to Kensonic's goods)",
+        "excerpt": "The prohibition under Section 123 of the Intellectual Property Code extends to goods that are related to the registered goods, not to goods that the registrant may produce in the future. To allow the expansion of coverage is to prevent future registrants of goods from securing a trademark on the basis of mere possibilities and conjectures that may or may not occur at all. Surely, the right to a trademark should not be made to depend on mere possibilities and conjectures. … Non-competing goods may be those which, though they are not in actual competition, are so related to each other that it can reasonably be assumed that they originate from one manufacturer, in which case, confusion of business can arise out of the use of similar marks. They may also be those which, being entirely unrelated, cannot be assumed to have a common source; hence, there is no confusion of business, even though similar marks are used. … An examination of the foregoing factors reveals that the goods of Uni-Line were not related to the goods of Kensonic by virtue of their differences in class, the descriptive attributes, the purposes and the conditions of the goods."
+      }
+    },
+    {
+      "id": "q-0362",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "A company owns a registered mark for televisions and DVD players, which are in Class 9 of the Nice Classification. A competitor applies to register a nearly identical mark for voltage regulators and fuses, which are also in Class 9. The first company argues that all goods in Class 9 are related, so the application should be refused. Is the argument correct? Explain, based on Kensonic, Inc. v. Uni-Line Multi-Resources, Inc.",
+      "suggestedAnswer": {
+        "answer": "No. Goods are not related merely because they belong to the same class. Class 9 can be sub-classified, and televisions and DVD players are in a different sub-class and are final products, unlike voltage regulators and fuses.",
+        "legalBasis": "The mere fact that goods belong to the same class does not necessarily mean that they are related. Classification under the Nice Classification is only part of the factors to be considered in determining whether goods are related, and the factors of Mighty Corporation v. E. & J. Gallo Winery must be considered (Taiwan Kolin Corporation, Ltd. v. Kolin Electronics Co., Inc.). Class 9 can be sub-categorized into five classifications: (1) apparatus and instruments for scientific or research purposes, (2) information technology and audiovisual equipment, (3) apparatus and devices for controlling the distribution and use of electricity, (4) optical apparatus and instruments, and (5) safety equipment.",
+        "application": "Televisions and DVD players belong to the information technology and audiovisual equipment sub-class. Voltage regulators and fuses pertain to the sub-class of apparatus and devices for controlling the distribution and use of electricity. The first company's goods are also final products, while the applicant's Class 9 goods are spare parts. Given these distinctions, the goods are unrelated even though both are in Class 9, as the Court held for Uni-Line's voltage regulators, portable generators, switch breakers and fuses.",
+        "conclusion": "The argument is not correct. Same class does not make the goods related, and the application for the unrelated goods may be allowed."
+      },
+      "keyPoints": [
+        "Belonging to the same class does not necessarily mean that goods are related",
+        "The Nice classification is only one of many factors, and the factors of Mighty Corporation must be considered",
+        "Class 9 has five sub-classifications, such as audiovisual equipment and devices for controlling the distribution and use of electricity",
+        "Final products and spare parts are different",
+        "Voltage regulators, portable generators, switch breakers and fuses were unrelated to televisions and DVD players"
+      ],
+      "caseIds": [
+        "case-0021"
+      ],
+      "source": {
+        "caseTitle": "Kensonic, Inc. v. Uni-Line Multi-Resources, Inc. (Phil.)",
+        "grNumber": "G.R. Nos. 211820-21 and 211834-35",
+        "url": "https://lawphil.net/judjuris/juri2018/jun2018/gr_211820_2018.html",
+        "part": "Part III (the goods of Kensonic were also unrelated to the goods of Uni-Line although both belonged to Class 9)",
+        "excerpt": "In Taiwan Kolin Corporation, Ltd. v. Kolin Electronics, Co., Inc., the Court has opined that the mere fact that goods belonged to the same class does not necessarily mean that they are related; and that the factors listed in Mighty Corporation v. E. & J. Gallo Winery should be taken into consideration … It bears to stress at this point that the list of products included in Class 9 can be sub-categorized into five (5) classifications, namely: (1) apparatus and instruments for scientific or research purposes, (2) information technology and audiovisual equipment, (3) apparatus and devices for controlling the distribution and use of electricity, (4) optical apparatus and instruments, and (5) safety equipment. … Based on the foregoing pronouncement in Taiwan Kolin Corporation, Ltd. v. Kolin Electronics, Co., Inc., there are other sub-classifications present even if the goods are classified under Class 09. For one, Kensonic's goods belonged to the information technology and audiovisual equipment subclass, but Uni-Line's goods pertained to the apparatus and devices for controlling the distribution of electricity sub-class. Also, the Class 09 goods of Kensonic were final products but Uni-Line's Class 09 products were spare parts. In view of these distinctions, the Court agrees with Uni-Line that its Class 09 goods were unrelated to the Class 09 goods of Kensonic."
+      }
+    },
+    {
+      "id": "q-0363",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "A party argues that a trademark cannot be appropriated because the word is \"not copyrightable\". According to Kensonic, Inc. v. Uni-Line Multi-Resources, Inc., why is the argument misplaced?",
+      "choices": {
+        "A": "Because a mark is a visible sign that distinguishes the goods or services of an enterprise, while a copyright is a statutory right over literary or artistic works; a mark is not an artistic or literary work.",
+        "B": "Because every word that can be registered as a mark is automatically protected by copyright.",
+        "C": "Because copyright and trademark protection are the same right under different names.",
+        "D": "Because copyright can be acquired only by registration, while a mark cannot be registered."
+      },
+      "correct": "A",
+      "explanation": "A is correct. The Court noted that the controversy revolved around a mark, not a copyright, and that the distinction is significant. A mark is any visible sign capable of distinguishing the goods (trademark) or services (service mark) of an enterprise, while a copyright is the right to literary property recognized by law, an intangible right granted by statute to the author or originator of literary or artistic productions for a specific period. The SAKURA mark is not an artistic or literary work but a sign used to distinguish the goods or services of one enterprise from those of another. B and C are wrong because the two rights are different. D is wrong because marks can be registered, which is the point of the case.",
+      "caseIds": [
+        "case-0021"
+      ],
+      "source": {
+        "caseTitle": "Kensonic, Inc. v. Uni-Line Multi-Resources, Inc. (Phil.)",
+        "grNumber": "G.R. Nos. 211820-21 and 211834-35",
+        "url": "https://lawphil.net/judjuris/juri2018/jun2018/gr_211820_2018.html",
+        "part": "Part I (The SAKURA mark can be appropriated)",
+        "excerpt": "To be noted is that the controversy revolves around the SAKURA mark which is not a copyright. The distinction is significant. A mark is any visible sign capable of distinguishing the goods (trademark) or services (service mark) of an enterprise, and includes a stamped or marked container of goods. In contrast, a copyright is the right to literary property as recognized and sanctioned by positive law; it is an intangible, incorporeal right granted by statute to the author or originator of certain literary or artistic productions, whereby he or she is invested, for a specific period, with the sole and exclusive privilege of multiplying copies of the same and publishing and selling them. Obviously, the SAKURA mark is not an artistic or literary work but a sign used to distinguish the goods or services of one enterprise from those of another."
+      }
+    },
+    {
+      "id": "q-0364",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "In a petition for review on certiorari, a party asks the Supreme Court to re-examine whether its opponent owns a mark through prior use, a point already decided by the intellectual property office and affirmed by the Court of Appeals. According to Kensonic, Inc. v. Uni-Line Multi-Resources, Inc., how should the Court treat the request?",
+      "choices": {
+        "A": "It re-weighs the evidence, because trademark ownership is always a question of law.",
+        "B": "It sends the question back to the Bureau of Legal Affairs for a new hearing.",
+        "C": "It accepts the party's version of the facts without examination.",
+        "D": "It declines, because a petition for review on certiorari is limited to questions of law, the Court is not a trier of facts, and findings of the quasi-judicial body affirmed by the Court of Appeals are binding, subject to exceptions that the petitioner has the burden of showing."
+      },
+      "correct": "D",
+      "explanation": "D is correct. The Court said that reviewing Kensonic's ownership would entail examining facts already settled by the lower tribunals, and that it cannot act on a factual matter in an appeal under Rule 45, which is limited to questions of law. It reminded that the Court is not a trier of facts, so the factual findings of a quasi-judicial body like the IPO, especially when affirmed by the Court of Appeals, are binding on the Court. There are exceptions, but Uni-Line did not discharge its burden to show that its request came within any of them. A is wrong because ownership by use here was a factual finding. B and C are not what the Court did. Watch for: the Court treated Kensonic's prior use since 1994 as making it the owner; in a later decision, Zuneca v. Natrapharm (2020), the Court held that under the Intellectual Property Code ownership is acquired through registration, so check how the rule applies to a mark first used or registered after the Code took effect.",
+      "caseIds": [
+        "case-0021"
+      ],
+      "source": {
+        "caseTitle": "Kensonic, Inc. v. Uni-Line Multi-Resources, Inc. (Phil.)",
+        "grNumber": "G.R. Nos. 211820-21 and 211834-35",
+        "url": "https://lawphil.net/judjuris/juri2018/jun2018/gr_211820_2018.html",
+        "part": "Part I (ownership and the limits of review under Rule 45)",
+        "excerpt": "Kensonic's prior use of the mark since 1994 made it the owner of the mark, and its ownership cannot anymore be challenged at this stage of the proceedings. Seeking the review of Kensonic's ownership would entail the examination of facts already settled by the lower tribunals. … It is timely to remind, too, that the Court is not a trier of facts. Hence, the factual findings of the quasi-judicial body like the IPO, especially when affirmed by the CA, are binding on the Court. Jurisprudence has laid down certain exceptions to the rule of bindingness, but, alas, Uni-Line did not discharge its burden to show how its urging for a review of the factual findings came within any of the exceptions."
+      }
+    },
+    {
+      "id": "q-0365",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "A trademark owner opposes the registration of a similar mark for goods that it does not now make, arguing that the goods are within the normal potential expansion of its business. According to Kensonic, Inc. v. Uni-Line Multi-Resources, Inc., how far does the prohibition under Section 123 of the Intellectual Property Code extend?",
+      "choices": {
+        "A": "To all goods in the same market, whether or not they are related to the registered goods.",
+        "B": "To any goods the registrant says it intends to produce in the future.",
+        "C": "To goods that the registrant may produce in the next ten years.",
+        "D": "To goods that are related to the registered goods, not to goods that the registrant may produce in the future."
+      },
+      "correct": "D",
+      "explanation": "D is correct. The Court held that the prohibition under Section 123 extends to goods related to the registered goods, not to goods that the registrant may produce in the future. To allow the expansion of coverage would prevent future registrants of goods from securing a trademark on the basis of mere possibilities and conjectures that may or may not occur at all, and the right to a trademark should not be made to depend on such possibilities. A is wrong because relatedness, not mere presence in the same market, is the test. B and C are wrong because future production is exactly what the Court said is not covered. Watch for: the decision in Dermaline (2010) spoke of protection for the normal potential expansion of the registered owner's business; the Court in this case limited the prohibition to related goods, so check how the two apply.",
+      "caseIds": [
+        "case-0021"
+      ],
+      "source": {
+        "caseTitle": "Kensonic, Inc. v. Uni-Line Multi-Resources, Inc. (Phil.)",
+        "grNumber": "G.R. Nos. 211820-21 and 211834-35",
+        "url": "https://lawphil.net/judjuris/juri2018/jun2018/gr_211820_2018.html",
+        "part": "Part II (the prohibition covers related goods, not future goods)",
+        "excerpt": "The prohibition under Section 123 of the Intellectual Property Code extends to goods that are related to the registered goods, not to goods that the registrant may produce in the future. To allow the expansion of coverage is to prevent future registrants of goods from securing a trademark on the basis of mere possibilities and conjectures that may or may not occur at all. Surely, the right to a trademark should not be made to depend on mere possibilities and conjectures."
+      }
+    },
+    {
+      "id": "q-0366",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "According to Kensonic, Inc. v. Uni-Line Multi-Resources, Inc. (applying Mighty Corporation v. E. & J. Gallo Winery), which of the following is one of the factors that decide whether goods are related?",
+      "choices": {
+        "A": "The nationality of the founders of each company.",
+        "B": "The channels of trade through which the goods flow, and how they are distributed, marketed, displayed and sold.",
+        "C": "The number of employees of each company.",
+        "D": "The date on which each company was incorporated."
+      },
+      "correct": "B",
+      "explanation": "B is correct. The factors the Court listed include the business and its location to which the goods belong; the class of product; the quality, quantity or size of the product, including the package; the nature and cost of the articles; their descriptive properties, physical attributes or essential characteristics; the purpose of the goods; whether the article is bought for immediate consumption, that is, a day-to-day household item; the fields of manufacture; the conditions under which the article is usually purchased; and the channels of trade through which the goods flow, how they are distributed, marketed, displayed and sold. A, C and D describe the companies and not the goods, and are not among the factors.",
+      "caseIds": [
+        "case-0021"
+      ],
+      "source": {
+        "caseTitle": "Kensonic, Inc. v. Uni-Line Multi-Resources, Inc. (Phil.)",
+        "grNumber": "G.R. Nos. 211820-21 and 211834-35",
+        "url": "https://lawphil.net/judjuris/juri2018/jun2018/gr_211820_2018.html",
+        "part": "Part II (the factors for deciding whether goods are related)",
+        "excerpt": "In resolving whether goods are related, several factors come into play: (a) the business (and its location) to which the goods belong (b) the class of product to which the goods belong (c) the product's quality, quantity, or size, including the nature of the package, wrapper or container (d) the nature and cost of the articles (e) the descriptive properties, physical attributes or essential characteristics with reference to their form, composition, texture or quality (f) the purpose of the goods (g) whether the article is bought for immediate consumption, that is, day-to-day household items (h) the fields of manufacture (i) the conditions under which the article is usually purchased and (j) the channels of trade through which the goods flow, how they are distributed, marketed, displayed and sold."
+      }
+    },
+    {
+      "id": "q-0367",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "In the end, what did the Court decide in Kensonic, Inc. v. Uni-Line Multi-Resources, Inc. about the registration of the SAKURA mark by Uni-Line for voltage regulators, portable generators, switch breakers and fuses?",
+      "choices": {
+        "A": "It cancelled the registration of all of Uni-Line's Class 9 goods.",
+        "B": "It cancelled the registration of all of Uni-Line's goods in every class.",
+        "C": "It transferred the registration to Kensonic.",
+        "D": "It allowed Uni-Line to register SAKURA for those goods, by partially reinstating the Court of Appeals' first decision, and ordered Kensonic to pay the costs."
+      },
+      "correct": "D",
+      "explanation": "D is correct. The Court denied Kensonic's petition (G.R. Nos. 211820-21), partially granted Uni-Line's (G.R. Nos. 211834-35), set aside the Court of Appeals' amended decision of March 19, 2014, and partially reinstated its decision of July 30, 2013 insofar as it allowed Uni-Line to register the SAKURA mark for its voltage regulators, portable generators, switch breakers and fuses. It also ordered Kensonic to pay the costs of suit. A and B are wrong because the Court found that those goods were unrelated to Kensonic's goods. C is wrong because nothing was transferred. Note that the cancellation of Uni-Line's registration for television sets, stereo components and DVD/VCD players was not disturbed.",
+      "caseIds": [
+        "case-0021"
+      ],
+      "source": {
+        "caseTitle": "Kensonic, Inc. v. Uni-Line Multi-Resources, Inc. (Phil.)",
+        "grNumber": "G.R. Nos. 211820-21 and 211834-35",
+        "url": "https://lawphil.net/judjuris/juri2018/jun2018/gr_211820_2018.html",
+        "part": "Dispositive portion",
+        "excerpt": "WHEREFORE, the Court DENIES the petition for review on certiorari in G.R. No. 211820-21; PARTIALLY GRANTS the petition for review on certiorari in G.R. No. 211834-35; REVERSES and SETS ASIDE the amended decision promulgated on March 19, 2014; PARTIALLY REINSTATES the decision promulgated on July 30, 2013 insofar as it allowed the registration by Uni-Line Multi-Resources, Inc. under the SAKURA mark of its voltage regulators, portable generators, switch breakers and fuses; and ORDERS Kensonic, Inc. to pay the costs of suit."
       }
     }
   ]
