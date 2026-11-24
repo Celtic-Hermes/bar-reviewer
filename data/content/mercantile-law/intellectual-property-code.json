@@ -181,6 +181,21 @@
       "ruling": "The Court dismissed the petition. (1) In reviewing a prosecutor's resolution, the Secretary of Justice is not precluded from considering errors, although unassigned, to determine whether there is probable cause; he must make his own finding and is not confined to the issues the parties raised, and his findings are not reviewable unless he committed grave abuse. Whether the format of a show is protected by copyright is a legal question for the court, but this does not prevent the Secretary from making a preliminary determination of it in deciding whether there is probable cause. (2) The format of a show is not copyrightable. Copyright is purely a statutory right, obtainable only for subjects that the statute enumerates, and Section 2 of P.D. No. 49, which is substantially the same as Section 172 of the Intellectual Property Code, does not list the format or mechanics of a television show. It refers to finished works, not concepts, and copyright does not extend to an idea, procedure, process, system, method of operation, concept or principle (Section 175 of the Code). (3) BJPI's copyright covers the audio-visual recordings of each episode of Rhoda and Me, as cinematographic works under Section 2(M), not the general concept or format. For that reason the investigating prosecutor needed to compare the videotapes, and a mere written description of the formats was insufficient: the master videotape was indispensable to determining probable cause, because a television show includes more than words can describe.",
       "keyDoctrine": "Copyright is purely statutory and protects only the classes of works the statute lists. It does not protect ideas, concepts, formats or mechanics, so the format of a television show is not copyrightable, and what is protected is the expression, such as the audio-visual recording of each episode. Because infringement is a matter of similarity between the works, the copyrighted work itself must usually be presented to determine probable cause.",
       "sourceUrl": "https://lawphil.net/judjuris/juri1999/jan1999/gr_108946_1999.html"
+    },
+    {
+      "id": "case-0026",
+      "status": "draft",
+      "name": "Pearl & Dean (Phil.), Incorporated v. Shoemart, Incorporated and North Edsa Marketing, Incorporated",
+      "grNumber": "G.R. No. 148222",
+      "year": 2003,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "facts": "Pearl & Dean (Phil.), Inc. (P & D) makes advertising display units, called light boxes, which are illuminated by back lights and hold specially printed posters. It obtained a Certificate of Copyright Registration dated January 20, 1981 for these \"Advertising Display Units\", registered as a class \"O\" work under Section 2(O) of P.D. No. 49 (prints, pictorial illustrations, advertising copies, labels, tags and box wraps), and it registered the trademark \"Poster Ads\" in 1988, but only for stationeries such as letterheads, envelopes, calling cards and newsletters. It never obtained a patent for the light boxes. In 1985 it negotiated with Shoemart, Inc. (SMI) for the lease and installation of its light boxes in SM stores, but the deal collapsed. Later SMI had light boxes made, first by P & D's former manufacturer, Metro Industrial Services, and then by EYD Rainbow Advertising Corporation, some 300 units in 1991, and installed them in its stores, while North Edsa Marketing, Inc. (NEMI), a sister company, sold advertising space in them under \"Poster Ads\". P & D sued SMI and NEMI in 1991 for copyright and trademark infringement, unfair competition and damages. The Makati Regional Trial Court found both liable and awarded P & D P16.6 million in actual damages, plus moral and exemplary damages and attorney's fees. The Court of Appeals reversed, holding that the copyright covered only the technical drawings and that \"Poster Ads\" was generic and registered only for stationeries. P & D went to the Supreme Court.",
+      "issue": "(1) If the engineering or technical drawings of an advertising light box are copyrighted, is the light box itself also protected by the copyright? (2) Is the light box protected only if it is also registered and patented? (3) Can the owner of a registered trademark prevent others from using it if the mark is a mere abbreviation of a term descriptive of its goods or business?",
+      "ruling": "The Court denied the petition and affirmed the Court of Appeals. (1) Copyright is purely statutory and covers only works within the statutory enumeration. P & D registered its copyright as a class \"O\" work, so its copyright extended only to the technical drawings (pictorial illustrations) and not to the light box, which is not a print, illustration, advertising copy, label, tag or box wrap, nor a literary or artistic work. If SMI had reprinted the drawings for sale, it would have infringed, but making units similar to the box drawn is not copying the drawings. (2) Trademark, copyright and patent are different rights that cannot be used interchangeably. P & D never secured a patent for the light boxes, and there can be no patent infringement without a patent: no patent, no protection. A copyright certificate is issued on a sworn ex parte claim without the scrutiny that a patent requires, and P & D could not obtain by copyright the exclusivity that it would have had to earn by a patent. Following Baker v. Selden, only the expression of an idea is protected by copyright, not the idea itself or the art that the work describes. (3) There was no trademark infringement. The certificate for \"Poster Ads\" specified only stationeries, which P & D did not even sell, so its exclusive right was limited to those goods, and registration for specific use on light boxes was an essential element that was missing. \"Poster Ads\" is also a generic contraction of \"poster advertising\" with no secondary meaning, as P & D's own expert admitted that it was too generic to identify any company. (4) Unfair competition was not found by the trial court and was not appealed by P & D, and in any case there was no evidence that the name was distinctive.",
+      "keyDoctrine": "Copyright, patent and trademark are distinct rights that cannot be used interchangeably. A copyright in technical drawings (a class \"O\" work) does not extend to the useful article drawn, and without a patent there is no protection against copying an invention (no patent, no protection). Copyright protects the expression, not the idea or the art it describes. A trademark registration gives an exclusive right only for the goods specified, and a generic term cannot be appropriated unless it acquires secondary meaning.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2003/aug2003/gr_148222_2003.html"
     }
   ],
   "questions": [
@@ -2951,6 +2966,239 @@
         "url": "https://lawphil.net/judjuris/juri1999/jan1999/gr_108946_1999.html",
         "part": "Discussion of the subject matter of the copyright (Section 2(M) of P.D. No. 49)",
         "excerpt": "What then is the subject matter of petitioners' copyright? This Court is of the opinion that petitioner BJPI's copyright covers audio-visual recordings of each episode of Rhoda and Me, as falling within the class of works mentioned in P.D. 49, §2(M), to wit: Cinematographic works and works produced by a process analogous to cinematography or any process for making audio-visual recordings;"
+      }
+    },
+    {
+      "id": "q-0400",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "prompt": "A manufacturer registers its engineering drawings of a lighted advertising box with the copyright office, as a work under the class of \"prints, pictorial illustrations, advertising copies, labels, tags and box wraps\", and titles the certificate \"Advertising Display Units\". A store has similar boxes made by a contractor and leases them to advertisers. The manufacturer sues for copyright infringement, claiming that its copyright extends to the boxes themselves. Will the suit prosper? Explain, based on Pearl & Dean (Phil.), Inc. v. Shoemart, Inc.",
+      "suggestedAnswer": {
+        "answer": "No. The copyright covers only the technical drawings, not the boxes. Making boxes similar to those illustrated in the drawings is not copying the drawings, so there is no copyright infringement.",
+        "legalBasis": "Copyright in the strict sense is purely statutory. The rights are limited to what the statute confers, and may be obtained only for the subjects, by the persons and on the terms the statute specifies, so copyright can cover only the works falling within the statutory enumeration or description. Section 2 of P.D. No. 49 listed the protected works, and class (O) covered prints, pictorial illustrations, advertising copies, labels, tags and box wraps. What the law does not include, it excludes, and a certificate cannot be stretched by the title it is given.",
+        "application": "The manufacturer secured its copyright as a class (O) work, so its protection extended only to the technical drawings, which fall within \"pictorial illustrations\", and not to the light box, which is not in that category and is not a literary or artistic piece. Entitling the certificate \"Advertising Display Units\" does not supply the missing statutory authority. If the store had reprinted the drawings for sale, it would have infringed the copyright. But what it did was have units made that are similar or identical to the box illustrated in the drawings, and that does not infringe the copyright in the drawings.",
+        "conclusion": "The suit fails. The copyright in the drawings does not extend to the light box itself."
+      },
+      "keyPoints": [
+        "Copyright is purely statutory and covers only works within the statutory enumeration",
+        "The certificate was for a class (O) work: prints, pictorial illustrations, advertising copies, labels, tags and box wraps",
+        "The copyright extended only to the technical drawings and not to the light box",
+        "What the law does not include, it excludes, and the title of the certificate cannot expand it",
+        "Reprinting the drawings would infringe, but making similar boxes does not infringe the copyright in the drawings"
+      ],
+      "caseIds": [
+        "case-0026"
+      ],
+      "source": {
+        "caseTitle": "Pearl & Dean (Phil.), Incorporated v. Shoemart, Incorporated and North Edsa Marketing, Incorporated",
+        "grNumber": "G.R. No. 148222",
+        "url": "https://lawphil.net/judjuris/juri2003/aug2003/gr_148222_2003.html",
+        "part": "On the issue of copyright infringement",
+        "excerpt": "Copyright, in the strict sense of the term, is purely a statutory right. Being a mere statutory grant, the rights are limited to what the statute confers. It may be obtained and enjoyed only with respect to the subjects and by the persons, and on terms and conditions specified in the statute. Accordingly, it can cover only the works falling within the statutory enumeration or description. … P & D secured its copyright under the classification class \"O\" work. This being so, petitioner’s copyright protection extended only to the technical drawings and not to the light box itself because the latter was not at all in the category of \"prints, pictorial illustrations, advertising copies, labels, tags and box wraps.\" … What the law does not include, it excludes, and for the good reason: the light box was not a literary or artistic piece which could be copyrighted under the copyright law. … In fine, if SMI and NEMI reprinted P & D’s technical drawings for sale to the public without license from P & D, then no doubt they would have been guilty of copyright infringement. But this was not the case."
+      }
+    },
+    {
+      "id": "q-0401",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "prompt": "An inventor has a copyright certificate for the drawings of a new useful device. It never applied for a patent on the device. A competitor manufactures and sells the same device. The inventor argues that, because the copyright lasts for many years and the device is its invention, the competitor must stop. Is the inventor right? Explain the difference between copyright and patent protection, based on Pearl & Dean (Phil.), Inc. v. Shoemart, Inc.",
+      "suggestedAnswer": {
+        "answer": "No. Without a patent, the inventor cannot stop others from making or selling the device. A copyright over the drawings protects the drawings, not the invention, and the exclusivity over an invention can be obtained only through a patent after examination.",
+        "legalBasis": "Trademark, copyright and patent are different intellectual property rights that cannot be interchanged. There can be no infringement of a patent until a patent has been issued, since the right to the invention arises only from the grant of the patent. An inventor has no common law right to a monopoly of his invention: if he voluntarily discloses it, the world is free to copy and use it with impunity. To effectively preclude others from copying and profiting from the invention, a patent is a primordial requirement: no patent, no protection. A patent is issued only after an exhaustive examination by the patent office, while a copyright arises from the moment of creation and the certificate is issued on a sworn ex parte claim, without such scrutiny. In Baker v. Selden, only the expression of an idea is protected by copyright, not the idea or art described, which is the province of letters patent.",
+        "application": "The inventor never secured a patent, so it acquired no patent rights and could not legally prevent anyone from manufacturing or commercially using the device. By submitting its drawings to the copyright office, it disclosed the device to the public without the protection of a patent. A copyright over the drawings does not give the exclusive right to make and sell the device drawn. If it were otherwise, the inventor would obtain through the simplified copyright procedure, and for a longer period, an exclusivity that it would have had to earn by defending patentability before the patent office, and the Court said that this could not have been the intention of the law.",
+        "conclusion": "The inventor is not right. Without a patent, the competitor may freely make and sell the device."
+      },
+      "keyPoints": [
+        "Trademark, copyright and patent are distinct rights that cannot be used interchangeably",
+        "No patent, no protection: there can be no patent infringement until a patent is issued",
+        "An inventor who discloses the invention without a patent leaves the world free to copy it",
+        "Patents are issued only after exhaustive examination; copyright arises from creation on a sworn ex parte claim without scrutiny",
+        "Copyright protects the expression and not the idea or the art described (Baker v. Selden)",
+        "Copyright would not be allowed to give a longer exclusivity than a patent without the examination"
+      ],
+      "caseIds": [
+        "case-0026"
+      ],
+      "source": {
+        "caseTitle": "Pearl & Dean (Phil.), Incorporated v. Shoemart, Incorporated and North Edsa Marketing, Incorporated",
+        "grNumber": "G.R. No. 148222",
+        "url": "https://lawphil.net/judjuris/juri2003/aug2003/gr_148222_2003.html",
+        "part": "On the issue of patent infringement",
+        "excerpt": "For some reason or another, petitioner never secured a patent for the light boxes. It therefore acquired no patent rights which could have protected its invention, if in fact it really was. And because it had no patent, petitioner could not legally prevent anyone from manufacturing or commercially using the contraption. … To be able to effectively and legally preclude others from copying and profiting from the invention, a patent is a primordial requirement. No patent, no protection. … Therefore, not having gone through the arduous examination for patents, the petitioner cannot exclude others from the manufacture, sale or commercial use of the light boxes on the sole basis of its copyright certificate over the technical drawings. Stated otherwise, what petitioner seeks is exclusivity without any opportunity for the patent office (IPO) to scrutinize the light box’s eligibility as a patentable invention. The irony here is that, had petitioner secured a patent instead, its exclusivity would have been for 17 years only. But through the simplified procedure of copyright-registration with the National Library — without undergoing the rigor of defending the patentability of its invention before the IPO and the public — the petitioner would be protected for 50 years. This situation could not have been the intention of the law."
+      }
+    },
+    {
+      "id": "q-0402",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "prompt": "A company registers the phrase \"Poster Ads\" as a trademark, but its certificate lists only stationeries such as letterheads and envelopes, which it does not actually sell. Its real business is lighted advertising boxes, and \"Poster Ads\" is a contraction of \"poster advertising\". When a competitor uses \"Poster Ads\" for its advertising boxes, the company sues for trademark infringement and unfair competition. Will either claim prosper? Explain, based on Pearl & Dean (Phil.), Inc. v. Shoemart, Inc.",
+      "suggestedAnswer": {
+        "answer": "No. The registration protects the mark only for the goods specified in the certificate, which are not the advertising boxes, so there is no trademark infringement. And as a generic term with no secondary meaning, the phrase is not protected against unfair competition either.",
+        "legalBasis": "A certificate of registration gives the exclusive right to use the mark only for the goods specified in the certificate, subject to its conditions and limitations; one who has adopted a mark on his goods does not prevent others from adopting the same mark for products of a different description (Faberge, applying Section 20 of the old Trademark Law). Registration is an essential element of trademark infringement. Unfair competition may exist even without registration, but a name or phrase that is incapable of appropriation as a trademark may be protected against unfair competition only if, by long and exclusive use, it has become associated with the business or product in the mind of the purchasing public, that is, if it has acquired secondary meaning.",
+        "application": "The company's certificate specified only stationeries, which it did not sell, and not the lighted advertising boxes, so even if \"Poster Ads\" could qualify as a trademark, the company's failure to register it for use on the advertising boxes meant that there could be no trademark infringement. As for unfair competition, \"Poster Ads\" is a generic contraction of poster advertising, the very field of the company's business, and the company's own expert admitted that the name was too generic to be identified with any company. That admission shows that the public does not associate the name with the company, which rules out secondary meaning and any protection against unfair competition.",
+        "conclusion": "Neither claim prospers. There is no infringement of the registered mark and no unfair competition."
+      },
+      "keyPoints": [
+        "The exclusive right under a registration is limited to the goods specified in the certificate",
+        "Registration is an essential element of trademark infringement",
+        "Use of the same mark by others on goods of a different description is not prevented by the registrant's mark",
+        "A generic term such as the contraction of \"poster advertising\" cannot be appropriated as a trademark",
+        "Without secondary meaning (long and exclusive use that makes the public associate the phrase with one business), there is no protection against unfair competition",
+        "The admission of the company's own expert that the name was too generic prevented secondary meaning"
+      ],
+      "caseIds": [
+        "case-0026"
+      ],
+      "source": {
+        "caseTitle": "Pearl & Dean (Phil.), Incorporated v. Shoemart, Incorporated and North Edsa Marketing, Incorporated",
+        "grNumber": "G.R. No. 148222",
+        "url": "https://lawphil.net/judjuris/juri2003/aug2003/gr_148222_2003.html",
+        "part": "On the issues of trademark infringement and unfair competition",
+        "excerpt": "This issue concerns the use by respondents of the mark \"Poster Ads\" which petitioner’s president said was a contraction of \"poster advertising.\" P & D was able to secure a trademark certificate for it, but one where the goods specified were \"stationeries such as letterheads, envelopes, calling cards and newsletters.\" Petitioner admitted it did not commercially engage in or market these goods. … One who has adopted and used a trademark on his goods does not prevent the adoption and use of the same trademark by others for products which are of a different description. … By the nature of things, there can be no unfair competition under the law on copyrights although it is applicable to disputes over the use of trademarks. Even a name or phrase incapable of appropriation as a trademark or tradename may, by long and exclusive use by a business (such that the name or phrase becomes associated with the business or product in the mind of the purchasing public), be entitled to protection against unfair competition. … This fact also prevented the application of the doctrine of secondary meaning. \"Poster Ads\" was generic and incapable of being used as a trademark because it was used in the field of poster advertising, the very business engaged in by petitioner."
+      }
+    },
+    {
+      "id": "q-0403",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "prompt": "A company confuses its trademark, copyright and patent. According to Pearl & Dean (Phil.), Inc. v. Shoemart, Inc. (quoting Kho v. Court of Appeals), which statement about these three rights is correct?",
+      "choices": {
+        "A": "They are the same right under different names and may be used interchangeably.",
+        "B": "A copyright covers any invention that is new and useful.",
+        "C": "They are different intellectual property rights that cannot be interchanged: a trademark distinguishes goods or services, a copyright is confined to literary and artistic works, and a patent covers new, inventive and industrially applicable technical solutions.",
+        "D": "A trademark protects the technical features of a product."
+      },
+      "correct": "C",
+      "explanation": "C is correct. The Court, quoting Kho v. Court of Appeals, said that trademark, copyright and patents are different intellectual property rights that cannot be interchanged. A trademark is any visible sign capable of distinguishing the goods or services of an enterprise, and a trade name is the name identifying an enterprise. The scope of a copyright is confined to literary and artistic works which are original intellectual creations in the literary and artistic domain, protected from the moment of creation. Patentable inventions are technical solutions of a problem in any field of human activity which are new, involve an inventive step and are industrially applicable. A is the opposite of the rule. B and D mix up the rights, which is exactly the confusion that the Court corrected in this case.",
+      "caseIds": [
+        "case-0026"
+      ],
+      "source": {
+        "caseTitle": "Pearl & Dean (Phil.), Incorporated v. Shoemart, Incorporated and North Edsa Marketing, Incorporated",
+        "grNumber": "G.R. No. 148222",
+        "url": "https://lawphil.net/judjuris/juri2003/aug2003/gr_148222_2003.html",
+        "part": "On the issue of copyright infringement (Kho v. Court of Appeals)",
+        "excerpt": "In the leading case of Kho vs. Court of Appeals, we ruled that these three legal rights are completely distinct and separate from one another, and the protection afforded by one cannot be used interchangeably to cover items or works that exclusively pertain to the others: Trademark, copyright and patents are different intellectual property rights that cannot be interchanged with one another. A trademark is any visible sign capable of distinguishing the goods (trademark) or services (service mark) of an enterprise and shall include a stamped or marked container of goods. In relation thereto, a trade name means the name or designation identifying or distinguishing an enterprise. Meanwhile, the scope of a copyright is confined to literary and artistic works which are original intellectual creations in the literary and artistic domain protected from the moment of their creation. Patentable inventions, on the other hand, refer to any technical solution of a problem in any field of human activity which is new, involves an inventive step and is industrially applicable."
+      }
+    },
+    {
+      "id": "q-0404",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "prompt": "According to Pearl & Dean (Phil.), Inc. v. Shoemart, Inc., how does the way in which a copyright is obtained differ from the way in which a patent is obtained?",
+      "choices": {
+        "A": "A copyright requires an exhaustive examination, while a patent arises automatically.",
+        "B": "Both are obtained only after a published notice and opposition.",
+        "C": "Neither requires any registration.",
+        "D": "A patent is issued only after an exhaustive examination by the patent office, while a copyright is conferred from the moment of creation and the certificate is issued on registration of a sworn ex parte claim of creation, without such scrutiny or published notice."
+      },
+      "correct": "D",
+      "explanation": "D is correct. The Court explained that it is only after an exhaustive examination by the patent office that a patent is issued, because the prerequisites for a patent are strictly observed. There is no such scrutiny for copyrights, nor any notice published before the grant that a person is claiming the creation of a work: the law confers the copyright from the moment of creation, and the certificate is issued upon registration with the National Library of a sworn ex parte claim of creation. A reverses the two. B is wrong because copyright has no published notice. C is wrong because a patent must be applied for and issued. Watch for: this describes the copyright law then in force (P.D. No. 49) as applied in the decision; check the current law on copyright.",
+      "caseIds": [
+        "case-0026"
+      ],
+      "source": {
+        "caseTitle": "Pearl & Dean (Phil.), Incorporated v. Shoemart, Incorporated and North Edsa Marketing, Incorporated",
+        "grNumber": "G.R. No. 148222",
+        "url": "https://lawphil.net/judjuris/juri2003/aug2003/gr_148222_2003.html",
+        "part": "On the issue of patent infringement (the difference in examination)",
+        "excerpt": "It is only after an exhaustive examination by the patent office that a patent is issued. … There is no such scrutiny in the case of copyrights nor any notice published before its grant to the effect that a person is claiming the creation of a work. The law confers the copyright from the moment of creation and the copyright certificate is issued upon registration with the National Library of a sworn ex-parte claim of creation."
+      }
+    },
+    {
+      "id": "q-0405",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "prompt": "According to Pearl & Dean (Phil.), Inc. v. Shoemart, Inc. (quoting Creser Precision Systems), what is the situation of an inventor who discloses his invention to the public without a patent?",
+      "choices": {
+        "A": "The world is free to copy and use the invention with impunity, because the right to exclude others arises only from the grant of a patent.",
+        "B": "He keeps a common law monopoly over the invention.",
+        "C": "He may exclude others through the doctrine of equivalents.",
+        "D": "He may exclude others for as long as he keeps the invention in use."
+      },
+      "correct": "A",
+      "explanation": "A is correct. The Court quoted that there can be no infringement of a patent until a patent has been issued, since whatever right one has to the invention arises alone from the grant of the patent. An inventor has no common law right to a monopoly of his invention: he has the right to make, use and vend it, but if he voluntarily discloses it, such as by offering it for sale, the world is free to copy and use it with impunity. A patent gives the inventor the right to exclude all others. B is the opposite of the quoted rule. C is wrong because equivalents is a test of infringement of an existing patent. D has no basis in the decision.",
+      "caseIds": [
+        "case-0026"
+      ],
+      "source": {
+        "caseTitle": "Pearl & Dean (Phil.), Incorporated v. Shoemart, Incorporated and North Edsa Marketing, Incorporated",
+        "grNumber": "G.R. No. 148222",
+        "url": "https://lawphil.net/judjuris/juri2003/aug2003/gr_148222_2003.html",
+        "part": "On the issue of patent infringement (Creser Precision Systems)",
+        "excerpt": "In Creser Precision Systems, Inc. vs. Court of Appeals, we held that \"there can be no infringement of a patent until a patent has been issued, since whatever right one has to the invention covered by the patent arises alone from the grant of patent. x x x (A)n inventor has no common law right to a monopoly of his invention. He has the right to make use of and vend his invention, but if he voluntarily discloses it, such as by offering it for sale, the world is free to copy and use it with impunity. A patent, however, gives the inventor the right to exclude all others."
+      }
+    },
+    {
+      "id": "q-0406",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "prompt": "A company has a trademark certificate that lists certain goods but never registered the mark for the goods that it actually sells. A competitor uses the same words on those goods. According to Pearl & Dean (Phil.), Inc. v. Shoemart, Inc., what is the consequence for a claim of trademark infringement?",
+      "choices": {
+        "A": "The claim prospers, because any registered mark is protected for all goods.",
+        "B": "There can be no trademark infringement, because registration for the specific use on those goods was an essential element and it was missing.",
+        "C": "The claim prospers if the competitor's goods are cheaper.",
+        "D": "The claim prospers if the competitor is a large company."
+      },
+      "correct": "B",
+      "explanation": "B is correct. The Court said that, assuming that \"Poster Ads\" could validly qualify as a trademark, the failure of P & D to secure a trademark registration for specific use on the light boxes meant that there could not have been any trademark infringement, since registration was an essential element of it. It invoked Faberge and Section 20 of the old Trademark Law: the certificate confers the exclusive right to use the symbol only for the goods specified in it, and the registrant did not even sell the goods named in its certificate. A is the opposite of the rule. C and D are not factors. Watch for: this is the rule under the old Trademark Law applied in the decision; check the current law for registrations under the Intellectual Property Code.",
+      "caseIds": [
+        "case-0026"
+      ],
+      "source": {
+        "caseTitle": "Pearl & Dean (Phil.), Incorporated v. Shoemart, Incorporated and North Edsa Marketing, Incorporated",
+        "grNumber": "G.R. No. 148222",
+        "url": "https://lawphil.net/judjuris/juri2003/aug2003/gr_148222_2003.html",
+        "part": "On the issue of trademark infringement",
+        "excerpt": "Assuming arguendo that \"Poster Ads\" could validly qualify as a trademark, the failure of P & D to secure a trademark registration for specific use on the light boxes meant that there could not have been any trademark infringement since registration was an essential element thereof."
+      }
+    },
+    {
+      "id": "q-0407",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "prompt": "According to Pearl & Dean (Phil.), Inc. v. Shoemart, Inc. (discussing Baker v. Selden), what does a copyright over a book that describes an art or system protect?",
+      "choices": {
+        "A": "The exclusive right to practice the art or system described in the book.",
+        "B": "The exclusive right to make and sell everything illustrated in the book.",
+        "C": "Every idea contained in the book.",
+        "D": "Only the expression, that is, the book itself as a work; the art it describes can be secured, if at all, only by a patent."
+      },
+      "correct": "D",
+      "explanation": "D is correct. The Court recalled Baker v. Selden: only the expression of an idea is protected by copyright, not the idea itself. A copyright on a book explaining an art gives the exclusive right to print and publish the book, but no one is prevented from practicing and using the art that the book describes; the object of the book is explanation and the object of the art is use. The former may be secured by copyright, and the latter can only be secured, if it can be secured at all, by letters patent. A, B and C claim exactly the exclusive right to the art or the idea that the rule denies.",
+      "caseIds": [
+        "case-0026"
+      ],
+      "source": {
+        "caseTitle": "Pearl & Dean (Phil.), Incorporated v. Shoemart, Incorporated and North Edsa Marketing, Incorporated",
+        "grNumber": "G.R. No. 148222",
+        "url": "https://lawphil.net/judjuris/juri2003/aug2003/gr_148222_2003.html",
+        "part": "On the issue of patent infringement (Baker v. Selden)",
+        "excerpt": "In the oft-cited case of Baker vs. Selden, the United States Supreme Court held that only the expression of an idea is protected by copyright, not the idea itself. … The description of the art in a book, though entitled to the benefit of copyright, lays no foundation for an exclusive claim to the art itself. The object of the one is explanation; the object of the other is use. The former may be secured by copyright. The latter can only be secured, if it can be secured at all, by letters patent."
       }
     }
   ]
