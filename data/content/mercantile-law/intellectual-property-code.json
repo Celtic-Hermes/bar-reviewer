@@ -226,6 +226,21 @@
       "ruling": "The Court partly granted the petition and reinstated the Department of Justice resolution ordering the filing of the information only as to Dela Pena-Reyes and Manalastas, and the trial court was directed to continue the criminal case. (1) The trial court erred in not resuming proceedings after the 60-day suspension of arraignment allowed by Rule 116, Section 11(c), since once an information is filed in court, the case is in the court's control. (2) News footage is copyrightable. The news event itself, and mere items of press information under Section 175, are not protected, but the expression of the news is: television news coverage involves framing shots, images, graphics and sound effects, a creative process, so news footage is an expression of the news. Broadcasting organizations also have neighboring rights, such as the exclusive right to prevent rebroadcasting (Section 211). Copyrightability is different from fair use. (3) Whether five seconds of footage is fair use under the four factors of Section 185 is a matter of defense, better left to the trial court, and raising it at the preliminary investigation does not negate probable cause; the mere act of rebroadcasting without the owner's authority gives rise to the probability that a crime was committed. (4) Infringement under the Code is malum prohibitum and is a matter of strict liability: good faith, lack of knowledge of the copyright and lack of intent to infringe are not defenses, and no exception exists for live broadcasts. (5) Probable cause was found against Dela Pena-Reyes and Manalastas, who controlled the news control room and could have prevented the infringement, but the Department of Justice committed grave abuse of discretion in including GMA-7's president and other officers, because corporate officers are liable only if they actively participated, not merely because of their position.",
       "keyDoctrine": "News of the day is not copyrightable, but the expression of the news, such as television news footage, is, and broadcasting organizations also have the neighboring right to prevent rebroadcasting. Copyright infringement under the Intellectual Property Code is malum prohibitum with strict liability, so good faith and lack of knowledge are not defenses (though fair use is), and corporate officers are criminally liable only on proof of their active participation.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2015/mar2015/gr_195956_2015.html"
+    },
+    {
+      "id": "case-0029",
+      "status": "draft",
+      "name": "Habana, et al. v. Robles and Goodwill Trading Co., Inc.",
+      "grNumber": "G.R. No. 131522",
+      "year": 1999,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "facts": "Pacita I. Habana, Alicia L. Cinco and Jovita N. Fernando are the authors and registered copyright owners of the English textbooks College English for Today (CET), Books 1 and 2, and Workbook for College Freshman English, Series 1. Felicidad C. Robles is the author, and Goodwill Trading Co., Inc. the publisher and distributor, of another English textbook, Developing English Proficiency (DEP), Books 1 and 2 (1985 edition). While revising their books, the petitioners found DEP in a bookstore and were surprised that it was strikingly similar to CET in its contents, scheme of presentation, illustrations and illustrative examples. After an itemized comparison, they found that several pages of DEP were similar to, if not copied from, their book. Their demands to stop selling DEP and to pay damages were ignored, and in July 1988 they sued Robles and Goodwill in the Makati Regional Trial Court for infringement and/or unfair competition with damages. Robles denied copying: she said DEP was the product of her independent research, that it followed the syllabus recommended to all English grammar writers by the Association of Philippine Colleges of Arts and Sciences, which explained the similarities, and that any similarity was due to her right to fair use of copyrighted materials. The trial court dismissed the complaint and awarded attorney's fees to the respondents. The Court of Appeals affirmed the dismissal, saying that similarity does not by itself establish infringement where both works deal with the same subject or have a common source, but it deleted the attorney's fees. The petitioners went to the Supreme Court.",
+      "issue": "(1) Despite the textual, thematic and sequential similarity between DEP and CET, did the respondents commit copyright infringement? (2) Was there bad intent on the respondents' part in refusing to withdraw the books? (3) Did Robles abuse the writer's right to fair use?",
+      "ruling": "The Court granted the petition, set aside the decisions of the Court of Appeals and the trial court, and remanded the case to the trial court to receive evidence on the damages. A perusal of the records showed several pages of DEP that are similar or identical to CET, such as examples on dates and addresses, and an example on parallelism taken from Edmund Burke's speech that DEP reproduced in toto but without acknowledging Burke, as CET had. Taking from the petitioners' book substantial portions of discussions and examples, and failing to acknowledge the source, is infringement. A substantial reproduction does not require copying the whole work or even a large portion: it is enough that so much is taken that the value of the original is sensibly diminished, or the labors of the original author are substantially and to an injurious extent appropriated. The respondents' claims that the material also appears in other grammar books and that both authors share the same background and syllabus do not excuse identical examples, and it is no defense that the copier did not know that she was infringing, because she knew that what she copied was not hers. Quotations from a published work are allowed only if compatible with fair use and to the extent justified, and if the source and author are mentioned, which Robles did not do. The copying produced an injurious effect: Robles lifted materials that were the product of the petitioners' research and compilation, represented them as her own and circulated her book commercially. Her pulling the book out of the bookstores on learning of the complaint, and the removal of the cited pages in the revised edition, were indicia of wrongdoing.",
+      "keyDoctrine": "Copyright infringement does not require copying the whole work or a large portion of it. It is enough that so much is taken that the value of the original is sensibly diminished or the original author's labors are substantially and to an injurious extent appropriated. It is no defense that the infringer did not know that she was infringing, and quoting from a published work is allowed only within fair use and with acknowledgment of the source and the author.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri1999/jul1999/gr_131522_1999.html"
     }
   ],
   "questions": [
@@ -3695,6 +3710,238 @@
         "url": "https://lawphil.net/judjuris/juri2015/mar2015/gr_195956_2015.html",
         "part": "VII (no different treatment for live broadcasts)",
         "excerpt": "To admit a different treatment for broadcasts would mean abandonment of a broadcasting organization’s minimum rights, including copyright on the broadcast material and the right against unauthorized rebroadcast of copyrighted material. The nature of broadcast technology is precisely why related or neighboring rights were created and developed. Carving out an exception for live broadcasts would go against our commitments under relevant international treaties and agreements, which provide for the same minimum rights."
+      }
+    },
+    {
+      "id": "q-0424",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "prompt": "The author of a textbook finds that another textbook has reproduced, without acknowledgment, many of her examples and portions of her discussions, although it does not copy her book from cover to cover. The second author says that she copied only a small part of the first book and that most of the topics are common to all books on the subject. Is there infringement? Explain how much copying is enough, based on Habana v. Robles.",
+      "suggestedAnswer": {
+        "answer": "Yes. It is not necessary that the whole work, or even a large portion of it, be copied. Taking substantial portions of discussions and examples and failing to acknowledge them is infringement if so much is taken that the value of the original is sensibly diminished or the first author's labors are substantially and to an injurious extent appropriated.",
+        "legalBasis": "Copyright owners have the exclusive right to carry out, authorize or prevent the reproduction of the work or a substantial portion of it (Section 177.1 of the Intellectual Property Code). A substantial reproduction of a book does not necessarily require that the entire copyrighted work, or even a large portion of it, be copied. In determining infringement, the amount of matter copied is an important consideration, but if so much is taken that the value of the original is sensibly diminished, or the labors of the original author are substantially and to an injurious extent appropriated by another, that is enough in law to constitute piracy. Infringement of a copyright is a trespass on a private domain owned and occupied by the owner of the copyright: it consists in the doing by any person, without the consent of the owner, of anything the sole right to do which is conferred by statute on the owner.",
+        "application": "The second author lifted substantial portions of the first author's discussions and examples and did not acknowledge them. That she did not copy the whole book, or that the topics are common to books on the subject, does not matter, because the test is the amount taken and its effect on the value of the original and on the first author's labors. Substantial portions copied without the owner's consent and without acknowledgment appropriate the work of the first author to an injurious extent.",
+        "conclusion": "There is infringement, even though only portions of the book were copied."
+      },
+      "keyPoints": [
+        "The owner has the exclusive right to reproduce the work or a substantial portion of it",
+        "Substantial reproduction does not require copying the entire work or even a large portion of it",
+        "The amount of matter copied is an important consideration",
+        "It is enough if so much is taken that the value of the original is sensibly diminished or the original author's labors are substantially and to an injurious extent appropriated",
+        "Infringement is doing, without the owner's consent, what only the owner has the right to do"
+      ],
+      "caseIds": [
+        "case-0029"
+      ],
+      "source": {
+        "caseTitle": "Habana, et al. v. Robles and Goodwill Trading Co., Inc.",
+        "grNumber": "G.R. No. 131522",
+        "url": "https://lawphil.net/judjuris/juri1999/jul1999/gr_131522_1999.html",
+        "part": "Discussion of infringement and substantial reproduction",
+        "excerpt": "We believe that respondent Robles' act of lifting from the book of petitioners substantial portions of discussions and examples, and her failure to acknowledge the same in her book is an infringement of petitioners' copyrights. When is there a substantial reproduction of a book? It does not necessarily require that the entire copyrighted work, or even a large portion of it, be copied. If so much is taken that the value of the original work is substantially diminished, there is an infringement of copyright and to an injurious extent, the work is appropriated. In determining the question of infringement, the amount of matter copied from the copyrighted work is an important consideration. To constitute infringement, it is not necessary that the whole or even a large portion of the work shall have been copied. If so much is taken that the value of the original is sensibly diminished, or the labors of the original author are substantially and to an injurious extent appropriated by another, that is sufficient in point of law to constitute piracy."
+      }
+    },
+    {
+      "id": "q-0425",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "prompt": "Two textbooks on the same subject contain identical examples, including a quotation from a famous speech that one author attributes to the speaker and the other does not. The second author argues that the similarities are due to the fact that both books follow the same recommended syllabus, that both authors have the same academic background and teaching approach, and that some of the material also appears in foreign books. Do these arguments excuse the identical examples? Explain, based on Habana v. Robles.",
+      "suggestedAnswer": {
+        "answer": "No. Even if the books follow the same syllabus and the authors share the same background, and some technical content is common, that does not excuse identical examples. Identical examples are a mark of copying.",
+        "legalBasis": "Under the Intellectual Property Code, quotations from a published work are not an infringement only if they are compatible with fair use and only to the extent justified for the purpose, and provided that the source and the name of the author, if appearing on the work, are mentioned (Section 184.1). A copy of a piracy is an infringement of the original, and it is no defense that the pirate did not know that he was infringing any copyright, because he at least knew that what he was copying was not his, and he copied at his peril.",
+        "application": "It may be true that books on the same subject share certain technical contents and that the authors share a background and syllabus. But the numerous pages showing similar style and manner of presentation and identical examples cannot pass as similarities merely because of technical considerations. Even if the authors have the same teaching experience and orientation, that is not an excuse to be identical even in the examples in their books, and the similarities in examples and material contents are obviously present: how can similar or identical examples not be considered a mark of copying? Reproducing an example in toto from a speech, while the first book acknowledged the speaker and the second did not, is the kind of lifting that the law does not excuse. The second author could at least have acknowledged the first book as the source.",
+        "conclusion": "The arguments do not excuse the identical examples, which show copying and, without acknowledgment of the source, infringement."
+      },
+      "keyPoints": [
+        "Common syllabus, background or teaching approach does not excuse identical examples",
+        "Some technical content may be similar in books on the same subject, but numerous pages showing similarity in style and identical examples cannot be explained by technical considerations",
+        "Identical examples are a mark of copying",
+        "Quotation is allowed only within fair use, to the extent justified, with the source and author mentioned",
+        "Lack of knowledge of infringement is no defense: the copier knew that what she copied was not hers"
+      ],
+      "caseIds": [
+        "case-0029"
+      ],
+      "source": {
+        "caseTitle": "Habana, et al. v. Robles and Goodwill Trading Co., Inc.",
+        "grNumber": "G.R. No. 131522",
+        "url": "https://lawphil.net/judjuris/juri1999/jul1999/gr_131522_1999.html",
+        "part": "Discussion of the respondents' defenses",
+        "excerpt": "On page 100 of the book DEP, also in the topic of parallel structure and repetition, the same example is found in toto. The only difference is that petitioners acknowledged the author Edmund Burke, and respondents did not. … The respondents' claim that the copied portions of the book CET are also found in foreign books and other grammar books, and that the similarity between her style and that of petitioners can not be avoided since they come from the same background and orientation may be true. However, in this jurisdiction under Sec 184 of Republic Act 8293 it is provided that: … It may be correct that the books being grammar books may contain materials similar as to some technical contents with other grammar books, such as the segment about the \"Author Card\". However, the numerous pages that the petitioners presented showing similarity in the style and the manner the books were presented and the identical examples can not pass as similarities merely because of technical consideration. … However, we believe that even if petitioners and respondent Robles were of the same background in terms of teaching experience and orientation, it is not an excuse for them to be identical even in examples contained in their books. The similarities in examples and material contents are so obviously present in this case. How can similar/identical examples not be considered as a mark of copying?"
+      }
+    },
+    {
+      "id": "q-0426",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "prompt": "An author copies material from another's textbook, presents it as her own and sells her book commercially. When the original authors complain, she withdraws her book from the bookstores, and a revised edition removes the pages that they had cited. She says that copying alone is not prohibited and that no one was injured. Is she right? Explain, based on Habana v. Robles.",
+      "suggestedAnswer": {
+        "answer": "No. Copying must produce an injurious effect, and it did: she took the results of the original authors' research and compilation, misrepresented them as her own and sold them commercially, without acknowledging the source. That is injury enough, and her conduct after the complaint points to wrongdoing.",
+        "legalBasis": "In cases of infringement, copying alone is not what is prohibited; the copying must produce an injurious effect. In copyrighting books, the purpose is to give protection to the intellectual product of an author. The authors of a work are protected against the appropriation of that product for the benefit of another, and the minimum that the law requires of a person who quotes within fair use is to mention the source and the name of the author.",
+        "application": "The injury consists in that she lifted from the first book materials that were the result of its authors' research work and compilation and misrepresented them as her own, circulating her book for commercial use without acknowledging them as the source. The first authors' work is the product of long and assiduous research, and for another to represent it as her own is injury enough. The least that she could have done was to acknowledge them as the source of the portions of her book. The Court also treated as an indicia of guilt or wrongdoing her pulling the book out of the bookstores upon learning of the complaint while denying the demand, and the removal, from the revised edition, of all the pages cited by the complainants.",
+        "conclusion": "She is wrong. The copying produced an injurious effect, so there is infringement, and the case is sent back to the trial court to determine the damages."
+      },
+      "keyPoints": [
+        "Copying alone is not what is prohibited; it must produce an injurious effect",
+        "The injury is lifting the results of another's research and compilation and misrepresenting them as one's own",
+        "Circulating the copied work commercially without acknowledging the source",
+        "The purpose of copyright is to protect the author's intellectual product",
+        "Pulling the book from the bookstores and removing the cited pages from the revised edition were indicia of wrongdoing",
+        "The case was remanded to the trial court to receive evidence on damages"
+      ],
+      "caseIds": [
+        "case-0029"
+      ],
+      "source": {
+        "caseTitle": "Habana, et al. v. Robles and Goodwill Trading Co., Inc.",
+        "grNumber": "G.R. No. 131522",
+        "url": "https://lawphil.net/judjuris/juri1999/jul1999/gr_131522_1999.html",
+        "part": "Discussion of the injurious effect of the copying",
+        "excerpt": "We consider as an indicia of guilt or wrongdoing the act of respondent Robles of pulling out from Goodwill bookstores the book DEP upon learning of petitioners' complaint while pharisaically denying petitioners' demand. It was further noted that when the book DEP was re-issued as a revised version, all the pages cited by petitioners to contain portion of their book College English for Today were eliminated. In cases of infringement, copying alone is not what is prohibited. The copying must produce an \"injurious effect\". Here, the injury consists in that respondent Robles lifted from petitioners' book materials that were the result of the latter's research work and compilation and misrepresented them as her own. She circulated the book DEP for commercial use did not acknowledged petitioners as her source. … In the case at bar, the least that respondent Robles could have done was to acknowledge petitioners Habana et. al. as the source of the portions of DEP. The final product of an author's toil is her book. To allow another to copy the book without appropriate acknowledgment is injury enough."
+      }
+    },
+    {
+      "id": "q-0427",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "prompt": "According to Habana v. Robles, which of the following is among the exclusive copyright or economic rights of the owner of a work under Section 177 of the Intellectual Property Code?",
+      "choices": {
+        "A": "The right to carry out, authorize or prevent the reproduction of the work or a substantial portion of it, and its dramatization, translation, adaptation, abridgement, arrangement or other transformation.",
+        "B": "The right to prevent anyone from discussing the same topic in a different book.",
+        "C": "The right to prevent the use of the same language as the work.",
+        "D": "The right to prevent a reader from lending the book to a friend."
+      },
+      "correct": "A",
+      "explanation": "A is correct. Section 177, quoted by the Court, provides that copyright or economic rights consist of the exclusive right to carry out, authorize or prevent: (177.1) reproduction of the work or a substantial portion of it; (177.2) its dramatization, translation, adaptation, abridgement, arrangement or other transformation; (177.3) the first public distribution of the original and each copy by sale or other transfer of ownership; (177.4) rental of certain works; (177.5) public display; (177.6) public performance; and (177.7) other communication to the public. B and C describe rights over ideas and subject matter, not over a work's expression. D is not one of the listed rights. The Court noted that the case was decided under P.D. No. 49 but that the same principles appear in Section 177 of the new law.",
+      "caseIds": [
+        "case-0029"
+      ],
+      "source": {
+        "caseTitle": "Habana, et al. v. Robles and Goodwill Trading Co., Inc.",
+        "grNumber": "G.R. No. 131522",
+        "url": "https://lawphil.net/judjuris/juri1999/jul1999/gr_131522_1999.html",
+        "part": "Discussion of the copyright or economic rights (Section 177)",
+        "excerpt": "Sec. 177. Copy or Economic rights. — Subject to the provisions of chapter VIII, copyright or economic rights shall consist of the exclusive right to carry out, authorize or prevent the following acts: 177.1 Reproduction of the work or substanlial portion of the work; 177.2 Dramatization, translation, adaptation, abridgement, arrangement or other transformation of the work;"
+      }
+    },
+    {
+      "id": "q-0428",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "prompt": "In Habana v. Robles, the Court referred to the \"work\" that is protected by copyright in the provisions it quoted. What does \"work\" refer to?",
+      "choices": {
+        "A": "Only paintings and sculptures.",
+        "B": "Only works that have been patented.",
+        "C": "Only inventions that are industrially applicable.",
+        "D": "Literary and artistic creations, which include books and other literary, scholarly and scientific works."
+      },
+      "correct": "D",
+      "explanation": "D is correct. After quoting the provisions on copyright and its limitations, the Court explained that \"work\" refers to literary and artistic creations and includes books and other literary, scholarly and scientific works. A is wrong because books and scholarly works are included. B and C describe patents, which are a different intellectual property right.",
+      "caseIds": [
+        "case-0029"
+      ],
+      "source": {
+        "caseTitle": "Habana, et al. v. Robles and Goodwill Trading Co., Inc.",
+        "grNumber": "G.R. No. 131522",
+        "url": "https://lawphil.net/judjuris/juri1999/jul1999/gr_131522_1999.html",
+        "part": "Discussion of the copyright provisions (the meaning of work)",
+        "excerpt": "In the above quoted provisions, \"work\" has reference to literary and artistic creations and this includes books and other literary, scholarly and scientific works."
+      }
+    },
+    {
+      "id": "q-0429",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "prompt": "A person who copied material from another's copyrighted book says that she did not know that she was infringing any copyright. According to Habana v. Robles, how should this be treated?",
+      "choices": {
+        "A": "It is a complete defense if she honestly believed that the material was in the public domain.",
+        "B": "It is no defense, because the copier at least knew that what she was copying was not hers, and she copied at her peril.",
+        "C": "It reduces the infringement to a civil matter only.",
+        "D": "It is a defense if the book was not registered with the National Library."
+      },
+      "correct": "B",
+      "explanation": "B is correct. The Court stated that a copy of a piracy is an infringement of the original, and it is no defense that the pirate, in such cases, did not know whether or not he was infringing any copyright; he at least knew that what he was copying was not his, and he copied at his peril. A, C and D are not what the Court said. Watch for: the same idea was applied to a criminal prosecution in ABS-CBN v. Gozon (2015), which held that infringement under the Intellectual Property Code is malum prohibitum, so good faith and lack of knowledge are not defenses; this decision involved a civil action under P.D. No. 49.",
+      "caseIds": [
+        "case-0029"
+      ],
+      "source": {
+        "caseTitle": "Habana, et al. v. Robles and Goodwill Trading Co., Inc.",
+        "grNumber": "G.R. No. 131522",
+        "url": "https://lawphil.net/judjuris/juri1999/jul1999/gr_131522_1999.html",
+        "part": "Discussion of the respondents' defenses (knowledge of infringement)",
+        "excerpt": "A copy of a piracy is an infringement of the original, and it is no defense that the pirate, in such cases, did not know whether or not he was infringing any copyright; he at least knew that what he was copying was not his, and he copied at his peril."
+      }
+    },
+    {
+      "id": "q-0430",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "prompt": "Under Section 184.1 of the Intellectual Property Code, as quoted in Habana v. Robles, when is the making of quotations from a published work not an infringement of copyright?",
+      "choices": {
+        "A": "Whenever the quotation is short, even if the source is not mentioned.",
+        "B": "Whenever the quoting author sells the new work for profit.",
+        "C": "If the quotations are compatible with fair use and only to the extent justified for the purpose, provided that the source and the name of the author, if appearing on the work, are mentioned.",
+        "D": "Whenever the quoted work has been published for more than one year."
+      },
+      "correct": "C",
+      "explanation": "C is correct. The Court quoted Section 184.1, under which the making of quotations from a published work does not constitute infringement if the quotations are compatible with fair use and only to the extent justified for the purpose, including quotations from newspaper articles and periodicals in the form of press summaries, provided that the source and the name of the author, if appearing on the work, are mentioned. In the case, the respondent reproduced portions of the petitioners' book without acknowledging them as the source, so the exception did not apply. A is wrong because the source and author must be mentioned. B and D are not conditions in the provision.",
+      "caseIds": [
+        "case-0029"
+      ],
+      "source": {
+        "caseTitle": "Habana, et al. v. Robles and Goodwill Trading Co., Inc.",
+        "grNumber": "G.R. No. 131522",
+        "url": "https://lawphil.net/judjuris/juri1999/jul1999/gr_131522_1999.html",
+        "part": "Discussion of the limitations on copyright (Section 184.1)",
+        "excerpt": "(c) The making of quotations from a published work if they are compatible with fair use and only to the extent justified for the purpose, including quotations from newspaper articles and periodicals in the form of press summaries: Provided, That the source and the name of the author, if appearing on the work, are mentioned."
+      }
+    },
+    {
+      "id": "q-0431",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "prompt": "What did the Supreme Court do with the decisions of the lower courts in Habana v. Robles?",
+      "choices": {
+        "A": "It affirmed the dismissal of the complaint and the award of attorney's fees to the respondents.",
+        "B": "It set aside the decision of the Court of Appeals and remanded the case to the trial court for further proceedings to receive evidence to ascertain the damages caused to the petitioners and to render a decision in accordance with the evidence.",
+        "C": "It dismissed the case for lack of jurisdiction.",
+        "D": "It awarded the petitioners a fixed amount of damages without further proceedings."
+      },
+      "correct": "B",
+      "explanation": "B is correct. The Court granted the petition, set aside the decision and resolution of the Court of Appeals, and ordered the case remanded to the trial court for further proceedings to receive the parties' evidence to ascertain the damages caused and sustained by the petitioners and to render a decision in accordance with the evidence submitted. A is the result of the lower courts, which the Supreme Court reversed (the Court of Appeals had deleted the attorney's fees but affirmed the dismissal). C is wrong because the court had jurisdiction. D is wrong because the amount of damages had still to be proved before the trial court.",
+      "caseIds": [
+        "case-0029"
+      ],
+      "source": {
+        "caseTitle": "Habana, et al. v. Robles and Goodwill Trading Co., Inc.",
+        "grNumber": "G.R. No. 131522",
+        "url": "https://lawphil.net/judjuris/juri1999/jul1999/gr_131522_1999.html",
+        "part": "Dispositive portion",
+        "excerpt": "WHEREFORE, the petition is hereby GRANTED. The decision and resolution of the Court of Appeals in CA-G. R. CV No. 44053 are SET ASIDE. The case is ordered remanded to the trial court for further proceedings to receive evidence of the parties to ascertain the damages caused and sustained by petitioners and to render decision in accordance with the evidence submitted to it."
       }
     }
   ]
