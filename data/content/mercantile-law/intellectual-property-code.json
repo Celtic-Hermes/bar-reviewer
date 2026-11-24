@@ -211,6 +211,21 @@
       "ruling": "The Court denied the petition, affirmed the Court of Appeals and annulled the search warrants. (1) The RTC had jurisdiction to resolve whether the works are copyrightable and whether Ching owns a copyright. In deciding whether probable cause exists, the court must necessarily determine whether an offense exists. The applicant has to show that he owns a valid copyright and that the work was copied. By asking the NBI to apply for the warrants, Ching authorized the RTC to examine the validity of his claim, and he could not repudiate that without running afoul of estoppel. A copyright certificate is prima facie evidence of validity and ownership, but the presumption only orders the burden of proof, and it does not arise where other evidence in the record casts doubt on the question. (2) The works are not copyrightable. They were classified as works of applied art under Section 172.1(h), but as described in the application they are plain automotive spare parts and utility models, useful articles with no ornamental or decorative value. A useful article is copyrightable only to the extent that its pictorial, graphic or sculptural features can be identified separately from, and exist independently of, its utilitarian aspects. They also do not fall within the catch-all phrase \"other literary, scholarly, scientific and artistic works\" under the principle of ejusdem generis. Copyright is purely statutory and covers only the works in the statutory list, and that the works may be the subject of a patent, as a utility model, does not give Ching copyright protection, since copyright, patent and trademark are distinct rights that cannot be used interchangeably. Mazer v. Stein, which involved artistic statuettes used as lamp bases, does not help him.",
       "keyDoctrine": "A court deciding on a search warrant may determine whether the applicant owns a valid copyright, and a copyright certificate is only prima facie evidence of validity. Useful articles and utility models are not copyrightable, except to the extent that their artistic features can be identified separately from their utilitarian aspects; their protection is by patent (a utility model), not copyright.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2005/jun2005/gr_161295_2005.html"
+    },
+    {
+      "id": "case-0028",
+      "status": "draft",
+      "name": "ABS-CBN Corporation v. Gozon, et al.",
+      "grNumber": "G.R. No. 195956",
+      "year": 2015,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "facts": "On July 22, 2004, Filipino overseas worker Angelo dela Cruz, who had been kidnapped in Iraq and then released, returned to the Philippines. ABS-CBN Corporation carried out live audio-video coverage of his arrival at the airport and of the press conference. It allowed Reuters Television Service to air its footage under a special embargo agreement, which made the footage for Reuters' international subscribers only and barred other Philippine subscribers from using it without ABS-CBN's consent. GMA Network, Inc. (GMA-7), which subscribes to Reuters and CNN, received a live video feed from Reuters and carried it in its program \"Flash Report\" together with its own coverage. GMA-7 said that it received no notice of any embargo and that it aired only five seconds of the feed (ABS-CBN says it was much longer). ABS-CBN complained of copyright infringement under Sections 177 and 211 of the Intellectual Property Code. The City Prosecutor found probable cause against GMA-7's Head of News Operations (Grace Dela Pena-Reyes) and Program Manager (John Oliver Manalastas) only, and an information was filed. The Secretary of Justice first dismissed the case, holding that good faith may be a defense, but a later Secretary reversed this and ordered the filing against GMA-7's president, executive vice-president, vice-president for news and public affairs and director for news as well. The Court of Appeals set aside the later resolution, ruling that GMA-7 acted in good faith and that criminal liability for infringement attaches only if it is committed knowingly and intentionally. ABS-CBN went to the Supreme Court.",
+      "issue": "(1) Is news footage copyrightable? (2) Was there fair use of the footage? (3) Is lack of knowledge that a material is copyrighted, or good faith, a defense against criminal prosecution for infringement under the Intellectual Property Code? (4) Was there probable cause to charge the respondents?",
+      "ruling": "The Court partly granted the petition and reinstated the Department of Justice resolution ordering the filing of the information only as to Dela Pena-Reyes and Manalastas, and the trial court was directed to continue the criminal case. (1) The trial court erred in not resuming proceedings after the 60-day suspension of arraignment allowed by Rule 116, Section 11(c), since once an information is filed in court, the case is in the court's control. (2) News footage is copyrightable. The news event itself, and mere items of press information under Section 175, are not protected, but the expression of the news is: television news coverage involves framing shots, images, graphics and sound effects, a creative process, so news footage is an expression of the news. Broadcasting organizations also have neighboring rights, such as the exclusive right to prevent rebroadcasting (Section 211). Copyrightability is different from fair use. (3) Whether five seconds of footage is fair use under the four factors of Section 185 is a matter of defense, better left to the trial court, and raising it at the preliminary investigation does not negate probable cause; the mere act of rebroadcasting without the owner's authority gives rise to the probability that a crime was committed. (4) Infringement under the Code is malum prohibitum and is a matter of strict liability: good faith, lack of knowledge of the copyright and lack of intent to infringe are not defenses, and no exception exists for live broadcasts. (5) Probable cause was found against Dela Pena-Reyes and Manalastas, who controlled the news control room and could have prevented the infringement, but the Department of Justice committed grave abuse of discretion in including GMA-7's president and other officers, because corporate officers are liable only if they actively participated, not merely because of their position.",
+      "keyDoctrine": "News of the day is not copyrightable, but the expression of the news, such as television news footage, is, and broadcasting organizations also have the neighboring right to prevent rebroadcasting. Copyright infringement under the Intellectual Property Code is malum prohibitum with strict liability, so good faith and lack of knowledge are not defenses (though fair use is), and corporate officers are criminally liable only on proof of their active participation.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2015/mar2015/gr_195956_2015.html"
     }
   ],
   "questions": [
@@ -3446,6 +3461,240 @@
         "url": "https://lawphil.net/judjuris/juri2005/jun2005/gr_161295_2005.html",
         "part": "Discussion of whether the works are copyrightable (ejusdem generis)",
         "excerpt": "Neither are we to regard the Leaf Spring Eye Bushing and Vehicle Bearing Cushion as included in the catch-all phrase \"other literary, scholarly, scientific and artistic works\" in Section 172.1(a) of R.A. No. 8293. Applying the principle of ejusdem generis which states that \"where a statute describes things of a particular class or kind accompanied by words of a generic character, the generic word will usually be limited to things of a similar nature with those particularly enumerated, unless there be something in the context of the state which would repel such inference,\" the Leaf Spring Eye Bushing and Vehicle Bearing Cushion are not copyrightable, being not of the same kind and nature as the works enumerated in Section 172 of R.A. No. 8293."
+      }
+    },
+    {
+      "id": "q-0416",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "prompt": "A television network films a major news event live and its footage is rebroadcast by a rival without its consent. The rival argues that the event is news of the day, that there is no inventiveness in simply showing it, and that facts of everyday life are in the public domain. Is the network's news footage protected by copyright? Explain, based on ABS-CBN Corporation v. Gozon.",
+      "suggestedAnswer": {
+        "answer": "Yes. The event itself and mere items of press information are not copyrightable, but the footage of the event is. It is the network's expression of the news, created through a creative process, and is protected as an audio-visual work, and the network also has neighboring rights over its broadcast.",
+        "legalBasis": "Under Section 175 of the Intellectual Property Code, news of the day and other miscellaneous facts having the character of mere items of press information are unprotected subject matter. But the Code does not say that the expression of the news of the day, particularly when it underwent a creative process, is not entitled to protection. An idea or event must be distinguished from the expression of that idea or event. Works are protected by the sole fact of their creation, irrespective of their mode or form of expression, as well as of their content, quality and purpose, and audiovisual works are included. News or the event itself is not copyrightable, but an event can be captured and presented in a specific medium. News coverage in television involves framing shots, using images, graphics and sound effects, a creative process and originality, so television news footage is an expression of the news. Broadcasting organizations have not only copyright but also neighboring rights over their broadcasts. Copyrightability of a work is different from the fair use of a work for purposes of news reporting.",
+        "application": "The arrival of the person, or the event covered, belongs to everyone, and anyone may report it. But the network's footage is how it captured and presented the event, through its choices of shots, images and sound, and that is a creative expression in the form of an audio-visual work. So the rival's argument confuses the event, which is free, with the footage, which is protected. The rival also cannot rely on the footage being news to avoid copyright, because the question of whether its use was fair is separate from whether the footage is copyrightable.",
+        "conclusion": "The network's news footage is copyrightable, and the rival's argument fails."
+      },
+      "keyPoints": [
+        "Section 175: news of the day and mere items of press information are not protected",
+        "The Code does not deny protection to the expression of the news, particularly when it underwent a creative process",
+        "An idea or event must be distinguished from the expression of that idea or event",
+        "Television news coverage involves framing shots, images, graphics and sound effects, a creative process; news footage is an expression of the news",
+        "Broadcasting organizations have copyright and neighboring rights over their broadcasts",
+        "Copyrightability is different from fair use for news reporting"
+      ],
+      "caseIds": [
+        "case-0028"
+      ],
+      "source": {
+        "caseTitle": "ABS-CBN Corporation v. Gozon, et al.",
+        "grNumber": "G.R. No. 195956",
+        "url": "https://lawphil.net/judjuris/juri2015/mar2015/gr_195956_2015.html",
+        "part": "V (the news footage is copyrightable)",
+        "excerpt": "It is true that under Section 175 of the Intellectual Property Code, \"news of the day and other miscellaneous facts having the character of mere items of press information\" are considered unprotected subject matter. However, the Code does not state that expression of the news of the day, particularly when it underwent a creative process, is not entitled to protection. An idea or event must be distinguished from the expression of that idea or event. … News or the event itself is not copyrightable. However, an event can be captured and presented in a specific medium. As recognized by this court in Joaquin, television \"involves a whole spectrum of visuals and effects, video and audio.\" News coverage in television involves framing shots, using images, graphics, and sound effects. It involves creative process and originality. Television news footage is an expression of the news. … News as expressed in a video footage is entitled to copyright protection. Broadcasting organizations have not only copyright on but also neighboring rights over their broadcasts. Copyrightability of a work is different from fair use of a work for purposes of news reporting."
+      }
+    },
+    {
+      "id": "q-0417",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "prompt": "At the preliminary investigation of a criminal complaint for rebroadcasting a network's news footage without consent, the respondents say that they aired only a few seconds of it, so that it was fair use for news reporting, and that no probable cause exists. Does the defense of fair use defeat probable cause? What factors decide fair use? Explain, based on ABS-CBN Corporation v. Gozon.",
+      "suggestedAnswer": {
+        "answer": "No. Fair use is a matter of defense, which is better decided by the trial court on the evidence. Raising it at the preliminary investigation does not automatically mean that no infringement was committed, and the mere act of rebroadcasting without the owner's authority gives rise to the probability that a crime was committed.",
+        "legalBasis": "Under Section 185.1 of the Intellectual Property Code, the fair use of a copyrighted work for criticism, comment, news reporting, teaching, scholarship, research and similar purposes is not an infringement. Fair use is an exception to the copyright owner's monopoly, to avoid stifling the creativity the law is designed to foster, and it is determined by four factors: (a) the purpose and character of the use, including whether it is commercial or for non-profit educational purposes; (b) the nature of the copyrighted work; (c) the amount and substantiality of the portion used in relation to the work as a whole; and (d) the effect of the use upon the potential market for or value of the work. During a preliminary investigation, the investigating prosecutor has full discretion to evaluate the facts, allegations and evidence, and defenses raised there are subject to further proof and evaluation before the trial court.",
+        "application": "Whether a short portion of the footage was fair use depends on the four factors and on evidence about its actual length, purpose and effect, such as the commercial value of a few seconds of broadcast news, and that evidence is insufficient at this stage. The question is therefore better left to the trial court. The point of the preliminary investigation is only probable cause, and the respondents' own rebroadcast of the footage without the owner's consent is not in dispute. That act alone gives rise to the probability that a crime was committed, so raising the defense of fair use does not defeat probable cause.",
+        "conclusion": "Fair use does not defeat probable cause at the preliminary investigation; it is a defense to be proved at trial under the four factors."
+      },
+      "keyPoints": [
+        "Fair use of a copyrighted work for news reporting and similar purposes is not infringement (Section 185.1)",
+        "Fair use is an exception to the owner's monopoly, tested by the four factors: purpose and character, nature of the work, amount and substantiality of the portion used, effect on the market",
+        "Whether a few seconds of footage is fair use is a matter of defense",
+        "Raising the defense during preliminary investigation does not automatically mean that no infringement was committed",
+        "The investigating prosecutor has discretion; defenses are subject to further proof and evaluation before the trial court",
+        "The mere act of rebroadcasting without the owner's authority gives rise to the probability that a crime was committed"
+      ],
+      "caseIds": [
+        "case-0028"
+      ],
+      "source": {
+        "caseTitle": "ABS-CBN Corporation v. Gozon, et al.",
+        "grNumber": "G.R. No. 195956",
+        "url": "https://lawphil.net/judjuris/juri2015/mar2015/gr_195956_2015.html",
+        "part": "VI (fair use and probable cause)",
+        "excerpt": "Fair use is an exception to the copyright owner’s monopoly of the use of the work to avoid stifling \"the very creativity which that law is designed to foster.\" … Whether the alleged five-second footage may be considered fair use is a matter of defense. We emphasize that the case involves determination of probable cause at the preliminary investigation stage. Raising the defense of fair use does not automatically mean that no infringement was committed. The investigating prosecutor has full discretion to evaluate the facts, allegations, and evidence during preliminary investigation. Defenses raised during preliminary investigation are subject to further proof and evaluation before the trial court. Given the insufficiency of available evidence, determination of whether the Angelo dela Cruz footage is subject to fair use is better left to the trial court where the proceedings are currently pending. GMA-7’s rebroadcast of ABS-CBN’s news footage without the latter’s consent is not an issue. The mere act of rebroadcasting without authority from the owner of the broadcast gives rise to the probability that a crime was committed under the Intellectual Property Code."
+      }
+    },
+    {
+      "id": "q-0418",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "prompt": "A broadcaster that carried a rival's embargoed live news footage argues that it received the feed from a news agency that it subscribes to, without any notice of an embargo, and so acted in good faith. It says that criminal liability for copyright infringement needs knowledge and intent. Is good faith or lack of knowledge a defense to a criminal prosecution for copyright infringement under the Intellectual Property Code? Explain, based on ABS-CBN Corporation v. Gozon.",
+      "suggestedAnswer": {
+        "answer": "No. Infringement under the Intellectual Property Code is malum prohibitum and carries strict liability. Good faith, lack of knowledge of the copyright and lack of intent to infringe are not defenses, and live broadcasts are not an exception. Proof beyond reasonable doubt of the prohibited act is still required.",
+        "legalBasis": "The Code is a special law, and acts punished under a special law are generally malum prohibitum, for which malice or criminal intent is completely immaterial. Unlike other jurisdictions that require intent for criminal copyright infringement, the Philippines does not statutorily support good faith as a defense. The Code requires strict liability for copyright infringement, whether in a civil action or a criminal prosecution, and does not require mens rea or culpa (see Sections 216 and 217). Volition (knowledge of the act being done) is different from criminal intent, which is what is punished in crimes mala in se. In Habana and Columbia Pictures, the Court did not require knowledge of the infringement: one does not need to know that he or she is copying a work without consent to violate copyright law, and knowledge is material only when a person is charged with aiding and abetting infringement under Section 217. Unless the law clearly provides otherwise, offenses involving infringement of copyright should be considered malum prohibitum, because it is the act of infringement, not the intent, that causes the damage. Proof beyond reasonable doubt is still the standard for criminal prosecutions under the Code.",
+        "application": "The broadcaster's good faith, and the fact that it did not see an embargo notice or knew only that it was airing a feed it was entitled to carry, do not matter. Notice of the embargo is not material in finding probable cause for infringement. The broadcaster is an experienced participant in the business, and it knew that carrying a rival's footage had consequences. The argument that live broadcasts deserve different treatment also fails, since it would mean abandoning a broadcasting organization's minimum rights, such as the right against unauthorized rebroadcast, which is why neighboring rights exist. The prohibited act of rebroadcasting without the owner's consent is the crime itself.",
+        "conclusion": "Good faith and lack of knowledge are not defenses; the prosecution only has to prove the prohibited act beyond reasonable doubt."
+      },
+      "keyPoints": [
+        "The Intellectual Property Code is a special law; infringement is malum prohibitum, so malice or criminal intent is immaterial",
+        "The Philippines does not statutorily support good faith as a defense, and the Code requires strict liability",
+        "Volition (knowing the act) differs from criminal intent",
+        "Habana and Columbia Pictures: knowledge of infringement is not required; knowledge is material only for aiding and abetting under Section 217",
+        "No different treatment for live broadcasts; notice of the embargo is not material",
+        "Proof beyond reasonable doubt is still required in a criminal prosecution"
+      ],
+      "caseIds": [
+        "case-0028"
+      ],
+      "source": {
+        "caseTitle": "ABS-CBN Corporation v. Gozon, et al.",
+        "grNumber": "G.R. No. 195956",
+        "url": "https://lawphil.net/judjuris/juri2015/mar2015/gr_195956_2015.html",
+        "part": "VII (good faith is not a defense)",
+        "excerpt": "Infringement under the Intellectual Property Code is malum prohibitum. The Intellectual Property Code is a special law. … The general rule is that acts punished under a special law are malum prohibitum. \"An act which is declared malum prohibitum, malice or criminal intent is completely immaterial.\" … Unlike other jurisdictions that require intent for a criminal prosecution of copyright infringement, the Philippines does not statutorily support good faith as a defense. … The Intellectual Property Code requires strict liability for copyright infringement whether for a civil action or a criminal prosecution; it does not require mens rea or culpa: … Habana and Columbia Pictures did not require knowledge of the infringement to constitute a violation of the copyright. One does not need to know that he or she is copying a work without consent to violate copyright law. Notice of fact of the embargo from Reuters or CNN is not material to find probable cause that respondents committed infringement. Knowledge of infringement is only material when the person is charged of aiding and abetting a copyright infringement under Section 217 of the Intellectual Property Code. … Thus, unless clearly provided in the law, offenses involving infringement of copyright protections should be considered malum prohibitum. It is the act of infringement, not the intent, which causes the damage. To require or assume the need to prove intent defeats the purpose of intellectual property protection. Nevertheless, proof beyond reasonable doubt is still the standard for criminal prosecutions under the Intellectual Property Code."
+      }
+    },
+    {
+      "id": "q-0419",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "prompt": "Under Section 211 of the Intellectual Property Code, as quoted in ABS-CBN Corporation v. Gozon, which of the following is among the exclusive rights of a broadcasting organization (its neighboring rights)?",
+      "choices": {
+        "A": "The right to prevent anyone from reporting the same news event.",
+        "B": "The right to prevent anyone from describing the content of its broadcasts in newspapers.",
+        "C": "The right to authorize or prevent the sale of television sets.",
+        "D": "The right to carry out, authorize or prevent the rebroadcasting of its broadcasts, and the recording of its broadcasts for communication to the public and the use of such records for fresh transmissions or recording."
+      },
+      "correct": "D",
+      "explanation": "D is correct. Section 211 provides that, subject to Section 212, broadcasting organizations enjoy the exclusive right to carry out, authorize or prevent the rebroadcasting of their broadcasts, the recording in any manner, including films or video tape, of their broadcasts for the purpose of communicating television broadcasts of the same to the public, and the use of such records for fresh transmissions or fresh recording. The Court explained that neighboring or related rights are a kind of protection distinct from copyright, created because of technology that preserves and disseminates once ephemeral works. A is wrong because the event itself is not copyrightable and anyone may report it. B and C are not rights of broadcasting organizations.",
+      "caseIds": [
+        "case-0028"
+      ],
+      "source": {
+        "caseTitle": "ABS-CBN Corporation v. Gozon, et al.",
+        "grNumber": "G.R. No. 195956",
+        "url": "https://lawphil.net/judjuris/juri2015/mar2015/gr_195956_2015.html",
+        "part": "V (broadcasting organizations and neighboring rights, Section 211)",
+        "excerpt": "SECTION 211. Scope of Right. — Subject to the provisions of Section 212, broadcasting organizations shall enjoy the exclusive right to carry out, authorize or prevent any of the following acts: 211.1. The rebroadcasting of their broadcasts; 211.2. The recording in any manner, including the making of films or the use of video tape, of their broadcasts for the purpose of communication to the public of television broadcasts of the same; and 211.3. The use of such records for fresh transmissions or for fresh recording."
+      }
+    },
+    {
+      "id": "q-0420",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "prompt": "An information for a crime is filed in court, and the accused then asks the Department of Justice to review the prosecutor's finding. The Department later orders the withdrawal of the information. According to ABS-CBN Corporation v. Gozon (citing Crespo v. Mogul and Rule 116, Section 11(c)), what is the rule?",
+      "choices": {
+        "A": "The trial court must dismiss the case as soon as the Department orders it.",
+        "B": "The trial court must suspend the arraignment indefinitely while the Department decides.",
+        "C": "Once an information is filed in court, any disposition of the case rests in the sound discretion of the court, and the arraignment may be suspended for a pending petition for review only for a period not exceeding sixty days.",
+        "D": "The Secretary of Justice may order the court to proceed or not to proceed, and the court must obey."
+      },
+      "correct": "C",
+      "explanation": "C is correct. Rule 116, Section 11(c) allows the arraignment to be suspended while a petition for review of the prosecutor's resolution is pending at the Department of Justice or the Office of the President, but the suspension may not exceed sixty days from the filing of the petition. Under Crespo, once a complaint or information is filed in court, any disposition of the case as to its dismissal or the conviction or acquittal of the accused rests in the sound discretion of the court, and a motion by the fiscal to dismiss is addressed to the court, which may grant or deny it. The Court said the trial court should have proceeded with the arraignment after sixty days and erred when it did not act on the criminal case in the interim. A, B and D are the opposite of this rule.",
+      "caseIds": [
+        "case-0028"
+      ],
+      "source": {
+        "caseTitle": "ABS-CBN Corporation v. Gozon, et al.",
+        "grNumber": "G.R. No. 195956",
+        "url": "https://lawphil.net/judjuris/juri2015/mar2015/gr_195956_2015.html",
+        "part": "I (the suspension of the arraignment and the Crespo doctrine)",
+        "excerpt": "(c) A petition for review of the resolution of the prosecutor is pending at either the Department of Justice, or the Office of the President; provided, that the period of suspension shall not exceed sixty (60) days counted from the filing of the petition with the reviewing office. (12a) … The rule therefore in this jurisdiction is that once a complaint or information is filed in Court any disposition of the case as to its dismissal or the conviction or acquittal of the accused rests in the sound discretion of the Court."
+      }
+    },
+    {
+      "id": "q-0421",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "prompt": "According to ABS-CBN Corporation v. Gozon, which of the following is one of the four factors in Section 185 of the Intellectual Property Code for deciding whether the use of a copyrighted work is fair use?",
+      "choices": {
+        "A": "Whether the copyright owner is a corporation or an individual.",
+        "B": "Whether the user has a license from a third party.",
+        "C": "Whether the user is a foreigner.",
+        "D": "The effect of the use upon the potential market for or value of the copyrighted work."
+      },
+      "correct": "D",
+      "explanation": "D is correct. Section 185 lists four factors: (a) the purpose and character of the use, including whether it is of a commercial nature or for non-profit educational purposes; (b) the nature of the copyrighted work; (c) the amount and substantiality of the portion used in relation to the copyrighted work as a whole; and (d) the effect of the use upon the potential market for or value of the work. If the use had or will have a negative impact on the work's market, it is deemed unfair. A, B and C are not among the factors.",
+      "caseIds": [
+        "case-0028"
+      ],
+      "source": {
+        "caseTitle": "ABS-CBN Corporation v. Gozon, et al.",
+        "grNumber": "G.R. No. 195956",
+        "url": "https://lawphil.net/judjuris/juri2015/mar2015/gr_195956_2015.html",
+        "part": "VI (the four-factor test for fair use)",
+        "excerpt": "Determining fair use requires application of the four-factor test. Section 185 of the Intellectual Property Code lists four (4) factors to determine if there was fair use of a copyrighted work: a. The purpose and character of the use, including whether such use is of a commercial nature or is for non-profit educational purposes; b. The nature of the copyrighted work; c. The amount and substantiality of the portion used in relation to the copyrighted work as a whole; and d. The effect of the use upon the potential market for or value of the copyrighted work."
+      }
+    },
+    {
+      "id": "q-0422",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "prompt": "Prosecutors charge the president, vice-presidents and news director of a broadcasting corporation, as well as the managers who ran the newsroom, for a copyright infringement committed on air. According to ABS-CBN Corporation v. Gozon, what is needed to hold a corporate officer criminally liable?",
+      "choices": {
+        "A": "Mere membership on the board or holding the office of president is enough.",
+        "B": "A showing of active participation in the commission of the wrongful act, not simply a constructive one; mere membership on the board or being president does not by itself mean knowledge, approval and participation.",
+        "C": "Proof that the officer personally profited from the infringement.",
+        "D": "Proof that the corporation lost money."
+      },
+      "correct": "B",
+      "explanation": "B is correct. The Court said that corporate officers and employees may be held individually liable for crimes under the Intellectual Property Code, but their criminal liability stems from their active participation in the commission of the wrongful act, and benefit is not an operative fact. Mere membership on the board or being the president does not by itself mean knowledge, approval and participation in the act alleged as criminal: there must be a showing of active participation, not simply a constructive one. The Court found probable cause against the Head of News Operations and the Program Manager, who controlled the news control room and could have prevented the infringement, but ruled that the Department of Justice committed grave abuse of discretion in including the president and other officers without proof of active participation. A is wrong because position alone is not enough. C is wrong because benefit is not the test. D is not a ground.",
+      "caseIds": [
+        "case-0028"
+      ],
+      "source": {
+        "caseTitle": "ABS-CBN Corporation v. Gozon, et al.",
+        "grNumber": "G.R. No. 195956",
+        "url": "https://lawphil.net/judjuris/juri2015/mar2015/gr_195956_2015.html",
+        "part": "VIII (liability of corporate officers)",
+        "excerpt": "However, the criminal liability of a corporation’s officers or employees stems from their active participation in the commission of the wrongful act: … Mere membership in the Board or being President per se does not mean knowledge, approval, and participation in the act alleged as criminal. There must be a showing of active participation, not simply a constructive one."
+      }
+    },
+    {
+      "id": "q-0423",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "prompt": "A broadcaster argues that live broadcasts should be treated differently from films and books when deciding whether infringement requires knowledge or good faith, because a live feed is received without being \"copied\". According to ABS-CBN Corporation v. Gozon, how should this argument be treated?",
+      "choices": {
+        "A": "It should be accepted, because a live broadcaster cannot know who owns the feed.",
+        "B": "It should be accepted only if the broadcast lasts less than one minute.",
+        "C": "It should be rejected, because a different treatment for broadcasts would mean abandoning a broadcasting organization's minimum rights, including the right against unauthorized rebroadcast, and an exception for live broadcasts would go against international commitments.",
+        "D": "It should be accepted if the broadcaster is a subscriber of the news agency."
+      },
+      "correct": "C",
+      "explanation": "C is correct. The Court said that respondents, who are experienced in the broadcasting business, knew that there would be consequences in carrying ABS-CBN's footage, as shown by their cutting the feed on seeing its logo and reporter. To admit a different treatment for broadcasts would mean abandoning a broadcasting organization's minimum rights, including copyright on the broadcast material and the right against unauthorized rebroadcast. The nature of broadcast technology is precisely why neighboring rights were created, and carving out an exception for live broadcasts would go against the Philippines' commitments under international treaties that provide the same minimum rights. A, B and D would create exceptions that the Court refused to recognize.",
+      "caseIds": [
+        "case-0028"
+      ],
+      "source": {
+        "caseTitle": "ABS-CBN Corporation v. Gozon, et al.",
+        "grNumber": "G.R. No. 195956",
+        "url": "https://lawphil.net/judjuris/juri2015/mar2015/gr_195956_2015.html",
+        "part": "VII (no different treatment for live broadcasts)",
+        "excerpt": "To admit a different treatment for broadcasts would mean abandonment of a broadcasting organization’s minimum rights, including copyright on the broadcast material and the right against unauthorized rebroadcast of copyrighted material. The nature of broadcast technology is precisely why related or neighboring rights were created and developed. Carving out an exception for live broadcasts would go against our commitments under relevant international treaties and agreements, which provide for the same minimum rights."
       }
     }
   ]
