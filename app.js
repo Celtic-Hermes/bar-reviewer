@@ -3577,7 +3577,7 @@ function showPicked(question, picked) {
     ? "Correct!"
     : "Not quite. The correct answer is " + question.correct + ".";
   result.className = "feedback-title " + (isRight ? "got-text" : "missed-text");
-  setTextWithBasis(document.getElementById("mcq-explanation"), question.explanation, question);
+  setTextWithBasis(document.getElementById("mcq-explanation"), question.explanation, question, question.id + ":explanation");
   document.getElementById("mcq-feedback").hidden = false;
   document.getElementById("find-btn").hidden = viewOf(session.questions[session.index]) !== "official";  // she has answered: "Find in case" is allowed now (never for class notes: no case to search)
 }
@@ -4038,7 +4038,7 @@ function applyFbLevel(question, level, hidden) {
   // An optional "explanation" (the class-notes items have one): shown under the full text after Show answer.
   const discussion = typeof question.explanation === "string" ? question.explanation.trim() : "";
   document.getElementById("fb-discussion-card").hidden = !discussion;
-  setTextWithBasis(document.getElementById("fb-discussion"), discussion, question);
+  setTextWithBasis(document.getElementById("fb-discussion"), discussion, question, question.id + ":explanation");
 
   const note = document.getElementById("fb-level-note");
   if (fbInfo.usable) {
@@ -4305,10 +4305,11 @@ function showFbRated(rating) {
 
 // --- Essay ---
 function showEssay(question) {
-  setRichText(document.getElementById("alac-answer"), question.suggestedAnswer.answer);
-  setRichText(document.getElementById("alac-basis"), question.suggestedAnswer.legalBasis);
-  setRichText(document.getElementById("alac-application"), question.suggestedAnswer.application);
-  setTextWithBasis(document.getElementById("alac-conclusion"), question.suggestedAnswer.conclusion, question);
+  // Each part can be highlighted (tap a word), saved under "<question id>:answer" and so on.
+  setHighlightableText(document.getElementById("alac-answer"), question.suggestedAnswer.answer, question.id + ":answer");
+  setHighlightableText(document.getElementById("alac-basis"), question.suggestedAnswer.legalBasis, question.id + ":legalBasis");
+  setHighlightableText(document.getElementById("alac-application"), question.suggestedAnswer.application, question.id + ":application");
+  setTextWithBasis(document.getElementById("alac-conclusion"), question.suggestedAnswer.conclusion, question, question.id + ":conclusion");
 
   // Make a checkbox for each key point (clearing any from last time).
   const list = document.getElementById("key-points");
@@ -4984,14 +4985,16 @@ function makeBasisBox(parsed, question) {
 
 // Show an explanation (or an essay's conclusion) with its Basis line as a box right after it.
 // "element" gets the text; the box goes after it (after its list, for an essay's conclusion).
-function setTextWithBasis(element, value, question) {
+// "hlKey" (optional): the text can be highlighted (tap a word), saved under that key; only the
+// text before the Basis box, never the box itself.
+function setTextWithBasis(element, value, question, hlKey) {
   const anchor = element.closest("dl") || element;
   const old = anchor.nextElementSibling;
   if (old && old.classList.contains("basis-box")) { old.remove(); }
   const parsed = parseBasis(value);
-  if (!parsed) { setRichText(element, value); return; }
-  setRichText(element, parsed.before);
-  anchor.after(makeBasisBox(parsed, question));
+  const text = parsed ? parsed.before : value;
+  if (hlKey) { setHighlightableText(element, text, hlKey); } else { setRichText(element, text); }
+  if (parsed) { anchor.after(makeBasisBox(parsed, question)); }
 }
 
 // ---------- Highlighter ----------
@@ -5125,7 +5128,10 @@ function makeHighlightable(elementId) {
   });
 }
 
-["prompt", "case-facts", "case-issue", "case-ruling", "full-text", "rule-text"].forEach(makeHighlightable);
+// The single yellow highlighter: the question, its suggested answer and explanation, and the case
+// summary; the 4-color one: the full decision text and a rule's full text (hl-colored).
+["prompt", "alac-answer", "alac-basis", "alac-application", "alac-conclusion", "mcq-explanation", "fb-discussion",
+ "case-facts", "case-issue", "case-ruling", "case-doctrine", "full-text", "rule-text"].forEach(makeHighlightable);
 
 // ---------- Highlighter with a mouse: click and drag ----------
 // On a touchscreen she taps one word at a time (above). With a mouse or trackpad she
@@ -5611,7 +5617,7 @@ function openCase(theCase, cameFrom) {
   setHighlightableText(document.getElementById("case-facts"), caseText(theCase.facts), theCase.id + ":facts");
   setHighlightableText(document.getElementById("case-issue"), caseText(theCase.issue), theCase.id + ":issue");
   setHighlightableText(document.getElementById("case-ruling"), caseText(theCase.ruling), theCase.id + ":ruling");
-  setRichText(document.getElementById("case-doctrine"), caseText(theCase.keyDoctrine));
+  setHighlightableText(document.getElementById("case-doctrine"), caseText(theCase.keyDoctrine), theCase.id + ":doctrine");
   showNotesBox(document.getElementById("case-notes"), theCase.id);
 
   // Source: a tappable link if it's a web address, otherwise plain text.
