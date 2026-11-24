@@ -151,6 +151,21 @@
       "ruling": "The Court granted the petition, reversed the Court of Appeals and reinstated the Director General's decision. (1) Identical marks may be registered for products in the same class. Uniformity in categorization under the Nice Classification does not by itself bar registration of an identical mark; emphasis should be on the similarity of the products and not on an arbitrary classification, and the fact that one person has used a mark on his goods does not, without more, prevent others from using it on unrelated articles of a different kind. (2) Applying the Mighty Corporation factors, the goods are unrelated. Classification is only one of many considerations. Class 9 can be sub-classified into five groups: Taiwan Kolin's televisions and DVD players are audiovisual equipment, while Kolin Electronics' regulators, converters and similar goods are devices for controlling the distribution and use of electricity. Taiwan Kolin's goods are home appliances with a distinct function and purpose, sold wholesale to accredited dealers, while Kolin Electronics' goods are sold in electrical and hardware stores. The Court rejected the idea that all electronic products, or all devices that are plugged into sockets, are necessarily related. (3) The ordinarily intelligent buyer is not likely to be confused. The goods are relatively expensive and rarely replaced, so the buyer is more cautious and discriminating, and the two marks, though both read \"KOLIN\", differ visually and aurally (italic black lettering against white lettering on a red background). (4) The usual respect for the factual findings of lower courts does not apply where they overlooked, misapprehended or misapplied a fact or circumstance of weight; here the nature of the products materially affects the outcome.",
       "keyDoctrine": "Registration of an identical mark is not barred merely because both sets of goods fall in the same class of the Nice Classification. Whether goods are related is decided by the Mighty Corporation factors, with classification only one of them, and the test of likely confusion looks at the ordinarily intelligent buyer, who is more careful when buying relatively expensive goods.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2015/mar2015/gr_209843_2015.html"
+    },
+    {
+      "id": "case-0024",
+      "status": "draft",
+      "name": "San Miguel Pure Foods Company, Inc. v. Foodsphere, Inc.",
+      "grNumber": "G.R. Nos. 217781 and 217788",
+      "year": 2018,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "facts": "San Miguel Pure Foods Company, Inc. (SMPFCI) sells ham under the registered mark \"PUREFOODS FIESTA HAM\" (its FIESTA ham was introduced in 1980). Foodsphere, Inc. sells ham under the \"CDO\" brand and introduced its \"PISTA\" ham in 2006. In 2009 Foodsphere changed its packaging from a paper box to a paper ham bag. SMPFCI's paper ham bag is predominantly red and carries a partly sliced ham served on a plate with fruits on the front and other ham varieties at the back, and Foodsphere's bag has the same colors and the same layout. In November 2010 SMPFCI filed a complaint for trademark infringement and unfair competition against Foodsphere in the Bureau of Legal Affairs of the Intellectual Property Office (IPO). The Bureau dismissed it. The IPO Director General affirmed that there was no trademark infringement, since the marks look and sound different and PISTA was itself registered, but found Foodsphere guilty of unfair competition and awarded nominal damages of P100,000 and attorney's fees of P300,000. The Court of Appeals affirmed the finding of unfair competition and said that exemplary damages were also warranted, but its dispositive portion only affirmed the Director General's decision; it later deleted the exemplary damages on the ground that SMPFCI had never prayed for them. SMPFCI appealed on the exemplary damages (G.R. No. 217781), and Foodsphere appealed the finding of unfair competition (G.R. No. 217788).",
+      "issue": "(1) Did the Court of Appeals err in deleting the award of exemplary damages from the body of its decision, when the body said that exemplary damages were warranted but the dispositive portion did not award them? (2) Is Foodsphere guilty of unfair competition?",
+      "ruling": "The Court denied both petitions and affirmed the Court of Appeals. (1) On exemplary damages (G.R. No. 217781): when the dispositive portion (fallo) conflicts with the body of a decision, the fallo prevails, because it is the final order and the body is merely a statement ordering nothing. The exception, when the body so clearly shows a mistake in the dispositive portion, did not apply, because the mistake was in the body: the Court of Appeals only meant to adopt the Director General's award, which had been nominal damages and attorney's fees. In any event, SMPFCI did not prove its right to exemplary damages. They require that the claimant first establish its right to moral, temperate, liquidated or compensatory damages, and SMPFCI failed to prove its claimed foregone income. (2) On unfair competition (G.R. No. 217788): under Section 168 of the Intellectual Property Code, unfair competition is passing off one's goods as those of another, and the essential elements are (a) confusing similarity in the general appearance of the goods and (b) intent to deceive the public and defraud a competitor. The two packages used paper ham bags, both predominantly red, with the same layout, so Foodsphere's packaging in its entirety (not merely the PISTA mark) was confusingly similar. Foodsphere's intent to deceive was shown by its switch from its old box to the same kind of bag with the same layout, and it can be inferred from the similarity of the appearance of the goods. Unfair competition is a question of fact, and the Director General's findings, supported by substantial evidence and affirmed by the Court of Appeals, are respected.",
+      "keyDoctrine": "Unfair competition is passing off one's goods as those of another, and its elements are confusing similarity in the general appearance of the goods and intent to deceive the public and defraud a competitor; the confusing similarity may come from packaging and not only from the marks, and the intent may be inferred from the similarity of the appearance of the goods. When the fallo and the body of a decision conflict, the fallo prevails. Exemplary damages need an established right to moral, temperate, liquidated or compensatory damages.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2018/jun2018/gr_217781_2018.html"
     }
   ],
   "questions": [
@@ -2458,6 +2473,238 @@
         "url": "https://lawphil.net/judjuris/juri2015/mar2015/gr_209843_2015.html",
         "part": "Dispositive portion; ruling of the IPO Director General",
         "excerpt": "The Appellant’s Trademark Application No. 4-1996-106310 is hereby GIVEN DUE COURSE subject to the use limitation or restriction for the goods \"television and DVD player\". … WHEREFORE, in view of the foregoing, the petition is hereby GRANTED. The Decision and the Resolution of the Court of Appeals in CA-G.R. SP No. 122565, dated April 30, 2013 and November 6, 2013, respectively, are hereby REVERSED and SET ASIDE. Accordingly, the Decision of the Intellectual Property Office Director General in Inter Partes Case No. 14-2006-00096, dated November 23, 2011, is hereby REINSTATED."
+      }
+    },
+    {
+      "id": "q-0384",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "A company has long sold a seasonal food product in a red paper bag with a picture of a partly sliced product served with fruits on the front and other products listed at the back, under its registered brand FIESTA. A competitor sells the same kind of product under a different word, PISTA, which sounds similar and means the same, and switches from its old box to a red paper bag with the same layout. Each bag carries its maker's house mark. The first company sues for unfair competition. What are the elements, and is the competitor liable even if its mark is not an infringement? Explain, based on San Miguel Pure Foods Company, Inc. v. Foodsphere, Inc.",
+      "suggestedAnswer": {
+        "answer": "Yes. The competitor may be liable for unfair competition even if its mark does not infringe, because unfair competition looks at the general appearance of the goods and the intent to deceive, not only at the marks.",
+        "legalBasis": "Under Section 168 of the Intellectual Property Code, a person who has identified in the mind of the public the goods he manufactures, whether or not a registered mark is employed, has a property right in the goodwill of those goods, and any person who employs deception or other means contrary to good faith to pass off his goods as those of one with established goodwill, or who gives his goods the general appearance of goods of another manufacturer or dealer, is guilty of unfair competition. Unfair competition is the passing off or attempting to pass off upon the public of the goods or business of one person as those of another, with the end and probable effect of deceiving the public. The essential elements are (1) confusing similarity in the general appearance of the goods and (2) intent to deceive the public and defraud a competitor. The confusing similarity may result from other external factors in the packaging or presentation of the goods, and the intent to deceive may be inferred from the similarity of the appearance of the goods as offered for sale.",
+        "application": "The competitor's packaging in its entirety, and not merely its mark, is confusingly similar: both are paper bags, both are predominantly red, and both have the same layout of a partly sliced product with fruits in front and other varieties at the back. This would likely influence purchasers to believe that the goods are the first company's. Its intent to deceive and ride on the other's goodwill is shown by the switch from its own box to the same kind of bag with the same layout, and it may be inferred from the similarity. One may ask why, of the millions of designs and packaging available, it had to choose one so close to the other's. The presence of a house mark on each bag does not remove the confusing similarity of the general appearance.",
+        "conclusion": "The competitor is liable for unfair competition, even if it did not infringe the mark."
+      },
+      "keyPoints": [
+        "Section 168.1: goodwill is protected as property whether or not a registered mark is employed",
+        "Unfair competition is passing off one's goods as those of another, with the end and probable effect of deceiving the public",
+        "Elements: (1) confusing similarity in the general appearance of the goods; and (2) intent to deceive the public and defraud a competitor",
+        "The confusing similarity may result from packaging or presentation and not only from the marks",
+        "Intent to deceive may be inferred from the similarity of the appearance of the goods; actual fraudulent intent need not be shown",
+        "Switching to the same kind of bag and the same layout showed intent to deceive"
+      ],
+      "caseIds": [
+        "case-0024"
+      ],
+      "source": {
+        "caseTitle": "San Miguel Pure Foods Company, Inc. v. Foodsphere, Inc.",
+        "grNumber": "G.R. Nos. 217781 and 217788",
+        "url": "https://lawphil.net/judjuris/juri2018/jun2018/gr_217781_2018.html",
+        "part": "G.R. No. 217788: Foodsphere is guilty of unfair competition",
+        "excerpt": "Thus, the essential elements of an action for unfair competition are: (1) confusing similarity in the general appearance of the goods; and (2) intent to deceive the public and defraud a competitor. … First of all, there exists a substantial and confusing similarity in the packaging of Foodsphere's product with that of SMPFCI, which, as the records reveal, was changed by Foodsphere from a paper box to a paper ham bag that is significantly similar to SMPFCI's paper ham bag. As duly noted by the Director General and the CA, both packages use paper ham bags as the container for the hams, both paper ham bags use the red color as the main colors, and both have the layout design appearing on the bags consisting of a partly sliced ham and fruits on the front and other ham varieties offered at the back. Thus, Foodsphere's packaging in its entirety, and not merely its \"PISTA\" mark thereon, renders the general appearance thereof confusingly similar with the packaging of SMPFCI's ham, that would likely influence purchasers to believe that these products are similar, if not the same, as those of SMPFCI. Second of all, Foodsphere's intent to deceive the public, to defraud its competitor, and to ride on the goodwill of SMPFCI's products is evidenced by the fact that not only did Foodsphere switch from its old box packaging to the same paper ham bag packaging as that used by SMPFCI, it also used the same layout design printed on the same."
+      }
+    },
+    {
+      "id": "q-0385",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "The body of an appellate court's decision says that an award of exemplary damages \"was warranted\", but the dispositive portion only says that the petition is denied and that the decision of the lower agency, which had not awarded exemplary damages, is affirmed. The winning party argues that the body of the decision controls and that it is entitled to exemplary damages. Is the party right? Explain, based on San Miguel Pure Foods Company, Inc. v. Foodsphere, Inc.",
+      "suggestedAnswer": {
+        "answer": "No. When the dispositive portion (fallo) conflicts with the body of the decision, the fallo prevails. The exception does not apply here, because the mistake is in the body and the court only meant to adopt the lower agency's award, which did not include exemplary damages.",
+        "legalBasis": "When there is a conflict between the fallo of a decision and the opinion of the court in its body, the fallo prevails. The rule rests on the theory that the fallo is the final order, while the body is merely a statement ordering nothing, and an order of execution is based on the disposition, not the body. There is an exception: the body prevails where the inevitable conclusion from the body is so clear as to show that there was a mistake in the dispositive portion.",
+        "application": "The exception requires a mistake in the dispositive portion. Here the mistake, if any, lay in the body. The appellate court's statements, such as that the party was \"correctly ordered\" to pay nominal damages, that the lower agency had no basis to award lost profits, that the award of attorney's fees \"must likewise be upheld\", and its disposition denying the petition and affirming the lower agency's decision, show that it meant merely to adopt the agency's award. Since the affirmed decision awarded only nominal damages and attorney's fees and no exemplary damages, the appellate court did not intend to award them, and so what controls is the fallo.",
+        "conclusion": "The party is not entitled to exemplary damages on that ground; the dispositive portion controls."
+      },
+      "keyPoints": [
+        "When the fallo conflicts with the body of a decision, the fallo prevails",
+        "Reason: the fallo is the final order and the body is merely a statement ordering nothing; execution is based on the disposition",
+        "Exception: the body prevails when it so clearly shows a mistake in the dispositive portion",
+        "The exception did not apply because the mistake was in the body, and the court only meant to adopt the lower agency's award",
+        "The affirmed decision had awarded only nominal damages and attorney's fees"
+      ],
+      "caseIds": [
+        "case-0024"
+      ],
+      "source": {
+        "caseTitle": "San Miguel Pure Foods Company, Inc. v. Foodsphere, Inc.",
+        "grNumber": "G.R. Nos. 217781 and 217788",
+        "url": "https://lawphil.net/judjuris/juri2018/jun2018/gr_217781_2018.html",
+        "part": "G.R. No. 217781: the fallo controls over the body of the decision",
+        "excerpt": "SMPFCI said so itself, when there is a conflict between the dispositive portion or fallo of a decision and the opinion of the court contained in the text or body of the judgment, the former prevails over the latter. This rule rests on the theory that the fallo is the final order, while the opinion in the body is merely a statement ordering nothing. Thus, an order of execution is based on the disposition, not on the body, of the Decision. Contrary to SMPFCI's assertion, moreover, the Court finds inapplicable the exception to the foregoing rule which states that the body of the decision will prevail in instances where the inevitable conclusion from the body of the decision is so clear as to show that there was a mistake in the dispositive portion. … It can, therefore, be derived, from the wording of the CA Decision, that it merely intended to adopt the resolution of the Director General on the award of damages. Consequently, since nowhere in the affirmed Decision did the Director General award exemplary damages to SMPFCI, for what was awarded was only nominal damages and attorney's fees, it follows then that the CA likewise did not intend on awarding the same to SMPFCI. Thus, what controls herein is the fallo."
+      }
+    },
+    {
+      "id": "q-0386",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "A company wins an unfair competition case but fails to present sufficient evidence of its claimed lost income. It then asks for exemplary damages, arguing that the competitor acted deceptively. May exemplary damages be awarded? Explain the requisites, based on San Miguel Pure Foods Company, Inc. v. Foodsphere, Inc.",
+      "suggestedAnswer": {
+        "answer": "No. Exemplary damages cannot be recovered as a matter of right. The claimant must first establish its right to moral, temperate, liquidated or compensatory damages, and the company failed to prove its claimed lost income.",
+        "legalBasis": "Under Article 2233 of the Civil Code, exemplary damages cannot be recovered as a matter of right, and the court decides whether they should be adjudicated. Under Article 2234, while the amount need not be proven, the plaintiff must show that he is entitled to moral, temperate or compensatory damages before the court may consider whether exemplary damages should be awarded. The requisites are: (1) they may be imposed, by way of example, only in addition, among others, to compensatory damages, only after the claimant's right to them has been established; (2) the claimant must first establish his right to moral, temperate, liquidated or compensatory damages; and (3) the act must be accompanied by bad faith or done in a wanton, fraudulent, oppressive or malevolent manner.",
+        "application": "The second requisite is missing. The company claimed foregone income, but it did not present sufficient evidence of its lost income or sales, nor of its profit, and so it did not prove its right to compensatory damages, nor to moral or temperate damages. Without that, exemplary damages cannot be considered, even though the competitor's conduct may have been deceptive. It was only entitled to the nominal damages and attorney's fees that were awarded.",
+        "conclusion": "Exemplary damages are not awarded, because the right to moral, temperate, liquidated or compensatory damages was not established."
+      },
+      "keyPoints": [
+        "Exemplary damages cannot be recovered as a matter of right (Article 2233)",
+        "The claimant must show that it is entitled to moral, temperate or compensatory damages before exemplary damages are considered (Article 2234)",
+        "Three requisites: addition to compensatory damages after the right is established; prior proof of moral, temperate, liquidated or compensatory damages; bad faith or wanton, fraudulent, oppressive or malevolent act",
+        "Failure to prove foregone income or sales means that the right to compensatory damages was not established",
+        "Nominal damages and attorney's fees were awarded instead"
+      ],
+      "caseIds": [
+        "case-0024"
+      ],
+      "source": {
+        "caseTitle": "San Miguel Pure Foods Company, Inc. v. Foodsphere, Inc.",
+        "grNumber": "G.R. Nos. 217781 and 217788",
+        "url": "https://lawphil.net/judjuris/juri2018/jun2018/gr_217781_2018.html",
+        "part": "G.R. No. 217781: SMPFCI failed to prove its entitlement to exemplary damages",
+        "excerpt": "Article 2233 of the Civil Code provides that exemplary damages cannot be recovered as a matter of right; the court will decide whether or not they should be adjudicated while Article 2234 thereof provides that while the amount of the exemplary damages need not be proven, the plaintiff must show that he is entitled to moral, temperate or compensatory damages before the court may consider the question of whether or not exemplary damages should be awarded. … (1) they may be imposed, by way of example, only in addition, among others, to compensatory damages, only after the claimant's right to them has been established, and cannot be recovered as a matter of right, their determination depending upon the amount of compensatory damages that may be awarded to the claimant; (2) the claimant must first establish his right to moral, temperate, liquidated or compensatory damages; and (3) the act must be accompanied by bad faith or done in a wanton, fraudulent, oppressive or malevolent manner. … But as the Director General aptly found, SMPFCI neither adduced sufficient evidence to prove its claim of foregone income or sales nor presented evidence to show the profit or sales."
+      }
+    },
+    {
+      "id": "q-0387",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "Under Section 168.1 of the Intellectual Property Code, as quoted in San Miguel Pure Foods Company, Inc. v. Foodsphere, Inc., what protection does a person have who has identified his goods in the mind of the public?",
+      "choices": {
+        "A": "Protection only if he has a registered mark for the goods.",
+        "B": "Protection only for ten years from the first sale.",
+        "C": "A property right in the goodwill of the goods, business or services so identified, whether or not a registered mark is employed, protected in the same manner as other property rights.",
+        "D": "No protection, because unfair competition can be asserted only by the government."
+      },
+      "correct": "C",
+      "explanation": "C is correct. Section 168.1 provides that a person who has identified in the mind of the public the goods he manufactures or deals in, his business or services from those of others, whether or not a registered mark is employed, has a property right in the goodwill of the said goods, business or services so identified, which will be protected in the same manner as other property rights. A is wrong because registration is not required for unfair competition. B has no basis in the provision. D is wrong because the owner of the goodwill may bring the action, as SMPFCI did.",
+      "caseIds": [
+        "case-0024"
+      ],
+      "source": {
+        "caseTitle": "San Miguel Pure Foods Company, Inc. v. Foodsphere, Inc.",
+        "grNumber": "G.R. Nos. 217781 and 217788",
+        "url": "https://lawphil.net/judjuris/juri2018/jun2018/gr_217781_2018.html",
+        "part": "G.R. No. 217788 (Section 168 of the IP Code)",
+        "excerpt": "168.1. A person who has identified in the mind of the public the goods he manufactures or deals in, his business or services from those of others, whether or not a registered mark is employed, has a property right in the goodwill of the said goods, business or services so identified, which will be protected in the same manner as other property rights."
+      }
+    },
+    {
+      "id": "q-0388",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "In San Miguel Pure Foods Company, Inc. v. Foodsphere, Inc., what is the \"true test\" of unfair competition?",
+      "choices": {
+        "A": "Whether the defendant's acts have the intent of deceiving or are calculated to deceive the ordinary buyer making his purchases under the ordinary conditions of the particular trade to which the controversy relates.",
+        "B": "Whether the defendant's goods are cheaper than the plaintiff's goods.",
+        "C": "Whether the plaintiff's mark is registered in the Philippines.",
+        "D": "Whether the defendant's mark is spelled exactly like the plaintiff's."
+      },
+      "correct": "A",
+      "explanation": "A is correct. The Court explained that unfair competition consists of the passing off, or attempting to pass off, of the goods or business of one person as those of another with the end and probable effect of deceiving the public. Passing off takes place where the defendant, by imitative devices on the general appearance of the goods, misleads prospective purchasers into buying his merchandise under the impression that they are buying that of his competitor. The true test is whether the defendant's acts have the intent of deceiving, or are calculated to deceive, the ordinary buyer making purchases under the ordinary conditions of the particular trade. B, C and D are not the test: registration is not needed, and the confusing similarity may or may not result from similarity in the marks.",
+      "caseIds": [
+        "case-0024"
+      ],
+      "source": {
+        "caseTitle": "San Miguel Pure Foods Company, Inc. v. Foodsphere, Inc.",
+        "grNumber": "G.R. Nos. 217781 and 217788",
+        "url": "https://lawphil.net/judjuris/juri2018/jun2018/gr_217781_2018.html",
+        "part": "G.R. No. 217788 (the test of unfair competition)",
+        "excerpt": "Time and again, the Court has held that unfair competition consists of the passing off (or palming off) or attempting to pass off upon the public of the goods or business of one person as the goods or business of another with the end and probable effect of deceiving the public. … The \"true test,\" therefore, of unfair competition has thus been \"whether the acts of the defendant have the intent of deceiving or are calculated to deceive the ordinary buyer making his purchases under the ordinary conditions of the particular trade to which the controversy relates.\""
+      }
+    },
+    {
+      "id": "q-0389",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "A competitor uses a different brand name from the plaintiff's, but its packaging closely resembles the plaintiff's. According to San Miguel Pure Foods Company, Inc. v. Foodsphere, Inc., which statement about the confusing similarity and the intent required for unfair competition is correct?",
+      "choices": {
+        "A": "The confusing similarity must come from identical marks.",
+        "B": "Actual fraudulent intent must always be proven by direct evidence.",
+        "C": "The intent to deceive can never be inferred.",
+        "D": "The confusing similarity may or may not result from similarity in the marks and may result from other external factors in the packaging or presentation; the intent to deceive and defraud may be inferred from the similarity of the appearance of the goods, and actual fraudulent intent need not be shown."
+      },
+      "correct": "D",
+      "explanation": "D is correct. The Court stated that the confusing similarity may or may not result from similarity in the marks, but may result from other external factors in the packaging or presentation of the goods, and that the intent to deceive and defraud may be inferred from the similarity of the appearance of the goods as offered for sale to the public, without the need to show actual fraudulent intent. A is wrong because packaging alone may create the confusing similarity. B and C are the opposite of the rule. In this case the Court found Foodsphere liable even though the Director General had found no trademark infringement because the marks themselves were different.",
+      "caseIds": [
+        "case-0024"
+      ],
+      "source": {
+        "caseTitle": "San Miguel Pure Foods Company, Inc. v. Foodsphere, Inc.",
+        "grNumber": "G.R. Nos. 217781 and 217788",
+        "url": "https://lawphil.net/judjuris/juri2018/jun2018/gr_217781_2018.html",
+        "part": "G.R. No. 217788 (the elements of unfair competition)",
+        "excerpt": "The confusing similarity may or may not result from similarity in the marks, but may result from other external factors in the packaging or presentation of the goods. The intent to deceive and defraud may be inferred from the similarity of the appearance of the goods as offered for sale to the public. Actual fraudulent intent need not be shown."
+      }
+    },
+    {
+      "id": "q-0390",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "On a petition for review, the losing party challenges the finding that it committed unfair competition. According to San Miguel Pure Foods Company, Inc. v. Foodsphere, Inc., how does the Supreme Court treat the findings of the intellectual property office and the Court of Appeals on this question?",
+      "choices": {
+        "A": "It treats unfair competition as a pure question of law and re-decides it freely.",
+        "B": "Unfair competition is always a question of fact, and the factual findings of administrative agencies, if supported by substantial evidence, are generally accorded respect and even finality, more so when affirmed by the Court of Appeals.",
+        "C": "It ignores the findings of administrative agencies, which have no special expertise.",
+        "D": "It remands every case to the trial court for a new trial."
+      },
+      "correct": "B",
+      "explanation": "B is correct. The Court said that unfair competition is always a question of fact: there is no inflexible rule on what constitutes it, each case being a law unto itself, and the question is whether, as a matter of fact, the defendant is by his conduct passing off its goods as the plaintiff's. It added that factual findings of administrative agencies are generally accorded respect and even finality if supported by substantial evidence, since these agencies are presumed to have knowledge and expertise in matters under their jurisdiction, more so when the findings are affirmed by the Court of Appeals. A and C are the opposite of the Court's approach. D is wrong because the Court itself affirmed the finding.",
+      "caseIds": [
+        "case-0024"
+      ],
+      "source": {
+        "caseTitle": "San Miguel Pure Foods Company, Inc. v. Foodsphere, Inc.",
+        "grNumber": "G.R. Nos. 217781 and 217788",
+        "url": "https://lawphil.net/judjuris/juri2018/jun2018/gr_217781_2018.html",
+        "part": "G.R. No. 217788 (unfair competition as a question of fact)",
+        "excerpt": "At this juncture, it is worthy to note that unfair competition is always a question of fact. There is no inflexible rule that can be laid down as to what will constitute the same, each case being, in the measure, a law unto itself. … Settled is the rule that factual findings of administrative agencies are generally accorded respect and even finality by this Court, if such findings are supported by substantial evidence, as it is presumed that these agencies have the knowledge and expertise over matters under their jurisdiction, more so when these findings are affirmed by the Court of Appeals."
+      }
+    },
+    {
+      "id": "q-0391",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "Foodsphere was found guilty of unfair competition and ordered to pay nominal damages. According to San Miguel Pure Foods Company, Inc. v. Foodsphere, Inc. (quoting the Court of Appeals and Article 2221 of the Civil Code), what is the purpose of nominal damages?",
+      "choices": {
+        "A": "To vindicate or recognize the rights of the plaintiff which have been violated or invaded by the defendant.",
+        "B": "To compensate the plaintiff exactly for its lost profits.",
+        "C": "To punish the defendant by way of example for the public good.",
+        "D": "To reimburse the plaintiff's attorney's fees."
+      },
+      "correct": "A",
+      "explanation": "A is correct. The decision quotes the appellate court's reasoning that, having been found guilty of unfair competition, Foodsphere was correctly ordered to pay nominal damages of P100,000, because under Article 2221 of the Civil Code nominal damages are recoverable in order to vindicate or recognize the rights of the plaintiff which have been violated or invaded by the defendant. B describes compensatory damages, which the plaintiff failed to substantiate. C describes exemplary damages, which were not awarded. D describes attorney's fees, which were awarded separately.",
+      "caseIds": [
+        "case-0024"
+      ],
+      "source": {
+        "caseTitle": "San Miguel Pure Foods Company, Inc. v. Foodsphere, Inc.",
+        "grNumber": "G.R. Nos. 217781 and 217788",
+        "url": "https://lawphil.net/judjuris/juri2018/jun2018/gr_217781_2018.html",
+        "part": "G.R. No. 217781 (the body of the Court of Appeals' decision, nominal damages)",
+        "excerpt": "Having been found guilty of unfair competition, Foodsphere was correctly ordered to pay nominal damages of ₱100,000.00. Under Article 2221 of the Civil Code, nominal damages are recoverable in order to vindicate or recognize the rights of the plaintiff which have been violated or invaded by the defendant."
       }
     }
   ]
