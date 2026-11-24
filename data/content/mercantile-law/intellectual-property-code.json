@@ -121,6 +121,21 @@
       "ruling": "The Court dismissed Kensonic's appeal and partly granted Uni-Line's. (1) The SAKURA mark can be appropriated. A mark is a sign that distinguishes goods or services, while a copyright is a right over literary or artistic works, and this case concerns a mark. Section 123 prohibits registering a mark that consists exclusively of signs generic for the goods it identifies, so what is prohibited is a generic mark that identifies the goods. SAKURA, the Japanese flowering cherry, is generic in nature but does not identify DVD or VCD players and the like, unlike \"pale pilsen\" for beer in Asia Brewery. Kensonic's prior use since 1994 made it the owner, and that factual finding cannot be reviewed in a petition under Rule 45, which is limited to questions of law. (2) Uni-Line's Class 7 and Class 11 goods are home appliances that are not related to Kensonic's goods. The prohibition in Section 123 extends to goods related to the registered goods, not to goods that the registrant may produce in the future, since a right to a trademark should not depend on mere possibilities. Applying the Mighty Corporation factors (such as class, descriptive attributes, purposes and conditions of sale), the goods are unrelated. (3) Goods are not related merely because they belong to the same class. Following Taiwan Kolin, the Court noted that Class 9 can be sub-classified, that Kensonic's goods are audiovisual equipment while Uni-Line's voltage regulators, portable generators, switch breakers and fuses are devices for controlling the distribution and use of electricity, and that Kensonic's goods are final products while Uni-Line's are spare parts. These goods are unrelated, so Uni-Line may register SAKURA for them.",
       "keyDoctrine": "A generic word may be appropriated as a mark when it does not identify the goods it covers. The prohibition on registering a confusingly similar mark extends to related goods, not to goods the registrant may produce in the future. Goods are not related merely because they belong to the same class; relatedness is decided by the Mighty Corporation factors.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2018/jun2018/gr_211820_2018.html"
+    },
+    {
+      "id": "case-0022",
+      "status": "draft",
+      "name": "Mighty Corporation and La Campana Fabrica de Tabaco, Inc. v. E. & J. Gallo Winery and The Andresons Group, Inc.",
+      "grNumber": "G.R. No. 154342",
+      "year": 2004,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "facts": "E. & J. Gallo Winery, a California company, registered the trademark GALLO for wines in the Philippines on November 16, 1971. According to its own admission, it first sold GALLO wines here only in 1974, within the former U.S. military facilities, and outside them only in 1979. The Andresons Group, Inc. has been its exclusive importer and distributor in the Philippines since 1991. Meanwhile, Tobacco Industries of the Philippines, and later La Campana Fabrica de Tabaco, Inc. and Mighty Corporation, had been using GALLO as a cigarette brand since 1973, with the Bureau of Internal Revenue's approval of the brand. La Campana applied to register the GALLO cigarette mark in 1985 and got a copyright registration for its cigarette labels. In 1992 an Andresons employee saw GALLO cigarettes displayed in a Davao supermarket, and in March 1993 Gallo Winery and Andresons sued Mighty and La Campana in the Makati Regional Trial Court for trademark infringement, tradename infringement and unfair competition. Mighty's cigarette label carries a large rooster device (gallo is the Spanish word for rooster) and the words \"MADE BY MIGHTY CORPORATION\", sold cheaply through sari-sari stores and vendors. Gallo Winery's wines are high-priced imported products sold in hotels, bars and high-end stores. The trial court, after trial, held Mighty and La Campana liable under the Trademark Law, the Intellectual Property Code, Article 6bis of the Paris Convention and the TRIPS Agreement and awarded damages, and the Court of Appeals affirmed. Mighty and La Campana petitioned the Supreme Court.",
+      "issue": "(1) Which law governs: the Trademark Law and the Paris Convention, or the Intellectual Property Code that took effect after the complaint was filed? (2) Are GALLO wines and GALLO cigarettes identical, similar or related goods, so that the use of GALLO on cigarettes is likely to cause confusion? (3) Are Mighty and La Campana liable for trademark infringement, unfair competition and damages?",
+      "ruling": "The Court granted the petition, set aside the decisions of the trial court and the Court of Appeals, and dismissed the complaint. It reviewed the facts because they were intertwined with questions of law and the lower courts had veered from the law and jurisprudence. (1) The Intellectual Property Code, which took effect on January 1, 1998, was wrongly applied retroactively to a complaint filed in 1993; the Trademark Law and the Paris Convention govern, and where they conflict, the municipal Trademark Law prevails. (2) Under the Trademark Law, infringement requires a mark actually used in commerce in the Philippines and registered; actual commercial use is essential. Gallo Winery's wine was first sold here in 1974 and 1979, after Tobacco Industries began using GALLO for cigarettes in 1973, so Gallo Winery never enjoyed an exclusive right against the cigarette makers. Its registration also covered wines only (Section 20). (3) There is no likelihood of confusion. The dominant feature of the cigarette mark is the rooster device and the label names the manufacturer, while the wine labels are different. Wines and cigarettes are not identical, similar, competing or related goods. The lower courts' reasons (both are forms of vice, and both are sold in the same supermarket section) were arbitrary, and the products differ in descriptive properties, price, buyers and channels of trade. Tobacco and alcohol are related only in special circumstances, namely when a famous mark is involved and there is a demonstrated intent to capitalize on it. (4) GALLO wine is not a well-known mark under the Paris Convention in this case because wines and cigarettes are not identical or similar goods. (5) Gallo Winery's delay of almost twenty years, with implied consent and acquiescence, and the absence of bad faith, tipped equity in favor of Mighty. There was no attempt to pass off, so there was no unfair competition.",
+      "keyDoctrine": "Goods are \"related\" only if the public may be deceived into believing that they come from the same maker, and no single factor decides this; classification, price, properties, purposes, buyers and channels of trade are all weighed. Under the old Trademark Law, the registrant's exclusive right was limited to the goods in its certificate and required actual use in the Philippines. Trademark infringement requires prior registration and no fraudulent intent, while unfair competition requires fraudulent intent (passing off) but not registration. A law is not applied retroactively.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2004/jul2004/gr_154342_2004.html"
     }
   ],
   "questions": [
@@ -1966,6 +1981,236 @@
         "url": "https://lawphil.net/judjuris/juri2018/jun2018/gr_211820_2018.html",
         "part": "Dispositive portion",
         "excerpt": "WHEREFORE, the Court DENIES the petition for review on certiorari in G.R. No. 211820-21; PARTIALLY GRANTS the petition for review on certiorari in G.R. No. 211834-35; REVERSES and SETS ASIDE the amended decision promulgated on March 19, 2014; PARTIALLY REINSTATES the decision promulgated on July 30, 2013 insofar as it allowed the registration by Uni-Line Multi-Resources, Inc. under the SAKURA mark of its voltage regulators, portable generators, switch breakers and fuses; and ORDERS Kensonic, Inc. to pay the costs of suit."
+      }
+    },
+    {
+      "id": "q-0368",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "A company sues a competitor in 1993 for infringing its trademark. The trial court decides the case in 1998 and holds the competitor liable under the old Trademark Law and also under a new Intellectual Property Code that took effect on January 1, 1998. The Court of Appeals affirms. Was it correct to apply the new Code? Which law governs, and what if the old Trademark Law conflicts with the Paris Convention? Explain, based on Mighty Corporation v. E. & J. Gallo Winery.",
+      "suggestedAnswer": {
+        "answer": "No. The new Code was applied retroactively, which was an error. The complaint is governed by the law in force when it was filed, the Trademark Law and the Paris Convention, and if the two conflict, the municipal Trademark Law prevails.",
+        "legalBasis": "The validity and obligatory force of a law proceed from its promulgation, and a law that is not yet effective cannot be considered as known by the populace. A new state of the law ought to affect the future, not the past, and any doubt must be resolved against the retroactive operation of laws, whether they are original enactments, amendments or repeals. The Intellectual Property Code was approved on June 6, 1997, and Section 241 provided that it was to take effect on January 1, 1998, with no provision for retroactive application. In case of domestic legal disputes on conflicting provisions between the Paris Convention (an international agreement) and the Trademark Law (a municipal law), the latter prevails.",
+        "application": "The complaint was filed in 1993, about five years before the Code took effect, and the Code has no clause giving it retroactive effect. So the trial court and the Court of Appeals should have limited their consideration of the case to the Trademark Law and the Paris Convention, the laws in force when the complaint was filed. Where the Trademark Law and the Paris Convention conflict, the Trademark Law governs.",
+        "conclusion": "The courts erred in retroactively applying the Code; the old Trademark Law and the Paris Convention (with the Trademark Law prevailing in a conflict) govern."
+      },
+      "keyPoints": [
+        "A law has no force until it takes effect; the new Code took effect on January 1, 1998 (Section 241)",
+        "Laws are not applied retroactively, and doubts are resolved against retroactive operation",
+        "The case should be decided under the laws in force when the complaint was filed (the Trademark Law and the Paris Convention)",
+        "In a conflict between the Paris Convention and the Trademark Law, the municipal law prevails"
+      ],
+      "caseIds": [
+        "case-0022"
+      ],
+      "source": {
+        "caseTitle": "Mighty Corporation and La Campana Fabrica de Tabaco, Inc. v. E. & J. Gallo Winery and The Andresons Group, Inc.",
+        "grNumber": "G.R. No. 154342",
+        "url": "https://lawphil.net/judjuris/juri2004/jul2004/gr_154342_2004.html",
+        "part": "The Trademark Law and the Paris Convention are the applicable laws, not the Intellectual Property Code; the Paris Convention and the Trademark Law",
+        "excerpt": "We therefore hold that the courts a quo erred in retroactively applying the IP Code in this case. … Nova constitutio futuris formam imponere debet non praeteritis. A new state of the law ought to affect the future, not the past. Any doubt must generally be resolved against the retroactive operation of laws, whether these are original enactments, amendments or repeals. … The IP Code, repealing the Trademark Law, was approved on June 6, 1997. Section 241 thereof expressly decreed that it was to take effect only on January 1, 1998, without any provision for retroactive application. Thus, the Makati RTC and the CA should have limited the consideration of the present case within the parameters of the Trademark Law and the Paris Convention, the laws in force at the time of the filing of the complaint. … Following universal acquiescence and comity, in case of domestic legal disputes on any conflicting provisions between the Paris Convention (which is an international agreement) and the Trademark law (which is a municipal law) the latter will prevail."
+      }
+    },
+    {
+      "id": "q-0369",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "A person who has no registered mark sells goods in packaging made to look like a competitor's well-known goods, so that buyers are led to believe that they are the competitor's, and does so deliberately. Another person uses a registered mark of a competitor on its own goods without consent, but honestly and without any intent to deceive. How do trademark infringement and unfair competition differ, and which of the two persons may be liable for what? Explain, based on Mighty Corporation v. E. & J. Gallo Winery.",
+      "suggestedAnswer": {
+        "answer": "The first person is liable for unfair competition, which does not need a registered mark but needs fraudulent intent and passing off. The second may be liable for trademark infringement, which needs a registered mark and the unauthorized use of it, but not fraudulent intent, provided the other elements are present.",
+        "legalBasis": "The laws on trademark infringement and unfair competition share a common root: a person shall not be permitted to misrepresent his goods or business as the goods or business of another. Unfair competition is broader and more inclusive; infringement is narrower but recognizes a more exclusive right from adoption and registration of the mark. Even a person who fails to establish an exclusive right to a trademark may still obtain relief for a competitor's unfairness or fraud, and conduct is unfair competition if the effect is to pass off on the public the goods of one man as those of another. As distinguished in Del Monte: (1) infringement is the unauthorized use of a trademark, while unfair competition is the passing off of one's goods as those of another; (2) in infringement fraudulent intent is unnecessary, while in unfair competition it is essential; and (3) in infringement prior registration of the trademark is a prerequisite, while in unfair competition registration is not necessary. The universal test question for unfair competition is whether the public is likely to be deceived.",
+        "application": "The first person has no registered mark, and so cannot be accused of infringement by it, but its deliberate packaging that leads buyers to think that the goods are the competitor's is passing off with fraudulent intent, which is unfair competition. The second person used a registered mark without consent, so, if the other elements of infringement exist (including use on identical or similar goods and likelihood of confusion), its good faith does not excuse infringement because fraudulent intent is unnecessary. But it would not be liable for unfair competition without proof of bad faith or an attempt to pass off.",
+        "conclusion": "The first person is liable for unfair competition; the second may be liable for infringement but not for unfair competition."
+      },
+      "keyPoints": [
+        "Common root: no one may misrepresent his goods or business as those of another",
+        "Infringement is the unauthorized use of a trademark; unfair competition is passing off one's goods as those of another",
+        "Fraudulent intent is unnecessary in infringement but essential in unfair competition",
+        "Prior registration is a prerequisite in infringement but not in unfair competition",
+        "Unfair competition is broader and more inclusive; the test is whether the public is likely to be deceived"
+      ],
+      "caseIds": [
+        "case-0022"
+      ],
+      "source": {
+        "caseTitle": "Mighty Corporation and La Campana Fabrica de Tabaco, Inc. v. E. & J. Gallo Winery and The Andresons Group, Inc.",
+        "grNumber": "G.R. No. 154342",
+        "url": "https://lawphil.net/judjuris/juri2004/jul2004/gr_154342_2004.html",
+        "part": "Distinctions between trademark infringement and unfair competition; Petitioners are also not liable for unfair competition",
+        "excerpt": "Although the laws on trademark infringement and unfair competition have a common conception at their root, that is, a person shall not be permitted to misrepresent his goods or his business as the goods or business of another, the law on unfair competition is broader and more inclusive than the law on trademark infringement. … Hence, even if one fails to establish his exclusive property right to a trademark, he may still obtain relief on the ground of his competitor’s unfairness or fraud. Conduct constitutes unfair competition if the effect is to pass off on the public the goods of one man as the goods of another. … (1) Infringement of trademark is the unauthorized use of a trademark, whereas unfair competition is the passing off of one's goods as those of another. (2) In infringement of trademark fraudulent intent is unnecessary, whereas in unfair competition fraudulent intent is essential. (3) In infringement of trademark the prior registration of the trademark is a prerequisite to the action, whereas in unfair competition registration is not necessary. … The universal test question is whether the public is likely to be deceived."
+      }
+    },
+    {
+      "id": "q-0370",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "A maker of imported wine, whose mark is registered for wine only, sues a local cigarette maker that uses the same word as a cigarette brand. The courts below hold that wine and cigarettes are related goods because both are forms of vice, harmful in excess and used for pleasure, and because both are sold in the same section of supermarkets. Are wine and cigarettes related goods? Explain, based on Mighty Corporation v. E. & J. Gallo Winery.",
+      "suggestedAnswer": {
+        "answer": "No. The two reasons are insufficient and arbitrary. Wine and cigarettes are not identical, similar, competing or related goods, so use of the same word as a mark on both is not likely to cause confusion.",
+        "legalBasis": "Under the modern concept of related goods, trademark infringement occurs when goods are so related that the public may be, or is actually, deceived into believing that they come from the same maker. Non-competing goods are related if it can reasonably be assumed that they come from one manufacturer; if they are entirely unrelated, there is no confusion of business even if similar marks are used. No single factor is preeminent: the court weighs the factors, including the class and nature of the goods, their cost, descriptive properties, purpose, conditions of purchase and channels of trade. Product classification alone is not decisive, and the mere fact that one person has adopted and used a mark for his goods does not prevent others from using it on articles of a different description. Tobacco and alcohol products may be considered related only in special circumstances, which exist only if a famous mark is involved and there is a demonstrated intent to capitalize on it.",
+        "application": "Anything, not only wine and cigarettes, can be used for pleasure and relaxation and can be harmful in excess, and supermarkets sell an infinite variety of unrelated products, so being sold in one store under one roof does not make buyers likely to be confused about the source. Wine is bottled and drunk and cigarettes are packed and smoked, so their properties differ greatly. Cigarettes are cheap and sold to low-income buyers through vendors and sari-sari stores, while the wine is expensive, imported and sold in hotels, bars and high-end stores, so the price difference shows different buyers and different channels of trade. There was no famous mark and no proven intent to capitalize on it, so the special circumstances for tobacco and alcohol do not exist.",
+        "conclusion": "Wine and cigarettes are non-competing and unrelated goods, and there is no likelihood of confusion."
+      },
+      "keyPoints": [
+        "Goods are related when the public may be deceived into thinking that they come from the same maker",
+        "Being forms of vice or pleasure, or being sold in the same supermarket section, is not enough",
+        "Different descriptive properties, price, buyers and channels of trade show that goods are unrelated",
+        "No single factor is decisive; the court weighs all of them",
+        "Tobacco and alcohol are related only in special circumstances: a famous mark and a demonstrated intent to capitalize on it"
+      ],
+      "caseIds": [
+        "case-0022"
+      ],
+      "source": {
+        "caseTitle": "Mighty Corporation and La Campana Fabrica de Tabaco, Inc. v. E. & J. Gallo Winery and The Andresons Group, Inc.",
+        "grNumber": "G.R. No. 154342",
+        "url": "https://lawphil.net/judjuris/juri2004/jul2004/gr_154342_2004.html",
+        "part": "Wines and cigarettes are not identical, similar, competing or related goods",
+        "excerpt": "We find these premises patently insufficient and too arbitrary to support the legal conclusion that wines and cigarettes are related products within the contemplation of the Trademark Law and the Paris Convention. … Accordingly, the U.S. patent office and courts have consistently held that the mere fact that goods are sold in one store under the same roof does not automatically mean that buyers are likely to be confused as to the goods’ respective sources, connections or sponsorships. The fact that different products are available in the same store is an insufficient standard, in and of itself, to warrant a finding of likelihood of confusion. … GALLO cigarettes are inexpensive items while GALLO wines are not. GALLO wines are patronized by middle-to-high-income earners while GALLO cigarettes appeal only to simple folks like farmers, fishermen, laborers and other low-income workers. Indeed, the big price difference of these two products is an important factor in proving that they are in fact unrelated and that they travel in different channels of trade. … In short, tobacco and alcohol products may be considered related only in cases involving special circumstances which exist only if a famous mark is involved and there is a demonstrated intent to capitalize on it. Both of these are absent in the present case."
+      }
+    },
+    {
+      "id": "q-0371",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "Under Sections 2, 2-A, 9-A, 20 and 22 of the old Trademark Law, as the Court summarized them in Mighty Corporation v. E. & J. Gallo Winery, which of the following is an element of trademark infringement?",
+      "choices": {
+        "A": "That the infringer acted with fraudulent intent.",
+        "B": "That the trademark owner is a foreign corporation doing business in the Philippines.",
+        "C": "That the trademark is actually used in commerce in the Philippines and registered in the principal register of the Philippine Patent Office.",
+        "D": "That the infringer's goods are of lower quality than the owner's goods."
+      },
+      "correct": "C",
+      "explanation": "C is correct. The Court listed the elements of infringement under the Trademark Law: (a) a trademark actually used in commerce in the Philippines and registered in the principal register of the Philippine Patent Office; (b) is used by another person in connection with the sale, offering for sale or advertising of goods, business or services in a way likely to cause confusion, mistake or deception, or is reproduced or colorably imitated and applied to labels, packages or advertisements; (c) the trademark is used for identical or similar goods; and (d) the act is done without the consent of the trademark registrant or assignee. A is wrong because fraudulent intent is unnecessary in infringement but essential in unfair competition. B and D are not elements. Watch for: this is the rule under the old Trademark Law applied in the decision; the Intellectual Property Code now governs, so check its current text.",
+      "caseIds": [
+        "case-0022"
+      ],
+      "source": {
+        "caseTitle": "Mighty Corporation and La Campana Fabrica de Tabaco, Inc. v. E. & J. Gallo Winery and The Andresons Group, Inc.",
+        "grNumber": "G.R. No. 154342",
+        "url": "https://lawphil.net/judjuris/juri2004/jul2004/gr_154342_2004.html",
+        "part": "Pertinent provisions on trademark infringement under the Paris Convention and the Trademark Law",
+        "excerpt": "Under Sections 2, 2-A, 9-A, 20 and 22 of the Trademark Law therefore, the following constitute the elements of trademark infringement: (a) a trademark actually used in commerce in the Philippines and registered in the principal register of the Philippine Patent Office … (c) the trademark is used for identical or similar goods, and (d) such act is done without the consent of the trademark registrant or assignee."
+      }
+    },
+    {
+      "id": "q-0372",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "Under the old Trademark Law, a foreign company registered a mark for one product in 1971 but first sold goods under it in the Philippines only in 1974 (in U.S. military facilities) and 1979 (elsewhere). A local company had used the same word for a different product since 1973. According to Mighty Corporation v. E. & J. Gallo Winery, what was the effect of the foreign company's late use?",
+      "choices": {
+        "A": "None; registration alone gives an exclusive right against everyone from the date of registration.",
+        "B": "The foreign company never enjoyed an exclusive right to use the mark against the local company, because actual commercial use in the Philippines was an essential prerequisite and the local company's use came earlier.",
+        "C": "The local company's use was void because it was not registered.",
+        "D": "The foreign company's registration was automatically cancelled."
+      },
+      "correct": "B",
+      "explanation": "B is correct. The Court gave utmost importance to the actual commercial use of a trademark in the Philippines before registration under Sections 2 and 2-A of the Trademark Law, notwithstanding the Paris Convention. Gallo Winery admitted that its wine was first sold in the Philippines only in 1974 and 1979, while Tobacco Industries, the predecessor of Mighty, had used GALLO for cigarettes since 1973, supported by BIR authorizations and a sworn statement. So the Court ruled that Gallo Winery never enjoyed the exclusive right to use its mark to the prejudice of Tobacco Industries and its successors, under either the Trademark Law or the Paris Convention. A is wrong because registration is only prima facie evidence and is not conclusive. C and D are not what the Court said. Watch for: this reflects the use-based rule of the old Trademark Law; in Zuneca Pharmaceutical v. Natrapharm (2020) the Court held that under the Intellectual Property Code ownership of a mark is acquired through registration, so check which law applies.",
+      "caseIds": [
+        "case-0022"
+      ],
+      "source": {
+        "caseTitle": "Mighty Corporation and La Campana Fabrica de Tabaco, Inc. v. E. & J. Gallo Winery and The Andresons Group, Inc.",
+        "grNumber": "G.R. No. 154342",
+        "url": "https://lawphil.net/judjuris/juri2004/jul2004/gr_154342_2004.html",
+        "part": "The actual commercial use in the Philippines of the GALLO cigarette trademark preceded that of the GALLO wine trademark",
+        "excerpt": "By respondents’ own judicial admission, the GALLO wine trademark was registered in the Philippines in November 1971 but the wine itself was first marketed and sold in the country only in 1974 and only within the former U.S. military facilities, and outside thereof, only in 1979. … On the other hand, by testimonial evidence supported by the BIR authorization letters, forms and manufacturer’s sworn statement, it appears that petitioners and its predecessor-in-interest, Tobacco Industries, have indeed been using and selling GALLO cigarettes in the Philippines since 1973 or before July 9, 1981. … we rule that, on this account, respondents never enjoyed the exclusive right to use the GALLO wine trademark to the prejudice of Tobacco Industries and its successors-in-interest, herein petitioners, either under the Trademark Law or the Paris Convention."
+      }
+    },
+    {
+      "id": "q-0373",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "A trademark's registration certificate states that it covers one product only. According to Mighty Corporation v. E. & J. Gallo Winery, applying Section 20 of the old Trademark Law, how far does the registrant's exclusive right to use the mark extend?",
+      "choices": {
+        "A": "Only to the product indicated in the registration certificate, subject to the rule on identical or similar goods and related goods.",
+        "B": "To every product the registrant may ever decide to sell.",
+        "C": "To all goods of any kind, because the mark is registered.",
+        "D": "To every product sold in the same stores as the registered product."
+      },
+      "correct": "A",
+      "explanation": "A is correct. The Court noted that the registration certificates expressly state that they cover wines only, without evidence that Gallo Winery expanded or intended to expand to cigarettes. By strict application of Section 20 of the Trademark Law, the exclusive right to use GALLO should be limited to wines, the only product indicated in the certificates. The Court quoted the principle in Faberge that the certificate confers the exclusive right to use the symbol only for the goods specified in it, and that an omnibus registration of all goods the applicant can conceive is not contemplated by the Trademark Law. The Court then separately considered whether the other goods were identical, similar or related (the modern concept of related goods). B, C and D describe the omnibus registration the Court rejected. Watch for: this is the rule of the old Trademark Law applied in the decision; check the current law for registrations under the Intellectual Property Code.",
+      "caseIds": [
+        "case-0022"
+      ],
+      "source": {
+        "caseTitle": "Mighty Corporation and La Campana Fabrica de Tabaco, Inc. v. E. & J. Gallo Winery and The Andresons Group, Inc.",
+        "grNumber": "G.R. No. 154342",
+        "url": "https://lawphil.net/judjuris/juri2004/jul2004/gr_154342_2004.html",
+        "part": "Respondents' GALLO trademark registration is limited to wines only",
+        "excerpt": "We also note that the GALLO trademark registration certificates in the Philippines and in other countries expressly state that they cover wines only, without any evidence or indication that registrant Gallo Winery expanded or intended to expand its business to cigarettes. Thus, by strict application of Section 20 of the Trademark Law, Gallo Winery’s exclusive right to use the GALLO trademark should be limited to wines, the only product indicated in its registration certificates."
+      }
+    },
+    {
+      "id": "q-0374",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "According to Mighty Corporation v. E. & J. Gallo Winery, in determining the likelihood of confusion the court considers the resemblance of the marks, the similarity of the goods and the likely effect on the purchaser. What is the fourth consideration?",
+      "choices": {
+        "A": "The nationality of the parties.",
+        "B": "The number of years each party has been in business.",
+        "C": "The amount of money each party spent on advertising.",
+        "D": "The registrant's express or implied consent and other fair and equitable considerations."
+      },
+      "correct": "D",
+      "explanation": "D is correct. The Court said that in determining the likelihood of confusion it must consider [a] the resemblance between the trademarks; [b] the similarity of the goods to which the trademarks are attached; [c] the likely effect on the purchaser; and [d] the registrant's express or implied consent and other fair and equitable considerations. On the last point, the Court noted that respondents took almost twenty years to learn of GALLO cigarettes and sue, and their delay, together with implied consent, acquiescence or negligence, led it to hold that equity, justice and fairness favored the cigarette makers. A, B and C are not among the considerations the Court listed.",
+      "caseIds": [
+        "case-0022"
+      ],
+      "source": {
+        "caseTitle": "Mighty Corporation and La Campana Fabrica de Tabaco, Inc. v. E. & J. Gallo Winery and The Andresons Group, Inc.",
+        "grNumber": "G.R. No. 154342",
+        "url": "https://lawphil.net/judjuris/juri2004/jul2004/gr_154342_2004.html",
+        "part": "No likelihood of confusion, mistake or deceit; consent of the registrant and other fair, just and equitable considerations",
+        "excerpt": "In determining the likelihood of confusion, the Court must consider: [a] the resemblance between the trademarks; [b] the similarity of the goods to which the trademarks are attached; [c] the likely effect on the purchaser and [d] the registrant’s express or implied consent and other fair and equitable considerations. … It took respondents almost 20 years to know about the existence of GALLO cigarettes and sue petitioners for trademark infringement. Given, on one hand, the long period of time that petitioners were engaged in the manufacture, marketing, distribution and sale of GALLO cigarettes and, on the other, respondents’ delay in enforcing their rights (not to mention implied consent, acquiescence or negligence) we hold that equity, justice and fairness require us to rule in favor of petitioners."
+      }
+    },
+    {
+      "id": "q-0375",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "A foreign company claims that its mark is well known and protected under Article 6bis of the Paris Convention against a local company that uses the same word on a different kind of goods. According to Mighty Corporation v. E. & J. Gallo Winery (applying the guidelines of the Minister of Trade quoted in Canon), what must be true of the mark to be protected as well-known?",
+      "choices": {
+        "A": "It must have been registered in at least ten countries.",
+        "B": "It must be used on the same or similar kinds of goods as the local company's goods.",
+        "C": "It must be a mark that is older than the local company.",
+        "D": "It must be a fanciful mark rather than a family name."
+      },
+      "correct": "B",
+      "explanation": "B is correct. The Court held that GALLO could not be considered a well-known mark within the contemplation and protection of the Paris Convention in this case because wines and cigarettes are not identical or similar goods. It quoted the guidelines issued by the Minister of Trade and Industry to implement Article 6bis: (a) the mark must be internationally known; (b) the subject of the right must be a trademark, not a patent or copyright or anything else; (c) the mark must be for use in the same or similar kinds of goods; and (d) the person claiming must be the owner of the mark. The foreign company failed the third condition. A, C and D are not conditions in the guidelines. Watch for: the decision applied the 1983 guidelines under the Paris Convention; the later decision in Fredco v. Harvard (2011) also discusses well-known marks, so check how the two apply.",
+      "caseIds": [
+        "case-0022"
+      ],
+      "source": {
+        "caseTitle": "Mighty Corporation and La Campana Fabrica de Tabaco, Inc. v. E. & J. Gallo Winery and The Andresons Group, Inc.",
+        "grNumber": "G.R. No. 154342",
+        "url": "https://lawphil.net/judjuris/juri2004/jul2004/gr_154342_2004.html",
+        "part": "The GALLO wine trademark is not a well-known mark in the context of the Paris Convention in this case",
+        "excerpt": "Third and most important, pursuant to our ruling in Canon Kabushiki Kaisha vs. Court of Appeals and NSR Rubber Corporation, \"GALLO\" cannot be considered a \"well-known\" mark within the contemplation and protection of the Paris Convention in this case since wines and cigarettes are not identical or similar goods: … c) the mark must be for use in the same or similar kinds of goods;"
       }
     }
   ]
