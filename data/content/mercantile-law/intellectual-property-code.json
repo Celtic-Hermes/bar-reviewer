@@ -196,6 +196,21 @@
       "ruling": "The Court denied the petition and affirmed the Court of Appeals. (1) Copyright is purely statutory and covers only works within the statutory enumeration. P & D registered its copyright as a class \"O\" work, so its copyright extended only to the technical drawings (pictorial illustrations) and not to the light box, which is not a print, illustration, advertising copy, label, tag or box wrap, nor a literary or artistic work. If SMI had reprinted the drawings for sale, it would have infringed, but making units similar to the box drawn is not copying the drawings. (2) Trademark, copyright and patent are different rights that cannot be used interchangeably. P & D never secured a patent for the light boxes, and there can be no patent infringement without a patent: no patent, no protection. A copyright certificate is issued on a sworn ex parte claim without the scrutiny that a patent requires, and P & D could not obtain by copyright the exclusivity that it would have had to earn by a patent. Following Baker v. Selden, only the expression of an idea is protected by copyright, not the idea itself or the art that the work describes. (3) There was no trademark infringement. The certificate for \"Poster Ads\" specified only stationeries, which P & D did not even sell, so its exclusive right was limited to those goods, and registration for specific use on light boxes was an essential element that was missing. \"Poster Ads\" is also a generic contraction of \"poster advertising\" with no secondary meaning, as P & D's own expert admitted that it was too generic to identify any company. (4) Unfair competition was not found by the trial court and was not appealed by P & D, and in any case there was no evidence that the name was distinctive.",
       "keyDoctrine": "Copyright, patent and trademark are distinct rights that cannot be used interchangeably. A copyright in technical drawings (a class \"O\" work) does not extend to the useful article drawn, and without a patent there is no protection against copying an invention (no patent, no protection). Copyright protects the expression, not the idea or the art it describes. A trademark registration gives an exclusive right only for the goods specified, and a generic term cannot be appropriated unless it acquires secondary meaning.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2003/aug2003/gr_148222_2003.html"
+    },
+    {
+      "id": "case-0027",
+      "status": "draft",
+      "name": "Ching v. Salinas, Sr., et al.",
+      "grNumber": "G.R. No. 161295",
+      "year": 2005,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "facts": "Jessie G. Ching is the owner and general manager of Jeshicris Manufacturing Co., which makes a plastic \"Leaf Spring Eye Bushing for Automobile\" that he described as a utility model, and a plastic vehicle bearing cushion. In September 2001 the National Library issued Ching and Joseph Yu Certificates of Copyright Registration and Deposit for these works. Ching asked the National Bureau of Investigation (NBI) to act against illegal manufacturers. The NBI applied for search warrants in the Regional Trial Court (RTC) of Manila against William Salinas, Sr. and the officers of Wilaware Product Corporation, for reproducing and distributing the works in violation of Sections 177.1 and 177.3 of the Intellectual Property Code. The RTC issued Search Warrant Nos. 01-2401 and 01-2402 and the NBI seized bushings, bearing cushions and molds. The respondents moved to quash the warrants, arguing that the works were automotive spare parts that were not artistic or original, and so were proper subjects of a patent and not of a copyright. The RTC quashed the warrants for lack of probable cause, ruling that the works were solutions to technical problems and were not literary or artistic works. The Court of Appeals affirmed. Ching petitioned the Supreme Court, arguing that the validity of a copyright can be challenged only in a direct action, not in a proceeding to quash a search warrant, and that copyright protects his utility designs.",
+      "issue": "(1) May the RTC, in deciding whether there is probable cause for a search warrant, determine whether the works are copyrightable and whether the applicant owns a valid copyright? (2) Are the plastic leaf spring eye bushing and the vehicle bearing cushion, which are utility models, copyrightable works?",
+      "ruling": "The Court denied the petition, affirmed the Court of Appeals and annulled the search warrants. (1) The RTC had jurisdiction to resolve whether the works are copyrightable and whether Ching owns a copyright. In deciding whether probable cause exists, the court must necessarily determine whether an offense exists. The applicant has to show that he owns a valid copyright and that the work was copied. By asking the NBI to apply for the warrants, Ching authorized the RTC to examine the validity of his claim, and he could not repudiate that without running afoul of estoppel. A copyright certificate is prima facie evidence of validity and ownership, but the presumption only orders the burden of proof, and it does not arise where other evidence in the record casts doubt on the question. (2) The works are not copyrightable. They were classified as works of applied art under Section 172.1(h), but as described in the application they are plain automotive spare parts and utility models, useful articles with no ornamental or decorative value. A useful article is copyrightable only to the extent that its pictorial, graphic or sculptural features can be identified separately from, and exist independently of, its utilitarian aspects. They also do not fall within the catch-all phrase \"other literary, scholarly, scientific and artistic works\" under the principle of ejusdem generis. Copyright is purely statutory and covers only the works in the statutory list, and that the works may be the subject of a patent, as a utility model, does not give Ching copyright protection, since copyright, patent and trademark are distinct rights that cannot be used interchangeably. Mazer v. Stein, which involved artistic statuettes used as lamp bases, does not help him.",
+      "keyDoctrine": "A court deciding on a search warrant may determine whether the applicant owns a valid copyright, and a copyright certificate is only prima facie evidence of validity. Useful articles and utility models are not copyrightable, except to the extent that their artistic features can be identified separately from their utilitarian aspects; their protection is by patent (a utility model), not copyright.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2005/jun2005/gr_161295_2005.html"
     }
   ],
   "questions": [
@@ -3199,6 +3214,238 @@
         "url": "https://lawphil.net/judjuris/juri2003/aug2003/gr_148222_2003.html",
         "part": "On the issue of patent infringement (Baker v. Selden)",
         "excerpt": "In the oft-cited case of Baker vs. Selden, the United States Supreme Court held that only the expression of an idea is protected by copyright, not the idea itself. … The description of the art in a book, though entitled to the benefit of copyright, lays no foundation for an exclusive claim to the art itself. The object of the one is explanation; the object of the other is use. The former may be secured by copyright. The latter can only be secured, if it can be secured at all, by letters patent."
+      }
+    },
+    {
+      "id": "q-0408",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "prompt": "A manufacturer registers with the copyright office, as works of applied art, the designs of two plastic automobile spare parts that must fit the parts they replace. The registration papers describe them as utility models whose objects are longer life and simple construction. The manufacturer then asks authorities to raid a competitor that makes the same parts. Are the spare parts copyrightable? Explain, based on Ching v. Salinas.",
+      "suggestedAnswer": {
+        "answer": "No. The spare parts are useful articles and utility models, not literary or artistic works or works of applied art. A useful article is not copyrightable, except to the extent that its artistic features can be identified separately from its utilitarian aspects, and these parts have none.",
+        "legalBasis": "Section 172.1(h) of the Intellectual Property Code covers original ornamental designs or models for articles of manufacture and other works of applied art, and Section 171.10 defines a work of applied art as an artistic creation with utilitarian functions or incorporated in a useful article, whether made by hand or on an industrial scale. But useful articles, defined as articles having an intrinsic utilitarian function that is not merely to portray their appearance or to convey information, and works of industrial design are not copyrightable. A useful article may be copyrightable only if and to the extent that its design incorporates pictorial, graphic or sculptural features that can be identified separately from, and are capable of existing independently of, its utilitarian aspects. There is no copyright protection for works of applied art or industrial design whose aesthetic or artistic features cannot be identified separately from the utilitarian aspects of the article, and functional components of useful articles, however artistically designed, are generally denied protection unless they are separable.",
+        "application": "As described in the application, the parts are a cylindrical plastic body with a bore and a flange, and a semicircular cushion with ridges: they are useful articles with a utilitarian function, made of plastic to last longer than rubber. Being plain automotive spare parts that must conform to the original structural design of the components they replace, they are not ornamental and lack the decorative quality or value that must characterize authentic works of applied art. They are not even artistic creations with incidental utilitarian functions. They are mechanical works whose principal function is utility, without any aesthetic embellishment, and there is no separable artistic feature.",
+        "conclusion": "The spare parts are not copyrightable, so the copyright registrations cannot support a claim of infringement."
+      },
+      "keyPoints": [
+        "Works of applied art are artistic creations with utilitarian functions (Section 171.10), but useful articles and industrial designs are not copyrightable",
+        "A useful article is copyrightable only to the extent that its artistic features can be identified separately from, and exist independently of, its utilitarian aspects",
+        "Functional components of useful articles, however artistically designed, are generally denied protection unless separable",
+        "Plain automotive spare parts that must conform to the original structural design are not ornamental and lack decorative value",
+        "The works were mechanical works whose principal function was utility"
+      ],
+      "caseIds": [
+        "case-0027"
+      ],
+      "source": {
+        "caseTitle": "Ching v. Salinas, Sr., et al.",
+        "grNumber": "G.R. No. 161295",
+        "url": "https://lawphil.net/judjuris/juri2005/jun2005/gr_161295_2005.html",
+        "part": "Discussion of whether the leaf spring eye bushing and vehicle bearing cushion are copyrightable",
+        "excerpt": "Plainly, these are not literary or artistic works. They are not intellectual creations in the literary and artistic domain, or works of applied art. They are certainly not ornamental designs or one having decorative quality or value. … As gleaned from the description of the models and their objectives, these articles are useful articles which are defined as one having an intrinsic utilitarian function that is not merely to portray the appearance of the article or to convey information. Indeed, while works of applied art, original intellectual, literary and artistic works are copyrightable, useful articles and works of industrial design are not. A useful article may be copyrightable only if and only to the extent that such design incorporates pictorial, graphic, or sculptural features that can be identified separately from, and are capable of existing independently of the utilitarian aspects of the article. … It bears stressing that there is no copyright protection for works of applied art or industrial design which have aesthetic or artistic features that cannot be identified separately from the utilitarian aspects of the article. Functional components of useful articles, no matter how artistically designed, have generally been denied copyright protection unless they are separable from the useful article. … Being plain automotive spare parts that must conform to the original structural design of the components they seek to replace, the Leaf Spring Eye Bushing and Vehicle Bearing Cushion are not ornamental. They lack the decorative quality or value that must characterize authentic works of applied art."
+      }
+    },
+    {
+      "id": "q-0409",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "prompt": "A court issues a search warrant on an application by a copyright holder. The persons searched move to quash the warrant, arguing that the copyright certificates were wrongly issued because the works are not copyrightable. The copyright holder objects that the validity of a copyright can be challenged only in a direct action, and that its certificate gives it a presumption of validity. May the court examine the validity of the copyright in deciding the motion? Explain, based on Ching v. Salinas.",
+      "suggestedAnswer": {
+        "answer": "Yes. In deciding whether there is probable cause for a search warrant, the court must determine whether an offense exists, which requires finding that the applicant owns a valid copyright. The certificate is only prima facie evidence, and the applicant who asked for the warrant cannot deny the court's power to examine his claim.",
+        "legalBasis": "A search warrant issues only upon probable cause in connection with one specific offense, determined personally by the judge (Rule 126, Section 4), and in determining probable cause the court must necessarily resolve whether an offense exists, whether in issuing or quashing a warrant. To show copyright infringement, the applicant must show (a) that he owns a copyrighted material and (b) that it was copied; so the ownership of a valid copyright is essential. Ownership is shown by originality and copyrightability, and copying by proof of access and substantial similarity. A copyright certificate provides prima facie evidence of originality, validity and ownership, but the presumption of validity merely orders the burden of proof, shifting to the applicant when the respondent challenges the copyright. Under Section 218.2, copyright is presumed to subsist, and the plaintiff is presumed to be the owner, only if the defendant does not put the question in issue. A certificate creates no rebuttable presumption of validity where other evidence in the record casts doubt on the question.",
+        "application": "The court was duty-bound to determine whether probable cause existed and could not abdicate that duty by refusing to find whether an offense had been committed. By asking the authorities to apply for the warrant, the copyright holder authorized the court to determine the validity of the copyright he claimed. He cannot seek relief based on his claim of ownership and at the same time repudiate the court's authority to examine it without running afoul of the doctrine of estoppel. Once the respondents challenged the validity of the copyright, the burden shifted to him, and the record showed that the works were useful articles, which cast doubt on the presumption from the certificate.",
+        "conclusion": "The court may and must examine the validity of the copyright, and the certificate does not prevent it from finding that there is no probable cause."
+      },
+      "keyPoints": [
+        "Probable cause requires a specific offense, and the court must determine whether an offense exists in issuing or quashing a warrant",
+        "The applicant must show ownership of a valid copyright and copying; originality and copyrightability show ownership, and access and substantial similarity show copying",
+        "A copyright certificate is prima facie evidence of validity and ownership, but it only orders the burden of proof",
+        "Section 218.2: presumptions apply when the defendant does not put in issue the subsistence or ownership of the copyright",
+        "The applicant is estopped from repudiating the court's power to examine the validity of the copyright he invoked",
+        "No presumption of validity where other evidence casts doubt on it"
+      ],
+      "caseIds": [
+        "case-0027"
+      ],
+      "source": {
+        "caseTitle": "Ching v. Salinas, Sr., et al.",
+        "grNumber": "G.R. No. 161295",
+        "url": "https://lawphil.net/judjuris/juri2005/jun2005/gr_161295_2005.html",
+        "part": "Discussion of the RTC's jurisdiction to determine the validity of the copyright and the effect of the certificate",
+        "excerpt": "The RTC had jurisdiction to delve into and resolve the issue whether the petitioner’s utility models are copyrightable and, if so, whether he is the owner of a copyright over the said models. … Thus, the ownership of a valid copyright is essential. Ownership of copyrighted material is shown by proof of originality and copyrightability. … The applicant must thus demonstrate the existence and the validity of his copyright because in the absence of copyright protection, even original creation may be freely copied. … The petitioner cannot seek relief from the RTC based on his claim that he was the copyright owner over the utility models and, at the same time, repudiate the court’s jurisdiction to ascertain the validity of his claim without running afoul to the doctrine of estoppel. To discharge his burden, the applicant may present the certificate of registration covering the work or, in its absence, other evidence. A copyright certificate provides prima facie evidence of originality which is one element of copyright validity. It constitutes prima facie evidence of both validity and ownership and the validity of the facts stated in the certificate. The presumption of validity to a certificate of copyright registration merely orders the burden of proof. The applicant should not ordinarily be forced, in the first instance, to prove all the multiple facts that underline the validity of the copyright unless the respondent, effectively challenging them, shifts the burden of doing so to the applicant. … A certificate of registration creates no rebuttable presumption of copyright validity where other evidence in the record casts doubt on the question. In such a case, validity will not be presumed."
+      }
+    },
+    {
+      "id": "q-0410",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "prompt": "A maker claims that its plastic mechanical parts, which it calls utility models, deserve protection against copying, and says that if they are not copyrightable it is only because the law is unfair. What kind of protection is available for such works, and how does it differ from a patent for an invention? Explain whether the maker may rely on copyright, based on Ching v. Salinas.",
+      "suggestedAnswer": {
+        "answer": "The maker may not rely on copyright. Utility models are technical solutions in the mechanical field, and the proper protection for them is a patent (a utility model patent). Copyright and patent are distinct rights and cannot be used interchangeably.",
+        "legalBasis": "A utility model is a technical solution to a problem in any field of human activity which is new and industrially applicable; it may be a product, a process or an improvement, and it essentially refers to an invention in the mechanical field. It differs from a patent for an invention in at least three ways: (1) it does not require an inventive step; (2) its maximum term of protection is seven years, compared with twenty years for a patent, both from the date of application; and (3) the provisions on utility models dispense with substantive examination and prefer a less complicated system. Copyright, in the strict sense, is purely statutory and covers only the works within the statutory enumeration. Copyright, patent and trademark are completely distinct from one another, and the protection afforded by one cannot be used interchangeably to cover works that pertain exclusively to the others. A copyright is confined to original intellectual creations in the literary and artistic domain, and patentable inventions are technical solutions that are new, inventive and industrially applicable.",
+        "application": "The maker itself calls its parts utility models and admits that they may be the subject of a patent. That the works may be the proper subject of a patent does not entitle the maker to protection under the copyright laws or to a search warrant for violation of the copyright laws. The parts are useful articles, not works of art, and the law gives no copyright to a work that is not within the statutory list. The maker's remedy lay in the kind of protection that applies to utility models, and not in registering the works with the National Library as copyrights.",
+        "conclusion": "The maker may not use copyright to protect the utility models. They may be the subject of a patent, and copyright protection does not arise from the certificates of registration and deposit."
+      },
+      "keyPoints": [
+        "A utility model is a technical solution that is new and industrially applicable, essentially an invention in the mechanical field",
+        "It differs from a patent for an invention: no inventive step, maximum term of seven years (against twenty) and no substantive examination",
+        "Copyright is purely statutory and covers only the statutory list of works",
+        "Copyright, patent and trademark rights cannot be used interchangeably",
+        "That works may be the subject of a patent does not entitle the maker to copyright protection"
+      ],
+      "caseIds": [
+        "case-0027"
+      ],
+      "source": {
+        "caseTitle": "Ching v. Salinas, Sr., et al.",
+        "grNumber": "G.R. No. 161295",
+        "url": "https://lawphil.net/judjuris/juri2005/jun2005/gr_161295_2005.html",
+        "part": "Discussion of utility models and the distinction between copyright and patent rights",
+        "excerpt": "A utility model is a technical solution to a problem in any field of human activity which is new and industrially applicable. It may be, or may relate to, a product, or process, or an improvement of any of the aforesaid. Essentially, a utility model refers to an invention in the mechanical field. This is the reason why its object is sometimes described as a device or useful object. A utility model varies from an invention, for which a patent for invention is, likewise, available, on at least three aspects: first, the requisite of \"inventive step\" in a patent for invention is not required; second, the maximum term of protection is only seven years compared to a patent which is twenty years, both reckoned from the date of the application; and third, the provisions on utility model dispense with its substantive examination and prefer for a less complicated system. … That the works of the petitioner may be the proper subject of a patent does not entitle him to the issuance of a search warrant for violation of copyright laws. In Kho v. Court of Appeals and Pearl & Dean (Phil.), Incorporated v. Shoemart, Incorporated, the Court ruled that \"these copyright and patent rights are completely distinct and separate from one another, and the protection afforded by one cannot be used interchangeably to cover items or works that exclusively pertain to the others.\" … In this case, the bushing and cushion are not works of art. They are, as the petitioner himself admitted, utility models which may be the subject of a patent."
+      }
+    },
+    {
+      "id": "q-0411",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "prompt": "In deciding whether an applicant for a search warrant for copyright infringement has shown probable cause, according to Ching v. Salinas, how are ownership of the copyrighted material and copying shown?",
+      "choices": {
+        "A": "Ownership is shown by the applicant's say-so, and copying by the fact that both works are sold in the same market.",
+        "B": "Ownership is shown by the date of the certificate alone, and copying by the price of the goods.",
+        "C": "Ownership is shown by the number of copies sold, and copying by the defendant's admission.",
+        "D": "Ownership is shown by proof of originality and copyrightability, and copying is shown by proof of access to the copyrighted material and substantial similarity between the two works."
+      },
+      "correct": "D",
+      "explanation": "D is correct. The Court explained that ownership of copyrighted material is shown by proof of originality and copyrightability. By originality is meant that the material was not copied and evidences at least minimal creativity, independently created by the author. Copying is shown by proof of access to the copyrighted material and substantial similarity between the two works. A, B and C describe things that the decision does not treat as proof of ownership or copying.",
+      "caseIds": [
+        "case-0027"
+      ],
+      "source": {
+        "caseTitle": "Ching v. Salinas, Sr., et al.",
+        "grNumber": "G.R. No. 161295",
+        "url": "https://lawphil.net/judjuris/juri2005/jun2005/gr_161295_2005.html",
+        "part": "Discussion of the RTC's jurisdiction (ownership and copying)",
+        "excerpt": "Ownership of copyrighted material is shown by proof of originality and copyrightability. By originality is meant that the material was not copied, and evidences at least minimal creativity; that it was independently created by the author and that it possesses at least same minimal degree of creativity. Copying is shown by proof of access to copyrighted material and substantial similarity between the two works."
+      }
+    },
+    {
+      "id": "q-0412",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "prompt": "Under Section 218.2 of the Intellectual Property Code, quoted in Ching v. Salinas, when is copyright presumed to subsist in the work that is the subject of an action?",
+      "choices": {
+        "A": "If the defendant does not put in issue the question whether copyright subsists in the work.",
+        "B": "Always, even if the defendant challenges it.",
+        "C": "Only if the work has been published in a newspaper.",
+        "D": "Only if the plaintiff has paid the registration fee for ten years."
+      },
+      "correct": "A",
+      "explanation": "A is correct. Section 218.2(a) provides that copyright shall be presumed to subsist in the work or other subject matter to which the action relates if the defendant does not put in issue the question whether copyright subsists. Under paragraph (b), where the subsistence of the copyright is established, the plaintiff shall be presumed to be the owner of the copyright if he claims to be the owner and the defendant does not put in issue the question of his ownership. B is wrong because the presumption depends on the defendant not putting the question in issue. C and D are conditions that are not in the provision.",
+      "caseIds": [
+        "case-0027"
+      ],
+      "source": {
+        "caseTitle": "Ching v. Salinas, Sr., et al.",
+        "grNumber": "G.R. No. 161295",
+        "url": "https://lawphil.net/judjuris/juri2005/jun2005/gr_161295_2005.html",
+        "part": "Discussion of the effect of the certificate (Section 218.2)",
+        "excerpt": "218.2. In an action under this Chapter: (a) Copyright shall be presumed to subsist in the work or other subject matter to which the action relates if the defendant does not put in issue the question whether copyright subsists in the work or other subject matter; and (b) Where the subsistence of the copyright is established, the plaintiff shall be presumed to be the owner of the copyright if he claims to be the owner of the copyright and the defendant does not put in issue the question of his ownership."
+      }
+    },
+    {
+      "id": "q-0413",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "prompt": "According to Ching v. Salinas, what is the central inquiry in deciding whether an article is protected by copyright as a work of applied art?",
+      "choices": {
+        "A": "Whether the article is mass-produced and commercially successful.",
+        "B": "Whether the article is a work of art, since the focus of copyright is the artistic design and not its marketability.",
+        "C": "Whether a design patent is available for the article.",
+        "D": "Whether the article is cheap to manufacture."
+      },
+      "correct": "B",
+      "explanation": "B is correct. The Court noted that a work of applied art is an artistic creation with utilitarian functions or incorporated in a useful article, whether made by hand or produced on an industrial scale (Section 171.10). It stressed that the focus of copyright is the artistic design, and not its marketability, so the central inquiry is whether the article is a work of art. Works of applied art include original pictorial, graphic and sculptural works intended to be or embodied in useful articles regardless of factors such as mass production, commercial exploitation and the potential availability of design patent protection. A, C and D are factors that the Court said do not decide the question.",
+      "caseIds": [
+        "case-0027"
+      ],
+      "source": {
+        "caseTitle": "Ching v. Salinas, Sr., et al.",
+        "grNumber": "G.R. No. 161295",
+        "url": "https://lawphil.net/judjuris/juri2005/jun2005/gr_161295_2005.html",
+        "part": "Discussion of whether the works are copyrightable (works of applied art)",
+        "excerpt": "Related to the provision is Section 171.10, which provides that a \"work of applied art\" is an artistic creation with utilitarian functions or incorporated in a useful article, whether made by hand or produced on an industrial scale. … It bears stressing that the focus of copyright is the usefulness of the artistic design, and not its marketability. The central inquiry is whether the article is a work of art. Works for applied art include all original pictorials, graphics, and sculptural works that are intended to be or have been embodied in useful article regardless of factors such as mass production, commercial exploitation, and the potential availability of design patent protection."
+      }
+    },
+    {
+      "id": "q-0414",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "prompt": "A copyright holder cites Mazer v. Stein, in which artistic statuettes were used as lamp bases and were held copyrightable. According to Ching v. Salinas, why does that case not help the holder of copyright over plastic automotive parts?",
+      "choices": {
+        "A": "Because Mazer v. Stein was decided in the Philippines.",
+        "B": "Because Mazer v. Stein held that no useful article may ever be copyrighted.",
+        "C": "Because the statuettes were works of art in their form, whereas the bushing and cushion are not works of art; if the sole intrinsic function of an article is its utility, being unique and attractively shaped will not qualify it as a work of art.",
+        "D": "Because the parts in Mazer v. Stein were patented."
+      },
+      "correct": "C",
+      "explanation": "C is correct. The Court explained that in Mazer v. Stein the statuettes were copyrightable works of art or models or designs for works of art, protected as to their artistic form and not their mechanical or utilitarian aspects, even though they were later used as lamp bases. The Court noted the copyright office rule implementing it: if the sole intrinsic function of an article is its utility, the fact that the work is unique and attractively shaped will not qualify it as a work of art. In this case, the bushing and cushion are not works of art but utility models that may be the subject of a patent. A is wrong because it is a decision of the United States Supreme Court. B misstates it. D is wrong because the point is that the statuettes were works of art.",
+      "caseIds": [
+        "case-0027"
+      ],
+      "source": {
+        "caseTitle": "Ching v. Salinas, Sr., et al.",
+        "grNumber": "G.R. No. 161295",
+        "url": "https://lawphil.net/judjuris/juri2005/jun2005/gr_161295_2005.html",
+        "part": "Discussion of Mazer v. Stein",
+        "excerpt": "The petitioner cannot find solace in the ruling of the United States Supreme Court in Mazer v. Stein to buttress his petition. … [I]f \"the sole intrinsic function of an article is its utility, the fact that the work is unique and attractively shaped will not qualify it as a work of art.\" In this case, the bushing and cushion are not works of art."
+      }
+    },
+    {
+      "id": "q-0415",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Copyright",
+      "prompt": "A statute lists specific kinds of protected works and ends with the phrase \"other literary, scholarly, scientific and artistic works\". According to Ching v. Salinas, applying the principle of ejusdem generis, how far does that general phrase reach?",
+      "choices": {
+        "A": "To anything that has been created by a person, whatever its nature.",
+        "B": "Only to things of a similar kind and nature as the works specifically enumerated, so it does not include useful articles such as automotive spare parts.",
+        "C": "To every invention that is new and useful.",
+        "D": "To any article that has been registered with the National Library."
+      },
+      "correct": "B",
+      "explanation": "B is correct. The Court refused to treat the leaf spring eye bushing and the vehicle bearing cushion as included in the catch-all phrase \"other literary, scholarly, scientific and artistic works\" in Section 172.1(a). Under the principle of ejusdem generis, where a statute describes things of a particular class or kind accompanied by words of a generic character, the generic word is usually limited to things of a similar nature with those particularly enumerated, unless the context repels that inference. The parts are not of the same kind and nature as the works enumerated in Section 172, so they are not copyrightable. A and C extend the phrase beyond its class. D is wrong because registration does not create copyright for a work outside the statute.",
+      "caseIds": [
+        "case-0027"
+      ],
+      "source": {
+        "caseTitle": "Ching v. Salinas, Sr., et al.",
+        "grNumber": "G.R. No. 161295",
+        "url": "https://lawphil.net/judjuris/juri2005/jun2005/gr_161295_2005.html",
+        "part": "Discussion of whether the works are copyrightable (ejusdem generis)",
+        "excerpt": "Neither are we to regard the Leaf Spring Eye Bushing and Vehicle Bearing Cushion as included in the catch-all phrase \"other literary, scholarly, scientific and artistic works\" in Section 172.1(a) of R.A. No. 8293. Applying the principle of ejusdem generis which states that \"where a statute describes things of a particular class or kind accompanied by words of a generic character, the generic word will usually be limited to things of a similar nature with those particularly enumerated, unless there be something in the context of the state which would repel such inference,\" the Leaf Spring Eye Bushing and Vehicle Bearing Cushion are not copyrightable, being not of the same kind and nature as the works enumerated in Section 172 of R.A. No. 8293."
       }
     }
   ]
