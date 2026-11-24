@@ -61,6 +61,21 @@
       "ruling": "The Court partly granted the petition. It reversed the Court of Appeals' resolutions and dismissed the petition for certiorari as moot and academic, and it dismissed the Makati civil case on the ground of litis pendentia. (1) The exclusive right of a patentee to make, use and sell the patented article exists only during the term of the patent (Section 37, R.A. No. 165; the term was seventeen years from issuance under Section 21). Pfizer itself admitted that its patent expired on July 16, 2004, and an admission in the same case needs no proof unless it was made through palpable mistake. After that date Pfizer had no clear and unmistakable right to protect, so the restraining order was improper and the question of extending the BLA-IPO's injunction had become moot. (2) The Court of Appeals, not the IPO Director General, had jurisdiction. The Director General reviews decisions of the BLA, but what Pfizer challenged was an interlocutory order. The Intellectual Property Code is silent on a remedy against such orders and the IPO's rules say they are not appealable, so the Rules of Court apply suppletorily and a special civil action for certiorari in the Court of Appeals was proper. Filing the infringement complaint first with the BLA-IPO was in keeping with the doctrine of primary jurisdiction, but the question of extending an injunction was purely legal and was for the courts. (3) Pfizer was guilty of forum shopping. A cause of action is the act or omission by which a party violates another's right, and in both complaints the rights violated and the acts violative of them were identical, even though the patents differed; the reliefs asked were substantially the same, so a decision in one case would be res judicata in the other. Because the forum shopping was not willful and deliberate, only the later case was dismissed, without prejudice.",
       "keyDoctrine": "A patentee's exclusive right to make, use and sell exists only during the term of the patent, and no injunction can protect a right that has expired. Filing two actions with different patents but the same cause of action and the same objective is forum shopping; if it is not willful, the later case is dismissed without prejudice on the ground of litis pendentia or res judicata, and if it is willful and deliberate, all the cases are dismissed with prejudice.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2010/nov2010/gr_167715_2010.html"
+    },
+    {
+      "id": "case-0018",
+      "status": "draft",
+      "name": "Zuneca Pharmaceutical v. Natrapharm, Inc.",
+      "grNumber": "G.R. No. 211850",
+      "year": 2020,
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "facts": "Zuneca Pharmaceutical, owned by Dr. Venus Arain and later run through Zuneca, Inc., imports generic drugs from Pakistan and sells them under brand names. Since 2004 it has sold carbamazepine, an anti-convulsant, under the brand \"ZYNAPS\", but it never registered the mark. Natrapharm, Inc. manufactures and sells citicoline, a medicine for stroke, under the brand \"ZYNAPSE\", which it registered with the Intellectual Property Office (IPO) on September 24, 2007. In November 2007 Natrapharm sued Zuneca in the Regional Trial Court of Quezon City for trademark infringement, injunction and damages. Zuneca answered that it was the first user and that Natrapharm must have known of \"ZYNAPS\" (the two companies advertised in the same Philippine Pharmaceutical Directory and had exhibited at the same conventions), so that Natrapharm registered its mark in bad faith, and it counterclaimed for cancellation and damages. Both parties admitted that the two marks are confusingly similar. The trial court found Zuneca liable and awarded damages, enjoined it from using \"ZYNAPS\" and ordered its infringing goods destroyed. The Court of Appeals affirmed, holding that registration, not prior use, is how a mark is owned. Zuneca went to the Supreme Court.",
+      "issue": "(1) How is ownership of a trademark acquired under the Intellectual Property Code: by prior use or by registration? (2) Did Natrapharm, the first-to-file registrant, register \"ZYNAPSE\" in bad faith? (3) Even if Natrapharm owns \"ZYNAPSE\", is Zuneca, as a prior user in good faith, liable for trademark infringement?",
+      "ruling": "The Court partly granted the petition. (1) Under Section 122 of the Intellectual Property Code, rights in a mark are acquired through registration. The language of the Code, the removal from Section 123.1(d) of the phrase \"previously used in the Philippines by another and not abandoned\", and Senator Roco's sponsorship speech all show that the old rule that ownership comes from use (under the Trademark Law, as amended) was abandoned. The use-based rule applied in Berris and E.Y. Industrial Sales belongs to marks used or registered under the old law, and the statement in Berris that ownership is acquired by registration and actual use was rectified. So Natrapharm, the first-to-file registrant in good faith, owns \"ZYNAPSE\". (2) Bad faith means knowledge by the applicant of prior creation, use or registration of an identical or similar mark by another; a registration obtained in bad faith is void. Good faith is presumed, and Zuneca had to prove bad faith. It showed only a possibility that someone at Natrapharm might have known of \"ZYNAPS\", while Natrapharm explained how it coined its name and showed that it checked the IMS-PPI, BFAD and IPO databases. So the registration stands and Zuneca's counterclaims were rightly dismissed. (3) However, Section 159.1 provides that a registered mark has no effect against a person who in good faith, before the filing or priority date, was using the mark. This lets the prior user in good faith keep using its mark even after the other's registration (it may transfer the mark only together with its business), and the lower courts' reading, which limited the exemption to acts before registration, would make the provision useless. Zuneca is therefore not liable for infringement, and the damages, injunction and destruction of goods were set aside. (4) Because confusingly similar names for medicines can endanger patients, the Court ordered both companies to state on their packaging, in plain language, the conditions their drugs treat and a warning of what each drug is not for, and it directed the Food and Drug Administration to monitor compliance.",
+      "keyDoctrine": "Under the Intellectual Property Code, ownership of a mark is acquired through registration (first-to-file), not through use. A registration obtained in bad faith, meaning with knowledge of another's prior creation, use or registration, is void, but good faith is presumed. A prior user in good faith is protected by Section 159.1: the registered mark has no effect against it, so it may keep using its mark, and no damages, injunction or destruction of goods can be ordered against it for infringement.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2020/sep2020/gr_211850_2020.html"
     }
   ],
   "questions": [
@@ -981,6 +996,237 @@
         "url": "https://lawphil.net/judjuris/juri2010/nov2010/gr_167715_2010.html",
         "part": "Discussion of the second issue (the doctrine of primary jurisdiction)",
         "excerpt": "Based on the foregoing, the Court finds that respondents' initial filing of their complaint with the BLA-IPO, instead of the regular courts, is in keeping with the doctrine of primary jurisdiction owing to the fact that the determination of the basic issue of whether petitioner violated respondents' patent rights requires the exercise by the IPO of sound administrative discretion which is based on the agency's special competence, knowledge and experience."
+      }
+    },
+    {
+      "id": "q-0336",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "A small company has sold a bottled drink under the name COOLY since 2022 but never registered the name. In 2024, a rival that had never heard of COOLY files an application for a confusingly similar name, COOLIE, for the same kind of drink, and the mark is registered. Who owns the right to the registered mark, and does it matter that the small company used its name first? Explain, based on Zuneca Pharmaceutical v. Natrapharm, Inc.",
+      "suggestedAnswer": {
+        "answer": "The rival owns the mark it registered. Under the Intellectual Property Code, ownership of a mark is acquired through valid registration, not through prior use, so the small company's earlier use does not make it the owner.",
+        "legalBasis": "Section 122 of the Intellectual Property Code provides that the rights in a mark are acquired through registration made validly in accordance with the Code. Section 123.1(d), the first-to-file rule, bars the registration of a mark identical or confusingly similar to a registered mark of a different proprietor or to a mark with an earlier filing or priority date. The Code removed the phrase \"previously used in the Philippines by another and not abandoned\" that the Trademark Law had in the corresponding provision, which shows that the lawmakers abandoned the rule that ownership is acquired by use. Actual use is still required, but only to maintain the registration and the registered owner's ownership, not as a way of acquiring ownership. For marks first used or registered after the Code took effect, ownership no longer depends on prior use.",
+        "application": "Both COOLY and COOLIE were used or registered after the Code took effect, so the use-based rule of the old Trademark Law does not apply. The rival registered in good faith, with no knowledge of COOLY, and registration gave it ownership. The small company, as an unregistered prior user, does not own COOLY as against the rival and cannot ask for cancellation of the registration merely because it used the name first.",
+        "conclusion": "The rival is the owner of the registered mark. The small company's prior use does not give it ownership, though, as the Court recognized in the same case, a prior user in good faith has other protection (Section 159.1)."
+      },
+      "keyPoints": [
+        "Section 122: rights in a mark are acquired through registration made validly under the Code",
+        "Section 123.1(d), the first-to-file rule, bars the registration of confusingly similar marks of later applicants",
+        "The Code dropped the phrase \"previously used in the Philippines by another and not abandoned\": prior use no longer determines ownership",
+        "Actual use under the Code is needed to maintain ownership, not to acquire it",
+        "Use-based rulings under the old Trademark Law do not apply to marks used or registered after the Code took effect"
+      ],
+      "caseIds": [
+        "case-0018"
+      ],
+      "source": {
+        "caseTitle": "Zuneca Pharmaceutical v. Natrapharm, Inc.",
+        "grNumber": "G.R. No. 211850",
+        "url": "https://lawphil.net/judjuris/juri2020/sep2020/gr_211850_2020.html",
+        "part": "Part I (how trademark ownership is acquired)",
+        "excerpt": "SECTION 122. How Marks are Acquired. - The rights in a mark shall be acquired through registration made validly in accordance with the provisions of this law. (Sec. 2-A, R.A. No. 166a) … Once the IP Code took effect, however, the general rule on ownership was changed and repealed. At present, as expressed in the language of the provisions of the IP Code, prior use no longer determines the acquisition of ownership of a mark in light of the adoption of the rule that ownership of a mark is acquired through registration made validly in accordance with the provisions of the IP Code. … To emphasize, for marks that are first used and/or registered after the effectivity of the IP Code, ownership is no longer dependent on the fact of prior use in light of the adoption of the first-to-file rule and the rule that ownership is acquired through registration."
+      }
+    },
+    {
+      "id": "q-0337",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "A prior user of an unregistered brand claims that the company that later registered a confusingly similar brand did so in bad faith, because both companies advertise in the same industry directory and exhibited at the same trade conventions before the registration. The registrant says that it coined its brand from a medical term and checked the industry index and the government databases for similar names, and found none. Was the registration made in bad faith? Explain, based on Zuneca Pharmaceutical v. Natrapharm, Inc.",
+      "suggestedAnswer": {
+        "answer": "No. Bad faith means knowledge of another's prior creation, use or registration of the mark. The prior user showed only a possibility of knowledge, which is not enough, and good faith is presumed.",
+        "legalBasis": "Bad faith in a trademark registration means that the applicant or registrant has knowledge of prior creation, use and/or registration by another of an identical or similar trademark, in other words, copying and using somebody else's trademark. The presence of bad faith alone renders a trademark registration void. As a rule, good faith is always presumed, and the burden of proving bad faith rests on the one who alleges it.",
+        "application": "The prior user's evidence tended to show only that someone at the registrant might have known of its brand because they attended the same conferences and advertised in the same directory. A possibility is not sufficient to prove bad faith, especially when weighed against the registrant's explanation of how it coined its brand and the steps it took to make sure that no confusingly similar mark existed: it checked the industry index and the government databases. The prior user, who alleged bad faith, failed to carry its burden.",
+        "conclusion": "The registration was not made in bad faith, so it remains valid and the registrant acquired the rights of a trademark owner."
+      },
+      "keyPoints": [
+        "Bad faith = knowledge by the applicant or registrant of prior creation, use and/or registration by another of an identical or similar mark",
+        "A registration obtained in bad faith is void",
+        "Good faith is presumed, and the one alleging bad faith has the burden of proof",
+        "A mere possibility that the registrant knew, such as attending the same conferences or advertising in the same directory, is not enough",
+        "The registrant's checking of databases and its explanation of how it coined the name supported good faith"
+      ],
+      "caseIds": [
+        "case-0018"
+      ],
+      "source": {
+        "caseTitle": "Zuneca Pharmaceutical v. Natrapharm, Inc.",
+        "grNumber": "G.R. No. 211850",
+        "url": "https://lawphil.net/judjuris/juri2020/sep2020/gr_211850_2020.html",
+        "part": "Part II (bad faith and good faith in trademark registration) and Part III (the resolution of the controversy)",
+        "excerpt": "Bad faith means that the applicant or registrant has knowledge of prior creation, use and/or registration by another of an identical or similar trademark. … To emphasize, the presence of bad faith alone renders void the trademark registrations. … As a rule, good faith is always presumed, and upon him who alleges bad faith on the part of a possessor rests the burden of proof. … Zuneca's evidence only tends to prove that there was a possibility that someone from Natrapharm might have known of Zuneca's use of \"ZYNAPS\" because Natrapharm and Zuneca attended the same conferences and that Zuneca had listed \"ZYNAPS\" in the PPD publication. Such possibility is not, however, sufficient to prove bad faith, especially when weighed against Natrapharm's evidence and explanation on how it coined \"ZYNAPSE\" and the steps it took to ensure that there were no other marks that were confusingly similar to it."
+      }
+    },
+    {
+      "id": "q-0338",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "A company registers a mark. A smaller business that has used a confusingly similar mark in good faith since before the registration, and never registered it, continues to use it. The registrant sues the smaller business for trademark infringement, arguing that the exception for prior users covers only use before the registration. Will the infringement suit prosper, and may the court order damages, an injunction or destruction of the smaller business's goods? Explain, based on Zuneca Pharmaceutical v. Natrapharm, Inc.",
+      "suggestedAnswer": {
+        "answer": "No. A prior user in good faith may continue to use its mark even after the registration, so it is not liable for infringement, and because there is no infringement the court cannot order damages, an injunction or destruction of goods.",
+        "legalBasis": "Section 159.1 of the Intellectual Property Code provides that, notwithstanding Section 155, a registered mark has no effect against any person who, in good faith, before the filing date or the priority date, was using the mark for the purposes of his business or enterprise, and that his right may be transferred or assigned only together with his enterprise or business or the part in which the mark is used. Section 159.1 is an exception to the rights of the trademark owner under Section 147.1. The remedies in Sections 156 and 157 (damages, injunction, and disposal or destruction of infringing goods) may be ordered only if there is a finding of infringement.",
+        "application": "Reading Section 159.1 as exempting only use before the registration would make the provision useless, because even without it a third party's use of a then-unregistered mark could not be infringement, and it would make its proviso on transfer of the mark absurd. Read as a whole, it allows the prior user in good faith to continue using its mark after the registrant's registration, tied to its current business. So the smaller business is not liable for infringement. Since the remedies depend on a finding of infringement, no damages, injunction or destruction of goods can be ordered. The result is that two parties may use identical or confusingly similar marks at the same time, which may not be ideal but is what the provision says.",
+        "conclusion": "The infringement suit fails, and the lower courts' penalties could not stand. The smaller business may continue to use its mark with its business."
+      },
+      "keyPoints": [
+        "Section 159.1: a registered mark has no effect against a person who, in good faith, before the filing or priority date, was using the mark in his business",
+        "The prior user in good faith may continue using the mark even after registration, and may transfer it only together with its business",
+        "Reading Section 159.1 as covering only use before registration would make it useless and would make its proviso absurd",
+        "Section 159.1 is an exception to the owner's rights under Section 147.1",
+        "Damages, injunction and destruction of goods (Sections 156 and 157) may be ordered only upon a finding of infringement"
+      ],
+      "caseIds": [
+        "case-0018"
+      ],
+      "source": {
+        "caseTitle": "Zuneca Pharmaceutical v. Natrapharm, Inc.",
+        "grNumber": "G.R. No. 211850",
+        "url": "https://lawphil.net/judjuris/juri2020/sep2020/gr_211850_2020.html",
+        "part": "Part III (the resolution of the controversy, Section 159.1)",
+        "excerpt": "Read as a whole, Section 159.1 of the IP Code clearly contemplates that a prior user in good faith may continue to use its mark even after the registration of the mark by the first-to-file registrant in good faith, subject to the condition that any transfer or assignment of the mark by the prior user in good faith should be made together with the enterprise or business or with that part of his enterprise or business in which the mark is used. The mark cannot be transferred independently of the enterprise and business using it. … A plain reading of the above provisions reveals that that these remedies may only be ordered by the court if there was a finding that a party had committed infringement. Here, because of the application of Section 159.1 of the IP Code, Zuneca is not liable for trademark infringement. Consequently, it follows that the award of damages, issuance of an injunction, and the disposition and/or destruction of allegedly infringing goods could not be ordered by the court. … Essentially, therefore, Section 159.1 is an exception to the rights of the trademark owner in Section 147.1 of the IP Code."
+      }
+    },
+    {
+      "id": "q-0339",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "According to Zuneca Pharmaceutical v. Natrapharm, Inc., which of the following must be proven to establish trademark infringement?",
+      "choices": {
+        "A": "That the infringer sells goods of lower quality than the trademark owner's goods.",
+        "B": "That the infringer first used the mark before the trademark owner did.",
+        "C": "That the trademark owner has used the mark for at least ten years.",
+        "D": "That the trademark being infringed is registered in the IPO and the infringer's use is likely to cause confusion or mistake, or to deceive, without the trademark owner's consent."
+      },
+      "correct": "D",
+      "explanation": "D is correct. The Court listed the elements of trademark infringement: (1) the trademark being infringed is registered in the IPO; (2) the trademark is reproduced, counterfeited, copied or colorably imitated by the infringer; (3) the infringing mark is used in connection with the sale, offering for sale or advertising of goods, business or services, or is applied to labels, signs, packages or advertisements for them; (4) the use is likely to cause confusion or mistake or to deceive purchasers or others as to the goods or services or their source; and (5) it is without the consent of the trademark owner or the assignee. A is wrong because the quality of the infringer's goods is not an element. B is wrong because prior use by the infringer is not an element and does not make a registered mark's owner lose; under the Code, ownership comes from registration. C is wrong because the Code does not require ten years of use.",
+      "caseIds": [
+        "case-0018"
+      ],
+      "source": {
+        "caseTitle": "Zuneca Pharmaceutical v. Natrapharm, Inc.",
+        "grNumber": "G.R. No. 211850",
+        "url": "https://lawphil.net/judjuris/juri2020/sep2020/gr_211850_2020.html",
+        "part": "The Court's Ruling (the elements of trademark infringement)",
+        "excerpt": "Further, in Prosource International, Inc. v. Horphag Research Management SA, the Court held that, to establish trademark infringement, the following elements must be proven: … the trademark being infringed is registered in the IPO; (2) the trademark is reproduced, counterfeited, copied, or colorably imitated by the infringer; (3) the infringing mark is used in connection with the sale, offering for sale, or advertising of any goods, business, or services; or the infringing mark is applied to labels, signs, prints, packages, wrappers, receptacles, or advertisements intended to be used upon or in connection with such goods, business, or services; (4) the use or application of the infringing mark is likely to cause confusion or mistake or to deceive purchasers or others as to the goods or services themselves or as to the source or origin of such goods or services or the identity of such business; and (5) it is without the consent of the trademark owner or the assignee thereof."
+      }
+    },
+    {
+      "id": "q-0340",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "In an earlier case, Berris Agricultural Co., Inc. v. Abyadang, the Court said that \"the ownership of a trademark is acquired by its registration and its actual use.\" What did Zuneca Pharmaceutical v. Natrapharm, Inc. do with that statement?",
+      "choices": {
+        "A": "It reaffirmed the statement as the current rule on acquiring ownership.",
+        "B": "It rectified the statement: under the IP Code, ownership of a trademark is acquired by its registration.",
+        "C": "It reversed the result in Berris and declared the prior user the owner.",
+        "D": "It held that the statement applies only to foreign trademarks."
+      },
+      "correct": "B",
+      "explanation": "B is correct. The Court said that after the IP Code became effective in 1998, use was no longer required to acquire or perfect ownership of a mark, and it rectified the inaccurate statement in Berris. The rectified statement reads: \"Under the IP Code, the ownership of a trademark is acquired by its registration.\" The result in Berris was still right because the winner was the first to file and register. The Court added that proof of subsequent use is required to prevent the removal or cancellation of a registered mark or the refusal of a pending application, but this does not mean that actual use is necessary before one can own the mark or exercise the rights of an owner. A is wrong because the Court corrected the statement. C is wrong because Berris was correct in its result, based on first filing and registration. D is wrong because the Court did not limit the statement to foreign marks.",
+      "caseIds": [
+        "case-0018"
+      ],
+      "source": {
+        "caseTitle": "Zuneca Pharmaceutical v. Natrapharm, Inc.",
+        "grNumber": "G.R. No. 211850",
+        "url": "https://lawphil.net/judjuris/juri2020/sep2020/gr_211850_2020.html",
+        "part": "Part I (the rule in Berris)",
+        "excerpt": "To repeat, after the IP Code became effective starting 1998, use was no longer required in order to acquire or perfect ownership of the mark. In this regard, the Court now rectifies the inaccurate statement in Berris that \"[t]he ownership of a trademark is acquired by its registration and its actual use.\" The rectified statement should thus read: \"Under the IP Code, the ownership of a trademark is acquired by its registration.\""
+      }
+    },
+    {
+      "id": "q-0341",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "The Intellectual Property Code requires a registrant to file a declaration of actual use of the mark and to prove continued use. A prior user argues that this shows that actual use is still a way to acquire ownership of a mark. According to Zuneca Pharmaceutical v. Natrapharm, Inc., how should these provisions be understood?",
+      "choices": {
+        "A": "As provisions requiring actual use so that the registered owner can maintain his ownership; they do not make actual use a mode of acquiring ownership.",
+        "B": "As proof that the Code still follows the old Trademark Law rule that use creates ownership.",
+        "C": "As provisions that apply only to unregistered marks.",
+        "D": "As optional rules that the registrant may ignore."
+      },
+      "correct": "A",
+      "explanation": "A is correct. The Court said that while the Code and the IPO rules require the applicant or registrant to prove continued actual use, this does not imply that actual use is still a recognized mode of acquiring ownership. Rather, these provisions require actual use of the mark so that the registered owner can maintain his ownership. The Court answered the similar argument about the prima facie effect of the certificate of registration in the same way: it shows when a certificate does not reflect ownership, for example when the first registrant lost ownership through non-use or abandonment, or the registration was done in bad faith or contrary to the Code. B is wrong because the Court held that the old use-based regime was abandoned. C is wrong because the requirement applies to registrants and applicants. D is wrong because failure to file the declaration of actual use can cause the mark to be removed or the application to be refused.",
+      "caseIds": [
+        "case-0018"
+      ],
+      "source": {
+        "caseTitle": "Zuneca Pharmaceutical v. Natrapharm, Inc.",
+        "grNumber": "G.R. No. 211850",
+        "url": "https://lawphil.net/judjuris/juri2020/sep2020/gr_211850_2020.html",
+        "part": "Part I (continued actual use under the IP Code)",
+        "excerpt": "Certainly, while the IP Code and the Rules of the IPO mandate that the applicant/registrant must prove continued actual use of the mark, it is the considered view of the Court that this does not imply that actual use is still a recognized mode of acquisition of ownership under the IP Code. Rather, these must be understood as provisions that require actual use of the mark in order for the registered owner of a mark to maintain his ownership."
+      }
+    },
+    {
+      "id": "q-0342",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "According to Zuneca Pharmaceutical v. Natrapharm, Inc., what does the removal of the phrase \"previously used in the Philippines by another and not abandoned\" from the provision on unregistrable marks (the old Section 4(d) of the Trademark Law, now Section 123.1(d) of the IP Code) show?",
+      "choices": {
+        "A": "That unregistered marks can no longer be used in the Philippines at all.",
+        "B": "That only foreign marks may be registered.",
+        "C": "That a good faith applicant may register a mark that was previously used and not abandoned by another, and the prior user can no longer ask for cancellation on that ground; it shows the lawmakers' intent to abandon the use-based regime.",
+        "D": "That every registration is conclusive and can never be cancelled."
+      },
+      "correct": "C",
+      "explanation": "C is correct. The Court explained that under the Trademark Law the first user could file a cancellation case against an identical or confusingly similar mark registered in good faith by another, but with the phrase omitted in the IP Code, that right is no longer available. A good faith applicant may still register a mark previously used and not abandoned by another and become its owner, and the prior user cannot ask for cancellation of the registration. If the lawmakers had wanted to retain ownership through use, they would have kept the phrase to avoid conflicts in ownership. A is wrong because the unregistered prior user in good faith may continue to use its mark under Section 159.1. B has nothing to do with the phrase. D is wrong because the Court recognized other grounds for cancellation, such as registration obtained in bad faith or contrary to the Code.",
+      "caseIds": [
+        "case-0018"
+      ],
+      "source": {
+        "caseTitle": "Zuneca Pharmaceutical v. Natrapharm, Inc.",
+        "grNumber": "G.R. No. 211850",
+        "url": "https://lawphil.net/judjuris/juri2020/sep2020/gr_211850_2020.html",
+        "part": "Part I (the language of Sections 122 and 123.1(d))",
+        "excerpt": "Subparagraph (d) of the above provision of the Trademark Law was amended in the IP Code to, among others, remove the phrase \"previously used in the Philippines by another and not abandoned.\" … In effect, based on the language of the provisions of the IP Code, even if the mark was previously used and not abandoned by another person, a good faith applicant may still register the same and thus become the owner thereof, and the prior user cannot ask for the cancellation of the latter's registration."
+      }
+    },
+    {
+      "id": "q-0343",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Mercantile Law",
+      "topic": "Intellectual Property Code",
+      "subtopic": "Trademarks and Unfair Competition",
+      "prompt": "The two medicines in Zuneca Pharmaceutical v. Natrapharm, Inc. had admittedly confusingly similar brand names but treated different diseases, and the Court did not stop either party from using its mark. What did the Court order to reduce the likelihood of medical switching?",
+      "choices": {
+        "A": "That one of the two companies change its brand name within six months.",
+        "B": "That both drugs be sold only in pharmacies of the registrant.",
+        "C": "That the Food and Drug Administration cancel the registration of both drugs.",
+        "D": "That each company state on its packaging, in plain language, the conditions its drug is supposed to treat and a warning about what the drug is not supposed to treat, with the Food and Drug Administration to monitor compliance."
+      },
+      "correct": "D",
+      "explanation": "D is correct. The Court ordered the parties to prominently state on their packaging, in plain language understandable by people with no medical background, the medical conditions their drugs are supposed to treat or alleviate and a warning indicating what \"ZYNAPS\" is not supposed to treat and what \"ZYNAPSE\" is not supposed to treat. The parties must submit a written report of compliance within thirty days, and the Court furnished the Food and Drug Administration a copy and directed it to monitor compliance. The Court noted that the Generics Act requires doctors to write prescriptions using the generic name, so the evil of medical switching will likely not arise, but it was still mindful of the risk to public health. A, B and C are not orders in the decision; the Court actually allowed both marks to coexist because the prior user in good faith is protected by Section 159.1.",
+      "caseIds": [
+        "case-0018"
+      ],
+      "source": {
+        "caseTitle": "Zuneca Pharmaceutical v. Natrapharm, Inc.",
+        "grNumber": "G.R. No. 211850",
+        "url": "https://lawphil.net/judjuris/juri2020/sep2020/gr_211850_2020.html",
+        "part": "Part III (the resolution of the controversy, medical switching)",
+        "excerpt": "To further reduce therefore, if not totally eliminate, the likelihood of switching in this case, the Court hereby orders the parties to prominently state on the packaging of their respective products, in plain language understandable by people with no medical background or training, the medical conditions that their respective drugs are supposed to treat or alleviate and a warning indicating what \"ZYNAPS\" is not supposed to treat and what \"ZYNAPSE\" is not supposed to treat, given the likelihood of confusion between the two."
       }
     }
   ]
