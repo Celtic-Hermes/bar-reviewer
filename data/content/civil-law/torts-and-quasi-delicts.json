@@ -121,6 +121,21 @@
       "ruling": "The Court reversed the Court of Appeals. (1) Res ipsa loquitur applied: Erlinda was neurologically sound when she submitted to a routine gallbladder operation, yet suffered brain damage before any surgery while unconscious and under the exclusive control of the doctors; brain damage does not normally occur in such an operation without negligence, and the claim did not question a diagnosis or the results of a treatment. (2) The nursing dean, though not an anesthesiologist, could testify on what she observed. Dr. Gutierrez was negligent: she did no pre-operative evaluation of the patient's airway although the surgery was elective, and the faulty intubation was the proximate cause of the brain damage. The defense pulmonologist was not competent to testify on anesthesia, allergies or the drug. Dr. Hosaka, as \"captain of the ship,\" was negligent in not seeing that his anesthesiologist followed proper protocol, and he was three hours late. The hospital was held solidarily liable on the view that an employer-employee relationship in effect exists between hospitals and their consultants (a ruling reversed in the 2002 resolution). (3) The Court awarded actual damages, ₱1,500,000 temperate damages for the chronic and continuing injury, ₱2,000,000 moral damages, exemplary damages and attorney's fees (modified in 2002 after Erlinda's death).",
       "keyDoctrine": "Res ipsa loquitur applies when a sound, unaffected part of the body is injured while the patient is unconscious and under the exclusive control of the physicians, in circumstances a layman can judge, but not to the merits of a diagnosis or the failure to secure results. Non-expert witnesses may testify on observable acts and conditions. An anesthesiologist must evaluate the patient before an elective operation. The surgeon, as captain of the ship, must see to it that those under him perform their tasks properly. Proximate cause is that which, in natural and continuous sequence, unbroken by any efficient intervening cause, produces the injury.",
       "sourceUrl": "https://lawphil.net/judjuris/juri1999/dec1999/gr_124354_1999.html"
+    },
+    {
+      "id": "case-0038",
+      "status": "draft",
+      "name": "Spouses Flores v. Spouses Pineda, et al.",
+      "grNumber": "G.R. No. 158996",
+      "year": 2008,
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "facts": "Teresita Pineda, 51, complained to her townmate Dr. Fredelicto Flores of general body weakness, loss of appetite, frequent urination and thirst, and on-and-off vaginal bleeding; he suspected diabetes. Eleven days later, very weak, she went to his clinic at the United Doctors Medical Center, where he ordered her admitted for an \"on call\" dilatation and curettage (D&C) to be done by his wife, Dr. Felicisima Flores, an obstetrician-gynecologist. Only partial laboratory results were in, showing an elevated blood sugar; the spouses discussed it and decided to proceed, with Dr. Fredelicto giving the anesthesia. The full results the next day showed very high sugar in the urine. Teresita's condition worsened, she was found to have Type II diabetes, insulin came two days after the operation, and she died of diabetic complications. Her family sued the spouses and the hospital; the trial court and the Court of Appeals held them liable.",
+      "issue": "Was the decision to proceed with the D&C despite the patient's high blood sugar an honest mistake of judgment or negligence, and did it cause her death?",
+      "ruling": "The Court denied the petition and held the spouses liable. D&C is the classic procedure for abnormal vaginal bleeding, but the timing was wrong. Diabetes was suspected from the start, the patient had classic symptoms, and the partial results showed high blood sugar; the doctors did not wait for the full results. A disability that increases the patient's risk must be taken into account if the physician knows or should know of it. The bleeding was not shown to be profuse (the medical records did not mention it), so the D&C was elective; an elective procedure requires a thorough pre-operative evaluation, and the patient's uncontrolled hyperglycemia should have been managed first, with an internist. Causation was proved: surgical stress aggravated her diabetes, leading to ketoacidosis and death. Dr. Fredelicto, an anesthesiologist, was liable for failing to guard against diabetes and for joining the decision to proceed. The Court affirmed actual, moral and exemplary damages, added ₱50,000 death indemnity under Article 2206, and restored attorney's fees.",
+      "keyDoctrine": "A medical negligence case has four elements: duty, breach, injury and proximate causation; the plaintiff must prove them by preponderance of evidence, generally through expert testimony. A physician must take into account a disability that increases the patient's risk if he knows or should know of it, and take commensurate precautions. An elective procedure requires a thorough pre-operative evaluation. Causation must be proved within a reasonable medical probability, not by speculation. Death caused by a quasi-delict entitles the heirs to death indemnity under Article 2206 of the Civil Code.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2008/nov2008/gr_158996_2008.html"
     }
   ],
   "questions": [
@@ -1956,6 +1971,237 @@
         "url": "https://lawphil.net/judjuris/juri1999/dec1999/gr_124354_1999.html",
         "part": "Ruling, res ipsa loquitur in medical negligence cases",
         "excerpt": "Medical malpractice cases do not escape the application of this doctrine. Thus, res ipsa loquitur has been applied when the circumstances attendant upon the harm are themselves of such a character as to justify an inference of negligence as the cause of that harm. The application of res ipsa loquitur in medical negligence cases presents a question of law since it is a judicial function to determine whether a certain set of circumstances does, as a matter of law, permit a given inference."
+      }
+    },
+    {
+      "id": "q-0496",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "Nora complained of weakness, frequent urination, thirst and on-and-off vaginal bleeding. Her doctors scheduled a dilatation and curettage (D&C) to find the cause of the bleeding. The preliminary laboratory results showed a high blood sugar, but without waiting for the full results, and without consulting an internist, they proceeded with the D&C. Nora's diabetes worsened after the operation and she died. Sued by her family, the doctors argue that D&C is the accepted procedure for vaginal bleeding, that their concern was only the bleeding, and that at most they made an honest mistake of judgment. Are the doctors liable? Explain.",
+      "suggestedAnswer": {
+        "answer": "Yes. The procedure was proper, but proceeding with it, despite the known risk of diabetes and without preparing the patient, fell below the standard of care, and it led to her death.",
+        "legalBasis": "In Flores v. Pineda, the Court held that if a patient suffers from some disability that increases the magnitude of risk to him, that disability must be taken into account so long as it is or should have been known to the physician, and the physician must take commensurate and adequate precautions. Where a D&C is done to diagnose bleeding that is not profuse, it is an elective procedure, and in an elective procedure the physician must conduct a thorough pre-operative evaluation to prepare the patient and minimize risks; the prudent move is to address the patient's hyperglycemia before any other procedure.",
+        "application": "Nora's weakness, frequent urination and thirst are classic symptoms of diabetes, and the preliminary results showed high blood sugar. Diabetes and its complications were foreseeable. Since the bleeding did not require an emergency operation, the doctors had time to wait for the full results, control her blood sugar and consult an internist. Their claim that their concern was only the bleeding is the very narrow, self-serving view the Court rejected.",
+        "conclusion": "The doctors are liable. **Bar trap:** the issue is not whether D&C was a proper procedure (it was) but whether it was proper to do it then, on that patient; a correct procedure done at the wrong time on an unprepared high-risk patient is negligence, not an honest mistake of judgment."
+      },
+      "keyPoints": [
+        "A disability that increases the patient's risk must be taken into account if known or should have been known",
+        "Classic diabetes symptoms and a high preliminary blood sugar made the risk foreseeable",
+        "The D&C was elective, not an emergency, so a thorough pre-operative evaluation was required",
+        "Hyperglycemia should have been controlled first, with an internist",
+        "\"Our concern was only the bleeding\" is a narrow, self-serving view"
+      ],
+      "caseIds": [
+        "case-0038"
+      ],
+      "source": {
+        "caseTitle": "Spouses Flores v. Spouses Pineda, et al.",
+        "grNumber": "G.R. No. 158996",
+        "url": "https://lawphil.net/judjuris/juri2008/nov2008/gr_158996_2008.html",
+        "part": "The Court's Ruling, Standard of Care and Breach of Duty",
+        "excerpt": "The petitioner spouses' contentions, in our view, miss several points. First, as early as April 17, 1987, Teresita was already suspected to be suffering from diabetes. This suspicion again arose right before the D&C operation on April 28, 1987 when the laboratory result revealed Teresita's increased blood sugar level. Unfortunately, the petitioner spouses did not wait for the full medical laboratory results before proceeding with the D&C, a fact that was never considered in the courts below. Second, the petitioner spouses were duly advised that the patient was experiencing general body weakness, loss of appetite, frequent urination, and thirst - all of which are classic symptoms of diabetes. … Third, the petitioner spouses cannot claim that their principal concern was the vaginal bleeding and should not therefore be held accountable for complications coming from other sources. This is a very narrow and self-serving view that even reflects on their competence. Taken together, we find that reasonable prudence would have shown that diabetes and its complications were foreseeable harm that should have been taken into consideration by the petitioner spouses. If a patient suffers from some disability that increases the magnitude of risk to him, that disability must be taken into account so long as it is or should have been known to the physician. And when the patient is exposed to an increased risk, it is incumbent upon the physician to take commensurate and adequate precautions. … That the D&C operation was conducted principally to diagnose the cause of the vaginal bleeding further leads us to conclude that it was merely an elective procedure, not an emergency case. In an elective procedure, the physician must conduct a thorough pre-operative evaluation of the patient in order to adequately prepare her for the operation and minimize possible risks and complications. … The prudent move is to address the patient's hyperglycemic state immediately and promptly before any other procedure is undertaken."
+      }
+    },
+    {
+      "id": "q-0497",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "Explain the elements of duty and breach of duty in a medical negligence case. Who has the burden of proving the elements, by what quantum of evidence, and why is expert testimony generally essential?",
+      "suggestedAnswer": {
+        "answer": "Duty refers to the standard of behavior which imposes restrictions on one's conduct; for a physician, the standard is the amount of competence associated with the proper discharge of the profession, at least the level of care that any other reasonably competent doctor would use under the same circumstances. Breach of duty occurs when the physician fails to comply with these professional standards. The plaintiff has the burden of proving the elements by preponderance of evidence, generally through expert testimony.",
+        "legalBasis": "In Flores v. Pineda, the Court described a medical negligence case as a claim to redress a wrong by a medical professional that has caused bodily harm to or the death of a patient, with four elements: duty, breach, injury and proximate causation. As in any civil action, the plaintiff must prove by preponderance of evidence that the physician failed to do what a reasonably prudent health care provider would have done, or did what one would not have done, and that this caused injury. Expert testimony is essential because whether a physician exercised the requisite skill and care is generally a matter of expert opinion.",
+        "application": "So a patient's family must show, usually through qualified doctors, what a reasonably competent physician would have done in the same circumstances, that the defendant departed from it, and that the departure caused the injury or death. In Flores, the family's experts testified that the D&C should have been postponed and the diabetes managed by an internist first.",
+        "conclusion": "Duty is the professional standard of competence; breach is the failure to meet it; the plaintiff proves both by preponderance of evidence, generally through experts. **Bar trap:** a civil medical negligence case needs only preponderance of evidence, not proof beyond reasonable doubt (compare Jarcia v. People)."
+      },
+      "keyPoints": [
+        "Elements: duty, breach, injury, proximate causation",
+        "Duty: the standard of behavior restricting one's conduct; at least the care of a reasonably competent doctor in the same circumstances",
+        "Breach: failure to comply with the professional standards",
+        "Burden on the plaintiff, by preponderance of evidence",
+        "Expert testimony is essential, since skill and care are generally a matter of expert opinion"
+      ],
+      "caseIds": [
+        "case-0038"
+      ],
+      "source": {
+        "caseTitle": "Spouses Flores v. Spouses Pineda, et al.",
+        "grNumber": "G.R. No. 158996",
+        "url": "https://lawphil.net/judjuris/juri2008/nov2008/gr_158996_2008.html",
+        "part": "The Court's Ruling, Elements of a Medical Negligence Case",
+        "excerpt": "A medical negligence case is a type of claim to redress a wrong committed by a medical professional, that has caused bodily harm to or the death of a patient. There are four elements involved in a medical negligence case, namely: duty, breach, injury, and proximate causation. Duty refers to the standard of behavior which imposes restrictions on one's conduct. The standard in turn refers to the amount of competence associated with the proper discharge of the profession. A physician is expected to use at least the same level of care that any other reasonably competent doctor would use under the same circumstances. Breach of duty occurs when the physician fails to comply with these professional standards. If injury results to the patient as a result of this breach, the physician is answerable for negligence. As in any civil action, the burden to prove the existence of the necessary elements rests with the plaintiff. To successfully pursue a claim, the plaintiff must prove by preponderance of evidence that, one, the physician either failed to do something which a reasonably prudent health care provider would have done, or that he did something that a reasonably prudent provider would not have done; and two, the failure or action caused injury to the patient. Expert testimony is therefore essential since the factual issue of whether a physician or surgeon has exercised the requisite degree of skill and care in the treatment of his patient is generally a matter of expert opinion."
+      }
+    },
+    {
+      "id": "q-0498",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "In a suit against doctors who operated on a patient with uncontrolled high blood sugar, the doctors argue that the patient died of diabetes, a disease they did not cause, and that nothing shows her death could have been averted by other means. Discuss how causation must be proved in a medical negligence case, and resolve the argument.",
+      "suggestedAnswer": {
+        "answer": "Causation is the critical and clinching factor: the plaintiff must prove that the defendant's fault caused the injury, within a reasonable medical probability based on competent expert testimony, not speculation. Here causation is proved: the operation, done without first controlling the diabetes, aggravated it and led to death.",
+        "legalBasis": "In Flores v. Pineda, the Court held that the plaintiff must plead and prove not only that he had been injured and that the defendant was at fault, but also that the defendant's fault caused the injury; a verdict in a malpractice action cannot be based on speculation or conjecture, and causation must be proven within a reasonable medical probability based upon competent expert testimony.",
+        "application": "The expert testimony explained that surgical stress makes a diabetic's body secrete counter-regulatory hormones, causing prolonged hyperglycemia that, if unchecked, can lead to death; the death certificate listed ketoacidosis with diabetes as the underlying cause; and after the D&C the patient's blood sugar shot up. Between the D&C and death was a diabetic complication that could have been prevented with standard precautions. That the doctors did not cause the diabetes does not matter; their operation on an unprepared diabetic aggravated it.",
+        "conclusion": "The argument fails; the causal link between the negligent D&C and the death was sufficiently established. **Bar trap:** the defendant need not have caused the underlying disease; it is enough that his negligence aggravated a known risk and produced the death."
+      },
+      "keyPoints": [
+        "Causation is the critical and clinching factor in a medical negligence case",
+        "The plaintiff must prove injury, fault, and that the fault caused the injury",
+        "No verdict on speculation; causation within a reasonable medical probability, through competent expert testimony",
+        "Surgical stress aggravated the diabetes, leading to ketoacidosis and death",
+        "The doctors need not have caused the disease; their negligence aggravated it"
+      ],
+      "caseIds": [
+        "case-0038"
+      ],
+      "source": {
+        "caseTitle": "Spouses Flores v. Spouses Pineda, et al.",
+        "grNumber": "G.R. No. 158996",
+        "url": "https://lawphil.net/judjuris/juri2008/nov2008/gr_158996_2008.html",
+        "part": "The Court's Ruling, Injury and Causation",
+        "excerpt": "As previously mentioned, the critical and clinching factor in a medical negligence case is proof of the causal connection between the negligence which the evidence established and the plaintiff's injuries; the plaintiff must plead and prove not only that he had been injured and defendant has been at fault, but also that the defendant's fault caused the injury. A verdict in a malpractice action cannot be based on speculation or conjecture. Causation must be proven within a reasonable medical probability based upon competent expert testimony. … Stress, whether physical or emotional, is a factor that can aggravate diabetes; a D&C operation is a form of physical stress. Dr. Mendoza explained how surgical stress can aggravate the patient's hyperglycemia: when stress occurs, the diabetic's body, especially the autonomic system, reacts by secreting hormones which are counter-regulatory; she can have prolonged hyperglycemia which, if unchecked, could lead to death. … Thus, between the D&C and death was the diabetic complication that could have been prevented with the observance of standard medical precautions."
+      }
+    },
+    {
+      "id": "q-0499",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "In Flores v. Pineda, \"the standard of behavior which imposes restrictions on one's conduct\" is the Court's definition of",
+      "choices": {
+        "A": "breach.",
+        "B": "proximate causation.",
+        "C": "duty.",
+        "D": "injury."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court said: \"Duty refers to the standard of behavior which imposes restrictions on one's conduct. The standard in turn refers to the amount of competence associated with the proper discharge of the profession.\" **A is wrong:** breach of duty occurs when the physician fails to comply with these professional standards. **B is wrong:** proximate causation is the link between the breach and the injury. **D is wrong:** injury is the harm the patient suffers. **Bar trap:** know each of the four elements by its own definition.",
+      "caseIds": [
+        "case-0038"
+      ],
+      "source": {
+        "caseTitle": "Spouses Flores v. Spouses Pineda, et al.",
+        "grNumber": "G.R. No. 158996",
+        "url": "https://lawphil.net/judjuris/juri2008/nov2008/gr_158996_2008.html",
+        "part": "The Court's Ruling, Elements of a Medical Negligence Case",
+        "excerpt": "Duty refers to the standard of behavior which imposes restrictions on one's conduct. The standard in turn refers to the amount of competence associated with the proper discharge of the profession. A physician is expected to use at least the same level of care that any other reasonably competent doctor would use under the same circumstances. Breach of duty occurs when the physician fails to comply with these professional standards."
+      }
+    },
+    {
+      "id": "q-0500",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "The doctors in Flores v. Pineda claimed they performed the D&C urgently because the patient's vaginal bleeding was profuse. Why did the Court not believe them?",
+      "choices": {
+        "A": "Because their testimonies were self-serving and inconsistent, and the medical records did not indicate profuse bleeding although it was the main complaint; a medical record that does not indicate it \"speaks loudly and clearly of what it does not contain.\"",
+        "B": "Because profuse bleeding never justifies a D&C.",
+        "C": "Because the patient herself denied any bleeding.",
+        "D": "Because only the hospital director may certify that a case is an emergency."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court declined to rely on the claim because it was self-serving and the doctors were inconsistent (one testified he saw the bleeding, then that he did not). The experts testified that the records failed to show profuse bleeding, which was odd since bleeding was the main complaint; a medical record is the only long-term transcription of patient care, and one \"that does not indicate profuse medical bleeding speaks loudly and clearly of what it does not contain.\" **B is wrong:** the experts said a D&C on a hyperglycemic patient may be justified in an emergency, when there is profuse bleeding. **C is wrong:** the patient did complain of on-and-off bleeding. **D is wrong:** no such rule figures in the case. **Bar trap:** what is missing from the medical record can be evidence against the doctor.",
+      "caseIds": [
+        "case-0038"
+      ],
+      "source": {
+        "caseTitle": "Spouses Flores v. Spouses Pineda, et al.",
+        "grNumber": "G.R. No. 158996",
+        "url": "https://lawphil.net/judjuris/juri2008/nov2008/gr_158996_2008.html",
+        "part": "The Court's Ruling, Standard of Care and Breach of Duty (the medical records)",
+        "excerpt": "In this case, we choose not to rely on the assertions of the petitioner spouses that there was profuse bleeding, not only because the statements were self-serving, but also because the petitioner spouses were inconsistent in their testimonies. … Dr. Tan and Dr. Mendoza both testified that the medical records of Teresita failed to indicate that there was profuse vaginal bleeding. The claim that there was profuse vaginal bleeding although this was not reflected in the medical records strikes us as odd since the main complaint is vaginal bleeding. A medical record is the only document that maintains a long-term transcription of patient care and as such, its maintenance is considered a priority in hospital practice. Optimal record-keeping includes all patient inter-actions. The records should always be clear, objective, and up-to-date. Thus, a medical record that does not indicate profuse medical bleeding speaks loudly and clearly of what it does not contain."
+      }
+    },
+    {
+      "id": "q-0501",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "In Flores v. Pineda, the Court added an award that the Court of Appeals had missed. Which award, and on what basis?",
+      "choices": {
+        "A": "Temperate damages, because the patient's illness was chronic and continuing.",
+        "B": "Nominal damages, because the heirs' rights were violated.",
+        "C": "Liquidated damages, because the hospital's admission form fixed them.",
+        "D": "₱50,000 death indemnity under Article 2206 of the Civil Code, which provides damages for death caused by a quasi-delict \"even though there may have been mitigating circumstances.\""
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The Court held that the heirs were entitled to ₱50,000 as death indemnity under Article 2206 of the Civil Code, which states that the amount of damages for death caused by a quasi-delict shall be at least a fixed sum \"even though there may have been mitigating circumstances,\" and called this \"a question of law that the CA missed in its decision.\" The same article allows moral damages for death by quasi-delict to the spouse and ascendants or descendants. **A, B and C are wrong:** none of these was awarded or discussed in the decision. **Bar trap:** death indemnity is separate from, and in addition to, actual, moral and exemplary damages.",
+      "caseIds": [
+        "case-0038"
+      ],
+      "source": {
+        "caseTitle": "Spouses Flores v. Spouses Pineda, et al.",
+        "grNumber": "G.R. No. 158996",
+        "url": "https://lawphil.net/judjuris/juri2008/nov2008/gr_158996_2008.html",
+        "part": "The Court's Ruling, Award of Damages (death indemnity)",
+        "excerpt": "In addition to the award for actual damages, the respondent heirs of Teresita are likewise entitled to P50,000.00 as death indemnity pursuant to Article 2206 of the Civil Code, which states that \"the amount of damages for death caused by a xxx quasi-delict shall be at least three thousand pesos, even though there may have been mitigating circumstances xxx.\" This is a question of law that the CA missed in its decision and which we now decide in the respondents' favor."
+      }
+    },
+    {
+      "id": "q-0502",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "According to Flores v. Pineda, when a patient suffers from some disability that increases the magnitude of risk to him, what must the physician do?",
+      "choices": {
+        "A": "Nothing beyond the procedure requested, since the physician is responsible only for the complaint presented.",
+        "B": "Take the disability into account so long as it is or should have been known to him, and take commensurate and adequate precautions.",
+        "C": "Refuse to treat the patient altogether.",
+        "D": "Proceed, but only after the patient signs a waiver of liability."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court held: \"If a patient suffers from some disability that increases the magnitude of risk to him, that disability must be taken into account so long as it is or should have been known to the physician. And when the patient is exposed to an increased risk, it is incumbent upon the physician to take commensurate and adequate precautions.\" **A is wrong:** the Court called the doctors' focus on the bleeding alone \"a very narrow and self-serving view.\" **C is wrong:** the duty is to take precautions (here, control the blood sugar and consult an internist), not to refuse treatment. **D is wrong:** no waiver figures in the decision. **Bar trap:** \"should have been known\" means the physician is charged with risks that the symptoms or tests point to, even if not yet confirmed.",
+      "caseIds": [
+        "case-0038"
+      ],
+      "source": {
+        "caseTitle": "Spouses Flores v. Spouses Pineda, et al.",
+        "grNumber": "G.R. No. 158996",
+        "url": "https://lawphil.net/judjuris/juri2008/nov2008/gr_158996_2008.html",
+        "part": "The Court's Ruling, Standard of Care and Breach of Duty (increased risk)",
+        "excerpt": "If a patient suffers from some disability that increases the magnitude of risk to him, that disability must be taken into account so long as it is or should have been known to the physician. And when the patient is exposed to an increased risk, it is incumbent upon the physician to take commensurate and adequate precautions."
+      }
+    },
+    {
+      "id": "q-0503",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "Dr. Fredelicto Flores, an anesthesiologist, argued in Flores v. Pineda that he could not be liable for the D&C, which was performed by his wife, an obstetrician-gynecologist. On what ground did the Court hold him liable?",
+      "choices": {
+        "A": "Because spouses are always solidarily liable for each other's professional acts.",
+        "B": "Because an anesthesiologist is always the captain of the ship.",
+        "C": "Because he failed from the start to identify and confirm diabetes as a risk factor despite the complaints and his own suspicions, and he took part in the imprudent decision to proceed despite the early laboratory results.",
+        "D": "Because he administered the wrong anesthetic drug."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court clarified that his negligence was \"his failure from the very start to identify and confirm, despite the patient's complaints and his own suspicions, that diabetes was a risk factor that should be guarded against, and his participation in the imprudent decision to proceed with the D&C operation despite his early suspicion and the confirmatory early laboratory results.\" If he considered himself incompetent to treat the diabetes, he should also have refrained from deciding to proceed, not being an obstetrician or gynecologist. **A is wrong:** liability rested on his own negligence, not on the marriage. **B is wrong:** the decision does not apply the captain of the ship rule to him. **D is wrong:** no wrong drug was found. **Bar trap:** a doctor who joins a decision outside his specialty shares responsibility for it.",
+      "caseIds": [
+        "case-0038"
+      ],
+      "source": {
+        "caseTitle": "Spouses Flores v. Spouses Pineda, et al.",
+        "grNumber": "G.R. No. 158996",
+        "url": "https://lawphil.net/judjuris/juri2008/nov2008/gr_158996_2008.html",
+        "part": "The Court's Ruling, Injury and Causation (the liability of Dr. Fredelicto)",
+        "excerpt": "However, we clarify that Dr. Fredelicto's negligence is not solely the act of ordering an \"on call\" D&C operation when he was mainly an anaesthesiologist who had made a very cursory examination of the patient's vaginal bleeding complaint. Rather, it was his failure from the very start to identify and confirm, despite the patient's complaints and his own suspicions, that diabetes was a risk factor that should be guarded against, and his participation in the imprudent decision to proceed with the D&C operation despite his early suspicion and the confirmatory early laboratory results."
       }
     }
   ]
