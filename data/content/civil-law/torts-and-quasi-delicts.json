@@ -151,6 +151,21 @@
       "ruling": "The Court en banc granted the petition and reinstated the dismissal. It explained the doctrine of informed consent: a physician must disclose what a reasonably prudent physician would disclose about the grave risks of a proposed treatment, so the patient can intelligently weigh risks against benefits; the test of what must be disclosed is materiality to the patient's decision; and an undisclosed risk must materialize and must have caused the injury, meaning consent would not have been given had it been revealed. The four elements of an informed-consent action are: a duty to disclose material risks; failure or inadequate disclosure; consent that would otherwise not have been given, as a direct and proximate result; and injury from the treatment. Here the disclosure was adequate: the parents were told of the general side effects, from which the possibility of death could reasonably be drawn, and the 95% claim was not credible. Moreover, duty and breach must be proved by expert testimony on the customary standard of physicians in the same practice, and the parents' witnesses were not oncologists.",
       "keyDoctrine": "Under the doctrine of informed consent, a physician must disclose what a reasonably prudent physician in the medical community would disclose about the grave risks of a proposed treatment, so the patient can intelligently choose; the test is the materiality of the risk to the patient's decision. The plaintiff must prove (1) a duty to disclose material risks, (2) failure or inadequate disclosure, (3) consent that would not otherwise have been given, as a direct and proximate result, and (4) injury from the treatment. Under Li, duty and breach must be proved by expert testimony from physicians in the same practice.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2011/jun2011/gr_165279_2011.html"
+    },
+    {
+      "id": "case-0040",
+      "status": "draft",
+      "name": "Ramos, et al. v. Court of Appeals, et al. (Resolution)",
+      "grNumber": "G.R. No. 124354",
+      "year": 2002,
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "facts": "In its December 29, 1999 decision, the Court held the surgeon Dr. Orlino Hosaka, the anesthesiologist Dr. Perfecta Gutierrez and the De Los Santos Medical Center (DLSMC) solidarily liable for Erlinda Ramos's coma, which followed a faulty intubation before a scheduled gallbladder operation. The two doctors and the hospital moved for reconsideration. The Philippine College of Surgeons intervened, arguing that the captain of the ship doctrine had long been abandoned in the United States, and the Court heard oral arguments with anesthesiologists and a former Secretary of Health as amici curiae. Erlinda died on August 3, 1999, after fourteen years in a coma.",
+      "issue": "(1) Are Dr. Gutierrez and Dr. Hosaka liable for negligence? (2) Is the hospital liable for the negligence of its visiting consultant surgeon and anesthesiologist? (3) Should the damages be modified?",
+      "ruling": "The Court modified its decision. (1) Dr. Gutierrez remained liable: a pre-anesthetic evaluation, whether the operation is elective or an emergency, cannot be dispensed with, and she did not examine the patient's airway; the improper intubation caused the coma, and res ipsa loquitur applied. Dr. Hosaka remained liable: although there is a trend in American courts to abandon the captain of the ship doctrine, the Court will not follow it ipso facto; on the facts, he recommended Dr. Gutierrez, was the attending physician, and worked with her as a team, and he arrived more than three hours late, which aggravated the patient's anxiety and violated his duty and Article 19 of the Civil Code. (2) The hospital was absolved: under the four-fold test there was no employer-employee relationship (consultants are admitted by a credentials committee, are not paid by the hospital, and the contract between consultant and patient is separate from that between hospital and patient), and no failure of the hospital's own facilities or staff was shown. (3) Because Erlinda had died, the temperate damages were deleted; the doctors were held solidarily liable for actual, moral and exemplary damages, attorney's fees and costs.",
+      "keyDoctrine": "A pre-anesthetic evaluation, whether the operation is elective or an emergency, cannot be dispensed with. The captain of the ship doctrine may still be applied where the facts show the surgeon supervised and worked as a team with the anesthesiologist. A hospital is not solidarily liable under Article 2180 for its consultants absent an employer-employee relationship under the four-fold test (selection and engagement, payment of wages, power to dismiss, and power of control over the means). The contract between consultant and patient is distinct from the contract between hospital and patient.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2002/apr2002/gr_124354_2002.html"
     }
   ],
   "questions": [
@@ -2449,6 +2464,237 @@
         "url": "https://lawphil.net/judjuris/juri2011/jun2011/gr_165279_2011.html",
         "part": "Ruling, expert testimony in informed-consent cases",
         "excerpt": "Further, in a medical malpractice action based on lack of informed consent, \"the plaintiff must prove both the duty and the breach of that duty through expert testimony. Such expert testimony must show the customary standard of care of physicians in the same practice as that of the defendant doctor. In this case, the testimony of Dr. Balmaceda who is not an oncologist but a Medical Specialist of the DOH’s Operational and Management Services charged with receiving complaints against hospitals, does not qualify as expert testimony to establish the standard of care in obtaining consent for chemotherapy treatment."
+      }
+    },
+    {
+      "id": "q-0512",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "A surgeon, sued together with the anesthesiologist he recommended for a patient's brain damage during intubation, argues that anesthesiology and surgery are distinct specialties, that he had no control over the anesthesiologist, and that courts in the United States have abandoned the captain of the ship doctrine. The evidence shows that he had always worked with this anesthesiologist, recommended her to the patient, admitted being the attending physician, watched the intubation and noticed the patient's bluish nails, and arrived three hours late for the scheduled operation. Is the surgeon liable? Explain.",
+      "suggestedAnswer": {
+        "answer": "Yes. The trend abroad does not bind Philippine courts, and on these facts the surgeon exercised at least supervision and worked with the anesthesiologist as a team; his three-hour delay was also a breach of his own duty.",
+        "legalBasis": "In its 2002 resolution in Ramos v. Court of Appeals, the Court held that a trend in American jurisprudence to do away with the captain of the ship doctrine does not mean that the Court will ipso facto follow it; the peculiar facts justified applying it. The surgeon recommended the anesthesiologist (representing her competence), was the attending physician, and worked with her as a team whose duties intersect, so they were not completely independent of each other as to absolve one from the other's negligence. Arriving more than three hours late, after double-booking, subjected the patient to continued starvation and aggravated anxiety, which affects the administration of anesthesia; this violated his duty to serve his patients with the greatest solicitude and Article 19 of the Civil Code, which requires one to act with justice and give everyone his due.",
+        "application": "The surgeon's own acts (recommending the anesthesiologist, being the attending physician, keeping an eye on the intubation, calling for help when the patient turned blue) show supervision and teamwork, not separate watertight compartments. His lateness was an independent breach. Specialization does not excuse him on these facts.",
+        "conclusion": "The surgeon is liable with the anesthesiologist. **Bar trap:** the captain of the ship doctrine is applied on the facts; the Court did not adopt the American trend to abandon it, but it relied on actual supervision and teamwork, not on title alone."
+      },
+      "keyPoints": [
+        "The American trend to abandon the doctrine is not ipso facto followed",
+        "The surgeon recommended the anesthesiologist and was the attending physician",
+        "They worked as a team with intersecting duties; not completely independent",
+        "Arriving three hours late aggravated the patient's starvation and anxiety",
+        "The delay violated the physician's duty and Article 19 of the Civil Code"
+      ],
+      "caseIds": [
+        "case-0040"
+      ],
+      "source": {
+        "caseTitle": "Ramos, et al. v. Court of Appeals, et al. (Resolution)",
+        "grNumber": "G.R. No. 124354",
+        "url": "https://lawphil.net/judjuris/juri2002/apr2002/gr_124354_2002.html",
+        "part": "Resolution, the liability of Dr. Hosaka (captain of the ship)",
+        "excerpt": "That there is a trend in American jurisprudence to do away with the Captain-of-the-Ship doctrine does not mean that this Court will ipso facto follow said trend. Due regard for the peculiar factual circumstances obtaining in this case justify the application of the Captain-of-the-Ship doctrine. From the facts on record it can be logically inferred that Dr. Hosaka exercised a certain degree of, at the very least, supervision over the procedure then being performed on Erlinda. First, it was Dr. Hosaka who recommended to petitioners the services of Dr. Gutierrez. In effect, he represented to petitioners that Dr. Gutierrez possessed the necessary competence and skills. … Second, Dr. Hosaka himself admitted that he was the attending physician of Erlinda. … Third, it is conceded that in performing their responsibilities to the patient, Drs. Hosaka and Gutierrez worked as a team. Their work cannot be placed in separate watertight compartments because their duties intersect with each other. While the professional services of Dr. Hosaka and Dr. Gutierrez were secured primarily for their performance of acts within their respective fields of expertise for the treatment of petitioner Erlinda, and that one does not exercise control over the other, they were certainly not completely independent of each other so as to absolve one from the negligent acts of the other physician. … Dr. Hosaka's irresponsible conduct of arriving very late for the scheduled operation of petitioner Erlinda is violative, not only of his duty as a physician \"to serve the interest of his patients with the greatest solicitude, giving them always his best talent and skill,\" but also of Article 19 of the Civil Code which requires a person, in the performance of his duties, to act with justice and give everyone his due."
+      }
+    },
+    {
+      "id": "q-0513",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "Is a private hospital solidarily liable under Article 2180 of the Civil Code for the negligence of its visiting consultant surgeon and anesthesiologist, on the ground that hospitals hire, fire and control their consultants? Explain, with reference to the 2002 resolution in Ramos v. Court of Appeals.",
+      "suggestedAnswer": {
+        "answer": "Not on that ground alone. In its 2002 resolution the Court reversed its 1999 holding and absolved the hospital, finding no employer-employee relationship between it and the consultant doctors under the four-fold test, and no failure of the hospital's own facilities or staff.",
+        "legalBasis": "An employer-employee relationship requires: (1) the selection and engagement of services; (2) the payment of wages; (3) the power to hire and fire; and (4) the power to control not only the end to be achieved but the means to be used in reaching it. In Ramos (2002), the Court found that consultants are admitted to the medical staff through a credentials committee of department heads, disciplined through an ethics committee of specialty heads, and not paid by the hospital; and that the contract between the consultant and the patient (for medical services) is separate and distinct from the contract between the hospital and the patient (for facilities and services of its staff). No evidence showed the injury was due to a failure of the hospital to provide facilities and staff.",
+        "application": "The hospital therefore did not answer under Article 2180 for the doctors' negligence; only the two doctors were held solidarily liable. A hospital may still be liable on other grounds where the facts support them (for example, apparent authority or its own corporate negligence, as later discussed in Professional Services, Inc. v. Agana), but those were not the basis of the 1999 ruling that was reversed.",
+        "conclusion": "The hospital was absolved for lack of an employer-employee relationship. **Bar trap:** do not cite the 1999 Ramos pronouncement that an employer-employee relationship \"in effect\" exists between hospitals and consultants; it was reversed in 2002."
+      },
+      "keyPoints": [
+        "Four-fold test: selection and engagement; payment of wages; power to dismiss; power of control over the means",
+        "Consultants are admitted by a credentials committee and disciplined by an ethics committee of department heads",
+        "The hospital does not pay the consultants",
+        "Contract between consultant and patient (medical services) is distinct from hospital and patient (facilities and staff)",
+        "No failure of the hospital's own facilities or staff was shown; the hospital was absolved"
+      ],
+      "caseIds": [
+        "case-0040"
+      ],
+      "source": {
+        "caseTitle": "Ramos, et al. v. Court of Appeals, et al. (Resolution)",
+        "grNumber": "G.R. No. 124354",
+        "url": "https://lawphil.net/judjuris/juri2002/apr2002/gr_124354_2002.html",
+        "part": "Resolution, the liability of DLSMC",
+        "excerpt": "It has been consistently held that in determining whether an employer-employee relationship exists between the parties, the following elements must be present: (1) selection and engagement of services; (2) payment of wages; (3) the power to hire and fire; and (4) the power to control not only the end to be achieved, but the means to be used in reaching such an end. … After a careful consideration of the arguments raised by DLSMC, the Court finds that respondent hospital’s position on this issue is meritorious. There is no employer-employee relationship between DLSMC and Drs. Gutierrez and Hosaka which would hold DLSMC solidarily liable for the injury suffered by petitioner Erlinda under Article 2180 of the Civil Code. As explained by respondent hospital, that the admission of a physician to membership in DLSMC’s medical staff as active or visiting consultant is first decided upon by the Credentials Committee thereof, which is composed of the heads of the various specialty departments such as the Department of Obstetrics and Gynecology, Pediatrics, Surgery with the department head of the particular specialty applied for as chairman. … Neither is there any showing that it is DLSMC which pays any of its consultants for medical services rendered by the latter to their respective patients. Moreover, the contract between the consultant in respondent hospital and his patient is separate and distinct from the contract between respondent hospital and said patient. The first has for its object the rendition of medical services by the consultant to the patient, while the second concerns the provision by the hospital of facilities and services by its staff such as nurses and laboratory personnel necessary for the proper treatment of the patient. Further, no evidence was adduced to show that the injury suffered by petitioner Erlinda was due to a failure on the part of respondent DLSMC to provide for hospital facilities and staff necessary for her treatment. For these reasons, we reverse the finding of liability on the part of DLSMC for the injury suffered by petitioner Erlinda."
+      }
+    },
+    {
+      "id": "q-0514",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "An anesthesiologist argues that a full pre-anesthetic evaluation is needed only in elective operations, and that since she listened to the patient's heart and lungs and took her blood pressure an hour before the operation, she did all that was required. Under the 2002 resolution in Ramos v. Court of Appeals, is she correct? Explain what a pre-anesthetic evaluation involves.",
+      "suggestedAnswer": {
+        "answer": "No. A pre-anesthetic evaluation, whether the operation is elective or an emergency, cannot be dispensed with; and checking the heart, lungs and blood pressure without examining the patient's airway is not a thorough evaluation.",
+        "legalBasis": "In its 2002 resolution in Ramos, the Court, guided by the anesthesiologists who appeared as amici curiae, held that the conduct of a preanesthetic or preoperative evaluation prior to an operation, whether elective or emergency, cannot be dispensed with, since it is necessary to formulate a plan of anesthesia care suited to the patient. It involves taking the medical history, reviewing current drug therapy, conducting a physical examination, interpreting laboratory data, and determining the appropriate preoperative medications. The physical examination covers the central nervous system, cardiovascular system and lungs, and also the upper airway (cervical spine and jaw mobility, prominent incisors, diseased or artificial teeth, the uvula and the thyromental distance).",
+        "application": "The anesthesiologist saw the patient only an hour before the operation and did not examine her airway. Had she done so, she would most probably not have had difficulty intubating the patient, and the injury could have been avoided. Her partial check does not meet the standard.",
+        "conclusion": "She is not correct; she was negligent. **Bar trap:** the 1999 decision stressed that elective cases leave ample time for evaluation; the 2002 resolution goes further: the evaluation cannot be dispensed with in either elective or emergency operations."
+      },
+      "keyPoints": [
+        "A pre-anesthetic evaluation cannot be dispensed with, whether the operation is elective or an emergency",
+        "Purpose: a plan of anesthesia care suited to the patient",
+        "It covers medical history, current drug therapy, physical examination, laboratory data, preoperative medications",
+        "The physical examination includes the upper airway",
+        "Failing to examine the airway led to the difficult intubation and the injury"
+      ],
+      "caseIds": [
+        "case-0040"
+      ],
+      "source": {
+        "caseTitle": "Ramos, et al. v. Court of Appeals, et al. (Resolution)",
+        "grNumber": "G.R. No. 124354",
+        "url": "https://lawphil.net/judjuris/juri2002/apr2002/gr_124354_2002.html",
+        "part": "Resolution, the liability of Dr. Gutierrez (pre-anesthetic evaluation)",
+        "excerpt": "The conduct of a preanesthetic/preoperative evaluation prior to an operation, whether elective or emergency, cannot be dispensed with. Such evaluation is necessary for the formulation of a plan of anesthesia care suited to the needs of the patient concerned. Pre-evaluation for anesthesia involves taking the patient’s medical history, reviewing his current drug therapy, conducting physical examination, interpreting laboratory data, and determining the appropriate prescription of preoperative medications as necessary to the conduct of anesthesia. Physical examination of the patient entails not only evaluating the patient’s central nervous system, cardiovascular system and lungs but also the upper airway. Examination of the upper airway would in turn include an analysis of the patient’s cervical spine mobility, temporomandibular mobility, prominent central incisors, deceased or artificial teeth, ability to visualize uvula and the thyromental distance. Nonetheless, Dr. Gutierrez omitted to perform a thorough preoperative evaluation on Erlinda. As she herself admitted, she saw Erlinda for the first time on the day of the operation itself, one hour before the scheduled operation. She auscultated the patient’s heart and lungs and checked the latter’s blood pressure to determine if Erlinda was indeed fit for operation. However, she did not proceed to examine the patient’s airway. Had she been able to check petitioner Erlinda’s airway prior to the operation, Dr. Gutierrez would most probably not have experienced difficulty in intubating the former, and thus the resultant injury could have been avoided."
+      }
+    },
+    {
+      "id": "q-0515",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "In determining whether an employer-employee relationship exists, as applied in the 2002 resolution in Ramos v. Court of Appeals, which of the following is NOT one of the elements of the four-fold test?",
+      "choices": {
+        "A": "Selection and engagement of services.",
+        "B": "Payment of wages.",
+        "C": "Accreditation by a specialty board.",
+        "D": "The power to control not only the end to be achieved, but the means to be used in reaching such an end."
+      },
+      "correct": "C",
+      "explanation": "**C is correct (it is not an element).** The Court listed the elements as: (1) selection and engagement of services; (2) payment of wages; (3) the power to hire and fire; and (4) the power to control not only the end but the means. Board accreditation is a qualification a consultant shows to be admitted to a hospital's staff; the hospital argued that accrediting a consultant is not the same as hiring him. **A, B and D are wrong answers** because each is one of the four elements. **Bar trap:** the power to hire and fire is the missing fourth element; do not replace it with accreditation.",
+      "caseIds": [
+        "case-0040"
+      ],
+      "source": {
+        "caseTitle": "Ramos, et al. v. Court of Appeals, et al. (Resolution)",
+        "grNumber": "G.R. No. 124354",
+        "url": "https://lawphil.net/judjuris/juri2002/apr2002/gr_124354_2002.html",
+        "part": "Resolution, the four-fold test",
+        "excerpt": "It has been consistently held that in determining whether an employer-employee relationship exists between the parties, the following elements must be present: (1) selection and engagement of services; (2) payment of wages; (3) the power to hire and fire; and (4) the power to control not only the end to be achieved, but the means to be used in reaching such an end. DLSMC maintains that first, a hospital does not hire or engage the services of a consultant, but rather, accredits the latter and grants him or her the privilege of maintaining a clinic and/or admitting patients in the hospital upon a showing by the consultant that he or she possesses the necessary qualifications, such as accreditation by the appropriate board (diplomate), evidence of fellowship and references."
+      }
+    },
+    {
+      "id": "q-0516",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "According to the 2002 resolution in Ramos v. Court of Appeals, how does the contract between a consultant and his patient differ from the contract between the hospital and the patient?",
+      "choices": {
+        "A": "The first has for its object the rendition of medical services by the consultant; the second concerns the provision by the hospital of facilities and services by its staff, such as nurses and laboratory personnel.",
+        "B": "There is only one contract, between the hospital and the patient, and the consultant is the hospital's agent.",
+        "C": "The first is a contract of sale; the second is a contract of lease.",
+        "D": "The first is governed by the hospital's rules; the second by the doctor's own policies."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court held that \"the contract between the consultant in respondent hospital and his patient is separate and distinct from the contract between respondent hospital and said patient. The first has for its object the rendition of medical services by the consultant to the patient, while the second concerns the provision by the hospital of facilities and services by its staff such as nurses and laboratory personnel necessary for the proper treatment of the patient.\" **B is wrong:** the Court treated them as two distinct contracts and found no employment relationship. **C and D are wrong:** neither describes what the Court said. **Bar trap:** this distinction is why the hospital was absolved: no failure of its own facilities or staff was shown.",
+      "caseIds": [
+        "case-0040"
+      ],
+      "source": {
+        "caseTitle": "Ramos, et al. v. Court of Appeals, et al. (Resolution)",
+        "grNumber": "G.R. No. 124354",
+        "url": "https://lawphil.net/judjuris/juri2002/apr2002/gr_124354_2002.html",
+        "part": "Resolution, the contracts between hospital, consultant and patient",
+        "excerpt": "Moreover, the contract between the consultant in respondent hospital and his patient is separate and distinct from the contract between respondent hospital and said patient. The first has for its object the rendition of medical services by the consultant to the patient, while the second concerns the provision by the hospital of facilities and services by its staff such as nurses and laboratory personnel necessary for the proper treatment of the patient. Further, no evidence was adduced to show that the injury suffered by petitioner Erlinda was due to a failure on the part of respondent DLSMC to provide for hospital facilities and staff necessary for her treatment."
+      }
+    },
+    {
+      "id": "q-0517",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "In its 2002 resolution in Ramos v. Court of Appeals, why did the Court delete the award of temperate damages?",
+      "choices": {
+        "A": "Because temperate damages can never be awarded together with actual damages.",
+        "B": "Because the hospital, which was absolved, was the only party liable for them.",
+        "C": "Because the petitioners failed to prove any pecuniary loss.",
+        "D": "Because the patient had died, so the actual damages already awarded were sufficient to cover her medical expenses."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The Court noted that Erlinda died on August 3, 1999, and that \"[i]n view of this supervening event, the award of temperate damages in addition to the actual or compensatory damages would no longer be justified since the actual damages awarded in the Decision are sufficient to cover the medical expenses incurred by petitioners for the patient.\" **A is wrong:** the 1999 decision expressly allowed both for a chronic and continuing injury; it was the death that ended the need. **B is wrong:** the doctors, not only the hospital, had been liable for them. **C is wrong:** actual damages were proved and kept. **Bar trap:** temperate damages for future care presuppose that the care will continue.",
+      "caseIds": [
+        "case-0040"
+      ],
+      "source": {
+        "caseTitle": "Ramos, et al. v. Court of Appeals, et al. (Resolution)",
+        "grNumber": "G.R. No. 124354",
+        "url": "https://lawphil.net/judjuris/juri2002/apr2002/gr_124354_2002.html",
+        "part": "Resolution, modification of damages",
+        "excerpt": "However, subsequent to the promulgation of the Decision, the Court was informed by petitioner Rogelio that petitioner Erlinda died on August 3, 1999. In view of this supervening event, the award of temperate damages in addition to the actual or compensatory damages would no longer be justified since the actual damages awarded in the Decision are sufficient to cover the medical expenses incurred by petitioners for the patient. Hence, only the amounts representing actual, moral and exemplary damages, attorney’s fees and costs of suit should be awarded to petitioners."
+      }
+    },
+    {
+      "id": "q-0518",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "In the 2002 resolution in Ramos v. Court of Appeals, the surgeon arrived more than three hours late because he had scheduled two procedures thirty minutes apart in different hospitals. Besides his duty as a physician, which provision of the Civil Code did the Court say this conduct violated?",
+      "choices": {
+        "A": "Article 1733, on the extraordinary diligence of common carriers.",
+        "B": "Article 19, which requires a person, in the performance of his duties, to act with justice and give everyone his due.",
+        "C": "Article 2208, on attorney's fees.",
+        "D": "Article 1869, on implied agency."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court held that Dr. Hosaka's \"irresponsible conduct of arriving very late for the scheduled operation\" violated \"not only … his duty as a physician 'to serve the interest of his patients with the greatest solicitude, giving them always his best talent and skill,' but also … Article 19 of the Civil Code which requires a person, in the performance of his duties, to act with justice and give everyone his due.\" The delay subjected the patient to continued starvation and anxiety, which adversely affected the anesthesia. **A is wrong:** extraordinary diligence is peculiar to common carriers (Reyes v. Sisters of Mercy Hospital). **C and D are wrong:** neither was the basis of this finding. **Bar trap:** a surgeon's lateness can be a breach in itself, not just a matter of courtesy.",
+      "caseIds": [
+        "case-0040"
+      ],
+      "source": {
+        "caseTitle": "Ramos, et al. v. Court of Appeals, et al. (Resolution)",
+        "grNumber": "G.R. No. 124354",
+        "url": "https://lawphil.net/judjuris/juri2002/apr2002/gr_124354_2002.html",
+        "part": "Resolution, the liability of Dr. Hosaka (lateness)",
+        "excerpt": "Dr. Hosaka's irresponsible conduct of arriving very late for the scheduled operation of petitioner Erlinda is violative, not only of his duty as a physician \"to serve the interest of his patients with the greatest solicitude, giving them always his best talent and skill,\" but also of Article 19 of the Civil Code which requires a person, in the performance of his duties, to act with justice and give everyone his due."
+      }
+    },
+    {
+      "id": "q-0519",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "On reconsideration in Ramos v. Court of Appeals (2002), the anesthesiologist argued that the Court relied too much on the testimony of the patient's sister-in-law, a nursing dean. Why did the Court uphold the reliance on her testimony?",
+      "choices": {
+        "A": "Because res ipsa loquitur applied: the injury does not normally happen without negligence in administering anesthesia and using an endotracheal tube, which were under the doctors' exclusive control, so her testimony on what she observed was properly given credence.",
+        "B": "Because a relative's testimony is always more credible than a doctor's.",
+        "C": "Because she was the only person in the operating room.",
+        "D": "Because the anesthesiologist failed to cross-examine her."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court held that \"[t]he injury incurred by petitioner Erlinda does not normally happen absent any negligence in the administration of anesthesia and in the use of an endotracheal tube,\" that the instruments were under the exclusive control of the two doctors, and that \"[c]onsidering the application of the doctrine of res ipsa loquitur, the testimony of Cruz was properly given credence.\" It also noted that, being a nurse and a nursing dean, she was not entirely ignorant of anesthetic procedure. **B is wrong:** no such rule exists. **C is wrong:** others, including nurses and doctors, were present. **D is wrong:** this was not the Court's reason. **Bar trap:** under res ipsa loquitur, a non-expert's testimony on what anyone can observe suffices.",
+      "caseIds": [
+        "case-0040"
+      ],
+      "source": {
+        "caseTitle": "Ramos, et al. v. Court of Appeals, et al. (Resolution)",
+        "grNumber": "G.R. No. 124354",
+        "url": "https://lawphil.net/judjuris/juri2002/apr2002/gr_124354_2002.html",
+        "part": "Resolution, the liability of Dr. Gutierrez (res ipsa loquitur and the witness Cruz)",
+        "excerpt": "The injury incurred by petitioner Erlinda does not normally happen absent any negligence in the administration of anesthesia and in the use of an endotracheal tube. As was noted in our Decision, the instruments used in the administration of anesthesia, including the endotracheal tube, were all under the exclusive control of private respondents Dr. Gutierrez and Dr. Hosaka. … Considering the application of the doctrine of res ipsa loquitur, the testimony of Cruz was properly given credence in the case at bar."
       }
     }
   ]
