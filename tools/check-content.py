@@ -582,7 +582,18 @@ def check_question(q_id, q, cases_by_id, case_texts, rules_by_number):
     if not filled(excerpt) or not filled(gr):
         return
 
-    if q_type == "fillblank":
+    if q_type == "fillblank" and case_ids:
+        # A fill in the blank made from a decision (identification, enumeration, definition):
+        # its fullText must be the Court's own words, found in the linked case's full text.
+        # Its excerpt is then checked like an essay's or a multiple choice's (below).
+        linked = [cid for cid in case_ids if cid in cases_by_id and cases_by_id[cid].get("grNumber") == gr]
+        full_text = q.get("fullText")
+        if linked and case_texts.get(linked[0]) and filled(full_text):
+            if comparable(full_text) not in case_texts[linked[0]]:
+                problem(q_id, "its fullText isn't found word for word in %s's full text." % linked[0])
+            elif comparable(full_text) not in comparable(excerpt):
+                problem(q_id, "its source excerpt should contain its fullText (the Court's sentence it is made from).")
+    elif q_type == "fillblank":
         if rules_by_number is None:
             return  # rules.json couldn't be read (already reported once)
         rule = rules_by_number.get(gr)
@@ -676,7 +687,10 @@ def check_fillblank(q_id, q):
             break
     # The heading ("SECTION 1. Petition.") is shown on its own line and is never blanked.
     heading = SECTION_HEADING.match(full)
-    if not heading:
+    from_decision = bool(q.get("caseIds"))  # the Court's own sentence: no section heading expected
+    if not heading and from_decision:
+        pass
+    elif not heading:
         check(q_id, "fullText doesn't start with a section heading the app can find (like "
                     "\"SECTION 1. Title. – …\"), so it's shown without a separate heading line.")
     elif not prompt.startswith(heading.group(1)):
