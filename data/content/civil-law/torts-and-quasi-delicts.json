@@ -91,6 +91,21 @@
       "ruling": "The Court reversed and held the doctor and the hospital solidarily liable. (1) Res ipsa loquitur did not apply: it is applied only in exceptional cases where the lapse is readily apparent to a layman and within the physician's exclusive control. Placenta accreta is not immediately apparent and often not immediately diagnosed, and it arose from the pregnancy itself, not under the doctor's exclusive control, so expert testimony was needed. (2) The failure to present an expert does not always bar recovery: the defendant doctor's own expert can establish the standard of care and indirectly support the patient's claim. Here the defense expert admitted that ultrasound and MRI help diagnose placenta accreta; his statement that he would have acted the same way referred only to the emergency surgery. Given Marissa's high-risk history, Dr. Dela Cruz should have anticipated complications, ordered an ultrasound or MRI during the hours of relative calm, and secured blood in advance; timely diagnosis could have averted both deaths. MEMCI was vicariously liable even though Dr. Dela Cruz was only a consultant: under apparent authority a representation may be general and implied, and the hospital held her out as a member of its staff by letting her use its facilities and direct its nurses and specialists. The heirs were awarded actual, moral and exemplary damages, civil indemnity, attorney's fees and interest.",
       "keyDoctrine": "Res ipsa loquitur applies in medical cases only in exceptional circumstances, where the lack of due care is readily apparent to a layman and within the physician's exclusive control; it does not apply where the actual cause of the injury has been identified. The plaintiff's lack of an expert witness is not fatal if the defense's own expert establishes the standard of care and indirectly supports the claim. Under apparent authority, a hospital's representation that a doctor is part of its staff may be general and implied, such as by letting the doctor use its facilities and direct its staff.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2021/nov2021/gr_250919_2021.html"
+    },
+    {
+      "id": "case-0036",
+      "status": "draft",
+      "name": "Garcia-Rueda v. Pascasio, et al.",
+      "grNumber": "G.R. No. 118141",
+      "year": 1997,
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "facts": "Florencio Rueda underwent surgery at the UST Hospital to remove a stone blocking his ureter, with Dr. Domingo Antonio, Jr. as surgeon and Dr. Erlinda Balatbat-Reyes as anesthesiologist. He died six hours later of complications of \"unknown cause.\" An NBI autopsy found that his death was due to lack of care in administering anesthesia and recommended that both doctors be charged with homicide through reckless imprudence. The preliminary investigation was then passed from one city prosecutor to another, nine in all, with contradictory recommendations, until the last ones exonerated Dr. Reyes. The widow, Leonila Garcia-Rueda, charged three city prosecutors before the Ombudsman with violating Section 3(e) of the Anti-Graft and Corrupt Practices Act for manifest partiality toward Dr. Reyes. The Ombudsman dismissed the complaint for lack of evidence, and the widow came to the Supreme Court.",
+      "issue": "Did the Ombudsman gravely abuse its discretion in dismissing the graft complaint against the city prosecutors?",
+      "ruling": "The Court dismissed the petition, without prejudice to an appeal by the widow to the Secretary of Justice from the dismissal of her criminal complaint. Courts do not interfere with the Ombudsman's discretion except for grave abuse, which was not shown, although the Ombudsman should have looked into the unexplained transfers among prosecutors. The Court nonetheless discussed medical negligence: it is the claim available to redress a wrong by a medical professional that has caused bodily harm, with four elements (duty, breach, injury and proximate causation); in anesthesia cases it requires two-pronged evidence (the recognized standards of the medical community and the physician's negligent departure from them); and causation asks whether the doctor's actions in fact caused the harm and whether they were its proximate cause. Since the NBI found negligence in the administration of anesthesia, the allegation was not baseless, and such a technical matter is better threshed out at trial than at the preliminary investigation. The better remedy was an appeal to the Secretary of Justice, not a graft charge against the prosecutors.",
+      "keyDoctrine": "Medical malpractice (medical negligence) is the claim a victim has to redress a wrong by a medical professional that has caused bodily harm; its elements are duty, breach, injury and proximate causation. Accepting a case creates a physician-patient relationship and the duty to use the care of a reasonably competent doctor. In anesthesia cases, proof is two-pronged: the recognized standards of the medical community and the physician's negligent departure from them. Causation asks whether the doctor's acts in fact caused the harm and whether they were its proximate cause. A finding of probable cause does not require evidence sufficient to convict.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri1997/sep1997/gr_118141_1997.html"
     }
   ],
   "questions": [
@@ -1467,6 +1482,234 @@
         "url": "https://lawphil.net/judjuris/juri2021/nov2021/gr_250919_2021.html",
         "part": "Ruling of the Court, The doctrine of res ipsa loquitur cannot be applied (citing Cantre and Borromeo)",
         "excerpt": "A review of medical negligence cases brought to this Court reveals that the doctrine of res ipsa loquitur is applied only to exceptional circumstances where the failure to observe due care which caused injury to the patient is readily apparent to a layman and is within the exclusive control of the erring physician. In Cantre v. Spouses Go, the Court applied the doctrine of res ipsa loquitur to justify declaring the physician liable. The Court explained that the gaping wound on the patient's arm is not an ordinary occurrence in the act of delivering a baby and that such \"injury could not have happened unless negligence had set in somewhere.\" In Borromeo v. Family Care Hospital, Inc., the Court explained that the application of the doctrine \"require[s] expert opinion to establish the culpability of the defendant doctor.\" It also does not apply to cases where the actual cause of the injury had been identified or established."
+      }
+    },
+    {
+      "id": "q-0480",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "What is medical malpractice or medical negligence? What must a patient prove, and what evidence is required in a case against an anesthesiologist for a patient's death under anesthesia? Explain.",
+      "suggestedAnswer": {
+        "answer": "Medical malpractice, more appropriately medical negligence, is the type of claim available to a victim to redress a wrong committed by a medical professional which has caused bodily harm. The patient must prove duty, breach, injury and proximate causation. Against an anesthesiologist, the proof is two-pronged: the recognized standards of the medical community in that kind of case, and the physician's negligent departure from that standard.",
+        "legalBasis": "In Garcia-Rueda v. Pascasio, the Court held that the patient must prove that the health care provider failed to do what a reasonably prudent provider would have done, or did what a reasonably prudent provider would not have done, and that this caused injury. By accepting a case, the doctors represent that they have the training and skill of physicians in the same field and will use them; they must use at least the level of care of any reasonably competent doctor under the same circumstances, and a breach of these duties that injures the patient constitutes actionable malpractice. In anesthesia cases, expert testimony and res ipsa loquitur have both been applied, and two-pronged evidence is essentially required.",
+        "application": "A widow suing over her husband's death after anesthesia must show the physician-patient relationship (created when the doctors accepted the case), the recognized standard for administering anesthesia in that kind of operation, the anesthesiologist's negligent departure from it, the death, and that the departure caused the death.",
+        "conclusion": "Medical negligence is proved through duty, breach, injury and proximate causation; in anesthesia cases, through the standard of the medical community and the departure from it. **Bar trap:** the standard is set by the medical community in the particular kind of case, not by the court's or the family's own idea of what should have been done."
+      },
+      "keyPoints": [
+        "Definition: the claim to redress a wrong by a medical professional that caused bodily harm",
+        "Elements: duty, breach, injury, proximate causation",
+        "Duty arises from the physician-patient relationship created by accepting the case",
+        "Anesthesia cases: two-pronged evidence, the recognized standard of the medical community and the negligent departure from it"
+      ],
+      "caseIds": [
+        "case-0036"
+      ],
+      "source": {
+        "caseTitle": "Garcia-Rueda v. Pascasio, et al.",
+        "grNumber": "G.R. No. 118141",
+        "url": "https://lawphil.net/judjuris/juri1997/sep1997/gr_118141_1997.html",
+        "part": "A word on medical malpractice or negligence cases",
+        "excerpt": "In its simplest terms, the type of lawsuit which has been called medical malpractice or, more appropriately, medical negligence, is that type of claim which a victim has available to him or her to redress a wrong committed by a medical professional which has caused bodily harm. In order to successfully pursue such a claim, a patient must prove that a health care provider, in most cases a physician, either failed to do something which a reasonably prudent health care provider would have done, or that he or she did something that a reasonably prudent provider would not have done; and that that failure or action caused injury to the patient. Hence, there are four elements involved in medical negligence cases: duty, breach, injury and proximate causation. Evidently, when the victim employed the services of Dr. Antonio and Dr. Reyes, a physician-patient relationship was created. In accepting the case, Dr. Antonio and Dr. Reyes in effect represented that, having the needed training and skill possessed by physicians and surgeons practicing in the same field, they will employ such training, care and skill in the treatment of their patients. They have a duty to use at least the same level of care that any other reasonably competent doctor would use to treat a condition under the same circumstances. The breach of these professional duties of skill and care, or their improper performance, by a physician surgeon whereby the patient is injured in body or in health, constitutes actionable malpractice. … Moreover, in malpractice or negligence cases involving the administration of anaesthesia, the necessity of expert testimony and the availability of the charge of res ipsa loquitur to the plaintiff; have been applied in actions against anaesthesiologists to hold the defendant liable for the death or injury of a patient under excessive or improper anaesthesia. Essentially, it requires two-pronged evidence: evidence as to the recognized standards of the medical community in the particular kind of case, and a showing that the physician in question negligently departed from this standard in his treatment."
+      }
+    },
+    {
+      "id": "q-0481",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "A patient died a few hours after surgery. The NBI found that the anesthesiologist did not interview the patient before the operation, that the death could have been averted had the proper drug been given for the symptoms of malignant hyperthermia, and that an antidote was readily available. The prosecutor dismissed the homicide-through-reckless-imprudence complaint, saying the cause of death was uncertain and the doctors' competence could not be judged at that stage. Discuss causation as an element of medical negligence, and state whether the dismissal was proper.",
+      "suggestedAnswer": {
+        "answer": "Causation is divided into two inquiries: whether the doctor's actions in fact caused the harm, and whether they were the proximate cause of the injury. On these facts the allegation of negligence was not baseless, and the technical questions of competence and causation were better resolved at a full trial, so a dismissal at the preliminary investigation was not proper.",
+        "legalBasis": "In Garcia-Rueda v. Pascasio, the Court held that a causal connection was discernible from the death following the anesthesiologist's alleged negligence, which, if confirmed, warranted the filing of the criminal case. It noted the NBI findings that no pre-operation interview was done, that death could have been averted with the proper drug for malignant hyperthermia, and that an antidote was available. Want of competence or diligence is evidentiary and best passed upon after a full-blown trial, since it is virtually impossible to judge a medical negligence case without extensive investigation and consultation with experts; prosecutors are not in a competent position to pass judgment on such technical matters, especially with conflicting findings. A preliminary investigation only determines probable cause, which does not require evidence sufficient for conviction.",
+        "application": "The NBI's findings give a reasonable ground to believe that the anesthesiologist's omissions in fact caused, and were the proximate cause of, the death. Uncertainty about the precise cause is a matter for trial, not a ground to dismiss at the probable-cause stage. Why the precautionary measures were disregarded must be explained, and the place for that is the trial.",
+        "conclusion": "Causation has two parts, cause in fact and proximate cause; the NBI findings made out probable cause, so the complaint should have proceeded to trial. **Bar trap:** a preliminary investigation does not decide guilt; doubts about technical medical issues favor ventilating them at trial."
+      },
+      "keyPoints": [
+        "Causation has two inquiries: cause in fact, and proximate cause",
+        "A causal connection was discernible from death following the alleged negligent administration of anesthesia",
+        "Want of competence or diligence is evidentiary and best decided after a full trial with expert evidence",
+        "Probable cause does not require evidence sufficient to convict"
+      ],
+      "caseIds": [
+        "case-0036"
+      ],
+      "source": {
+        "caseTitle": "Garcia-Rueda v. Pascasio, et al.",
+        "grNumber": "G.R. No. 118141",
+        "url": "https://lawphil.net/judjuris/juri1997/sep1997/gr_118141_1997.html",
+        "part": "A word on medical malpractice or negligence cases (causation)",
+        "excerpt": "In the instant case, no less than the NBI pronounced after conducting an autopsy that there was indeed negligence on the part of the attending physicians in administering the anaesthesia. The fact of want of competence or diligence is evidentiary in nature, the veracity of which can best be passed upon after a full-blown trial for it is virtually impossible to ascertain the merits of a medical negligence case without extensive investigation, research, evaluation and consultations with medical experts. Clearly, the City Prosecutors are not in a competent position to pass judgment on such a technical matter, especially when there are conflicting evidence and findings. The bases of a party's accusation and defenses are better ventilated at the trial proper than at the preliminary investigation. … Another element in medical negligence cases is causation which is divided into two inquiries: whether the doctor's actions in fact caused the harm to the patient and whether these were the proximate cause of the patient's injury. Indeed here, a causal connection is discernible from the occurrence of the victim's death after the negligent act of the anaesthesiologist in administering the anesthesia, a fact which, if confirmed, should warrant the filing of the appropriate criminal case. To be sure, the allegation of negligence is not entirely baseless. Moreover, the NBI deduced that the attending surgeons did not conduct the necessary interview of the patient prior to the operation. It appears that the cause of the death of the victim could have been averted had the proper drug been applied to cope with the symptoms of malignant hyperthermia. Also, we cannot ignore the fact that an antidote was readily available to counteract whatever deleterious effect the anaesthesia might produce. Why these precautionary measures were disregarded must be sufficiently explained."
+      }
+    },
+    {
+      "id": "q-0482",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "After her complaint for homicide through reckless imprudence against her late husband's doctors was passed among several city prosecutors and finally dismissed as to the anesthesiologist, Lorna charged the prosecutors before the Ombudsman with violating Section 3(e) of the Anti-Graft and Corrupt Practices Act for manifest partiality. The Ombudsman dismissed her complaint for lack of evidence. On certiorari, will the Supreme Court set aside the Ombudsman's action? What was Lorna's better remedy?",
+      "suggestedAnswer": {
+        "answer": "No, unless the Ombudsman gravely abused its discretion, which is not shown by a dismissal for lack of evidence. Lorna's better and more logical remedy was to appeal the prosecutors' resolution dismissing her criminal complaint to the Secretary of Justice.",
+        "legalBasis": "In Garcia-Rueda v. Pascasio, the Court held that courts will not interfere with the Ombudsman's discretion to determine whether a criminal case should be filed, except when there is grave abuse of discretion, defined as a power exercised in an arbitrary or despotic manner by reason of passion or personal hostility so patent and gross as to amount to an evasion of positive duty. It found the widow's choice of a graft charge surprising, and held that the better remedy was an appeal to the Secretary of Justice under the DOJ rules on appeals from resolutions in preliminary investigations, which allow appeal from a resolution dismissing a criminal complaint; the Secretary may reverse, affirm or modify it.",
+        "application": "The Ombudsman acted within its power in dismissing the graft complaint, though it should have inquired into the unexplained transfers among prosecutors. The prosecutors' resolution dismissing the complaint against the anesthesiologist was precisely the kind of resolution appealable to the Secretary of Justice. So the Court dismissed the petition without prejudice to that appeal.",
+        "conclusion": "The petition fails; Lorna should appeal the dismissal to the Secretary of Justice. **Bar trap:** a grievance against how prosecutors handled a medical-negligence complaint is not, by itself, a graft case; use the remedy aimed at the dismissal itself."
+      },
+      "keyPoints": [
+        "Courts do not interfere with the Ombudsman's discretion absent grave abuse of discretion",
+        "Grave abuse: arbitrary or despotic exercise of power, so patent and gross as to amount to evasion of a positive duty",
+        "The better remedy: appeal the prosecutor's dismissal to the Secretary of Justice, who may reverse, affirm or modify it",
+        "The petition was dismissed without prejudice to that appeal"
+      ],
+      "caseIds": [
+        "case-0036"
+      ],
+      "source": {
+        "caseTitle": "Garcia-Rueda v. Pascasio, et al.",
+        "grNumber": "G.R. No. 118141",
+        "url": "https://lawphil.net/judjuris/juri1997/sep1997/gr_118141_1997.html",
+        "part": "Ruling, the remedy against the dismissal of a criminal complaint",
+        "excerpt": "While the Ombudsman has the full discretion to determine whether or not a criminal case should be filed, this Court is not precluded from reviewing the Ombudsman's action when there is an abuse of discretion, in which case Rule 65 of the Rules of Court may exceptionally be invoked pursuant to Section I, Article VIII of the 1987 Constitution. In this regard, \"grave abuse of discretion\" has been defined as \"where a power is exercised in an arbitrary or despotic manner by reason of passion or personal hostility so patent and gross as to amount to evasion of positive duty or virtual refusal to perform a duty enjoined by, or in contemplation of law. … To our mind, the better and more logical remedy under the circumstances would have been to appeal the resolution of the City Prosecutors dismissing the criminal complaint to the Secretary of Justice under the Department of Justice's Order No. 223, otherwise known as the \"1993 Revised Rules on Appeals From Resolutions In Preliminary Investigations/Reinvestigations,\" as amended by Department Order No. 359, Section 1 of which provides: … In exercising his discretion under the circumstances, the Ombudsman acted within his power and authority in dismissing the complaint against the Prosecutors and this Court will not interfere with the same."
+      }
+    },
+    {
+      "id": "q-0483",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "\"The type of claim which a victim has available to him or her to redress a wrong committed by a medical professional which has caused bodily harm.\" In Garcia-Rueda v. Pascasio, this is the Court's description of",
+      "choices": {
+        "A": "an independent civil action for physical injuries.",
+        "B": "medical malpractice, or more appropriately, medical negligence.",
+        "C": "a claim under the Anti-Graft and Corrupt Practices Act.",
+        "D": "res ipsa loquitur."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court said: \"In its simplest terms, the type of lawsuit which has been called medical malpractice or, more appropriately, medical negligence, is that type of claim which a victim has available to him or her to redress a wrong committed by a medical professional which has caused bodily harm.\" **A is wrong:** the Court was not describing a particular procedural vehicle but the substantive claim. **C is wrong:** the graft charge in the case was against the prosecutors, not the doctors. **D is wrong:** res ipsa loquitur is a rule of evidence that may be used in such a claim, not the claim itself. **Bar trap:** the Court prefers the term \"medical negligence\" to \"malpractice.\"",
+      "caseIds": [
+        "case-0036"
+      ],
+      "source": {
+        "caseTitle": "Garcia-Rueda v. Pascasio, et al.",
+        "grNumber": "G.R. No. 118141",
+        "url": "https://lawphil.net/judjuris/juri1997/sep1997/gr_118141_1997.html",
+        "part": "A word on medical malpractice or negligence cases",
+        "excerpt": "In its simplest terms, the type of lawsuit which has been called medical malpractice or, more appropriately, medical negligence, is that type of claim which a victim has available to him or her to redress a wrong committed by a medical professional which has caused bodily harm."
+      }
+    },
+    {
+      "id": "q-0484",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "According to Garcia-Rueda v. Pascasio, what \"two-pronged evidence\" is essentially required in a negligence case against an anesthesiologist?",
+      "choices": {
+        "A": "The autopsy report and the death certificate.",
+        "B": "The patient's written consent and the hospital's incident report.",
+        "C": "Evidence of the recognized standards of the medical community in the particular kind of case, and a showing that the physician negligently departed from this standard in his treatment.",
+        "D": "An NBI finding of negligence and a prosecutor's finding of probable cause."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court said that in anesthesia cases, \"[e]ssentially, it requires two-pronged evidence: evidence as to the recognized standards of the medical community in the particular kind of case, and a showing that the physician in question negligently departed from this standard in his treatment.\" **A is wrong:** these may help prove the injury and its cause, but they are not the two prongs. **B is wrong:** consent and incident reports are not the prongs described. **D is wrong:** an NBI finding is evidence, and a probable-cause finding is a step in the prosecution, not proof of negligence. **Bar trap:** both prongs are needed; showing a bad result without the standard (or the standard without a departure) is not enough.",
+      "caseIds": [
+        "case-0036"
+      ],
+      "source": {
+        "caseTitle": "Garcia-Rueda v. Pascasio, et al.",
+        "grNumber": "G.R. No. 118141",
+        "url": "https://lawphil.net/judjuris/juri1997/sep1997/gr_118141_1997.html",
+        "part": "A word on medical malpractice or negligence cases (anesthesia cases)",
+        "excerpt": "Moreover, in malpractice or negligence cases involving the administration of anaesthesia, the necessity of expert testimony and the availability of the charge of res ipsa loquitur to the plaintiff; have been applied in actions against anaesthesiologists to hold the defendant liable for the death or injury of a patient under excessive or improper anaesthesia. Essentially, it requires two-pronged evidence: evidence as to the recognized standards of the medical community in the particular kind of case, and a showing that the physician in question negligently departed from this standard in his treatment."
+      }
+    },
+    {
+      "id": "q-0485",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "In Garcia-Rueda v. Pascasio, the Court said that causation in medical negligence cases is divided into two inquiries. What are they?",
+      "choices": {
+        "A": "Whether the doctor's actions in fact caused the harm to the patient, and whether these were the proximate cause of the patient's injury.",
+        "B": "Whether the doctor was licensed, and whether the hospital was accredited.",
+        "C": "Whether the patient consented, and whether the doctor disclosed the risks.",
+        "D": "Whether the injury was foreseeable, and whether the patient was contributorily negligent."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court stated: \"Another element in medical negligence cases is causation which is divided into two inquiries: whether the doctor's actions in fact caused the harm to the patient and whether these were the proximate cause of the patient's injury.\" **B is wrong:** licensing and accreditation are not causation questions. **C is wrong:** consent and disclosure belong to the doctrine of informed consent, a different issue. **D is wrong:** these were not the two inquiries the Court named. **Bar trap:** cause in fact and proximate cause are separate; a doctor's act can be a cause in fact without being the proximate cause.",
+      "caseIds": [
+        "case-0036"
+      ],
+      "source": {
+        "caseTitle": "Garcia-Rueda v. Pascasio, et al.",
+        "grNumber": "G.R. No. 118141",
+        "url": "https://lawphil.net/judjuris/juri1997/sep1997/gr_118141_1997.html",
+        "part": "A word on medical malpractice or negligence cases (causation)",
+        "excerpt": "Another element in medical negligence cases is causation which is divided into two inquiries: whether the doctor's actions in fact caused the harm to the patient and whether these were the proximate cause of the patient's injury."
+      }
+    },
+    {
+      "id": "q-0486",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "Following Garcia-Rueda v. Pascasio, which statement about probable cause in a preliminary investigation of a medical negligence complaint is correct?",
+      "choices": {
+        "A": "It requires evidence sufficient to procure a conviction.",
+        "B": "It requires absolute certainty that the doctor was negligent.",
+        "C": "It requires the prosecutor to resolve conflicting expert findings on the doctor's competence.",
+        "D": "It does not require an inquiry into whether there is sufficient evidence to convict; it is enough that it is believed that the act or omission complained of constitutes the offense charged."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The Court explained that probable cause \"does not mean actual and positive cause nor does it import absolute certainty. It is merely based on opinion and reasonable belief. Thus, a finding of probable cause does not require an inquiry into whether there is sufficient evidence to procure a conviction. It is enough that it is believed that the act or omission complained of constitutes the offense charged.\" **A and B are wrong** for the same reasons. **C is wrong:** the Court said prosecutors are not in a competent position to pass judgment on such technical matters, especially with conflicting findings; these are better ventilated at trial. **Bar trap:** do not import the standard for conviction into the preliminary investigation.",
+      "caseIds": [
+        "case-0036"
+      ],
+      "source": {
+        "caseTitle": "Garcia-Rueda v. Pascasio, et al.",
+        "grNumber": "G.R. No. 118141",
+        "url": "https://lawphil.net/judjuris/juri1997/sep1997/gr_118141_1997.html",
+        "part": "Ruling, probable cause",
+        "excerpt": "The term does not mean actual and positive cause nor does it import absolute certainty. It is merely based on opinion and reasonable belief. Thus, a finding of probable cause does not require an inquiry into whether there is sufficient evidence to procure a conviction. It is enough that it is believed that the act or omission complained of constitutes the offense charged. Precisely, there is a trial for the reception of evidence of the prosecution in support of the charge."
+      }
+    },
+    {
+      "id": "q-0487",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "A city prosecutor dismisses a complaint for homicide through reckless imprudence against an anesthesiologist. Following Garcia-Rueda v. Pascasio, what is the better and more logical remedy of the complainant?",
+      "choices": {
+        "A": "File graft charges against the prosecutors under Section 3(e) of the Anti-Graft and Corrupt Practices Act.",
+        "B": "File a petition for certiorari directly with the Supreme Court against the prosecutors.",
+        "C": "Appeal the prosecutor's resolution dismissing the criminal complaint to the Secretary of Justice.",
+        "D": "Refile the same complaint with a different prosecutor in the same office."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court said: \"the better and more logical remedy under the circumstances would have been to appeal the resolution of the City Prosecutors dismissing the criminal complaint to the Secretary of Justice,\" who may reverse, affirm or modify it; it dismissed the petition without prejudice to that appeal. **A is wrong:** that was the widow's choice, which the Court viewed \"with no little surprise.\" **B is wrong:** certiorari is exceptional and requires grave abuse of discretion; the appeal to the Secretary of Justice is the proper route. **D is wrong:** the Court pointed to the DOJ appeal, not refiling. **Bar trap:** choose the remedy aimed at the dismissal itself.",
+      "caseIds": [
+        "case-0036"
+      ],
+      "source": {
+        "caseTitle": "Garcia-Rueda v. Pascasio, et al.",
+        "grNumber": "G.R. No. 118141",
+        "url": "https://lawphil.net/judjuris/juri1997/sep1997/gr_118141_1997.html",
+        "part": "Ruling, the remedy against the dismissal of a criminal complaint",
+        "excerpt": "To our mind, the better and more logical remedy under the circumstances would have been to appeal the resolution of the City Prosecutors dismissing the criminal complaint to the Secretary of Justice under the Department of Justice's Order No. 223, otherwise known as the \"1993 Revised Rules on Appeals From Resolutions In Preliminary Investigations/Reinvestigations,\" as amended by Department Order No. 359, Section 1 of which provides:"
       }
     }
   ]
