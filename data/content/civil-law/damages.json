@@ -406,6 +406,21 @@
       "ruling": "The judgment was modified, increasing the awards. Pan Am's own evidence showed that, after cancelling the reservations by mistake, it deliberately withheld the cancellation and let the passengers believe their reservations stood; this willful non-disclosure, not the error itself, caused the breach, and it is bad faith, meaning a breach of a known duty through some motive of interest or ill will. Even granting the mistakes, there was negligence so gross and reckless as to amount to malice or bad faith. Moral damages are recoverable in breach of contract where the defendant acted fraudulently or in bad faith (Art. 2220); the passengers suffered social humiliation, wounded feelings, serious anxiety and mental anguish, since it is humiliating to be compelled to travel tourist class despite first-class tickets. Considering their standing, the Court awarded ₱200,000 moral damages (₱100,000 to the Senator, ₱50,000 to Mrs. Lopez, ₱25,000 each to the Montelibanos), ₱75,000 exemplary damages to deter similar breaches, 6% interest, and ₱50,000 attorney's fees under the written contract.",
       "keyDoctrine": "Moral damages are recoverable in breach of contract where the defendant acted fraudulently or in bad faith (Art. 2220); bad faith is a breach of a known duty through some motive of interest or ill will, and gross and reckless negligence may amount to bad faith. Exemplary damages may be added where the defendant acted in a wanton, fraudulent, reckless, oppressive or malevolent manner (Arts. 2229, 2232). The amount of moral damages may consider the social, official and financial standing of the offended parties and the business and financial position of the offender.",
       "sourceUrl": "https://lawphil.net/judjuris/juri1966/mar1966/gr_l-22415_1966.html"
+    },
+    {
+      "id": "case-0075",
+      "status": "draft",
+      "name": "Gutierrez v. Villegas, et al.",
+      "grNumber": "G.R. No. L-17117",
+      "year": 1963,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "facts": "Adela Santos Gutierrez, a niece and one of the heirs of Irene Santos, signed a Tagalog deed selling her share in the estate to her sister Rizalina Santos Rivera for ₱50,000, payable in two installments, and a manifestation informing the probate court of the sale. She later sued to annul the sale for fraud and mistake, claiming she thought she was signing a loan document, could not read it without her eyeglasses, and was misled about the estate's value; alternatively, she sought rescission of the sale as a partition for lesion. The widower Jose D. Villegas and Rizalina counterclaimed for ₱200,000 moral and exemplary damages and ₱50,000 attorney's fees for the allegedly malicious suit. The trial court dismissed both the complaint and the counterclaim, and both sides appealed.",
+      "issue": "(1) Was the plaintiff's consent vitiated by fraud or mistake, or the sale rescissible for lesion? (2) Are the defendants entitled to damages and attorney's fees on their counterclaim?",
+      "ruling": "The decision was affirmed. Fraud may be proved by circumstantial evidence but is not to be lightly inferred; the plaintiff's uncorroborated testimony did not overcome the presumption of good faith and regularity, and her own conduct (securing a residence certificate, accepting the first installment) belied her claim. The price was not grossly inadequate, and even if the sale were deemed a partition under Article 1082, the lesion was less than the one-fourth required by Article 1098. On the counterclaim, damages and attorney's fees are primarily in the trial court's discretion, which found no facts to support them. The allegations of fraud in the complaint were privileged; failure to seek an amicable settlement among relatives under Article 222 had not been pleaded; there was no proof of mental suffering on which to base moral damages; and the absence of moral, temperate or compensatory damages blocks the grant of exemplary damages (Art. 2234).",
+      "keyDoctrine": "Moral damages need proof of mental suffering; without it, none can be awarded. Exemplary damages cannot be granted in the absence of moral, temperate or compensatory damages (Art. 2234). Allegations in a complaint are privileged, so filing a suit that fails does not by itself support a counterclaim for damages. Fraud is not lightly inferred and must overcome the presumption of good faith. A partition may be rescinded for lesion only if an heir receives less, by at least one-fourth, than his share (Art. 1098).",
+      "sourceUrl": "https://lawphil.net/judjuris/juri1963/jul1963/gr_l-17117_1963.html"
     }
   ],
   "questions": [
@@ -6629,6 +6644,236 @@
         "url": "https://lawphil.net/judjuris/juri1966/mar1966/gr_l-22415_1966.html",
         "part": "Decision, the disposition",
         "excerpt": "Wherefore, the judgment appealed from is hereby modified so as to award in favor of plaintiffs and against defendant, the following: (1) P200,000.00 as moral damages, divided among plaintiffs, thus: P100,000.00 for Senate President Pro Tempore Fernando Lopez; P50,000.00 for his wife Maria J. Lopez; P25,000.00 for his son-in-law Alfredo Montelibano, Jr.; and P25,000.00 for his daughter Mrs. Alfredo Montelibano, Jr.; (2) P75,000.00 as exemplary or corrective damages; (3) interest at the legal rate of 6% per annum on the moral and exemplary damages aforestated, from December 14, 1963, the date of the amended decision of the court a quo, until said damages are fully paid; (4) P50,000.00 as attorney's fees; and (5) the costs."
+      }
+    },
+    {
+      "id": "q-0792",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "A woman sued her relatives to annul a sale of her inheritance, charging them with fraud. She lost. The relatives had counterclaimed for ₱200,000 moral and exemplary damages, claiming the charges were malicious, but presented no evidence of mental suffering. They argue that they are entitled to damages because the fraud charges were proved false, and because she did not first seek an amicable settlement as required among relatives. Should damages be awarded? Explain, citing Gutierrez v. Villegas.",
+      "suggestedAnswer": {
+        "answer": "No. There was no proof of mental suffering to support moral damages; without moral, temperate or compensatory damages, exemplary damages cannot be granted; the allegations of fraud in a complaint are privileged; and the failure to seek an amicable settlement was not pleaded.",
+        "legalBasis": "In Gutierrez v. Villegas, the Court refused to disturb the denial of damages and attorney's fees, which \"are primarily in the discretion of the trial court,\" since it found no facts to support them. \"Not only were the allegations of fraud in plaintiff's complaint privileged in character, but her failure to seek an amicable settlement before filing suit, as required of relatives by Article 222 of the Civil Code, has not been pleaded either by answer or motion to dismiss. As to moral damages, the record shows no proof of mental suffering on the part of defendants upon which the award can be based. In addition, the absence of actual damages, moral, temperate, or compensatory, blocks the grant of exemplary damages (Civil Code, Article 2234).\"",
+        "application": "That the woman's fraud charges failed does not make them actionable, since allegations in pleadings are privileged. With no proof of suffering, no moral damages; with no other damages, no exemplary damages.",
+        "conclusion": "No damages on the counterclaim. **Bar trap:** exemplary damages are never awarded alone; Article 2234 requires that the claimant first be entitled to moral, temperate or compensatory damages."
+      },
+      "keyPoints": [
+        "Damages and attorney's fees are primarily in the trial court's discretion",
+        "Allegations of fraud in a complaint are privileged",
+        "Non-compliance with Art. 222 (amicable settlement among relatives) must be pleaded",
+        "No proof of mental suffering: no moral damages",
+        "No moral, temperate or compensatory damages: no exemplary damages (Art. 2234)"
+      ],
+      "caseIds": [
+        "case-0075"
+      ],
+      "source": {
+        "caseTitle": "Gutierrez v. Villegas, et al.",
+        "grNumber": "G.R. No. L-17117",
+        "url": "https://lawphil.net/judjuris/juri1963/jul1963/gr_l-17117_1963.html",
+        "part": "Decision, discussion of the defendants' appeal (damages on the counterclaim)",
+        "excerpt": "Turning now to the defendant's appeal, we are not disposed to vary the lower court's refusal to award them damages and attorney's fees. Such awards are primarily in the discretion of the trial court, and it has found no facts upon which such award can be made. Not only were the allegations of fraud in plaintiff's complaint privileged in character, but her failure to seek an amicable settlement before filing suit, as required of relatives by Article 222 of the Civil Code, has not been pleaded either by answer or motion to dismiss. As to moral damages, the record shows no proof of mental suffering on the part of defendants upon which the award can be based. In addition, the absence of actual damages, moral, temperate, or compensatory, blocks the grant of exemplary damages (Civil Code, Article 2234)."
+      }
+    },
+    {
+      "id": "q-0793",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "An heir who sold her share in an estate to her sister claims her consent was obtained by fraud: she was poorly educated, had poor eyesight, did not bring her eyeglasses, and trusted her relatives. Her account was uncorroborated; the notary, the lawyer and the instrumental witnesses testified to a regular signing; she later secured a residence certificate for the notarization and accepted the first installment. Will the fraud claim prosper? Explain, citing Gutierrez v. Villegas.",
+      "suggestedAnswer": {
+        "answer": "No. Fraud, though it may be proved by circumstantial evidence, is not to be lightly inferred, and her uncorroborated testimony does not overcome the presumption of good faith and regularity in human affairs.",
+        "legalBasis": "In Gutierrez v. Villegas, the Court found that the alleged badges of fraud rested only on the plaintiff's uncorroborated testimony, contradicted by the defendants and their witnesses; that she could read Tagalog, the deed's language, and was of average intelligence; and that her claimed poor eyesight was not convincingly shown. Her own acts, securing a residence certificate the next day and accepting the first installment after allegedly learning of the fraud, were unexplained. \"While fraud may be proved entirely by circumstantial evidence, it is not to be lightly inferred. Our review of the evidence discloses that the evidence for appellant does not suffice to overcome the presumption of good faith and regularity in human affairs.\"",
+        "application": "The careful preparation of the deed was no sign of fraud, and the supposed scheme would have depended on the fortuitous fact that she forgot her eyeglasses, which made the charge incredible.",
+        "conclusion": "The claim fails. **Bar trap:** the claimant's later conduct consistent with the contract (accepting payment) undercuts a claim that her consent was vitiated."
+      },
+      "keyPoints": [
+        "Fraud may be proved by circumstantial evidence but is not lightly inferred",
+        "Uncorroborated testimony contradicted by the notary and witnesses",
+        "She could read Tagalog; poor eyesight not shown",
+        "Her later acts (residence certificate, accepting payment) belied her claim",
+        "The presumption of good faith and regularity was not overcome"
+      ],
+      "caseIds": [
+        "case-0075"
+      ],
+      "source": {
+        "caseTitle": "Gutierrez v. Villegas, et al.",
+        "grNumber": "G.R. No. L-17117",
+        "url": "https://lawphil.net/judjuris/juri1963/jul1963/gr_l-17117_1963.html",
+        "part": "Decision, discussion of fraud",
+        "excerpt": "The facts, as shown by the record, do not support the plaintiff's conclusions. The alleged indicia of fraud upon which she rests her case are backed only by her own uncorroborated testimony, which is contradicted by that of defendants and their witnesses. … While fraud may be proved entirely by circumstantial evidence, it is not to be lightly inferred. Our review of the evidence discloses that the evidence for appellant does not suffice to overcome the presumption of good faith and regularity in human affairs."
+      }
+    },
+    {
+      "id": "q-0794",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "An heir sold her one-fourth share in an estate to a co-heir for ₱50,000. She later claims the sale should be treated as a partition under Article 1082 of the Civil Code and rescinded for lesion, since her share was supposedly worth much more. The court finds her share worth about ₱54,000. Will rescission prosper? Explain, citing Gutierrez v. Villegas.",
+      "suggestedAnswer": {
+        "answer": "No. Even if the sale were deemed a partition, a partition may be rescinded for lesion only when the heir received things worth less, by at least one-fourth, than the share to which she is entitled; a ₱50,000 price for a share worth about ₱54,000 is far from that.",
+        "legalBasis": "In Gutierrez v. Villegas, the Court cited Article 1082 (every act intended to end indivision among co-heirs is deemed a partition, even if it purports to be a sale) and Article 1098 (a partition may be rescinded on account of lesion when a co-heir received things whose value is less, by at least one-fourth, than his share). It held that \"still the lesion, if any, suffered by plaintiff from her sale of P50,000.00 of an individed heredity interest worth P54,000.00 is certainly less than the one-fourth (1/4) required by Article 1098 of the Code.\"",
+        "application": "The Court also noted the price was not inadequate, since the heir would get it free from the troubles and delays of the judicial settlement of the estate.",
+        "conclusion": "No rescission for lesion. **Bar trap:** lesion must reach at least one-fourth of the share's value; a small shortfall is not enough."
+      },
+      "keyPoints": [
+        "Art. 1082: an act ending indivision among co-heirs is deemed a partition",
+        "Art. 1098: rescission for lesion of at least one-fourth",
+        "₱50,000 for a share worth about ₱54,000 is less than one-fourth lesion",
+        "The price also bought freedom from delays of judicial settlement"
+      ],
+      "caseIds": [
+        "case-0075"
+      ],
+      "source": {
+        "caseTitle": "Gutierrez v. Villegas, et al.",
+        "grNumber": "G.R. No. L-17117",
+        "url": "https://lawphil.net/judjuris/juri1963/jul1963/gr_l-17117_1963.html",
+        "part": "Decision, discussion of lesion",
+        "excerpt": "Granting, arguendo, that the assignment of her hereditary share in favor of her sister, Rizalina, should be deemed a partition under Article 1082 of the Civil Code of the Philippines (notwithstanding the fact that it did not totally terminate the indivision among the co-heirs of Irene Santos, since the undivided share of the widower Villegas remained unchanged), still the lesion, if any, suffered by plaintiff from her sale of P50,000.00 of an individed heredity interest worth P54,000.00 is certainly less than the one-fourth (1/4) required by Article 1098 of the Code."
+      }
+    },
+    {
+      "id": "q-0795",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Under Gutierrez v. Villegas, applying Article 2234 of the Civil Code, exemplary damages cannot be granted when",
+      "choices": {
+        "A": "the defendant is a relative of the plaintiff.",
+        "B": "the claimant is not entitled to moral, temperate or compensatory damages.",
+        "C": "the case involves a sale of an inheritance.",
+        "D": "the claimant asks for more than ₱100,000."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court said \"the absence of actual damages, moral, temperate, or compensatory, blocks the grant of exemplary damages (Civil Code, Article 2234).\" **A, C and D are wrong:** none is the rule. **Bar trap:** exemplary damages are always in addition to other damages.",
+      "caseIds": [
+        "case-0075"
+      ],
+      "source": {
+        "caseTitle": "Gutierrez v. Villegas, et al.",
+        "grNumber": "G.R. No. L-17117",
+        "url": "https://lawphil.net/judjuris/juri1963/jul1963/gr_l-17117_1963.html",
+        "part": "Decision, discussion of the defendants' appeal (exemplary damages)",
+        "excerpt": "In addition, the absence of actual damages, moral, temperate, or compensatory, blocks the grant of exemplary damages (Civil Code, Article 2234)."
+      }
+    },
+    {
+      "id": "q-0796",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Why were the defendants denied moral damages on their counterclaim in Gutierrez v. Villegas?",
+      "choices": {
+        "A": "Because the record showed no proof of mental suffering on their part upon which the award could be based.",
+        "B": "Because moral damages cannot be claimed in a counterclaim.",
+        "C": "Because they were relatives of the plaintiff.",
+        "D": "Because they did not pay docket fees."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court said: \"As to moral damages, the record shows no proof of mental suffering on the part of defendants upon which the award can be based.\" **B is wrong:** moral damages may be counterclaimed if proved. **C and D are wrong:** not the reasons given. **Bar trap:** an allegation of a malicious suit is not proof of suffering.",
+      "caseIds": [
+        "case-0075"
+      ],
+      "source": {
+        "caseTitle": "Gutierrez v. Villegas, et al.",
+        "grNumber": "G.R. No. L-17117",
+        "url": "https://lawphil.net/judjuris/juri1963/jul1963/gr_l-17117_1963.html",
+        "part": "Decision, discussion of the defendants' appeal (moral damages)",
+        "excerpt": "As to moral damages, the record shows no proof of mental suffering on the part of defendants upon which the award can be based."
+      }
+    },
+    {
+      "id": "q-0797",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "In Gutierrez v. Villegas, which of the following did the Court NOT cite as a reason for refusing damages to the defendants?",
+      "choices": {
+        "A": "The allegations of fraud in the complaint were privileged in character.",
+        "B": "The plaintiff's failure to seek an amicable settlement under Article 222 was not pleaded.",
+        "C": "The plaintiff was a minor without capacity to sue.",
+        "D": "There was no proof of mental suffering."
+      },
+      "correct": "C",
+      "explanation": "**C is correct**, because the Court never said this. It cited that \"the allegations of fraud in plaintiff's complaint [were] privileged in character,\" that \"her failure to seek an amicable settlement ... as required of relatives by Article 222 ... has not been pleaded,\" and that \"the record shows no proof of mental suffering.\" **A, B and D are wrong:** each was cited. **Bar trap:** a defense based on the failure to seek amicable settlement among relatives must be raised in the answer or a motion to dismiss.",
+      "caseIds": [
+        "case-0075"
+      ],
+      "source": {
+        "caseTitle": "Gutierrez v. Villegas, et al.",
+        "grNumber": "G.R. No. L-17117",
+        "url": "https://lawphil.net/judjuris/juri1963/jul1963/gr_l-17117_1963.html",
+        "part": "Decision, discussion of the defendants' appeal (privileged allegations and Article 222)",
+        "excerpt": "Not only were the allegations of fraud in plaintiff's complaint privileged in character, but her failure to seek an amicable settlement before filing suit, as required of relatives by Article 222 of the Civil Code, has not been pleaded either by answer or motion to dismiss."
+      }
+    },
+    {
+      "id": "q-0798",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "According to Gutierrez v. Villegas, fraud",
+      "choices": {
+        "A": "is presumed whenever the parties are relatives.",
+        "B": "is presumed whenever the price is lower than the market value.",
+        "C": "may be proved entirely by circumstantial evidence, but is not to be lightly inferred.",
+        "D": "can be proved only by documentary evidence."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court said: \"While fraud may be proved entirely by circumstantial evidence, it is not to be lightly inferred,\" and the plaintiff's evidence did not \"overcome the presumption of good faith and regularity in human affairs.\" **A and B are wrong:** fraud is not presumed from relationship or a low price. **D is wrong:** circumstantial evidence may suffice. **Bar trap:** the burden is on the one alleging fraud.",
+      "caseIds": [
+        "case-0075"
+      ],
+      "source": {
+        "caseTitle": "Gutierrez v. Villegas, et al.",
+        "grNumber": "G.R. No. L-17117",
+        "url": "https://lawphil.net/judjuris/juri1963/jul1963/gr_l-17117_1963.html",
+        "part": "Decision, discussion of fraud",
+        "excerpt": "While fraud may be proved entirely by circumstantial evidence, it is not to be lightly inferred."
+      }
+    },
+    {
+      "id": "q-0799",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "What was the result in Gutierrez v. Villegas?",
+      "choices": {
+        "A": "The sale was annulled for fraud.",
+        "B": "The sale was rescinded for lesion.",
+        "C": "The defendants were awarded moral damages.",
+        "D": "The trial court's decision dismissing both the complaint and the counterclaim was affirmed."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The trial court had dismissed the complaint and the counterclaim, and the Court found \"no reason for disturbing the decision appealed from, and, therefore, the same is hereby affirmed.\" **A and B are wrong:** fraud and lesion were not proved. **C is wrong:** the counterclaim failed. **Bar trap:** both parties can lose on appeal.",
+      "caseIds": [
+        "case-0075"
+      ],
+      "source": {
+        "caseTitle": "Gutierrez v. Villegas, et al.",
+        "grNumber": "G.R. No. L-17117",
+        "url": "https://lawphil.net/judjuris/juri1963/jul1963/gr_l-17117_1963.html",
+        "part": "Decision, the disposition",
+        "excerpt": "We find no reason for disturbing the decision appealed from, and, therefore, the same is hereby affirmed."
       }
     }
   ]
