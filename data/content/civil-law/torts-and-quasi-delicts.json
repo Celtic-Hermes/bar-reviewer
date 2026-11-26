@@ -256,6 +256,21 @@
       "ruling": "The Court en banc denied the petition. In criminal cases, only the Office of the Solicitor General may appeal the criminal aspect on behalf of the State; a private complainant's role is that of a witness, with an interest limited to the civil liability; and the petitioner, having died, no longer had legal capacity to pursue the appeal. On standing, the Court nonetheless explained that under Section 27 of R.A. No. 7610 complaints may be filed by seven classes of persons, including an officer or representative of a licensed child-caring institution, and that the transfer of parental authority to guardians does not sever all ties between the child and the institution, since parental authority is a sum of duties for the child's best interest, and guardians may themselves be the abusers. Under Section 3(a), a person with cognitive disability is a child based on mental age, not chronological age; Larry, with the mental age of an 8-year-old, was a child under the law. The substantive question whether the vasectomy violated R.A. No. 7610 was not resolved, for lack of a party and of an appeal by the OSG.",
       "keyDoctrine": "Only the Solicitor General may appeal the criminal aspect of a case; the private complainant's interest is limited to the civil liability, and a petitioner's death extinguishes her legal capacity to pursue the appeal. Under Section 27 of R.A. No. 7610, an officer or representative of a licensed child-caring institution may file a complaint for child abuse, and a transfer of parental authority does not defeat that standing. Under Section 3(a), a person with cognitive disability is a child under R.A. No. 7610 based on mental age. Parental authority is not a power but a sum of duties for the child's welfare.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2019/sep2019/gr_184535_2019.html"
+    },
+    {
+      "id": "case-0047",
+      "status": "draft",
+      "name": "Kilusang Mayo Uno, et al. v. Director-General, NEDA, et al.",
+      "grNumber": "G.R. No. 167798",
+      "year": 2006,
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Privacy Torts",
+      "facts": "Executive Order No. 420, issued by President Gloria Macapagal-Arroyo on April 13, 2005, directed all government agencies and government-owned and controlled corporations that issue ID cards to adopt a unified multi-purpose ID system, to reduce costs, increase convenience and efficiency, and enhance the reliability of government IDs. It limited the data to be collected to 14 items (name, home address, sex, picture, signature, date and place of birth, marital status, names of parents, height, weight, fingerprints, prominent distinguishing features, and TIN), required only some of them to appear on the card, and prescribed safeguards for confidentiality, access control and correction. Labor groups and party-list representatives filed petitions to nullify the order, claiming it usurped legislative power and infringed the right to privacy, contrary to Ople v. Torres.",
+      "issue": "(1) Is EO 420 a usurpation of legislative power by the President? (2) Does EO 420 infringe the right to privacy?",
+      "ruling": "The Court en banc dismissed the petitions and declared EO 420 valid. (1) It is an exercise of the President's constitutional power of control over the executive departments and of the duty to ensure that the laws are faithfully executed; it applies only to government entities that already issue IDs under existing laws, does not apply to the Judiciary or the independent constitutional commissions, and does not create a national ID system. Legislative power is the authority to make, alter or repeal laws; EO 420 merely implements existing laws. Legislation is required only when an ID system needs a special appropriation, is compulsory on all branches of government and on all citizens, or collects personal data beyond what is routinely required so as to infringe privacy. (2) The right to privacy does not bar reasonable government ID systems. EO 420 narrowly limits the data, which are routine for identification, and provides strict safeguards; confidential personal data are outside the right to information on matters of public concern. Ople v. Torres was distinguished: the issuance there sought to create a new national computerized ID system and was annulled solely because the subject required legislation.",
+      "keyDoctrine": "The President may, under the power of control over the executive department and the duty to faithfully execute the laws, direct government entities that already issue IDs to adopt a uniform ID data collection and format. Legislation is needed for a government ID system that requires a special appropriation, is compulsory on all branches and all citizens, or collects personal data beyond what is routinely required. The right to privacy does not bar reasonable ID systems that narrowly limit data and provide safeguards; personal matters are outside the right to information on matters of public concern.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2006/apr2006/gr_167798_2006.html"
     }
   ],
   "questions": [
@@ -4168,6 +4183,237 @@
         "url": "https://lawphil.net/judjuris/juri2019/sep2019/gr_184535_2019.html",
         "part": "Resolution, II (private crimes under Rule 110, Section 5)",
         "excerpt": "The crimes of adultery and concubinage shall not be prosecuted except upon a complaint filed by the offended spouse. The offended party cannot institute criminal prosecution without including the guilty parties, if both are alive, nor, in any case, if the offended party has consented to the offense or pardoned the offenders."
+      }
+    },
+    {
+      "id": "q-0568",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Privacy Torts",
+      "prompt": "The President issues an executive order directing all government agencies and GOCCs that already issue ID cards under existing laws to adopt a uniform data collection and ID format, limited to specific data and with confidentiality safeguards. Petitioners claim the order usurps legislative power. Decide.",
+      "suggestedAnswer": {
+        "answer": "The order is valid. It is an exercise of the President's constitutional power of control over the executive departments and of her duty to ensure that the laws are faithfully executed, not an act of legislation.",
+        "legalBasis": "In KMU v. Director-General, NEDA, the Court held that under Section 17, Article VII of the 1987 Constitution, the President has control of all executive departments, bureaus and offices and must ensure that the laws are faithfully executed; this power of control is self-executing and needs no implementing legislation. Legislative power is the authority to make laws and to alter or repeal them. In issuing EO 420, the President did not make, alter or repeal any law but merely implemented existing laws to reduce costs and increase efficiency.",
+        "application": "The order covers only entities that already issue IDs as part of their functions under existing laws; it does not apply to the Judiciary or the independent constitutional commissions, which are outside the President's control, and it does not create a national ID system. Unifying existing ID systems for savings, efficiency, compatibility and convenience is an administrative matter.",
+        "conclusion": "There is no usurpation of legislative power. **Bar trap:** do not equate a uniform format for existing sectoral IDs with a national ID system; the latter, as in Ople v. Torres, requires legislation."
+      },
+      "keyPoints": [
+        "President's power of control over executive departments (Sec. 17, Art. VII); self-executing",
+        "Duty to ensure that the laws are faithfully executed",
+        "Legislative power: to make, alter or repeal laws; EO 420 only implements existing laws",
+        "Covers only entities already issuing IDs; not the Judiciary or constitutional commissions",
+        "Not a national ID system"
+      ],
+      "caseIds": [
+        "case-0047"
+      ],
+      "source": {
+        "caseTitle": "Kilusang Mayo Uno, et al. v. Director-General, NEDA, et al.",
+        "grNumber": "G.R. No. 167798",
+        "url": "https://lawphil.net/judjuris/juri2006/apr2006/gr_167798_2006.html",
+        "part": "The Court's Ruling, On the Alleged Usurpation of Legislative Power",
+        "excerpt": "Second, the President may by executive or administrative order direct the government entities under the Executive department to adopt a uniform ID data collection and format. Section 17, Article VII of the 1987 Constitution provides that the \"President shall have control of all executive departments, bureaus and offices.\" The same Section also mandates the President to \"ensure that the laws be faithfully executed.\" Certainly, under this constitutional power of control the President can direct all government entities, in the exercise of their functions under existing laws, to adopt a uniform ID data collection and ID format to achieve savings, efficiency, reliability, compatibility, and convenience to the public. The President’s constitutional power of control is self-executing and does not need any implementing legislation. Of course, the President’s power of control is limited to the Executive branch of government and does not extend to the Judiciary or to the independent constitutional commissions. Thus, EO 420 does not apply to the Judiciary, or to the COMELEC which under existing laws is also authorized to issue voter’s ID cards. This only shows that EO 420 does not establish a national ID system because legislation is needed to establish a single ID system that is compulsory for all branches of government. … Legislative power is the authority to make laws and to alter or repeal them. In issuing EO 420, the President did not make, alter or repeal any law but merely implemented and executed existing laws."
+      }
+    },
+    {
+      "id": "q-0569",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Privacy Torts",
+      "prompt": "According to KMU v. Director-General, NEDA, what aspects of a government-maintained ID card system require legislation? Did Executive Order No. 420 fall under any of them?",
+      "suggestedAnswer": {
+        "answer": "Three aspects require legislation: (1) when the system requires a special appropriation because there is no existing appropriation for it; (2) when it is compulsory on all branches of government, including the independent constitutional commissions, and on all citizens whether they have a use for the ID or not; and (3) when it requires the collection and recording of personal data beyond what is routinely or usually required, such that the citizen's right to privacy is infringed. EO 420 fell under none of them.",
+        "legalBasis": "KMU v. Director-General, NEDA held that the act of issuing ID cards and collecting the necessary personal data does not by itself require legislation, as private employers, schools and clubs routinely issue IDs; only the three aspects above do.",
+        "application": "EO 420 needed no special appropriation, since the covered entities' existing ID systems were already funded; it was not compulsory on all branches or on all citizens; and it required a narrow and focused collection of data, even less than the existing systems, with safeguards for confidentiality.",
+        "conclusion": "EO 420 did not require legislation. **Bar trap:** a national ID system that is compulsory on all citizens and all branches would require legislation (as in Ople v. Torres); check the current law on the national ID before answering a present-day problem."
+      },
+      "keyPoints": [
+        "(1) A special appropriation is needed",
+        "(2) Compulsory on all branches of government and on all citizens",
+        "(3) Collection of personal data beyond what is routinely required, infringing privacy",
+        "Issuing IDs and collecting the necessary data does not by itself need legislation",
+        "EO 420 fell under none of the three"
+      ],
+      "caseIds": [
+        "case-0047"
+      ],
+      "source": {
+        "caseTitle": "Kilusang Mayo Uno, et al. v. Director-General, NEDA, et al.",
+        "grNumber": "G.R. No. 167798",
+        "url": "https://lawphil.net/judjuris/juri2006/apr2006/gr_167798_2006.html",
+        "part": "The Court's Ruling, On the Alleged Usurpation of Legislative Power (when legislation is required)",
+        "excerpt": "The act of issuing ID cards and collecting the necessary personal data for imprinting on the ID card does not require legislation. … What require legislation are three aspects of a government maintained ID card system. First, when the implementation of an ID card system requires a special appropriation because there is no existing appropriation for such purpose. Second, when the ID card system is compulsory on all branches of government, including the independent constitutional commissions, as well as compulsory on all citizens whether they have a use for the ID card or not. Third, when the ID card system requires the collection and recording of personal data beyond what is routinely or usually required for such purpose, such that the citizen’s right to privacy is infringed. In the present case, EO 420 does not require any special appropriation because the existing ID card systems of government entities covered by EO 420 have the proper appropriation or funding. EO 420 is not compulsory on all branches of government and is not compulsory on all citizens. EO 420 requires a very narrow and focused collection and recording of personal data while safeguarding the confidentiality of such data."
+      }
+    },
+    {
+      "id": "q-0570",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Privacy Torts",
+      "prompt": "Petitioners argue that an executive order unifying the ID systems of government agencies violates the right to privacy, citing Ople v. Torres, which struck down an earlier ID issuance. The order limits the data to 14 routine identification items, of which only 8 appear on the card, and requires confidentiality, access control and the owner's written authorization for disclosure. Does it violate the right to privacy? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. The right to privacy does not bar the adoption of reasonable ID systems by government entities. The order narrowly limits the data, which are routine for identification, and provides strict safeguards; and Ople v. Torres is not authority to the contrary.",
+        "legalBasis": "In KMU v. Director-General, NEDA, the Court held that EO 420 shows no constitutional infirmity on its face, since it narrowly limits the data that can be collected, recorded and shown, and provides strict safeguards; the 14 data are routine for ID purposes and cannot embarrass or humiliate anyone, far less sensitive than the medical data upheld in Whalen v. Roe. Ople v. Torres was annulled solely on the ground that its subject, a new National Computerized Identification Reference System, required legislation.",
+        "application": "The order reduces the data government entities may collect compared to their previous systems, shows fewer data on the card than even the Supreme Court's own ID, and adds safeguards that did not exist before. Petitioners have not shown how it violates their privacy. Unlike in Ople, it creates no new national ID system but rationalizes existing sectoral cards.",
+        "conclusion": "There is no violation of the right to privacy. **Bar trap:** Ople v. Torres was decided on the need for legislation, not on privacy; and a narrowly drawn system with safeguards is treated differently from a broad one without safeguards."
+      },
+      "keyPoints": [
+        "The right to privacy does not bar reasonable government ID systems",
+        "Data limited to 14 routine identification items; only 8 shown on the card",
+        "Strict safeguards: confidentiality, access control, owner's written authorization",
+        "Routine data are far less sensitive than the medical data upheld in Whalen v. Roe",
+        "Ople v. Torres was annulled solely because a new national ID system required legislation"
+      ],
+      "caseIds": [
+        "case-0047"
+      ],
+      "source": {
+        "caseTitle": "Kilusang Mayo Uno, et al. v. Director-General, NEDA, et al.",
+        "grNumber": "G.R. No. 167798",
+        "url": "https://lawphil.net/judjuris/juri2006/apr2006/gr_167798_2006.html",
+        "part": "The Court's Ruling, On the Alleged Infringement of the Right to Privacy",
+        "excerpt": "On its face, EO 420 shows no constitutional infirmity because it even narrowly limits the data that can be collected, recorded and shown compared to the existing ID systems of government entities. EO 420 further provides strict safeguards to protect the confidentiality of the data collected, in contrast to the prior ID systems which are bereft of strict administrative safeguards. The right to privacy does not bar the adoption of reasonable ID systems by government entities. … Petitioners have not shown how EO 420 will violate their right to privacy. Petitioners cannot show such violation by a mere facial examination of EO 420 because EO 420 narrowly draws the data collection, recording and exhibition while prescribing comprehensive safeguards. Ople v. Torres is not authority to hold that EO 420 violates the right to privacy because in that case the assailed executive issuance, broadly drawn and devoid of safeguards, was annulled solely on the ground that the subject matter required legislation."
+      }
+    },
+    {
+      "id": "q-0571",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Privacy Torts",
+      "prompt": "\"The authority to make laws and to alter or repeal them\" is, according to KMU v. Director-General, NEDA, the definition of",
+      "choices": {
+        "A": "legislative power.",
+        "B": "the power of control.",
+        "C": "executive power.",
+        "D": "police power."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court said: \"Legislative power is the authority to make laws and to alter or repeal them. In issuing EO 420, the President did not make, alter or repeal any law but merely implemented and executed existing laws.\" **B is wrong:** the power of control is the President's power over executive departments, bureaus and offices, on which EO 420 rested. **C is wrong:** executive power is the power to implement and execute laws. **D is wrong:** police power was not the basis discussed. **Bar trap:** the test of usurpation is whether the issuance makes, alters or repeals a law.",
+      "caseIds": [
+        "case-0047"
+      ],
+      "source": {
+        "caseTitle": "Kilusang Mayo Uno, et al. v. Director-General, NEDA, et al.",
+        "grNumber": "G.R. No. 167798",
+        "url": "https://lawphil.net/judjuris/juri2006/apr2006/gr_167798_2006.html",
+        "part": "The Court's Ruling, On the Alleged Usurpation of Legislative Power",
+        "excerpt": "Legislative power is the authority to make laws and to alter or repeal them. In issuing EO 420, the President did not make, alter or repeal any law but merely implemented and executed existing laws."
+      }
+    },
+    {
+      "id": "q-0572",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Privacy Torts",
+      "prompt": "How did the Court in KMU v. Director-General, NEDA treat Ople v. Torres, where an earlier executive issuance on identification was annulled?",
+      "choices": {
+        "A": "It abandoned Ople v. Torres.",
+        "B": "It held that Ople v. Torres had established that every government ID system violates privacy.",
+        "C": "It held that the issuance in Ople, which sought to create a new national computerized ID system, was annulled solely because the subject required legislation, so Ople is not authority that EO 420 violates privacy.",
+        "D": "It held that Ople v. Torres applies only to private employers."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court said Ople \"is not authority to hold that EO 420 violates the right to privacy because in that case the assailed executive issuance, broadly drawn and devoid of safeguards, was annulled solely on the ground that the subject matter required legislation,\" citing then Justice Panganiban's concurrence. It added that the issuance in Ople sought to establish a national ID system that did not exist before, while EO 420 merely unified existing sectoral systems. **A is wrong:** Ople was distinguished, not abandoned. **B and D are wrong:** neither is what Ople held. **Bar trap:** know the ground of Ople (need for legislation), not just its result.",
+      "caseIds": [
+        "case-0047"
+      ],
+      "source": {
+        "caseTitle": "Kilusang Mayo Uno, et al. v. Director-General, NEDA, et al.",
+        "grNumber": "G.R. No. 167798",
+        "url": "https://lawphil.net/judjuris/juri2006/apr2006/gr_167798_2006.html",
+        "part": "The Court's Ruling, On the Alleged Infringement of the Right to Privacy (Ople v. Torres)",
+        "excerpt": "Ople v. Torres is not authority to hold that EO 420 violates the right to privacy because in that case the assailed executive issuance, broadly drawn and devoid of safeguards, was annulled solely on the ground that the subject matter required legislation. … In contrast, the assailed executive issuance in Ople v. Torres sought to establish a \"National Computerized Identification Reference System,\" a national ID system that did not exist prior to the assailed executive issuance. Obviously, a national ID card system requires legislation because it creates a new national data collection and card issuance system where none existed before."
+      }
+    },
+    {
+      "id": "q-0573",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Privacy Torts",
+      "prompt": "Under KMU v. Director-General, NEDA, may the press demand access to the confidential personal data collected under EO 420, invoking the right to information under Section 7, Article III of the Constitution?",
+      "choices": {
+        "A": "Yes, because all data held by government are matters of public concern.",
+        "B": "Yes, if the press shows a legitimate purpose.",
+        "C": "Only data on public officials may be released.",
+        "D": "No, because the data are personal matters, which are exempt from or outside the coverage of the right to information on matters of public concern."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The Court said that, except for the data shown on the card, the data are \"strictly confidential\" and \"personal matters,\" and \"[p]ersonal matters are exempt or outside the coverage of the people's right to information on matters of public concern,\" so they \"cannot be released to the public or the press.\" **A, B and C are wrong:** the Court drew no such rules; it held personal data outside the right to information. **Bar trap:** the right to information covers matters of public concern, not private personal data held by government.",
+      "caseIds": [
+        "case-0047"
+      ],
+      "source": {
+        "caseTitle": "Kilusang Mayo Uno, et al. v. Director-General, NEDA, et al.",
+        "grNumber": "G.R. No. 167798",
+        "url": "https://lawphil.net/judjuris/juri2006/apr2006/gr_167798_2006.html",
+        "part": "The Court's Ruling, On the Alleged Infringement of the Right to Privacy (right to information)",
+        "excerpt": "With the exception of the 8 specific data shown on the ID card, the personal data collected and recorded under EO 420 are treated as \"strictly confidential\" under Section 6(d) of EO 420. These data are not only strictly confidential but also personal matters. Section 7, Article III of the 1987 Constitution grants the \"right of the people to information on matters of public concern.\" Personal matters are exempt or outside the coverage of the people’s right to information on matters of public concern. The data treated as \"strictly confidential\" under EO 420 being private matters and not matters of public concern, these data cannot be released to the public or the press."
+      }
+    },
+    {
+      "id": "q-0574",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Privacy Torts",
+      "prompt": "Why did the Court in KMU v. Director-General, NEDA find that Whalen v. Roe supports the validity of EO 420?",
+      "choices": {
+        "A": "Because Whalen held that a government may never keep a central database of personal information.",
+        "B": "Because Whalen upheld a law requiring doctors to report patients receiving certain prescription drugs to a central government database, and the routine ID data under EO 420 are far less sensitive and personal than such medical data.",
+        "C": "Because Whalen involved a national ID card identical to EO 420.",
+        "D": "Because Whalen held that the right to privacy does not exist."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court explained that Whalen upheld a New York law requiring doctors to report patients who received prescription drugs with potential for abuse, kept in a central computerized database, and that \"[c]ompared to the personal medical data required for disclosure to the New York State in Whalen, the 14 specific data required for disclosure to the Philippine government under EO 420 are far less sensitive and far less personal.\" **A is wrong:** Whalen upheld such a database. **C is wrong:** Whalen did not involve an ID card. **D is wrong:** Whalen recognized privacy interests but found no impermissible invasion. **Bar trap:** compare the sensitivity of the data required.",
+      "caseIds": [
+        "case-0047"
+      ],
+      "source": {
+        "caseTitle": "Kilusang Mayo Uno, et al. v. Director-General, NEDA, et al.",
+        "grNumber": "G.R. No. 167798",
+        "url": "https://lawphil.net/judjuris/juri2006/apr2006/gr_167798_2006.html",
+        "part": "The Court's Ruling, On the Alleged Infringement of the Right to Privacy (Whalen v. Roe)",
+        "excerpt": "Whalen v. Roe is the leading American case on the constitutional protection for control over information. In Whalen, the U.S. Supreme Court upheld the validity of a New York law that required doctors to furnish the government reports identifying patients who received prescription drugs that have a potential for abuse. … Compared to the personal medical data required for disclosure to the New York State in Whalen, the 14 specific data required for disclosure to the Philippine government under EO 420 are far less sensitive and far less personal. In fact, the 14 specific data required under EO 420 are routine data for ID systems, unlike the sensitive and potentially embarrassing medical records of patients taking prescription drugs."
+      }
+    },
+    {
+      "id": "q-0575",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Privacy Torts",
+      "prompt": "According to KMU v. Director-General, NEDA, which of the following is covered by Executive Order No. 420?",
+      "choices": {
+        "A": "The Judiciary, including all first and second level courts.",
+        "B": "The COMELEC, in issuing voter's ID cards.",
+        "C": "Government entities under the Executive department, such as GSIS, SSS, Philhealth and LTO, that already issue ID cards under existing laws.",
+        "D": "All citizens, who must each obtain the unified ID."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court held that EO 420 applies only to government entities that issue ID cards as part of their functions under existing laws, giving GSIS, SSS, Philhealth, the Mayor's Office, LTO and PRC as examples. **A and B are wrong:** the President's power of control does not extend to the Judiciary or the independent constitutional commissions, so EO 420 does not apply to them, including the COMELEC's voter's ID. **D is wrong:** EO 420 does not compel all citizens to have an ID card. **Bar trap:** these limits are why EO 420 was not a national ID system requiring legislation.",
+      "caseIds": [
+        "case-0047"
+      ],
+      "source": {
+        "caseTitle": "Kilusang Mayo Uno, et al. v. Director-General, NEDA, et al.",
+        "grNumber": "G.R. No. 167798",
+        "url": "https://lawphil.net/judjuris/juri2006/apr2006/gr_167798_2006.html",
+        "part": "The Court's Ruling, On the Alleged Usurpation of Legislative Power (scope of EO 420)",
+        "excerpt": "Section 2 of EO 420 provides, \"Coverage. – All government agencies and government-owned and controlled corporations issuing ID cards to their members or constituents shall be covered by this executive order.\" EO 420 applies only to government entities that issue ID cards as part of their functions under existing laws. These government entities have already been issuing ID cards even prior to EO 420. Examples of these government entities are the GSIS, SSS, Philhealth, Mayor’s Office, LTO, PRC, and similar government entities."
       }
     }
   ]
