@@ -27,7 +27,8 @@ Use these exact names everywhere (data, menus, filters):
 Topics so far (use these exact names):
 - Mercantile Law → **Commercial Law** (renamed from Communication Law; so far the privacy cases: Zulueta, Hing, Vivares, Cadajas, Regala, IBP v. Purisima)
 - Legal and Judicial Ethics → **Notarial Practice**
-- Civil Law → **Torts and Quasi-delicts** (the 2027 syllabus name, s3.XI) → sub-topic **Medical Negligence and Malpractice** (the professor's list "X. Kindred Torts: Medical Malpractice", from case-0030; 3 essays + 5 multiple choice per case, like every case). The related law R.A. No. 9439 is a rule to read (no questions).
+- Civil Law → **Torts and Quasi-delicts** (the 2027 syllabus name, s3.XI) → sub-topic **Medical Negligence and Malpractice** (the professor's list "X. Kindred Torts: Medical Malpractice", from case-0030; 3 essays + 5 multiple choice per case, like every case). The related law R.A. No. 9439 is a rule to read (no questions). Later sub-topics: **Environmental Tort** (Sanggacala, case-0045) and **Privacy Torts** (Versoza, KMU v. NEDA, case-0046 to case-0047).
+- Civil Law → **Damages** (the 2027 syllabus name, s3.XII) → sub-topic **Introductory Concepts** (Orchard Golf, case-0048); the professor's Part II outline continues with Actual or Compensatory Damages.
 - Mercantile Law → **Intellectual Property Code** (cases from the builder's list of 16 IP decisions, case-0014 to case-0029, each with 3 essay and 5 multiple-choice questions; sub-topics **Patents**, **Trademarks and Unfair Competition**, **Copyright**, the same names the NotebookLM questions use)
 - Remedial Law → **Special Proceedings** → sub-topic **Writ of Amparo** (fill-in-the-blank items, one per section of A.M. No. 07-9-12-SC, q-0056 to q-0082)
 - Remedial Law → **Special Proceedings** → sub-topic **Custody of Minors and Habeas Corpus** (fill-in-the-blank items, one per section of A.M. No. 03-04-04-SC, q-0083 to q-0104)

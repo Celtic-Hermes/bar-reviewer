@@ -1,0 +1,253 @@
+{
+  "subject": "Civil Law",
+  "topic": "Damages",
+  "cases": [
+    {
+      "id": "case-0048",
+      "status": "draft",
+      "name": "The Orchard Golf & Country Club, Inc., et al. v. Yu and Yuhico",
+      "grNumber": "G.R. No. 191033",
+      "year": 2016,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Introductory Concepts",
+      "facts": "On May 28, 2000, members Ernesto Yu and Manuel Yuhico wanted to play golf at the Orchard Golf & Country Club as a pair, but the club's \"no twosome\" policy barred groups of fewer than three from teeing off on weekend mornings. When the assistant golf director, Francis Montallana, refused to let them play, Yu shouted invectives at him and the two teed off anyway, without permission and without the required tee time slip. After asking for their written comments, the board suspended them for three months. After much litigation over injunctions, the Regional Trial Court of Imus declared the suspension void and awarded each of them ₱2,000,000 moral damages, ₱2,000,000 exemplary damages, attorney's fees and costs; ₱9,200,000 was paid under a writ of execution. The club filed a notice of appeal instead of a petition for review under Rule 43 (as required for intra-corporate cases by A.M. No. 04-9-07-SC), then asked the Court of Appeals for time to file the petition. The Court of Appeals first granted the extension, then reversed itself.",
+      "issue": "(1) Should the Court of Appeals have allowed the late petition for review? (2) Were Yu and Yuhico entitled to damages for their suspension?",
+      "ruling": "The Court granted the petition, dismissed the complaints and ordered Yu and Yuhico to return the ₱9,200,000. (1) The rules on the period to appeal are generally inviolable, but may be relaxed to serve substantial justice, especially where the appeal appears meritorious or there are compelling reasons; here the delay was only seven days, the club candidly admitted its mistake, A.M. No. 04-9-07-SC itself allows extensions, and there was no material prejudice. (2) On the merits, the members admitted violating the club's rules, were given notice and opportunity to be heard, and were validly suspended under the by-laws. Their claimed damages were supported only by self-serving declarations. Any damage was damnum absque injuria: injury is the illegal invasion of a legal right, damage is the resulting loss, and damages are the compensation; there must be both a legal wrong and resulting damage. One who makes use of his own legal right does no injury (qui jure suo utitur nullum damnum facit), and the mental anguish, if any, was self-inflicted.",
+      "keyDoctrine": "Damages are the recompense or compensation awarded for the damage suffered; damage is the loss, hurt or harm resulting from the injury; injury is the illegal invasion of a legal right. To recover damages there must be both a right of action for a legal wrong inflicted by the defendant and damage resulting from it (damnum et injuria). Damage without injury (damnum absque injuria) is not compensable, and one who makes use of his own legal right does no injury. Procedural rules on appeal periods may be relaxed to serve substantial justice.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2016/jan2016/gr_191033_2016.html"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q-0576",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Introductory Concepts",
+      "prompt": "Define damages, and distinguish damages from damage and from injury. Can there be damage without injury? Explain.",
+      "suggestedAnswer": {
+        "answer": "Injury is the illegal invasion of a legal right; damage is the loss, hurt or harm which results from the injury; and damages are the recompense or compensation awarded for the damage suffered. There can be damage without injury, when the loss or harm was not the result of a violation of a legal duty; this is damnum absque injuria.",
+        "legalBasis": "In The Orchard Golf & Country Club v. Yu, the Court quoted Spouses Custodio v. Court of Appeals: the mere fact that the plaintiff suffered losses does not give rise to a right to recover damages. To warrant recovery, there must be both a right of action for a legal wrong inflicted by the defendant and damage resulting to the plaintiff; wrong without damage, or damage without wrong, does not constitute a cause of action, since damages are merely part of the remedy allowed for the injury caused by a breach or wrong.",
+        "application": "So a plaintiff must show that the defendant breached a duty owed to him (injury) and that he suffered loss from it (damage); only then may the court award compensation (damages). A person who suffers loss from another's lawful act, such as a valid disciplinary suspension, has damage but no injury.",
+        "conclusion": "Injury is the wrong, damage is the harm, damages are the compensation; damage without injury is not compensable. **Bar trap:** do not use \"damage\" and \"damages\" interchangeably; and losses alone, however real, do not create a cause of action."
+      },
+      "keyPoints": [
+        "Injury: the illegal invasion of a legal right",
+        "Damage: the loss, hurt or harm resulting from the injury",
+        "Damages: the recompense or compensation awarded for the damage suffered",
+        "Recovery requires both a legal wrong and resulting damage",
+        "Damage without injury is damnum absque injuria, not compensable"
+      ],
+      "caseIds": [
+        "case-0048"
+      ],
+      "source": {
+        "caseTitle": "The Orchard Golf & Country Club, Inc., et al. v. Yu and Yuhico",
+        "grNumber": "G.R. No. 191033",
+        "url": "https://lawphil.net/judjuris/juri2016/jan2016/gr_191033_2016.html",
+        "part": "Decision, damages, damage and injury (quoting Spouses Custodio v. CA)",
+        "excerpt": "x x x [T]he mere fact that the plaintiff suffered losses does not give rise to a right to recover damages. To warrant the recovery of damages, there must be both a right of action for a legal wrong inflicted by the defendant, and damage resulting to the plaintiff therefrom. Wrong without damage, or damage without wrong, does not constitute a cause of action, since damages are merely part of the remedy allowed for the injury caused by a breach or wrong. There is a material distinction between damages and injury. Injury is the illegal invasion of a legal right; damage is the loss, hurt, or harm which results from the injury; and damages are the recompense or compensation awarded for the damage suffered. Thus, there can be damage without injury in those instances in which the loss or harm was not the result of a violation of a legal duty. These situations are often called damnum absque injuria."
+      }
+    },
+    {
+      "id": "q-0577",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Introductory Concepts",
+      "prompt": "Two members of a private club deliberately violated its rules and insulted a club officer. After being given notice and a chance to explain, they were suspended by the board in accordance with the club's by-laws. They sued, claiming that friends avoided them and that they became the butt of jokes, and the trial court awarded each of them moral and exemplary damages and attorney's fees. Should the award stand? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. The members were validly suspended, so any loss they suffered is damnum absque injuria; and their claims were supported only by self-serving declarations.",
+        "legalBasis": "In The Orchard Golf & Country Club v. Yu, the Court held that the proper exercise of a lawful right cannot constitute a legal wrong for which an action will lie, even if it causes damage; \"[o]ne who makes use of his own legal right does no injury. Qui jure suo utitur nullum damnum facit.\" The plaintiffs must prove by preponderance of evidence the fault or negligence of the defendants. Club membership is a privilege, subject to the club's rules.",
+        "application": "The members admitted the violations, were given due notice and opportunity to be heard, and were suspended under the by-laws; the suspension was a lawful means of protecting the club's interests. Their testimony about friends avoiding them was self-serving and uncorroborated; one even admitted his friends never said the suspension was the reason. Any mental anguish was brought upon themselves by deliberately breaking the rules.",
+        "conclusion": "The award should be set aside; no moral or exemplary damages, attorney's fees or costs. **Bar trap:** real hurt feelings are not enough; there must be a legal wrong. A valid exercise of a right, such as lawful discipline, gives no cause of action."
+      },
+      "keyPoints": [
+        "The suspension was valid: admitted violations, notice and hearing, compliance with the by-laws",
+        "Proper exercise of a lawful right is not a legal wrong (qui jure suo utitur nullum damnum facit)",
+        "Any loss is damnum absque injuria",
+        "The plaintiff must prove fault or negligence by preponderance of evidence; self-serving declarations are insufficient",
+        "Club membership is a privilege subject to the club's rules"
+      ],
+      "caseIds": [
+        "case-0048"
+      ],
+      "source": {
+        "caseTitle": "The Orchard Golf & Country Club, Inc., et al. v. Yu and Yuhico",
+        "grNumber": "G.R. No. 191033",
+        "url": "https://lawphil.net/judjuris/juri2016/jan2016/gr_191033_2016.html",
+        "part": "Decision, the claim for moral and exemplary damages",
+        "excerpt": "With regard to the purported damages they incurred, respondents testified during the trial to support their respective allegations. … Apart from these self-serving declarations, respondents presented neither testimonial nor documentary evidence to bolster their claims. Worse, Yu even admitted that Freddy Lim and Atty. Benjie did not tell him that his suspension was the reason why they did not want to transact with him. … \"One who makes use of his own legal right does no injury. Qui jure suo utitur nullum damnum facit. If damage results from a person's exercising his legal rights, it is damnum absque injuria.\" In this case, respondents failed to prove by preponderance of evidence that there is fault or negligence on the part of petitioners in order to oblige them to pay for the alleged damage sustained as a result of their suspension as Club members. Certainly, membership in the Club is a privilege. Regular members are entitled to use all the facilities and privileges of the Club, subject to its rules and regulations. As correctly pointed out by petitioners, the mental anguish respondents experienced, assuming to be true, was brought upon them by themselves for deliberately and consciously violating the rules and regulations of the Club."
+      }
+    },
+    {
+      "id": "q-0578",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Introductory Concepts",
+      "prompt": "In an intra-corporate case, the losing party mistakenly filed a notice of appeal with the trial court instead of a petition for review under Rule 43 with the Court of Appeals. Seven days after the 15-day period lapsed, it candidly admitted its mistake and asked the Court of Appeals for time to file the petition. May the Court of Appeals allow it? Explain.",
+      "suggestedAnswer": {
+        "answer": "Yes. Although the rules on the period to appeal are generally inviolable, they may be relaxed to serve substantial justice, and the circumstances here justify relaxation.",
+        "legalBasis": "In The Orchard Golf & Country Club v. Yu, the Court held that appeal is a statutory privilege, and perfecting it within the period is mandatory and jurisdictional; but procedural rules may be waived or dispensed with to serve and achieve substantial justice, as when the appeal on its face appears absolutely meritorious or there are persuasive or compelling reasons to relieve a litigant of an injustice not commensurate with his thoughtlessness. Under A.M. No. 04-9-07-SC, the petition for review under Rule 43 must be filed within 15 days, but the Court of Appeals may grant an additional 15 days and a further extension of not more than 15 days for the most compelling reasons, showing that the period is not unyielding.",
+        "application": "The delay was only seven days; the party showed its intent to appeal by filing a notice of appeal; it candidly admitted the error and disclosed the material dates; there was no material prejudice to the other side; and the appeal was meritorious, since the adverse judgment awarded damages for a valid suspension. Unlike cases where a party persisted for months in the wrong remedy, this was an excusable mistake promptly corrected.",
+        "conclusion": "The Court of Appeals may and should allow the petition. **Bar trap:** liberality is the exception; it rests on short, excusable delay, candor, lack of prejudice and a meritorious appeal, not on mere inconvenience."
+      },
+      "keyPoints": [
+        "Appeal is a statutory privilege; the period is generally mandatory and jurisdictional",
+        "Rules may be relaxed to serve substantial justice: a meritorious appeal or compelling reasons",
+        "A.M. No. 04-9-07-SC: 15 days for a Rule 43 petition, extendible by 15 days and a further 15 days for the most compelling reasons",
+        "Here: seven-day delay, candid admission, intent to appeal shown, no prejudice, meritorious appeal"
+      ],
+      "caseIds": [
+        "case-0048"
+      ],
+      "source": {
+        "caseTitle": "The Orchard Golf & Country Club, Inc., et al. v. Yu and Yuhico",
+        "grNumber": "G.R. No. 191033",
+        "url": "https://lawphil.net/judjuris/juri2016/jan2016/gr_191033_2016.html",
+        "part": "Decision, relaxation of the rules on the period to appeal",
+        "excerpt": "Unlike LBP and Atty. Abrenica, petitioners in this case committed an excusable delay of merely seven (7) days. … In general, procedural rules setting the period for perfecting an appeal or filing a petition for review are inviolable considering that appeal is not a constitutional right but merely a statutory privilege and that perfection of an appeal in the manner and within the period permitted by law is not only mandatory but jurisdictional. However, procedural rules may be waived or dispensed with in order to serve and achieve substantial justice. Relaxation of the rules may be had when the appeal, on its face, appears to be absolutely meritorious or when there are persuasive or compelling reasons to relieve a litigant of an injustice not commensurate with the degree of thoughtlessness in not complying with the prescribed procedure. Notably, under A.M. No. 04-9-07-SC (Re: Mode of Appeal in Cases Formerly Cognizable by the Securities and Exchange Commission), while the petition for review under Rule 43 of the Rules should be filed within fifteen (15) days from notice of the decision or final order of the RTC, the CA may actually grant an additional period of fifteen (15) days within which to file the petition and a further extension of time not exceeding fifteen (15) days for the most compelling reasons. This implies that the reglementary period is neither an impregnable nor an unyielding rule."
+      }
+    },
+    {
+      "id": "q-0579",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Introductory Concepts",
+      "prompt": "As quoted in The Orchard Golf & Country Club v. Yu, \"the recompense or compensation awarded for the damage suffered\" is the definition of",
+      "choices": {
+        "A": "injury.",
+        "B": "damage.",
+        "C": "damages.",
+        "D": "damnum absque injuria."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court quoted: \"Injury is the illegal invasion of a legal right; damage is the loss, hurt, or harm which results from the injury; and damages are the recompense or compensation awarded for the damage suffered.\" **A is wrong:** injury is the illegal invasion of a legal right. **B is wrong:** damage is the loss, hurt or harm. **D is wrong:** damnum absque injuria is damage without injury. **Bar trap:** \"damages\" (plural, the award) is different from \"damage\" (the harm).",
+      "caseIds": [
+        "case-0048"
+      ],
+      "source": {
+        "caseTitle": "The Orchard Golf & Country Club, Inc., et al. v. Yu and Yuhico",
+        "grNumber": "G.R. No. 191033",
+        "url": "https://lawphil.net/judjuris/juri2016/jan2016/gr_191033_2016.html",
+        "part": "Decision, damages defined (quoting Spouses Custodio v. CA)",
+        "excerpt": "There is a material distinction between damages and injury. Injury is the illegal invasion of a legal right; damage is the loss, hurt, or harm which results from the injury; and damages are the recompense or compensation awarded for the damage suffered."
+      }
+    },
+    {
+      "id": "q-0580",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Introductory Concepts",
+      "prompt": "\"Qui jure suo utitur nullum damnum facit,\" applied in The Orchard Golf & Country Club v. Yu, means",
+      "choices": {
+        "A": "one who makes use of his own legal right does no injury.",
+        "B": "the thing speaks for itself.",
+        "C": "let the master answer.",
+        "D": "no one should enrich himself at the expense of another."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court said: \"One who makes use of his own legal right does no injury. Qui jure suo utitur nullum damnum facit. If damage results from a person's exercising his legal rights, it is damnum absque injuria.\" It applied this to the club's valid suspension of members who broke its rules. **B is wrong:** that is res ipsa loquitur. **C is wrong:** that is respondeat superior. **D is wrong:** that describes the principle against unjust enrichment. **Bar trap:** the maxim explains why a lawful act causing loss gives no cause of action, unless the right is abused.",
+      "caseIds": [
+        "case-0048"
+      ],
+      "source": {
+        "caseTitle": "The Orchard Golf & Country Club, Inc., et al. v. Yu and Yuhico",
+        "grNumber": "G.R. No. 191033",
+        "url": "https://lawphil.net/judjuris/juri2016/jan2016/gr_191033_2016.html",
+        "part": "Decision, qui jure suo utitur nullum damnum facit",
+        "excerpt": "\"One who makes use of his own legal right does no injury. Qui jure suo utitur nullum damnum facit. If damage results from a person's exercising his legal rights, it is damnum absque injuria.\""
+      }
+    },
+    {
+      "id": "q-0581",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Introductory Concepts",
+      "prompt": "According to the principles quoted in The Orchard Golf & Country Club v. Yu, in order that a plaintiff may maintain an action for the injuries he complains of, he must establish",
+      "choices": {
+        "A": "only that he suffered pain and suffering.",
+        "B": "only that the defendant's act was hurtful.",
+        "C": "only that the defendant had a legal right to act.",
+        "D": "that the injuries resulted from a breach of duty which the defendant owed to him: a concurrence of injury to the plaintiff and legal responsibility by the person causing it."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The Court quoted: the plaintiff \"must establish that such injuries resulted from a breach of duty which the defendant owed to the plaintiff – a concurrence of injury to the plaintiff and legal responsibility by the person causing it\"; it is \"not sufficient to state that there should be tort liability merely because the plaintiff suffered some pain and suffering,\" and the act \"must be not only hurtful, but wrongful. There must be damnum et injuria.\" **A and B are wrong** for the same reasons. **C is wrong:** that the defendant acted within his legal right is a defense, not part of the plaintiff's case. **Bar trap:** damnum et injuria, both, are required.",
+      "caseIds": [
+        "case-0048"
+      ],
+      "source": {
+        "caseTitle": "The Orchard Golf & Country Club, Inc., et al. v. Yu and Yuhico",
+        "grNumber": "G.R. No. 191033",
+        "url": "https://lawphil.net/judjuris/juri2016/jan2016/gr_191033_2016.html",
+        "part": "Decision, what the plaintiff must establish (quoting Spouses Custodio v. CA)",
+        "excerpt": "In order that a plaintiff may maintain an action for the injuries of which he complains, he must establish that such injuries resulted from a breach of duty which the defendant owed to the plaintiff – a concurrence of injury to the plaintiff and legal responsibility by the person causing it. The underlying basis for the award of tort damages is the premise that an individual was injured in contemplation of law. Thus, there must first be the breach of some duty and the imposition of liability for that breach before damages may be awarded; it is not sufficient to state that there should be tort liability merely because the plaintiff suffered some pain and suffering."
+      }
+    },
+    {
+      "id": "q-0582",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Introductory Concepts",
+      "prompt": "Under A.M. No. 04-9-07-SC, as discussed in The Orchard Golf & Country Club v. Yu, how is a decision of the RTC in a case formerly cognizable by the SEC appealed?",
+      "choices": {
+        "A": "By notice of appeal under Rule 41, filed with the trial court within 15 days.",
+        "B": "By petition for review under Rule 43, filed within 15 days from notice, which the Court of Appeals may extend by 15 days and, for the most compelling reasons, by a further period not exceeding 15 days.",
+        "C": "By petition for certiorari under Rule 65 within 60 days.",
+        "D": "By direct appeal to the Supreme Court."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court said that under A.M. No. 04-9-07-SC, \"while the petition for review under Rule 43 of the Rules should be filed within fifteen (15) days from notice of the decision or final order of the RTC, the CA may actually grant an additional period of fifteen (15) days within which to file the petition and a further extension of time not exceeding fifteen (15) days for the most compelling reasons.\" **A is wrong:** filing a notice of appeal was precisely the club's mistake. **C and D are wrong:** neither is the prescribed mode. **Bar trap:** intra-corporate decisions go up by Rule 43 petition, not by ordinary appeal.",
+      "caseIds": [
+        "case-0048"
+      ],
+      "source": {
+        "caseTitle": "The Orchard Golf & Country Club, Inc., et al. v. Yu and Yuhico",
+        "grNumber": "G.R. No. 191033",
+        "url": "https://lawphil.net/judjuris/juri2016/jan2016/gr_191033_2016.html",
+        "part": "Decision, A.M. No. 04-9-07-SC",
+        "excerpt": "Notably, under A.M. No. 04-9-07-SC (Re: Mode of Appeal in Cases Formerly Cognizable by the Securities and Exchange Commission), while the petition for review under Rule 43 of the Rules should be filed within fifteen (15) days from notice of the decision or final order of the RTC, the CA may actually grant an additional period of fifteen (15) days within which to file the petition and a further extension of time not exceeding fifteen (15) days for the most compelling reasons."
+      }
+    },
+    {
+      "id": "q-0583",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Introductory Concepts",
+      "prompt": "In The Orchard Golf & Country Club v. Yu, the suspended members testified that business friends started avoiding them and that they became the butt of jokes. How did the Court treat this evidence?",
+      "choices": {
+        "A": "As sufficient proof of moral damages, since mental anguish cannot be proved by documents.",
+        "B": "As proof of exemplary damages only.",
+        "C": "As self-serving declarations, unsupported by other testimonial or documentary evidence; one member even admitted his friends never said the suspension was the reason.",
+        "D": "As conclusive, since the club did not present contrary witnesses."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court said: \"Apart from these self-serving declarations, respondents presented neither testimonial nor documentary evidence to bolster their claims. Worse, Yu even admitted that Freddy Lim and Atty. Benjie did not tell him that his suspension was the reason why they did not want to transact with him.\" It also found any damage to be damnum absque injuria. **A, B and D are wrong:** the Court found no factual or legal basis for moral or exemplary damages. **Bar trap:** a claim for damages needs both a legal wrong and competent proof of the harm.",
+      "caseIds": [
+        "case-0048"
+      ],
+      "source": {
+        "caseTitle": "The Orchard Golf & Country Club, Inc., et al. v. Yu and Yuhico",
+        "grNumber": "G.R. No. 191033",
+        "url": "https://lawphil.net/judjuris/juri2016/jan2016/gr_191033_2016.html",
+        "part": "Decision, the evidence of damage",
+        "excerpt": "With regard to the purported damages they incurred, respondents testified during the trial to support their respective allegations. Yuhico stated that he distanced himself from his usual group (the \"Alabang Boys\") and that he became the butt of jokes of fellow golfers. On the other hand, Yu represented that some of his friends in the business like Freddy Lim, a certain Atty. Benjie, and Jun Ramos started to evade or refuse to have dealings with him after his suspension. Apart from these self-serving declarations, respondents presented neither testimonial nor documentary evidence to bolster their claims. Worse, Yu even admitted that Freddy Lim and Atty. Benjie did not tell him that his suspension was the reason why they did not want to transact with him."
+      }
+    }
+  ]
+}
