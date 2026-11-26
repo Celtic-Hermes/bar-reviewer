@@ -46,6 +46,21 @@
       "ruling": "The Court partly granted the petition. (1) The negligence of counsel binds the client, except where reckless or gross negligence deprives the client of due process; here counsel filed an answer, a pre-trial brief and a timely appeal, and Victory Liner itself was negligent. (2) A common carrier is presumed at fault when a passenger dies, and the presumption is overcome only by proof of extraordinary diligence, which was not shown. (3) Under Article 1764 in relation to Article 2206, the heirs are entitled to death indemnity (₱50,000), indemnity for loss of earning capacity, and moral damages. But the award for loss of earning capacity was deleted: documentary evidence is required, and the deceased, a BIR section chief, did not fall under the exceptions for low-wage workers; ₱500,000 temperate damages were awarded instead under Article 2224, since loss was shown but not its amount. Moral and exemplary damages cannot be lumped together, having different jural foundations; ₱100,000 each was awarded. Actual damages were reduced to the ₱78,160 supported by official receipts. Attorney's fees of 10% were allowed since exemplary damages were awarded, and interest was imposed following Eastern Shipping Lines.",
       "keyDoctrine": "In the death of a passenger, the carrier is liable for death indemnity, loss of earning capacity and moral damages (Arts. 1764 and 2206). Loss of earning capacity needs documentary proof, except for self-employed or daily-wage workers earning below the minimum wage; when loss is shown but its amount cannot be proved, temperate damages may be awarded (Art. 2224). Actual damages require competent proof such as official receipts. Moral and exemplary damages have different bases and must be determined separately.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2004/nov2004/gr_159636_2004.html"
+    },
+    {
+      "id": "case-0051",
+      "status": "draft",
+      "name": "Philippine Hawk Corporation v. Lee",
+      "grNumber": "G.R. No. 166869",
+      "year": 2010,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "facts": "On March 17, 1991, in Gumaca, Quezon, a bus of Philippine Hawk Corporation driven by Margarito Avila hit a motorcycle carrying Silvino Tan and his wife Vivian Tan Lee, and a jeep parked on the roadside. Silvino died; Vivian was injured. Vivian sued the company and the driver for damages based on quasi-delict. The trial court found that the driver, who saw the motorcycle ahead, did not slow down but veered to the left lane, and held him guilty of simple negligence; the company was held solidarily liable for failing to exercise the diligence of a good father of a family in selecting and supervising him. Silvino, who operated a gasoline station, earned about ₱1,000,000 a year, shown by a certificate of creditable income tax withheld. The Court of Appeals affirmed and added temperate damages for the motorcycle, moral damages for Vivian's injuries and civil indemnity, though Vivian had not appealed.",
+      "issue": "(1) Was the driver negligent, and is the company liable? (2) Could the Court of Appeals award damages that Vivian did not appeal for? (3) Were the damages properly computed?",
+      "ruling": "The Court denied the petition with modifications. Foreseeability is the fundamental test of negligence; the driver saw the motorcycle but did not slow down and veered left. When an employee's negligence causes damage, the employer is presumed negligent in selecting or supervising him and must overcome that by convincing proof; the company's tests covered only driving ability and fitness, and it did not know of the driver's prior sideswiping incidents. Under Section 8, Rule 51, an appellate court may review matters not assigned as errors if necessary for a just decision, so the added damages were proper. Indemnity under Article 2206 is for loss of capacity to earn, computed on net earnings: with documentary proof of a ₱1,000,000 gross annual income, and absent other evidence, necessary business expenses were pegged at 80% and living expenses at 50% of the net, giving ₱1,000,000 for the 65-year-old deceased. Actual damages were limited to receipted amounts (₱127,192.85); temperate damages of ₱10,000 were proper for the motorcycle, since only a job estimate was presented; moral damages for the injuries were reduced to ₱30,000; and ₱50,000 civil indemnity was affirmed.",
+      "keyDoctrine": "Foreseeability is the fundamental test of negligence. An employee's negligence raises a presumption that the employer failed in the selection or supervision of employees. Indemnity for loss of earning capacity (Art. 2206) compensates loss of capacity to earn and is computed on net earnings: life expectancy of 2/3 x (80 - age at death) multiplied by the gross annual income less necessary expenses, less living expenses. Actual damages need receipts; a mere estimate may justify temperate damages. An appellate court may consider errors not assigned when necessary for a just decision.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2010/feb2010/gr_166869_2010.html"
     }
   ],
   "questions": [
@@ -736,6 +751,237 @@
         "url": "https://lawphil.net/judjuris/juri2004/nov2004/gr_159636_2004.html",
         "part": "Decision, breach of contract of carriage",
         "excerpt": "A common carrier is bound to carry its passengers safely as far as human care and foresight can provide, using the utmost diligence of very cautious persons, with due regard to all the circumstances. In a contract of carriage, it is presumed that the common carrier was at fault or was negligent when a passenger dies or is injured. Unless the presumption is rebutted, the court need not even make an express finding of fault or negligence on the part of the common carrier. This statutory presumption may only be overcome by evidence that the carrier exercised extraordinary diligence."
+      }
+    },
+    {
+      "id": "q-0600",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Ramon, 50 years old, operated a hardware store and was killed in a vehicular accident through a bus driver's negligence. His heirs proved by his income tax documents that his gross annual income was ₱600,000; there is no evidence of his business expenses or living expenses. Following Philippine Hawk Corporation v. Lee, compute the indemnity for his loss of earning capacity.",
+      "suggestedAnswer": {
+        "answer": "₱1,200,000.00.",
+        "legalBasis": "In Philippine Hawk Corporation v. Lee, the Court held that indemnity for loss of earning capacity under Article 2206 is awarded not for loss of earnings but for loss of capacity to earn money, and that only net earnings are considered: the earnings less expenses necessary to produce them, less living and other incidental expenses. Absent documentary evidence of expenses, it pegged necessary business expenses at 80% of the gross income and living expenses at 50% of the net income, using: Net Earning Capacity = 2/3 (80 − age at death) × (Gross Annual Income − necessary expenses), less living expenses.",
+        "application": "Life expectancy: 2/3 × (80 − 50) = 2/3 × 30 = 20 years. Gross annual income ₱600,000, less 80% necessary expenses (₱480,000) = ₱120,000. Less living expenses of 50% (₱60,000) = ₱60,000. Net earning capacity: 20 × ₱60,000 = ₱1,200,000.",
+        "conclusion": "The heirs are entitled to ₱1,200,000. **Bar trap:** for a business owner, deduct first the expenses necessary to earn the income, then living expenses; never multiply the gross income by the life expectancy. (Compare People v. Muyco, where 80% of the gross income of a farm laborer was deducted as living expenses.)"
+      },
+      "keyPoints": [
+        "Art. 2206 indemnity is for loss of capacity to earn, not loss of earnings",
+        "Only net earnings: gross income less necessary expenses, less living expenses",
+        "Absent evidence: necessary expenses at 80% of gross; living expenses at 50% of net",
+        "2/3 × (80 − 50) = 20; ₱600,000 − ₱480,000 = ₱120,000; less 50% = ₱60,000",
+        "20 × ₱60,000 = ₱1,200,000"
+      ],
+      "caseIds": [
+        "case-0051"
+      ],
+      "source": {
+        "caseTitle": "Philippine Hawk Corporation v. Lee",
+        "grNumber": "G.R. No. 166869",
+        "url": "https://lawphil.net/judjuris/juri2010/feb2010/gr_166869_2010.html",
+        "part": "Decision, computation of loss of earning capacity (net earnings)",
+        "excerpt": "The indemnity for loss of earning capacity of the deceased is provided for by Article 2206 of the Civil Code. Compensation of this nature is awarded not for loss of earnings, but for loss of capacity to earn money. … In the computation of loss of earning capacity, only net earnings, not gross earnings, are to be considered; that is, the total of the earnings less expenses necessary for the creation of such earnings or income, less living and other incidental expenses. In the absence of documentary evidence, it is reasonable to peg necessary expenses for the lease and operation of the gasoline station at 80 percent of the gross income, and peg living expenses at 50 percent of the net income (gross income less necessary expenses). In this case, the computation for loss of earning capacity is as follows: Net Earning Capacity = Life Expectancy [2/3 (80-age at the time of death)] x Gross Annual Income (GAI) – Reasonable and Necessary Expenses (80% of GAI) X = [2/3 (80-65)] x ₱1,000,000.00 - ₱800,000.00 X = 2/3 (15) x ₱200,000.00 - ₱100,000.00(Living Expenses) X = 30/3 x ₱100,000.00 X = 10 x ₱100,000.00 X = ₱1,000,000.00"
+      }
+    },
+    {
+      "id": "q-0601",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "A bus driver saw a motorcycle ahead on the left side of the highway but kept his speed and veered left, hitting the motorcycle and a parked jeep. Sued with the driver, the bus company proves that the driver passed NBI clearance, a certification from his previous employer, a physical examination, a driving test and reviews of his driving skill every six months. The driver admitted prior sideswiping incidents, which the company did not know about. (a) Was the driver negligent? (b) Is the company liable?",
+      "suggestedAnswer": {
+        "answer": "(a) Yes; the driver failed to take the precaution an ordinary reasonable person would have taken against a foreseeable risk. (b) Yes; the company did not overcome the presumption that it failed to exercise the diligence of a good father of a family in the selection and supervision of its driver.",
+        "legalBasis": "In Philippine Hawk Corporation v. Lee, the Court held that foreseeability is the fundamental test of negligence: a defendant is negligent if he acted or failed to act in such a way that an ordinary reasonable man would have realized that certain interests of certain persons were unreasonably subjected to a general but definite class of risks. Whenever an employee's negligence causes damage, there instantly arises a presumption that the employer failed to exercise due diligence in the selection or supervision of its employees; to avoid liability the employer must present convincing proof of that diligence.",
+        "application": "(a) Having seen the motorcycle ahead, the driver should have slowed down; instead he kept his speed and veered into the left lane. (b) The company's tests focused only on driving ability and physical fitness; it did not sufficiently inculcate discipline and correct road behavior, and did not even know of the driver's sideswiping history. That is not convincing proof of diligence in supervision.",
+        "conclusion": "The driver was negligent and the company is solidarily liable. **Bar trap:** passing hiring tests (selection) does not prove diligent supervision; the employer must show both."
+      },
+      "keyPoints": [
+        "Foreseeability is the fundamental test of negligence",
+        "The driver saw the motorcycle but did not slow down and veered left",
+        "An employee's negligence raises a presumption of the employer's negligence in selection or supervision",
+        "The employer must overcome it by convincing proof",
+        "Tests limited to driving ability and fitness, and ignorance of prior incidents, do not suffice"
+      ],
+      "caseIds": [
+        "case-0051"
+      ],
+      "source": {
+        "caseTitle": "Philippine Hawk Corporation v. Lee",
+        "grNumber": "G.R. No. 166869",
+        "url": "https://lawphil.net/judjuris/juri2010/feb2010/gr_166869_2010.html",
+        "part": "Decision, negligence of the driver and liability of the employer",
+        "excerpt": "Foreseeability is the fundamental test of negligence. To be negligent, a defendant must have acted or failed to act in such a way that an ordinary reasonable man would have realized that certain interests of certain persons were unreasonably subjected to a general but definite class of risks. In this case, the bus driver, who was driving on the right side of the road, already saw the motorcycle on the left side of the road before the collision. However, he did not take the necessary precaution to slow down, but drove on and bumped the motorcycle, and also the passenger jeep parked on the left side of the road, showing that the bus was negligent in veering to the left lane, causing it to hit the motorcycle and the passenger jeep. Whenever an employee’s negligence causes damage or injury to another, there instantly arises a presumption that the employer failed to exercise the due diligence of a good father of the family in the selection or supervision of its employees. To avoid liability for a quasi-delict committed by his employee, an employer must overcome the presumption by presenting convincing proof that he exercised the care and diligence of a good father of a family in the selection and supervision of his employee. The Court upholds the finding of the trial court and the Court of Appeals that petitioner is liable to respondent, since it failed to exercise the diligence of a good father of the family in the selection and supervision of its bus driver, Margarito Avila, for having failed to sufficiently inculcate in him discipline and correct behavior on the road. Indeed, petitioner’s tests were concentrated on the ability to drive and physical fitness to do so. It also did not know that Avila had been previously involved in sideswiping incidents."
+      }
+    },
+    {
+      "id": "q-0602",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Only the defendant bus company appealed a judgment awarding the plaintiff loss of earning capacity, funeral expenses and moral damages for her husband's death. The Court of Appeals added civil indemnity for the death, temperate damages for her damaged motorcycle (whose repair cost was shown only by a job estimate), and moral damages for her own physical injuries, all of which she had prayed for in her complaint. The company argues that the plaintiff did not appeal. Was the Court of Appeals correct? Explain.",
+      "suggestedAnswer": {
+        "answer": "Yes. An appellate court may review matters not assigned as errors if their consideration is necessary for a just decision, and each added award had a legal basis.",
+        "legalBasis": "In Philippine Hawk Corporation v. Lee, the Court applied Section 8, Rule 51 of the Rules of Civil Procedure: errors not assigned may be considered if they affect jurisdiction or the validity of the judgment, are closely related to or dependent on an assigned error, or are plain or clerical errors; and the appellate court is clothed with ample authority to review matters not assigned if necessary to arrive at a just decision. Civil indemnity for death is proper under Article 2206; temperate damages may be recovered under Article 2224 when some pecuniary loss is shown but its amount cannot be proved with certainty; and moral damages may be recovered in quasi-delicts causing physical injuries under Article 2219.",
+        "application": "The trial court overlooked damages the plaintiff had prayed for. The damage to the motorcycle was certainly caused by the driver's negligence, but a job estimate is not competent proof of its actual cost, so ₱10,000 temperate damages was reasonable. The plaintiff's own injuries supported moral damages (reduced by the Supreme Court to ₱30,000 per prevailing jurisprudence), and the death supported ₱50,000 civil indemnity.",
+        "conclusion": "The Court of Appeals was correct. **Bar trap:** the general rule that only assigned errors are reviewed has exceptions; and a job estimate supports temperate, not actual, damages."
+      },
+      "keyPoints": [
+        "Sec. 8, Rule 51: unassigned errors may be considered in certain cases",
+        "The appellate court may review matters not assigned if necessary for a just decision",
+        "Civil indemnity for death (Art. 2206)",
+        "Temperate damages when loss is certain but its amount unproven (Art. 2224); a job estimate is not proof of actual cost",
+        "Moral damages for physical injuries in quasi-delicts (Art. 2219)"
+      ],
+      "caseIds": [
+        "case-0051"
+      ],
+      "source": {
+        "caseTitle": "Philippine Hawk Corporation v. Lee",
+        "grNumber": "G.R. No. 166869",
+        "url": "https://lawphil.net/judjuris/juri2010/feb2010/gr_166869_2010.html",
+        "part": "Decision, damages awarded on appeal though not assigned as errors",
+        "excerpt": "In addition, the Court of Appeals correctly awarded temperate damages in the amount of ₱10,000.00 for the damage caused on respondent’s motorcycle. Under Art. 2224 of the Civil Code, temperate damages \"may be recovered when the court finds that some pecuniary loss has been suffered but its amount cannot, from the nature of the case, be proved with certainty.\" The cost of the repair of the motorcycle was prayed for by respondent in her Complaint. However, the evidence presented was merely a job estimate of the cost of the motorcycle’s repair amounting to ₱17, 829.00. … The Court of Appeals also correctly awarded respondent moral damages for the physical injuries she sustained due to the vehicular accident. Under Art. 2219 of the Civil Code, moral damages may be recovered in quasi-delicts causing physical injuries. … Further, the Court of Appeals correctly awarded respondent civil indemnity for the death of her husband, which has been fixed by current jurisprudence at ₱50,000.00. The award is proper under Art. 2206 of the Civil Code. In fine, the Court of Appeals correctly awarded civil indemnity for the death of respondent’s husband, temperate damages, and moral damages for the physical injuries sustained by respondent in addition to the damages granted by the trial court to respondent. The trial court overlooked awarding the additional damages, which were prayed for by respondent in her Amended Complaint. The appellate court is clothed with ample authority to review matters, even if they are not assigned as errors in the appeal, if it finds that their consideration is necessary in arriving at a just decision of the case."
+      }
+    },
+    {
+      "id": "q-0603",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "According to Philippine Hawk Corporation v. Lee, the indemnity for the loss of earning capacity of the deceased under Article 2206 of the Civil Code is awarded for",
+      "choices": {
+        "A": "the actual earnings the deceased received before his death.",
+        "B": "the mental anguish of the heirs.",
+        "C": "the loss of capacity to earn money, not the loss of earnings.",
+        "D": "the funeral and burial expenses."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court said: \"Compensation of this nature is awarded not for loss of earnings, but for loss of capacity to earn money.\" **A is wrong** for the same reason. **B is wrong:** mental anguish is compensated by moral damages. **D is wrong:** funeral expenses are actual damages. **Bar trap:** because it compensates capacity, the award looks to the deceased's net earning capacity over his remaining life expectancy.",
+      "caseIds": [
+        "case-0051"
+      ],
+      "source": {
+        "caseTitle": "Philippine Hawk Corporation v. Lee",
+        "grNumber": "G.R. No. 166869",
+        "url": "https://lawphil.net/judjuris/juri2010/feb2010/gr_166869_2010.html",
+        "part": "Decision, nature of the indemnity under Article 2206",
+        "excerpt": "The indemnity for loss of earning capacity of the deceased is provided for by Article 2206 of the Civil Code. Compensation of this nature is awarded not for loss of earnings, but for loss of capacity to earn money."
+      }
+    },
+    {
+      "id": "q-0604",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "In Philippine Hawk Corporation v. Lee, what did the Court call \"the fundamental test of negligence\"?",
+      "choices": {
+        "A": "Foreseeability.",
+        "B": "Last clear chance.",
+        "C": "Res ipsa loquitur.",
+        "D": "Proximate cause."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court said: \"Foreseeability is the fundamental test of negligence. To be negligent, a defendant must have acted or failed to act in such a way that an ordinary reasonable man would have realized that certain interests of certain persons were unreasonably subjected to a general but definite class of risks.\" **B is wrong:** the Court of Appeals had discussed last clear chance, but the Supreme Court decided the case on foreseeability. **C is wrong:** res ipsa loquitur is a rule of evidence. **D is wrong:** proximate cause is a separate element. **Bar trap:** the driver who sees the danger and does not slow down fails the foreseeability test.",
+      "caseIds": [
+        "case-0051"
+      ],
+      "source": {
+        "caseTitle": "Philippine Hawk Corporation v. Lee",
+        "grNumber": "G.R. No. 166869",
+        "url": "https://lawphil.net/judjuris/juri2010/feb2010/gr_166869_2010.html",
+        "part": "Decision, the test of negligence",
+        "excerpt": "Foreseeability is the fundamental test of negligence. To be negligent, a defendant must have acted or failed to act in such a way that an ordinary reasonable man would have realized that certain interests of certain persons were unreasonably subjected to a general but definite class of risks."
+      }
+    },
+    {
+      "id": "q-0605",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Following Philippine Hawk Corporation v. Lee, which earnings are considered in computing loss of earning capacity?",
+      "choices": {
+        "A": "Gross earnings, without any deduction.",
+        "B": "Gross earnings less taxes only.",
+        "C": "The earnings claimed in the complaint.",
+        "D": "Only net earnings: the total earnings less the expenses necessary to create them, less living and other incidental expenses."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The Court said: \"In the computation of loss of earning capacity, only net earnings, not gross earnings, are to be considered; that is, the total of the earnings less expenses necessary for the creation of such earnings or income, less living and other incidental expenses.\" It pegged necessary expenses at 80% of gross and living expenses at 50% of net, absent documentary evidence. **A, B and C are wrong** for the same reason. **Bar trap:** income claimed without documentary proof (like the copra business in this case) is not counted.",
+      "caseIds": [
+        "case-0051"
+      ],
+      "source": {
+        "caseTitle": "Philippine Hawk Corporation v. Lee",
+        "grNumber": "G.R. No. 166869",
+        "url": "https://lawphil.net/judjuris/juri2010/feb2010/gr_166869_2010.html",
+        "part": "Decision, net earnings",
+        "excerpt": "In the computation of loss of earning capacity, only net earnings, not gross earnings, are to be considered; that is, the total of the earnings less expenses necessary for the creation of such earnings or income, less living and other incidental expenses. In the absence of documentary evidence, it is reasonable to peg necessary expenses for the lease and operation of the gasoline station at 80 percent of the gross income, and peg living expenses at 50 percent of the net income (gross income less necessary expenses)."
+      }
+    },
+    {
+      "id": "q-0606",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "In Philippine Hawk Corporation v. Lee, the plaintiff proved the damage to her motorcycle only with a job estimate of ₱17,829 for its repair. What did the Court award for it?",
+      "choices": {
+        "A": "₱17,829 as actual damages, since the estimate was uncontroverted.",
+        "B": "₱10,000 as temperate damages, since the damage was certain but there was no competent proof of its actual cost.",
+        "C": "Nothing, since an estimate is not evidence.",
+        "D": "Nominal damages of ₱1,000."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court held that there was no doubt the damage to the motorcycle was due to the driver's negligence, but \"[i]n the absence of competent proof of the actual damage caused on the motorcycle or the actual cost of its repair, the award of temperate damages by the appellate court in the amount of ₱10,000.00 was reasonable,\" under Article 2224. **A is wrong:** an estimate is not proof of an actual expense. **C is wrong:** the loss was certain, so temperate damages were due. **D is wrong:** nominal damages were not awarded. **Bar trap:** certain loss + uncertain amount = temperate damages.",
+      "caseIds": [
+        "case-0051"
+      ],
+      "source": {
+        "caseTitle": "Philippine Hawk Corporation v. Lee",
+        "grNumber": "G.R. No. 166869",
+        "url": "https://lawphil.net/judjuris/juri2010/feb2010/gr_166869_2010.html",
+        "part": "Decision, temperate damages for the motorcycle",
+        "excerpt": "The cost of the repair of the motorcycle was prayed for by respondent in her Complaint. However, the evidence presented was merely a job estimate of the cost of the motorcycle’s repair amounting to ₱17, 829.00. The Court of Appeals aptly held that there was no doubt that the damage caused on the motorcycle was due to the negligence of petitioner’s driver. In the absence of competent proof of the actual damage caused on the motorcycle or the actual cost of its repair, the award of temperate damages by the appellate court in the amount of ₱10,000.00 was reasonable under the circumstances."
+      }
+    },
+    {
+      "id": "q-0607",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "As explained in Philippine Hawk Corporation v. Lee, what is the purpose of moral damages?",
+      "choices": {
+        "A": "To punish the defendant for the public good.",
+        "B": "To enrich the plaintiff at the expense of the defendant.",
+        "C": "To allow the plaintiff to obtain means, diversions or amusements that will alleviate the moral suffering caused by the defendant's culpable action; they must be proportional to the suffering inflicted.",
+        "D": "To replace the plaintiff's lost income."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court said: \"Moral damages are not intended to enrich a plaintiff at the expense of the defendant. They are awarded to allow the plaintiff to obtain means, diversions or amusements that will serve to alleviate the moral suffering he/she has undergone due to the defendant's culpable action and must, perforce, be proportional to the suffering inflicted.\" **A is wrong:** that describes exemplary damages. **B is wrong:** the Court expressly said they are not meant to enrich. **D is wrong:** lost income is covered by actual damages or loss of earning capacity. **Bar trap:** moral damages compensate, not punish.",
+      "caseIds": [
+        "case-0051"
+      ],
+      "source": {
+        "caseTitle": "Philippine Hawk Corporation v. Lee",
+        "grNumber": "G.R. No. 166869",
+        "url": "https://lawphil.net/judjuris/juri2010/feb2010/gr_166869_2010.html",
+        "part": "Decision, nature of moral damages",
+        "excerpt": "Moral damages are not intended to enrich a plaintiff at the expense of the defendant. They are awarded to allow the plaintiff to obtain means, diversions or amusements that will serve to alleviate the moral suffering he/she has undergone due to the defendant’s culpable action and must, perforce, be proportional to the suffering inflicted."
       }
     }
   ]
