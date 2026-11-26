@@ -106,6 +106,21 @@
       "ruling": "The Court dismissed the petition, without prejudice to an appeal by the widow to the Secretary of Justice from the dismissal of her criminal complaint. Courts do not interfere with the Ombudsman's discretion except for grave abuse, which was not shown, although the Ombudsman should have looked into the unexplained transfers among prosecutors. The Court nonetheless discussed medical negligence: it is the claim available to redress a wrong by a medical professional that has caused bodily harm, with four elements (duty, breach, injury and proximate causation); in anesthesia cases it requires two-pronged evidence (the recognized standards of the medical community and the physician's negligent departure from them); and causation asks whether the doctor's actions in fact caused the harm and whether they were its proximate cause. Since the NBI found negligence in the administration of anesthesia, the allegation was not baseless, and such a technical matter is better threshed out at trial than at the preliminary investigation. The better remedy was an appeal to the Secretary of Justice, not a graft charge against the prosecutors.",
       "keyDoctrine": "Medical malpractice (medical negligence) is the claim a victim has to redress a wrong by a medical professional that has caused bodily harm; its elements are duty, breach, injury and proximate causation. Accepting a case creates a physician-patient relationship and the duty to use the care of a reasonably competent doctor. In anesthesia cases, proof is two-pronged: the recognized standards of the medical community and the physician's negligent departure from them. Causation asks whether the doctor's acts in fact caused the harm and whether they were its proximate cause. A finding of probable cause does not require evidence sufficient to convict.",
       "sourceUrl": "https://lawphil.net/judjuris/juri1997/sep1997/gr_118141_1997.html"
+    },
+    {
+      "id": "case-0037",
+      "status": "draft",
+      "name": "Ramos, et al. v. Court of Appeals, et al.",
+      "grNumber": "G.R. No. 124354",
+      "year": 1999,
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "facts": "Erlinda Ramos, a robust 47-year-old, was scheduled for an elective cholecystectomy (gallbladder removal) at the De Los Santos Medical Center (DLSMC) at 9:00 a.m. on June 17, 1985. Her surgeon, Dr. Orlino Hosaka, had promised to get a good anesthesiologist and chose Dr. Perfecta Gutierrez, who saw Erlinda for the first time in the operating room. Dr. Hosaka arrived about three hours late, having scheduled another procedure elsewhere. During intubation, Erlinda's sister-in-law, a nursing dean who was beside her, heard Dr. Gutierrez say the intubation was difficult and apparently wrong and that the abdomen was swelling; Erlinda's nailbeds turned bluish, another anesthesiologist was called, and she was put head-down. She suffered brain damage from lack of oxygen for four to five minutes and never woke up. Her family sued the doctors and the hospital. The trial court held them liable; the Court of Appeals reversed, crediting the defense expert (a pulmonologist) who blamed an allergic reaction to the anesthetic drug.",
+      "issue": "(1) Does res ipsa loquitur apply? (2) Were the anesthesiologist, the surgeon and the hospital negligent, and was their negligence the proximate cause of Erlinda's coma? (3) What damages are due?",
+      "ruling": "The Court reversed the Court of Appeals. (1) Res ipsa loquitur applied: Erlinda was neurologically sound when she submitted to a routine gallbladder operation, yet suffered brain damage before any surgery while unconscious and under the exclusive control of the doctors; brain damage does not normally occur in such an operation without negligence, and the claim did not question a diagnosis or the results of a treatment. (2) The nursing dean, though not an anesthesiologist, could testify on what she observed. Dr. Gutierrez was negligent: she did no pre-operative evaluation of the patient's airway although the surgery was elective, and the faulty intubation was the proximate cause of the brain damage. The defense pulmonologist was not competent to testify on anesthesia, allergies or the drug. Dr. Hosaka, as \"captain of the ship,\" was negligent in not seeing that his anesthesiologist followed proper protocol, and he was three hours late. The hospital was held solidarily liable on the view that an employer-employee relationship in effect exists between hospitals and their consultants (a ruling reversed in the 2002 resolution). (3) The Court awarded actual damages, ₱1,500,000 temperate damages for the chronic and continuing injury, ₱2,000,000 moral damages, exemplary damages and attorney's fees (modified in 2002 after Erlinda's death).",
+      "keyDoctrine": "Res ipsa loquitur applies when a sound, unaffected part of the body is injured while the patient is unconscious and under the exclusive control of the physicians, in circumstances a layman can judge, but not to the merits of a diagnosis or the failure to secure results. Non-expert witnesses may testify on observable acts and conditions. An anesthesiologist must evaluate the patient before an elective operation. The surgeon, as captain of the ship, must see to it that those under him perform their tasks properly. Proximate cause is that which, in natural and continuous sequence, unbroken by any efficient intervening cause, produces the injury.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri1999/dec1999/gr_124354_1999.html"
     }
   ],
   "questions": [
@@ -1710,6 +1725,237 @@
         "url": "https://lawphil.net/judjuris/juri1997/sep1997/gr_118141_1997.html",
         "part": "Ruling, the remedy against the dismissal of a criminal complaint",
         "excerpt": "To our mind, the better and more logical remedy under the circumstances would have been to appeal the resolution of the City Prosecutors dismissing the criminal complaint to the Secretary of Justice under the Department of Justice's Order No. 223, otherwise known as the \"1993 Revised Rules on Appeals From Resolutions In Preliminary Investigations/Reinvestigations,\" as amended by Department Order No. 359, Section 1 of which provides:"
+      }
+    },
+    {
+      "id": "q-0488",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "Mila, healthy and neurologically sound, was scheduled for a routine gallbladder operation. While she was under anesthesia, and before any incision was made, she suffered brain damage and fell into a coma. Her family sues the surgeon and the anesthesiologist and invokes res ipsa loquitur. The doctors answer that the doctrine cannot apply in malpractice suits, which always require expert testimony. Is the defense correct? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. Res ipsa loquitur applies: a sound, unaffected part of Mila's body (her brain) was injured while she was unconscious and under the exclusive control of the doctors, and such an injury does not normally occur in a gallbladder operation without negligence.",
+        "legalBasis": "In Ramos v. Court of Appeals (1999), the Court held that medical malpractice cases do not escape the doctrine. Although expert testimony is generally relied upon in malpractice suits, when res ipsa loquitur applies the need for it is dispensed with because the injury itself provides the proof of negligence. The doctrine does not apply to the merits of a diagnosis or a scientific treatment, or where the only showing is that the desired result was not accomplished; the real question is whether an extraordinary incident or unusual event outside the routine performance occurred that would reasonably speak to the average man as the negligent cause.",
+        "application": "Mila delivered herself to the care, custody and control of the doctors, who had exclusive control of the anesthesia and the endotracheal tube. She could not have contributed, being unconscious. A person put under anesthesia is not normally rendered decerebrate if the proper procedure is followed, and her claim does not rest on a failed operation or a wrong diagnosis, since no operation was ever performed.",
+        "conclusion": "The defense is wrong; the doctrine applies and the doctors must explain. **Bar trap:** the Court also warned that the doctrine does not apply to any and all anesthesia cases; each case must be viewed in its own light."
+      },
+      "keyPoints": [
+        "Malpractice cases do not escape res ipsa loquitur; when it applies, expert testimony is dispensed with",
+        "A sound part of the body was injured while the patient was unconscious and under the doctors' exclusive control",
+        "Brain damage does not normally occur in a routine gallbladder operation without negligence",
+        "Not a case of failure to secure results or a wrong diagnosis; no operation was performed",
+        "The doctrine does not apply to all anesthesia cases; each is judged on its facts"
+      ],
+      "caseIds": [
+        "case-0037"
+      ],
+      "source": {
+        "caseTitle": "Ramos, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 124354",
+        "url": "https://lawphil.net/judjuris/juri1999/dec1999/gr_124354_1999.html",
+        "part": "Ruling, the application of res ipsa loquitur",
+        "excerpt": "Medical malpractice cases do not escape the application of this doctrine. … Although generally, expert medical testimony is relied upon in malpractice suits to prove that a physician has done a negligent act or that he has deviated from the standard medical procedure, when the doctrine of res ipsa loquitur is availed by the plaintiff, the need for expert medical testimony is dispensed with because the injury itself provides the proof of negligence. … The real question, therefore, is whether or not in the process of the operation any extraordinary incident or unusual event outside of the routine performance occurred which is beyond the regular scope of customary professional activity in such operations, which, if unexplained would themselves reasonably speak to the average man as the negligent cause or causes of the untoward consequence. … Considering that a sound and unaffected member of the body (the brain) is injured or destroyed while the patient is unconscious and under the immediate and exclusive control of the physicians, we hold that a practical administration of justice dictates the application of res ipsa loquitur. Upon these facts and under these circumstances the Court would be able to say, as a matter of common knowledge and observation, if negligence attended the management and care of the patient. Moreover, the liability of the physicians and the hospital in this case is not predicated upon an alleged failure to secure the desired results of an operation nor on an alleged lack of skill in the diagnosis or treatment as in fact no operation or treatment was ever performed on Erlinda. … Nonetheless, in holding that res ipsa loquitur is available to the present case we are not saying that the doctrine is applicable in any and all cases where injury occurs to a patient while under anesthesia, or to any and all anesthesia cases. Each case must be viewed in its own light and scrutinized in order to be within the res ipsa loquitur coverage."
+      }
+    },
+    {
+      "id": "q-0489",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "An anesthesiologist met her patient for the first time in the operating room, an hour before an elective operation, and had great difficulty inserting the breathing tube; the patient suffered brain damage from lack of oxygen. She explains that she usually skips the pre-operative visit in elective cases with normal clearances, and that the patient's short neck and protruding teeth made the intubation hard. Was she negligent, and was her negligence the proximate cause of the injury? Explain.",
+      "suggestedAnswer": {
+        "answer": "Yes to both. Failing to do a pre-operative evaluation before an elective operation was negligence, and the resulting faulty intubation was the proximate cause of the brain damage.",
+        "legalBasis": "In Ramos v. Court of Appeals (1999), the Court held that pre-operative evaluation before anesthesia is universally observed to lessen anesthetic accidents, and includes a thorough analysis of the patient's airway. In elective procedures, which can wait, the anesthesiologist has the luxury of time for a proper interview and evaluation; it is in emergencies that there is hardly time. Seeing the patient for the first time an hour before an elective operation was \"an act of exceptional negligence and professional irresponsibility.\" Proximate cause is that which, in natural and continuous sequence, unbroken by any efficient intervening cause, produces injury, and without which the result would not have occurred.",
+        "application": "Her explanation has it backwards: elective cases are exactly where she had time to evaluate. A short neck and protruding teeth are what a pre-operative airway assessment is meant to detect, so that the intubation can be prepared for; raised only after the fact, they are an afterthought. The failed intubation delayed oxygen to the lungs, the patient turned cyanotic, and the brain was deprived of oxygen for four to five minutes: an unbroken chain from the faulty intubation to the injury.",
+        "conclusion": "She was negligent, and her negligence was the proximate cause. **Bar trap:** do not accept \"elective, so no pre-operative visit needed\"; the Court said the opposite is true."
+      },
+      "keyPoints": [
+        "Pre-operative evaluation, including airway assessment, is universally observed to lessen anesthetic accidents",
+        "Elective surgery leaves time for evaluation; emergencies do not",
+        "Seeing the patient first an hour before an elective operation was exceptional negligence",
+        "Anatomical difficulties are what the evaluation is meant to discover; they are no excuse after the fact",
+        "Proximate cause: natural and continuous sequence, unbroken by an efficient intervening cause"
+      ],
+      "caseIds": [
+        "case-0037"
+      ],
+      "source": {
+        "caseTitle": "Ramos, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 124354",
+        "url": "https://lawphil.net/judjuris/juri1999/dec1999/gr_124354_1999.html",
+        "part": "Ruling, the negligence of the anesthesiologist and proximate cause",
+        "excerpt": "The pre-operative evaluation of a patient prior to the administration of anesthesia is universally observed to lessen the possibility of anesthetic accidents. … In the case at bar, respondent Dra. Gutierrez admitted that she saw Erlinda for the first time on the day of the operation itself, on 17 June 1985. Before this date, no prior consultations with, or pre-operative evaluation of Erlinda was done by her. Until the day of the operation, respondent Dra. Gutierrez was unaware of the physiological make-up and needs of Erlinda. She was likewise not properly informed of the possible difficulties she would face during the administration of anesthesia to Erlinda. Respondent Dra. Gutierrez' act of seeing her patient for the first time only an hour before the scheduled operative procedure was, therefore, an act of exceptional negligence and professional irresponsibility. … However, the exact opposite is true. In an emergency procedure, there is hardly enough time available for the fastidious demands of pre-operative procedure so that an anesthesiologist is able to see the patient only a few minutes before surgery, if at all. Elective procedures, on the other hand, are operative procedures that can wait for days, weeks or even months. Hence, in these cases, the anesthesiologist possesses the luxury of time to be at the patient's beside to do a proper interview and clinical evaluation. … Proximate cause has been defined as that which, in natural and continuous sequence, unbroken by any efficient intervening cause, produces injury, and without which the result would not have occurred."
+      }
+    },
+    {
+      "id": "q-0490",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "Dr. Reyes, a surgeon, promised his patient a good anesthesiologist and chose one. He then scheduled another operation in a different hospital at the same time, and arrived three hours late. When he arrived, the anesthesiologist had difficulty intubating the patient, who suffered brain damage. Dr. Reyes argues that the anesthesia was the anesthesiologist's specialty and responsibility, not his. Is Dr. Reyes liable? Explain.",
+      "suggestedAnswer": {
+        "answer": "Yes. As the head of the surgical team, the \"captain of the ship,\" Dr. Reyes was responsible for seeing that those under him performed their tasks properly, and he failed in that duty.",
+        "legalBasis": "In Ramos v. Court of Appeals (1999), the Court held that, as the so-called captain of the ship, it is the surgeon's responsibility to see to it that those under him perform their task in the proper manner. Dr. Hosaka's negligence lay in failing to exercise his authority by not determining whether his anesthesiologist observed proper anesthesia protocols, and in scheduling another procedure at the same time and arriving over three hours late, leaving little or no time to confer with the anesthesiologist. He therefore shared equal responsibility.",
+        "application": "Dr. Reyes chose the anesthesiologist, did nothing to verify that she followed proper protocol, and, by double-booking himself and arriving three hours late, had no time to confer with her about the anesthesia. That the anesthesia was another specialist's task does not relieve the captain of the team of his own duty of supervision.",
+        "conclusion": "Dr. Reyes is solidarily liable with the anesthesiologist. **Bar trap:** \"it was not my specialty\" does not help the lead surgeon. (In the 2002 resolution in the same case, the Court kept the two doctors solidarily liable but absolved the hospital, finding no employer-employee relationship with them.)"
+      },
+      "keyPoints": [
+        "The lead surgeon is the captain of the ship",
+        "He must see to it that those under him perform their tasks properly",
+        "Failure to determine whether the anesthesiologist observed proper protocols",
+        "Double-booking and arriving three hours late left no time to confer about the anesthesia",
+        "He shares equal responsibility with the anesthesiologist"
+      ],
+      "caseIds": [
+        "case-0037"
+      ],
+      "source": {
+        "caseTitle": "Ramos, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 124354",
+        "url": "https://lawphil.net/judjuris/juri1999/dec1999/gr_124354_1999.html",
+        "part": "Ruling, the responsibility of Dr. Hosaka as captain of the ship",
+        "excerpt": "We now determine the responsibility of respondent Dr. Orlino Hosaka as the head of the surgical team. As the so-called \"captain of the ship,\" it is the surgeon's responsibility to see to it that those under him perform their task in the proper manner. Respondent Dr. Hosaka's negligence can be found in his failure to exercise the proper authority (as the \"captain\" of the operative team) in not determining if his anesthesiologist observed proper anesthesia protocols. In fact, no evidence on record exists to show that respondent Dr. Hosaka verified if respondent Dra. Gutierrez properly intubated the patient. Furthermore, it does not escape us that respondent Dr. Hosaka had scheduled another procedure in a different hospital at the same time as Erlinda's cholecystectomy, and was in fact over three hours late for the latter's operation. Because of this, he had little or no time to confer with his anesthesiologist regarding the anesthesia delivery. This indicates that he was remiss in his professional duties towards his patient. Thus, he shares equal responsibility for the events which resulted in Erlinda's condition."
+      }
+    },
+    {
+      "id": "q-0491",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "In Ramos v. Court of Appeals (1999), the Court of Appeals disregarded the testimony of the patient's sister-in-law, a nursing dean, that the anesthesiologist failed to intubate the patient, because nurses do not intubate. How did the Supreme Court rule?",
+      "choices": {
+        "A": "It agreed, because only an anesthesiologist may testify on whether an intubation succeeded.",
+        "B": "It disagreed: although not an anesthesiologist, she could testify on matters she was capable of observing, such as the statements and acts of the physician, external appearances and manifest conditions, which is allowed under res ipsa loquitur.",
+        "C": "It agreed, because a relative of the patient is presumed biased.",
+        "D": "It disagreed, because nurses are experts in all hospital procedures."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court held that although she was not an anesthesiologist, the witness \"can very well testify upon matters on which she is capable of observing such as, the statements and acts of the physician and surgeon, external appearances, and manifest conditions which are observable by any one,\" which is precisely allowed under res ipsa loquitur; expert testimony is unnecessary where the lack of care is obvious. It even took judicial notice that anesthesia procedures had become so common that an ordinary person can tell if it was administered properly. **A is wrong:** that was the Court of Appeals' view, which was rejected. **C is wrong:** the Court found her testimony straightforward and credible, and it was corroborated by the anesthesiologist's own admission. **D is wrong:** the Court did not treat her as an expert in all procedures; it relied on what she observed and on her clinical experience. **Bar trap:** a non-expert may testify on what anyone can observe.",
+      "caseIds": [
+        "case-0037"
+      ],
+      "source": {
+        "caseTitle": "Ramos, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 124354",
+        "url": "https://lawphil.net/judjuris/juri1999/dec1999/gr_124354_1999.html",
+        "part": "Ruling, the testimony of Dean Herminda Cruz",
+        "excerpt": "We do not agree with the above reasoning of the appellate court. Although witness Cruz is not an anesthesiologist, she can very well testify upon matters on which she is capable of observing such as, the statements and acts of the physician and surgeon, external appearances, and manifest conditions which are observable by any one. This is precisely allowed under the doctrine of res ipsa loquitur where the testimony of expert witnesses is not required. It is the accepted rule that expert testimony is not necessary for the proof of negligence in non-technical matters or those of which an ordinary person may be expected to have knowledge, or where the lack of skill or want of care is so obvious as to render expert testimony unnecessary. We take judicial notice of the fact that anesthesia procedures have become so common, that even an ordinary person can tell if it was administered properly."
+      }
+    },
+    {
+      "id": "q-0492",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "To prove that a patient's brain damage came from an allergic reaction to the anesthetic drug, the defense in Ramos v. Court of Appeals (1999) presented a pulmonologist. Why did the Court reject his opinion?",
+      "choices": {
+        "A": "Because a pulmonologist may never testify in a malpractice case.",
+        "B": "Because he was related to one of the defendants.",
+        "C": "Because he testified after the period for presenting evidence had lapsed.",
+        "D": "Because he was not an anesthesiologist, an allergologist or a pharmacologist, and formed his opinion on the drug only from reading references, not from practical experience."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The Court held that the pulmonologist \"cannot be considered an authority in the field of anesthesiology simply because he is not an anesthesiologist,\" was not an allergologist who could give an opinion on allergic processes, and was not a pharmacologist who could explain the drug's effects; he admitted forming his opinions from reading certain references rather than from practical experience with the drug. **A is wrong:** the problem was not his specialty as such but that it did not match the issues. **B and C are wrong:** neither reason appears in the decision. **Bar trap:** an expert must be qualified on the very question in issue (compare Reyes v. Sisters of Mercy Hospital, where a pathologist's opinion on a typhoid diagnosis was rejected).",
+      "caseIds": [
+        "case-0037"
+      ],
+      "source": {
+        "caseTitle": "Ramos, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 124354",
+        "url": "https://lawphil.net/judjuris/juri1999/dec1999/gr_124354_1999.html",
+        "part": "Ruling, the testimony of Dr. Jamora",
+        "excerpt": "First of all, Dr. Jamora cannot be considered an authority in the field of anesthesiology simply because he is not an anesthesiologist. Since Dr. Jamora is a pulmonologist, he could not have been capable of properly enlightening the court about anesthesia practice and procedure and their complications. Dr. Jamora is likewise not an allergologist and could not therefore properly advance expert opinion on allergic-mediated processes. Moreover, he is not a pharmacologist and, as such, could not have been capable, as an expert would, of explaining to the court the pharmacologic and toxic effects of the supposed culprit, Thiopental Sodium (Pentothal). The inappropriateness and absurdity of accepting Dr. Jamora's testimony as an expert witness in the anesthetic practice of Pentothal administration is further supported by his own admission that he formulated his opinions on the drug not from the practical experience gained by a specialist or expert in the administration and use of Sodium Pentothal on patients, but only from reading certain references, to wit:"
+      }
+    },
+    {
+      "id": "q-0493",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "\"That which, in natural and continuous sequence, unbroken by any efficient intervening cause, produces injury, and without which the result would not have occurred.\" As defined in Ramos v. Court of Appeals (1999), this is",
+      "choices": {
+        "A": "proximate cause.",
+        "B": "fortuitous event.",
+        "C": "contributory negligence.",
+        "D": "res ipsa loquitur."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court defined proximate cause in these words and added that it is \"the dominant, moving or producing cause\"; applying it, the faulty intubation was the proximate cause of Erlinda's brain damage. **B is wrong:** a fortuitous event is the opposite of a cause attributable to someone's fault; the decision does not use it. **C is wrong:** contributory negligence is negligence of the injured person; the Court held Erlinda, being unconscious, could not have contributed. **D is wrong:** res ipsa loquitur is a rule of evidence that raises a presumption of negligence. **Bar trap:** the key words are \"natural and continuous sequence\" and \"unbroken by any efficient intervening cause.\"",
+      "caseIds": [
+        "case-0037"
+      ],
+      "source": {
+        "caseTitle": "Ramos, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 124354",
+        "url": "https://lawphil.net/judjuris/juri1999/dec1999/gr_124354_1999.html",
+        "part": "Ruling, proximate cause",
+        "excerpt": "Proximate cause has been defined as that which, in natural and continuous sequence, unbroken by any efficient intervening cause, produces injury, and without which the result would not have occurred. An injury or damage is proximately caused by an act or a failure to act, whenever it appears from the evidence in the case, that the act or omission played a substantial part in bringing about or actually causing the injury or damage; and that the injury or damage was either a direct result or a reasonably probable consequence of the act or omission. It is the dominant, moving or producing cause."
+      }
+    },
+    {
+      "id": "q-0494",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "In Ramos v. Court of Appeals (1999), the Court awarded temperate damages on top of actual damages to the family of a patient left comatose. What was its reason?",
+      "choices": {
+        "A": "Temperate damages are always awarded whenever moral damages are awarded.",
+        "B": "Temperate damages replace actual damages whenever receipts are incomplete.",
+        "C": "Where the injury is chronic and continuing, temperate damages may be awarded on top of actual damages to meet pecuniary loss certain to be suffered but which cannot be determined with certainty; the two cover distinct phases.",
+        "D": "Temperate damages are awarded to punish physicians who are grossly negligent."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court held that in cases where the injury is continuing, the award should compensate for pecuniary loss incurred and proved up to trial, and also meet pecuniary loss certain to be suffered but which could not be made with certainty: \"temperate damages can and should be awarded on top of actual or compensatory damages in instances where the injury is chronic and continuing,\" with no incompatibility because \"these damages cover two distinct phases.\" **A is wrong:** the Court tied temperate damages to the chronic injury, not to moral damages. **B is wrong:** temperate damages were added to, not substituted for, the actual damages. **D is wrong:** punishment by way of example is the role of exemplary damages. **Bar trap:** in the 2002 resolution the Court deleted the temperate damages after Erlinda died, since the actual damages already covered her medical expenses.",
+      "caseIds": [
+        "case-0037"
+      ],
+      "source": {
+        "caseTitle": "Ramos, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 124354",
+        "url": "https://lawphil.net/judjuris/juri1999/dec1999/gr_124354_1999.html",
+        "part": "Ruling, the award of temperate damages",
+        "excerpt": "In these cases, the amount of damages which should be awarded, if they are to adequately and correctly respond to the injury caused, should be one which compensates for pecuniary loss incurred and proved, up to the time of trial; and one which would meet pecuniary loss certain to be suffered but which could not, from the nature of the case, be made with certainty. In other words, temperate damages can and should be awarded on top of actual or compensatory damages in instances where the injury is chronic and continuing. And because of the unique nature of such cases, no incompatibility arises when both actual and temperate damages are provided for. The reason is that these damages cover two distinct phases."
+      }
+    },
+    {
+      "id": "q-0495",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "According to Ramos v. Court of Appeals (1999), is the application of res ipsa loquitur in a medical negligence case a question of fact or of law?",
+      "choices": {
+        "A": "A question of fact, to be decided only by the medical experts.",
+        "B": "A question of law, since it is a judicial function to determine whether a certain set of circumstances does, as a matter of law, permit a given inference.",
+        "C": "A question of fact, to be decided by the hospital's ethics committee.",
+        "D": "Neither, since res ipsa loquitur is not available in medical cases."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court said: \"The application of res ipsa loquitur in medical negligence cases presents a question of law since it is a judicial function to determine whether a certain set of circumstances does, as a matter of law, permit a given inference.\" **A and C are wrong:** whether the inference is permitted is for the court, not for experts or a hospital committee. **D is wrong:** the Court expressly said medical malpractice cases do not escape the doctrine. **Bar trap:** the facts are proved by evidence, but whether those facts allow the inference of negligence is a legal question for the court.",
+      "caseIds": [
+        "case-0037"
+      ],
+      "source": {
+        "caseTitle": "Ramos, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 124354",
+        "url": "https://lawphil.net/judjuris/juri1999/dec1999/gr_124354_1999.html",
+        "part": "Ruling, res ipsa loquitur in medical negligence cases",
+        "excerpt": "Medical malpractice cases do not escape the application of this doctrine. Thus, res ipsa loquitur has been applied when the circumstances attendant upon the harm are themselves of such a character as to justify an inference of negligence as the cause of that harm. The application of res ipsa loquitur in medical negligence cases presents a question of law since it is a judicial function to determine whether a certain set of circumstances does, as a matter of law, permit a given inference."
       }
     }
   ]
