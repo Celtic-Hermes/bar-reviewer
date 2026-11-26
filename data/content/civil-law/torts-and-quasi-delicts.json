@@ -31,6 +31,21 @@
       "ruling": "The Court partly granted the petition. (1) Res ipsa loquitur did not apply. The circumstances that caused the injury and the tests needed to find its extent were not under the exclusive control of the two doctors, who were mere residents attending in the emergency room, and whether they used the required skill and care is generally a matter for expert opinion, not the assumptions of a layman like the mother. The doctrine is only a mode of proof, invoked when direct evidence is absent and not readily available. (2) The doctors were negligent: they did not examine the boy thoroughly, and if they could not, they should have referred him to another doctor instead of assuring the mother that everything was all right. But there was no precise evidence that the delay prolonged the pain or aggravated the injury, so guilt was not proved beyond reasonable doubt and they were acquitted. Since civil liability needs only a preponderance of evidence, they were held civilly liable for ₱3,850 actual damages, ₱100,000 moral damages and ₱50,000 exemplary damages. They could not shift the blame to the taxi driver, even if the accident was the direct cause of the fracture. Their claim that there was no physician-patient relationship, because they merely passed by the emergency room on the way to lunch, was raised for the first time on appeal, and in any case such a relationship existed once they examined the boy and assured his mother.",
       "keyDoctrine": "Res ipsa loquitur is not a rule of substantive law but a mode of proof, available only when direct evidence is absent and not readily available, and only if the instrumentality was under the defendant's exclusive control. A doctor who examines a patient in the emergency room enters into a physician-patient relationship. A doctor acquitted of reckless imprudence for lack of proof beyond reasonable doubt may still be civilly liable on a preponderance of evidence, and cannot escape liability by pointing to the person who caused the original injury.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2012/feb2012/gr_187926_2012.html"
+    },
+    {
+      "id": "case-0032",
+      "status": "draft",
+      "name": "Cruz v. Agas, Jr.",
+      "grNumber": "G.R. No. 204095",
+      "year": 2015,
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "facts": "Dr. Jaime T. Cruz went to St. Luke's Medical Center for a check-up in May 2003 and underwent a gastroscopy and colonoscopy performed by Dr. Felicisimo V. Agas, Jr. After the procedure he felt dizzy, had difficulty breathing, severe abdominal pain, and collapsed. He was found to have internal bleeding and underwent emergency surgery, in which 6 to 8 inches of his colon, which had a partial tear of the colonic wall, were removed. He filed a complaint for serious physical injuries through reckless imprudence and medical malpractice against Dr. Agas. Dr. Agas explained, with supporting affidavits and a certification of the hospital's ethics committee, that the bleeding came from a tear in the serosa (the outermost layer of the colon) caused by marked adhesions and the twisted shape of the patient's sigmoid colon, a condition that no test can detect before such a procedure and that the colonoscope, which passes only through the inside of the colon, could not reach. The prosecutor dismissed the complaint for lack of probable cause; the Secretary of Justice and the Court of Appeals upheld the dismissal.",
+      "issue": "Was the Court of Appeals correct in upholding the finding that there was no probable cause to charge Dr. Agas, because his negligence was not shown?",
+      "ruling": "The Court denied the petition. Courts do not interfere with the executive determination of probable cause in the absence of grave abuse of discretion, and none was shown. In a medical negligence case the patient must prove duty, breach, injury and proximate causation. Dr. Cruz showed an injury, but not the particular negligent act or omission of Dr. Agas that caused it, nor an inexcusable lack of precaution. Res ipsa loquitur did not apply: the alleged negligence was not apparent to a layman, and Dr. Agas explained that the bleeding came from an abnormal condition of the patient's colon beyond his control, which needed expert opinion to connect to the colonoscopy. Dr. Cruz did not rebut that explanation.",
+      "keyDoctrine": "Res ipsa loquitur means the thing speaks for itself: the occurrence of an injury, with its circumstances, may raise a presumption of negligence. Its requisites are the occurrence of an injury, control and management of the thing that caused it by the defendant, an occurrence that would not happen in the ordinary course of things with proper care, and the absence of explanation by the defendant; control and management is the most instrumental. It does not apply where the defendant explains the injury by a cause beyond his control, or where the connection between the injury and the procedure needs expert opinion.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2015/jun2015/gr_204095_2015.html"
     }
   ],
   "questions": [
@@ -490,6 +505,234 @@
         "url": "https://lawphil.net/judjuris/juri2012/feb2012/gr_187926_2012.html",
         "part": "The Court's Ruling, As to the Award of Damages",
         "excerpt": "Although the Court sympathizes with the plight of the mother and the child in this case, the Court is bound by the dictates of justice which hold inviolable the right of the accused to be presumed innocent until proven guilty beyond reasonable doubt. The Court, nevertheless, finds the petitioners civilly liable for their failure to sufficiently attend to Roy Jr.’s medical needs when the latter was rushed to the ER, for while a criminal conviction requires proof beyond reasonable doubt, only a preponderance of evidence is required to establish civil liability. … While no criminal negligence was found in the petitioners’ failure to administer the necessary medical attention to Roy Jr., the Court holds them civilly liable for the resulting damages to their patient. While it was the taxi driver who ran over the foot or leg of Roy Jr., their negligence was doubtless contributory. … It is settled that moral damages are not punitive in nature, but are designed to compensate and alleviate in some way the physical suffering, mental anguish, fright, serious anxiety, besmirched reputation, wounded feelings, moral shock, social humiliation, and similar injury unjustly inflicted on a person."
+      }
+    },
+    {
+      "id": "q-0448",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "What is the doctrine of res ipsa loquitur? State its requisites, and identify which of them is the most instrumental.",
+      "suggestedAnswer": {
+        "answer": "Res ipsa loquitur literally means \"the thing speaks for itself.\" It is the rule that the fact of the occurrence of an injury, taken with the surrounding circumstances, may permit an inference or raise a presumption of negligence, or make out the plaintiff's prima facie case, and present a question of fact for the defendant to meet with an explanation.",
+        "legalBasis": "In Cruz v. Agas, the Court listed its requisites: (1) the occurrence of an injury; (2) the thing which caused the injury was under the control and management of the defendant; (3) the occurrence was such that in the ordinary course of things it would not have happened if those who had control or management used proper care; and (4) the absence of explanation by the defendant. Of these, the most instrumental is the control and management of the thing which caused the injury.",
+        "application": "Applied to a doctor, the patient must show not only an injury but that what caused it was under the doctor's control and management, that it would not ordinarily happen with proper care, and that the doctor has no explanation. In Cruz, the doctor explained that the bleeding came from an abnormal condition of the patient's colon beyond his control, so the doctrine did not apply.",
+        "conclusion": "Res ipsa loquitur raises a presumption of negligence from the injury and its circumstances; control and management is its key requisite. **Bar trap:** the requisites are sometimes listed as three (e.g., Reyes, Jarcia) and sometimes as four (Cruz, adding the absence of explanation); either way, a satisfactory explanation by the defendant defeats the inference."
+      },
+      "keyPoints": [
+        "Literally \"the thing speaks for itself\"",
+        "The injury and its circumstances may raise a presumption of negligence or make out a prima facie case, which the defendant must meet with an explanation",
+        "Requisites: injury; control and management by the defendant; would not ordinarily happen with proper care; absence of explanation by the defendant",
+        "The most instrumental requisite is control and management of the thing that caused the injury"
+      ],
+      "caseIds": [
+        "case-0032"
+      ],
+      "source": {
+        "caseTitle": "Cruz v. Agas, Jr.",
+        "grNumber": "G.R. No. 204095",
+        "url": "https://lawphil.net/judjuris/juri2015/jun2015/gr_204095_2015.html",
+        "part": "Res Ipsa Loquitur Doctrine Not Applicable Against Respondent",
+        "excerpt": "Literally, res ipsa loquitur means the thing speaks for itself. It is the rule that the fact of the occurrence of an injury, taken with the surrounding circumstances, may permit an inference or raise a presumption of negligence, or make out a plaintiff’s prima facie case, and present a question of fact for defendant to meet with an explanation. The requisites for the applicability of the doctrine of res ipsa loquitur are: (1) the occurrence of an injury; (2) the thing which caused the injury was under the control and management of the defendant; (3) the occurrence was such that in the ordinary course of things, would not have happened if those who had control or management used proper care; and (4) the absence of explanation by the defendant. Of the foregoing requisites, the most instrumental is the control and management of the thing which caused the injury."
+      }
+    },
+    {
+      "id": "q-0449",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "Rafael, a physician himself, underwent an endoscopic procedure and afterwards suffered internal bleeding that required surgery. In his complaint for reckless imprudence resulting in serious physical injuries against the endoscopist, he narrated his symptoms and the surgery, stated that he was in good health before the procedure, and concluded that \"something obviously went wrong.\" The prosecutor dismissed the complaint for lack of probable cause. Was the dismissal proper? Explain.",
+      "suggestedAnswer": {
+        "answer": "Yes. Rafael proved that he was injured, but not the specific negligent act or omission of the endoscopist that caused the injury, so negligence (an inexcusable lack of precaution) was not shown.",
+        "legalBasis": "In Cruz v. Agas, the Court held that a medical negligence case prospers only if the patient proves that the doctor failed to do something a reasonably prudent doctor would have done, or did something a reasonably prudent doctor would not have done, and that this caused the injury: duty, breach, injury and proximate causation. The patient has the burden of showing the particular negligent or reckless act or omission. Courts also do not interfere with the executive determination of probable cause in the absence of grave abuse of discretion.",
+        "application": "Rafael's complaint shows an injury and its consequences, but not what the endoscopist did or failed to do that a reasonably prudent specialist would not have done. \"Something went wrong\" is a conclusion, not proof of breach or causation. Without it there is no showing of inexcusable lack of precaution, and no grave abuse of discretion in finding no probable cause.",
+        "conclusion": "The dismissal was proper. **Bar trap:** an injury after treatment, and good health before it, do not by themselves prove negligence; the patient must point to the specific act or omission and its causal link to the injury."
+      },
+      "keyPoints": [
+        "Elements: duty, breach, injury and proximate causation",
+        "The patient has the burden of showing the specific negligent act or omission and that it caused the injury",
+        "An injury after a procedure, by itself, does not show inexcusable lack of precaution",
+        "Courts do not disturb the prosecutor's finding of no probable cause absent grave abuse of discretion"
+      ],
+      "caseIds": [
+        "case-0032"
+      ],
+      "source": {
+        "caseTitle": "Cruz v. Agas, Jr.",
+        "grNumber": "G.R. No. 204095",
+        "url": "https://lawphil.net/judjuris/juri2015/jun2015/gr_204095_2015.html",
+        "part": "Medical Negligence and Malpractice Not Established",
+        "excerpt": "The settled policy is that the courts will not interfere with the executive determination of probable cause for the purpose of filing an Information, in the absence of grave abuse of discretion. … A medical negligence case can prosper if the patient can present solid proof that the doctor, like in this case, either failed to do something which a reasonably prudent doctor would have done, or that he did something that a reasonably prudent doctor would not have done, and such failure or action caused injury to the patient. … Simply put, the elements are duty, breach, injury and proximate causation. In this case, Dr. Cruz has the burden of showing the negligence or recklessness of Dr. Agas. Although there is no dispute that Dr. Cruz sustained internal hemorrhage due to a tear in the serosa of his sigmoid colon, he failed to show that it was caused by Dr. Agas’s negligent and reckless conduct of the colonoscopy procedure. In other words, Dr. Cruz failed to show and explain that particular negligent or reckless act or omission committed by Dr. Agas. Stated differently, Dr. Cruz did not demonstrate that there was \"inexcusable lack of precaution\" on the part of Dr. Agas."
+      }
+    },
+    {
+      "id": "q-0450",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "Right after a colonoscopy, Ben suffered internal bleeding from a tear in the outermost layer of his colon and had part of his colon removed. The doctor showed that the tear came from adhesions and an abnormal twist of Ben's colon that no test could detect beforehand, and that the colonoscope passes only through the inside of the colon and could not reach the outermost layer. Ben argues that res ipsa loquitur applies, since he was healthy before the procedure and bled right after it. Is Ben correct? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. The alleged negligence was not apparent to a layman, and the doctor explained the injury by a condition beyond his control, so res ipsa loquitur does not apply and expert opinion is needed to link the injury to the procedure.",
+        "legalBasis": "Res ipsa loquitur requires, among others, that the thing which caused the injury was under the defendant's control and management, that the occurrence would not ordinarily happen with proper care, and the absence of explanation by the defendant (Cruz v. Agas). In Cruz, the Court held that the doctor's purported negligence was not immediately apparent to a layman, and that the bleeding was due to the abnormal condition and configuration of the patient's colon, beyond the doctor's control and undetectable before the procedure.",
+        "application": "Ben's bleeding came from the outermost layer of the colon, which the colonoscope inside the colon could not reach without a perforation, and from adhesions no test could have revealed. The cause was thus explained and was not within the doctor's control; whether the procedure caused the tear is a question for medical experts, not common knowledge.",
+        "conclusion": "Ben cannot rely on res ipsa loquitur; he must prove negligence through expert testimony. **Bar trap:** timing is not proof; the doctrine yields when the defendant explains the injury by a cause outside his control."
+      },
+      "keyPoints": [
+        "The negligence was not immediately apparent to a layman",
+        "The injury came from the patient's abnormal condition, beyond the doctor's control and undetectable beforehand",
+        "The doctor gave an explanation, defeating a requisite of the doctrine",
+        "Linking the injury to the procedure required expert opinion"
+      ],
+      "caseIds": [
+        "case-0032"
+      ],
+      "source": {
+        "caseTitle": "Cruz v. Agas, Jr.",
+        "grNumber": "G.R. No. 204095",
+        "url": "https://lawphil.net/judjuris/juri2015/jun2015/gr_204095_2015.html",
+        "part": "Res Ipsa Loquitur Doctrine Not Applicable Against Respondent (application)",
+        "excerpt": "In this case, the Court agrees with Dr. Agas that his purported negligence in performing the colonoscopy on Dr. Cruz was not immediately apparent to a layman to justify the application of res ipsa loquitur doctrine. Dr. Agas was able to establish that the internal bleeding sustained by Dr. Cruz was due to the abnormal condition and configuration of his sigmoid colon which was beyond his control considering that the said condition could not be detected before a colonoscopic procedure. … On the other hand, in the present case, the correlation between petitioner’s injury, i.e., tear in the serosa of sigmoid colon, and the colonoscopy conducted by respondent to the petitioner clearly requires the presentation of an expert opinion considering that no perforation of the sigmoid colon was ever noted during the laparotomy. It cannot be overemphasized that the colonoscope inserted by the respondent only passed through the inside of petitioner’s sigmoid colon while the damaged tissue, i.e., serosa, which caused the bleeding, is located in the outermost layer of the colon."
+      }
+    },
+    {
+      "id": "q-0451",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "The rule that the fact of the occurrence of an injury, taken with the surrounding circumstances, may permit an inference or raise a presumption of negligence, or make out a plaintiff's prima facie case, and present a question of fact for the defendant to meet with an explanation, is known as",
+      "choices": {
+        "A": "proximate cause.",
+        "B": "respondeat superior.",
+        "C": "corporate negligence.",
+        "D": "res ipsa loquitur."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** Cruz v. Agas: \"Literally, res ipsa loquitur means the thing speaks for itself,\" and it is the rule described in the question. **A is wrong:** proximate cause is the cause that, in natural and continuous sequence, produces the injury; it is an element of negligence, not a rule of inference. **B is wrong:** respondeat superior makes an employer answer for an employee's negligence. **C is wrong:** corporate negligence is a hospital's own failure in its duties as an institution. **Bar trap:** identification items list several real doctrines as choices; tie each to its function.",
+      "caseIds": [
+        "case-0032"
+      ],
+      "source": {
+        "caseTitle": "Cruz v. Agas, Jr.",
+        "grNumber": "G.R. No. 204095",
+        "url": "https://lawphil.net/judjuris/juri2015/jun2015/gr_204095_2015.html",
+        "part": "Res Ipsa Loquitur Doctrine Not Applicable Against Respondent",
+        "excerpt": "Literally, res ipsa loquitur means the thing speaks for itself. It is the rule that the fact of the occurrence of an injury, taken with the surrounding circumstances, may permit an inference or raise a presumption of negligence, or make out a plaintiff’s prima facie case, and present a question of fact for defendant to meet with an explanation."
+      }
+    },
+    {
+      "id": "q-0452",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "According to Cruz v. Agas, which of the requisites of res ipsa loquitur is the most instrumental?",
+      "choices": {
+        "A": "The control and management of the thing which caused the injury.",
+        "B": "The occurrence of an injury.",
+        "C": "The absence of explanation by the defendant.",
+        "D": "The presentation of an expert witness by the plaintiff."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** After listing the four requisites, the Court said: \"Of the foregoing requisites, the most instrumental is the control and management of the thing which caused the injury.\" **B and C are wrong:** they are requisites too, but not the one the Court singled out. **D is wrong:** it is not a requisite at all; the doctrine exists precisely to dispense with expert proof where the injury speaks for itself. **Bar trap:** in PSI v. Agana the Court absolved the second surgeon for the same reason: the gauzes were under the lead surgeon's control and management, not his.",
+      "caseIds": [
+        "case-0032"
+      ],
+      "source": {
+        "caseTitle": "Cruz v. Agas, Jr.",
+        "grNumber": "G.R. No. 204095",
+        "url": "https://lawphil.net/judjuris/juri2015/jun2015/gr_204095_2015.html",
+        "part": "Res Ipsa Loquitur Doctrine Not Applicable Against Respondent (the requisites)",
+        "excerpt": "The requisites for the applicability of the doctrine of res ipsa loquitur are: (1) the occurrence of an injury; (2) the thing which caused the injury was under the control and management of the defendant; (3) the occurrence was such that in the ordinary course of things, would not have happened if those who had control or management used proper care; and (4) the absence of explanation by the defendant. Of the foregoing requisites, the most instrumental is the control and management of the thing which caused the injury."
+      }
+    },
+    {
+      "id": "q-0453",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "In a medical negligence case, the patient must prove which of the following elements?",
+      "choices": {
+        "A": "Consent, injury, causation and malice.",
+        "B": "Duty, breach, injury and proximate causation.",
+        "C": "Contract, breach, damage and bad faith.",
+        "D": "Duty, injury, an expert's certification and exclusive control."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** Cruz v. Agas: a patient must prove that the health care provider failed to do what a reasonably prudent provider would have done, or did what a reasonably prudent provider would not have done, and that this caused injury; \"[s]imply put, the elements are duty, breach, injury and proximate causation.\" **A is wrong:** malice is not an element of negligence, and consent is a separate issue (informed consent). **C is wrong:** that describes a breach of contract; bad faith is not required. **D is wrong:** exclusive control is a requisite of res ipsa loquitur, not an element of medical negligence, and there is no \"expert's certification\" element. **Bar trap:** do not mix the elements of medical negligence with the requisites of res ipsa loquitur.",
+      "caseIds": [
+        "case-0032"
+      ],
+      "source": {
+        "caseTitle": "Cruz v. Agas, Jr.",
+        "grNumber": "G.R. No. 204095",
+        "url": "https://lawphil.net/judjuris/juri2015/jun2015/gr_204095_2015.html",
+        "part": "Medical Negligence and Malpractice Not Established (the elements)",
+        "excerpt": "To successfully pursue this kind of case, a patient must only prove that a health care provider either failed to do something which a reasonably prudent health care provider would have done, or that he did something that a reasonably prudent provider would not have done; and that failure or action caused injury to the patient. Simply put, the elements are duty, breach, injury and proximate causation."
+      }
+    },
+    {
+      "id": "q-0454",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "A patient's criminal complaint for reckless imprudence against his doctor is dismissed by the prosecutor for lack of probable cause, and the Secretary of Justice affirms. Following Cruz v. Agas, when will the courts set aside that finding?",
+      "choices": {
+        "A": "Whenever the court, weighing the evidence anew, would have found probable cause.",
+        "B": "Whenever the complainant is himself a physician who can explain the medical issues.",
+        "C": "Only when the finding is tainted with grave abuse of discretion, so patent and gross as to amount to an evasion of a positive duty or a virtual refusal to perform a duty enjoined by law.",
+        "D": "Never, because the determination of probable cause is not subject to judicial review."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court held that under the doctrine of separation of powers, courts will not interfere with the executive determination of probable cause in the absence of grave abuse of discretion, which \"must be so patent and gross as to amount to an evasion of a positive duty or a virtual refusal to perform a duty enjoined by law.\" **A is wrong:** courts may not substitute their own judgment for the Executive's. **B is wrong:** the complainant's profession does not change the standard (Dr. Cruz was himself a physician and still lost). **D is wrong:** review is possible, but only for grave abuse of discretion. **Bar trap:** \"never reviewable\" and \"freely reviewable\" are both wrong; the test is grave abuse of discretion.",
+      "caseIds": [
+        "case-0032"
+      ],
+      "source": {
+        "caseTitle": "Cruz v. Agas, Jr.",
+        "grNumber": "G.R. No. 204095",
+        "url": "https://lawphil.net/judjuris/juri2015/jun2015/gr_204095_2015.html",
+        "part": "Non-interference with Executive Determination of Probable Cause in Preliminary Investigations",
+        "excerpt": "Under the doctrine of separation of powers, courts have no right to directly decide on matters over which full discretionary authority has been delegated to the Executive Branch of the Government, or to substitute their own judgment for that of the Executive Branch, represented in this case by the Department of Justice. The settled policy is that the courts will not interfere with the executive determination of probable cause for the purpose of filing an Information, in the absence of grave abuse of discretion. That abuse of discretion must be so patent and gross as to amount to an evasion of a positive duty or a virtual refusal to perform a duty enjoined by law or to act at all in contemplation of law, such as where the power is exercised in an arbitrary and despotic manner by reason of passion or hostility."
+      }
+    },
+    {
+      "id": "q-0455",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "In Cruz v. Agas, it was undisputed that the patient suffered internal bleeding from a tear in his colon after a colonoscopy. Why did his complaint against the doctor still fail?",
+      "choices": {
+        "A": "Because the patient had signed a waiver before the procedure.",
+        "B": "Because a doctor cannot be charged criminally for an act done in the practice of medicine.",
+        "C": "Because the hospital's ethics committee, not the courts, decides medical negligence.",
+        "D": "Because he failed to show the particular negligent or reckless act or omission of the doctor that caused the injury, or an inexcusable lack of precaution."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The Court held that Dr. Cruz had the burden of showing Dr. Agas's negligence; although the injury was undisputed, \"he failed to show that it was caused by Dr. Agas's negligent and reckless conduct\" and did not demonstrate an \"inexcusable lack of precaution.\" **A is wrong:** no waiver figured in the ruling. **B is wrong:** doctors may be charged with reckless imprudence (as in Jarcia v. People); the complaint failed for lack of proof, not immunity. **C is wrong:** the ethics committee's certification was only part of the evidence; the courts decide liability. **Bar trap:** proof of injury is not proof of negligence.",
+      "caseIds": [
+        "case-0032"
+      ],
+      "source": {
+        "caseTitle": "Cruz v. Agas, Jr.",
+        "grNumber": "G.R. No. 204095",
+        "url": "https://lawphil.net/judjuris/juri2015/jun2015/gr_204095_2015.html",
+        "part": "Medical Negligence and Malpractice Not Established (the patient's burden)",
+        "excerpt": "In this case, Dr. Cruz has the burden of showing the negligence or recklessness of Dr. Agas. Although there is no dispute that Dr. Cruz sustained internal hemorrhage due to a tear in the serosa of his sigmoid colon, he failed to show that it was caused by Dr. Agas’s negligent and reckless conduct of the colonoscopy procedure. In other words, Dr. Cruz failed to show and explain that particular negligent or reckless act or omission committed by Dr. Agas. Stated differently, Dr. Cruz did not demonstrate that there was \"inexcusable lack of precaution\" on the part of Dr. Agas."
       }
     }
   ]

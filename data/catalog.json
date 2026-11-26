@@ -5,7 +5,7 @@
       "topic": "Torts and Quasi-delicts",
       "file": "data/content/civil-law/torts-and-quasi-delicts.json",
       "subtopics": [
-        {"name": "Medical Negligence and Malpractice", "rule": null, "essay": ["q-0432", "q-0433", "q-0434", "q-0440", "q-0441", "q-0442"], "mcq": ["q-0435", "q-0436", "q-0437", "q-0438", "q-0439", "q-0443", "q-0444", "q-0445", "q-0446", "q-0447"], "fillblank": []}
+        {"name": "Medical Negligence and Malpractice", "rule": null, "essay": ["q-0432", "q-0433", "q-0434", "q-0440", "q-0441", "q-0442", "q-0448", "q-0449", "q-0450"], "mcq": ["q-0435", "q-0436", "q-0437", "q-0438", "q-0439", "q-0443", "q-0444", "q-0445", "q-0446", "q-0447", "q-0451", "q-0452", "q-0453", "q-0454", "q-0455"], "fillblank": []}
       ]
     },
     {
@@ -84,7 +84,8 @@
     {"id": "case-0028", "name": "ABS-CBN Corporation v. Gozon, et al.", "grNumber": "G.R. No. 195956", "year": 2015, "subject": "Mercantile Law", "topic": "Intellectual Property Code", "subtopic": "Copyright", "status": "draft", "questions": ["q-0416", "q-0417", "q-0418", "q-0419", "q-0420", "q-0421", "q-0422", "q-0423"]},
     {"id": "case-0029", "name": "Habana, et al. v. Robles and Goodwill Trading Co., Inc.", "grNumber": "G.R. No. 131522", "year": 1999, "subject": "Mercantile Law", "topic": "Intellectual Property Code", "subtopic": "Copyright", "status": "draft", "questions": ["q-0424", "q-0425", "q-0426", "q-0427", "q-0428", "q-0429", "q-0430", "q-0431"]},
     {"id": "case-0030", "name": "Reyes, et al. v. Sisters of Mercy Hospital, et al.", "grNumber": "G.R. No. 130547", "year": 2000, "subject": "Civil Law", "topic": "Torts and Quasi-delicts", "subtopic": "Medical Negligence and Malpractice", "status": "draft", "questions": ["q-0432", "q-0433", "q-0434", "q-0435", "q-0436", "q-0437", "q-0438", "q-0439"]},
-    {"id": "case-0031", "name": "Jarcia, Jr., et al. v. People", "grNumber": "G.R. No. 187926", "year": 2012, "subject": "Civil Law", "topic": "Torts and Quasi-delicts", "subtopic": "Medical Negligence and Malpractice", "status": "draft", "questions": ["q-0440", "q-0441", "q-0442", "q-0443", "q-0444", "q-0445", "q-0446", "q-0447"]}
+    {"id": "case-0031", "name": "Jarcia, Jr., et al. v. People", "grNumber": "G.R. No. 187926", "year": 2012, "subject": "Civil Law", "topic": "Torts and Quasi-delicts", "subtopic": "Medical Negligence and Malpractice", "status": "draft", "questions": ["q-0440", "q-0441", "q-0442", "q-0443", "q-0444", "q-0445", "q-0446", "q-0447"]},
+    {"id": "case-0032", "name": "Cruz v. Agas, Jr.", "grNumber": "G.R. No. 204095", "year": 2015, "subject": "Civil Law", "topic": "Torts and Quasi-delicts", "subtopic": "Medical Negligence and Malpractice", "status": "draft", "questions": ["q-0448", "q-0449", "q-0450", "q-0451", "q-0452", "q-0453", "q-0454", "q-0455"]}
   ],
   "rules": [
     {"id": "rule-0001", "title": "The Rule on the Writ of Amparo", "number": "A.M. No. 07-9-12-SC", "status": "draft", "subject": "Remedial Law", "topic": "Special Proceedings"},
