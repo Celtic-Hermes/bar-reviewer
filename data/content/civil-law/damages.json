@@ -316,6 +316,21 @@
       "ruling": "Yes. There is no hard and fast rule for a fair amount of moral damages; each case depends on its own circumstances. Moral damages (Art. 2217) are incapable of pecuniary estimation; exemplary damages (Art. 2229), though not recoverable as a matter of right and needing no proof, require the plaintiff first to show entitlement to moral, temperate or compensatory damages. The two have different natures and purposes, so separate awards are proper. The claimant must prove the factual basis of the damages and its causal connection to the defendant's acts, and moral damages must be specifically prayed for. Moral damages are not meant to enrich, but to restore the spiritual status quo ante, and must be proportionate to the suffering. Given the petitioners' social standing, their humiliation and anxiety, and the travel agency's wanton disregard of their rights, ₱5,000 was minimal; but since their complaint limited the claim to ₱35,000, the award was raised to ₱35,000 in moral and exemplary damages and ₱5,000 attorney's fees.",
       "keyDoctrine": "Moral damages (Art. 2217) are incapable of pecuniary estimation, but the claimant must prove their factual basis and causal connection to the defendant's acts, and they must be specifically prayed for. They are not meant to enrich, but to restore the spiritual status quo ante, proportionate to the suffering. Exemplary damages are not a matter of right and need not be proved, but the plaintiff must first show entitlement to moral, temperate or compensatory damages. Moral and exemplary damages differ in nature and purpose and are awarded separately. The award may not exceed what the complaint prayed for.",
       "sourceUrl": "https://lawphil.net/judjuris/juri1988/jan1988/gr_l-46877_1988.html"
+    },
+    {
+      "id": "case-0069",
+      "status": "draft",
+      "name": "Raagas, et al. v. Traya, et al.",
+      "grNumber": "G.R. No. L-20081",
+      "year": 1968,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "facts": "The spouses Raagas sued the owners and the driver of a truck that ran over and killed their three-year-old son in MacArthur, Leyte, claiming actual damages of ₱10,000, moral, nominal and corrective damages, and attorney's fees. In their answer, the defendants denied reckless driving, claimed the child ran into the truck, invoked due diligence in selecting and supervising the driver, and stated that they had no knowledge or information sufficient to form a belief as to the damages alleged. On the plaintiffs' motion, the trial court rendered judgment on the pleadings, reasoning that the defendants had not denied that the truck lacked a current registration plate, and awarded ₱10,000 for the death, ₱2,000 moral damages, ₱1,000 actual damages and attorney's fees.",
+      "issue": "Was the judgment on the pleadings proper?",
+      "ruling": "No. The judgment was set aside and the case remanded for trial. The defendants' averment that they had no knowledge or information sufficient to form a belief as to the damages, with their claim that the death was due to an unforeseen event or the fault of the child or his parents, tendered a valid issue. Even if the amounts of damages alleged in a complaint are not specifically denied, the damages are not deemed admitted. Actual damages must be proved; a court cannot rely on speculation, conjecture or guesswork as to their fact and amount. And although an allegation is not necessary for moral damages, the claimant must still satisfactorily prove the factual basis of the damage and its causal relation to the defendant's acts. A full-blown trial was needed.",
+      "keyDoctrine": "Damages are not deemed admitted even if the amounts alleged in the complaint are not specifically denied; an answer stating lack of knowledge or information sufficient to form a belief tenders a valid issue. Actual damages must be proved and cannot rest on speculation, conjecture or guesswork. For moral damages, the claimant must satisfactorily prove the existence of the factual basis of the damage and its causal relation to the defendant's acts. So a claim for damages generally cannot be decided by judgment on the pleadings.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri1968/feb1968/gr_l-20081_1968.html"
     }
   ],
   "questions": [
@@ -5154,6 +5169,237 @@
         "url": "https://lawphil.net/judjuris/juri1988/jan1988/gr_l-46877_1988.html",
         "part": "Decision, the disposition",
         "excerpt": "WHEREFORE, the decision of the Court of Appeals subject of the petition for review is hereby modified, increasing the award to petitioners of moral and exemplary damages to P35,000.00 and attorney's fees to P5,000.00 with costs."
+      }
+    },
+    {
+      "id": "q-0744",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Parents sued for damages for the death of their child, run over by a truck, alleging ₱10,000 actual damages and moral damages \"in an amount to be fixed by the court.\" In their answer, the defendants denied negligence and alleged that they had no knowledge or information sufficient to form a belief as to the damages claimed. The trial court rendered judgment on the pleadings and awarded the damages as alleged. Was this proper? Explain, citing Raagas v. Traya.",
+      "suggestedAnswer": {
+        "answer": "No. The answer tendered a valid issue on the damages, so judgment on the pleadings was improper and a trial on the merits is required.",
+        "legalBasis": "In Raagas v. Traya, the Court held that the defendants' averment that they \"have no knowledge or information sufficient to form a belief as to the truth of the allegations\" as to the damages, together with their claim that the death was due to an unforeseen event or the fault of the child or his parents, \"has the effect of tendering a valid issue.\" It added that even if the allegations regarding the amount of damages are not specifically denied, such damages are not deemed admitted, and actual damages must be proved, not based on speculation, conjecture or guesswork.",
+        "application": "The damages, and the issue of fault, had to be proved by evidence. Since nothing had been proved, the trial court could not award any amount on the pleadings alone.",
+        "conclusion": "The judgment should be set aside and the case tried on the merits. **Bar trap:** failure to deny the amount of damages specifically does not admit them; damages must still be proved."
+      },
+      "keyPoints": [
+        "Lack of knowledge or information sufficient to form a belief tenders a valid issue",
+        "Damages are not deemed admitted even if their amounts are not specifically denied",
+        "Actual damages must be proved; no speculation, conjecture or guesswork",
+        "Moral damages: prove the factual basis and causal relation",
+        "Judgment on the pleadings set aside; trial on the merits required"
+      ],
+      "caseIds": [
+        "case-0069"
+      ],
+      "source": {
+        "caseTitle": "Raagas, et al. v. Traya, et al.",
+        "grNumber": "G.R. No. L-20081",
+        "url": "https://lawphil.net/judjuris/juri1968/feb1968/gr_l-20081_1968.html",
+        "part": "Decision, discussion of whether the answer tendered an issue on damages",
+        "excerpt": "The plaintiffs' claim for actual, moral, nominal and corrective damages, was controverted by the averment in the answer to the effect that the defendants \"have no knowledge or information sufficient to form a belief as to the truth of the allegations\" as to such damages, \"the truth of the matter being that the death of Regino Raagas was occasioned by an unforeseen event and/or by the fault of the small boy Regino Raagas or his parents.\" Such averment has the effect of tendering a valid issue. … In Abubakar Tan vs. Tian Ho, L-18820, December 29, 1962 and Lim Giok vs. Bataan Cigar and Cigarette Factory, L-15861, April 16, 1960, we held that even if the allegations regarding the amount of damages in the complaint are not specifically denied in the answer, such damages are not deemed admitted."
+      }
+    },
+    {
+      "id": "q-0745",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "What must be proved to recover (a) actual damages and (b) moral damages? Is an allegation of moral damages in the complaint enough? Explain, citing Raagas v. Traya.",
+      "suggestedAnswer": {
+        "answer": "(a) For actual damages, the claimant must present actual proof that damage was suffered and evidence of its actual amount; the court cannot rely on speculation, conjecture or guesswork. (b) For moral damages, an allegation is not even necessary, but it is essential that the claimant satisfactorily prove the existence of the factual basis of the damage and its causal relation to the defendant's acts; an allegation alone is not enough.",
+        "legalBasis": "In Raagas v. Traya, the Court declared \"in no uncertain terms that actual damages must be proved, and that a court cannot rely on 'speculation, conjecture or guesswork' as to the fact and amount of damages, but must depend on actual proof that damage had been suffered and on evidence of the actual amount.\" It reaffirmed that \"although an allegation is not necessary in order that moral damages may be awarded, 'it is, nevertheless, essential that the claimant satisfactorily prove the existence of the factual basis of the damage and its causal relation to defendant's acts.'\"",
+        "application": "So even in a death case, the parents had to prove their losses and the suffering and its link to the defendants' acts at a trial, rather than obtain an award on the pleadings.",
+        "conclusion": "Both require proof at trial: actual damages as to fact and amount; moral damages as to factual basis and causation. **Bar trap:** \"no proof of pecuniary loss\" for moral damages does not dispense with proof of the injury and its cause."
+      },
+      "keyPoints": [
+        "Actual damages: actual proof of the damage and evidence of its amount",
+        "No speculation, conjecture or guesswork",
+        "Moral damages: an allegation is not necessary",
+        "But the factual basis and its causal relation to the defendant's acts must be satisfactorily proved",
+        "An allegation alone is never enough"
+      ],
+      "caseIds": [
+        "case-0069"
+      ],
+      "source": {
+        "caseTitle": "Raagas, et al. v. Traya, et al.",
+        "grNumber": "G.R. No. L-20081",
+        "url": "https://lawphil.net/judjuris/juri1968/feb1968/gr_l-20081_1968.html",
+        "part": "Decision, discussion of the proof required for actual and moral damages",
+        "excerpt": "In Tomassi vs. Villa-Abrille, L-7047, August 21, 1968, Suntay Tanjangco vs. Jovellanos, et al., L-12332, June 30, 1960, and Delfin vs. Court of Agrarian Relations, et al., L-23348, March 14, 1967, 1967 A PHILD 453, we declared in no uncertain terms that actual damages must be proved, and that a court cannot rely on \"speculation, conjecture or guesswork\" as to the fact and amount of damages, but must depend on actual proof that damage had been suffered and on evidence of the actual amount. Finally, in Malonzo vs. Galang et. al., L-13851, July 27, 1960, we reaffirmed the rule that although an allegation is not necessary in order that moral damages may be awarded, \"it is, nevertheless, essential that the claimant satisfactorily prove the existence of the factual basis of the damage and its causal relation to defendant's acts.\""
+      }
+    },
+    {
+      "id": "q-0746",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "In Raagas v. Traya, the trial court reasoned that, since the defendants did not deny that their truck had no current registration plate, they were presumed negligent, and it rendered judgment on the pleadings for damages. What did the Supreme Court decide, and why?",
+      "suggestedAnswer": {
+        "answer": "The Supreme Court set aside the judgment on the pleadings and remanded the case for trial on the merits, because the answer tendered valid issues on the damages and on fault, which required evidence.",
+        "legalBasis": "In Raagas v. Traya, the trial court relied on Article 2185 (a driver violating a traffic regulation is presumed negligent) and treated the unanswered allegation on the registration plate as an admission. The Supreme Court held that the trial court erred: the answer's averments tendered a valid issue, damages are not deemed admitted, and actual and moral damages must be proved. This \"points up the inescapable need of a full-blown trial on the merits at which the parties will be afforded every opportunity to present evidence in support of their respective contentions and defenses.\"",
+        "application": "Even if a presumption of negligence might arise, the presumption is rebuttable (\"unless there is proof to the contrary\"), and the damages themselves still had to be proved, so the parties had to be heard at trial.",
+        "conclusion": "Remanded for trial. **Bar trap:** a presumption of negligence does not prove damages; judgment on the pleadings is proper only when the answer tenders no issue."
+      },
+      "keyPoints": [
+        "Trial court: presumption of negligence (Art. 2185) from the unanswered plate allegation",
+        "Supreme Court: the answer tendered valid issues",
+        "Damages not deemed admitted; must be proved",
+        "Need for a full-blown trial on the merits",
+        "Judgment set aside; case remanded"
+      ],
+      "caseIds": [
+        "case-0069"
+      ],
+      "source": {
+        "caseTitle": "Raagas, et al. v. Traya, et al.",
+        "grNumber": "G.R. No. L-20081",
+        "url": "https://lawphil.net/judjuris/juri1968/feb1968/gr_l-20081_1968.html",
+        "part": "Statement of the trial court's reasoning and the disposition",
+        "excerpt": "The preceding disquisition points up the inescapable need of a full-blown trial on the merits at which the parties will be afforded every opportunity to present evidence in support of their respective contentions and defenses. ACCORDINGLY, the judgment on the pleadings of June 24, 1960 is set aside, and this case is hereby remanded to the court of origin for trial on the merits."
+      }
+    },
+    {
+      "id": "q-0747",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Under Raagas v. Traya, if the amounts of damages alleged in a complaint are not specifically denied in the answer,",
+      "choices": {
+        "A": "the damages are deemed admitted and may be awarded without proof.",
+        "B": "the damages are not deemed admitted.",
+        "C": "the court must award nominal damages.",
+        "D": "the defendant is declared in default."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court held \"that even if the allegations regarding the amount of damages in the complaint are not specifically denied in the answer, such damages are not deemed admitted.\" **A is wrong:** damages must be proved. **C and D are wrong:** neither follows. **Bar trap:** this is an exception to the usual rule that material allegations not specifically denied are deemed admitted.",
+      "caseIds": [
+        "case-0069"
+      ],
+      "source": {
+        "caseTitle": "Raagas, et al. v. Traya, et al.",
+        "grNumber": "G.R. No. L-20081",
+        "url": "https://lawphil.net/judjuris/juri1968/feb1968/gr_l-20081_1968.html",
+        "part": "Decision, discussion of whether the answer tendered an issue on damages",
+        "excerpt": "we held that even if the allegations regarding the amount of damages in the complaint are not specifically denied in the answer, such damages are not deemed admitted."
+      }
+    },
+    {
+      "id": "q-0748",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "According to Raagas v. Traya, in awarding actual damages a court must depend on",
+      "choices": {
+        "A": "the amount prayed for in the complaint.",
+        "B": "a reasonable estimate by the judge.",
+        "C": "actual proof that damage had been suffered and evidence of the actual amount, not speculation, conjecture or guesswork.",
+        "D": "the defendant's capacity to pay."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court said a court \"cannot rely on 'speculation, conjecture or guesswork' as to the fact and amount of damages, but must depend on actual proof that damage had been suffered and on evidence of the actual amount.\" **A, B and D are wrong:** none replaces proof. **Bar trap:** where a loss is certain but its amount is not proved, temperate damages, not actual damages, may be considered.",
+      "caseIds": [
+        "case-0069"
+      ],
+      "source": {
+        "caseTitle": "Raagas, et al. v. Traya, et al.",
+        "grNumber": "G.R. No. L-20081",
+        "url": "https://lawphil.net/judjuris/juri1968/feb1968/gr_l-20081_1968.html",
+        "part": "Decision, discussion of the proof required for actual damages",
+        "excerpt": "we declared in no uncertain terms that actual damages must be proved, and that a court cannot rely on \"speculation, conjecture or guesswork\" as to the fact and amount of damages, but must depend on actual proof that damage had been suffered and on evidence of the actual amount."
+      }
+    },
+    {
+      "id": "q-0749",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "As reaffirmed in Raagas v. Traya, what is essential for an award of moral damages?",
+      "choices": {
+        "A": "That the claimant specifically allege the exact amount in the complaint.",
+        "B": "That the defendant be convicted of a crime.",
+        "C": "That the claimant prove pecuniary loss with receipts.",
+        "D": "That the claimant satisfactorily prove the existence of the factual basis of the damage and its causal relation to the defendant's acts."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The Court reaffirmed that \"although an allegation is not necessary in order that moral damages may be awarded, 'it is, nevertheless, essential that the claimant satisfactorily prove the existence of the factual basis of the damage and its causal relation to defendant's acts.'\" **A is wrong:** an allegation is not even necessary under the rule stated. **B is wrong:** no conviction is required. **C is wrong:** no proof of pecuniary loss is needed. **Bar trap:** compare Makabali v. CA, which said moral damages must be specifically prayed for; the requirement of proof of basis and causation is constant.",
+      "caseIds": [
+        "case-0069"
+      ],
+      "source": {
+        "caseTitle": "Raagas, et al. v. Traya, et al.",
+        "grNumber": "G.R. No. L-20081",
+        "url": "https://lawphil.net/judjuris/juri1968/feb1968/gr_l-20081_1968.html",
+        "part": "Decision, discussion of the proof required for moral damages",
+        "excerpt": "Finally, in Malonzo vs. Galang et. al., L-13851, July 27, 1960, we reaffirmed the rule that although an allegation is not necessary in order that moral damages may be awarded, \"it is, nevertheless, essential that the claimant satisfactorily prove the existence of the factual basis of the damage and its causal relation to defendant's acts.\""
+      }
+    },
+    {
+      "id": "q-0750",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "In Raagas v. Traya, which provision did the trial court invoke to presume the driver negligent?",
+      "choices": {
+        "A": "Article 2185 of the Civil Code, on the presumption of negligence of a driver violating a traffic regulation.",
+        "B": "Article 2180 of the Civil Code, on the liability of employers.",
+        "C": "Article 2176 of the Civil Code, on quasi-delicts.",
+        "D": "Article 1733 of the Civil Code, on common carriers."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The trial court reasoned that \"unless there is proof to the contrary, it is presumed that a person driving a motor vehicle has been negligent if at the time of the mishap, he was violating any traffic regulation (article 2185, new Civil Code).\" **B, C and D are wrong:** not the provision invoked for the presumption. **Bar trap:** the Supreme Court still required a trial, since the presumption is rebuttable and damages must be proved.",
+      "caseIds": [
+        "case-0069"
+      ],
+      "source": {
+        "caseTitle": "Raagas, et al. v. Traya, et al.",
+        "grNumber": "G.R. No. L-20081",
+        "url": "https://lawphil.net/judjuris/juri1968/feb1968/gr_l-20081_1968.html",
+        "part": "Statement of the trial court's reasoning",
+        "excerpt": "and that \"unless there is proof to the contrary, it is presumed that a person driving a motor vehicle has been negligent if at the time of the mishap, he was violating any traffic regulation (article 2185, new Civil Code).\""
+      }
+    },
+    {
+      "id": "q-0751",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "What did the Supreme Court do in Raagas v. Traya?",
+      "choices": {
+        "A": "It affirmed the award of damages.",
+        "B": "It set aside the judgment on the pleadings and remanded the case for trial on the merits.",
+        "C": "It dismissed the complaint for lack of cause of action.",
+        "D": "It increased the moral damages."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court ruled: \"the judgment on the pleadings of June 24, 1960 is set aside, and this case is hereby remanded to the court of origin for trial on the merits.\" **A and D are wrong:** no damages could be awarded without proof. **C is wrong:** the complaint stated a claim; the issues needed trial. **Bar trap:** a remand is not a ruling on who is at fault.",
+      "caseIds": [
+        "case-0069"
+      ],
+      "source": {
+        "caseTitle": "Raagas, et al. v. Traya, et al.",
+        "grNumber": "G.R. No. L-20081",
+        "url": "https://lawphil.net/judjuris/juri1968/feb1968/gr_l-20081_1968.html",
+        "part": "Decision, the disposition",
+        "excerpt": "ACCORDINGLY, the judgment on the pleadings of June 24, 1960 is set aside, and this case is hereby remanded to the court of origin for trial on the merits."
       }
     }
   ]
