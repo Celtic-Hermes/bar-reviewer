@@ -391,6 +391,21 @@
       "ruling": "No; the complaint was dismissed. A check produces the effect of payment only when cashed (Art. 1249), so the bounced check did not cure the default, and Filinvest had a valid cause of action when it sued. The repossession expenses were for Mendez's account, since he should have surrendered the car upon valid demand. There was no basis for attorney's fees: they are improper on the sole basis of an adverse decision or where the party acted in good faith. Moral damages cannot be awarded in the absence of a wrongful act or omission, fraud or bad faith; when an action is filed in good faith there should be no penalty on the right to litigate, and error alone is not a ground for moral damages. Filinvest's willingness to release the car on payment of only the overdue installments and its voluntary dismissal of its case showed a lack of fraud or bad faith, and the car was in fact seized at Mendez's residence, not before his visitor.",
       "keyDoctrine": "Moral damages cannot be awarded in the absence of a wrongful act or omission, or of fraud or bad faith; the exercise of a right within legal bounds, and an action filed in good faith, do not give rise to moral damages, since there should be no penalty on the right to litigate, and error alone is not a ground for them. Attorney's fees are not awarded on the sole basis of an adverse decision. A check produces the effect of payment only when cashed (Art. 1249).",
       "sourceUrl": "https://lawphil.net/judjuris/juri1987/jul1987/gr_l-66419_1987.html"
+    },
+    {
+      "id": "case-0074",
+      "status": "draft",
+      "name": "Lopez, et al. v. Pan American World Airways",
+      "grNumber": "G.R. No. L-22415",
+      "year": 1966,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "facts": "Then Senate President Pro Tempore Fernando Lopez, his wife, his daughter and his son-in-law had confirmed first-class reservations on Pan Am's Tokyo-San Francisco flight of May 24, 1960 and paid for first-class tickets. A Pan Am employee had mistakenly cancelled their reservations a month earlier; the airline's reservations supervisor learned of it but deliberately withheld the information, hoping for last-minute cancellations, and tickets marked \"OK\" were issued. In Tokyo, Pan Am refused them first-class seats, and because of pressing engagements they traveled tourist class under protest; Mrs. Lopez, who had been ill, suffered physical discomfort on the 13-hour trip. The employee who made the error was later given a salary increase. The trial court awarded ₱150,000 moral damages, ₱25,000 exemplary damages and attorney's fees.",
+      "issue": "(1) Did Pan Am breach its contracts in bad faith? (2) What damages are due?",
+      "ruling": "The judgment was modified, increasing the awards. Pan Am's own evidence showed that, after cancelling the reservations by mistake, it deliberately withheld the cancellation and let the passengers believe their reservations stood; this willful non-disclosure, not the error itself, caused the breach, and it is bad faith, meaning a breach of a known duty through some motive of interest or ill will. Even granting the mistakes, there was negligence so gross and reckless as to amount to malice or bad faith. Moral damages are recoverable in breach of contract where the defendant acted fraudulently or in bad faith (Art. 2220); the passengers suffered social humiliation, wounded feelings, serious anxiety and mental anguish, since it is humiliating to be compelled to travel tourist class despite first-class tickets. Considering their standing, the Court awarded ₱200,000 moral damages (₱100,000 to the Senator, ₱50,000 to Mrs. Lopez, ₱25,000 each to the Montelibanos), ₱75,000 exemplary damages to deter similar breaches, 6% interest, and ₱50,000 attorney's fees under the written contract.",
+      "keyDoctrine": "Moral damages are recoverable in breach of contract where the defendant acted fraudulently or in bad faith (Art. 2220); bad faith is a breach of a known duty through some motive of interest or ill will, and gross and reckless negligence may amount to bad faith. Exemplary damages may be added where the defendant acted in a wanton, fraudulent, reckless, oppressive or malevolent manner (Arts. 2229, 2232). The amount of moral damages may consider the social, official and financial standing of the offended parties and the business and financial position of the offender.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri1966/mar1966/gr_l-22415_1966.html"
     }
   ],
   "questions": [
@@ -6383,6 +6398,237 @@
         "url": "https://lawphil.net/judjuris/juri1987/jul1987/gr_l-66419_1987.html",
         "part": "Decision, the disposition",
         "excerpt": "WHEREFORE, the petition is hereby GRANTED. The decisions of the trial court and the Intermediate Appellate Court are REVERSED and SET ASIDE. The complaint of the respondent is DISMISSED."
+      }
+    },
+    {
+      "id": "q-0784",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "An airline employee mistakenly cancelled a family's confirmed first-class reservations. A month before the flight, the airline's reservations supervisor learned of the error, but decided not to tell the family, hoping that seats would open up at the last minute; the airline then issued first-class tickets marked \"OK.\" At the airport, the family was told they could fly only in tourist class. The airline argues that it acted at most through an honest mistake and so cannot be liable for moral damages. Is the argument correct? Explain, citing Lopez v. Pan American World Airways.",
+      "suggestedAnswer": {
+        "answer": "No. The airline acted in bad faith: after the mistaken cancellation, it deliberately withheld the fact of cancellation and let the passengers believe their reservations stood. That willful non-disclosure, not the error itself, caused the breach.",
+        "legalBasis": "In Lopez v. Pan Am, the Court held that the airline, through its agents, \"first cancelled plaintiffs, reservations by mistake and thereafter deliberately and intentionally withheld from plaintiffs or their travel agent the fact of said cancellation, letting them go on believing that their first class reservations stood valid and confirmed.\" Even if prompted only by self-interest in keeping the passengers, \"in legal contemplation such conduct already amounts to action in bad faith. For bad faith means a breach of a known duty through some motive of interest or ill-will.\" The Court added that, granting the mistakes, \"there would at least be negligence so gross and reckless as to amount to malice or bad faith.\"",
+        "application": "The supervisor admitted it was his duty to tell the passengers but chose not to. The tickets marked \"OK\" misled them, and the airline even rewarded the employee who made the error. Under Article 2220, moral damages are recoverable for breach of contract in bad faith.",
+        "conclusion": "The airline is liable for moral damages. **Bar trap:** the original error may be honest, but concealing it is bad faith; and gross, reckless negligence may itself amount to bad faith."
+      },
+      "keyPoints": [
+        "Cancellation by mistake, then deliberate withholding of that fact",
+        "The willful non-disclosure, not the error, caused the breach",
+        "Bad faith: breach of a known duty through some motive of interest or ill will",
+        "Self-interest, not ill will, can suffice",
+        "Gross and reckless negligence may amount to bad faith"
+      ],
+      "caseIds": [
+        "case-0074"
+      ],
+      "source": {
+        "caseTitle": "Lopez, et al. v. Pan American World Airways",
+        "grNumber": "G.R. No. L-22415",
+        "url": "https://lawphil.net/judjuris/juri1966/mar1966/gr_l-22415_1966.html",
+        "part": "Decision, discussion of bad faith",
+        "excerpt": "From the foregoing evidence of defendant it is in effect admitted that defendant — through its agents — first cancelled plaintiffs, reservations by mistake and thereafter deliberately and intentionally withheld from plaintiffs or their travel agent the fact of said cancellation, letting them go on believing that their first class reservations stood valid and confirmed. In so misleading plaintiffs into purchasing first class tickets in the conviction that they had confirmed reservations for the same, when in fact they had none, defendant wilfully and knowingly placed itself into the position of having to breach its a foresaid contracts with plaintiffs should there be no last-minute cancellation by other passengers before flight time, as it turned out in this case. Such actuation of defendant may indeed have been prompted by nothing more than the promotion of its self-interest in holding on to Senator Lopez and party as passengers in its flight and foreclosing on their chances to seek the services of other airlines that may have been able to afford them first class accommodations. All the time, in legal contemplation such conduct already amounts to action in bad faith. For bad faith means a breach of a known duty through some motive of interest or ill-will"
+      }
+    },
+    {
+      "id": "q-0785",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "In a breach of contract of carriage, when may moral damages and exemplary damages be awarded? Apply the rules to passengers who held first-class tickets but were compelled by the airline's bad faith to travel tourist class. Explain, citing Lopez v. Pan American World Airways.",
+      "suggestedAnswer": {
+        "answer": "Moral damages are recoverable in breach of contract where the defendant acted fraudulently or in bad faith (Art. 2220). Exemplary damages may be added, by way of example or correction for the public good, where the defendant acted in a wanton, fraudulent, reckless, oppressive or malevolent manner (Arts. 2229 and 2232). The passengers here are entitled to both.",
+        "legalBasis": "In Lopez v. Pan Am, the Court stated these rules, then found that \"[a]s a proximate result of defendant's breach in bad faith of its contracts with plaintiffs, the latter suffered social humiliation, wounded feelings, serious anxiety and mental anguish.\" \"It may not be humiliating to travel as tourist passengers; it is humiliating to be compelled to travel as such, contrary to what is rightfully to be expected from the contractual undertaking.\" Exemplary damages should be in an amount that will \"sufficiently and effectively deter similar breach of contracts in the future by defendant or other airlines.\"",
+        "application": "Those waiting to welcome the passengers at stopovers found them among the tourist passengers; Mrs. Lopez, who had been ill, suffered physical discomfort for 13 hours in narrower seats. The Court awarded ₱200,000 in moral damages among the four and ₱75,000 exemplary damages.",
+        "conclusion": "Both moral and exemplary damages are due. **Bar trap:** a mere breach of contract does not support moral damages; Article 2220 requires fraud or bad faith."
+      },
+      "keyPoints": [
+        "Moral damages in breach of contract: fraud or bad faith (Art. 2220)",
+        "Exemplary damages: wanton, fraudulent, reckless, oppressive or malevolent manner (Arts. 2229, 2232)",
+        "The injuries: social humiliation, wounded feelings, serious anxiety, mental anguish",
+        "Humiliation lies in being compelled to travel tourist despite first-class tickets",
+        "Exemplary damages fixed to deter similar breaches"
+      ],
+      "caseIds": [
+        "case-0074"
+      ],
+      "source": {
+        "caseTitle": "Lopez, et al. v. Pan American World Airways",
+        "grNumber": "G.R. No. L-22415",
+        "url": "https://lawphil.net/judjuris/juri1966/mar1966/gr_l-22415_1966.html",
+        "part": "Decision, discussion of the rules on damages and moral damages",
+        "excerpt": "Addressing ourselves now to the question of damages, it is well to state at the outset those rules and principles. First, moral damages are recoverable in breach of contracts where the defendant acted fraudulently or in bad faith (Art. 2220, New Civil Code). Second, in addition to moral damages, exemplary or corrective damages may be imposed by way of example or correction for the public good, in breach of contract where the defendant acted in a wanton, fraudulent, reckless, oppressive or malevolent manner (Articles 2229, 2232, New Civil Code). … First, then, as to moral damages. As a proximate result of defendant's breach in bad faith of its contracts with plaintiffs, the latter suffered social humiliation, wounded feelings, serious anxiety and mental anguish. For plaintiffs were travelling with first class tickets issued by defendant and yet they were given only the tourist class. At stop-overs, they were expected to be among the first-class passengers by those awaiting to welcome them, only to be found among the tourist passengers. It may not be humiliating to travel as tourist passengers; it is humiliating to be compelled to travel as such, contrary to what is rightfully to be expected from the contractual undertaking."
+      }
+    },
+    {
+      "id": "q-0786",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "What factors may a court consider in fixing the amount of moral damages, and what controls the amount of attorney's fees where there is a written contract for the lawyer's services? Explain, citing Lopez v. Pan American World Airways.",
+      "suggestedAnswer": {
+        "answer": "The court may consider the official, political, social and financial standing of the offended parties, and the business and financial position of the offender. As for attorney's fees, a written contract for an attorney's services controls the amount unless the court finds it unconscionable or unreasonable.",
+        "legalBasis": "In Lopez v. Pan Am, the Court stressed that the damages \"has been determined by adequately considering the official, political, social, and financial standing of the offended parties on one hand, and the business and financial position of the offender on the other.\" It noted the Senator's position as Senate President Pro Tempore and former Vice-President, which an international carrier knows. On attorney's fees, it applied the rule that \"a written contract for an attorney's services shall control the amount to be paid therefor unless found by the court to be unconscionable or unreasonable,\" and found the contract for ₱25,000 at trial and ₱25,000 on appeal reasonable given the subject matter, the lawyer's standing and the extent of his work.",
+        "application": "So the Senator received ₱100,000, his wife ₱50,000 (she shared his humiliation and also suffered physical discomfort), and the daughter and son-in-law ₱25,000 each; and attorney's fees of ₱50,000 were awarded.",
+        "conclusion": "Standing of the parties and position of the offender guide moral damages; the written fee contract controls unless unconscionable. **Bar trap:** family members who share the humiliation may each recover moral damages in their own right."
+      },
+      "keyPoints": [
+        "Official, political, social and financial standing of the offended parties",
+        "Business and financial position of the offender",
+        "Each member of the party recovered according to his or her own suffering",
+        "Attorney's fees: a written contract controls unless unconscionable or unreasonable",
+        "Fees of ₱50,000 found reasonable given the work done"
+      ],
+      "caseIds": [
+        "case-0074"
+      ],
+      "source": {
+        "caseTitle": "Lopez, et al. v. Pan American World Airways",
+        "grNumber": "G.R. No. L-22415",
+        "url": "https://lawphil.net/judjuris/juri1966/mar1966/gr_l-22415_1966.html",
+        "part": "Decision, discussion of the amount of damages and attorney's fees",
+        "excerpt": "In concluding, let it be stressed that the amount of damages awarded in this appeal has been determined by adequately considering the official, political, social, and financial standing of the offended parties on one hand, and the business and financial position of the offender on the other (Domingding v. Ng, 55 O.G. 10)."
+      }
+    },
+    {
+      "id": "q-0787",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "As defined in Lopez v. Pan American World Airways, bad faith means",
+      "choices": {
+        "A": "any breach of contract, regardless of motive.",
+        "B": "a breach of a known duty through some motive of interest or ill-will.",
+        "C": "a mistake in reading reservation records.",
+        "D": "the failure to apologize to the passengers."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court said \"bad faith means a breach of a known duty through some motive of interest or ill-will,\" and that self-interest, not personal ill will, may suffice. **A is wrong:** a mere breach is not bad faith. **C is wrong:** an honest mistake alone is not bad faith; concealing it was. **D is wrong:** not the definition. **Bar trap:** a commercial motive can be enough.",
+      "caseIds": [
+        "case-0074"
+      ],
+      "source": {
+        "caseTitle": "Lopez, et al. v. Pan American World Airways",
+        "grNumber": "G.R. No. L-22415",
+        "url": "https://lawphil.net/judjuris/juri1966/mar1966/gr_l-22415_1966.html",
+        "part": "Decision, discussion of bad faith",
+        "excerpt": "For bad faith means a breach of a known duty through some motive of interest or ill-will (Spiegel vs. Beacon Participations, 8 NE 2d 895, 907)."
+      }
+    },
+    {
+      "id": "q-0788",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "In Lopez v. Pan American World Airways, to what did the Court attribute the breach of the contracts of carriage?",
+      "choices": {
+        "A": "Solely to the employee's erroneous cancellation of the reservations.",
+        "B": "To the head office's refusal to reinstate the reservations.",
+        "C": "To the willful non-disclosure of the cancellation, or the pretense that the reservations stood, and not simply to the erroneous cancellation itself.",
+        "D": "To the passengers' late arrival in Tokyo."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court said: \"Such willful-non-disclosure of the cancellation or pretense that the reservations for plaintiffs stood — and not simply the erroneous cancellation itself — is the factor to which is attributable the breach of the resulting contracts.\" **A and B are wrong:** these were not the decisive factor. **D is wrong:** not a fact of the case. **Bar trap:** focus on what the airline did after discovering the error.",
+      "caseIds": [
+        "case-0074"
+      ],
+      "source": {
+        "caseTitle": "Lopez, et al. v. Pan American World Airways",
+        "grNumber": "G.R. No. L-22415",
+        "url": "https://lawphil.net/judjuris/juri1966/mar1966/gr_l-22415_1966.html",
+        "part": "Decision, discussion of bad faith (the cause of the breach)",
+        "excerpt": "Such willful-non-disclosure of the cancellation or pretense that the reservations for plaintiffs stood — and not simply the erroneous cancellation itself — is the factor to which is attributable the breach of the resulting contracts. And, as above-stated, in this respect defendant clearly acted in bad faith."
+      }
+    },
+    {
+      "id": "q-0789",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "In Lopez v. Pan American World Airways, why was Mrs. Lopez awarded moral damages?",
+      "choices": {
+        "A": "Because she was the Senator's wife, regardless of any suffering.",
+        "B": "Only because she paid for her own ticket.",
+        "C": "Because the airline was a foreign corporation.",
+        "D": "Because she shared her husband's prestige and humiliation, and, having been ill, suffered physical discomfort amounting to physical suffering during the 13-hour trip in narrower tourist seats."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The Court found that Mrs. Lopez \"shared his prestige and therefore his humiliation. In addition she suffered physical discomfort during the 13-hour trip,\" which, given her illness, \"may well be considered a physical suffering,\" and awarded her ₱50,000. **A is wrong:** her own suffering was considered. **B and C are wrong:** not the reasons given. **Bar trap:** physical suffering is among the injuries covered by moral damages.",
+      "caseIds": [
+        "case-0074"
+      ],
+      "source": {
+        "caseTitle": "Lopez, et al. v. Pan American World Airways",
+        "grNumber": "G.R. No. L-22415",
+        "url": "https://lawphil.net/judjuris/juri1966/mar1966/gr_l-22415_1966.html",
+        "part": "Decision, discussion of moral damages (Mrs. Lopez)",
+        "excerpt": "Mrs. Maria J. Lopez, as wife of Senator Lopez, shared his prestige and therefore his humiliation. In addition she suffered physical discomfort during the 13-hour trip,(5 hours from Tokyo to Honolulu and 8 hours from Honolulu to San Francisco)."
+      }
+    },
+    {
+      "id": "q-0790",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "In Lopez v. Pan American World Airways, how did the Court determine the amount of exemplary damages?",
+      "choices": {
+        "A": "It should be imposed in such an amount as to sufficiently and effectively deter similar breaches of contract in the future by the defendant or other airlines.",
+        "B": "It must equal the moral damages.",
+        "C": "It must not exceed the price of the tickets.",
+        "D": "It is fixed by law at ₱25,000."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court said exemplary damages, given their nature, \"should be imposed in such an amount as to sufficiently and effectively deter similar breach of contracts in the future by defendant or other airlines,\" and awarded ₱75,000. **B, C and D are wrong:** no such rules. **Bar trap:** the amount is measured by the need to deter.",
+      "caseIds": [
+        "case-0074"
+      ],
+      "source": {
+        "caseTitle": "Lopez, et al. v. Pan American World Airways",
+        "grNumber": "G.R. No. L-22415",
+        "url": "https://lawphil.net/judjuris/juri1966/mar1966/gr_l-22415_1966.html",
+        "part": "Decision, discussion of exemplary damages",
+        "excerpt": "In view of its nature, it should be imposed in such an amount as to sufficiently and effectively deter similar breach of contracts in the future by defendant or other airlines. In this light, we find it just to award P75,000.00 as exemplary or corrective damages."
+      }
+    },
+    {
+      "id": "q-0791",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "What did the Court award in Lopez v. Pan American World Airways?",
+      "choices": {
+        "A": "₱150,000 moral damages and ₱25,000 exemplary damages, as the trial court ordered.",
+        "B": "₱200,000 moral damages (₱100,000 to the Senator, ₱50,000 to Mrs. Lopez, ₱25,000 each to the Montelibanos), ₱75,000 exemplary damages, 6% interest from December 14, 1963, and ₱50,000 attorney's fees.",
+        "C": "Only the refund of the fare difference between first class and tourist class.",
+        "D": "₱650,000 in moral damages, as the plaintiffs asked."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court awarded \"(1) P200,000.00 as moral damages, divided among plaintiffs, thus: P100,000.00 for Senate President Pro Tempore Fernando Lopez; P50,000.00 for his wife Maria J. Lopez; P25,000.00 for his son-in-law ...; and P25,000.00 for his daughter ...; (2) P75,000.00 as exemplary or corrective damages; (3) interest at the legal rate of 6% per annum ... from December 14, 1963 ... (4) P50,000.00 as attorney's fees.\" **A is wrong:** the award was increased. **C is wrong:** moral and exemplary damages were due for bad faith. **D is wrong:** the Court did not grant the full claim. **Bar trap:** interest ran from the amended trial court decision.",
+      "caseIds": [
+        "case-0074"
+      ],
+      "source": {
+        "caseTitle": "Lopez, et al. v. Pan American World Airways",
+        "grNumber": "G.R. No. L-22415",
+        "url": "https://lawphil.net/judjuris/juri1966/mar1966/gr_l-22415_1966.html",
+        "part": "Decision, the disposition",
+        "excerpt": "Wherefore, the judgment appealed from is hereby modified so as to award in favor of plaintiffs and against defendant, the following: (1) P200,000.00 as moral damages, divided among plaintiffs, thus: P100,000.00 for Senate President Pro Tempore Fernando Lopez; P50,000.00 for his wife Maria J. Lopez; P25,000.00 for his son-in-law Alfredo Montelibano, Jr.; and P25,000.00 for his daughter Mrs. Alfredo Montelibano, Jr.; (2) P75,000.00 as exemplary or corrective damages; (3) interest at the legal rate of 6% per annum on the moral and exemplary damages aforestated, from December 14, 1963, the date of the amended decision of the court a quo, until said damages are fully paid; (4) P50,000.00 as attorney's fees; and (5) the costs."
       }
     }
   ]
