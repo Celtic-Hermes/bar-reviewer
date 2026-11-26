@@ -196,6 +196,21 @@
       "ruling": "The Court denied the petition. The authenticity of the consent forms and the faultiness of the stent are questions of fact, beyond review under Rule 45. In any case, restating Li v. Soliman, the Court found adequate disclosure: Dr. Aventura informed the family of the material risks of stenting, including death, and that another physician, a stenting specialist, would perform it. The consent forms bore Quintin's signature, which was not shown to be forged, and he was not shown incapable of intelligent consent, so the lack of witnesses' signatures was irrelevant. Experts in cardiovascular and endovascular surgery testified that stenting was the sound advice and that the stroke was an inherent risk of the procedure that would have occurred even if the stent had been deployed; the plaintiff's forensic pathologist was not qualified to testify on the standard of care. Negligence was not the proximate cause of death, res ipsa loquitur did not apply, the PHC's charter allowed it to invite foreign specialists, and the claim of a faulty stent was a bare allegation.",
       "keyDoctrine": "In a lack-of-informed-consent case the plaintiff must prove a duty to disclose material risks, failure to disclose, consent that would otherwise not have been given, and injury from the treatment. A signed consent form is valid absent proof of forgery or incapacity, even without witnesses' signatures. The expert who testifies on the standard of care must be a similarly trained and experienced physician. Death from an inherent risk of a procedure, not from negligence, is not compensable; res ipsa loquitur does not apply to it. When a physician's qualifications are admitted, he is presumed to take the necessary precautions.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2025/apr2025/gr_268308_2025.html"
+    },
+    {
+      "id": "case-0043",
+      "status": "draft",
+      "name": "Casumpang, et al. v. Cortejo",
+      "grNumber": "G.R. No. 171127",
+      "year": 2015,
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "facts": "On April 22, 1988, Mrs. Jesusa Cortejo brought her 11-year-old son Edmer to the emergency room of the San Juan de Dios Hospital (SJDH) for difficulty in breathing, chest pain, stomach pain and fever. Using her Fortune Care health card, she was assigned to Dr. Noel Casumpang, a pediatrician accredited with Fortune Care. Using only a stethoscope and a chest X-ray, he confirmed a diagnosis of bronchopneumonia and kept to it, although the mother told him the boy had high fever, no colds or cough, throat irritation, chest and stomach pain, and blood in his sputum. The next day Edmer vomited blood; Dr. Ruby Sanga-Miranda, a resident, examined him, and on the second bleeding suspected dengue, ran tests and called Dr. Casumpang, who ordered more tests only after the third bleeding. The results showed dengue hemorrhagic fever. Edmer was transferred that midnight to Makati Medical Center, where he was found in irreversible Stage IV dengue, and he died at 4:00 a.m. His father sued the hospital and both doctors. The trial court and the Court of Appeals held all three liable, relying on the expert testimony of Dr. Jaudian, a pathologist.",
+      "issue": "(1) Were Dr. Casumpang and Dr. Sanga negligent? (2) Was the pathologist qualified as an expert? (3) Is the hospital liable?",
+      "ruling": "The Court partly granted the petitions. A physician-patient relationship is consensual but may be implied from the physician's affirmative acts of diagnosis or treatment; both doctors had one with Edmer. Dr. Casumpang was negligent: a wrong diagnosis is not by itself malpractice, and physicians are generally not liable for a bona fide error of judgment, but an erroneous diagnosis resulting from negligent conduct (neglecting the history, failing to order tests, failing to recognize symptoms) is evidence of malpractice; he selectively appreciated the symptoms, did not order confirmatory tests in time, and did not manage the dengue properly once found. Dr. Sanga was not liable: residents are held to the standard of physicians generally, but her error was an honest mistake of judgment, given the prior diagnosis by two doctors and the attending physician's final responsibility. Dr. Jaudian was qualified: what matters is the expert's knowledge of and familiarity with the standard of care, not his specialty title. Causation was proved, as timely diagnosis and management would have substantially reduced the risk of death. The hospital was not Dr. Casumpang's employer for lack of control, but it was solidarily liable under apparent authority, having held him out to parents who relied on the hospital; their use of a health card did not change this.",
+      "keyDoctrine": "A physician-patient relationship is consensual but may be implied from the physician's affirmative acts of diagnosis or treatment. A wrong diagnosis is not by itself malpractice, but it is evidence of malpractice when it results from negligent conduct. Residents owe the standard of care of physicians generally, but liability considers their authority, supervision and the attending physician's principal responsibility. An expert's qualification depends on knowledge of and familiarity with the standard of care, not on specialty title. A hospital may be liable for an independent contractor physician under apparent authority, proved by the hospital's manifestations and the patient's reliance; a health plan limits only the choice of doctors, not liability.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2015/mar2015/gr_171127_2015.html"
     }
   ],
   "questions": [
@@ -3185,6 +3200,237 @@
         "url": "https://lawphil.net/judjuris/juri2025/apr2025/gr_268308_2025.html",
         "part": "Ruling, the claim of a faulty stent",
         "excerpt": "Finally, we cannot subscribe to Elpidio's claim that the \"faulty\" stent hastened the death of his father. Bare allegations are not proof. The trial court noted that other than the testimonies of Elpidio and his sister, Elisa Que, the records do not show how faulty the stent used on Quintin was."
+      }
+    },
+    {
+      "id": "q-0536",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "How is a physician-patient relationship created? Does a second-year hospital resident who, while doing rounds, examines a patient assigned to another doctor and prescribes a course of treatment, owe that patient a duty of care? Explain.",
+      "suggestedAnswer": {
+        "answer": "A physician-patient relationship is created when a patient engages the services of a physician and the physician accepts or agrees to provide care. It is consensual, but the consent need not be express; it may be implied from the physician's affirmative action to diagnose or treat the patient, or participation in it. The resident therefore owes the patient a duty of care.",
+        "legalBasis": "In Casumpang v. Cortejo, the Court held that duty requires proof of a professional relationship between physician and patient; without it, a physician owes no duty and incurs no liability. The mere fact that a person approaches a physician and seeks advice or treatment does not create the duty unless the physician agrees. Once the relationship is established, the physician must use at least the standard of care of a reasonably competent doctor under similar circumstances. A resident tasked to do rounds and assist other physicians is deemed to have agreed to the relationship when she participates in the diagnosis and prescribes treatment (citing Jarcia v. People and foreign cases on residents' supervision).",
+        "application": "By examining the patient and prescribing a course of treatment, the resident performed affirmative acts of diagnosis and treatment, which amount to acceptance of the relationship and the duty of care that comes with it, even though the patient was assigned to another doctor.",
+        "conclusion": "Yes, the resident owes a duty of care. **Bar trap:** a request for help alone does not create the relationship, but once the doctor examines or treats, acceptance is implied; whether the resident is liable then depends on whether she breached the standard (in Casumpang, the resident was ultimately not liable)."
+      },
+      "keyPoints": [
+        "Duty requires a physician-patient relationship",
+        "Created when the patient engages the physician and the physician accepts; it is consensual",
+        "Consent may be implied from affirmative acts of diagnosis or treatment",
+        "Merely approaching a physician does not create the duty unless the physician agrees",
+        "A resident who participates in diagnosis and prescribes treatment accepts the relationship"
+      ],
+      "caseIds": [
+        "case-0043"
+      ],
+      "source": {
+        "caseTitle": "Casumpang, et al. v. Cortejo",
+        "grNumber": "G.R. No. 171127",
+        "url": "https://lawphil.net/judjuris/juri2015/mar2015/gr_171127_2015.html",
+        "part": "Our Ruling, The Elements of a Medical Malpractice Suit (the physician-patient relationship)",
+        "excerpt": "Duty refers to the standard of behavior that imposes restrictions on one's conduct. It requires proof of professional relationship between the physician and the patient. Without the professional relationship, a physician owes no duty to the patient, and cannot therefore incur any liability. A physician-patient relationship is created when a patient engages the services of a physician, and the latter accepts or agrees to provide care to the patient. The establishment of this relationship is consensual, and the acceptance by the physician essential. The mere fact that an individual approaches a physician and seeks diagnosis, advice or treatment does not create the duty of care unless the physician agrees. The consent needed to create the relationship does not always need to be express. In the absence of an express agreement, a physician-patient relationship may be implied from the physician’s affirmative action to diagnose and/or treat a patient, or in his participation in such diagnosis and/or treatment. … With respect to Dr. Sanga, her professional relationship with Edmer arose when she assumed the obligation to provide resident supervision over the latter. As second year resident doctor tasked to do rounds and assist other physicians, Dr. Sanga is deemed to have agreed to the creation of physician-patient relationship with the hospital’s patients when she participated in the diagnosis and prescribed a course of treatment for Edmer."
+      }
+    },
+    {
+      "id": "q-0537",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "A pediatrician diagnosed a feverish boy with bronchopneumonia using only a stethoscope and a chest X-ray, and kept to that diagnosis although the mother told him the boy had high fever but no cough, chest and stomach pain, and blood in his sputum. He ordered blood tests only after the boy's third episode of bleeding; the tests showed dengue hemorrhagic fever, and the boy died. The pediatrician argues that a wrong diagnosis is not malpractice, since medicine is not an exact science. Is he liable? Explain.",
+      "suggestedAnswer": {
+        "answer": "Yes. A wrong diagnosis is not by itself malpractice, but it becomes evidence of malpractice when it results from negligent conduct, such as failing to recognize symptoms and to order the appropriate tests, as here.",
+        "legalBasis": "In Casumpang v. Cortejo, the Court held that it does not decide the correctness of a doctor's diagnosis but whether a breach of duty took place; that physicians are generally not liable for damages resulting from a bona fide error of judgment; and that medicine is not an exact science, so even specialists are not expected to be 100% accurate. But when the erroneous diagnosis was the result of negligent conduct (neglect of medical history, failure to order the appropriate tests, failure to recognize symptoms), it becomes evidence of medical malpractice; the doctor must act according to acceptable medical practice standards.",
+        "application": "The boy's rapid breathing, chest and stomach pain, fever and blood in the saliva were, per the expert, classic signs of dengue. The pediatrician selectively appreciated only the symptoms that fit bronchopneumonia, ignored the information that pointed to dengue, did not examine the source of the bleeding, and ordered confirmatory tests too late. That is negligence in the diagnosis, followed by delayed management of the disease, which caused the death since dengue, timely diagnosed and managed, is not usually fatal.",
+        "conclusion": "The pediatrician is liable. **Bar trap:** \"an honest error of judgment\" protects only a diagnosis reached with due care; a wrong diagnosis reached by ignoring symptoms and skipping tests is negligence."
+      },
+      "keyPoints": [
+        "A wrong diagnosis is not by itself malpractice; bona fide errors of judgment are generally not actionable",
+        "Medicine is not an exact science; 100% accuracy is not expected",
+        "An erroneous diagnosis resulting from negligent conduct (neglected history, no appropriate tests, unrecognized symptoms) is evidence of malpractice",
+        "The doctor selectively appreciated symptoms and ordered tests too late",
+        "Timely diagnosis and management would have substantially reduced the risk of death"
+      ],
+      "caseIds": [
+        "case-0043"
+      ],
+      "source": {
+        "caseTitle": "Casumpang, et al. v. Cortejo",
+        "grNumber": "G.R. No. 171127",
+        "url": "https://lawphil.net/judjuris/juri2015/mar2015/gr_171127_2015.html",
+        "part": "Our Ruling, Dr. Casumpang's Negligence (negligence in the diagnosis)",
+        "excerpt": "First, we emphasize that we do not decide the correctness of a doctor’s diagnosis, or the accuracy of the medical findings and treatment. Our duty in medical malpractice cases is to decide – based on the evidence adduced and expert opinion presented– whether a breach of duty took place. Second, we clarify that a wrong diagnosis is not by itself medical malpractice. Physicians are generally not liable for damages resulting from a bona fide error of judgment. Nonetheless, when the physician’s erroneous diagnosis was the result of negligent conduct (e.g., neglect of medical history, failure to order the appropriate tests, failure to recognize symptoms), it becomes an evidence of medical malpractice. Third, we also note that medicine is not an exact science; and doctors, or even specialists, are not expected to give a 100% accurate diagnosis in treating patients who come to their clinic for consultations. Error is possible as the exercise of judgment is called for in considering and reading the exhibited symptoms, the results of tests, and in arriving at definitive conclusions. But in doing all these, the doctor must have acted according to acceptable medical practice standards. In the present case, evidence on record established that in confirming the diagnosis of bronchopneumonia, Dr. Casumpang selectively appreciated some and not all of the symptoms presented, and failed to promptly conduct the appropriate tests to confirm his findings. In sum, Dr. Casumpang failed to timely detect dengue fever, which failure, especially when reasonable prudence would have shown that indications of dengue were evident and/or foreseeable, constitutes negligence."
+      }
+    },
+    {
+      "id": "q-0538",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "Parents with no doctor of their own brought their sick son to a hospital's emergency room on their family doctor's referral to the hospital. Using their health-plan card, they were assigned by the hospital to a pediatrician accredited with the plan; no one told them he was an independent contractor. The son died through the pediatrician's negligence. The hospital argues that the pediatrician is not its employee, since it does not control his diagnosis and treatment, and that the parents chose him through their health plan. Is the hospital liable? Explain.",
+      "suggestedAnswer": {
+        "answer": "Yes. Although there is no employer-employee relationship for lack of control, the hospital is solidarily liable under the doctrine of apparent authority, and the use of the health plan does not change this.",
+        "legalBasis": "In Casumpang v. Cortejo, the Court held that control, the most crucial element of an employer-employee relationship, was absent, so the doctors were independent contractors and Article 2180 did not apply. As a rule hospitals are not liable for the negligence of independent contractors, but they are liable if the physician acts as the hospital's ostensible agent. Following Nogales v. Capitol Medical Center, the plaintiff must prove two factors: the hospital's manifestations (which may be general and implied) and the patient's reliance on the hospital rather than on a specific physician, consistent with ordinary care and prudence. The use of a health care plan only limits the choice of physicians to those accredited with it, not the liability of the doctors or the hospital.",
+        "application": "The parents knew no doctor at the hospital and came because of a referral to the hospital itself; the hospital assigned the pediatrician and never told them he was an independent contractor, thereby holding him out as part of its staff. The parents relied on the hospital to provide care, not on a doctor of their own choosing, and did not know, nor should have known, that he was an independent contractor. Estoppel has set in.",
+        "conclusion": "The hospital is solidarily liable with the pediatrician under apparent authority. **Bar trap:** absence of control defeats only Article 2180; and a health-plan card limits choice, not liability."
+      },
+      "keyPoints": [
+        "No employer-employee relationship: control, the most crucial element, was absent",
+        "Hospitals are generally not liable for independent contractors, except under apparent authority",
+        "Two factors: the hospital's manifestations (may be implied) and the patient's reliance on the hospital",
+        "The hospital assigned the doctor without disclosing his status; the parents relied on the hospital",
+        "A health-care plan limits the choice of doctors, not liability"
+      ],
+      "caseIds": [
+        "case-0043"
+      ],
+      "source": {
+        "caseTitle": "Casumpang, et al. v. Cortejo",
+        "grNumber": "G.R. No. 171127",
+        "url": "https://lawphil.net/judjuris/juri2015/mar2015/gr_171127_2015.html",
+        "part": "Our Ruling, Liability of SJDH",
+        "excerpt": "Control, which is the most crucial among the elements, is not present in this case. Based on the records, no evidence exists showing that SJDH exercised any degree of control over the means, methods of procedure and manner by which the petitioning doctors conducted and performed their medical profession. … As a rule, hospitals are not liable for the negligence of its independent contractors. However, it may be found liable if the physician or independent contractor acts as an ostensible agent of the hospital. This exception is also known as the \"doctrine of apparent authority.\" … In sum, a hospital can be held vicariously liable for the negligent acts of a physician (or an independent contractor) providing care at the hospital if the plaintiff can prove these two factors: first, the hospital’s manifestations; and second, the patient’s reliance. … Based on the records, the respondent relied on SJDH rather than upon Dr. Casumpang, to care and treat his son Edmer. His testimony during trial showed that he and his wife did not know any doctors at SJDH; they also did not know that Dr. Casumpang was an independent contractor. They brought their son to SJDH for diagnosis because of their family doctor’s referral. … We also stress that Mrs. Cortejo’s use of health care plan (Fortune Care) did not affect SJDH’s liability. The only effect of the availment of her Fortune Care card benefits is that her choice of physician is limited only to physicians who are accredited with Fortune Care. Thus, her use of health care plan in this case only limited the choice of doctors (or coverage of services, amount etc.) and not the liability of doctors or the hospital."
+      }
+    },
+    {
+      "id": "q-0539",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "In Casumpang v. Cortejo, why was the resident physician, Dr. Sanga, not held liable even though she, like the attending physician, assumed that the blood in the patient's phlegm came from bronchopneumonia?",
+      "choices": {
+        "A": "Because residents are held to a lower standard of care than licensed physicians.",
+        "B": "Because her error was an honest mistake of judgment, given the diagnosis already made by two doctors, the attending physician's burden of final diagnosis, and her diligent care once she suspected dengue.",
+        "C": "Because residents owe no duty of care to patients assigned to an attending physician.",
+        "D": "Because she was an employee of the hospital, which alone answers for her."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court found Dr. Sanga \"not entirely faultless,\" but considering the diagnosis previously made by two doctors and that \"the burden of final diagnosis pertains to the attending physician,\" her error \"was merely an honest mistake of judgment influenced in no small measure by her status in the hospital hierarchy.\" She also ran tests and notified the attending physician once she suspected dengue. **A is wrong:** the Court said residents are subject to the same standard of care as physicians generally, though liability considers authority and supervision. **C is wrong:** she had a physician-patient relationship and a duty of care. **D is wrong:** the Court found no employer-employee relationship with the hospital as to the petitioning doctors. **Bar trap:** residents have no immunity, but the attending physician bears the principal responsibility.",
+      "caseIds": [
+        "case-0043"
+      ],
+      "source": {
+        "caseTitle": "Casumpang, et al. v. Cortejo",
+        "grNumber": "G.R. No. 171127",
+        "url": "https://lawphil.net/judjuris/juri2015/mar2015/gr_171127_2015.html",
+        "part": "Our Ruling, Dr. Sanga is Not Liable for Negligence",
+        "excerpt": "Based on her statements we find that Dr. Sanga was not entirely faultless. Nevertheless, her failure to discern the import of Edmer’s second bleeding does not necessarily amount to negligence as the respondent himself admitted that Dr. Sanga failed to examine the blood specimen because he wash edit away. In addition, considering the diagnosis previously made by two doctors, and the uncontroverted fact that the burden of final diagnosis pertains to the attending physician (in this case, Dr. Casumpang), we believe that Dr. Sanga’s error was merely an honest mistake of judgment influenced in no small measure by her status in the hospital hierarchy; hence, she should not be held liable for medical negligence."
+      }
+    },
+    {
+      "id": "q-0540",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "In Casumpang v. Cortejo, the doctors objected that the plaintiff's expert on dengue was a pathologist, not a pediatrician. How did the Court rule?",
+      "choices": {
+        "A": "The pathologist was disqualified, because an expert's specialty must always match the defendant's.",
+        "B": "The pathologist was disqualified, following Ramos v. Court of Appeals.",
+        "C": "The pathologist was qualified, because what governs is the witness's knowledge of and familiarity with the standard of care, not the classification by title or specialty; he had relevant exposure in pediatrics and had handled many dengue cases.",
+        "D": "Expert testimony was unnecessary, because res ipsa loquitur applied."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court held that in Ramos and Cereno the experts were disqualified mainly for their incapacity to shed light on the standard of care; a mismatch of specialties is \"at most, one of the considerations.\" It is \"the scope of the witness' knowledge and not the artificial classification by title\" that governs. Dr. Jaudian had attended at least 30 Pediatric Society seminars, practiced for 16 years and handled at least 50 dengue cases, showing sufficient familiarity with the standard of care. **A and B are wrong** for the same reason. **D is wrong:** the Court relied on expert testimony; res ipsa loquitur was not the basis. **Bar trap:** compare Que v. Philippine Heart Center (2025), where a forensic pathologist was not qualified on a cardiovascular surgeon's standard of care; the test is familiarity with the specific standard, not the title.",
+      "caseIds": [
+        "case-0043"
+      ],
+      "source": {
+        "caseTitle": "Casumpang, et al. v. Cortejo",
+        "grNumber": "G.R. No. 171127",
+        "url": "https://lawphil.net/judjuris/juri2015/mar2015/gr_171127_2015.html",
+        "part": "Our Ruling, Dr. Jaudian's Professional Competence and Credibility",
+        "excerpt": "A close scrutiny of Ramos and Cereno reveals that the Court primarily based the witnesses’ disqualification to testify as an expert on their incapacity to shed light on the standard of care that must be observed by the defendant-physicians. That the expert witnesses’ specialties do not match the physicians’ practice area only constituted, at most, one of the considerations that should not be taken out of context. After all, the sole function of a medical expert witness, regardless of his/her specialty, is to afford assistance to the courts on medical matters, and to explain the medical facts in issue. … Although he specializes in pathology, it was established during trial that he had attended not less than 30 seminars held by the Pediatric Society, had exposure in pediatrics, had been practicing medicine for 16 years, and had handled not less than 50 dengue related cases. As a licensed medical practitioner specializing in pathology, who had practical and relevant exposure in pediatrics and dengue related cases, we are convinced that Dr. Jaudian demonstrated sufficient familiarity with the standard of care to be applied in dengue fever cases."
+      }
+    },
+    {
+      "id": "q-0541",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "According to the guideline cited in Casumpang v. Cortejo (from Evans v. Ohanesian), what must be shown to qualify a witness as a medical expert?",
+      "choices": {
+        "A": "That the witness is a board-certified specialist in the same field as the defendant.",
+        "B": "That the witness has examined the patient personally.",
+        "C": "That the witness is employed by a government hospital.",
+        "D": "That the witness (1) has the required professional knowledge, learning and skill of the subject under inquiry sufficient to speak with authority on it, and (2) is familiar with the standard required of a physician under similar circumstances."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The Court quoted Evans v. Ohanesian: the witness must \"(1) [have] the required professional knowledge, learning and skill of the subject under inquiry sufficient to qualify him to speak with authority on the subject; and (2) [be] familiar with the standard required of a physician under similar circumstances\"; the degree of his knowledge then goes to the weight rather than the admissibility of his opinion. **A is wrong:** the Court said it is not critical whether the expert is a general practitioner or a specialist, so long as he exhibits knowledge of the subject. **B and C are wrong:** neither is a requirement. **Bar trap:** specialty and training go to weight, not admissibility.",
+      "caseIds": [
+        "case-0043"
+      ],
+      "source": {
+        "caseTitle": "Casumpang, et al. v. Cortejo",
+        "grNumber": "G.R. No. 171127",
+        "url": "https://lawphil.net/judjuris/juri2015/mar2015/gr_171127_2015.html",
+        "part": "Our Ruling, Criteria in Qualifying as an Expert Witness (citing Evans v. Ohanesian)",
+        "excerpt": "To qualify a witness as a medical expert, it must be shown that the witness (1) has the required professional knowledge, learning and skill of the subject under inquiry sufficient to qualify him to speak with authority on the subject; and (2) is familiar with the standard required of a physician under similar circumstances; where a witness has disclosed sufficient knowledge of the subject to entitle his opinion to go to the jury, the question of the degree of his knowledge goes more to the weight of the evidence than to its admissibility."
+      }
+    },
+    {
+      "id": "q-0542",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "In Casumpang v. Cortejo, the patient's mother used her health-care plan card, so she was limited to doctors accredited with the plan. What effect did this have on the hospital's liability?",
+      "choices": {
+        "A": "None: the plan only limited her choice of doctors (or the coverage of services), not the liability of the doctors or the hospital.",
+        "B": "It made the health-care plan company solely liable.",
+        "C": "It freed the hospital, since the mother chose the doctor through her plan.",
+        "D": "It made the hospital liable under Article 2180 as the doctor's employer."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court said the mother's use of her health-care plan \"did not affect SJDH's liability. The only effect of the availment of her Fortune Care card benefits is that her choice of physician is limited only to physicians who are accredited with Fortune Care. Thus, her use of health care plan in this case only limited the choice of doctors (or coverage of services, amount etc.) and not the liability of doctors or the hospital.\" **B is wrong:** the plan company's liability was not in issue. **C is wrong:** the hospital itself assigned the doctor and held him out. **D is wrong:** the Court found no employer-employee relationship; liability rested on apparent authority. **Bar trap:** a health plan is not a defense to apparent authority.",
+      "caseIds": [
+        "case-0043"
+      ],
+      "source": {
+        "caseTitle": "Casumpang, et al. v. Cortejo",
+        "grNumber": "G.R. No. 171127",
+        "url": "https://lawphil.net/judjuris/juri2015/mar2015/gr_171127_2015.html",
+        "part": "Our Ruling, SJDH Clothed Dr. Casumpang With Apparent Authority (the health-care plan)",
+        "excerpt": "We also stress that Mrs. Cortejo’s use of health care plan (Fortune Care) did not affect SJDH’s liability. The only effect of the availment of her Fortune Care card benefits is that her choice of physician is limited only to physicians who are accredited with Fortune Care. Thus, her use of health care plan in this case only limited the choice of doctors (or coverage of services, amount etc.) and not the liability of doctors or the hospital."
+      }
+    },
+    {
+      "id": "q-0543",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "Among the four elements of an employer-employee relationship, which did Casumpang v. Cortejo describe as \"the most crucial\"?",
+      "choices": {
+        "A": "Selection and engagement of services.",
+        "B": "Payment of wages.",
+        "C": "Control, that is, the power to control not only the end to be achieved but the means to be used in reaching it.",
+        "D": "The power to hire and fire."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** After listing the four elements (selection and engagement; payment of wages; the power to hire and fire; and the power to control the end and the means), the Court said: \"Control, which is the most crucial among the elements, is not present in this case,\" since the hospital did not control the doctors' diagnosis and treatment or supervise their handling of the case. **A, B and D are wrong:** they are elements, but not the one singled out. **Bar trap:** without control, a hospital is not liable under Article 2180, but it may still be liable under apparent authority.",
+      "caseIds": [
+        "case-0043"
+      ],
+      "source": {
+        "caseTitle": "Casumpang, et al. v. Cortejo",
+        "grNumber": "G.R. No. 171127",
+        "url": "https://lawphil.net/judjuris/juri2015/mar2015/gr_171127_2015.html",
+        "part": "Our Ruling, There is No Employer-Employee Relationship Between SJDH and the Petitioning Doctors",
+        "excerpt": "In determining whether an employer-employee relationship exists between the parties, the following elements must be present: (1) selection and engagement of services; (2) payment of wages; (3) the power to hire and fire; and (4) the power to control not only the end to be achieved, but the means to be used in reaching such an end. Control, which is the most crucial among the elements, is not present in this case."
       }
     }
   ]
