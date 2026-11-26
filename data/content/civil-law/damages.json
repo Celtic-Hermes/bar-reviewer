@@ -256,6 +256,21 @@
       "ruling": "The petition was granted. A decision in an illegal dismissal case has two parts: the finding of illegality and its monetary consequences, which are final, and the computation, which is time-bound and may be recomputed. Recomputation up to finality is part of the law (Art. 279, Labor Code) read into the decision and does not violate the immutability of judgments; the employer ran that risk by appealing. On interest, BSP-MB Circular No. 799, effective July 1, 2013, lowered the legal rate for loans or forbearance of money, goods or credits and the rate allowed in judgments, absent stipulation, from 12% to 6% a year, applied prospectively only. The Court modified the Eastern Shipping guidelines accordingly: 6% from default for loans or forbearance without stipulation; 6% at the court's discretion for other obligations, from demand or judgment depending on certainty; and 6% from finality until satisfaction. Judgments final before July 1, 2013 are not disturbed. Nacar was awarded backwages and separation pay up to May 27, 2002, with 12% interest from May 27, 2002 to June 30, 2013 and 6% from July 1, 2013.",
       "keyDoctrine": "From July 1, 2013 (BSP-MB Circular No. 799), absent stipulation, the legal interest for loans or forbearance of money, goods or credits and the rate allowed in judgments is 6% a year, applied prospectively; 12% applies only until June 30, 2013. The modified Eastern Shipping guidelines: (1) loan or forbearance, no stipulation: 6% from judicial or extrajudicial demand; interest due earns legal interest from judicial demand; (2) other obligations: 6% at the court's discretion, from demand if reasonably certain, otherwise from judgment, on the amount finally adjudged; (3) from finality of a money judgment until satisfaction: 6%. Judgments final before July 1, 2013 are not disturbed.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2013/aug2013/gr_189871_2013.html"
+    },
+    {
+      "id": "case-0065",
+      "status": "draft",
+      "name": "Lara's Gifts & Decors, Inc. v. Midtown Industrial Sales, Inc. (Decision)",
+      "grNumber": "G.R. No. 225433",
+      "year": 2019,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "facts": "In 2007, Lara's Gifts & Decors bought industrial and construction materials worth ₱1,263,104.22 from Midtown Industrial Sales on a 60-day credit term; the sales invoices stated that 24% interest a year would be charged on overdue accounts. Its postdated checks, and the replacement checks, bounced. Midtown made an extrajudicial demand on January 22, 2008 and sued on February 5, 2008. Lara's Gifts admitted the purchases but claimed the materials were substandard. The trial court ordered it to pay the principal with 24% interest from judicial demand until full payment, and ₱50,000 attorney's fees; the Court of Appeals affirmed.",
+      "issue": "(1) Were the sales invoices admissible and the claim proved? (2) Is the 24% stipulated interest valid, and does it apply until full payment or only until finality of judgment? (3) What interest applies to the interest due?",
+      "ruling": "The Court affirmed with modification. Lara's Gifts did not specifically deny under oath the genuineness and due execution of the invoices, so they were deemed admitted; it failed to prove that the materials were substandard. The 24% interest stated in the invoices was valid and binding on an established company that had long dealt with Midtown. The stipulated interest, unless excessive or unconscionable, is the law between the parties and applies until full payment; the legal interest applies only in the absence of stipulated interest (Arts. 2209, 1159, 1956). There is no compounding unless expressly agreed or mandated by law. The Court distinguished Article 2209 (loans or forbearance, mandatory interest) from Articles 2210-2211 (other obligations, discretionary interest), held that P.D. 116 amended the legal rate in Article 2209, and further modified the Eastern Shipping and Nacar guidelines. It ordered 24% interest from the extrajudicial demand until full payment, legal interest under Article 2212 on the accrued interest from judicial demand (12% to June 30, 2013, then 6%), and 6% on the attorney's fees from finality. On reconsideration, in a Resolution of September 20, 2022, the Court modified this Decision: it held the contract a sale of goods on credit, not a loan or forbearance, restated the guidelines, and deleted the award of legal interest on the 24% interest.",
+      "keyDoctrine": "A stipulated interest rate, unless excessive or unconscionable, is the law between the parties and applies until full payment; legal interest applies only in the absence of stipulated interest. Interest is not compounded unless expressly stipulated or mandated by law. Article 2209 (obligations to pay a sum of money: interest is mandatory) differs from Articles 2210-2211 (other obligations: interest is discretionary). The genuineness and due execution of an actionable document are deemed admitted unless specifically denied under oath. Note: modified on reconsideration by the Resolution of September 20, 2022.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2019/aug2019/gr_225433_2019.html"
     }
   ],
   "questions": [
@@ -4170,6 +4185,237 @@
         "url": "https://lawphil.net/judjuris/juri2013/aug2013/gr_189871_2013.html",
         "part": "Decision, the disposition",
         "excerpt": "WHEREFORE, premises considered, the Decision dated September 23, 2008 of the Court of Appeals in CA-G.R. SP No. 98591, and the Resolution dated October 9, 2009 are REVERSED and SET ASIDE. Respondents are Ordered to Pay petitioner: (1) backwages computed from the time petitioner was illegally dismissed on January 24, 1997 up to May 27, 2002, when the Resolution of this Court in G.R. No. 151332 became final and executory; (2) separation pay computed from August 1990 up to May 27, 2002 at the rate of one month pay per year of service; and (3) interest of twelve percent (12%) per annum of the total monetary awards, computed from May 27, 2002 to June 30, 2013 and six percent (6%) per annum from July 1, 2013 until their full satisfaction."
+      }
+    },
+    {
+      "id": "q-0712",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "A loan agreement stipulated interest of 18% a year. The borrower defaulted, the lender sued, and the court ordered payment of the principal with 18% interest. The borrower argues that from the finality of the judgment until payment, only the legal rate of 6% a year should apply, citing the Eastern Shipping and Nacar guidelines. Is the borrower correct? Explain, citing the 2019 Decision in Lara's Gifts & Decors v. Midtown Industrial Sales.",
+      "suggestedAnswer": {
+        "answer": "No. The stipulated interest, unless excessive and unconscionable, is the law between the parties and applies until full payment of the obligation, not only until finality of the judgment. The legal rate applies only in the absence of stipulated interest.",
+        "legalBasis": "In Lara's Gifts v. Midtown (2019), the Court held that paragraph 3 of the Eastern Shipping guidelines failed to qualify that, for loans or forbearance of money, the prevailing legal interest applies only in the absence of stipulated interest. Rulings that replaced the stipulated interest with the legal rate from finality contravene Article 2209, which mandates that the indemnity for a debtor's delay is the interest agreed upon. Under Article 1159, contractual obligations have the force of law between the parties; under Article 1956, no interest is due unless expressly stipulated in writing. Unless the stipulated interest is excessive and unconscionable, there is no legal basis to reduce it at any time until full payment.",
+        "application": "The 18% rate was stipulated and is not claimed to be unconscionable, so it continues to run until the borrower pays in full; the 6% legal rate would apply only if no rate had been agreed.",
+        "conclusion": "The borrower is wrong; the 18% stipulated rate runs until full payment. **Bar trap:** the 6% rate from finality under Nacar applies to the legal rate, not to replace a valid stipulated rate. (The Court restated the guidelines on reconsideration in 2022; check that resolution too.)"
+      },
+      "keyPoints": [
+        "Stipulated interest is the law between the parties (Art. 1159)",
+        "It applies until full payment, unless excessive and unconscionable",
+        "Legal interest applies only in the absence of stipulated interest (Art. 2209)",
+        "Replacing the stipulated rate with the legal rate from finality contravenes Art. 2209",
+        "No interest unless expressly stipulated in writing (Art. 1956)"
+      ],
+      "caseIds": [
+        "case-0065"
+      ],
+      "source": {
+        "caseTitle": "Lara's Gifts & Decors, Inc. v. Midtown Industrial Sales, Inc. (Decision)",
+        "grNumber": "G.R. No. 225433",
+        "url": "https://lawphil.net/judjuris/juri2019/aug2019/gr_225433_2019.html",
+        "part": "The Court's Ruling, imposition of legal interest (stipulated interest until full payment)",
+        "excerpt": "Paragraph 3 above failed to qualify that for loans or forbearance of money, the prevailing legal interest should only apply in the absence of stipulated interest. The stipulated interest is the law between the parties and should apply from the time of extrajudicial or judicial demand until full payment. This omission resulted in several rulings of this Court, which imposed the stipulated interest on the adjudged amount until finality of the decision BUT applied the prevailing legal interest in lieu of the stipulated interest from finality of the decision until full payment of the obligation. This is in direct contravention of the law, particularly Article 2209 of the Civil Code, which mandates that when a debtor incurs a delay in obligations to pay a sum of money, the indemnity for damages shall be the payment of the interest agreed upon. Only in the absence of a stipulated interest will the legal interest be applied. To repeat, the stipulated interest is the law between the parties, and should be applied until full payment of the obligation. … Thus, unless the stipulated interest is excessive and unconscionable, there is no legal basis for the reduction of the stipulated interest at any time until full payment of the principal amount. The stipulated interest remains in force until the obligation is satisfied. In the absence of stipulated interest, the prevailing legal interest prescribed by the Bangko Sentral ng Pilipinas shall apply."
+      }
+    },
+    {
+      "id": "q-0713",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Distinguish the interest under Article 2209 of the Civil Code from the interest under Articles 2210 and 2211, as explained in Lara's Gifts & Decors v. Midtown Industrial Sales (2019).",
+      "suggestedAnswer": {
+        "answer": "Article 2209 applies to obligations consisting in the payment of a sum of money (loans or forbearance of money, goods or credit) where the debtor incurs delay, so there is a debtor-creditor relationship, and the payment of interest is mandatory. Articles 2210 and 2211 apply to other obligations (breach of contract, crimes and quasi-delicts) that do not involve the payment of a sum of money and have no debtor-creditor relationship, and the interest is discretionary on the court.",
+        "legalBasis": "In Lara's Gifts v. Midtown (2019), the Court explained that under Articles 2210 and 2211, when an obligation other than loans or forbearance is breached, the court may in its discretion impose interest on the damages, at the prevailing legal rate prescribed by the Bangko Sentral ng Pilipinas. In contrast, Article 2209 applies only to loans or forbearance arising from obligations to pay a sum of money where the debtor incurs delay, and the payment of interest there is mandatory, while under Articles 2210 and 2211 it is discretionary.",
+        "application": "So a borrower in delay must pay interest by law, while a defendant ordered to pay damages for breach of contract or a quasi-delict may be ordered to pay interest only if the court, in its discretion, finds it proper.",
+        "conclusion": "Article 2209: sum of money, debtor-creditor, mandatory. Articles 2210-2211: other obligations, discretionary. **Bar trap:** do not treat interest on damages for a tort as a matter of right."
+      },
+      "keyPoints": [
+        "Art. 2209: obligations to pay a sum of money, debtor in delay; debtor-creditor relationship",
+        "Art. 2209: payment of interest is mandatory",
+        "Arts. 2210-2211: breach of contract, crimes and quasi-delicts; no sum of money or debtor-creditor relationship",
+        "Arts. 2210-2211: interest is discretionary on the court",
+        "Rate: the prevailing legal interest prescribed by the BSP"
+      ],
+      "caseIds": [
+        "case-0065"
+      ],
+      "source": {
+        "caseTitle": "Lara's Gifts & Decors, Inc. v. Midtown Industrial Sales, Inc. (Decision)",
+        "grNumber": "G.R. No. 225433",
+        "url": "https://lawphil.net/judjuris/juri2019/aug2019/gr_225433_2019.html",
+        "part": "The Court's Ruling, Articles 2210 and 2211 apply to obligations other than loans or forbearance",
+        "excerpt": "Under these articles, when the obligation, other than loans or forbearance of money, goods or credits, is breached, the court may in its discretion impose an interest on the damages awarded. The interest imposed in the discretion of the court will be the prevailing legal interest prescribed by the Bangko Sentral ng Pilipinas. In contrast, Article 2209 of the Civil Code is applicable only to loans or forbearance of money, goods or credit which arise out of \"obligations consisting in the payment of a sum of money, and the debtor incurs in delay,\" and thus where there is a debtor-creditor relationship. Articles 2210 and 2211 refer to obligations that do not involve the payment of a sum of money and there is no debtor-creditor relationship. Moreover, the payment of interest in Article 2209 is mandatory, while the payment of interest in Articles 2210 and 2211 is discretionary on the court."
+      }
+    },
+    {
+      "id": "q-0714",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "A seller sues a buyer for the unpaid price of materials, attaching the sales invoices to the complaint. In its answer, the buyer admits the purchases and the existence of the invoices but states that it \"does not admit their due execution,\" without stating any facts and without verifying the denial under oath. At trial, the buyer argues that the invoices have no probative value because their genuineness and due execution were not proved. Is the buyer correct? Explain, citing Lara's Gifts & Decors v. Midtown Industrial Sales.",
+      "suggestedAnswer": {
+        "answer": "No. The invoices are actionable documents whose genuineness and due execution are deemed admitted, because the buyer did not specifically deny them under oath and set forth the facts it relies on.",
+        "legalBasis": "In Lara's Gifts v. Midtown, the Court applied Sections 7, 8 and 10 of Rule 8 of the 1997 Rules of Civil Procedure: when an action is founded on a written instrument attached to the pleading, its genuineness and due execution are deemed admitted unless the adverse party, under oath, specifically denies them and sets forth what it claims to be the facts. The Rules are no longer satisfied with mere denials, even if specific; they demand that the defendant manifest what it considers the true facts. The buyer's general denial amounted to an admission of the genuineness and due execution of the invoices.",
+        "application": "The buyer stated no facts and did not deny under oath, so the invoices stand as proof of the transactions; its claim that the goods were substandard, a claim of fraud, had to be proved by it and was not.",
+        "conclusion": "The buyer is wrong; the invoices are deemed admitted. **Bar trap:** for an actionable document, a bare denial, even one that says \"not admitted,\" is an admission unless it is under oath and states the facts."
+      },
+      "keyPoints": [
+        "Actionable document attached to the complaint (Rule 8, Sec. 7)",
+        "Genuineness and due execution deemed admitted unless specifically denied under oath (Sec. 8)",
+        "The denial must set forth the facts relied upon (Sec. 10)",
+        "A general denial amounts to an admission",
+        "Whoever alleges fraud (substandard goods) must prove it"
+      ],
+      "caseIds": [
+        "case-0065"
+      ],
+      "source": {
+        "caseTitle": "Lara's Gifts & Decors, Inc. v. Midtown Industrial Sales, Inc. (Decision)",
+        "grNumber": "G.R. No. 225433",
+        "url": "https://lawphil.net/judjuris/juri2019/aug2019/gr_225433_2019.html",
+        "part": "The Court's Ruling, admissibility of the sales invoices",
+        "excerpt": "In this case, petitioner did not state the facts or substance of the matters relied upon to support its denial of the due execution of the sales invoices. As held in Sy-Quia v. Marsman, \"the Rules require that besides specifying the allegations of fact not admitted, the answer should set forth the matters relied upon in support of the denial; so that, in effect, the Rules are no longer satisfied with mere denials, even if specific, but demand that defendant manifest what he considers to be the true facts.\" The purpose of the specific denial is to compel the defendant to specify the allegations which he or she intends to disprove and disclose the matters relied upon to support such denial, thereby limiting the issues and avoiding unnecessary delays and surprises. Petitioner's general denial amounts to an admission of the genuineness and due execution of the sales invoices."
+      }
+    },
+    {
+      "id": "q-0715",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "According to Lara's Gifts & Decors v. Midtown Industrial Sales (2019), when may interest, whether stipulated or legal, be compounded?",
+      "choices": {
+        "A": "Always, once the debtor is in default.",
+        "B": "Only when the court finds it equitable.",
+        "C": "Only when compounding is expressly agreed upon in writing by the parties or mandated by law or regulation.",
+        "D": "Only for loans from banks."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court said \"there should be no compounding of interest, whether stipulated or legal, unless compounding is expressly agreed upon in writing by the parties or mandated by law or regulation,\" citing Section 5 of the Usury Law, as amended. **A and B are wrong:** default or equity does not authorize compounding. **D is wrong:** no such limit. **Bar trap:** interest on accrued interest under Article 2212 from judicial demand is a different, legally mandated rule.",
+      "caseIds": [
+        "case-0065"
+      ],
+      "source": {
+        "caseTitle": "Lara's Gifts & Decors, Inc. v. Midtown Industrial Sales, Inc. (Decision)",
+        "grNumber": "G.R. No. 225433",
+        "url": "https://lawphil.net/judjuris/juri2019/aug2019/gr_225433_2019.html",
+        "part": "The Court's Ruling, imposition of legal interest (compounding)",
+        "excerpt": "Moreover, there should be no compounding of interest, whether stipulated or legal, unless compounding is expressly agreed upon in writing by the parties or mandated by law or regulation. Section 5 of the Usury Law, as amended, expressly provides that compounded interest \"shall not be reckoned, except by agreement.\""
+      }
+    },
+    {
+      "id": "q-0716",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Why did the Court in Lara's Gifts & Decors v. Midtown Industrial Sales hold the 24% interest stated in the sales invoices binding on the buyer?",
+      "choices": {
+        "A": "Because the buyer, doing business since 1990 and buying from the seller since 2004, could not claim to have been misled into agreeing to the rate expressly stated in the invoices, and a 24% rate has been held valid and not unconscionable.",
+        "B": "Because every interest rate stated in an invoice is binding regardless of its amount.",
+        "C": "Because the buyer signed a separate loan agreement.",
+        "D": "Because the legal rate at the time was 24%."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court said the buyer, \"which has been doing business since 1990 and has been purchasing various materials from respondent since 2004, cannot claim to have been misled into agreeing to the 24% interest rate which was expressly stated in the sales invoices,\" and that a 24% rate agreed upon is valid and not excessive and unconscionable. **B is wrong:** excessive or unconscionable rates may be reduced. **C is wrong:** the rate was in the invoices. **D is wrong:** the legal rate was 12%, then 6%. **Bar trap:** the parties' experience and the rate's reasonableness both mattered.",
+      "caseIds": [
+        "case-0065"
+      ],
+      "source": {
+        "caseTitle": "Lara's Gifts & Decors, Inc. v. Midtown Industrial Sales, Inc. (Decision)",
+        "grNumber": "G.R. No. 225433",
+        "url": "https://lawphil.net/judjuris/juri2019/aug2019/gr_225433_2019.html",
+        "part": "The Court's Ruling, validity of the 24% interest rate",
+        "excerpt": "In the present case, petitioner, which has been doing business since 1990 and has been purchasing various materials from respondent since 2004, cannot claim to have been misled into agreeing to the 24% interest rate which was expressly stated in the sales invoices. Besides, this Court has already ruled in several cases that an interest rate of 24% per annum agreed upon between the parties is valid and binding and not excessive and unconscionable."
+      }
+    },
+    {
+      "id": "q-0717",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "In Lara's Gifts & Decors v. Midtown Industrial Sales (2019), the Court held that the legal interest referred to in Article 2209 of the Civil Code is now",
+      "choices": {
+        "A": "fixed at 6% a year by the Civil Code and cannot be changed except by Congress.",
+        "B": "6% a year or as may be fixed by the Monetary Board of the Bangko Sentral ng Pilipinas pursuant to the Usury Law, as amended by P.D. No. 116.",
+        "C": "12% a year in all cases.",
+        "D": "the rate stipulated by the parties, even if none was agreed."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court held that P.D. No. 116 amended all laws prescribing the legal rate, including Article 2209, so \"the legal interest referred to in Article 2209 of the Civil Code is now 6% per annum or as may be fixed by the Monetary Board of the Bangko Sentral ng Pilipinas pursuant to the Usury Law, as amended by PD 116.\" **A is wrong:** P.D. 116 allowed the Monetary Board to set the rate. **C is wrong:** 12% applied only until June 30, 2013. **D is wrong:** legal interest applies when no rate was agreed. **Bar trap:** the legal rate can change by BSP circular.",
+      "caseIds": [
+        "case-0065"
+      ],
+      "source": {
+        "caseTitle": "Lara's Gifts & Decors, Inc. v. Midtown Industrial Sales, Inc. (Decision)",
+        "grNumber": "G.R. No. 225433",
+        "url": "https://lawphil.net/judjuris/juri2019/aug2019/gr_225433_2019.html",
+        "part": "The Court's Ruling, the legal interest rate in Article 2209 has been amended",
+        "excerpt": "Thus, the legal interest referred to in Article 2209 of the Civil Code is now 6% per annum or as may be fixed by the Monetary Board of the Bangko Sentral ng Pilipinas pursuant to the Usury Law, as amended by PD 116."
+      }
+    },
+    {
+      "id": "q-0718",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "In Lara's Gifts & Decors v. Midtown Industrial Sales, the buyer claimed the materials delivered were substandard. How did the Court treat this defense?",
+      "choices": {
+        "A": "As a claim of fraud that the buyer was bound to substantiate, which it failed to do, since the invoices showed the goods were received in good order.",
+        "B": "As a valid defense, since the seller did not prove the quality of the goods.",
+        "C": "As a ground to temper the buyer's liability under Article 1192.",
+        "D": "As a ground for set-off under Article 1283."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court said the buyer was \"in effect ... alleging fraud in the transactions, which petitioner is bound to substantiate,\" and the invoices stated it \"RECEIVED MERCHANDISE IN GOOD ORDER & CONDITION.\" **B is wrong:** the burden was on the buyer. **C and D are wrong:** having failed to prove its claim, the buyer could demand neither a tempering of liability nor an offset. **Bar trap:** whoever alleges fraud or mistake must prove it.",
+      "caseIds": [
+        "case-0065"
+      ],
+      "source": {
+        "caseTitle": "Lara's Gifts & Decors, Inc. v. Midtown Industrial Sales, Inc. (Decision)",
+        "grNumber": "G.R. No. 225433",
+        "url": "https://lawphil.net/judjuris/juri2019/aug2019/gr_225433_2019.html",
+        "part": "The Court's Ruling, default in the contractual obligations",
+        "excerpt": "In effect, petitioner is alleging fraud in the transactions, which petitioner is bound to substantiate. Whoever alleges fraud or mistake affecting a transaction must substantiate his allegation and has the burden of proof."
+      }
+    },
+    {
+      "id": "q-0719",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "In its August 28, 2019 Decision in Lara's Gifts & Decors v. Midtown Industrial Sales, from when did the Court make the 24% stipulated interest run?",
+      "choices": {
+        "A": "From the filing of the complaint on February 5, 2008, as the trial court had ruled.",
+        "B": "From the finality of the decision.",
+        "C": "From the date of the extrajudicial demand on January 22, 2008, until full payment.",
+        "D": "From the date of each purchase."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court held that \"[s]ince there was an extra judicial demand before the complaint was filed, interest on the amount due begins to run not from the filing of the complaint but from the date of such extrajudicial demand,\" so the principal \"shall earn the stipulated interest of 24% per annum from the date of extrajudicial demand on 22 January 2008 until full payment.\" **A is the trial court's ruling, which was modified. B and D are wrong:** neither is the reckoning point. **Bar trap:** the 2022 Resolution kept this point but deleted the separate award of legal interest on the 24% interest.",
+      "caseIds": [
+        "case-0065"
+      ],
+      "source": {
+        "caseTitle": "Lara's Gifts & Decors, Inc. v. Midtown Industrial Sales, Inc. (Decision)",
+        "grNumber": "G.R. No. 225433",
+        "url": "https://lawphil.net/judjuris/juri2019/aug2019/gr_225433_2019.html",
+        "part": "The Court's Ruling, application to the case and the disposition",
+        "excerpt": "Since there was an extra judicial demand before the complaint was filed, interest on the amount due begins to run not from the filing of the complaint but from the date of such extrajudicial demand. Thus, the unpaid principal obligation of ₱1,263,104.22 shall earn the stipulated interest of 24% per annum from the date of extrajudicial demand on 22 January 2008 until full payment."
       }
     }
   ]
