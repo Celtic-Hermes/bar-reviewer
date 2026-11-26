@@ -166,6 +166,21 @@
       "ruling": "The Court denied the petition. Whether the passenger was entitled to damages and attorney's fees requires a review of the evidence, a question of fact; a Rule 45 petition is limited to questions of law, and none of the exceptions applied. Both lower courts laid down the factual and legal bases for their awards. On interest, following Eastern Shipping Lines, the 6% legal interest runs not from the extrajudicial demand but from April 25, 2007, when the trial court rendered its judgment, since that is when the quantification of damages may be deemed reasonably ascertained; from the finality of the decision, 12% applies until full satisfaction, on all sums awarded.",
       "keyDoctrine": "For damages that cannot be established with reasonable certainty when demanded (such as moral and exemplary damages for breach of contract of carriage), the 6% legal interest runs from the date of the trial court's judgment, when the quantification of damages may be deemed reasonably ascertained, not from the extrajudicial demand; from finality, the higher rate applies until satisfaction. (The 12% rate was later lowered to 6% from July 1, 2013; check the current rate.) A Rule 45 petition raises only questions of law.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2009/oct2009/gr_188961_2009.html"
+    },
+    {
+      "id": "case-0059",
+      "status": "draft",
+      "name": "Padillo v. Court of Appeals, et al.",
+      "grNumber": "G.R. No. 119707",
+      "year": 2001,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "facts": "Veronica Padillo bought a lot and building in Lucena City covered by TCT No. T-9863, but Tomas Averia, Jr., who claimed the same property under an unregistered contract to sell and occupied it, refused to turn it over and filed several suits over it. In a registration case (M.C. No. 374-82), Padillo was declared the sole owner, a ruling affirmed up to the Supreme Court. Meanwhile, she had filed a separate action for declaratory relief and damages; the Court of Appeals, in a final decision in CA-G.R. SP No. 15356, ordered that action merely suspended, not dismissed, pending the registration case. The trial court later awarded Padillo ₱150,000 a year in unrealized income, ₱107,000 attorney's fees plus ₱1,000 per appearance and ₱10,000 litigation expenses, ₱50,000 moral and ₱20,000 exemplary damages. The Court of Appeals reversed on the ground of res judicata.",
+      "issue": "(1) Was the action for damages barred by res judicata? (2) Were the damages and attorney's fees awarded by the trial court proper?",
+      "ruling": "The Court granted the petition but reduced the awards. All the requisites of res judicata (bar by prior judgment) were present, but the Court of Appeals' final decision ordering the mere suspension of the damages suit had become the law of the case between the parties, even if erroneous, so Padillo could not be faulted for pursuing it. On damages: the claimed income of ₱150,000 a year was conjectural and speculative, since actual damages must be proved and cannot be presumed; she was entitled only to the unrealized rentals Averia admitted (₱800 a month), or ₱97,600 for the period he occupied the property, with legal interest from finality. Moral and exemplary damages were deleted: filing suits does not by itself show malice or bad faith, the law does not impose a penalty on the right to litigate, and the anxiety of being a party to a suit is not the kind that warrants moral damages. Attorney's fees, the exception and not the rule, were reduced to a reasonable ₱25,000, since they are not meant to enrich the winning party.",
+      "keyDoctrine": "Actual damages must be proved and cannot be presumed; testimony on expected income that is vague and unspecified is too speculative. No moral damages for filing suits without malice or bad faith, since no penalty is put on the right to litigate. Attorney's fees as damages (extraordinary concept, paid by the loser to the winner, Art. 2208) differ from attorney's fees in the ordinary concept (compensation paid by the client to his lawyer); they are the exception, must be justified and reasonable, and are not meant to enrich the winning party. The law of the case binds the same parties in the same case even if erroneous.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2001/nov2001/gr_119707_2001.html"
     }
   ],
   "questions": [
@@ -2698,6 +2713,237 @@
         "url": "https://lawphil.net/judjuris/juri2009/oct2009/gr_188961_2009.html",
         "part": "Resolution, the disposition",
         "excerpt": "Petitioner is ordered to PAY legal interest of 6% p.a. from the date of promulgation of the decision dated April 25, 2007 of the Regional Trial Court, Branch 59, Makati City and 12% p.a. from the time the decision of this Court attains finality, on all sums awarded until their full satisfaction."
+      }
+    },
+    {
+      "id": "q-0664",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Distinguish attorney's fees in their ordinary concept from attorney's fees in their extraordinary concept. In a suit where the plaintiff wins, may the court award her attorney's fees of ₱107,000 plus ₱1,000 per appearance and ₱10,000 litigation expenses simply because she prevailed? Explain, citing Padillo v. Court of Appeals.",
+      "suggestedAnswer": {
+        "answer": "In the ordinary concept, attorney's fees are the reasonable compensation a client pays his lawyer for legal services. In the extraordinary concept, they are awarded by the court as indemnity for damages, paid by the losing party to the prevailing party. They are not awarded every time a party wins, and an excessive award will be reduced.",
+        "legalBasis": "In Padillo v. CA, the Court held that the award of attorney's fees is the exception rather than the general rule; counsel's fees are not awarded every time a party prevails, because no premium should be placed on the right to litigate. Attorney's fees as part of damages are awarded only in the instances in Article 2208; the court must make findings of fact and law that bring the case within the exception, and in all cases the fees must be reasonable. They are not meant to enrich the winning party at the expense of the losing litigant.",
+        "application": "Winning the case is not enough. Even where the court finds it just and equitable to award attorney's fees, the amount must be reasonable. In Padillo, the Court found ₱107,000 plus ₱1,000 per appearance and ₱10,000 litigation expenses unreasonable and excessive, and reduced it to ₱25,000.",
+        "conclusion": "Not simply because she prevailed; and the amount awarded must be reasonable. **Bar trap:** the extraordinary concept goes to the litigant as damages and is the exception; the ordinary concept is between lawyer and client."
+      },
+      "keyPoints": [
+        "Ordinary concept: reasonable compensation paid by the client to the lawyer",
+        "Extraordinary concept: indemnity for damages paid by the losing party to the prevailing party",
+        "The exception, not the rule; not awarded every time a party prevails",
+        "Only in the cases in Art. 2208, with findings of fact and law; always reasonable",
+        "Not meant to enrich the winning party; reduced to ₱25,000 in Padillo"
+      ],
+      "caseIds": [
+        "case-0059"
+      ],
+      "source": {
+        "caseTitle": "Padillo v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 119707",
+        "url": "https://lawphil.net/judjuris/juri2001/nov2001/gr_119707_2001.html",
+        "part": "Decision, discussion of the award of attorney's fees",
+        "excerpt": "With respect to attorney's fees, the award thereof is the exception rather than the general rule; counsel's fees are not awarded every time a party prevails in a suit because of the policy that no premium should be placed on the right to litigate. Attorney's fees as part of damages are not the same as attorney's fees in the concept of the amount paid to a lawyer. In the ordinary sense, attorney's fees represent the reasonable compensation paid to a lawyer by his client for the legal services he has rendered to the latter, while in its extraordinary concept, they may be awarded by the court as indemnity for damages to be paid by the losing party to the prevailing party. Attorney's fees as part of damages is awarded only in the instances specified in Article 2208 of the Civil Code. As such, it is necessary for the court to make findings of facts and law that would bring the case within the exception and justify the grant of such award, and in all cases it must be reasonable. … Attorney's fees as part of damages is not meant to enrich the winning party at the expense of the losing litigant. Thus, it should be reasonably reduced to Twenty-Five Thousand Pesos (P25,000.00)."
+      }
+    },
+    {
+      "id": "q-0665",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "An owner kept out of her commercial lot and building for ten years testified that she could have earned ₱150,000 a year from it, and that the occupant had made millions from it, but gave no details on how such income could be earned. The occupant admitted that he had been paying the former owner a monthly rental of ₱800. How much should the owner recover as actual damages for the lost income? Explain, citing Padillo v. Court of Appeals.",
+      "suggestedAnswer": {
+        "answer": "She should recover only the unrealized rentals at the admitted rate of ₱800 a month for the period of occupancy, not the claimed ₱150,000 a year.",
+        "legalBasis": "In Padillo v. CA, the Court held the claimed ₱150,000 yearly income \"highly conjectural and speculative,\" since the owner did not detail how such income could be derived from the property. Actual, compensatory and consequential damages must be proved and cannot be presumed; if the proof is flimsy and insufficient, no damages will be allowed. The only unrealized income she was entitled to was the monthly rental the occupant admitted, ₱800 a month, for the period he occupied the property.",
+        "application": "Her bare testimony is too vague and unspecified to support ₱150,000 a year. But the occupant's own admission of the ₱800 monthly rental is competent proof of the loss. In Padillo, that came to ₱97,600 for January 1982 to February 1992, with legal interest from the finality of the decision.",
+        "conclusion": "Only the admitted rentals, with legal interest from finality. **Bar trap:** actual damages are never presumed; a claimant's estimate without supporting details fails, but an admitted figure can still support a smaller award."
+      },
+      "keyPoints": [
+        "Actual damages must be proved and cannot be presumed",
+        "Vague, unspecified testimony on expected income is conjectural and speculative",
+        "Flimsy or insufficient proof: no damages allowed",
+        "The admitted rental (₱800 a month) is the measure of the lost income",
+        "₱97,600 for the period of occupancy, with legal interest from finality"
+      ],
+      "caseIds": [
+        "case-0059"
+      ],
+      "source": {
+        "caseTitle": "Padillo v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 119707",
+        "url": "https://lawphil.net/judjuris/juri2001/nov2001/gr_119707_2001.html",
+        "part": "Decision, discussion of the unrealized income",
+        "excerpt": "Concerning the alleged forgone income of One Hundred Fifty Thousand Pesos (P150,000.00) per year since 1982 as testified on by petitioner as the income she could have realized had possession of the property not been withheld from her by respondent Averia, we consider such amount of expected profit highly conjectural and speculative. With an allegation that respondent made millions for the improper use and exploitation of the property, petitioner's testimony regarding the matter of unrealized income is sadly lacking of the requisite details on how such huge amount of income could be made possible. Petitioner did not detail out how such huge amount of income could have been derived from the use of the disputed lot and building. Well-entrenched is the doctrine that actual, compensatory and consequential damages must be proved, and cannot be presumed. If the proof adduced thereon is flimsy and insufficient, as in this case, no damages will be allowed. Verily, the testimonial evidence on alleged unrealized income earlier referred to is not enough to warrant the award of damages. It is too vague and unspecified to induce faith and reliance. The only amount of unrealized income petitioner should be entitled to is the unrealized monthly rentals which respondent Averia admits to be in the amount of Eight Hundred Pesos (P800.00) a month"
+      }
+    },
+    {
+      "id": "q-0666",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "In an earlier certiorari case between the same parties, the Court of Appeals, instead of dismissing the plaintiff's damages suit for litis pendentia, ordered it merely suspended until a related registration case was finished. No appeal was taken, and that ruling became final. After the plaintiff won the damages suit, the Court of Appeals reversed it on the ground of res judicata, since the requisites were present. Was the reversal correct? Distinguish the law of the case from res judicata, citing Padillo v. Court of Appeals.",
+      "suggestedAnswer": {
+        "answer": "No. Although all the requisites of res judicata were present, the final ruling ordering only the suspension of the damages suit had become the law of the case between the parties, even if erroneous, so the plaintiff could not be faulted for continuing with it.",
+        "legalBasis": "In Padillo v. CA, the Court explained that the law of the case means that whatever is once irrevocably established as the controlling legal rule or decision between the same parties in the same case continues to be the law of the case, whether correct or not, so long as the facts remain the same. It differs from res judicata: the law of the case does not have the finality of res judicata and applies only to that one case, whereas res judicata forecloses parties or privies in one case by what has been done in another case. Since no appeal was taken from the decision ordering suspension instead of dismissal, it became final and may no longer be disturbed.",
+        "application": "The final ruling of the Court of Appeals, in the same litigation between the same parties, allowed the damages suit to proceed after the registration case. The plaintiff yielded to it in good faith, so the later reversal on the ground of res judicata was wrong.",
+        "conclusion": "The reversal was incorrect. **Bar trap:** the presence of all four requisites of res judicata does not end the inquiry; a final, even erroneous, ruling in the same case binds the parties as the law of the case."
+      },
+      "keyPoints": [
+        "Law of the case: what is irrevocably established between the same parties in the same case stays the law of the case, even if wrong",
+        "It applies only to that one case and lacks the finality of res judicata",
+        "Res judicata binds parties in one case by what was done in another case",
+        "The unappealed ruling ordering suspension became final and binding",
+        "The plaintiff could not be faulted for pursuing her claim in good faith"
+      ],
+      "caseIds": [
+        "case-0059"
+      ],
+      "source": {
+        "caseTitle": "Padillo v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 119707",
+        "url": "https://lawphil.net/judjuris/juri2001/nov2001/gr_119707_2001.html",
+        "part": "Decision, discussion of res judicata and the law of the case",
+        "excerpt": "However, a different conclusion is warranted under the principle of law of the case. Law of the case has been defined as the opinion delivered on a former appeal. More specifically, it means that whatever is once irrevocably established as the controlling legal rule or decision between the same parties in the same case continues to be the law of the case, whether correct on general principles or not, so long as the facts on which such decision was predicated continue to be the facts of the case before the court. … The appellate court apparently overlooked the significance of this principle called the law of the case which is totally different from the concept of res judicata. Law of the case does not have the finality of the doctrine of res judicata, and applies only to that one case, whereas res judicata forecloses parties or privies in one case by what has been done in another case. … Thus, even if erroneous, the ruling of the Court of Appeals in CA-G.R. SP No. 15356 has become the law of the case as between herein petitioner Padillo and respondent Averia, and may no longer be disturbed or modified."
+      }
+    },
+    {
+      "id": "q-0667",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Under Padillo v. Court of Appeals, attorney's fees in their extraordinary concept refer to",
+      "choices": {
+        "A": "the reasonable compensation paid by a client to his lawyer for legal services.",
+        "B": "the docket fees paid to the court.",
+        "C": "an indemnity for damages awarded by the court, to be paid by the losing party to the prevailing party.",
+        "D": "the lawyer's contingent fee agreed upon in writing."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court said that \"in its extraordinary concept, they may be awarded by the court as indemnity for damages to be paid by the losing party to the prevailing party.\" **A is wrong:** that is the ordinary concept. **B is wrong:** docket fees are judicial costs. **D is wrong:** a contingent fee is part of the lawyer-client contract (the ordinary concept). **Bar trap:** the two concepts have different payors and payees.",
+      "caseIds": [
+        "case-0059"
+      ],
+      "source": {
+        "caseTitle": "Padillo v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 119707",
+        "url": "https://lawphil.net/judjuris/juri2001/nov2001/gr_119707_2001.html",
+        "part": "Decision, discussion of the award of attorney's fees",
+        "excerpt": "In the ordinary sense, attorney's fees represent the reasonable compensation paid to a lawyer by his client for the legal services he has rendered to the latter, while in its extraordinary concept, they may be awarded by the court as indemnity for damages to be paid by the losing party to the prevailing party."
+      }
+    },
+    {
+      "id": "q-0668",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "In Padillo v. Court of Appeals, why are counsel's fees not awarded every time a party prevails in a suit?",
+      "choices": {
+        "A": "Because of the policy that no premium should be placed on the right to litigate.",
+        "B": "Because attorney's fees are always paid by the client.",
+        "C": "Because the Rules of Court prohibit them.",
+        "D": "Because they can be awarded only in criminal cases."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court said: \"counsel's fees are not awarded every time a party prevails in a suit because of the policy that no premium should be placed on the right to litigate.\" **B is wrong:** in the extraordinary concept the losing party pays. **C and D are wrong:** Article 2208 allows them in the cases it lists, civil ones included. **Bar trap:** the award is the exception, not the rule.",
+      "caseIds": [
+        "case-0059"
+      ],
+      "source": {
+        "caseTitle": "Padillo v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 119707",
+        "url": "https://lawphil.net/judjuris/juri2001/nov2001/gr_119707_2001.html",
+        "part": "Decision, discussion of the award of attorney's fees",
+        "excerpt": "With respect to attorney's fees, the award thereof is the exception rather than the general rule; counsel's fees are not awarded every time a party prevails in a suit because of the policy that no premium should be placed on the right to litigate."
+      }
+    },
+    {
+      "id": "q-0669",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "A defendant filed a separate suit over the same property while a related case was pending; the suit was dismissed. Under Padillo v. Court of Appeals, does that alone justify moral damages against him?",
+      "choices": {
+        "A": "Yes, because every dismissed suit is presumed malicious.",
+        "B": "Yes, because the plaintiff suffered anxiety from the litigation.",
+        "C": "Yes, if the plaintiff hired a lawyer.",
+        "D": "No, because the law could not have meant to impose a penalty on the right to litigate; error alone is not a ground for moral damages."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The Court held that filing a suit that was later dismissed \"does not per se make such actions or appeals wrongful,\" since \"[t]he law could not have meant to impose a penalty on the right to litigate,\" and \"error alone is not a ground for moral damages.\" **A is wrong:** malice or bad faith is not presumed. **B is wrong:** the anxiety usually caused to a party hauled into court is not the kind that warrants moral damages. **C is wrong:** hiring a lawyer is irrelevant. **Bar trap:** moral damages for litigation need malice or bad faith.",
+      "caseIds": [
+        "case-0059"
+      ],
+      "source": {
+        "caseTitle": "Padillo v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 119707",
+        "url": "https://lawphil.net/judjuris/juri2001/nov2001/gr_119707_2001.html",
+        "part": "Decision, discussion of moral and exemplary damages",
+        "excerpt": "That respondent Averia instituted a separate suit which was subsequently dismissed and all actions or appeals taken by respondent Averia relative to M.C. No. 374-82 does not per se make such actions or appeals wrongful and subject respondent Averia to payment of moral damages. The law could not have meant to impose a penalty on the right to litigate. Such right is so precious that moral damages may not be charged on those who may exercise it erroneously. One may have erred, but error alone is not a ground for moral damages."
+      }
+    },
+    {
+      "id": "q-0670",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "According to Padillo v. Court of Appeals, which of the following is NOT a requisite of res judicata as a bar by prior judgment?",
+      "choices": {
+        "A": "The former judgment must be final.",
+        "B": "Both actions must have been filed in the same court.",
+        "C": "It must be a judgment or order on the merits.",
+        "D": "There must be identity of parties, subject matter and cause of action."
+      },
+      "correct": "B",
+      "explanation": "**B is correct**, because it is not a requisite. The four requisites listed are: (1) the former judgment must be final; (2) it must have been rendered by a court having jurisdiction over the subject matter and the parties; (3) it must be a judgment or order on the merits; and (4) identity of parties, subject matter and cause of action. **A, C and D are wrong:** each is a requisite. **Bar trap:** jurisdiction of the first court is required, not that the second case be in the same court.",
+      "caseIds": [
+        "case-0059"
+      ],
+      "source": {
+        "caseTitle": "Padillo v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 119707",
+        "url": "https://lawphil.net/judjuris/juri2001/nov2001/gr_119707_2001.html",
+        "part": "Decision, discussion of res judicata",
+        "excerpt": "1. The former judgment must be final; 2. It must have been rendered by a court having jurisdiction over the subject matter and the parties; 3. It must be a judgment or order on the merits; and 4. There must be between the first and second action identity of parties, identity of subject matter, and identity of cause of action."
+      }
+    },
+    {
+      "id": "q-0671",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "What did the Court finally award in Padillo v. Court of Appeals?",
+      "choices": {
+        "A": "₱150,000 a year in unrealized income, moral and exemplary damages, and ₱107,000 attorney's fees.",
+        "B": "Nothing, because the claim was barred by res judicata.",
+        "C": "₱97,600 as unrealized rentals with legal interest from the finality of the decision until fully paid, and ₱25,000 attorney's fees.",
+        "D": "₱97,600 as unrealized rentals with interest from 1982, plus ₱50,000 moral damages."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court ordered the respondent to pay \"(a) Ninety-Seven Thousand Six Hundred Pesos (P97,600.00) as unrealized rentals which shall earn interest at the legal rate from the finality of the this decision until fully paid, and (b) Twenty-Five Thousand Pesos (P25,000.00) as attorney's fees.\" **A is the trial court's award, which was reduced. B is wrong:** the law of the case allowed the claim. **D is wrong:** interest runs from finality, and moral damages were deleted. **Bar trap:** a winning party may still receive far less than the trial court gave.",
+      "caseIds": [
+        "case-0059"
+      ],
+      "source": {
+        "caseTitle": "Padillo v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 119707",
+        "url": "https://lawphil.net/judjuris/juri2001/nov2001/gr_119707_2001.html",
+        "part": "Decision, the disposition",
+        "excerpt": "WHEREFORE, the instant petition is GRANTED. The Decision of the Court of Appeals dated November 22, 1994 in CA-G.R. CV No. 40142 is REVERSED and SET ASIDE and another in its stead is hereby rendered ORDERING respondent Tomas Averia, Jr., to pay petitioner Veronica Padillo the amounts of (a) Ninety-Seven Thousand Six Hundred Pesos (P97,600.00) as unrealized rentals which shall earn interest at the legal rate from the finality of the this decision until fully paid, and (b) Twenty-Five Thousand Pesos (P25,000.00) as attorney's fees."
       }
     }
   ]
