@@ -376,6 +376,21 @@
       "ruling": "The trial court's decision was reinstated with reduced amounts. Under Article 2189, provinces, cities and municipalities are liable for death or injuries caused by the defective condition of roads, streets and other public works under their control or supervision; the road need not belong to them. The city charter gave the city supervision over the sidewalk, exercised through the City Engineer, whose salary came mainly from the city and who directed the maintenance personnel. Actual damages for medical expenses were limited to the ₱8,053.65 proved, since a court cannot rely on speculation or guesswork. Moral damages may be awarded without proof of pecuniary loss; the Court listed as considerations that the defendant's acts be the proximate cause, that there be satisfactory proof of the factual basis, and that the case be one enumerated in the Civil Code. Her physical suffering and mental anguish were proved, but ₱150,000 was excessive since her handicap was not permanent; it was reduced to ₱20,000. Exemplary damages were proper as a warning to cities to cover open manholes, but reduced to ₱10,000. Execution pending appeal had been premature.",
       "keyDoctrine": "Under Article 2189, a province, city or municipality is liable for injuries caused by the defective condition of roads, streets, bridges, public buildings and other public works under its control or supervision, even if it does not own them. Actual damages are limited to the amount proved. Moral damages need no proof of pecuniary loss, but the defendant's act must be the proximate cause, the factual basis must be satisfactorily proved, and the case must be one enumerated in the Civil Code; the amount must not be excessive.",
       "sourceUrl": "https://lawphil.net/judjuris/juri1989/mar1989/gr_61516_1989.html"
+    },
+    {
+      "id": "case-0073",
+      "status": "draft",
+      "name": "Filinvest Credit Corporation v. Mendez",
+      "grNumber": "G.R. No. L-66419",
+      "year": 1987,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "facts": "Ivan Mendez bought a Ford Cortina on installment, secured by a promissory note and chattel mortgage assigned to Filinvest Credit Corporation. He missed the February, March and April 1976 installments; the check he gave to cover them bounced, and Filinvest sued for replevin and the balance under the acceleration clause. The check later cleared on redeposit, but the court's seizure order was carried out and the car was taken from Mendez's house. Filinvest released the car after he paid the April to June installments and ₱1,894.80 repossession expenses, and it moved to dismiss its case. Mendez then sued Filinvest, claiming the seizure was illegal and that he was humiliated before a visitor and the people at a seminar. The trial court ordered Filinvest to return the repossession expenses and to pay ₱80,000 moral damages and attorney's fees; the appellate court affirmed.",
+      "issue": "Is Mendez entitled to the return of the repossession expenses, moral damages and attorney's fees?",
+      "ruling": "No; the complaint was dismissed. A check produces the effect of payment only when cashed (Art. 1249), so the bounced check did not cure the default, and Filinvest had a valid cause of action when it sued. The repossession expenses were for Mendez's account, since he should have surrendered the car upon valid demand. There was no basis for attorney's fees: they are improper on the sole basis of an adverse decision or where the party acted in good faith. Moral damages cannot be awarded in the absence of a wrongful act or omission, fraud or bad faith; when an action is filed in good faith there should be no penalty on the right to litigate, and error alone is not a ground for moral damages. Filinvest's willingness to release the car on payment of only the overdue installments and its voluntary dismissal of its case showed a lack of fraud or bad faith, and the car was in fact seized at Mendez's residence, not before his visitor.",
+      "keyDoctrine": "Moral damages cannot be awarded in the absence of a wrongful act or omission, or of fraud or bad faith; the exercise of a right within legal bounds, and an action filed in good faith, do not give rise to moral damages, since there should be no penalty on the right to litigate, and error alone is not a ground for them. Attorney's fees are not awarded on the sole basis of an adverse decision. A check produces the effect of payment only when cashed (Art. 1249).",
+      "sourceUrl": "https://lawphil.net/judjuris/juri1987/jul1987/gr_l-66419_1987.html"
     }
   ],
   "questions": [
@@ -6138,6 +6153,236 @@
         "url": "https://lawphil.net/judjuris/juri1989/mar1989/gr_61516_1989.html",
         "part": "Decision, the disposition",
         "excerpt": "(1) Ordering the defendant City of Dagupan to pay the plaintiff actual damages in the amount of P 15,924 (namely P 8,054.00 as hospital, medical and other expenses; P 7,420.00 as lost income for one (1) year and P 450.00 as bonus); P 20,000.00 as moral damages and P 10,000.00 as exemplary damages."
+      }
+    },
+    {
+      "id": "q-0776",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "A car buyer fell three months behind on his installments and paid with a check that bounced. The financing company sued for replevin and seized the car under a court order. When the buyer pleaded, the company released the car upon payment of only the overdue installments and repossession expenses, and voluntarily dismissed its case. The buyer then sued for moral damages for his humiliation. Is he entitled to them? Explain, citing Filinvest Credit Corporation v. Mendez.",
+      "suggestedAnswer": {
+        "answer": "No. Moral damages cannot be awarded absent a wrongful act or omission, fraud or bad faith, and the company merely exercised its rights in good faith.",
+        "legalBasis": "In Filinvest v. Mendez, the Court held: \"The rule is settled that moral damages cannot be awarded in the absence of a wrongful act or omission or fraud or bad faith.\" \"When the action is filed in good faith there should be no penalty on the right to litigate. ... The petitioner may have erred but error alone is not a ground for moral damages.\" The company's willingness to release the car upon payment of only the overdue installments, instead of the whole balance, and its voluntary dismissal of its case \"indicates lack of fraud or bad faith.\"",
+        "application": "The buyer was himself at fault: he was three months behind and issued a bouncing check. The company used a legal remedy, a court seizure order, and acted leniently afterwards. In the case, the claimed humiliation was also disproved: the car was seized at the buyer's house, not in front of his visitor.",
+        "conclusion": "No moral damages. **Bar trap:** being sued, or losing property under a lawful court process, is not a wrongful act; the exercise of a right within legal bounds does not give rise to moral damages."
+      },
+      "keyPoints": [
+        "No moral damages without a wrongful act or omission, fraud or bad faith",
+        "An action filed in good faith: no penalty on the right to litigate",
+        "Error alone is not a ground for moral damages",
+        "Release on payment of only overdue installments and voluntary dismissal show good faith",
+        "The buyer was in default and issued a bouncing check"
+      ],
+      "caseIds": [
+        "case-0073"
+      ],
+      "source": {
+        "caseTitle": "Filinvest Credit Corporation v. Mendez",
+        "grNumber": "G.R. No. L-66419",
+        "url": "https://lawphil.net/judjuris/juri1987/jul1987/gr_l-66419_1987.html",
+        "part": "Decision, discussion of moral damages",
+        "excerpt": "The rule is settled that moral damages cannot be awarded in the absence of a wrongful act or omission or fraud or bad faith. (R & B Surety & Insurance Co., v. Intermediate Appellate Court, 129 SCRA 736; and Siasat v. Intermediate Appellate Court, 139 SCRA 238). When the action is filed in good faith there should be no penalty on the right to litigate. (Expiritu v. Court of Appeals, 137 SCRA 50). The petitioner may have erred but error alone is not a ground for moral damages. … The willingness of the petitioner to allow the respondent to pay only the unpaid installments for April, May, and June instead of the total outstanding balance and to release the car as well as its voluntary motion to dismiss the case indicates lack of fraud or bad faith on the part of the petitioner. The private respondent was not without fault. He was three months behind in his payments and he issued a bouncing check."
+      }
+    },
+    {
+      "id": "q-0777",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "A debtor in default on installments delivered a check to cover them, but it bounced; the creditor sued the next week, and the check cleared on redeposit a few days later. The debtor argues that (a) the creditor had no cause of action since the check eventually cleared, and (b) the creditor must refund the repossession expenses he paid to get his car back. Rule on both arguments, citing Filinvest Credit Corporation v. Mendez.",
+      "suggestedAnswer": {
+        "answer": "Both arguments fail. (a) The bounced check did not cure the default, so the creditor had a valid cause of action when it sued. (b) The repossession expenses are for the debtor's account, since he should have surrendered the car on valid demand.",
+        "legalBasis": "In Filinvest v. Mendez, the Court held that the remittance of the check \"could not have cured the defaults in payment because the check bounced when it was presented for payment,\" citing Article 1249: mercantile documents \"shall produce the effect of payment only when they have been cashed, or when through the fault of the creditor they have been impaired.\" The creditor had a valid cause of action and sued for the balance under the acceleration clause. As to the expenses, \"the repossession expenses must be for the account of the respondents whose duty was to immediately surrender the car upon valid demand and thereby prevent the necessity of the petitioner's having to spend in order to repossess it.\"",
+        "application": "When the creditor sued, the check had bounced and the default continued; its later clearing did not wipe out the basis of the suit. The debtor's failure to surrender the car caused the expenses.",
+        "conclusion": "Valid cause of action; no refund. **Bar trap:** delivery of a check is not payment until the check is cashed."
+      },
+      "keyPoints": [
+        "A check produces the effect of payment only when cashed (Art. 1249)",
+        "The bounced check did not cure the default",
+        "The creditor had a valid cause of action when it sued",
+        "Later clearing did not wipe out the basis of the suit",
+        "Repossession expenses are for the debtor who failed to surrender the car"
+      ],
+      "caseIds": [
+        "case-0073"
+      ],
+      "source": {
+        "caseTitle": "Filinvest Credit Corporation v. Mendez",
+        "grNumber": "G.R. No. L-66419",
+        "url": "https://lawphil.net/judjuris/juri1987/jul1987/gr_l-66419_1987.html",
+        "part": "Decision, discussion of the effect of the bounced check and the repossession expenses",
+        "excerpt": "The remittance of the PVB check on May 3, 1976 could not have cured the defaults in payment because the check bounced when it was presented for payment. The respondent's account had no funds at the time to back up the check he used as payment. … The delivery of promissory notes payable to order, or bills of exchange or other mercantile documents shall produce the effect of payment only when they have been cashed, or when through the fault of the creditor they have been impaired. … Insofar as the P1,894.80 are concerned, the petitioner is correct that the repossession expenses must be for the account of the respondents whose duty was to immediately surrender the car upon valid demand and thereby prevent the necessity of the petitioner's having to spend in order to repossess it."
+      }
+    },
+    {
+      "id": "q-0778",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "When may attorney's fees not be awarded to a winning party? Explain, citing the rulings referred to in Filinvest Credit Corporation v. Mendez.",
+      "suggestedAnswer": {
+        "answer": "Attorney's fees are improper (1) on the sole basis of an adverse decision against the other party, (2) where the losing party prosecuted its cause of action in good faith, even if the action was declared unfounded, or (3) in the absence of clear proof that the action was intended merely to prejudice the other party.",
+        "legalBasis": "In Filinvest v. Mendez, the Court accepted the argument that, according to its decisions, \"an award of attorney's fees is improper on the sole basis of an adverse decision (Ramos v. Ramos, 61 SCRA 284), or if one considers the good faith of parties in prosecuting a cause of action though declared to be unfounded (Salao v. Salao, 70 SCRA 65), or in the absence of clear proof that an action was intended merely to prejudice the other party (Mercader v. Manila Polo Club ...).\" It held that \"[t]he records sustain the contention that there is no basis for entitlement to attorney's fees.\"",
+        "application": "The financing company had a valid cause of action and acted in good faith, so the award of attorney's fees against it was deleted along with the moral damages.",
+        "conclusion": "No attorney's fees merely for winning, or against a party in good faith. **Bar trap:** attorney's fees as damages are the exception; they need a basis under Article 2208, not just a favorable judgment."
+      },
+      "keyPoints": [
+        "Not on the sole basis of an adverse decision (Ramos v. Ramos)",
+        "Not against a party who litigated in good faith, though its action was unfounded (Salao v. Salao)",
+        "Not without clear proof that the action was meant merely to prejudice (Mercader v. Manila Polo Club)",
+        "No basis for attorney's fees in the case"
+      ],
+      "caseIds": [
+        "case-0073"
+      ],
+      "source": {
+        "caseTitle": "Filinvest Credit Corporation v. Mendez",
+        "grNumber": "G.R. No. L-66419",
+        "url": "https://lawphil.net/judjuris/juri1987/jul1987/gr_l-66419_1987.html",
+        "part": "Decision, discussion of attorney's fees",
+        "excerpt": "The petitioner also questions the award of attorney's fees. It asserts that according to decisions of this Court, an award of attorney's fees is improper on the sole basis of an adverse decision (Ramos v. Ramos, 61 SCRA 284), or if one considers the good faith of parties in prosecuting a cause of action though declared to be unfounded (Salao v. Salao, 70 SCRA 65), or in the absence of clear proof that an action was intended merely to prejudice the other party (Mercader v. Manila Polo Club, L-8373, September 28, 1956). The records sustain the contention that there is no basis for entitlement to attorney's fees."
+      }
+    },
+    {
+      "id": "q-0779",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "According to Filinvest Credit Corporation v. Mendez, moral damages cannot be awarded",
+      "choices": {
+        "A": "in the absence of a wrongful act or omission or fraud or bad faith.",
+        "B": "unless the plaintiff is hospitalized.",
+        "C": "in any case involving a contract.",
+        "D": "unless actual damages exceed ₱10,000."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court said: \"The rule is settled that moral damages cannot be awarded in the absence of a wrongful act or omission or fraud or bad faith.\" **B is wrong:** hospitalization is not a requirement. **C is wrong:** moral damages may be awarded in contracts in proper cases (e.g., bad faith). **D is wrong:** no such threshold. **Bar trap:** the claimant's own default weighs against a claim of wrong by the creditor.",
+      "caseIds": [
+        "case-0073"
+      ],
+      "source": {
+        "caseTitle": "Filinvest Credit Corporation v. Mendez",
+        "grNumber": "G.R. No. L-66419",
+        "url": "https://lawphil.net/judjuris/juri1987/jul1987/gr_l-66419_1987.html",
+        "part": "Decision, discussion of moral damages",
+        "excerpt": "The rule is settled that moral damages cannot be awarded in the absence of a wrongful act or omission or fraud or bad faith."
+      }
+    },
+    {
+      "id": "q-0780",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "In Filinvest Credit Corporation v. Mendez, which circumstance did the Court cite as indicating the creditor's lack of fraud or bad faith?",
+      "choices": {
+        "A": "It refused to release the car until the whole balance was paid.",
+        "B": "It seized the car without a court order.",
+        "C": "It allowed the debtor to pay only the unpaid April, May and June installments instead of the total outstanding balance, released the car, and voluntarily moved to dismiss its case.",
+        "D": "It charged no repossession expenses."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court said that \"[t]he willingness of the petitioner to allow the respondent to pay only the unpaid installments for April, May, and June instead of the total outstanding balance and to release the car as well as its voluntary motion to dismiss the case indicates lack of fraud or bad faith.\" **A is wrong:** it relented. **B is wrong:** it acted under a court seizure order. **D is wrong:** it did charge expenses, which were proper. **Bar trap:** lenient conduct after a lawful remedy supports good faith.",
+      "caseIds": [
+        "case-0073"
+      ],
+      "source": {
+        "caseTitle": "Filinvest Credit Corporation v. Mendez",
+        "grNumber": "G.R. No. L-66419",
+        "url": "https://lawphil.net/judjuris/juri1987/jul1987/gr_l-66419_1987.html",
+        "part": "Decision, discussion of moral damages",
+        "excerpt": "The willingness of the petitioner to allow the respondent to pay only the unpaid installments for April, May, and June instead of the total outstanding balance and to release the car as well as its voluntary motion to dismiss the case indicates lack of fraud or bad faith on the part of the petitioner."
+      }
+    },
+    {
+      "id": "q-0781",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Under Article 1249 of the Civil Code, as applied in Filinvest Credit Corporation v. Mendez, the delivery of a check produces the effect of payment",
+      "choices": {
+        "A": "upon its delivery to the creditor.",
+        "B": "only when it has been cashed, or when through the fault of the creditor it has been impaired.",
+        "C": "upon its deposit by the creditor.",
+        "D": "when the creditor accepts it without objection."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court quoted Article 1249: mercantile documents \"shall produce the effect of payment only when they have been cashed, or when through the fault of the creditor they have been impaired,\" so the bounced check \"could not have cured the defaults.\" **A, C and D are wrong:** delivery, deposit or acceptance is not payment. **Bar trap:** the later clearing of a redeposited check did not erase the default existing when suit was filed.",
+      "caseIds": [
+        "case-0073"
+      ],
+      "source": {
+        "caseTitle": "Filinvest Credit Corporation v. Mendez",
+        "grNumber": "G.R. No. L-66419",
+        "url": "https://lawphil.net/judjuris/juri1987/jul1987/gr_l-66419_1987.html",
+        "part": "Decision, discussion of the effect of the bounced check",
+        "excerpt": "The delivery of promissory notes payable to order, or bills of exchange or other mercantile documents shall produce the effect of payment only when they have been cashed, or when through the fault of the creditor they have been impaired."
+      }
+    },
+    {
+      "id": "q-0782",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "In Filinvest Credit Corporation v. Mendez, the buyer claimed he was humiliated because his car was seized in front of his visitor and seminar attendees. How did the Court treat this claim?",
+      "choices": {
+        "A": "It found the claim proved and awarded moral damages.",
+        "B": "It presumed the humiliation from the seizure.",
+        "C": "It held that humiliation is irrelevant to moral damages.",
+        "D": "It found the claim untrue, since the testimony of the buyer's own driver showed the car was seized at the buyer's residence while the driver was cleaning it."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The Court said \"[t]he testimony, however, of the driver of the respondent shows that the car was seized at the residence of the respondent while the said driver was cleaning the same. It is, therefore, not true that the respondent was humiliated and embarrassed before his visitor.\" **A and B are wrong:** the claim was disproved, and moral damages are not presumed. **C is wrong:** social humiliation is a moral injury, but it must be proved. **Bar trap:** the claimant's own witnesses can defeat his claim of injury.",
+      "caseIds": [
+        "case-0073"
+      ],
+      "source": {
+        "caseTitle": "Filinvest Credit Corporation v. Mendez",
+        "grNumber": "G.R. No. L-66419",
+        "url": "https://lawphil.net/judjuris/juri1987/jul1987/gr_l-66419_1987.html",
+        "part": "Decision, discussion of moral damages (the claimed humiliation)",
+        "excerpt": "The testimony, however, of the driver of the respondent shows that the car was seized at the residence of the respondent while the said driver was cleaning the same. It is, therefore, not true that the respondent was humiliated and embarrassed before his visitor and among those attending the seminar,"
+      }
+    },
+    {
+      "id": "q-0783",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "What was the result in Filinvest Credit Corporation v. Mendez?",
+      "choices": {
+        "A": "The award of ₱80,000 moral damages was reduced to ₱20,000.",
+        "B": "The financing company was ordered to refund the repossession expenses only.",
+        "C": "The decisions below were reversed and set aside, and the buyer's complaint was dismissed.",
+        "D": "The case was remanded to determine the validity of the acceleration clause."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court ruled: \"the petition is hereby GRANTED. The decisions of the trial court and the Intermediate Appellate Court are REVERSED and SET ASIDE. The complaint of the respondent is DISMISSED.\" **A and B are wrong:** no damages or refund were due. **D is wrong:** the dismissal of the creditor's case made the acceleration clause issue moot and academic. **Bar trap:** a voluntarily dismissed collection case can moot side issues.",
+      "caseIds": [
+        "case-0073"
+      ],
+      "source": {
+        "caseTitle": "Filinvest Credit Corporation v. Mendez",
+        "grNumber": "G.R. No. L-66419",
+        "url": "https://lawphil.net/judjuris/juri1987/jul1987/gr_l-66419_1987.html",
+        "part": "Decision, the disposition",
+        "excerpt": "WHEREFORE, the petition is hereby GRANTED. The decisions of the trial court and the Intermediate Appellate Court are REVERSED and SET ASIDE. The complaint of the respondent is DISMISSED."
       }
     }
   ]
