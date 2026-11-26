@@ -23,6 +23,8 @@ Rules:
 - Every answer must rest on a specific Philippine law, rule or Supreme Court decision. Name it in "basis": the law and section (e.g. "Rules of Court, Rule 102, Sec. 3") or the case with its G.R. number and date (e.g. "Vivares v. St. Theresa's College, G.R. No. 202666, September 29, 2014"). Never invent a case, G.R. number or section. If you are not sure of one, leave the question out.
 - If a rule was amended or the point is disputed, say so in the answer.
 - No section numbers or hints of the answer inside the question itself.
+- Write like the real Philippine Bar Exam. If this notebook has past Bar questions, follow how they tell the facts, what they ask and the traps they set, but with new facts and your own wording (never copy or reword a past question). If it has none, just write clear bar-style fact patterns and don't claim they copy the Bar.
+- Each question may have one fair trap (an exception that looks like the rule, one fact that changes the result, a deadline that matters). There must still be one clear right answer, and the explanation (essay: the conclusion) must say "**Bar trap:**" and how to avoid it.
 
 Answer with ONLY a JSON array (no text before or after it, no ``` marks). Each item is one of these three shapes:
 
