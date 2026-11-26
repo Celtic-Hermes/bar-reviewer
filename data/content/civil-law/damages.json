@@ -31,6 +31,21 @@
       "ruling": "The Court affirmed the conviction with modifications. The eyewitness's failure to react was understandable, since people react differently to startling events, and minor discrepancies strengthen rather than destroy credibility. Alibi failed against positive identification, especially as it was not shown to be physically impossible for the accused to be at the scene. Treachery was present. On damages, the death indemnity was increased to ₱50,000, and the Court awarded loss of earning capacity: following People v. Dizon, documentary evidence is the rule, but testimony suffices when the victim was self-employed or a daily wage worker earning less than the minimum wage. Using the formula 2/3 (80 − age at death) × (gross annual income − 80% of gross annual income), the heirs of the 19-year-old victim were awarded ₱156,172.80.",
       "keyDoctrine": "Lost earnings are computed as: net earning capacity = 2/3 × (80 − age at time of death) × (gross annual income − living expenses of 80% of gross annual income). Documentary evidence is generally required to prove loss of earning capacity, but testimony suffices when the victim was self-employed or a daily wage worker earning less than the minimum wage. Alibi must show physical impossibility of being at the crime scene.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2000/apr2000/gr_132252_2000.html"
+    },
+    {
+      "id": "case-0050",
+      "status": "draft",
+      "name": "Victory Liner, Inc. v. Gammad, et al.",
+      "grNumber": "G.R. No. 159636",
+      "year": 2004,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "facts": "On March 14, 1996, a Victory Liner bus bound for Tuguegarao, running at high speed, fell into a ravine in Nueva Vizcaya, killing passenger Marie Grace Pagulayan-Gammad, a 39-year-old Section Chief of the BIR. Her husband and children sued for damages for breach of contract of carriage. Victory Liner's counsel failed to appear at hearings, so it was deemed to have waived cross-examination and the presentation of its evidence. The trial court awarded actual damages, death indemnity, moral and exemplary damages lumped together, compensatory damages for loss of earning capacity, and attorney's fees; the Court of Appeals modified the amounts. Victory Liner argued that its counsel's gross negligence denied it due process, and that the damages were baseless.",
+      "issue": "(1) Was Victory Liner denied due process by its counsel's negligence? (2) Is it liable for breach of contract of carriage? (3) Were the damages proper?",
+      "ruling": "The Court partly granted the petition. (1) The negligence of counsel binds the client, except where reckless or gross negligence deprives the client of due process; here counsel filed an answer, a pre-trial brief and a timely appeal, and Victory Liner itself was negligent. (2) A common carrier is presumed at fault when a passenger dies, and the presumption is overcome only by proof of extraordinary diligence, which was not shown. (3) Under Article 1764 in relation to Article 2206, the heirs are entitled to death indemnity (₱50,000), indemnity for loss of earning capacity, and moral damages. But the award for loss of earning capacity was deleted: documentary evidence is required, and the deceased, a BIR section chief, did not fall under the exceptions for low-wage workers; ₱500,000 temperate damages were awarded instead under Article 2224, since loss was shown but not its amount. Moral and exemplary damages cannot be lumped together, having different jural foundations; ₱100,000 each was awarded. Actual damages were reduced to the ₱78,160 supported by official receipts. Attorney's fees of 10% were allowed since exemplary damages were awarded, and interest was imposed following Eastern Shipping Lines.",
+      "keyDoctrine": "In the death of a passenger, the carrier is liable for death indemnity, loss of earning capacity and moral damages (Arts. 1764 and 2206). Loss of earning capacity needs documentary proof, except for self-employed or daily-wage workers earning below the minimum wage; when loss is shown but its amount cannot be proved, temperate damages may be awarded (Art. 2224). Actual damages require competent proof such as official receipts. Moral and exemplary damages have different bases and must be determined separately.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2004/nov2004/gr_159636_2004.html"
     }
   ],
   "questions": [
@@ -490,6 +505,237 @@
         "url": "https://lawphil.net/judjuris/juri2000/apr2000/gr_132252_2000.html",
         "part": "Decision, inconsistencies in testimony",
         "excerpt": "This Court has ruled often enough that discrepancies in minor details indicate veracity rather than prevarication. They tend to bolster the probative value of the testimony being questioned. They enhance, rather than destroy, the witness' credibility and the truthfulness of his testimony as they erase any suspicion of being a rehearsed testimony."
+      }
+    },
+    {
+      "id": "q-0592",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "A bus fell into a ravine, killing a 39-year-old passenger who worked as a section chief in a government bureau. Her husband testified that she earned ₱83,088 a year; no other evidence of her income was presented. The trial court awarded ₱1,135,536 for her loss of earning capacity. (a) What damages are the heirs of a passenger who dies from a breach of contract of carriage entitled to? (b) Was the award for loss of earning capacity proper?",
+      "suggestedAnswer": {
+        "answer": "(a) Under Article 1764 in relation to Article 2206 of the Civil Code, the carrier must pay indemnity for death, indemnity for loss of earning capacity, and moral damages. (b) No. The award for loss of earning capacity lacked documentary proof and did not fall under the exceptions, so it should be deleted; but temperate damages may be awarded instead, since some pecuniary loss was established.",
+        "legalBasis": "In Victory Liner v. Gammad, the Court held that documentary evidence is the rule for loss of earning capacity, with exceptions only when the deceased was self-employed earning less than the minimum wage (with judicial notice that no documentary evidence is available in that line of work), or employed as a daily wage worker earning less than the minimum wage. Under Article 2224, temperate or moderate damages, more than nominal but less than compensatory, may be recovered when the court finds that some pecuniary loss has been suffered but its amount cannot, from the nature of the case, be proved with certainty.",
+        "application": "A government section chief earning ₱83,088 a year is neither a self-employed person nor a daily wage worker earning below the minimum wage, so her husband's testimony alone is insufficient. But that she earned an income and that her death caused her family pecuniary loss were established, so the Court awarded ₱500,000 temperate damages in lieu of the deleted award.",
+        "conclusion": "Death indemnity, loss of earning capacity (with proper proof) and moral damages; here, temperate damages replace the unproven loss of earning capacity. **Bar trap:** the testimonial exception is for low-wage earners only; and temperate damages are the remedy when loss is certain but its amount is not."
+      },
+      "keyPoints": [
+        "Art. 1764 with Art. 2206: indemnity for death, indemnity for loss of earning capacity, moral damages",
+        "Loss of earning capacity requires documentary evidence, except for self-employed or daily-wage earners below the minimum wage",
+        "A BIR section chief does not fall under the exceptions",
+        "Temperate damages (Art. 2224) when pecuniary loss is shown but its amount cannot be proved with certainty",
+        "₱500,000 temperate damages awarded in lieu of loss of earning capacity"
+      ],
+      "caseIds": [
+        "case-0050"
+      ],
+      "source": {
+        "caseTitle": "Victory Liner, Inc. v. Gammad, et al.",
+        "grNumber": "G.R. No. 159636",
+        "url": "https://lawphil.net/judjuris/juri2004/nov2004/gr_159636_2004.html",
+        "part": "Decision, damages for the death of a passenger and temperate damages",
+        "excerpt": "Article 1764 in relation to Article 2206 of the Civil Code, holds the common carrier in breach of its contract of carriage that results in the death of a passenger liable to pay the following: (1) indemnity for death, (2) indemnity for loss of earning capacity, and (3) moral damages. … The award of compensatory damages for the loss of the deceased’s earning capacity should be deleted for lack of basis. As a rule, documentary evidence should be presented to substantiate the claim for damages for loss of earning capacity. By way of exception, damages for loss of earning capacity may be awarded despite the absence of documentary evidence when (1) the deceased is self-employed earning less than the minimum wage under current labor laws, and judicial notice may be taken of the fact that in the deceased’s line of work no documentary evidence is available; or (2) the deceased is employed as a daily wage worker earning less than the minimum wage under current labor laws. … The award is clearly erroneous because the deceased’s earnings does not fall within the exceptions. However, the fact of loss having been established, temperate damages in the amount of P500,000.00 should be awarded to respondents. Under Article 2224 of the Civil Code, temperate or moderate damages, which are more than nominal but less than compensatory damages, may be recovered when the court finds that some pecuniary loss has been suffered but its amount can not, from the nature of the case, be proved with certainty."
+      }
+    },
+    {
+      "id": "q-0593",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "In a suit for the death of a bus passenger, the trial court awarded ₱400,000 as \"exemplary and moral damages\" in one lump sum, and actual damages based on a handwritten list of funeral expenses and a contract for the construction of the tomb, in addition to official receipts. Are these awards proper? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. Moral and exemplary damages cannot be lumped together, and actual damages must be supported by competent proof such as official receipts; a list of expenses and a construction contract are not enough.",
+        "legalBasis": "In Victory Liner v. Gammad, the Court held that moral and exemplary damages are based on different jural foundations and require separate determination. In breach of contract, moral damages are recovered when the defendant acted in bad faith or with gross negligence, or when the breach itself constitutes a tort resulting in physical injuries; and by special rule (Article 1764 with Article 2206) when a passenger dies. Exemplary damages may be recovered in contractual obligations if the defendant acted in a wanton, fraudulent, reckless, oppressive or malevolent manner; a carrier that fails to prove extraordinary diligence is presumed to have acted recklessly. Following People v. Duban, only substantiated and proven expenses, genuinely incurred in connection with the death, wake or burial, are recognized.",
+        "application": "The Court separately awarded ₱100,000 moral damages (for the heirs' grief) and ₱100,000 exemplary damages (the carrier being presumed reckless), and reduced the actual damages to ₱78,160, the amount supported by official receipts, rejecting the list of expenses and the tomb contract.",
+        "conclusion": "The lump sum must be split and separately justified, and actual damages limited to the receipted amount. **Bar trap:** do not lump moral and exemplary damages; and a list of expenses, however detailed, is not proof of actual damages."
+      },
+      "keyPoints": [
+        "Moral and exemplary damages have different jural foundations; determine them separately",
+        "Moral damages in breach of contract: bad faith, gross negligence, or a breach that is itself a tort; and death of a passenger (Arts. 1764, 2206)",
+        "Exemplary damages: wanton, fraudulent, reckless, oppressive or malevolent conduct; a carrier failing to prove extraordinary diligence is presumed reckless",
+        "Actual damages: only substantiated expenses, as shown by official receipts",
+        "A list of expenses and a construction contract are not competent proof"
+      ],
+      "caseIds": [
+        "case-0050"
+      ],
+      "source": {
+        "caseTitle": "Victory Liner, Inc. v. Gammad, et al.",
+        "grNumber": "G.R. No. 159636",
+        "url": "https://lawphil.net/judjuris/juri2004/nov2004/gr_159636_2004.html",
+        "part": "Decision, moral, exemplary and actual damages",
+        "excerpt": "Anent the award of moral damages, the same cannot be lumped with exemplary damages because they are based on different jural foundations. These damages are different in nature and require separate determination. In culpa contractual or breach of contract, moral damages may be recovered when the defendant acted in bad faith or was guilty of gross negligence (amounting to bad faith) or in wanton disregard of contractual obligations and, as in this case, when the act of breach of contract itself constitutes the tort that results in physical injuries. By special rule in Article 1764 in relation to Article 2206 of the Civil Code, moral damages may also be awarded in case the death of a passenger results from a breach of carriage. On the other hand, exemplary damages, which are awarded by way of example or correction for the public good may be recovered in contractual obligations if the defendant acted in wanton, fraudulent, reckless, oppressive, or malevolent manner. … The actual damages awarded by the trial court reduced by the Court of Appeals should be further reduced. In People v. Duban, it was held that only substantiated and proven expenses or those that appear to have been genuinely incurred in connection with the death, wake or burial of the victim will be recognized. A list of expenses (Exhibit \"J\"), and the contract/receipt for the construction of the tomb (Exhibit \"F\") in this case, cannot be considered competent proof and cannot replace the official receipts necessary to justify the award."
+      }
+    },
+    {
+      "id": "q-0594",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "A bus company sued for a passenger's death lost because its lawyer missed hearings, so it was deemed to have waived cross-examination and the presentation of its evidence; the lawyer had filed an answer, a pre-trial brief and a timely appeal. The company now claims denial of due process, and also that the accident was purely accidental after 50 years of safe operation. Rule on both claims.",
+      "suggestedAnswer": {
+        "answer": "Both fail. The negligence of counsel binds the client, and this was not gross negligence amounting to a denial of due process. And the company did not overcome the presumption that it was at fault for the passenger's death.",
+        "legalBasis": "In Victory Liner v. Gammad, the Court held that a counsel's acts within his authority are the client's acts, so his negligence binds the client; the exceptions are reckless or gross negligence that deprives the client of due process, or that results in outright deprivation of liberty or property, or when the interests of justice so require. Due process guards against the denial of the opportunity to be heard. On the merits, a common carrier must carry passengers safely as far as human care and foresight can provide, using the utmost diligence of very cautious persons; when a passenger dies or is injured, the carrier is presumed at fault, and the presumption may only be overcome by evidence of extraordinary diligence.",
+        "application": "The company had its day in court: its lawyer filed pleadings, had the default lifted, and appealed on time; and the company itself ignored three notices of pre-trial, so it shared the fault. No evidence rebutted the presumption of negligence; a long safe record is not proof of extraordinary diligence on the day of the accident.",
+        "conclusion": "No denial of due process, and the carrier is liable for breach of contract of carriage. **Bar trap:** \"my lawyer was negligent\" works only for gross negligence that deprives the client of due process; and a common carrier is presumed negligent, unlike a defendant in quasi-delict."
+      },
+      "keyPoints": [
+        "Negligence of counsel binds the client",
+        "Exceptions: reckless or gross negligence depriving the client of due process, outright deprivation of liberty or property, or when justice requires",
+        "Due process is the opportunity to be heard, which the company had",
+        "Common carriers: utmost diligence of very cautious persons; presumed at fault when a passenger dies",
+        "The presumption is overcome only by proof of extraordinary diligence"
+      ],
+      "caseIds": [
+        "case-0050"
+      ],
+      "source": {
+        "caseTitle": "Victory Liner, Inc. v. Gammad, et al.",
+        "grNumber": "G.R. No. 159636",
+        "url": "https://lawphil.net/judjuris/juri2004/nov2004/gr_159636_2004.html",
+        "part": "Decision, negligence of counsel and breach of contract of carriage",
+        "excerpt": "It is settled that the negligence of counsel binds the client. This is based on the rule that any act performed by a counsel within the scope of his general or implied authority is regarded as an act of his client. Consequently, the mistake or negligence of counsel may result in the rendition of an unfavorable judgment against the client. However, the application of the general rule to a given case should be looked into and adopted according to the surrounding circumstances obtaining. Thus, exceptions to the foregoing have been recognized by the court in cases where reckless or gross negligence of counsel deprives the client of due process of law, or when its application will result in outright deprivation of the client’s liberty or property or where the interests of justice so require, and accord relief to the client who suffered by reason of the lawyer’s gross or palpable mistake or negligence. … Anent the second issue, petitioner was correctly found liable for breach of contract of carriage. A common carrier is bound to carry its passengers safely as far as human care and foresight can provide, using the utmost diligence of very cautious persons, with due regard to all the circumstances. In a contract of carriage, it is presumed that the common carrier was at fault or was negligent when a passenger dies or is injured. Unless the presumption is rebutted, the court need not even make an express finding of fault or negligence on the part of the common carrier. This statutory presumption may only be overcome by evidence that the carrier exercised extraordinary diligence."
+      }
+    },
+    {
+      "id": "q-0595",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Damages \"which are more than nominal but less than compensatory,\" recoverable \"when the court finds that some pecuniary loss has been suffered but its amount can not, from the nature of the case, be proved with certainty,\" are",
+      "choices": {
+        "A": "temperate or moderate damages.",
+        "B": "nominal damages.",
+        "C": "liquidated damages.",
+        "D": "exemplary damages."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** Victory Liner v. Gammad, citing Article 2224 of the Civil Code: \"temperate or moderate damages, which are more than nominal but less than compensatory damages, may be recovered when the court finds that some pecuniary loss has been suffered but its amount can not, from the nature of the case, be proved with certainty.\" The Court awarded ₱500,000 temperate damages in lieu of the unproven loss of earning capacity. **B is wrong:** nominal damages vindicate a right, not a pecuniary loss. **C is wrong:** liquidated damages are agreed upon by the parties. **D is wrong:** exemplary damages are for example or correction. **Bar trap:** temperate damages presuppose that some pecuniary loss is certain.",
+      "caseIds": [
+        "case-0050"
+      ],
+      "source": {
+        "caseTitle": "Victory Liner, Inc. v. Gammad, et al.",
+        "grNumber": "G.R. No. 159636",
+        "url": "https://lawphil.net/judjuris/juri2004/nov2004/gr_159636_2004.html",
+        "part": "Decision, temperate damages (Article 2224)",
+        "excerpt": "Under Article 2224 of the Civil Code, temperate or moderate damages, which are more than nominal but less than compensatory damages, may be recovered when the court finds that some pecuniary loss has been suffered but its amount can not, from the nature of the case, be proved with certainty."
+      }
+    },
+    {
+      "id": "q-0596",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Following Victory Liner v. Gammad, when will a client NOT be bound by the negligence of its counsel?",
+      "choices": {
+        "A": "Whenever the client hires a new lawyer on appeal.",
+        "B": "Whenever the client loses the case because of counsel's absence at a hearing.",
+        "C": "When the reckless or gross negligence of counsel deprives the client of due process, results in outright deprivation of the client's liberty or property, or when the interests of justice so require.",
+        "D": "Never; the rule admits no exception."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court stated the general rule that the negligence of counsel binds the client, and recognized exceptions \"where reckless or gross negligence of counsel deprives the client of due process of law, or when its application will result in outright deprivation of the client's liberty or property or where the interests of justice so require.\" **A and B are wrong:** hiring a new lawyer, or losing due to an absence, does not by itself trigger the exception; otherwise there would be no end to litigation. **D is wrong:** the rule has exceptions. **Bar trap:** compare APEX Mining (counsel let the decision become final and misrepresented its status) with this case (counsel filed a timely appeal).",
+      "caseIds": [
+        "case-0050"
+      ],
+      "source": {
+        "caseTitle": "Victory Liner, Inc. v. Gammad, et al.",
+        "grNumber": "G.R. No. 159636",
+        "url": "https://lawphil.net/judjuris/juri2004/nov2004/gr_159636_2004.html",
+        "part": "Decision, negligence of counsel",
+        "excerpt": "It is settled that the negligence of counsel binds the client. … Thus, exceptions to the foregoing have been recognized by the court in cases where reckless or gross negligence of counsel deprives the client of due process of law, or when its application will result in outright deprivation of the client’s liberty or property or where the interests of justice so require, and accord relief to the client who suffered by reason of the lawyer’s gross or palpable mistake or negligence."
+      }
+    },
+    {
+      "id": "q-0597",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "In Victory Liner v. Gammad, why did the Court reduce the actual damages to ₱78,160?",
+      "choices": {
+        "A": "Because actual damages for funeral expenses are capped by law.",
+        "B": "Because the deceased's estate should bear the burial costs.",
+        "C": "Because the heirs received insurance proceeds.",
+        "D": "Because only substantiated and proven expenses are recognized; a list of expenses and a tomb construction contract cannot replace the official receipts, and ₱78,160 was the amount supported by official receipts."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** Citing People v. Duban, the Court held that \"only substantiated and proven expenses or those that appear to have been genuinely incurred in connection with the death, wake or burial of the victim will be recognized,\" that the list of expenses and the tomb contract \"cannot be considered competent proof and cannot replace the official receipts,\" and reduced the award to ₱78,160, \"the amount supported by official receipts.\" **A, B and C are wrong:** none was the reason. **Bar trap:** actual damages must be proved with the best obtainable evidence; where loss is shown but not its amount, temperate damages may apply instead.",
+      "caseIds": [
+        "case-0050"
+      ],
+      "source": {
+        "caseTitle": "Victory Liner, Inc. v. Gammad, et al.",
+        "grNumber": "G.R. No. 159636",
+        "url": "https://lawphil.net/judjuris/juri2004/nov2004/gr_159636_2004.html",
+        "part": "Decision, proof of actual damages",
+        "excerpt": "In People v. Duban, it was held that only substantiated and proven expenses or those that appear to have been genuinely incurred in connection with the death, wake or burial of the victim will be recognized. A list of expenses (Exhibit \"J\"), and the contract/receipt for the construction of the tomb (Exhibit \"F\") in this case, cannot be considered competent proof and cannot replace the official receipts necessary to justify the award. Hence, actual damages should be further reduced to P78,160.00, which was the amount supported by official receipts."
+      }
+    },
+    {
+      "id": "q-0598",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "In Victory Liner v. Gammad (2004), applying the guidelines in Eastern Shipping Lines v. Court of Appeals, what interest did the Court impose on the total award?",
+      "choices": {
+        "A": "6% per annum from the filing of the complaint.",
+        "B": "12% per annum from the finality of the decision until satisfaction, since the amounts were determined with certainty only in the decision.",
+        "C": "No interest, because the claims were unliquidated.",
+        "D": "The interest stipulated in the bus ticket."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court held that \"[c]onsidering that the amounts payable by petitioner has been determined with certainty only in the instant petition, the interest due shall be computed upon the finality of this decision at the rate of 12% per annum until satisfaction, per paragraph 3\" of the Eastern Shipping Lines rules. **A, C and D are wrong:** none was imposed. **Bar trap:** the rate after finality was later changed; Allarey v. Dela Cruz (2021), applying Nacar v. Gallery Frames and BSP-MB Circular No. 799 (effective July 1, 2013), imposed 6% per annum from finality. Check the date of the judgment before applying a rate.",
+      "caseIds": [
+        "case-0050"
+      ],
+      "source": {
+        "caseTitle": "Victory Liner, Inc. v. Gammad, et al.",
+        "grNumber": "G.R. No. 159636",
+        "url": "https://lawphil.net/judjuris/juri2004/nov2004/gr_159636_2004.html",
+        "part": "Decision, interest under Eastern Shipping Lines",
+        "excerpt": "In the instant case, petitioner should be held liable for payment of interest as damages for breach of contract of carriage. Considering that the amounts payable by petitioner has been determined with certainty only in the instant petition, the interest due shall be computed upon the finality of this decision at the rate of 12% per annum until satisfaction, per paragraph 3 of the aforecited rule."
+      }
+    },
+    {
+      "id": "q-0599",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Under Victory Liner v. Gammad, how may a common carrier overcome the presumption that it was at fault when a passenger dies?",
+      "choices": {
+        "A": "By showing that the accident was purely accidental.",
+        "B": "By proving the diligence of a good father of a family in the selection of its driver.",
+        "C": "Only by evidence that it exercised extraordinary diligence.",
+        "D": "By showing a long record of safe operation."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court said that in a contract of carriage the carrier is presumed at fault or negligent when a passenger dies or is injured, and \"[t]his statutory presumption may only be overcome by evidence that the carrier exercised extraordinary diligence.\" No such evidence was presented. **A is wrong:** calling it an accident is not proof of extraordinary diligence. **B is wrong:** diligence of a good father of a family is the defense of an employer under Article 2180 in quasi-delict, not the carrier's standard in a contract of carriage. **D is wrong:** a safe record is not proof of diligence on the occasion. **Bar trap:** do not mix the carrier's extraordinary diligence with the ordinary diligence in quasi-delict.",
+      "caseIds": [
+        "case-0050"
+      ],
+      "source": {
+        "caseTitle": "Victory Liner, Inc. v. Gammad, et al.",
+        "grNumber": "G.R. No. 159636",
+        "url": "https://lawphil.net/judjuris/juri2004/nov2004/gr_159636_2004.html",
+        "part": "Decision, breach of contract of carriage",
+        "excerpt": "A common carrier is bound to carry its passengers safely as far as human care and foresight can provide, using the utmost diligence of very cautious persons, with due regard to all the circumstances. In a contract of carriage, it is presumed that the common carrier was at fault or was negligent when a passenger dies or is injured. Unless the presumption is rebutted, the court need not even make an express finding of fault or negligence on the part of the common carrier. This statutory presumption may only be overcome by evidence that the carrier exercised extraordinary diligence."
       }
     }
   ]
