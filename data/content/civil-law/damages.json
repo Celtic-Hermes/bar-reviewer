@@ -301,6 +301,21 @@
       "ruling": "Yes. The bank's initial carelessness, aggravated by its lack of promptness in repairing the error, was gross negligence if not wanton bad faith. Simex's credit line was canceled, its orders held, its business declined and its reputation tarnished. Moral damages compensate, not penalize; their amount need not be proved with exactness, since under Article 2216 no proof of pecuniary loss is necessary, and the amount is left to the court's discretion. A corporation is as a rule not entitled to moral damages, since it cannot feel physical suffering or mental anguish, except where its good reputation is debased, resulting in social humiliation, as here. Nominal damages (Art. 2221) vindicate a right, not indemnify a loss, so since a loss was shown, moral damages of ₱20,000 were awarded in their place. Because a bank, as a business affected with public interest, must treat its depositors' accounts with meticulous care given their fiduciary relationship, its ineptness was wanton under Article 2232, and ₱50,000 exemplary damages were imposed.",
       "keyDoctrine": "Moral damages compensate, not penalize; no proof of pecuniary loss is needed (Art. 2216), and the amount is left to the court's discretion. A corporation is generally not entitled to moral damages, except where its good reputation is debased, resulting in social humiliation. Nominal damages vindicate a violated right and are not proper where a loss is shown. A bank, being impressed with public interest and in a fiduciary relationship with its depositors, must treat their accounts with meticulous care; gross negligence in handling them may warrant moral and exemplary damages.",
       "sourceUrl": "https://lawphil.net/judjuris/juri1990/mar1990/gr_88013_1990.html"
+    },
+    {
+      "id": "case-0068",
+      "status": "draft",
+      "name": "Makabali, et al. v. Court of Appeals, et al.",
+      "grNumber": "G.R. No. L-46877",
+      "year": 1988,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "facts": "Georgina Makabali, a new medical graduate, and her sister Lourdes, a schoolteacher, bought a Hong Kong package tour from Baron Travel Corporation, which assured them of a tour group, a tour guide, a send-off at the airport and a booking at the President Hotel. None of it happened: no group or representative met them, the supposed tour guide turned out to be a stranger traveling on his own, nobody met them in Hong Kong, and the hotel had no booking. They tagged along with another tour group, paid for their own meals while others had prepaid ones, and lived on sidewalk hot dogs and fruit to save their limited funds. Only on the fourth day of the five-day tour did Baron arrange to pay their bills, and it ignored their complaint on their return. They sued for ₱30,000 moral and ₱6,000 exemplary damages; the trial court awarded ₱500, and the Court of Appeals ₱5,000 as moral and exemplary damages and ₱1,000 attorney's fees.",
+      "issue": "Are the petitioners entitled to more than ₱5,000 in moral and exemplary damages?",
+      "ruling": "Yes. There is no hard and fast rule for a fair amount of moral damages; each case depends on its own circumstances. Moral damages (Art. 2217) are incapable of pecuniary estimation; exemplary damages (Art. 2229), though not recoverable as a matter of right and needing no proof, require the plaintiff first to show entitlement to moral, temperate or compensatory damages. The two have different natures and purposes, so separate awards are proper. The claimant must prove the factual basis of the damages and its causal connection to the defendant's acts, and moral damages must be specifically prayed for. Moral damages are not meant to enrich, but to restore the spiritual status quo ante, and must be proportionate to the suffering. Given the petitioners' social standing, their humiliation and anxiety, and the travel agency's wanton disregard of their rights, ₱5,000 was minimal; but since their complaint limited the claim to ₱35,000, the award was raised to ₱35,000 in moral and exemplary damages and ₱5,000 attorney's fees.",
+      "keyDoctrine": "Moral damages (Art. 2217) are incapable of pecuniary estimation, but the claimant must prove their factual basis and causal connection to the defendant's acts, and they must be specifically prayed for. They are not meant to enrich, but to restore the spiritual status quo ante, proportionate to the suffering. Exemplary damages are not a matter of right and need not be proved, but the plaintiff must first show entitlement to moral, temperate or compensatory damages. Moral and exemplary damages differ in nature and purpose and are awarded separately. The award may not exceed what the complaint prayed for.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri1988/jan1988/gr_l-46877_1988.html"
     }
   ],
   "questions": [
@@ -4908,6 +4923,237 @@
         "url": "https://lawphil.net/judjuris/juri1990/mar1990/gr_88013_1990.html",
         "part": "Decision, the disposition",
         "excerpt": "ACCORDINGLY, the appealed judgment is hereby MODIFIED and the private respondent is ordered to pay the petitioner, in lieu of nominal damages, moral damages in the amount of P20,000.00, and exemplary damages in the amount of P50,000.00 plus the original award of attorney's fees in the amount of P5,000.00, and costs."
+      }
+    },
+    {
+      "id": "q-0736",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "What is the purpose of moral damages? How should a court fix their amount? Explain, citing Makabali v. Court of Appeals.",
+      "suggestedAnswer": {
+        "answer": "Moral damages are not intended to enrich the complainant at the defendant's expense. They are awarded to enable the injured party to obtain means, diversions or amusements that will alleviate the moral suffering caused by the defendant's culpable act, that is, to restore within the limits of the possible the spiritual status quo ante. Their amount must be proportionate to the suffering inflicted and depends on the circumstances of each case.",
+        "legalBasis": "In Makabali v. CA, the Court held that there is no hard and fast rule in determining a fair amount of moral damages, since each case is governed by its own circumstances. Under Article 2217, moral damages, which include physical suffering, mental anguish, fright, serious anxiety, besmirched reputation, wounded feelings, moral shock, social humiliation and similar injury, are incapable of pecuniary estimation. \"[T]he award of moral damages is aimed at a restoration within the limits of the possible, of the spiritual status quo ante; and therefore it must be proportionate to the suffering inflicted.\"",
+        "application": "In the case, the Court considered the petitioners' social standing, their embarrassment and humiliation, and their anxiety on their first trip abroad with meager funds, and found ₱5,000 minimal.",
+        "conclusion": "Moral damages compensate, proportionately, and do not enrich. **Bar trap:** \"incapable of pecuniary estimation\" does not mean the amount is arbitrary; it must be proportionate to the proven suffering."
+      },
+      "keyPoints": [
+        "No hard and fast rule; each case on its own circumstances",
+        "Art. 2217: the kinds of moral injury; incapable of pecuniary estimation",
+        "Not to enrich the complainant",
+        "To restore the spiritual status quo ante within the limits of the possible",
+        "Proportionate to the suffering inflicted"
+      ],
+      "caseIds": [
+        "case-0068"
+      ],
+      "source": {
+        "caseTitle": "Makabali, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-46877",
+        "url": "https://lawphil.net/judjuris/juri1988/jan1988/gr_l-46877_1988.html",
+        "part": "Decision, discussion of moral damages (purpose and amount)",
+        "excerpt": "To begin with, there is no hard and fast rule in the determination of what would be a fair amount of moral damages, since each case must be governed by its own peculiar circumstances. Article 2217 of the Civil Code recognizes that moral damages which include physical suffering, mental anguish, fright, serious anxiety, besmirched reputation, wounded feelings, moral shock, social humiliation and similar injury, are incapable of pecuniary estimation. … It must be emphasized that moral damages are not intended to enrich the complainant at the expense of a defendant. They are awarded only to enable the injured parties to obtain means, diversions or amusements that will serve to alleviate the moral sufferings the injured parties have undergone by reason of defendant's culpable action. In other words, the award of moral damages is aimed at a restoration within the limits of the possible, of the spiritual status quo ante; and therefore it must be proportionate to the suffering inflicted."
+      }
+    },
+    {
+      "id": "q-0737",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "A trial court awarded a plaintiff a lump sum of ₱5,000 \"as moral and exemplary damages.\" The defendant argues that exemplary damages could not be awarded at all because the plaintiff did not prove them. Is the defendant correct? Is a single lump-sum award proper? Explain, citing Makabali v. Court of Appeals.",
+      "suggestedAnswer": {
+        "answer": "The defendant is not correct: exemplary damages need not be proved, though they are not a matter of right and the plaintiff must first show entitlement to moral, temperate or compensatory damages. Moral and exemplary damages should be awarded separately, because their nature and purposes differ.",
+        "legalBasis": "In Makabali v. CA, the Court held that \"[w]hile exemplary damages cannot be recovered as a matter of right, they need not be proved, although plaintiff must show that he is entitled to moral, temperate or compensatory damages before the court may consider the question of whether or not exemplary damages should be awarded.\" It noted that it gave separate awards for moral and exemplary damages, \"because the nature and purposes of said damages are different. While moral damages have to do with injury personal to the awardee, such as physical suffering and the like, exemplary damages are imposed by way of example or correction for the public good.\"",
+        "application": "If the plaintiff shows entitlement to moral damages, the court may then consider exemplary damages without separate proof of their amount; but it should state each award separately.",
+        "conclusion": "Exemplary damages need no proof but presuppose other damages; separate awards are proper. **Bar trap:** exemplary damages cannot stand alone; first establish moral, temperate or compensatory damages. (In Makabali itself the Court still fixed a combined sum, capped by the complaint's prayer.)"
+      },
+      "keyPoints": [
+        "Exemplary damages: not a matter of right, but need not be proved",
+        "Plaintiff must first show entitlement to moral, temperate or compensatory damages",
+        "Moral damages: injury personal to the awardee",
+        "Exemplary damages: by way of example or correction for the public good",
+        "Different natures and purposes: separate awards are proper"
+      ],
+      "caseIds": [
+        "case-0068"
+      ],
+      "source": {
+        "caseTitle": "Makabali, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-46877",
+        "url": "https://lawphil.net/judjuris/juri1988/jan1988/gr_l-46877_1988.html",
+        "part": "Decision, discussion of exemplary damages and of separate awards",
+        "excerpt": "As to exemplary damages, Article 2229 of the Civil Code provides that such damages may be imposed by way of example or correction for the public good. While exemplary damages cannot be recovered as a matter of right, they need not be proved, although plaintiff must show that he is entitled to moral, temperate or compensatory damages before the court may consider the question of whether or not exemplary damages should be awarded. … It will thus be noted that We have awarded moral and exemplary damages depending upon the facts attendant to each case. It will also be noted that We gave separate awards for moral and exemplary damages. This is as it should be because the nature and purposes of said damages are different. While moral damages have to do with injury personal to the awardee, such as physical suffering and the like, exemplary damages are imposed by way of example or correction for the public good."
+      }
+    },
+    {
+      "id": "q-0738",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Two sisters sued a travel agency that left them stranded on a package tour abroad, praying for a total of ₱35,000 in moral and exemplary damages. On appeal, the Supreme Court found that they deserved far more than the ₱5,000 awarded below. May the Court award them more than ₱35,000? What must a claimant prove to recover moral damages? Explain, citing Makabali v. Court of Appeals.",
+      "suggestedAnswer": {
+        "answer": "No. The award should not exceed the ₱35,000 the claimants prayed for in their complaint. To recover moral damages, the claimant must satisfactorily prove at the trial the factual basis of the damages and its causal connection to the defendant's acts, and must specifically pray for them in the complaint.",
+        "legalBasis": "In Makabali v. CA, the Court held that \"the claimant must have satisfactorily proven during the trial the existence of the factual basis of the damages and its causal connection to defendant's acts,\" because moral damages, though incapable of pecuniary estimation, are designed to compensate for actual injury, not to penalize, and \"are allowable only when specifically prayed for in the complaint.\" Since the petitioners limited their claim for moral and exemplary damages to a total of ₱35,000, the award \"should not exceed the said amount.\"",
+        "application": "The findings below that the sisters suffered anguish, embarrassment and mental suffering because of the agency's failure, which acted in wanton disregard of their rights, supplied the factual basis and causal connection. The Court raised the award to ₱35,000 and the attorney's fees to ₱5,000.",
+        "conclusion": "₱35,000 at most. **Bar trap:** however strong the case, moral damages cannot exceed what was prayed for in the complaint."
+      },
+      "keyPoints": [
+        "Prove the factual basis of the damages at trial",
+        "Prove the causal connection to the defendant's acts",
+        "Moral damages compensate actual injury; they do not penalize",
+        "Allowable only when specifically prayed for in the complaint",
+        "The award may not exceed the amount prayed for (₱35,000)"
+      ],
+      "caseIds": [
+        "case-0068"
+      ],
+      "source": {
+        "caseTitle": "Makabali, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-46877",
+        "url": "https://lawphil.net/judjuris/juri1988/jan1988/gr_l-46877_1988.html",
+        "part": "Decision, discussion of the requisites and the limit of the award",
+        "excerpt": "It is essential however, in the award of damages that the claimant must have satisfactorily proven during the trial the existence of the factual basis of the damages and its causal connection to defendant's acts. This is so because moral damages, though incapable of pecuniary estimation, are in the category of an award designed to compensate the claimant for actual injury suffered and not to impose a penalty on the wrongdoer, and are allowable only when specifically prayed for in the complaint. … We note however that petitioners limited their claim for moral and exemplary damages in their complaint filed with the Court of First Instance to a total of P35,000.00 plus attorney's fees and costs. We feel that Our award should not exceed the said amount."
+      }
+    },
+    {
+      "id": "q-0739",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Under Article 2217 of the Civil Code, as cited in Makabali v. Court of Appeals, which of the following is NOT listed among the injuries covered by moral damages?",
+      "choices": {
+        "A": "Mental anguish and serious anxiety.",
+        "B": "Besmirched reputation and wounded feelings.",
+        "C": "Loss of profits from a canceled contract.",
+        "D": "Moral shock and social humiliation."
+      },
+      "correct": "C",
+      "explanation": "**C is correct**, because it is not a moral injury. Article 2217, quoted in Makabali, lists \"physical suffering, mental anguish, fright, serious anxiety, besmirched reputation, wounded feelings, moral shock, social humiliation and similar injury.\" Lost profits are actual damages (lucro cesante) under Article 2200. **A, B and D are wrong:** each is listed. **Bar trap:** do not confuse pecuniary losses with moral injuries.",
+      "caseIds": [
+        "case-0068"
+      ],
+      "source": {
+        "caseTitle": "Makabali, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-46877",
+        "url": "https://lawphil.net/judjuris/juri1988/jan1988/gr_l-46877_1988.html",
+        "part": "Decision, discussion of moral damages (Article 2217)",
+        "excerpt": "Article 2217 of the Civil Code recognizes that moral damages which include physical suffering, mental anguish, fright, serious anxiety, besmirched reputation, wounded feelings, moral shock, social humiliation and similar injury, are incapable of pecuniary estimation."
+      }
+    },
+    {
+      "id": "q-0740",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "In Makabali v. Court of Appeals, the award of moral damages was described as aimed at",
+      "choices": {
+        "A": "a restoration, within the limits of the possible, of the spiritual status quo ante.",
+        "B": "punishing the defendant for its wanton acts.",
+        "C": "enriching the complainant to deter future wrongs.",
+        "D": "reimbursing the complainant's out-of-pocket expenses."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court said \"the award of moral damages is aimed at a restoration within the limits of the possible, of the spiritual status quo ante; and therefore it must be proportionate to the suffering inflicted.\" **B and C are wrong:** moral damages are not punitive and \"are not intended to enrich the complainant.\" **D is wrong:** that is actual damages. **Bar trap:** proportionality to the suffering is the measure.",
+      "caseIds": [
+        "case-0068"
+      ],
+      "source": {
+        "caseTitle": "Makabali, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-46877",
+        "url": "https://lawphil.net/judjuris/juri1988/jan1988/gr_l-46877_1988.html",
+        "part": "Decision, discussion of moral damages (purpose)",
+        "excerpt": "In other words, the award of moral damages is aimed at a restoration within the limits of the possible, of the spiritual status quo ante; and therefore it must be proportionate to the suffering inflicted."
+      }
+    },
+    {
+      "id": "q-0741",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "In Makabali v. Court of Appeals, what finding of the Court of Appeals laid the basis for awarding moral and exemplary damages against the travel agency?",
+      "choices": {
+        "A": "That the agency was merely negligent in good faith.",
+        "B": "That the petitioners suffered anguish, embarrassment and mental suffering due to the agency's failure to perform its obligation, and that it acted in wanton disregard of their rights.",
+        "C": "That the agency had been paid only a 10% commission.",
+        "D": "That the agency rectified its oversight on time."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court noted that the Court of Appeals agreed \"that petitioners suffered anguish, embarrassment and mental sufferings due to failure of private respondent to perform its obligation to the petitioners\" and that it \"acted in wanton disregard of the rights of petitioners,\" which \"lay the basis and justification\" for the damages. **A is wrong:** wanton disregard was found. **C and D are wrong:** these were the trial court's reasons for its small award, not accepted by the Supreme Court. **Bar trap:** the agency's small commission does not limit its liability for damages.",
+      "caseIds": [
+        "case-0068"
+      ],
+      "source": {
+        "caseTitle": "Makabali, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-46877",
+        "url": "https://lawphil.net/judjuris/juri1988/jan1988/gr_l-46877_1988.html",
+        "part": "Decision, discussion of the travel agency's liability",
+        "excerpt": "As reflected in the records of the case, the Court of appeals was in agreement with the findings of the trial court that petitioners suffered anguish, embarrassment and mental sufferings due to failure of private respondent to perform its obligation to the petitioners. According to the Court of Appeals, private respondent acted in wanton disregard of the rights of petitioners. These pronouncements lay the basis and justification for this Court to award petitioners moral and exemplary damages."
+      }
+    },
+    {
+      "id": "q-0742",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Which circumstances did the Court in Makabali v. Court of Appeals consider in increasing the award of damages?",
+      "choices": {
+        "A": "The size of the travel agency's monthly income only.",
+        "B": "The number of days the tour lasted only.",
+        "C": "The petitioners' social standing, the embarrassment and humiliation they suffered, and their anxiety on their first trip abroad under uncertain circumstances with meager funds.",
+        "D": "The amount the petitioners paid for the tour package only."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court cited \"the social standing of petitioners and the embarrassment and humiliation suffered by them, the anxiety they must have felt in their first journey to a foreign land under uncertain circumstances and with meager funds which could run out any time.\" **A, B and D are wrong:** none was the basis stated. **Bar trap:** the social standing of the victims may be considered in fixing moral damages.",
+      "caseIds": [
+        "case-0068"
+      ],
+      "source": {
+        "caseTitle": "Makabali, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-46877",
+        "url": "https://lawphil.net/judjuris/juri1988/jan1988/gr_l-46877_1988.html",
+        "part": "Decision, discussion of moral damages (circumstances considered)",
+        "excerpt": "In the light of the circumstances obtaining in the case at bar, especially the social standing of petitioners and the embarrassment and humiliation suffered by them, the anxiety they must have felt in their first journey to a foreign land under uncertain circumstances and with meager funds which could run out any time, We are inclined to award damages to the petitioner more than what was awarded by the Court of Appeals."
+      }
+    },
+    {
+      "id": "q-0743",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "What was the final award in Makabali v. Court of Appeals?",
+      "choices": {
+        "A": "₱5,000 moral and exemplary damages and ₱1,000 attorney's fees, affirmed.",
+        "B": "₱35,000 as moral and exemplary damages and ₱5,000 attorney's fees, with costs.",
+        "C": "₱200,000 moral damages, following Lopez v. Pan American World Airways.",
+        "D": "₱500 moral and exemplary damages, as the trial court had awarded."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court modified the decision, \"increasing the award to petitioners of moral and exemplary damages to P35,000.00 and attorney's fees to P5,000.00 with costs.\" **A and D are wrong:** these were the lower courts' awards. **C is wrong:** awards in other cases only guided the Court, and the prayer capped the amount. **Bar trap:** the cap came from the complaint itself.",
+      "caseIds": [
+        "case-0068"
+      ],
+      "source": {
+        "caseTitle": "Makabali, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-46877",
+        "url": "https://lawphil.net/judjuris/juri1988/jan1988/gr_l-46877_1988.html",
+        "part": "Decision, the disposition",
+        "excerpt": "WHEREFORE, the decision of the Court of Appeals subject of the petition for review is hereby modified, increasing the award to petitioners of moral and exemplary damages to P35,000.00 and attorney's fees to P5,000.00 with costs."
       }
     }
   ]
