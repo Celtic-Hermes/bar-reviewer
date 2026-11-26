@@ -421,6 +421,21 @@
       "ruling": "The decision was affirmed. Fraud may be proved by circumstantial evidence but is not to be lightly inferred; the plaintiff's uncorroborated testimony did not overcome the presumption of good faith and regularity, and her own conduct (securing a residence certificate, accepting the first installment) belied her claim. The price was not grossly inadequate, and even if the sale were deemed a partition under Article 1082, the lesion was less than the one-fourth required by Article 1098. On the counterclaim, damages and attorney's fees are primarily in the trial court's discretion, which found no facts to support them. The allegations of fraud in the complaint were privileged; failure to seek an amicable settlement among relatives under Article 222 had not been pleaded; there was no proof of mental suffering on which to base moral damages; and the absence of moral, temperate or compensatory damages blocks the grant of exemplary damages (Art. 2234).",
       "keyDoctrine": "Moral damages need proof of mental suffering; without it, none can be awarded. Exemplary damages cannot be granted in the absence of moral, temperate or compensatory damages (Art. 2234). Allegations in a complaint are privileged, so filing a suit that fails does not by itself support a counterclaim for damages. Fraud is not lightly inferred and must overcome the presumption of good faith. A partition may be rescinded for lesion only if an heir receives less, by at least one-fourth, than his share (Art. 1098).",
       "sourceUrl": "https://lawphil.net/judjuris/juri1963/jul1963/gr_l-17117_1963.html"
+    },
+    {
+      "id": "case-0076",
+      "status": "draft",
+      "name": "Ramos, et al. v. Ramos, et al.",
+      "grNumber": "G.R. No. L-19872",
+      "year": 1974,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "facts": "Martin Ramos left a large landed estate in Negros Occidental, settled in an intestate proceeding that ended in 1913–1914 with a court-approved partition in which his natural children received only cash, while the legitimate children took the lands. In 1957, more than forty years later, some of the natural children and their heirs sued the heirs of a legitimate son for reconveyance of their shares, claiming the lands were held in trust for them and that the partition was unfair and irregular. The defendants pleaded res judicata and prescription and counterclaimed for ₱50,000 moral damages and attorney's fees, claiming the suit was baseless and filed in bad faith. The trial court dismissed the complaint on the ground of res judicata but did not act on the counterclaim; both sides appealed.",
+      "issue": "(1) Is the action for reconveyance barred? (2) Are the defendants entitled to moral damages, attorney's fees and exemplary damages on their counterclaim?",
+      "ruling": "The judgment was affirmed, and the counterclaim dismissed. No express trust was proved, and an action to enforce an implied (resulting or constructive) trust may be barred by prescription and laches; the action, filed forty years after it accrued, was barred by prescription and res judicata, since the final decree of distribution vests title. On the counterclaim, moral damages may be recovered only in the cases listed in Articles 2219 and 2220 (and 1764 and 2206) or analogous cases; this litigation was not one of them, and the worries and anxiety of a defendant in a suit not maliciously instituted are not the moral damages the law contemplates. The adverse result of an action does not make it wrongful, for no penalty should be placed on the right to litigate. Attorney's fees are recoverable only in the cases in Article 2208; the plaintiffs honestly believed they had a good cause of action and acted in good faith, so neither paragraph 4 (clearly unfounded suit) nor paragraph 11 applied. Exemplary damages, raised only on appeal, could not be granted since no compensatory or moral damages were awarded.",
+      "keyDoctrine": "Moral damages may be recovered only in the cases enumerated in Articles 2219 and 2220 (and 1764 and 2206) or analogous cases; the worries and anxiety of a defendant in a suit not maliciously instituted are not compensable. The adverse result of an action does not per se make it wrongful; no penalty on the right to litigate. Attorney's fees need a specific ground under Article 2208, and an adverse decision does not ipso facto justify them. Exemplary damages require an award of compensatory or moral damages. An action to enforce an implied trust may be barred by prescription and laches.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri1974/dec1974/gr_l_19872_1974.html"
     }
   ],
   "questions": [
@@ -6874,6 +6889,237 @@
         "url": "https://lawphil.net/judjuris/juri1963/jul1963/gr_l-17117_1963.html",
         "part": "Decision, the disposition",
         "excerpt": "We find no reason for disturbing the decision appealed from, and, therefore, the same is hereby affirmed."
+      }
+    },
+    {
+      "id": "q-0800",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Heirs sued their relatives for reconveyance of land, alleging an unfair partition made decades earlier. They lost on prescription. The defendants counterclaim for ₱50,000 moral damages, claiming the suit caused them mental anguish, wounded feelings and serious anxiety. The plaintiffs had honestly believed they had a good cause of action. Should moral damages be awarded? Explain, citing Ramos v. Ramos.",
+      "suggestedAnswer": {
+        "answer": "No. The litigation is not among the cases in which the law allows moral damages, and the worries and anxiety of a defendant in a suit that was not maliciously instituted are not the moral damages contemplated by law.",
+        "legalBasis": "In Ramos v. Ramos, the Court held that \"Articles 2219 and 2220 (also 1764 and 2206) of the Civil Code indicate the cases where morel damages may be recovered. The instant litigation does not fall within any of the enumerated cases. Nor can it be regarded as analogous.\" \"The worries and anxiety of a defendant in a litigation that was not maliciously instituted are not the moral damages contemplated in the law.\" Quoting Barretto v. Arevalo: \"The adverse result of an action does not per se make the act wrongful and subject the actor to the payment of moral damages. The law could not have meant to impose a penalty on the right to litigate.\"",
+        "application": "The plaintiffs, some of whom were minors at the partition and received no land, had reason to feel aggrieved and sued in good faith. Their loss on prescription does not make their suit wrongful.",
+        "conclusion": "No moral damages. **Bar trap:** moral damages are limited to the cases in Articles 2219, 2220 (and 1764, 2206) or analogous cases; an ordinary losing suit is not one of them unless it was malicious."
+      },
+      "keyPoints": [
+        "Moral damages only in the cases in Arts. 2219, 2220 (also 1764, 2206) or analogous cases",
+        "This litigation was not among them",
+        "A defendant's worries in a suit not maliciously filed are not compensable",
+        "An adverse result does not make the suit wrongful",
+        "No penalty on the right to litigate"
+      ],
+      "caseIds": [
+        "case-0076"
+      ],
+      "source": {
+        "caseTitle": "Ramos, et al. v. Ramos, et al.",
+        "grNumber": "G.R. No. L-19872",
+        "url": "https://lawphil.net/judjuris/juri1974/dec1974/gr_l_19872_1974.html",
+        "part": "Decision, discussion of the defendants' appeal (moral damages)",
+        "excerpt": "Articles 2219 and 2220 (also 1764 and 2206) of the Civil Code indicate the cases where morel damages may be recovered. The instant litigation does not fall within any of the enumerated cases. Nor can it be regarded as analogous to any of the cases mentioned in those articles. Hence, defendants' claim for moral damages cannot be sustained (Ventanilla vs. Centeno, 110 Phil. 811, 814). The worries and anxiety of a defendant in a litigation that was not maliciously instituted are not the moral damages contemplated in the law (Solis & Yarisantos vs. Salvador, L-17022, August 14, 1965, 14 SCRA 887). \"The adverse result of an action does not per se make the act wrongful and subject the actor to the payment of moral damages. The law could not have meant to impose a penalty on the right to litigate, such right is so precious that moral damages may not be charged on those who may exercise it erroneously.\""
+      }
+    },
+    {
+      "id": "q-0801",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "In the same case, the winning defendants also asked for attorney's fees and, for the first time in their appellate brief, exemplary damages. Under which provisions of Article 2208 might attorney's fees be claimed by a winning defendant, and should either award be granted? Explain, citing Ramos v. Ramos.",
+      "suggestedAnswer": {
+        "answer": "Paragraphs 4 (a clearly unfounded civil action against the claimant) and 11 (where the court deems it just and equitable) of Article 2208 could possibly apply, but neither justifies fees here because the plaintiffs acted in evident good faith. Exemplary damages cannot be granted, since no compensatory or moral damages were awarded, and the claim appeared to be an afterthought.",
+        "legalBasis": "In Ramos v. Ramos, the Court explained that under Article 2208, in the absence of stipulation, attorney's fees cannot be recovered except in the eleven instances listed; the defendants did not even point out the provision they relied on. Paragraphs 4 and 11 might apply, but \"it cannot be asseverated with dogmatic finality that plaintiffs' action was manifestly unfounded or was maliciously filed ... They acted in evident good faith.\" \"It is not sound public policy to set a premium on the right to litigate. An adverse decision does not ipso facto justify the award of attorney's fees to the winning party.\" And \"[s]ince no compensatory and moral damages have been awarded in this case, defendants' claim for exemplary damages ... cannot be granted (Art. 2229, Civil Code).\"",
+        "application": "The plaintiffs had reason to feel aggrieved, given that they received no land and were poor compared with their half-brother's heirs. So their suit was not clearly unfounded, and it was not just to make them pay fees.",
+        "conclusion": "No attorney's fees and no exemplary damages. **Bar trap:** a defendant who wins is not automatically entitled to attorney's fees; the suit must be clearly unfounded or malicious, or the award otherwise just and equitable."
+      },
+      "keyPoints": [
+        "Art. 2208: no attorney's fees absent stipulation, except in the listed cases",
+        "Para. 4: clearly unfounded civil action; para. 11: just and equitable",
+        "The plaintiffs acted in evident good faith",
+        "No premium on the right to litigate; an adverse decision does not ipso facto justify fees",
+        "No compensatory or moral damages: no exemplary damages"
+      ],
+      "caseIds": [
+        "case-0076"
+      ],
+      "source": {
+        "caseTitle": "Ramos, et al. v. Ramos, et al.",
+        "grNumber": "G.R. No. L-19872",
+        "url": "https://lawphil.net/judjuris/juri1974/dec1974/gr_l_19872_1974.html",
+        "part": "Decision, discussion of the defendants' appeal (attorney's fees and exemplary damages)",
+        "excerpt": "We hold that, notwithstanding the dismissal of the action, no attorney's fees should be granted to the defendants. Under the facts of the case, it cannot be asseverated with dogmatic finality that plaintiffs' action was manifestly unfounded or was maliciously filed to harass and embarrass the defendants. All indications point to the fact that the plaintiffs honestly thought that they had a good cause of action. They acted in evident good faith. … It is not sound public policy to set a premium on the right to litigate. An adverse decision does not ipso facto justify the award of attorney's fees to the winning party (Herrera vs. Luy Kim, supra; Heirs of Justiva vs. Gustilo, 61 O. G. 6959. Cf. Lazatin vs. Twano and Castro, 112 Phil. 733, 741). Since no compensatory and moral damages have been awarded in this case, defendants' claim for exemplary damages, which was ventilated for the first time in their appellants' brief, may be as an afterthought, cannot be granted(Art. 2229, Civil Code)."
+      }
+    },
+    {
+      "id": "q-0802",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Distinguish an express trust from an implied trust. May an action to recover property held under an implied trust be barred by prescription or laches? Explain, citing Ramos v. Ramos.",
+      "suggestedAnswer": {
+        "answer": "Express trusts are created by the intention of the trustor or of the parties; implied trusts come into being by operation of law. An express trust over immovables cannot be proved by oral evidence, while an implied trust may be. An action to enforce an implied trust, whether resulting or constructive, may be barred by laches, and prescription may supervene in an implied trust; the action based on a constructive trust is prescriptible.",
+        "legalBasis": "In Ramos v. Ramos, the Court explained that \"[t]rusts are either express or implied. Express trusts are created by the intention of the trust or of the parties. Implied trusts come into being by operation of law\"; and \"[n]o express trusts concerning an immovable or any interest therein may be proven by oral evidence. An implied trust may be proven by oral evidence.\" The rule that a trustee cannot acquire trust property by prescription applies squarely to express trusts, because the trustee's possession is not adverse; but \"[t]he prescriptibility of an action for reconveyance based on constructive trust is now settled,\" and \"whether the trust is resulting or constructive, its enforcement may be barred by laches.\"",
+        "application": "The plaintiffs proved no express trust, and the defendants' predecessors had repudiated any trust by claiming the lots in cadastral proceedings and leasing them. Filed forty years after the cause of action accrued, the action was barred by prescription and res judicata.",
+        "conclusion": "Yes, an implied trust action may be barred. **Bar trap:** the imprescriptibility of actions against a trustee is the rule for express trusts, not for constructive trusts."
+      },
+      "keyPoints": [
+        "Express trusts: created by intention; implied trusts: by operation of law",
+        "No express trust over immovables by oral evidence; implied trusts may be proved orally",
+        "Imprescriptibility applies to express trusts (the trustee's possession is not adverse)",
+        "Action on a constructive trust prescribes; implied trusts may be barred by laches",
+        "An action filed 40 years later was barred"
+      ],
+      "caseIds": [
+        "case-0076"
+      ],
+      "source": {
+        "caseTitle": "Ramos, et al. v. Ramos, et al.",
+        "grNumber": "G.R. No. L-19872",
+        "url": "https://lawphil.net/judjuris/juri1974/dec1974/gr_l_19872_1974.html",
+        "part": "Decision, discussion of trusts, prescription and laches",
+        "excerpt": "\"Trusts are either express or implied. Express trusts are created by the intention of the trust or of the parties. Implied trusts come into being by operation of law.\" (Art. 1144, Civil Code). \"No express trusts concerning an immovable or any interest therein may be proven by oral evidence. An implied trust may be proven by oral evidence\" (Ibid, Arts. 1443 and 1457). … That rule applies squarely to express trusts. The basis of the rule is that the possession of a trustee is not adverse. … With respect to constructive trusts, the rule is different. The prescriptibility of an action for reconveyance based on constructive trust is now settled … And whether the trust is resulting or constructive, its enforcement may be barred by laches"
+      }
+    },
+    {
+      "id": "q-0803",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "According to Ramos v. Ramos, the worries and anxiety of a defendant in a litigation that was not maliciously instituted",
+      "choices": {
+        "A": "are always compensable as moral damages.",
+        "B": "are compensable if the plaintiff loses.",
+        "C": "are not the moral damages contemplated in the law.",
+        "D": "are compensable as exemplary damages."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court said: \"The worries and anxiety of a defendant in a litigation that was not maliciously instituted are not the moral damages contemplated in the law.\" **A and B are wrong:** an adverse result does not per se make the suit wrongful. **D is wrong:** exemplary damages require other damages first. **Bar trap:** malice in filing is the key.",
+      "caseIds": [
+        "case-0076"
+      ],
+      "source": {
+        "caseTitle": "Ramos, et al. v. Ramos, et al.",
+        "grNumber": "G.R. No. L-19872",
+        "url": "https://lawphil.net/judjuris/juri1974/dec1974/gr_l_19872_1974.html",
+        "part": "Decision, discussion of the defendants' appeal (moral damages)",
+        "excerpt": "The worries and anxiety of a defendant in a litigation that was not maliciously instituted are not the moral damages contemplated in the law (Solis & Yarisantos vs. Salvador, L-17022, August 14, 1965, 14 SCRA 887)."
+      }
+    },
+    {
+      "id": "q-0804",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "In Ramos v. Ramos, which provisions of the Civil Code did the Court say indicate the cases where moral damages may be recovered?",
+      "choices": {
+        "A": "Articles 2219 and 2220 (also 1764 and 2206).",
+        "B": "Articles 2199 and 2200.",
+        "C": "Articles 2229 and 2232.",
+        "D": "Articles 2208 and 2212."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court said: \"Articles 2219 and 2220 (also 1764 and 2206) of the Civil Code indicate the cases where morel damages may be recovered.\" **B is wrong:** those concern actual damages. **C is wrong:** those concern exemplary damages. **D is wrong:** those concern attorney's fees and interest. **Bar trap:** Article 1764 (carriers, for death of a passenger) and Article 2206 (death by crime or quasi-delict) also allow moral damages.",
+      "caseIds": [
+        "case-0076"
+      ],
+      "source": {
+        "caseTitle": "Ramos, et al. v. Ramos, et al.",
+        "grNumber": "G.R. No. L-19872",
+        "url": "https://lawphil.net/judjuris/juri1974/dec1974/gr_l_19872_1974.html",
+        "part": "Decision, discussion of the defendants' appeal (the cases for moral damages)",
+        "excerpt": "Articles 2219 and 2220 (also 1764 and 2206) of the Civil Code indicate the cases where morel damages may be recovered."
+      }
+    },
+    {
+      "id": "q-0805",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Why did the Court in Ramos v. Ramos deny attorney's fees to the winning defendants?",
+      "choices": {
+        "A": "Because the defendants were the legitimate heirs.",
+        "B": "Because the plaintiffs honestly thought they had a good cause of action and acted in evident good faith, so the action was not manifestly unfounded or malicious.",
+        "C": "Because attorney's fees can never be awarded to defendants.",
+        "D": "Because the defendants had no written contract with their counsel."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court held that \"it cannot be asseverated with dogmatic finality that plaintiffs' action was manifestly unfounded or was maliciously filed ... All indications point to the fact that the plaintiffs honestly thought that they had a good cause of action. They acted in evident good faith.\" **A is wrong:** irrelevant. **C is wrong:** a defendant may recover fees on a counterclaim in a clearly unfounded suit. **D is wrong:** not the reason. **Bar trap:** good faith of the losing party defeats a claim for fees under Article 2208(4).",
+      "caseIds": [
+        "case-0076"
+      ],
+      "source": {
+        "caseTitle": "Ramos, et al. v. Ramos, et al.",
+        "grNumber": "G.R. No. L-19872",
+        "url": "https://lawphil.net/judjuris/juri1974/dec1974/gr_l_19872_1974.html",
+        "part": "Decision, discussion of the defendants' appeal (attorney's fees)",
+        "excerpt": "All indications point to the fact that the plaintiffs honestly thought that they had a good cause of action. They acted in evident good faith."
+      }
+    },
+    {
+      "id": "q-0806",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "In Ramos v. Ramos, the defendants' claim for exemplary damages was denied because",
+      "choices": {
+        "A": "no compensatory and moral damages had been awarded, and the claim was raised for the first time in their appellants' brief.",
+        "B": "exemplary damages are never allowed in civil cases.",
+        "C": "the defendants did not prove the plaintiffs' financial capacity.",
+        "D": "the action had prescribed."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court said: \"Since no compensatory and moral damages have been awarded in this case, defendants' claim for exemplary damages, which was ventilated for the first time in their appellants' brief, may be as an afterthought, cannot be granted (Art. 2229, Civil Code).\" **B is wrong:** they are allowed in proper cases. **C and D are wrong:** not the reasons given. **Bar trap:** exemplary damages are \"in addition to\" other damages.",
+      "caseIds": [
+        "case-0076"
+      ],
+      "source": {
+        "caseTitle": "Ramos, et al. v. Ramos, et al.",
+        "grNumber": "G.R. No. L-19872",
+        "url": "https://lawphil.net/judjuris/juri1974/dec1974/gr_l_19872_1974.html",
+        "part": "Decision, discussion of the defendants' appeal (exemplary damages)",
+        "excerpt": "Since no compensatory and moral damages have been awarded in this case, defendants' claim for exemplary damages, which was ventilated for the first time in their appellants' brief, may be as an afterthought, cannot be granted(Art. 2229, Civil Code)."
+      }
+    },
+    {
+      "id": "q-0807",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "What was the result in Ramos v. Ramos?",
+      "choices": {
+        "A": "The partition was annulled and the case remanded to fix the plaintiffs' shares.",
+        "B": "The defendants were awarded moral damages and attorney's fees.",
+        "C": "The plaintiffs were declared not to be acknowledged natural children.",
+        "D": "The trial court's judgment was affirmed, the action being barred by prescription and res judicata, with the clarification that the defendants' counterclaim is dismissed."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The Court held the action \"unquestionably barred by prescription and res judicata\" and ruled: \"the trial court's judgment is affirmed with the clarification that defendants' counterclaim is dismissed.\" **A is wrong:** the plaintiffs slept on their rights for over forty years. **B is wrong:** the counterclaim failed. **C is wrong:** the Court upheld their status as acknowledged natural children. **Bar trap:** a claim can be sympathetic yet barred by delay.",
+      "caseIds": [
+        "case-0076"
+      ],
+      "source": {
+        "caseTitle": "Ramos, et al. v. Ramos, et al.",
+        "grNumber": "G.R. No. L-19872",
+        "url": "https://lawphil.net/judjuris/juri1974/dec1974/gr_l_19872_1974.html",
+        "part": "Decision, discussion of the plaintiffs' appeal (prescription and the disposition)",
+        "excerpt": "WHEREFORE, the trial court's judgment is affirmed with the clarification that defendants' counterclaim is dismissed."
       }
     }
   ]
