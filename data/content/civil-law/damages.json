@@ -76,6 +76,21 @@
       "ruling": "The Court affirmed the conviction for murder and modified the damages. The trial court's assessment of credibility stands; minor inconsistencies enhance credibility; there is no standard reaction to a shocking event; and flight indicates guilt but its converse does not prove innocence. Treachery was present, since the officer was stabbed from behind without warning, and it was alleged in the Information; objections to the Information's sufficiency were in any case waived. Civil indemnity was increased to ₱75,000 and moral damages to ₱50,000, exemplary damages of ₱30,000 were added under Article 2230 because of treachery, and actual damages were fixed at the ₱80,224 shown by receipts. Under Article 2206, the lower courts failed to award loss of earning capacity; computing life expectancy as 2/3 (80 − 29) = 34 years and net income as gross annual income (₱103,260) less 50% living expenses, the Court awarded ₱1,755,420, with 6% interest on all damages from finality.",
       "keyDoctrine": "Under Article 2206, the defendant is liable for the loss of the earning capacity of the deceased, assessed and awarded in every case unless the deceased had no earning capacity due to a permanent disability not caused by the defendant. The factors are the number of years (life expectancy = 2/3 × (80 − age at death)) and the rate of loss (net income, which is gross income less living expenses). Exemplary damages may be awarded under Article 2230 when the crime is committed with an aggravating circumstance such as treachery.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2012/apr2012/gr_188322_2012.html"
+    },
+    {
+      "id": "case-0053",
+      "status": "draft",
+      "name": "Quirante, et al. v. Intermediate Appellate Court, et al.",
+      "grNumber": "G.R. No. 73886",
+      "year": 1989,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "facts": "Atty. John Quirante represented Dr. Indalecio Casasola in a suit against a building contractor and its surety, PHILAMGEN, and won a judgment for actual, moral and exemplary damages, attorney's fees of ₱30,000 and the ₱120,000 surety bond. While PHILAMGEN's challenge to the judgment was pending in the Supreme Court, Dr. Casasola died. Atty. Quirante then moved in the same case for confirmation of his attorney's fees, claiming an oral agreement with the late Dr. Casasola, allegedly confirmed in writing by the widow and two daughters, under which he would get ₱30,000 if the surety bond was recovered, and any award above the bond would be divided equally among the heirs, himself and Atty. Dante Cruz. The trial court confirmed the fees; the Intermediate Appellate Court set aside the confirmation as premature and held that it could not bind heirs who did not sign.",
+      "issue": "Was the trial court's confirmation of the attorney's fees proper?",
+      "ruling": "The Court affirmed the Intermediate Appellate Court, with an observation. Counsel may claim attorney's fees either in the very action in which the services were rendered or in a separate action; claiming them in the same action is proper, since the right is an incident of the case and the court is familiar with the lawyer's services, and it avoids multiplicity of suits. The fees claimed here, based on a contract for professional services, differ from attorney's fees as damages under Article 2208, which are awarded to the litigant, not to counsel. But the confirmation was premature: the main case was not yet final, and an attorney's fee cannot be determined until the main litigation is decided and something has been recovered from which the fee is to be paid, especially as the agreement was contingent. The Court rejected, however, the appellate court's holding that the confirmation could not affect non-signatory heirs, since that too should be determined by the trial court after the case is adjudicated.",
+      "keyDoctrine": "Attorney's fees as damages under Article 2208 are awarded to the litigant, who is the judgment creditor, while attorney's fees for professional services are owed by the client to counsel under their contract. Counsel's claim for fees may be made in the same action or in a separate action, but a fee contingent on recovery cannot be determined until the main litigation has been decided and something has been recovered from which the fee is to be paid.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri1989/jan1989/gr_73886_1989.html"
     }
   ],
   "questions": [
@@ -1227,6 +1242,235 @@
         "url": "https://lawphil.net/judjuris/juri2012/apr2012/gr_188322_2012.html",
         "part": "Discussion, sufficiency of the Information",
         "excerpt": "Contrary to Asilan’s contention, the qualifying circumstance of \"treachery\" was specifically alleged in the Information. \"The rule is that qualifying circumstances must be properly pleaded in the Information in order not to violate the accused’s constitutional right to be properly informed of the nature and cause of the accusation against him.\" … Moreover, in People v. Candaza, this Court held that \"[a]n Information which lacks essential allegations may still sustain a conviction when the accused fails to object to its sufficiency during the trial, and the deficiency was cured by competent evidence presented therein.\""
+      }
+    },
+    {
+      "id": "q-0616",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Distinguish attorney's fees awarded as an item of damages under Article 2208 of the Civil Code from the attorney's fees that a lawyer claims from his own client for professional services, as explained in Quirante v. Intermediate Appellate Court.",
+      "suggestedAnswer": {
+        "answer": "Attorney's fees under Article 2208 are an item of damages awarded in favor of the litigant, not of his counsel; the litigant is the judgment creditor who may enforce them by execution against the losing party. Attorney's fees for professional services, on the other hand, arise from the contract between the lawyer and the client, with the lawyer as creditor and the client as debtor.",
+        "legalBasis": "In Quirante v. IAC, the Court held that what the petitioners claimed as attorney's fees was \"different from attorney's fees as an item of damages provided for under Article 2208 of the Civil Code, wherein the award is made in favor of the litigant, not of his counsel, and the litigant, not his counsel, is the judgment creditor who may enforce the judgment for attorney's fees by execution.\" The petitioners' claims were based on an alleged contract for professional services.",
+        "application": "Thus the ₱30,000 attorney's fees awarded against the contractor and its surety in the main judgment belonged to the client as damages, while Atty. Quirante's claim for a share of the recovery under his agreement with the client was a separate claim against the client and his heirs.",
+        "conclusion": "Article 2208 fees go to the client and are paid by the losing party; professional fees go to the lawyer and are paid by the client. **Bar trap:** a lawyer cannot treat the Article 2208 award as automatically his own; it is the client's damages."
+      },
+      "keyPoints": [
+        "Art. 2208 attorney's fees: an item of damages awarded to the litigant, who is the judgment creditor",
+        "Paid by the losing party; enforceable by the litigant through execution",
+        "Fees for professional services: based on the lawyer-client contract",
+        "There the lawyer is the creditor and the client the debtor"
+      ],
+      "caseIds": [
+        "case-0053"
+      ],
+      "source": {
+        "caseTitle": "Quirante, et al. v. Intermediate Appellate Court, et al.",
+        "grNumber": "G.R. No. 73886",
+        "url": "https://lawphil.net/judjuris/juri1989/jan1989/gr_73886_1989.html",
+        "part": "Decision, attorney's fees as damages and fees for professional services",
+        "excerpt": "What is being claimed here as attorney's fees by petitioners is, however, different from attorney's fees as an item of damages provided for under Article 2208 of the Civil Code, wherein the award is made in favor of the litigant, not of his counsel, and the litigant, not his counsel, is the judgment creditor who may enforce the judgment for attorney's fees by execution. Here, the petitioner's claims are based on an alleged contract for professional services, with them as the creditors and the private respondents as the debtors."
+      }
+    },
+    {
+      "id": "q-0617",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "While the client's judgment for damages is still under review by the Supreme Court, the client's lawyer moves in the same case for the court to confirm his fees under a contingent fee agreement: a fixed fee if a surety bond is recovered, plus a share of any award above the bond. May he claim his fees in the same action? Should the court confirm them now? Explain.",
+      "suggestedAnswer": {
+        "answer": "He may claim his fees in the same action, but the court should not confirm them yet; the claim is premature until the main case is final and something has been recovered from which the fee is to be paid.",
+        "legalBasis": "In Quirante v. IAC, the Court held that counsel's claim for attorney's fees may be asserted either in the very action in which the services were rendered or in a separate action. In the same action, the court may pass upon it even if the amount is below its jurisdictional minimum, since the right to fees is an incident of the case and the court is familiar with the lawyer's services; this avoids multiplicity of suits. But since the main case had not become final, the determination of the fees should be held in abeyance: an attorney's fee cannot be determined until after the main litigation has been decided and the subject of recovery is at the disposition of the court; the issue arises only when something has been recovered from which the fee is to be paid.",
+        "application": "The fee agreement here was contingent on recovering the surety bond and on any excess award, and the award itself might still be changed on review. Until the case is final and the amount recovered is known, there is nothing yet from which the fee can be paid or measured.",
+        "conclusion": "Proper forum, premature timing; the confirmation should await the final outcome. **Bar trap:** being allowed to file in the same action does not mean the court can fix a contingent fee before recovery."
+      },
+      "keyPoints": [
+        "Fees may be claimed in the same action or in a separate action",
+        "In the same action: an incident of the case; the court knows the services; avoids multiplicity of suits",
+        "Determination is premature while the main case is not final",
+        "A fee is determined only after the main litigation is decided and something has been recovered",
+        "Especially for a contingent fee agreement"
+      ],
+      "caseIds": [
+        "case-0053"
+      ],
+      "source": {
+        "caseTitle": "Quirante, et al. v. Intermediate Appellate Court, et al.",
+        "grNumber": "G.R. No. 73886",
+        "url": "https://lawphil.net/judjuris/juri1989/jan1989/gr_73886_1989.html",
+        "part": "Decision, where and when counsel may claim fees",
+        "excerpt": "Well settled is the rule that counsel's claim for attorney's fees may be asserted either in the very action in which the services in question have been rendered, or in a separate action. If the first alternative is chosen, the Court may pass upon said claim, even if its amount were less than the minimum prescribed by law for the jurisdiction of said court, upon the theory that the right to recover attorney's fees is but an incident of the case in which the services of counsel have been rendered .\" It also rests on the assumption that the court trying the case is to a certain degree already familiar with the nature and extent of the lawyer's services. The rule against multiplicity of suits will in effect be subserved. … Since the main case from which the petitioner's claims for their fees may arise has not yet become final, the determination of the propriety of said fees and the amount thereof should be held in abeyance. This procedure gains added validity in the light of the rule that the remedy for recovering attorney's fees as an incident of the main action may be availed of only when something is due to the client. Thus, it was ruled that: xxx an attorney's fee cannot be determined until after the main litigation has been decided and the subject of recovery is at the disposition of the court. The issue over attorney's fee only arises when something has been recovered from which the fee is to be paid."
+      }
+    },
+    {
+      "id": "q-0618",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "After the client died, his widow and two of his daughters signed a document confirming a fee agreement between him and his lawyer; the other heirs did not sign. The appellate court ruled that the confirmation could not adversely affect the heirs who did not sign. How did the Supreme Court treat this ruling in Quirante v. Intermediate Appellate Court?",
+      "suggestedAnswer": {
+        "answer": "The Supreme Court rejected that portion of the appellate court's ruling as premature and pre-emptive; the effect of the confirmation on all the heirs should be determined by the trial court after the entire case is adjudicated.",
+        "legalBasis": "In Quirante v. IAC, the Court held that the orderly administration of justice dictates that the effect of the alleged confirmation by some heirs be determined by the trial court, as it involves the same contingencies in determining the propriety and extent of the fees. The trial court will be in a better position, after adjudicating the entire case (including the surety's liability and the heirs' respective participations in the award), to determine with evidentiary support matters such as whether the agreement with the deceased binds all his heirs.",
+        "application": "Ruling now that the non-signatory heirs are not bound would pre-empt factual and evidentiary matters that should first be presented to the trial court, and it rests on the same premise (an eventual award) that made the confirmation premature.",
+        "conclusion": "The question was left for the trial court after final adjudication, and the appellate court's holding on non-signatories was rejected. **Bar trap:** the Supreme Court affirmed the result (setting aside the confirmation) but not every reason the appellate court gave."
+      },
+      "keyPoints": [
+        "The effect of a confirmation by some heirs is for the trial court to determine",
+        "It depends on the same contingencies as the fees themselves",
+        "The trial court will decide after the entire case is adjudicated, with evidence",
+        "The appellate court's ruling on non-signatories was rejected as premature and pre-emptive"
+      ],
+      "caseIds": [
+        "case-0053"
+      ],
+      "source": {
+        "caseTitle": "Quirante, et al. v. Intermediate Appellate Court, et al.",
+        "grNumber": "G.R. No. 73886",
+        "url": "https://lawphil.net/judjuris/juri1989/jan1989/gr_73886_1989.html",
+        "part": "Decision, the effect of the confirmation by some heirs",
+        "excerpt": "With regard to the effect of the alleged confirmation of the attorney's fees by some of the heirs of the deceased. We are of the considered view that the orderly administration of justice dictates that such issue be likewise determined by the court a quo inasmuch as it also necessarily involves the same contingencies in determining the propriety and assessing the extent of recovery of attorney's fees by both petitioners herein. … We, therefore, take exception to and reject that portion of the decision of the respondent court which holds that the alleged confirmation to attorney's fees should not adversely affect the non-signatories thereto, since it is also premised on the eventual grant of damages to the Casasola family, hence the same objection of prematurity obtains and such a holding may be pre-emptive of factual and evidentiary matters that may be presented for consideration by the trial court."
+      }
+    },
+    {
+      "id": "q-0619",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "According to Quirante v. Intermediate Appellate Court, who is the judgment creditor of attorney's fees awarded as an item of damages under Article 2208 of the Civil Code?",
+      "choices": {
+        "A": "The litigant's counsel.",
+        "B": "The litigant, in whose favor the award is made.",
+        "C": "The court.",
+        "D": "The counsel and the litigant jointly."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court said that under Article 2208 \"the award is made in favor of the litigant, not of his counsel, and the litigant, not his counsel, is the judgment creditor who may enforce the judgment for attorney's fees by execution.\" **A and D are wrong** for the same reason. **C is wrong:** the court is not a creditor. **Bar trap:** do not confuse these damages with the lawyer's professional fees.",
+      "caseIds": [
+        "case-0053"
+      ],
+      "source": {
+        "caseTitle": "Quirante, et al. v. Intermediate Appellate Court, et al.",
+        "grNumber": "G.R. No. 73886",
+        "url": "https://lawphil.net/judjuris/juri1989/jan1989/gr_73886_1989.html",
+        "part": "Decision, Article 2208 attorney's fees",
+        "excerpt": "What is being claimed here as attorney's fees by petitioners is, however, different from attorney's fees as an item of damages provided for under Article 2208 of the Civil Code, wherein the award is made in favor of the litigant, not of his counsel, and the litigant, not his counsel, is the judgment creditor who may enforce the judgment for attorney's fees by execution."
+      }
+    },
+    {
+      "id": "q-0620",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Under Quirante v. Intermediate Appellate Court, why may a court pass upon counsel's claim for fees in the very action where the services were rendered, even if the amount is below the court's jurisdictional minimum?",
+      "choices": {
+        "A": "Because attorney's fees are always within the jurisdiction of every court.",
+        "B": "Because the client consents to it by hiring counsel.",
+        "C": "Because the claim must always be filed in a separate action.",
+        "D": "Because the right to recover attorney's fees is but an incident of the case in which the services were rendered; the court is already familiar with the services; and it avoids multiplicity of suits."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The Court explained that the court may pass upon the claim \"upon the theory that the right to recover attorney's fees is but an incident of the case in which the services of counsel have been rendered,\" that \"the court trying the case is to a certain degree already familiar with the nature and extent of the lawyer's services,\" and that \"[t]he rule against multiplicity of suits will in effect be subserved.\" **A and B are wrong:** neither is the reason given. **C is wrong:** the claim may be made either in the same action or separately. **Bar trap:** \"may\" in the same action, but only when something has been recovered.",
+      "caseIds": [
+        "case-0053"
+      ],
+      "source": {
+        "caseTitle": "Quirante, et al. v. Intermediate Appellate Court, et al.",
+        "grNumber": "G.R. No. 73886",
+        "url": "https://lawphil.net/judjuris/juri1989/jan1989/gr_73886_1989.html",
+        "part": "Decision, claiming fees in the same action",
+        "excerpt": "Well settled is the rule that counsel's claim for attorney's fees may be asserted either in the very action in which the services in question have been rendered, or in a separate action. If the first alternative is chosen, the Court may pass upon said claim, even if its amount were less than the minimum prescribed by law for the jurisdiction of said court, upon the theory that the right to recover attorney's fees is but an incident of the case in which the services of counsel have been rendered .\" It also rests on the assumption that the court trying the case is to a certain degree already familiar with the nature and extent of the lawyer's services. The rule against multiplicity of suits will in effect be subserved."
+      }
+    },
+    {
+      "id": "q-0621",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Following Quirante v. Intermediate Appellate Court, when can an attorney's fee claimed as an incident of the main action be determined?",
+      "choices": {
+        "A": "Only after the main litigation has been decided and something has been recovered from which the fee is to be paid.",
+        "B": "As soon as the trial court renders its decision, even if appealed.",
+        "C": "At the start of the case, when the lawyer is engaged.",
+        "D": "Whenever the client dies."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court said that \"an attorney's fee cannot be determined until after the main litigation has been decided and the subject of recovery is at the disposition of the court. The issue over attorney's fee only arises when something has been recovered from which the fee is to be paid,\" and that the remedy \"may be availed of only when something is due to the client.\" **B is wrong:** the main case was not yet final, which made the confirmation premature. **C and D are wrong:** neither is the rule. **Bar trap:** contingent fees depend on what is actually recovered.",
+      "caseIds": [
+        "case-0053"
+      ],
+      "source": {
+        "caseTitle": "Quirante, et al. v. Intermediate Appellate Court, et al.",
+        "grNumber": "G.R. No. 73886",
+        "url": "https://lawphil.net/judjuris/juri1989/jan1989/gr_73886_1989.html",
+        "part": "Decision, when the fee can be determined",
+        "excerpt": "This procedure gains added validity in the light of the rule that the remedy for recovering attorney's fees as an incident of the main action may be availed of only when something is due to the client. Thus, it was ruled that: xxx an attorney's fee cannot be determined until after the main litigation has been decided and the subject of recovery is at the disposition of the court. The issue over attorney's fee only arises when something has been recovered from which the fee is to be paid."
+      }
+    },
+    {
+      "id": "q-0622",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "In Quirante v. Intermediate Appellate Court, on what were the lawyers' claims for attorney's fees based?",
+      "choices": {
+        "A": "On Article 2208 of the Civil Code, as damages against the losing party.",
+        "B": "On a court order fixing reasonable fees.",
+        "C": "On an alleged contract for professional services, with the lawyers as creditors and the client's heirs as debtors.",
+        "D": "On the Rules of Court on costs."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court said: \"Here, the petitioner's claims are based on an alleged contract for professional services, with them as the creditors and the private respondents as the debtors,\" an oral agreement with the late client allegedly confirmed in writing by some of his heirs. **A is wrong:** the Court expressly distinguished their claim from Article 2208 damages. **B and D are wrong:** neither was the basis. **Bar trap:** identify whether the fee claimed is damages (Art. 2208) or compensation for services (contract).",
+      "caseIds": [
+        "case-0053"
+      ],
+      "source": {
+        "caseTitle": "Quirante, et al. v. Intermediate Appellate Court, et al.",
+        "grNumber": "G.R. No. 73886",
+        "url": "https://lawphil.net/judjuris/juri1989/jan1989/gr_73886_1989.html",
+        "part": "Decision, the basis of the lawyers' claim",
+        "excerpt": "Here, the petitioner's claims are based on an alleged contract for professional services, with them as the creditors and the private respondents as the debtors."
+      }
+    },
+    {
+      "id": "q-0623",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "What was the final disposition of Quirante v. Intermediate Appellate Court?",
+      "choices": {
+        "A": "The Court reinstated the trial court's confirmation of the fees.",
+        "B": "The Court affirmed the appellate court's decision setting aside the confirmation as premature, but rejected its holding that the confirmation could not affect non-signatory heirs, leaving that issue to the trial court.",
+        "C": "The Court fixed the lawyers' fees at ₱30,000.",
+        "D": "The Court held the fee agreement void."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court \"AFFIRMED\" the appellate court's decision \"with the foregoing observation,\" agreeing that the confirmation was premature, but it took \"exception to and reject[ed]\" the holding that the confirmation should not adversely affect the non-signatories, since that too was premature and might pre-empt evidentiary matters for the trial court. **A, C and D are wrong:** none happened. **Bar trap:** a judgment may be affirmed while part of its reasoning is rejected.",
+      "caseIds": [
+        "case-0053"
+      ],
+      "source": {
+        "caseTitle": "Quirante, et al. v. Intermediate Appellate Court, et al.",
+        "grNumber": "G.R. No. 73886",
+        "url": "https://lawphil.net/judjuris/juri1989/jan1989/gr_73886_1989.html",
+        "part": "Decision, the disposition",
+        "excerpt": "We, therefore, take exception to and reject that portion of the decision of the respondent court which holds that the alleged confirmation to attorney's fees should not adversely affect the non-signatories thereto, since it is also premised on the eventual grant of damages to the Casasola family, hence the same objection of prematurity obtains and such a holding may be pre-emptive of factual and evidentiary matters that may be presented for consideration by the trial court. WHEREFORE, with the foregoing observation, the decision of the respondent court subject of the present recourse is hereby AFFIRMED."
       }
     }
   ]
