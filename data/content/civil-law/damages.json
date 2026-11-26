@@ -181,6 +181,21 @@
       "ruling": "The Court granted the petition but reduced the awards. All the requisites of res judicata (bar by prior judgment) were present, but the Court of Appeals' final decision ordering the mere suspension of the damages suit had become the law of the case between the parties, even if erroneous, so Padillo could not be faulted for pursuing it. On damages: the claimed income of ₱150,000 a year was conjectural and speculative, since actual damages must be proved and cannot be presumed; she was entitled only to the unrealized rentals Averia admitted (₱800 a month), or ₱97,600 for the period he occupied the property, with legal interest from finality. Moral and exemplary damages were deleted: filing suits does not by itself show malice or bad faith, the law does not impose a penalty on the right to litigate, and the anxiety of being a party to a suit is not the kind that warrants moral damages. Attorney's fees, the exception and not the rule, were reduced to a reasonable ₱25,000, since they are not meant to enrich the winning party.",
       "keyDoctrine": "Actual damages must be proved and cannot be presumed; testimony on expected income that is vague and unspecified is too speculative. No moral damages for filing suits without malice or bad faith, since no penalty is put on the right to litigate. Attorney's fees as damages (extraordinary concept, paid by the loser to the winner, Art. 2208) differ from attorney's fees in the ordinary concept (compensation paid by the client to his lawyer); they are the exception, must be justified and reasonable, and are not meant to enrich the winning party. The law of the case binds the same parties in the same case even if erroneous.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2001/nov2001/gr_119707_2001.html"
+    },
+    {
+      "id": "case-0060",
+      "status": "draft",
+      "name": "Batong Buhay Gold Mines, Inc. v. Court of Appeals, et al.",
+      "grNumber": "G.R. No. L-45048",
+      "year": 1987,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "facts": "Francisco Aguac sold his 62,495 shares in Batong Buhay Gold Mines to Incorporated Mining Corporation without his wife's consent. The wife wrote the company asking it to withhold the transfer, since the shares were conjugal property, and the company held back the transfer for fear of being held liable to her. Incorporated Mining sued to compel the transfer and for damages. The trial court ordered the transfer by preliminary mandatory injunction, later made permanent, but awarded no damages. On appeal, the Court of Appeals added an award of ₱5,625.55, the profit the buyer could have made had the shares been transferred when demanded, since the price of the shares had risen and later fallen.",
+      "issue": "May damages for unrealized profits be awarded without proof that the claimant would have sold the shares and made the profit?",
+      "ruling": "No. The Court set aside the Court of Appeals and reinstated the trial court's decision. The stipulation of facts did not show that the buyer intended to sell, or would have sold, the shares on specific dates. Although the shares rose and later fell in value, whatever profits could have been made were purely speculative, since it was difficult to predict the rise and fall of their value with any certainty, and speculative damages cannot be recovered. The buyer could just as well have refused to sell and waited for further increases.",
+      "keyDoctrine": "Unrealized profits (lucro cesante) must be duly established; the claimant must prove that it was in fact damaged by the defendant's act. Speculative damages cannot be recovered: a mere rise in the market price of shares does not prove a lost profit without proof that the claimant would have sold them.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri1987/jan1987/gr_l-45048_1987.html"
     }
   ],
   "questions": [
@@ -2944,6 +2959,236 @@
         "url": "https://lawphil.net/judjuris/juri2001/nov2001/gr_119707_2001.html",
         "part": "Decision, the disposition",
         "excerpt": "WHEREFORE, the instant petition is GRANTED. The Decision of the Court of Appeals dated November 22, 1994 in CA-G.R. CV No. 40142 is REVERSED and SET ASIDE and another in its stead is hereby rendered ORDERING respondent Tomas Averia, Jr., to pay petitioner Veronica Padillo the amounts of (a) Ninety-Seven Thousand Six Hundred Pesos (P97,600.00) as unrealized rentals which shall earn interest at the legal rate from the finality of the this decision until fully paid, and (b) Twenty-Five Thousand Pesos (P25,000.00) as attorney's fees."
+      }
+    },
+    {
+      "id": "q-0672",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "X Corp. bought shares of a mining company and asked the company to register the transfer. The company delayed for several months. During the delay, the market price of the shares rose sharply, then fell to below the purchase price. After the transfer was finally made, X Corp. sued for the profit it says it would have made had it been able to sell at the peak. The parties' stipulation of facts says nothing about any plan of X Corp. to sell. Should the claim be granted? Explain, citing Batong Buhay Gold Mines v. Court of Appeals.",
+      "suggestedAnswer": {
+        "answer": "No. The claimed profit is speculative and cannot be recovered.",
+        "legalBasis": "In Batong Buhay Gold Mines v. CA, the Court held that a claim for unrealized profit must be duly and sufficiently established; the claimant must prove that it was in fact damaged by the defendant's act or omission. Where nothing shows that the claimant intended to sell, or would have sold, the shares on specified dates, whatever profits could have been made are purely speculative, since the rise and fall of share prices cannot be predicted with certainty, and speculative damages cannot be recovered.",
+        "application": "X Corp. shows only that the price went up and later down. Nothing shows it would have sold at the peak; it could equally have held the shares and waited for further increases. The supposed profit is a guess, not a proved loss.",
+        "conclusion": "The claim should be denied. **Bar trap:** a market rise alone does not prove lucro cesante; the claimant must prove that it would actually have earned the profit."
+      },
+      "keyPoints": [
+        "Unrealized profit (lucro cesante) must be duly and sufficiently established",
+        "The claimant must prove it was in fact damaged by the defendant's act",
+        "No showing that it intended to sell, or would have sold, on specified dates",
+        "Share prices rise and fall unpredictably: the profit is purely speculative",
+        "Speculative damages cannot be recovered"
+      ],
+      "caseIds": [
+        "case-0060"
+      ],
+      "source": {
+        "caseTitle": "Batong Buhay Gold Mines, Inc. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-45048",
+        "url": "https://lawphil.net/judjuris/juri1987/jan1987/gr_l-45048_1987.html",
+        "part": "Decision, discussion of the first issue (unrealized profits)",
+        "excerpt": "Petitioner company also alleges that the claim for unrealized profit must be duly and sufficiently established, that is, that the claimant must submit proof that it was in fact damaged because of petitioner's act or omission. The stipulation of facts of the parties does not at all show that private respondent intended to sell, or would sell or would have sold the stocks in question on specified dates. While it is true that shares of stock may go up or down in value (as in fact the concerned shares here really rose from fifteen (15) centavos to twenty three or twenty four (23/24) centavos per share and then fell to about two (2) centavos per share, still whatever profits could have been made are purely SPECULATIVE, for it was difficult to predict with any decree of certainty the rise and fall in the value of the shares. Thus this Court has ruled that speculative damages cannot be recovered."
+      }
+    },
+    {
+      "id": "q-0673",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Counsel for a buyer of shares argues: \"Had the company transferred the shares when we demanded, we would have sold them and made a profit of ₱5,600. Its refusal deprived us of that profit, so it must pay.\" How did the Supreme Court answer this argument in Batong Buhay Gold Mines v. Court of Appeals?",
+      "suggestedAnswer": {
+        "answer": "The Court rejected it: it is easy to say after the fact that the buyer would have sold and made a profit, but it is equally possible that the buyer's officials would have refused to sell and waited for further increases in value.",
+        "legalBasis": "In Batong Buhay Gold Mines v. CA, the Court said that \"human nature, being what it is, private respondent's officials could also have refused to sell and instead wait for expected further increases in value.\" Because the profit depended on a decision to sell that was never shown, it was speculative, and speculative damages cannot be recovered.",
+        "application": "The argument assumes the very fact that had to be proved: that the buyer would have sold at the right time. Without proof, the claimed ₱5,600 is hindsight, not a loss caused by the refusal.",
+        "conclusion": "The Court set aside the award and reinstated the trial court's decision, which granted no damages. **Bar trap:** hindsight about what a claimant could have done is not proof of what it would have done."
+      },
+      "keyPoints": [
+        "The claimed profit assumes the buyer would have sold at the right time",
+        "The buyer's officials could equally have refused to sell and waited",
+        "Hindsight is not proof of a loss",
+        "The award was set aside and the trial court's decision reinstated"
+      ],
+      "caseIds": [
+        "case-0060"
+      ],
+      "source": {
+        "caseTitle": "Batong Buhay Gold Mines, Inc. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-45048",
+        "url": "https://lawphil.net/judjuris/juri1987/jan1987/gr_l-45048_1987.html",
+        "part": "Decision, discussion of the first issue (human nature)",
+        "excerpt": "It is easy to say now that had private respondent gained legal title to the shares, it could have sold the same and reaped a profit of P5,624.95 but it could not do so because of petitioner's refusal to transfer the stocks in the former's name at the time demand was made, but then it is also true that human nature, being what it is, private respondent's officials could also have refused to sell and instead wait for expected further increases in value. … WHEREFORE, the assailed decision and resolutions of the Court of Appeals are hereby SET ASIDE, and a new one is hereby rendered REINSTATING the decision of the trial court."
+      }
+    },
+    {
+      "id": "q-0674",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "In Batong Buhay Gold Mines v. Court of Appeals, why did the company refuse to register the transfer of the shares, how did the trial court and the Court of Appeals rule, and what did the Supreme Court finally decide?",
+      "suggestedAnswer": {
+        "answer": "The company withheld the transfer because the seller's wife wrote to it that the shares were conjugal property sold without her consent, and it feared being held liable to her. The trial court ordered the transfer (by a preliminary mandatory injunction made permanent) but awarded no damages; the Court of Appeals added ₱5,625.55 as unrealized profit with legal interest. The Supreme Court set aside the Court of Appeals and reinstated the trial court's decision.",
+        "legalBasis": "In Batong Buhay Gold Mines v. CA, the company justified its refusal by its apprehension of liability for damages under Article 173 of the Civil Code. The Court held that the unrealized profit awarded by the Court of Appeals was purely speculative and that speculative damages cannot be recovered.",
+        "application": "The buyer received the shares through the injunction, so the only question was damages for the delay. Because the claimed profit was not proved, nothing was due beyond the transfer itself.",
+        "conclusion": "The transfer stood, but no damages were due. **Bar trap:** winning the main relief does not mean an award of damages follows; each item of actual damages must be proved."
+      },
+      "keyPoints": [
+        "The wife claimed the shares were conjugal and sold without her consent",
+        "The company feared liability (Art. 173, Civil Code)",
+        "Trial court: transfer ordered, no damages",
+        "Court of Appeals: added ₱5,625.55 unrealized profit",
+        "Supreme Court: award set aside; trial court reinstated"
+      ],
+      "caseIds": [
+        "case-0060"
+      ],
+      "source": {
+        "caseTitle": "Batong Buhay Gold Mines, Inc. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-45048",
+        "url": "https://lawphil.net/judjuris/juri1987/jan1987/gr_l-45048_1987.html",
+        "part": "Statement of facts and the Court of Appeals' award",
+        "excerpt": "The defendants justify their refusal to transfer the shares of stock of Francisco Aguac in the name of the plaintiff in view of their apprehension that they might he held liable for damages under Article 173 of the Civil Code and the ruling of the Supreme Court in Bucoy vs. Paulino, 23 SCRA 248."
+      }
+    },
+    {
+      "id": "q-0675",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Under Batong Buhay Gold Mines v. Court of Appeals, what must a claimant prove to recover unrealized profit?",
+      "choices": {
+        "A": "That the market price of the property rose during the delay.",
+        "B": "That it was in fact damaged because of the defendant's act or omission.",
+        "C": "That the defendant acted in bad faith.",
+        "D": "Nothing, since unrealized profits are presumed."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The claim \"for unrealized profit must be duly and sufficiently established, that is, that the claimant must submit proof that it was in fact damaged because of petitioner's act or omission,\" a position the Court upheld. **A is wrong:** a price rise alone was held insufficient. **C is wrong:** bad faith was not the issue. **D is wrong:** damages are not presumed. **Bar trap:** proof of a market movement is not proof of a lost profit.",
+      "caseIds": [
+        "case-0060"
+      ],
+      "source": {
+        "caseTitle": "Batong Buhay Gold Mines, Inc. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-45048",
+        "url": "https://lawphil.net/judjuris/juri1987/jan1987/gr_l-45048_1987.html",
+        "part": "Decision, discussion of the first issue (unrealized profits)",
+        "excerpt": "Petitioner company also alleges that the claim for unrealized profit must be duly and sufficiently established, that is, that the claimant must submit proof that it was in fact damaged because of petitioner's act or omission."
+      }
+    },
+    {
+      "id": "q-0676",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "In Batong Buhay Gold Mines v. Court of Appeals, the shares rose from 15 centavos to about 23 or 24 centavos, then fell to about 2 centavos. How did the Court classify the profits the buyer could have made?",
+      "choices": {
+        "A": "Purely speculative, since the rise and fall of share prices could not be predicted with certainty.",
+        "B": "Temperate damages, since some loss was suffered.",
+        "C": "Liquidated damages, since the price was known.",
+        "D": "Actual damages, proved by the market quotations."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court said that \"whatever profits could have been made are purely SPECULATIVE, for it was difficult to predict with any decree of certainty the rise and fall in the value of the shares,\" and that \"speculative damages cannot be recovered.\" **B, C and D are wrong:** the Court awarded nothing, since no loss was shown. **Bar trap:** a known price history does not make a profit certain when the decision to sell is uncertain.",
+      "caseIds": [
+        "case-0060"
+      ],
+      "source": {
+        "caseTitle": "Batong Buhay Gold Mines, Inc. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-45048",
+        "url": "https://lawphil.net/judjuris/juri1987/jan1987/gr_l-45048_1987.html",
+        "part": "Decision, discussion of the first issue (unrealized profits)",
+        "excerpt": "While it is true that shares of stock may go up or down in value (as in fact the concerned shares here really rose from fifteen (15) centavos to twenty three or twenty four (23/24) centavos per share and then fell to about two (2) centavos per share, still whatever profits could have been made are purely SPECULATIVE, for it was difficult to predict with any decree of certainty the rise and fall in the value of the shares. Thus this Court has ruled that speculative damages cannot be recovered."
+      }
+    },
+    {
+      "id": "q-0677",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "In Batong Buhay Gold Mines v. Court of Appeals, what was missing from the parties' stipulation of facts that defeated the claim for unrealized profit?",
+      "choices": {
+        "A": "Proof of the purchase price of the shares.",
+        "B": "Proof of the date of the demand for transfer.",
+        "C": "Any showing that the buyer intended to sell, or would have sold, the shares on specified dates.",
+        "D": "Proof that the seller's wife consented to the sale."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court noted that \"[t]he stipulation of facts of the parties does not at all show that private respondent intended to sell, or would sell or would have sold the stocks in question on specified dates.\" **A and B are wrong:** these were in the record. **D is wrong:** the wife's consent bore on the transfer, not on the damages. **Bar trap:** identify the missing link between the defendant's act and the claimed loss.",
+      "caseIds": [
+        "case-0060"
+      ],
+      "source": {
+        "caseTitle": "Batong Buhay Gold Mines, Inc. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-45048",
+        "url": "https://lawphil.net/judjuris/juri1987/jan1987/gr_l-45048_1987.html",
+        "part": "Decision, discussion of the first issue (the stipulation of facts)",
+        "excerpt": "The stipulation of facts of the parties does not at all show that private respondent intended to sell, or would sell or would have sold the stocks in question on specified dates."
+      }
+    },
+    {
+      "id": "q-0678",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Why did Batong Buhay Gold Mines withhold the transfer of the shares in the name of the buyer?",
+      "choices": {
+        "A": "The stock certificate was forged.",
+        "B": "The seller's wife wrote that the shares were conjugal property sold without her consent, and the company feared liability.",
+        "C": "The buyer had not paid the price.",
+        "D": "The shares were subject to a pre-emptive right of other stockholders."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The wife asked the company \"that the transfer of the shares sold by her husband be withheld, inasmuch as the same constituted conjugal property,\" and the company refused out of \"apprehension that they might he held liable for damages under Article 173 of the Civil Code.\" **A, C and D are wrong:** none appears in the facts. **Bar trap:** a good reason for delay was not decisive here; the claim failed for lack of proof of loss.",
+      "caseIds": [
+        "case-0060"
+      ],
+      "source": {
+        "caseTitle": "Batong Buhay Gold Mines, Inc. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-45048",
+        "url": "https://lawphil.net/judjuris/juri1987/jan1987/gr_l-45048_1987.html",
+        "part": "Statement of facts",
+        "excerpt": "On the same date of the sale, December 16, 1969, Paula G. Aguac wrote a letter to the president of defendant Batong Buhay Gold Mines, Inc. asking that the transfer of the shares sold by her husband be withheld, inasmuch as the same constituted conjugal property and her share of proceeds of the sale was not given to her (Exhibit 1)."
+      }
+    },
+    {
+      "id": "q-0679",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "What was the disposition in Batong Buhay Gold Mines v. Court of Appeals?",
+      "choices": {
+        "A": "The Court of Appeals' award of ₱5,625.55 was affirmed.",
+        "B": "The case was remanded for a new trial on the newly discovered evidence.",
+        "C": "The award was reduced to nominal damages.",
+        "D": "The Court of Appeals' decision was set aside and the trial court's decision, which awarded no damages, was reinstated."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The Court ruled: \"the assailed decision and resolutions of the Court of Appeals are hereby SET ASIDE, and a new one is hereby rendered REINSTATING the decision of the trial court.\" **A is wrong:** the award was speculative. **B is wrong:** the Court found no need to discuss the second issue. **C is wrong:** no nominal damages were awarded. **Bar trap:** a failed claim for actual damages does not automatically become a different kind of damages.",
+      "caseIds": [
+        "case-0060"
+      ],
+      "source": {
+        "caseTitle": "Batong Buhay Gold Mines, Inc. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-45048",
+        "url": "https://lawphil.net/judjuris/juri1987/jan1987/gr_l-45048_1987.html",
+        "part": "Decision, the disposition",
+        "excerpt": "In view of what has been said, We find no necessity to discuss the second issue. WHEREFORE, the assailed decision and resolutions of the Court of Appeals are hereby SET ASIDE, and a new one is hereby rendered REINSTATING the decision of the trial court."
       }
     }
   ]
