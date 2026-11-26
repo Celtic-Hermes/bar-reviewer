@@ -91,6 +91,21 @@
       "ruling": "The Court affirmed the Intermediate Appellate Court, with an observation. Counsel may claim attorney's fees either in the very action in which the services were rendered or in a separate action; claiming them in the same action is proper, since the right is an incident of the case and the court is familiar with the lawyer's services, and it avoids multiplicity of suits. The fees claimed here, based on a contract for professional services, differ from attorney's fees as damages under Article 2208, which are awarded to the litigant, not to counsel. But the confirmation was premature: the main case was not yet final, and an attorney's fee cannot be determined until the main litigation is decided and something has been recovered from which the fee is to be paid, especially as the agreement was contingent. The Court rejected, however, the appellate court's holding that the confirmation could not affect non-signatory heirs, since that too should be determined by the trial court after the case is adjudicated.",
       "keyDoctrine": "Attorney's fees as damages under Article 2208 are awarded to the litigant, who is the judgment creditor, while attorney's fees for professional services are owed by the client to counsel under their contract. Counsel's claim for fees may be made in the same action or in a separate action, but a fee contingent on recovery cannot be determined until the main litigation has been decided and something has been recovered from which the fee is to be paid.",
       "sourceUrl": "https://lawphil.net/judjuris/juri1989/jan1989/gr_73886_1989.html"
+    },
+    {
+      "id": "case-0054",
+      "status": "draft",
+      "name": "Philippine National Bank v. Court of Appeals, et al.",
+      "grNumber": "G.R. No. 107508",
+      "year": 1996,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "facts": "A government check for ₱97,650 issued by the Ministry of Education and Culture, payable to F. Abante Marketing and drawn against the Philippine National Bank (PNB), was deposited with Capitol City Development Bank, which sent it through the Philippine Bank of Communications (PBCom) for clearing. PNB cleared the check, but more than two months later returned it and debited PBCom's account, claiming a material alteration of the check's serial number. PBCom debited Capitol's account, but Capitol could no longer debit the payee, which had already withdrawn the money. Capitol sued PBCom, which filed a third-party complaint against PNB. The trial court ordered reimbursement with 12% interest and ₱10,000 attorney's fees; the Court of Appeals ordered PNB to honor the check with interest and to pay the attorney's fees.",
+      "issue": "(1) Is the alteration of a check's serial number a material alteration? (2) Should the uncorroborated certification of the Ministry be given weight? (3) Was the award of attorney's fees proper?",
+      "ruling": "The Court affirmed the Court of Appeals except for the attorney's fees, which it deleted. An alteration is material if it alters the effect of the instrument, that is, if it changes the items required to be stated under Section 1 of the Negotiable Instruments Law. A check's serial number is not one of them: the change did not alter the relations of the parties, the drawer, the drawee, the payee or the amount, and the issuing agency was clearly printed on the check. Being an innocent alteration, it gave PNB no right to dishonor the check. The Ministry's certification deserved no weight because its signatory was not presented to identify it. As to attorney's fees, neither lower court explained the award: the discretion to award attorney's fees under Article 2208 demands factual, legal and equitable justification; the reason must be stated in the text of the decision, not only in the dispositive portion, since the award is the exception rather than the rule.",
+      "keyDoctrine": "The award of attorney's fees under Article 2208 is the exception, not the rule; it demands factual, legal and equitable justification, and the reason must be stated in the text of the decision. An award stated only in the dispositive portion is disallowed. A material alteration is one that changes the items required to be stated under Section 1 of the Negotiable Instruments Law; changing a check's serial number is not material.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri1996/apr1996/gr_107508_1996.html"
     }
   ],
   "questions": [
@@ -1471,6 +1486,236 @@
         "url": "https://lawphil.net/judjuris/juri1989/jan1989/gr_73886_1989.html",
         "part": "Decision, the disposition",
         "excerpt": "We, therefore, take exception to and reject that portion of the decision of the respondent court which holds that the alleged confirmation to attorney's fees should not adversely affect the non-signatories thereto, since it is also premised on the eventual grant of damages to the Casasola family, hence the same objection of prematurity obtains and such a holding may be pre-emptive of factual and evidentiary matters that may be presented for consideration by the trial court. WHEREFORE, with the foregoing observation, the decision of the respondent court subject of the present recourse is hereby AFFIRMED."
+      }
+    },
+    {
+      "id": "q-0624",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "In a collection suit between two banks, the trial court discussed only the claim for lost opportunity and the interest in the body of its decision, then stated in the dispositive portion: \"defendant is ordered to pay plaintiff attorney's fees of ₱10,000.\" No other explanation was given. On appeal, the defendant bank questions the award. Should the award be sustained? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. The award of attorney's fees should be deleted because the court did not state its factual, legal and equitable justification in the text of its decision.",
+        "legalBasis": "In Philippine National Bank v. Court of Appeals, the Court held that the discretion to award attorney's fees under Article 2208 of the Civil Code \"demands factual, legal and equitable justification, without which the award is a conclusion without a premise and improperly left to speculation and conjecture.\" The reason for the award must be stated in the text of the decision; if it is stated only in the dispositive portion, it shall be disallowed. Since the award is an exception rather than the rule, the court must make findings of fact and law that bring the case within the exception.",
+        "application": "The trial court gave no reason in the body of its decision for the ₱10,000 award; it appeared only in the dispositive portion. Without findings bringing the case under one of the exceptions in Article 2208, the award has no premise.",
+        "conclusion": "The award must be deleted, even though the rest of the judgment stands. **Bar trap:** winning the case does not by itself entitle the winner to attorney's fees; the award is the exception and must be justified in the body of the decision."
+      },
+      "keyPoints": [
+        "Attorney's fees under Art. 2208: within the court's discretion, but it demands factual, legal and equitable justification",
+        "The reason must be stated in the text of the decision",
+        "An award stated only in the dispositive portion is disallowed",
+        "The award is the exception, not the rule; findings must bring the case within the exception",
+        "An unjustified award penalizes the right to litigate"
+      ],
+      "caseIds": [
+        "case-0054"
+      ],
+      "source": {
+        "caseTitle": "Philippine National Bank v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 107508",
+        "url": "https://lawphil.net/judjuris/juri1996/apr1996/gr_107508_1996.html",
+        "part": "Decision, discussion of the award of attorney's fees",
+        "excerpt": "However, the amount of P10,000.00 as attorney's fees is hereby deleted. In their respective decisions, the trial court and the Court of Appeals failed to explicitly state the rationale for the said award. … The award of attorney's fees lies within the discretion of the court and depends upon the circumstances of each case. However, the discretion of the court to award attorney's fees under Article 2208 of the Civil Code of the Philippines demands factual, legal and equitable justification, without which the award is a conclusion without a premise and improperly left to speculation and conjecture. It becomes a violation of the proscription against the imposition of a penalty on the right to litigate (Universal Shipping Lines, Inc. v. Intermediate Appellate Court, 188 SCRA 170 [1990]). The reason for the award must be stated in the text of the court's decision. If it is stated only in the dispositive portion of the decision, the same shall be disallowed. As to the award of attorney's fees being an exception rather than the rule, it is necessary for the court to make findings of fact and law that would bring the case within the exception and justify the grant of the award"
+      }
+    },
+    {
+      "id": "q-0625",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "A drawee bank cleared a government check, then weeks later returned it and refused to pay, because the check's serial number had been altered. The name of the issuing agency was printed on the face of the check, and the drawer, payee and amount were unchanged. Is the change of the serial number a material alteration that justifies the dishonor? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. The alteration of the serial number is not a material alteration, so the drawee bank had no right to dishonor the check.",
+        "legalBasis": "In Philippine National Bank v. Court of Appeals, the Court held that an alteration is material if it alters the effect of the instrument; a material alteration is one which changes the items required to be stated under Section 1 of the Negotiable Instruments Law. The serial number is not an essential requisite of negotiability under Section 1.",
+        "application": "The change did not alter the relations between the parties: the drawer and drawee were unchanged, the payee was the same and the sum due was the same. The issuing agency was sufficiently identified because its name was printed on the check, so the serial number was redundant for that purpose.",
+        "conclusion": "The alteration was innocent, the check remained negotiable in all respects, and the drawee bank could not dishonor and return it. **Bar trap:** not every unauthorized change is material; test it against the requisites in Section 1 of the Negotiable Instruments Law."
+      },
+      "keyPoints": [
+        "Material alteration: one that alters the effect of the instrument",
+        "It changes the items required to be stated under Section 1 of the NIL",
+        "A check's serial number is not an essential requisite of negotiability",
+        "Parties, payee and amount were unchanged; the issuer was printed on the check",
+        "No material alteration, so no right to dishonor"
+      ],
+      "caseIds": [
+        "case-0054"
+      ],
+      "source": {
+        "caseTitle": "Philippine National Bank v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 107508",
+        "url": "https://lawphil.net/judjuris/juri1996/apr1996/gr_107508_1996.html",
+        "part": "Decision, discussion of the first issue (material alteration)",
+        "excerpt": "An alteration is said to be material if it alters the effect of the instrument. It means an unauthorized change in an instrument that purports to modify in any respect the obligation of a party or an unauthorized addition of words or numbers or other change to an incomplete instrument relating to the obligation of a party. In other words, a material alteration is one which changes the items which are required to be stated under Section 1 of the Negotiable Instruments Law. … The case at bench is unique in the sense that what was altered is the serial number of the check in question, an item which, it can readily be observed, is not an essential requisite for negotiability under Section 1 of the Negotiable Instruments Law. The aforementioned alteration did not change the relations between the parties. The name of the drawer and the drawee were not altered. The intended payee was the same. The sum of money due to the payee remained the same."
+      }
+    },
+    {
+      "id": "q-0626",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "To prove that a check was not genuinely issued, a bank offered a certification signed by a government cashier stating that the check was not issued by the office. The cashier was not presented as a witness, and no one who saw the document executed testified. Should the certification be given weight? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. The certification cannot be given weight because its authenticity was not proved.",
+        "legalBasis": "In Philippine National Bank v. Court of Appeals, the Court agreed with the Court of Appeals that the certification deserved no weight: the person who signed it was not presented to prove that he prepared it and that the signature was his, and no eyewitness to its execution was presented to identify it.",
+        "application": "Without the testimony of the signatory or a witness to its execution, the court cannot rule on the authenticity of the contents of the certification. In any case, the alleged alteration (the serial number) was not material.",
+        "conclusion": "The certification was properly disregarded. **Bar trap:** a document signed by a public officer is not automatically proof of its contents when its due execution has not been established."
+      },
+      "keyPoints": [
+        "The signatory of the certification was not presented",
+        "No eyewitness to its execution identified it",
+        "Without this proof, the authenticity of its contents cannot be ruled upon",
+        "Besides, the serial number change was not a material alteration"
+      ],
+      "caseIds": [
+        "case-0054"
+      ],
+      "source": {
+        "caseTitle": "Philippine National Bank v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 107508",
+        "url": "https://lawphil.net/judjuris/juri1996/apr1996/gr_107508_1996.html",
+        "part": "Decision, discussion of the second issue (the certification)",
+        "excerpt": "The one who signed the certification was not presented before the trial court to prove that the said document was really the document he prepared and that the signature below the said document is his own signature. Neither did petitioner present an eyewitness to the execution of the questioned document who could possibly identify it. Absent this proof, we cannot rule on the authenticity of the contents of the certification. Moreover, as we previously emphasized, there was no material alteration on the check, the change of its serial number not being substantial to its negotiability."
+      }
+    },
+    {
+      "id": "q-0627",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Under Philippine National Bank v. Court of Appeals, what happens to an award of attorney's fees whose reason is stated only in the dispositive portion of the decision?",
+      "choices": {
+        "A": "It is valid, since the dispositive portion is the controlling part of the decision.",
+        "B": "It is reduced to a reasonable amount.",
+        "C": "It is disallowed.",
+        "D": "It is remanded for the trial court to state its reasons."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court quoted the rule that \"[t]he reason for the award must be stated in the text of the court's decision. If it is stated only in the dispositive portion of the decision, the same shall be disallowed,\" and it deleted the ₱10,000 award. **A is wrong:** the dispositive portion controls what is ordered, but an award of attorney's fees needs its justification in the body. **B and D are wrong:** the Court simply deleted the award. **Bar trap:** the award is the exception, not the rule.",
+      "caseIds": [
+        "case-0054"
+      ],
+      "source": {
+        "caseTitle": "Philippine National Bank v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 107508",
+        "url": "https://lawphil.net/judjuris/juri1996/apr1996/gr_107508_1996.html",
+        "part": "Decision, discussion of the award of attorney's fees",
+        "excerpt": "The reason for the award must be stated in the text of the court's decision. If it is stated only in the dispositive portion of the decision, the same shall be disallowed."
+      }
+    },
+    {
+      "id": "q-0628",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "According to Philippine National Bank v. Court of Appeals, an award of attorney's fees under Article 2208 of the Civil Code without factual, legal and equitable justification is",
+      "choices": {
+        "A": "a conclusion without a premise, improperly left to speculation and conjecture.",
+        "B": "valid, because the award lies entirely within the court's discretion.",
+        "C": "valid if the amount is reasonable.",
+        "D": "valid if the losing party acted in good faith."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court said that the discretion to award attorney's fees \"demands factual, legal and equitable justification, without which the award is a conclusion without a premise and improperly left to speculation and conjecture,\" and becomes a penalty on the right to litigate. **B is wrong:** the discretion is not unlimited; it must be justified. **C and D are wrong:** a reasonable amount or the losing party's good faith does not supply the missing justification. **Bar trap:** \"discretion\" does not mean no reasons are needed.",
+      "caseIds": [
+        "case-0054"
+      ],
+      "source": {
+        "caseTitle": "Philippine National Bank v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 107508",
+        "url": "https://lawphil.net/judjuris/juri1996/apr1996/gr_107508_1996.html",
+        "part": "Decision, discussion of the award of attorney's fees",
+        "excerpt": "However, the discretion of the court to award attorney's fees under Article 2208 of the Civil Code of the Philippines demands factual, legal and equitable justification, without which the award is a conclusion without a premise and improperly left to speculation and conjecture. It becomes a violation of the proscription against the imposition of a penalty on the right to litigate"
+      }
+    },
+    {
+      "id": "q-0629",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Following Philippine National Bank v. Court of Appeals, which of the following changes in a check is NOT a material alteration?",
+      "choices": {
+        "A": "A change in the sum payable.",
+        "B": "A change in the date.",
+        "C": "A change in the number or the relations of the parties.",
+        "D": "A change in the check's serial number, where the issuing agency is printed on the check."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The Court held that the serial number \"is not an essential requisite for negotiability under Section 1 of the Negotiable Instruments Law,\" and since the issuing agency was printed on the check, the change was immaterial. **A, B and C are wrong:** the sum payable, the date and the number or relations of the parties are listed in the Negotiable Instruments Law's provision on what constitutes a material alteration, quoted in the decision. **Bar trap:** a change that looks suspicious is not necessarily material.",
+      "caseIds": [
+        "case-0054"
+      ],
+      "source": {
+        "caseTitle": "Philippine National Bank v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 107508",
+        "url": "https://lawphil.net/judjuris/juri1996/apr1996/gr_107508_1996.html",
+        "part": "Decision, discussion of the first issue (material alteration)",
+        "excerpt": "The case at bench is unique in the sense that what was altered is the serial number of the check in question, an item which, it can readily be observed, is not an essential requisite for negotiability under Section 1 of the Negotiable Instruments Law."
+      }
+    },
+    {
+      "id": "q-0630",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "In Philippine National Bank v. Court of Appeals, the Court cited the view that an innocent alteration and spoliation will not avoid the instrument. In that view, \"spoliation\" refers to",
+      "choices": {
+        "A": "a change in the sum payable.",
+        "B": "alterations done by a stranger.",
+        "C": "a change by the drawer with the payee's consent.",
+        "D": "the loss or destruction of the instrument."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** Justice Vitug's view, quoted by the Court, is that \"an innocent alteration (generally, changes on items other than those required to be stated under Sec. 1, N.I.L.) and spoliation (alterations done by a stranger) will not avoid the instrument, but the holder may enforce it only according to its original tenor.\" **A is wrong:** that is a material alteration. **C and D are wrong:** neither is the meaning given. **Bar trap:** these alterations do not avoid the instrument, but it is enforced only according to its original tenor.",
+      "caseIds": [
+        "case-0054"
+      ],
+      "source": {
+        "caseTitle": "Philippine National Bank v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 107508",
+        "url": "https://lawphil.net/judjuris/juri1996/apr1996/gr_107508_1996.html",
+        "part": "Decision, discussion of the first issue (Justice Vitug's view)",
+        "excerpt": "In his book entitled \"Pandect of Commercial Law and Jurisprudence,\" Justice Jose C. Vitug opines that \"an innocent alteration (generally, changes on items other than those required to be stated under Sec. 1, N.I.L.) and spoliation (alterations done by a stranger) will not avoid the instrument, but the holder may enforce it only according to its original tenor.\""
+      }
+    },
+    {
+      "id": "q-0631",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "What was the result in Philippine National Bank v. Court of Appeals?",
+      "choices": {
+        "A": "The petition was granted and the drawee bank was allowed to recover the value of the check.",
+        "B": "The decision of the Court of Appeals was affirmed in full.",
+        "C": "The case was remanded to determine whether the alteration was material.",
+        "D": "The decision of the Court of Appeals was affirmed, except that the award of attorney's fees was deleted."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** Since there was no material alteration, PNB \"has no right to dishonor it and return it to PBCom,\" and the Court affirmed the Court of Appeals \"except for the deletion of the award of attorney's fees.\" **A is wrong:** the petition had no merit. **B is wrong:** the attorney's fees were deleted. **C is wrong:** the Court itself held the alteration immaterial. **Bar trap:** a party can lose on the merits yet still escape an unjustified award of attorney's fees.",
+      "caseIds": [
+        "case-0054"
+      ],
+      "source": {
+        "caseTitle": "Philippine National Bank v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 107508",
+        "url": "https://lawphil.net/judjuris/juri1996/apr1996/gr_107508_1996.html",
+        "part": "Decision, discussion of the third issue and the disposition",
+        "excerpt": "suffice it to state that since there is no material alteration in the check, petitioner has no right to dishonor it and return it to PBCom, the same being in all respects negotiable. … WHEREFORE, premises considered, except for the deletion of the award of attorney's fees, the decision of the Court of Appeals is hereby AFFIRMED."
       }
     }
   ]
