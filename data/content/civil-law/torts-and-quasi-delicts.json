@@ -166,6 +166,21 @@
       "ruling": "The Court modified its decision. (1) Dr. Gutierrez remained liable: a pre-anesthetic evaluation, whether the operation is elective or an emergency, cannot be dispensed with, and she did not examine the patient's airway; the improper intubation caused the coma, and res ipsa loquitur applied. Dr. Hosaka remained liable: although there is a trend in American courts to abandon the captain of the ship doctrine, the Court will not follow it ipso facto; on the facts, he recommended Dr. Gutierrez, was the attending physician, and worked with her as a team, and he arrived more than three hours late, which aggravated the patient's anxiety and violated his duty and Article 19 of the Civil Code. (2) The hospital was absolved: under the four-fold test there was no employer-employee relationship (consultants are admitted by a credentials committee, are not paid by the hospital, and the contract between consultant and patient is separate from that between hospital and patient), and no failure of the hospital's own facilities or staff was shown. (3) Because Erlinda had died, the temperate damages were deleted; the doctors were held solidarily liable for actual, moral and exemplary damages, attorney's fees and costs.",
       "keyDoctrine": "A pre-anesthetic evaluation, whether the operation is elective or an emergency, cannot be dispensed with. The captain of the ship doctrine may still be applied where the facts show the surgeon supervised and worked as a team with the anesthesiologist. A hospital is not solidarily liable under Article 2180 for its consultants absent an employer-employee relationship under the four-fold test (selection and engagement, payment of wages, power to dismiss, and power of control over the means). The contract between consultant and patient is distinct from the contract between hospital and patient.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2002/apr2002/gr_124354_2002.html"
+    },
+    {
+      "id": "case-0041",
+      "status": "draft",
+      "name": "Mendoza v. Casumpang, et al.",
+      "grNumber": "G.R. No. 197987",
+      "year": 2012,
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "facts": "On February 13, 1993, Dr. Mariter Mendoza performed a hysterectomy and myomectomy on Josephine Casumpang at the Iloilo Doctors' Hospital. Josephine then had recurring fever, nausea and vomiting. Three months later she noticed something protruding from her genitals; unable to reach Dr. Mendoza, she went to another doctor, who extracted a foul-smelling, partially expelled rolled gauze from her cervix. She sued Dr. Mendoza for damages, and when she died during the trial, at 40, her husband and children substituted her. The trial court first held Dr. Mendoza liable, then reversed itself on reconsideration; the Court of Appeals reinstated the original judgment. Dr. Mendoza argued before the Supreme Court that the hospital's surgical sponge count showed no gauze was left.",
+      "issue": "Is Dr. Mendoza liable for the gauze left in her patient's body, and what damages are due?",
+      "ruling": "The Court affirmed the Court of Appeals with modifications. Whether gauze was left is a question of fact, which cannot be raised in a petition for review on certiorari, and none of the exceptions applied. Josephine had no other surgery, and it was most unlikely that she or any woman would put a roll of gauze in her own cervix. Following Professional Services, Inc. v. Agana, leaving sponges or other foreign substances in the wound after the incision is closed is at least prima facie negligence by the operating surgeon, and even negligence per se. A surgical operation is the responsibility of the surgeon performing it, who must personally ascertain that the counts of instruments and materials before the surgery and before closing have been correctly done. The Court added ₱50,000 exemplary damages (Article 2229, also for gross negligence), ₱50,000 civil indemnity for death (Article 2206), and increased attorney's fees to ₱50,000 (Article 2208).",
+      "keyDoctrine": "Leaving a sponge or gauze in the patient after closing the incision is at least prima facie negligence of the operating surgeon. The surgeon, who is responsible for the operation, must personally ascertain that the counts of instruments and materials have been correctly done; a hospital sponge count does not shift that responsibility. Exemplary damages may be awarded for gross negligence, by way of example for the public good, and civil indemnity is due for death caused by a quasi-delict.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2012/mar2012/gr_197987_2012.html"
     }
   ],
   "questions": [
@@ -2695,6 +2710,235 @@
         "url": "https://lawphil.net/judjuris/juri2002/apr2002/gr_124354_2002.html",
         "part": "Resolution, the liability of Dr. Gutierrez (res ipsa loquitur and the witness Cruz)",
         "excerpt": "The injury incurred by petitioner Erlinda does not normally happen absent any negligence in the administration of anesthesia and in the use of an endotracheal tube. As was noted in our Decision, the instruments used in the administration of anesthesia, including the endotracheal tube, were all under the exclusive control of private respondents Dr. Gutierrez and Dr. Hosaka. … Considering the application of the doctrine of res ipsa loquitur, the testimony of Cruz was properly given credence in the case at bar."
+      }
+    },
+    {
+      "id": "q-0520",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "After Dr. Lacson performed a hysterectomy on Carla, Carla suffered recurring fever and vomiting. Three months later another doctor removed a foul-smelling rolled gauze from her cervix. Carla had undergone no other operation. Sued for damages, Dr. Lacson points to the hospital record showing that the surgical sponge count was complete, and argues that no gauze could have been left by her. Is Dr. Lacson liable? Explain.",
+      "suggestedAnswer": {
+        "answer": "Yes. Leaving a gauze in the patient after closing the incision is at least prima facie negligence of the operating surgeon, and the surgeon must personally see to it that the counts are correct; the circumstances leave no other likely source of the gauze.",
+        "legalBasis": "In Mendoza v. Casumpang, the Court, quoting Professional Services, Inc. v. Agana, held that an operation requiring sponges is not complete until they are properly removed, and that leaving sponges or other foreign substances in the wound after the incision has been closed is at least prima facie negligence by the operating surgeon, even negligence per se. It added that a surgical operation is the responsibility of the surgeon performing it, who must personally ascertain that the counts of instruments and materials used before the surgery and before sewing the patient up have been correctly done.",
+        "application": "Carla had no other surgery, and it is most unlikely that she, or any woman, would put a roll of gauze into her own cervix. The gauze found after Dr. Lacson's operation thus raises an inference of her negligence. A record of a complete sponge count does not overcome it, since the surgeon herself was responsible for making sure the count was right.",
+        "conclusion": "Dr. Lacson is liable for damages. **Bar trap:** \"the hospital's sponge count was complete\" does not shift the responsibility; the operating surgeon must personally ascertain the count."
+      },
+      "keyPoints": [
+        "Leaving a sponge or gauze after closing is at least prima facie negligence (even negligence per se) of the operating surgeon",
+        "The operation is not complete until all sponges are removed",
+        "The surgeon must personally ascertain that the counts are correct",
+        "No other surgery, and no plausible other source of the gauze"
+      ],
+      "caseIds": [
+        "case-0041"
+      ],
+      "source": {
+        "caseTitle": "Mendoza v. Casumpang, et al.",
+        "grNumber": "G.R. No. 197987",
+        "url": "https://lawphil.net/judjuris/juri2012/mar2012/gr_197987_2012.html",
+        "part": "Decision, the liability of Dr. Mendoza",
+        "excerpt": "As the RTC pointed out, Josephine did not undergo any other surgical operation. And it would be much unlikely for her or for any woman to inject a roll of gauze into her cervix. As the Court held in Professional Services, Inc. v. Agana: An operation requiring the placing of sponges in the incision is not complete until the sponges are properly removed, and it is settled that the leaving of sponges or other foreign substances in the wound after the incision has been closed is at least prima facie negligence by the operating surgeon. To put it simply, such act is considered so inconsistent with due care as to raise an inference of negligence. There are even legions of authorities to the effect that such act is negligence per se. … A surgical operation is the responsibility of the surgeon performing it. He must personally ascertain that the counts of instruments and materials used before the surgery and prior to sewing the patient up have been correctly done."
+      }
+    },
+    {
+      "id": "q-0521",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "A patient died after a surgeon negligently left a gauze inside her. Her heirs were awarded actual damages, moral damages and attorney's fees by the lower courts. What other damages may they recover, and on what basis? Explain, following Mendoza v. Casumpang.",
+      "suggestedAnswer": {
+        "answer": "They may also recover exemplary damages and civil indemnity for the death, and the attorney's fees may be increased.",
+        "legalBasis": "In Mendoza v. Casumpang, the Court noted that under Article 2229 of the Civil Code, exemplary damages are imposed by way of example or correction for the public good, in addition to moral damages, and may also be awarded in cases of gross negligence. Because the patient's death resulted from the surgeon's negligence, civil indemnity under Article 2206 should be given to the heirs, in the amount of ₱50,000 fixed by prevailing jurisprudence. It also found it just and equitable under Article 2208 to increase the attorney's fees.",
+        "application": "To provide an example to the medical profession and to stress the need for constant vigilance in attending to a patient's health, the Court awarded ₱50,000 exemplary damages; it added ₱50,000 civil indemnity for the death, and raised the attorney's fees from ₱20,000 to ₱50,000.",
+        "conclusion": "Exemplary damages (Art. 2229), civil indemnity for death (Art. 2206) and increased attorney's fees (Art. 2208). **Bar trap:** exemplary damages are awarded in addition to moral damages, and civil indemnity for death is a separate award, not part of moral or actual damages."
+      },
+      "keyPoints": [
+        "Exemplary damages under Article 2229: by way of example or correction for the public good, in addition to moral damages",
+        "Exemplary damages may be awarded for gross negligence",
+        "Civil indemnity for death under Article 2206 (₱50,000 per prevailing jurisprudence at the time)",
+        "Attorney's fees increased as just and equitable under Article 2208",
+        "Purpose: an example to the medical profession, stressing constant vigilance"
+      ],
+      "caseIds": [
+        "case-0041"
+      ],
+      "source": {
+        "caseTitle": "Mendoza v. Casumpang, et al.",
+        "grNumber": "G.R. No. 197987",
+        "url": "https://lawphil.net/judjuris/juri2012/mar2012/gr_197987_2012.html",
+        "part": "Decision, the award of damages",
+        "excerpt": "The Court notes, however, that neither the CA nor the RTC awarded exemplary damages against Dr. Mendoza when, under Article 2229 of the Civil Code, exemplary damages are imposed by way of example or correction for the public good, in addition to moral damages. Exemplary damages may also be awarded in cases of gross negligence. A surgical operation is the responsibility of the surgeon performing it. He must personally ascertain that the counts of instruments and materials used before the surgery and prior to sewing the patient up have been correctly done. To provide an example to the medical profession and to stress the need for constant vigilance in attending to a patient’s health, the award of exemplary damages in this case is in order. Further, in view of Josephine’s death resulting from petitioner’s negligence, civil indemnity under Article 2206 of the Civil Code should be given to respondents as heirs. The amount of ₱50,000.00 is fixed by prevailing jurisprudence for this kind. The Court also deems it just and equitable under Article 2208 of the Civil Code to increase the award of attorney’s fees from ₱20,000.00 to ₱50,000.00."
+      }
+    },
+    {
+      "id": "q-0522",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "In a petition for review on certiorari to the Supreme Court, a surgeon found liable by the Court of Appeals for a gauze left in a patient argues that the evidence shows no gauze was left, since the hospital's sponge count was complete. Will the Supreme Court re-examine this claim? Explain.",
+      "suggestedAnswer": {
+        "answer": "Generally, no. Whether a gauze was left in the patient is a question of fact, and only questions of law may be raised in a petition for review on certiorari from the Court of Appeals, whose factual findings are generally binding.",
+        "legalBasis": "In Mendoza v. Casumpang, the Court held that the surgeon raised a question of fact at its level, when parties may raise only questions of law in petitions for review on certiorari from the Court of Appeals; with few exceptions, the factual findings of that court are generally binding, and none of the exceptions applied.",
+        "application": "The claim that the sponge count shows no gauze was left asks the Court to weigh the evidence again, which is a factual matter. The Court of Appeals found that a gauze remained after surgery, and its finding, supported by the absence of any other operation, binds the Supreme Court.",
+        "conclusion": "The Supreme Court will not re-examine the claim, and the finding of negligence stands. **Bar trap:** in a Rule 45 petition, an argument about what the evidence shows is a question of fact, not of law, unless an exception applies."
+      },
+      "keyPoints": [
+        "Only questions of law may be raised in a petition for review on certiorari from the Court of Appeals",
+        "Whether a gauze was left is a question of fact",
+        "The Court of Appeals' factual findings are generally binding, with few exceptions",
+        "No exception applied, so the finding stood"
+      ],
+      "caseIds": [
+        "case-0041"
+      ],
+      "source": {
+        "caseTitle": "Mendoza v. Casumpang, et al.",
+        "grNumber": "G.R. No. 197987",
+        "url": "https://lawphil.net/judjuris/juri2012/mar2012/gr_197987_2012.html",
+        "part": "Decision, the factual question raised on certiorari",
+        "excerpt": "Petitioner claims that no gauze or surgical material was left in Josephine’s body after her surgery as evidenced by the surgical sponge count in the hospital record. But she raises at this Court’s level a question of fact when parties may raise only questions of law before it in petitions for review on certiorari from the CA. With few exceptions, the factual findings of the latter court are generally binding. None of those exceptions applies to this case."
+      }
+    },
+    {
+      "id": "q-0523",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "Under Article 2229 of the Civil Code, as applied in Mendoza v. Casumpang, exemplary damages are imposed",
+      "choices": {
+        "A": "only when the defendant acted with malice.",
+        "B": "by way of example or correction for the public good, in addition to moral damages; they may also be awarded in cases of gross negligence.",
+        "C": "to compensate the heirs for the funeral expenses.",
+        "D": "only when the plaintiff has proved actual damages by official receipts."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court said that \"under Article 2229 of the Civil Code, exemplary damages are imposed by way of example or correction for the public good, in addition to moral damages. Exemplary damages may also be awarded in cases of gross negligence.\" It awarded them \"[t]o provide an example to the medical profession and to stress the need for constant vigilance in attending to a patient's health.\" **A is wrong:** gross negligence suffices; malice is not required. **C is wrong:** funeral and similar expenses are actual damages. **D is wrong:** exemplary damages do not depend on receipts. **Bar trap:** exemplary damages are for example and correction, not compensation.",
+      "caseIds": [
+        "case-0041"
+      ],
+      "source": {
+        "caseTitle": "Mendoza v. Casumpang, et al.",
+        "grNumber": "G.R. No. 197987",
+        "url": "https://lawphil.net/judjuris/juri2012/mar2012/gr_197987_2012.html",
+        "part": "Decision, exemplary damages",
+        "excerpt": "The Court notes, however, that neither the CA nor the RTC awarded exemplary damages against Dr. Mendoza when, under Article 2229 of the Civil Code, exemplary damages are imposed by way of example or correction for the public good, in addition to moral damages. Exemplary damages may also be awarded in cases of gross negligence."
+      }
+    },
+    {
+      "id": "q-0524",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "According to Mendoza v. Casumpang, whose responsibility is it to ascertain that the counts of instruments and materials used before the surgery and before sewing the patient up have been correctly done?",
+      "choices": {
+        "A": "The circulating nurse alone.",
+        "B": "The hospital's medical director.",
+        "C": "The anesthesiologist.",
+        "D": "The surgeon performing the operation, who must personally ascertain it."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The Court said: \"A surgical operation is the responsibility of the surgeon performing it. He must personally ascertain that the counts of instruments and materials used before the surgery and prior to sewing the patient up have been correctly done.\" **A, B and C are wrong:** others may take part in the count, but the decision places the responsibility personally on the operating surgeon. **Bar trap:** a surgeon cannot defend by pointing to the nurses' or the hospital's count.",
+      "caseIds": [
+        "case-0041"
+      ],
+      "source": {
+        "caseTitle": "Mendoza v. Casumpang, et al.",
+        "grNumber": "G.R. No. 197987",
+        "url": "https://lawphil.net/judjuris/juri2012/mar2012/gr_197987_2012.html",
+        "part": "Decision, the surgeon's responsibility for the counts",
+        "excerpt": "A surgical operation is the responsibility of the surgeon performing it. He must personally ascertain that the counts of instruments and materials used before the surgery and prior to sewing the patient up have been correctly done."
+      }
+    },
+    {
+      "id": "q-0525",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "In Mendoza v. Casumpang, the surgeon argued before the Supreme Court that the hospital's surgical sponge count proved no gauze was left in the patient. How did the Court treat this argument?",
+      "choices": {
+        "A": "As a question of fact, which cannot be raised in a petition for review on certiorari, since only questions of law may be raised and the Court of Appeals' factual findings are generally binding.",
+        "B": "As a question of law, which the Court resolved in the surgeon's favor.",
+        "C": "As conclusive proof that the gauze came from another doctor.",
+        "D": "As a ground to remand the case for a new trial."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court held that the surgeon raised \"a question of fact when parties may raise only questions of law before it in petitions for review on certiorari from the CA. With few exceptions, the factual findings of the latter court are generally binding. None of those exceptions applies to this case.\" **B is wrong:** the Court did not treat it as a question of law and ruled against the surgeon. **C is wrong:** the patient had no other operation. **D is wrong:** no remand was ordered; the Court affirmed with modifications. **Bar trap:** recognize factual questions disguised as legal ones in Rule 45 petitions.",
+      "caseIds": [
+        "case-0041"
+      ],
+      "source": {
+        "caseTitle": "Mendoza v. Casumpang, et al.",
+        "grNumber": "G.R. No. 197987",
+        "url": "https://lawphil.net/judjuris/juri2012/mar2012/gr_197987_2012.html",
+        "part": "Decision, the factual question raised on certiorari",
+        "excerpt": "Petitioner claims that no gauze or surgical material was left in Josephine’s body after her surgery as evidenced by the surgical sponge count in the hospital record. But she raises at this Court’s level a question of fact when parties may raise only questions of law before it in petitions for review on certiorari from the CA. With few exceptions, the factual findings of the latter court are generally binding. None of those exceptions applies to this case."
+      }
+    },
+    {
+      "id": "q-0526",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "In Mendoza v. Casumpang, the patient died as a result of the surgeon's negligence. What additional award did the Court give her heirs under Article 2206 of the Civil Code?",
+      "choices": {
+        "A": "Temperate damages for future medical expenses.",
+        "B": "Nominal damages for the violation of her rights.",
+        "C": "Civil indemnity arising from death, in the amount of ₱50,000 fixed by prevailing jurisprudence.",
+        "D": "Liquidated damages stipulated in the hospital's admission form."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court held that \"in view of Josephine's death resulting from petitioner's negligence, civil indemnity under Article 2206 of the Civil Code should be given to respondents as heirs. The amount of ₱50,000.00 is fixed by prevailing jurisprudence for this kind.\" **A is wrong:** temperate damages were not awarded (compare Ramos, 1999, where they were given for a continuing injury and later deleted after the patient's death). **B and D are wrong:** neither was awarded. **Bar trap:** civil indemnity for death is separate from moral damages and is due upon death caused by a crime or quasi-delict.",
+      "caseIds": [
+        "case-0041"
+      ],
+      "source": {
+        "caseTitle": "Mendoza v. Casumpang, et al.",
+        "grNumber": "G.R. No. 197987",
+        "url": "https://lawphil.net/judjuris/juri2012/mar2012/gr_197987_2012.html",
+        "part": "Decision, civil indemnity for death",
+        "excerpt": "Further, in view of Josephine’s death resulting from petitioner’s negligence, civil indemnity under Article 2206 of the Civil Code should be given to respondents as heirs. The amount of ₱50,000.00 is fixed by prevailing jurisprudence for this kind."
+      }
+    },
+    {
+      "id": "q-0527",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "In Mendoza v. Casumpang, what circumstances supported the finding that the gauze found in the patient's cervix came from the surgeon's operation?",
+      "choices": {
+        "A": "The surgeon admitted in court that she left the gauze.",
+        "B": "The patient did not undergo any other surgical operation, and it was most unlikely that she, or any woman, would put a roll of gauze into her own cervix.",
+        "C": "The hospital's sponge count showed two missing gauzes.",
+        "D": "An NBI autopsy found that the gauze matched the hospital's supply."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court noted, as the trial court did, that \"Josephine did not undergo any other surgical operation. And it would be much unlikely for her or for any woman to inject a roll of gauze into her cervix,\" then applied the rule that leaving sponges in the wound is at least prima facie negligence of the operating surgeon. **A is wrong:** the surgeon denied it. **C is wrong:** the surgeon relied on the sponge count to argue that nothing was left. **D is wrong:** no such finding appears. **Bar trap:** circumstantial evidence plus the prima facie rule can prove the surgeon's negligence even against a record of a complete count.",
+      "caseIds": [
+        "case-0041"
+      ],
+      "source": {
+        "caseTitle": "Mendoza v. Casumpang, et al.",
+        "grNumber": "G.R. No. 197987",
+        "url": "https://lawphil.net/judjuris/juri2012/mar2012/gr_197987_2012.html",
+        "part": "Decision, the inference that the gauze came from the surgery",
+        "excerpt": "As the RTC pointed out, Josephine did not undergo any other surgical operation. And it would be much unlikely for her or for any woman to inject a roll of gauze into her cervix."
       }
     }
   ]
