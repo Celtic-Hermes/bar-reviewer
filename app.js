@@ -3201,17 +3201,26 @@ function caseTitle(name) {
 // and a quiet line at the bottom of the question and case screens (aiNoteFor). Every item's
 // "status" stays in the data ("draft" until a person checks it). These two helpers still say
 // which items are rule text (the rule's own wording) and which are unchecked drafts.
+// A fill-in-the-blank item made from a decision (it links its case in "caseIds") is not
+// rule text: the words are the Court's, but the blanks were picked with AI.
+function isDecisionFillBlank(item) {
+  return !!item && item.type === "fillblank" && Array.isArray(item.caseIds) && item.caseIds.length > 0;
+}
+
 function isRuleText(item) {
-  return !!item && (item.type === "fillblank" || (typeof item.id === "string" && item.id.indexOf("rule-") === 0));
+  if (!item) { return false; }
+  if (item.type === "fillblank") { return !isDecisionFillBlank(item); }
+  return typeof item.id === "string" && item.id.indexOf("rule-") === 0;
 }
 
 function showsUnverified(item) {
   return !!item && item.status !== "verified" && !isRuleText(item);
 }
 
-// The quiet line at the bottom of the question screen.
+// The quiet line at the bottom of the question screen. Only an official fill-in-the-blank item
+// from a rule gets the rule-text line; one made from a decision is an AI-assisted draft.
 function aiNoteFor(question) {
-  if (question && question.type === "fillblank" && viewOf(question) === "official") {
+  if (question && question.type === "fillblank" && viewOf(question) === "official" && !isDecisionFillBlank(question)) {
     return "Rule text as published. Check the official source for amendments.";
   }
   return "AI-assisted study draft. Check the official text.";
@@ -3413,8 +3422,9 @@ function showQuestion() {
   document.getElementById("fb-level").hidden = true;
   document.getElementById("fb-new-row").hidden = true;  // "New blanks": fill in the blank only
   document.getElementById("fb-level-note").hidden = true;
-  // The quiet line at the bottom: an official fill-in-the-blank item is the rule's own published
-  // wording; everything else (essays, multiple choice, class notes, NotebookLM) is an AI-assisted draft.
+  // The quiet line at the bottom: an official fill-in-the-blank item from a rule is the rule's own
+  // published wording; everything else (essays, multiple choice, fill in the blank from a decision,
+  // class notes, NotebookLM) is an AI-assisted draft.
   document.getElementById("question-ai-note").textContent = aiNoteFor(question);
   showClassNotesLabel(question);
   showBookmark(question);
