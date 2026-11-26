@@ -226,6 +226,21 @@
       "ruling": "The petition was partly granted. Suelto was negligent: he admitted swerving and hitting the terrace, a driver violating a traffic regulation is presumed negligent (Art. 2185), the heavy damage showed he was speeding, his accounts were inconsistent, and the sudden emergency rule does not apply where the defense is not proved. On damages, actual damages under Article 2199 cover the loss of what one has (daño emergente) and the failure to receive a benefit (lucro cesante), but they are not presumed: the claimant must prove the actual loss with a reasonable degree of certainty, on competent proof and the best evidence obtainable. A claimant's bare testimony must be viewed with caution, and an estimate of the repair cost does not suffice. Neither lower court stated the basis of its award; since the defense's own evidence showed ₱55,000, that amount was awarded, with ₱20,000 exemplary damages. Because the offense resulted only in damage to property, Article 365 calls for a fine, not imprisonment, so Suelto was fined ₱55,000.",
       "keyDoctrine": "Actual damages (Art. 2199) are not presumed; the claimant must prove the actual amount of loss with a reasonable degree of certainty, on competent proof and the best evidence obtainable, pointing to specific facts that afford a basis for measuring them. An estimate of the cost of repairs, without testimony to support it, does not suffice, and a claimant's bare self-serving testimony must be admitted with extreme caution. The sudden emergency rule does not excuse one whose own negligence created the emergency, and it must be proved by the one invoking it.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2006/mar2006/gr_152040_2006.html"
+    },
+    {
+      "id": "case-0063",
+      "status": "draft",
+      "name": "People v. Jugueta",
+      "grNumber": "G.R. No. 202124",
+      "year": 2016,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "facts": "At night on June 6, 2002, in Atimonan, Quezon, Ireneo Jugueta and two companions stripped off the sack wall of Norberto Divina's one-room nipa hut, where his family lay down to sleep, and fired at them. Two of his daughters, aged 13 and 3½, were killed; Norberto, his wife and two other daughters survived. Jugueta was convicted of double murder and multiple attempted murder; the Court of Appeals affirmed. On appeal, the Supreme Court used the case to restate in detail the damages to be awarded in criminal cases.",
+      "issue": "(1) Was Jugueta's guilt proved, and what penalties apply? (2) What damages are due, and what are the standard amounts for crimes where the imposable penalty is reclusion perpetua to death?",
+      "ruling": "The conviction was affirmed with modifications. With the aggravating circumstance of dwelling, the imposable penalty for each murder was death, reduced to reclusion perpetua without parole under R.A. 9346. The Court explained the kinds of damages: civil indemnity ex delicto, equivalent to actual or compensatory damages, which is not a penalty and has a minimum (₱3,000 under Art. 2206) but no ceiling; moral damages, compensatory in nature, requiring injury from a case under Arts. 2219 or 2220; exemplary damages under Arts. 2229-2230, due for any aggravating circumstance, ordinary or qualifying, even if not alleged in the Information but proved, or for highly reprehensible conduct; and temperate damages. The basis is the penalty imposable by law for the crime, not the penalty actually imposed. It set standard amounts: for murder where the penalty would be death but is reduced to reclusion perpetua, ₱100,000 each as civil indemnity, moral and exemplary damages; for reclusion perpetua only, ₱75,000 each; for homicide, ₱50,000 civil indemnity and ₱50,000 moral damages; and ₱50,000 temperate damages when no proof of burial or funeral expenses is presented. All amounts earn 6% interest from finality.",
+      "keyDoctrine": "In crimes, the damages are civil indemnity (compensatory, not a penalty; a floor but no ceiling), moral damages (compensatory), exemplary damages (for an aggravating circumstance, ordinary or qualifying, proved at trial even if not alleged, or for highly reprehensible conduct), and actual or temperate damages. The amounts follow the penalty imposable by law for the crime, not the penalty actually imposed. Murder punishable by death but reduced to reclusion perpetua: ₱100,000 each; reclusion perpetua only: ₱75,000 each; homicide: ₱50,000 civil indemnity and ₱50,000 moral damages; temperate damages of ₱50,000 when no burial expenses are proved.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2016/apr2016/gr_202124_2016.html"
     }
   ],
   "questions": [
@@ -3679,6 +3694,237 @@
         "url": "https://lawphil.net/judjuris/juri2006/mar2006/gr_152040_2006.html",
         "part": "Decision, the disposition",
         "excerpt": "IN LIGHT OF ALL THE FOREGOING, the petition is PARTIALLY GRANTED. The joint decision of the Regional Trial Court of Quezon City is AFFIRMED WITH THE MODIFICATION that petitioner Suelto is sentenced to pay a fine of P55,000.00 with subsidiary imprisonment in case of insolvency. Petitioners are ORDERED to pay to Erlinda V. Valdellon, jointly and severally, the total amount of P55,000.00 by way of actual damages, and P20,000.00 by way of exemplary damages."
+      }
+    },
+    {
+      "id": "q-0696",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "In criminal cases where the imposable penalty is reclusion perpetua to death, what kinds of damages does the Court generally award? Briefly explain the nature of civil indemnity, and why the Court may increase its amount, as discussed in People v. Jugueta.",
+      "suggestedAnswer": {
+        "answer": "Generally three: civil indemnity, moral damages and exemplary damages; actual damages or temperate damages may also be awarded in some instances. Civil indemnity ex delicto is equivalent to actual or compensatory damages in civil law, and since it is not a penalty or fine, its amount can be increased by the Court when appropriate.",
+        "legalBasis": "In People v. Jugueta, the Court explained that civil indemnity ex delicto is the indemnity authorized in criminal law for the offended party, apart from other proven actual damages, and stems from Article 100 of the Revised Penal Code (every person criminally liable is also civilly liable). It is \"technically, not a penalty or a fine; hence, it can be increased by the Court when appropriate.\" Article 2206 of the Civil Code imposes only a minimum (₱3,000) and no ceiling, so the amount may be increased when the present circumstances warrant.",
+        "application": "Civil indemnity is a kind of monetary restitution to the victim for the damage done by the accused, covering the civil aspect of the crime, in addition to the penalty of imprisonment.",
+        "conclusion": "Civil indemnity, moral damages and exemplary damages, plus actual or temperate damages in some cases. **Bar trap:** civil indemnity is not a fine, so the rule against increasing penalties does not stop the Court from raising it; Article 2206 sets only a floor."
+      },
+      "keyPoints": [
+        "Generally: civil indemnity, moral damages, exemplary damages; also actual or temperate damages in some instances",
+        "Civil indemnity ex delicto = actual or compensatory damages in civil law; from Art. 100 RPC",
+        "Not a penalty or fine, so the Court may increase it",
+        "Art. 2206: minimum ₱3,000, no ceiling",
+        "A monetary restitution to the victim for the civil aspect"
+      ],
+      "caseIds": [
+        "case-0063"
+      ],
+      "source": {
+        "caseTitle": "People v. Jugueta",
+        "grNumber": "G.R. No. 202124",
+        "url": "https://lawphil.net/judjuris/juri2016/apr2016/gr_202124_2016.html",
+        "part": "Decision, discussion of the award of damages (kinds of damages in crimes)",
+        "excerpt": "Anent the award of damages, the Court deems it proper to address the matter in detail as regards criminal cases where the imposable penalty is reclusion perpetua to death. Generally, in these types of criminal cases, there are three kinds of damages awarded by the Court; namely: civil indemnity, moral, and exemplary damages. Likewise, actual damages may be awarded or temperate damages in some instances. First, civil indemnity ex delicto is the indemnity authorized in our criminal law for the offended party, in the amount authorized by the prevailing judicial policy and apart from other proven actual damages, which itself is equivalent to actual or compensatory damages in civil law. This award stems from Article 100 of the RPC which states, \"Every person criminally liable for a felony is also civilly liable.\" It is to be noted that civil indemnity is, technically, not a penalty or a fine; hence, it can be increased by the Court when appropriate. … Also, it is apparent from Article 2206 that the law only imposes a minimum amount for awards of civil indemnity, which is ₱3,000.00. The law did not provide for a ceiling. Thus, although the minimum amount for the award cannot be changed, increasing the amount awarded as civil indemnity can be validly modified and increased when the present circumstance warrants it."
+      }
+    },
+    {
+      "id": "q-0697",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "X was convicted of homicide. During the trial, the prosecution proved that X committed the crime in the dwelling of the victim, but dwelling was not alleged in the Information. X argues that (a) since dwelling was not alleged, it cannot affect his liability at all, and (b) exemplary damages may be awarded only for an ordinary, not a qualifying, aggravating circumstance. Rule on both arguments, citing People v. Jugueta.",
+      "suggestedAnswer": {
+        "answer": "Both arguments fail as to the civil liability. An aggravating circumstance not alleged cannot be used to increase the penalty, but if proved at trial it entitles the victim to exemplary damages; and an aggravating circumstance, whether ordinary or qualifying, supports exemplary damages.",
+        "legalBasis": "In People v. Jugueta, the Court held that aggravating circumstances must be stated in the information so as not to trample on the accused's right to be informed, but \"[i]n the civil aspect, the presence of an aggravating circumstance, even if not alleged in the information but proven during trial would entitle the victim to an award of exemplary damages.\" It also held that the ordinary or qualifying nature of an aggravating circumstance is a distinction that matters only to the criminal, not the civil, liability, so either kind entitles the offended party to exemplary damages under Article 2230. For homicide, ₱50,000 exemplary damages is added if an aggravating circumstance is proved but not alleged.",
+        "application": "Dwelling cannot raise X's penalty since it was not alleged, but having been proved, it supports an award of exemplary damages in addition to civil indemnity and moral damages.",
+        "conclusion": "Exemplary damages may be awarded. **Bar trap:** the requirement to allege aggravating circumstances protects the accused in the criminal aspect only; it does not bar exemplary damages in the civil aspect."
+      },
+      "keyPoints": [
+        "Aggravating circumstances must be alleged to affect the penalty (right to be informed)",
+        "In the civil aspect, a proved but unalleged aggravating circumstance supports exemplary damages",
+        "Ordinary or qualifying: the distinction matters only to criminal liability",
+        "Exemplary damages also for highly reprehensible or outrageous conduct (Art. 2229)",
+        "Homicide: ₱50,000 exemplary damages if an aggravating circumstance is proved but not alleged"
+      ],
+      "caseIds": [
+        "case-0063"
+      ],
+      "source": {
+        "caseTitle": "People v. Jugueta",
+        "grNumber": "G.R. No. 202124",
+        "url": "https://lawphil.net/judjuris/juri2016/apr2016/gr_202124_2016.html",
+        "part": "Decision, discussion of the award of damages (exemplary damages)",
+        "excerpt": "Withal, the ordinary or qualifying nature of an aggravating circumstance is a distinction that should only be of consequence to the criminal, rather than to the civil, liability of the offender. In fine, relative to the civil aspect of the case, an aggravating circumstance, whether ordinary or qualifying, should entitle the offended party to an award of exemplary damages within the unbridled meaning of Article 2230 of the Civil Code. The reason is fairly obvious as to why the Revised Rules of Criminal Procedure requires aggravating circumstances, whether ordinary or qualifying, to be stated in the complaint or information. It is in order not to trample on the constitutional right of an accused to be informed of the nature of the alleged offense that he or she has committed. A criminal complaint or information should basically contain the elements of the crime, as well as its qualifying and ordinary aggravating circumstances, for the court to effectively determine the proper penalty it should impose. This, however, is not similar in the recovery of civil liability. In the civil aspect, the presence of an aggravating circumstance, even if not alleged in the information but proven during trial would entitle the victim to an award of exemplary damages. … However, an award of ₱50,000.00 exemplary damages in a crime of homicide shall be added if there is an aggravating circumstance present that has been proven but not alleged in the information."
+      }
+    },
+    {
+      "id": "q-0698",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "A was convicted of murder qualified by treachery, with the ordinary aggravating circumstance of dwelling, so the penalty would have been death; because of R.A. 9346, he was sentenced to reclusion perpetua. A argues that the damages should follow the penalty actually imposed, reclusion perpetua. The heirs presented no receipts for burial expenses. Following People v. Jugueta, what damages should be awarded to the heirs, and in what amounts?",
+      "suggestedAnswer": {
+        "answer": "The damages follow the penalty imposable by law (death), not the penalty actually imposed. The heirs should receive ₱100,000 civil indemnity, ₱100,000 moral damages, ₱100,000 exemplary damages, and ₱50,000 temperate damages, all with 6% interest from finality.",
+        "legalBasis": "In People v. Jugueta, the Court held that despite R.A. 9346, \"the principal consideration for the award of damages ... is 'the penalty provided by law or imposable for the offense because of its heinousness, not the public penalty actually imposed on the offender.'\" For crimes where the imposable penalty is death because of an ordinary aggravating circumstance but reclusion perpetua is imposed, the amounts are ₱100,000 civil indemnity, ₱100,000 moral damages and ₱100,000 exemplary damages. When no documentary evidence of burial or funeral expenses is presented, ₱50,000 temperate damages is awarded. In the case, all these awards earn 6% interest from finality.",
+        "application": "With dwelling, death would have been imposed, so A's case falls under the highest bracket. Had there been no ordinary aggravating circumstance (reclusion perpetua only), the amounts would be ₱75,000 each.",
+        "conclusion": "₱100,000 each in civil indemnity, moral and exemplary damages, plus ₱50,000 temperate damages. **Bar trap:** do not base the damages on the reduced penalty actually imposed; use the penalty the law prescribes for the crime as committed. Also check later rulings for any change in these amounts."
+      },
+      "keyPoints": [
+        "Basis: the penalty imposable by law, not the penalty actually imposed",
+        "Death reduced to reclusion perpetua: ₱100,000 each (civil indemnity, moral, exemplary)",
+        "Reclusion perpetua only: ₱75,000 each",
+        "No proof of burial expenses: ₱50,000 temperate damages",
+        "6% interest from finality on all amounts"
+      ],
+      "caseIds": [
+        "case-0063"
+      ],
+      "source": {
+        "caseTitle": "People v. Jugueta",
+        "grNumber": "G.R. No. 202124",
+        "url": "https://lawphil.net/judjuris/juri2016/apr2016/gr_202124_2016.html",
+        "part": "Decision, discussion of the award of damages (basis and standard amounts)",
+        "excerpt": "As a result, the death penalty can no longer be imposed. Instead, they have to impose reclusion perpetua. Despite this, the principal consideration for the award of damages, following the ruling in People v. Salome and People v. Quiachon, is \"the penalty provided by law or imposable for the offense because of its heinousness, not the public penalty actually imposed on the offender.\" … Again, for crimes where the imposable penalty is death in view of the attendance of an ordinary aggravating circumstance but due to the prohibition to impose the death penalty, the actual penalty imposed is reclusion perpetua, the latest jurisprudence pegs the amount of ₱100,000.00 as civil indemnity and ₱100,0000.00 as moral damages. For the qualifying aggravating circumstance and/or the ordinary aggravating circumstances present, the amount of ₱100,000.00 is awarded as exemplary damages aside from civil indemnity and moral damages. … When the circumstances surrounding the crime call for the imposition of reclusion perpetua only, there being no ordinary aggravating circumstance, the Court rules that the proper amounts should be ₱75,000.00 as civil indemnity, ₱75,000.00 as moral damages and ₱75,000.00 exemplary damages, regardless of the number of qualifying aggravating circumstances present. … VII. In all of the above instances, when no documentary evidence of burial or funeral expenses is presented in court, the amount of ₱50,000.00 as temperate damages shall be awarded."
+      }
+    },
+    {
+      "id": "q-0699",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Under the discussion of moral damages in People v. Jugueta, which of the following is imperative for moral damages to be awarded?",
+      "choices": {
+        "A": "Proof of pecuniary loss with receipts.",
+        "B": "That injury was suffered by the claimant, and that such injury sprang from any of the cases in Articles 2219 and 2220 of the Civil Code.",
+        "C": "That the crime was attended by an aggravating circumstance.",
+        "D": "That the amount claimed is fixed by law."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** Quoting Del Mundo v. CA, the Court said that although \"no proof of pecuniary loss is necessary,\" it is imperative \"that (1) injury must have been suffered by the claimant, and (2) such injury must have sprung from any of the cases expressed in Article 2219 and Article 2220 of the Civil Code.\" **A is wrong:** no proof of pecuniary loss is needed. **C is wrong:** that is for exemplary damages. **D is wrong:** the amount is left to the court's discretion. **Bar trap:** moral damages are compensatory, not punitive.",
+      "caseIds": [
+        "case-0063"
+      ],
+      "source": {
+        "caseTitle": "People v. Jugueta",
+        "grNumber": "G.R. No. 202124",
+        "url": "https://lawphil.net/judjuris/juri2016/apr2016/gr_202124_2016.html",
+        "part": "Decision, discussion of the award of damages (moral damages)",
+        "excerpt": "These damages must be understood to be in the concept of grants, not punitive or corrective in nature, calculated to compensate the claimant for the injury suffered. Although incapable of exactness and no proof of pecuniary loss is necessary in order that moral damages may be awarded, the amount of indemnity being left to the discretion of the court, it is imperative, nevertheless, that (1) injury must have been suffered by the claimant, and (2) such injury must have sprung from any of the cases expressed in Article 2219 and Article 2220 of the Civil Code."
+      }
+    },
+    {
+      "id": "q-0700",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "In People v. Jugueta, when are temperate damages of ₱50,000 awarded in murder or homicide cases?",
+      "choices": {
+        "A": "When no evidence of burial and funeral expenses is presented, since the heirs undeniably suffered pecuniary loss though its exact amount was not proved.",
+        "B": "Only when the heirs present official receipts for the burial.",
+        "C": "In addition to proven actual damages for burial, in every case.",
+        "D": "Only when the crime is attended by an aggravating circumstance."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court said temperate damages are proper \"when no evidence of burial and funeral expenses is presented,\" since under Article 2224 \"it cannot be denied that the heirs of the victims suffered pecuniary loss although the exact amount was not proved,\" and it increased the amount to ₱50,000. **B is wrong:** with receipts, actual damages are awarded instead. **C is wrong:** temperate damages take the place of unproved actual damages. **D is wrong:** no aggravating circumstance is required. **Bar trap:** temperate damages fill the gap when a loss is certain but its amount is not.",
+      "caseIds": [
+        "case-0063"
+      ],
+      "source": {
+        "caseTitle": "People v. Jugueta",
+        "grNumber": "G.R. No. 202124",
+        "url": "https://lawphil.net/judjuris/juri2016/apr2016/gr_202124_2016.html",
+        "part": "Decision, discussion of the award of damages (temperate damages)",
+        "excerpt": "Aside from those discussed earlier, the Court also awards temperate damages in certain cases. The award of ₱25,000.00 as temperate damages in homicide or murder cases is proper when no evidence of burial and funeral expenses is presented in the trial court. Under Article 2224 of the Civil Code, temperate damages may be recovered, as it cannot be denied that the heirs of the victims suffered pecuniary loss although the exact amount was not proved. In this case, the Court now increases the amount to be awarded as temperate damages to ₱50,000.00."
+      }
+    },
+    {
+      "id": "q-0701",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Under the summary in People v. Jugueta, what damages are awarded to the heirs in a consummated homicide or reckless imprudence resulting in homicide, absent any aggravating circumstance?",
+      "choices": {
+        "A": "₱100,000 civil indemnity, ₱100,000 moral damages and ₱100,000 exemplary damages.",
+        "B": "₱75,000 civil indemnity and ₱75,000 moral damages.",
+        "C": "₱50,000 civil indemnity, ₱50,000 moral damages and ₱50,000 exemplary damages.",
+        "D": "₱50,000 civil indemnity and ₱50,000 moral damages, without exemplary damages."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** For crimes resulting in death with divisible penalties, \"like homicide, death under tumultuous affray, reckless imprudence resulting to homicide, the civil indemnity awarded to the heirs of the victim shall be ₱50,000.00 and ₱50,000.00 moral damages without exemplary damages being awarded.\" **A is the bracket for murder punishable by death reduced to reclusion perpetua. B is wrong:** not the amounts for homicide. **C is wrong:** exemplary damages are added only if an aggravating circumstance is proved. **Bar trap:** the bracket depends on the nature of the penalty (divisible or indivisible).",
+      "caseIds": [
+        "case-0063"
+      ],
+      "source": {
+        "caseTitle": "People v. Jugueta",
+        "grNumber": "G.R. No. 202124",
+        "url": "https://lawphil.net/judjuris/juri2016/apr2016/gr_202124_2016.html",
+        "part": "Decision, summary of the standard amounts (crimes with divisible penalties)",
+        "excerpt": "In other crimes that resulted in the death of a victim and the penalty consists of divisible penalties, like homicide, death under tumultuous affray, reckless imprudence resulting to homicide, the civil indemnity awarded to the heirs of the victim shall be ₱50,000.00 and ₱50,000.00 moral damages without exemplary damages being awarded."
+      }
+    },
+    {
+      "id": "q-0702",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "As explained in People v. Jugueta, exemplary or corrective damages are imposed",
+      "choices": {
+        "A": "to compensate the victim for the actual pecuniary loss suffered.",
+        "B": "to restore the victim's spiritual status quo ante.",
+        "C": "by way of example or correction for the public good, in addition to the moral, temperate, liquidated or compensatory damages.",
+        "D": "to vindicate a right where no loss was suffered."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court quoted Article 2229: \"Exemplary or corrective damages are imposed, by way of example or correction for the public good, in addition to the moral, temperate, liquidated or compensatory damages,\" and explained that they serve as a deterrent to serious wrongdoing. **A is wrong:** that is actual damages. **B is wrong:** that is the aim of moral damages. **D is wrong:** that is nominal damages. **Bar trap:** exemplary damages are always in addition to other damages, never awarded alone.",
+      "caseIds": [
+        "case-0063"
+      ],
+      "source": {
+        "caseTitle": "People v. Jugueta",
+        "grNumber": "G.R. No. 202124",
+        "url": "https://lawphil.net/judjuris/juri2016/apr2016/gr_202124_2016.html",
+        "part": "Decision, discussion of the award of damages (purpose of exemplary damages)",
+        "excerpt": "ART. 2229. Exemplary or corrective damages are imposed, by way of example or correction for the public good, in addition to the moral, temperate, liquidated or compensatory damages."
+      }
+    },
+    {
+      "id": "q-0703",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "In People v. Jugueta, what did the Court order the accused to pay the heirs of each of the two children killed?",
+      "choices": {
+        "A": "₱75,000 each as civil indemnity, moral damages and exemplary damages.",
+        "B": "₱100,000 as civil indemnity, ₱100,000 as moral damages, ₱100,000 as exemplary damages and ₱50,000 as temperate damages, with 6% interest from finality.",
+        "C": "₱50,000 as civil indemnity and ₱50,000 as moral damages only.",
+        "D": "₱100,000 as civil indemnity and actual damages for burial supported by receipts."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court ordered payment, for each of the two victims, of \"(a) ₱100,000.00 as civil indemnity; (b) ₱100,000.00 as moral damages; (c) ₱100,000.00 as exemplary damages; and (d) ₱50,000.00 as temperate damages,\" with 6% interest from finality. **A is wrong:** dwelling made the imposable penalty death. **C is wrong:** that is the homicide bracket. **D is wrong:** no burial receipts were presented, hence temperate damages. **Bar trap:** the attempted murders carried ₱50,000 each, a different bracket.",
+      "caseIds": [
+        "case-0063"
+      ],
+      "source": {
+        "caseTitle": "People v. Jugueta",
+        "grNumber": "G.R. No. 202124",
+        "url": "https://lawphil.net/judjuris/juri2016/apr2016/gr_202124_2016.html",
+        "part": "Decision, the disposition",
+        "excerpt": "He is ORDERED to PAY the heirs of Mary Grace Divina and Claudine Divina the following amounts for each of the two victims: (a) ₱100,000.00 as civil indemnity; (b) ₱100,000.00 as moral damages; (c) ₱100,000.00 as exemplary damages; and (d) ₱50,000.00 as temperate damages."
       }
     }
   ]
