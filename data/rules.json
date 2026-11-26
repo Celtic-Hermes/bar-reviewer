@@ -56,5 +56,23 @@
     "sourceUrl": "https://lawphil.net/statutes/repacts/ra2007/ra_9439_2007.html",
     "subject": "Civil Law",
     "topic": "Torts and Quasi-delicts"
+  },
+  {
+    "id": "rule-0009",
+    "status": "draft",
+    "title": "Republic Act No. 10173 (Data Privacy Act of 2012)",
+    "number": "Republic Act No. 10173",
+    "sourceUrl": "https://lawphil.net/statutes/repacts/ra2012/ra_10173_2012.html",
+    "subject": "Civil Law",
+    "topic": "Torts and Quasi-delicts"
+  },
+  {
+    "id": "rule-0010",
+    "status": "draft",
+    "title": "Civil Code, Title XVIII (Damages), Chapters 1 and 2 (Articles 2195 to 2215)",
+    "number": "Civil Code, Articles 2195-2215",
+    "sourceUrl": "https://lawphil.net/statutes/repacts/ra1949/ra_386_1949.html",
+    "subject": "Civil Law",
+    "topic": "Damages"
   }
 ]

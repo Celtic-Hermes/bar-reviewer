@@ -121,6 +121,8 @@
     {"id": "rule-0005", "title": "Rules of Court, Rule 91 (Escheats)", "number": "Rules of Court, Rule 91", "status": "draft", "subject": "Remedial Law", "topic": "Special Proceedings"},
     {"id": "rule-0006", "title": "Rules of Court, Rule 98 (Trustees)", "number": "Rules of Court, Rule 98", "status": "draft", "subject": "Remedial Law", "topic": "Special Proceedings"},
     {"id": "rule-0007", "title": "Rules of Court, Rule 107 (Absentees)", "number": "Rules of Court, Rule 107", "status": "draft", "subject": "Remedial Law", "topic": "Special Proceedings"},
-    {"id": "rule-0008", "title": "Republic Act No. 9439 (Prohibiting the Detention of Patients for Nonpayment of Hospital Bills)", "number": "Republic Act No. 9439", "status": "draft", "subject": "Civil Law", "topic": "Torts and Quasi-delicts"}
+    {"id": "rule-0008", "title": "Republic Act No. 9439 (Prohibiting the Detention of Patients for Nonpayment of Hospital Bills)", "number": "Republic Act No. 9439", "status": "draft", "subject": "Civil Law", "topic": "Torts and Quasi-delicts"},
+    {"id": "rule-0009", "title": "Republic Act No. 10173 (Data Privacy Act of 2012)", "number": "Republic Act No. 10173", "status": "draft", "subject": "Civil Law", "topic": "Torts and Quasi-delicts"},
+    {"id": "rule-0010", "title": "Civil Code, Title XVIII (Damages), Chapters 1 and 2 (Articles 2195 to 2215)", "number": "Civil Code, Articles 2195-2215", "status": "draft", "subject": "Civil Law", "topic": "Damages"}
   ]
 }
