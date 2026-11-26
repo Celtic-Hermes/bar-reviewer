@@ -76,6 +76,21 @@
       "ruling": "The Court en banc denied the second motion for reconsideration but changed the basis of PSI's liability. (1) Not respondeat superior: under the control test, an employment relationship exists only if the hospital controls both the means and the details of how the doctor does his work. Both lower courts found that Dr. Ampil was a consultant, not an employee, the Aganas never questioned that finding, and there was not enough evidence of control. (2) Ostensible agency (apparent authority): PSI held Dr. Ampil out as its agent, and Natividad's husband chose him because he believed Dr. Ampil was a staff member of a prominent hospital; PSI's \"consent for hospital care\" form, referring to \"the physicians of this hospital,\" reinforced that belief. (3) Corporate negligence: by its own admission PSI had the power and duty to review what happened within its walls; its duty to initiate a review of the reported missing gauzes was non-delegable, and it did nothing. This corporate negligence is distinct from Dr. Ampil's medical negligence and makes PSI directly liable. The liability based on ostensible agency and corporate negligence was declared pro hac vice (for this case only, not a precedent). PSI was ordered to pay ₱15 million with 12% interest a year from finality.",
       "keyDoctrine": "A hospital may be liable for a doctor's negligence on three bases: (1) respondeat superior, where there is an employment relationship, determined by the control test (control of both the means and the details of the doctor's work); (2) apparent authority, where the hospital holds the doctor out as its agent and the patient relies on it; and (3) corporate negligence, a direct liability for the hospital's own failure as a corporation, distinct from the doctor's medical negligence. The Court applied the last two to PSI pro hac vice.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2010/feb2010/gr_126297_2010.html"
+    },
+    {
+      "id": "case-0035",
+      "status": "draft",
+      "name": "Allarey, et al. v. Dela Cruz and Manila East Medical Center, Inc.",
+      "grNumber": "G.R. No. 250919",
+      "year": 2021,
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "facts": "Marissa Baco, 35, was in her fourth pregnancy; her obstetrician, Dr. Ma. Ditas F. Dela Cruz, had delivered her previous child by cesarean section. At 30 to 31 weeks she had bleeding and labor pains and was admitted to the Manila East Medical Center (MEMCI). Dr. Dela Cruz ordered tocolysis (medication to delay premature delivery) and monitoring, but no ultrasound or MRI was done during her confinement; the doctor relied on an ultrasound taken more than a month earlier. The next afternoon Marissa bled profusely again. During the emergency cesarean section the doctor found the placenta deeply attached to the uterine wall (placenta accreta) and removed the uterus, but blood for her rare type AB had not been secured in time, and Marissa died. Her premature baby, Julia Carla, died the next day. Her partner, children and parents sued the doctor and the hospital for damages. The trial court and the Court of Appeals dismissed the complaint, mainly because the family presented no expert witness (their medico-legal officer's testimony was stricken off when she did not appear for cross-examination).",
+      "issue": "(1) Does res ipsa loquitur apply? (2) Were the doctor and the hospital negligent, entitling the heirs to damages?",
+      "ruling": "The Court reversed and held the doctor and the hospital solidarily liable. (1) Res ipsa loquitur did not apply: it is applied only in exceptional cases where the lapse is readily apparent to a layman and within the physician's exclusive control. Placenta accreta is not immediately apparent and often not immediately diagnosed, and it arose from the pregnancy itself, not under the doctor's exclusive control, so expert testimony was needed. (2) The failure to present an expert does not always bar recovery: the defendant doctor's own expert can establish the standard of care and indirectly support the patient's claim. Here the defense expert admitted that ultrasound and MRI help diagnose placenta accreta; his statement that he would have acted the same way referred only to the emergency surgery. Given Marissa's high-risk history, Dr. Dela Cruz should have anticipated complications, ordered an ultrasound or MRI during the hours of relative calm, and secured blood in advance; timely diagnosis could have averted both deaths. MEMCI was vicariously liable even though Dr. Dela Cruz was only a consultant: under apparent authority a representation may be general and implied, and the hospital held her out as a member of its staff by letting her use its facilities and direct its nurses and specialists. The heirs were awarded actual, moral and exemplary damages, civil indemnity, attorney's fees and interest.",
+      "keyDoctrine": "Res ipsa loquitur applies in medical cases only in exceptional circumstances, where the lack of due care is readily apparent to a layman and within the physician's exclusive control; it does not apply where the actual cause of the injury has been identified. The plaintiff's lack of an expert witness is not fatal if the defense's own expert establishes the standard of care and indirectly supports the claim. Under apparent authority, a hospital's representation that a doctor is part of its staff may be general and implied, such as by letting the doctor use its facilities and direct its staff.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2021/nov2021/gr_250919_2021.html"
     }
   ],
   "questions": [
@@ -1223,6 +1238,235 @@
         "url": "https://lawphil.net/judjuris/juri2010/feb2010/gr_126297_2010.html",
         "part": "Resolution, the bases of a hospital's liability",
         "excerpt": "Where an employment relationship exists, the hospital may be held vicariously liable under Article 2176 in relation to Article 2180 of the Civil Code or the principle of respondeat superior. Even when no employment relationship exists but it is shown that the hospital holds out to the patient that the doctor is its agent, the hospital may still be vicariously liable under Article 2176 in relation to Article 1431 and Article 1869 of the Civil Code or the principle of apparent authority. Moreover, regardless of its relationship with the doctor, the hospital may be held directly liable to the patient for its own negligence or failure to follow established standard of conduct to which it should conform as a corporation."
+      }
+    },
+    {
+      "id": "q-0472",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "Liza, in her fourth pregnancy and with a previous cesarean delivery, was admitted at 31 weeks with bleeding and premature contractions. Her obstetrician gave medicine to delay delivery and relied on an ultrasound taken five weeks earlier, which showed nothing abnormal; no new ultrasound or MRI was ordered, and no blood was reserved for her rare blood type, although the bleeding and contractions stayed minimal for about 16 hours. The next afternoon Liza bled massively; an emergency cesarean and hysterectomy revealed a placenta grown into the uterine wall, and she died before blood arrived. In the heirs' suit, the doctor's expert testifies that he would have done exactly what she did, and the doctor argues that the heirs presented no expert of their own. Is the doctor liable? Explain.",
+      "suggestedAnswer": {
+        "answer": "Yes. The doctor was negligent in failing to anticipate the complications of a high-risk pregnancy: she did not order a timely ultrasound or MRI and did not prepare blood in advance, and timely diagnosis could have prevented the death.",
+        "legalBasis": "Medical negligence requires duty, breach, injury and proximate causation, usually proved through expert witnesses. In Allarey v. Dela Cruz, the Court held that the plaintiffs' failure to present an expert does not bar recovery when the testimony of the defendant physician's own expert establishes the standard of care and supports the plaintiffs' claim, albeit indirectly. A physician exercising the degree of care, skill and diligence in the same field should have considered and anticipated the common complications of preterm labor in a high-risk patient.",
+        "application": "Liza's history (fourth pregnancy, previous cesarean) and her bleeding with premature contractions made her pregnancy high-risk. The defense expert's own testimony showed that ultrasound and MRI help diagnose placenta accreta, yet none was ordered during the 16 calm hours, and the doctor relied on an outdated ultrasound. His statement that he would have acted the same refers only to the emergency cesarean and hysterectomy, which were proper once the bleeding could no longer be controlled; it does not cover the earlier failure to diagnose and to secure blood of a rare type. Had the condition been diagnosed early, the surgery could have been done before the bleeding became uncontrollable.",
+        "conclusion": "The doctor is liable for damages. **Bar trap:** \"the plaintiffs presented no expert\" is not always fatal, and \"my expert would have done the same\" must be read for what part of the treatment it covers; correct emergency surgery does not cure negligence in the hours before it."
+      },
+      "keyPoints": [
+        "Elements of medical negligence: duty, breach, injury, proximate causation",
+        "Exception: the defendant's own expert may establish the standard of care and indirectly support the plaintiffs",
+        "A high-risk history plus bleeding and preterm contractions should have been anticipated: timely ultrasound or MRI, blood prepared in advance",
+        "The defense expert's approval covered only the emergency surgery, not the earlier failure to diagnose",
+        "Timely diagnosis could have averted the deaths (proximate cause)"
+      ],
+      "caseIds": [
+        "case-0035"
+      ],
+      "source": {
+        "caseTitle": "Allarey, et al. v. Dela Cruz and Manila East Medical Center, Inc.",
+        "grNumber": "G.R. No. 250919",
+        "url": "https://lawphil.net/judjuris/juri2021/nov2021/gr_250919_2021.html",
+        "part": "Ruling of the Court, Dr. Dela Cruz and MEMCI were negligent",
+        "excerpt": "From the foregoing, it is clear that the condition of Marissa at the time she was admitted to the hospital, though not normal, is a common complication of preterm labor which a physician exercising the degree of care, skill, and diligence in the same field of practice should have considered and anticipated. … Moreover, the conclusion of Dr. Cardozo that he would have acted the same way as Dr. Dela Cruz did under the same circumstances should not be construed to mean that she was not negligent in treating Marissa during the period leading up to the sudden deterioration of her condition at 1:00 p.m. on August 29, 2006. The context of his conclusion should be construed to mean that what he was referring to was the emergency cesarean operation and hysterectomy conducted on Marissa which are, concededly, the standard of care necessary when bleeding could no longer be controlled or her condition at 1:00 p.m. on August 29, 2006. … Timely and proper diagnosis of Marissa's condition could have prevented or mitigated the severe complications she suffered that led to her and her baby's death. … Furthermore, given the fact that there was at least a period of 16 hours from the time Dr. Dela Cruz physically examined Marissa and the time she experienced profuse bleeding again the next day, Dr. Dela Cruz and the hospital should have already started sourcing blood supply that may be needed by the patient in case of emergency, especially since her blood type is rare."
+      }
+    },
+    {
+      "id": "q-0473",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "In what kind of medical negligence cases does the doctrine of res ipsa loquitur apply? Does it apply where the actual cause of the patient's injury has already been identified? Explain.",
+      "suggestedAnswer": {
+        "answer": "It applies only in exceptional circumstances, where the failure to observe due care that caused the injury is readily apparent to a layman and is within the exclusive control of the erring physician. It does not apply where the actual cause of the injury has been identified or established.",
+        "legalBasis": "In Allarey v. Dela Cruz, the Court, reviewing its medical negligence cases, held that res ipsa loquitur is applied only in such exceptional circumstances. It cited Cantre v. Spouses Go, where a gaping wound on the patient's arm was not an ordinary occurrence in delivering a baby and could not have happened unless negligence had set in somewhere; and Borromeo v. Family Care Hospital, which held that the doctrine does not apply to cases where the actual cause of the injury had been identified or established. Its requisites are an accident that ordinarily does not occur without negligence, an instrumentality within the defendant's exclusive control, and no contributing conduct of the plaintiff; control of the instrumentality is the fundamental element.",
+        "application": "In Allarey, the cause of death was identified: hypovolemic shock from placenta accreta, a condition in which the placenta attaches too deeply into the uterine wall. It was not immediately apparent, often not immediately diagnosed, and arose from the pregnancy itself, not from anything within the doctor's exclusive control. So the doctrine could not apply, and expert testimony was needed to fix the standard of care.",
+        "conclusion": "Res ipsa loquitur is exceptional and does not apply once the actual cause is known. **Bar trap:** the doctor in Allarey was still held negligent through the evidence, including her own expert's testimony; the doctrine's failure does not end the case."
+      },
+      "keyPoints": [
+        "Applied only in exceptional circumstances: lack of due care readily apparent to a layman and within the physician's exclusive control",
+        "Example: a gaping wound on the arm after a delivery (Cantre v. Spouses Go)",
+        "Does not apply where the actual cause of the injury is identified or established (Borromeo)",
+        "Placenta accreta: not immediately apparent, often not immediately diagnosed, arose from the pregnancy, not under the doctor's exclusive control"
+      ],
+      "caseIds": [
+        "case-0035"
+      ],
+      "source": {
+        "caseTitle": "Allarey, et al. v. Dela Cruz and Manila East Medical Center, Inc.",
+        "grNumber": "G.R. No. 250919",
+        "url": "https://lawphil.net/judjuris/juri2021/nov2021/gr_250919_2021.html",
+        "part": "Ruling of the Court, The doctrine of res ipsa loquitur cannot be applied to the present case",
+        "excerpt": "A review of medical negligence cases brought to this Court reveals that the doctrine of res ipsa loquitur is applied only to exceptional circumstances where the failure to observe due care which caused injury to the patient is readily apparent to a layman and is within the exclusive control of the erring physician. In Cantre v. Spouses Go, the Court applied the doctrine of res ipsa loquitur to justify declaring the physician liable. The Court explained that the gaping wound on the patient's arm is not an ordinary occurrence in the act of delivering a baby and that such \"injury could not have happened unless negligence had set in somewhere.\" In Borromeo v. Family Care Hospital, Inc., the Court explained that the application of the doctrine \"require[s] expert opinion to establish the culpability of the defendant doctor.\" It also does not apply to cases where the actual cause of the injury had been identified or established. … Placenta accreta is not the contemplated scenario to justify the application of the doctrine of res ipsa loquitur as this kind of complication in childbirth is not immediately apparent and, often times, not immediately diagnosed. Here, the medical condition of Marissa was not within the exclusive control of Dr. Dela Cruz."
+      }
+    },
+    {
+      "id": "q-0474",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "In a suit for medical negligence, the heirs' only expert witness failed to appear for cross-examination, so her testimony was stricken off. The defendant doctor argues that, without an expert of their own, the heirs can never prove the standard of care, and the case must be dismissed. Is the doctor correct? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. The failure of the plaintiffs to present an expert is not always fatal; the testimony of the defendant physician's own expert may establish the standard of care and support the plaintiffs' claim, albeit indirectly.",
+        "legalBasis": "In Allarey v. Dela Cruz, the Court held that in medical negligence cases the four elements (duty, breach, injury and proximate causation) are generally established through expert witnesses, but this rule should not be strictly interpreted to mean that failure to present any expert witness bars recovery. An exception is recognized when the testimony of the expert presented by the defendant physician establishes the standard of care under the circumstances and supports the plaintiffs' claim, albeit indirectly. The loss of the plaintiffs' own expert does not preclude the Court from deciding on the overall evidence.",
+        "application": "In Allarey, the defense expert admitted that ultrasound and MRI help diagnose placenta accreta, and that bleeding with preterm contractions, though common, is not normal. Read with the medical records, his testimony showed that the doctor should have ordered a timely diagnosis and prepared blood for a high-risk patient, which she did not do. The heirs could rely on that testimony.",
+        "conclusion": "The doctor is not correct; the court may find negligence from the defense's own expert. **Bar trap:** \"the plaintiff had no expert\" sounds decisive, but the court weighs all the evidence, including what the defense expert concedes."
+      },
+      "keyPoints": [
+        "General rule: the elements of medical negligence are proved through expert witnesses",
+        "Exception: the defendant physician's own expert may establish the standard of care and indirectly support the plaintiffs",
+        "The court decides on the overall evidence even if the plaintiffs' expert's testimony is stricken",
+        "In Allarey the defense expert conceded that ultrasound and MRI help diagnose placenta accreta"
+      ],
+      "caseIds": [
+        "case-0035"
+      ],
+      "source": {
+        "caseTitle": "Allarey, et al. v. Dela Cruz and Manila East Medical Center, Inc.",
+        "grNumber": "G.R. No. 250919",
+        "url": "https://lawphil.net/judjuris/juri2021/nov2021/gr_250919_2021.html",
+        "part": "Ruling of the Court, Dr. Dela Cruz and MEMCI were negligent (the plaintiffs' lack of an expert)",
+        "excerpt": "In medical negligence cases, there are four elements that must be established: (1) duty; (2) breach; (3) injury; and (4) proximate causation. In litigations involving medical negligence, the plaintiffs have the burden of establishing these elements through the testimonies of expert witnesses. However, this rule should not be strictly interpreted to mean that the failure to present any expert witness on the part of the plaintiffs shall bar them from recovering damages. An exception that should be recognized such as when the testimony of the expert witness presented by the purported erring defendant physician establishes the standard of care necessary under the given circumstances and supports the claim of the plaintiffs, albeit indirectly. Admittedly, petitioners, who are the plaintiffs in the complaint for quasi-delict, failed to completely present their lone expert witness to substantiate their claim against Dr. Dela Cruz and MEMCI. Dr. Bausa failed to attend several settings for her cross-examination. Nonetheless, this fact alone does not preclude the Court from making its own determination of the rights and liabilities based on the overall evidence presented during trial. This is particularly true when a careful analysis of the testimony of the expert witness presented for the purported erring physician and hospital reveals that it indirectly corroborates the claim of the heirs of Marissa."
+      }
+    },
+    {
+      "id": "q-0475",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "An obstetrician who sees her patients in her own lying-in clinic admits a patient to a hospital where she is only a consultant. There she gives orders to the hospital's nurses, assembles its surgical team, and refers the patient to the hospital's specialists. Sued for her negligence, the hospital says it never told the patient that the doctor was its employee. Following Allarey v. Dela Cruz, is the hospital liable?",
+      "choices": {
+        "A": "No, because the patient's prenatal care was done outside the hospital, so she relied only on the doctor.",
+        "B": "Yes, because under apparent authority the hospital's representation need not be express; by letting the doctor use its facilities and direct its staff, it impliedly held her out as a member of its medical staff.",
+        "C": "No, because without an employer-employee relationship a hospital can never be vicariously liable under Article 2180.",
+        "D": "Yes, because every hospital is an insurer of the results of every procedure done within its premises."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court held MEMCI vicariously liable even though Dr. Dela Cruz was only a consultant, because under apparent authority \"the hospital need not make express representations to the patient that the treating physician is an employee of the hospital; rather a representation may be general and implied.\" Allowing her to use its facilities, instruct its nurses, gather the medical team and refer the patient to its urologist and cardiologist gave the impression that she was a member of its medical staff. **A is wrong:** the Court acknowledged that the prenatal check-ups were done at her own clinic, and still found an implied holding out at the hospital. **C is wrong:** the Court said the absence of an employer-employee relationship \"cannot automatically excuse the hospital from any liability.\" **D is wrong:** the hospital was liable because of the doctor's proven negligence and its holding out, not as an insurer of results; the Court's lower-court rulings even stressed that physicians are not guarantors of results. **Bar trap:** \"we never said she was our employee\" fails when the hospital's conduct implies it.",
+      "caseIds": [
+        "case-0035"
+      ],
+      "source": {
+        "caseTitle": "Allarey, et al. v. Dela Cruz and Manila East Medical Center, Inc.",
+        "grNumber": "G.R. No. 250919",
+        "url": "https://lawphil.net/judjuris/juri2021/nov2021/gr_250919_2021.html",
+        "part": "Ruling of the Court, MEMCI is vicariously liable for the negligence of Dr. Dela Cruz",
+        "excerpt": "Admittedly, Dr. Dela Cruz is just a consultant or guest doctor of MEMCI. Nevertheless, even if there is no employer-employee relationship between her and the hospital, this cannot automatically excuse the hospital from any liability. When the doctrine of apparent authority is adopted in medical negligence cases, \"the hospital need not make express representations to the patient that the treating physician is an employee of the hospital; rather a representation may be general and implied.\" In the present case, though all prenatal check-ups of Marissa were conducted at the lying-in clinic of Dr. Dela Cruz outside MEMCI, the hospital impliedly held her out as a member of its medical staff by allowing her to use its facilities to treat her patients. Dr. Dela Cruz gave instructions to the nurse on duty of MEMCI and personally gathered the medical team for the procedures to be performed on Marissa. She even referred Marissa's condition to a urologist and cardiologist-internist while undergoing emergency cesarean section and hysterectomy. All these acts, when taken together, give the impression that she is a member of the medical staff of MEMCI. Thus, MEMCI cannot repudiate now this authority."
+      }
+    },
+    {
+      "id": "q-0476",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "A mother dies of massive bleeding during childbirth caused by placenta accreta, a condition in which the placenta attaches too deeply into the uterine wall. Her heirs invoke res ipsa loquitur so they need not present an expert. Following Allarey v. Dela Cruz, will the doctrine apply?",
+      "choices": {
+        "A": "No, because placenta accreta is not immediately apparent and often not immediately diagnosed, and it arose from the pregnancy itself rather than from something within the doctor's exclusive control.",
+        "B": "Yes, because a mother does not ordinarily die in childbirth unless someone was negligent.",
+        "C": "Yes, because the mother was in the operating room, under the exclusive control of the doctor, when she died.",
+        "D": "No, because res ipsa loquitur cannot be invoked in an action for damages based on quasi-delict."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court held that placenta accreta \"is not the contemplated scenario to justify the application of the doctrine of res ipsa loquitur as this kind of complication in childbirth is not immediately apparent and, often times, not immediately diagnosed,\" and that Marissa's condition was not within the exclusive control of Dr. Dela Cruz, since it arose from the pregnancy itself; so expert testimony had to be resorted to. **B is wrong:** death from a recognized childbirth complication is not something a layman can say happens only through negligence. **C is wrong:** being in the operating room does not put the underlying condition under the doctor's exclusive control. **D is wrong:** the case was itself a quasi-delict action, and the Court examined the requisites on the facts; it did not say the doctrine is unavailable in such actions. **Bar trap:** even where the doctor is ultimately found negligent (as here), res ipsa loquitur may still not apply; the two questions are separate.",
+      "caseIds": [
+        "case-0035"
+      ],
+      "source": {
+        "caseTitle": "Allarey, et al. v. Dela Cruz and Manila East Medical Center, Inc.",
+        "grNumber": "G.R. No. 250919",
+        "url": "https://lawphil.net/judjuris/juri2021/nov2021/gr_250919_2021.html",
+        "part": "Ruling of the Court, The doctrine of res ipsa loquitur cannot be applied to the present case",
+        "excerpt": "Placenta accreta is not the contemplated scenario to justify the application of the doctrine of res ipsa loquitur as this kind of complication in childbirth is not immediately apparent and, often times, not immediately diagnosed. Here, the medical condition of Marissa was not within the exclusive control of Dr. Dela Cruz. … Accordingly, the doctrine of res ipsa loquitur cannot be applied and expert testimony must be resorted to in order to accurately determine the standard of care necessary for Marissa's condition."
+      }
+    },
+    {
+      "id": "q-0477",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "In Allarey v. Dela Cruz, the obstetrician correctly performed an emergency cesarean section and hysterectomy, yet the Court found her negligent. In what did her negligence consist?",
+      "choices": {
+        "A": "In performing a hysterectomy without the written consent of the patient's husband.",
+        "B": "In operating on the patient in a hospital where she was only a consultant.",
+        "C": "In failing, despite the patient's high-risk history and bleeding, to order a timely ultrasound or MRI during the hours of relative calm and to prepare the blood the patient would likely need.",
+        "D": "In giving medication to delay delivery, which is never proper in preterm labor."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court held that Dr. Dela Cruz underestimated a high-risk pregnancy (fourth pregnancy, previous cesarean, bleeding with premature contractions), relied on an ultrasound taken more than a month earlier, did not order an ultrasound or MRI though there was minimal bleeding for many hours, and did not start sourcing blood of the patient's rare type during at least 16 hours; timely diagnosis could have prevented or mitigated the complications. **A is wrong:** consent was not the ground of liability. **B is wrong:** being a consultant affects the hospital's liability, not whether the doctor was negligent. **D is wrong:** the Court described tocolysis as the immediate treatment for the contractions; the fault was that there were no efforts to determine the cause of the bleeding. **Bar trap:** proper emergency surgery does not cure negligence in the hours before it.",
+      "caseIds": [
+        "case-0035"
+      ],
+      "source": {
+        "caseTitle": "Allarey, et al. v. Dela Cruz and Manila East Medical Center, Inc.",
+        "grNumber": "G.R. No. 250919",
+        "url": "https://lawphil.net/judjuris/juri2021/nov2021/gr_250919_2021.html",
+        "part": "Ruling of the Court, Dr. Dela Cruz and MEMCI were negligent",
+        "excerpt": "Instead of addressing the bleeding, she downplayed its seriousness despite knowledge of her medical background and the presence of factors that made her pregnancy high-risk. This was her fourth pregnancy, had three previous deliveries, and her last childbirth delivery was through cesarean section, giving her a higher probability of having placenta accreta or previa. She relied on an ultrasound report prepared more than a month before the patient complained of premature contractions and bleeding. … Noticeably, Dr. Dela Cruz admitted that there were minimal bleeding and contraction between 8:30 pm of August 28, 2006 and 1:00 pm the next day. During this period, Dr. Dela Cruz could have ordered Marissa's ultrasound or MRI yet she did not give such instruction. Timely and proper diagnosis of Marissa's condition could have prevented or mitigated the severe complications she suffered that led to her and her baby's death. … Furthermore, given the fact that there was at least a period of 16 hours from the time Dr. Dela Cruz physically examined Marissa and the time she experienced profuse bleeding again the next day, Dr. Dela Cruz and the hospital should have already started sourcing blood supply that may be needed by the patient in case of emergency, especially since her blood type is rare."
+      }
+    },
+    {
+      "id": "q-0478",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "The defense expert in Allarey v. Dela Cruz testified that he would have acted the same way as the defendant obstetrician did under the same circumstances. How did the Court read this testimony?",
+      "choices": {
+        "A": "As conclusive proof that the obstetrician met the standard of care throughout the patient's confinement.",
+        "B": "As inadmissible, because an expert may not compare himself with the defendant.",
+        "C": "As binding on the heirs, because they failed to present an expert of their own.",
+        "D": "As referring only to the emergency cesarean and hysterectomy, which were the standard of care once the bleeding could no longer be controlled, not to the care before that point."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The Court held that the expert's conclusion \"should not be construed to mean that she was not negligent in treating Marissa during the period leading up to the sudden deterioration of her condition\"; it referred to the emergency cesarean operation and hysterectomy, which were concededly the standard of care when bleeding could no longer be controlled. **A is wrong:** that is the reading the Court rejected. **B is wrong:** the Court did not exclude the testimony; it read it in context and even used parts of it against the defendant. **C is wrong:** the lack of the heirs' own expert did not bind them to the defense expert's conclusions; the Court weighed all the evidence. **Bar trap:** ask which part of the treatment an expert's approval covers.",
+      "caseIds": [
+        "case-0035"
+      ],
+      "source": {
+        "caseTitle": "Allarey, et al. v. Dela Cruz and Manila East Medical Center, Inc.",
+        "grNumber": "G.R. No. 250919",
+        "url": "https://lawphil.net/judjuris/juri2021/nov2021/gr_250919_2021.html",
+        "part": "Ruling of the Court, Dr. Dela Cruz and MEMCI were negligent (reading the defense expert's testimony)",
+        "excerpt": "Moreover, the conclusion of Dr. Cardozo that he would have acted the same way as Dr. Dela Cruz did under the same circumstances should not be construed to mean that she was not negligent in treating Marissa during the period leading up to the sudden deterioration of her condition at 1:00 p.m. on August 29, 2006. The context of his conclusion should be construed to mean that what he was referring to was the emergency cesarean operation and hysterectomy conducted on Marissa which are, concededly, the standard of care necessary when bleeding could no longer be controlled or her condition at 1:00 p.m. on August 29, 2006."
+      }
+    },
+    {
+      "id": "q-0479",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "Based on the cases discussed in Allarey v. Dela Cruz, in which situation was res ipsa loquitur applied to hold a physician liable?",
+      "choices": {
+        "A": "A mother who died of placenta accreta, a complication arising from the pregnancy itself.",
+        "B": "A patient whose actual cause of injury had already been identified and established.",
+        "C": "A mother who, after delivering a baby, was found with a gaping wound on her arm, an injury that could not have happened unless negligence had set in somewhere.",
+        "D": "A patient whose death required expert opinion to connect it to the treatment."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court cited Cantre v. Spouses Go, where res ipsa loquitur was applied because a gaping wound on the patient's arm is not an ordinary occurrence in delivering a baby, and such \"injury could not have happened unless negligence had set in somewhere.\" **A is wrong:** that is Allarey itself, where the doctrine was held inapplicable. **B is wrong:** Borromeo holds the doctrine does not apply where the actual cause had been identified or established. **D is wrong:** where expert opinion is needed to link the injury to the treatment, the doctrine, which rests on common knowledge, does not fit. **Bar trap:** the doctrine fits injuries a layman can judge, not complications that need a specialist to explain.",
+      "caseIds": [
+        "case-0035"
+      ],
+      "source": {
+        "caseTitle": "Allarey, et al. v. Dela Cruz and Manila East Medical Center, Inc.",
+        "grNumber": "G.R. No. 250919",
+        "url": "https://lawphil.net/judjuris/juri2021/nov2021/gr_250919_2021.html",
+        "part": "Ruling of the Court, The doctrine of res ipsa loquitur cannot be applied (citing Cantre and Borromeo)",
+        "excerpt": "A review of medical negligence cases brought to this Court reveals that the doctrine of res ipsa loquitur is applied only to exceptional circumstances where the failure to observe due care which caused injury to the patient is readily apparent to a layman and is within the exclusive control of the erring physician. In Cantre v. Spouses Go, the Court applied the doctrine of res ipsa loquitur to justify declaring the physician liable. The Court explained that the gaping wound on the patient's arm is not an ordinary occurrence in the act of delivering a baby and that such \"injury could not have happened unless negligence had set in somewhere.\" In Borromeo v. Family Care Hospital, Inc., the Court explained that the application of the doctrine \"require[s] expert opinion to establish the culpability of the defendant doctor.\" It also does not apply to cases where the actual cause of the injury had been identified or established."
       }
     }
   ]

@@ -5,7 +5,7 @@
       "topic": "Torts and Quasi-delicts",
       "file": "data/content/civil-law/torts-and-quasi-delicts.json",
       "subtopics": [
-        {"name": "Medical Negligence and Malpractice", "rule": null, "essay": ["q-0432", "q-0433", "q-0434", "q-0440", "q-0441", "q-0442", "q-0448", "q-0449", "q-0450", "q-0456", "q-0457", "q-0458", "q-0464", "q-0465", "q-0466"], "mcq": ["q-0435", "q-0436", "q-0437", "q-0438", "q-0439", "q-0443", "q-0444", "q-0445", "q-0446", "q-0447", "q-0451", "q-0452", "q-0453", "q-0454", "q-0455", "q-0459", "q-0460", "q-0461", "q-0462", "q-0463", "q-0467", "q-0468", "q-0469", "q-0470", "q-0471"], "fillblank": []}
+        {"name": "Medical Negligence and Malpractice", "rule": null, "essay": ["q-0432", "q-0433", "q-0434", "q-0440", "q-0441", "q-0442", "q-0448", "q-0449", "q-0450", "q-0456", "q-0457", "q-0458", "q-0464", "q-0465", "q-0466", "q-0472", "q-0473", "q-0474"], "mcq": ["q-0435", "q-0436", "q-0437", "q-0438", "q-0439", "q-0443", "q-0444", "q-0445", "q-0446", "q-0447", "q-0451", "q-0452", "q-0453", "q-0454", "q-0455", "q-0459", "q-0460", "q-0461", "q-0462", "q-0463", "q-0467", "q-0468", "q-0469", "q-0470", "q-0471", "q-0475", "q-0476", "q-0477", "q-0478", "q-0479"], "fillblank": []}
       ]
     },
     {
@@ -87,7 +87,8 @@
     {"id": "case-0031", "name": "Jarcia, Jr., et al. v. People", "grNumber": "G.R. No. 187926", "year": 2012, "subject": "Civil Law", "topic": "Torts and Quasi-delicts", "subtopic": "Medical Negligence and Malpractice", "status": "draft", "questions": ["q-0440", "q-0441", "q-0442", "q-0443", "q-0444", "q-0445", "q-0446", "q-0447"]},
     {"id": "case-0032", "name": "Cruz v. Agas, Jr.", "grNumber": "G.R. No. 204095", "year": 2015, "subject": "Civil Law", "topic": "Torts and Quasi-delicts", "subtopic": "Medical Negligence and Malpractice", "status": "draft", "questions": ["q-0448", "q-0449", "q-0450", "q-0451", "q-0452", "q-0453", "q-0454", "q-0455"]},
     {"id": "case-0033", "name": "Professional Services, Inc. v. Agana", "grNumber": "G.R. No. 126297", "year": 2007, "subject": "Civil Law", "topic": "Torts and Quasi-delicts", "subtopic": "Medical Negligence and Malpractice", "status": "draft", "questions": ["q-0456", "q-0457", "q-0458", "q-0459", "q-0460", "q-0461", "q-0462", "q-0463"]},
-    {"id": "case-0034", "name": "Professional Services, Inc. v. Court of Appeals and Agana (Resolution)", "grNumber": "G.R. No. 126297", "year": 2010, "subject": "Civil Law", "topic": "Torts and Quasi-delicts", "subtopic": "Medical Negligence and Malpractice", "status": "draft", "questions": ["q-0464", "q-0465", "q-0466", "q-0467", "q-0468", "q-0469", "q-0470", "q-0471"]}
+    {"id": "case-0034", "name": "Professional Services, Inc. v. Court of Appeals and Agana (Resolution)", "grNumber": "G.R. No. 126297", "year": 2010, "subject": "Civil Law", "topic": "Torts and Quasi-delicts", "subtopic": "Medical Negligence and Malpractice", "status": "draft", "questions": ["q-0464", "q-0465", "q-0466", "q-0467", "q-0468", "q-0469", "q-0470", "q-0471"]},
+    {"id": "case-0035", "name": "Allarey, et al. v. Dela Cruz and Manila East Medical Center, Inc.", "grNumber": "G.R. No. 250919", "year": 2021, "subject": "Civil Law", "topic": "Torts and Quasi-delicts", "subtopic": "Medical Negligence and Malpractice", "status": "draft", "questions": ["q-0472", "q-0473", "q-0474", "q-0475", "q-0476", "q-0477", "q-0478", "q-0479"]}
   ],
   "rules": [
     {"id": "rule-0001", "title": "The Rule on the Writ of Amparo", "number": "A.M. No. 07-9-12-SC", "status": "draft", "subject": "Remedial Law", "topic": "Special Proceedings"},
