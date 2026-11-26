@@ -286,6 +286,21 @@
       "ruling": "The motion was partly granted. The Court explained that interest is of two kinds: conventional interest, the agreed price for the use of money, which must be expressly stipulated in writing; and compensatory interest, the indemnity for delay in paying a sum of money, which is allowed by law even without a promise and may be stipulated through a penal clause. The Eastern Shipping and Nacar rules govern only compensatory interest. Stipulated rates, conventional or compensatory, are subject to the unconscionability standard; a stipulated rate more than twice the prevailing legal rate is suspect, and the creditor must show it is required by market conditions. But that standard does not apply to interest on interest under Article 2212, which is fixed by law. The Court restated the guidelines for loans or forbearance and for other obligations, liquidated or unliquidated. Applying them, it held the transaction a sale of goods on credit, not a loan or forbearance, and the 24% a compensatory interest under Article 2209. Although Article 2212 could apply, the award of legal interest on the 24% interest was deleted, because Midtown did not appeal and the trial court's judgment had become final as to it, so granting more on Lara's Gifts' appeal was ultra vires.",
       "keyDoctrine": "Conventional interest (the price for the use of money, which must be expressly stipulated in writing) differs from compensatory interest (indemnity for delay, allowed by law, or stipulated as a penalty); the Eastern Shipping and Nacar rules govern compensatory interest. Stipulated rates may be reduced if unconscionable; a rate more than twice the prevailing legal rate is suspect, and the creditor must justify it. Interest on interest under Article 2212 is fixed by law and is not subject to the unconscionability standard. A party who did not appeal cannot obtain affirmative relief greater than the judgment on the other party's appeal.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2022/sep2022/gr_225433_2022.html"
+    },
+    {
+      "id": "case-0067",
+      "status": "draft",
+      "name": "Simex International (Manila), Inc. v. Court of Appeals, et al.",
+      "grNumber": "G.R. No. 88013",
+      "year": 1990,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "facts": "Simex International, a food exporter that bought most of its products on credit, deposited ₱100,000 in its checking account with Traders Royal Bank, but the bank failed to credit the deposit. Eight checks Simex issued to suppliers and others were dishonored for insufficient funds. Suppliers sent demand letters threatening prosecution, withheld deliveries, and one canceled Simex's credit line. The bank corrected the error only on June 17, 1981, about a week after Simex complained and 23 days after the deposit, without explaining the error. Simex sued for moral and exemplary damages. The trial court found the bank negligent but awarded only ₱20,000 nominal damages and attorney's fees; the Court of Appeals affirmed, holding that bad faith, the essential ingredient of moral damages, was not proved.",
+      "issue": "Is Simex entitled to moral and exemplary damages for the bank's negligence?",
+      "ruling": "Yes. The bank's initial carelessness, aggravated by its lack of promptness in repairing the error, was gross negligence if not wanton bad faith. Simex's credit line was canceled, its orders held, its business declined and its reputation tarnished. Moral damages compensate, not penalize; their amount need not be proved with exactness, since under Article 2216 no proof of pecuniary loss is necessary, and the amount is left to the court's discretion. A corporation is as a rule not entitled to moral damages, since it cannot feel physical suffering or mental anguish, except where its good reputation is debased, resulting in social humiliation, as here. Nominal damages (Art. 2221) vindicate a right, not indemnify a loss, so since a loss was shown, moral damages of ₱20,000 were awarded in their place. Because a bank, as a business affected with public interest, must treat its depositors' accounts with meticulous care given their fiduciary relationship, its ineptness was wanton under Article 2232, and ₱50,000 exemplary damages were imposed.",
+      "keyDoctrine": "Moral damages compensate, not penalize; no proof of pecuniary loss is needed (Art. 2216), and the amount is left to the court's discretion. A corporation is generally not entitled to moral damages, except where its good reputation is debased, resulting in social humiliation. Nominal damages vindicate a violated right and are not proper where a loss is shown. A bank, being impressed with public interest and in a fiduciary relationship with its depositors, must treat their accounts with meticulous care; gross negligence in handling them may warrant moral and exemplary damages.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri1990/mar1990/gr_88013_1990.html"
     }
   ],
   "questions": [
@@ -4662,6 +4677,237 @@
         "url": "https://lawphil.net/judjuris/juri2022/sep2022/gr_225433_2022.html",
         "part": "Resolution, the disposition",
         "excerpt": "ACCORDINGLY, the Motion for Reconsideration is PARTIALLY GRANTED. This Court's August 28, 2019 Decision is MODIFIED in that the award of legal interest on the 24% per annum compensatory interest is hereby DELETED. Petitioner Lara's Gifts & Decors, Inc. is ordered to PAY respondent Midtown Industrial Sales, Inc. the following: (1) ONE MILLION TWO HUNDRED SIXTY-THREE THOUSAND ONE HUNDRED FOUR PESOS and 22/100 (P1,263,104.22) representing the principal amount plus stipulated interest at 24% per annum to be computed from January 22, 2008, the date of extrajudicial demand, until full payment;"
+      }
+    },
+    {
+      "id": "q-0728",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "X Corp., an exporter, sues its bank for moral damages after the bank's error caused several of X Corp.'s checks to bounce, leading suppliers to cancel its credit line and hold its orders. The bank argues that a corporation, not being a natural person, can never recover moral damages. Is the bank correct? Explain, citing Simex International v. Court of Appeals.",
+      "suggestedAnswer": {
+        "answer": "Not entirely. As a rule a corporation is not entitled to moral damages, but there is an exception where the corporation has a good reputation that is debased, resulting in its social humiliation; X Corp. falls within it.",
+        "legalBasis": "In Simex v. CA, the Court held that \"a corporation is not as a rule entitled to moral damages because, not being a natural person, it cannot experience physical suffering or such sentiments as wounded feelings, serious anxiety, mental anguish and moral shock. The only exception to this rule is where the corporation has a good reputation that is debased, resulting in its social humiliation.\" The bouncing checks impaired the corporation's prestige and diminished confidence in it as a reliable debtor.",
+        "application": "X Corp.'s credit line was canceled and its orders were held because its checks bounced, so its good name in the business community was damaged by the bank's fault. One past collection suit does not show it had no good reputation to protect.",
+        "conclusion": "X Corp. may recover moral damages under the exception. **Bar trap:** the rule (no moral damages for corporations) has an exception for a debased good reputation; know both."
+      },
+      "keyPoints": [
+        "General rule: a corporation cannot recover moral damages (it cannot feel suffering or anguish)",
+        "Exception: its good reputation is debased, resulting in social humiliation",
+        "Bouncing checks impaired its prestige and its standing as a reliable debtor",
+        "Credit line canceled, orders held, business declined",
+        "A single past collection case did not show it had no good name"
+      ],
+      "caseIds": [
+        "case-0067"
+      ],
+      "source": {
+        "caseTitle": "Simex International (Manila), Inc. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 88013",
+        "url": "https://lawphil.net/judjuris/juri1990/mar1990/gr_88013_1990.html",
+        "part": "Decision, discussion of moral damages (corporations)",
+        "excerpt": "Moreover, a corporation is not as a rule entitled to moral damages because, not being a natural person, it cannot experience physical suffering or such sentiments as wounded feelings, serious anxiety, mental anguish and moral shock. The only exception to this rule is where the corporation has a good reputation that is debased, resulting in its social humiliation. We shall recognize that the petitioner did suffer injury because of the private respondent's negligence that caused the dishonor of the checks issued by it. The immediate consequence was that its prestige was impaired because of the bouncing checks and confidence in it as a reliable debtor was diminished."
+      }
+    },
+    {
+      "id": "q-0729",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "The trial court found that a bank negligently failed to credit a depositor's deposit, causing its checks to bounce and its business to suffer. Since the depositor could not prove the exact peso amount of its losses, the court awarded only ₱20,000 as nominal damages. Was the award proper? Explain the purpose of moral damages and of nominal damages, citing Simex International v. Court of Appeals.",
+      "suggestedAnswer": {
+        "answer": "No. Since the depositor proved it suffered loss, the proper award is moral damages, not nominal damages; the lack of proof of the exact amount does not bar moral damages.",
+        "legalBasis": "In Simex v. CA, the Court held that moral damages \"are not awarded to penalize the defendant but to compensate the plaintiff for the injuries he may have suffered.\" Their amount need not be established with exactitude, because \"[m]oral damages are not susceptible of pecuniary estimation\"; Article 2216 provides that no proof of pecuniary loss is necessary for moral, nominal, temperate, liquidated or exemplary damages, and the amount is left to the court's discretion. Under Article 2221, nominal damages are adjudicated to vindicate or recognize a violated right, \"and not for the purpose of indemnifying the plaintiff for any loss suffered by him.\"",
+        "application": "Because the depositor proved a real loss (canceled credit line, held orders, declined business, tarnished reputation), nominal damages were the wrong remedy. In the case, the Court replaced the ₱20,000 nominal damages with ₱20,000 moral damages, and added ₱50,000 exemplary damages.",
+        "conclusion": "Moral damages, not nominal damages, should be awarded. **Bar trap:** nominal damages are for a violated right without proven loss; once a loss is shown, they are not the proper relief."
+      },
+      "keyPoints": [
+        "Moral damages compensate, they do not penalize",
+        "Not susceptible of pecuniary estimation; no proof of pecuniary loss needed (Art. 2216)",
+        "Amount left to the court's discretion",
+        "Nominal damages (Art. 2221): vindicate a right, not indemnify a loss",
+        "Loss proved: moral damages in lieu of nominal damages"
+      ],
+      "caseIds": [
+        "case-0067"
+      ],
+      "source": {
+        "caseTitle": "Simex International (Manila), Inc. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 88013",
+        "url": "https://lawphil.net/judjuris/juri1990/mar1990/gr_88013_1990.html",
+        "part": "Decision, discussion of moral damages (purpose and proof) and nominal damages",
+        "excerpt": "We agree that moral damages are not awarded to penalize the defendant but to compensate the plaintiff for the injuries he may have suffered. In the case at bar, the petitioner is seeking such damages for the prejudice sustained by it as a result of the private respondent's fault. The respondent court said that the claimed losses are purely speculative and are not supported by substantial evidence, but if failed to consider that the amount of such losses need not be established with exactitude precisely because of their nature. Moral damages are not susceptible of pecuniary estimation. Article 2216 of the Civil Code specifically provides that \"no proof of pecuniary loss is necessary in order that moral, nominal, temperate, liquidated or exemplary damages may be adjudicated.\" … Under Article 2221 of the Civil Code, \"nominal damages are adjudicated in order that a right of the plaintiff, which has been violated or invaded by the defendant, may be vindicated or recognized, and not for the purpose of indemnifying the plaintiff for any loss suffered by him.\" As we have found that the petitioner has indeed incurred loss through the fault of the private respondent, the proper remedy is the award to it of moral damages, which we impose, in our discretion, in the same amount of P20,000.00."
+      }
+    },
+    {
+      "id": "q-0730",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "A bank failed to credit a deposit, causing a depositor's checks to bounce. When told of the error, it took a week to correct it and never explained why it happened. The bank argues that exemplary damages are improper because it eventually corrected its records and the checks were paid. Rule on the bank's argument, citing Simex International v. Court of Appeals.",
+      "suggestedAnswer": {
+        "answer": "The argument fails. Given a bank's fiduciary duty to treat its depositors' accounts with meticulous care, its unexplained error and its delay in correcting it were wanton, warranting exemplary damages.",
+        "legalBasis": "In Simex v. CA, the Court held that, \"as a business affected with public interest and because of the nature of its functions, the bank is under obligation to treat the accounts of its depositors with meticulous care, always having in mind the fiduciary nature of their relationship.\" Having been informed of its error, the bank corrected it only a week later, 23 days after the deposit, with no satisfactory explanation; \"[s]uch ineptness comes under the concept of the wanton manner contemplated in the Civil Code that calls for the imposition of exemplary damages\" (Art. 2232).",
+        "application": "Correcting the error late does not excuse it: the error should not have been made at all, and the checks should have been paid on presentment. The bank's lackadaisical attitude was gross negligence. The Court imposed ₱50,000 exemplary damages as a deterrent.",
+        "conclusion": "Exemplary damages are proper. **Bar trap:** a later correction does not erase a bank's breach of its high duty of care; the standard for banks is meticulous care, given the fiduciary nature of the relationship."
+      },
+      "keyPoints": [
+        "Banks are businesses affected with public interest",
+        "Duty to treat depositors' accounts with meticulous care; fiduciary relationship",
+        "Unexplained error and a week's delay in correcting it after notice",
+        "Such ineptness is \"wanton\" under Art. 2232: exemplary damages",
+        "₱50,000 exemplary damages as a warning and deterrent"
+      ],
+      "caseIds": [
+        "case-0067"
+      ],
+      "source": {
+        "caseTitle": "Simex International (Manila), Inc. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 88013",
+        "url": "https://lawphil.net/judjuris/juri1990/mar1990/gr_88013_1990.html",
+        "part": "Decision, discussion of exemplary damages (duty of banks)",
+        "excerpt": "The point is that as a business affected with public interest and because of the nature of its functions, the bank is under obligation to treat the accounts of its depositors with meticulous care, always having in mind the fiduciary nature of their relationship. In the case at bar, it is obvious that the respondent bank was remiss in that duty and violated that relationship. What is especially deplorable is that, having been informed of its error in not crediting the deposit in question to the petitioner, the respondent bank did not immediately correct it but did so only one week later or twenty-three days after the deposit was made. It bears repeating that the record does not contain any satisfactory explanation of why the error was made in the first place and why it was not corrected immediately after its discovery. Such ineptness comes under the concept of the wanton manner contemplated in the Civil Code that calls for the imposition of exemplary damages."
+      }
+    },
+    {
+      "id": "q-0731",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "According to Simex International v. Court of Appeals, moral damages are awarded",
+      "choices": {
+        "A": "to penalize the defendant for its wrongdoing.",
+        "B": "to compensate the plaintiff for the injuries it may have suffered.",
+        "C": "to vindicate a right without regard to loss.",
+        "D": "to set an example for the public good."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court said \"moral damages are not awarded to penalize the defendant but to compensate the plaintiff for the injuries he may have suffered.\" **A is wrong:** they are not punitive. **C is wrong:** that is nominal damages (Art. 2221). **D is wrong:** that is exemplary damages (Art. 2229). **Bar trap:** know the distinct purpose of each kind of damages.",
+      "caseIds": [
+        "case-0067"
+      ],
+      "source": {
+        "caseTitle": "Simex International (Manila), Inc. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 88013",
+        "url": "https://lawphil.net/judjuris/juri1990/mar1990/gr_88013_1990.html",
+        "part": "Decision, discussion of moral damages (purpose)",
+        "excerpt": "We agree that moral damages are not awarded to penalize the defendant but to compensate the plaintiff for the injuries he may have suffered."
+      }
+    },
+    {
+      "id": "q-0732",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Under Article 2216 of the Civil Code, as applied in Simex International v. Court of Appeals, no proof of pecuniary loss is necessary for an award of",
+      "choices": {
+        "A": "actual or compensatory damages only.",
+        "B": "loss of earning capacity.",
+        "C": "attorney's fees.",
+        "D": "moral, nominal, temperate, liquidated or exemplary damages."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The Court quoted Article 2216: \"no proof of pecuniary loss is necessary in order that moral, nominal, temperate, liquidated or exemplary damages may be adjudicated,\" so the amount (except liquidated damages) is left to the court's discretion. **A and B are wrong:** actual damages, including loss of earning capacity, must be proved. **C is wrong:** attorney's fees need a basis under Article 2208. **Bar trap:** \"no proof of pecuniary loss\" does not mean no proof of injury at all.",
+      "caseIds": [
+        "case-0067"
+      ],
+      "source": {
+        "caseTitle": "Simex International (Manila), Inc. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 88013",
+        "url": "https://lawphil.net/judjuris/juri1990/mar1990/gr_88013_1990.html",
+        "part": "Decision, discussion of moral damages (proof)",
+        "excerpt": "Article 2216 of the Civil Code specifically provides that \"no proof of pecuniary loss is necessary in order that moral, nominal, temperate, liquidated or exemplary damages may be adjudicated.\" That is why the determination of the amount to be awarded (except liquidated damages) is left to the sound discretion of the court, according to \"the circumstances of each case.\""
+      }
+    },
+    {
+      "id": "q-0733",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "In Simex International v. Court of Appeals, which provision did the Court cite for the rule that actual damages may be recovered for injury to the plaintiff's business standing or commercial credit?",
+      "choices": {
+        "A": "Article 2205 of the Civil Code.",
+        "B": "Article 2219 of the Civil Code.",
+        "C": "Article 2208 of the Civil Code.",
+        "D": "Article 2221 of the Civil Code."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court said: \"Article 2205 of the Civil Code provides that actual or compensatory damages may be received '(2) for injury to the plaintiff s business standing or commercial credit,'\" and that once the loss is established, absolute certainty as to its amount is not required. **B is wrong:** Article 2219 lists cases for moral damages. **C is wrong:** Article 2208 is on attorney's fees. **D is wrong:** Article 2221 is on nominal damages. **Bar trap:** this injury also bolstered the claim for moral damages.",
+      "caseIds": [
+        "case-0067"
+      ],
+      "source": {
+        "caseTitle": "Simex International (Manila), Inc. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 88013",
+        "url": "https://lawphil.net/judjuris/juri1990/mar1990/gr_88013_1990.html",
+        "part": "Decision, discussion of moral damages (injury to business standing)",
+        "excerpt": "Article 2205 of the Civil Code provides that actual or compensatory damages may be received \"(2) for injury to the plaintiff s business standing or commercial credit.\" There is no question that the petitioner did sustain actual injury as a result of the dishonored checks and that the existence of the loss having been established \"absolute certainty as to its amount is not required.\""
+      }
+    },
+    {
+      "id": "q-0734",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Simex International claimed ₱1,000,000 in moral damages. How did the Court treat that claim?",
+      "choices": {
+        "A": "It awarded the full amount since moral damages need no proof.",
+        "B": "It found the claim \"nothing short of preposterous\" for a business of its size and awarded ₱20,000 in moral damages in place of nominal damages.",
+        "C": "It denied any moral damages since a corporation can never recover them.",
+        "D": "It remanded the case to fix the amount."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court said the ₱1,000,000 claim was \"nothing short of preposterous. Its business certainly is not that big, or its name that prestigious,\" and it imposed moral damages of ₱20,000 in lieu of nominal damages. **A is wrong:** the amount is still left to the court's sound discretion. **C is wrong:** the exception for a debased reputation applied. **D is wrong:** the Court fixed the amount itself. **Bar trap:** discretion over the amount means the court may grant much less than claimed.",
+      "caseIds": [
+        "case-0067"
+      ],
+      "source": {
+        "caseTitle": "Simex International (Manila), Inc. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 88013",
+        "url": "https://lawphil.net/judjuris/juri1990/mar1990/gr_88013_1990.html",
+        "part": "Decision, discussion of moral damages (the amount claimed)",
+        "excerpt": "From every viewpoint except that of the petitioner's, its claim of moral damages in the amount of P1,000,000.00 is nothing short of preposterous. Its business certainly is not that big, or its name that prestigious, to sustain such an extravagant pretense."
+      }
+    },
+    {
+      "id": "q-0735",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "What did the Court order in Simex International v. Court of Appeals?",
+      "choices": {
+        "A": "The bank was ordered to pay, in lieu of nominal damages, ₱20,000 moral damages and ₱50,000 exemplary damages, plus ₱5,000 attorney's fees and costs.",
+        "B": "The judgment for ₱20,000 nominal damages was affirmed.",
+        "C": "The bank was ordered to pay ₱1,000,000 moral damages and ₱500,000 exemplary damages.",
+        "D": "The complaint was dismissed because the bank corrected its error."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court ordered the bank \"to pay the petitioner, in lieu of nominal damages, moral damages in the amount of P20,000.00, and exemplary damages in the amount of P50,000.00 plus the original award of attorney's fees in the amount of P5,000.00, and costs.\" **B is wrong:** the judgment was modified. **C is wrong:** those were the amounts claimed. **D is wrong:** the correction did not excuse the bank. **Bar trap:** nominal damages and moral damages were not awarded together here; one replaced the other.",
+      "caseIds": [
+        "case-0067"
+      ],
+      "source": {
+        "caseTitle": "Simex International (Manila), Inc. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 88013",
+        "url": "https://lawphil.net/judjuris/juri1990/mar1990/gr_88013_1990.html",
+        "part": "Decision, the disposition",
+        "excerpt": "ACCORDINGLY, the appealed judgment is hereby MODIFIED and the private respondent is ordered to pay the petitioner, in lieu of nominal damages, moral damages in the amount of P20,000.00, and exemplary damages in the amount of P50,000.00 plus the original award of attorney's fees in the amount of P5,000.00, and costs."
       }
     }
   ]
