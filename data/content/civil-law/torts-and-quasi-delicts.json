@@ -211,6 +211,21 @@
       "ruling": "The Court partly granted the petitions. A physician-patient relationship is consensual but may be implied from the physician's affirmative acts of diagnosis or treatment; both doctors had one with Edmer. Dr. Casumpang was negligent: a wrong diagnosis is not by itself malpractice, and physicians are generally not liable for a bona fide error of judgment, but an erroneous diagnosis resulting from negligent conduct (neglecting the history, failing to order tests, failing to recognize symptoms) is evidence of malpractice; he selectively appreciated the symptoms, did not order confirmatory tests in time, and did not manage the dengue properly once found. Dr. Sanga was not liable: residents are held to the standard of physicians generally, but her error was an honest mistake of judgment, given the prior diagnosis by two doctors and the attending physician's final responsibility. Dr. Jaudian was qualified: what matters is the expert's knowledge of and familiarity with the standard of care, not his specialty title. Causation was proved, as timely diagnosis and management would have substantially reduced the risk of death. The hospital was not Dr. Casumpang's employer for lack of control, but it was solidarily liable under apparent authority, having held him out to parents who relied on the hospital; their use of a health card did not change this.",
       "keyDoctrine": "A physician-patient relationship is consensual but may be implied from the physician's affirmative acts of diagnosis or treatment. A wrong diagnosis is not by itself malpractice, but it is evidence of malpractice when it results from negligent conduct. Residents owe the standard of care of physicians generally, but liability considers their authority, supervision and the attending physician's principal responsibility. An expert's qualification depends on knowledge of and familiarity with the standard of care, not on specialty title. A hospital may be liable for an independent contractor physician under apparent authority, proved by the hospital's manifestations and the patient's reliance; a health plan limits only the choice of doctors, not liability.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2015/mar2015/gr_171127_2015.html"
+    },
+    {
+      "id": "case-0044",
+      "status": "draft",
+      "name": "Alano v. Magud-Logmao",
+      "grNumber": "G.R. No. 175540",
+      "year": 2014,
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "facts": "On March 1, 1988, 18-year-old Arnelito Logmao was brought to the East Avenue Medical Center (EAMC) after falling from an overpass; EAMC recorded his name as \"Angelito Lugmoso\" of Boni Avenue, Mandaluyong. Needing a ventilator, he was transferred the next morning to the National Kidney Institute (NKI), where he arrived unconscious. NKI's transplant coordinator sought his family through radio and television stations and the police, under the name EAMC had recorded. On March 3 he was pronounced brain dead, confirmed by a flat EEG. As no relatives had been found and time was of the essence, Dr. Filoteo Alano, NKI's Executive Director, issued a memorandum authorizing the removal of his organs for transplant, but only if all reasonable efforts to locate his relatives had been exerted and the NBI medico-legal section had been notified, in accordance with R.A. No. 349 as amended by P.D. No. 856. The NBI medico-legal officer verbally agreed, and the organs were removed and transplanted. His mother, Zenaida Magud-Logmao, learned of it from a news report and found his body at a funeral parlor. She sued many defendants; the trial court held only Dr. Alano liable, and the Court of Appeals affirmed with reduced damages.",
+      "issue": "Is Dr. Alano liable for damages for authorizing the removal of the organs of the brain-dead patient before his relatives were found?",
+      "ruling": "The Court reversed and dismissed the complaint against Dr. Alano. The case fell under an exception to the rule that the concurring factual findings of the lower courts bind the Court, as they failed to consider important circumstances. Dr. Alano's memorandum directed his subordinates to make certain that all reasonable efforts were exerted to locate the relatives, and granted authority only if the law was complied with; he acted prudently and could rely on his subordinates. Notices had been sent to the media and police even before the memorandum, and the NBI's opinion was sought. That the notices did not reach the family was due to the wrong name recorded by EAMC, not by NKI. The mother, who had the burden of proof by preponderance of evidence, presented no proof (such as expert testimony) that the roughly 24 hours allowed was unreasonable under the medical knowledge of the time. The organs were removed only after the son was declared brain dead, so the pain of his death could not be attributed to Dr. Alano.",
+      "keyDoctrine": "A hospital director who conditions his authorization for organ retrieval on compliance with the law, including all reasonable efforts to locate the next of kin and notice to the NBI, acts prudently and may rely on his subordinates. In civil cases the party who alleges must prove by preponderance of evidence, relying on the strength of his own evidence. Damages require that the defendant's act be the cause of the injury; organs removed only after brain death do not cause the death or the grief over it.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2014/apr2014/gr_175540_2014.html"
     }
   ],
   "questions": [
@@ -3431,6 +3446,236 @@
         "url": "https://lawphil.net/judjuris/juri2015/mar2015/gr_171127_2015.html",
         "part": "Our Ruling, There is No Employer-Employee Relationship Between SJDH and the Petitioning Doctors",
         "excerpt": "In determining whether an employer-employee relationship exists between the parties, the following elements must be present: (1) selection and engagement of services; (2) payment of wages; (3) the power to hire and fire; and (4) the power to control not only the end to be achieved, but the means to be used in reaching such an end. Control, which is the most crucial among the elements, is not present in this case."
+      }
+    },
+    {
+      "id": "q-0544",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "An unidentified accident victim, recorded under a wrong name by the first hospital, was transferred to a second hospital, where he was declared brain dead. The second hospital's staff appealed on radio, television and to the police for his relatives, under the recorded name. After about a day, the hospital director issued a memorandum authorizing the removal of his organs for transplant, but only if all reasonable efforts to locate his relatives had been exerted and the NBI medico-legal section had been notified, as the law then required. The NBI medico-legal officer agreed, and the organs were removed. The victim's mother, who learned of it later, sues the director for damages. Is the director liable? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. The director acted prudently: he conditioned his authority on compliance with the law, including all reasonable efforts to locate the relatives, and the failure of the notices to reach the mother was due to the wrong name recorded by the first hospital.",
+        "legalBasis": "In Alano v. Magud-Logmao, the Court held that the director's memorandum instructed his subordinates to \"make certain\" that \"all reasonable efforts\" were exerted to locate the next of kin, and gave permission ONLY IF the requirements of the law (R.A. No. 349 as amended by P.D. No. 856) had been complied with; he could rely on his subordinates to follow these directives. Reasonable means of notice had been used, even before the memorandum, and the NBI's opinion was sought. Fault for the notices' failure could not be laid at his door when another hospital recorded the wrong identity.",
+        "application": "The director gave clear, conditional instructions; the staff had already appealed through the media and the police, and the NBI medico-legal officer approved. The notices failed because they carried the name the first hospital had wrongly recorded, which the second hospital could not have corrected, since the patient was already unconscious when he arrived. The mother also presented no evidence, such as expert testimony, that the time allowed was unreasonable under the medical knowledge of the time.",
+        "conclusion": "The director is not liable. **Bar trap:** the case turns on proof of negligence and causation, not on sympathy; also note that the Court applied the organ-donation law in force in 1988 (R.A. No. 349 as amended by P.D. No. 856), so check the current law before relying on its requirements."
+      },
+      "keyPoints": [
+        "The memorandum required all reasonable efforts to locate the next of kin and notice to the NBI, and authorized retrieval only if the law was complied with",
+        "The director could rely on his subordinates to follow clear directives",
+        "Notices were sent to the media and police, and the NBI's opinion was sought",
+        "The wrong name was recorded by the first hospital, not by NKI",
+        "No evidence that the time allowed was unreasonable"
+      ],
+      "caseIds": [
+        "case-0044"
+      ],
+      "source": {
+        "caseTitle": "Alano v. Magud-Logmao",
+        "grNumber": "G.R. No. 175540",
+        "url": "https://lawphil.net/judjuris/juri2014/apr2014/gr_175540_2014.html",
+        "part": "Decision, Dr. Alano's memorandum and the efforts to locate the relatives",
+        "excerpt": "A careful reading of the above shows that petitioner instructed his subordinates to \"make certain\" that \"all reasonable efforts\" are exerted to locate the patient's next of kin, even enumerating ways in which to ensure that notices of the death of the patient would reach said relatives. It also clearly stated that permission or authorization to retrieve and remove the internal organs of the deceased was being given ONLY IF the provisions of the applicable law had been complied with. Such instructions reveal that petitioner acted prudently by directing his subordinates to exhaust all reasonable means of locating the relatives of the deceased. He could not have made his directives any clearer. He even specifically mentioned that permission is only being granted IF the Department of Surgery has complied with all the requirements of the law. Verily, petitioner could not have been faulted for having full confidence in the ability of the doctors in the Department of Surgery to comprehend the instructions, obeying all his directives, and acting only in accordance with the requirements of the law. … If respondent failed to immediately receive notice of her son's death because the notices did not properly state the name or identity of the deceased, fault cannot be laid at petitioner's door. The trial and appellate courts found that it was the EAMC, who had the opportunity to ascertain the name of the deceased, who recorded the wrong information regarding the deceased's identity to NKI."
+      }
+    },
+    {
+      "id": "q-0545",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "In a suit against a hospital director for authorizing the removal of a brain-dead patient's organs about 24 hours after notices to find his relatives were first sent out, the plaintiff argues that the director should have waited longer. Who has the burden of proving that 24 hours was unreasonable, by what quantum of evidence, and how could it be shown? Explain, following Alano v. Magud-Logmao.",
+      "suggestedAnswer": {
+        "answer": "The plaintiff, by a preponderance of evidence, relying on the strength of her own evidence; for example, through expert testimony that, given the medical technology and knowledge at the time, the doctors could or should have waited longer before retrieving the organs.",
+        "legalBasis": "In Alano v. Magud-Logmao, the Court quoted Otero v. Tan: \"[i]n civil cases, it is a basic rule that the party making allegations has the burden of proving them by a preponderance of evidence. The parties must rely on the strength of their own evidence and not upon the weakness of the defense offered by their opponent.\" It found that the mother failed to present any expert witness to prove that, given the medical technology and knowledge of the 1980s, the doctors could or should have waited longer before harvesting the organs.",
+        "application": "Since the reasonableness of the waiting period depends on medical facts (how long organs of a brain-dead donor remain viable, for instance), the plaintiff needs evidence on that point, ordinarily expert testimony. Without it, she cannot prove that the period was unreasonable, however much sympathy her loss deserves.",
+        "conclusion": "The burden is on the plaintiff, by preponderance of evidence; her failure to adduce adequate evidence \"doomed\" the case. **Bar trap:** do not shift the burden to the defendant to prove that he waited long enough."
+      },
+      "keyPoints": [
+        "The party making the allegation has the burden of proof",
+        "Quantum in civil cases: preponderance of evidence",
+        "A party must rely on the strength of her own evidence, not the weakness of the defense",
+        "Reasonableness of the waiting period needed proof, e.g., expert testimony on the medical knowledge of the time",
+        "The plaintiff presented no such evidence"
+      ],
+      "caseIds": [
+        "case-0044"
+      ],
+      "source": {
+        "caseTitle": "Alano v. Magud-Logmao",
+        "grNumber": "G.R. No. 175540",
+        "url": "https://lawphil.net/judjuris/juri2014/apr2014/gr_175540_2014.html",
+        "part": "Decision, the burden of proof",
+        "excerpt": "Ultimately, it is respondent's failure to adduce adequate evidence that doomed this case. As stated in Otero v. Tan, \"[i]n civil cases, it is a basic rule that the party making allegations has the burden of proving them by a preponderance of evidence. The parties must rely on the strength of their own evidence and not upon the weakness of the defense offered by their opponent.\" … They failed to present any expert witness to prove that given the medical technology and knowledge at that time in the 1980's, the doctors could or should have waited longer before harvesting the internal organs for transplantation."
+      }
+    },
+    {
+      "id": "q-0546",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "A mother claims moral and exemplary damages from a hospital director for the anguish of her son's death and of finding his body, its organs removed, in a cheap casket at a funeral parlor. The organs were removed only after her son was declared brain dead. Can the director be held liable for her suffering? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. The emotional pain of her son's death cannot be attributed to the director, since the organs were removed only after the son had been declared brain dead, and there was no evidence that her suffering at the sight of the body was caused by the director's conduct.",
+        "legalBasis": "In Alano v. Magud-Logmao, the Court reversed the award of damages, holding that the internal organs were removed only after the deceased had been declared brain dead, so the emotional pain suffered by the mother due to her son's death \"cannot in any way be attributed to petitioner,\" and that there was no evidence on record to show that her suffering at the pitiful state of his body could be categorically attributed to the director's conduct.",
+        "application": "The director's authorization did not cause the son's death, which came from his injuries. The removal followed a declaration of brain death confirmed by tests. Whatever anguish the mother felt on seeing the body was not shown to have been caused by any negligent act of the director, who had acted prudently.",
+        "conclusion": "The director is not liable for damages. **Bar trap:** damages require a causal link between the defendant's act and the injury claimed; grief over a death the defendant did not cause is not compensable against him."
+      },
+      "keyPoints": [
+        "The organs were removed only after the son was declared brain dead",
+        "The pain of the death cannot be attributed to the director",
+        "No evidence linked the mother's suffering at the sight of the body to the director's conduct",
+        "Without negligence and causation, no damages"
+      ],
+      "caseIds": [
+        "case-0044"
+      ],
+      "source": {
+        "caseTitle": "Alano v. Magud-Logmao",
+        "grNumber": "G.R. No. 175540",
+        "url": "https://lawphil.net/judjuris/juri2014/apr2014/gr_175540_2014.html",
+        "part": "Decision, causation and the claim for damages",
+        "excerpt": "Verily, the Court cannot, in conscience, agree with the lower court. Finding petitioner liable for damages is improper. It should be emphasized that the internal organs of the deceased were removed only after he had been declared brain dead; thus, the emotional pain suffered by respondent due to the death of her son cannot in any way be attributed to petitioner. Neither can the Court find evidence on record to show that respondent's emotional suffering at the sight of the pitiful state in which she found her son's lifeless body be categorically attributed to petitioner's conduct."
+      }
+    },
+    {
+      "id": "q-0547",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "In Alano v. Magud-Logmao, how did the Court characterize the hospital director's memorandum authorizing the retrieval of the brain-dead patient's organs?",
+      "choices": {
+        "A": "As a prudent, conditional authority: it directed his subordinates to make certain that all reasonable efforts to locate the next of kin had been exerted and granted permission only if the law had been complied with.",
+        "B": "As an unconditional order to retrieve the organs at once.",
+        "C": "As a delegation of all responsibility to the NBI.",
+        "D": "As void, because only the next of kin may authorize organ retrieval in every case."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court found that the director \"instructed his subordinates to 'make certain' that 'all reasonable efforts' are exerted to locate the patient's next of kin,\" and that permission was being given \"ONLY IF the provisions of the applicable law had been complied with,\" showing that he \"acted prudently.\" **B is wrong:** the authority was expressly conditional. **C is wrong:** the memorandum required notice to the NBI, but the director did not hand over his responsibility to it. **D is wrong:** the Court did not declare the authority void; it found that the director acted prudently in authorizing retrieval under R.A. No. 349 as amended by P.D. No. 856, on condition that the law's requirements were met. **Bar trap:** a conditional authority, faithfully given, is evidence of prudence, not negligence.",
+      "caseIds": [
+        "case-0044"
+      ],
+      "source": {
+        "caseTitle": "Alano v. Magud-Logmao",
+        "grNumber": "G.R. No. 175540",
+        "url": "https://lawphil.net/judjuris/juri2014/apr2014/gr_175540_2014.html",
+        "part": "Decision, Dr. Alano's memorandum",
+        "excerpt": "A careful reading of the above shows that petitioner instructed his subordinates to \"make certain\" that \"all reasonable efforts\" are exerted to locate the patient's next of kin, even enumerating ways in which to ensure that notices of the death of the patient would reach said relatives. It also clearly stated that permission or authorization to retrieve and remove the internal organs of the deceased was being given ONLY IF the provisions of the applicable law had been complied with. Such instructions reveal that petitioner acted prudently by directing his subordinates to exhaust all reasonable means of locating the relatives of the deceased."
+      }
+    },
+    {
+      "id": "q-0548",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "The notices in Alano v. Magud-Logmao did not reach the mother because they carried a wrong name. To whom did the Court attribute the wrong information?",
+      "choices": {
+        "A": "To the hospital director who authorized the organ retrieval.",
+        "B": "To the mother, for not reporting her son missing.",
+        "C": "To the East Avenue Medical Center, which had the opportunity to ascertain the deceased's name and recorded the wrong information that it passed on to NKI.",
+        "D": "To the television stations that aired the appeals."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court said that if the mother did not promptly receive notice \"because the notices did not properly state the name or identity of the deceased, fault cannot be laid at petitioner's door,\" since it was \"the EAMC, who had the opportunity to ascertain the name of the deceased, who recorded the wrong information.\" NKI could not have learned his name from him, as he was already unconscious on arrival. **A is wrong:** fault could not be laid at his door. **B is wrong:** the decision notes that his brother reported him missing to the police. **D is wrong:** the stations aired the name they were given. **Bar trap:** identify whose act actually caused the failure of notice.",
+      "caseIds": [
+        "case-0044"
+      ],
+      "source": {
+        "caseTitle": "Alano v. Magud-Logmao",
+        "grNumber": "G.R. No. 175540",
+        "url": "https://lawphil.net/judjuris/juri2014/apr2014/gr_175540_2014.html",
+        "part": "Decision, the wrong identity of the deceased",
+        "excerpt": "If respondent failed to immediately receive notice of her son's death because the notices did not properly state the name or identity of the deceased, fault cannot be laid at petitioner's door. The trial and appellate courts found that it was the EAMC, who had the opportunity to ascertain the name of the deceased, who recorded the wrong information regarding the deceased's identity to NKI. The NKI could not have obtained the information about his name from the patient, because as found by the lower courts, the deceased was already unconscious by the time he was brought to the NKI."
+      }
+    },
+    {
+      "id": "q-0549",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "The trial court and the Court of Appeals both found the director in Alano v. Magud-Logmao negligent. Why did the Supreme Court review those factual findings?",
+      "choices": {
+        "A": "Because the Supreme Court always reviews the facts in damage suits.",
+        "B": "Because the case fell under an exception to the rule that the trial court's factual findings, affirmed by the appellate court, bind the Court: the lower courts failed to consider important circumstances.",
+        "C": "Because the parties agreed to submit the facts to the Supreme Court.",
+        "D": "Because the director was a public officer."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court said that \"a close examination of the records of this case would reveal that this case falls under one of the exceptions to the general rule that factual findings of the trial court, when affirmed by the appellate court, are binding on this Court. There are some important circumstances that the lower courts failed to consider.\" **A is wrong:** the general rule is the opposite; the Court is bound by concurring findings. **C and D are wrong:** neither was the reason. **Bar trap:** concurring factual findings bind the Court unless an exception, such as overlooked relevant circumstances, applies.",
+      "caseIds": [
+        "case-0044"
+      ],
+      "source": {
+        "caseTitle": "Alano v. Magud-Logmao",
+        "grNumber": "G.R. No. 175540",
+        "url": "https://lawphil.net/judjuris/juri2014/apr2014/gr_175540_2014.html",
+        "part": "Decision, review of factual findings",
+        "excerpt": "The appellate court affirmed the trial court's finding that there was negligence on petitioner's part when he failed to ensure that reasonable time had elapsed to locate the relatives of the deceased before giving the authorization to remove said deceased's internal organs for transplant purposes. However, a close examination of the records of this case would reveal that this case falls under one of the exceptions to the general rule that factual findings of the trial court, when affirmed by the appellate court, are binding on this Court. There are some important circumstances that the lower courts failed to consider in ascertaining whether it was the actions of petitioner that brought about the sufferings of respondent."
+      }
+    },
+    {
+      "id": "q-0550",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "In Alano v. Magud-Logmao (events of 1988), under what law did the hospital director state that he was authorizing the retrieval of the deceased patient's organs?",
+      "choices": {
+        "A": "The Civil Code provisions on human relations.",
+        "B": "The Revised Penal Code.",
+        "C": "The Rules of Court on special proceedings.",
+        "D": "Republic Act No. 349, as amended by Presidential Decree No. 856."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The memorandum gave permission \"in accordance with the provisions of Republic Act No. 349 as amended and P.D. 856,\" and the director maintained that he acted \"in accordance with the letter of the law, Republic Act (R.A.) No. 349, as amended by Presidential Decree (P.D.) 856.\" **A, B and C are wrong:** none was the law invoked for the retrieval. **Bar trap:** this was the law in force in 1988; check the current law on organ donation before applying its requirements to a new problem.",
+      "caseIds": [
+        "case-0044"
+      ],
+      "source": {
+        "caseTitle": "Alano v. Magud-Logmao",
+        "grNumber": "G.R. No. 175540",
+        "url": "https://lawphil.net/judjuris/juri2014/apr2014/gr_175540_2014.html",
+        "part": "Decision, the law applied",
+        "excerpt": "Petitioner maintains that when he gave authorization for the removal of some of the internal organs to be transplanted to other patients, he did so in accordance with the letter of the law, Republic Act (R.A.) No. 349, as amended by Presidential Decree (P.D.) 856, i.e., giving his subordinates instructions to exert all reasonable efforts to locate the relatives or next of kin of respondent's son."
+      }
+    },
+    {
+      "id": "q-0551",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "In Alano v. Magud-Logmao, when were the deceased's internal organs removed, and why did this matter to the Court?",
+      "choices": {
+        "A": "Before he was declared dead, which made the director liable.",
+        "B": "Only after his relatives consented, which made the removal lawful.",
+        "C": "Only after he had been declared brain dead, so the pain of his death could not be attributed to the director.",
+        "D": "After his burial, which made the removal a crime."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court stressed that \"the internal organs of the deceased were removed only after he had been declared brain dead; thus, the emotional pain suffered by respondent due to the death of her son cannot in any way be attributed to petitioner.\" The facts show brain death was pronounced by a neurologist and a neurosurgeon and confirmed by a flat EEG. **A is wrong:** the mother alleged this, but the removal came after the declaration of brain death. **B is wrong:** the relatives were never found, which was the whole issue. **D is wrong:** the body was embalmed and kept at a funeral parlor after the retrieval, not buried before it. **Bar trap:** the timing breaks the causal link between the director's act and the death.",
+      "caseIds": [
+        "case-0044"
+      ],
+      "source": {
+        "caseTitle": "Alano v. Magud-Logmao",
+        "grNumber": "G.R. No. 175540",
+        "url": "https://lawphil.net/judjuris/juri2014/apr2014/gr_175540_2014.html",
+        "part": "Decision, the timing of the organ retrieval",
+        "excerpt": "It should be emphasized that the internal organs of the deceased were removed only after he had been declared brain dead; thus, the emotional pain suffered by respondent due to the death of her son cannot in any way be attributed to petitioner."
       }
     }
   ]
