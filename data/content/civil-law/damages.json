@@ -241,6 +241,21 @@
       "ruling": "The conviction was affirmed with modifications. With the aggravating circumstance of dwelling, the imposable penalty for each murder was death, reduced to reclusion perpetua without parole under R.A. 9346. The Court explained the kinds of damages: civil indemnity ex delicto, equivalent to actual or compensatory damages, which is not a penalty and has a minimum (₱3,000 under Art. 2206) but no ceiling; moral damages, compensatory in nature, requiring injury from a case under Arts. 2219 or 2220; exemplary damages under Arts. 2229-2230, due for any aggravating circumstance, ordinary or qualifying, even if not alleged in the Information but proved, or for highly reprehensible conduct; and temperate damages. The basis is the penalty imposable by law for the crime, not the penalty actually imposed. It set standard amounts: for murder where the penalty would be death but is reduced to reclusion perpetua, ₱100,000 each as civil indemnity, moral and exemplary damages; for reclusion perpetua only, ₱75,000 each; for homicide, ₱50,000 civil indemnity and ₱50,000 moral damages; and ₱50,000 temperate damages when no proof of burial or funeral expenses is presented. All amounts earn 6% interest from finality.",
       "keyDoctrine": "In crimes, the damages are civil indemnity (compensatory, not a penalty; a floor but no ceiling), moral damages (compensatory), exemplary damages (for an aggravating circumstance, ordinary or qualifying, proved at trial even if not alleged, or for highly reprehensible conduct), and actual or temperate damages. The amounts follow the penalty imposable by law for the crime, not the penalty actually imposed. Murder punishable by death but reduced to reclusion perpetua: ₱100,000 each; reclusion perpetua only: ₱75,000 each; homicide: ₱50,000 civil indemnity and ₱50,000 moral damages; temperate damages of ₱50,000 when no burial expenses are proved.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2016/apr2016/gr_202124_2016.html"
+    },
+    {
+      "id": "case-0064",
+      "status": "draft",
+      "name": "Nacar v. Gallery Frames, et al.",
+      "grNumber": "G.R. No. 189871",
+      "year": 2013,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "facts": "Dario Nacar won a case for illegal dismissal. The Labor Arbiter's 1998 decision awarded him backwages and separation pay, computed only up to the date of that decision, ₱158,919.92. The employer appealed up to the Supreme Court and lost; the judgment became final on May 27, 2002. In execution, Nacar asked that his backwages and separation pay be computed up to the finality of the judgment, with interest. The Labor Arbiter, the NLRC and the Court of Appeals refused, holding that the final 1998 decision could no longer be altered, and limited him to the balance of the original amount.",
+      "issue": "(1) May the monetary awards be recomputed up to the finality of the judgment without violating the immutability of judgments? (2) What legal interest applies to the awards, in light of BSP-MB Circular No. 799?",
+      "ruling": "The petition was granted. A decision in an illegal dismissal case has two parts: the finding of illegality and its monetary consequences, which are final, and the computation, which is time-bound and may be recomputed. Recomputation up to finality is part of the law (Art. 279, Labor Code) read into the decision and does not violate the immutability of judgments; the employer ran that risk by appealing. On interest, BSP-MB Circular No. 799, effective July 1, 2013, lowered the legal rate for loans or forbearance of money, goods or credits and the rate allowed in judgments, absent stipulation, from 12% to 6% a year, applied prospectively only. The Court modified the Eastern Shipping guidelines accordingly: 6% from default for loans or forbearance without stipulation; 6% at the court's discretion for other obligations, from demand or judgment depending on certainty; and 6% from finality until satisfaction. Judgments final before July 1, 2013 are not disturbed. Nacar was awarded backwages and separation pay up to May 27, 2002, with 12% interest from May 27, 2002 to June 30, 2013 and 6% from July 1, 2013.",
+      "keyDoctrine": "From July 1, 2013 (BSP-MB Circular No. 799), absent stipulation, the legal interest for loans or forbearance of money, goods or credits and the rate allowed in judgments is 6% a year, applied prospectively; 12% applies only until June 30, 2013. The modified Eastern Shipping guidelines: (1) loan or forbearance, no stipulation: 6% from judicial or extrajudicial demand; interest due earns legal interest from judicial demand; (2) other obligations: 6% at the court's discretion, from demand if reasonably certain, otherwise from judgment, on the amount finally adjudged; (3) from finality of a money judgment until satisfaction: 6%. Judgments final before July 1, 2013 are not disturbed.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2013/aug2013/gr_189871_2013.html"
     }
   ],
   "questions": [
@@ -3925,6 +3940,236 @@
         "url": "https://lawphil.net/judjuris/juri2016/apr2016/gr_202124_2016.html",
         "part": "Decision, the disposition",
         "excerpt": "He is ORDERED to PAY the heirs of Mary Grace Divina and Claudine Divina the following amounts for each of the two victims: (a) ₱100,000.00 as civil indemnity; (b) ₱100,000.00 as moral damages; (c) ₱100,000.00 as exemplary damages; and (d) ₱50,000.00 as temperate damages."
+      }
+    },
+    {
+      "id": "q-0704",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "A borrowed ₱1,000,000 from B in 2014 under a promissory note that stipulated no interest. A failed to pay despite B's written demand on March 1, 2015. B sued, won, and the judgment became final on June 1, 2017, but A has not paid. Applying Nacar v. Gallery Frames, what legal interest is due, at what rate, and for which periods?",
+      "suggestedAnswer": {
+        "answer": "A owes legal interest of 6% a year on the ₱1,000,000 from the demand on March 1, 2015 (default) until the judgment became final, and 6% a year on the total amount due from June 1, 2017 until full payment. Any interest due itself earns legal interest from judicial demand.",
+        "legalBasis": "In Nacar v. Gallery Frames, the Court applied BSP-MB Circular No. 799, effective July 1, 2013, under which the rate of interest for the loan or forbearance of any money, goods or credits and the rate allowed in judgments, absent an express contract, is 6% a year, no longer 12%. It modified the Eastern Shipping guidelines: for a loan or forbearance with no stipulated rate, interest is 6% from default, i.e., from judicial or extrajudicial demand under Article 1169; the interest due itself earns legal interest from judicial demand; and when a money judgment becomes final and executory, the rate is 6% from such finality until satisfaction, that period being equivalent to a forbearance of credit.",
+        "application": "The loan was made and the demand made after July 1, 2013, so the 12% rate does not apply to any period. Interest runs at 6% from the demand that put A in default, and at 6% from the finality of the judgment until payment.",
+        "conclusion": "6% throughout, from demand and then from finality until full payment. **Bar trap:** the 12% rate in Eastern Shipping applies only up to June 30, 2013; the new rate is prospective, so for periods from July 1, 2013 it is 6%."
+      },
+      "keyPoints": [
+        "BSP-MB Circular No. 799, effective July 1, 2013: 6% for loans, forbearance and judgments absent stipulation",
+        "Prospective only: 12% only until June 30, 2013",
+        "Loan, no stipulation: 6% from default (judicial or extrajudicial demand, Art. 1169)",
+        "Interest due earns legal interest from judicial demand",
+        "From finality of the judgment: 6% until satisfaction"
+      ],
+      "caseIds": [
+        "case-0064"
+      ],
+      "source": {
+        "caseTitle": "Nacar v. Gallery Frames, et al.",
+        "grNumber": "G.R. No. 189871",
+        "url": "https://lawphil.net/judjuris/juri2013/aug2013/gr_189871_2013.html",
+        "part": "Decision, discussion of legal interest (BSP-MB Circular No. 799)",
+        "excerpt": "Thus, from the foregoing, in the absence of an express stipulation as to the rate of interest that would govern the parties, the rate of legal interest for loans or forbearance of any money, goods or credits and the rate allowed in judgments shall no longer be twelve percent (12%) per annum - as reflected in the case of Eastern Shipping Lines and Subsection X305.1 of the Manual of Regulations for Banks and Sections 4305Q.1, 4305S.3 and 4303P.1 of the Manual of Regulations for Non-Bank Financial Institutions, before its amendment by BSP-MB Circular No. 799 - but will now be six percent (6%) per annum effective July 1, 2013. It should be noted, nonetheless, that the new rate could only be applied prospectively and not retroactively. Consequently, the twelve percent (12%) per annum legal interest shall apply only until June 30, 2013. Come July 1, 2013 the new rate of six percent (6%) per annum shall be the prevailing rate of interest when applicable. … When the obligation is breached, and it consists in the payment of a sum of money, i.e., a loan or forbearance of money, the interest due should be that which may have been stipulated in writing. Furthermore, the interest due shall itself earn legal interest from the time it is judicially demanded. In the absence of stipulation, the rate of interest shall be 6% per annum to be computed from default, i.e., from judicial or extrajudicial demand under and subject to the provisions of Article 1169 of the Civil Code. … When the judgment of the court awarding a sum of money becomes final and executory, the rate of legal interest, whether the case falls under paragraph 1 or paragraph 2, above, shall be 6% per annum from such finality until its satisfaction, this interim period being deemed to be by then an equivalent to a forbearance of credit."
+      }
+    },
+    {
+      "id": "q-0705",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "(a) A judgment for a sum of money became final in 2010 and fixed 12% legal interest from finality until payment; the debtor still has not paid in 2026. May the debtor ask that the rate be reduced to 6% from July 1, 2013? (b) A different judgment became final in 2002 and is executed only now, with no rate fixed in it. What rates apply from its finality? Explain, citing Nacar v. Gallery Frames.",
+      "suggestedAnswer": {
+        "answer": "(a) No. Judgments that became final and executory before July 1, 2013 are not disturbed and continue to be implemented applying the rate of interest fixed in them. (b) Following the disposition in Nacar, 12% a year from finality until June 30, 2013, and 6% a year from July 1, 2013 until full satisfaction.",
+        "legalBasis": "In Nacar v. Gallery Frames, the Court held that the new 6% rate applies prospectively only, so the 12% rate applies only until June 30, 2013, and \"with regard to those judgments that have become final and executory prior to July 1, 2013, said judgments shall not be disturbed and shall continue to be implemented applying the rate of interest fixed therein.\" In the case itself, whose judgment became final on May 27, 2002, the Court ordered interest of 12% from May 27, 2002 to June 30, 2013 and 6% from July 1, 2013 until full satisfaction.",
+        "application": "In (a), the rate was fixed in a final judgment before the circular, so it stays at 12%. In (b), no rate was fixed, so the general rule applies: the old rate up to June 30, 2013, and the new rate from July 1, 2013.",
+        "conclusion": "(a) The 12% fixed in the earlier final judgment stays; (b) 12% then 6%. **Bar trap:** distinguish a final judgment that itself fixed the rate (untouched) from the general shift of the legal rate for periods after July 1, 2013."
+      },
+      "keyPoints": [
+        "The 6% rate applies prospectively from July 1, 2013",
+        "12% applies only until June 30, 2013",
+        "Judgments final before July 1, 2013: not disturbed; the rate fixed in them continues",
+        "In Nacar: 12% from May 27, 2002 to June 30, 2013, then 6% from July 1, 2013"
+      ],
+      "caseIds": [
+        "case-0064"
+      ],
+      "source": {
+        "caseTitle": "Nacar v. Gallery Frames, et al.",
+        "grNumber": "G.R. No. 189871",
+        "url": "https://lawphil.net/judjuris/juri2013/aug2013/gr_189871_2013.html",
+        "part": "Decision, discussion of legal interest (transition and judgments already final)",
+        "excerpt": "Nonetheless, with regard to those judgments that have become final and executory prior to July 1, 2013, said judgments shall not be disturbed and shall continue to be implemented applying the rate of interest fixed therein. … (3) interest of twelve percent (12%) per annum of the total monetary awards, computed from May 27, 2002 to June 30, 2013 and six percent (6%) per annum from July 1, 2013 until their full satisfaction."
+      }
+    },
+    {
+      "id": "q-0706",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "A Labor Arbiter found an employee illegally dismissed and awarded separation pay and backwages \"computed only up to promulgation of this decision.\" The employer appealed all the way to the Supreme Court and lost four years later. In execution, the employee asks that the awards be recomputed up to the finality of the judgment. The employer invokes the immutability of final judgments. Who is correct? Explain, citing Nacar v. Gallery Frames.",
+      "suggestedAnswer": {
+        "answer": "The employee. The recomputation of the monetary consequences of illegal dismissal up to finality does not alter the final judgment, so it does not violate the immutability of judgments.",
+        "legalBasis": "In Nacar v. Gallery Frames, the Court explained (following Session Delights) that such a decision has two parts: the finding of illegality and its monetary consequences, which is final, and the computation of the awards, which is time-bound and can be recomputed. A recomputation is part of the law, Article 279 of the Labor Code, read into the decision; by the nature of an illegal dismissal case, the reliefs continue to add up until full satisfaction. \"The illegal dismissal ruling stands; only the computation of monetary consequences of this dismissal is affected, and this is not a violation of the principle of immutability of final judgments.\" Where separation pay is given in lieu of reinstatement, the finality of the decision is the reckoning point.",
+        "application": "The employer delayed payment by appealing; the larger amount is the risk it ran when it continued to seek recourse. Backwages and separation pay are computed up to the finality of the decision, with legal interest thereafter.",
+        "conclusion": "The awards should be recomputed up to finality. **Bar trap:** the immutability of judgments protects the ruling, not a time-bound computation of its consequences."
+      },
+      "keyPoints": [
+        "Two parts: the finding of illegality and its consequences (final) and the computation (time-bound)",
+        "Recomputation is part of the law (Art. 279, Labor Code) read into the decision",
+        "Reliefs continue to add up until full satisfaction",
+        "Not a violation of the immutability of final judgments",
+        "With separation pay in lieu of reinstatement, finality of the decision is the reckoning point"
+      ],
+      "caseIds": [
+        "case-0064"
+      ],
+      "source": {
+        "caseTitle": "Nacar v. Gallery Frames, et al.",
+        "grNumber": "G.R. No. 189871",
+        "url": "https://lawphil.net/judjuris/juri2013/aug2013/gr_189871_2013.html",
+        "part": "Decision, discussion of the recomputation of the awards",
+        "excerpt": "Consequently, from the above disquisitions, under the terms of the decision which is sought to be executed by the petitioner, no essential change is made by a recomputation as this step is a necessary consequence that flows from the nature of the illegality of dismissal declared by the Labor Arbiter in that decision. A recomputation (or an original computation, if no previous computation has been made) is a part of the law – specifically, Article 279 of the Labor Code and the established jurisprudence on this provision – that is read into the decision. By the nature of an illegal dismissal case, the reliefs continue to add up until full satisfaction, as expressed under Article 279 of the Labor Code. The recomputation of the consequences of illegal dismissal upon execution of the decision does not constitute an alteration or amendment of the final decision being implemented. The illegal dismissal ruling stands; only the computation of monetary consequences of this dismissal is affected, and this is not a violation of the principle of immutability of final judgments. That the amount respondents shall now pay has greatly increased is a consequence that it cannot avoid as it is the risk that it ran when it continued to seek recourses against the Labor Arbiter's decision."
+      }
+    },
+    {
+      "id": "q-0707",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Under BSP-MB Circular No. 799, as applied in Nacar v. Gallery Frames, the rate of interest for the loan or forbearance of any money, goods or credits and the rate allowed in judgments, in the absence of an express contract, is",
+      "choices": {
+        "A": "twelve percent (12%) per annum.",
+        "B": "six percent (6%) per annum, effective July 1, 2013.",
+        "C": "whatever the court considers reasonable.",
+        "D": "the prevailing bank lending rate."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** Section 1 of the circular, quoted by the Court, states: \"The rate of interest for the loan or forbearance of any money, goods or credits and the rate allowed in judgments, in the absence of an express contract as to such rate of interest, shall be six percent (6%) per annum,\" effective July 1, 2013. **A is wrong:** 12% applies only until June 30, 2013. **C and D are wrong:** the rate is fixed by the circular. **Bar trap:** the new rate is prospective.",
+      "caseIds": [
+        "case-0064"
+      ],
+      "source": {
+        "caseTitle": "Nacar v. Gallery Frames, et al.",
+        "grNumber": "G.R. No. 189871",
+        "url": "https://lawphil.net/judjuris/juri2013/aug2013/gr_189871_2013.html",
+        "part": "Decision, discussion of legal interest (BSP-MB Circular No. 799)",
+        "excerpt": "Section 1. The rate of interest for the loan or forbearance of any money, goods or credits and the rate allowed in judgments, in the absence of an express contract as to such rate of interest, shall be six percent (6%) per annum."
+      }
+    },
+    {
+      "id": "q-0708",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Under the guidelines in Nacar v. Gallery Frames, when an obligation not constituting a loan or forbearance of money is breached, and the amount cannot be reasonably established at the time of demand, interest on the damages begins to run",
+      "choices": {
+        "A": "from the date the obligation was constituted.",
+        "B": "from the filing of the complaint, in every case.",
+        "C": "only from the date the judgment of the court is made, when the quantification of damages may be deemed reasonably ascertained.",
+        "D": "only from the finality of the judgment."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court restated that \"when such certainty cannot be so reasonably established at the time the demand is made, the interest shall begin to run only from the date the judgment of the court is made (at which time the quantification of damages may be deemed to have been reasonably ascertained).\" **A is wrong:** no such rule. **B is wrong:** demand is used only when the amount is then reasonably certain. **D is wrong:** finality starts the separate rule 3. **Bar trap:** Nacar changed the rates, not the reckoning rules of Eastern Shipping.",
+      "caseIds": [
+        "case-0064"
+      ],
+      "source": {
+        "caseTitle": "Nacar v. Gallery Frames, et al.",
+        "grNumber": "G.R. No. 189871",
+        "url": "https://lawphil.net/judjuris/juri2013/aug2013/gr_189871_2013.html",
+        "part": "Decision, the modified guidelines (rule 2)",
+        "excerpt": "Accordingly, where the demand is established with reasonable certainty, the interest shall begin to run from the time the claim is made judicially or extrajudicially (Art. 1169, Civil Code), but when such certainty cannot be so reasonably established at the time the demand is made, the interest shall begin to run only from the date the judgment of the court is made (at which time the quantification of damages may be deemed to have been reasonably ascertained)."
+      }
+    },
+    {
+      "id": "q-0709",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "According to Nacar v. Gallery Frames, how is the new 6% legal interest rate applied?",
+      "choices": {
+        "A": "Prospectively only; 12% applies until June 30, 2013, and 6% from July 1, 2013.",
+        "B": "Retroactively to all unpaid obligations, from their inception.",
+        "C": "Only to obligations contracted after July 1, 2013.",
+        "D": "Only to judgments rendered by the Supreme Court."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court said \"the new rate could only be applied prospectively and not retroactively. Consequently, the twelve percent (12%) per annum legal interest shall apply only until June 30, 2013. Come July 1, 2013 the new rate of six percent (6%) per annum shall be the prevailing rate of interest when applicable.\" **B is wrong:** no retroactive application. **C is wrong:** older obligations also earn 6% for periods after July 1, 2013 (as in Nacar itself). **D is wrong:** no such limit. **Bar trap:** split the computation at July 1, 2013.",
+      "caseIds": [
+        "case-0064"
+      ],
+      "source": {
+        "caseTitle": "Nacar v. Gallery Frames, et al.",
+        "grNumber": "G.R. No. 189871",
+        "url": "https://lawphil.net/judjuris/juri2013/aug2013/gr_189871_2013.html",
+        "part": "Decision, discussion of legal interest (prospective application)",
+        "excerpt": "It should be noted, nonetheless, that the new rate could only be applied prospectively and not retroactively. Consequently, the twelve percent (12%) per annum legal interest shall apply only until June 30, 2013. Come July 1, 2013 the new rate of six percent (6%) per annum shall be the prevailing rate of interest when applicable."
+      }
+    },
+    {
+      "id": "q-0710",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Under the guidelines in Nacar v. Gallery Frames, why does legal interest run from the finality of a money judgment until its satisfaction?",
+      "choices": {
+        "A": "Because the judgment debtor is presumed to be in bad faith.",
+        "B": "Because the interim period is deemed to be equivalent to a forbearance of credit.",
+        "C": "Because it is a penalty for delaying the execution.",
+        "D": "Because the parties are deemed to have agreed to it."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The guideline states that from finality until satisfaction the rate is 6% a year, \"this interim period being deemed to be by then an equivalent to a forbearance of credit.\" **A, C and D are wrong:** none is the reason given. **Bar trap:** the reason is the same as in Eastern Shipping; only the rate changed from 12% to 6%.",
+      "caseIds": [
+        "case-0064"
+      ],
+      "source": {
+        "caseTitle": "Nacar v. Gallery Frames, et al.",
+        "grNumber": "G.R. No. 189871",
+        "url": "https://lawphil.net/judjuris/juri2013/aug2013/gr_189871_2013.html",
+        "part": "Decision, the modified guidelines (rule 3)",
+        "excerpt": "When the judgment of the court awarding a sum of money becomes final and executory, the rate of legal interest, whether the case falls under paragraph 1 or paragraph 2, above, shall be 6% per annum from such finality until its satisfaction, this interim period being deemed to be by then an equivalent to a forbearance of credit."
+      }
+    },
+    {
+      "id": "q-0711",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "What did the Court order in Nacar v. Gallery Frames?",
+      "choices": {
+        "A": "Payment of the original ₱158,919.92 only, since the Labor Arbiter's decision was final.",
+        "B": "Backwages and separation pay up to the Labor Arbiter's decision, with 6% interest from 1998.",
+        "C": "Backwages from dismissal up to May 27, 2002, separation pay up to May 27, 2002, and interest of 12% from May 27, 2002 to June 30, 2013 and 6% from July 1, 2013 until full satisfaction.",
+        "D": "Reinstatement without backwages."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court ordered payment of \"(1) backwages computed from the time petitioner was illegally dismissed on January 24, 1997 up to May 27, 2002 ... (2) separation pay computed from August 1990 up to May 27, 2002 ... and (3) interest of twelve percent (12%) per annum of the total monetary awards, computed from May 27, 2002 to June 30, 2013 and six percent (6%) per annum from July 1, 2013 until their full satisfaction.\" **A and B are wrong:** the awards were recomputed up to finality. **D is wrong:** separation pay was given in lieu of reinstatement. **Bar trap:** finality (May 27, 2002) is both the end of the computation and the start of interest.",
+      "caseIds": [
+        "case-0064"
+      ],
+      "source": {
+        "caseTitle": "Nacar v. Gallery Frames, et al.",
+        "grNumber": "G.R. No. 189871",
+        "url": "https://lawphil.net/judjuris/juri2013/aug2013/gr_189871_2013.html",
+        "part": "Decision, the disposition",
+        "excerpt": "WHEREFORE, premises considered, the Decision dated September 23, 2008 of the Court of Appeals in CA-G.R. SP No. 98591, and the Resolution dated October 9, 2009 are REVERSED and SET ASIDE. Respondents are Ordered to Pay petitioner: (1) backwages computed from the time petitioner was illegally dismissed on January 24, 1997 up to May 27, 2002, when the Resolution of this Court in G.R. No. 151332 became final and executory; (2) separation pay computed from August 1990 up to May 27, 2002 at the rate of one month pay per year of service; and (3) interest of twelve percent (12%) per annum of the total monetary awards, computed from May 27, 2002 to June 30, 2013 and six percent (6%) per annum from July 1, 2013 until their full satisfaction."
       }
     }
   ]
