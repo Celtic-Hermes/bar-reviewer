@@ -196,6 +196,21 @@
       "ruling": "No. The Court set aside the Court of Appeals and reinstated the trial court's decision. The stipulation of facts did not show that the buyer intended to sell, or would have sold, the shares on specific dates. Although the shares rose and later fell in value, whatever profits could have been made were purely speculative, since it was difficult to predict the rise and fall of their value with any certainty, and speculative damages cannot be recovered. The buyer could just as well have refused to sell and waited for further increases.",
       "keyDoctrine": "Unrealized profits (lucro cesante) must be duly established; the claimant must prove that it was in fact damaged by the defendant's act. Speculative damages cannot be recovered: a mere rise in the market price of shares does not prove a lost profit without proof that the claimant would have sold them.",
       "sourceUrl": "https://lawphil.net/judjuris/juri1987/jan1987/gr_l-45048_1987.html"
+    },
+    {
+      "id": "case-0061",
+      "status": "draft",
+      "name": "General Enterprises, Inc. v. Lianga Bay Logging Co., Inc.",
+      "grNumber": "G.R. No. L-18487",
+      "year": 1964,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "facts": "In 1959, Lianga Bay Logging, a log producer, appointed General Enterprises as distributor of part of its log production to Korea and Europe for two years, for a 13% commission. The producer bound itself to make at least 2,000,000 board feet a month available for export from September 1959. The contract allowed suspension only for listed causes, such as fire, flood, strikes, government orders and similar causes beyond a party's control. After a few months, the producer stopped supplying logs, citing barter restrictions, machinery breakdowns, the Margin Law, a demand to renegotiate prices and its plan to build a veneer plant, and it sold logs to other buyers. The distributor sued for breach. The trial court awarded ₱400,000 actual damages, ₱100,000 exemplary damages and ₱400,000 attorney's fees and expenses of litigation.",
+      "issue": "(1) Was the producer justified in suspending the contract? (2) Were the damages properly awarded?",
+      "ruling": "The Court affirmed with a modification. The contract was valid and had a cause. The demand to renegotiate prices and the veneer plant were not among the stipulated causes of suspension; and even if the barter restrictions, breakdowns and the Margin Law were fortuitous, they did not make it impossible for the producer to comply, since it kept producing logs and selling them to others. A fortuitous event does not necessarily extinguish an obligation unless it makes normal fulfillment impossible. Under Article 2200, indemnity covers not only the loss suffered but also the profits the creditor fails to obtain (lucrum cessans). From the commission the distributor actually earned per board foot on earlier shipments, its lost commission over the 17 remaining months was estimated at ₱365,350.40, so the ₱400,000 award was a reasonable estimate, not speculative. Exemplary damages were reduced to ₱50,000, since the producer's misstatements, though reprehensible, were not wanton or malevolent; the attorney's fees were affirmed under Article 2208.",
+      "keyDoctrine": "Under Article 2200, indemnification for damages comprehends not only the value of the loss suffered (daño emergente) but also the profits the creditor fails to obtain (lucrum cessans), provided they can be determined with reasonable certainty, as by projecting the claimant's past earnings under the same contract. A fortuitous event does not extinguish an obligation unless it makes normal fulfillment impossible. Exemplary damages require wanton, oppressive or malevolent conduct (Art. 2232).",
+      "sourceUrl": "https://lawphil.net/judjuris/juri1964/aug1964/gr_l-18487_1964.html"
     }
   ],
   "questions": [
@@ -3189,6 +3204,236 @@
         "url": "https://lawphil.net/judjuris/juri1987/jan1987/gr_l-45048_1987.html",
         "part": "Decision, the disposition",
         "excerpt": "In view of what has been said, We find no necessity to discuss the second issue. WHEREFORE, the assailed decision and resolutions of the Court of Appeals are hereby SET ASIDE, and a new one is hereby rendered REINSTATING the decision of the trial court."
+      }
+    },
+    {
+      "id": "q-0680",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "P, a producer, appointed D as its exclusive export distributor for two years, for a commission on every shipment. After seven months, P stopped delivering in breach of the contract, and D sued for the commissions it would have earned for the remaining 17 months. P argues that D cannot recover because it did not prove any actual unfilled sale, any ready buyer or the price such buyers would pay. D proves the volume it shipped and the commissions it earned before the breach. Is D entitled to recover its unearned commissions? Explain, citing General Enterprises v. Lianga Bay Logging.",
+      "suggestedAnswer": {
+        "answer": "Yes. Lost profits (lucrum cessans) are recoverable under Article 2200, and D's unearned commissions can be estimated with reasonable certainty from what it earned under the same contract before the breach.",
+        "legalBasis": "In General Enterprises v. Lianga Bay Logging, the Court held that under Article 2200 of the Civil Code, indemnification for damages comprehends not only the value of the loss suffered but also the profits the creditor fails to obtain, so lucrum cessans is a basis for indemnification. The question is whether the creditor failed to make profits because of the breach and whether there is basis for determining such profits with reasonable certainty. Since the distributor had been earning commissions whenever logs were delivered, it was reasonable to expect it would have continued earning in the same manner, and the commission was not difficult to estimate.",
+        "application": "From D's earnings per unit on past shipments multiplied by the volume P was bound to deliver for the remaining months, the lost commission can be computed. In the case itself, the Court computed ₱365,350.40 and held the ₱400,000 award \"not speculative, but based on reasonable estimate.\"",
+        "conclusion": "D may recover its unearned commissions. **Bar trap:** compare Batong Buhay v. CA, where a profit depending on an unproved decision to sell was speculative; here the profit rests on a contract and an established earning record."
+      },
+      "keyPoints": [
+        "Art. 2200: damages include the loss suffered and the profits the creditor fails to obtain",
+        "Lucrum cessans is a basis for indemnification",
+        "Test: profits lost because of the breach, and a basis to determine them with reasonable certainty",
+        "Estimate from past commissions per unit times the volume due for the remaining term",
+        "The award was a reasonable estimate, not speculative"
+      ],
+      "caseIds": [
+        "case-0061"
+      ],
+      "source": {
+        "caseTitle": "General Enterprises, Inc. v. Lianga Bay Logging Co., Inc.",
+        "grNumber": "G.R. No. L-18487",
+        "url": "https://lawphil.net/judjuris/juri1964/aug1964/gr_l-18487_1964.html",
+        "part": "Decision, discussion of the sixth issue (actual damages)",
+        "excerpt": "This argument must be overruled in the light of the law and evidence on the latter. Under Article 2200 of the Civil Code, indemnification for damages comprehends not only the value of the loss suffered but also at of the profits which the creditor fails to obtain. In other words, lucrum cessans is also a basis for indemnification. The question then that arises is: Has appellee failed to make profits because of appellant's breach of contract, and in the affirmative, is there here basis for determining with reasonable certainty such unearned profits? … Had appellant continued to deliver the logs as it was bound to pursuant to the agreement it is reasonable to expect that it would have continued earning its commission in much the same manner as it used to in connection with the previous shipments of logs, which clearly indicates that it failed to earn the commissions it should earn during this period of time. And this commission is not difficult to estimate. … The award therefore, made by the court a quo of the amount of P400,000.00 as compensatory damages is not speculative, but based on reasonable estimate."
+      }
+    },
+    {
+      "id": "q-0681",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "A supply contract allows a party to suspend performance only for listed causes such as fire, flood, strikes, government orders and similar causes beyond its control. The supplier suspends deliveries, citing (a) a demand to renegotiate prices, (b) its plan to build its own processing plant, and (c) new government restrictions and machinery breakdowns. It continued producing and sold its output to other buyers. Was the suspension justified? Explain, citing General Enterprises v. Lianga Bay Logging.",
+      "suggestedAnswer": {
+        "answer": "No. Grounds (a) and (b) are not among the stipulated causes of suspension, and ground (c), even if fortuitous, did not make it impossible for the supplier to perform.",
+        "legalBasis": "In General Enterprises v. Lianga Bay Logging, the Court held that the demand for renegotiation of prices and the establishment of a veneer plant \"are not among the various causes of suspension enumerated\" in the contract, so suspension on those grounds was not justified. As to the barter restrictions, breakdowns and the Margin Law, even assuming they were fortuitous, they did not cause such a reduction in production as to make compliance impossible; a fortuitous event does not necessarily extinguish an obligation, as it must be of such a character as to render it impossible for the obligor to fulfill it in a normal manner.",
+        "application": "The supplier kept producing and sold its output to others, which shows it could have delivered. Its own business plans are not grounds the contract recognizes.",
+        "conclusion": "The suspension was a breach, and damages are due. **Bar trap:** labeling an event \"fortuitous\" is not enough; the obligor must show that the event made normal performance impossible."
+      },
+      "keyPoints": [
+        "Suspension is allowed only for the causes the contract lists",
+        "Price renegotiation and a new plant were not listed causes",
+        "A fortuitous event must make normal fulfillment impossible to excuse performance",
+        "The supplier kept producing and sold to others: no impossibility",
+        "The unjustified suspension was a breach"
+      ],
+      "caseIds": [
+        "case-0061"
+      ],
+      "source": {
+        "caseTitle": "General Enterprises, Inc. v. Lianga Bay Logging Co., Inc.",
+        "grNumber": "G.R. No. L-18487",
+        "url": "https://lawphil.net/judjuris/juri1964/aug1964/gr_l-18487_1964.html",
+        "part": "Decision, discussion of the second issue (suspension and fortuitous events)",
+        "excerpt": "Even assuming that the restrictions imposed by the government on barter, the breakdown of machineries and the inability to secure spare parts, replacements and wire ropes, as well as the passage of the Margin Law, have the nature of fortuitous events, yet it cannot be said that they had caused such a reduction in appellant's production of logs that made it impossible for it to comply wholly, or even partly, with its commitment with appellee. The rule is that even the happening of a fortuitous event in itself does not necessarily extinguish an obligation for, as this Court has said, the fortuitous event must be of such a character as to render it impossible for the obligor to fulfill his obligation in a normal manner (Lassam v. Smith, 45 Phil. 990). … One of the causes for the suspension of the agreement alleged by appellant was the demand for the renegotiation of prices provided in paragraph 2 of the agreement. Another reason advanced is the establishment of a veneer plant for the purpose of increasing the log production. But these two matters are not among the various causes of suspension enumerated in paragraph 8 of the agreement. The suspension, therefore, of the contract on these causes is not justified."
+      }
+    },
+    {
+      "id": "q-0682",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "A party that breached a distribution contract tried to justify its breach with misstatements and half-truths by one of its officers. The trial court awarded the other party ₱100,000 exemplary damages. Should the award be sustained in full? Explain, citing General Enterprises v. Lianga Bay Logging.",
+      "suggestedAnswer": {
+        "answer": "Not in full. The award should be reduced, since the breaching party did not act in a wanton, oppressive or malevolent manner; in the case, the Court reduced it to ₱50,000.",
+        "legalBasis": "In General Enterprises v. Lianga Bay Logging, the Court found the ₱100,000 exemplary damages \"somewhat excessive,\" since the producer, in suspending the contract, \"has not acted in a wanton, oppressive or malevolent manner to deserve such a heavy punishment within the purview of the law (Article 2232, new Civil Code).\" Its officer's misstatements or half-truths, though reprehensible, were not a wanton or malevolent perversion of the truth, so ₱50,000 was a reasonable exemplary penalty. The attorney's fees were affirmed under Article 2208, considering the importance of the litigation and the time and effort involved.",
+        "application": "Misstatements meant to justify a breach are blameworthy but fall short of the wanton or malevolent conduct that would warrant a heavy exemplary award in a contract case.",
+        "conclusion": "The exemplary damages should be mitigated. **Bar trap:** in contracts, exemplary damages depend on wanton, fraudulent, reckless, oppressive or malevolent conduct (Art. 2232); a reprehensible but not malevolent act justifies only a reduced award."
+      },
+      "keyPoints": [
+        "Exemplary damages in contracts: wanton, oppressive or malevolent conduct (Art. 2232)",
+        "Misstatements and half-truths were reprehensible but not wanton or malevolent",
+        "₱100,000 was excessive; reduced to ₱50,000",
+        "Attorney's fees affirmed under Art. 2208 given the importance of the case and the effort"
+      ],
+      "caseIds": [
+        "case-0061"
+      ],
+      "source": {
+        "caseTitle": "General Enterprises, Inc. v. Lianga Bay Logging Co., Inc.",
+        "grNumber": "G.R. No. L-18487",
+        "url": "https://lawphil.net/judjuris/juri1964/aug1964/gr_l-18487_1964.html",
+        "part": "Decision, discussion of the sixth issue (exemplary damages and attorney's fees)",
+        "excerpt": "We believes however, that the amount of P100,000.00 awarded to appellee as exemplary damages is somewhat excessive it appearing that appellant is suspending the operation of the contract has not acted in a wanton, oppressive or malevolent manner to deserve such a heavy punishment within the purview of the law (Article 2232, new Civil Code). The most that can be said is that appellant, to suit its purpose, has availed to certain misstatements or half truths as reflected in the declarations of Mr. Dempsey, one of its high officials, in an attempt to justify its desistance from the contract. While this is reprehensible, it is not a wanton or malevolent perversion of the truth. Hence, the award should be mitigated and in our opinion the amount of P50,000.00 is a reasonable exemplary penalty. We also find reasonable the amount awarded by the court a quo as attorney's fees considering the importance of this litigation and the amount of time and effort therein involved. This is justified under Article 2208 of the Civil Code."
+      }
+    },
+    {
+      "id": "q-0683",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Under Article 2200 of the Civil Code, as applied in General Enterprises v. Lianga Bay Logging, indemnification for damages comprehends",
+      "choices": {
+        "A": "only the value of the loss suffered.",
+        "B": "only the profits the creditor fails to obtain.",
+        "C": "not only the value of the loss suffered but also the profits which the creditor fails to obtain.",
+        "D": "only damages that were foreseen at the time the contract was made, excluding profits."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court said: \"Under Article 2200 of the Civil Code, indemnification for damages comprehends not only the value of the loss suffered but also at of the profits which the creditor fails to obtain. In other words, lucrum cessans is also a basis for indemnification.\" **A and B are wrong:** each states only half the rule. **D is wrong:** Article 2200 expressly covers unrealized profits. **Bar trap:** the two components are daño emergente (loss suffered) and lucro cesante (profits lost).",
+      "caseIds": [
+        "case-0061"
+      ],
+      "source": {
+        "caseTitle": "General Enterprises, Inc. v. Lianga Bay Logging Co., Inc.",
+        "grNumber": "G.R. No. L-18487",
+        "url": "https://lawphil.net/judjuris/juri1964/aug1964/gr_l-18487_1964.html",
+        "part": "Decision, discussion of the sixth issue (actual damages)",
+        "excerpt": "Under Article 2200 of the Civil Code, indemnification for damages comprehends not only the value of the loss suffered but also at of the profits which the creditor fails to obtain. In other words, lucrum cessans is also a basis for indemnification."
+      }
+    },
+    {
+      "id": "q-0684",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "In General Enterprises v. Lianga Bay Logging, how did the Court determine the distributor's lost commissions?",
+      "choices": {
+        "A": "By the distributor's own estimate of its expected profits.",
+        "B": "By multiplying the volume the producer was bound to deliver in the remaining 17 months by the commission per board foot the distributor actually earned on earlier shipments.",
+        "C": "By awarding nominal damages, since lost profits are inherently speculative.",
+        "D": "By the market value of the logs the producer sold to other buyers."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court took the 34 million board feet due for the remaining 17 months and the commission of ₱.0107456 per board foot earned on earlier shipments, arriving at ₱365,350.40 as \"the lucrum cessans that should accrue to appellee.\" **A is wrong:** the estimate was based on actual past earnings. **C is wrong:** the award was held not speculative. **D is wrong:** not the measure used. **Bar trap:** reasonable certainty, not absolute certainty, is enough for lost profits.",
+      "caseIds": [
+        "case-0061"
+      ],
+      "source": {
+        "caseTitle": "General Enterprises, Inc. v. Lianga Bay Logging Co., Inc.",
+        "grNumber": "G.R. No. L-18487",
+        "url": "https://lawphil.net/judjuris/juri1964/aug1964/gr_l-18487_1964.html",
+        "part": "Decision, discussion of the sixth issue (actual damages)",
+        "excerpt": "Thus, during the seventeen remaining months of the contract, at the rate of at least 2,000,000 board feet, appellant should have delivered thirty-four million board feet. If we take the number of board feet delivered during the months prior to the interruption, namely, 7,405,861 board feet, and the commission received by appellee thereon, which amounts to P79,580,82, we would have that appellee received a commission of P.0107456 per board feet. Multiplying 34 million board feet by P.0107456, the product is P365,350.40, which represents the lucrum cessans that should accrue to appellee."
+      }
+    },
+    {
+      "id": "q-0685",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "According to General Enterprises v. Lianga Bay Logging, when does a fortuitous event excuse an obligor?",
+      "choices": {
+        "A": "Whenever the event is beyond the obligor's control.",
+        "B": "Whenever the obligor gives written notice of the event.",
+        "C": "Whenever the event increases the obligor's costs.",
+        "D": "When the event is of such a character as to render it impossible for the obligor to fulfill the obligation in a normal manner."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The Court held that \"even the happening of a fortuitous event in itself does not necessarily extinguish an obligation for ... the fortuitous event must be of such a character as to render it impossible for the obligor to fulfill his obligation in a normal manner.\" **A is wrong:** being beyond control is not enough. **B is wrong:** notice alone does not excuse. **C is wrong:** higher costs are not impossibility. **Bar trap:** the producer kept selling to others, so it could have performed.",
+      "caseIds": [
+        "case-0061"
+      ],
+      "source": {
+        "caseTitle": "General Enterprises, Inc. v. Lianga Bay Logging Co., Inc.",
+        "grNumber": "G.R. No. L-18487",
+        "url": "https://lawphil.net/judjuris/juri1964/aug1964/gr_l-18487_1964.html",
+        "part": "Decision, discussion of the second issue (fortuitous events)",
+        "excerpt": "The rule is that even the happening of a fortuitous event in itself does not necessarily extinguish an obligation for, as this Court has said, the fortuitous event must be of such a character as to render it impossible for the obligor to fulfill his obligation in a normal manner (Lassam v. Smith, 45 Phil. 990)."
+      }
+    },
+    {
+      "id": "q-0686",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "In General Enterprises v. Lianga Bay Logging, the Court defined the cause of a contract as",
+      "choices": {
+        "A": "the essential reason which moves the contracting parties to enter into it.",
+        "B": "the motive of each party, whatever it may be.",
+        "C": "the object of the contract.",
+        "D": "the consent of the parties."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court said: \"The cause of a contract is the essential reason which moves the contracting parties to enter into it,\" or \"the immediate, direct and proximate reason which justifies the creation of an obligation thru the will of the contracting parties.\" For the producer, it was the distribution of its logs; for the distributor, the sale of the logs for a commission. **B is wrong:** motives are distinct from cause. **C and D are wrong:** object and consent are different requisites. **Bar trap:** a side promise not in the contract was not its cause.",
+      "caseIds": [
+        "case-0061"
+      ],
+      "source": {
+        "caseTitle": "General Enterprises, Inc. v. Lianga Bay Logging Co., Inc.",
+        "grNumber": "G.R. No. L-18487",
+        "url": "https://lawphil.net/judjuris/juri1964/aug1964/gr_l-18487_1964.html",
+        "part": "Decision, discussion of the first issue (cause of the contract)",
+        "excerpt": "The cause of a contract is the essential reason which moves the contracting parties to enter into it (8 Manresa., 5th edition, p. 450). In other words, the cause is the immediate, direct and proximate reason which justifies the creation of an obligation thru the will of the contracting parties (3 Castan, 4th edition, p. 347)."
+      }
+    },
+    {
+      "id": "q-0687",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "What was the final judgment in General Enterprises v. Lianga Bay Logging?",
+      "choices": {
+        "A": "The complaint was dismissed because the suspension was justified.",
+        "B": "Actual damages were reduced to ₱365,350.40, and all other awards were affirmed.",
+        "C": "The decision was affirmed, except that exemplary damages were reduced to ₱50,000.",
+        "D": "All damages were deleted for lack of proof."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court \"modified [the decision] by awarding to appellee only the amount of P50,000.00 as exemplary damages. In all other respects, the decision is affirmed.\" **A is wrong:** the suspension was unjustified. **B is wrong:** the ₱400,000 actual damages stood as a reasonable estimate. **D is wrong:** the damages were proved. **Bar trap:** the computed ₱365,350.40 supported, but did not replace, the ₱400,000 award.",
+      "caseIds": [
+        "case-0061"
+      ],
+      "source": {
+        "caseTitle": "General Enterprises, Inc. v. Lianga Bay Logging Co., Inc.",
+        "grNumber": "G.R. No. L-18487",
+        "url": "https://lawphil.net/judjuris/juri1964/aug1964/gr_l-18487_1964.html",
+        "part": "Decision, the disposition",
+        "excerpt": "WHEREFORE, the decision appealed from is hereby modified by awarding to appellee only the amount of P50,000.00 as exemplary damages. In all other respects, the decision is affirmed, with costs."
       }
     }
   ]
