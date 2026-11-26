@@ -136,6 +136,21 @@
       "ruling": "The Court denied the petition and held the spouses liable. D&C is the classic procedure for abnormal vaginal bleeding, but the timing was wrong. Diabetes was suspected from the start, the patient had classic symptoms, and the partial results showed high blood sugar; the doctors did not wait for the full results. A disability that increases the patient's risk must be taken into account if the physician knows or should know of it. The bleeding was not shown to be profuse (the medical records did not mention it), so the D&C was elective; an elective procedure requires a thorough pre-operative evaluation, and the patient's uncontrolled hyperglycemia should have been managed first, with an internist. Causation was proved: surgical stress aggravated her diabetes, leading to ketoacidosis and death. Dr. Fredelicto, an anesthesiologist, was liable for failing to guard against diabetes and for joining the decision to proceed. The Court affirmed actual, moral and exemplary damages, added ₱50,000 death indemnity under Article 2206, and restored attorney's fees.",
       "keyDoctrine": "A medical negligence case has four elements: duty, breach, injury and proximate causation; the plaintiff must prove them by preponderance of evidence, generally through expert testimony. A physician must take into account a disability that increases the patient's risk if he knows or should know of it, and take commensurate precautions. An elective procedure requires a thorough pre-operative evaluation. Causation must be proved within a reasonable medical probability, not by speculation. Death caused by a quasi-delict entitles the heirs to death indemnity under Article 2206 of the Civil Code.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2008/nov2008/gr_158996_2008.html"
+    },
+    {
+      "id": "case-0039",
+      "status": "draft",
+      "name": "Li v. Spouses Soliman",
+      "grNumber": "G.R. No. 165279",
+      "year": 2011,
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "facts": "Angelica Soliman, 11, had osteosarcoma, an aggressive bone cancer; her right leg was amputated, and she was referred to Dr. Rubi Li, a medical oncologist at St. Luke's Medical Center, for chemotherapy to prevent the cancer from spreading. Eleven days after the first cycle of chemotherapy she died; the PNP autopsy gave the cause as hypovolemic shock from multiple organ hemorrhages and disseminated intravascular coagulation. Her parents sued, claiming Dr. Li was negligent in giving the drugs and had assured them of a 95% chance of healing and mentioned only slight vomiting, hair loss and weakness as side effects; they said they would not have consented had they known the truth. Dr. Li testified that she had explained the side effects, including low white and red blood cell and platelet counts, possible sterility, heart and kidney damage and skin darkening, and that the child died of sepsis from the cancer itself. The trial court found no negligence. The Court of Appeals agreed there was no negligence in the treatment but held Dr. Li liable for failing to disclose all the known side effects.",
+      "issue": "Can Dr. Li be held liable for failing to fully disclose the serious side effects of chemotherapy, although she was not negligent in administering it?",
+      "ruling": "The Court en banc granted the petition and reinstated the dismissal. It explained the doctrine of informed consent: a physician must disclose what a reasonably prudent physician would disclose about the grave risks of a proposed treatment, so the patient can intelligently weigh risks against benefits; the test of what must be disclosed is materiality to the patient's decision; and an undisclosed risk must materialize and must have caused the injury, meaning consent would not have been given had it been revealed. The four elements of an informed-consent action are: a duty to disclose material risks; failure or inadequate disclosure; consent that would otherwise not have been given, as a direct and proximate result; and injury from the treatment. Here the disclosure was adequate: the parents were told of the general side effects, from which the possibility of death could reasonably be drawn, and the 95% claim was not credible. Moreover, duty and breach must be proved by expert testimony on the customary standard of physicians in the same practice, and the parents' witnesses were not oncologists.",
+      "keyDoctrine": "Under the doctrine of informed consent, a physician must disclose what a reasonably prudent physician in the medical community would disclose about the grave risks of a proposed treatment, so the patient can intelligently choose; the test is the materiality of the risk to the patient's decision. The plaintiff must prove (1) a duty to disclose material risks, (2) failure or inadequate disclosure, (3) consent that would not otherwise have been given, as a direct and proximate result, and (4) injury from the treatment. Under Li, duty and breach must be proved by expert testimony from physicians in the same practice.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2011/jun2011/gr_165279_2011.html"
     }
   ],
   "questions": [
@@ -2202,6 +2217,238 @@
         "url": "https://lawphil.net/judjuris/juri2008/nov2008/gr_158996_2008.html",
         "part": "The Court's Ruling, Injury and Causation (the liability of Dr. Fredelicto)",
         "excerpt": "However, we clarify that Dr. Fredelicto's negligence is not solely the act of ordering an \"on call\" D&C operation when he was mainly an anaesthesiologist who had made a very cursory examination of the patient's vaginal bleeding complaint. Rather, it was his failure from the very start to identify and confirm, despite the patient's complaints and his own suspicions, that diabetes was a risk factor that should be guarded against, and his participation in the imprudent decision to proceed with the D&C operation despite his early suspicion and the confirmatory early laboratory results."
+      }
+    },
+    {
+      "id": "q-0504",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "Discuss the doctrine of informed consent. What must a physician disclose, how much explanation is required, and are there exceptions?",
+      "suggestedAnswer": {
+        "answer": "Informed consent is the principle that a physician has a duty to disclose what a reasonably prudent physician in the medical community, exercising reasonable care, would disclose to his patient about the grave risks of injury from a proposed treatment, so that the patient, faced with a choice of undergoing it, an alternative treatment, or none at all, may intelligently exercise his judgment by balancing the probable risks against the probable benefits.",
+        "legalBasis": "In Li v. Soliman, the Court traced the doctrine from the tort of battery for treatment without consent, through Justice Cardozo's statement in Schloendorff that every adult of sound mind has a right to determine what shall be done with his own body. Following Canterbury v. Spence, the duty to warn is part of the physician's responsibility, since patients are ordinarily unlearned in medicine; but it requires only a reasonable explanation in nontechnical terms of what is at stake: the therapy alternatives, the goals expectably to be achieved, and the risks of treatment or no treatment, not a short medical education. Following Cobbs v. Grant, the physician need not discuss relatively minor risks of very low incidence in common procedures; the exceptions are emergencies where the patient evidently cannot evaluate data, and where the patient is a child or incompetent. The test for what must be divulged is its materiality to the patient's decision.",
+        "application": "A doctor recommending chemotherapy must therefore explain in plain terms the goals of the treatment, the alternatives (including no treatment), and its material risks, such as the drugs' effects on the blood counts and organs, so the patient or the parents can decide. Statistical data may not be legally necessary.",
+        "conclusion": "Informed consent requires a reasonable, nontechnical disclosure of material risks and alternatives, measured by what is material to the patient's decision. **Bar trap:** the duty is not to disclose every conceivable risk; minor, very rare risks of common procedures need not be discussed."
+      },
+      "keyPoints": [
+        "Duty to disclose what a reasonably prudent physician would disclose about the grave risks of a proposed treatment",
+        "Purpose: the patient can intelligently balance probable risks against probable benefits, including alternative or no treatment",
+        "Only a reasonable explanation in nontechnical terms: what is at stake, alternatives, goals, risks",
+        "No need to discuss minor, very low-incidence risks of common procedures",
+        "Exceptions: emergencies where the patient cannot evaluate data; a patient who is a child or incompetent",
+        "Test: materiality to the patient's decision"
+      ],
+      "caseIds": [
+        "case-0039"
+      ],
+      "source": {
+        "caseTitle": "Li v. Spouses Soliman",
+        "grNumber": "G.R. No. 165279",
+        "url": "https://lawphil.net/judjuris/juri2011/jun2011/gr_165279_2011.html",
+        "part": "Ruling, the doctrine of informed consent",
+        "excerpt": "From a purely ethical norm, informed consent evolved into a general principle of law that a physician has a duty to disclose what a reasonably prudent physician in the medical community in the exercise of reasonable care would disclose to his patient as to whatever grave risks of injury might be incurred from a proposed course of treatment, so that a patient, exercising ordinary care for his own welfare, and faced with a choice of undergoing the proposed treatment, or alternative treatment, or none at all, may intelligently exercise his judgment by reasonably balancing the probable risks against the probable benefits. … The physician is not expected to give the patient a short medical education, the disclosure rule only requires of him a reasonable explanation, which means generally informing the patient in nontechnical terms as to what is at stake; the therapy alternatives open to him, the goals expectably to be achieved, and the risks that may ensue from particular treatment or no treatment. … However, the physician is not obliged to discuss relatively minor risks inherent in common procedures when it is common knowledge that such risks inherent in procedure of very low incidence. Cited as exceptions to the rule that the patient should not be denied the opportunity to weigh the risks of surgery or treatment are emergency cases where it is evident he cannot evaluate data, and where the patient is a child or incompetent. The court thus concluded that the patient’s right of self-decision can only be effectively exercised if the patient possesses adequate information to enable him in making an intelligent choice. The scope of the physician’s communications to the patient, then must be measured by the patient’s need, and that need is whatever information is material to the decision. The test therefore for determining whether a potential peril must be divulged is its materiality to the patient’s decision."
+      }
+    },
+    {
+      "id": "q-0505",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "What are the essential elements that a plaintiff must prove in a malpractice action based on the doctrine of informed consent? Explain the element of causation in such an action.",
+      "suggestedAnswer": {
+        "answer": "There are four: (1) the physician had a duty to disclose material risks; (2) he failed to disclose or inadequately disclosed those risks; (3) as a direct and proximate result of the failure to disclose, the patient consented to treatment she otherwise would not have consented to; and (4) the plaintiff was injured by the proposed treatment.",
+        "legalBasis": "Li v. Soliman lists these elements and holds that the gravamen in an informed consent case requires the plaintiff to point to significant undisclosed information relating to the treatment which would have altered her decision to undergo it. Following Canterbury v. Spence and Cobbs v. Grant, the unrevealed risk must also materialize, for otherwise the omission, however unpardonable, is without legal consequence; and there must be a causal relationship between the failure to inform and the injury, which arises only if it is established that, had revelation been made, consent to treatment would not have been given.",
+        "application": "So it is not enough for the patient to show that some risk was not mentioned. She must show that the risk was material, that it actually came about, and that had it been disclosed she would have refused the treatment, the refusal being what would have spared her the injury.",
+        "conclusion": "Duty, failure to disclose, consent that would otherwise not have been given, and injury. **Bar trap:** an omission that did not change the patient's decision, or a risk that never materialized, carries no liability even if the disclosure was incomplete."
+      },
+      "keyPoints": [
+        "(1) Duty to disclose material risks",
+        "(2) Failure to disclose, or inadequate disclosure",
+        "(3) As a direct and proximate result, the patient consented to treatment she otherwise would not have consented to",
+        "(4) Injury from the proposed treatment",
+        "The undisclosed risk must materialize, and the information must be significant enough to have altered the decision"
+      ],
+      "caseIds": [
+        "case-0039"
+      ],
+      "source": {
+        "caseTitle": "Li v. Spouses Soliman",
+        "grNumber": "G.R. No. 165279",
+        "url": "https://lawphil.net/judjuris/juri2011/jun2011/gr_165279_2011.html",
+        "part": "Ruling, the elements of an action based on informed consent",
+        "excerpt": "Such unrevealed risk that should have been made known must further materialize, for otherwise the omission, however unpardonable, is without legal consequence. And, as in malpractice actions generally, there must be a causal relationship between the physician’s failure to divulge and damage to the patient. … Cobbs v. Grant further reiterated the pronouncement in Canterbury v. Spence that for liability of the physician for failure to inform patient, there must be causal relationship between physician’s failure to inform and the injury to patient and such connection arises only if it is established that, had revelation been made, consent to treatment would not have been given. There are four essential elements a plaintiff must prove in a malpractice action based upon the doctrine of informed consent: \"(1) the physician had a duty to disclose material risks; (2) he failed to disclose or inadequately disclosed those risks; (3) as a direct and proximate result of the failure to disclose, the patient consented to treatment she otherwise would not have consented to; and (4) plaintiff was injured by the proposed treatment.\" The gravamen in an informed consent case requires the plaintiff to \"point to significant undisclosed information relating to the treatment which would have altered her decision to undergo it."
+      }
+    },
+    {
+      "id": "q-0506",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "Before chemotherapy for their child's aggressive bone cancer, Dr. Tan told the parents that the drugs would lower the child's white and red blood cells and platelets, could damage the heart and kidneys, and could cause hair loss, vomiting and skin darkening. The child died of complications eleven days after the first cycle. The parents sue Dr. Tan for not telling them that the treatment could cause death. Their only witness on the duty to disclose is a Department of Health medical specialist who handles complaints against hospitals and is not an oncologist. No negligence in the treatment itself is shown. Is Dr. Tan liable? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. The disclosure was adequate, and the parents failed to prove the standard of disclosure through a qualified expert.",
+        "legalBasis": "In Li v. Soliman, the Court held that there was adequate disclosure of the material risks of chemotherapy when the parents were told of its general side effects (lowered blood counts, decrease in platelets, possible kidney or heart damage, skin darkening); that death can result from the treatment or the underlying cancer is a risk that cannot be ruled out in most major procedures, but such a conclusion can reasonably be drawn from the side effects already disclosed. It also held that in an action based on lack of informed consent, the plaintiff must prove both the duty and its breach through expert testimony showing the customary standard of care of physicians in the same practice as the defendant; a DOH medical specialist who is not an oncologist does not qualify.",
+        "application": "The parents knew the child's immune system was already weak from the cancer and were told how the drugs would affect her blood and organs; the reaction of each patient cannot be precisely determined beforehand. From those disclosed effects, the possibility of a fatal outcome could reasonably be drawn. And with no oncologist to establish what disclosure the profession requires, duty and breach were not proved.",
+        "conclusion": "Dr. Tan is not liable. **Bar trap:** a doctor need not recite every possible outcome, including death, when it follows from the serious risks already disclosed; and in Li the Court required expert testimony from the same field to prove the duty to disclose (a requirement to compare with the later case of Que v. Philippine Heart Center, 2025)."
+      },
+      "keyPoints": [
+        "Disclosure of the general side effects of chemotherapy was adequate",
+        "The possibility of death can reasonably be drawn from the serious side effects disclosed",
+        "Each patient's reaction cannot be precisely determined beforehand",
+        "Under Li, duty and breach must be proved by expert testimony of physicians in the same practice",
+        "A non-oncologist DOH specialist is not a qualified expert on the standard of disclosure for chemotherapy"
+      ],
+      "caseIds": [
+        "case-0039"
+      ],
+      "source": {
+        "caseTitle": "Li v. Spouses Soliman",
+        "grNumber": "G.R. No. 165279",
+        "url": "https://lawphil.net/judjuris/juri2011/jun2011/gr_165279_2011.html",
+        "part": "Ruling, adequate disclosure and the need for expert testimony",
+        "excerpt": "Examining the evidence on record, we hold that there was adequate disclosure of material risks inherent in the chemotherapy procedure performed with the consent of Angelica’s parents. Respondents could not have been unaware in the course of initial treatment and amputation of Angelica’s lower extremity, that her immune system was already weak on account of the malignant tumor in her knee. When petitioner informed the respondents beforehand of the side effects of chemotherapy which includes lowered counts of white and red blood cells, decrease in blood platelets, possible kidney or heart damage and skin darkening, there is reasonable expectation on the part of the doctor that the respondents understood very well that the severity of these side effects will not be the same for all patients undergoing the procedure. In other words, by the nature of the disease itself, each patient’s reaction to the chemical agents even with pre-treatment laboratory tests cannot be precisely determined by the physician. That death can possibly result from complications of the treatment or the underlying cancer itself, immediately or sometime after the administration of chemotherapy drugs, is a risk that cannot be ruled out, as with most other major medical procedures, but such conclusion can be reasonably drawn from the general side effects of chemotherapy already disclosed. … Further, in a medical malpractice action based on lack of informed consent, \"the plaintiff must prove both the duty and the breach of that duty through expert testimony. Such expert testimony must show the customary standard of care of physicians in the same practice as that of the defendant doctor. In this case, the testimony of Dr. Balmaceda who is not an oncologist but a Medical Specialist of the DOH’s Operational and Management Services charged with receiving complaints against hospitals, does not qualify as expert testimony to establish the standard of care in obtaining consent for chemotherapy treatment."
+      }
+    },
+    {
+      "id": "q-0507",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "A physician has a duty to disclose what a reasonably prudent physician in the medical community would disclose about the grave risks of injury from a proposed course of treatment, so that the patient may intelligently weigh the probable risks against the probable benefits. This is the doctrine of",
+      "choices": {
+        "A": "res ipsa loquitur.",
+        "B": "informed consent.",
+        "C": "the captain of the ship.",
+        "D": "corporate negligence."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** Li v. Soliman: \"informed consent evolved into a general principle of law that a physician has a duty to disclose what a reasonably prudent physician in the medical community in the exercise of reasonable care would disclose to his patient as to whatever grave risks of injury might be incurred from a proposed course of treatment.\" **A is wrong:** res ipsa loquitur is a rule of evidence inferring negligence from the injury. **C is wrong:** the captain of the ship rule makes the lead surgeon responsible for the operating team. **D is wrong:** corporate negligence concerns a hospital's own duties. **Bar trap:** informed consent is about disclosure before treatment, not about how the treatment was performed.",
+      "caseIds": [
+        "case-0039"
+      ],
+      "source": {
+        "caseTitle": "Li v. Spouses Soliman",
+        "grNumber": "G.R. No. 165279",
+        "url": "https://lawphil.net/judjuris/juri2011/jun2011/gr_165279_2011.html",
+        "part": "Ruling, the doctrine of informed consent",
+        "excerpt": "From a purely ethical norm, informed consent evolved into a general principle of law that a physician has a duty to disclose what a reasonably prudent physician in the medical community in the exercise of reasonable care would disclose to his patient as to whatever grave risks of injury might be incurred from a proposed course of treatment, so that a patient, exercising ordinary care for his own welfare, and faced with a choice of undergoing the proposed treatment, or alternative treatment, or none at all, may intelligently exercise his judgment by reasonably balancing the probable risks against the probable benefits."
+      }
+    },
+    {
+      "id": "q-0508",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "As discussed in Li v. Soliman (citing Cobbs v. Grant), which of the following is NOT an exception to the rule that the patient should not be denied the opportunity to weigh the risks of a surgery or treatment?",
+      "choices": {
+        "A": "An emergency case where it is evident the patient cannot evaluate data.",
+        "B": "A patient who is a child.",
+        "C": "A patient who is incompetent.",
+        "D": "A patient who is a physician himself."
+      },
+      "correct": "D",
+      "explanation": "**D is correct (it is not an exception).** The Court cited as exceptions \"emergency cases where it is evident he cannot evaluate data, and where the patient is a child or incompetent\" (A, B and C). Being a physician is not among them. For a child, the decision falls to the parents, which is why Angelica's parents gave the consent in Li. **Bar trap:** the exceptions are about the patient's inability to evaluate the information, not about how much he already knows.",
+      "caseIds": [
+        "case-0039"
+      ],
+      "source": {
+        "caseTitle": "Li v. Spouses Soliman",
+        "grNumber": "G.R. No. 165279",
+        "url": "https://lawphil.net/judjuris/juri2011/jun2011/gr_165279_2011.html",
+        "part": "Ruling, exceptions to the duty to disclose (citing Cobbs v. Grant)",
+        "excerpt": "Cited as exceptions to the rule that the patient should not be denied the opportunity to weigh the risks of surgery or treatment are emergency cases where it is evident he cannot evaluate data, and where the patient is a child or incompetent."
+      }
+    },
+    {
+      "id": "q-0509",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "Following Li v. Soliman, what is the test for determining whether a potential peril of a treatment must be divulged to the patient?",
+      "choices": {
+        "A": "Its materiality to the patient's decision.",
+        "B": "Whether the physician personally considers it likely to happen.",
+        "C": "Whether the hospital's consent form lists it.",
+        "D": "Whether it has ever happened to another patient of the same physician."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court, citing Cobbs v. Grant, said that the scope of the physician's communications \"must be measured by the patient's need, and that need is whatever information is material to the decision. The test therefore for determining whether a potential peril must be divulged is its materiality to the patient's decision.\" **B is wrong:** following Canterbury v. Spence, the decision on what to reveal is not left to the physician alone. **C and D are wrong:** neither is the test the Court stated. **Bar trap:** the measure is the patient's need for information, not the doctor's own practice or a hospital form.",
+      "caseIds": [
+        "case-0039"
+      ],
+      "source": {
+        "caseTitle": "Li v. Spouses Soliman",
+        "grNumber": "G.R. No. 165279",
+        "url": "https://lawphil.net/judjuris/juri2011/jun2011/gr_165279_2011.html",
+        "part": "Ruling, the test of what must be disclosed",
+        "excerpt": "The court thus concluded that the patient’s right of self-decision can only be effectively exercised if the patient possesses adequate information to enable him in making an intelligent choice. The scope of the physician’s communications to the patient, then must be measured by the patient’s need, and that need is whatever information is material to the decision. The test therefore for determining whether a potential peril must be divulged is its materiality to the patient’s decision."
+      }
+    },
+    {
+      "id": "q-0510",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "A surgeon failed to tell his patient of a serious risk of an operation, but the risk never came about, and the operation succeeded. Following the principles discussed in Li v. Soliman, is the surgeon liable for the non-disclosure?",
+      "choices": {
+        "A": "Yes, because every non-disclosure of a material risk is actionable per se.",
+        "B": "Yes, because the patient's right of self-determination was violated, whether or not harm resulted.",
+        "C": "No, because an unrevealed risk that should have been made known must further materialize; otherwise the omission, however unpardonable, is without legal consequence.",
+        "D": "No, because a surgeon has no duty to disclose the risks of an operation."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court, citing Canterbury v. Spence, said: \"Such unrevealed risk that should have been made known must further materialize, for otherwise the omission, however unpardonable, is without legal consequence. And, as in malpractice actions generally, there must be a causal relationship between the physician's failure to divulge and damage to the patient.\" **A and B are wrong** for the same reason: injury from the treatment is one of the four elements. **D is wrong:** the surgeon does have the duty; it is the lack of injury that defeats liability here. **Bar trap:** a breach of the duty to disclose without resulting injury is not actionable.",
+      "caseIds": [
+        "case-0039"
+      ],
+      "source": {
+        "caseTitle": "Li v. Spouses Soliman",
+        "grNumber": "G.R. No. 165279",
+        "url": "https://lawphil.net/judjuris/juri2011/jun2011/gr_165279_2011.html",
+        "part": "Ruling, materialization of the undisclosed risk (citing Canterbury v. Spence)",
+        "excerpt": "Such unrevealed risk that should have been made known must further materialize, for otherwise the omission, however unpardonable, is without legal consequence. And, as in malpractice actions generally, there must be a causal relationship between the physician’s failure to divulge and damage to the patient."
+      }
+    },
+    {
+      "id": "q-0511",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "According to Li v. Soliman, how must the plaintiff prove the duty to disclose and its breach in a malpractice action based on lack of informed consent?",
+      "choices": {
+        "A": "By the plaintiff's own testimony on what he would have wanted to know.",
+        "B": "Through expert testimony showing the customary standard of care of physicians in the same practice as the defendant doctor.",
+        "C": "By the hospital's incident report.",
+        "D": "By any physician, whatever his specialty, or any official who handles complaints against hospitals."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court held that \"the plaintiff must prove both the duty and the breach of that duty through expert testimony. Such expert testimony must show the customary standard of care of physicians in the same practice as that of the defendant doctor.\" It rejected the testimony of a DOH medical specialist who was not an oncologist. **A is wrong:** the patient's wishes go to causation, not to the standard of disclosure. **C is wrong:** no such rule was stated. **D is wrong:** the expert must be from the same practice. **Bar trap:** Li noted that, abroad, experts are unnecessary to show the materiality of a risk, yet still required experts to prove duty and breach; check whether later decisions (such as Que v. Philippine Heart Center, 2025) treat this differently.",
+      "caseIds": [
+        "case-0039"
+      ],
+      "source": {
+        "caseTitle": "Li v. Spouses Soliman",
+        "grNumber": "G.R. No. 165279",
+        "url": "https://lawphil.net/judjuris/juri2011/jun2011/gr_165279_2011.html",
+        "part": "Ruling, expert testimony in informed-consent cases",
+        "excerpt": "Further, in a medical malpractice action based on lack of informed consent, \"the plaintiff must prove both the duty and the breach of that duty through expert testimony. Such expert testimony must show the customary standard of care of physicians in the same practice as that of the defendant doctor. In this case, the testimony of Dr. Balmaceda who is not an oncologist but a Medical Specialist of the DOH’s Operational and Management Services charged with receiving complaints against hospitals, does not qualify as expert testimony to establish the standard of care in obtaining consent for chemotherapy treatment."
       }
     }
   ]
