@@ -121,6 +121,21 @@
       "ruling": "The petition was partly granted. When goods arrive damaged, the carrier is presumed at fault, and since it failed to rebut the presumption, its liability was inevitable whether or not others were solidarily liable with it. On interest, the Court reconciled its earlier rulings into rules of thumb: (1) for a loan or forbearance of money, the stipulated interest applies, the interest due itself earns legal interest from judicial demand, and absent stipulation the rate is 12% a year from default (judicial or extrajudicial demand); (2) for other obligations, interest on damages may be imposed at the court's discretion at 6% a year, but not on unliquidated claims until the demand can be established with reasonable certainty: from demand if then reasonably certain, otherwise from the court's judgment, always on the amount finally adjudged; (3) once a money judgment becomes final and executory, the rate is 12% a year until satisfied, that period being equivalent to a forbearance of credit. Applying these, interest was set at 6% from the trial court's decision and 12% from finality.",
       "keyDoctrine": "Interest as actual and compensatory damages: for a loan or forbearance of money, the stipulated rate (in writing), or absent stipulation the legal rate from judicial or extrajudicial demand; for other obligations, 6% at the court's discretion, running from demand if the claim is then reasonably certain, or else from the judgment; and from the finality of a money judgment, interest until satisfaction because that period is equivalent to a forbearance of credit. Interest due earns legal interest from judicial demand (Art. 2212). The 12% rates applied in this case were later lowered to 6% from July 1, 2013 (BSP Circular No. 799, Nacar v. Gallery Frames); check the current rate.",
       "sourceUrl": "https://lawphil.net/judjuris/juri1994/jul1994/gr_97412_1994.html"
+    },
+    {
+      "id": "case-0056",
+      "status": "draft",
+      "name": "Estores v. Spouses Supangan",
+      "grNumber": "G.R. No. 175139",
+      "year": 2012,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "facts": "In 1993, Hermojina Estores agreed in a Conditional Deed of Sale to sell a lot in Naic, Cavite to the spouses Supangan for ₱4.7 million. The contract required her to secure a DAR clearance, move a house off the lot and complete the documents, and gave the buyers the right to demand the return of their down payment if she failed to complete the documents. After almost seven years and ₱3.5 million in payments, she had still not complied. On September 27, 2000, the spouses demanded the return of the ₱3.5 million; she acknowledged it and promised to return it, but did not. In the suit for sum of money, she agreed to return the principal but refused to pay interest, since the contract did not provide for it. The trial court imposed 6% interest and attorney's fees; the Court of Appeals set the 6% to run from the demand and reduced the attorney's fees to ₱100,000.",
+      "issue": "(1) May interest be imposed though the contract does not stipulate it, and at what rate? (2) Are attorney's fees warranted, and in what amount?",
+      "ruling": "The Court denied the petition but modified the award. Interest may be imposed even without stipulation: under Article 2210, interest may in the court's discretion be allowed on damages for breach of contract, and the seller, who used the money and failed to return it, was in default from the demand on September 27, 2000. The rate is 12%, because the transaction was a forbearance of money: the phrase \"forbearance of money, goods or credits\" has a meaning separate from a loan and covers arrangements where a person acquiesces to the temporary use of his money pending the happening of certain events or the fulfillment of conditions. The buyers parted with their money before the conditions were fulfilled, and the seller's unwarranted withholding of it amounts to an involuntary loan. Eastern Shipping and Reformina involved torts, with no forbearance and damages not reasonably certain at demand. The 12% runs from the demand until full satisfaction. Attorney's fees were warranted because the buyers were compelled to litigate, but were reduced to ₱50,000, since they must always be reasonable.",
+      "keyDoctrine": "Interest may be awarded on damages for breach of contract even without a stipulation (Art. 2210), from default upon demand. \"Forbearance of money, goods or credits\" is distinct from a loan: it covers arrangements where a person acquiesces to the temporary use of his money pending the happening of events or the fulfillment of conditions; the unwarranted withholding of money that should be returned is a forbearance, an involuntary loan. Attorney's fees under Art. 2208 must always be reasonable. (The 12% rate then applied to forbearances was later lowered to 6% from July 1, 2013; check the current rate.)",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2012/apr2012/gr_175139_2012.html"
     }
   ],
   "questions": [
@@ -1962,6 +1977,236 @@
         "url": "https://lawphil.net/judjuris/juri1994/jul1994/gr_97412_1994.html",
         "part": "Decision, the disposition",
         "excerpt": "WHEREFORE, the petition is partly GRANTED. The appealed decision is AFFIRMED with the MODIFICATION that the legal interest to be paid is SIX PERCENT (6%) on the amount due computed from the decision, dated 03 February 1988, of the court a quo. A TWELVE PERCENT (12%) interest, in lieu of SIX PERCENT (6%), shall be imposed on such amount upon finality of this decision until the payment thereof."
+      }
+    },
+    {
+      "id": "q-0640",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "S agreed to sell a lot to B in a conditional sale. B paid ₱2 million in advance, but S never fulfilled the conditions she undertook. The contract provided only that the down payment would be returned if S failed, and said nothing about interest. After B's written demand, S still kept the money. B sues for the ₱2 million plus 12% interest. S argues that (1) no interest is due since none was stipulated, and (2) at most 6% applies because the contract is a sale, not a loan. Rule on S's arguments, citing Estores v. Spouses Supangan.",
+      "suggestedAnswer": {
+        "answer": "Both arguments fail. Interest may be imposed without a stipulation, and the rate is that for a forbearance of money (12% when Estores was decided), running from B's demand until full payment.",
+        "legalBasis": "In Estores v. Spouses Supangan, the Court held that under Article 2210, interest may in the court's discretion be allowed upon damages awarded for breach of contract, and the seller was in default from the date of demand. On the rate, the phrase \"forbearance of money, goods or credits\" has a meaning separate from a loan: it refers to arrangements other than loans where a person acquiesces to the temporary use of his money pending the happening of certain events or the fulfillment of conditions. The buyers parted with their money before the conditions were fulfilled, and the seller's unwarranted withholding of it amounts to a forbearance of money, an involuntary loan, so the rate applicable to a loan applies.",
+        "application": "B parted with the ₱2 million before S fulfilled the conditions, allowing her the use of it. When the conditions failed and S kept the money despite demand, B was deprived of its use. B is entitled to the return of the principal and to compensation for its use, at the forbearance rate, from the demand.",
+        "conclusion": "Interest is due at the forbearance rate from demand. **Bar trap:** a contract that is not a loan can still involve a forbearance of money; do not stop at the name of the contract. Note also that the 12% rate applied in Estores was later lowered to 6% from July 1, 2013 (BSP Circular No. 799, Nacar v. Gallery Frames); check the current rate."
+      },
+      "keyPoints": [
+        "Interest may be awarded on damages for breach of contract without stipulation (Art. 2210)",
+        "Default from the date of demand",
+        "Forbearance has a meaning separate from a loan",
+        "Forbearance: acquiescing to the temporary use of one's money pending events or conditions",
+        "Unwarranted withholding of the money = forbearance, an involuntary loan; the loan rate applies",
+        "The 12% rate was later lowered to 6% from July 1, 2013"
+      ],
+      "caseIds": [
+        "case-0056"
+      ],
+      "source": {
+        "caseTitle": "Estores v. Spouses Supangan",
+        "grNumber": "G.R. No. 175139",
+        "url": "https://lawphil.net/judjuris/juri2012/apr2012/gr_175139_2012.html",
+        "part": "Our Ruling, interest at 12% (forbearance of money)",
+        "excerpt": "We sustain the ruling of both the RTC and the CA that it is proper to impose interest notwithstanding the absence of stipulation in the contract. Article 2210 of the Civil Code expressly provides that \"[i]nterest may, in the discretion of the court, be allowed upon damages awarded for breach of contract.\" … We believe however, that the phrase \"forbearance of money, goods or credits\" is meant to have a separate meaning from a loan, otherwise there would have been no need to add that phrase as a loan is already sufficiently defined in the Civil Code. Forbearance of money, goods or credits should therefore refer to arrangements other than loan agreements, where a person acquiesces to the temporary use of his money, goods or credits pending happening of certain events or fulfillment of certain conditions. In this case, the respondent-spouses parted with their money even before the conditions were fulfilled. They have therefore allowed or granted forbearance to the seller (petitioner) to use their money pending fulfillment of the conditions. They were deprived of the use of their money for the period pending fulfillment of the conditions and when those conditions were breached, they are entitled not only to the return of the principal amount paid, but also to compensation for the use of their money. And the compensation for the use of their money, absent any stipulation, should be the same rate of legal interest applicable to a loan since the use or deprivation of funds is similar to a loan. Petitioner’s unwarranted withholding of the money which rightfully pertains to respondent-spouses amounts to forbearance of money which can be considered as an involuntary loan. Thus, the applicable rate of interest is 12% per annum."
+      }
+    },
+    {
+      "id": "q-0641",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Counsel for a seller who failed to return a buyer's advance payment argues that, under Eastern Shipping Lines v. Court of Appeals, the 6% rate for obligations other than loans applies, and that interest should run only from the judgment. How did the Court in Estores v. Spouses Supangan answer this, and from when did it reckon the interest?",
+      "suggestedAnswer": {
+        "answer": "The Court distinguished Eastern Shipping and Reformina: both were torts cases with no forbearance of money, and the damages claimed could not be established with reasonable certainty when the claim was made. In Estores, there was a forbearance, and the amount (₱3.5 million) and the date of demand were certain, so interest at the forbearance rate ran from the demand until full satisfaction.",
+        "legalBasis": "Estores v. Spouses Supangan: \"Eastern Shipping Lines, Inc. v. Court of Appeals and its predecessor case, Reformina v. Tongol both involved torts cases and hence, there was no forbearance of money, goods, or credits. Further, the amount claimed (i.e., damages) could not be established with reasonable certainty at the time the claim was made.\" Since the date of demand, September 27, 2000, was satisfactorily established during trial, the 12% rate was reckoned from that date until the principal and interest are fully satisfied.",
+        "application": "The seller's counsel treats every non-loan obligation as falling under the 6% rule. But the obligation to return a definite sum withheld after demand is a forbearance, and the amount was known from the start, so there is no reason to wait for the judgment.",
+        "conclusion": "Interest at the forbearance rate from the date of demand. **Bar trap:** interest runs from the judgment only for claims that were not reasonably certain at demand, as in torts; a fixed sum withheld after demand earns interest from the demand."
+      },
+      "keyPoints": [
+        "Eastern Shipping and Reformina were torts cases: no forbearance of money",
+        "In those cases, the damages were not reasonably certain when claimed",
+        "Here the amount was fixed and the date of demand established at trial",
+        "Interest ran from the demand (September 27, 2000) until full satisfaction"
+      ],
+      "caseIds": [
+        "case-0056"
+      ],
+      "source": {
+        "caseTitle": "Estores v. Spouses Supangan",
+        "grNumber": "G.R. No. 175139",
+        "url": "https://lawphil.net/judjuris/juri2012/apr2012/gr_175139_2012.html",
+        "part": "Our Ruling, distinguishing Eastern Shipping Lines",
+        "excerpt": "Eastern Shipping Lines, Inc. v. Court of Appeals and its predecessor case, Reformina v. Tongol both involved torts cases and hence, there was no forbearance of money, goods, or credits. Further, the amount claimed (i.e., damages) could not be established with reasonable certainty at the time the claim was made. Hence, we arrived at a different ruling in those cases. Since the date of demand which is September 27, 2000 was satisfactorily established during trial, then the interest rate of 12% should be reckoned from said date of demand until the principal amount and the interest thereon is fully satisfied."
+      }
+    },
+    {
+      "id": "q-0642",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "A buyer forced to sue to recover the advance payment that a defaulting seller refused to return asks for attorney's fees of ₱50,000 plus 20% of whatever is recovered. The seller argues that no attorney's fees are due because the buyer did not win everything it asked for. Are attorney's fees warranted? In what amount? Explain, citing Estores v. Spouses Supangan.",
+      "suggestedAnswer": {
+        "answer": "Yes, attorney's fees are warranted because the buyer was compelled to litigate to protect its interest, but the award must be reasonable; in Estores the Court fixed it at ₱50,000.",
+        "legalBasis": "Under Article 2208 of the Civil Code, attorney's fees may be recovered (2) when the defendant's act or omission has compelled the plaintiff to litigate or to incur expenses to protect his interest, and (11) in any other case where the court deems it just and equitable; in all cases, they must be reasonable. In Estores, the spouses were forced to litigate to recover their money, so they were entitled to attorney's fees, but the Court found ₱50,000 more appropriate, in line with the policy that the award must always be reasonable. The trial court's ₱50,000 plus 20% of the recoverable amount had been found excessive and reduced to ₱100,000 by the Court of Appeals, then further reduced.",
+        "application": "The seller's refusal to return the money despite demand compelled the buyer to sue. That the buyer did not obtain every amount it asked for does not remove the ground under Article 2208. But the 20% add-on would be excessive.",
+        "conclusion": "Attorney's fees of a reasonable amount (₱50,000 in Estores). **Bar trap:** the fact that a party was compelled to litigate justifies the award, but never an unreasonable amount; the court may reduce it."
+      },
+      "keyPoints": [
+        "Art. 2208(2): the defendant's act compelled the plaintiff to litigate to protect his interest",
+        "Art. 2208(11): when just and equitable",
+        "In all cases, attorney's fees must be reasonable",
+        "₱50,000 plus 20% was excessive; reduced to ₱100,000 by the CA, then to ₱50,000"
+      ],
+      "caseIds": [
+        "case-0056"
+      ],
+      "source": {
+        "caseTitle": "Estores v. Spouses Supangan",
+        "grNumber": "G.R. No. 175139",
+        "url": "https://lawphil.net/judjuris/juri2012/apr2012/gr_175139_2012.html",
+        "part": "Our Ruling, attorney's fees",
+        "excerpt": "In all cases, the attorney’s fees and expenses of litigation must be reasonable. Considering the circumstances of the instant case, we find respondent-spouses entitled to recover attorney’s fees. There is no doubt that they were forced to litigate to protect their interest, i.e., to recover their money. However, we find the amount of ₱50,000.00 more appropriate in line with the policy enunciated in Article 2208 of the Civil Code that the award of attorney’s fees must always be reasonable."
+      }
+    },
+    {
+      "id": "q-0643",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Under Estores v. Spouses Supangan, what provision allows a court to impose interest on damages for breach of contract even if the contract is silent on interest?",
+      "choices": {
+        "A": "Article 1956 of the Civil Code.",
+        "B": "Article 2213 of the Civil Code.",
+        "C": "Article 2208 of the Civil Code.",
+        "D": "Article 2210 of the Civil Code."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The Court said: \"Article 2210 of the Civil Code expressly provides that '[i]nterest may, in the discretion of the court, be allowed upon damages awarded for breach of contract.'\" **A is wrong:** Article 1956 requires a written stipulation for conventional interest, not for interest as damages. **B is wrong:** Article 2213 bars interest on unliquidated claims until reasonably certain. **C is wrong:** Article 2208 governs attorney's fees. **Bar trap:** \"no interest without a written stipulation\" refers to conventional interest only.",
+      "caseIds": [
+        "case-0056"
+      ],
+      "source": {
+        "caseTitle": "Estores v. Spouses Supangan",
+        "grNumber": "G.R. No. 175139",
+        "url": "https://lawphil.net/judjuris/juri2012/apr2012/gr_175139_2012.html",
+        "part": "Our Ruling, interest without stipulation",
+        "excerpt": "Article 2210 of the Civil Code expressly provides that \"[i]nterest may, in the discretion of the court, be allowed upon damages awarded for breach of contract.\""
+      }
+    },
+    {
+      "id": "q-0644",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "In Estores v. Spouses Supangan, \"forbearance of money, goods or credits\" was held to refer to",
+      "choices": {
+        "A": "arrangements other than loan agreements, where a person acquiesces to the temporary use of his money, goods or credits pending the happening of certain events or the fulfillment of certain conditions.",
+        "B": "loan agreements only, where the debtor is given a period to pay.",
+        "C": "any obligation to pay damages arising from a quasi-delict.",
+        "D": "the creditor's waiver of interest."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court held that the phrase \"is meant to have a separate meaning from a loan\" and \"should therefore refer to arrangements other than loan agreements, where a person acquiesces to the temporary use of his money, goods or credits pending happening of certain events or fulfillment of certain conditions.\" **B is wrong:** that reading would make the phrase the same as a loan, which the Court rejected. **C is wrong:** torts cases involve no forbearance. **D is wrong:** not the meaning given. **Bar trap:** a conditional sale can involve a forbearance.",
+      "caseIds": [
+        "case-0056"
+      ],
+      "source": {
+        "caseTitle": "Estores v. Spouses Supangan",
+        "grNumber": "G.R. No. 175139",
+        "url": "https://lawphil.net/judjuris/juri2012/apr2012/gr_175139_2012.html",
+        "part": "Our Ruling, the meaning of forbearance",
+        "excerpt": "Forbearance of money, goods or credits should therefore refer to arrangements other than loan agreements, where a person acquiesces to the temporary use of his money, goods or credits pending happening of certain events or fulfillment of certain conditions."
+      }
+    },
+    {
+      "id": "q-0645",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "According to Estores v. Spouses Supangan, a seller's unwarranted withholding of money that rightfully belongs to the buyer amounts to",
+      "choices": {
+        "A": "a donation.",
+        "B": "a forbearance of money, which can be considered an involuntary loan.",
+        "C": "a quasi-delict.",
+        "D": "a deposit."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court said: \"Petitioner's unwarranted withholding of the money which rightfully pertains to respondent-spouses amounts to forbearance of money which can be considered as an involuntary loan,\" so the loan rate applies. **A, C and D are wrong:** none is the characterization given. **Bar trap:** this is why the higher forbearance rate applied, though the contract was a sale.",
+      "caseIds": [
+        "case-0056"
+      ],
+      "source": {
+        "caseTitle": "Estores v. Spouses Supangan",
+        "grNumber": "G.R. No. 175139",
+        "url": "https://lawphil.net/judjuris/juri2012/apr2012/gr_175139_2012.html",
+        "part": "Our Ruling, involuntary loan",
+        "excerpt": "Petitioner’s unwarranted withholding of the money which rightfully pertains to respondent-spouses amounts to forbearance of money which can be considered as an involuntary loan."
+      }
+    },
+    {
+      "id": "q-0646",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "In Estores v. Spouses Supangan, from when was the seller considered in default for purposes of interest?",
+      "choices": {
+        "A": "From the signing of the Conditional Deed of Sale in 1993.",
+        "B": "From the filing of the complaint.",
+        "C": "From the date of the buyers' demand, September 27, 2000.",
+        "D": "From the finality of the judgment."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court said the seller \"is already in default of her obligation from the date of demand, i.e., on September 27, 2000,\" and that the interest \"should be reckoned from said date of demand until the principal amount and the interest thereon is fully satisfied.\" **A is wrong:** the trial court's reckoning from 1993 was corrected by the Court of Appeals. **B and D are wrong:** the earlier demand was established at trial. **Bar trap:** default generally begins with demand (Art. 1169), not with the contract.",
+      "caseIds": [
+        "case-0056"
+      ],
+      "source": {
+        "caseTitle": "Estores v. Spouses Supangan",
+        "grNumber": "G.R. No. 175139",
+        "url": "https://lawphil.net/judjuris/juri2012/apr2012/gr_175139_2012.html",
+        "part": "Our Ruling, when default began",
+        "excerpt": "Thus, she is already in default of her obligation from the date of demand, i.e., on September 27, 2000."
+      }
+    },
+    {
+      "id": "q-0647",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "What was the final award in Estores v. Spouses Supangan?",
+      "choices": {
+        "A": "6% interest from the demand, and ₱100,000 attorney's fees.",
+        "B": "12% interest from the demand until fully satisfied, and attorney's fees reduced to ₱50,000.",
+        "C": "6% interest compounded annually from 1993, and ₱50,000 plus 20% as attorney's fees.",
+        "D": "The principal only, without interest or attorney's fees."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court affirmed the Court of Appeals \"with MODIFICATIONS that the rate of interest shall be twelve percent (12%) per annum, computed from September 27, 2000 until fully satisfied. The award of attorney's fees is further reduced to ₱50,000.00.\" **A is the Court of Appeals' award, which was modified. C is the trial court's award. D is wrong:** both interest and attorney's fees were due. **Bar trap:** the Supreme Court raised the interest even though the seller was the one who appealed.",
+      "caseIds": [
+        "case-0056"
+      ],
+      "source": {
+        "caseTitle": "Estores v. Spouses Supangan",
+        "grNumber": "G.R. No. 175139",
+        "url": "https://lawphil.net/judjuris/juri2012/apr2012/gr_175139_2012.html",
+        "part": "Our Ruling, the disposition",
+        "excerpt": "WHEREFORE, the Petition for Review is DENIED. The May 12, 2006 Decision of the Court of Appeals in CA-G.R. CV No. 83123 is AFFIRMED with MODIFICATIONS that the rate of interest shall be twelve percent (12%) per annum, computed from September 27, 2000 until fully satisfied. The award of attorney’s fees is further reduced to ₱50,000.00."
       }
     }
   ]
