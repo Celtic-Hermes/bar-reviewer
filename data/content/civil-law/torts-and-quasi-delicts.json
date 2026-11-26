@@ -181,6 +181,21 @@
       "ruling": "The Court affirmed the Court of Appeals with modifications. Whether gauze was left is a question of fact, which cannot be raised in a petition for review on certiorari, and none of the exceptions applied. Josephine had no other surgery, and it was most unlikely that she or any woman would put a roll of gauze in her own cervix. Following Professional Services, Inc. v. Agana, leaving sponges or other foreign substances in the wound after the incision is closed is at least prima facie negligence by the operating surgeon, and even negligence per se. A surgical operation is the responsibility of the surgeon performing it, who must personally ascertain that the counts of instruments and materials before the surgery and before closing have been correctly done. The Court added ₱50,000 exemplary damages (Article 2229, also for gross negligence), ₱50,000 civil indemnity for death (Article 2206), and increased attorney's fees to ₱50,000 (Article 2208).",
       "keyDoctrine": "Leaving a sponge or gauze in the patient after closing the incision is at least prima facie negligence of the operating surgeon. The surgeon, who is responsible for the operation, must personally ascertain that the counts of instruments and materials have been correctly done; a hospital sponge count does not shift that responsibility. Exemplary damages may be awarded for gross negligence, by way of example for the public good, and civil indemnity is due for death caused by a quasi-delict.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2012/mar2012/gr_197987_2012.html"
+    },
+    {
+      "id": "case-0042",
+      "status": "draft",
+      "name": "Que v. Philippine Heart Center, et al.",
+      "grNumber": "G.R. No. 268308",
+      "year": 2025,
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "facts": "Quintin Que had an aneurysm of the aortic arch. Dr. Avenilo P. Aventura, head of surgery at the Philippine Heart Center (PHC), first performed a triple coronary bypass on him, then presented two options for the aneurysm: reopening the chest for an aneurysmectomy, or a less invasive endovascular stenting. Quintin chose stenting and signed two consent forms. Dr. Aventura said he would not perform it himself; a Belgian specialist, Dr. Eric Verhoeven, did, using a custom-built stent. After three failed attempts to deploy it in the curve of the aorta, the operation was stopped, and Quintin suffered a stroke and died 13 days later. His son Elpidio sued the PHC, Dr. Aventura, the stent's Philippine distributor and others, claiming the family had been told the procedure was \"virtually risk-free\" and was never told it could cause death, and that the stent was faulty. The autopsy found brain infarcts from emboli probably triggered by the catheterization, and classified the death as natural. The trial court and the Court of Appeals dismissed the complaint.",
+      "issue": "Are the respondents liable for medical negligence or for lack of informed consent in the death of Quintin Que?",
+      "ruling": "The Court denied the petition. The authenticity of the consent forms and the faultiness of the stent are questions of fact, beyond review under Rule 45. In any case, restating Li v. Soliman, the Court found adequate disclosure: Dr. Aventura informed the family of the material risks of stenting, including death, and that another physician, a stenting specialist, would perform it. The consent forms bore Quintin's signature, which was not shown to be forged, and he was not shown incapable of intelligent consent, so the lack of witnesses' signatures was irrelevant. Experts in cardiovascular and endovascular surgery testified that stenting was the sound advice and that the stroke was an inherent risk of the procedure that would have occurred even if the stent had been deployed; the plaintiff's forensic pathologist was not qualified to testify on the standard of care. Negligence was not the proximate cause of death, res ipsa loquitur did not apply, the PHC's charter allowed it to invite foreign specialists, and the claim of a faulty stent was a bare allegation.",
+      "keyDoctrine": "In a lack-of-informed-consent case the plaintiff must prove a duty to disclose material risks, failure to disclose, consent that would otherwise not have been given, and injury from the treatment. A signed consent form is valid absent proof of forgery or incapacity, even without witnesses' signatures. The expert who testifies on the standard of care must be a similarly trained and experienced physician. Death from an inherent risk of a procedure, not from negligence, is not compensable; res ipsa loquitur does not apply to it. When a physician's qualifications are admitted, he is presumed to take the necessary precautions.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2025/apr2025/gr_268308_2025.html"
     }
   ],
   "questions": [
@@ -2939,6 +2954,237 @@
         "url": "https://lawphil.net/judjuris/juri2012/mar2012/gr_197987_2012.html",
         "part": "Decision, the inference that the gauze came from the surgery",
         "excerpt": "As the RTC pointed out, Josephine did not undergo any other surgical operation. And it would be much unlikely for her or for any woman to inject a roll of gauze into her cervix."
+      }
+    },
+    {
+      "id": "q-0528",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "Mario, who had an aortic aneurysm, chose a less invasive stenting procedure over open surgery after his doctor explained both options, told him the stenting carried risks including death, and told him that a visiting foreign specialist, not he, would perform it. Mario signed two consent forms, which no witness signed. During the procedure he suffered a stroke and died. His son sues the doctor, claiming the family was told the procedure was \"virtually risk-free\" and that the consent forms are invalid for lack of witnesses. Experts testify that stroke is an inherent risk of stenting. Is the doctor liable for lack of informed consent? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. The doctor disclosed the material risks of the procedure, including death, and the consent forms are valid; the missing witnesses' signatures are irrelevant absent proof of forgery or incapacity.",
+        "legalBasis": "In Que v. Philippine Heart Center (2025), the Court, restating Li v. Soliman, held that in a lack of informed consent case the plaintiff must prove: (1) the physician had a duty to disclose material risks; (2) he failed to disclose or inadequately disclosed them; (3) as a direct and proximate result, the patient consented to treatment he otherwise would not have consented to; and (4) the patient was injured by the treatment. It found that the doctor informed the family of the material risks of stenting, including death, and that another physician specializing in stenting would operate. Absent proof that the patient's signature was forged or that he was incapable of giving intelligent consent, the consent forms were valid, and the lack of witnesses' signatures was irrelevant.",
+        "application": "The doctor explained the alternatives and their risks and disclosed his own limits. Mario's signatures on the forms are not shown to be forged, nor is he shown to have been incapable of consenting. The stroke was an inherent risk that was disclosed and that, per the experts, could not be totally prevented. The parties' own stipulation that stenting has \"much less risk\" does not mean \"risk-free.\"",
+        "conclusion": "The doctor is not liable. **Bar trap:** a consent form is not void merely because no witness signed it; attack it with proof of forgery or incapacity. And \"less risk\" is not \"risk-free.\""
+      },
+      "keyPoints": [
+        "Four elements of a lack-of-informed-consent case (restated from Li v. Soliman)",
+        "The doctor disclosed the risks, including death, and that a specialist would operate",
+        "Signed consent forms are valid absent proof of forgery or incapacity; no witness signatures needed",
+        "The stroke was an inherent, disclosed risk of the procedure",
+        "\"Less risk\" is not equivalent to \"risk-free\""
+      ],
+      "caseIds": [
+        "case-0042"
+      ],
+      "source": {
+        "caseTitle": "Que v. Philippine Heart Center, et al.",
+        "grNumber": "G.R. No. 268308",
+        "url": "https://lawphil.net/judjuris/juri2025/apr2025/gr_268308_2025.html",
+        "part": "Ruling, Respondents are not liable for medical negligence (informed consent)",
+        "excerpt": "In a lack of informed consent litigation, the plaintiff must prove the following: (1) the physician had a duty to disclose material risks; (2) the physician failed to disclose or inadequately disclosed those risks; (3) as a direct and proximate result of the failure to disclose, the patient consented to the treatment they otherwise would not have consented to; and (4) the patient was injured by the proposed treatment. … The facts would show that Dr. Aventura informed the Que family, most especially Quintin, of the material risks inherent in the stenting procedure, and that includes death. Dr. Aventura also informed the family that if they decide to continue the operation, another physician will operate on Quintin because he does not specialize in stenting procedures. … To be sure, Quintin signed the Consent for Endovascular Stenting and the Consent to Operation, Administration of Anesthesia, and the Rendering of Other Medical Services. His signature appeared in these documents. On the other hand, Elpidio did not categorically dispute the veracity of Quintin's signature. Absent proof that Quintin's signature was forged or Quintin was incapable of giving intelligent consent when he signed the two documents, we upheld the validity of the consent forms. Accordingly, the lack of signatures of witnesses is irrelevant."
+      }
+    },
+    {
+      "id": "q-0529",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "In a suit for the death of a patient after a cardiovascular procedure, the plaintiff's only expert is a forensic pathologist who did the autopsy. The defendant surgeon, whose decades of training and experience in cardiothoracic and vascular surgery are not disputed, presents two cardiovascular surgeons who testify that his advice and treatment were sound. Who should prevail on the issue of negligence? Explain, following Que v. Philippine Heart Center.",
+      "suggestedAnswer": {
+        "answer": "The surgeon. The forensic pathologist is not qualified to testify on the standard of care of a cardiovascular surgeon; the surgeon's admitted qualifications raise a presumption that he took the necessary precautions; and the qualified experts support him, so the preponderance of evidence is in his favor.",
+        "legalBasis": "In Que v. Philippine Heart Center, the Court held that the expert witness must be a similarly trained and experienced physician; a forensic pathologist cannot qualify as an expert to determine whether the surgeon exercised the norm observed by other reasonably competent members of the profession. It cited Ramos v. Court of Appeals (a pulmonologist not qualified on the standard of care of an anesthesiologist) and Reyes v. Sisters of Mercy Hospital (an autopsy expert not qualified as a specialist in infectious diseases). It also affirmed the trial court's statement that when the qualifications of a physician are admitted, there is a presumption that in proper cases he takes the necessary precaution and employs the best of his knowledge and skill.",
+        "application": "The pathologist can speak to the cause of death, but not to what a reasonably competent cardiovascular surgeon would have done. The defense experts, from the same field, testified that the treatment was sound and the complication an inherent risk. With the plaintiff presenting no qualified expert to refute them, and the surgeon's qualifications admitted, the plaintiff cannot prove a breach of the standard of care.",
+        "conclusion": "The surgeon prevails; the preponderance of evidence tilts in his favor. **Bar trap:** the person who performed the autopsy is not automatically the right expert on whether the treating doctor met the standard of care."
+      },
+      "keyPoints": [
+        "The expert on the standard of care must be a similarly trained and experienced physician",
+        "A forensic pathologist is not qualified to testify on a surgeon's standard of care",
+        "Consistent with Ramos (pulmonologist) and Reyes (autopsy expert)",
+        "Admitted qualifications raise a presumption that the physician took the necessary precautions",
+        "Unrefuted qualified experts tilt the preponderance of evidence"
+      ],
+      "caseIds": [
+        "case-0042"
+      ],
+      "source": {
+        "caseTitle": "Que v. Philippine Heart Center, et al.",
+        "grNumber": "G.R. No. 268308",
+        "url": "https://lawphil.net/judjuris/juri2025/apr2025/gr_268308_2025.html",
+        "part": "Ruling, expert witnesses and the presumption from qualifications",
+        "excerpt": "Jurisprudence provides that when the qualifications of a physician are admitted, there is a presumption that in proper cases, he takes the necessary precaution and employs the best of his knowledge and skill in attending to his clients. … On the other hand, Elpidio failed to present expert witness to refute Dr. Tuazon's and Dr. Figueroa's statements. As a forensic pathologist, Dr. Fortun cannot qualify as an expert witness in so far as to determine whether Dr. Aventura exercised the norm observed by other reasonably competent members of the profession. The expert witness must be a similarly trained and experienced physician. Thus, we declared in Ramos v. Court of Appeals that a pulmonologist is not qualified to testify as to the standard of care required of an anesthesiologist. In Reyes v. Sisters of Mercy Hospital, we ruled that an autopsy expert is not qualified to testify as a specialist in infectious diseases. Therefore, the preponderance of evidence tilts in favor of respondents."
+      }
+    },
+    {
+      "id": "q-0530",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "Distinguish a question of law from a question of fact. In a petition for review on certiorari, the son of a patient who died after a procedure asks the Supreme Court to examine anew whether his father's signatures on the consent forms are genuine and whether the device used was faulty. Are these proper issues? Explain.",
+      "suggestedAnswer": {
+        "answer": "A question of law arises when there is doubt as to the applicable law on a certain set of facts and does not call for an examination of the probative value of the evidence; a question of fact arises when there is controversy as to the truth or falsity of the alleged facts. The genuineness of the signatures and the faultiness of the device are questions of fact, beyond review under Rule 45.",
+        "legalBasis": "In Que v. Philippine Heart Center, the Court reiterated that a Rule 45 petition shall raise only questions of law, since the Court is not a trier of facts. The test is not the label the party gives the question, but whether the appellate court can resolve the issue without examining or evaluating the evidence; if the facts are disputed or the issues require an examination of the evidence, the question is one of fact.",
+        "application": "Deciding whether the father's signatures are genuine, or whether the device was faulty, requires weighing the evidence again (the forms, the testimonies, the expert opinions). These are factual matters already passed upon by the lower courts, so the petition could be dismissed on this basis alone. The Court nonetheless found no reason to disturb the lower courts' findings.",
+        "conclusion": "They are questions of fact, not proper in a Rule 45 petition. **Bar trap:** calling an issue a \"question of law\" does not make it one; the test is whether it can be resolved without evaluating the evidence."
+      },
+      "keyPoints": [
+        "A Rule 45 petition raises only questions of law; the Court is not a trier of facts",
+        "Question of law: doubt as to the applicable law on given facts, without examining the probative value of evidence",
+        "Question of fact: controversy as to the truth or falsity of the alleged facts",
+        "The test is whether the issue can be resolved without examining or evaluating the evidence, not the label",
+        "Genuineness of signatures and faultiness of a device are questions of fact"
+      ],
+      "caseIds": [
+        "case-0042"
+      ],
+      "source": {
+        "caseTitle": "Que v. Philippine Heart Center, et al.",
+        "grNumber": "G.R. No. 268308",
+        "url": "https://lawphil.net/judjuris/juri2025/apr2025/gr_268308_2025.html",
+        "part": "Ruling, questions of law and of fact under Rule 45",
+        "excerpt": "Prefatorily, we reiterate that a petition for review on certiorari under Rule 45 of the Rules of Court shall only raise questions of law. We are not a trier of facts. It is not our function to analyze and weigh the evidence that the lower courts have already passed upon. A question of law arises when there is doubt as to the applicable law and jurisprudence on a certain set of facts. It must not call for an examination of the probative value of the evidence. On the other hand, a question of fact exists when there is controversy as to the truth or falsity of the alleged facts. … The test, therefore, is not the appellation given to a question by the party raising it, but whether the appellate court can resolve the issue without examining or evaluating the evidence, in which case, it is a question of law; otherwise, it is a question of fact. … Elpidio implores the Court to evaluate anew the consent forms signed by his father authorizing the conduct of the stenting procedure as well as the \"faultiness\" of the stent used during the operation. These are factual matters beyond the Court's power of review under Rule 45. On this basis alone, the Petition should be dismissed."
+      }
+    },
+    {
+      "id": "q-0531",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "In Que v. Philippine Heart Center, the parties stipulated at pre-trial that stenting, as a \"new non-invasive approach,\" entails \"much less risk\" than open surgery. The patient's son argued the family understood the procedure to be safe. How was the stipulation read?",
+      "choices": {
+        "A": "As an admission by the doctor that the procedure carried no risk at all.",
+        "B": "As a waiver by the family of any claim for damages.",
+        "C": "As showing only that stenting carries less risk, which is not equivalent to being risk-free.",
+        "D": "As proof that the doctor guaranteed the success of the procedure."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court of Appeals, whose ruling the Supreme Court affirmed, noted that one of the stipulated facts was that stenting has been used abroad and entails \"much less risk,\" but \"less risk\" is not equivalent to being \"risk-free.\" The Supreme Court found that the doctor informed the family of the material risks of stenting, including death. **A and D are wrong:** less risk is neither no risk nor a guarantee. **B is wrong:** the stipulation was not a waiver; the claim failed on the merits. **Bar trap:** a comparison of risks is not a promise of safety.",
+      "caseIds": [
+        "case-0042"
+      ],
+      "source": {
+        "caseTitle": "Que v. Philippine Heart Center, et al.",
+        "grNumber": "G.R. No. 268308",
+        "url": "https://lawphil.net/judjuris/juri2025/apr2025/gr_268308_2025.html",
+        "part": "CA Ruling and Ruling (\"less risk\" and the stipulation of facts)",
+        "excerpt": "The CA held that there was adequate disclosure of material risks inherent in the stenting procedure. Quintin consented to the procedure, as shown in his signed consent forms. Further, the CA noted that one of the facts stipulated by the parties during the pre-trial conference was that the stenting as the \"new non-invasive approach\" has been used in the United States and Europe and entails \"much less risk.\" However, \"less risk\" is not equivalent to being \"risk-free.\""
+      }
+    },
+    {
+      "id": "q-0532",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "A patient suffers a stroke during a stenting procedure, when cholesterol clots dislodged by the catheter travel to the brain; experts testify this is an inherent risk of the procedure. Following Que v. Philippine Heart Center, does res ipsa loquitur apply?",
+      "choices": {
+        "A": "No, because the death was due to one of the inherent risks of the procedure, not to the doctor's negligence.",
+        "B": "Yes, because the patient was unconscious and under the doctors' exclusive control.",
+        "C": "Yes, because a stroke during a procedure always speaks of negligence.",
+        "D": "No, because res ipsa loquitur applies only to hospitals, not to doctors."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court listed the elements of res ipsa loquitur (an accident that does not ordinarily occur unless someone is negligent; exclusive control by the person charged; no voluntary action or contribution of the injured person) and held it inapplicable because \"[t]he cause of Quintin's death was not due to the negligence of Dr. Aventura but was due to one of the inherent risks of the stenting procedure.\" **B is wrong:** exclusive control is not enough when the first element (an occurrence that does not ordinarily happen without negligence) is missing. **C is wrong:** an inherent risk can materialize even with proper care. **D is wrong:** the doctrine is not so limited. **Bar trap:** a known, inherent risk is the opposite of an occurrence that \"speaks for itself\" of negligence.",
+      "caseIds": [
+        "case-0042"
+      ],
+      "source": {
+        "caseTitle": "Que v. Philippine Heart Center, et al.",
+        "grNumber": "G.R. No. 268308",
+        "url": "https://lawphil.net/judjuris/juri2025/apr2025/gr_268308_2025.html",
+        "part": "Ruling, res ipsa loquitur",
+        "excerpt": "Moreover, the doctrine of res ipsa loquitor, translated as \"the thing speaks for itself,\" does not apply in this case. The doctrine requires the concurrence of the following elements: (1) the accident was of a kind that does not ordinarily occur unless someone is negligent; (2) the instrumentality or agency which caused the injury was under the exclusive control of the person charged with negligence; and (3) the injury suffered must not have been due to any voluntary action or contribution from the injured person. The cause of Quintin's death was not due to the negligence of Dr. Aventura but was due to one of the inherent risks of the stenting procedure."
+      }
+    },
+    {
+      "id": "q-0533",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "Why did the Court in Que v. Philippine Heart Center hold that negligence was not the proximate cause of the patient's death?",
+      "choices": {
+        "A": "Because the patient's son failed to pay the hospital bill.",
+        "B": "Because a foreign doctor performed the procedure, which breaks the chain of causation.",
+        "C": "Because the autopsy was done by a private pathologist.",
+        "D": "Because, according to the experts, the stroke was an inherent risk of stenting and would have occurred even if the stent had been successfully deployed."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** After defining proximate cause as that which, in a natural and continuous sequence, unbroken by any efficient intervening cause, produces injury, the Court relied on the experts: the stroke \"was one of the inherent risks involved in a stenting procedure,\" and \"Quintin would have had a stroke regardless of whether the device was successfully deployed on him or not.\" **A and C are wrong:** neither was a basis of the ruling. **B is wrong:** the Court upheld the foreign specialist's authority to operate under the PHC's charter; his participation did not, by itself, break causation. **Bar trap:** if the same harm would have occurred even with a successful procedure, the alleged failure is not the proximate cause.",
+      "caseIds": [
+        "case-0042"
+      ],
+      "source": {
+        "caseTitle": "Que v. Philippine Heart Center, et al.",
+        "grNumber": "G.R. No. 268308",
+        "url": "https://lawphil.net/judjuris/juri2025/apr2025/gr_268308_2025.html",
+        "part": "Ruling, proximate cause",
+        "excerpt": "Negligence was not the proximate cause of Quintin's death. Proximate cause is that which, in a natural and continuous sequence, unbroken by any efficient intervening cause, produces injury, without which the result would not have occurred. … The expert witnesses, Dr. Tuazon and Dr. Figueroa, testified that the stroke experienced by Quintin, which led to his death, was one of the inherent risks involved in a stenting procedure. To be sure, Quintin would have had a stroke regardless of whether the device was successfully deployed on him or not."
+      }
+    },
+    {
+      "id": "q-0534",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "The patient's son in Que v. Philippine Heart Center pointed out that the foreign specialist who performed the procedure was not admitted to practice medicine in the Philippines. What allowed the Philippine Heart Center to have him operate?",
+      "choices": {
+        "A": "The patient's signed consent alone, which cures any lack of license.",
+        "B": "Section 5 of Presidential Decree No. 673 (the PHC's charter), which allows it to invite foreign heart specialists and similar experts to train its personnel, trainees or residents, and a certification listing him as one of the experts who operated there.",
+        "C": "The general rule that any foreign doctor may practice in a government hospital.",
+        "D": "The distributor's contract with the manufacturer of the stent."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court noted that under Section 5 of Presidential Decree No. 673, the PHC may \"invite foreign heart specialists and similar experts in the various medical fields to train the personnel or trainees or residents of the [PHC],\" and that a former PHC director certified that the specialist was one of the experts who operated in the PHC. **A is wrong:** the ruling on his authority rested on the charter, not on consent. **C is wrong:** the Court relied on the PHC's specific charter provision, not on any general rule. **D is wrong:** the distribution contract had nothing to do with the authority to operate. **Bar trap:** look for the specific legal authority for a foreign specialist's participation.",
+      "caseIds": [
+        "case-0042"
+      ],
+      "source": {
+        "caseTitle": "Que v. Philippine Heart Center, et al.",
+        "grNumber": "G.R. No. 268308",
+        "url": "https://lawphil.net/judjuris/juri2025/apr2025/gr_268308_2025.html",
+        "part": "Ruling, the foreign specialist's authority to operate",
+        "excerpt": "As to Dr. Verhoeven' s authority to operate on Quintin, Section 5 of Presidential Decree No. 673, the PHC allows the hospital to \"invite foreign heart specialists and similar experts in the various medical fields to train the personnel or trainees or residents of the [PHC].\" Dr. Ludgerio D. Torres, former director of the PHC, issued a Certification dated January 25, 2013, listing Dr. Verhoeven as one of the experts in his field to have operated in the PHC."
+      }
+    },
+    {
+      "id": "q-0535",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "The patient's son in Que v. Philippine Heart Center claimed that a faulty stent hastened his father's death, relying on the foreign specialist's remark after the procedure that the device was \"faulty\" and on his and his sister's testimony. How did the Court rule?",
+      "choices": {
+        "A": "It held the distributor liable, because any device that fails during surgery is presumed defective.",
+        "B": "It remanded the case to determine the defect.",
+        "C": "It rejected the claim: bare allegations are not proof, and the records did not show how the stent was faulty.",
+        "D": "It held the hospital liable as the user of the device."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court said it \"cannot subscribe to Elpidio's claim that the 'faulty' stent hastened the death of his father. Bare allegations are not proof,\" noting that apart from the testimonies of the son and his sister, the records did not show how the stent was faulty. The experts also testified that the stroke would have occurred even if the stent had been deployed. **A is wrong:** no such presumption was applied; the claimant must prove the defect. **B is wrong:** no remand was ordered. **D is wrong:** the hospital was not held liable. **Bar trap:** a remark that a device was \"faulty,\" without more, does not prove a defect.",
+      "caseIds": [
+        "case-0042"
+      ],
+      "source": {
+        "caseTitle": "Que v. Philippine Heart Center, et al.",
+        "grNumber": "G.R. No. 268308",
+        "url": "https://lawphil.net/judjuris/juri2025/apr2025/gr_268308_2025.html",
+        "part": "Ruling, the claim of a faulty stent",
+        "excerpt": "Finally, we cannot subscribe to Elpidio's claim that the \"faulty\" stent hastened the death of his father. Bare allegations are not proof. The trial court noted that other than the testimonies of Elpidio and his sister, Elisa Que, the records do not show how faulty the stent used on Quintin was."
       }
     }
   ]

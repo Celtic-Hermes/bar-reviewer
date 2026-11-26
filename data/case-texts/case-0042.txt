@@ -1,0 +1,317 @@
+SECOND DIVISION
+
+G.R. No. 268308, April 02, 2025
+
+ELPIDIO QUE, PETITIONER, vs. PHILIPPINE HEART CENTER, DR. AVELINO P. AVENTURA, AND FIRST ASSOCIATED MEDICAL DISTRIBUTION CO., INC., RESPONDENTS.
+
+D E C I S I O N
+
+LOPEZ, M., J.:
+
+This Petition[1] questions the Decision[2] dated July 3, 2023 of the Court of Appeals (CA) in CA-G.R. CV No. 115245 that denied Elpidio Que's (Elpidio) appeal of the Decision[3] dated January 30, 2020 of Branch 20, Regional Trial Court, Vigan City, Ilocos Sur (RTC). The CA and the RTC dismissed Elpidio's Complaint for Damages[4] filed against the Philippine Heart Center (PHC), Dr. Avenilo P. Aventura (Dr. Aventura), First Associated Medical Distribution Co., Inc. (FAMED; collectively, respondents), Medtronic International Ltd., and Medtronic Philippines, Inc. jointly, Medtronic), and Dr. Eric Verhoeven (Dr. Verhoeven), for the death of his father, Quintin Que (Quintin).
+
+ANTECEDENTS
+
+The Complaint alleged that sometime in May 1999, Quintin was brought to Dr. Aventura, Head of the Department of Surgery at the PHC, for medical consultation, due to an aneurysm in the aortic arch, which affected Quintin's vocal cords. Dr. Aventura then advised Quintin to undergo a spinal CT scan at the Makati Medical Center. The CT scan confirmed the aneurysm, which would require Quintin to undergo an open-method surgery since the aneurysm could burst and be fatal. Dr. Aventura also advised Quintin to undergo an angiogram and aortogram at the PHC.[5]
+
+In June 1999, Quintin underwent an angiogram and aortogram. Further, Dr. Aventura performed a three-vessel coronary aorta bypass surgery on Quintin. He told the Que family that an open-method surgery would be performed on him after a month, depending on his condition. After that, Quintin was discharged from the hospital and had regular check-ups with Dr. Aventura, who continuously updated the Que family about Quintin's progress and the need for open-method surgery. However, sometime in October 1999, Dr. Aventura recommended a new non-invasive treatment for an aneurysm, a "state-of-the-art" procedure that uses a custom-built gadget called a stent and is an alternative to open-method surgery. The Que family had reservations about the procedure, but Dr. Aventura assured them that the operation would be less risky than the traditional open-method surgery since there was less risk of bleeding or rupture of the aneurysm itself and a smaller chance of paralysis.[6] Eventually, the Que family decided to push through since Dr. Aventura told them that Quintin's aneurysm was fatal and the stenting procedure was "virtually risk-free."[7]
+
+Afterward, Quintin was admitted to the PHC on February 12, 2000. On the scheduled operation on February 14, 2000, Dr. Aventura introduced Dr. Verhoeven to the Que family as the Belgian doctor specializing in stenting procedures. With him was Daphne Sim, who was introduced as a product specialist of Medtronic International Limited of Singapore—the distributor in Asia of World Medical Mfg. Corporation of Florida, United States of America, the manufacturer of the Talent brand of stent graft system to be used on Quintin. Three representatives from FAMED were also present. FAMED was introduced as the Philippine distributor of Talent. Dr. Verhoeven also showed the Que family a long catheter and three stents labeled "Quintin Que" and "Custom Built." He announced the system product as state-of-the-art, and it would be the first time it would be used in Asia. He also demonstrated to the Que family how the stents would be deployed into Quintin's body, remarking that it would be his first time to deploy a stent into a curve like the aortic arch.[8]
+
+At noon, Dr. Verhoeven came out of the operating room "looking sad and tired." When the Que family inquired about the result of Quintin's procedure, he responded that he could not complete the operation because he could not go through the bend/curve where the stent should have been deployed. After all, the device on hand was "faulty."[9]
+
+Quintin never woke up and suffered a stroke after the incomplete stenting procedure. From February 15, 2000 until Quintin's death on February 27, 2000, the Que family constantly communicated with Dr. Aventura, but the latter "turned his back" on them.[10] Suspecting that human error caused the death of Quintin, the family had Quintin's body autopsied by Dr. Raquel B. Del Rosario-Fortun (Dr. Fortun), who issued a Report[11] stating that "Autopsy findings show multiple hemorrhagic infarcts of the brain due to thrombotic/atheromatous emboli probably arising from the aortic aneurysm and triggered by the catheterization. Based on available information on the circumstances surrounding death and the autopsy findings, death is due to complications of hypertensive atherosclerotic cardiovascular disease and the manner of death is therefore classified as natural."[12] The Que family also discovered that Dr. Verhoeven was not qualified or admitted to practice medicine in the Philippines.[13]
+
+Thus, on March 18, 2002, Elpidio filed a Complaint for Damages[14] against the PHC, FAMED, Medtronic, Dr. Aventura, and Dr. Verhoeven (collectively, defendants).[15]
+
+In his Answer,[16] Dr. Aventura claimed that Quintin went to consult with him sometime in May 1999. After several tests, he advised Quintin to address the coronary problem first by undergoing a bypass and then addressing the aneurysm in a later procedure. After the successful bypass operation in June 1999, he advised Quintin on July 19, 1999 to return for a follow-up check-up after a month for his aneurysm. However, Quintin returned after three months, on October 27, 1999. By then, Dr. Aventura observed that Quintin's voice's hoarseness worsened, indicating that the aneurysm had grown. He then reiterated that the aneurysm put Quintin's life at risk. He gave the following options to the Que family, which, like any other medical procedure, have no guarantee of success: one, aneurysmectomy and replacement—a rigorous operation that would require Quintin's chest to be reopened, and the adhesions placed from the triple bypass operation to be removed; or two, endovascular stenting, or the stenting of the aorta, which entails a less invasive procedure where the chest need not be reopened. The second procedure would expose Quintin to the risk of death. Dr. Aventura also emphasized that he would not be the one to do the procedure. Quintin expressed his interest in stenting.[17] After being informed of the risks and introduced to Dr. Verhoeven, Quintin consented to the stenting procedure.[18]
+
+On February 14, 2000, Dr. Verhoeven performed the procedure on Quintin in the presence of Dr. Aventura, Dr. Juvenal Quitiquit, Dr. Ramon Ribu, and other medical staff of the PHC. However, Dr. Verhoeven was unable to deploy the stent in the desired location despite three attempts, as it appeared that Quintin eventually suffered a brain infarction. According to Dr. Aventura, this was possibly caused by manipulating the device to place the stent, which is one of the risks involved in stenting that could have been the result even if the stent had been successfully placed. Dr. Aventura averred that he could not interfere with Dr. Verhoeven as he was not the surgeon operating on Quintin and had no experience in stenting.[19]
+
+RTC RULING
+
+On January 30, 2020, the trial court dismissed the Complaint for lack of merit,[20] to wit:
+
+WHEREFORE, the instant case against all the defendants is DISMISSED for lack of merit.
+
+The counterclaims of all the defendants are likewise DISMISSED.
+
+SO DECIDED.[21] (Emphasis in the original)
+
+The trial court ruled that Dr. Aventura was an ostensible agent of the PHC at the time of Quintin's admission, treatment, and death. Evidence showed that the PHC clothed Dr. Aventura with apparent authority, leading Elpidio to believe that Dr. Aventura was connected to, or an agent of, the PHC. However, the trial court found no medical malpractice or negligence on the part of Dr. Aventura. The Autopsy Report issued by Dr. Fortun stated that Quintin died due to complications of hypertensive atherosclerotic cardiovascular disease, and the manner of his death was classified as natural. Also, Elpidio could not dispute Quintin's signature on the two consent forms, i.e., Consent for Endovascular Stenting and the Consent to Operation, Administration of Anesthesia, and the Rendering of Other Medical Services. The trial court held that given Dr. Aventura's qualifications and years of expertise, there is a presumption that in proper cases, he takes the necessary precautions and employs the best knowledge and skill in attending to his patients.[22]
+
+Further, the trial court ruled that Elpidio failed to show that FAMED participated in the stent used on Quintin. It was merely one of Medtronic's distributors in the Philippines. Even if the stent used on Quintin was faulty, Elpidio failed to prove that FAMED had a hand in manufacturing the stent. As for Medtronic and Dr. Verhoeven, the trial court did not acquire jurisdiction over them since they were not properly served with summons.[23]
+
+The trial court also ruled that defendants were not entitled to damages. The dismissal of the Complaint did not make Elpidio's act unlawful, which would subject him to the payment of moral damages to them. Elpidio filed the Complaint based on his honest belief that the death of his father was due to the negligence of defendants. The trial court also denied defendants' claim for exemplary damages and attorney's fees for lack of basis.[24]
+
+CA RULING
+
+On appeal,[25] the CA affirmed the trial court.[26] It ruled that the answering defendants did not commit medical malpractice or negligence. The expert opinions of Dr. Edgar S. Tuazon (Dr. Tuazon) and Dr. Peter R. Figueroa (Dr. Figueroa), who specialize in cardiovascular surgery—the same field of medicine as Dr. Aventura—revealed that Dr. Aventura gave sound medical advice and treatment to Quintin. They also testified that the stroke experienced by Quintin, which led to his death, was not a result of medical negligence but was one of the risks involved in a stenting procedure, regardless of whether the device was successfully deployed on Quintin or not.[27]
+
+The CA held that there was adequate disclosure of material risks inherent in the stenting procedure. Quintin consented to the procedure, as shown in his signed consent forms. Further, the CA noted that one of the facts stipulated by the parties during the pre-trial conference was that the stenting as the "new non-invasive approach" has been used in the United States and Europe and entails "much less risk." However, "less risk" is not equivalent to being "risk-free."[28]
+
+The CA further ruled that there was no fault or negligence on the part of the answering defendants in allowing Dr. Verhoeven to operate on Quintin. The PHC Charter (Presidential Decree No. 673)[29] allows foreign heart specialists and similar experts in various medical fields to train the personnel, trainees, or residents of the PHC. Dr. Verhoeven was among the licensed foreign doctors allowed by the PHC to operate in the hospital. Moreover, the CA held that the doctrine of res ipsa loquitur does not apply in this case. Quintin's death was one of the inherent risks in the stenting procedure; his death was not due to Dr. Aventura's negligence.[30]
+
+Regarding FAMED's liability, the CA held that Elpidio failed to prove that the stent used on Quintin was defective upon delivery. Dr. Verhoeven's purported statement that the stent was "faulty" is not enough, as there was no other evidence to ascertain the existence of the defect. Besides, the expert witnesses testified that even if the stent had been successfully deployed, Quintin would have had a cerebrovascular accident.[31]
+
+Finally, no damages could be recovered since no fault or negligence can be attributed to the answering defendants for the death of Quintin.[32] The CA held:
+
+WHEREFORE, the appeal is DENIED. The Decision dated 30 January 2020 of the Regional Trial Court of Vigan City, Ilocos Sur, Branch 20 in Civil Case No. 5712-V is hereby AFFIRMED.
+
+IT IS SO ORDERED.[33] (Emphasis in the original)
+
+Aggrieved, Elpidio appealed to this Court,[34] insisting that Dr. Aventura assured them that the stenting procedure was "virtually risk-free." He proffers that the Que family was not informed of the risks inherent to the stenting procedure, so if only they knew that Quintin would die, they would not have agreed to the procedure. In all, the collective negligence of respondents is the proximate cause of Quintin's death. Elpidio further questions the validity and authenticity of consent forms allegedly signed by Quintin, which do not bear the signature of a witness. Regarding FAMED's liability, Elpidio posits that FAMED is responsible for the faulty stent that was distributed without being approved for use by the United States Food and Drug Administration.[35]
+
+In its Comment,[36] the PHC counters that the Petition should be dismissed for raising factual questions outside this Court's jurisdiction under a Rule 45 petition. At any rate, the PHC avers that the CA and the trial court correctly held that there was no medical negligence or liability for damages. Quintin's death was one of the risks involved in a stenting procedure, and not because of the negligence of respondents.[37]
+
+On the other hand,[38] Dr. Aventura echoes the PHC that the instant Petition presents issues of facts that are not proper in a Rule 45 petition for review. Most importantly, the trial and appellate courts properly found him innocent of medical malpractice. Dr. Aventura insists that he acted with due diligence, care, and utmost good faith in treating Quintin.[39]
+
+RULING
+
+The Petition is without merit.
+
+Prefatorily, we reiterate that a petition for review on certiorari under Rule 45 of the Rules of Court shall only raise questions of law. We are not a trier of facts. It is not our function to analyze and weigh the evidence that the lower courts have already passed upon. A question of law arises when there is doubt as to the applicable law and jurisprudence on a certain set of facts. It must not call for an examination of the probative value of the evidence. On the other hand, a question of fact exists when there is controversy as to the truth or falsity of the alleged facts.[40] Thus:
+
+[f]or a question to be one of law, its resolution must not involve an examination of the probative value of the evidence presented by the litigants, but must rely solely on what the law provides on the given set of facts. If the facts are disputed or if the issues require an examination of the evidence, the question posed is one of fact. The test, therefore, is not the appellation given to a question by the party raising it, but whether the appellate court can resolve the issue without examining or evaluating the evidence, in which case, it is a question of law; otherwise, it is a question of fact.[41] (Citations omitted)
+
+Elpidio implores the Court to evaluate anew the consent forms signed by his father authorizing the conduct of the stenting procedure as well as the "faultiness" of the stent used during the operation. These are factual matters beyond the Court's power of review under Rule 45. On this basis alone, the Petition should be dismissed. Nonetheless, even if we disregard this procedural infirmity, we still found no reason to depart from the trial court's ruling, as affirmed by the CA.
+
+Respondents are not liable for medical negligence
+
+Medical malpractice is a particular form of negligence that consists in the failure of a physician or surgeon to apply to his practice of medicine that degree of care and skill which is ordinarily employed by the profession generally, under similar conditions, and in like surrounding circumstances.[42] We declared in Borromeo v. Family Care Hospital, Inc.:[43]
+
+A medical professional has the duty to observe the standard of care and exercise the degree of skill, knowledge, and training ordinarily expected of other similarly trained medical professionals acting under the same circumstances. A breach of the accepted standard of care constitutes negligence or malpractice and renders the defendant liable for the resulting injury to his patient.[44] (Citation omitted)
+
+Therefore, to successfully pursue such a claim, a patient must prove that the physician or surgeon either failed to do something that a reasonably prudent physician or surgeon would have done or that they did something that a reasonably prudent physician or surgeon would not have done and that the failure or action caused injury to the patient.[45] In a lack of informed consent litigation, the plaintiff must prove the following: (1) the physician had a duty to disclose material risks; (2) the physician failed to disclose or inadequately disclosed those risks; (3) as a direct and proximate result of the failure to disclose, the patient consented to the treatment they otherwise would not have consented to; and (4) the patient was injured by the proposed treatment.[46]
+
+The Court explained the doctrine of informed consent in Li v. Spouses Soliman,[47] viz.:
+
+The doctrine of informed consent within the context of physician-patient relationships goes far back into English common law. As early as 1767, doctors were charged with the tort of "battery" (i.e., an unauthorized physical contact with a patient) if they had not gained the consent of their patients prior to performing a surgery or procedure. In the United States, the seminal case was Schoendorff v. Society of New York Hospital which involved unwanted treatment performed by a doctor. Justice Benjamin Cardozo's oft-quoted opinion upheld the basic right of a patient to give consent to any medical procedure or treatment: "Every human being of adult years and sound mind has a right to determine what shall be done with his own body; and a surgeon who performs an operation without his patient's consent, commits an assault, for which he is liable in damages." From a purely ethical norm, informed consent evolved into a general principle of law that a physician has a duty to disclose what a reasonably prudent physician in the medical community in the exercise of reasonable care would disclose to his patient as to whatever grave risks of injury might be incurred from a proposed course of treatment, so that a patient, exercising ordinary care for his own welfare, and faced with a choice of undergoing the proposed treatment, or alternative treatment, or none at all, may intelligently exercise his judgment by reasonably balancing the probable risks against the probable benefits.
+
+Subsequently, in Canterbury v. Spence[,] the court observed that the duty to disclose should not be limited to medical usage as to arrogate the decision on revelation to the physician alone. Thus, respect for the patient's right of self-determination on particular therapy demands a standard set by law for physicians rather than one which physicians may or may not impose upon themselves. The scope of disclosure is premised on the fact that patients ordinarily are persons unlearned in the medical sciences. Proficiency in diagnosis and therapy is not the full measure of a physician's responsibility. It is also his duty to warn of the dangers lurking in the proposed treatment and to impart information which the patient has every right to expect. Indeed, the patient's reliance upon the physician is a trust of the kind which traditionally has exacted obligations beyond those associated with armslength transactions. The physician is not expected to give the patient a short medical education, the disclosure rule only requires of him a reasonable explanation, which means generally informing the patient in nontechnical terms as to what is at stake; the therapy alternatives open to him, the goals expectably to be achieved, and the risks that may ensue from particular treatment or no treatment. As to the issue of demonstrating what risks are considered material necessitating disclosure, it was held that experts are unnecessary to a showing of the materiality of a risk to a patient's decision on treatment, or to the reasonably, expectable effect of risk disclosure on the decision. Such unrevealed risk that should have been made known must further materialize, for otherwise the omission, however unpardonable, is without legal consequence. And, as in malpractice actions generally, there must be a causal relationship between the physician's failure to divulge and damage to the patient.
+
+Reiterating the foregoing considerations, Cobbs v. Grant deemed it as [an] integral part of physician's overall obligation to [the] patient, the duty of reasonable disclosure of available choices with respect to proposed therapy and of dangers inherently and potentially involved in each. However, the physician is not obliged to discuss relatively minor risks inherent in common procedures when it is common knowledge that such risks inherent in procedure of very low incidence. Cited as exceptions to the rule that the patient should not be denied the opportunity to weigh the risks of surgery or treatment are emergency cases where it is evident he cannot evaluate data, and where the patient is a child or incompetent. The court thus concluded that the patient's right of self-decision can only be effectively exercised if the patient possesses adequate information to enable him in making an intelligent choice. The scope of the physician's communications to the patient, then must be measured by the patient's need, and that need is whatever information is material to the decision. The test therefore for determining whether a potential peril must be divulged is its materiality to the patient's decision.
+
+Cobbs v. Grant further reiterated the pronouncement in Canterbury v. Spence that for liability of the physician for failure to inform patient, there must be causal relationship between physician's failure to inform and the injury to patient and such connection arises only if it is established that, had revelation been made, consent to treatment would not have been given.
+
+. . . .
+
+[T]he gravamen in an informed consent case requires the plaintiff to "point to significant undisclosed information relating to the treatment which would have altered her decision to undergo it."[48] (Citations omitted)
+
+It is without doubt that, as Quintin's physician, Dr. Aventura has to use the same level of care that any reasonably competent doctor would use to treat Quintin's condition.[49] However, Quintin died 13 days after the unsuccessful stenting procedure on February 14, 2000. The questions are whether Dr. Aventura's actions caused harm to Quintin and whether these were the proximate cause of Quintin's death. We join and affirm the ruling of the trial and appellate courts.
+
+The facts would show that Dr. Aventura informed the Que family, most especially Quintin, of the material risks inherent in the stenting procedure, and that includes death. Dr. Aventura also informed the family that if they decide to continue the operation, another physician will operate on Quintin because he does not specialize in stenting procedures. The trial court observed:
+
+Dr. Aventura openly disclosed to the Que's that he was not a specialist in stenting procedure and it would be a foreign doctor specializing in stenting to do the job on Quintin.
+
+. . . .
+
+In contrast, Dr. Aventura was able to clearly explain the limits of his participation in the stenting procedure done on Quintin Que. He in fact, does not deny that the use of the stent involved risk but vigorously denied telling [the] Ques that the procedure was "virtually risk-free." This was the reason why he made it a point to explain the procedure to [the] Que family and the coming of foreign specialist or expert to do the procedure since he was not trained to do it. Such fact was known to the Ques right from the start. The records show that Dr. Aventura has the necessary training and skill to practice his chosen field. [Elpidio] did not rebut the evidence presented by Dr. Aventura regarding his qualifications – that he has been a physician for decades at the time [Elpidio] brought his father to him; that the doctor has had various medical trainings here and abroad; he was the first Director of the [PHC] and he specializes in cardiothoracic and vascular surgery. Jurisprudence provides that when the qualifications of a physician are admitted, there is a presumption that in proper cases, he takes the necessary precaution and employs the best of his knowledge and skill in attending to his clients. Even Dr. Figueroa declared that Dr. Aventura at all times followed standard operating procedure and exercise his sound judgment that are supported by medical science.[50]
+
+To be sure, Quintin signed the Consent for Endovascular Stenting and the Consent to Operation, Administration of Anesthesia, and the Rendering of Other Medical Services.[51] His signature appeared in these documents. On the other hand, Elpidio did not categorically dispute the veracity of Quintin's signature. Absent proof that Quintin's signature was forged or Quintin was incapable of giving intelligent consent when he signed the two documents, we upheld the validity of the consent forms. Accordingly, the lack of signatures of witnesses is irrelevant.
+
+Furthermore, expert witnesses Dr. Tuazon and Dr. Figueroa, both experts in the field of cardiovascular and endovascular surgery, testified that stenting would still be the sound medical advice and treatment for Quintin rather than the open-method surgery, considering his underlying condition. Dr. Tuazon explained in his Judicial Affidavit:[52]
+
+47. Q: Having examined the [sic] Quintin Que's chart, what is the recommended option for him given his conditions at that time?
+
+A: I would recommend stenting over open repair because open repair would entail opening the patient's chest and since Quintin Que previously underwent a triple bypass, the risks of stenting are lower than an open procedure. Quintin Que also had a fairly advanced age and had severe pulmonary disease which could lead to respiratory complications after an open procedure. I would also not recommend doing nothing because the risks of death outweigh the risks of undergoing stenting procedure. An aneurysm must be treated as soon as possible because it enlarges overtime. This also translates to an increased risk of the aneurysm rupturing. Also, Quintin Que had just undergone a coronary artery bypass graft procedure for his coronary artery disease. It is not uncommon for one to have a coronary artery disease and peripheral arterial disease occurring at the same time since both are caused by atherosclerosis, a condition I earlier explained, which is a common cause for his aneurysm. . . . .
+
+58. Q: Considering the risk factor for thromboembolism, does aortic stenting still have lesser or lower risk than an open repair?
+
+A: Yes. The risk of undergoing an open procedure in this case is almost prohibitive. A lesser invasive type of procedure to treat aneurysm is the ideal way to go. Unfortunately, there are complications inherent to the stenting procedure and the patient risk factors as well.[53]
+
+Dr. Figueroa corroborated Dr. Tuazon's testimony in his Judicial Affidavit:[54]
+
+30. Q: What are the ways to manage an aneurysm?
+
+A: There are different ways to manage an aneurysm. One way is the removal of the aneurysm by resection or aneurysmectomy. This would be the conventional method of surgical intervention through a thoracotomy and it involves cutting off the involved segment and replacing it with an artificial dacron graft. Across the board, the risk of death in surgical resection is from 5-12%. The other way is less invasive procedure, which is stenting.
+
+31. Q: What is stenting?
+
+A: Stenting is a less invasive procedure to repair an aneurysm that does not involve open heart surgery. In stenting, the incision will be made through the groin and a stent, which is manufactured by medical companies, will be pushed inside the opening of the artery by using a x-ray guidance. . . . .
+
+34. Q: You mentioned that stenting has risks. What are these risks?
+
+A: Although less invasive, stenting still has risks. These risks range from bleeding, rupture of the aneurysm, stroke and death. . . . .
+
+44. Q: Given the circumstances and the increase in risk, would you, in your expert opinion, still recommend stenting to treat Quintin Que's aneurysm?
+
+A: Yes, because if an aneurysm is left untreated it will expand and rupture eventually causing death.
+
+45. Q: For a patient, such as Quintin Que, who has undergone a triple bypass operation, would you still recommend resecting or aneurysmectomy?
+
+A: No, because it would have entailed a second major surgery that would be invasive. As I mentioned, resecting entails the opening up of the chest of the patient.[55]
+
+Negligence was not the proximate cause of Quintin's death. Proximate cause is that which, in a natural and continuous sequence, unbroken by any efficient intervening cause, produces injury, without which the result would not have occurred. An injury or damage is proximately caused by an act or a failure to act whenever it appears from the evidence in the case that the act or omission played a substantial part in bringing about or actually causing the injury or damage and that the injury or damage was either a direct result or a reasonably probable consequence of the act or omission.[56]
+
+The expert witnesses, Dr. Tuazon and Dr. Figueroa, testified that the stroke experienced by Quintin, which led to his death, was one of the inherent risks involved in a stenting procedure. To be sure, Quintin would have had a stroke regardless of whether the device was successfully deployed on him or not. Dr. Figueroa further testified:
+
+Q: You also identified and confirmed what are the risks of [stenting] which included bleeding, stroke[,] and death. In this case, the patient Quintin Que underwent endovascular stenting and he also died. What is the relationship of the endovascular stenting performed on the patient and on the fact of his death?
+
+A: Let me just say that Mr. Que did not die from the stenting per se directo. Mr. Que died from complications that emanated during the procedure in the process of doing the endovascular stenting, Ma'am. There are manipulations that have to concur using the catheter that is introduced into the aorta. The aneurysm of Mr. Que is located beyond the branch going to the left arm but the catheter needed to be introduced more proximal to that and these catheters are meant to guide the deploying [device] by which the stent device can be deployed. In the process of manipulation of the catheter, I believe that is when cholesterol clots above the aneurysm were dislodged and this is not uncommon in procedure, even in catheterization it happened. When the cholesterol clots dislodged [sic] inadvertently, it can go anywhere and unfortunately, the tendency can go to the brain. That's how Mr. Que developed and sustained cerebrovascular infarction during the procedure. It is not the stent that caused the clot. It is the manipulation of the catheter that is required so that the stent can be deployed, Ma'am.
+
+. . . .
+
+Q: Had the stent been successfully deployed by Dr. Verhoeven, was there a risk of the [sic] cardiopulmonary failure on the part of Mr. Quintin Que?
+
+A: To be more frank with him, Mr. Quintin Que would have had cerebrovascular accident even though the stent was deployed properly because there are two different phenomena and the CVA was caused by the catheter and we have said that I have [a] patient who had coronary bypass surgery and the coronary bypass surgery is performed to prevent heart attack but in spite of the fact that the coronary bypass surgery that I performed was successful, the patient still have [sic] heart attack, Ma'am. Those are the risks of the proceedings that we tried to avoid, but we cannot totally prevent. We can minimize them, and that is [what] we tried to do but we cannot do 100% success, Ma'am.
+
+COURT:
+
+Q: Including the stenting.
+
+A: Yes, your Honor.[57]
+
+On the other hand, Elpidio failed to present expert witness to refute Dr. Tuazon's and Dr. Figueroa's statements. As a forensic pathologist, Dr. Fortun cannot qualify as an expert witness in so far as to determine whether Dr. Aventura exercised the norm observed by other reasonably competent members of the profession. The expert witness must be a similarly trained and experienced physician.[58] Thus, we declared in Ramos v. Court of Appeals[59] that a pulmonologist is not qualified to testify as to the standard of care required of an anesthesiologist.[60] In Reyes v. Sisters of Mercy Hospital,[61] we ruled that an autopsy expert is not qualified to testify as a specialist in infectious diseases.[62] Therefore, the preponderance of evidence tilts in favor of respondents.
+
+As to Dr. Verhoeven' s authority to operate on Quintin, Section 5 of Presidential Decree No. 673, the PHC allows the hospital to "invite foreign heart specialists and similar experts in the various medical fields to train the personnel or trainees or residents of the [PHC]." Dr. Ludgerio D. Torres, former director of the PHC, issued a Certification[63] dated January 25, 2013, listing Dr. Verhoeven as one of the experts in his field to have operated in the PHC.
+
+Moreover, the doctrine of res ipsa loquitor, translated as "the thing speaks for itself," does not apply in this case. The doctrine requires the concurrence of the following elements: (1) the accident was of a kind that does not ordinarily occur unless someone is negligent; (2) the instrumentality or agency which caused the injury was under the exclusive control of the person charged with negligence; and (3) the injury suffered must not have been due to any voluntary action or contribution from the injured person.[64] The cause of Quintin's death was not due to the negligence of Dr. Aventura but was due to one of the inherent risks of the stenting procedure.
+
+Finally, we cannot subscribe to Elpidio's claim that the "faulty" stent hastened the death of his father. Bare allegations are not proof. The trial court noted that other than the testimonies of Elpidio and his sister, Elisa Que, the records do not show how faulty the stent used on Quintin was.
+
+Ultimately, the CA did not commit an error in affirming the dismissal of the Complaint for Damages for lack of merit.
+
+ACCORDINGLY, the Petition for Review on Certiorari is DENIED. The Decision dated July 3, 2023 of the Court of Appeals in CA-G.R. CV No. 115245 that affirmed the dismissal of Elpidio Que's Complaint STANDS.
+
+SO ORDERED.
+
+Lazaro-Javier, J. Lopez, and Kho, Jr., JJ., concur. Leonen, SAJ. (Chairperson), see separate opinion.
+
+Footnotes
+
+[1] Rollo, pp. 10-99.
+
+[2] Id. at 101-161. Penned by Associate Justice Jennifer Joy C. Ong and concurred in by Associate Justices Apolinario D. Bruselas, Jr. and Geraldine C. Fiel-Macaraig of the Fifth Division, Court of Appeals, Manila.
+
+[3] Id. at 933-1016. Penned by Judge Marita Bernales Balloguing.
+
+[4] Id. at 1017-1025.
+
+[5] Id. at 105, 933, 1018.
+
+[6] Id. at 105-106, 933, 1018-1019.
+
+[7] Id. at 107, 1011.
+
+[8] Id. at 107-108, 934, 1019-1020.
+
+[9] Id. at 108, 934, 1020.
+
+[10] Id. at 108-109, 934, 1020-1021.
+
+[11] Id. at 185-190.
+
+[12] Id. at 185.
+
+[13] Id. at 109, 934, 1021.
+
+[14] Id. at 1017-1025.
+
+[15] Id. at 102, 1017.
+
+[16] Id. at 305-322.
+
+[17] Id. at 112-114, 309-312.
+
+[18] Id. at 115, 312.
+
+[19] Id. at 115, 934.
+
+[20] Id. at 1016.
+
+[21] Id.
+
+[22] Id. at 1001-1005.
+
+[23] Id. at 1014.
+
+[24] Id. at 1015.
+
+[25] Id. at 126-127. Elpidio raised the following issues on appeal:
+
+I. THE LOWER COURT ERRED WHEN IT RULED THAT "NEITHER MEDICAL NEGLIGENCE, NOR MEDICAL MALPRACTICE IS SUSTAINABLE AGAINST THE DOCTOR."
+
+II. THE LOWER COURT ERRED WHEN IT RULED THAT THE STENT/STENTING PROCEDURE WAS NOT THE PROXIMATE CAUSE OF THE PATIENT'S DEATH, AS IT STRAINED AND SPLIT HAIRS TO DISTINGUISH THE STENT FROM THE STENTING PROCEDURE IN JUSTIFICATION.
+
+III. THE LOWER COURT ERRED WHEN IT DISREGARDED THE AUTOPSY REPORT AS WELL AS THE EXPERT TESTIMONY OF DR. RAQUEL FORTUN THEREON (WHO PERSONALLY CONDUCTED THE AUTOPSY HERSELF) AND INSTEAD RELIED ON THE TESTIMONY OF DR. FIGUEROA, A FRIEND AND COLLEAGUE OF DEFENDANT-APPELLEE DR. AVENTURA WHO ADMITTEDLY HAD NO PERSONAL KNOWLEDGE OF THE FACTS AND CIRCUMSTANCES SURROUNDING THE DEATH OF THE PATIENT – CLEARLY AN "ARMCHAIR EXPERT" WHO MERELY BASED HIS SO-CALLED "EXPERT" TESTIMONY ON THE MEDICAL RECORD/CHART.
+
+IV. THE LOWER COURT ERRED WHEN IT LET DEFENDANT-APPELLEE FAMED "OFF THE HOOK" – ADMITTEDLY THE DISTRIBUTOR OF THE "FAULTY" STENT – ON THE GROUND THAT "PLAINTIFF FAILED TO SHOW THAT FAMED HAD ANY PARTICIPATION IN THE MANUFACTURE OF THE TALENT STENT USED ON QUINTIN.
+
+[26] Id. at 160.
+
+[27] Id. at 132-143.
+
+[28] Id. at 144-149.
+
+[29] Entitled "Creating the Philippine Heart Center for Asia" (1975).
+
+[30] Rollo, pp. 149-152.
+
+[31] Id. at 154-156.
+
+[32] Id. at 157-159.
+
+[33] Id. at 160.
+
+[34] Id. at 10-99.
+
+[35] Id. at 49-96.
+
+[36] Id. at 226-237.
+
+[37] Id. at 226-236.
+
+[38] Id. at 242-301.
+
+[39] Id. at 258-299.
+
+[40] Sugar Regulatory Administration v. Central Azucarera De Bais, Inc., G.R. No. 253821, March 6, 2023 [Per J. M. Lopez, Second Division].
+
+[41] Far Eastern Surety and Insurance Co., Inc. v. People, 721 Phil. 760, 767 (2013) [Per J. Brion, Second Division].
+
+[42] Cayao-Lasam v. Spouses Ramolete, 595 Phil. 56, 72 (2008) [Per J. Austria-Martinez, Third Division].
+
+[43] 779 Phil. 1 (2016) [Per J. Brion, Second Division].
+
+[44] Id. at 12-13.
+
+[45] De Jesus v. Uyloan, 919 Phil. 878, 886 (2022) [Per C.J. Gesmundo, First Division].
+
+[46] Li v. Spouses Soliman, 666 Phil. 29, 57 (2011) [Per J. Villarama, Jr., En Banc].
+
+[47] Id.
+
+[48] Id. at 54-57.
+
+[49] Garcia-Rueda v. Pascasio, 344 Phil. 323, 331 (1997) [Per J. Romero, Second Division].
+
+[50] Rollo, pp. 1005, 1011.
+
+[51] Id. at 147-148.
+
+[52] Id. at 193-207.
+
+[53] Id. at 200-202.
+
+[54] Id. at 208-219.
+
+[55] Id. at 213-216.
+
+[56] Cayao-Lasam v. Spouses Ramolete, 595 Phil. 56, 77 (2008) [Per J. Austria-Martinez, Third Division].
+
+[57] Rollo, pp. 141-142.
+
+[58] Borromeo v. Family Care Hospital, Inc., 779 Phil. 1, 13 (2016) [Per J. Brion, Second Division].
+
+[59] 378 Phil. 1198 (1999) [Per J. Kapunan, First Division].
+
+[60] Id. at 1236.
+
+[61] 396 Phil. 87 (2000) [Per J. Mendoza, Second Division].
+
+[62] Id. at 100-101.
+
+[63] Rollo, p. 397.
+
+[64] Child Learning Center Inc. v. Tagorio, 512 Phil. 618, 625 (2005) [Per J. Azcuna, First Division].
