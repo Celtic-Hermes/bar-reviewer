@@ -241,6 +241,21 @@
       "ruling": "The Court granted the petition and reinstated the trial court's judgment with modifications. (1) Conclusiveness of judgment did not apply, for lack of identity of parties and subject matter with the 2005 NPC case. (2) NPC committed an environmental tort based on negligence. Environmental tort is a hybrid of tort law and environmental law; tort law can address environmental harm to a well-defined area or specific persons when supported by general and specific causation and fitting the elements of a tort action, and it requires an actual injury. Following its earlier rulings, NPC was negligent in its two-fold duty under Memorandum Order No. 398: to keep the lake's normal maximum level at 702 meters and to build and maintain warning benchmarks. The farmers had no flooding before the dam, NPC had paid financial assistance to affected claimants, and res ipsa loquitur also applied. (3) Damnum absque injuria (damage without injury) did not apply, since NPC's negligence was established. (4) Actual damages, attorney's fees and interest were affirmed; moral and exemplary damages were deleted (no gross negligence, and no stated basis for moral damages); just compensation and rental were deleted, since just compensation belongs to expropriation under Rule 67, and the rental had no evidentiary basis.",
       "keyDoctrine": "Environmental tort, a hybrid of tort law and environmental law, may redress environmental harm to a well-defined area or specific persons when supported by general and specific causation and fitting the elements of a tort action; an actual injury is required. The elements of a quasi-delict or tort are damage, fault or negligence of the defendant, and the causal connection between them. Injury is the illegal invasion of a legal right; damage is the resulting loss; damages are the compensation. Damage without injury (damnum absque injuria) is not compensable. In quasi-delicts, exemplary damages require gross negligence.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2021/jul2021/gr_209538_2021.html"
+    },
+    {
+      "id": "case-0046",
+      "status": "draft",
+      "name": "Versoza v. People, et al.",
+      "grNumber": "G.R. No. 184535",
+      "year": 2019,
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Privacy Torts",
+      "facts": "Laureano \"Larry\" Aguirre, a former ward of the Heart of Mary Villa, a licensed child-caring agency, was taken in as a toddler by Pedro and Lourdes Aguirre, who were later appointed his legal guardians. Larry had a mild mental deficiency. At 24, upon Pedro's instruction and written consent, and after a psychiatrist, Dr. Marissa Pascual, reported that he might never understand the nature, risks and consequences of a vasectomy and that decision-making could be given to his guardian, Larry underwent a bilateral vasectomy without his own consent. Sister Pilar Versoza, the agency's former nursery supervisor, filed a criminal complaint; an Information for child abuse under Sections 3 and 10 of R.A. No. 7610 was eventually filed against Pedro, his daughter Michelina and Dr. Pascual. The trial court dismissed it for lack of probable cause and held that Sister Versoza had no personality to sue; the Court of Appeals affirmed. Sister Versoza died while her petition was pending before the Supreme Court.",
+      "issue": "(1) Does the petitioner's death warrant the dismissal of the case? (2) Did she have the legal personality to institute the criminal case? (3) Did the respondents violate R.A. No. 7610?",
+      "ruling": "The Court en banc denied the petition. In criminal cases, only the Office of the Solicitor General may appeal the criminal aspect on behalf of the State; a private complainant's role is that of a witness, with an interest limited to the civil liability; and the petitioner, having died, no longer had legal capacity to pursue the appeal. On standing, the Court nonetheless explained that under Section 27 of R.A. No. 7610 complaints may be filed by seven classes of persons, including an officer or representative of a licensed child-caring institution, and that the transfer of parental authority to guardians does not sever all ties between the child and the institution, since parental authority is a sum of duties for the child's best interest, and guardians may themselves be the abusers. Under Section 3(a), a person with cognitive disability is a child based on mental age, not chronological age; Larry, with the mental age of an 8-year-old, was a child under the law. The substantive question whether the vasectomy violated R.A. No. 7610 was not resolved, for lack of a party and of an appeal by the OSG.",
+      "keyDoctrine": "Only the Solicitor General may appeal the criminal aspect of a case; the private complainant's interest is limited to the civil liability, and a petitioner's death extinguishes her legal capacity to pursue the appeal. Under Section 27 of R.A. No. 7610, an officer or representative of a licensed child-caring institution may file a complaint for child abuse, and a transfer of parental authority does not defeat that standing. Under Section 3(a), a person with cognitive disability is a child under R.A. No. 7610 based on mental age. Parental authority is not a power but a sum of duties for the child's welfare.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2019/sep2019/gr_184535_2019.html"
     }
   ],
   "questions": [
@@ -3922,6 +3937,237 @@
         "url": "https://lawphil.net/judjuris/juri2021/jul2021/gr_209538_2021.html",
         "part": "Ruling, IV (exemplary and moral damages)",
         "excerpt": "\"In [quasi-delicts], exemplary damages may be granted if the defendant acted with gross negligence.\" On the other hand, moral damages include \"physical suffering, mental anguish, fright, serious anxiety, besmirched reputation, wounded feelings, moral shock, social humiliation, and similar injury[,]\" and may be recovered if proven to be the proximate result of the defendant's wrongful act or omission. Here, the trial court awarded exemplary damages based on the wanton negligence or manifest bad faith of respondent for its refusal to open the floodgates of Agus Regulation Dam despite petitioners' pleas. However, respondent's negligence does not amount to gross negligence, so as to entitle petitioners to exemplary damages."
+      }
+    },
+    {
+      "id": "q-0560",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Privacy Torts",
+      "prompt": "A child-caring agency placed a boy with a couple who were later appointed his legal guardians. Years later, the agency's former supervisor files a complaint for child abuse under R.A. No. 7610 against the guardians for a procedure done on the boy. The guardians argue that their appointment transferred parental authority to them, severing all ties between the boy and the agency, so the supervisor has no personality to file the complaint. Is the argument correct? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. Section 27 of R.A. No. 7610 allows an officer or representative of a licensed child-caring institution to file a complaint, and the transfer of parental authority to guardians does not sever all ties between the child and the institution for this purpose.",
+        "legalBasis": "In Versoza v. People, the Court noted that the prosecution of offenses under special laws is governed by the special law, and that Section 27 of R.A. No. 7610 lists seven classes of persons who may file complaints: the offended party; parents or guardians; ascendants or collateral relatives within the third degree of consanguinity; an officer, social worker or representative of a licensed child-caring institution; an officer or social worker of the DSWD; the barangay chairman; or at least three concerned responsible citizens where the violation occurred. Parental authority is \"a sum of duties\" to be exercised in the child's best interest; in child abuse cases the parents or guardians may be the abusers themselves, which is why others are allowed to file.",
+        "application": "The supervisor acts as a representative of a licensed child-caring institution, a class expressly named in Section 27, read in its plain meaning. The guardians' title does not give them a monopoly over complaints about the child's welfare; to hold otherwise would let abuse hide behind parental authority.",
+        "conclusion": "The argument is wrong. **Bar trap:** \"the title of a parent or guardian is not a magic word to be wielded with immunity.\" Note, however, that in Versoza the petition was still denied, because the petitioner died and the Solicitor General did not appeal."
+      },
+      "keyPoints": [
+        "Prosecution of offenses under special laws is governed by the special law",
+        "Section 27 of R.A. No. 7610 lists seven classes of persons who may file, including a representative of a licensed child-caring institution",
+        "Plain-meaning rule (verba legis) applies to a clear statute",
+        "Parental authority is a sum of duties for the child's best interest",
+        "Guardians may themselves be abusers, so others are allowed to file"
+      ],
+      "caseIds": [
+        "case-0046"
+      ],
+      "source": {
+        "caseTitle": "Versoza v. People, et al.",
+        "grNumber": "G.R. No. 184535",
+        "url": "https://lawphil.net/judjuris/juri2019/sep2019/gr_184535_2019.html",
+        "part": "Resolution, II (who may file a complaint under R.A. No. 7610)",
+        "excerpt": "As to offenses punished under special laws, their prosecution would be governed by the relevant provisions of the special law violated. In cases concerning violations of Republic Act No. 7610, Section 27 enumerates seven (7) classes of persons who may initiate criminal proceedings, namely: … Indeed, in child abuse cases, the parents or guardians may be the abusers themselves. Those entrusted with the care and protection of the child could very well be complicit in the abuse, if not its perpetrators. In these situations, allowing another person to represent the abused becomes apparent and more urgent, which is why barangay chairs, social workers, and concerned responsible citizens are enjoined to file a complaint. When the abuse happens, no one else will protect them from such harm. Thus, the argument that the transfer of parental authority has severed all ties between Larry and Heart of Mary Villa does not hold water. To tolerate this line of reasoning would be to allow the persistence of abuses against children. Under no circumstances must child abuse be allowed to hide behind a shroud of secrecy, even more so if it is committed under the guise of parental authority. The title of a parent or guardian is not a magic word to be wielded with immunity."
+      }
+    },
+    {
+      "id": "q-0561",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Privacy Torts",
+      "prompt": "After a criminal Information for child abuse was dismissed and the dismissal affirmed by the Court of Appeals, the private complainant, without the Office of the Solicitor General, appealed to the Supreme Court; she then died while the appeal was pending. Her counsel argues that the real party is the People, so her death does not moot the case. Will the appeal prosper? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. Only the State, through the Office of the Solicitor General, may appeal the criminal aspect of a dismissal; the private complainant's role is that of a witness with an interest limited to the civil liability; and her death extinguished her legal capacity to pursue the appeal.",
+        "legalBasis": "In Versoza v. People, the Court held that the authority to represent the State in appeals of criminal cases before the Supreme Court and the Court of Appeals is solely vested in the OSG. Quoting Chiok v. People, it explained that in a criminal case the party affected by the dismissal is the State, not the private complainant, whose interest is limited to the civil liability; the private complainant may appeal only as to the civil aspect. Moreover, a petitioner's demise extinguishes her legal capacity, warranting the dismissal of her pending pleadings.",
+        "application": "Without any action by the OSG, no one with authority appealed the criminal aspect, so the appeal cannot prosper. And the petitioner's death left no party to pursue it. That the People is the principal party does not help, because the People did not appeal.",
+        "conclusion": "The appeal is denied. **Bar trap:** the transcendental importance of the issue does not cure the lack of a proper party; in Versoza the Court declined to resolve whether the vasectomy was child abuse for this very reason."
+      },
+      "keyPoints": [
+        "Only the OSG may appeal the criminal aspect of a dismissal or acquittal",
+        "The private complainant is a witness; her interest is limited to the civil liability",
+        "She may appeal only the civil aspect",
+        "A petitioner's death extinguishes her legal capacity to pursue the appeal",
+        "The substantive issue was left unresolved"
+      ],
+      "caseIds": [
+        "case-0046"
+      ],
+      "source": {
+        "caseTitle": "Versoza v. People, et al.",
+        "grNumber": "G.R. No. 184535",
+        "url": "https://lawphil.net/judjuris/juri2019/sep2019/gr_184535_2019.html",
+        "part": "Resolution, I (the role of the private complainant and the death of the petitioner)",
+        "excerpt": "This Court has consistently held that \"[t]he authority to represent the State in appeals of criminal cases before the Supreme Court and the [Court of Appeals] is solely vested in the Office of the Solicitor General[,]\" with the private complainant's role as only that of a witness. … As a private complainant to the criminal action, petitioner's role is confined to being a mere witness, her interest in the case limited to only the civil liability. Only the State, through the Office of the Solicitor General, can appeal the criminal aspect of the case. Thus, absent any action on the part of the Office of the Solicitor General, the appeal cannot prosper. Moreover, considering that petitioner died during the pendency of this case, she no longer has the legal capacity to pursue the appeal."
+      }
+    },
+    {
+      "id": "q-0562",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Privacy Torts",
+      "prompt": "Is a 24-year-old man with a mild mental deficiency and the mental age of an 8-year-old a \"child\" under R.A. No. 7610? Explain.",
+      "suggestedAnswer": {
+        "answer": "Yes. Under Section 3(a) of R.A. No. 7610, \"children\" include not only persons below 18 but also those over 18 who are unable to fully take care of or protect themselves from abuse, neglect, cruelty, exploitation or discrimination because of a physical or mental disability or condition. A person with cognitive disability is a child under the law based on mental age, not chronological age.",
+        "legalBasis": "In Versoza v. People, the Court held that Section 3(a) recognizes a distinction between chronological age and mental age, so that someone with cognitive disability, regardless of chronological age, is automatically entitled to the law's protection. It relied on People v. Quintos, which held that a person's capacity to decide whether to give consent is determined by mental age, so that a person of chronological age 35 with a mental age of 7 is as incapable of rational consent as a 7-year-old.",
+        "application": "The man has a mild mental deficiency that renders him incapable of making crucial decisions on his own, with the mental age of an 8-year-old. Despite his chronological age, he is a child under R.A. No. 7610.",
+        "conclusion": "He is a child under the law. **Bar trap:** do not stop at the age of 18; Section 3(a) also covers adults unable to protect themselves because of disability, measured by mental age."
+      },
+      "keyPoints": [
+        "Section 3(a): persons below 18, or over 18 but unable to take care of or protect themselves because of a physical or mental disability",
+        "The law distinguishes mental age from chronological age",
+        "A person with cognitive disability is a child based on mental age (People v. Quintos)",
+        "Capacity to consent is determined by mental age",
+        "Larry, with the mental age of an 8-year-old, was a child under the law"
+      ],
+      "caseIds": [
+        "case-0046"
+      ],
+      "source": {
+        "caseTitle": "Versoza v. People, et al.",
+        "grNumber": "G.R. No. 184535",
+        "url": "https://lawphil.net/judjuris/juri2019/sep2019/gr_184535_2019.html",
+        "part": "Resolution, III (who is a child under R.A. No. 7610)",
+        "excerpt": "Section 3(a) of Republic Act No. 7610 states: SECTION 3. Definition of Terms. — (a) \"Children\" refers to person below eighteen (18) years of age or those over but are unable to fully take care of themselves or protect themselves from abuse, neglect, cruelty, exploitation or discrimination because of a physical or mental disability or condition[.] The provision recognizes a distinction between a person's chronological age and mental age, such that someone with cognitive disability, regardless of his or her chronological age, would automatically be entitled to the protective mantle of the law. … In light of this interpretation, and based on the distinction set forth in Section 3(a), a person who has a cognitive disability would be considered a child under Republic Act No. 7610 based on his or her mental age, not chronological age. In this case, it is without question that, despite his chronological age, Larry is a child under the law. He has a mild mental deficiency rendering him incapable of making crucial decisions on his own, let alone fend for himself. At the time of the vasectomy, he had a mental age of an 8-year-old."
+      }
+    },
+    {
+      "id": "q-0563",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Privacy Torts",
+      "prompt": "\"There is no power, but a task; no complex of rights, but a sum of duties; no sovereignty but a sacred trust for the welfare of the minor.\" In Versoza v. People, the Court used this description for",
+      "choices": {
+        "A": "legal guardianship over property.",
+        "B": "the State's police power.",
+        "C": "parental authority.",
+        "D": "the authority of a child-caring institution."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** Quoting Santos, Sr. v. Court of Appeals, the Court described parental authority (patria potestas) as the juridical institution by which parents assume control and protection of their unemancipated children, and said: \"As regards parental authority, 'there is no power, but a task; no complex of rights, but a sum of duties; no sovereignty but a sacred trust for the welfare of the minor.'\" **A, B and D are wrong:** the quotation was about parental authority. **Bar trap:** because parental authority is a sum of duties, its transfer to guardians does not shield abuse from others who may complain.",
+      "caseIds": [
+        "case-0046"
+      ],
+      "source": {
+        "caseTitle": "Versoza v. People, et al.",
+        "grNumber": "G.R. No. 184535",
+        "url": "https://lawphil.net/judjuris/juri2019/sep2019/gr_184535_2019.html",
+        "part": "Resolution, II (the nature of parental authority, quoting Santos, Sr. v. Court of Appeals)",
+        "excerpt": "The right of custody accorded to parents springs from the exercise of parental authority. Parental authority or patria potestas in Roman Law is the juridical institution whereby parents rightfully assume control and protection of their unemancipated children to the extent required by the latter's needs. It is a mass of rights and obligations which the law grants to parents for the purpose of the children s physical preservation and development, as well as the cultivation of their intellect and the education of their heart and senses. As regards parental authority, \"there is no power, but a task; no complex of rights, but a sum of duties; no sovereignty but a sacred trust for the welfare of the minor. \""
+      }
+    },
+    {
+      "id": "q-0564",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Privacy Torts",
+      "prompt": "Under Section 27 of R.A. No. 7610, as quoted in Versoza v. People, which of the following may NOT file a complaint for unlawful acts committed against children?",
+      "choices": {
+        "A": "Any one concerned citizen, wherever the violation occurred.",
+        "B": "An officer, social worker or representative of a licensed child-caring institution.",
+        "C": "The barangay chairman.",
+        "D": "An ascendant or collateral relative within the third degree of consanguinity."
+      },
+      "correct": "A",
+      "explanation": "**A is correct (it may not).** Section 27(g) requires \"[a]t least three (3) concerned responsible citizens where the violation occurred,\" not a single citizen anywhere. **B, C and D are wrong answers** because each is listed in Section 27: (d) an officer, social worker or representative of a licensed child-caring institution; (f) the barangay chairman; and (c) an ascendant or collateral relative within the third degree of consanguinity. The others are the offended party, parents or guardians, and an officer or social worker of the DSWD. **Bar trap:** remember the number (at least three) and the place (where the violation occurred) for concerned citizens.",
+      "caseIds": [
+        "case-0046"
+      ],
+      "source": {
+        "caseTitle": "Versoza v. People, et al.",
+        "grNumber": "G.R. No. 184535",
+        "url": "https://lawphil.net/judjuris/juri2019/sep2019/gr_184535_2019.html",
+        "part": "Resolution, II (Section 27 of R.A. No. 7610)",
+        "excerpt": "SECTION 27. Who May File a Complaint. — Complaints on cases of unlawful acts committed against children as enumerated herein may be filed by the following: (a) Offended party; (b) Parents or guardians; (c) Ascendant or collateral relative within the third degree of consanguinity; (d) Officer, social worker or representative of a licensed child-caring institution; (e) Officer or social worker of the Department of Social Welfare and Development; (f) Barangay chairman; or (g) At least three (3) concerned responsible citizens where the violation occurred."
+      }
+    },
+    {
+      "id": "q-0565",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Privacy Torts",
+      "prompt": "\"If a statute is clear, plain and free from ambiguity, it must be given its literal meaning and applied without attempted interpretation.\" In Versoza v. People, the Court called this the",
+      "choices": {
+        "A": "rule of lenity.",
+        "B": "doctrine of necessary implication.",
+        "C": "rule of ejusdem generis.",
+        "D": "plain-meaning rule or verba legis."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** Quoting Globe-Mackay Cable and Radio Corporation v. NLRC, the Court said: \"This plain-meaning rule or verba legis derived from the maxim index animi sermo est (speech is the index of intention) rests on the valid presumption that the words employed by the legislature in a statute correctly express its intent,\" and \"Verba legis non est recedendum, or from the words of a statute there should be no departure.\" It applied this to read Section 27 of R.A. No. 7610 literally. **A, B and C are wrong:** they are other rules of construction not used here. **Bar trap:** when the text is clear, there is no room for construction.",
+      "caseIds": [
+        "case-0046"
+      ],
+      "source": {
+        "caseTitle": "Versoza v. People, et al.",
+        "grNumber": "G.R. No. 184535",
+        "url": "https://lawphil.net/judjuris/juri2019/sep2019/gr_184535_2019.html",
+        "part": "Resolution, II (the plain-meaning rule, quoting Globe-Mackay)",
+        "excerpt": "Under the principles of statutory construction, if a statute is clear, plain and free from ambiguity, it must be given its literal meaning and applied without attempted interpretation. This plain-meaning rule or verba legis derived from the maxim index animi sermo est (speech is the index of intention) rests on the valid presumption that the words employed by the legislature in a statute correctly express its intent or will and preclude the court from construing it differently."
+      }
+    },
+    {
+      "id": "q-0566",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Privacy Torts",
+      "prompt": "In Versoza v. People, did the Supreme Court decide whether performing a bilateral vasectomy on a man with cognitive disability, without his consent, violated R.A. No. 7610?",
+      "choices": {
+        "A": "Yes; it held that the vasectomy was child abuse and ordered the trial to proceed.",
+        "B": "No; it denied the petition for lack of a party, on account of the petitioner's death, and for lack of an appeal from the Office of the Solicitor General, so the substantive issue was not tackled.",
+        "C": "Yes; it held that a vasectomy can never be child abuse because it is a widely accepted procedure.",
+        "D": "No; it remanded the case to the trial court to determine the issue."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court stated: \"this Court reached the consensus that the action must be denied for lack of a party, on account of petitioner's death, and for lack of an appeal from the Office of the Solicitor General. Therefore, the substantive issue of whether there was a violation of Republic Act No. 7610 will not be tackled here.\" Several Justices wrote separate opinions. **A and C are wrong:** the Court did not rule either way on the substantive issue (the view that vasectomy is not child abuse was the lower courts'). **D is wrong:** there was no remand. **Bar trap:** do not cite Versoza as holding that the vasectomy was, or was not, child abuse.",
+      "caseIds": [
+        "case-0046"
+      ],
+      "source": {
+        "caseTitle": "Versoza v. People, et al.",
+        "grNumber": "G.R. No. 184535",
+        "url": "https://lawphil.net/judjuris/juri2019/sep2019/gr_184535_2019.html",
+        "part": "Resolution, dispositive reason",
+        "excerpt": "While the case before us presents a novel issue, this Court reached the consensus that the action must be denied for lack of a party, on account of petitioner's death, and for lack of an appeal from the Office of the Solicitor General. Therefore, the substantive issue of whether there was a violation of Republic Act No. 7610 will not be tackled here."
+      }
+    },
+    {
+      "id": "q-0567",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Privacy Torts",
+      "prompt": "As quoted in Versoza v. People, Rule 110, Section 5 of the Revised Rules of Criminal Procedure provides that the crimes of adultery and concubinage shall not be prosecuted except upon a complaint filed by",
+      "choices": {
+        "A": "the prosecutor motu proprio.",
+        "B": "any relative of the offended spouse.",
+        "C": "the offended spouse.",
+        "D": "the barangay chairman."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The provision quoted by the Court states: \"The crimes of adultery and concubinage shall not be prosecuted except upon a complaint filed by the offended spouse.\" The Court used it to contrast private crimes, which require the intervention of specific persons, with offenses under special laws such as R.A. No. 7610, whose prosecution is governed by the special law (there, Section 27). **A, B and D are wrong:** none may file in place of the offended spouse. **Bar trap:** private crimes have their own rules on who may complain; special laws may name their own complainants.",
+      "caseIds": [
+        "case-0046"
+      ],
+      "source": {
+        "caseTitle": "Versoza v. People, et al.",
+        "grNumber": "G.R. No. 184535",
+        "url": "https://lawphil.net/judjuris/juri2019/sep2019/gr_184535_2019.html",
+        "part": "Resolution, II (private crimes under Rule 110, Section 5)",
+        "excerpt": "The crimes of adultery and concubinage shall not be prosecuted except upon a complaint filed by the offended spouse. The offended party cannot institute criminal prosecution without including the guilty parties, if both are alive, nor, in any case, if the offended party has consented to the offense or pardoned the offenders."
       }
     }
   ]
