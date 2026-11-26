@@ -46,6 +46,21 @@
       "ruling": "The Court denied the petition. Courts do not interfere with the executive determination of probable cause in the absence of grave abuse of discretion, and none was shown. In a medical negligence case the patient must prove duty, breach, injury and proximate causation. Dr. Cruz showed an injury, but not the particular negligent act or omission of Dr. Agas that caused it, nor an inexcusable lack of precaution. Res ipsa loquitur did not apply: the alleged negligence was not apparent to a layman, and Dr. Agas explained that the bleeding came from an abnormal condition of the patient's colon beyond his control, which needed expert opinion to connect to the colonoscopy. Dr. Cruz did not rebut that explanation.",
       "keyDoctrine": "Res ipsa loquitur means the thing speaks for itself: the occurrence of an injury, with its circumstances, may raise a presumption of negligence. Its requisites are the occurrence of an injury, control and management of the thing that caused it by the defendant, an occurrence that would not happen in the ordinary course of things with proper care, and the absence of explanation by the defendant; control and management is the most instrumental. It does not apply where the defendant explains the injury by a cause beyond his control, or where the connection between the injury and the procedure needs expert opinion.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2015/jun2015/gr_204095_2015.html"
+    },
+    {
+      "id": "case-0033",
+      "status": "draft",
+      "name": "Professional Services, Inc. v. Agana",
+      "grNumber": "G.R. No. 126297",
+      "year": 2007,
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "facts": "In April 1984 Dr. Miguel Ampil operated on Natividad Agana at the Medical City General Hospital, owned by Professional Services, Inc. (PSI), for cancer of the sigmoid. Finding that the cancer had spread to her left ovary, he called in Dr. Juan Fuentes, with her husband's consent, to perform a hysterectomy. Dr. Fuentes did so, showed his work to Dr. Ampil, and left. Dr. Ampil completed the operation and closed the incision, although the nurses recorded \"sponge count lacking 2\" and that a search had been done to no avail. Natividad later suffered severe pain, which both doctors told her was a natural consequence of the surgery. Months later her daughter found a piece of gauze protruding from her vagina; Dr. Ampil pulled it out by hand and assured her the pain would go away. Another foul-smelling gauze was later found, which had badly infected her and caused a recto-vaginal fistula, requiring another operation. Natividad and her husband sued PSI, Dr. Ampil and Dr. Fuentes for damages. The trial court held all three liable; the Court of Appeals dismissed the case against Dr. Fuentes and held Dr. Ampil and PSI liable, with Dr. Ampil to reimburse PSI.",
+      "issue": "(1) Is Dr. Ampil liable for negligence and malpractice? (2) Should Dr. Fuentes also be liable under res ipsa loquitur? (3) Is PSI, the hospital, liable for Dr. Ampil's negligence?",
+      "ruling": "The Court denied all three petitions. (1) Dr. Ampil was liable. Leaving sponges in the wound after the incision is closed is at least prima facie negligence by the operating surgeon. Even if an emergency forces a surgeon to leave a sponge, he has the legal duty to tell the patient within a reasonable time. Dr. Ampil closed the incision despite the nurses' report, did not tell Natividad, and misled her about her pain, so his negligence ripened into a deliberate wrongful act of deceiving his patient. (2) Dr. Fuentes was not liable: under the Captain of the Ship rule the lead surgeon, Dr. Ampil, was in complete charge, and it was his order to close the incision that caused the injury, so the requisite of control and management was missing as to Dr. Fuentes. (3) PSI was liable: by listing Dr. Ampil and Dr. Fuentes in its lobby directory as its accredited physicians, it held them out as its agents (apparent authority), and it was directly liable for its own corporate negligence in not investigating the nurses' report of the missing gauzes. Having failed to prove the diligence of a good father of a family in accrediting and supervising Dr. Ampil, it was solidarily liable with him. (On a second motion for reconsideration, the Court en banc in 2010 kept PSI liable on apparent authority and, for this case only, corporate negligence, but not on an employer-employee relationship; see the 2010 resolution.)",
+      "keyDoctrine": "Leaving a sponge or other foreign object in a patient after the incision is closed is at least prima facie negligence of the operating surgeon, who must also inform the patient within a reasonable time if he had to leave it. Under the Captain of the Ship rule the operating surgeon is in complete charge of the operating room. A hospital may be liable for a doctor's negligence under apparent authority (holding the doctor out as its agent, on which the patient reasonably relies) and directly for its own corporate negligence, such as failing to supervise those who practice within its walls.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2007/jan2007/gr_126297_2007.html"
     }
   ],
   "questions": [
@@ -733,6 +748,235 @@
         "url": "https://lawphil.net/judjuris/juri2015/jun2015/gr_204095_2015.html",
         "part": "Medical Negligence and Malpractice Not Established (the patient's burden)",
         "excerpt": "In this case, Dr. Cruz has the burden of showing the negligence or recklessness of Dr. Agas. Although there is no dispute that Dr. Cruz sustained internal hemorrhage due to a tear in the serosa of his sigmoid colon, he failed to show that it was caused by Dr. Agas’s negligent and reckless conduct of the colonoscopy procedure. In other words, Dr. Cruz failed to show and explain that particular negligent or reckless act or omission committed by Dr. Agas. Stated differently, Dr. Cruz did not demonstrate that there was \"inexcusable lack of precaution\" on the part of Dr. Agas."
+      }
+    },
+    {
+      "id": "q-0456",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "During an operation, Dr. Lim, the lead surgeon, called in Dr. Santos to remove a growth in another organ. Dr. Santos finished, Dr. Lim examined the work and found it in order, and Dr. Santos left the hospital. As Dr. Lim was finishing, the nurses told him a sponge was missing; a search failed, and Dr. Lim ordered the incision closed. The sponge was later found inside the patient. The patient sues both surgeons and invokes res ipsa loquitur against Dr. Santos, arguing that a sponge left in her body is prima facie proof that every operating surgeon was negligent. Is Dr. Santos liable? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. Res ipsa loquitur does not apply to Dr. Santos, because the thing that caused the injury was not under his control and management; it was under Dr. Lim's, the lead surgeon.",
+        "legalBasis": "The requisites of res ipsa loquitur are: the occurrence of an injury; the thing that caused it was under the control and management of the defendant; the occurrence would not ordinarily happen if those in control used proper care; and the absence of explanation by the defendant. The most instrumental is control and management. Under the Captain of the Ship rule, the operating surgeon is the person in complete charge of the surgery room and all personnel connected with the operation, whose duty is to obey his orders. Res ipsa loquitur is also only an evidentiary rule; it does not dispense with proof of negligence. (Professional Services, Inc. v. Agana.)",
+        "application": "Dr. Lim acted as captain of the ship: he called in Dr. Santos, checked his work, allowed him to leave, and ordered the incision closed even though a sponge was unaccounted for. That order caused the injury, and it was made after Dr. Santos had left. Control and management of what caused the injury was therefore with Dr. Lim, not Dr. Santos.",
+        "conclusion": "Dr. Santos is not liable; Dr. Lim is. **Bar trap:** a sponge left inside a patient is prima facie negligence of the operating surgeon in control, not of every doctor who took part in the operation."
+      },
+      "keyPoints": [
+        "Requisites of res ipsa loquitur, with control and management as the most instrumental",
+        "Captain of the Ship rule: the lead surgeon is in complete charge of the operating room and its personnel",
+        "The lead surgeon's order to close despite the missing sponge caused the injury, after the other surgeon had left",
+        "Res ipsa loquitur is only an evidentiary rule and does not replace proof of negligence"
+      ],
+      "caseIds": [
+        "case-0033"
+      ],
+      "source": {
+        "caseTitle": "Professional Services, Inc. v. Agana",
+        "grNumber": "G.R. No. 126297",
+        "url": "https://lawphil.net/judjuris/juri2007/jan2007/gr_126297_2007.html",
+        "part": "II - G.R. No. 126467 (res ipsa loquitur and the Captain of the Ship rule)",
+        "excerpt": "We find the element of \"control and management of the thing which caused the injury\" to be wanting. Hence, the doctrine of res ipsa loquitur will not lie. It was duly established that Dr. Ampil was the lead surgeon during the operation of Natividad. He requested the assistance of Dr. Fuentes only to perform hysterectomy when he (Dr. Ampil) found that the malignancy in her sigmoid area had spread to her left ovary. Dr. Fuentes performed the surgery and thereafter reported and showed his work to Dr. Ampil. The latter examined it and finding everything to be in order, allowed Dr. Fuentes to leave the operating room. Dr. Ampil then resumed operating on Natividad. He was about to finish the procedure when the attending nurses informed him that two pieces of gauze were missing. A \"diligent search\" was conducted, but the misplaced gauzes were not found. Dr. Ampil then directed that the incision be closed. During this entire period, Dr. Fuentes was no longer in the operating room and had, in fact, left the hospital. Under the \"Captain of the Ship\" rule, the operating surgeon is the person in complete charge of the surgery room and all personnel connected with the operation. Their duty is to obey his orders. … Clearly, the control and management of the thing which caused the injury was in the hands of Dr. Ampil, not Dr. Fuentes. In this jurisdiction, res ipsa loquitur is not a rule of substantive law, hence, does not per se create or constitute an independent or separate ground of liability, being a mere evidentiary rule."
+      }
+    },
+    {
+      "id": "q-0457",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "A surgeon argues that he cannot be faulted for a sponge left inside his patient, because the patient's life was in danger and a longer search for the missing sponge would have put her at greater risk. Discuss the surgeon's duties with respect to sponges or other foreign objects left in a patient's body.",
+      "suggestedAnswer": {
+        "answer": "The surgeon has two duties: to remove all sponges before closing the incision, and, if urgent necessity compels him to leave one, to inform the patient within a reasonable time. Danger to the patient's life may excuse the first but never the second.",
+        "legalBasis": "In Professional Services, Inc. v. Agana, the Court held that an operation requiring sponges is not complete until they are properly removed, and that leaving sponges or other foreign substances in the wound after closing the incision is at least prima facie negligence by the operating surgeon (and, by many authorities, negligence per se). Even when the urgent necessities of the case require a surgeon to leave a sponge because of the dangers of delay, it is his legal duty to inform the patient within a reasonable time of what he had been compelled to do, so that she may seek relief from the effects of the foreign object.",
+        "application": "The surgeon's emergency may explain why the sponge stayed in, but he must still tell the patient. In Agana, the surgeon closed the incision despite the nurses' report of two missing gauzes, told the patient nothing, and attributed her pain to the operation; the Court held that his initial negligence ripened into a deliberate wrongful act of deceiving his patient.",
+        "conclusion": "The emergency defense is incomplete: the surgeon remains liable if he fails to disclose the sponge. **Bar trap:** the emergency exception excuses only leaving the sponge, never hiding it from the patient."
+      },
+      "keyPoints": [
+        "An operation is not complete until the sponges are properly removed",
+        "Leaving a sponge after closing is at least prima facie negligence of the operating surgeon (negligence per se by many authorities)",
+        "Urgent necessity may justify leaving it, but the surgeon must inform the patient within a reasonable time",
+        "Concealment turned the surgeon's negligence into a deliberate wrongful act of deceiving the patient"
+      ],
+      "caseIds": [
+        "case-0033"
+      ],
+      "source": {
+        "caseTitle": "Professional Services, Inc. v. Agana",
+        "grNumber": "G.R. No. 126297",
+        "url": "https://lawphil.net/judjuris/juri2007/jan2007/gr_126297_2007.html",
+        "part": "I - G.R. No. 127590 (the surgeon's duties as to sponges left in the body)",
+        "excerpt": "An operation requiring the placing of sponges in the incision is not complete until the sponges are properly removed, and it is settled that the leaving of sponges or other foreign substances in the wound after the incision has been closed is at least prima facie negligence by the operating surgeon. To put it simply, such act is considered so inconsistent with due care as to raise an inference of negligence. There are even legions of authorities to the effect that such act is negligence per se. Of course, the Court is not blind to the reality that there are times when danger to a patient’s life precludes a surgeon from further searching missing sponges or foreign objects left in the body. But this does not leave him free from any obligation. Even if it has been shown that a surgeon was required by the urgent necessities of the case to leave a sponge in his patient’s abdomen, because of the dangers attendant upon delay, still, it is his legal duty to so inform his patient within a reasonable time thereafter by advising her of what he had been compelled to do. This is in order that she might seek relief from the effects of the foreign object left in her body as her condition might permit. … To our mind, what was initially an act of negligence by Dr. Ampil has ripened into a deliberate wrongful act of deceiving his patient."
+      }
+    },
+    {
+      "id": "q-0458",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "Distinguish apparent authority from corporate negligence as grounds for holding a hospital liable for injury to a patient treated by a consultant who is not its employee.",
+      "suggestedAnswer": {
+        "answer": "Under apparent authority, the hospital is held liable for the doctor's negligence because it held the doctor out as its agent; under corporate negligence, the hospital is held liable for its own negligence in performing its duties as a hospital.",
+        "legalBasis": "In Professional Services, Inc. v. Agana (2007), the Court explained that apparent authority (the \"holding out\" theory, ostensible agency or agency by estoppel) imposes liability not because of a real contractual relationship but because the principal misled the public into believing that the relationship or authority exists; a hospital that holds out a physician as its agent or employee is liable when a patient accepts treatment in the reasonable belief that it is rendered on the hospital's behalf (see Article 1869 of the Civil Code on implied agency). Corporate negligence is the judicial answer to hospital liability absent facts supporting respondeat superior or apparent authority; hospitals have duties such as (1) reasonable care in maintaining safe and adequate facilities and equipment, (2) selecting and retaining competent physicians, (3) overseeing or supervising all persons who practice medicine within their walls, and (4) formulating, adopting and enforcing adequate rules and policies that ensure quality care.",
+        "application": "In Agana, PSI was liable under apparent authority because it listed Dr. Ampil and Dr. Fuentes in its lobby directory as its accredited physicians, leading patients to believe it vouched for them. It was also directly liable for corporate negligence under Article 2176, because it did not investigate its own nurses' report of two missing gauzes, breaching its duty to oversee those who practice within its walls.",
+        "conclusion": "Apparent authority makes the hospital answer vicariously for the doctor; corporate negligence makes it answer directly for itself. **Bar trap:** the 2010 en banc resolution in the same case kept both grounds but declared the corporate-negligence liability pro hac vice (for that case only), and rejected an employer-employee relationship."
+      },
+      "keyPoints": [
+        "Apparent authority: liability by estoppel for the doctor's negligence, because the hospital held him out as its agent and the patient reasonably relied",
+        "Other names: holding out theory, ostensible agency, agency by estoppel",
+        "Corporate negligence: the hospital's direct liability for its own failure in its duties",
+        "The hospital's duties: safe facilities; competent physicians; supervision of those practicing within its walls; adequate rules and policies",
+        "In PSI, the 2010 resolution kept both grounds, the corporate-negligence ruling pro hac vice"
+      ],
+      "caseIds": [
+        "case-0033"
+      ],
+      "source": {
+        "caseTitle": "Professional Services, Inc. v. Agana",
+        "grNumber": "G.R. No. 126297",
+        "url": "https://lawphil.net/judjuris/juri2007/jan2007/gr_126297_2007.html",
+        "part": "III - G.R. No. 126297, Whether PSI Is Liable for the Negligence of Dr. Ampil",
+        "excerpt": "Apparent authority, or what is sometimes referred to as the \"holding out\" theory, or doctrine of ostensible agency or agency by estoppel, has its origin from the law of agency. It imposes liability, not as the result of the reality of a contractual relationship, but rather because of the actions of a principal or an employer in somehow misleading the public into believing that the relationship or the authority exists. … Thus, in cases where it can be shown that a hospital, by its actions, has held out a particular physician as its agent and/or employee and that a patient has accepted treatment from that physician in the reasonable belief that it is being rendered in behalf of the hospital, then the hospital will be liable for the physician’s negligence. … Recent years have seen the doctrine of corporate negligence as the judicial answer to the problem of allocating hospital’s liability for the negligent acts of health practitioners, absent facts to support the application of respondeat superior or apparent authority. … With the passage of time, more duties were expected from hospitals, among them: (1) the use of reasonable care in the maintenance of safe and adequate facilities and equipment; (2) the selection and retention of competent physicians; (3) the overseeing or supervision of all persons who practice medicine within its walls; and (4) the formulation, adoption and enforcement of adequate rules and policies that ensure quality care for its patients."
+      }
+    },
+    {
+      "id": "q-0459",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "A surgeon is told by the nurses, near the end of an operation, that two sponges are missing. A search fails, and he closes the incision. He tells the patient nothing, and when she later complains of severe pain he says it is a natural result of the surgery. Following Professional Services, Inc. v. Agana, how is his conduct characterized?",
+      "choices": {
+        "A": "He is not liable, because a surgeon may close the incision when a diligent search for the missing sponges fails.",
+        "B": "He is liable only if the patient proves through expert testimony that closing the incision fell below the standard of care.",
+        "C": "His initial negligence ripened into a deliberate wrongful act of deceiving his patient, because he had the duty to inform her of the missing sponges.",
+        "D": "He is liable only for failing to inform her, because closing the incision after a diligent search is never negligence."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court held that leaving sponges in the wound after closing the incision is at least prima facie negligence of the operating surgeon, and that even when urgent necessity forces a surgeon to leave a sponge, he must inform the patient within a reasonable time. Dr. Ampil told Natividad nothing and misled her about her pain, so \"what was initially an act of negligence by Dr. Ampil has ripened into a deliberate wrongful act of deceiving his patient.\" **A is wrong:** a failed search does not complete the operation; it is not complete until the sponges are removed. **B is wrong:** a foreign object left in the body raises an inference of negligence without expert testimony. **D is wrong:** the Court found him negligent both in closing despite the report and in concealing it. **Bar trap:** the emergency exception excuses only leaving the sponge, never hiding it.",
+      "caseIds": [
+        "case-0033"
+      ],
+      "source": {
+        "caseTitle": "Professional Services, Inc. v. Agana",
+        "grNumber": "G.R. No. 126297",
+        "url": "https://lawphil.net/judjuris/juri2007/jan2007/gr_126297_2007.html",
+        "part": "I - G.R. No. 127590 (Dr. Ampil's failure to inform the patient)",
+        "excerpt": "Here, Dr. Ampil did not inform Natividad about the missing two pieces of gauze. Worse, he even misled her that the pain she was experiencing was the ordinary consequence of her operation. Had he been more candid, Natividad could have taken the immediate and appropriate medical remedy to remove the gauzes from her body. To our mind, what was initially an act of negligence by Dr. Ampil has ripened into a deliberate wrongful act of deceiving his patient."
+      }
+    },
+    {
+      "id": "q-0460",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "Under this rule, the operating surgeon is the person in complete charge of the surgery room and all personnel connected with the operation, whose duty is to obey his orders. This is known as the",
+      "choices": {
+        "A": "Captain of the Ship rule.",
+        "B": "borrowed servant rule.",
+        "C": "doctrine of corporate negligence.",
+        "D": "doctrine of apparent authority."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** Professional Services, Inc. v. Agana: \"Under the 'Captain of the Ship' rule, the operating surgeon is the person in complete charge of the surgery room and all personnel connected with the operation. Their duty is to obey his orders.\" The Court applied it to hold Dr. Ampil, the lead surgeon, responsible for closing the incision despite the missing gauzes, and to absolve Dr. Fuentes. **B is wrong:** the decision does not use a borrowed servant rule; the rule described is the Captain of the Ship. **C is wrong:** corporate negligence concerns the hospital's own duties. **D is wrong:** apparent authority concerns a hospital's holding out of a doctor as its agent. **Bar trap:** the Captain of the Ship decides which doctor in the operating room had control.",
+      "caseIds": [
+        "case-0033"
+      ],
+      "source": {
+        "caseTitle": "Professional Services, Inc. v. Agana",
+        "grNumber": "G.R. No. 126297",
+        "url": "https://lawphil.net/judjuris/juri2007/jan2007/gr_126297_2007.html",
+        "part": "II - G.R. No. 126467 (the Captain of the Ship rule)",
+        "excerpt": "Under the \"Captain of the Ship\" rule, the operating surgeon is the person in complete charge of the surgery room and all personnel connected with the operation. Their duty is to obey his orders."
+      }
+    },
+    {
+      "id": "q-0461",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "Which of the following is NOT another name for apparent authority, as the doctrine is described in Professional Services, Inc. v. Agana?",
+      "choices": {
+        "A": "The \"holding out\" theory.",
+        "B": "The doctrine of ostensible agency.",
+        "C": "Agency by estoppel.",
+        "D": "Respondeat superior."
+      },
+      "correct": "D",
+      "explanation": "**D is correct (it is not another name).** The Court described \"[a]pparent authority, or what is sometimes referred to as the 'holding out' theory, or doctrine of ostensible agency or agency by estoppel\" (A, B and C). Respondeat superior is a different basis of liability: an employer's vicarious liability for its employees under Article 2180 of the Civil Code, which depends on an employment relationship; apparent authority applies even without one, because the principal misled the public into believing the relationship exists. **Bar trap:** apparent authority and respondeat superior both make a hospital answer for a doctor, but on different grounds.",
+      "caseIds": [
+        "case-0033"
+      ],
+      "source": {
+        "caseTitle": "Professional Services, Inc. v. Agana",
+        "grNumber": "G.R. No. 126297",
+        "url": "https://lawphil.net/judjuris/juri2007/jan2007/gr_126297_2007.html",
+        "part": "III - G.R. No. 126297 (apparent authority)",
+        "excerpt": "Apparent authority, or what is sometimes referred to as the \"holding out\" theory, or doctrine of ostensible agency or agency by estoppel, has its origin from the law of agency. It imposes liability, not as the result of the reality of a contractual relationship, but rather because of the actions of a principal or an employer in somehow misleading the public into believing that the relationship or the authority exists."
+      }
+    },
+    {
+      "id": "q-0462",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "Under the doctrine of corporate negligence, as discussed in Professional Services, Inc. v. Agana, which of the following is NOT among the duties expected of hospitals?",
+      "choices": {
+        "A": "The use of reasonable care in the maintenance of safe and adequate facilities and equipment.",
+        "B": "Guaranteeing the success of every operation performed within its walls.",
+        "C": "The overseeing or supervision of all persons who practice medicine within its walls.",
+        "D": "The formulation, adoption and enforcement of adequate rules and policies that ensure quality care for its patients."
+      },
+      "correct": "B",
+      "explanation": "**B is correct (it is not a duty).** The Court listed the hospital's duties as: (1) reasonable care in maintaining safe and adequate facilities and equipment; (2) selection and retention of competent physicians; (3) overseeing or supervision of all persons who practice medicine within its walls; and (4) formulation, adoption and enforcement of adequate rules and policies that ensure quality care. A, C and D are among them. No hospital guarantees results; its duties are of care, selection, supervision and policy. **Bar trap:** PSI was held to have breached the third duty by ignoring its nurses' report of missing gauzes.",
+      "caseIds": [
+        "case-0033"
+      ],
+      "source": {
+        "caseTitle": "Professional Services, Inc. v. Agana",
+        "grNumber": "G.R. No. 126297",
+        "url": "https://lawphil.net/judjuris/juri2007/jan2007/gr_126297_2007.html",
+        "part": "III - G.R. No. 126297 (the duties of a hospital under corporate negligence)",
+        "excerpt": "With the passage of time, more duties were expected from hospitals, among them: (1) the use of reasonable care in the maintenance of safe and adequate facilities and equipment; (2) the selection and retention of competent physicians; (3) the overseeing or supervision of all persons who practice medicine within its walls; and (4) the formulation, adoption and enforcement of adequate rules and policies that ensure quality care for its patients."
+      }
+    },
+    {
+      "id": "q-0463",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "In Professional Services, Inc. v. Agana (2007), why was the hospital held solidarily liable with Dr. Ampil?",
+      "choices": {
+        "A": "Because, apart from a general denial of responsibility, it failed to prove that it exercised the diligence of a good father of a family in the accreditation and supervision of Dr. Ampil.",
+        "B": "Because every hospital is solidarily liable with every doctor who operates in its premises.",
+        "C": "Because the patient's family signed a contract making the hospital a surety of the doctor.",
+        "D": "Because Dr. Ampil was a salaried employee of the hospital."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court held that PSI, \"apart from a general denial of its responsibility, failed to adduce evidence showing that it exercised the diligence of a good father of a family in the accreditation and supervision\" of Dr. Ampil, so it failed to discharge its burden under the last paragraph of Article 2180 and was solidarily liable; it was also directly liable for its own corporate negligence. **B is wrong:** there is no automatic liability for every doctor. **C is wrong:** no such contract figured in the case. **D is wrong:** the trial court found that the doctors were consultants, not salaried employees, and the 2010 en banc resolution confirmed that PSI was not Dr. Ampil's employer. **Bar trap:** in the 2010 resolution the Court changed the grounds of PSI's liability (ostensible agency and, pro hac vice, corporate negligence, not respondeat superior); know both rulings.",
+      "caseIds": [
+        "case-0033"
+      ],
+      "source": {
+        "caseTitle": "Professional Services, Inc. v. Agana",
+        "grNumber": "G.R. No. 126297",
+        "url": "https://lawphil.net/judjuris/juri2007/jan2007/gr_126297_2007.html",
+        "part": "III - G.R. No. 126297 (solidary liability)",
+        "excerpt": "Anent the corollary issue of whether PSI is solidarily liable with Dr. Ampil for damages, let it be emphasized that PSI, apart from a general denial of its responsibility, failed to adduce evidence showing that it exercised the diligence of a good father of a family in the accreditation and supervision of the latter. In neglecting to offer such proof, PSI failed to discharge its burden under the last paragraph of Article 2180 cited earlier, and, therefore, must be adjudged solidarily liable with Dr. Ampil. Moreover, as we have discussed, PSI is also directly liable to the Aganas."
       }
     }
   ]
