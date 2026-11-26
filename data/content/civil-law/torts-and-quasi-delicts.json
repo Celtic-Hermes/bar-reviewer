@@ -1,0 +1,251 @@
+{
+  "subject": "Civil Law",
+  "topic": "Torts and Quasi-delicts",
+  "cases": [
+    {
+      "id": "case-0030",
+      "status": "draft",
+      "name": "Reyes, et al. v. Sisters of Mercy Hospital, et al.",
+      "grNumber": "G.R. No. 130547",
+      "year": 2000,
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "facts": "Jorge Reyes had a recurring fever with chills for five days that home medicine did not relieve. On January 8, 1987 his wife brought him to the Mercy Community Clinic. Dr. Marlyn Rico examined him and, since typhoid fever was common in the area at the time (the clinic was seeing 15 to 20 cases a month), ordered a Widal Test, which came out positive. Dr. Marvie Blanes, who took over, ordered a compatibility test with the antibiotic chloromycetin, saw no adverse reaction, and had two 500-milligram doses given about three hours apart. Past midnight Jorge's temperature rose to 41°C and he had chills, vomiting and convulsions. Emergency measures failed, and he died at about 2:00 a.m., some ten hours after admission. His widow and children sued the hospital, its directress and the two doctors for damages, claiming he died not of typhoid but because chloromycetin was wrongly given. Their pathologist, who did the autopsy without opening the skull, said Jorge did not die of typhoid. Two specialists for the doctors said the diagnosis and the drug were correct and the autopsy was incomplete. The trial court and the Court of Appeals dismissed the complaint.",
+      "issue": "(1) Does the doctrine of res ipsa loquitur apply, so that no expert testimony is needed to prove the doctors' negligence? (2) Did the heirs prove specific acts of negligence by the doctors? (3) Are doctors, like common carriers, bound to observe extraordinary diligence?",
+      "ruling": "The Court denied the petition and affirmed the dismissal. (1) Res ipsa loquitur does not apply. A patient who had been sick with fever and chills for five days, unrelieved by medicine, dying a few hours after admission is not unusual or extraordinary; the alleged lack of care was not apparent to a layman, and the doctrine cannot apply to a suit that questions the merits of a diagnosis or of a scientific treatment. Expert testimony was therefore needed. (2) The heirs' only witness was a pathologist who was not a specialist in infectious diseases, had never autopsied a typhoid victim and had seen only about three typhoid cases, so his opinion was properly discarded. The defense experts showed that the Widal Test was a standard test, that the diagnosis was reasonable given the history and the local outbreak, that chloromycetin was the drug of choice, and that the dosage was within accepted limits. Doctors are only required to perform standard tests and procedures; they cannot be required to predict every reaction to a drug. (3) Extraordinary diligence is peculiar to common carriers. The standard for doctors is the reasonable average merit among ordinarily good physicians.",
+      "keyDoctrine": "Medical malpractice is the failure of a physician to apply the degree of care and skill ordinarily employed by the profession generally under similar conditions. Its four elements are duty, breach, injury and proximate causation, and expert testimony is usually needed to prove them. Res ipsa loquitur, which dispenses with expert testimony, applies only where a layman can tell from common knowledge that the result would not have happened with due care; it does not apply to the merits of a diagnosis or a scientific treatment. Doctors owe the reasonable average merit of ordinarily good physicians, not the extraordinary diligence of common carriers.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2000/oct2000/gr_130547_2000.html"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q-0432",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "What is medical malpractice, and what must a patient prove to hold a physician liable for it? Explain.",
+      "suggestedAnswer": {
+        "answer": "Medical malpractice is a particular form of negligence: the failure of a physician or surgeon to apply to his practice that degree of care and skill ordinarily employed by the profession generally, under similar conditions and in like surrounding circumstances. The patient must prove four elements: duty, breach, injury and proximate causation.",
+        "legalBasis": "Reyes v. Sisters of Mercy Hospital: a patient must prove that the physician either failed to do something a reasonably prudent physician would have done, or did something a reasonably prudent physician would not have done, and that the failure or action caused injury to the patient. The duty arises from the physician-patient relationship; the physician must use at least the level of care a reasonably competent doctor would use under the same circumstances. Because the causes of injuries in malpractice cases are determinable only in the light of scientific knowledge, expert testimony is usually necessary to prove the standard of care, its breach and causation.",
+        "application": "A patient who sues must therefore show (1) a physician-patient relationship giving rise to the duty; (2) a departure from what a reasonably prudent physician would do; (3) an injury; and (4) that the departure, not something else, caused the injury, ordinarily through a qualified expert. The only exception the Court recognized is res ipsa loquitur, where the injury itself shows negligence.",
+        "conclusion": "Medical malpractice is negligence measured against the care and skill ordinarily employed by the profession, proved through duty, breach, injury and proximate causation, usually with expert testimony. **Bar trap:** a bad result alone is not malpractice; the patient must show a breach of the standard of care that caused the injury."
+      },
+      "keyPoints": [
+        "Definition: failure to apply the degree of care and skill ordinarily employed by the profession generally, under similar conditions",
+        "Four elements: duty, breach, injury, proximate causation",
+        "Duty comes from the physician-patient relationship",
+        "Expert testimony is usually needed to prove the standard of care, breach and causation (res ipsa loquitur is the exception)"
+      ],
+      "caseIds": [
+        "case-0030"
+      ],
+      "source": {
+        "caseTitle": "Reyes, et al. v. Sisters of Mercy Hospital, et al.",
+        "grNumber": "G.R. No. 130547",
+        "url": "https://lawphil.net/judjuris/juri2000/oct2000/gr_130547_2000.html",
+        "part": "Ruling, the nature and elements of medical malpractice",
+        "excerpt": "Petitioner’s action is for medical malpractice. This is a particular form of negligence which consists in the failure of a physician or surgeon to apply to his practice of medicine that degree of care and skill which is ordinarily employed by the profession generally, under similar conditions, and in like surrounding circumstances. In order to successfully pursue such a claim, a patient must prove that the physician or surgeon either failed to do something which a reasonably prudent physician or surgeon would have done, or that he or she did something that a reasonably prudent physician or surgeon would not have done, and that the failure or action caused injury to the patient. There are thus four elements involved in medical negligence cases, namely: duty, breach, injury, and proximate causation. … As to this aspect of medical malpractice, the determination of the reasonable level of care and the breach thereof, expert testimony is essential. Inasmuch as the causes of the injuries involved in malpractice actions are determinable only in the light of scientific knowledge, it has been recognized that expert testimony is usually necessary to support the conclusion as to causation."
+      }
+    },
+    {
+      "id": "q-0433",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "Discuss the doctrine of res ipsa loquitur in medical negligence cases. What are its requisites, what is its effect, and when does it not apply?",
+      "suggestedAnswer": {
+        "answer": "Res ipsa loquitur (\"the thing speaks for itself\") lets the court find a physician negligent without expert testimony, because the injury itself provides the proof of negligence. It applies only where a layman can tell from common knowledge that the result would not have happened if due care had been used, and never to a suit on the merits of a diagnosis or a scientific treatment.",
+        "legalBasis": "In Reyes v. Sisters of Mercy Hospital (quoting Ramos v. Court of Appeals), the requisites are: (1) the accident was of a kind which does not ordinarily occur unless someone is negligent; (2) the instrumentality or agency which caused the injury was under the exclusive control of the person in charge; and (3) the injury was not due to any voluntary action or contribution of the person injured. When the doctrine applies, the patient need only prove a nexus between the act or omission complained of and the injury sustained while under the defendant's custody. It is not a rigid doctrine to be perfunctorily used, but a rule to be cautiously applied.",
+        "application": "It has been applied, for example, to a foreign object left in the body after an operation, an injury to a healthy part of the body not under treatment, removal of the wrong body part, and brain damage of a neurologically sound patient during a routine gallbladder operation (Ramos). It does not apply where the patient, already seriously ill, simply did not recover, or where the claim questions whether a diagnosis was correct or a treatment worked: the physician is not required at his peril to explain why a diagnosis was not correct or a treatment did not produce the desired result.",
+        "conclusion": "The doctrine dispenses with expert testimony only in cases within common knowledge. **Bar trap:** distinguish the failure to secure results (no presumption of negligence) from the occurrence of something unusual that does not ordinarily happen with proper care (res ipsa loquitur)."
+      },
+      "keyPoints": [
+        "Meaning: the injury itself provides the proof of negligence; expert testimony is dispensed with",
+        "Requisites: an accident that does not ordinarily occur without negligence; exclusive control by the defendant; no voluntary action or contribution of the injured person",
+        "Applied to matters within common knowledge, e.g., a foreign object left in the body, the wrong body part removed",
+        "Does not apply to the merits of a diagnosis or of a scientific treatment; failure to secure results is not negligence"
+      ],
+      "caseIds": [
+        "case-0030"
+      ],
+      "source": {
+        "caseTitle": "Reyes, et al. v. Sisters of Mercy Hospital, et al.",
+        "grNumber": "G.R. No. 130547",
+        "url": "https://lawphil.net/judjuris/juri2000/oct2000/gr_130547_2000.html",
+        "part": "Ruling, Res Ipsa Loquitur",
+        "excerpt": "There is a case when expert testimony may be dispensed with, and that is under the doctrine of res ipsa loquitur. … when the doctrine of res ipsa loquitor is availed by the plaintiff, the need for expert medical testimony is dispensed with because the injury itself provides the proof of negligence. … Thus, courts of other jurisdictions have applied the doctrine in the following situations: leaving of a foreign object in the body of the patient after an operation, injuries sustained on a healthy part of the body which was not under, or in the area, of treatment, removal of the wrong part of the body when another part was intended … Petitioners now contend that all requisites for the application of res ipsa loquitur were present, namely: (1) the accident was of a kind which does not ordinarily occur unless someone is negligent; (2) the instrumentality or agency which caused the injury was under the exclusive control of the person in charge; and (3) the injury suffered must not have been due to any voluntary action or contribution of the person injured. … Res ipsa loquitur is not a rigid or ordinary doctrine to be perfunctorily used but a rule to be cautiously applied, depending upon the circumstances of each case. … A distinction must be made between the failure to secure results, and the occurrence of something more unusual and not ordinarily found if the service or treatment rendered followed the usual procedure of those skilled in that particular practice. It must be conceded that the doctrine of res ipsa loquitur can have no application in a suit against a physician or a surgeon which involves the merits of a diagnosis or of a scientific treatment. The physician or surgeon is not required at his peril to explain why any particular diagnosis was not correct, or why any particular scientific treatment did not produce the desired result."
+      }
+    },
+    {
+      "id": "q-0434",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "A patient's heirs sue her doctor for damages. Their lawyer argues that the practice of medicine, like the business of a common carrier, is affected with public interest, so doctors must observe extraordinary diligence toward their patients, and any lapse below that makes the doctor liable. Is the argument correct? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. Doctors are not bound to observe extraordinary diligence; that standard is peculiar to common carriers. A doctor is bound to the reasonable average merit among ordinarily good physicians.",
+        "legalBasis": "Article 1733 of the Civil Code imposes extraordinary diligence on common carriers, from the nature of their business and for reasons of public policy. In Reyes v. Sisters of Mercy Hospital, the Court held that this standard is peculiar to common carriers. The practice of medicine is engaged in only by licensed, regulated professionals who are also bound by the Hippocratic Oath, so there is no need to require extraordinary diligence of them; the practice of medicine is already conditioned on the highest degree of diligence. The standard is not the average merit of all known practitioners, from the best to the worst, but the reasonable average merit among ordinarily good physicians.",
+        "application": "That medicine, like common carriage, is affected with public interest does not import the carrier's standard into medical cases. The heirs must prove that the doctor fell below the care and skill of ordinarily good physicians under similar circumstances, which usually needs expert testimony, not merely that the doctor could have been more careful.",
+        "conclusion": "The argument is wrong. The doctor's duty is reasonable diligence: the reasonable average merit among ordinarily good physicians. **Bar trap:** \"affected with public interest\" sounds like it leads to extraordinary diligence, but only common carriers are held to it."
+      },
+      "keyPoints": [
+        "Extraordinary diligence is peculiar to common carriers (Art. 1733, Civil Code)",
+        "Medicine is a licensed, state-regulated profession, also governed by the Hippocratic Oath",
+        "The standard for doctors is the reasonable average merit among ordinarily good physicians, not the average of all practitioners",
+        "The heirs must still prove a breach of that standard, usually through expert testimony"
+      ],
+      "caseIds": [
+        "case-0030"
+      ],
+      "source": {
+        "caseTitle": "Reyes, et al. v. Sisters of Mercy Hospital, et al.",
+        "grNumber": "G.R. No. 130547",
+        "url": "https://lawphil.net/judjuris/juri2000/oct2000/gr_130547_2000.html",
+        "part": "Ruling, Fourth (the diligence required of doctors)",
+        "excerpt": "Indeed, the standard contemplated is not what is actually the average merit among all known practitioners from the best to the worst and from the most to the least experienced, but the reasonable average merit among the ordinarily good physicians. … The standard of extraordinary diligence is peculiar to common carriers. … The practice of medicine is a profession engaged in only by qualified individuals. It is a right earned through years of education, training, and by first obtaining a license from the state through professional board examinations. Such license may, at any time and for cause, be revoked by the government. In addition to state regulation, the conduct of doctors is also strictly governed by the Hippocratic Oath, an ancient code of discipline and ethical rules which doctors have imposed upon themselves in recognition and acceptance of their great responsibility to society. Given these safeguards, there is no need to expressly require of doctors the observance of \"extraordinary\" diligence. As it is now, the practice of medicine is already conditioned upon the highest degree of diligence. And, as we have already noted, the standard contemplated for doctors is simply the reasonable average merit among ordinarily good physicians."
+      }
+    },
+    {
+      "id": "q-0435",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "The failure of a physician or surgeon to apply to his practice of medicine that degree of care and skill which is ordinarily employed by the profession generally, under similar conditions and in like surrounding circumstances, is known as",
+      "choices": {
+        "A": "medical malpractice.",
+        "B": "res ipsa loquitur.",
+        "C": "corporate negligence.",
+        "D": "the captain of the ship doctrine."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** In Reyes v. Sisters of Mercy Hospital, the Court defined medical malpractice as \"a particular form of negligence\" consisting in that failure. **B is wrong:** res ipsa loquitur is a rule of evidence that lets negligence be inferred from the injury itself; it is not the wrong. **C is wrong:** corporate negligence is the hospital's own failure in its duties as an institution, not a physician's lack of care and skill. **D is wrong:** the captain of the ship doctrine places the operating surgeon in complete charge of the operating room; it decides who is responsible, not what malpractice is. **Bar trap:** these doctrine names often appear together as choices; tie each to what it does.",
+      "caseIds": [
+        "case-0030"
+      ],
+      "source": {
+        "caseTitle": "Reyes, et al. v. Sisters of Mercy Hospital, et al.",
+        "grNumber": "G.R. No. 130547",
+        "url": "https://lawphil.net/judjuris/juri2000/oct2000/gr_130547_2000.html",
+        "part": "Ruling, the nature of medical malpractice",
+        "excerpt": "Petitioner’s action is for medical malpractice. This is a particular form of negligence which consists in the failure of a physician or surgeon to apply to his practice of medicine that degree of care and skill which is ordinarily employed by the profession generally, under similar conditions, and in like surrounding circumstances."
+      }
+    },
+    {
+      "id": "q-0436",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "Pedro had a high fever and chills for six days that his own medicines did not relieve. He was admitted to a clinic, diagnosed with typhoid fever through a standard test, and given the drug of choice. He died nine hours later. His heirs sue the doctors and invoke res ipsa loquitur so they need not present an expert. Will the doctrine apply?",
+      "choices": {
+        "A": "Yes, because a patient who walked into the clinic conscious and coherent would not ordinarily die within hours unless someone was negligent.",
+        "B": "Yes, because Pedro was under the exclusive control of the clinic and its doctors when he died.",
+        "C": "No, because his death after a serious illness was not unusual, and the claim questions the merits of a diagnosis and treatment, which needs expert opinion.",
+        "D": "No, because res ipsa loquitur never applies to suits against physicians and surgeons."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** In Reyes v. Sisters of Mercy Hospital, the patient had fever and chills for five days before admission and died about ten hours after. The Court held there was nothing unusual or extraordinary about his death, since he was already seriously ill and help came too late; the alleged lapse was not apparent to a layman; and res ipsa loquitur has no application to a suit that involves the merits of a diagnosis or of a scientific treatment. **A is wrong:** the speed of death alone does not show negligence when the patient was already gravely ill; that was the very argument the Court rejected. **B is wrong:** exclusive control is only one requisite; the first (an injury that does not ordinarily occur without negligence) was missing. **D is wrong:** the doctrine does apply in proper malpractice cases, for example a foreign object left in the body, or brain damage during a routine anesthesia as in Ramos. **Bar trap:** a sudden death in the hospital tempts you to say \"the thing speaks for itself\"; ask first whether a layman could tell that it would not have happened with due care.",
+      "caseIds": [
+        "case-0030"
+      ],
+      "source": {
+        "caseTitle": "Reyes, et al. v. Sisters of Mercy Hospital, et al.",
+        "grNumber": "G.R. No. 130547",
+        "url": "https://lawphil.net/judjuris/juri2000/oct2000/gr_130547_2000.html",
+        "part": "Ruling, Res Ipsa Loquitur (application to the facts)",
+        "excerpt": "In this case, while it is true that the patient died just a few hours after professional medical assistance was rendered, there is really nothing unusual or extraordinary about his death. Prior to his admission, the patient already had recurring fevers and chills for five days unrelieved by the analgesic, antipyretic, and antibiotics given him by his wife. This shows that he had been suffering from a serious illness and professional medical help came too late for him. Respondents alleged failure to observe due care was not immediately apparent to a layman so as to justify application of res ipsa loquitur. The question required expert opinion on the alleged breach by respondents of the standard of care required by the circumstances."
+      }
+    },
+    {
+      "id": "q-0437",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "As enumerated in Reyes v. Sisters of Mercy Hospital, which of the following is NOT a requisite for the application of res ipsa loquitur?",
+      "choices": {
+        "A": "The accident was of a kind which does not ordinarily occur unless someone is negligent.",
+        "B": "The instrumentality or agency which caused the injury was under the exclusive control of the person in charge.",
+        "C": "The injury suffered was not due to any voluntary action or contribution of the person injured.",
+        "D": "The defendant physician admitted a departure from the standard medical procedure."
+      },
+      "correct": "D",
+      "explanation": "**D is correct (it is not a requisite).** The requisites listed in Reyes are A, B and C: an accident that does not ordinarily occur unless someone is negligent, exclusive control of what caused the injury by the person in charge, and no voluntary action or contribution of the injured person. An admission by the doctor is not needed; the whole point of the doctrine is that the injury itself provides the proof of negligence, without expert or direct proof. **A, B and C are wrong answers** because each is one of the three requisites. **Bar trap:** a requisite that sounds like extra proof (an admission, an expert's opinion) is the opposite of what res ipsa loquitur is for.",
+      "caseIds": [
+        "case-0030"
+      ],
+      "source": {
+        "caseTitle": "Reyes, et al. v. Sisters of Mercy Hospital, et al.",
+        "grNumber": "G.R. No. 130547",
+        "url": "https://lawphil.net/judjuris/juri2000/oct2000/gr_130547_2000.html",
+        "part": "Ruling, Res Ipsa Loquitur (the requisites)",
+        "excerpt": "Petitioners now contend that all requisites for the application of res ipsa loquitur were present, namely: (1) the accident was of a kind which does not ordinarily occur unless someone is negligent; (2) the instrumentality or agency which caused the injury was under the exclusive control of the person in charge; and (3) the injury suffered must not have been due to any voluntary action or contribution of the person injured."
+      }
+    },
+    {
+      "id": "q-0438",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "In a suit claiming that doctors misdiagnosed typhoid fever and gave a fatal drug, the heirs' only expert is a pathologist who performed the autopsy. He is not a specialist in infectious diseases, has never autopsied a typhoid victim, and has seen only about three typhoid cases. Following Reyes v. Sisters of Mercy Hospital, how should his opinion that the doctors erred in their diagnosis be treated?",
+      "choices": {
+        "A": "It must be given full weight, because a pathologist who performed the autopsy is always the best witness on the cause of death.",
+        "B": "It was properly discarded, because he was not qualified to prove that the doctor erred in diagnosing typhoid fever.",
+        "C": "It shifts the burden to the doctors to prove that the patient died of typhoid fever.",
+        "D": "It is unnecessary, because the heirs may rely on res ipsa loquitur to prove a wrong diagnosis."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court held that the pathologist was not an expert on the matter: he was not a specialist on infectious diseases like typhoid fever, had not yet autopsied a typhoid victim, and had treated only about three typhoid cases; so he was \"not qualified to prove that Dr. Marlyn Rico erred in her diagnosis,\" and the lower courts correctly discarded his testimony. **A is wrong:** the expert must be qualified on the very question in issue (here, the diagnosis of an infectious disease), not merely have examined the body. **C is wrong:** the burden of proving that the patient had another illness stayed with the heirs, who failed to present expert opinion on it. **D is wrong:** res ipsa loquitur has no application to the merits of a diagnosis. **Bar trap:** compare Ramos, where a pulmonologist's opinion on anesthesia was rejected for the same reason; the expert's field must match the issue.",
+      "caseIds": [
+        "case-0030"
+      ],
+      "source": {
+        "caseTitle": "Reyes, et al. v. Sisters of Mercy Hospital, et al.",
+        "grNumber": "G.R. No. 130547",
+        "url": "https://lawphil.net/judjuris/juri2000/oct2000/gr_130547_2000.html",
+        "part": "Ruling, Specific Acts of Negligence (First: the qualification of the expert)",
+        "excerpt": "First. While petitioners presented Dr. Apolinar Vacalares as an expert witness, we do not find him to be so as he is not a specialist on infectious diseases like typhoid fever. Furthermore, although he may have had extensive experience in performing autopsies, he admitted that he had yet to do one on the body of a typhoid victim at the time he conducted the postmortem on Jorge Reyes. It is also plain from his testimony that he has treated only about three cases of typhoid fever. … He is thus not qualified to prove that Dr. Marlyn Rico erred in her diagnosis. Both lower courts were therefore correct in discarding his testimony, which is really inadmissible."
+      }
+    },
+    {
+      "id": "q-0439",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "A patient dies of a rare allergic reaction to an antibiotic, despite a negative skin test done before the drug was given. Under the ruling in Reyes v. Sisters of Mercy Hospital, does the reaction alone establish the doctors' negligence?",
+      "choices": {
+        "A": "Yes, because doctors must guarantee that no drug they prescribe will cause a harmful reaction.",
+        "B": "Yes, because a negative skin test that turns out wrong is proof that the test was performed negligently.",
+        "C": "No, but only because the patient's family consented to the treatment.",
+        "D": "No, because the law requires doctors only to perform the standard tests and procedures; it cannot require them to predict every possible reaction to every drug."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** Quoting the Court of Appeals with approval, the Court held that even if the patient suffered an anaphylactic shock, \"this, of itself, would not yet establish the negligence of the appellee-physicians for all that the law requires of them is that they perform the standard tests and perform standard procedures. The law cannot require them to predict every possible reaction to all drugs administered.\" The burden was on the heirs to show that the doctors ignored standard procedure. **A is wrong:** doctors are not guarantors of results. **B is wrong:** the Court noted that skin testing with such drugs is generally not reliable, so a negative test does not rule out a reaction. **C is wrong:** consent was not the basis of the ruling; the doctors were not negligent because they followed standard procedure. **Bar trap:** an adverse outcome is not, by itself, a breach of the standard of care.",
+      "caseIds": [
+        "case-0030"
+      ],
+      "source": {
+        "caseTitle": "Reyes, et al. v. Sisters of Mercy Hospital, et al.",
+        "grNumber": "G.R. No. 130547",
+        "url": "https://lawphil.net/judjuris/juri2000/oct2000/gr_130547_2000.html",
+        "part": "Ruling, Third (the standard tests and procedures)",
+        "excerpt": "What all this means legally is that even if the deceased suffered from an anaphylactic shock, this, of itself, would not yet establish the negligence of the appellee-physicians for all that the law requires of them is that they perform the standard tests and perform standard procedures. The law cannot require them to predict every possible reaction to all drugs administered. The onus probandi was on the appellants to establish, before the trial court, that the appellee-physicians ignored standard medical procedure, prescribed and administered medication with recklessness and exhibited an absence of the competence and skills expected of general practitioners similarly situated."
+      }
+    }
+  ]
+}
