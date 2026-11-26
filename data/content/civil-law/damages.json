@@ -136,6 +136,21 @@
       "ruling": "The Court denied the petition but modified the award. Interest may be imposed even without stipulation: under Article 2210, interest may in the court's discretion be allowed on damages for breach of contract, and the seller, who used the money and failed to return it, was in default from the demand on September 27, 2000. The rate is 12%, because the transaction was a forbearance of money: the phrase \"forbearance of money, goods or credits\" has a meaning separate from a loan and covers arrangements where a person acquiesces to the temporary use of his money pending the happening of certain events or the fulfillment of conditions. The buyers parted with their money before the conditions were fulfilled, and the seller's unwarranted withholding of it amounts to an involuntary loan. Eastern Shipping and Reformina involved torts, with no forbearance and damages not reasonably certain at demand. The 12% runs from the demand until full satisfaction. Attorney's fees were warranted because the buyers were compelled to litigate, but were reduced to ₱50,000, since they must always be reasonable.",
       "keyDoctrine": "Interest may be awarded on damages for breach of contract even without a stipulation (Art. 2210), from default upon demand. \"Forbearance of money, goods or credits\" is distinct from a loan: it covers arrangements where a person acquiesces to the temporary use of his money pending the happening of events or the fulfillment of conditions; the unwarranted withholding of money that should be returned is a forbearance, an involuntary loan. Attorney's fees under Art. 2208 must always be reasonable. (The 12% rate then applied to forbearances was later lowered to 6% from July 1, 2013; check the current rate.)",
       "sourceUrl": "https://lawphil.net/judjuris/juri2012/apr2012/gr_175139_2012.html"
+    },
+    {
+      "id": "case-0057",
+      "status": "draft",
+      "name": "Sunga-Chan, et al. v. Court of Appeals, et al.",
+      "grNumber": "G.R. No. 164401",
+      "year": 2008,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "facts": "Lamberto Chua and Jacinto Sunga formed a partnership in 1977 to market liquefied petroleum gas under the name Shellite, registered as Jacinto's sole proprietorship. After Jacinto died, his widow Cecilia and daughter Lilibeth Sunga-Chan continued the business without Chua's consent and ignored his demands for accounting and winding up. Chua sued and won: a final judgment ordered an accounting, the return of his one-half share of the partnership assets, unreceived profits of ₱35,000 a month \"with legal rate of interest until fully paid\", and damages and fees; it became final on December 20, 2001. In execution, the trial court approved Chua's computation of ₱8,733,644.75, which added 12% interest to his share of the assets and to the profits. Lilibeth's property was levied and sold to Chua for ₱8 million.",
+      "issue": "(1) Was the interest added to Chua's claims proper, and at what rates? (2) Is the petitioners' liability solidary? (3) May the absolute community property of Lilibeth and her husband answer for the judgment?",
+      "ruling": "The petition was partly granted. Applying the Eastern Shipping rules, the unreceived profits earn 6% from the trial court's decision (October 7, 1997) to its finality (December 20, 2001), and then, with the added interest, 12% from finality until paid, as the award is by then equivalent to a forbearance of credit; the goodwill value and the damages and fees earn 12% from finality. But Chua's one-half share of the partnership assets was an unliquidated claim that earns no interest until reasonably determined: the norm is \"reasonably determinable\", not determinable by mathematical computation. Since the judgment itself required an accounting and inventory, his share became liquidated only when the trial court approved the accounting, so no interest attaches to it. Chua's claim was reduced to ₱5,529,392.52, and he must pay the excess of his ₱8 million bid. The obligation is solidary because the acts complained of were not severable, the duty to account was indivisible, and the petitioners resisted a legitimate claim in bad faith; and the absolute community may answer for debts contracted by one spouse to the extent the family benefited.",
+      "keyDoctrine": "Interest does not run on an unliquidated claim until it is reasonably determinable, which is not the same as determinable by mathematical computation; a share that can be fixed only after an accounting becomes liquidated only when the accounting is approved. Under the Eastern Shipping rules, an award not involving a loan or forbearance earns 6% from the judgment, and from finality the award (with the interest added) earns the forbearance rate until satisfied. (The 12% rate was later lowered to 6% from July 1, 2013; check the current rate.)",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2008/jun2008/gr_164401_2008.html"
     }
   ],
   "questions": [
@@ -2207,6 +2222,237 @@
         "url": "https://lawphil.net/judjuris/juri2012/apr2012/gr_175139_2012.html",
         "part": "Our Ruling, the disposition",
         "excerpt": "WHEREFORE, the Petition for Review is DENIED. The May 12, 2006 Decision of the Court of Appeals in CA-G.R. CV No. 83123 is AFFIRMED with MODIFICATIONS that the rate of interest shall be twelve percent (12%) per annum, computed from September 27, 2000 until fully satisfied. The award of attorney’s fees is further reduced to ₱50,000.00."
+      }
+    },
+    {
+      "id": "q-0648",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "A final judgment ordered the defendants to render an accounting and inventory of a partnership's assets and to deliver to the plaintiff his one-half share. In execution, the plaintiff added 12% interest on his share of the assets from the time the business closed, arguing that his claim was liquidated because it could be determined by mathematical computation. The court of appeals agreed. Is the plaintiff's claim correct? Explain, citing Sunga-Chan v. Court of Appeals.",
+      "suggestedAnswer": {
+        "answer": "No. The share in the partnership assets was an unliquidated claim that earns no interest until reasonably determined, and it became liquidated only when the trial court approved the accounting.",
+        "legalBasis": "In Sunga-Chan v. CA, the Court agreed that the partner's share and interest in the assets \"partake of an unliquidated claim which, until reasonably determined, shall not earn interest for him.\" The legal norm for interest to accrue is \"reasonably determinable,\" not determinable by mathematical computation, as the Court of Appeals had declared. The judgment's own directive to render an accounting, inventory and appraisal recognized that the exact share could not be determined with reasonable precision without that process; a liquidated claim cannot validly be asserted without accounting.",
+        "application": "The plaintiff's share could be fixed only after the inventory and accounting. It became liquidated only upon the trial court's approval of the accounting report, after the computation was submitted, so no interest could be added to it.",
+        "conclusion": "No interest on the share of the assets. **Bar trap:** \"capable of mathematical computation\" is not the test; the test is whether the amount is reasonably determinable, and an amount that needs an accounting is not."
+      },
+      "keyPoints": [
+        "No interest on an unliquidated claim until reasonably determined (Art. 2213)",
+        "The norm is \"reasonably determinable\", not \"determinable by mathematical computation\"",
+        "The judgment's order to account shows the share could not be fixed without accounting",
+        "A liquidated claim cannot be asserted without accounting",
+        "The share became liquidated only when the accounting was approved"
+      ],
+      "caseIds": [
+        "case-0057"
+      ],
+      "source": {
+        "caseTitle": "Sunga-Chan, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 164401",
+        "url": "https://lawphil.net/judjuris/juri2008/jun2008/gr_164401_2008.html",
+        "part": "The Court's Ruling, first issue (interest on the share of the partnership assets)",
+        "excerpt": "Anent the impasse over the partnership assets, we are inclined to agree with petitioners’ assertion that Chua’s share and interest on such assets partake of an unliquidated claim which, until reasonably determined, shall not earn interest for him. As may be noted, the legal norm for interest to accrue is \"reasonably determinable,\" not, as Chua suggested and the CA declared, determinable by mathematical computation. The Court has certainly not lost sight of the fact that the October 7, 1997 RTC decision clearly directed petitioners to render an accounting, inventory, and appraisal of the partnership assets and then to wind up the partnership affairs by restituting and delivering to Chua his one-half share of the accounted partnership assets. The directive itself is a recognition that the exact share and interest of Chua over the partnership cannot be determined with reasonable precision without going through with the inventory and accounting process. In fine, a liquidated claim cannot validly be asserted without accounting. In net effect, Chua’s interest and share over the partnership asset, exclusive of the goodwill, assumed the nature of a liquidated claim only after the trial court, through its November 6, 2002 resolution, approved the assets inventory and accounting report on such assets."
+      }
+    },
+    {
+      "id": "q-0649",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "A trial court's judgment, rendered on March 1, 2010, ordered the defendants to pay the plaintiff his unreceived profits from a partnership business, a fixed amount per month, \"with legal rate of interest until fully paid.\" The judgment became final on March 1, 2012, but the defendants did not pay. Following the approach in Sunga-Chan v. Court of Appeals, what interest should the profits earn, and for which periods?",
+      "suggestedAnswer": {
+        "answer": "The profits should earn 6% a year from the date of the trial court's decision (March 1, 2010) until it became final (March 1, 2012); after that, the total profits with the added interest should earn the forbearance rate (12% in Sunga-Chan) from finality until fully paid.",
+        "legalBasis": "In Sunga-Chan v. CA, applying the Eastern Shipping rules, the Court held that the award of earned but unremitted profits \"must earn interest at 6% per annum reckoned from October 7, 1997, the rendition date of the RTC decision, until December 20, 2001, when the said decision became final and executory. Thereafter, the total of the monthly profits inclusive of the add on 6% interest shall earn 12% per annum reckoned from December 20, 2001 until fully paid, as the award for that item is considered to be, by then, equivalent to a forbearance of credit.\"",
+        "application": "The profits award does not arise from a loan or forbearance, so the 6% rate under Article 2209 applies until finality. Once the judgment is final and unpaid, the period is treated as a forbearance of credit, and the base for the higher rate includes the 6% interest already earned.",
+        "conclusion": "6% from the decision to finality; then the forbearance rate on profits plus interest until paid. **Bar trap:** after finality, the higher rate applies to the total, including the 6% interest already accrued. Note that the 12% rate was later lowered to 6% from July 1, 2013 (BSP Circular No. 799, Nacar v. Gallery Frames), so the rate for the period after finality must be checked against the current rule."
+      },
+      "keyPoints": [
+        "Profits award: not a loan or forbearance, so 6% (Art. 2209)",
+        "6% from the trial court's decision until finality",
+        "From finality: 12% on the profits plus the 6% interest added",
+        "After finality the award is equivalent to a forbearance of credit",
+        "The 12% rate was later lowered to 6% from July 1, 2013"
+      ],
+      "caseIds": [
+        "case-0057"
+      ],
+      "source": {
+        "caseTitle": "Sunga-Chan, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 164401",
+        "url": "https://lawphil.net/judjuris/juri2008/jun2008/gr_164401_2008.html",
+        "part": "The Court's Ruling, first issue (interest on the unreceived profits)",
+        "excerpt": "Guided by the foregoing rules, the award to Chua of the amount representing earned but unremitted profits, i.e.. PhP 35,000 monthly, from January 1988 until May 30, 1992, must earn interest at 6% per annum reckoned from October 7, 1997, the rendition date of the RTC decision, until December 20, 2001, when the said decision became final and executory. Thereafter, the total of the monthly profits inclusive of the add on 6% interest shall earn 12% per annum reckoned from December 20, 2001 until fully paid, as the award for that item is considered to be, by then, equivalent to a forbearance of credit. Likewise, the PhP 250,000 award, representing the goodwill value of the business, the award of PhP 50,000 for moral and exemplary damages, PhP 25,000 attorney’s fee, and PhP 25,000 litigation fee shall earn 12% per annum from December 20, 2001 until fully paid."
+      }
+    },
+    {
+      "id": "q-0650",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "After their father's death, a widow and her daughter continued a partnership business against the surviving partner's will and refused to account. Held liable to him, they argue that their liability is only joint, so the sheriff could not levy on the daughter's absolute community property with her husband for the whole judgment. Are they correct? Explain, citing Sunga-Chan v. Court of Appeals.",
+      "suggestedAnswer": {
+        "answer": "No. Their obligation is solidary, and the daughter's absolute community property may answer for it.",
+        "legalBasis": "In Sunga-Chan v. CA, the Court held the obligation solidary because (1) continuing the business against the partner's will gave rise to a solidary obligation, the acts not being severable, a case where the nature of the obligation requires solidarity under Article 1207; (2) the duty to remit his share proceeds from the indivisible obligation to account; and (3) the obligation to pay damages and fees is solidary, the petitioners having resisted in bad faith a legitimate claim. The community property is not exempt from execution, and under Article 94 of the Family Code the absolute community is liable for debts contracted by either spouse without the other's consent to the extent the family benefited; the daughter's use of the business assets may reasonably be considered to have been for her and her husband's benefit.",
+        "application": "It is impossible to draw the line where one petitioner's liability ends and the other's begins, or to quantify how much each misappropriated. The levy on the daughter's community property for the whole obligation was valid.",
+        "conclusion": "Solidary liability; the community property answers. **Bar trap:** solidarity is not presumed (Art. 1207), but it exists when the law or the nature of the obligation requires it, as here."
+      },
+      "keyPoints": [
+        "Solidarity only when the obligation states it, or the law or nature of the obligation requires it (Art. 1207)",
+        "The acts complained of were not severable; the duty to account was indivisible",
+        "Bad-faith resistance to a legitimate claim: damages and fees solidary",
+        "Community property not exempt from execution",
+        "Art. 94, Family Code: the community answers to the extent the family benefited"
+      ],
+      "caseIds": [
+        "case-0057"
+      ],
+      "source": {
+        "caseTitle": "Sunga-Chan, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 164401",
+        "url": "https://lawphil.net/judjuris/juri2008/jun2008/gr_164401_2008.html",
+        "part": "The Court's Ruling, second and third issues (solidary liability, community property)",
+        "excerpt": "For one, the complaint of Chua for winding up of partnership affairs, accounting, appraisal, and recovery of shares and damages is clearly a suit to enforce a solidary or joint and several obligation on the part of petitioners. As it were, the continuance of the business and management of Shellite by petitioners against the will of Chua gave rise to a solidary obligation, the acts complained of not being severable in nature. Indeed, it is well-nigh impossible to draw the line between when the liability of one petitioner ends and the liability of the other starts. In this kind of situation, the law itself imposes solidary obligation. … For the other, the duty of petitioners to remit to Chua his half interest and share of the total partnership assets proceeds from petitioners’ indivisible obligation to render an accounting and inventory of such assets. The need for the imposition of a solidary liability becomes all the more pronounced considering the impossibility of quantifying how much of the partnership assets or profits was misappropriated by each petitioner. And for a third, petitioners’ obligation for the payment of damages and attorney’s and litigation fees ought to be solidary in nature, they having resisted in bad faith a legitimate claim and thus compelled Chua to litigate. … Absent any indication otherwise, the use and appropriation by petitioner Sunga-Chan of the assets of Shellite even after the business was discontinued on May 30, 1992 may reasonably be considered to have been used for her and her husband’s benefit."
+      }
+    },
+    {
+      "id": "q-0651",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Under Sunga-Chan v. Court of Appeals, what is the legal norm for interest to accrue on a claim?",
+      "choices": {
+        "A": "The claim must be determinable by mathematical computation.",
+        "B": "The claim must be stated in the complaint.",
+        "C": "The claim must be reasonably determinable.",
+        "D": "The claim must be supported by an official receipt."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court said: \"the legal norm for interest to accrue is 'reasonably determinable,' not, as Chua suggested and the CA declared, determinable by mathematical computation.\" **A is wrong:** that is the test the Court rejected. **B and D are wrong:** neither is the norm. **Bar trap:** almost anything can be computed once figures are known; the question is whether the amount was reasonably determinable at the time.",
+      "caseIds": [
+        "case-0057"
+      ],
+      "source": {
+        "caseTitle": "Sunga-Chan, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 164401",
+        "url": "https://lawphil.net/judjuris/juri2008/jun2008/gr_164401_2008.html",
+        "part": "The Court's Ruling, first issue (the test for interest on unliquidated claims)",
+        "excerpt": "As may be noted, the legal norm for interest to accrue is \"reasonably determinable,\" not, as Chua suggested and the CA declared, determinable by mathematical computation."
+      }
+    },
+    {
+      "id": "q-0652",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "In Sunga-Chan v. Court of Appeals, when did the partner's share in the partnership assets (exclusive of goodwill) become a liquidated claim?",
+      "choices": {
+        "A": "When the partnership was formed.",
+        "B": "When the partner first demanded an accounting.",
+        "C": "When the trial court's decision became final and executory.",
+        "D": "Only after the trial court approved the assets inventory and accounting report."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The Court held that the share \"assumed the nature of a liquidated claim only after the trial court, through its November 6, 2002 resolution, approved the assets inventory and accounting report on such assets,\" since \"a liquidated claim cannot validly be asserted without accounting.\" **A, B and C are wrong:** the share could not be determined with reasonable precision until the accounting was done. **Bar trap:** a final judgment ordering an accounting does not by itself liquidate the claim.",
+      "caseIds": [
+        "case-0057"
+      ],
+      "source": {
+        "caseTitle": "Sunga-Chan, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 164401",
+        "url": "https://lawphil.net/judjuris/juri2008/jun2008/gr_164401_2008.html",
+        "part": "The Court's Ruling, first issue (the share of the partnership assets)",
+        "excerpt": "In fine, a liquidated claim cannot validly be asserted without accounting. In net effect, Chua’s interest and share over the partnership asset, exclusive of the goodwill, assumed the nature of a liquidated claim only after the trial court, through its November 6, 2002 resolution, approved the assets inventory and accounting report on such assets."
+      }
+    },
+    {
+      "id": "q-0653",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Why did the Court in Sunga-Chan v. Court of Appeals refuse to disturb the ₱250,000 award for the partner's share in the goodwill?",
+      "choices": {
+        "A": "Because the parties, by their own judicial admissions, agreed on that monetary value.",
+        "B": "Because goodwill is never subject to proof.",
+        "C": "Because the amount was computed by a certified public accountant.",
+        "D": "Because goodwill earns no interest."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court noted that \"the parties, by their own judicial admissions, agreed on the monetary value, i.e., PhP 250,000, of this item,\" so the petitioners contradicted themselves in calling it baseless. **B is wrong:** no such rule was stated. **C is wrong:** that was not the reason. **D is wrong:** the goodwill award earned 12% from finality. **Bar trap:** a party cannot dispute an amount it admitted in its own pleadings or reports.",
+      "caseIds": [
+        "case-0057"
+      ],
+      "source": {
+        "caseTitle": "Sunga-Chan, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 164401",
+        "url": "https://lawphil.net/judjuris/juri2008/jun2008/gr_164401_2008.html",
+        "part": "The Court's Ruling, first issue (the goodwill)",
+        "excerpt": "From the foregoing submitted valuation reports, there can be no dispute about the goodwill earned thru the years by Shellite. In fact, the parties, by their own judicial admissions, agreed on the monetary value, i.e., PhP 250,000, of this item. Clearly then, petitioners contradict themselves when they say that such amount of goodwill is without basis."
+      }
+    },
+    {
+      "id": "q-0654",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "As restated in Sunga-Chan v. Court of Appeals, which provision governs interest on indemnities in the concept of damages arising from default in the performance of obligations in general, not involving a loan or forbearance?",
+      "choices": {
+        "A": "Article 2209 of the Civil Code, prescribing a yearly 6% interest.",
+        "B": "Central Bank Circular No. 416, prescribing 12%.",
+        "C": "Article 1956 of the Civil Code.",
+        "D": "Article 2208 of the Civil Code."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court said that for \"transactions involving payment of indemnities in the concept of damages arising from default in the performance of obligations in general and/or for money judgment not involving a loan or forbearance of money, goods, or credit, the governing provision is Art. 2209 of the Civil Code prescribing a yearly 6% interest.\" **B is wrong:** the circular applied to loans and forbearances. **C is wrong:** Article 1956 concerns stipulated interest. **D is wrong:** Article 2208 concerns attorney's fees. **Bar trap:** classify the obligation before picking the rate.",
+      "caseIds": [
+        "case-0057"
+      ],
+      "source": {
+        "caseTitle": "Sunga-Chan, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 164401",
+        "url": "https://lawphil.net/judjuris/juri2008/jun2008/gr_164401_2008.html",
+        "part": "The Court's Ruling, first issue (the rates under Reformina)",
+        "excerpt": "And for transactions involving payment of indemnities in the concept of damages arising from default in the performance of obligations in general and/or for money judgment not involving a loan or forbearance of money, goods, or credit, the governing provision is Art. 2209 of the Civil Code prescribing a yearly 6% interest."
+      }
+    },
+    {
+      "id": "q-0655",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "In Sunga-Chan v. Court of Appeals, the property of the judgment debtor was sold at auction to the judgment creditor for ₱8 million, but the Court reduced his legitimate claim to ₱5,529,392.52. What did the Court order?",
+      "choices": {
+        "A": "The auction sale was annulled.",
+        "B": "The excess was forfeited in favor of the State.",
+        "C": "Subject to the creditor's payment of the excess (₱2,470,607.48) to the debtor, the confirmation of the sale and the writ of possession were affirmed.",
+        "D": "The creditor kept the property without paying anything more."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court said that \"Chua owes petitioner Sunga-Chan the amount of PhP 2,470,607.48, representing the excess of the purchase price over his legitimate claims,\" and affirmed the confirmation of the final deed of sale and the writ of possession \"subject to the payment by Chua\" of that amount. **A is wrong:** the levy and sale were valid. **B and D are wrong:** the excess belongs to the debtor. **Bar trap:** a creditor who bids more than his claim must pay the difference.",
+      "caseIds": [
+        "case-0057"
+      ],
+      "source": {
+        "caseTitle": "Sunga-Chan, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 164401",
+        "url": "https://lawphil.net/judjuris/juri2008/jun2008/gr_164401_2008.html",
+        "part": "The Court's Ruling, the disposition",
+        "excerpt": "In net effect, Chua owes petitioner Sunga-Chan the amount of PhP 2,470,607.48, representing the excess of the purchase price over his legitimate claims. … Therefore, subject to the payment by Chua of PhP 2,470,607.48 to petitioner Sunga-Chan, we affirm the RTC’s April 11, 2005 resolution, confirming the sheriff’s final deed of sale of the levied property, ordering the Registry of Deeds of Manila to cancel TCT No. 208782, and issuing a writ of possession in favor of Chua."
       }
     }
   ]
