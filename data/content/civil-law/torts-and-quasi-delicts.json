@@ -61,6 +61,21 @@
       "ruling": "The Court denied all three petitions. (1) Dr. Ampil was liable. Leaving sponges in the wound after the incision is closed is at least prima facie negligence by the operating surgeon. Even if an emergency forces a surgeon to leave a sponge, he has the legal duty to tell the patient within a reasonable time. Dr. Ampil closed the incision despite the nurses' report, did not tell Natividad, and misled her about her pain, so his negligence ripened into a deliberate wrongful act of deceiving his patient. (2) Dr. Fuentes was not liable: under the Captain of the Ship rule the lead surgeon, Dr. Ampil, was in complete charge, and it was his order to close the incision that caused the injury, so the requisite of control and management was missing as to Dr. Fuentes. (3) PSI was liable: by listing Dr. Ampil and Dr. Fuentes in its lobby directory as its accredited physicians, it held them out as its agents (apparent authority), and it was directly liable for its own corporate negligence in not investigating the nurses' report of the missing gauzes. Having failed to prove the diligence of a good father of a family in accrediting and supervising Dr. Ampil, it was solidarily liable with him. (On a second motion for reconsideration, the Court en banc in 2010 kept PSI liable on apparent authority and, for this case only, corporate negligence, but not on an employer-employee relationship; see the 2010 resolution.)",
       "keyDoctrine": "Leaving a sponge or other foreign object in a patient after the incision is closed is at least prima facie negligence of the operating surgeon, who must also inform the patient within a reasonable time if he had to leave it. Under the Captain of the Ship rule the operating surgeon is in complete charge of the operating room. A hospital may be liable for a doctor's negligence under apparent authority (holding the doctor out as its agent, on which the patient reasonably relies) and directly for its own corporate negligence, such as failing to supervise those who practice within its walls.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2007/jan2007/gr_126297_2007.html"
+    },
+    {
+      "id": "case-0034",
+      "status": "draft",
+      "name": "Professional Services, Inc. v. Court of Appeals and Agana (Resolution)",
+      "grNumber": "G.R. No. 126297",
+      "year": 2010,
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "facts": "In its 2007 decision the Court held Professional Services, Inc. (PSI), owner of the Medical City General Hospital, liable together with Dr. Miguel Ampil for the two gauzes left inside Natividad Agana after surgery. It based PSI's liability on an employer-employee relationship (following Ramos v. Court of Appeals, 1999), on apparent authority, and on corporate negligence. PSI filed a second motion for reconsideration, and other private hospitals and their association intervened, warning that the ruling would burden private hospitals and raise the cost of health care. The Court en banc heard oral arguments on one question: whether a hospital may be held liable for the negligence of physicians-consultants allowed to practice in its premises.",
+      "issue": "Is PSI liable for the negligence of Dr. Ampil, a consultant practicing in its hospital, and on what basis?",
+      "ruling": "The Court en banc denied the second motion for reconsideration but changed the basis of PSI's liability. (1) Not respondeat superior: under the control test, an employment relationship exists only if the hospital controls both the means and the details of how the doctor does his work. Both lower courts found that Dr. Ampil was a consultant, not an employee, the Aganas never questioned that finding, and there was not enough evidence of control. (2) Ostensible agency (apparent authority): PSI held Dr. Ampil out as its agent, and Natividad's husband chose him because he believed Dr. Ampil was a staff member of a prominent hospital; PSI's \"consent for hospital care\" form, referring to \"the physicians of this hospital,\" reinforced that belief. (3) Corporate negligence: by its own admission PSI had the power and duty to review what happened within its walls; its duty to initiate a review of the reported missing gauzes was non-delegable, and it did nothing. This corporate negligence is distinct from Dr. Ampil's medical negligence and makes PSI directly liable. The liability based on ostensible agency and corporate negligence was declared pro hac vice (for this case only, not a precedent). PSI was ordered to pay ₱15 million with 12% interest a year from finality.",
+      "keyDoctrine": "A hospital may be liable for a doctor's negligence on three bases: (1) respondeat superior, where there is an employment relationship, determined by the control test (control of both the means and the details of the doctor's work); (2) apparent authority, where the hospital holds the doctor out as its agent and the patient relies on it; and (3) corporate negligence, a direct liability for the hospital's own failure as a corporation, distinct from the doctor's medical negligence. The Court applied the last two to PSI pro hac vice.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2010/feb2010/gr_126297_2010.html"
     }
   ],
   "questions": [
@@ -977,6 +992,237 @@
         "url": "https://lawphil.net/judjuris/juri2007/jan2007/gr_126297_2007.html",
         "part": "III - G.R. No. 126297 (solidary liability)",
         "excerpt": "Anent the corollary issue of whether PSI is solidarily liable with Dr. Ampil for damages, let it be emphasized that PSI, apart from a general denial of its responsibility, failed to adduce evidence showing that it exercised the diligence of a good father of a family in the accreditation and supervision of the latter. In neglecting to offer such proof, PSI failed to discharge its burden under the last paragraph of Article 2180 cited earlier, and, therefore, must be adjudged solidarily liable with Dr. Ampil. Moreover, as we have discussed, PSI is also directly liable to the Aganas."
+      }
+    },
+    {
+      "id": "q-0464",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "Gloria's husband chose Dr. Uy to operate on her because, he said, Dr. Uy was a well-known surgeon and a staff member of a prominent hospital. Before the surgery, the hospital had Gloria sign a \"consent for hospital care\" allowing \"the medical, nursing and laboratory staff of this hospital\" to give the treatments \"deemed necessary by the physicians of this hospital.\" The nurses' record showed a sponge missing after the operation, but the hospital did nothing about it, leaving it to Dr. Uy, who had promised to tell Gloria himself and never did. Sued with Dr. Uy for the sponge left inside Gloria, the hospital argues that Dr. Uy is a mere consultant, not its employee, over whose work it has no control. Is the hospital liable? Explain.",
+      "suggestedAnswer": {
+        "answer": "Yes. Even if Dr. Uy is not its employee, the hospital is liable for his negligence as its ostensible agent, and directly liable for its own corporate negligence in failing to act on the report of the missing sponge.",
+        "legalBasis": "In Professional Services, Inc. v. Agana (2010), the Court en banc held that a hospital is vicariously liable under respondeat superior only if an employment relationship exists, decided by the control test. But even without employment, a hospital is vicariously liable under apparent authority when it holds the doctor out as its agent and the patient relies on it (Article 2176 in relation to Articles 1431 and 1869 of the Civil Code); and regardless of its relationship with the doctor, it is directly liable for its own corporate negligence. The hospital's duty to initiate a review of a reported lapse in its operating room is non-delegable.",
+        "application": "Lack of control defeats only respondeat superior. The husband chose Dr. Uy believing he was a staff member of a prominent hospital, and the hospital's own consent form called him one of \"the physicians of this hospital,\" reinforcing that belief: both factors of apparent authority are present. And the hospital ignored its own staff's record of a missing sponge, passing to Dr. Uy a review it was bound to start itself; that is its own negligence, separate from Dr. Uy's.",
+        "conclusion": "The hospital is liable, vicariously as Dr. Uy's ostensible agent and directly for its corporate negligence. **Bar trap:** \"he is not our employee\" answers only respondeat superior. Note also that the Court declared its ruling in PSI pro hac vice, so check the facts closely before relying on it."
+      },
+      "keyPoints": [
+        "No employment relationship without control of the means and details of the doctor's work (control test), so no respondeat superior",
+        "Apparent authority: the hospital's manifestation that the doctor is its agent, and the patient's reasonable reliance on it",
+        "The consent form referring to \"the physicians of this hospital\" reinforced the impression",
+        "Corporate negligence: the hospital's own, non-delegable duty to review a reported lapse; a direct liability distinct from the doctor's",
+        "In PSI the Court applied ostensible agency and corporate negligence pro hac vice"
+      ],
+      "caseIds": [
+        "case-0034"
+      ],
+      "source": {
+        "caseTitle": "Professional Services, Inc. v. Court of Appeals and Agana (Resolution)",
+        "grNumber": "G.R. No. 126297",
+        "url": "https://lawphil.net/judjuris/juri2010/feb2010/gr_126297_2010.html",
+        "part": "Resolution, ostensible agency and corporate negligence",
+        "excerpt": "Where an employment relationship exists, the hospital may be held vicariously liable under Article 2176 in relation to Article 2180 of the Civil Code or the principle of respondeat superior. Even when no employment relationship exists but it is shown that the hospital holds out to the patient that the doctor is its agent, the hospital may still be vicariously liable under Article 2176 in relation to Article 1431 and Article 1869 of the Civil Code or the principle of apparent authority. Moreover, regardless of its relationship with the doctor, the hospital may be held directly liable to the patient for its own negligence or failure to follow established standard of conduct to which it should conform as a corporation. … Clearly, the decision made by Enrique for Natividad to consult Dr. Ampil was significantly influenced by the impression that Dr. Ampil was a staff member of Medical City General Hospital, and that said hospital was well known and prominent. Enrique looked upon Dr. Ampil not as independent of but as integrally related to Medical City. PSI's acts tended to confirm and reinforce, rather than negate, Enrique's view. … By such statement, PSI virtually reinforced the public impression that Dr. Ampil was a physician of its hospital, rather than one independently practicing in it; that the medications and treatments he prescribed were necessary and desirable; and that the hospital staff was prepared to carry them out. … By its own standard of corporate conduct, PSI's duty to initiate the review was non-delegable."
+      }
+    },
+    {
+      "id": "q-0465",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "Explain the \"control test\" as applied to doctors and hospitals. Under it, was the hospital in Professional Services, Inc. v. Agana the employer of the surgeon, Dr. Ampil?",
+      "suggestedAnswer": {
+        "answer": "Under the control test, an employment relationship exists between a physician and a hospital if the hospital controls both the means and the details of the process by which the physician is to accomplish his task. Under it, PSI was not Dr. Ampil's employer, so it was not liable under respondeat superior.",
+        "legalBasis": "In its 2010 resolution in Professional Services, Inc. v. Agana, the Court en banc held that it still employs the control test (citing Calamba Medical Center v. NLRC), that control is a requisite fact to be established by preponderance of evidence before a hospital may be held vicariously liable as employer, and that it is enough for the employer to have the right to wield the power of control, even without actually supervising. It also noted that in Ramos v. Court of Appeals the 1999 finding of an employment relationship between hospital and consultants was reversed in a 2002 resolution.",
+        "application": "Both the trial court and the Court of Appeals found that the doctors were consultants and independent contractors, not employees of PSI, and the Aganas never questioned that finding. There was insufficient evidence that PSI controlled the means and details of how Dr. Ampil applied his skills in treating Natividad. PSI therefore could not be held vicariously liable as his employer, though it remained liable as his ostensible principal and for its own corporate negligence.",
+        "conclusion": "No employer-employee relationship was shown, so respondeat superior did not apply. **Bar trap:** do not rely on the 1999 Ramos pronouncement that an employer-employee relationship \"in effect\" exists between hospitals and their consultants; it was reversed, and the control test decides."
+      },
+      "keyPoints": [
+        "Control test: control of both the means and the details of the process by which the physician accomplishes his task",
+        "It is enough that the hospital has the right to wield the power of control",
+        "Control must be proved by preponderance of evidence",
+        "PSI did not control Dr. Ampil's work, so no respondeat superior",
+        "The 1999 Ramos pronouncement on consultants was reversed in 2002"
+      ],
+      "caseIds": [
+        "case-0034"
+      ],
+      "source": {
+        "caseTitle": "Professional Services, Inc. v. Court of Appeals and Agana (Resolution)",
+        "grNumber": "G.R. No. 126297",
+        "url": "https://lawphil.net/judjuris/juri2010/feb2010/gr_126297_2010.html",
+        "part": "Resolution, the control test and respondeat superior",
+        "excerpt": "First, there existed between PSI and Dr. Ampil an employer-employee relationship as contemplated in the December 29, 1999 decision in Ramos v. Court of Appeals that \"for purposes of allocating responsibility in medical negligence cases, an employer-employee relationship exists between hospitals and their consultants.\" Although the Court in Ramos later issued a Resolution dated April 11, 2002 reversing its earlier finding on the existence of an employment relationship between hospital and doctor, a similar reversal was not warranted in the present case because the defense raised by PSI consisted of a mere general denial of control or responsibility over the actions of Dr. Ampil. … This Court still employs the \"control test\" to determine the existence of an employer-employee relationship between hospital and doctor. … Under the \"control test\", an employment relationship exists between a physician and a hospital if the hospital controls both the means and the details of the process by which the physician is to accomplish his task. … For control test to apply, it is not essential for the employer to actually supervise the performance of duties of the employee, it being enough that it has the right to wield the power. … Control as a determinative factor in testing the employer-employee relationship between doctor and hospital under which the hospital could be held vicariously liable to a patient in medical negligence cases is a requisite fact to be established by preponderance of evidence. Here, there was insufficient evidence that PSI exercised the power of control or wielded such power over the means and the details of the specific process by which Dr. Ampil applied his skills in the treatment of Natividad. Consequently, PSI cannot be held vicariously liable for the negligence of Dr. Ampil under the principle of respondeat superior."
+      }
+    },
+    {
+      "id": "q-0466",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "A hospital argues that it cannot be liable for corporate negligence because the surgeon, as captain of the ship, had personally promised to tell the patient about the missing gauzes, and the patient never complained to the hospital. Distinguish corporate negligence from medical negligence, and decide whether the argument is valid.",
+      "suggestedAnswer": {
+        "answer": "The argument is not valid. Corporate negligence is the hospital's own failure to perform its duties as a hospital corporation, distinct from the medical negligence of the doctor; the hospital's duty to initiate a review of the missing gauzes was its own and non-delegable.",
+        "legalBasis": "In the 2010 resolution in Professional Services, Inc. v. Agana, the Court held that the corporate negligence ascribed to PSI is different from the medical negligence attributed to Dr. Ampil: the duties of the hospital are distinct from those of the doctor-consultant, so PSI's failure to fulfill its duties as a hospital gave rise to a direct liability distinct from Dr. Ampil's. PSI's duty to initiate the review was non-delegable; it also had the duty to take notice of medical records prepared by its own staff, especially those bearing earmarks of a surgery gone awry.",
+        "application": "The surgeon's duty (to tell the patient what happened) and the hospital's duty (to find out when, how and by whom the gauzes were mislaid and to take corrective measures) have different purposes. The surgeon's promise did not relieve the hospital of its own, separate responsibility, and the operation record reporting the gauze count discrepancy should have prompted a review without waiting for the patient to complain.",
+        "conclusion": "The hospital is directly liable for its corporate negligence. **Bar trap:** \"the doctor was in charge\" (captain of the ship) answers the doctor's liability, not the hospital's own; the Court applied this pro hac vice in PSI, based partly on PSI's own judicial admissions."
+      },
+      "keyPoints": [
+        "Corporate negligence is the hospital's own negligence; medical negligence is the doctor's",
+        "The hospital's liability for corporate negligence is direct and distinct from the doctor's",
+        "The duty to initiate a review of a reported lapse is non-delegable",
+        "The hospital must take notice of medical records prepared by its own staff; it should not wait for the patient to complain",
+        "PSI's liability was declared pro hac vice"
+      ],
+      "caseIds": [
+        "case-0034"
+      ],
+      "source": {
+        "caseTitle": "Professional Services, Inc. v. Court of Appeals and Agana (Resolution)",
+        "grNumber": "G.R. No. 126297",
+        "url": "https://lawphil.net/judjuris/juri2010/feb2010/gr_126297_2010.html",
+        "part": "Resolution, corporate negligence",
+        "excerpt": "By its own standard of corporate conduct, PSI's duty to initiate the review was non-delegable. While Dr. Ampil may have had the primary responsibility of notifying Natividad about the missing gauzes, PSI imposed upon itself the separate and independent responsibility of initiating the inquiry into the missing gauzes. The purpose of the first would have been to apprise Natividad of what transpired during her surgery, while the purpose of the second would have been to pinpoint any lapse in procedure that led to the gauze count discrepancy, so as to prevent a recurrence thereof and to determine corrective measures that would ensure the safety of Natividad. That Dr. Ampil negligently failed to notify Natividad did not release PSI from its self-imposed separate responsibility. Corollary to its non-delegable undertaking to review potential incidents of negligence committed within its premises, PSI had the duty to take notice of medical records prepared by its own staff and submitted to its custody, especially when these bear earmarks of a surgery gone awry. Thus, the record taken during the operation of Natividad which reported a gauze count discrepancy should have given PSI sufficient reason to initiate a review. It should not have waited for Natividad to complain. … It should be borne in mind that the corporate negligence ascribed to PSI is different from the medical negligence attributed to Dr. Ampil. The duties of the hospital are distinct from those of the doctor-consultant practicing within its premises in relation to the patient; hence, the failure of PSI to fulfill its duties as a hospital corporation gave rise to a direct liability to the Aganas distinct from that of Dr. Ampil."
+      }
+    },
+    {
+      "id": "q-0467",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "In its 2010 en banc resolution in Professional Services, Inc. v. Agana, on what basis did the Court hold the hospital liable for the gauzes left in the patient by Dr. Ampil?",
+      "choices": {
+        "A": "Respondeat superior, because for purposes of medical negligence cases an employer-employee relationship in effect exists between hospitals and their consultants.",
+        "B": "Corporate negligence only, because Dr. Ampil was an independent contractor and apparent authority does not apply to hospitals.",
+        "C": "Respondeat superior and apparent authority, because PSI failed to prove the diligence of a good father of a family in supervising Dr. Ampil.",
+        "D": "Ostensible agency for Dr. Ampil's negligence and, pro hac vice, corporate negligence for its own failure to perform its duties as a hospital; not respondeat superior, for lack of evidence of an employment relationship."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The Court held \"that PSI is liable to the Aganas, not under the principle of respondeat superior for lack of evidence of an employment relationship with Dr. Ampil but under the principle of ostensible agency for the negligence of Dr. Ampil and, pro hac vice, under the principle of corporate negligence for its failure to perform its duties as a hospital.\" **A is wrong:** that was the 1999 Ramos pronouncement, which Ramos itself reversed in 2002; in PSI both lower courts found no employment relationship. **B is wrong:** the Court kept PSI's vicarious liability as Dr. Ampil's ostensible principal. **C is wrong:** respondeat superior was rejected for lack of proof of control. **Bar trap:** the 2007 decision and the 2010 en banc resolution differ; the 2010 resolution is the final word.",
+      "caseIds": [
+        "case-0034"
+      ],
+      "source": {
+        "caseTitle": "Professional Services, Inc. v. Court of Appeals and Agana (Resolution)",
+        "grNumber": "G.R. No. 126297",
+        "url": "https://lawphil.net/judjuris/juri2010/feb2010/gr_126297_2010.html",
+        "part": "Resolution, dispositive ruling on PSI's liability",
+        "excerpt": "After gathering its thoughts on the issues, this Court holds that PSI is liable to the Aganas, not under the principle of respondeat superior for lack of evidence of an employment relationship with Dr. Ampil but under the principle of ostensible agency for the negligence of Dr. Ampil and, pro hac vice, under the principle of corporate negligence for its failure to perform its duties as a hospital."
+      }
+    },
+    {
+      "id": "q-0468",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "Under this test, an employment relationship exists between a physician and a hospital if the hospital controls both the means and the details of the process by which the physician is to accomplish his task. This is known as the",
+      "choices": {
+        "A": "economic dependence test.",
+        "B": "control test.",
+        "C": "captain of the ship rule.",
+        "D": "holding out theory."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court en banc stated that it \"still employs the 'control test' to determine the existence of an employer-employee relationship between hospital and doctor,\" quoting Calamba Medical Center v. NLRC for the definition in the question. **A is wrong:** the decision does not apply an economic dependence test; it applies the control test. **C is wrong:** the captain of the ship rule concerns who is in charge in the operating room. **D is wrong:** the holding out theory (apparent authority) applies precisely when there is no employment relationship. **Bar trap:** the right to control is enough; actual supervision is not required.",
+      "caseIds": [
+        "case-0034"
+      ],
+      "source": {
+        "caseTitle": "Professional Services, Inc. v. Court of Appeals and Agana (Resolution)",
+        "grNumber": "G.R. No. 126297",
+        "url": "https://lawphil.net/judjuris/juri2010/feb2010/gr_126297_2010.html",
+        "part": "Resolution, the control test (quoting Calamba Medical Center v. NLRC)",
+        "excerpt": "This Court still employs the \"control test\" to determine the existence of an employer-employee relationship between hospital and doctor. In Calamba Medical Center, Inc. v. National Labor Relations Commission, et al. it held: Under the \"control test\", an employment relationship exists between a physician and a hospital if the hospital controls both the means and the details of the process by which the physician is to accomplish his task."
+      }
+    },
+    {
+      "id": "q-0469",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "According to the 2010 resolution in Professional Services, Inc. v. Agana, what are the two factors that determine apparent authority of a doctor as the hospital's agent?",
+      "choices": {
+        "A": "The hospital's payment of the doctor's salary, and the doctor's use of the hospital's equipment.",
+        "B": "A written contract of agency, and its registration with the Department of Health.",
+        "C": "The hospital's implied manifestation to the patient which led the latter to conclude that the doctor was the hospital's agent, and the patient's reliance upon the conduct of the hospital and the doctor, consistent with ordinary care and prudence.",
+        "D": "The doctor's negligence, and the hospital's failure to investigate it."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court found \"the two factors that determine apparent authority: first, the hospital's implied manifestation to the patient which led the latter to conclude that the doctor was the hospital's agent; and second, the patient's reliance upon the conduct of the hospital and the doctor, consistent with ordinary care and prudence.\" **A is wrong:** payment of salary points to employment, which apparent authority does not require. **B is wrong:** apparent authority arises from conduct, not a written contract. **D is wrong:** the failure to investigate relates to corporate negligence, a separate ground. **Bar trap:** reliance is shown by the patient's side, e.g., Enrique chose Dr. Ampil believing he was on the staff of a prominent hospital.",
+      "caseIds": [
+        "case-0034"
+      ],
+      "source": {
+        "caseTitle": "Professional Services, Inc. v. Court of Appeals and Agana (Resolution)",
+        "grNumber": "G.R. No. 126297",
+        "url": "https://lawphil.net/judjuris/juri2010/feb2010/gr_126297_2010.html",
+        "part": "Resolution, apparent authority",
+        "excerpt": "There is, however, ample evidence that the hospital (PSI) held out to the patient (Natividad) that the doctor (Dr. Ampil) was its agent. Present are the two factors that determine apparent authority: first, the hospital's implied manifestation to the patient which led the latter to conclude that the doctor was the hospital's agent; and second, the patient’s reliance upon the conduct of the hospital and the doctor, consistent with ordinary care and prudence."
+      }
+    },
+    {
+      "id": "q-0470",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "The 2010 resolution in Professional Services, Inc. v. Agana says that three legal relationships \"crisscross\" when a doctor treats a patient in a hospital. Which of the following is NOT one of them?",
+      "choices": {
+        "A": "The relationship between the hospital and the Professional Regulation Commission.",
+        "B": "The relationship between the hospital and the doctor practicing within its premises.",
+        "C": "The relationship between the hospital and the patient being treated or examined within its premises.",
+        "D": "The relationship between the patient and the doctor."
+      },
+      "correct": "A",
+      "explanation": "**A is correct (it is not one of the three).** The Court said: \"three legal relationships crisscross: (1) between the hospital and the doctor practicing within its premises; (2) between the hospital and the patient being treated or examined within its premises and (3) between the patient and the doctor. The exact nature of each relationship determines the basis and extent of the liability of the hospital for the negligence of the doctor.\" B, C and D are the three. **Bar trap:** each relationship matters: hospital-doctor for respondeat superior, hospital-patient for apparent authority and corporate negligence, patient-doctor for the doctor's own malpractice.",
+      "caseIds": [
+        "case-0034"
+      ],
+      "source": {
+        "caseTitle": "Professional Services, Inc. v. Court of Appeals and Agana (Resolution)",
+        "grNumber": "G.R. No. 126297",
+        "url": "https://lawphil.net/judjuris/juri2010/feb2010/gr_126297_2010.html",
+        "part": "Resolution, the relationships among hospital, doctor and patient",
+        "excerpt": "Within that reality, three legal relationships crisscross: (1) between the hospital and the doctor practicing within its premises; (2) between the hospital and the patient being treated or examined within its premises and (3) between the patient and the doctor. The exact nature of each relationship determines the basis and extent of the liability of the hospital for the negligence of the doctor."
+      }
+    },
+    {
+      "id": "q-0471",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "\"Regardless of its relationship with the doctor, the hospital may be held directly liable to the patient for its own negligence or failure to follow established standard of conduct to which it should conform as a corporation.\" This describes the hospital's liability under",
+      "choices": {
+        "A": "respondeat superior.",
+        "B": "apparent authority.",
+        "C": "the captain of the ship rule.",
+        "D": "corporate negligence."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The quoted sentence states the basis of corporate negligence: a direct liability for the hospital's own negligence, regardless of its relationship with the doctor. **A is wrong:** respondeat superior is vicarious liability where an employment relationship exists (Article 2176 in relation to Article 2180). **B is wrong:** apparent authority is vicarious liability where the hospital holds out the doctor as its agent (Article 2176 in relation to Articles 1431 and 1869). **C is wrong:** the captain of the ship rule concerns the operating surgeon's control, not the hospital's liability. **Bar trap:** \"directly liable\" and \"regardless of its relationship with the doctor\" are the clues to corporate negligence.",
+      "caseIds": [
+        "case-0034"
+      ],
+      "source": {
+        "caseTitle": "Professional Services, Inc. v. Court of Appeals and Agana (Resolution)",
+        "grNumber": "G.R. No. 126297",
+        "url": "https://lawphil.net/judjuris/juri2010/feb2010/gr_126297_2010.html",
+        "part": "Resolution, the bases of a hospital's liability",
+        "excerpt": "Where an employment relationship exists, the hospital may be held vicariously liable under Article 2176 in relation to Article 2180 of the Civil Code or the principle of respondeat superior. Even when no employment relationship exists but it is shown that the hospital holds out to the patient that the doctor is its agent, the hospital may still be vicariously liable under Article 2176 in relation to Article 1431 and Article 1869 of the Civil Code or the principle of apparent authority. Moreover, regardless of its relationship with the doctor, the hospital may be held directly liable to the patient for its own negligence or failure to follow established standard of conduct to which it should conform as a corporation."
       }
     }
   ]
