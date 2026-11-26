@@ -451,6 +451,21 @@
       "ruling": "The decision of the Court of Appeals was affirmed. Its findings on the credibility of the evidence are beyond the Supreme Court's power of review on appeal by certiorari and are conclusive. On moral damages, the claim that moral damages for breach of promise to marry are collectible had already been settled against the plaintiff in Hermosisima v. Court of Appeals (L-14628, September 30, 1960).",
       "keyDoctrine": "A breach of promise to marry is not, by itself, a ground for moral damages; the question was settled in Hermosisima v. Court of Appeals. Findings of the Court of Appeals on the credibility of evidence are conclusive on the Supreme Court on appeal by certiorari.",
       "sourceUrl": "https://lawphil.net/judjuris/juri1962/jan1962/gr_l-17248_1962.html"
+    },
+    {
+      "id": "case-0078",
+      "status": "draft",
+      "name": "Mercado, et al. v. Lira, et al.",
+      "grNumber": "G.R. Nos. L-13328-29",
+      "year": 1961,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "facts": "In 1951, a bus of the Laguna Transportation Company, owned and operated by Gonzalo Mercado and others, blew a tire while overspeeding near Calamba, Laguna, and fell into a ravine. Among the passengers, Ramon Lira, Jr., 24, was killed and Nita Lira was injured. His parents and Nita Lira sued the operators. After the Court of Appeals' rulings, the parents were awarded damages for the death, loss of earning capacity, ₱4,000 moral damages for mental anguish and ₱4,000 attorney's fees; Nita Lira's moral damages for her injuries were eliminated. The operators (G.R. Nos. L-13328-29) argued that the moral damages to the parents should be reduced to a nominal ₱500, and Nita Lira (G.R. No. L-13358) argued that her case was analogous to a quasi-delict causing physical injuries under Article 2219.",
+      "issue": "(1) Was the ₱4,000 moral damages to the parents of the deceased passenger proper? (2) Is an injured passenger entitled to moral damages for breach of contract of carriage through the carrier's negligence?",
+      "ruling": "The Court of Appeals was affirmed. Under Article 1764, Article 2206 applies to the death of a passenger caused by a common carrier's breach of contract; it fixes damages for death at \"at least\" ₱3,000, and \"in addition\" allows the spouse, descendants and ascendants to demand moral damages for mental anguish. Once these heirs claim and prove their entitlement, it becomes the court's duty to award moral damages commensurate with their anguish; nominal damages are a distinct class and must not be confused with moral damages. The ₱4,000 to the parents was fair. But a passenger who is only injured through the carrier's negligence (culpa contractual) cannot recover moral damages: such a case is not among the \"analogous cases\" of Article 2219, since Article 2220 specifically covers breaches of contract and requires fraud or bad faith, and a quasi-delict by definition excludes a pre-existing contract. The mere carelessness of the driver (a tire blowout while overspeeding) is not bad faith.",
+      "keyDoctrine": "In breach of contract, including carriage, moral damages require proof of fraud or bad faith (Art. 2220); a passenger injured through the carrier's mere negligence is not within the \"analogous cases\" of Article 2219. The exception is the death of a passenger: under Articles 1764 and 2206, the spouse, descendants and ascendants may recover moral damages for mental anguish, and once they prove their entitlement the court must award them. Damages for death are at least ₱3,000 under Article 2206. Nominal damages are distinct from moral damages.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri1961/sep1961/gr_l-13328_1961.html"
     }
   ],
   "questions": [
@@ -7363,6 +7378,237 @@
         "url": "https://lawphil.net/judjuris/juri1962/jan1962/gr_l-17248_1962.html",
         "part": "Decision, the disposition",
         "excerpt": "The appealed decision of the Court of Appeals is hereby affirmed, therefore, without special pronouncement as to cost."
+      }
+    },
+    {
+      "id": "q-0816",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "A bus blew a tire while overspeeding and fell into a ravine. P, a passenger, survived with physical injuries and sued the bus operator for breach of contract of carriage, claiming moral damages. She argues that her case is analogous to a \"quasi-delict causing physical injuries\" under Article 2219 of the Civil Code. Is P entitled to moral damages? Explain, citing Mercado v. Lira.",
+      "suggestedAnswer": {
+        "answer": "No. In an action for breach of contract of carriage, moral damages require proof of fraud or bad faith; a passenger injured through the carrier's mere negligence is not within the \"analogous cases\" of Article 2219, and the driver's carelessness here is not bad faith.",
+        "legalBasis": "In Mercado v. Lira, the Court, following Fores v. Miranda, held that \"(1) ... the case of a passenger of a carrier who suffered physical injuries 'because of the carrier's negligence (culpa contractual), cannot be considered in the descriptive expression analogous cases, used in Art. 2219'; and (2) that in cases of breach of contract (including one of transportation) proof of bad faith or fraud (dolus) i.e., wanton or deliberate injurious conduct is essential to justify an award of moral damages.\" Article 2220 specifically provides for contractual breach, and Article 2176 defines quasi-delict as excluding cases with a pre-existing contractual relation.",
+        "application": "The accident was caused merely by the bursting of a tire while the bus was overspeeding; there was no evidence of fraud, malice or bad faith. The carrier's presumed negligence (Art. 1756) is not bad faith, so the moral damages were correctly eliminated.",
+        "conclusion": "No moral damages for the injured passenger. **Bar trap:** a passenger's suit on the contract of carriage is not a quasi-delict, so Article 2219(2) does not apply; she must prove bad faith under Article 2220."
+      },
+      "keyPoints": [
+        "Breach of contract (including carriage): fraud or bad faith required (Art. 2220)",
+        "An injured passenger's case is not an \"analogous case\" under Art. 2219",
+        "Quasi-delict excludes a pre-existing contractual relation (Art. 2176)",
+        "Mere carelessness of the driver is not bad faith",
+        "Tire blowout while overspeeding: no moral damages"
+      ],
+      "caseIds": [
+        "case-0078"
+      ],
+      "source": {
+        "caseTitle": "Mercado, et al. v. Lira, et al.",
+        "grNumber": "G.R. Nos. L-13328-29",
+        "url": "https://lawphil.net/judjuris/juri1961/sep1961/gr_l-13328_1961.html",
+        "part": "Decision, discussion of G.R. No. L-13358 (moral damages of the injured passenger)",
+        "excerpt": "We gleaned, therefore, from the above mentioned decisions, (1) that the case of a passenger of a carrier who suffered physical injuries \"because of the carrier's negligence (culpa contractual), cannot be considered in the descriptive expression 'analogous cases', used in Art. 2219\"; and (2) that in cases of breach of contract (including one of transportation) proof of bad faith or fraud (dolus) i.e., wanton or deliberate injurious conduct is essential to justify an award of moral damages. There being no evidence of fraud, malice or bad faith, contemplated by law, on the part of the respondents, because the cause of the accident was merely the bursting of a tire while the bus was overspeeding, the cause of petitioner Nita Lira should fail, as far as moral damages is concerned. Moral damages was, therefore, correctly eliminated by the Court of Appeals."
+      }
+    },
+    {
+      "id": "q-0817",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "In the same bus accident, another passenger died. His parents sued the bus operator and were awarded ₱4,000 moral damages for their mental anguish. The operator argues that moral damages for death are not obligatory and should be only nominal (₱500), because the parents were already substantially compensated by the other damages. Is the operator correct? Explain, citing Mercado v. Lira.",
+      "suggestedAnswer": {
+        "answer": "No. Under Articles 1764 and 2206, the ascendants of a deceased passenger may demand moral damages for mental anguish; once they claim and prove their entitlement, it becomes the court's duty to award moral damages commensurate with their anguish. Moral damages are distinct from nominal damages and should not be reduced to a nominal sum.",
+        "legalBasis": "In Mercado v. Lira, the Court explained that Article 1764 makes Article 2206 apply to the death of a passenger caused by a carrier's breach of contract. Article 2206 fixes damages for death at \"at least three thousand pesos\" and \"In addition\" allows the spouse, descendants and ascendants to demand moral damages, \"which simply means that once the above-mentioned heirs of the deceased claim compensation for moral damages and are able to prove that they are entitled to such award, it becomes the duty of the court to award moral damages to the claimant in an amount commensurate with the mental anguish suffered by them. In the Civil Code, nominal damages are treated separately from moral damages.\"",
+        "application": "Considering the anguish and sorrow of parents upon the tragic death of their son, ₱4,000 was fair and reasonable; the Court of Appeals also found the other damages not excessive, a factual finding the Supreme Court would not disturb.",
+        "conclusion": "The ₱4,000 moral damages stand. **Bar trap:** this is the exception to the rule for passengers: when the passenger dies, moral damages may be recovered without proof of bad faith."
+      },
+      "keyPoints": [
+        "Art. 1764: Art. 2206 applies to the death of a passenger",
+        "Art. 2206: damages for death \"at least\" ₱3,000, plus moral damages for the heirs' anguish",
+        "Once claimed and proved, the court has the duty to award moral damages",
+        "Nominal damages are a distinct class; not to be confused with moral damages",
+        "₱4,000 to the parents was fair and reasonable"
+      ],
+      "caseIds": [
+        "case-0078"
+      ],
+      "source": {
+        "caseTitle": "Mercado, et al. v. Lira, et al.",
+        "grNumber": "G.R. Nos. L-13328-29",
+        "url": "https://lawphil.net/judjuris/juri1961/sep1961/gr_l-13328_1961.html",
+        "part": "Decision, discussion of G.R. Nos. L-13328-29 (moral damages for the death of a passenger)",
+        "excerpt": "It is thus seen that Article 2206 of the new Civil Code, expressly provides that the amount of damages for death shall be \"at least three thousand pesos, even though there may have been mitigating circumstances.\" In other words, the amount of damages to be awarded for the death of a passenger may be more than P3,000.00. … Article 2206 states further that \"In addition\" to the amount of at least P3,000.00 to be awarded for the death of a passenger, the spouse, legitimate and illegitimate descendants and ascendants of the deceased may demand moral damages as a consequence of the death of their deceased kin, which simply means that once the above-mentioned heirs of the deceased claim compensation for moral damages and are able to prove that they are entitled to such award, it becomes the duty of the court to award moral damages to the claimant in an amount commensurate with the mental anguish suffered by them. In the Civil Code, nominal damages are treated separately from moral damages. Any amount that should be awarded as nominal damages, should not be confused or interlinked with moral damages which, by itself, is a distinct class of damages."
+      }
+    },
+    {
+      "id": "q-0818",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "A passenger argues that a carrier's failure to transport her safely is a breach of her confidence, and therefore always a breach of contract in bad faith that justifies moral damages under Article 2220. Is this argument tenable? Explain, citing the ruling quoted in Mercado v. Lira.",
+      "suggestedAnswer": {
+        "answer": "No. Under that theory the carrier would always be in bad faith whenever its obligation is infringed and would never be liable for simple negligence, contrary to the law, which presumes carriers negligent, not malicious. Bad faith must be shown in evidence and is not lightly inferred from a breach through negligence.",
+        "legalBasis": "In Mercado v. Lira, the Court quoted Fores v. Miranda: the theory \"is untenable, for under it the carrier would always be deemed in bad faith, in every case its obligation to the passenger is infringed, and it would never be accountable for simple negligence; while under the law (Art. 1756), the presumption is that common carriers acted negligently (and not maliciously).\" \"The distinction between fraud, bad faith or malice (in the sense of deliberate or wanton wrongdoing) and negligence (as mere carelessness) is too fundamental in our law to be ignored.\" Under Article 2201, a debtor in good faith is liable for the natural and probable consequences foreseen or foreseeable, while one in fraud or bad faith is liable for all damages reasonably attributable to the non-performance. Negligence may be so gross as to amount to malice, \"but that fact must be shown in evidence.\"",
+        "application": "So the passenger must prove the carrier's fraud or bad faith, or negligence so gross as to amount to malice; the mere breach of the duty of safe carriage is not enough.",
+        "conclusion": "Untenable. **Bar trap:** the presumption against carriers (Art. 1756) is of negligence, not of bad faith; do not equate the two."
+      },
+      "keyPoints": [
+        "If every breach were bad faith, carriers would never be liable for simple negligence",
+        "Art. 1756 presumes negligence, not malice",
+        "Fraud or bad faith (deliberate wrongdoing) differs from negligence (carelessness)",
+        "Art. 2201: good-faith debtor liable for foreseeable damages; bad-faith debtor for all damages attributable",
+        "Gross negligence amounting to malice must be shown in evidence"
+      ],
+      "caseIds": [
+        "case-0078"
+      ],
+      "source": {
+        "caseTitle": "Mercado, et al. v. Lira, et al.",
+        "grNumber": "G.R. Nos. L-13328-29",
+        "url": "https://lawphil.net/judjuris/juri1961/sep1961/gr_l-13328_1961.html",
+        "part": "Decision, discussion of G.R. No. L-13358 (why a carrier's breach is not presumed bad faith)",
+        "excerpt": "It is also suggested that a carrier's violation of its engagement to safely transport the passenger involves a breach of the passenger's confidence, and therefore should be regarded as a breach of contract in bad faith, justifying recovery of moral damages under Art. 2220. This theory is untenable, for under it the carrier would always be deemed in bad faith, in every case its obligation to the passenger is infringed, and it would never be accountable for simple negligence; while under the law (Art. 1756), the presumption is that common carriers acted negligently (and not maliciously), and Art. 1762 speaks of negligence of the common carrier. … The distinction between fraud, bad faith or malice (in the sense of deliberate or wanton wrongdoing) and negligence (as mere carelessness) is too fundamental in our law to be ignored (Arts. 1170-1172); their consequences being clearly differentiated by the Code. \"Art. 2201. In contracts and quasi-contracts, the damages for which the obligor who acted in good faith is liable shall be those that are the natural and probable consequences of the breach of the obligation, and which the parties have foreseen or could have reasonably foreseen at the time the obligation was constituted. In case of fraud, bad faith, malice or wanton attitude, the obligor shall be responsible for all damages which may be reasonably attributed to the non-performance of the obligation.\""
+      }
+    },
+    {
+      "id": "q-0819",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Under Article 2206 of the Civil Code, as explained in Mercado v. Lira, the amount of damages for death caused by a crime or quasi-delict (and, by Article 1764, the death of a passenger) shall be",
+      "choices": {
+        "A": "exactly ₱3,000.",
+        "B": "at most ₱3,000.",
+        "C": "at least ₱3,000, even though there may have been mitigating circumstances.",
+        "D": "whatever the parties stipulate."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court said Article 2206 \"expressly provides that the amount of damages for death shall be 'at least three thousand pesos, even though there may have been mitigating circumstances.' In other words, the amount ... may be more than P3,000.00.\" **A and B are wrong:** it is a floor, not a fixed sum or ceiling. **D is wrong:** not by stipulation. **Bar trap:** the operator's reading (\"fixes the amount ... at only P3,000.00\") was wrong. (Today's standard amounts are much higher; see People v. Jugueta.)",
+      "caseIds": [
+        "case-0078"
+      ],
+      "source": {
+        "caseTitle": "Mercado, et al. v. Lira, et al.",
+        "grNumber": "G.R. Nos. L-13328-29",
+        "url": "https://lawphil.net/judjuris/juri1961/sep1961/gr_l-13328_1961.html",
+        "part": "Decision, discussion of Article 2206",
+        "excerpt": "It is thus seen that Article 2206 of the new Civil Code, expressly provides that the amount of damages for death shall be \"at least three thousand pesos, even though there may have been mitigating circumstances.\" In other words, the amount of damages to be awarded for the death of a passenger may be more than P3,000.00."
+      }
+    },
+    {
+      "id": "q-0820",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "According to the ruling quoted in Mercado v. Lira, what is essential to justify an award of moral damages in a case of breach of contract, including one of transportation?",
+      "choices": {
+        "A": "Proof of bad faith or fraud (dolus), i.e., wanton or deliberately injurious conduct.",
+        "B": "Proof of physical injuries only.",
+        "C": "Proof that the carrier failed to exercise extraordinary diligence.",
+        "D": "Proof that the carrier was negligent in selecting its driver."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court held \"that in cases of breach of contract (including one of transportation) proof of bad faith or fraud (dolus) i.e., wanton or deliberate injurious conduct is essential to justify an award of moral damages.\" **B, C and D are wrong:** injuries or negligence, even presumed, are not enough. **Bar trap:** the exception is the death of a passenger (Arts. 1764, 2206).",
+      "caseIds": [
+        "case-0078"
+      ],
+      "source": {
+        "caseTitle": "Mercado, et al. v. Lira, et al.",
+        "grNumber": "G.R. Nos. L-13328-29",
+        "url": "https://lawphil.net/judjuris/juri1961/sep1961/gr_l-13328_1961.html",
+        "part": "Decision, discussion of G.R. No. L-13358 (breach of contract and Article 2220)",
+        "excerpt": "(2) that in cases of breach of contract (including one of transportation) proof of bad faith or fraud (dolus) i.e., wanton or deliberate injurious conduct is essential to justify an award of moral damages."
+      }
+    },
+    {
+      "id": "q-0821",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "As explained in the ruling quoted in Mercado v. Lira, which advantage does a passenger enjoy in suing a carrier for breach of contract of carriage, which partly explains the limits on recovery?",
+      "choices": {
+        "A": "The passenger may recover moral damages without any proof.",
+        "B": "The carrier is presumed liable on mere proof of injury, and it may not escape liability by proving due diligence in the selection and supervision of its employees.",
+        "C": "The passenger need not prove the contract of carriage.",
+        "D": "The carrier must always pay exemplary damages."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court quoted that the action for breach of contract \"imposes on the defendant carrier a presumption of liability upon mere proof of injury to the passenger,\" and that \"the carrier, unlike in suits for quasi-delict, may not escape liability by proving that it has exercised due diligence in the selection and supervision of its employees (Art. 1759).\" **A is wrong:** moral damages need bad faith. **C and D are wrong:** no such rules. **Bar trap:** the trade-off: easier liability, limited moral damages.",
+      "caseIds": [
+        "case-0078"
+      ],
+      "source": {
+        "caseTitle": "Mercado, et al. v. Lira, et al.",
+        "grNumber": "G.R. Nos. L-13328-29",
+        "url": "https://lawphil.net/judjuris/juri1961/sep1961/gr_l-13328_1961.html",
+        "part": "Decision, discussion of G.R. No. L-13358 (the advantages of suing on the contract)",
+        "excerpt": "The action for the breach of contract imposes on the defendant carrier a presumption of liability upon mere proof of injury to the passenger; the latter is relieved from the duty to establish the fault of the carrier or of his employees; and the burden is placed on the carrier to prove that it was due to an unforeseen event or to force majeure (Cangco v. Manila Railroad Co., 38 Phil. 768, 777). Moreover, the carrier, unlike in suits for quasi-delict, may not escape liability by proving that it has exercised due diligence in the selection and supervision of its employees"
+      }
+    },
+    {
+      "id": "q-0822",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Under Article 2201 of the Civil Code, quoted in Mercado v. Lira, an obligor in a contract who acted in good faith is liable for",
+      "choices": {
+        "A": "all damages which may be reasonably attributed to the non-performance.",
+        "B": "only nominal damages.",
+        "C": "the natural and probable consequences of the breach which the parties foresaw or could have reasonably foreseen when the obligation was constituted.",
+        "D": "no damages at all."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** Article 2201 provides that \"the damages for which the obligor who acted in good faith is liable shall be those that are the natural and probable consequences of the breach of the obligation, and which the parties have foreseen or could have reasonably foreseen at the time the obligation was constituted.\" **A is wrong:** that is the liability of an obligor in fraud, bad faith, malice or wanton attitude. **B and D are wrong:** good faith limits, but does not erase, liability. **Bar trap:** good faith vs bad faith changes the extent of recoverable damages in contracts.",
+      "caseIds": [
+        "case-0078"
+      ],
+      "source": {
+        "caseTitle": "Mercado, et al. v. Lira, et al.",
+        "grNumber": "G.R. Nos. L-13328-29",
+        "url": "https://lawphil.net/judjuris/juri1961/sep1961/gr_l-13328_1961.html",
+        "part": "Decision, discussion of Article 2201",
+        "excerpt": "\"Art. 2201. In contracts and quasi-contracts, the damages for which the obligor who acted in good faith is liable shall be those that are the natural and probable consequences of the breach of the obligation, and which the parties have foreseen or could have reasonably foreseen at the time the obligation was constituted. In case of fraud, bad faith, malice or wanton attitude, the obligor shall be responsible for all damages which may be reasonably attributed to the non-performance of the obligation.\""
+      }
+    },
+    {
+      "id": "q-0823",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "What was the result in Mercado v. Lira?",
+      "choices": {
+        "A": "The parents' moral damages were reduced to ₱500, and the injured passenger's moral damages restored.",
+        "B": "The decision of the Court of Appeals was affirmed: the parents kept ₱4,000 moral damages and ₱4,000 attorney's fees, and the injured passenger's moral damages remained eliminated.",
+        "C": "All moral damages were eliminated.",
+        "D": "The case was remanded to determine whether the carrier acted in bad faith."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court found the ₱4,000 moral damages for the death and the ₱4,000 attorney's fees \"fair and reasonable,\" held that moral damages \"was, therefore, correctly eliminated\" as to the injured passenger, and affirmed the Court of Appeals. **A is wrong:** the reverse. **C is wrong:** the parents' award stood. **D is wrong:** no remand. **Bar trap:** same accident, different results for death and injury.",
+      "caseIds": [
+        "case-0078"
+      ],
+      "source": {
+        "caseTitle": "Mercado, et al. v. Lira, et al.",
+        "grNumber": "G.R. Nos. L-13328-29",
+        "url": "https://lawphil.net/judjuris/juri1961/sep1961/gr_l-13328_1961.html",
+        "part": "Decision, the disposition",
+        "excerpt": "IN VIEW OF THE FOREGOING CONSIDERATIONS, the decision of the Court of Appeals in G.R. Nos. L-13328-29 and L-13358 (Court of Appeals resolution dated December 19, 1957), hereby is affirmed, without costs in this instance."
       }
     }
   ]
