@@ -27,7 +27,7 @@ Use these exact names everywhere (data, menus, filters):
 Topics so far (use these exact names):
 - Mercantile Law → **Commercial Law** (renamed from Communication Law; so far the privacy cases: Zulueta, Hing, Vivares, Cadajas, Regala, IBP v. Purisima)
 - Legal and Judicial Ethics → **Notarial Practice**
-- Civil Law → **Torts and Quasi-delicts** (the 2027 syllabus name, s3.XI) → sub-topics **Medical Negligence and Malpractice** (the professor's list "X. Kindred Torts: Medical Malpractice", from case-0030; question types follow the content, mostly identification, enumeration and definitions) and **Detention of Patients (R.A. 9439)** (one fill-in-the-blank per section of R.A. No. 9439)
+- Civil Law → **Torts and Quasi-delicts** (the 2027 syllabus name, s3.XI) → sub-topic **Medical Negligence and Malpractice** (the professor's list "X. Kindred Torts: Medical Malpractice", from case-0030; 3 essays + 5 multiple choice per case, like every case). The related law R.A. No. 9439 is a rule to read (no questions).
 - Mercantile Law → **Intellectual Property Code** (cases from the builder's list of 16 IP decisions, case-0014 to case-0029, each with 3 essay and 5 multiple-choice questions; sub-topics **Patents**, **Trademarks and Unfair Competition**, **Copyright**, the same names the NotebookLM questions use)
 - Remedial Law → **Special Proceedings** → sub-topic **Writ of Amparo** (fill-in-the-blank items, one per section of A.M. No. 07-9-12-SC, q-0056 to q-0082)
 - Remedial Law → **Special Proceedings** → sub-topic **Custody of Minors and Habeas Corpus** (fill-in-the-blank items, one per section of A.M. No. 03-04-04-SC, q-0083 to q-0104)
@@ -185,8 +185,8 @@ By the builder's decision, every **new** essay and multiple-choice question (off
 4. **The angle:** a realistic fact pattern where she must spot the issue, apply the rule and give the reason, in the form the real questions use (for example, a client's situation and what she would advise; one side's argument and whether it is correct). Multiple choice follows the Bar's own multiple-choice style when the samples have it.
 5. **Traps must be fair.** For example: an exception that looks like the general rule, one fact that changes the result, a deadline or a number that matters, the right answer for the wrong reason, or a doctrine that was abandoned or changed. There is still exactly one defensible answer. The explanation (multiple choice) or the suggested answer (essay, in `conclusion` or `keyPoints`) **names the trap** and says how to avoid it ("**Bar trap:** …").
 6. **Accuracy comes first.** Past questions guide only the style. The law in every answer still comes from the decision or the official text (content rules 1–4, 7 and 9). An older past question may rest on law that has since changed: check that the rule is current. Never say or suggest that a question is likely to be asked in the exam.
-7. **The type follows the content.** Never force a question into essay or multiple choice: identification, enumeration and definitions of principles are often the better test (see step 5 of **Adding a new case**).
-8. **A professor's focus, when the builder gives one, shapes the mix.** **Civil Law → Torts and Quasi-delicts:** the professor stresses **identification, enumeration, principles and their definitions**, so those make up most of the questions there, with essays and multiple choice where they fit.
+7. **Cases get essays and multiple choice only** (3 + 5, see step 5 of **Adding a new case**), written like the real Bar questions in LawPhil's archive of past Bar questions (https://lawphil.net/courts/bm/barQ/barQs.html). **Never fill in the blank for a case**: by the builder's decision (2026-11-26) fill in the blank is used only when the builder specifically asks for it.
+8. **A professor's focus, when the builder gives one, shapes the questions.** **Civil Law → Torts and Quasi-delicts:** the professor stresses **identification, enumeration, principles and their definitions**; cover them the way the real Bar does: short essays ("What is the doctrine of …? Explain.", "What are the requisites of …?", "Distinguish … from …") and identification multiple choice ("This is known as the principle of" with four doctrine names).
 
 ## Content format (JSON files)
 Administrative cases use their A.C. number in the `grNumber` field (e.g. `"A.C. No. 9514"`).
@@ -314,15 +314,8 @@ When a multiple-choice or fill-in-the-blank `explanation`, or an essay's `sugges
 - Each word stays one "word" for highlighting whether it's hidden or not, so her highlights don't move between levels. Changing an item's `prompt` (which words are blanked) can still shift them.
 - Practice on the subject screen always uses every question type (the old Question type picker was removed); Create a test has its own **Multiple choice / Fill in the blank / Both** choice.
 
-### Fill-in-the-blank from a decision (identification, enumeration, definitions)
-The same `fillblank` type, made from a **Supreme Court decision** instead of a rule (from case-0030 on; see step 5 of **Adding a new case**). Everything above applies (blanks, Difficulty, live checking, Show answer, Read, tests), except that there is no section heading.
-- `caseIds`: the case it comes from (that is what marks it as decision-based). `subtopic`: the case's sub-topic.
-- `fullText`: a sentence or short passage copied **exactly** from the case's full text (footnote numbers left out), where the Court names, lists or defines something: a doctrine and what it means, the elements or requisites of a rule, the kinds or exceptions. Never a summary, never words of our own.
-- `prompt`: the same text with the **term** (identification), **each listed item's key words** (enumeration) or **the defining words** (definition) blanked. Never blank the whole sentence, and never leave the answer readable elsewhere in the same text.
-- `explanation`: optional, a short plain-words note (what the term means, where it fits); shown as **Discussion**.
-- `source`: `caseTitle`, `grNumber` = the case's, `url`, `part` (where in the decision), and `excerpt` = the passage **containing** `fullText` (it may be longer, to show the reasoning; pieces in order, as usual).
-- **Checker:** `fullText` must be found word for word in the case's full text, the excerpt must contain it, and the excerpt is checked like any case question's. No CHECK for the missing section heading.
-- **On screen:** the quiet footer says "AI-assisted study draft. Check the official text." (the words are the Court's, but the blanks were picked by AI), not the rule-text line (`aiNoteFor`).
+### Fill-in-the-blank from a decision (only when the builder asks)
+The app and the checker can handle a `fillblank` item made from a decision's own sentence (`caseIds` set to the case; `fullText` copied exactly from the case's full text and contained in `source.excerpt`; no section heading; the footer says "AI-assisted study draft", `aiNoteFor`). **Don't write these unless the builder specifically asks**: cases get essays and multiple choice only (the builder found the decision-based blanks bad and inaccurate, 2026-11-26).
 
 ## Importing from NotebookLM
 The builder's 3 steps: (1) paste the prompt in `tools/notebooklm-prompt.md` into NotebookLM (subject, topic, count filled in); (2) save its JSON answer as any `.json` file in `imports/notebooklm/inbox/`; (3) say **"import my NotebookLM questions"**: the `notebooklm-agent` agent (`.claude/agents/notebooklm-agent.md`, this Mac only) does the rest and reports. Then the builder says "commit".
@@ -335,7 +328,7 @@ The builder's 3 steps: (1) paste the prompt in `tools/notebooklm-prompt.md` into
 ## Adding a new case (default procedure)
 Whenever the builder asks to add a new case, follow this checklist without being reminded. The content rules above still apply to every step.
 
-1. **Announce the IDs first.** Before starting, tell the builder the next free case ID and the first question ID that will be used (the next free `q-` number; the questions then run on consecutively, and the report gives the exact range). Get them from the "Next free IDs" line of `python3 tools/check-content.py`; never reuse or renumber an ID.
+1. **Announce the IDs first.** Before starting, tell the builder the next free case ID and the question IDs that will be used (the next 8 `q-` numbers). Get them from the "Next free IDs" line of `python3 tools/check-content.py`; never reuse or renumber an ID.
 2. **Get the real decision text.** Fetch it from a reliable source (LawPhil, the Supreme Court E-Library, etc.), never from memory. If it can't be fetched, stop and ask the builder to have the text pasted in (content rule 2).
 3. **Save the full text** as `data/case-texts/<case-id>.txt` (plain text, UTF-8):
    - Only the main decision: from the court header through the signatures and footnotes. Leave out site menus and the list of separate opinions (those aren't included).
@@ -343,12 +336,7 @@ Whenever the builder asks to add a new case, follow this checklist without being
    - Remove LawPhil's hidden watermarks (like `1awphi1`, `ℒαwρhi৷`, `1âwphi1`): search for odd tokens and report how many were removed. Change nothing else, typos included.
    - Check every footnote number in the text has a matching footnote, and tell the builder the file's size.
 4. **Add the case summary** to the `cases` list of its topic file (`data/content/<subject>/<topic>.json`; a new topic gets a new file plus a line in `data/catalog.json`): `facts`, `issue`, `ruling`, `keyDoctrine` in plain words, faithful to the decision, `status: "draft"`, under the correct subject (one of the 8 exact names above) and topic. Privacy and communication cases go under **Mercantile Law → Communication Law**; reuse an existing topic name when one fits, and say so when creating a new topic. `sourceUrl` is where the text came from.
-5. **Write about 8 questions, of the types the decision itself calls for** (by the builder's decision, from 2026-11-26; the cases added before kept 3 essay + 5 multiple choice): more for a long decision with many doctrines, fewer for a short resolution. All `status: "draft"`, all with `caseIds` linking the new case. **Never force a type**: pick, for each point the decision teaches, the form that fits it best:
-   - **Identification** (a doctrine, rule or term the Court names and describes): a fill-in-the-blank on the Court's own sentence, with the name blanked (see **Fill-in-the-blank from a decision**).
-   - **Enumeration** (elements, requisites, kinds, exceptions the Court lists): a fill-in-the-blank on the Court's own list, with each item's key words blanked.
-   - **Definition or principle**: a fill-in-the-blank on the Court's definition with its key words blanked, or an essay ("Explain the doctrine of …", "What is the principle of … and why does it apply?").
-   - **Essay** for applying the rule to facts and giving the reasons.
-   - **Multiple choice** where a fair trap fits (Bar exam style).
+5. **Write exactly 3 essay questions and 5 multiple-choice questions**, all `status: "draft"`, all with `caseIds` linking the new case, written like the real Bar questions (see **Bar exam style**). Some essays may be short define, enumerate or distinguish questions, and some multiple choice may be identification items ("This is known as the principle of …"). **No fill in the blank** for a case unless the builder asks:
    - Essays use the ALAC suggested answer (`answer`, `legalBasis`, `application`, `conclusion`) plus `keyPoints`.
    - Multiple choice: exactly 4 choices (A–D), one correct, and an explanation of why it's right and the others wrong.
    - Lawyer-provided samples are inspiration only (content rule 5).
@@ -357,14 +345,14 @@ Whenever the builder asks to add a new case, follow this checklist without being
 7. **Follow the text formatting conventions** in all content fields:
    - `**word**` for bold.
    - Numbered points as `(1) … (2) … (3)` (or `(a) (b)`), starting right after a sentence end, colon or semicolon. The app then shows each point on its own line with a bold number. Points written mid-sentence ("between (a) X and (b) Y") stay inline.
-8. **Test before committing:** `python3 tools/build-catalog.py` (rebuilds the catalog, so the new case shows up in the home screen's search), then `python3 tools/check-content.py` says "All content OK"; the app loads without errors, the case opens with its summary and full text, all its questions show up under the right subject and topic, and "Find in case" finds each question's excerpt in the full text.
+8. **Test before committing:** `python3 tools/build-catalog.py` (rebuilds the catalog, so the new case shows up in the home screen's search), then `python3 tools/check-content.py` says "All content OK"; the app loads without errors, the case opens with its summary and full text, all 8 questions show up under the right subject and topic, and "Find in case" finds each question's excerpt in the full text.
 9. **Cache version:** bump `CACHE_VERSION` in `sw.js` only if an app file changed (see Technical choices). Adding a case normally changes only data files, so no bump.
 10. **Commit and report:** one commit for the case (or one per step if it was split), then tell the builder what was added, the IDs used, the full-text file size, and anything that needs a person to check.
 
 ### When the builder sends a list of cases
 Treat it as several "Adding a new case" jobs and follow the checklist above for **every** case, without being reminded:
 1. **Read the list back first:** each case's name and G.R. / A.C. number, in the list's order. Say which ones are **already in the app** (same number in `data/catalog.json`'s `cases`) and skip them. A case given only by name is looked up on LawPhil; if more than one decision could match, or the number and name don't agree, ask before doing that one. Never guess a G.R. number.
-2. **Announce the IDs up front:** each case's case ID (consecutive) and the first question ID, from the "Next free IDs" line of `python3 tools/check-content.py`. The question count follows each decision, so the questions run on consecutively and the final report gives each case's exact range.
+2. **Announce all the IDs up front:** for each case, its case ID and its 8 question IDs, consecutive, from the "Next free IDs" line of `python3 tools/check-content.py`.
 3. **One case at a time, in order:** the full checklist (steps 2–9), then **one commit per case**, so each case is its own save point.
 4. **If a case's text can't be fetched** (or anything else stops it), don't guess: skip it, note why, and carry on with the rest. Its IDs aren't used, so the next case takes the next free ones (tell the builder the IDs changed).
 5. **Report at the end:** a short table: case, case ID, question IDs, full-text file size, and added / skipped (with the reason); then everything a person should check, and which cases need the text pasted in.

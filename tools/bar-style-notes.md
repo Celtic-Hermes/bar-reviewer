@@ -6,7 +6,7 @@ Sources read: LawPhil's copies of the official Bar questionnaires (`lawphil.net/
 
 ## Civil Law
 
-Read on 2026-11-26: Civil Law questionnaires 2007 to 2019 (`https://lawphil.net/courts/bm/barQ/<year>/civilQ.html`).
+Read on 2026-11-26: Civil Law questionnaires 2006 to 2019 (`https://lawphil.net/courts/bm/barQ/<year>/civilQ.html`) and 2022 Civil Law I and II (`…/barQ/2022/civil-I_Q.html`, `civil-II_Q.html`), from LawPhil's archive index `https://lawphil.net/courts/bm/barQ/barQs.html`.
 
 ### Delivery
 - **Essay items** are numbered with Roman numerals and carry their weight in points ("(5%)", sometimes split into (a), (b) parts at 2 to 3% each).
@@ -16,6 +16,8 @@ Read on 2026-11-26: Civil Law questionnaires 2007 to 2019 (`https://lawphil.net/
 - **Direct-knowledge items** sit among the essays: "What is …?", "Distinguish X from Y", "Explain …", and enumerations asked item by item ("(a) … (2%) (b) … (2%)").
   - Examples: 2017 (distinguish two contracts); 2019 (a definition, and the property regimes listed one by one).
 - **Instructions repeated in recent years** (2017 to 2019): a bare "Yes" or "No" without the reason gets no full credit, so the reason is always part of the answer. The suggested answers in the app always give the rule and why it applies.
+- **Recent calls (2022):** "What is your advice? Explain briefly. (5 points)"; "Discuss the principle of …" (a named doctrine, asked on its own); "How does the Civil Code distinguish … ? Explain briefly and give two examples." Points are written as "(5 points)".
+- **Older calls (2006):** "Explain." with the weight as "2.5%"; a quasi-delict question asking whether an independent civil action may be filed.
 - **Multiple choice** (2011 to 2014): a short stem and four options (A) to (D) of similar length, worth about 1%.
   - **Identification as multiple choice:** a definition of a principle, then "This is known as the principle of", with four doctrine names as options. Example: 2011 item 11, where the options are res ipsa loquitur, damnum absque injuria, vicarious liability and abuse of rights.
 
@@ -33,9 +35,9 @@ Read on 2026-11-26: Civil Law questionnaires 2007 to 2019 (`https://lawphil.net/
 - **Doctrine names that sound alike** used as distractors (res ipsa loquitur, damnum absque injuria, vicarious liability, abuse of rights).
 
 ### Professor's focus (from the builder, 2026-11-26)
-Torts and Quasi-delicts, X. Kindred Torts: Medical Malpractice. The professor stresses **identification, enumeration, principles and their definitions**. Questions there are mostly:
-- the Court's own definitions, with the term blanked (identification);
-- the Court's own lists, with each item blanked (enumeration);
-- "Explain the doctrine of …" essays.
+Torts and Quasi-delicts, X. Kindred Torts: Medical Malpractice. The professor stresses **identification, enumeration, principles and their definitions**.
 
-Fact-pattern essays and multiple choice are added where the decision has a clear application or a fair trap.
+The builder decided these are covered by **essays and multiple choice only**, 3 + 5 per case and **no fill in the blank**:
+- short essays the way the Bar asks them: "What is the doctrine of …? Explain.", "Discuss the principle of …", "What are the requisites of …?", "Distinguish … from …";
+- identification multiple choice: a definition, then "This is known as the doctrine of", with four doctrine names as the options;
+- the rest are fact-pattern essays ("Is X liable? Explain.") and fact-pattern multiple choice.
