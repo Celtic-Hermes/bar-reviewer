@@ -106,6 +106,21 @@
       "ruling": "The Court affirmed the Court of Appeals except for the attorney's fees, which it deleted. An alteration is material if it alters the effect of the instrument, that is, if it changes the items required to be stated under Section 1 of the Negotiable Instruments Law. A check's serial number is not one of them: the change did not alter the relations of the parties, the drawer, the drawee, the payee or the amount, and the issuing agency was clearly printed on the check. Being an innocent alteration, it gave PNB no right to dishonor the check. The Ministry's certification deserved no weight because its signatory was not presented to identify it. As to attorney's fees, neither lower court explained the award: the discretion to award attorney's fees under Article 2208 demands factual, legal and equitable justification; the reason must be stated in the text of the decision, not only in the dispositive portion, since the award is the exception rather than the rule.",
       "keyDoctrine": "The award of attorney's fees under Article 2208 is the exception, not the rule; it demands factual, legal and equitable justification, and the reason must be stated in the text of the decision. An award stated only in the dispositive portion is disallowed. A material alteration is one that changes the items required to be stated under Section 1 of the Negotiable Instruments Law; changing a check's serial number is not material.",
       "sourceUrl": "https://lawphil.net/judjuris/juri1996/apr1996/gr_107508_1996.html"
+    },
+    {
+      "id": "case-0055",
+      "status": "draft",
+      "name": "Eastern Shipping Lines, Inc. v. Court of Appeals, et al.",
+      "grNumber": "G.R. No. 97412",
+      "year": 1994,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "facts": "Two fiber drums of riboflavin were shipped from Japan to Manila on a vessel of Eastern Shipping Lines. On arrival, one drum was found damaged; it then passed through the arrastre operator and the customs broker, and when it reached the consignee, one drum had spillage and adulterated contents. The insurer paid the consignee ₱19,032.95 and, as subrogee, sued the carrier, the arrastre operator and the broker. The trial court held them jointly and severally liable, with legal interest of 12% a year from the filing of the complaint; the Court of Appeals affirmed. The carrier questioned its solidary liability and argued that the interest should run only from the trial court's decision and at 6%, since the claim was unliquidated.",
+      "issue": "(1) Is the carrier liable for the damage, solidarily with the arrastre operator and the broker? (2) From when does legal interest run on an award for loss or damage, and at what rate?",
+      "ruling": "The petition was partly granted. When goods arrive damaged, the carrier is presumed at fault, and since it failed to rebut the presumption, its liability was inevitable whether or not others were solidarily liable with it. On interest, the Court reconciled its earlier rulings into rules of thumb: (1) for a loan or forbearance of money, the stipulated interest applies, the interest due itself earns legal interest from judicial demand, and absent stipulation the rate is 12% a year from default (judicial or extrajudicial demand); (2) for other obligations, interest on damages may be imposed at the court's discretion at 6% a year, but not on unliquidated claims until the demand can be established with reasonable certainty: from demand if then reasonably certain, otherwise from the court's judgment, always on the amount finally adjudged; (3) once a money judgment becomes final and executory, the rate is 12% a year until satisfied, that period being equivalent to a forbearance of credit. Applying these, interest was set at 6% from the trial court's decision and 12% from finality.",
+      "keyDoctrine": "Interest as actual and compensatory damages: for a loan or forbearance of money, the stipulated rate (in writing), or absent stipulation the legal rate from judicial or extrajudicial demand; for other obligations, 6% at the court's discretion, running from demand if the claim is then reasonably certain, or else from the judgment; and from the finality of a money judgment, interest until satisfaction because that period is equivalent to a forbearance of credit. Interest due earns legal interest from judicial demand (Art. 2212). The 12% rates applied in this case were later lowered to 6% from July 1, 2013 (BSP Circular No. 799, Nacar v. Gallery Frames); check the current rate.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri1994/jul1994/gr_97412_1994.html"
     }
   ],
   "questions": [
@@ -1716,6 +1731,237 @@
         "url": "https://lawphil.net/judjuris/juri1996/apr1996/gr_107508_1996.html",
         "part": "Decision, discussion of the third issue and the disposition",
         "excerpt": "suffice it to state that since there is no material alteration in the check, petitioner has no right to dishonor it and return it to PBCom, the same being in all respects negotiable. … WHEREFORE, premises considered, except for the deletion of the award of attorney's fees, the decision of the Court of Appeals is hereby AFFIRMED."
+      }
+    },
+    {
+      "id": "q-0632",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "B borrowed ₱500,000 from L under a promissory note that was silent on interest. On maturity, L sent B a written demand, which B ignored. L sued, and the court ordered B to pay the ₱500,000. Applying the rules laid down in Eastern Shipping Lines v. Court of Appeals: (a) Is B liable for interest even though the note did not stipulate it? From when? (b) What happens once the judgment becomes final and executory but B still does not pay?",
+      "suggestedAnswer": {
+        "answer": "(a) Yes. Although no conventional interest is due without a written stipulation, B owes legal interest as damages for his delay, computed from default, that is, from L's extrajudicial demand. (b) From the finality of the judgment until it is satisfied, legal interest runs on the amount due, because that period is treated as equivalent to a forbearance of credit.",
+        "legalBasis": "Eastern Shipping Lines v. CA (rule II.1): when an obligation consisting of a loan or forbearance of money is breached, the interest due is that stipulated in writing; in the absence of stipulation, the rate (12% in 1994) is computed from default, i.e., from judicial or extrajudicial demand, under Article 1169. Rule II.3: when a judgment awarding a sum of money becomes final and executory, the legal rate applies from such finality until satisfaction, this interim period being deemed equivalent to a forbearance of credit.",
+        "application": "The obligation is a loan. With no written stipulation, legal interest applies as damages, and it runs from L's written demand, which put B in default. After the judgment becomes final, interest continues on the amount due until B pays.",
+        "conclusion": "Interest runs from the extrajudicial demand, and from finality until full payment. **Bar trap:** the absence of a written stipulation bars only conventional (stipulated) interest, not legal interest as damages for delay. Also, the 12% rate stated in this 1994 case was later lowered to 6% from July 1, 2013 (BSP Circular No. 799, applied in Nacar v. Gallery Frames); always check the current rate."
+      },
+      "keyPoints": [
+        "Loan or forbearance: the interest stipulated in writing applies",
+        "No stipulation: legal interest as damages, from default (judicial or extrajudicial demand, Art. 1169)",
+        "Interest due itself earns legal interest from judicial demand",
+        "From finality of the judgment until satisfaction: legal interest, as the period is equivalent to a forbearance of credit",
+        "The 12% rate was later lowered to 6% (from July 1, 2013); check the current rate"
+      ],
+      "caseIds": [
+        "case-0055"
+      ],
+      "source": {
+        "caseTitle": "Eastern Shipping Lines, Inc. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 97412",
+        "url": "https://lawphil.net/judjuris/juri1994/jul1994/gr_97412_1994.html",
+        "part": "Decision, the rules of thumb on interest (rule II.1 and II.3)",
+        "excerpt": "1. When the obligation is breached, and it consists in the payment of a sum of money, i.e., a loan or forbearance of money, the interest due should be that which may have been stipulated in writing. Furthermore, the interest due shall itself earn legal interest from the time it is judicially demanded. In the absence of stipulation, the rate of interest shall be 12% per annum to be computed from default, i.e., from judicial or extrajudicial demand under and subject to the provisions of Article 1169 of the Civil Code. … 3. When the judgment of the court awarding a sum of money becomes final and executory, the rate of legal interest, whether the case falls under paragraph 1 or paragraph 2, above, shall be 12% per annum from such finality until its satisfaction, this interim period being deemed to be by then an equivalent to a forbearance of credit."
+      }
+    },
+    {
+      "id": "q-0633",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "A consignee's goods were damaged in transit. Its insurer demanded payment of the loss from the carrier, then sued. The amount of the loss was disputed and was fixed only by the trial court after trial. The insurer asks for legal interest from the filing of the complaint. Applying Eastern Shipping Lines v. Court of Appeals, from when should interest run, and on what amount? Explain.",
+      "suggestedAnswer": {
+        "answer": "Interest should run from the date of the trial court's judgment, not from the filing of the complaint, and it should be computed on the amount finally adjudged.",
+        "legalBasis": "Eastern Shipping Lines v. CA (rule II.2): when an obligation not constituting a loan or forbearance of money is breached, interest on the damages may be imposed at the court's discretion (6% a year). No interest is adjudged on unliquidated claims or damages except when or until the demand can be established with reasonable certainty. Where it is so established, interest runs from judicial or extrajudicial demand; where it cannot be reasonably established at the time of demand, interest runs only from the date of the judgment, when the damages may be deemed reasonably ascertained. The base is in any case the amount finally adjudged.",
+        "application": "The claim is for damage to goods, not a loan or forbearance. Since the amount was disputed and became reasonably certain only when the trial court fixed it, interest runs from that judgment. That is how the Court modified the award in Eastern Shipping itself: 6% from the trial court's decision, then 12% from finality.",
+        "conclusion": "Interest from the trial court's judgment, on the amount finally adjudged. **Bar trap:** the date of the complaint or demand is used only if the amount was already reasonably certain then; an unliquidated claim earns interest only from the judgment."
+      },
+      "keyPoints": [
+        "Not a loan or forbearance: interest on damages at the court's discretion, at 6%",
+        "No interest on unliquidated claims until the demand can be established with reasonable certainty (Art. 2213)",
+        "Reasonably certain at demand: interest from judicial or extrajudicial demand",
+        "Otherwise: interest from the date of the court's judgment",
+        "Base: the amount finally adjudged"
+      ],
+      "caseIds": [
+        "case-0055"
+      ],
+      "source": {
+        "caseTitle": "Eastern Shipping Lines, Inc. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 97412",
+        "url": "https://lawphil.net/judjuris/juri1994/jul1994/gr_97412_1994.html",
+        "part": "Decision, the rules of thumb on interest (rule II.2)",
+        "excerpt": "2. When an obligation, not constituting a loan or forbearance of money, is breached, an interest on the amount of damages awarded may be imposed at the discretion of the court at the rate of 6% per annum. No interest, however, shall be adjudged on unliquidated claims or damages except when or until the demand can be established with reasonable certainty. Accordingly, where the demand is established with reasonable certainty, the interest shall begin to run from the time the claim is made judicially or extrajudicially (Art. 1169, Civil Code) but when such certainty cannot be so reasonably established at the time the demand is made, the interest shall begin to run only from the date the judgment of the court is made (at which time the quantification of damages may be deemed to have been reasonably ascertained). The actual base for the computation of legal interest shall, in any case, be on the amount finally adjudged. 3. When the judgment of the court awarding a sum of money becomes final and executory, the rate of legal interest, whether the case falls under paragraph 1 or paragraph 2, above, shall be 12% per annum from such finality until its satisfaction, this interim period being deemed to be by then an equivalent to a forbearance of credit. WHEREFORE, the petition is partly GRANTED. The appealed decision is AFFIRMED with the MODIFICATION that the legal interest to be paid is SIX PERCENT (6%) on the amount due computed from the decision, dated 03 February 1988, of the court a quo."
+      }
+    },
+    {
+      "id": "q-0634",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Goods shipped in good order arrived damaged after passing through the custody of the carrier, the arrastre operator and the customs broker, in that order. Sued with the others, the carrier argues that it cannot be held liable because no court made an express finding that it was negligent, and the damage might have occurred while the goods were with the others. Is the carrier's argument correct? Explain, citing Eastern Shipping Lines v. Court of Appeals.",
+      "suggestedAnswer": {
+        "answer": "No. The carrier is presumed at fault, and no express finding of negligence is needed to hold it liable.",
+        "legalBasis": "In Eastern Shipping Lines v. CA, the Court held that the carrier's duty of diligence lasts from the time the goods are unconditionally placed in its possession until delivered to the person entitled to receive them (Arts. 1736-1738, Civil Code). When the goods are lost or arrive damaged, a presumption arises against the carrier of its failure to observe that diligence, and there need not be an express finding of negligence (Art. 1735). The exceptions in Article 1734 are exclusive. Both the arrastre operator and the carrier are charged with the obligation to deliver the goods in good condition to the consignee.",
+        "application": "The damage happened while the goods were in the successive custody of the carrier and the others, and the carrier did not rebut the presumption of fault or show any Article 1734 cause. Its liability is inevitable regardless of whether others are solidarily liable with it.",
+        "conclusion": "The carrier is liable. **Bar trap:** the Court did not say that the arrastre operator and broker are always solidarily liable with the carrier; that depends on the facts. What is fixed is the presumption against the carrier."
+      },
+      "keyPoints": [
+        "The carrier's duty lasts from receipt until delivery to the person entitled to receive the goods",
+        "Goods lost or damaged: presumption of the carrier's fault; no express finding of negligence needed (Art. 1735)",
+        "The exceptions in Art. 1734 are exclusive",
+        "Carrier and arrastre operator are both bound to deliver the goods in good condition",
+        "Solidary liability of arrastre and broker is not automatic; facts may vary the rule"
+      ],
+      "caseIds": [
+        "case-0055"
+      ],
+      "source": {
+        "caseTitle": "Eastern Shipping Lines, Inc. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 97412",
+        "url": "https://lawphil.net/judjuris/juri1994/jul1994/gr_97412_1994.html",
+        "part": "Decision, discussion of the carrier's liability",
+        "excerpt": "The common carrier's duty to observe the requisite diligence in the shipment of goods lasts from the time the articles are surrendered to or unconditionally placed in the possession of, and received by, the carrier for transportation until delivered to, or until the lapse of a reasonable time for their acceptance by, the person entitled to receive them (Arts. 1736-1738, Civil Code; Ganzon vs. Court of Appeals, 161 SCRA 646; Kui Bai vs. Dollar Steamship Lines, 52 Phil. 863). When the goods shipped either are lost or arrive in damaged condition, a presumption arises against the carrier of its failure to observe that diligence, and there need not be an express finding of negligence to hold it liable (Art. 1735, Civil Code; Philippine National Railways vs. Court of Appeals, 139 SCRA 87; Metro Port Service vs. Court of Appeals, 131 SCRA 365). There are, of course, exceptional cases when such presumption of fault is not observed but these cases, enumerated in Article 1734 of the Civil Code, are exclusive, not one of which can be applied to this case. … We do not, of course, imply by the above pronouncement that the arrastre operator and the customs broker are themselves always and necessarily liable solidarily with the carrier, or vice-versa, nor that attendant facts in a given case may not vary the rule. The instant petition has been brought solely by Eastern Shipping Lines, which, being the carrier and not having been able to rebut the presumption of fault, is, in any event, to be held liable in this particular case."
+      }
+    },
+    {
+      "id": "q-0635",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Under the rules laid down in Eastern Shipping Lines v. Court of Appeals, from when does the interest due on a loan itself earn legal interest?",
+      "choices": {
+        "A": "From the date the loan was granted.",
+        "B": "From the time it is judicially demanded.",
+        "C": "From the finality of the judgment only.",
+        "D": "From the maturity date of the loan, without need of demand."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court said: \"the interest due shall itself earn legal interest from the time it is judicially demanded,\" citing Article 2212 of the Civil Code. **A and D are wrong:** compounding of interest due starts only with judicial demand. **C is wrong:** finality governs the separate rule on interest after a final judgment. **Bar trap:** for interest on interest, an extrajudicial demand is not enough; it must be judicial.",
+      "caseIds": [
+        "case-0055"
+      ],
+      "source": {
+        "caseTitle": "Eastern Shipping Lines, Inc. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 97412",
+        "url": "https://lawphil.net/judjuris/juri1994/jul1994/gr_97412_1994.html",
+        "part": "Decision, the rules of thumb on interest (rule II.1)",
+        "excerpt": "Furthermore, the interest due shall itself earn legal interest from the time it is judicially demanded."
+      }
+    },
+    {
+      "id": "q-0636",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Following Eastern Shipping Lines v. Court of Appeals, when may interest be adjudged on unliquidated claims or damages?",
+      "choices": {
+        "A": "Never, under any circumstance.",
+        "B": "Always from the filing of the complaint.",
+        "C": "Only when or until the demand can be established with reasonable certainty.",
+        "D": "Only when the parties stipulated it in writing."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court said: \"No interest, however, shall be adjudged on unliquidated claims or damages except when or until the demand can be established with reasonable certainty,\" in line with Article 2213. **A is wrong:** interest can run once the amount is reasonably certain, at the latest from the judgment. **B is wrong:** the complaint's date is used only if the amount was already reasonably certain. **D is wrong:** a written stipulation is required for conventional interest on loans, not for interest as damages. **Bar trap:** \"unliquidated\" does not mean \"no interest ever\".",
+      "caseIds": [
+        "case-0055"
+      ],
+      "source": {
+        "caseTitle": "Eastern Shipping Lines, Inc. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 97412",
+        "url": "https://lawphil.net/judjuris/juri1994/jul1994/gr_97412_1994.html",
+        "part": "Decision, the rules of thumb on interest (rule II.2)",
+        "excerpt": "No interest, however, shall be adjudged on unliquidated claims or damages except when or until the demand can be established with reasonable certainty."
+      }
+    },
+    {
+      "id": "q-0637",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "In Eastern Shipping Lines v. Court of Appeals, why does interest run from the finality of a judgment awarding a sum of money until its satisfaction?",
+      "choices": {
+        "A": "Because that interim period is deemed equivalent to a forbearance of credit.",
+        "B": "Because the judgment debtor is presumed to be in bad faith.",
+        "C": "Because the parties are deemed to have agreed to it.",
+        "D": "Because it is a penalty for appealing the case."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court said legal interest applies \"from such finality until its satisfaction, this interim period being deemed to be by then an equivalent to a forbearance of credit.\" **B, C and D are wrong:** none is the reason given. **Bar trap:** this rule applies whether the obligation was a loan (rule 1) or not (rule 2). The 12% rate then used was later lowered to 6% from July 1, 2013; check the current rate.",
+      "caseIds": [
+        "case-0055"
+      ],
+      "source": {
+        "caseTitle": "Eastern Shipping Lines, Inc. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 97412",
+        "url": "https://lawphil.net/judjuris/juri1994/jul1994/gr_97412_1994.html",
+        "part": "Decision, the rules of thumb on interest (rule II.3)",
+        "excerpt": "3. When the judgment of the court awarding a sum of money becomes final and executory, the rate of legal interest, whether the case falls under paragraph 1 or paragraph 2, above, shall be 12% per annum from such finality until its satisfaction, this interim period being deemed to be by then an equivalent to a forbearance of credit."
+      }
+    },
+    {
+      "id": "q-0638",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "In Eastern Shipping Lines v. Court of Appeals, the Court noted a consistent holding in earlier cases on the Central Bank Circular imposing 12% interest. To what did that circular apply?",
+      "choices": {
+        "A": "To all monetary judgments, whatever the cause of action.",
+        "B": "Only to loans or forbearance of money, goods or credits, and to judgments involving them.",
+        "C": "Only to actions for damages arising from quasi-delicts.",
+        "D": "Only to expropriation cases."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court observed \"a consistent holding that the Central Bank Circular imposing the 12% interest per annum applies only to loans or forbearance of money, goods or credits, as well as to judgments involving such loan or forbearance,\" while the Civil Code's 6% governs indemnities for damage from breach or delay in obligations in general. **A is wrong:** other monetary judgments were outside it. **C and D are wrong:** damages for quasi-delicts and just compensation in expropriation (National Power Corporation v. Angas) took the 6% rate. **Bar trap:** classify the obligation first: loan or forbearance, or damages.",
+      "caseIds": [
+        "case-0055"
+      ],
+      "source": {
+        "caseTitle": "Eastern Shipping Lines, Inc. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 97412",
+        "url": "https://lawphil.net/judjuris/juri1994/jul1994/gr_97412_1994.html",
+        "part": "Decision, reconciliation of earlier rulings (the first group of cases)",
+        "excerpt": "It is easily discernible in these cases that there has been a consistent holding that the Central Bank Circular imposing the 12% interest per annum applies only to loans or forbearance of money, goods or credits, as well as to judgments involving such loan or forbearance of money, goods or credits, and that the 6% interest under the Civil Code governs when the transaction involves the payment of indemnities in the concept of damage arising from the breach or a delay in the performance of obligations in general."
+      }
+    },
+    {
+      "id": "q-0639",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "How did the Court modify the interest award in Eastern Shipping Lines v. Court of Appeals?",
+      "choices": {
+        "A": "12% from the filing of the complaint until fully paid.",
+        "B": "6% from the filing of the complaint until fully paid.",
+        "C": "No interest at all, since the claim was unliquidated.",
+        "D": "6% from the trial court's decision, and 12% from the finality of the Supreme Court's decision until payment."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The Court held that \"the legal interest to be paid is SIX PERCENT (6%) on the amount due computed from the decision, dated 03 February 1988, of the court a quo,\" and that \"[a] TWELVE PERCENT (12%) interest, in lieu of SIX PERCENT (6%), shall be imposed on such amount upon finality of this decision until the payment thereof.\" **A is the lower courts' award, which was modified. B is wrong:** the claim was unliquidated, so interest ran from the judgment, not the complaint. **C is wrong:** interest runs once the amount is reasonably certain. **Bar trap:** two periods, two rates.",
+      "caseIds": [
+        "case-0055"
+      ],
+      "source": {
+        "caseTitle": "Eastern Shipping Lines, Inc. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 97412",
+        "url": "https://lawphil.net/judjuris/juri1994/jul1994/gr_97412_1994.html",
+        "part": "Decision, the disposition",
+        "excerpt": "WHEREFORE, the petition is partly GRANTED. The appealed decision is AFFIRMED with the MODIFICATION that the legal interest to be paid is SIX PERCENT (6%) on the amount due computed from the decision, dated 03 February 1988, of the court a quo. A TWELVE PERCENT (12%) interest, in lieu of SIX PERCENT (6%), shall be imposed on such amount upon finality of this decision until the payment thereof."
       }
     }
   ]
