@@ -331,6 +331,21 @@
       "ruling": "No. The judgment was set aside and the case remanded for trial. The defendants' averment that they had no knowledge or information sufficient to form a belief as to the damages, with their claim that the death was due to an unforeseen event or the fault of the child or his parents, tendered a valid issue. Even if the amounts of damages alleged in a complaint are not specifically denied, the damages are not deemed admitted. Actual damages must be proved; a court cannot rely on speculation, conjecture or guesswork as to their fact and amount. And although an allegation is not necessary for moral damages, the claimant must still satisfactorily prove the factual basis of the damage and its causal relation to the defendant's acts. A full-blown trial was needed.",
       "keyDoctrine": "Damages are not deemed admitted even if the amounts alleged in the complaint are not specifically denied; an answer stating lack of knowledge or information sufficient to form a belief tenders a valid issue. Actual damages must be proved and cannot rest on speculation, conjecture or guesswork. For moral damages, the claimant must satisfactorily prove the existence of the factual basis of the damage and its causal relation to the defendant's acts. So a claim for damages generally cannot be decided by judgment on the pleadings.",
       "sourceUrl": "https://lawphil.net/judjuris/juri1968/feb1968/gr_l-20081_1968.html"
+    },
+    {
+      "id": "case-0070",
+      "status": "draft",
+      "name": "San Miguel Brewery, Inc. v. Magno",
+      "grNumber": "G.R. No. L-21879",
+      "year": 1967,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "facts": "San Miguel Brewery stopped paying Butuan City's taxes on its sale of beer and soft drinks. After repeated demands, the City Treasurer, Francisco Magno, with the Mayor's approval, issued a warrant of distraint and levy under a city ordinance and seized two of the company's delivery trucks. The company sued Magno in his personal capacity for the trucks' release and damages, alleging the seizure was without authority and for reasons unknown to it, although it had been told in writing which ordinance he relied on. Magno counterclaimed for ₱40,000 moral and ₱10,000 exemplary damages and attorney's fees for the shock and humiliation of being sued, but presented no evidence. The trial court dismissed the complaint and awarded Magno ₱2,000 damages and ₱1,000 attorney's fees.",
+      "issue": "(1) Is the City Treasurer personally liable for damages? (2) Was the award of damages to the City Treasurer on his counterclaim proper?",
+      "ruling": "The decision was modified. Magno issued the warrant in his capacity as City Treasurer, under an ordinance authorizing it, and was not shown to have acted in bad faith; a public officer merely performing a duty enjoined by law cannot be made to answer personally for damages. The validity of the ordinance could not be raised for the first time on appeal or collaterally. On the counterclaim, moral damages require pleading and proof of moral suffering, mental anguish, fright and the like; though no proof of pecuniary loss is needed (Art. 2216), the claimant must satisfactorily prove the factual basis of the damages (Art. 2217) and its causal connection to the defendant's acts. Since Magno presented no evidence, the ₱2,000 damages were set aside. Nor could it be exemplary damages: a complaint found unmeritorious, or filed against the wrong party, does not justify a penalty on the right to litigate. But since he was sued personally for acts done in his official duty and had to hire counsel, attorney's fees of ₱2,000 and ₱100 nominal damages were just and equitable.",
+      "keyDoctrine": "Moral damages require pleading and proof of moral suffering, mental anguish, fright and the like; no proof of pecuniary loss is needed, but the factual basis of the damages and its causal connection to the defendant's acts must be satisfactorily proved. Filing an unmeritorious suit, or suing the wrong party, does not by itself justify moral or exemplary damages, since no penalty should be placed on the right to litigate. A public officer who acts in good faith in performing a duty enjoined by law is not personally liable for damages.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri1967/sep1967/gr_l-21879_1967.html"
     }
   ],
   "questions": [
@@ -5400,6 +5415,237 @@
         "url": "https://lawphil.net/judjuris/juri1968/feb1968/gr_l-20081_1968.html",
         "part": "Decision, the disposition",
         "excerpt": "ACCORDINGLY, the judgment on the pleadings of June 24, 1960 is set aside, and this case is hereby remanded to the court of origin for trial on the merits."
+      }
+    },
+    {
+      "id": "q-0752",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "A city treasurer, sued in his personal capacity by a company whose trucks he seized for unpaid taxes, counterclaimed for ₱40,000 moral damages, alleging shock, fright, wounded feelings and social humiliation suffered by him and his family because of the suit. He presented no evidence on these. The trial court, finding the company's suit baseless, awarded him ₱2,000 in damages. Was the award proper? Explain, citing San Miguel Brewery v. Magno.",
+      "suggestedAnswer": {
+        "answer": "No. Moral damages require pleading and proof of the moral suffering; since the treasurer presented no evidence, no moral damages could be awarded.",
+        "legalBasis": "In San Miguel Brewery v. Magno, the Court held that \"[i]n order that moral damages may be awarded, there must be pleading and proof of moral suffering, mental anguish, fright and the like.\" While no proof of pecuniary loss is necessary, the amount being left to the court's discretion (Art. 2216), \"it is, nevertheless, essential that the claimant should satisfactorily prove the existence of the factual basis of the damages (Article 2217) and its causal connection to defendant's acts,\" because moral damages are designed to compensate actual injury, not to penalize.",
+        "application": "The treasurer only alleged his suffering in his counterclaim and offered no evidence of it or of its link to the suit, so the ₱2,000 award had no basis and was set aside.",
+        "conclusion": "The award was improper. **Bar trap:** an allegation of mental anguish in a pleading is not proof; moral damages need evidence of the factual basis and causation."
+      },
+      "keyPoints": [
+        "Pleading and proof of moral suffering, mental anguish, fright and the like are required",
+        "No proof of pecuniary loss needed; amount left to the court (Art. 2216)",
+        "But the factual basis (Art. 2217) and causal connection must be satisfactorily proved",
+        "Moral damages compensate actual injury, not penalize",
+        "No evidence presented: the award was set aside"
+      ],
+      "caseIds": [
+        "case-0070"
+      ],
+      "source": {
+        "caseTitle": "San Miguel Brewery, Inc. v. Magno",
+        "grNumber": "G.R. No. L-21879",
+        "url": "https://lawphil.net/judjuris/juri1967/sep1967/gr_l-21879_1967.html",
+        "part": "Decision, discussion of the third assignment of error (the counterclaim for moral damages)",
+        "excerpt": "In order that moral damages may be awarded, there must be pleading and proof of moral suffering, mental anguish, fright and the like (Darang vs. Belizar, L-19487, January 31, 1967). While no proof of pecuniary loss is necessary in order that moral damages may be awarded, the amount of indemnity being left to the discretion of the court (Article 2216), it is, nevertheless, essential that the claimant should satisfactorily prove the existence of the factual basis of the damages (Article 2217) and its causal connection to defendant's acts. This is so, because moral damages, though incapable of pecuniary estimation, are in the category of an award, designed to compensate the claimant for actual injury suffered and not to impose a penalty on the wrong-doer (Algarra vs. Sandejas, 27 Phil. 284; Malonzo vs. Galang, L-13851, July 27, 1960)."
+      }
+    },
+    {
+      "id": "q-0753",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "In the same case, could the ₱2,000 award to the city treasurer be sustained instead as exemplary damages, on the ground that the company's complaint contained untrue allegations and was filed against the wrong party? What relief, if any, is the treasurer entitled to? Explain, citing San Miguel Brewery v. Magno.",
+      "suggestedAnswer": {
+        "answer": "No. A complaint found to have untrue allegations, or filed against the wrong party, does not justify exemplary damages, since this would penalize the right to litigate. But the treasurer may recover attorney's fees and nominal damages, since he was sued in his private capacity for acts done in his official duty and had to hire private counsel.",
+        "legalBasis": "In San Miguel Brewery v. Magno, the Court held that \"the mere findings that certain allegations in the complaint are not true, and the plaintiff committed a mistake in instituting the action against the wrong party, do not justify the award of this kind of damages. It infringes upon the right of a citizen to have access to the courts.\" \"Penalty in the concept of damages should not be imposed simply because a complaint is found unmeritorious by the courts.\" Attorney's fees, however, are addressed to the court's sound discretion and may be awarded when just and equitable, as when a public officer is sued personally for acts done in official duty and must hire private counsel; nominal damages may also be adjudicated.",
+        "application": "The Court set aside the ₱2,000 damages, increased the attorney's fees to ₱2,000 and awarded ₱100 nominal damages.",
+        "conclusion": "No exemplary damages; attorney's fees and nominal damages instead. **Bar trap:** losing a case, even on an unfounded complaint, is not by itself a ground for moral or exemplary damages; the courts must stay open to litigants."
+      },
+      "keyPoints": [
+        "Untrue allegations or suing the wrong party do not justify exemplary damages",
+        "It would infringe the right of access to the courts",
+        "No penalty simply because a complaint is unmeritorious",
+        "Attorney's fees when just and equitable: officer sued personally for official acts, forced to hire counsel",
+        "₱2,000 attorney's fees and ₱100 nominal damages"
+      ],
+      "caseIds": [
+        "case-0070"
+      ],
+      "source": {
+        "caseTitle": "San Miguel Brewery, Inc. v. Magno",
+        "grNumber": "G.R. No. L-21879",
+        "url": "https://lawphil.net/judjuris/juri1967/sep1967/gr_l-21879_1967.html",
+        "part": "Decision, discussion of the third assignment of error (exemplary damages, attorney's fees and nominal damages)",
+        "excerpt": "Neither may we consider the award as exemplary damages, because the mere findings that certain allegations in the complaint are not true, and the plaintiff committed a mistake in instituting the action against the wrong party, do not justify the award of this kind of damages. It infringes upon the right of a citizen to have access to the courts. The portals of the courts of justice should not be closed to litigants who ask for the protection of their rights. Penalty in the concept of damages should not be imposed simply because a complaint is found unmeritorious by the courts. The amount of attorney's fees, on the other hand, is addressed to the sound discretion of the court. It may be awarded along with expenses of litigation, other than judicial costs, in cases where the court deems it just and equitable under the circumstances of the case. And when as in this case, the defendant public officer was sued in his private capacity for acts done in the performance of official duty required by law, and was forced to employ the services of private counsel to defend his rights, it is but proper that attorney's fees be charged against the plaintiff. Nominal damages may also be adjudicated."
+      }
+    },
+    {
+      "id": "q-0754",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "A city treasurer, acting under a city ordinance authorizing distraint, seized a taxpayer's trucks for unpaid taxes. The taxpayer sued him in his personal capacity for the cost of renting replacement trucks, which the treasurer admitted it had spent. Is the treasurer personally liable for those damages? Explain, citing San Miguel Brewery v. Magno.",
+      "suggestedAnswer": {
+        "answer": "No. Since he acted in his official capacity under an ordinance empowering him to issue the warrant, and was not shown to have acted in bad faith, he cannot be made to answer personally for damages.",
+        "legalBasis": "In San Miguel Brewery v. Magno, the Court held that the claim for the ₱2,160 rental of replacement trucks \"erroneously assumes that the defendant is personally liable for damages,\" disregarding that he issued the warrant as City Treasurer, empowered by law to do so. \"[N]ot having been shown that the defendant, either as a private citizen or as City Treasurer of Butuan, had acted in bad faith, there can be no question that appellee Francisco Magno, who was merely performing a duty enjoined by law to be performed when he issued the warrant of distraint and levy, cannot be made to answer personally for damages.\"",
+        "application": "The stipulation that the taxpayer incurred the rental costs did not make the treasurer personally liable, because he acted within his legal authority and in good faith. The ordinance's validity could not be attacked collaterally in a suit against him personally.",
+        "conclusion": "Not personally liable. **Bar trap:** proof that the plaintiff suffered a loss is not enough; the defendant must be the one legally answerable for it."
+      },
+      "keyPoints": [
+        "The warrant was issued in his official capacity under an ordinance",
+        "No showing of bad faith",
+        "A public officer merely performing a duty enjoined by law is not personally liable",
+        "An admitted loss does not by itself establish personal liability",
+        "An ordinance cannot be attacked collaterally"
+      ],
+      "caseIds": [
+        "case-0070"
+      ],
+      "source": {
+        "caseTitle": "San Miguel Brewery, Inc. v. Magno",
+        "grNumber": "G.R. No. L-21879",
+        "url": "https://lawphil.net/judjuris/juri1967/sep1967/gr_l-21879_1967.html",
+        "part": "Decision, discussion of the second assignment of error (personal liability of the public officer)",
+        "excerpt": "The argument is based on a wrong premise. It erroneously assumes that the defendant is personally liable for damages to the appellant, disregarding the established fact that the defendant had issued the warrant of distraint and levy against plaintiff's properties in his capacity as City Treasurer of Butuan who, under the law, is empowered to issue the warrant. … Since there is no dispute that the appellee issued the warrant of distraint and levy against the delivery trucks of the appellant on January 9, 1961, in his capacity as City Treasurer of Butuan, and as there is no disagreement that defendant-appellee issued said warrant by virtue of Ordinance No. 26 of the City of Butuan above-quoted (Par. 15, Stipulation of Facts), and not having been shown that the defendant, either as a private citizen or as City Treasurer of Butuan, had acted in bad faith, there can be no question that appellee Francisco Magno, who was merely performing a duty enjoined by law to be performed when he issued the warrant of distraint and levy, cannot be made to answer personally for damages to the appellant."
+      }
+    },
+    {
+      "id": "q-0755",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "According to San Miguel Brewery v. Magno, in order that moral damages may be awarded, there must be",
+      "choices": {
+        "A": "proof of pecuniary loss.",
+        "B": "a criminal conviction of the defendant.",
+        "C": "pleading and proof of moral suffering, mental anguish, fright and the like.",
+        "D": "an award of actual damages."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court said: \"In order that moral damages may be awarded, there must be pleading and proof of moral suffering, mental anguish, fright and the like.\" **A is wrong:** no proof of pecuniary loss is necessary (Art. 2216). **B and D are wrong:** neither is required. **Bar trap:** \"no proof of pecuniary loss\" is different from \"no proof at all\".",
+      "caseIds": [
+        "case-0070"
+      ],
+      "source": {
+        "caseTitle": "San Miguel Brewery, Inc. v. Magno",
+        "grNumber": "G.R. No. L-21879",
+        "url": "https://lawphil.net/judjuris/juri1967/sep1967/gr_l-21879_1967.html",
+        "part": "Decision, discussion of the third assignment of error (moral damages)",
+        "excerpt": "In order that moral damages may be awarded, there must be pleading and proof of moral suffering, mental anguish, fright and the like (Darang vs. Belizar, L-19487, January 31, 1967)."
+      }
+    },
+    {
+      "id": "q-0756",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Under San Miguel Brewery v. Magno, may exemplary damages be awarded against a plaintiff simply because its complaint was found unmeritorious?",
+      "choices": {
+        "A": "Yes, to deter baseless suits.",
+        "B": "Yes, if the plaintiff is a corporation.",
+        "C": "Yes, if the plaintiff sued the wrong party.",
+        "D": "No; penalty in the concept of damages should not be imposed simply because a complaint is found unmeritorious, as it would infringe on the right of access to the courts."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The Court said that untrue allegations or suing the wrong party \"do not justify the award of this kind of damages. It infringes upon the right of a citizen to have access to the courts ... Penalty in the concept of damages should not be imposed simply because a complaint is found unmeritorious by the courts.\" **A, B and C are wrong** for that reason. **Bar trap:** a clearly malicious or unfounded suit may be different; a mere loss is not.",
+      "caseIds": [
+        "case-0070"
+      ],
+      "source": {
+        "caseTitle": "San Miguel Brewery, Inc. v. Magno",
+        "grNumber": "G.R. No. L-21879",
+        "url": "https://lawphil.net/judjuris/juri1967/sep1967/gr_l-21879_1967.html",
+        "part": "Decision, discussion of the third assignment of error (exemplary damages)",
+        "excerpt": "It infringes upon the right of a citizen to have access to the courts. The portals of the courts of justice should not be closed to litigants who ask for the protection of their rights. Penalty in the concept of damages should not be imposed simply because a complaint is found unmeritorious by the courts."
+      }
+    },
+    {
+      "id": "q-0757",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "In San Miguel Brewery v. Magno, why did the Court refuse to pass on the validity of the city ordinance authorizing distraint?",
+      "choices": {
+        "A": "Because the question was not raised in the pleadings or at the trial, no exception applied, and an ordinance is not subject to collateral attack in a suit against the treasurer personally.",
+        "B": "Because only the Supreme Court may declare an ordinance void.",
+        "C": "Because the ordinance had been repealed.",
+        "D": "Because the company had paid the taxes under protest."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court held that a question of validity not raised in the pleadings or at the trial ordinarily will not be considered on appeal, that none of the exceptions applied, and that the treasurer, sued in his individual capacity, was not the proper party: \"A municipal ordinance is not subject to collateral attack.\" **B, C and D are wrong:** none was the reason. **Bar trap:** raise constitutional or validity questions at the earliest opportunity and in the proper proceeding.",
+      "caseIds": [
+        "case-0070"
+      ],
+      "source": {
+        "caseTitle": "San Miguel Brewery, Inc. v. Magno",
+        "grNumber": "G.R. No. L-21879",
+        "url": "https://lawphil.net/judjuris/juri1967/sep1967/gr_l-21879_1967.html",
+        "part": "Decision, discussion of the first assignment of error (raising the validity of the ordinance)",
+        "excerpt": "Moreover, Francisco Magno is sued in this case not in his capacity as City Treasurer of Butuan but in his individual capacity. He is not the proper party against whom the alleged invalidity of the ordinance in question should be pleaded, nor is this the proper proceeding wherein the alleged infirmity of the said ordinance may be raised. A municipal ordinance is not subject to collateral attack."
+      }
+    },
+    {
+      "id": "q-0758",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "In San Miguel Brewery v. Magno, why did the Court award attorney's fees to the city treasurer?",
+      "choices": {
+        "A": "Because he proved moral suffering.",
+        "B": "Because, as a public officer sued in his private capacity for acts done in the performance of official duty, he was forced to employ private counsel, making the award just and equitable.",
+        "C": "Because attorney's fees are always awarded to the winning party.",
+        "D": "Because the company acted in gross bad faith."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court said that \"when as in this case, the defendant public officer was sued in his private capacity for acts done in the performance of official duty required by law, and was forced to employ the services of private counsel to defend his rights, it is but proper that attorney's fees be charged against the plaintiff.\" **A is wrong:** he presented no evidence of suffering. **C is wrong:** fees are discretionary, not automatic. **D is wrong:** no bad faith was found. **Bar trap:** attorney's fees may be just and equitable even where moral and exemplary damages are denied.",
+      "caseIds": [
+        "case-0070"
+      ],
+      "source": {
+        "caseTitle": "San Miguel Brewery, Inc. v. Magno",
+        "grNumber": "G.R. No. L-21879",
+        "url": "https://lawphil.net/judjuris/juri1967/sep1967/gr_l-21879_1967.html",
+        "part": "Decision, discussion of the third assignment of error (attorney's fees)",
+        "excerpt": "And when as in this case, the defendant public officer was sued in his private capacity for acts done in the performance of official duty required by law, and was forced to employ the services of private counsel to defend his rights, it is but proper that attorney's fees be charged against the plaintiff."
+      }
+    },
+    {
+      "id": "q-0759",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "How did the Court modify the trial court's decision in San Miguel Brewery v. Magno?",
+      "choices": {
+        "A": "It ordered the treasurer to pay the company ₱2,160 for renting trucks.",
+        "B": "It affirmed the ₱2,000 moral damages to the treasurer.",
+        "C": "It set aside the ₱2,000 damages to the treasurer, increased his attorney's fees to ₱2,000, and awarded him ₱100 nominal damages.",
+        "D": "It declared the city ordinance void."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court modified the decision, \"setting aside the award of P2,000.00 to the defendant in concept of damages, but increasing the attorney's fees to P2,000.00, and ordering the plaintiff to pay to the defendant P100.00 as nominal damages.\" **A is wrong:** the treasurer was not personally liable. **B is wrong:** moral damages were not proved. **D is wrong:** the validity was not passed upon. **Bar trap:** nominal damages vindicate a right even without proof of loss.",
+      "caseIds": [
+        "case-0070"
+      ],
+      "source": {
+        "caseTitle": "San Miguel Brewery, Inc. v. Magno",
+        "grNumber": "G.R. No. L-21879",
+        "url": "https://lawphil.net/judjuris/juri1967/sep1967/gr_l-21879_1967.html",
+        "part": "Decision, the disposition",
+        "excerpt": "WHEREFORE, the decision appealed from is modified, setting aside the award of P2,000.00 to the defendant in concept of damages, but increasing the attorney's fees to P2,000.00, and ordering the plaintiff to pay to the defendant P100.00 as nominal damages."
       }
     }
   ]
