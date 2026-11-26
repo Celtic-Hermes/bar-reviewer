@@ -16,6 +16,21 @@
       "ruling": "The Court denied the petition and affirmed the dismissal. (1) Res ipsa loquitur does not apply. A patient who had been sick with fever and chills for five days, unrelieved by medicine, dying a few hours after admission is not unusual or extraordinary; the alleged lack of care was not apparent to a layman, and the doctrine cannot apply to a suit that questions the merits of a diagnosis or of a scientific treatment. Expert testimony was therefore needed. (2) The heirs' only witness was a pathologist who was not a specialist in infectious diseases, had never autopsied a typhoid victim and had seen only about three typhoid cases, so his opinion was properly discarded. The defense experts showed that the Widal Test was a standard test, that the diagnosis was reasonable given the history and the local outbreak, that chloromycetin was the drug of choice, and that the dosage was within accepted limits. Doctors are only required to perform standard tests and procedures; they cannot be required to predict every reaction to a drug. (3) Extraordinary diligence is peculiar to common carriers. The standard for doctors is the reasonable average merit among ordinarily good physicians.",
       "keyDoctrine": "Medical malpractice is the failure of a physician to apply the degree of care and skill ordinarily employed by the profession generally under similar conditions. Its four elements are duty, breach, injury and proximate causation, and expert testimony is usually needed to prove them. Res ipsa loquitur, which dispenses with expert testimony, applies only where a layman can tell from common knowledge that the result would not have happened with due care; it does not apply to the merits of a diagnosis or a scientific treatment. Doctors owe the reasonable average merit of ordinarily good physicians, not the extraordinary diligence of common carriers.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2000/oct2000/gr_130547_2000.html"
+    },
+    {
+      "id": "case-0031",
+      "status": "draft",
+      "name": "Jarcia, Jr., et al. v. People",
+      "grNumber": "G.R. No. 187926",
+      "year": 2012,
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "facts": "Roy Alfonso Santiago, Jr., a young boy, was hit by a taxicab and rushed to the emergency room of the Manila Doctors Hospital. Dr. Emmanuel Jarcia, Jr. and Dr. Marilou Bastan, junior residents in general surgery, attended to him. Only his ankle was X-rayed, and Dr. Jarcia read it as showing no fracture. When his mother, a nurse, asked for an X-ray up to the knee because the boy complained of pain from the ankle to the middle of the leg, Dr. Bastan said there was no need since only the ankle had been run over, and the doctors assured her that all was well. Eleven days later the boy had fever, a swollen right leg and a misaligned foot; a new X-ray showed a fracture of the middle of the tibia. The two doctors were charged with reckless imprudence resulting in serious physical injuries. The trial court convicted them of simple imprudence, and the Court of Appeals affirmed, applying res ipsa loquitur.",
+      "issue": "(1) Does res ipsa loquitur apply to the case? (2) Are the doctors criminally liable for the boy's injuries, and if not, are they civilly liable?",
+      "ruling": "The Court partly granted the petition. (1) Res ipsa loquitur did not apply. The circumstances that caused the injury and the tests needed to find its extent were not under the exclusive control of the two doctors, who were mere residents attending in the emergency room, and whether they used the required skill and care is generally a matter for expert opinion, not the assumptions of a layman like the mother. The doctrine is only a mode of proof, invoked when direct evidence is absent and not readily available. (2) The doctors were negligent: they did not examine the boy thoroughly, and if they could not, they should have referred him to another doctor instead of assuring the mother that everything was all right. But there was no precise evidence that the delay prolonged the pain or aggravated the injury, so guilt was not proved beyond reasonable doubt and they were acquitted. Since civil liability needs only a preponderance of evidence, they were held civilly liable for ₱3,850 actual damages, ₱100,000 moral damages and ₱50,000 exemplary damages. They could not shift the blame to the taxi driver, even if the accident was the direct cause of the fracture. Their claim that there was no physician-patient relationship, because they merely passed by the emergency room on the way to lunch, was raised for the first time on appeal, and in any case such a relationship existed once they examined the boy and assured his mother.",
+      "keyDoctrine": "Res ipsa loquitur is not a rule of substantive law but a mode of proof, available only when direct evidence is absent and not readily available, and only if the instrumentality was under the defendant's exclusive control. A doctor who examines a patient in the emergency room enters into a physician-patient relationship. A doctor acquitted of reckless imprudence for lack of proof beyond reasonable doubt may still be civilly liable on a preponderance of evidence, and cannot escape liability by pointing to the person who caused the original injury.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2012/feb2012/gr_187926_2012.html"
     }
   ],
   "questions": [
@@ -245,6 +260,236 @@
         "url": "https://lawphil.net/judjuris/juri2000/oct2000/gr_130547_2000.html",
         "part": "Ruling, Third (the standard tests and procedures)",
         "excerpt": "What all this means legally is that even if the deceased suffered from an anaphylactic shock, this, of itself, would not yet establish the negligence of the appellee-physicians for all that the law requires of them is that they perform the standard tests and perform standard procedures. The law cannot require them to predict every possible reaction to all drugs administered. The onus probandi was on the appellants to establish, before the trial court, that the appellee-physicians ignored standard medical procedure, prescribed and administered medication with recklessness and exhibited an absence of the competence and skills expected of general practitioners similarly situated."
+      }
+    },
+    {
+      "id": "q-0440",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "Two general-surgery residents examined a girl in the emergency room after a motorcycle ran over her foot. They had only the foot X-rayed, found no fracture, refused the mother's request for an X-ray of the whole leg, and assured her that her daughter was fine. Two weeks later a fracture of the shinbone was found. Charged with reckless imprudence resulting in serious physical injuries, the residents were acquitted because the prosecution did not prove beyond reasonable doubt that the delay aggravated the injury. The mother now asks whether the residents can still be made to pay damages, and the residents answer that the motorcycle rider, not they, caused the fracture. Decide.",
+      "suggestedAnswer": {
+        "answer": "The residents may be held civilly liable despite their acquittal, and they cannot shift the liability to the motorcycle rider.",
+        "legalBasis": "In Jarcia v. People, the Court acquitted two emergency-room residents of reckless imprudence because their guilt was not proved beyond reasonable doubt, but held them civilly liable, since a criminal conviction requires proof beyond reasonable doubt while civil liability needs only a preponderance of evidence. It also held that doctors cannot invoke the fact that the accident was the actual, direct and proximate cause of the injury to excuse themselves; otherwise doctors would have a ready defense whenever they fail to do their job for victims of accidents and crimes of violence.",
+        "application": "The residents were negligent: they did not examine the leg thoroughly, refused the X-ray the mother asked for, and assured her that all was well instead of referring the child to a doctor who could properly examine her. That suffices for civil liability on a preponderance of evidence, even if it did not reach proof beyond reasonable doubt. The rider caused the fracture, but the residents' own failure to attend to the child's injuries is a separate fault for which they answer.",
+        "conclusion": "The residents are civilly liable for damages even though acquitted. **Bar trap:** do not reason that an acquittal ends all liability, or that the person who caused the original injury is the only one liable."
+      },
+      "keyPoints": [
+        "Acquittal for lack of proof beyond reasonable doubt does not bar civil liability, which needs only a preponderance of evidence",
+        "The residents were negligent: no thorough examination, no referral, a baseless assurance that all was well",
+        "Doctors cannot escape liability by pointing to the accident as the direct and proximate cause of the injury",
+        "Otherwise doctors would have a ready defense whenever they fail to properly attend to accident or crime victims"
+      ],
+      "caseIds": [
+        "case-0031"
+      ],
+      "source": {
+        "caseTitle": "Jarcia, Jr., et al. v. People",
+        "grNumber": "G.R. No. 187926",
+        "url": "https://lawphil.net/judjuris/juri2012/feb2012/gr_187926_2012.html",
+        "part": "The Court's Ruling, As to Dr. Jarcia and Dr. Bastan's negligence; As to the Award of Damages",
+        "excerpt": "There was, however, no precise evidence and scientific explanation pointing to the fact that the delay in the application of the cast to the patient’s fractured leg because of failure to immediately diagnose the specific injury of the patient, prolonged the pain of the child or aggravated his condition or even caused further complications. … The Court, nevertheless, finds the petitioners civilly liable for their failure to sufficiently attend to Roy Jr.’s medical needs when the latter was rushed to the ER, for while a criminal conviction requires proof beyond reasonable doubt, only a preponderance of evidence is required to establish civil liability. Taken into account also was the fact that there was no bad faith on their part. Dr. Jarcia and Dr. Bastan cannot pass on the liability to the taxi driver who hit the victim. It may be true that the actual, direct, immediate, and proximate cause of the injury (fracture of the leg bone or tibia) of Roy Jr. was the vehicular accident when he was hit by a taxi. The petitioners, however, cannot simply invoke such fact alone to excuse themselves from any liability. If this would be so, doctors would have a ready defense should they fail to do their job in attending to victims of hit-and-run, maltreatment, and other crimes of violence in which the actual, direct, immediate, and proximate cause of the injury is indubitably the act of the perpetrator/s."
+      }
+    },
+    {
+      "id": "q-0441",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "Is res ipsa loquitur a rule of substantive law? Explain its nature and when it may be invoked, and state whether it applies against emergency-room residents who failed to detect a fracture in a boy injured in a vehicular accident.",
+      "suggestedAnswer": {
+        "answer": "No. Res ipsa loquitur is not a rule of substantive law but merely a mode of proof, a procedural convenience. It may be invoked only when direct evidence is absent and not readily available. It did not apply to the emergency-room residents.",
+        "legalBasis": "In Jarcia v. People, the Court explained that the doctrine, as a rule of evidence, recognizes that prima facie negligence may be established without direct proof and furnishes a substitute for specific proof of negligence. It does not dispense with proof of culpable negligence; it only determines what shall be prima facie evidence of it and helps the plaintiff prove a breach of duty. Its requisites are: (1) the accident does not ordinarily occur unless someone is negligent; (2) the instrumentality that caused the injury was under the exclusive control of the person in charge; and (3) the injury was not due to any voluntary action or contribution of the injured person.",
+        "application": "The circumstances that caused the boy's injury, and the tests needed to find its extent, were not under the exclusive control of the residents, who merely attended to him in the emergency room. Whether they used the required skill and care was a matter for expert opinion, not for the assumptions of a layman like the boy's mother. So the Court of Appeals erred in applying the doctrine.",
+        "conclusion": "Res ipsa loquitur is an evidentiary rule, not a ground of liability, and it did not apply. **Bar trap:** even a clearly negligent doctor (the residents here were found civilly negligent) may not be reached through res ipsa loquitur when exclusive control is missing; the two questions are separate."
+      },
+      "keyPoints": [
+        "Not a rule of substantive law; a mode of proof or procedural convenience",
+        "It does not dispense with proof of negligence; it only makes out a prima facie case",
+        "Invoked only when direct evidence is absent and not readily available",
+        "Requisites: accident not ordinarily occurring without negligence; exclusive control; no contribution by the injured",
+        "Not applicable here: no exclusive control by the residents; the skill and care issue needed expert opinion"
+      ],
+      "caseIds": [
+        "case-0031"
+      ],
+      "source": {
+        "caseTitle": "Jarcia, Jr., et al. v. People",
+        "grNumber": "G.R. No. 187926",
+        "url": "https://lawphil.net/judjuris/juri2012/feb2012/gr_187926_2012.html",
+        "part": "The Court's Ruling, As to the Application of The Doctrine of Res Ipsa Loquitur",
+        "excerpt": "The doctrine of res ipsa loquitur as a rule of evidence is unusual to the law of negligence which recognizes that prima facie negligence may be established without direct proof and furnishes a substitute for specific proof of negligence. The doctrine, however, is not a rule of substantive law, but merely a mode of proof or a mere procedural convenience. The rule, when applicable to the facts and circumstances of a given case, is not meant to and does not dispense with the requirement of proof of culpable negligence on the party charged. It merely determines and regulates what shall be prima facie evidence thereof and helps the plaintiff in proving a breach of the duty. The doctrine can be invoked when and only when, under the circumstances involved, direct evidence is absent and not readily available. The requisites for the application of the doctrine of res ipsa loquitur are: (1) the accident was of a kind which does not ordinarily occur unless someone is negligent; (2) the instrumentality or agency which caused the injury was under the exclusive control of the person in charge; and (3) the injury suffered must not have been due to any voluntary action or contribution of the person injured. In this case, the circumstances that caused patient Roy Jr.’s injury and the series of tests that were supposed to be undergone by him to determine the extent of the injury suffered were not under the exclusive control of Drs. Jarcia and Bastan. … As to whether the petitioners have exercised the requisite degree of skill and care in treating patient Roy, Jr. is generally a matter of expert opinion."
+      }
+    },
+    {
+      "id": "q-0442",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "Sued for damages, two doctors argue for the first time before the Supreme Court that no physician-patient relationship existed, because they were not the boy's attending physicians and had merely been asked by a nurse to look at him while they were passing by the emergency room on their way to lunch. They had examined him and told his mother that he was fine and could go home. Will the argument prosper? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. The issue cannot be raised for the first time on appeal, and in any case a physician-patient relationship arose when the doctors examined the boy and assured his mother.",
+        "legalBasis": "In Jarcia v. People, the Court held that issues raised for the first time on appeal cannot be considered, because a party may not change his theory on appeal. Quoting Lucas v. Tuaño, it held that when a patient engages the services of a physician, a physician-patient relationship is generated; by accepting a case the physician represents that he has the needed training and skill of physicians practicing in the same field and will employ them, and he must exercise the care, skill and diligence that physicians in the same general neighborhood and the same general line of practice ordinarily possess and exercise in like cases.",
+        "application": "The boy and his mother went to the emergency room for immediate medical attention. The doctors obliged: they examined him and assured the mother that everything was fine and that they could go home. Having taken him on, they owed him the standard of care; if they were not in a position to attend to him properly, they should have referred him to a doctor who could, instead of giving a baseless assurance.",
+        "conclusion": "The defense fails, both procedurally and on the merits. **Bar trap:** \"I was only passing by\" is no defense once the doctor examines the patient and gives assurances."
+      },
+      "keyPoints": [
+        "A new theory cannot be raised for the first time on appeal",
+        "A physician-patient relationship arises when the physician accepts the case (here, by examining the boy and assuring the mother)",
+        "By accepting a case the physician represents he has and will use the skill of physicians in the same field",
+        "Standard: care, skill and diligence of physicians in the same general neighborhood and line of practice",
+        "If unable to attend properly, the doctor should refer the patient instead of giving baseless assurances"
+      ],
+      "caseIds": [
+        "case-0031"
+      ],
+      "source": {
+        "caseTitle": "Jarcia, Jr., et al. v. People",
+        "grNumber": "G.R. No. 187926",
+        "url": "https://lawphil.net/judjuris/juri2012/feb2012/gr_187926_2012.html",
+        "part": "The Court's Ruling, on the physician-patient relationship",
+        "excerpt": "Firstly, this issue was never raised during the trial at the RTC or even before the CA. The petitioners, therefore, raise the want of doctor-patient relationship for the first time on appeal with this Court. It has been settled that \"issues raised for the first time on appeal cannot be considered because a party is not permitted to change his theory on appeal. … In the case of Lucas v. Tuaño, the Court wrote that \"[w]hen a patient engages the services of a physician, a physician-patient relationship is generated. And in accepting a case, the physician, for all intents and purposes, represents that he has the needed training and skill possessed by physicians and surgeons practicing in the same field; and that he will employ such training, care, and skill in the treatment of the patient. Thus, in treating his patient, a physician is under a duty to exercise that degree of care, skill and diligence which physicians in the same general neighborhood and in the same general line of practice ordinarily possess and exercise in like cases. … Indubitably, a physician-patient relationship exists between the petitioners and patient Roy Jr. Notably, the latter and his mother went to the ER for an immediate medical attention. The petitioners allegedly passed by and were requested to attend to the victim (contrary to the testimony of Dr. Tacata that they were, at that time, residents on duty at the ER). They obliged and examined the victim, and later assured the mother that everything was fine and that they could go home. Clearly, a physician-patient relationship was established between the petitioners and the patient Roy Jr."
+      }
+    },
+    {
+      "id": "q-0443",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "In Jarcia v. People, the Court of Appeals relied on res ipsa loquitur to uphold the conviction of two emergency-room residents who failed to detect a boy's leg fracture. How did the Supreme Court rule on the use of the doctrine?",
+      "choices": {
+        "A": "It was correctly applied, because the residents had exclusive control over which X-rays would be requested.",
+        "B": "It was wrongly applied, because the circumstances that caused the injury and the tests to determine its extent were not under the residents' exclusive control, and their skill and care were a matter for expert opinion.",
+        "C": "It was correctly applied, because the mother, being a nurse, could testify on the standard of care without an expert.",
+        "D": "It was wrongly applied, because res ipsa loquitur is never allowed in a criminal case."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court held that the circumstances that caused the boy's injury and the tests he was supposed to undergo were not under the exclusive control of the residents, who merely attended to him at the emergency room, and that whether they used the required skill and care was best shown by expert witnesses, not the assumptions of a layman like the mother. **A is wrong:** that was the Court of Appeals' reasoning, which the Supreme Court rejected. **C is wrong:** the Court treated the mother as a layman; her opinion could not replace expert testimony. **D is wrong:** the Court did not rest its ruling on the case being criminal; it found the requisites missing on the facts. **Bar trap:** exclusive control is the requisite most often missing for a doctor who treats an injury caused elsewhere.",
+      "caseIds": [
+        "case-0031"
+      ],
+      "source": {
+        "caseTitle": "Jarcia, Jr., et al. v. People",
+        "grNumber": "G.R. No. 187926",
+        "url": "https://lawphil.net/judjuris/juri2012/feb2012/gr_187926_2012.html",
+        "part": "The Court's Ruling, As to the Application of The Doctrine of Res Ipsa Loquitur",
+        "excerpt": "In this case, the circumstances that caused patient Roy Jr.’s injury and the series of tests that were supposed to be undergone by him to determine the extent of the injury suffered were not under the exclusive control of Drs. Jarcia and Bastan. It was established that they are mere residents of the Manila Doctors Hospital at that time who attended to the victim at the emergency room. While it may be true that the circumstances pointed out by the courts below seem doubtless to constitute reckless imprudence on the part of the petitioners, this conclusion is still best achieved, not through the scholarly assumptions of a layman like the patient’s mother, but by the unquestionable knowledge of expert witness/es. As to whether the petitioners have exercised the requisite degree of skill and care in treating patient Roy, Jr. is generally a matter of expert opinion."
+      }
+    },
+    {
+      "id": "q-0444",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "\"The failure to observe for the protection of the interests of another person that degree of care, precaution, and vigilance which the circumstances justly demand, whereby such other person suffers injury.\" This is the definition of",
+      "choices": {
+        "A": "reckless imprudence.",
+        "B": "simple imprudence.",
+        "C": "negligence.",
+        "D": "malice."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** Jarcia v. People gives this as the definition of negligence. **A is wrong:** reckless imprudence is the quasi-offense of voluntarily doing or failing to do, without malice, an act from which material damage results by reason of an inexcusable lack of precaution; it requires more than the general definition. **B is wrong:** simple imprudence (simple negligence) has its own two elements, a lack of precaution and damage that is not immediate or a danger that is not clearly manifest. **D is wrong:** the Court's definitions describe negligence and imprudence as acts done without malice. **Bar trap:** negligence, simple imprudence and reckless imprudence are defined differently; match the definition to the term.",
+      "caseIds": [
+        "case-0031"
+      ],
+      "source": {
+        "caseTitle": "Jarcia, Jr., et al. v. People",
+        "grNumber": "G.R. No. 187926",
+        "url": "https://lawphil.net/judjuris/juri2012/feb2012/gr_187926_2012.html",
+        "part": "The Court's Ruling, As to Dr. Jarcia and Dr. Bastan's negligence",
+        "excerpt": "Negligence is defined as the failure to observe for the protection of the interests of another person that degree of care, precaution, and vigilance which the circumstances justly demand, whereby such other person suffers injury. Reckless imprudence consists of voluntarily doing or failing to do, without malice, an act from which material damage results by reason of an inexcusable lack of precaution on the part of the person performing or failing to perform such act."
+      }
+    },
+    {
+      "id": "q-0445",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "According to Jarcia v. People, which of the following are the elements of simple negligence (simple imprudence)?",
+      "choices": {
+        "A": "(1) Lack of precaution on the part of the offender, and (2) the damage impending to be caused is not immediate or the danger is not clearly manifest.",
+        "B": "(1) An act done with malice, and (2) material damage resulting from it.",
+        "C": "(1) Inexcusable lack of precaution, and (2) immediate and clearly manifest danger.",
+        "D": "(1) A pre-existing contract, and (2) a breach of it causing damage."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court stated that the elements of simple negligence are: (1) lack of precaution on the part of the offender, and (2) the damage impending to be caused is not immediate or the danger is not clearly manifest. **B is wrong:** malice excludes negligence of any kind. **C is wrong:** an inexcusable lack of precaution describes reckless imprudence, and a clearly manifest danger is exactly what simple negligence lacks. **D is wrong:** that describes a breach of contract (culpa contractual), not simple negligence. **Bar trap:** simple and reckless imprudence differ in how immediate and manifest the danger is; the Court found neither proved beyond reasonable doubt in Jarcia.",
+      "caseIds": [
+        "case-0031"
+      ],
+      "source": {
+        "caseTitle": "Jarcia, Jr., et al. v. People",
+        "grNumber": "G.R. No. 187926",
+        "url": "https://lawphil.net/judjuris/juri2012/feb2012/gr_187926_2012.html",
+        "part": "The Court's Ruling, As to Dr. Jarcia and Dr. Bastan's negligence (simple negligence)",
+        "excerpt": "Reckless imprudence consists of voluntarily doing or failing to do, without malice, an act from which material damage results by reason of an inexcusable lack of precaution on the part of the person performing or failing to perform such act. The elements of simple negligence are: (1) that there is lack of precaution on the part of the offender, and (2) that the damage impending to be caused is not immediate or the danger is not clearly manifest."
+      }
+    },
+    {
+      "id": "q-0446",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "Following Lucas v. Tuaño, as quoted in Jarcia v. People, what degree of care, skill and diligence must a physician exercise in treating a patient?",
+      "choices": {
+        "A": "The extraordinary diligence required of common carriers.",
+        "B": "The highest skill possessed by the best specialists anywhere in the world.",
+        "C": "Whatever care the patient expected when he engaged the physician.",
+        "D": "That which physicians in the same general neighborhood and in the same general line of practice ordinarily possess and exercise in like cases."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** Quoting Lucas v. Tuaño, the Court held that a physician \"is under a duty to exercise that degree of care, skill and diligence which physicians in the same general neighborhood and in the same general line of practice ordinarily possess and exercise in like cases,\" that is, at least the level of care any other reasonably competent physician would use under similar circumstances. **A is wrong:** extraordinary diligence is peculiar to common carriers (Reyes v. Sisters of Mercy Hospital). **B is wrong:** the standard is ordinary competence in the same field, not the best in the world. **C is wrong:** the standard is objective, set by the profession, not by the patient's expectations. **Bar trap:** the comparison group is physicians in the same general line of practice, so a general surgeon is measured against general surgeons, not orthopedic specialists.",
+      "caseIds": [
+        "case-0031"
+      ],
+      "source": {
+        "caseTitle": "Jarcia, Jr., et al. v. People",
+        "grNumber": "G.R. No. 187926",
+        "url": "https://lawphil.net/judjuris/juri2012/feb2012/gr_187926_2012.html",
+        "part": "The Court's Ruling, on the physician-patient relationship (quoting Lucas v. Tuaño)",
+        "excerpt": "Thus, in treating his patient, a physician is under a duty to exercise that degree of care, skill and diligence which physicians in the same general neighborhood and in the same general line of practice ordinarily possess and exercise in like cases. Stated otherwise, the physician has the obligation to use at least the same level of care that any other reasonably competent physician would use to treat the condition under similar circumstances."
+      }
+    },
+    {
+      "id": "q-0447",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Medical Negligence and Malpractice",
+      "prompt": "In Jarcia v. People, after acquitting the two doctors of the crime charged, what did the Court do about damages?",
+      "choices": {
+        "A": "It deleted all damages, since there can be no civil liability without a criminal conviction.",
+        "B": "It held them civilly liable for actual, moral and exemplary damages, since civil liability needs only a preponderance of evidence.",
+        "C": "It held only the taxi driver liable for damages, since the accident was the proximate cause of the fracture.",
+        "D": "It awarded only actual damages, since moral damages are punitive and cannot be imposed on doctors acquitted of a crime."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court held the doctors civilly liable for ₱3,850 actual damages, ₱100,000 moral damages and ₱50,000 exemplary damages, because \"while a criminal conviction requires proof beyond reasonable doubt, only a preponderance of evidence is required to establish civil liability.\" **A is wrong:** acquittal on reasonable doubt does not bar civil liability. **C is wrong:** the doctors could not pass on the liability to the taxi driver; their negligence was contributory. **D is wrong:** the Court said moral damages are not punitive but compensatory, and it awarded them together with exemplary damages. **Bar trap:** do not confuse the quantum of proof for the crime with that for civil liability.",
+      "caseIds": [
+        "case-0031"
+      ],
+      "source": {
+        "caseTitle": "Jarcia, Jr., et al. v. People",
+        "grNumber": "G.R. No. 187926",
+        "url": "https://lawphil.net/judjuris/juri2012/feb2012/gr_187926_2012.html",
+        "part": "The Court's Ruling, As to the Award of Damages",
+        "excerpt": "Although the Court sympathizes with the plight of the mother and the child in this case, the Court is bound by the dictates of justice which hold inviolable the right of the accused to be presumed innocent until proven guilty beyond reasonable doubt. The Court, nevertheless, finds the petitioners civilly liable for their failure to sufficiently attend to Roy Jr.’s medical needs when the latter was rushed to the ER, for while a criminal conviction requires proof beyond reasonable doubt, only a preponderance of evidence is required to establish civil liability. … While no criminal negligence was found in the petitioners’ failure to administer the necessary medical attention to Roy Jr., the Court holds them civilly liable for the resulting damages to their patient. While it was the taxi driver who ran over the foot or leg of Roy Jr., their negligence was doubtless contributory. … It is settled that moral damages are not punitive in nature, but are designed to compensate and alleviate in some way the physical suffering, mental anguish, fright, serious anxiety, besmirched reputation, wounded feelings, moral shock, social humiliation, and similar injury unjustly inflicted on a person."
       }
     }
   ]
