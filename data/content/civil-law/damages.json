@@ -211,6 +211,21 @@
       "ruling": "The Court affirmed with a modification. The contract was valid and had a cause. The demand to renegotiate prices and the veneer plant were not among the stipulated causes of suspension; and even if the barter restrictions, breakdowns and the Margin Law were fortuitous, they did not make it impossible for the producer to comply, since it kept producing logs and selling them to others. A fortuitous event does not necessarily extinguish an obligation unless it makes normal fulfillment impossible. Under Article 2200, indemnity covers not only the loss suffered but also the profits the creditor fails to obtain (lucrum cessans). From the commission the distributor actually earned per board foot on earlier shipments, its lost commission over the 17 remaining months was estimated at ₱365,350.40, so the ₱400,000 award was a reasonable estimate, not speculative. Exemplary damages were reduced to ₱50,000, since the producer's misstatements, though reprehensible, were not wanton or malevolent; the attorney's fees were affirmed under Article 2208.",
       "keyDoctrine": "Under Article 2200, indemnification for damages comprehends not only the value of the loss suffered (daño emergente) but also the profits the creditor fails to obtain (lucrum cessans), provided they can be determined with reasonable certainty, as by projecting the claimant's past earnings under the same contract. A fortuitous event does not extinguish an obligation unless it makes normal fulfillment impossible. Exemplary damages require wanton, oppressive or malevolent conduct (Art. 2232).",
       "sourceUrl": "https://lawphil.net/judjuris/juri1964/aug1964/gr_l-18487_1964.html"
+    },
+    {
+      "id": "case-0062",
+      "status": "draft",
+      "name": "Marikina Auto Line Transport Corporation, et al. v. People, et al.",
+      "grNumber": "G.R. No. 152040",
+      "year": 2006,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "facts": "A passenger bus of Marikina Auto Line Transport Corporation, driven by Freddie Suelto, suddenly swerved to the right on Kamias Road, Quezon City, and struck the terrace of Erlinda Valdellon's commercial apartment. Valdellon had an engineer estimate the repairs at ₱171,088.46 and presented a receipt for ₱35,000 for repair work; the engineer did not testify. The defense's architect put the repair cost at ₱55,000. Suelto claimed he swerved to avoid a jeepney that intruded into his lane, but his account in court differed from his counter-affidavit. In a joint trial of the criminal and civil cases, Suelto was convicted of reckless imprudence resulting in damage to property and sentenced to one year; he and the bus company were ordered to pay ₱150,000 actual damages, ₱20,000 compensatory and exemplary damages and attorney's fees. The Court of Appeals reduced the actual damages to ₱100,000.",
+      "issue": "(1) Was Suelto negligent, or did the sudden emergency rule apply? (2) Was the award of actual damages proved? (3) Was the one-year prison term proper?",
+      "ruling": "The petition was partly granted. Suelto was negligent: he admitted swerving and hitting the terrace, a driver violating a traffic regulation is presumed negligent (Art. 2185), the heavy damage showed he was speeding, his accounts were inconsistent, and the sudden emergency rule does not apply where the defense is not proved. On damages, actual damages under Article 2199 cover the loss of what one has (daño emergente) and the failure to receive a benefit (lucro cesante), but they are not presumed: the claimant must prove the actual loss with a reasonable degree of certainty, on competent proof and the best evidence obtainable. A claimant's bare testimony must be viewed with caution, and an estimate of the repair cost does not suffice. Neither lower court stated the basis of its award; since the defense's own evidence showed ₱55,000, that amount was awarded, with ₱20,000 exemplary damages. Because the offense resulted only in damage to property, Article 365 calls for a fine, not imprisonment, so Suelto was fined ₱55,000.",
+      "keyDoctrine": "Actual damages (Art. 2199) are not presumed; the claimant must prove the actual amount of loss with a reasonable degree of certainty, on competent proof and the best evidence obtainable, pointing to specific facts that afford a basis for measuring them. An estimate of the cost of repairs, without testimony to support it, does not suffice, and a claimant's bare self-serving testimony must be admitted with extreme caution. The sudden emergency rule does not excuse one whose own negligence created the emergency, and it must be proved by the one invoking it.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2006/mar2006/gr_152040_2006.html"
     }
   ],
   "questions": [
@@ -3434,6 +3449,236 @@
         "url": "https://lawphil.net/judjuris/juri1964/aug1964/gr_l-18487_1964.html",
         "part": "Decision, the disposition",
         "excerpt": "WHEREFORE, the decision appealed from is hereby modified by awarding to appellee only the amount of P50,000.00 as exemplary damages. In all other respects, the decision is affirmed, with costs."
+      }
+    },
+    {
+      "id": "q-0688",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "A bus crashed into the terrace of O's building. To prove her actual damages, O presented (a) a written cost estimate of ₱171,000 prepared by an engineer who never testified, (b) a receipt of ₱35,000 for repair work, and (c) her own testimony that the damage was severe. The bus owner's architect testified that repairs would cost ₱55,000. The trial court awarded ₱150,000 without explaining how it arrived at that figure. Is the award correct? What amount should be awarded? Explain, citing Marikina Auto Line Transport Corporation v. People.",
+      "suggestedAnswer": {
+        "answer": "No. The ₱150,000 award has no factual basis. Actual damages must be proved with a reasonable degree of certainty, and the evidence supports only ₱55,000.",
+        "legalBasis": "In Marikina Auto Line v. People, the Court held that actual damages are not presumed: the claimant must prove the actual amount of loss with a reasonable degree of certainty premised upon competent proof and on the best evidence obtainable, pointing out specific facts that afford a basis for measuring them; they cannot rest on surmises or conjectures. A claimant's bare testimonial assertions should be admitted with extreme caution and buttressed by independent evidence, and an estimate of the damage cost will not suffice.",
+        "application": "The engineer's estimate is unsupported since he did not testify; O's own testimony is self-interested. Neither the trial court nor the Court of Appeals stated the basis of its award. In the case, the Court awarded ₱55,000, the amount shown by the defendants' own evidence.",
+        "conclusion": "The award should be reduced to ₱55,000. **Bar trap:** a repair estimate or a court's unexplained figure is not proof of actual loss; look for competent evidence of the actual amount."
+      },
+      "keyPoints": [
+        "Actual damages are not presumed",
+        "Prove the actual loss with reasonable certainty, on competent proof and the best evidence obtainable",
+        "Point out specific facts that afford a basis for measuring the damages",
+        "Bare self-serving testimony: admit with extreme caution; an estimate will not suffice",
+        "Award based on the defense's own evidence: ₱55,000"
+      ],
+      "caseIds": [
+        "case-0062"
+      ],
+      "source": {
+        "caseTitle": "Marikina Auto Line Transport Corporation, et al. v. People, et al.",
+        "grNumber": "G.R. No. 152040",
+        "url": "https://lawphil.net/judjuris/juri2006/mar2006/gr_152040_2006.html",
+        "part": "Decision, discussion of the second issue (actual damages)",
+        "excerpt": "The burden of proof is on the party who would be defeated if no evidence would be presented on either side. The burden is to establish one’s case by a preponderance of evidence which means that the evidence, as a whole, adduced by one side, is superior to that of the other. Actual damages are not presumed. The claimant must prove the actual amount of loss with a reasonable degree of certainty premised upon competent proof and on the best evidence obtainable. Specific facts that could afford a basis for measuring whatever compensatory or actual damages are borne must be pointed out. Actual damages cannot be anchored on mere surmises, speculations or conjectures. … While claimants’ bare testimonial assertions in support of their claims for damages should not be discarded altogether, however, the same should be admitted with extreme caution. Their testimonies should be viewed in light of claimants’ self-interest, hence, should not be taken as gospel truth. Such assertion should be buttressed by independent evidence. … An estimate of the damage cost will not suffice: … We note, however, that petitioners adduced evidence that, in their view, the cost of the damage to the terrace of private respondent would amount to P55,000.00. Accordingly, private respondent is entitled to P55,000.00 actual damages."
+      }
+    },
+    {
+      "id": "q-0689",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Charged with reckless imprudence resulting in damage to property, a bus driver who swerved into a building invokes the sudden emergency rule, claiming he had to avoid a jeepney that intruded into his lane. In his counter-affidavit, however, he said he swerved because the jeepney ahead suddenly stopped. Photographs show heavy damage to the building. Will the defense prosper? Explain, citing Marikina Auto Line Transport Corporation v. People.",
+      "suggestedAnswer": {
+        "answer": "No. The sudden emergency rule was not proved, and the evidence shows the driver's own negligence.",
+        "legalBasis": "In Marikina Auto Line v. People, the Court quoted the sudden emergency rule: one who suddenly finds himself in a place of danger and must act without time to consider the best means to avoid it is not guilty of negligence if he fails to adopt what later appears a better method, \"unless the emergency in which he finds himself is brought about by his own negligence.\" The burden was on the driver to prove that he acted in an emergency. Under Article 2185, a person driving a motor vehicle is presumed negligent if at the time of the mishap he was violating a traffic regulation; by his own admission, the driver violated the Land Transportation and Traffic Code when he suddenly swerved to the right.",
+        "application": "The heavy damage showed a strong impact and a speeding bus; had he not been speeding, he could have stopped. His conflicting statements destroyed his credibility. And if the jeepney were really to blame, he could have filed a third-party complaint against its driver and owner.",
+        "conclusion": "The defense fails, and the driver is liable. **Bar trap:** the sudden emergency rule does not protect one whose own negligence (here, speeding) created the emergency, and the one invoking it must prove it."
+      },
+      "keyPoints": [
+        "Sudden emergency rule: no negligence for failing to choose the best means in a sudden danger",
+        "Not if the emergency was brought about by one's own negligence",
+        "The one invoking it bears the burden of proof",
+        "Presumption of negligence when violating a traffic regulation (Art. 2185)",
+        "Heavy damage showed speeding; inconsistent statements destroyed credibility"
+      ],
+      "caseIds": [
+        "case-0062"
+      ],
+      "source": {
+        "caseTitle": "Marikina Auto Line Transport Corporation, et al. v. People, et al.",
+        "grNumber": "G.R. No. 152040",
+        "url": "https://lawphil.net/judjuris/juri2006/mar2006/gr_152040_2006.html",
+        "part": "Decision, discussion of the first issue (sudden emergency rule)",
+        "excerpt": "It was the burden of petitioners herein to prove petitioner Suelto’s defense that he acted on an emergency, that is, he had to swerve the bus to the right to avoid colliding with a passenger jeep coming from EDSA that had overtaken another vehicle and intruded into the lane of the bus. The sudden emergency rule was enunciated by this Court in Gan v. Court of Appeals, thus: [O]ne who suddenly finds himself in a place of danger, and is required to act without time to consider the best means that may be adopted to avoid the impending danger, is not guilty of negligence if he fails to adopt what subsequently and upon reflection may appear to have been a better method unless the emergency in which he finds himself is brought about by his own negligence. … In relation thereto, Article 2185 of the New Civil Code provides that \"unless there is proof to the contrary, it is presumed that a person driving a motor vehicle has been negligent, if at the time of mishap, he was violating any traffic regulation.\" By his own admission, petitioner Suelto violated the Land Transportation and Traffic Code when he suddenly swerved the bus to the right, thereby causing damage to the property of private respondent."
+      }
+    },
+    {
+      "id": "q-0690",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "A driver is convicted of reckless imprudence that resulted only in damage to another's property worth ₱55,000. The trial court sentenced him to a straight term of one year of imprisonment. Is the penalty correct? Explain, citing Marikina Auto Line Transport Corporation v. People.",
+      "suggestedAnswer": {
+        "answer": "No. When reckless imprudence results only in damage to property, the penalty under Article 365 of the Revised Penal Code is a fine, not imprisonment.",
+        "legalBasis": "In Marikina Auto Line v. People, the Court held that under the third paragraph of Article 365, \"[w]hen the execution of the act covered by this article shall have only resulted in damage to the property of another, the offender shall be punished by a fine ranging from an amount equal to the value of said damages to three times such value, but which shall in no case be less than 25 pesos.\"",
+        "application": "Since the only damage was to the terrace, worth ₱55,000, the driver should be fined. In the case, the Court sentenced him to a fine of ₱55,000 with subsidiary imprisonment in case of insolvency.",
+        "conclusion": "The prison term should be replaced by a fine. **Bar trap:** the penalty for imprudence resulting only in damage to property is a fine measured by the value of the damage, from once to three times that value."
+      },
+      "keyPoints": [
+        "Art. 365, third paragraph: damage to property only = a fine",
+        "Fine from the value of the damage to three times that value, not less than ₱25",
+        "A straight prison term was erroneous",
+        "Fine of ₱55,000 with subsidiary imprisonment in case of insolvency"
+      ],
+      "caseIds": [
+        "case-0062"
+      ],
+      "source": {
+        "caseTitle": "Marikina Auto Line Transport Corporation, et al. v. People, et al.",
+        "grNumber": "G.R. No. 152040",
+        "url": "https://lawphil.net/judjuris/juri2006/mar2006/gr_152040_2006.html",
+        "part": "Decision, discussion of the third issue (the penalty)",
+        "excerpt": "We also agree with petitioner Suelto’s contention that the trial court erred in sentencing him to suffer a straight penalty of one (1) year. This is so because under the third paragraph of Article 365 of the Revised Penal Code, the offender must be sentenced to pay a fine when the execution of the act shall have only resulted in damage to property."
+      }
+    },
+    {
+      "id": "q-0691",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "As explained in Marikina Auto Line Transport Corporation v. People, the two kinds of actual or compensatory damages under Article 2199 of the Civil Code are",
+      "choices": {
+        "A": "moral damages and exemplary damages.",
+        "B": "nominal damages and temperate damages.",
+        "C": "liquidated damages and unliquidated damages.",
+        "D": "the loss of what a person already possesses (daño emergente) and the failure to receive as a benefit that which would have pertained to him (lucro cesante)."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The Court said: \"There are two kinds of actual or compensatory damages: one is the loss of what a person already possesses (daño emergente), and the other is the failure to receive as a benefit that which would have pertained to him (lucro cesante).\" **A, B and C are wrong:** these are other kinds of damages, not the two components of actual damages. **Bar trap:** both components must still be proved.",
+      "caseIds": [
+        "case-0062"
+      ],
+      "source": {
+        "caseTitle": "Marikina Auto Line Transport Corporation, et al. v. People, et al.",
+        "grNumber": "G.R. No. 152040",
+        "url": "https://lawphil.net/judjuris/juri2006/mar2006/gr_152040_2006.html",
+        "part": "Decision, discussion of the second issue (the two kinds of actual damages)",
+        "excerpt": "There are two kinds of actual or compensatory damages: one is the loss of what a person already possesses (daño emergente), and the other is the failure to receive as a benefit that which would have pertained to him (lucro cesante)."
+      }
+    },
+    {
+      "id": "q-0692",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "According to Marikina Auto Line Transport Corporation v. People, actual or compensatory damages are designed",
+      "choices": {
+        "A": "to repair the wrong that has been done, to compensate for the injury inflicted and not to impose a penalty.",
+        "B": "to punish the wrongdoer as an example to the public.",
+        "C": "to vindicate a right that has been violated even if no loss was suffered.",
+        "D": "to compensate for mental anguish and wounded feelings."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court quoted that actual damages \"proceed from a sense of natural justice and are designed to repair the wrong that has been done, to compensate for the injury inflicted and not to impose a penalty.\" **B is wrong:** that describes exemplary damages. **C is wrong:** that describes nominal damages. **D is wrong:** that describes moral damages. **Bar trap:** match each kind of damages to its purpose.",
+      "caseIds": [
+        "case-0062"
+      ],
+      "source": {
+        "caseTitle": "Marikina Auto Line Transport Corporation, et al. v. People, et al.",
+        "grNumber": "G.R. No. 152040",
+        "url": "https://lawphil.net/judjuris/juri2006/mar2006/gr_152040_2006.html",
+        "part": "Decision, discussion of the second issue (purpose of actual damages)",
+        "excerpt": "Under Article 2199 of the Civil Code, actual or compensatory damages are those awarded in satisfaction of, or in recompense for, loss or injury sustained. They proceed from a sense of natural justice and are designed to repair the wrong that has been done, to compensate for the injury inflicted and not to impose a penalty."
+      }
+    },
+    {
+      "id": "q-0693",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Under the rule quoted in Marikina Auto Line Transport Corporation v. People, where goods are destroyed by the defendant's wrongful act, the plaintiff is normally entitled to",
+      "choices": {
+        "A": "their original purchase price, regardless of their age.",
+        "B": "twice their market value.",
+        "C": "their value at the time of destruction, normally the market price of identical or essentially similar goods, plus in a proper case damages for loss of use before replacement.",
+        "D": "only nominal damages."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court quoted that \"where goods are destroyed by the wrongful act of defendant, the plaintiff is entitled to their value at the time of the destruction, that is, normally, the sum of money which he would have to pay in the market for identical or essentially similar goods, plus in a proper case, damages for the loss of the use during the period before replacement.\" **A, B and D are wrong:** none is the measure stated. **Bar trap:** the reference point is the value at the time of destruction.",
+      "caseIds": [
+        "case-0062"
+      ],
+      "source": {
+        "caseTitle": "Marikina Auto Line Transport Corporation, et al. v. People, et al.",
+        "grNumber": "G.R. No. 152040",
+        "url": "https://lawphil.net/judjuris/juri2006/mar2006/gr_152040_2006.html",
+        "part": "Decision, discussion of the second issue (destroyed goods)",
+        "excerpt": "The Court further declared that \"where goods are destroyed by the wrongful act of defendant, the plaintiff is entitled to their value at the time of the destruction, that is, normally, the sum of money which he would have to pay in the market for identical or essentially similar goods, plus in a proper case, damages for the loss of the use during the period before replacement."
+      }
+    },
+    {
+      "id": "q-0694",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Which provision did the Court apply in Marikina Auto Line Transport Corporation v. People to presume the bus driver negligent?",
+      "choices": {
+        "A": "Article 2180 of the Civil Code, on the employer's vicarious liability.",
+        "B": "Article 2185 of the Civil Code, under which a person driving a motor vehicle is presumed negligent if, at the time of the mishap, he was violating any traffic regulation.",
+        "C": "Article 1733 of the Civil Code, on the extraordinary diligence of common carriers.",
+        "D": "Article 2176 of the Civil Code, on the definition of quasi-delict."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court cited Article 2185: \"unless there is proof to the contrary, it is presumed that a person driving a motor vehicle has been negligent, if at the time of mishap, he was violating any traffic regulation,\" and found that the driver, by his own admission, violated the Land Transportation and Traffic Code. **A, C and D are wrong:** not the provision applied for this presumption (and the injured party was not a passenger). **Bar trap:** this presumption is rebuttable (\"unless there is proof to the contrary\").",
+      "caseIds": [
+        "case-0062"
+      ],
+      "source": {
+        "caseTitle": "Marikina Auto Line Transport Corporation, et al. v. People, et al.",
+        "grNumber": "G.R. No. 152040",
+        "url": "https://lawphil.net/judjuris/juri2006/mar2006/gr_152040_2006.html",
+        "part": "Decision, discussion of the first issue (presumption of negligence)",
+        "excerpt": "In relation thereto, Article 2185 of the New Civil Code provides that \"unless there is proof to the contrary, it is presumed that a person driving a motor vehicle has been negligent, if at the time of mishap, he was violating any traffic regulation.\""
+      }
+    },
+    {
+      "id": "q-0695",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "What was the final judgment in Marikina Auto Line Transport Corporation v. People?",
+      "choices": {
+        "A": "The driver was fined ₱55,000, with subsidiary imprisonment in case of insolvency, and the petitioners were ordered to pay ₱55,000 actual damages and ₱20,000 exemplary damages.",
+        "B": "The driver was acquitted under the sudden emergency rule.",
+        "C": "The one-year prison term was affirmed, and actual damages were fixed at ₱100,000.",
+        "D": "Actual damages of ₱171,088.46 were awarded, as estimated by the owner's engineer."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court ruled that the driver \"is sentenced to pay a fine of P55,000.00 with subsidiary imprisonment in case of insolvency\" and ordered the petitioners to pay \"P55,000.00 by way of actual damages, and P20,000.00 by way of exemplary damages.\" **B is wrong:** the defense was not proved. **C is wrong:** both were modified. **D is wrong:** the estimate was not proof of actual loss. **Bar trap:** the fine and the actual damages happened to be equal because the fine is measured by the value of the damage.",
+      "caseIds": [
+        "case-0062"
+      ],
+      "source": {
+        "caseTitle": "Marikina Auto Line Transport Corporation, et al. v. People, et al.",
+        "grNumber": "G.R. No. 152040",
+        "url": "https://lawphil.net/judjuris/juri2006/mar2006/gr_152040_2006.html",
+        "part": "Decision, the disposition",
+        "excerpt": "IN LIGHT OF ALL THE FOREGOING, the petition is PARTIALLY GRANTED. The joint decision of the Regional Trial Court of Quezon City is AFFIRMED WITH THE MODIFICATION that petitioner Suelto is sentenced to pay a fine of P55,000.00 with subsidiary imprisonment in case of insolvency. Petitioners are ORDERED to pay to Erlinda V. Valdellon, jointly and severally, the total amount of P55,000.00 by way of actual damages, and P20,000.00 by way of exemplary damages."
       }
     }
   ]
