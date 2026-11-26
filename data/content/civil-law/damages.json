@@ -271,6 +271,21 @@
       "ruling": "The Court affirmed with modification. Lara's Gifts did not specifically deny under oath the genuineness and due execution of the invoices, so they were deemed admitted; it failed to prove that the materials were substandard. The 24% interest stated in the invoices was valid and binding on an established company that had long dealt with Midtown. The stipulated interest, unless excessive or unconscionable, is the law between the parties and applies until full payment; the legal interest applies only in the absence of stipulated interest (Arts. 2209, 1159, 1956). There is no compounding unless expressly agreed or mandated by law. The Court distinguished Article 2209 (loans or forbearance, mandatory interest) from Articles 2210-2211 (other obligations, discretionary interest), held that P.D. 116 amended the legal rate in Article 2209, and further modified the Eastern Shipping and Nacar guidelines. It ordered 24% interest from the extrajudicial demand until full payment, legal interest under Article 2212 on the accrued interest from judicial demand (12% to June 30, 2013, then 6%), and 6% on the attorney's fees from finality. On reconsideration, in a Resolution of September 20, 2022, the Court modified this Decision: it held the contract a sale of goods on credit, not a loan or forbearance, restated the guidelines, and deleted the award of legal interest on the 24% interest.",
       "keyDoctrine": "A stipulated interest rate, unless excessive or unconscionable, is the law between the parties and applies until full payment; legal interest applies only in the absence of stipulated interest. Interest is not compounded unless expressly stipulated or mandated by law. Article 2209 (obligations to pay a sum of money: interest is mandatory) differs from Articles 2210-2211 (other obligations: interest is discretionary). The genuineness and due execution of an actionable document are deemed admitted unless specifically denied under oath. Note: modified on reconsideration by the Resolution of September 20, 2022.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2019/aug2019/gr_225433_2019.html"
+    },
+    {
+      "id": "case-0066",
+      "status": "draft",
+      "name": "Lara's Gifts & Decors, Inc. v. Midtown Industrial Sales, Inc. (Resolution)",
+      "grNumber": "G.R. No. 225433",
+      "year": 2022,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "facts": "In its August 28, 2019 Decision, the Court ordered Lara's Gifts & Decors to pay Midtown Industrial Sales the ₱1,263,104.22 price of materials bought on a 60-day credit term, with the 24% annual interest stated in the sales invoices from the extrajudicial demand until full payment, plus legal interest on the accrued 24% interest from judicial demand, and attorney's fees with interest. Lara's Gifts moved for reconsideration, repeating its earlier arguments and claiming that the legal interest on the 24% compensatory interest was excessive. Midtown itself had never appealed the trial court's judgment, which awarded only the principal with 24% interest and attorney's fees.",
+      "issue": "Was the imposition of legal interest on the 24% compensatory interest proper?",
+      "ruling": "The motion was partly granted. The Court explained that interest is of two kinds: conventional interest, the agreed price for the use of money, which must be expressly stipulated in writing; and compensatory interest, the indemnity for delay in paying a sum of money, which is allowed by law even without a promise and may be stipulated through a penal clause. The Eastern Shipping and Nacar rules govern only compensatory interest. Stipulated rates, conventional or compensatory, are subject to the unconscionability standard; a stipulated rate more than twice the prevailing legal rate is suspect, and the creditor must show it is required by market conditions. But that standard does not apply to interest on interest under Article 2212, which is fixed by law. The Court restated the guidelines for loans or forbearance and for other obligations, liquidated or unliquidated. Applying them, it held the transaction a sale of goods on credit, not a loan or forbearance, and the 24% a compensatory interest under Article 2209. Although Article 2212 could apply, the award of legal interest on the 24% interest was deleted, because Midtown did not appeal and the trial court's judgment had become final as to it, so granting more on Lara's Gifts' appeal was ultra vires.",
+      "keyDoctrine": "Conventional interest (the price for the use of money, which must be expressly stipulated in writing) differs from compensatory interest (indemnity for delay, allowed by law, or stipulated as a penalty); the Eastern Shipping and Nacar rules govern compensatory interest. Stipulated rates may be reduced if unconscionable; a rate more than twice the prevailing legal rate is suspect, and the creditor must justify it. Interest on interest under Article 2212 is fixed by law and is not subject to the unconscionability standard. A party who did not appeal cannot obtain affirmative relief greater than the judgment on the other party's appeal.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2022/sep2022/gr_225433_2022.html"
     }
   ],
   "questions": [
@@ -4416,6 +4431,237 @@
         "url": "https://lawphil.net/judjuris/juri2019/aug2019/gr_225433_2019.html",
         "part": "The Court's Ruling, application to the case and the disposition",
         "excerpt": "Since there was an extra judicial demand before the complaint was filed, interest on the amount due begins to run not from the filing of the complaint but from the date of such extrajudicial demand. Thus, the unpaid principal obligation of ₱1,263,104.22 shall earn the stipulated interest of 24% per annum from the date of extrajudicial demand on 22 January 2008 until full payment."
+      }
+    },
+    {
+      "id": "q-0720",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Distinguish conventional interest from compensatory interest, as explained in the 2022 Resolution in Lara's Gifts & Decors v. Midtown Industrial Sales. Which of the two do the Eastern Shipping and Nacar rules govern?",
+      "suggestedAnswer": {
+        "answer": "Conventional interest is the compensation a borrower pays for the use of money in an onerous loan; it is agreed upon by the parties and must be expressly stipulated in writing. Compensatory interest (also called penalty interest, indemnity or moratory interest) is the indemnity for damages arising from the debtor's delay in an obligation to pay a sum of money; it is allowed by law even without a promise to pay interest, and the parties may stipulate it through a penal clause. The Eastern Shipping and Nacar rules govern only compensatory interest.",
+        "legalBasis": "In the 2022 Resolution in Lara's Gifts v. Midtown, the Court held that conventional interest \"is therefore paid not as a consequence of default, nor is it compensatory or a result of a provision of law\"; it is the result of the express will of the parties and is allowed only if there is an express stipulation in writing. Compensatory interest \"is the indemnity for damages arising from delay on the part of the debtor in an obligation consisting in the payment of a sum of money,\" allowed by law in the absence of a promise to pay interest. The Eastern Shipping and Nacar rules \"govern only compensatory interest, not conventional interest,\" read with Articles 2209 and 1226.",
+        "application": "So a borrower not in delay owes only the principal and conventional interest; if the borrower is in delay, compensatory interest accrues as a matter of law in addition to conventional interest.",
+        "conclusion": "Conventional = agreed price of money, in writing; compensatory = indemnity for delay, by law or penal clause. **Bar trap:** do not apply the Eastern Shipping/Nacar legal rates to replace the parties' conventional interest."
+      },
+      "keyPoints": [
+        "Conventional interest: price for the use of money; express stipulation in writing required",
+        "Compensatory interest: indemnity for delay in paying a sum of money; allowed by law",
+        "Compensatory interest may be stipulated through a penal clause",
+        "Debtor in delay: compensatory interest accrues in addition to conventional interest",
+        "Eastern Shipping and Nacar govern only compensatory interest"
+      ],
+      "caseIds": [
+        "case-0066"
+      ],
+      "source": {
+        "caseTitle": "Lara's Gifts & Decors, Inc. v. Midtown Industrial Sales, Inc. (Resolution)",
+        "grNumber": "G.R. No. 225433",
+        "url": "https://lawphil.net/judjuris/juri2022/sep2022/gr_225433_2022.html",
+        "part": "Resolution, Part I (the two kinds of interest)",
+        "excerpt": "Conventional interest is therefore paid not as a consequence of default, nor is it compensatory or a result of a provision of law. It is \"rigorously lucrative,\" and the result of the express will of the parties in a contract. … Compensatory interest, also referred to as penalty interest, indemnity, or moratory interest, is the indemnity for damages arising from delay on the part of the debtor in an obligation consisting in the payment of a sum of money. It is interest allowed by law in the absence of a promise to pay interest as compensation for delay in paying a fixed sum or a delay in assessing and paying damages. … It should be stressed that the Eastern Shipping Lines and Nacar rules govern only compensatory interest, not conventional interest, and should be read in conjunction with the provisions of Articles 2209 and 1226 of the Civil Code."
+      }
+    },
+    {
+      "id": "q-0721",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "In 2025, L lent ₱500,000 to B at a stipulated interest of 3% a month (36% a year). B defaults and, when sued, argues that the rate is unconscionable. L argues that since usury ceilings were lifted, the parties are free to agree on any rate. How should the court approach the question, and what happens if the rate is struck down? Explain, citing the 2022 Resolution in Lara's Gifts & Decors v. Midtown Industrial Sales.",
+      "suggestedAnswer": {
+        "answer": "The lifting of the interest ceilings does not give lenders a free hand: a stipulated rate that is unconscionable may be equitably reduced. Since 36% is more than twice the prevailing legal rate (6%), it is suspect, and L must prove that the rate is required by prevailing market conditions and that the parties were on equal footing. If the rate is struck down, only the rate is nullified; the agreement to pay interest remains, and the legal rate prevailing when the agreement was made applies.",
+        "legalBasis": "In the 2022 Resolution in Lara's Gifts v. Midtown, the Court held that stipulated rates are subject to the unconscionability standard, determined by the context of each case. \"The legal rate of interest is the presumptive reasonable compensation for borrowed money ... in cases where stipulated interest is more than twice the prevailing legal rate of interest, it is for the creditor to prove that this rate is required by prevailing market conditions\"; the creditor must also show the parties were on an equal footing. Where the monetary interest rate is found unconscionable, \"only the rate is nullified and deemed not written into the contract; the parties' agreement on the payment of interest remains,\" and the legal rate prevailing at the time of the agreement applies.",
+        "application": "L bears the burden of justifying 36%. Without proof of market conditions and equal bargaining positions, the court may strike the rate and apply the legal rate in effect in 2025.",
+        "conclusion": "The rate is suspect; if unjustified, it is replaced by the legal rate, but interest remains due. **Bar trap:** striking down an unconscionable rate does not erase the obligation to pay interest."
+      },
+      "keyPoints": [
+        "Lifting of usury ceilings is not a carte blanche for lenders",
+        "Unconscionability depends on the context of each case",
+        "Legal rate = presumptive reasonable compensation; more than twice the legal rate is suspect",
+        "Creditor must prove market conditions and equal footing",
+        "Only the rate is nullified; the legal rate at the time of the agreement applies"
+      ],
+      "caseIds": [
+        "case-0066"
+      ],
+      "source": {
+        "caseTitle": "Lara's Gifts & Decors, Inc. v. Midtown Industrial Sales, Inc. (Resolution)",
+        "grNumber": "G.R. No. 225433",
+        "url": "https://lawphil.net/judjuris/juri2022/sep2022/gr_225433_2022.html",
+        "part": "Resolution, Part II(B) (unconscionability of stipulated interest)",
+        "excerpt": "The legal rate of interest is the presumptive reasonable compensation for borrowed money. While parties are free to deviate from this, any deviation must be reasonable and fair. Any deviation that is far-removed is suspect. Thus, in cases where stipulated interest is more than twice the prevailing legal rate of interest, it is for the creditor to prove that this rate is required by prevailing market conditions. (Emphasis supplied) Conformable to the foregoing pronouncements, \"[t]he maximum interest rate that will not cross the line of conscionability is 'not more than twice the prevailing legal rate of interest.' If the stipulated interest exceeds this standard, the creditor must show that the rate is necessary under current market conditions.\" The creditor must also show that the parties were on an equal footing when they stipulated on the interest rate. Furthermore, where the monetary interest rate is found to be unconscionable, only the rate is nullified and deemed not written into the contract; the parties' agreement on the payment of interest remains. In such instance, \"the legal rate of interest prevailing at the time the agreement was entered into\" is applied by the courts."
+      }
+    },
+    {
+      "id": "q-0722",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "A seller sold goods on a 60-day credit term, with 24% interest a year on overdue accounts. The trial court awarded the seller the price plus 24% interest from judicial demand. Only the buyer appealed. On appeal, the Supreme Court added legal interest on the accrued 24% interest under Article 2212. On reconsideration, how did the Court characterize the transaction and the 24% interest, and what did it do with the added award? Explain, citing the 2022 Resolution in Lara's Gifts & Decors v. Midtown Industrial Sales.",
+      "suggestedAnswer": {
+        "answer": "The Court held that the contract was not a loan or forbearance of money, goods or credit but a sale of goods on credit, and that the 24% was compensatory interest imposed as indemnity for the delay in paying the price under Article 2209. Although Article 2212 could in principle apply to that accrued interest, the added award was deleted because the seller did not appeal, so granting it on the buyer's appeal was ultra vires.",
+        "legalBasis": "In the 2022 Resolution, the Court modified its 2019 Decision and held \"that the contract involved is not a loan or forbearance of money, goods, or credit, but a sale of goods on credit.\" The 24% would run only upon the buyer's failure to pay on the due date, so it was a compensatory interest under Article 2209, and by Article 2212 the accrued compensatory interest may earn interest on interest. However, the trial court's award \"became final and executory as to Midtown Industrial Sales as it did not appeal. Thus, the additional award of legal interest on the 24% interest, in an appeal brought by Lara's Gifts, is ultra vires.\" The Court also noted that the unconscionability standards cannot apply to interest on interest under Article 2212, which is fixed by law.",
+        "application": "The buyer still pays the principal with 24% interest from the extrajudicial demand until full payment, and the attorney's fees, but not the legal interest on the 24% interest.",
+        "conclusion": "Sale on credit; 24% compensatory; the extra award deleted. **Bar trap:** an appellee who did not appeal cannot obtain affirmative relief beyond what the judgment gave it."
+      },
+      "keyPoints": [
+        "Sale of goods on credit, not a loan or forbearance",
+        "The 24% ran only upon default: compensatory interest under Art. 2209",
+        "Art. 2212 interest on interest could apply, and it is fixed by law (no unconscionability test)",
+        "The seller did not appeal: the judgment was final as to it",
+        "Adding relief on the buyer's appeal was ultra vires; the award was deleted"
+      ],
+      "caseIds": [
+        "case-0066"
+      ],
+      "source": {
+        "caseTitle": "Lara's Gifts & Decors, Inc. v. Midtown Industrial Sales, Inc. (Resolution)",
+        "grNumber": "G.R. No. 225433",
+        "url": "https://lawphil.net/judjuris/juri2022/sep2022/gr_225433_2022.html",
+        "part": "Resolution, Part III (application to the case)",
+        "excerpt": "Now to this case, we modify our earlier Decision and hold that the contract involved is not a loan or forbearance of money, goods, or credit, but a sale of goods on credit. From January to December 2007, petitioner Lara's Gifts purchased from respondent Midtown various industrial and construction materials totaling ₱1,263,104.22. The purchases were on a 60-day credit term, with the condition that a 24% interest rate per annum would be charged on all accounts overdue. This means that the 24% interest rate per annum would run only upon petitioner's failure to pay on the due date. Thus, the 24% interest rate is a compensatory interest, imposed as indemnity for damages caused by the delay in the payment of the raw materials' purchase price, pursuant to Article 2209. By the express provision of Article 2212, the 24% compensatory interest, which have accrued at the time of judicial demand, may be subject to \"interest on interest.\" However, as Justice Amy C. Lazaro-Javier pointed out, the Regional Trial Court adjudged in favor of Midtown Industrial Sales only P1,263,104.22 plus interest at 24% per annum, computed from February 5, 2008 until fully paid; and P50,000.00 as attorney's fees. This judgment award became final and executory as to Midtown Industrial Sales as it did not appeal. Thus, the additional award of legal interest on the 24% interest, in an appeal brought by Lara's Gifts, is ultra vires."
+      }
+    },
+    {
+      "id": "q-0723",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Under the 2022 Resolution in Lara's Gifts & Decors v. Midtown Industrial Sales, payment of conventional interest is allowed only if",
+      "choices": {
+        "A": "the debtor is in delay.",
+        "B": "there is an express stipulation for the payment of interest, and the stipulation is in writing.",
+        "C": "the court finds it equitable.",
+        "D": "the loan is from a bank."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court said payment of conventional interest is allowed only if \"1) There is an express stipulation for the payment of interest, and 2) The stipulation for the payment of interest is in writing.\" **A is wrong:** delay gives rise to compensatory, not conventional, interest. **C and D are wrong:** neither is a condition. **Bar trap:** conventional interest is paid not as a consequence of default.",
+      "caseIds": [
+        "case-0066"
+      ],
+      "source": {
+        "caseTitle": "Lara's Gifts & Decors, Inc. v. Midtown Industrial Sales, Inc. (Resolution)",
+        "grNumber": "G.R. No. 225433",
+        "url": "https://lawphil.net/judjuris/juri2022/sep2022/gr_225433_2022.html",
+        "part": "Resolution, Part I(A) (conditions for conventional interest)",
+        "excerpt": "However, payment of conventional interest is allowed only if the following conditions concur: 1) There is an express stipulation for the payment of interest, and 2) The stipulation for the payment of interest is in writing."
+      }
+    },
+    {
+      "id": "q-0724",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Under the 2022 Resolution in Lara's Gifts & Decors v. Midtown Industrial Sales, if a contract for the payment of a sum of money has no penal clause but stipulates conventional interest, what compensatory interest applies upon the debtor's delay?",
+      "choices": {
+        "A": "The legal interest rate, always.",
+        "B": "No interest at all.",
+        "C": "The stipulated penalty, which is presumed.",
+        "D": "The conventional or monetary interest."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The Court laid down: \"(1) If there is a penal clause that stipulates the penalty or indemnity, then the stipulated penalty or indemnity shall be applicable. (2) If there is no penal clause, but there is a stipulation on conventional or monetary interest, then the conventional or monetary interest shall be applicable. (3) If there is no stipulation on the penalty or on conventional interest, then the legal interest rate shall be applicable.\" **A is wrong:** legal interest is the last resort. **B is wrong:** delay always gives rise to compensatory interest. **C is wrong:** there was no penal clause. **Bar trap:** follow the order: penalty, then conventional, then legal rate.",
+      "caseIds": [
+        "case-0066"
+      ],
+      "source": {
+        "caseTitle": "Lara's Gifts & Decors, Inc. v. Midtown Industrial Sales, Inc. (Resolution)",
+        "grNumber": "G.R. No. 225433",
+        "url": "https://lawphil.net/judjuris/juri2022/sep2022/gr_225433_2022.html",
+        "part": "Resolution, Part I(B) (which compensatory interest applies)",
+        "excerpt": "(1) If there is a penal clause that stipulates the penalty or indemnity, then the stipulated penalty or indemnity shall be applicable. (2) If there is no penal clause, but there is a stipulation on conventional or monetary interest, then the conventional or monetary interest shall be applicable. (3) If there is no stipulation on the penalty or on conventional interest, then the legal interest rate shall be applicable. In contracts of simple loan of money, the legal interest rate is currently 6%."
+      }
+    },
+    {
+      "id": "q-0725",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "According to the 2022 Resolution in Lara's Gifts & Decors v. Midtown Industrial Sales, why can the standards of unconscionability not apply to interest on interest under Article 2212?",
+      "choices": {
+        "A": "Because interest on interest is fixed by law and, absent a stipulated rate, the legal rate applies by operation of law, not subject to the court's discretion.",
+        "B": "Because interest on interest is always lower than the stipulated rate.",
+        "C": "Because Article 2212 applies only to bank loans.",
+        "D": "Because interest on interest is a form of moral damages."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court, adopting Justice Caguioa's view, said \"'interest on interest' is fixed by law. In the absence of a contractual stipulation between the parties on the rate of interest on accrued interest, the legal rate shall apply by operation of law. Its imposition is not subject to the court's discretionary power.\" **B, C and D are wrong:** none is the reason given. **Bar trap:** Article 2212 is deemed written into every contract with stipulated interest.",
+      "caseIds": [
+        "case-0066"
+      ],
+      "source": {
+        "caseTitle": "Lara's Gifts & Decors, Inc. v. Midtown Industrial Sales, Inc. (Resolution)",
+        "grNumber": "G.R. No. 225433",
+        "url": "https://lawphil.net/judjuris/juri2022/sep2022/gr_225433_2022.html",
+        "part": "Resolution, Part II(C) (interest on interest)",
+        "excerpt": "However, the standards of unconscionability cannot apply to interest on interest under Article 2212 of the Civil Code, viz: … As Justice Alfredo Benjamin S. Caguioa elucidated, \"interest on interest\" is fixed by law. In the absence of a contractual stipulation between the parties on the rate of interest on accrued interest, the legal rate shall apply by operation of law. Its imposition is not subject to the court's discretionary power."
+      }
+    },
+    {
+      "id": "q-0726",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Under the 2022 Resolution in Lara's Gifts & Decors v. Midtown Industrial Sales, may a stipulated compensatory (penalty) interest be reduced by the courts?",
+      "choices": {
+        "A": "No, only conventional interest may be reduced.",
+        "B": "Yes, when found unconscionable, since the reduction depends not on the type of interest but on whether the rate is unconscionable.",
+        "C": "No, because a penal clause is always binding as written.",
+        "D": "Yes, but only if the debtor has paid at least half of the principal."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court said: \"The reduction of interest rates is not limited to monetary interest. It is not dependent on the type of interest imposed on the party, but on whether the interest rate was unconscionable or not. Thus, compensatory interest, when found to be unconscionable, may also be reduced,\" citing Articles 1229 and 2227. **A and C are wrong:** penalties may be equitably reduced. **D is wrong:** no such condition. **Bar trap:** partial or irregular performance is one ground for reducing a penalty, but not the only one.",
+      "caseIds": [
+        "case-0066"
+      ],
+      "source": {
+        "caseTitle": "Lara's Gifts & Decors, Inc. v. Midtown Industrial Sales, Inc. (Resolution)",
+        "grNumber": "G.R. No. 225433",
+        "url": "https://lawphil.net/judjuris/juri2022/sep2022/gr_225433_2022.html",
+        "part": "Resolution, Part II (who may be reduced)",
+        "excerpt": "The reduction of interest rates is not limited to monetary interest. It is not dependent on the type of interest imposed on the party, but on whether the interest rate was unconscionable or not. Thus, compensatory interest, when found to be unconscionable, may also be reduced."
+      }
+    },
+    {
+      "id": "q-0727",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "What did the 2022 Resolution in Lara's Gifts & Decors v. Midtown Industrial Sales order?",
+      "choices": {
+        "A": "It reversed the 2019 Decision and dismissed the complaint.",
+        "B": "It reduced the 24% interest to 12% as unconscionable.",
+        "C": "It partially granted reconsideration and deleted the award of legal interest on the 24% compensatory interest, leaving the principal with 24% interest from the extrajudicial demand and the attorney's fees.",
+        "D": "It denied the motion for reconsideration in full."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court ruled: \"the Motion for Reconsideration is PARTIALLY GRANTED. This Court's August 28, 2019 Decision is MODIFIED in that the award of legal interest on the 24% per annum compensatory interest is hereby DELETED,\" ordering payment of the principal \"plus stipulated interest at 24% per annum to be computed from January 22, 2008, the date of extrajudicial demand, until full payment\" and ₱50,000 attorney's fees. **A, B and D are wrong:** the Court upheld the 24% rate and modified only that award. **Bar trap:** read the 2019 Decision together with this Resolution.",
+      "caseIds": [
+        "case-0066"
+      ],
+      "source": {
+        "caseTitle": "Lara's Gifts & Decors, Inc. v. Midtown Industrial Sales, Inc. (Resolution)",
+        "grNumber": "G.R. No. 225433",
+        "url": "https://lawphil.net/judjuris/juri2022/sep2022/gr_225433_2022.html",
+        "part": "Resolution, the disposition",
+        "excerpt": "ACCORDINGLY, the Motion for Reconsideration is PARTIALLY GRANTED. This Court's August 28, 2019 Decision is MODIFIED in that the award of legal interest on the 24% per annum compensatory interest is hereby DELETED. Petitioner Lara's Gifts & Decors, Inc. is ordered to PAY respondent Midtown Industrial Sales, Inc. the following: (1) ONE MILLION TWO HUNDRED SIXTY-THREE THOUSAND ONE HUNDRED FOUR PESOS and 22/100 (P1,263,104.22) representing the principal amount plus stipulated interest at 24% per annum to be computed from January 22, 2008, the date of extrajudicial demand, until full payment;"
       }
     }
   ]
