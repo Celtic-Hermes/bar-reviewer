@@ -436,6 +436,21 @@
       "ruling": "The judgment was affirmed, and the counterclaim dismissed. No express trust was proved, and an action to enforce an implied (resulting or constructive) trust may be barred by prescription and laches; the action, filed forty years after it accrued, was barred by prescription and res judicata, since the final decree of distribution vests title. On the counterclaim, moral damages may be recovered only in the cases listed in Articles 2219 and 2220 (and 1764 and 2206) or analogous cases; this litigation was not one of them, and the worries and anxiety of a defendant in a suit not maliciously instituted are not the moral damages the law contemplates. The adverse result of an action does not make it wrongful, for no penalty should be placed on the right to litigate. Attorney's fees are recoverable only in the cases in Article 2208; the plaintiffs honestly believed they had a good cause of action and acted in good faith, so neither paragraph 4 (clearly unfounded suit) nor paragraph 11 applied. Exemplary damages, raised only on appeal, could not be granted since no compensatory or moral damages were awarded.",
       "keyDoctrine": "Moral damages may be recovered only in the cases enumerated in Articles 2219 and 2220 (and 1764 and 2206) or analogous cases; the worries and anxiety of a defendant in a suit not maliciously instituted are not compensable. The adverse result of an action does not per se make it wrongful; no penalty on the right to litigate. Attorney's fees need a specific ground under Article 2208, and an adverse decision does not ipso facto justify them. Exemplary damages require an award of compensatory or moral damages. An action to enforce an implied trust may be barred by prescription and laches.",
       "sourceUrl": "https://lawphil.net/judjuris/juri1974/dec1974/gr_l_19872_1974.html"
+    },
+    {
+      "id": "case-0077",
+      "status": "draft",
+      "name": "Galang v. Court of Appeals, et al.",
+      "grNumber": "G.R. No. L-17248",
+      "year": 1962,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "facts": "Beatriz Galang and Rodrigo Quinit, both of age and from Sison, Pangasinan, were engaged, though Rodrigo's parents opposed the marriage. From April 27 to May 9, 1955, they lived as husband and wife in a house at Colorado Falls, Tuba, Mountain Province; then Rodrigo left and never returned. Galang sued Rodrigo and his father for breach of promise to marry, claiming the father had arranged the marriage and then had his son taken away. The trial court ordered both defendants to pay actual damages of ₱275, ₱5,000 moral damages and attorney's fees. The Court of Appeals found her evidence on the father's role not credible, absolved the father, and, as to Rodrigo, eliminated the moral damages and attorney's fees.",
+      "issue": "(1) May the Supreme Court review the Court of Appeals' findings on credibility? (2) Are moral damages recoverable for breach of promise to marry?",
+      "ruling": "The decision of the Court of Appeals was affirmed. Its findings on the credibility of the evidence are beyond the Supreme Court's power of review on appeal by certiorari and are conclusive. On moral damages, the claim that moral damages for breach of promise to marry are collectible had already been settled against the plaintiff in Hermosisima v. Court of Appeals (L-14628, September 30, 1960).",
+      "keyDoctrine": "A breach of promise to marry is not, by itself, a ground for moral damages; the question was settled in Hermosisima v. Court of Appeals. Findings of the Court of Appeals on the credibility of evidence are conclusive on the Supreme Court on appeal by certiorari.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri1962/jan1962/gr_l-17248_1962.html"
     }
   ],
   "questions": [
@@ -7120,6 +7135,234 @@
         "url": "https://lawphil.net/judjuris/juri1974/dec1974/gr_l_19872_1974.html",
         "part": "Decision, discussion of the plaintiffs' appeal (prescription and the disposition)",
         "excerpt": "WHEREFORE, the trial court's judgment is affirmed with the clarification that defendants' counterclaim is dismissed."
+      }
+    },
+    {
+      "id": "q-0808",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "B and R, both of age, were engaged. They lived together as husband and wife for two weeks while preparing to marry, then R left and never returned. B sued R for moral damages for breach of his promise to marry her. Will her claim for moral damages prosper? Explain, citing Galang v. Court of Appeals.",
+      "suggestedAnswer": {
+        "answer": "No. Moral damages for a breach of promise to marry are not collectible; the question was settled against such claims in Hermosisima v. Court of Appeals, which Galang applied.",
+        "legalBasis": "In Galang v. CA, the plaintiff insisted \"that moral damages for breach of promise to marry are collectible under our laws, but this question has already been settled adversely to plaintiff's pretense in Hermosisima vs. Court of Appeals, L-14628 (September 30, 1960).\" The Court of Appeals had therefore correctly eliminated the award of moral damages and attorney's fees against the fiancé, while sustaining the small award of actual damages (₱275).",
+        "application": "B's claim rests on the breach of the promise itself. Under Galang and Hermosisima, that breach alone is not a basis for moral damages.",
+        "conclusion": "No moral damages for the breach of promise as such. **Bar trap:** do not treat a broken engagement as one of the cases for moral damages; the claimant must show some other legal basis beyond the breach of the promise."
+      },
+      "keyPoints": [
+        "Moral damages for breach of promise to marry are not collectible",
+        "The question was settled in Hermosisima v. CA (1960)",
+        "The Court of Appeals rightly eliminated the moral damages and attorney's fees",
+        "The small actual damages award against the fiancé stood"
+      ],
+      "caseIds": [
+        "case-0077"
+      ],
+      "source": {
+        "caseTitle": "Galang v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-17248",
+        "url": "https://lawphil.net/judjuris/juri1962/jan1962/gr_l-17248_1962.html",
+        "part": "Decision, discussion of moral damages for breach of promise to marry",
+        "excerpt": "It is next urged that said Court had also erred in not awarding moral damages to plaintiff, who insists that moral damages for breach of promise to marry are collectible under our laws, but this question has already been settled adversely to plaintiff's pretense in Hermosisima vs. Court of Appeals, L-14628 (September 30, 1960)."
+      }
+    },
+    {
+      "id": "q-0809",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "A plaintiff who lost in the Court of Appeals elevates the case to the Supreme Court by certiorari, arguing that the Court of Appeals erred in disbelieving her witnesses about her fiancé's father's role in arranging and then breaking off the marriage. May the Supreme Court re-examine the credibility of the evidence? Explain, citing Galang v. Court of Appeals.",
+      "suggestedAnswer": {
+        "answer": "No. The findings of the Court of Appeals on the credibility of the evidence are beyond the Supreme Court's power of review on appeal by certiorari and are conclusive upon it.",
+        "legalBasis": "In Galang v. CA, the plaintiff maintained that the Court of Appeals erred in the appreciation of the evidence, \"but the findings of said Court on the credibility of said evidence are beyond our power of review on appeal by certiorari and, consequently, conclusive upon us.\" The Court of Appeals had considered the plaintiff's evidence unworthy of credence and so absolved the father.",
+        "application": "The plaintiff's argument asks the Court to weigh the witnesses again, which it cannot do on certiorari. The absolution of the father therefore stands.",
+        "conclusion": "The credibility findings are conclusive. **Bar trap:** an appeal by certiorari to the Supreme Court raises questions of law, not a re-weighing of the evidence."
+      },
+      "keyPoints": [
+        "The Court of Appeals disbelieved the plaintiff's evidence on the father's role",
+        "Findings on credibility are beyond review on appeal by certiorari",
+        "They are conclusive on the Supreme Court",
+        "The father's absolution stood"
+      ],
+      "caseIds": [
+        "case-0077"
+      ],
+      "source": {
+        "caseTitle": "Galang v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-17248",
+        "url": "https://lawphil.net/judjuris/juri1962/jan1962/gr_l-17248_1962.html",
+        "part": "Decision, discussion of the Court of Appeals' findings on credibility",
+        "excerpt": "The court of first instance sustained plaintiff's pretense, but the Court of Appeals considered her evidence unworthy of credence, and, hence, absolved Maximino Quinit. Plaintiff maintains that the Court of Appeals had erred in the appreciation of the evidence, but the findings of said Court on the credibility of said evidence are beyond our power of review on appeal by certiorari and, consequently, conclusive upon us."
+      }
+    },
+    {
+      "id": "q-0810",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Trace how the damages awarded to the plaintiff changed from the trial court to the Supreme Court in Galang v. Court of Appeals, and state the final result.",
+      "suggestedAnswer": {
+        "answer": "The trial court ordered the fiancé and his father, jointly and severally, to pay ₱275 actual damages, ₱5,000 moral damages and ₱500 attorney's fees. The Court of Appeals absolved the father and, as to the fiancé, eliminated the moral damages and attorney's fees. The Supreme Court affirmed the Court of Appeals.",
+        "legalBasis": "In Galang v. CA, the Court of Appeals \"absolved Maximino Quinit, and accordingly, reversed said decision insofar as he is concerned, and modified it as regards Rodrigo Quinit, by eliminating the awards for moral damages and attorney's fees.\" The Supreme Court held the credibility findings conclusive and the moral damages issue settled by Hermosisima, and affirmed.",
+        "application": "So only the fiancé remained liable, and only for the ₱275 actual damages plus costs.",
+        "conclusion": "Affirmed: only ₱275 actual damages against the fiancé. **Bar trap:** in a breach-of-promise case, recoverable damages, if any, are actual damages proved, not moral damages for the broken promise."
+      },
+      "keyPoints": [
+        "Trial court: ₱275 actual, ₱5,000 moral, ₱500 attorney's fees against both",
+        "Court of Appeals: father absolved; moral damages and fees against the son eliminated",
+        "Supreme Court: affirmed",
+        "Only the small actual damages award remained"
+      ],
+      "caseIds": [
+        "case-0077"
+      ],
+      "source": {
+        "caseTitle": "Galang v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-17248",
+        "url": "https://lawphil.net/judjuris/juri1962/jan1962/gr_l-17248_1962.html",
+        "part": "Statement of the case and the disposition",
+        "excerpt": "In due course, the Court of First Instance of Baguio, in which the case was originally instituted, rendered a decision sentencing the defendants jointly and severally to pay the sums of P275.00, by way of actual damages, P5,000.00, as moral damages, and P500.00, as attorney's fees, apart from the costs. On appeal, taken by the defendants, the Court of Appeals absolved Maximino Quinit, and accordingly, reversed said decision insofar as he is concerned, and modified it as regards Rodrigo Quinit, by eliminating the awards for moral damages and attorney's fees. … The appealed decision of the Court of Appeals is hereby affirmed, therefore, without special pronouncement as to cost."
+      }
+    },
+    {
+      "id": "q-0811",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "In Galang v. Court of Appeals, on what case did the Court rely in rejecting the claim that moral damages for breach of promise to marry are collectible?",
+      "choices": {
+        "A": "Hermosisima v. Court of Appeals.",
+        "B": "Air France v. Carrascoso.",
+        "C": "Lopez v. Pan American World Airways.",
+        "D": "Mercado v. Lira."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court said the question \"has already been settled adversely to plaintiff's pretense in Hermosisima vs. Court of Appeals, L-14628 (September 30, 1960).\" **B, C and D are wrong:** those are not about breach of promise to marry. **Bar trap:** remember the case that settled the rule.",
+      "caseIds": [
+        "case-0077"
+      ],
+      "source": {
+        "caseTitle": "Galang v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-17248",
+        "url": "https://lawphil.net/judjuris/juri1962/jan1962/gr_l-17248_1962.html",
+        "part": "Decision, discussion of moral damages for breach of promise to marry",
+        "excerpt": "but this question has already been settled adversely to plaintiff's pretense in Hermosisima vs. Court of Appeals, L-14628 (September 30, 1960)."
+      }
+    },
+    {
+      "id": "q-0812",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Under Galang v. Court of Appeals, moral damages for a mere breach of promise to marry are",
+      "choices": {
+        "A": "always collectible.",
+        "B": "not collectible.",
+        "C": "collectible only if the engagement lasted more than a year.",
+        "D": "collectible only from the parents of the party who broke the promise."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The plaintiff insisted \"that moral damages for breach of promise to marry are collectible under our laws,\" but the Court held this settled against her by Hermosisima. **A, C and D are wrong:** no such rules. **Bar trap:** the length of the relationship does not change the rule.",
+      "caseIds": [
+        "case-0077"
+      ],
+      "source": {
+        "caseTitle": "Galang v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-17248",
+        "url": "https://lawphil.net/judjuris/juri1962/jan1962/gr_l-17248_1962.html",
+        "part": "Decision, discussion of moral damages for breach of promise to marry",
+        "excerpt": "It is next urged that said Court had also erred in not awarding moral damages to plaintiff, who insists that moral damages for breach of promise to marry are collectible under our laws"
+      }
+    },
+    {
+      "id": "q-0813",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "In Galang v. Court of Appeals, why did the Supreme Court not disturb the absolution of the fiancé's father?",
+      "choices": {
+        "A": "Because parents are never liable for their children's acts.",
+        "B": "Because the father had died.",
+        "C": "Because the plaintiff failed to appeal as to the father.",
+        "D": "Because the Court of Appeals' findings on the credibility of the evidence are beyond review on appeal by certiorari and conclusive."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The Court said \"the findings of said Court on the credibility of said evidence are beyond our power of review on appeal by certiorari and, consequently, conclusive upon us.\" **A, B and C are wrong:** none is stated. **Bar trap:** credibility issues are factual.",
+      "caseIds": [
+        "case-0077"
+      ],
+      "source": {
+        "caseTitle": "Galang v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-17248",
+        "url": "https://lawphil.net/judjuris/juri1962/jan1962/gr_l-17248_1962.html",
+        "part": "Decision, discussion of the Court of Appeals' findings on credibility",
+        "excerpt": "Plaintiff maintains that the Court of Appeals had erred in the appreciation of the evidence, but the findings of said Court on the credibility of said evidence are beyond our power of review on appeal by certiorari and, consequently, conclusive upon us."
+      }
+    },
+    {
+      "id": "q-0814",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Which of the following facts was found by the Court of Appeals in Galang v. Court of Appeals?",
+      "choices": {
+        "A": "The plaintiff and the defendant Rodrigo were engaged, his parents strongly opposed the marriage, and the two lived as husband and wife for a short time before he left and never returned.",
+        "B": "Rodrigo was a minor when the engagement was made.",
+        "C": "Rodrigo's father paid a dowry to the plaintiff's mother.",
+        "D": "The marriage was celebrated and later annulled."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court of Appeals found that they \"were engaged, but Rodrigo's parents were strongly opposed to their marriage,\" that they \"lived as husband and wife\" from April 27, 1955 \"until May 9 when Rodrigo left and never returned,\" and that \"both were of age.\" **B is wrong:** both were of age. **C is wrong:** the dowry was only the plaintiff's version, not believed. **D is wrong:** no marriage was celebrated. **Bar trap:** distinguish findings from a party's version of the facts.",
+      "caseIds": [
+        "case-0077"
+      ],
+      "source": {
+        "caseTitle": "Galang v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-17248",
+        "url": "https://lawphil.net/judjuris/juri1962/jan1962/gr_l-17248_1962.html",
+        "part": "Statement of the facts found by the Court of Appeals",
+        "excerpt": "As found by the Court of Appeals, it appears that plaintiff \"and Rodrigo Quinit were engaged, but Rodrigo's parents were strongly opposed to their marriage\"; that \"from April 27, 1955\", plaintiff \"and Rodrigo lived as husband and wife in the house of Adolfo Dagawan located at Colorado Falls, Tuba, Mountain Province, until May 9 when Rodrigo left and never returned\""
+      }
+    },
+    {
+      "id": "q-0815",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "What was the final disposition in Galang v. Court of Appeals?",
+      "choices": {
+        "A": "The trial court's award of ₱5,000 moral damages was reinstated.",
+        "B": "The case was remanded for a new trial.",
+        "C": "The decision of the Court of Appeals was affirmed.",
+        "D": "Both defendants were held solidarily liable for moral damages."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court ruled: \"The appealed decision of the Court of Appeals is hereby affirmed.\" **A and D are wrong:** moral damages were not recoverable. **B is wrong:** no remand. **Bar trap:** the Court of Appeals' modification (no moral damages) stood.",
+      "caseIds": [
+        "case-0077"
+      ],
+      "source": {
+        "caseTitle": "Galang v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-17248",
+        "url": "https://lawphil.net/judjuris/juri1962/jan1962/gr_l-17248_1962.html",
+        "part": "Decision, the disposition",
+        "excerpt": "The appealed decision of the Court of Appeals is hereby affirmed, therefore, without special pronouncement as to cost."
       }
     }
   ]
