@@ -346,6 +346,21 @@
       "ruling": "The decision was modified. Magno issued the warrant in his capacity as City Treasurer, under an ordinance authorizing it, and was not shown to have acted in bad faith; a public officer merely performing a duty enjoined by law cannot be made to answer personally for damages. The validity of the ordinance could not be raised for the first time on appeal or collaterally. On the counterclaim, moral damages require pleading and proof of moral suffering, mental anguish, fright and the like; though no proof of pecuniary loss is needed (Art. 2216), the claimant must satisfactorily prove the factual basis of the damages (Art. 2217) and its causal connection to the defendant's acts. Since Magno presented no evidence, the ₱2,000 damages were set aside. Nor could it be exemplary damages: a complaint found unmeritorious, or filed against the wrong party, does not justify a penalty on the right to litigate. But since he was sued personally for acts done in his official duty and had to hire counsel, attorney's fees of ₱2,000 and ₱100 nominal damages were just and equitable.",
       "keyDoctrine": "Moral damages require pleading and proof of moral suffering, mental anguish, fright and the like; no proof of pecuniary loss is needed, but the factual basis of the damages and its causal connection to the defendant's acts must be satisfactorily proved. Filing an unmeritorious suit, or suing the wrong party, does not by itself justify moral or exemplary damages, since no penalty should be placed on the right to litigate. A public officer who acts in good faith in performing a duty enjoined by law is not personally liable for damages.",
       "sourceUrl": "https://lawphil.net/judjuris/juri1967/sep1967/gr_l-21879_1967.html"
+    },
+    {
+      "id": "case-0071",
+      "status": "draft",
+      "name": "Tulfo v. People, et al.",
+      "grNumber": "G.R. No. 161032",
+      "year": 2008,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "facts": "In four columns in the tabloid Remate in 1999, columnist Erwin Tulfo accused Atty. Carlos \"Ding\" So of the Bureau of Customs of corruption and called him insulting names. Tulfo admitted he did not know Atty. So, relied only on one unnamed source, and did no further research. Tulfo and the tabloid's managing editor, national editor, city editor and publishing company president were convicted of four counts of libel and ordered to pay, jointly and severally, ₱800,000 actual damages, ₱1,000,000 moral damages and ₱500,000 exemplary damages. The Court of Appeals affirmed. Before the Supreme Court (in G.R. Nos. 161032 and 161176), Tulfo invoked qualified privilege, and the editors and publisher claimed they had no participation in the articles.",
+      "issue": "(1) Are the petitioners guilty of libel? (2) Were the damages properly awarded?",
+      "ruling": "The petitions were dismissed, with modifications. The qualified privilege defense was raised only on appeal, and Tulfo did not exercise press freedom responsibly: he relied on an unnamed source without verification. Under Article 360 of the Revised Penal Code, the editors and publisher are equally liable with the author. As first-time offenders, the penalty was reduced to a fine of ₱6,000 for each count. On damages, actual damages require proof of pecuniary loss (Art. 2199); none was shown, so the ₱800,000 was deleted. Moral damages compensate injuries such as besmirched reputation and wounded feelings; they require an injury that sprang from a case in Articles 2219 or 2220, with a causal relation between the act and the injury. Libel falls squarely under Article 2219(7), and moral damages may be awarded even without actual damages; the Court noted the impact of the libel on the victim's family, so the ₱1,000,000 moral damages stood. Exemplary damages were deleted because no aggravating circumstance attended the crime (Art. 2230).",
+      "keyDoctrine": "Moral damages may be recovered in cases of libel, slander or any other form of defamation (Art. 2219(7)), and may be awarded even in the absence of actual or compensatory damages. They require that (1) injury was suffered and (2) it sprang from a case in Articles 2219 or 2220, with the act as the proximate cause of the injury. Actual damages require proof of pecuniary loss (Art. 2199). In crimes, exemplary damages require an aggravating circumstance (Art. 2230).",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2008/sep2008/gr_161032_2008.html"
     }
   ],
   "questions": [
@@ -5646,6 +5661,237 @@
         "url": "https://lawphil.net/judjuris/juri1967/sep1967/gr_l-21879_1967.html",
         "part": "Decision, the disposition",
         "excerpt": "WHEREFORE, the decision appealed from is modified, setting aside the award of P2,000.00 to the defendant in concept of damages, but increasing the attorney's fees to P2,000.00, and ordering the plaintiff to pay to the defendant P100.00 as nominal damages."
+      }
+    },
+    {
+      "id": "q-0760",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "A columnist was convicted of libel for falsely accusing a customs official of corruption. The trial court awarded the official ₱800,000 actual damages and ₱1,000,000 moral damages, although the official presented no evidence of any pecuniary loss. The columnist argues that, since no actual damages were proved, no moral damages can be awarded either. Rule on the awards and the argument, citing Tulfo v. People.",
+      "suggestedAnswer": {
+        "answer": "The actual damages must be deleted because no pecuniary loss was proved, but the moral damages may stand: libel is a case where moral damages may be recovered, and they can be awarded even in the absence of actual damages.",
+        "legalBasis": "In Tulfo v. People, the Court held under Article 2199 that one is entitled to compensation \"only for such pecuniary loss suffered by him as he has duly proved\"; without proof of actual loss that can be measured, the award of actual damages cannot stand. Moral damages compensate injuries such as besmirched reputation and wounded feelings; no proof of pecuniary loss is needed, but the injury must have been suffered and must have sprung from a case in Articles 2219 or 2220. \"Justification for the award of moral damages is found in Art. 2219(7) of the Civil Code, which states that moral damages may be recovered in cases of libel, slander, or any other form of defamation.\" \"Moral damages can be awarded even in the absence of actual or compensatory damages.\"",
+        "application": "The libelous articles caused injury to the official; the criminal cases of libel fall squarely within Article 2219(7). The lack of proven actual damages does not affect his right to moral damages.",
+        "conclusion": "Delete the actual damages; keep the moral damages. **Bar trap:** moral damages do not depend on an award of actual damages; they depend on an injury from a case listed in Articles 2219 or 2220."
+      },
+      "keyPoints": [
+        "Actual damages: only for pecuniary loss duly proved (Art. 2199); none shown, so deleted",
+        "Moral damages: injury suffered, from a case in Arts. 2219 or 2220, with causal relation",
+        "Libel, slander or other defamation: Art. 2219(7)",
+        "Moral damages may be awarded even without actual damages",
+        "The ₱1,000,000 moral damages stood"
+      ],
+      "caseIds": [
+        "case-0071"
+      ],
+      "source": {
+        "caseTitle": "Tulfo v. People, et al.",
+        "grNumber": "G.R. No. 161032",
+        "url": "https://lawphil.net/judjuris/juri2008/sep2008/gr_161032_2008.html",
+        "part": "Decision, discussion of the award of damages (actual and moral damages)",
+        "excerpt": "The award of damages by the lower court must be modified. Art. 2199 of the Civil Code provides, \"Except as provided by law or by stipulation, one is entitled to an adequate compensation only for such pecuniary loss suffered by him as he has duly proved. Such compensation is referred to as actual or compensatory damages.\" There was no showing of any pecuniary loss suffered by the complainant Atty. So. Without proof of actual loss that can be measured, the award of actual damages cannot stand. … It was the articles of Tulfo that caused injury to Atty. So, and for that Atty. So deserves the award of moral damages. Justification for the award of moral damages is found in Art. 2219(7) of the Civil Code, which states that moral damages may be recovered in cases of libel, slander, or any other form of defamation. As the cases involved are criminal cases of libel, they fall squarely within the ambit of Art. 2219(7). Moral damages can be awarded even in the absence of actual or compensatory damages. The fact that no actual or compensatory damage was proven before the trial court does not adversely affect the offended party’s right to recover moral damages."
+      }
+    },
+    {
+      "id": "q-0761",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "What are the requisites for an award of moral damages, and what kind of causal relation must exist? Explain, citing the rule quoted in Tulfo v. People.",
+      "suggestedAnswer": {
+        "answer": "Although no proof of pecuniary loss is needed, it is imperative that (1) injury was suffered by the claimant, and (2) such injury sprang from any of the cases expressed in Articles 2219 and 2220 of the Civil Code. A causal relation must exist: the act or omission must be the proximate cause, and the injury its direct consequence.",
+        "legalBasis": "In Tulfo v. People, the Court quoted Del Mundo v. CA: moral damages \"may be awarded to compensate one for manifold injuries such as physical suffering, mental anguish, serious anxiety, besmirched reputation, wounded feelings and social humiliation,\" in the concept of grants, \"not punitive or corrective in nature.\" It is imperative \"that (1) injury must have been suffered by the claimant, and (2) such injury must have sprung from any of the cases expressed in Article 2219 and Article 2220 of the Civil Code. A causal relation, in fine, must exist between the act or omission ... and the resulting injury ... i.e. the first must be the proximate cause and the latter the direct consequence thereof.\"",
+        "application": "In Tulfo, the libelous articles were the proximate cause of the injury to the official's reputation and feelings, and libel is a case under Article 2219(7).",
+        "conclusion": "Injury, a case under Arts. 2219 or 2220, and proximate causation. **Bar trap:** moral damages are compensatory grants, not punitive; the amount is discretionary, but the requisites are not."
+      },
+      "keyPoints": [
+        "Moral damages compensate physical suffering, mental anguish, anxiety, besmirched reputation, wounded feelings, social humiliation",
+        "Grants, not punitive or corrective",
+        "Requisite 1: injury suffered by the claimant",
+        "Requisite 2: the injury sprang from a case in Arts. 2219 or 2220",
+        "The act must be the proximate cause; the injury its direct consequence"
+      ],
+      "caseIds": [
+        "case-0071"
+      ],
+      "source": {
+        "caseTitle": "Tulfo v. People, et al.",
+        "grNumber": "G.R. No. 161032",
+        "url": "https://lawphil.net/judjuris/juri2008/sep2008/gr_161032_2008.html",
+        "part": "Decision, discussion of the award of damages (requisites of moral damages, quoting Del Mundo)",
+        "excerpt": "Moral damages, upon the other hand, may be awarded to compensate one for manifold injuries such as physical suffering, mental anguish, serious anxiety, besmirched reputation, wounded feelings and social humiliation. These damages must be understood to be in the concept of grants, not punitive or corrective in nature, calculated to compensate the claimant for the injury suffered. Although incapable of exactness and no proof of pecuniary loss is necessary in order that moral damages may be awarded, the amount of indemnity being left to the sound discretion of the court, it is imperative, nevertheless, that (1) injury must have been suffered by the claimant, and (2) such injury must have sprung from any of the cases expressed in Article 2219 and Article 2220 of the Civil Code. A causal relation, in fine, must exist between the act or omission referred to in the Code which underlies, or gives rise to, the case or proceeding on the one hand, and the resulting injury, on the other hand; i.e. the first must be the proximate cause and the latter the direct consequence thereof."
+      }
+    },
+    {
+      "id": "q-0762",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "In a libel case, the trial court awarded the offended public official ₱500,000 exemplary damages on top of moral damages, noting that the false accusations of corruption also distressed his children. No aggravating circumstance was alleged or proved. (a) Should the exemplary damages stand? (b) How may the effect on the family be considered? Explain, citing Tulfo v. People.",
+      "suggestedAnswer": {
+        "answer": "(a) No. In criminal offenses, exemplary damages may be imposed only when the crime was committed with one or more aggravating circumstances; there being none, they must be deleted. (b) The effect on the family adds an imperative dimension to the award of moral damages to the defamed person.",
+        "legalBasis": "In Tulfo v. People, the Court held that under Article 2230, \"[i]n criminal offenses, exemplary damages as a part of the civil liability may be imposed when the crime was committed with one or more aggravating circumstances.\" Since \"[n]o aggravating circumstances accompanied the commission of the libelous acts,\" no exemplary damages could be awarded. On moral damages, the Court took judicial notice that the sense of kinship runs deeply in a Filipino family, so an attempt to besmirch the name of the head of the family \"invariably puts the other members in a state of disrepute, distress, or anxiety,\" which \"adds an imperative dimension to the award of moral damages to the defamed party.\"",
+        "application": "The ₱500,000 exemplary damages were deleted, while the ₱1,000,000 moral damages to the official were kept.",
+        "conclusion": "No exemplary damages without an aggravating circumstance; the family's distress supports the moral damages to the defamed party. **Bar trap:** a grave or shameful crime does not by itself justify exemplary damages under Article 2230; look for an aggravating circumstance."
+      },
+      "keyPoints": [
+        "Art. 2230: exemplary damages in crimes need one or more aggravating circumstances",
+        "No aggravating circumstance: exemplary damages deleted",
+        "Kinship in the Filipino family: the family shares the distress",
+        "This adds an imperative dimension to the moral damages of the defamed party",
+        "Exemplary damages are separate and distinct from fines"
+      ],
+      "caseIds": [
+        "case-0071"
+      ],
+      "source": {
+        "caseTitle": "Tulfo v. People, et al.",
+        "grNumber": "G.R. No. 161032",
+        "url": "https://lawphil.net/judjuris/juri2008/sep2008/gr_161032_2008.html",
+        "part": "Decision, discussion of the award of damages (exemplary damages) and the effect on the family",
+        "excerpt": "The Court can perhaps take judicial notice that the sense of kinship runs deeply in a typical Filipino family, such that the whole family usually suffers or rejoices at the misfortune or good fortune, as the case may be, of any of its member. Accordingly, any attempt to dishonor or besmirch the name and reputation of the head of the family, as here, invariably puts the other members in a state of disrepute, distress, or anxiety. This reality adds an imperative dimension to the award of moral damages to the defamed party. The award of exemplary damages, however, cannot be justified. Under Art. 2230 of the Civil Code, \"In criminal offenses, exemplary damages as a part of the civil liability may be imposed when the crime was committed with one or more aggravating circumstances. Such damages are separate and distinct from fines and shall be paid to the offended party.\" No aggravating circumstances accompanied the commission of the libelous acts; thus, no exemplary damages can be awarded."
+      }
+    },
+    {
+      "id": "q-0763",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "In Tulfo v. People, the award of moral damages to the defamed official was justified under",
+      "choices": {
+        "A": "Article 2219(7) of the Civil Code, which allows moral damages in cases of libel, slander or any other form of defamation.",
+        "B": "Article 2220 of the Civil Code, on breaches of contract in bad faith.",
+        "C": "Article 2206 of the Civil Code, on death caused by a crime.",
+        "D": "Article 2208 of the Civil Code, on attorney's fees."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court said: \"Justification for the award of moral damages is found in Art. 2219(7) of the Civil Code, which states that moral damages may be recovered in cases of libel, slander, or any other form of defamation.\" **B is wrong:** no contract was involved. **C is wrong:** no death resulted. **D is wrong:** that is on attorney's fees. **Bar trap:** know the cases listed in Article 2219.",
+      "caseIds": [
+        "case-0071"
+      ],
+      "source": {
+        "caseTitle": "Tulfo v. People, et al.",
+        "grNumber": "G.R. No. 161032",
+        "url": "https://lawphil.net/judjuris/juri2008/sep2008/gr_161032_2008.html",
+        "part": "Decision, discussion of the award of damages (Article 2219(7))",
+        "excerpt": "Justification for the award of moral damages is found in Art. 2219(7) of the Civil Code, which states that moral damages may be recovered in cases of libel, slander, or any other form of defamation."
+      }
+    },
+    {
+      "id": "q-0764",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "According to Tulfo v. People, if no actual or compensatory damages are proved,",
+      "choices": {
+        "A": "no moral damages may be awarded.",
+        "B": "only nominal damages may be awarded.",
+        "C": "the offended party's right to recover moral damages is not adversely affected.",
+        "D": "moral damages are limited to the amount of the fine."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court said: \"Moral damages can be awarded even in the absence of actual or compensatory damages. The fact that no actual or compensatory damage was proven before the trial court does not adversely affect the offended party's right to recover moral damages.\" **A, B and D are wrong:** none is the rule. **Bar trap:** the two kinds of damages are independent.",
+      "caseIds": [
+        "case-0071"
+      ],
+      "source": {
+        "caseTitle": "Tulfo v. People, et al.",
+        "grNumber": "G.R. No. 161032",
+        "url": "https://lawphil.net/judjuris/juri2008/sep2008/gr_161032_2008.html",
+        "part": "Decision, discussion of the award of damages (moral without actual damages)",
+        "excerpt": "Moral damages can be awarded even in the absence of actual or compensatory damages. The fact that no actual or compensatory damage was proven before the trial court does not adversely affect the offended party’s right to recover moral damages."
+      }
+    },
+    {
+      "id": "q-0765",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Why did the Court delete the ₱800,000 actual damages in Tulfo v. People?",
+      "choices": {
+        "A": "Because actual damages cannot be awarded in criminal cases.",
+        "B": "Because there was no showing of any pecuniary loss suffered by the complainant, and without proof of actual loss that can be measured, the award cannot stand.",
+        "C": "Because moral damages had already been awarded.",
+        "D": "Because the accused were first-time offenders."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court held: \"There was no showing of any pecuniary loss suffered by the complainant Atty. So. Without proof of actual loss that can be measured, the award of actual damages cannot stand.\" **A is wrong:** actual damages may be awarded in criminal cases if proved. **C is wrong:** the two awards are independent. **D is wrong:** that affected the penalty, not damages. **Bar trap:** a reputation harmed is a moral injury, not automatically a pecuniary loss.",
+      "caseIds": [
+        "case-0071"
+      ],
+      "source": {
+        "caseTitle": "Tulfo v. People, et al.",
+        "grNumber": "G.R. No. 161032",
+        "url": "https://lawphil.net/judjuris/juri2008/sep2008/gr_161032_2008.html",
+        "part": "Decision, discussion of the award of damages (actual damages)",
+        "excerpt": "There was no showing of any pecuniary loss suffered by the complainant Atty. So. Without proof of actual loss that can be measured, the award of actual damages cannot stand."
+      }
+    },
+    {
+      "id": "q-0766",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "In Tulfo v. People, the managing editor, national editor, city editor and publishing company president argued that they had no participation in writing the libelous articles. How did the Court rule?",
+      "choices": {
+        "A": "They were acquitted for lack of conspiracy.",
+        "B": "Only the president was held liable.",
+        "C": "They were held liable only for civil damages.",
+        "D": "Under Article 360 of the Revised Penal Code, they are liable like the author; an editor or manager with active charge and control of a newspaper is equally liable, whether or not he knew the contents."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The Court held that Article 360 \"plainly and specifically states the responsibility of those involved in publishing newspapers,\" that an editor or manager with active charge and control \"generally is held to be equally liable with the owner,\" and that \"it is immaterial whether or not the editor or manager knew the contents of the publication.\" **A, B and C are wrong:** all were found guilty. **Bar trap:** lack of participation is not a defense under Article 360.",
+      "caseIds": [
+        "case-0071"
+      ],
+      "source": {
+        "caseTitle": "Tulfo v. People, et al.",
+        "grNumber": "G.R. No. 161032",
+        "url": "https://lawphil.net/judjuris/juri2008/sep2008/gr_161032_2008.html",
+        "part": "Decision, discussion of the liability of the editors and publisher",
+        "excerpt": "An editor or manager of a newspaper, who has active charge and control of its management, conduct, and policy, generally is held to be equally liable with the owner for the publication therein of a libelous article. On the theory that it is the duty of the editor or manager to know and control the contents of the paper, it is held that said person cannot evade responsibility by abandoning the duties to employees, so that it is immaterial whether or not the editor or manager knew the contents of the publication."
+      }
+    },
+    {
+      "id": "q-0767",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "What was the final judgment in Tulfo v. People?",
+      "choices": {
+        "A": "Each accused was fined ₱6,000 per count of libel, with subsidiary imprisonment, and ordered to pay jointly and severally ₱1,000,000 moral damages; the actual and exemplary damages were deleted.",
+        "B": "The accused were acquitted.",
+        "C": "The prison terms and all damages were affirmed.",
+        "D": "The moral damages were deleted and only actual damages were awarded."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court ordered that \"in lieu of imprisonment, the penalty ... shall be a fine of six thousand pesos (PhP 6,000) for each count of libel, with subsidiary imprisonment in case of insolvency, while the award of actual damages and exemplary damages is DELETED,\" and the accused were ordered to pay ₱1,000,000 moral damages. **B is wrong:** the convictions stood. **C is wrong:** imprisonment was replaced by a fine and two awards deleted. **D is wrong:** it is the reverse. **Bar trap:** a lighter penalty does not reduce the civil liability for moral damages.",
+      "caseIds": [
+        "case-0071"
+      ],
+      "source": {
+        "caseTitle": "Tulfo v. People, et al.",
+        "grNumber": "G.R. No. 161032",
+        "url": "https://lawphil.net/judjuris/juri2008/sep2008/gr_161032_2008.html",
+        "part": "Decision, the disposition",
+        "excerpt": "WHEREFORE, in view of the foregoing, the petitions in G.R. Nos. 161032 and 161176 are DISMISSED. The CA Decision dated June 17, 2003 in CA-G.R. CR No. 25318 is hereby AFFIRMED with the MODIFICATIONS that in lieu of imprisonment, the penalty to be imposed upon petitioners shall be a fine of six thousand pesos (PhP 6,000) for each count of libel, with subsidiary imprisonment in case of insolvency, while the award of actual damages and exemplary damages is DELETED."
       }
     }
   ]
