@@ -226,6 +226,21 @@
       "ruling": "The Court reversed and dismissed the complaint against Dr. Alano. The case fell under an exception to the rule that the concurring factual findings of the lower courts bind the Court, as they failed to consider important circumstances. Dr. Alano's memorandum directed his subordinates to make certain that all reasonable efforts were exerted to locate the relatives, and granted authority only if the law was complied with; he acted prudently and could rely on his subordinates. Notices had been sent to the media and police even before the memorandum, and the NBI's opinion was sought. That the notices did not reach the family was due to the wrong name recorded by EAMC, not by NKI. The mother, who had the burden of proof by preponderance of evidence, presented no proof (such as expert testimony) that the roughly 24 hours allowed was unreasonable under the medical knowledge of the time. The organs were removed only after the son was declared brain dead, so the pain of his death could not be attributed to Dr. Alano.",
       "keyDoctrine": "A hospital director who conditions his authorization for organ retrieval on compliance with the law, including all reasonable efforts to locate the next of kin and notice to the NBI, acts prudently and may rely on his subordinates. In civil cases the party who alleges must prove by preponderance of evidence, relying on the strength of his own evidence. Damages require that the defendant's act be the cause of the injury; organs removed only after brain death do not cause the death or the grief over it.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2014/apr2014/gr_175540_2014.html"
+    },
+    {
+      "id": "case-0045",
+      "status": "draft",
+      "name": "Sanggacala, et al. v. National Power Corporation",
+      "grNumber": "G.R. No. 209538",
+      "year": 2021,
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Environmental Tort",
+      "facts": "In 1973, Memorandum Order No. 398 reserved the areas around Lake Lanao below 702 meters elevation and required the National Power Corporation (NPC) to place benchmarks around the lake warning that cultivation below that level was prohibited. In 1978 NPC built the Agus Regulation Dam to control the lake's outflow for its hydroelectric plants. Pacalna Sanggacala and other farmers with farmlands along the lakeshore sued NPC for damages, claiming that its refusal to open the dam's floodgates whenever flooding occurred damaged their farmlands and crops in 1979 and several later years. NPC answered that their lands were not affected, that any damage was damnum absque injuria, and that the farmers had cultivated below the 702-meter mark. The trial court awarded actual, moral and exemplary damages, attorney's fees, just compensation, rental and interest. The Court of Appeals reversed, holding the farmers' evidence insufficient.",
+      "issue": "(1) Does conclusiveness of judgment apply from an earlier case against NPC? (2) Did NPC commit an environmental tort based on negligence? (3) Does damnum absque injuria apply? (4) What damages are due?",
+      "ruling": "The Court granted the petition and reinstated the trial court's judgment with modifications. (1) Conclusiveness of judgment did not apply, for lack of identity of parties and subject matter with the 2005 NPC case. (2) NPC committed an environmental tort based on negligence. Environmental tort is a hybrid of tort law and environmental law; tort law can address environmental harm to a well-defined area or specific persons when supported by general and specific causation and fitting the elements of a tort action, and it requires an actual injury. Following its earlier rulings, NPC was negligent in its two-fold duty under Memorandum Order No. 398: to keep the lake's normal maximum level at 702 meters and to build and maintain warning benchmarks. The farmers had no flooding before the dam, NPC had paid financial assistance to affected claimants, and res ipsa loquitur also applied. (3) Damnum absque injuria (damage without injury) did not apply, since NPC's negligence was established. (4) Actual damages, attorney's fees and interest were affirmed; moral and exemplary damages were deleted (no gross negligence, and no stated basis for moral damages); just compensation and rental were deleted, since just compensation belongs to expropriation under Rule 67, and the rental had no evidentiary basis.",
+      "keyDoctrine": "Environmental tort, a hybrid of tort law and environmental law, may redress environmental harm to a well-defined area or specific persons when supported by general and specific causation and fitting the elements of a tort action; an actual injury is required. The elements of a quasi-delict or tort are damage, fault or negligence of the defendant, and the causal connection between them. Injury is the illegal invasion of a legal right; damage is the resulting loss; damages are the compensation. Damage without injury (damnum absque injuria) is not compensable. In quasi-delicts, exemplary damages require gross negligence.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2021/jul2021/gr_209538_2021.html"
     }
   ],
   "questions": [
@@ -3676,6 +3691,237 @@
         "url": "https://lawphil.net/judjuris/juri2014/apr2014/gr_175540_2014.html",
         "part": "Decision, the timing of the organ retrieval",
         "excerpt": "It should be emphasized that the internal organs of the deceased were removed only after he had been declared brain dead; thus, the emotional pain suffered by respondent due to the death of her son cannot in any way be attributed to petitioner."
+      }
+    },
+    {
+      "id": "q-0552",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Environmental Tort",
+      "prompt": "What is an environmental tort? When can tort law be used to address environmental harm, and what are the two primary theories commonly underlying such actions? Explain.",
+      "suggestedAnswer": {
+        "answer": "Environmental tort is a hybrid of two disciplines, tort law and environmental law. Tort law can address environmental harm where the harm is to a well-defined area or specific person or class of persons, is readily supported by general and specific causation, and closely fits the traditional elements of a tort cause of action. The two primary theories are nuisance and negligence.",
+        "legalBasis": "In Sanggacala v. National Power Corporation, the Court explained that environmental laws are principally concerned with the prevention or correction of environmental harm and tort laws with righting a wrong, so they overlap where an environmental law or action principally furthers corrective justice and deterrence. For an environmental tort action to prosper there must be an actual injury to a person or group of persons or to property; its essential purpose is to provide corrective justice based on the relative fault or blameworthiness of another. Negligence, broader in scope, can reach harms not involving a possessory interest in land, and may be brought by any party directly injured by another's failure to exercise reasonable care.",
+        "application": "Flooding someone's land and killing off plant life is a comparatively simple harm where tort law may be the only means of redress. In Sanggacala, the harm was to a well-defined class of persons (farmers along the Lake Lanao shore) and their properties, and the dam operator's negligence was shown to have caused it, so the elements of an environmental tort based on negligence were present.",
+        "conclusion": "An environmental tort is redressable through tort law when the harm is well-defined, causally supported and fits the tort elements, usually under nuisance or negligence. **Bar trap:** tort law requires a direct, actual injury; a general harm to the environment with no direct injury to the plaintiff is not enough."
+      },
+      "keyPoints": [
+        "A hybrid of tort law and environmental law",
+        "Harm to a well-defined area or specific person or class of persons",
+        "Readily supported by general and specific causation, and fitting the elements of a tort action",
+        "An actual injury to persons or property is required; purpose is corrective justice based on fault",
+        "Two primary theories: nuisance and negligence"
+      ],
+      "caseIds": [
+        "case-0045"
+      ],
+      "source": {
+        "caseTitle": "Sanggacala, et al. v. National Power Corporation",
+        "grNumber": "G.R. No. 209538",
+        "url": "https://lawphil.net/judjuris/juri2021/jul2021/gr_209538_2021.html",
+        "part": "Ruling, II (environmental tort)",
+        "excerpt": "Environmental tort is a hybrid of two disciplines—tort law and environmental law, and may provide an \"institutional answer that addresses the remaining gaps in public health protection.\" … Thus, tort law provides a means to address environmental harms, where the \"harm is to a well-defined area or specific person or class of persons, is readily supported by general and specific causation, and closely fits the traditional elements of a tort cause of action[;]\" to wit: … More important, for an environmental tort action to prosper, there must \"be an actual injury to a person or group of persons or to property.\" The essential purpose of an environmental tort action is \"to provide corrective justice based upon the relative fault or blameworthiness of another.\" There are two primary theories commonly underlying tort action— the law of nuisance and the law of negligence:"
+      }
+    },
+    {
+      "id": "q-0553",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Environmental Tort",
+      "prompt": "Distinguish quasi-delict from torts, and state the elements that must be proved in an action based on either.",
+      "suggestedAnswer": {
+        "answer": "Quasi-delict (culpa aquiliana) is a civil law concept, while torts is an Anglo-American or common law concept. Torts is much broader, because it covers not only negligence but also intentional criminal acts such as assault and battery, false imprisonment and deceit. The elements are: (1) damages suffered by the plaintiff; (2) fault or negligence of the defendant, or of some other person for whose acts he must respond; and (3) the connection of cause and effect between the fault or negligence and the damages.",
+        "legalBasis": "Under Article 2176 of the Civil Code, whoever by act or omission causes damage to another, there being fault or negligence, is obliged to pay for the damage; such fault or negligence, if there is no pre-existing contractual relation, is a quasi-delict. In Sanggacala v. National Power Corporation, the Court quoted Baksh v. Court of Appeals: in the Philippine scheme, intentional and malicious acts (with exceptions) are governed by the Revised Penal Code, negligent acts by Article 2176, and injurious acts in between are reached by Article 21, which with Articles 19 and 20 has made the law on civil wrongs more supple than the Anglo-American law on torts. The Court noted that later cases used torts and quasi-delict interchangeably in enumerating the elements.",
+        "application": "Thus an environmental harm caused by negligence, such as flooding from a dam's mismanagement, is redressed under Article 2176 by proving damage to the plaintiff, the defendant's negligence, and causation; the burden is on the plaintiff, since there is no presumption of negligence in quasi-delicts.",
+        "conclusion": "Torts is broader than quasi-delict, but both require damage, fault or negligence, and causation. **Bar trap:** do not equate the two concepts fully; and remember there is no presumption of negligence in quasi-delicts (res ipsa loquitur may supply an inference in proper cases)."
+      },
+      "keyPoints": [
+        "Quasi-delict (culpa aquiliana) is a civil law concept; torts is a common law concept",
+        "Torts is broader: it includes intentional acts such as assault, false imprisonment and deceit",
+        "Article 2176: damage caused by fault or negligence, without a pre-existing contractual relation",
+        "Articles 19, 20 and 21 broaden the Philippine law on civil wrongs",
+        "Elements: damage to the plaintiff; fault or negligence of the defendant; causal connection"
+      ],
+      "caseIds": [
+        "case-0045"
+      ],
+      "source": {
+        "caseTitle": "Sanggacala, et al. v. National Power Corporation",
+        "grNumber": "G.R. No. 209538",
+        "url": "https://lawphil.net/judjuris/juri2021/jul2021/gr_209538_2021.html",
+        "part": "Ruling, II (quasi-delict and torts)",
+        "excerpt": "This Court differentiated quasi-delict from torts in Baksh v. Court of Appeals: Quasi-delict, known in Spanish legal treatises as culpa aquiliana, is a civil law concept while torts is an Anglo-American or common law concept. Torts is much broader than culpa aquiliana because it includes not only negligence, but intentional criminal acts as well such as assault and battery, false imprisonment and deceit. In the general scheme of the Philippine legal system envisioned by the Commission responsible for drafting the New Civil Code, intentional and malicious acts with certain exceptions, are to be governed by the Revised Penal Code while negligent acts or omissions are to be covered by Article 2176 of the Civil Code. In between these opposite spectrums are injurious acts which, in the absence of Article 21, would have been beyond redress. Thus, Article 21 fills that vacuum. It is even postulated that together with Articles 19 and 20 of the Civil Code, Article 21 has greatly broadened the scope of the law on civil wrongs; it has become much more supple and adaptable than the Anglo-American law on torts. … In subsequent cases, this Court referred to torts and quasi-delict interchangeably when enumerating the following elements: (1) damages suffered by the plaintiff; (2) fault or negligence of the defendant, or some other person for whose acts he or she must respond; and (3) the connection of cause and effect between the fault or negligence of the defendant and the damages incurred by the plaintiff."
+      }
+    },
+    {
+      "id": "q-0554",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Environmental Tort",
+      "prompt": "A government power corporation operates a dam that controls a lake's outflow. A presidential order requires it to keep the lake's normal maximum level at a fixed elevation and to put up benchmarks warning residents not to cultivate below that level. It held back water for power generation during heavy rains, and lakeshore farmlands were flooded in several years; the benchmarks were installed only years after the dam began operating. Sued by the farmers, it argues that (a) any loss is damnum absque injuria, and (b) the farmers planted below the prohibited elevation. The trial court awarded actual damages, moral and exemplary damages, and \"just compensation\" for an easement over the lands. Resolve the defenses and the awards.",
+      "suggestedAnswer": {
+        "answer": "Both defenses fail, and the corporation is liable for actual damages, but the moral and exemplary damages and the just compensation should be deleted.",
+        "legalBasis": "In Sanggacala v. National Power Corporation, the Court held NPC negligent in its two-fold duty under Memorandum Order No. 398 (to keep the lake's normal maximum level at 702 meters, and to build and maintain warning benchmarks); res ipsa loquitur also applied. Damnum absque injuria applies only when the loss was not the result of a violation of a legal duty, so it did not apply once negligence was established. In quasi-delicts the defendant is liable for all damages that are the natural and probable consequences of the act or omission. But exemplary damages require gross negligence; moral damages must be proven to be the proximate result of the wrongful act; and just compensation is governed by Rule 67 (expropriation), a remedy distinct from a complaint for damages.",
+        "application": "(a) The farmers' loss resulted from the corporation's breach of a legal duty, so it is damage with injury. (b) The corporation cannot rely on the prohibited elevation when it failed to install the very benchmarks meant to warn the farmers; without them, the farmers could not know whether their crops were in the prohibited area. Actual damages proven by the farmers' testimonies and evidence are due. But the negligence did not amount to gross negligence, so no exemplary damages; no basis was shown for moral damages; and just compensation cannot be awarded in a suit for damages.",
+        "conclusion": "Liable for actual damages (plus attorney's fees and interest), not for moral or exemplary damages or just compensation. **Bar trap:** negligence alone does not support exemplary damages in a quasi-delict; it must be gross. And just compensation belongs to expropriation, not to a damage suit."
+      },
+      "keyPoints": [
+        "NPC's two-fold duty: keep the lake's maximum level and install warning benchmarks",
+        "Damnum absque injuria does not apply once a breach of legal duty is shown",
+        "Failure to install benchmarks defeats the defense that the farmers planted below the limit",
+        "Actual damages: all natural and probable consequences of the negligent act",
+        "Exemplary damages need gross negligence; moral damages need proof; just compensation belongs to Rule 67"
+      ],
+      "caseIds": [
+        "case-0045"
+      ],
+      "source": {
+        "caseTitle": "Sanggacala, et al. v. National Power Corporation",
+        "grNumber": "G.R. No. 209538",
+        "url": "https://lawphil.net/judjuris/juri2021/jul2021/gr_209538_2021.html",
+        "part": "Ruling, II to IV (negligence of NPC, damnum absque injuria, damages)",
+        "excerpt": "In the 2005 National Power Corporation case where private respondents sued National Power Corporation for its failure to increase the water outflow from the Agus Regulation Dam despite the rise of the lake's water level from heavy rains in 1986 causing damage to their fishponds and its improvements sited along the Lake Lanao shore, this Court ruled that National Power Corporation was negligent for failing to perform its two-fold duty under Memorandum Order No. 398, specifically: (1) to maintain the normal maximum level of the lake at 702 meters; and (2) to build and maintain benchmarks warning the inhabitants in the area of the prohibition on cultivation of land below the 702-meter elevation, thus: … Damnum absque injuria, or damage without injury, arises when the loss or harm was not the result of a violation of a legal duty. … Similarly, having established respondent's negligence in its failure to observe its legal mandate, the principle of damnum absque injuria finds no application here. … In crimes and quasi-delicts, the defendant shall be liable for all damages which are the natural and probable consequences of the act or omission complained of. … \"In [quasi-delicts], exemplary damages may be granted if the defendant acted with gross negligence.\" … However, respondent's negligence does not amount to gross negligence, so as to entitle petitioners to exemplary damages. Also, the trial court did not explain its basis for the award of moral damages, despite its grant in the dispositive portion of the Joint Judgment. Thus, it is proper for the award of moral and exemplary damages to be deleted. As for the award of just compensation and rental, this Court finds these awards incongruent and lacking in sufficient basis. Although the trial court stated that the payment of just compensation was anchored on Republic Act No. 6395, Section 3(f) and the Civil Code provisions on easement, the determination of just compensation is governed by Rule 67 of the Rules of Court, which is a distinct remedy from the complaint of damages filed in this case, and thus requires different allegations of cause of action and evidence as in this case."
+      }
+    },
+    {
+      "id": "q-0555",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Environmental Tort",
+      "prompt": "As explained in Sanggacala v. National Power Corporation, \"the illegal invasion of a legal right\" is the definition of",
+      "choices": {
+        "A": "damage.",
+        "B": "injury.",
+        "C": "damages.",
+        "D": "damnum absque injuria."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court quoted: \"There is a material distinction between damages and injury. Injury is the illegal invasion of a legal right; damage is the loss, hurt, or harm which results from the injury, and damages are the recompense or compensation awarded for the damage suffered.\" **A is wrong:** damage is the loss or harm that results from the injury. **C is wrong:** damages are the compensation awarded. **D is wrong:** damnum absque injuria is damage without injury, a loss not resulting from the violation of a legal duty. **Bar trap:** injury, damage and damages are three different things; there can be damage without injury.",
+      "caseIds": [
+        "case-0045"
+      ],
+      "source": {
+        "caseTitle": "Sanggacala, et al. v. National Power Corporation",
+        "grNumber": "G.R. No. 209538",
+        "url": "https://lawphil.net/judjuris/juri2021/jul2021/gr_209538_2021.html",
+        "part": "Ruling, III (damage, injury and damages)",
+        "excerpt": "There is a material distinction between damages and injury. Injury is the illegal invasion of a legal right; damage is the loss, hurt, or harm which results from the injury, and damages are the recompense or compensation awarded for the damage suffered. Thus, there can be damage without injury in those instances in which the loss or harm was not the result of a violation of a legal duty. These situations are often called damnum absque injuria."
+      }
+    },
+    {
+      "id": "q-0556",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Environmental Tort",
+      "prompt": "Loss or harm that was not the result of a violation of a legal duty, whose consequences must be borne by the injured person alone, is known as",
+      "choices": {
+        "A": "res ipsa loquitur.",
+        "B": "culpa aquiliana.",
+        "C": "abuse of rights.",
+        "D": "damnum absque injuria."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** Sanggacala v. National Power Corporation: \"Damnum absque injuria, or damage without injury, arises when the loss or harm was not the result of a violation of a legal duty. When this occurs, the consequences must be borne by the injured person alone, since there is no remedy for damages resulting from an act which does not amount to a legal injury or wrong.\" It did not apply because NPC's negligence was established. **A is wrong:** res ipsa loquitur is a rule of evidence inferring negligence. **B is wrong:** culpa aquiliana is quasi-delict, which does involve fault or negligence. **C is wrong:** abuse of rights involves the wrongful exercise of a right, a legal wrong. **Bar trap:** the defense fails once a breach of legal duty is shown.",
+      "caseIds": [
+        "case-0045"
+      ],
+      "source": {
+        "caseTitle": "Sanggacala, et al. v. National Power Corporation",
+        "grNumber": "G.R. No. 209538",
+        "url": "https://lawphil.net/judjuris/juri2021/jul2021/gr_209538_2021.html",
+        "part": "Ruling, III (damnum absque injuria)",
+        "excerpt": "Damnum absque injuria, or damage without injury, arises when the loss or harm was not the result of a violation of a legal duty. When this occurs, the consequences must be borne by the injured person alone, since there is no remedy for damages resulting from an act which does not amount to a legal injury or wrong."
+      }
+    },
+    {
+      "id": "q-0557",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Environmental Tort",
+      "prompt": "The farmers in Sanggacala v. National Power Corporation argued that an earlier Supreme Court decision holding NPC liable to other lakeshore property owners bound the Court under conclusiveness of judgment. Why did the doctrine not apply?",
+      "choices": {
+        "A": "Because there was no identity of parties and subject matter: the farmers did not share a common interest with the earlier claimants, and they claimed different damages for different properties and periods.",
+        "B": "Because conclusiveness of judgment applies only to criminal cases.",
+        "C": "Because the earlier decision was not yet final.",
+        "D": "Because NPC is a government corporation immune from res judicata."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court held that for conclusiveness of judgment, the parties (substantial identity or privity suffices) and the issues must be the same; here \"there is no identity of parties and of subject matter,\" the petitioners \"failed to show that they shared a common interest\" with the earlier claimants, and they claimed different damages for different properties over different periods. **B, C and D are wrong:** none was the Court's reason. **Bar trap:** although conclusiveness of judgment did not apply, the Court still held the earlier NPC rulings on NPC's negligence binding as precedent, given that the claimants were similarly situated.",
+      "caseIds": [
+        "case-0045"
+      ],
+      "source": {
+        "caseTitle": "Sanggacala, et al. v. National Power Corporation",
+        "grNumber": "G.R. No. 209538",
+        "url": "https://lawphil.net/judjuris/juri2021/jul2021/gr_209538_2021.html",
+        "part": "Ruling, I (conclusiveness of judgment)",
+        "excerpt": "Here, petitioners, owners of farmlands and crops which are also sited along the Lake Lanao shore, claimed that their properties were damaged by flood due to respondent's refusal to open the floodgates of Agus Regulation Dam for the years 1979, 1984, 1986, 1989, 1993, 1994, 1995, and 1996. Clearly, there is no identity of parties and of subject matter in the 2005 case and in here. Petitioners failed to show that they shared a common interest with private respondents in National Power Corporation. Aside from claiming different damages for different properties, the period for which they alleged damages on their respective properties was likewise different."
+      }
+    },
+    {
+      "id": "q-0558",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Environmental Tort",
+      "prompt": "Under the test in Picart v. Smith, as quoted in Sanggacala v. National Power Corporation, how is the existence of negligence in a particular case determined?",
+      "choices": {
+        "A": "By the personal judgment of the actor in the situation before him.",
+        "B": "By whether the defendant intended to cause harm.",
+        "C": "By asking whether the defendant, in doing the alleged negligent act, used that reasonable care and caution which an ordinarily prudent person would have used in the same situation.",
+        "D": "By whether the defendant violated any statute, regardless of foreseeability."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court quoted Picart v. Smith: \"Did the defendant in doing the alleged negligent act use that reasonable care and caution which an ordinarily prudent person would have used in the same situation? If not, then he is guilty of negligence,\" adding that reasonable foresight of harm, followed by ignoring it, is always necessary before negligence can be held to exist. **A is wrong:** the test expressly is \"not determined by reference to the personal judgment of the actor.\" **B is wrong:** negligence does not require intent. **D is wrong:** the test turns on the conduct of the ordinarily prudent person and foresight of harm. **Bar trap:** the standard is objective (the discreet paterfamilias), not the actor's own judgment.",
+      "caseIds": [
+        "case-0045"
+      ],
+      "source": {
+        "caseTitle": "Sanggacala, et al. v. National Power Corporation",
+        "grNumber": "G.R. No. 209538",
+        "url": "https://lawphil.net/judjuris/juri2021/jul2021/gr_209538_2021.html",
+        "part": "Ruling, II (the test of negligence, quoting Picart v. Smith)",
+        "excerpt": "The test by which to determine the existence of negligence in a particular case may be stated as follows: Did the defendant in doing the alleged negligent act use that reasonable care and caution which an ordinarily prudent person would have used in the same situation? If not, then he is guilty of negligence. The law here in effect adopts the standard supposed to be supplied by the imaginary conduct of the discreet paterfamilias of the Roman law. The existence of negligence in a given case is not determined by reference to the personal judgment of the actor in the situation before him."
+      }
+    },
+    {
+      "id": "q-0559",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Torts and Quasi-delicts",
+      "subtopic": "Environmental Tort",
+      "prompt": "Why did the Court in Sanggacala v. National Power Corporation delete the award of exemplary damages, even though NPC was found negligent?",
+      "choices": {
+        "A": "Because exemplary damages can never be awarded against a government corporation.",
+        "B": "Because in quasi-delicts exemplary damages may be granted only if the defendant acted with gross negligence, and NPC's negligence did not amount to gross negligence.",
+        "C": "Because the farmers did not pray for exemplary damages.",
+        "D": "Because exemplary damages are absorbed by actual damages."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court said: \"In [quasi-delicts], exemplary damages may be granted if the defendant acted with gross negligence,\" and found that \"respondent's negligence does not amount to gross negligence, so as to entitle petitioners to exemplary damages.\" It also deleted moral damages because the trial court did not explain their basis. **A is wrong:** no such immunity was invoked. **C and D are wrong:** neither was the Court's reason. **Bar trap:** ordinary negligence supports actual damages; exemplary damages in a quasi-delict need gross negligence.",
+      "caseIds": [
+        "case-0045"
+      ],
+      "source": {
+        "caseTitle": "Sanggacala, et al. v. National Power Corporation",
+        "grNumber": "G.R. No. 209538",
+        "url": "https://lawphil.net/judjuris/juri2021/jul2021/gr_209538_2021.html",
+        "part": "Ruling, IV (exemplary and moral damages)",
+        "excerpt": "\"In [quasi-delicts], exemplary damages may be granted if the defendant acted with gross negligence.\" On the other hand, moral damages include \"physical suffering, mental anguish, fright, serious anxiety, besmirched reputation, wounded feelings, moral shock, social humiliation, and similar injury[,]\" and may be recovered if proven to be the proximate result of the defendant's wrongful act or omission. Here, the trial court awarded exemplary damages based on the wanton negligence or manifest bad faith of respondent for its refusal to open the floodgates of Agus Regulation Dam despite petitioners' pleas. However, respondent's negligence does not amount to gross negligence, so as to entitle petitioners to exemplary damages."
       }
     }
   ]
