@@ -61,6 +61,21 @@
       "ruling": "The Court denied the petition with modifications. Foreseeability is the fundamental test of negligence; the driver saw the motorcycle but did not slow down and veered left. When an employee's negligence causes damage, the employer is presumed negligent in selecting or supervising him and must overcome that by convincing proof; the company's tests covered only driving ability and fitness, and it did not know of the driver's prior sideswiping incidents. Under Section 8, Rule 51, an appellate court may review matters not assigned as errors if necessary for a just decision, so the added damages were proper. Indemnity under Article 2206 is for loss of capacity to earn, computed on net earnings: with documentary proof of a ₱1,000,000 gross annual income, and absent other evidence, necessary business expenses were pegged at 80% and living expenses at 50% of the net, giving ₱1,000,000 for the 65-year-old deceased. Actual damages were limited to receipted amounts (₱127,192.85); temperate damages of ₱10,000 were proper for the motorcycle, since only a job estimate was presented; moral damages for the injuries were reduced to ₱30,000; and ₱50,000 civil indemnity was affirmed.",
       "keyDoctrine": "Foreseeability is the fundamental test of negligence. An employee's negligence raises a presumption that the employer failed in the selection or supervision of employees. Indemnity for loss of earning capacity (Art. 2206) compensates loss of capacity to earn and is computed on net earnings: life expectancy of 2/3 x (80 - age at death) multiplied by the gross annual income less necessary expenses, less living expenses. Actual damages need receipts; a mere estimate may justify temperate damages. An appellate court may consider errors not assigned when necessary for a just decision.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2010/feb2010/gr_166869_2010.html"
+    },
+    {
+      "id": "case-0052",
+      "status": "draft",
+      "name": "People v. Asilan",
+      "grNumber": "G.R. No. 188322",
+      "year": 2012,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "facts": "On March 27, 2006, in Sta. Mesa, Manila, PO1 Randy Adovas, a 29-year-old police officer in uniform, was about to handcuff a man when Joseph Asilan came from behind and stabbed him in the back several times; the man being arrested then took the officer's gun and shot him. Adovas died. Two eyewitnesses identified Asilan, who was arrested near the scene. Charged with direct assault with murder, he was convicted of murder qualified by treachery and ordered to pay actual damages, moral damages and civil indemnity; the Court of Appeals affirmed. Asilan attacked the witnesses' credibility, argued that treachery was not shown and was not properly alleged, and that he could only be guilty of homicide. The widow had testified, with documentary proof, that her husband earned ₱8,605 a month.",
+      "issue": "(1) Was Asilan's guilt for murder proved? (2) What damages are due to the heirs, including loss of earning capacity?",
+      "ruling": "The Court affirmed the conviction for murder and modified the damages. The trial court's assessment of credibility stands; minor inconsistencies enhance credibility; there is no standard reaction to a shocking event; and flight indicates guilt but its converse does not prove innocence. Treachery was present, since the officer was stabbed from behind without warning, and it was alleged in the Information; objections to the Information's sufficiency were in any case waived. Civil indemnity was increased to ₱75,000 and moral damages to ₱50,000, exemplary damages of ₱30,000 were added under Article 2230 because of treachery, and actual damages were fixed at the ₱80,224 shown by receipts. Under Article 2206, the lower courts failed to award loss of earning capacity; computing life expectancy as 2/3 (80 − 29) = 34 years and net income as gross annual income (₱103,260) less 50% living expenses, the Court awarded ₱1,755,420, with 6% interest on all damages from finality.",
+      "keyDoctrine": "Under Article 2206, the defendant is liable for the loss of the earning capacity of the deceased, assessed and awarded in every case unless the deceased had no earning capacity due to a permanent disability not caused by the defendant. The factors are the number of years (life expectancy = 2/3 × (80 − age at death)) and the rate of loss (net income, which is gross income less living expenses). Exemplary damages may be awarded under Article 2230 when the crime is committed with an aggravating circumstance such as treachery.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2012/apr2012/gr_188322_2012.html"
     }
   ],
   "questions": [
@@ -982,6 +997,236 @@
         "url": "https://lawphil.net/judjuris/juri2010/feb2010/gr_166869_2010.html",
         "part": "Decision, nature of moral damages",
         "excerpt": "Moral damages are not intended to enrich a plaintiff at the expense of the defendant. They are awarded to allow the plaintiff to obtain means, diversions or amusements that will serve to alleviate the moral suffering he/she has undergone due to the defendant’s culpable action and must, perforce, be proportional to the suffering inflicted."
+      }
+    },
+    {
+      "id": "q-0608",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "A 35-year-old employee earning ₱20,000 a month, as shown by his payslips, was murdered. The trial court awarded actual, moral and exemplary damages and civil indemnity, but nothing for loss of earning capacity, since the heirs did not appeal. Following People v. Asilan, may the appellate court award it, and how much?",
+      "suggestedAnswer": {
+        "answer": "Yes. Under Article 2206, the defendant is liable for the loss of the earning capacity of the deceased, which in every case shall be assessed and awarded by the court. Computed as in Asilan: ₱3,600,000.",
+        "legalBasis": "In People v. Asilan, the Court held that both lower courts failed to consider that under Article 2206 the accused is also liable for the loss of the earning capacity of the deceased, payable to his heirs, and awarded it on appeal. It used: Net Earning Capacity = life expectancy × (gross annual income − living expenses) = 2/3 (80 − age at death) × (gross annual income − 50% of gross annual income), net income being gross income less living expenses.",
+        "application": "Life expectancy: 2/3 × (80 − 35) = 2/3 × 45 = 30 years. Gross annual income: ₱20,000 × 12 = ₱240,000. Less 50% living expenses (₱120,000) = ₱120,000. Net earning capacity: 30 × ₱120,000 = ₱3,600,000. The payslips satisfy the requirement of documentary proof.",
+        "conclusion": "The appellate court should award ₱3,600,000 for loss of earning capacity. **Bar trap:** the award is mandatory under Article 2206 when proven, even if the trial court overlooked it; and the living-expense deduction used in Asilan (50% of gross) differs from that used in Muyco (80% of gross), so follow the facts and the approach of the decision cited."
+      },
+      "keyPoints": [
+        "Art. 2206: liability for loss of earning capacity, assessed and awarded by the court in every case",
+        "The appellate court may award it even if the lower courts failed to",
+        "Formula used in Asilan: 2/3 (80 − age) × (gross annual income − 50% living expenses)",
+        "2/3 × 45 = 30; ₱240,000 − ₱120,000 = ₱120,000; 30 × ₱120,000 = ₱3,600,000",
+        "Documentary proof of income (payslips) supports the award"
+      ],
+      "caseIds": [
+        "case-0052"
+      ],
+      "source": {
+        "caseTitle": "People v. Asilan",
+        "grNumber": "G.R. No. 188322",
+        "url": "https://lawphil.net/judjuris/juri2012/apr2012/gr_188322_2012.html",
+        "part": "Discussion, loss of earning capacity (computation)",
+        "excerpt": "Both the RTC and the Court of Appeals failed to consider that under Article 2206 of the Civil Code, Asilan is also liable for the loss of the earning capacity of Adovas, and such indemnity should be paid to his heirs: … Net income is arrived at by deducting the amount of the victim’s living expenses from the amount of his gross income. The loss of earning capacity of Asilan is thus computed as follows: Net Earning Capacity = life expectancy x [gross annual income – living expenses] = 2/3 [80-age at time of death] x [gross annual income – 50% of gross annual income] = 2/3 [80-29] x [₱ 103,260.00 – ₱ 51,630.00] = 34 x ₱ 51,630.00 = ₱ 1,755,420.00"
+      }
+    },
+    {
+      "id": "q-0609",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "What are the factors in computing the damages recoverable for the loss of earning capacity of a deceased person? When may such indemnity NOT be awarded under Article 2206 of the Civil Code? Explain, following People v. Asilan.",
+      "suggestedAnswer": {
+        "answer": "The factors are: (1) the number of years on the basis of which the damages shall be computed, using the formula 2/3 × (80 − age of the deceased at death) = life expectancy, adopted from the American Expectancy Table of Mortality; and (2) the rate at which the losses sustained by the heirs should be fixed, that is, the net income (gross income less living expenses). The indemnity is not awarded when the deceased, on account of permanent physical disability not caused by the defendant, had no earning capacity at the time of his death.",
+        "legalBasis": "People v. Asilan quoted Article 2206: the amount of damages for death caused by a crime or quasi-delict shall be at least three thousand pesos, even if there are mitigating circumstances; in addition, (1) the defendant shall be liable for the loss of the earning capacity of the deceased, paid to the heirs, and such indemnity shall in every case be assessed and awarded by the court, unless the deceased on account of permanent physical disability not caused by the defendant had no earning capacity at the time of his death. The Court then listed the two factors.",
+        "application": "So in every death caused by a crime or quasi-delict, the court must determine the deceased's life expectancy and net income, unless he had no earning capacity because of a permanent disability not caused by the defendant (for example, if he was already permanently incapacitated from an earlier, unrelated cause).",
+        "conclusion": "Two factors: life expectancy and net income; the only exception is lack of earning capacity due to a permanent disability not caused by the defendant. **Bar trap:** a disability caused by the defendant himself does not excuse him from this indemnity."
+      },
+      "keyPoints": [
+        "Factor 1: number of years, life expectancy = 2/3 × (80 − age at death), from the American Expectancy Table of Mortality",
+        "Factor 2: the rate of loss, net income = gross income less living expenses",
+        "Art. 2206: indemnity shall in every case be assessed and awarded by the court",
+        "Exception: the deceased had no earning capacity because of a permanent physical disability not caused by the defendant"
+      ],
+      "caseIds": [
+        "case-0052"
+      ],
+      "source": {
+        "caseTitle": "People v. Asilan",
+        "grNumber": "G.R. No. 188322",
+        "url": "https://lawphil.net/judjuris/juri2012/apr2012/gr_188322_2012.html",
+        "part": "Discussion, loss of earning capacity (the factors and Article 2206)",
+        "excerpt": "Art. 2206. The amount of damages for death caused by a crime or quasi-delict shall be at least three thousand pesos, even though there may have been mitigating circumstances. In addition: (1) The defendant shall be liable for the loss of the earning capacity of the deceased, and the indemnity shall be paid to the heirs of the latter; such indemnity shall in every case be assessed and awarded by the court, unless the deceased on account of permanent physical disability not caused by the defendant, had no earning capacity at the time of his death; … The following are the factors in computing the amount of damages recoverable for the loss of earning capacity of the deceased: 1) The number of years on the basis of which the damages shall be computed. This is based on the formula (2/3 x 80 – age of the deceased at the time of his death = life expectancy), which is adopted from the American Expectancy Table of Mortality; and 2) The rate at which the losses sustained by the heirs of the deceased should be fixed. Net income is arrived at by deducting the amount of the victim’s living expenses from the amount of his gross income."
+      }
+    },
+    {
+      "id": "q-0610",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "In a murder qualified by treachery, the trial court ordered the accused to pay the victim's heirs ₱84,224 actual damages based on receipts and a list, ₱25,000 moral damages and ₱50,000 civil indemnity. How did the Court modify the damages in People v. Asilan, and on what bases?",
+      "suggestedAnswer": {
+        "answer": "Civil indemnity was increased to ₱75,000 and moral damages to ₱50,000 per prevailing jurisprudence; ₱30,000 exemplary damages were added because of treachery; actual damages were fixed at ₱80,224, the total of the receipts; ₱1,755,420 was added for loss of earning capacity; and 6% interest per annum was imposed on all damages from finality.",
+        "legalBasis": "In People v. Asilan, the Court increased civil indemnity and moral damages \"[p]ursuant to prevailing jurisprudence\"; awarded exemplary damages \"in view of the presence of the qualifying circumstance of treachery\" under Article 2230 of the Civil Code; fixed actual damages on the widow's receipts for hospital and funeral expenses; and applied Article 2206 for loss of earning capacity.",
+        "application": "The receipts showed ₱25,224 hospital, ₱35,000 memorial and ₱20,000 funeral expenses, totaling ₱80,224. The victim, 29, earned ₱8,605 a month (₱103,260 a year), shown by documentary evidence; with 50% living expenses deducted and 34 years of life expectancy, the loss was ₱1,755,420.",
+        "conclusion": "Civil indemnity ₱75,000; moral ₱50,000; exemplary ₱30,000; actual ₱80,224; loss of earning capacity ₱1,755,420; 6% interest from finality. **Bar trap:** a qualifying aggravating circumstance such as treachery supports exemplary damages; and the standard amounts change with jurisprudence, so check the latest guidelines for a new problem."
+      },
+      "keyPoints": [
+        "Civil indemnity increased to ₱75,000 and moral damages to ₱50,000 per prevailing jurisprudence",
+        "Exemplary damages of ₱30,000 under Art. 2230 because of treachery",
+        "Actual damages limited to the receipted ₱80,224",
+        "Loss of earning capacity of ₱1,755,420 under Art. 2206",
+        "6% interest on all damages from finality"
+      ],
+      "caseIds": [
+        "case-0052"
+      ],
+      "source": {
+        "caseTitle": "People v. Asilan",
+        "grNumber": "G.R. No. 188322",
+        "url": "https://lawphil.net/judjuris/juri2012/apr2012/gr_188322_2012.html",
+        "part": "Discussion, damages in murder qualified by treachery",
+        "excerpt": "Pursuant to prevailing jurisprudence, this Court is increasing the award of civil indemnity from Fifty Thousand Pesos (₱ 50,000.00) to Seventy-Five Thousand Pesos (₱ 75,000.00), and the moral damages from Twenty-Five Thousand Pesos (₱ 25,000.00) to Fifty Thousand Pesos (₱ 50,000.00). Moreover, in view of the presence of the qualifying circumstance of treachery, an additional award of Thirty Thousand Pesos (₱ 30,000.00), as exemplary damages, in accordance with Article 2230 of the Civil Code, should be awarded to the heirs of Adovas. As to actual damages, Adovas’s widow, Irene Adovas, presented the receipts showing that she paid ₱ 25,224.00 to Our Lady of Lourdes Hospital, Inc., as hospital expenses, ₱ 35,000.00 to Marulas Memorial Homes, and ₱ 20,000.00 to Funeraria Saranay as funeral expenses, or a total of ₱ 80,224.00."
+      }
+    },
+    {
+      "id": "q-0611",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Under Article 2206(1) of the Civil Code, as quoted in People v. Asilan, the indemnity for loss of earning capacity shall in every case be assessed and awarded by the court, unless",
+      "choices": {
+        "A": "the deceased was not yet employed at the time of death.",
+        "B": "the heirs did not appeal the trial court's decision.",
+        "C": "the defendant acted in good faith.",
+        "D": "the deceased, on account of permanent physical disability not caused by the defendant, had no earning capacity at the time of his death."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** Article 2206(1), as quoted, says the indemnity \"shall in every case be assessed and awarded by the court, unless the deceased on account of permanent physical disability not caused by the defendant, had no earning capacity at the time of his death.\" **A is wrong:** the article speaks of earning capacity, not current employment. **B is wrong:** in Asilan the Supreme Court itself awarded it although the lower courts had not. **C is wrong:** good faith is not an exception. **Bar trap:** the exception requires both a permanent disability and that it was not caused by the defendant.",
+      "caseIds": [
+        "case-0052"
+      ],
+      "source": {
+        "caseTitle": "People v. Asilan",
+        "grNumber": "G.R. No. 188322",
+        "url": "https://lawphil.net/judjuris/juri2012/apr2012/gr_188322_2012.html",
+        "part": "Discussion, Article 2206 (the exception)",
+        "excerpt": "(1) The defendant shall be liable for the loss of the earning capacity of the deceased, and the indemnity shall be paid to the heirs of the latter; such indemnity shall in every case be assessed and awarded by the court, unless the deceased on account of permanent physical disability not caused by the defendant, had no earning capacity at the time of his death;"
+      }
+    },
+    {
+      "id": "q-0612",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "In People v. Asilan, how is the net income of the deceased arrived at, for purposes of loss of earning capacity?",
+      "choices": {
+        "A": "By deducting the amount of the victim's living expenses from his gross income.",
+        "B": "By deducting taxes from his gross income.",
+        "C": "By taking his gross income without deduction.",
+        "D": "By averaging his income over his last three years."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court said: \"Net income is arrived at by deducting the amount of the victim's living expenses from the amount of his gross income,\" and deducted 50% of the gross annual income as living expenses: ₱103,260 − ₱51,630 = ₱51,630, times 34 years. **B, C and D are wrong:** none is the method stated. **Bar trap:** for a business owner, necessary business expenses are deducted too (Philippine Hawk v. Lee).",
+      "caseIds": [
+        "case-0052"
+      ],
+      "source": {
+        "caseTitle": "People v. Asilan",
+        "grNumber": "G.R. No. 188322",
+        "url": "https://lawphil.net/judjuris/juri2012/apr2012/gr_188322_2012.html",
+        "part": "Discussion, net income",
+        "excerpt": "Net income is arrived at by deducting the amount of the victim’s living expenses from the amount of his gross income."
+      }
+    },
+    {
+      "id": "q-0613",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "On what basis did the Court in People v. Asilan award exemplary damages to the heirs of the slain police officer?",
+      "choices": {
+        "A": "Because the victim was a person in authority.",
+        "B": "Because the accused denied the crime.",
+        "C": "Because of the presence of the qualifying circumstance of treachery, in accordance with Article 2230 of the Civil Code.",
+        "D": "Because exemplary damages are always awarded in murder."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court said: \"in view of the presence of the qualifying circumstance of treachery, an additional award of Thirty Thousand Pesos (₱30,000.00), as exemplary damages, in accordance with Article 2230 of the Civil Code, should be awarded.\" **A is wrong:** the Court did not rely on the victim's status (direct assault was not proved). **B and D are wrong:** neither was the basis. **Bar trap:** in criminal cases, exemplary damages follow the presence of an aggravating circumstance (here, a qualifying one).",
+      "caseIds": [
+        "case-0052"
+      ],
+      "source": {
+        "caseTitle": "People v. Asilan",
+        "grNumber": "G.R. No. 188322",
+        "url": "https://lawphil.net/judjuris/juri2012/apr2012/gr_188322_2012.html",
+        "part": "Discussion, exemplary damages",
+        "excerpt": "Moreover, in view of the presence of the qualifying circumstance of treachery, an additional award of Thirty Thousand Pesos (₱ 30,000.00), as exemplary damages, in accordance with Article 2230 of the Civil Code, should be awarded to the heirs of Adovas."
+      }
+    },
+    {
+      "id": "q-0614",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "The accused in People v. Asilan returned to the scene of the stabbing instead of fleeing. How did the Court treat this?",
+      "choices": {
+        "A": "As proof of his innocence.",
+        "B": "As not implying innocence: flight is indicative of guilt, but its converse is not necessarily true, since some culprits stay nearby to create a semblance of regularity.",
+        "C": "As a mitigating circumstance of voluntary surrender.",
+        "D": "As grounds to doubt the eyewitnesses."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court said his \"failure to flee and the apparent normalcy of his behavior subsequent to the commission of the crime do not imply his innocence,\" because \"[f]light is indicative of guilt, but its converse is not necessarily true. Culprits behave differently … while others may remain in the same vicinity so as to create a semblance of regularity.\" **A and D are wrong** for the same reason. **C is wrong:** he was arrested after being pointed out by a witness; no voluntary surrender was found. **Bar trap:** non-flight is not proof of innocence.",
+      "caseIds": [
+        "case-0052"
+      ],
+      "source": {
+        "caseTitle": "People v. Asilan",
+        "grNumber": "G.R. No. 188322",
+        "url": "https://lawphil.net/judjuris/juri2012/apr2012/gr_188322_2012.html",
+        "part": "Discussion, credibility of the evidence (flight)",
+        "excerpt": "In the same manner, it is also not surprising that Asilan returned to the scene of the crime after stabbing Adovas. His \"failure to flee and the apparent normalcy of his behavior subsequent to the commission of the crime do not imply his innocence.\" This Court, elucidating on this point, declared: Flight is indicative of guilt, but its converse is not necessarily true. Culprits behave differently and even erratically in externalizing and manifesting their guilt. Some may escape or flee -- a circumstance strongly illustrative of guilt -- while others may remain in the same vicinity so as to create a semblance of regularity, thereby avoiding suspicion from other members of the community."
+      }
+    },
+    {
+      "id": "q-0615",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "The accused in People v. Asilan argued for the first time on appeal that he could only be convicted of homicide because the Information did not specify how treachery was carried out. How did the Court rule?",
+      "choices": {
+        "A": "It reduced the crime to homicide.",
+        "B": "It remanded the case for amendment of the Information.",
+        "C": "It rejected the argument: treachery was specifically alleged, and in any case his failure to move to quash before pleading waived objections to the Information's sufficiency, the deficiency having been cured by evidence presented without objection.",
+        "D": "It held that qualifying circumstances need not be alleged at all."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court found that \"the qualifying circumstance of 'treachery' was specifically alleged in the Information,\" and that under Section 9, Rule 117, the failure to move to quash before pleading is a waiver of objections (save specified grounds); citing People v. Candaza, an Information lacking essential allegations may still sustain a conviction when the accused fails to object during trial and the deficiency is cured by competent evidence. **A and B are wrong** for those reasons. **D is wrong:** the Court reiterated that qualifying circumstances must be properly pleaded. **Bar trap:** object to a defective Information before pleading, or the objection is generally waived.",
+      "caseIds": [
+        "case-0052"
+      ],
+      "source": {
+        "caseTitle": "People v. Asilan",
+        "grNumber": "G.R. No. 188322",
+        "url": "https://lawphil.net/judjuris/juri2012/apr2012/gr_188322_2012.html",
+        "part": "Discussion, sufficiency of the Information",
+        "excerpt": "Contrary to Asilan’s contention, the qualifying circumstance of \"treachery\" was specifically alleged in the Information. \"The rule is that qualifying circumstances must be properly pleaded in the Information in order not to violate the accused’s constitutional right to be properly informed of the nature and cause of the accusation against him.\" … Moreover, in People v. Candaza, this Court held that \"[a]n Information which lacks essential allegations may still sustain a conviction when the accused fails to object to its sufficiency during the trial, and the deficiency was cured by competent evidence presented therein.\""
       }
     }
   ]
