@@ -151,6 +151,21 @@
       "ruling": "The petition was partly granted. Applying the Eastern Shipping rules, the unreceived profits earn 6% from the trial court's decision (October 7, 1997) to its finality (December 20, 2001), and then, with the added interest, 12% from finality until paid, as the award is by then equivalent to a forbearance of credit; the goodwill value and the damages and fees earn 12% from finality. But Chua's one-half share of the partnership assets was an unliquidated claim that earns no interest until reasonably determined: the norm is \"reasonably determinable\", not determinable by mathematical computation. Since the judgment itself required an accounting and inventory, his share became liquidated only when the trial court approved the accounting, so no interest attaches to it. Chua's claim was reduced to ₱5,529,392.52, and he must pay the excess of his ₱8 million bid. The obligation is solidary because the acts complained of were not severable, the duty to account was indivisible, and the petitioners resisted a legitimate claim in bad faith; and the absolute community may answer for debts contracted by one spouse to the extent the family benefited.",
       "keyDoctrine": "Interest does not run on an unliquidated claim until it is reasonably determinable, which is not the same as determinable by mathematical computation; a share that can be fixed only after an accounting becomes liquidated only when the accounting is approved. Under the Eastern Shipping rules, an award not involving a loan or forbearance earns 6% from the judgment, and from finality the award (with the interest added) earns the forbearance rate until satisfied. (The 12% rate was later lowered to 6% from July 1, 2013; check the current rate.)",
       "sourceUrl": "https://lawphil.net/judjuris/juri2008/jun2008/gr_164401_2008.html"
+    },
+    {
+      "id": "case-0058",
+      "status": "draft",
+      "name": "Air France Philippines/KLM Air France v. De Camilis",
+      "grNumber": "G.R. No. 188961",
+      "year": 2009,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "facts": "John Anthony de Camilis, on a pilgrimage in Europe with Air France tickets, was refused entry to Moscow for lack of a transit visa. He claimed that Air France agents then rudely denied his requests, reported him as a security threat (leading to police interrogations and the lifting of his flight coupons), refused to honor his confirmed flight from Rome to Paris, failed to check in his baggage so that he missed his connection, did not give the promised motel pass, and told him his confirmed flight to Manila was overbooked. He sued for breach of contract of carriage. The trial court awarded actual, moral and exemplary damages and attorney's fees. The Court of Appeals held that the passenger, not the airline, was responsible for the travel documents, but found the airline in bad faith for the poor service, verbal abuse and lack of respect by its agents; it reduced the actual and exemplary damages and imposed 6% interest from the extrajudicial demand, and 12% from finality.",
+      "issue": "(1) Can the Supreme Court review the award of damages and attorney's fees? (2) From when does the legal interest on the damages run?",
+      "ruling": "The Court denied the petition. Whether the passenger was entitled to damages and attorney's fees requires a review of the evidence, a question of fact; a Rule 45 petition is limited to questions of law, and none of the exceptions applied. Both lower courts laid down the factual and legal bases for their awards. On interest, following Eastern Shipping Lines, the 6% legal interest runs not from the extrajudicial demand but from April 25, 2007, when the trial court rendered its judgment, since that is when the quantification of damages may be deemed reasonably ascertained; from the finality of the decision, 12% applies until full satisfaction, on all sums awarded.",
+      "keyDoctrine": "For damages that cannot be established with reasonable certainty when demanded (such as moral and exemplary damages for breach of contract of carriage), the 6% legal interest runs from the date of the trial court's judgment, when the quantification of damages may be deemed reasonably ascertained, not from the extrajudicial demand; from finality, the higher rate applies until satisfaction. (The 12% rate was later lowered to 6% from July 1, 2013; check the current rate.) A Rule 45 petition raises only questions of law.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2009/oct2009/gr_188961_2009.html"
     }
   ],
   "questions": [
@@ -2453,6 +2468,236 @@
         "url": "https://lawphil.net/judjuris/juri2008/jun2008/gr_164401_2008.html",
         "part": "The Court's Ruling, the disposition",
         "excerpt": "In net effect, Chua owes petitioner Sunga-Chan the amount of PhP 2,470,607.48, representing the excess of the purchase price over his legitimate claims. … Therefore, subject to the payment by Chua of PhP 2,470,607.48 to petitioner Sunga-Chan, we affirm the RTC’s April 11, 2005 resolution, confirming the sheriff’s final deed of sale of the levied property, ordering the Registry of Deeds of Manila to cancel TCT No. 208782, and issuing a writ of possession in favor of Chua."
+      }
+    },
+    {
+      "id": "q-0656",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "A passenger sent an airline an extrajudicial demand on August 1, 2003 for damages for breach of contract of carriage. The trial court, in its judgment of April 25, 2007, awarded him actual damages, ₱1 million moral damages, exemplary damages and attorney's fees. The Court of Appeals imposed 6% legal interest from the date of the extrajudicial demand. The airline argues that interest should run only from the trial court's judgment. Is the airline correct? Explain, citing Air France v. De Camilis.",
+      "suggestedAnswer": {
+        "answer": "Yes. The 6% legal interest runs from April 25, 2007, the date of the trial court's judgment, not from the extrajudicial demand; from the finality of the decision, the higher rate applies until full satisfaction.",
+        "legalBasis": "In Air France v. De Camilis, the Court applied Eastern Shipping Lines: for an obligation not constituting a loan or forbearance, no interest is adjudged on unliquidated claims or damages except when or until the demand can be established with reasonable certainty; when such certainty cannot be established at the time of demand, interest runs only from the date of the judgment. The Court held that the interest \"shall be reckoned from April 25, 2007 when the RTC rendered its judgment, not from the time of respondent's extrajudicial demand. This must be so as it was at the time the RTC rendered its judgment that the quantification of damages may be deemed to have been reasonably ascertained.\"",
+        "application": "The passenger's claims for moral and exemplary damages and attorney's fees could not be fixed with reasonable certainty when he made his demand; their amounts were set only when the trial court decided. So interest runs from that judgment, on all sums awarded.",
+        "conclusion": "The airline is correct on the starting date. **Bar trap:** the date of the extrajudicial demand applies only when the amount was already reasonably certain then; damages left to the court's discretion become certain only on judgment. Note too that the 12% rate after finality was later lowered to 6% from July 1, 2013; check the current rate."
+      },
+      "keyPoints": [
+        "Breach of contract of carriage: not a loan or forbearance, so 6%",
+        "No interest on unliquidated damages until they can be established with reasonable certainty",
+        "Here the damages were reasonably ascertained only when the trial court rendered judgment",
+        "Interest runs from the trial court's judgment, not from the extrajudicial demand",
+        "From finality, the higher rate until full satisfaction, on all sums awarded"
+      ],
+      "caseIds": [
+        "case-0058"
+      ],
+      "source": {
+        "caseTitle": "Air France Philippines/KLM Air France v. De Camilis",
+        "grNumber": "G.R. No. 188961",
+        "url": "https://lawphil.net/judjuris/juri2009/oct2009/gr_188961_2009.html",
+        "part": "Resolution, discussion of the legal interest",
+        "excerpt": "Pursuant to this ruling, the legal interest is 6% p.a. and it shall be reckoned from April 25, 2007 when the RTC rendered its judgment, not from the time of respondent’s extrajudicial demand. This must be so as it was at the time the RTC rendered its judgment that the quantification of damages may be deemed to have been reasonably ascertained. Then, from the time this decision becomes final and executory, the interest rate shall be 12% p.a. until full satisfaction."
+      }
+    },
+    {
+      "id": "q-0657",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "A passenger was refused entry at a transit stop because he did not have the required transit visa. He sues the airline, claiming that its agents should have told him about the visa. The evidence also shows that, afterwards, the airline's agents rudely refused his requests, falsely reported him as a security threat, refused to honor his confirmed flights and treated him with verbal abuse. Is the airline liable? Explain, citing Air France v. De Camilis.",
+      "suggestedAnswer": {
+        "answer": "The airline is not liable for the refused entry, because the passenger is responsible for having the correct travel documents; but it is liable for damages for the bad-faith treatment by its agents.",
+        "legalBasis": "In Air France v. De Camilis, the Court of Appeals ruled that it was the passenger, and not the airline, who was responsible for having the correct travel documents, but that this did not absolve the airline from liability for damages. It found that the airline's agents \"repeatedly subjected respondent to very poor service, verbal abuse and abject lack of respect and consideration,\" so the airline was guilty of bad faith. It therefore charged the passenger with his expenses for the Moscow leg, but held the airline liable for his expenses from the false security-threat report to the dishonored Paris-Manila reservation, and affirmed moral damages and attorney's fees. The Supreme Court denied the airline's petition.",
+        "application": "The missing visa is the passenger's own fault, so his losses from being refused entry are his. But the later abuse by the airline's agents is the airline's breach, committed in bad faith, and supports actual damages for the expenses it caused, as well as moral and exemplary damages.",
+        "conclusion": "Liable, but only for the consequences of its agents' bad faith. **Bar trap:** the passenger's fault on one point does not excuse the carrier's separate bad-faith acts; separate the losses by cause."
+      },
+      "keyPoints": [
+        "The passenger is responsible for having the correct travel documents",
+        "That did not absolve the airline from liability for damages",
+        "Very poor service, verbal abuse and lack of respect by its agents = bad faith",
+        "Actual damages limited to expenses caused by the airline's acts; the Moscow leg borne by the passenger",
+        "Moral damages and attorney's fees affirmed"
+      ],
+      "caseIds": [
+        "case-0058"
+      ],
+      "source": {
+        "caseTitle": "Air France Philippines/KLM Air France v. De Camilis",
+        "grNumber": "G.R. No. 188961",
+        "url": "https://lawphil.net/judjuris/juri2009/oct2009/gr_188961_2009.html",
+        "part": "Resolution, statement of the Court of Appeals' ruling on liability",
+        "excerpt": "The CA ruled that it was respondent (as passenger), and not AF, who was responsible for having the correct travel documents. However, the appellate court stated that this fact did not absolve AF from liability for damages. The CA agreed with the findings of fact of the RTC that AF’s agents and representatives repeatedly subjected respondent to very poor service, verbal abuse and abject lack of respect and consideration. As such, AF was guilty of bad faith for which respondent ought to be compensated. The appellate court affirmed the award of ₱1 million moral damages and ₱300,000 attorney’s fees. However, it reduced the actual damages to US$906 (or its peso equivalent). According to the CA, this amount represented the expenses respondent incurred from the time he was unable to join his group in Rome (due to the unfounded \"communiqué\" of Ms. Soeyesol that he was a security threat) up to the time his flight reservation from Paris to Manila was dishonored for which he was forced to stay in Paris for two additional days. The appellate court pointed out that, on the other hand, respondent’s expenses for the Moscow leg of the trip must be borne by him as AF could not be faulted when he was refused entry to Moscow for lack of a transit visa."
+      }
+    },
+    {
+      "id": "q-0658",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Losing on appeal, an airline files a petition for review on certiorari under Rule 45, arguing that the passenger's injury was not clearly established and that the moral and exemplary damages and attorney's fees awarded are exorbitant. Will the Supreme Court review the awards? Explain, citing Air France v. De Camilis.",
+      "suggestedAnswer": {
+        "answer": "No. Whether the passenger is entitled to the damages and attorney's fees requires a review of the evidence, which is a question of fact outside a Rule 45 petition, absent any of the recognized exceptions.",
+        "legalBasis": "In Air France v. De Camilis, the Court held that the issue of entitlement to damages and attorney's fees \"entails a resort to the parties' respective evidence,\" so the airline was asking the Court to consider a question of fact. The jurisdiction of the Court in a Rule 45 petition is limited to questions of law, save for certain exceptions, none of which was present. Both the trial court and the Court of Appeals had properly laid down the factual and legal bases for their decisions.",
+        "application": "The airline's attack on whether the injury was proved, and on the amounts, depends on weighing the evidence. Since the lower courts stated the factual and legal bases of the awards and no exception applies, the Court would not disturb them.",
+        "conclusion": "The petition fails on this point; only the interest was clarified. **Bar trap:** a Rule 45 petition cannot be used to re-weigh the evidence on damages; the lower courts' stated bases also distinguish this from an unexplained award of attorney's fees."
+      },
+      "keyPoints": [
+        "Entitlement to damages and attorney's fees requires a resort to the evidence: a question of fact",
+        "Rule 45 is limited to questions of law, save for certain exceptions",
+        "No exception was present",
+        "The lower courts laid down the factual and legal bases for their awards"
+      ],
+      "caseIds": [
+        "case-0058"
+      ],
+      "source": {
+        "caseTitle": "Air France Philippines/KLM Air France v. De Camilis",
+        "grNumber": "G.R. No. 188961",
+        "url": "https://lawphil.net/judjuris/juri2009/oct2009/gr_188961_2009.html",
+        "part": "Resolution, discussion of the entitlement to damages",
+        "excerpt": "Preliminarily, on the issue pertaining to whether or not respondent was entitled to damages and attorney’s fees, the same entails a resort to the parties’ respective evidence. Thus, AF is clearly asking us to consider a question of fact. Time and again, we have held that the jurisdiction of this Court in a petition for review on certiorari under Rule 45 is limited only to questions of law, save for certain exceptions, none of which are present in this case. Both the RTC and the CA have competently ruled on the issue of respondent’s entitlement to damages and attorney’s fees as they properly laid down both the factual and legal bases for their respective decisions. We see no reason to disturb their findings."
+      }
+    },
+    {
+      "id": "q-0659",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "In Air France v. De Camilis, why did the Court reckon the 6% legal interest from the date of the trial court's judgment instead of the extrajudicial demand?",
+      "choices": {
+        "A": "Because the passenger made no extrajudicial demand.",
+        "B": "Because it was at the time the trial court rendered judgment that the quantification of damages may be deemed to have been reasonably ascertained.",
+        "C": "Because interest on damages for breach of contract always runs from the filing of the complaint.",
+        "D": "Because the obligation was a forbearance of money."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court said the interest runs from the trial court's judgment, \"not from the time of respondent's extrajudicial demand. This must be so as it was at the time the RTC rendered its judgment that the quantification of damages may be deemed to have been reasonably ascertained.\" **A is wrong:** there was an extrajudicial demand (August 1, 2003). **C is wrong:** there is no such rule. **D is wrong:** a breach of contract of carriage is not a forbearance, which is why 6% applied. **Bar trap:** the answer turns on when the amount became reasonably certain.",
+      "caseIds": [
+        "case-0058"
+      ],
+      "source": {
+        "caseTitle": "Air France Philippines/KLM Air France v. De Camilis",
+        "grNumber": "G.R. No. 188961",
+        "url": "https://lawphil.net/judjuris/juri2009/oct2009/gr_188961_2009.html",
+        "part": "Resolution, discussion of the legal interest",
+        "excerpt": "Pursuant to this ruling, the legal interest is 6% p.a. and it shall be reckoned from April 25, 2007 when the RTC rendered its judgment, not from the time of respondent’s extrajudicial demand. This must be so as it was at the time the RTC rendered its judgment that the quantification of damages may be deemed to have been reasonably ascertained."
+      }
+    },
+    {
+      "id": "q-0660",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "In Air France v. De Camilis, who was held responsible for having the correct travel documents, such as a transit visa?",
+      "choices": {
+        "A": "The airline, as the common carrier.",
+        "B": "The airline's agent in Paris.",
+        "C": "The passenger.",
+        "D": "The tour organizer of the pilgrimage."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court of Appeals \"ruled that it was respondent (as passenger), and not AF, who was responsible for having the correct travel documents,\" so his expenses for the Moscow leg were his own. **A and B are wrong:** the airline could not be faulted for his refused entry. **D is wrong:** no such ruling was made. **Bar trap:** this did not absolve the airline from damages for its agents' bad faith.",
+      "caseIds": [
+        "case-0058"
+      ],
+      "source": {
+        "caseTitle": "Air France Philippines/KLM Air France v. De Camilis",
+        "grNumber": "G.R. No. 188961",
+        "url": "https://lawphil.net/judjuris/juri2009/oct2009/gr_188961_2009.html",
+        "part": "Resolution, statement of the Court of Appeals' ruling on liability",
+        "excerpt": "The CA ruled that it was respondent (as passenger), and not AF, who was responsible for having the correct travel documents. However, the appellate court stated that this fact did not absolve AF from liability for damages."
+      }
+    },
+    {
+      "id": "q-0661",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "In Air France v. De Camilis, the airline was found guilty of bad faith because",
+      "choices": {
+        "A": "it failed to inform the passenger of the need for a transit visa.",
+        "B": "its agents and representatives repeatedly subjected the passenger to very poor service, verbal abuse and abject lack of respect and consideration.",
+        "C": "it charged the passenger for excess baggage.",
+        "D": "its flight was delayed by bad weather."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court of Appeals agreed with the trial court that the airline's \"agents and representatives repeatedly subjected respondent to very poor service, verbal abuse and abject lack of respect and consideration. As such, AF was guilty of bad faith.\" **A is wrong:** the passenger was responsible for his travel documents. **C and D are wrong:** neither was in the case. **Bar trap:** bad faith here came from the agents' treatment of the passenger, not from the visa problem.",
+      "caseIds": [
+        "case-0058"
+      ],
+      "source": {
+        "caseTitle": "Air France Philippines/KLM Air France v. De Camilis",
+        "grNumber": "G.R. No. 188961",
+        "url": "https://lawphil.net/judjuris/juri2009/oct2009/gr_188961_2009.html",
+        "part": "Resolution, statement of the Court of Appeals' ruling on liability",
+        "excerpt": "The CA agreed with the findings of fact of the RTC that AF’s agents and representatives repeatedly subjected respondent to very poor service, verbal abuse and abject lack of respect and consideration. As such, AF was guilty of bad faith for which respondent ought to be compensated."
+      }
+    },
+    {
+      "id": "q-0662",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "In Air France v. De Camilis, which expenses were covered by the award of actual damages of US$906?",
+      "choices": {
+        "A": "All of the passenger's expenses for the whole pilgrimage.",
+        "B": "Only his expenses for the Moscow leg of the trip.",
+        "C": "The expenses from the time he could not join his group in Rome, because of the unfounded report that he was a security threat, until his Paris-Manila reservation was dishonored and he had to stay two more days in Paris.",
+        "D": "Only the cost of his ticket."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court of Appeals reduced the actual damages to US$906, representing \"the expenses respondent incurred from the time he was unable to join his group in Rome (due to the unfounded 'communiqué' of Ms. Soeyesol that he was a security threat) up to the time his flight reservation from Paris to Manila was dishonored.\" **A is wrong:** the award was limited to losses the airline caused. **B is wrong:** the Moscow expenses were borne by him. **D is wrong:** the ticket was not the measure. **Bar trap:** actual damages cover only the loss caused by the defendant's breach.",
+      "caseIds": [
+        "case-0058"
+      ],
+      "source": {
+        "caseTitle": "Air France Philippines/KLM Air France v. De Camilis",
+        "grNumber": "G.R. No. 188961",
+        "url": "https://lawphil.net/judjuris/juri2009/oct2009/gr_188961_2009.html",
+        "part": "Resolution, statement of the Court of Appeals' ruling on actual damages",
+        "excerpt": "However, it reduced the actual damages to US$906 (or its peso equivalent). According to the CA, this amount represented the expenses respondent incurred from the time he was unable to join his group in Rome (due to the unfounded \"communiqué\" of Ms. Soeyesol that he was a security threat) up to the time his flight reservation from Paris to Manila was dishonored for which he was forced to stay in Paris for two additional days."
+      }
+    },
+    {
+      "id": "q-0663",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "What did the Court order in Air France v. De Camilis?",
+      "choices": {
+        "A": "Legal interest of 6% a year from the trial court's decision of April 25, 2007, and 12% from finality of the Supreme Court's decision, on all sums awarded until full satisfaction.",
+        "B": "Legal interest of 6% a year from the extrajudicial demand until full payment.",
+        "C": "Legal interest of 12% a year from the filing of the complaint.",
+        "D": "No interest at all, since the damages were unliquidated."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court affirmed the Court of Appeals and ordered the airline to \"PAY legal interest of 6% p.a. from the date of promulgation of the decision dated April 25, 2007 of the Regional Trial Court ... and 12% p.a. from the time the decision of this Court attains finality, on all sums awarded until their full satisfaction.\" **B is wrong:** that was the Court of Appeals' reckoning, which the Court corrected. **C is wrong:** neither the rate nor the date applied. **D is wrong:** unliquidated damages earn interest once reasonably ascertained, at the latest from the judgment. **Bar trap:** two periods, two rates (the 12% was later lowered to 6% from July 1, 2013).",
+      "caseIds": [
+        "case-0058"
+      ],
+      "source": {
+        "caseTitle": "Air France Philippines/KLM Air France v. De Camilis",
+        "grNumber": "G.R. No. 188961",
+        "url": "https://lawphil.net/judjuris/juri2009/oct2009/gr_188961_2009.html",
+        "part": "Resolution, the disposition",
+        "excerpt": "Petitioner is ordered to PAY legal interest of 6% p.a. from the date of promulgation of the decision dated April 25, 2007 of the Regional Trial Court, Branch 59, Makati City and 12% p.a. from the time the decision of this Court attains finality, on all sums awarded until their full satisfaction."
       }
     }
   ]
