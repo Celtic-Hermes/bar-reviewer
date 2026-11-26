@@ -15,7 +15,8 @@
       "topic": "Damages",
       "file": "data/content/civil-law/damages.json",
       "subtopics": [
-        {"name": "Introductory Concepts", "rule": "G.R. No. 191033", "essay": ["q-0576", "q-0577", "q-0578"], "mcq": ["q-0579", "q-0580", "q-0581", "q-0582", "q-0583"], "fillblank": []}
+        {"name": "Introductory Concepts", "rule": "G.R. No. 191033", "essay": ["q-0576", "q-0577", "q-0578"], "mcq": ["q-0579", "q-0580", "q-0581", "q-0582", "q-0583"], "fillblank": []},
+        {"name": "Actual or Compensatory Damages", "rule": "G.R. No. 132252", "essay": ["q-0584", "q-0585", "q-0586"], "mcq": ["q-0587", "q-0588", "q-0589", "q-0590", "q-0591"], "fillblank": []}
       ]
     },
     {
@@ -111,7 +112,8 @@
     {"id": "case-0045", "name": "Sanggacala, et al. v. National Power Corporation", "grNumber": "G.R. No. 209538", "year": 2021, "subject": "Civil Law", "topic": "Torts and Quasi-delicts", "subtopic": "Environmental Tort", "status": "draft", "questions": ["q-0552", "q-0553", "q-0554", "q-0555", "q-0556", "q-0557", "q-0558", "q-0559"]},
     {"id": "case-0046", "name": "Versoza v. People, et al.", "grNumber": "G.R. No. 184535", "year": 2019, "subject": "Civil Law", "topic": "Torts and Quasi-delicts", "subtopic": "Privacy Torts", "status": "draft", "questions": ["q-0560", "q-0561", "q-0562", "q-0563", "q-0564", "q-0565", "q-0566", "q-0567"]},
     {"id": "case-0047", "name": "Kilusang Mayo Uno, et al. v. Director-General, NEDA, et al.", "grNumber": "G.R. No. 167798", "year": 2006, "subject": "Civil Law", "topic": "Torts and Quasi-delicts", "subtopic": "Privacy Torts", "status": "draft", "questions": ["q-0568", "q-0569", "q-0570", "q-0571", "q-0572", "q-0573", "q-0574", "q-0575"]},
-    {"id": "case-0048", "name": "The Orchard Golf & Country Club, Inc., et al. v. Yu and Yuhico", "grNumber": "G.R. No. 191033", "year": 2016, "subject": "Civil Law", "topic": "Damages", "subtopic": "Introductory Concepts", "status": "draft", "questions": ["q-0576", "q-0577", "q-0578", "q-0579", "q-0580", "q-0581", "q-0582", "q-0583"]}
+    {"id": "case-0048", "name": "The Orchard Golf & Country Club, Inc., et al. v. Yu and Yuhico", "grNumber": "G.R. No. 191033", "year": 2016, "subject": "Civil Law", "topic": "Damages", "subtopic": "Introductory Concepts", "status": "draft", "questions": ["q-0576", "q-0577", "q-0578", "q-0579", "q-0580", "q-0581", "q-0582", "q-0583"]},
+    {"id": "case-0049", "name": "People v. Muyco", "grNumber": "G.R. No. 132252", "year": 2000, "subject": "Civil Law", "topic": "Damages", "subtopic": "Actual or Compensatory Damages", "status": "draft", "questions": ["q-0584", "q-0585", "q-0586", "q-0587", "q-0588", "q-0589", "q-0590", "q-0591"]}
   ],
   "rules": [
     {"id": "rule-0001", "title": "The Rule on the Writ of Amparo", "number": "A.M. No. 07-9-12-SC", "status": "draft", "subject": "Remedial Law", "topic": "Special Proceedings"},

@@ -16,6 +16,21 @@
       "ruling": "The Court granted the petition, dismissed the complaints and ordered Yu and Yuhico to return the ₱9,200,000. (1) The rules on the period to appeal are generally inviolable, but may be relaxed to serve substantial justice, especially where the appeal appears meritorious or there are compelling reasons; here the delay was only seven days, the club candidly admitted its mistake, A.M. No. 04-9-07-SC itself allows extensions, and there was no material prejudice. (2) On the merits, the members admitted violating the club's rules, were given notice and opportunity to be heard, and were validly suspended under the by-laws. Their claimed damages were supported only by self-serving declarations. Any damage was damnum absque injuria: injury is the illegal invasion of a legal right, damage is the resulting loss, and damages are the compensation; there must be both a legal wrong and resulting damage. One who makes use of his own legal right does no injury (qui jure suo utitur nullum damnum facit), and the mental anguish, if any, was self-inflicted.",
       "keyDoctrine": "Damages are the recompense or compensation awarded for the damage suffered; damage is the loss, hurt or harm resulting from the injury; injury is the illegal invasion of a legal right. To recover damages there must be both a right of action for a legal wrong inflicted by the defendant and damage resulting from it (damnum et injuria). Damage without injury (damnum absque injuria) is not compensable, and one who makes use of his own legal right does no injury. Procedural rules on appeal periods may be relaxed to serve substantial justice.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2016/jan2016/gr_191033_2016.html"
+    },
+    {
+      "id": "case-0049",
+      "status": "draft",
+      "name": "People v. Muyco",
+      "grNumber": "G.R. No. 132252",
+      "year": 2000,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "facts": "On the night of May 13, 1995, cousins Jesus and Arnulfo Muyco were drinking with Romeo Boteja, Jr., 19, and Romeo's uncle Ernesto under a mango tree in Cabatuan, Iloilo. Arnulfo suddenly grabbed Romeo's hands and Jesus stabbed him below the collarbone, killing him. Ernesto, frozen with shock, later fled. Only Jesus was caught. He raised alibi, saying he was in Passi, Iloilo, some 50 kilometers away. The trial court convicted him of murder, sentenced him to reclusion perpetua, and ordered him to pay ₱30,000 death indemnity and ₱27,000 funeral expenses, but awarded nothing for loss of earning capacity although the victim's mother testified that he earned ₱1,600 a month as a farm laborer.",
+      "issue": "(1) Was the conviction for murder proper? (2) Are the heirs entitled to damages for the victim's loss of earning capacity, and how much?",
+      "ruling": "The Court affirmed the conviction with modifications. The eyewitness's failure to react was understandable, since people react differently to startling events, and minor discrepancies strengthen rather than destroy credibility. Alibi failed against positive identification, especially as it was not shown to be physically impossible for the accused to be at the scene. Treachery was present. On damages, the death indemnity was increased to ₱50,000, and the Court awarded loss of earning capacity: following People v. Dizon, documentary evidence is the rule, but testimony suffices when the victim was self-employed or a daily wage worker earning less than the minimum wage. Using the formula 2/3 (80 − age at death) × (gross annual income − 80% of gross annual income), the heirs of the 19-year-old victim were awarded ₱156,172.80.",
+      "keyDoctrine": "Lost earnings are computed as: net earning capacity = 2/3 × (80 − age at time of death) × (gross annual income − living expenses of 80% of gross annual income). Documentary evidence is generally required to prove loss of earning capacity, but testimony suffices when the victim was self-employed or a daily wage worker earning less than the minimum wage. Alibi must show physical impossibility of being at the crime scene.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2000/apr2000/gr_132252_2000.html"
     }
   ],
   "questions": [
@@ -247,6 +262,234 @@
         "url": "https://lawphil.net/judjuris/juri2016/jan2016/gr_191033_2016.html",
         "part": "Decision, the evidence of damage",
         "excerpt": "With regard to the purported damages they incurred, respondents testified during the trial to support their respective allegations. Yuhico stated that he distanced himself from his usual group (the \"Alabang Boys\") and that he became the butt of jokes of fellow golfers. On the other hand, Yu represented that some of his friends in the business like Freddy Lim, a certain Atty. Benjie, and Jun Ramos started to evade or refuse to have dealings with him after his suspension. Apart from these self-serving declarations, respondents presented neither testimonial nor documentary evidence to bolster their claims. Worse, Yu even admitted that Freddy Lim and Atty. Benjie did not tell him that his suspension was the reason why they did not want to transact with him."
+      }
+    },
+    {
+      "id": "q-0584",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Rico, 25 years old, was killed. His mother testified that he earned ₱10,000 a month as a farm laborer. Following the formula applied in People v. Muyco, how much should be awarded to his heirs for loss of earning capacity? Show the computation.",
+      "suggestedAnswer": {
+        "answer": "₱880,080.00. Net earning capacity = 2/3 × (80 − age at death) × (gross annual income − 80% of gross annual income).",
+        "legalBasis": "In People v. Muyco, the Court computed lost earnings using the formula 2/3 (80 − ATD [age at time of death]) × (GAI [gross annual income]) − 80% GAI, deducting 80% of the gross annual income, and awarded the heirs of a 19-year-old farm laborer earning ₱1,600 a month ₱156,172.80.",
+        "application": "Life expectancy: 2/3 × (80 − 25) = 2/3 × 55 = 36.67 years. Gross annual income: ₱10,000 × 12 = ₱120,000. Less 80% (₱96,000) leaves ₱24,000. Net: 36.67 × ₱24,000 = ₱880,080.00.",
+        "conclusion": "The heirs are entitled to ₱880,080.00 for loss of earning capacity. **Bar trap:** do not multiply by the full gross annual income; deduct the 80% first (as Muyco did), and use the victim's age at death, not his age at trial."
+      },
+      "keyPoints": [
+        "Formula: 2/3 × (80 − age at death) × (gross annual income − 80% of gross annual income)",
+        "2/3 × (80 − 25) = 36.67",
+        "Gross annual income ₱120,000; net after 80% deduction ₱24,000",
+        "36.67 × ₱24,000 = ₱880,080.00"
+      ],
+      "caseIds": [
+        "case-0049"
+      ],
+      "source": {
+        "caseTitle": "People v. Muyco",
+        "grNumber": "G.R. No. 132252",
+        "url": "https://lawphil.net/judjuris/juri2000/apr2000/gr_132252_2000.html",
+        "part": "Decision, award for loss of earning capacity (the formula)",
+        "excerpt": "In the instant case, the victim was nineteen (19) years old at the time of his death and earning P1,600.00 monthly as a farm laborer. Thus, his heirs are entitled to receive an award for lost earnings in accordance with the following formula: 2/3 (80 - ATD [age at time of death]) x (GAI [gross annual income]) - 80% GAI. Thus — 2/3 (80-19) x (P1,600 x 12) - 80% (P1,600.00 x 12) 2/3 (61) x P19,200 - 80% (P19,200) 40.67 x [P19,200 - P15,360] 40.67 x P3,840 = P156,172.80 =========="
+      }
+    },
+    {
+      "id": "q-0585",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "In a murder case, the heirs claim damages for the victim's loss of earning capacity but present no documentary evidence, only the testimony of the victim's mother that he earned ₱1,600 a month as a farm laborer. May the court award damages for loss of earning capacity? Explain.",
+      "suggestedAnswer": {
+        "answer": "Yes. As a rule, documentary evidence is needed to substantiate a claim for loss of earning capacity, but oral testimony suffices when the victim was self-employed earning less than the minimum wage, in a line of work where no documentary evidence is available, or was employed as a daily wage worker earning less than the minimum wage.",
+        "legalBasis": "In People v. Muyco, the Court quoted People v. Dizon: documentary evidence should be presented as a rule, but testimony as to the victim's earnings has sufficed (as in People v. Verde); to claim the damages without documentary evidence there must be oral testimony that (a) the victim was self-employed earning less than the minimum wage and judicial notice was taken that in the victim's line of work no documentary evidence is available, or (b) the victim was employed as a daily wage worker earning less than the minimum wage. In Muyco itself the Court found that the trial court failed to award these damages despite the mother's testimony, and awarded them.",
+        "application": "The victim was a farm laborer earning ₱1,600 a month, the kind of low-wage work where receipts are not usually available, and his mother testified to his earnings. That testimony is a sufficient basis for the award.",
+        "conclusion": "The court may award damages for loss of earning capacity based on the testimony. **Bar trap:** the exception is limited to low earners (below minimum wage) and lines of work without documentary records; a professional with higher income must ordinarily present documentary proof."
+      },
+      "keyPoints": [
+        "General rule: documentary evidence is needed for loss of earning capacity",
+        "Exception: oral testimony suffices for a self-employed victim earning below minimum wage in work without available documents",
+        "Or for a daily wage worker earning below minimum wage",
+        "In Muyco, the mother's testimony that her son earned ₱1,600 a month as a farm laborer sufficed"
+      ],
+      "caseIds": [
+        "case-0049"
+      ],
+      "source": {
+        "caseTitle": "People v. Muyco",
+        "grNumber": "G.R. No. 132252",
+        "url": "https://lawphil.net/judjuris/juri2000/apr2000/gr_132252_2000.html",
+        "part": "Decision, award for loss of earning capacity (proof required, citing People v. Dizon)",
+        "excerpt": "On the other hand, this Court notes that the trial court failed to award damages for loss of earning capacity despite the testimony of Leticia Boteja to this effect. In People v. Dizon this Court discussed the requisites for such award — As a rule, documentary evidence should be presented to substantiate the claim for loss of earning capacity. … To be able to claim damages for loss of earning capacity despite the nonavailability of documentary evidence, there must be oral testimony that: (a) the victim was self-employed earning less than the minimum wage under the current labor laws and judicial notice was taken of the fact that in the victim's line of work, no documentary evidence is available; (b) the victim was employed as a daily wage worker earning less than the minimum wage under current labor laws. . ."
+      }
+    },
+    {
+      "id": "q-0586",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "The only eyewitness to a stabbing, the victim's uncle, testified that he just stood frozen while his nephew was stabbed a meter away and was dragged off, and that the wound was on the neck, while the autopsy placed it just below the collarbone. The accused, positively identified by the witness, claims he was in another town 50 kilometers away. Should the accused be acquitted? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. The witness's failure to react does not make his testimony incredible, the discrepancy on the location of the wound is minor, and the alibi fails against positive identification, especially as physical impossibility of being at the scene was not shown.",
+        "legalBasis": "In People v. Muyco, the Court held that different people react differently to a startling or frightful experience; there is no standard behavior, and a witness's inability to move, help or run is not a ground to doubt his testimony. Discrepancies in minor details strengthen credibility, as they erase any suspicion of rehearsed testimony. Alibi cannot prevail over positive identification, and it is weaker still when the accused fails to show that it was physically impossible for him to be at the crime scene.",
+        "application": "The uncle was stunned, it being his first time to see a stabbing. To a layman, the neck and the collarbone are practically the same place. The other town was only 50 kilometers away, and no evidence showed it was impossible to travel to the crime scene; the witness had no ill motive to lie.",
+        "conclusion": "The accused should be convicted. **Bar trap:** \"he would have shouted or helped\" is not a test of credibility; and alibi requires physical impossibility, not mere distance."
+      },
+      "keyPoints": [
+        "No standard human reaction to a startling event; freezing does not impair credibility",
+        "Minor inconsistencies strengthen credibility and negate rehearsal",
+        "Positive identification by a witness without ill motive prevails over alibi",
+        "Alibi requires proof of physical impossibility of being at the scene"
+      ],
+      "caseIds": [
+        "case-0049"
+      ],
+      "source": {
+        "caseTitle": "People v. Muyco",
+        "grNumber": "G.R. No. 132252",
+        "url": "https://lawphil.net/judjuris/juri2000/apr2000/gr_132252_2000.html",
+        "part": "Decision, credibility of the eyewitness and the defense of alibi",
+        "excerpt": "We disagree. Different people react differently to a given type of situation. There is no standard form of human behavioral response when one is confronted with a strange, startling or frightful experience. … A witness' inability to move, help or even to run away when the incident occurs is not a ground to label his testimony as doubtful and unworthy of belief. … Inconsistencies and discrepancies in the testimony of a witness on minor details only serve to strengthen the credibility of the witness. … Weak as it was, accused-appellant's alibi became all the more ineffectual when he failed to demonstrate that it was physically impossible for him to be at the crime scene at the time it was committed. He testified being in Passi, Iloilo, during the stabbing incident. Passi, Iloilo is only fifty (50) kilometers from Cabatuan, Iloilo, the place where the crime was committed. He did not offer any evidence to prove impossibility of access between the two (2) places when the crime transpired."
+      }
+    },
+    {
+      "id": "q-0587",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Which formula did the Court apply in People v. Muyco to compute the heirs' award for the victim's lost earnings?",
+      "choices": {
+        "A": "(80 − age at death) × gross annual income.",
+        "B": "2/3 × (80 − age at time of death) × (gross annual income − 80% of gross annual income).",
+        "C": "2/3 × (60 − age at time of death) × monthly income.",
+        "D": "(Retirement age − age at death) × net monthly income × 12."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court used \"2/3 (80 - ATD [age at time of death]) x (GAI [gross annual income]) - 80% GAI,\" computing for the 19-year-old victim: 2/3 (61) = 40.67, multiplied by ₱19,200 less 80% (₱15,360), or ₱3,840, for ₱156,172.80. **A is wrong:** it omits both the 2/3 factor and the deduction of living expenses. **C and D are wrong:** neither is the formula used. **Bar trap:** 2/3 × (80 − age) gives the life expectancy; the 80% deduction represents living expenses, leaving net income.",
+      "caseIds": [
+        "case-0049"
+      ],
+      "source": {
+        "caseTitle": "People v. Muyco",
+        "grNumber": "G.R. No. 132252",
+        "url": "https://lawphil.net/judjuris/juri2000/apr2000/gr_132252_2000.html",
+        "part": "Decision, the formula for lost earnings",
+        "excerpt": "Thus, his heirs are entitled to receive an award for lost earnings in accordance with the following formula: 2/3 (80 - ATD [age at time of death]) x (GAI [gross annual income]) - 80% GAI. Thus — 2/3 (80-19) x (P1,600 x 12) - 80% (P1,600.00 x 12) 2/3 (61) x P19,200 - 80% (P19,200) 40.67 x [P19,200 - P15,360] 40.67 x P3,840 = P156,172.80 =========="
+      }
+    },
+    {
+      "id": "q-0588",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "In People v. Muyco, the victim was 19 years old and earned ₱1,600 a month. What figure did the Court use for his life expectancy factor, and what did it deduct from his gross annual income of ₱19,200?",
+      "choices": {
+        "A": "61 years; it deducted nothing.",
+        "B": "80 years; it deducted ₱3,840.",
+        "C": "40.67 years; it deducted 20% (₱3,840).",
+        "D": "40.67 years, that is, 2/3 × (80 − 19); it deducted 80% (₱15,360), leaving ₱3,840."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The Court computed 2/3 (80 − 19) = 2/3 (61) = 40.67, and \"40.67 x [P19,200 - P15,360] … 40.67 x P3,840 = P156,172.80.\" **A is wrong:** 61 is 80 minus the age, before taking two-thirds, and 80% was deducted. **B is wrong:** 80 is the base, not the factor, and ₱3,840 is what remained. **C is wrong:** the deduction was 80%, not 20%. **Bar trap:** remember which number is deducted (80%) and which remains (20%).",
+      "caseIds": [
+        "case-0049"
+      ],
+      "source": {
+        "caseTitle": "People v. Muyco",
+        "grNumber": "G.R. No. 132252",
+        "url": "https://lawphil.net/judjuris/juri2000/apr2000/gr_132252_2000.html",
+        "part": "Decision, the formula for lost earnings (computation)",
+        "excerpt": "2/3 (80-19) x (P1,600 x 12) - 80% (P1,600.00 x 12) 2/3 (61) x P19,200 - 80% (P19,200) 40.67 x [P19,200 - P15,360] 40.67 x P3,840 = P156,172.80 =========="
+      }
+    },
+    {
+      "id": "q-0589",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "How did the Court in People v. Muyco modify the civil liability imposed by the trial court?",
+      "choices": {
+        "A": "It increased the death indemnity to ₱50,000 and added ₱156,172.80 for lost earnings, affirming the ₱27,000 funeral expenses.",
+        "B": "It deleted the funeral expenses for lack of receipts.",
+        "C": "It awarded moral and exemplary damages only.",
+        "D": "It reduced the death indemnity to ₱30,000."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court affirmed the conviction and the ₱27,000 funeral expenses \"with the MODIFICATION that the death indemnity is increased to P50,000.00\" and directed the accused to pay \"P156,172.80 for lost earnings conformably with prevailing jurisprudence.\" **B is wrong:** the funeral expenses were affirmed. **C is wrong:** no moral or exemplary damages were added. **D is wrong:** ₱30,000 was the trial court's award, which was increased. **Bar trap:** check the amounts against the jurisprudence at the time of decision; later cases changed the standard amounts.",
+      "caseIds": [
+        "case-0049"
+      ],
+      "source": {
+        "caseTitle": "People v. Muyco",
+        "grNumber": "G.R. No. 132252",
+        "url": "https://lawphil.net/judjuris/juri2000/apr2000/gr_132252_2000.html",
+        "part": "Decision, dispositive portion",
+        "excerpt": "WHEREFORE, the Decision appealed from finding accused-appellant JESUS MUYCO guilty of murder aggravated by treachery and sentencing him to reclusion perpetua, and to pay the heirs of Romeo Boteja Jr. P27,000.00 for funeral expenses is AFFIRMED with the MODIFICATION that the death indemnity is increased to P50,000.00. Accused-appellant is further directed to pay the heirs of his victim the amount of P156,172.80 for lost earnings conformably with prevailing jurisprudence."
+      }
+    },
+    {
+      "id": "q-0590",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Following People v. Muyco, when does alibi become \"all the more ineffectual\"?",
+      "choices": {
+        "A": "When the accused presents corroborating witnesses.",
+        "B": "When the crime was committed at night.",
+        "C": "When the accused fails to demonstrate that it was physically impossible for him to be at the crime scene at the time it was committed.",
+        "D": "When the accused is a relative of the victim."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court said: \"Weak as it was, accused-appellant's alibi became all the more ineffectual when he failed to demonstrate that it was physically impossible for him to be at the crime scene at the time it was committed,\" noting the other town was only 50 kilometers away. **A is wrong:** corroboration (which he had) did not save the alibi against positive identification. **B and D are wrong:** neither is the test. **Bar trap:** distance alone is not physical impossibility.",
+      "caseIds": [
+        "case-0049"
+      ],
+      "source": {
+        "caseTitle": "People v. Muyco",
+        "grNumber": "G.R. No. 132252",
+        "url": "https://lawphil.net/judjuris/juri2000/apr2000/gr_132252_2000.html",
+        "part": "Decision, the defense of alibi",
+        "excerpt": "Weak as it was, accused-appellant's alibi became all the more ineffectual when he failed to demonstrate that it was physically impossible for him to be at the crime scene at the time it was committed."
+      }
+    },
+    {
+      "id": "q-0591",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "According to People v. Muyco, what is the effect of discrepancies on minor details in a witness's testimony?",
+      "choices": {
+        "A": "They destroy the witness's credibility.",
+        "B": "They indicate veracity rather than prevarication, enhancing the witness's credibility by erasing any suspicion of rehearsed testimony.",
+        "C": "They require the court to disregard the entire testimony.",
+        "D": "They shift the burden of proof to the prosecution."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court said: \"discrepancies in minor details indicate veracity rather than prevarication. They tend to bolster the probative value of the testimony being questioned. They enhance, rather than destroy, the witness' credibility and the truthfulness of his testimony as they erase any suspicion of being a rehearsed testimony.\" **A and C are wrong** for the same reason. **D is wrong:** the burden of proof is always on the prosecution in a criminal case. **Bar trap:** only discrepancies on minor details help; material contradictions on the identity of the accused are another matter.",
+      "caseIds": [
+        "case-0049"
+      ],
+      "source": {
+        "caseTitle": "People v. Muyco",
+        "grNumber": "G.R. No. 132252",
+        "url": "https://lawphil.net/judjuris/juri2000/apr2000/gr_132252_2000.html",
+        "part": "Decision, inconsistencies in testimony",
+        "excerpt": "This Court has ruled often enough that discrepancies in minor details indicate veracity rather than prevarication. They tend to bolster the probative value of the testimony being questioned. They enhance, rather than destroy, the witness' credibility and the truthfulness of his testimony as they erase any suspicion of being a rehearsed testimony."
       }
     }
   ]
