@@ -9238,6 +9238,100 @@
         "part": "Resolution, discussion of the entitlement to damages",
         "excerpt": "Preliminarily, on the issue pertaining to whether or not respondent was entitled to damages and attorney’s fees, the same entails a resort to the parties’ respective evidence. Thus, AF is clearly asking us to consider a question of fact. Time and again, we have held that the jurisdiction of this Court in a petition for review on certiorari under Rule 45 is limited only to questions of law, save for certain exceptions, none of which are present in this case. Both the RTC and the CA have competently ruled on the issue of respondent’s entitlement to damages and attorney’s fees as they properly laid down both the factual and legal bases for their respective decisions. We see no reason to disturb their findings."
       }
+    },
+    {
+      "id": "q-0876",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Ana's commercial building was occupied for five years by Ben, who refused to leave though Ana had a better right. Ana testified that she \"could have earned at least ₱200,000 a year\" from the building, and that Ben \"made millions\" from it, but gave no details on how. Ben admitted he had been paying the former owner a monthly rental of ₱1,000.\n\n(a) May Ana recover ₱200,000 a year as actual damages? Explain.\n\n(b) What may she recover for the lost use of her building? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) No. Her claimed income is conjectural and speculative; actual damages must be proved and cannot be presumed, and testimony lacking details on how the income would be earned is too vague. (b) The unrealized rentals at the admitted rate of ₱1,000 a month for the period Ben occupied the building, with legal interest.",
+        "legalBasis": "Testimony on expected income that \"is sadly lacking of the requisite details on how such huge amount of income could be made possible\" is \"highly conjectural and speculative.\" \"Well-entrenched is the doctrine that actual, compensatory and consequential damages must be proved, and cannot be presumed. If the proof adduced thereon is flimsy and insufficient ... no damages will be allowed.\" \"The only amount of unrealized income [the owner] should be entitled to is the unrealized monthly rentals which [the occupant] admits.\"",
+        "application": "(a) Ana's estimate is unsupported. (b) Ben's admission of the ₱1,000 monthly rental is competent proof of the value of the use he enjoyed, so the award is ₱1,000 × 60 months = ₱60,000.",
+        "conclusion": "(a) No; (b) ₱60,000 in unrealized rentals. **Bar trap:** a claimant's estimate fails without details, but an admitted figure can still support a smaller award."
+      },
+      "keyPoints": [
+        "Actual damages must be proved, not presumed",
+        "Vague testimony on expected income is conjectural and speculative",
+        "Flimsy proof: no damages allowed",
+        "The admitted rental is the measure of lost income",
+        "₱1,000 × 60 months = ₱60,000"
+      ],
+      "caseIds": [
+        "case-0059"
+      ],
+      "source": {
+        "caseTitle": "Padillo v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 119707",
+        "url": "https://lawphil.net/judjuris/juri2001/nov2001/gr_119707_2001.html",
+        "part": "Decision, discussion of the unrealized income",
+        "excerpt": "Concerning the alleged forgone income of One Hundred Fifty Thousand Pesos (P150,000.00) per year since 1982 as testified on by petitioner as the income she could have realized had possession of the property not been withheld from her by respondent Averia, we consider such amount of expected profit highly conjectural and speculative. With an allegation that respondent made millions for the improper use and exploitation of the property, petitioner's testimony regarding the matter of unrealized income is sadly lacking of the requisite details on how such huge amount of income could be made possible. Petitioner did not detail out how such huge amount of income could have been derived from the use of the disputed lot and building. Well-entrenched is the doctrine that actual, compensatory and consequential damages must be proved, and cannot be presumed. If the proof adduced thereon is flimsy and insufficient, as in this case, no damages will be allowed. Verily, the testimonial evidence on alleged unrealized income earlier referred to is not enough to warrant the award of damages. It is too vague and unspecified to induce faith and reliance. The only amount of unrealized income petitioner should be entitled to is the unrealized monthly rentals which respondent Averia admits to be in the amount of Eight Hundred Pesos (P800.00) a month"
+      }
+    },
+    {
+      "id": "q-0877",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Carla won a long property dispute against Dino, who had filed a separate suit against her that was dismissed, and who had appealed every adverse ruling. Carla claims moral damages for the stress and worry of years of litigation. Nothing shows that Dino acted with malice or bad faith; he honestly believed he owned the property. Is Carla entitled to moral damages? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. Filing a suit that is later dismissed and appealing adverse rulings do not by themselves make one's acts wrongful; the law does not penalize the right to litigate, and error alone is not a ground for moral damages. Without malice or bad faith, the anxiety of being a party to a suit does not warrant moral damages.",
+        "legalBasis": "That a party \"instituted a separate suit which was subsequently dismissed and all actions or appeals taken ... does not per se make such actions or appeals wrongful and subject [him] to payment of moral damages. The law could not have meant to impose a penalty on the right to litigate. Such right is so precious that moral damages may not be charged on those who may exercise it erroneously. One may have erred, but error alone is not a ground for moral damages.\"",
+        "application": "Dino litigated in good faith over a property he believed was his; Carla's stress is the ordinary consequence of litigation.",
+        "conclusion": "No moral damages. **Bar trap:** losing a case, or being persistent in appeals, is not malice; moral damages for litigation require malice or bad faith."
+      },
+      "keyPoints": [
+        "A dismissed suit or adverse appeals are not per se wrongful",
+        "No penalty on the right to litigate",
+        "Error alone is not a ground for moral damages",
+        "The usual anxiety of litigation is not compensable absent malice or bad faith"
+      ],
+      "caseIds": [
+        "case-0059"
+      ],
+      "source": {
+        "caseTitle": "Padillo v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 119707",
+        "url": "https://lawphil.net/judjuris/juri2001/nov2001/gr_119707_2001.html",
+        "part": "Decision, discussion of moral and exemplary damages",
+        "excerpt": "That respondent Averia instituted a separate suit which was subsequently dismissed and all actions or appeals taken by respondent Averia relative to M.C. No. 374-82 does not per se make such actions or appeals wrongful and subject respondent Averia to payment of moral damages. The law could not have meant to impose a penalty on the right to litigate. Such right is so precious that moral damages may not be charged on those who may exercise it erroneously. One may have erred, but error alone is not a ground for moral damages."
+      }
+    },
+    {
+      "id": "q-0878",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "In an earlier certiorari case between Eli and Fe, the Court of Appeals ruled, wrongly but with finality since no one appealed, that Fe's damages suit should merely be suspended, not dismissed, until a related case ended. Fe resumed her suit after the related case ended and won. Eli now argues that the damages suit was barred by res judicata from the start, since all its requisites are present. Will Eli's argument prosper? Explain, distinguishing the law of the case from res judicata.",
+      "suggestedAnswer": {
+        "answer": "No. Even if the requisites of res judicata are present, the final ruling ordering the suspension of Fe's suit became the law of the case between the same parties in the same case, even if erroneous, and can no longer be disturbed. The law of the case applies only within the same case, while res judicata binds parties in one case by what was done in another.",
+        "legalBasis": "The law of the case means \"that whatever is once irrevocably established as the controlling legal rule or decision between the same parties in the same case continues to be the law of the case, whether correct on general principles or not.\" It \"does not have the finality of the doctrine of res judicata, and applies only to that one case, whereas res judicata forecloses parties or privies in one case by what has been done in another case.\" \"[E]ven if erroneous, the ruling ... has become the law of the case ... and may no longer be disturbed or modified.\"",
+        "application": "Fe relied in good faith on the final ruling allowing her suit to continue after suspension, so Eli cannot now invoke res judicata against it.",
+        "conclusion": "Eli's argument fails. **Bar trap:** satisfying the requisites of res judicata is not the end; a final ruling in the same case binds the parties as the law of the case."
+      },
+      "keyPoints": [
+        "Law of the case: what is irrevocably established between the same parties in the same case, even if wrong",
+        "Applies only to that one case",
+        "Res judicata binds by what was done in another case",
+        "An unappealed ruling becomes final and binding"
+      ],
+      "caseIds": [
+        "case-0059"
+      ],
+      "source": {
+        "caseTitle": "Padillo v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 119707",
+        "url": "https://lawphil.net/judjuris/juri2001/nov2001/gr_119707_2001.html",
+        "part": "Decision, discussion of res judicata and the law of the case",
+        "excerpt": "However, a different conclusion is warranted under the principle of law of the case. Law of the case has been defined as the opinion delivered on a former appeal. More specifically, it means that whatever is once irrevocably established as the controlling legal rule or decision between the same parties in the same case continues to be the law of the case, whether correct on general principles or not, so long as the facts on which such decision was predicated continue to be the facts of the case before the court. … The appellate court apparently overlooked the significance of this principle called the law of the case which is totally different from the concept of res judicata. Law of the case does not have the finality of the doctrine of res judicata, and applies only to that one case, whereas res judicata forecloses parties or privies in one case by what has been done in another case. … Thus, even if erroneous, the ruling of the Court of Appeals in CA-G.R. SP No. 15356 has become the law of the case as between herein petitioner Padillo and respondent Averia, and may no longer be disturbed or modified."
+      }
     }
   ]
 }
