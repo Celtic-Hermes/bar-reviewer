@@ -18428,6 +18428,100 @@
         "part": "Decision, discussion of the amount of damages and attorney's fees",
         "excerpt": "In concluding, let it be stressed that the amount of damages awarded in this appeal has been determined by adequately considering the official, political, social, and financial standing of the offended parties on one hand, and the business and financial position of the offender on the other (Domingding v. Ng, 55 O.G. 10)."
       }
+    },
+    {
+      "id": "q-1167",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Ana sued her cousin Ben to annul a sale, alleging in her complaint that he had defrauded her; she lost. Ben counterclaims for moral and exemplary damages, arguing that the fraud charge in her complaint was itself defamatory. He offers no evidence that he suffered any mental anguish. Will his counterclaim prosper? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. Allegations of fraud in a complaint are privileged in character, so pleading them does not by itself support damages. Moral damages need proof of mental suffering, and Ben offered none. And without actual damages, moral, temperate or compensatory, exemplary damages cannot be granted (Art. 2234).",
+        "legalBasis": "In Gutierrez v. Villegas, \"[n]ot only were the allegations of fraud in plaintiff's complaint privileged in character ... As to moral damages, the record shows no proof of mental suffering on the part of defendants upon which the award can be based. In addition, the absence of actual damages, moral, temperate, or compensatory, blocks the grant of exemplary damages (Civil Code, Article 2234).\"",
+        "application": "The fraud charge was a privileged pleading; Ben proved no suffering and no other damages.",
+        "conclusion": "The counterclaim fails. **Bar trap:** without proof of suffering there are no moral damages, and without those (or other damages) there are no exemplary damages."
+      },
+      "keyPoints": [
+        "Allegations in a complaint are privileged",
+        "Moral damages need proof of mental suffering",
+        "Art. 2234: no moral, temperate or compensatory damages, no exemplary damages",
+        "Losing a suit does not by itself support a counterclaim"
+      ],
+      "caseIds": [
+        "case-0075"
+      ],
+      "source": {
+        "caseTitle": "Gutierrez v. Villegas, et al.",
+        "grNumber": "G.R. No. L-17117",
+        "url": "https://lawphil.net/judjuris/juri1963/jul1963/gr_l-17117_1963.html",
+        "part": "Decision, discussion of the defendants' appeal (damages on the counterclaim)",
+        "excerpt": "Turning now to the defendant's appeal, we are not disposed to vary the lower court's refusal to award them damages and attorney's fees. Such awards are primarily in the discretion of the trial court, and it has found no facts upon which such award can be made. Not only were the allegations of fraud in plaintiff's complaint privileged in character, but her failure to seek an amicable settlement before filing suit, as required of relatives by Article 222 of the Civil Code, has not been pleaded either by answer or motion to dismiss. As to moral damages, the record shows no proof of mental suffering on the part of defendants upon which the award can be based. In addition, the absence of actual damages, moral, temperate, or compensatory, blocks the grant of exemplary damages (Civil Code, Article 2234)."
+      }
+    },
+    {
+      "id": "q-1168",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Carla seeks to annul her sale of a lot to her sister, claiming she signed without her eyeglasses and thought it was a loan document. (a) Her only evidence is her own testimony; the notary and two witnesses testify the deed was read and explained to her, and she later received the first installment. (b) In another case, Dino's claim of a similar trick is corroborated by the notary, who admits the buyer told him to hurry and not read the deed aloud, and by a witness who heard the buyer tell Dino it was a loan. In which case may fraud be found? Explain.",
+      "suggestedAnswer": {
+        "answer": "Fraud may be found in Dino's case, not Carla's. While fraud may be proved entirely by circumstantial evidence, it is not to be lightly inferred, and the evidence must overcome the presumption of good faith and regularity in human affairs. Carla's uncorroborated testimony, contradicted by the notary and witnesses and by her own acceptance of payment, does not suffice. Dino's claim is supported by independent witnesses showing deception.",
+        "legalBasis": "In Gutierrez v. Villegas, \"[t]he alleged indicia of fraud upon which she rests her case are backed only by her own uncorroborated testimony, which is contradicted by that of defendants and their witnesses ... While fraud may be proved entirely by circumstantial evidence, it is not to be lightly inferred. Our review of the evidence discloses that the evidence for appellant does not suffice to overcome the presumption of good faith and regularity in human affairs.\"",
+        "application": "Carla's evidence is her word alone against others; Dino's is corroborated.",
+        "conclusion": "Fraud may be found only for Dino. **Bar trap:** circumstantial proof of fraud is allowed, but an uncorroborated, contradicted claim does not overcome the presumption of good faith."
+      },
+      "keyPoints": [
+        "Fraud may be proved by circumstantial evidence",
+        "Fraud is not lightly inferred",
+        "Presumption of good faith and regularity",
+        "Uncorroborated, contradicted testimony is insufficient",
+        "Corroborated proof of deception may suffice"
+      ],
+      "caseIds": [
+        "case-0075"
+      ],
+      "source": {
+        "caseTitle": "Gutierrez v. Villegas, et al.",
+        "grNumber": "G.R. No. L-17117",
+        "url": "https://lawphil.net/judjuris/juri1963/jul1963/gr_l-17117_1963.html",
+        "part": "Decision, discussion of fraud",
+        "excerpt": "The facts, as shown by the record, do not support the plaintiff's conclusions. The alleged indicia of fraud upon which she rests her case are backed only by her own uncorroborated testimony, which is contradicted by that of defendants and their witnesses. … While fraud may be proved entirely by circumstantial evidence, it is not to be lightly inferred. Our review of the evidence discloses that the evidence for appellant does not suffice to overcome the presumption of good faith and regularity in human affairs."
+      }
+    },
+    {
+      "id": "q-1169",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Eva sold her inheritance share, worth ₱100,000, to her co-heir Felix for ₱90,000. Gina sold hers, worth ₱100,000, to her co-heir Hugo for ₱60,000. Each seller later seeks rescission, treating the sale as a partition under Article 1082 and claiming lesion. Applying the rule invoked in Gutierrez v. Villegas, may either sale be rescinded for lesion? Explain.",
+      "suggestedAnswer": {
+        "answer": "Gina's may; Eva's may not. Even if the sale is deemed a partition under Article 1082, rescission for lesion under Article 1098 requires a lesion of at least one-fourth of the heir's share. Eva received ₱90,000 for a ₱100,000 share, a lesion of only one-tenth; Gina received ₱60,000, a lesion of two-fifths, which exceeds one-fourth.",
+        "legalBasis": "In Gutierrez v. Villegas, \"[g]ranting, arguendo, that the assignment of her hereditary share in favor of her sister, Rizalina, should be deemed a partition under Article 1082 ... still the lesion, if any, suffered by plaintiff from her sale of P50,000.00 of an individed heredity interest worth P54,000.00 is certainly less than the one-fourth (1/4) required by Article 1098 of the Code.\"",
+        "application": "Eva's lesion is ₱10,000 of ₱100,000; Gina's is ₱40,000 of ₱100,000.",
+        "conclusion": "Only Gina's sale is rescissible for lesion. **Bar trap:** the threshold is a lesion of at least one-fourth, measured against the value of the heir's share."
+      },
+      "keyPoints": [
+        "Sale among co-heirs may be deemed a partition (Art. 1082)",
+        "Rescission for lesion requires at least one-fourth (Art. 1098)",
+        "Compare the price with the share's value",
+        "Small shortfall: no rescission"
+      ],
+      "caseIds": [
+        "case-0075"
+      ],
+      "source": {
+        "caseTitle": "Gutierrez v. Villegas, et al.",
+        "grNumber": "G.R. No. L-17117",
+        "url": "https://lawphil.net/judjuris/juri1963/jul1963/gr_l-17117_1963.html",
+        "part": "Decision, discussion of lesion",
+        "excerpt": "Granting, arguendo, that the assignment of her hereditary share in favor of her sister, Rizalina, should be deemed a partition under Article 1082 of the Civil Code of the Philippines (notwithstanding the fact that it did not totally terminate the indivision among the co-heirs of Irene Santos, since the undivided share of the widower Villegas remained unchanged), still the lesion, if any, suffered by plaintiff from her sale of P50,000.00 of an individed heredity interest worth P54,000.00 is certainly less than the one-fourth (1/4) required by Article 1098 of the Code."
+      }
     }
   ]
 }
