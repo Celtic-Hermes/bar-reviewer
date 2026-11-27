@@ -5091,6 +5091,7 @@ function pickHighlightColor(color) {
 document.querySelectorAll(".hl-swatch").forEach(function (swatch) {
   swatch.addEventListener("click", function () { pickHighlightColor(swatch.dataset.color); });
 });
+pickHighlightColor(activeHighlightColor);  // every palette and colored text box starts in step (one picked color app-wide)
 
 // Is this highlighted word in the picked color? (Then tapping or dragging removes it.)
 function inActiveColor(word) {
@@ -5138,8 +5139,9 @@ function makeHighlightable(elementId) {
   });
 }
 
-// The single yellow highlighter: the question, its suggested answer and explanation, and the case
-// summary; the 4-color one: the full decision text and a rule's full text (hl-colored).
+// The single yellow highlighter: the question and the case summary; the 4-color one (hl-colored in
+// index.html, with a swatch row): the suggested answer and explanation, the full decision text and a
+// rule's full text. A word highlighted before it had a color shows yellow.
 ["prompt", "alac-answer", "alac-basis", "alac-application", "alac-conclusion", "mcq-explanation", "fb-discussion",
  "case-facts", "case-issue", "case-ruling", "case-doctrine", "full-text", "rule-text"].forEach(makeHighlightable);
 

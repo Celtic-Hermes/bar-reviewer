@@ -682,8 +682,15 @@
         <button class="btn btn-primary" id="submit-answer" disabled>Submit answer</button>
         <section class="card feedback" id="mcq-feedback" hidden>
           <p class="feedback-title" id="mcq-result"></p>
+          <!-- The highlighter colors for the answer (the same four as the full text; one picked color app-wide) -->
+          <div class="hl-palette rule-palette answer-palette" id="mcq-palette" role="group" aria-label="Highlighter color">
+            <button class="hl-swatch" data-color="facts" aria-pressed="false"><span class="hl-dot"></span><span class="hl-swatch-name">Facts</span></button>
+            <button class="hl-swatch" data-color="issue" aria-pressed="false"><span class="hl-dot"></span><span class="hl-swatch-name">Issue</span></button>
+            <button class="hl-swatch" data-color="ruling" aria-pressed="true"><span class="hl-dot"></span><span class="hl-swatch-name">Important ruling</span></button>
+            <button class="hl-swatch" data-color="doctrine" aria-pressed="false"><span class="hl-dot"></span><span class="hl-swatch-name">Doctrine</span></button>
+          </div>
           <h2 class="label">Explanation</h2>
-          <p class="prompt reading-text" id="mcq-explanation"></p>
+          <p class="prompt reading-text hl-colored" id="mcq-explanation"></p>
         </section>
       </div>
 
@@ -699,8 +706,15 @@
           </section>
           <!-- The item's discussion, if it has one (app.js showFillBlank) -->
           <section class="card" id="fb-discussion-card" hidden>
+            <!-- The highlighter colors for the answer (the same four as the full text; one picked color app-wide) -->
+            <div class="hl-palette rule-palette answer-palette" id="fb-palette" role="group" aria-label="Highlighter color">
+              <button class="hl-swatch" data-color="facts" aria-pressed="false"><span class="hl-dot"></span><span class="hl-swatch-name">Facts</span></button>
+              <button class="hl-swatch" data-color="issue" aria-pressed="false"><span class="hl-dot"></span><span class="hl-swatch-name">Issue</span></button>
+              <button class="hl-swatch" data-color="ruling" aria-pressed="true"><span class="hl-dot"></span><span class="hl-swatch-name">Important ruling</span></button>
+              <button class="hl-swatch" data-color="doctrine" aria-pressed="false"><span class="hl-dot"></span><span class="hl-swatch-name">Doctrine</span></button>
+            </div>
             <h2 class="label">Discussion</h2>
-            <p class="prompt reading-text" id="fb-discussion"></p>
+            <p class="prompt reading-text hl-colored" id="fb-discussion"></p>
           </section>
           <section class="rating">
             <h2 class="label">How did you do?</h2>
@@ -720,15 +734,22 @@
       <div id="answer-area" hidden>
         <section class="card">
           <h2 class="label">Suggested answer</h2>
+          <!-- The highlighter colors for the answer (the same four as the full text; one picked color app-wide) -->
+          <div class="hl-palette rule-palette answer-palette" id="answer-palette" role="group" aria-label="Highlighter color">
+            <button class="hl-swatch" data-color="facts" aria-pressed="false"><span class="hl-dot"></span><span class="hl-swatch-name">Facts</span></button>
+            <button class="hl-swatch" data-color="issue" aria-pressed="false"><span class="hl-dot"></span><span class="hl-swatch-name">Issue</span></button>
+            <button class="hl-swatch" data-color="ruling" aria-pressed="true"><span class="hl-dot"></span><span class="hl-swatch-name">Important ruling</span></button>
+            <button class="hl-swatch" data-color="doctrine" aria-pressed="false"><span class="hl-dot"></span><span class="hl-swatch-name">Doctrine</span></button>
+          </div>
           <dl class="alac">
             <dt>Answer</dt>
-            <dd class="reading-text" id="alac-answer"></dd>
+            <dd class="reading-text hl-colored" id="alac-answer"></dd>
             <dt>Legal basis</dt>
-            <dd class="reading-text" id="alac-basis"></dd>
+            <dd class="reading-text hl-colored" id="alac-basis"></dd>
             <dt>Application</dt>
-            <dd class="reading-text" id="alac-application"></dd>
+            <dd class="reading-text hl-colored" id="alac-application"></dd>
             <dt>Conclusion</dt>
-            <dd class="reading-text" id="alac-conclusion"></dd>
+            <dd class="reading-text hl-colored" id="alac-conclusion"></dd>
           </dl>
         </section>
 

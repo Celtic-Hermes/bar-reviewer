@@ -1160,6 +1160,7 @@ a.btn { text-align: center; text-decoration: none; }
 #topic-rule { margin-top: calc(-1 * var(--space-2)); }
 .rule-reader { margin-top: var(--space-3); }          /* the palette stays pinned while she reads all of it */
 .hl-palette.rule-palette { margin: 0 0 var(--space-1); border: 1px solid var(--border); border-radius: var(--radius-md); }
+.hl-palette.answer-palette { margin: 0 0 var(--space-3); }  /* the swatch row above a suggested answer or explanation */
 .rule-text { font-size: 16px; line-height: 1.6; }
 .rule-section { margin-top: var(--space-3); }
 .rule-section > .prompt { overflow-wrap: anywhere; }
