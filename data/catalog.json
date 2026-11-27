@@ -181,6 +181,7 @@
     {"id": "rule-0009", "title": "Republic Act No. 10173 (Data Privacy Act of 2012)", "number": "Republic Act No. 10173", "status": "draft", "subject": "Civil Law", "topic": "Torts and Quasi-delicts"},
     {"id": "rule-0010", "title": "Civil Code, Title XVIII (Damages), Chapters 1 and 2 (Articles 2195 to 2215)", "number": "Civil Code, Articles 2195-2215", "status": "draft", "subject": "Civil Law", "topic": "Damages"},
     {"id": "rule-0011", "title": "Civil Code, Title XVIII (Damages), Chapter 3, Article 2216 and Section 1 (Moral Damages), Articles 2217 to 2220", "number": "Civil Code, Articles 2216-2220", "status": "draft", "subject": "Civil Law", "topic": "Damages"},
-    {"id": "rule-0012", "title": "Civil Code, Article 309 (disrespect to the dead)", "number": "Civil Code, Article 309", "status": "draft", "subject": "Civil Law", "topic": "Damages"}
+    {"id": "rule-0012", "title": "Civil Code, Article 309 (disrespect to the dead)", "number": "Civil Code, Article 309", "status": "draft", "subject": "Civil Law", "topic": "Damages"},
+    {"id": "rule-0013", "title": "Civil Code, Title XVIII (Damages), Chapter 3, Sections 2 to 5 (Nominal, Temperate or Moderate, Liquidated, and Exemplary or Corrective Damages), Articles 2221 to 2235", "number": "Civil Code, Articles 2221-2235", "status": "draft", "subject": "Civil Law", "topic": "Damages"}
   ]
 }

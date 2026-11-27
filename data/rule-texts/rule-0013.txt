@@ -1,0 +1,47 @@
+TITLE XVIII
+DAMAGES
+
+CHAPTER 3
+Other Kinds of Damages
+
+SECTION 2
+Nominal Damages
+
+Article 2221. Nominal damages are adjudicated in order that a right of the plaintiff, which has been violated or invaded by the defendant, may be vindicated or recognized, and not for the purpose of indemnifying the plaintiff for any loss suffered by him.
+
+Article 2222. The court may award nominal damages in every obligation arising from any source enumerated in article 1157, or in every case where any property right has been invaded.
+
+Article 2223. The adjudication of nominal damages shall preclude further contest upon the right involved and all accessory questions, as between the parties to the suit, or their respective heirs and assigns.
+
+SECTION 3
+Temperate or Moderate Damages
+
+Article 2224. Temperate or moderate damages, which are more than nominal but less than compensatory damages, may be recovered when the court finds that some pecuniary loss has been suffered but its amount can not, from the nature of the case, be provided with certainty.
+
+Article 2225. Temperate damages must be reasonable under the circumstances.
+
+SECTION 4
+Liquidated Damages
+
+Article 2226. Liquidated damages are those agreed upon by the parties to a contract, to be paid in case of breach thereof.
+
+Article 2227. Liquidated damages, whether intended as an indemnity or a penalty, shall be equitably reduced if they are iniquitous or unconscionable.
+
+Article 2228. When the breach of the contract committed by the defendant is not the one contemplated by the parties in agreeing upon the liquidated damages, the law shall determine the measure of damages, and not the stipulation.
+
+SECTION 5
+Exemplary or Corrective Damages
+
+Article 2229. Exemplary or corrective damages are imposed, by way of example or correction for the public good, in addition to the moral, temperate, liquidated or compensatory damages.
+
+Article 2230. In criminal offenses, exemplary damages as a part of the civil liability may be imposed when the crime was committed with one or more aggravating circumstances. Such damages are separate and distinct from fines and shall be paid to the offended party.
+
+Article 2231. In quasi-delicts, exemplary damages may be granted if the defendant acted with gross negligence.
+
+Article 2232. In contracts and quasi-contracts, the court may award exemplary damages if the defendant acted in a wanton, fraudulent, reckless, oppressive, or malevolent manner.
+
+Article 2233. Exemplary damages cannot be recovered as a matter of right; the court will decide whether or not they should be adjudicated.
+
+Article 2234. While the amount of the exemplary damages need not be proved, the plaintiff must show that he is entitled to moral, temperate or compensatory damages before the court may consider the question of whether or not exemplary damages should be awarded. In case liquidated damages have been agreed upon, although no proof of loss is necessary in order that such liquidated damages may be recovered, nevertheless, before the court may consider the question of granting exemplary in addition to the liquidated damages, the plaintiff must show that he would be entitled to moral, temperate or compensatory damages were it not for the stipulation for liquidated damages.
+
+Article 2235. A stipulation whereby exemplary damages are renounced in advance shall be null and void.
