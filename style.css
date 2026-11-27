@@ -707,6 +707,25 @@ button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
    colors (right / partly / wrong) on a neutral track; the counts are always written out too. */
 .case-rows-intro { margin: 0 0 var(--space-4); font-size: 15px; color: var(--muted); }
 .case-rows { display: grid; gap: var(--space-grid); list-style: none; margin: 0; padding: 0; }
+/* The Cases tab in sections (app.js showCaseRows): a topic heading (the shared .label), then one
+   collapsible section per sub-topic, its header a 44px+ row: chevron, name, "20 cases · 4 done". */
+.case-topic + .case-topic { margin-top: var(--space-section); }
+.case-topic-label { margin: 0 0 var(--space-3); }
+.case-section + .case-section { margin-top: var(--space-3); }
+.case-section > summary {
+  display: flex; align-items: center; gap: var(--space-2); min-height: 52px; padding: var(--space-2) var(--space-4);
+  border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--card); color: var(--text);
+  list-style: none; cursor: pointer;
+}
+.case-section > summary::-webkit-details-marker { display: none; }
+.case-section > summary:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+.case-section-chevron { flex: none; display: inline-flex; color: var(--muted); transition: transform 0.15s; }
+.case-section-chevron .icon { margin: 0; width: 18px; height: 18px; vertical-align: 0; }
+.case-section[open] > summary .case-section-chevron { transform: rotate(90deg); }
+.case-section-name { flex: 1; min-width: 0; font-weight: 600; color: var(--heading); }
+.case-section-meta { flex: none; font-size: 14px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.case-section > .case-rows { margin-top: var(--space-3); }
+@media (prefers-reduced-motion: reduce) { .case-section-chevron { transition: none; } }
 .case-row { min-height: 64px; padding: var(--space-3) var(--space-4) var(--space-4); margin: 0; border-radius: var(--radius-lg); }
 .case-row-top { display: flex; align-items: flex-start; gap: var(--space-3); }
 .case-row-num { flex: 0 0 auto; min-width: 1.6em; padding-top: var(--space-3); font-weight: 700; color: var(--muted); font-variant-numeric: tabular-nums; }

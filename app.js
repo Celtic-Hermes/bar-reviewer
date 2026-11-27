@@ -286,7 +286,8 @@ function rememberSpot() {
       current: session.current,  // what she's done on this question: her pick, or answer shown, rating, checked key points
       states: isPlainObject(session.states) ? session.states : {},  // the same, for every question she visited (Previous / Next)
       practiceCaseId: practiceCase ? practiceCase.id : null,
-      fromCases: !!(practiceCase && casePracticeFromTab)  // started from the Cases tab: Back goes there
+      fromCases: !!(practiceCase && casePracticeFromTab),  // started from the Cases tab: Back goes there
+      review: inCaseReview()  // a case's read-only Review (Cases tab): put back as a review, never as Continue
     };
   }
   if (shownScreen === "screen-case" && currentCase) {
@@ -321,7 +322,9 @@ function rememberSpot() {
   // The round she's in the middle of is also kept for the subject screen's "Continue" (it survives
   // the home-screen timeout): a topic round (Questions tab), or a case's questions (Cases tab, marked
   // with the case's ID). Not for Review missed / Bookmarked / Tagged lists.
-  if (spot.round && practiceCase) {
+  if (spot.round && inCaseReview()) {
+    // A case's Review is read-only: it's never a "Continue" (the reload above still brings it back).
+  } else if (spot.round && practiceCase) {
     saveLastRound(currentSubject, currentTopic, currentSubtopic, spot.round, sourceView, practiceCase.id);
   } else if (spot.round && (isRealTopic(currentTopic) || currentTopic === ALL_TOPICS)) {
     saveLastRound(currentSubject, currentTopic, currentSubtopic, spot.round, sourceView);
@@ -521,7 +524,8 @@ function putBackRound(round) {
     fbAnswered: wholeNumberOrZero(round.fbAnswered),
     fbCorrect: wholeNumberOrZero(round.fbCorrect),
     fbView: round.fbView === "read" ? "read" : "quiz",
-    states: isPlainObject(round.states) ? round.states : {}
+    states: isPlainObject(round.states) ? round.states : {},
+    review: !!practiceCase && round.review === true  // a case's read-only Review (older rounds: no)
   };
   showQuestion();
   putBackCurrent(round.current);
@@ -1018,11 +1022,12 @@ document.querySelectorAll("#subject-tabs .subject-tab").forEach(function (btn) {
   });
 });
 
-// ---------- The Cases tab: one row per case of this subject ----------
-// Each row: its number, the case title (opens the case; Back returns here), a bar of its linked
-// questions' latest results (right / partly / wrong / not yet, with the counts in words too),
-// "6 of 8 questions answered", a small Reset, and Practice (or Continue when her open round is
-// this case's). Always the official cases, whatever the Questions tab's view.
+// ---------- The Cases tab: the subject's cases in sections, one row per case ----------
+// Grouped by topic (a small heading) and sub-topic (a collapsible section). Each row: its number,
+// the case title (opens the case; Back returns here), a bar of its ESSAYS' latest results (right /
+// partly / wrong / not yet, with the counts in words too), "4 of 6 essays answered", a small Reset
+// (its essays only), and Test (her unanswered essays), Continue (her open round is this case's) or
+// Review (every essay answered: read-only). Always the official cases, whatever the Questions tab's view.
 function subjectCases(subject) {
   return allCases.filter(function (c) { return c && c.subject === subject && typeof c.id === "string"; })
     .sort(function (a, b) { return a.id < b.id ? -1 : (a.id > b.id ? 1 : 0); });
@@ -1094,16 +1099,77 @@ function lastRoundForCase(theCase) {
   return last.round.questionIds.every(function (id) { return known[id]; }) ? last : null;
 }
 
-function startCasePractice(theCase) {
-  const questions = caseResetQuestions(theCase);
-  if (questions.length === 0) { return; }
+// A case's essays (the Cases tab covers only those; the case screen still lists every linked question).
+function caseEssays(theCase) {
+  return caseResetQuestions(theCase).filter(function (q) { return q.type === "essay"; });
+}
+
+// Has she answered (rated) this question? Any saved latest result counts, from any round.
+function hasResult(question) {
+  return Object.prototype.hasOwnProperty.call(progress.results, question.id);
+}
+
+// Test: a new round of only the essays she hasn't answered yet, shuffled (answers she gave are kept).
+function startCaseTest(theCase) {
+  const questions = caseEssays(theCase).filter(function (q) { return !hasResult(q); });
+  if (questions.length === 0) { startCaseReview(theCase); return; }
   fixedQuestions = questions;
   practiceCase = theCase;
   casePracticeFromTab = true;
   currentSubject = theCase.subject;
   currentTopic = typeof theCase.topic === "string" ? theCase.topic : (questions[0].topic || "");
   currentSubtopic = null;
-  startPractice();  // shuffled, like every new round
+  startPractice();  // shuffled, like every new round (saved for Continue by rememberSpot)
+}
+
+// Review: every essay of the case in ID order, read-only: the suggested answer shown and her saved
+// rating marked (showCaseReview). Nothing is recorded, it isn't saved as Continue, and Back or the
+// last Finish return to the Cases tab. A reload puts her back in it (the round's "review" flag).
+function startCaseReview(theCase) {
+  const questions = caseEssays(theCase);
+  if (questions.length === 0) { return; }
+  fixedQuestions = questions.slice();
+  practiceCase = theCase;
+  casePracticeFromTab = true;
+  currentSubject = theCase.subject;
+  currentTopic = typeof theCase.topic === "string" ? theCase.topic : (questions[0].topic || "");
+  currentSubtopic = null;
+  session = {
+    questions: questions,
+    index: 0,
+    mcqCorrect: 0,
+    mcqTotal: 0,
+    ratings: { "Got it": 0, "Partly": 0, "Missed it": 0 },
+    fbAnswered: 0,
+    fbCorrect: 0,
+    fbView: "quiz",
+    review: true
+  };
+  showQuestion();
+}
+
+// Is the round on screen a case review (read-only)?
+function inCaseReview() {
+  return !!(session && session.review === true && practiceCase);
+}
+
+// Her saved result, as the rating words: got → "Got it", partly → "Partly", missed → "Missed it".
+const RESULT_RATINGS = { got: "Got it", partly: "Partly", missed: "Missed it" };
+
+// In a case review, every question shows its suggested answer and her saved rating, locked
+// (the same path as going back to a question: putBackCurrent never records anything).
+function showCaseReview(question) {
+  const r = progress.results[question.id];
+  const rating = r && RESULT_RATINGS[r.last] ? RESULT_RATINGS[r.last] : null;
+  const keep = isPlainObject(session.current) ? session.current : {};
+  putBackCurrent({ answerShown: true, rating: rating, checked: keep.checked });
+  document.querySelectorAll(".btn-rate").forEach(function (b) { b.disabled = true; });
+  if (!rating) {
+    const result = document.getElementById("rating-result");
+    result.textContent = "Not rated yet.";
+    result.hidden = false;
+  }
+  showNextEmphasis();
 }
 
 function continueCasePractice(theCase) {
@@ -1126,11 +1192,22 @@ function refreshSubjectAfterReset(subject) {
   showCaseRows(subject);
 }
 
+// "4 of 6 essays answered".
+function essaysAnsweredText(tally, total) {
+  return (total - tally.notYet) + " of " + total + (total === 1 ? " essay answered" : " essays answered");
+}
+
+// Every essay of this case has a saved result (and it has at least one).
+function caseEssaysDone(theCase) {
+  const essays = caseEssays(theCase);
+  return essays.length > 0 && essays.every(hasResult);
+}
+
 function makeCaseRow(theCase, number) {
   const subject = theCase.subject;
   const name = theCase.name || "Untitled case";
-  const questions = caseResetQuestions(theCase);
-  const tally = resultTally(questions);
+  const essays = caseEssays(theCase);
+  const tally = resultTally(essays);
   const row = document.createElement("li");
   row.className = "card case-row";
 
@@ -1148,50 +1225,139 @@ function makeCaseRow(theCase, number) {
   open.appendChild(cardDetail([theCase.grNumber, theCase.year].filter(Boolean).join(" · ")));
   open.addEventListener("click", function () { openCase(theCase, "subject"); });
   top.append(num, open);
-  if (hasSomethingToReset(questions)) {
-    top.appendChild(makeRowReset(name, questions, function () { refreshSubjectAfterReset(subject); }));
+  if (hasSomethingToReset(essays)) {
+    top.appendChild(makeRowReset(name, essays, function () { refreshSubjectAfterReset(subject); }));
   }
   row.appendChild(top);
 
-  if (questions.length === 0) {
+  if (essays.length === 0) {
     const none = document.createElement("p");
     none.className = "case-row-count";
-    none.textContent = "No questions for this case yet.";
+    none.textContent = "No essays for this case yet.";
     row.appendChild(none);
     return row;
   }
 
   row.appendChild(makeProgressBar(tally));
 
-  // Bottom: "6 of 8 questions answered" and Practice / Continue.
+  // Bottom: "4 of 6 essays answered" and Test / Continue / Review.
   const foot = document.createElement("div");
   foot.className = "case-row-foot";
   const count = document.createElement("p");
   count.className = "case-row-count";
-  count.textContent = answeredText(tally, questions.length);
+  count.textContent = essaysAnsweredText(tally, essays.length);
   const last = lastRoundForCase(theCase);
   const go = document.createElement("button");
   go.type = "button";
   go.className = "btn btn-secondary btn-small case-row-go";
   if (last) {
     go.textContent = "Continue";
-    go.setAttribute("aria-label", "Continue practicing " + name + ", question " + (last.round.index + 1) + " of " + last.round.questionIds.length);
+    go.setAttribute("aria-label", "Continue " + name + ", question " + (last.round.index + 1) + " of " + last.round.questionIds.length);
     go.addEventListener("click", function () { continueCasePractice(theCase); });
+  } else if (tally.notYet === 0) {
+    go.textContent = "Review";
+    go.setAttribute("aria-label", "Review your answers to the essays from " + name);
+    go.addEventListener("click", function () { startCaseReview(theCase); });
   } else {
-    go.textContent = "Practice";
-    go.setAttribute("aria-label", "Practice the questions from " + name);
-    go.addEventListener("click", function () { startCasePractice(theCase); });
+    go.textContent = "Test";
+    go.setAttribute("aria-label", "Test yourself on the " + (tally.notYet === 1 ? "essay" : tally.notYet + " essays") + " not answered yet from " + name);
+    go.addEventListener("click", function () { startCaseTest(theCase); });
   }
   foot.append(count, go);
   row.appendChild(foot);
   return row;
 }
 
+// Which sections of the Cases tab she opened, remembered on this device only (not in backups).
+const CASE_SECTIONS_KEY = "barReviewer.caseSections.v1";
+
+function loadCaseSections() {
+  try {
+    const raw = JSON.parse(localStorage.getItem(CASE_SECTIONS_KEY));
+    return isPlainObject(raw) ? raw : {};
+  } catch (e) { return {}; }
+}
+
+function saveCaseSection(key, open) {
+  const all = loadCaseSections();
+  if (open) { all[key] = true; } else { delete all[key]; }
+  try { localStorage.setItem(CASE_SECTIONS_KEY, JSON.stringify(all)); } catch (e) { /* no storage: just not remembered */ }
+}
+
+// The subject's cases in sections: [{ topic, sections: [{ key, name, cases }] }], in the order the
+// Questions tab shows topics and sub-topics (cases with no sub-topic in a topic that has some: "Other"),
+// each section's cases in ID order.
+function caseSections(subject) {
+  const cases = subjectCases(subject);
+  const topics = topicsFor(subject).slice();
+  cases.forEach(function (c) {
+    const t = typeof c.topic === "string" && c.topic ? c.topic : "Other";
+    if (topics.indexOf(t) === -1) { topics.push(t); }
+  });
+  const groups = [];
+  topics.forEach(function (topic) {
+    const inTopic = cases.filter(function (c) { return (typeof c.topic === "string" && c.topic ? c.topic : "Other") === topic; });
+    if (inTopic.length === 0) { return; }
+    const subs = subtopicsFor(subject, topic).slice();
+    inTopic.forEach(function (c) {
+      const s = subtopicOf(c);
+      if (s && subs.indexOf(s) === -1) { subs.push(s); }
+    });
+    const sections = [];
+    subs.forEach(function (sub) {
+      const these = inTopic.filter(function (c) { return subtopicOf(c) === sub; });
+      if (these.length > 0) { sections.push({ key: subject + "|" + topic + "|" + sub, name: sub, cases: these }); }
+    });
+    const loose = inTopic.filter(function (c) { return subtopicOf(c) === null; });
+    if (loose.length > 0) {
+      sections.push({ key: subject + "|" + topic + "|", name: subs.length > 0 ? "Other" : topic, cases: loose });
+    }
+    groups.push({ topic: topic, sections: sections });
+  });
+  return groups;
+}
+
+function makeCaseSection(section, openSaved) {
+  const box = document.createElement("details");
+  box.className = "case-section";
+  const done = section.cases.filter(caseEssaysDone).length;
+  const hasOpenRound = section.cases.some(function (c) { return lastRoundForCase(c) !== null; });
+  box.open = openSaved[section.key] === true || hasOpenRound;
+  const summary = document.createElement("summary");
+  const chevron = document.createElement("span");
+  chevron.className = "case-section-chevron";
+  chevron.appendChild(icon("chevron-right"));
+  const title = document.createElement("span");
+  title.className = "case-section-name";
+  title.textContent = section.name;
+  const meta = document.createElement("span");
+  meta.className = "case-section-meta";
+  meta.textContent = section.cases.length + (section.cases.length === 1 ? " case" : " cases") + " · " + done + " done";
+  summary.append(chevron, title, meta);
+  box.appendChild(summary);
+  const list = document.createElement("ol");
+  list.className = "case-rows";
+  section.cases.forEach(function (c, i) { list.appendChild(makeCaseRow(c, i + 1)); });  // numbering restarts in each section
+  box.appendChild(list);
+  box.addEventListener("toggle", function () { saveCaseSection(section.key, box.open); });
+  return box;
+}
+
 function showCaseRows(subject) {
   const list = document.getElementById("case-rows");
   list.innerHTML = "";
   const cases = subjectCases(subject);
-  cases.forEach(function (c, i) { list.appendChild(makeCaseRow(c, i + 1)); });
+  const openSaved = loadCaseSections();
+  caseSections(subject).forEach(function (group) {
+    const block = document.createElement("section");
+    block.className = "case-topic";
+    const heading = document.createElement("h3");
+    heading.className = "label case-topic-label";
+    heading.textContent = group.topic;
+    block.appendChild(heading);
+    group.sections.forEach(function (section) { block.appendChild(makeCaseSection(section, openSaved)); });
+    list.appendChild(block);
+  });
   list.hidden = cases.length === 0;
   document.getElementById("case-rows-intro").hidden = cases.length === 0;
   document.getElementById("case-rows-empty").hidden = cases.length !== 0;
@@ -3455,6 +3621,7 @@ function showQuestion() {
   showNextEmphasis();
 
   showScreen("screen-question");
+  if (inCaseReview() && !isMcq && !isFill) { showCaseReview(question); }  // read-only: answer shown, her rating marked
 }
 
 // --- The source label: "Cases", "Notes" or "NotebookLM" ---
@@ -4373,6 +4540,7 @@ document.getElementById("key-points").addEventListener("change", function () {
 // Rating buttons: she picks one, it's counted once, then "Next" appears.
 document.querySelectorAll(".btn-rate").forEach(function (button) {
   button.addEventListener("click", function () {
+    if (inCaseReview()) { return; }  // a case's Review is read-only: nothing is ever recorded
     const rating = button.dataset.rating;
     session.ratings[rating] += 1;
     recordEssay(session.questions[session.index], rating);  // save on the phone
@@ -4542,6 +4710,9 @@ function goToQuestion(index) {
 document.getElementById("next-btn").addEventListener("click", function () {
   if (session.index < session.questions.length - 1) {
     goToQuestion(session.index + 1);
+  } else if (inCaseReview()) {
+    subjectTab = "cases";
+    openSubject(currentSubject);  // a case's Review ends on the Cases tab (no results screen)
   } else {
     showResults();  // "Finish"
   }
