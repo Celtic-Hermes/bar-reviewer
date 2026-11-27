@@ -18522,6 +18522,102 @@
         "part": "Decision, discussion of lesion",
         "excerpt": "Granting, arguendo, that the assignment of her hereditary share in favor of her sister, Rizalina, should be deemed a partition under Article 1082 of the Civil Code of the Philippines (notwithstanding the fact that it did not totally terminate the indivision among the co-heirs of Irene Santos, since the undivided share of the widower Villegas remained unchanged), still the lesion, if any, suffered by plaintiff from her sale of P50,000.00 of an individed heredity interest worth P54,000.00 is certainly less than the one-fourth (1/4) required by Article 1098 of the Code."
       }
+    },
+    {
+      "id": "q-1170",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Ana sued her nephew Ben to recover a share in land, honestly believing a decades-old partition had cheated her mother. She lost on prescription. Ben proves he lost sleep and worried throughout the case and counterclaims for moral damages. In another case, Carla filed a suit against Dino that she knew was baseless, to force him to sell his land cheaply, and Dino proves the same worry. Who may recover moral damages? Explain.",
+      "suggestedAnswer": {
+        "answer": "Not Ben; possibly Dino. Moral damages may be recovered only in the cases in Articles 2219 and 2220 (also 1764 and 2206) or analogous cases. The worries and anxiety of a defendant in a litigation that was not maliciously instituted are not the moral damages the law contemplates, and the adverse result of an action does not per se make it wrongful, since the law could not have meant to penalize the right to litigate. Ana sued in good faith. Carla's suit was maliciously instituted, which may bring Dino's claim within the cases for moral damages, such as malicious prosecution.",
+        "legalBasis": "In Ramos v. Ramos, \"Articles 2219 and 2220 (also 1764 and 2206) of the Civil Code indicate the cases where morel damages may be recovered. The instant litigation does not fall within any of the enumerated cases ... The worries and anxiety of a defendant in a litigation that was not maliciously instituted are not the moral damages contemplated in the law ... 'The adverse result of an action does not per se make the act wrongful ... The law could not have meant to impose a penalty on the right to litigate.'\" Article 2219(8) lists malicious prosecution.",
+        "application": "Ana's suit was in good faith; Carla's was malicious.",
+        "conclusion": "No moral damages for Ben; possible for Dino. **Bar trap:** the distress of being sued is compensable only when the suit was maliciously instituted."
+      },
+      "keyPoints": [
+        "Moral damages only in Arts. 2219, 2220 (and 1764, 2206) or analogous cases",
+        "Worry from a suit not maliciously instituted is not compensable",
+        "Adverse result does not make a suit wrongful",
+        "No penalty on the right to litigate",
+        "Malicious suit may support moral damages"
+      ],
+      "caseIds": [
+        "case-0076"
+      ],
+      "source": {
+        "caseTitle": "Ramos, et al. v. Ramos, et al.",
+        "grNumber": "G.R. No. L-19872",
+        "url": "https://lawphil.net/judjuris/juri1974/dec1974/gr_l_19872_1974.html",
+        "part": "Decision, discussion of the defendants' appeal (moral damages)",
+        "excerpt": "Articles 2219 and 2220 (also 1764 and 2206) of the Civil Code indicate the cases where morel damages may be recovered. The instant litigation does not fall within any of the enumerated cases. Nor can it be regarded as analogous to any of the cases mentioned in those articles. Hence, defendants' claim for moral damages cannot be sustained (Ventanilla vs. Centeno, 110 Phil. 811, 814). The worries and anxiety of a defendant in a litigation that was not maliciously instituted are not the moral damages contemplated in the law (Solis & Yarisantos vs. Salvador, L-17022, August 14, 1965, 14 SCRA 887). \"The adverse result of an action does not per se make the act wrongful and subject the actor to the payment of moral damages. The law could not have meant to impose a penalty on the right to litigate, such right is so precious that moral damages may not be charged on those who may exercise it erroneously.\""
+      }
+    },
+    {
+      "id": "q-1171",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Eva won a suit filed against her by Felix, who honestly believed his claim was valid. Eva asks for attorney's fees under Article 2208 because she won, and, for the first time on appeal, for exemplary damages. No compensatory or moral damages were awarded to her. Should either be granted? Explain.",
+      "suggestedAnswer": {
+        "answer": "Neither. An adverse decision does not by itself justify attorney's fees to the winning party, as it is not sound public policy to set a premium on the right to litigate; where the plaintiff honestly thought he had a good cause of action and acted in good faith, the suit cannot be said to be manifestly unfounded or maliciously filed. Exemplary damages cannot be granted where no compensatory or moral damages have been awarded, especially when raised only on appeal as an afterthought.",
+        "legalBasis": "In Ramos v. Ramos, \"it cannot be asseverated with dogmatic finality that plaintiffs' action was manifestly unfounded or was maliciously filed ... the plaintiffs honestly thought that they had a good cause of action. They acted in evident good faith ... It is not sound public policy to set a premium on the right to litigate. An adverse decision does not ipso facto justify the award of attorney's fees to the winning party ... Since no compensatory and moral damages have been awarded in this case, defendants' claim for exemplary damages, which was ventilated for the first time in their appellants' brief, may be as an afterthought, cannot be granted.\"",
+        "application": "Felix sued in good faith, and Eva received no compensatory or moral damages.",
+        "conclusion": "No attorney's fees and no exemplary damages. **Bar trap:** exemplary damages need an underlying award, and fees need a ground beyond winning."
+      },
+      "keyPoints": [
+        "Winning does not ipso facto justify attorney's fees",
+        "Good-faith suit is not manifestly unfounded or malicious",
+        "No premium on the right to litigate",
+        "No compensatory or moral damages: no exemplary damages",
+        "Claim raised only on appeal is an afterthought"
+      ],
+      "caseIds": [
+        "case-0076"
+      ],
+      "source": {
+        "caseTitle": "Ramos, et al. v. Ramos, et al.",
+        "grNumber": "G.R. No. L-19872",
+        "url": "https://lawphil.net/judjuris/juri1974/dec1974/gr_l_19872_1974.html",
+        "part": "Decision, discussion of the defendants' appeal (attorney's fees and exemplary damages)",
+        "excerpt": "We hold that, notwithstanding the dismissal of the action, no attorney's fees should be granted to the defendants. Under the facts of the case, it cannot be asseverated with dogmatic finality that plaintiffs' action was manifestly unfounded or was maliciously filed to harass and embarrass the defendants. All indications point to the fact that the plaintiffs honestly thought that they had a good cause of action. They acted in evident good faith. … It is not sound public policy to set a premium on the right to litigate. An adverse decision does not ipso facto justify the award of attorney's fees to the winning party (Herrera vs. Luy Kim, supra; Heirs of Justiva vs. Gustilo, 61 O. G. 6959. Cf. Lazatin vs. Twano and Castro, 112 Phil. 733, 741). Since no compensatory and moral damages have been awarded in this case, defendants' claim for exemplary damages, which was ventilated for the first time in their appellants' brief, may be as an afterthought, cannot be granted(Art. 2229, Civil Code)."
+      }
+    },
+    {
+      "id": "q-1172",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Gina claims that her uncle Hugo holds a parcel of land for her. (a) Gina has no written document and relies on witnesses who will say the uncle orally promised to hold the land in trust for her. (b) Alternatively, she claims a trust arose by operation of law when the land was titled in Hugo's name decades ago, and she sues only forty years later. Can she prove an express trust by oral evidence, and may her action on an implied trust be barred by time? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) No. Express trusts are created by the intention of the trustor or the parties, and no express trust concerning an immovable or any interest therein may be proven by oral evidence. (b) An implied trust, which arises by operation of law, may be proved by oral evidence; but an action to enforce it may be barred: an action for reconveyance based on a constructive trust prescribes, and whether the trust is resulting or constructive, its enforcement may be barred by laches. A suit forty years later is vulnerable on both grounds.",
+        "legalBasis": "In Ramos v. Ramos, \"'Trusts are either express or implied. Express trusts are created by the intention of the trust or of the parties. Implied trusts come into being by operation of law.' ... 'No express trusts concerning an immovable or any interest therein may be proven by oral evidence. An implied trust may be proven by oral evidence.'\" \"With respect to constructive trusts, the rule is different. The prescriptibility of an action for reconveyance based on constructive trust is now settled ... And whether the trust is resulting or constructive, its enforcement may be barred by laches.\"",
+        "application": "Gina's oral evidence cannot prove an express trust over land; her implied-trust claim faces prescription and laches.",
+        "conclusion": "(a) No express trust by oral proof; (b) the implied-trust action may be barred. **Bar trap:** the rule that a trustee's possession is not adverse applies to express trusts, not to constructive ones."
+      },
+      "keyPoints": [
+        "Express trust: by intention; implied trust: by operation of law",
+        "Express trust over immovables cannot be proved orally",
+        "Implied trust may be proved orally",
+        "Action on a constructive trust prescribes",
+        "Resulting or constructive: may be barred by laches"
+      ],
+      "caseIds": [
+        "case-0076"
+      ],
+      "source": {
+        "caseTitle": "Ramos, et al. v. Ramos, et al.",
+        "grNumber": "G.R. No. L-19872",
+        "url": "https://lawphil.net/judjuris/juri1974/dec1974/gr_l_19872_1974.html",
+        "part": "Decision, discussion of trusts, prescription and laches",
+        "excerpt": "\"Trusts are either express or implied. Express trusts are created by the intention of the trust or of the parties. Implied trusts come into being by operation of law.\" (Art. 1144, Civil Code). \"No express trusts concerning an immovable or any interest therein may be proven by oral evidence. An implied trust may be proven by oral evidence\" (Ibid, Arts. 1443 and 1457). … That rule applies squarely to express trusts. The basis of the rule is that the possession of a trustee is not adverse. … With respect to constructive trusts, the rule is different. The prescriptibility of an action for reconveyance based on constructive trust is now settled … And whether the trust is resulting or constructive, its enforcement may be barred by laches"
+      }
     }
   ]
 }
