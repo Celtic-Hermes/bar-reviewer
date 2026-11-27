@@ -661,6 +661,21 @@
       "ruling": "The appeal was denied and the award modified. (1) An action for damages for injury to person or property survives death (Rule 87, Sec. 1), so the heirs were properly substituted. (2) Under Article 1756 a carrier is presumed negligent when a passenger is injured; the passenger need only show the contract and that the injury happened during it. Force majeure excuses only if human agency is excluded; the captain's gross negligence was the proximate cause. (3) Moral damages in carriage are recoverable when a passenger dies or the carrier acted with fraud or bad faith, and also when the breach is wanton and deliberately injurious; the crew's total negligence and the carrier's indifference warranted ₱1,000,000. The carrier was liable for belongings kept by the passenger without prior notice, since letting him board with them was notice. Temperate damages of ₱120,000 were proper because some pecuniary loss was suffered but its value could not be proved with certainty. Exemplary damages of ₱1,000,000 were added for wanton and reckless conduct; they need not be specifically pleaded or proved.",
       "keyDoctrine": "Temperate damages (Art. 2224) may be awarded when some pecuniary loss has been suffered but its amount cannot be proved with certainty. Moral damages in breach of carriage are recoverable when a passenger dies or the carrier acted fraudulently or in bad faith, or when the breach is wanton and deliberately injurious; their amount must reasonably approximate the injury and not punish. In contracts, exemplary damages may be awarded at the court's discretion for wanton, fraudulent, reckless, oppressive or malevolent conduct; they need not be specifically pleaded or proved. Wanton means extreme recklessness and utter disregard for others' rights; reckless means an extreme departure from ordinary care where a high danger is apparent.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2016/jul2016/gr_172682_2016.html"
+    },
+    {
+      "id": "case-0092",
+      "status": "draft",
+      "name": "Pleno v. Court of Appeals, et al.",
+      "grNumber": "G.R. No. L-56505",
+      "year": 1988,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "facts": "On December 21, 1971, a delivery truck of Philippine Paper Products, driven by its employee Florante de Luna, sideswiped Maximo Pleno's Volkswagen van while overtaking it on the South Superhighway, sending the van into a parked truck. De Luna sped away. Pleno, a mechanical engineer and founder of Mayon Ceramics, suffered multiple fractures and head injuries, underwent about five operations over almost five months in hospital, was left with a shorter left leg and double vision, and withdrew from business and social life. The company did not report the accident, and its lawyer tried to bribe a police investigator to keep the driver's involvement from the victim's family. The trial court awarded ₱48,244.08 actual damages, ₱200,000 temperate damages (for loss or impairment of earning capacity, his actual income not having been sufficiently established), ₱200,000 moral damages, ₱50,000 exemplary damages and ₱30,000 attorney's fees. The Court of Appeals halved the temperate and moral damages and attorney's fees as \"too high,\" and held the employer only subsidiarily liable.",
+      "issue": "(1) Is the employer's liability in quasi-delict subsidiary? (2) Was the Court of Appeals right to reduce the temperate and moral damages?",
+      "ruling": "The petition was granted. (1) An employer's liability in quasi-delict is primary and solidary, not subsidiary, as held in a long line of cases. (2) The award of temperate, moral and exemplary damages and attorney's fees lies in the court's discretion based on the facts of each case, provided it is not excessive. Temperate damages are included within compensatory damages; where from the nature of the case definite proof of pecuniary loss cannot be offered though the court is convinced there was such loss, the judge may calculate moderate damages rather than leave the plaintiff without redress. Moral damages must not be palpably and scandalously excessive, and the actual losses and gravity of the injuries must be considered. The trial court's awards were well supported by the evidence, including temperate damages for loss or impairment of earning capacity whose amount was not established, and exemplary damages for the hiring of a driver with a past record, the hit-and-run, and the company's cover-up. The Court of Appeals gave no sufficient reason for reducing them, so the trial court's decision was reinstated, with attorney's fees set at ₱20,000.",
+      "keyDoctrine": "Temperate or moderate damages are included within compensatory damages and may be awarded where, from the nature of the case, definite proof of pecuniary loss cannot be offered although the court is convinced there was such loss, such as loss or impairment of earning capacity whose amount is not established. The amount of temperate, moral and exemplary damages lies in the court's discretion but must not be excessive; moral damages must not be palpably and scandalously excessive and should consider the actual losses and gravity of the injuries. An employer's liability for its employee's quasi-delict is primary and solidary.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri1988/may1988/gr_l-56505_1988.html"
     }
   ],
   "questions": [
@@ -13502,6 +13517,277 @@
         "url": "https://lawphil.net/judjuris/juri2016/jul2016/gr_172682_2016.html",
         "part": "Ruling of the Court, II (presumption of negligence)",
         "excerpt": "The presumption of negligence applies so long as there is evidence showing that: (a) a contract exists between the passenger and the common carrier; and (b) the injury or death took place during the existence of such contract. In such event, the burden shifts to the common carrier to prove its observance of extraordinary diligence, and that an unforeseen event or force majeure had caused the injury."
+      }
+    },
+    {
+      "id": "q-1011",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "A businessman was disabled in a road accident caused by a company driver. He proved his hospital bills, but his actual income was not sufficiently established, so the trial court could not award actual damages for his lost earnings. It instead awarded temperate damages for loss or impairment of earning capacity. Is this proper? Explain the nature of temperate damages.",
+      "suggestedAnswer": {
+        "answer": "Yes. Temperate damages are included within the context of compensatory damages. Where, from the nature of the case, definite proof of pecuniary loss cannot be offered although the court is convinced there has been such loss, the judge may calculate moderate damages rather than let the plaintiff suffer without redress. Loss or impairment of earning capacity, where the actual income has not been sufficiently established, may be compensated this way.",
+        "legalBasis": "In Pleno v. Court of Appeals, \"[t]emperate damages are included within the context of compensatory damages.\" Quoting Araneta v. Bank of America, \"[t]here are cases where from the nature of the case, defenite proof of pecuniary loss cannot be offered, although the court is convinced that there has been such loss ... The judge should be empowered to calculate moderate damages in such cases, rather than that the plaintiff should suffer, without redress from the defendant's wrongful act.\" The Court reinstated the trial court's finding that since Pleno's \"actual income however has not been sufficiently established ... an award of temperate or moderate damages may still be made on loss or impairment of earning capacity.\"",
+        "application": "The accident left the businessman disabled; the loss of earning capacity is certain, only its amount is not established.",
+        "conclusion": "Temperate damages are proper. **Bar trap:** failing to prove actual income defeats actual damages for lost earnings, not all recovery for the impaired earning capacity."
+      },
+      "keyPoints": [
+        "Temperate damages are within compensatory damages",
+        "Definite proof of pecuniary loss cannot be offered, but loss is certain",
+        "The judge may calculate moderate damages",
+        "Better than leaving the plaintiff without redress",
+        "Applied to loss or impairment of earning capacity with unproved income"
+      ],
+      "caseIds": [
+        "case-0092"
+      ],
+      "source": {
+        "caseTitle": "Pleno v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-56505",
+        "url": "https://lawphil.net/judjuris/juri1988/may1988/gr_l-56505_1988.html",
+        "part": "Decision, on the amount of temperate damages",
+        "excerpt": "Temperate damages are included within the context of compensatory damages (Radio Communications of the Philippines, Inc. (RCPI) v. Court of Appeals, supra.). In arriving at a reasonable level of temperate damages to be awarded, trial courts are guided by our ruling that: ... There are cases where from the nature of the case, defenite proof of pecuniary loss cannot be offered, although the court is convinced that there has been such loss. For instance, injury to one's commercial credit or to the goodwill of a business firm is often hard to show certainty in terms of money. Should damages be denied for that reason? The judge should be empowered to calculate moderate damages in such cases, rather than that the plaintiff should suffer, without redress from the defendant's wrongful act. … His actual income however has not been sufficiently established so that this Court cannot award actual damages, but, an award of temperate or moderate damages may still be made on loss or impairment of earning capacity."
+      }
+    },
+    {
+      "id": "q-1012",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "In a quasi-delict case, the Court of Appeals reduced the trial court's awards of temperate and moral damages by half simply because they were \"too high,\" and because the driver was \"a mere driver\" and his employer was \"only subsidiarily liable.\" (a) Is the employer's liability subsidiary? (b) Was the reduction justified? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) No. The liability of an employer in quasi-delict is primary and solidary, not subsidiary. (b) No. The award of temperate, moral and exemplary damages lies in the court's discretion based on the facts of each case, subject only to the condition that it not be excessive. Where the trial court's findings are clear and each item is supported by the evidence, an appellate court that gives no substantial reasons and points to no misimpression of facts should not alter the amounts.",
+        "legalBasis": "In Pleno v. Court of Appeals, \"the liability of an employer in quasi-delict is primary and solidary and not subsidiary.\" \"The award of temperate, moral, and exemplary damages as well as attorney's fees lies upon the discretion of the court based on the facts and circumstances of each case,\" subject to \"the condition that the award for damages is not excessive.\" \"Each item of damages is adequately supported by evidence on record. On the other hand, there are no substantial reasons and no references to any misimpressions of facts in the appellate decision.\"",
+        "application": "The reduction rested on a wrong premise (subsidiary liability) and gave no sufficient reasons against the trial court's well-supported findings.",
+        "conclusion": "(a) Primary and solidary; (b) not justified, so the trial court's awards were reinstated. **Bar trap:** the employer's liability for its employee's quasi-delict is direct, not merely subsidiary."
+      },
+      "keyPoints": [
+        "Employer's liability in quasi-delict: primary and solidary",
+        "Amount of temperate, moral, exemplary damages: court's discretion",
+        "Subject to the condition that the award is not excessive",
+        "Appellate reduction needs substantial reasons",
+        "Trial court's well-supported awards reinstated"
+      ],
+      "caseIds": [
+        "case-0092"
+      ],
+      "source": {
+        "caseTitle": "Pleno v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-56505",
+        "url": "https://lawphil.net/judjuris/juri1988/may1988/gr_l-56505_1988.html",
+        "part": "Decision, on the employer's liability and on the reduction of damages",
+        "excerpt": "We sustain the view of the petitioner that the ability of an employer in quasi-delict is primary and solidary and not subsidiary. … As stated earlier, the employer's liability in quasi-delict is primary and solidary. The award of temperate, moral, and exemplary damages as well as attorney's fees lies upon the discretion of the court based on the facts and circumstances of each case. … The court's discretion is, of course, subject to the condition that the award for damages is not excessive under the attendant facts and circumstance of the case. … We rule that the lower court's awards of damages are more consonant with the factual circumstances of the instant case. The trial court's findings of facts are clear and well-developed. Each item of damages is adequately supported by evidence on record. On the other hand, there are no substantial reasons and no references to any misimpressions of facts in the appellate decision."
+      }
+    },
+    {
+      "id": "q-1013",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "(a) What yardstick did the Court apply in judging whether moral damages are excessive, and what must be considered in arriving at a reasonable level? (b) On what grounds were exemplary damages awarded against the driver and his employer in Pleno v. Court of Appeals?",
+      "suggestedAnswer": {
+        "answer": "(a) The amount awarded should not be palpably and scandalously excessive so as to indicate that it was the result of passion, prejudice or corruption on the part of the trial court; and the actual losses sustained and the gravity of the injuries must be considered. (b) Against the driver: he left the scene without assisting the victims or reporting to the authorities. Against the employer: gross negligence in hiring the driver despite his past record, and its failure to report the accident and its lawyer's attempt to bribe the police, which showed ratification and bad faith.",
+        "legalBasis": "\"In the case of moral damages, the yardstick shaould be that the 'amount awarded should not be palpably and scandalously excessive' so as to indicate that it was the result of passion, prejudice or corruption on the part of the trial court ... Moreover, the actual losses sustained by the aggrieved parties and the gravity of the injuries must be considered.\" The trial court found exemplary damages proper because \"gross negligence was committed in the hiring of driver de Luna,\" De Luna \"left the scene of the incident without assisting the victims,\" and the corporation's failure to report and its lawyer's attempt \"to bribe the police officers ... shows that the corporation ratified the act of their employees and such act also shows bad faith.\" The Supreme Court affirmed these awards.",
+        "application": "The grave, lasting injuries justified the moral damages; the hit-and-run and cover-up justified exemplary damages as an example.",
+        "conclusion": "As stated. **Bar trap:** exemplary damages may rest on conduct after the accident, such as fleeing or covering up, not only on the accident itself."
+      },
+      "keyPoints": [
+        "Moral damages: not palpably and scandalously excessive",
+        "Not a result of passion, prejudice or corruption",
+        "Consider actual losses and gravity of the injuries",
+        "Exemplary: gross negligence in hiring a driver with a past record",
+        "Exemplary: hit-and-run and the employer's cover-up (ratification, bad faith)"
+      ],
+      "caseIds": [
+        "case-0092"
+      ],
+      "source": {
+        "caseTitle": "Pleno v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-56505",
+        "url": "https://lawphil.net/judjuris/juri1988/may1988/gr_l-56505_1988.html",
+        "part": "Decision, on the amount of moral damages and on exemplary damages (trial court's findings, adopted)",
+        "excerpt": "In the case of moral damages, the yardstick shaould be that the \"amount awarded should not be palpably and scandalously excessive\" so as to indicate that it was the result of passion, prejudice or corruption on the part of the trial court (Gerada v. Warner Barnes & Co., Inc., 57 O.G. (4) 7347, 7358; Sadie v. Bachrach Motor Co., Inc., 57 O.G. (4) 636; Adone v. Bachrach Motor Co., Inc., 656 cited in Prudenciado v. Alliance Transport System, Inc., supra.). Moreover, the actual losses sustained by the aggrieved parties and the gravity of the injuries must be considered in arriving at reasonable levels … Pleno is also entitled to exemplary damages since it appears that gross negligence was committed in the hiring of driver de Luna. In spite of his past record, he was still hired by the corporation. As regards de Luna, the very fact that he left the scene of the incident without assisting the victims and without reporting to the authorities entitles an award of exemplary damages, so as to serve as an example that in cases of accidents of this kind, the drivers involved should not leave their victims behind but should stop to assist the victims or if this is not possible, to report the matter immediately to the authorities. That the corporation did not also report the matter to the authorities and that their lawyer would attempt to bribe the police officers in order that the incident would be kept a secret shows that the corporation ratified the act of their employees and such act also shows bad faith."
+      }
+    },
+    {
+      "id": "q-1014",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "Ana owns a small bakery whose goodwill suffered when a supplier's negligence caused a widely reported food scare traced to its flour. She cannot show in exact figures how much her business lost, though the court is convinced it lost customers. Ben, a neighboring shop owner, also claims damages from the same scare but offers no evidence that his shop lost anything. May the court award moderate (temperate) damages to Ana, Ben, or both? Explain.",
+      "suggestedAnswer": {
+        "answer": "Only to Ana. Injury to the goodwill of a business is often hard to show with certainty in money; where the court is convinced there has been pecuniary loss but definite proof cannot be offered, the judge may calculate moderate damages rather than leave the plaintiff without redress. Ben has not convinced the court of any loss, so there is nothing to compensate.",
+        "legalBasis": "In Pleno v. Court of Appeals, quoting Araneta v. Bank of America: \"There are cases where from the nature of the case, defenite proof of pecuniary loss cannot be offered, although the court is convinced that there has been such loss. For instance, injury to one's commercial credit or to the goodwill of a business firm is often hard to show certainty in terms of money ... The judge should be empowered to calculate moderate damages in such cases, rather than that the plaintiff should suffer, without redress.\"",
+        "application": "Ana's loss of goodwill is real though hard to measure; Ben shows no loss at all.",
+        "conclusion": "Ana may recover temperate damages; Ben may not. **Bar trap:** the court must be convinced that there was a loss; temperate damages relieve only the difficulty of measuring it."
+      },
+      "keyPoints": [
+        "Injury to commercial credit or goodwill is hard to measure in money",
+        "Court must be convinced that there was a loss",
+        "Judge may calculate moderate damages",
+        "No proven loss: no temperate damages"
+      ],
+      "caseIds": [
+        "case-0092"
+      ],
+      "source": {
+        "caseTitle": "Pleno v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-56505",
+        "url": "https://lawphil.net/judjuris/juri1988/may1988/gr_l-56505_1988.html",
+        "part": "Decision, on the amount of temperate damages (Araneta v. Bank of America, quoted)",
+        "excerpt": "... There are cases where from the nature of the case, defenite proof of pecuniary loss cannot be offered, although the court is convinced that there has been such loss. For instance, injury to one's commercial credit or to the goodwill of a business firm is often hard to show certainty in terms of money. Should damages be denied for that reason? The judge should be empowered to calculate moderate damages in such cases, rather than that the plaintiff should suffer, without redress from the defendant's wrongful act."
+      }
+    },
+    {
+      "id": "q-1015",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "Carla was injured by a delivery truck driven by Dino, an employee of Eva's company. The company proves Dino was licensed, tested and experienced, and points out that a past reckless imprudence charge against him ended in an acquittal. But it presents no evidence that the acquittal came after a trial on the merits, its witnesses spoke only in generalities, and the company learned of the accident only when police came weeks later. Did the company prove due diligence in the selection and supervision of its driver? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. An acquittal not shown to have been made after a trial on the merits does not prove the driver's innocence, so a diligent and thorough inquiry into his background was not made. General testimony about his driving is not enough; the company should have shown its hiring procedures. And not knowing for weeks that its truck was in an accident shows inexcusable laxity in supervision.",
+        "legalBasis": "In Pleno v. Court of Appeals, the Supreme Court denied the employer's own petition and let the appellate court's findings stand. Those findings were that the driver's acquittal was not shown to be \"in a trial on the merits,\" so \"his innocence was not therefore proven,\" and \"[a] diligent and thorough inquiry of the background of driver De Luna was not undertaken.\" The witnesses' testimonies dealt \"merely on generalities\"; \"[t]hey should have declared on the different company procedures in hiring its employees.\" The employer did not know of the accident until weeks later, \"evidence ... that there was unexcusable laxity in the supervision of its driver.\" The employer's liability in quasi-delict is \"primary and solidary.\"",
+        "application": "Eva's company has the same gaps: an unexplained acquittal, general testimony, and late knowledge of the accident.",
+        "conclusion": "Due diligence was not proved, and the company is primarily and solidarily liable. **Bar trap:** a license, a driving test and an acquittal of unknown basis do not by themselves prove diligence in selection."
+      },
+      "keyPoints": [
+        "Acquittal not after trial on the merits does not prove innocence",
+        "Thorough background inquiry required",
+        "General testimony is not enough; show hiring procedures",
+        "Late knowledge of the accident shows lax supervision",
+        "Employer primarily and solidarily liable"
+      ],
+      "caseIds": [
+        "case-0092"
+      ],
+      "source": {
+        "caseTitle": "Pleno v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-56505",
+        "url": "https://lawphil.net/judjuris/juri1988/may1988/gr_l-56505_1988.html",
+        "part": "Decision, Court of Appeals' findings on the employer's diligence (affirmed)",
+        "excerpt": "Appellant Corporation argued that in that case driver De Luna was acquitted. True. But the records did not show that his acquittal was in a trial on the merits. The case may have been dismissed and he was acquitted for failure of the prosecution to prosecute thru desistance of the aggrieved party. his innocence was not therefore proven. It is not enough that defendant Corporation hold high and waves driver's acquittal of that charge but Corporation should have presented evidence that in the trial on the merits his employed defendant driver was declared innocent. A diligent and thorough inquiry of the background of driver De Luna was not undertaken. … Their testimonies, aside from dealing merely on generalities and mere observations on defendant driver De Luna's driving were not thorough. It war, not enough. They should have declared on the different company procedures in hiring its employees, particularly its drivers. There are steps, manual of procedures to be followed strictly by employers before hiring its employees. In the case at bar, evidence has it that there was unexcusable laxity in the supervision of its driver by the Corporation."
+      }
+    },
+    {
+      "id": "q-1016",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "Felix's van was hit by a truck driven by Gina, a company driver. (a) Gina stopped, called an ambulance and reported the accident to the police at once. (b) In a similar accident, Hugo, another company driver, sped away from the scene without helping the injured victim, and his employer's lawyer later offered the police money to keep the driver's identity secret. In which case would an award of exemplary damages find support in Pleno v. Court of Appeals? Explain.",
+      "suggestedAnswer": {
+        "answer": "In case (b). Exemplary damages were awarded against a driver who left the scene without assisting the victims or reporting to the authorities, to serve as an example that drivers should stop to assist victims or report the matter at once. Against the employer, failing to report and attempting to bribe the police showed that it ratified its employee's acts and acted in bad faith. Gina's conduct in (a) is the opposite of what the award was meant to deter.",
+        "legalBasis": "In Pleno, the trial court's ruling, affirmed by the Supreme Court, held that \"the very fact that he left the scene of the incident without assisting the victims and without reporting to the authorities entitles an award of exemplary damages, so as to serve as an example that in cases of accidents of this kind, the drivers involved should not leave their victims behind,\" and that the corporation's lawyer's attempt \"to bribe the police officers ... shows that the corporation ratified the act of their employees and such act also shows bad faith.\"",
+        "application": "(a) Gina acted responsibly after the accident. (b) Hugo fled, and his employer tried to cover up.",
+        "conclusion": "Exemplary damages are supported in (b), not on the post-accident conduct in (a). **Bar trap:** negligence causing the accident is not by itself the ground relied on; the flight and the cover-up were."
+      },
+      "keyPoints": [
+        "Leaving the scene without helping or reporting supports exemplary damages",
+        "Purpose: an example that drivers should stop, assist or report",
+        "Employer's failure to report and attempted bribery: ratification and bad faith",
+        "Responsible post-accident conduct is not the target of the award"
+      ],
+      "caseIds": [
+        "case-0092"
+      ],
+      "source": {
+        "caseTitle": "Pleno v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-56505",
+        "url": "https://lawphil.net/judjuris/juri1988/may1988/gr_l-56505_1988.html",
+        "part": "Decision, on exemplary damages (trial court's findings, adopted)",
+        "excerpt": "As regards de Luna, the very fact that he left the scene of the incident without assisting the victims and without reporting to the authorities entitles an award of exemplary damages, so as to serve as an example that in cases of accidents of this kind, the drivers involved should not leave their victims behind but should stop to assist the victims or if this is not possible, to report the matter immediately to the authorities. That the corporation did not also report the matter to the authorities and that their lawyer would attempt to bribe the police officers in order that the incident would be kept a secret shows that the corporation ratified the act of their employees and such act also shows bad faith. Hence, Id corporation is able to pay exemplary damages."
+      }
+    },
+    {
+      "id": "q-1017",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "According to Pleno v. Court of Appeals, temperate damages",
+      "choices": {
+        "A": "are a form of punishment for the wrongdoer.",
+        "B": "are included within the context of compensatory damages.",
+        "C": "may be awarded only in breaches of contract.",
+        "D": "require definite proof of the amount of pecuniary loss."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** \"Temperate damages are included within the context of compensatory damages.\" **A is wrong:** they compensate a loss. **C is wrong:** Pleno is a quasi-delict case. **D is wrong:** they apply where \"defenite proof of pecuniary loss cannot be offered, although the court is convinced that there has been such loss.\" **Bar trap:** they compensate a real but unmeasured loss.",
+      "caseIds": [
+        "case-0092"
+      ],
+      "source": {
+        "caseTitle": "Pleno v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-56505",
+        "url": "https://lawphil.net/judjuris/juri1988/may1988/gr_l-56505_1988.html",
+        "part": "Decision, on the amount of temperate damages",
+        "excerpt": "Temperate damages are included within the context of compensatory damages (Radio Communications of the Philippines, Inc. (RCPI) v. Court of Appeals, supra.)."
+      }
+    },
+    {
+      "id": "q-1018",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "In Pleno v. Court of Appeals, the Court held that the liability of an employer in quasi-delict is",
+      "choices": {
+        "A": "subsidiary, arising only when the employee cannot pay.",
+        "B": "merely moral, not pecuniary.",
+        "C": "primary and solidary, not subsidiary.",
+        "D": "limited to actual damages."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** \"[T]he ability of an employer in quasi-delict is primary and solidary and not subsidiary. This, we have ruled in a long line of cases.\" **A is wrong:** the Court of Appeals erred in so holding. **B and D are wrong:** the employer was held for actual, temperate, moral and exemplary damages. **Bar trap:** the Court of Appeals erred precisely by treating it as subsidiary and cutting the awards on that basis.",
+      "caseIds": [
+        "case-0092"
+      ],
+      "source": {
+        "caseTitle": "Pleno v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-56505",
+        "url": "https://lawphil.net/judjuris/juri1988/may1988/gr_l-56505_1988.html",
+        "part": "Decision, on the employer's liability",
+        "excerpt": "We sustain the view of the petitioner that the ability of an employer in quasi-delict is primary and solidary and not subsidiary. This, we have ruled in a long line of cases."
+      }
+    },
+    {
+      "id": "q-1019",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "In Pleno v. Court of Appeals, the yardstick for moral damages is that the amount awarded",
+      "choices": {
+        "A": "must equal the actual damages proved.",
+        "B": "should not be palpably and scandalously excessive so as to indicate passion, prejudice or corruption on the part of the trial court.",
+        "C": "may never exceed the temperate damages.",
+        "D": "must be fixed by a schedule set by law."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** \"[T]he yardstick shaould be that the 'amount awarded should not be palpably and scandalously excessive' so as to indicate that it was the result of passion, prejudice or corruption on the part of the trial court.\" The actual losses and the gravity of the injuries must also be considered. **A, C and D are wrong:** none is the standard the Court stated. **Bar trap:** an appellate court needs real reasons, not just \"too high,\" to cut a well-supported award.",
+      "caseIds": [
+        "case-0092"
+      ],
+      "source": {
+        "caseTitle": "Pleno v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-56505",
+        "url": "https://lawphil.net/judjuris/juri1988/may1988/gr_l-56505_1988.html",
+        "part": "Decision, on the amount of moral damages",
+        "excerpt": "In the case of moral damages, the yardstick shaould be that the \"amount awarded should not be palpably and scandalously excessive\" so as to indicate that it was the result of passion, prejudice or corruption on the part of the trial court"
       }
     }
   ]
