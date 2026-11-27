@@ -571,6 +571,21 @@
       "ruling": "(1) No perfected contract. A contract is perfected only by an absolute and unqualified acceptance; ABS-CBN's draft contract was a counter-offer, which VIVA's Board rejected, and del Rosario had no specific authority to bind VIVA. ABS-CBN's right of first refusal had already been exercised. (2) But the Court found for ABS-CBN on damages, and the petition was granted. RBS's claim did not arise from contract, quasi-contract, delict or quasi-delict but from the filing of the suit, so it could rest only on Articles 19, 20 and 21, at whose core is malice or bad faith, which must be proved. ABS-CBN was honestly convinced of its cause; an adverse result does not make a suit wrongful, and damage from the exercise of a right is damnum absque injuria. The counterbond premium was not chargeable to ABS-CBN, since RBS did not need a counterbond, and the advertisements had no legal basis as damages. Attorney's fees need factual, legal and equitable justification; no premium is placed on the right to litigate. Moral damages compensate actual suffering and are not a penalty, and they cannot be granted to a corporation, which has no feelings or nervous system; the contrary statement in People v. Manero and Mambulao Lumber was obiter dictum. Exemplary damages also failed for lack of malice. Only the unappealed attorney's fees in favor of VIVA remained.",
       "keyDoctrine": "Moral damages compensate actual suffering, not punish the wrongdoer, and must be proportionate to the suffering. As held here, a corporation, having no feelings or nervous system, cannot be awarded moral damages (the statement in Manero and Mambulao Lumber that it may when its good reputation is debased was called obiter dictum). Exemplary damages are imposed by way of example in addition to other damages, on the grounds set by law. Claims arising from the mere filing of a suit rest on Articles 19, 20 and 21, which require proved malice or bad faith; damage from the exercise of a right is damnum absque injuria. A qualified acceptance is a counter-offer.",
       "sourceUrl": "https://lawphil.net/judjuris/juri1999/jan1999/gr_128690_1999.html"
+    },
+    {
+      "id": "case-0086",
+      "status": "draft",
+      "name": "National Power Corporation v. Philipp Brothers Oceanic, Inc.",
+      "grNumber": "G.R. No. 126204",
+      "year": 2001,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "facts": "In 1987 Philipp Brothers Oceanic (PHIBRO) won NAPOCOR's bid to supply imported coal for the Calaca power plant, with delivery due within 30 days after it received the letter of credit. Strikes in Australia's coal industry delayed the first shipment to November 1987. Meanwhile PHIBRO, while still not delivering under the contract, unexpectedly offered NAPOCOR immediate delivery of 60,000 metric tons of coal at a lower price than a rival supplier. When NAPOCOR held a new bidding, it disapproved PHIBRO's pre-qualification, citing its impaired track record; NAPOCOR had reserved the right to reject the bids of anyone who previously failed to perform a contract on time. PHIBRO sued. The trial court, affirmed by the Court of Appeals, held the delay excused by force majeure and ordered NAPOCOR to reinstate PHIBRO and pay US$864,000 in actual damages (lost profits from future biddings), US$100,000 moral damages, US$50,000 exemplary damages and litigation expenses and attorney's fees.",
+      "issue": "(1) Was PHIBRO's delay excused? (2) Did NAPOCOR abuse its right in disqualifying PHIBRO, so as to be liable for actual, moral and exemplary damages and attorney's fees?",
+      "ruling": "The decision was modified and all the damages, expenses, attorney's fees and costs were deleted. (1) The strikes were force majeure under the Civil Code and the parties' own clause, so PHIBRO was not liable for the delay. (2) But NAPOCOR did not act in bad faith. Where the government reserves the right to reject bids, it has wide discretion, and a person who merely uses a right without bad faith or intent to injure is not liable for damage it causes. Under Article 19 a person is protected when he acts in the legitimate exercise of his right, with prudence and in good faith. NAPOCOR honestly believed PHIBRO's track record was seriously impaired, given its non-delivery and its puzzling offer; good faith is judged by the actor's frame of mind at the time. Bad faith is a question of intention, a state of mind with furtive design or some motive of self-interest, ill will or ulterior purpose. Actual damages for lost profits from future biddings were too speculative; they must be proved with a reasonable degree of certainty. Moral damages were improper because there was no bad faith and, as a general rule, a corporation, which cannot suffer mental anguish, is not granted them. Without moral, temperate or compensatory damages there could be no exemplary damages (Art. 2234). Attorney's fees and litigation expenses were not warranted either.",
+      "keyDoctrine": "A person who uses a right without bad faith or intent to injure is not liable for the damage it causes (damnum absque injuria; Art. 19 protects the legitimate, good-faith exercise of a right). Bad faith is a question of intention, judged by the actor's frame of mind at the time. Actual damages, including lost profits, must be proved with a reasonable degree of certainty, not by speculation. Moral damages are, as a general rule, not granted to a corporation. A claimant must first show entitlement to moral, temperate or compensatory damages before exemplary damages may be considered (Art. 2234). Attorney's fees are not awarded simply because a party wins.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2001/nov2001/gr_126204_2001.html"
     }
   ],
   "questions": [
@@ -11789,6 +11804,277 @@
         "url": "https://lawphil.net/judjuris/juri1999/jan1999/gr_128690_1999.html",
         "part": "Ruling, first issue (perfection of contract)",
         "excerpt": "A qualified acceptance, or one that involves a new proposal, constitutes a counter-offer and is a rejection of the original offer. Consequently, when something is desired which is not exactly what is proposed in the offer, such acceptance is not sufficient to generate consent because any modification or variation from the terms of the offer annuls the offer. When Mr. Del Rosario of VIVA met with Mr. Lopez of ABS-CBN at the Tamarind Grill on 2 April 1992 to discuss the package of films, said package of 104 VIVA films was VIVA's offer to ABS-CBN to enter into a new Film Exhibition Agreement. But ABS-CBN, sent, through Ms. Concio, a counter-proposal in the form of a draft contract proposing exhibition of 53 films for a consideration of P35 million. This counter-proposal could be nothing less than the counter-offer of Mr. Lopez during his conference with Del Rosario at Tamarind Grill Restaurant. Clearly, there was no acceptance of VIVA's offer, for it was met by a counter-offer which substantially varied the terms of the offer."
+      }
+    },
+    {
+      "id": "q-0957",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "A government corporation reserved in its bidding rules \"the right to reject the bids of any bidder who has previously failed to properly perform or complete on time any and all contracts.\" A supplier was late in delivering under its earlier contract because of strikes abroad, a delay later held excused by force majeure. Honestly believing the supplier's track record was seriously impaired, the corporation disqualified it from the next bidding. The supplier sues for damages under Article 19. Will the suit prosper? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. The corporation merely used a right it had reserved, without bad faith or intent to injure. Under Article 19, a person is protected when he acts in the legitimate exercise of his right, with prudence and in good faith; a measure taken for self-protection out of a sincere belief does not make one liable, even if it causes damage.",
+        "legalBasis": "In National Power Corporation v. Philipp Brothers Oceanic, Inc., the Court held that \"[w]here a person merely uses a right pertaining to him, without bad faith or intent to injure, the fact that damages are thereby suffered by another will not make him liable.\" Under Article 19, \"a person will be protected only when he acts in the legitimate exercise of his right, that is, when he acts with prudence and in good faith; but not when he acts with negligence or abuse.\" NAPOCOR's act \"was without any intent to injure or a purposive motive to perpetrate damage\"; \"[t]he measure it adopted was one of self-protection.\"",
+        "application": "The corporation had reserved the right to reject bidders with late performance, and it honestly believed the supplier's record was impaired.",
+        "conclusion": "No damages. **Bar trap:** that the supplier's delay was later found excused by force majeure does not by itself make the disqualification an abuse of right; good faith is judged by the actor's mind at the time."
+      },
+      "keyPoints": [
+        "Use of a right without bad faith or intent to injure: no liability",
+        "Art. 19 protects the legitimate exercise of a right, with prudence and good faith",
+        "Reserved right to reject bids gives wide discretion",
+        "Disqualification was a measure of self-protection",
+        "Later finding of force majeure does not show bad faith"
+      ],
+      "caseIds": [
+        "case-0086"
+      ],
+      "source": {
+        "caseTitle": "National Power Corporation v. Philipp Brothers Oceanic, Inc.",
+        "grNumber": "G.R. No. 126204",
+        "url": "https://lawphil.net/judjuris/juri2001/nov2001/gr_126204_2001.html",
+        "part": "Ruling, on the disqualification of PHIBRO (Article 19 and bad faith)",
+        "excerpt": "Owing to the discretionary character of the right involved in this case, the propriety of NAPOCOR's act should therefore be judged on the basis of the general principles regulating human relations, the forefront provision of which is Article 19 of the Civil Code which provides that \"every person must, in the exercise of his rights and in the performance of his duties, act with justice, give everyone his due, and observe honesty and good faith.\" Accordingly, a person will be protected only when he acts in the legitimate exercise of his right, that is, when he acts with prudence and in good faith; but not when he acts with negligence or abuse. … We went over the record of the case with painstaking solicitude and we are convinced that NAPOCOR's act of disapproving PHIBRO's application for pre-qualification to bid was without any intent to injure or a purposive motive to perpetrate damage. Apparently, NAPOCOR acted on the strong conviction that PHIBRO had a \"seriously-impaired\" track record. NAPOCOR cannot be faulted from believing so."
+      }
+    },
+    {
+      "id": "q-0958",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "How did the Court in NAPOCOR v. Philipp Brothers define bad faith, and by what yardstick is good faith determined? Why was it immaterial that the trial court later found the supplier's puzzling offer to have been an innocent attempt to minimize the buyer's losses?",
+      "suggestedAnswer": {
+        "answer": "Bad faith is a question of intention: a corrupt motive operating in the mind, a state of mind affirmatively operating with furtive design or with some motive of self-interest or ill will or for ulterior purpose; its presence may be shown by the party's actuations or by circumstantial evidence. Good faith is measured by the actor's frame of mind at the time he acted, disregarding facts outside his knowledge. So what the trial court later found about the offer did not matter; what mattered was what NAPOCOR reasonably believed then.",
+        "legalBasis": "\"Bad faith has always been a question of intention. It is that corrupt motive that operates in the mind. As understood in law, it contemplates a state of mind affirmatively operating with furtive design or with some motive of self-interest or ill-will or for ulterior purpose.\" \"In determining the existence of good faith, the yardstick is the frame of mind of the actor at the time he committed the act, disregarding actualities or facts outside his knowledge.\" The later finding \"is inconsequential.\"",
+        "application": "At the time, NAPOCOR had reason to doubt the force majeure claim, so it sincerely treated the non-delivery as an impaired record.",
+        "conclusion": "As stated. **Bar trap:** good faith is not judged with hindsight; facts the actor did not know at the time are disregarded."
+      },
+      "keyPoints": [
+        "Bad faith is a question of intention",
+        "Furtive design, motive of self-interest, ill will or ulterior purpose",
+        "Shown by actuations or circumstantial evidence",
+        "Good faith: the actor's frame of mind at the time",
+        "Facts outside the actor's knowledge are disregarded"
+      ],
+      "caseIds": [
+        "case-0086"
+      ],
+      "source": {
+        "caseTitle": "National Power Corporation v. Philipp Brothers Oceanic, Inc.",
+        "grNumber": "G.R. No. 126204",
+        "url": "https://lawphil.net/judjuris/juri2001/nov2001/gr_126204_2001.html",
+        "part": "Ruling, on bad faith and good faith",
+        "excerpt": "In determining the existence of good faith, the yardstick is the frame of mind of the actor at the time he committed the act, disregarding actualities or facts outside his knowledge. … Thus, one who acted pursuant to the sincere belief that another willfully committed an act prejudicial to the interest of the government cannot be considered to have acted in bad faith. Bad faith has always been a question of intention. It is that corrupt motive that operates in the mind. As understood in law, it contemplates a state of mind affirmatively operating with furtive design or with some motive of self-interest or ill-will or for ulterior purpose. While confined in the realm of thought, its presence may be ascertained through the party's actuation or through circumstantial evidence. The circumstances under which NAPOCOR disapproved PHIBRO's pre-qualification to bid do not show an intention to cause damage to the latter. The measure it adopted was one of self-protection. Consequently, we cannot penalize NAPOCOR for the course of action it took. NAPOCOR cannot be made liable for actual, moral and exemplary damages."
+      }
+    },
+    {
+      "id": "q-0959",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "A disqualified bidder was awarded US$864,000 in actual damages, computed as a 3% margin on the volume of coal it \"would have won\" in five future biddings based on its past 80% success rate. Is the award proper? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. Actual damages, including unrealized profits, must be proved with a reasonable degree of certainty by competent proof; courts cannot rely on speculation, conjecture or guesswork. Profits from biddings the bidder had not yet won, which depended on winning and on the government's reserved right to reject bids, are a mere expectancy.",
+        "legalBasis": "\"[T]o recover actual damages, the amount of loss must not only be capable of proof but must actually be proven with reasonable degree of certainty, premised upon competent proof or best evidence obtainable.\" \"A court cannot merely rely on speculations, conjectures, or guesswork.\" While damages include unrealized profits, \"it is imperative that the basis of the alleged unearned profits is not too speculative and conjectural.\" The Court relied on rulings that a loss of profit from a contract still to be bid out \"is a mere expectancy,\" and that bidders' claims cannot prevail over the reservation of the right to reject any or all bids.",
+        "application": "The award assumed the bidder would win future biddings it never entered, a computation built on speculation.",
+        "conclusion": "The award must be deleted. **Bar trap:** lost profits are recoverable in principle (Art. 2200), but only when proved with reasonable certainty, not projected from a past success rate."
+      },
+      "keyPoints": [
+        "Actual damages must be proved with reasonable certainty",
+        "Competent proof or best evidence obtainable",
+        "No speculation, conjecture or guesswork",
+        "Unrealized profits recoverable only on a non-speculative basis",
+        "Profits from future biddings are a mere expectancy"
+      ],
+      "caseIds": [
+        "case-0086"
+      ],
+      "source": {
+        "caseTitle": "National Power Corporation v. Philipp Brothers Oceanic, Inc.",
+        "grNumber": "G.R. No. 126204",
+        "url": "https://lawphil.net/judjuris/juri2001/nov2001/gr_126204_2001.html",
+        "part": "Ruling, on actual damages for lost profits",
+        "excerpt": "Basic is the rule that to recover actual damages, the amount of loss must not only be capable of proof but must actually be proven with reasonable degree of certainty, premised upon competent proof or best evidence obtainable of the actual amount thereof. A court cannot merely rely on speculations, conjectures, or guesswork as to the fact and amount of damages. Thus, while indemnification for damages shall comprehend not only the value of the loss suffered, but also that of the profits which the obligee failed to obtain, it is imperative that the basis of the alleged unearned profits is not too speculative and conjectural as to show the actual damages which may be suffered on a future period."
+      }
+    },
+    {
+      "id": "q-0960",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Ana's trading corporation was wrongly told by a client, Ben's company, that it would never again be invited to bid. (a) The corporation claims moral damages for its \"besmirched reputation\" and \"mental anguish\"; Ben's company acted in good faith. (b) The corporation also claims exemplary damages, though it proved no moral, temperate or compensatory damages. Will either claim prosper? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) No. There was no bad faith, and in any event moral damages are not, as a general rule, granted to a corporation: besmirched reputation cannot cause mental anguish to a corporation, which has no reputation in the sense an individual has and cannot suffer mental anguish. (b) No. Before exemplary damages may be considered, the plaintiff must show that he is entitled to moral, temperate or compensatory damages (Art. 2234).",
+        "legalBasis": "In NAPOCOR v. Philipp Brothers, \"[t]he award of moral damages is likewise improper. To reiterate, NAPOCOR did not act in bad faith. Moreover, moral damages are not, as a general rule, granted to a corporation. While it is true that besmirched reputation is included in moral damages, it cannot cause mental anguish to a corporation.\" \"Neither can we award exemplary damages under Article 2234 of the Civil Code. Before the court may consider the question of whether or not exemplary damages should be awarded, the plaintiff must show that he is entitled to moral, temperate, or compensatory damages.\"",
+        "application": "(a) Ana's company is a corporation and the other party acted in good faith. (b) It proved no moral, temperate or compensatory damages.",
+        "conclusion": "Neither claim prospers. **Bar trap:** the Court said \"as a general rule\"; do not state it as an absolute bar for every case."
+      },
+      "keyPoints": [
+        "No bad faith: no moral damages",
+        "General rule: moral damages not granted to a corporation",
+        "A corporation cannot suffer mental anguish",
+        "Art. 2234: entitlement to moral, temperate or compensatory damages first",
+        "Exemplary damages are not awarded alone"
+      ],
+      "caseIds": [
+        "case-0086"
+      ],
+      "source": {
+        "caseTitle": "National Power Corporation v. Philipp Brothers Oceanic, Inc.",
+        "grNumber": "G.R. No. 126204",
+        "url": "https://lawphil.net/judjuris/juri2001/nov2001/gr_126204_2001.html",
+        "part": "Ruling, on moral and exemplary damages",
+        "excerpt": "The award of moral damages is likewise improper. To reiterate, NAPOCOR did not act in bad faith. Moreover, moral damages are not, as a general rule, granted to a corporation. While it is true that besmirched reputation is included in moral damages, it cannot cause mental anguish to a corporation, unlike in the case of a natural person, for a corporation has no reputation in the sense that an individual has, and besides, it is inherently impossible for a corporation to suffer mental anguish. … Neither can we award exemplary damages under Article 2234 of the Civil Code. Before the court may consider the question of whether or not exemplary damages should be awarded, the plaintiff must show that he is entitled to moral, temperate, or compensatory damages."
+      }
+    },
+    {
+      "id": "q-0961",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Carla agreed to deliver rice to Dino's store within 30 days. Their contract said neither party \"shall be liable for any delay ... if such delay is due to Force Majeure,\" defined to include strikes and typhoons. (a) A typhoon closed the only port for three weeks, making delivery impossible in the normal manner; Carla delivered late. (b) In another month, Carla delivered late, claiming a strike, yet she was offering the same rice to other buyers for immediate delivery at that very time. Is Carla liable for the delay in each case? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) No. No person is responsible for events that could not be foreseen, or which, though foreseen, were inevitable; and the parties expressly agreed that delay due to force majeure, including typhoons, creates no liability. (b) She may be liable. A fortuitous event must make it impossible for the debtor to fulfill the obligation in a normal manner; if she could supply the same goods to others at once, the claimed strike did not make performance impossible.",
+        "legalBasis": "In NAPOCOR v. Philipp Brothers, \"no person shall be responsible for those events which could not be foreseen, or which, though foreseen, were inevitable,\" so \"when an obligor is unable to fulfill his obligation because of a fortuitous event or force majeure, he cannot be held liable for damages.\" The parties also \"explicitly agreed\" in their force majeure clause. But \"one characteristic of a fortuitous event ... is that 'the concurrence must be such as to render it impossible for the debtor to fulfill his obligation in a normal manner,'\" and the Court asked how the supplier \"could assure the immediate delivery of 60,000 metric tons of coal from the same source ... but it could not deliver the coal it had undertaken under its contract.\"",
+        "application": "(a) The typhoon truly made normal delivery impossible. (b) Her offers to others show the strike did not prevent performance.",
+        "conclusion": "(a) Not liable; (b) likely liable. **Bar trap:** naming a force majeure event is not enough; it must make normal performance impossible."
+      },
+      "keyPoints": [
+        "No liability for unforeseeable or inevitable events (Art. 1174)",
+        "Parties may agree on a force majeure clause",
+        "Fortuitous event must make normal performance impossible",
+        "Contrary conduct (supplying others at once) undercuts the claim"
+      ],
+      "caseIds": [
+        "case-0086"
+      ],
+      "source": {
+        "caseTitle": "National Power Corporation v. Philipp Brothers Oceanic, Inc.",
+        "grNumber": "G.R. No. 126204",
+        "url": "https://lawphil.net/judjuris/juri2001/nov2001/gr_126204_2001.html",
+        "part": "Ruling, on the force majeure clause",
+        "excerpt": "Extant in our Civil Code is the rule that no person shall be responsible for those events which could not be foreseen, or which, though foreseen, were inevitable. This means that when an obligor is unable to fulfill his obligation because of a fortuitous event or force majeure, he cannot be held liable for damages for non-performance. In addition to the above legal precept, it is worthy to note that PHIBRO and NAPOCOR explicitly agreed in Section XVII of the \"Bidding Terms and Specifications\" that \"neither seller (PHIBRO) nor buyer (NAPOCOR) shall be liable for any delay in or failure of the performance of its obligations, other than the payment of money due, if any such delay or failure is due to Force Majeure.\" … Of course, NAPOCOR had reason to ponder — how come PHIBRO could assure the immediate delivery of 60,000 metric tons of coal from the same source to arrive at Calaca not later than September 20/21, 1987 but it could not deliver the coal it had undertaken under its contract? Significantly, one characteristic of a fortuitous event, in a legal sense, and consequently in relations to contracts, is that \"the concurrence must be such as to render it impossible for the debtor to fulfill his obligation in a normal manner.\""
+      }
+    },
+    {
+      "id": "q-0962",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Eva sued Felix's company for damages. The company, which honestly believed it had done nothing wrong, resisted the claim and won. The trial court ordered Eva to pay the company's attorney's fees and litigation expenses because \"the judgment is in its favor.\" Is the award proper? Explain.",
+      "suggestedAnswer": {
+        "answer": "Not on that ground. Absent stipulation, attorney's fees may be awarded to the winning party only when the plaintiff's action or the defendant's stand is so untenable as to amount to gross and evident bad faith; they may not be awarded simply because the judgment is favorable, which would impose a premium on the right to redress grievances in court. Litigation expenses follow the same policy: only where the party was compelled to incur them by clearly unjustifiable claims or unreasonable refusal.",
+        "legalBasis": "\"[I]n the absence of stipulation, a winning party may be awarded attorney's fees only in case plaintiff's action or defendant's stand is so untenable as to amount to gross and evident bad faith.\" \"Trial courts must be reminded that attorney's fees may not be awarded to a party simply because the judgment is favorable to him, for it may amount to imposing a premium on the right to redress grievances in court. We adopt the same policy with respect to the expenses of litigation.\"",
+        "application": "The court gave no reason beyond the result; there is no showing that Eva's suit was so untenable as to amount to gross and evident bad faith.",
+        "conclusion": "The award is improper as made. **Bar trap:** \"winning\" is not a ground; the losing side's gross and evident bad faith (or another ground of law) is."
+      },
+      "keyPoints": [
+        "Absent stipulation: only for an action or stand so untenable as to be gross and evident bad faith",
+        "Not simply because the judgment is favorable",
+        "No premium on the right to redress grievances in court",
+        "Same policy for expenses of litigation"
+      ],
+      "caseIds": [
+        "case-0086"
+      ],
+      "source": {
+        "caseTitle": "National Power Corporation v. Philipp Brothers Oceanic, Inc.",
+        "grNumber": "G.R. No. 126204",
+        "url": "https://lawphil.net/judjuris/juri2001/nov2001/gr_126204_2001.html",
+        "part": "Ruling, on attorney's fees and expenses of litigation",
+        "excerpt": "This Court has laid down the rule that in the absence of stipulation, a winning party may be awarded attorney's fees only in case plaintiff's action or defendant's stand is so untenable as to amount to gross and evident bad faith. … Trial courts must be reminded that attorney's fees may not be awarded to a party simply because the judgment is favorable to him, for it may amount to imposing a premium on the right to redress grievances in court. We adopt the same policy with respect to the expenses of litigation. A winning party may be entitled to expenses of litigation only where he, by reason of plaintiff's clearly unjustifiable claims or defendant's unreasonable refusal to his demands, was compelled to incur said expenditures."
+      }
+    },
+    {
+      "id": "q-0963",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Under Article 2234 of the Civil Code, as applied in NAPOCOR v. Philipp Brothers, before the court may consider whether exemplary damages should be awarded, the plaintiff must show that",
+      "choices": {
+        "A": "he is entitled to moral, temperate, or compensatory damages.",
+        "B": "the defendant is a government corporation.",
+        "C": "he has paid attorney's fees.",
+        "D": "the defendant was convicted of a crime."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** \"Before the court may consider the question of whether or not exemplary damages should be awarded, the plaintiff must show that he is entitled to moral, temperate, or compensatory damages.\" **B, C and D are wrong:** none is the threshold Article 2234 requires. **Bar trap:** exemplary damages are never awarded on their own.",
+      "caseIds": [
+        "case-0086"
+      ],
+      "source": {
+        "caseTitle": "National Power Corporation v. Philipp Brothers Oceanic, Inc.",
+        "grNumber": "G.R. No. 126204",
+        "url": "https://lawphil.net/judjuris/juri2001/nov2001/gr_126204_2001.html",
+        "part": "Ruling, on exemplary damages (Article 2234)",
+        "excerpt": "Neither can we award exemplary damages under Article 2234 of the Civil Code. Before the court may consider the question of whether or not exemplary damages should be awarded, the plaintiff must show that he is entitled to moral, temperate, or compensatory damages."
+      }
+    },
+    {
+      "id": "q-0964",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Under NAPOCOR v. Philipp Brothers, where the government has reserved the right to reject any or all bids,",
+      "choices": {
+        "A": "the lowest bidder always has a right to the award.",
+        "B": "the losing bidder has no cause to complain nor right to dispute the choice unless an unfairness or injustice is shown.",
+        "C": "the courts must review every rejection on the merits.",
+        "D": "a rejected bidder is automatically entitled to lost profits."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** \"[W]here the government as advertiser, availing itself of that right, makes its choice in rejecting any or all bids, the losing bidder has no cause to complain nor right to dispute that choice unless an unfairness or injustice is shown.\" **A is wrong:** \"[e]ven the lowest bid or any bid may be rejected.\" **C is wrong:** the discretion, honestly exercised, may not be reviewed by the court. **D is wrong:** lost profits must be proved with reasonable certainty. **Bar trap:** the discretion is wide, but not a shield for bad faith or fraud.",
+      "caseIds": [
+        "case-0086"
+      ],
+      "source": {
+        "caseTitle": "National Power Corporation v. Philipp Brothers Oceanic, Inc.",
+        "grNumber": "G.R. No. 126204",
+        "url": "https://lawphil.net/judjuris/juri2001/nov2001/gr_126204_2001.html",
+        "part": "Ruling, on the reservation of the right to reject bids",
+        "excerpt": "This Court has held that where the right to reject is so reserved, the lowest bid or any bid for that matter may be rejected on a mere technicality. And where the government as advertiser, availing itself of that right, makes its choice in rejecting any or all bids, the losing bidder has no cause to complain nor right to dispute that choice unless an unfairness or injustice is shown. Accordingly, a bidder has no ground of action to compel the Government to award the contract in his favor, nor to compel it to accept his bid. Even the lowest bid or any bid may be rejected."
+      }
+    },
+    {
+      "id": "q-0965",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "In NAPOCOR v. Philipp Brothers, the Court said that moral damages are, as a general rule, not granted to a corporation because",
+      "choices": {
+        "A": "a corporation can always recover actual damages instead.",
+        "B": "corporations are not covered by Article 2219.",
+        "C": "besmirched reputation cannot cause mental anguish to a corporation, which has no reputation in the sense an individual has and cannot suffer mental anguish.",
+        "D": "only government corporations may claim them."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** \"While it is true that besmirched reputation is included in moral damages, it cannot cause mental anguish to a corporation, unlike in the case of a natural person, for a corporation has no reputation in the sense that an individual has, and besides, it is inherently impossible for a corporation to suffer mental anguish.\" **A, B and D are wrong:** none is the reason the Court gave. **Bar trap:** note the words \"as a general rule.\"",
+      "caseIds": [
+        "case-0086"
+      ],
+      "source": {
+        "caseTitle": "National Power Corporation v. Philipp Brothers Oceanic, Inc.",
+        "grNumber": "G.R. No. 126204",
+        "url": "https://lawphil.net/judjuris/juri2001/nov2001/gr_126204_2001.html",
+        "part": "Ruling, on moral damages",
+        "excerpt": "Moreover, moral damages are not, as a general rule, granted to a corporation. While it is true that besmirched reputation is included in moral damages, it cannot cause mental anguish to a corporation, unlike in the case of a natural person, for a corporation has no reputation in the sense that an individual has, and besides, it is inherently impossible for a corporation to suffer mental anguish."
       }
     }
   ]
