@@ -8101,6 +8101,102 @@
         "part": "Decision, the disposition",
         "excerpt": "WHEREFORE, judgment is hereby rendered partially setting aside the decision of the Court of Appeals dated May 21, 1987, insofar as it declared the petitioner, Dennis Lao, solidarily liable with St. Joseph Lumber to pay the damages awarded to the private respondent Benjamin Espiritu. Said petitioner is hereby absolved from any liability to the private respondent arising from the unsuccessful prosecution of Criminal Case No. Q-20086 for estafa against said private respondent."
       }
+    },
+    {
+      "id": "q-0840",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Ana and Ben were passengers of a provincial bus. While the bus was running too fast, a tire burst and the bus fell into a ravine. Ana died; Ben suffered a fractured arm. Nothing shows that the bus company or its driver acted with fraud, malice or bad faith; it was simply the driver's carelessness.\n\n(a) Ana's parents sue the bus company for breach of contract of carriage and ask for moral damages for their mental anguish. Will their claim prosper? Explain.\n\n(b) Ben also sues the bus company for breach of contract of carriage and asks for moral damages for his pain and suffering. Will his claim prosper? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) Yes. When a passenger dies, her ascendants may demand moral damages for mental anguish by reason of her death, and once they prove they are entitled to them, the court must award them. (b) No. A passenger who is only injured cannot recover moral damages in a suit for breach of contract of carriage unless he proves that the carrier acted with fraud or bad faith, and the driver's mere carelessness is not bad faith.",
+        "legalBasis": "Article 1764 of the Civil Code makes Article 2206 apply to the death of a passenger caused by a common carrier's breach of contract, and Article 2206(3) allows the spouse, legitimate and illegitimate descendants and ascendants of the deceased to demand moral damages for mental anguish. Once these heirs claim and prove their entitlement, \"it becomes the duty of the court to award moral damages to the claimant in an amount commensurate with the mental anguish suffered by them.\" But this is the exception: \"where the injured passenger does not die, moral damages are not recoverable unless it is proved that the carrier was guilty of malice or bad faith,\" and \"the mere carelessness of the carrier's driver does not per se constitute or justify an inference of malice or bad faith on the part of the carrier\" (Art. 2220).",
+        "application": "(a) Ana died because of the carrier's breach of the contract of carriage, so her parents, as ascendants, fall under Articles 1764 and 2206(3); they need not prove bad faith. (b) Ben survived, so the exception does not apply. His suit rests on the contract, and the only fault shown is the driver's carelessness in running too fast, which is not malice or bad faith.",
+        "conclusion": "(a) Ana's parents may recover moral damages; (b) Ben may not. **Bar trap:** the same accident gives opposite answers. The death of a passenger is the exception that allows moral damages without proof of bad faith; for an injured passenger suing on the contract, bad faith or fraud must be proved."
+      },
+      "keyPoints": [
+        "Art. 1764 makes Art. 2206 apply to the death of a passenger",
+        "Art. 2206(3): ascendants may demand moral damages for mental anguish",
+        "Once claimed and proved, the court must award them",
+        "Injured passenger who survives: moral damages only if the carrier acted with malice or bad faith (Art. 2220)",
+        "The driver's mere carelessness is not bad faith"
+      ],
+      "caseIds": [
+        "case-0078"
+      ],
+      "source": {
+        "caseTitle": "Mercado, et al. v. Lira, et al.",
+        "grNumber": "G.R. Nos. L-13328-29",
+        "url": "https://lawphil.net/judjuris/juri1961/sep1961/gr_l-13328_1961.html",
+        "part": "Decision, discussion of Articles 1764 and 2206 and of G.R. No. L-13358 (death vs. injury of a passenger)",
+        "excerpt": "Article 2206 states further that \"In addition\" to the amount of at least P3,000.00 to be awarded for the death of a passenger, the spouse, legitimate and illegitimate descendants and ascendants of the deceased may demand moral damages as a consequence of the death of their deceased kin, which simply means that once the above-mentioned heirs of the deceased claim compensation for moral damages and are able to prove that they are entitled to such award, it becomes the duty of the court to award moral damages to the claimant in an amount commensurate with the mental anguish suffered by them. … The exception to the basic rule of damages now under consideration is a mishap resulting in the death of a passenger, in which case Art. 1764 makes the common carrier expressly subject to the rule of Art. 2206, that entitles the spouse, descendants and ascendants of the deceased passenger to 'demand moral damages for mental anguish by reason of the death of the deceased' (Necesito v. Paras, G.R. No. L-10605, Resolution on motion to reconsider, Sept. 11, 1958). But the exceptional rule of Art. 1764 makes it all the more evident that where the injured passenger does not die, moral damages are not recoverable unless it is proved that the carrier was guilty of malice or bad faith. We think it is clear that the mere carelessness of the carrier's driver does not per se constitute or justify an inference of malice or bad faith on the part of the carrier"
+      }
+    },
+    {
+      "id": "q-0841",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Carla was riding a jeepney as a paying passenger when its driver carelessly swerved and hit a lamp post. Carla's leg was broken. Dino, who was walking on the sidewalk and had no dealings with the jeepney, was also hit and injured. No fraud or bad faith of the jeepney operator was shown.\n\n(a) Carla sues the operator for breach of contract of carriage. Her lawyer argues that she may recover moral damages because her case is \"analogous\" to a quasi-delict causing physical injuries under Article 2219(2) of the Civil Code. Is the lawyer correct? Explain.\n\n(b) Dino sues the operator and the driver for his injuries. May he invoke Article 2219(2) as a basis for moral damages? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) No. A passenger injured through the carrier's negligence in breach of the contract of carriage is not within the \"analogous cases\" of Article 2219; for breaches of contract, Article 2220 governs and requires fraud or bad faith. (b) Yes. Dino had no pre-existing contract with the operator, so his case is a quasi-delict, and Article 2219(2) lists quasi-delicts causing physical injuries among the cases where moral damages may be recovered.",
+        "legalBasis": "Article 2219 lists \"(1) A criminal offense resulting in physical injuries; (2) Quasi-delicts causing physical injuries\" among the cases for moral damages, while Article 2220 provides that the same rule (moral damages) \"applies to breaches of contract where the defendant acted fraudulently or in bad faith.\" Contrasting the two, \"a breach of contract can not be considered included in the descriptive term 'analogous cases' used in Art. 2219; not only because Art. 2220 specifically provides for the damages that are caused by contractual breach, but because the definition of quasi-delict in Art. 2176 of the Code expressly excludes the cases where there is a 'preexisting contractual relation between the parties.'\"",
+        "application": "(a) Carla had a contract of carriage with the operator, so her suit is on the contract; with no fraud or bad faith shown, she cannot get moral damages by calling her case \"analogous\" to a quasi-delict. (b) Dino was a stranger to the operator; the fault that injured him, with no pre-existing contract, is a quasi-delict causing physical injuries, a case expressly listed in Article 2219(2).",
+        "conclusion": "(a) The lawyer is wrong; (b) Dino may invoke Article 2219(2). **Bar trap:** the same careless act can be a breach of contract as to the passenger and a quasi-delict as to the pedestrian; the existence of a pre-existing contract decides which rule on moral damages applies."
+      },
+      "keyPoints": [
+        "Art. 2219(2): quasi-delicts causing physical injuries",
+        "Art. 2220: moral damages for breach of contract only with fraud or bad faith",
+        "A breach of contract is not an \"analogous case\" under Art. 2219",
+        "Art. 2176: a quasi-delict excludes a pre-existing contractual relation",
+        "Passenger: contract (needs bad faith); pedestrian with no contract: quasi-delict"
+      ],
+      "caseIds": [
+        "case-0078"
+      ],
+      "source": {
+        "caseTitle": "Mercado, et al. v. Lira, et al.",
+        "grNumber": "G.R. Nos. L-13328-29",
+        "url": "https://lawphil.net/judjuris/juri1961/sep1961/gr_l-13328_1961.html",
+        "part": "Decision, discussion of G.R. No. L-13358 (Articles 2219, 2220 and 2176)",
+        "excerpt": "\"Art. 2219. Moral damages may be recovered in the following and analogous cases: (1) A criminal offense resulting in physical injuries; (2) Quasi-delicts causing physical injuries; … \"Art. 2220. Willful injury to property may be a legal ground for awarding moral damages if the court should find that, under the circumstances, such damages are justly due. The same rule applies to breaches of contract where the defendant acted fraudulently or in bad faith.\" By contrasting the provisions of these two articles it immediately becomes apparent that: (a) In cases of breach of contract (including one transportation) proof of bad faith or fraud (dolus), i.e., wanton or deliberately injurious conduct, is essential to justify an award of moral damages; and (b) That a breach of contract can not be considered included in the descriptive term 'analogous cases used in Art. 2219; not only because Art. 2220 specifically provides for the damages that are caused by contractual breach, but because the definition of quasi-delict in Art. 2176 of the Code expressly excludes the cases where there is a 'preexisting contractual relation between the parties.'"
+      }
+    },
+    {
+      "id": "q-0842",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Elena, a bus passenger, was injured when the bus she was riding crashed. She sues the bus company for breach of contract of carriage and asks for moral damages.\n\n(a) Elena's only evidence is that she was injured during the trip. She argues that since a common carrier is presumed at fault when a passenger is injured, the carrier must also be presumed to have acted in bad faith, so moral damages follow. Is she correct? Explain.\n\n(b) Suppose instead that Elena presents evidence that the carrier's negligence was so gross as to amount to malice. Could that support moral damages? Explain briefly.",
+      "suggestedAnswer": {
+        "answer": "(a) No. The law presumes a common carrier negligent, not malicious, when a passenger is injured; bad faith is not to be lightly inferred from a breach through negligence. (b) It could. Negligence may occasionally be so gross as to amount to malice, but that fact must be shown in evidence; if proved, it can supply the bad faith that Article 2220 requires.",
+        "legalBasis": "Treating every breach of the duty of safe carriage as bad faith \"is untenable, for under it the carrier would always be deemed in bad faith, in every case its obligation to the passenger is infringed, and it would never be accountable for simple negligence; while under the law (Art. 1756), the presumption is that common carriers acted negligently (and not maliciously).\" \"It is true that negligence may be occasionally so gross as to amount to malice; but that fact must be shown in evidence, and a carrier's bad faith is not to be lightly inferred from a mere finding that the contract was breached through negligence of the carrier's employees.\"",
+        "application": "(a) Elena's proof of injury raises only the presumption of negligence under Article 1756; it does not prove fraud or bad faith, so she cannot recover moral damages on that alone. (b) If her evidence actually shows negligence so gross as to amount to malice, she would have the showing of bad faith that a passenger suing on the contract needs; but the court cannot assume it from the mere breach.",
+        "conclusion": "(a) Incorrect; (b) possibly, but only on evidence. **Bar trap:** the presumption against carriers is a presumption of negligence; do not convert it into a presumption of bad faith. Gross negligence amounting to malice must be proved, not presumed."
+      },
+      "keyPoints": [
+        "Art. 1756 presumes carriers negligent, not malicious",
+        "If every breach were bad faith, carriers would never be liable for simple negligence",
+        "Bad faith is not lightly inferred from a breach through negligence",
+        "Negligence may be so gross as to amount to malice",
+        "But that must be shown in evidence"
+      ],
+      "caseIds": [
+        "case-0078"
+      ],
+      "source": {
+        "caseTitle": "Mercado, et al. v. Lira, et al.",
+        "grNumber": "G.R. Nos. L-13328-29",
+        "url": "https://lawphil.net/judjuris/juri1961/sep1961/gr_l-13328_1961.html",
+        "part": "Decision, discussion of G.R. No. L-13358 (presumed negligence is not bad faith; gross negligence)",
+        "excerpt": "This theory is untenable, for under it the carrier would always be deemed in bad faith, in every case its obligation to the passenger is infringed, and it would never be accountable for simple negligence; while under the law (Art. 1756), the presumption is that common carriers acted negligently (and not maliciously), and Art. 1762 speaks of negligence of the common carrier. … It is true that negligence may be occasionally so gross as to amount to malice; but that fact must be shown in evidence, and a carrier's bad faith is not to be lightly inferred from a mere finding that the contract was breached through negligence of the carrier's employees."
+      }
     }
   ]
 }
