@@ -18618,6 +18618,98 @@
         "part": "Decision, discussion of trusts, prescription and laches",
         "excerpt": "\"Trusts are either express or implied. Express trusts are created by the intention of the trust or of the parties. Implied trusts come into being by operation of law.\" (Art. 1144, Civil Code). \"No express trusts concerning an immovable or any interest therein may be proven by oral evidence. An implied trust may be proven by oral evidence\" (Ibid, Arts. 1443 and 1457). … That rule applies squarely to express trusts. The basis of the rule is that the possession of a trustee is not adverse. … With respect to constructive trusts, the rule is different. The prescriptibility of an action for reconveyance based on constructive trust is now settled … And whether the trust is resulting or constructive, its enforcement may be barred by laches"
       }
+    },
+    {
+      "id": "q-1173",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Ana and Ben, both of age, became engaged and set a wedding date. A week before the wedding, Ben called it off without explanation and left town. Ana, heartbroken, sues Ben for moral damages solely for breaking his promise to marry her. Will her claim prosper? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. Whether moral damages for breach of promise to marry are collectible has been settled against the claimant in Hermosisima v. Court of Appeals, which Galang v. Court of Appeals followed. A mere breach of a promise to marry is not, by itself, a ground for moral damages.",
+        "legalBasis": "In Galang v. Court of Appeals, the plaintiff \"insists that moral damages for breach of promise to marry are collectible under our laws, but this question has already been settled adversely to plaintiff's pretense in Hermosisima vs. Court of Appeals, L-14628 (September 30, 1960).\"",
+        "application": "Ana's claim rests only on Ben's breach of his promise to marry.",
+        "conclusion": "No moral damages. **Bar trap:** Galang decides only the mere breach of a promise to marry; do not read it as deciding claims based on other acts, which it did not discuss."
+      },
+      "keyPoints": [
+        "Mere breach of promise to marry: no moral damages",
+        "Settled in Hermosisima v. Court of Appeals",
+        "Followed in Galang"
+      ],
+      "caseIds": [
+        "case-0077"
+      ],
+      "source": {
+        "caseTitle": "Galang v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-17248",
+        "url": "https://lawphil.net/judjuris/juri1962/jan1962/gr_l-17248_1962.html",
+        "part": "Decision, discussion of moral damages for breach of promise to marry",
+        "excerpt": "It is next urged that said Court had also erred in not awarding moral damages to plaintiff, who insists that moral damages for breach of promise to marry are collectible under our laws, but this question has already been settled adversely to plaintiff's pretense in Hermosisima vs. Court of Appeals, L-14628 (September 30, 1960)."
+      }
+    },
+    {
+      "id": "q-1174",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Carla's fiancé Dino left her days before their wedding. She proved ₱8,000 in actual expenses she had paid for the wedding preparations and claimed moral damages and attorney's fees as well. The trial court awarded all three; the Court of Appeals deleted the moral damages and attorney's fees but kept the actual damages. Carla appeals to restore the moral damages. Following the outcome in Galang v. Court of Appeals, what is the likely result? Reason briefly.",
+      "suggestedAnswer": {
+        "answer": "The appellate court's ruling would likely be affirmed: the actual damages stay, but the moral damages and attorney's fees remain deleted. In Galang, the Court of Appeals eliminated the awards of moral damages and attorney's fees against the fiancé while leaving the actual damages, and the Supreme Court affirmed, since moral damages for breach of promise to marry are not collectible under Hermosisima.",
+        "legalBasis": "In Galang v. Court of Appeals, the trial court had awarded \"P275.00, by way of actual damages, P5,000.00, as moral damages, and P500.00, as attorney's fees\"; the Court of Appeals \"modified it as regards Rodrigo Quinit, by eliminating the awards for moral damages and attorney's fees,\" and \"[t]he appealed decision of the Court of Appeals is hereby affirmed.\"",
+        "application": "Carla's case mirrors the awards in Galang.",
+        "conclusion": "Actual damages stand; moral damages and attorney's fees do not. **Bar trap:** Galang did not explain the actual damages award; it simply left the Court of Appeals' modification standing, so cite it for the outcome, not for a rule on wedding expenses."
+      },
+      "keyPoints": [
+        "Moral damages and attorney's fees eliminated by the Court of Appeals",
+        "Actual damages against the fiancé left standing",
+        "Supreme Court affirmed",
+        "Use Galang for the outcome only"
+      ],
+      "caseIds": [
+        "case-0077"
+      ],
+      "source": {
+        "caseTitle": "Galang v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-17248",
+        "url": "https://lawphil.net/judjuris/juri1962/jan1962/gr_l-17248_1962.html",
+        "part": "Statement of the case and the disposition",
+        "excerpt": "In due course, the Court of First Instance of Baguio, in which the case was originally instituted, rendered a decision sentencing the defendants jointly and severally to pay the sums of P275.00, by way of actual damages, P5,000.00, as moral damages, and P500.00, as attorney's fees, apart from the costs. On appeal, taken by the defendants, the Court of Appeals absolved Maximino Quinit, and accordingly, reversed said decision insofar as he is concerned, and modified it as regards Rodrigo Quinit, by eliminating the awards for moral damages and attorney's fees. … The appealed decision of the Court of Appeals is hereby affirmed, therefore, without special pronouncement as to cost."
+      }
+    },
+    {
+      "id": "q-1175",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Eva sued her ex-fiancé and his mother, claiming the mother arranged and then broke up the engagement. The trial court believed Eva's witnesses; the Court of Appeals found them not credible and absolved the mother. Eva petitions the Supreme Court by certiorari, asking it to weigh the witnesses again. In another case, Felix argues before the Supreme Court only that the Court of Appeals applied the wrong legal rule to undisputed facts. Which petition presents a question the Supreme Court will review? Explain.",
+      "suggestedAnswer": {
+        "answer": "Felix's. The findings of the Court of Appeals on the credibility of the evidence are beyond the Supreme Court's power of review on appeal by certiorari and are conclusive upon it, so Eva's request to reweigh the witnesses will fail. Felix raises a question of law, which is the proper subject of such an appeal.",
+        "legalBasis": "In Galang v. Court of Appeals, \"the Court of Appeals considered her evidence unworthy of credence, and, hence, absolved Maximino Quinit. Plaintiff maintains that the Court of Appeals had erred in the appreciation of the evidence, but the findings of said Court on the credibility of said evidence are beyond our power of review on appeal by certiorari and, consequently, conclusive upon us.\"",
+        "application": "Eva attacks credibility findings; Felix attacks the application of the law.",
+        "conclusion": "Only Felix's petition presents a reviewable question. **Bar trap:** a disagreement with how the Court of Appeals weighed testimony is a factual question, not a legal one."
+      },
+      "keyPoints": [
+        "Credibility findings of the Court of Appeals are conclusive",
+        "Beyond review on appeal by certiorari",
+        "Questions of law are reviewable",
+        "Reweighing witnesses is a factual question"
+      ],
+      "caseIds": [
+        "case-0077"
+      ],
+      "source": {
+        "caseTitle": "Galang v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-17248",
+        "url": "https://lawphil.net/judjuris/juri1962/jan1962/gr_l-17248_1962.html",
+        "part": "Decision, discussion of the Court of Appeals' findings on credibility",
+        "excerpt": "The court of first instance sustained plaintiff's pretense, but the Court of Appeals considered her evidence unworthy of credence, and, hence, absolved Maximino Quinit. Plaintiff maintains that the Court of Appeals had erred in the appreciation of the evidence, but the findings of said Court on the credibility of said evidence are beyond our power of review on appeal by certiorari and, consequently, conclusive upon us."
+      }
     }
   ]
 }
