@@ -9707,6 +9707,99 @@
         "part": "Decision, discussion of the award of damages (temperate damages)",
         "excerpt": "Aside from those discussed earlier, the Court also awards temperate damages in certain cases. The award of ₱25,000.00 as temperate damages in homicide or murder cases is proper when no evidence of burial and funeral expenses is presented in the trial court. Under Article 2224 of the Civil Code, temperate damages may be recovered, as it cannot be denied that the heirs of the victims suffered pecuniary loss although the exact amount was not proved. In this case, the Court now increases the amount to be awarded as temperate damages to ₱50,000.00."
       }
+    },
+    {
+      "id": "q-0891",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "(a) In 2018, Ana lent Ben ₱500,000 under a note that set no interest rate. Ben defaulted after Ana's written demand in 2019. What legal interest is due, and from when? (b) In a separate case, Carla's 2020 damages award for a vehicular accident, whose amount was fixed only by the court's judgment, became final in 2022 and remains unpaid. What interest runs after finality? Explain both.",
+      "suggestedAnswer": {
+        "answer": "(a) 6% a year on the principal from Ana's demand (default) until full payment, since the loan had no stipulated rate and the period is after July 1, 2013. (b) 6% a year on the amount of the judgment from its finality in 2022 until satisfaction, since that interim period is equivalent to a forbearance of credit.",
+        "legalBasis": "Under BSP-MB Circular No. 799, effective July 1, 2013, \"the rate of legal interest for loans or forbearance of any money, goods or credits and the rate allowed in judgments shall no longer be twelve percent (12%) per annum ... but will now be six percent (6%) per annum.\" Under the modified guidelines, for a loan or forbearance without stipulation, \"the rate of interest shall be 6% per annum to be computed from default, i.e., from judicial or extrajudicial demand,\" and \"[w]hen the judgment of the court awarding a sum of money becomes final and executory, the rate of legal interest ... shall be 6% per annum from such finality until its satisfaction.\"",
+        "application": "(a) Ana's loan and demand both fall after July 1, 2013, so 6% applies from the demand. (b) Carla's judgment became final in 2022, so 6% applies from finality.",
+        "conclusion": "(a) 6% from demand; (b) 6% from finality. **Bar trap:** the 12% rate of the older guidelines applies only to periods up to June 30, 2013."
+      },
+      "keyPoints": [
+        "Circular No. 799: 6% legal interest from July 1, 2013",
+        "Loan without stipulation: 6% from default (demand)",
+        "Final money judgment: 6% from finality until satisfaction",
+        "12% applies only until June 30, 2013"
+      ],
+      "caseIds": [
+        "case-0064"
+      ],
+      "source": {
+        "caseTitle": "Nacar v. Gallery Frames, et al.",
+        "grNumber": "G.R. No. 189871",
+        "url": "https://lawphil.net/judjuris/juri2013/aug2013/gr_189871_2013.html",
+        "part": "Decision, discussion of legal interest (BSP-MB Circular No. 799)",
+        "excerpt": "Thus, from the foregoing, in the absence of an express stipulation as to the rate of interest that would govern the parties, the rate of legal interest for loans or forbearance of any money, goods or credits and the rate allowed in judgments shall no longer be twelve percent (12%) per annum - as reflected in the case of Eastern Shipping Lines and Subsection X305.1 of the Manual of Regulations for Banks and Sections 4305Q.1, 4305S.3 and 4303P.1 of the Manual of Regulations for Non-Bank Financial Institutions, before its amendment by BSP-MB Circular No. 799 - but will now be six percent (6%) per annum effective July 1, 2013. It should be noted, nonetheless, that the new rate could only be applied prospectively and not retroactively. Consequently, the twelve percent (12%) per annum legal interest shall apply only until June 30, 2013. Come July 1, 2013 the new rate of six percent (6%) per annum shall be the prevailing rate of interest when applicable. … When the obligation is breached, and it consists in the payment of a sum of money, i.e., a loan or forbearance of money, the interest due should be that which may have been stipulated in writing. Furthermore, the interest due shall itself earn legal interest from the time it is judicially demanded. In the absence of stipulation, the rate of interest shall be 6% per annum to be computed from default, i.e., from judicial or extrajudicial demand under and subject to the provisions of Article 1169 of the Civil Code. … When the judgment of the court awarding a sum of money becomes final and executory, the rate of legal interest, whether the case falls under paragraph 1 or paragraph 2, above, shall be 6% per annum from such finality until its satisfaction, this interim period being deemed to be by then an equivalent to a forbearance of credit."
+      }
+    },
+    {
+      "id": "q-0892",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Dino's judgment against Eli for a sum of money became final in 2008, and it expressly fixed 12% legal interest from finality until payment. Eli has not paid. Eli now argues that from July 1, 2013 the rate should drop to 6% because of the new BSP circular. In another case, Fe's judgment became final in 2005 but did not fix any rate. What rates apply after finality in each case? Explain.",
+      "suggestedAnswer": {
+        "answer": "Dino's judgment: 12% throughout, because judgments that became final and executory before July 1, 2013 are not disturbed and continue to be implemented applying the rate fixed in them. Fe's judgment: 12% from finality until June 30, 2013, and 6% from July 1, 2013 until full satisfaction, since the new rate applies prospectively.",
+        "legalBasis": "\"[W]ith regard to those judgments that have become final and executory prior to July 1, 2013, said judgments shall not be disturbed and shall continue to be implemented applying the rate of interest fixed therein.\" The new rate \"could only be applied prospectively and not retroactively. Consequently, the twelve percent (12%) per annum legal interest shall apply only until June 30, 2013.\" In the decision, the Court ordered 12% from finality to June 30, 2013, and 6% from July 1, 2013 until full satisfaction.",
+        "application": "Dino's judgment itself fixed the rate before the circular, so it stands; Fe's judgment fixed none, so the general shift on July 1, 2013 applies.",
+        "conclusion": "Dino: 12% throughout; Fe: 12% then 6%. **Bar trap:** distinguish a final judgment that itself fixed the rate (untouched) from one that did not (rates split at July 1, 2013)."
+      },
+      "keyPoints": [
+        "Judgments final before July 1, 2013 keep the rate fixed in them",
+        "The new rate applies prospectively",
+        "12% only until June 30, 2013; 6% from July 1, 2013",
+        "Split the computation where no rate was fixed"
+      ],
+      "caseIds": [
+        "case-0064"
+      ],
+      "source": {
+        "caseTitle": "Nacar v. Gallery Frames, et al.",
+        "grNumber": "G.R. No. 189871",
+        "url": "https://lawphil.net/judjuris/juri2013/aug2013/gr_189871_2013.html",
+        "part": "Decision, discussion of legal interest (transition and judgments already final)",
+        "excerpt": "Nonetheless, with regard to those judgments that have become final and executory prior to July 1, 2013, said judgments shall not be disturbed and shall continue to be implemented applying the rate of interest fixed therein. … (3) interest of twelve percent (12%) per annum of the total monetary awards, computed from May 27, 2002 to June 30, 2013 and six percent (6%) per annum from July 1, 2013 until their full satisfaction."
+      }
+    },
+    {
+      "id": "q-0893",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Gina was found illegally dismissed, and the Labor Arbiter awarded backwages and separation pay \"computed up to the date of this decision.\" Her employer appealed up to the Supreme Court and lost four years later. In execution, Gina asks that the awards be recomputed up to the finality of the judgment. The employer argues this would change a final judgment. Who is correct? Explain.",
+      "suggestedAnswer": {
+        "answer": "Gina. The recomputation of the monetary consequences of an illegal dismissal up to finality does not alter the final judgment; the finding of illegality stands, and only the time-bound computation is updated, as the law reads into the decision.",
+        "legalBasis": "\"A recomputation (or an original computation, if no previous computation has been made) is a part of the law – specifically, Article 279 of the Labor Code and the established jurisprudence on this provision – that is read into the decision. By the nature of an illegal dismissal case, the reliefs continue to add up until full satisfaction ... The recomputation of the consequences of illegal dismissal upon execution of the decision does not constitute an alteration or amendment of the final decision being implemented. The illegal dismissal ruling stands; only the computation of monetary consequences of this dismissal is affected, and this is not a violation of the principle of immutability of final judgments.\"",
+        "application": "The employer's appeals delayed payment; the larger amount is the risk it took by continuing to litigate.",
+        "conclusion": "The awards are recomputed up to finality. **Bar trap:** immutability protects the ruling, not a time-bound computation of its consequences."
+      },
+      "keyPoints": [
+        "Recomputation is part of the law read into the decision (Art. 279, Labor Code)",
+        "Reliefs continue to add up until full satisfaction",
+        "Not an alteration of the final decision",
+        "The employer bears the risk of its appeals"
+      ],
+      "caseIds": [
+        "case-0064"
+      ],
+      "source": {
+        "caseTitle": "Nacar v. Gallery Frames, et al.",
+        "grNumber": "G.R. No. 189871",
+        "url": "https://lawphil.net/judjuris/juri2013/aug2013/gr_189871_2013.html",
+        "part": "Decision, discussion of the recomputation of the awards",
+        "excerpt": "Consequently, from the above disquisitions, under the terms of the decision which is sought to be executed by the petitioner, no essential change is made by a recomputation as this step is a necessary consequence that flows from the nature of the illegality of dismissal declared by the Labor Arbiter in that decision. A recomputation (or an original computation, if no previous computation has been made) is a part of the law – specifically, Article 279 of the Labor Code and the established jurisprudence on this provision – that is read into the decision. By the nature of an illegal dismissal case, the reliefs continue to add up until full satisfaction, as expressed under Article 279 of the Labor Code. The recomputation of the consequences of illegal dismissal upon execution of the decision does not constitute an alteration or amendment of the final decision being implemented. The illegal dismissal ruling stands; only the computation of monetary consequences of this dismissal is affected, and this is not a violation of the principle of immutability of final judgments. That the amount respondents shall now pay has greatly increased is a consequence that it cannot avoid as it is the risk that it ran when it continued to seek recourses against the Labor Arbiter's decision."
+      }
     }
   ]
 }
