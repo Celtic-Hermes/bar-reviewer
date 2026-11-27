@@ -646,6 +646,21 @@
       "ruling": "The petition was denied with modifications. Whether KLM acted in bad faith is a question of fact not reviewable under Rule 45, and none of the exceptions applied. In any case, a common carrier is presumed at fault when goods are lost unless it proves extraordinary diligence; the passenger need only prove the contract and its non-performance. KLM acted in bad faith: it made empty promises, never updated him, and did not tell him or return the suitcase after it was found. Moral damages were proper under Article 2220 but reduced to ₱300,000, since social and financial standing counts only when the claimant was treated with contempt despite the offender's knowledge of it; exemplary damages were reduced to ₱100,000 for KLM's wanton and reckless conduct. Nominal damages vindicate a right where no actual loss of any kind is shown, while temperate damages apply where some pecuniary loss was suffered but its amount cannot be proved with certainty. Dr. Tiongco clearly lost his belongings but had no receipts, so ₱50,000 temperate damages were awarded in lieu of nominal damages, unlimited by the Warsaw Convention because of bad faith. Attorney's fees were upheld because the Court of Appeals explained them under Article 2208(1), and interest was set at 12% from the trial court's decision to June 30, 2013 and 6% after.",
       "keyDoctrine": "Nominal damages (Art. 2221) vindicate a right technically violated where no actual present loss of any kind, or no substantial injury, is shown. Temperate damages (Art. 2224), more than nominal but less than compensatory, are proper where some pecuniary loss is suffered but its amount cannot be proved with certainty; a lost suitcase without receipts calls for temperate, not nominal, damages. A carrier is presumed negligent for lost goods; its bad faith supports moral (Art. 2220) and exemplary damages and lifts the Warsaw Convention's limits. The amount of damages must be fair, reasonable and proportionate (Art. 2216). Attorney's fees require reasons stated in the decision.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2021/oct2021/gr_212136_2021.html"
+    },
+    {
+      "id": "case-0091",
+      "status": "draft",
+      "name": "Sulpicio Lines, Inc. v. Sesante, et al.",
+      "grNumber": "G.R. No. 172682",
+      "year": 2016,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "facts": "On September 18, 1998, Sulpicio Lines' passenger vessel M/V Princess of the Orient sank near Fortune Island, Batangas, in stormy weather; 150 of its 388 recorded passengers were lost. Napoleon Sesante, a police officer and lawyer, survived after being pinned by a steel bar, staying afloat and being carried by the waves to shore. He was injured and lost his money, jewelry, documents, uniforms and service pistol. He sued for breach of contract of carriage. The Board of Marine Inquiry found that the captain's erroneous maneuvers were the immediate and proximate cause of the sinking, and that the crew failed to carry out abandon-ship procedures or send a proper distress signal. The trial court awarded temperate and ₱1,000,000 moral damages; the Court of Appeals lowered the temperate damages to ₱120,000, approximating the lost belongings itemized in a police report. Sesante died during the appeal and was substituted by his heirs.",
+      "issue": "(1) Does the action survive Sesante's death? (2) Is Sulpicio liable despite claiming force majeure? (3) Were moral and temperate damages proper, and are exemplary damages due?",
+      "ruling": "The appeal was denied and the award modified. (1) An action for damages for injury to person or property survives death (Rule 87, Sec. 1), so the heirs were properly substituted. (2) Under Article 1756 a carrier is presumed negligent when a passenger is injured; the passenger need only show the contract and that the injury happened during it. Force majeure excuses only if human agency is excluded; the captain's gross negligence was the proximate cause. (3) Moral damages in carriage are recoverable when a passenger dies or the carrier acted with fraud or bad faith, and also when the breach is wanton and deliberately injurious; the crew's total negligence and the carrier's indifference warranted ₱1,000,000. The carrier was liable for belongings kept by the passenger without prior notice, since letting him board with them was notice. Temperate damages of ₱120,000 were proper because some pecuniary loss was suffered but its value could not be proved with certainty. Exemplary damages of ₱1,000,000 were added for wanton and reckless conduct; they need not be specifically pleaded or proved.",
+      "keyDoctrine": "Temperate damages (Art. 2224) may be awarded when some pecuniary loss has been suffered but its amount cannot be proved with certainty. Moral damages in breach of carriage are recoverable when a passenger dies or the carrier acted fraudulently or in bad faith, or when the breach is wanton and deliberately injurious; their amount must reasonably approximate the injury and not punish. In contracts, exemplary damages may be awarded at the court's discretion for wanton, fraudulent, reckless, oppressive or malevolent conduct; they need not be specifically pleaded or proved. Wanton means extreme recklessness and utter disregard for others' rights; reckless means an extreme departure from ordinary care where a high danger is apparent.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2016/jul2016/gr_172682_2016.html"
     }
   ],
   "questions": [
@@ -13216,6 +13231,277 @@
         "url": "https://lawphil.net/judjuris/juri2021/oct2021/gr_212136_2021.html",
         "part": "Our Ruling, the disposition",
         "excerpt": "(b) temperate damages in the amount of P50,000.00 is awarded to Dr. Jose M. Tiongco in lieu of nominal damages;"
+      }
+    },
+    {
+      "id": "q-1002",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "A shipping company argues that temperate damages were wrongly awarded to a surviving passenger for belongings lost when its ship sank, because he never proved his pecuniary loss with receipts, and the only evidence was his own testimony and a police report itemizing the lost items. Were temperate damages proper? Explain.",
+      "suggestedAnswer": {
+        "answer": "Yes. Temperate damages may be recovered when some pecuniary loss has been suffered but its amount cannot, from the nature of the case, be proved with certainty. Article 2224 expressly authorizes courts to award them despite the lack of certain proof of actual damages. The passenger undoubtedly suffered some loss when the ship sank; the court may use an itemized valuation as an approximation, regarded as temperate damages.",
+        "legalBasis": "In Sulpicio Lines, Inc. v. Sesante, the Court held: \"Temperate damages may be recovered when some pecuniary loss has been suffered but the amount cannot, from the nature of the case, be proven with certainty. Article 2224 of the Civil Code expressly authorizes the courts to award temperate damages despite the lack of certain proof of actual damages.\" \"Indubitably, Sesante suffered some pecuniary loss from the sinking of the vessel, but the value of the loss could not be established with certainty.\" The ₱120,000 valuation from the police report \"approximated the costs of the lost belongings,\" so it was \"correct, but to be regarded as temperate damages.\"",
+        "application": "The sinking certainly caused him a loss of belongings; only the exact value was uncertain.",
+        "conclusion": "Temperate damages of ₱120,000 were proper. **Bar trap:** an approximate valuation that falls short of proof of actual damages may still be awarded, but as temperate damages."
+      },
+      "keyPoints": [
+        "Some pecuniary loss suffered",
+        "Amount cannot be proved with certainty",
+        "Art. 2224 authorizes an award despite lack of certain proof",
+        "An approximate valuation may be used, as temperate damages"
+      ],
+      "caseIds": [
+        "case-0091"
+      ],
+      "source": {
+        "caseTitle": "Sulpicio Lines, Inc. v. Sesante, et al.",
+        "grNumber": "G.R. No. 172682",
+        "url": "https://lawphil.net/judjuris/juri2016/jul2016/gr_172682_2016.html",
+        "part": "Ruling of the Court, III (temperate damages)",
+        "excerpt": "Temperate damages may be recovered when some pecuniary loss has been suffered but the amount cannot, from the nature of the case, be proven with certainty. Article 2224 of the Civil Code expressly authorizes the courts to award temperate damages despite the lack of certain proof of actual damages. Indubitably, Sesante suffered some pecuniary loss from the sinking of the vessel, but the value of the loss could not be established with certainty. The CA, which can try facts and appreciate evidence, pegged the value of the lost belongings as itemized in the police report at P120,000.00. The valuation approximated the costs of the lost belongings. In that context, the valuation of ₱120,000.00 is correct, but to be regarded as temperate damages."
+      }
+    },
+    {
+      "id": "q-1003",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "A passenger who survived a ship's sinking, but suffered injuries and terror in the water, claims moral damages for breach of contract of carriage. The carrier argues that moral damages are recoverable in carriage only if a passenger dies or the carrier acted in bad faith, and that it did not act in bad faith. When may moral damages be awarded in such a case, and how is their amount fixed? Explain.",
+      "suggestedAnswer": {
+        "answer": "Moral damages may be recovered in an action upon breach of contract of carriage when a passenger dies, or when the carrier is proved guilty of fraud and bad faith even if death does not result; they may also be awarded if the breach is wanton and deliberately injurious, or the one responsible acted fraudulently or with malice or bad faith. The total negligence of the crew coupled with the carrier's indifference warranted them. The amount is left to the trial court's discretion, must not be palpably and scandalously excessive, must not punish or enrich, and must reasonably approximate the injury and be proportional to the wrong.",
+        "legalBasis": "In Sulpicio Lines v. Sesante, \"moral damages may be recovered in an action upon breach of contract of carriage only when: (a) death of a passenger results, or (b) it is proved that the carrier was guilty of fraud and bad faith, even if death does not result. However, moral damages may be awarded if the contractual breach is found to be wanton and deliberately injurious, or if the one responsible acted fraudulently or with malice or bad faith.\" \"The totality of the negligence by the officers and crew ... coupled with the seeming indifference of the petitioner to render assistance to Sesante, warranted the award of moral damages.\" \"The amount of the moral damages must always reasonably approximate the extent of injury and be proportional to the wrong committed.\"",
+        "application": "The crew's grave failures and the carrier's indifference made the breach wanton; the passenger's anguish justified ₱1,000,000.",
+        "conclusion": "Moral damages are proper. **Bar trap:** without death or bad faith, moral damages may still follow if the breach was wanton and deliberately injurious."
+      },
+      "keyPoints": [
+        "Carriage: moral damages if a passenger dies, or fraud and bad faith",
+        "Also if the breach is wanton and deliberately injurious",
+        "Totality of negligence plus indifference warranted the award",
+        "Amount: trial court's discretion, not palpably and scandalously excessive",
+        "Must approximate the injury; not to punish or enrich"
+      ],
+      "caseIds": [
+        "case-0091"
+      ],
+      "source": {
+        "caseTitle": "Sulpicio Lines, Inc. v. Sesante, et al.",
+        "grNumber": "G.R. No. 172682",
+        "url": "https://lawphil.net/judjuris/juri2016/jul2016/gr_172682_2016.html",
+        "part": "Ruling of the Court, III (moral damages)",
+        "excerpt": "We agree with the petitioner that moral damages may be recovered in an action upon breach of contract of carriage only when: (a) death of a passenger results, or (b) it is proved that the carrier was guilty of fraud and bad faith, even if death does not result. However, moral damages may be awarded if the contractual breach is found to be wanton and deliberately injurious, or if the one responsible acted fraudulently or with malice or bad faith. … The aforestated negligent acts of the officers and crew of M/V Princess of the Orient could not be ignored in view of the extraordinary duty of the common carrier to ensure the safety of the passengers. The totality of the negligence by the officers and crew of M/V Princess of the Orient, coupled with the seeming indifference of the petitioner to render assistance to Sesante, warranted the award of moral damages. While there is no hard-and-fast rule in determining what is a fair and reasonable amount of moral damages, the discretion to make the determination is lodged in the trial court with the limitation that the amount should not be palpably and scandalously excessive. The trial court then bears in mind that moral damages are not intended to impose a penalty on the wrongdoer, or to enrich the plaintiff at the expense of the defendant. The amount of the moral damages must always reasonably approximate the extent of injury and be proportional to the wrong committed."
+      }
+    },
+    {
+      "id": "q-1004",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "(a) When may exemplary damages be awarded in contracts, and must they be specifically pleaded and proved? (b) What do \"wanton\" and \"reckless\" mean, as explained in Sulpicio Lines v. Sesante?",
+      "suggestedAnswer": {
+        "answer": "(a) In contracts and quasi-contracts, the court has discretion to award exemplary damages if the defendant acted in a wanton, fraudulent, reckless, oppressive or malevolent manner; they cannot be recovered as a matter of right. They need not be specifically pleaded or proved, since the court may award them as long as the evidence warrants, the amount depending on the compensatory damages awarded. (b) Wanton means characterized by extreme recklessness and utter disregard for the rights of others. Conduct is reckless when it is an extreme departure from ordinary care where a high degree of danger is apparent, more than a mere mistake from inexperience, excitement or confusion, or mere thoughtlessness, inadvertence or simple inattention.",
+        "legalBasis": "\"In contracts and quasi-contracts, the Court has the discretion to award exemplary damages if the defendant acted in a wanton, fraudulent, reckless, oppressive, or malevolent manner. Indeed, exemplary damages cannot be recovered as a matter of right.\" \"[E]xemplary damages did not have to be specifically pleaded or proved, because the courts had the discretion to award them for as long as the evidence so warranted.\" \"Wanton means characterized by extreme recklessness and utter disregard for the rights of others ... Conduct is reckless when it is an extreme departure from ordinary care, in a situation in which a high degree of danger is apparent. It must be more than any mere mistake resulting from inexperience, excitement, or confusion.\"",
+        "application": "The captain's maneuvers in a visibly dangerous situation and the crew's failures were wanton and reckless, so the Court awarded ₱1,000,000 even though the passenger had not asked for exemplary damages.",
+        "conclusion": "As stated. **Bar trap:** a simple mistake or inadvertence is not recklessness; and exemplary damages may be awarded without a specific prayer if the evidence warrants."
+      },
+      "keyPoints": [
+        "Contracts: wanton, fraudulent, reckless, oppressive or malevolent manner",
+        "Not a matter of right; court's discretion",
+        "Need not be specifically pleaded or proved",
+        "Wanton: extreme recklessness, utter disregard of others' rights",
+        "Reckless: extreme departure from ordinary care, high danger apparent; more than a mere mistake"
+      ],
+      "caseIds": [
+        "case-0091"
+      ],
+      "source": {
+        "caseTitle": "Sulpicio Lines, Inc. v. Sesante, et al.",
+        "grNumber": "G.R. No. 172682",
+        "url": "https://lawphil.net/judjuris/juri2016/jul2016/gr_172682_2016.html",
+        "part": "Ruling of the Court, III (exemplary damages)",
+        "excerpt": "In contracts and quasi-contracts, the Court has the discretion to award exemplary damages if the defendant acted in a wanton, fraudulent, reckless, oppressive, or malevolent manner. Indeed, exemplary damages cannot be recovered as a matter of right, and it is left to the court to decide whether or not to award them. … First of all, exemplary damages did not have to be specifically pleaded or proved, because the courts had the discretion to award them for as long as the evidence so warranted. … Clearly, the petitioner and its agents on the scene acted wantonly and recklessly. Wanton and reckless are virtually synonymous in meaning as respects liability for conduct towards others. Wanton means characterized by extreme recklessness and utter disregard for the rights of others; or marked by or manifesting arrogant recklessness of justice or of rights or feelings of others. Conduct is reckless when it is an extreme departure from ordinary care, in a situation in which a high degree of danger is apparent. It must be more than any mere mistake resulting from inexperience, excitement, or confusion, and more than mere thoughtlessness or inadvertence, or simple inattention."
+      }
+    },
+    {
+      "id": "q-1005",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "Ana and Ben were passengers on a ferry that sank because of the crew's negligence. (a) Ana lost her bag containing a laptop, clothes and cash; she has no receipts, but she reported the items to the police right after the rescue. (b) Ben claims ₱200,000 for \"belongings,\" but admits he boarded with nothing except the clothes he wore, which he kept. May each recover temperate damages? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) Yes. Ana undoubtedly suffered some pecuniary loss in the sinking, but its value cannot be established with certainty; temperate damages may be awarded despite the lack of certain proof, and an itemized report may guide an approximate amount. (b) No. Temperate damages require that some pecuniary loss has been suffered; Ben shows none.",
+        "legalBasis": "In Sulpicio Lines v. Sesante, \"[t]emperate damages may be recovered when some pecuniary loss has been suffered but the amount cannot, from the nature of the case, be proven with certainty. Article 2224 ... expressly authorizes the courts to award temperate damages despite the lack of certain proof of actual damages.\" The Court used the value \"as itemized in the police report,\" which \"approximated the costs of the lost belongings,\" as temperate damages.",
+        "application": "(a) The loss of Ana's bag is certain; only its value is not. (b) Ben lost nothing.",
+        "conclusion": "(a) Temperate damages; (b) none. **Bar trap:** temperate damages excuse proof of the amount, not proof that some loss happened."
+      },
+      "keyPoints": [
+        "Some pecuniary loss is a requirement",
+        "Uncertain amount does not bar recovery",
+        "An itemized report may guide an approximate award",
+        "No loss shown: no temperate damages"
+      ],
+      "caseIds": [
+        "case-0091"
+      ],
+      "source": {
+        "caseTitle": "Sulpicio Lines, Inc. v. Sesante, et al.",
+        "grNumber": "G.R. No. 172682",
+        "url": "https://lawphil.net/judjuris/juri2016/jul2016/gr_172682_2016.html",
+        "part": "Ruling of the Court, III (temperate damages)",
+        "excerpt": "Temperate damages may be recovered when some pecuniary loss has been suffered but the amount cannot, from the nature of the case, be proven with certainty. Article 2224 of the Civil Code expressly authorizes the courts to award temperate damages despite the lack of certain proof of actual damages. Indubitably, Sesante suffered some pecuniary loss from the sinking of the vessel, but the value of the loss could not be established with certainty. The CA, which can try facts and appreciate evidence, pegged the value of the lost belongings as itemized in the police report at P120,000.00. The valuation approximated the costs of the lost belongings."
+      }
+    },
+    {
+      "id": "q-1006",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "Carla was injured when a bus she rode overturned during a sudden, violent typhoon. (a) The investigation shows the driver was driving carefully and slowly, and a landslide no one could foresee struck the bus. (b) In a second accident during the same typhoon, a ship sank after its captain, though the danger was apparent, kept a high speed and executed sharp turns that tilted the ship further. Can each carrier escape liability by invoking force majeure? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) It may, if the carrier proves the event was independent of human will, unforeseeable or unavoidable, made performance impossible, and that it did not contribute to the injury; the burden is on the carrier, since it is presumed negligent. (b) No. Force majeure excuses only when human agency is excluded from the cause; where the effect is partly the result of the participation of man, through his intervention or neglect, the whole occurrence is humanized and the carrier is liable.",
+        "legalBasis": "In Sulpicio Lines v. Sesante, \"for a common carrier to be absolved from liability in case of force majeure, it is not enough that the accident was caused by a fortuitous event. The common carrier must still prove that it did not contribute to the occurrence of the incident due to its own or its employees' negligence.\" Quoting Schmitz Transport, the requisites include that the cause be \"independent of human will\" and that \"the obligor must be free from any participation in the aggravation of the injury,\" and \"[w]hen the effect is found to be in part the result of the participation of man ... the whole occurrence is then humanized.\" Under Article 1756, carriers are presumed at fault for injuries to passengers.",
+        "application": "(a) No human fault appears, but the carrier must still prove it. (b) The captain's maneuvers contributed to the sinking.",
+        "conclusion": "(a) Possibly excused; (b) liable. **Bar trap:** a storm does not excuse a carrier whose own crew's negligence contributed to the loss."
+      },
+      "keyPoints": [
+        "Carrier presumed at fault for passenger injuries (Art. 1756)",
+        "Fortuitous event must be independent of human will",
+        "Carrier must prove it did not contribute to the incident",
+        "Human participation 'humanizes' the occurrence",
+        "Burden is on the carrier"
+      ],
+      "caseIds": [
+        "case-0091"
+      ],
+      "source": {
+        "caseTitle": "Sulpicio Lines, Inc. v. Sesante, et al.",
+        "grNumber": "G.R. No. 172682",
+        "url": "https://lawphil.net/judjuris/juri2016/jul2016/gr_172682_2016.html",
+        "part": "Ruling of the Court, II (liability despite force majeure)",
+        "excerpt": "A common carrier may be relieved of any liability arising from a fortuitous event pursuant to Article 1174 of the Civil Code. But while it may free a common carrier from liability, the provision still requires exclusion of human agency from the cause of injury or loss. Else stated, for a common carrier to be absolved from liability in case of force majeure, it is not enough that the accident was caused by a fortuitous event. The common carrier must still prove that it did not contribute to the occurrence of the incident due to its own or its employees' negligence. … In order to be considered a fortuitous event, however, (1) the cause of the unforeseen and unexpected occurrence, or the failure of the debtor to comply with his obligation, must be independent of human will; (2) it must be impossible to foresee the event which constitute the caso fortuito, or if it can be foreseen it must be impossible to avoid; (3) the occurrence must be such as to render it impossible for the debtor to fulfill his obligation in any manner; and (4) the obligor must be free from any participation in the aggravation of the injury resulting to the creditor. [T]he principle embodied in the act of God doctrine strictly requires that the act must be occasioned solely by the violence of nature. Human intervention is to be excluded from creating or entering into the cause of the mischief. When the effect is found to be in part the result of the participation of man, whether due to his active intervention or neglect or failure to act, the whole occurrence is then humanized and removed from the rules applicable to the acts of God."
+      }
+    },
+    {
+      "id": "q-1007",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "Dino sued a shipping line for injuries and lost belongings after its ship sank. He had kept his bag with him on board and never declared its contents to the crew. He died while the case was on appeal. (a) Does the action survive his death? (b) Is the carrier liable for the belongings he kept in his own custody without notifying it? Reason briefly.",
+      "suggestedAnswer": {
+        "answer": "(a) Yes. Actions for recovery of damages for an injury to person or property survive the death of a party (Rule 87, Section 1), so his heirs may be substituted. (b) Yes. The carrier is always responsible for the passenger's baggage during the voyage; Article 1754 only sets the degree of care depending on custody. Actual notice is unnecessary: by letting the passenger board with his belongings without protest, the carrier was sufficiently notified.",
+        "legalBasis": "In Sulpicio Lines v. Sesante, \"Section 1, Rule 87 ... enumerates the following actions that survive the death of a party, namely: ... (3) recovery of damages for an injury to person or property.\" Sesante's claim \"involved his personal injury caused by the breach of the contract of carriage,\" so \"the complaint survived his death.\" \"The rule that the common carrier is always responsible for the passenger's baggage during the voyage needs to be emphasized. Article 1754 ... does not exempt the common carrier from liability in case of loss, but only highlights the degree of care.\" \"By allowing him to board the vessel with his belongings without any protest, the petitioner became sufficiently notified of such belongings.\"",
+        "application": "(a) His claim is for injury to person and property. (b) He boarded with the bag without protest from the carrier.",
+        "conclusion": "(a) Survives; (b) liable. **Bar trap:** custody by the passenger changes the degree of care required (that of hotel keepers), not whether the carrier is responsible."
+      },
+      "keyPoints": [
+        "Damages for injury to person or property survive death (Rule 87, Sec. 1)",
+        "Heirs may be substituted",
+        "Carrier always responsible for baggage during the voyage",
+        "Art. 1754 sets the degree of care by custody",
+        "Boarding with belongings without protest = notice"
+      ],
+      "caseIds": [
+        "case-0091"
+      ],
+      "source": {
+        "caseTitle": "Sulpicio Lines, Inc. v. Sesante, et al.",
+        "grNumber": "G.R. No. 172682",
+        "url": "https://lawphil.net/judjuris/juri2016/jul2016/gr_172682_2016.html",
+        "part": "Ruling of the Court, I (survival of the action) and III (belongings in the passenger's custody)",
+        "excerpt": "Section 1, Rule 87 of the Rules of Court enumerates the following actions that survive the death of a party, namely: (1) recovery of real or personal property, or an interest from the estate; (2) enforcement of liens on the estate; and (3) recovery of damages for an injury to person or property. … Sesante's claim against the petitioner involved his personal injury caused by the breach of the contract of carriage. Pursuant to the aforecited rules, the complaint survived his death, and could be continued by his heirs following the rule on substitution. … The rule that the common carrier is always responsible for the passenger's baggage during the voyage needs to be emphasized. Article 1754 of the Civil Code does not exempt the common carrier from liability in case of loss, but only highlights the degree of care required of it depending on who has the custody of the belongings. … Accordingly, actual notification was not necessary to render the petitioner as the common carrier liable for the lost personal belongings of Sesante. By allowing him to board the vessel with his belongings without any protest, the petitioner became sufficiently notified of such belongings."
+      }
+    },
+    {
+      "id": "q-1008",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "In Sulpicio Lines v. Sesante, the ₱120,000 valuation of the lost belongings based on a police report was upheld",
+      "choices": {
+        "A": "as actual damages proved with certainty.",
+        "B": "as nominal damages to vindicate the passenger's right.",
+        "C": "as temperate damages, since some pecuniary loss was suffered but its value could not be established with certainty.",
+        "D": "as part of the exemplary damages."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The loss \"could not be established with certainty\"; the valuation \"approximated the costs of the lost belongings ... the valuation of ₱120,000.00 is correct, but to be regarded as temperate damages.\" **A is wrong:** the amount was not proved with certainty. **B is wrong:** there was real pecuniary loss. **D is wrong:** exemplary damages were a separate ₱1,000,000. **Bar trap:** an approximation becomes temperate, not actual, damages.",
+      "caseIds": [
+        "case-0091"
+      ],
+      "source": {
+        "caseTitle": "Sulpicio Lines, Inc. v. Sesante, et al.",
+        "grNumber": "G.R. No. 172682",
+        "url": "https://lawphil.net/judjuris/juri2016/jul2016/gr_172682_2016.html",
+        "part": "Ruling of the Court, III (temperate damages)",
+        "excerpt": "The valuation approximated the costs of the lost belongings. In that context, the valuation of ₱120,000.00 is correct, but to be regarded as temperate damages."
+      }
+    },
+    {
+      "id": "q-1009",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "According to Sulpicio Lines v. Sesante, exemplary damages",
+      "choices": {
+        "A": "must always be specifically prayed for in the complaint.",
+        "B": "may be recovered as a matter of right in every breach of contract.",
+        "C": "did not have to be specifically pleaded or proved, because the courts may award them as long as the evidence so warrants.",
+        "D": "require proof of their exact amount."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** \"[E]xemplary damages did not have to be specifically pleaded or proved, because the courts had the discretion to award them for as long as the evidence so warranted.\" **A is wrong:** the Court awarded them without a specific prayer. **B is wrong:** they \"cannot be recovered as a matter of right.\" **D is wrong:** the amount \"need not be proved.\" **Bar trap:** discretion, not entitlement, governs exemplary damages.",
+      "caseIds": [
+        "case-0091"
+      ],
+      "source": {
+        "caseTitle": "Sulpicio Lines, Inc. v. Sesante, et al.",
+        "grNumber": "G.R. No. 172682",
+        "url": "https://lawphil.net/judjuris/juri2016/jul2016/gr_172682_2016.html",
+        "part": "Ruling of the Court, III (exemplary damages)",
+        "excerpt": "First of all, exemplary damages did not have to be specifically pleaded or proved, because the courts had the discretion to award them for as long as the evidence so warranted."
+      }
+    },
+    {
+      "id": "q-1010",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "Under Sulpicio Lines v. Sesante, the presumption of negligence against a common carrier in case of a passenger's injury applies so long as there is evidence showing",
+      "choices": {
+        "A": "that the carrier acted in bad faith.",
+        "B": "that a contract exists between the passenger and the carrier, and that the injury or death took place during the existence of such contract.",
+        "C": "an express finding of the carrier's fault by the trial court.",
+        "D": "that the vessel was unseaworthy."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** \"The presumption of negligence applies so long as there is evidence showing that: (a) a contract exists between the passenger and the common carrier; and (b) the injury or death took place during the existence of such contract.\" **A is wrong:** bad faith goes to moral damages. **C is wrong:** \"the trial court is not required to make an express finding.\" **D is wrong:** the carrier was liable even assuming seaworthiness. **Bar trap:** the burden then shifts to the carrier to prove extraordinary diligence and force majeure.",
+      "caseIds": [
+        "case-0091"
+      ],
+      "source": {
+        "caseTitle": "Sulpicio Lines, Inc. v. Sesante, et al.",
+        "grNumber": "G.R. No. 172682",
+        "url": "https://lawphil.net/judjuris/juri2016/jul2016/gr_172682_2016.html",
+        "part": "Ruling of the Court, II (presumption of negligence)",
+        "excerpt": "The presumption of negligence applies so long as there is evidence showing that: (a) a contract exists between the passenger and the common carrier; and (b) the injury or death took place during the existence of such contract. In such event, the burden shifts to the common carrier to prove its observance of extraordinary diligence, and that an unforeseen event or force majeure had caused the injury."
       }
     }
   ]
