@@ -8197,6 +8197,102 @@
         "part": "Decision, discussion of G.R. No. L-13358 (presumed negligence is not bad faith; gross negligence)",
         "excerpt": "This theory is untenable, for under it the carrier would always be deemed in bad faith, in every case its obligation to the passenger is infringed, and it would never be accountable for simple negligence; while under the law (Art. 1756), the presumption is that common carriers acted negligently (and not maliciously), and Art. 1762 speaks of negligence of the common carrier. … It is true that negligence may be occasionally so gross as to amount to malice; but that fact must be shown in evidence, and a carrier's bad faith is not to be lightly inferred from a mere finding that the contract was breached through negligence of the carrier's employees."
       }
+    },
+    {
+      "id": "q-0843",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Introductory Concepts",
+      "prompt": "Ana and Ben are members of a private beach club. Ana deliberately ignored the club's booking rules and shouted insults at the staff member who stopped her. The board sent her a written notice, received her written explanation, and suspended her for two months, as the club's by-laws allow. Ben, who joined her in breaking the rules, was suspended in the same way.\n\n(a) Ana sues the club for moral and exemplary damages, saying the suspension embarrassed her before her friends. Will her suit prosper? Explain.\n\n(b) Ben's only evidence is his own testimony that some friends stopped doing business with him after the suspension; he admits they never told him the suspension was the reason. Is that enough? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) No. The club merely exercised its legal right under its by-laws after giving notice and a chance to explain; any damage that results is damnum absque injuria, and the embarrassment was brought on by Ana herself. (b) No. Bare, self-serving testimony, with no other evidence and no proof that the suspension caused the loss, does not prove damage by preponderance of evidence.",
+        "legalBasis": "\"One who makes use of his own legal right does no injury. Qui jure suo utitur nullum damnum facit. If damage results from a person's exercising his legal rights, it is damnum absque injuria.\" The suspended members must prove by preponderance of evidence that there is fault or negligence on the club's part; membership in a club is a privilege, subject to its rules, and mental anguish caused by deliberately violating those rules is brought upon oneself. Mere \"self-serving declarations,\" with neither testimonial nor documentary evidence to bolster them, do not prove the damage claimed.",
+        "application": "(a) Ana broke the rules on purpose and was suspended in the manner the by-laws provide, so the club committed no legal wrong. (b) Ben offers only his own word, and even admits his friends gave no reason linking their conduct to his suspension.",
+        "conclusion": "Neither Ana nor Ben may recover. **Bar trap:** feeling embarrassed or losing business is damage, but without a legal wrong (injury) it is not compensable; and a claimant's own testimony alone is weak proof."
+      },
+      "keyPoints": [
+        "One who uses his own legal right does no injury (qui jure suo utitur nullum damnum facit)",
+        "Damage from the exercise of a legal right is damnum absque injuria",
+        "The claimant must prove fault or negligence by preponderance of evidence",
+        "Anguish from one's own deliberate violation of the rules is self-inflicted",
+        "Self-serving declarations without other evidence do not prove damage"
+      ],
+      "caseIds": [
+        "case-0048"
+      ],
+      "source": {
+        "caseTitle": "The Orchard Golf & Country Club, Inc., et al. v. Yu and Yuhico",
+        "grNumber": "G.R. No. 191033",
+        "url": "https://lawphil.net/judjuris/juri2016/jan2016/gr_191033_2016.html",
+        "part": "Decision, the claim for moral and exemplary damages",
+        "excerpt": "With regard to the purported damages they incurred, respondents testified during the trial to support their respective allegations. … Apart from these self-serving declarations, respondents presented neither testimonial nor documentary evidence to bolster their claims. Worse, Yu even admitted that Freddy Lim and Atty. Benjie did not tell him that his suspension was the reason why they did not want to transact with him. … \"One who makes use of his own legal right does no injury. Qui jure suo utitur nullum damnum facit. If damage results from a person's exercising his legal rights, it is damnum absque injuria.\" In this case, respondents failed to prove by preponderance of evidence that there is fault or negligence on the part of petitioners in order to oblige them to pay for the alleged damage sustained as a result of their suspension as Club members. Certainly, membership in the Club is a privilege. Regular members are entitled to use all the facilities and privileges of the Club, subject to its rules and regulations. As correctly pointed out by petitioners, the mental anguish respondents experienced, assuming to be true, was brought upon them by themselves for deliberately and consciously violating the rules and regulations of the Club."
+      }
+    },
+    {
+      "id": "q-0844",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Introductory Concepts",
+      "prompt": "Carla lost a profitable deal after her homeowners' association lawfully suspended her privileges, in accordance with its rules, for repeated violations. She sues the association, arguing: \"I suffered a real loss because of what the association did, so I am entitled to damages.\" Is her argument correct? In your answer, distinguish injury, damage and damages.",
+      "suggestedAnswer": {
+        "answer": "No. The mere fact that she suffered a loss does not give her a right to damages. There must be both a legal wrong inflicted by the defendant (injury) and damage resulting from it; a loss that does not result from a violation of a legal duty is damnum absque injuria.",
+        "legalBasis": "\"[T]he mere fact that the plaintiff suffered losses does not give rise to a right to recover damages. To warrant the recovery of damages, there must be both a right of action for a legal wrong inflicted by the defendant, and damage resulting to the plaintiff therefrom. Wrong without damage, or damage without wrong, does not constitute a cause of action.\" \"Injury is the illegal invasion of a legal right; damage is the loss, hurt, or harm which results from the injury; and damages are the recompense or compensation awarded for the damage suffered. Thus, there can be damage without injury in those instances in which the loss or harm was not the result of a violation of a legal duty.\"",
+        "application": "Carla suffered damage (the lost deal), but the association acted under its rules and did not violate any legal duty owed to her, so there is no injury in the legal sense, and no damages are due.",
+        "conclusion": "Her argument is wrong; this is damage without injury. **Bar trap:** do not confuse damage (the loss) with injury (the legal wrong); both are needed before damages (the compensation) can be awarded."
+      },
+      "keyPoints": [
+        "A loss alone does not give a right to damages",
+        "Need both a legal wrong by the defendant and resulting damage",
+        "Injury: illegal invasion of a legal right",
+        "Damage: the loss, hurt or harm; damages: the compensation",
+        "Damage without injury (damnum absque injuria) is not compensable"
+      ],
+      "caseIds": [
+        "case-0048"
+      ],
+      "source": {
+        "caseTitle": "The Orchard Golf & Country Club, Inc., et al. v. Yu and Yuhico",
+        "grNumber": "G.R. No. 191033",
+        "url": "https://lawphil.net/judjuris/juri2016/jan2016/gr_191033_2016.html",
+        "part": "Decision, damages, damage and injury (quoting Spouses Custodio v. CA)",
+        "excerpt": "x x x [T]he mere fact that the plaintiff suffered losses does not give rise to a right to recover damages. To warrant the recovery of damages, there must be both a right of action for a legal wrong inflicted by the defendant, and damage resulting to the plaintiff therefrom. Wrong without damage, or damage without wrong, does not constitute a cause of action, since damages are merely part of the remedy allowed for the injury caused by a breach or wrong. There is a material distinction between damages and injury. Injury is the illegal invasion of a legal right; damage is the loss, hurt, or harm which results from the injury; and damages are the recompense or compensation awarded for the damage suffered. Thus, there can be damage without injury in those instances in which the loss or harm was not the result of a violation of a legal duty. These situations are often called damnum absque injuria."
+      }
+    },
+    {
+      "id": "q-0845",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Introductory Concepts",
+      "prompt": "Dela Corp. lost an intra-corporate case in the Regional Trial Court. Its lawyer filed a notice of appeal instead of a petition for review under Rule 43. Seven days after the 15-day period lapsed, the lawyer candidly admitted the mistake and asked the Court of Appeals for time to file the petition; the appeal appeared meritorious, and the other side suffered no material prejudice.\n\n(a) May the Court of Appeals allow the petition? Explain.\n\n(b) Would the answer be the same if, instead, Dela Corp. had filed months late, without any explanation, and with no showing that its appeal had merit? Reason briefly.",
+      "suggestedAnswer": {
+        "answer": "(a) Yes. Although the periods for appeal are generally inviolable, they may be relaxed to serve substantial justice where the appeal appears meritorious or there are compelling reasons; a short, candidly explained delay with no prejudice, under a rule that itself allows extensions, justifies relaxation. (b) No. The general rule would apply: perfecting an appeal within the period is mandatory and jurisdictional, and nothing would justify relaxing it.",
+        "legalBasis": "\"In general, procedural rules setting the period for perfecting an appeal or filing a petition for review are inviolable considering that appeal is not a constitutional right but merely a statutory privilege and that perfection of an appeal in the manner and within the period permitted by law is not only mandatory but jurisdictional. However, procedural rules may be waived or dispensed with in order to serve and achieve substantial justice. Relaxation of the rules may be had when the appeal, on its face, appears to be absolutely meritorious or when there are persuasive or compelling reasons.\" Under A.M. No. 04-9-07-SC, the Court of Appeals may grant an additional 15 days and a further extension for the most compelling reasons, so the period \"is neither an impregnable nor an unyielding rule.\"",
+        "application": "(a) Dela Corp.'s delay was only seven days, it admitted its mistake, its appeal looked meritorious, and the rule itself contemplates extensions. (b) Without any reason, merit or candor, there is nothing to take the case out of the general rule.",
+        "conclusion": "(a) The petition may be allowed; (b) not. **Bar trap:** relaxation is the exception; it needs a meritorious appeal or compelling reasons, not just a request."
+      },
+      "keyPoints": [
+        "Periods to appeal are generally inviolable; appeal is a statutory privilege",
+        "Perfection within the period is mandatory and jurisdictional",
+        "Rules may be relaxed to serve substantial justice",
+        "When the appeal appears meritorious or there are compelling reasons",
+        "A.M. No. 04-9-07-SC itself allows extensions"
+      ],
+      "caseIds": [
+        "case-0048"
+      ],
+      "source": {
+        "caseTitle": "The Orchard Golf & Country Club, Inc., et al. v. Yu and Yuhico",
+        "grNumber": "G.R. No. 191033",
+        "url": "https://lawphil.net/judjuris/juri2016/jan2016/gr_191033_2016.html",
+        "part": "Decision, relaxation of the rules on the period to appeal",
+        "excerpt": "Unlike LBP and Atty. Abrenica, petitioners in this case committed an excusable delay of merely seven (7) days. … In general, procedural rules setting the period for perfecting an appeal or filing a petition for review are inviolable considering that appeal is not a constitutional right but merely a statutory privilege and that perfection of an appeal in the manner and within the period permitted by law is not only mandatory but jurisdictional. However, procedural rules may be waived or dispensed with in order to serve and achieve substantial justice. Relaxation of the rules may be had when the appeal, on its face, appears to be absolutely meritorious or when there are persuasive or compelling reasons to relieve a litigant of an injustice not commensurate with the degree of thoughtlessness in not complying with the prescribed procedure. Notably, under A.M. No. 04-9-07-SC (Re: Mode of Appeal in Cases Formerly Cognizable by the Securities and Exchange Commission), while the petition for review under Rule 43 of the Rules should be filed within fifteen (15) days from notice of the decision or final order of the RTC, the CA may actually grant an additional period of fifteen (15) days within which to file the petition and a further extension of time not exceeding fifteen (15) days for the most compelling reasons. This implies that the reglementary period is neither an impregnable nor an unyielding rule."
+      }
     }
   ]
 }
