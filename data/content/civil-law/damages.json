@@ -9332,6 +9332,100 @@
         "part": "Decision, discussion of res judicata and the law of the case",
         "excerpt": "However, a different conclusion is warranted under the principle of law of the case. Law of the case has been defined as the opinion delivered on a former appeal. More specifically, it means that whatever is once irrevocably established as the controlling legal rule or decision between the same parties in the same case continues to be the law of the case, whether correct on general principles or not, so long as the facts on which such decision was predicated continue to be the facts of the case before the court. … The appellate court apparently overlooked the significance of this principle called the law of the case which is totally different from the concept of res judicata. Law of the case does not have the finality of the doctrine of res judicata, and applies only to that one case, whereas res judicata forecloses parties or privies in one case by what has been done in another case. … Thus, even if erroneous, the ruling of the Court of Appeals in CA-G.R. SP No. 15356 has become the law of the case as between herein petitioner Padillo and respondent Averia, and may no longer be disturbed or modified."
       }
+    },
+    {
+      "id": "q-0879",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Ana bought 10,000 shares of a listed mining company and asked the company to register the transfer. The company delayed for four months. Meanwhile, the share price rose sharply and then fell. Ana sues for the profit she says she could have made by selling at the peak. There is no evidence that she planned to sell, or would have sold, on any particular date. Is she entitled to that profit as damages? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. A claim for unrealized profit must be duly established by proof that the claimant was in fact damaged; where nothing shows that she would have sold on specified dates, any profit from the price swing is purely speculative, and speculative damages cannot be recovered.",
+        "legalBasis": "\"[T]he claim for unrealized profit must be duly and sufficiently established, that is, ... the claimant must submit proof that it was in fact damaged because of [the defendant's] act or omission.\" Where the record \"does not at all show that [the claimant] intended to sell, or would sell or would have sold the stocks in question on specified dates,\" whatever profits could have been made \"are purely SPECULATIVE, for it was difficult to predict with any decree of certainty the rise and fall in the value of the shares. Thus this Court has ruled that speculative damages cannot be recovered.\"",
+        "application": "Ana shows only that the price went up and then down; she gives no proof that she would actually have sold at the peak.",
+        "conclusion": "No damages for the supposed profit. **Bar trap:** a market rise is not proof of a lost profit; the claimant must prove she would actually have earned it."
+      },
+      "keyPoints": [
+        "Unrealized profit must be duly and sufficiently established",
+        "Proof that the claimant was in fact damaged",
+        "No showing she would have sold on specified dates",
+        "Profits from unpredictable price swings are speculative",
+        "Speculative damages cannot be recovered"
+      ],
+      "caseIds": [
+        "case-0060"
+      ],
+      "source": {
+        "caseTitle": "Batong Buhay Gold Mines, Inc. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-45048",
+        "url": "https://lawphil.net/judjuris/juri1987/jan1987/gr_l-45048_1987.html",
+        "part": "Decision, discussion of the first issue (unrealized profits)",
+        "excerpt": "Petitioner company also alleges that the claim for unrealized profit must be duly and sufficiently established, that is, that the claimant must submit proof that it was in fact damaged because of petitioner's act or omission. The stipulation of facts of the parties does not at all show that private respondent intended to sell, or would sell or would have sold the stocks in question on specified dates. While it is true that shares of stock may go up or down in value (as in fact the concerned shares here really rose from fifteen (15) centavos to twenty three or twenty four (23/24) centavos per share and then fell to about two (2) centavos per share, still whatever profits could have been made are purely SPECULATIVE, for it was difficult to predict with any decree of certainty the rise and fall in the value of the shares. Thus this Court has ruled that speculative damages cannot be recovered."
+      }
+    },
+    {
+      "id": "q-0880",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Ben's lawyer argues: \"Had the company registered my client's shares on time, he would have sold them at the peak and earned ₱500,000; the company's delay cost him that profit.\" The company answers that it is just as likely Ben would have kept the shares and waited for the price to rise further. Which argument is more consistent with the law on damages? Explain.",
+      "suggestedAnswer": {
+        "answer": "The company's. It is easy to say after the fact that the shares would have been sold at the peak, but it is equally possible that the owner would have refused to sell and waited for further increases; such a profit rests on assumption, not proof.",
+        "legalBasis": "\"It is easy to say now that had private respondent gained legal title to the shares, it could have sold the same and reaped a profit ... but then it is also true that human nature, being what it is, private respondent's officials could also have refused to sell and instead wait for expected further increases in value.\" On that basis, the award of unrealized profit was set aside and the trial court's decision, which awarded no damages, was reinstated.",
+        "application": "Ben's claim assumes the very fact he must prove, that he would have sold at the best time; without evidence of it, there is no compensable loss.",
+        "conclusion": "No damages for the claimed profit. **Bar trap:** hindsight about what a claimant could have done is not proof of what he would have done."
+      },
+      "keyPoints": [
+        "Hindsight is not proof",
+        "The owner could equally have kept the shares",
+        "A profit resting on assumption is speculative",
+        "No award for unproved unrealized profit"
+      ],
+      "caseIds": [
+        "case-0060"
+      ],
+      "source": {
+        "caseTitle": "Batong Buhay Gold Mines, Inc. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-45048",
+        "url": "https://lawphil.net/judjuris/juri1987/jan1987/gr_l-45048_1987.html",
+        "part": "Decision, discussion of the first issue (human nature)",
+        "excerpt": "It is easy to say now that had private respondent gained legal title to the shares, it could have sold the same and reaped a profit of P5,624.95 but it could not do so because of petitioner's refusal to transfer the stocks in the former's name at the time demand was made, but then it is also true that human nature, being what it is, private respondent's officials could also have refused to sell and instead wait for expected further increases in value. … WHEREFORE, the assailed decision and resolutions of the Court of Appeals are hereby SET ASIDE, and a new one is hereby rendered REINSTATING the decision of the trial court."
+      }
+    },
+    {
+      "id": "q-0881",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "A company refused to register Carla's purchase of shares because the seller's wife wrote that the shares were conjugal and sold without her consent. The court later ordered the transfer, and Carla received her shares. Carla now also asks for damages for the delay, but proves only that the share price moved during the delay. Is she entitled to damages just because she won the transfer? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. Winning the main relief, the transfer, does not by itself entitle her to damages; each item of actual damages must be proved, and a price movement alone does not prove a lost profit.",
+        "legalBasis": "The company withheld the transfer out of \"apprehension that they might he held liable for damages under Article 173 of the Civil Code.\" Although the transfer was ordered, the profits claimed for the delay \"are purely SPECULATIVE,\" and \"speculative damages cannot be recovered,\" so the award for unrealized profit was set aside.",
+        "application": "Carla already has her shares; for damages she must show an actual, proven loss from the delay, which she has not done.",
+        "conclusion": "No damages. **Bar trap:** a favorable judgment on the main claim does not carry an award of damages with it; damages need their own proof."
+      },
+      "keyPoints": [
+        "The main relief (transfer) was granted",
+        "Damages require separate proof",
+        "A price movement alone does not prove loss",
+        "Speculative damages are not recoverable"
+      ],
+      "caseIds": [
+        "case-0060"
+      ],
+      "source": {
+        "caseTitle": "Batong Buhay Gold Mines, Inc. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-45048",
+        "url": "https://lawphil.net/judjuris/juri1987/jan1987/gr_l-45048_1987.html",
+        "part": "Statement of facts and the Court of Appeals' award",
+        "excerpt": "The defendants justify their refusal to transfer the shares of stock of Francisco Aguac in the name of the plaintiff in view of their apprehension that they might he held liable for damages under Article 173 of the Civil Code and the ruling of the Supreme Court in Bucoy vs. Paulino, 23 SCRA 248."
+      }
     }
   ]
 }
