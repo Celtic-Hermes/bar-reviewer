@@ -601,6 +601,21 @@
       "ruling": "The petition was denied with modifications. (1) The broadcasts were libelous per se. Every defamatory imputation is presumed malicious; the broadcasters had a month to verify yet relied on students' words alone, showing reckless disregard of the truth. The neutral reportage privilege did not apply, and the fair comment doctrine protects opinion based on established facts, which these were not. They also violated the broadcast industry's Radio Code, which gives standards for good faith under Articles 19 and 21. (2) A juridical person is generally not entitled to moral damages, since it cannot experience physical suffering or mental anguish, and the statement in Mambulao Lumber is obiter dictum. Nevertheless, Article 2219(7) expressly allows moral damages for libel, slander or any other form of defamation without distinguishing natural from juridical persons, so a corporation may claim them for defamation. Where the libel is libelous per se, the law implies damages and no proof of actual damages is needed. But since AMEC suffered no substantial damage to its reputation, the award was reduced to ₱150,000. (3) Attorney's fees were deleted: they are the exception, need factual, legal and equitable justification, and the reason must be stated in the body of the decision. (4) FBNI is solidarily liable as a joint tortfeasor and employer under Articles 2176 and 2180; it failed to prove diligence in supervising, and even in selecting, its broadcasters.",
       "keyDoctrine": "A juridical person is generally not entitled to moral damages, but Article 2219(7) authorizes moral damages for libel, slander or any other form of defamation without distinguishing natural from juridical persons, so a corporation may recover them for defamation. Where a statement is libelous per se, the law implies damages; no proof of actual damage is needed, though the amount should be reasonable. Every defamatory imputation is presumed malicious; fair comment protects only opinion based on established facts. Joint tortfeasors are solidarily liable, and a broadcaster's employer is liable unless it proves diligence in selection and supervision. Attorney's fees need justification stated in the body of the decision.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2005/jan2005/gr_141994_2005.html"
+    },
+    {
+      "id": "case-0088",
+      "status": "draft",
+      "name": "Republic of the Philippines v. Tuvera, et al.",
+      "grNumber": "G.R. No. 148246",
+      "year": 2007,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "facts": "In 1984 President Marcos, acting on a letter sent directly to him, granted Twin Peaks Development Corporation a timber license over 26,000 hectares of forest in Quirino. Twin Peaks' largest stockholder was Victor Tuvera, son of Juan Tuvera, then Presidential Executive Assistant, who signed a memorandum informing the Director of Forestry of the grant. There was no public bidding, the corporation was organized for real estate, its paid-up capital was far below the required minimum, and it had no wood processing plant. After EDSA, the Republic, through the PCGG, sued the Tuveras and Twin Peaks before the Sandiganbayan for restitution and damages, praying for ₱48 million actual damages and moral, temperate and exemplary damages. After the Republic rested, the Sandiganbayan granted the respondents' demurrer to evidence on the ground of res judicata, based on Ysmael, an earlier case brought by the previous licensee.",
+      "issue": "(1) Was the demurrer properly granted on res judicata? (2) On the Republic's evidence, are the respondents liable, and for what damages?",
+      "ruling": "The petition was granted. (1) Res judicata is a ground for a motion to dismiss, not for a demurrer to evidence, and in any case there was no identity of parties or causes of action with Ysmael. Since the demurrer was reversed on appeal, the respondents lost the right to present evidence and the Court decided the case on the Republic's evidence alone, by preponderance of evidence. (2) The license was illegally granted through a \"backdoor\" request, without bidding and without the requirements for negotiation, and Juan Tuvera, by his memorandum, could be taken to have influenced the grant in which he had an indirect interest, contrary to delicadeza and the Anti-Graft law. But actual damages must be proved, not presumed, and the Republic offered no proof of the amount. Moral damages were denied: a juridical person is not entitled to them under Article 2217, and the case is not among the analogous cases in Article 2219, such as defamation. Temperate damages of ₱1,000,000 were awarded, since jurisprudence allows them even where pecuniary loss could have been proved with certainty but was not, a rule drawn from equity. Entitlement to temperate damages in turn allowed exemplary damages under Article 2234, also ₱1,000,000, for the grave abuse of public office and the unjust enrichment at the people's expense.",
+      "keyDoctrine": "Actual damages must be proved, not presumed. A juridical person such as the State is not entitled to moral damages under Article 2217; it may claim them only under the analogous cases of Article 2219, such as defamation. Temperate damages (Art. 2224) may be awarded when some pecuniary loss was suffered but its amount was not adequately proved, even where it could have been proved with certainty, a rule drawn from equity. A showing of entitlement to temperate damages allows exemplary damages under Article 2234; exemplary damages are not a matter of right but serve as a deterrent to socially deleterious acts. Res judicata is a ground for a motion to dismiss, not a demurrer; when a demurrer is reversed on appeal, the defendant loses the right to present evidence.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2007/feb2007/gr_148246_2007.html"
     }
   ],
   "questions": [
@@ -12361,6 +12376,276 @@
         "url": "https://lawphil.net/judjuris/juri2005/jan2005/gr_141994_2005.html",
         "part": "The Court's Ruling, first issue (neutral reportage)",
         "excerpt": "Rima and Alegre cannot invoke the privilege of neutral reportage because unfounded comments abound in the broadcasts. Moreover, there is no existing controversy involving AMEC when the broadcasts were made. The privilege of neutral reportage applies where the defamed person is a public figure who is involved in an existing controversy, and a party to that controversy makes the defamatory statement."
+      }
+    },
+    {
+      "id": "q-0975",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "In a civil action for restitution and damages over an illegally granted timber license, the Republic of the Philippines prays for moral damages for the injury caused to the State. Is the Republic entitled to moral damages? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. The Republic is a juridical person. A juridical person is not entitled to moral damages under Article 2217 of the Civil Code, since it cannot experience physical suffering or sentiments like mental anguish; it may claim them only in the analogous cases listed in Article 2219, such as libel, slander or other defamation. A suit over an illegal timber license is not among those cases.",
+        "legalBasis": "In Republic v. Tuvera, the Court held: \"The claim for moral damages deserves short shrift. The claimant in this case is the Republic of the Philippines, a juridical person.\" Citing Filipinas Broadcasting v. AMEC-BCCM, \"a juridical person is not entitled to moral damages under Article 2217 of the Civil Code. It may avail of moral damages under the analogous cases listed in Article 2219, such as for libel, slander or any other form of defamation. Suffice it to say that the action at bar does not involve any of the analogous cases under Article 2219.\"",
+        "application": "The Republic's claim arises from abuse of public office and unjust enrichment, not from defamation or any other case under Article 2219.",
+        "conclusion": "No moral damages. **Bar trap:** the State, like a corporation, is a juridical person; the defamation exception does not cover every wrong done to it."
+      },
+      "keyPoints": [
+        "The Republic is a juridical person",
+        "No moral damages for a juridical person under Art. 2217",
+        "Possible only in the analogous cases of Art. 2219, such as defamation",
+        "An illegal timber license case is not one of them"
+      ],
+      "caseIds": [
+        "case-0088"
+      ],
+      "source": {
+        "caseTitle": "Republic of the Philippines v. Tuvera, et al.",
+        "grNumber": "G.R. No. 148246",
+        "url": "https://lawphil.net/judjuris/juri2007/feb2007/gr_148246_2007.html",
+        "part": "Ruling, Part VI (moral damages)",
+        "excerpt": "The claim for moral damages deserves short shrift. The claimant in this case is the Republic of the Philippines, a juridical person. … As explained, a juridical person is not entitled to moral damages under Article 2217 of the Civil Code. It may avail of moral damages under the analogous cases listed in Article 2219, such as for libel, slander or any other form of defamation. Suffice it to say that the action at bar does not involve any of the analogous cases under Article 2219, and indeed upon an intelligent reading of Article 2219, it is difficult to see how the Republic could sustain any of the injuries contemplated therein."
+      }
+    },
+    {
+      "id": "q-0976",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "The plaintiff proved that the defendants illegally obtained and exploited a timber concession, but presented no evidence at all of the amount of its loss, although it could have obtained the defendants' income records through discovery. (a) May actual damages be awarded? (b) May temperate damages be awarded, considering that Article 2224 speaks of a loss whose amount \"can not from the nature of the case, be proved with certainty\"? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) No. Actual damages must be proved, not presumed; proving the wrongful act is not enough without proving the degree of injury. (b) Yes. Although the text of Article 2224 might suggest otherwise, jurisprudence allows temperate damages even where the pecuniary loss could theoretically have been proved with certainty but was not adequately proved. This is a rule drawn from equity, affording relief to those definitely injured who cannot prove how much.",
+        "legalBasis": "In Republic v. Tuvera, \"[a]ctual damages must be proven, not presumed. The Republic failed to prove damages. It is not enough for the Republic to have established ... the legal travesty ... It should have established the degree of injury.\" Yet \"jurisprudence applying Article 2224 is clear that temperate damages may be awarded even in instances where pecuniary loss could theoretically have been proved with certainty.\" \"The allowance of temperate damages when actual damages were not adequately proven is ultimately a rule drawn from equity, the principle affording relief to those definitely injured who are unable to prove how definite the injury.\" The Court awarded ₱1,000,000.",
+        "application": "Some pecuniary loss to the State was certain from the illegal exploitation of the forest, though its amount was never proved.",
+        "conclusion": "(a) No actual damages; (b) temperate damages may be awarded. **Bar trap:** do not reason from the bare text of Article 2224 alone; the Court allowed temperate damages even where the loss was provable but not proved."
+      },
+      "keyPoints": [
+        "Actual damages must be proved, not presumed",
+        "Proving the wrong is not proving the amount of injury",
+        "Temperate damages: some pecuniary loss, amount not proved with certainty (Art. 2224)",
+        "Allowed even if the loss could have been proved but was not",
+        "A rule drawn from equity"
+      ],
+      "caseIds": [
+        "case-0088"
+      ],
+      "source": {
+        "caseTitle": "Republic of the Philippines v. Tuvera, et al.",
+        "grNumber": "G.R. No. 148246",
+        "url": "https://lawphil.net/judjuris/juri2007/feb2007/gr_148246_2007.html",
+        "part": "Ruling, Part VI (actual and temperate damages)",
+        "excerpt": "Actual damages must be proven, not presumed. The Republic failed to prove damages. It is not enough for the Republic to have established, as it did, the legal travesty that led to the wrongful obtention by Twin Peaks of the TLA. It should have established the degree of injury sustained by the State by reason of such wrongful act. … Temperate or moderate damages avail when \"the court finds that some pecuniary loss has been suffered but its amount can not from the nature of the case, be proved with certainty.\" The textual language might betray an intent that temperate damages do not avail when the case, by its nature, is susceptible to proof of pecuniary loss; and certainly the Republic could have proved pecuniary loss herein. Still, jurisprudence applying Article 2224 is clear that temperate damages may be awarded even in instances where pecuniary loss could theoretically have been proved with certainty. … The allowance of temperate damages when actual damages were not adequately proven is ultimately a rule drawn from equity, the principle affording relief to those definitely injured who are unable to prove how definite the injury."
+      }
+    },
+    {
+      "id": "q-0977",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "In the same case, the Court denied moral damages and awarded only temperate damages. May exemplary damages also be awarded? What is their purpose? Explain.",
+      "suggestedAnswer": {
+        "answer": "Yes. Under Article 2234 of the Civil Code, a showing that the plaintiff is entitled to temperate damages allows the award of exemplary damages. They are not recoverable as a matter of right; the courts decide whether to award them. Their purpose is to serve as a deterrent against, or a negative incentive to curb, socially deleterious actions; ill-gotten wealth cases are a prime example.",
+        "legalBasis": "In Republic v. Tuvera, \"[t]he allowance of temperate damages also paves the way for the award of exemplary damages. Under Article 2234 of the Civil Code, a showing that the plaintiff is entitled to temperate damages allows for the award of exemplary damages. Even as exemplary damages cannot be recovered as a matter of right, the courts are empowered to decide whether or not they should be adjudicated.\" They \"serve as a deterrent against or as a negative incentive to curb socially deleterious actions.\" The Court awarded ₱1,000,000.",
+        "application": "The license was obtained through fraudulent and illegal means highlighted by the abuse of a high office, a grave case of unjust enrichment at the people's expense.",
+        "conclusion": "Exemplary damages were properly awarded. **Bar trap:** temperate damages, not only moral or compensatory damages, can open the door to exemplary damages under Article 2234."
+      },
+      "keyPoints": [
+        "Entitlement to temperate damages allows exemplary damages (Art. 2234)",
+        "Not recoverable as a matter of right",
+        "Courts decide whether to award them",
+        "Purpose: deterrent to socially deleterious actions",
+        "Abuse of public office and unjust enrichment justified the award"
+      ],
+      "caseIds": [
+        "case-0088"
+      ],
+      "source": {
+        "caseTitle": "Republic of the Philippines v. Tuvera, et al.",
+        "grNumber": "G.R. No. 148246",
+        "url": "https://lawphil.net/judjuris/juri2007/feb2007/gr_148246_2007.html",
+        "part": "Ruling, Part VI (exemplary damages)",
+        "excerpt": "The allowance of temperate damages also paves the way for the award of exemplary damages. Under Article 2234 of the Civil Code, a showing that the plaintiff is entitled to temperate damages allows for the award of exemplary damages. Even as exemplary damages cannot be recovered as a matter of right, the courts are empowered to decide whether or not they should be adjudicated. Ill-gotten wealth cases are hornbook demonstrations where damages by way of example or correction for the public good should be awarded. Fewer causes of action deserve the stigma left by exemplary damages, which \"serve as a deterrent against or as a negative incentive to curb socially deleterious actions.\""
+      }
+    },
+    {
+      "id": "q-0978",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Ana's delivery truck was rammed by Ben's speeding van and badly dented. (a) Ana proves the collision, Ben's fault and the damage to her truck, but brings no receipts or estimates of the repair cost. (b) Carla sues Ben for \"₱500,000 actual damages\" for a business opportunity she claims she lost, but proves neither the loss nor that she suffered any damage at all. May the court award temperate damages in each case? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) Yes. Some pecuniary loss is definitely shown, the damaged truck, but its amount was not adequately proved; temperate damages may be awarded even though the repair cost could have been proved. (b) No. Temperate damages require that some pecuniary loss has been suffered; they afford relief to those definitely injured who cannot prove how much. Where no loss at all is shown, there is nothing to temper, and actual damages are never presumed.",
+        "legalBasis": "Temperate damages avail when \"the court finds that some pecuniary loss has been suffered but its amount can not ... be proved with certainty,\" and jurisprudence allows them \"even in instances where pecuniary loss could theoretically have been proved with certainty.\" In Viron Transportation, cited in Republic v. Tuvera, \"temperate damages were awarded for the resulting damage sustained by a cargo truck, after the plaintiff had failed to submit competent proof of actual damages.\" The rule affords \"relief to those definitely injured who are unable to prove how definite the injury.\" \"Actual damages must be proven, not presumed.\"",
+        "application": "(a) Ana is definitely injured; only the amount is unproved. (b) Carla proves no injury at all.",
+        "conclusion": "(a) Temperate damages; (b) none. **Bar trap:** temperate damages replace proof of the amount, not proof that a loss happened."
+      },
+      "keyPoints": [
+        "Temperate damages need some pecuniary loss actually suffered",
+        "The amount need not be proved with certainty",
+        "Allowed even if the amount could have been proved",
+        "Damaged cargo truck example (Viron Transportation)",
+        "No proof of any loss: no temperate damages"
+      ],
+      "caseIds": [
+        "case-0088"
+      ],
+      "source": {
+        "caseTitle": "Republic of the Philippines v. Tuvera, et al.",
+        "grNumber": "G.R. No. 148246",
+        "url": "https://lawphil.net/judjuris/juri2007/feb2007/gr_148246_2007.html",
+        "part": "Ruling, Part VI (actual and temperate damages)",
+        "excerpt": "In Viron Transportation Co., Inc. v. Delos Santos, a civil action for damages involving a vehicular collision, temperate damages were awarded for the resulting damage sustained by a cargo truck, after the plaintiff had failed to submit competent proof of actual damages. We cannot discount the heavy influence of common law, and its reliance on judicial precedents, in our law on tort and damages. Notwithstanding the language of Article 2224, a line of jurisprudence has emerged authorizing the award of temperate damages even in cases where the amount of pecuniary loss could have been proven with certainty, if no such adequate proof was presented. The allowance of temperate damages when actual damages were not adequately proven is ultimately a rule drawn from equity, the principle affording relief to those definitely injured who are unable to prove how definite the injury."
+      }
+    },
+    {
+      "id": "q-0979",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "After Dino rested his case for damages, the defendants filed a demurrer to evidence arguing that an earlier case between different parties had already settled the matter by res judicata. The trial court granted the demurrer. On appeal, the dismissal is reversed. (a) Was res judicata a proper ground for the demurrer? (b) May the defendants now present their own evidence? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) No. Res judicata is a ground for a motion to dismiss, raised before evidence is presented; a demurrer is granted only if, after the plaintiff's evidence, it appears that the plaintiff has shown no right to relief. (b) No. When a demurrer is granted and the dismissal is reversed on appeal, the defendant is deemed to have waived the right to present evidence; the appellate court renders judgment on the plaintiff's evidence.",
+        "legalBasis": "In Republic v. Tuvera, \"[r]es judicata is an inappropriate ground for sustaining a demurrer to evidence, even as it stands as a proper ground for a motion to dismiss. A demurrer may be granted if, after the presentation of plaintiff's evidence, it appears upon the facts and the law that the plaintiff has shown no right to relief.\" Under Rule 33, Section 1, \"[i]f the motion is granted but on appeal the order of dismissal is reversed he shall have be deemed to have waived the right to present evidence,\" and \"the appellate court shall then proceed to render judgment on the merits on the basis of plaintiff's evidence.\"",
+        "application": "The defendants chose to demur; with the dismissal reversed, the case is decided on Dino's evidence.",
+        "conclusion": "(a) Not a proper ground; (b) they may not. **Bar trap:** a defendant who demurs and wins below, then loses on appeal, cannot go back and present evidence; the case is decided on the plaintiff's evidence alone."
+      },
+      "keyPoints": [
+        "Res judicata: ground for a motion to dismiss, not a demurrer",
+        "Demurrer: plaintiff has shown no right to relief on his evidence",
+        "Demurrer granted then reversed: defendant waives right to present evidence",
+        "Appellate court decides on the plaintiff's evidence"
+      ],
+      "caseIds": [
+        "case-0088"
+      ],
+      "source": {
+        "caseTitle": "Republic of the Philippines v. Tuvera, et al.",
+        "grNumber": "G.R. No. 148246",
+        "url": "https://lawphil.net/judjuris/juri2007/feb2007/gr_148246_2007.html",
+        "part": "Ruling, Parts II and IV (res judicata and demurrer to evidence)",
+        "excerpt": "Res judicata is an inappropriate ground for sustaining a demurrer to evidence, even as it stands as a proper ground for a motion to dismiss. A demurrer may be granted if, after the presentation of plaintiff's evidence, it appears upon the facts and the law that the plaintiff has shown no right to relief. In contrast, the grounds for res judicata present themselves even before the presentation of evidence, and it should be at that stage that the defense of res judicata should be invoked as a ground for dismissal. … The general rule is that upon the dismissal of the demurrer in the appellate court, the defendant loses the right to present his evidence and the appellate court shall then proceed to render judgment on the merits on the basis of plaintiff's evidence."
+      }
+    },
+    {
+      "id": "q-0980",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Eva's company illegally cut trees on Felix's land for a year. Felix proved the illegal cutting but presented no proof of the value of the timber taken. The trial court awarded Felix temperate damages and added exemplary damages because the cutting was deliberate and done for profit. Eva argues that exemplary damages cannot be given because Felix received no moral or actual damages. Is Eva correct? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. Under Article 2234 of the Civil Code, a showing that the plaintiff is entitled to temperate damages allows the award of exemplary damages; moral or actual damages are not required. Exemplary damages are not a matter of right, but the court may award them where the wrong is socially deleterious, as a deliberate taking for profit.",
+        "legalBasis": "In Republic v. Tuvera, \"[t]he allowance of temperate damages also paves the way for the award of exemplary damages. Under Article 2234 of the Civil Code, a showing that the plaintiff is entitled to temperate damages allows for the award of exemplary damages. Even as exemplary damages cannot be recovered as a matter of right, the courts are empowered to decide whether or not they should be adjudicated.\"",
+        "application": "Felix is entitled to temperate damages, so the court may consider exemplary damages for Eva's deliberate cutting.",
+        "conclusion": "Eva is wrong. **Bar trap:** under Article 2234, as applied in this case, entitlement to temperate damages is enough; the plaintiff need not also win moral or actual damages."
+      },
+      "keyPoints": [
+        "Art. 2234: entitlement to temperate damages allows exemplary damages",
+        "Moral or actual damages not required",
+        "Exemplary damages not a matter of right",
+        "Court's discretion, for socially deleterious acts"
+      ],
+      "caseIds": [
+        "case-0088"
+      ],
+      "source": {
+        "caseTitle": "Republic of the Philippines v. Tuvera, et al.",
+        "grNumber": "G.R. No. 148246",
+        "url": "https://lawphil.net/judjuris/juri2007/feb2007/gr_148246_2007.html",
+        "part": "Ruling, Part VI (actual and temperate damages; exemplary damages)",
+        "excerpt": "The allowance of temperate damages also paves the way for the award of exemplary damages. Under Article 2234 of the Civil Code, a showing that the plaintiff is entitled to temperate damages allows for the award of exemplary damages. Even as exemplary damages cannot be recovered as a matter of right, the courts are empowered to decide whether or not they should be adjudicated."
+      }
+    },
+    {
+      "id": "q-0981",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "In Republic v. Tuvera, why was the Republic denied moral damages?",
+      "choices": {
+        "A": "Because the Republic failed to prove the amount of its loss.",
+        "B": "Because the Republic, a juridical person, is not entitled to moral damages under Article 2217, and the case did not involve any of the analogous cases under Article 2219.",
+        "C": "Because moral damages cannot be awarded together with temperate damages.",
+        "D": "Because the respondents acted in good faith."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** \"[A] juridical person is not entitled to moral damages under Article 2217 ... It may avail of moral damages under the analogous cases listed in Article 2219, such as for libel ... the action at bar does not involve any of the analogous cases under Article 2219.\" **A is wrong:** that is why actual damages failed. **C is wrong:** the Court gave no such rule. **D is wrong:** the Court found abuse of power. **Bar trap:** failure of proof defeats actual damages; the nature of the claimant defeats moral damages here.",
+      "caseIds": [
+        "case-0088"
+      ],
+      "source": {
+        "caseTitle": "Republic of the Philippines v. Tuvera, et al.",
+        "grNumber": "G.R. No. 148246",
+        "url": "https://lawphil.net/judjuris/juri2007/feb2007/gr_148246_2007.html",
+        "part": "Ruling, Part VI (moral damages)",
+        "excerpt": "As explained, a juridical person is not entitled to moral damages under Article 2217 of the Civil Code. It may avail of moral damages under the analogous cases listed in Article 2219, such as for libel, slander or any other form of defamation. Suffice it to say that the action at bar does not involve any of the analogous cases under Article 2219, and indeed upon an intelligent reading of Article 2219, it is difficult to see how the Republic could sustain any of the injuries contemplated therein."
+      }
+    },
+    {
+      "id": "q-0982",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "According to Republic v. Tuvera, the allowance of temperate damages when actual damages were not adequately proven is ultimately",
+      "choices": {
+        "A": "a penalty imposed on the defendant for bad faith.",
+        "B": "an exception that applies only in criminal cases.",
+        "C": "a rule drawn from equity, affording relief to those definitely injured who are unable to prove how definite the injury.",
+        "D": "allowed only when the loss, by its nature, cannot be proved."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** \"The allowance of temperate damages when actual damages were not adequately proven is ultimately a rule drawn from equity, the principle affording relief to those definitely injured who are unable to prove how definite the injury.\" **A is wrong:** temperate damages are not a penalty. **B is wrong:** the Court cited a civil case (Viron Transportation) and applied the rule here. **D is wrong:** jurisprudence allows them \"even in instances where pecuniary loss could theoretically have been proved with certainty.\" **Bar trap:** some loss must still be definite.",
+      "caseIds": [
+        "case-0088"
+      ],
+      "source": {
+        "caseTitle": "Republic of the Philippines v. Tuvera, et al.",
+        "grNumber": "G.R. No. 148246",
+        "url": "https://lawphil.net/judjuris/juri2007/feb2007/gr_148246_2007.html",
+        "part": "Ruling, Part VI (temperate damages)",
+        "excerpt": "The allowance of temperate damages when actual damages were not adequately proven is ultimately a rule drawn from equity, the principle affording relief to those definitely injured who are unable to prove how definite the injury."
+      }
+    },
+    {
+      "id": "q-0983",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "What did the Court award the Republic in Republic v. Tuvera?",
+      "choices": {
+        "A": "₱48 million in actual damages.",
+        "B": "₱1,000,000 in temperate damages and ₱1,000,000 in exemplary damages, plus costs.",
+        "C": "Moral and exemplary damages of ₱1,000,000 each.",
+        "D": "Nothing, because the case was barred by res judicata."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The respondents were ordered \"to jointly and severally pay to the Republic of the Philippines One Million (₱1,000,000.00) Pesos, as and for temperate damages, and One Million (₱1,000,000.00) Pesos, as and for exemplary damages, plus costs of suit.\" **A is wrong:** actual damages were not proved. **C is wrong:** moral damages were denied. **D is wrong:** res judicata did not apply. **Bar trap:** temperate damages here opened the way to exemplary damages (Art. 2234).",
+      "caseIds": [
+        "case-0088"
+      ],
+      "source": {
+        "caseTitle": "Republic of the Philippines v. Tuvera, et al.",
+        "grNumber": "G.R. No. 148246",
+        "url": "https://lawphil.net/judjuris/juri2007/feb2007/gr_148246_2007.html",
+        "part": "Ruling, the disposition",
+        "excerpt": "Respondents Juan C. Tuvera, Victor P. Tuvera and Twin Peaks Development Corporation are hereby ordered to jointly and severally pay to the Republic of the Philippines One Million (₱1,000,000.00) Pesos, as and for temperate damages, and One Million (₱1,000,000.00) Pesos, as and for exemplary damages, plus costs of suit."
       }
     }
   ]
