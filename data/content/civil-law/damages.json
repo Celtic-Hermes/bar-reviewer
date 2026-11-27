@@ -496,6 +496,21 @@
       "ruling": "No. The Court partially set aside the decision and absolved Lao. An action for damages for malicious prosecution requires (1) the fact of the prosecution, that the defendant was himself the prosecutor, and that the action was terminated with an acquittal; (2) that the prosecutor acted without probable cause; and (3) that he was impelled by legal malice. Lao was only a witness, not the prosecutor (the complainant was his employer); there was probable cause, as the fiscal found; and he acted without malice, as an employee with personal knowledge of the sale. An unsuccessful prosecution is not necessarily malicious: persons should have free resort to the courts without having to stand trial for prosecutions instituted in good faith. As an agent, Lao was not personally liable, and he was deprived of his day in court through the gross negligence of the counsel his employer hired, so the judgment against him was a nullity.",
       "keyDoctrine": "Damages for malicious prosecution (a case for moral damages under Art. 2219(8)) require: (1) a prosecution by the defendant himself, terminated with an acquittal or dismissal; (2) absence of probable cause; and (3) legal malice. A mere witness is not the prosecutor; a fiscal's finding of probable cause negates the second element; and an unsuccessful prosecution instituted in good faith is not malicious, since persons should have free resort to the courts.",
       "sourceUrl": "https://lawphil.net/judjuris/juri1991/jul1991/gr_82808_1991.html"
+    },
+    {
+      "id": "case-0081",
+      "status": "draft",
+      "name": "Yasoña, et al. v. De Ramos, et al.",
+      "grNumber": "G.R. No. 156339",
+      "year": 2004,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "facts": "In 1971, Aurea Yasoña asked her nephew Jovencio de Ramos for help in paying her bank loan to save her house and lot from foreclosure. Jovencio paid the loan, and Aurea executed a notarized and registered deed of sale over half of the lot in his favor; separate titles were issued. For years Aurea acted consistently with the sale: Jovencio paid the realty taxes on his half, Aurea asked him to use it as a bond for her son, and she mortgaged only her own half. Twenty-two years later, in 1993, Aurea filed an estafa complaint against Jovencio and his brother Rodencio, claiming she had been tricked into signing a blank paper. The prosecutor dismissed it for lack of evidence. The brothers then sued for malicious prosecution, and the trial court awarded them ₱150,000 moral damages, ₱30,000 exemplary damages and attorney's fees. The Yasoñas filed a petition for certiorari under Rule 65, which the Court of Appeals dismissed as the wrong remedy.",
+      "issue": "Did the filing of the estafa complaint constitute malicious prosecution?",
+      "ruling": "Yes. The decision was affirmed in toto. Rule 65 cannot substitute for a lost appeal. Malicious prosecution is an action for damages against one who instituted a criminal prosecution, civil suit or other proceeding maliciously and without probable cause, after it ended in favor of the defendant; there must be proof that it was prompted by a sinister design to vex or humiliate, and that it was initiated deliberately, knowing the charges were false and groundless. The mere act of submitting a case to the authorities does not make one liable. Both elements, malice and absence of probable cause, were present: the registered sale, the separate titles, Jovencio's payment of taxes, Aurea's use of his half as a bond and her mortgages of only her own half showed she knew she had sold it, and her 22-year delay and bare allegations betrayed malice; the complaint was dismissed outright for lack of probable cause. Unlike a case where probable cause was found, a suit for malicious prosecution prospers where prosecution is carried out without probable cause.",
+      "keyDoctrine": "Malicious prosecution (a case for moral damages under Art. 2219(8)) requires (1) malice and (2) absence of probable cause: the prosecution must have been prompted by a sinister design to vex or humiliate and initiated deliberately by one who knew the charges were false and groundless, and it must have ended in favor of the person prosecuted. The mere act of submitting a case to the authorities does not make one liable; where probable cause was found, there is no malicious prosecution. Rule 65 cannot substitute for a lost appeal.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2004/oct2004/gr_156339_2004.html"
     }
   ],
   "questions": [
@@ -10361,6 +10376,276 @@
         "url": "https://lawphil.net/judjuris/juri1967/sep1967/gr_l-21879_1967.html",
         "part": "Decision, discussion of the second assignment of error (personal liability of the public officer)",
         "excerpt": "The argument is based on a wrong premise. It erroneously assumes that the defendant is personally liable for damages to the appellant, disregarding the established fact that the defendant had issued the warrant of distraint and levy against plaintiff's properties in his capacity as City Treasurer of Butuan who, under the law, is empowered to issue the warrant. … Since there is no dispute that the appellee issued the warrant of distraint and levy against the delivery trucks of the appellant on January 9, 1961, in his capacity as City Treasurer of Butuan, and as there is no disagreement that defendant-appellee issued said warrant by virtue of Ordinance No. 26 of the City of Butuan above-quoted (Par. 15, Stipulation of Facts), and not having been shown that the defendant, either as a private citizen or as City Treasurer of Butuan, had acted in bad faith, there can be no question that appellee Francisco Magno, who was merely performing a duty enjoined by law to be performed when he issued the warrant of distraint and levy, cannot be made to answer personally for damages to the appellant."
+      }
+    },
+    {
+      "id": "q-0912",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Define malicious prosecution. What must be proved for an action for damages based on it to prosper? Does the mere filing of a complaint with the authorities make the complainant liable? Explain.",
+      "suggestedAnswer": {
+        "answer": "Malicious prosecution is an action for damages brought by one against whom a criminal prosecution, civil suit or other legal proceeding was instituted maliciously and without probable cause, after the proceeding ended in his favor. It requires proof that the prosecution was prompted by a sinister design to vex or humiliate, and that it was initiated deliberately by one who knew the charges were false and groundless. The mere act of submitting a case to the authorities does not make one liable.",
+        "legalBasis": "In Yasoña v. De Ramos, the Court defined malicious prosecution as \"an action for damages brought by one against whom a criminal prosecution, civil suit, or other legal proceeding has been instituted maliciously and without probable cause, after the termination of such prosecution, suit, or other proceeding in favor of the defendant therein.\" \"To constitute 'malicious prosecution,' there must be proof that the prosecution was prompted by a sinister design to vex or humiliate a person, and that it was initiated deliberately by the defendant knowing that his charges were false and groundless. Concededly, the mere act of submitting a case to the authorities for prosecution does not make one liable.\" Its elements are \"(1) malice and (2) absence of probable cause.\"",
+        "application": "So the plaintiff must show a terminated proceeding in his favor, malice, and the lack of probable cause; an honest complaint, even if it fails, is not enough.",
+        "conclusion": "Malice and absence of probable cause must both be proved. **Bar trap:** filing a complaint is not by itself malicious prosecution; the complainant must have known the charge was false and acted with a sinister design."
+      },
+      "keyPoints": [
+        "Action for damages for a proceeding instituted maliciously and without probable cause",
+        "The proceeding must have ended in favor of the one prosecuted",
+        "Sinister design to vex or humiliate; charges known to be false and groundless",
+        "Elements: malice and absence of probable cause",
+        "Mere submission of a case to the authorities is not enough"
+      ],
+      "caseIds": [
+        "case-0081"
+      ],
+      "source": {
+        "caseTitle": "Yasoña, et al. v. De Ramos, et al.",
+        "grNumber": "G.R. No. 156339",
+        "url": "https://lawphil.net/judjuris/juri2004/oct2004/gr_156339_2004.html",
+        "part": "Decision, definition and elements of malicious prosecution",
+        "excerpt": "In this jurisdiction, the term \"malicious prosecution\" has been defined as \"an action for damages brought by one against whom a criminal prosecution, civil suit, or other legal proceeding has been instituted maliciously and without probable cause, after the termination of such prosecution, suit, or other proceeding in favor of the defendant therein.\" To constitute \"malicious prosecution,\" there must be proof that the prosecution was prompted by a sinister design to vex or humiliate a person, and that it was initiated deliberately by the defendant knowing that his charges were false and groundless. Concededly, the mere act of submitting a case to the authorities for prosecution does not make one liable for malicious prosecution."
+      }
+    },
+    {
+      "id": "q-0913",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "In 1975, Ana sold half of her lot to her nephew under a notarized, registered deed; separate titles were issued. For the next twenty years, the nephew paid the taxes on his half, Ana used his half as a bond for her son, and she mortgaged only her own half. In 1995, Ana filed an estafa complaint against him, claiming she had merely signed a blank paper; she offered no evidence besides her own statement, and the prosecutor dismissed the complaint for lack of probable cause. The nephew sues Ana for malicious prosecution. Will his suit prosper? Explain.",
+      "suggestedAnswer": {
+        "answer": "Yes. Both elements of malicious prosecution are present: the circumstances show that Ana knew she had sold the half and so filed a charge she knew was false, and there was no probable cause, as the prosecutor's outright dismissal shows.",
+        "legalBasis": "In Yasoña v. De Ramos, a notarized and registered deed of sale, separate titles, the buyer's payment of realty taxes, the seller's use of the buyer's portion as a bond and her mortgaging only her own portion \"indicate that [she] had long acknowledged [his] ownership.\" \"If petitioners had honestly believed that they still owned the entire property, it would not have taken them 22 years to question [his] ownership,\" and they presented nothing but \"bare allegations.\" \"Malicious prosecution ... requires the elements of (1) malice and (2) absence of probable cause. ... That there was no probable cause at all for the filing of the estafa case ... led to the dismissal of the charges.\"",
+        "application": "Ana's own conduct for twenty years acknowledged her nephew's ownership; her long delay and lack of evidence show she acted with malice, and her complaint was dismissed for lack of probable cause.",
+        "conclusion": "The suit prospers, and moral damages may be awarded. **Bar trap:** a party's own long-standing acts consistent with a sale can prove that a later charge of deceit was knowingly false."
+      },
+      "keyPoints": [
+        "Registered sale, separate titles, taxes paid by the buyer",
+        "The seller's own acts acknowledged the buyer's ownership",
+        "Long delay and bare allegations show malice",
+        "Outright dismissal for lack of probable cause",
+        "Both elements present: liability for malicious prosecution"
+      ],
+      "caseIds": [
+        "case-0081"
+      ],
+      "source": {
+        "caseTitle": "Yasoña, et al. v. De Ramos, et al.",
+        "grNumber": "G.R. No. 156339",
+        "url": "https://lawphil.net/judjuris/juri2004/oct2004/gr_156339_2004.html",
+        "part": "Decision, discussion of malice and absence of probable cause",
+        "excerpt": "All these pieces of evidence indicate that Aurea had long acknowledged Jovencio’s ownership of half of the property. Furthermore, it was only in 1993 when petitioners decided to file the estafa complaint against respondents. If petitioners had honestly believed that they still owned the entire property, it would not have taken them 22 years to question Jovencio’s ownership of half of the property. The only conclusion that can be drawn from the circumstances is that Aurea knew all along that she was no longer the owner of Jovencio’s portion after having sold it to him way back in 1971. Likewise, other than petitioners’ bare allegations, no other evidence was presented by them to substantiate their claim. Malicious prosecution, both in criminal and civil cases, requires the elements of (1) malice and (2) absence of probable cause. These two elements are present in the present controversy. Petitioners were completely aware that Jovencio was the rightful owner of the lot covered by TCT No. 73251, clearly signifying that they were impelled by malice and avarice in bringing the unfounded action. That there was no probable cause at all for the filing of the estafa case against respondents led to the dismissal of the charges filed by petitioners with the Provincial Prosecutor’s Office in Siniloan, Laguna."
+      }
+    },
+    {
+      "id": "q-0914",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "(a) A person sued for malicious prosecution argues that, like a public official in an earlier case who was cleared, he cannot be liable because he merely filed a complaint. In the earlier case, the investigating panel had found probable cause; in his case, the prosecutor dismissed the complaint outright for lack of probable cause. Is the comparison correct? (b) After losing in the trial court, he let the period to appeal lapse and filed a petition for certiorari under Rule 65 instead. Is that the proper remedy? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) No. In the earlier case there was probable cause, so there could be no malicious prosecution; where the complaint was dismissed outright for lack of probable cause, a suit for malicious prosecution may prosper. (b) No. Rule 65 cannot be a substitute for a lost appeal.",
+        "legalBasis": "In Yasoña v. De Ramos, the Court distinguished Drilon v. Court of Appeals: \"in Drilon, the investigating panel found that there was probable cause ... Thus, petitioner ... could not be held liable for malicious prosecution as there existed probable cause for the criminal case. Here, the complaint for estafa was dismissed outright as the prosecutor did not find any probable cause against respondents. A suit for malicious prosecution will prosper where legal prosecution is carried out without probable cause.\" It also agreed that \"Rule 65 of the Rules of Court cannot be a substitute for a lost appeal.\"",
+        "application": "(a) The presence or absence of probable cause makes the difference. (b) Certiorari was not available to cure the missed appeal.",
+        "conclusion": "(a) The comparison fails; (b) the wrong remedy. **Bar trap:** a finding of probable cause defeats malicious prosecution; its absence supports it."
+      },
+      "keyPoints": [
+        "In Drilon, probable cause was found: no malicious prosecution",
+        "Outright dismissal for lack of probable cause supports the suit",
+        "A suit prospers where prosecution is carried out without probable cause",
+        "Rule 65 cannot substitute for a lost appeal"
+      ],
+      "caseIds": [
+        "case-0081"
+      ],
+      "source": {
+        "caseTitle": "Yasoña, et al. v. De Ramos, et al.",
+        "grNumber": "G.R. No. 156339",
+        "url": "https://lawphil.net/judjuris/juri2004/oct2004/gr_156339_2004.html",
+        "part": "Decision, distinguishing Drilon v. Court of Appeals; the remedy",
+        "excerpt": "Petitioners’ reliance on Drilon vs. Court of Appeals is misplaced. It must be noted that in Drilon, the investigating panel found that there was probable cause to hold private respondent Homobono Adaza for trial for the crime of rebellion with murder and frustrated murder. Thus, petitioner (now Senate President) Franklin Drilon could not be held liable for malicious prosecution as there existed probable cause for the criminal case. Here, the complaint for estafa was dismissed outright as the prosecutor did not find any probable cause against respondents. A suit for malicious prosecution will prosper where legal prosecution is carried out without probable cause."
+      }
+    },
+    {
+      "id": "q-0915",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Ben reported to the police that his car had been stolen and named his neighbor, Carla, as the person he saw driving it away. The prosecutor found probable cause and filed a case, but Carla was later acquitted because the identification was found doubtful. Carla sues Ben for moral damages for malicious prosecution. Will her suit prosper? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. Malicious prosecution requires malice and absence of probable cause; Ben merely submitted his complaint to the authorities, the prosecutor found probable cause, and nothing shows he knew his charge was false or acted with a sinister design to vex or humiliate Carla.",
+        "legalBasis": "To constitute malicious prosecution, \"there must be proof that the prosecution was prompted by a sinister design to vex or humiliate a person, and that it was initiated deliberately by the defendant knowing that his charges were false and groundless. Concededly, the mere act of submitting a case to the authorities for prosecution does not make one liable.\" Its elements are \"(1) malice and (2) absence of probable cause.\" Where an investigating body found probable cause, the complainant \"could not be held liable for malicious prosecution.\"",
+        "application": "Carla's acquittal shows only that the evidence did not convince the court; it does not show that Ben knew his report was false. The finding of probable cause also defeats the second element.",
+        "conclusion": "Carla's suit will not prosper. **Bar trap:** an acquittal of the accused does not by itself make the complainant liable; malice and lack of probable cause must both be proved."
+      },
+      "keyPoints": [
+        "Elements: malice and absence of probable cause",
+        "Mere submission of a complaint is not malicious prosecution",
+        "No showing the complainant knew the charge was false",
+        "A finding of probable cause defeats the claim",
+        "An acquittal alone is not enough"
+      ],
+      "caseIds": [
+        "case-0081"
+      ],
+      "source": {
+        "caseTitle": "Yasoña, et al. v. De Ramos, et al.",
+        "grNumber": "G.R. No. 156339",
+        "url": "https://lawphil.net/judjuris/juri2004/oct2004/gr_156339_2004.html",
+        "part": "Decision, definition and elements of malicious prosecution",
+        "excerpt": "To constitute \"malicious prosecution,\" there must be proof that the prosecution was prompted by a sinister design to vex or humiliate a person, and that it was initiated deliberately by the defendant knowing that his charges were false and groundless. Concededly, the mere act of submitting a case to the authorities for prosecution does not make one liable for malicious prosecution. … Malicious prosecution, both in criminal and civil cases, requires the elements of (1) malice and (2) absence of probable cause."
+      }
+    },
+    {
+      "id": "q-0916",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Dino sold his rice field to Eli in 2000 by a registered deed. For years, Eli paid the taxes and farmed the land openly, and Dino even borrowed money using only his remaining land as collateral. In 2022, after a quarrel, Dino filed a criminal complaint against Eli for falsification, claiming he never sold the field; he offered only his own say-so, and the prosecutor dismissed the complaint for lack of probable cause. (a) Was Dino's complaint malicious? (b) What kind of damages may Eli claim for the humiliation and anxiety the complaint caused him? Explain briefly.",
+      "suggestedAnswer": {
+        "answer": "(a) Yes. Dino's own acts for two decades show he knew he had sold the field, so his charge was one he knew to be false, filed without probable cause and only after a long, unexplained delay. (b) Moral damages for malicious prosecution, in an action brought after the complaint was dismissed in Eli's favor.",
+        "legalBasis": "Where the deed of sale was notarized and registered, the buyer paid the realty taxes, and the seller mortgaged only his own portion, \"[a]ll these pieces of evidence indicate that [the seller] had long acknowledged [the buyer's] ownership,\" and \"it would not have taken them 22 years to question\" it had they honestly believed otherwise. Malicious prosecution requires \"(1) malice and (2) absence of probable cause,\" and is \"an action for damages\" brought after \"the termination of such prosecution ... in favor of the defendant therein.\"",
+        "application": "Dino's conduct contradicts his charge, he offered only bare allegations, and the complaint was dismissed for lack of probable cause.",
+        "conclusion": "(a) Malicious; (b) moral damages for malicious prosecution. **Bar trap:** malice may be inferred from circumstances, such as the complainant's own acts recognizing the very right he later denies."
+      },
+      "keyPoints": [
+        "The complainant's own acts recognized the sale",
+        "A long, unexplained delay and bare allegations",
+        "Dismissal for lack of probable cause",
+        "Malice may be inferred from the circumstances",
+        "Damages may be claimed after the proceeding ends in the accused's favor"
+      ],
+      "caseIds": [
+        "case-0081"
+      ],
+      "source": {
+        "caseTitle": "Yasoña, et al. v. De Ramos, et al.",
+        "grNumber": "G.R. No. 156339",
+        "url": "https://lawphil.net/judjuris/juri2004/oct2004/gr_156339_2004.html",
+        "part": "Decision, discussion of malice and absence of probable cause",
+        "excerpt": "All these pieces of evidence indicate that Aurea had long acknowledged Jovencio’s ownership of half of the property. Furthermore, it was only in 1993 when petitioners decided to file the estafa complaint against respondents. If petitioners had honestly believed that they still owned the entire property, it would not have taken them 22 years to question Jovencio’s ownership of half of the property. The only conclusion that can be drawn from the circumstances is that Aurea knew all along that she was no longer the owner of Jovencio’s portion after having sold it to him way back in 1971. Likewise, other than petitioners’ bare allegations, no other evidence was presented by them to substantiate their claim. Malicious prosecution, both in criminal and civil cases, requires the elements of (1) malice and (2) absence of probable cause."
+      }
+    },
+    {
+      "id": "q-0917",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Fe lost a damages suit in the Regional Trial Court. Her lawyer forgot to file a notice of appeal within the period. Two months later, he filed a petition for certiorari under Rule 65 with the Court of Appeals, arguing that the judgment was wrong on the facts. Will the petition prosper? Reason briefly.",
+      "suggestedAnswer": {
+        "answer": "No. A petition for certiorari under Rule 65 cannot be a substitute for a lost appeal; Fe's remedy was a timely appeal, which she lost.",
+        "legalBasis": "In the decision, the Court agreed \"with the appellate court that the remedy availed of by petitioners was inappropriate as Rule 65 of the Rules of Court cannot be a substitute for a lost appeal.\"",
+        "application": "Fe's petition seeks to correct alleged errors of judgment that should have been raised on appeal; the lapse of the appeal period cannot be cured by shifting to certiorari.",
+        "conclusion": "The petition will be dismissed. **Bar trap:** certiorari is not a second chance after a missed appeal."
+      },
+      "keyPoints": [
+        "Rule 65 cannot substitute for a lost appeal",
+        "Errors of judgment are corrected by appeal",
+        "A lapsed appeal cannot be revived through certiorari"
+      ],
+      "caseIds": [
+        "case-0081"
+      ],
+      "source": {
+        "caseTitle": "Yasoña, et al. v. De Ramos, et al.",
+        "grNumber": "G.R. No. 156339",
+        "url": "https://lawphil.net/judjuris/juri2004/oct2004/gr_156339_2004.html",
+        "part": "Decision, the remedy (Rule 65 and a lost appeal)",
+        "excerpt": "We agree with the appellate court that the remedy availed of by petitioners was inappropriate as Rule 65 of the Rules of Court cannot be a substitute for a lost appeal, and that, in any event, petitioners are liable for malicious prosecution."
+      }
+    },
+    {
+      "id": "q-0918",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Under Yasoña v. De Ramos, malicious prosecution, in both criminal and civil cases, requires the elements of",
+      "choices": {
+        "A": "malice and absence of probable cause.",
+        "B": "negligence and damage.",
+        "C": "a conviction and an appeal.",
+        "D": "bad faith and actual damages of at least ₱50,000."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court said: \"Malicious prosecution, both in criminal and civil cases, requires the elements of (1) malice and (2) absence of probable cause.\" **B is wrong:** negligence is not enough; malice is required. **C is wrong:** the proceeding must end in favor of the one prosecuted, not in a conviction. **D is wrong:** no such amount is required. **Bar trap:** both elements must concur.",
+      "caseIds": [
+        "case-0081"
+      ],
+      "source": {
+        "caseTitle": "Yasoña, et al. v. De Ramos, et al.",
+        "grNumber": "G.R. No. 156339",
+        "url": "https://lawphil.net/judjuris/juri2004/oct2004/gr_156339_2004.html",
+        "part": "Decision, elements of malicious prosecution",
+        "excerpt": "Malicious prosecution, both in criminal and civil cases, requires the elements of (1) malice and (2) absence of probable cause."
+      }
+    },
+    {
+      "id": "q-0919",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "According to Yasoña v. De Ramos, which of the following, by itself, does NOT make one liable for malicious prosecution?",
+      "choices": {
+        "A": "Initiating a prosecution deliberately, knowing the charges are false and groundless.",
+        "B": "Prosecuting with a sinister design to vex or humiliate.",
+        "C": "The mere act of submitting a case to the authorities for prosecution.",
+        "D": "Instituting a proceeding maliciously and without probable cause."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court said: \"Concededly, the mere act of submitting a case to the authorities for prosecution does not make one liable for malicious prosecution.\" **A, B and D are wrong:** each describes what makes a prosecution malicious. **Bar trap:** good-faith resort to the authorities is protected.",
+      "caseIds": [
+        "case-0081"
+      ],
+      "source": {
+        "caseTitle": "Yasoña, et al. v. De Ramos, et al.",
+        "grNumber": "G.R. No. 156339",
+        "url": "https://lawphil.net/judjuris/juri2004/oct2004/gr_156339_2004.html",
+        "part": "Decision, definition of malicious prosecution",
+        "excerpt": "Concededly, the mere act of submitting a case to the authorities for prosecution does not make one liable for malicious prosecution."
+      }
+    },
+    {
+      "id": "q-0920",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Why did the Court in Yasoña v. De Ramos find the petitioners' reliance on Drilon v. Court of Appeals misplaced?",
+      "choices": {
+        "A": "Because Drilon involved a civil case.",
+        "B": "Because in Drilon the investigating panel found probable cause, while here the complaint was dismissed outright for lack of probable cause.",
+        "C": "Because Drilon was decided by the Court of Appeals.",
+        "D": "Because in Drilon the complainant was a private person."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court explained that \"in Drilon, the investigating panel found that there was probable cause,\" so no malicious prosecution, while \"[h]ere, the complaint for estafa was dismissed outright as the prosecutor did not find any probable cause,\" and affirmed the decision \"in toto.\" **A, C and D are wrong:** none is the distinction drawn. **Bar trap:** probable cause is the dividing line.",
+      "caseIds": [
+        "case-0081"
+      ],
+      "source": {
+        "caseTitle": "Yasoña, et al. v. De Ramos, et al.",
+        "grNumber": "G.R. No. 156339",
+        "url": "https://lawphil.net/judjuris/juri2004/oct2004/gr_156339_2004.html",
+        "part": "Decision, distinguishing Drilon and the disposition",
+        "excerpt": "It must be noted that in Drilon, the investigating panel found that there was probable cause to hold private respondent Homobono Adaza for trial for the crime of rebellion with murder and frustrated murder. Thus, petitioner (now Senate President) Franklin Drilon could not be held liable for malicious prosecution as there existed probable cause for the criminal case. Here, the complaint for estafa was dismissed outright as the prosecutor did not find any probable cause against respondents."
       }
     }
   ]
