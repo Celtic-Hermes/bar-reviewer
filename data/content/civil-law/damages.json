@@ -9614,6 +9614,99 @@
         "part": "Decision, discussion of the third issue (the penalty)",
         "excerpt": "We also agree with petitioner Suelto’s contention that the trial court erred in sentencing him to suffer a straight penalty of one (1) year. This is so because under the third paragraph of Article 365 of the Revised Penal Code, the offender must be sentenced to pay a fine when the execution of the act shall have only resulted in damage to property."
       }
+    },
+    {
+      "id": "q-0888",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "(a) Ana was murdered; the killing was qualified by treachery, and no ordinary aggravating circumstance was present. Her killer was sentenced to reclusion perpetua. (b) Ben was murdered in his own home; the killing was qualified by treachery and attended by the ordinary aggravating circumstance of dwelling, so the penalty would have been death, but reclusion perpetua was imposed because the death penalty is prohibited. Following the standard amounts set by the Supreme Court in 2016, what civil indemnity, moral damages and exemplary damages are due to each victim's heirs? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) Ana's heirs: ₱75,000 civil indemnity, ₱75,000 moral damages and ₱75,000 exemplary damages. (b) Ben's heirs: ₱100,000 each in civil indemnity, moral damages and exemplary damages, because the damages follow the penalty imposable by law (death), not the penalty actually imposed.",
+        "legalBasis": "\"[T]he principal consideration for the award of damages ... is 'the penalty provided by law or imposable for the offense because of its heinousness, not the public penalty actually imposed on the offender.'\" For crimes where the imposable penalty is death because of an ordinary aggravating circumstance but reclusion perpetua is imposed, the amounts are \"₱100,000.00 as civil indemnity and ₱100,0000.00 as moral damages,\" plus ₱100,000 exemplary damages. \"When the circumstances surrounding the crime call for the imposition of reclusion perpetua only, there being no ordinary aggravating circumstance, ... the proper amounts should be ₱75,000.00 as civil indemnity, ₱75,000.00 as moral damages and ₱75,000.00 exemplary damages, regardless of the number of qualifying aggravating circumstances present.\"",
+        "application": "(a) Only a qualifying circumstance: reclusion perpetua is the imposable penalty. (b) Dwelling makes death the imposable penalty, so the higher bracket applies though reclusion perpetua is imposed.",
+        "conclusion": "(a) ₱75,000 each; (b) ₱100,000 each. **Bar trap:** do not base the bracket on the penalty actually served; use the penalty the law prescribes for the crime as committed. Check later rulings for any change in these amounts."
+      },
+      "keyPoints": [
+        "Damages follow the penalty imposable by law, not the penalty imposed",
+        "Reclusion perpetua only (no ordinary aggravating): ₱75,000 each",
+        "Death reduced to reclusion perpetua (ordinary aggravating present): ₱100,000 each",
+        "The number of qualifying circumstances does not change the ₱75,000 bracket"
+      ],
+      "caseIds": [
+        "case-0063"
+      ],
+      "source": {
+        "caseTitle": "People v. Jugueta",
+        "grNumber": "G.R. No. 202124",
+        "url": "https://lawphil.net/judjuris/juri2016/apr2016/gr_202124_2016.html",
+        "part": "Decision, discussion of the award of damages (basis and standard amounts)",
+        "excerpt": "As a result, the death penalty can no longer be imposed. Instead, they have to impose reclusion perpetua. Despite this, the principal consideration for the award of damages, following the ruling in People v. Salome and People v. Quiachon, is \"the penalty provided by law or imposable for the offense because of its heinousness, not the public penalty actually imposed on the offender.\" … Again, for crimes where the imposable penalty is death in view of the attendance of an ordinary aggravating circumstance but due to the prohibition to impose the death penalty, the actual penalty imposed is reclusion perpetua, the latest jurisprudence pegs the amount of ₱100,000.00 as civil indemnity and ₱100,0000.00 as moral damages. For the qualifying aggravating circumstance and/or the ordinary aggravating circumstances present, the amount of ₱100,000.00 is awarded as exemplary damages aside from civil indemnity and moral damages. … When the circumstances surrounding the crime call for the imposition of reclusion perpetua only, there being no ordinary aggravating circumstance, the Court rules that the proper amounts should be ₱75,000.00 as civil indemnity, ₱75,000.00 as moral damages and ₱75,000.00 exemplary damages, regardless of the number of qualifying aggravating circumstances present. … VII. In all of the above instances, when no documentary evidence of burial or funeral expenses is presented in court, the amount of ₱50,000.00 as temperate damages shall be awarded."
+      }
+    },
+    {
+      "id": "q-0889",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Carla was convicted of homicide. The Information did not allege any aggravating circumstance, but the prosecution proved at trial that she committed the crime with the aggravating circumstance of dwelling. In a second case, Dino was convicted of homicide with no aggravating circumstance at all. Following the 2016 standard amounts, what damages are due to the heirs in each case? Explain.",
+      "suggestedAnswer": {
+        "answer": "Carla's case: ₱50,000 civil indemnity, ₱50,000 moral damages, and ₱50,000 exemplary damages, because an aggravating circumstance proved at trial, though not alleged, supports exemplary damages in the civil aspect. Dino's case: ₱50,000 civil indemnity and ₱50,000 moral damages, without exemplary damages.",
+        "legalBasis": "\"In the civil aspect, the presence of an aggravating circumstance, even if not alleged in the information but proven during trial would entitle the victim to an award of exemplary damages.\" The ordinary or qualifying nature of an aggravating circumstance matters only to criminal liability; either kind supports exemplary damages under Article 2230. \"[A]n award of ₱50,000.00 exemplary damages in a crime of homicide shall be added if there is an aggravating circumstance present that has been proven but not alleged in the information.\" For homicide, \"the civil indemnity awarded to the heirs of the victim shall be ₱50,000.00 and ₱50,000.00 moral damages without exemplary damages being awarded\" absent such a circumstance.",
+        "application": "Carla's unalleged but proved dwelling cannot raise her penalty, but it supports exemplary damages; Dino's case has no aggravating circumstance, so no exemplary damages.",
+        "conclusion": "Carla: ₱50,000 × 3; Dino: ₱50,000 × 2. **Bar trap:** the rule that aggravating circumstances must be alleged protects the accused only in the criminal aspect."
+      },
+      "keyPoints": [
+        "Homicide: ₱50,000 civil indemnity and ₱50,000 moral damages",
+        "Exemplary damages added if an aggravating circumstance is proved, even if not alleged",
+        "Ordinary or qualifying: either supports exemplary damages (Art. 2230)",
+        "No aggravating circumstance: no exemplary damages"
+      ],
+      "caseIds": [
+        "case-0063"
+      ],
+      "source": {
+        "caseTitle": "People v. Jugueta",
+        "grNumber": "G.R. No. 202124",
+        "url": "https://lawphil.net/judjuris/juri2016/apr2016/gr_202124_2016.html",
+        "part": "Decision, discussion of the award of damages (exemplary damages)",
+        "excerpt": "Withal, the ordinary or qualifying nature of an aggravating circumstance is a distinction that should only be of consequence to the criminal, rather than to the civil, liability of the offender. In fine, relative to the civil aspect of the case, an aggravating circumstance, whether ordinary or qualifying, should entitle the offended party to an award of exemplary damages within the unbridled meaning of Article 2230 of the Civil Code. The reason is fairly obvious as to why the Revised Rules of Criminal Procedure requires aggravating circumstances, whether ordinary or qualifying, to be stated in the complaint or information. It is in order not to trample on the constitutional right of an accused to be informed of the nature of the alleged offense that he or she has committed. A criminal complaint or information should basically contain the elements of the crime, as well as its qualifying and ordinary aggravating circumstances, for the court to effectively determine the proper penalty it should impose. This, however, is not similar in the recovery of civil liability. In the civil aspect, the presence of an aggravating circumstance, even if not alleged in the information but proven during trial would entitle the victim to an award of exemplary damages. … However, an award of ₱50,000.00 exemplary damages in a crime of homicide shall be added if there is an aggravating circumstance present that has been proven but not alleged in the information."
+      }
+    },
+    {
+      "id": "q-0890",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Eli was murdered. (a) His family spent on his wake and burial but presented no receipts or other documents of those expenses. (b) In a second murder case, Fe's family presented official receipts for ₱120,000 in funeral expenses. What may each family recover for the funeral and burial costs? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) Temperate damages of ₱50,000, since the family undeniably suffered pecuniary loss though its exact amount was not proved. (b) Actual damages of ₱120,000, proved by official receipts.",
+        "legalBasis": "Temperate damages in homicide or murder cases are proper \"when no evidence of burial and funeral expenses is presented in the trial court. Under Article 2224 of the Civil Code, temperate damages may be recovered, as it cannot be denied that the heirs of the victims suffered pecuniary loss although the exact amount was not proved. In this case, the Court now increases the amount to be awarded as temperate damages to ₱50,000.00.\"",
+        "application": "(a) Eli's family certainly incurred funeral costs but cannot prove the amount, so temperate damages fill the gap. (b) Fe's family proved its actual loss with receipts, so actual damages, not temperate damages, are proper.",
+        "conclusion": "(a) ₱50,000 temperate damages; (b) ₱120,000 actual damages. **Bar trap:** temperate damages replace unproved actual damages; they are not added to fully proved actual damages for the same loss."
+      },
+      "keyPoints": [
+        "No documentary proof of burial expenses: temperate damages",
+        "Art. 2224: loss certain, amount not proved",
+        "Temperate damages of ₱50,000 in murder or homicide",
+        "With receipts: actual damages instead"
+      ],
+      "caseIds": [
+        "case-0063"
+      ],
+      "source": {
+        "caseTitle": "People v. Jugueta",
+        "grNumber": "G.R. No. 202124",
+        "url": "https://lawphil.net/judjuris/juri2016/apr2016/gr_202124_2016.html",
+        "part": "Decision, discussion of the award of damages (temperate damages)",
+        "excerpt": "Aside from those discussed earlier, the Court also awards temperate damages in certain cases. The award of ₱25,000.00 as temperate damages in homicide or murder cases is proper when no evidence of burial and funeral expenses is presented in the trial court. Under Article 2224 of the Civil Code, temperate damages may be recovered, as it cannot be denied that the heirs of the victims suffered pecuniary loss although the exact amount was not proved. In this case, the Court now increases the amount to be awarded as temperate damages to ₱50,000.00."
+      }
     }
   ]
 }
