@@ -586,6 +586,21 @@
       "ruling": "The decision was modified and all the damages, expenses, attorney's fees and costs were deleted. (1) The strikes were force majeure under the Civil Code and the parties' own clause, so PHIBRO was not liable for the delay. (2) But NAPOCOR did not act in bad faith. Where the government reserves the right to reject bids, it has wide discretion, and a person who merely uses a right without bad faith or intent to injure is not liable for damage it causes. Under Article 19 a person is protected when he acts in the legitimate exercise of his right, with prudence and in good faith. NAPOCOR honestly believed PHIBRO's track record was seriously impaired, given its non-delivery and its puzzling offer; good faith is judged by the actor's frame of mind at the time. Bad faith is a question of intention, a state of mind with furtive design or some motive of self-interest, ill will or ulterior purpose. Actual damages for lost profits from future biddings were too speculative; they must be proved with a reasonable degree of certainty. Moral damages were improper because there was no bad faith and, as a general rule, a corporation, which cannot suffer mental anguish, is not granted them. Without moral, temperate or compensatory damages there could be no exemplary damages (Art. 2234). Attorney's fees and litigation expenses were not warranted either.",
       "keyDoctrine": "A person who uses a right without bad faith or intent to injure is not liable for the damage it causes (damnum absque injuria; Art. 19 protects the legitimate, good-faith exercise of a right). Bad faith is a question of intention, judged by the actor's frame of mind at the time. Actual damages, including lost profits, must be proved with a reasonable degree of certainty, not by speculation. Moral damages are, as a general rule, not granted to a corporation. A claimant must first show entitlement to moral, temperate or compensatory damages before exemplary damages may be considered (Art. 2234). Attorney's fees are not awarded simply because a party wins.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2001/nov2001/gr_126204_2001.html"
+    },
+    {
+      "id": "case-0087",
+      "status": "draft",
+      "name": "Filipinas Broadcasting Network, Inc. v. Ago Medical and Educational Center-Bicol Christian College of Medicine (AMEC-BCCM), et al.",
+      "grNumber": "G.R. No. 141994",
+      "year": 2005,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "facts": "On two mornings in December 1989, broadcasters Carmelo Rima and Hermogenes Alegre of the radio program \"Exposé\" on DZRC-AM, owned by Filipinas Broadcasting Network (FBNI), aired supposed complaints of students against the Ago Medical and Educational Center (AMEC), a medical school in Legazpi City. They spoke of \"greed for money,\" called the school \"a dumping ground, garbage\" of \"moral and physical misfits,\" said an elderly dean was too old to teach, claimed a course was not recognized and that the school lived on foreign foundation money, and said its graduates would be \"liabilities rather than assets.\" They had not verified the claims; the course was in fact accredited and the foundation did not exist. AMEC and its dean sued FBNI and the broadcasters for damages. The trial court held FBNI and Alegre liable for ₱300,000 moral damages and ₱30,000 attorney's fees; the Court of Appeals made Rima solidarily liable too and denied the dean's own claim.",
+      "issue": "(1) Were the broadcasts libelous? (2) Is AMEC, a corporation, entitled to moral damages? (3) Was the award of attorney's fees proper? (4) Is FBNI solidarily liable with its broadcasters?",
+      "ruling": "The petition was denied with modifications. (1) The broadcasts were libelous per se. Every defamatory imputation is presumed malicious; the broadcasters had a month to verify yet relied on students' words alone, showing reckless disregard of the truth. The neutral reportage privilege did not apply, and the fair comment doctrine protects opinion based on established facts, which these were not. They also violated the broadcast industry's Radio Code, which gives standards for good faith under Articles 19 and 21. (2) A juridical person is generally not entitled to moral damages, since it cannot experience physical suffering or mental anguish, and the statement in Mambulao Lumber is obiter dictum. Nevertheless, Article 2219(7) expressly allows moral damages for libel, slander or any other form of defamation without distinguishing natural from juridical persons, so a corporation may claim them for defamation. Where the libel is libelous per se, the law implies damages and no proof of actual damages is needed. But since AMEC suffered no substantial damage to its reputation, the award was reduced to ₱150,000. (3) Attorney's fees were deleted: they are the exception, need factual, legal and equitable justification, and the reason must be stated in the body of the decision. (4) FBNI is solidarily liable as a joint tortfeasor and employer under Articles 2176 and 2180; it failed to prove diligence in supervising, and even in selecting, its broadcasters.",
+      "keyDoctrine": "A juridical person is generally not entitled to moral damages, but Article 2219(7) authorizes moral damages for libel, slander or any other form of defamation without distinguishing natural from juridical persons, so a corporation may recover them for defamation. Where a statement is libelous per se, the law implies damages; no proof of actual damage is needed, though the amount should be reasonable. Every defamatory imputation is presumed malicious; fair comment protects only opinion based on established facts. Joint tortfeasors are solidarily liable, and a broadcaster's employer is liable unless it proves diligence in selection and supervision. Attorney's fees need justification stated in the body of the decision.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2005/jan2005/gr_141994_2005.html"
     }
   ],
   "questions": [
@@ -12075,6 +12090,277 @@
         "url": "https://lawphil.net/judjuris/juri2001/nov2001/gr_126204_2001.html",
         "part": "Ruling, on moral damages",
         "excerpt": "Moreover, moral damages are not, as a general rule, granted to a corporation. While it is true that besmirched reputation is included in moral damages, it cannot cause mental anguish to a corporation, unlike in the case of a natural person, for a corporation has no reputation in the sense that an individual has, and besides, it is inherently impossible for a corporation to suffer mental anguish."
+      }
+    },
+    {
+      "id": "q-0966",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "A radio station argues that a private school, being a corporation, cannot recover moral damages for a libelous broadcast against it, because a juridical person cannot feel mental anguish. Is the station correct? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. While a juridical person is generally not entitled to moral damages because it cannot experience physical suffering or mental anguish, Article 2219(7) of the Civil Code expressly authorizes moral damages in cases of libel, slander or any other form of defamation, without qualifying whether the plaintiff is a natural or juridical person. A corporation may therefore claim moral damages for defamation.",
+        "legalBasis": "In Filipinas Broadcasting Network, Inc. v. AMEC-BCCM, the Court held: \"A juridical person is generally not entitled to moral damages because, unlike a natural person, it cannot experience physical suffering or such sentiments as wounded feelings, serious anxiety, mental anguish or moral shock.\" The statement in Mambulao Lumber \"is an obiter dictum.\" \"Nevertheless, AMEC's claim for moral damages falls under item 7 of Article 2219 ... This provision expressly authorizes the recovery of moral damages in cases of libel, slander or any other form of defamation. Article 2219(7) does not qualify whether the plaintiff is a natural or juridical person.\"",
+        "application": "The school's claim is for defamation by the broadcasts, which falls under Article 2219(7).",
+        "conclusion": "The school may recover moral damages. **Bar trap:** the general rule against moral damages for corporations has an exception: defamation under Article 2219(7)."
+      },
+      "keyPoints": [
+        "General rule: a juridical person is not entitled to moral damages",
+        "Reason: it cannot feel physical suffering or mental anguish",
+        "Mambulao statement is obiter dictum",
+        "Art. 2219(7): libel, slander or any other form of defamation",
+        "Art. 2219(7) does not distinguish natural from juridical persons"
+      ],
+      "caseIds": [
+        "case-0087"
+      ],
+      "source": {
+        "caseTitle": "Filipinas Broadcasting Network, Inc. v. Ago Medical and Educational Center-Bicol Christian College of Medicine (AMEC-BCCM), et al.",
+        "grNumber": "G.R. No. 141994",
+        "url": "https://lawphil.net/judjuris/juri2005/jan2005/gr_141994_2005.html",
+        "part": "The Court's Ruling, second issue (whether AMEC is entitled to moral damages)",
+        "excerpt": "A juridical person is generally not entitled to moral damages because, unlike a natural person, it cannot experience physical suffering or such sentiments as wounded feelings, serious anxiety, mental anguish or moral shock. The Court of Appeals cites Mambulao Lumber Co. v. PNB, et al. to justify the award of moral damages. However, the Court's statement in Mambulao that \"a corporation may have a good reputation which, if besmirched, may also be a ground for the award of moral damages\" is an obiter dictum. Nevertheless, AMEC's claim for moral damages falls under item 7 of Article 2219 of the Civil Code. This provision expressly authorizes the recovery of moral damages in cases of libel, slander or any other form of defamation. Article 2219(7) does not qualify whether the plaintiff is a natural or juridical person. Therefore, a juridical person such as a corporation can validly complain for libel or any other form of defamation and claim for moral damages."
+      }
+    },
+    {
+      "id": "q-0967",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "In a libel suit, the defendants argue that the plaintiff presented no proof of actual damage, such as a drop in enrollment, so no damages can be awarded. The statements were libelous per se. (a) Must the plaintiff prove actual damages to recover? (b) May the court still reduce the moral damages awarded? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) No. Where the statement is libelous per se, the law implies damages; the plaintiff need not introduce evidence of actual damages as a condition to recover some damages, and evidence of an honest mistake or want of reputation goes only to mitigation. (b) Yes. The amount must be reasonable; where the plaintiff suffered no substantial or material damage to its reputation, the award may be reduced.",
+        "legalBasis": "\"[W]here the broadcast is libelous per se, the law implies damages. In such a case, evidence of an honest mistake or the want of character or reputation of the party libeled goes only in mitigation of damages. Neither in such a case is the plaintiff required to introduce evidence of actual damages as a condition precedent to the recovery of some damages.\" But the Court found ₱300,000 \"unreasonable,\" since \"AMEC has not suffered any substantial or material damage to its reputation,\" and reduced it to ₱150,000.",
+        "application": "The statements were libelous per se, so damages are implied; the lack of proof of substantial harm bears on the amount.",
+        "conclusion": "(a) No proof of actual damage is needed; (b) the court may reduce the amount. **Bar trap:** implied damages answer \"whether\" damages are due, not \"how much.\""
+      },
+      "keyPoints": [
+        "Libel per se: the law implies damages",
+        "No need to prove actual damages first",
+        "Honest mistake or want of reputation only mitigates",
+        "Amount must be reasonable",
+        "No substantial damage to reputation: award reduced"
+      ],
+      "caseIds": [
+        "case-0087"
+      ],
+      "source": {
+        "caseTitle": "Filipinas Broadcasting Network, Inc. v. Ago Medical and Educational Center-Bicol Christian College of Medicine (AMEC-BCCM), et al.",
+        "grNumber": "G.R. No. 141994",
+        "url": "https://lawphil.net/judjuris/juri2005/jan2005/gr_141994_2005.html",
+        "part": "The Court's Ruling, second issue (libel per se; amount of moral damages)",
+        "excerpt": "Moreover, where the broadcast is libelous per se, the law implies damages. In such a case, evidence of an honest mistake or the want of character or reputation of the party libeled goes only in mitigation of damages. Neither in such a case is the plaintiff required to introduce evidence of actual damages as a condition precedent to the recovery of some damages. In this case, the broadcasts are libelous per se. Thus, AMEC is entitled to moral damages. However, we find the award of ₱300,000 moral damages unreasonable. The record shows that even though the broadcasts were libelous per se, AMEC has not suffered any substantial or material damage to its reputation. Therefore, we reduce the award of moral damages from ₱300,000 to ₱150,000."
+      }
+    },
+    {
+      "id": "q-0968",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "A radio station is sued together with two of its hosts for a libelous broadcast aired on their regular program. The station proves that its applicants are interviewed and undergo training, and that it constantly reminds its hosts to \"observe truth, fairness and objectivity.\" It argues that it exercised due diligence and is not liable. Is the station solidarily liable? Explain.",
+      "suggestedAnswer": {
+        "answer": "Yes. The action is a tort, and joint tortfeasors are jointly and severally liable. As operator and employer, the station is solidarily liable for defamatory statements made by its hosts within the scope of their work. Its proof went at most to selection; constant reminders are not enough to prove diligence in supervision.",
+        "legalBasis": "In Filipinas Broadcasting Network v. AMEC-BCCM, \"[j]oint tort feasors are jointly and severally liable for the tort which they commit,\" and the employer is \"solidarily liable to pay for damages arising from the libelous broadcasts\" (Arts. 2176 and 2180). \"FBNI merely showed that it exercised diligence in the selection of its broadcasters without introducing any evidence to prove that it observed the same diligence in the supervision.\" Its \"constant reminder ... is not enough to prove due diligence in the supervision of its broadcasters.\" \"Adequate training of the broadcasters on the industry's code of conduct, sufficient information on libel laws, and continuous evaluation of the broadcasters' performance are but a few of the many ways of showing diligence in the supervision.\"",
+        "application": "The hosts were performing their duties on the station's program, and the station did not prove diligence in supervision.",
+        "conclusion": "The station is solidarily liable. **Bar trap:** under Article 2180 the employer must prove diligence in both selection and supervision; reminders are not supervision."
+      },
+      "keyPoints": [
+        "Joint tortfeasors are solidarily liable",
+        "Employer liable for employees acting within the scope of their work (Arts. 2176, 2180)",
+        "Diligence must be shown in both selection and supervision",
+        "Mere reminders are not proof of supervision",
+        "Training, information on libel laws, continuous evaluation"
+      ],
+      "caseIds": [
+        "case-0087"
+      ],
+      "source": {
+        "caseTitle": "Filipinas Broadcasting Network, Inc. v. Ago Medical and Educational Center-Bicol Christian College of Medicine (AMEC-BCCM), et al.",
+        "grNumber": "G.R. No. 141994",
+        "url": "https://lawphil.net/judjuris/juri2005/jan2005/gr_141994_2005.html",
+        "part": "The Court's Ruling, fourth issue (solidary liability of FBNI)",
+        "excerpt": "The basis of the present action is a tort. Joint tort feasors are jointly and severally liable for the tort which they commit. … As operator of DZRC-AM and employer of Rima and Alegre, FBNI is solidarily liable to pay for damages arising from the libelous broadcasts. … Moreover, there is insufficient evidence on record that FBNI exercised due diligence in the selection and supervision of its employees, particularly Rima and Alegre. FBNI merely showed that it exercised diligence in the selection of its broadcasters without introducing any evidence to prove that it observed the same diligence in the supervision of Rima and Alegre. FBNI did not show how it exercised diligence in supervising its broadcasters. FBNI's alleged constant reminder to its broadcasters to \"observe truth, fairness and objectivity and to refrain from using libelous and indecent language\" is not enough to prove due diligence in the supervision of its broadcasters. Adequate training of the broadcasters on the industry's code of conduct, sufficient information on libel laws, and continuous evaluation of the broadcasters' performance are but a few of the many ways of showing diligence in the supervision of broadcasters."
+      }
+    },
+    {
+      "id": "q-0969",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Two corporations claim moral damages. (a) A rival's newspaper column falsely calls Ana's bakery corporation \"a nest of cheats that poisons its customers.\" (b) Ben's trucking corporation sues a client that cancelled a contract, claiming moral damages for its \"serious anxiety and wounded feelings\" over the cancellation. Applying the rules on moral damages for juridical persons, may each corporation recover moral damages? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) Yes. Defamation is a case under Article 2219(7), which allows moral damages for libel, slander or any other form of defamation without distinguishing natural from juridical persons. (b) No. Outside that provision, a juridical person is generally not entitled to moral damages, because it cannot experience serious anxiety, wounded feelings or mental anguish.",
+        "legalBasis": "\"A juridical person is generally not entitled to moral damages because, unlike a natural person, it cannot experience physical suffering or such sentiments as wounded feelings, serious anxiety, mental anguish or moral shock.\" \"Nevertheless, ... item 7 of Article 2219 ... expressly authorizes the recovery of moral damages in cases of libel, slander or any other form of defamation. Article 2219(7) does not qualify whether the plaintiff is a natural or juridical person. Therefore, a juridical person such as a corporation can validly complain for libel or any other form of defamation and claim for moral damages.\"",
+        "application": "(a) Ana's corporation is defamed. (b) Ben's corporation claims feelings a juridical person cannot have, in a case that is not defamation.",
+        "conclusion": "(a) Recoverable; (b) not recoverable. **Bar trap:** the corporation's exception rests on the kind of case (defamation under Art. 2219(7)), not on how hurt the corporation says it is."
+      },
+      "keyPoints": [
+        "General rule: no moral damages for a juridical person",
+        "It cannot feel anxiety, wounded feelings or mental anguish",
+        "Exception: defamation under Art. 2219(7)",
+        "Art. 2219(7) does not distinguish natural from juridical persons"
+      ],
+      "caseIds": [
+        "case-0087"
+      ],
+      "source": {
+        "caseTitle": "Filipinas Broadcasting Network, Inc. v. Ago Medical and Educational Center-Bicol Christian College of Medicine (AMEC-BCCM), et al.",
+        "grNumber": "G.R. No. 141994",
+        "url": "https://lawphil.net/judjuris/juri2005/jan2005/gr_141994_2005.html",
+        "part": "The Court's Ruling, second issue (whether AMEC is entitled to moral damages)",
+        "excerpt": "A juridical person is generally not entitled to moral damages because, unlike a natural person, it cannot experience physical suffering or such sentiments as wounded feelings, serious anxiety, mental anguish or moral shock. … Nevertheless, AMEC's claim for moral damages falls under item 7 of Article 2219 of the Civil Code. This provision expressly authorizes the recovery of moral damages in cases of libel, slander or any other form of defamation. Article 2219(7) does not qualify whether the plaintiff is a natural or juridical person. Therefore, a juridical person such as a corporation can validly complain for libel or any other form of defamation and claim for moral damages."
+      }
+    },
+    {
+      "id": "q-0970",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Carla, a radio commentator, discusses a private college, a matter of public interest. (a) She reads the school's official board exam results, which show a sharp drop in its passing rate, and says, \"In my opinion, the school's teaching has gone downhill.\" (b) On another day, relying only on unnamed callers and without checking with the school or the education department, she says the school has no permit for one of its courses and that its teachers are \"garbage\"; the course was in fact accredited. Is either broadcast protected as fair comment? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) Yes, likely. Fair comment protects an expression of opinion based on established facts; it is immaterial that the opinion happens to be mistaken, as long as it might reasonably be inferred from the facts. (b) No. Every defamatory imputation is presumed malicious, and comments not backed by facts, aired without verification and in reckless disregard of their truth, are not privileged.",
+        "legalBasis": "Quoting Borjal, \"[i]f the comment is an expression of opinion, based on established facts, then it is immaterial that the opinion happens to be mistaken, as long as it might reasonably be inferred from the facts.\" But \"[e]very defamatory imputation is presumed malicious,\" and where the broadcasters \"had sufficient time to verify their sources\" yet relied on the students' words \"because they were many and not because there is proof,\" this showed \"reckless disregard of whether their report was true or not.\" Since \"the comments ... were not backed up by facts,\" \"the broadcasts are not privileged and remain libelous per se.\"",
+        "application": "(a) Carla's opinion is reasonably inferred from official results. (b) Her claims rest on unverified callers and are false.",
+        "conclusion": "(a) Protected; (b) not protected. **Bar trap:** a matter of public interest is not enough; the comment must rest on established facts."
+      },
+      "keyPoints": [
+        "Fair comment: opinion based on established facts",
+        "A mistaken opinion is protected if reasonably inferred from the facts",
+        "Every defamatory imputation is presumed malicious",
+        "Failure to verify shows reckless disregard of the truth",
+        "Comments not backed by facts are not privileged"
+      ],
+      "caseIds": [
+        "case-0087"
+      ],
+      "source": {
+        "caseTitle": "Filipinas Broadcasting Network, Inc. v. Ago Medical and Educational Center-Bicol Christian College of Medicine (AMEC-BCCM), et al.",
+        "grNumber": "G.R. No. 141994",
+        "url": "https://lawphil.net/judjuris/juri2005/jan2005/gr_141994_2005.html",
+        "part": "The Court's Ruling, first issue (whether the broadcasts are libelous; fair comment)",
+        "excerpt": "Every defamatory imputation is presumed malicious. Rima and Alegre failed to show adequately their good intention and justifiable motive in airing the supposed gripes of the students. … Hearing the students' alleged complaints a month before the exposé, they had sufficient time to verify their sources and information. However, Rima and Alegre hardly made a thorough investigation of the students' alleged gripes. … Alegre simply relied on the words of the students \"because they were many and not because there is proof that what they are saying is true.\" This plainly shows Rima and Alegre's reckless disregard of whether their report was true or not. … If the comment is an expression of opinion, based on established facts, then it is immaterial that the opinion happens to be mistaken, as long as it might reasonably be inferred from the facts. … Had the comments been an expression of opinion based on established facts, it is immaterial that the opinion happens to be mistaken, as long as it might reasonably be inferred from the facts. However, the comments of Rima and Alegre were not backed up by facts. Therefore, the broadcasts are not privileged and remain libelous per se."
+      }
+    },
+    {
+      "id": "q-0971",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Dino won a defamation suit. The trial court's decision discussed only liability and moral damages, but its dispositive portion added \"plus ₱50,000 attorney's fees,\" with no explanation anywhere. Dino offered no evidence on attorney's fees. Should the award be sustained? Reason briefly.",
+      "suggestedAnswer": {
+        "answer": "No. Attorney's fees as damages are the exception, not the rule; they are not awarded every time a party wins. An award under Article 2208 needs factual, legal and equitable justification, and the court must state the legal reason in the body of the decision, not only in the dispositive portion.",
+        "legalBasis": "In Filipinas Broadcasting v. AMEC-BCCM, the Court deleted the award because AMEC \"failed to justify satisfactorily its claim,\" \"did not adduce evidence,\" and the lower courts \"failed to explicitly state in their respective decisions the rationale for the award.\" Quoting Inter-Asia Investment Industries: the award \"is the exception rather than the rule ... The power of the court to award attorney's fees under Article 2208 ... demands factual, legal and equitable justification, without which the award is a conclusion without a premise ... the court must explicitly state in the text of the decision, and not only in the decretal portion thereof, the legal reason for the award.\"",
+        "application": "There was no evidence for the fees, and the reason appears nowhere in the body of the decision.",
+        "conclusion": "The award must be deleted. **Bar trap:** a fee award stated only in the dispositive portion is a conclusion without a premise."
+      },
+      "keyPoints": [
+        "Attorney's fees are the exception, not the rule",
+        "Not awarded every time a party wins",
+        "Need factual, legal and equitable justification (Art. 2208)",
+        "Reason must be stated in the body of the decision, not only the dispositive portion"
+      ],
+      "caseIds": [
+        "case-0087"
+      ],
+      "source": {
+        "caseTitle": "Filipinas Broadcasting Network, Inc. v. Ago Medical and Educational Center-Bicol Christian College of Medicine (AMEC-BCCM), et al.",
+        "grNumber": "G.R. No. 141994",
+        "url": "https://lawphil.net/judjuris/juri2005/jan2005/gr_141994_2005.html",
+        "part": "The Court's Ruling, third issue (attorney's fees)",
+        "excerpt": "The award of attorney's fees is not proper because AMEC failed to justify satisfactorily its claim for attorney's fees. AMEC did not adduce evidence to warrant the award of attorney's fees. Moreover, both the trial and appellate courts failed to explicitly state in their respective decisions the rationale for the award of attorney's fees. In Inter-Asia Investment Industries, Inc. v. Court of Appeals , we held that: [I]t is an accepted doctrine that the award thereof as an item of damages is the exception rather than the rule, and counsel's fees are not to be awarded every time a party wins a suit. The power of the court to award attorney's fees under Article 2208 of the Civil Code demands factual, legal and equitable justification, without which the award is a conclusion without a premise, its basis being improperly left to speculation and conjecture. In all events, the court must explicitly state in the text of the decision, and not only in the decretal portion thereof, the legal reason for the award of attorney's fees."
+      }
+    },
+    {
+      "id": "q-0972",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Under Filipinas Broadcasting Network v. AMEC-BCCM, on what basis may a corporation recover moral damages for a libelous broadcast?",
+      "choices": {
+        "A": "Article 2219(7), which authorizes moral damages for libel, slander or any other form of defamation without distinguishing natural from juridical persons.",
+        "B": "The statement in Mambulao Lumber, which the Court applied as binding doctrine.",
+        "C": "Article 2220, since every libel is a breach of contract.",
+        "D": "Proof that the corporation suffered mental anguish."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** \"Article 2219(7) does not qualify whether the plaintiff is a natural or juridical person. Therefore, a juridical person such as a corporation can validly complain for libel or any other form of defamation and claim for moral damages.\" **B is wrong:** the Court called the Mambulao statement \"an obiter dictum.\" **C is wrong:** libel is not a breach of contract. **D is wrong:** a corporation \"cannot experience ... mental anguish.\" **Bar trap:** the general rule still denies moral damages to juridical persons outside this exception.",
+      "caseIds": [
+        "case-0087"
+      ],
+      "source": {
+        "caseTitle": "Filipinas Broadcasting Network, Inc. v. Ago Medical and Educational Center-Bicol Christian College of Medicine (AMEC-BCCM), et al.",
+        "grNumber": "G.R. No. 141994",
+        "url": "https://lawphil.net/judjuris/juri2005/jan2005/gr_141994_2005.html",
+        "part": "The Court's Ruling, second issue (whether AMEC is entitled to moral damages)",
+        "excerpt": "Article 2219(7) does not qualify whether the plaintiff is a natural or juridical person. Therefore, a juridical person such as a corporation can validly complain for libel or any other form of defamation and claim for moral damages."
+      }
+    },
+    {
+      "id": "q-0973",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "In Filipinas Broadcasting Network v. AMEC-BCCM, libel was defined as a public and malicious imputation of a crime, or of a vice or defect, real or imaginary, or any act, omission, condition, status, or circumstance tending to cause the dishonor, discredit, or contempt of",
+      "choices": {
+        "A": "a natural person only.",
+        "B": "a public official only.",
+        "C": "a natural or juridical person, or to blacken the memory of one who is dead.",
+        "D": "a juridical person only, if it is imbued with public interest."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The definition covers imputations \"tending to cause the dishonor, discredit, or contempt of a natural or juridical person, or to blacken the memory of one who is dead.\" **A, B and D are wrong:** they narrow the definition. **Bar trap:** a juridical person may be defamed, which is why Article 2219(7) lets it claim moral damages.",
+      "caseIds": [
+        "case-0087"
+      ],
+      "source": {
+        "caseTitle": "Filipinas Broadcasting Network, Inc. v. Ago Medical and Educational Center-Bicol Christian College of Medicine (AMEC-BCCM), et al.",
+        "grNumber": "G.R. No. 141994",
+        "url": "https://lawphil.net/judjuris/juri2005/jan2005/gr_141994_2005.html",
+        "part": "The Court's Ruling, first issue (whether the broadcasts are libelous)",
+        "excerpt": "A libel is a public and malicious imputation of a crime, or of a vice or defect, real or imaginary, or any act or omission, condition, status, or circumstance tending to cause the dishonor, discredit, or contempt of a natural or juridical person, or to blacken the memory of one who is dead."
+      }
+    },
+    {
+      "id": "q-0974",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Why could the broadcasters in Filipinas Broadcasting Network v. AMEC-BCCM not invoke the privilege of neutral reportage?",
+      "choices": {
+        "A": "Because the privilege is never recognized for radio broadcasts.",
+        "B": "Because unfounded comments abounded in the broadcasts, and there was no existing controversy involving the school when they were made.",
+        "C": "Because the school is a private institution not imbued with public interest.",
+        "D": "Because the broadcasters had KBP accreditation."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** \"Rima and Alegre cannot invoke the privilege of neutral reportage because unfounded comments abound in the broadcasts. Moreover, there is no existing controversy involving AMEC when the broadcasts were made.\" The privilege \"applies where the defamed person is a public figure who is involved in an existing controversy, and a party to that controversy makes the defamatory statement.\" **A is wrong:** the Court did not rule it out for radio. **C is wrong:** the Court held the school's business \"genuinely imbued with public interest.\" **D is wrong:** their accreditation had deficiencies, and it is irrelevant to the privilege. **Bar trap:** neutral reportage protects accurate, disinterested reports of an existing controversy, not one's own unfounded comments.",
+      "caseIds": [
+        "case-0087"
+      ],
+      "source": {
+        "caseTitle": "Filipinas Broadcasting Network, Inc. v. Ago Medical and Educational Center-Bicol Christian College of Medicine (AMEC-BCCM), et al.",
+        "grNumber": "G.R. No. 141994",
+        "url": "https://lawphil.net/judjuris/juri2005/jan2005/gr_141994_2005.html",
+        "part": "The Court's Ruling, first issue (neutral reportage)",
+        "excerpt": "Rima and Alegre cannot invoke the privilege of neutral reportage because unfounded comments abound in the broadcasts. Moreover, there is no existing controversy involving AMEC when the broadcasts were made. The privilege of neutral reportage applies where the defamed person is a public figure who is involved in an existing controversy, and a party to that controversy makes the defamatory statement."
       }
     }
   ]
