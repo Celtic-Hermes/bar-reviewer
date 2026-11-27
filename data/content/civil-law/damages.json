@@ -811,6 +811,21 @@
       "ruling": "The judgment was reversed and Fox ordered to pay ₱1,000 with interest. (1) The intention of the parties is determined first from the words of the contract; where the language is plain, interpretation is unnecessary and would make a new contract for the parties. They expressly stipulated one year. (2) In this jurisdiction penalties in such contracts are enforced: competent parties may make agreements within the limits of law and public policy, and courts enforce them according to their terms. There is no difference between a penalty and liquidated damages as to legal results: the party is entitled to the stipulated sum without proving damages, and avoiding that necessity is a primary purpose of the stipulation. Under the Civil Code then in force, the only case for reducing the penalty was partial or irregular performance from which the claimant benefited. (3) The temporary restriction on selling the stock had a beneficial purpose, protected the corporation and the parties, and was reasonable in length, so it was valid.",
       "keyDoctrine": "A penalty or liquidated damages clause is enforced according to its terms: the party entitled may recover the stipulated sum without proving actual damages, which is one of the purposes of the stipulation; legally, penalty and liquidated damages are treated alike. Plain contract words are applied, not interpreted away. (Under the present Civil Code, liquidated damages are those agreed upon to be paid in case of breach, Art. 2226, and are equitably reduced if iniquitous or unconscionable, Art. 2227.) A reasonable, temporary restriction on selling shares to protect a corporation is valid.",
       "sourceUrl": "https://lawphil.net/judjuris/juri1914/jan1914/gr_l-7991_1914.html"
+    },
+    {
+      "id": "case-0102",
+      "status": "draft",
+      "name": "H.L. Carlos Construction, Inc. v. Marina Properties Corporation, et al.",
+      "grNumber": "G.R. No. 147614",
+      "year": 2004,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Liquidated Damages",
+      "facts": "In 1988 H.L. Carlos Construction (HLC) contracted with Marina Properties (MPC) to build Phase III of a condominium for a lump sum of ₱38.58 million, to be finished by May 16, 1989, later extended to October 31, 1989, with a grace period to November 30, 1989. The contract allowed cost escalation only on the labor component and stipulated that if the contractor failed to finish on time it would pay, \"as liquidated damages,\" 1/1000 of the contract price per calendar day of delay (capped at 15%), \"fixed, agreed upon and not by way of penalty,\" without the owner having to prove actual damages. By November 30, 1989, HLC had finished only about 80%. It sued MPC and two individuals for labor and material escalation, change orders, retention money and detained materials. HLC kept working until April 1990; MPC then hired another contractor for ₱11.75 million to finish the job. The trial court ruled for HLC; the Court of Appeals reversed and held HLC liable for actual and liquidated damages.",
+      "issue": "(1) Is HLC entitled to labor and material escalation, extra work, retention money, detained materials and attorney's fees? (2) Are the individual respondents solidarily liable? (3) Is HLC liable for actual and liquidated damages?",
+      "ruling": "The petition was partly granted. HLC was entitled to labor cost escalation (₱1,196,202), which the contract allowed and MPC benefited from, since denying it would be unjust enrichment; and, under quantum meruit, to the ₱79,340.52 of extra work MPC itself had valued and accepted, though there was no supplementary agreement. It was not entitled to material escalation, the retention money (its release conditions were unmet), detained materials, or attorney's fees. The individual respondents were not personally liable absent bad faith, gross negligence or the other grounds for corporate officers' liability. HLC was in delay and in breach, so it was liable for the natural and probable consequences: ₱4,604,579 actual damages for the higher cost of completion. It was also liable for liquidated damages as stipulated, for 92 days from the end of the grace period until it effectively abandoned the project. Liquidated damages are those the parties agree to be paid in case of breach; under Philippine law they take the nature of penalties, and a penal clause is an accessory undertaking to assume greater liability in case of breach, attached to ensure performance.",
+      "keyDoctrine": "Liquidated damages are those the parties agree to be paid in case of breach (Art. 2226); under Philippine law they take the nature of penalties, and a penal clause is an accessory undertaking to assume greater liability in case of breach, attached to an obligation to ensure performance. A contractor in delay is liable for the natural and probable consequences of its breach and for the stipulated liquidated damages for the days of delay. Unjust enrichment (Art. 22) bars an owner from keeping the benefit of work validly done; under quantum meruit a contractor recovers the reasonable value of accepted extra work even without a written agreement. Corporate officers are personally liable only for assenting to patently unlawful acts, bad faith or gross negligence, or conflict of interest.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2004/jan2004/gr_147614_2004.html"
     }
   ],
   "questions": [
@@ -16347,6 +16362,276 @@
         "url": "https://lawphil.net/judjuris/juri1914/jan1914/gr_l-7991_1914.html",
         "part": "Decision, the disposition",
         "excerpt": "The judgment is reversed, the case remanded with instructions to enter a judgment in favor of the plaintiff and against the defendant for P1,000, with interest; without costs in this instance."
+      }
+    },
+    {
+      "id": "q-1101",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Liquidated Damages",
+      "prompt": "A construction contract provided that if the contractor failed to finish within the stipulated time, including extensions, it would pay the owner \"as liquidated damages\" 1/1000 of the contract price for each calendar day of delay, \"fixed, agreed upon and not by way of penalty,\" without the owner having to prove actual damages. The contractor was in delay and abandoned the work 92 days after the grace period. (a) What are liquidated damages, and what is their nature under Philippine law? (b) Is the contractor liable for them? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) Liquidated damages are those that the parties agree to be paid in case of a breach. Under Philippine law they take the nature of penalties; a penal clause is an accessory undertaking to assume greater liability in case of breach, attached to an obligation to ensure performance. (b) Yes. Being in delay and in breach, the contractor is bound to pay the stipulated liquidated damages for the days of delay, from the expiration of the grace period until it effectively abandoned the project.",
+        "legalBasis": "In H.L. Carlos Construction, Inc. v. Marina Properties Corporation, \"[l]iquidated damages are those that the parties agree to be paid in case of a breach. As worded, the amount agreed upon answers for damages suffered by the owner due to delays in the completion of the project. Under Philippine laws, these damages take the nature of penalties. A penal clause is an accessory undertaking to assume greater liability in case of a breach. It is attached to an obligation in order to ensure performance.\" The contractor was \"bound to pay liquidated damages for 92 days.\"",
+        "application": "The contractor was in delay past the grace period and abandoned the work; the clause applies to each day of that delay.",
+        "conclusion": "Liable for 92 days of liquidated damages. **Bar trap:** labeling a clause \"not by way of penalty\" does not change its legal nature; the Court still treated it as a penal clause."
+      },
+      "keyPoints": [
+        "Liquidated damages: agreed upon to be paid in case of breach",
+        "They take the nature of penalties under Philippine law",
+        "Penal clause: accessory undertaking to assume greater liability",
+        "Attached to ensure performance",
+        "Counted from the end of the grace period to abandonment"
+      ],
+      "caseIds": [
+        "case-0102"
+      ],
+      "source": {
+        "caseTitle": "H.L. Carlos Construction, Inc. v. Marina Properties Corporation, et al.",
+        "grNumber": "G.R. No. 147614",
+        "url": "https://lawphil.net/judjuris/juri2004/jan2004/gr_147614_2004.html",
+        "part": "The Court's Ruling, Third Issue (liability for actual and liquidated damages)",
+        "excerpt": "Liquidated damages are those that the parties agree to be paid in case of a breach. As worded, the amount agreed upon answers for damages suffered by the owner due to delays in the completion of the project. Under Philippine laws, these damages take the nature of penalties. A penal clause is an accessory undertaking to assume greater liability in case of a breach. It is attached to an obligation in order to ensure performance. Thus, as held by the CA, petitioner is bound to pay liquidated damages for 92 days, or from the expiration of the grace period in the Amended Contract until February 1, 1990, when it effectively abandoned the project."
+      }
+    },
+    {
+      "id": "q-1102",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Liquidated Damages",
+      "prompt": "In the same case, the owner had paid the contractor ₱31.4 million of the ₱38.6 million price, leaving ₱7.1 million unpaid, and then had to pay another firm ₱11.75 million to finish the project. Besides liquidated damages, is the contractor liable for actual damages? On what basis, and in what amount? Explain.",
+      "suggestedAnswer": {
+        "answer": "Yes. The contractor was in delay and in breach of contract, and the obligor is liable for damages that are the natural and probable consequences of its breach. The owner's extra cost of completion, the second contractor's price minus the unpaid balance of the original price, is such a consequence.",
+        "legalBasis": "In H.L. Carlos Construction v. Marina Properties, \"[p]etitioner was in delay and in breach of contract. Clearly, the obligor is liable for damages that are the natural and probable consequences of its breach of obligation. Petitioner was already paid by MPC in the amount of ₱31,435,187 out of the total contract price of ₱38,580,609; thus, only ₱7,145,422 remained outstanding. In order to finish the project, the latter had to contract the services of a second construction firm for ₱11,750,000. Hence, MPC suffered actual damages in the amount of ₱4,604,579 for the completion of the project.\"",
+        "application": "₱11,750,000 less ₱7,145,422 is the extra cost the owner bore because of the breach.",
+        "conclusion": "₱4,604,579 actual damages, in addition to liquidated damages for the delay. **Bar trap:** the Court awarded both; the liquidated damages answered for the delay, while the actual damages answered for the extra cost of completing the work."
+      },
+      "keyPoints": [
+        "Contractor in delay and in breach",
+        "Liable for natural and probable consequences of breach",
+        "Extra cost of completion: second contract price minus unpaid balance",
+        "Actual damages awarded alongside liquidated damages for delay"
+      ],
+      "caseIds": [
+        "case-0102"
+      ],
+      "source": {
+        "caseTitle": "H.L. Carlos Construction, Inc. v. Marina Properties Corporation, et al.",
+        "grNumber": "G.R. No. 147614",
+        "url": "https://lawphil.net/judjuris/juri2004/jan2004/gr_147614_2004.html",
+        "part": "The Court's Ruling, Third Issue (liability for actual and liquidated damages)",
+        "excerpt": "Petitioner was in delay and in breach of contract. Clearly, the obligor is liable for damages that are the natural and probable consequences of its breach of obligation. Petitioner was already paid by MPC in the amount of ₱31,435,187 out of the total contract price of ₱38,580,609; thus, only ₱7,145,422 remained outstanding. In order to finish the project, the latter had to contract the services of a second construction firm for ₱11,750,000. Hence, MPC suffered actual damages in the amount of ₱4,604,579 for the completion of the project."
+      }
+    },
+    {
+      "id": "q-1103",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Liquidated Damages",
+      "prompt": "(a) When is there unjust enrichment under Article 22 of the Civil Code, and why was the owner liable for the contractor's labor cost escalation after the original completion date? (b) What is quantum meruit, and why could the contractor recover the value of extra work despite the lack of the supplementary agreement the contract required?",
+      "suggestedAnswer": {
+        "answer": "(a) There is unjust enrichment when (1) a person is unjustly benefited, and (2) the benefit is derived at the expense of or with damages to another. The contract allowed escalation of the labor component; the contractor was not yet in delay during the extended period, and the owner let it keep working and accepted the work, so letting the owner keep the project without paying the validly incurred labor escalation would be unjust enrichment. (b) Under quantum meruit, a contractor may recover the reasonable value of services rendered despite the lack of a written contract, to avoid unjust enrichment; payment is made in the amount the plaintiff reasonably deserves. The owner itself had valued and accepted the extra work, so it had to pay that value.",
+        "legalBasis": "\"There is unjust enrichment under Article 22 of the Civil Code when (1) a person is unjustly benefited, and (2) such benefit is derived at the expense of or with damages to another. Since petitioner had rendered services that were accepted by MPC, then the former should be compensated for them.\" \"Under the principle of quantum meruit, a contractor is allowed to recover the reasonable value of the thing or services rendered despite the lack of a written contract, in order to avoid unjust enrichment. Quantum meruit means that in an action for work and labor, payment shall be made in such amount as the plaintiff reasonably deserves.\"",
+        "application": "The owner benefited from labor and extra work it allowed and accepted.",
+        "conclusion": "Labor escalation of ₱1,196,202 and extra work of ₱79,340.52 were awarded. **Bar trap:** quantum meruit gives the reasonable value of accepted work, not whatever the contractor billed."
+      },
+      "keyPoints": [
+        "Unjust enrichment: unjust benefit at another's expense (Art. 22)",
+        "Owner accepted the work and benefited",
+        "Quantum meruit: reasonable value despite no written contract",
+        "Amount the plaintiff reasonably deserves",
+        "Owner's own valuation used"
+      ],
+      "caseIds": [
+        "case-0102"
+      ],
+      "source": {
+        "caseTitle": "H.L. Carlos Construction, Inc. v. Marina Properties Corporation, et al.",
+        "grNumber": "G.R. No. 147614",
+        "url": "https://lawphil.net/judjuris/juri2004/jan2004/gr_147614_2004.html",
+        "part": "The Court's Ruling, First Issue (labor cost escalation; change orders and extra work)",
+        "excerpt": "To allow MPC to acquire the partially accomplished project without paying for labor cost escalation validly incurred would constitute unjust enrichment at the expense of petitioner. There is unjust enrichment under Article 22 of the Civil Code when (1) a person is unjustly benefited, and (2) such benefit is derived at the expense of or with damages to another. Since petitioner had rendered services that were accepted by MPC, then the former should be compensated for them. … Under the principle of quantum meruit, a contractor is allowed to recover the reasonable value of the thing or services rendered despite the lack of a written contract, in order to avoid unjust enrichment. Quantum meruit means that in an action for work and labor, payment shall be made in such amount as the plaintiff reasonably deserves. To deny payment for a building almost completed and already occupied would be to permit unjust enrichment at the expense of the contractor."
+      }
+    },
+    {
+      "id": "q-1104",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Liquidated Damages",
+      "prompt": "Ana hired Ben to renovate her café, with a clause that Ben would pay ₱2,000 for each day of delay beyond June 30, as liquidated damages, without Ana having to prove her losses. (a) Ben finished on July 10, and Ana proves no actual loss. (b) In another contract with the same clause, Carla's contractor finished on time, but Carla asked for the ₱2,000-a-day payments anyway because the work cost her more than she expected. May Ana and Carla each collect liquidated damages? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) Ana may collect ₱20,000 for the ten days of delay, without proving actual damages, because liquidated damages are those the parties agree to be paid in case of a breach and the clause was triggered by the delay. (b) Carla may not. Liquidated damages are owed only upon the breach the parties contemplated, here a delay in completion; there was no delay, so the clause does not apply.",
+        "legalBasis": "In H.L. Carlos Construction v. Marina Properties, \"[l]iquidated damages are those that the parties agree to be paid in case of a breach. As worded, the amount agreed upon answers for damages suffered by the owner due to delays in the completion of the project.\" The contractor was liable for the 92 days of delay. Article 2226 likewise defines liquidated damages as those \"to be paid in case of breach,\" and Article 2228 provides that when the breach is not the one contemplated by the parties, the law, not the stipulation, determines the damages.",
+        "application": "(a) Ben's delay is the breach the clause covers. (b) Carla's contractor committed no breach.",
+        "conclusion": "(a) Ana collects ₱20,000; (b) Carla collects nothing under the clause. **Bar trap:** no breach, no liquidated damages; the clause is triggered only by the stipulated breach."
+      },
+      "keyPoints": [
+        "Liquidated damages: agreed upon for a breach",
+        "Answer for the contemplated breach (delay)",
+        "No proof of actual loss needed once triggered",
+        "No breach: nothing due under the clause",
+        "Art. 2228: breach not contemplated, the law measures damages"
+      ],
+      "caseIds": [
+        "case-0102"
+      ],
+      "source": {
+        "caseTitle": "H.L. Carlos Construction, Inc. v. Marina Properties Corporation, et al.",
+        "grNumber": "G.R. No. 147614",
+        "url": "https://lawphil.net/judjuris/juri2004/jan2004/gr_147614_2004.html",
+        "part": "The Court's Ruling, Third Issue (liability for actual and liquidated damages)",
+        "excerpt": "Liquidated damages are those that the parties agree to be paid in case of a breach. As worded, the amount agreed upon answers for damages suffered by the owner due to delays in the completion of the project."
+      }
+    },
+    {
+      "id": "q-1105",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Liquidated Damages",
+      "prompt": "Dino, a contractor, built a house for Eva under a lump-sum contract that required a signed supplementary agreement for any extra work. (a) At Eva's request, Dino built an extra room; Eva's engineer valued it at ₱300,000 and Eva now lives in it, but no supplementary agreement was signed. (b) Dino also bills Eva for ₱500,000 of \"extra work\" that Eva never asked for, never accepted, and that her engineer found was not done. What may Dino recover? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) ₱300,000. Under quantum meruit, a contractor may recover the reasonable value of services rendered despite the lack of a written contract, to avoid unjust enrichment; Eva ordered and accepted the room, and her own engineer valued it. (b) Nothing. Unjust enrichment requires that a person be unjustly benefited at another's expense; Eva received no benefit from work never requested, accepted or performed.",
+        "legalBasis": "In H.L. Carlos Construction v. Marina Properties, the contractor \"may have failed to show the construction memoranda covering its claim, but it inarguably performed extra work that was accepted by MPC,\" so the owner's own valuation was used. \"Under the principle of quantum meruit, a contractor is allowed to recover the reasonable value of the thing or services rendered despite the lack of a written contract, in order to avoid unjust enrichment.\" Unjust enrichment requires that \"(1) a person is unjustly benefited, and (2) such benefit is derived at the expense of or with damages to another.\"",
+        "application": "(a) Requested, performed, accepted and valued work. (b) No request, acceptance or performance.",
+        "conclusion": "(a) ₱300,000; (b) nothing. **Bar trap:** quantum meruit rests on work actually performed and accepted; a missing formality does not defeat it, but missing work does."
+      },
+      "keyPoints": [
+        "Quantum meruit despite no written supplementary agreement",
+        "Work performed and accepted",
+        "Reasonable value, e.g., the owner's own valuation",
+        "No benefit received: no unjust enrichment"
+      ],
+      "caseIds": [
+        "case-0102"
+      ],
+      "source": {
+        "caseTitle": "H.L. Carlos Construction, Inc. v. Marina Properties Corporation, et al.",
+        "grNumber": "G.R. No. 147614",
+        "url": "https://lawphil.net/judjuris/juri2004/jan2004/gr_147614_2004.html",
+        "part": "The Court's Ruling, First Issue (labor cost escalation and change orders)",
+        "excerpt": "Petitioner may have failed to show the construction memoranda covering its claim, but it inarguably performed extra work that was accepted by MPC. Hence, we will consider Annex \"C\" as the proper valuation thereof. Under the principle of quantum meruit, a contractor is allowed to recover the reasonable value of the thing or services rendered despite the lack of a written contract, in order to avoid unjust enrichment."
+      }
+    },
+    {
+      "id": "q-1106",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Liquidated Damages",
+      "prompt": "Felix's contractor sued a development corporation and its president, Gina, for unpaid billings, claiming she should be solidarily liable because she signed the decisions to withhold payment. There is no evidence that she acted in bad faith or beyond her authority. The contractor also claims attorney's fees because the corporation withheld some payments. (a) Is Gina personally liable? (b) Are attorney's fees due? Reason briefly.",
+      "suggestedAnswer": {
+        "answer": "(a) No. The personal liability of corporate officers validly attaches only when (a) they assent to a patently unlawful act of the corporation, (b) they are guilty of bad faith or gross negligence in directing its affairs, or (c) they incur a conflict of interest resulting in damages. None is shown. (b) No. Attorney's fees are not granted every time a party prevails, because no premium should be placed on the right to litigate; the corporation's withholding of payments, where it had its own claims to offset, is not gross and evident bad faith.",
+        "legalBasis": "In H.L. Carlos Construction v. Marina Properties, \"[t]he personal liability of corporate officers validly attaches only when (a) they assent to a patently unlawful act of the corporation; or (b) they are guilty of bad faith or gross negligence in directing its affairs; or (c) they incur conflict of interest, resulting in damages.\" On fees, \"[a]ttorney's fees are not granted every time a party prevails in a suit, because no premium should be placed on the right to litigate ... Just because MPC withheld some payments from petitioner does not mean that the former was in gross or evident bad faith. MPC had claims that it wanted to offset.\"",
+        "application": "Gina acted within her authority without bad faith; the corporation had its own counter-claims.",
+        "conclusion": "(a) Not personally liable; (b) no attorney's fees. **Bar trap:** a corporate officer is not liable merely for signing the corporation's decisions."
+      },
+      "keyPoints": [
+        "Officer liable only for patently unlawful acts, bad faith or gross negligence, or conflict of interest",
+        "No evidence of these: no personal liability",
+        "No premium on the right to litigate",
+        "Withholding payments to offset claims is not gross bad faith"
+      ],
+      "caseIds": [
+        "case-0102"
+      ],
+      "source": {
+        "caseTitle": "H.L. Carlos Construction, Inc. v. Marina Properties Corporation, et al.",
+        "grNumber": "G.R. No. 147614",
+        "url": "https://lawphil.net/judjuris/juri2004/jan2004/gr_147614_2004.html",
+        "part": "The Court's Ruling, Second Issue (liability of corporate officers) and on attorney's fees",
+        "excerpt": "The personal liability of corporate officers validly attaches only when (a) they assent to a patently unlawful act of the corporation; or (b) they are guilty of bad faith or gross negligence in directing its affairs; or (c) they incur conflict of interest, resulting in damages to the corporation, its stockholders or other persons. The records are bereft of any evidence that Typoco acted in bad faith with gross or inexcusable negligence, or that he acted outside the scope of his authority as company president."
+      }
+    },
+    {
+      "id": "q-1107",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Liquidated Damages",
+      "prompt": "According to H.L. Carlos Construction v. Marina Properties, a penal clause is",
+      "choices": {
+        "A": "an accessory undertaking to assume greater liability in case of a breach, attached to an obligation to ensure performance.",
+        "B": "a principal obligation that replaces the main contract.",
+        "C": "a clause that is void unless the owner proves actual damages.",
+        "D": "a waiver of the right to claim actual damages."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** \"A penal clause is an accessory undertaking to assume greater liability in case of a breach. It is attached to an obligation in order to ensure performance.\" **B is wrong:** it is accessory. **C is wrong:** the clause itself relieved the owner of proving actual damages. **D is wrong:** the Court awarded both actual and liquidated damages here. **Bar trap:** liquidated damages \"take the nature of penalties\" under Philippine law.",
+      "caseIds": [
+        "case-0102"
+      ],
+      "source": {
+        "caseTitle": "H.L. Carlos Construction, Inc. v. Marina Properties Corporation, et al.",
+        "grNumber": "G.R. No. 147614",
+        "url": "https://lawphil.net/judjuris/juri2004/jan2004/gr_147614_2004.html",
+        "part": "The Court's Ruling, Third Issue (liability for actual and liquidated damages)",
+        "excerpt": "Under Philippine laws, these damages take the nature of penalties. A penal clause is an accessory undertaking to assume greater liability in case of a breach. It is attached to an obligation in order to ensure performance."
+      }
+    },
+    {
+      "id": "q-1108",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Liquidated Damages",
+      "prompt": "Under Article 22 of the Civil Code, as explained in H.L. Carlos Construction v. Marina Properties, there is unjust enrichment when",
+      "choices": {
+        "A": "a contract is terminated before completion.",
+        "B": "a person is unjustly benefited, and the benefit is derived at the expense of or with damages to another.",
+        "C": "a party makes a profit from a lawful contract.",
+        "D": "a contractor is in delay."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** \"There is unjust enrichment under Article 22 of the Civil Code when (1) a person is unjustly benefited, and (2) such benefit is derived at the expense of or with damages to another.\" **A, C and D are wrong:** none states the two elements. **Bar trap:** quantum meruit is the remedy for accepted work without a written contract.",
+      "caseIds": [
+        "case-0102"
+      ],
+      "source": {
+        "caseTitle": "H.L. Carlos Construction, Inc. v. Marina Properties Corporation, et al.",
+        "grNumber": "G.R. No. 147614",
+        "url": "https://lawphil.net/judjuris/juri2004/jan2004/gr_147614_2004.html",
+        "part": "The Court's Ruling, First Issue (unjust enrichment)",
+        "excerpt": "There is unjust enrichment under Article 22 of the Civil Code when (1) a person is unjustly benefited, and (2) such benefit is derived at the expense of or with damages to another."
+      }
+    },
+    {
+      "id": "q-1109",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Liquidated Damages",
+      "prompt": "For how long was the contractor in H.L. Carlos Construction held liable for liquidated damages?",
+      "choices": {
+        "A": "From the signing of the contract.",
+        "B": "From the original completion date of May 16, 1989.",
+        "C": "92 days, from the expiration of the grace period until it effectively abandoned the project.",
+        "D": "Until the second contractor finished the project."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The contractor was \"bound to pay liquidated damages for 92 days, or from the expiration of the grace period in the Amended Contract until February 1, 1990, when it effectively abandoned the project.\" **A and B are wrong:** before the end of the extended period and grace period, it was not yet in delay. **D is wrong:** the count stopped at abandonment. **Bar trap:** delay is counted from the end of any agreed extension and grace period.",
+      "caseIds": [
+        "case-0102"
+      ],
+      "source": {
+        "caseTitle": "H.L. Carlos Construction, Inc. v. Marina Properties Corporation, et al.",
+        "grNumber": "G.R. No. 147614",
+        "url": "https://lawphil.net/judjuris/juri2004/jan2004/gr_147614_2004.html",
+        "part": "The Court's Ruling, Third Issue (liability for actual and liquidated damages)",
+        "excerpt": "Thus, as held by the CA, petitioner is bound to pay liquidated damages for 92 days, or from the expiration of the grace period in the Amended Contract until February 1, 1990, when it effectively abandoned the project."
       }
     }
   ]
