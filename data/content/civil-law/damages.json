@@ -8580,6 +8580,100 @@
         "part": "Decision, damages awarded on appeal though not assigned as errors",
         "excerpt": "In addition, the Court of Appeals correctly awarded temperate damages in the amount of ₱10,000.00 for the damage caused on respondent’s motorcycle. Under Art. 2224 of the Civil Code, temperate damages \"may be recovered when the court finds that some pecuniary loss has been suffered but its amount cannot, from the nature of the case, be proved with certainty.\" The cost of the repair of the motorcycle was prayed for by respondent in her Complaint. However, the evidence presented was merely a job estimate of the cost of the motorcycle’s repair amounting to ₱17, 829.00. … The Court of Appeals also correctly awarded respondent moral damages for the physical injuries she sustained due to the vehicular accident. Under Art. 2219 of the Civil Code, moral damages may be recovered in quasi-delicts causing physical injuries."
       }
+    },
+    {
+      "id": "q-0855",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Two persons were killed in separate crimes.\n\n(a) Ana, 35, was a store clerk with payslips showing her earnings. The trial court convicted her killer but awarded nothing for her loss of earning capacity because, it said, the heirs had not insisted on it. Should the court have assessed and awarded it? Explain.\n\n(b) Ben, 40, had been completely disabled and unable to work for years because of an illness that had nothing to do with the accused, and had no earnings at the time of his death. Must the court award his heirs indemnity for loss of earning capacity? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) Yes. Under Article 2206, the defendant is liable for the loss of the earning capacity of the deceased, and the indemnity \"shall in every case be assessed and awarded by the court.\" (b) No. The law makes an exception where the deceased, on account of permanent physical disability not caused by the defendant, had no earning capacity at the time of death.",
+        "legalBasis": "Article 2206(1): \"The defendant shall be liable for the loss of the earning capacity of the deceased, and the indemnity shall be paid to the heirs of the latter; such indemnity shall in every case be assessed and awarded by the court, unless the deceased on account of permanent physical disability not caused by the defendant, had no earning capacity at the time of his death.\" The amount depends on the number of years (life expectancy, 2/3 × (80 − age at death)) and the rate of loss (net income, gross income less living expenses).",
+        "application": "(a) Ana had earning capacity proved by her payslips, so the court had to assess and award the indemnity. (b) Ben's permanent disability, not caused by the accused, left him with no earning capacity when he died, so he falls within the exception.",
+        "conclusion": "(a) Must be awarded; (b) not due. **Bar trap:** this indemnity is not optional for the court; the only statutory exception is a permanent disability, not caused by the defendant, that left the deceased with no earning capacity."
+      },
+      "keyPoints": [
+        "Art. 2206(1): liability for the deceased's loss of earning capacity",
+        "The court shall in every case assess and award it",
+        "Exception: permanent physical disability not caused by the defendant, no earning capacity at death",
+        "Factors: life expectancy and net income (gross less living expenses)"
+      ],
+      "caseIds": [
+        "case-0052"
+      ],
+      "source": {
+        "caseTitle": "People v. Asilan",
+        "grNumber": "G.R. No. 188322",
+        "url": "https://lawphil.net/judjuris/juri2012/apr2012/gr_188322_2012.html",
+        "part": "Discussion, loss of earning capacity (the factors and Article 2206)",
+        "excerpt": "Art. 2206. The amount of damages for death caused by a crime or quasi-delict shall be at least three thousand pesos, even though there may have been mitigating circumstances. In addition: (1) The defendant shall be liable for the loss of the earning capacity of the deceased, and the indemnity shall be paid to the heirs of the latter; such indemnity shall in every case be assessed and awarded by the court, unless the deceased on account of permanent physical disability not caused by the defendant, had no earning capacity at the time of his death; … The following are the factors in computing the amount of damages recoverable for the loss of earning capacity of the deceased: 1) The number of years on the basis of which the damages shall be computed. This is based on the formula (2/3 x 80 – age of the deceased at the time of his death = life expectancy), which is adopted from the American Expectancy Table of Mortality; and 2) The rate at which the losses sustained by the heirs of the deceased should be fixed. Net income is arrived at by deducting the amount of the victim’s living expenses from the amount of his gross income."
+      }
+    },
+    {
+      "id": "q-0856",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Carlo, a 26-year-old security guard, was murdered. His employer's payroll records show a gross annual income of ₱120,000. Applying the method that deducts living expenses of 50% of the gross annual income, compute his heirs' award for loss of earning capacity. Show the computation.",
+      "suggestedAnswer": {
+        "answer": "₱2,160,000. Life expectancy = 2/3 × (80 − 26) = 36 years. Net income = ₱120,000 − 50% (₱60,000) = ₱60,000. Award = 36 × ₱60,000 = ₱2,160,000.",
+        "legalBasis": "Net earning capacity = life expectancy × [gross annual income − living expenses] = 2/3 [80 − age at time of death] × [gross annual income − 50% of gross annual income]. For a 29-year-old with a gross annual income of ₱103,260, this gave 2/3 [80 − 29] × [₱103,260 − ₱51,630] = 34 × ₱51,630 = ₱1,755,420.",
+        "application": "Applying the same formula to Carlo's age (26) and documented gross annual income (₱120,000) gives 36 × ₱60,000.",
+        "conclusion": "₱2,160,000. **Bar trap:** compute life expectancy as two-thirds of (80 minus the age at death), not 80 minus the age; and deduct living expenses before multiplying."
+      },
+      "keyPoints": [
+        "Life expectancy: 2/3 × (80 − 26) = 36",
+        "Living expenses: 50% of ₱120,000 = ₱60,000",
+        "Net income: ₱60,000",
+        "Award: 36 × ₱60,000 = ₱2,160,000"
+      ],
+      "caseIds": [
+        "case-0052"
+      ],
+      "source": {
+        "caseTitle": "People v. Asilan",
+        "grNumber": "G.R. No. 188322",
+        "url": "https://lawphil.net/judjuris/juri2012/apr2012/gr_188322_2012.html",
+        "part": "Discussion, loss of earning capacity (computation)",
+        "excerpt": "Net income is arrived at by deducting the amount of the victim’s living expenses from the amount of his gross income. The loss of earning capacity of Asilan is thus computed as follows: Net Earning Capacity = life expectancy x [gross annual income – living expenses] = 2/3 [80-age at time of death] x [gross annual income – 50% of gross annual income] = 2/3 [80-29] x [₱ 103,260.00 – ₱ 51,630.00] = 34 x ₱ 51,630.00 = ₱ 1,755,420.00"
+      }
+    },
+    {
+      "id": "q-0857",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Dan was charged with murder; the Information specifically alleged that he attacked \"with treachery.\" He never objected to the Information during the trial. After his conviction, he argues for the first time on appeal that he can only be guilty of homicide because the Information did not describe how the treachery was carried out. He also argues that he must be innocent because, after the stabbing, he calmly stayed at the scene instead of running away.\n\n(a) Will his argument on the Information prosper? Explain.\n\n(b) Does his failure to flee prove his innocence? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) No. Treachery was specifically alleged, and in any case an Information lacking essential allegations may still sustain a conviction when the accused fails to object to its sufficiency during the trial and the deficiency is cured by competent evidence. (b) No. Flight indicates guilt, but its converse is not necessarily true; some culprits stay in the vicinity to create a semblance of regularity.",
+        "legalBasis": "\"The rule is that qualifying circumstances must be properly pleaded in the Information in order not to violate the accused's constitutional right to be properly informed of the nature and cause of the accusation against him.\" But \"[a]n Information which lacks essential allegations may still sustain a conviction when the accused fails to object to its sufficiency during the trial, and the deficiency was cured by competent evidence presented therein.\" \"Flight is indicative of guilt, but its converse is not necessarily true. ... Some may escape or flee ... while others may remain in the same vicinity so as to create a semblance of regularity, thereby avoiding suspicion.\"",
+        "application": "(a) Dan's Information alleged treachery, and he objected only on appeal. (b) Staying at the scene does not outweigh the evidence of his guilt.",
+        "conclusion": "(a) Fails; (b) does not prove innocence. **Bar trap:** objections to the sufficiency of an Information must be raised during trial; failure to flee is not proof of innocence."
+      },
+      "keyPoints": [
+        "Qualifying circumstances must be properly pleaded in the Information",
+        "Treachery was specifically alleged",
+        "Failure to object during trial waives defects cured by evidence",
+        "Flight indicates guilt; its converse is not necessarily true",
+        "Culprits behave differently after a crime"
+      ],
+      "caseIds": [
+        "case-0052"
+      ],
+      "source": {
+        "caseTitle": "People v. Asilan",
+        "grNumber": "G.R. No. 188322",
+        "url": "https://lawphil.net/judjuris/juri2012/apr2012/gr_188322_2012.html",
+        "part": "Discussion, sufficiency of the Information and flight",
+        "excerpt": "In the same manner, it is also not surprising that Asilan returned to the scene of the crime after stabbing Adovas. His \"failure to flee and the apparent normalcy of his behavior subsequent to the commission of the crime do not imply his innocence.\" This Court, elucidating on this point, declared: Flight is indicative of guilt, but its converse is not necessarily true. Culprits behave differently and even erratically in externalizing and manifesting their guilt. Some may escape or flee -- a circumstance strongly illustrative of guilt -- while others may remain in the same vicinity so as to create a semblance of regularity, thereby avoiding suspicion from other members of the community. … Contrary to Asilan’s contention, the qualifying circumstance of \"treachery\" was specifically alleged in the Information. \"The rule is that qualifying circumstances must be properly pleaded in the Information in order not to violate the accused’s constitutional right to be properly informed of the nature and cause of the accusation against him.\" … Moreover, in People v. Candaza, this Court held that \"[a]n Information which lacks essential allegations may still sustain a conviction when the accused fails to object to its sufficiency during the trial, and the deficiency was cured by competent evidence presented therein.\""
+      }
     }
   ]
 }
