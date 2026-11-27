@@ -18051,6 +18051,100 @@
         "part": "Decision, the disposition",
         "excerpt": "WHEREFORE, the appealed judgment of the erstwhile Court of Appeals is hereby reversed, and the decision of the Court of First Instance of Oriental Mindoro in its Civil Case No. R-2525 is set aside."
       }
+    },
+    {
+      "id": "q-1155",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Ana, a barangay treasurer, was falsely accused in Ben's newspaper column of stealing barangay funds; Ben never checked the story. Ben was convicted of libel. Ana proved her shame and sleepless nights, and that neighbors shunned her, but she lost no salary or business and presented no proof of any pecuniary loss. The trial court awarded her ₱300,000 actual damages and ₱500,000 moral damages. Should both awards stand? Explain.",
+      "suggestedAnswer": {
+        "answer": "Only the moral damages. Actual damages are due only for pecuniary loss duly proved, so without proof of measurable loss they cannot stand. But moral damages may be recovered in cases of libel, slander or any other form of defamation under Article 2219(7), and they can be awarded even in the absence of actual or compensatory damages.",
+        "legalBasis": "Article 2199 allows compensation \"only for such pecuniary loss suffered by him as he has duly proved\"; \"[w]ithout proof of actual loss that can be measured, the award of actual damages cannot stand.\" Article 2219(7) allows moral damages \"in cases of libel, slander, or any other form of defamation,\" and \"[m]oral damages can be awarded even in the absence of actual or compensatory damages.\"",
+        "application": "Ana proved injury to her reputation and feelings caused by the libel, but no pecuniary loss.",
+        "conclusion": "Delete the ₱300,000 actual damages; keep the moral damages. **Bar trap:** the failure to prove actual damages does not affect the right to moral damages in a libel case."
+      },
+      "keyPoints": [
+        "Actual damages need proof of pecuniary loss (Art. 2199)",
+        "No measurable loss: no actual damages",
+        "Libel falls under Art. 2219(7)",
+        "Moral damages may be awarded without actual damages"
+      ],
+      "caseIds": [
+        "case-0071"
+      ],
+      "source": {
+        "caseTitle": "Tulfo v. People, et al.",
+        "grNumber": "G.R. No. 161032",
+        "url": "https://lawphil.net/judjuris/juri2008/sep2008/gr_161032_2008.html",
+        "part": "Decision, discussion of the award of damages (actual and moral damages)",
+        "excerpt": "The award of damages by the lower court must be modified. Art. 2199 of the Civil Code provides, \"Except as provided by law or by stipulation, one is entitled to an adequate compensation only for such pecuniary loss suffered by him as he has duly proved. Such compensation is referred to as actual or compensatory damages.\" There was no showing of any pecuniary loss suffered by the complainant Atty. So. Without proof of actual loss that can be measured, the award of actual damages cannot stand. … It was the articles of Tulfo that caused injury to Atty. So, and for that Atty. So deserves the award of moral damages. Justification for the award of moral damages is found in Art. 2219(7) of the Civil Code, which states that moral damages may be recovered in cases of libel, slander, or any other form of defamation. As the cases involved are criminal cases of libel, they fall squarely within the ambit of Art. 2219(7). Moral damages can be awarded even in the absence of actual or compensatory damages. The fact that no actual or compensatory damage was proven before the trial court does not adversely affect the offended party’s right to recover moral damages."
+      }
+    },
+    {
+      "id": "q-1156",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Carla is the managing editor of a weekly newspaper with active charge and control of its contents. While she was on leave, a reporter's libelous article was published; Carla never read it and argues that she cannot be liable because she had no participation and did not know its contents. Dino, the paper's delivery driver, who had no say in its contents, is also charged. Are Carla and Dino liable for the libel? Explain.",
+      "suggestedAnswer": {
+        "answer": "Carla is liable; Dino is not, on this ground. An editor or manager of a newspaper who has active charge and control of its management, conduct and policy is generally held equally liable with the owner for a libelous article; since it is the editor's duty to know and control the contents, she cannot evade responsibility by leaving her duties to employees, and it is immaterial whether she knew the contents. Dino has no charge or control over the contents.",
+        "legalBasis": "In Tulfo v. People, \"[a]n editor or manager of a newspaper, who has active charge and control of its management, conduct, and policy, generally is held to be equally liable with the owner for the publication therein of a libelous article ... it is the duty of the editor or manager to know and control the contents of the paper ... so that it is immaterial whether or not the editor or manager knew the contents of the publication.\"",
+        "application": "Carla had active charge and control; Dino only delivered the paper.",
+        "conclusion": "Carla is liable; Dino is not, as editor-type liability. **Bar trap:** an editor's lack of knowledge of the article is not a defense."
+      },
+      "keyPoints": [
+        "Editor or manager with active charge and control is equally liable",
+        "Duty to know and control the contents",
+        "Cannot evade responsibility by leaving duties to employees",
+        "Knowledge of the contents is immaterial",
+        "No control over contents: no editor-type liability"
+      ],
+      "caseIds": [
+        "case-0071"
+      ],
+      "source": {
+        "caseTitle": "Tulfo v. People, et al.",
+        "grNumber": "G.R. No. 161032",
+        "url": "https://lawphil.net/judjuris/juri2008/sep2008/gr_161032_2008.html",
+        "part": "Decision, discussion of the liability of the editors and publisher",
+        "excerpt": "An editor or manager of a newspaper, who has active charge and control of its management, conduct, and policy, generally is held to be equally liable with the owner for the publication therein of a libelous article. On the theory that it is the duty of the editor or manager to know and control the contents of the paper, it is held that said person cannot evade responsibility by abandoning the duties to employees, so that it is immaterial whether or not the editor or manager knew the contents of the publication."
+      }
+    },
+    {
+      "id": "q-1157",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Two columnists were convicted of libel in separate cases. (a) In Eva's case, no aggravating circumstance was alleged or proved. (b) In Felix's case, an aggravating circumstance was alleged and proved. Each victim asked for exemplary damages in addition to moral damages, and each also showed that the defamation distressed his family. Applying the rules discussed in Tulfo v. People, in which case may exemplary damages be awarded, and how does the family's distress bear on the damages? Explain.",
+      "suggestedAnswer": {
+        "answer": "Exemplary damages may be considered only in Felix's case. Under Article 2230, in criminal offenses exemplary damages as part of the civil liability may be imposed when the crime was committed with one or more aggravating circumstances; without any, as in Eva's case, they cannot be awarded. In both cases the family's distress bears on moral damages: dishonoring the head of a family puts the other members in disrepute, distress or anxiety, which adds an imperative dimension to the award of moral damages to the defamed party.",
+        "legalBasis": "Article 2230, quoted in Tulfo v. People: \"In criminal offenses, exemplary damages as a part of the civil liability may be imposed when the crime was committed with one or more aggravating circumstances.\" \"No aggravating circumstances accompanied the commission of the libelous acts; thus, no exemplary damages can be awarded.\" On the family, \"any attempt to dishonor or besmirch the name and reputation of the head of the family ... invariably puts the other members in a state of disrepute, distress, or anxiety. This reality adds an imperative dimension to the award of moral damages to the defamed party.\"",
+        "application": "Eva's case lacks an aggravating circumstance; Felix's has one.",
+        "conclusion": "Exemplary damages may be considered only for Felix; the family's distress supports the moral damages in both. **Bar trap:** in crimes, the ground for exemplary damages is an aggravating circumstance, not merely the seriousness of the harm."
+      },
+      "keyPoints": [
+        "Crimes: exemplary damages need an aggravating circumstance (Art. 2230)",
+        "No aggravating circumstance: no exemplary damages",
+        "Family's distress adds to moral damages",
+        "The defamed party receives the moral damages"
+      ],
+      "caseIds": [
+        "case-0071"
+      ],
+      "source": {
+        "caseTitle": "Tulfo v. People, et al.",
+        "grNumber": "G.R. No. 161032",
+        "url": "https://lawphil.net/judjuris/juri2008/sep2008/gr_161032_2008.html",
+        "part": "Decision, discussion of the award of damages (exemplary damages) and the effect on the family",
+        "excerpt": "The Court can perhaps take judicial notice that the sense of kinship runs deeply in a typical Filipino family, such that the whole family usually suffers or rejoices at the misfortune or good fortune, as the case may be, of any of its member. Accordingly, any attempt to dishonor or besmirch the name and reputation of the head of the family, as here, invariably puts the other members in a state of disrepute, distress, or anxiety. This reality adds an imperative dimension to the award of moral damages to the defamed party. The award of exemplary damages, however, cannot be justified. Under Art. 2230 of the Civil Code, \"In criminal offenses, exemplary damages as a part of the civil liability may be imposed when the crime was committed with one or more aggravating circumstances. Such damages are separate and distinct from fines and shall be paid to the offended party.\" No aggravating circumstances accompanied the commission of the libelous acts; thus, no exemplary damages can be awarded."
+      }
     }
   ]
 }
