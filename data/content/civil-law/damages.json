@@ -736,6 +736,21 @@
       "ruling": "The petition was denied but the award modified. (1) Panacor and Iba-Finance are distinct juridical entities each damaged by the bank's fault; the compromise satisfied only Iba-Finance's claims. (2) The bank arbitrarily downgraded the credit line in breach of the agreement, which has the force of law, and its refusal to release the title after accepting full payment was marked by bad faith; it was also bound by its officer's apparent authority and its own failure to disaffirm. (3) But actual damages require competent proof of the actual amount of loss, credence being given only to claims supported by receipts; damages cannot be presumed. Panacor's claim rested on one officer's testimony and an unidentified private list, so the ₱4,520,000 was deleted. Still, the bank's wrongful acts plainly hurt Panacor's commercial credit and caused the loss of its business. Since these losses are not susceptible of pecuniary estimation, and under Article 2216 no proof of pecuniary loss is necessary for temperate damages, ₱200,000 temperate damages were awarded. Exemplary damages of ₱500,000 and attorney's fees were affirmed.",
       "keyDoctrine": "Actual damages require competent proof of the actual amount of loss, ordinarily receipts; courts cannot rely on bare assertions, speculation or guesswork, and damages cannot be presumed. When some pecuniary loss is clearly suffered but cannot be proved with certainty, such as injury to commercial credit or loss of business opportunity, temperate damages may be awarded (Art. 2224); under Article 2216, no proof of pecuniary loss is necessary for moral, nominal, temperate, liquidated or exemplary damages, whose assessment, except liquidated damages, is left to the court's discretion. Contracts have the force of law and must be performed in good faith.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2004/apr2004/gr_159352_2004.html"
+    },
+    {
+      "id": "case-0097",
+      "status": "draft",
+      "name": "Philippine Telegraph & Telephone Corporation, et al. v. Court of Appeals, et al.",
+      "grNumber": "G.R. No. 139268",
+      "year": 2002,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "facts": "In July 1990, Lolita Sipe Escara's sister-in-law sent her two telegraphic money orders totaling ₱3,000 through PT&T, for her tuition at U.P. Diliman, her fare home for a job promotion requirement, and her son's medical consultation. The address given was only \"U.P. Diliman Quezon City.\" PT&T's Cubao branch took 18 days to ask for a complete address, told her several times that no money had come, and paid her by checks she could encash only on September 14, almost two months after the transmittal. She sued PT&T and its branch cashier, claiming the delay made her miss a semester, her promotion requirements and her son's consultation. The trial court awarded ₱100,000 actual, ₱50,000 moral and ₱10,000 exemplary damages; the Court of Appeals deleted the actual damages for lack of proof but kept the rest.",
+      "issue": "Were moral and exemplary damages proper, and if not, what damages may be awarded for PT&T's delay?",
+      "ruling": "The petition was granted. Actual damages were properly deleted, since proof of pecuniary loss is essential in culpa contractual. Moral damages are the exception: they require (1) evidence of besmirched reputation or physical, mental or psychological suffering, (2) a culpable act or omission factually established, (3) proof that it is the proximate cause, and (4) a case under Articles 2219 or 2220; in breach of contract, bad faith, gross negligence amounting to bad faith, or wanton disregard of the obligation. A delay of less than two months, partly due to the vague address and the claimant's own error about the place of origin, was not bad faith. Exemplary damages require prior entitlement to moral, temperate or compensatory damages and, in contracts, wanton, fraudulent, reckless, oppressive or malevolent conduct, which was absent. PT&T was still liable for the breach, since it proved no valid excuse. Temperate damages were not possible, because the findings showed no pecuniary loss established or quantifiable. What remained was nominal damages, to vindicate her right to timely delivery: ₱20,000. The cashier was not solidarily liable.",
+      "keyDoctrine": "When a contractual breach is proved but no actual, moral or exemplary damages are justified, the court chooses between temperate and nominal damages. Temperate damages need a finding that some pecuniary loss was suffered though its amount cannot be proved with certainty; without such a finding, only nominal damages (Art. 2221) are proper, to vindicate the violated right, and they may be awarded in every obligation from any source in Article 1157. Moral damages require the four requisites, and in breach of contract bad faith or gross negligence amounting to bad faith. Exemplary damages need prior entitlement to moral, temperate or compensatory damages (Art. 2234).",
+      "sourceUrl": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/4/51482"
     }
   ],
   "questions": [
@@ -14925,6 +14940,275 @@
         "url": "https://lawphil.net/judjuris/juri2004/apr2004/gr_159352_2004.html",
         "part": "Decision, the disposition",
         "excerpt": "WHEREFORE, the petition is DENIED. The Decision dated June 18, 2003 of the Court of Appeals in CA-G.R. CV No. 60750, ordering Premiere Bank to pay Panacor Marketing Corporation P500,000.00 as exemplary damages, P100,000.00 as attorney's fees, and costs, is AFFIRMED, with the MODIFICATION that the award of P4,520,000.00 as actual damages is DELETED for lack of factual basis. In lieu thereof, Premiere Bank is ordered to pay Panacor P200,000.00 as temperate damages."
+      }
+    },
+    {
+      "id": "q-1056",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "A telegraph company delayed by almost two months the delivery of money orders sent to a student. Her claimed pecuniary losses (a missed semester, a delayed promotion) were found not proved, and the company's delay was not in bad faith. The company also proved no valid excuse for the breach. What damages, if any, may the student recover, temperate or nominal? Explain.",
+      "suggestedAnswer": {
+        "answer": "Nominal damages. With actual, moral and exemplary damages unjustified, the court is left with two alternatives: temperate or nominal damages. Temperate damages may be given only if the court finds that some pecuniary loss has been suffered though its amount cannot be proved with certainty. Since the findings show that no pecuniary loss was established, or if proved could not be quantified, temperate damages do not apply. Nominal damages are proper to vindicate or recognize her violated right to timely delivery.",
+        "legalBasis": "In Philippine Telegraph & Telephone Corp. v. Court of Appeals, \"[t]he Court thus is left with two alternative possibilities – an award of temperate or moderate damages or an award of nominal damages.\" \"The factual findings of the appellate court that respondent has failed to establish such pecuniary loss or, if proved, cannot from their nature be precisely quantified precludes the application of the rule on temperate or moderate damages. The result comes down to only a possible award of nominal damages.\" \"[F]or the violation of the right of private respondent to receive timely delivery of the money ... an award of nominal damages is appropriate.\"",
+        "application": "The breach is proved and unexcused, but no pecuniary loss was found; only the right to timely delivery was violated.",
+        "conclusion": "Nominal damages of ₱20,000. **Bar trap:** temperate damages need a finding that some pecuniary loss happened; without it, the answer is nominal damages."
+      },
+      "keyPoints": [
+        "Breach proved, no valid excuse",
+        "Actual, moral, exemplary damages not justified",
+        "Choice between temperate and nominal",
+        "Temperate needs a finding of some pecuniary loss",
+        "No such finding: nominal damages to vindicate the right"
+      ],
+      "caseIds": [
+        "case-0097"
+      ],
+      "source": {
+        "caseTitle": "Philippine Telegraph & Telephone Corporation, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 139268",
+        "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/4/51482",
+        "part": "Decision, on the choice between temperate and nominal damages",
+        "excerpt": "Still, of course, petitioner corporation is not totally free from liability. It may have had good reasons, but it has not been able to overcome thereby its burden to prove a valid excuse, for the breach of agreement such as by proving, among other possible legal grounds, fortuitous event to account for its failure. The breach would have justified a recovery of actual damages but, there being no adequate proof of pecuniary loss found by the appellate court, such damages cannot be awarded. Neither moral nor exemplary damages have been justified, as hereinbefore explained, as to warrant any recovery thereof. The Court thus is left with two alternative possibilities – an award of temperate or moderate damages or an award of nominal damages. Temperate or moderate damages may only be given if the \"court finds that some pecuniary loss has been suffered but that its amount cannot, from the nature of the case, be proved with certainty.\" The factual findings of the appellate court that respondent has failed to establish such pecuniary loss or, if proved, cannot from their nature be precisely quantified precludes the application of the rule on temperate or moderate damages. The result comes down to only a possible award of nominal damages. Nominal damages are adjudicated in order that a right of the plaintiff, which has been violated or invaded by the defendant, may be vindicated or recognized and not for the purpose of indemnifying the plaintiff for any loss suffered by him. The court may award nominal damages in every obligation arising from any source enumerated in article 1157 of the Civil Code or, generally, in every case where property right is invaded."
+      }
+    },
+    {
+      "id": "q-1057",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "What must a claimant prove to be awarded moral damages, as enumerated in PT&T v. Court of Appeals? When are they recoverable in culpa contractual? Explain.",
+      "suggestedAnswer": {
+        "answer": "Recovery of moral damages is the exception rather than the rule. The claimant must prove: (1) evidence of besmirched reputation or physical, mental or psychological suffering sustained by the claimant; (2) a culpable act or omission factually established; (3) proof that the wrongful act or omission of the defendant is the proximate cause of the damages; and (4) that the case is predicated on any of the instances in Articles 2219 and 2220. In breach of contract, moral damages may be recovered when the defendant acted in bad faith, or is guilty of gross negligence amounting to bad faith, or in wanton disregard of his contractual obligation.",
+        "legalBasis": "In PT&T v. Court of Appeals, \"an award of moral damages would require, firstly, evidence of besmirched reputation or physical, mental or psychological suffering sustained by the claimant; secondly, a culpable act or omission factually established; thirdly, proof that the wrongful act or omission of the defendant is the proximate cause of the damages sustained by the claimant; and fourthly, that the case is predicated on any of the instances expressed or envisioned by Article 2219 and Article 2220.\" \"In culpa contractual or breach of contract, particularly, moral damages may be recovered when the defendant has acted in bad faith or is found to be guilty of gross negligence (amounting to bad faith) or in wanton disregard of his contractual obligation.\"",
+        "application": "A delay of less than two months, contributed to by a vague address and the claimant's own mistake about the origin of the remittance, was not bad faith or gross negligence.",
+        "conclusion": "Moral damages were deleted. **Bar trap:** moral damages are not punitive; they compensate, and they are \"more an exception rather than the rule.\""
+      },
+      "keyPoints": [
+        "Moral damages are the exception, not the rule",
+        "Not punitive; compensate suffering",
+        "Four requisites: suffering, culpable act, proximate cause, Art. 2219 or 2220",
+        "Contract: bad faith, gross negligence amounting to bad faith, or wanton disregard"
+      ],
+      "caseIds": [
+        "case-0097"
+      ],
+      "source": {
+        "caseTitle": "Philippine Telegraph & Telephone Corporation, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 139268",
+        "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/4/51482",
+        "part": "Decision, on moral damages",
+        "excerpt": "In the case of moral damages, recovery is more an exception rather than the rule. Moral damages are not punitive in nature but are designed to compensate and alleviate the physical suffering, mental anguish, fright, serious anxiety, besmirched reputation, wounded feelings, moral shock, social humiliation, and similar harm unjustly caused to a person. … In fine, an award of moral damages would require, firstly, evidence of besmirched reputation or physical, mental or psychological suffering sustained by the claimant; secondly, a culpable act or omission factually established; thirdly, proof that the wrongful act or omission of the defendant is the proximate cause of the damages sustained by the claimant; and fourthly, that the case is predicated on any of the instances expressed or envisioned by Article 2219 and Article 2220 of the Civil Code. In culpa contractual or breach of contract, particularly, moral damages may be recovered when the defendant has acted in bad faith or is found to be guilty of gross negligence (amounting to bad faith) or in wanton disregard of his contractual obligation."
+      }
+    },
+    {
+      "id": "q-1058",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "(a) When may exemplary damages be awarded in contracts, according to PT&T v. Court of Appeals, and why were they denied? (b) What are nominal damages, and in what cases may they be awarded?",
+      "suggestedAnswer": {
+        "answer": "(a) Exemplary damages are not recoverable as a matter of right. Although they need not be proved, the plaintiff must first show entitlement to moral, temperate or compensatory damages; and in contracts and quasi-contracts, the defendant must have acted in a wanton, fraudulent, reckless, oppressive or malevolent manner. The company's delay, though remiss, was not of that character. (b) Nominal damages are adjudicated so that a right of the plaintiff, violated or invaded by the defendant, may be vindicated or recognized, not to indemnify any loss. They may be awarded in every obligation arising from any source enumerated in Article 1157, or generally in every case where a property right is invaded.",
+        "legalBasis": "\"Exemplary damages are not recoverable as a matter of right. Although such damages need not be proved, plaintiff must first show that he is entitled to moral, temperate, or compensatory damages before a court can favorably consider an award of exemplary damages. In contracts and quasi-contracts, specifically, exemplary damages may be justified if the defendant is shown to have acted in a wanton, fraudulent, reckless, oppressive, or malevolent manner.\" \"Nominal damages are adjudicated in order that a right of the plaintiff ... may be vindicated or recognized and not for the purpose of indemnifying the plaintiff for any loss.\"",
+        "application": "With no moral, temperate or compensatory damages and no wanton conduct, exemplary damages failed; but the right to timely delivery was violated, so nominal damages applied.",
+        "conclusion": "As stated. **Bar trap:** nominal damages do not open the door to exemplary damages under the rule stated; only moral, temperate or compensatory damages do."
+      },
+      "keyPoints": [
+        "Exemplary damages: not a matter of right",
+        "Need prior entitlement to moral, temperate or compensatory damages",
+        "Contracts: wanton, fraudulent, reckless, oppressive or malevolent",
+        "Nominal damages: vindicate a violated right, not indemnify",
+        "Any obligation under Art. 1157, or invasion of a property right"
+      ],
+      "caseIds": [
+        "case-0097"
+      ],
+      "source": {
+        "caseTitle": "Philippine Telegraph & Telephone Corporation, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 139268",
+        "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/4/51482",
+        "part": "Decision, on exemplary damages and nominal damages",
+        "excerpt": "Neither can the award of exemplary damages be sustained. Exemplary damages are not recoverable as a matter of right. Although such damages need not be proved, plaintiff must first show that he is entitled to moral, temperate, or compensatory damages before a court can favorably consider an award of exemplary damages. In contracts and quasi-contracts, specifically, exemplary damages may be justified if the defendant is shown to have acted in a wanton, fraudulent, reckless, oppressive, or malevolent manner. Petitioner corporation might have been remiss in the prompt delivery of the sums sent through it to respondent; however, the Court would be hardput to say that such delay under the facts obtaining can be described as being wanton, fraudulent, reckless, or oppressive in character."
+      }
+    },
+    {
+      "id": "q-1059",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "Ana and Ben each sent money through a remittance company, which delayed delivery for six weeks without any valid excuse and without bad faith. (a) Ana's recipient proves she had to borrow money at interest to pay a hospital bill while waiting, but cannot show exactly how much interest she paid. (b) Ben's recipient proves only that the money arrived late; she shows no expense or loss caused by the delay. What damages may each recipient recover? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) Temperate damages: the court can find that some pecuniary loss was suffered (the interest), though its amount cannot be proved with certainty. (b) Nominal damages: without a finding of pecuniary loss, temperate damages are precluded, and only nominal damages may be awarded to vindicate the violated right to timely delivery.",
+        "legalBasis": "In PT&T v. Court of Appeals, \"[t]emperate or moderate damages may only be given if the 'court finds that some pecuniary loss has been suffered but that its amount cannot, from the nature of the case, be proved with certainty.'\" Where the claimant \"failed to establish such pecuniary loss,\" the rule on temperate damages does not apply, and \"[t]he result comes down to only a possible award of nominal damages,\" adjudicated \"in order that a right of the plaintiff ... may be vindicated or recognized.\"",
+        "application": "(a) A real but unmeasured loss exists. (b) Only the right was violated.",
+        "conclusion": "(a) Temperate; (b) nominal. **Bar trap:** the same breach yields different awards depending on whether any pecuniary loss is found."
+      },
+      "keyPoints": [
+        "Some pecuniary loss found, amount uncertain: temperate",
+        "No pecuniary loss found: nominal",
+        "Nominal vindicates the violated right",
+        "The finding of loss decides between them"
+      ],
+      "caseIds": [
+        "case-0097"
+      ],
+      "source": {
+        "caseTitle": "Philippine Telegraph & Telephone Corporation, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 139268",
+        "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/4/51482",
+        "part": "Decision, on the choice between temperate and nominal damages",
+        "excerpt": "Temperate or moderate damages may only be given if the \"court finds that some pecuniary loss has been suffered but that its amount cannot, from the nature of the case, be proved with certainty.\" The factual findings of the appellate court that respondent has failed to establish such pecuniary loss or, if proved, cannot from their nature be precisely quantified precludes the application of the rule on temperate or moderate damages. The result comes down to only a possible award of nominal damages."
+      }
+    },
+    {
+      "id": "q-1060",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "Carla's parcel delivery was delayed three weeks. (a) The delay happened because the sender wrote an incomplete address and Carla, when she inquired, gave the wrong city of origin; the courier eventually found and delivered the parcel. (b) In another case, Dino's courier knew his exact address, had the parcel in its warehouse, and repeatedly told him falsely that it never arrived so that its staff could use the items inside. In which case may moral damages be awarded? Explain.",
+      "suggestedAnswer": {
+        "answer": "Only in (b). In breach of contract, moral damages may be recovered when the defendant acted in bad faith or with gross negligence amounting to bad faith, or in wanton disregard of the obligation. A delay explained by a vague address and the claimant's own error is not bad faith; deliberate false statements to keep the goods are.",
+        "legalBasis": "In PT&T v. Court of Appeals, moral damages in culpa contractual \"may be recovered when the defendant has acted in bad faith or is found to be guilty of gross negligence (amounting to bad faith) or in wanton disregard of his contractual obligation.\" It was \"error to make an award of moral damages ... merely because petitioner corporation was unable to effect immediate delivery,\" since \"the address given by the sender was merely and vaguely stated\" and the claimant \"erroneously mentioned\" the place of origin; the delay \"could hardly be said as being constitutive of bad faith or gross negligence amounting to bad faith.\"",
+        "application": "(a) The delay had innocent causes, partly the claimant's own. (b) The courier lied deliberately for its staff's gain.",
+        "conclusion": "Moral damages in (b) only (if the other requisites, such as proof of suffering, are met). **Bar trap:** delay alone is not bad faith."
+      },
+      "keyPoints": [
+        "Contract: bad faith or gross negligence amounting to bad faith",
+        "Mere failure to deliver immediately is not enough",
+        "Vague address and claimant's error explain delay",
+        "Deliberate deception shows bad faith"
+      ],
+      "caseIds": [
+        "case-0097"
+      ],
+      "source": {
+        "caseTitle": "Philippine Telegraph & Telephone Corporation, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 139268",
+        "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/4/51482",
+        "part": "Decision, on moral damages and the absence of bad faith",
+        "excerpt": "In the case at bar, the appellate court itself did not see any clear indication of bad faith or gross negligence amounting to bad faith on the part of petitioners. It would be error to make an award of moral damages to private respondent merely because petitioner corporation was unable to effect immediate delivery of the money sent through it in two money orders, one for P2,000.00 and the other for P1,000.00. Indeed, it would appear that the address given by the sender was merely and vaguely stated to be \"U.P. Diliman Quezon City.\" So, also, when private respondent went to the office of petitioner PT&T to inquire about the \"money order\" she erroneously mentioned it to have been sent from Surralah, South Cotabato. … Given all the circumstances found by the appellate court, the delay of less than two months in the remittance to private respondent of the amounts due her could hardly be said as being constitutive of bad faith or gross negligence amounting to bad faith."
+      }
+    },
+    {
+      "id": "q-1061",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "Eva's courier failed to deliver her documents on time. It argues that since Eva proved no pecuniary loss and it acted in good faith, it should be absolved completely. Eva argues that she should get ₱100,000 actual damages anyway because the breach is clear. Who is correct? Explain.",
+      "suggestedAnswer": {
+        "answer": "Neither fully. Actual damages require proof of pecuniary loss in an action based on culpa contractual, so Eva cannot recover ₱100,000 without proof. But the courier is not totally free from liability: having failed to prove a valid excuse such as a fortuitous event, it breached the contract, and the violated right may be vindicated by nominal damages.",
+        "legalBasis": "In PT&T v. Court of Appeals, \"[t]he Court of Appeals was correct in deleting the award made by the trial court of actual damages where proof of pecuniary loss, in an action based on culpa contractual, is essential.\" Yet \"petitioner corporation is not totally free from liability. It may have had good reasons, but it has not been able to overcome thereby its burden to prove a valid excuse, for the breach of agreement such as by proving, among other possible legal grounds, fortuitous event.\" The Court awarded nominal damages for \"the violation of the right ... to receive timely delivery.\"",
+        "application": "The courier breached without excuse, but Eva proved no loss.",
+        "conclusion": "No actual damages, but nominal damages. **Bar trap:** good faith defeats moral and exemplary damages, not liability for the breach itself."
+      },
+      "keyPoints": [
+        "Actual damages in culpa contractual need proof of pecuniary loss",
+        "Obligor must prove a valid excuse for the breach",
+        "Fortuitous event is an example of an excuse",
+        "No proof of loss: nominal damages for the violated right"
+      ],
+      "caseIds": [
+        "case-0097"
+      ],
+      "source": {
+        "caseTitle": "Philippine Telegraph & Telephone Corporation, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 139268",
+        "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/4/51482",
+        "part": "Decision, on actual damages and the obligor's liability for breach",
+        "excerpt": "The Court of Appeals was correct in deleting the award made by the trial court of actual damages where proof of pecuniary loss, in an action based on culpa contractual, is essential. … Still, of course, petitioner corporation is not totally free from liability. It may have had good reasons, but it has not been able to overcome thereby its burden to prove a valid excuse, for the breach of agreement such as by proving, among other possible legal grounds, fortuitous event to account for its failure."
+      }
+    },
+    {
+      "id": "q-1062",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "In PT&T v. Court of Appeals, why were temperate damages NOT awarded?",
+      "choices": {
+        "A": "Because the findings showed the respondent failed to establish pecuniary loss, or if proved, it could not be precisely quantified, which precluded the rule on temperate damages.",
+        "B": "Because temperate damages may never be awarded in breach of contract.",
+        "C": "Because the company acted in bad faith.",
+        "D": "Because temperate damages require receipts."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** \"The factual findings of the appellate court that respondent has failed to establish such pecuniary loss or, if proved, cannot from their nature be precisely quantified precludes the application of the rule on temperate or moderate damages.\" **B is wrong:** temperate damages are awarded in contract cases when a loss is found. **C is wrong:** there was no bad faith. **D is wrong:** temperate damages exist precisely where exact proof is lacking. **Bar trap:** the result \"comes down to only a possible award of nominal damages.\"",
+      "caseIds": [
+        "case-0097"
+      ],
+      "source": {
+        "caseTitle": "Philippine Telegraph & Telephone Corporation, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 139268",
+        "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/4/51482",
+        "part": "Decision, on temperate damages",
+        "excerpt": "The factual findings of the appellate court that respondent has failed to establish such pecuniary loss or, if proved, cannot from their nature be precisely quantified precludes the application of the rule on temperate or moderate damages. The result comes down to only a possible award of nominal damages."
+      }
+    },
+    {
+      "id": "q-1063",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "Under PT&T v. Court of Appeals, the court may award nominal damages",
+      "choices": {
+        "A": "only in cases of crimes.",
+        "B": "only when moral damages are also awarded.",
+        "C": "only when actual damages are proved.",
+        "D": "in every obligation arising from any source enumerated in Article 1157 or, generally, in every case where a property right is invaded."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** \"The court may award nominal damages in every obligation arising from any source enumerated in article 1157 of the Civil Code or, generally, in every case where property right is invaded.\" **A, B and C are wrong:** they add limits the rule does not have. **Bar trap:** nominal damages vindicate a right; they do not indemnify a loss.",
+      "caseIds": [
+        "case-0097"
+      ],
+      "source": {
+        "caseTitle": "Philippine Telegraph & Telephone Corporation, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 139268",
+        "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/4/51482",
+        "part": "Decision, on nominal damages",
+        "excerpt": "The court may award nominal damages in every obligation arising from any source enumerated in article 1157 of the Civil Code or, generally, in every case where property right is invaded."
+      }
+    },
+    {
+      "id": "q-1064",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "What did the Court order in PT&T v. Court of Appeals?",
+      "choices": {
+        "A": "₱50,000 moral and ₱10,000 exemplary damages against PT&T and its cashier, solidarily.",
+        "B": "₱100,000 actual damages.",
+        "C": "PT&T to pay ₱20,000 as nominal damages; the cashier was not held solidarily liable.",
+        "D": "₱20,000 temperate damages."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** PT&T was \"ordered to pay respondent Lolita Sipe Escara the sum of P20,000.00 by way of nominal damages,\" and there was \"neither enough factual nor adequate legal basis to hold petitioner Louie Cabalit ... solidarily liable.\" **A is wrong:** moral and exemplary damages were deleted. **B is wrong:** actual damages were unproved. **D is wrong:** the award was nominal, not temperate. **Bar trap:** the amount of nominal damages may consider \"all that private respondent has had to go through.\"",
+      "caseIds": [
+        "case-0097"
+      ],
+      "source": {
+        "caseTitle": "Philippine Telegraph & Telephone Corporation, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 139268",
+        "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/4/51482",
+        "part": "Decision, the disposition",
+        "excerpt": "WHEREFORE, the instant petition is GRANTED. The appealed decision is reversed and set aside and, in its stead, petitioner Philippine Telegraph & Telephone Corporation is ordered to pay respondent Lolita Sipe Escara the sum of P20,000.00 by way of nominal damages. Costs against petitioner corporation."
       }
     }
   ]
