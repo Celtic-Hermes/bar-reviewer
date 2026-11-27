@@ -856,6 +856,21 @@
       "ruling": "The award was proper in principle but reduced to ₱25,000. Moral damages may be recovered if they are the proximate result of the defendant's wrongful act or omission. Exemplary damages may be awarded on these conditions: (1) they are imposed by way of example or correction only in addition to compensatory damages, among others, cannot be recovered as a matter of right, and depend on the amount of compensatory damages; (2) the claimant must first establish his right to moral, temperate, liquidated or compensatory damages; and (3) the wrongful act must be accompanied by bad faith, and the guilty party must have acted in a wanton, fraudulent, reckless, oppressive or malevolent manner. The documents showed De Leon's deliberate intent to defraud Tantoco of the amount withheld; the unfounded and maliciously prosecuted suit, which maligned a respected surgeon, supplied the factual basis of moral damages and its causal link, and with moral damages established, exemplary damages were proper. But the amount was excessive compared to the actual losses: moral damages compensate, are not a penalty, and are not meant to enrich. Using 25% of the principal as a guide and considering the peso's depreciation, ₱25,000 in aggregate was reasonable.",
       "keyDoctrine": "Exemplary damages require: (1) they are awarded only in addition to compensatory damages, among others, and not as a matter of right; (2) the claimant must first establish a right to moral, temperate, liquidated or compensatory damages; and (3) the wrongful act must be accompanied by bad faith, the guilty party having acted in a wanton, fraudulent, reckless, oppressive or malevolent manner. An unfounded, maliciously prosecuted suit can establish the factual basis and causal link for moral damages, which then support exemplary damages. Moral damages compensate actual injury, are not a penalty and must not enrich; an excessive award relative to the actual losses may be reduced.",
       "sourceUrl": "https://lawphil.net/judjuris/juri1988/aug1988/gr_l-31931_1988.html"
+    },
+    {
+      "id": "case-0105",
+      "status": "draft",
+      "name": "Octot v. Ybañez, et al.",
+      "grNumber": "G.R. No. L-48643",
+      "year": 1982,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Exemplary or Corrective Damages",
+      "facts": "Diosdado Octot, a security guard of a regional health office in Cebu since 1970, was summarily dismissed in 1975 as \"notoriously undesirable\" under P.D. No. 6 and its implementing letters of instruction, which directed the weeding out of undesirable government employees; he had been convicted of libel, then on appeal. He was later acquitted. When a request for his reinstatement was made, the regional office recommended it and the Office of the President approved it, but pointed to LOI No. 647, which did not authorize back wages. He was repeatedly asked to come in and complete the papers for his new appointment, but did not, and instead filed a petition for mandamus for reinstatement, back wages, and compensatory, moral and exemplary damages and attorney's fees. The Court ordered his reinstatement, and he returned to work in 1979.",
+      "issue": "Is the petitioner entitled to back wages and to moral and exemplary damages?",
+      "ruling": "The claims were denied and the petition for reinstatement declared moot. Without proof that the officials acted in bad faith and with grave abuse of discretion, he was not entitled to back wages and consequently could not claim damages; the officials acted not out of ill will but to comply with P.D. No. 6, and readily supported his reinstatement. Moral damages were denied because any delay in his reinstatement was his own fault, his separation was not shown to be in bad faith, and the case was not among those in Articles 2219 and 2220. Exemplary damages are generally not recoverable in mandamus unless the defendant patently acted with vindictiveness or wantonness and not in the exercise of honest judgment; the claim presupposes the circumstances in Articles 2231 and 2232. Such damages, imposed in addition to moral, temperate, liquidated or compensatory damages, are required by public policy, for wanton acts must be suppressed. The Court laid down three conditions: they are imposed only in addition to compensatory damages, among others, and not as a matter of right; the claimant must first establish his right to moral, temperate, liquidated or compensatory damages; and the wrongful act must be accompanied by bad faith, with the guilty party acting in a wanton, fraudulent, reckless, oppressive or malevolent manner.",
+      "keyDoctrine": "Exemplary or corrective damages are imposed by way of example or correction for the public good, in addition to moral, temperate, liquidated or compensatory damages (Art. 2229); they are required by public policy to suppress wanton acts. Conditions: (1) only in addition to compensatory damages, among others, and not as a matter of right; (2) the claimant must first establish his right to moral, temperate, liquidated or compensatory damages; (3) the wrongful act must be accompanied by bad faith, with wanton, fraudulent, reckless, oppressive or malevolent conduct. In mandamus they are generally not recoverable unless the defendant patently acted with vindictiveness or wantonness rather than honest judgment. A public officer acting in good faith to comply with the law is not liable for damages.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri1982/jan1982/gr_l-48643_1982.html"
     }
   ],
   "questions": [
@@ -17198,6 +17213,274 @@
         "url": "https://lawphil.net/judjuris/juri1988/aug1988/gr_l-31931_1988.html",
         "part": "Decision, the disposition",
         "excerpt": "PREMISES CONSIDERED, the assailed decision of the Court of Appeals is AFFIRMED but the aggregate award of moral and exemplary damages is reduced to P25,000.00."
+      }
+    },
+    {
+      "id": "q-1128",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Exemplary or Corrective Damages",
+      "prompt": "A dismissed government employee who was later reinstated filed a petition for mandamus and asked for exemplary damages, claiming that public officials should be made an example. The officials had dismissed him in good faith to comply with a presidential decree and promptly supported his reinstatement. (a) When are exemplary damages recoverable in mandamus? (b) What is their nature and purpose? (c) Are they proper here? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) Exemplary damages are generally not recoverable in a special civil action for mandamus unless the defendant patently acted with vindictiveness or wantonness and not in the exercise of honest judgment; the claim presupposes the circumstances in Articles 2231 and 2232. (b) They are imposed by way of example or correction for the public good, in addition to moral, temperate, liquidated or compensatory damages; public policy requires them because wanton acts must be suppressed, as an antidote so that wickedness may not spread through the body politic. (c) No. The officials acted in honest judgment to comply with the law, not with vindictiveness, and he established no right to other damages.",
+        "legalBasis": "In Octot v. Ybañez, \"[e]xemplary damages are not generally recoverable in a special civil action for mandamus unless the defendant patently acted with vindictiveness or wantonness and not in the exercise of honest judgment. The claim for exemplary damages must presuppose the existence of the circumstances enumerated in Articles 2231 and 2232 of the Civil Code.\" \"Exemplary or corrective damages are imposed by way of example or correction for the public good ... Such damages are required by public policy, for wanton acts must be suppressed. They are an antidote so that the poison of wickedness may not run through the body politic.\"",
+        "application": "The officials were \"not motivated by ill will or personal malice\" and readily supported his return.",
+        "conclusion": "No exemplary damages. **Bar trap:** a public officer's honest exercise of judgment, even if it turns out wrong, is not the vindictiveness or wantonness required."
+      },
+      "keyPoints": [
+        "Mandamus: generally no exemplary damages",
+        "Unless patently vindictive or wanton, not honest judgment",
+        "Presupposes circumstances in Arts. 2231 and 2232",
+        "By way of example or correction for the public good",
+        "Public policy: wanton acts must be suppressed"
+      ],
+      "caseIds": [
+        "case-0105"
+      ],
+      "source": {
+        "caseTitle": "Octot v. Ybañez, et al.",
+        "grNumber": "G.R. No. L-48643",
+        "url": "https://lawphil.net/judjuris/juri1982/jan1982/gr_l-48643_1982.html",
+        "part": "Decision, on exemplary damages",
+        "excerpt": "Exemplary damages are not generally recoverable in a special civil action for mandamus unless the defendant patently acted with vindictiveness or wantonness and not in the exercise of honest judgment. The claim for exemplary damages must presuppose the existence of the circumstances enumerated in Articles 2231 and 2232 of the Civil Code. Exemplary or corrective damages are imposed by way of example or correction for the public good, in addition to the moral, temperate, liquidated or compensatory damages. Such damages are required by public policy, for wanton acts must be suppressed. They are an antidote so that the poison of wickedness may not run through the body politic."
+      }
+    },
+    {
+      "id": "q-1129",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Exemplary or Corrective Damages",
+      "prompt": "State the three conditions laid down in Octot v. Ybañez for the award of exemplary damages.",
+      "suggestedAnswer": {
+        "answer": "First, exemplary damages may be imposed by way of example or correction only in addition, among others, to compensatory damages, and cannot be recovered as a matter of right, their determination depending on the amount of compensatory damages that may be awarded. Second, the claimant must first establish his right to moral, temperate, liquidated or compensatory damages. Third, the wrongful act must be accompanied by bad faith, and the award is allowed only if the guilty party acted in a wanton, fraudulent, reckless, oppressive or malevolent manner.",
+        "legalBasis": "In Octot v. Ybañez, \"our jurisprudence sets certain conditions when exemplary damages may be awarded, as follows: First: They may be imposed by way of example or correction only in addition, among others, to compensatory damages, and cannot be recovered as a matter of right, their determination depending upon the amount of compensatory damages that may be awarded to the claimant. Second: The claimant must first establish his right to moral, temperate, liquidated or compensatory damages. Third: The wrongful act must be accompanied by bad faith, and the award would be allowed only if the guilty party acted in a wanton, fraudulent, reckless, oppressive or malevolent manner.\"",
+        "application": "The petitioner established neither a right to other damages nor bad faith by the officials.",
+        "conclusion": "As stated. **Bar trap:** these are the same conditions later quoted in De Leon v. Court of Appeals; Octot is their source."
+      },
+      "keyPoints": [
+        "First: only in addition to compensatory damages, not as a matter of right",
+        "Second: claimant must first establish moral, temperate, liquidated or compensatory damages",
+        "Third: bad faith; wanton, fraudulent, reckless, oppressive or malevolent manner"
+      ],
+      "caseIds": [
+        "case-0105"
+      ],
+      "source": {
+        "caseTitle": "Octot v. Ybañez, et al.",
+        "grNumber": "G.R. No. L-48643",
+        "url": "https://lawphil.net/judjuris/juri1982/jan1982/gr_l-48643_1982.html",
+        "part": "Decision, on the conditions for exemplary damages",
+        "excerpt": "Thus, our jurisprudence sets certain conditions when exemplary damages may be awarded, as follows: First: They may be imposed by way of example or correction only in addition, among others, to compensatory damages, and cannot be recovered as a matter of right, their determination depending upon the amount of compensatory damages that may be awarded to the claimant. Second: The claimant must first establish his right to moral, temperate, liquidated or compensatory damages. Third: The wrongful act must be accompanied by bad faith, and the award would be allowed only if the guilty party acted in a wanton, fraudulent, reckless, oppressive or malevolent manner."
+      }
+    },
+    {
+      "id": "q-1130",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Exemplary or Corrective Damages",
+      "prompt": "In the same case, the employee also claimed back wages and moral damages. The officials had acted to comply with a presidential decree on weeding out undesirable employees, and after his acquittal they promptly told him to report and complete his papers, but he did not come. Are back wages and moral damages due? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. Without proof that the officials acted in bad faith and with grave abuse of discretion, he was not entitled to back wages and consequently could not claim damages. Moral damages were also denied because any delay in his reinstatement was due to his own fault and negligence; his separation was not shown to be in bad faith, so an award would not be just and proper; and the case is not among those in Articles 2219 and 2220.",
+        "legalBasis": "In Octot v. Ybañez, \"[i]n the absence of Proof that respondent Regional Director acted in bad faith and with grave abuse of discretion, petitioner is not entitled to backwages and consequently cannot claim for damages.\" \"[I]f there was any delay in his reinstatement, it was attributed to his own fault and negligence ... It is clear that since the separation of petitioner from the government service had not been shown to be in bad faith, an award for damages under the circumstances would not be just and proper. Neither is it among the cases mentioned in Articles 2219 and 2220 of the Civil Code wherein moral damages may be recovered.\"",
+        "application": "The officials acted to comply with the law, and the employee himself caused the delay.",
+        "conclusion": "No back wages and no moral damages. **Bar trap:** a claimant whose own delay caused the harm cannot recover moral damages for it."
+      },
+      "keyPoints": [
+        "No proof of bad faith and grave abuse: no back wages",
+        "No back wages: no damages",
+        "Delay due to claimant's own fault",
+        "Separation not in bad faith",
+        "Not among Arts. 2219 and 2220 cases"
+      ],
+      "caseIds": [
+        "case-0105"
+      ],
+      "source": {
+        "caseTitle": "Octot v. Ybañez, et al.",
+        "grNumber": "G.R. No. L-48643",
+        "url": "https://lawphil.net/judjuris/juri1982/jan1982/gr_l-48643_1982.html",
+        "part": "Decision, on back wages and moral damages",
+        "excerpt": "In the absence of Proof that respondent Regional Director acted in bad faith and with grave abuse of discretion, petitioner is not entitled to backwages and consequently cannot claim for damages. In the case at bar, the record manifests that respondents officials were not motivated by ill will or personal malice in dismissing petitioner but only by their desire to comply with the mandates of Presidential Decree No. 6. … The Court likewise denies petitioner's claim for moral damages, because as pointed out by the Solicitor General, if there was any delay in his reinstatement, it was attributed to his own fault and negligence. … It is clear that since the separation of petitioner from the government service had not been shown to be in bad faith, an award for damages under the circumstances would not be just and proper. Neither is it among the cases mentioned in Articles 2219 and 2220 of the Civil Code wherein moral damages may be recovered."
+      }
+    },
+    {
+      "id": "q-1131",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Exemplary or Corrective Damages",
+      "prompt": "Two municipal employees sued their mayors by mandamus for reinstatement and exemplary damages. (a) Ana's mayor dismissed her following a national directive he honestly believed applied to her; when told otherwise, he reinstated her. (b) Ben's mayor fired him two days after Ben testified against the mayor's brother, refused three court orders to reinstate him, and publicly mocked him. In which case may exemplary damages be awarded? Explain.",
+      "suggestedAnswer": {
+        "answer": "In Ben's case, if he also establishes his right to moral or other damages. Exemplary damages are generally not recoverable in mandamus unless the defendant patently acted with vindictiveness or wantonness and not in the exercise of honest judgment. Ana's mayor acted on an honest reading of the law and promptly corrected himself. Ben's mayor acted out of vindictiveness and wantonly defied the courts.",
+        "legalBasis": "In Octot v. Ybañez, \"[e]xemplary damages are not generally recoverable in a special civil action for mandamus unless the defendant patently acted with vindictiveness or wantonness and not in the exercise of honest judgment.\" Also, \"[t]he claimant must first establish his right to moral, temperate, liquidated or compensatory damages,\" and \"[t]he wrongful act must be accompanied by bad faith.\"",
+        "application": "(a) Honest judgment. (b) Patent vindictiveness and wantonness.",
+        "conclusion": "Possible for Ben only. **Bar trap:** the line is honest judgment versus patent vindictiveness, not whether the official's act was ultimately wrong."
+      },
+      "keyPoints": [
+        "Mandamus: exemplary damages only for patent vindictiveness or wantonness",
+        "Honest judgment, even if mistaken: none",
+        "Claimant must first establish other damages",
+        "Bad faith required"
+      ],
+      "caseIds": [
+        "case-0105"
+      ],
+      "source": {
+        "caseTitle": "Octot v. Ybañez, et al.",
+        "grNumber": "G.R. No. L-48643",
+        "url": "https://lawphil.net/judjuris/juri1982/jan1982/gr_l-48643_1982.html",
+        "part": "Decision, on exemplary damages in mandamus",
+        "excerpt": "Exemplary damages are not generally recoverable in a special civil action for mandamus unless the defendant patently acted with vindictiveness or wantonness and not in the exercise of honest judgment."
+      }
+    },
+    {
+      "id": "q-1132",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Exemplary or Corrective Damages",
+      "prompt": "Carla, a government clerk, was removed under a law requiring the separation of employees facing criminal charges; she was later acquitted. Her superiors, who had no personal grudge against her, immediately recommended her reinstatement once she was acquitted. Dino, another clerk, was removed by his superior, who knew the charges against him were fabricated and wanted his post for a relative. Who may claim back wages and damages? Reason briefly.",
+      "suggestedAnswer": {
+        "answer": "Dino may; Carla may not. Without proof that the officials acted in bad faith and with grave abuse of discretion, an employee is not entitled to back wages and consequently cannot claim damages. Carla's superiors acted only to comply with the law and readily supported her return. Dino's superior acted in bad faith, knowing the charges were false and seeking the post for a relative.",
+        "legalBasis": "In Octot v. Ybañez, \"[i]n the absence of Proof that respondent Regional Director acted in bad faith and with grave abuse of discretion, petitioner is not entitled to backwages and consequently cannot claim for damages. In the case at bar, the record manifests that respondents officials were not motivated by ill will or personal malice in dismissing petitioner but only by their desire to comply with the mandates of Presidential Decree No. 6.\"",
+        "application": "Carla: good-faith compliance with the law. Dino: bad faith and grave abuse.",
+        "conclusion": "Back wages and damages for Dino only. **Bar trap:** reinstatement after acquittal does not by itself carry back wages; bad faith of the officials must be shown."
+      },
+      "keyPoints": [
+        "Back wages require proof of bad faith and grave abuse of discretion",
+        "No back wages: no damages",
+        "Good-faith compliance with the law is not bad faith",
+        "Knowing use of false charges for personal ends is bad faith"
+      ],
+      "caseIds": [
+        "case-0105"
+      ],
+      "source": {
+        "caseTitle": "Octot v. Ybañez, et al.",
+        "grNumber": "G.R. No. L-48643",
+        "url": "https://lawphil.net/judjuris/juri1982/jan1982/gr_l-48643_1982.html",
+        "part": "Decision, on back wages and good faith of the officials",
+        "excerpt": "In the absence of Proof that respondent Regional Director acted in bad faith and with grave abuse of discretion, petitioner is not entitled to backwages and consequently cannot claim for damages. In the case at bar, the record manifests that respondents officials were not motivated by ill will or personal malice in dismissing petitioner but only by their desire to comply with the mandates of Presidential Decree No. 6."
+      }
+    },
+    {
+      "id": "q-1133",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Exemplary or Corrective Damages",
+      "prompt": "Eva was cleared for reinstatement to her government post and was told three times to report and complete her papers, but did not come for months. She then sued for moral damages for the anxiety the delay caused her. In a different case, Felix's superior refused, out of spite, to process his reinstatement for a year despite his repeated visits. Who may recover moral damages for the delay? Reason briefly.",
+      "suggestedAnswer": {
+        "answer": "Not Eva. If there is any delay in reinstatement attributable to the claimant's own fault and negligence, and no bad faith is shown, an award of damages would not be just and proper. Felix may have a claim, because the delay was caused by his superior's spite, that is, bad faith, and he would still have to bring the claim within the cases where moral damages are recoverable and prove his suffering.",
+        "legalBasis": "In Octot v. Ybañez, \"if there was any delay in his reinstatement, it was attributed to his own fault and negligence. After his reinstatement was authorized ... respondents had promptly communicated with him ... but he delayed doing so ... It is clear that since the separation of petitioner from the government service had not been shown to be in bad faith, an award for damages under the circumstances would not be just and proper. Neither is it among the cases mentioned in Articles 2219 and 2220.\"",
+        "application": "Eva caused her own delay; Felix's was caused by the superior's ill will.",
+        "conclusion": "No moral damages for Eva; possible for Felix. **Bar trap:** one cannot recover for a harm one caused oneself."
+      },
+      "keyPoints": [
+        "Delay due to claimant's own fault: no damages",
+        "Officials who promptly acted: no bad faith",
+        "Bad faith of the official may support a claim",
+        "Case must fall under Arts. 2219 or 2220"
+      ],
+      "caseIds": [
+        "case-0105"
+      ],
+      "source": {
+        "caseTitle": "Octot v. Ybañez, et al.",
+        "grNumber": "G.R. No. L-48643",
+        "url": "https://lawphil.net/judjuris/juri1982/jan1982/gr_l-48643_1982.html",
+        "part": "Decision, on moral damages",
+        "excerpt": "The Court likewise denies petitioner's claim for moral damages, because as pointed out by the Solicitor General, if there was any delay in his reinstatement, it was attributed to his own fault and negligence. After his reinstatement was authorized by the Office of the President,respondents had promptly communicated with him. directing him to report to the Regional Office and accomplish the necessary papers for his reinstatement, but he delayed doing so, as above stated. It is clear that since the separation of petitioner from the government service had not been shown to be in bad faith, an award for damages under the circumstances would not be just and proper."
+      }
+    },
+    {
+      "id": "q-1134",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Exemplary or Corrective Damages",
+      "prompt": "According to Octot v. Ybañez, exemplary damages are required by public policy because",
+      "choices": {
+        "A": "they compensate the plaintiff for actual losses.",
+        "B": "wanton acts must be suppressed; they are an antidote so that the poison of wickedness may not run through the body politic.",
+        "C": "they replace moral damages when these cannot be proved.",
+        "D": "they reward the winning party for litigating."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** \"Such damages are required by public policy, for wanton acts must be suppressed. They are an antidote so that the poison of wickedness may not run through the body politic.\" **A is wrong:** that is compensatory damages. **C is wrong:** they are imposed \"in addition to\" other damages. **D is wrong:** no premium is placed on litigating. **Bar trap:** they are imposed by way of example or correction for the public good.",
+      "caseIds": [
+        "case-0105"
+      ],
+      "source": {
+        "caseTitle": "Octot v. Ybañez, et al.",
+        "grNumber": "G.R. No. L-48643",
+        "url": "https://lawphil.net/judjuris/juri1982/jan1982/gr_l-48643_1982.html",
+        "part": "Decision, on exemplary damages",
+        "excerpt": "Such damages are required by public policy, for wanton acts must be suppressed. They are an antidote so that the poison of wickedness may not run through the body politic."
+      }
+    },
+    {
+      "id": "q-1135",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Exemplary or Corrective Damages",
+      "prompt": "Under Octot v. Ybañez, exemplary damages are generally NOT recoverable in a special civil action for mandamus unless",
+      "choices": {
+        "A": "the petitioner is reinstated.",
+        "B": "the respondent is a public officer.",
+        "C": "the petition is granted.",
+        "D": "the defendant patently acted with vindictiveness or wantonness and not in the exercise of honest judgment."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** \"Exemplary damages are not generally recoverable in a special civil action for mandamus unless the defendant patently acted with vindictiveness or wantonness and not in the exercise of honest judgment.\" **A, B and C are wrong:** none of them suffices. **Bar trap:** the claim also presupposes the circumstances in Articles 2231 and 2232.",
+      "caseIds": [
+        "case-0105"
+      ],
+      "source": {
+        "caseTitle": "Octot v. Ybañez, et al.",
+        "grNumber": "G.R. No. L-48643",
+        "url": "https://lawphil.net/judjuris/juri1982/jan1982/gr_l-48643_1982.html",
+        "part": "Decision, on exemplary damages in mandamus",
+        "excerpt": "Exemplary damages are not generally recoverable in a special civil action for mandamus unless the defendant patently acted with vindictiveness or wantonness and not in the exercise of honest judgment."
+      }
+    },
+    {
+      "id": "q-1136",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Exemplary or Corrective Damages",
+      "prompt": "What was the result in Octot v. Ybañez?",
+      "choices": {
+        "A": "The petitioner was awarded back wages and moral damages.",
+        "B": "The petition for reinstatement was declared moot since he had been reinstated, and his claims for back wages and damages were denied.",
+        "C": "The officials were held liable for exemplary damages.",
+        "D": "The petitioner was ordered dismissed again."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** \"[C]onsidering that petitioner has already been reinstated to his former position since 1979 ... the petition for mandamus for his reinstatement is now moot. Petitioner's claim for backwages and damages is hereby denied.\" **A and C are wrong:** no bad faith was shown. **D is wrong.** **Bar trap:** reinstatement and damages are separate questions.",
+      "caseIds": [
+        "case-0105"
+      ],
+      "source": {
+        "caseTitle": "Octot v. Ybañez, et al.",
+        "grNumber": "G.R. No. L-48643",
+        "url": "https://lawphil.net/judjuris/juri1982/jan1982/gr_l-48643_1982.html",
+        "part": "Decision, the disposition",
+        "excerpt": "ACCORDINGLY, considering that petitioner has already been reinstated to his former position since 1979 pursuant to the Court's Resolution of January 29, 1979, the petition for mandamus for his reinstatement is now moot. Petitioner's claim for backwages and damages is hereby denied."
       }
     }
   ]
