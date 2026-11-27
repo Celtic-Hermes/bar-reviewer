@@ -781,6 +781,21 @@
       "ruling": "The petition was partly granted. ICTSI was liable: fire is not an act of God unless caused by lightning or a natural calamity not attributable to human agency, and res ipsa loquitur applied since the fire started in its depot and it gave no explanation. It could not invoke the PPA per-package limit or its 12-month claim period, since she had no contract with it. But actual damages must be proved with a reasonable degree of certainty by competent proof or the best evidence obtainable; the receipts did not match the items in the van and ignored depreciation, so they could not support the award. In the absence of competent proof of the amount of actual damages, a party is entitled to temperate damages, whose reasonable amount is left to the court's discretion, more than nominal but less than compensatory: ₱350,000. Moral damages were deleted for lack of proof that she actually suffered: her testimony that she \"was saddened, had sleepless nights and anxiety\" gave no specifics. Attorney's fees were deleted too, since no Article 2208 exception applied, exemplary damages had been denied, and ICTSI had not acted in bad faith in evaluating and denying her claim.",
       "keyDoctrine": "Actual damages (Art. 2199) must be proved with a reasonable degree of certainty by competent proof or the best evidence obtainable; receipts that do not match the lost items are not competent proof. In the absence of competent proof of the amount, a party is entitled to temperate damages (Art. 2224), in a reasonable amount, more than nominal but less than compensatory. Moral damages require a clear showing that the claimant actually suffered; general statements of sadness and sleepless nights are not enough. Attorney's fees are the exception; without exemplary damages or another Article 2208 ground, they cannot be awarded.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2014/mar2014/gr_195031_2014.html"
+    },
+    {
+      "id": "case-0100",
+      "status": "draft",
+      "name": "Spouses Estrada v. Philippine Rabbit Bus Lines, Inc., et al.",
+      "grNumber": "G.R. No. 203902",
+      "year": 2017,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "facts": "On April 9, 2002, a Philippine Rabbit bus, tailgating a jeepney, swerved into the opposite lane when the jeepney stopped and collided with a truck in Pozorrubio, Pangasinan. Passenger Dionisio Estrada, a public school teacher who also drove a tricycle, lost his right arm, which was amputated. He sued for breach of contract of carriage, claiming ₱500,000 moral damages computed from his life expectancy at ₱80 a day for the use of his arm, plus actual damages and attorney's fees. The trial court held the bus company and driver solidarily liable for ₱500,000 moral damages, ₱57,766.25 actual damages and attorney's fees. The Court of Appeals held the carrier solely liable under the contract, kept the receipted medical expenses, and deleted moral damages and attorney's fees because the passenger did not die and no fraud or bad faith was proved.",
+      "issue": "(1) Is the passenger entitled to moral damages? (2) May he recover for the loss or impairment of his earning capacity, and for the cost of an artificial arm?",
+      "ruling": "The decision was affirmed with modifications. Moral damages are recoverable only in the cases listed in Article 2219, and breach of contract is not among them, so as a general rule they are not recoverable in actions predicated on breach of contract; the exceptions in carriage are the death of a passenger (Arts. 1764, 2206) and the carrier's fraud or bad faith (Art. 2220). Fraud and bad faith must be proved by clear and convincing evidence and must attend the breach or induce the contract; defenses pleaded in an Answer are not that kind of bad faith. So no moral damages. His ₱500,000 claim was in substance for loss or impairment of earning capacity (Art. 2205(1)), which is actual damages and needs documentary proof of income unless the claimant falls under the exceptions for those earning below the minimum wage; he did not. Still, since the loss of his arm plainly impaired his earning capacity, temperate damages of ₱500,000 were awarded in lieu, following Tan v. OMC and other cases. A quotation for a prosthesis, without proof that one was bought, could not support actual damages; medical expenses must be supported by official receipts, and the receipted amount was corrected to ₱57,658.25. Legal interest of 6% runs from finality.",
+      "keyDoctrine": "As a general rule, moral damages are not recoverable in actions for breach of contract, since breach of contract is not in Article 2219; in carriage, the exceptions are the death of a passenger and fraud or bad faith of the carrier, which must be proved by clear and convincing evidence and must attend the breach. Damages for loss or impairment of earning capacity (Art. 2205(1)) are actual damages needing documentary proof, save the minimum-wage exceptions; where earning capacity is plainly established but income unproved, temperate damages may be awarded in lieu. Medical expenses must be supported by official receipts; a mere quotation is not proof.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2017/jul2017/gr_203902_2017.html"
     }
   ],
   "questions": [
@@ -15778,6 +15793,276 @@
         "url": "https://lawphil.net/judjuris/juri2014/mar2014/gr_195031_2014.html",
         "part": "The Ruling of the Court, the disposition",
         "excerpt": "The Decision of the Court of Appeals in CA- G.R. CV No. 78315 dated 14 September 2010 is MODIFIED in that the award of actual damages, moral damages and attorney's fees are DELETED. However, petitioner is ordered to pay respondent TEMPERATE DAMAGES in the amount of P350,000.00."
+      }
+    },
+    {
+      "id": "q-1083",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "A bus passenger lost his right arm when the bus driver, tailgating another vehicle, swerved into the opposite lane and collided with a truck. He sued the bus company for breach of contract of carriage and asked for moral damages. He survived, and there is no evidence of fraud or bad faith by the company. Is he entitled to moral damages? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. Moral damages are recoverable only in the cases enumerated in Article 2219 and analogous cases; since breach of contract is not one of them, as a general rule moral damages are not recoverable in actions predicated on breach of contract. In carriage, the exceptions are: (1) when the mishap results in the death of a passenger (Art. 1764, in relation to Art. 2206(3)); and (2) when the carrier is guilty of fraud or bad faith (Art. 2220). Neither applies.",
+        "legalBasis": "In Spouses Estrada v. Philippine Rabbit Bus Lines, Inc., \"[s]ince breach of contract is not one of the items enumerated under Article 2219, moral damages, as a general rule, are not recoverable in actions for damages predicated on breach of contract.\" \"As an exception, such damages are recoverable [in an action for breach of contract:] (1) in cases in which the mishap results in the death of a passenger, as provided in Article 1764, in relation to Article 2206(3) of the Civil Code; and (2) in x x x cases in which the carrier is guilty of fraud or bad faith, as provided in Article 2220.\"",
+        "application": "The passenger was injured, not killed, and no fraud or bad faith was proved.",
+        "conclusion": "No moral damages. **Bar trap:** a grave injury in a contract-of-carriage suit does not by itself support moral damages; the passenger chose to sue on the contract."
+      },
+      "keyPoints": [
+        "Moral damages only in Art. 2219 and analogous cases",
+        "Breach of contract is not in Art. 2219",
+        "General rule: no moral damages for breach of contract",
+        "Exception 1: death of a passenger (Arts. 1764, 2206(3))",
+        "Exception 2: carrier's fraud or bad faith (Art. 2220)"
+      ],
+      "caseIds": [
+        "case-0100"
+      ],
+      "source": {
+        "caseTitle": "Spouses Estrada v. Philippine Rabbit Bus Lines, Inc., et al.",
+        "grNumber": "G.R. No. 203902",
+        "url": "https://lawphil.net/judjuris/juri2017/jul2017/gr_203902_2017.html",
+        "part": "Our Ruling, Moral damages; Instances when moral damages can be awarded in an action for breach of contract",
+        "excerpt": "Since breach of contract is not one of the items enumerated under Article 2219, moral damages, as a general rule, are not recoverable in actions for damages predicated on breach of contract. x x x As an exception, such damages are recoverable [in an action for breach of contract:] (1) in cases in which the mishap results in the death of a passenger, as provided in Article 1764, in relation to Article 2206(3) of the Civil Code; and (2) in x x x cases in which the carrier is guilty of fraud or bad faith, as provided in Article 2220. … It is obvious that this case does not come under the first of the abovementioned exceptions since Dionisio did not die in the mishap but merely suffered an injury."
+      }
+    },
+    {
+      "id": "q-1084",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "In the same case, the passenger argued that the bus company acted in bad faith because, in its Answer, it claimed it carried him safely, blamed a fortuitous event and the truck driver, and said he had no cause of action, all to evade liability. (a) How are fraud and bad faith defined, and how must they be proved? (b) Do these defenses constitute bad faith that supports moral damages? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) Fraud includes inducement through insidious machination, a deceitful scheme or plot with an evil purpose, such as concealing material facts to obtain consent. Bad faith is not mere bad judgment or negligence; it imports a dishonest purpose or moral obliquity and conscious doing of a wrong, a breach of a known duty through some motive or interest or ill will partaking of fraud. Both must be proved by clear and convincing evidence and are never presumed. (b) No. The fraud or bad faith must attend the contractual breach or induce the passenger to enter into the contract; defenses pleaded in an Answer are not that kind of fraud or bad faith.",
+        "legalBasis": "In Spouses Estrada v. Philippine Rabbit, \"allegations of bad faith and fraud must be proved by clear and convincing evidence.\" They \"are never presumed ... unless convincingly substantiated ... they amount to mere slogans or mudslinging.\" \"Bad faith ... 'does not simply connote bad judgment or negligence; it imports a dishonest purpose or some moral obliquity and conscious doing of a wrong.'\" \"[T]he allegations which made up Philippine Rabbit's defenses are hardly the kind of fraud or bad faith contemplated by law ... the fraud or bad faith must be one which attended the contractual breach or one which induced Dionisio to enter into contract in the first place.\"",
+        "application": "The company's defenses were litigation positions, not deceit in the contract or a motive behind the breach.",
+        "conclusion": "No bad faith; no moral damages. **Bar trap:** a losing defense is not bad faith; look for fraud or bad faith in the breach itself."
+      },
+      "keyPoints": [
+        "Fraud: insidious machination, deceit to obtain consent",
+        "Bad faith: dishonest purpose, not mere negligence",
+        "Proved by clear and convincing evidence; never presumed",
+        "Must attend the breach or induce the contract",
+        "Defenses in an Answer are not that kind of bad faith"
+      ],
+      "caseIds": [
+        "case-0100"
+      ],
+      "source": {
+        "caseTitle": "Spouses Estrada v. Philippine Rabbit Bus Lines, Inc., et al.",
+        "grNumber": "G.R. No. 203902",
+        "url": "https://lawphil.net/judjuris/juri2017/jul2017/gr_203902_2017.html",
+        "part": "Our Ruling, Moral damages are not recoverable in this case",
+        "excerpt": "It has been held, however, that \"allegations of bad faith and fraud must be proved by clear and convincing evidence.\" They are never presumed considering that they are serious accusations that can be so conveniently and casually invoked. And unless convincingly substantiated by whoever is alleging them, they amount to mere slogans or mudslinging. … Fraud has been defined to include an inducement through insidious machination. Insidious machination refers to a deceitful scheme or plot with an evil or devious purpose. … Bad faith, on the other hand, \"does not simply connote bad judgment or negligence; it imports a dishonest purpose or some moral obliquity and conscious doing of a wrong, a breach of a known duty through some motive or interest or ill will that partakes of the nature of fraud.\" … Suffice it to state, however, that the allegations which made up Philippine Rabbit's defenses are hardly the kind of fraud or bad faith contemplated by law. Again, it bears to mention that the fraud or bad faith must be one which attended the contractual breach or one which induced Dionisio to enter into contract in the first place."
+      }
+    },
+    {
+      "id": "q-1085",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "The same passenger, a public school teacher who also drove a tricycle, testified that he earned about ₱80 a day and could no longer drive after losing his arm. He presented no documents of his income. May he recover damages for the impairment of his earning capacity? If so, what kind? Explain.",
+      "suggestedAnswer": {
+        "answer": "Not as actual damages, but as temperate damages. Damages for loss or impairment of earning capacity (Art. 2205(1)) are in the nature of actual damages, which must be proved with a reasonable degree of certainty; as a rule, documentary evidence is needed, except when the claimant is self-employed or a daily worker earning less than the minimum wage. He did not fall under these exceptions, so actual damages could not be awarded. But since it was established that he lost his right arm, temperate damages may be awarded in lieu of actual damages.",
+        "legalBasis": "In Spouses Estrada v. Philippine Rabbit, \"damages for loss [or impairment] of earning capacity is in the nature of actual damages,\" and \"as a rule, documentary evidence should be presented to substantiate the claim.\" Since \"Dionisio does not fall under any of the two exceptions,\" \"an award for actual damages for loss/ impairment of earning capacity cannot be made.\" \"Nonetheless, since it was established that Dionisio lost his right arm, temperate damages in lieu of actual damages for loss/impairment of earning capacity may be awarded in his favor.\" The Court awarded ₱500,000.",
+        "application": "His earning capacity was plainly impaired by the amputation, but his income was undocumented.",
+        "conclusion": "₱500,000 temperate damages. **Bar trap:** the Court looked past the label: his \"moral damages\" claim was really computed on lost earnings, and it was treated as such."
+      },
+      "keyPoints": [
+        "Loss or impairment of earning capacity (Art. 2205(1)) = actual damages",
+        "Proved with reasonable certainty; documentary evidence as a rule",
+        "Minimum-wage exceptions",
+        "Earning capacity plainly established: temperate damages in lieu",
+        "Substance of the claim prevails over its label"
+      ],
+      "caseIds": [
+        "case-0100"
+      ],
+      "source": {
+        "caseTitle": "Spouses Estrada v. Philippine Rabbit Bus Lines, Inc., et al.",
+        "grNumber": "G.R. No. 203902",
+        "url": "https://lawphil.net/judjuris/juri2017/jul2017/gr_203902_2017.html",
+        "part": "Our Ruling, Actual damages for loss/impairment of earning capacity are also not recoverable. In lieu thereof, the Court awards temperate damages",
+        "excerpt": "It thus appears that while petitioners denominated their claim for ₱500,000.00 as moral damages, their computation was actually based on the supposed loss/impairment of Dionisio's earning capacity. … It is, however, settled that \"damages for loss [or impairment] of earning capacity is in the nature of actual damages x x x.\" … Thus, as a rule, documentary evidence should be presented to substantiate the claim for damages for loss of earning capacity. … It must be emphasized, though, that documentary proof of Dionisio's actual income cannot be dispensed with since based on the above testimony, Dionisio does not fall under any of the two exceptions aforementioned. Thus, as it stands, there is no competent proof substantiating his actual income and because of this, an award for actual damages for loss/ impairment of earning capacity cannot be made. Nonetheless, since it was established that Dionisio lost his right arm, temperate damages in lieu of actual damages for loss/impairment of earning capacity may be awarded in his favor."
+      }
+    },
+    {
+      "id": "q-1086",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "Two passengers of the same bus were injured in the same collision caused by the driver's negligence. (a) Ana sued the bus company only for breach of contract of carriage, and there is no proof of bad faith. (b) Ben's wife, also a passenger, died in the collision, and he sued the company on the contract of carriage. May Ana and Ben recover moral damages? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) No. Breach of contract is not among the cases in Article 2219, so moral damages are not recoverable as a general rule; neither exception (death of a passenger, or fraud or bad faith) applies to her. (b) Yes. When the mishap results in the death of a passenger, moral damages are recoverable in the action for breach of contract, under Article 1764 in relation to Article 2206(3).",
+        "legalBasis": "In Spouses Estrada v. Philippine Rabbit, moral damages are recoverable in an action for breach of contract \"(1) in cases in which the mishap results in the death of a passenger, as provided in Article 1764, in relation to Article 2206(3) of the Civil Code; and (2) in x x x cases in which the carrier is guilty of fraud or bad faith, as provided in Article 2220.\" The case \"does not come under the first of the abovementioned exceptions since Dionisio did not die in the mishap but merely suffered an injury.\"",
+        "application": "(a) Ana is injured only, with no bad faith. (b) Ben's wife died.",
+        "conclusion": "(a) No; (b) yes. **Bar trap:** in a contract-of-carriage suit, death of the passenger, not the gravity of an injury, is what triggers the first exception."
+      },
+      "keyPoints": [
+        "General rule: no moral damages in breach of contract",
+        "Exception: death of a passenger (Arts. 1764, 2206(3))",
+        "Exception: fraud or bad faith (Art. 2220)",
+        "Injury alone, without bad faith, does not qualify"
+      ],
+      "caseIds": [
+        "case-0100"
+      ],
+      "source": {
+        "caseTitle": "Spouses Estrada v. Philippine Rabbit Bus Lines, Inc., et al.",
+        "grNumber": "G.R. No. 203902",
+        "url": "https://lawphil.net/judjuris/juri2017/jul2017/gr_203902_2017.html",
+        "part": "Our Ruling, Moral damages; Instances when moral damages can be awarded in an action for breach of contract",
+        "excerpt": "x x x As an exception, such damages are recoverable [in an action for breach of contract:] (1) in cases in which the mishap results in the death of a passenger, as provided in Article 1764, in relation to Article 2206(3) of the Civil Code; and (2) in x x x cases in which the carrier is guilty of fraud or bad faith, as provided in Article 2220. Moral damages are not recoverable in this case. It is obvious that this case does not come under the first of the abovementioned exceptions since Dionisio did not die in the mishap but merely suffered an injury."
+      }
+    },
+    {
+      "id": "q-1087",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "Carla, injured in a bus accident, claims (a) ₱60,000 for hospital bills, supported by official hospital receipts; and (b) ₱160,000 for a prosthetic arm, supported only by a supplier's written price quotation, with no proof she bought or used one. Which item may be awarded as actual damages? Explain.",
+      "suggestedAnswer": {
+        "answer": "Only (a). Actual proof of expenses for medicines and other medical supplies for treatment and rehabilitation must be presented in the form of official receipts, to show the exact cost and that the claimant actually went through treatment. A mere quotation does not show that the prosthesis was actually bought, so the claim must be negated; and even receipted amounts must match the receipts exactly.",
+        "legalBasis": "In Spouses Estrada v. Philippine Rabbit, the petitioners \"failed to show during trial that the said amputated right arm was actually replaced by an artificial one. All that petitioners submitted was a quotation of ₱160,000.00 for a unit of elbow prosthesis and nothing more. It has been held that actual proof of expenses incurred for medicines and other medical supplies necessary for treatment and rehabilitation must be presented by the claimant, in the form of official receipts ... In the absence of the same, such claim must be negated.\" The receipted medical expenses were corrected to ₱57,658.25 \"as borne by the receipts.\"",
+        "application": "(a) The hospital receipts prove actual expenses. (b) The quotation proves only a price, not an expense.",
+        "conclusion": "Actual damages for (a) only. **Bar trap:** a quotation or estimate is not proof that an expense was incurred."
+      },
+      "keyPoints": [
+        "Medical expenses: official receipts",
+        "Receipts show the exact cost and actual treatment",
+        "Quotation without purchase: no actual damages",
+        "Award must match the receipts"
+      ],
+      "caseIds": [
+        "case-0100"
+      ],
+      "source": {
+        "caseTitle": "Spouses Estrada v. Philippine Rabbit Bus Lines, Inc., et al.",
+        "grNumber": "G.R. No. 203902",
+        "url": "https://lawphil.net/judjuris/juri2017/jul2017/gr_203902_2017.html",
+        "part": "Our Ruling, Actual damages by way of medical expenses must be supported by official receipts",
+        "excerpt": "Anent petitioners' assertion that actual damages should be awarded to them for the cost of replacement of Dionisio's amputated right arm, suffice it to state that petitioners failed to show during trial that the said amputated right arm was actually replaced by an artificial one. All that petitioners submitted was a quotation of ₱l60,000.00 for a unit of elbow prosthesis and nothing more. It has been held that actual proof of expenses incurred for medicines and other medical supplies necessary for treatment and rehabilitation must be presented by the claimant, in the form of official receipts, to show the exact cost of his medication and to prove that he indeed went through medication and rehabilitation. In the absence of the same, such claim must be negated."
+      }
+    },
+    {
+      "id": "q-1088",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "Dino, a carpenter, was permanently disabled in a jeepney accident and sued the operator on the contract of carriage. (a) He shows that he was a daily wage worker earning below the minimum wage, though he has no payslips. (b) In a separate case, Eva, an architect injured in a similar accident, testifies that she earned ₱100,000 a month but presents no documents; her disability plainly ended her drafting work. How should the court treat each claim for loss or impairment of earning capacity? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) Dino may recover damages for impaired earning capacity despite the lack of documents, because he falls under the exception for daily workers earning less than the minimum wage. (b) Eva does not fall under any exception, so actual damages cannot rest on her testimony alone; but because her earning capacity is plainly established as impaired, temperate damages may be awarded in lieu.",
+        "legalBasis": "In Spouses Estrada v. Philippine Rabbit, \"damages for loss [or impairment] of earning capacity may be awarded despite the absence of documentary evidence when (1) the deceased [or the injured] was self-employed and earning less than the minimum wage ... or (2) the deceased was employed as a daily worker earning less than the minimum wage.\" Otherwise, documentary proof \"cannot be dispensed with,\" but \"temperate damages in lieu of actual damages for loss/impairment of earning capacity may be awarded\" where earning capacity is plainly established.",
+        "application": "(a) Dino fits the exception. (b) Eva does not, but her impairment is clear.",
+        "conclusion": "(a) Damages for impaired earning capacity; (b) temperate damages. **Bar trap:** the exceptions apply to the injured as well as to the deceased, as the Court's bracketed text shows."
+      },
+      "keyPoints": [
+        "Exceptions apply to the injured as well as the deceased",
+        "Daily worker below minimum wage: no documents needed",
+        "Higher income: documents needed for actual damages",
+        "Plainly impaired earning capacity: temperate damages in lieu"
+      ],
+      "caseIds": [
+        "case-0100"
+      ],
+      "source": {
+        "caseTitle": "Spouses Estrada v. Philippine Rabbit Bus Lines, Inc., et al.",
+        "grNumber": "G.R. No. 203902",
+        "url": "https://lawphil.net/judjuris/juri2017/jul2017/gr_203902_2017.html",
+        "part": "Our Ruling, Actual damages for loss/impairment of earning capacity are also not recoverable. In lieu thereof, the Court awards temperate damages",
+        "excerpt": "By way of exception, damages for loss [or impairment] of earning capacity may be awarded despite the absence of documentary evidence when (1) the deceased [or the injured] was self-employed and earning less than the minimum wage under current labor laws, in which case, judicial notice may be taken of the fact that in the deceased's line of work no documentary evidence is available; or (2) the deceased was employed as a daily worker earning less than the minimum wage under current labor laws. … Nonetheless, since it was established that Dionisio lost his right arm, temperate damages in lieu of actual damages for loss/impairment of earning capacity may be awarded in his favor."
+      }
+    },
+    {
+      "id": "q-1089",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "Which of the following is NOT one of the requisites for an award of moral damages restated in Spouses Estrada v. Philippine Rabbit?",
+      "choices": {
+        "A": "An injury clearly sustained by the claimant, whether physical, mental or psychological.",
+        "B": "A culpable act or omission factually established.",
+        "C": "Proof of the claimant's income by documentary evidence.",
+        "D": "The award is predicated on any of the cases stated in Article 2219."
+      },
+      "correct": "C",
+      "explanation": "**C is correct** (it is not a requisite). The requisites are \"(1) there must be an injury clearly sustained by the claimant, whether physical, mental or psychological; (2) there must be a culpable act or omission factually established; (3) the wrongful act or omission of the defendant is the proximate cause of the injury sustained by the claimant; and (4) the award for damages is predicated on any of the cases stated in Article 2219.\" **A, B and D are requisites.** Proof of income relates to actual damages for loss of earning capacity. **Bar trap:** do not mix the requisites of moral and actual damages.",
+      "caseIds": [
+        "case-0100"
+      ],
+      "source": {
+        "caseTitle": "Spouses Estrada v. Philippine Rabbit Bus Lines, Inc., et al.",
+        "grNumber": "G.R. No. 203902",
+        "url": "https://lawphil.net/judjuris/juri2017/jul2017/gr_203902_2017.html",
+        "part": "Our Ruling, the four requisites of moral damages",
+        "excerpt": "x x x [C]ase law establishes the following requisites for the award of moral damages: (1) there must be an injury clearly sustained by the claimant, whether physical, mental or psychological; (2) there must be a culpable act or omission factually established; (3) the wrongful act or omission of the defendant is the proximate cause of the injury sustained by the claimant; and (4) the award for damages is predicated on any of the cases stated in Article 2219 of the Civil Code."
+      }
+    },
+    {
+      "id": "q-1090",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "According to Spouses Estrada v. Philippine Rabbit, damages for loss or impairment of earning capacity under Article 2205(1) are in the nature of",
+      "choices": {
+        "A": "actual damages.",
+        "B": "moral damages.",
+        "C": "nominal damages.",
+        "D": "exemplary damages."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** \"It is, however, settled that 'damages for loss [or impairment] of earning capacity is in the nature of actual damages x x x.'\" So they must be duly proved with a reasonable degree of certainty. **B is wrong:** the passenger's \"moral damages\" claim was really for lost earnings. **C and D are wrong.** **Bar trap:** when proof of income fails but impairment is clear, temperate damages may be awarded in lieu.",
+      "caseIds": [
+        "case-0100"
+      ],
+      "source": {
+        "caseTitle": "Spouses Estrada v. Philippine Rabbit Bus Lines, Inc., et al.",
+        "grNumber": "G.R. No. 203902",
+        "url": "https://lawphil.net/judjuris/juri2017/jul2017/gr_203902_2017.html",
+        "part": "Our Ruling, Actual damages for loss/impairment of earning capacity",
+        "excerpt": "It is, however, settled that \"damages for loss [or impairment] of earning capacity is in the nature of actual damages x x x.\""
+      }
+    },
+    {
+      "id": "q-1091",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "What did the Court award the passenger in Spouses Estrada v. Philippine Rabbit?",
+      "choices": {
+        "A": "₱500,000 moral damages and attorney's fees.",
+        "B": "₱160,000 for a prosthetic arm.",
+        "C": "Nominal damages only.",
+        "D": "₱500,000 temperate damages and ₱57,658.25 actual damages, with 6% legal interest from finality."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The Court declared petitioners \"entitled to temperate damages of ₱500,000.00,\" set actual damages at \"₱57,658.25,\" and made all damages \"subject to legal interest of 6% per annum from the finality of this Decision.\" **A is wrong:** no moral damages without death or bad faith. **B is wrong:** a mere quotation. **C is wrong:** real pecuniary loss existed. **Bar trap:** the receipted amount was corrected to match the receipts exactly.",
+      "caseIds": [
+        "case-0100"
+      ],
+      "source": {
+        "caseTitle": "Spouses Estrada v. Philippine Rabbit Bus Lines, Inc., et al.",
+        "grNumber": "G.R. No. 203902",
+        "url": "https://lawphil.net/judjuris/juri2017/jul2017/gr_203902_2017.html",
+        "part": "Our Ruling, the disposition",
+        "excerpt": "WHEREFORE, the Petition for Review on Certiorari is DENIED. The assailed May 16, 2012 Decision and October 1, 2012 Resolution of the Court of Appeals in CA-G.R. CV No. 95520 are AFFIRMED with MODIFICATIONS as follows: (1) petitioners are declared entitled to temperate damages of ₱500,000.00; (2) the award of actual damages is set at the amount of ₱57,658.25; and (3) all damages awarded are subject to legal interest of 6% per annum from the finality of this Decision until full satisfaction."
       }
     }
   ]
