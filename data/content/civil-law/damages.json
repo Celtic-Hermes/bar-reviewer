@@ -826,6 +826,21 @@
       "ruling": "The petition was partly granted. HLC was entitled to labor cost escalation (₱1,196,202), which the contract allowed and MPC benefited from, since denying it would be unjust enrichment; and, under quantum meruit, to the ₱79,340.52 of extra work MPC itself had valued and accepted, though there was no supplementary agreement. It was not entitled to material escalation, the retention money (its release conditions were unmet), detained materials, or attorney's fees. The individual respondents were not personally liable absent bad faith, gross negligence or the other grounds for corporate officers' liability. HLC was in delay and in breach, so it was liable for the natural and probable consequences: ₱4,604,579 actual damages for the higher cost of completion. It was also liable for liquidated damages as stipulated, for 92 days from the end of the grace period until it effectively abandoned the project. Liquidated damages are those the parties agree to be paid in case of breach; under Philippine law they take the nature of penalties, and a penal clause is an accessory undertaking to assume greater liability in case of breach, attached to ensure performance.",
       "keyDoctrine": "Liquidated damages are those the parties agree to be paid in case of breach (Art. 2226); under Philippine law they take the nature of penalties, and a penal clause is an accessory undertaking to assume greater liability in case of breach, attached to an obligation to ensure performance. A contractor in delay is liable for the natural and probable consequences of its breach and for the stipulated liquidated damages for the days of delay. Unjust enrichment (Art. 22) bars an owner from keeping the benefit of work validly done; under quantum meruit a contractor recovers the reasonable value of accepted extra work even without a written agreement. Corporate officers are personally liable only for assenting to patently unlawful acts, bad faith or gross negligence, or conflict of interest.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2004/jan2004/gr_147614_2004.html"
+    },
+    {
+      "id": "case-0103",
+      "status": "draft",
+      "name": "Scott Consultants & Resource Development Corporation, Inc. v. Court of Appeals, et al.",
+      "grNumber": "G.R. No. 112916",
+      "year": 1995,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Liquidated Damages",
+      "facts": "Scott Consultants claimed mining rights in Rodriguez, Rizal, under an option agreement and an operating agreement with claim holders, and sued Philippine Rock Products (Philrock) for blocking its access to the area through access roads that Philrock had built on private land under easement contracts with the landowners. Scott's option had expired unexercised, and the mining bureau recognized Philrock's prior operating agreement. The trial court dismissed the complaint and, on Philrock's counterclaim, awarded it ₱800,000 actual damages, ₱300,000 moral damages, ₱50,000 exemplary damages and ₱50,000 attorney's fees, without specific findings on how the amounts were arrived at. The Court of Appeals deleted only the moral damages.",
+      "issue": "(1) Was Philrock liable for preventing Scott from using its access roads? (2) Were the awards of actual and exemplary damages and attorney's fees to Philrock proper?",
+      "ruling": "The petition was partly granted. (1) The mining laws Scott invoked apply to entry into land where prospecting or mining is done, not to land used only for ingress and egress; Scott failed to prove its right to use Philrock's access routes. (2) But there was no credible proof of actual damages: the trial court made no specific finding of their extent, and the testimonies cited spoke only of reduced operations, diverted attention, sleeplessness and anxiety; how ₱800,000 was arrived at was never shown and remained pure speculation. Under Article 2199, compensation is due only for pecuniary loss duly proved. Exemplary damages had no legal basis because, under Article 2234, the claimant must first show entitlement to moral, temperate or compensatory damages, and there was also no agreement on stipulated damages. Attorney's fees were deleted because the decision's body gave no statement that they were just and equitable under Article 2208(11) and no finding on the amount.",
+      "keyDoctrine": "Actual damages are due only for pecuniary loss duly proved (Art. 2199); a court must show how the amount was arrived at. Exemplary damages (Art. 2229) require a prior showing of entitlement to moral, temperate or compensatory damages (Art. 2234); where liquidated damages are stipulated, they may be recovered without proof of loss, but exemplary damages in addition require a showing that the claimant would have been entitled to moral, temperate or compensatory damages were it not for the stipulation. Attorney's fees need factual, legal and equitable justification stated in the body of the decision.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri1995/mar1995/gr_112916_1995.html"
     }
   ],
   "questions": [
@@ -16632,6 +16647,272 @@
         "url": "https://lawphil.net/judjuris/juri2004/jan2004/gr_147614_2004.html",
         "part": "The Court's Ruling, Third Issue (liability for actual and liquidated damages)",
         "excerpt": "Thus, as held by the CA, petitioner is bound to pay liquidated damages for 92 days, or from the expiration of the grace period in the Amended Contract until February 1, 1990, when it effectively abandoned the project."
+      }
+    },
+    {
+      "id": "q-1110",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Liquidated Damages",
+      "prompt": "What does Article 2234 of the Civil Code, as applied in Scott Consultants v. Court of Appeals, require before a court may consider awarding exemplary damages? How does the rule apply when liquidated damages have been agreed upon? Explain.",
+      "suggestedAnswer": {
+        "answer": "While the amount of exemplary damages need not be proved, the plaintiff must show that he is entitled to moral, temperate or compensatory damages before the court may consider whether exemplary damages should be awarded. Where liquidated damages have been agreed upon, they may be recovered without proof of loss; but before the court may grant exemplary damages in addition to them, the plaintiff must show that he would have been entitled to moral, temperate or compensatory damages were it not for the stipulation.",
+        "legalBasis": "Article 2234, quoted in Scott Consultants & Resource Development Corp. v. Court of Appeals: \"While the amount of the exemplary damages need not be proved, the plaintiff must show that he is entitled to moral, temperate or compensatory damages before the court may consider the question of whether or not exemplary damages should be awarded. In case liquidated damages have been agreed upon, although no proof of loss is necessary in order that such liquidated damages may be recovered, nevertheless, before the court may consider the question of granting exemplary in addition to the liquidated damages, the plaintiff must show that he would be entitled to moral, temperate or compensatory damages were it not for the stipulation for liquidated damages.\"",
+        "application": "In Scott Consultants, the claimant was not entitled to moral, temperate or compensatory damages, and there was no agreement on stipulated damages, so there was no legal basis for exemplary damages.",
+        "conclusion": "Exemplary damages need a foundation in moral, temperate or compensatory damages, even when liquidated damages are stipulated. **Bar trap:** a liquidated damages clause does not by itself open the door to exemplary damages."
+      },
+      "keyPoints": [
+        "Amount of exemplary damages need not be proved",
+        "Must first show entitlement to moral, temperate or compensatory damages",
+        "Liquidated damages: no proof of loss needed to recover them",
+        "Exemplary on top of liquidated: show entitlement to moral, temperate or compensatory but for the stipulation"
+      ],
+      "caseIds": [
+        "case-0103"
+      ],
+      "source": {
+        "caseTitle": "Scott Consultants & Resource Development Corporation, Inc. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 112916",
+        "url": "https://lawphil.net/judjuris/juri1995/mar1995/gr_112916_1995.html",
+        "part": "Decision, on exemplary damages (Article 2234)",
+        "excerpt": "Both decisions do not as well state the justification for the award of exemplary damages of P50,000.00. Under Article 2229 of the Civil Code, exemplary or corrective damages are imposed by way of example or correction for the public good, in addition to moral, temperate, liquidated, or compensatory damages. Article 2234 of the Civil Code expressly provides: Art. 2234. While the amount of the exemplary damages need not be proved, the plaintiff must show that he is entitled to moral, temperate or compensatory damages before the court may consider the question of whether or not exemplary damages should be awarded. In case liquidated damages have been agreed upon, although no proof of loss is necessary in order that such liquidated damages may be recovered, nevertheless, before the court may consider the question of granting exemplary in addition to the liquidated damages, the plaintiff must show that he would be entitled to moral, temperate or compensatory damages were it not for the stipulation for liquidated damages. There was, therefore, no legal basis for the award of exemplary damages since the private respondent was not entitled to moral, temperate, or compensatory damages and there was no agreement on stipulated damages."
+      }
+    },
+    {
+      "id": "q-1111",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Liquidated Damages",
+      "prompt": "A trial court awarded a company ₱800,000 as actual damages on its counterclaim, stating only that \"there is no doubt that the defendant sustained pecuniary loss,\" without referring to specific evidence. The witnesses had testified only that operations were not at full capacity, that attention was diverted, and that employees lost sleep and felt anxiety. Should the award be sustained? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. Under Article 2199, one is entitled to adequate compensation only for such pecuniary loss as is duly proved. The court must make a specific finding on the extent of the loss with reference to the evidence; where it is never shown how the amount was arrived at, the award is pure speculation.",
+        "legalBasis": "In Scott Consultants v. Court of Appeals, \"there was no credible proof of actual damages. The trial court made no specific finding on the extent thereof ... How the award of P800,000.00 was arrived at was never shown. It remains a pure speculation. Article 2199 of the Civil Code provides that one is entitled to adequate compensation only for such pecuniary loss suffered by him as is duly proved.\"",
+        "application": "The testimonies did not measure any pecuniary loss; anxiety and diverted attention are not proof of an amount.",
+        "conclusion": "The ₱800,000 must be deleted. **Bar trap:** a finding that \"there was loss\" is not a finding of how much; actual damages need both."
+      },
+      "keyPoints": [
+        "Art. 2199: compensation only for pecuniary loss duly proved",
+        "Specific finding of the extent of loss required",
+        "Show how the amount was arrived at",
+        "Speculation cannot support actual damages"
+      ],
+      "caseIds": [
+        "case-0103"
+      ],
+      "source": {
+        "caseTitle": "Scott Consultants & Resource Development Corporation, Inc. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 112916",
+        "url": "https://lawphil.net/judjuris/juri1995/mar1995/gr_112916_1995.html",
+        "part": "Decision, on actual damages",
+        "excerpt": "The third assigned error, however, is impressed with merit. Just as in the case of moral damages, there was no credible proof of actual damages. The trial court made no specific finding on the extent thereof. … The trial court did not answer this question by making specific references to the testimonies of the witnesses or to the documentary evidence. Yet, in the dispositive portion of its decision, it awarded compensatory and actual damages in the staggering amount of P800,000.00. … How the award of P800,000.00 was arrived at was never shown. It remains a pure speculation. Article 2199 of the Civil Code provides that one is entitled to adequate compensation only for such pecuniary loss suffered by him as is duly proved."
+      }
+    },
+    {
+      "id": "q-1112",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Liquidated Damages",
+      "prompt": "In the same case, the trial court awarded ₱50,000 attorney's fees, stating only that a claim for fees arising from the filing of the complaint is a compulsory counterclaim and that the fees \"should be held reasonable under the circumstances.\" Should the award stand? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. In the absence of stipulation, attorney's fees can be recovered only in the instances in Article 2208; the closest, paragraph 11, requires the court to find it just and equitable. The award is the exception rather than the rule, demands factual, legal and equitable justification, and the court must explicitly state the legal reason in the body of the decision, not only in the dispositive portion. The decision gave no such statement and no finding on the amount.",
+        "legalBasis": "In Scott Consultants v. Court of Appeals, \"[t]he closet instance which could be considered here is paragraph 11 of Article 2208 which provides for such recovery where the court deems it just and equitable. The body of the decision of the trial court, however, is devoid of any statement that it would be just and equitable to award attorney's fees and of any finding on the amount.\" \"Where granted, the court must explicitly state in the body of the decision, and not only in the dispositive portion thereof, the legal reason for the award of attorney's fees.\"",
+        "application": "Calling the claim a compulsory counterclaim says nothing about why fees are just and equitable.",
+        "conclusion": "Deleted. **Bar trap:** a procedural label (compulsory counterclaim) is not a legal ground for attorney's fees."
+      },
+      "keyPoints": [
+        "Absent stipulation: only Art. 2208 instances",
+        "Art. 2208(11): just and equitable, as found by the court",
+        "Exception, not the rule; needs justification",
+        "Reason must be stated in the body of the decision"
+      ],
+      "caseIds": [
+        "case-0103"
+      ],
+      "source": {
+        "caseTitle": "Scott Consultants & Resource Development Corporation, Inc. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 112916",
+        "url": "https://lawphil.net/judjuris/juri1995/mar1995/gr_112916_1995.html",
+        "part": "Decision, on attorney's fees",
+        "excerpt": "Nor can we affirm the award for attorney's fees in the sum of P50,000.00. Under Article 2208 of the Civil Code, in the absence of stipulation, there can be no recovery of attorney's fees and expenses of litigation other than judicial costs except in the instances therein enumerated. The closet instance which could be considered here is paragraph 11 of Article 2208 which provides for such recovery where the court deems it just and equitable. The body of the decision of the trial court, however, is devoid of any statement that it would be just and equitable to award attorney's fees and of any finding on the amount to be so awarded. … It is settled that the award of attorney's fees is the exception rather than the rule and counsel's fees are not to be awarded every time a party wins a suit. The power of the court to award attorney's fees under Article 2208 of the Civil Code demands factual, legal, and equitable justification; its basis cannot be left to speculation or conjecture. Where granted, the court must explicitly state in the body of the decision, and not only in the dispositive portion thereof, the legal reason for the award of attorney's fees."
+      }
+    },
+    {
+      "id": "q-1113",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Liquidated Damages",
+      "prompt": "Ana's supply contract with Ben's company stipulates ₱100,000 liquidated damages if Ben fails to deliver. Ben deliberately failed to deliver to sell the goods to a rival at a higher price. (a) Ana proves the breach but no actual loss and claims the ₱100,000. (b) She also claims exemplary damages, showing that Ben's fraudulent breach caused her provable lost sales that would have entitled her to compensatory damages had there been no stipulation. May she recover both? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) Yes, the ₱100,000 liquidated damages, since no proof of loss is necessary to recover stipulated liquidated damages. (b) Exemplary damages may also be considered: under Article 2234, before exemplary damages may be granted in addition to liquidated damages, the plaintiff must show that she would have been entitled to moral, temperate or compensatory damages were it not for the stipulation. Ana makes that showing, and Ben's breach was fraudulent.",
+        "legalBasis": "Article 2234, applied in Scott Consultants v. Court of Appeals: \"In case liquidated damages have been agreed upon, although no proof of loss is necessary in order that such liquidated damages may be recovered, nevertheless, before the court may consider the question of granting exemplary in addition to the liquidated damages, the plaintiff must show that he would be entitled to moral, temperate or compensatory damages were it not for the stipulation for liquidated damages.\" Article 2232 allows exemplary damages in contracts \"if the defendant acted in a wanton, fraudulent, reckless, oppressive, or malevolent manner.\"",
+        "application": "Ana shows both the foundation required by Article 2234 and fraudulent conduct.",
+        "conclusion": "Both may be awarded. **Bar trap:** if Ana could show only the breach and no basis for moral, temperate or compensatory damages, she would get the liquidated damages but no exemplary damages."
+      },
+      "keyPoints": [
+        "Liquidated damages: no proof of loss needed",
+        "Exemplary in addition: show entitlement to moral, temperate or compensatory but for the stipulation",
+        "Contracts: wanton, fraudulent, reckless, oppressive or malevolent conduct (Art. 2232)",
+        "Without the foundation, liquidated damages only"
+      ],
+      "caseIds": [
+        "case-0103"
+      ],
+      "source": {
+        "caseTitle": "Scott Consultants & Resource Development Corporation, Inc. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 112916",
+        "url": "https://lawphil.net/judjuris/juri1995/mar1995/gr_112916_1995.html",
+        "part": "Decision, on exemplary damages (Article 2234)",
+        "excerpt": "In case liquidated damages have been agreed upon, although no proof of loss is necessary in order that such liquidated damages may be recovered, nevertheless, before the court may consider the question of granting exemplary in addition to the liquidated damages, the plaintiff must show that he would be entitled to moral, temperate or compensatory damages were it not for the stipulation for liquidated damages."
+      }
+    },
+    {
+      "id": "q-1114",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Liquidated Damages",
+      "prompt": "Carla sued Dino's company for blocking her trucks from a road. She lost, and the company won on its counterclaim. The trial court awarded the company ₱50,000 exemplary damages \"as an example,\" but deleted its claims for actual and moral damages for lack of proof, and there was no stipulated damages clause. In another case, Eva's company proved ₱200,000 in actual losses caused by Felix's oppressive breach of their contract. May exemplary damages be awarded in each case? Explain.",
+      "suggestedAnswer": {
+        "answer": "Not to Dino's company. Exemplary damages require a showing of entitlement to moral, temperate or compensatory damages, and here none was proved and there was no stipulated damages clause, so there is no legal basis. Eva's company, however, has proved compensatory damages, and Felix's breach was oppressive, so the court may consider exemplary damages in addition.",
+        "legalBasis": "In Scott Consultants v. Court of Appeals, \"[t]here was, therefore, no legal basis for the award of exemplary damages since the private respondent was not entitled to moral, temperate, or compensatory damages and there was no agreement on stipulated damages.\" Under Article 2229, exemplary damages are imposed \"in addition to moral, temperate, liquidated, or compensatory damages.\"",
+        "application": "Dino's company has no underlying damages; Eva's company has compensatory damages and oppressive conduct.",
+        "conclusion": "No exemplary damages for Dino's company; possible for Eva's company. **Bar trap:** exemplary damages are always \"in addition to\" something; they cannot stand alone."
+      },
+      "keyPoints": [
+        "Exemplary damages are in addition to other damages",
+        "No moral, temperate, compensatory or stipulated damages: no legal basis",
+        "Proved compensatory damages plus oppressive conduct: may be considered"
+      ],
+      "caseIds": [
+        "case-0103"
+      ],
+      "source": {
+        "caseTitle": "Scott Consultants & Resource Development Corporation, Inc. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 112916",
+        "url": "https://lawphil.net/judjuris/juri1995/mar1995/gr_112916_1995.html",
+        "part": "Decision, on exemplary damages and actual damages",
+        "excerpt": "Under Article 2229 of the Civil Code, exemplary or corrective damages are imposed by way of example or correction for the public good, in addition to moral, temperate, liquidated, or compensatory damages. … There was, therefore, no legal basis for the award of exemplary damages since the private respondent was not entitled to moral, temperate, or compensatory damages and there was no agreement on stipulated damages."
+      }
+    },
+    {
+      "id": "q-1115",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Liquidated Damages",
+      "prompt": "Gina holds valid mining rights over a claim. To reach it, her trucks must pass through a private road built by a rival quarry company on land it holds by easement agreements with the landowners. Gina argues that the mining law provisions forbidding surface owners from preventing entry into land for prospecting entitle her to use the road. Is she correct? Reason briefly.",
+      "suggestedAnswer": {
+        "answer": "No. Those provisions apply to entry into land, public or private, where prospecting, exploring or exploiting is to be done, and enjoin surface owners or occupants from preventing such entry. They do not apply to land used only for ingress to or egress from the area of the mining activity. Gina must prove a right to use the access road, for instance by acquiring an easement, which she has not shown.",
+        "legalBasis": "In Scott Consultants v. Court of Appeals, the cited provisions \"apply to entry into land (public or private) where prospecting, exploring, or exploiting is to be done, and enjoin the surface owners or occupants of such land from preventing any entry for such purpose. They do not apply to land or a portion thereof which may be used for ingress to or egress from the land where the prospecting, exploration, or exploitation is to be made ... As to the private respondent's access routes, the petitioner was unable to prove its right to use it.\"",
+        "application": "The road is merely an access route, not the mining area itself.",
+        "conclusion": "Gina has no right to use the road on that basis. **Bar trap:** a right to enter the mining area is not a right of way over someone else's access road."
+      },
+      "keyPoints": [
+        "Mining law entry provisions cover the land being mined",
+        "They do not cover land used only for ingress and egress",
+        "Right to use an access road must be proved",
+        "Easement must be acquired"
+      ],
+      "caseIds": [
+        "case-0103"
+      ],
+      "source": {
+        "caseTitle": "Scott Consultants & Resource Development Corporation, Inc. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 112916",
+        "url": "https://lawphil.net/judjuris/juri1995/mar1995/gr_112916_1995.html",
+        "part": "Decision, on the right to use the access roads",
+        "excerpt": "There is no merit in the first two assigned errors. The petitioner's reliance on Section 2 of P.D. No. 512, Section 12 of P.D. No. 463, and Section 10 of the Consolidated Mines Administrative Order (CMAO) is misplaced. These provisions apply to entry into land (public or private) where prospecting, exploring, or exploiting is to be done, and enjoin the surface owners or occupants of such land from preventing any entry for such purpose. They do not apply to land or a portion thereof which may be used for ingress to or egress from the land where the prospecting, exploration, or exploitation is to be made. In the instant case, the petitioner was not prevented by the surface owners or occupants of the land covered by its mining claims. As to the private respondent's access routes, the petitioner was unable to prove its right to use it."
+      }
+    },
+    {
+      "id": "q-1116",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Liquidated Damages",
+      "prompt": "In Scott Consultants v. Court of Appeals, why was the award of exemplary damages deleted?",
+      "choices": {
+        "A": "Because exemplary damages may never be awarded on a counterclaim.",
+        "B": "Because the claimant was not entitled to moral, temperate, or compensatory damages and there was no agreement on stipulated damages.",
+        "C": "Because the amount of exemplary damages was not proved.",
+        "D": "Because exemplary damages are limited to criminal cases."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** \"There was, therefore, no legal basis for the award of exemplary damages since the private respondent was not entitled to moral, temperate, or compensatory damages and there was no agreement on stipulated damages.\" **A is wrong:** no such rule was stated. **C is wrong:** \"the amount of the exemplary damages need not be proved.\" **D is wrong:** they are also available in quasi-delicts and contracts. **Bar trap:** Article 2234's foundation requirement.",
+      "caseIds": [
+        "case-0103"
+      ],
+      "source": {
+        "caseTitle": "Scott Consultants & Resource Development Corporation, Inc. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 112916",
+        "url": "https://lawphil.net/judjuris/juri1995/mar1995/gr_112916_1995.html",
+        "part": "Decision, on exemplary damages",
+        "excerpt": "There was, therefore, no legal basis for the award of exemplary damages since the private respondent was not entitled to moral, temperate, or compensatory damages and there was no agreement on stipulated damages."
+      }
+    },
+    {
+      "id": "q-1117",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Liquidated Damages",
+      "prompt": "Under Article 2199, as applied in Scott Consultants v. Court of Appeals, one is entitled to adequate compensation",
+      "choices": {
+        "A": "for any loss the court believes occurred, in an amount it estimates.",
+        "B": "for anxiety and loss of sleep.",
+        "C": "only for such pecuniary loss suffered by him as is duly proved.",
+        "D": "in an amount equal to the claim in the complaint."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** \"Article 2199 of the Civil Code provides that one is entitled to adequate compensation only for such pecuniary loss suffered by him as is duly proved.\" **A is wrong:** the ₱800,000 award was \"pure speculation.\" **B is wrong:** that would go to moral damages, which were also unproved. **D is wrong:** a claim is not proof. **Bar trap:** where loss is certain but unproved, consider temperate damages instead.",
+      "caseIds": [
+        "case-0103"
+      ],
+      "source": {
+        "caseTitle": "Scott Consultants & Resource Development Corporation, Inc. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 112916",
+        "url": "https://lawphil.net/judjuris/juri1995/mar1995/gr_112916_1995.html",
+        "part": "Decision, on actual damages",
+        "excerpt": "Article 2199 of the Civil Code provides that one is entitled to adequate compensation only for such pecuniary loss suffered by him as is duly proved."
+      }
+    },
+    {
+      "id": "q-1118",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Liquidated Damages",
+      "prompt": "What did the Supreme Court do in Scott Consultants v. Court of Appeals?",
+      "choices": {
+        "A": "It deleted the awards of actual damages, exemplary damages, and attorney's fees, and affirmed the decision in all other respects.",
+        "B": "It reinstated the moral damages.",
+        "C": "It held Philrock liable for blocking the access roads.",
+        "D": "It awarded liquidated damages to Philrock."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** \"[T]he instant petition is partly GRANTED and the awards of actual damages, exemplary damages, and attorney's fees in the challenged decision are DELETED. In all other respects, the challenged decision is AFFIRMED.\" **B is wrong:** moral damages had already been deleted by the Court of Appeals. **C is wrong:** Scott failed to prove a right to use the roads. **D is wrong:** there was no stipulation. **Bar trap:** winning the case did not carry the damages with it.",
+      "caseIds": [
+        "case-0103"
+      ],
+      "source": {
+        "caseTitle": "Scott Consultants & Resource Development Corporation, Inc. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 112916",
+        "url": "https://lawphil.net/judjuris/juri1995/mar1995/gr_112916_1995.html",
+        "part": "Decision, the disposition",
+        "excerpt": "WHEREFORE, the instant petition is partly GRANTED and the awards of actual damages, exemplary damages, and attorney's fees in the challenged decision are DELETED. In all other respects, the challenged decision is AFFIRMED."
       }
     }
   ]
