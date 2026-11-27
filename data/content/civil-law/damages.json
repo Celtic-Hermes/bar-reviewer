@@ -751,6 +751,21 @@
       "ruling": "The petition was granted. Actual damages were properly deleted, since proof of pecuniary loss is essential in culpa contractual. Moral damages are the exception: they require (1) evidence of besmirched reputation or physical, mental or psychological suffering, (2) a culpable act or omission factually established, (3) proof that it is the proximate cause, and (4) a case under Articles 2219 or 2220; in breach of contract, bad faith, gross negligence amounting to bad faith, or wanton disregard of the obligation. A delay of less than two months, partly due to the vague address and the claimant's own error about the place of origin, was not bad faith. Exemplary damages require prior entitlement to moral, temperate or compensatory damages and, in contracts, wanton, fraudulent, reckless, oppressive or malevolent conduct, which was absent. PT&T was still liable for the breach, since it proved no valid excuse. Temperate damages were not possible, because the findings showed no pecuniary loss established or quantifiable. What remained was nominal damages, to vindicate her right to timely delivery: ₱20,000. The cashier was not solidarily liable.",
       "keyDoctrine": "When a contractual breach is proved but no actual, moral or exemplary damages are justified, the court chooses between temperate and nominal damages. Temperate damages need a finding that some pecuniary loss was suffered though its amount cannot be proved with certainty; without such a finding, only nominal damages (Art. 2221) are proper, to vindicate the violated right, and they may be awarded in every obligation from any source in Article 1157. Moral damages require the four requisites, and in breach of contract bad faith or gross negligence amounting to bad faith. Exemplary damages need prior entitlement to moral, temperate or compensatory damages (Art. 2234).",
       "sourceUrl": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/4/51482"
+    },
+    {
+      "id": "case-0098",
+      "status": "draft",
+      "name": "Tan, et al. v. OMC Carriers, Inc., et al.",
+      "grNumber": "G.R. No. 190521",
+      "year": 2011,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "facts": "On November 24, 1995, the brakes of an OMC Carriers truck failed on a Muntinlupa road; its driver, Bonifacio Arambala, jumped out and abandoned it, and the driverless truck rammed into the house and tailoring shop of the spouses Tan, instantly killing Celedonio Tan, a self-employed tailor. His heirs sued. The trial court found gross negligence and awarded death indemnity, ₱500,000 for lost earning capacity, ₱355,895 actual damages, and moral and exemplary damages and attorney's fees. The Court of Appeals reduced actual damages to the ₱72,295 supported by receipts (funeral expenses), deleted the earning capacity award for lack of documentary proof, reduced exemplary damages to ₱200,000 and deleted attorney's fees. The heirs had only photographs of the destroyed property and the widow's testimony that he earned about ₱13,000 a month.",
+      "issue": "What damages are the heirs entitled to for the destroyed property and the lost earning capacity, and were the exemplary damages and attorney's fees properly reduced or deleted?",
+      "ruling": "The petition was partly granted. Actual damages must be proved with a reasonable degree of certainty, ordinarily by receipts; photographs showed the damage but not its amount, so no actual damages for the house and shop. But absent competent proof, a party may still claim temperate damages where the court is convinced some pecuniary loss was suffered; ₱200,000 was awarded. As a rule, documentary evidence is needed for lost earning capacity; the exceptions (a self-employed person, or a daily wage worker, earning less than the minimum wage) did not apply because his claimed income far exceeded it. Still, following Pleno, Victory Liner and other cases, where earning capacity is plainly established but actual income is unproved, temperate damages may be given in lieu: ₱300,000, roughly two years' gross income, considering his minor children's dependence. In quasi-delicts, exemplary damages may be granted for gross negligence, but should be tempered; the reduction to ₱200,000 was proper. With exemplary damages awarded, attorney's fees of 10% were proper under Article 2208(1), and legal interest was imposed.",
+      "keyDoctrine": "Actual damages must be proved with a reasonable degree of certainty, ordinarily by receipts; where only the fact of loss is shown, temperate damages may be awarded (Art. 2224). Loss of earning capacity (Art. 2206) generally requires documentary evidence, except for a self-employed person or a daily wage worker earning less than the minimum wage; where earning capacity is plainly established but income is unproved, temperate damages may be awarded in lieu. In quasi-delicts, exemplary damages may be granted for gross negligence, but tempered so as not to enrich or impoverish. Attorney's fees may be awarded when exemplary damages are (Art. 2208(1)).",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2011/jan2011/gr_190521_2011.html"
     }
   ],
   "questions": [
@@ -15209,6 +15224,276 @@
         "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/4/51482",
         "part": "Decision, the disposition",
         "excerpt": "WHEREFORE, the instant petition is GRANTED. The appealed decision is reversed and set aside and, in its stead, petitioner Philippine Telegraph & Telephone Corporation is ordered to pay respondent Lolita Sipe Escara the sum of P20,000.00 by way of nominal damages. Costs against petitioner corporation."
+      }
+    },
+    {
+      "id": "q-1065",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "A self-employed tailor was killed when a truck, through the driver's gross negligence, crashed into his shop. His widow testified that he earned about ₱13,000 a month, well above the minimum wage, but presented no documents. (a) May actual damages for loss of earning capacity be awarded on her testimony? (b) If not, may the heirs recover anything for the lost earning capacity? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) No. As a rule, documentary evidence should be presented to substantiate a claim for loss of earning capacity. The exceptions are when the deceased is self-employed and earning less than the minimum wage (judicial notice may be taken that no documentary evidence is available in that line of work), or is a daily wage worker earning less than the minimum wage. Since the claimed income greatly exceeded the minimum wage, the exception does not apply. (b) Yes. Where earning capacity is plainly established but no evidence supports the actual income, temperate damages may be awarded in lieu of actual damages for loss of earning capacity.",
+        "legalBasis": "In Tan v. OMC Carriers, Inc., \"[a]s a rule, documentary evidence should be presented to substantiate the claim for loss of earning capacity. By way of exception, damages for loss of earning capacity may be awarded despite the absence of documentary evidence when: (1) the deceased is self-employed and earning less than the minimum wage under current labor laws ... or (2) the deceased is employed as a daily wage worker earning less than the minimum wage.\" \"In the past, we awarded temperate damages in lieu of actual damages for loss of earning capacity where earning capacity is plainly established but no evidence was presented to support the allegation of the injured party's actual income.\"",
+        "application": "The tailor's earning capacity was undisputed and his minor children depended on it, but his income exceeded the minimum wage and was undocumented.",
+        "conclusion": "No actual damages for lost earning capacity, but ₱300,000 temperate damages (about two years' gross income). **Bar trap:** a high claimed income without documents takes the case out of the exception; it does not leave the heirs with nothing."
+      },
+      "keyPoints": [
+        "Rule: documentary evidence for loss of earning capacity",
+        "Exception 1: self-employed earning less than minimum wage",
+        "Exception 2: daily wage worker earning less than minimum wage",
+        "Income above minimum wage: exception does not apply",
+        "Earning capacity plainly established: temperate damages in lieu"
+      ],
+      "caseIds": [
+        "case-0098"
+      ],
+      "source": {
+        "caseTitle": "Tan, et al. v. OMC Carriers, Inc., et al.",
+        "grNumber": "G.R. No. 190521",
+        "url": "https://lawphil.net/judjuris/juri2011/jan2011/gr_190521_2011.html",
+        "part": "Our Ruling, Temperate damages in lieu of loss of earning capacity",
+        "excerpt": "As a rule, documentary evidence should be presented to substantiate the claim for loss of earning capacity. By way of exception, damages for loss of earning capacity may be awarded despite the absence of documentary evidence when: (1) the deceased is self-employed and earning less than the minimum wage under current labor laws, in which case, judicial notice may be taken of the fact that in the deceased's line of work, no documentary evidence is available; or (2) the deceased is employed as a daily wage worker earning less than the minimum wage under current labor laws. … Even if we take judicial notice of the fact that a small tailoring shop normally does not issue receipts to its customers, and would probably not have any documentary evidence of the income it earns, Celedonio's alleged monthly income of ₱13,000.00 greatly exceeded the prevailing monthly minimum wage; thus, the exception set forth above does not apply. In the past, we awarded temperate damages in lieu of actual damages for loss of earning capacity where earning capacity is plainly established but no evidence was presented to support the allegation of the injured party's actual income."
+      }
+    },
+    {
+      "id": "q-1066",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "In the same case, the heirs claimed ₱355,895 for the destroyed house, tailoring shop, sewing machines and appliances. They argued that the value of destroyed property, as opposed to the cost of repair, cannot be shown by receipts, and presented photographs of the damage and the widow's testimony. Are they entitled to actual damages? If not, what may they recover? Explain.",
+      "suggestedAnswer": {
+        "answer": "Not actual damages. Actual damages must not only be capable of proof but must actually be proved with a reasonable degree of certainty; credence can be given only to claims duly supported by receipts. Photographs show the extent of the damage but not its amount. But absent competent proof of actual damages, a party may still claim temperate damages, which may be allowed where definite proof of pecuniary loss cannot be adduced although the court is convinced the party suffered some pecuniary loss.",
+        "legalBasis": "In Tan v. OMC Carriers, quoting Viron Transportation, \"[a]ctual damages, to be recoverable, must not only be capable of proof, but must actually be proved with a reasonable degree of certainty ... credence can be given only to claims which are duly supported by receipts.\" \"Nonetheless, absent competent proof on the actual damages suffered, a party still has the option of claiming temperate damages.\" The photographs \"show the extent of the damage,\" but \"are not enough to establish the amount of the loss with certainty,\" so \"₱200,000.00 [is] a fair and sufficient award by way of temperate damages.\"",
+        "application": "The destruction is certain and due to gross negligence; only its value is unproved.",
+        "conclusion": "₱200,000 temperate damages. **Bar trap:** photographs can prove that a loss happened, not how much it was."
+      },
+      "keyPoints": [
+        "Actual damages: proved with reasonable certainty",
+        "Credence only to claims supported by receipts",
+        "Photographs show extent, not amount",
+        "Absent competent proof: option of temperate damages",
+        "Court convinced of some pecuniary loss"
+      ],
+      "caseIds": [
+        "case-0098"
+      ],
+      "source": {
+        "caseTitle": "Tan, et al. v. OMC Carriers, Inc., et al.",
+        "grNumber": "G.R. No. 190521",
+        "url": "https://lawphil.net/judjuris/juri2011/jan2011/gr_190521_2011.html",
+        "part": "Our Ruling, Temperate damages in lieu of actual damages",
+        "excerpt": "Actual damages, to be recoverable, must not only be capable of proof, but must actually be proved with a reasonable degree of certainty. Courts cannot simply rely on speculation, conjecture or guesswork in determining the fact and amount of damages. To justify an award of actual damages, there must be competent proof of the actual amount of loss, credence can be given only to claims which are duly supported by receipts. … Nonetheless, absent competent proof on the actual damages suffered, a party still has the option of claiming temperate damages, which may be allowed in cases where, from the nature of the case, definite proof of pecuniary loss cannot be adduced although the court is convinced that the aggrieved party suffered some pecuniary loss. … The photographs the petitioners presented as evidence show the extent of the damage done to the house, the tailoring shop and the petitioners' appliances and equipment. Irrefutably, this damage was directly attributable to Arambala's gross negligence in handling OMC's truck. Unfortunately, these photographs are not enough to establish the amount of the loss with certainty. From the attendant circumstances and given the property destroyed, we find the amount of ₱200,000.00 as a fair and sufficient award by way of temperate damages."
+      }
+    },
+    {
+      "id": "q-1067",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "(a) When may exemplary damages be granted in quasi-delicts, and why did the Court sustain their reduction from ₱500,000 to ₱200,000 in Tan v. OMC Carriers? (b) On what basis were attorney's fees restored?",
+      "suggestedAnswer": {
+        "answer": "(a) Exemplary damages are imposed by way of example or correction for the public good, in addition to moral, temperate, liquidated or compensatory damages; in quasi-delicts, they may be granted if the defendant acted with gross negligence. They serve as a warning and deterrent, but the grant should be tempered, as it is not intended to enrich one party or impoverish another, so the reduction was proper. (b) Because exemplary damages were awarded, attorney's fees were proper under Article 2208(1) of the Civil Code; 10% of the total was just and reasonable.",
+        "legalBasis": "\"In quasi-delicts, exemplary damages may be granted if the defendant acted with gross negligence.\" \"The law allows the grant of exemplary damages in cases such as this to serve as a warning to the pubic and as a deterrent ... The grant, however, should be tempered, as it is not intended to enrich one party or to impoverish another.\" \"In view of the award of exemplary damages, we find it also proper to award the petitioners attorney's fees, in consonance with Article 2208(1) of the Civil Code.\"",
+        "application": "The truck owner and driver were grossly negligent, but ₱200,000 sufficed as an example.",
+        "conclusion": "As stated. **Bar trap:** the legal interest rates in this 2011 decision (12% after finality) were later changed to 6% from July 1, 2013 (Nacar)."
+      },
+      "keyPoints": [
+        "Exemplary damages: by way of example, in addition to other damages",
+        "Quasi-delicts: gross negligence",
+        "Warning and deterrent",
+        "Tempered: not to enrich or impoverish",
+        "Attorney's fees under Art. 2208(1) when exemplary damages are awarded"
+      ],
+      "caseIds": [
+        "case-0098"
+      ],
+      "source": {
+        "caseTitle": "Tan, et al. v. OMC Carriers, Inc., et al.",
+        "grNumber": "G.R. No. 190521",
+        "url": "https://lawphil.net/judjuris/juri2011/jan2011/gr_190521_2011.html",
+        "part": "Our Ruling, Reduction of exemplary damages proper; Attorney's fees in order",
+        "excerpt": "Exemplary or corrective damages are imposed by way of example or correction for the public good, in addition to moral, temperate, liquidated or compensatory damages. In quasi-delicts, exemplary damages may be granted if the defendant acted with gross negligence. Celedonio Tan's death and the destruction of the petitioners' home and tailoring shop were unquestionably caused by the respondents' gross negligence. The law allows the grant of exemplary damages in cases such as this to serve as a warning to the pubic and as a deterrent against the repetition of this kind of deleterious actions. The grant, however, should be tempered, as it is not intended to enrich one party or to impoverish another. From this perspective, we find the CA's reduction of the exemplary damages awarded to the petitioners from ₱500,000.00 to ₱200,000.00 to be proper. … In view of the award of exemplary damages, we find it also proper to award the petitioners attorney's fees, in consonance with Article 2208(1) of the Civil Code."
+      }
+    },
+    {
+      "id": "q-1068",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "Two men were killed in separate road accidents caused by gross negligence. (a) Ana's husband was a self-employed street vendor; she testifies he earned about two-thirds of the minimum wage, and there are no records. (b) Ben's wife was a self-employed caterer; he testifies she earned five times the minimum wage, also without records. How should the court treat each heir's claim for loss of earning capacity? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) Damages for loss of earning capacity may be awarded despite the absence of documentary evidence, because the deceased was self-employed and earning less than the minimum wage; judicial notice may be taken that no documents are available in that line of work. (b) The exception does not apply because the claimed income exceeds the minimum wage, so actual damages for lost earning capacity cannot rest on testimony alone; but if her earning capacity is plainly established, temperate damages may be awarded in lieu.",
+        "legalBasis": "In Tan v. OMC Carriers, damages for loss of earning capacity may be awarded without documents when \"the deceased is self-employed and earning less than the minimum wage under current labor laws, in which case, judicial notice may be taken of the fact that in the deceased's line of work, no documentary evidence is available.\" Where the income \"greatly exceeded the prevailing monthly minimum wage ... the exception set forth above does not apply,\" but temperate damages may be awarded \"where earning capacity is plainly established but no evidence was presented to support the allegation of the injured party's actual income.\"",
+        "application": "(a) The vendor fits the exception. (b) The caterer's claimed income takes her out of it.",
+        "conclusion": "(a) Damages for lost earning capacity; (b) temperate damages in lieu. **Bar trap:** the exception turns on earning below the minimum wage, not merely on being self-employed."
+      },
+      "keyPoints": [
+        "Exception: self-employed earning below the minimum wage",
+        "Judicial notice that no documents exist in that line of work",
+        "Income above minimum wage: no exception",
+        "Then temperate damages if earning capacity is plainly established"
+      ],
+      "caseIds": [
+        "case-0098"
+      ],
+      "source": {
+        "caseTitle": "Tan, et al. v. OMC Carriers, Inc., et al.",
+        "grNumber": "G.R. No. 190521",
+        "url": "https://lawphil.net/judjuris/juri2011/jan2011/gr_190521_2011.html",
+        "part": "Our Ruling, Temperate damages in lieu of loss of earning capacity",
+        "excerpt": "By way of exception, damages for loss of earning capacity may be awarded despite the absence of documentary evidence when: (1) the deceased is self-employed and earning less than the minimum wage under current labor laws, in which case, judicial notice may be taken of the fact that in the deceased's line of work, no documentary evidence is available; or (2) the deceased is employed as a daily wage worker earning less than the minimum wage under current labor laws. … In the past, we awarded temperate damages in lieu of actual damages for loss of earning capacity where earning capacity is plainly established but no evidence was presented to support the allegation of the injured party's actual income."
+      }
+    },
+    {
+      "id": "q-1069",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "Carla's store was wrecked by Dino's runaway truck. She presents (a) official receipts for ₱40,000 spent on emergency repairs and (b) photographs showing her destroyed refrigerator, shelves and stock, with no receipts or appraisal of their value. How should the court treat each item? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) Actual damages of ₱40,000, because the expense is duly supported by receipts. (b) Not actual damages, since photographs do not establish the amount of the loss with certainty; but because the court can be convinced from them that a pecuniary loss was suffered, it may award a fair amount of temperate damages.",
+        "legalBasis": "In Tan v. OMC Carriers, actual damages were limited to the amount \"duly supported by official receipts\" (₱72,295 for funeral expenses), since \"credence can be given only to claims which are duly supported by receipts.\" For the destroyed property, \"these photographs are not enough to establish the amount of the loss with certainty,\" so the Court awarded \"₱200,000.00 as a fair and sufficient award by way of temperate damages.\"",
+        "application": "(a) Receipts prove the repair cost. (b) Photographs prove only the fact and extent of the destruction.",
+        "conclusion": "(a) Actual damages; (b) temperate damages. **Bar trap:** one case can include both actual damages for the proved items and temperate damages for the unproved ones."
+      },
+      "keyPoints": [
+        "Receipted expenses: actual damages",
+        "Photographs: fact and extent of loss, not amount",
+        "Unproved amount of a certain loss: temperate damages",
+        "Both kinds may be awarded for different items"
+      ],
+      "caseIds": [
+        "case-0098"
+      ],
+      "source": {
+        "caseTitle": "Tan, et al. v. OMC Carriers, Inc., et al.",
+        "grNumber": "G.R. No. 190521",
+        "url": "https://lawphil.net/judjuris/juri2011/jan2011/gr_190521_2011.html",
+        "part": "Our Ruling, Temperate damages in lieu of actual damages; the CA's award of funeral expenses",
+        "excerpt": "The CA observed that only the latter amount was duly supported by official receipts. … The photographs the petitioners presented as evidence show the extent of the damage done to the house, the tailoring shop and the petitioners' appliances and equipment. Irrefutably, this damage was directly attributable to Arambala's gross negligence in handling OMC's truck. Unfortunately, these photographs are not enough to establish the amount of the loss with certainty. From the attendant circumstances and given the property destroyed, we find the amount of ₱200,000.00 as a fair and sufficient award by way of temperate damages."
+      }
+    },
+    {
+      "id": "q-1070",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "Eva's bus company let a bus with known brake defects run; it crashed and injured Felix. The trial court found gross negligence and awarded Felix ₱5 million in exemplary damages, saying the company \"deserved to be punished severely.\" On appeal, the company argues the amount is excessive. Applying Tan v. OMC Carriers, how should the appellate court approach the award? Reason briefly.",
+      "suggestedAnswer": {
+        "answer": "Exemplary damages may be granted because, in quasi-delicts, they are allowed when the defendant acted with gross negligence, to serve as a warning and deterrent. But the grant should be tempered: it is not intended to enrich one party or to impoverish another. The appellate court may therefore reduce an amount that goes beyond what is needed as an example.",
+        "legalBasis": "In Tan v. OMC Carriers, \"[i]n quasi-delicts, exemplary damages may be granted if the defendant acted with gross negligence ... The law allows the grant of exemplary damages in cases such as this to serve as a warning to the pubic and as a deterrent against the repetition of this kind of deleterious actions. The grant, however, should be tempered, as it is not intended to enrich one party or to impoverish another.\" The Court sustained the reduction from ₱500,000 to ₱200,000.",
+        "application": "Running a bus with known defects is gross negligence, but ₱5 million aimed at severe punishment may exceed what deterrence requires.",
+        "conclusion": "Exemplary damages are proper, in a tempered amount. **Bar trap:** exemplary damages deter; they are not a license to enrich the claimant."
+      },
+      "keyPoints": [
+        "Quasi-delict: exemplary damages for gross negligence",
+        "Purpose: warning and deterrent",
+        "Must be tempered",
+        "Not to enrich or impoverish"
+      ],
+      "caseIds": [
+        "case-0098"
+      ],
+      "source": {
+        "caseTitle": "Tan, et al. v. OMC Carriers, Inc., et al.",
+        "grNumber": "G.R. No. 190521",
+        "url": "https://lawphil.net/judjuris/juri2011/jan2011/gr_190521_2011.html",
+        "part": "Our Ruling, Reduction of exemplary damages proper",
+        "excerpt": "In quasi-delicts, exemplary damages may be granted if the defendant acted with gross negligence. Celedonio Tan's death and the destruction of the petitioners' home and tailoring shop were unquestionably caused by the respondents' gross negligence. The law allows the grant of exemplary damages in cases such as this to serve as a warning to the pubic and as a deterrent against the repetition of this kind of deleterious actions. The grant, however, should be tempered, as it is not intended to enrich one party or to impoverish another."
+      }
+    },
+    {
+      "id": "q-1071",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "Under Tan v. OMC Carriers, damages for loss of earning capacity may be awarded despite the absence of documentary evidence when the deceased",
+      "choices": {
+        "A": "was a professional earning more than the minimum wage.",
+        "B": "was self-employed and earning less than the minimum wage, or a daily wage worker earning less than the minimum wage.",
+        "C": "had minor children.",
+        "D": "was killed through gross negligence."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The exceptions are when \"(1) the deceased is self-employed and earning less than the minimum wage ... or (2) the deceased is employed as a daily wage worker earning less than the minimum wage.\" **A is wrong:** higher income takes the case out of the exception. **C and D are wrong:** they bear on the amount or on other damages, not on this exception. **Bar trap:** outside the exceptions, temperate damages may replace unproved lost earnings.",
+      "caseIds": [
+        "case-0098"
+      ],
+      "source": {
+        "caseTitle": "Tan, et al. v. OMC Carriers, Inc., et al.",
+        "grNumber": "G.R. No. 190521",
+        "url": "https://lawphil.net/judjuris/juri2011/jan2011/gr_190521_2011.html",
+        "part": "Our Ruling, Temperate damages in lieu of loss of earning capacity",
+        "excerpt": "By way of exception, damages for loss of earning capacity may be awarded despite the absence of documentary evidence when: (1) the deceased is self-employed and earning less than the minimum wage under current labor laws, in which case, judicial notice may be taken of the fact that in the deceased's line of work, no documentary evidence is available; or (2) the deceased is employed as a daily wage worker earning less than the minimum wage under current labor laws."
+      }
+    },
+    {
+      "id": "q-1072",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "In quasi-delicts, according to Tan v. OMC Carriers, exemplary damages may be granted if the defendant acted",
+      "choices": {
+        "A": "with simple negligence.",
+        "B": "in good faith.",
+        "C": "with gross negligence.",
+        "D": "with one or more aggravating circumstances."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** \"In quasi-delicts, exemplary damages may be granted if the defendant acted with gross negligence.\" **A and B are wrong:** they are not grounds. **D is wrong:** aggravating circumstances are the ground in crimes. **Bar trap:** even when granted, the amount \"should be tempered.\"",
+      "caseIds": [
+        "case-0098"
+      ],
+      "source": {
+        "caseTitle": "Tan, et al. v. OMC Carriers, Inc., et al.",
+        "grNumber": "G.R. No. 190521",
+        "url": "https://lawphil.net/judjuris/juri2011/jan2011/gr_190521_2011.html",
+        "part": "Our Ruling, Reduction of exemplary damages proper",
+        "excerpt": "In quasi-delicts, exemplary damages may be granted if the defendant acted with gross negligence."
+      }
+    },
+    {
+      "id": "q-1073",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "In Tan v. OMC Carriers, the Court awarded for the loss of Celedonio Tan's earning capacity",
+      "choices": {
+        "A": "₱500,000 as actual damages, as the trial court did.",
+        "B": "nothing, because no documents were presented.",
+        "C": "nominal damages only.",
+        "D": "₱300,000, roughly his gross income for two years, as temperate damages."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** \"[W]e hold that the petitioners are entitled to temperate damages in the amount of ₱300,000.00 [or roughly, the gross income for two (2) years] to compensate for damages for loss of the earning capacity of the deceased.\" **A is wrong:** actual damages were unproved. **B is wrong:** earning capacity was plainly established. **C is wrong:** real pecuniary loss existed. **Bar trap:** the Court considered that his minor children relied on his income.",
+      "caseIds": [
+        "case-0098"
+      ],
+      "source": {
+        "caseTitle": "Tan, et al. v. OMC Carriers, Inc., et al.",
+        "grNumber": "G.R. No. 190521",
+        "url": "https://lawphil.net/judjuris/juri2011/jan2011/gr_190521_2011.html",
+        "part": "Our Ruling, the disposition",
+        "excerpt": "Under these facts and taking into account the unrebutted annual earnings of the deceased, we hold that the petitioners are entitled to temperate damages in the amount of ₱300,000.00 [or roughly, the gross income for two (2) years] to compensate for damages for loss of the earning capacity of the deceased."
       }
     }
   ]
