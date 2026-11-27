@@ -616,6 +616,21 @@
       "ruling": "The petition was granted. (1) Res judicata is a ground for a motion to dismiss, not for a demurrer to evidence, and in any case there was no identity of parties or causes of action with Ysmael. Since the demurrer was reversed on appeal, the respondents lost the right to present evidence and the Court decided the case on the Republic's evidence alone, by preponderance of evidence. (2) The license was illegally granted through a \"backdoor\" request, without bidding and without the requirements for negotiation, and Juan Tuvera, by his memorandum, could be taken to have influenced the grant in which he had an indirect interest, contrary to delicadeza and the Anti-Graft law. But actual damages must be proved, not presumed, and the Republic offered no proof of the amount. Moral damages were denied: a juridical person is not entitled to them under Article 2217, and the case is not among the analogous cases in Article 2219, such as defamation. Temperate damages of ₱1,000,000 were awarded, since jurisprudence allows them even where pecuniary loss could have been proved with certainty but was not, a rule drawn from equity. Entitlement to temperate damages in turn allowed exemplary damages under Article 2234, also ₱1,000,000, for the grave abuse of public office and the unjust enrichment at the people's expense.",
       "keyDoctrine": "Actual damages must be proved, not presumed. A juridical person such as the State is not entitled to moral damages under Article 2217; it may claim them only under the analogous cases of Article 2219, such as defamation. Temperate damages (Art. 2224) may be awarded when some pecuniary loss was suffered but its amount was not adequately proved, even where it could have been proved with certainty, a rule drawn from equity. A showing of entitlement to temperate damages allows exemplary damages under Article 2234; exemplary damages are not a matter of right but serve as a deterrent to socially deleterious acts. Res judicata is a ground for a motion to dismiss, not a demurrer; when a demurrer is reversed on appeal, the defendant loses the right to present evidence.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2007/feb2007/gr_148246_2007.html"
+    },
+    {
+      "id": "case-0089",
+      "status": "draft",
+      "name": "First Lepanto-Taisho Insurance Corporation (now FLT Prime Insurance Corporation) v. Chevron Philippines, Inc.",
+      "grNumber": "G.R. No. 177839",
+      "year": 2012,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "facts": "First Lepanto-Taisho Insurance (FLT) issued a ₱15.7 million surety bond for Fumitechniks, a fuel distributor, to guarantee payment of fuel products it withdrew on credit from Caltex (now Chevron) \"in accordance with the terms and conditions of the agreement.\" The bond's form recited that the principal had entered into an agreement with Caltex, \"a copy of which is attached hereto and made a part hereof.\" No written agreement existed: Caltex did not reduce distributorship accounts to writing, and it never told FLT the terms. Fumitechniks defaulted on about ₱15 million of purchases, and Caltex sued FLT on the bond. FLT counterclaimed for moral damages and attorney's fees. The trial court dismissed both the complaint and the counterclaim; the Court of Appeals ordered FLT to pay.",
+      "issue": "(1) Is a surety liable to the creditor in the absence of a written contract between the creditor and the principal, as the bond required? (2) Is the surety entitled to moral damages and attorney's fees on its counterclaim?",
+      "ruling": "The petition was partly granted and the trial court's decision reinstated. (1) A surety's liability is determined strictly by the terms of the bond in relation to the principal contract (Insurance Code, Sec. 176) and cannot be extended by implication. The bond specifically referred to a written agreement; the creditor, having accepted the bond, was bound to have the terms reduced to writing or at least communicated in writing to the surety, and it never did. Suretyship, an onerous undertaking, is strictly construed against the creditor. The non-compliance affected the creditor's right to demand performance, not the bond's validity, so FLT was not liable. (2) But the counterclaim was also properly dismissed. The filing alone of a civil action is not a ground for moral damages. A juridical person is generally not entitled to moral damages; although recent cases allow them for corporations, they are not automatic: there must be proof of the factual basis of the damage and its causal relation to the defendant's acts, since moral damages compensate actual injury and do not punish. FLT offered no such proof. Nor was it entitled to attorney's fees, as no premium is placed on the right to litigate and Chevron sued in the belief that it could collect.",
+      "keyDoctrine": "The filing alone of a civil action, even a clearly unfounded one, is not a ground for moral damages. A juridical person is generally not entitled to moral damages; where allowed, they are not automatic and require proof of the factual basis of the damage and its causal relation to the defendant's acts, because they compensate actual injury and do not punish. No premium is placed on the right to litigate, so a winning party is not automatically entitled to attorney's fees. A surety's liability is determined strictly by the bond in relation to the principal contract and is strictly construed against the creditor.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2012/jan2012/gr_177839_2012.html"
     }
   ],
   "questions": [
@@ -12646,6 +12661,276 @@
         "url": "https://lawphil.net/judjuris/juri2007/feb2007/gr_148246_2007.html",
         "part": "Ruling, the disposition",
         "excerpt": "Respondents Juan C. Tuvera, Victor P. Tuvera and Twin Peaks Development Corporation are hereby ordered to jointly and severally pay to the Republic of the Philippines One Million (₱1,000,000.00) Pesos, as and for temperate damages, and One Million (₱1,000,000.00) Pesos, as and for exemplary damages, plus costs of suit."
+      }
+    },
+    {
+      "id": "q-0984",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "An insurance company, sued by a creditor on a surety bond, wins the case. On its counterclaim, it asks for moral damages, arguing that being dragged into a baseless suit harmed it, and that recent cases allow corporations to recover moral damages. It offers no evidence of any injury to its reputation or business. Is it entitled to moral damages? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. The filing alone of a civil action is not a ground for moral damages, just as a clearly unfounded civil action is not among the grounds for them. Moreover, a juridical person is generally not entitled to moral damages; even where recent cases allow them for corporations, they are not automatically granted: there must be proof of the factual basis of the damage and its causal relation to the defendant's acts.",
+        "legalBasis": "In First Lepanto-Taisho Insurance Corp. v. Chevron Philippines, Inc., the Court held that \"[t]he filing alone of a civil action should not be a ground for an award of moral damages in the same way that a clearly unfounded civil action is not among the grounds for moral damages.\" \"[A] juridical person is generally not entitled to moral damages ... Although in some recent cases we have held that the Court may allow the grant of moral damages to corporations, it is not automatically granted; there must still be proof of the existence of the factual basis of the damage and its causal relation to the defendant's acts. This is so because moral damages ... are in the category of an award designed to compensate the claimant for actual injury suffered and not to impose a penalty on the wrongdoer.\"",
+        "application": "The insurer relies only on the filing of the suit and offers no proof of any factual basis or causal link.",
+        "conclusion": "No moral damages. **Bar trap:** even where a corporation may recover moral damages, it must still prove the factual basis of the damage and the causal link; winning the case is not proof."
+      },
+      "keyPoints": [
+        "Filing a civil action alone is not a ground for moral damages",
+        "A clearly unfounded suit is not among the grounds either",
+        "A juridical person is generally not entitled to moral damages",
+        "Where allowed, not automatic: proof of factual basis and causal relation",
+        "Moral damages compensate; they do not punish"
+      ],
+      "caseIds": [
+        "case-0089"
+      ],
+      "source": {
+        "caseTitle": "First Lepanto-Taisho Insurance Corporation (now FLT Prime Insurance Corporation) v. Chevron Philippines, Inc.",
+        "grNumber": "G.R. No. 177839",
+        "url": "https://lawphil.net/judjuris/juri2012/jan2012/gr_177839_2012.html",
+        "part": "Decision, on the counterclaim for moral damages and attorney's fees",
+        "excerpt": "Finally, we hold that the trial court correctly dismissed petitioner's counterclaim for moral damages and attorney's fees. The filing alone of a civil action should not be a ground for an award of moral damages in the same way that a clearly unfounded civil action is not among the grounds for moral damages. Besides, a juridical person is generally not entitled to moral damages because, unlike a natural person, it cannot experience physical suffering or such sentiments as wounded feelings, serious anxiety, mental anguish or moral shock. Although in some recent cases we have held that the Court may allow the grant of moral damages to corporations, it is not automatically granted; there must still be proof of the existence of the factual basis of the damage and its causal relation to the defendant's acts. This is so because moral damages, though incapable of pecuniary estimation, are in the category of an award designed to compensate the claimant for actual injury suffered and not to impose a penalty on the wrongdoer. There is no evidence presented to establish the factual basis of petitioner's claim for moral damages."
+      }
+    },
+    {
+      "id": "q-0985",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "A surety bond guaranteed a distributor's payment for fuel withdrawn on credit \"in accordance with the terms and conditions of the agreement,\" and recited that a copy of the agreement was \"attached hereto and made a part hereof.\" The creditor accepted the bond, but it never made a written agreement with the distributor and never told the surety the terms. When the distributor defaulted, the creditor sued the surety. Is the surety liable? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. A surety's liability is determined strictly by the terms of the suretyship in relation to the principal contract, and cannot be extended by implication. Since the bond specifically referred to a written agreement, the creditor, having accepted it, was bound to reduce the terms to writing or at least communicate them in writing to the surety. Its failure did not void the bond but defeated its right to demand performance.",
+        "legalBasis": "Under Section 176 of the Insurance Code, the surety's liability \"is determined strictly by the terms of the contract of suretyship in relation to the principal contract between the obligor and the obligee.\" In First Lepanto-Taisho v. Chevron, \"the stipulations in such principal agreement must at least be communicated or made known to the surety,\" and \"being an onerous undertaking, a surety agreement is strictly construed against the creditor, and every doubt is resolved in favor of the solidary debtor. Having accepted the bond, respondent as creditor must be held bound by the recital in the surety bond.\" \"Such non-compliance by the creditor ... impacts not on the validity or legality of the surety contract but on the creditor's right to demand performance.\"",
+        "application": "The creditor neither had a written agreement nor communicated the terms, though the bond it accepted called for one.",
+        "conclusion": "The surety is not liable. **Bar trap:** the bond remains valid; what fails is the creditor's right to demand performance."
+      },
+      "keyPoints": [
+        "Liability determined strictly by the bond in relation to the principal contract (Sec. 176)",
+        "Cannot be extended by implication",
+        "Terms must at least be communicated to the surety",
+        "Strictly construed against the creditor",
+        "Non-compliance affects the right to demand, not validity"
+      ],
+      "caseIds": [
+        "case-0089"
+      ],
+      "source": {
+        "caseTitle": "First Lepanto-Taisho Insurance Corporation (now FLT Prime Insurance Corporation) v. Chevron Philippines, Inc.",
+        "grNumber": "G.R. No. 177839",
+        "url": "https://lawphil.net/judjuris/juri2012/jan2012/gr_177839_2012.html",
+        "part": "Decision, on the liability of the surety",
+        "excerpt": "A surety contract is merely a collateral one, its basis is the principal contract or undertaking which it secures. Necessarily, the stipulations in such principal agreement must at least be communicated or made known to the surety particularly in this case where the bond expressly guarantees the payment of respondent's fuel products withdrawn by Fumitechniks in accordance with the terms and conditions of their agreement. The bond specifically makes reference to a written agreement. It is basic that if the terms of a contract are clear and leave no doubt upon the intention of the contracting parties, the literal meaning of its stipulations shall control. Moreover, being an onerous undertaking, a surety agreement is strictly construed against the creditor, and every doubt is resolved in favor of the solidary debtor. Having accepted the bond, respondent as creditor must be held bound by the recital in the surety bond that the terms and conditions of its distributorship contract be reduced in writing or at the very least communicated in writing to the surety. Such non-compliance by the creditor (respondent) impacts not on the validity or legality of the surety contract but on the creditor's right to demand performance."
+      }
+    },
+    {
+      "id": "q-0986",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Define suretyship as discussed in First Lepanto-Taisho v. Chevron. Why is it called an ancillary contract, and how is the extent of the surety's liability determined?",
+      "suggestedAnswer": {
+        "answer": "Suretyship is a contract whereby a party, the surety, guarantees the performance by another party, the principal or obligor, of an obligation or undertaking in favor of a third party, the obligee. It is ancillary because it presupposes a principal contract; the surety binds itself solidarily with the principal debtor though it has no direct interest in or benefit from the obligation. The extent of its liability is determined by the language of the bond itself and cannot be extended by implication beyond its terms.",
+        "legalBasis": "\"Section 175 of the Insurance Code defines a suretyship as a contract or agreement whereby a party, called the surety, guarantees the performance by another party, called the principal or obligor, of an obligation or undertaking in favor of a third party, called the obligee.\" \"Such undertaking makes a surety agreement an ancillary contract as it presupposes the existence of a principal contract.\" \"The extent of a surety's liability is determined by the language of the suretyship contract or bond itself. It cannot be extended by implication, beyond the terms of the contract.\"",
+        "application": "So, to know whether a surety is liable, one examines the bond's own terms together with the principal contract it secures.",
+        "conclusion": "As stated. **Bar trap:** although secondary, the surety is a regular party to the undertaking and is solidarily bound, but only within the bond's terms."
+      },
+      "keyPoints": [
+        "Surety guarantees the principal's performance in favor of the obligee",
+        "Ancillary: presupposes a principal contract",
+        "Solidarily bound with the principal debtor",
+        "No direct interest or benefit needed",
+        "Extent of liability: the bond's language, not extended by implication"
+      ],
+      "caseIds": [
+        "case-0089"
+      ],
+      "source": {
+        "caseTitle": "First Lepanto-Taisho Insurance Corporation (now FLT Prime Insurance Corporation) v. Chevron Philippines, Inc.",
+        "grNumber": "G.R. No. 177839",
+        "url": "https://lawphil.net/judjuris/juri2012/jan2012/gr_177839_2012.html",
+        "part": "Decision, on suretyship (Sections 175 and 176 of the Insurance Code)",
+        "excerpt": "Section 175 of the Insurance Code defines a suretyship as a contract or agreement whereby a party, called the surety, guarantees the performance by another party, called the principal or obligor, of an obligation or undertaking in favor of a third party, called the obligee. It includes official recognizances, stipulations, bonds or undertakings issued under Act 536, as amended. Suretyship arises upon the solidary binding of a person – deemed the surety – with the principal debtor, for the purpose of fulfilling an obligation. Such undertaking makes a surety agreement an ancillary contract as it presupposes the existence of a principal contract. … The extent of a surety's liability is determined by the language of the suretyship contract or bond itself. It cannot be extended by implication, beyond the terms of the contract."
+      }
+    },
+    {
+      "id": "q-0987",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Ana's trading corporation sued Ben's company for a debt, honestly believing it was owed. Ben's company won and counterclaimed for moral damages and attorney's fees. (a) Ben's company proved only that it won the case. (b) In a different suit, Carla, a natural person, proved that a rival filed a case against her and she was distressed, but nothing more. Are moral damages and attorney's fees recoverable in either case? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) No to both. The filing alone of a civil action is not a ground for moral damages; a juridical person is generally not entitled to them and, where allowed, needs proof of their factual basis and causal relation; and a winning party is not automatically entitled to attorney's fees, especially where the plaintiff sued believing it could collect. (b) Not on that showing either. Even for a natural person, the filing alone of a civil action, or even a clearly unfounded one, is not a ground for moral damages.",
+        "legalBasis": "In First Lepanto-Taisho v. Chevron, \"[t]he filing alone of a civil action should not be a ground for an award of moral damages in the same way that a clearly unfounded civil action is not among the grounds for moral damages.\" For corporations, moral damages are \"not automatically granted; there must still be proof of the existence of the factual basis of the damage and its causal relation to the defendant's acts.\" On fees, \"no premium should be placed on the right to litigate and ... not every winning party is entitled to an automatic grant of attorney's fees,\" since the plaintiff \"was acting on the belief that it can collect.\"",
+        "application": "(a) Ben's company shows only victory. (b) Carla shows only the filing of a suit against her.",
+        "conclusion": "Neither recovers on those facts. **Bar trap:** the ground must be something more than being sued; the claimant must prove a legal basis for the damages."
+      },
+      "keyPoints": [
+        "Filing a civil action alone: no moral damages",
+        "Same for a clearly unfounded civil action",
+        "Juridical person: proof of factual basis and causal relation",
+        "No premium on the right to litigate",
+        "Winning does not automatically earn attorney's fees"
+      ],
+      "caseIds": [
+        "case-0089"
+      ],
+      "source": {
+        "caseTitle": "First Lepanto-Taisho Insurance Corporation (now FLT Prime Insurance Corporation) v. Chevron Philippines, Inc.",
+        "grNumber": "G.R. No. 177839",
+        "url": "https://lawphil.net/judjuris/juri2012/jan2012/gr_177839_2012.html",
+        "part": "Decision, on the counterclaim for moral damages and attorney's fees",
+        "excerpt": "The filing alone of a civil action should not be a ground for an award of moral damages in the same way that a clearly unfounded civil action is not among the grounds for moral damages. … Petitioner is likewise not entitled to attorney's fees. The settled rule is that no premium should be placed on the right to litigate and that not every winning party is entitled to an automatic grant of attorney's fees. In pursuing its claim on the surety bond, respondent was acting on the belief that it can collect on the obligation of Fumitechniks notwithstanding the non-submission of the written principal contract."
+      }
+    },
+    {
+      "id": "q-0988",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Dino's company sells cement on credit to Eva's hardware store. A surety bond was issued guaranteeing Eva's payments \"in accordance with the terms and conditions of the written agreement, a copy of which is attached hereto.\" (a) Dino's company never made a written agreement with Eva and never sent the surety any terms. (b) In another deal, Dino's company had no formal contract with Eva either, but promptly sent the surety a letter setting out the credit terms, which the surety received without objection. If Eva defaults, may Dino's company collect from the surety in each case? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) No. The bond expressly refers to a written agreement; having accepted it, the creditor was bound to reduce the terms to writing or at the very least communicate them in writing to the surety, and it did neither. (b) Likely yes. The Court required the terms to be \"reduced in writing or at the very least communicated in writing to the surety\"; here they were communicated in writing, so the creditor complied with the condition on which its right to demand performance depends.",
+        "legalBasis": "In First Lepanto-Taisho v. Chevron, the creditor \"must be held bound by the recital in the surety bond that the terms and conditions of its distributorship contract be reduced in writing or at the very least communicated in writing to the surety.\" \"Respondent is charged with notice of the specified form of the agreement or at least the disclosure of basic terms and conditions ... However, it never made any effort to relay those terms and conditions.\" The surety contract \"imports entire good faith and confidence between the parties,\" and the creditor must observe \"every duty necessary for the protection of\" the surety's rights.",
+        "application": "(a) Nothing was put in writing or disclosed. (b) The terms were disclosed in writing to the surety.",
+        "conclusion": "(a) Cannot collect; (b) may collect, within the bond's limits. **Bar trap:** what matters is the surety's knowledge of the secured terms in the form the bond requires, not the mere payment of premiums or delivery of the bond."
+      },
+      "keyPoints": [
+        "Bond referring to a written agreement binds the creditor who accepts it",
+        "Terms must be reduced in writing or at least communicated in writing",
+        "Creditor must observe duties protecting the surety's rights",
+        "Disclosure in writing satisfies the condition"
+      ],
+      "caseIds": [
+        "case-0089"
+      ],
+      "source": {
+        "caseTitle": "First Lepanto-Taisho Insurance Corporation (now FLT Prime Insurance Corporation) v. Chevron Philippines, Inc.",
+        "grNumber": "G.R. No. 177839",
+        "url": "https://lawphil.net/judjuris/juri2012/jan2012/gr_177839_2012.html",
+        "part": "Decision, on the liability of the surety",
+        "excerpt": "Having accepted the bond, respondent as creditor must be held bound by the recital in the surety bond that the terms and conditions of its distributorship contract be reduced in writing or at the very least communicated in writing to the surety. … It bears stressing that the contract of suretyship imports entire good faith and confidence between the parties in regard to the whole transaction, although it has been said that the creditor does not stand as a fiduciary in his relation to the surety. The creditor is generally held bound to a faithful observance of the rights of the surety and to the performance of every duty necessary for the protection of those rights. … Respondent is charged with notice of the specified form of the agreement or at least the disclosure of basic terms and conditions of its distributorship and credit agreements with its client Fumitechniks after its acceptance of the bond delivered by the latter. However, it never made any effort to relay those terms and conditions of its contract with Fumitechniks upon the commencement of its transactions with said client, which obligations are covered by the surety bond issued by petitioner."
+      }
+    },
+    {
+      "id": "q-0989",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Felix lost in the trial court and filed a motion for reconsideration that mostly repeated the arguments the court had already rejected. The winning party argues that the motion was pro forma, so it did not stop the period to appeal and the decision became final. Is the motion pro forma merely because it reiterates issues already passed upon? Reason briefly.",
+      "suggestedAnswer": {
+        "answer": "No. The mere fact that a motion for reconsideration reiterates issues already passed upon does not, by itself, make it pro forma. Its very purpose is to convince the court that its ruling is erroneous, so the movant necessarily dwells on issues already decided.",
+        "legalBasis": "In First Lepanto-Taisho v. Chevron, \"[t]he mere fact that a motion for reconsideration reiterates issues already passed upon by the court does not, by itself, make it a pro forma motion. Among the ends to which a motion for reconsideration is addressed is precisely to convince the court that its ruling is erroneous and improper, contrary to the law or evidence; the movant has to dwell of necessity on issues already passed upon.\"",
+        "application": "Felix's motion sought to show the court's ruling was wrong, which necessarily meant revisiting the same issues.",
+        "conclusion": "Not pro forma on that ground. **Bar trap:** repetition alone does not make a motion pro forma."
+      },
+      "keyPoints": [
+        "Reiterating issues does not by itself make a motion pro forma",
+        "Purpose: convince the court its ruling is erroneous",
+        "Movant necessarily dwells on issues already passed upon"
+      ],
+      "caseIds": [
+        "case-0089"
+      ],
+      "source": {
+        "caseTitle": "First Lepanto-Taisho Insurance Corporation (now FLT Prime Insurance Corporation) v. Chevron Philippines, Inc.",
+        "grNumber": "G.R. No. 177839",
+        "url": "https://lawphil.net/judjuris/juri2012/jan2012/gr_177839_2012.html",
+        "part": "Decision, on the pro forma motion for reconsideration",
+        "excerpt": "As to the contention of petitioner that respondent's motion for reconsideration filed before the trial court should have been deemed not filed for being pro forma, the Court finds it to be without merit. The mere fact that a motion for reconsideration reiterates issues already passed upon by the court does not, by itself, make it a pro forma motion. Among the ends to which a motion for reconsideration is addressed is precisely to convince the court that its ruling is erroneous and improper, contrary to the law or evidence; the movant has to dwell of necessity on issues already passed upon."
+      }
+    },
+    {
+      "id": "q-0990",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Under First Lepanto-Taisho v. Chevron, when the Court allows moral damages to a corporation,",
+      "choices": {
+        "A": "they are granted automatically once the corporation wins the case.",
+        "B": "they are not automatically granted; there must still be proof of the factual basis of the damage and its causal relation to the defendant's acts.",
+        "C": "they are presumed whenever the corporation was sued.",
+        "D": "they are imposed as a penalty on the wrongdoer."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** \"Although in some recent cases we have held that the Court may allow the grant of moral damages to corporations, it is not automatically granted; there must still be proof of the existence of the factual basis of the damage and its causal relation to the defendant's acts.\" **A and C are wrong:** winning or being sued is not enough, as \"[t]he filing alone of a civil action should not be a ground.\" **D is wrong:** moral damages compensate \"and not to impose a penalty on the wrongdoer.\" **Bar trap:** the general rule still denies moral damages to juridical persons.",
+      "caseIds": [
+        "case-0089"
+      ],
+      "source": {
+        "caseTitle": "First Lepanto-Taisho Insurance Corporation (now FLT Prime Insurance Corporation) v. Chevron Philippines, Inc.",
+        "grNumber": "G.R. No. 177839",
+        "url": "https://lawphil.net/judjuris/juri2012/jan2012/gr_177839_2012.html",
+        "part": "Decision, on the counterclaim for moral damages",
+        "excerpt": "Although in some recent cases we have held that the Court may allow the grant of moral damages to corporations, it is not automatically granted; there must still be proof of the existence of the factual basis of the damage and its causal relation to the defendant's acts. This is so because moral damages, though incapable of pecuniary estimation, are in the category of an award designed to compensate the claimant for actual injury suffered and not to impose a penalty on the wrongdoer."
+      }
+    },
+    {
+      "id": "q-0991",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Under Section 176 of the Insurance Code, as quoted in First Lepanto-Taisho v. Chevron, the liability of the surety",
+      "choices": {
+        "A": "is joint and several with the obligor, limited to the amount of the bond, and determined strictly by the terms of the suretyship in relation to the principal contract.",
+        "B": "is merely subsidiary and arises only after the obligor's properties are exhausted.",
+        "C": "may exceed the amount of the bond if the obligor's debt is larger.",
+        "D": "is determined by the premium paid, regardless of the bond's terms."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** \"The liability of the surety or sureties shall be joint and several with the obligor and shall be limited to the amount of the bond. It is determined strictly by the terms of the contract of suretyship in relation to the principal contract between the obligor and the obligee.\" **B is wrong:** a surety is solidarily bound, not subsidiarily. **C is wrong:** liability is limited to the bond. **D is wrong:** the terms of the bond and principal contract control. **Bar trap:** a surety's liability cannot be extended by implication.",
+      "caseIds": [
+        "case-0089"
+      ],
+      "source": {
+        "caseTitle": "First Lepanto-Taisho Insurance Corporation (now FLT Prime Insurance Corporation) v. Chevron Philippines, Inc.",
+        "grNumber": "G.R. No. 177839",
+        "url": "https://lawphil.net/judjuris/juri2012/jan2012/gr_177839_2012.html",
+        "part": "Decision, on the liability of the surety (Section 176 of the Insurance Code)",
+        "excerpt": "Sec. 176. The liability of the surety or sureties shall be joint and several with the obligor and shall be limited to the amount of the bond. It is determined strictly by the terms of the contract of suretyship in relation to the principal contract between the obligor and the obligee."
+      }
+    },
+    {
+      "id": "q-0992",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Why did the Court in First Lepanto-Taisho v. Chevron deny the winning surety's claim for attorney's fees?",
+      "choices": {
+        "A": "Because attorney's fees can never be awarded to a corporation.",
+        "B": "Because the surety did not pay its lawyers.",
+        "C": "Because no premium should be placed on the right to litigate, not every winning party is entitled to attorney's fees, and the creditor sued believing it could collect.",
+        "D": "Because attorney's fees may be awarded only together with moral damages."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** \"The settled rule is that no premium should be placed on the right to litigate and that not every winning party is entitled to an automatic grant of attorney's fees. In pursuing its claim on the surety bond, respondent was acting on the belief that it can collect.\" **A, B and D are wrong:** none is the Court's reason. **Bar trap:** winning alone does not earn attorney's fees.",
+      "caseIds": [
+        "case-0089"
+      ],
+      "source": {
+        "caseTitle": "First Lepanto-Taisho Insurance Corporation (now FLT Prime Insurance Corporation) v. Chevron Philippines, Inc.",
+        "grNumber": "G.R. No. 177839",
+        "url": "https://lawphil.net/judjuris/juri2012/jan2012/gr_177839_2012.html",
+        "part": "Decision, on the counterclaim for moral damages and attorney's fees",
+        "excerpt": "Petitioner is likewise not entitled to attorney's fees. The settled rule is that no premium should be placed on the right to litigate and that not every winning party is entitled to an automatic grant of attorney's fees. In pursuing its claim on the surety bond, respondent was acting on the belief that it can collect on the obligation of Fumitechniks notwithstanding the non-submission of the written principal contract."
       }
     }
   ]
