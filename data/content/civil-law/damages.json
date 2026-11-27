@@ -691,6 +691,21 @@
       "ruling": "The decision was affirmed with modification. BPI failed to prove the overpayment, but it was not guilty of gross negligence, which implies the absence of even slight care, a thoughtless disregard of consequences. Exemplary damages are recoverable in crimes with aggravating circumstances, in quasi-delicts for gross negligence, and in contracts and quasi-contracts for wanton, fraudulent, reckless, oppressive or malevolent conduct; BPI merely exercised a legal option in asking for attachment, and the sheriff, not BPI, carried it out, so no exemplary damages. The link between the suit and the deaths was far-fetched. Moral damages in breach of contract require bad faith, gross negligence amounting to bad faith, or wanton disregard of the contract; with their deletion, attorney's fees were deleted too. Still, respondents' damages were due to BPI's fault or negligence short of gross negligence; since some pecuniary loss was suffered whose amount could not be proved with certainty, reasonable temperate damages of ₱300,000, ₱300,000 and ₱150,000 were awarded, plus the unpaid placements with interest.",
       "keyDoctrine": "Temperate damages may be awarded when some pecuniary loss has been suffered but its amount cannot be proved with certainty, even where the defendant's fault falls short of gross negligence and moral and exemplary damages are denied. Gross negligence implies a want or absence of even slight care, a thoughtless disregard of consequences. Exemplary damages: in crimes with aggravating circumstances, in quasi-delicts with gross negligence, and in contracts and quasi-contracts with wanton, fraudulent, reckless, oppressive or malevolent conduct. Seeking a writ of attachment is exercising a legal option. Moral damages in breach of contract need bad faith, gross negligence amounting to bad faith, or wanton disregard of the contract; when they are deleted, attorney's fees awarded with them go too.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2001/nov2001/gr_126524_2001.html"
+    },
+    {
+      "id": "case-0094",
+      "status": "draft",
+      "name": "Government Service Insurance System v. Spouses Labung-Deang",
+      "grNumber": "G.R. No. 135644",
+      "year": 2001,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "facts": "In 1969 the spouses Deang took an ₱8,500 housing loan from the GSIS, secured by a mortgage on their land, and deposited the owner's duplicate of their title with it. In January 1979, before maturity, they paid off the loan and asked for the title, intending to use the land as collateral for a ₱50,000 loan from a private lender to renovate their house and invest in business. The GSIS could not find the title, which had been lost while in its custody. It had to go to court to reconstitute it, and released the reconstituted copy only in June 1979. The spouses sued for damages, claiming they lost the chance to get the loan. The trial court, affirmed by the Court of Appeals, ordered GSIS to pay ₱20,000 temperate damages and ₱15,000 attorney's fees, treating the case as a quasi-delict.",
+      "issue": "Is GSIS liable for damages for losing the title, and what damages are proper?",
+      "ruling": "The petition was denied, but attorney's fees were deleted. The obligation did not arise from quasi-delict, since there was a pre-existing contract: the loan secured by a mortgage, which gave rise to the duty to return the title once the mortgage was released. GSIS was liable under Article 1170 for negligence in the performance of its obligation, and, being presumed in good faith, under Article 2201 for the natural and probable consequences of the breach. No moral damages, since in breach of contract they require fraud, malice or bad faith, and economic hardship or worry is not enough. No actual damages, which must be proved by clear evidence, not speculation. But the spouses clearly suffered financial damage, so temperate damages were proper. GSIS argued that there must be proof of pecuniary loss; the Court answered that the rationale of temperate damages is precisely that definite proof cannot be offered, and when the court is convinced there has been a loss it may calculate moderate damages. ₱20,000 was reasonable. Attorney's fees, which are the exception and need factual, legal and equitable justification, were deleted.",
+      "keyDoctrine": "Temperate damages (Art. 2224), more than nominal but less than compensatory, are proper when the court is convinced some pecuniary loss was suffered though definite proof of its amount cannot be offered; that is their very rationale. Where there is a pre-existing contract, liability for negligence in performing it arises under Article 1170, not quasi-delict; an obligor in good faith answers for the natural and probable consequences of the breach (Art. 2201). Moral damages in breach of contract need fraud, malice or bad faith; economic hardship or worry is not enough. Actual damages must be proved by clear evidence. Attorney's fees are the exception, not the rule.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2001/sep2001/gr_135644_2001.html"
     }
   ],
   "questions": [
@@ -14072,6 +14087,277 @@
         "url": "https://lawphil.net/judjuris/juri2001/nov2001/gr_126524_2001.html",
         "part": "The Fallo",
         "excerpt": "BPI Investments is likewise ordered to pay temperate damages to the estate of the late Daniel G. Carreon in the amount of P300,000.00, and to the estate of Aurora J. Carreon in the amount of P300,000.00, and to the estate of Josefa M. Jeceil in the amount of P150,000.00."
+      }
+    },
+    {
+      "id": "q-1029",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "A mortgagee lost the owner's duplicate title the mortgagors had deposited with it, and returned a reconstituted copy only months after they paid off their loan. The mortgagors could not use the land as collateral for a new loan they had applied for. The mortgagee argues that temperate damages cannot be awarded because the mortgagors presented no proof of pecuniary loss. Is the mortgagee correct? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. Temperate damages, more than nominal but less than compensatory, may be recovered when the court finds that some pecuniary loss has been suffered but its amount cannot, from the nature of the case, be proved with certainty. Their very rationale is that definite proof of pecuniary loss cannot be offered; when the court is convinced there has been such loss, the judge may calculate moderate damages rather than leave the complainant without redress.",
+        "legalBasis": "In GSIS v. Spouses Labung-Deang, \"GSIS submits that there must be proof of pecuniary loss. This is untenable. The rationale behind temperate damages is precisely that from the nature of the case, definite proof of pecuniary loss cannot be offered. When the court is convinced that there has been such loss, the judge is empowered to calculate moderate damages, rather than let the complainant suffer without redress from the defendant's wrongful act.\" The spouses \"suffered financial damage because of the loss of the owners' duplicate copy of the title.\"",
+        "application": "The loss of the title kept the spouses from using their land as collateral; the financial harm is certain, though not measurable.",
+        "conclusion": "Temperate damages of ₱20,000 were reasonable. **Bar trap:** temperate damages need the court's conviction that a loss occurred, not definite proof of its amount."
+      },
+      "keyPoints": [
+        "More than nominal, less than compensatory (Art. 2224)",
+        "Some pecuniary loss, amount not provable with certainty",
+        "Rationale: definite proof cannot be offered",
+        "Court must be convinced there was a loss",
+        "Judge may calculate moderate damages"
+      ],
+      "caseIds": [
+        "case-0094"
+      ],
+      "source": {
+        "caseTitle": "Government Service Insurance System v. Spouses Labung-Deang",
+        "grNumber": "G.R. No. 135644",
+        "url": "https://lawphil.net/judjuris/juri2001/sep2001/gr_135644_2001.html",
+        "part": "The Court's Ruling, on temperate damages",
+        "excerpt": "However, it is also apparent that the spouses Deang suffered financial damage because of the loss of the owners' duplicate copy of the title. Temperate damages may be granted. \"Article 2224. Temperate or moderate damages, which are more than nominal but less than compensatory damages, may be recovered when the court finds that some pecuniary loss has been suffered but its amount cannot, from the nature of the case, be proved with certainty.\" GSIS submits that there must be proof of pecuniary loss. This is untenable. The rationale behind temperate damages is precisely that from the nature of the case, definite proof of pecuniary loss cannot be offered. When the court is convinced that there has been such loss, the judge is empowered to calculate moderate damages, rather than let the complainant suffer without redress from the defendant's wrongful act."
+      }
+    },
+    {
+      "id": "q-1030",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "The lower courts treated a mortgagee's loss of the mortgagors' title as a quasi-delict and applied Article 2180 on employers' liability. Was the obligation properly characterized? What provisions govern, and for what damages is the mortgagee liable if it acted in good faith? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. A quasi-delict exists only if there is no pre-existing contractual relation between the parties. Here there was a loan secured by a real estate mortgage, and the duty to return the owner's duplicate title arose as soon as the mortgage was released. Article 1170 governs: those guilty of negligence in the performance of their obligations are liable for damages. An obligor in good faith, which is presumed, is liable under Article 2201 for the natural and probable consequences of the breach that the parties foresaw or could reasonably have foreseen.",
+        "legalBasis": "In GSIS v. Labung-Deang, \"[u]nder the facts, there was a pre-existing contract between the parties. GSIS and the spouses Deang had a loan agreement secured by a real estate mortgage. The duty to return the owner's duplicate copy of title arose as soon as the mortgage was released.\" \"Since good faith is presumed and bad faith is a matter of fact which should be proved, we shall treat GSIS as a party who defaulted in its obligation ... As an obligor in good faith, GSIS is liable for all the 'natural and probable consequences of the breach of the obligation.'\"",
+        "application": "The mortgagee's negligence in losing the title was a breach of its contractual duty to return it.",
+        "conclusion": "Contract, under Articles 1170 and 2201. **Bar trap:** Article 2176 itself excludes cases with a pre-existing contractual relation; do not analyze a contractual breach as a quasi-delict."
+      },
+      "keyPoints": [
+        "Quasi-delict requires no pre-existing contractual relation",
+        "Loan and mortgage = pre-existing contract",
+        "Duty to return the title arose on release of the mortgage",
+        "Art. 1170: liability for negligence in performance",
+        "Art. 2201: obligor in good faith liable for natural and probable consequences"
+      ],
+      "caseIds": [
+        "case-0094"
+      ],
+      "source": {
+        "caseTitle": "Government Service Insurance System v. Spouses Labung-Deang",
+        "grNumber": "G.R. No. 135644",
+        "url": "https://lawphil.net/judjuris/juri2001/sep2001/gr_135644_2001.html",
+        "part": "The Court's Ruling, on the source of the obligation (contract, not quasi-delict)",
+        "excerpt": "Under the facts, there was a pre-existing contract between the parties. GSIS and the spouses Deang had a loan agreement secured by a real estate mortgage. The duty to return the owner's duplicate copy of title arose as soon as the mortgage was released. GSIS insists that it was under no obligation to return the owner's duplicate copy of the title immediately. This insistence is not warranted. Negligence is obvious as the owners' duplicate copy could not be returned to the owners. … Since good faith is presumed and bad faith is a matter of fact which should be proved, we shall treat GSIS as a party who defaulted in its obligation to return the owners' duplicate copy of the title. As an obligor in good faith, GSIS is liable for all the \"natural and probable consequences of the breach of the obligation.\""
+      }
+    },
+    {
+      "id": "q-1031",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "In the same case, the mortgagors also claimed moral damages for their worry and economic hardship, actual damages for profits they would have earned from the business they planned to fund with the lost loan, and attorney's fees. The mortgagee acted in good faith. Are these recoverable? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. In a breach of contract, moral damages are not awarded unless the defendant acted fraudulently or with malice or bad faith; economic hardship, worries and mental anxiety are not enough. Actual damages must be proved by clear evidence; a court cannot rely on speculation, conjecture or guesswork as to the fact and amount of damages. And attorney's fees are the exception, not the rule; they need factual, legal and equitable justification.",
+        "legalBasis": "In GSIS v. Labung-Deang, \"[i]n a breach of contract, moral damages are not awarded if the defendant is not shown to have acted fraudulently or with malice or bad faith. The fact that the complainant suffered economic hardship or worries and mental anxiety is not enough.\" \"Actual damages to be compensable must be proven by clear evidence. A court can not rely on 'speculation, conjecture or guess work.'\" \"The award of attorney's fees is the exception rather than the rule ... The award of attorney's fees demands factual, legal and equitable justification.\"",
+        "application": "No bad faith was shown; the profits were speculative; and nothing justified attorney's fees.",
+        "conclusion": "None of the three is recoverable; only temperate damages were proper. **Bar trap:** when actual damages fail for speculation, temperate damages may still be awarded if a loss is certain."
+      },
+      "keyPoints": [
+        "Moral damages in contract: fraud, malice or bad faith",
+        "Economic hardship, worry and anxiety not enough",
+        "Actual damages must be proved by clear evidence",
+        "No speculation, conjecture or guesswork",
+        "Attorney's fees: the exception; need justification"
+      ],
+      "caseIds": [
+        "case-0094"
+      ],
+      "source": {
+        "caseTitle": "Government Service Insurance System v. Spouses Labung-Deang",
+        "grNumber": "G.R. No. 135644",
+        "url": "https://lawphil.net/judjuris/juri2001/sep2001/gr_135644_2001.html",
+        "part": "The Court's Ruling, on moral, actual damages and attorney's fees",
+        "excerpt": "We come now to the amount of damages. In a breach of contract, moral damages are not awarded if the defendant is not shown to have acted fraudulently or with malice or bad faith. The fact that the complainant suffered economic hardship or worries and mental anxiety is not enough. There is likewise no factual basis for an award of actual damages. Actual damages to be compensable must be proven by clear evidence. A court can not rely on \"speculation, conjecture or guess work\" as to the fact and amount of damages, but must depend on actual proof. … Next, the attorney's fees. Attorney's fees which are granted as an item of damages are generally not recoverable. The award of attorney's fees is the exception rather than the rule and counsel's fees are not to be awarded every time a party wins a suit. The award of attorney's fees demands factual, legal and equitable justification; its basis cannot be left to speculation or conjecture."
+      }
+    },
+    {
+      "id": "q-1032",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "Ana paid off her car loan and asked her lender, Ben's finance company, to return the car's registration papers she had deposited as security. The company lost them, and Ana had to wait months for replacements. (a) During that time she could not sell the car to a buyer who had offered to buy it, and later sold it for less; she cannot prove the exact difference. (b) In another case, Carla's papers were also lost and replaced months later, but she had no plans to sell or borrow and shows no loss of any kind. Is temperate damages proper for each? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) Yes. The lender's negligence in returning the papers was a breach of its contractual duty, and Ana clearly suffered some financial damage whose amount cannot be proved with certainty; the court may calculate moderate damages. (b) No. Temperate damages require that the court be convinced some pecuniary loss was suffered; Carla shows none.",
+        "legalBasis": "In GSIS v. Labung-Deang, \"it is also apparent that the spouses Deang suffered financial damage because of the loss of the owners' duplicate copy of the title. Temperate damages may be granted.\" Temperate damages \"may be recovered when the court finds that some pecuniary loss has been suffered but its amount cannot, from the nature of the case, be proved with certainty,\" and \"[w]hen the court is convinced that there has been such loss, the judge is empowered to calculate moderate damages.\" The obligor in good faith is liable for \"the natural and probable consequences of the breach.\"",
+        "application": "(a) Ana's lost sale is a natural and probable consequence of the missing papers. (b) Carla's case lacks any loss.",
+        "conclusion": "(a) Temperate damages; (b) none. **Bar trap:** the court's conviction that a loss happened is what the remedy needs."
+      },
+      "keyPoints": [
+        "Failure to return deposited documents breaches the contract",
+        "Certain financial damage, uncertain amount: temperate damages",
+        "Court must be convinced of some loss",
+        "No loss shown: no temperate damages"
+      ],
+      "caseIds": [
+        "case-0094"
+      ],
+      "source": {
+        "caseTitle": "Government Service Insurance System v. Spouses Labung-Deang",
+        "grNumber": "G.R. No. 135644",
+        "url": "https://lawphil.net/judjuris/juri2001/sep2001/gr_135644_2001.html",
+        "part": "The Court's Ruling, on temperate damages",
+        "excerpt": "However, it is also apparent that the spouses Deang suffered financial damage because of the loss of the owners' duplicate copy of the title. Temperate damages may be granted. … When the court is convinced that there has been such loss, the judge is empowered to calculate moderate damages, rather than let the complainant suffer without redress from the defendant's wrongful act."
+      }
+    },
+    {
+      "id": "q-1033",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "Dino deposited his land title with Eva, his creditor, as security for a loan. After he paid, Eva's clerk lost the title. (a) Dino sues Eva on the theory of quasi-delict, arguing that she is liable as an employer for her clerk's negligence. (b) He also asks for moral damages because the delay caused him sleepless nights; there is no evidence that Eva acted with malice. What is the proper basis of Eva's liability, and is Dino entitled to moral damages? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) Eva is liable in contract, not quasi-delict: there was a pre-existing contractual relation, the loan and its security, and the duty to return the title arose when the debt was paid. She is liable under Article 1170 for negligence in performing her obligation and, being presumed in good faith, under Article 2201 for the natural and probable consequences of the breach. (b) No moral damages: in breach of contract, they require fraud, malice or bad faith; worries and mental anxiety are not enough.",
+        "legalBasis": "In GSIS v. Labung-Deang, quasi-delict applies \"if there is no pre-existing contractual relation between the parties\"; there, the loan and mortgage were a pre-existing contract and \"[t]he duty to return the owner's duplicate copy of title arose as soon as the mortgage was released,\" so Articles 1170 and 2201 applied. \"In a breach of contract, moral damages are not awarded if the defendant is not shown to have acted fraudulently or with malice or bad faith. The fact that the complainant suffered ... worries and mental anxiety is not enough.\"",
+        "application": "Eva's duty arose from her contract with Dino; no bad faith is shown.",
+        "conclusion": "Contractual liability; no moral damages. **Bar trap:** labeling the case a quasi-delict does not change its contractual source; and sleepless nights alone do not justify moral damages in a contract breach."
+      },
+      "keyPoints": [
+        "Pre-existing contract: not quasi-delict",
+        "Duty to return the title arises on payment",
+        "Arts. 1170 and 2201 govern",
+        "Good faith presumed; bad faith must be proved",
+        "Worry and anxiety alone: no moral damages"
+      ],
+      "caseIds": [
+        "case-0094"
+      ],
+      "source": {
+        "caseTitle": "Government Service Insurance System v. Spouses Labung-Deang",
+        "grNumber": "G.R. No. 135644",
+        "url": "https://lawphil.net/judjuris/juri2001/sep2001/gr_135644_2001.html",
+        "part": "The Court's Ruling, on the source of the obligation and on moral damages",
+        "excerpt": "Under the facts, there was a pre-existing contract between the parties. GSIS and the spouses Deang had a loan agreement secured by a real estate mortgage. The duty to return the owner's duplicate copy of title arose as soon as the mortgage was released. … In a breach of contract, moral damages are not awarded if the defendant is not shown to have acted fraudulently or with malice or bad faith. The fact that the complainant suffered economic hardship or worries and mental anxiety is not enough."
+      }
+    },
+    {
+      "id": "q-1034",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "Felix claims ₱500,000 in actual damages from Gina, who wrongfully delayed returning his land title, arguing that he \"would have\" used the land as collateral for a loan to start a business that \"would have\" earned that amount. He has no evidence of the business's likely income. (a) May he recover ₱500,000 as actual damages? (b) If the court is convinced he suffered some loss from the delay, what may it award instead? Reason briefly.",
+      "suggestedAnswer": {
+        "answer": "(a) No. Actual damages must be proved by clear evidence; a court cannot rely on speculation, conjecture or guesswork as to the fact and amount of damages. (b) Temperate damages: when the court is convinced there has been some pecuniary loss whose amount cannot be proved with certainty, it may calculate a moderate amount.",
+        "legalBasis": "In GSIS v. Labung-Deang, \"[a]ctual damages to be compensable must be proven by clear evidence. A court can not rely on 'speculation, conjecture or guess work' as to the fact and amount of damages, but must depend on actual proof.\" \"However, it is also apparent that the spouses Deang suffered financial damage ... Temperate damages may be granted.\" The Court found ₱20,000 reasonable.",
+        "application": "Felix's ₱500,000 is a guess about a business that never existed, but the delay did cause some loss.",
+        "conclusion": "(a) No actual damages; (b) temperate damages in a reasonable amount. **Bar trap:** temperate damages are a moderate amount, not the speculative figure the plaintiff claims."
+      },
+      "keyPoints": [
+        "Actual damages: proved by clear evidence",
+        "No speculation, conjecture or guesswork",
+        "Certain loss, uncertain amount: temperate damages",
+        "Amount must be moderate and reasonable"
+      ],
+      "caseIds": [
+        "case-0094"
+      ],
+      "source": {
+        "caseTitle": "Government Service Insurance System v. Spouses Labung-Deang",
+        "grNumber": "G.R. No. 135644",
+        "url": "https://lawphil.net/judjuris/juri2001/sep2001/gr_135644_2001.html",
+        "part": "The Court's Ruling, on actual damages and temperate damages",
+        "excerpt": "There is likewise no factual basis for an award of actual damages. Actual damages to be compensable must be proven by clear evidence. A court can not rely on \"speculation, conjecture or guess work\" as to the fact and amount of damages, but must depend on actual proof. However, it is also apparent that the spouses Deang suffered financial damage because of the loss of the owners' duplicate copy of the title. Temperate damages may be granted."
+      }
+    },
+    {
+      "id": "q-1035",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "In GSIS v. Labung-Deang, GSIS argued that temperate damages require proof of pecuniary loss. The Court held this argument",
+      "choices": {
+        "A": "correct, because all damages must be proved with certainty.",
+        "B": "untenable, because the rationale of temperate damages is precisely that definite proof of pecuniary loss cannot be offered from the nature of the case.",
+        "C": "correct, because temperate damages are a form of actual damages.",
+        "D": "irrelevant, because temperate damages are nominal damages."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** \"GSIS submits that there must be proof of pecuniary loss. This is untenable. The rationale behind temperate damages is precisely that from the nature of the case, definite proof of pecuniary loss cannot be offered.\" **A and C are wrong:** temperate damages exist for losses that cannot be proved with certainty. **D is wrong:** temperate damages are \"more than nominal.\" **Bar trap:** the court must still be convinced there was a loss.",
+      "caseIds": [
+        "case-0094"
+      ],
+      "source": {
+        "caseTitle": "Government Service Insurance System v. Spouses Labung-Deang",
+        "grNumber": "G.R. No. 135644",
+        "url": "https://lawphil.net/judjuris/juri2001/sep2001/gr_135644_2001.html",
+        "part": "The Court's Ruling, on temperate damages",
+        "excerpt": "GSIS submits that there must be proof of pecuniary loss. This is untenable. The rationale behind temperate damages is precisely that from the nature of the case, definite proof of pecuniary loss cannot be offered."
+      }
+    },
+    {
+      "id": "q-1036",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "In GSIS v. Labung-Deang, the Court held that GSIS's obligation to return the title did not arise from quasi-delict because",
+      "choices": {
+        "A": "GSIS is a government corporation immune from suit.",
+        "B": "there was a pre-existing contract: a loan agreement secured by a real estate mortgage.",
+        "C": "the title was lost by a sheriff.",
+        "D": "the spouses did not prove negligence."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** \"Under the facts, there was a pre-existing contract between the parties. GSIS and the spouses Deang had a loan agreement secured by a real estate mortgage.\" **A is wrong:** the issue was liability, not suability. **C is wrong:** the title was lost in GSIS's custody. **D is wrong:** \"Negligence is obvious.\" **Bar trap:** a quasi-delict presupposes no pre-existing contractual relation.",
+      "caseIds": [
+        "case-0094"
+      ],
+      "source": {
+        "caseTitle": "Government Service Insurance System v. Spouses Labung-Deang",
+        "grNumber": "G.R. No. 135644",
+        "url": "https://lawphil.net/judjuris/juri2001/sep2001/gr_135644_2001.html",
+        "part": "The Court's Ruling, on the source of the obligation",
+        "excerpt": "Under the facts, there was a pre-existing contract between the parties. GSIS and the spouses Deang had a loan agreement secured by a real estate mortgage. The duty to return the owner's duplicate copy of title arose as soon as the mortgage was released."
+      }
+    },
+    {
+      "id": "q-1037",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "What was the final result in GSIS v. Labung-Deang?",
+      "choices": {
+        "A": "GSIS was absolved of all liability.",
+        "B": "The award of ₱20,000 temperate damages was affirmed, but the award of attorney's fees was deleted.",
+        "C": "Moral and exemplary damages were added.",
+        "D": "Actual damages for the lost loan were awarded."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court affirmed the Court of Appeals \"with the MODIFICATION that award of attorney's fees is DELETED,\" keeping the ₱20,000 temperate damages it found reasonable. **A is wrong:** the petition was denied. **C and D are wrong:** no bad faith and no proof of actual loss. **Bar trap:** temperate damages survived even though attorney's fees did not.",
+      "caseIds": [
+        "case-0094"
+      ],
+      "source": {
+        "caseTitle": "Government Service Insurance System v. Spouses Labung-Deang",
+        "grNumber": "G.R. No. 135644",
+        "url": "https://lawphil.net/judjuris/juri2001/sep2001/gr_135644_2001.html",
+        "part": "The Fallo",
+        "excerpt": "WHEREFORE, we DENY the petition. We AFFIRM the decision of the Court of Appeals in CA-G.R. CV No. 51240 with the MODIFICATION that award of attorney's fees is DELETED."
       }
     }
   ]
