@@ -18239,6 +18239,101 @@
         "part": "Decision, discussion of moral damages (the considerations and the amount)",
         "excerpt": "On the other hand, moral damages may be awarded even without proof of pecuniary loss, inasmuch as the determination of the amount is discretionary on the court.Though incapable of pecuniary estimation, moral damages are in the nature of an award to compensate the claimant for actual injury suffered but which for some reason can not be proven. However, in awarding moral damages, the following should be taken into consideration: (1) First, the proximate cause of the injury must be the claimee's acts. (2) Second, there must be compensatory or actual damages as satisfactory proof of the factual basis for damages. (3) Third, the award of moral damages must be predicated on any of the cases enumerated in the Civil Code. In the case at bar, the physical suffering and mental anguish suffered by the petitioner were proven. … Nevertheless the award of moral damages at P 150,000.00 is excessive. Her handicap was not permanent and disabled her only during her treatment which lasted for one year. Though evidence of moral loss and anguish existed to warrant the award of damages, the moderating hand of the law is called for."
       }
+    },
+    {
+      "id": "q-1161",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Ana fell three months behind on her motorcycle installments and paid with a check that bounced. The finance company sued for replevin and seized the motorcycle under a court order, then released it when Ana paid only the overdue installments, and voluntarily dismissed its case. In a separate case, Ben's finance company seized his motorcycle although he was fully paid, after being shown his receipts, and refused to return it unless he paid an invented \"penalty.\" Ana and Ben each sue for moral damages. Who may recover them? Explain.",
+      "suggestedAnswer": {
+        "answer": "Ben may; Ana may not. Moral damages cannot be awarded in the absence of a wrongful act or omission or fraud or bad faith. When an action is filed in good faith there should be no penalty on the right to litigate, and error alone is not a ground for moral damages. Ana's creditor had a valid cause of action, released the vehicle on payment of only the overdue installments and dismissed its case, showing a lack of fraud or bad faith; and Ana was herself at fault. Ben's creditor seized a fully paid vehicle knowing it was paid and demanded an invented charge, which is bad faith.",
+        "legalBasis": "In Filinvest Credit Corporation v. Mendez, \"moral damages cannot be awarded in the absence of a wrongful act or omission or fraud or bad faith ... When the action is filed in good faith there should be no penalty on the right to litigate ... The petitioner may have erred but error alone is not a ground for moral damages.\" The creditor's \"willingness ... to allow the respondent to pay only the unpaid installments ... and to release the car as well as its voluntary motion to dismiss the case indicates lack of fraud or bad faith,\" and \"[t]he private respondent was not without fault.\"",
+        "application": "Ana's creditor acted on a real default and was lenient; Ben's acted knowingly against a paid debtor.",
+        "conclusion": "Moral damages for Ben only (on proof of his suffering). **Bar trap:** a creditor's good-faith suit on a real default, even if it later turns out unnecessary, is not a ground for moral damages."
+      },
+      "keyPoints": [
+        "Moral damages need a wrongful act or omission, fraud or bad faith",
+        "No penalty on the right to litigate in good faith",
+        "Error alone is not a ground",
+        "Leniency and voluntary dismissal show lack of bad faith",
+        "Claimant's own fault"
+      ],
+      "caseIds": [
+        "case-0073"
+      ],
+      "source": {
+        "caseTitle": "Filinvest Credit Corporation v. Mendez",
+        "grNumber": "G.R. No. L-66419",
+        "url": "https://lawphil.net/judjuris/juri1987/jul1987/gr_l-66419_1987.html",
+        "part": "Decision, discussion of moral damages",
+        "excerpt": "The rule is settled that moral damages cannot be awarded in the absence of a wrongful act or omission or fraud or bad faith. (R & B Surety & Insurance Co., v. Intermediate Appellate Court, 129 SCRA 736; and Siasat v. Intermediate Appellate Court, 139 SCRA 238). When the action is filed in good faith there should be no penalty on the right to litigate. (Expiritu v. Court of Appeals, 137 SCRA 50). The petitioner may have erred but error alone is not a ground for moral damages. … The willingness of the petitioner to allow the respondent to pay only the unpaid installments for April, May, and June instead of the total outstanding balance and to release the car as well as its voluntary motion to dismiss the case indicates lack of fraud or bad faith on the part of the petitioner. The private respondent was not without fault. He was three months behind in his payments and he issued a bouncing check."
+      }
+    },
+    {
+      "id": "q-1162",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Carla, behind on her car installments, mailed her creditor a check to cover them; it bounced for lack of funds, and the creditor sued and repossessed the car, spending ₱5,000 on repossession. Days later, the check cleared on redeposit. Carla argues that (a) her default was cured by the check, so the suit had no basis, and (b) the creditor must refund the ₱5,000. In another case, Dino handed his creditor a check that was cashed the day it was received, before the creditor sued and repossessed. Who is correct in each case? Explain.",
+      "suggestedAnswer": {
+        "answer": "Carla is wrong on both points. Delivery of a check produces the effect of payment only when it has been cashed, or when through the creditor's fault it has been impaired; a check that bounced when presented could not cure the default, so the creditor had a cause of action. The repossession expenses are for the debtor's account, since her duty was to surrender the car upon valid demand. Dino, however, had paid when his check was cashed before the suit, so his default was cured and the creditor had no basis to sue or repossess on that default.",
+        "legalBasis": "In Filinvest Credit Corporation v. Mendez, \"[t]he remittance of the PVB check ... could not have cured the defaults in payment because the check bounced when it was presented for payment.\" \"The delivery of promissory notes payable to order, or bills of exchange or other mercantile documents shall produce the effect of payment only when they have been cashed, or when through the fault of the creditor they have been impaired.\" \"[T]he repossession expenses must be for the account of the respondents whose duty was to immediately surrender the car upon valid demand.\"",
+        "application": "Carla's check had not been cashed when the creditor sued; Dino's had.",
+        "conclusion": "Carla: no cure, no refund. Dino: paid before suit. **Bar trap:** a check that later clears does not undo the default at the time it bounced."
+      },
+      "keyPoints": [
+        "Check is payment only when cashed (Art. 1249)",
+        "Bounced check does not cure default",
+        "Creditor had a cause of action",
+        "Repossession expenses borne by the defaulting debtor",
+        "Check cashed before suit: default cured"
+      ],
+      "caseIds": [
+        "case-0073"
+      ],
+      "source": {
+        "caseTitle": "Filinvest Credit Corporation v. Mendez",
+        "grNumber": "G.R. No. L-66419",
+        "url": "https://lawphil.net/judjuris/juri1987/jul1987/gr_l-66419_1987.html",
+        "part": "Decision, discussion of the effect of the bounced check and the repossession expenses",
+        "excerpt": "The remittance of the PVB check on May 3, 1976 could not have cured the defaults in payment because the check bounced when it was presented for payment. The respondent's account had no funds at the time to back up the check he used as payment. … The delivery of promissory notes payable to order, or bills of exchange or other mercantile documents shall produce the effect of payment only when they have been cashed, or when through the fault of the creditor they have been impaired. … Insofar as the P1,894.80 are concerned, the petitioner is correct that the repossession expenses must be for the account of the respondents whose duty was to immediately surrender the car upon valid demand and thereby prevent the necessity of the petitioner's having to spend in order to repossess it."
+      }
+    },
+    {
+      "id": "q-1163",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Eva sued her former business partner Felix for a share of profits, honestly believing she was owed, and lost. Felix asks for attorney's fees solely because he won. In another case, Gina sued Hugo on a claim she knew was false, solely to pressure him into selling her his land, and lost. Applying the rulings cited in Filinvest Credit Corporation v. Mendez, may attorney's fees be awarded to Felix or to Hugo? Explain.",
+      "suggestedAnswer": {
+        "answer": "Not to Felix; possibly to Hugo. An award of attorney's fees is improper on the sole basis of an adverse decision, or where the party prosecuted a cause of action in good faith though it was declared unfounded, or in the absence of clear proof that the action was intended merely to prejudice the other party. Eva sued in good faith; Gina's suit was clearly meant only to prejudice Hugo.",
+        "legalBasis": "In Filinvest Credit Corporation v. Mendez, \"an award of attorney's fees is improper on the sole basis of an adverse decision (Ramos v. Ramos), or if one considers the good faith of parties in prosecuting a cause of action though declared to be unfounded (Salao v. Salao), or in the absence of clear proof that an action was intended merely to prejudice the other party (Mercader v. Manila Polo Club).\"",
+        "application": "Felix relies only on winning; Hugo can show a suit meant only to prejudice him.",
+        "conclusion": "No fees for Felix; fees may be considered for Hugo. **Bar trap:** a losing suit filed in good faith does not earn the winner attorney's fees."
+      },
+      "keyPoints": [
+        "Not on the sole basis of an adverse decision",
+        "Not where the suit was filed in good faith",
+        "Not absent clear proof the action was meant merely to prejudice",
+        "A suit meant only to prejudice may justify fees"
+      ],
+      "caseIds": [
+        "case-0073"
+      ],
+      "source": {
+        "caseTitle": "Filinvest Credit Corporation v. Mendez",
+        "grNumber": "G.R. No. L-66419",
+        "url": "https://lawphil.net/judjuris/juri1987/jul1987/gr_l-66419_1987.html",
+        "part": "Decision, discussion of attorney's fees",
+        "excerpt": "The petitioner also questions the award of attorney's fees. It asserts that according to decisions of this Court, an award of attorney's fees is improper on the sole basis of an adverse decision (Ramos v. Ramos, 61 SCRA 284), or if one considers the good faith of parties in prosecuting a cause of action though declared to be unfounded (Salao v. Salao, 70 SCRA 65), or in the absence of clear proof that an action was intended merely to prejudice the other party (Mercader v. Manila Polo Club, L-8373, September 28, 1956). The records sustain the contention that there is no basis for entitlement to attorney's fees."
+      }
     }
   ]
 }
