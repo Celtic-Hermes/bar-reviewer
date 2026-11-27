@@ -541,6 +541,21 @@
       "ruling": "The petition was partly granted. A contract is the law between the parties. The ticket allowed the carrier to substitute carriers or aircraft without notice and to alter stopping places \"in case of necessity,\" but not to shuttle passengers to new stopping places without notice or consent; as a contract of adhesion, its ambiguity is construed against the airline, and the airline failed to prove the necessity. So there was a breach. But moral damages require bad faith, ill will, malice or wanton conduct, which was not proved: passengers were divided by the reservation system based only on final destination, good faith is presumed, and bad faith must be proved; mere economic hardship, worry or anxiety is insufficient. Lopez, Zulueta and Ortigas were distinguished, as they involved deliberate concealment, insult or discrimination. Nor were exemplary damages proper. Nominal damages of ₱150,000 each were awarded to vindicate their right to be consulted. The claim for lost items failed for lack of timely written notice under the ticket's conditions and the Warsaw Convention.",
       "keyDoctrine": "In breach of contract, moral damages require bad faith, fraud, malice or wanton conduct; good faith is presumed and bad faith must be proved; worry, anxiety or economic hardship alone is not enough. Exemplary damages in contracts require wanton, fraudulent, reckless, oppressive or malevolent conduct. Nominal damages (Arts. 2221-2222) vindicate a violated right when no actual damage is shown, in an amount within the court's discretion. Ambiguities in a contract of adhesion are construed against its drafter. Baggage claims in international carriage require timely written complaint.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2003/jul2003/gr_151783_2003.html"
+    },
+    {
+      "id": "case-0084",
+      "status": "draft",
+      "name": "China Airlines v. Chiok",
+      "grNumber": "G.R. No. 152122",
+      "year": 2003,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "facts": "Daniel Chiok bought a China Airlines (CAL) ticket for Manila-Taipei-Hong Kong-Manila, with the Hong Kong-Manila leg endorsable to Philippine Airlines (PAL). He confirmed his PAL Flight PR 311 back to Manila twice, at CAL's Taipei office and at PAL's Hong Kong office, and his ticket bore \"OK\" stickers and a computer reference. PR 311 was cancelled because of a typhoon; under PAL's procedure all its confirmed passengers were automatically moved to PR 307 the next day. But at check-in he was told his name was not on the computer list and he could not board, though he needed to be in Manila that day for a business option; PAL meanwhile let non-revenue passengers without confirmed tickets board. The trial court held CAL and PAL solidarily liable for actual, moral (₱200,000) and exemplary (₱50,000) damages and attorney's fees; the Court of Appeals deleted the actual damages but kept the rest. Only CAL's appeal reached the Supreme Court.",
+      "issue": "(1) Is CAL, the ticket-issuing airline, liable for a breach that happened on PAL's leg? (2) Were moral and exemplary damages proper? (3) Could the Court rule on CAL's cross-claim against PAL?",
+      "ruling": "The petition was denied. (1) Although the Court of Appeals erred in quoting an unofficial syllabus of KLM v. CA, its ruling was supported in substance. A contract of carriage by successive carriers under one ticket is a single operation (Warsaw Convention; IATA practice); the ticket-issuing airline is the principal and the endorsee-carrier its agent, so CAL is liable even if it only issued the ticket for that sector. (2) Moral damages in a breach of contract of carriage are recoverable only where the passenger dies (Art. 1764) or the carrier acted fraudulently or in bad faith (Art. 2220). Bad faith is a breach of a known duty through some motive of interest or ill will. The typhoon did not end PAL's duty to put confirmed passengers on the next flight; with two confirmations, an \"OK\" sticker and a computer reference, the omission of his name was the airline's fault, and PAL made no serious effort to fly him while letting non-revenue passengers board. Negligence so gross and reckless amounts to bad faith, so moral and exemplary damages were proper. The cases cited by CAL were distinguished because there the carriers acted in good faith or with diligent efforts. (3) No ruling on the cross-claim was possible, because PAL, an indispensable party, was not impleaded in the appeal.",
+      "keyDoctrine": "Moral damages for breach of a contract of carriage are recoverable only when the passenger dies or the carrier acted fraudulently or in bad faith (Arts. 1764, 2220); negligence so gross and reckless as to amount to bad faith also suffices. Bad faith is a breach of a known duty through some motive of interest or ill will. Carriage by successive carriers under one ticket is a single operation; the ticket-issuing airline is the principal and remains liable for a breach on another carrier's leg.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2003/jul2003/gr_152122_2003.html"
     }
   ],
   "questions": [
@@ -11219,6 +11234,274 @@
         "url": "https://lawphil.net/judjuris/juri2003/jul2003/gr_151783_2003.html",
         "part": "The Court's Ruling, the disposition",
         "excerpt": "WHEREFORE, the Petition is hereby PARTIALLY GRANTED, and the assailed Decision MODIFIED. Respondent is ORDERED to pay one hundred fifty thousand pesos (P150,000) to each of the three petitioners as nominal damages."
+      }
+    },
+    {
+      "id": "q-0939",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "A passenger bought from Airline X one ticket covering a trip abroad and back, with the last leg endorsed to Airline Y. On that last leg, Airline Y wrongfully refused to board him. Sued with Airline Y, Airline X argues it was a mere ticket issuer for that sector and that only the airline that actually carried, or should have carried, the passenger is liable. Is Airline X's argument correct? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. Carriage performed by several successive carriers under one ticket is regarded as a single operation; the ticket-issuing airline is the principal in the contract of carriage, and the endorsee-carrier is its agent. Airline X cannot evade liability even if it was only the ticket issuer for that sector.",
+        "legalBasis": "In China Airlines v. Chiok, the Court held that such a contract of carriage \"has always been treated in this jurisdiction as a single operation,\" a rule \"supported by the Warsaw Convention\" and IATA practices. \"[U]nder a general pool partnership agreement, the ticket-issuing airline is the principal in a contract of carriage, while the endorsee-airline is the agent.\" So PAL \"acted as the carrying agent of CAL,\" and \"CAL cannot evade liability to respondent, even though it may have been only a ticket issuer for the Hong Kong-Manila sector.\"",
+        "application": "Airline X issued the ticket for the whole trip and endorsed the last leg to Airline Y, which acted as its carrying agent.",
+        "conclusion": "Airline X is liable. **Bar trap:** the breach need not happen on the ticket-issuer's own flight for it to be liable."
+      },
+      "keyPoints": [
+        "Successive carriage under one ticket is a single operation",
+        "Supported by the Warsaw Convention and IATA practice",
+        "Ticket-issuing airline = principal; endorsee-airline = agent",
+        "Ticket issuer remains liable for a breach on the other carrier's leg"
+      ],
+      "caseIds": [
+        "case-0084"
+      ],
+      "source": {
+        "caseTitle": "China Airlines v. Chiok",
+        "grNumber": "G.R. No. 152122",
+        "url": "https://lawphil.net/judjuris/juri2003/jul2003/gr_152122_2003.html",
+        "part": "The Court's Ruling, second issue (liability of the ticket-issuing airline)",
+        "excerpt": "It is significant to note that the contract of air transportation was between petitioner and respondent, with the former endorsing to PAL the Hong Kong-to-Manila segment of the journey. Such contract of carriage has always been treated in this jurisdiction as a single operation. This jurisprudential rule is supported by the Warsaw Convention, to which the Philippines is a party, and by the existing practices of the International Air Transport Association (IATA). … In American Airlines v. Court of Appeals, we have noted that under a general pool partnership agreement, the ticket-issuing airline is the principal in a contract of carriage, while the endorsee-airline is the agent. … In the instant case, following the jurisprudence cited above, PAL acted as the carrying agent of CAL. In the same way that we ruled against British Airways and Lufthansa in the aforementioned cases, we also rule that CAL cannot evade liability to respondent, even though it may have been only a ticket issuer for the Hong Kong-Manila sector."
+      }
+    },
+    {
+      "id": "q-0940",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "When may moral damages be awarded in a breach of a contract of carriage? How did the Court define bad faith, and may gross negligence take its place? Explain.",
+      "suggestedAnswer": {
+        "answer": "Moral damages may be awarded in a breach of contract of carriage only (1) where the passenger dies (Art. 1764, in relation to Art. 2206) or (2) where the carrier acted fraudulently or in bad faith (Art. 2220). Bad faith is a breach of a known duty through some motive of interest or ill will. Negligence so gross and reckless as to virtually amount to bad faith also entitles the passenger to moral damages.",
+        "legalBasis": "In China Airlines v. Chiok, the Court held that \"[m]oral damages cannot be awarded in breaches of carriage contracts, except in the two instances contemplated in Articles 1764 and 2220 of the Civil Code.\" Citing Lopez v. Pan American World Airways, \"we defined bad faith as a breach of a known duty through some motive of interest or ill will.\" Quoting Singson v. Court of Appeals, \"there are situations where the negligence of the carrier is so gross and reckless as to virtually amount to bad faith, in which case, the passenger likewise becomes entitled to recover moral damages.\"",
+        "application": "Where no passenger died, the question is whether the carrier, or its agent, acted in bad faith or with gross and reckless negligence.",
+        "conclusion": "Death of a passenger, or fraud or bad faith, including gross negligence amounting to bad faith. **Bar trap:** simple negligence in a breach of carriage, without death, does not support moral damages."
+      },
+      "keyPoints": [
+        "Only two instances: death of a passenger (Art. 1764) or fraud or bad faith (Art. 2220)",
+        "Bad faith: breach of a known duty through some motive of interest or ill will",
+        "Gross and reckless negligence may amount to bad faith",
+        "Simple negligence is not enough"
+      ],
+      "caseIds": [
+        "case-0084"
+      ],
+      "source": {
+        "caseTitle": "China Airlines v. Chiok",
+        "grNumber": "G.R. No. 152122",
+        "url": "https://lawphil.net/judjuris/juri2003/jul2003/gr_152122_2003.html",
+        "part": "The Court's Ruling, second issue (moral and exemplary damages)",
+        "excerpt": "Moral damages cannot be awarded in breaches of carriage contracts, except in the two instances contemplated in Articles 1764 and 2220 of the Civil Code, which we quote: … There is no occasion for us to invoke Article 1764 here. We must therefore determine if CAL or its agent (PAL) is guilty of bad faith that would entitle respondent to moral damages. In Lopez v. Pan American World Airways, we defined bad faith as a breach of a known duty through some motive of interest or ill will. … \"x x x Although the rule is that moral damages predicated upon a breach of contract of carriage may only be recoverable in instances where the mishap results in the death of a passenger, or where the carrier is guilty of fraud or bad faith, there are situations where the negligence of the carrier is so gross and reckless as to virtually amount to bad faith, in which case, the passenger likewise becomes entitled to recover moral damages.\""
+      }
+    },
+    {
+      "id": "q-0941",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "A carrier argues that a typhoon forced it to cancel the flight, so it cannot be liable for failing to fly a confirmed passenger the next day. Under its own procedure, confirmed passengers of the cancelled flight were automatically moved to the next available flight; the passenger had his booking confirmed twice and his ticket bore an \"OK\" sticker and a computer reference, yet he was refused boarding on the replacement flight because his name was not on the list, while passengers without confirmed tickets were allowed to board. Is the carrier liable for moral and exemplary damages? Explain.",
+      "suggestedAnswer": {
+        "answer": "Yes. The typhoon did not end the carrier's responsibility; it had voluntarily obligated itself to transfer all confirmed passengers to the next flight. Its failure, despite repeated confirmations and clear proof on the ticket, and while it boarded non-revenue passengers, was negligence so gross and reckless that it amounted to bad faith, justifying moral and exemplary damages.",
+        "legalBasis": "In China Airlines v. Chiok, the Court held that the typhoon \"did not terminate the carrier's responsibility to its passengers,\" since PAL \"voluntarily obligated itself to automatically transfer all confirmed passengers.\" \"By merely looking at his ticket and validation sticker, it is evident that the glitch was the airline's fault,\" yet \"no serious attempt was made\" to fly him, and \"PAL allowed a group of non-revenue passengers, who had no confirmed tickets or reservations, to board.\" \"PAL's negligence was so gross and reckless that it amounted to bad faith,\" so \"moral and exemplary damages were properly awarded.\"",
+        "application": "The cancellation excused the first flight, not the carrier's duty to carry the confirmed passenger on the replacement flight, which it breached with gross negligence.",
+        "conclusion": "The carrier is liable for moral and exemplary damages. **Bar trap:** a fortuitous event may excuse one flight, but it does not excuse what the carrier does afterward."
+      },
+      "keyPoints": [
+        "The typhoon did not terminate the carrier's responsibility",
+        "Carrier obligated itself to transfer confirmed passengers to the next flight",
+        "The error was evident from the ticket and sticker",
+        "No serious effort to fly him; non-revenue passengers boarded",
+        "Gross and reckless negligence amounting to bad faith: moral and exemplary damages"
+      ],
+      "caseIds": [
+        "case-0084"
+      ],
+      "source": {
+        "caseTitle": "China Airlines v. Chiok",
+        "grNumber": "G.R. No. 152122",
+        "url": "https://lawphil.net/judjuris/juri2003/jul2003/gr_152122_2003.html",
+        "part": "The Court's Ruling, second issue (moral and exemplary damages)",
+        "excerpt": "It is true that due to a typhoon, PAL was unable to transport respondent on Flight PR 311 on November 24, 1981. This fact, however, did not terminate the carrier's responsibility to its passengers. PAL voluntarily obligated itself to automatically transfer all confirmed passengers of PR 311 to the next available flight, PR 307, on the following day. That responsibility was subsisting when respondent, holding a confirmed ticket for the former flight, presented himself for the latter. … It is relevant to point out that the employees of PAL were utterly insensitive to his need to be in Manila on November 25, 1981, and to the likelihood that his business affairs in the city would be jeopardized because of a mistake on their part. It was that mistake that had caused the omission of his name from the passenger list despite his confirmed flight ticket. By merely looking at his ticket and validation sticker, it is evident that the glitch was the airline's fault. However, no serious attempt was made by PAL to secure the all-important transportation of respondent to Manila on the following day. To make matters worse, PAL allowed a group of non-revenue passengers, who had no confirmed tickets or reservations, to board Flight PR 307. … Since he had secured confirmation of his flight -- not only once, but twice -- by personally going to the carrier's offices where he was consistently assured of a seat thereon -- PAL's negligence was so gross and reckless that it amounted to bad faith. In view of the foregoing, we rule that moral and exemplary damages were properly awarded by the lower courts."
+      }
+    },
+    {
+      "id": "q-0942",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Two passengers sue their airlines for moral damages after missing their connections. (a) Ana's airline missed her connection by mistake, but its staff kept sending messages to its other offices and worked diligently to rebook her on another flight. (b) Ben had his seat confirmed twice and his ticket was marked \"OK,\" but the airline's staff refused to board him, made no serious effort to get him on a flight, and gave seats to passengers without confirmed tickets. May each recover moral damages? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) No. A breach committed in good faith, where the airline made diligent efforts to help the passenger, is not bad faith or gross negligence, so moral damages are not proper. (b) Yes. An airline's utter lack of care and sensitivity to a confirmed passenger, despite clear proof of his booking, is gross and reckless negligence amounting to bad faith.",
+        "legalBasis": "In China Airlines v. Chiok, the Court distinguished cases where \"the breach of contract and the negligence of the carrier ... was incurred in good faith,\" with \"no gross negligence or recklessness,\" and where the airline \"had exercised diligent efforts in assisting the private respondent change his flight schedule,\" from one where the carrier \"failed to exhibit the same care and sensitivity to respondent's needs.\" Quoting Singson, \"the carrier's utter lack of care and sensitivity to the needs of its passengers, clearly constitutive of gross negligence, recklessness and wanton disregard of the rights of the latter, [are] acts evidently indistinguishable or no different from fraud, malice and bad faith.\"",
+        "application": "(a) Ana's airline erred, but in good faith and with diligent efforts. (b) Ben's airline showed gross negligence and insensitivity amounting to bad faith.",
+        "conclusion": "(a) No moral damages; (b) moral damages. **Bar trap:** a missed connection is a breach in both cases; what decides moral damages is the carrier's good faith and diligence afterward."
+      },
+      "keyPoints": [
+        "Breach in good faith, with diligent efforts: no moral damages",
+        "No gross negligence or recklessness: no moral or exemplary damages",
+        "Utter lack of care and sensitivity = gross negligence, no different from bad faith",
+        "Same breach, different result depending on the carrier's conduct"
+      ],
+      "caseIds": [
+        "case-0084"
+      ],
+      "source": {
+        "caseTitle": "China Airlines v. Chiok",
+        "grNumber": "G.R. No. 152122",
+        "url": "https://lawphil.net/judjuris/juri2003/jul2003/gr_152122_2003.html",
+        "part": "The Court's Ruling, second issue (moral and exemplary damages; China Airlines v. IAC and China Airlines v. CA distinguished)",
+        "excerpt": "\"x x x [T]he carrier's utter lack of care and sensitivity to the needs of its passengers, clearly constitutive of gross negligence, recklessness and wanton disregard of the rights of the latter, [are] acts evidently indistinguishable or no different from fraud, malice and bad faith. As the rule now stands, where in breaching the contract of carriage the defendant airline is shown to have acted fraudulently, with malice or in bad faith, the award of moral and exemplary damages, in addition to actual damages, is proper.\" … Under the foregoing circumstances, we cannot apply our 1989 ruling in China Airlines v. Intermediate Appellate Court, which petitioner urges us to adopt. In that case, the breach of contract and the negligence of the carrier in effecting the immediate flight connection for therein private respondent was incurred in good faith. Having found no gross negligence or recklessness, we thereby deleted the award of moral and exemplary damages against it. This Court's 1992 ruling in China Airlines v. Court of Appeals is likewise inapplicable. In that case, we found no bad faith or malice in the airline's breach of its contractual obligation. We held that, as shown by the flow of telexes from one of the airline's offices to the others, petitioner therein had exercised diligent efforts in assisting the private respondent change his flight schedule. In the instant case, petitioner failed to exhibit the same care and sensitivity to respondent's needs."
+      }
+    },
+    {
+      "id": "q-0943",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Carla bought from Sky Air one ticket for Manila-Singapore-Bangkok-Manila, with the Bangkok-Manila leg endorsed to Sun Air. In Bangkok, Sun Air's staff, though Carla's seat was confirmed twice, told her that her name was not on the list, made no serious effort to fly her, and gave seats to passengers with no reservations. Carla sues only Sky Air for moral damages. Sky Air answers that it did nothing wrong itself and that Sun Air's employees caused the problem. Is Sky Air liable for moral damages? Explain.",
+      "suggestedAnswer": {
+        "answer": "Yes. As the ticket-issuing airline, Sky Air is the principal in a contract of carriage that is a single operation, and Sun Air acted as its carrying agent. The question is whether Sky Air \"or its agent\" acted in bad faith; Sun Air's gross and reckless negligence amounting to bad faith makes Sky Air liable for moral damages.",
+        "legalBasis": "In China Airlines v. Chiok, the endorsee carrier \"acted as the carrying agent\" of the ticket issuer, which \"cannot evade liability ... even though it may have been only a ticket issuer\" for that sector. On moral damages, the Court asked whether \"CAL or its agent (PAL) is guilty of bad faith,\" and found that PAL's \"negligence was so gross and reckless that it amounted to bad faith,\" so moral and exemplary damages were properly awarded against CAL.",
+        "application": "Sun Air's treatment of Carla, despite two confirmations, was gross negligence amounting to bad faith, and it acted as Sky Air's agent on that leg.",
+        "conclusion": "Sky Air is liable for moral damages. **Bar trap:** the bad faith need not be the ticket issuer's own; its agent's is enough. (Sky Air's claim over against Sun Air is a separate matter.)"
+      },
+      "keyPoints": [
+        "Ticket-issuing airline = principal; endorsee = carrying agent",
+        "Single operation under one ticket",
+        "Bad faith of the principal or its agent counts",
+        "Gross and reckless negligence amounting to bad faith supports moral damages"
+      ],
+      "caseIds": [
+        "case-0084"
+      ],
+      "source": {
+        "caseTitle": "China Airlines v. Chiok",
+        "grNumber": "G.R. No. 152122",
+        "url": "https://lawphil.net/judjuris/juri2003/jul2003/gr_152122_2003.html",
+        "part": "The Court's Ruling, second issue (liability of the ticket-issuing airline; moral and exemplary damages)",
+        "excerpt": "In the instant case, following the jurisprudence cited above, PAL acted as the carrying agent of CAL. In the same way that we ruled against British Airways and Lufthansa in the aforementioned cases, we also rule that CAL cannot evade liability to respondent, even though it may have been only a ticket issuer for the Hong Kong-Manila sector. … There is no occasion for us to invoke Article 1764 here. We must therefore determine if CAL or its agent (PAL) is guilty of bad faith that would entitle respondent to moral damages. … Since he had secured confirmation of his flight -- not only once, but twice -- by personally going to the carrier's offices where he was consistently assured of a seat thereon -- PAL's negligence was so gross and reckless that it amounted to bad faith. In view of the foregoing, we rule that moral and exemplary damages were properly awarded by the lower courts."
+      }
+    },
+    {
+      "id": "q-0944",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Dino sued Airline X and Airline Y, and Airline X filed a cross-claim against Airline Y. Both lost before the trial court and the Court of Appeals, which did not rule on the cross-claim. Airline Y's own appeal to the Supreme Court was dismissed on a technicality. Airline X appealed alone, without including Airline Y as a party, and asks the Supreme Court to rule that Airline Y must reimburse it. May the Supreme Court rule on the cross-claim? Reason briefly.",
+      "suggestedAnswer": {
+        "answer": "No. Airline Y is an indispensable party to the cross-claim, since its interest will be affected by any ruling on it. Because Airline X did not include it in the appeal, the Court has no jurisdiction over Airline Y and any ruling would not bind it.",
+        "legalBasis": "In China Airlines v. Chiok, the Court held that \"[f]or purposes of a ruling on the cross-claim, PAL is an indispensable party,\" one \"whose interest will be affected by the court's action in the litigation, and without whom no final determination of the case can be had.\" Since \"petitioner failed to include the airline in the present recourse,\" \"the Court has no jurisdiction over it,\" and a ruling \"would not be legally feasible because PAL, not being a party in the present case, cannot be bound thereby.\"",
+        "application": "Airline Y's interest is directly at stake in the cross-claim, but Airline Y is not a party to Airline X's appeal.",
+        "conclusion": "The Court cannot rule on the cross-claim. **Bar trap:** being a co-party below is not enough; the indispensable party must be impleaded in the appeal itself."
+      },
+      "keyPoints": [
+        "Cross-claim: claim against a co-party from the same transaction (Rule 6, Sec. 8)",
+        "The co-party is an indispensable party to a ruling on the cross-claim",
+        "Not impleaded in the appeal: no jurisdiction over it",
+        "A ruling would not bind it"
+      ],
+      "caseIds": [
+        "case-0084"
+      ],
+      "source": {
+        "caseTitle": "China Airlines v. Chiok",
+        "grNumber": "G.R. No. 152122",
+        "url": "https://lawphil.net/judjuris/juri2003/jul2003/gr_152122_2003.html",
+        "part": "The Court's Ruling, third issue (propriety of the cross-claim)",
+        "excerpt": "For purposes of a ruling on the cross-claim, PAL is an indispensable party. In BA Finance Corporation v. CA, the Court stated: \"x x x. An indispensable party is one whose interest will be affected by the court's action in the litigation, and without whom no final determination of the case can be had. … PAL's interest may be affected by any ruling of this Court on CAL's cross-claim. Hence, it is imperative and in accordance with due process and fair play that PAL should have been impleaded as a party in the present proceedings, before this Court can make a final ruling on this matter. Although PAL was petitioner's co-party in the case before the RTC and the CA, petitioner failed to include the airline in the present recourse. Hence, the Court has no jurisdiction over it. Consequently, to make any ruling on the cross-claim in the present Petition would not be legally feasible because PAL, not being a party in the present case, cannot be bound thereby."
+      }
+    },
+    {
+      "id": "q-0945",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "In China Airlines v. Chiok, citing Lopez v. Pan American World Airways, bad faith was defined as",
+      "choices": {
+        "A": "any breach of contract that causes the passenger anxiety.",
+        "B": "a breach of a known duty through some motive of interest or ill will.",
+        "C": "the failure to exercise the diligence of a good father of a family.",
+        "D": "a mistake in judgment made with an honest belief."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** \"In Lopez v. Pan American World Airways, we defined bad faith as a breach of a known duty through some motive of interest or ill will.\" **A is wrong:** a breach and anxiety alone do not make bad faith. **C is wrong:** that describes ordinary negligence. **D is wrong:** an honest mistake is the opposite of bad faith. **Bar trap:** gross and reckless negligence may amount to bad faith, but simple negligence does not.",
+      "caseIds": [
+        "case-0084"
+      ],
+      "source": {
+        "caseTitle": "China Airlines v. Chiok",
+        "grNumber": "G.R. No. 152122",
+        "url": "https://lawphil.net/judjuris/juri2003/jul2003/gr_152122_2003.html",
+        "part": "The Court's Ruling, second issue (moral and exemplary damages)",
+        "excerpt": "In Lopez v. Pan American World Airways, we defined bad faith as a breach of a known duty through some motive of interest or ill will."
+      }
+    },
+    {
+      "id": "q-0946",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Under China Airlines v. Chiok, in which instances may moral damages be awarded for a breach of a contract of carriage?",
+      "choices": {
+        "A": "In every breach, since carriers are bound to extraordinary diligence.",
+        "B": "Only when the passenger suffers physical injuries.",
+        "C": "Only in the two instances under Articles 1764 and 2220: the death of a passenger, or where the carrier acted fraudulently or in bad faith.",
+        "D": "Only when the passenger also proves actual damages."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** \"Moral damages cannot be awarded in breaches of carriage contracts, except in the two instances contemplated in Articles 1764 and 2220 of the Civil Code\": the death of a passenger, or a breach where the carrier \"acted fraudulently or in bad faith.\" **A is wrong:** extraordinary diligence does not make every breach a ground for moral damages. **B and D are wrong:** neither is one of the two instances. **Bar trap:** gross and reckless negligence may amount to bad faith.",
+      "caseIds": [
+        "case-0084"
+      ],
+      "source": {
+        "caseTitle": "China Airlines v. Chiok",
+        "grNumber": "G.R. No. 152122",
+        "url": "https://lawphil.net/judjuris/juri2003/jul2003/gr_152122_2003.html",
+        "part": "The Court's Ruling, second issue (moral and exemplary damages)",
+        "excerpt": "Moral damages cannot be awarded in breaches of carriage contracts, except in the two instances contemplated in Articles 1764 and 2220 of the Civil Code, which we quote: \"Article 1764. Damages in cases comprised in this Section shall be awarded in accordance with Title XVIII of this Book, concerning Damages. Article 2206 shall also apply to the death of a passenger caused by the breach of contract by a common carrier. … \"Article 2220. Willful injury to property may be a legal ground for awarding moral damages if the court should find that, under the circumstances, such damages are justly due. The same rule applies to breaches of contract where the defendant acted fraudulently or in bad faith.\""
+      }
+    },
+    {
+      "id": "q-0947",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Under China Airlines v. Chiok, when an airline issues one ticket for a whole trip and endorses one leg to another airline, the other airline acts as",
+      "choices": {
+        "A": "an independent carrier under a separate contract, solely liable for its own leg.",
+        "B": "the principal, while the ticket-issuing airline is merely its agent.",
+        "C": "a mere guarantor of the ticket-issuing airline.",
+        "D": "the carrying agent of the ticket-issuing airline, which is the principal in a contract treated as a single operation."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** \"[T]he ticket-issuing airline is the principal in a contract of carriage, while the endorsee-airline is the agent,\" and \"PAL acted as the carrying agent of CAL\"; such carriage is \"treated in this jurisdiction as a single operation.\" **A is wrong:** the trip is one undivided transportation, not separate contracts. **B reverses the roles.** **C is wrong:** the endorsee is an agent, not a guarantor. **Bar trap:** being only the ticket issuer for a sector does not excuse the issuing airline.",
+      "caseIds": [
+        "case-0084"
+      ],
+      "source": {
+        "caseTitle": "China Airlines v. Chiok",
+        "grNumber": "G.R. No. 152122",
+        "url": "https://lawphil.net/judjuris/juri2003/jul2003/gr_152122_2003.html",
+        "part": "The Court's Ruling, second issue (liability of the ticket-issuing airline)",
+        "excerpt": "In the instant case, following the jurisprudence cited above, PAL acted as the carrying agent of CAL. In the same way that we ruled against British Airways and Lufthansa in the aforementioned cases, we also rule that CAL cannot evade liability to respondent, even though it may have been only a ticket issuer for the Hong Kong-Manila sector."
       }
     }
   ]
