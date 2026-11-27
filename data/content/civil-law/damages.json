@@ -18334,6 +18334,100 @@
         "part": "Decision, discussion of attorney's fees",
         "excerpt": "The petitioner also questions the award of attorney's fees. It asserts that according to decisions of this Court, an award of attorney's fees is improper on the sole basis of an adverse decision (Ramos v. Ramos, 61 SCRA 284), or if one considers the good faith of parties in prosecuting a cause of action though declared to be unfounded (Salao v. Salao, 70 SCRA 65), or in the absence of clear proof that an action was intended merely to prejudice the other party (Mercader v. Manila Polo Club, L-8373, September 28, 1956). The records sustain the contention that there is no basis for entitlement to attorney's fees."
       }
+    },
+    {
+      "id": "q-1164",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Ana bought business-class tickets for a family trip, and the airline confirmed them. (a) Weeks before the flight, the airline learned that its clerk had mistakenly cancelled Ana's booking, but chose not to tell her, hoping seats would open up so it would not lose her to another airline; at the airport she was downgraded to economy. (b) In Ben's case, the clerk's mistaken cancellation was discovered only at check-in, and the airline at once apologized and offered him the best seats left. Did either airline act in bad faith? Explain.",
+      "suggestedAnswer": {
+        "answer": "Ana's airline acted in bad faith; Ben's did not. Bad faith means a breach of a known duty through some motive of interest or ill will. Deliberately withholding the cancellation and letting the passenger keep believing her reservation stood, to keep her business, knowingly placed the airline in the position of having to breach the contract; that willful non-disclosure, not the original error, is what makes the breach one in bad faith. Ben's airline only made an error, discovered too late to correct, and acted promptly when it learned of it.",
+        "legalBasis": "In Lopez v. Pan American World Airways, the airline \"first cancelled plaintiffs, reservations by mistake and thereafter deliberately and intentionally withheld from plaintiffs or their travel agent the fact of said cancellation, letting them go on believing that their first class reservations stood valid and confirmed ... Such actuation of defendant may indeed have been prompted by nothing more than the promotion of its self-interest ... All the time, in legal contemplation such conduct already amounts to action in bad faith. For bad faith means a breach of a known duty through some motive of interest or ill-will.\"",
+        "application": "(a) Knowledge plus concealment for self-interest. (b) An honest error, promptly addressed.",
+        "conclusion": "Bad faith in Ana's case only. **Bar trap:** the original mistake is not the bad faith; concealing it for self-interest is."
+      },
+      "keyPoints": [
+        "Bad faith: breach of a known duty through motive of interest or ill will",
+        "Deliberate withholding of the cancellation",
+        "Motive: keeping the passengers' business",
+        "Non-disclosure, not the error, caused the breach",
+        "Prompt good-faith handling of an error is not bad faith"
+      ],
+      "caseIds": [
+        "case-0074"
+      ],
+      "source": {
+        "caseTitle": "Lopez, et al. v. Pan American World Airways",
+        "grNumber": "G.R. No. L-22415",
+        "url": "https://lawphil.net/judjuris/juri1966/mar1966/gr_l-22415_1966.html",
+        "part": "Decision, discussion of bad faith",
+        "excerpt": "From the foregoing evidence of defendant it is in effect admitted that defendant — through its agents — first cancelled plaintiffs, reservations by mistake and thereafter deliberately and intentionally withheld from plaintiffs or their travel agent the fact of said cancellation, letting them go on believing that their first class reservations stood valid and confirmed. In so misleading plaintiffs into purchasing first class tickets in the conviction that they had confirmed reservations for the same, when in fact they had none, defendant wilfully and knowingly placed itself into the position of having to breach its a foresaid contracts with plaintiffs should there be no last-minute cancellation by other passengers before flight time, as it turned out in this case. Such actuation of defendant may indeed have been prompted by nothing more than the promotion of its self-interest in holding on to Senator Lopez and party as passengers in its flight and foreclosing on their chances to seek the services of other airlines that may have been able to afford them first class accommodations. All the time, in legal contemplation such conduct already amounts to action in bad faith. For bad faith means a breach of a known duty through some motive of interest or ill-will"
+      }
+    },
+    {
+      "id": "q-1165",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Carla held a first-class ticket, but her airline, acting in bad faith, made her travel in economy. (a) May she recover moral and exemplary damages for the breach of the contract of carriage? (b) Dino, who chose on his own to change his first-class ticket to economy to save money, later claims he was humiliated when friends saw him in economy. May he recover moral damages from the airline? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) Yes. Moral damages are recoverable in breach of contract where the defendant acted fraudulently or in bad faith (Art. 2220); and in addition, exemplary damages may be imposed where the defendant acted in a wanton, fraudulent, reckless, oppressive or malevolent manner (Arts. 2229, 2232). Being compelled to travel in a lower class despite a first-class ticket causes humiliation, wounded feelings and anxiety. (b) No. It may not be humiliating to travel in economy; what is humiliating is being compelled to, contrary to what the contract rightfully promised. Dino chose it, and the airline committed no breach.",
+        "legalBasis": "In Lopez v. Pan American World Airways, \"moral damages are recoverable in breach of contracts where the defendant acted fraudulently or in bad faith (Art. 2220) ... in addition to moral damages, exemplary or corrective damages may be imposed ... where the defendant acted in a wanton, fraudulent, reckless, oppressive or malevolent manner (Articles 2229, 2232).\" \"It may not be humiliating to travel as tourist passengers; it is humiliating to be compelled to travel as such, contrary to what is rightfully to be expected from the contractual undertaking.\"",
+        "application": "(a) Carla was compelled by a bad-faith breach. (b) Dino chose economy freely.",
+        "conclusion": "(a) Moral and exemplary damages; (b) none. **Bar trap:** the injury is the compulsion contrary to the contract, not the economy seat itself."
+      },
+      "keyPoints": [
+        "Moral damages in contract: fraud or bad faith (Art. 2220)",
+        "Exemplary damages: wanton, fraudulent, reckless, oppressive or malevolent manner",
+        "Humiliation lies in being compelled contrary to the contract",
+        "No breach, no damages"
+      ],
+      "caseIds": [
+        "case-0074"
+      ],
+      "source": {
+        "caseTitle": "Lopez, et al. v. Pan American World Airways",
+        "grNumber": "G.R. No. L-22415",
+        "url": "https://lawphil.net/judjuris/juri1966/mar1966/gr_l-22415_1966.html",
+        "part": "Decision, discussion of the rules on damages and moral damages",
+        "excerpt": "Addressing ourselves now to the question of damages, it is well to state at the outset those rules and principles. First, moral damages are recoverable in breach of contracts where the defendant acted fraudulently or in bad faith (Art. 2220, New Civil Code). Second, in addition to moral damages, exemplary or corrective damages may be imposed by way of example or correction for the public good, in breach of contract where the defendant acted in a wanton, fraudulent, reckless, oppressive or malevolent manner (Articles 2229, 2232, New Civil Code). … First, then, as to moral damages. As a proximate result of defendant's breach in bad faith of its contracts with plaintiffs, the latter suffered social humiliation, wounded feelings, serious anxiety and mental anguish. For plaintiffs were travelling with first class tickets issued by defendant and yet they were given only the tourist class. At stop-overs, they were expected to be among the first-class passengers by those awaiting to welcome them, only to be found among the tourist passengers. It may not be humiliating to travel as tourist passengers; it is humiliating to be compelled to travel as such, contrary to what is rightfully to be expected from the contractual undertaking."
+      }
+    },
+    {
+      "id": "q-1166",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Two passengers suffered the same bad-faith downgrading by the same large international airline. Eva is a prominent cabinet secretary traveling with officials; Felix is a private employee traveling alone. Both prove humiliation and anxiety. May the court award them different amounts of moral damages? On what basis? Reason briefly.",
+      "suggestedAnswer": {
+        "answer": "Yes. In fixing the amount of damages, the court may adequately consider the official, political, social and financial standing of the offended parties, on one hand, and the business and financial position of the offender, on the other. Both passengers are entitled to moral damages, but the amounts may differ.",
+        "legalBasis": "In Lopez v. Pan American World Airways, \"the amount of damages awarded in this appeal has been determined by adequately considering the official, political, social, and financial standing of the offended parties on one hand, and the business and financial position of the offender on the other.\"",
+        "application": "Eva's official and social standing may justify a higher award; Felix is still entitled to a reasonable amount.",
+        "conclusion": "Different amounts may be awarded. **Bar trap:** later cases (KLM v. Tiongco, citing Kierulf) allow standing to be considered only where the claimant was treated with contempt despite the offender's knowledge of that standing; in Lopez, the airline knew who the passengers were."
+      },
+      "keyPoints": [
+        "Amount may consider the offended party's official, political, social and financial standing",
+        "And the offender's business and financial position",
+        "Entitlement is the same; amounts may differ",
+        "Compare the later Kierulf rule"
+      ],
+      "caseIds": [
+        "case-0074"
+      ],
+      "source": {
+        "caseTitle": "Lopez, et al. v. Pan American World Airways",
+        "grNumber": "G.R. No. L-22415",
+        "url": "https://lawphil.net/judjuris/juri1966/mar1966/gr_l-22415_1966.html",
+        "part": "Decision, discussion of the amount of damages and attorney's fees",
+        "excerpt": "In concluding, let it be stressed that the amount of damages awarded in this appeal has been determined by adequately considering the official, political, social, and financial standing of the offended parties on one hand, and the business and financial position of the offender on the other (Domingding v. Ng, 55 O.G. 10)."
+      }
     }
   ]
 }
