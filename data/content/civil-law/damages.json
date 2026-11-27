@@ -10175,6 +10175,99 @@
         "part": "Decision, discussion of moral damages (purpose and amount)",
         "excerpt": "To begin with, there is no hard and fast rule in the determination of what would be a fair amount of moral damages, since each case must be governed by its own peculiar circumstances. Article 2217 of the Civil Code recognizes that moral damages which include physical suffering, mental anguish, fright, serious anxiety, besmirched reputation, wounded feelings, moral shock, social humiliation and similar injury, are incapable of pecuniary estimation. … It must be emphasized that moral damages are not intended to enrich the complainant at the expense of a defendant. They are awarded only to enable the injured parties to obtain means, diversions or amusements that will serve to alleviate the moral sufferings the injured parties have undergone by reason of defendant's culpable action. In other words, the award of moral damages is aimed at a restoration within the limits of the possible, of the spiritual status quo ante; and therefore it must be proportionate to the suffering inflicted."
       }
+    },
+    {
+      "id": "q-0906",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Ana sued Ben for damages for the death of her child in a road accident, claiming ₱300,000 actual damages and moral damages. Ben's answer denied fault and stated that he \"has no knowledge or information sufficient to form a belief\" as to the damages claimed. Ana moves for judgment on the pleadings, arguing that Ben never specifically denied the amounts, so they are admitted. Should the motion be granted? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. Ben's averment of lack of knowledge, with his denial of fault, tendered a valid issue; and even if the amounts of damages are not specifically denied, they are not deemed admitted. The damages must be proved at a trial.",
+        "legalBasis": "An averment that the defendants \"have no knowledge or information sufficient to form a belief as to the truth of the allegations\" as to the damages, with their claim that the death was not their fault, \"has the effect of tendering a valid issue.\" \"[E]ven if the allegations regarding the amount of damages in the complaint are not specifically denied in the answer, such damages are not deemed admitted.\"",
+        "application": "Ben's answer put both fault and damages in issue, so judgment on the pleadings would be improper.",
+        "conclusion": "Deny the motion; proceed to trial. **Bar trap:** amounts of damages are an exception to the rule that unspecifically denied allegations are admitted."
+      },
+      "keyPoints": [
+        "Lack of knowledge or information tenders a valid issue",
+        "Damages are not deemed admitted even if not specifically denied",
+        "Judgment on the pleadings is improper",
+        "Damages must be proved at trial"
+      ],
+      "caseIds": [
+        "case-0069"
+      ],
+      "source": {
+        "caseTitle": "Raagas, et al. v. Traya, et al.",
+        "grNumber": "G.R. No. L-20081",
+        "url": "https://lawphil.net/judjuris/juri1968/feb1968/gr_l-20081_1968.html",
+        "part": "Decision, discussion of whether the answer tendered an issue on damages",
+        "excerpt": "The plaintiffs' claim for actual, moral, nominal and corrective damages, was controverted by the averment in the answer to the effect that the defendants \"have no knowledge or information sufficient to form a belief as to the truth of the allegations\" as to such damages, \"the truth of the matter being that the death of Regino Raagas was occasioned by an unforeseen event and/or by the fault of the small boy Regino Raagas or his parents.\" Such averment has the effect of tendering a valid issue. … In Abubakar Tan vs. Tian Ho, L-18820, December 29, 1962 and Lim Giok vs. Bataan Cigar and Cigarette Factory, L-15861, April 16, 1960, we held that even if the allegations regarding the amount of damages in the complaint are not specifically denied in the answer, such damages are not deemed admitted."
+      }
+    },
+    {
+      "id": "q-0907",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "(a) Carla's complaint claimed ₱200,000 for funeral expenses, but she presented no receipts or other proof, asking the court to \"estimate a fair amount.\" (b) Dino did not mention moral damages in his complaint but, at trial, proved through witnesses the anguish he suffered and that it was caused by the defendant's acts. Which claim may be granted under the rule on proof of damages? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) Not as actual damages: actual damages must be proved, and a court cannot rely on speculation, conjecture or guesswork as to their fact and amount. (b) It may: although an allegation is not necessary for moral damages under the rule applied, the claimant must satisfactorily prove the factual basis of the damage and its causal relation to the defendant's acts, which Dino did.",
+        "legalBasis": "\"[A]ctual damages must be proved, and ... a court cannot rely on 'speculation, conjecture or guesswork' as to the fact and amount of damages, but must depend on actual proof that damage had been suffered and on evidence of the actual amount.\" \"[A]lthough an allegation is not necessary in order that moral damages may be awarded, 'it is, nevertheless, essential that the claimant satisfactorily prove the existence of the factual basis of the damage and its causal relation to defendant's acts.'\"",
+        "application": "(a) Carla's request for an estimate is exactly what the rule forbids for actual damages. (b) Dino's proof supplies the factual basis and causation.",
+        "conclusion": "(a) No actual damages without proof; (b) moral damages may be awarded on proof. **Bar trap:** other rulings in the app state that moral damages must be specifically prayed for; in an exam, address both the pleading and the proof."
+      },
+      "keyPoints": [
+        "Actual damages must be proved; no speculation, conjecture or guesswork",
+        "Evidence of the actual amount is needed",
+        "Moral damages: prove the factual basis and causal relation",
+        "An allegation alone is never enough"
+      ],
+      "caseIds": [
+        "case-0069"
+      ],
+      "source": {
+        "caseTitle": "Raagas, et al. v. Traya, et al.",
+        "grNumber": "G.R. No. L-20081",
+        "url": "https://lawphil.net/judjuris/juri1968/feb1968/gr_l-20081_1968.html",
+        "part": "Decision, discussion of the proof required for actual and moral damages",
+        "excerpt": "In Tomassi vs. Villa-Abrille, L-7047, August 21, 1968, Suntay Tanjangco vs. Jovellanos, et al., L-12332, June 30, 1960, and Delfin vs. Court of Agrarian Relations, et al., L-23348, March 14, 1967, 1967 A PHILD 453, we declared in no uncertain terms that actual damages must be proved, and that a court cannot rely on \"speculation, conjecture or guesswork\" as to the fact and amount of damages, but must depend on actual proof that damage had been suffered and on evidence of the actual amount. Finally, in Malonzo vs. Galang et. al., L-13851, July 27, 1960, we reaffirmed the rule that although an allegation is not necessary in order that moral damages may be awarded, \"it is, nevertheless, essential that the claimant satisfactorily prove the existence of the factual basis of the damage and its causal relation to defendant's acts.\""
+      }
+    },
+    {
+      "id": "q-0908",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Eli's truck, which had no current registration plate, ran over Fe's son. In Fe's suit for damages, Eli's answer denied negligence and blamed the child. The trial court, noting that Eli did not deny the lack of a current plate, presumed him negligent and, without a trial, awarded the damages Fe claimed. Was this proper? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. Even if a driver violating a traffic regulation is presumed negligent, the presumption is rebuttable and the answer raised issues of fault; above all, the damages themselves had to be proved. A full trial on the merits was needed.",
+        "legalBasis": "The trial court relied on the rule that \"unless there is proof to the contrary, it is presumed that a person driving a motor vehicle has been negligent if at the time of the mishap, he was violating any traffic regulation (article 2185, new Civil Code).\" But since the answer tendered valid issues and damages must be proved, the case required \"a full-blown trial on the merits at which the parties will be afforded every opportunity to present evidence in support of their respective contentions and defenses,\" and the judgment on the pleadings was set aside.",
+        "application": "Eli's denial of fault and the unproved damages made an award without trial improper.",
+        "conclusion": "Not proper; remand for trial. **Bar trap:** a presumption of negligence does not prove damages."
+      },
+      "keyPoints": [
+        "Art. 2185: rebuttable presumption of negligence for a traffic violation",
+        "The answer raised issues of fault",
+        "Damages must be proved",
+        "A full trial on the merits was required"
+      ],
+      "caseIds": [
+        "case-0069"
+      ],
+      "source": {
+        "caseTitle": "Raagas, et al. v. Traya, et al.",
+        "grNumber": "G.R. No. L-20081",
+        "url": "https://lawphil.net/judjuris/juri1968/feb1968/gr_l-20081_1968.html",
+        "part": "Statement of the trial court's reasoning and the disposition",
+        "excerpt": "The preceding disquisition points up the inescapable need of a full-blown trial on the merits at which the parties will be afforded every opportunity to present evidence in support of their respective contentions and defenses. ACCORDINGLY, the judgment on the pleadings of June 24, 1960 is set aside, and this case is hereby remanded to the court of origin for trial on the merits."
+      }
     }
   ]
 }
