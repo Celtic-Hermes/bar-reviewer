@@ -9893,6 +9893,99 @@
         "part": "The Court's Ruling, admissibility of the sales invoices",
         "excerpt": "In this case, petitioner did not state the facts or substance of the matters relied upon to support its denial of the due execution of the sales invoices. As held in Sy-Quia v. Marsman, \"the Rules require that besides specifying the allegations of fact not admitted, the answer should set forth the matters relied upon in support of the denial; so that, in effect, the Rules are no longer satisfied with mere denials, even if specific, but demand that defendant manifest what he considers to be the true facts.\" The purpose of the specific denial is to compel the defendant to specify the allegations which he or she intends to disprove and disclose the matters relied upon to support such denial, thereby limiting the issues and avoiding unnecessary delays and surprises. Petitioner's general denial amounts to an admission of the genuineness and due execution of the sales invoices."
       }
+    },
+    {
+      "id": "q-0897",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Ana lent Ben ₱200,000 for one year at a written interest of 10% a year. Ben paid on time each month until the loan matured, then stopped paying. (a) While Ben was paying on time, what interest did he owe, and of what kind? (b) After he defaulted, what additional kind of interest arose, and does it need a stipulation? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) Conventional (monetary) interest of 10%, the agreed price for the use of the money, which is due because it was expressly stipulated in writing. (b) Compensatory interest, the indemnity for damages arising from his delay in paying a sum of money; it is allowed by law even without a promise to pay it, and it accrues in addition to the conventional interest.",
+        "legalBasis": "Conventional interest \"is therefore paid not as a consequence of default, nor is it compensatory or a result of a provision of law\"; it is the result of the express will of the parties and requires an express stipulation in writing. \"Compensatory interest ... is the indemnity for damages arising from delay on the part of the debtor in an obligation consisting in the payment of a sum of money. It is interest allowed by law in the absence of a promise to pay interest.\" If the debtor is in delay, \"compensatory interest, as a matter of law, will accrue in addition to conventional interest.\" The Eastern Shipping and Nacar rules \"govern only compensatory interest, not conventional interest.\"",
+        "application": "(a) Before default, only the agreed 10% was due. (b) Once Ben was in delay, compensatory interest accrued as well, by law.",
+        "conclusion": "(a) Conventional interest; (b) compensatory interest, by law. **Bar trap:** conventional interest needs a written stipulation; compensatory interest does not."
+      },
+      "keyPoints": [
+        "Conventional interest: price of the use of money; must be stipulated in writing",
+        "Compensatory interest: indemnity for delay; allowed by law",
+        "Compensatory interest accrues in addition to conventional interest upon delay",
+        "Eastern Shipping and Nacar govern compensatory interest"
+      ],
+      "caseIds": [
+        "case-0066"
+      ],
+      "source": {
+        "caseTitle": "Lara's Gifts & Decors, Inc. v. Midtown Industrial Sales, Inc. (Resolution)",
+        "grNumber": "G.R. No. 225433",
+        "url": "https://lawphil.net/judjuris/juri2022/sep2022/gr_225433_2022.html",
+        "part": "Resolution, Part I (the two kinds of interest)",
+        "excerpt": "Conventional interest is therefore paid not as a consequence of default, nor is it compensatory or a result of a provision of law. It is \"rigorously lucrative,\" and the result of the express will of the parties in a contract. … Compensatory interest, also referred to as penalty interest, indemnity, or moratory interest, is the indemnity for damages arising from delay on the part of the debtor in an obligation consisting in the payment of a sum of money. It is interest allowed by law in the absence of a promise to pay interest as compensation for delay in paying a fixed sum or a delay in assessing and paying damages. … It should be stressed that the Eastern Shipping Lines and Nacar rules govern only compensatory interest, not conventional interest, and should be read in conjunction with the provisions of Articles 2209 and 1226 of the Civil Code."
+      }
+    },
+    {
+      "id": "q-0898",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "In 2024, Carla lent Dino ₱100,000 at 5% a month (60% a year). When sued, Dino says the rate is unconscionable. Carla presents no evidence about market rates or the parties' bargaining positions. (a) How should the court treat the 60% rate? (b) If struck down, does Dino escape paying interest altogether? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) It is suspect: a stipulated rate more than twice the prevailing legal rate must be justified by the creditor, who must prove that it is required by prevailing market conditions and that the parties were on equal footing; Carla offered no such proof, so the rate may be struck down. (b) No. Only the rate is nullified; the agreement to pay interest remains, and the legal rate prevailing when the agreement was made applies.",
+        "legalBasis": "\"The legal rate of interest is the presumptive reasonable compensation for borrowed money ... in cases where stipulated interest is more than twice the prevailing legal rate of interest, it is for the creditor to prove that this rate is required by prevailing market conditions.\" \"The creditor must also show that the parties were on an equal footing.\" \"[W]here the monetary interest rate is found to be unconscionable, only the rate is nullified and deemed not written into the contract; the parties' agreement on the payment of interest remains. In such instance, 'the legal rate of interest prevailing at the time the agreement was entered into' is applied.\"",
+        "application": "60% is ten times the 6% legal rate, and Carla did not justify it, so the court may apply the legal rate in force in 2024 instead.",
+        "conclusion": "(a) Suspect and unjustified; (b) the legal rate applies. **Bar trap:** striking an unconscionable rate does not erase the duty to pay interest."
+      },
+      "keyPoints": [
+        "The legal rate is the presumptive reasonable compensation",
+        "More than twice the legal rate is suspect",
+        "The creditor must prove market conditions and equal footing",
+        "Only the rate is nullified; interest remains due at the legal rate at the time of the agreement"
+      ],
+      "caseIds": [
+        "case-0066"
+      ],
+      "source": {
+        "caseTitle": "Lara's Gifts & Decors, Inc. v. Midtown Industrial Sales, Inc. (Resolution)",
+        "grNumber": "G.R. No. 225433",
+        "url": "https://lawphil.net/judjuris/juri2022/sep2022/gr_225433_2022.html",
+        "part": "Resolution, Part II(B) (unconscionability of stipulated interest)",
+        "excerpt": "The legal rate of interest is the presumptive reasonable compensation for borrowed money. While parties are free to deviate from this, any deviation must be reasonable and fair. Any deviation that is far-removed is suspect. Thus, in cases where stipulated interest is more than twice the prevailing legal rate of interest, it is for the creditor to prove that this rate is required by prevailing market conditions. (Emphasis supplied) Conformable to the foregoing pronouncements, \"[t]he maximum interest rate that will not cross the line of conscionability is 'not more than twice the prevailing legal rate of interest.' If the stipulated interest exceeds this standard, the creditor must show that the rate is necessary under current market conditions.\" The creditor must also show that the parties were on an equal footing when they stipulated on the interest rate. Furthermore, where the monetary interest rate is found to be unconscionable, only the rate is nullified and deemed not written into the contract; the parties' agreement on the payment of interest remains. In such instance, \"the legal rate of interest prevailing at the time the agreement was entered into\" is applied by the courts."
+      }
+    },
+    {
+      "id": "q-0899",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Eli sold goods to Fe on 60-day credit, with 24% a year charged on overdue accounts. The trial court ordered Fe to pay the price plus 24% interest. Only Fe appealed; Eli did not. On appeal, Eli asks the appellate court to add legal interest on the accrued 24% interest. Can the appellate court grant Eli's request? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. Although accrued compensatory interest may in principle earn interest under Article 2212, the trial court's judgment became final as to Eli because he did not appeal; adding an award in his favor on Fe's appeal would be ultra vires.",
+        "legalBasis": "The 24% charged \"only upon [the buyer's] failure to pay on the due date\" is \"a compensatory interest, imposed as indemnity for damages caused by the delay in the payment,\" and \"[b]y the express provision of Article 2212, the 24% compensatory interest, which have accrued at the time of judicial demand, may be subject to 'interest on interest.'\" However, the trial court's award \"became final and executory as to [the seller] as it did not appeal. Thus, the additional award of legal interest on the 24% interest, in an appeal brought by [the buyer], is ultra vires.\"",
+        "application": "Eli, not having appealed, cannot obtain more than the trial court gave him through Fe's appeal.",
+        "conclusion": "The request must be denied. **Bar trap:** an appellee who did not appeal cannot obtain affirmative relief beyond the judgment."
+      },
+      "keyPoints": [
+        "Interest charged only on overdue accounts is compensatory interest",
+        "Accrued compensatory interest may earn interest under Art. 2212",
+        "The judgment is final as to the party who did not appeal",
+        "Adding relief for him on the other party's appeal is ultra vires"
+      ],
+      "caseIds": [
+        "case-0066"
+      ],
+      "source": {
+        "caseTitle": "Lara's Gifts & Decors, Inc. v. Midtown Industrial Sales, Inc. (Resolution)",
+        "grNumber": "G.R. No. 225433",
+        "url": "https://lawphil.net/judjuris/juri2022/sep2022/gr_225433_2022.html",
+        "part": "Resolution, Part III (application to the case)",
+        "excerpt": "Now to this case, we modify our earlier Decision and hold that the contract involved is not a loan or forbearance of money, goods, or credit, but a sale of goods on credit. From January to December 2007, petitioner Lara's Gifts purchased from respondent Midtown various industrial and construction materials totaling ₱1,263,104.22. The purchases were on a 60-day credit term, with the condition that a 24% interest rate per annum would be charged on all accounts overdue. This means that the 24% interest rate per annum would run only upon petitioner's failure to pay on the due date. Thus, the 24% interest rate is a compensatory interest, imposed as indemnity for damages caused by the delay in the payment of the raw materials' purchase price, pursuant to Article 2209. By the express provision of Article 2212, the 24% compensatory interest, which have accrued at the time of judicial demand, may be subject to \"interest on interest.\" However, as Justice Amy C. Lazaro-Javier pointed out, the Regional Trial Court adjudged in favor of Midtown Industrial Sales only P1,263,104.22 plus interest at 24% per annum, computed from February 5, 2008 until fully paid; and P50,000.00 as attorney's fees. This judgment award became final and executory as to Midtown Industrial Sales as it did not appeal. Thus, the additional award of legal interest on the 24% interest, in an appeal brought by Lara's Gifts, is ultra vires."
+      }
     }
   ]
 }
