@@ -871,6 +871,21 @@
       "ruling": "The claims were denied and the petition for reinstatement declared moot. Without proof that the officials acted in bad faith and with grave abuse of discretion, he was not entitled to back wages and consequently could not claim damages; the officials acted not out of ill will but to comply with P.D. No. 6, and readily supported his reinstatement. Moral damages were denied because any delay in his reinstatement was his own fault, his separation was not shown to be in bad faith, and the case was not among those in Articles 2219 and 2220. Exemplary damages are generally not recoverable in mandamus unless the defendant patently acted with vindictiveness or wantonness and not in the exercise of honest judgment; the claim presupposes the circumstances in Articles 2231 and 2232. Such damages, imposed in addition to moral, temperate, liquidated or compensatory damages, are required by public policy, for wanton acts must be suppressed. The Court laid down three conditions: they are imposed only in addition to compensatory damages, among others, and not as a matter of right; the claimant must first establish his right to moral, temperate, liquidated or compensatory damages; and the wrongful act must be accompanied by bad faith, with the guilty party acting in a wanton, fraudulent, reckless, oppressive or malevolent manner.",
       "keyDoctrine": "Exemplary or corrective damages are imposed by way of example or correction for the public good, in addition to moral, temperate, liquidated or compensatory damages (Art. 2229); they are required by public policy to suppress wanton acts. Conditions: (1) only in addition to compensatory damages, among others, and not as a matter of right; (2) the claimant must first establish his right to moral, temperate, liquidated or compensatory damages; (3) the wrongful act must be accompanied by bad faith, with wanton, fraudulent, reckless, oppressive or malevolent conduct. In mandamus they are generally not recoverable unless the defendant patently acted with vindictiveness or wantonness rather than honest judgment. A public officer acting in good faith to comply with the law is not liable for damages.",
       "sourceUrl": "https://lawphil.net/judjuris/juri1982/jan1982/gr_l-48643_1982.html"
+    },
+    {
+      "id": "case-0106",
+      "status": "draft",
+      "name": "Baño, et al. v. Bachelor Express, Inc./Ceres Liner, Inc., et al.",
+      "grNumber": "G.R. No. 191703",
+      "year": 2012,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Exemplary or Corrective Damages",
+      "facts": "On November 6, 1993, on a descending blind curve of the national highway in Tagum City, bus driver Wenifredo Salvaña of Bachelor Express/Ceres Liner overtook a jeepney, invaded the opposite lane and hit a 10-wheeler dump truck owned by Cresencio Baño, killing its driver Amancio Asumbrado. Baño and Asumbrado's heirs sued for quasi-delict. The trial court found the bus driver recklessly negligent and the bus company liable for failing to prove diligence in selecting and supervising him, and awarded the value of and lost income from the truck, moral and exemplary damages to both Baño and the heirs, death indemnity, actual damages, loss of earning capacity and attorney's fees. The Court of Appeals deleted the exemplary damages for lack of proof of gross negligence, replaced the truck's value and lost income with temperate damages (₱100,000 and ₱200,000), deleted Baño's moral damages, reduced other awards and set attorney's fees at ₱50,000.",
+      "issue": "Was the bus driver grossly negligent so as to justify exemplary damages, and were the other awards properly modified?",
+      "ruling": "The decision was affirmed with modifications. Gross negligence is the want of even slight care, acting or omitting to act where there is a duty to act, not inadvertently but willfully and intentionally with a conscious indifference to consequences to others. Overtaking on a descending blind curve with one lane each way, encroaching on the opposite lane without ascertaining it was clear, was gross negligence. So the Court of Appeals erred in deleting the exemplary damages, which the law grants as a warning to the public and a deterrent against similar acts; but they should be tempered so as not to enrich or impoverish, so ₱50,000 each was reinstated. Moral damages for the loss of Baño's truck were correctly deleted, since the damage was not shown to have been done willfully or deliberately. Temperate damages for the destroyed truck were raised to ₱400,000 given its type and good condition, and ₱200,000 temperate damages for its lost income were sustained. The heirs' actual damages, ₱50,000 death indemnity, ₱50,000 moral damages and ₱415,640.16 for lost earning capacity were upheld, and attorney's fees were raised to ₱100,000 given the 18 years the case had been pending.",
+      "keyDoctrine": "In quasi-delicts, exemplary damages may be granted if the defendant acted with gross negligence (Art. 2231). Gross negligence is the want of even slight care, acting or omitting to act where there is a duty to act, not inadvertently but willfully and intentionally with conscious indifference to consequences. Overtaking on a blind curve into the opposite lane without ascertaining it is clear is gross negligence. Exemplary damages serve as a warning and deterrent but are tempered so as not to enrich or impoverish. Moral damages for damage to property require that it be willful or deliberate (cf. Art. 2220). Temperate damages may replace an unproved value of a destroyed vehicle and its lost income, in a reasonable amount.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2012/mar2012/gr_191703_2012.html"
     }
   ],
   "questions": [
@@ -17481,6 +17496,275 @@
         "url": "https://lawphil.net/judjuris/juri1982/jan1982/gr_l-48643_1982.html",
         "part": "Decision, the disposition",
         "excerpt": "ACCORDINGLY, considering that petitioner has already been reinstated to his former position since 1979 pursuant to the Court's Resolution of January 29, 1979, the petition for mandamus for his reinstatement is now moot. Petitioner's claim for backwages and damages is hereby denied."
+      }
+    },
+    {
+      "id": "q-1137",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Exemplary or Corrective Damages",
+      "prompt": "A bus driver, rounding a descending blind curve on a two-lane highway, overtook a jeepney, invaded the opposite lane without ascertaining that it was clear, and hit an oncoming truck, killing its driver. In the suit for quasi-delict, the Court of Appeals deleted the exemplary damages, finding no proof of gross negligence. (a) What is gross negligence? (b) Was the driver grossly negligent, so that exemplary damages are proper? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) Gross negligence is characterized by the want of even slight care, acting or omitting to act in a situation where there is a duty to act, not inadvertently but willfully and intentionally, with a conscious indifference to consequences insofar as other persons may be affected. (b) Yes. Overtaking on a descending blind curve with only one lane on each side, and encroaching on the opposite lane without ascertaining that it was clear of oncoming traffic, was gross negligence; he was remiss in his duty to determine that the road was clear and not to proceed if he could not do so safely. Exemplary damages should therefore be awarded.",
+        "legalBasis": "In Baño v. Bachelor Express, Inc., citing GSIS v. Pacific Airways, gross negligence is \"one that is characterized by the want of even slight care, acting or omitting to act in a situation where there is a duty to act, not inadvertently but willfully and intentionally with a conscious indifference to consequences insofar as other persons may be affected.\" \"Having thus encroached on the opposite lane in the process of overtaking the jeepney, without ascertaining that it was clear of oncoming traffic ... Salvaña was grossly negligent in driving his bus.\" \"Consequently, the CA erred in deleting the awards of exemplary damages.\"",
+        "application": "The driver deliberately overtook where he could not see oncoming traffic, with conscious indifference to the danger.",
+        "conclusion": "Gross negligence; exemplary damages reinstated at ₱50,000 each. **Bar trap:** in quasi-delicts the ground is gross negligence (Art. 2231), not bad faith."
+      },
+      "keyPoints": [
+        "Gross negligence: want of even slight care",
+        "Acting where there is a duty to act, willfully and intentionally",
+        "Conscious indifference to consequences to others",
+        "Overtaking on a blind curve into the opposite lane",
+        "Quasi-delict: exemplary damages for gross negligence"
+      ],
+      "caseIds": [
+        "case-0106"
+      ],
+      "source": {
+        "caseTitle": "Baño, et al. v. Bachelor Express, Inc./Ceres Liner, Inc., et al.",
+        "grNumber": "G.R. No. 191703",
+        "url": "https://lawphil.net/judjuris/juri2012/mar2012/gr_191703_2012.html",
+        "part": "The Court's Ruling, on gross negligence and exemplary damages",
+        "excerpt": "In the case of Government Service Insurance System v. Pacific Airways Corporation, the Court has defined gross negligence as \"one that is characterized by the want of even slight care, acting or omitting to act in a situation where there is a duty to act, not inadvertently but willfully and intentionally with a conscious indifference to consequences insofar as other persons may be affected.\" In the present case, records show that when bus driver Salvaña overtook the jeepney in front of him, he was rounding a blind curve along a descending road. Considering the road condition, and that there was only one lane on each side of the center line for the movement of traffic in opposite directions, it would have been more prudent for him to confine his bus to its proper place. Having thus encroached on the opposite lane in the process of overtaking the jeepney, without ascertaining that it was clear of oncoming traffic that resulted in the collision with the approaching dump truck driven by deceased Asumbrado, Salvaña was grossly negligent in driving his bus. He was remiss in his duty to determine that the road was clear and not to proceed if he could not do so in safety. Consequently, the CA erred in deleting the awards of exemplary damages, which the law grants to serve as a warning to the public and as a deterrent against the repetition of similar deleterious actions. However, the award should be tempered as it is not intended to enrich one party or to impoverish another."
+      }
+    },
+    {
+      "id": "q-1138",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Exemplary or Corrective Damages",
+      "prompt": "In the same case, the truck owner claimed moral damages for the destruction of his dump truck, and the value of the truck and its lost income. He had no adequate proof of the truck's value or its earnings. (a) Is he entitled to moral damages for the damage to his truck? (b) What may he recover for the truck's value and its lost income? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) No. Moral damages for the loss of the truck were correctly deleted, because the damage to the vehicle was not shown to have been done willfully or deliberately. (b) Temperate damages, in a reasonable amount, for both. The Court found ₱100,000 insufficient for the truck, considering it was a 10-wheeler dump truck in good running condition, and raised it to ₱400,000, while sustaining ₱200,000 for its lost income as just and equitable.",
+        "legalBasis": "In Baño v. Bachelor Express, \"the award of moral damages for the loss of his dump truck was correctly deleted since the damage to his vehicle was not shown to have been made willfully or deliberately. However, the Court finds the grant of P100,000.00 as temperate damages for the damaged vehicle to be insufficient considering its type as a 10-wheeler dump truck and its good running condition at the time of the incident. Instead, the Court finds the amount of P400,000.00 as fair and reasonable ... With respect to the adjudged lost income from the dump truck, the Court sustains, for being just and equitable, the award of temperate damages in the sum of P200,000.00.\"",
+        "application": "The truck was destroyed through gross negligence, not deliberately; its value and income were unproved but surely lost.",
+        "conclusion": "(a) No moral damages; (b) ₱400,000 and ₱200,000 temperate damages. **Bar trap:** gross negligence can support exemplary damages, yet still not be the willful injury to property that supports moral damages for property loss."
+      },
+      "keyPoints": [
+        "Moral damages for property damage: willful or deliberate injury",
+        "Grossly negligent destruction is not willful injury",
+        "Temperate damages for an unproved vehicle value",
+        "Amount reasonable given type and condition",
+        "Temperate damages for lost income too"
+      ],
+      "caseIds": [
+        "case-0106"
+      ],
+      "source": {
+        "caseTitle": "Baño, et al. v. Bachelor Express, Inc./Ceres Liner, Inc., et al.",
+        "grNumber": "G.R. No. 191703",
+        "url": "https://lawphil.net/judjuris/juri2012/mar2012/gr_191703_2012.html",
+        "part": "The Court's Ruling, on moral and temperate damages for the dump truck",
+        "excerpt": "With respect to Baño, the award of moral damages for the loss of his dump truck was correctly deleted since the damage to his vehicle was not shown to have been made willfully or deliberately. However, the Court finds the grant of P100,000.00 as temperate damages for the damaged vehicle to be insufficient considering its type as a 10-wheeler dump truck and its good running condition at the time of the incident. Instead, the Court finds the amount of P400,000.00 as fair and reasonable under the circumstances. With respect to the adjudged lost income from the dump truck, the Court sustains, for being just and equitable, the award of temperate damages in the sum of P200,000.00."
+      }
+    },
+    {
+      "id": "q-1139",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Exemplary or Corrective Damages",
+      "prompt": "(a) What purpose do exemplary damages serve, and how should their amount be fixed, according to Baño v. Bachelor Express? (b) On what consideration did the Court increase the attorney's fees?",
+      "suggestedAnswer": {
+        "answer": "(a) The law grants exemplary damages to serve as a warning to the public and as a deterrent against the repetition of similar deleterious actions; but the award should be tempered, as it is not intended to enrich one party or to impoverish another. The Court reinstated ₱50,000 for each set of petitioners. (b) The Court increased attorney's fees from ₱50,000 to ₱100,000 considering the length of time the case had been pending, about 18 years since the complaint was filed.",
+        "legalBasis": "In Baño v. Bachelor Express, exemplary damages are what \"the law grants to serve as a warning to the public and as a deterrent against the repetition of similar deleterious actions. However, the award should be tempered as it is not intended to enrich one party or to impoverish another.\" \"Finally, the attorney's fees of ₱50,000.00 as awarded by the CA is increased to ₱100,000.00 considering the length of time that this case has been pending, or a period of about 18 years.\"",
+        "application": "The bus driver's gross negligence warranted an example, in a tempered amount; the long litigation justified higher fees.",
+        "conclusion": "As stated. **Bar trap:** with exemplary damages awarded, attorney's fees find a ground in Article 2208(1); their amount still must be reasonable."
+      },
+      "keyPoints": [
+        "Exemplary damages: warning to the public and deterrent",
+        "Tempered: not to enrich or impoverish",
+        "₱50,000 each reinstated",
+        "Attorney's fees increased for 18 years of litigation"
+      ],
+      "caseIds": [
+        "case-0106"
+      ],
+      "source": {
+        "caseTitle": "Baño, et al. v. Bachelor Express, Inc./Ceres Liner, Inc., et al.",
+        "grNumber": "G.R. No. 191703",
+        "url": "https://lawphil.net/judjuris/juri2012/mar2012/gr_191703_2012.html",
+        "part": "The Court's Ruling, on exemplary damages and attorney's fees",
+        "excerpt": "Consequently, the CA erred in deleting the awards of exemplary damages, which the law grants to serve as a warning to the public and as a deterrent against the repetition of similar deleterious actions. However, the award should be tempered as it is not intended to enrich one party or to impoverish another. Thus, the Court reinstates the separate awards of exemplary damages to petitioners in the amount of P50,000.00. … Finally, the attorney's fees of ₱50,000.00 as awarded by the CA is increased to ₱100,000.00 considering the length of time that this case has been pending, or a period of about 18 years since the complaint a quo was filed on March 11, 1994."
+      }
+    },
+    {
+      "id": "q-1140",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Exemplary or Corrective Damages",
+      "prompt": "Two drivers caused collisions. (a) Ana, driving at the speed limit on a straight road in clear weather, briefly glanced at her dashboard and drifted into the next lane, hitting a car. (b) Ben, on a mountain road, overtook a truck on a blind curve into the oncoming lane without being able to see whether it was clear, and hit an oncoming van. The injured parties sue for quasi-delict and ask for exemplary damages. In which case may exemplary damages be awarded? Explain.",
+      "suggestedAnswer": {
+        "answer": "In Ben's case. In quasi-delicts, exemplary damages may be granted if the defendant acted with gross negligence, meaning the want of even slight care, acting where there is a duty to act not inadvertently but willfully and with conscious indifference to the consequences. Ana's momentary lapse is inadvertent, simple negligence. Ben deliberately overtook where he could not see oncoming traffic, without ascertaining the road was clear, which is gross negligence.",
+        "legalBasis": "In Baño v. Bachelor Express, gross negligence is the \"want of even slight care, acting or omitting to act in a situation where there is a duty to act, not inadvertently but willfully and intentionally with a conscious indifference to consequences,\" and the bus driver who overtook on a blind curve \"without ascertaining that it was clear of oncoming traffic\" was \"grossly negligent,\" so exemplary damages were proper. Article 2231: \"In quasi-delicts, exemplary damages may be granted if the defendant acted with gross negligence.\"",
+        "application": "Ana's act was inadvertent; Ben's was a willful taking of an obvious risk.",
+        "conclusion": "Exemplary damages in Ben's case only. **Bar trap:** both are liable for actual and other damages; only gross negligence adds exemplary damages."
+      },
+      "keyPoints": [
+        "Art. 2231: gross negligence in quasi-delicts",
+        "Inadvertent lapse is simple negligence",
+        "Willful risk-taking with conscious indifference is gross negligence",
+        "Both liable for compensatory damages"
+      ],
+      "caseIds": [
+        "case-0106"
+      ],
+      "source": {
+        "caseTitle": "Baño, et al. v. Bachelor Express, Inc./Ceres Liner, Inc., et al.",
+        "grNumber": "G.R. No. 191703",
+        "url": "https://lawphil.net/judjuris/juri2012/mar2012/gr_191703_2012.html",
+        "part": "The Court's Ruling, on gross negligence and exemplary damages",
+        "excerpt": "In the case of Government Service Insurance System v. Pacific Airways Corporation, the Court has defined gross negligence as \"one that is characterized by the want of even slight care, acting or omitting to act in a situation where there is a duty to act, not inadvertently but willfully and intentionally with a conscious indifference to consequences insofar as other persons may be affected.\" … Having thus encroached on the opposite lane in the process of overtaking the jeepney, without ascertaining that it was clear of oncoming traffic that resulted in the collision with the approaching dump truck driven by deceased Asumbrado, Salvaña was grossly negligent in driving his bus."
+      }
+    },
+    {
+      "id": "q-1141",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Exemplary or Corrective Damages",
+      "prompt": "Carla's delivery van was destroyed in two separate incidents involving different defendants. (a) Dino, driving with gross negligence, crashed into it. (b) Eva, angry at Carla, deliberately rammed it with her own car to destroy it. Carla claims moral damages for the loss of the van in each case. May she recover them? Explain.",
+      "suggestedAnswer": {
+        "answer": "Not against Dino, because the damage to the vehicle was not shown to have been done willfully or deliberately; gross negligence, though it supports exemplary damages, is not willful injury to property. Possibly against Eva, since willful injury to property may be a legal ground for moral damages if the court finds that, under the circumstances, such damages are justly due, and Carla proves her suffering.",
+        "legalBasis": "In Baño v. Bachelor Express, \"the award of moral damages for the loss of his dump truck was correctly deleted since the damage to his vehicle was not shown to have been made willfully or deliberately.\" Article 2220: \"Willful injury to property may be a legal ground for awarding moral damages if the court should find that, under the circumstances, such damages are justly due.\"",
+        "application": "Dino's act was negligent; Eva's was willful.",
+        "conclusion": "No moral damages against Dino for the van; possible against Eva. **Bar trap:** for property damage, the test for moral damages is willfulness, not the degree of negligence."
+      },
+      "keyPoints": [
+        "Moral damages for property damage: willful or deliberate injury",
+        "Gross negligence is not willful injury",
+        "Art. 2220: willful injury to property",
+        "Must still be justly due and proved"
+      ],
+      "caseIds": [
+        "case-0106"
+      ],
+      "source": {
+        "caseTitle": "Baño, et al. v. Bachelor Express, Inc./Ceres Liner, Inc., et al.",
+        "grNumber": "G.R. No. 191703",
+        "url": "https://lawphil.net/judjuris/juri2012/mar2012/gr_191703_2012.html",
+        "part": "The Court's Ruling, on moral damages for the dump truck",
+        "excerpt": "With respect to Baño, the award of moral damages for the loss of his dump truck was correctly deleted since the damage to his vehicle was not shown to have been made willfully or deliberately."
+      }
+    },
+    {
+      "id": "q-1142",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Exemplary or Corrective Damages",
+      "prompt": "Felix's ten-wheeler truck, in good running condition, was totally wrecked by a negligent bus driver. He could not prove its exact value with documents. The lower court awarded only ₱100,000 as temperate damages, without regard to the truck's type and condition. Felix appeals for a higher amount. May the reviewing court increase it? Reason briefly.",
+      "suggestedAnswer": {
+        "answer": "Yes. Temperate damages must be fair and reasonable under the circumstances; the court may consider the vehicle's type and its good running condition at the time of the incident, and increase an insufficient award to an amount that is fair and reasonable.",
+        "legalBasis": "In Baño v. Bachelor Express, \"the Court finds the grant of P100,000.00 as temperate damages for the damaged vehicle to be insufficient considering its type as a 10-wheeler dump truck and its good running condition at the time of the incident. Instead, the Court finds the amount of P400,000.00 as fair and reasonable under the circumstances.\" Article 2225: \"Temperate damages must be reasonable under the circumstances.\"",
+        "application": "A good-condition ten-wheeler is worth far more than ₱100,000, even if its exact value is unproved.",
+        "conclusion": "The award may be increased. **Bar trap:** \"reasonable\" works both ways; temperate damages can be raised when too low, not only cut when too high."
+      },
+      "keyPoints": [
+        "Temperate damages must be reasonable (Art. 2225)",
+        "Consider the vehicle's type and condition",
+        "An insufficient award may be increased",
+        "₱400,000 found fair in the case"
+      ],
+      "caseIds": [
+        "case-0106"
+      ],
+      "source": {
+        "caseTitle": "Baño, et al. v. Bachelor Express, Inc./Ceres Liner, Inc., et al.",
+        "grNumber": "G.R. No. 191703",
+        "url": "https://lawphil.net/judjuris/juri2012/mar2012/gr_191703_2012.html",
+        "part": "The Court's Ruling, on temperate damages for the dump truck",
+        "excerpt": "However, the Court finds the grant of P100,000.00 as temperate damages for the damaged vehicle to be insufficient considering its type as a 10-wheeler dump truck and its good running condition at the time of the incident. Instead, the Court finds the amount of P400,000.00 as fair and reasonable under the circumstances."
+      }
+    },
+    {
+      "id": "q-1143",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Exemplary or Corrective Damages",
+      "prompt": "In Baño v. Bachelor Express, gross negligence was defined as negligence characterized by",
+      "choices": {
+        "A": "any violation of a traffic rule.",
+        "B": "a mere mistake resulting from inexperience.",
+        "C": "the want of even slight care, acting or omitting to act where there is a duty to act, not inadvertently but willfully and intentionally with a conscious indifference to consequences.",
+        "D": "the failure to exercise the diligence of a good father of a family."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** Gross negligence is \"one that is characterized by the want of even slight care, acting or omitting to act in a situation where there is a duty to act, not inadvertently but willfully and intentionally with a conscious indifference to consequences insofar as other persons may be affected.\" **A, B and D are wrong:** they describe lesser fault. **Bar trap:** in quasi-delicts, gross negligence is the ground for exemplary damages.",
+      "caseIds": [
+        "case-0106"
+      ],
+      "source": {
+        "caseTitle": "Baño, et al. v. Bachelor Express, Inc./Ceres Liner, Inc., et al.",
+        "grNumber": "G.R. No. 191703",
+        "url": "https://lawphil.net/judjuris/juri2012/mar2012/gr_191703_2012.html",
+        "part": "The Court's Ruling, on gross negligence",
+        "excerpt": "the Court has defined gross negligence as \"one that is characterized by the want of even slight care, acting or omitting to act in a situation where there is a duty to act, not inadvertently but willfully and intentionally with a conscious indifference to consequences insofar as other persons may be affected.\""
+      }
+    },
+    {
+      "id": "q-1144",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Exemplary or Corrective Damages",
+      "prompt": "Why did the Court in Baño v. Bachelor Express uphold the deletion of moral damages for the loss of the dump truck?",
+      "choices": {
+        "A": "Because the damage to the vehicle was not shown to have been made willfully or deliberately.",
+        "B": "Because the owner was a corporation.",
+        "C": "Because moral damages are never allowed in quasi-delicts.",
+        "D": "Because exemplary damages were awarded instead."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** \"[T]he award of moral damages for the loss of his dump truck was correctly deleted since the damage to his vehicle was not shown to have been made willfully or deliberately.\" **B is wrong:** the owner was a natural person. **C is wrong:** the heirs got moral damages for the death in the same case. **D is wrong:** exemplary damages do not replace moral damages. **Bar trap:** compare Article 2220 on willful injury to property.",
+      "caseIds": [
+        "case-0106"
+      ],
+      "source": {
+        "caseTitle": "Baño, et al. v. Bachelor Express, Inc./Ceres Liner, Inc., et al.",
+        "grNumber": "G.R. No. 191703",
+        "url": "https://lawphil.net/judjuris/juri2012/mar2012/gr_191703_2012.html",
+        "part": "The Court's Ruling, on moral damages for the dump truck",
+        "excerpt": "With respect to Baño, the award of moral damages for the loss of his dump truck was correctly deleted since the damage to his vehicle was not shown to have been made willfully or deliberately."
+      }
+    },
+    {
+      "id": "q-1145",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Exemplary or Corrective Damages",
+      "prompt": "In Baño v. Bachelor Express, the truck owner was finally awarded",
+      "choices": {
+        "A": "₱700,000 for the truck and ₱296,601.50 a month for lost income.",
+        "B": "₱100,000 moral damages.",
+        "C": "nothing, since the bus driver was not grossly negligent.",
+        "D": "₱400,000 temperate damages for the truck, ₱200,000 for its lost income, and ₱50,000 exemplary damages."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** Baño was awarded \"(a) ₱400,000.00 as temperate damages for his damaged dump truck; (b) ₱200,000.00 as lost income of the said truck; and (c) ₱50,000.00 as exemplary damages.\" **A is wrong:** those trial court awards lacked basis. **B is wrong:** moral damages for the truck were deleted. **C is wrong:** the driver was grossly negligent. **Bar trap:** attorney's fees of ₱100,000 went to the petitioners collectively.",
+      "caseIds": [
+        "case-0106"
+      ],
+      "source": {
+        "caseTitle": "Baño, et al. v. Bachelor Express, Inc./Ceres Liner, Inc., et al.",
+        "grNumber": "G.R. No. 191703",
+        "url": "https://lawphil.net/judjuris/juri2012/mar2012/gr_191703_2012.html",
+        "part": "The Court's Ruling, the disposition",
+        "excerpt": "(2) petitioner Cresencio Baño: (a) ₱400,000.00 as temperate damages for his damaged dump truck; (b) ₱200,000.00 as lost income of the said truck; and (c) ₱50,000.00 as exemplary damages."
       }
     }
   ]
