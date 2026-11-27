@@ -636,6 +636,8 @@
         </div>
         <div class="question-actions">
           <button class="bookmark-btn" id="bookmark-btn"></button>
+          <!-- Highlighter on / off (one switch app-wide; off = select and copy text instead) -->
+          <button type="button" class="hl-toggle" aria-pressed="true"><span data-icon="pen"></span> Highlight</button>
           <!-- Her color tag: tap a color to tag the question, tap it again to remove the tag -->
           <div class="tag-picker" role="group" aria-label="Color tag">
             <button class="tag-dot" data-tag="green" aria-label="Green tag" aria-pressed="false"><span data-icon="check"></span></button>
@@ -684,6 +686,7 @@
           <p class="feedback-title" id="mcq-result"></p>
           <!-- The highlighter colors for the answer (the same four as the full text; one picked color app-wide) -->
           <div class="hl-palette rule-palette answer-palette" id="mcq-palette" role="group" aria-label="Highlighter color">
+            <button type="button" class="hl-toggle" aria-pressed="true"><span data-icon="pen"></span> Highlight</button>
             <button class="hl-swatch" data-color="facts" aria-pressed="false"><span class="hl-dot"></span><span class="hl-swatch-name">Facts</span></button>
             <button class="hl-swatch" data-color="issue" aria-pressed="false"><span class="hl-dot"></span><span class="hl-swatch-name">Issue</span></button>
             <button class="hl-swatch" data-color="ruling" aria-pressed="true"><span class="hl-dot"></span><span class="hl-swatch-name">Important ruling</span></button>
@@ -708,6 +711,7 @@
           <section class="card" id="fb-discussion-card" hidden>
             <!-- The highlighter colors for the answer (the same four as the full text; one picked color app-wide) -->
             <div class="hl-palette rule-palette answer-palette" id="fb-palette" role="group" aria-label="Highlighter color">
+              <button type="button" class="hl-toggle" aria-pressed="true"><span data-icon="pen"></span> Highlight</button>
               <button class="hl-swatch" data-color="facts" aria-pressed="false"><span class="hl-dot"></span><span class="hl-swatch-name">Facts</span></button>
               <button class="hl-swatch" data-color="issue" aria-pressed="false"><span class="hl-dot"></span><span class="hl-swatch-name">Issue</span></button>
               <button class="hl-swatch" data-color="ruling" aria-pressed="true"><span class="hl-dot"></span><span class="hl-swatch-name">Important ruling</span></button>
@@ -736,6 +740,7 @@
           <h2 class="label">Suggested answer</h2>
           <!-- The highlighter colors for the answer (the same four as the full text; one picked color app-wide) -->
           <div class="hl-palette rule-palette answer-palette" id="answer-palette" role="group" aria-label="Highlighter color">
+            <button type="button" class="hl-toggle" aria-pressed="true"><span data-icon="pen"></span> Highlight</button>
             <button class="hl-swatch" data-color="facts" aria-pressed="false"><span class="hl-dot"></span><span class="hl-swatch-name">Facts</span></button>
             <button class="hl-swatch" data-color="issue" aria-pressed="false"><span class="hl-dot"></span><span class="hl-swatch-name">Issue</span></button>
             <button class="hl-swatch" data-color="ruling" aria-pressed="true"><span class="hl-dot"></span><span class="hl-swatch-name">Important ruling</span></button>
@@ -790,6 +795,8 @@
       <h1 class="screen-title case-title" id="case-name"></h1>
       <p class="case-number" id="case-number"></p>
 
+      <!-- Highlighter on / off for the summary (the same switch as everywhere) -->
+      <div class="hl-toggle-row"><button type="button" class="hl-toggle" aria-pressed="true"><span data-icon="pen"></span> Highlight</button></div>
       <section class="card case-part">
         <h2 class="label">Facts</h2>
         <p class="prompt reading-text" id="case-facts"></p>
@@ -825,6 +832,7 @@
         <p class="full-text-note" id="full-text-note" hidden></p>
         <!-- Highlighter colors: stays pinned at the top of the screen while she reads the full text -->
         <div class="hl-palette" id="hl-palette" role="group" aria-label="Highlighter color" hidden>
+          <button type="button" class="hl-toggle" aria-pressed="true"><span data-icon="pen"></span> Highlight</button>
           <button class="hl-swatch" data-color="facts" aria-pressed="false"><span class="hl-dot"></span><span class="hl-swatch-name">Facts</span></button>
           <button class="hl-swatch" data-color="issue" aria-pressed="false"><span class="hl-dot"></span><span class="hl-swatch-name">Issue</span></button>
           <button class="hl-swatch" data-color="ruling" aria-pressed="true"><span class="hl-dot"></span><span class="hl-swatch-name">Important ruling</span></button>
@@ -874,6 +882,7 @@
       <div class="rule-reader">
         <!-- Highlighter colors: stays pinned at the top while she reads -->
         <div class="hl-palette rule-palette" id="rule-palette" role="group" aria-label="Highlighter color" hidden>
+          <button type="button" class="hl-toggle" aria-pressed="true"><span data-icon="pen"></span> Highlight</button>
           <button class="hl-swatch" data-color="facts" aria-pressed="false"><span class="hl-dot"></span><span class="hl-swatch-name">Facts</span></button>
           <button class="hl-swatch" data-color="issue" aria-pressed="false"><span class="hl-dot"></span><span class="hl-swatch-name">Issue</span></button>
           <button class="hl-swatch" data-color="ruling" aria-pressed="true"><span class="hl-dot"></span><span class="hl-swatch-name">Important ruling</span></button>

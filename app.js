@@ -5099,6 +5099,7 @@ function inActiveColor(word) {
 }
 
 function tapColoredWord(element, key, word) {
+  if (!highlighterOn) { return; }  // the highlighter is switched off: select / copy instead
   const position = Number(word.dataset.word);
   if (inActiveColor(word)) {
     setHighlights(key, [position], false);
@@ -5112,6 +5113,38 @@ function tapColoredWord(element, key, word) {
   joinHighlights(element);
 }
 
+// ---------- Highlighter on / off ----------
+// One switch for the whole app (every "Highlight" button, .hl-toggle, shows the same state). Off: taps
+// and drags don't highlight, so she can select and copy text as usual (body.highlighter-off turns the
+// browser's own selection back on in style.css); her saved highlights still show and never change.
+// Remembered on this device only (not in backups); on at first.
+const HIGHLIGHTER_KEY = "barReviewer.highlighter.v1";
+let highlighterOn = loadHighlighterOn();
+
+function loadHighlighterOn() {
+  try { return localStorage.getItem(HIGHLIGHTER_KEY) !== "off"; } catch (e) { return true; }
+}
+
+function showHighlighterState() {
+  document.body.classList.toggle("highlighter-off", !highlighterOn);
+  document.querySelectorAll(".hl-toggle").forEach(function (button) {
+    button.setAttribute("aria-pressed", String(highlighterOn));
+  });
+  document.querySelectorAll(".hl-swatch").forEach(function (swatch) { swatch.disabled = !highlighterOn; });
+}
+
+function setHighlighterOn(on) {
+  highlighterOn = !!on;
+  try { localStorage.setItem(HIGHLIGHTER_KEY, highlighterOn ? "on" : "off"); } catch (e) { /* not remembered */ }
+  if (!highlighterOn) { clearDragPreview(); }
+  showHighlighterState();
+}
+
+document.querySelectorAll(".hl-toggle").forEach(function (button) {
+  button.addEventListener("click", function () { setHighlighterOn(!highlighterOn); });
+});
+showHighlighterState();
+
 // The word she highlighted most recently in the question prompt (its number), so
 // "Find in case" knows which highlighted phrase she means. Not saved; reset per question.
 let lastPromptWord = null;
@@ -5124,6 +5157,7 @@ function makeHighlightable(elementId) {
   element.addEventListener("click", function (event) {
     // A mouse drag was just turned into a highlight: don't also toggle the word under the mouse.
     if (skipNextClick) { skipNextClick = false; return; }
+    if (!highlighterOn) { return; }  // switched off: a tap just places the cursor / selects as usual
     if (event.target.closest("input")) { return; }  // typing in a fill-in-the-blank box, not highlighting
     const word = event.target.closest(".hl-word");
     const key = element.dataset.hlKey;
@@ -5162,7 +5196,8 @@ document.addEventListener("pointerdown", function (event) {
   lastPointerType = event.pointerType;
   skipNextClick = false;
   // (A press in a fill-in-the-blank box is for typing, not for a highlight drag.)
-  mouseIsDown = (event.pointerType === "mouse") && !(event.target.closest && event.target.closest("input, textarea, [contenteditable]"));
+  // (With the highlighter off, a drag is an ordinary text selection: nothing here watches it.)
+  mouseIsDown = highlighterOn && (event.pointerType === "mouse") && !(event.target.closest && event.target.closest("input, textarea, [contenteditable]"));
 });
 
 // The press itself says whether it's part of a double-click (more reliable than the release).

@@ -1362,6 +1362,26 @@ body.sheet-open { overflow: hidden; }
 /* The picked color: outlined, with its name in full color. */
 .hl-swatch[aria-pressed="true"] { border-color: var(--primary); color: var(--text); background: var(--bg); }
 
+/* ---------- Highlighter on / off (app.js showHighlighterState) ----------
+   The "Highlight" switch: outlined, softly filled while on (like the test's Flag). In a color row it
+   sits on its own line above the swatches; near a case summary, on the right. */
+.hl-toggle {
+  display: inline-flex; align-items: center; justify-content: center; min-height: 44px;
+  padding: var(--space-2) var(--space-3); border: 1px solid var(--primary-edge); border-radius: var(--radius-pill);
+  background: var(--card); color: var(--primary-text); font: inherit; font-size: 14px; font-weight: 600;
+  cursor: pointer; -webkit-tap-highlight-color: transparent;
+}
+.hl-toggle[aria-pressed="true"] { background: var(--primary-soft); color: var(--text); border-color: var(--primary); }
+.hl-toggle:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+.hl-palette .hl-toggle { grid-column: 1 / -1; justify-self: end; }
+.hl-toggle-row { display: flex; justify-content: flex-end; margin: 0 0 var(--space-3); }
+/* Off: the swatches are dimmed and can't be picked; the text can be selected and copied as usual
+   (the browser's own selection shows again, in the accent tint), and the words aren't tap targets. */
+.hl-swatch:disabled { opacity: 0.4; cursor: default; }
+body.highlighter-off .highlightable::selection,
+body.highlighter-off .highlightable *::selection { background: color-mix(in srgb, var(--primary) 30%, transparent); }
+body.highlighter-off .hl-word { cursor: text; }
+
 /* ---------- Case titles: ONE rule for every case name shown as a label ---------- */
 /* Used by case cards in any case list, the case screen's heading, the Find in case panel,
    and "Read the case: <name>" buttons (all built with caseTitle() in app.js).
