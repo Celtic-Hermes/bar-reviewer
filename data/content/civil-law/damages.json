@@ -676,6 +676,21 @@
       "ruling": "The petition was granted. (1) An employer's liability in quasi-delict is primary and solidary, not subsidiary, as held in a long line of cases. (2) The award of temperate, moral and exemplary damages and attorney's fees lies in the court's discretion based on the facts of each case, provided it is not excessive. Temperate damages are included within compensatory damages; where from the nature of the case definite proof of pecuniary loss cannot be offered though the court is convinced there was such loss, the judge may calculate moderate damages rather than leave the plaintiff without redress. Moral damages must not be palpably and scandalously excessive, and the actual losses and gravity of the injuries must be considered. The trial court's awards were well supported by the evidence, including temperate damages for loss or impairment of earning capacity whose amount was not established, and exemplary damages for the hiring of a driver with a past record, the hit-and-run, and the company's cover-up. The Court of Appeals gave no sufficient reason for reducing them, so the trial court's decision was reinstated, with attorney's fees set at ₱20,000.",
       "keyDoctrine": "Temperate or moderate damages are included within compensatory damages and may be awarded where, from the nature of the case, definite proof of pecuniary loss cannot be offered although the court is convinced there was such loss, such as loss or impairment of earning capacity whose amount is not established. The amount of temperate, moral and exemplary damages lies in the court's discretion but must not be excessive; moral damages must not be palpably and scandalously excessive and should consider the actual losses and gravity of the injuries. An employer's liability for its employee's quasi-delict is primary and solidary.",
       "sourceUrl": "https://lawphil.net/judjuris/juri1988/may1988/gr_l-56505_1988.html"
+    },
+    {
+      "id": "case-0093",
+      "status": "draft",
+      "name": "BPI Investment Corporation v. D.G. Carreon Commercial Corporation, et al.",
+      "grNumber": "G.R. No. 126524",
+      "year": 2001,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "facts": "D.G. Carreon Commercial Corporation and the individual respondents (the spouses Carreon and Josefa Jeceil) had money market placements with BPI Investments. BPI claimed that a bookkeeping error (posting \"12-17\" for \"12-12\") made one placement appear as two, so that it overpaid ₱410,937.09 through later roll-overs. After the Carreons proposed a memorandum of agreement, BPI instead sued to recover the alleged overpayment and obtained a writ of preliminary attachment; the sheriff levied on respondents' properties, including their house, worth far more than the claim. The writ was later lifted. The trial court dismissed both the complaint (no clear proof of overpayment; the payments were on commercial papers signed by BPI's officers) and the counterclaim (no malice). The Court of Appeals awarded respondents ₱2.5 million moral, ₱1.5 million compensatory and ₱1 million exemplary damages and ₱500,000 attorney's fees, and linked the suit to the deaths of two respondents.",
+      "issue": "Was BPI liable for moral, compensatory and exemplary damages and attorney's fees, and if not, what damages are due?",
+      "ruling": "The decision was affirmed with modification. BPI failed to prove the overpayment, but it was not guilty of gross negligence, which implies the absence of even slight care, a thoughtless disregard of consequences. Exemplary damages are recoverable in crimes with aggravating circumstances, in quasi-delicts for gross negligence, and in contracts and quasi-contracts for wanton, fraudulent, reckless, oppressive or malevolent conduct; BPI merely exercised a legal option in asking for attachment, and the sheriff, not BPI, carried it out, so no exemplary damages. The link between the suit and the deaths was far-fetched. Moral damages in breach of contract require bad faith, gross negligence amounting to bad faith, or wanton disregard of the contract; with their deletion, attorney's fees were deleted too. Still, respondents' damages were due to BPI's fault or negligence short of gross negligence; since some pecuniary loss was suffered whose amount could not be proved with certainty, reasonable temperate damages of ₱300,000, ₱300,000 and ₱150,000 were awarded, plus the unpaid placements with interest.",
+      "keyDoctrine": "Temperate damages may be awarded when some pecuniary loss has been suffered but its amount cannot be proved with certainty, even where the defendant's fault falls short of gross negligence and moral and exemplary damages are denied. Gross negligence implies a want or absence of even slight care, a thoughtless disregard of consequences. Exemplary damages: in crimes with aggravating circumstances, in quasi-delicts with gross negligence, and in contracts and quasi-contracts with wanton, fraudulent, reckless, oppressive or malevolent conduct. Seeking a writ of attachment is exercising a legal option. Moral damages in breach of contract need bad faith, gross negligence amounting to bad faith, or wanton disregard of the contract; when they are deleted, attorney's fees awarded with them go too.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2001/nov2001/gr_126524_2001.html"
     }
   ],
   "questions": [
@@ -13788,6 +13803,275 @@
         "url": "https://lawphil.net/judjuris/juri1988/may1988/gr_l-56505_1988.html",
         "part": "Decision, on the amount of moral damages",
         "excerpt": "In the case of moral damages, the yardstick shaould be that the \"amount awarded should not be palpably and scandalously excessive\" so as to indicate that it was the result of passion, prejudice or corruption on the part of the trial court"
+      }
+    },
+    {
+      "id": "q-1020",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "An investment company sued its clients to recover an alleged overpayment and obtained a writ of preliminary attachment; the sheriff then levied on the clients' properties, worth many times the claim. The company lost the case. The clients now seek exemplary damages for the excessive attachment. (a) When are exemplary damages recoverable under the Civil Code provisions discussed in BPI Investment Corp. v. D.G. Carreon? (b) Will the clients' claim prosper? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) Exemplary damages are imposed by way of example or correction for the public good, in addition to moral, temperate, liquidated or compensatory damages. They are recoverable in criminal cases when the crime was committed with one or more aggravating circumstances; in quasi-delicts if the defendant acted with gross negligence; and in contracts and quasi-contracts if the defendant acted in a wanton, fraudulent, reckless, oppressive or malevolent manner. (b) No. In asking for preliminary attachment, the company was just exercising a legal option; the sheriff carried out the levy, so the company is not to blame for the excessive attachment.",
+        "legalBasis": "In BPI Investment Corporation v. D.G. Carreon Commercial Corporation, the Court restated that exemplary damages \"are recoverable in criminal cases as part of the civil liability when the crime was committed with one or more aggravating circumstances; in quasi-delicts, if the defendant acted with gross negligence; and in contracts and quasi-contracts, if the defendant acted in a wanton, fraudulent, reckless, oppressive, or malevolent manner.\" \"BPI Investments did not act in a wanton, fraudulent, reckless, oppressive, or malevolent manner, when it asked for preliminary attachment. It was just exercising a legal option. The sheriff of the issuing court did the execution and the attachment. Hence, BPI Investments is not to be blamed for the excessive and wrongful attachment.\"",
+        "application": "The company used a remedy the law gives; the sheriff, not the company, made the excessive levy.",
+        "conclusion": "No exemplary damages. **Bar trap:** an excessive levy by the sheriff is not automatically the applicant's wanton or oppressive conduct."
+      },
+      "keyPoints": [
+        "Exemplary damages: by way of example, in addition to other damages",
+        "Crimes: aggravating circumstances",
+        "Quasi-delicts: gross negligence",
+        "Contracts and quasi-contracts: wanton, fraudulent, reckless, oppressive or malevolent",
+        "Applying for attachment is exercising a legal option"
+      ],
+      "caseIds": [
+        "case-0093"
+      ],
+      "source": {
+        "caseTitle": "BPI Investment Corporation v. D.G. Carreon Commercial Corporation, et al.",
+        "grNumber": "G.R. No. 126524",
+        "url": "https://lawphil.net/judjuris/juri2001/nov2001/gr_126524_2001.html",
+        "part": "The Court's Ruling, on exemplary damages and the writ of attachment",
+        "excerpt": "The law on exemplary damages is found in Section 5, Chapter 3, Title XVIII, Book IV of the Civil Code. These are imposed by way of example or correction for the public good, in addition to moral, temperate, liquidated, or compensatory damages. They are recoverable in criminal cases as part of the civil liability when the crime was committed with one or more aggravating circumstances; in quasi-delicts, if the defendant acted with gross negligence; and in contracts and quasi-contracts, if the defendant acted in a wanton, fraudulent, reckless, oppressive, or malevolent manner. BPI Investments did not act in a wanton, fraudulent, reckless, oppressive, or malevolent manner, when it asked for preliminary attachment. It was just exercising a legal option. The sheriff of the issuing court did the execution and the attachment. Hence, BPI Investments is not to be blamed for the excessive and wrongful attachment."
+      }
+    },
+    {
+      "id": "q-1021",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "In the same case, the Court found the company negligent, but not grossly negligent, in handling its clients' placements, and deleted the awards of moral, compensatory and exemplary damages and attorney's fees. (a) When may moral damages be awarded in a breach of contract? (b) Were the clients left with no damages at all? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) Moral damages may be awarded in a breach of contract when the defendant acted in bad faith, or was guilty of gross negligence amounting to bad faith, or in wanton disregard of his contractual obligation; with their deletion, the attorney's fees awarded went as well. (b) No. Their damages were due to the company's fault or negligence short of gross negligence, and since some pecuniary loss was suffered but its amount could not be proved with certainty, the Court awarded reasonable temperate damages.",
+        "legalBasis": "In BPI Investment v. D.G. Carreon, \"[m]oral damages may be awarded in a breach of contract when the defendant acted in bad faith, or was guilty of gross negligence amounting to bad faith, or in wanton disregard of his contractual obligation. Finally, with the elimination of award of moral damages, so must the award of attorney's fees be deleted.\" \"There is no doubt, however, that the damages sustained by respondents were due to petitioner's fault or negligence, short of gross negligence. Temperate or moderate damages may be recovered when the court finds that some pecuniary loss has been suffered but its amount cannot, from the nature of the case, be proved with certainty. The Court deems it prudent to award reasonable temperate damages.\"",
+        "application": "Simple negligence did not support moral or exemplary damages, but the clients had certainly suffered some pecuniary loss, though unmeasured.",
+        "conclusion": "Temperate damages of ₱300,000, ₱300,000 and ₱150,000 were awarded. **Bar trap:** denying moral and exemplary damages for lack of bad faith or gross negligence does not rule out temperate damages."
+      },
+      "keyPoints": [
+        "Moral damages in contract: bad faith, gross negligence amounting to bad faith, or wanton disregard",
+        "No moral damages: attorney's fees awarded with them deleted too",
+        "Fault short of gross negligence still caused damage",
+        "Some pecuniary loss, amount uncertain: temperate damages",
+        "Temperate damages possible without bad faith"
+      ],
+      "caseIds": [
+        "case-0093"
+      ],
+      "source": {
+        "caseTitle": "BPI Investment Corporation v. D.G. Carreon Commercial Corporation, et al.",
+        "grNumber": "G.R. No. 126524",
+        "url": "https://lawphil.net/judjuris/juri2001/nov2001/gr_126524_2001.html",
+        "part": "The Court's Ruling, on moral, attorney's fees and temperate damages",
+        "excerpt": "The award of moral damages and attorney's fees is also not in keeping with existing jurisprudence. Moral damages may be awarded in a breach of contract when the defendant acted in bad faith, or was guilty of gross negligence amounting to bad faith, or in wanton disregard of his contractual obligation. Finally, with the elimination of award of moral damages, so must the award of attorney's fees be deleted.\" There is no doubt, however, that the damages sustained by respondents were due to petitioner's fault or negligence, short of gross negligence. Temperate or moderate damages may be recovered when the court finds that some pecuniary loss has been suffered but its amount cannot, from the nature of the case, be proved with certainty. The Court deems it prudent to award reasonable temperate damages to respondents under the circumstances."
+      }
+    },
+    {
+      "id": "q-1022",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "(a) How did the Court in BPI Investment v. D.G. Carreon define gross negligence? (b) The Court of Appeals had held that the filing of the case aggravated and eventually caused the deaths of two respondents, one of whom already had cancer before the suit and died two years later, and the other of whom died of heart ailments five years after filing. Did the Supreme Court sustain that finding? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) Gross negligence implies a want or absence of, or failure to exercise, slight care or diligence, or the entire absence of care; it evinces a thoughtless disregard of consequences without any effort to avoid them. (b) No. The Court agreed that the correlation between the filing of the case and the deaths was bereft of basis and far-fetched.",
+        "legalBasis": "\"Gross negligence implies a want or absence of or failure to exercise slight care or diligence, or the entire absence of care. It evinces a thoughtless disregard of consequences without exerting any effort to avoid them.\" \"As to the finding of the appellate court that the filing of the case aggravated and eventually caused the death of two of the respondents, we agree with the petitioner that such correlation is bereft of basis and is far fetched.\"",
+        "application": "BPI's bookkeeping error was not an absence of even slight care; and no causal link between the suit and the deaths was shown.",
+        "conclusion": "As stated. **Bar trap:** a mistake, even a costly one, is not gross negligence unless there was an absence of even slight care; and damages need a causal link, not a coincidence in time."
+      },
+      "keyPoints": [
+        "Gross negligence: want of even slight care, or entire absence of care",
+        "Thoughtless disregard of consequences without effort to avoid them",
+        "BPI's error was not gross negligence",
+        "Link between the suit and the deaths: far-fetched, no basis"
+      ],
+      "caseIds": [
+        "case-0093"
+      ],
+      "source": {
+        "caseTitle": "BPI Investment Corporation v. D.G. Carreon Commercial Corporation, et al.",
+        "grNumber": "G.R. No. 126524",
+        "url": "https://lawphil.net/judjuris/juri2001/nov2001/gr_126524_2001.html",
+        "part": "The Court's Ruling, on gross negligence and on the claimed link to the respondents' deaths",
+        "excerpt": "We find petitioner not guilty of gross negligence in the handling of the money market placement of respondents. \"Gross negligence implies a want or absence of or failure to exercise slight care or diligence, or the entire absence of care. It evinces a thoughtless disregard of consequences without exerting any effort to avoid them.\" … As to the finding of the appellate court that the filing of the case aggravated and eventually caused the death of two of the respondents, we agree with the petitioner that such correlation is bereft of basis and is far fetched."
+      }
+    },
+    {
+      "id": "q-1023",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "Ana's bank made a careless but honest accounting error on her investment account, then sued her to recover money it wrongly believed it had overpaid. It lost. (a) Ana proves the bank's error, the suit and the trouble it caused her family, but no bad faith and nothing more than ordinary carelessness; she claims moral damages. (b) She also shows that the suit and the attachment of her property caused her some financial loss whose exact amount she cannot compute. What may Ana recover? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) No moral damages. In a breach of contract they require bad faith, gross negligence amounting to bad faith, or wanton disregard of the contract; ordinary carelessness is not enough, and attorney's fees tied to moral damages would fall with them. (b) Reasonable temperate damages. Where the damage was due to the defendant's fault or negligence short of gross negligence, and some pecuniary loss has been suffered but its amount cannot be proved with certainty, temperate damages may be awarded.",
+        "legalBasis": "In BPI Investment v. D.G. Carreon, \"[m]oral damages may be awarded in a breach of contract when the defendant acted in bad faith, or was guilty of gross negligence amounting to bad faith, or in wanton disregard of his contractual obligation.\" But since \"the damages sustained by respondents were due to petitioner's fault or negligence, short of gross negligence,\" and \"[t]emperate or moderate damages may be recovered when the court finds that some pecuniary loss has been suffered but its amount cannot, from the nature of the case, be proved with certainty,\" the Court awarded \"reasonable temperate damages.\"",
+        "application": "(a) Ana shows only ordinary carelessness. (b) She shows real but unmeasured financial loss caused by the bank's fault.",
+        "conclusion": "(a) No moral damages; (b) temperate damages. **Bar trap:** the level of fault decides moral and exemplary damages; the certainty of the loss decides temperate damages."
+      },
+      "keyPoints": [
+        "Ordinary carelessness: no moral damages in contract",
+        "Need bad faith, gross negligence amounting to bad faith, or wanton disregard",
+        "Fault short of gross negligence can still support temperate damages",
+        "Temperate damages: some pecuniary loss, amount uncertain"
+      ],
+      "caseIds": [
+        "case-0093"
+      ],
+      "source": {
+        "caseTitle": "BPI Investment Corporation v. D.G. Carreon Commercial Corporation, et al.",
+        "grNumber": "G.R. No. 126524",
+        "url": "https://lawphil.net/judjuris/juri2001/nov2001/gr_126524_2001.html",
+        "part": "The Court's Ruling, on moral, attorney's fees and temperate damages",
+        "excerpt": "Moral damages may be awarded in a breach of contract when the defendant acted in bad faith, or was guilty of gross negligence amounting to bad faith, or in wanton disregard of his contractual obligation. … There is no doubt, however, that the damages sustained by respondents were due to petitioner's fault or negligence, short of gross negligence. Temperate or moderate damages may be recovered when the court finds that some pecuniary loss has been suffered but its amount cannot, from the nature of the case, be proved with certainty. The Court deems it prudent to award reasonable temperate damages to respondents under the circumstances."
+      }
+    },
+    {
+      "id": "q-1024",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "Ben sued Carla to collect a debt he honestly believed she owed and asked the court for a writ of preliminary attachment, which was granted after he posted the bond; the sheriff then levied on Carla's property worth far more than the claim. In another case, Dino, knowing he had no claim, falsely swore to an affidavit of merit to obtain an attachment against Eva, intending to ruin her business. Under the reasoning of BPI Investment v. D.G. Carreon, in which case could exemplary damages be considered? Explain.",
+      "suggestedAnswer": {
+        "answer": "Only against Dino. Ben, like BPI, was just exercising a legal option in asking for attachment, and the sheriff, not he, made the excessive levy; this is not wanton, fraudulent, reckless, oppressive or malevolent conduct. Dino's knowingly false affidavit to obtain the writ in order to ruin Eva is fraudulent and malevolent conduct of the kind that can support exemplary damages.",
+        "legalBasis": "In BPI Investment v. D.G. Carreon, exemplary damages are recoverable \"in contracts and quasi-contracts, if the defendant acted in a wanton, fraudulent, reckless, oppressive, or malevolent manner.\" BPI did not so act \"when it asked for preliminary attachment. It was just exercising a legal option. The sheriff of the issuing court did the execution and the attachment.\"",
+        "application": "Ben acted in good faith through a legal remedy; Dino abused the remedy through fraud and with intent to injure.",
+        "conclusion": "Exemplary damages may be considered against Dino, not Ben. **Bar trap:** the remedy is the same; what matters is the manner and motive of the one who used it."
+      },
+      "keyPoints": [
+        "Applying for attachment in good faith is exercising a legal option",
+        "Sheriff's excessive levy is not the applicant's wanton conduct",
+        "Fraudulent or malevolent use of the remedy differs",
+        "Exemplary damages need wanton, fraudulent, reckless, oppressive or malevolent conduct"
+      ],
+      "caseIds": [
+        "case-0093"
+      ],
+      "source": {
+        "caseTitle": "BPI Investment Corporation v. D.G. Carreon Commercial Corporation, et al.",
+        "grNumber": "G.R. No. 126524",
+        "url": "https://lawphil.net/judjuris/juri2001/nov2001/gr_126524_2001.html",
+        "part": "The Court's Ruling, on exemplary damages and the writ of attachment",
+        "excerpt": "They are recoverable in criminal cases as part of the civil liability when the crime was committed with one or more aggravating circumstances; in quasi-delicts, if the defendant acted with gross negligence; and in contracts and quasi-contracts, if the defendant acted in a wanton, fraudulent, reckless, oppressive, or malevolent manner. BPI Investments did not act in a wanton, fraudulent, reckless, oppressive, or malevolent manner, when it asked for preliminary attachment. It was just exercising a legal option. The sheriff of the issuing court did the execution and the attachment. Hence, BPI Investments is not to be blamed for the excessive and wrongful attachment."
+      }
+    },
+    {
+      "id": "q-1025",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "Felix's company paid Gina several checks on her investment account, each issued on commercial papers verified and signed by two of its senior officers. Later, Felix's company sued her for \"overpayment,\" relying only on a summary its own accounting staff prepared. Will the claim prosper? Reason briefly.",
+      "suggestedAnswer": {
+        "answer": "No. The plaintiff must prove by clear and convincing evidence that the defendant received more than was due. A summary prepared by its own accounting department without the defendant's participation is self-serving; and payments it admitted were withdrawals from validly issued commercial papers, signed by at least two authorized high-ranking officers, cannot simply be disowned.",
+        "legalBasis": "In BPI Investment v. D.G. Carreon, BPI \"failed to prove by clear and convincing evidence that D.G. Carreon indeed received money in excess of what was due them. 'The alleged payments in the complaint were admitted by plaintiff itself to be withdrawals from validly issued commercial papers, duly verified and signed by at least two authorized high-ranking officers of BPI Investments.'\" The trial court, whose dismissal was affirmed, found the summary \"at best self-serving as it was admittedly prepared by plaintiff's own accounting department without any participation of defendants.\"",
+        "application": "Felix's company relies on its own summary against papers its own officers signed.",
+        "conclusion": "The claim fails. **Bar trap:** a party's own internal summary does not outweigh the commercial papers its officers signed."
+      },
+      "keyPoints": [
+        "Overpayment must be proved by clear and convincing evidence",
+        "Own internal summary is self-serving",
+        "Payments on validly issued papers signed by officers",
+        "Cannot disown what its officers signed"
+      ],
+      "caseIds": [
+        "case-0093"
+      ],
+      "source": {
+        "caseTitle": "BPI Investment Corporation v. D.G. Carreon Commercial Corporation, et al.",
+        "grNumber": "G.R. No. 126524",
+        "url": "https://lawphil.net/judjuris/juri2001/nov2001/gr_126524_2001.html",
+        "part": "The Court's Ruling, on the burden of proving overpayment (trial court's findings, adopted)",
+        "excerpt": "\"The court agrees with defendants' counsel's observation that plaintiff did not prove by clear and convincing evidence that defendants indeed received money in excess of what is due them as it utterly failed to show and present any proof what was actually due defendants. As pointed out by the same counsel, the summary of the money market placement submitted as evidence by plaintiff (Exh. A) is at best self-serving as it was admittedly prepared by plaintiff's own accounting department without any participation of defendants. … However, while petitioner BPI Investments may not be guilty of gross negligence, it failed to prove by clear and convincing evidence that D.G. Carreon indeed received money in excess of what was due them. \"The alleged payments in the complaint were admitted by plaintiff itself to be withdrawals from validly issued commercial papers, duly verified and signed by at least two authorized high-ranking officers of BPI Investments.\""
+      }
+    },
+    {
+      "id": "q-1026",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "In BPI Investment v. D.G. Carreon, gross negligence was defined as",
+      "choices": {
+        "A": "any mistake in bookkeeping.",
+        "B": "a want or absence of or failure to exercise slight care or diligence, or the entire absence of care, evincing a thoughtless disregard of consequences.",
+        "C": "the failure to exercise the diligence of a good father of a family.",
+        "D": "a breach of contract committed in good faith."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** \"Gross negligence implies a want or absence of or failure to exercise slight care or diligence, or the entire absence of care. It evinces a thoughtless disregard of consequences without exerting any effort to avoid them.\" **A is wrong:** BPI's error was not gross negligence. **C is wrong:** that describes ordinary negligence. **D is wrong:** good faith is a separate matter. **Bar trap:** in quasi-delicts, gross negligence is the ground for exemplary damages.",
+      "caseIds": [
+        "case-0093"
+      ],
+      "source": {
+        "caseTitle": "BPI Investment Corporation v. D.G. Carreon Commercial Corporation, et al.",
+        "grNumber": "G.R. No. 126524",
+        "url": "https://lawphil.net/judjuris/juri2001/nov2001/gr_126524_2001.html",
+        "part": "The Court's Ruling, on gross negligence",
+        "excerpt": "\"Gross negligence implies a want or absence of or failure to exercise slight care or diligence, or the entire absence of care. It evinces a thoughtless disregard of consequences without exerting any effort to avoid them.\""
+      }
+    },
+    {
+      "id": "q-1027",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "Under the provisions restated in BPI Investment v. D.G. Carreon, exemplary damages are recoverable in quasi-delicts if the defendant acted",
+      "choices": {
+        "A": "with gross negligence.",
+        "B": "with simple negligence.",
+        "C": "in good faith but with a mistake.",
+        "D": "with one or more aggravating circumstances."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** Exemplary damages are recoverable \"in quasi-delicts, if the defendant acted with gross negligence.\" **B and C are wrong:** they are not grounds. **D is wrong:** aggravating circumstances are the ground in criminal cases. **Bar trap:** match the ground to the source of the obligation: crimes (aggravating circumstances), quasi-delicts (gross negligence), contracts and quasi-contracts (wanton, fraudulent, reckless, oppressive or malevolent manner).",
+      "caseIds": [
+        "case-0093"
+      ],
+      "source": {
+        "caseTitle": "BPI Investment Corporation v. D.G. Carreon Commercial Corporation, et al.",
+        "grNumber": "G.R. No. 126524",
+        "url": "https://lawphil.net/judjuris/juri2001/nov2001/gr_126524_2001.html",
+        "part": "The Court's Ruling, on exemplary damages",
+        "excerpt": "They are recoverable in criminal cases as part of the civil liability when the crime was committed with one or more aggravating circumstances; in quasi-delicts, if the defendant acted with gross negligence; and in contracts and quasi-contracts, if the defendant acted in a wanton, fraudulent, reckless, oppressive, or malevolent manner."
+      }
+    },
+    {
+      "id": "q-1028",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "In BPI Investment v. D.G. Carreon, after deleting the awards of moral, compensatory and exemplary damages and attorney's fees, the Court ordered BPI Investments to pay, among others,",
+      "choices": {
+        "A": "nominal damages to each respondent.",
+        "B": "temperate damages of ₱300,000 each to the estates of Daniel and Aurora Carreon and ₱150,000 to the estate of Josefa Jeceil.",
+        "C": "liquidated damages under the money market contract.",
+        "D": "nothing beyond costs."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** \"BPI Investments is likewise ordered to pay temperate damages to the estate of the late Daniel G. Carreon in the amount of P300,000.00, and to the estate of Aurora J. Carreon in the amount of P300,000.00, and to the estate of Josefa M. Jeceil in the amount of P150,000.00.\" It also had to pay the unpaid placements with interest. **A, C and D are wrong:** none matches the fallo. **Bar trap:** the 12% interest in this 2001 decision reflects the rate then; the legal rate was later lowered to 6% from July 1, 2013 (see Nacar).",
+      "caseIds": [
+        "case-0093"
+      ],
+      "source": {
+        "caseTitle": "BPI Investment Corporation v. D.G. Carreon Commercial Corporation, et al.",
+        "grNumber": "G.R. No. 126524",
+        "url": "https://lawphil.net/judjuris/juri2001/nov2001/gr_126524_2001.html",
+        "part": "The Fallo",
+        "excerpt": "BPI Investments is likewise ordered to pay temperate damages to the estate of the late Daniel G. Carreon in the amount of P300,000.00, and to the estate of Aurora J. Carreon in the amount of P300,000.00, and to the estate of Josefa M. Jeceil in the amount of P150,000.00."
       }
     }
   ]
