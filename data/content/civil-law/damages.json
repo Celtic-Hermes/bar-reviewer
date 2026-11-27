@@ -18805,6 +18805,101 @@
         "part": "Decision, discussion of attorney's fees and the amended counterclaim",
         "excerpt": "It is not sound public policy to place a penalty on the right to litigate. To compel the defeated party to pay the fees of counsel for his successful opponent would throw wide open the door of temptation to the opposing party and his counsel to swell the fees to undue proportions. To sentence litigant to pay his adversary's lawyer's fees would be imposing a penalty on his right to litigate. Even under the New Civil Code a litigant would not be entitled to recover the fees paid to his attorney as damages where no bad faith on the part of his adversary was shown. Needless to say, award of attorney's fees is the exception rather than the general rule."
       }
+    },
+    {
+      "id": "q-1179",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Ana, a cashier, on her employer's instruction, executed an affidavit describing a customer's bounced payment, which the employer used to file a criminal complaint; the fiscal found probable cause, but the case was later dismissed as purely civil. Separately, Ben, a store owner, personally filed a theft complaint against a customer he knew was innocent, to get back at her for a quarrel; the case ended in acquittal. The customers sue Ana and Ben for malicious prosecution. Who is liable? Explain.",
+      "suggestedAnswer": {
+        "answer": "Ben, not Ana. Malicious prosecution requires (1) the prosecution, with the defendant himself as the prosecutor, finally terminated with an acquittal; (2) that the prosecutor acted without probable cause; and (3) that he was actuated by legal malice. Ana was only a witness, not the prosecutor; the fiscal's finding showed probable cause; and she acted without malice. Ben was the prosecutor, knew the charge was false, and acted out of spite, and the case ended in acquittal.",
+        "legalBasis": "In Lao v. Court of Appeals, \"three elements must be present: First, the fact of the prosecution and the further fact that the defendant was himself the prosecutor, and that the action was finally terminated with an acquittal; second, that in bringing the action, the prosecutor acted without probable cause; and third, the prosecutor was actuated or impelled by legal malice ... Lao was only a witness, not the prosecutor ... There was probable cause ... as found and certified by the investigating fiscal himself. Lao was not motivated by malice.\"",
+        "application": "Ana lacks all three; Ben has all three.",
+        "conclusion": "Ben is liable; Ana is not. **Bar trap:** the witness who signs the affidavit is not thereby the prosecutor."
+      },
+      "keyPoints": [
+        "Defendant must be the prosecutor",
+        "Termination in acquittal",
+        "Absence of probable cause",
+        "Legal malice",
+        "A witness is not the prosecutor"
+      ],
+      "caseIds": [
+        "case-0080"
+      ],
+      "source": {
+        "caseTitle": "Lao v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 82808",
+        "url": "https://lawphil.net/judjuris/juri1991/jul1991/gr_82808_1991.html",
+        "part": "Decision, discussion of the elements of malicious prosecution",
+        "excerpt": "To maintain an action for damages based on malicious prosecution, three elements must be present: First, the fact of the prosecution and the further fact that the defendant was himself the prosecutor, and that the action was finally terminated with an acquittal; second, that in bringing the action, the prosecutor acted without probable cause; and third, the prosecutor was actuated or impelled by legal malice (Ferrer vs. Vergara, 52 O.G. 291). Lao was only a witness, not the prosecutor in the estafa case. The prosecutor was his employer, Chan Tong or the St. Joseph Lumber. There was probable cause for the charge of estafa against Espiritu, as found and certified by the investigating fiscal himself. Lao was not motivated by malice in making the affidavit upon which the fiscal based the filing of the information against Espiritu."
+      }
+    },
+    {
+      "id": "q-1180",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Carla filed an estafa complaint against Dino, honestly believing he had defrauded her; the case was dismissed as civil in nature. Dino now sues her for damages, arguing that a failed prosecution is malicious by definition. Is Dino's argument correct? Explain the policy behind the rule.",
+      "suggestedAnswer": {
+        "answer": "No. An unsuccessful prosecution may not be labelled as malicious merely because it did not prosper. Sound principles of justice and public policy dictate that persons shall have free resort to the courts for redress of wrongs and vindication of their rights, without later having to stand trial for instituting prosecutions in good faith.",
+        "legalBasis": "In Lao v. Court of Appeals, \"[a]lthough the prosecution of Espiritu for estafa did not prosper, the unsuccessful prosecution may not be labelled as malicious. 'Sound principles of justice and public policy dictate that persons shall have free resort to the courts for redress of wrongs and vindication of their rights without later having to stand trial for instituting prosecutions in good faith.'\"",
+        "application": "Carla acted in good faith; the dismissal alone shows no malice.",
+        "conclusion": "Dino's argument fails. **Bar trap:** the outcome of the earlier case does not prove malice; good faith in filing defeats the claim."
+      },
+      "keyPoints": [
+        "Unsuccessful prosecution is not necessarily malicious",
+        "Free resort to the courts",
+        "No later suit for prosecutions in good faith",
+        "Malice must be proved separately"
+      ],
+      "caseIds": [
+        "case-0080"
+      ],
+      "source": {
+        "caseTitle": "Lao v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 82808",
+        "url": "https://lawphil.net/judjuris/juri1991/jul1991/gr_82808_1991.html",
+        "part": "Decision, discussion of the policy on unsuccessful prosecutions",
+        "excerpt": "He executed it as an employee, a salesman of the St. Joseph Lumber from whom Espiritu made his purchases of construction materials and who, therefore, had personal knowledge of the transaction. Although the prosecution of Espiritu for estafa did not prosper, the unsuccessful prosecution may not be labelled as malicious. \"Sound principles of justice and public policy dictate that persons shall have free resort to the courts for redress of wrongs and vindication of their rights without later having to stand trial for instituting prosecutions in good faith\" (Buenaventura vs. Sto. Domingo, 103 Phil. 239)."
+      }
+    },
+    {
+      "id": "q-1181",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Eva, an employee, was sued together with her employer and represented by a lawyer the employer hired. The lawyer defended only the employer, never told Eva about the pre-trial, missed it, and let a default judgment against both become final. When the judgment was executed on Eva's own car, she sought relief. In another case, Felix, represented by his own lawyer, was declared in default after Felix himself ignored three notices of pre-trial that he personally received. Is either default judgment open to being set aside on the ground applied in Lao v. Court of Appeals? Explain.",
+      "suggestedAnswer": {
+        "answer": "Eva's may be; Felix's is not, on that ground. In Lao, the employee was deprived of his day in court through the gross ignorance, negligence and dereliction of duty of the counsel his employer had hired, who neglected to defend him and never informed him of the pre-trial; the judgment against him was therefore a nullity. Felix's default came from his own neglect of notices he personally received, not from such abandonment by counsel.",
+        "legalBasis": "In Lao v. Court of Appeals, \"he was deprived of his day in court in the damage suit filed by Espiritu, due to the gross ignorance, negligence, and dereliction of duty of Attorney Manuel Querubin whom his employer had hired to act as counsel for him and the St. Joseph Lumber. However, Attorney Querubin neglected to defend Lao ... He never informed Lao about the pre-trial conferences ... In view of the foregoing circumstances, the judgment against Lao was a nullity and should be set aside.\"",
+        "application": "Eva was abandoned by counsel without her knowledge; Felix caused his own default.",
+        "conclusion": "Eva's judgment may be set aside; Felix's not on this ground. **Bar trap:** the ground is gross negligence of counsel depriving the party of his day in court, not ordinary carelessness of the party himself."
+      },
+      "keyPoints": [
+        "Deprivation of day in court",
+        "Gross negligence and dereliction of counsel",
+        "Party not informed of the pre-trial",
+        "Judgment a nullity and set aside",
+        "Party's own neglect is different"
+      ],
+      "caseIds": [
+        "case-0080"
+      ],
+      "source": {
+        "caseTitle": "Lao v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 82808",
+        "url": "https://lawphil.net/judjuris/juri1991/jul1991/gr_82808_1991.html",
+        "part": "Decision, discussion of the employee's day in court and the disposition",
+        "excerpt": "There is merit in petitioner's contention that he was deprived of his day in court in the damage suit filed by Espiritu, due to the gross ignorance, negligence, and dereliction of duty of Attorney Manuel Querubin whom his employer had hired to act as counsel for him and the St. Joseph Lumber. However, Attorney Querubin neglected to defend Lao. He concentrated on the defense of the company and completely forgot his duty to defend Lao as well. He never informed Lao about the pre-trial conferences. … In view of the foregoing circumstances, the judgment against Lao was a nullity and should be set aside. Its execution against the petitioner cannot be allowed to proceed."
+      }
     }
   ]
 }
