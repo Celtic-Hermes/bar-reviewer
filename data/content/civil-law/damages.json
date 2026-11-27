@@ -9986,6 +9986,99 @@
         "part": "Resolution, Part III (application to the case)",
         "excerpt": "Now to this case, we modify our earlier Decision and hold that the contract involved is not a loan or forbearance of money, goods, or credit, but a sale of goods on credit. From January to December 2007, petitioner Lara's Gifts purchased from respondent Midtown various industrial and construction materials totaling ₱1,263,104.22. The purchases were on a 60-day credit term, with the condition that a 24% interest rate per annum would be charged on all accounts overdue. This means that the 24% interest rate per annum would run only upon petitioner's failure to pay on the due date. Thus, the 24% interest rate is a compensatory interest, imposed as indemnity for damages caused by the delay in the payment of the raw materials' purchase price, pursuant to Article 2209. By the express provision of Article 2212, the 24% compensatory interest, which have accrued at the time of judicial demand, may be subject to \"interest on interest.\" However, as Justice Amy C. Lazaro-Javier pointed out, the Regional Trial Court adjudged in favor of Midtown Industrial Sales only P1,263,104.22 plus interest at 24% per annum, computed from February 5, 2008 until fully paid; and P50,000.00 as attorney's fees. This judgment award became final and executory as to Midtown Industrial Sales as it did not appeal. Thus, the additional award of legal interest on the 24% interest, in an appeal brought by Lara's Gifts, is ultra vires."
       }
+    },
+    {
+      "id": "q-0900",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "(a) Ana Trading Corp., a well-regarded exporter, had its checks bounce because its bank failed to credit a large deposit; suppliers canceled its credit line and held its orders, and its standing in the business community dropped. (b) Ben Holdings Inc. sues another party for moral damages, claiming only that the corporation \"suffered serious anxiety and mental anguish\" from a breach. May each corporation recover moral damages? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) Yes, under the exception: a corporation may recover moral damages where its good reputation is debased, resulting in its social humiliation. (b) No. As a rule a corporation cannot recover moral damages, because, not being a natural person, it cannot experience anxiety or mental anguish.",
+        "legalBasis": "\"[A] corporation is not as a rule entitled to moral damages because, not being a natural person, it cannot experience physical suffering or such sentiments as wounded feelings, serious anxiety, mental anguish and moral shock. The only exception to this rule is where the corporation has a good reputation that is debased, resulting in its social humiliation.\" Bouncing checks impaired the corporation's prestige and diminished \"confidence in it as a reliable debtor.\"",
+        "application": "(a) Ana Trading's good name as a reliable debtor was damaged by the bank's fault. (b) Ben Holdings claims feelings it cannot have as a juridical person and shows no debased reputation.",
+        "conclusion": "(a) Yes; (b) no. **Bar trap:** a corporation's claim for moral damages must rest on a debased good reputation, not on human feelings."
+      },
+      "keyPoints": [
+        "General rule: no moral damages for corporations",
+        "It cannot feel anxiety, anguish or wounded feelings",
+        "Exception: a good reputation debased, resulting in social humiliation",
+        "Bouncing checks can impair a corporation's standing as a reliable debtor"
+      ],
+      "caseIds": [
+        "case-0067"
+      ],
+      "source": {
+        "caseTitle": "Simex International (Manila), Inc. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 88013",
+        "url": "https://lawphil.net/judjuris/juri1990/mar1990/gr_88013_1990.html",
+        "part": "Decision, discussion of moral damages (corporations)",
+        "excerpt": "Moreover, a corporation is not as a rule entitled to moral damages because, not being a natural person, it cannot experience physical suffering or such sentiments as wounded feelings, serious anxiety, mental anguish and moral shock. The only exception to this rule is where the corporation has a good reputation that is debased, resulting in its social humiliation. We shall recognize that the petitioner did suffer injury because of the private respondent's negligence that caused the dishonor of the checks issued by it. The immediate consequence was that its prestige was impaired because of the bouncing checks and confidence in it as a reliable debtor was diminished."
+      }
+    },
+    {
+      "id": "q-0901",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Carla's bank wrongly dishonored her checks. (a) Carla proved that she lost business and her reputation suffered, but could not prove the exact peso amount of her loss. The trial court awarded ₱20,000 as \"nominal damages.\" (b) In another case, Dino proved that his bank violated his right by delaying a transfer for a day, but showed no loss at all. Which kind of damages fits each case? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) Moral damages, not nominal damages: a loss was proved, and moral damages need no proof of the exact pecuniary amount, the amount being left to the court's discretion. (b) Nominal damages, which vindicate or recognize a violated right, not indemnify a loss.",
+        "legalBasis": "\"[M]oral damages are not awarded to penalize the defendant but to compensate the plaintiff for the injuries he may have suffered,\" and \"the amount of such losses need not be established with exactitude precisely because of their nature\"; under Article 2216, \"no proof of pecuniary loss is necessary in order that moral, nominal, temperate, liquidated or exemplary damages may be adjudicated.\" Under Article 2221, \"nominal damages are adjudicated in order that a right of the plaintiff, which has been violated or invaded by the defendant, may be vindicated or recognized, and not for the purpose of indemnifying the plaintiff for any loss suffered by him.\" Where loss was shown, \"the proper remedy is the award ... of moral damages.\"",
+        "application": "(a) Carla suffered real injury, so nominal damages are the wrong remedy. (b) Dino shows a violated right but no loss, which is what nominal damages are for.",
+        "conclusion": "(a) Moral damages; (b) nominal damages. **Bar trap:** nominal damages are not a fallback when the amount of a real loss is hard to prove."
+      },
+      "keyPoints": [
+        "Moral damages compensate; no proof of exact pecuniary loss needed (Art. 2216)",
+        "Nominal damages vindicate a violated right, not indemnify a loss (Art. 2221)",
+        "Where loss is shown, nominal damages are not the proper remedy",
+        "The amount of moral damages is left to the court's discretion"
+      ],
+      "caseIds": [
+        "case-0067"
+      ],
+      "source": {
+        "caseTitle": "Simex International (Manila), Inc. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 88013",
+        "url": "https://lawphil.net/judjuris/juri1990/mar1990/gr_88013_1990.html",
+        "part": "Decision, discussion of moral damages (purpose and proof) and nominal damages",
+        "excerpt": "We agree that moral damages are not awarded to penalize the defendant but to compensate the plaintiff for the injuries he may have suffered. In the case at bar, the petitioner is seeking such damages for the prejudice sustained by it as a result of the private respondent's fault. The respondent court said that the claimed losses are purely speculative and are not supported by substantial evidence, but if failed to consider that the amount of such losses need not be established with exactitude precisely because of their nature. Moral damages are not susceptible of pecuniary estimation. Article 2216 of the Civil Code specifically provides that \"no proof of pecuniary loss is necessary in order that moral, nominal, temperate, liquidated or exemplary damages may be adjudicated.\" … Under Article 2221 of the Civil Code, \"nominal damages are adjudicated in order that a right of the plaintiff, which has been violated or invaded by the defendant, may be vindicated or recognized, and not for the purpose of indemnifying the plaintiff for any loss suffered by him.\" As we have found that the petitioner has indeed incurred loss through the fault of the private respondent, the proper remedy is the award to it of moral damages, which we impose, in our discretion, in the same amount of P20,000.00."
+      }
+    },
+    {
+      "id": "q-0902",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Eli deposited ₱150,000 in his checking account, but his bank failed to post it. Several of his checks bounced. When Eli complained, the bank took a week to correct the error and never explained why it happened. The bank argues that it should not pay exemplary damages because it eventually fixed its records and paid the checks. Is the bank correct? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. A bank, as a business affected with public interest, must treat its depositors' accounts with meticulous care given their fiduciary relationship; an unexplained error and a week's delay in correcting it after notice are \"wanton\" ineptness justifying exemplary damages.",
+        "legalBasis": "\"[A]s a business affected with public interest and because of the nature of its functions, the bank is under obligation to treat the accounts of its depositors with meticulous care, always having in mind the fiduciary nature of their relationship.\" Correcting an error only a week after being informed of it, with no \"satisfactory explanation of why the error was made in the first place and why it was not corrected immediately,\" is \"ineptness [that] comes under the concept of the wanton manner contemplated in the Civil Code that calls for the imposition of exemplary damages\" (Art. 2232).",
+        "application": "The bank's late correction does not erase its failure to record the deposit and its delay after notice.",
+        "conclusion": "Exemplary damages are proper. **Bar trap:** a bank's standard is meticulous care; a later fix is not a defense to its initial breach and delay."
+      },
+      "keyPoints": [
+        "Banks are affected with public interest",
+        "Meticulous care with depositors' accounts; fiduciary relationship",
+        "Unexplained error and delay after notice",
+        "Wanton ineptness justifies exemplary damages (Art. 2232)"
+      ],
+      "caseIds": [
+        "case-0067"
+      ],
+      "source": {
+        "caseTitle": "Simex International (Manila), Inc. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 88013",
+        "url": "https://lawphil.net/judjuris/juri1990/mar1990/gr_88013_1990.html",
+        "part": "Decision, discussion of exemplary damages (duty of banks)",
+        "excerpt": "The point is that as a business affected with public interest and because of the nature of its functions, the bank is under obligation to treat the accounts of its depositors with meticulous care, always having in mind the fiduciary nature of their relationship. In the case at bar, it is obvious that the respondent bank was remiss in that duty and violated that relationship. What is especially deplorable is that, having been informed of its error in not crediting the deposit in question to the petitioner, the respondent bank did not immediately correct it but did so only one week later or twenty-three days after the deposit was made. It bears repeating that the record does not contain any satisfactory explanation of why the error was made in the first place and why it was not corrected immediately after its discovery. Such ineptness comes under the concept of the wanton manner contemplated in the Civil Code that calls for the imposition of exemplary damages."
+      }
     }
   ]
 }
