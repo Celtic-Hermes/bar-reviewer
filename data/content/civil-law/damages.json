@@ -511,6 +511,21 @@
       "ruling": "Yes. The decision was affirmed in toto. Rule 65 cannot substitute for a lost appeal. Malicious prosecution is an action for damages against one who instituted a criminal prosecution, civil suit or other proceeding maliciously and without probable cause, after it ended in favor of the defendant; there must be proof that it was prompted by a sinister design to vex or humiliate, and that it was initiated deliberately, knowing the charges were false and groundless. The mere act of submitting a case to the authorities does not make one liable. Both elements, malice and absence of probable cause, were present: the registered sale, the separate titles, Jovencio's payment of taxes, Aurea's use of his half as a bond and her mortgages of only her own half showed she knew she had sold it, and her 22-year delay and bare allegations betrayed malice; the complaint was dismissed outright for lack of probable cause. Unlike a case where probable cause was found, a suit for malicious prosecution prospers where prosecution is carried out without probable cause.",
       "keyDoctrine": "Malicious prosecution (a case for moral damages under Art. 2219(8)) requires (1) malice and (2) absence of probable cause: the prosecution must have been prompted by a sinister design to vex or humiliate and initiated deliberately by one who knew the charges were false and groundless, and it must have ended in favor of the person prosecuted. The mere act of submitting a case to the authorities does not make one liable; where probable cause was found, there is no malicious prosecution. Rule 65 cannot substitute for a lost appeal.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2004/oct2004/gr_156339_2004.html"
+    },
+    {
+      "id": "case-0082",
+      "status": "draft",
+      "name": "Equitable Banking Corporation v. Calderon",
+      "grNumber": "G.R. No. 156168",
+      "year": 2004,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "facts": "Businessman Jose Calderon held an Equitable International Visa card, with a dollar credit limit tied to a required minimum deposit of US$3,000. In 1985 he made credit purchases far above his deposit and failed to cover them on time, so, under the Credit Card Agreement, his dollar privileges were automatically suspended without notice. He later deposited enough to cover his debts, and a day before a trip to Hong Kong he deposited US$14,000 more, but he never checked the card's status or asked for reinstatement. At a Gucci store in Hong Kong, the saleslady told him in front of a friend and other shoppers that his card was blacklisted and threatened to cut it; he paid in cash. He sued the bank. The trial court awarded actual, moral and exemplary damages and attorney's fees; the Court of Appeals found no malice or bad faith but kept ₱100,000 moral damages, faulting the bank for not notifying him.",
+      "issue": "Is Calderon entitled to moral damages despite the finding that the bank acted without malice or bad faith?",
+      "ruling": "No. The petition was granted and the decision reversed. Moral damages require (1) evidence of besmirched reputation or physical, mental or psychological suffering, (2) a culpable act or omission factually established, (3) proof that the defendant's wrongful act or omission is the proximate cause of the damages, and (4) a case under Articles 2219 or 2220. In breach of contract, moral damages are recoverable only if the defendant acted fraudulently or in bad faith, or with gross negligence amounting to bad faith, or in wanton disregard of its contractual obligations. The bank acted under the agreement's clause on automatic suspension without notice, and even on negligence it was not liable: Calderon never verified his card's status or asked for reinstatement, which was the bank's option under the agreement. His was damnum absque injuria. A contract of adhesion is as binding as any contract, since the adhering party is free to reject it, and the clause was clear and was accepted by a seasoned businessman.",
+      "keyDoctrine": "Moral damages require: (1) evidence of besmirched reputation or physical, mental or psychological suffering; (2) a culpable act or omission factually established; (3) the defendant's wrongful act or omission as the proximate cause; and (4) a case under Articles 2219 or 2220. In breach of contract, they are recoverable only for fraud, bad faith, gross negligence amounting to bad faith, or wanton disregard of contractual obligations. Damage resulting from the exercise of a contractual right is damnum absque injuria. Contracts of adhesion are as binding as ordinary contracts.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2004/dec2004/gr_156168_2004.html"
     }
   ],
   "questions": [
@@ -10646,6 +10661,279 @@
         "url": "https://lawphil.net/judjuris/juri2004/oct2004/gr_156339_2004.html",
         "part": "Decision, distinguishing Drilon and the disposition",
         "excerpt": "It must be noted that in Drilon, the investigating panel found that there was probable cause to hold private respondent Homobono Adaza for trial for the crime of rebellion with murder and frustrated murder. Thus, petitioner (now Senate President) Franklin Drilon could not be held liable for malicious prosecution as there existed probable cause for the criminal case. Here, the complaint for estafa was dismissed outright as the prosecutor did not find any probable cause against respondents."
+      }
+    },
+    {
+      "id": "q-0921",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "What conditions must be met before moral damages may be recovered? In a case of breach of contract, what additional requirement applies? Explain.",
+      "suggestedAnswer": {
+        "answer": "Moral damages require: (1) evidence of besmirched reputation, or physical, mental or psychological suffering sustained by the claimant; (2) a culpable act or omission factually established; (3) proof that the defendant's wrongful act or omission is the proximate cause of the damages; and (4) that the case is predicated on any of the instances in Articles 2219 and 2220. In breach of contract, moral damages are recoverable only if the defendant acted fraudulently or in bad faith, or with gross negligence amounting to bad faith, or in wanton disregard of its contractual obligations.",
+        "legalBasis": "In Equitable Banking Corp. v. Calderon, the Court held that \"it is not enough that one merely suffered sleepless nights, mental anguish or serious anxiety as a result of the actuations of the other party,\" and quoted PT&T v. CA on the four conditions. \"Particularly, in culpa contractual or breach of contract, ... moral damages are recoverable only if the defendant has acted fraudulently or in bad faith, or is found guilty of gross negligence amounting to bad faith, or in wanton disregard of his contractual obligations. Verily, the breach must be wanton, reckless, malicious or in bad faith, oppressive or abusive.\"",
+        "application": "So suffering alone is never enough; it must be caused by a culpable act and fall under a case the law recognizes, and in contracts the breach must be in bad faith or its equivalent.",
+        "conclusion": "Four conditions, plus bad faith or its equivalent in contracts. **Bar trap:** sleepless nights or anxiety, even if real, do not by themselves warrant moral damages."
+      },
+      "keyPoints": [
+        "Evidence of besmirched reputation or physical, mental or psychological suffering",
+        "A culpable act or omission factually established",
+        "The defendant's wrongful act or omission as the proximate cause",
+        "A case under Arts. 2219 or 2220",
+        "In contracts: fraud, bad faith, gross negligence amounting to bad faith, or wanton disregard"
+      ],
+      "caseIds": [
+        "case-0082"
+      ],
+      "source": {
+        "caseTitle": "Equitable Banking Corporation v. Calderon",
+        "grNumber": "G.R. No. 156168",
+        "url": "https://lawphil.net/judjuris/juri2004/dec2004/gr_156168_2004.html",
+        "part": "Decision, the requisites of moral damages (quoting PT&T v. Court of Appeals)",
+        "excerpt": "In law, moral damages include physical suffering, mental anguish, fright, serious anxiety, besmirched reputation, wounded feelings, moral shock, social humiliation and similar injury. However, to be entitled to the award thereof, it is not enough that one merely suffered sleepless nights, mental anguish or serious anxiety as a result of the actuations of the other party. In Philippine Telegraph & Telephone Corporation vs. Court of Appeals, we have had the occasion to reiterate the conditions to be met in order that moral damages may be recovered, viz: An award of moral damages would require, firstly, evidence of besmirched reputation, or physical, mental or psychological suffering sustained by the claimant; secondly, a culpable act or omission factually established; thirdly, proof that the wrongful act or omission of the defendant is the proximate cause of the damages sustained by the claimant; and fourthly, that the case is predicated on any of the instances expressed or envisioned by Articles 2219 and 2220 of the Civil Code. Particularly, in culpa contractual or breach of contract, as here, moral damages are recoverable only if the defendant has acted fraudulently or in bad faith, or is found guilty of gross negligence amounting to bad faith, or in wanton disregard of his contractual obligations. Verily, the breach must be wanton, reckless, malicious or in bad faith, oppressive or abusive."
+      }
+    },
+    {
+      "id": "q-0922",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "A cardholder exceeded his dollar credit limit and did not pay on time, so, under the credit card agreement's clause on automatic suspension without notice, his dollar privileges were suspended. A day before a trip abroad he made a large deposit, but he never checked the card's status or asked for reinstatement. Abroad, his card was refused in front of other shoppers. The Court of Appeals, while finding no bad faith, held the bank negligent for not telling him of the suspension and awarded moral damages. Was it correct? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. The suspension was authorized by a clear clause allowing automatic suspension without notice, so the bank acted without bad faith; and it was not even negligent, since the cardholder never verified his card's status or asked for reinstatement, which was the bank's option to grant under the agreement. The embarrassment was damnum absque injuria.",
+        "legalBasis": "In Equitable Banking Corp. v. Calderon, the Court held that \"no malice or bad faith attended petitioner's dishonor of respondent's credit card,\" since it was \"justified in doing so under the provisions of its Credit Card Agreement.\" \"[W]ith the express provision on automatic suspension without notice ... there is simply no basis for holding petitioner negligent for not notifying respondent.\" The cardholder \"never verified the status of his card before departing ... much less requested petitioner to reinstate the same,\" and he \"could not have justifiably assumed that petitioner must have reinstated his card by reason alone of his having deposited\" money, since reinstatement was the issuer's option.",
+        "application": "The bank exercised a contractual right; the cardholder's own inaction caused the incident.",
+        "conclusion": "No moral damages. **Bar trap:** a court cannot find no bad faith and still award moral damages for a contract breach; and acting under a clear contractual clause is not negligence."
+      },
+      "keyPoints": [
+        "Suspension under a clear clause allowing it without notice",
+        "No malice or bad faith",
+        "No negligence: no duty to notify under the agreement",
+        "The cardholder never verified or asked for reinstatement",
+        "Reinstatement was the issuer's option"
+      ],
+      "caseIds": [
+        "case-0082"
+      ],
+      "source": {
+        "caseTitle": "Equitable Banking Corporation v. Calderon",
+        "grNumber": "G.R. No. 156168",
+        "url": "https://lawphil.net/judjuris/juri2004/dec2004/gr_156168_2004.html",
+        "part": "Decision, discussion of negligence and the automatic suspension clause",
+        "excerpt": "Given the above, and with the express provision on automatic suspension without notice under paragraph 3, supra, of the parties’ Credit Card Agreement, there is simply no basis for holding petitioner negligent for not notifying respondent of the suspended status of his credit card privileges. It may be so that respondent, a day before he left for Hongkong, made a deposit of US$14,000.00 to his dollar account with petitioner. The sad reality, however, is that he never verified the status of his card before departing for Hongkong, much less requested petitioner to reinstate the same. And, certainly, respondent could not have justifiably assumed that petitioner must have reinstated his card by reason alone of his having deposited US$14,000.00 a day before he left for Hongkong. As issuer of the card, petitioner has the option to decide whether to reinstate or altogether terminate a credit card previously suspended on considerations which the petitioner deemed proper, not the least of which are the cardholder’s payment record, capacity to pay and compliance with any additional requirements imposed by it."
+      }
+    },
+    {
+      "id": "q-0923",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "A credit card agreement, prepared entirely by the bank and offered on a take-it-or-leave-it basis, allowed the bank to suspend the card automatically, without notice, if the cardholder exceeded his credit limit. The cardholder, a seasoned businessman, argues that the clause cannot bind him because the agreement is a contract of adhesion. Is he correct? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. A contract of adhesion is as binding as an ordinary contract, because the party who adheres is free to reject it entirely; and the clause was clear and unambiguous and was accepted by a reputable businessman.",
+        "legalBasis": "In Equitable Banking Corp. v. Calderon, the Court accepted that the agreement was a contract of adhesion, \"one in which one of the contracting parties imposes a ready-made form of contract which the other party may accept or reject, but cannot modify,\" but held that \"such a contract is 'as binding as ordinary contracts, the reason being that the party who adheres to the contract is free to reject it entirely.'\" \"Moreover, the provision on automatic suspension without notice ... is couched in clear and unambiguous term,\" and the agreement was \"entered into by respondent who, by his own account, is a reputable businessman.\"",
+        "application": "The clause binds the cardholder; the damage he suffered from its application is \"damnum absque injuria.\"",
+        "conclusion": "The clause binds him. **Bar trap:** adhesion contracts are not void; ambiguity is construed against the drafter, but a clear clause is enforced."
+      },
+      "keyPoints": [
+        "Contract of adhesion: ready-made, accept or reject, cannot modify",
+        "It is as binding as an ordinary contract",
+        "The adhering party is free to reject it",
+        "The clause was clear and unambiguous",
+        "Accepted by a seasoned businessman"
+      ],
+      "caseIds": [
+        "case-0082"
+      ],
+      "source": {
+        "caseTitle": "Equitable Banking Corporation v. Calderon",
+        "grNumber": "G.R. No. 156168",
+        "url": "https://lawphil.net/judjuris/juri2004/dec2004/gr_156168_2004.html",
+        "part": "Decision, damnum absque injuria and contracts of adhesion",
+        "excerpt": "We do not take issue with the appellate court in its observation that the Credit Card Agreement herein involved is a contract of adhesion, with the stipulations therein contained unilaterally prepared and imposed by the petitioner to prospective credit card holders on a take-it-or-leave-it basis. As said by us in Polotan, Sr. vs. Court of Appeals: A contract of adhesion is one in which one of the contracting parties imposes a ready-made form of contract which the other party may accept or reject, but cannot modify. One party prepares the stipulation in the contract, while the other party merely affixes his signature or his ‘adhesion’ thereto giving no room for negotiation and depriving the latter of the opportunity to bargain on equal footing. On the same breath, however, we have equally ruled that such a contract is \"as binding as ordinary contracts, the reason being that the party who adheres to the contract is free to reject it entirely.\" Moreover, the provision on automatic suspension without notice embodied in the same Credit Card Agreement is couched in clear and unambiguous term, not to say that the agreement itself was entered into by respondent who, by his own account, is a reputable businessman engaged in business activities here and abroad."
+      }
+    },
+    {
+      "id": "q-0924",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Ana's credit card agreement allows the issuer to suspend her card automatically, without notice, if she exceeds her credit limit. (a) Ana went over her limit and did not pay; the issuer suspended the card under that clause, and the card was declined at a restaurant, embarrassing her. (b) Ben, another cardholder, was always within his limit and fully paid, but his card was suspended by mistake for no reason under the agreement, and declined in the same way. May each recover moral damages from the issuer? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) No. The issuer acted under a clear contractual right to suspend without notice; with no bad faith or culpable act, Ana's embarrassment is damage without injury. (b) Possibly, depending on proof: there is no contractual basis for the suspension, so Ben may recover if he proves the four conditions for moral damages, including that the breach was in bad faith or with gross negligence amounting to bad faith (or wanton disregard of the contract).",
+        "legalBasis": "Where the issuer \"was justified in doing so under the provisions of its Credit Card Agreement,\" no malice or bad faith attended the dishonor, and \"there is simply no basis for holding [the issuer] negligent.\" In breach of contract, moral damages require that \"the defendant has acted fraudulently or in bad faith, or is found guilty of gross negligence amounting to bad faith, or in wanton disregard of his contractual obligations,\" along with suffering, a culpable act factually established, proximate cause, and a case under Articles 2219 or 2220. Where the harm \"was not the result of a violation of a legal duty,\" it is \"damnum absque injuria.\"",
+        "application": "(a) Ana's suspension rests on a clause she accepted and breached. (b) Ben's suspension has no basis in the contract, so it is a culpable act; whether moral damages are due depends on proof that it was in bad faith or with gross negligence amounting to bad faith.",
+        "conclusion": "(a) No; (b) only if he proves the required bad faith or its equivalent. **Bar trap:** the same embarrassment can be damnum absque injuria for one cardholder and a compensable injury for another; the difference is whether the issuer acted under a contractual right."
+      },
+      "keyPoints": [
+        "Suspension under a contractual right: no bad faith, no culpable act",
+        "Damage without injury is not compensable",
+        "Suspension without contractual basis is a culpable act",
+        "In contracts, moral damages still need bad faith or gross negligence amounting to bad faith",
+        "All four conditions must be proved"
+      ],
+      "caseIds": [
+        "case-0082"
+      ],
+      "source": {
+        "caseTitle": "Equitable Banking Corporation v. Calderon",
+        "grNumber": "G.R. No. 156168",
+        "url": "https://lawphil.net/judjuris/juri2004/dec2004/gr_156168_2004.html",
+        "part": "Decision, discussion of negligence and the automatic suspension clause",
+        "excerpt": "Here, the CA ruled, and rightly so, that no malice or bad faith attended petitioner’s dishonor of respondent’s credit card. For, as found no less by the same court, petitioner was justified in doing so under the provisions of its Credit Card Agreement with respondent, paragraph 3 of which states: xxx the CARDHOLDER agrees not to exceed his/her approved credit limit, otherwise, all charges incurred including charges incurred through the use of the extension CARD/S, if any in excess of credit limit shall become due and demandable and the credit privileges shall be automatically suspended without notice to the CARDHOLDER in accordance with Section 11 hereof."
+      }
+    },
+    {
+      "id": "q-0925",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Carla's card was declined while she was shopping abroad because she had failed to maintain the minimum deposit her card agreement required, and the issuer had suspended it under the agreement. She concedes she suffered no breach of any duty the issuer owed her, but argues: \"I was humiliated, and the issuer caused it, so it must pay.\" Is she entitled to damages? Explain, distinguishing injury from damage.",
+      "suggestedAnswer": {
+        "answer": "No. She suffered damage, but not injury: injury is the illegal invasion of a legal right, damage is the resulting loss or harm, and damages are the compensation. Where the harm is not the result of a violation of a legal duty, it is damnum absque injuria, and the loss is borne by the person who suffered it.",
+        "legalBasis": "\"Injury is the illegal invasion of a legal right; damage is the loss, hurt or harm which results from the injury; and damages are the recompense or compensation awarded for the damage suffered. Thus, there can be damage without injury in those instances in which the loss or harm was not the result of a violation of a legal duty. In such cases the consequences must be borne by the injured person alone.\" \"[T]here must first be a breach of some duty and the imposition of liability for that breach before damages may be awarded; and the breach of such duty should be the proximate cause of the injury.\"",
+        "application": "The issuer acted under the agreement; with no breach of duty, Carla's humiliation is not compensable.",
+        "conclusion": "No damages. **Bar trap:** causing someone's embarrassment is not enough; there must be a breach of a duty owed to her."
+      },
+      "keyPoints": [
+        "Injury: illegal invasion of a legal right",
+        "Damage: the resulting loss or harm; damages: the compensation",
+        "Damage without injury (damnum absque injuria) is not compensable",
+        "There must be a breach of duty that is the proximate cause",
+        "The loss is borne by the person who suffered it"
+      ],
+      "caseIds": [
+        "case-0082"
+      ],
+      "source": {
+        "caseTitle": "Equitable Banking Corporation v. Calderon",
+        "grNumber": "G.R. No. 156168",
+        "url": "https://lawphil.net/judjuris/juri2004/dec2004/gr_156168_2004.html",
+        "part": "Decision, damnum absque injuria (quoting BPI Express Card v. Court of Appeals)",
+        "excerpt": "Unquestionably, respondent suffered damages as a result of the dishonor of his card. There is, however, a material distinction between damages and injury. To quote from our decision in BPI Express Card Corporation vs. Court of Appeals: Injury is the illegal invasion of a legal right; damage is the loss, hurt or harm which results from the injury; and damages are the recompense or compensation awarded for the damage suffered. Thus, there can be damage without injury in those instances in which the loss or harm was not the result of a violation of a legal duty. In such cases the consequences must be borne by the injured person alone, the law affords no remedy for damages resulting from an act which does not amount to a legal injury or wrong. These situations are often called damnum absque injuria. In other words, in order that a plaintiff may maintain an action for the injuries of which he complains, he must establish that such injuries resulted from a breach of duty which the defendant owed to the plaintiff- a concurrence of injury to the plaintiff and legal responsibility by the person causing it. The underlying basis for the award of tort damages is the premise that an individual was injured in contemplation of law. Thus, there must first be a breach of some duty and the imposition of liability for that breach before damages may be awarded; and the breach of such duty should be the proximate cause of the injury. (Emphasis supplied). In the situation in which respondent finds himself, his is a case of damnum absque injuria."
+      }
+    },
+    {
+      "id": "q-0926",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Dino's internet provider broke its service contract by cutting his line for two days because of a technician's ordinary mistake; it restored the line as soon as Dino complained. Dino testifies that he had sleepless nights and serious anxiety because he could not work. Nothing shows bad faith, gross negligence or wanton disregard of the contract. May Dino recover moral damages? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. Suffering sleepless nights or anxiety is not enough; in breach of contract, moral damages are recoverable only if the defendant acted fraudulently or in bad faith, with gross negligence amounting to bad faith, or in wanton disregard of its obligations, and an ordinary mistake promptly corrected is none of these.",
+        "legalBasis": "\"[T]o be entitled to the award thereof, it is not enough that one merely suffered sleepless nights, mental anguish or serious anxiety as a result of the actuations of the other party.\" \"[I]n culpa contractual or breach of contract ... moral damages are recoverable only if the defendant has acted fraudulently or in bad faith, or is found guilty of gross negligence amounting to bad faith, or in wanton disregard of his contractual obligations. Verily, the breach must be wanton, reckless, malicious or in bad faith, oppressive or abusive.\"",
+        "application": "Dino may have other remedies for the breach (such as actual damages he proves), but not moral damages without the required bad faith or its equivalent.",
+        "conclusion": "No moral damages. **Bar trap:** in contract cases, a breach plus suffering is still not enough; the manner of the breach must be wanton, reckless, malicious or in bad faith."
+      },
+      "keyPoints": [
+        "Sleepless nights or anxiety alone are not enough",
+        "In contracts: fraud or bad faith required",
+        "Or gross negligence amounting to bad faith, or wanton disregard",
+        "An ordinary, promptly corrected mistake is none of these",
+        "Other proven damages may still be recoverable"
+      ],
+      "caseIds": [
+        "case-0082"
+      ],
+      "source": {
+        "caseTitle": "Equitable Banking Corporation v. Calderon",
+        "grNumber": "G.R. No. 156168",
+        "url": "https://lawphil.net/judjuris/juri2004/dec2004/gr_156168_2004.html",
+        "part": "Decision, the requisites of moral damages (quoting PT&T v. Court of Appeals)",
+        "excerpt": "In law, moral damages include physical suffering, mental anguish, fright, serious anxiety, besmirched reputation, wounded feelings, moral shock, social humiliation and similar injury. However, to be entitled to the award thereof, it is not enough that one merely suffered sleepless nights, mental anguish or serious anxiety as a result of the actuations of the other party. … Particularly, in culpa contractual or breach of contract, as here, moral damages are recoverable only if the defendant has acted fraudulently or in bad faith, or is found guilty of gross negligence amounting to bad faith, or in wanton disregard of his contractual obligations. Verily, the breach must be wanton, reckless, malicious or in bad faith, oppressive or abusive."
+      }
+    },
+    {
+      "id": "q-0927",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Which of the following is NOT one of the conditions for an award of moral damages restated in Equitable Banking Corp. v. Calderon?",
+      "choices": {
+        "A": "Evidence of besmirched reputation, or physical, mental or psychological suffering.",
+        "B": "A culpable act or omission factually established.",
+        "C": "Proof of pecuniary loss supported by receipts.",
+        "D": "That the case is predicated on any of the instances in Articles 2219 and 2220."
+      },
+      "correct": "C",
+      "explanation": "**C is correct**, because it is not a condition. The four conditions are: evidence of besmirched reputation or suffering; a culpable act or omission factually established; proof that the wrongful act is the proximate cause; and a case under Articles 2219 and 2220. **A, B and D are wrong:** each is a condition. **Bar trap:** no proof of pecuniary loss is needed for moral damages.",
+      "caseIds": [
+        "case-0082"
+      ],
+      "source": {
+        "caseTitle": "Equitable Banking Corporation v. Calderon",
+        "grNumber": "G.R. No. 156168",
+        "url": "https://lawphil.net/judjuris/juri2004/dec2004/gr_156168_2004.html",
+        "part": "Decision, the requisites of moral damages (quoting PT&T v. Court of Appeals)",
+        "excerpt": "An award of moral damages would require, firstly, evidence of besmirched reputation, or physical, mental or psychological suffering sustained by the claimant; secondly, a culpable act or omission factually established; thirdly, proof that the wrongful act or omission of the defendant is the proximate cause of the damages sustained by the claimant; and fourthly, that the case is predicated on any of the instances expressed or envisioned by Articles 2219 and 2220 of the Civil Code."
+      }
+    },
+    {
+      "id": "q-0928",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "According to Equitable Banking Corp. v. Calderon, a contract of adhesion is",
+      "choices": {
+        "A": "void, because the adhering party cannot negotiate.",
+        "B": "voidable at the option of the adhering party.",
+        "C": "binding only if notarized.",
+        "D": "as binding as ordinary contracts, because the party who adheres is free to reject it entirely."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The Court said such a contract is \"as binding as ordinary contracts, the reason being that the party who adheres to the contract is free to reject it entirely.\" **A, B and C are wrong:** none is the rule. **Bar trap:** a clear clause in an adhesion contract is enforced.",
+      "caseIds": [
+        "case-0082"
+      ],
+      "source": {
+        "caseTitle": "Equitable Banking Corporation v. Calderon",
+        "grNumber": "G.R. No. 156168",
+        "url": "https://lawphil.net/judjuris/juri2004/dec2004/gr_156168_2004.html",
+        "part": "Decision, contracts of adhesion",
+        "excerpt": "On the same breath, however, we have equally ruled that such a contract is \"as binding as ordinary contracts, the reason being that the party who adheres to the contract is free to reject it entirely.\""
+      }
+    },
+    {
+      "id": "q-0929",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "What was the result in Equitable Banking Corp. v. Calderon?",
+      "choices": {
+        "A": "The award of ₱100,000 moral damages was affirmed.",
+        "B": "The petition was granted and the Court of Appeals' decision reversed, so the cardholder recovered no moral damages.",
+        "C": "The moral damages were reduced to nominal damages.",
+        "D": "The case was remanded to determine the bank's negligence."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court ruled: \"the instant petition is hereby GRANTED and the decision under review REVERSED and SET ASIDE,\" stressing that \"moral damages are in the category of an award designed to compensate the claim for actual injury suffered and not to impose a penalty on the wrongdoer.\" **A is wrong:** the award was set aside. **C and D are wrong:** neither was ordered. **Bar trap:** the cardholder's case was damnum absque injuria.",
+      "caseIds": [
+        "case-0082"
+      ],
+      "source": {
+        "caseTitle": "Equitable Banking Corporation v. Calderon",
+        "grNumber": "G.R. No. 156168",
+        "url": "https://lawphil.net/judjuris/juri2004/dec2004/gr_156168_2004.html",
+        "part": "Decision, the disposition and the nature of moral damages",
+        "excerpt": "On a final note, we emphasize that \"moral damages are in the category of an award designed to compensate the claim for actual injury suffered and not to impose a penalty on the wrongdoer.\" WHEREFORE, the instant petition is hereby GRANTED and the decision under review REVERSED and SET ASIDE."
       }
     }
   ]
