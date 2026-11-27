@@ -766,6 +766,21 @@
       "ruling": "The petition was partly granted. Actual damages must be proved with a reasonable degree of certainty, ordinarily by receipts; photographs showed the damage but not its amount, so no actual damages for the house and shop. But absent competent proof, a party may still claim temperate damages where the court is convinced some pecuniary loss was suffered; ₱200,000 was awarded. As a rule, documentary evidence is needed for lost earning capacity; the exceptions (a self-employed person, or a daily wage worker, earning less than the minimum wage) did not apply because his claimed income far exceeded it. Still, following Pleno, Victory Liner and other cases, where earning capacity is plainly established but actual income is unproved, temperate damages may be given in lieu: ₱300,000, roughly two years' gross income, considering his minor children's dependence. In quasi-delicts, exemplary damages may be granted for gross negligence, but should be tempered; the reduction to ₱200,000 was proper. With exemplary damages awarded, attorney's fees of 10% were proper under Article 2208(1), and legal interest was imposed.",
       "keyDoctrine": "Actual damages must be proved with a reasonable degree of certainty, ordinarily by receipts; where only the fact of loss is shown, temperate damages may be awarded (Art. 2224). Loss of earning capacity (Art. 2206) generally requires documentary evidence, except for a self-employed person or a daily wage worker earning less than the minimum wage; where earning capacity is plainly established but income is unproved, temperate damages may be awarded in lieu. In quasi-delicts, exemplary damages may be granted for gross negligence, but tempered so as not to enrich or impoverish. Attorney's fees may be awarded when exemplary damages are (Art. 2208(1)).",
       "sourceUrl": "https://lawphil.net/judjuris/juri2011/jan2011/gr_190521_2011.html"
+    },
+    {
+      "id": "case-0099",
+      "status": "draft",
+      "name": "International Container Terminal Services, Inc. v. Chua",
+      "grNumber": "G.R. No. 195031",
+      "year": 2014,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "facts": "Celeste Chua's container van of personal effects from California was unloaded at Manila's North Harbor in April 1997 and stored in ICTSI's depot pending customs inspection. On May 8, 1997, the depot caught fire and her van, with 44 others, burned; surveyors found 70% of the contents totally burnt and the rest unusable. She sued for the value of her goods, presenting photocopied receipts totaling US$67,535.61. The trial court, affirmed by the Court of Appeals, applied res ipsa loquitur and ordered ICTSI to pay US$67,535.61 actual damages, ₱50,000 moral damages and ₱50,000 attorney's fees. On examination, many receipts were for groceries, perishables, baby products and car parts that could not have been shipped, some were illegible or in other people's names, and they did not match the surveyors' inventories, which listed mostly electronics.",
+      "issue": "Is ICTSI liable, and were the awards of actual damages, moral damages and attorney's fees proper?",
+      "ruling": "The petition was partly granted. ICTSI was liable: fire is not an act of God unless caused by lightning or a natural calamity not attributable to human agency, and res ipsa loquitur applied since the fire started in its depot and it gave no explanation. It could not invoke the PPA per-package limit or its 12-month claim period, since she had no contract with it. But actual damages must be proved with a reasonable degree of certainty by competent proof or the best evidence obtainable; the receipts did not match the items in the van and ignored depreciation, so they could not support the award. In the absence of competent proof of the amount of actual damages, a party is entitled to temperate damages, whose reasonable amount is left to the court's discretion, more than nominal but less than compensatory: ₱350,000. Moral damages were deleted for lack of proof that she actually suffered: her testimony that she \"was saddened, had sleepless nights and anxiety\" gave no specifics. Attorney's fees were deleted too, since no Article 2208 exception applied, exemplary damages had been denied, and ICTSI had not acted in bad faith in evaluating and denying her claim.",
+      "keyDoctrine": "Actual damages (Art. 2199) must be proved with a reasonable degree of certainty by competent proof or the best evidence obtainable; receipts that do not match the lost items are not competent proof. In the absence of competent proof of the amount, a party is entitled to temperate damages (Art. 2224), in a reasonable amount, more than nominal but less than compensatory. Moral damages require a clear showing that the claimant actually suffered; general statements of sadness and sleepless nights are not enough. Attorney's fees are the exception; without exemplary damages or another Article 2208 ground, they cannot be awarded.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2014/mar2014/gr_195031_2014.html"
     }
   ],
   "questions": [
@@ -15494,6 +15509,275 @@
         "url": "https://lawphil.net/judjuris/juri2011/jan2011/gr_190521_2011.html",
         "part": "Our Ruling, the disposition",
         "excerpt": "Under these facts and taking into account the unrebutted annual earnings of the deceased, we hold that the petitioners are entitled to temperate damages in the amount of ₱300,000.00 [or roughly, the gross income for two (2) years] to compensate for damages for loss of the earning capacity of the deceased."
+      }
+    },
+    {
+      "id": "q-1074",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "A shipper's container of personal effects burned in a terminal operator's depot. To prove her loss, she presented photocopied receipts totaling US$67,000, but many were for groceries and perishables that could not have been shipped, some were illegible or in other people's names, and they did not match the surveyors' inventory of the burned van, which listed mostly electronics bought two years earlier. (a) May actual damages be awarded on these receipts? (b) If not, what may she recover? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) No. Actual damages must not only be capable of proof but must actually be proved with a reasonable degree of certainty, premised on competent proof or the best evidence obtainable. Receipts that do not accurately reflect the items in the container van are not competent proof; the award also ignored depreciation of the electronics. (b) Temperate damages. In the absence of competent proof of the amount of actual damages suffered, a party is entitled to temperate damages, in a reasonable amount left to the court's discretion, more than nominal but less than compensatory.",
+        "legalBasis": "In International Container Terminal Services, Inc. v. Chua, \"[b]asic is the rule that to recover actual damages, not only must the amount of loss be capable of proof; it must also be actually proven with a reasonable degree of certainty, premised upon competent proof or the best evidence obtainable.\" \"The receipts she submitted cannot be considered competent proof since she failed to prove that the items listed therein are indeed the items that were in her container van.\" \"In the absence of competent proof on the amount of actual damages suffered, a party is entitled to receive temperate damages ... The amount thereof is usually left to the sound discretion of the courts but the same should be reasonable.\"",
+        "application": "Her loss is certain, since the van burned, but the receipts do not establish its amount.",
+        "conclusion": "No actual damages; ₱350,000 temperate damages. **Bar trap:** having receipts is not enough; they must correspond to what was actually lost."
+      },
+      "keyPoints": [
+        "Actual damages: proved with reasonable certainty",
+        "Competent proof or best evidence obtainable",
+        "Receipts must match the items actually lost",
+        "Depreciation must be considered",
+        "No competent proof of amount: temperate damages, reasonable amount"
+      ],
+      "caseIds": [
+        "case-0099"
+      ],
+      "source": {
+        "caseTitle": "International Container Terminal Services, Inc. v. Chua",
+        "grNumber": "G.R. No. 195031",
+        "url": "https://lawphil.net/judjuris/juri2014/mar2014/gr_195031_2014.html",
+        "part": "The Ruling of the Court, on actual and temperate damages",
+        "excerpt": "\"Actual damages are compensation for an injury that will put the injured party in the position where it was before the injury. They pertain to such injuries or losses that are actually sustained and susceptible of measurement. Except as provided by law or by stipulation, a party is entitled to adequate compensation only for such pecuniary loss as is duly proven. Basic is the rule that to recover actual damages, not only must the amount of loss be capable of proof; it must also be actually proven with a reasonable degree of certainty, premised upon competent proof or the best evidence obtainable.\" In the case before us, respondent failed to adduce evidence adequate enough to satisfactorily prove the amount of actual damages claimed. The receipts she submitted cannot be considered competent proof since she failed to prove that the items listed therein are indeed the items that were in her container van and vice versa. … In the absence of competent proof on the amount of actual damages suffered, a party is entitled to receive temperate damages. Article 2224 of the New Civil Code provides that: \"Temperate or moderate damages, which are more than nominal but less than compensatory damages, may be recovered when the court finds that some pecuniary loss has been suffered but its amount cannot, from the nature of the case, be proved with certainty.\" The amount thereof is usually left to the sound discretion of the courts but the same should be reasonable, bearing in mind that temperate damages should be \"more than nominal but less than compensatory.\""
+      }
+    },
+    {
+      "id": "q-1075",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "In the same case, the shipper testified only that when the terminal operator refused to pay, she \"was saddened, had sleepless nights and anxiety.\" The trial court awarded moral damages, finding that the operator's \"outright denial and unjust refusal\" of her claim caused her anxiety. The records show the operator promptly asked for supporting documents, evaluated the claim, and explained its denial in writing. Should moral damages be sustained? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. An award of moral damages must be anchored on a clear showing that the claimant actually experienced mental anguish, besmirched reputation, sleepless nights, wounded feelings or similar injury; a general statement without specific details of the suffering is not enough, and the award must be disallowed absent such evidence. Moreover, the operator did not outrightly or unjustly refuse the claim; it responded, evaluated and explained its denial, so it did not act in bad faith.",
+        "legalBasis": "In ICTSI v. Chua, \"an award of moral damages must be anchored on a clear showing that the party claiming the same actually experienced mental anguish, besmirched reputation, sleepless nights, wounded feelings, or similar injury.\" Her testimony \"merely states that ... she 'was saddened, had sleepless nights and anxiety' without providing specific details of the suffering.\" \"Since an award of moral damages is predicated on a categorical showing by the claimant that she actually experienced emotional and mental sufferings, it must be disallowed absent any evidence thereon.\" Also, \"[p]etitioner clearly did not act in bad faith, especially since it explained to respondent the reasons for the denial of her claim.\"",
+        "application": "Her testimony was general, and the operator's handling of the claim showed good faith.",
+        "conclusion": "Moral damages deleted. **Bar trap:** saying the words \"sleepless nights\" is not the categorical showing of suffering the law requires."
+      },
+      "keyPoints": [
+        "Moral damages need a clear showing of actual suffering",
+        "Specific details of the suffering are needed",
+        "General statements are not enough",
+        "Prompt evaluation and explained denial: no bad faith"
+      ],
+      "caseIds": [
+        "case-0099"
+      ],
+      "source": {
+        "caseTitle": "International Container Terminal Services, Inc. v. Chua",
+        "grNumber": "G.R. No. 195031",
+        "url": "https://lawphil.net/judjuris/juri2014/mar2014/gr_195031_2014.html",
+        "part": "The Ruling of the Court, on moral damages",
+        "excerpt": "Certainly, an award of moral damages must be anchored on a clear showing that the party claiming the same actually experienced mental anguish, besmirched reputation, sleepless nights, wounded feelings, or similar injury. In the case herein under consideration, the records are bereft of any proof that respondent in fact suffered moral damages as contemplated in the afore-quoted provision of the Civil Code. … The testimony of respondent, on the other hand, merely states that when she failed to recover damages from petitioner, she \"was saddened, had sleepless nights and anxiety\" without providing specific details of the suffering she allegedly went through. \"Since an award of moral damages is predicated on a categorical showing by the claimant that she actually experienced emotional and mental sufferings, it must be disallowed absent any evidence thereon.\" … Petitioner immediately responded to the initial demand for reimbursement and it subsequently denied the claim after evaluation thereof. Petitioner clearly did not act in bad faith, especially since it explained to respondent the reasons for the denial of her claim."
+      }
+    },
+    {
+      "id": "q-1076",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "A warehouse operator argues it is not liable for goods destroyed when its depot caught fire, because fire is a fortuitous event, and because the owner did not prove how the fire started. No one knows how the fire began, and the operator gave no explanation. Is the operator liable? Explain.",
+      "suggestedAnswer": {
+        "answer": "Yes. Fire is not an act of God unless caused by lightning or a natural disaster or calamity not attributable to human agency. And res ipsa loquitur applies: the defendant either knows the cause or has the best opportunity to ascertain it, while the plaintiff, with no knowledge of it, relies on proof of the happening alone; it is then the defendant's responsibility to show it was not negligent. The doctrine applies only when direct evidence is absent and not readily available, as here.",
+        "legalBasis": "In ICTSI v. Chua, the fire \"cannot be considered an act of God since the same was not caused by lightning or a natural disaster or other calamity not attributable to human agency.\" Res ipsa loquitur is \"based on the theory that the defendant either knows the cause of the accident or has the best opportunity of ascertaining it and the plaintiff, having no knowledge thereof, is compelled to allege negligence in general terms ... It is, consequently, the defendant's responsibility to show that there was no negligence on his part.\" It \"can be invoked when and only when, under the circumstances involved, direct evidence is absent and not readily available.\"",
+        "application": "The fire started in the operator's depot while the goods were in its custody, and it did not prove due diligence.",
+        "conclusion": "The operator is liable. **Bar trap:** the owner need not prove how the fire started; the burden shifts to the custodian."
+      },
+      "keyPoints": [
+        "Fire is not an act of God unless from lightning or natural calamity",
+        "Res ipsa loquitur: defendant knows or can ascertain the cause",
+        "Plaintiff relies on the happening alone",
+        "Defendant must show no negligence",
+        "Only when direct evidence is absent and not readily available"
+      ],
+      "caseIds": [
+        "case-0099"
+      ],
+      "source": {
+        "caseTitle": "International Container Terminal Services, Inc. v. Chua",
+        "grNumber": "G.R. No. 195031",
+        "url": "https://lawphil.net/judjuris/juri2014/mar2014/gr_195031_2014.html",
+        "part": "The Ruling of the Court, on fire as a fortuitous event and res ipsa loquitur",
+        "excerpt": "This Court will no longer delve on the issue of whether or not the fire which caused the loss of and/or damage to respondent's personal effects is a fortuitous event since both the trial court and the Court of Appeals correctly ruled that the fire which occurred in this case cannot be considered an act of God since the same was not caused by lightning or a natural disaster or other calamity not attributable to human agency. … The doctrine of res ipsa loquitur is \"based on the theory that the defendant either knows the cause of the accident or has the best opportunity of ascertaining it and the plaintiff, having no knowledge thereof, is compelled to allege negligence in general terms. In such instance, the plaintiff relies on proof of the happening of the accident alone to establish negligence.\" The principle, furthermore, provides a means by which a plaintiff can hold liable a defendant who, if innocent, should be able to prove that he exercised due care to prevent the accident complained of from happening. It is, consequently, the defendant's responsibility to show that there was no negligence on his part. The doctrine, however, \"can be invoked when and only when, under the circumstances involved, direct evidence is absent and not readily available.\""
+      }
+    },
+    {
+      "id": "q-1077",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "Ana's shipment of furniture was destroyed in a fire at Ben's warehouse, for which Ben is liable. (a) Ana presents original invoices for each piece, matching exactly the items listed by the surveyor who inspected the ruins, and the court accounts for depreciation. (b) Carla, whose goods burned in the same fire, presents a pile of receipts that include restaurant bills and gasoline purchases, and that do not match the surveyor's list. What may each recover? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) Actual damages, because the invoices, matched to the surveyed items and adjusted for depreciation, are competent proof of the amount of loss with a reasonable degree of certainty. (b) Not actual damages, since her receipts do not accurately reflect the items lost; but since some pecuniary loss is certain, she may recover temperate damages in a reasonable amount.",
+        "legalBasis": "In ICTSI v. Chua, the receipts \"cannot be considered competent proof since she failed to prove that the items listed therein are indeed the items that were in her container van and vice versa,\" and the award \"failed to take into consideration that since most of the contents ... are electronics or electrical items, the same are subject to depreciation.\" \"In the absence of competent proof on the amount of actual damages suffered, a party is entitled to receive temperate damages.\"",
+        "application": "(a) Ana's evidence matches and is adjusted. (b) Carla's does not match.",
+        "conclusion": "(a) Actual damages; (b) temperate damages. **Bar trap:** competent proof of actual damages must tie the receipts to the very items lost."
+      },
+      "keyPoints": [
+        "Receipts matching the lost items: competent proof",
+        "Depreciation considered",
+        "Mismatched receipts: not competent proof",
+        "Certain loss, unproved amount: temperate damages"
+      ],
+      "caseIds": [
+        "case-0099"
+      ],
+      "source": {
+        "caseTitle": "International Container Terminal Services, Inc. v. Chua",
+        "grNumber": "G.R. No. 195031",
+        "url": "https://lawphil.net/judjuris/juri2014/mar2014/gr_195031_2014.html",
+        "part": "The Ruling of the Court, on actual and temperate damages",
+        "excerpt": "On the contrary, all the foregoing actually prove that the submitted receipts do not accurately reflect the items in the container van and, therefore, cannot be the basis for a grant of actual damages. Furthermore, the award of the trial court failed to take into consideration that since most of the contents of respondent's container van are electronics or electrical items, the same are subject to depreciation. … In the absence of competent proof on the amount of actual damages suffered, a party is entitled to receive temperate damages."
+      }
+    },
+    {
+      "id": "q-1078",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "Dino won a damages suit against Eva's company. The trial court refused to award him exemplary damages but still awarded attorney's fees because he \"was compelled to litigate.\" Eva's company had acted in good faith, responding to his demand, asking for documents and explaining its denial. Is the award of attorney's fees proper? Reason briefly.",
+      "suggestedAnswer": {
+        "answer": "No. Attorney's fees are the exception rather than the rule, and there must be a compelling legal reason within Article 2208. They are not awarded every time a party prevails, and even when a claimant is compelled to litigate, they may not be awarded absent a sufficient showing of bad faith. Having rejected exemplary damages, which might have served as the basis, the court erred in awarding attorney's fees.",
+        "legalBasis": "In ICTSI v. Chua, \"[a]n award of attorney's fees has always been the exception rather than the rule and there must be some compelling legal reason to bring the case within the exception.\" \"Even when a claimant is compelled to litigate with third persons or to incur expenses to protect his rights, still, attorney's fees may not be awarded where no sufficient showing of bad faith could be reflected in a party's persistence in a case.\" \"It was, therefore, error for it and the Court of Appeals to award attorney's fees after rejecting respondent's prayer for exemplary damages as the latter might have served as basis for awarding attorney's fees.\"",
+        "application": "No exemplary damages were awarded, and Eva's company did not act in bad faith.",
+        "conclusion": "The award should be deleted. **Bar trap:** \"compelled to litigate\" is not enough without bad faith on the other side."
+      },
+      "keyPoints": [
+        "Attorney's fees are the exception",
+        "Compelling legal reason under Art. 2208",
+        "Being compelled to litigate is not enough without bad faith",
+        "Exemplary damages denied: one basis for fees gone"
+      ],
+      "caseIds": [
+        "case-0099"
+      ],
+      "source": {
+        "caseTitle": "International Container Terminal Services, Inc. v. Chua",
+        "grNumber": "G.R. No. 195031",
+        "url": "https://lawphil.net/judjuris/juri2014/mar2014/gr_195031_2014.html",
+        "part": "The Ruling of the Court, on attorney's fees",
+        "excerpt": "An award of attorney's fees has always been the exception rather than the rule and there must be some compelling legal reason to bring the case within the exception and justify the award. In this case, none of the exceptions applies. \"Attorney's fees are not awarded every time a party prevails in a suit. The policy of the Court is that no premium should be placed on the right to litigate.\" \"Even when a claimant is compelled to litigate with third persons or to incur expenses to protect his rights, still, attorney's fees may not be awarded where no sufficient showing of bad faith could be reflected in a party's persistence in a case other than an erroneous conviction of the righteousness of his cause.\" The trial court refused to award exemplary damages and denied respondent's claim therefore. It was, therefore, error for it and the Court of Appeals to award attorney's fees after rejecting respondent's prayer for exemplary damages as the latter might have served as basis for awarding attorney's fees."
+      }
+    },
+    {
+      "id": "q-1079",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "Felix's goods burned while in a port operator's depot awaiting customs inspection. Felix never used the operator's services or signed anything with it. The operator argues that its liability is limited to ₱3,500 per package under its management contract with the port authority, and that Felix's suit is barred because its Terms of Business require claims to be filed within 12 months. Are these defenses valid? Reason briefly.",
+      "suggestedAnswer": {
+        "answer": "No. A person who is not privy to a contract is not bound by it. Since Felix had no contractual relationship with the operator, he is bound neither by the per-package limit in its management contract nor by its 12-month claim period. The limit applies only where the consignee availed of the operator's services or is otherwise bound, as by accepting delivery of the cargo from it.",
+        "legalBasis": "In ICTSI v. Chua, \"there is no contractual relationship between it and respondent since the latter did not avail herself of petitioner's services; hence, she cannot be bound by the said management contract.\" The cited cases applied the limit because \"the consignee either availed of the services of the arrastre operator or is otherwise bound by the Management Contract ... as a result of the consignee's acceptance of the delivery of the cargo.\" \"This absence of a contractual relationship is precisely also the reason why respondent is not bound by petitioner's Terms of Business,\" so the action was not barred.",
+        "application": "Felix neither used the services nor accepted delivery from the operator.",
+        "conclusion": "Both defenses fail. **Bar trap:** a contractual limit of liability binds only those privy to, or otherwise bound by, the contract."
+      },
+      "keyPoints": [
+        "Non-party to a contract is not bound by it",
+        "PPA per-package limit not applicable without a contractual relation",
+        "Exception: consignee availed of services or accepted delivery",
+        "Terms of Business claim period not binding either"
+      ],
+      "caseIds": [
+        "case-0099"
+      ],
+      "source": {
+        "caseTitle": "International Container Terminal Services, Inc. v. Chua",
+        "grNumber": "G.R. No. 195031",
+        "url": "https://lawphil.net/judjuris/juri2014/mar2014/gr_195031_2014.html",
+        "part": "The Ruling of the Court, on the PPA limit and the claim period",
+        "excerpt": "Contrary to petitioner's claim, there is no contractual relationship between it and respondent since the latter did not avail herself of petitioner's services; hence, she cannot be bound by the said management contract. The cases cited by petitioner wherein the Supreme Court applied the provision of the Management Contract and limited the arrastre operator's liability to the amount stated therein are not applicable to the case at bar because in all of those cited cases, the consignee either availed of the services of the arrastre operator or is otherwise bound by the Management Contract – despite non-availment of the services of the arrastre operator – as a result of the consignee's acceptance of the delivery of the cargo from the arrastre operator. This absence of a contractual relationship is precisely also the reason why respondent is not bound by petitioner's Terms of Business which requires a claimant to commence any action for damages against petitioner within 12 months from the occurrence of the cause of the claim."
+      }
+    },
+    {
+      "id": "q-1080",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "Under ICTSI v. Chua, the amount of temperate damages",
+      "choices": {
+        "A": "must equal the value shown in the receipts.",
+        "B": "is fixed by the PPA per-package limit.",
+        "C": "must be less than nominal damages.",
+        "D": "is usually left to the sound discretion of the courts but should be reasonable, more than nominal but less than compensatory."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** \"The amount thereof is usually left to the sound discretion of the courts but the same should be reasonable, bearing in mind that temperate damages should be 'more than nominal but less than compensatory.'\" **A is wrong:** the receipts were not competent proof. **B is wrong:** the PPA limit did not bind the respondent. **C is wrong:** temperate damages are more than nominal. **Bar trap:** the Court found ₱350,000 equitable.",
+      "caseIds": [
+        "case-0099"
+      ],
+      "source": {
+        "caseTitle": "International Container Terminal Services, Inc. v. Chua",
+        "grNumber": "G.R. No. 195031",
+        "url": "https://lawphil.net/judjuris/juri2014/mar2014/gr_195031_2014.html",
+        "part": "The Ruling of the Court, on temperate damages",
+        "excerpt": "The amount thereof is usually left to the sound discretion of the courts but the same should be reasonable, bearing in mind that temperate damages should be \"more than nominal but less than compensatory.\" Considering the concomitant circumstances prevailing in this case, temperate damages in the amount of P350,000.00 is deemed equitable."
+      }
+    },
+    {
+      "id": "q-1081",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "In ICTSI v. Chua, the fire in the depot was not considered an act of God because",
+      "choices": {
+        "A": "it was not caused by lightning or a natural disaster or other calamity not attributable to human agency.",
+        "B": "the owner proved the operator's employees started it.",
+        "C": "fire can never excuse any obligor.",
+        "D": "the depot had no fire insurance."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The fire \"cannot be considered an act of God since the same was not caused by lightning or a natural disaster or other calamity not attributable to human agency.\" **B is wrong:** no one proved how it started; res ipsa loquitur applied. **C is wrong:** a fire from lightning or natural calamity could qualify. **D is wrong:** insurance was not the test. **Bar trap:** the custodian must prove due care.",
+      "caseIds": [
+        "case-0099"
+      ],
+      "source": {
+        "caseTitle": "International Container Terminal Services, Inc. v. Chua",
+        "grNumber": "G.R. No. 195031",
+        "url": "https://lawphil.net/judjuris/juri2014/mar2014/gr_195031_2014.html",
+        "part": "The Ruling of the Court, on fire as a fortuitous event",
+        "excerpt": "both the trial court and the Court of Appeals correctly ruled that the fire which occurred in this case cannot be considered an act of God since the same was not caused by lightning or a natural disaster or other calamity not attributable to human agency."
+      }
+    },
+    {
+      "id": "q-1082",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "What did the Court finally award in ICTSI v. Chua?",
+      "choices": {
+        "A": "US$67,535.61 actual damages, ₱50,000 moral damages and ₱50,000 attorney's fees.",
+        "B": "Only ₱3,500 per package under the PPA order.",
+        "C": "₱350,000 temperate damages, after deleting the actual and moral damages and attorney's fees.",
+        "D": "Nothing, because the claim was filed beyond 12 months."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** \"[T]he award of actual damages, moral damages and attorney's fees are DELETED. However, petitioner is ordered to pay respondent TEMPERATE DAMAGES in the amount of P350,000.00.\" **A is wrong:** those awards were deleted. **B and D are wrong:** the PPA limit and the Terms of Business did not bind her. **Bar trap:** liability stood; only the measure of damages changed.",
+      "caseIds": [
+        "case-0099"
+      ],
+      "source": {
+        "caseTitle": "International Container Terminal Services, Inc. v. Chua",
+        "grNumber": "G.R. No. 195031",
+        "url": "https://lawphil.net/judjuris/juri2014/mar2014/gr_195031_2014.html",
+        "part": "The Ruling of the Court, the disposition",
+        "excerpt": "The Decision of the Court of Appeals in CA- G.R. CV No. 78315 dated 14 September 2010 is MODIFIED in that the award of actual damages, moral damages and attorney's fees are DELETED. However, petitioner is ordered to pay respondent TEMPERATE DAMAGES in the amount of P350,000.00."
       }
     }
   ]
