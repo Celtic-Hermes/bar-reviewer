@@ -706,6 +706,21 @@
       "ruling": "The petition was denied, but attorney's fees were deleted. The obligation did not arise from quasi-delict, since there was a pre-existing contract: the loan secured by a mortgage, which gave rise to the duty to return the title once the mortgage was released. GSIS was liable under Article 1170 for negligence in the performance of its obligation, and, being presumed in good faith, under Article 2201 for the natural and probable consequences of the breach. No moral damages, since in breach of contract they require fraud, malice or bad faith, and economic hardship or worry is not enough. No actual damages, which must be proved by clear evidence, not speculation. But the spouses clearly suffered financial damage, so temperate damages were proper. GSIS argued that there must be proof of pecuniary loss; the Court answered that the rationale of temperate damages is precisely that definite proof cannot be offered, and when the court is convinced there has been a loss it may calculate moderate damages. ₱20,000 was reasonable. Attorney's fees, which are the exception and need factual, legal and equitable justification, were deleted.",
       "keyDoctrine": "Temperate damages (Art. 2224), more than nominal but less than compensatory, are proper when the court is convinced some pecuniary loss was suffered though definite proof of its amount cannot be offered; that is their very rationale. Where there is a pre-existing contract, liability for negligence in performing it arises under Article 1170, not quasi-delict; an obligor in good faith answers for the natural and probable consequences of the breach (Art. 2201). Moral damages in breach of contract need fraud, malice or bad faith; economic hardship or worry is not enough. Actual damages must be proved by clear evidence. Attorney's fees are the exception, not the rule.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2001/sep2001/gr_135644_2001.html"
+    },
+    {
+      "id": "case-0095",
+      "status": "draft",
+      "name": "People of the Philippines v. Yrat, et al.",
+      "grNumber": "G.R. No. 130415",
+      "year": 2001,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "facts": "On the eve of a town fiesta in Misamis Occidental in 1995, after an altercation and threats, Alvin Yrat came up behind Benjamin Aca-ac, who was seated on his motorcycle talking to Raul Jimena, and struck him on the neck with the butt of a pistol while Jimena punched his face; Yrat then stepped in front of him and shot him twice, killing him. The trial court convicted Yrat of murder and sentenced him to reclusion perpetua, and ordered the accused to pay ₱50,000 death indemnity, ₱20,000 funeral expenses, ₱50,000 for loss of earning capacity and ₱60,000 moral damages. The widow had testified that her husband earned ₱50,000 and that she spent ₱20,000 for the wake and burial, but no receipts or other proof were presented. Only Yrat's appeal remained.",
+      "issue": "(1) Was the killing qualified by treachery although the shots were fired frontally? (2) Were the awards for loss of earning capacity and funeral expenses proper, and what damages are due instead?",
+      "ruling": "The conviction for murder was affirmed with modification. Treachery exists even if the attack is frontal, when it is sudden and unexpected and gives the unarmed victim no opportunity to defend himself; here he was struck from behind and shot before he could react. On damages, compensation for lost income requires due proof; for lost income due to death there must be unbiased proof of the deceased's average income, and the widow's self-serving statement was not enough. Funeral expenses likewise must be shown with the best evidence obtainable; only expenses supported by receipts and actually incurred are allowed. Both awards were deleted. In their place the heirs were awarded ₱15,000 temperate damages under Article 2224, since some pecuniary loss was suffered but its amount could not be proved with certainty. The ₱50,000 civil indemnity, which requires no proof other than the fact of death and the accused's responsibility (Art. 2206), and the ₱60,000 moral damages for the family's pain and anguish were sustained.",
+      "keyDoctrine": "Actual damages for lost earnings or funeral expenses require proof: unbiased proof of the deceased's average income (a self-serving statement is not enough) and receipts for expenses actually incurred. When such proof fails but some pecuniary loss was clearly suffered, temperate damages may be awarded in lieu of them (Art. 2224). Civil indemnity for death requires no proof beyond the fact of death and the accused's responsibility (Art. 2206). Treachery may exist even in a frontal attack if it is sudden and unexpected and the victim has no chance to defend himself.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2001/oct2001/gr_130415_2001.html"
     }
   ],
   "questions": [
@@ -14358,6 +14373,274 @@
         "url": "https://lawphil.net/judjuris/juri2001/sep2001/gr_135644_2001.html",
         "part": "The Fallo",
         "excerpt": "WHEREFORE, we DENY the petition. We AFFIRM the decision of the Court of Appeals in CA-G.R. CV No. 51240 with the MODIFICATION that award of attorney's fees is DELETED."
+      }
+    },
+    {
+      "id": "q-1038",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "In a murder case, the trial court awarded the heirs ₱50,000 for the victim's loss of earning capacity and ₱20,000 for funeral expenses, based only on the widow's testimony that her husband earned that much and that she spent that amount on the wake and burial. No receipts or other evidence were presented. Are the awards proper? If not, what may the heirs recover for these losses? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. Compensation for lost income is in the nature of damages and requires due proof; for lost income due to death, there must be unbiased proof of the deceased's average income, and a self-serving statement is not enough. Funeral expenses must be shown with the best evidence obtainable; only expenses supported by receipts and actually incurred are allowed. Since both awards fail but some pecuniary loss was clearly suffered, the heirs may recover temperate damages in lieu of them.",
+        "legalBasis": "In People v. Yrat, the Court held that \"compensation for loss of income is in the nature of damages and as such requires due proof,\" and \"for lost income due to death, there must be unbiased proof of the deceased's average income. Self-serving, hence, unreliable statement is not enough.\" For funeral expenses, \"[w]e have consistently ruled that only expenses supported by receipts and which appear to have been actually incurred shall be allowed.\" \"In lieu of the aforesaid damages, the heirs ... should be awarded the amount of P15,000.00 as temperate damages pursuant to Article 2224.\"",
+        "application": "The widow's testimony alone is self-serving and unsupported by receipts, but a death certainly causes some pecuniary loss such as burial costs.",
+        "conclusion": "Both awards are deleted and temperate damages are awarded instead. **Bar trap:** the amounts awarded in older cases like this one have since been standardized; use the current amounts in Jugueta, already in the app, for crimes."
+      },
+      "keyPoints": [
+        "Lost income requires due proof",
+        "Unbiased proof of average income; self-serving statement not enough",
+        "Funeral expenses: receipts, actually incurred",
+        "Best evidence obtainable for actual damages",
+        "Temperate damages in lieu of unproved actual damages"
+      ],
+      "caseIds": [
+        "case-0095"
+      ],
+      "source": {
+        "caseTitle": "People of the Philippines v. Yrat, et al.",
+        "grNumber": "G.R. No. 130415",
+        "url": "https://lawphil.net/judjuris/juri2001/oct2001/gr_130415_2001.html",
+        "part": "Decision, on the awards of damages (loss of earning capacity, funeral expenses and temperate damages)",
+        "excerpt": "Going now to the trial court's award of damages, we find the award of loss of earning capacity not in order. It bears stressing that compensation for loss of income is in the nature of damages and as such requires due proof of the damages suffered. The prosecution failed to present evidence to show the deceased's monthly earnings. What was presented in evidence was only the testimony of the wife that the deceased- was earning P50,000.00. We have held that \"for lost income due to death, there must be unbiased proof of the deceased's average income. Self-serving, hence, unreliable statement is not enough.\" The award of P20,000.00 for funeral expenses should likewise be deleted in the absence of evidence to prove the same. To justify a grant of actual damages, it is necessary to show the amount of actual loss with the best evidence obtainable. The testimony of Julia Aca-ac that she spent P20,000.00 for the wake and burial of her husband, without presenting any receipts, is not sufficient to support the claim for funeral expenses. We have consistently ruled that only expenses supported by receipts and which appear to have been actually incurred shall be allowed. … In lieu of the aforesaid damages, the heirs of the deceased Benjamin Aca-ac should be awarded the amount of P15,000.00 as temperate damages pursuant to Article 2224 of the Civil Code which provides that temperate damages may be recovered when the court finds that some pecuniary loss has been suffered, but its amount cannot, from the nature of the case, be proved with certainty."
+      }
+    },
+    {
+      "id": "q-1039",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "In the same case, the accused argued that the ₱50,000 death indemnity and the ₱60,000 moral damages should also be deleted because, like the funeral expenses, they were not supported by evidence. Is he correct? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. Civil indemnity ex delicto requires no proof other than the fact of death of the victim and the accused's responsibility for it; under Article 2206, when death occurs as a result of the crime, the heirs are entitled to be indemnified without need of any evidence or proof. Moral damages were also properly sustained, considering the pain and anguish of the victim's family.",
+        "legalBasis": "In People v. Yrat, \"[w]e, however, sustain the award of P50,000.00 as civil indemnity (ex delicto) which requires no proof other than the fact of death of the victim and assailant's responsibility therefor. Article 2206 of the Civil Code provides that when death occurs as a result of the crime, the heirs of the deceased are entitled to be indemnified for the death of the victim without need of any evidence or proof thereof. The award of moral damages in the amount of P60,000.00 should also be sustained taking into consideration the pain and anguish of the victim's family.\"",
+        "application": "The victim's death and the accused's responsibility were proved, which is all the civil indemnity requires.",
+        "conclusion": "Both awards stand. **Bar trap:** civil indemnity and actual damages differ: the first needs only proof of death and responsibility; the second needs proof of the amount."
+      },
+      "keyPoints": [
+        "Civil indemnity ex delicto: no proof beyond death and responsibility",
+        "Art. 2206: indemnity for death without need of proof",
+        "Moral damages for the family's pain and anguish",
+        "Contrast with actual damages, which need proof of the amount"
+      ],
+      "caseIds": [
+        "case-0095"
+      ],
+      "source": {
+        "caseTitle": "People of the Philippines v. Yrat, et al.",
+        "grNumber": "G.R. No. 130415",
+        "url": "https://lawphil.net/judjuris/juri2001/oct2001/gr_130415_2001.html",
+        "part": "Decision, on civil indemnity and moral damages",
+        "excerpt": "We, however, sustain the award of P50,000.00 as civil indemnity (ex delicto) which requires no proof other than the fact of death of the victim and assailant's responsibility therefor. Article 2206 of the Civil Code provides that when death occurs as a result of the crime, the heirs of the deceased are entitled to be indemnified for the death of the victim without need of any evidence or proof thereof. The award of moral damages in the amount of P60,000.00 should also be sustained taking into consideration the pain and anguish of the victim's family."
+      }
+    },
+    {
+      "id": "q-1040",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "An accused argues that he is guilty only of homicide, not murder, because he shot the victim from the front. The evidence shows he first struck the unarmed victim from behind with the butt of his gun while a companion punched the victim's face, then stepped in front of him and shot him before he could recover. Was the killing qualified by treachery? Explain.",
+      "suggestedAnswer": {
+        "answer": "Yes. Treachery is present when the offender employs means, methods or forms in the execution of the crime that tend directly and especially to insure its execution without risk to himself from any defense the victim might make; its two elements are (1) means of execution that give the person attacked no opportunity to defend himself or retaliate, and (2) deliberate or conscious adoption of those means. Treachery exists even if the attack is frontal, if it is sudden and unexpected and gives the victim no opportunity to repel it.",
+        "legalBasis": "In People v. Yrat, \"for treachery to be considered, two (2) elements must concur, to wit: (1) the employment of means of execution that gives the person attacked no opportunity to defend himself or retaliate; and (2) the means of execution were deliberately or consciously adopted.\" \"While Benjamin was assaulted frontally, this does not make such attack less treacherous. Treachery exists — even if the attack is frontal — if it is sudden and unexpected, giving the victim no opportunity to repel it or defend himself.\"",
+        "application": "The victim, unarmed and still reeling from the blows from behind, had no time to react before being shot.",
+        "conclusion": "Murder qualified by treachery. **Bar trap:** a frontal attack does not rule out treachery; what matters is suddenness and the victim's inability to defend himself."
+      },
+      "keyPoints": [
+        "Means that insure execution without risk to the offender",
+        "No opportunity to defend or retaliate",
+        "Means deliberately or consciously adopted",
+        "Frontal attack can be treacherous if sudden and unexpected"
+      ],
+      "caseIds": [
+        "case-0095"
+      ],
+      "source": {
+        "caseTitle": "People of the Philippines v. Yrat, et al.",
+        "grNumber": "G.R. No. 130415",
+        "url": "https://lawphil.net/judjuris/juri2001/oct2001/gr_130415_2001.html",
+        "part": "Decision, on treachery",
+        "excerpt": "Treachery is present when the offender employs means, methods, or forms in the execution of the crime which tend directly and especially to insure its execution without risk to himself arising from any defensive or retaliatory act which the victim might make. Thus, for treachery to be considered, two (2) elements must concur, to wit: (1) the employment of means of execution that gives the person attacked no opportunity to defend himself or retaliate; and (2) the means of execution were deliberately or consciously adopted. … While Benjamin was assaulted frontally, this does not make such attack less treacherous. Treachery exists — even if the attack is frontal — if it is sudden and unexpected, giving the victim no opportunity to repel it or defend himself."
+      }
+    },
+    {
+      "id": "q-1041",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "Ana's husband was killed by Ben. At trial, (a) Ana presents official receipts from the funeral parlor and the cemetery totaling ₱80,000; (b) for the nine days of prayers and the food served to mourners, she testifies she spent about ₱30,000 but has no receipts. What may Ana recover for these two items? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) ₱80,000 as actual damages, because only expenses supported by receipts and actually incurred are allowed, and these are. (b) Not as actual damages, since her testimony without receipts is not sufficient; but because some pecuniary loss was clearly suffered whose amount cannot be proved with certainty, the court may award temperate damages for it.",
+        "legalBasis": "In People v. Yrat, \"[t]o justify a grant of actual damages, it is necessary to show the amount of actual loss with the best evidence obtainable. The testimony ... that she spent P20,000.00 for the wake and burial of her husband, without presenting any receipts, is not sufficient.\" \"[O]nly expenses supported by receipts and which appear to have been actually incurred shall be allowed.\" In lieu of unproved actual damages, temperate damages may be awarded under Article 2224 \"when the court finds that some pecuniary loss has been suffered, but its amount cannot ... be proved with certainty.\"",
+        "application": "(a) The receipts prove the amount. (b) The prayer expenses were surely incurred, but only Ana's word supports the amount.",
+        "conclusion": "(a) Actual damages; (b) temperate damages, not actual. **Bar trap:** receipts decide whether an expense is actual damages; their absence does not erase the loss."
+      },
+      "keyPoints": [
+        "Receipts and actual incurrence: actual damages allowed",
+        "Testimony without receipts: not actual damages",
+        "Best evidence obtainable required",
+        "Certain loss, unproved amount: temperate damages"
+      ],
+      "caseIds": [
+        "case-0095"
+      ],
+      "source": {
+        "caseTitle": "People of the Philippines v. Yrat, et al.",
+        "grNumber": "G.R. No. 130415",
+        "url": "https://lawphil.net/judjuris/juri2001/oct2001/gr_130415_2001.html",
+        "part": "Decision, on the awards of damages (funeral expenses and temperate damages)",
+        "excerpt": "To justify a grant of actual damages, it is necessary to show the amount of actual loss with the best evidence obtainable. The testimony of Julia Aca-ac that she spent P20,000.00 for the wake and burial of her husband, without presenting any receipts, is not sufficient to support the claim for funeral expenses. We have consistently ruled that only expenses supported by receipts and which appear to have been actually incurred shall be allowed. It is a settled rule that there must be proof that actual or compensatory damages have been suffered, and evidence of its actual amount."
+      }
+    },
+    {
+      "id": "q-1042",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "Carla's husband, a market vendor, was killed. (a) Carla testifies he \"earned about ₱20,000 a month\" and presents nothing else. (b) In another case, Dino's widow presents his employer's payroll records and income tax returns showing his average monthly earnings. Under People v. Yrat, in which case may the court award damages for loss of earning capacity? Explain.",
+      "suggestedAnswer": {
+        "answer": "In case (b). For lost income due to death, there must be unbiased proof of the deceased's average income; a self-serving, hence unreliable, statement of the widow is not enough. Payroll records and tax returns are the kind of unbiased proof required. In case (a), the claim fails as actual damages.",
+        "legalBasis": "In People v. Yrat, \"compensation for loss of income is in the nature of damages and as such requires due proof of the damages suffered ... What was presented in evidence was only the testimony of the wife ... We have held that 'for lost income due to death, there must be unbiased proof of the deceased's average income. Self-serving, hence, unreliable statement is not enough.'\"",
+        "application": "(a) Only the widow's say-so. (b) Independent documents of income.",
+        "conclusion": "Only in (b). **Bar trap:** a surviving spouse's testimony alone, however sincere, is treated as self-serving proof of income."
+      },
+      "keyPoints": [
+        "Lost income requires due proof",
+        "Unbiased proof of average income",
+        "Widow's statement alone is self-serving",
+        "Documentary proof of earnings satisfies the rule"
+      ],
+      "caseIds": [
+        "case-0095"
+      ],
+      "source": {
+        "caseTitle": "People of the Philippines v. Yrat, et al.",
+        "grNumber": "G.R. No. 130415",
+        "url": "https://lawphil.net/judjuris/juri2001/oct2001/gr_130415_2001.html",
+        "part": "Decision, on loss of earning capacity",
+        "excerpt": "It bears stressing that compensation for loss of income is in the nature of damages and as such requires due proof of the damages suffered. The prosecution failed to present evidence to show the deceased's monthly earnings. What was presented in evidence was only the testimony of the wife that the deceased- was earning P50,000.00. We have held that \"for lost income due to death, there must be unbiased proof of the deceased's average income. Self-serving, hence, unreliable statement is not enough.\""
+      }
+    },
+    {
+      "id": "q-1043",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "Eva and Felix quarreled at a party. (a) Later, Eva approached Felix face to face, shouted that she would kill him, and only after a struggle in which Felix grabbed a bottle to fight back did she stab him. (b) In another incident, Gina walked up calmly to Hugo, who was chatting with friends and unaware, and suddenly stabbed him in the chest before he could move. Was either killing attended by treachery? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) No. Felix was warned and was able to defend and retaliate, so the means of execution did not deny him an opportunity to defend himself. (b) Yes, though frontal. The attack was sudden and unexpected and gave Hugo no opportunity to repel it or defend himself, and the manner of attack appears deliberately adopted.",
+        "legalBasis": "In People v. Yrat, treachery requires \"(1) the employment of means of execution that gives the person attacked no opportunity to defend himself or retaliate; and (2) the means of execution were deliberately or consciously adopted,\" and \"[t]reachery exists — even if the attack is frontal — if it is sudden and unexpected, giving the victim no opportunity to repel it or defend himself.\"",
+        "application": "(a) Warning and an actual struggle negate the first element. (b) A sudden, unexpected stab on an unaware victim satisfies it.",
+        "conclusion": "(a) No treachery; (b) treachery. **Bar trap:** the direction of the attack is not decisive; the victim's chance to defend himself is."
+      },
+      "keyPoints": [
+        "No opportunity to defend or retaliate is required",
+        "Means deliberately adopted",
+        "A warned victim who fights back: no treachery",
+        "A sudden frontal attack on an unaware victim: treachery"
+      ],
+      "caseIds": [
+        "case-0095"
+      ],
+      "source": {
+        "caseTitle": "People of the Philippines v. Yrat, et al.",
+        "grNumber": "G.R. No. 130415",
+        "url": "https://lawphil.net/judjuris/juri2001/oct2001/gr_130415_2001.html",
+        "part": "Decision, on treachery",
+        "excerpt": "Thus, for treachery to be considered, two (2) elements must concur, to wit: (1) the employment of means of execution that gives the person attacked no opportunity to defend himself or retaliate; and (2) the means of execution were deliberately or consciously adopted. … Treachery exists — even if the attack is frontal — if it is sudden and unexpected, giving the victim no opportunity to repel it or defend himself."
+      }
+    },
+    {
+      "id": "q-1044",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "In People v. Yrat, after deleting the awards for loss of earning capacity and funeral expenses for lack of proof, the Court",
+      "choices": {
+        "A": "awarded nothing in their place.",
+        "B": "awarded ₱15,000 as temperate damages in lieu of them, under Article 2224.",
+        "C": "increased the moral damages.",
+        "D": "awarded nominal damages to vindicate the heirs' rights."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** \"In lieu of the aforesaid damages, the heirs of the deceased Benjamin Aca-ac should be awarded the amount of P15,000.00 as temperate damages pursuant to Article 2224.\" **A is wrong:** some pecuniary loss was clearly suffered. **C is wrong:** moral damages were merely sustained. **D is wrong:** there was real pecuniary loss, so temperate, not nominal, damages applied. **Bar trap:** current amounts for crimes follow later standardization (Jugueta).",
+      "caseIds": [
+        "case-0095"
+      ],
+      "source": {
+        "caseTitle": "People of the Philippines v. Yrat, et al.",
+        "grNumber": "G.R. No. 130415",
+        "url": "https://lawphil.net/judjuris/juri2001/oct2001/gr_130415_2001.html",
+        "part": "Decision, on temperate damages",
+        "excerpt": "In lieu of the aforesaid damages, the heirs of the deceased Benjamin Aca-ac should be awarded the amount of P15,000.00 as temperate damages pursuant to Article 2224 of the Civil Code which provides that temperate damages may be recovered when the court finds that some pecuniary loss has been suffered, but its amount cannot, from the nature of the case, be proved with certainty."
+      }
+    },
+    {
+      "id": "q-1045",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "Under People v. Yrat, funeral expenses may be allowed as actual damages",
+      "choices": {
+        "A": "on the widow's testimony alone.",
+        "B": "only if supported by receipts and appearing to have been actually incurred.",
+        "C": "automatically in every death case.",
+        "D": "only if the accused admits them."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** \"We have consistently ruled that only expenses supported by receipts and which appear to have been actually incurred shall be allowed.\" **A is wrong:** testimony \"without presenting any receipts, is not sufficient.\" **C is wrong:** that describes civil indemnity, not funeral expenses. **D is wrong:** no such rule. **Bar trap:** unproved funeral expenses may still be covered by temperate damages.",
+      "caseIds": [
+        "case-0095"
+      ],
+      "source": {
+        "caseTitle": "People of the Philippines v. Yrat, et al.",
+        "grNumber": "G.R. No. 130415",
+        "url": "https://lawphil.net/judjuris/juri2001/oct2001/gr_130415_2001.html",
+        "part": "Decision, on funeral expenses",
+        "excerpt": "We have consistently ruled that only expenses supported by receipts and which appear to have been actually incurred shall be allowed."
+      }
+    },
+    {
+      "id": "q-1046",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "According to People v. Yrat, civil indemnity (ex delicto) for death requires",
+      "choices": {
+        "A": "proof of the victim's income.",
+        "B": "receipts for the funeral.",
+        "C": "no proof other than the fact of death of the victim and the assailant's responsibility for it.",
+        "D": "proof of the family's mental anguish."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** Civil indemnity \"requires no proof other than the fact of death of the victim and assailant's responsibility therefor,\" as Article 2206 provides indemnity \"without need of any evidence or proof thereof.\" **A, B and D are wrong:** those go to other kinds of damages. **Bar trap:** do not confuse civil indemnity with actual damages.",
+      "caseIds": [
+        "case-0095"
+      ],
+      "source": {
+        "caseTitle": "People of the Philippines v. Yrat, et al.",
+        "grNumber": "G.R. No. 130415",
+        "url": "https://lawphil.net/judjuris/juri2001/oct2001/gr_130415_2001.html",
+        "part": "Decision, on civil indemnity",
+        "excerpt": "We, however, sustain the award of P50,000.00 as civil indemnity (ex delicto) which requires no proof other than the fact of death of the victim and assailant's responsibility therefor."
       }
     }
   ]
