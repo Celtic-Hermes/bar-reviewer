@@ -9050,6 +9050,100 @@
         "part": "Our Ruling, attorney's fees",
         "excerpt": "In all cases, the attorney’s fees and expenses of litigation must be reasonable. Considering the circumstances of the instant case, we find respondent-spouses entitled to recover attorney’s fees. There is no doubt that they were forced to litigate to protect their interest, i.e., to recover their money. However, we find the amount of ₱50,000.00 more appropriate in line with the policy enunciated in Article 2208 of the Civil Code that the award of attorney’s fees must always be reasonable."
       }
+    },
+    {
+      "id": "q-0870",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Ana and Ben were partners. When Ben died, his heirs kept running the business and refused to account. Ana won a final judgment ordering the heirs to render an accounting and inventory, and then to deliver her one-half share of the partnership assets. In execution, Ana adds legal interest on her share of the assets from the date the business closed, arguing that the share was always computable by simple arithmetic. Is she entitled to that interest? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. Her share of the assets was an unliquidated claim that earns no interest until reasonably determined; the test is \"reasonably determinable,\" not \"determinable by mathematical computation,\" and the share became liquidated only when the accounting was approved.",
+        "legalBasis": "The partner's share and interest in the assets \"partake of an unliquidated claim which, until reasonably determined, shall not earn interest.\" \"[T]he legal norm for interest to accrue is 'reasonably determinable,' not ... determinable by mathematical computation.\" The judgment's directive to account \"is a recognition that the exact share ... cannot be determined with reasonable precision without going through with the inventory and accounting process. In fine, a liquidated claim cannot validly be asserted without accounting.\"",
+        "application": "Ana's share could be fixed only after the accounting that the judgment itself required, so no interest attaches to it before the accounting was approved.",
+        "conclusion": "No interest on the share before the accounting. **Bar trap:** a sum that can be computed once figures are known is not necessarily \"reasonably determinable\"; if an accounting is needed first, it is unliquidated."
+      },
+      "keyPoints": [
+        "No interest on an unliquidated claim until reasonably determined",
+        "Test: reasonably determinable, not mathematically computable",
+        "A judgment ordering an accounting shows the share was not yet determinable",
+        "A liquidated claim cannot be asserted without accounting"
+      ],
+      "caseIds": [
+        "case-0057"
+      ],
+      "source": {
+        "caseTitle": "Sunga-Chan, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 164401",
+        "url": "https://lawphil.net/judjuris/juri2008/jun2008/gr_164401_2008.html",
+        "part": "The Court's Ruling, first issue (interest on the share of the partnership assets)",
+        "excerpt": "Anent the impasse over the partnership assets, we are inclined to agree with petitioners’ assertion that Chua’s share and interest on such assets partake of an unliquidated claim which, until reasonably determined, shall not earn interest for him. As may be noted, the legal norm for interest to accrue is \"reasonably determinable,\" not, as Chua suggested and the CA declared, determinable by mathematical computation. The Court has certainly not lost sight of the fact that the October 7, 1997 RTC decision clearly directed petitioners to render an accounting, inventory, and appraisal of the partnership assets and then to wind up the partnership affairs by restituting and delivering to Chua his one-half share of the accounted partnership assets. The directive itself is a recognition that the exact share and interest of Chua over the partnership cannot be determined with reasonable precision without going through with the inventory and accounting process. In fine, a liquidated claim cannot validly be asserted without accounting. In net effect, Chua’s interest and share over the partnership asset, exclusive of the goodwill, assumed the nature of a liquidated claim only after the trial court, through its November 6, 2002 resolution, approved the assets inventory and accounting report on such assets."
+      }
+    },
+    {
+      "id": "q-0871",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "A trial court's decision, rendered on June 1, 2015, ordered Carla to pay Dino his unreceived partnership profits of ₱20,000 a month for two years, with interest. The decision became final on June 1, 2017, and Carla still has not paid. Following the method the Supreme Court used for unremitted partnership profits, what interest is due, and for which periods?",
+      "suggestedAnswer": {
+        "answer": "6% a year on the profits from the trial court's decision (June 1, 2015) until finality (June 1, 2017); thereafter, the total of the profits plus that 6% interest earns interest from finality until fully paid, since the award is then equivalent to a forbearance of credit.",
+        "legalBasis": "The award of earned but unremitted profits \"must earn interest at 6% per annum reckoned from ... the rendition date of the RTC decision, until ... when the said decision became final and executory. Thereafter, the total of the monthly profits inclusive of the add on 6% interest shall earn 12% per annum reckoned from [finality] until fully paid, as the award for that item is considered to be, by then, equivalent to a forbearance of credit.\"",
+        "application": "The profits award is not a loan or forbearance, so it earns 6% from the decision; after finality, interest runs on the profits plus the accrued 6% interest.",
+        "conclusion": "6% from decision to finality; then interest on the total from finality. **Bar trap:** the base after finality includes the interest already added. The 12% rate used in that 2008 ruling was lowered to 6% from July 1, 2013 (Nacar v. Gallery Frames), so the rate after finality here would be 6%."
+      },
+      "keyPoints": [
+        "Profits award: 6% from the trial court's decision until finality",
+        "After finality: interest on the profits plus the added 6% interest",
+        "After finality the award is equivalent to a forbearance of credit",
+        "Check the current rate (6% from July 1, 2013)"
+      ],
+      "caseIds": [
+        "case-0057"
+      ],
+      "source": {
+        "caseTitle": "Sunga-Chan, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 164401",
+        "url": "https://lawphil.net/judjuris/juri2008/jun2008/gr_164401_2008.html",
+        "part": "The Court's Ruling, first issue (interest on the unreceived profits)",
+        "excerpt": "Guided by the foregoing rules, the award to Chua of the amount representing earned but unremitted profits, i.e.. PhP 35,000 monthly, from January 1988 until May 30, 1992, must earn interest at 6% per annum reckoned from October 7, 1997, the rendition date of the RTC decision, until December 20, 2001, when the said decision became final and executory. Thereafter, the total of the monthly profits inclusive of the add on 6% interest shall earn 12% per annum reckoned from December 20, 2001 until fully paid, as the award for that item is considered to be, by then, equivalent to a forbearance of credit. Likewise, the PhP 250,000 award, representing the goodwill value of the business, the award of PhP 50,000 for moral and exemplary damages, PhP 25,000 attorney’s fee, and PhP 25,000 litigation fee shall earn 12% per annum from December 20, 2001 until fully paid."
+      }
+    },
+    {
+      "id": "q-0872",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "After a partner's death, his widow Eli and daughter Fe jointly took over the partnership business against the surviving partner's will and refused to account; it is impossible to tell how much of the assets each of them took. Held liable, they argue that each should pay only half. Is their liability joint or solidary? Explain.",
+      "suggestedAnswer": {
+        "answer": "Solidary. Continuing the business against the partner's will gave rise to a solidary obligation, since the acts complained of were not severable; their duty to account was indivisible; and they resisted a legitimate claim in bad faith.",
+        "legalBasis": "\"[T]he continuance of the business and management ... by petitioners against the will of [the partner] gave rise to a solidary obligation, the acts complained of not being severable in nature. Indeed, it is well-nigh impossible to draw the line between when the liability of one petitioner ends and the liability of the other starts. In this kind of situation, the law itself imposes solidary obligation.\" The duty to remit the share \"proceeds from petitioners' indivisible obligation to render an accounting,\" and the obligation to pay damages and fees is solidary where they \"resisted in bad faith a legitimate claim.\" Under Article 1207, solidarity exists when the law or the nature of the obligation requires it.",
+        "application": "Eli and Fe acted together, and their shares in the misappropriation cannot be separated, so each answers for the whole.",
+        "conclusion": "Solidary. **Bar trap:** solidarity is not presumed, but it arises when the nature of the obligation requires it, as when the wrongful acts cannot be separated."
+      },
+      "keyPoints": [
+        "Solidarity when the law or the nature of the obligation requires it (Art. 1207)",
+        "The acts complained of were not severable",
+        "Impossible to separate each one's liability",
+        "The duty to account was indivisible",
+        "Bad-faith resistance to a legitimate claim"
+      ],
+      "caseIds": [
+        "case-0057"
+      ],
+      "source": {
+        "caseTitle": "Sunga-Chan, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 164401",
+        "url": "https://lawphil.net/judjuris/juri2008/jun2008/gr_164401_2008.html",
+        "part": "The Court's Ruling, second and third issues (solidary liability, community property)",
+        "excerpt": "For one, the complaint of Chua for winding up of partnership affairs, accounting, appraisal, and recovery of shares and damages is clearly a suit to enforce a solidary or joint and several obligation on the part of petitioners. As it were, the continuance of the business and management of Shellite by petitioners against the will of Chua gave rise to a solidary obligation, the acts complained of not being severable in nature. Indeed, it is well-nigh impossible to draw the line between when the liability of one petitioner ends and the liability of the other starts. In this kind of situation, the law itself imposes solidary obligation. … For the other, the duty of petitioners to remit to Chua his half interest and share of the total partnership assets proceeds from petitioners’ indivisible obligation to render an accounting and inventory of such assets. The need for the imposition of a solidary liability becomes all the more pronounced considering the impossibility of quantifying how much of the partnership assets or profits was misappropriated by each petitioner. And for a third, petitioners’ obligation for the payment of damages and attorney’s and litigation fees ought to be solidary in nature, they having resisted in bad faith a legitimate claim and thus compelled Chua to litigate. … Absent any indication otherwise, the use and appropriation by petitioner Sunga-Chan of the assets of Shellite even after the business was discontinued on May 30, 1992 may reasonably be considered to have been used for her and her husband’s benefit."
+      }
     }
   ]
 }
