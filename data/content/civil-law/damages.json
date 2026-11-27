@@ -9144,6 +9144,100 @@
         "part": "The Court's Ruling, second and third issues (solidary liability, community property)",
         "excerpt": "For one, the complaint of Chua for winding up of partnership affairs, accounting, appraisal, and recovery of shares and damages is clearly a suit to enforce a solidary or joint and several obligation on the part of petitioners. As it were, the continuance of the business and management of Shellite by petitioners against the will of Chua gave rise to a solidary obligation, the acts complained of not being severable in nature. Indeed, it is well-nigh impossible to draw the line between when the liability of one petitioner ends and the liability of the other starts. In this kind of situation, the law itself imposes solidary obligation. … For the other, the duty of petitioners to remit to Chua his half interest and share of the total partnership assets proceeds from petitioners’ indivisible obligation to render an accounting and inventory of such assets. The need for the imposition of a solidary liability becomes all the more pronounced considering the impossibility of quantifying how much of the partnership assets or profits was misappropriated by each petitioner. And for a third, petitioners’ obligation for the payment of damages and attorney’s and litigation fees ought to be solidary in nature, they having resisted in bad faith a legitimate claim and thus compelled Chua to litigate. … Absent any indication otherwise, the use and appropriation by petitioner Sunga-Chan of the assets of Shellite even after the business was discontinued on May 30, 1992 may reasonably be considered to have been used for her and her husband’s benefit."
       }
+    },
+    {
+      "id": "q-0873",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Ana, an airline passenger, was treated rudely and repeatedly by the airline's agents abroad, and her confirmed flight home was dishonored. She sent the airline a demand letter on January 10, 2020, and sued. In its judgment of March 1, 2023, the trial court awarded her moral damages, exemplary damages and attorney's fees. Ana argues that legal interest on these awards should run from her demand letter. Is she correct? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. The 6% legal interest runs from the date of the trial court's judgment (March 1, 2023), because it was only then that the quantification of her damages could be deemed reasonably ascertained; from the finality of the decision, legal interest continues until full satisfaction.",
+        "legalBasis": "Following Eastern Shipping Lines, the legal interest \"shall be reckoned from [the date] when the RTC rendered its judgment, not from the time of respondent's extrajudicial demand. This must be so as it was at the time the RTC rendered its judgment that the quantification of damages may be deemed to have been reasonably ascertained. Then, from the time this decision becomes final and executory, the interest rate shall be 12% p.a. until full satisfaction.\"",
+        "application": "Moral and exemplary damages and attorney's fees were not fixed amounts when Ana demanded them; their amounts were set by the court, so interest starts with the judgment.",
+        "conclusion": "Interest from the judgment, not the demand. **Bar trap:** damages left to the court's discretion become reasonably certain only upon judgment. (The 12% rate after finality used in that 2009 ruling was lowered to 6% from July 1, 2013, so for a 2023 judgment the rate after finality is 6%.)"
+      },
+      "keyPoints": [
+        "Moral and exemplary damages are not reasonably certain at demand",
+        "6% legal interest from the trial court's judgment",
+        "Then interest from finality until full satisfaction",
+        "Check the current rate after finality (6% from July 1, 2013)"
+      ],
+      "caseIds": [
+        "case-0058"
+      ],
+      "source": {
+        "caseTitle": "Air France Philippines/KLM Air France v. De Camilis",
+        "grNumber": "G.R. No. 188961",
+        "url": "https://lawphil.net/judjuris/juri2009/oct2009/gr_188961_2009.html",
+        "part": "Resolution, discussion of the legal interest",
+        "excerpt": "Pursuant to this ruling, the legal interest is 6% p.a. and it shall be reckoned from April 25, 2007 when the RTC rendered its judgment, not from the time of respondent’s extrajudicial demand. This must be so as it was at the time the RTC rendered its judgment that the quantification of damages may be deemed to have been reasonably ascertained. Then, from the time this decision becomes final and executory, the interest rate shall be 12% p.a. until full satisfaction."
+      }
+    },
+    {
+      "id": "q-0874",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Ben flew abroad on an airline ticket but was refused entry at a transit city because he lacked a transit visa. The airline's agents then falsely reported him as a security threat, rudely refused his requests, and dishonored his confirmed flights, so he had to stay two more days.\n\n(a) May Ben hold the airline liable for his expenses at the transit city where he was refused entry? Explain.\n\n(b) May he hold it liable for the later expenses and for moral damages? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) No. It is the passenger, not the airline, who is responsible for having the correct travel documents, so the airline cannot be faulted for his refused entry. (b) Yes. The airline's agents' repeated poor service, verbal abuse and lack of respect amount to bad faith; the airline is liable for the expenses caused by its own agents' acts and for moral damages.",
+        "legalBasis": "\"[I]t was respondent (as passenger), and not AF, who was responsible for having the correct travel documents. However ... this fact did not absolve AF from liability for damages.\" The airline's \"agents and representatives repeatedly subjected respondent to very poor service, verbal abuse and abject lack of respect and consideration. As such, AF was guilty of bad faith for which respondent ought to be compensated.\" Actual damages covered the expenses from the false security-threat report until the dishonored flight, while \"respondent's expenses for the [transit] leg of the trip must be borne by him.\"",
+        "application": "(a) Ben's missing visa is his own fault. (b) The false report and the dishonored flights are the airline's own bad-faith acts, causing his extra stay and his humiliation.",
+        "conclusion": "(a) Ben bears the transit-city expenses; (b) the airline pays for its own bad faith. **Bar trap:** a passenger's fault on one point does not excuse the carrier's separate bad-faith acts; separate the losses by their cause."
+      },
+      "keyPoints": [
+        "The passenger is responsible for correct travel documents",
+        "That does not absolve the airline from damages for its own acts",
+        "Poor service, verbal abuse and lack of respect = bad faith",
+        "Actual damages only for expenses caused by the airline's acts",
+        "Moral damages for bad faith"
+      ],
+      "caseIds": [
+        "case-0058"
+      ],
+      "source": {
+        "caseTitle": "Air France Philippines/KLM Air France v. De Camilis",
+        "grNumber": "G.R. No. 188961",
+        "url": "https://lawphil.net/judjuris/juri2009/oct2009/gr_188961_2009.html",
+        "part": "Resolution, statement of the Court of Appeals' ruling on liability",
+        "excerpt": "The CA ruled that it was respondent (as passenger), and not AF, who was responsible for having the correct travel documents. However, the appellate court stated that this fact did not absolve AF from liability for damages. The CA agreed with the findings of fact of the RTC that AF’s agents and representatives repeatedly subjected respondent to very poor service, verbal abuse and abject lack of respect and consideration. As such, AF was guilty of bad faith for which respondent ought to be compensated. The appellate court affirmed the award of ₱1 million moral damages and ₱300,000 attorney’s fees. However, it reduced the actual damages to US$906 (or its peso equivalent). According to the CA, this amount represented the expenses respondent incurred from the time he was unable to join his group in Rome (due to the unfounded \"communiqué\" of Ms. Soeyesol that he was a security threat) up to the time his flight reservation from Paris to Manila was dishonored for which he was forced to stay in Paris for two additional days. The appellate court pointed out that, on the other hand, respondent’s expenses for the Moscow leg of the trip must be borne by him as AF could not be faulted when he was refused entry to Moscow for lack of a transit visa."
+      }
+    },
+    {
+      "id": "q-0875",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "After losing in the trial court and the Court of Appeals, Carla's airline files a petition for review under Rule 45, arguing only that the passenger's humiliation was not proved and that the moral damages awarded are too high. Both lower courts had stated the facts and the law supporting their awards. Will the Supreme Court re-examine the evidence? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. Whether the passenger is entitled to damages, and in what amount, requires a review of the evidence, which is a question of fact; a Rule 45 petition is limited to questions of law, and no exception applies when the lower courts laid down the factual and legal bases of their awards.",
+        "legalBasis": "The issue of entitlement to damages and attorney's fees \"entails a resort to the parties' respective evidence. Thus, AF is clearly asking us to consider a question of fact. ... the jurisdiction of this Court in a petition for review on certiorari under Rule 45 is limited only to questions of law, save for certain exceptions.\" Both lower courts \"properly laid down both the factual and legal bases for their respective decisions.\"",
+        "application": "Carla's airline asks the Supreme Court to weigh again whether the humiliation was proved and how much it was worth; that is a factual review.",
+        "conclusion": "The Court will not re-examine the evidence. **Bar trap:** challenging the existence or amount of damages on the evidence is a question of fact, not of law."
+      },
+      "keyPoints": [
+        "Entitlement to damages requires a resort to the evidence: question of fact",
+        "Rule 45 is limited to questions of law, save for exceptions",
+        "The lower courts laid down factual and legal bases",
+        "No reason to disturb their findings"
+      ],
+      "caseIds": [
+        "case-0058"
+      ],
+      "source": {
+        "caseTitle": "Air France Philippines/KLM Air France v. De Camilis",
+        "grNumber": "G.R. No. 188961",
+        "url": "https://lawphil.net/judjuris/juri2009/oct2009/gr_188961_2009.html",
+        "part": "Resolution, discussion of the entitlement to damages",
+        "excerpt": "Preliminarily, on the issue pertaining to whether or not respondent was entitled to damages and attorney’s fees, the same entails a resort to the parties’ respective evidence. Thus, AF is clearly asking us to consider a question of fact. Time and again, we have held that the jurisdiction of this Court in a petition for review on certiorari under Rule 45 is limited only to questions of law, save for certain exceptions, none of which are present in this case. Both the RTC and the CA have competently ruled on the issue of respondent’s entitlement to damages and attorney’s fees as they properly laid down both the factual and legal bases for their respective decisions. We see no reason to disturb their findings."
+      }
     }
   ]
 }
