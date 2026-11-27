@@ -466,6 +466,21 @@
       "ruling": "The Court of Appeals was affirmed. Under Article 1764, Article 2206 applies to the death of a passenger caused by a common carrier's breach of contract; it fixes damages for death at \"at least\" ₱3,000, and \"in addition\" allows the spouse, descendants and ascendants to demand moral damages for mental anguish. Once these heirs claim and prove their entitlement, it becomes the court's duty to award moral damages commensurate with their anguish; nominal damages are a distinct class and must not be confused with moral damages. The ₱4,000 to the parents was fair. But a passenger who is only injured through the carrier's negligence (culpa contractual) cannot recover moral damages: such a case is not among the \"analogous cases\" of Article 2219, since Article 2220 specifically covers breaches of contract and requires fraud or bad faith, and a quasi-delict by definition excludes a pre-existing contract. The mere carelessness of the driver (a tire blowout while overspeeding) is not bad faith.",
       "keyDoctrine": "In breach of contract, including carriage, moral damages require proof of fraud or bad faith (Art. 2220); a passenger injured through the carrier's mere negligence is not within the \"analogous cases\" of Article 2219. The exception is the death of a passenger: under Articles 1764 and 2206, the spouse, descendants and ascendants may recover moral damages for mental anguish, and once they prove their entitlement the court must award them. Damages for death are at least ₱3,000 under Article 2206. Nominal damages are distinct from moral damages.",
       "sourceUrl": "https://lawphil.net/judjuris/juri1961/sep1961/gr_l-13328_1961.html"
+    },
+    {
+      "id": "case-0079",
+      "status": "draft",
+      "name": "Philippine National Bank v. Court of Appeals, et al. (1988)",
+      "grNumber": "G.R. No. L-45770",
+      "year": 1988,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "facts": "Napoleon Navarro, a PNB branch accountant in Cabanatuan, defalcated ₱28,683.77 through fake manager's checks and was dismissed. PNB sued him to recover the money and, in a separate case, sued him, his wife and the spouses Vicente Medina and Leticia Lopez to annul the sale of Navarro's house and lot to the Medinas, claiming it was made to defraud PNB. The Medinas counterclaimed for damages, saying the baseless suit besmirched their reputation. The trial court dismissed PNB's annulment case and ordered PNB to pay the Medinas ₱100,000 moral and exemplary damages and ₱5,000 attorney's fees. The Court of Appeals found no showing that PNB acted maliciously or wantonly in filing the case, but held that the spouses suffered mental anguish for being made defendants, reduced the damages to ₱10,000 and kept the attorney's fees.",
+      "issue": "Was the award of moral and exemplary damages and attorney's fees consistent with the finding that PNB did not sue maliciously?",
+      "ruling": "No. The awards were deleted; the rest of the decision was affirmed. Moral damages require that the claimant satisfactorily prove the factual basis of the damages and its causal relation to the defendant's acts; they compensate actual injury, not punish, and are not corrective or exemplary damages. The law requires a wrongful act or omission of the defendant as the proximate cause of the anguish. The adverse result of an action does not per se make it wrongful, since no penalty should be placed on the right to litigate. In the absence of malice and bad faith, the anxiety of being sued is only what is usually caused to any defendant, and does not warrant moral damages, still less exemplary damages. Attorney's fees were also deleted: they are the exception, and are not recoverable as damages where no bad faith of the adversary is shown. The Court also upheld the admission of the amended counterclaim despite a one-day shortfall in the three-day notice, since PNB was heard and not prejudiced.",
+      "keyDoctrine": "Moral damages require satisfactory proof of their factual basis and of a wrongful act or omission of the defendant as the proximate cause of the injury; they are compensatory, not corrective. Being sued by a party who acted without malice or bad faith causes only the ordinary anxiety of litigation, which does not warrant moral damages, and without moral, temperate or compensatory damages there can be no exemplary damages. Attorney's fees are the exception and are not awarded absent bad faith. The three-day notice rule for motions is liberally applied when the adverse party is not prejudiced.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri1988/mar1988/gr_l-45770_1988.html"
     }
   ],
   "questions": [
@@ -7609,6 +7624,237 @@
         "url": "https://lawphil.net/judjuris/juri1961/sep1961/gr_l-13328_1961.html",
         "part": "Decision, the disposition",
         "excerpt": "IN VIEW OF THE FOREGOING CONSIDERATIONS, the decision of the Court of Appeals in G.R. Nos. L-13328-29 and L-13358 (Court of Appeals resolution dated December 19, 1957), hereby is affirmed, without costs in this instance."
+      }
+    },
+    {
+      "id": "q-0824",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "A bank sued a couple to annul their purchase of a house, believing the sale defrauded it; it lost. The Court of Appeals found that the bank did not act maliciously or wantonly in filing the case, but still awarded the couple ₱10,000 moral and exemplary damages because they suffered mental anguish for being made defendants. Is the award proper? Explain, citing PNB v. Court of Appeals (1988).",
+      "suggestedAnswer": {
+        "answer": "No. The finding that the bank did not act maliciously is inconsistent with an award of moral damages. In the absence of malice and bad faith, the anxiety of being sued is not the kind that warrants moral damages, and without moral damages there can be no exemplary damages.",
+        "legalBasis": "In PNB v. CA (1988), the Court held that \"[f]or moral damages to be awarded, the law requires a wrongful act or omission attributable to petitioner as the proximate cause of the mental anguish suffered.\" Citing Boysaw v. Interphil Promotions: \"The adverse result of an action does not per se make the act wrongful ... The law could not have meant to impose a penalty on the right to litigate.\" \"In the absence of malice and bad faith, the mental anguish suffered by respondents spouses ... for having been made defendants ... is not that kind of anxiety which would warrant the award of moral damages. The worries and anxieties suffered ... were only such as are usually, caused to a party haled into court as a defendant in a litigation.\"",
+        "application": "Since the bank had a good-faith basis to sue and no wrongful act was shown, there is no proximate cause for compensable anguish. The award of moral damages, \"more so, exemplary damages,\" has no justification.",
+        "conclusion": "The award should be deleted. **Bar trap:** a court cannot find good faith in filing a suit and at the same time award moral damages for being sued; the two findings are inconsistent."
+      },
+      "keyPoints": [
+        "Moral damages need a wrongful act or omission as the proximate cause",
+        "The adverse result of a suit does not make it wrongful",
+        "No penalty on the right to litigate",
+        "Absent malice or bad faith, the ordinary anxiety of a defendant is not compensable",
+        "No moral damages, so no exemplary damages"
+      ],
+      "caseIds": [
+        "case-0079"
+      ],
+      "source": {
+        "caseTitle": "Philippine National Bank v. Court of Appeals, et al. (1988)",
+        "grNumber": "G.R. No. L-45770",
+        "url": "https://lawphil.net/judjuris/juri1988/mar1988/gr_l-45770_1988.html",
+        "part": "Decision, discussion of the first to third assignments of error (moral damages)",
+        "excerpt": "For moral damages to be awarded, the law requires a wrongful act or omission attributable to petitioner as the proximate cause of the mental anguish suffered by private respondents spouses Vicente E. Medina and Leticia Lopez. Respondent appellate court categorically ruled in the negative yet awarded moral and exemplary damages in the reduced amount of P10,000.00 in favor of aforesaid respondent spouses. … In the absence of malice and bad faith, the mental anguish suffered by respondents spouses Medina and Lopez for having been made defendants in Civil Case No. 4507 is not that kind of anxiety which would warrant the award of moral damages. The worries and anxieties suffered by respondents spouses Medina and Lopez were only such as are usually, caused to a party haled into court as a defendant in a litigation. Therefore, there is no sufficient justification for the award of moral damages, more so, exemplary damages."
+      }
+    },
+    {
+      "id": "q-0825",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "What must a claimant prove to recover moral damages, and how do moral damages differ from exemplary damages in nature and in proof? Explain, citing PNB v. Court of Appeals (1988).",
+      "suggestedAnswer": {
+        "answer": "No proof of pecuniary loss is needed, but the claimant must satisfactorily prove the existence of the factual basis of the damages and its causal relation to the defendant's acts. Moral damages compensate actual injury and are not corrective or exemplary. Exemplary damages are imposed by way of example or correction for the public good; they are not a matter of right and need not be proved, but the claimant must first show entitlement to moral, temperate or compensatory damages.",
+        "legalBasis": "In PNB v. CA (1988), the Court held: \"While no proof of pecuniary loss is necessary in order that moral damages may be awarded, the amount of indemnity being left to the discretion of the court, it is nevertheless essential that the claimant satisfactorily proves the existence of the factual basis of the damages and its causal relation to defendant's acts. This is so because moral damages though incapable of pecuniary estimation, are in the category of an award designed to compensate the claimant for actual injury suffered and not to impose a penalty on the wrongdoer. Moral damages, in other words, are not corrective or exemplary damages.\" As to exemplary damages, they \"need not be proved, although plaintiff must show that he is entitled to moral, temperate or compensatory damages.\"",
+        "application": "So the claimant carries the burden of proving the injury and its cause; once moral damages are properly due, the court may consider exemplary damages.",
+        "conclusion": "Prove the factual basis and causation for moral damages; exemplary damages follow only after other damages. **Bar trap:** do not use moral damages to punish; that is the role of exemplary damages."
+      },
+      "keyPoints": [
+        "No proof of pecuniary loss for moral damages",
+        "Satisfactorily prove the factual basis and causal relation to the defendant's acts",
+        "Moral damages compensate actual injury; not corrective or exemplary",
+        "Exemplary damages: not a matter of right; need not be proved",
+        "But entitlement to moral, temperate or compensatory damages must first be shown"
+      ],
+      "caseIds": [
+        "case-0079"
+      ],
+      "source": {
+        "caseTitle": "Philippine National Bank v. Court of Appeals, et al. (1988)",
+        "grNumber": "G.R. No. L-45770",
+        "url": "https://lawphil.net/judjuris/juri1988/mar1988/gr_l-45770_1988.html",
+        "part": "Decision, discussion of the burden of proof for moral and exemplary damages",
+        "excerpt": "As to exemplary damages, Article 2229 of the Civil Code provides that such damages may be imposed by way of example or correction for the public good. While exemplary damages cannot be recovered as a matter of right, they need not be proved, although plaintiff must show that he is entitled to moral, temperate or compensatory damages before the Court may consider the question of whether or not exemplary damages should be awarded. While no proof of pecuniary loss is necessary in order that moral damages may be awarded, the amount of indemnity being left to the discretion of the court, it is nevertheless essential that the claimant satisfactorily proves the existence of the factual basis of the damages and its causal relation to defendant's acts. This is so because moral damages though incapable of pecuniary estimation, are in the category of an award designed to compensate the claimant for actual injury suffered and not to impose a penalty on the wrongdoer. Moral damages, in other words, are not corrective or exemplary damages."
+      }
+    },
+    {
+      "id": "q-0826",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "(a) The winning defendants were awarded ₱5,000 attorney's fees because they had to hire counsel to resist the plaintiff's suit, which was filed in good faith. Is the award proper? (b) Their motion to admit an amended counterclaim was set for hearing one day short of the three-day notice rule, but the plaintiff opposed it and sought reconsideration. Was its admission reversible error? Explain, citing PNB v. Court of Appeals (1988).",
+      "suggestedAnswer": {
+        "answer": "(a) No. Attorney's fees are not recoverable as damages where no bad faith of the adversary is shown; awarding them would penalize the right to litigate. (b) No. The three-day notice rule is liberally construed; the lapse may be overlooked since the plaintiff was heard and not prejudiced.",
+        "legalBasis": "In PNB v. CA (1988), the Court held: \"It is not sound public policy to place a penalty on the right to litigate. To compel the defeated party to pay the fees of counsel for his successful opponent would throw wide open the door of temptation to the opposing party and his counsel to swell the fees to undue proportions.\" A litigant is not entitled to recover attorney's fees as damages \"where no bad faith on the part of his adversary was shown,\" and the award is \"the exception rather than the general rule.\" On the notice, amendments to pleadings are liberally allowed, and \"[l]apses in the literal observance of a rule of procedure may be overlooked when they have not prejudiced the adverse party and have not deprived the court of its authority.\"",
+        "application": "Hiring counsel to defend against a good-faith suit is not a ground for fees. And since the plaintiff filed an opposition and a motion for reconsideration, there was no surprise or denial of due process.",
+        "conclusion": "(a) Delete the attorney's fees; (b) the admission stands. **Bar trap:** having to hire a lawyer is not by itself a basis for attorney's fees as damages."
+      },
+      "keyPoints": [
+        "No penalty on the right to litigate",
+        "No attorney's fees as damages without the adversary's bad faith",
+        "Attorney's fees are the exception, not the rule",
+        "Amendments to pleadings are liberally allowed",
+        "Lapses in the three-day notice rule overlooked when the adverse party was heard and not prejudiced"
+      ],
+      "caseIds": [
+        "case-0079"
+      ],
+      "source": {
+        "caseTitle": "Philippine National Bank v. Court of Appeals, et al. (1988)",
+        "grNumber": "G.R. No. L-45770",
+        "url": "https://lawphil.net/judjuris/juri1988/mar1988/gr_l-45770_1988.html",
+        "part": "Decision, discussion of attorney's fees and the amended counterclaim",
+        "excerpt": "It is not sound public policy to place a penalty on the right to litigate. To compel the defeated party to pay the fees of counsel for his successful opponent would throw wide open the door of temptation to the opposing party and his counsel to swell the fees to undue proportions. To sentence litigant to pay his adversary's lawyer's fees would be imposing a penalty on his right to litigate. Even under the New Civil Code a litigant would not be entitled to recover the fees paid to his attorney as damages where no bad faith on the part of his adversary was shown. Needless to say, award of attorney's fees is the exception rather than the general rule."
+      }
+    },
+    {
+      "id": "q-0827",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Under Article 2217 of the Civil Code, as quoted in PNB v. Court of Appeals (1988), when may moral damages be recovered although they are incapable of pecuniary computation?",
+      "choices": {
+        "A": "Whenever the plaintiff wins the case.",
+        "B": "Whenever the defendant is a bank.",
+        "C": "If they are the proximate result of the defendant's wrongful act or omission.",
+        "D": "Only if actual damages are also awarded."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court said: \"Though incapable of pecuniary computation, moral damages may be recovered if they are the proximate result of the defendant's wrongful act or omission.\" **A is wrong:** winning is not enough. **B is wrong:** irrelevant. **D is wrong:** moral damages do not depend on actual damages. **Bar trap:** a wrongful act is required.",
+      "caseIds": [
+        "case-0079"
+      ],
+      "source": {
+        "caseTitle": "Philippine National Bank v. Court of Appeals, et al. (1988)",
+        "grNumber": "G.R. No. L-45770",
+        "url": "https://lawphil.net/judjuris/juri1988/mar1988/gr_l-45770_1988.html",
+        "part": "Decision, discussion of moral damages (Article 2217)",
+        "excerpt": "Though incapable of pecuniary computation, moral damages may be recovered if they are the proximate result of the defendant's wrongful act or omission."
+      }
+    },
+    {
+      "id": "q-0828",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "According to PNB v. Court of Appeals (1988), moral damages",
+      "choices": {
+        "A": "are corrective damages meant to punish the wrongdoer.",
+        "B": "are designed to compensate the claimant for actual injury suffered, and are not corrective or exemplary damages.",
+        "C": "are the same as nominal damages.",
+        "D": "need no proof of their factual basis."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court said moral damages \"are in the category of an award designed to compensate the claimant for actual injury suffered and not to impose a penalty on the wrongdoer. Moral damages, in other words, are not corrective or exemplary damages.\" **A is wrong:** that is exemplary damages. **C is wrong:** nominal damages vindicate a right. **D is wrong:** the factual basis must be satisfactorily proved. **Bar trap:** compensatory nature of moral damages.",
+      "caseIds": [
+        "case-0079"
+      ],
+      "source": {
+        "caseTitle": "Philippine National Bank v. Court of Appeals, et al. (1988)",
+        "grNumber": "G.R. No. L-45770",
+        "url": "https://lawphil.net/judjuris/juri1988/mar1988/gr_l-45770_1988.html",
+        "part": "Decision, discussion of moral damages (nature)",
+        "excerpt": "This is so because moral damages though incapable of pecuniary estimation, are in the category of an award designed to compensate the claimant for actual injury suffered and not to impose a penalty on the wrongdoer. Moral damages, in other words, are not corrective or exemplary damages."
+      }
+    },
+    {
+      "id": "q-0829",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Which principle from Boysaw v. Interphil Promotions did the Court apply in PNB v. Court of Appeals (1988)?",
+      "choices": {
+        "A": "The adverse result of an action does not per se make the act wrongful and subject the actor to moral damages, since the law could not have meant to penalize the right to litigate.",
+        "B": "Every losing plaintiff is liable for moral damages.",
+        "C": "Banks are always liable for exemplary damages.",
+        "D": "Attorney's fees follow the result of the case."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court quoted Boysaw: \"The adverse result of an action does not per se make the act wrongful and subject the actor to the payment of moral damages. The law could not have meant to impose a penalty on the right to litigate.\" **B, C and D are wrong:** each contradicts that principle. **Bar trap:** for unsuccessful suits, the law taxes costs, not moral damages.",
+      "caseIds": [
+        "case-0079"
+      ],
+      "source": {
+        "caseTitle": "Philippine National Bank v. Court of Appeals, et al. (1988)",
+        "grNumber": "G.R. No. L-45770",
+        "url": "https://lawphil.net/judjuris/juri1988/mar1988/gr_l-45770_1988.html",
+        "part": "Decision, discussion of the first to third assignments of error (the ruling in Boysaw)",
+        "excerpt": "In order that a person may be made liable to the payment of moral damages, the law requires that his act be wrongful. The adverse result of an action does not per se make the act wrongful and subject the actor to the payment of moral damages. The law could not have meant to impose a penalty on the right to litigate such right is so precious that moral damages may not be charged on those who may exercise it erroneously, For these the law taxes costs."
+      }
+    },
+    {
+      "id": "q-0830",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "In PNB v. Court of Appeals (1988), why did the Court uphold the admission of the amended counterclaim despite a motion noticed one day short of the three-day rule?",
+      "choices": {
+        "A": "Because the three-day notice rule had been repealed.",
+        "B": "Because the counterclaim was compulsory.",
+        "C": "Because the trial court has unlimited discretion over motions.",
+        "D": "Because rules of procedure are liberally construed, and the lapse did not prejudice the bank, which filed an opposition and a motion for reconsideration."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** Following E.L. Mercantile v. IAC, the Court held that \"[l]apses in the literal observance of a rule of procedure may be overlooked when they have not prejudiced the adverse party,\" and the bank's opposition and motion for reconsideration eliminated any surprise or denial of due process. **A, B and C are wrong:** none is the reason. **Bar trap:** procedural due process is not a mechanical application of rules.",
+      "caseIds": [
+        "case-0079"
+      ],
+      "source": {
+        "caseTitle": "Philippine National Bank v. Court of Appeals, et al. (1988)",
+        "grNumber": "G.R. No. L-45770",
+        "url": "https://lawphil.net/judjuris/juri1988/mar1988/gr_l-45770_1988.html",
+        "part": "Decision, discussion of the fourth assignment of error (three-day notice rule)",
+        "excerpt": "Procedural due process is not based solely on a mechanistic and literal application of a rule such that any deviation is inexorably fatal. Rules of procedure, and this includes the three-day notice requirement, are liberally construed to promote their object and to assist the parties in obtaining just, speedy and inexpensive determination of every action and proceeding [Section 2, Rule 1, Rules of Court]. ... Lapses in the literal observance of a rule of procedure may be overlooked when they have not prejudiced the adverse party and have not deprived the court of its authority."
+      }
+    },
+    {
+      "id": "q-0831",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "What was the disposition in PNB v. Court of Appeals (1988)?",
+      "choices": {
+        "A": "The decision of the Court of Appeals was affirmed in all respects except for the deletion of the award of moral and exemplary damages and attorney's fees to the spouses Medina and Lopez.",
+        "B": "The sale of the house was annulled for being in fraud of creditors.",
+        "C": "The ₱100,000 moral and exemplary damages of the trial court were reinstated.",
+        "D": "The case was remanded for a new trial on the counterclaim."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court ruled: \"except for the deletion of the award of moral and exemplary damages as well as attorney's fees to private respondents spouses Vicente E. Medina and Leticia Lopez, the decision of the Court of Appeals ... is hereby affirmed in all other respects.\" **B is wrong:** the dismissal of the annulment case rested on factual findings beyond review. **C and D are wrong:** the damages were deleted outright. **Bar trap:** PNB lost its annulment suit yet owed no damages.",
+      "caseIds": [
+        "case-0079"
+      ],
+      "source": {
+        "caseTitle": "Philippine National Bank v. Court of Appeals, et al. (1988)",
+        "grNumber": "G.R. No. L-45770",
+        "url": "https://lawphil.net/judjuris/juri1988/mar1988/gr_l-45770_1988.html",
+        "part": "Decision, the disposition",
+        "excerpt": "WHEREFORE, except for the deletion of the award of moral and exemplary damages as well as attorney's fees to private respondents spouses Vicente E. Medina and Leticia Lopez, the decision of the Court of Appeals in CA- G.R. No. 48720 is hereby affirmed in all other respects."
       }
     }
   ]
