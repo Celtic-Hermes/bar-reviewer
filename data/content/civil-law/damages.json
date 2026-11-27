@@ -886,6 +886,21 @@
       "ruling": "The decision was affirmed with modifications. Gross negligence is the want of even slight care, acting or omitting to act where there is a duty to act, not inadvertently but willfully and intentionally with a conscious indifference to consequences to others. Overtaking on a descending blind curve with one lane each way, encroaching on the opposite lane without ascertaining it was clear, was gross negligence. So the Court of Appeals erred in deleting the exemplary damages, which the law grants as a warning to the public and a deterrent against similar acts; but they should be tempered so as not to enrich or impoverish, so ₱50,000 each was reinstated. Moral damages for the loss of Baño's truck were correctly deleted, since the damage was not shown to have been done willfully or deliberately. Temperate damages for the destroyed truck were raised to ₱400,000 given its type and good condition, and ₱200,000 temperate damages for its lost income were sustained. The heirs' actual damages, ₱50,000 death indemnity, ₱50,000 moral damages and ₱415,640.16 for lost earning capacity were upheld, and attorney's fees were raised to ₱100,000 given the 18 years the case had been pending.",
       "keyDoctrine": "In quasi-delicts, exemplary damages may be granted if the defendant acted with gross negligence (Art. 2231). Gross negligence is the want of even slight care, acting or omitting to act where there is a duty to act, not inadvertently but willfully and intentionally with conscious indifference to consequences. Overtaking on a blind curve into the opposite lane without ascertaining it is clear is gross negligence. Exemplary damages serve as a warning and deterrent but are tempered so as not to enrich or impoverish. Moral damages for damage to property require that it be willful or deliberate (cf. Art. 2220). Temperate damages may replace an unproved value of a destroyed vehicle and its lost income, in a reasonable amount.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2012/mar2012/gr_191703_2012.html"
+    },
+    {
+      "id": "case-0107",
+      "status": "draft",
+      "name": "Inhelder Corporation v. Court of Appeals, et al.",
+      "grNumber": "G.R. No. L-52358",
+      "year": 1983,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Assessment of Damages",
+      "facts": "The Panganibans, physicians who owned a clinic in Calapan, owed drug company Inhelder ₱561 for medicines bought in 1972. After Inhelder's lawyer demanded payment, they mailed a check that Inhelder received on or before February 5, 1975. The check had to clear through a provincial bank, which could only have been completed around February 19. Meanwhile, without being told of the check, the lawyer filed a collection suit on February 12; on February 19 Inhelder acknowledged the check as full payment, and the suit was later dismissed without objection. The Panganibans then sued Inhelder in Oriental Mindoro for damages for the \"clearly unfounded\" and malicious collection suit. Inhelder was declared in default, and the trial court awarded ₱212,550 in actual, compensatory (for injured business standing and the doctor's nervous breakdown), moral and exemplary damages and attorney's fees; the Court of Appeals reduced the total to ₱41,550.",
+      "issue": "Was the collection case clearly unfounded or malicious so as to make Inhelder liable for damages?",
+      "ruling": "The judgment was reversed and the damage suit set aside. Under Article 1249, payment by check is effective only when the check is cashed or credited; there was no proof it cleared by February 12, so the account was technically unpaid and the suit was not substantially unfounded. Waiting for the check to clear would have been better, but the lack of advice to the lawyer did not make the suit clearly unfounded. Nor was it malicious: malicious prosecution requires both malice and want of probable cause, with proof that the suit was prompted by a sinister design to vex and humiliate and was deliberately initiated knowing it was false and groundless; the rule is the same for criminal and civil suits. Malice cannot be inferred from want of probable cause alone. The mere filing of a suit does not make one liable if one loses; the law could not have meant to penalize the right to litigate, and persons must have free resort to the courts without fear of standing trial for damages. The Court reminded trial courts to guard against exorbitant damages out of proportion to the circumstances; judicial discretion in assessing damages must be exercised with balanced restraint and measured objectivity.",
+      "keyDoctrine": "An unsuccessful suit is not by itself a ground for damages: the law does not penalize the right to litigate, and the expenses and annoyance of litigation are part of the social burden of living in a society governed by law. Malicious prosecution, in civil as in criminal cases, requires both malice (a sinister design to vex and humiliate, deliberately initiated knowing the charge false and groundless) and want of probable cause; malice cannot be inferred from want of probable cause. Payment by check is effective only when the check is cashed or credited (Art. 1249). Courts must assess damages with balanced restraint and measured objectivity and guard against exorbitant awards out of proportion to the circumstances.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri1983/may1983/gr_l-52358_1983.html"
     }
   ],
   "questions": [
@@ -17765,6 +17780,276 @@
         "url": "https://lawphil.net/judjuris/juri2012/mar2012/gr_191703_2012.html",
         "part": "The Court's Ruling, the disposition",
         "excerpt": "(2) petitioner Cresencio Baño: (a) ₱400,000.00 as temperate damages for his damaged dump truck; (b) ₱200,000.00 as lost income of the said truck; and (c) ₱50,000.00 as exemplary damages."
+      }
+    },
+    {
+      "id": "q-1146",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Assessment of Damages",
+      "prompt": "A drug company sued its clients to collect a ₱561 balance a week after it received their check by mail, before the check had cleared; the company's lawyer had not been told of the check. The suit was dismissed after the check cleared. The clients then sued for damages, claiming malicious prosecution. Will their suit prosper? State the elements of malicious prosecution and whether malice may be inferred from want of probable cause.",
+      "suggestedAnswer": {
+        "answer": "No. Malicious prosecution requires both malice and want of probable cause; there must be proof that the prosecution was prompted by a sinister design to vex and humiliate, and that it was deliberately initiated knowing the charge was false and groundless. The rule is the same for criminal prosecutions and civil suits. Malice cannot be inferred from want of probable cause. Here, even assuming want of probable cause, there was no proof that the company deliberately filed the case knowing it was false; its lawyer simply had not been told of the check.",
+        "legalBasis": "In Inhelder Corporation v. Court of Appeals, \"[m]alicious prosecution, to be the basis of a suit, requires the elements of malice and want of probable cause. There must be proof that the prosecution was prompted by a sinister design to vex and humiliate a person, and that it was initiated deliberately knowing that the charge was false and groundless.\" \"And the rule is the same for criminal prosecution and civil suits.\" \"Nor can malice be inferred from want of probable cause.\"",
+        "application": "The failure to advise the lawyer was a lapse, not a sinister design.",
+        "conclusion": "No liability for malicious prosecution. **Bar trap:** both elements must concur; even malice alone does not suffice where there is probable cause."
+      },
+      "keyPoints": [
+        "Elements: malice and want of probable cause",
+        "Sinister design to vex and humiliate",
+        "Deliberately initiated knowing the charge false and groundless",
+        "Same rule for civil suits and criminal prosecutions",
+        "Malice not inferred from want of probable cause"
+      ],
+      "caseIds": [
+        "case-0107"
+      ],
+      "source": {
+        "caseTitle": "Inhelder Corporation v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-52358",
+        "url": "https://lawphil.net/judjuris/juri1983/may1983/gr_l-52358_1983.html",
+        "part": "Decision, on malicious prosecution",
+        "excerpt": "Neither may it be said that the COLLECTION CASE was malicious. Malicious prosecution, to be the basis of a suit, requires the elements of malice and want of probable cause. There must be proof that the prosecution was prompted by a sinister design to vex and humiliate a person, and that it was initiated deliberately knowing that the charge was false and groundless. In the present case, there is no evidence on record, clearly establishing these two elements. Although there may be want of probable cause, there is no proof that petitioner deliberately initiated the COLLECTION CASE knowing that the same was false and groundless. And the rule is the same for criminal prosecution and civil suits. … Nor can malice be inferred from want of probable cause."
+      }
+    },
+    {
+      "id": "q-1147",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Assessment of Damages",
+      "prompt": "(a) Why does the mere filing of an unsuccessful suit not make the plaintiff liable for damages, according to Inhelder Corporation v. Court of Appeals? (b) What reminder did the Court give trial courts on the assessment of damages, in a case where a ₱561 collection suit led to an award of over ₱200,000?",
+      "suggestedAnswer": {
+        "answer": "(a) The law could not have meant to impose a penalty on the right to litigate. Sound principles of justice and public policy demand that persons have free resort to the courts for redress of wrongs and vindication of their rights without fear of later standing trial for damages should they lose; the expenses and annoyance of litigation are part of the social burden of living in a society that seeks social control through law. (b) Trial courts must guard against exorbitant damages way out of proportion to the circumstances of a case; judicial discretion in assessing damages must always be exercised with balanced restraint and measured objectivity.",
+        "legalBasis": "In Inhelder Corporation v. Court of Appeals, \"the mere filing of a suit does 'not render a person liable for malicious prosecution should he be unsuccessful. The law could not have meant to impose a penalty on the right to litigate. Sound principles of justice and public policy demand that persons shall have free resort to Courts of law for redress of wrongs and vindication of their rights without fear of later on standing trial for damages should their actions lose ground.\" The Court reminded \"Trial Courts to guard against the award of exhorbitant damages that are way out of proportion to the environmental circumstances of a case ... Judicial discretion granted to the Courts in the assessment of damages must always be ex with balanced restraint and measured objectivity.\"",
+        "application": "A suit over ₱561 that was dismissed once the check cleared could not justify a six-figure award.",
+        "conclusion": "The damage suit was set aside. **Bar trap:** the cost and trouble of being sued are a \"social burden\" everyone bears; they are not damages unless the suit was malicious."
+      },
+      "keyPoints": [
+        "No penalty on the right to litigate",
+        "Free resort to the courts without fear of a later damage suit",
+        "Litigation expense and annoyance: a social burden",
+        "Guard against exorbitant damages",
+        "Balanced restraint and measured objectivity"
+      ],
+      "caseIds": [
+        "case-0107"
+      ],
+      "source": {
+        "caseTitle": "Inhelder Corporation v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-52358",
+        "url": "https://lawphil.net/judjuris/juri1983/may1983/gr_l-52358_1983.html",
+        "part": "Decision, on the right to litigate and the assessment of damages",
+        "excerpt": "It should also be stressed that the mere filing of a suit does 'not render a person liable for malicious prosecution should he be unsuccessful. The law could not have meant to impose a penalty on the right to litigate. Sound principles of justice and public policy demand that persons shall have free resort to Courts of law for redress of wrongs and vindication of their rights without fear of later on standing trial for damages should their actions lose ground. As expressed by Chief Justice Enrique M. Fernando from a broader perspective: ... Well-worth paraphrasing is the thought expressed in a United States Supreme Court decision as to the existence of an abiding and fundamental principle that the expenses and annoyance of litigation form part of the social burden of living in a society which seeks to attain social control through law. At this juncture, it may not be amiss to remind Trial Courts to guard against the award of exhorbitant damages that are way out of proportion to the environmental circumstances of a case and which, time and again, this Court has reduced or eliminated. Judicial discretion granted to the Courts in the assessment of damages must always be ex with balanced restraint and measured objectivity."
+      }
+    },
+    {
+      "id": "q-1148",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Assessment of Damages",
+      "prompt": "In the same case, the clients argued that the collection suit was \"clearly unfounded\" because they had already mailed their check, which the company received a week before the suit was filed. Was the suit clearly unfounded? Explain, including when payment by check becomes effective.",
+      "suggestedAnswer": {
+        "answer": "No. Under Article 1249 of the Civil Code, payment by check is effective only when the check is actually cashed by, or credited to the account of, the creditor. Since there was no proof that the check had cleared when the suit was filed, the account was still technically unpaid, and the complaint could not be considered substantially unfounded. Waiting for the check to clear would have been the better procedure, but the lack of advice to the lawyer did not make the suit clearly unfounded.",
+        "legalBasis": "In Inhelder Corporation v. Court of Appeals, \"[u]nder Article 1249 of the Civil Code, payment should be held effective only when PNB Check No. 32058 was actually cashed by, or credited to the account of, INHELDER. If that did not eventuate on or before February 12, 1975, and there is no proof that it did, the account would still be unpaid, and the complaint in the COLLECTION CASE, technically, could not be considered as substantially unfounded.\" \"[T]he better procedure would have been to withhold a complaint pending determination of whether or not the check was good ... But the lack of that advice should not justify qualifying the COLLECTION CASE as clearly unfounded.\"",
+        "application": "The check, drawn on a provincial bank, could have cleared only about a week after the suit was filed.",
+        "conclusion": "Not clearly unfounded. **Bar trap:** receipt of a check is not payment; payment takes effect when it is cashed or credited."
+      },
+      "keyPoints": [
+        "Art. 1249: payment by check effective when cashed or credited",
+        "No proof of clearing before the suit",
+        "Account technically unpaid",
+        "Better practice not followed, but suit not clearly unfounded"
+      ],
+      "caseIds": [
+        "case-0107"
+      ],
+      "source": {
+        "caseTitle": "Inhelder Corporation v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-52358",
+        "url": "https://lawphil.net/judjuris/juri1983/may1983/gr_l-52358_1983.html",
+        "part": "Decision, on whether the collection case was clearly unfounded (payment by check)",
+        "excerpt": "On the above facts and circumstances, it should be difficult to conclude that the COLLECTION CASE was a clearly unfounded civil action. It is not clear that the account of the PANGANIBANS had already been paid as of February 12, 1975. Under Article 1249 of the Civil Code, payment should be held effective only when PNB Check No. 32058 was actually cashed by, or credited to the account of, INHELDER. If that did not eventuate on or before February 12, 1975, and there is no proof that it did, the account would still be unpaid, and the complaint in the COLLECTION CASE, technically, could not be considered as substantially unfounded. It is true that when the check of the PANGANIBANS was received on February 5, 1975, the better procedure would have been to withhold a complaint pending determination of whether or not the check was good. If dishonored, that would be the time to file the complaint. That procedure was not followed because of the failure of the corresponding advice which could have been given to Atty. Fajardo by the INHELDER Credit and Collection Manager. But the lack of that advice should not justify qualifying the COLLECTION CASE as clearly unfounded."
+      }
+    },
+    {
+      "id": "q-1149",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Assessment of Damages",
+      "prompt": "Ana sued Ben for an unpaid loan, though Ben had paid in cash and she had issued him a receipt, which she then hid; she filed the suit to embarrass Ben in his town before the election in which he was running. In a separate case, Carla sued Dino for a debt she honestly believed was unpaid because her bookkeeper had failed to record Dino's payment. Both suits were dismissed. May Ben and Dino recover damages for malicious prosecution? Explain.",
+      "suggestedAnswer": {
+        "answer": "Ben may; Dino may not. Malicious prosecution requires both malice and want of probable cause: the suit must have been prompted by a sinister design to vex and humiliate, and deliberately initiated knowing the charge was false and groundless. Ana knew Ben had paid and sued to embarrass him. Carla sued in honest error; there may have been no actual debt, but there was no malice, and malice cannot be inferred from the want of probable cause alone.",
+        "legalBasis": "In Inhelder Corporation v. Court of Appeals, there \"must be proof that the prosecution was prompted by a sinister design to vex and humiliate a person, and that it was initiated deliberately knowing that the charge was false and groundless,\" \"the rule is the same for criminal prosecution and civil suits,\" and \"[n]or can malice be inferred from want of probable cause.\" \"[T]he mere filing of a suit does 'not render a person liable for malicious prosecution should he be unsuccessful.'\"",
+        "application": "Ana: knowledge of falsity plus a sinister purpose. Carla: an honest mistake.",
+        "conclusion": "Damages for Ben only. **Bar trap:** a suit without basis is not malicious unless it was knowingly false and meant to vex."
+      },
+      "keyPoints": [
+        "Both malice and want of probable cause required",
+        "Knowledge that the charge is false",
+        "Sinister design to vex and humiliate",
+        "Honest mistake is not malice",
+        "Losing a suit is not enough"
+      ],
+      "caseIds": [
+        "case-0107"
+      ],
+      "source": {
+        "caseTitle": "Inhelder Corporation v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-52358",
+        "url": "https://lawphil.net/judjuris/juri1983/may1983/gr_l-52358_1983.html",
+        "part": "Decision, on malicious prosecution",
+        "excerpt": "There must be proof that the prosecution was prompted by a sinister design to vex and humiliate a person, and that it was initiated deliberately knowing that the charge was false and groundless. … And the rule is the same for criminal prosecution and civil suits. … Nor can malice be inferred from want of probable cause. … It should also be stressed that the mere filing of a suit does 'not render a person liable for malicious prosecution should he be unsuccessful."
+      }
+    },
+    {
+      "id": "q-1150",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Assessment of Damages",
+      "prompt": "Eva owed Felix ₱10,000. (a) On March 1 she mailed him a check; it reached him on March 5, and he sued her on March 7, before the check cleared on March 10. (b) In another case, Gina paid Hugo ₱10,000 in cash on March 1 and got a signed receipt; Hugo, who had forgotten the payment, sued her on March 7. Was either suit filed while the debt was still unpaid? Reason briefly.",
+      "suggestedAnswer": {
+        "answer": "(a) Yes. Under Article 1249, payment by check is effective only when the check is cashed or credited; when Felix sued on March 7, the check had not yet cleared, so Eva's debt was technically still unpaid. (b) No. Gina's cash payment on March 1 extinguished the debt, so Hugo's suit was filed after payment, although it would still not be malicious absent malice.",
+        "legalBasis": "In Inhelder Corporation v. Court of Appeals, \"[u]nder Article 1249 of the Civil Code, payment should be held effective only when PNB Check No. 32058 was actually cashed by, or credited to the account of, INHELDER. If that did not eventuate on or before February 12, 1975, and there is no proof that it did, the account would still be unpaid.\" Malicious prosecution still requires both \"malice and want of probable cause.\"",
+        "application": "(a) The check had not cleared at filing. (b) Cash was paid before filing.",
+        "conclusion": "(a) Unpaid when sued; (b) already paid. **Bar trap:** even a suit on an already paid debt is not malicious prosecution without proof of malice."
+      },
+      "keyPoints": [
+        "Art. 1249: check payment effective when cashed or credited",
+        "Uncleared check: debt still unpaid",
+        "Cash payment with receipt: debt extinguished",
+        "Malice still required for malicious prosecution"
+      ],
+      "caseIds": [
+        "case-0107"
+      ],
+      "source": {
+        "caseTitle": "Inhelder Corporation v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-52358",
+        "url": "https://lawphil.net/judjuris/juri1983/may1983/gr_l-52358_1983.html",
+        "part": "Decision, on whether the collection case was clearly unfounded (payment by check)",
+        "excerpt": "Under Article 1249 of the Civil Code, payment should be held effective only when PNB Check No. 32058 was actually cashed by, or credited to the account of, INHELDER. If that did not eventuate on or before February 12, 1975, and there is no proof that it did, the account would still be unpaid, and the complaint in the COLLECTION CASE, technically, could not be considered as substantially unfounded."
+      }
+    },
+    {
+      "id": "q-1151",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Assessment of Damages",
+      "prompt": "A trial court, in a default judgment, awarded a defendant who had been sued over a small debt and then won ₱500,000 in damages, reasoning that \"being sued is a humiliating ordeal for which the plaintiff must pay.\" There was no evidence that the plaintiff knew its claim was false. Applying Inhelder Corporation v. Court of Appeals, should the award be sustained? Reason briefly.",
+      "suggestedAnswer": {
+        "answer": "No. The mere filing of a suit does not render a person liable should he be unsuccessful, because the law does not penalize the right to litigate; persons must be free to resort to the courts without fear of later standing trial for damages, and the expenses and annoyance of litigation are part of the social burden of a society governed by law. Without proof of malice and want of probable cause, there is no basis for damages. And courts must guard against exorbitant damages out of proportion to the circumstances, exercising balanced restraint and measured objectivity.",
+        "legalBasis": "In Inhelder Corporation v. Court of Appeals, \"[t]he law could not have meant to impose a penalty on the right to litigate,\" and \"the expenses and annoyance of litigation form part of the social burden of living in a society which seeks to attain social control through law.\" Trial courts must \"guard against the award of exhorbitant damages that are way out of proportion to the environmental circumstances of a case.\"",
+        "application": "The court treated the mere ordeal of being sued as compensable and awarded a sum far out of proportion to the small debt.",
+        "conclusion": "The award should be set aside. **Bar trap:** a default judgment does not relieve the court of the need for a legal basis and a proportionate amount."
+      },
+      "keyPoints": [
+        "No penalty on the right to litigate",
+        "Being sued is a social burden, not a compensable injury by itself",
+        "Malice and want of probable cause required",
+        "Guard against exorbitant, disproportionate awards"
+      ],
+      "caseIds": [
+        "case-0107"
+      ],
+      "source": {
+        "caseTitle": "Inhelder Corporation v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-52358",
+        "url": "https://lawphil.net/judjuris/juri1983/may1983/gr_l-52358_1983.html",
+        "part": "Decision, on the right to litigate and the assessment of damages",
+        "excerpt": "The law could not have meant to impose a penalty on the right to litigate. Sound principles of justice and public policy demand that persons shall have free resort to Courts of law for redress of wrongs and vindication of their rights without fear of later on standing trial for damages should their actions lose ground. … At this juncture, it may not be amiss to remind Trial Courts to guard against the award of exhorbitant damages that are way out of proportion to the environmental circumstances of a case and which, time and again, this Court has reduced or eliminated."
+      }
+    },
+    {
+      "id": "q-1152",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Assessment of Damages",
+      "prompt": "Under Inhelder Corporation v. Court of Appeals, malicious prosecution, to be the basis of a suit, requires",
+      "choices": {
+        "A": "malice only.",
+        "B": "want of probable cause only.",
+        "C": "the elements of malice and want of probable cause.",
+        "D": "the dismissal of the earlier case, regardless of motive."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** \"Malicious prosecution, to be the basis of a suit, requires the elements of malice and want of probable cause.\" **A and B are wrong:** both must concur; \"malice alone does not make one liable ... where probable cause is shown,\" and malice cannot be inferred from want of probable cause. **D is wrong:** losing a suit does not make one liable. **Bar trap:** the same rule applies to civil suits as to criminal prosecutions.",
+      "caseIds": [
+        "case-0107"
+      ],
+      "source": {
+        "caseTitle": "Inhelder Corporation v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-52358",
+        "url": "https://lawphil.net/judjuris/juri1983/may1983/gr_l-52358_1983.html",
+        "part": "Decision, on malicious prosecution",
+        "excerpt": "Malicious prosecution, to be the basis of a suit, requires the elements of malice and want of probable cause."
+      }
+    },
+    {
+      "id": "q-1153",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Assessment of Damages",
+      "prompt": "In Inhelder Corporation v. Court of Appeals, the Court held that under Article 1249 of the Civil Code, payment by check is effective",
+      "choices": {
+        "A": "only when the check is actually cashed by, or credited to the account of, the creditor.",
+        "B": "upon mailing of the check.",
+        "C": "upon the creditor's receipt of the check.",
+        "D": "upon the issuance of the check."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** \"Under Article 1249 of the Civil Code, payment should be held effective only when PNB Check No. 32058 was actually cashed by, or credited to the account of, INHELDER.\" **B, C and D are wrong:** mailing, receipt or issuance is not yet payment. **Bar trap:** a suit filed after receipt but before clearing is not, for that reason, clearly unfounded.",
+      "caseIds": [
+        "case-0107"
+      ],
+      "source": {
+        "caseTitle": "Inhelder Corporation v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-52358",
+        "url": "https://lawphil.net/judjuris/juri1983/may1983/gr_l-52358_1983.html",
+        "part": "Decision, on payment by check",
+        "excerpt": "Under Article 1249 of the Civil Code, payment should be held effective only when PNB Check No. 32058 was actually cashed by, or credited to the account of, INHELDER."
+      }
+    },
+    {
+      "id": "q-1154",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Assessment of Damages",
+      "prompt": "What was the final result in Inhelder Corporation v. Court of Appeals?",
+      "choices": {
+        "A": "The award was reduced to ₱41,550.",
+        "B": "The appealed judgment was reversed and the trial court's decision in the damage case set aside.",
+        "C": "The award of ₱212,550 was reinstated.",
+        "D": "Only moral damages were deleted."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** \"[T]he appealed judgment of the erstwhile Court of Appeals is hereby reversed, and the decision of the Court of First Instance of Oriental Mindoro in its Civil Case No. R-2525 is set aside.\" **A is wrong:** that was the Court of Appeals' modification, reversed. **C and D are wrong.** **Bar trap:** without malice and want of probable cause, no damages at all were due for the collection suit.",
+      "caseIds": [
+        "case-0107"
+      ],
+      "source": {
+        "caseTitle": "Inhelder Corporation v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-52358",
+        "url": "https://lawphil.net/judjuris/juri1983/may1983/gr_l-52358_1983.html",
+        "part": "Decision, the disposition",
+        "excerpt": "WHEREFORE, the appealed judgment of the erstwhile Court of Appeals is hereby reversed, and the decision of the Court of First Instance of Oriental Mindoro in its Civil Case No. R-2525 is set aside."
       }
     }
   ]
