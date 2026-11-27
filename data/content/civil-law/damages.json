@@ -8485,6 +8485,101 @@
         "part": "Decision, negligence of counsel and breach of contract of carriage",
         "excerpt": "It is settled that the negligence of counsel binds the client. This is based on the rule that any act performed by a counsel within the scope of his general or implied authority is regarded as an act of his client. Consequently, the mistake or negligence of counsel may result in the rendition of an unfavorable judgment against the client. However, the application of the general rule to a given case should be looked into and adopted according to the surrounding circumstances obtaining. Thus, exceptions to the foregoing have been recognized by the court in cases where reckless or gross negligence of counsel deprives the client of due process of law, or when its application will result in outright deprivation of the client’s liberty or property or where the interests of justice so require, and accord relief to the client who suffered by reason of the lawyer’s gross or palpable mistake or negligence. … Anent the second issue, petitioner was correctly found liable for breach of contract of carriage. A common carrier is bound to carry its passengers safely as far as human care and foresight can provide, using the utmost diligence of very cautious persons, with due regard to all the circumstances. In a contract of carriage, it is presumed that the common carrier was at fault or was negligent when a passenger dies or is injured. Unless the presumption is rebutted, the court need not even make an express finding of fault or negligence on the part of the common carrier. This statutory presumption may only be overcome by evidence that the carrier exercised extraordinary diligence."
       }
+    },
+    {
+      "id": "q-0852",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Ana and her husband were riding a motorcycle on the left side of a provincial highway. A delivery truck driven by Ben, coming from behind on the right lane, saw them ahead but did not slow down; it veered to the left and hit them. Ben's employer, Fast Freight Inc., proves that before hiring Ben it checked his NBI clearance and gave him a driving test and a physical examination. It did not know that Ben had been involved in earlier sideswiping incidents, and it gave him no training on discipline and road behavior.\n\n(a) Was Ben negligent? Explain.\n\n(b) Is Fast Freight Inc. liable with Ben? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) Yes. Under the test of foreseeability, a reasonable driver who saw the motorcycle ahead would have slowed down; Ben drove on and veered left into it. (b) Yes. When an employee's negligence causes damage, the employer is presumed to have failed in the selection or supervision of the employee; tests limited to driving ability and fitness, without knowledge of the driver's past incidents or instilling discipline on the road, do not overcome the presumption.",
+        "legalBasis": "\"Foreseeability is the fundamental test of negligence. To be negligent, a defendant must have acted or failed to act in such a way that an ordinary reasonable man would have realized that certain interests of certain persons were unreasonably subjected to a general but definite class of risks.\" \"Whenever an employee's negligence causes damage or injury to another, there instantly arises a presumption that the employer failed to exercise the due diligence of a good father of the family in the selection or supervision of its employees,\" which the employer must overcome by convincing proof. Tests \"concentrated on the ability to drive and physical fitness to do so,\" without knowing the driver's previous sideswiping incidents or inculcating discipline and correct behavior on the road, were insufficient.",
+        "application": "(a) Ben saw the danger and did not take the precaution of slowing down. (b) Fast Freight's screening is the same kind held insufficient; it did not supervise Ben's road behavior or know his record.",
+        "conclusion": "(a) Ben was negligent; (b) Fast Freight is liable. **Bar trap:** passing hiring tests is not enough; the employer must prove diligence in both selection and supervision."
+      },
+      "keyPoints": [
+        "Foreseeability is the fundamental test of negligence",
+        "Seeing the danger and not slowing down is negligent",
+        "Employee's negligence raises a presumption of the employer's negligence",
+        "Overcome only by convincing proof of diligence in selection and supervision",
+        "Tests on driving skill and fitness alone are not enough"
+      ],
+      "caseIds": [
+        "case-0051"
+      ],
+      "source": {
+        "caseTitle": "Philippine Hawk Corporation v. Lee",
+        "grNumber": "G.R. No. 166869",
+        "url": "https://lawphil.net/judjuris/juri2010/feb2010/gr_166869_2010.html",
+        "part": "Decision, negligence of the driver and liability of the employer",
+        "excerpt": "Foreseeability is the fundamental test of negligence. To be negligent, a defendant must have acted or failed to act in such a way that an ordinary reasonable man would have realized that certain interests of certain persons were unreasonably subjected to a general but definite class of risks. In this case, the bus driver, who was driving on the right side of the road, already saw the motorcycle on the left side of the road before the collision. However, he did not take the necessary precaution to slow down, but drove on and bumped the motorcycle, and also the passenger jeep parked on the left side of the road, showing that the bus was negligent in veering to the left lane, causing it to hit the motorcycle and the passenger jeep. Whenever an employee’s negligence causes damage or injury to another, there instantly arises a presumption that the employer failed to exercise the due diligence of a good father of the family in the selection or supervision of its employees. To avoid liability for a quasi-delict committed by his employee, an employer must overcome the presumption by presenting convincing proof that he exercised the care and diligence of a good father of a family in the selection and supervision of his employee. The Court upholds the finding of the trial court and the Court of Appeals that petitioner is liable to respondent, since it failed to exercise the diligence of a good father of the family in the selection and supervision of its bus driver, Margarito Avila, for having failed to sufficiently inculcate in him discipline and correct behavior on the road. Indeed, petitioner’s tests were concentrated on the ability to drive and physical fitness to do so. It also did not know that Avila had been previously involved in sideswiping incidents."
+      }
+    },
+    {
+      "id": "q-0853",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Carlo, 50 years old, owned and ran a small hardware store. He was killed when a negligent truck driver hit him. His heirs proved, through his income tax documents, that the store's gross annual income was ₱400,000, but presented no evidence of the store's operating expenses or of Carlo's living expenses. Using the method that pegs necessary business expenses at 80% of gross income and living expenses at 50% of the net income, compute the award for loss of earning capacity. Show the computation.",
+      "suggestedAnswer": {
+        "answer": "₱800,000. Life expectancy = 2/3 × (80 − 50) = 20 years. Gross annual income ₱400,000 less necessary expenses of 80% (₱320,000) = ₱80,000. Less living expenses of 50% of that (₱40,000) = ₱40,000 net. Award = 20 × ₱40,000 = ₱800,000.",
+        "legalBasis": "Indemnity for loss of earning capacity under Article 2206 \"is awarded not for loss of earnings, but for loss of capacity to earn money,\" and \"only net earnings, not gross earnings, are to be considered; that is, the total of the earnings less expenses necessary for the creation of such earnings or income, less living and other incidental expenses. In the absence of documentary evidence, it is reasonable to peg necessary expenses ... at 80 percent of the gross income, and peg living expenses at 50 percent of the net income (gross income less necessary expenses).\"",
+        "application": "Carlo ran a business, so its necessary expenses must first be deducted from his gross income; with no evidence of expenses, they are pegged at 80%, and living expenses at 50% of what remains.",
+        "conclusion": "₱800,000. **Bar trap:** for a business owner, deduct the business's necessary expenses first, then the living expenses; never multiply the gross income."
+      },
+      "keyPoints": [
+        "Art. 2206 indemnity is for loss of capacity to earn",
+        "Only net earnings count",
+        "Without documents: necessary expenses at 80% of gross, living expenses at 50% of net",
+        "Life expectancy: 2/3 × (80 − 50) = 20",
+        "20 × ₱40,000 = ₱800,000"
+      ],
+      "caseIds": [
+        "case-0051"
+      ],
+      "source": {
+        "caseTitle": "Philippine Hawk Corporation v. Lee",
+        "grNumber": "G.R. No. 166869",
+        "url": "https://lawphil.net/judjuris/juri2010/feb2010/gr_166869_2010.html",
+        "part": "Decision, computation of loss of earning capacity (net earnings)",
+        "excerpt": "The indemnity for loss of earning capacity of the deceased is provided for by Article 2206 of the Civil Code. Compensation of this nature is awarded not for loss of earnings, but for loss of capacity to earn money. … In the computation of loss of earning capacity, only net earnings, not gross earnings, are to be considered; that is, the total of the earnings less expenses necessary for the creation of such earnings or income, less living and other incidental expenses. In the absence of documentary evidence, it is reasonable to peg necessary expenses for the lease and operation of the gasoline station at 80 percent of the gross income, and peg living expenses at 50 percent of the net income (gross income less necessary expenses)."
+      }
+    },
+    {
+      "id": "q-0854",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "In the same accident, Carlo's wife, Dina, who was riding with him, suffered a broken leg, and their motorcycle was wrecked. To prove the motorcycle's damage, Dina presented only a repair shop's job estimate of ₱18,000; she presented no receipts.\n\n(a) May Dina recover the ₱18,000 as actual damages? If not, what may she recover for the motorcycle? Explain.\n\n(b) May Dina recover moral damages for her own injuries from the negligent driver and his employer? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) No. A job estimate is not competent proof of the actual damage; but since some loss to the motorcycle was clearly suffered, temperate damages may be awarded. (b) Yes. Moral damages may be recovered in quasi-delicts causing physical injuries (Art. 2219).",
+        "legalBasis": "\"Under Art. 2224 of the Civil Code, temperate damages 'may be recovered when the court finds that some pecuniary loss has been suffered but its amount cannot, from the nature of the case, be proved with certainty.'\" Where the evidence of a motorcycle's repair \"was merely a job estimate,\" temperate damages were awarded. \"Under Art. 2219 of the Civil Code, moral damages may be recovered in quasi-delicts causing physical injuries.\"",
+        "application": "(a) The motorcycle was undeniably damaged through the driver's negligence, but the estimate does not prove the actual cost, so temperate damages, not actual damages, are proper. (b) Dina's broken leg is a physical injury caused by a quasi-delict, which is one of the cases listed in Article 2219.",
+        "conclusion": "(a) Temperate damages, not the estimate as actual damages; (b) moral damages may be awarded. **Bar trap:** unlike a passenger suing on a contract of carriage, a victim of a quasi-delict causing physical injuries need not prove bad faith to recover moral damages."
+      },
+      "keyPoints": [
+        "A job estimate is not proof of actual damage",
+        "Temperate damages when loss is certain but its amount is not proved (Art. 2224)",
+        "Moral damages in quasi-delicts causing physical injuries (Art. 2219)",
+        "The appellate court may review matters not assigned as errors if needed for a just decision"
+      ],
+      "caseIds": [
+        "case-0051"
+      ],
+      "source": {
+        "caseTitle": "Philippine Hawk Corporation v. Lee",
+        "grNumber": "G.R. No. 166869",
+        "url": "https://lawphil.net/judjuris/juri2010/feb2010/gr_166869_2010.html",
+        "part": "Decision, damages awarded on appeal though not assigned as errors",
+        "excerpt": "In addition, the Court of Appeals correctly awarded temperate damages in the amount of ₱10,000.00 for the damage caused on respondent’s motorcycle. Under Art. 2224 of the Civil Code, temperate damages \"may be recovered when the court finds that some pecuniary loss has been suffered but its amount cannot, from the nature of the case, be proved with certainty.\" The cost of the repair of the motorcycle was prayed for by respondent in her Complaint. However, the evidence presented was merely a job estimate of the cost of the motorcycle’s repair amounting to ₱17, 829.00. … The Court of Appeals also correctly awarded respondent moral damages for the physical injuries she sustained due to the vehicular accident. Under Art. 2219 of the Civil Code, moral damages may be recovered in quasi-delicts causing physical injuries."
+      }
     }
   ]
 }
