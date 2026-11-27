@@ -8674,6 +8674,99 @@
         "part": "Discussion, sufficiency of the Information and flight",
         "excerpt": "In the same manner, it is also not surprising that Asilan returned to the scene of the crime after stabbing Adovas. His \"failure to flee and the apparent normalcy of his behavior subsequent to the commission of the crime do not imply his innocence.\" This Court, elucidating on this point, declared: Flight is indicative of guilt, but its converse is not necessarily true. Culprits behave differently and even erratically in externalizing and manifesting their guilt. Some may escape or flee -- a circumstance strongly illustrative of guilt -- while others may remain in the same vicinity so as to create a semblance of regularity, thereby avoiding suspicion from other members of the community. … Contrary to Asilan’s contention, the qualifying circumstance of \"treachery\" was specifically alleged in the Information. \"The rule is that qualifying circumstances must be properly pleaded in the Information in order not to violate the accused’s constitutional right to be properly informed of the nature and cause of the accusation against him.\" … Moreover, in People v. Candaza, this Court held that \"[a]n Information which lacks essential allegations may still sustain a conviction when the accused fails to object to its sufficiency during the trial, and the deficiency was cured by competent evidence presented therein.\""
       }
+    },
+    {
+      "id": "q-0858",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Atty. Ana represented Ben in a suit for breach of contract. The court ruled for Ben and ordered the defendant to pay Ben ₱50,000 as attorney's fees under Article 2208 of the Civil Code. Ben and Atty. Ana separately agreed in writing that she would receive 20% of whatever Ben recovers.\n\n(a) Atty. Ana moves for a writ of execution in her own name to collect the ₱50,000 from the defendant, claiming the award is hers. Is she correct? Explain.\n\n(b) Against whom may Atty. Ana enforce the 20% fee? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) No. Attorney's fees awarded as damages under Article 2208 belong to the litigant, Ben, not to his counsel; Ben is the judgment creditor who may enforce them by execution. (b) Against her client, Ben, under their contract for professional services, in which she is the creditor and Ben the debtor.",
+        "legalBasis": "Attorney's fees \"as an item of damages provided for under Article 2208 of the Civil Code\" are those \"wherein the award is made in favor of the litigant, not of his counsel, and the litigant, not his counsel, is the judgment creditor who may enforce the judgment for attorney's fees by execution.\" A lawyer's claim for fees \"based on an alleged contract for professional services\" is different, with the lawyer as creditor and the client as debtor.",
+        "application": "(a) The ₱50,000 is Ben's damages paid by the losing party; Atty. Ana cannot execute it in her own name. (b) Her 20% rests on her contract with Ben, so it is Ben who owes it to her.",
+        "conclusion": "(a) The award is Ben's; (b) she collects her fee from Ben. **Bar trap:** do not confuse attorney's fees as damages (extraordinary concept, for the client) with the lawyer's compensation (ordinary concept, from the client)."
+      },
+      "keyPoints": [
+        "Art. 2208 attorney's fees are damages awarded to the litigant",
+        "The litigant, not counsel, is the judgment creditor and may execute",
+        "Professional fees rest on the lawyer-client contract",
+        "There the lawyer is creditor and the client debtor"
+      ],
+      "caseIds": [
+        "case-0053"
+      ],
+      "source": {
+        "caseTitle": "Quirante, et al. v. Intermediate Appellate Court, et al.",
+        "grNumber": "G.R. No. 73886",
+        "url": "https://lawphil.net/judjuris/juri1989/jan1989/gr_73886_1989.html",
+        "part": "Decision, attorney's fees as damages and fees for professional services",
+        "excerpt": "What is being claimed here as attorney's fees by petitioners is, however, different from attorney's fees as an item of damages provided for under Article 2208 of the Civil Code, wherein the award is made in favor of the litigant, not of his counsel, and the litigant, not his counsel, is the judgment creditor who may enforce the judgment for attorney's fees by execution. Here, the petitioner's claims are based on an alleged contract for professional services, with them as the creditors and the private respondents as the debtors."
+      }
+    },
+    {
+      "id": "q-0859",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Atty. Carla handled Dino's damages suit under a contingent-fee agreement: she would get 30% of any amount actually recovered. The trial court ruled for Dino, but the defendant appealed. While the appeal is pending, Atty. Carla files a motion in the same case asking the trial court to fix and confirm her fees now.\n\n(a) May she claim her fees in the same case rather than in a separate action? Explain.\n\n(b) Should the court fix her fees now? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) Yes. Counsel's claim for fees may be asserted either in the very action where the services were rendered or in a separate action; in the same action it is an incident of the case, the court knows the lawyer's work, and it avoids multiplicity of suits. (b) No. The determination should be held in abeyance until the main case is final and something has been recovered from which the fee is to be paid.",
+        "legalBasis": "\"[C]ounsel's claim for attorney's fees may be asserted either in the very action in which the services in question have been rendered, or in a separate action,\" since \"the right to recover attorney's fees is but an incident of the case\" and the court \"is to a certain degree already familiar with the nature and extent of the lawyer's services.\" But where \"the main case from which the petitioner's claims for their fees may arise has not yet become final, the determination ... should be held in abeyance\": \"an attorney's fee cannot be determined until after the main litigation has been decided and the subject of recovery is at the disposition of the court.\"",
+        "application": "(a) Atty. Carla may file in the same case. (b) Since her fee is a share of what is \"actually recovered\" and the judgment is still under appeal, there is nothing yet from which to compute or pay it.",
+        "conclusion": "(a) Yes, in the same case; (b) not yet. **Bar trap:** the proper forum is not the same as the proper time; a contingent fee waits for an actual recovery."
+      },
+      "keyPoints": [
+        "Fees may be claimed in the same action or a separate one",
+        "In the same action: an incident of the case; the court knows the services; avoids multiplicity of suits",
+        "Determination is held in abeyance while the main case is not final",
+        "A fee is fixed only after the main litigation is decided and something is recovered"
+      ],
+      "caseIds": [
+        "case-0053"
+      ],
+      "source": {
+        "caseTitle": "Quirante, et al. v. Intermediate Appellate Court, et al.",
+        "grNumber": "G.R. No. 73886",
+        "url": "https://lawphil.net/judjuris/juri1989/jan1989/gr_73886_1989.html",
+        "part": "Decision, where and when counsel may claim fees",
+        "excerpt": "Well settled is the rule that counsel's claim for attorney's fees may be asserted either in the very action in which the services in question have been rendered, or in a separate action. If the first alternative is chosen, the Court may pass upon said claim, even if its amount were less than the minimum prescribed by law for the jurisdiction of said court, upon the theory that the right to recover attorney's fees is but an incident of the case in which the services of counsel have been rendered .\" It also rests on the assumption that the court trying the case is to a certain degree already familiar with the nature and extent of the lawyer's services. The rule against multiplicity of suits will in effect be subserved. … Since the main case from which the petitioner's claims for their fees may arise has not yet become final, the determination of the propriety of said fees and the amount thereof should be held in abeyance. This procedure gains added validity in the light of the rule that the remedy for recovering attorney's fees as an incident of the main action may be availed of only when something is due to the client. Thus, it was ruled that: xxx an attorney's fee cannot be determined until after the main litigation has been decided and the subject of recovery is at the disposition of the court. The issue over attorney's fee only arises when something has been recovered from which the fee is to be paid."
+      }
+    },
+    {
+      "id": "q-0860",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "After Eli died, his widow and one of his three children signed a document confirming a fee agreement between Eli and his lawyer, Atty. Fe; the other two children did not sign. The main case for damages is still pending on appeal. The appellate court, while holding Atty. Fe's motion to confirm her fees premature, also declares that the confirmation can never bind the two children who did not sign. Is that declaration proper at this stage? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. The effect of the confirmation on the heirs, including those who did not sign, should be determined by the trial court after the entire case is adjudicated; declaring now that it cannot bind the non-signatories is itself premature and pre-empts factual matters for the trial court.",
+        "legalBasis": "\"[T]he orderly administration of justice dictates that such issue be likewise determined by the court a quo inasmuch as it also necessarily involves the same contingencies in determining the propriety and assessing the extent of recovery of attorney's fees.\" A holding that the confirmation \"should not adversely affect the non-signatories thereto\" is \"also premised on the eventual grant of damages ... hence the same objection of prematurity obtains and such a holding may be pre-emptive of factual and evidentiary matters that may be presented for consideration by the trial court.\"",
+        "application": "Since the fees themselves cannot yet be fixed, any ruling on whom the confirmation binds is likewise premature and belongs first to the trial court.",
+        "conclusion": "Not proper at this stage. **Bar trap:** an appellate court may affirm that a claim is premature, but it should not go on to decide questions that depend on the same unresolved contingencies."
+      },
+      "keyPoints": [
+        "The effect of a confirmation by some heirs is for the trial court",
+        "It depends on the same contingencies as the fees",
+        "A ruling now that it cannot bind non-signatories is premature",
+        "It may pre-empt factual and evidentiary matters"
+      ],
+      "caseIds": [
+        "case-0053"
+      ],
+      "source": {
+        "caseTitle": "Quirante, et al. v. Intermediate Appellate Court, et al.",
+        "grNumber": "G.R. No. 73886",
+        "url": "https://lawphil.net/judjuris/juri1989/jan1989/gr_73886_1989.html",
+        "part": "Decision, the effect of the confirmation by some heirs",
+        "excerpt": "With regard to the effect of the alleged confirmation of the attorney's fees by some of the heirs of the deceased. We are of the considered view that the orderly administration of justice dictates that such issue be likewise determined by the court a quo inasmuch as it also necessarily involves the same contingencies in determining the propriety and assessing the extent of recovery of attorney's fees by both petitioners herein. … We, therefore, take exception to and reject that portion of the decision of the respondent court which holds that the alleged confirmation to attorney's fees should not adversely affect the non-signatories thereto, since it is also premised on the eventual grant of damages to the Casasola family, hence the same objection of prematurity obtains and such a holding may be pre-emptive of factual and evidentiary matters that may be presented for consideration by the trial court."
+      }
     }
   ]
 }
