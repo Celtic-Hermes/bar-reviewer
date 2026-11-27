@@ -9426,6 +9426,100 @@
         "part": "Statement of facts and the Court of Appeals' award",
         "excerpt": "The defendants justify their refusal to transfer the shares of stock of Francisco Aguac in the name of the plaintiff in view of their apprehension that they might he held liable for damages under Article 173 of the Civil Code and the ruling of the Supreme Court in Bucoy vs. Paulino, 23 SCRA 248."
       }
+    },
+    {
+      "id": "q-0882",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Ana's company was the exclusive distributor of Ben's sardines for three years, earning a fixed commission per case sold. After one year, Ben stopped delivering in breach of the contract. Ana proves exactly how many cases she sold and what commissions she earned during the first year, and the minimum volume Ben was bound to deliver for the remaining two years. Ben argues that lost commissions are speculative unless Ana proves actual buyers ready to buy. May Ana recover her lost commissions? Explain.",
+      "suggestedAnswer": {
+        "answer": "Yes. Indemnity for damages covers not only the loss suffered but also the profits the creditor fails to obtain (lucrum cessans), and Ana's lost commissions can be estimated with reasonable certainty from what she actually earned per case under the same contract, applied to the volume Ben was bound to deliver.",
+        "legalBasis": "\"Under Article 2200 of the Civil Code, indemnification for damages comprehends not only the value of the loss suffered but also [that] of the profits which the creditor fails to obtain. In other words, lucrum cessans is also a basis for indemnification.\" The question is whether the creditor failed to make profits because of the breach and whether \"there is ... basis for determining with reasonable certainty such unearned profits.\" Where the distributor had been earning commissions on every delivery, it was reasonable to expect it would have continued, \"[a]nd this commission is not difficult to estimate,\" so the award was \"not speculative, but based on reasonable estimate.\"",
+        "application": "Ana's first-year earnings per case, multiplied by the volume due for the remaining two years, give a reasonable estimate of her lost commissions.",
+        "conclusion": "Ana may recover. **Bar trap:** reasonable certainty, not absolute certainty, is required for lost profits; a contract with an earnings record supplies it."
+      },
+      "keyPoints": [
+        "Art. 2200: loss suffered and profits not obtained",
+        "Lucrum cessans is a basis for indemnity",
+        "Profits lost because of the breach",
+        "Determinable with reasonable certainty from past earnings under the same contract",
+        "A reasonable estimate is not speculation"
+      ],
+      "caseIds": [
+        "case-0061"
+      ],
+      "source": {
+        "caseTitle": "General Enterprises, Inc. v. Lianga Bay Logging Co., Inc.",
+        "grNumber": "G.R. No. L-18487",
+        "url": "https://lawphil.net/judjuris/juri1964/aug1964/gr_l-18487_1964.html",
+        "part": "Decision, discussion of the sixth issue (actual damages)",
+        "excerpt": "This argument must be overruled in the light of the law and evidence on the latter. Under Article 2200 of the Civil Code, indemnification for damages comprehends not only the value of the loss suffered but also at of the profits which the creditor fails to obtain. In other words, lucrum cessans is also a basis for indemnification. The question then that arises is: Has appellee failed to make profits because of appellant's breach of contract, and in the affirmative, is there here basis for determining with reasonable certainty such unearned profits? … Had appellant continued to deliver the logs as it was bound to pursuant to the agreement it is reasonable to expect that it would have continued earning its commission in much the same manner as it used to in connection with the previous shipments of logs, which clearly indicates that it failed to earn the commissions it should earn during this period of time. And this commission is not difficult to estimate. … The award therefore, made by the court a quo of the amount of P400,000.00 as compensatory damages is not speculative, but based on reasonable estimate."
+      }
+    },
+    {
+      "id": "q-0883",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Carla's supply contract with Dino allows suspension of deliveries only for listed causes, such as fire, flood, strikes, government orders and similar events beyond a party's control. Carla stops delivering and cites (1) her wish to renegotiate the price, (2) her plan to use her output in her own new factory, and (3) a new government regulation that raised her costs. She kept producing and sold her goods to other buyers. Was Carla's suspension justified? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. Grounds (1) and (2) are not among the stipulated causes of suspension. As for (3), even if it were a fortuitous event, it did not make performance impossible, since Carla kept producing and selling to others.",
+        "legalBasis": "A demand for renegotiation of prices and the establishment of one's own plant \"are not among the various causes of suspension enumerated\" in the contract, so suspension on those grounds \"is not justified.\" Even assuming government restrictions and similar events \"have the nature of fortuitous events,\" they did not cause \"such a reduction in ... production ... that made it impossible for it to comply\"; \"the fortuitous event must be of such a character as to render it impossible for the obligor to fulfill his obligation in a normal manner.\"",
+        "application": "Carla's own business plans are not contractual grounds, and her continued sales to others show she could have delivered to Dino.",
+        "conclusion": "The suspension was a breach. **Bar trap:** a fortuitous event excuses only when it makes normal performance impossible, not merely more costly."
+      },
+      "keyPoints": [
+        "Suspension only for the causes the contract lists",
+        "Price renegotiation and own plant are not listed causes",
+        "A fortuitous event must make normal fulfillment impossible",
+        "Continued production and sales to others show no impossibility"
+      ],
+      "caseIds": [
+        "case-0061"
+      ],
+      "source": {
+        "caseTitle": "General Enterprises, Inc. v. Lianga Bay Logging Co., Inc.",
+        "grNumber": "G.R. No. L-18487",
+        "url": "https://lawphil.net/judjuris/juri1964/aug1964/gr_l-18487_1964.html",
+        "part": "Decision, discussion of the second issue (suspension and fortuitous events)",
+        "excerpt": "Even assuming that the restrictions imposed by the government on barter, the breakdown of machineries and the inability to secure spare parts, replacements and wire ropes, as well as the passage of the Margin Law, have the nature of fortuitous events, yet it cannot be said that they had caused such a reduction in appellant's production of logs that made it impossible for it to comply wholly, or even partly, with its commitment with appellee. The rule is that even the happening of a fortuitous event in itself does not necessarily extinguish an obligation for, as this Court has said, the fortuitous event must be of such a character as to render it impossible for the obligor to fulfill his obligation in a normal manner (Lassam v. Smith, 45 Phil. 990). … One of the causes for the suspension of the agreement alleged by appellant was the demand for the renegotiation of prices provided in paragraph 2 of the agreement. Another reason advanced is the establishment of a veneer plant for the purpose of increasing the log production. But these two matters are not among the various causes of suspension enumerated in paragraph 8 of the agreement. The suspension, therefore, of the contract on these causes is not justified."
+      }
+    },
+    {
+      "id": "q-0884",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Eli breached a distribution contract and, to justify it, his manager made misstatements and half-truths in letters to the distributor. The trial court awarded the distributor ₱100,000 in exemplary damages and attorney's fees. Eli argues that exemplary damages should be deleted altogether. Should they be deleted, reduced or kept? Explain.",
+      "suggestedAnswer": {
+        "answer": "They may be reduced. Exemplary damages in contracts require wanton, fraudulent, reckless, oppressive or malevolent conduct; misstatements and half-truths, though reprehensible, are not a wanton or malevolent perversion of the truth deserving a heavy penalty, so the award should be mitigated. Attorney's fees may stand under Article 2208 if justified by the importance of the case and the effort involved.",
+        "legalBasis": "An award of exemplary damages was found \"somewhat excessive\" where the defendant \"has not acted in a wanton, oppressive or malevolent manner to deserve such a heavy punishment within the purview of the law (Article 2232, new Civil Code).\" Misstatements or half-truths used to justify desisting from the contract, \"[w]hile ... reprehensible, [are] not a wanton or malevolent perversion of the truth. Hence, the award should be mitigated.\" Attorney's fees were upheld \"considering the importance of this litigation and the amount of time and effort therein involved ... under Article 2208.\"",
+        "application": "Eli's manager's conduct was blameworthy but not malevolent, so a reduced exemplary award (in the decision, ₱100,000 was cut to ₱50,000) fits better than deletion or the full amount.",
+        "conclusion": "Reduce, not delete. **Bar trap:** reprehensible conduct short of wanton or malevolent conduct may still support a mitigated exemplary award; do not jump to all-or-nothing."
+      },
+      "keyPoints": [
+        "Exemplary damages in contracts: wanton, fraudulent, reckless, oppressive or malevolent conduct (Art. 2232)",
+        "Misstatements and half-truths: reprehensible but not malevolent",
+        "The award is mitigated, not necessarily deleted",
+        "Attorney's fees may stand under Art. 2208"
+      ],
+      "caseIds": [
+        "case-0061"
+      ],
+      "source": {
+        "caseTitle": "General Enterprises, Inc. v. Lianga Bay Logging Co., Inc.",
+        "grNumber": "G.R. No. L-18487",
+        "url": "https://lawphil.net/judjuris/juri1964/aug1964/gr_l-18487_1964.html",
+        "part": "Decision, discussion of the sixth issue (exemplary damages and attorney's fees)",
+        "excerpt": "We believes however, that the amount of P100,000.00 awarded to appellee as exemplary damages is somewhat excessive it appearing that appellant is suspending the operation of the contract has not acted in a wanton, oppressive or malevolent manner to deserve such a heavy punishment within the purview of the law (Article 2232, new Civil Code). The most that can be said is that appellant, to suit its purpose, has availed to certain misstatements or half truths as reflected in the declarations of Mr. Dempsey, one of its high officials, in an attempt to justify its desistance from the contract. While this is reprehensible, it is not a wanton or malevolent perversion of the truth. Hence, the award should be mitigated and in our opinion the amount of P50,000.00 is a reasonable exemplary penalty. We also find reasonable the amount awarded by the court a quo as attorney's fees considering the importance of this litigation and the amount of time and effort therein involved. This is justified under Article 2208 of the Civil Code."
+      }
     }
   ]
 }
