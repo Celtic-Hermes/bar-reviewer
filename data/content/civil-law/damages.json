@@ -18145,6 +18145,100 @@
         "part": "Decision, discussion of the award of damages (exemplary damages) and the effect on the family",
         "excerpt": "The Court can perhaps take judicial notice that the sense of kinship runs deeply in a typical Filipino family, such that the whole family usually suffers or rejoices at the misfortune or good fortune, as the case may be, of any of its member. Accordingly, any attempt to dishonor or besmirch the name and reputation of the head of the family, as here, invariably puts the other members in a state of disrepute, distress, or anxiety. This reality adds an imperative dimension to the award of moral damages to the defamed party. The award of exemplary damages, however, cannot be justified. Under Art. 2230 of the Civil Code, \"In criminal offenses, exemplary damages as a part of the civil liability may be imposed when the crime was committed with one or more aggravating circumstances. Such damages are separate and distinct from fines and shall be paid to the offended party.\" No aggravating circumstances accompanied the commission of the libelous acts; thus, no exemplary damages can be awarded."
       }
+    },
+    {
+      "id": "q-1158",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Ana tripped into an uncovered drainage hole on a national highway passing through Town X; the town's engineer directs the crew that maintains that stretch of road and its drainage. Ben fell into a hole on a private subdivision road in the same town; the road is owned and maintained solely by the subdivision's association, and the town exercises neither control nor supervision over it. Both sue Town X under Article 2189. May each recover from the town? Explain.",
+      "suggestedAnswer": {
+        "answer": "Ana may; Ben may not. Under Article 2189, provinces, cities and municipalities are liable for death or injuries caused by the defective condition of roads, streets and other public works under their control or supervision. It is not necessary that the road belong to the town; it is enough that control or supervision is exercised over it. Town X supervises the national highway stretch, but has neither control nor supervision over the private subdivision road.",
+        "legalBasis": "Article 2189, as applied in Guilatco v. City of Dagupan: \"Provinces, cities and municipalities shall be liable for damages for the death of, or injuries suffered by, any person by reason of the defective condition of roads, streets, bridges, public buildings, and other public works under their control or supervision. It is not even necessary for the defective road or street to belong to the province, city or municipality for liability to attach. The article only requires that either control or supervision is exercised over the defective road or street.\"",
+        "application": "The town engineer supervises the highway's maintenance; the subdivision road is outside the town's control or supervision.",
+        "conclusion": "Town X is liable to Ana, not to Ben. **Bar trap:** ownership is not the test; control or supervision is."
+      },
+      "keyPoints": [
+        "Art. 2189: defective roads and public works under control or supervision",
+        "Ownership of the road not required",
+        "Either control or supervision suffices",
+        "No control or supervision: no Art. 2189 liability"
+      ],
+      "caseIds": [
+        "case-0072"
+      ],
+      "source": {
+        "caseTitle": "Guilatco v. City of Dagupan, et al.",
+        "grNumber": "G.R. No. 61516",
+        "url": "https://lawphil.net/judjuris/juri1989/mar1989/gr_61516_1989.html",
+        "part": "Decision, discussion of the city's liability under Article 2189",
+        "excerpt": "Article 2189. Provinces, cities and municipalities shall be liable for damages for the death of, or injuries suffered by, any person by reason of the defective condition of roads, streets, bridges, public buildings, and other public works under their control or supervision. It is not even necessary for the defective road or street to belong to the province, city or municipality for liability to attach. The article only requires that either control or supervision is exercised over the defective road or street. … The express provision in the charter holding the city not liable for damages or injuries sustained by persons or property due to the failure of any city officer to enforce the provisions of the charter, can not be used to exempt the city, as in the case at bar. The charter only lays down general rules regulating the liability of the city. On the other hand article 2189 applies in particular to the liability arising from \"defective streets, public buildings and other public works.\""
+      }
+    },
+    {
+      "id": "q-1159",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Carla was injured by a city's negligence. She presented receipts for ₱12,480.50 in medical expenses and testified that she spent \"around ₱20,000\" in all, but had lost the other receipts. The trial court awarded ₱20,000 as actual damages \"to round things off.\" Separately, Dino's receipts showed exactly ₱20,000. What actual damages may each recover? Reason briefly.",
+      "suggestedAnswer": {
+        "answer": "Carla may recover only the ₱12,480.50 she proved; Dino may recover his proved ₱20,000. In determining actual damages, the court cannot rely on speculation, conjecture or guesswork as to the amount; it should not round off the proven amount, and without actual proof of loss the award becomes erroneous.",
+        "legalBasis": "In Guilatco v. City of Dagupan, \"the actual damages awarded to the petitioner in the amount of P 10,000.00 should be reduced to the proven expenses of P 8,053.65 only. The trial court should not have rounded off the amount. In determining actual damages, the court can not rely on 'speculation, conjecture or guess work' as to the amount. Without the actual proof of loss, the award of actual damages becomes erroneous.\"",
+        "application": "Carla's receipts prove only ₱12,480.50; the rest is her estimate.",
+        "conclusion": "Carla: ₱12,480.50; Dino: ₱20,000. **Bar trap:** a court may not round up actual damages beyond what is proved."
+      },
+      "keyPoints": [
+        "Actual damages limited to the amount proved",
+        "No rounding off",
+        "No speculation, conjecture or guesswork",
+        "Unproved amounts are not actual damages"
+      ],
+      "caseIds": [
+        "case-0072"
+      ],
+      "source": {
+        "caseTitle": "Guilatco v. City of Dagupan, et al.",
+        "grNumber": "G.R. No. 61516",
+        "url": "https://lawphil.net/judjuris/juri1989/mar1989/gr_61516_1989.html",
+        "part": "Decision, discussion of actual and exemplary damages",
+        "excerpt": "Be all that as it may, the actual damages awarded to the petitioner in the amount of P 10,000.00 should be reduced to the proven expenses of P 8,053.65 only. The trial court should not have rounded off the amount. In determining actual damages, the court can not rely on \"speculation, conjecture or guess work\" as to the amount. Without the actual proof of loss, the award of actual damages becomes erroneous. … As for the award of exemplary damages, the trial court correctly pointed out the basis: To serve as an example for the public good, it is high time that the Court, through this case, should serve warning to the city or cities concerned to be more conscious of their duty and responsibility to their constituents, especially when they are engaged in construction work or when there are manholes on their sidewalks or streets which are uncovered, to immediately cover the same, in order to minimize or prevent accidents to the poor pedestrians."
+      }
+    },
+    {
+      "id": "q-1160",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Two pedestrians fell into an uncovered manhole that a city failed to cover. (a) Eva fractured her leg, was disabled for a year during treatment, and recovered fully; she proved her pain and her depression during that year. (b) Felix fell in the same hole but suffered only a bruise and presented no evidence of any physical suffering or mental anguish. The trial court awarded each ₱150,000 moral damages. Applying Guilatco v. City of Dagupan, how should the awards be treated? Explain.",
+      "suggestedAnswer": {
+        "answer": "Eva's award should be reduced, not deleted: moral damages may be awarded without proof of pecuniary loss, and her physical suffering and mental anguish were proven, but ₱150,000 is excessive where the handicap was not permanent and disabled her only during a year of treatment; the moderating hand of the law is called for. Felix's award should be deleted: moral damages compensate actual injury, and there must be satisfactory proof of the factual basis for them, which he did not give.",
+        "legalBasis": "In Guilatco v. City of Dagupan, \"moral damages may be awarded even without proof of pecuniary loss,\" but the Court listed considerations, including that \"there must be compensatory or actual damages as satisfactory proof of the factual basis for damages.\" \"[T]he award of moral damages at P 150,000.00 is excessive. Her handicap was not permanent and disabled her only during her treatment which lasted for one year. Though evidence of moral loss and anguish existed to warrant the award of damages, the moderating hand of the law is called for.\"",
+        "application": "Eva proved suffering of limited duration; Felix proved none.",
+        "conclusion": "Reduce Eva's award; delete Felix's. **Bar trap:** proving suffering earns moral damages, but its temporary nature limits the amount."
+      },
+      "keyPoints": [
+        "Moral damages need no proof of pecuniary loss",
+        "Satisfactory proof of the factual basis required",
+        "Temporary handicap: excessive award reduced",
+        "The moderating hand of the law",
+        "No proof of suffering: no moral damages"
+      ],
+      "caseIds": [
+        "case-0072"
+      ],
+      "source": {
+        "caseTitle": "Guilatco v. City of Dagupan, et al.",
+        "grNumber": "G.R. No. 61516",
+        "url": "https://lawphil.net/judjuris/juri1989/mar1989/gr_61516_1989.html",
+        "part": "Decision, discussion of moral damages (the considerations and the amount)",
+        "excerpt": "On the other hand, moral damages may be awarded even without proof of pecuniary loss, inasmuch as the determination of the amount is discretionary on the court.Though incapable of pecuniary estimation, moral damages are in the nature of an award to compensate the claimant for actual injury suffered but which for some reason can not be proven. However, in awarding moral damages, the following should be taken into consideration: (1) First, the proximate cause of the injury must be the claimee's acts. (2) Second, there must be compensatory or actual damages as satisfactory proof of the factual basis for damages. (3) Third, the award of moral damages must be predicated on any of the cases enumerated in the Civil Code. In the case at bar, the physical suffering and mental anguish suffered by the petitioner were proven. … Nevertheless the award of moral damages at P 150,000.00 is excessive. Her handicap was not permanent and disabled her only during her treatment which lasted for one year. Though evidence of moral loss and anguish existed to warrant the award of damages, the moderating hand of the law is called for."
+      }
     }
   ]
 }
