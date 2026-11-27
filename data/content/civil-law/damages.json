@@ -9520,6 +9520,100 @@
         "part": "Decision, discussion of the sixth issue (exemplary damages and attorney's fees)",
         "excerpt": "We believes however, that the amount of P100,000.00 awarded to appellee as exemplary damages is somewhat excessive it appearing that appellant is suspending the operation of the contract has not acted in a wanton, oppressive or malevolent manner to deserve such a heavy punishment within the purview of the law (Article 2232, new Civil Code). The most that can be said is that appellant, to suit its purpose, has availed to certain misstatements or half truths as reflected in the declarations of Mr. Dempsey, one of its high officials, in an attempt to justify its desistance from the contract. While this is reprehensible, it is not a wanton or malevolent perversion of the truth. Hence, the award should be mitigated and in our opinion the amount of P50,000.00 is a reasonable exemplary penalty. We also find reasonable the amount awarded by the court a quo as attorney's fees considering the importance of this litigation and the amount of time and effort therein involved. This is justified under Article 2208 of the Civil Code."
       }
+    },
+    {
+      "id": "q-0885",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "A delivery van crashed into the front wall of Ana's bakery. To prove her actual damages, Ana presented (1) a contractor's written estimate of ₱200,000 (the contractor did not testify), (2) her own testimony that the damage was \"very serious,\" and (3) an official receipt of ₱40,000 for repairs. The van owner's engineer testified that the repairs would cost ₱70,000. How much may Ana recover as actual damages? Explain.",
+      "suggestedAnswer": {
+        "answer": "Not the ₱200,000 estimate. Actual damages are not presumed and must be proved with a reasonable degree of certainty on competent evidence; an unsupported estimate and a claimant's self-interested testimony do not suffice. The award must rest on competent proof such as the receipt, or the amount established by the evidence (as when the defendant's own evidence fixes the cost).",
+        "legalBasis": "\"Actual damages are not presumed. The claimant must prove the actual amount of loss with a reasonable degree of certainty premised upon competent proof and on the best evidence obtainable. Specific facts that could afford a basis for measuring whatever compensatory or actual damages are borne must be pointed out.\" Bare testimonial assertions \"should be admitted with extreme caution\" and \"buttressed by independent evidence,\" and \"[a]n estimate of the damage cost will not suffice.\" In the decision, the Court awarded the amount shown by the defendants' own evidence.",
+        "application": "The estimate is unsupported and Ana's testimony is self-interested; the receipt is competent proof, and the van owner's own engineer fixed the cost at ₱70,000, which, as in the decision, can serve as the measure.",
+        "conclusion": "The estimate fails; recovery rests on competent proof (here, up to the ₱70,000 shown by the defendant's own evidence). **Bar trap:** an unexplained or round figure is not proof; point to specific evidence."
+      },
+      "keyPoints": [
+        "Actual damages are not presumed",
+        "Prove the actual loss with reasonable certainty on competent proof and the best evidence",
+        "Self-interested testimony: admit with extreme caution",
+        "An estimate of the damage cost will not suffice",
+        "The defendant's own evidence may fix the amount"
+      ],
+      "caseIds": [
+        "case-0062"
+      ],
+      "source": {
+        "caseTitle": "Marikina Auto Line Transport Corporation, et al. v. People, et al.",
+        "grNumber": "G.R. No. 152040",
+        "url": "https://lawphil.net/judjuris/juri2006/mar2006/gr_152040_2006.html",
+        "part": "Decision, discussion of the second issue (actual damages)",
+        "excerpt": "The burden of proof is on the party who would be defeated if no evidence would be presented on either side. The burden is to establish one’s case by a preponderance of evidence which means that the evidence, as a whole, adduced by one side, is superior to that of the other. Actual damages are not presumed. The claimant must prove the actual amount of loss with a reasonable degree of certainty premised upon competent proof and on the best evidence obtainable. Specific facts that could afford a basis for measuring whatever compensatory or actual damages are borne must be pointed out. Actual damages cannot be anchored on mere surmises, speculations or conjectures. … While claimants’ bare testimonial assertions in support of their claims for damages should not be discarded altogether, however, the same should be admitted with extreme caution. Their testimonies should be viewed in light of claimants’ self-interest, hence, should not be taken as gospel truth. Such assertion should be buttressed by independent evidence. … An estimate of the damage cost will not suffice: … We note, however, that petitioners adduced evidence that, in their view, the cost of the damage to the terrace of private respondent would amount to P55,000.00. Accordingly, private respondent is entitled to P55,000.00 actual damages."
+      }
+    },
+    {
+      "id": "q-0886",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Ben, a bus driver, was speeding on a busy street when a jeepney cut into his lane; he swerved and hit a house. Charged with reckless imprudence, he invokes the sudden emergency rule. In his counter-affidavit he said the jeepney ahead stopped suddenly; in court he said a jeepney from a side street cut into his lane. The heavy damage to the house shows a strong impact. Will the sudden emergency rule excuse him? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. The sudden emergency rule does not apply when the emergency was brought about by the driver's own negligence; and the one invoking it must prove it. Ben was speeding, his accounts conflict, and he was violating traffic rules, so he is presumed negligent.",
+        "legalBasis": "\"[O]ne who suddenly finds himself in a place of danger, and is required to act without time to consider the best means that may be adopted to avoid the impending danger, is not guilty of negligence if he fails to adopt what subsequently and upon reflection may appear to have been a better method unless the emergency in which he finds himself is brought about by his own negligence.\" It was the defense's \"burden ... to prove\" the emergency. Under Article 2185, \"unless there is proof to the contrary, it is presumed that a person driving a motor vehicle has been negligent, if at the time of mishap, he was violating any traffic regulation.\"",
+        "application": "Had Ben not been speeding, he could have stopped; his inconsistent statements also weaken his claim of an emergency.",
+        "conclusion": "The rule does not excuse him. **Bar trap:** the sudden emergency rule protects only one who did not create the emergency through his own negligence."
+      },
+      "keyPoints": [
+        "Sudden emergency rule: no negligence in choosing a means in a sudden danger",
+        "Not if the emergency was caused by one's own negligence",
+        "The one invoking it bears the burden",
+        "Art. 2185: presumption of negligence when violating a traffic regulation"
+      ],
+      "caseIds": [
+        "case-0062"
+      ],
+      "source": {
+        "caseTitle": "Marikina Auto Line Transport Corporation, et al. v. People, et al.",
+        "grNumber": "G.R. No. 152040",
+        "url": "https://lawphil.net/judjuris/juri2006/mar2006/gr_152040_2006.html",
+        "part": "Decision, discussion of the first issue (sudden emergency rule)",
+        "excerpt": "It was the burden of petitioners herein to prove petitioner Suelto’s defense that he acted on an emergency, that is, he had to swerve the bus to the right to avoid colliding with a passenger jeep coming from EDSA that had overtaken another vehicle and intruded into the lane of the bus. The sudden emergency rule was enunciated by this Court in Gan v. Court of Appeals, thus: [O]ne who suddenly finds himself in a place of danger, and is required to act without time to consider the best means that may be adopted to avoid the impending danger, is not guilty of negligence if he fails to adopt what subsequently and upon reflection may appear to have been a better method unless the emergency in which he finds himself is brought about by his own negligence. … In relation thereto, Article 2185 of the New Civil Code provides that \"unless there is proof to the contrary, it is presumed that a person driving a motor vehicle has been negligent, if at the time of mishap, he was violating any traffic regulation.\" By his own admission, petitioner Suelto violated the Land Transportation and Traffic Code when he suddenly swerved the bus to the right, thereby causing damage to the property of private respondent."
+      }
+    },
+    {
+      "id": "q-0887",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Carla, a truck driver, was convicted of reckless imprudence that resulted only in damage to a neighbor's fence worth ₱30,000; no one was hurt. The trial court sentenced her to one year in prison. Is the penalty correct? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. When reckless imprudence results only in damage to the property of another, the third paragraph of Article 365 of the Revised Penal Code calls for a fine, ranging from an amount equal to the value of the damage to three times that value, but not less than ₱25, not imprisonment.",
+        "legalBasis": "\"[U]nder the third paragraph of Article 365 of the Revised Penal Code, the offender must be sentenced to pay a fine when the execution of the act shall have only resulted in damage to property.\" The provision reads: \"When the execution of the act covered by this article shall have only resulted in damage to the property of another, the offender shall be punished by a fine ranging from an amount equal to the value of said damages to three times such value, but which shall in no case be less than 25 pesos.\"",
+        "application": "Only property was damaged, worth ₱30,000, so Carla should be fined between ₱30,000 and ₱90,000, not imprisoned.",
+        "conclusion": "Replace the prison term with a fine. **Bar trap:** the fine is measured by the value of the damage (once to three times); no prison term when only property was damaged."
+      },
+      "keyPoints": [
+        "Art. 365, third paragraph: damage to property only",
+        "Penalty: a fine, not imprisonment",
+        "From the value of the damage to three times that value",
+        "Never less than ₱25"
+      ],
+      "caseIds": [
+        "case-0062"
+      ],
+      "source": {
+        "caseTitle": "Marikina Auto Line Transport Corporation, et al. v. People, et al.",
+        "grNumber": "G.R. No. 152040",
+        "url": "https://lawphil.net/judjuris/juri2006/mar2006/gr_152040_2006.html",
+        "part": "Decision, discussion of the third issue (the penalty)",
+        "excerpt": "We also agree with petitioner Suelto’s contention that the trial court erred in sentencing him to suffer a straight penalty of one (1) year. This is so because under the third paragraph of Article 365 of the Revised Penal Code, the offender must be sentenced to pay a fine when the execution of the act shall have only resulted in damage to property."
+      }
     }
   ]
 }
