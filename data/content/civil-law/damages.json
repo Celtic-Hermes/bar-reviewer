@@ -721,6 +721,21 @@
       "ruling": "The conviction for murder was affirmed with modification. Treachery exists even if the attack is frontal, when it is sudden and unexpected and gives the unarmed victim no opportunity to defend himself; here he was struck from behind and shot before he could react. On damages, compensation for lost income requires due proof; for lost income due to death there must be unbiased proof of the deceased's average income, and the widow's self-serving statement was not enough. Funeral expenses likewise must be shown with the best evidence obtainable; only expenses supported by receipts and actually incurred are allowed. Both awards were deleted. In their place the heirs were awarded ₱15,000 temperate damages under Article 2224, since some pecuniary loss was suffered but its amount could not be proved with certainty. The ₱50,000 civil indemnity, which requires no proof other than the fact of death and the accused's responsibility (Art. 2206), and the ₱60,000 moral damages for the family's pain and anguish were sustained.",
       "keyDoctrine": "Actual damages for lost earnings or funeral expenses require proof: unbiased proof of the deceased's average income (a self-serving statement is not enough) and receipts for expenses actually incurred. When such proof fails but some pecuniary loss was clearly suffered, temperate damages may be awarded in lieu of them (Art. 2224). Civil indemnity for death requires no proof beyond the fact of death and the accused's responsibility (Art. 2206). Treachery may exist even in a frontal attack if it is sudden and unexpected and the victim has no chance to defend himself.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2001/oct2001/gr_130415_2001.html"
+    },
+    {
+      "id": "case-0096",
+      "status": "draft",
+      "name": "Premiere Development Bank v. Court of Appeals, et al.",
+      "grNumber": "G.R. No. 159352",
+      "year": 2004,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "facts": "Panacor, a new Colgate distributor, needed capital. Premiere Bank approved a ₱4.1 million credit line for it through its affiliate Arizona, but then released only ₱2.7 million. Panacor arranged a take-out loan with Iba-Finance, which paid off Arizona's full loan balance of ₱6.2 million to Premiere Bank on the understanding that the bank would release the owner's duplicate title and the mortgage cancellation, so the remaining ₱2.5 million could be released to Panacor. Despite payment, Premiere Bank refused, citing a policy against releasing mortgage documents while other loans were unpaid. Without the funds, Panacor could not meet its targets, and Colgate terminated the distributorship. Panacor sued. The trial court awarded ₱4,520,000 actual damages (Panacor's claimed expenses), exemplary damages and attorney's fees; the Court of Appeals reduced exemplary damages to ₱500,000. Meanwhile Premiere Bank and Iba-Finance settled by compromise.",
+      "issue": "(1) Did the compromise with Iba-Finance extinguish Premiere Bank's liability to Panacor? (2) Did the bank act in bad faith? (3) Was the award of ₱4,520,000 actual damages supported by evidence?",
+      "ruling": "The petition was denied but the award modified. (1) Panacor and Iba-Finance are distinct juridical entities each damaged by the bank's fault; the compromise satisfied only Iba-Finance's claims. (2) The bank arbitrarily downgraded the credit line in breach of the agreement, which has the force of law, and its refusal to release the title after accepting full payment was marked by bad faith; it was also bound by its officer's apparent authority and its own failure to disaffirm. (3) But actual damages require competent proof of the actual amount of loss, credence being given only to claims supported by receipts; damages cannot be presumed. Panacor's claim rested on one officer's testimony and an unidentified private list, so the ₱4,520,000 was deleted. Still, the bank's wrongful acts plainly hurt Panacor's commercial credit and caused the loss of its business. Since these losses are not susceptible of pecuniary estimation, and under Article 2216 no proof of pecuniary loss is necessary for temperate damages, ₱200,000 temperate damages were awarded. Exemplary damages of ₱500,000 and attorney's fees were affirmed.",
+      "keyDoctrine": "Actual damages require competent proof of the actual amount of loss, ordinarily receipts; courts cannot rely on bare assertions, speculation or guesswork, and damages cannot be presumed. When some pecuniary loss is clearly suffered but cannot be proved with certainty, such as injury to commercial credit or loss of business opportunity, temperate damages may be awarded (Art. 2224); under Article 2216, no proof of pecuniary loss is necessary for moral, nominal, temperate, liquidated or exemplary damages, whose assessment, except liquidated damages, is left to the court's discretion. Contracts have the force of law and must be performed in good faith.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2004/apr2004/gr_159352_2004.html"
     }
   ],
   "questions": [
@@ -14641,6 +14656,275 @@
         "url": "https://lawphil.net/judjuris/juri2001/oct2001/gr_130415_2001.html",
         "part": "Decision, on civil indemnity",
         "excerpt": "We, however, sustain the award of P50,000.00 as civil indemnity (ex delicto) which requires no proof other than the fact of death of the victim and assailant's responsibility therefor."
+      }
+    },
+    {
+      "id": "q-1047",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "A distributor that lost its distributorship because of a bank's bad faith claimed ₱4.5 million in actual damages for training, leasehold, vehicles and office equipment. Its only evidence was the testimony of its vice president and an itemized list prepared by the company that no witness identified. No receipts were presented. Should actual damages be awarded? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. To justify an award of actual damages, there must be competent proof of the actual amount of loss; credence can be given only to claims duly supported by receipts. Damages cannot be presumed, and the court must point out specific facts that afford a basis for measuring them. A claim based only on bare assertion without independent evidence cannot stand; the court cannot rely on mere assertions, speculation, conjecture or guesswork.",
+        "legalBasis": "In Premiere Development Bank v. Court of Appeals, \"[t]o justify an award for actual damages, there must be competent proof of the actual amount of loss. Credence can be given only to claims, which are duly supported by receipts.\" \"[D]amages cannot be presumed and courts, in making an award, must point out specific facts that can afford a basis for measuring whatever compensatory or actual damages are borne.\" Panacor's claim, proved only by one officer's testimony and an unidentified private writing, \"should be admitted with extreme caution since it is only based on bare assertion without support from independent evidence.\"",
+        "application": "The distributor offered no receipts and no witness to verify its list.",
+        "conclusion": "The ₱4,520,000 actual damages must be deleted. **Bar trap:** proving that the defendant acted in bad faith does not prove the amount of actual loss."
+      },
+      "keyPoints": [
+        "Competent proof of the actual amount of loss",
+        "Claims credited only when supported by receipts",
+        "Damages cannot be presumed",
+        "Court must point to specific facts for measuring them",
+        "Bare assertions, speculation or guesswork are not enough"
+      ],
+      "caseIds": [
+        "case-0096"
+      ],
+      "source": {
+        "caseTitle": "Premiere Development Bank v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 159352",
+        "url": "https://lawphil.net/judjuris/juri2004/apr2004/gr_159352_2004.html",
+        "part": "Decision, on the actual damages claimed",
+        "excerpt": "To justify an award for actual damages, there must be competent proof of the actual amount of loss. Credence can be given only to claims, which are duly supported by receipts. The burden of proof is on the party who will be defeated if no evidence is presented on either side. He must establish his case by a preponderance of evidence which means that the evidence, as a whole, adduced by one side is superior to that of the other. In other words, damages cannot be presumed and courts, in making an award, must point out specific facts that can afford a basis for measuring whatever compensatory or actual damages are borne. … Hence, the claim for actual damages should be admitted with extreme caution since it is only based on bare assertion without support from independent evidence. Premiere's failure to prove actual expenditure consequently conduces to a failure of its claim. In determining actual damages, the court cannot rely on mere assertions, speculations, conjectures or guesswork but must depend on competent proof and on the best evidence obtainable regarding the actual amount of loss."
+      }
+    },
+    {
+      "id": "q-1048",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "In the same case, after deleting the actual damages, may the court still award the distributor something for the harm to its business? What kind of damages, on what basis, and must the distributor prove its pecuniary loss? Explain.",
+      "suggestedAnswer": {
+        "answer": "Yes, temperate or moderate damages. When the court finds that some pecuniary loss has been suffered but its amount cannot, from the nature of the case, be proved with certainty, temperate damages may be recovered. Injury to commercial credit or to the goodwill of a business is a classic example. Under Article 2216, no proof of pecuniary loss is necessary for temperate damages; their assessment is left to the court's discretion.",
+        "legalBasis": "In Premiere Development Bank v. CA, \"[e]ven if not recoverable as compensatory damages, Panacor may still be awarded damages in the concept of temperate or moderate damages.\" Quoting the Code Commission, \"injury to ones commercial credit or to the goodwill of a business firm is often hard to show with certainty in terms of money ... The judge should be empowered to calculate moderate damages.\" The bank's wrongful acts \"adversely affected ... the commercial credit of Panacor ... and the consequent loss of business opportunity. Since these losses are not susceptible to pecuniary estimation, temperate damages may be awarded.\" Article 2216: \"No proof of pecuniary loss is necessary in order that moral, nominal, temperate, liquidated or exemplary damages may be adjudicated.\"",
+        "application": "The bank's acts plainly damaged Panacor's commercial credit and caused its business to stop, but the amount could not be measured.",
+        "conclusion": "₱200,000 temperate damages. **Bar trap:** Article 2216 dispenses with proof of the amount for temperate damages; the court must still be convinced some pecuniary loss happened."
+      },
+      "keyPoints": [
+        "Some pecuniary loss, amount not provable with certainty (Art. 2224)",
+        "Injury to commercial credit or goodwill is a classic example",
+        "Loss of business opportunity",
+        "Art. 2216: no proof of pecuniary loss needed for temperate damages",
+        "Assessment left to the court's discretion"
+      ],
+      "caseIds": [
+        "case-0096"
+      ],
+      "source": {
+        "caseTitle": "Premiere Development Bank v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 159352",
+        "url": "https://lawphil.net/judjuris/juri2004/apr2004/gr_159352_2004.html",
+        "part": "Decision, on temperate damages (Articles 2224 and 2216)",
+        "excerpt": "Even if not recoverable as compensatory damages, Panacor may still be awarded damages in the concept of temperate or moderate damages. When the court finds that some pecuniary loss has been suffered but the amount cannot, from the nature of the case, be proved with certainty, temperate damages may be recovered. Temperate damages may be allowed in cases where from the nature of the case, definite proof of pecuniary loss cannot be adduced, although the court is convinced that the aggrieved party suffered some pecuniary loss. … It is obvious that the wrongful acts of Premiere Bank adversely affected, in one way or another, the commercial credit of Panacor, greatly contributed to, if not, decisively caused the premature stoppage of its business operations and the consequent loss of business opportunity. Since these losses are not susceptible to pecuniary estimation, temperate damages may be awarded. Article 2216 of the Civil Code: No proof of pecuniary loss is necessary in order that moral, nominal, temperate, liquidated or exemplary damages may be adjudicated. The assessment of such damages, except liquidated ones, is left to the discretion of the Court, according to the circumstances of each case."
+      }
+    },
+    {
+      "id": "q-1049",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "A bank refused to release a mortgaged title even after a finance company paid off the borrower's whole loan, so the finance company withheld a second loan to the borrower's affiliate, which then lost its business. The bank later settled with the finance company by compromise. (a) Does the compromise extinguish the bank's liability to the affiliate? (b) Was the bank's refusal, justified by its \"policy\" of not releasing documents until all loans are paid, in good faith? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) No. The finance company and the affiliate are separate and distinct juridical entities, each damaged by the bank's fault; the compromise satisfied only the finance company's claims, and the bank remains liable to the affiliate. (b) No. Having accepted payment on its own final statement of account, the bank could not disown that statement to the prejudice of those who relied on it; its refusal, knowing time was of the essence, was marked by bad faith.",
+        "legalBasis": "In Premiere Development Bank v. CA, \"[b]oth Iba-Finance and Panacor, which are two separate and distinct juridical entities, suffered damages due to the fault of Premiere Bank. Hence, it should be held liable to each of them. While the compromise agreement may have resulted in the satisfaction of Iba-Finance's legal claims, Premiere Bank's liability to Panacor remains.\" On the policy excuse, the Final Statement of Account \"was the full payment of Arizona's loan obligations. Equity demands that a party cannot disown it previous declaration to the prejudice of the other party who relied reasonably and justifiably on such declaration.\" The bank's acts \"were truly marked by bad faith.\"",
+        "application": "The affiliate's claim is its own; and the bank accepted full payment yet refused to release the title.",
+        "conclusion": "(a) Liability to the affiliate remains; (b) bad faith. **Bar trap:** a compromise binds only its parties and their claims; it does not wipe out the debtor's liability to a distinct injured party."
+      },
+      "keyPoints": [
+        "Distinct juridical entities each damaged",
+        "Compromise satisfies only its parties' claims",
+        "Party cannot disown its own declaration relied on by others",
+        "Refusal after full payment marked by bad faith"
+      ],
+      "caseIds": [
+        "case-0096"
+      ],
+      "source": {
+        "caseTitle": "Premiere Development Bank v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 159352",
+        "url": "https://lawphil.net/judjuris/juri2004/apr2004/gr_159352_2004.html",
+        "part": "Decision, on the effect of the compromise agreement and on bad faith",
+        "excerpt": "It is error for Premiere Bank to assume that the compromise agreement it entered with Iba-Finance extinguished all direct and collateral incidents to the aborted take-out such that it also cancelled its obligations to Panacor. The unjustified refusal by Premiere Bank to release the mortgage document prompted Iba-Finance to withhold the release of the P2.5 million earmarked for Panacor which eventually terminated the distributorship agreement. Both Iba-Finance and Panacor, which are two separate and distinct juridical entities, suffered damages due to the fault of Premiere Bank. Hence, it should be held liable to each of them. While the compromise agreement may have resulted in the satisfaction of Iba-Finance's legal claims, Premiere Bank's liability to Panacor remains. … Neither can Premiere Bank rely on the puerile excuse that it was the bank's policy not to release the mortgage cancellation prior to the settlement of outstanding loan obligations. Needless to say, the Final Statement of Account dated October 17, 1995 showing in no uncertain terms Arizona's outstanding indebtedness, which was subsequently paid by Iba-Finance, was the full payment of Arizona's loan obligations. Equity demands that a party cannot disown it previous declaration to the prejudice of the other party who relied reasonably and justifiably on such declaration."
+      }
+    },
+    {
+      "id": "q-1050",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "Ana's catering business lost its biggest client after Ben's company, in breach of contract, failed to deliver the kitchen equipment it had promised. (a) Ana proves the breach and that the client left because of it, but she cannot put a peso figure on the lost goodwill and future orders. (b) Carla, another customer of Ben's company, also received her equipment late, but she proves no effect at all on her business. Who may recover temperate damages? Explain.",
+      "suggestedAnswer": {
+        "answer": "Ana may; Carla may not. Temperate damages may be awarded where, from the nature of the case, definite proof of pecuniary loss cannot be adduced although the court is convinced that the aggrieved party suffered some pecuniary loss; injury to commercial credit or goodwill and the loss of business opportunity are typical. Carla does not convince the court that she suffered any pecuniary loss.",
+        "legalBasis": "In Premiere Development Bank v. CA, \"[t]emperate damages may be allowed in cases where from the nature of the case, definite proof of pecuniary loss cannot be adduced, although the court is convinced that the aggrieved party suffered some pecuniary loss.\" The Court awarded temperate damages because the bank's acts \"adversely affected ... the commercial credit of Panacor ... and the consequent loss of business opportunity,\" losses \"not susceptible to pecuniary estimation.\"",
+        "application": "(a) Ana's loss of her client and goodwill is real but unmeasurable. (b) Carla shows nothing.",
+        "conclusion": "Temperate damages for Ana only. **Bar trap:** Article 2216 excuses proof of the amount, not proof that a loss happened."
+      },
+      "keyPoints": [
+        "Court must be convinced of some pecuniary loss",
+        "Definite proof of the amount cannot be adduced",
+        "Goodwill and lost business opportunity are typical",
+        "No loss shown: no temperate damages"
+      ],
+      "caseIds": [
+        "case-0096"
+      ],
+      "source": {
+        "caseTitle": "Premiere Development Bank v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 159352",
+        "url": "https://lawphil.net/judjuris/juri2004/apr2004/gr_159352_2004.html",
+        "part": "Decision, on temperate damages (Articles 2224 and 2216)",
+        "excerpt": "Temperate damages may be allowed in cases where from the nature of the case, definite proof of pecuniary loss cannot be adduced, although the court is convinced that the aggrieved party suffered some pecuniary loss. … It is obvious that the wrongful acts of Premiere Bank adversely affected, in one way or another, the commercial credit of Panacor, greatly contributed to, if not, decisively caused the premature stoppage of its business operations and the consequent loss of business opportunity. Since these losses are not susceptible to pecuniary estimation, temperate damages may be awarded."
+      }
+    },
+    {
+      "id": "q-1051",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "Dino's bank approved a ₱4 million credit line for Eva's company in a written agreement, then unilaterally released only ₱2.5 million, claiming its analyst later found Eva's business not viable, though it still granted a related loan. The bank also argued that the branch officer who signed and handled the deal was pressured and had no authority, although she had forwarded the agreement to the head office, which never disaffirmed it. Is the bank bound, and was its reduction of the credit line justified? Explain.",
+      "suggestedAnswer": {
+        "answer": "The bank is bound and the reduction was not justified. Obligations arising from contracts have the force of law and must be complied with in good faith; unilaterally and arbitrarily downgrading an agreed credit line breaches the contract, especially when the bank still granted the loan despite its supposed doubts. A corporation that clothes its officer with apparent authority is estopped to deny it as against third persons dealing in good faith; and one that knows of an officer's act but fails to promptly disaffirm it is deemed to have ratified it or is estopped to deny ratification.",
+        "legalBasis": "In Premiere Development Bank v. CA, the bank \"deviated from the terms of the credit line agreement when it unilaterally and arbitrarily downgraded the credit line,\" and \"obligations arising from contracts have the force of law between the contracting parties and should be complied with in good faith.\" \"If a private corporation intentionally or negligently clothes its officers or agents with apparent power to perform acts for it, the corporation will be estopped to deny that the apparent authority is real as to innocent third persons.\" \"If it acquiesces, with knowledge of the facts, or fails to disaffirm, ratification will be implied or else it will be estopped to deny ratification.\"",
+        "application": "The bank's head office knew of the agreement and did nothing, and it still lent despite its claimed doubts.",
+        "conclusion": "The bank is bound and in breach. **Bar trap:** a corporation's silence after learning of its officer's act works as ratification or estoppel."
+      },
+      "keyPoints": [
+        "Contracts have the force of law; good faith performance",
+        "Unilateral downgrade of an agreed credit line is a breach",
+        "Apparent authority estops the corporation",
+        "Failure to disaffirm promptly implies ratification"
+      ],
+      "caseIds": [
+        "case-0096"
+      ],
+      "source": {
+        "caseTitle": "Premiere Development Bank v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 159352",
+        "url": "https://lawphil.net/judjuris/juri2004/apr2004/gr_159352_2004.html",
+        "part": "Decision, on the credit line agreement and the officer's apparent authority",
+        "excerpt": "It is clear that Premiere Bank deviated from the terms of the credit line agreement when it unilaterally and arbitrarily downgraded the credit line of Panacor from P4.1 million to P2.7 million. Having entered into a well-defined contractual relationship, it is imperative that the parties should honor and adhere to their respective rights and obligations thereunder. Law and jurisprudence dictate that obligations arising from contracts have the force of law between the contracting parties and should be complied with in good faith. … If a private corporation intentionally or negligently clothes its officers or agents with apparent power to perform acts for it, the corporation will be estopped to deny that the apparent authority is real as to innocent third persons dealing in good faith with such officers or agents. … When the officers or agents of a corporation exceed their powers in entering into contracts or doing other acts, the corporation, when it has knowledge thereof, must promptly disaffirm the contract or act and allow the other party or third persons to act in the belief that it was authorized or has been ratified. If it acquiesces, with knowledge of the facts, or fails to disaffirm, ratification will be implied or else it will be estopped to deny ratification."
+      }
+    },
+    {
+      "id": "q-1052",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "Felix's company claims ₱1 million in actual damages for expenses on a project that collapsed because of Gina's breach. Its accountant testifies to the total and identifies the company's audited purchase records and official receipts for each expense. In a second case, Hugo claims ₱1 million based only on his own list of \"estimated losses.\" What are actual damages, and in which case may they be awarded? Explain.",
+      "suggestedAnswer": {
+        "answer": "Actual or compensatory damages are those awarded in satisfaction of, or in recompense for, loss or injury sustained; they are designed to repair the wrong and compensate the injury, not to impose a penalty. They require competent proof of the actual amount of loss, such as receipts, and the court must point to specific facts that afford a basis for measuring them. They may be awarded to Felix's company, whose receipts and records prove the amount; Hugo's own unverified list of estimates is bare assertion and will not support them.",
+        "legalBasis": "In Premiere Development Bank v. CA, \"[u]nder Article 2199 of the Civil Code, actual or compensatory damages are those awarded in satisfaction of, or in recompense for, loss or injury sustained. They proceed from a sense of natural justice and are designed to repair the wrong that has been done, to compensate for the injury inflicted and not to impose a penalty.\" \"Credence can be given only to claims, which are duly supported by receipts,\" and \"the court cannot rely on mere assertions, speculations, conjectures or guesswork.\"",
+        "application": "Felix's company proves each expense; Hugo offers only estimates.",
+        "conclusion": "Actual damages for Felix's company, not for Hugo. **Bar trap:** if Hugo convinces the court he truly suffered some loss, temperate damages may still be considered."
+      },
+      "keyPoints": [
+        "Art. 2199: recompense for loss or injury sustained",
+        "Designed to repair and compensate, not to penalize",
+        "Competent proof of the amount, such as receipts",
+        "Own estimates are bare assertions"
+      ],
+      "caseIds": [
+        "case-0096"
+      ],
+      "source": {
+        "caseTitle": "Premiere Development Bank v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 159352",
+        "url": "https://lawphil.net/judjuris/juri2004/apr2004/gr_159352_2004.html",
+        "part": "Decision, on the actual damages claimed (Article 2199)",
+        "excerpt": "Under Article 2199 of the Civil Code, actual or compensatory damages are those awarded in satisfaction of, or in recompense for, loss or injury sustained. They proceed from a sense of natural justice and are designed to repair the wrong that has been done, to compensate for the injury inflicted and not to impose a penalty."
+      }
+    },
+    {
+      "id": "q-1053",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "Under Article 2216 of the Civil Code, as quoted in Premiere Development Bank v. CA,",
+      "choices": {
+        "A": "proof of pecuniary loss is required for all kinds of damages.",
+        "B": "no proof of pecuniary loss is necessary in order that moral, nominal, temperate, liquidated or exemplary damages may be adjudicated.",
+        "C": "the assessment of liquidated damages is left to the discretion of the court.",
+        "D": "temperate damages may be awarded only with receipts."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** \"No proof of pecuniary loss is necessary in order that moral, nominal, temperate, liquidated or exemplary damages may be adjudicated.\" **A is wrong:** the article lists exceptions. **C is wrong:** the assessment of such damages is left to the court's discretion \"except liquidated ones.\" **D is wrong:** temperate damages exist precisely where the amount cannot be proved. **Bar trap:** actual damages are not in that list.",
+      "caseIds": [
+        "case-0096"
+      ],
+      "source": {
+        "caseTitle": "Premiere Development Bank v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 159352",
+        "url": "https://lawphil.net/judjuris/juri2004/apr2004/gr_159352_2004.html",
+        "part": "Decision, on temperate damages (Article 2216)",
+        "excerpt": "No proof of pecuniary loss is necessary in order that moral, nominal, temperate, liquidated or exemplary damages may be adjudicated. The assessment of such damages, except liquidated ones, is left to the discretion of the Court, according to the circumstances of each case."
+      }
+    },
+    {
+      "id": "q-1054",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "The Code Commission's comment on Article 2224, quoted in Premiere Development Bank v. CA, gives as an example of a loss that is hard to show with certainty in terms of money",
+      "choices": {
+        "A": "the cost of a funeral supported by receipts.",
+        "B": "injury to one's commercial credit or to the goodwill of a business firm.",
+        "C": "the face value of a promissory note.",
+        "D": "a stipulated penalty."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** \"For instance, injury to ones commercial credit or to the goodwill of a business firm is often hard to show with certainty in terms of money.\" **A and C are wrong:** they are easily proved. **D is wrong:** a stipulated penalty is liquidated damages. **Bar trap:** the judge may calculate moderate damages rather than leave the plaintiff without redress.",
+      "caseIds": [
+        "case-0096"
+      ],
+      "source": {
+        "caseTitle": "Premiere Development Bank v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 159352",
+        "url": "https://lawphil.net/judjuris/juri2004/apr2004/gr_159352_2004.html",
+        "part": "Decision, on temperate damages (Code Commission's comment)",
+        "excerpt": "For instance, injury to ones commercial credit or to the goodwill of a business firm is often hard to show with certainty in terms of money. Should damages be denied for that reason? The judge should be empowered to calculate moderate damages in such cases, rather than that the plaintiff should suffer, without redress from the defendant's wrongful act."
+      }
+    },
+    {
+      "id": "q-1055",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Temperate or Moderate Damages",
+      "prompt": "In Premiere Development Bank v. CA, the Supreme Court",
+      "choices": {
+        "A": "affirmed the ₱4,520,000 actual damages.",
+        "B": "deleted the ₱4,520,000 actual damages for lack of factual basis and awarded ₱200,000 temperate damages in lieu thereof, affirming the exemplary damages and attorney's fees.",
+        "C": "deleted all damages because of the compromise agreement.",
+        "D": "awarded nominal damages only."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court affirmed the exemplary damages and attorney's fees \"with the MODIFICATION that the award of P4,520,000.00 as actual damages is DELETED for lack of factual basis. In lieu thereof, Premiere Bank is ordered to pay Panacor P200,000.00 as temperate damages.\" **A is wrong:** the actual damages were unproved. **C is wrong:** the compromise covered only Iba-Finance. **D is wrong:** there was real pecuniary loss. **Bar trap:** exemplary damages stood because the bank acted in bad faith.",
+      "caseIds": [
+        "case-0096"
+      ],
+      "source": {
+        "caseTitle": "Premiere Development Bank v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 159352",
+        "url": "https://lawphil.net/judjuris/juri2004/apr2004/gr_159352_2004.html",
+        "part": "Decision, the disposition",
+        "excerpt": "WHEREFORE, the petition is DENIED. The Decision dated June 18, 2003 of the Court of Appeals in CA-G.R. CV No. 60750, ordering Premiere Bank to pay Panacor Marketing Corporation P500,000.00 as exemplary damages, P100,000.00 as attorney's fees, and costs, is AFFIRMED, with the MODIFICATION that the award of P4,520,000.00 as actual damages is DELETED for lack of factual basis. In lieu thereof, Premiere Bank is ordered to pay Panacor P200,000.00 as temperate damages."
       }
     }
   ]
