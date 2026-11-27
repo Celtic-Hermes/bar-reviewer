@@ -8293,6 +8293,102 @@
         "part": "Decision, relaxation of the rules on the period to appeal",
         "excerpt": "Unlike LBP and Atty. Abrenica, petitioners in this case committed an excusable delay of merely seven (7) days. … In general, procedural rules setting the period for perfecting an appeal or filing a petition for review are inviolable considering that appeal is not a constitutional right but merely a statutory privilege and that perfection of an appeal in the manner and within the period permitted by law is not only mandatory but jurisdictional. However, procedural rules may be waived or dispensed with in order to serve and achieve substantial justice. Relaxation of the rules may be had when the appeal, on its face, appears to be absolutely meritorious or when there are persuasive or compelling reasons to relieve a litigant of an injustice not commensurate with the degree of thoughtlessness in not complying with the prescribed procedure. Notably, under A.M. No. 04-9-07-SC (Re: Mode of Appeal in Cases Formerly Cognizable by the Securities and Exchange Commission), while the petition for review under Rule 43 of the Rules should be filed within fifteen (15) days from notice of the decision or final order of the RTC, the CA may actually grant an additional period of fifteen (15) days within which to file the petition and a further extension of time not exceeding fifteen (15) days for the most compelling reasons. This implies that the reglementary period is neither an impregnable nor an unyielding rule."
       }
+    },
+    {
+      "id": "q-0846",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "In two separate murder cases, the heirs claim damages for the victim's loss of earning capacity, but neither presents any documents (no payslips, no tax records).\n\n(a) Ana's victim, her son, was a daily wage farm worker earning less than the minimum wage; Ana testifies to how much he earned. May the court award loss of earning capacity? Explain.\n\n(b) Ben's victim, his brother, was a salaried office manager; Ben testifies to his salary but presents no document. May the court award loss of earning capacity on that testimony alone? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) Yes. Documentary evidence is the rule, but oral testimony suffices when the victim was a daily wage worker earning less than the minimum wage. (b) No, not under the exception. A salaried manager is not a self-employed person or a daily wage worker earning below the minimum wage, so the general rule requiring documentary evidence applies.",
+        "legalBasis": "Following People v. Dizon: \"As a rule, documentary evidence should be presented to substantiate the claim for loss of earning capacity.\" To claim it \"despite the nonavailability of documentary evidence, there must be oral testimony that: (a) the victim was self-employed earning less than the minimum wage under the current labor laws and judicial notice was taken of the fact that in the victim's line of work, no documentary evidence is available; (b) the victim was employed as a daily wage worker earning less than the minimum wage under current labor laws.\"",
+        "application": "(a) Ana's son fits the second exception, so her testimony is enough. (b) Ben's brother fits neither exception; without documents, the claim fails under the general rule.",
+        "conclusion": "(a) Award proper; (b) not on testimony alone. **Bar trap:** the testimony-only exception is narrow; it covers low-income self-employed or daily wage earners, not every victim whose papers are missing."
+      },
+      "keyPoints": [
+        "General rule: documentary evidence of lost earnings",
+        "Exception 1: self-employed earning less than the minimum wage, where no documents exist in that line of work",
+        "Exception 2: daily wage worker earning less than the minimum wage",
+        "Then oral testimony suffices",
+        "A salaried manager falls under neither exception"
+      ],
+      "caseIds": [
+        "case-0049"
+      ],
+      "source": {
+        "caseTitle": "People v. Muyco",
+        "grNumber": "G.R. No. 132252",
+        "url": "https://lawphil.net/judjuris/juri2000/apr2000/gr_132252_2000.html",
+        "part": "Decision, award for loss of earning capacity (proof required, citing People v. Dizon)",
+        "excerpt": "On the other hand, this Court notes that the trial court failed to award damages for loss of earning capacity despite the testimony of Leticia Boteja to this effect. In People v. Dizon this Court discussed the requisites for such award — As a rule, documentary evidence should be presented to substantiate the claim for loss of earning capacity. … To be able to claim damages for loss of earning capacity despite the nonavailability of documentary evidence, there must be oral testimony that: (a) the victim was self-employed earning less than the minimum wage under the current labor laws and judicial notice was taken of the fact that in the victim's line of work, no documentary evidence is available; (b) the victim was employed as a daily wage worker earning less than the minimum wage under current labor laws. . ."
+      }
+    },
+    {
+      "id": "q-0847",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Carla, 20 years old, was killed. She worked as a daily wage farm laborer earning ₱2,000 a month, below the minimum wage, as her father credibly testified. Using the formula 2/3 × (80 − age at death) × (gross annual income − 80% of gross annual income), compute the award for her loss of earning capacity. Show the computation.",
+      "suggestedAnswer": {
+        "answer": "₱160,000. Life expectancy = 2/3 × (80 − 20) = 40 years. Gross annual income = ₱2,000 × 12 = ₱24,000. Less living expenses of 80% (₱19,200) = ₱4,800. Award = 40 × ₱4,800 = ₱160,000.",
+        "legalBasis": "The formula applied was: \"2/3 (80 - ATD [age at time of death]) x (GAI [gross annual income]) - 80% GAI.\" For the 19-year-old victim earning ₱1,600 a month, the Court computed 2/3 (61) × [₱19,200 − ₱15,360] = 40.67 × ₱3,840 = ₱156,172.80. Since Carla was a daily wage worker earning below the minimum wage, her father's testimony suffices to prove her income.",
+        "application": "Applying the same steps to Carla's age (20) and income (₱2,000 a month) gives 40 × ₱4,800 = ₱160,000.",
+        "conclusion": "₱160,000. **Bar trap:** deduct the living expenses from the gross annual income before multiplying by the life expectancy; and note that this formula deducts 80% of gross income, while other decisions deduct a different share for living expenses (for example, 50%), so apply the formula the facts and the decision call for."
+      },
+      "keyPoints": [
+        "Life expectancy: 2/3 × (80 − age at death) = 40",
+        "Gross annual income: ₱2,000 × 12 = ₱24,000",
+        "Less 80% for living expenses: ₱24,000 − ₱19,200 = ₱4,800",
+        "Award: 40 × ₱4,800 = ₱160,000",
+        "Testimony suffices for a daily wage worker below the minimum wage"
+      ],
+      "caseIds": [
+        "case-0049"
+      ],
+      "source": {
+        "caseTitle": "People v. Muyco",
+        "grNumber": "G.R. No. 132252",
+        "url": "https://lawphil.net/judjuris/juri2000/apr2000/gr_132252_2000.html",
+        "part": "Decision, award for loss of earning capacity (the formula)",
+        "excerpt": "In the instant case, the victim was nineteen (19) years old at the time of his death and earning P1,600.00 monthly as a farm laborer. Thus, his heirs are entitled to receive an award for lost earnings in accordance with the following formula: 2/3 (80 - ATD [age at time of death]) x (GAI [gross annual income]) - 80% GAI. Thus — 2/3 (80-19) x (P1,600 x 12) - 80% (P1,600.00 x 12) 2/3 (61) x P19,200 - 80% (P19,200) 40.67 x [P19,200 - P15,360] 40.67 x P3,840 = P156,172.80 =========="
+      }
+    },
+    {
+      "id": "q-0848",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Dan was charged with murder for stabbing Eli during a drinking session. The only eyewitness, Eli's uncle, testified that he stood frozen and did nothing while the stabbing happened a meter away; he also said the wound was on the neck, while the autopsy placed it just below the collarbone. Dan, whom the uncle positively identified, testified that he was in another town about 50 kilometers away, but offered no evidence that it was impossible for him to travel to the scene that night.\n\n(a) Does the uncle's failure to act, or his mistake about the wound's location, destroy his credibility? Explain.\n\n(b) Will Dan's alibi prosper? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) No. People react differently to startling events, so freezing does not make a witness unworthy of belief, and discrepancies on minor details strengthen rather than weaken credibility. (b) No. Alibi is weak against positive identification, and it fails all the more when the accused does not show that it was physically impossible for him to be at the scene.",
+        "legalBasis": "\"Different people react differently to a given type of situation. There is no standard form of human behavioral response when one is confronted with a strange, startling or frightful experience. … A witness' inability to move, help or even to run away when the incident occurs is not a ground to label his testimony as doubtful.\" \"Inconsistencies and discrepancies in the testimony of a witness on minor details only serve to strengthen the credibility of the witness.\" Alibi becomes \"all the more ineffectual when he failed to demonstrate that it was physically impossible for him to be at the crime scene.\"",
+        "application": "(a) The uncle's shock is a natural reaction, and the wound's exact location is a minor detail. (b) A town 50 kilometers away is not shown to be beyond reach that night, and Dan was positively identified.",
+        "conclusion": "(a) Credibility stands; (b) the alibi fails. **Bar trap:** for alibi, mere distance is not enough; the accused must show physical impossibility of being at the scene."
+      },
+      "keyPoints": [
+        "No standard human reaction to a startling event",
+        "A witness's inability to move or help does not make him unworthy of belief",
+        "Minor discrepancies strengthen credibility",
+        "Alibi is weak against positive identification",
+        "Alibi requires physical impossibility of being at the scene"
+      ],
+      "caseIds": [
+        "case-0049"
+      ],
+      "source": {
+        "caseTitle": "People v. Muyco",
+        "grNumber": "G.R. No. 132252",
+        "url": "https://lawphil.net/judjuris/juri2000/apr2000/gr_132252_2000.html",
+        "part": "Decision, credibility of the eyewitness and the defense of alibi",
+        "excerpt": "We disagree. Different people react differently to a given type of situation. There is no standard form of human behavioral response when one is confronted with a strange, startling or frightful experience. … A witness' inability to move, help or even to run away when the incident occurs is not a ground to label his testimony as doubtful and unworthy of belief. … Inconsistencies and discrepancies in the testimony of a witness on minor details only serve to strengthen the credibility of the witness. … Weak as it was, accused-appellant's alibi became all the more ineffectual when he failed to demonstrate that it was physically impossible for him to be at the crime scene at the time it was committed. He testified being in Passi, Iloilo, during the stabbing incident. Passi, Iloilo is only fifty (50) kilometers from Cabatuan, Iloilo, the place where the crime was committed. He did not offer any evidence to prove impossibility of access between the two (2) places when the crime transpired."
+      }
     }
   ]
 }
