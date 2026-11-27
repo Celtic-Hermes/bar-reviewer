@@ -631,6 +631,21 @@
       "ruling": "The petition was partly granted and the trial court's decision reinstated. (1) A surety's liability is determined strictly by the terms of the bond in relation to the principal contract (Insurance Code, Sec. 176) and cannot be extended by implication. The bond specifically referred to a written agreement; the creditor, having accepted the bond, was bound to have the terms reduced to writing or at least communicated in writing to the surety, and it never did. Suretyship, an onerous undertaking, is strictly construed against the creditor. The non-compliance affected the creditor's right to demand performance, not the bond's validity, so FLT was not liable. (2) But the counterclaim was also properly dismissed. The filing alone of a civil action is not a ground for moral damages. A juridical person is generally not entitled to moral damages; although recent cases allow them for corporations, they are not automatic: there must be proof of the factual basis of the damage and its causal relation to the defendant's acts, since moral damages compensate actual injury and do not punish. FLT offered no such proof. Nor was it entitled to attorney's fees, as no premium is placed on the right to litigate and Chevron sued in the belief that it could collect.",
       "keyDoctrine": "The filing alone of a civil action, even a clearly unfounded one, is not a ground for moral damages. A juridical person is generally not entitled to moral damages; where allowed, they are not automatic and require proof of the factual basis of the damage and its causal relation to the defendant's acts, because they compensate actual injury and do not punish. No premium is placed on the right to litigate, so a winning party is not automatically entitled to attorney's fees. A surety's liability is determined strictly by the bond in relation to the principal contract and is strictly construed against the creditor.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2012/jan2012/gr_177839_2012.html"
+    },
+    {
+      "id": "case-0090",
+      "status": "draft",
+      "name": "KLM Royal Dutch Airlines v. Tiongco",
+      "grNumber": "G.R. No. 212136",
+      "year": 2021,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Nominal Damages",
+      "facts": "Dr. Jose Tiongco, a Davao surgeon invited as keynote speaker at a UN-WHO conference in Almaty, Kazakhstan, flew Manila-Singapore-Amsterdam-Frankfurt-Almaty on KLM tickets, his main carrier. A KLM flight left Amsterdam late, so he missed his Frankfurt connection; KLM rebooked him through Istanbul and assured him his checked suitcase, holding his speech, materials and clothes, would travel with him. It did not. He gave his lecture in a sweatshirt and slacks, without visual aids, after first being refused entry for his attire. The suitcase was later found in Almaty and Turkish Airlines told KLM, but KLM never informed him or returned it, and never answered his demand beyond asking for time. The trial court held KLM liable for ₱3 million nominal, ₱3 million moral and ₱5 million exemplary damages and attorney's fees; the Court of Appeals reduced these to ₱50,000 nominal, ₱1 million moral and ₱300,000 exemplary damages, with attorney's fees at 20% and interest.",
+      "issue": "(1) Is KLM liable for breach of contract of carriage, and did it act in bad faith? (2) What damages are proper: nominal or temperate, and how much moral and exemplary damages?",
+      "ruling": "The petition was denied with modifications. Whether KLM acted in bad faith is a question of fact not reviewable under Rule 45, and none of the exceptions applied. In any case, a common carrier is presumed at fault when goods are lost unless it proves extraordinary diligence; the passenger need only prove the contract and its non-performance. KLM acted in bad faith: it made empty promises, never updated him, and did not tell him or return the suitcase after it was found. Moral damages were proper under Article 2220 but reduced to ₱300,000, since social and financial standing counts only when the claimant was treated with contempt despite the offender's knowledge of it; exemplary damages were reduced to ₱100,000 for KLM's wanton and reckless conduct. Nominal damages vindicate a right where no actual loss of any kind is shown, while temperate damages apply where some pecuniary loss was suffered but its amount cannot be proved with certainty. Dr. Tiongco clearly lost his belongings but had no receipts, so ₱50,000 temperate damages were awarded in lieu of nominal damages, unlimited by the Warsaw Convention because of bad faith. Attorney's fees were upheld because the Court of Appeals explained them under Article 2208(1), and interest was set at 12% from the trial court's decision to June 30, 2013 and 6% after.",
+      "keyDoctrine": "Nominal damages (Art. 2221) vindicate a right technically violated where no actual present loss of any kind, or no substantial injury, is shown. Temperate damages (Art. 2224), more than nominal but less than compensatory, are proper where some pecuniary loss is suffered but its amount cannot be proved with certainty; a lost suitcase without receipts calls for temperate, not nominal, damages. A carrier is presumed negligent for lost goods; its bad faith supports moral (Art. 2220) and exemplary damages and lifts the Warsaw Convention's limits. The amount of damages must be fair, reasonable and proportionate (Art. 2216). Attorney's fees require reasons stated in the decision.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2021/oct2021/gr_212136_2021.html"
     }
   ],
   "questions": [
@@ -12931,6 +12946,276 @@
         "url": "https://lawphil.net/judjuris/juri2012/jan2012/gr_177839_2012.html",
         "part": "Decision, on the counterclaim for moral damages and attorney's fees",
         "excerpt": "Petitioner is likewise not entitled to attorney's fees. The settled rule is that no premium should be placed on the right to litigate and that not every winning party is entitled to an automatic grant of attorney's fees. In pursuing its claim on the surety bond, respondent was acting on the belief that it can collect on the obligation of Fumitechniks notwithstanding the non-submission of the written principal contract."
+      }
+    },
+    {
+      "id": "q-0993",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Nominal Damages",
+      "prompt": "A passenger's checked suitcase, containing his clothes and personal belongings, was lost by the airline and never returned. He proved the loss but presented no receipts for the contents. The trial court awarded him nominal damages \"considering his failure to sufficiently prove the amount of actual damages.\" Is nominal damages the proper award? Distinguish nominal from temperate damages.",
+      "suggestedAnswer": {
+        "answer": "No; temperate damages are proper. Nominal damages vindicate a right technically violated where there is no actual present loss of any kind, or no substantial injury or actual damages can be shown. Temperate damages, more than nominal but less than compensatory, apply where some pecuniary loss has been suffered but its amount cannot be proved with certainty. The passenger clearly suffered pecuniary loss; only its amount was unproved.",
+        "legalBasis": "In KLM Royal Dutch Airlines v. Tiongco, nominal damages under Article 2221 are \"recoverable where a legal right is technically violated and must be vindicated against an invasion that has produced no actual present loss of any kind or where there has been a breach of contract and no substantial injury or actual damages whatsoever have been or can be shown.\" Under Article 2224, \"temperate damages are awarded when the injured party suffered some pecuniary loss but the amount thereof cannot, from the nature of the case, be proven with certainty.\" Since Dr. Tiongco \"incurred pecuniary loss\" but presented no receipts, he could recover \"temperate damages, and not nominal damages.\"",
+        "application": "The lost suitcase and its contents were a real pecuniary loss; the lack of receipts affects only the amount.",
+        "conclusion": "Temperate damages (₱50,000 in the case) in lieu of nominal damages. **Bar trap:** failure to prove the amount of a real loss calls for temperate damages; nominal damages are for a violated right with no actual loss."
+      },
+      "keyPoints": [
+        "Nominal: right technically violated, no actual present loss of any kind",
+        "Temperate: some pecuniary loss, amount not provable with certainty",
+        "Temperate is more than nominal, less than compensatory",
+        "Lost suitcase without receipts: temperate, not nominal",
+        "Actual damages need proof of the amount (Art. 2199)"
+      ],
+      "caseIds": [
+        "case-0090"
+      ],
+      "source": {
+        "caseTitle": "KLM Royal Dutch Airlines v. Tiongco",
+        "grNumber": "G.R. No. 212136",
+        "url": "https://lawphil.net/judjuris/juri2021/oct2021/gr_212136_2021.html",
+        "part": "Our Ruling, KLM liable for temperate, not nominal, damages",
+        "excerpt": "Article 2221 of the Civil Code states that nominal damages may be awarded in order that the plaintiff's right, which has been violated or invaded by the defendant, may be vindicated or recognized, and not for the purpose of indemnifying the plaintiff for any loss suffered. They are \"recoverable where a legal right is technically violated and must be vindicated against an invasion that has produced no actual present loss of any kind or where there has been a breach of contract and no substantial injury or actual damages whatsoever have been or can be shown.\" … Simply put, temperate damages are awarded when the injured party suffered some pecuniary loss but the amount thereof cannot, from the nature of the case, be proven with certainty. Dr. Tiongco incurred pecuniary loss when his suitcase containing his personal belongings was lost during his flight and was never returned. Unfortunately, he did not present any actual receipt that would have proved the actual amount due, as mandated under Article 2199 of the Civil Code, so as to entitle him to the award of actual damages. This, however, does not preclude Dr. Tiongco from recovering temperate damages, and not nominal damages, since the exact amount of damage or pecuniary loss he sustained was not duly established by competent evidence."
+      }
+    },
+    {
+      "id": "q-0994",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Nominal Damages",
+      "prompt": "An airline argues that the passenger must prove its negligence before it can be held liable for losing his checked baggage, and that the mere failure to deliver a bag is not bad faith. The evidence shows the airline assured the passenger the bag would travel with him, never updated him, and, after the bag was found, neither told him nor returned it. (a) Must the passenger prove the airline's negligence? (b) Was there bad faith justifying moral damages? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) No. A common carrier is presumed to have been at fault or negligent in case of lost or damaged goods unless it proves extraordinary diligence; the passenger need only prove the contract and its non-performance. (b) Yes. The airline's empty promises, indifference, and failure to inform him or return the bag after it was found show bad faith, which supports moral damages under Article 2220 for breach of contract.",
+        "legalBasis": "In KLM v. Tiongco, \"a common carrier is presumed to have been at fault or to have acted negligently in case of lost or damaged goods unless they prove that they observed extraordinary diligence. Hence, in an action based on a breach of contract of carriage, the aggrieved party does not need to prove that the common carrier was at fault or was negligent. He or she is only required to prove the existence of the contract and its non-performance.\" KLM \"made empty promises,\" \"failed to inform Dr. Tiongco that his suitcase had been found,\" and \"did not return the luggage to him even after it was found,\" so its \"bad faith, gross negligence, and lack of care warrant the award of moral damages in accordance with Article 2220.\"",
+        "application": "The contract and the loss are undisputed; the airline's later conduct shows bad faith, not a mere failure to deliver.",
+        "conclusion": "(a) No; (b) yes. **Bar trap:** the presumption of negligence makes the carrier liable for the loss, but moral damages still need bad faith, which here came from the carrier's conduct after the loss."
+      },
+      "keyPoints": [
+        "Carrier presumed at fault for lost or damaged goods",
+        "Rebutted only by proof of extraordinary diligence",
+        "Passenger proves only the contract and its non-performance",
+        "Empty promises, indifference, failure to return the found bag = bad faith",
+        "Bad faith in breach of contract supports moral damages (Art. 2220)"
+      ],
+      "caseIds": [
+        "case-0090"
+      ],
+      "source": {
+        "caseTitle": "KLM Royal Dutch Airlines v. Tiongco",
+        "grNumber": "G.R. No. 212136",
+        "url": "https://lawphil.net/judjuris/juri2021/oct2021/gr_212136_2021.html",
+        "part": "Our Ruling, KLM is liable for breach of contract of carriage; bad faith on the part of KLM",
+        "excerpt": "Considering that a contract of carriage is vested with public interest, a common carrier is presumed to have been at fault or to have acted negligently in case of lost or damaged goods unless they prove that they observed extraordinary diligence. Hence, in an action based on a breach of contract of carriage, the aggrieved party does not need to prove that the common carrier was at fault or was negligent. He or she is only required to prove the existence of the contract and its non-performance by the carrier. … The award of moral damages is proper to enable the injured party to obtain means of diversion or amusement that will serve to alleviate the moral suffering they underwent because of another's culpable action. Here, KLM displayed indifference to the plight and inconvenience suffered by Dr. Tiongco when he lost his luggage. It made empty promises that his luggage would be travelling with him and even failed to inform Dr. Tiongco that his suitcase had been found. Moreover, it did not return the luggage to him even after it was found. Undeniably, KLM's bad faith, gross negligence, and lack of care warrant the award of moral damages in accordance with Article 2220 of the Civil Code"
+      }
+    },
+    {
+      "id": "q-0995",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Nominal Damages",
+      "prompt": "(a) How is the amount of moral damages assessed, and when may the claimant's social and financial standing be considered? (b) May an airline invoke the Warsaw Convention's per-kilo limit to cap its liability for lost baggage when it acted in bad faith? Explain, citing KLM v. Tiongco.",
+      "suggestedAnswer": {
+        "answer": "(a) Under Article 2216, the assessment is left to the court's discretion according to the circumstances, but the amount must be fair, reasonable and proportionate to the injury, never so excessive as to suggest prejudice or corruption. Social and financial standing may be considered only if the claimant was subjected to contemptuous conduct despite the offender's knowledge of that standing. (b) No. The Convention limits liability only where the loss is not attended by willful misconduct, bad faith, recklessness or other improper conduct of the carrier's employees.",
+        "legalBasis": "\"Under Article 2216 of the Civil Code, the assessment of damages is left to the discretion of the court ... It must therefore be fair, reasonable, and proportionate to the injury suffered.\" Citing Kierulf, \"[t]he social and financial standing of a claimant of moral damages may be considered in awarding moral damages only if he or she was subjected to contemptuous conduct despite the offender's knowledge of his or her social and financial standing.\" \"KLM's liability for temperate damages may not be limited to that prescribed in Article 22(2) of the Warsaw Convention ... in the presence of bad faith,\" since the Convention is a limit \"only in those cases where the cause of the ... loss ... is not attributable to or attended by any willful misconduct, bad faith, recklessness, or otherwise improper conduct.\"",
+        "application": "The Court reduced moral damages to ₱300,000 and exemplary damages to ₱100,000, and did not apply the Warsaw limit to the temperate damages.",
+        "conclusion": "As stated. **Bar trap:** a claimant's prominence does not by itself raise moral damages; there must be contemptuous treatment despite knowledge of that standing."
+      },
+      "keyPoints": [
+        "Art. 2216: amount left to the court's discretion",
+        "Must be fair, reasonable and proportionate; not palpably excessive",
+        "Social and financial standing counts only with contemptuous conduct despite knowledge",
+        "Warsaw limit does not apply where loss is attended by bad faith or willful misconduct"
+      ],
+      "caseIds": [
+        "case-0090"
+      ],
+      "source": {
+        "caseTitle": "KLM Royal Dutch Airlines v. Tiongco",
+        "grNumber": "G.R. No. 212136",
+        "url": "https://lawphil.net/judjuris/juri2021/oct2021/gr_212136_2021.html",
+        "part": "Our Ruling, the awards of moral and exemplary damages are proper; temperate damages and the Warsaw Convention",
+        "excerpt": "Under Article 2216 of the Civil Code, the assessment of damages is left to the discretion of the court according to the circumstances of each case. The courts must adhere to the principle that the amount of damages awarded should not be palpably excessive as to indicate that it was the result of prejudice or corruption on the part of the trial court. It must therefore be fair, reasonable, and proportionate to the injury suffered. … Guided by the foregoing, the Court modifies the award of moral damages from P1,000,000.00 to P300,000.00 in favor of Dr. Tiongco pursuant to our pronouncement in Kierulf v. Court of Appeals that \"[t]he social and financial standing of a claimant of moral damages may be considered in awarding moral damages only if he or she was subjected to contemptuous conduct despite the offender's knowledge of his or her social and financial standing.\" … KLM's liability for temperate damages may not be limited to that prescribed in Article 22(2) of the Warsaw Convention, as amended by the Hague Protocol, in the presence of bad faith."
+      }
+    },
+    {
+      "id": "q-0996",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Nominal Damages",
+      "prompt": "Two travelers sue their airlines. (a) Ana's checked bag was lost for good; she proves it held her clothes and a camera but has no receipts. (b) Ben's airline, in breach of its contract, kept his bag a day longer than promised and delivered it to his hotel the next morning with nothing missing or damaged; Ben proves no loss of any kind. What kind of damages, if any, may each recover besides moral or exemplary damages? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) Temperate damages. Ana suffered a real pecuniary loss, but its amount cannot be proved with certainty without receipts. (b) Nominal damages. Ben's contractual right was violated, but there was no actual loss of any kind; nominal damages vindicate or recognize the right, not indemnify a loss.",
+        "legalBasis": "Under Article 2221, as explained in KLM v. Tiongco, nominal damages are \"recoverable where a legal right is technically violated and must be vindicated against an invasion that has produced no actual present loss of any kind or where there has been a breach of contract and no substantial injury or actual damages whatsoever have been or can be shown.\" Temperate damages are \"awarded when the injured party suffered some pecuniary loss but the amount thereof cannot, from the nature of the case, be proven with certainty.\"",
+        "application": "(a) Ana lost property of some value. (b) Ben got his bag back intact; only his right to timely delivery was violated.",
+        "conclusion": "(a) Temperate; (b) nominal. **Bar trap:** the line between the two is whether some pecuniary loss happened, not whether receipts were presented."
+      },
+      "keyPoints": [
+        "Some pecuniary loss, amount unproved: temperate",
+        "Right violated, no actual loss: nominal",
+        "Nominal damages vindicate a right; they do not indemnify",
+        "Temperate is more than nominal, less than compensatory"
+      ],
+      "caseIds": [
+        "case-0090"
+      ],
+      "source": {
+        "caseTitle": "KLM Royal Dutch Airlines v. Tiongco",
+        "grNumber": "G.R. No. 212136",
+        "url": "https://lawphil.net/judjuris/juri2021/oct2021/gr_212136_2021.html",
+        "part": "Our Ruling, KLM liable for temperate, not nominal, damages",
+        "excerpt": "They are \"recoverable where a legal right is technically violated and must be vindicated against an invasion that has produced no actual present loss of any kind or where there has been a breach of contract and no substantial injury or actual damages whatsoever have been or can be shown.\" On the other hand, A1iicle 2224 of the same Code states that temperate damages or moderate damages, which are more than nominal but less than compensatory damages, may be recovered when the court finds that some pecuniary loss has been suffered but its amount cannot, from the nature of the case, be provided with certainty. Simply put, temperate damages are awarded when the injured party suffered some pecuniary loss but the amount thereof cannot, from the nature of the case, be proven with certainty."
+      }
+    },
+    {
+      "id": "q-0997",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Nominal Damages",
+      "prompt": "Carla's suitcase was misrouted by her airline. (a) The airline traced it, kept her informed, and returned it to her within a week. (b) In another case, Dino's airline found his misrouted suitcase but never told him and never returned it, despite his written demand. Is either airline liable for moral and exemplary damages? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) No. A breach of the contract of carriage without bad faith, where the luggage was returned, does not support moral and exemplary damages; at most it supports a lesser award for the violated right. (b) Yes. Failing to inform the passenger and to return the bag after finding it, despite demand, is bad faith and wanton, reckless conduct justifying moral and exemplary damages.",
+        "legalBasis": "In KLM v. Tiongco, the Court distinguished Alitalia: there, \"the luggage of Dr. Felipa ... was subsequently returned to her after it was lost unlike in the case here where Dr. Tiongco's suitcase was never returned to him even after it was found. More importantly, there was no bad faith on the part of the airline in Alitalia.\" KLM \"did not bother to inform Dr. Tiongco that his suitcase had been found or took the necessary steps to transport it back,\" and \"acted in a wanton, and reckless manner,\" warranting moral and exemplary damages.",
+        "application": "(a) Carla's airline acted with care after the mistake. (b) Dino's airline ignored him after finding the bag.",
+        "conclusion": "(a) No moral or exemplary damages; (b) both may be awarded. **Bar trap:** the same lost-luggage breach yields different damages depending on the carrier's good or bad faith afterward."
+      },
+      "keyPoints": [
+        "Breach without bad faith, bag returned: no moral or exemplary damages",
+        "Not informing and not returning a found bag = bad faith",
+        "Wanton and reckless conduct supports exemplary damages",
+        "Alitalia distinguished"
+      ],
+      "caseIds": [
+        "case-0090"
+      ],
+      "source": {
+        "caseTitle": "KLM Royal Dutch Airlines v. Tiongco",
+        "grNumber": "G.R. No. 212136",
+        "url": "https://lawphil.net/judjuris/juri2021/oct2021/gr_212136_2021.html",
+        "part": "Our Ruling, bad faith on the part of KLM (Alitalia distinguished)",
+        "excerpt": "To make matters even worse, the Customer Relations Officer of KLM, Arlene Almario, categorically testified that the suitcase was eventually found in Almaty as shown in the baggage report dated December 18, 1998 of Turkish Airlines. The said airline immediately notified KLM. However, KLM did not bother to inform Dr. Tiongco that his suitcase had been found or took the necessary steps to transport it back to Manila. The case of Alitalia, contrary to KLM's claim, is inapplicable in the case at bench. While both cases involve a lost luggage of an airline's passenger, the luggage of Dr. Felipa in the Alitalia case was subsequently returned to her after it was lost unlike in the case here where Dr. Tiongco's suitcase was never returned to him even after it was found. More importantly, there was no bad faith on the part of the airline in Alitalia when it breached its contract of carriage unlike in this case where KLM acted in bad faith. … The award of exemplary damages likewise needs to be modified. Undoubtedly, KLM acted in a wanton, and reckless manner."
+      }
+    },
+    {
+      "id": "q-0998",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Nominal Damages",
+      "prompt": "Eva won a damages suit, including exemplary damages. The trial court awarded attorney's fees only in the dispositive portion, without explanation. On appeal, the Court of Appeals briefly explained that fees were proper because exemplary damages had been awarded, and it also imposed legal interest, which the trial court had not granted and Eva had not asked for on appeal. (a) Should the attorney's fees be deleted? (b) Could the appellate court impose interest on its own? Reason briefly.",
+      "suggestedAnswer": {
+        "answer": "(a) No. An award under Article 2208 needs factual, legal and equitable justification stated in the decision. Although the trial court gave none, the appellate court made its own assessment and anchored the fees on Article 2208(1), where exemplary damages are awarded; a brief explanation suffices. (b) Yes. An appeal throws the whole case open for review, so the appellate court may modify or include damages, such as interest, after its independent evaluation.",
+        "legalBasis": "In KLM v. Tiongco, \"[a]n award of attorney's fees under Article 2208 demands factual, legal, and equitable justification ... It is therefore required for the courts to clearly and distinctly set forth in their decisions their factual findings for the basis of the award.\" \"[T]he CA explained that the award of attorney's fees is proper because exemplary damages are likewise awarded ... pursuant to Article 2208(1) ... Although brief, the appellate court's explanation is sufficient.\" Also, \"when a case is appealed ... the CA has the power to review the case in its entirety ... the appellate court can modify and/or include damages not awarded by the trial court if so warranted.\"",
+        "application": "The appellate court supplied the missing reason and, on review of the whole case, added interest.",
+        "conclusion": "(a) Sustained; (b) yes. **Bar trap:** a trial court's unexplained fee award can be saved by the appellate court's own stated justification."
+      },
+      "keyPoints": [
+        "Attorney's fees need justification stated in the decision",
+        "Art. 2208(1): when exemplary damages are awarded",
+        "A brief but independent appellate explanation suffices",
+        "Appeal opens the whole case for review",
+        "Appellate court may include damages not awarded below"
+      ],
+      "caseIds": [
+        "case-0090"
+      ],
+      "source": {
+        "caseTitle": "KLM Royal Dutch Airlines v. Tiongco",
+        "grNumber": "G.R. No. 212136",
+        "url": "https://lawphil.net/judjuris/juri2021/oct2021/gr_212136_2021.html",
+        "part": "Our Ruling, imposition of attorney's fees and legal interest was proper",
+        "excerpt": "An award of attorney's fees under Article 2208 demands factual, legal, and equitable justification to avoid speculation and conjecture surrounding the grant thereof. It is therefore required for the courts to clearly and distinctly set forth in their decisions their factual findings for the basis of the award. … However, a perusal of the assailed Decision shows that the CA explained that the award of attorney's fees is proper because exemplary damages are likewise awarded to Dr. Tiongco pursuant to Article 2208(1) of the Civil Code. The CA did not simply adopt the findings of the RTC but it made an independent assessment as to why attorney's fees should be awarded to him. Although brief, the appellate court's explanation is sufficient to show that there is factual and legal justification for the award thereof. … It must be remembered that when a case is appealed, as in this case, the CA has the power to review the case in its entirety. It makes its own judgment as it deems just under the circumstances. Thus, the appellate court can modify and/or include damages not awarded by the trial court if so warranted after an independent evaluation of the case."
+      }
+    },
+    {
+      "id": "q-0999",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Nominal Damages",
+      "prompt": "Under Article 2224, as explained in KLM v. Tiongco, temperate or moderate damages are",
+      "choices": {
+        "A": "less than nominal damages and awarded to vindicate a right.",
+        "B": "more than nominal but less than compensatory damages, recoverable when some pecuniary loss has been suffered but its amount cannot be proved with certainty.",
+        "C": "equal to the actual loss proved by receipts.",
+        "D": "awarded only when the defendant acted in bad faith."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** Temperate damages, \"which are more than nominal but less than compensatory damages, may be recovered when the court finds that some pecuniary loss has been suffered but its amount cannot, from the nature of the case, be provided with certainty.\" **A is wrong:** that describes nominal damages, which are less. **C is wrong:** proved loss is actual damages. **D is wrong:** bad faith is not a requirement. **Bar trap:** some pecuniary loss must exist.",
+      "caseIds": [
+        "case-0090"
+      ],
+      "source": {
+        "caseTitle": "KLM Royal Dutch Airlines v. Tiongco",
+        "grNumber": "G.R. No. 212136",
+        "url": "https://lawphil.net/judjuris/juri2021/oct2021/gr_212136_2021.html",
+        "part": "Our Ruling, KLM liable for temperate, not nominal, damages",
+        "excerpt": "On the other hand, A1iicle 2224 of the same Code states that temperate damages or moderate damages, which are more than nominal but less than compensatory damages, may be recovered when the court finds that some pecuniary loss has been suffered but its amount cannot, from the nature of the case, be provided with certainty."
+      }
+    },
+    {
+      "id": "q-1000",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Nominal Damages",
+      "prompt": "In an action for breach of contract of carriage for lost goods, according to KLM v. Tiongco, the aggrieved party needs to prove only",
+      "choices": {
+        "A": "the carrier's gross negligence.",
+        "B": "the existence of the contract and its non-performance by the carrier.",
+        "C": "the carrier's bad faith.",
+        "D": "the value of the goods by official receipts."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** \"[T]he aggrieved party does not need to prove that the common carrier was at fault or was negligent. He or she is only required to prove the existence of the contract and its non-performance by the carrier.\" **A and C are wrong:** fault is presumed, and bad faith matters only for moral and exemplary damages. **D is wrong:** receipts go to actual damages; without them temperate damages may be given. **Bar trap:** the carrier must prove extraordinary diligence to escape liability.",
+      "caseIds": [
+        "case-0090"
+      ],
+      "source": {
+        "caseTitle": "KLM Royal Dutch Airlines v. Tiongco",
+        "grNumber": "G.R. No. 212136",
+        "url": "https://lawphil.net/judjuris/juri2021/oct2021/gr_212136_2021.html",
+        "part": "Our Ruling, KLM is liable for breach of contract of carriage",
+        "excerpt": "Hence, in an action based on a breach of contract of carriage, the aggrieved party does not need to prove that the common carrier was at fault or was negligent. He or she is only required to prove the existence of the contract and its non-performance by the carrier."
+      }
+    },
+    {
+      "id": "q-1001",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Nominal Damages",
+      "prompt": "In KLM v. Tiongco, the Supreme Court replaced the award of nominal damages with",
+      "choices": {
+        "A": "₱50,000 temperate damages.",
+        "B": "₱3,000,000 actual damages.",
+        "C": "the per-kilo amount under the Warsaw Convention.",
+        "D": "nothing, deleting the award entirely."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** \"[T]emperate damages in the amount of P50,000.00 is awarded to Dr. Jose M. Tiongco in lieu of nominal damages.\" **B is wrong:** actual damages were not proved by receipts. **C is wrong:** the Warsaw limit did not apply because of bad faith. **D is wrong:** a real loss was shown. **Bar trap:** nominal and temperate damages are not interchangeable.",
+      "caseIds": [
+        "case-0090"
+      ],
+      "source": {
+        "caseTitle": "KLM Royal Dutch Airlines v. Tiongco",
+        "grNumber": "G.R. No. 212136",
+        "url": "https://lawphil.net/judjuris/juri2021/oct2021/gr_212136_2021.html",
+        "part": "Our Ruling, the disposition",
+        "excerpt": "(b) temperate damages in the amount of P50,000.00 is awarded to Dr. Jose M. Tiongco in lieu of nominal damages;"
       }
     }
   ]
