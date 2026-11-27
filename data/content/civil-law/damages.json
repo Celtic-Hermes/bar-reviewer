@@ -8389,6 +8389,102 @@
         "part": "Decision, credibility of the eyewitness and the defense of alibi",
         "excerpt": "We disagree. Different people react differently to a given type of situation. There is no standard form of human behavioral response when one is confronted with a strange, startling or frightful experience. … A witness' inability to move, help or even to run away when the incident occurs is not a ground to label his testimony as doubtful and unworthy of belief. … Inconsistencies and discrepancies in the testimony of a witness on minor details only serve to strengthen the credibility of the witness. … Weak as it was, accused-appellant's alibi became all the more ineffectual when he failed to demonstrate that it was physically impossible for him to be at the crime scene at the time it was committed. He testified being in Passi, Iloilo, during the stabbing incident. Passi, Iloilo is only fifty (50) kilometers from Cabatuan, Iloilo, the place where the crime was committed. He did not offer any evidence to prove impossibility of access between the two (2) places when the crime transpired."
       }
+    },
+    {
+      "id": "q-0849",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Ana, a 40-year-old government accountant, died when the bus she was riding fell into a ravine because it was running too fast. In the suit against the bus company, her husband Ben testified on her salary, but no payslips, tax records or other documents of her income were presented. It is clear, though, that the family lost the income she used to earn.\n\n(a) May the court award damages for Ana's loss of earning capacity? Explain.\n\n(b) If not, may the court award any other damages for the family's lost income? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) No. Loss of earning capacity must, as a rule, be proved by documentary evidence; testimony alone suffices only if the deceased was self-employed or a daily wage worker earning less than the minimum wage, and a salaried government accountant is neither. (b) Yes, temperate damages, since some pecuniary loss was suffered but its amount cannot be proved with certainty (Art. 2224).",
+        "legalBasis": "Under Article 1764 in relation to Article 2206, a common carrier whose breach results in a passenger's death is liable for indemnity for death, indemnity for loss of earning capacity and moral damages. But \"[a]s a rule, documentary evidence should be presented to substantiate the claim for damages for loss of earning capacity,\" except when the deceased is self-employed earning less than the minimum wage (where no documents are available in that line of work) or a daily wage worker earning less than the minimum wage. Where the earnings do not fall within the exceptions but \"the fact of loss [has] been established, temperate damages\" may be awarded, since under Article 2224 temperate damages \"may be recovered when the court finds that some pecuniary loss has been suffered but its amount can not, from the nature of the case, be proved with certainty.\"",
+        "application": "Ana's income was not proved by documents and she does not fall within the exceptions, so no award for loss of earning capacity can be made. But the family's loss of her income is certain, so temperate damages are proper.",
+        "conclusion": "(a) No award for loss of earning capacity; (b) temperate damages instead. **Bar trap:** a failed claim for lost earnings does not leave the heirs with nothing; when the fact of loss is clear but its amount is unproved, temperate damages fill the gap."
+      },
+      "keyPoints": [
+        "Arts. 1764 and 2206: death indemnity, loss of earning capacity, moral damages",
+        "Loss of earning capacity needs documentary evidence, as a rule",
+        "Exceptions: self-employed or daily wage workers earning below the minimum wage",
+        "A salaried employee is not within the exceptions",
+        "Temperate damages when loss is shown but its amount cannot be proved (Art. 2224)"
+      ],
+      "caseIds": [
+        "case-0050"
+      ],
+      "source": {
+        "caseTitle": "Victory Liner, Inc. v. Gammad, et al.",
+        "grNumber": "G.R. No. 159636",
+        "url": "https://lawphil.net/judjuris/juri2004/nov2004/gr_159636_2004.html",
+        "part": "Decision, damages for the death of a passenger and temperate damages",
+        "excerpt": "Article 1764 in relation to Article 2206 of the Civil Code, holds the common carrier in breach of its contract of carriage that results in the death of a passenger liable to pay the following: (1) indemnity for death, (2) indemnity for loss of earning capacity, and (3) moral damages. … The award of compensatory damages for the loss of the deceased’s earning capacity should be deleted for lack of basis. As a rule, documentary evidence should be presented to substantiate the claim for damages for loss of earning capacity. By way of exception, damages for loss of earning capacity may be awarded despite the absence of documentary evidence when (1) the deceased is self-employed earning less than the minimum wage under current labor laws, and judicial notice may be taken of the fact that in the deceased’s line of work no documentary evidence is available; or (2) the deceased is employed as a daily wage worker earning less than the minimum wage under current labor laws. … The award is clearly erroneous because the deceased’s earnings does not fall within the exceptions. However, the fact of loss having been established, temperate damages in the amount of P500,000.00 should be awarded to respondents. Under Article 2224 of the Civil Code, temperate or moderate damages, which are more than nominal but less than compensatory damages, may be recovered when the court finds that some pecuniary loss has been suffered but its amount can not, from the nature of the case, be proved with certainty."
+      }
+    },
+    {
+      "id": "q-0850",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "In a suit for the death of a bus passenger, Carla, the passenger's widow, proved the funeral expenses with (1) official receipts totaling ₱80,000, (2) her own handwritten list of other wake expenses, and (3) a contract for building the tomb. The trial court awarded all three as actual damages, and also awarded ₱400,000 \"as moral and exemplary damages\" in one lump sum.\n\n(a) Which of Carla's proofs support actual damages? Explain.\n\n(b) Is the lump-sum award of moral and exemplary damages proper? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) Only the official receipts. A handwritten list of expenses and a contract for the tomb are not competent proof and cannot replace official receipts. (b) No. Moral and exemplary damages rest on different jural foundations and must be determined separately.",
+        "legalBasis": "\"[O]nly substantiated and proven expenses or those that appear to have been genuinely incurred in connection with the death, wake or burial of the victim will be recognized. A list of expenses ... and the contract/receipt for the construction of the tomb ... cannot be considered competent proof and cannot replace the official receipts necessary to justify the award.\" Moral damages \"cannot be lumped with exemplary damages because they are based on different jural foundations. These damages are different in nature and require separate determination.\" Moral damages may be awarded when a passenger's death results from a breach of carriage (Art. 1764 in relation to Art. 2206), while exemplary damages may be recovered in contracts if the defendant acted in a wanton, fraudulent, reckless, oppressive or malevolent manner.",
+        "application": "(a) Carla's actual damages should be limited to the ₱80,000 in official receipts. (b) The court must fix moral damages (for her anguish over her husband's death) and, if the carrier's conduct warrants it, exemplary damages, each on its own basis.",
+        "conclusion": "(a) Receipts only; (b) the awards must be separated. **Bar trap:** do not treat a party's own list of expenses as proof; and never lump moral and exemplary damages together."
+      },
+      "keyPoints": [
+        "Actual damages: only substantiated and proven expenses",
+        "A handwritten list or a tomb contract cannot replace official receipts",
+        "Moral and exemplary damages have different jural foundations",
+        "They must be determined separately",
+        "Exemplary damages in contracts: wanton, fraudulent, reckless, oppressive or malevolent conduct"
+      ],
+      "caseIds": [
+        "case-0050"
+      ],
+      "source": {
+        "caseTitle": "Victory Liner, Inc. v. Gammad, et al.",
+        "grNumber": "G.R. No. 159636",
+        "url": "https://lawphil.net/judjuris/juri2004/nov2004/gr_159636_2004.html",
+        "part": "Decision, moral, exemplary and actual damages",
+        "excerpt": "Anent the award of moral damages, the same cannot be lumped with exemplary damages because they are based on different jural foundations. These damages are different in nature and require separate determination. In culpa contractual or breach of contract, moral damages may be recovered when the defendant acted in bad faith or was guilty of gross negligence (amounting to bad faith) or in wanton disregard of contractual obligations and, as in this case, when the act of breach of contract itself constitutes the tort that results in physical injuries. By special rule in Article 1764 in relation to Article 2206 of the Civil Code, moral damages may also be awarded in case the death of a passenger results from a breach of carriage. On the other hand, exemplary damages, which are awarded by way of example or correction for the public good may be recovered in contractual obligations if the defendant acted in wanton, fraudulent, reckless, oppressive, or malevolent manner. … The actual damages awarded by the trial court reduced by the Court of Appeals should be further reduced. In People v. Duban, it was held that only substantiated and proven expenses or those that appear to have been genuinely incurred in connection with the death, wake or burial of the victim will be recognized. A list of expenses (Exhibit \"J\"), and the contract/receipt for the construction of the tomb (Exhibit \"F\") in this case, cannot be considered competent proof and cannot replace the official receipts necessary to justify the award."
+      }
+    },
+    {
+      "id": "q-0851",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "A bus company was sued for the death of a passenger, Dina. Its lawyer filed an answer, a pre-trial brief and a timely appeal, but missed several hearings, so the company was deemed to have waived cross-examination and its evidence. The company itself never checked on the case. It loses.\n\n(a) May the company escape the judgment by claiming its lawyer's negligence denied it due process? Explain.\n\n(b) On the merits, the company argues that the heirs never proved that its driver was negligent. Is that a defense? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) No. The negligence of counsel binds the client; the exception for reckless or gross negligence that deprives the client of due process does not apply where counsel actively took part in the case and the client itself was negligent. (b) No. When a passenger dies, the carrier is presumed at fault; the heirs need not prove negligence, and the presumption is overcome only by proof of extraordinary diligence.",
+        "legalBasis": "\"It is settled that the negligence of counsel binds the client,\" since counsel's acts within the scope of his authority are the client's acts, subject to exceptions \"where reckless or gross negligence of counsel deprives the client of due process of law, or when its application will result in outright deprivation of the client's liberty or property or where the interests of justice so require.\" \"In a contract of carriage, it is presumed that the common carrier was at fault or was negligent when a passenger dies or is injured. Unless the presumption is rebutted, the court need not even make an express finding of fault or negligence ... This statutory presumption may only be overcome by evidence that the carrier exercised extraordinary diligence.\"",
+        "application": "(a) The lawyer filed the key pleadings and an appeal, and the company did not monitor its case, so there was no deprivation of due process. (b) The company presented no evidence of extraordinary diligence, so the presumption of fault stands.",
+        "conclusion": "(a) Bound by counsel; (b) presumption of fault stands. **Bar trap:** the burden in carriage is reversed; the passenger's heirs do not have to prove negligence."
+      },
+      "keyPoints": [
+        "The negligence of counsel binds the client",
+        "Exception: reckless or gross negligence depriving the client of due process",
+        "Not where counsel took part in the case and the client was itself negligent",
+        "A carrier is presumed at fault when a passenger dies or is injured",
+        "Overcome only by proof of extraordinary diligence"
+      ],
+      "caseIds": [
+        "case-0050"
+      ],
+      "source": {
+        "caseTitle": "Victory Liner, Inc. v. Gammad, et al.",
+        "grNumber": "G.R. No. 159636",
+        "url": "https://lawphil.net/judjuris/juri2004/nov2004/gr_159636_2004.html",
+        "part": "Decision, negligence of counsel and breach of contract of carriage",
+        "excerpt": "It is settled that the negligence of counsel binds the client. This is based on the rule that any act performed by a counsel within the scope of his general or implied authority is regarded as an act of his client. Consequently, the mistake or negligence of counsel may result in the rendition of an unfavorable judgment against the client. However, the application of the general rule to a given case should be looked into and adopted according to the surrounding circumstances obtaining. Thus, exceptions to the foregoing have been recognized by the court in cases where reckless or gross negligence of counsel deprives the client of due process of law, or when its application will result in outright deprivation of the client’s liberty or property or where the interests of justice so require, and accord relief to the client who suffered by reason of the lawyer’s gross or palpable mistake or negligence. … Anent the second issue, petitioner was correctly found liable for breach of contract of carriage. A common carrier is bound to carry its passengers safely as far as human care and foresight can provide, using the utmost diligence of very cautious persons, with due regard to all the circumstances. In a contract of carriage, it is presumed that the common carrier was at fault or was negligent when a passenger dies or is injured. Unless the presumption is rebutted, the court need not even make an express finding of fault or negligence on the part of the common carrier. This statutory presumption may only be overcome by evidence that the carrier exercised extraordinary diligence."
+      }
     }
   ]
 }
