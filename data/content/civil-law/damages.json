@@ -18710,6 +18710,101 @@
         "part": "Decision, discussion of the Court of Appeals' findings on credibility",
         "excerpt": "The court of first instance sustained plaintiff's pretense, but the Court of Appeals considered her evidence unworthy of credence, and, hence, absolved Maximino Quinit. Plaintiff maintains that the Court of Appeals had erred in the appreciation of the evidence, but the findings of said Court on the credibility of said evidence are beyond our power of review on appeal by certiorari and, consequently, conclusive upon us."
       }
+    },
+    {
+      "id": "q-1176",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "A bank sued Ana and Ben to annul their purchase of a house, honestly suspecting that the seller, a defaulting debtor, had sold it to defraud the bank. The court dismissed the suit and found that the bank had not acted maliciously. Ana and Ben show they were anxious and embarrassed at being made defendants. In another case, a lender sued Carla to annul a sale it knew was legitimate, to pressure her into paying someone else's debt. Who may recover moral damages? Explain.",
+      "suggestedAnswer": {
+        "answer": "Not Ana and Ben; possibly Carla. For moral damages, the law requires a wrongful act or omission of the defendant as the proximate cause of the anguish. In the absence of malice and bad faith, the anguish of being made a defendant is only what is usually caused to any party haled into court, and does not warrant moral damages, still less exemplary damages. Carla's lender sued knowing the sale was legitimate, for an improper purpose, which is a wrongful act.",
+        "legalBasis": "In PNB v. Court of Appeals (1988), \"[f]or moral damages to be awarded, the law requires a wrongful act or omission attributable to petitioner as the proximate cause of the mental anguish ... In the absence of malice and bad faith, the mental anguish suffered by respondents ... for having been made defendants ... is not that kind of anxiety which would warrant the award of moral damages. The worries and anxieties suffered ... were only such as are usually, caused to a party haled into court as a defendant in a litigation. Therefore, there is no sufficient justification for the award of moral damages, more so, exemplary damages.\"",
+        "application": "The bank sued in good faith; Carla's lender sued maliciously.",
+        "conclusion": "No moral damages for Ana and Ben; possible for Carla (on proof of her suffering). **Bar trap:** a finding of no malice is inconsistent with an award of moral damages for the filing of the suit."
+      },
+      "keyPoints": [
+        "Moral damages require a wrongful act or omission as proximate cause",
+        "Good-faith suit: ordinary anxiety of litigation",
+        "Not the anxiety that warrants moral damages",
+        "Still less exemplary damages",
+        "Malicious suit is a wrongful act"
+      ],
+      "caseIds": [
+        "case-0079"
+      ],
+      "source": {
+        "caseTitle": "Philippine National Bank v. Court of Appeals, et al. (1988)",
+        "grNumber": "G.R. No. L-45770",
+        "url": "https://lawphil.net/judjuris/juri1988/mar1988/gr_l-45770_1988.html",
+        "part": "Decision, discussion of the first to third assignments of error (moral damages)",
+        "excerpt": "For moral damages to be awarded, the law requires a wrongful act or omission attributable to petitioner as the proximate cause of the mental anguish suffered by private respondents spouses Vicente E. Medina and Leticia Lopez. Respondent appellate court categorically ruled in the negative yet awarded moral and exemplary damages in the reduced amount of P10,000.00 in favor of aforesaid respondent spouses. … In the absence of malice and bad faith, the mental anguish suffered by respondents spouses Medina and Lopez for having been made defendants in Civil Case No. 4507 is not that kind of anxiety which would warrant the award of moral damages. The worries and anxieties suffered by respondents spouses Medina and Lopez were only such as are usually, caused to a party haled into court as a defendant in a litigation. Therefore, there is no sufficient justification for the award of moral damages, more so, exemplary damages."
+      }
+    },
+    {
+      "id": "q-1177",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Dino claims moral and exemplary damages from Eva for a breach of their agreement. He testifies that he \"felt bad,\" but offers no evidence linking any particular suffering to Eva's acts, and asks for a large award \"to punish her.\" Applying PNB v. Court of Appeals (1988), may the court grant (a) moral damages and (b) exemplary damages? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) Not on that showing. While no proof of pecuniary loss is needed for moral damages, the claimant must satisfactorily prove the factual basis of the damages and its causal relation to the defendant's acts; moral damages compensate actual injury and are not meant to punish, so they are not corrective or exemplary damages. (b) No. Exemplary damages need not be proved, but the plaintiff must first show entitlement to moral, temperate or compensatory damages; failing that, they cannot be considered.",
+        "legalBasis": "In PNB v. Court of Appeals (1988), \"[w]hile no proof of pecuniary loss is necessary in order that moral damages may be awarded ... it is nevertheless essential that the claimant satisfactorily proves the existence of the factual basis of the damages and its causal relation to defendant's acts ... moral damages ... are in the category of an award designed to compensate the claimant for actual injury suffered and not to impose a penalty on the wrongdoer. Moral damages, in other words, are not corrective or exemplary damages.\" Exemplary damages \"need not be proved, although plaintiff must show that he is entitled to moral, temperate or compensatory damages.\"",
+        "application": "Dino proves neither a factual basis nor a causal link, and seeks punishment, which is not the role of moral damages.",
+        "conclusion": "(a) No moral damages; (b) no exemplary damages. **Bar trap:** asking for moral damages \"to punish\" confuses them with exemplary damages."
+      },
+      "keyPoints": [
+        "No proof of pecuniary loss needed for moral damages",
+        "But factual basis and causal relation must be proved",
+        "Moral damages compensate, do not punish",
+        "Exemplary damages need prior entitlement to other damages",
+        "Exemplary damages need not be proved in amount"
+      ],
+      "caseIds": [
+        "case-0079"
+      ],
+      "source": {
+        "caseTitle": "Philippine National Bank v. Court of Appeals, et al. (1988)",
+        "grNumber": "G.R. No. L-45770",
+        "url": "https://lawphil.net/judjuris/juri1988/mar1988/gr_l-45770_1988.html",
+        "part": "Decision, discussion of the burden of proof for moral and exemplary damages",
+        "excerpt": "As to exemplary damages, Article 2229 of the Civil Code provides that such damages may be imposed by way of example or correction for the public good. While exemplary damages cannot be recovered as a matter of right, they need not be proved, although plaintiff must show that he is entitled to moral, temperate or compensatory damages before the Court may consider the question of whether or not exemplary damages should be awarded. While no proof of pecuniary loss is necessary in order that moral damages may be awarded, the amount of indemnity being left to the discretion of the court, it is nevertheless essential that the claimant satisfactorily proves the existence of the factual basis of the damages and its causal relation to defendant's acts. This is so because moral damages though incapable of pecuniary estimation, are in the category of an award designed to compensate the claimant for actual injury suffered and not to impose a penalty on the wrongdoer. Moral damages, in other words, are not corrective or exemplary damages."
+      }
+    },
+    {
+      "id": "q-1178",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Felix won a suit that Gina had filed against him in good faith. He asks the court to order Gina to pay the fees of the lawyer he had to hire. In another case, Hugo won against Iris, whose suit was filed in bad faith to harass him. Under PNB v. Court of Appeals (1988), may attorney's fees be awarded to Felix or to Hugo as damages? Explain.",
+      "suggestedAnswer": {
+        "answer": "Not to Felix; possibly to Hugo. It is not sound public policy to place a penalty on the right to litigate; compelling the losing party to pay the winner's lawyer would invite swelling fees and penalize the right to litigate. A litigant is not entitled to recover attorney's fees as damages where no bad faith of the adversary is shown, and such an award is the exception rather than the general rule. Gina acted in good faith; Iris acted in bad faith.",
+        "legalBasis": "In PNB v. Court of Appeals (1988), \"[i]t is not sound public policy to place a penalty on the right to litigate. To compel the defeated party to pay the fees of counsel for his successful opponent would throw wide open the door of temptation to the opposing party and his counsel to swell the fees to undue proportions ... Even under the New Civil Code a litigant would not be entitled to recover the fees paid to his attorney as damages where no bad faith on the part of his adversary was shown. Needless to say, award of attorney's fees is the exception rather than the general rule.\"",
+        "application": "Felix shows no bad faith by Gina; Hugo shows bad faith by Iris.",
+        "conclusion": "No fees for Felix; fees may be considered for Hugo. **Bar trap:** hiring a lawyer to defend a good-faith suit is a cost of litigation, not damages."
+      },
+      "keyPoints": [
+        "No penalty on the right to litigate",
+        "Risk of swollen fees",
+        "No fees as damages without the adversary's bad faith",
+        "Attorney's fees are the exception"
+      ],
+      "caseIds": [
+        "case-0079"
+      ],
+      "source": {
+        "caseTitle": "Philippine National Bank v. Court of Appeals, et al. (1988)",
+        "grNumber": "G.R. No. L-45770",
+        "url": "https://lawphil.net/judjuris/juri1988/mar1988/gr_l-45770_1988.html",
+        "part": "Decision, discussion of attorney's fees and the amended counterclaim",
+        "excerpt": "It is not sound public policy to place a penalty on the right to litigate. To compel the defeated party to pay the fees of counsel for his successful opponent would throw wide open the door of temptation to the opposing party and his counsel to swell the fees to undue proportions. To sentence litigant to pay his adversary's lawyer's fees would be imposing a penalty on his right to litigate. Even under the New Civil Code a litigant would not be entitled to recover the fees paid to his attorney as damages where no bad faith on the part of his adversary was shown. Needless to say, award of attorney's fees is the exception rather than the general rule."
+      }
     }
   ]
 }
