@@ -841,6 +841,21 @@
       "ruling": "The petition was partly granted. (1) The mining laws Scott invoked apply to entry into land where prospecting or mining is done, not to land used only for ingress and egress; Scott failed to prove its right to use Philrock's access routes. (2) But there was no credible proof of actual damages: the trial court made no specific finding of their extent, and the testimonies cited spoke only of reduced operations, diverted attention, sleeplessness and anxiety; how ₱800,000 was arrived at was never shown and remained pure speculation. Under Article 2199, compensation is due only for pecuniary loss duly proved. Exemplary damages had no legal basis because, under Article 2234, the claimant must first show entitlement to moral, temperate or compensatory damages, and there was also no agreement on stipulated damages. Attorney's fees were deleted because the decision's body gave no statement that they were just and equitable under Article 2208(11) and no finding on the amount.",
       "keyDoctrine": "Actual damages are due only for pecuniary loss duly proved (Art. 2199); a court must show how the amount was arrived at. Exemplary damages (Art. 2229) require a prior showing of entitlement to moral, temperate or compensatory damages (Art. 2234); where liquidated damages are stipulated, they may be recovered without proof of loss, but exemplary damages in addition require a showing that the claimant would have been entitled to moral, temperate or compensatory damages were it not for the stipulation. Attorney's fees need factual, legal and equitable justification stated in the body of the decision.",
       "sourceUrl": "https://lawphil.net/judjuris/juri1995/mar1995/gr_112916_1995.html"
+    },
+    {
+      "id": "case-0104",
+      "status": "draft",
+      "name": "De Leon, et al. v. Court of Appeals, et al.",
+      "grNumber": "G.R. No. L-31931",
+      "year": 1988,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Exemplary or Corrective Damages",
+      "facts": "In 1959 the spouses De Leon bought a Bulacan fishpond from the spouses Briones for ₱120,000, which was then mortgaged to the Tantocos. Of the price, Fortunato de Leon, a lawyer since 1929, withheld ₱89,000 and wrote and signed in his own hand that he assumed the Briones' ₱89,000 debt to the Tantocos. He paid off the first mortgage but paid Dr. Cornelio Tantoco only ₱29,382.50 of the registered ₱68,824 second mortgage plus interest, and demanded its discharge as \"full\" payment, claiming to act for the Briones. Briones denied ever hiring him. The De Leons then sued Dr. Tantoco, a prominent Bulacan surgeon and hospital owner, for discharge of the mortgage, calling him a money lender and accusing him of fraud, forgery and collusion. The trial court dismissed the complaint and, on Tantoco's counterclaim, ordered the De Leons to pay the balance with interest and ₱100,000 moral and exemplary damages; the Court of Appeals reduced these to ₱60,000.",
+      "issue": "Was the award of ₱60,000 as moral and exemplary damages proper?",
+      "ruling": "The award was proper in principle but reduced to ₱25,000. Moral damages may be recovered if they are the proximate result of the defendant's wrongful act or omission. Exemplary damages may be awarded on these conditions: (1) they are imposed by way of example or correction only in addition to compensatory damages, among others, cannot be recovered as a matter of right, and depend on the amount of compensatory damages; (2) the claimant must first establish his right to moral, temperate, liquidated or compensatory damages; and (3) the wrongful act must be accompanied by bad faith, and the guilty party must have acted in a wanton, fraudulent, reckless, oppressive or malevolent manner. The documents showed De Leon's deliberate intent to defraud Tantoco of the amount withheld; the unfounded and maliciously prosecuted suit, which maligned a respected surgeon, supplied the factual basis of moral damages and its causal link, and with moral damages established, exemplary damages were proper. But the amount was excessive compared to the actual losses: moral damages compensate, are not a penalty, and are not meant to enrich. Using 25% of the principal as a guide and considering the peso's depreciation, ₱25,000 in aggregate was reasonable.",
+      "keyDoctrine": "Exemplary damages require: (1) they are awarded only in addition to compensatory damages, among others, and not as a matter of right; (2) the claimant must first establish a right to moral, temperate, liquidated or compensatory damages; and (3) the wrongful act must be accompanied by bad faith, the guilty party having acted in a wanton, fraudulent, reckless, oppressive or malevolent manner. An unfounded, maliciously prosecuted suit can establish the factual basis and causal link for moral damages, which then support exemplary damages. Moral damages compensate actual injury, are not a penalty and must not enrich; an excessive award relative to the actual losses may be reduced.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri1988/aug1988/gr_l-31931_1988.html"
     }
   ],
   "questions": [
@@ -16913,6 +16928,276 @@
         "url": "https://lawphil.net/judjuris/juri1995/mar1995/gr_112916_1995.html",
         "part": "Decision, the disposition",
         "excerpt": "WHEREFORE, the instant petition is partly GRANTED and the awards of actual damages, exemplary damages, and attorney's fees in the challenged decision are DELETED. In all other respects, the challenged decision is AFFIRMED."
+      }
+    },
+    {
+      "id": "q-1119",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Exemplary or Corrective Damages",
+      "prompt": "Under the jurisprudence restated in De Leon v. Court of Appeals, what are the conditions for awarding exemplary damages? Explain each.",
+      "suggestedAnswer": {
+        "answer": "(1) Exemplary damages may be imposed by way of example or correction only in addition, among others, to compensatory damages; they cannot be recovered as a matter of right, their determination depending on the amount of compensatory damages that may be awarded. (2) The claimant must first establish his right to moral, temperate, liquidated or compensatory damages. (3) The wrongful act must be accompanied by bad faith, and the award is allowed only if the guilty party acted in a wanton, fraudulent, reckless, oppressive or malevolent manner.",
+        "legalBasis": "In De Leon v. Court of Appeals, \"jurisprudence sets certain conditions when exemplary damages may be awarded, to wit: (1) They may be imposed by way of example or correction only in addition, among others, to compensatory damages and cannot be recovered as a matter of right, their determination depending upon the amount of compensatory damages that may be awarded to the claimant; (2) the claimant must first establish his right to moral, temperate, liquidated or compensatory damages; and (3) the wrongful act must be accompanied by bad faith, and the award would be allowed only if the guilty party acted in a wanton, fraudulent, reckless, oppressive or malevolant manner.\" (Citing Octot v. Ybañez and other cases.)",
+        "application": "In the case, moral damages were established and the plaintiffs acted fraudulently, so exemplary damages were proper.",
+        "conclusion": "Three conditions: additional and not a matter of right; prior entitlement to other damages; bad faith with wanton, fraudulent, reckless, oppressive or malevolent conduct. **Bar trap:** compare Article 2231, under which gross negligence suffices in quasi-delicts; the third condition as stated here reflects the contract and bad-faith cases."
+      },
+      "keyPoints": [
+        "In addition to compensatory damages, not a matter of right",
+        "Determination depends on compensatory damages awarded",
+        "Claimant must first establish moral, temperate, liquidated or compensatory damages",
+        "Wrongful act accompanied by bad faith",
+        "Wanton, fraudulent, reckless, oppressive or malevolent manner"
+      ],
+      "caseIds": [
+        "case-0104"
+      ],
+      "source": {
+        "caseTitle": "De Leon, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-31931",
+        "url": "https://lawphil.net/judjuris/juri1988/aug1988/gr_l-31931_1988.html",
+        "part": "Decision, on the conditions for exemplary damages",
+        "excerpt": "On the other hand, jurisprudence sets certain conditions when exemplary damages may be awarded, to wit: (1) They may be imposed by way of example or correction only in addition, among others, to compensatory damages and cannot be recovered as a matter of right, their determination depending upon the amount of compensatory damages that may be awarded to the claimant; (2) the claimant must first establish his right to moral, temperate, liquidated or compensatory damages; and (3) the wrongful act must be accompanied by bad faith, and the award would be allowed only if the guilty party acted in a wanton, fraudulent, reckless, oppressive or malevolant manner"
+      }
+    },
+    {
+      "id": "q-1120",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Exemplary or Corrective Damages",
+      "prompt": "A buyer of mortgaged land, a lawyer, wrote and signed a statement assuming the seller's ₱89,000 debt to the mortgagee and withheld that amount from the price, but later paid the mortgagee only part and sued him to compel the discharge of the mortgage, branding him a money lender guilty of fraud and forgery. The suit was dismissed. The mortgagee, a respected surgeon, proved he was humiliated and maligned. Is he entitled to moral and exemplary damages on his counterclaim? Explain.",
+      "suggestedAnswer": {
+        "answer": "Yes. The documents showed the buyer's deliberate intent to defraud the mortgagee of the amount withheld; the filing of an unfounded and maliciously prosecuted case satisfactorily proves the factual basis for moral damages and its causal relation to the buyer's acts. The mortgagee, who had a good name to protect, was humiliated and maligned. With entitlement to moral damages established, exemplary damages are also proper.",
+        "legalBasis": "In De Leon v. Court of Appeals, the documents were \"plain and visible evidence of the deliberate intent of petitioner to defraud respondent of the amount withheld.\" \"The filing of the case against respondent being unfounded and maliciously prosecuted satisfactorily proves the existence of the factual basis for moral damages and the causal relation to petitioners' acts.\" \"The entitlement to moral damages having been established the award of exemplary damages is proper.\"",
+        "application": "The buyer's own handwritten assumption contradicted his suit; the suit was malicious and damaged the mortgagee's reputation.",
+        "conclusion": "Both are proper, in a reasonable amount. **Bar trap:** what made the suit actionable was malice and lack of foundation, shown by the buyer's own documents, not the mere fact that he lost."
+      },
+      "keyPoints": [
+        "Deliberate intent to defraud shown by documents",
+        "Unfounded and maliciously prosecuted suit",
+        "Factual basis and causal relation for moral damages",
+        "Good name maligned",
+        "Moral damages established: exemplary damages proper"
+      ],
+      "caseIds": [
+        "case-0104"
+      ],
+      "source": {
+        "caseTitle": "De Leon, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-31931",
+        "url": "https://lawphil.net/judjuris/juri1988/aug1988/gr_l-31931_1988.html",
+        "part": "Decision, on the basis for moral and exemplary damages",
+        "excerpt": "The documents speak for themselves. They are mute but plain and visible evidence of the deliberate intent of petitioner to defraud respondent of the amount withheld from the Briones spouses to cover the amount of the mortgage loan in favor of respondent. The filing of the case against respondent being unfounded and maliciously prosecuted satisfactorily proves the existence of the factual basis for moral damages and the causal relation to petitioners' acts … He has been humiliated, embarrassed, maligned and has been charged in bad faith as a money lender in petitioner's complaint accusing him of defrauding the Briones spouses (TSN, pp. 227-250). The entitlement to moral damages having been established the award of exemplary damages is proper"
+      }
+    },
+    {
+      "id": "q-1121",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Exemplary or Corrective Damages",
+      "prompt": "In the same case, the Court of Appeals awarded ₱60,000 as moral and exemplary damages in one aggregate amount, where the disputed balance of the loan was about ₱64,921. (a) Is an aggregate award of moral and exemplary damages improper? (b) Was the amount reasonable? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) Not by itself. While an aggregate award may not be the usual way of awarding them, there was no question of the claimant's entitlement to both. (b) No; it was excessive compared to the actual losses. Moral damages are designed to compensate for actual injury and not to penalize; they are emphatically not intended to enrich the complainant, but only to obtain means, diversion or amusements to alleviate the suffering. Using 25% of the principal as a reasonable guide, and considering the peso's depreciation, the Court reduced the aggregate award to ₱25,000.",
+        "legalBasis": "In De Leon v. Court of Appeals, \"[w]hile the award of moral and exemplary damages in an aggregate amount may not be the usual way of awarding said damages there is no question of respondent's entitlement to moral and exemplary damage ... The amount should be reduced, however, for being excessive compared to the actual losses sustained by the aggrieved party.\" \"'[M]oral damages are emphatically not intended to enrich a complainant at the expense of a defendant.'\" Citing Miranda Ribaya, \"25% of the principal amount\" was reasonable; \"considering the depreciation of the Philippine peso today ... the award of moral and exemplary damages in the amount of P25,000.00 is reasonable.\"",
+        "application": "₱60,000 nearly equaled the whole disputed balance, far out of proportion to the actual losses.",
+        "conclusion": "(a) Not invalid in itself; (b) reduced to ₱25,000. **Bar trap:** the 25% guide was what the Court used in this case; it is not a fixed rule for every case."
+      },
+      "keyPoints": [
+        "Aggregate award not the usual way, but not fatal",
+        "Reduce if excessive compared to actual losses",
+        "Moral damages compensate, not penalize",
+        "Not intended to enrich the complainant",
+        "25% of the principal used as a guide here"
+      ],
+      "caseIds": [
+        "case-0104"
+      ],
+      "source": {
+        "caseTitle": "De Leon, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-31931",
+        "url": "https://lawphil.net/judjuris/juri1988/aug1988/gr_l-31931_1988.html",
+        "part": "Decision, on the amount of moral and exemplary damages",
+        "excerpt": "While the award of moral and exemplary damages in an aggregate amount may not be the usual way of awarding said damages there is no question of respondent's entitlement to moral and exemplary damage (Tan Kapoe v. Masa, supra). The amount should be reduced, however, for being excessive compared to the actual losses sustained by the aggrieved party … Time and again the Court has ruled that \"moral damages are emphatically not intended to enrich a complainant at the expense of a defendant. They are awarded only to enable the injured party to obtain means, diversion or amusements that will serve to alleviate the moral suffering he has undergone, by reason of the defendants' culpable action\" … In the case of Miranda Ribaya v. Bautista (95 SCRA 672 [1980]), this Court considered 25% of the principal amount as reasonable. In the case at bar, the Court of Appeals found on February 21, 1970 that the outstanding balance of the disputed loan was P64,921.69. Twenty five percent thereof is P16,230.00 but considering the depreciation of the Philippine peso today, it is believed that the award of moral and exemplary damages in the amount of P25,000.00 is reasonable."
+      }
+    },
+    {
+      "id": "q-1122",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Exemplary or Corrective Damages",
+      "prompt": "Ana sued Ben, her creditor, for the cancellation of a mortgage, honestly but mistakenly believing her debt was fully paid; she lost. Separately, Carla sued Dino, also her creditor, for cancellation of a mortgage, knowing she had signed a document assuming the full debt and had paid only part, and accused Dino in her complaint of forgery and extortion. Both creditors counterclaim for exemplary damages. Who may recover them? Explain.",
+      "suggestedAnswer": {
+        "answer": "Only Dino, if he also establishes his right to moral or other damages. Exemplary damages require that the claimant first establish his right to moral, temperate, liquidated or compensatory damages, and that the wrongful act be accompanied by bad faith, with the guilty party acting in a wanton, fraudulent, reckless, oppressive or malevolent manner. Ana's honest mistake is not bad faith. Carla's suit, contradicted by her own document and coupled with false accusations, is malicious and fraudulent, and if it humiliated Dino, it supports moral damages and, with them, exemplary damages.",
+        "legalBasis": "In De Leon v. Court of Appeals, exemplary damages require that \"(2) the claimant must first establish his right to moral, temperate, liquidated or compensatory damages; and (3) the wrongful act must be accompanied by bad faith, and the award would be allowed only if the guilty party acted in a wanton, fraudulent, reckless, oppressive or malevolant manner.\" A suit \"unfounded and maliciously prosecuted\" established the factual basis for moral damages, and \"[t]he entitlement to moral damages having been established the award of exemplary damages is proper.\"",
+        "application": "Ana acted in good faith. Carla acted with fraud and malice.",
+        "conclusion": "Exemplary damages for Dino only. **Bar trap:** losing a suit is not bad faith; malice and fraud are what the law punishes by example."
+      },
+      "keyPoints": [
+        "Honest mistake: no bad faith",
+        "Suit contradicted by one's own document: malicious",
+        "Claimant must first establish moral or other damages",
+        "Bad faith with fraudulent or malevolent conduct"
+      ],
+      "caseIds": [
+        "case-0104"
+      ],
+      "source": {
+        "caseTitle": "De Leon, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-31931",
+        "url": "https://lawphil.net/judjuris/juri1988/aug1988/gr_l-31931_1988.html",
+        "part": "Decision, on the conditions for exemplary damages",
+        "excerpt": "(2) the claimant must first establish his right to moral, temperate, liquidated or compensatory damages; and (3) the wrongful act must be accompanied by bad faith, and the award would be allowed only if the guilty party acted in a wanton, fraudulent, reckless, oppressive or malevolant manner … The filing of the case against respondent being unfounded and maliciously prosecuted satisfactorily proves the existence of the factual basis for moral damages and the causal relation to petitioners' acts"
+      }
+    },
+    {
+      "id": "q-1123",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Exemplary or Corrective Damages",
+      "prompt": "Eva won a counterclaim for moral and exemplary damages against Felix, whose malicious suit had maligned her over a disputed ₱100,000 balance. The trial court awarded her ₱2 million, saying she \"deserved a large amount to make up for everything.\" Felix appeals the amount. Applying De Leon v. Court of Appeals, how should the appellate court evaluate the award? Reason briefly.",
+      "suggestedAnswer": {
+        "answer": "It should reduce the award if it is excessive compared to the actual losses. Moral damages are designed to compensate actual injury and not to impose a penalty; they are emphatically not intended to enrich the complainant, but only to provide means, diversion or amusements to alleviate the suffering. An award twenty times the disputed balance, meant to \"make up for everything,\" is out of proportion.",
+        "legalBasis": "In De Leon v. Court of Appeals, the amount \"should be reduced ... for being excessive compared to the actual losses sustained by the aggrieved party. Moral damages though incapable of pecuniary estimations, are in the category of an award designed to compensate the claimant for actual injury suffered and not to impose a penalty of the wrongdoer.\" \"[M]oral damages are emphatically not intended to enrich a complainant at the expense of a defendant.\"",
+        "application": "Eva is entitled to the damages, but not to an enriching amount.",
+        "conclusion": "Reduce to a reasonable amount. **Bar trap:** entitlement and amount are separate questions; a valid claim can still be cut down."
+      },
+      "keyPoints": [
+        "Reduce if excessive compared to actual losses",
+        "Moral damages compensate actual injury",
+        "Not a penalty",
+        "Not intended to enrich"
+      ],
+      "caseIds": [
+        "case-0104"
+      ],
+      "source": {
+        "caseTitle": "De Leon, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-31931",
+        "url": "https://lawphil.net/judjuris/juri1988/aug1988/gr_l-31931_1988.html",
+        "part": "Decision, on the amount of moral and exemplary damages",
+        "excerpt": "The amount should be reduced, however, for being excessive compared to the actual losses sustained by the aggrieved party (Prudenciado v. Alliance Transport System, Inc., 148 SCRA 440 [1987]). Moral damages though incapable of pecuniary estimations, are in the category of an award designed to compensate the claimant for actual injury suffered and not to impose a penalty of the wrongdoer"
+      }
+    },
+    {
+      "id": "q-1124",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Exemplary or Corrective Damages",
+      "prompt": "Gina sued Hugo in bad faith, but Hugo, on his counterclaim, offered no evidence that he suffered any humiliation, anxiety or injury to his reputation, and claimed no actual loss. He asks only for exemplary damages \"to teach Gina a lesson.\" May exemplary damages be awarded? Reason briefly.",
+      "suggestedAnswer": {
+        "answer": "No. Exemplary damages may be imposed only in addition to other damages and cannot be recovered as a matter of right; the claimant must first establish his right to moral, temperate, liquidated or compensatory damages. Moral damages, in turn, may be recovered only if they are the proximate result of the defendant's wrongful act, which requires proof of the injury. Hugo proved none.",
+        "legalBasis": "In De Leon v. Court of Appeals, moral damages \"may be recovered if they are the proximate result of the defendant's wrongful act or omission,\" and exemplary damages \"may be imposed by way of example or correction only in addition, among others, to compensatory damages and cannot be recovered as a matter of right,\" and \"the claimant must first establish his right to moral, temperate, liquidated or compensatory damages.\"",
+        "application": "Bad faith alone, without any established damages, leaves nothing for exemplary damages to be added to.",
+        "conclusion": "No exemplary damages. **Bar trap:** exemplary damages cannot be the only award; they are always in addition to another kind."
+      },
+      "keyPoints": [
+        "Exemplary damages are in addition to other damages",
+        "Not recoverable as a matter of right",
+        "Claimant must first establish moral, temperate, liquidated or compensatory damages",
+        "Moral damages need proof of injury proximately caused"
+      ],
+      "caseIds": [
+        "case-0104"
+      ],
+      "source": {
+        "caseTitle": "De Leon, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-31931",
+        "url": "https://lawphil.net/judjuris/juri1988/aug1988/gr_l-31931_1988.html",
+        "part": "Decision, on moral damages and the conditions for exemplary damages",
+        "excerpt": "Though incapable of pecuniary computation, moral damages may be recovered if they are the proximate result of the defendant's wrongful act or omission … On the other hand, jurisprudence sets certain conditions when exemplary damages may be awarded, to wit: (1) They may be imposed by way of example or correction only in addition, among others, to compensatory damages and cannot be recovered as a matter of right, their determination depending upon the amount of compensatory damages that may be awarded to the claimant; (2) the claimant must first establish his right to moral, temperate, liquidated or compensatory damages"
+      }
+    },
+    {
+      "id": "q-1125",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Exemplary or Corrective Damages",
+      "prompt": "Which of the following is NOT among the conditions for exemplary damages restated in De Leon v. Court of Appeals?",
+      "choices": {
+        "A": "They may be imposed only in addition, among others, to compensatory damages, and not as a matter of right.",
+        "B": "The claimant must first establish his right to moral, temperate, liquidated or compensatory damages.",
+        "C": "The wrongful act must be accompanied by bad faith, the guilty party acting in a wanton, fraudulent, reckless, oppressive or malevolent manner.",
+        "D": "The claimant must prove the exact amount of the exemplary damages."
+      },
+      "correct": "D",
+      "explanation": "**D is correct** (it is not a condition). The conditions are those in A, B and C. The amount of exemplary damages need not be proved; their \"determination depend[s] upon the amount of compensatory damages that may be awarded.\" **Bar trap:** Article 2234 likewise says \"the amount of the exemplary damages need not be proved.\"",
+      "caseIds": [
+        "case-0104"
+      ],
+      "source": {
+        "caseTitle": "De Leon, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-31931",
+        "url": "https://lawphil.net/judjuris/juri1988/aug1988/gr_l-31931_1988.html",
+        "part": "Decision, on the conditions for exemplary damages",
+        "excerpt": "(1) They may be imposed by way of example or correction only in addition, among others, to compensatory damages and cannot be recovered as a matter of right, their determination depending upon the amount of compensatory damages that may be awarded to the claimant; (2) the claimant must first establish his right to moral, temperate, liquidated or compensatory damages; and (3) the wrongful act must be accompanied by bad faith, and the award would be allowed only if the guilty party acted in a wanton, fraudulent, reckless, oppressive or malevolant manner"
+      }
+    },
+    {
+      "id": "q-1126",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Exemplary or Corrective Damages",
+      "prompt": "In De Leon v. Court of Appeals, what proved the factual basis for moral damages and its causal relation to the petitioners' acts?",
+      "choices": {
+        "A": "The mere fact that the petitioners lost the case.",
+        "B": "The filing of a case that was unfounded and maliciously prosecuted.",
+        "C": "The respondent's age.",
+        "D": "The petitioners' failure to appear at trial."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** \"The filing of the case against respondent being unfounded and maliciously prosecuted satisfactorily proves the existence of the factual basis for moral damages and the causal relation to petitioners' acts.\" **A is wrong:** losing alone is not malice. **C and D are wrong:** not the basis stated. **Bar trap:** the petitioner's own documents showed the deliberate intent to defraud.",
+      "caseIds": [
+        "case-0104"
+      ],
+      "source": {
+        "caseTitle": "De Leon, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-31931",
+        "url": "https://lawphil.net/judjuris/juri1988/aug1988/gr_l-31931_1988.html",
+        "part": "Decision, on the basis for moral damages",
+        "excerpt": "The filing of the case against respondent being unfounded and maliciously prosecuted satisfactorily proves the existence of the factual basis for moral damages and the causal relation to petitioners' acts"
+      }
+    },
+    {
+      "id": "q-1127",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Exemplary or Corrective Damages",
+      "prompt": "In De Leon v. Court of Appeals, the aggregate award of moral and exemplary damages was",
+      "choices": {
+        "A": "deleted for lack of bad faith.",
+        "B": "increased to ₱100,000.",
+        "C": "reduced to ₱25,000.",
+        "D": "affirmed at ₱60,000."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** \"[T]he assailed decision of the Court of Appeals is AFFIRMED but the aggregate award of moral and exemplary damages is reduced to P25,000.00.\" **A is wrong:** bad faith was found. **B and D are wrong:** ₱60,000 was excessive. **Bar trap:** the Court used 25% of the principal as a guide, adjusted for the peso's depreciation.",
+      "caseIds": [
+        "case-0104"
+      ],
+      "source": {
+        "caseTitle": "De Leon, et al. v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. L-31931",
+        "url": "https://lawphil.net/judjuris/juri1988/aug1988/gr_l-31931_1988.html",
+        "part": "Decision, the disposition",
+        "excerpt": "PREMISES CONSIDERED, the assailed decision of the Court of Appeals is AFFIRMED but the aggregate award of moral and exemplary damages is reduced to P25,000.00."
       }
     }
   ]
