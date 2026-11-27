@@ -481,6 +481,21 @@
       "ruling": "No. The awards were deleted; the rest of the decision was affirmed. Moral damages require that the claimant satisfactorily prove the factual basis of the damages and its causal relation to the defendant's acts; they compensate actual injury, not punish, and are not corrective or exemplary damages. The law requires a wrongful act or omission of the defendant as the proximate cause of the anguish. The adverse result of an action does not per se make it wrongful, since no penalty should be placed on the right to litigate. In the absence of malice and bad faith, the anxiety of being sued is only what is usually caused to any defendant, and does not warrant moral damages, still less exemplary damages. Attorney's fees were also deleted: they are the exception, and are not recoverable as damages where no bad faith of the adversary is shown. The Court also upheld the admission of the amended counterclaim despite a one-day shortfall in the three-day notice, since PNB was heard and not prejudiced.",
       "keyDoctrine": "Moral damages require satisfactory proof of their factual basis and of a wrongful act or omission of the defendant as the proximate cause of the injury; they are compensatory, not corrective. Being sued by a party who acted without malice or bad faith causes only the ordinary anxiety of litigation, which does not warrant moral damages, and without moral, temperate or compensatory damages there can be no exemplary damages. Attorney's fees are the exception and are not awarded absent bad faith. The three-day notice rule for motions is liberally applied when the adverse party is not prejudiced.",
       "sourceUrl": "https://lawphil.net/judjuris/juri1988/mar1988/gr_l-45770_1988.html"
+    },
+    {
+      "id": "case-0080",
+      "status": "draft",
+      "name": "Lao v. Court of Appeals, et al.",
+      "grNumber": "G.R. No. 82808",
+      "year": 1991,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "facts": "Dennis Lao was a salesman of New St. Joseph Lumber, owned by Chan Tong. When customer Benjamin Espiritu failed to pay for construction materials, the company, on its lawyer's advice, filed an estafa complaint, and Lao, as the employee who handled the sale, was directed to sign the affidavit. The fiscal found probable cause and filed an information, but the court dismissed the case as civil in nature. Espiritu then sued Lao and the company for malicious prosecution. The company's lawyer, who also represented Lao, failed to attend the pre-trial and to inform Lao; the defendants were declared in default, and the court ordered them to pay Espiritu ₱100,000 moral damages and attorney's fees. Since the company had folded up, Espiritu levied on Lao's car. The Court of Appeals dismissed Lao's appeal.",
+      "issue": "Is Lao liable for damages for malicious prosecution?",
+      "ruling": "No. The Court partially set aside the decision and absolved Lao. An action for damages for malicious prosecution requires (1) the fact of the prosecution, that the defendant was himself the prosecutor, and that the action was terminated with an acquittal; (2) that the prosecutor acted without probable cause; and (3) that he was impelled by legal malice. Lao was only a witness, not the prosecutor (the complainant was his employer); there was probable cause, as the fiscal found; and he acted without malice, as an employee with personal knowledge of the sale. An unsuccessful prosecution is not necessarily malicious: persons should have free resort to the courts without having to stand trial for prosecutions instituted in good faith. As an agent, Lao was not personally liable, and he was deprived of his day in court through the gross negligence of the counsel his employer hired, so the judgment against him was a nullity.",
+      "keyDoctrine": "Damages for malicious prosecution (a case for moral damages under Art. 2219(8)) require: (1) a prosecution by the defendant himself, terminated with an acquittal or dismissal; (2) absence of probable cause; and (3) legal malice. A mere witness is not the prosecutor; a fiscal's finding of probable cause negates the second element; and an unsuccessful prosecution instituted in good faith is not malicious, since persons should have free resort to the courts.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri1991/jul1991/gr_82808_1991.html"
     }
   ],
   "questions": [
@@ -7855,6 +7870,236 @@
         "url": "https://lawphil.net/judjuris/juri1988/mar1988/gr_l-45770_1988.html",
         "part": "Decision, the disposition",
         "excerpt": "WHEREFORE, except for the deletion of the award of moral and exemplary damages as well as attorney's fees to private respondents spouses Vicente E. Medina and Leticia Lopez, the decision of the Court of Appeals in CA- G.R. No. 48720 is hereby affirmed in all other respects."
+      }
+    },
+    {
+      "id": "q-0832",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "What are the elements of an action for damages based on malicious prosecution? Apply them to a salesman who, on his employer's instruction, signed the affidavit used in his employer's estafa complaint against a customer, where the fiscal found probable cause but the court later dismissed the case as purely civil. Explain, citing Lao v. Court of Appeals.",
+      "suggestedAnswer": {
+        "answer": "Three elements must be present: (1) the fact of the prosecution, that the defendant was himself the prosecutor, and that the action was finally terminated with an acquittal; (2) that in bringing the action, the prosecutor acted without probable cause; and (3) that the prosecutor was actuated by legal malice. None is present against the salesman.",
+        "legalBasis": "In Lao v. CA, the Court laid down these three elements (citing Ferrer v. Vergara) and held that Lao \"was only a witness, not the prosecutor in the estafa case. The prosecutor was his employer\"; that \"[t]here was probable cause for the charge of estafa against Espiritu, as found and certified by the investigating fiscal himself\"; and that Lao \"was not motivated by malice in making the affidavit,\" which he executed as the salesman with personal knowledge of the transaction.",
+        "application": "The salesman did not prosecute; the fiscal's finding of probable cause defeats the second element; and acting on instructions with personal knowledge shows no malice. The case's later dismissal does not make it malicious.",
+        "conclusion": "The salesman is not liable for malicious prosecution. **Bar trap:** a witness whose affidavit supports a complaint is not, by that alone, the prosecutor; and a fiscal's finding of probable cause weighs heavily against a claim of no probable cause."
+      },
+      "keyPoints": [
+        "Element 1: prosecution by the defendant himself, terminated with an acquittal",
+        "Element 2: absence of probable cause",
+        "Element 3: legal malice",
+        "A witness is not the prosecutor",
+        "The fiscal found probable cause; the employee acted without malice"
+      ],
+      "caseIds": [
+        "case-0080"
+      ],
+      "source": {
+        "caseTitle": "Lao v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 82808",
+        "url": "https://lawphil.net/judjuris/juri1991/jul1991/gr_82808_1991.html",
+        "part": "Decision, discussion of the elements of malicious prosecution",
+        "excerpt": "To maintain an action for damages based on malicious prosecution, three elements must be present: First, the fact of the prosecution and the further fact that the defendant was himself the prosecutor, and that the action was finally terminated with an acquittal; second, that in bringing the action, the prosecutor acted without probable cause; and third, the prosecutor was actuated or impelled by legal malice (Ferrer vs. Vergara, 52 O.G. 291). Lao was only a witness, not the prosecutor in the estafa case. The prosecutor was his employer, Chan Tong or the St. Joseph Lumber. There was probable cause for the charge of estafa against Espiritu, as found and certified by the investigating fiscal himself. Lao was not motivated by malice in making the affidavit upon which the fiscal based the filing of the information against Espiritu."
+      }
+    },
+    {
+      "id": "q-0833",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "A debtor whose estafa case was dismissed as purely civil sues the creditor's employee for moral damages, arguing that since the prosecution failed, it must have been malicious. Is the argument correct? Explain the policy behind the rule, citing Lao v. Court of Appeals.",
+      "suggestedAnswer": {
+        "answer": "No. Although the prosecution did not prosper, an unsuccessful prosecution may not be labeled malicious. Sound principles of justice and public policy dictate that persons have free resort to the courts for redress of wrongs and vindication of their rights without later having to stand trial for prosecutions instituted in good faith.",
+        "legalBasis": "In Lao v. CA, the Court held: \"Although the prosecution of Espiritu for estafa did not prosper, the unsuccessful prosecution may not be labelled as malicious. 'Sound principles of justice and public policy dictate that persons shall have free resort to the courts for redress of wrongs and vindication of their rights without later having to stand trial for instituting prosecutions in good faith' (Buenaventura vs. Sto. Domingo, 103 Phil. 239).\"",
+        "application": "The employee executed his affidavit in good faith, as the salesman who knew the transaction; the prosecution's failure, because the court found the liability merely civil, does not show malice.",
+        "conclusion": "The argument is wrong. **Bar trap:** malicious prosecution needs malice and lack of probable cause, not just a failed case; otherwise people would be deterred from seeking justice."
+      },
+      "keyPoints": [
+        "An unsuccessful prosecution is not necessarily malicious",
+        "Public policy: free resort to the courts",
+        "No liability for prosecutions instituted in good faith",
+        "The employee acted in good faith with personal knowledge"
+      ],
+      "caseIds": [
+        "case-0080"
+      ],
+      "source": {
+        "caseTitle": "Lao v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 82808",
+        "url": "https://lawphil.net/judjuris/juri1991/jul1991/gr_82808_1991.html",
+        "part": "Decision, discussion of the policy on unsuccessful prosecutions",
+        "excerpt": "He executed it as an employee, a salesman of the St. Joseph Lumber from whom Espiritu made his purchases of construction materials and who, therefore, had personal knowledge of the transaction. Although the prosecution of Espiritu for estafa did not prosper, the unsuccessful prosecution may not be labelled as malicious. \"Sound principles of justice and public policy dictate that persons shall have free resort to the courts for redress of wrongs and vindication of their rights without later having to stand trial for instituting prosecutions in good faith\" (Buenaventura vs. Sto. Domingo, 103 Phil. 239)."
+      }
+    },
+    {
+      "id": "q-0834",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "An employee and his employer were sued together and represented by a lawyer the employer hired. The lawyer focused only on the employer, never told the employee about the pre-trial, missed the pre-trial, and let the default judgment become final because the employer's business was insolvent anyway. The creditor then levied on the employee's car. What relief, if any, does the employee have? Explain, citing Lao v. Court of Appeals.",
+      "suggestedAnswer": {
+        "answer": "The judgment against the employee may be set aside as a nullity, because he was deprived of his day in court by the gross negligence of the counsel hired to defend him, and he had a valid defense besides. Its execution against him cannot proceed.",
+        "legalBasis": "In Lao v. CA, the Court found that the lawyer \"neglected to defend Lao. He concentrated on the defense of the company and completely forgot his duty to defend Lao as well. He never informed Lao about the pre-trial conferences.\" He allowed the judgment to become final, so the creditor levied on Lao's car. \"In view of the foregoing circumstances, the judgment against Lao was a nullity and should be set aside. Its execution against the petitioner cannot be allowed to proceed.\" Moreover, as an agent, Lao was not personally liable to the party with whom he contracted (Art. 1897).",
+        "application": "The Court partially set aside the Court of Appeals' decision insofar as it held Lao solidarily liable and absolved him of any liability from the unsuccessful estafa prosecution.",
+        "conclusion": "The employee is absolved. **Bar trap:** a client is generally bound by his counsel's mistakes, but not where gross negligence deprives him of his day in court."
+      },
+      "keyPoints": [
+        "Counsel concentrated on the employer and forgot the employee",
+        "He never informed the employee of the pre-trial",
+        "Gross negligence deprived the employee of his day in court",
+        "The judgment against the employee was a nullity; no execution against him",
+        "An agent is not personally liable to the party with whom he contracted (Art. 1897)"
+      ],
+      "caseIds": [
+        "case-0080"
+      ],
+      "source": {
+        "caseTitle": "Lao v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 82808",
+        "url": "https://lawphil.net/judjuris/juri1991/jul1991/gr_82808_1991.html",
+        "part": "Decision, discussion of the employee's day in court and the disposition",
+        "excerpt": "There is merit in petitioner's contention that he was deprived of his day in court in the damage suit filed by Espiritu, due to the gross ignorance, negligence, and dereliction of duty of Attorney Manuel Querubin whom his employer had hired to act as counsel for him and the St. Joseph Lumber. However, Attorney Querubin neglected to defend Lao. He concentrated on the defense of the company and completely forgot his duty to defend Lao as well. He never informed Lao about the pre-trial conferences. … In view of the foregoing circumstances, the judgment against Lao was a nullity and should be set aside. Its execution against the petitioner cannot be allowed to proceed."
+      }
+    },
+    {
+      "id": "q-0835",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Under Lao v. Court of Appeals, which of the following is NOT an element of an action for damages based on malicious prosecution?",
+      "choices": {
+        "A": "The defendant was himself the prosecutor, and the action was terminated with an acquittal.",
+        "B": "The prosecutor acted without probable cause.",
+        "C": "The prosecutor was actuated by legal malice.",
+        "D": "The accused was detained for at least thirty days."
+      },
+      "correct": "D",
+      "explanation": "**D is correct**, because it is not an element. The Court listed three elements: the fact of the prosecution by the defendant himself, terminated with an acquittal; absence of probable cause; and legal malice. **A, B and C are wrong:** each is an element. **Bar trap:** detention is not required.",
+      "caseIds": [
+        "case-0080"
+      ],
+      "source": {
+        "caseTitle": "Lao v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 82808",
+        "url": "https://lawphil.net/judjuris/juri1991/jul1991/gr_82808_1991.html",
+        "part": "Decision, discussion of the elements of malicious prosecution",
+        "excerpt": "To maintain an action for damages based on malicious prosecution, three elements must be present: First, the fact of the prosecution and the further fact that the defendant was himself the prosecutor, and that the action was finally terminated with an acquittal; second, that in bringing the action, the prosecutor acted without probable cause; and third, the prosecutor was actuated or impelled by legal malice"
+      }
+    },
+    {
+      "id": "q-0836",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "In Lao v. Court of Appeals, why was Lao not the \"prosecutor\" for purposes of malicious prosecution?",
+      "choices": {
+        "A": "Because he was only a witness who executed the affidavit as the employee who handled the sale; the complainant was his employer.",
+        "B": "Because the fiscal filed the information.",
+        "C": "Because he did not testify in court.",
+        "D": "Because he resigned before the case was filed."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** The Court said Lao \"was only a witness, not the prosecutor in the estafa case. The prosecutor was his employer, Chan Tong or the St. Joseph Lumber,\" and he \"had no personal interest in the prosecution.\" **B is wrong:** the fiscal's filing does not make the complainant immune; it was not the reason given. **C and D are wrong:** not facts of the case. **Bar trap:** focus on who instigated the prosecution.",
+      "caseIds": [
+        "case-0080"
+      ],
+      "source": {
+        "caseTitle": "Lao v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 82808",
+        "url": "https://lawphil.net/judjuris/juri1991/jul1991/gr_82808_1991.html",
+        "part": "Decision, discussion of the elements of malicious prosecution (the prosecutor)",
+        "excerpt": "Lao was only a witness, not the prosecutor in the estafa case. The prosecutor was his employer, Chan Tong or the St. Joseph Lumber."
+      }
+    },
+    {
+      "id": "q-0837",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "In Lao v. Court of Appeals, what showed that there was probable cause for the estafa charge?",
+      "choices": {
+        "A": "The conviction of the accused.",
+        "B": "The finding and certification of the investigating fiscal after a preliminary investigation.",
+        "C": "The debtor's admission in the civil case.",
+        "D": "The employer's affidavit alone."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** The Court said: \"There was probable cause for the charge of estafa against Espiritu, as found and certified by the investigating fiscal himself.\" **A is wrong:** the case was dismissed. **C and D are wrong:** not the basis cited. **Bar trap:** a dismissal later does not erase probable cause found at the start.",
+      "caseIds": [
+        "case-0080"
+      ],
+      "source": {
+        "caseTitle": "Lao v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 82808",
+        "url": "https://lawphil.net/judjuris/juri1991/jul1991/gr_82808_1991.html",
+        "part": "Decision, discussion of the elements of malicious prosecution (probable cause)",
+        "excerpt": "There was probable cause for the charge of estafa against Espiritu, as found and certified by the investigating fiscal himself."
+      }
+    },
+    {
+      "id": "q-0838",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Apart from the elements of malicious prosecution, on what other ground did Lao v. Court of Appeals hold the employee not personally liable?",
+      "choices": {
+        "A": "He was a minor.",
+        "B": "He had already paid the debt.",
+        "C": "He was only an agent of the company, hence not personally liable to the party with whom he contracted (Art. 1897).",
+        "D": "The debtor waived his claim."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court said \"[h]e was only an agent of St. Joseph Lumber, hence, not personally liable to the party with whom he contracted (Art. 1897, Civil Code).\" **A, B and D are wrong:** not facts of the case. **Bar trap:** an agent acting within his authority binds the principal, not himself.",
+      "caseIds": [
+        "case-0080"
+      ],
+      "source": {
+        "caseTitle": "Lao v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 82808",
+        "url": "https://lawphil.net/judjuris/juri1991/jul1991/gr_82808_1991.html",
+        "part": "Decision, discussion of the employee's liability as agent",
+        "excerpt": "He was only an agent of St. Joseph Lumber, hence, not personally liable to the party with whom he contracted (Art. 1897, Civil Code; Philippine Products Co. vs. Primateria Societe Anonyme, 122 Phil. 698)."
+      }
+    },
+    {
+      "id": "q-0839",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "What did the Court order in Lao v. Court of Appeals?",
+      "choices": {
+        "A": "It affirmed the ₱100,000 moral damages against Lao and the company.",
+        "B": "It reduced the moral damages against Lao to ₱10,000.",
+        "C": "It remanded the case for a new trial against the company.",
+        "D": "It partially set aside the Court of Appeals' decision insofar as it held Lao solidarily liable, and absolved him from any liability arising from the unsuccessful estafa prosecution."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The Court rendered judgment \"partially setting aside the decision of the Court of Appeals ... insofar as it declared the petitioner, Dennis Lao, solidarily liable,\" and absolved him \"from any liability to the private respondent arising from the unsuccessful prosecution.\" **A and B are wrong:** Lao owed nothing. **C is wrong:** no remand. **Bar trap:** the ruling was only as to Lao; the company did not appeal.",
+      "caseIds": [
+        "case-0080"
+      ],
+      "source": {
+        "caseTitle": "Lao v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 82808",
+        "url": "https://lawphil.net/judjuris/juri1991/jul1991/gr_82808_1991.html",
+        "part": "Decision, the disposition",
+        "excerpt": "WHEREFORE, judgment is hereby rendered partially setting aside the decision of the Court of Appeals dated May 21, 1987, insofar as it declared the petitioner, Dennis Lao, solidarily liable with St. Joseph Lumber to pay the damages awarded to the private respondent Benjamin Espiritu. Said petitioner is hereby absolved from any liability to the private respondent arising from the unsuccessful prosecution of Criminal Case No. Q-20086 for estafa against said private respondent."
       }
     }
   ]
