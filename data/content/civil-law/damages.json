@@ -9800,6 +9800,99 @@
         "part": "Decision, discussion of the recomputation of the awards",
         "excerpt": "Consequently, from the above disquisitions, under the terms of the decision which is sought to be executed by the petitioner, no essential change is made by a recomputation as this step is a necessary consequence that flows from the nature of the illegality of dismissal declared by the Labor Arbiter in that decision. A recomputation (or an original computation, if no previous computation has been made) is a part of the law – specifically, Article 279 of the Labor Code and the established jurisprudence on this provision – that is read into the decision. By the nature of an illegal dismissal case, the reliefs continue to add up until full satisfaction, as expressed under Article 279 of the Labor Code. The recomputation of the consequences of illegal dismissal upon execution of the decision does not constitute an alteration or amendment of the final decision being implemented. The illegal dismissal ruling stands; only the computation of monetary consequences of this dismissal is affected, and this is not a violation of the principle of immutability of final judgments. That the amount respondents shall now pay has greatly increased is a consequence that it cannot avoid as it is the risk that it ran when it continued to seek recourses against the Labor Arbiter's decision."
       }
+    },
+    {
+      "id": "q-0894",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Ana borrowed ₱400,000 from Ben under a written note with interest of 15% a year. She defaulted, and the court ordered her to pay the principal with the stipulated 15% interest. The judgment became final, but Ana still has not paid. She argues that from the finality of the judgment only the legal rate of 6% can apply. Is she correct? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. A stipulated interest rate that is not excessive or unconscionable is the law between the parties and applies until full payment of the obligation; the legal rate applies only in the absence of stipulated interest.",
+        "legalBasis": "\"The stipulated interest is the law between the parties and should apply from the time of extrajudicial or judicial demand until full payment.\" Rulings that applied the legal rate in lieu of the stipulated interest from finality are \"in direct contravention of the law, particularly Article 2209 of the Civil Code, which mandates that when a debtor incurs a delay in obligations to pay a sum of money, the indemnity for damages shall be the payment of the interest agreed upon. Only in the absence of a stipulated interest will the legal interest be applied.\" \"[U]nless the stipulated interest is excessive and unconscionable, there is no legal basis for the reduction of the stipulated interest at any time until full payment.\"",
+        "application": "The 15% rate was agreed in writing and is not claimed to be unconscionable, so it runs until Ana pays in full.",
+        "conclusion": "Ana is wrong. **Bar trap:** the 6% rate after finality is the legal rate for when no rate was agreed; it does not replace a valid stipulated rate. (The 2022 Resolution on reconsideration in this case restated the guidelines; read both.)"
+      },
+      "keyPoints": [
+        "Stipulated interest is the law between the parties (Art. 1159)",
+        "It applies until full payment",
+        "Legal interest only absent stipulation (Art. 2209)",
+        "Unless the stipulated rate is excessive or unconscionable"
+      ],
+      "caseIds": [
+        "case-0065"
+      ],
+      "source": {
+        "caseTitle": "Lara's Gifts & Decors, Inc. v. Midtown Industrial Sales, Inc. (Decision)",
+        "grNumber": "G.R. No. 225433",
+        "url": "https://lawphil.net/judjuris/juri2019/aug2019/gr_225433_2019.html",
+        "part": "The Court's Ruling, imposition of legal interest (stipulated interest until full payment)",
+        "excerpt": "Paragraph 3 above failed to qualify that for loans or forbearance of money, the prevailing legal interest should only apply in the absence of stipulated interest. The stipulated interest is the law between the parties and should apply from the time of extrajudicial or judicial demand until full payment. This omission resulted in several rulings of this Court, which imposed the stipulated interest on the adjudged amount until finality of the decision BUT applied the prevailing legal interest in lieu of the stipulated interest from finality of the decision until full payment of the obligation. This is in direct contravention of the law, particularly Article 2209 of the Civil Code, which mandates that when a debtor incurs a delay in obligations to pay a sum of money, the indemnity for damages shall be the payment of the interest agreed upon. Only in the absence of a stipulated interest will the legal interest be applied. To repeat, the stipulated interest is the law between the parties, and should be applied until full payment of the obligation. … Thus, unless the stipulated interest is excessive and unconscionable, there is no legal basis for the reduction of the stipulated interest at any time until full payment of the principal amount. The stipulated interest remains in force until the obligation is satisfied. In the absence of stipulated interest, the prevailing legal interest prescribed by the Bangko Sentral ng Pilipinas shall apply."
+      }
+    },
+    {
+      "id": "q-0895",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "(a) Carla owes Dino ₱300,000 under a loan and is in delay; no interest was stipulated. (b) Eli was ordered to pay Fe ₱300,000 in damages for a quasi-delict (a car crash). In which case is the payment of interest mandatory, and in which is it left to the court's discretion? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) Mandatory: Article 2209 governs obligations to pay a sum of money where the debtor is in delay, and there the payment of interest is mandatory. (b) Discretionary: under Articles 2210 and 2211, interest on damages for breach of contract or for crimes and quasi-delicts may be imposed at the court's discretion, at the prevailing legal rate.",
+        "legalBasis": "\"Under these articles [2210 and 2211], when the obligation, other than loans or forbearance of money, goods or credits, is breached, the court may in its discretion impose an interest on the damages awarded. ... In contrast, Article 2209 of the Civil Code is applicable only to loans or forbearance of money, goods or credit which arise out of 'obligations consisting in the payment of a sum of money, and the debtor incurs in delay,' and thus where there is a debtor-creditor relationship. Articles 2210 and 2211 refer to obligations that do not involve the payment of a sum of money and there is no debtor-creditor relationship. Moreover, the payment of interest in Article 2209 is mandatory, while the payment of interest in Articles 2210 and 2211 is discretionary on the court.\"",
+        "application": "(a) Carla is a debtor in delay on a sum of money. (b) Fe's award is damages for a quasi-delict, where there is no debtor-creditor relationship.",
+        "conclusion": "(a) Mandatory; (b) discretionary. **Bar trap:** interest on tort damages is not a matter of right."
+      },
+      "keyPoints": [
+        "Art. 2209: sum of money, debtor in delay; mandatory interest",
+        "Arts. 2210-2211: breach of contract, crimes, quasi-delicts; discretionary interest",
+        "Debtor-creditor relationship in Art. 2209 only",
+        "Rate: the prevailing legal rate set by the BSP"
+      ],
+      "caseIds": [
+        "case-0065"
+      ],
+      "source": {
+        "caseTitle": "Lara's Gifts & Decors, Inc. v. Midtown Industrial Sales, Inc. (Decision)",
+        "grNumber": "G.R. No. 225433",
+        "url": "https://lawphil.net/judjuris/juri2019/aug2019/gr_225433_2019.html",
+        "part": "The Court's Ruling, Articles 2210 and 2211 apply to obligations other than loans or forbearance",
+        "excerpt": "Under these articles, when the obligation, other than loans or forbearance of money, goods or credits, is breached, the court may in its discretion impose an interest on the damages awarded. The interest imposed in the discretion of the court will be the prevailing legal interest prescribed by the Bangko Sentral ng Pilipinas. In contrast, Article 2209 of the Civil Code is applicable only to loans or forbearance of money, goods or credit which arise out of \"obligations consisting in the payment of a sum of money, and the debtor incurs in delay,\" and thus where there is a debtor-creditor relationship. Articles 2210 and 2211 refer to obligations that do not involve the payment of a sum of money and there is no debtor-creditor relationship. Moreover, the payment of interest in Article 2209 is mandatory, while the payment of interest in Articles 2210 and 2211 is discretionary on the court."
+      }
+    },
+    {
+      "id": "q-0896",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Actual or Compensatory Damages",
+      "prompt": "Gina sued Hal for the unpaid price of goods, attaching the signed sales invoices to her complaint. Hal's answer, which was not under oath, said only: \"Defendant admits the invoices exist but does not admit their due execution.\" At trial, Hal objects that Gina never proved the invoices' genuineness and due execution. Is the objection valid? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. The invoices are actionable documents attached to the complaint; their genuineness and due execution are deemed admitted because Hal did not specifically deny them under oath and set forth what he claims to be the facts.",
+        "legalBasis": "Under Rule 8, when an action is founded on a written instrument attached to the pleading, \"the genuineness and due execution of the instrument shall be deemed admitted unless the adverse party, under oath, specifically denies them, and sets forth what he claims to be the facts.\" \"[T]he Rules are no longer satisfied with mere denials, even if specific, but demand that defendant manifest what he considers to be the true facts.\" A \"general denial amounts to an admission of the genuineness and due execution of the sales invoices.\"",
+        "application": "Hal's bare statement, unsworn and without facts, is a general denial, so the invoices are deemed admitted.",
+        "conclusion": "The objection is invalid. **Bar trap:** for actionable documents, \"not admitted\" without an oath and supporting facts is an admission."
+      },
+      "keyPoints": [
+        "Actionable document attached to the complaint",
+        "Deemed admitted unless specifically denied under oath",
+        "The denial must set forth the true facts",
+        "A general denial is an admission"
+      ],
+      "caseIds": [
+        "case-0065"
+      ],
+      "source": {
+        "caseTitle": "Lara's Gifts & Decors, Inc. v. Midtown Industrial Sales, Inc. (Decision)",
+        "grNumber": "G.R. No. 225433",
+        "url": "https://lawphil.net/judjuris/juri2019/aug2019/gr_225433_2019.html",
+        "part": "The Court's Ruling, admissibility of the sales invoices",
+        "excerpt": "In this case, petitioner did not state the facts or substance of the matters relied upon to support its denial of the due execution of the sales invoices. As held in Sy-Quia v. Marsman, \"the Rules require that besides specifying the allegations of fact not admitted, the answer should set forth the matters relied upon in support of the denial; so that, in effect, the Rules are no longer satisfied with mere denials, even if specific, but demand that defendant manifest what he considers to be the true facts.\" The purpose of the specific denial is to compel the defendant to specify the allegations which he or she intends to disprove and disclose the matters relied upon to support such denial, thereby limiting the issues and avoiding unnecessary delays and surprises. Petitioner's general denial amounts to an admission of the genuineness and due execution of the sales invoices."
+      }
     }
   ]
 }
