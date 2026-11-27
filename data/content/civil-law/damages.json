@@ -526,6 +526,21 @@
       "ruling": "No. The petition was granted and the decision reversed. Moral damages require (1) evidence of besmirched reputation or physical, mental or psychological suffering, (2) a culpable act or omission factually established, (3) proof that the defendant's wrongful act or omission is the proximate cause of the damages, and (4) a case under Articles 2219 or 2220. In breach of contract, moral damages are recoverable only if the defendant acted fraudulently or in bad faith, or with gross negligence amounting to bad faith, or in wanton disregard of its contractual obligations. The bank acted under the agreement's clause on automatic suspension without notice, and even on negligence it was not liable: Calderon never verified his card's status or asked for reinstatement, which was the bank's option under the agreement. His was damnum absque injuria. A contract of adhesion is as binding as any contract, since the adhering party is free to reject it, and the clause was clear and was accepted by a seasoned businessman.",
       "keyDoctrine": "Moral damages require: (1) evidence of besmirched reputation or physical, mental or psychological suffering; (2) a culpable act or omission factually established; (3) the defendant's wrongful act or omission as the proximate cause; and (4) a case under Articles 2219 or 2220. In breach of contract, they are recoverable only for fraud, bad faith, gross negligence amounting to bad faith, or wanton disregard of contractual obligations. Damage resulting from the exercise of a contractual right is damnum absque injuria. Contracts of adhesion are as binding as ordinary contracts.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2004/dec2004/gr_156168_2004.html"
+    },
+    {
+      "id": "case-0083",
+      "status": "draft",
+      "name": "Savellano, et al. v. Northwest Airlines",
+      "grNumber": "G.R. No. 151783",
+      "year": 2003,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "facts": "The Savellanos (a former mayor, judge and COMELEC chairman, his wife, a rural bank president, and their son, then a vice governor) flew business class on Northwest's San Francisco-Tokyo-Manila route. An engine fire forced an emergency landing in Seattle. The next morning, after being roused at midnight and missing breakfast, they were put, without explanation or consent, on a longer Seattle-Los Angeles-Seoul-Manila route, while other passengers flew via Tokyo a day later. A stewardess refused to let their zippered hand-carried bags into the cabin, and on arrival in Manila they found the bags ransacked. They never complained to the airline about the loss, and their demand letter did not mention it. The trial court awarded ₱500,000 actual, ₱3,000,000 moral and ₱500,000 exemplary damages and attorney's fees; the Court of Appeals dismissed the complaint.",
+      "issue": "(1) Did Northwest breach the contract of carriage by rerouting the passengers? (2) What damages are due?",
+      "ruling": "The petition was partly granted. A contract is the law between the parties. The ticket allowed the carrier to substitute carriers or aircraft without notice and to alter stopping places \"in case of necessity,\" but not to shuttle passengers to new stopping places without notice or consent; as a contract of adhesion, its ambiguity is construed against the airline, and the airline failed to prove the necessity. So there was a breach. But moral damages require bad faith, ill will, malice or wanton conduct, which was not proved: passengers were divided by the reservation system based only on final destination, good faith is presumed, and bad faith must be proved; mere economic hardship, worry or anxiety is insufficient. Lopez, Zulueta and Ortigas were distinguished, as they involved deliberate concealment, insult or discrimination. Nor were exemplary damages proper. Nominal damages of ₱150,000 each were awarded to vindicate their right to be consulted. The claim for lost items failed for lack of timely written notice under the ticket's conditions and the Warsaw Convention.",
+      "keyDoctrine": "In breach of contract, moral damages require bad faith, fraud, malice or wanton conduct; good faith is presumed and bad faith must be proved; worry, anxiety or economic hardship alone is not enough. Exemplary damages in contracts require wanton, fraudulent, reckless, oppressive or malevolent conduct. Nominal damages (Arts. 2221-2222) vindicate a violated right when no actual damage is shown, in an amount within the court's discretion. Ambiguities in a contract of adhesion are construed against its drafter. Baggage claims in international carriage require timely written complaint.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri2003/jul2003/gr_151783_2003.html"
     }
   ],
   "questions": [
@@ -10934,6 +10949,276 @@
         "url": "https://lawphil.net/judjuris/juri2004/dec2004/gr_156168_2004.html",
         "part": "Decision, the disposition and the nature of moral damages",
         "excerpt": "On a final note, we emphasize that \"moral damages are in the category of an award designed to compensate the claim for actual injury suffered and not to impose a penalty on the wrongdoer.\" WHEREFORE, the instant petition is hereby GRANTED and the decision under review REVERSED and SET ASIDE."
+      }
+    },
+    {
+      "id": "q-0930",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "An airline ticket's conditions state that the carrier \"may without notice substitute alternate carriers or aircraft, and may alter or omit stopping places shown on the ticket in case of necessity.\" After an emergency landing for engine trouble, the airline, without explanation or consent, sent some passengers home by a longer route through two different connecting cities, while others continued on the original route the next day. The airline gave no evidence why the change was necessary. Did the airline breach the contract of carriage? Explain.",
+      "suggestedAnswer": {
+        "answer": "Yes. The clause allows substituting carriers or aircraft without notice, but not shuttling passengers to new stopping places without notice or consent; and altering stopping places is allowed only \"in case of necessity,\" which the airline had the burden to prove and did not.",
+        "legalBasis": "In Savellano v. Northwest Airlines, the Court held that \"[s]ubstituting aircrafts or carriers without notice is entirely different from changing stopping places or connecting cities without notice.\" \"The ambiguities in the contract, being one of adhesion, should be construed against the party that caused its preparation,\" so a unilateral change of stopping places was not permitted. \"A case of necessity must first be proven. The burden of proving it necessarily fell on respondent. This responsibility it failed to discharge.\"",
+        "application": "The emergency landing was necessary, but the later rerouting of these passengers, without consent or proof of necessity, while others kept the original route, was not justified.",
+        "conclusion": "There was a breach of contract. **Bar trap:** permission to substitute aircraft is not permission to change the route; and \"necessity\" must be proved by the carrier."
+      },
+      "keyPoints": [
+        "A contract is the law between the parties",
+        "Substituting aircraft without notice differs from changing stopping places",
+        "Ambiguity in an adhesion contract is construed against the drafter",
+        "Necessity must be proved; the burden is on the carrier",
+        "Unconsented rerouting without proved necessity is a breach"
+      ],
+      "caseIds": [
+        "case-0083"
+      ],
+      "source": {
+        "caseTitle": "Savellano, et al. v. Northwest Airlines",
+        "grNumber": "G.R. No. 151783",
+        "url": "https://lawphil.net/judjuris/juri2003/jul2003/gr_151783_2003.html",
+        "part": "The Court's Ruling, first issue (breach of contract; passengers' consent and necessity)",
+        "excerpt": "After an examination of the conditions printed on the airline ticket, we find nothing there authorizing Northwest to decide unilaterally, after the distressed flight landed in Seattle, what other stopping places petitioners should take and when they should fly. True, Condition 9 on the ticket allowed respondent to substitute alternate carriers or aircraft without notice. However, nothing there permits shuttling passengers — without so much as a by your-leave — to stopping places that they have not been previously notified of, much less agreed to or been prepared for. Substituting aircrafts or carriers without notice is entirely different from changing stopping places or connecting cities without notice. The ambiguities in the contract, being one of adhesion, should be construed against the party that caused its preparation — in this case, respondent. Since the conditions enumerated on the ticket do not specifically allow it to change stopping places or to fly the passengers to alternate connecting cities without consulting them, then it must be construed to mean that such unilateral change was not permitted. Proof of Necessity of Alteration Furthermore, the change in petitioners' flight itinerary does not fall under the situation covered by the phrase \"may alter or omit stopping places shown on the ticket in case of necessity.\" A case of necessity must first be proven. The burden of proving it necessarily fell on respondent. This responsibility it failed to discharge."
+      }
+    },
+    {
+      "id": "q-0931",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "In the same case, the passengers claimed moral and exemplary damages, alleging they were singled out and discriminated against. The evidence showed that the passengers of the disabled flight were divided into two groups by the airline's reservation computer, which looked only at their final destinations; there was no proof of the alleged favoritism. Are moral and exemplary damages proper? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. In breach of contract, moral damages require bad faith, ill will, malice or wanton conduct, and exemplary damages require wanton, fraudulent, reckless, oppressive or malevolent conduct; none was proved. Good faith is presumed, and bad faith must be proved by the one alleging it.",
+        "legalBasis": "In Savellano v. Northwest Airlines, the Court found \"no persuasive evidence that they were maliciously singled out\"; the selection \"was handled via the computer reservation system, which took into account only the passengers' final destination.\" \"Good faith is presumed, while bad faith is a matter of fact that needs to be proved by the party alleging it. In the absence of bad faith, ill will, malice or wanton conduct, respondent cannot be held liable for moral damages.\" \"Insufficient to warrant the award of moral damages is the fact that complainants suffered economic hardship, or that they worried and experienced mental anxiety.\" Exemplary damages were improper since the airline had not acted \"in a wanton, fraudulent, reckless, oppressive, or malevolent manner.\"",
+        "application": "The airline's failure to consult the passengers was a breach, but an imperfect, good-faith handling of a sudden emergency, not malice.",
+        "conclusion": "Neither moral nor exemplary damages. **Bar trap:** a breach of contract proved does not prove bad faith; the claimant must prove it."
+      },
+      "keyPoints": [
+        "Moral damages in contract: bad faith, ill will, malice or wanton conduct",
+        "Good faith is presumed; bad faith must be proved",
+        "Worry, anxiety or economic hardship alone is insufficient",
+        "Exemplary damages: wanton, fraudulent, reckless, oppressive or malevolent conduct",
+        "Random computer assignment showed no malice"
+      ],
+      "caseIds": [
+        "case-0083"
+      ],
+      "source": {
+        "caseTitle": "Savellano, et al. v. Northwest Airlines",
+        "grNumber": "G.R. No. 151783",
+        "url": "https://lawphil.net/judjuris/juri2003/jul2003/gr_151783_2003.html",
+        "part": "The Court's Ruling, second issue (moral and exemplary damages)",
+        "excerpt": "Petitioners impute oppression, discrimination, recklessness and malevolence to respondent. We are not convinced. There is no persuasive evidence that they were maliciously singled out to fly the Seattle-Los Angeles-Seoul-Manila route. It appears that the passengers of the distressed flight were randomly divided into two groups. One group was made to take the Tokyo-Manila flight; and the other, the Los Angeles-Seoul-Manila flight. The selection of who was to take which flight was handled via the computer reservation system, which took into account only the passengers' final destination. … Good faith is presumed, while bad faith is a matter of fact that needs to be proved by the party alleging it. In the absence of bad faith, ill will, malice or wanton conduct, respondent cannot be held liable for moral damages. Article 2219 of the Civil Code enumerates the instances in which moral damages may be awarded. In a breach of contract, such damages are not awarded if the defendant is not shown to have acted fraudulently or with malice or bad faith. Insufficient to warrant the award of moral damages is the fact that complainants suffered economic hardship, or that they worried and experienced mental anxiety."
+      }
+    },
+    {
+      "id": "q-0932",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "(a) If an airline breached its contract by rerouting passengers without consent but no actual, moral or exemplary damages are proved, may the passengers recover anything? (b) The passengers also claimed for valuables stolen from their bags during the international flight, but never complained in writing to the airline, and their demand letter did not mention the loss. May they recover for the stolen items? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) Yes, nominal damages, to vindicate and recognize their violated right to be notified and consulted; the amount is within the court's discretion. (b) No. Under the ticket's conditions and the Warsaw Convention, damage to baggage must be the subject of a timely written complaint; failing that, no claim lies against the carrier.",
+        "legalBasis": "Under Article 2221, \"[n]ominal damages are adjudicated in order that a right of the plaintiff, which has been violated or invaded by the defendant, may be vindicated or recognized, and not for the purpose of indemnifying the plaintiff for any loss.\" They \"are recoverable if no actual, substantial or specific damages were shown to have resulted from the breach,\" and their amount \"is addressed to the sound discretion of the court.\" The Court awarded ₱150,000 to each passenger. For baggage, the Warsaw Convention requires written complaint within the stated periods, and \"[f]ailing complaint within the times aforesaid, no action shall lie against the carrier, save in the case of fraud.\"",
+        "application": "(a) The breach violated the passengers' right to be consulted, so nominal damages vindicate it. (b) The passengers never lodged a timely written complaint about the loss.",
+        "conclusion": "(a) Nominal damages; (b) no recovery for the baggage. **Bar trap:** nominal damages may be substantial in amount where the circumstances warrant, but they are not compensation for a loss."
+      },
+      "keyPoints": [
+        "Nominal damages vindicate a violated right (Art. 2221)",
+        "Recoverable when no actual or specific damage is shown",
+        "Amount within the court's sound discretion",
+        "Baggage claims in international carriage need timely written complaint",
+        "No complaint in time: no action against the carrier, save fraud"
+      ],
+      "caseIds": [
+        "case-0083"
+      ],
+      "source": {
+        "caseTitle": "Savellano, et al. v. Northwest Airlines",
+        "grNumber": "G.R. No. 151783",
+        "url": "https://lawphil.net/judjuris/juri2003/jul2003/gr_151783_2003.html",
+        "part": "The Court's Ruling, second issue (nominal damages and the lost baggage)",
+        "excerpt": "Nevertheless, herein petitioners will not be totally deprived of compensation. Nominal damages may be awarded as provided by the Civil Code, from which we quote: \"Art. 2221. Nominal damages are adjudicated in order that a right of the plaintiff, which has been violated or invaded by the defendant, may be vindicated or recognized, and not for the purpose of indemnifying the plaintiff for any loss suffered by him.\" \"Art. 2222. The court may award nominal damages in every obligation arising from any source enumerated in article 1157, or in every case where any property right has been invaded.\" Nominal damages are recoverable if no actual, substantial or specific damages were shown to have resulted from the breach. The amount of such damages is addressed to the sound discretion of the court, taking into account the relevant circumstances."
+      }
+    },
+    {
+      "id": "q-0933",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Two airline passengers sue for moral damages. (a) Ana held a confirmed first-class ticket, but the airline gave her seat to another passenger it preferred and, to keep her business, falsely assured her she would get first class at the next stop. (b) Ben's flight was rerouted after an engine problem; the airline assigned passengers to new routes by computer based only on their destinations, without consulting them, and Ben arrived a day later than he wanted. May each recover moral damages? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) Yes. Willfully downgrading a passenger in favor of another, with false assurances to keep her business, is bad faith in breach of the contract of carriage. (b) No. A rerouting done in good faith to get passengers to their destination, without malice, profit motive or ill will, does not support moral damages, even if it breached the contract and caused inconvenience; he may recover nominal damages to vindicate his right to be consulted.",
+        "legalBasis": "The Court contrasted cases where the airline \"intentionally withheld\" information for self-interest, \"deliberately off-loaded\" an insulted passenger, or \"intentionally downgraded\" a passenger in favor of another, with a rerouting where \"there is no showing that the breach of contract was done with the same entrepreneurial motive or self-interest ... or with ill will.\" \"Good faith is presumed, while bad faith is a matter of fact that needs to be proved.\" Without bad faith, nominal damages may be awarded to vindicate the violated right.",
+        "application": "(a) Ana proves deliberate preference and deception for the airline's own benefit. (b) Ben shows only an imperfect handling of an emergency.",
+        "conclusion": "(a) Moral damages; (b) no moral damages, but nominal damages. **Bar trap:** the question is not whether there was a breach, but whether it was done with malice, ill will or self-interest."
+      },
+      "keyPoints": [
+        "Deliberate downgrading or concealment for self-interest = bad faith",
+        "Good-faith handling of an emergency is not bad faith",
+        "Good faith is presumed; bad faith must be proved",
+        "Without bad faith: no moral damages, but nominal damages for the violated right"
+      ],
+      "caseIds": [
+        "case-0083"
+      ],
+      "source": {
+        "caseTitle": "Savellano, et al. v. Northwest Airlines",
+        "grNumber": "G.R. No. 151783",
+        "url": "https://lawphil.net/judjuris/juri2003/jul2003/gr_151783_2003.html",
+        "part": "The Court's Ruling, Lopez, Zulueta and Ortigas rulings not applicable",
+        "excerpt": "To summarize, in Loipez despite sufficient time — one month — to inform the passengers of what had happened to their booking, the airline agent intentionally withheld that information from them. In Zulueta, the passenger was deliberately off-loaded after being gravely insulted during an altercation. And in Ortigas, the passenger was intentionally downgraded in favor of a European. These cases are different from and inapplicable to the present case. Here, there is no showing that the breach of contract was done with the same entrepreneurial motive or self-interest as in Lopez or with ill will as in Zulueta and Ortigas. Petitioners have failed to show convincingly that they were rerouted by respondent to Los Angeles and Seoul because of malice, profit motive or self-interest. Good faith is presumed, while bad faith is a matter of fact that needs to be proved by the party alleging it."
+      }
+    },
+    {
+      "id": "q-0934",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Carla flew home from abroad on an international flight. At the baggage carousel she found that her checked bag had been opened and items taken. She went straight home without telling the airline, and three weeks later sent a demand letter complaining only about a flight delay, not the missing items. Months later, she sues the airline for the stolen items. Will her claim for the items prosper? Reason briefly.",
+      "suggestedAnswer": {
+        "answer": "No. In international carriage, a complaint about damage to baggage must be made in writing to the carrier within the short periods set by the ticket conditions and the Warsaw Convention; having failed to do so, Carla has no action against the carrier, save in case of fraud.",
+        "legalBasis": "The ticket conditions required that \"[i]n case of damage to baggage moving in international transportation complaint must be made in writing to carrier forthwith after discovery of damage.\" Under the Warsaw Convention, Article 26, the person entitled to delivery \"must complain to the carrier forthwith after the discovery of the damage,\" every complaint \"must be made in writing,\" and \"[f]ailing complaint within the times aforesaid, no action shall lie against the carrier, save in the case of fraud on his part.\" Passengers who \"never lodged a complaint with any Northwest airport personnel\" and did not mention the loss in their demand letter could not recover.",
+        "application": "Carla made no timely written complaint about the loss, and her letter did not even mention it.",
+        "conclusion": "Her claim fails. **Bar trap:** in international air carriage, timely written notice of baggage damage is a condition for the action."
+      },
+      "keyPoints": [
+        "International carriage: Warsaw Convention rules on baggage",
+        "Complaint must be in writing and made promptly after discovery",
+        "No timely complaint: no action against the carrier",
+        "Exception: fraud on the carrier's part"
+      ],
+      "caseIds": [
+        "case-0083"
+      ],
+      "source": {
+        "caseTitle": "Savellano, et al. v. Northwest Airlines",
+        "grNumber": "G.R. No. 151783",
+        "url": "https://lawphil.net/judjuris/juri2003/jul2003/gr_151783_2003.html",
+        "part": "The Court's Ruling, second issue (nominal damages and the lost baggage)",
+        "excerpt": "After allegedly finding that their luggage had been ransacked, petitioners never lodged a complaint with any Northwest airport personnel. Neither did they mention the alleged loss of their valuables in their November 22, 1991 demand letter. Hence, in accordance with the parties' contract of carriage, no claim can be heard or admitted against respondent with respect to alleged damage to or loss of petitioners' baggage."
+      }
+    },
+    {
+      "id": "q-0935",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Dino, a business-class passenger, was woken at midnight and rushed to the airport without breakfast when his airline, in good faith but without consulting him, put him on a different connecting flight after a mechanical problem; he suffered no proven financial loss. The trial court awarded him ₱5,000 nominal damages; he argues the amount should be much higher given his position as a provincial vice governor. May a court consider such circumstances in fixing nominal damages? Explain.",
+      "suggestedAnswer": {
+        "answer": "Yes. The amount of nominal damages is addressed to the sound discretion of the court, taking into account the relevant circumstances, such as the inconvenience suffered, the class of service paid for, and the passenger's social and official status.",
+        "legalBasis": "\"The amount of such damages is addressed to the sound discretion of the court, taking into account the relevant circumstances.\" The Court considered \"the inconvenience of having to wake up early after a bad night and having to miss breakfast; as well as the fact that they were business class passengers. They paid more for better service ... We also consider their social and official status,\" and granted ₱150,000 to each \"in order to vindicate and recognize their right to be notified and consulted before their contracted stopping place was changed.\"",
+        "application": "Dino's inconvenience, his business-class fare and his official position are relevant circumstances the court may weigh in fixing the amount.",
+        "conclusion": "The court may consider them. **Bar trap:** nominal damages are not compensation for loss, yet their amount still depends on the circumstances of the violated right."
+      },
+      "keyPoints": [
+        "Amount of nominal damages: sound discretion of the court",
+        "Relevant circumstances may be considered",
+        "Inconvenience, class of service paid, social and official status",
+        "Purpose: vindicate the right to be notified and consulted"
+      ],
+      "caseIds": [
+        "case-0083"
+      ],
+      "source": {
+        "caseTitle": "Savellano, et al. v. Northwest Airlines",
+        "grNumber": "G.R. No. 151783",
+        "url": "https://lawphil.net/judjuris/juri2003/jul2003/gr_151783_2003.html",
+        "part": "The Court's Ruling, second issue (nominal damages and the lost baggage)",
+        "excerpt": "Nominal damages are recoverable if no actual, substantial or specific damages were shown to have resulted from the breach. The amount of such damages is addressed to the sound discretion of the court, taking into account the relevant circumstances. In the present case, we must consider that petitioners suffered the inconvenience of having to wake up early after a bad night and having to miss breakfast; as well as the fact that they were business class passengers. They paid more for better service; thus, rushing them and making them miss their small comforts was not a trivial thing. We also consider their social and official status. Victorino Savellano was a former mayor, regional trial court judge and chairman of the Commission on Elections. Virginia B. Savellano was the president of five rural banks, and Deogracias Savellano was then the incumbent vice governor of Ilocos Sur. Hence, it will be proper to grant one hundred fifty thousand pesos (P150,000) as nominal damages to each of them, in order to vindicate and recognize their right to be notified and consulted before their contracted stopping place was changed."
+      }
+    },
+    {
+      "id": "q-0936",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Under Savellano v. Northwest Airlines, which of the following is sufficient to warrant moral damages in a breach of contract?",
+      "choices": {
+        "A": "That the complainants suffered economic hardship.",
+        "B": "That the complainants worried and experienced mental anxiety.",
+        "C": "That the defendant acted fraudulently or with malice or bad faith, as proved by the complainants.",
+        "D": "That the contract was breached."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** The Court held that in a breach of contract, moral damages \"are not awarded if the defendant is not shown to have acted fraudulently or with malice or bad faith,\" and that bad faith \"needs to be proved by the party alleging it.\" **A and B are wrong:** \"Insufficient to warrant the award of moral damages is the fact that complainants suffered economic hardship, or that they worried and experienced mental anxiety.\" **D is wrong:** a breach alone is not enough. **Bar trap:** good faith is presumed.",
+      "caseIds": [
+        "case-0083"
+      ],
+      "source": {
+        "caseTitle": "Savellano, et al. v. Northwest Airlines",
+        "grNumber": "G.R. No. 151783",
+        "url": "https://lawphil.net/judjuris/juri2003/jul2003/gr_151783_2003.html",
+        "part": "The Court's Ruling, second issue (moral damages)",
+        "excerpt": "In a breach of contract, such damages are not awarded if the defendant is not shown to have acted fraudulently or with malice or bad faith. Insufficient to warrant the award of moral damages is the fact that complainants suffered economic hardship, or that they worried and experienced mental anxiety."
+      }
+    },
+    {
+      "id": "q-0937",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Under Article 2222 of the Civil Code, as quoted in Savellano v. Northwest Airlines, nominal damages may be awarded",
+      "choices": {
+        "A": "only in cases of crimes.",
+        "B": "in every obligation arising from any source enumerated in Article 1157, or in every case where any property right has been invaded.",
+        "C": "only when moral damages are also awarded.",
+        "D": "only in contracts of carriage."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** Article 2222 provides that \"[t]he court may award nominal damages in every obligation arising from any source enumerated in article 1157, or in every case where any property right has been invaded.\" **A, C and D are wrong:** nominal damages are not so limited. **Bar trap:** nominal damages are recoverable precisely when no actual damage is shown.",
+      "caseIds": [
+        "case-0083"
+      ],
+      "source": {
+        "caseTitle": "Savellano, et al. v. Northwest Airlines",
+        "grNumber": "G.R. No. 151783",
+        "url": "https://lawphil.net/judjuris/juri2003/jul2003/gr_151783_2003.html",
+        "part": "The Court's Ruling, second issue (nominal damages, Article 2222)",
+        "excerpt": "\"Art. 2222. The court may award nominal damages in every obligation arising from any source enumerated in article 1157, or in every case where any property right has been invaded.\""
+      }
+    },
+    {
+      "id": "q-0938",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "What did the Court award in Savellano v. Northwest Airlines?",
+      "choices": {
+        "A": "₱3,000,000 moral damages and ₱500,000 exemplary damages.",
+        "B": "Nothing, since there was no breach of contract.",
+        "C": "Actual damages for the stolen items.",
+        "D": "₱150,000 to each of the three passengers as nominal damages."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** The Court \"ORDERED [the airline] to pay one hundred fifty thousand pesos (P150,000) to each of the three petitioners as nominal damages.\" **A is wrong:** moral and exemplary damages need bad faith, not proved. **B is wrong:** there was a breach. **C is wrong:** no timely written complaint was made. **Bar trap:** a breach in good faith can still cost the carrier nominal damages.",
+      "caseIds": [
+        "case-0083"
+      ],
+      "source": {
+        "caseTitle": "Savellano, et al. v. Northwest Airlines",
+        "grNumber": "G.R. No. 151783",
+        "url": "https://lawphil.net/judjuris/juri2003/jul2003/gr_151783_2003.html",
+        "part": "The Court's Ruling, the disposition",
+        "excerpt": "WHEREFORE, the Petition is hereby PARTIALLY GRANTED, and the assailed Decision MODIFIED. Respondent is ORDERED to pay one hundred fifty thousand pesos (P150,000) to each of the three petitioners as nominal damages."
       }
     }
   ]
