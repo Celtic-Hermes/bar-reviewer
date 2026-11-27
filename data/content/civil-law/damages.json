@@ -556,6 +556,21 @@
       "ruling": "The petition was denied. (1) Although the Court of Appeals erred in quoting an unofficial syllabus of KLM v. CA, its ruling was supported in substance. A contract of carriage by successive carriers under one ticket is a single operation (Warsaw Convention; IATA practice); the ticket-issuing airline is the principal and the endorsee-carrier its agent, so CAL is liable even if it only issued the ticket for that sector. (2) Moral damages in a breach of contract of carriage are recoverable only where the passenger dies (Art. 1764) or the carrier acted fraudulently or in bad faith (Art. 2220). Bad faith is a breach of a known duty through some motive of interest or ill will. The typhoon did not end PAL's duty to put confirmed passengers on the next flight; with two confirmations, an \"OK\" sticker and a computer reference, the omission of his name was the airline's fault, and PAL made no serious effort to fly him while letting non-revenue passengers board. Negligence so gross and reckless amounts to bad faith, so moral and exemplary damages were proper. The cases cited by CAL were distinguished because there the carriers acted in good faith or with diligent efforts. (3) No ruling on the cross-claim was possible, because PAL, an indispensable party, was not impleaded in the appeal.",
       "keyDoctrine": "Moral damages for breach of a contract of carriage are recoverable only when the passenger dies or the carrier acted fraudulently or in bad faith (Arts. 1764, 2220); negligence so gross and reckless as to amount to bad faith also suffices. Bad faith is a breach of a known duty through some motive of interest or ill will. Carriage by successive carriers under one ticket is a single operation; the ticket-issuing airline is the principal and remains liable for a breach on another carrier's leg.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2003/jul2003/gr_152122_2003.html"
+    },
+    {
+      "id": "case-0085",
+      "status": "draft",
+      "name": "ABS-CBN Broadcasting Corporation v. Court of Appeals, et al.",
+      "grNumber": "G.R. No. 128690",
+      "year": 1999,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "facts": "Under a 1990 Film Exhibition Agreement, ABS-CBN had a right of first refusal over VIVA films; it exercised it by ticking off only ten titles from VIVA's list. In 1992 VIVA's Vicente del Rosario offered ABS-CBN a new package of 104 films for ₱60 million. ABS-CBN, through its general manager, countered with a draft contract for 53 films at ₱35 million, which VIVA's Board rejected. VIVA then granted Republic Broadcasting (RBS, now GMA) the exclusive right to air the 104 films, including 14 that ABS-CBN claimed. ABS-CBN sued for specific performance and obtained a restraining order and an injunction that stopped RBS from showing the film \"Maging Sino Ka Man\"; RBS put up a counterbond to lift it. The trial court dismissed the complaint and ordered ABS-CBN to pay RBS the counterbond premium, the cost of print advertisements, ₱1 million attorney's fees, and ₱5 million each in moral and exemplary damages; the Court of Appeals affirmed with modification.",
+      "issue": "(1) Was there a perfected contract between VIVA and ABS-CBN? (2) Is RBS entitled to actual, moral and exemplary damages and attorney's fees?",
+      "ruling": "(1) No perfected contract. A contract is perfected only by an absolute and unqualified acceptance; ABS-CBN's draft contract was a counter-offer, which VIVA's Board rejected, and del Rosario had no specific authority to bind VIVA. ABS-CBN's right of first refusal had already been exercised. (2) But the Court found for ABS-CBN on damages, and the petition was granted. RBS's claim did not arise from contract, quasi-contract, delict or quasi-delict but from the filing of the suit, so it could rest only on Articles 19, 20 and 21, at whose core is malice or bad faith, which must be proved. ABS-CBN was honestly convinced of its cause; an adverse result does not make a suit wrongful, and damage from the exercise of a right is damnum absque injuria. The counterbond premium was not chargeable to ABS-CBN, since RBS did not need a counterbond, and the advertisements had no legal basis as damages. Attorney's fees need factual, legal and equitable justification; no premium is placed on the right to litigate. Moral damages compensate actual suffering and are not a penalty, and they cannot be granted to a corporation, which has no feelings or nervous system; the contrary statement in People v. Manero and Mambulao Lumber was obiter dictum. Exemplary damages also failed for lack of malice. Only the unappealed attorney's fees in favor of VIVA remained.",
+      "keyDoctrine": "Moral damages compensate actual suffering, not punish the wrongdoer, and must be proportionate to the suffering. As held here, a corporation, having no feelings or nervous system, cannot be awarded moral damages (the statement in Manero and Mambulao Lumber that it may when its good reputation is debased was called obiter dictum). Exemplary damages are imposed by way of example in addition to other damages, on the grounds set by law. Claims arising from the mere filing of a suit rest on Articles 19, 20 and 21, which require proved malice or bad faith; damage from the exercise of a right is damnum absque injuria. A qualified acceptance is a counter-offer.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri1999/jan1999/gr_128690_1999.html"
     }
   ],
   "questions": [
@@ -11502,6 +11517,278 @@
         "url": "https://lawphil.net/judjuris/juri2003/jul2003/gr_152122_2003.html",
         "part": "The Court's Ruling, second issue (liability of the ticket-issuing airline)",
         "excerpt": "In the instant case, following the jurisprudence cited above, PAL acted as the carrying agent of CAL. In the same way that we ruled against British Airways and Lufthansa in the aforementioned cases, we also rule that CAL cannot evade liability to respondent, even though it may have been only a ticket issuer for the Hong Kong-Manila sector."
+      }
+    },
+    {
+      "id": "q-0948",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "A broadcasting corporation was awarded ₱5 million in moral damages by the trial court for the \"humiliation\" it suffered nationwide when a competitor's lawsuit stopped it from showing an advertised film. On appeal, the competitor argues that a corporation cannot be awarded moral damages at all. Is the competitor correct? Explain, citing the nature and purpose of moral damages.",
+      "suggestedAnswer": {
+        "answer": "Yes, under the ruling in ABS-CBN v. Court of Appeals. Moral damages compensate the claimant for actual injury suffered, such as physical suffering and mental anguish; a corporation, being an artificial person with no feelings, emotions or senses, cannot experience them.",
+        "legalBasis": "In ABS-CBN Broadcasting Corp. v. Court of Appeals, the Court held that moral damages are \"designed to compensate the claimant for actual injury suffered. and not to impose a penalty on the wrongdoer,\" aimed at \"the restoration, within the limits of the possible, of the spiritual status quo ante.\" \"The award of moral damages cannot be granted in favor of a corporation because, being an artificial person and having existence only in legal contemplation, it has no feelings, no emotions, no senses,\" and cannot experience \"physical suffering and mental anguish, which call be experienced only by one having a nervous system.\" The statement in People v. Manero and Mambulao Lumber Co. v. PNB that a corporation may recover moral damages if its good reputation is debased \"is an obiter dictum.\"",
+        "application": "The award was for the corporation's supposed humiliation, which, as an artificial person, it could not suffer.",
+        "conclusion": "The award must be set aside. **Bar trap:** this decision called the \"debased reputation\" statement in Manero and Mambulao an obiter dictum; check later rulings on defamation of juridical persons before relying on either view."
+      },
+      "keyPoints": [
+        "Moral damages compensate actual injury; they are not a penalty",
+        "Aim: restore the spiritual status quo ante, proportionate to the suffering",
+        "A corporation has no feelings, emotions or senses",
+        "Cannot suffer physical suffering or mental anguish",
+        "Manero and Mambulao statement called obiter dictum"
+      ],
+      "caseIds": [
+        "case-0085"
+      ],
+      "source": {
+        "caseTitle": "ABS-CBN Broadcasting Corporation v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 128690",
+        "url": "https://lawphil.net/judjuris/juri1999/jan1999/gr_128690_1999.html",
+        "part": "Ruling, second issue (moral damages)",
+        "excerpt": "Moral damages are in the category of an award designed to compensate the claimant for actual injury suffered. and not to impose a penalty on the wrongdoer. The award is not meant to enrich the complainant at the expense of the defendant, but to enable the injured party to obtain means, diversion, or amusements that will serve to obviate then moral suffering he has undergone. It is aimed at the restoration, within the limits of the possible, of the spiritual status quo ante, and should be proportionate to the suffering inflicted. Trial courts must then guard against the award of exorbitant damages; they should exercise balanced restrained and measured objectivity to avoid suspicion that it was due to passion, prejudice, or corruption on the part of the trial court. The award of moral damages cannot be granted in favor of a corporation because, being an artificial person and having existence only in legal contemplation, it has no feelings, no emotions, no senses, It cannot, therefore, experience physical suffering and mental anguish, which call be experienced only by one having a nervous system. The statement in People v. Manero and Mambulao Lumber Co. v. PNB that a corporation may recover moral damages if it \"has a good reputation that is debased, resulting in social humiliation\" is an obiter dictum. On this score alone the award for damages must be set aside, since RBS is a corporation."
+      }
+    },
+    {
+      "id": "q-0949",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "After losing a suit for specific performance, the plaintiff is ordered to pay the defendant damages on the theory that it sued \"knowing fully well\" that it had no cause of action. The evidence shows the plaintiff had gone through serious negotiations and honestly believed a contract had been perfected. (a) On what legal basis may such a claim for damages rest? (b) Will the claim prosper? Explain.",
+      "suggestedAnswer": {
+        "answer": "(a) Since the claim arises not from contract, quasi-contract, delict or quasi-delict but from the filing of the suit, it can rest only on Articles 19, 20 and 21 of the Civil Code. (b) No. Malice or bad faith is at the core of those articles and must be proved; a plaintiff honestly convinced of its cause is not liable merely because it lost.",
+        "legalBasis": "In ABS-CBN v. Court of Appeals, the claim of RBS \"did not arise from contract, quasi-contract, delict, or quasi-delict. It arose from the fact of filing of the complaint,\" so \"the claims for moral and exemplary damages can only be based on Articles 19, 20, and 21 of the Civil Code.\" \"Verily then, malice or bad faith is at the core of Articles 19, 20, and 21. Malice or bad faith implies a conscious and intentional design to do a wrongful act for a dishonest purpose or moral obliquity. Such must be substantiated by evidence.\" \"[T]he adverse result of an action does not per se make the action wrongful,\" and \"[i]f damages result from a person's exercise of a right, it is damnum absque injuria.\"",
+        "application": "The plaintiff sued after serious negotiations, honestly believing in its cause; no malice or bad faith was proved.",
+        "conclusion": "No damages. **Bar trap:** losing a case is not proof of a malicious suit; the law does not penalize the right to litigate."
+      },
+      "keyPoints": [
+        "Claim from the filing of a suit rests on Arts. 19, 20 and 21",
+        "Malice or bad faith is at the core of those articles",
+        "Bad faith: conscious and intentional design to do a wrongful act",
+        "Must be substantiated by evidence",
+        "Adverse result does not make a suit wrongful; damnum absque injuria"
+      ],
+      "caseIds": [
+        "case-0085"
+      ],
+      "source": {
+        "caseTitle": "ABS-CBN Broadcasting Corporation v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 128690",
+        "url": "https://lawphil.net/judjuris/juri1999/jan1999/gr_128690_1999.html",
+        "part": "Ruling, second issue (Articles 19, 20 and 21; malice or bad faith)",
+        "excerpt": "It may be reiterated that the claim of RBS against ABS-CBN is not based on contract, quasi-contract, delict, or quasi-delict, Hence, the claims for moral and exemplary damages can only be based on Articles 19, 20, and 21 of the Civil Code. … Verily then, malice or bad faith is at the core of Articles 19, 20, and 21. Malice or bad faith implies a conscious and intentional design to do a wrongful act for a dishonest purpose or moral obliquity. Such must be substantiated by evidence. There is no adequate proof that ABS-CBN was inspired by malice or bad faith. It was honestly convinced of the merits of its cause after it had undergone serious negotiations culminating in its formal submission of a draft contract. Settled is the rule that the adverse result of an action does not per se make the action wrongful and subject the actor to damages, for the law could not have meant to impose a penalty on the right to litigate. If damages result from a person's exercise of a right, it is damnum absque injuria."
+      }
+    },
+    {
+      "id": "q-0950",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "(a) What are exemplary damages, and when are they recoverable under the Civil Code provisions discussed in ABS-CBN v. Court of Appeals? (b) What are the elements of abuse of right under Article 19, and of an act contra bonus mores under Article 21?",
+      "suggestedAnswer": {
+        "answer": "(a) Exemplary damages are imposed by way of example or correction for the public good, in addition to moral, temperate, liquidated or compensatory damages. They are recoverable in criminal cases when the crime was committed with one or more aggravating circumstances; in quasi-contracts (as the decision states it) if the defendant acted with gross negligence; and in contracts and quasi-contracts if the defendant acted in a wanton, fraudulent, reckless, oppressive or malevolent manner. (b) Abuse of right: (1) a legal right or duty, (2) exercised in bad faith, (3) for the sole intent of prejudicing or injuring another. Article 21: (1) an act which is legal, (2) but contrary to morals, good custom, public order or public policy, (3) done with intent to injure.",
+        "legalBasis": "The Court stated that exemplary damages \"are imposed by way of example or correction for the public good, in addition to moral, temperate, liquidated or compensatory damages,\" and listed the instances where they are recoverable. It enumerated the elements of Article 19 and Article 21 and held that \"malice or bad faith is at the core of Articles 19, 20, and 21.\"",
+        "application": "Without proof of malice or bad faith, neither moral nor exemplary damages could be awarded against the losing plaintiff.",
+        "conclusion": "As stated. **Bar trap:** exemplary damages are never awarded alone; they are \"in addition to\" the other damages, and where the claim rests only on Articles 19, 20 and 21, malice or bad faith must still be proved."
+      },
+      "keyPoints": [
+        "Exemplary damages: by way of example or correction for the public good",
+        "Awarded in addition to moral, temperate, liquidated or compensatory damages",
+        "Crimes: aggravating circumstances; gross negligence; contracts: wanton, fraudulent, reckless, oppressive or malevolent manner",
+        "Art. 19: legal right or duty, exercised in bad faith, sole intent to injure",
+        "Art. 21: legal act, contrary to morals etc., done with intent to injure"
+      ],
+      "caseIds": [
+        "case-0085"
+      ],
+      "source": {
+        "caseTitle": "ABS-CBN Broadcasting Corporation v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 128690",
+        "url": "https://lawphil.net/judjuris/juri1999/jan1999/gr_128690_1999.html",
+        "part": "Ruling, second issue (exemplary damages; elements of Articles 19 and 21)",
+        "excerpt": "The basic law on exemplary damages is Section 5, Chapter 3, Title XVIII, Book IV of the Civil Code. These are imposed by way of example or correction for the public good, in addition to moral, temperate, liquidated or compensatory damages. They are recoverable in criminal cases as part of the civil liability when the crime was committed with one or more aggravating circumstances; in quasi-contracts, if the defendant acted with gross negligence; and in contracts and quasi-contracts, if the defendant acted in a wanton, fraudulent, reckless, oppressive, or malevolent manner. … The elements of abuse of right under Article 19 are the following: (1) the existence of a legal right or duty, (2) which is exercised in bad faith, and (3) for the sole intent of prejudicing or injuring another. Article 20 speaks of the general sanction for all other provisions of law which do not especially provide for their own sanction; while Article 21 deals with acts contra bonus mores, and has the following elements; (1) there is an act which is legal, (2) but which is contrary to morals, good custom, public order, or public policy, and (3) and it is done with intent to injure."
+      }
+    },
+    {
+      "id": "q-0951",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Ana owns a small bakery as a sole proprietor. Ben, a rival, maliciously spreads a false story to her customers that her bread made people sick, and Ana suffers sleepless nights and serious anxiety. Separately, Carla's family corporation, Dough Corp., which runs another bakery, is the target of the same kind of false story; the corporation sues Ben for moral damages for its \"wounded feelings.\" Applying the reasoning of the Court on the nature of moral damages, who may recover moral damages for mental anguish: Ana, Dough Corp., or both? Explain.",
+      "suggestedAnswer": {
+        "answer": "Ana may, if she proves her mental anguish and the other requisites. Dough Corp. may not recover moral damages for \"wounded feelings\" or mental anguish, because, under the Court's reasoning, a corporation is an artificial person that cannot experience physical suffering or mental anguish.",
+        "legalBasis": "Moral damages are \"designed to compensate the claimant for actual injury suffered.\" A corporation, \"being an artificial person and having existence only in legal contemplation, ... has no feelings, no emotions, no senses\" and \"cannot, therefore, experience physical suffering and mental anguish, which call be experienced only by one having a nervous system.\" A sole proprietor is a natural person.",
+        "application": "Ana is a natural person who suffered anxiety and sleepless nights; Dough Corp. is a juridical person, and its claim is framed as feelings it cannot have.",
+        "conclusion": "Only Ana may recover moral damages for mental anguish. **Bar trap:** a sole proprietorship has no separate personality, so the owner herself is the claimant; a corporation is different. (The decision called the \"debased reputation\" view obiter; check later rulings on defamation of juridical persons.)"
+      },
+      "keyPoints": [
+        "Moral damages compensate actual suffering",
+        "A natural person can suffer mental anguish",
+        "A corporation has no feelings, emotions or senses",
+        "A sole proprietor sues as a natural person"
+      ],
+      "caseIds": [
+        "case-0085"
+      ],
+      "source": {
+        "caseTitle": "ABS-CBN Broadcasting Corporation v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 128690",
+        "url": "https://lawphil.net/judjuris/juri1999/jan1999/gr_128690_1999.html",
+        "part": "Ruling, second issue (moral damages)",
+        "excerpt": "The award of moral damages cannot be granted in favor of a corporation because, being an artificial person and having existence only in legal contemplation, it has no feelings, no emotions, no senses, It cannot, therefore, experience physical suffering and mental anguish, which call be experienced only by one having a nervous system."
+      }
+    },
+    {
+      "id": "q-0952",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Dino sued Eva's company and obtained a temporary restraining order, and later an order granting an injunction upon his posting of a bond. Dino never posted the bond and instead asked for its reduction. Eva's company, wanting to air its show, paid a premium for a counterbond to lift the injunction, and also spent on newspaper advertisements for the show. Dino eventually lost the case. May Eva's company recover from Dino (a) the counterbond premium and (b) the cost of the advertisements as actual damages? Reason briefly.",
+      "suggestedAnswer": {
+        "answer": "(a) No. Damages caused by an injunction are recoverable from the injunction bond; since Dino had not yet filed the required bond, it was not necessary for the company to file a counterbond, so Dino is not responsible for its premium. (b) No, for lack of sufficient legal basis: the court issued the restraining order and injunction because it found sufficient ground, and the injunction was lifted at the company's own plea to post a counterbond, not for lack of basis.",
+        "legalBasis": "In ABS-CBN v. Court of Appeals, \"in cases where a writ of preliminary injunction is issued, the damages which the defendant may suffer by reason of the writ are recoverable from the injunctive bond. In this case, ABS-CBN had not yet filed the required bond ... it was not necessary for RBS to file a counterbond. Hence, ABS-CBN cannot be held responsible for the premium.\" Nor could it be liable for the advertisements, since \"the RTC did not dissolve the injunction on the ground of lack of legal and factual basis, but because of the plea of RBS that it be allowed to put up a counterbond.\"",
+        "application": "The same facts are present: no bond filed by Dino, and an injunction lifted at the defendant's own plea.",
+        "conclusion": "Neither item is recoverable. **Bar trap:** actual damages require a legal basis and proof, not just an expense the winner happened to incur."
+      },
+      "keyPoints": [
+        "Injunction damages are recoverable from the injunction bond",
+        "No bond filed: the counterbond was unnecessary",
+        "Premium not chargeable to the plaintiff",
+        "Injunction lifted at defendant's plea, not for lack of basis",
+        "Advertisements: no sufficient legal basis"
+      ],
+      "caseIds": [
+        "case-0085"
+      ],
+      "source": {
+        "caseTitle": "ABS-CBN Broadcasting Corporation v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 128690",
+        "url": "https://lawphil.net/judjuris/juri1999/jan1999/gr_128690_1999.html",
+        "part": "Ruling, second issue (actual damages; the counterbond and the advertisements)",
+        "excerpt": "It may further be observed that in cases where a writ of preliminary injunction is issued, the damages which the defendant may suffer by reason of the writ are recoverable from the injunctive bond. In this case, ABS-CBN had not yet filed the required bond; as a matter of fact, it asked for reduction of the bond and even went to the Court of Appeals to challenge the order on the matter, Clearly then, it was not necessary for RBS to file a counterbond. Hence, ABS-CBN cannot be held responsible for the premium RBS paid for the counterbond. Neither could ABS-CBN be liable for the print advertisements for \"Maging Sino Ka Man\" for lack of sufficient legal basis. The RTC issued a temporary restraining order and later, a writ of preliminary injunction on the basis of its determination that there existed sufficient ground for the issuance thereof. Notably, the RTC did not dissolve the injunction on the ground of lack of legal and factual basis, but because of the plea of RBS that it be allowed to put up a counterbond."
+      }
+    },
+    {
+      "id": "q-0953",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Felix won a case against Gina, who had sued him in the honest but mistaken belief that he owed her money. The trial court awarded Felix attorney's fees simply because he won and had to hire a lawyer. Is the award proper? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. As a rule, attorney's fees are not recovered as part of damages, because no premium should be placed on the right to litigate. They are not awarded every time a party wins; an award under Article 2208 needs factual, legal and equitable justification, and even a party compelled to litigate may not get them where there is no sufficient showing of bad faith in the other party's persistence beyond an erroneous conviction of the righteousness of its cause.",
+        "legalBasis": "In ABS-CBN v. Court of Appeals: \"The general rule is that attorney's fees cannot be recovered as part of damages because of the policy that no premium should be placed on the right to litigate. They are not to be awarded every time a party wins a suit. The power of the court to award attorney's fees under Article 2208 demands factual, legal, and equitable justification. Even when claimant is compelled to litigate with third persons or to incur expenses to protect his rights, still attorney's fees may not be awarded where no sufficient showing of bad faith could be reflected in a party's persistence in a case other than erroneous conviction of the righteousness of his cause.\"",
+        "application": "Gina sued in honest error; Felix's victory and his lawyer's fees alone do not justify the award.",
+        "conclusion": "The award is improper. **Bar trap:** winning is not a ground for attorney's fees; Article 2208 and justification are."
+      },
+      "keyPoints": [
+        "General rule: no attorney's fees as damages",
+        "No premium on the right to litigate",
+        "Not awarded every time a party wins",
+        "Article 2208: factual, legal and equitable justification",
+        "No bad faith beyond an erroneous conviction of one's cause: no fees"
+      ],
+      "caseIds": [
+        "case-0085"
+      ],
+      "source": {
+        "caseTitle": "ABS-CBN Broadcasting Corporation v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 128690",
+        "url": "https://lawphil.net/judjuris/juri1999/jan1999/gr_128690_1999.html",
+        "part": "Ruling, second issue (attorney's fees)",
+        "excerpt": "As regards attorney's fees, the law is clear that in the absence of stipulation, attorney's fees may be recovered as actual or compensatory damages under any of the circumstances provided for in Article 2208 of the Civil Code. The general rule is that attorney's fees cannot be recovered as part of damages because of the policy that no premium should be placed on the right to litigate. They are not to be awarded every time a party wins a suit. The power of the court to award attorney's fees under Article 2208 demands factual, legal, and equitable justification. Even when claimant is compelled to litigate with third persons or to incur expenses to protect his rights, still attorney's fees may not be awarded where no sufficient showing of bad faith could be reflected in a party's persistence in a case other than erroneous conviction of the righteousness of his cause."
+      }
+    },
+    {
+      "id": "q-0954",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "In ABS-CBN v. Court of Appeals, why did the Court hold that moral damages cannot be granted to a corporation?",
+      "choices": {
+        "A": "Because a corporation can only sue for breach of contract.",
+        "B": "Because moral damages are a penalty that may be imposed only on natural persons.",
+        "C": "Because a corporation, being an artificial person with no feelings, emotions or senses, cannot experience physical suffering and mental anguish.",
+        "D": "Because the Civil Code expressly prohibits moral damages for juridical persons."
+      },
+      "correct": "C",
+      "explanation": "**C is correct.** A corporation, \"being an artificial person and having existence only in legal contemplation, ... has no feelings, no emotions, no senses\" and so \"cannot ... experience physical suffering and mental anguish.\" **A is wrong:** the Court did not limit corporations to contract suits. **B is wrong:** moral damages are compensation, \"not to impose a penalty on the wrongdoer.\" **D is wrong:** the Court reasoned from the nature of moral damages, not an express prohibition. **Bar trap:** the decision called the \"debased reputation\" statement in Manero and Mambulao obiter dictum.",
+      "caseIds": [
+        "case-0085"
+      ],
+      "source": {
+        "caseTitle": "ABS-CBN Broadcasting Corporation v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 128690",
+        "url": "https://lawphil.net/judjuris/juri1999/jan1999/gr_128690_1999.html",
+        "part": "Ruling, second issue (moral damages)",
+        "excerpt": "The award of moral damages cannot be granted in favor of a corporation because, being an artificial person and having existence only in legal contemplation, it has no feelings, no emotions, no senses, It cannot, therefore, experience physical suffering and mental anguish, which call be experienced only by one having a nervous system."
+      }
+    },
+    {
+      "id": "q-0955",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "Under ABS-CBN v. Court of Appeals, malice or bad faith, which is at the core of Articles 19, 20 and 21, implies",
+      "choices": {
+        "A": "a conscious and intentional design to do a wrongful act for a dishonest purpose or moral obliquity.",
+        "B": "any act that causes damage to another.",
+        "C": "the mere filing of a case that is later dismissed.",
+        "D": "a failure to exercise ordinary diligence."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** \"Malice or bad faith implies a conscious and intentional design to do a wrongful act for a dishonest purpose or moral obliquity. Such must be substantiated by evidence.\" **B is wrong:** damage from the exercise of a right is damnum absque injuria. **C is wrong:** \"the adverse result of an action does not per se make the action wrongful.\" **D is wrong:** that describes negligence. **Bar trap:** bad faith must be proved, not presumed.",
+      "caseIds": [
+        "case-0085"
+      ],
+      "source": {
+        "caseTitle": "ABS-CBN Broadcasting Corporation v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 128690",
+        "url": "https://lawphil.net/judjuris/juri1999/jan1999/gr_128690_1999.html",
+        "part": "Ruling, second issue (malice or bad faith)",
+        "excerpt": "Verily then, malice or bad faith is at the core of Articles 19, 20, and 21. Malice or bad faith implies a conscious and intentional design to do a wrongful act for a dishonest purpose or moral obliquity. Such must be substantiated by evidence."
+      }
+    },
+    {
+      "id": "q-0956",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Moral Damages",
+      "prompt": "In ABS-CBN v. Court of Appeals, ABS-CBN answered VIVA's offer of 104 films for ₱60 million with a draft contract for 53 films at ₱35 million. This draft contract was",
+      "choices": {
+        "A": "an acceptance that perfected the contract.",
+        "B": "a counter-offer, which is a rejection of the original offer.",
+        "C": "an acceptance with mere clarificatory changes, which still binds VIVA.",
+        "D": "an exercise of the right of first refusal that bound VIVA to sell."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** \"A qualified acceptance, or one that involves a new proposal, constitutes a counter-offer and is a rejection of the original offer\"; here \"there was no acceptance of VIVA's offer, for it was met by a counter-offer which substantially varied the terms of the offer.\" **A is wrong:** acceptance must be absolute. **C is wrong:** the changes went to the number of films and the price. **D is wrong:** the right of first refusal had already been exercised. **Bar trap:** a change in any element of the contract on acceptance is a counter-offer.",
+      "caseIds": [
+        "case-0085"
+      ],
+      "source": {
+        "caseTitle": "ABS-CBN Broadcasting Corporation v. Court of Appeals, et al.",
+        "grNumber": "G.R. No. 128690",
+        "url": "https://lawphil.net/judjuris/juri1999/jan1999/gr_128690_1999.html",
+        "part": "Ruling, first issue (perfection of contract)",
+        "excerpt": "A qualified acceptance, or one that involves a new proposal, constitutes a counter-offer and is a rejection of the original offer. Consequently, when something is desired which is not exactly what is proposed in the offer, such acceptance is not sufficient to generate consent because any modification or variation from the terms of the offer annuls the offer. When Mr. Del Rosario of VIVA met with Mr. Lopez of ABS-CBN at the Tamarind Grill on 2 April 1992 to discuss the package of films, said package of 104 VIVA films was VIVA's offer to ABS-CBN to enter into a new Film Exhibition Agreement. But ABS-CBN, sent, through Ms. Concio, a counter-proposal in the form of a draft contract proposing exhibition of 53 films for a consideration of P35 million. This counter-proposal could be nothing less than the counter-offer of Mr. Lopez during his conference with Del Rosario at Tamarind Grill Restaurant. Clearly, there was no acceptance of VIVA's offer, for it was met by a counter-offer which substantially varied the terms of the offer."
       }
     }
   ]
