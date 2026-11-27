@@ -796,6 +796,21 @@
       "ruling": "The decision was affirmed with modifications. Moral damages are recoverable only in the cases listed in Article 2219, and breach of contract is not among them, so as a general rule they are not recoverable in actions predicated on breach of contract; the exceptions in carriage are the death of a passenger (Arts. 1764, 2206) and the carrier's fraud or bad faith (Art. 2220). Fraud and bad faith must be proved by clear and convincing evidence and must attend the breach or induce the contract; defenses pleaded in an Answer are not that kind of bad faith. So no moral damages. His ₱500,000 claim was in substance for loss or impairment of earning capacity (Art. 2205(1)), which is actual damages and needs documentary proof of income unless the claimant falls under the exceptions for those earning below the minimum wage; he did not. Still, since the loss of his arm plainly impaired his earning capacity, temperate damages of ₱500,000 were awarded in lieu, following Tan v. OMC and other cases. A quotation for a prosthesis, without proof that one was bought, could not support actual damages; medical expenses must be supported by official receipts, and the receipted amount was corrected to ₱57,658.25. Legal interest of 6% runs from finality.",
       "keyDoctrine": "As a general rule, moral damages are not recoverable in actions for breach of contract, since breach of contract is not in Article 2219; in carriage, the exceptions are the death of a passenger and fraud or bad faith of the carrier, which must be proved by clear and convincing evidence and must attend the breach. Damages for loss or impairment of earning capacity (Art. 2205(1)) are actual damages needing documentary proof, save the minimum-wage exceptions; where earning capacity is plainly established but income unproved, temperate damages may be awarded in lieu. Medical expenses must be supported by official receipts; a mere quotation is not proof.",
       "sourceUrl": "https://lawphil.net/judjuris/juri2017/jul2017/gr_203902_2017.html"
+    },
+    {
+      "id": "case-0101",
+      "status": "draft",
+      "name": "Lambert v. Fox",
+      "grNumber": "G.R. No. L-7991",
+      "year": 1914,
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Liquidated Damages",
+      "facts": "In 1911 the creditors of a failing bookstore, John R. Edgar & Co., took it over and incorporated it, accepting stock for their credits. Leon Lambert and T. J. Fox, its two largest stockholders, agreed in writing that, since the corporation's success depended for at least a year on the larger stockholders keeping their interests, neither would sell or dispose of his shares until one year from the agreement, and that \"[e]ither party violating this agreement shall pay to the other the sum of one thousand (P1,000) pesos as liquidated damages,\" unless written consent was obtained. Before the year ended, Fox, over Lambert's protest, sold his shares to a strong competitor. The trial court dismissed Lambert's suit for the ₱1,000, holding that the agreement was meant to last only until the corporation became financially sound, which had already happened.",
+      "issue": "(1) Did the agreement last the full year? (2) Must Lambert prove actual damages to recover the stipulated sum? (3) Is the restriction on selling the stock void as against public policy?",
+      "ruling": "The judgment was reversed and Fox ordered to pay ₱1,000 with interest. (1) The intention of the parties is determined first from the words of the contract; where the language is plain, interpretation is unnecessary and would make a new contract for the parties. They expressly stipulated one year. (2) In this jurisdiction penalties in such contracts are enforced: competent parties may make agreements within the limits of law and public policy, and courts enforce them according to their terms. There is no difference between a penalty and liquidated damages as to legal results: the party is entitled to the stipulated sum without proving damages, and avoiding that necessity is a primary purpose of the stipulation. Under the Civil Code then in force, the only case for reducing the penalty was partial or irregular performance from which the claimant benefited. (3) The temporary restriction on selling the stock had a beneficial purpose, protected the corporation and the parties, and was reasonable in length, so it was valid.",
+      "keyDoctrine": "A penalty or liquidated damages clause is enforced according to its terms: the party entitled may recover the stipulated sum without proving actual damages, which is one of the purposes of the stipulation; legally, penalty and liquidated damages are treated alike. Plain contract words are applied, not interpreted away. (Under the present Civil Code, liquidated damages are those agreed upon to be paid in case of breach, Art. 2226, and are equitably reduced if iniquitous or unconscionable, Art. 2227.) A reasonable, temporary restriction on selling shares to protect a corporation is valid.",
+      "sourceUrl": "https://lawphil.net/judjuris/juri1914/jan1914/gr_l-7991_1914.html"
     }
   ],
   "questions": [
@@ -16063,6 +16078,275 @@
         "url": "https://lawphil.net/judjuris/juri2017/jul2017/gr_203902_2017.html",
         "part": "Our Ruling, the disposition",
         "excerpt": "WHEREFORE, the Petition for Review on Certiorari is DENIED. The assailed May 16, 2012 Decision and October 1, 2012 Resolution of the Court of Appeals in CA-G.R. CV No. 95520 are AFFIRMED with MODIFICATIONS as follows: (1) petitioners are declared entitled to temperate damages of ₱500,000.00; (2) the award of actual damages is set at the amount of ₱57,658.25; and (3) all damages awarded are subject to legal interest of 6% per annum from the finality of this Decision until full satisfaction."
+      }
+    },
+    {
+      "id": "q-1092",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Liquidated Damages",
+      "prompt": "Two stockholders agreed that neither would sell his shares within one year, and that \"either party violating this agreement shall pay to the other the sum of ₱1,000 as liquidated damages.\" One sold his shares to a competitor within the year. Sued for the ₱1,000, he argues that the plaintiff proved no actual damages and that stipulated sums are generally excessive penalties that courts should not enforce. Is he correct? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. Parties competent to contract may make such agreements within the limits of law and public policy, and courts will enforce them according to their terms. There is no legal difference between a penalty and liquidated damages: in either case the party to whom payment is due recovers the stipulated sum without having to prove damages, and avoiding that necessity is precisely one of the primary purposes of the stipulation.",
+        "legalBasis": "In Lambert v. Fox, \"[i]n this jurisdiction penalties provided in contracts of this character are enforced. It is the rule that parties who are competent to contract may make such agreements within the limitations of the law and public policy as they desire, and that the courts will enforce them according to their terms.\" \"[T]here is no difference between a penalty and liquidated damages, so far as legal results are concerned ... In either case the party to whom payment is to be made is entitled to recover the sum stipulated without the necessity of proving damages. Indeed one of the primary purposes in fixing a penalty or in liquidating damages, is to avoid such necessity.\"",
+        "application": "The seller breached the one-year restriction; the plaintiff need not prove any loss to recover the ₱1,000.",
+        "conclusion": "The ₱1,000 is recoverable. **Bar trap:** this 1914 case applied the old Civil Code; under the present Code, liquidated damages may be equitably reduced if iniquitous or unconscionable (Art. 2227), but proof of actual loss is still not required (Art. 2216)."
+      },
+      "keyPoints": [
+        "Competent parties may stipulate within law and public policy",
+        "Courts enforce stipulations according to their terms",
+        "Penalty and liquidated damages treated alike legally",
+        "Stipulated sum recoverable without proof of damages",
+        "Avoiding proof of damages is a purpose of the clause"
+      ],
+      "caseIds": [
+        "case-0101"
+      ],
+      "source": {
+        "caseTitle": "Lambert v. Fox",
+        "grNumber": "G.R. No. L-7991",
+        "url": "https://lawphil.net/judjuris/juri1914/jan1914/gr_l-7991_1914.html",
+        "part": "Decision, on the recovery of the stipulated sum without proof of damages",
+        "excerpt": "In this jurisdiction penalties provided in contracts of this character are enforced . It is the rule that parties who are competent to contract may make such agreements within the limitations of the law and public policy as they desire, and that the courts will enforce them according to their terms. … In this jurisdiction, there is no difference between a penalty and liquidated damages, so far as legal results are concerned. Whatever differences exists between them as a matter of language, they are treated the same legally. In either case the party to whom payment is to be made is entitled to recover the sum stipulated without the necessity of proving damages. Indeed one of the primary purposes in fixing a penalty or in liquidating damages, is to avoid such necessity."
+      }
+    },
+    {
+      "id": "q-1093",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Liquidated Damages",
+      "prompt": "In the same case, the trial court held that the parties really intended the restriction to last only until the corporation became financially sound, which happened after nine months, so the sale in the tenth month was not a breach. The contract plainly said \"till after one year from the date hereof.\" Was the trial court correct? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. The intention of the parties must be determined, in the first instance, from the words of the contract itself; persons are presumed to mean what they say. Where the language is plain, construction and interpretation are unnecessary and, if used, result in making a new contract for the parties. The parties expressly stipulated one year, and no reason was shown for reading it as nine months.",
+        "legalBasis": "In Lambert v. Fox, \"[t]he intention of parties to a contract must be determined, in the first instance, from the words of the contract itself. It is to be presumed that persons mean what they say when they speak plain English ... Where the language used by the parties is plain, then construction and interpretation are unnecessary and, if used, result in making a contract for the parties.\" \"[T]he parties expressly stipulated that the contract should last one year. No reason is shown for saying that it shall last only nine months.\"",
+        "application": "The plain one-year term governs; the sale within the year breached it.",
+        "conclusion": "The trial court erred. **Bar trap:** a court may not replace plain contract terms with what it guesses the purpose was."
+      },
+      "keyPoints": [
+        "Intention determined first from the contract's words",
+        "Parties presumed to mean what they say",
+        "Plain language: no construction needed",
+        "Construing plain terms makes a new contract",
+        "The one-year term governs"
+      ],
+      "caseIds": [
+        "case-0101"
+      ],
+      "source": {
+        "caseTitle": "Lambert v. Fox",
+        "grNumber": "G.R. No. L-7991",
+        "url": "https://lawphil.net/judjuris/juri1914/jan1914/gr_l-7991_1914.html",
+        "part": "Decision, on the interpretation of the one-year term",
+        "excerpt": "The intention of parties to a contract must be determined, in the first instance, from the words of the contract itself. It is to be presumed that persons mean what they say when they speak plain English. Interpretation and construction should by the instruments last resorted to by a court in determining what the parties agreed to. Where the language used by the parties is plain, then construction and interpretation are unnecessary and, if used, result in making a contract for the parties. … In the case at bar the parties expressly stipulated that the contract should last one year. No reason is shown for saying that it shall last only nine months."
+      }
+    },
+    {
+      "id": "q-1094",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Liquidated Damages",
+      "prompt": "A stockholder who sold his shares in breach of a one-year agreement not to sell argues that the agreement is void as being in restraint of trade and against public policy, so the liquidated damages clause cannot be enforced. The agreement was made right after the company was rescued from insolvency, to keep its largest stockholders invested while it recovered. Is the argument correct? Explain.",
+      "suggestedAnswer": {
+        "answer": "No. The suspension of the power to sell had a beneficial purpose, protected the corporation as well as the parties, and was reasonable as to the length of time of the suspension; it is therefore legal and valid. The Court expressly limited itself to that particular suspension and did not discuss the general limits on restraining the alienation of stock.",
+        "legalBasis": "In Lambert v. Fox, \"[w]e do not so regard it. The suspension of the power to sell has a beneficial purpose, results in the protection of the corporation as well as of the individual parties to the contract, and is reasonable as to the length of time of the suspension. We do not here undertake to discuss the limitations to the power to suspend the right of alienation of stock, limiting ourselves to the statement that the suspension in this particular case is legal and valid.\"",
+        "application": "A one-year suspension to support a corporation's recovery is beneficial and reasonable.",
+        "conclusion": "The restriction is valid. **Bar trap:** the ruling is tied to a beneficial, reasonable, temporary restriction; do not stretch it to indefinite or purposeless bans on selling shares."
+      },
+      "keyPoints": [
+        "Beneficial purpose",
+        "Protects the corporation and the parties",
+        "Reasonable length of the suspension",
+        "Held valid in this particular case only"
+      ],
+      "caseIds": [
+        "case-0101"
+      ],
+      "source": {
+        "caseTitle": "Lambert v. Fox",
+        "grNumber": "G.R. No. L-7991",
+        "url": "https://lawphil.net/judjuris/juri1914/jan1914/gr_l-7991_1914.html",
+        "part": "Decision, on the validity of the restriction on selling the stock",
+        "excerpt": "It is also urged by the appelle in this case that the stipulation in the contract suspending the power to sell the stock referred to therein is an illegal stipulation, is in restraint of trade and, therefore, offends public policy. We do not so regard it. The suspension of the power to sell has a beneficial purpose, results in the protection of the corporation as well as of the individual parties to the contract, and is reasonable as to the length of time of the suspension. We do not here undertake to discuss the limitations to the power to suspend the right of alienation of stock, limiting ourselves to the statement that the suspension in this particular case is legal and valid."
+      }
+    },
+    {
+      "id": "q-1095",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Liquidated Damages",
+      "prompt": "Ana contracted with Ben for the painting of her shop, with a clause that Ben would pay ₱10,000 \"as liquidated damages\" if he did not finish by June 1. Ben finished on June 15. Ana sues for the ₱10,000 but presents no evidence that the delay caused her any loss. Ben argues she must first prove her actual damages. In a second case, Carla's contract with Dino has no liquidated damages clause; Dino is also late, and Carla proves no loss. May Ana and Carla each recover the amounts they claim? Explain.",
+      "suggestedAnswer": {
+        "answer": "Ana may recover the stipulated ₱10,000 without proving damages: the party entitled to liquidated damages recovers the sum stipulated without the necessity of proving damages, which is one of the primary purposes of the clause. Carla has no stipulated sum; she must prove any actual damages she claims, and without such proof she cannot recover actual damages.",
+        "legalBasis": "In Lambert v. Fox, \"the party to whom payment is to be made is entitled to recover the sum stipulated without the necessity of proving damages. Indeed one of the primary purposes in fixing a penalty or in liquidating damages, is to avoid such necessity.\" Under Article 2226 of the present Civil Code, \"[l]iquidated damages are those agreed upon by the parties to a contract, to be paid in case of breach thereof,\" and Article 2216 provides that no proof of pecuniary loss is necessary for liquidated damages.",
+        "application": "Ana's clause fixes the damages in advance; Carla's contract does not.",
+        "conclusion": "Ana recovers ₱10,000; Carla recovers no actual damages without proof. **Bar trap:** the clause itself replaces proof of loss; without a clause, ordinary proof rules apply. (The court may still reduce an iniquitous or unconscionable amount under Art. 2227.)"
+      },
+      "keyPoints": [
+        "Liquidated damages: agreed upon in case of breach (Art. 2226)",
+        "No proof of loss needed for liquidated damages",
+        "Avoiding proof is the clause's purpose",
+        "Without a clause, actual damages must be proved"
+      ],
+      "caseIds": [
+        "case-0101"
+      ],
+      "source": {
+        "caseTitle": "Lambert v. Fox",
+        "grNumber": "G.R. No. L-7991",
+        "url": "https://lawphil.net/judjuris/juri1914/jan1914/gr_l-7991_1914.html",
+        "part": "Decision, on the recovery of the stipulated sum without proof of damages",
+        "excerpt": "In either case the party to whom payment is to be made is entitled to recover the sum stipulated without the necessity of proving damages. Indeed one of the primary purposes in fixing a penalty or in liquidating damages, is to avoid such necessity."
+      }
+    },
+    {
+      "id": "q-1096",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Liquidated Damages",
+      "prompt": "Under the Civil Code applied in Lambert v. Fox, when could a court reduce a stipulated penalty? Using that rule, consider: Eva agreed to deliver 100 sacks of rice to Felix by a set date, with a ₱5,000 penalty for non-delivery. (a) She delivered nothing. (b) In another contract, she delivered 80 of the 100 sacks, which Felix accepted and used. May the court reduce the penalty in each case under the rule stated in Lambert?",
+      "suggestedAnswer": {
+        "answer": "Under the Civil Code then in force, the only case in which the court could reduce a stipulated penalty was when the principal obligation had been partly or irregularly fulfilled and the person demanding the penalty had received the benefit of that partial or irregular performance; the penalty could then be reduced to the extent of the benefits received. (a) No reduction under that rule: there was no partial performance. (b) Yes: Felix benefited from the 80 sacks, so the penalty may be reduced to the extent of that benefit.",
+        "legalBasis": "In Lambert v. Fox, \"[t]he only case recognized by the Civil Code in which the court is authorized to intervene for the purpose of reducing a penalty stipulated in the contract is when the principal obligation has been partly or irregularly fulfilled and the court can see that the person demanding the penalty has received the benefit of such or irregular performance. In such case the court is authorized to reduce the penalty to the extent of the benefits received by the party enforcing the penalty.\"",
+        "application": "(a) Total non-performance gives Felix no benefit. (b) Partial performance benefited him.",
+        "conclusion": "(a) No reduction; (b) reduction to the extent of the benefit. **Bar trap:** the present Civil Code adds another ground: liquidated damages \"shall be equitably reduced if they are iniquitous or unconscionable\" (Art. 2227). Do not answer a current-law question with Lambert's \"only case\" rule alone."
+      },
+      "keyPoints": [
+        "Old rule: reduction only for partial or irregular performance",
+        "Claimant must have benefited from that performance",
+        "Reduction to the extent of the benefit",
+        "Present Code: also equitable reduction if iniquitous or unconscionable (Art. 2227)"
+      ],
+      "caseIds": [
+        "case-0101"
+      ],
+      "source": {
+        "caseTitle": "Lambert v. Fox",
+        "grNumber": "G.R. No. L-7991",
+        "url": "https://lawphil.net/judjuris/juri1914/jan1914/gr_l-7991_1914.html",
+        "part": "Decision, on the only ground for reducing the penalty under the Civil Code then in force",
+        "excerpt": "The only case recognized by the Civil Code in which the court is authorized to intervene for the purpose of reducing a penalty stipulated in the contract is when the principal obligation has been partly or irregularly fulfilled and the court can see that the person demanding the penalty has received the benefit of such or irregular performance. In such case the court is authorized to reduce the penalty to the extent of the benefits received by the party enforcing the penalty."
+      }
+    },
+    {
+      "id": "q-1097",
+      "type": "essay",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Liquidated Damages",
+      "prompt": "Gina leased her stall to Hugo \"for a period of two (2) years,\" with a penalty if he left early. After one year, Hugo moved out, arguing that the parties' real purpose (to keep the stall occupied during a slow season) had been achieved, so the lease had effectively ended. In another lease, the term was stated as \"until the market renovation is completed,\" and Hugo left right after the renovation was completed. Is Hugo liable for the penalty in each case? Explain.",
+      "suggestedAnswer": {
+        "answer": "In the first lease, yes. The parties' intention is determined first from the words of the contract; where the language is plain (two years), interpretation is unnecessary and would make a new contract for the parties, so Hugo's early departure is a breach that triggers the penalty. In the second lease, no: the plain words fixed the term until completion of the renovation, and he left only after that event, so there was no breach.",
+        "legalBasis": "In Lambert v. Fox, \"[t]he intention of parties to a contract must be determined, in the first instance, from the words of the contract itself ... Where the language used by the parties is plain, then construction and interpretation are unnecessary and, if used, result in making a contract for the parties.\" \"Whatever the object was in specifying the year, it was their agreement that the contract should last a year ... What reason can give for refusing to follow the plain words of the men who made the contract? We see none.\"",
+        "application": "Both leases are read by their plain words: a fixed two years in one, the completion of the renovation in the other.",
+        "conclusion": "Liable in the first; not liable in the second. **Bar trap:** the purpose behind a plain term does not shorten it; the plain term itself controls."
+      },
+      "keyPoints": [
+        "Plain words control",
+        "Purpose does not override an express term",
+        "Construing plain terms makes a new contract",
+        "Breach only if the act falls within the agreed term"
+      ],
+      "caseIds": [
+        "case-0101"
+      ],
+      "source": {
+        "caseTitle": "Lambert v. Fox",
+        "grNumber": "G.R. No. L-7991",
+        "url": "https://lawphil.net/judjuris/juri1914/jan1914/gr_l-7991_1914.html",
+        "part": "Decision, on the interpretation of the one-year term",
+        "excerpt": "What we said in that case is equally applicable to contracts between persons. In the case at bar the parties expressly stipulated that the contract should last one year. No reason is shown for saying that it shall last only nine months. Whatever the object was in specifying the year, it was their agreement that the contract should last a year and it was their judgment and conviction that their purposes would not be subversed in any less time. What reason can give for refusing to follow the plain words of the men who made the contract? We see none."
+      }
+    },
+    {
+      "id": "q-1098",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Liquidated Damages",
+      "prompt": "According to Lambert v. Fox, as to legal results, a penalty and liquidated damages",
+      "choices": {
+        "A": "are entirely different: only liquidated damages may be enforced.",
+        "B": "are treated the same legally; in either case the party entitled recovers the stipulated sum without proving damages.",
+        "C": "both require proof of actual damages.",
+        "D": "are both void as contrary to public policy."
+      },
+      "correct": "B",
+      "explanation": "**B is correct.** \"[T]here is no difference between a penalty and liquidated damages, so far as legal results are concerned ... In either case the party to whom payment is to be made is entitled to recover the sum stipulated without the necessity of proving damages.\" **A, C and D are wrong.** **Bar trap:** under the present Code, both may be equitably reduced if iniquitous or unconscionable (Art. 2227: \"whether intended as an indemnity or a penalty\").",
+      "caseIds": [
+        "case-0101"
+      ],
+      "source": {
+        "caseTitle": "Lambert v. Fox",
+        "grNumber": "G.R. No. L-7991",
+        "url": "https://lawphil.net/judjuris/juri1914/jan1914/gr_l-7991_1914.html",
+        "part": "Decision, on penalty and liquidated damages",
+        "excerpt": "In this jurisdiction, there is no difference between a penalty and liquidated damages, so far as legal results are concerned. Whatever differences exists between them as a matter of language, they are treated the same legally. In either case the party to whom payment is to be made is entitled to recover the sum stipulated without the necessity of proving damages."
+      }
+    },
+    {
+      "id": "q-1099",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Liquidated Damages",
+      "prompt": "In Lambert v. Fox, the Court said that one of the primary purposes in fixing a penalty or in liquidating damages is",
+      "choices": {
+        "A": "to punish the defendant for bad faith.",
+        "B": "to allow the court to award a larger amount.",
+        "C": "to make the contract unenforceable.",
+        "D": "to avoid the necessity of proving damages."
+      },
+      "correct": "D",
+      "explanation": "**D is correct.** \"Indeed one of the primary purposes in fixing a penalty or in liquidating damages, is to avoid such necessity,\" that is, the necessity of proving damages. **A, B and C are wrong:** none is the purpose stated. **Bar trap:** liquidated damages do not depend on bad faith.",
+      "caseIds": [
+        "case-0101"
+      ],
+      "source": {
+        "caseTitle": "Lambert v. Fox",
+        "grNumber": "G.R. No. L-7991",
+        "url": "https://lawphil.net/judjuris/juri1914/jan1914/gr_l-7991_1914.html",
+        "part": "Decision, on the purpose of liquidated damages",
+        "excerpt": "Indeed one of the primary purposes in fixing a penalty or in liquidating damages, is to avoid such necessity."
+      }
+    },
+    {
+      "id": "q-1100",
+      "type": "mcq",
+      "status": "draft",
+      "subject": "Civil Law",
+      "topic": "Damages",
+      "subtopic": "Liquidated Damages",
+      "prompt": "What was the result in Lambert v. Fox?",
+      "choices": {
+        "A": "The judgment was reversed, and the defendant was ordered to pay the plaintiff ₱1,000 with interest.",
+        "B": "The complaint was dismissed because the corporation had become financially sound.",
+        "C": "The plaintiff recovered his proved actual damages only.",
+        "D": "The stock restriction was declared void."
+      },
+      "correct": "A",
+      "explanation": "**A is correct.** \"The judgment is reversed, the case remanded with instructions to enter a judgment in favor of the plaintiff and against the defendant for P1,000, with interest.\" **B is wrong:** that was the trial court's reasoning, rejected. **C is wrong:** no proof of damages was required. **D is wrong:** the restriction was held valid. **Bar trap:** the stipulated sum, not proved loss, was the measure.",
+      "caseIds": [
+        "case-0101"
+      ],
+      "source": {
+        "caseTitle": "Lambert v. Fox",
+        "grNumber": "G.R. No. L-7991",
+        "url": "https://lawphil.net/judjuris/juri1914/jan1914/gr_l-7991_1914.html",
+        "part": "Decision, the disposition",
+        "excerpt": "The judgment is reversed, the case remanded with instructions to enter a judgment in favor of the plaintiff and against the defendant for P1,000, with interest; without costs in this instance."
       }
     }
   ]
