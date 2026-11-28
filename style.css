@@ -744,6 +744,9 @@ button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
 .case-bar-partly { background: var(--partly); }
 .case-bar-wrong { background: var(--missed); }
 .case-bar-rest { background: var(--border); }
+.case-bar-tag-green { background: var(--tag-green); }  /* topic rows: by tag (Know it / Unsure / Don't know) */
+.case-bar-tag-yellow { background: var(--tag-yellow); }
+.case-bar-tag-red { background: var(--tag-red); }
 .case-row-foot { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); margin-top: var(--space-3); }
 .case-row-count { margin: 0; font-size: 14px; color: var(--muted); }
 .case-row > .case-row-count { margin-top: var(--space-2); }

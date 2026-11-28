@@ -874,11 +874,11 @@ function topicsFor(subject) {
 }
 
 // One topic or sub-topic row (Questions tab, sub-topics screen), like a case row: the name, the
-// progress bar of its questions (all sources and types: what she practices) with "N of M questions
-// answered", a small ↻ Reset (only when there's something to reset) and ›. The whole row opens it
+// tag bar of its questions (all sources and types: what she practices; Know it / Unsure / Don't know
+// by progress.tags) with "N of M questions tagged", a small ↻ Reset (only when there's something to reset) and ›. The whole row opens it
 // (onOpen); the name is the row's real button, so keyboards and screen readers reach it.
 function makeTopicRow(name, questions, onOpen, afterReset) {
-  const tally = resultTally(questions);
+  const tally = tagTally(questions);
   const row = document.createElement("div");
   row.className = "card case-row topic-row";
   const top = document.createElement("div");
@@ -887,7 +887,7 @@ function makeTopicRow(name, questions, onOpen, afterReset) {
   open.type = "button";
   open.className = "case-row-open";
   open.textContent = name;
-  open.setAttribute("aria-label", name + ", " + (questions.length ? answeredText(tally, questions.length) : "no questions yet"));
+  open.setAttribute("aria-label", name + ", " + (questions.length ? taggedText(tally, questions.length) : "no questions yet"));
   top.appendChild(open);
   if (hasSomethingToReset(questions)) { top.appendChild(makeRowReset(name, questions, afterReset)); }
   const arrow = document.createElement("span");
@@ -902,8 +902,8 @@ function makeTopicRow(name, questions, onOpen, afterReset) {
     count.textContent = "No questions yet.";
     row.appendChild(count);
   } else {
-    count.textContent = answeredText(tally, questions.length);
-    row.appendChild(makeProgressBar(tally));
+    count.textContent = taggedText(tally, questions.length);
+    row.appendChild(makeTagBar(tally));
     const foot = document.createElement("div");
     foot.className = "case-row-foot";
     foot.appendChild(count);
@@ -1070,9 +1070,39 @@ function makeProgressBar(tally) {
   return bar;
 }
 
-// "6 of 8 questions answered".
-function answeredText(tally, total) {
-  return (total - tally.notYet) + " of " + total + (total === 1 ? " question answered" : " questions answered");
+// How her tags on these questions add up: { green, yellow, red, none } (tagOf: Know it / Unsure /
+// Don't know; none = not tagged yet).
+function tagTally(questions) {
+  const tally = { green: 0, yellow: 0, red: 0, none: 0 };
+  questions.forEach(function (q) {
+    const tag = tagOf(q.id);
+    if (tag) { tally[tag]++; } else { tally.none++; }
+  });
+  return tally;
+}
+
+// The same thin bar (case-bar) by tags: green / yellow / red pieces in the tag colors, the grey track
+// for not tagged; the words in its aria-label ("40 know it, 50 unsure, 30 don't know, 235 not tagged").
+function makeTagBar(tally) {
+  const bar = document.createElement("div");
+  bar.className = "case-bar";
+  bar.setAttribute("role", "img");
+  bar.setAttribute("aria-label", ["green", "yellow", "red"].map(function (color) {
+    return tally[color] + " " + tagWord(color).toLowerCase();
+  }).concat(tally.none + " not tagged").join(", "));
+  [["tag-green", tally.green], ["tag-yellow", tally.yellow], ["tag-red", tally.red], ["rest", tally.none]].forEach(function (part) {
+    if (part[1] === 0) { return; }
+    const piece = document.createElement("span");
+    piece.className = "case-bar-" + part[0];
+    piece.style.flexGrow = String(part[1]);
+    bar.appendChild(piece);
+  });
+  return bar;
+}
+
+// "120 of 355 questions tagged" ("1 of 1 question tagged").
+function taggedText(tally, total) {
+  return (total - tally.none) + " of " + total + (total === 1 ? " question tagged" : " questions tagged");
 }
 
 // Is there anything a Reset would clear for these questions (a latest result or a Review missed place)?
