@@ -574,6 +574,7 @@ function putBackCurrent(saved) {
       showRated(saved.rating);
     }
   }
+  showNextEmphasis();  // her tag row, as she left it
   rememberSpot();
 }
 
@@ -634,6 +635,11 @@ const ALL_TOPICS = "All topics";
 const REVIEW_MISSED = "Review missed";
 const BOOKMARKED = "Bookmarked";
 const TAGGED = "Tagged";
+// The words she sees for each tag color (the stored values "green" / "yellow" / "red" never change).
+const TAG_WORDS = { green: "Know it", yellow: "Unsure", red: "Don't know" };
+function tagWord(color) {
+  return TAG_WORDS[color] || "";
+}
 
 // Friendly messages for when one of her lists is empty.
 const EMPTY_LIST_MESSAGES = {};
@@ -642,7 +648,7 @@ EMPTY_LIST_MESSAGES[REVIEW_MISSED] =
 EMPTY_LIST_MESSAGES[BOOKMARKED] =
   "No bookmarks yet. Tap Bookmark on any question to save it here.";
 EMPTY_LIST_MESSAGES[TAGGED] =
-  "No tagged questions yet. Tap a color (green, yellow or red) on any question to tag it.";
+  "No tagged questions yet. After you answer a question, tag it: Know it, Unsure or Don't know.";
 
 function countLabel(n) {
   return n + (n === 1 ? " question" : " questions");
@@ -1464,9 +1470,9 @@ function makeListChip(subject, name) {
 
 
 // ---------- Her "Tagged" list ----------
-// Every question she color-tagged in this subject (of the question type picked on the
-// subject screen), grouped by color: green, then yellow, then red. Each card shows its
-// color. Tap one to practice just it, or "Start practice" for all of them.
+// Every question she tagged in this subject, grouped by tag under a small heading (dot + word +
+// count): Know it (green), then Unsure (yellow), then Don't know (red). Each card shows its dot
+// and the tag's word. Tap one to practice just it, or "Start practice" for all of them.
 function openTagged() {
   currentTopic = TAGGED;
   currentSubtopic = null;
@@ -1484,10 +1490,10 @@ function openTagged() {
   setIconLabel(document.getElementById("tagged-back"), "chevron-left", subject);
   document.getElementById("tagged-subject").textContent = subject;
 
-  // "5 questions: 2 green, 2 yellow, 1 red"
+  // "5 questions: 2 Know it, 2 Unsure, 1 Don't know"
   const counts = TAG_COLORS.map(function (color) {
     const n = questions.filter(function (q) { return tagOf(q.id) === color; }).length;
-    return n > 0 ? n + " " + color : null;
+    return n > 0 ? n + " " + tagWord(color) : null;
   }).filter(Boolean);
   document.getElementById("tagged-count").textContent =
     modeCountLabel(questions.length, mode) + ": " + counts.join(", ");
@@ -1495,15 +1501,28 @@ function openTagged() {
 
   const list = document.getElementById("tagged-list");
   list.innerHTML = "";
+  // One group per tag (Know it, Unsure, Don't know), each under a small heading: dot, word, count.
   TAG_COLORS.forEach(function (color) {
-    questions.filter(function (q) { return tagOf(q.id) === color; }).forEach(function (question) {
-      list.appendChild(makeQuestionCard(question, function () {
+    const group = questions.filter(function (q) { return tagOf(q.id) === color; });
+    if (group.length === 0) { return; }
+    const heading = document.createElement("h2");
+    heading.className = "label tagged-group-label";
+    const dot = document.createElement("span");
+    dot.className = "tag-mark";
+    dot.dataset.tag = color;
+    dot.setAttribute("aria-hidden", "true");
+    heading.append(dot, document.createTextNode(tagWord(color) + " · " + group.length));
+    const cards = document.createElement("div");
+    cards.className = "subject-list";
+    group.forEach(function (question) {
+      cards.appendChild(makeQuestionCard(question, function () {
         fixedQuestions = [question];  // practice just this one; Back returns to this list
         practiceCase = null;
         currentTopic = TAGGED;
         startPractice();
       }));
     });
+    list.append(heading, cards);
   });
   showScreen("screen-tagged");
 }
@@ -1534,8 +1553,7 @@ function tagMark(question) {
   const mark = document.createElement("span");
   mark.className = "tag-mark";
   mark.dataset.tag = tag;
-  mark.setAttribute("role", "img");
-  mark.setAttribute("aria-label", tag.charAt(0).toUpperCase() + tag.slice(1) + " tag");
+  mark.setAttribute("aria-hidden", "true");  // the card's detail line says the tag in words
   return mark;
 }
 
@@ -1551,7 +1569,7 @@ function makeQuestionCard(question, onTap) {
   const prompt = plainText(question.prompt).replace(/\s+/g, " ").trim();
   // A short preview, cut at the end of a whole word.
   text.textContent = prompt.length > 110 ? prompt.slice(0, 110).replace(/\s+\S*$/, "") + "…" : prompt;
-  const where = [isClassNote(question) ? "Notes" : (isNotebookLM(question) ? "NotebookLM" : null), questionTypeLabel(question), question.topic].filter(Boolean).join(" · ");
+  const where = [tagOf(question.id) ? tagWord(tagOf(question.id)) : null, isClassNote(question) ? "Notes" : (isNotebookLM(question) ? "NotebookLM" : null), questionTypeLabel(question), question.topic].filter(Boolean).join(" · ");
   text.appendChild(cardDetail(where));
   const arrow = document.createElement("span");
   arrow.className = "subject-arrow";
@@ -3594,7 +3612,6 @@ function showQuestion() {
   document.getElementById("question-ai-note").textContent = aiNoteFor(question);
   showClassNotesLabel(question);
   showBookmark(question);
-  showTag(question);
   showQuestionCases(question);
 
   // Previous / Next are always there (she can skip). Previous is greyed out on the first
@@ -3651,23 +3668,74 @@ document.getElementById("bookmark-btn").addEventListener("click", function () {
   showBookmark(question);
 });
 
-// --- Color tag (green / yellow / red, or none) ---
-// Tapping a color tags the question with it (replacing any other color); tapping the
-// color it already has removes the tag. Saved right away, by question ID.
-function showTag(question) {
-  const tag = tagOf(question.id);
-  document.querySelectorAll(".tag-dot").forEach(function (dot) {
-    dot.setAttribute("aria-pressed", dot.dataset.tag === tag ? "true" : "false");
-  });
+// --- Her tag: "How well do you know this?" (Know it / Unsure / Don't know) ---
+// Shown once the answer is showing (multiple choice submitted, essay's suggested answer shown,
+// fill in the blank's Show answer), just above Previous / Next, and required there: Next / Finish
+// stays greyed until she picks one. Not shown (and not required) before she answers, in a fill in
+// the blank's Read mode, or in a case's read-only Review. Saved right away in progress.tags, by
+// question ID, as "green" / "yellow" / "red" (the stored values never change; only the words do).
+// Tapping another changes it; tapping the picked one keeps it (a tag is required here).
+// The words are TAG_WORDS (near TAGGED, above).
+// Is the answer to the question on screen showing, so her tag is asked for?
+function tagAsked() {
+  const question = session && session.questions && session.questions[session.index];
+  if (!question || inCaseReview()) { return false; }
+  if (question.type === "fillblank" && session.fbView === "read") { return false; }
+  const current = session.current || {};
+  if (question.type === "mcq") { return !!current.picked; }
+  return !!current.answerShown;
 }
 
-document.querySelectorAll(".tag-dot").forEach(function (dot) {
-  dot.addEventListener("click", function () {
-    const question = session.questions[session.index];
-    setTag(question.id, tagOf(question.id) === dot.dataset.tag ? null : dot.dataset.tag);
-    showTag(question);
+// Must she still tag the question on screen before going on?
+function tagMissing() {
+  return tagAsked() && tagOf(session.questions[session.index].id) === null;
+}
+
+// The three buttons, made once: dot + word, and a check when picked.
+(function buildTagOptions() {
+  const box = document.getElementById("tag-options");
+  TAG_COLORS.forEach(function (color) {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "tag-option";
+    button.dataset.tag = color;
+    button.setAttribute("aria-pressed", "false");
+    const dot = document.createElement("span");
+    dot.className = "tag-mark";
+    dot.dataset.tag = color;
+    dot.setAttribute("aria-hidden", "true");
+    const word = document.createElement("span");
+    word.textContent = tagWord(color);
+    button.append(dot, word, icon("check"));
+    button.addEventListener("click", function () {
+      const question = session && session.questions && session.questions[session.index];
+      if (!question || !tagAsked()) { return; }
+      setTag(question.id, color);
+      showNextEmphasis();  // redraws the row and lets Next go
+    });
+    box.appendChild(button);
   });
-});
+})();
+
+// Show or hide the row, mark her tag, and grey out Next / Finish while it's missing.
+function showTagRow() {
+  const asked = tagAsked();
+  const row = document.getElementById("tag-row");
+  row.hidden = !asked;
+  const tag = asked ? tagOf(session.questions[session.index].id) : null;
+  document.querySelectorAll(".tag-option").forEach(function (button) {
+    button.setAttribute("aria-pressed", button.dataset.tag === tag ? "true" : "false");
+  });
+  const missing = asked && tag === null;
+  document.getElementById("tag-row-note").hidden = !missing;
+  const next = document.getElementById("next-btn");
+  next.disabled = missing;
+  if (missing) {
+    next.setAttribute("aria-describedby", "tag-row-note");
+  } else {
+    next.removeAttribute("aria-describedby");
+  }
+}
 
 // --- Multiple choice ---
 function showMcq(question) {
@@ -4452,6 +4520,7 @@ function revealFillBlank() {
 document.getElementById("fb-show").addEventListener("click", function () {
   revealFillBlank();
   session.current.answerShown = true;
+  showNextEmphasis();  // the tag row appears now
   rememberSpot();
 });
 
@@ -4524,6 +4593,7 @@ function revealAnswer() {
 document.getElementById("show-answer").addEventListener("click", function () {
   revealAnswer();
   session.current.answerShown = true;
+  showNextEmphasis();  // the tag row appears now
   rememberSpot();
 });
 
@@ -4689,6 +4759,7 @@ function showNextEmphasis() {
   const next = document.getElementById("next-btn");
   next.classList.toggle("btn-primary", done);
   next.classList.toggle("btn-secondary", !done);
+  showTagRow();  // her tag, once the answer shows (and Next greyed until she picks one)
 }
 
 // ---------- Previous / Next ----------
@@ -4708,6 +4779,7 @@ function goToQuestion(index) {
 }
 
 document.getElementById("next-btn").addEventListener("click", function () {
+  if (tagMissing()) { return; }  // her tag is required once the answer shows
   if (session.index < session.questions.length - 1) {
     goToQuestion(session.index + 1);
   } else if (inCaseReview()) {
@@ -4733,7 +4805,7 @@ document.addEventListener("keydown", function (event) {
   event.preventDefault();
   if (event.key === "ArrowLeft") {
     document.getElementById("prev-btn").click();
-  } else if (session.index < session.questions.length - 1) {
+  } else if (session.index < session.questions.length - 1 && !tagMissing()) {
     document.getElementById("next-btn").click();  // never "Finish" by an arrow key
   }
 });

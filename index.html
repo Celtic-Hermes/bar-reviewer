@@ -403,7 +403,7 @@
       <h1 class="screen-title">Tagged</h1>
       <p class="screen-subtitle" id="tagged-count"></p>
       <button class="btn btn-primary" id="tagged-start">Start practice</button>
-      <div class="subject-list" id="tagged-list"></div>
+      <div class="tagged-list" id="tagged-list"></div>
     </section>
 
     <!-- SCREEN 2d: One subject's tests (tests.js openTests): Create a test, then Unfinished and Finished -->
@@ -638,12 +638,6 @@
           <button class="bookmark-btn" id="bookmark-btn"></button>
           <!-- Highlighter on / off (one switch app-wide; off = select and copy text instead) -->
           <button type="button" class="hl-toggle" aria-pressed="true"><span data-icon="pen"></span> Highlight</button>
-          <!-- Her color tag: tap a color to tag the question, tap it again to remove the tag -->
-          <div class="tag-picker" role="group" aria-label="Color tag">
-            <button class="tag-dot" data-tag="green" aria-label="Green tag" aria-pressed="false"><span data-icon="check"></span></button>
-            <button class="tag-dot" data-tag="yellow" aria-label="Yellow tag" aria-pressed="false"><span data-icon="check"></span></button>
-            <button class="tag-dot" data-tag="red" aria-label="Red tag" aria-pressed="false"><span data-icon="check"></span></button>
-          </div>
         </div>
       </header>
 
@@ -774,6 +768,15 @@
         </section>
       </div>
       </div>
+
+      <!-- Her tag, once the answer shows: Know it / Unsure / Don't know (app.js showTagRow).
+           Required: Next / Finish stays greyed until one is picked. The buttons are filled in
+           by app.js from TAG_COLORS / TAG_WORDS. -->
+      <section class="tag-row" id="tag-row" hidden>
+        <h2 class="label tag-row-title" id="tag-row-title">How well do you know this?</h2>
+        <div class="tag-options" id="tag-options" role="group" aria-labelledby="tag-row-title"></div>
+        <p class="tag-row-note" id="tag-row-note">Tag this question to go on.</p>
+      </section>
 
       <!-- Previous / Next: always there, so she can move around without answering.
            Skipping counts as nothing. On the last question, Next says "Finish". -->

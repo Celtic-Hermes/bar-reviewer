@@ -132,7 +132,7 @@
 .icon { width: 1.2em; height: 1.2em; flex: 0 0 auto; vertical-align: -0.24em; }
 .icon-lead { margin-right: 0.4em; }
 [data-icon] { display: inline-flex; align-items: center; vertical-align: -0.24em; }  /* the slot sits on the text line like .icon */
-.menu-btn [data-icon], .tag-dot [data-icon] { vertical-align: middle; }
+.menu-btn [data-icon] { vertical-align: middle; }
 .menu-btn .icon { width: 22px; height: 22px; margin: 0; vertical-align: 0; }
 .back-btn .icon-lead { margin-right: 0.15em; }  /* a chevron needs less room than other icons */
 
@@ -449,7 +449,7 @@ body {
    then springs back. The tint is an "inner shadow" laid on top of the button's
    own background, so it works the same on every button color.
    To change the effect, edit --press-scale, --press-shade and --press-time at the top. */
-.btn, .subject-card, .choice, .back-btn, .bookmark-btn, .hl-swatch, .tag-dot, .fb-view-btn, .fb-new-btn, .menu-btn, .quick-link, .stat-tile-button, .start-card, .syllabus-card, .list-chip {
+.btn, .subject-card, .choice, .back-btn, .bookmark-btn, .hl-swatch, .tag-option, .fb-view-btn, .fb-new-btn, .menu-btn, .quick-link, .stat-tile-button, .start-card, .syllabus-card, .list-chip {
   transition: transform var(--press-time) ease-out, box-shadow var(--press-time) ease-out;
 }
 .btn:active:not(:disabled),
@@ -464,7 +464,7 @@ body {
 .menu-btn:active,
 .bookmark-btn:active,
 .hl-swatch:active,
-.tag-dot:active,
+.tag-option:active,
 .fb-view-btn:active,
 .seg-btn:active,
 .fb-new-btn:active:not(.off) {
@@ -473,7 +473,7 @@ body {
 }
 /* If she has asked her phone for less motion: keep the tint, skip the shrinking. */
 @media (prefers-reduced-motion: reduce) {
-  .btn, .subject-card, .choice, .back-btn, .bookmark-btn, .hl-swatch, .tag-dot, .fb-view-btn, .fb-new-btn, .menu-btn, .quick-link, .stat-tile-button, .start-card, .syllabus-card, .list-chip { --press-scale: 1; }
+  .btn, .subject-card, .choice, .back-btn, .bookmark-btn, .hl-swatch, .tag-option, .fb-view-btn, .fb-new-btn, .menu-btn, .quick-link, .stat-tile-button, .start-card, .syllabus-card, .list-chip { --press-scale: 1; }
 }
 
 /* ---------- Home: the top (greeting, tiles, where she stopped) ---------- */
@@ -945,28 +945,39 @@ button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
 }
 .bookmark-btn.on { color: var(--partly); border-color: var(--partly); }
 
-/* ---------- Color tag: three dots under the Bookmark button ---------- */
-/* The look of a tag color lives here: anything showing a tag uses .tag-dot (the
-   buttons) or .tag-mark (a small dot in a list), with data-tag="green" / "yellow" / "red". */
+/* ---------- Her tag: "How well do you know this?" (Know it / Unsure / Don't know) ---------- */
+/* The look of a tag color lives here: anything showing a tag uses .tag-option (the buttons
+   on the question screen) or .tag-mark (a small dot), with data-tag="green" / "yellow" / "red".
+   The words are always shown next to the color, so color is never the only clue. */
 .question-actions { flex-shrink: 0; display: flex; flex-direction: column; align-items: flex-end; gap: var(--space-2); }
-.tag-picker { display: flex; gap: var(--space-3); }
 [data-tag="green"]  { --tag-color: var(--tag-green); }
 [data-tag="yellow"] { --tag-color: var(--tag-yellow); }
 [data-tag="red"]    { --tag-color: var(--tag-red); }
-.tag-dot {
-  position: relative;  /* its tap area (::after) is 44px around the 34px dot */
-  width: 34px; height: 34px; padding: 0;
-  border: 2px solid var(--tag-color); border-radius: 50%;
-  background: color-mix(in srgb, var(--tag-color) 18%, var(--card));
+.tag-row { margin: var(--space-block) 0 0; }
+.tag-row-title { margin: 0 0 var(--space-2); }
+.tag-options { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-2); }
+.tag-option {
+  display: flex; align-items: center; justify-content: center; gap: var(--space-2);
+  min-height: 48px; padding: var(--space-2) var(--space-2);
+  border: 2px solid var(--border); border-radius: var(--radius-md);
+  background: var(--card); color: var(--text);
+  font: inherit; font-size: 15px; font-weight: 600; line-height: 1.2; text-align: center;
   cursor: pointer; -webkit-tap-highlight-color: transparent;
-  color: var(--tag-check); font: inherit; font-size: 17px; font-weight: 700; line-height: 1;
 }
-/* The picked color: filled in, with a check mark (so it's clear without relying on color). */
-.tag-dot[aria-pressed="true"] { background: var(--tag-color); }
-.tag-dot [data-icon] { display: none; }
-.tag-dot[aria-pressed="true"] [data-icon] { display: inline-flex; }
-.tag-dot .icon { width: 18px; height: 18px; vertical-align: middle; }
-.tag-dot::after { content: ""; position: absolute; inset: -5px; border-radius: 50%; }
+.tag-option .tag-mark { width: 14px; height: 14px; }
+/* The picked one: a soft fill and an edge in its color, and a check (not color alone). */
+.tag-option[aria-pressed="true"] {
+  border-color: var(--tag-color);
+  background: color-mix(in srgb, var(--tag-color) 18%, var(--card));
+}
+.tag-option { position: relative; white-space: nowrap; }
+/* The check sits in the corner, so the word never wraps on a phone ("Don't know"). */
+.tag-option .icon { display: none; position: absolute; top: var(--space-1); right: var(--space-1); width: 14px; height: 14px; margin: 0; }
+.tag-option[aria-pressed="true"] .icon { display: inline-block; }
+.tag-row-note { margin: var(--space-2) 0 0; font-size: 14px; color: var(--muted); }
+/* Tagged screen: one small heading per tag (dot + word + count) */
+.tagged-group-label { display: flex; align-items: center; gap: var(--space-2); margin-top: var(--space-5); }
+.tagged-group-label:first-child { margin-top: 0; }
 /* A small dot in her tag color, at the start of a question card in a list. */
 .tag-mark {
   flex-shrink: 0; width: 16px; height: 16px; border-radius: 50%;
