@@ -806,7 +806,6 @@ button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
   font: inherit; font-size: 15px; font-weight: 600; color: var(--primary-text); cursor: pointer;
   -webkit-tap-highlight-color: transparent;
 }
-.practice-heading { margin-top: 0; }
 .practice-continue { margin: 0 0 var(--space-4); }
 /* Her three lists under the topics: small chips with a count (an empty one is greyed, still tappable) */
 .list-chips { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-grid); margin: var(--space-5) 0 0; }
@@ -1452,7 +1451,7 @@ body.highlighter-off .hl-word { cursor: text; }
 @media (min-width: 1024px) {
   /* Case rows (Cases tab) and topic rows (Questions tab, sub-topics screen): each one wide line.
      Left: (number,) the name or title; middle: the long bar with "N of M questions answered" under
-     it; right: Reset, then Practice / Continue (a case) or › (a topic). The two inner wrappers step
+     it; right: Reset, then Practice / Continue (a case) or Create test and › (a topic). The two inner wrappers step
      aside (display: contents) so their parts sit in the row's grid, placed by named areas;
      fixed side columns keep every row's bar lined up. */
   .case-row {
@@ -1461,9 +1460,10 @@ body.highlighter-off .hl-word { cursor: text; }
     grid-template-rows: auto auto; column-gap: var(--space-4); align-items: center; padding: var(--space-3) var(--space-4);
   }
   .topic-row {
-    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr) 44px 1.5em;
-    grid-template-areas: "open bar reset go" "open count reset go";
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr) 44px 7.5rem 1.5em;
+    grid-template-areas: "open bar reset test go" "open count reset test go";
   }
+  .topic-row-test { grid-area: test; justify-self: end; }
   .case-row-top, .case-row-foot { display: contents; }
   .case-row-num { grid-area: num; padding-top: 0; }
   .case-row-open { grid-area: open; }

@@ -306,7 +306,8 @@ function rememberSpot() {
     spot.ruleCameFrom = ruleCameFrom;
   }
   if (shownScreen === "screen-test-create" && typeof testCreateFrom === "function") {
-    spot.from = testCreateFrom();  // where its Back goes: "subject" or "tests"
+    spot.from = testCreateFrom();  // where its Back goes: "subject", "subtopics", "topic" or "tests"
+    if (typeof testCreateOnlyPick === "function") { spot.only = testCreateOnlyPick(); }  // opened from one topic / sub-topic: { t, s }, else null
   }
   if (shownScreen === "screen-test" && typeof testSpotId === "function") {
     spot.testId = testSpotId();  // the test she's taking (tests.js); its answers live in progress.tests
@@ -456,7 +457,7 @@ function putBackSpot(spot) {
     return true;
   }
   if (spot.screen === "test-create") {
-    if (typeof openTestCreate === "function") { openTestCreate(spot.from); } else { openSubject(currentSubject); }  // tests.js (her choices start from the defaults)
+    if (typeof openTestCreate === "function") { openTestCreate(spot.from, spot.only); } else { openSubject(currentSubject); }  // tests.js (her choices start from the defaults; older spots have no "only")
     return true;
   }
   if (spot.screen === "subtopics") {
@@ -797,12 +798,13 @@ function showSubtopicRows(subject, topic) {
       function () {
         if (shownScreen === "screen-subtopics" && currentSubject === subject && currentTopic === topic) { showSubtopicRows(subject, topic); }
         refreshSubjectAfterReset(subject);
-      }));
+      },
+      function () { openTestCreate("subtopics", { t: topic, s: subtopic }); }));  // tests.js; Back returns here
   });
 }
 
 // ---------- Topic screen (one topic, or one sub-topic of it) ----------
-// "Start practice" for just that topic / sub-topic, and the cases filed under it.
+// "Create test" for just that topic / sub-topic (tests.js openTestCreate "topic"), and the cases filed under it.
 // Cases only appear here (not on the subject screen).
 function casesFor(subject) {
   if (sourceView === "notes" || sourceView === "notebooklm") { return []; }  // class notes and NotebookLM have no cases
@@ -821,16 +823,9 @@ function openTopic(topic, subtopic) {
   document.getElementById("topic-title").textContent = inPicker ? subtopicLabel(currentSubtopic, topic) : topic;
 
   const total = questionsForTopic(subject, topic, null, currentSubtopic).length;
-  const mode = currentMode();
-  const count = questionsForTopic(subject, topic, mode, currentSubtopic).length;
   document.getElementById("topic-count").textContent = countLabel(total);
-  const start = document.getElementById("topic-start");
-  start.textContent = "Start practice (" + modeCountLabel(count, mode) + ")";
-  start.disabled = (count === 0);
-  const note = document.getElementById("topic-empty");
-  note.hidden = (count !== 0);
-  note.textContent = total === 0 ? "No questions here yet."
-    : noneOfMode(mode) + " here. Pick All under Question type (on the subject screen) to see the others.";
+  document.getElementById("topic-start").disabled = (total === 0);  // "Create test": only this one ticked
+  document.getElementById("topic-empty").hidden = (total !== 0);     // "No questions here yet."
 
   const cases = casesFor(subject).filter(function (c) { return c.topic === topic && inSubtopic(c, currentSubtopic); });
   const list = document.getElementById("topic-case-list");
@@ -848,10 +843,9 @@ function openTopic(topic, subtopic) {
   showScreen("screen-topic");
 }
 
+// "Create test": Create a test with only this topic (or sub-topic) ticked; its Back returns here.
 document.getElementById("topic-start").addEventListener("click", function () {
-  fixedQuestions = null;
-  practiceCase = null;
-  startPractice();
+  openTestCreate("topic", { t: currentTopic, s: currentSubtopic });  // tests.js
 });
 
 document.getElementById("topic-back").addEventListener("click", function () {
@@ -895,9 +889,11 @@ function topicsFor(subject) {
 
 // One topic or sub-topic row (Questions tab, sub-topics screen), like a case row: the name, the
 // tag bar of its questions (all sources and types: what she practices; Know it / Unsure / Don't know
-// by progress.tags) with "N of M questions tagged", a small ↻ Reset (only when there's something to reset) and ›. The whole row opens it
-// (onOpen); the name is the row's real button, so keyboards and screen readers reach it.
-function makeTopicRow(name, questions, onOpen, afterReset) {
+// by progress.tags) with "N of M questions tagged", a small ↻ Reset (only when there's something to reset),
+// a Create test button (onTest: Create a test with only this one ticked; not for a row with no questions)
+// and ›. The rest of the row opens it (onOpen); the name is the row's real button, so keyboards and
+// screen readers reach it.
+function makeTopicRow(name, questions, onOpen, afterReset, onTest) {
   const tally = tagTally(questions);
   const row = document.createElement("div");
   row.className = "card case-row topic-row";
@@ -927,37 +923,39 @@ function makeTopicRow(name, questions, onOpen, afterReset) {
     const foot = document.createElement("div");
     foot.className = "case-row-foot";
     foot.appendChild(count);
+    if (onTest) {
+      const test = document.createElement("button");
+      test.type = "button";
+      test.className = "btn btn-secondary btn-small topic-row-test";
+      test.textContent = "Create test";
+      test.setAttribute("aria-label", "Create a test from " + name);
+      test.addEventListener("click", function (event) {
+        event.stopPropagation();  // only the test screen, never the topic screen too
+        onTest();
+      });
+      foot.appendChild(test);
+    }
     row.appendChild(foot);
   }
   row.addEventListener("click", onOpen);  // a tap anywhere on the row (the name button's click bubbles here)
   return row;
 }
 
-// One topic row on the Questions tab (All topics first, then each topic).
+// One topic row on the Questions tab. A topic with sub-topics opens its sub-topics; any other topic,
+// its topic screen. Its Create test opens Create a test with only this topic ticked (Back: the subject).
 function makeTopicCard(subject, topic) {
-  const label = topic;
-  return makeTopicRow(label, questionsForTopic(subject, topic, null), function () {
+  return makeTopicRow(topic, questionsForTopic(subject, topic, null), function () {
     currentTopic = topic;
     currentSubtopic = null;
     fixedQuestions = null;
     practiceCase = null;
-    // A topic with sub-topics: pick one first. Any other topic: its topic screen.
-    // ("All topics", "Review missed" and "Bookmarked" start practicing right away.)
-    if (isRealTopic(topic) && subtopicsFor(subject, topic).length > 0) {
+    if (subtopicsFor(subject, topic).length > 0) {
       openSubtopics(topic);
-      return;
-    }
-    if (isRealTopic(topic)) {
+    } else {
       openTopic(topic, null);
-      return;
     }
-    // "Tagged" opens its list (or, if it's empty, says so like the other lists).
-    if (topic === TAGGED && questionsForTopic(subject, TAGGED, currentMode()).length > 0) {
-      openTagged();
-      return;
-    }
-    startPractice();
-  }, function () { refreshSubjectAfterReset(subject); });
+  }, function () { refreshSubjectAfterReset(subject); },
+  function () { openTestCreate("subject", { t: topic, s: null }); });  // tests.js
 }
 
 function openSubject(subject) {
@@ -1465,19 +1463,13 @@ function showStudyTab(subject) {
   document.getElementById("study-empty").hidden = rules.length + cases.length + notes.length > 0;
 }
 
-// The topic cards and her lists on the subject screen (rebuilt when the question type changes).
+// The topic rows and her lists on the subject screen (redrawn after a Reset, an Undo, or answering).
+// (There is no "All topics" row anymore: the big Create a test card covers the whole subject.)
 function showTopicCards(subject) {
   showStartCard(subject);
-  // One card per topic, with "All topics" first, but only when it adds something: with just
-  // one topic that has questions of the picked type, All topics would be the same questions.
-  const mode = currentMode();
-  const topics = topicsFor(subject);
-  const withQuestions = topics.filter(function (topic) {
-    return questionsForTopic(subject, topic, mode).length > 0;
-  });
   const list = document.getElementById("topic-list");
   list.innerHTML = "";
-  (withQuestions.length > 1 ? [ALL_TOPICS] : []).concat(topics).forEach(function (topic) {
+  topicsFor(subject).forEach(function (topic) {
     list.appendChild(makeTopicCard(subject, topic));
   });
 
@@ -3546,10 +3538,11 @@ function showSubjectStats(subject) {
 
 // ---------- The subject screen's top: the test card, and Continue practicing ----------
 // The big card (#start-card) is the tests' card: "Create a test", or "Continue test" when this
-// subject has an unfinished test in this view (tests.js showSubjectTestCard). A practice round
-// she's in the middle of in THIS subject (saved by rememberSpot) shows as a smaller row under
-// the Practice heading: "Continue practicing: <topic>" and "Question N of M", which takes her
-// back to that exact question (putBackRound). Practicing a whole subject = the "All topics" card.
+// subject has an unfinished test (tests.js showSubjectTestCard). Practice rounds of a topic can't be
+// started anymore (tests replaced them), but one she was in the middle of in THIS subject (saved by
+// rememberSpot, also from an older version, "All topics" too) still shows as a smaller row above the
+// topics: "Continue practicing: <topic>" and "Question N of M", which takes her back to that exact
+// question (putBackRound). Once it's finished (or can't be put back) the row never comes back.
 function lastRoundHere(subject) {
   const last = loadLastRound();
   if (!last || last.caseId || last.subject !== subject) { return null; }  // a case's round: the Cases tab (any saved view counts: there's no switch now)
@@ -3611,7 +3604,7 @@ function startPractice() {
   if (questions.length === 0) {
     // Empty list: go to (or stay on) the screen she started from and explain, instead of starting.
     if (!fixedQuestions && isRealTopic(currentTopic)) {
-      openTopic(currentTopic, currentSubtopic);  // its Start button is off, with a note saying why
+      openTopic(currentTopic, currentSubtopic);  // its Create test is off, with a note saying why
       return;
     }
     openSubject(currentSubject);
@@ -3621,8 +3614,7 @@ function startPractice() {
   // Every new round comes in random order (the builder's choice; there's no in-order option).
   // A round put back by Continue or a reload keeps its saved order (putBackRound).
   questions = shuffled(questions);
-  // Remember the topic (not a case's questions, or a Review missed list) for the home screen's "Pick up where you stopped".
-  if (!fixedQuestions && isRealTopic(currentTopic)) { saveLastPractice(currentSubject, currentTopic, currentSubtopic, sourceView); }
+  // (The home screen's "Pick up where you stopped" is saved when she creates a test from a topic: tests.js.)
   session = {
     questions: questions,
     index: 0,
@@ -4936,10 +4928,16 @@ function showResults() {
   document.getElementById("results-got").textContent = session.ratings["Got it"];
   document.getElementById("results-partly").textContent = session.ratings["Partly"];
   document.getElementById("results-missed").textContent = session.ratings["Missed it"];
+  document.getElementById("results-again").hidden = !canPracticeAgain();
 
   showScreen("screen-results");
 }
 
+// "Practice again": for her lists (Review missed, Bookmarked, Tagged) and a case's questions only.
+// A topic round (an old one she finished) has no Practice again: topics are practiced as tests now.
+function canPracticeAgain() {
+  return Boolean(fixedQuestions) || [REVIEW_MISSED, BOOKMARKED, TAGGED].indexOf(currentTopic) !== -1;
+}
 document.getElementById("results-again").addEventListener("click", startPractice);
 document.getElementById("results-home").addEventListener("click", function () {
   showScreen("screen-home");

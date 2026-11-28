@@ -13,9 +13,11 @@
 // Step 7: the timer (startTestTimer / stopTestTimer): counts only while the test is on screen and the
 // app is in view; time's up submits the test like End test.
 // Uses things from app.js: currentSubject, questionsFor, viewOf, sourceLabelOf, topicsFor, subtopicsFor,
-// inSubtopic, subtopicLabel, OTHER_SUBTOPIC, FB_LEVELS, FB_LEVEL_LABELS, countLabel,
-// modeCountLabel, shuffled, askConfirm, showScreen, openSubject, setIconLabel;
-// and from progress.js: progress, saveProgress, TESTS_OPEN_MAX, TEST_LIMIT_MAX.
+// inSubtopic, subtopicLabel, OTHER_SUBTOPIC, ALL_SUBTOPICS, FB_LEVELS, FB_LEVEL_LABELS, countLabel,
+// modeCountLabel, shuffled, askConfirm, showScreen, openSubject, openSubtopics, openTopic, setIconLabel;
+// and from progress.js: progress, saveProgress, saveLastPractice, isPlainObject, TESTS_OPEN_MAX, TEST_LIMIT_MAX.
+// Step 5 of the Bootcamp plan: each topic / sub-topic row and the topic screen open Create a test with
+// only that one ticked (openTestCreate(from, only)); Back returns to where she came from.
 
 const TEST_DEFAULT_COUNT = 20;
 const TEST_DEFAULT_LEVEL = "key";           // Key Legal Terms
@@ -206,14 +208,45 @@ function pickCount(pick) {
   return pickedPool(testChoices.type).filter(function (q) { return inPick(q, pick); }).length;
 }
 
-// Where Back goes from Create a test: "subject" (opened from the big card) or "tests" (My tests).
+// Where Back goes from Create a test: "subject" (the big card, the link, or a topic row on the
+// Questions tab), "subtopics" (a sub-topic row), "topic" (the topic screen's Create test) or "tests"
+// (My tests). "only" = { t: topic, s: sub-topic or null } when opened from one topic or sub-topic:
+// then only that one is ticked at first (and Back goes to its screen). Both are kept in the saved spot.
+const TEST_CREATE_FROM = ["subject", "subtopics", "topic", "tests"];
 let testCreateCameFrom = "tests";
+let testCreateOnly = null;
 function testCreateFrom() { return testCreateCameFrom; }
+function testCreateOnlyPick() { return testCreateOnly ? { t: testCreateOnly.t, s: testCreateOnly.s } : null; }
 
-function openTestCreate(from) {
-  testCreateCameFrom = from === "subject" ? "subject" : "tests";
+// A usable "only" ({ t: a topic name, s: a sub-topic name, "*all*", "*other*" or null }), or null.
+function cleanTestOnly(only) {
+  if (!isPlainObject(only) || typeof only.t !== "string" || !only.t) { return null; }
+  return { t: only.t, s: typeof only.s === "string" && only.s ? only.s : null };
+}
+
+// Does a row of the topic list belong to the one topic / sub-topic she opened Create a test from?
+function inOnlyPick(row, only) {
+  if (row.t !== only.t) { return false; }
+  if (only.s === null || only.s === ALL_SUBTOPICS) { return true; }  // the whole topic
+  return row.s === only.s;
+}
+
+// The name on Back: the subject, the topic (sub-topics screen), the topic or sub-topic (topic screen), or My tests.
+function testCreateBackLabel(subject) {
+  const only = testCreateOnly;
+  if (testCreateCameFrom === "subject") { return subject; }
+  if (testCreateCameFrom === "subtopics" && only) { return only.t; }
+  if (testCreateCameFrom === "topic" && only) { return only.s === null ? only.t : subtopicLabel(only.s, only.t); }
+  return "My tests";
+}
+
+function openTestCreate(from, only) {
+  testCreateCameFrom = TEST_CREATE_FROM.indexOf(from) !== -1 ? from : "tests";
+  testCreateOnly = cleanTestOnly(only);
+  // Back to a topic or sub-topics screen needs to know which one: without it, Back goes to the subject.
+  if ((testCreateCameFrom === "subtopics" || testCreateCameFrom === "topic") && !testCreateOnly) { testCreateCameFrom = "subject"; }
   const subject = currentSubject;
-  setIconLabel(document.getElementById("test-create-back"), "chevron-left", testCreateCameFrom === "subject" ? subject : "My tests");
+  setIconLabel(document.getElementById("test-create-back"), "chevron-left", testCreateBackLabel(subject));
   document.getElementById("test-create-subject").textContent = subject;
   const groups = testPickRows(subject);
   const sources = {};
@@ -234,7 +267,11 @@ function openTestCreate(from) {
     limit: null,          // null = use the suggestion
     making: false
   };
-  groups.forEach(function (g) { g.rows.forEach(function (r) { testChoices.picked[pickKey(r)] = true; }); });
+  // All topics ticked at first; opened from one topic or sub-topic: only that one (if it has any rows here).
+  const onlyRows = testCreateOnly ? allPickRows().filter(function (r) { return inOnlyPick(r, testCreateOnly); }) : [];
+  groups.forEach(function (g) {
+    g.rows.forEach(function (r) { testChoices.picked[pickKey(r)] = onlyRows.length === 0 || onlyRows.indexOf(r) !== -1; });
+  });
 
   // Mode: an exam needs multiple choice or fill in the blank.
   document.querySelectorAll('input[name="test-mode"]').forEach(function (radio) {
@@ -552,7 +589,17 @@ document.getElementById("test-limit").addEventListener("input", function () {
 });
 
 document.getElementById("test-create-back").addEventListener("click", function () {
-  if (testCreateCameFrom === "subject") { openSubject(currentSubject); } else { openTests(); }
+  const only = testCreateOnly;
+  const topicHere = only && topicsFor(currentSubject).indexOf(only.t) !== -1;
+  if (testCreateCameFrom === "tests") {
+    openTests();
+  } else if (testCreateCameFrom === "subtopics" && topicHere && subtopicsFor(currentSubject, only.t).length > 0) {
+    openSubtopics(only.t);
+  } else if (testCreateCameFrom === "topic" && topicHere) {
+    openTopic(only.t, only.s);
+  } else {
+    openSubject(currentSubject);  // the subject screen (also when that topic is no longer in the app)
+  }
 });
 
 function newTestId() {
@@ -596,6 +643,8 @@ document.getElementById("test-make").addEventListener("click", function () {
   function save() {
     progress.tests.unshift(test);
     saveProgress();
+    // Made from one topic or sub-topic: that's the home screen's "Pick up where you stopped".
+    if (testCreateOnly) { saveLastPractice(test.subject, testCreateOnly.t, testCreateOnly.s, "all"); }
     openTests();
   }
   if (open.length < TESTS_OPEN_MAX) { save(); return; }

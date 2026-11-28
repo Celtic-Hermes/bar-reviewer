@@ -332,14 +332,13 @@
             <span class="subject-arrow" aria-hidden="true">›</span>
           </button>
 
-          <h2 class="label practice-heading">Practice</h2>
-          <!-- Only when a practice round in this subject is half done: back to the same question (app.js showPracticeContinue) -->
+          <!-- Only while an old practice round in this subject is half done: back to the same question (app.js showPracticeContinue) -->
           <button type="button" class="subject-card practice-continue" id="practice-continue" hidden>
             <span class="subject-name"><span id="practice-continue-title"></span><span class="subject-meta" id="practice-continue-sub"></span></span>
             <span class="subject-arrow" aria-hidden="true">›</span>
           </button>
 
-          <!-- The topic cards ("All topics" first, only when there are two or more topics) -->
+          <!-- The topic rows, each with its tag bar, Reset and Create test (app.js makeTopicCard) -->
           <div class="subject-list" id="topic-list"></div>
 
           <!-- Her three lists as small chips: Review missed / Bookmarked / Tagged, each with its count (app.js showTopicCards) -->
@@ -379,16 +378,17 @@
       <div class="subject-list" id="subtopic-list"></div>
     </section>
 
-    <!-- SCREEN 2c: One topic (or sub-topic): start practicing it, and its cases -->
+    <!-- SCREEN 2c: One topic (or sub-topic): create a test from it, and its cases -->
     <section id="screen-topic" hidden>
       <button class="back-btn" id="topic-back"><span data-icon="chevron-left"></span> Back</button>
       <p class="subject" id="topic-subject"></p>
       <h1 class="screen-title" id="topic-title"></h1>
       <p class="screen-subtitle" id="topic-count"></p>
-      <button class="btn btn-primary" id="topic-start">Start practice</button>
+      <!-- Create a test with only this topic / sub-topic ticked (tests.js openTestCreate "topic") -->
+      <button class="btn btn-primary" id="topic-start">Create test</button>
       <!-- Only for a sub-topic built from one rule: read the whole rule (loaded on tap) -->
       <button class="btn btn-secondary" id="topic-rule" hidden><span data-icon="book"></span> Read the full rule</button>
-      <p class="card empty-note list-empty" id="topic-empty" hidden></p>
+      <p class="card empty-note list-empty" id="topic-empty" hidden>No questions here yet.</p>
       <h2 class="label topics-label">Cases</h2>
       <div class="subject-list" id="topic-case-list"></div>
       <p class="card empty-note list-empty" id="topic-case-empty" hidden>No cases for this topic yet.</p>
@@ -411,7 +411,7 @@
       <button class="back-btn" id="tests-back"><span data-icon="chevron-left"></span> Back</button>
       <p class="subject" id="tests-subject"></p>
       <h1 class="screen-title">My tests</h1>
-      <p class="screen-subtitle">Answers stay hidden until you finish. Then review every question.</p>
+      <p class="screen-subtitle">Your tests, finished and unfinished. Tap one to continue or review it.</p>
       <button type="button" class="btn btn-secondary" id="tests-create">Create a test</button>
 
       <h2 class="label tests-heading">Unfinished</h2>
