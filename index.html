@@ -332,13 +332,7 @@
             <span class="subject-arrow" aria-hidden="true">›</span>
           </button>
 
-          <!-- Only while an old practice round in this subject is half done: back to the same question (app.js showPracticeContinue) -->
-          <button type="button" class="subject-card practice-continue" id="practice-continue" hidden>
-            <span class="subject-name"><span id="practice-continue-title"></span><span class="subject-meta" id="practice-continue-sub"></span></span>
-            <span class="subject-arrow" aria-hidden="true">›</span>
-          </button>
-
-          <!-- The topic rows, each with its tag bar, Reset and Create test (app.js makeTopicCard) -->
+          <!-- The topics: a plain row each, or a drop-down section of sub-topic rows (app.js makeTopicCard / makeTopicSection) -->
           <div class="subject-list" id="topic-list"></div>
 
           <!-- Her three lists as small chips: Review missed / Bookmarked / Tagged, each with its count (app.js showTopicCards) -->

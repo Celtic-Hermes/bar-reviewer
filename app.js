@@ -327,17 +327,15 @@ function rememberSpot() {
     spot.search = document.getElementById("search-input").value;  // to show the same results on Back
   }
   saveSpot(spot);
-  // The round she's in the middle of is also kept for the subject screen's "Continue" (it survives
-  // the home-screen timeout): a topic round (Questions tab), or a case's questions (Cases tab, marked
-  // with the case's ID). Not for Review missed / Bookmarked / Tagged lists.
+  // A case's round she's in the middle of is also kept for the Cases tab's "Continue" (it survives
+  // the home-screen timeout), marked with the case's ID. Topic rounds aren't kept anymore (there is
+  // no Continue practicing row): a reload still brings one back through the saved spot above.
   if (spot.round && inCaseReview()) {
     // A case's Review is read-only: it's never a "Continue" (the reload above still brings it back).
   } else if (spot.tutorTestId) {
     // A test's round: it's in My tests (Unfinished), never a "Continue practicing".
   } else if (spot.round && practiceCase) {
     saveLastRound(currentSubject, currentTopic, currentSubtopic, spot.round, sourceView, practiceCase.id);
-  } else if (spot.round && (isRealTopic(currentTopic) || currentTopic === ALL_TOPICS)) {
-    saveLastRound(currentSubject, currentTopic, currentSubtopic, spot.round, sourceView);
   }
 }
 
@@ -798,8 +796,7 @@ function showSubtopicRows(subject, topic) {
       function () {
         if (shownScreen === "screen-subtopics" && currentSubject === subject && currentTopic === topic) { showSubtopicRows(subject, topic); }
         refreshSubjectAfterReset(subject);
-      },
-      function () { openTestCreate("subtopics", { t: topic, s: subtopic }); }));  // tests.js; Back returns here
+      }));
   });
 }
 
@@ -889,11 +886,10 @@ function topicsFor(subject) {
 
 // One topic or sub-topic row (Questions tab, sub-topics screen), like a case row: the name, the
 // tag bar of its questions (all sources and types: what she practices; Know it / Unsure / Don't know
-// by progress.tags) with "N of M questions tagged", a small ↻ Reset (only when there's something to reset),
-// a Create test button (onTest: Create a test with only this one ticked; not for a row with no questions)
+// by progress.tags) with "N of M questions tagged", a small ↻ Reset (only when there's something to reset)
 // and ›. The rest of the row opens it (onOpen); the name is the row's real button, so keyboards and
 // screen readers reach it.
-function makeTopicRow(name, questions, onOpen, afterReset, onTest) {
+function makeTopicRow(name, questions, onOpen, afterReset) {
   const tally = tagTally(questions);
   const row = document.createElement("div");
   row.className = "card case-row topic-row";
@@ -923,39 +919,77 @@ function makeTopicRow(name, questions, onOpen, afterReset, onTest) {
     const foot = document.createElement("div");
     foot.className = "case-row-foot";
     foot.appendChild(count);
-    if (onTest) {
-      const test = document.createElement("button");
-      test.type = "button";
-      test.className = "btn btn-secondary btn-small topic-row-test";
-      test.textContent = "Create test";
-      test.setAttribute("aria-label", "Create a test from " + name);
-      test.addEventListener("click", function (event) {
-        event.stopPropagation();  // only the test screen, never the topic screen too
-        onTest();
-      });
-      foot.appendChild(test);
-    }
     row.appendChild(foot);
   }
   row.addEventListener("click", onOpen);  // a tap anywhere on the row (the name button's click bubbles here)
   return row;
 }
 
-// One topic row on the Questions tab. A topic with sub-topics opens its sub-topics; any other topic,
-// its topic screen. Its Create test opens Create a test with only this topic ticked (Back: the subject).
-function makeTopicCard(subject, topic) {
+// One topic on the Questions tab. A topic with sub-topics is a drop-down section (makeTopicSection);
+// any other topic is a plain row that opens its topic screen.
+function makeTopicCard(subject, topic, openSaved) {
+  if (subtopicsFor(subject, topic).length > 0) { return makeTopicSection(subject, topic, openSaved || {}); }
   return makeTopicRow(topic, questionsForTopic(subject, topic, null), function () {
     currentTopic = topic;
     currentSubtopic = null;
     fixedQuestions = null;
     practiceCase = null;
-    if (subtopicsFor(subject, topic).length > 0) {
-      openSubtopics(topic);
-    } else {
-      openTopic(topic, null);
-    }
-  }, function () { refreshSubjectAfterReset(subject); },
-  function () { openTestCreate("subject", { t: topic, s: null }); });  // tests.js
+    openTopic(topic, null);
+  }, function () { refreshSubjectAfterReset(subject); });
+}
+
+// A topic with sub-topics, as a collapsible section (the Cases tab's .case-section look). Its header:
+// chevron, the topic's name, the tag bar of all its questions with "N of M questions tagged", and ↻ Reset
+// (which never opens or closes the section). Inside: one row per sub-topic (makeTopicRow, the same as
+// the sub-topics screen), then "Other" for questions with no sub-topic; a row opens that sub-topic's
+// topic screen. Starts closed; which ones she opened is remembered on this device (TOPIC_SECTIONS_KEY).
+function makeTopicSection(subject, topic, openSaved) {
+  const key = subject + "|" + topic;
+  const questions = questionsForTopic(subject, topic, null);
+  const tally = tagTally(questions);
+  const box = document.createElement("details");
+  box.className = "case-section topic-section";
+  box.open = openSaved[key] === true;
+  const summary = document.createElement("summary");
+  summary.setAttribute("aria-label", topic + ", " + (questions.length ? taggedText(tally, questions.length) : "no questions yet"));
+  const chevron = document.createElement("span");
+  chevron.className = "case-section-chevron";
+  chevron.appendChild(icon("chevron-right"));
+  const title = document.createElement("span");
+  title.className = "case-section-name";
+  title.textContent = topic;
+  summary.append(chevron, title);
+  const count = document.createElement("span");
+  count.className = "case-row-count";
+  if (questions.length === 0) {
+    count.textContent = "No questions yet.";
+  } else {
+    count.textContent = taggedText(tally, questions.length);
+    summary.appendChild(makeTagBar(tally));
+  }
+  summary.appendChild(count);
+  if (hasSomethingToReset(questions)) {
+    summary.appendChild(makeRowReset(topic, questions, function () { refreshSubjectAfterReset(subject); }));
+  }
+  box.appendChild(summary);
+
+  const list = document.createElement("div");
+  list.className = "subject-list topic-section-rows";
+  const choices = subtopicsFor(subject, topic).slice();
+  if (questionsFor(subject).concat(casesFor(subject)).some(function (item) { return item.topic === topic && subtopicOf(item) === null; })) {
+    choices.push(OTHER_SUBTOPIC);
+  }
+  choices.forEach(function (subtopic) {
+    list.appendChild(makeTopicRow(subtopicLabel(subtopic, topic), questionsForTopic(subject, topic, null, subtopic), function () {
+      currentTopic = topic;
+      fixedQuestions = null;
+      practiceCase = null;
+      openTopic(topic, subtopic);
+    }, function () { refreshSubjectAfterReset(subject); }));
+  });
+  box.appendChild(list);
+  box.addEventListener("toggle", function () { saveOpenSection(TOPIC_SECTIONS_KEY, key, box.open); });
+  return box;
 }
 
 function openSubject(subject) {
@@ -1139,6 +1173,7 @@ function makeRowReset(name, questions, after) {
   reset.appendChild(icon("refresh"));
   reset.addEventListener("click", function (event) {
     event.stopPropagation();  // a topic row opens when tapped: Reset must not also open it
+    event.preventDefault();   // inside a section's header (<summary>): don't open or close the section
     resetScope(name, questions, after);
   });
   return reset;
@@ -1322,21 +1357,26 @@ function makeCaseRow(theCase, number) {
   return row;
 }
 
-// Which sections of the Cases tab she opened, remembered on this device only (not in backups).
+// Which sections she opened, remembered on this device only (not in backups): the Cases tab's
+// ("subject|topic|sub-topic") and the Questions tab's topics with sub-topics ("subject|topic").
 const CASE_SECTIONS_KEY = "barReviewer.caseSections.v1";
+const TOPIC_SECTIONS_KEY = "barReviewer.topicSections.v1";
 
-function loadCaseSections() {
+function loadOpenSections(storageKey) {
   try {
-    const raw = JSON.parse(localStorage.getItem(CASE_SECTIONS_KEY));
+    const raw = JSON.parse(localStorage.getItem(storageKey));
     return isPlainObject(raw) ? raw : {};
   } catch (e) { return {}; }
 }
 
-function saveCaseSection(key, open) {
-  const all = loadCaseSections();
+function saveOpenSection(storageKey, key, open) {
+  const all = loadOpenSections(storageKey);
   if (open) { all[key] = true; } else { delete all[key]; }
-  try { localStorage.setItem(CASE_SECTIONS_KEY, JSON.stringify(all)); } catch (e) { /* no storage: just not remembered */ }
+  try { localStorage.setItem(storageKey, JSON.stringify(all)); } catch (e) { /* no storage: just not remembered */ }
 }
+
+function loadCaseSections() { return loadOpenSections(CASE_SECTIONS_KEY); }
+function saveCaseSection(key, open) { saveOpenSection(CASE_SECTIONS_KEY, key, open); }
 
 // The subject's cases in sections: [{ topic, sections: [{ key, name, cases }] }], in the order the
 // Questions tab shows topics and sub-topics (cases with no sub-topic in a topic that has some: "Other"),
@@ -1469,8 +1509,9 @@ function showTopicCards(subject) {
   showStartCard(subject);
   const list = document.getElementById("topic-list");
   list.innerHTML = "";
+  const openSaved = loadOpenSections(TOPIC_SECTIONS_KEY);
   topicsFor(subject).forEach(function (topic) {
-    list.appendChild(makeTopicCard(subject, topic));
+    list.appendChild(makeTopicCard(subject, topic, openSaved));
   });
 
   // Her lists, below the topics: "Review missed", "Bookmarked" and "Tagged" as small chips.
@@ -3536,51 +3577,13 @@ function showSubjectStats(subject) {
   document.getElementById("subject-ring-text").textContent = shown + "%";
 }
 
-// ---------- The subject screen's top: the test card, and Continue practicing ----------
+// ---------- The subject screen's top: the test card ----------
 // The big card (#start-card) is the tests' card: "Create a test", or "Continue test" when this
-// subject has an unfinished test (tests.js showSubjectTestCard). Practice rounds of a topic can't be
-// started anymore (tests replaced them), but one she was in the middle of in THIS subject (saved by
-// rememberSpot, also from an older version, "All topics" too) still shows as a smaller row above the
-// topics: "Continue practicing: <topic>" and "Question N of M", which takes her back to that exact
-// question (putBackRound). Once it's finished (or can't be put back) the row never comes back.
-function lastRoundHere(subject) {
-  const last = loadLastRound();
-  if (!last || last.caseId || last.subject !== subject) { return null; }  // a case's round: the Cases tab (any saved view counts: there's no switch now)
-  const known = {};
-  allQuestions.forEach(function (q) { if (q && q.id) { known[q.id] = true; } });
-  return last.round.questionIds.every(function (id) { return known[id]; }) ? last : null;
-}
-
-function roundLabel(last) {
-  const normal = last.subtopic && last.subtopic !== ALL_SUBTOPICS && last.subtopic !== OTHER_SUBTOPIC;
-  return normal ? last.subtopic : (last.topic === ALL_TOPICS ? "All topics" : last.topic);
-}
-
+// subject has an unfinished test (tests.js showSubjectTestCard). (The old "Continue practicing" row
+// is gone: practice rounds of a topic can't be started anymore, and an old one isn't kept.)
 function showStartCard(subject) {
-  showPracticeContinue(subject);
   if (typeof showSubjectTestCard === "function") { showSubjectTestCard(subject); }  // tests.js
 }
-
-function showPracticeContinue(subject) {
-  const row = document.getElementById("practice-continue");
-  const last = lastRoundHere(subject);
-  row.hidden = !last;
-  if (!last) { return; }
-  document.getElementById("practice-continue-title").textContent = "Continue practicing: " + roundLabel(last);
-  document.getElementById("practice-continue-sub").textContent = "Question " + (last.round.index + 1) + " of " + last.round.questionIds.length;
-}
-
-document.getElementById("practice-continue").addEventListener("click", function () {
-  const subject = currentSubject;
-  const last = lastRoundHere(subject);
-  if (last) {
-    currentTopic = last.topic;
-    currentSubtopic = last.subtopic;
-    if (putBackRound(last.round)) { return; }
-  }
-  clearLastRound();  // it couldn't be put back (the content changed): the row goes away
-  showPracticeContinue(subject);
-});
 
 document.getElementById("subject-back").addEventListener("click", function () {
   showScreen("screen-home");
@@ -6317,6 +6320,13 @@ showTodayCard();
 // Away for a long while (AWAY_HOME_MINUTES in progress.js)? Start at the home screen: forget the
 // saved spot. Only a short break puts her back exactly where she was.
 if (awayTooLong()) { clearSpot(); }
+
+// An old topic round kept for "Continue practicing" (that row is gone): forget it quietly. A case's
+// round (with its caseId) stays, for the Cases tab's Continue.
+(function () {
+  const last = loadLastRound();
+  if (!last || !last.caseId) { clearLastRound(); }
+})();
 
 // If she was somewhere else when the app last closed, don't flash the home screen
 // while the files load; restoreSpot() below shows the right screen.

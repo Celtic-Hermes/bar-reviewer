@@ -760,6 +760,20 @@ button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
 .topic-row { cursor: pointer; -webkit-tap-highlight-color: transparent; }
 .topic-row .case-row-top { align-items: center; }
 .topic-row .case-row-open { font-weight: 600; }
+/* A topic with sub-topics on the Questions tab (app.js makeTopicSection): the Cases tab's section look,
+   its header carrying the topic's tag bar, "N of M questions tagged" and Reset. On phones it stacks:
+   chevron + name, then the bar, then the count with Reset at its right. */
+#topic-list > .topic-section { margin-top: 0; }  /* the list's own gap spaces them */
+.topic-section > summary {
+  display: grid; grid-template-columns: auto minmax(0, 1fr) auto; grid-template-areas: "chev name name" ". bar bar" ". count reset";
+  align-items: center; column-gap: var(--space-2); padding: var(--space-3) var(--space-4);
+}
+.topic-section > summary .case-section-chevron { grid-area: chev; }
+.topic-section > summary .case-section-name { grid-area: name; }
+.topic-section > summary .case-bar { grid-area: bar; }
+.topic-section > summary .case-row-count { grid-area: count; margin-top: var(--space-2); }
+.topic-section > summary .case-row-reset { grid-area: reset; margin: 0 calc(-1 * var(--space-2)) 0 0; }
+.topic-section-rows { margin-top: var(--space-3); padding-left: var(--space-4); }  /* indented a little: they belong to the topic above */
 
 /* A small ring with a percent in the middle (the middle is the page color, so it needs no mask). */
 .mastery-ring {
@@ -806,7 +820,6 @@ button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
   font: inherit; font-size: 15px; font-weight: 600; color: var(--primary-text); cursor: pointer;
   -webkit-tap-highlight-color: transparent;
 }
-.practice-continue { margin: 0 0 var(--space-4); }
 /* Her three lists under the topics: small chips with a count (an empty one is greyed, still tappable) */
 .list-chips { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-grid); margin: var(--space-5) 0 0; }
 .list-chip {
@@ -1451,7 +1464,7 @@ body.highlighter-off .hl-word { cursor: text; }
 @media (min-width: 1024px) {
   /* Case rows (Cases tab) and topic rows (Questions tab, sub-topics screen): each one wide line.
      Left: (number,) the name or title; middle: the long bar with "N of M questions answered" under
-     it; right: Reset, then Practice / Continue (a case) or Create test and › (a topic). The two inner wrappers step
+     it; right: Reset, then Practice / Continue (a case) or › (a topic). The two inner wrappers step
      aside (display: contents) so their parts sit in the row's grid, placed by named areas;
      fixed side columns keep every row's bar lined up. */
   .case-row {
@@ -1460,10 +1473,21 @@ body.highlighter-off .hl-word { cursor: text; }
     grid-template-rows: auto auto; column-gap: var(--space-4); align-items: center; padding: var(--space-3) var(--space-4);
   }
   .topic-row {
-    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr) 44px 7.5rem 1.5em;
-    grid-template-areas: "open bar reset test go" "open count reset test go";
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr) 44px 1.5em;
+    grid-template-areas: "open bar reset go" "open count reset go";
   }
-  .topic-row-test { grid-area: test; justify-self: end; }
+  /* A topic section's header: the same line (chevron in front; the empty last column keeps its bar and
+     Reset lined up with the plain topic rows'). */
+  .topic-section > summary {
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr) 44px 1.5em;
+    grid-template-areas: "name bar reset ." "name count reset .";
+    column-gap: var(--space-4);
+  }
+  .topic-section > summary .case-section-chevron { grid-area: name; justify-self: start; }  /* in front of the name, sharing its column */
+  .topic-section > summary .case-section-name { padding-left: calc(18px + var(--space-2)); }
+  .topic-section > summary .case-bar { align-self: end; margin: 0; }
+  .topic-section > summary .case-row-count { align-self: start; }
+  .topic-section > summary .case-row-reset { margin: 0; }
   .case-row-top, .case-row-foot { display: contents; }
   .case-row-num { grid-area: num; padding-top: 0; }
   .case-row-open { grid-area: open; }
