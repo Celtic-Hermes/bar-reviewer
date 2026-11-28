@@ -429,6 +429,9 @@ body {
   text-decoration: underline var(--primary); text-underline-offset: 3px;
 }
 .btn-rate { background: var(--card); padding: var(--space-3) var(--space-2); }
+/* Under each rating, the tag it gives (essays and fill in the blank: the rating is her tag) */
+.rate-tag { display: block; margin-top: 2px; font-size: 12px; font-weight: 500; line-height: 1.2; }
+.rate-note { margin: var(--space-block) 0 0; }
 .btn-rate.got { border-color: var(--got); color: var(--got); }
 .btn-rate.partly { border-color: var(--partly); color: var(--partly); }
 .btn-rate.missed { border-color: var(--missed); color: var(--missed); }
@@ -927,6 +930,17 @@ button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
 .test-pick-count { flex-shrink: 0; font-size: 14px; color: var(--muted); }
 .test-pick.is-empty { cursor: not-allowed; }
 .test-pick.is-empty .test-pick-name { color: var(--muted); }
+#screen-test-create .test-mode-desc { margin: 0 0 var(--space-4); }
+.test-pick .tag-mark { width: 14px; height: 14px; }
+/* An "answers after each question" test on the practice screen: its name, time left, End test */
+.tutor-bar { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); margin: 0 0 var(--space-3); }
+.tutor-bar-text { min-width: 0; }
+.tutor-name { margin: 0; font-weight: 600; color: var(--heading); line-height: 1.3; }
+.tutor-bar .test-end-btn { flex-shrink: 0; margin-left: 0; }
+/* Review answers of such a test: her rating and her tag */
+.review-rating { margin: 0 0 var(--space-2); }
+.review-tag { display: flex; align-items: center; gap: var(--space-2); margin: 0 0 var(--space-block); }
+.review-tag .tag-mark { width: 14px; height: 14px; }
 .test-summary { margin: var(--space-block) 0 var(--space-3); text-align: center; font-weight: 600; }
 .test-summary.is-problem { color: var(--missed); }
 
@@ -956,6 +970,7 @@ button.stat-tile { cursor: pointer; -webkit-tap-highlight-color: transparent; }
 [data-tag="green"]  { --tag-color: var(--tag-green); }
 [data-tag="yellow"] { --tag-color: var(--tag-yellow); }
 [data-tag="red"]    { --tag-color: var(--tag-red); }
+[data-tag="none"]   { --tag-color: var(--card); }   /* "Not tagged" (Create a test): a hollow dot */
 .tag-row { margin: var(--space-block) 0 0; }
 .tag-row-title { margin: 0 0 var(--space-2); }
 .tag-options { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-2); }

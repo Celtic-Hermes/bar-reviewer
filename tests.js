@@ -20,7 +20,19 @@
 const TEST_DEFAULT_COUNT = 20;
 const TEST_DEFAULT_LEVEL = "key";           // Key Legal Terms
 // The suggested time limit: minutes per question of each type.
-const TEST_MINUTES_PER = { mcq: 1.5, fillblank: 2 };
+const TEST_MINUTES_PER = { mcq: 1.5, fillblank: 2, essay: 5 };
+// The two modes: "tutor" = answers after each question (on the practice question screen, counted as
+// she goes); "exam" = answers at the end (the test screen, counted when she ends it).
+const TEST_MODE_NAMES = { tutor: "Answers after each", exam: "Exam" };
+const TEST_MODE_DESCS = {
+  tutor: "See the answer after each question, then tag it. Your answers count as you go.",
+  exam: "The answers stay hidden until you end the test. Essays aren't in exams."
+};
+// Her tags, as Create a test offers them ("none" = not tagged yet).
+const TEST_TAG_IDS = ["green", "yellow", "red", "none"];
+function testTagOf(question) { return tagOf(question.id) || "none"; }
+function testTagName(id) { return id === "none" ? "Not tagged" : tagWord(id); }
+function testModeOf(test) { return test && test.mode === "tutor" ? "tutor" : "exam"; }
 
 // ---------- The Tests screen ----------
 function testsOf(subject, state) {
@@ -47,7 +59,7 @@ function testTitle(test) {
 }
 
 function testTypeLabel(n, type) {
-  return type === "both" ? countLabel(n) : modeCountLabel(n, type);
+  return (type === "both" || type === "all") ? countLabel(n) : modeCountLabel(n, type);
 }
 
 // Where a test's questions come from (progress.js cleanTests gives every test "sources"; older
@@ -76,7 +88,7 @@ function makeTestCard(test) {
   if (test.state === "open" && test.limit > 0 && test.used > 0) {
     timeText = " · " + Math.max(1, Math.ceil(testSecondsLeft(test) / 60)) + " min left";
   }
-  meta.textContent = testTypeLabel(test.qIds.length, test.type) + timeText + testViewLabel(test);
+  meta.textContent = testTypeLabel(test.qIds.length, test.type) + " · " + TEST_MODE_NAMES[testModeOf(test)] + timeText + testViewLabel(test);
   const meta2 = document.createElement("span");
   meta2.className = "subject-meta";
   if (test.state === "done") {
@@ -127,9 +139,12 @@ document.getElementById("tests-create").addEventListener("click", function () { 
 // Her choices while she's on the screen (not saved: a reload starts from the defaults).
 let testChoices = null;
 
+// "both" = multiple choice + fill in the blank (exam); "all" = every type, essays too (answers after each).
 function fitsTestType(question, type) {
   if (type === "mcq") { return question.type === "mcq"; }
   if (type === "fillblank") { return question.type === "fillblank"; }
+  if (type === "essay") { return question.type === "essay"; }
+  if (type === "all") { return question.type === "mcq" || question.type === "fillblank" || question.type === "essay"; }
   return question.type === "mcq" || question.type === "fillblank";
 }
 
@@ -138,14 +153,17 @@ function testPool(subject, type) {
   return questionsFor(subject).filter(function (q) { return fitsTestType(q, type); });
 }
 
-// The same, only from the sources ticked under "Where from" on Create a test.
-function pickedPool(type) {
-  return testPool(currentSubject, type).filter(function (q) { return testChoices.sources[viewOf(q)] === true; });
+// The same, only from the sources ticked under "Where from" and the tags ticked under "Tags"
+// on Create a test ("noTags": every tag, for the tags' own counts).
+function pickedPool(type, noTags) {
+  return testPool(currentSubject, type).filter(function (q) {
+    return testChoices.sources[viewOf(q)] === true && (noTags || testChoices.tags[testTagOf(q)] === true);
+  });
 }
 
 // The sources this subject has test questions from (in the order Cases, Notes, NotebookLM).
 function testSourcesHere(subject) {
-  const pool = testPool(subject, "both");
+  const pool = testPool(subject, "all");
   return TEST_SOURCES.filter(function (v) { return pool.some(function (q) { return viewOf(q) === v; }); });
 }
 
@@ -158,7 +176,7 @@ function inPick(question, pick) {
 // The rows of the topic list: one per topic without sub-topics, or per sub-topic
 // (+ "Other" for a topic's questions with no sub-topic). Only rows with test questions.
 function testPickRows(subject) {
-  const pool = testPool(subject, "both");
+  const pool = testPool(subject, "all");  // every type: a topic with only essays shows (greyed out in an exam)
   const groups = [];
   topicsFor(subject).forEach(function (topic) {
     const inTopic = pool.filter(function (q) { return q.topic === topic; });
@@ -197,28 +215,36 @@ function openTestCreate(from) {
   const subject = currentSubject;
   setIconLabel(document.getElementById("test-create-back"), "chevron-left", testCreateCameFrom === "subject" ? subject : "My tests");
   document.getElementById("test-create-subject").textContent = subject;
-  const hasMcq = testPool(subject, "mcq").length > 0;
   const groups = testPickRows(subject);
   const sources = {};
   testSourcesHere(subject).forEach(function (v) { sources[v] = true; });  // all ticked at first
+  const tags = {};
+  TEST_TAG_IDS.forEach(function (g) { tags[g] = true; });               // all ticked at first
+  const canExam = testPool(subject, "both").length > 0;
   testChoices = {
+    mode: "tutor",        // "Answers after each question" first (the default)
     sources: sources,
-    type: hasMcq ? "mcq" : "fillblank",
+    tags: tags,
+    type: "all",
     level: TEST_DEFAULT_LEVEL,
     groups: groups,
     picked: {},
     count: TEST_DEFAULT_COUNT,
-    timed: true,
+    timed: false,         // off for "answers after each", on for an exam (setTestMode)
     limit: null,          // null = use the suggestion
     making: false
   };
   groups.forEach(function (g) { g.rows.forEach(function (r) { testChoices.picked[pickKey(r)] = true; }); });
 
+  // Mode: an exam needs multiple choice or fill in the blank.
+  document.querySelectorAll('input[name="test-mode"]').forEach(function (radio) {
+    radio.disabled = radio.value === "exam" && !canExam;
+  });
   // Question type: a type with no questions here can't be picked.
   document.querySelectorAll('input[name="test-type"]').forEach(function (radio) {
     radio.disabled = testPool(subject, radio.value).length === 0;
-    radio.checked = radio.value === testChoices.type;
   });
+  setTestMode("tutor");
   const level = document.getElementById("test-level");
   level.innerHTML = "";
   FB_LEVELS.forEach(function (id) {
@@ -228,8 +254,8 @@ function openTestCreate(from) {
     level.appendChild(option);
   });
   level.value = testChoices.level;
-  document.getElementById("test-timed").checked = true;
   buildTestSources(subject);
+  buildTestTags();
   buildTestPickList();
   showTestChoices();
   showScreen("screen-test-create");
@@ -256,6 +282,59 @@ function buildTestSources(subject) {
     row.append(check, name, count);
     check.addEventListener("change", function () {
       testChoices.sources[v] = check.checked;
+      showTestChoices();
+    });
+    box.appendChild(row);
+  });
+}
+
+// The mode: shows that mode's question types (picking a fitting one), its note, and its timer default
+// (timed for an exam, untimed for "answers after each"; she can change it).
+function setTestMode(mode) {
+  const c = testChoices;
+  c.mode = mode === "exam" ? "exam" : "tutor";
+  const subject = currentSubject;
+  const usable = function (type) { return testPool(subject, type).length > 0; };
+  if (c.mode === "exam" && ["mcq", "fillblank", "both"].indexOf(c.type) === -1) {
+    c.type = usable("mcq") ? "mcq" : "fillblank";
+  }
+  if (c.mode === "tutor" && c.type === "both") { c.type = "all"; }
+  if (!usable(c.type)) { c.type = c.mode === "exam" ? (usable("mcq") ? "mcq" : "fillblank") : "all"; }
+  c.timed = c.mode === "exam";
+  c.limit = null;
+  document.querySelectorAll('input[name="test-mode"]').forEach(function (radio) { radio.checked = radio.value === c.mode; });
+  document.querySelectorAll("#test-type label").forEach(function (label) {
+    const modes = label.dataset.modes;
+    label.hidden = Boolean(modes) && modes !== c.mode;
+  });
+  document.querySelectorAll('input[name="test-type"]').forEach(function (radio) { radio.checked = radio.value === c.type; });
+  document.getElementById("test-mode-desc").textContent = TEST_MODE_DESCS[c.mode];
+  document.getElementById("test-timed").checked = c.timed;
+}
+
+// "Tags": Know it / Unsure / Don't know / Not tagged, all ticked at first, each with its count for
+// the current picks (sources, type, topics). At least one must stay ticked (the summary says so).
+function buildTestTags() {
+  const box = document.getElementById("test-tags");
+  box.innerHTML = "";
+  TEST_TAG_IDS.forEach(function (g) {
+    const row = document.createElement("label");
+    row.className = "test-pick";
+    const check = document.createElement("input");
+    check.type = "checkbox";
+    check.dataset.tag = g;
+    const dot = document.createElement("span");
+    dot.className = "tag-mark";
+    dot.dataset.tag = g;
+    dot.setAttribute("aria-hidden", "true");
+    const name = document.createElement("span");
+    name.className = "test-pick-name";
+    name.textContent = testTagName(g);
+    const count = document.createElement("span");
+    count.className = "test-pick-count";
+    row.append(check, dot, name, count);
+    check.addEventListener("change", function () {
+      testChoices.tags[g] = check.checked;
       showTestChoices();
     });
     box.appendChild(row);
@@ -312,10 +391,10 @@ function buildTestPickList() {
   });
 }
 
-// The questions her current choices cover (before picking how many).
-function testCovered() {
+// The questions her current choices cover (before picking how many). "noTags": whatever their tag.
+function testCovered(noTags) {
   const picks = allPickRows().filter(function (r) { return testChoices.picked[pickKey(r)]; });
-  return pickedPool(testChoices.type).filter(function (q) {
+  return pickedPool(testChoices.type, noTags).filter(function (q) {
     return picks.some(function (p) { return inPick(q, p); });
   });
 }
@@ -324,17 +403,22 @@ function testCountFor(available) {
   return testChoices.count === "all" ? available : Math.min(testChoices.count, available);
 }
 
+// About n questions' worth of time, mixed like the questions she picked (TEST_MINUTES_PER per type).
 function suggestedMinutes(questions, n) {
   if (questions.length === 0 || n === 0) { return 0; }
-  const fb = questions.filter(function (q) { return q.type === "fillblank"; }).length / questions.length;
-  const minutes = Math.ceil(n * ((1 - fb) * TEST_MINUTES_PER.mcq + fb * TEST_MINUTES_PER.fillblank));
+  const share = function (type) { return questions.filter(function (q) { return q.type === type; }).length / questions.length; };
+  const fb = share("fillblank");
+  const essay = share("essay");
+  const minutes = Math.ceil(n * ((1 - fb - essay) * TEST_MINUTES_PER.mcq + fb * TEST_MINUTES_PER.fillblank +
+    essay * TEST_MINUTES_PER.essay));
   return Math.max(1, Math.min(TEST_LIMIT_MAX, minutes));
 }
 
 // Bring every control on the Create screen up to date with testChoices.
 function showTestChoices() {
   const c = testChoices;
-  document.getElementById("test-level-row").hidden = (c.type === "mcq");
+  // Difficulty: only for fill in the blank in an exam (answers after each uses the question screen's own Difficulty).
+  document.getElementById("test-level-row").hidden = c.mode === "tutor" || c.type === "mcq";
 
   // Where from: each source's box and its count (for the picked type).
   document.querySelectorAll("#test-sources input[data-source]").forEach(function (box) {
@@ -344,6 +428,16 @@ function showTestChoices() {
     box.parentNode.querySelector(".test-pick-count").textContent = String(n);
   });
   const anySource = TEST_SOURCES.some(function (v) { return c.sources[v] === true; });
+
+  // Tags: each one's count for the picked sources, type and topics.
+  const coveredAnyTag = testCovered(true);
+  document.querySelectorAll("#test-tags input[data-tag]").forEach(function (box) {
+    const g = box.dataset.tag;
+    box.checked = c.tags[g] === true;
+    box.parentNode.querySelector(".test-pick-count").textContent =
+      String(coveredAnyTag.filter(function (q) { return testTagOf(q) === g; }).length);
+  });
+  const anyTag = TEST_TAG_IDS.some(function (g) { return c.tags[g] === true; });
 
   // Each row's count (for the picked type); a row with none can't be ticked.
   document.querySelectorAll("#test-pick-list input[data-key]").forEach(function (box) {
@@ -392,20 +486,26 @@ function showTestChoices() {
   document.getElementById("test-limit-row").hidden = !c.timed;
   const limitBox = document.getElementById("test-limit");
   if (c.limit === null) { limitBox.value = suggested > 0 ? String(suggested) : ""; }
+  const perType = c.mode === "tutor"
+    ? "about 1½ min per multiple choice, 2 per fill-in-the-blank, 5 per essay"
+    : "about 1½ min per multiple choice, 2 per fill-in-the-blank";
   document.getElementById("test-limit-desc").textContent = suggested > 0
-    ? "Suggested: " + suggested + " min (about 1½ min per multiple choice, 2 per fill-in-the-blank)."
-    : "About 1½ min per multiple choice, 2 per fill-in-the-blank.";
+    ? "Suggested: " + suggested + " min (" + perType + ")."
+    : perType.charAt(0).toUpperCase() + perType.slice(1) + ".";
 
   // The summary line and the Create button.
   const summary = document.getElementById("test-summary");
   const limit = testLimitValue();
   let problem = "";
   if (!anySource) { problem = "Pick at least one place the questions come from."; }
+  else if (!anyTag) { problem = "Pick at least one tag."; }
   else if (onRows.length === 0) { problem = "Pick at least one topic."; }
   else if (available === 0) { problem = "There are no questions of this type in what you picked."; }
   else if (c.timed && limit === null) { problem = "Type a time limit from 1 to " + TEST_LIMIT_MAX + " minutes, or switch Timed off."; }
   summary.classList.toggle("is-problem", problem !== "");
-  summary.textContent = problem || (testTypeLabel(n, c.type) + " · " + (c.timed ? limit + " min" : "Untimed"));
+  // "20 questions · Answers after each · Untimed", "20 multiple choice · Exam · 30 min"
+  summary.textContent = problem || (testTypeLabel(n, c.type) + " · " + TEST_MODE_NAMES[c.mode] + " · " +
+    (c.timed ? limit + " min" : "Untimed"));
   document.getElementById("test-make").disabled = problem !== "" || c.making;
 }
 
@@ -417,6 +517,12 @@ function testLimitValue() {
   return (n >= 1 && n <= TEST_LIMIT_MAX) ? n : null;
 }
 
+document.querySelectorAll('input[name="test-mode"]').forEach(function (radio) {
+  radio.addEventListener("change", function () {
+    setTestMode(radio.value);
+    showTestChoices();
+  });
+});
 document.querySelectorAll('input[name="test-type"]').forEach(function (radio) {
   radio.addEventListener("change", function () {
     testChoices.type = radio.value;
@@ -462,8 +568,11 @@ document.getElementById("test-make").addEventListener("click", function () {
   const usableRows = allPickRows().filter(function (r) { return pickCount(r) > 0; });
   const picks = usableRows.filter(function (r) { return c.picked[pickKey(r)]; });
   const sources = TEST_SOURCES.filter(function (v) { return c.sources[v] === true; });
+  const tutor = c.mode === "tutor";
   const test = {
     id: newTestId(),
+    mode: c.mode,         // "tutor" (answers after each question) or "exam" (answers at the end)
+    tags: TEST_TAG_IDS.filter(function (g) { return c.tags[g] === true; }),  // the tags it picked from
     subject: currentSubject,
     sources: sources,     // where the questions come from: "official" (Cases), "notes", "notebooklm"
     view: sources[0],     // kept for older versions of the app (one view per test)
@@ -471,7 +580,7 @@ document.getElementById("test-make").addEventListener("click", function () {
     all: picks.length === usableRows.length,
     picks: picks.map(function (r) { return { t: r.t, s: r.s }; }),
     type: c.type,
-    level: c.type === "mcq" ? TEST_DEFAULT_LEVEL : c.level,
+    level: (tutor || c.type === "mcq") ? TEST_DEFAULT_LEVEL : c.level,
     limit: limit,
     qIds: shuffled(covered).slice(0, n).map(function (q) { return q.id; }),
     index: 0,
@@ -480,6 +589,7 @@ document.getElementById("test-make").addEventListener("click", function () {
     used: 0,
     state: "open"
   };
+  if (tutor) { test.states = {}; }  // what she did on each question (the practice screen's state), by ID
   if (!Array.isArray(progress.tests)) { progress.tests = []; }
   const open = progress.tests.filter(function (t) { return t.state === "open"; })
     .sort(function (a, b) { return new Date(a.made) - new Date(b.made); });
@@ -534,9 +644,10 @@ function questionById(id) {
 // Questions taken out of the app since the test was made: drop them (and her answers to them).
 // Gives back how many were dropped.
 function dropMissingQuestions(test) {
+  const tutor = testModeOf(test) === "tutor";
   const keep = test.qIds.filter(function (id) {
     const q = questionById(id);
-    return q && (q.type === "mcq" || q.type === "fillblank");
+    return q && (q.type === "mcq" || q.type === "fillblank" || (tutor && q.type === "essay"));
   });
   const dropped = test.qIds.length - keep.length;
   if (dropped === 0) { return 0; }
@@ -544,6 +655,7 @@ function dropMissingQuestions(test) {
   test.qIds = keep;
   Object.keys(test.answers).forEach(function (id) { if (keep.indexOf(id) === -1) { delete test.answers[id]; } });
   if (test.hidden) { Object.keys(test.hidden).forEach(function (id) { if (keep.indexOf(id) === -1) { delete test.hidden[id]; } }); }
+  if (test.states) { Object.keys(test.states).forEach(function (id) { if (keep.indexOf(id) === -1) { delete test.states[id]; } }); }
   test.flags = test.flags.filter(function (id) { return keep.indexOf(id) !== -1; });
   const at = keep.indexOf(current);
   test.index = at !== -1 ? at : Math.min(test.index, Math.max(0, keep.length - 1));
@@ -562,6 +674,7 @@ function openTest(id) {
     return false;
   }
   if (dropped > 0) { saveProgress(); }
+  if (testModeOf(test) === "tutor") { return openTutorTest(test, dropped); }  // on the practice question screen
   const note = document.getElementById("test-dropped");
   note.textContent = dropped === 0 ? "" : (dropped === 1 ? "1 question is" : dropped + " questions are") +
     " no longer in the app and " + (dropped === 1 ? "was" : "were") + " taken out of this test.";
@@ -784,6 +897,120 @@ function goToTestQuestion(index) {
   showTestQuestion();
 }
 
+// ---------- "Answers after each question" tests (mode "tutor") ----------
+// They run on the normal practice question screen (app.js showQuestion): the test's questions in its
+// order, Submit / Show answer, the explanation, the required tag, Previous / Next. Every answer counts
+// as she goes, through practice's own record functions (recordMcq / recordEssay / recordFillBlank),
+// so ending the test records nothing again. The round lives in the test itself (progress.tests):
+// syncTutorTest (called by rememberSpot in app.js) copies her place, each visited question's state
+// (session.states, kept by question ID in test.states) and her answers into it, so a reload or the
+// home-screen timeout loses nothing. It is never saved as "Continue practicing".
+function openTutorTest(test, dropped) {
+  const questions = test.qIds.map(questionById);
+  if (questions.some(function (q) { return !q; })) { openTests(); return false; }
+  currentTestId = null;            // (the exam test screen's test)
+  practiceCase = null;
+  fixedQuestions = null;
+  casePracticeFromTab = false;
+  currentSubject = test.subject;
+  currentTopic = null;
+  currentSubtopic = null;
+  const states = {};
+  test.qIds.forEach(function (id, i) {
+    if (test.states && isPlainObject(test.states[id])) { states[i] = JSON.parse(JSON.stringify(test.states[id])); }
+  });
+  session = {
+    questions: questions,
+    index: test.index < questions.length ? test.index : 0,
+    mcqCorrect: 0,
+    mcqTotal: 0,
+    ratings: { "Got it": 0, "Partly": 0, "Missed it": 0 },
+    fbAnswered: 0,
+    fbCorrect: 0,
+    fbView: test.fbView === "read" ? "read" : "quiz",
+    states: states,
+    testId: test.id              // this round is that test (app.js: rememberSpot, Next, Back)
+  };
+  touchTest(test);
+  saveProgress();
+  showQuestion();
+  if (isPlainObject(states[session.index])) { putBackCurrent(states[session.index]); }
+  if (dropped > 0) {
+    showTimeNote((dropped === 1 ? "1 question is" : dropped + " questions are") + " no longer in the app and " +
+      (dropped === 1 ? "was" : "were") + " taken out of this test.", test);
+  }
+  return true;
+}
+
+// The tutor test on the question screen, or null (a normal practice round).
+function tutorTestOnScreen() {
+  if (!session || !session.testId) { return null; }
+  const test = findTest(session.testId);
+  return test && test.state === "open" && testModeOf(test) === "tutor" ? test : null;
+}
+
+// Copy the round into its test and save (see above). Answers are only ever added, never removed:
+// once given, an answer is locked on the question screen.
+function syncTutorTest() {
+  const test = tutorTestOnScreen();
+  if (!test) { return; }
+  if (!isPlainObject(test.states)) { test.states = {}; }
+  const states = isPlainObject(session.states) ? session.states : {};
+  test.qIds.forEach(function (id, i) {
+    let st = states[i];
+    if (i === session.index && isPlainObject(session.current) && Object.keys(session.current).length > 0) { st = session.current; }
+    if (!isPlainObject(st)) { return; }
+    test.states[id] = JSON.parse(JSON.stringify(st));
+    const q = session.questions[i];
+    if (!q || q.id !== id) { return; }
+    if (q.type === "mcq" && ["A", "B", "C", "D"].indexOf(st.picked) !== -1) { test.answers[id] = st.picked; }
+    else if (q.type === "essay" && ["Got it", "Partly", "Missed it"].indexOf(st.rating) !== -1) { test.answers[id] = st.rating; }
+    else if (q.type === "fillblank" && (st.fbRating === "Got it" || st.fbRating === "Missed it")) { test.answers[id] = st.fbRating; }
+  });
+  if (session.index >= 0 && session.index < test.qIds.length) { test.index = session.index; }
+  if (session.fbView === "read") { test.fbView = "read"; } else { delete test.fbView; }
+  touchTest(test);
+  saveProgress();
+}
+
+// For the saved spot (app.js rememberSpot): the tutor test on the question screen, or null.
+function tutorSpotId() {
+  const test = tutorTestOnScreen();
+  return test ? test.id : null;
+}
+
+// The bar under the top bar of the question screen (only in a tutor test): its name, time left, End test.
+function showTutorBar() {
+  const test = tutorTestOnScreen();
+  document.getElementById("tutor-bar").hidden = !test;
+  if (!test) {
+    document.getElementById("tutor-timer").hidden = true;
+    document.getElementById("tutor-time-note").textContent = "";
+    return;
+  }
+  document.getElementById("tutor-name").textContent = "Test: " + testTitle(test);
+  showTestTimer(test);
+}
+
+// End test (the bar's button, or Next on the last question): her tag first if it's asked for, then
+// the same question as an exam's End test.
+function askEndTutorTest() {
+  const test = tutorTestOnScreen();
+  if (!test) { return; }
+  if (typeof tagMissing === "function" && tagMissing()) { return; }  // the note under the tags says why
+  syncTutorTest();
+  askEndTestFor(test);
+}
+
+document.getElementById("tutor-end").addEventListener("click", askEndTutorTest);
+
+// Back from the question screen: My tests (the test stays in Unfinished, exactly where she stopped).
+function leaveTutorTest() {
+  syncTutorTest();
+  session = null;
+  openTests();
+}
+
 // ---------- Flag and question map ----------
 // Flag: marks the question on screen to come back to (test.flags). Nothing else changes.
 // The map: one numbered square per question, answered (filled) or not (dashed outline), a
@@ -911,9 +1138,21 @@ function gradeTestQuestion(test, question) {
     ? "right" : "wrong";
 }
 
+// An "answers after each" test: multiple choice right if her pick was correct; an essay or a fill in
+// the blank right only if she rated it "Got it" (Partly and Missed it count as wrong); unanswered = none.
+function gradeTutorQuestion(test, question) {
+  const answer = test.answers[question.id];
+  if (answer === undefined) { return "none"; }
+  if (question.type === "mcq") { return answer === question.correct ? "right" : "wrong"; }
+  return answer === "Got it" ? "right" : "wrong";
+}
+
 function askEndTest() {
-  const test = currentTest();
-  if (!test) { return; }
+  askEndTestFor(currentTest());
+}
+
+function askEndTestFor(test) {
+  if (!test || test.state !== "open") { return; }
   const unanswered = test.qIds.filter(function (id) { return !testAnswered(test, id); }).length;
   const parts = [];
   if (unanswered > 0) { parts.push(unanswered + " unanswered"); }
@@ -934,19 +1173,23 @@ function endTest(id, firstNote) {
   stopTestTimer();  // the time used so far goes into the test first
   const test = findTest(id);
   if (!test || test.state !== "open") { openTests(); return; }
+  const tutor = testModeOf(test) === "tutor";
+  if (tutor && session && session.testId === id) { syncTutorTest(); }  // her last answer on the question screen goes into the test first
   dropMissingQuestions(test);
   const graded = [];
   test.results = {};
   test.qIds.forEach(function (qid) {
     const question = questionById(qid);
-    const r = question ? gradeTestQuestion(test, question) : "none";
+    const r = question ? (tutor ? gradeTutorQuestion(test, question) : gradeTestQuestion(test, question)) : "none";
     const g = question ? [question.topic, subtopicOf(question)].filter(Boolean).join(" · ") : "";
     test.results[qid] = { r: r, g: g };
     if (question && r !== "none") { graded.push({ question: question, right: r === "right" }); }
   });
   test.state = "done";
   test.finished = new Date().toISOString();
-  const countIt = !test.counted;
+  // An "answers after each" test was counted as she went (practice's own record functions), so
+  // nothing is recorded again here.
+  const countIt = !test.counted && !tutor;
   test.counted = true;
   if (countIt) {
     graded.forEach(function (one) {
@@ -963,6 +1206,7 @@ function endTest(id, firstNote) {
   const doneAfter = progress.tests.filter(function (t) { return t.state === "done"; }).length;
   saveProgress();
   currentTestId = null;
+  if (session && session.testId === id) { session = null; }  // that round is over
   const notes = [];
   if (firstNote) { notes.push(firstNote); }
   if (doneAfter < doneBefore) { notes.push("Only the " + TESTS_DONE_MAX + " newest finished tests are kept, so your oldest one was removed."); }
@@ -1155,12 +1399,17 @@ function showReviewParts(test, question, one) {
   const fullCard = document.getElementById("review-full-card");
   const explainCard = document.getElementById("review-explain-card");
   const note = document.getElementById("review-fb-note");
+  const tutor = testModeOf(test) === "tutor";
   choices.hidden = true;
   choices.innerHTML = "";
   fullCard.hidden = true;
   explainCard.hidden = true;
   note.hidden = true;
-  const ok = question && (question.type === "mcq" || question.type === "fillblank");
+  document.getElementById("review-essay-card").hidden = true;
+  document.getElementById("review-points-card").hidden = true;
+  document.getElementById("review-rating").hidden = true;
+  document.getElementById("review-tag").hidden = true;
+  const ok = question && (question.type === "mcq" || question.type === "fillblank" || (tutor && question.type === "essay"));
   document.getElementById("review-subject").textContent = ok ? question.subject : test.subject;
   document.getElementById("review-topic").textContent = ok ? [question.topic, subtopicOf(question)].filter(Boolean).join(" · ") : one.g;
   const view = ok ? viewOf(question) : "official";
@@ -1175,12 +1424,78 @@ function showReviewParts(test, question, one) {
     prompt.textContent = "No longer in the app.";
     return;
   }
-  document.getElementById("review-label").textContent = question.type === "mcq" ? "Multiple choice" : "Fill in the blank";
-  if (question.type === "mcq") { showReviewMcq(test, question, prompt, choices); } else { showReviewFillBlank(test, question, prompt, note); }
+  document.getElementById("review-label").textContent = question.type === "mcq" ? "Multiple choice"
+    : (question.type === "essay" ? "Essay question" : "Fill in the blank");
+  if (question.type === "mcq") { showReviewMcq(test, question, prompt, choices); }
+  else if (question.type === "essay") { showReviewEssay(test, question, prompt); }
+  else if (tutor) { showReviewTutorFillBlank(test, question, prompt); }
+  else { showReviewFillBlank(test, question, prompt, note); }
+  if (tutor) { showReviewTutorLines(test, question); }
   const discussion = typeof question.explanation === "string" ? question.explanation.trim() : "";
   explainCard.hidden = !discussion;
   document.getElementById("review-explain-label").textContent = question.type === "mcq" ? "Explanation" : "Discussion";
   setTextWithBasis(document.getElementById("review-explain"), discussion, question);  // app.js: the Basis box
+}
+
+// An "answers after each" test: her rating (essay, fill in the blank) and her tag as it is now.
+function showReviewTutorLines(test, question) {
+  const rating = document.getElementById("review-rating");
+  if (question.type !== "mcq") {
+    const a = test.answers[question.id];
+    rating.textContent = typeof a === "string" ? "You rated this: " + a : "Not answered.";
+    rating.hidden = false;
+  }
+  const tag = typeof tagOf === "function" ? tagOf(question.id) : null;
+  const line = document.getElementById("review-tag");
+  line.textContent = "";
+  if (tag) {
+    const dot = document.createElement("span");
+    dot.className = "tag-mark";
+    dot.dataset.tag = tag;
+    dot.setAttribute("aria-hidden", "true");
+    line.append(dot, "Your tag: " + tagWord(tag));
+  } else {
+    line.append("Not tagged.");
+  }
+  line.hidden = false;
+}
+
+// An essay (tutor tests only): the question, the suggested answer and the key points (the ones she
+// checked are ticked), all read-only.
+function showReviewEssay(test, question, prompt) {
+  prompt.textContent = "";
+  prompt.appendChild(richText(question.prompt));
+  const sa = isPlainObject(question.suggestedAnswer) ? question.suggestedAnswer : {};
+  setRichText(document.getElementById("review-alac-answer"), sa.answer);
+  setRichText(document.getElementById("review-alac-basis"), sa.legalBasis);
+  setRichText(document.getElementById("review-alac-application"), sa.application);
+  setTextWithBasis(document.getElementById("review-alac-conclusion"), sa.conclusion, question);  // app.js: the Basis box
+  document.getElementById("review-essay-card").hidden = false;
+  const st = test.states && isPlainObject(test.states[question.id]) ? test.states[question.id] : {};
+  const checked = Array.isArray(st.checked) ? st.checked : [];
+  const list = document.getElementById("review-points");
+  list.innerHTML = "";
+  const points = Array.isArray(question.keyPoints) ? question.keyPoints : [];
+  points.forEach(function (point, n) {
+    const item = document.createElement("li");
+    const label = document.createElement("label");
+    const box = document.createElement("input");
+    box.type = "checkbox";
+    box.disabled = true;
+    box.checked = checked.indexOf(n) !== -1;
+    const text = document.createElement("span");
+    text.appendChild(richText(point));
+    label.append(box, text);
+    item.appendChild(label);
+    list.appendChild(item);
+  });
+  document.getElementById("review-points-card").hidden = points.length === 0;
+}
+
+// Fill in the blank in a tutor test: no typed boxes are kept, so the full text (her rating shows above).
+function showReviewTutorFillBlank(test, question, prompt) {
+  prompt.textContent = "";
+  prompt.appendChild(richText(question.fullText || question.prompt));
 }
 
 // The source, in one short line: NotebookLM's note, or the case / rule. Class-notes questions show
@@ -1382,7 +1697,7 @@ function clockText(seconds) {
 }
 
 function showTestTimer(test) {
-  const box = document.getElementById("test-timer");
+  const box = document.getElementById(testModeOf(test) === "tutor" ? "tutor-timer" : "test-timer");
   box.hidden = !(test && test.limit > 0);
   if (box.hidden) { return; }
   const left = testSecondsLeft(test);
@@ -1392,17 +1707,29 @@ function showTestTimer(test) {
 }
 
 let timeNoteTimer = null;
-function showTimeNote(text) {
-  const note = document.getElementById("test-time-note");
+function showTimeNote(text, test) {
+  const note = document.getElementById(testModeOf(test) === "tutor" ? "tutor-time-note" : "test-time-note");
   note.textContent = text;
   clearTimeout(timeNoteTimer);
   timeNoteTimer = setTimeout(function () { note.textContent = ""; }, 10000);
 }
 
+// The test whose time should be counting now: an exam on the test screen, or a tutor test on the
+// question screen; null otherwise (another screen, a normal practice round, the app hidden).
+function testOnScreenForTimer() {
+  if (document.visibilityState === "hidden") { return null; }
+  if (shownScreen === "screen-test") {
+    const test = currentTest();
+    return test && test.state === "open" && testModeOf(test) === "exam" ? test : null;
+  }
+  if (shownScreen === "screen-question") { return tutorTestOnScreen(); }
+  return null;
+}
+
 function startTestTimer() {
   stopTestTimer();
-  const test = currentTest();
-  if (!test || test.state !== "open" || shownScreen !== "screen-test" || document.visibilityState === "hidden") { return; }
+  const test = testOnScreenForTimer();
+  if (!test) { return; }
   testTimer = { id: test.id, last: Date.now(), carry: 0, unsaved: 0, interval: null };
   testTimer.interval = setInterval(tickTestTimer, 1000);
   showTestTimer(test);
@@ -1430,7 +1757,7 @@ function addTimerTime() {
       const left = testSecondsLeft(test);
       TIMER_NOTICES.forEach(function (at) {
         if (before > at && left <= at && left > 0) {
-          showTimeNote(at >= 120 ? Math.round(at / 60) + " minutes left." : "1 minute left.");
+          showTimeNote(at >= 120 ? Math.round(at / 60) + " minutes left." : "1 minute left.", test);
         }
       });
     }
@@ -1441,7 +1768,8 @@ function addTimerTime() {
 function tickTestTimer() {
   if (!testTimer) { return; }
   // Not on the test screen anymore, or the app is hidden: stop without counting.
-  if (shownScreen !== "screen-test" || document.visibilityState === "hidden" || currentTestId !== testTimer.id) {
+  const onScreen = testOnScreenForTimer();
+  if (!onScreen || onScreen.id !== testTimer.id) {
     stopTestTimer(true);
     return;
   }
@@ -1476,12 +1804,12 @@ function timeUp(id) {
 
 // Called by showScreen (app.js) on every screen change: the timer runs only on the test screen.
 function testScreenChanged(id) {
-  if (id === "screen-test") { startTestTimer(); } else { stopTestTimer(); }
+  if (id === "screen-test" || id === "screen-question") { startTestTimer(); } else { stopTestTimer(); }  // startTestTimer checks it's a test
 }
 
 document.addEventListener("visibilitychange", function () {
   if (document.visibilityState === "hidden") { stopTestTimer(); return; }
-  if (shownScreen === "screen-test") { startTestTimer(); }
+  if (shownScreen === "screen-test" || shownScreen === "screen-question") { startTestTimer(); }
 });
 window.addEventListener("pagehide", function () { stopTestTimer(); });
 
@@ -1512,7 +1840,7 @@ function showSubjectTestCard(subject) {
   const sub = document.getElementById("start-sub");
   const link = document.getElementById("start-new-test");
   const open = continueTestHere(subject);
-  const canMake = testPool(subject, "both").length > 0;
+  const canMake = testPool(subject, "all").length > 0;
   if (open) {
     title.textContent = "Continue test: " + testTitle(open);
     sub.textContent = "Question " + (open.index + 1) + " of " + open.qIds.length +
@@ -1524,7 +1852,7 @@ function showSubjectTestCard(subject) {
   } else {
     title.textContent = "Create a test";
     sub.textContent = canMake ? "Pick topics, how many questions, and a timer"
-      : "No multiple choice or fill-in-the-blank questions here.";
+      : "No questions here yet.";
     card.disabled = !canMake;
     card.dataset.action = "create-test";
     delete card.dataset.testId;

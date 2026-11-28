@@ -431,12 +431,27 @@
       <h1 class="screen-title">Create a test</h1>
       <p class="screen-subtitle">Pick what goes in. The questions come in random order.</p>
 
+      <!-- Mode (tests.js): "Answers after each question" runs on the practice question screen (tutor);
+           "Exam" hides the answers until the end (the test screen) -->
+      <h2 class="label settings-group">Mode</h2>
+      <section class="card settings-card">
+        <div class="mode-options test-mode-options" id="test-mode" role="radiogroup" aria-label="Mode">
+          <label><input type="radio" name="test-mode" value="tutor"><span>Answers after each question</span></label>
+          <label><input type="radio" name="test-mode" value="exam"><span>Exam (answers at the end)</span></label>
+        </div>
+        <p class="setting-desc test-mode-desc" id="test-mode-desc"></p>
+      </section>
+
       <h2 class="label settings-group">Question type</h2>
       <section class="card settings-card">
+        <!-- Exam: Multiple choice / Fill in the blank / Both. Answers after each: Multiple choice /
+             Fill in the blank / Essay / All types (tests.js shows only the mode's options) -->
         <div class="mode-options test-type-options" id="test-type" role="radiogroup" aria-label="Question type">
           <label><input type="radio" name="test-type" value="mcq"><span>Multiple choice</span></label>
           <label><input type="radio" name="test-type" value="fillblank"><span>Fill in the blank</span></label>
-          <label><input type="radio" name="test-type" value="both"><span>Both</span></label>
+          <label data-modes="tutor"><input type="radio" name="test-type" value="essay"><span>Essay</span></label>
+          <label data-modes="exam"><input type="radio" name="test-type" value="both"><span>Both</span></label>
+          <label data-modes="tutor"><input type="radio" name="test-type" value="all"><span>All types</span></label>
         </div>
         <div class="setting-row" id="test-level-row">
           <div class="setting-text">
@@ -453,6 +468,10 @@
         <h2 class="label settings-group">Where from</h2>
         <section class="card settings-card test-picks" id="test-sources" role="group" aria-label="Where from"></section>
       </div>
+      <!-- Her tags: Know it / Unsure / Don't know / Not tagged, each with its count (tests.js buildTestTags) -->
+      <h2 class="label settings-group">Tags</h2>
+      <section class="card settings-card test-picks" id="test-tags" role="group" aria-label="Tags"></section>
+
       <h2 class="label settings-group">Topics</h2>
       <section class="card settings-card test-picks">
         <label class="test-pick test-pick-all"><input type="checkbox" id="test-all"><span class="test-pick-name">Select all</span><span class="test-pick-count" id="test-all-count"></span></label>
@@ -603,6 +622,27 @@
           <p class="fb-level-note" id="review-fb-note" hidden></p>
         </section>
         <div class="choices" id="review-choices" hidden></div>
+        <!-- An "answers after each" test: her rating (essay, fill in the blank) and her tag now -->
+        <p class="count-label review-rating" id="review-rating" hidden></p>
+        <p class="count-label review-tag" id="review-tag" hidden></p>
+        <!-- An essay: the suggested answer and the key points, read-only -->
+        <section class="card" id="review-essay-card" hidden>
+          <h2 class="label">Suggested answer</h2>
+          <dl class="alac">
+            <dt>Answer</dt>
+            <dd class="reading-text" id="review-alac-answer"></dd>
+            <dt>Legal basis</dt>
+            <dd class="reading-text" id="review-alac-basis"></dd>
+            <dt>Application</dt>
+            <dd class="reading-text" id="review-alac-application"></dd>
+            <dt>Conclusion</dt>
+            <dd class="reading-text" id="review-alac-conclusion"></dd>
+          </dl>
+        </section>
+        <section class="card" id="review-points-card" hidden>
+          <h2 class="label">Key points</h2>
+          <ul class="key-points" id="review-points"></ul>
+        </section>
         <section class="card" id="review-full-card" hidden>
           <h2 class="label">Full text</h2>
           <p class="prompt fb-full reading-text" id="review-full"></p>
@@ -625,6 +665,16 @@
         <button class="back-btn" id="question-back"><span data-icon="chevron-left"></span> Back</button>
         <p class="progress" id="progress"></p>
       </div>
+      <!-- Only in an "answers after each question" test (tests.js showTutorBar): its name, the time
+           left (timed tests) and End test -->
+      <div class="tutor-bar" id="tutor-bar" hidden>
+        <div class="tutor-bar-text">
+          <p class="tutor-name" id="tutor-name"></p>
+          <p class="test-timer" id="tutor-timer" hidden></p>
+        </div>
+        <button type="button" class="test-tool-btn test-end-btn" id="tutor-end">End test</button>
+      </div>
+      <p class="test-time-note" id="tutor-time-note" role="status" aria-live="polite"></p>
 
       <header class="question-header">
         <div>
@@ -717,8 +767,8 @@
           <section class="rating">
             <h2 class="label">How did you do?</h2>
             <div class="rating-buttons fb-ratings">
-              <button class="btn btn-fbrate got" data-rating="Got it">Got it</button>
-              <button class="btn btn-fbrate missed" data-rating="Missed it">Missed it</button>
+              <button class="btn btn-fbrate got" data-rating="Got it">Got it<span class="rate-tag" aria-hidden="true">Know it</span></button>
+              <button class="btn btn-fbrate missed" data-rating="Missed it">Missed it<span class="rate-tag" aria-hidden="true">Don't know</span></button>
             </div>
             <p class="rating-result" id="fb-result" hidden></p>
           </section>
@@ -760,16 +810,16 @@
         <section class="rating">
           <h2 class="label">How did you do?</h2>
           <div class="rating-buttons">
-            <button class="btn btn-rate got" data-rating="Got it">Got it</button>
-            <button class="btn btn-rate partly" data-rating="Partly">Partly</button>
-            <button class="btn btn-rate missed" data-rating="Missed it">Missed it</button>
+            <button class="btn btn-rate got" data-rating="Got it">Got it<span class="rate-tag" aria-hidden="true">Know it</span></button>
+            <button class="btn btn-rate partly" data-rating="Partly">Partly<span class="rate-tag" aria-hidden="true">Unsure</span></button>
+            <button class="btn btn-rate missed" data-rating="Missed it">Missed it<span class="rate-tag" aria-hidden="true">Don't know</span></button>
           </div>
           <p class="rating-result" id="rating-result" hidden></p>
         </section>
       </div>
       </div>
 
-      <!-- Her tag, once the answer shows: Know it / Unsure / Don't know (app.js showTagRow).
+      <!-- Her tag, once a multiple-choice answer shows: Know it / Unsure / Don't know (app.js showTagRow).
            Required: Next / Finish stays greyed until one is picked. The buttons are filled in
            by app.js from TAG_COLORS / TAG_WORDS. -->
       <section class="tag-row" id="tag-row" hidden>
@@ -777,6 +827,10 @@
         <div class="tag-options" id="tag-options" role="group" aria-labelledby="tag-row-title"></div>
         <p class="tag-row-note" id="tag-row-note">Tag this question to go on.</p>
       </section>
+
+      <!-- Essays and fill in the blank: the rating is her tag (no tag row); once the answer shows,
+           Next waits for a rating (app.js showTagRow) -->
+      <p class="tag-row-note rate-note" id="rate-note" hidden>Rate it to go on. Your rating is also your tag.</p>
 
       <!-- Previous / Next: always there, so she can move around without answering.
            Skipping counts as nothing. On the last question, Next says "Finish". -->

@@ -289,6 +289,13 @@ function rememberSpot() {
       fromCases: !!(practiceCase && casePracticeFromTab),  // started from the Cases tab: Back goes there
       review: inCaseReview()  // a case's read-only Review (Cases tab): put back as a review, never as Continue
     };
+    // An "answers after each question" test (tests.js): the round lives in the test itself, so save it
+    // there, and in the spot only which test it is (a reload reopens it with openTest).
+    const tutorId = typeof tutorSpotId === "function" ? tutorSpotId() : null;
+    if (tutorId) {
+      spot.tutorTestId = tutorId;
+      syncTutorTest();
+    }
   }
   if (shownScreen === "screen-case" && currentCase) {
     spot.caseId = currentCase.id;
@@ -324,6 +331,8 @@ function rememberSpot() {
   // with the case's ID). Not for Review missed / Bookmarked / Tagged lists.
   if (spot.round && inCaseReview()) {
     // A case's Review is read-only: it's never a "Continue" (the reload above still brings it back).
+  } else if (spot.tutorTestId) {
+    // A test's round: it's in My tests (Unfinished), never a "Continue practicing".
   } else if (spot.round && practiceCase) {
     saveLastRound(currentSubject, currentTopic, currentSubtopic, spot.round, sourceView, practiceCase.id);
   } else if (spot.round && (isRealTopic(currentTopic) || currentTopic === ALL_TOPICS)) {
@@ -469,6 +478,17 @@ function putBackSpot(spot) {
   }
   if (spot.screen === "topic" || spot.screen === "tagged") {
     openTopicOrSubject();
+    return true;
+  }
+
+  // An "answers after each question" test (tests.js): reopen it from the test (same question, her
+  // answers); a case opened from one of its questions comes back on top. Gone: My tests.
+  if (typeof spot.tutorTestId === "string" && (spot.screen === "question" || (spot.screen === "case" && spot.caseCameFrom === "question"))) {
+    if (typeof openTest !== "function") { openSubject(currentSubject); return true; }
+    if (openTest(spot.tutorTestId) && spot.screen === "case") {
+      const fromCase = findCase(spot.caseId);
+      if (fromCase) { openCase(fromCase, "question"); }
+    }
     return true;
   }
 
@@ -3646,8 +3666,13 @@ function showQuestion() {
 
   // Previous / Next are always there (she can skip). Previous is greyed out on the first
   // question; on the last one Next says "Finish" and goes to the results.
-  document.getElementById("next-btn").textContent = isLast ? "Finish" : "Next ›";
+  // In an "answers after each question" test (tests.js) the last one says "End test", Back says
+  // "My tests", and the test's bar (name, time left, End test) shows under the top bar.
+  const inTest = Boolean(session.testId) && typeof tutorTestOnScreen === "function" && Boolean(tutorTestOnScreen());
+  document.getElementById("next-btn").textContent = isLast ? (inTest ? "End test" : "Finish") : "Next ›";
   document.getElementById("prev-btn").disabled = session.index === 0;
+  setIconLabel(document.getElementById("question-back"), "chevron-left", inTest ? "My tests" : "Back");
+  if (typeof showTutorBar === "function") { showTutorBar(); }
 
   const isMcq = question.type === "mcq";
   const isFill = question.type === "fillblank";
@@ -3707,19 +3732,31 @@ document.getElementById("bookmark-btn").addEventListener("click", function () {
 // Tapping another changes it; tapping the picked one keeps it (a tag is required here).
 // The words are TAG_WORDS (near TAGGED, above).
 // Is the answer to the question on screen showing, so her tag is asked for?
+// Only multiple choice has the tag row: on essays and fill in the blank her rating IS her tag
+// (RATING_TAGS: Got it = Know it, Partly = Unsure, Missed it = Don't know, set when she rates).
 function tagAsked() {
   const question = session && session.questions && session.questions[session.index];
-  if (!question || inCaseReview()) { return false; }
-  if (question.type === "fillblank" && session.fbView === "read") { return false; }
-  const current = session.current || {};
-  if (question.type === "mcq") { return !!current.picked; }
-  return !!current.answerShown;
+  if (!question || inCaseReview() || question.type !== "mcq") { return false; }
+  return !!(session.current || {}).picked;
 }
 
-// Must she still tag the question on screen before going on?
-function tagMissing() {
-  return tagAsked() && tagOf(session.questions[session.index].id) === null;
+// An essay or fill in the blank whose answer shows but isn't rated yet (Next waits for the rating).
+function ratingMissing() {
+  const question = session && session.questions && session.questions[session.index];
+  if (!question || inCaseReview() || question.type === "mcq") { return false; }
+  if (question.type === "fillblank" && session.fbView === "read") { return false; }
+  const current = session.current || {};
+  if (!current.answerShown) { return false; }
+  return question.type === "fillblank" ? !current.fbRating : !current.rating;
 }
+
+// Must she still tag (multiple choice) or rate (essay, fill in the blank) before going on?
+function tagMissing() {
+  return (tagAsked() && tagOf(session.questions[session.index].id) === null) || ratingMissing();
+}
+
+// The tag each rating gives (the stored tag colors never change).
+const RATING_TAGS = { "Got it": "green", "Partly": "yellow", "Missed it": "red" };
 
 // The three buttons, made once: dot + word, and a check when picked.
 (function buildTagOptions() {
@@ -3756,12 +3793,14 @@ function showTagRow() {
   document.querySelectorAll(".tag-option").forEach(function (button) {
     button.setAttribute("aria-pressed", button.dataset.tag === tag ? "true" : "false");
   });
-  const missing = asked && tag === null;
-  document.getElementById("tag-row-note").hidden = !missing;
+  const missingTag = asked && tag === null;
+  const missingRating = ratingMissing();
+  document.getElementById("tag-row-note").hidden = !missingTag;
+  document.getElementById("rate-note").hidden = !missingRating;
   const next = document.getElementById("next-btn");
-  next.disabled = missing;
-  if (missing) {
-    next.setAttribute("aria-describedby", "tag-row-note");
+  next.disabled = missingTag || missingRating;
+  if (missingTag || missingRating) {
+    next.setAttribute("aria-describedby", missingTag ? "tag-row-note" : "rate-note");
   } else {
     next.removeAttribute("aria-describedby");
   }
@@ -4561,6 +4600,7 @@ document.querySelectorAll(".btn-fbrate").forEach(function (button) {
     session.fbAnswered += 1;
     if (rating === "Got it") { session.fbCorrect += 1; }
     recordFillBlank(session.questions[session.index], rating, session.current.fbLevel);  // save on the phone
+    setTag(session.questions[session.index].id, RATING_TAGS[rating]);  // her rating is her tag
     session.current.fbRating = rating;
     showFbRated(rating);
     rememberSpot();
@@ -4644,6 +4684,7 @@ document.querySelectorAll(".btn-rate").forEach(function (button) {
     const rating = button.dataset.rating;
     session.ratings[rating] += 1;
     recordEssay(session.questions[session.index], rating);  // save on the phone
+    setTag(session.questions[session.index].id, RATING_TAGS[rating]);  // her rating is her tag
     session.current.rating = rating;
     showRated(rating);
     rememberSpot();
@@ -4812,6 +4853,8 @@ document.getElementById("next-btn").addEventListener("click", function () {
   if (tagMissing()) { return; }  // her tag is required once the answer shows
   if (session.index < session.questions.length - 1) {
     goToQuestion(session.index + 1);
+  } else if (session.testId && typeof askEndTutorTest === "function") {
+    askEndTutorTest();  // the last question of a test: "End test" (asks first)
   } else if (inCaseReview()) {
     subjectTab = "cases";
     openSubject(currentSubject);  // a case's Review ends on the Cases tab (no results screen)
@@ -4841,7 +4884,9 @@ document.addEventListener("keydown", function (event) {
 });
 
 document.getElementById("question-back").addEventListener("click", function () {
-  if (practiceCase && casePracticeFromTab) {
+  if (session && session.testId && typeof leaveTutorTest === "function") {
+    leaveTutorTest();  // a test: back to My tests (it stays in Unfinished)
+  } else if (practiceCase && casePracticeFromTab) {
     subjectTab = "cases";
     openSubject(currentSubject);  // started from the subject screen's Cases tab: back to it
   } else if (practiceCase) {

@@ -31,10 +31,15 @@
 //   tests:     her tests (tests.js), a list: [ { "id": "t-…", "subject", "view" ("official" / "notes" /
 //              "notebooklm"; the first of "sources" in newer tests), "sources" (where its questions come from:
 //              one or more of "official" / "notes" / "notebooklm"; missing in older tests = [view]), "made" (ISO date), "all" (true if every topic was picked), "picks": [ { "t": topic, "s": sub-topic or null } ],
-//              "type" ("mcq" / "fillblank" / "both"), "level" (fill in the blank difficulty ID),
+//              "mode" ("tutor" = answers after each question, on the practice screen / "exam" = answers at
+//              the end; missing in older tests = "exam"), "tags" (the tags it picked from: "green" / "yellow" /
+//              "red" / "none"; missing = all four),
+//              "type" ("mcq" / "fillblank" / "both"; tutor tests also "essay" / "all"), "level" (fill in the blank difficulty ID),
 //              "limit" (minutes, 0 = untimed), "qIds" (question IDs, in the test's shuffled order),
 //              "index" (the question she's on), "answers" ({ id: "B" } multiple choice, or
-//              { id: { "12": "typed", "14.0": "…" } } fill in the blank: box key -> what she typed),
+//              { id: { "12": "typed", "14.0": "…" } } fill in the blank: box key -> what she typed; tutor
+//              tests: { id: "B" } or { id: "Got it" / "Partly" / "Missed it" } for essays and fill in the blank),
+//              "states" (tutor only: { id: what practice keeps for the question: picked, answerShown, rating… }),
 //              "flags", "hidden" ({ id: [word numbers hidden] }, fill in the blank), "used" (seconds),
 //              "lastUsed" (optional ISO date: when she last opened, answered or moved in it),
 //              "state" ("open" / "done"), "counted" (true once her answers went into her progress),
@@ -281,13 +286,17 @@ function cleanNotes(value) {
 }
 
 // ---------- Her tests (tests.js) ----------
-// progress.tests: a list of tests, each { id, subject, view, sources, made, all, picks, type, level, limit,
-// qIds, index, answers, flags, hidden, used, state, finished, results, counted }. Only question IDs are stored, never
+// progress.tests: a list of tests, each { id, subject, view, sources, made, all, picks, mode, tags, type, level, limit,
+// qIds, index, answers, flags, hidden, states (tutor), fbView (tutor), used, state, finished, results, counted }. Only question IDs are stored, never
 // question text. At most TESTS_OPEN_MAX unfinished ("open") and TESTS_DONE_MAX finished
 // ("done") tests are kept: the newest ones. Anything unusable is dropped; never throws.
 const TESTS_OPEN_MAX = 5;
 const TESTS_DONE_MAX = 30;
-const TEST_TYPES = ["mcq", "fillblank", "both"];      // "both" = multiple choice + fill in the blank
+const TEST_TYPES = ["mcq", "fillblank", "both", "essay", "all"];  // "both" = multiple choice + fill in the blank (exam);
+                                                    // "essay" and "all" (every type) only in "answers after each" tests
+const TEST_MODES = ["tutor", "exam"];               // tutor = answers after each question; exam = answers at the end
+const TEST_TAGS = ["green", "yellow", "red", "none"];  // the tags a test picks from (none = not tagged)
+const TEST_RATINGS = ["Got it", "Partly", "Missed it"];
 const TEST_VIEWS = ["official", "notes", "notebooklm"];
 const TEST_RESULTS = ["right", "wrong", "none"];
 const TEST_LIMIT_MAX = 600;                         // minutes (0 = untimed)
@@ -299,6 +308,32 @@ const TEST_QUESTION_ID = /^(q|pq|nq)-\d+$/;
 function cleanTestSources(value, view) {
   const list = Array.isArray(value) ? TEST_VIEWS.filter(function (v) { return value.indexOf(v) !== -1; }) : [];
   return list.length ? list : [view];
+}
+
+// A tutor test's saved state of one question (what practice keeps in session.current): only known
+// fields with sensible values, so a damaged backup can't break the question screen.
+function cleanTutorState(st) {
+  if (!st || typeof st !== "object" || Array.isArray(st)) { return null; }
+  const clean = {};
+  if (["A", "B", "C", "D"].indexOf(st.picked) !== -1) { clean.picked = st.picked; }
+  if (["A", "B", "C", "D"].indexOf(st.selected) !== -1) { clean.selected = st.selected; }
+  if (st.answerShown === true) { clean.answerShown = true; }
+  if (Array.isArray(st.checked)) {
+    clean.checked = st.checked.filter(function (n) { return Number.isInteger(n) && n >= 0 && n < 200; }).slice(0, 200);
+  }
+  if (TEST_RATINGS.indexOf(st.rating) !== -1) { clean.rating = st.rating; }
+  if (FB_LEVEL_IDS.indexOf(st.fbLevel) !== -1) { clean.fbLevel = st.fbLevel; }
+  if (Array.isArray(st.fbHidden)) {
+    clean.fbHidden = st.fbHidden.filter(function (n) { return Number.isInteger(n) && n >= 0 && n < 100000; }).slice(0, 5000);
+  }
+  if (st.fbTyped && typeof st.fbTyped === "object" && !Array.isArray(st.fbTyped)) {
+    clean.fbTyped = {};
+    Object.keys(st.fbTyped).forEach(function (key) {
+      if (/^\d+(\.\d+)?$/.test(key) && typeof st.fbTyped[key] === "string") { clean.fbTyped[key] = st.fbTyped[key].slice(0, 200); }
+    });
+  }
+  if (st.fbRating === "Got it" || st.fbRating === "Missed it") { clean.fbRating = st.fbRating; }
+  return Object.keys(clean).length ? clean : null;
 }
 
 function isIsoDate(text) {
@@ -327,6 +362,8 @@ function cleanTest(t) {
       const a = t.answers[id];
       if (["A", "B", "C", "D"].indexOf(a) !== -1) {
         answers[id] = a;  // a multiple-choice pick
+      } else if (TEST_RATINGS.indexOf(a) !== -1) {
+        answers[id] = a;  // a tutor test's essay or fill-in-the-blank rating
       } else if (a && typeof a === "object" && !Array.isArray(a)) {
         const typed = {};  // fill in the blank: box key -> what she typed
         Object.keys(a).forEach(function (key) {
@@ -354,6 +391,12 @@ function cleanTest(t) {
   }
   const limit = wholeNumberOrZero(t.limit);
   const index = wholeNumberOrZero(t.index);
+  // The mode (older tests have none: they were all exam tests) and the tags it picked from
+  // (older tests: all four).
+  const mode = TEST_MODES.indexOf(t.mode) !== -1 ? t.mode : "exam";
+  const tags = Array.isArray(t.tags) ? TEST_TAGS.filter(function (g) { return t.tags.indexOf(g) !== -1; }) : [];
+  let type = TEST_TYPES.indexOf(t.type) !== -1 ? t.type : "both";
+  if (mode === "exam" && (type === "essay" || type === "all")) { type = "both"; }  // exam tests never hold essays
   const test = {
     id: t.id,
     subject: t.subject,
@@ -363,7 +406,9 @@ function cleanTest(t) {
     made: t.made,
     all: t.all === true,   // she picked every topic ("All topics")
     picks: picks,
-    type: TEST_TYPES.indexOf(t.type) !== -1 ? t.type : "both",
+    mode: mode,
+    tags: tags.length ? tags : TEST_TAGS.slice(),
+    type: type,
     level: FB_LEVEL_IDS.indexOf(t.level) !== -1 ? t.level : "key",
     limit: Math.min(limit, TEST_LIMIT_MAX),
     qIds: qIds,
@@ -375,6 +420,19 @@ function cleanTest(t) {
     state: t.state === "done" ? "done" : "open"
   };
   if (isIsoDate(t.lastUsed)) { test.lastUsed = t.lastUsed; }  // when she last opened or answered in it (optional)
+  // A tutor test: what she did on each question she visited (by question ID, like session.states
+  // in practice), and whether fill in the blank was in Read mode.
+  if (mode === "tutor") {
+    test.states = {};
+    if (t.states && typeof t.states === "object" && !Array.isArray(t.states)) {
+      Object.keys(t.states).forEach(function (id) {
+        if (qIds.indexOf(id) === -1) { return; }
+        const st = cleanTutorState(t.states[id]);
+        if (st) { test.states[id] = st; }
+      });
+    }
+    if (t.fbView === "read") { test.fbView = "read"; }
+  }
   if (test.state === "done") {
     test.finished = isIsoDate(t.finished) ? t.finished : t.made;
     // Each question's result, fixed when she ended the test (so the score never changes later):
